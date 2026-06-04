@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import type * as Y from 'yjs';
 import type { CanvasDef, CanvasI18n, Lang } from '@canvas-collab/shared';
 import { api } from '../api/client';
 import { DropZoneLayer } from './DropZoneLayer';
@@ -8,7 +9,7 @@ import { useZoomPan } from './useZoomPan';
 import { ZoomControls } from './ZoomControls';
 import { hitTestZone } from './hitTest';
 import { useSelection } from '../state/selection';
-import { AxisGridLayer } from '../plugins/axisGrid/AxisGridLayer';
+import { pluginRegistry } from '../plugins';
 
 type ToSvgPoint = (
   ev: PointerEvent | React.PointerEvent,
@@ -20,6 +21,22 @@ interface Props {
   lang: Lang;
   /** When true, draws the drop-zone outlines. */
   showZones?: boolean;
+  /**
+   * Live Yjs document for the active canvas. Plugins that need to render
+   * collaborative state (e.g. chart-canvas reading chartLines / xAxisItems)
+   * read it from here. May be null while hydrating.
+   */
+  doc?: Y.Doc | null;
+  /** Display name credited as the actor when a plugin makes writes. */
+  displayName?: string;
+  /**
+   * When provided, takes over background-click handling: the renderer
+   * calls this with the SVG-coords of every click that lands on empty
+   * canvas (i.e. not on a sticky / pin / chart point). Used to drop pins
+   * in pin mode. When omitted (default), the renderer falls back to its
+   * legacy zone hit-test → block-selection behaviour.
+   */
+  onCanvasClick?: (p: { x: number; y: number }) => void;
   /** Render-prop: receives SVG-coords helper + the loaded def. */
   children?: (ctx: { def: CanvasDef; toSvgPoint: ToSvgPoint }) => React.ReactNode;
 }
@@ -29,7 +46,15 @@ interface Props {
  * layers + caller-supplied content (stickies). Owns zoom/pan + background
  * click handling that selects a block (when no sticky was clicked).
  */
-export function CanvasRenderer({ defId, lang, showZones = false, children }: Props) {
+export function CanvasRenderer({
+  defId,
+  lang,
+  showZones = false,
+  doc = null,
+  displayName = '',
+  onCanvasClick,
+  children,
+}: Props) {
   const [bundle, setBundle] = useState<{ def: CanvasDef; i18n: CanvasI18n } | null>(null);
   const selectBlock = useSelection((s) => s.selectBlock);
   const clearSelection = useSelection((s) => s.clear);
@@ -75,9 +100,15 @@ export function CanvasRenderer({ defId, lang, showZones = false, children }: Pro
     endPan(e);
     if (!wasClick()) return;
     // Stickies stopPropagation on click — by the time we get here, this is a
-    // click on the canvas background. Run zone hit-test to decide selection.
+    // click on the canvas background. If a callback claimed canvas clicks
+    // (pin mode, etc.) it gets first dibs; otherwise zone hit-test for
+    // selection.
     const p = toSvgPoint(e);
     if (!p) return clearSelection();
+    if (onCanvasClick) {
+      onCanvasClick(p);
+      return;
+    }
     const z = hitTestZone(def.zones, p.x, p.y);
     if (z) selectBlock(z.id);
     else clearSelection();
@@ -111,9 +142,19 @@ export function CanvasRenderer({ defId, lang, showZones = false, children }: Pro
           preserveAspectRatio="xMidYMid meet"
         />
         <DropZoneLayer zones={def.zones} visible={showZones} />
-        {def.plugin === 'axis-grid' && (
-          <AxisGridLayer zones={def.zones} lang={lang} />
-        )}
+        {def.plugin && pluginRegistry[def.plugin] && (() => {
+          const Plugin = pluginRegistry[def.plugin]!;
+          return (
+            <Plugin
+              def={def}
+              zones={def.zones}
+              lang={lang}
+              doc={doc}
+              displayName={displayName}
+              toSvgPoint={toSvgPoint}
+            />
+          );
+        })()}
         {def.zones.map((z) => (
           <ZoneLabel key={z.id} zone={z} i18n={i18n} lang={lang} />
         ))}

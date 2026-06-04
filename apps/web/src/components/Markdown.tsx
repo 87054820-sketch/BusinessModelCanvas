@@ -1,3 +1,4 @@
+import { createContext, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useLightbox } from '../state/lightbox';
 
@@ -23,6 +24,94 @@ interface Props {
    * doesn't sit inside a canvas bundle.
    */
   canvasDefId?: string;
+  /**
+   * Optional rendering variant.
+   *
+   * - `'block-guidance'` — used by the right-side BlockInspector. Each
+   *   H3 + its trailing siblings (until the next H1/H2/H3) get wrapped
+   *   in a "sub-category card": rounded border + light shadow + inner
+   *   padding. This is what gives BME's per-block guidance (where each
+   *   block has 4–5 H3 sub-categories like "Competitors / New Entrants
+   *   / ...") a clear visual hierarchy. Other canvases (BMC, JTBD,
+   *   Empathy Map, ...) currently don't use H3 in their guidance MD,
+   *   so they render unchanged today; if any future canvas adds H3
+   *   sections it inherits the same card treatment for free.
+   *
+   * Omit (default) for plain rendering — used by CanvasKnowledgeInspector
+   *   (intro/body) and any general-purpose markdown surface.
+   */
+  variant?: 'block-guidance';
+}
+
+/**
+ * Context flag — true while rendering inside a sub-category card so
+ * the H3 / blockquote / paragraph component overrides can switch to
+ * the "inside card" type scale (the card itself supplies the visual
+ * boundary, so we drop the blue left bar etc.).
+ */
+const SubcategoryContext = createContext(false);
+
+/**
+ * Tiny rehype plugin: walks the HAST root's children, finds every
+ * `<h3>`, and groups it together with all following siblings up to
+ * (but not including) the next `<h1>` / `<h2>` / `<h3>` into a single
+ * `<section data-subcategory>` element.
+ *
+ * Why HAST-level grouping rather than:
+ *   - regex over the markdown source: would mis-fire on `### foo`
+ *     inside a fenced code block.
+ *   - React-children post-processing: requires reaching into
+ *     react-markdown's render output and re-implementing AST
+ *     flattening in JSX — leaky.
+ *
+ * Edge cases handled implicitly:
+ *   - H3 with no following content → card contains only the heading.
+ *   - Two H3 back-to-back → first card auto-closes at the second.
+ *   - Code-fenced `### foo` → never reaches HAST as a heading.
+ */
+function rehypeGroupH3Sections() {
+  return (tree: { children?: unknown[] }) => {
+    if (!tree || !Array.isArray(tree.children)) return;
+    const out: unknown[] = [];
+    let i = 0;
+    while (i < tree.children.length) {
+      const node = tree.children[i] as
+        | { type?: string; tagName?: string }
+        | null
+        | undefined;
+      const isH3 =
+        node && (node as { type?: string }).type === 'element' && node.tagName === 'h3';
+      if (!isH3) {
+        out.push(node);
+        i++;
+        continue;
+      }
+      const group: unknown[] = [node];
+      i++;
+      while (i < tree.children.length) {
+        const next = tree.children[i] as
+          | { type?: string; tagName?: string }
+          | null
+          | undefined;
+        const isHeadingBoundary =
+          next &&
+          (next as { type?: string }).type === 'element' &&
+          (next.tagName === 'h1' ||
+            next.tagName === 'h2' ||
+            next.tagName === 'h3');
+        if (isHeadingBoundary) break;
+        group.push(next);
+        i++;
+      }
+      out.push({
+        type: 'element',
+        tagName: 'section',
+        properties: { 'data-subcategory': 'true' },
+        children: group,
+      });
+    }
+    tree.children = out;
+  };
 }
 
 /**
@@ -36,15 +125,19 @@ interface Props {
  *
  * Used by:
  *   - CanvasKnowledgeInspector (long-form intro + body for a canvas type)
- *   - BlockInspector            (per-block guidance markdown)
+ *   - BlockInspector            (per-block guidance markdown — passes
+ *                                `variant="block-guidance"` to enable
+ *                                sub-category cards)
  *   - any future inspector surface that wants markdown-formatted text
  */
 export function Markdown({
   content,
   className = 'text-sm leading-relaxed text-gray-800',
   canvasDefId,
+  variant,
 }: Props) {
   const openLightbox = useLightbox((s) => s.open);
+  const isBlockGuidance = variant === 'block-guidance';
 
   function resolveImageSrc(src: string | undefined): string {
     if (!src) return '';
@@ -71,6 +164,7 @@ export function Markdown({
   return (
     <div className={className}>
       <ReactMarkdown
+        rehypePlugins={isBlockGuidance ? [rehypeGroupH3Sections] : undefined}
         components={{
           // Heading scale tuned for the right-side inspector. Body sits
           // at text-sm (14px); every heading level must be VISIBLY
@@ -89,6 +183,10 @@ export function Markdown({
           //
           // No `uppercase tracking-wider` — that styling was for short
           // English ALL-CAPS labels and stretches Chinese awkwardly.
+          //
+          // In `variant="block-guidance"`, H3 sits *inside* a card; the
+          // card itself supplies the visual boundary, so we drop the
+          // blue left bar and tighten margins. See SubcategoryContext.
           h1: ({ children }) => (
             <h3 className="mt-6 mb-3 text-xl font-bold text-gray-900 first:mt-0">
               {children}
@@ -99,14 +197,28 @@ export function Markdown({
               {children}
             </h4>
           ),
-          h3: ({ children }) => (
-            <h5 className="mt-6 mb-2 border-l-[3px] border-blue-500 pl-2.5 text-base font-bold text-gray-900 first:mt-0">
-              {children}
-            </h5>
-          ),
-          p: ({ children }) => (
-            <p className="mb-3 last:mb-0">{children}</p>
-          ),
+          h3: ({ children }) => {
+            const inCard = useContext(SubcategoryContext);
+            if (inCard) {
+              return (
+                <h5 className="mt-0 mb-1 text-sm font-semibold text-gray-900">
+                  {children}
+                </h5>
+              );
+            }
+            return (
+              <h5 className="mt-6 mb-2 border-l-[3px] border-blue-500 pl-2.5 text-base font-bold text-gray-900 first:mt-0">
+                {children}
+              </h5>
+            );
+          },
+          p: ({ children }) => {
+            const inCard = useContext(SubcategoryContext);
+            if (inCard) {
+              return <p className="mb-2 text-sm leading-relaxed last:mb-0">{children}</p>;
+            }
+            return <p className="mb-3 last:mb-0">{children}</p>;
+          },
           ul: ({ children }) => (
             <ul className="mb-3 list-disc space-y-1 pl-5 last:mb-0">{children}</ul>
           ),
@@ -129,11 +241,24 @@ export function Markdown({
               {children}
             </a>
           ),
-          blockquote: ({ children }) => (
-            <blockquote className="my-3 border-l-2 border-gray-300 pl-3 text-sm italic text-gray-600">
-              {children}
-            </blockquote>
-          ),
+          blockquote: ({ children }) => {
+            const inCard = useContext(SubcategoryContext);
+            if (inCard) {
+              // Sub-category abstract — acts as a deck/subtitle of the
+              // card heading. Drop the gray bar + italic to read as a
+              // tagline rather than a quote.
+              return (
+                <blockquote className="mt-0 mb-2 border-0 pl-0 text-xs leading-snug text-gray-500">
+                  {children}
+                </blockquote>
+              );
+            }
+            return (
+              <blockquote className="my-3 border-l-2 border-gray-300 pl-3 text-sm italic text-gray-600">
+                {children}
+              </blockquote>
+            );
+          },
           strong: ({ children }) => (
             <strong className="font-semibold text-gray-900">{children}</strong>
           ),
@@ -148,6 +273,22 @@ export function Markdown({
                 className="my-3 max-w-full cursor-zoom-in rounded-md border border-gray-200 hover:border-gray-400"
                 loading="lazy"
               />
+            );
+          },
+          // Sub-category card — only emitted by the rehypeGroupH3Sections
+          // plugin (which only runs when variant="block-guidance"). For
+          // any other call site, the HAST never contains a synthetic
+          // <section> from us, so this override is inert.
+          section: ({ children, ...rest }) => {
+            const isCard =
+              (rest as { 'data-subcategory'?: string })['data-subcategory'] === 'true';
+            if (!isCard) return <section {...rest}>{children}</section>;
+            return (
+              <section className="mb-3 rounded-lg border border-gray-200 bg-white p-3.5 shadow-sm last:mb-0">
+                <SubcategoryContext.Provider value={true}>
+                  {children}
+                </SubcategoryContext.Provider>
+              </section>
             );
           },
         }}

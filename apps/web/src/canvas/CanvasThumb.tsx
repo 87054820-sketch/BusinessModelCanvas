@@ -92,6 +92,48 @@ export function CanvasThumb({ id, width = 40, height = 28 }: Props) {
       </svg>
     );
   }
+  if (id === 'blue-ocean-strategy-canvas') {
+    // 0–5 grid + two contrasting value curves (one zigzaggy "industry"
+    // curve, one focused "blue ocean" curve) + a couple of pin glyphs.
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        {/* gridlines */}
+        <g stroke="#E5E7EB" strokeWidth="0.4" fill="none">
+          <line x1="6" y1="6"  x2="56" y2="6" />
+          <line x1="6" y1="14" x2="56" y2="14" />
+          <line x1="6" y1="22" x2="56" y2="22" />
+          <line x1="6" y1="30" x2="56" y2="30" />
+          <line x1="6" y1="36" x2="56" y2="36" />
+        </g>
+        {/* industry curve (red, busy / sawtooth) */}
+        <polyline
+          points="10,16 18,20 26,12 34,22 42,16 50,20"
+          fill="none"
+          stroke="#D62728"
+          strokeWidth="1.1"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        />
+        {/* blue ocean curve (blue, focused / clean shape) */}
+        <polyline
+          points="10,30 18,28 26,8 34,8 42,30 50,32"
+          fill="none"
+          stroke="#1F77B4"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        />
+        {/* pin (star) on a blue-ocean point */}
+        <polygon
+          points="26,4 27.2,6.6 30,6.6 27.7,8.3 28.6,11 26,9.4 23.4,11 24.3,8.3 22,6.6 24.8,6.6"
+          fill="#FF7F0E"
+          stroke="#FFFFFF"
+          strokeWidth="0.4"
+        />
+      </svg>
+    );
+  }
   if (id === 'jobs-to-be-done') {
     // JTBD Story format: three columns at top (When / I want to / So
     // I can) and a wide bottom row for emotional + social companion

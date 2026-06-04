@@ -1,0 +1,9 @@
+{
+  "canvasTitle": "战略画布",
+  "blocks": {
+    "chart-area": {
+      "title": "图表区",
+      "prompt": "扔到这里的便签会浮在价值曲线图上,适合写注记、ERRC 要点、结论等。"
+    }
+  }
+}

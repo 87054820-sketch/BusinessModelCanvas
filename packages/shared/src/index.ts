@@ -86,9 +86,93 @@ export interface CanvasDef {
    * is hidden for that canvas.
    */
   related?: string[];
+  /**
+   * Declarative list of editable object types this canvas allows. Lets
+   * the workspace toolbar / inspector / bulk-import know what the canvas
+   * supports without inferring it from the plugin.
+   *
+   * - `'sticky'`     — Y.Map<'stickies'> (every canvas has this in practice
+   *                    even when omitted; the default below is `['sticky']`)
+   * - `'chartLine'`  — Y.Map<'chartLines'> (used by chart-canvas plugin —
+   *                    Strategy Canvas value curves, future Journey emotion
+   *                    curves, etc.)
+   * - `'pin'`        — Y.Map<'pins'> (positioned marker with icon + label,
+   *                    optional anchor to a chartLine point)
+   * - `'xAxisItem'`  — Y.Array<'xAxisItems'> (ordered factor / stage list,
+   *                    user-editable per project; consumed by chart-canvas
+   *                    as the X axis)
+   *
+   * Bundles that omit this field default to `['sticky']` for backwards
+   * compat with the seven canvases shipped before this field existed.
+   */
+  objectTypes?: ObjectType[];
+  /**
+   * Chart-canvas configuration. Required when `plugin === 'chart-canvas'`,
+   * otherwise unused. The Y axis is fixed at canvas-template level (a 0–5
+   * scale for Strategy Canvas, a –2..+2 sentiment scale for Customer
+   * Journey, etc.). The X axis factors come from the per-project
+   * `xAxisItems` Y.Array — this `factorsDefault` only seeds the project
+   * on first open so it isn't blank.
+   */
+  chart?: ChartConfig;
 }
 
-export type PluginId = 'axis-grid';
+/**
+ * Plugin id discriminator. The web app's plugin registry
+ * (`apps/web/src/plugins/index.ts`) maps each id to a React layer
+ * component; the server validator enforces this same enum on every
+ * manifest.
+ *
+ * - `'axis-grid'`    — Portfolio Map (risk × return scatter grid).
+ * - `'chart-canvas'` — value-curve chart with named X factors and a
+ *                     numeric Y scale; one polyline per chartLine
+ *                     (e.g. one company per line on Blue Ocean's
+ *                     Strategy Canvas).
+ */
+export type PluginId = 'axis-grid' | 'chart-canvas';
+
+/**
+ * Object types that may exist alongside stickies on a canvas. Used both
+ * by the manifest schema (`CanvasDef.objectTypes`) and by the bulk-import
+ * endpoint to validate request keys.
+ */
+export type ObjectType = 'sticky' | 'pin' | 'pinClass' | 'xAxisItem';
+
+/** A short label authored in both supported languages. */
+export type LocalizedLabel = Record<Lang, string>;
+
+/**
+ * Manifest-level chart configuration used by the `chart-canvas` plugin.
+ * The Y axis (`yAxis`) is fixed per canvas template; the X axis factors
+ * are seeded from `factorsDefault` on first open and then become
+ * user-editable per project (stored in the doc's `xAxisItems` Y.Array).
+ */
+export interface ChartConfig {
+  yAxis: {
+    /** Numeric minimum (typically 0). */
+    min: number;
+    /** Numeric maximum (typically 5 for Strategy Canvas, ±2 for journey). */
+    max: number;
+    /** Axis label, localised. Shown along the Y gridline labels. */
+    label: LocalizedLabel;
+    /**
+     * Optional descriptive label for the LOW end of the scale, e.g.
+     * "Low" / "低". When omitted the chart shows only the numeric value.
+     */
+    lowLabel?: LocalizedLabel;
+    /**
+     * Optional descriptive label for the HIGH end of the scale, e.g.
+     * "High" / "高". When omitted the chart shows only the numeric value.
+     */
+    highLabel?: LocalizedLabel;
+  };
+  /**
+   * Starter factor list seeded into the project's `xAxisItems` Y.Array
+   * the first time the canvas is opened. Each entry must carry a stable
+   * `id` (used as the points-map key) and a localised label.
+   */
+  factorsDefault: Array<{ id: string; label: LocalizedLabel }>;
+}
 
 export type ZoneShape =
   | { type: 'rect'; x: number; y: number; w: number; h: number }
@@ -176,6 +260,120 @@ export interface ZoneHistoryEntry {
   at: string;
   /** Display name of the user who placed it (initial author or mover). */
   by: string;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Pin objects — a universal annotation / data-point model that lives next
+// to stickies on every canvas. Two roots:
+//
+//   `pinClasses` (Y.Map<id, Y.Map>) — the legend; each class carries a
+//                                     color + icon. A class's identity is
+//                                     "this is a Yellow Tail point" or
+//                                     "this is a Risk callout".
+//   `pins`       (Y.Map<id, Y.Map>) — the data points / annotations.
+//                                     Each pin belongs to exactly one
+//                                     class and lives at a free (x, y)
+//                                     in viewBox space. Classes auto-
+//                                     connect their pins by sorted-x
+//                                     polyline, which on a chart-canvas
+//                                     plugin canvas reads as a value
+//                                     curve, on other canvases as
+//                                     "this group of related markers".
+//
+// `xAxisItems` (Y.Array<Y.Map>) is still here, used by the chart-canvas
+// plugin to draw factor / stage labels along the X axis. Pin x is in
+// viewBox space, not in factor-id space — but the chart plugin offers
+// X-snap as a UX nicety on drop / drag-end so points on a value curve
+// land cleanly on factor columns.
+//
+// The `apps/web/src/collab/<type>.ts` modules are the single source of
+// truth for Y encoding; server-side bulk-import, AI context, and any
+// future writer must mirror the same field names.
+// ──────────────────────────────────────────────────────────────────────────
+
+/**
+ * One factor (Strategy Canvas) or stage (Journey Map) on the X axis.
+ * Stored in `Y.Array<'xAxisItems'>` so users can add / rename / reorder /
+ * delete factors per project. Manifest's `chart.factorsDefault` seeds
+ * the array on first open; after that the array is the source of truth.
+ */
+export interface XAxisItem {
+  id: string;
+  label: LocalizedLabel;
+}
+
+/**
+ * Tight enum of pin icon presets. Kept small so adding/removing an icon
+ * is a one-line code decision and the UI's icon picker stays scannable.
+ */
+export type PinIcon = 'circle' | 'triangle' | 'square' | 'star' | 'flag';
+
+/**
+ * One legend entry / class. Color + icon together form the visual signature
+ * the user reads to tell pins apart. The class label is what shows in the
+ * palette tooltip + curve-end label.
+ */
+export interface PinClass {
+  id: string;
+  label: string;
+  color: string;            // hex from CHART_PALETTE (or custom)
+  icon: PinIcon;
+  authorName: string;
+  createdAt: string;
+}
+
+/**
+ * One annotation / data point. Free-positioned in viewBox space; the
+ * universal PinLayer renders it using its class's color + icon. Pins of
+ * the same class auto-connect via a sorted-x polyline at render time —
+ * no separate "line" entity exists.
+ *
+ * Not zone-bound (unlike StickyNote). A pin can sit anywhere, including
+ * outside a zone, and its visual meaning is "this point belongs to
+ * the {classId} group" — interpretation is plugin / canvas context.
+ */
+export interface Pin {
+  id: string;
+  classId: string;          // FK → PinClass.id (required)
+  x: number;                // viewBox coords
+  y: number;
+  /** Optional short label rendered next to the icon. */
+  label?: string;
+  /** Optional one-line elaboration. */
+  body?: string;
+  authorName: string;
+  createdAt: string;
+}
+
+/**
+ * Shared color palette used as defaults for PinClass. Server validators
+ * accept any hex color; this is just the "next-color" picker source.
+ */
+export const CHART_PALETTE = [
+  '#1F77B4', // blue
+  '#D62728', // red
+  '#2CA02C', // green
+  '#FF7F0E', // orange
+  '#9467BD', // purple
+  '#8C564B', // brown
+] as const;
+
+export type ChartColor = (typeof CHART_PALETTE)[number];
+
+export const DEFAULT_CHART_COLOR: ChartColor = '#1F77B4';
+
+/**
+ * Resolve the effective object types for a canvas. Manifest's
+ * `objectTypes` wins when set (Strategy Canvas declares the full
+ * `['sticky', 'pin', 'pinClass', 'xAxisItem']`). When omitted (every
+ * other canvas in the repo today), every canvas implicitly supports
+ * sticky + pin + pinClass — so any canvas can become an annotation
+ * surface without manifest changes. `xAxisItem` stays opt-in (only
+ * canvases with a chart-canvas plugin need it).
+ */
+export function effectiveObjectTypes(def: CanvasDef): ObjectType[] {
+  if (def.objectTypes && def.objectTypes.length > 0) return [...def.objectTypes];
+  return ['sticky', 'pin', 'pinClass'];
 }
 
 // ──────────────────────────────────────────────────────────────────────────
@@ -269,48 +467,60 @@ export interface AiContext {
     project: { id: string; name: string; description?: string };
   };
   blocks: AiContextBlock[];
-  /** ISO timestamp of when the snapshot was assembled. */
-  generatedAt: string;
-}
-
-export interface AiContextBlock {
-  id: string;               // zone id, e.g. 'key-partners'
-  title: string;
-  prompt?: string;
-  guidance?: string;
-  stickies: AiContextSticky[];
-}
-
-export interface AiContextSticky {
-  id: string;
-  text: string;
-  color: string;
-  authorName: string;
-  createdAt: string;
-  x: number;
-  y: number;
-  /** Always non-empty — synthesised from creation metadata if missing. */
-  zoneHistory: ZoneHistoryEntry[];
-}
-
-// ──────────────────────────────────────────────────────────────────────────
-// AI context — read-only structured snapshot for a future AI Copilot.
-// Built by `GET /canvases/:id/ai-context?lang=zh|en`. Block titles and
-// guidance are pre-resolved against the requested language, and stickies
-// are grouped by their current zone (so the AI sees the canvas the way a
-// human reads it). Empty zones are present with `stickies: []` so the AI
-// can reason about what's *missing* alongside what's filled.
-// ──────────────────────────────────────────────────────────────────────────
-export interface AiContext {
-  canvas: {
-    id: string;
-    defId: string;          // 'business-model-canvas' | …
-    defName: string;        // canvas-def display name in `lang`
-    title: string;          // canvas instance title
-    language: Lang;         // canvas creation language
-    project: { id: string; name: string; description?: string };
+  /**
+   * Factors on the X axis (Strategy Canvas / Journey stages). Present
+   * only when the canvas's `xAxisItems` Y.Array is non-empty. Each entry
+   * is pre-resolved against the requested `lang`.
+   */
+  factors?: Array<{ id: string; label: string }>;
+  /**
+   * Y-axis labels, pre-resolved against `lang`. Present only on
+   * chart-canvas plugin canvases. Reflects user overrides from the doc's
+   * `chartConfig` Y.Map first; falls back to the manifest's
+   * `chart.yAxis.{label, lowLabel, highLabel}` when no override is set —
+   * so the LLM sees the same Y-axis text the human is looking at.
+   */
+  yAxis?: {
+    label: string;
+    lowLabel?: string;
+    highLabel?: string;
   };
-  blocks: AiContextBlock[];
+  /**
+   * Pin classes (legend) on this canvas. Each entry is pre-resolved
+   * against the requested `lang` for class label, and color/icon are
+   * passed through unchanged.
+   */
+  pinClasses?: Array<{
+    id: string;
+    label: string;
+    color: string;
+    icon: PinIcon;
+  }>;
+  /**
+   * Pins / annotation markers on the canvas. Each entry carries the
+   * derived `classLabel` so the LLM can describe a pin without
+   * re-joining classes by id.
+   */
+  pins?: Array<{
+    id: string;
+    classId: string;
+    classLabel: string;
+    x: number;
+    y: number;
+    label?: string;
+    body?: string;
+  }>;
+  /**
+   * Server-derived per-class polyline:对 pins 按 classId 分组 + 按 x 排序。
+   * Lets an LLM read "Yellow Tail's curve looks like X" without doing
+   * the grouping itself.
+   */
+  valueCurves?: Array<{
+    classId: string;
+    classLabel: string;
+    color: string;
+    points: Array<{ x: number; y: number }>;
+  }>;
   /** ISO timestamp of when the snapshot was assembled. */
   generatedAt: string;
 }
@@ -333,4 +543,42 @@ export interface AiContextSticky {
   y: number;
   /** Always non-empty — synthesised from creation metadata if missing. */
   zoneHistory: ZoneHistoryEntry[];
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Bulk-import DTO — used by `POST /canvases/:id/objects/bulk` (and the
+// older sticky-only `POST /canvases/:id/stickies/bulk` which delegates).
+// Per-key replace mode: only keys present in the request are replaced;
+// other keys on the doc are untouched. Allowed keys per canvas are
+// validated against the canvas def's `objectTypes`.
+// ──────────────────────────────────────────────────────────────────────────
+export interface ObjectsBulkInput {
+  stickies?: Array<{
+    zoneId: string;
+    text: string;
+    color?: string;
+    x?: number;
+    y?: number;
+    authorName?: string;
+  }>;
+  pinClasses?: Array<{
+    id?: string;
+    label: string;
+    color?: string;
+    icon?: PinIcon;
+    authorName?: string;
+  }>;
+  pins?: Array<{
+    id?: string;
+    classId: string;
+    x: number;
+    y: number;
+    label?: string;
+    body?: string;
+    authorName?: string;
+  }>;
+  xAxisItems?: Array<{
+    id: string;
+    label: LocalizedLabel;
+  }>;
 }

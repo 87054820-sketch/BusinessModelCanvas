@@ -40,6 +40,9 @@
     "selectCanvas": "Select a canvas from the sidebar",
     "showZones": "show zones",
     "addSticky": "+ Sticky",
+    "addPin": "+ Pin",
+    "pinModeOn": "Click canvas to drop · Esc to stop",
+    "pinHint": "Pick a class then click anywhere on the canvas to drop a pin. Same class auto-connects with a line.",
     "saveMilestone": "Save milestone",
     "viewHistory": "History",
     "rename": "Rename",
@@ -85,6 +88,28 @@
       "empty": "Knowledge for this canvas hasn't been written yet.",
       "emptyHint": "Add intro.{{lang}}.md and body.{{lang}}.md under packages/canvases/{{id}}/knowledge/."
     },
+    "config": {
+      "introTab": "Intro",
+      "configTab": "Config",
+      "introTabTitle": "Canvas knowledge",
+      "configTabTitle": "Canvas configuration",
+      "yAxisHeader": "Y axis labels",
+      "yAxisHint": "Per-canvas labels — overrides the template defaults. Leave a field blank to fall back.",
+      "yAxisLabel": "Axis label",
+      "yAxisLowLabel": "Low (bottom)",
+      "yAxisHighLabel": "High (top)"
+    },
+    "config": {
+      "introTab": "Intro",
+      "configTab": "Config",
+      "introTabTitle": "Canvas knowledge",
+      "configTabTitle": "Canvas configuration",
+      "yAxisHeader": "Y axis labels",
+      "yAxisHint": "Per-canvas labels — overrides the template defaults. Leave a field blank to fall back.",
+      "yAxisLabel": "Axis label",
+      "yAxisLowLabel": "Low (bottom)",
+      "yAxisHighLabel": "High (top)"
+    },
     "legend": {
       "title": "Legend",
       "editorHeader": "Color legend",
@@ -121,6 +146,38 @@
     "descriptionPlaceholder": "Description (optional)",
     "save": "Save",
     "cancel": "Cancel"
+  },
+  "chart": {
+    "factorsHeader": "Factors (X axis)",
+    "addFactor": "+ Add factor",
+    "deleteFactorTitle": "Delete factor",
+    "deleteFactorMsg": "Delete '{{name}}'? Pins on the canvas keep their position; the X axis loses this column."
+  },
+  "legend": {
+    "header": "Legend",
+    "headerHint": "Each class is one company / theme / persona. Pins of the same class auto-connect with a line.",
+    "addClass": "+ Add class",
+    "namePlaceholder": "Name this class…",
+    "create": "Add",
+    "empty": "+ Add a legend class to start placing pins",
+    "exitDraw": "Exit draw",
+    "numberHint": "Press {{n}} to switch",
+    "activate": "Activate",
+    "active": "Active",
+    "activateHint": "Make this the class new pins land into",
+    "editClass": "Edit class",
+    "deleteClassTitle": "Delete class",
+    "deleteClassMsg": "Delete '{{name}}'? All its pins on the canvas will be removed too."
+  },
+  "pin": {
+    "header": "Pin",
+    "class": "Class",
+    "classMissing": "(class deleted — pick another)",
+    "label": "Label",
+    "labelPlaceholder": "What does this pin mark?",
+    "body": "Note (optional)",
+    "bodyPlaceholder": "One-line elaboration",
+    "delete": "Delete pin"
   },
   "identity": {
     "title": "Welcome",
@@ -164,6 +221,10 @@
     "customer-journey": {
       "name": "Customer Journey",
       "tagline": "Map a customer's experience over time — find the dips, design the lifts"
+    },
+    "blue-ocean-strategy-canvas": {
+      "name": "Strategy Canvas",
+      "tagline": "Plot a value curve per company across competitive factors — Blue Ocean Strategy"
     }
   }
 }

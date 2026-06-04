@@ -14,11 +14,24 @@ import { projectsApi } from '../api/projects';
 import { useIdentity } from '../identity/useIdentity';
 import { CanvasRenderer } from '../canvas/CanvasRenderer';
 import { StickyLayer } from '../canvas/StickyLayer';
+import { PinLayer } from '../canvas/PinLayer';
+import { LegendPalette } from '../canvas/LegendPalette';
+import { clampPointToCanvas } from '../canvas/bounds';
 import { useYDoc } from '../collab/useYDoc';
 import { addSticky, deleteSticky, useStickies } from '../collab/stickies';
+import { addPin, removePin, usePins } from '../collab/pins';
+import { addPinClass, usePinClasses } from '../collab/pinClasses';
+import { useXAxisItems } from '../collab/xAxisItems';
+import {
+  chartRect,
+  snapXToFactor,
+} from '../plugins/chartCanvas/geometry';
 import { zoneCentroid } from '../canvas/hitTest';
 import { useSelection } from '../state/selection';
 import { useStickyClipboard } from '../state/stickyClipboard';
+import { usePinClipboard } from '../state/pinClipboard';
+import { useActiveClass } from '../state/activeClass';
+import { effectiveObjectTypes } from '@canvas-collab/shared';
 import { ProjectSidebar } from '../workspace/ProjectSidebar';
 import { CanvasToolbar } from '../workspace/CanvasToolbar';
 import { Inspector } from '../workspace/Inspector';
@@ -73,8 +86,30 @@ export function ProjectWorkspacePage() {
   const clearSelection = useSelection((s) => s.clear);
   const selectProject = useSelection((s) => s.selectProject);
   const selectCanvas = useSelection((s) => s.selectCanvas);
+  const selection = useSelection((s) => s.selection);
   const rightCollapsed = useUiPrefs((s) => s.rightInspectorCollapsed);
   const toggleRight = useUiPrefs((s) => s.toggleRightInspector);
+  const rightTab = useUiPrefs((s) => s.rightInspectorTab);
+  const setRightTab = useUiPrefs((s) => s.setRightInspectorTab);
+  const setRightCollapsed = useUiPrefs((s) => s.setRightInspectorCollapsed);
+
+  /**
+   * Click handler for the always-visible ⓘ / ⚙ tab icons. Always:
+   *   1. Set the desired tab on uiPrefs.
+   *   2. Drop selection back to canvas-level so the body actually shows
+   *      the canvas knowledge / config view (not whatever sticky / pin
+   *      / block was previously selected).
+   *   3. If currently collapsed, expand.
+   *
+   * The pinClass selection is *also* a config-tab body, so a click on
+   * ⚙ while pinClass is selected just clears the selection (canvas tab
+   * shows the regular config layout without scrollToClassId).
+   */
+  function pickInspectorTab(tab: 'intro' | 'config') {
+    setRightTab(tab);
+    selectCanvas();
+    if (rightCollapsed) setRightCollapsed(false);
+  }
 
   // Load the canvas-defs summary list once. Used to localise the
   // "Pairs with" chip labels in the Inspector for canvas types that
@@ -170,6 +205,19 @@ export function ProjectWorkspacePage() {
 
   const { doc, ready } = useYDoc(activeCanvas?.id, identity?.displayName ?? '');
   const stickies = useStickies(doc ?? null);
+  const pinClasses = usePinClasses(doc ?? null);
+  const pins = usePins(doc ?? null);
+  const factors = useXAxisItems(doc ?? null);
+  const activeClassId = useActiveClass((s) => s.activeClassId);
+  const clearActiveClass = useActiveClass((s) => s.clearActive);
+  const selectPin = useSelection((s) => s.selectPin);
+  const selectPinClass = useSelection((s) => s.selectPinClass);
+
+  // Reset active class on canvas switch — stale draw mode from a
+  // different canvas would be confusing.
+  useEffect(() => {
+    clearActiveClass();
+  }, [activeCanvas?.id, clearActiveClass]);
 
   // Workspace-level keyboard shortcuts.
   //
@@ -312,11 +360,99 @@ export function ProjectWorkspacePage() {
         useSelection.getState().selectSticky(newId);
         return;
       }
+
+      // ── Pin paths — parallel to sticky shortcuts above ──────────────
+
+      if (
+        (e.key === 'Delete' || e.key === 'Backspace') &&
+        sel.kind === 'pin'
+      ) {
+        e.preventDefault();
+        removePin(doc!, sel.pinId);
+        useSelection.getState().clear();
+        return;
+      }
+
+      if (cmd && (e.key === 'c' || e.key === 'C') && sel.kind === 'pin') {
+        const pin = pins.find((p) => p.id === sel.pinId);
+        if (!pin) return;
+        e.preventDefault();
+        usePinClipboard.getState().set({
+          classId: pin.classId,
+          ...(pin.label ? { label: pin.label } : {}),
+          ...(pin.body ? { body: pin.body } : {}),
+          sourceX: pin.x,
+          sourceY: pin.y,
+        });
+        return;
+      }
+
+      if (cmd && (e.key === 'x' || e.key === 'X') && sel.kind === 'pin') {
+        const pin = pins.find((p) => p.id === sel.pinId);
+        if (!pin) return;
+        e.preventDefault();
+        usePinClipboard.getState().set({
+          classId: pin.classId,
+          ...(pin.label ? { label: pin.label } : {}),
+          ...(pin.body ? { body: pin.body } : {}),
+          sourceX: pin.x,
+          sourceY: pin.y,
+        });
+        removePin(doc!, pin.id);
+        useSelection.getState().clear();
+        return;
+      }
+
+      if (cmd && (e.key === 'v' || e.key === 'V')) {
+        // Pin paste fires when sticky paste didn't apply (no sticky
+        // entry / no pin selected combo above didn't hit `return`).
+        const entry = usePinClipboard.getState().entry;
+        if (!entry) return;
+        // Class may have been deleted since copy — silently no-op.
+        if (!pinClasses.some((c) => c.id === entry.classId)) return;
+        const baseX =
+          sel.kind === 'pin'
+            ? pins.find((p) => p.id === sel.pinId)?.x ?? entry.sourceX
+            : entry.sourceX;
+        const baseY =
+          sel.kind === 'pin'
+            ? pins.find((p) => p.id === sel.pinId)?.y ?? entry.sourceY
+            : entry.sourceY;
+        e.preventDefault();
+        const newId = addPin(doc!, {
+          classId: entry.classId,
+          x: baseX + 24,
+          y: baseY + 24,
+          ...(entry.label ? { label: entry.label } : {}),
+          ...(entry.body ? { body: entry.body } : {}),
+          authorName: identity!.displayName,
+        });
+        useSelection.getState().selectPin(newId);
+        // Keep clipboard for repeat ⌘+V; advance source coords so the
+        // next paste lands further along.
+        usePinClipboard.getState().set({
+          ...entry,
+          sourceX: baseX + 24,
+          sourceY: baseY + 24,
+        });
+        return;
+      }
+
+      // ── Number keys 1..9: switch active pin class ───────────────────
+      if (!cmd && e.key >= '1' && e.key <= '9') {
+        const idx = Number(e.key) - 1;
+        const target = pinClasses[idx];
+        if (target) {
+          e.preventDefault();
+          useActiveClass.getState().pickClass(target.id);
+        }
+        return;
+      }
     }
 
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [doc, stickies, bundle, identity, clearSelection]);
+  }, [doc, stickies, pins, pinClasses, bundle, identity, clearSelection]);
 
   if (!identity || !projectId) return null;
   if (!project) {
@@ -404,6 +540,30 @@ export function ProjectWorkspacePage() {
               showZones={showZones}
               onShowZonesChange={setShowZones}
               onAddSticky={handleAddStickyDefault}
+              objectTypes={bundle?.def ? effectiveObjectTypes(bundle.def) : undefined}
+              onAddPin={
+                bundle?.def && doc
+                  ? () => {
+                      // No class → seed one and activate it. Has class
+                      // but none active → activate first. Has active →
+                      // toggle off.
+                      const state = useActiveClass.getState();
+                      if (pinClasses.length === 0) {
+                        const newId = addPinClass(doc, {
+                          label: lang === 'zh' ? '类别 1' : 'Class 1',
+                          authorName: identity!.displayName,
+                        });
+                        state.pickClass(newId);
+                        return;
+                      }
+                      if (!state.activeClassId) {
+                        state.pickClass(pinClasses[0]!.id);
+                      } else {
+                        state.clearActive();
+                      }
+                    }
+                  : undefined
+              }
               displayName={identity.displayName}
               onRename={async (title) => {
                 const updated = await api.updateCanvas(
@@ -417,23 +577,80 @@ export function ProjectWorkspacePage() {
                 setActiveCanvas(updated);
               }}
             />
-            <div className="flex-1 overflow-hidden p-4">
-              <div className="mx-auto h-full max-w-[1400px] rounded-lg bg-white shadow-sm">
+            <div className="flex-1 overflow-hidden p-3">
+              <div className="relative h-full w-full rounded-lg bg-white shadow-sm">
                 {ready && doc ? (
-                  <CanvasRenderer
-                    defId={activeCanvas.defId}
-                    lang={lang}
-                    showZones={showZones}
-                  >
-                    {({ def, toSvgPoint }) => (
-                      <StickyLayer
-                        doc={doc}
-                        zones={def.zones}
-                        toSvgPoint={toSvgPoint}
-                        displayName={identity.displayName}
-                      />
-                    )}
-                  </CanvasRenderer>
+                  <>
+                    {bundle?.def &&
+                      effectiveObjectTypes(bundle.def).includes('pinClass') && (
+                        <LegendPalette
+                          doc={doc}
+                          displayName={identity.displayName}
+                          lang={lang}
+                        />
+                      )}
+                    <CanvasRenderer
+                      defId={activeCanvas.defId}
+                      lang={lang}
+                      showZones={showZones}
+                      doc={doc}
+                      displayName={identity.displayName}
+                      onCanvasClick={
+                        activeClassId && doc
+                          ? (p) => {
+                              if (!bundle?.def) return;
+                              // 1. Clamp to drawable area first so a click
+                              //    on the X-axis label strip / Y-axis
+                              //    numbers never produces a pin floating
+                              //    outside the chart.
+                              const c = clampPointToCanvas(p, bundle.def);
+                              // 2. X-snap on chart-canvas only.
+                              let { x } = c;
+                              if (bundle.def.plugin === 'chart-canvas') {
+                                const rect = chartRect(bundle.def.viewBox);
+                                x = snapXToFactor(c.x, rect, factors.length);
+                              }
+                              const newId = addPin(doc, {
+                                classId: activeClassId,
+                                x,
+                                y: c.y,
+                                authorName: identity!.displayName,
+                              });
+                              selectPin(newId);
+                              // stay in draw mode for streak placement
+                            }
+                          : undefined
+                      }
+                    >
+                      {({ def, toSvgPoint }) => (
+                        <>
+                          <StickyLayer
+                            doc={doc}
+                            zones={def.zones}
+                            toSvgPoint={toSvgPoint}
+                            displayName={identity.displayName}
+                          />
+                          {effectiveObjectTypes(def).includes('pin') && (
+                            <PinLayer
+                              doc={doc}
+                              def={def}
+                              toSvgPoint={toSvgPoint}
+                              snapX={
+                                def.plugin === 'chart-canvas'
+                                  ? (x) =>
+                                      snapXToFactor(
+                                        x,
+                                        chartRect(def.viewBox),
+                                        factors.length,
+                                      )
+                                  : undefined
+                              }
+                            />
+                          )}
+                        </>
+                      )}
+                    </CanvasRenderer>
+                  </>
                 ) : (
                   <div className="flex h-full items-center justify-center text-sm text-gray-500">
                     Loading…
@@ -454,39 +671,92 @@ export function ProjectWorkspacePage() {
           rightCollapsed ? 'w-[56px]' : 'w-[500px]'
         }`}
       >
-        <div className="flex h-12 items-center border-b border-gray-200">
-          <button
-            type="button"
-            onClick={toggleRight}
-            aria-label={t(
-              rightCollapsed ? 'workspace.expandInspector' : 'workspace.collapseInspector',
-            )}
-            title={t(
-              rightCollapsed ? 'workspace.expandInspector' : 'workspace.collapseInspector',
-            )}
-            className="flex h-12 w-[56px] flex-shrink-0 items-center justify-center text-gray-500 hover:bg-gray-50 hover:text-gray-900"
-          >
-            {rightCollapsed ? '«' : '»'}
-          </button>
-        </div>
-        {!rightCollapsed && (
-          <div className="flex-1 overflow-hidden">
-            <Inspector
-              project={project}
-              canvasCount={canvases.length}
-              doc={doc}
-              def={bundle?.def ?? null}
-              i18n={bundle?.i18n ?? null}
-              knowledge={bundle?.knowledge ?? null}
-              displayName={identity.displayName}
-              projectCanvases={canvases}
-              defNames={Object.fromEntries(defSummaries.map((d) => [d.id, d.name]))}
-              onSwitchCanvas={(id) => navigate(`/p/${project.id}/c/${id}`)}
-              onAddCanvas={handleAddCanvas}
-              onProjectPatch={handleProjectPatch}
-              onProjectDelete={handleProjectDelete}
+        {rightCollapsed ? (
+          // Collapsed: vertical icon strip — expand caret on top, then
+          // ⓘ + ⚙. Each tab icon expands AND switches to its tab in
+          // one click (`pickInspectorTab`). Caret just expands without
+          // changing the tab.
+          <div className="flex flex-col items-center pt-1">
+            <button
+              type="button"
+              onClick={toggleRight}
+              aria-label={t('workspace.expandInspector')}
+              title={t('workspace.expandInspector')}
+              className="flex h-10 w-[56px] items-center justify-center text-gray-500 hover:bg-gray-50 hover:text-gray-900"
+            >
+              «
+            </button>
+            <div className="my-1 h-px w-8 bg-gray-200" />
+            <InspectorTabIconButton
+              icon="ⓘ"
+              label={t('inspector.config.introTabTitle')}
+              active={false /* nothing is active when collapsed */}
+              onClick={() => pickInspectorTab('intro')}
+            />
+            <InspectorTabIconButton
+              icon="⚙"
+              label={t('inspector.config.configTabTitle')}
+              active={false}
+              onClick={() => pickInspectorTab('config')}
             />
           </div>
+        ) : (
+          <>
+            <div className="flex h-12 items-center justify-between border-b border-gray-200 px-2">
+              {/* Tab strip: ⓘ Intro / ⚙ Config — always visible. The
+                  active highlight only lights up when the body is
+                  actually showing the matching tab; with sticky/block/
+                  pin/pinClass selection both icons stay idle so the
+                  user can still navigate back to canvas-level. */}
+              <div className="flex items-center gap-1">
+                <InspectorTabIconButton
+                  icon="ⓘ"
+                  label={t('inspector.config.introTab')}
+                  active={
+                    (selection.kind === 'canvas' || selection.kind === 'none') &&
+                    rightTab === 'intro'
+                  }
+                  onClick={() => pickInspectorTab('intro')}
+                />
+                <InspectorTabIconButton
+                  icon="⚙"
+                  label={t('inspector.config.configTab')}
+                  active={
+                    selection.kind === 'pinClass' ||
+                    ((selection.kind === 'canvas' || selection.kind === 'none') &&
+                      rightTab === 'config')
+                  }
+                  onClick={() => pickInspectorTab('config')}
+                />
+              </div>
+              <button
+                type="button"
+                onClick={toggleRight}
+                aria-label={t('workspace.collapseInspector')}
+                title={t('workspace.collapseInspector')}
+                className="flex h-9 w-9 items-center justify-center rounded text-gray-500 hover:bg-gray-50 hover:text-gray-900"
+              >
+                »
+              </button>
+            </div>
+            <div className="flex-1 overflow-hidden">
+              <Inspector
+                project={project}
+                canvasCount={canvases.length}
+                doc={doc}
+                def={bundle?.def ?? null}
+                i18n={bundle?.i18n ?? null}
+                knowledge={bundle?.knowledge ?? null}
+                displayName={identity.displayName}
+                projectCanvases={canvases}
+                defNames={Object.fromEntries(defSummaries.map((d) => [d.id, d.name]))}
+                onSwitchCanvas={(id) => navigate(`/p/${project.id}/c/${id}`)}
+                onAddCanvas={handleAddCanvas}
+                onProjectPatch={handleProjectPatch}
+                onProjectDelete={handleProjectDelete}
+              />
+            </div>
+          </>
         )}
       </aside>
 
@@ -507,5 +777,41 @@ export function ProjectWorkspacePage() {
 
       <LightboxRoot />
     </div>
+  );
+}
+
+/**
+ * Square icon button used by the right-aside tab strip. Identical
+ * appearance in the collapsed (vertical) and expanded (horizontal)
+ * layouts — only the surrounding flex direction changes. The active
+ * state is a filled gray pill so the user can see at a glance which
+ * tab the body is currently rendering.
+ */
+function InspectorTabIconButton({
+  icon,
+  label,
+  active,
+  onClick,
+}: {
+  icon: string;
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      title={label}
+      aria-label={label}
+      aria-pressed={active}
+      className={`flex h-9 w-9 items-center justify-center rounded text-base leading-none transition ${
+        active
+          ? 'bg-gray-900 text-white'
+          : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'
+      }`}
+    >
+      {icon}
+    </button>
   );
 }

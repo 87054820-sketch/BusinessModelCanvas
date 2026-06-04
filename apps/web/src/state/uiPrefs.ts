@@ -15,15 +15,26 @@ const STORAGE_KEY = 'canvas-collab.uiPrefs';
 interface PersistedShape {
   leftSidebarCollapsed?: boolean;
   rightInspectorCollapsed?: boolean;
+  /**
+   * Which sub-view is active when the right inspector renders the
+   * canvas-level view (selection.kind in {none, canvas}). 'intro' shows
+   * the bundled knowledge pages; 'config' shows
+   * `CanvasConfigInspector` (Y-axis labels + factors + pin classes).
+   * The two corresponding ⓘ / ⚙ icons are always visible — even in
+   * collapsed mode — so users can land directly on either tab.
+   */
+  rightInspectorTab?: 'intro' | 'config';
 }
 
 interface UiPrefsStore {
   leftSidebarCollapsed: boolean;
   rightInspectorCollapsed: boolean;
+  rightInspectorTab: 'intro' | 'config';
   toggleLeftSidebar: () => void;
   setLeftSidebarCollapsed: (collapsed: boolean) => void;
   toggleRightInspector: () => void;
   setRightInspectorCollapsed: (collapsed: boolean) => void;
+  setRightInspectorTab: (tab: 'intro' | 'config') => void;
 }
 
 function readInitial(): PersistedShape {
@@ -53,12 +64,15 @@ const initial = readInitial();
 export const useUiPrefs = create<UiPrefsStore>((set, get) => ({
   leftSidebarCollapsed: initial.leftSidebarCollapsed ?? false,
   rightInspectorCollapsed: initial.rightInspectorCollapsed ?? false,
+  rightInspectorTab:
+    initial.rightInspectorTab === 'config' ? 'config' : 'intro',
   toggleLeftSidebar: () => {
     const next = !get().leftSidebarCollapsed;
     set({ leftSidebarCollapsed: next });
     persist({
       leftSidebarCollapsed: next,
       rightInspectorCollapsed: get().rightInspectorCollapsed,
+      rightInspectorTab: get().rightInspectorTab,
     });
   },
   setLeftSidebarCollapsed: (collapsed) => {
@@ -66,6 +80,7 @@ export const useUiPrefs = create<UiPrefsStore>((set, get) => ({
     persist({
       leftSidebarCollapsed: collapsed,
       rightInspectorCollapsed: get().rightInspectorCollapsed,
+      rightInspectorTab: get().rightInspectorTab,
     });
   },
   toggleRightInspector: () => {
@@ -74,6 +89,7 @@ export const useUiPrefs = create<UiPrefsStore>((set, get) => ({
     persist({
       leftSidebarCollapsed: get().leftSidebarCollapsed,
       rightInspectorCollapsed: next,
+      rightInspectorTab: get().rightInspectorTab,
     });
   },
   setRightInspectorCollapsed: (collapsed) => {
@@ -81,6 +97,15 @@ export const useUiPrefs = create<UiPrefsStore>((set, get) => ({
     persist({
       leftSidebarCollapsed: get().leftSidebarCollapsed,
       rightInspectorCollapsed: collapsed,
+      rightInspectorTab: get().rightInspectorTab,
+    });
+  },
+  setRightInspectorTab: (tab) => {
+    set({ rightInspectorTab: tab });
+    persist({
+      leftSidebarCollapsed: get().leftSidebarCollapsed,
+      rightInspectorCollapsed: get().rightInspectorCollapsed,
+      rightInspectorTab: tab,
     });
   },
 }));

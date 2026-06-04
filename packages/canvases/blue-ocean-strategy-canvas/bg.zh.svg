@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880" preserveAspectRatio="xMidYMid meet">
+  <rect x="0" y="0" width="1280" height="880" fill="#FAFAF7" />
+
+  <text x="640" y="40" font-family="PingFang SC, Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#1F2937" text-anchor="middle">
+    战略画布(Strategy Canvas)
+  </text>
+
+  <rect x="100" y="64" width="980" height="706" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+</svg>

@@ -39,7 +39,11 @@ export function BlockInspector({
 
         {guidanceMd ? (
           <div className="mt-3">
-            <Markdown content={guidanceMd} canvasDefId={canvasDefId} />
+            <Markdown
+              content={guidanceMd}
+              canvasDefId={canvasDefId}
+              variant="block-guidance"
+            />
           </div>
         ) : (
           block.prompt && (

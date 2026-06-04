@@ -1,0 +1,56 @@
+{
+  "id": "blue-ocean-strategy-canvas",
+  "name": {
+    "en": "Strategy Canvas (Blue Ocean)",
+    "zh": "战略画布(蓝海战略)"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "plugin": "chart-canvas",
+  "objectTypes": ["sticky", "pin", "pinClass", "xAxisItem"],
+  "chart": {
+    "yAxis": {
+      "min": 0,
+      "max": 5,
+      "label": { "en": "Offering level", "zh": "投入 / 表现水平" },
+      "lowLabel": { "en": "Low", "zh": "低" },
+      "highLabel": { "en": "High", "zh": "高" }
+    },
+    "factorsDefault": [
+      {
+        "id": "price",
+        "label": { "en": "Price", "zh": "价格" }
+      },
+      {
+        "id": "quality",
+        "label": { "en": "Quality", "zh": "质量" }
+      },
+      {
+        "id": "service",
+        "label": { "en": "Service", "zh": "服务" }
+      },
+      {
+        "id": "speed",
+        "label": { "en": "Speed", "zh": "速度" }
+      },
+      {
+        "id": "brand",
+        "label": { "en": "Brand", "zh": "品牌" }
+      },
+      {
+        "id": "innovation",
+        "label": { "en": "Innovation", "zh": "创新" }
+      }
+    ]
+  },
+  "zones": [
+    {
+      "id": "chart-area",
+      "shape": { "type": "rect", "x": 100, "y": 64, "w": 980, "h": 706 }
+    }
+  ],
+  "related": ["business-model-canvas", "value-proposition-canvas"]
+}

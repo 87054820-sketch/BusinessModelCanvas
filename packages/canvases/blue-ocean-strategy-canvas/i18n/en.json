@@ -1,0 +1,9 @@
+{
+  "canvasTitle": "Strategy Canvas",
+  "blocks": {
+    "chart-area": {
+      "title": "Chart area",
+      "prompt": "Stickies dropped here float around the value-curve chart — use them for notes, ERRC bullets, takeaways."
+    }
+  }
+}

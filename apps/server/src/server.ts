@@ -10,6 +10,7 @@ import { registerYjsStateRoutes } from './http/yjsState.js';
 import { registerSnapshotRoutes } from './http/snapshots.js';
 import { registerAiContextRoutes } from './http/aiContext.js';
 import { registerStickyImportRoutes } from './http/stickyImport.js';
+import { registerObjectsImportRoutes } from './http/objectsImport.js';
 
 async function main() {
   const app = Fastify({ logger: true, bodyLimit: 8 * 1024 * 1024 });
@@ -35,10 +36,11 @@ async function main() {
   registerCanvasDefRoutes(app, defs);
   registerProjectRoutes(app, storage);
   registerCanvasRoutes(app, storage, defs);
-  registerYjsStateRoutes(app, storage);
+  registerYjsStateRoutes(app, storage, defs);
   registerSnapshotRoutes(app, storage);
   registerAiContextRoutes(app, storage, defs);
   registerStickyImportRoutes(app, storage, defs);
+  registerObjectsImportRoutes(app, storage, defs);
 
   app.get('/health', async () => ({ ok: true }));
 

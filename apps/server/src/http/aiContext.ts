@@ -9,6 +9,16 @@ import type {
 } from '@canvas-collab/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import { loadKnowledgeForBundle, type LoadedCanvasDef } from '../canvasDefs/loader.js';
+import {
+  getPinClassesRoot,
+  getPinsRoot,
+  getXAxisItemsRoot,
+  readChartConfig,
+  readPin,
+  readPinClass,
+  readXAxisItem,
+  type ChartConfigOverrides,
+} from '../collab/encoders.js';
 
 const STICKIES_KEY = 'stickies';
 
@@ -60,11 +70,22 @@ export function registerAiContextRoutes(
     // the canvas is brand-new — every block still appears in the response,
     // just with `stickies: []`.
     const stickiesByZone = new Map<string, AiContextSticky[]>();
+    let factors: Array<{ id: string; label: string }> | undefined;
+    let pinClassesOut: AiContext['pinClasses'] | undefined;
+    let pinsOut: AiContext['pins'] | undefined;
+    let valueCurves: AiContext['valueCurves'] | undefined;
+    /** Per-canvas Y-axis label overrides (when chart-canvas plugin is active). */
+    let chartOverrides: ChartConfigOverrides = {};
     const state = await storage.loadYDocState(req.params.id);
     if (state && state.byteLength > 0) {
       const doc = new Y.Doc();
       try {
         Y.applyUpdate(doc, state);
+        // Read chart-config overrides up front so we can apply them to
+        // both the canvas-meta surface (def name still resolves from
+        // i18n) and any chart-related response fields.
+        chartOverrides = readChartConfig(doc);
+
         const root = doc.getMap<Y.Map<unknown>>(STICKIES_KEY);
         root.forEach((yMap) => {
           const sticky = readStickyForAi(yMap);
@@ -75,6 +96,80 @@ export function registerAiContextRoutes(
           arr.push(sticky);
           stickiesByZone.set(zoneId, arr);
         });
+
+        // X axis factors (chart-canvas only, but cheap to surface
+        // whenever the array is non-empty).
+        const factorsRoot = getXAxisItemsRoot(doc);
+        if (factorsRoot.length > 0) {
+          const list: Array<{ id: string; label: string }> = [];
+          factorsRoot.forEach((y) => {
+            const item = readXAxisItem(y);
+            if (!item) return;
+            const label = item.label[lang] || item.label.en || item.label.zh || '';
+            list.push({ id: item.id, label });
+          });
+          if (list.length > 0) factors = list;
+        }
+
+        // Pin classes (legend) and pins. We do these together because the
+        // pins list carries a `classLabel` derived from the class.
+        const classesRoot = getPinClassesRoot(doc);
+        const classByIdLocal = new Map<
+          string,
+          { id: string; label: string; color: string; icon: import('@canvas-collab/shared').PinIcon }
+        >();
+        if (classesRoot.size > 0) {
+          const arr: NonNullable<AiContext['pinClasses']> = [];
+          classesRoot.forEach((y) => {
+            const c = readPinClass(y);
+            if (!c) return;
+            arr.push({ id: c.id, label: c.label, color: c.color, icon: c.icon });
+            classByIdLocal.set(c.id, { id: c.id, label: c.label, color: c.color, icon: c.icon });
+          });
+          if (arr.length > 0) pinClassesOut = arr;
+        }
+
+        const pinsRoot = getPinsRoot(doc);
+        if (pinsRoot.size > 0) {
+          const arr: NonNullable<AiContext['pins']> = [];
+          // Also accumulate per-class points for valueCurves.
+          const byClass = new Map<string, Array<{ x: number; y: number }>>();
+          pinsRoot.forEach((y) => {
+            const pin = readPin(y);
+            if (!pin) return;
+            const cls = classByIdLocal.get(pin.classId);
+            arr.push({
+              id: pin.id,
+              classId: pin.classId,
+              classLabel: cls?.label ?? '',
+              x: pin.x,
+              y: pin.y,
+              ...(pin.label ? { label: pin.label } : {}),
+              ...(pin.body ? { body: pin.body } : {}),
+            });
+            const list = byClass.get(pin.classId) ?? [];
+            list.push({ x: pin.x, y: pin.y });
+            byClass.set(pin.classId, list);
+          });
+          if (arr.length > 0) pinsOut = arr;
+
+          // Auto-derived per-class polylines — sort by x so the curve
+          // reads left-to-right. Skip classes with <2 points (no line).
+          const curves: NonNullable<AiContext['valueCurves']> = [];
+          for (const [classId, points] of byClass) {
+            if (points.length < 2) continue;
+            const cls = classByIdLocal.get(classId);
+            if (!cls) continue;
+            points.sort((a, b) => a.x - b.x);
+            curves.push({
+              classId,
+              classLabel: cls.label,
+              color: cls.color,
+              points,
+            });
+          }
+          if (curves.length > 0) valueCurves = curves;
+        }
       } finally {
         doc.destroy();
       }
@@ -107,6 +202,40 @@ export function registerAiContextRoutes(
       };
     });
 
+    // Y axis (chart-canvas only). Resolve manifest defaults against
+    // `lang` first, then overlay any per-canvas overrides the user
+    // typed in the right inspector. Mirrors the resolver in
+    // `apps/web/src/collab/chartConfig.ts` — same fallback order so AI
+    // output is byte-identical with what the user sees.
+    let yAxisOut: AiContext['yAxis'];
+    if (bundle.def.chart) {
+      const m = bundle.def.chart.yAxis;
+      const resolve = (
+        manifest: { en: string; zh: string } | undefined,
+        override: { en?: string; zh?: string } | undefined,
+      ): string | undefined => {
+        const otherLang: Lang = lang === 'en' ? 'zh' : 'en';
+        const candidates = [
+          override?.[lang],
+          manifest?.[lang],
+          override?.[otherLang],
+          manifest?.[otherLang],
+        ];
+        for (const c of candidates) {
+          if (typeof c === 'string' && c.trim().length > 0) return c;
+        }
+        return undefined;
+      };
+      const label = resolve(m.label, chartOverrides.yAxisLabel) ?? '';
+      const lowLabel = resolve(m.lowLabel, chartOverrides.yAxisLowLabel);
+      const highLabel = resolve(m.highLabel, chartOverrides.yAxisHighLabel);
+      yAxisOut = {
+        label,
+        ...(lowLabel ? { lowLabel } : {}),
+        ...(highLabel ? { highLabel } : {}),
+      };
+    }
+
     const ctx: AiContext = {
       canvas: {
         id: meta.id,
@@ -123,6 +252,11 @@ export function registerAiContextRoutes(
           : { id: meta.projectId, name: '' },
       },
       blocks,
+      ...(factors ? { factors } : {}),
+      ...(yAxisOut ? { yAxis: yAxisOut } : {}),
+      ...(pinClassesOut ? { pinClasses: pinClassesOut } : {}),
+      ...(pinsOut ? { pins: pinsOut } : {}),
+      ...(valueCurves ? { valueCurves } : {}),
       generatedAt: new Date().toISOString(),
     };
 

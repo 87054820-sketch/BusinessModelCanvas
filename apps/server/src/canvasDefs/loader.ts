@@ -54,6 +54,24 @@ const ZoneDef = z.object({
     .optional(),
 });
 
+const LocalizedLabel = z.object({ en: z.string(), zh: z.string() });
+
+const ChartConfigSchema = z.object({
+  yAxis: z.object({
+    min: z.number(),
+    max: z.number(),
+    label: LocalizedLabel,
+    lowLabel: LocalizedLabel.optional(),
+    highLabel: LocalizedLabel.optional(),
+  }),
+  factorsDefault: z.array(
+    z.object({
+      id: z.string().min(1),
+      label: LocalizedLabel,
+    }),
+  ),
+});
+
 const ManifestSchema = z.object({
   id: z.string().min(1),
   name: z.object({ en: z.string(), zh: z.string() }),
@@ -63,8 +81,18 @@ const ManifestSchema = z.object({
     zh: z.string().min(1).optional(),
   }),
   zones: z.array(ZoneDef).min(1),
-  plugin: z.enum(['axis-grid']).optional(),
+  plugin: z.enum(['axis-grid', 'chart-canvas']).optional(),
   related: z.array(z.string().min(1)).optional(),
+  /**
+   * Declarative list of editable object types this canvas allows.
+   * Defaults to `['sticky']` when omitted, matching pre-existing canvases.
+   * Mirrors `ObjectType` in `packages/shared/src/index.ts`.
+   */
+  objectTypes: z
+    .array(z.enum(['sticky', 'pin', 'pinClass', 'xAxisItem']))
+    .optional(),
+  /** Required for chart-canvas plugin canvases; otherwise unused. */
+  chart: ChartConfigSchema.optional(),
 });
 
 const I18nSchema = z.object({

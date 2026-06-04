@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta } from '@canvas-collab/shared';
+import type { CanvasMeta, ObjectType } from '@canvas-collab/shared';
 import { snapshotsApi } from '../api/snapshots';
+import { useActiveClass } from '../state/activeClass';
 
 interface Props {
   canvas: CanvasMeta;
@@ -10,6 +11,19 @@ interface Props {
   showZones: boolean;
   onShowZonesChange: (v: boolean) => void;
   onAddSticky: () => void;
+  /**
+   * Object types this canvas allows — drives which toolbar buttons are
+   * shown. The host (workspace page) computes this via
+   * `effectiveObjectTypes(def)` so canvases without an explicit
+   * declaration still see pin / pinClass.
+   */
+  objectTypes?: ObjectType[];
+  /**
+   * Toggle pin draw mode. Host decides what happens (seed first class
+   * if none, activate first class if none active, deactivate
+   * otherwise). Undefined → button hidden.
+   */
+  onAddPin?: () => void;
   displayName: string;
   /** Called when the title input commits — workspace persists via API. */
   onRename: (title: string) => void;
@@ -25,12 +39,17 @@ export function CanvasToolbar({
   showZones,
   onShowZonesChange,
   onAddSticky,
+  objectTypes,
+  onAddPin,
   displayName,
   onRename,
 }: Props) {
   const { t } = useTranslation();
   const [title, setTitle] = useState(canvas.title);
   const [milestoneOpen, setMilestoneOpen] = useState(false);
+  const activeClassId = useActiveClass((s) => s.activeClassId);
+
+  const allowsPin = objectTypes?.includes('pin') ?? false;
 
   // The input is sized in `ch` units. A `ch` is the width of the "0"
   // glyph, so CJK characters (which are roughly 2× wider) overflow when
@@ -71,6 +90,20 @@ export function CanvasToolbar({
           />
           {t('workspace.showZones')}
         </label>
+        {allowsPin && onAddPin && (
+          <button
+            type="button"
+            onClick={onAddPin}
+            className={`rounded-lg px-3 py-1 text-xs font-medium ${
+              activeClassId
+                ? 'bg-gray-900 text-white hover:bg-black'
+                : 'border border-gray-300 text-gray-900 hover:bg-gray-50'
+            }`}
+            title={t('workspace.pinHint')}
+          >
+            {activeClassId ? t('workspace.pinModeOn') : t('workspace.addPin')}
+          </button>
+        )}
         <button
           type="button"
           onClick={onAddSticky}
