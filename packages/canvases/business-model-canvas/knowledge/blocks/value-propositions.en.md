@@ -1,0 +1,1 @@
+The bundle of products and services that creates value for a specific customer segment. A value proposition solves a customer problem or satisfies a need — through novelty, performance, customization, design, brand, price, cost reduction, risk reduction, accessibility, or convenience. Be specific: vague value props are the #1 reason canvases fail.

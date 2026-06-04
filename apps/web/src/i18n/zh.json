@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "商业模式画布",
+    "subtitle": "为团队打造的实时战略画布"
+  },
+  "nav": {
+    "back": "返回",
+    "history": "历史版本"
+  },
+  "language": {
+    "label": "语言",
+    "en": "English",
+    "zh": "中文"
+  },
+  "home": {
+    "title": "项目",
+    "newProject": "+ 新建项目",
+    "empty": "还没有项目,创建一个开始使用吧。",
+    "canvasCount_one": "{{count}} 张画布",
+    "canvasCount_other": "{{count}} 张画布",
+    "updated": "更新于 {{time}}",
+    "templates": "画布模板",
+    "templatesHint": "选一个模板直接开启新项目,或在下方从零开始创建项目。",
+    "noCanvasesYet": "尚无画布",
+    "relatedCanvases": "配套画布",
+    "relatedCanvases": "配套画布"
+  },
+  "newProject": {
+    "title": "创建项目",
+    "name": "项目名称",
+    "namePlaceholder": "例如: Acme Q3 战略",
+    "description": "描述(可选)",
+    "submit": "创建",
+    "cancel": "取消",
+    "withCanvas": "项目创建后将自动开启一张「{{canvas}}」画布。"
+  },
+  "workspace": {
+    "addCanvas": "+ 添加画布",
+    "noCanvases": "暂无画布。",
+    "selectCanvas": "从左侧选择一张画布",
+    "showZones": "显示分区",
+    "addSticky": "+ 便签",
+    "saveMilestone": "保存里程碑",
+    "viewHistory": "历史",
+    "rename": "重命名",
+    "collapseSidebar": "收起左栏",
+    "expandSidebar": "展开左栏",
+    "collapseInspector": "收起右栏",
+    "expandInspector": "展开右栏"
+  },
+  "addCanvas": {
+    "title": "向此项目添加画布",
+    "createIn": "创建",
+    "language": "语言"
+  },
+  "inspector": {
+    "tip": "在画布上选中便签或分区以查看详情。",
+    "block": {
+      "guidance": "说明",
+      "examples": "示例",
+      "addAsSticky": "+ 加到便签",
+      "newSticky": "+ 在此区块新增空便签"
+    },
+    "sticky": {
+      "text": "内容",
+      "color": "颜色",
+      "block": "所属区块",
+      "author": "作者",
+      "createdAt": "创建时间",
+      "delete": "删除便签",
+      "clickToEdit": "点击编辑文本",
+      "shortcuts": "快捷键:⌘/Ctrl + C 复制 · ⌘/Ctrl + V 粘贴 · ⌘/Ctrl + X 剪切 · Delete / Backspace 删除。快捷键直接作用于便签对象;如需编辑文字,点击文本框或在画布上双击便签即可。"
+    },
+    "project": {
+      "name": "项目名称",
+      "description": "描述",
+      "createdBy": "由 {{name}} 创建",
+      "deleteHeader": "危险操作",
+      "delete": "删除项目",
+      "deleteHint": "将永久删除项目、所有画布和所有里程碑。"
+    },
+    "canvasKnowledge": {
+      "usageIntro": "使用介绍",
+      "knowledgeBody": "知识体系",
+      "empty": "这种画布的知识体系还没有撰写。",
+      "emptyHint": "在 packages/canvases/{{id}}/knowledge/ 下补充 intro.{{lang}}.md 和 body.{{lang}}.md。"
+    },
+    "legend": {
+      "title": "图例",
+      "editorHeader": "颜色图例",
+      "editorHint": "为每种便签颜色定义一个仅属于本项目的含义。空白行不会出现在左侧栏。",
+      "labelPlaceholder": "标签(如「客户痛点」)",
+      "descriptionPlaceholder": "可选说明",
+      "save": "保存图例",
+      "saved": "已保存"
+    }
+  },
+  "history": {
+    "title": "历史版本",
+    "empty": "暂无里程碑,在画布上点击「保存里程碑」以创建。",
+    "restoreHere": "恢复至此",
+    "restoreAsNew": "另存为新画布",
+    "deleteMilestone": "删除里程碑",
+    "stickyCount_one": "{{count}} 张便签",
+    "stickyCount_other": "{{count}} 张便签"
+  },
+  "confirm": {
+    "deleteCanvas": "删除画布",
+    "deleteCanvasMsg": "确认删除「{{title}}」?所有相关里程碑也将一并删除。",
+    "deleteMilestone": "删除里程碑",
+    "deleteMilestoneMsg": "确认删除「{{name}}」?",
+    "deleteProject": "删除项目",
+    "deleteProjectMsg": "这将永久删除项目、内含的 {{count}} 张画布及所有里程碑。请输入项目名称以确认:",
+    "delete": "删除",
+    "cancel": "取消"
+  },
+  "milestone": {
+    "title": "保存里程碑",
+    "prompt": "为当前画布状态命名,日后可随时恢复。",
+    "namePlaceholder": "例如: v1 - 启动会议",
+    "descriptionPlaceholder": "描述(可选)",
+    "save": "保存",
+    "cancel": "取消"
+  },
+  "identity": {
+    "title": "欢迎",
+    "prompt": "选一个显示名,方便团队成员知道是谁在编辑。随时可以修改。",
+    "placeholder": "你的显示名",
+    "submit": "继续"
+  },
+  "templates": {
+    "business-model-canvas": {
+      "name": "商业模式画布",
+      "tagline": "用 9 个模块描绘整个商业模式"
+    },
+    "value-proposition-canvas": {
+      "name": "价值主张画布",
+      "tagline": "对齐客户需求与你的解决方案"
+    },
+    "portfolio-map": {
+      "name": "业务组合地图",
+      "tagline": "管理探索期与利用期业务组合"
+    },
+    "ad-lib-value-proposition": {
+      "name": "价值主张填空",
+      "tagline": "用一句话写出价值主张,然后反复打磨"
+    },
+    "empathy-map": {
+      "name": "移情图",
+      "tagline": "走进用户的内心:他们怎么想、看、说、听、感受"
+    },
+    "jobs-to-be-done": {
+      "name": "JTBD 工作故事",
+      "tagline": "当 ___,我想 ___,从而我能 ___ —— 再加上底部的情感与社交任务"
+    },
+    "business-model-environment": {
+      "name": "商业模式环境",
+      "tagline": "梳理影响商业模式的四股外部力量:趋势、市场、行业、宏观经济"
+    },
+    "customer-journey": {
+      "name": "用户旅程",
+      "tagline": "把客户在一段时间里的体验画出来 —— 找到低谷,设计抬升点"
+    },
+    "customer-journey": {
+      "name": "用户旅程",
+      "tagline": "把客户在一段时间里的体验画出来 —— 找到低谷,设计抬升点"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Anything that annoys customers before, during, and after trying to get a job done — undesired outcomes, problems, characteristics, obstacles, and risks. Severity ranges from mild to extreme. Be concrete about WHY a pain hurts (lost time, money, mood).

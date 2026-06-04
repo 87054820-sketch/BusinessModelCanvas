@@ -1,0 +1,41 @@
+{
+  "canvasTitle": "JTBD Story",
+  "blocks": {
+    "situation": {
+      "title": "When",
+      "prompt": "What's the customer's circumstance? What just happened to trigger this need?",
+      "examples": [
+        "Friday 4pm, my CFO just asked for next quarter's variance report by Monday",
+        "On a train with patchy 4G, a contract needs approving before the next stop",
+        "Monday morning, opening the dashboard and realising the export is empty again"
+      ]
+    },
+    "motivation": {
+      "title": "I want to",
+      "prompt": "What does the customer want to do? Lead with a verb. (Functional, emotional, or social.)",
+      "examples": [
+        "Cut my reporting prep from 6 hours to under 1 (functional)",
+        "Stop dreading every Friday afternoon (emotional)",
+        "Look prepared in front of my CFO without overexplaining (social)"
+      ]
+    },
+    "ideal-outcome": {
+      "title": "So I can",
+      "prompt": "What progress is the customer trying to make? Write outcomes as action verbs.",
+      "examples": [
+        "Decide which two of five vendors to call back",
+        "Walk into the exec review with a one-page summary already done",
+        "Be seen as the PM whose product reviews are always on schedule"
+      ]
+    },
+    "emotional-social": {
+      "title": "Emotional + Social jobs",
+      "prompt": "For each functional Job Story above, name at least one emotional and one social companion job.",
+      "examples": [
+        "Emotional — Feel calm during close week instead of dreading it",
+        "Emotional — Be reassured the numbers are right without re-checking",
+        "Social — Be seen by my CFO as someone who actually owns the numbers"
+      ]
+    }
+  }
+}

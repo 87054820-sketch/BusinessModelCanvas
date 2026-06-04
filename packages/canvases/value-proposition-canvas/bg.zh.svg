@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" preserveAspectRatio="xMidYMid meet">
+  <rect x="0" y="0" width="1200" height="800" fill="#FAFAF7"/>
+
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <rect x="40" y="100" width="600" height="600"/>
+    <line x1="340" y1="400" x2="40"  y2="100"/>
+    <line x1="340" y1="400" x2="40"  y2="700"/>
+    <line x1="340" y1="400" x2="640" y2="400"/>
+  </g>
+
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <circle cx="940" cy="400" r="240"/>
+    <line x1="940" y1="400" x2="700" y2="400"/>
+    <line x1="940" y1="400" x2="1148" y2="280"/>
+    <line x1="940" y1="400" x2="1148" y2="520"/>
+  </g>
+
+  <g stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <line x1="640" y1="400" x2="655" y2="400"/>
+    <polygon points="655,395 655,405 665,400" fill="#1F2937" stroke="none"/>
+    <line x1="700" y1="400" x2="685" y2="400"/>
+    <polygon points="685,395 685,405 675,400" fill="#1F2937" stroke="none"/>
+  </g>
+</svg>

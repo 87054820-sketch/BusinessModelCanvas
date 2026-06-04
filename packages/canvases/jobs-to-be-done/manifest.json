@@ -1,0 +1,35 @@
+{
+  "id": "jobs-to-be-done",
+  "name": {
+    "en": "JTBD Story",
+    "zh": "JTBD 工作故事"
+  },
+  "viewBox": [0, 0, 1400, 900],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "related": ["value-proposition-canvas", "empathy-map", "ad-lib-value-proposition", "customer-journey"],
+  "zones": [
+    {
+      "id": "situation",
+      "shape": { "type": "rect", "x": 40, "y": 80, "w": 420, "h": 500 },
+      "label": { "x": 60, "y": 120, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "motivation",
+      "shape": { "type": "rect", "x": 490, "y": 80, "w": 420, "h": 500 },
+      "label": { "x": 510, "y": 120, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "ideal-outcome",
+      "shape": { "type": "rect", "x": 940, "y": 80, "w": 420, "h": 500 },
+      "label": { "x": 960, "y": 120, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "emotional-social",
+      "shape": { "type": "rect", "x": 40, "y": 600, "w": 1320, "h": 280 },
+      "label": { "x": 60, "y": 640, "align": "left", "fontSize": 28 }
+    }
+  ]
+}

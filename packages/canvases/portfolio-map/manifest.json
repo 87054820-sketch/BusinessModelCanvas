@@ -1,0 +1,54 @@
+{
+  "id": "portfolio-map",
+  "name": {
+    "en": "Portfolio Map",
+    "zh": "业务组合地图"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "plugin": "axis-grid",
+  "related": ["business-model-canvas"],
+  "zones": [
+    {
+      "id": "explore",
+      "shape": { "type": "rect", "x": 80, "y": 440, "w": 560, "h": 380 },
+      "label": { "x": 360, "y": 470, "align": "center" },
+      "axes": {
+        "x": {
+          "min": 0,
+          "max": 1,
+          "kind": "risk",
+          "label": { "en": "Innovation Risk", "zh": "创新风险" }
+        },
+        "y": {
+          "min": 0,
+          "max": 1,
+          "kind": "return",
+          "label": { "en": "Expected Return", "zh": "预期收益" }
+        }
+      }
+    },
+    {
+      "id": "exploit",
+      "shape": { "type": "rect", "x": 640, "y": 60, "w": 560, "h": 380 },
+      "label": { "x": 920, "y": 90, "align": "center" },
+      "axes": {
+        "x": {
+          "min": 0,
+          "max": 1,
+          "kind": "risk",
+          "label": { "en": "Disruption Risk", "zh": "颠覆风险" }
+        },
+        "y": {
+          "min": 0,
+          "max": 1,
+          "kind": "return",
+          "label": { "en": "Returns", "zh": "收益" }
+        }
+      }
+    }
+  ]
+}

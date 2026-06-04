@@ -1,0 +1,1 @@
+How a company communicates with and reaches its customer segments to deliver a value proposition. Spans awareness, evaluation, purchase, delivery, and after-sales support. Includes own channels (sales force, web, stores) and partner channels (wholesale, partner stores).

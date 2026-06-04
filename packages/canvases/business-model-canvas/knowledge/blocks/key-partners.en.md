@@ -1,0 +1,1 @@
+The network of suppliers, distributors, and allies that make your business model work. Partnerships exist to optimize costs, reduce risk, or acquire resources/activities you can't build in-house. Strategic alliances, joint ventures, buyer-supplier relationships, and coopetition all live here.

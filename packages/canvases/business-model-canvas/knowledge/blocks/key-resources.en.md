@@ -1,0 +1,1 @@
+The most important assets required to make a business model work. Resources can be physical (factories, fleets), intellectual (brands, patents, data), human (specialists), or financial. List only the strategically scarce ones — the resources without which the value proposition would collapse.

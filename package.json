@@ -1,0 +1,26 @@
+{
+  "name": "canvas-collab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Self-hostable, real-time collaborative tool for Strategyzer-style strategy canvases",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "./start.sh",
+    "stop": "./stop.sh",
+    "dev": "pnpm --parallel -r run dev",
+    "dev:server": "pnpm --filter @canvas-collab/server run dev",
+    "dev:web": "pnpm --filter @canvas-collab/web run dev",
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "packageManager": "pnpm@9.5.0"
+}

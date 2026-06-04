@@ -1,0 +1,1 @@
+The different groups of people or organizations you aim to reach and serve. Segments are distinct when their needs require a distinct offer, they are reached through different channels, they need different relationships, or they have substantially different profitability. Common patterns: mass market, niche, segmented, diversified, multi-sided platform.

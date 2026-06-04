@@ -1,0 +1,35 @@
+{
+  "id": "business-model-environment",
+  "name": {
+    "en": "Business Model Environment",
+    "zh": "商业模式环境"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "related": ["business-model-canvas"],
+  "zones": [
+    {
+      "id": "key-trends",
+      "shape": { "type": "rect", "x": 40, "y": 40, "w": 1200, "h": 200 },
+      "label": { "x": 70, "y": 80, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "industry-forces",
+      "shape": { "type": "rect", "x": 40, "y": 260, "w": 380, "h": 360 },
+      "label": { "x": 60, "y": 295, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "market-forces",
+      "shape": { "type": "rect", "x": 860, "y": 260, "w": 380, "h": 360 },
+      "label": { "x": 880, "y": 295, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "macroeconomic-forces",
+      "shape": { "type": "rect", "x": 40, "y": 640, "w": 1200, "h": 200 },
+      "label": { "x": 70, "y": 685, "align": "left", "fontSize": 22 }
+    }
+  ]
+}

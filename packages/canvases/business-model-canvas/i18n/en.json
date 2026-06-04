@@ -1,0 +1,86 @@
+{
+  "canvasTitle": "Business Model Canvas",
+  "blocks": {
+    "key-partners": {
+      "title": "Key Partners",
+      "prompt": "Who helps you deliver this business model?",
+      "examples": [
+        "Cloud infrastructure provider (AWS / Aliyun)",
+        "Channel reseller in Southeast Asia",
+        "Open-source community / upstream maintainer"
+      ]
+    },
+    "key-activities": {
+      "title": "Key Activities",
+      "prompt": "What does your business do every day to deliver the value proposition?",
+      "examples": [
+        "Continuous product engineering",
+        "Customer onboarding workshops",
+        "Daily content moderation"
+      ]
+    },
+    "key-resources": {
+      "title": "Key Resources",
+      "prompt": "What strategic assets do you absolutely need?",
+      "examples": [
+        "Proprietary recommendation algorithm",
+        "10-year clinical trial dataset",
+        "In-house design team of 12"
+      ]
+    },
+    "value-propositions": {
+      "title": "Value Propositions",
+      "prompt": "What value do you deliver to which customer?",
+      "examples": [
+        "Cut bookkeeping time from 5h to 30min per week",
+        "Same-day delivery within Tier-1 cities",
+        "Industry-specific compliance built in"
+      ]
+    },
+    "customer-relationships": {
+      "title": "Customer Relationships",
+      "prompt": "How does each segment expect you to engage?",
+      "examples": [
+        "Self-serve onboarding + in-app chat",
+        "Dedicated CSM for accounts > $50k ARR",
+        "Active user community on Discord"
+      ]
+    },
+    "channels": {
+      "title": "Channels",
+      "prompt": "How do you reach customers?",
+      "examples": [
+        "Direct sales team",
+        "Self-serve web purchase",
+        "AppStore distribution"
+      ]
+    },
+    "customer-segments": {
+      "title": "Customer Segments",
+      "prompt": "For whom are you creating value?",
+      "examples": [
+        "Mid-market SaaS teams (50–500 seats)",
+        "Independent consultants billing clients",
+        "Enterprise procurement (Fortune 500)"
+      ]
+    },
+    "cost-structure": {
+      "title": "Cost Structure",
+      "prompt": "What does running this business cost?",
+      "examples": [
+        "Cloud compute & storage (~38% of OpEx)",
+        "R&D headcount (~45% of OpEx)",
+        "Customer support team"
+      ]
+    },
+    "revenue-streams": {
+      "title": "Revenue Streams",
+      "prompt": "What are customers willing to pay for?",
+      "examples": [
+        "Monthly per-seat SaaS subscription",
+        "Usage-based API metering",
+        "Annual professional services contract"
+      ]
+    }
+  }
+}

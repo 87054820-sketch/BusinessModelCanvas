@@ -1,0 +1,1 @@
+What customers are trying to get done in their work and life — functional jobs (perform a task), social jobs (look good, gain status), and emotional jobs (feel good, secure). One persona usually has multiple jobs; rank by importance to the customer.

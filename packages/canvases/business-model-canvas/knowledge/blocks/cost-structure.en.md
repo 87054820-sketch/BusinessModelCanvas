@@ -1,0 +1,1 @@
+All costs incurred to operate a business model — fixed and variable, economies of scale and scope. Two extremes: cost-driven (lean cost structure, low-price value props) and value-driven (premium services, focus on value creation). Every key resource and key activity has a cost; capture the dominant ones.

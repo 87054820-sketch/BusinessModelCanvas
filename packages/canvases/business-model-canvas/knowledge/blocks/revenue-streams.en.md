@@ -1,0 +1,1 @@
+The cash a company generates from each customer segment. Mechanics: asset sale, usage fee, subscription, lending/renting, licensing, brokerage, advertising. Pricing: fixed list price, bargaining, auction, market-dependent, volume-dependent, yield management. Match each stream to the segment that pays it.

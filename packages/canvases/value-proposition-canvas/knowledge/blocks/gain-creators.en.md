@@ -1,0 +1,1 @@
+How your products and services create customer gains — outcomes the customer expects, desires, or would be surprised by. Useful gains: required (must-have), expected (basic functions), desired (would love), unexpected (delight). Be specific about which customer gain each creator addresses.

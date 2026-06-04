@@ -1,0 +1,60 @@
+{
+  "id": "business-model-canvas",
+  "name": {
+    "en": "Business Model Canvas",
+    "zh": "商业模式画布"
+  },
+  "viewBox": [0, 0, 1190, 842],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "related": ["business-model-environment", "value-proposition-canvas", "portfolio-map"],
+  "zones": [
+    {
+      "id": "key-partners",
+      "shape": { "type": "rect", "x": 0, "y": 0, "w": 238, "h": 572 },
+      "label": { "x": 12, "y": 24, "align": "left" }
+    },
+    {
+      "id": "key-activities",
+      "shape": { "type": "rect", "x": 238, "y": 0, "w": 238, "h": 286 },
+      "label": { "x": 250, "y": 24, "align": "left" }
+    },
+    {
+      "id": "key-resources",
+      "shape": { "type": "rect", "x": 238, "y": 286, "w": 238, "h": 286 },
+      "label": { "x": 250, "y": 310, "align": "left" }
+    },
+    {
+      "id": "value-propositions",
+      "shape": { "type": "rect", "x": 476, "y": 0, "w": 238, "h": 572 },
+      "label": { "x": 488, "y": 24, "align": "left" }
+    },
+    {
+      "id": "customer-relationships",
+      "shape": { "type": "rect", "x": 714, "y": 0, "w": 238, "h": 286 },
+      "label": { "x": 726, "y": 24, "align": "left" }
+    },
+    {
+      "id": "channels",
+      "shape": { "type": "rect", "x": 714, "y": 286, "w": 238, "h": 286 },
+      "label": { "x": 726, "y": 310, "align": "left" }
+    },
+    {
+      "id": "customer-segments",
+      "shape": { "type": "rect", "x": 952, "y": 0, "w": 238, "h": 572 },
+      "label": { "x": 964, "y": 24, "align": "left" }
+    },
+    {
+      "id": "cost-structure",
+      "shape": { "type": "rect", "x": 0, "y": 572, "w": 595, "h": 270 },
+      "label": { "x": 12, "y": 596, "align": "left" }
+    },
+    {
+      "id": "revenue-streams",
+      "shape": { "type": "rect", "x": 595, "y": 572, "w": 595, "h": 270 },
+      "label": { "x": 607, "y": 596, "align": "left" }
+    }
+  ]
+}

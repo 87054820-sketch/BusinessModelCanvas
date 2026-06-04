@@ -1,0 +1,1 @@
+The most important things your company must do to make the business model work — production, problem-solving, network/platform operation, R&D. Different from Key Resources (what you have) and Channels (how you reach customers).

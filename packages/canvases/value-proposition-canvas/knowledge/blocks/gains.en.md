@@ -1,0 +1,1 @@
+The benefits the customer expects, desires, or would be surprised by. Includes functional utility, social gains, positive emotions, and cost savings. Rank by importance to the customer (essential vs nice-to-have) — don't try to address all gains.

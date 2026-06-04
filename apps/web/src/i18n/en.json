@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "Strategy Canvases",
+    "subtitle": "Real-time strategy canvases for your team"
+  },
+  "nav": {
+    "back": "Back",
+    "history": "History"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "zh": "中文"
+  },
+  "home": {
+    "title": "Projects",
+    "newProject": "+ New project",
+    "empty": "No projects yet. Create one to start.",
+    "canvasCount_one": "{{count}} canvas",
+    "canvasCount_other": "{{count}} canvases",
+    "updated": "updated {{time}}",
+    "templates": "Canvas templates",
+    "templatesHint": "Pick a template to start a new project, or create one from scratch below.",
+    "noCanvasesYet": "No canvases yet",
+    "relatedCanvases": "Pairs with",
+    "relatedCanvases": "Pairs with"
+  },
+  "newProject": {
+    "title": "Create project",
+    "name": "Project name",
+    "namePlaceholder": "e.g. Acme Q3 strategy",
+    "description": "Description (optional)",
+    "submit": "Create",
+    "cancel": "Cancel",
+    "withCanvas": "You'll start with a {{canvas}} canvas."
+  },
+  "workspace": {
+    "addCanvas": "+ Add canvas",
+    "noCanvases": "No canvases yet.",
+    "selectCanvas": "Select a canvas from the sidebar",
+    "showZones": "show zones",
+    "addSticky": "+ Sticky",
+    "saveMilestone": "Save milestone",
+    "viewHistory": "History",
+    "rename": "Rename",
+    "collapseSidebar": "Collapse sidebar",
+    "expandSidebar": "Expand sidebar",
+    "collapseInspector": "Collapse inspector",
+    "expandInspector": "Expand inspector"
+  },
+  "addCanvas": {
+    "title": "Add a canvas to this project",
+    "createIn": "Create",
+    "language": "Language"
+  },
+  "inspector": {
+    "tip": "Click a sticky or block on the canvas to inspect it.",
+    "block": {
+      "guidance": "Guidance",
+      "examples": "Examples",
+      "addAsSticky": "+ Add as sticky",
+      "newSticky": "+ New empty sticky in this block"
+    },
+    "sticky": {
+      "text": "Text",
+      "color": "Color",
+      "block": "Block",
+      "author": "Author",
+      "createdAt": "Created",
+      "delete": "Delete sticky",
+      "clickToEdit": "Click to edit text",
+      "shortcuts": "Shortcuts: ⌘/Ctrl + C copy · ⌘/Ctrl + V paste · ⌘/Ctrl + X cut · Delete / Backspace remove. Shortcuts act on the sticky object — click into the text box (or double-click the sticky on the canvas) to edit its text."
+    },
+    "project": {
+      "name": "Project name",
+      "description": "Description",
+      "createdBy": "Created by {{name}}",
+      "deleteHeader": "Danger zone",
+      "delete": "Delete project",
+      "deleteHint": "Removes the project, all its canvases, and all milestones."
+    },
+    "canvasKnowledge": {
+      "usageIntro": "How to use",
+      "knowledgeBody": "Deep dive",
+      "empty": "Knowledge for this canvas hasn't been written yet.",
+      "emptyHint": "Add intro.{{lang}}.md and body.{{lang}}.md under packages/canvases/{{id}}/knowledge/."
+    },
+    "legend": {
+      "title": "Legend",
+      "editorHeader": "Color legend",
+      "editorHint": "Give each sticky color a meaning that's specific to this project. Empty rows are hidden from the sidebar.",
+      "labelPlaceholder": "Label (e.g. Customer pain)",
+      "descriptionPlaceholder": "Optional description",
+      "save": "Save legend",
+      "saved": "Saved"
+    }
+  },
+  "history": {
+    "title": "History",
+    "empty": "No milestones yet — save one from the canvas toolbar.",
+    "restoreHere": "Restore here",
+    "restoreAsNew": "Restore as new",
+    "deleteMilestone": "Delete milestone",
+    "stickyCount_one": "{{count}} sticky",
+    "stickyCount_other": "{{count}} stickies"
+  },
+  "confirm": {
+    "deleteCanvas": "Delete canvas",
+    "deleteCanvasMsg": "Delete '{{title}}'? This removes all its milestones too.",
+    "deleteMilestone": "Delete milestone",
+    "deleteMilestoneMsg": "Delete '{{name}}'?",
+    "deleteProject": "Delete project",
+    "deleteProjectMsg": "This will permanently delete the project, all {{count}} canvases inside, and all milestones. To confirm, type the project name:",
+    "delete": "Delete",
+    "cancel": "Cancel"
+  },
+  "milestone": {
+    "title": "Save milestone",
+    "prompt": "Name the current state of the canvas. You can restore it later.",
+    "namePlaceholder": "e.g. v1 - kickoff",
+    "descriptionPlaceholder": "Description (optional)",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "identity": {
+    "title": "Welcome",
+    "prompt": "Pick a display name so your teammates can see who's drawing what. You can change this any time.",
+    "placeholder": "Your display name",
+    "submit": "Continue"
+  },
+  "templates": {
+    "business-model-canvas": {
+      "name": "Business Model Canvas",
+      "tagline": "Map an entire business model in nine blocks"
+    },
+    "value-proposition-canvas": {
+      "name": "Value Proposition Canvas",
+      "tagline": "Align customer jobs with what you offer"
+    },
+    "portfolio-map": {
+      "name": "Portfolio Map",
+      "tagline": "Manage exploration and exploitation portfolios"
+    },
+    "ad-lib-value-proposition": {
+      "name": "Ad-Lib Value Proposition",
+      "tagline": "Draft a one-sentence value proposition and iterate"
+    },
+    "empathy-map": {
+      "name": "Empathy Map",
+      "tagline": "Step into your customer's head — what they think, see, say, hear, feel"
+    },
+    "jobs-to-be-done": {
+      "name": "JTBD Story",
+      "tagline": "When ___, I want to ___, so I can ___ — plus the emotional + social jobs underneath"
+    },
+    "business-model-environment": {
+      "name": "Business Model Environment",
+      "tagline": "Map the four external forces shaping your business model"
+    },
+    "customer-journey": {
+      "name": "Customer Journey",
+      "tagline": "Map a customer's experience over time — find the dips, design the lifts"
+    },
+    "customer-journey": {
+      "name": "Customer Journey",
+      "tagline": "Map a customer's experience over time — find the dips, design the lifts"
+    }
+  }
+}

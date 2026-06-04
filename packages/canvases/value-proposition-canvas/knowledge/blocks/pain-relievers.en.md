@@ -1,0 +1,1 @@
+How your products and services alleviate specific customer pains — undesired outcomes, obstacles, or risks during/after a job. The strongest VP relieves an extreme pain, not a mild annoyance. Connect each reliever explicitly to a pain on the customer side.

@@ -1,0 +1,1 @@
+The type of relationship you establish and maintain with each customer segment — personal assistance, dedicated personal assistance, self-service, automated services, communities, or co-creation. Driven by acquisition, retention, and upselling. Different segments often need different relationships.

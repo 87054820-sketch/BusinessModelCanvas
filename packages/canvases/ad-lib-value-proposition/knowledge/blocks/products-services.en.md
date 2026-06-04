@@ -1,0 +1,1 @@
+Name the concrete products or services that deliver the value. Specific beats abstract — "hosted PostgreSQL with point-in-time recovery" beats "data infrastructure". One sticky per candidate offering.

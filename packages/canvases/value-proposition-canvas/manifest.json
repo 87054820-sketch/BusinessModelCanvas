@@ -1,0 +1,75 @@
+{
+  "id": "value-proposition-canvas",
+  "name": {
+    "en": "Value Proposition Canvas",
+    "zh": "价值主张画布"
+  },
+  "viewBox": [0, 0, 1200, 800],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "related": ["business-model-canvas", "empathy-map", "jobs-to-be-done", "ad-lib-value-proposition", "customer-journey"],
+  "zones": [
+    {
+      "id": "gain-creators",
+      "shape": {
+        "type": "polygon",
+        "points": [[40, 100], [640, 100], [640, 400], [340, 400]]
+      },
+      "label": { "x": 340, "y": 160, "align": "center" }
+    },
+    {
+      "id": "pain-relievers",
+      "shape": {
+        "type": "polygon",
+        "points": [[40, 700], [640, 700], [640, 400], [340, 400]]
+      },
+      "label": { "x": 340, "y": 660, "align": "center" }
+    },
+    {
+      "id": "products-and-services",
+      "shape": {
+        "type": "polygon",
+        "points": [[40, 100], [40, 700], [340, 400]]
+      },
+      "label": { "x": 60, "y": 405, "align": "left" }
+    },
+    {
+      "id": "gains",
+      "shape": {
+        "type": "circle-segment",
+        "cx": 940,
+        "cy": 400,
+        "r": 240,
+        "fromDeg": 180,
+        "toDeg": 330
+      },
+      "label": { "x": 940, "y": 200, "align": "center" }
+    },
+    {
+      "id": "pains",
+      "shape": {
+        "type": "circle-segment",
+        "cx": 940,
+        "cy": 400,
+        "r": 240,
+        "fromDeg": 30,
+        "toDeg": 180
+      },
+      "label": { "x": 940, "y": 600, "align": "center" }
+    },
+    {
+      "id": "customer-jobs",
+      "shape": {
+        "type": "circle-segment",
+        "cx": 940,
+        "cy": 400,
+        "r": 240,
+        "fromDeg": 330,
+        "toDeg": 30
+      },
+      "label": { "x": 1160, "y": 405, "align": "right" }
+    }
+  ]
+}

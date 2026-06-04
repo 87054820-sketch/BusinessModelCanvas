@@ -1,0 +1,59 @@
+{
+  "canvasTitle": "Value Proposition Canvas",
+  "blocks": {
+    "gain-creators": {
+      "title": "Gain Creators",
+      "prompt": "How do your products create gains?",
+      "examples": [
+        "Saves 4 hours/week of manual reconciliation",
+        "Audit-ready reports out of the box",
+        "Looks great in board presentations"
+      ]
+    },
+    "pain-relievers": {
+      "title": "Pain Relievers",
+      "prompt": "How do your products alleviate pains?",
+      "examples": [
+        "Eliminates manual data re-entry between systems",
+        "SOC2-certified — passes vendor security review",
+        "Auto-detects breaking changes before deploy"
+      ]
+    },
+    "products-and-services": {
+      "title": "Products & Services",
+      "prompt": "What are you offering?",
+      "examples": [
+        "iOS and Android mobile app",
+        "Quarterly strategy workshop (2 days, on-site)",
+        "REST API with 99.9% SLA"
+      ]
+    },
+    "gains": {
+      "title": "Gains",
+      "prompt": "What outcomes does the customer want?",
+      "examples": [
+        "Closes books faster than competitors",
+        "Looks credible to investors",
+        "Spends less time on operations, more on strategy"
+      ]
+    },
+    "pains": {
+      "title": "Pains",
+      "prompt": "What troubles the customer?",
+      "examples": [
+        "Manual cross-checking eats 6h every Friday",
+        "Late filing risks $50k regulatory fine",
+        "Existing tool feels stuck in 2010"
+      ]
+    },
+    "customer-jobs": {
+      "title": "Customer Jobs",
+      "prompt": "What is the customer trying to get done?",
+      "examples": [
+        "Close monthly books accurately",
+        "Justify the SaaS budget to the CFO",
+        "Sleep well knowing data is backed up"
+      ]
+    }
+  }
+}

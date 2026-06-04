@@ -1,0 +1,35 @@
+{
+  "id": "customer-journey",
+  "name": {
+    "en": "Customer Journey",
+    "zh": "用户旅程"
+  },
+  "viewBox": [0, 0, 1400, 900],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "related": ["empathy-map", "value-proposition-canvas", "jobs-to-be-done"],
+  "zones": [
+    {
+      "id": "persona",
+      "shape": { "type": "rect", "x": 40, "y": 20, "w": 1320, "h": 80 },
+      "label": { "x": 60, "y": 65, "align": "left" }
+    },
+    {
+      "id": "needs",
+      "shape": { "type": "rect", "x": 220, "y": 120, "w": 1140, "h": 220 },
+      "label": { "x": 60, "y": 165, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "key-moment",
+      "shape": { "type": "rect", "x": 220, "y": 360, "w": 1140, "h": 270 },
+      "label": { "x": 60, "y": 405, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "satisfaction",
+      "shape": { "type": "rect", "x": 220, "y": 650, "w": 1140, "h": 230 },
+      "label": { "x": 60, "y": 695, "align": "left", "fontSize": 22 }
+    }
+  ]
+}
