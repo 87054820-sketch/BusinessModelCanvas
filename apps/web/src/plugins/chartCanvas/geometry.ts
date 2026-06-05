@@ -1,4 +1,4 @@
-import type { ChartConfig } from '@canvas-collab/shared';
+import type { ChartConfig } from '@pingarden/shared';
 
 /**
  * Layout math for the chart-canvas plugin. Pure functions — no DOM, no

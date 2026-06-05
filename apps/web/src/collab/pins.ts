@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as Y from 'yjs';
-import type { Pin } from '@canvas-collab/shared';
+import type { Pin } from '@pingarden/shared';
 
 export const PINS_KEY = 'pins';
 

@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Strategy Canvases",
+    "title": "PinGarden",
     "subtitle": "Real-time strategy canvases for your team"
   },
   "nav": {
@@ -16,13 +16,23 @@
     "title": "Projects",
     "newProject": "+ New project",
     "empty": "No projects yet. Create one to start.",
+    "loading": "Loading…",
+    "projectsHint": "Your workspace",
+    "noDescription": "No description",
     "canvasCount_one": "{{count}} canvas",
     "canvasCount_other": "{{count}} canvases",
     "updated": "updated {{time}}",
-    "templates": "Canvas templates",
-    "templatesHint": "Pick a template to start a new project, or create one from scratch below.",
+    "templates": "Start from template",
+    "templatesHint": "Pick a canvas to start a new project.",
     "noCanvasesYet": "No canvases yet",
-    "relatedCanvases": "Pairs with",
+    "welcomeTitle": "Welcome to PinGarden",
+    "welcomeIntro": "Pick a canvas template below or start blank to organize your ideas.",
+    "welcomeSubtitle": "\"To make a prairie it takes a clover and one bee,\nOne clover, and a bee,\nAnd revery.\"\n— Emily Dickinson",
+    "pickTemplateToStart": "Pick a canvas to start your first project",
+    "createBlankInstead": "Create a blank project",
+    "openExistingProject": "Open existing project",
+    "noProjects": "No projects yet",
+    "startWithTemplate": "Start project with {{name}}",
     "relatedCanvases": "Pairs with"
   },
   "newProject": {
@@ -193,6 +203,10 @@
     "prompt": "Pick a display name so your teammates can see who's drawing what. You can change this any time.",
     "placeholder": "Your display name",
     "submit": "Continue"
+  },
+  "footer": {
+    "madeBy": "Made by Sibo Li",
+    "email": "sibo.li@foxmail.com"
   },
   "templates": {
     "business-model-canvas": {

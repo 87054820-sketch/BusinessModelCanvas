@@ -1,4 +1,4 @@
-import type { ZoneDef } from '@canvas-collab/shared';
+import type { ZoneDef } from '@pingarden/shared';
 import type * as Y from 'yjs';
 import { updateSticky, useStickies } from '../collab/stickies';
 import { hitTestZone, zoneCentroid } from './hitTest';

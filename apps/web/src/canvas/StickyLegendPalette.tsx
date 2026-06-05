@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import type * as Y from 'yjs';
-import type { Lang } from '@canvas-collab/shared';
-import { STICKY_PALETTE } from '@canvas-collab/shared';
+import type { Lang } from '@pingarden/shared';
+import { STICKY_PALETTE } from '@pingarden/shared';
 import {
   updateColorLegendEntry,
   useColorLegend,

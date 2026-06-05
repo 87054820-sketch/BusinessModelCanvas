@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta, SnapshotMeta } from '@canvas-collab/shared';
+import type { CanvasMeta, SnapshotMeta } from '@pingarden/shared';
 import { api } from '../api/client';
 import { snapshotsApi } from '../api/snapshots';
 import { useIdentity } from '../identity/useIdentity';

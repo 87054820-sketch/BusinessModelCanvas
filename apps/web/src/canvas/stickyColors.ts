@@ -19,4 +19,4 @@ export {
   STICKY_PALETTE,
   DEFAULT_STICKY_COLOR,
   type StickyColor,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';

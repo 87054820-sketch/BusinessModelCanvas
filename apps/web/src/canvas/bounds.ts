@@ -1,4 +1,4 @@
-import type { CanvasDef } from '@canvas-collab/shared';
+import type { CanvasDef } from '@pingarden/shared';
 import { chartRect } from '../plugins/chartCanvas/geometry';
 
 /**

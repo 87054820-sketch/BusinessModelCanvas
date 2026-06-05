@@ -6,11 +6,11 @@ import type {
   ObjectsBulkInput,
   ObjectType,
   ZoneShape,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 import {
   DEFAULT_CHART_COLOR,
   effectiveObjectTypes,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { getIdentity } from './identity.js';

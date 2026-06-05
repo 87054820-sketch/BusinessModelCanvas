@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type * as Y from 'yjs';
-import type { Pin, PinClass } from '@canvas-collab/shared';
+import type { Pin, PinClass } from '@pingarden/shared';
 import { removePin, updatePin } from '../../collab/pins';
 import { useSelection } from '../../state/selection';
 import { PinClassChip } from './LegendInspector';

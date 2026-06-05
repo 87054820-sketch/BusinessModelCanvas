@@ -1,7 +1,7 @@
 import { promises as fs } from 'node:fs';
 import { join } from 'node:path';
 import { z } from 'zod';
-import type { CanvasDef, CanvasI18n, Lang } from '@canvas-collab/shared';
+import type { CanvasDef, CanvasI18n, Lang } from '@pingarden/shared';
 
 const ZoneShape = z.discriminatedUnion('type', [
   z.object({

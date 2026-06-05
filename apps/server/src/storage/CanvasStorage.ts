@@ -4,7 +4,7 @@ import type {
   Snapshot,
   SnapshotKind,
   SnapshotMeta,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 
 /**
  * Storage seam — every read/write of canvas/project state goes through this

@@ -7,7 +7,7 @@ import type {
   ColorLegendEntry,
   Lang,
   Project,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 import { useTranslation } from 'react-i18next';
 import { api, type CanvasDefSummary, type CanvasKnowledge } from '../api/client';
 import { projectsApi } from '../api/projects';
@@ -33,7 +33,7 @@ import { useStickyClipboard } from '../state/stickyClipboard';
 import { usePinClipboard } from '../state/pinClipboard';
 import { useActiveClass } from '../state/activeClass';
 import { useActiveStickyColor } from '../state/activeStickyColor';
-import { effectiveObjectTypes } from '@canvas-collab/shared';
+import { effectiveObjectTypes } from '@pingarden/shared';
 import { ProjectSidebar } from '../workspace/ProjectSidebar';
 import { CanvasToolbar } from '../workspace/CanvasToolbar';
 import { Inspector } from '../workspace/Inspector';

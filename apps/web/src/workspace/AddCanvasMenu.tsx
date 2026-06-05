@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { Lang } from '@canvas-collab/shared';
+import type { Lang } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 

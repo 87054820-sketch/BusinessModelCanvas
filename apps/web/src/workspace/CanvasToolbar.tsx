@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta } from '@canvas-collab/shared';
+import type { CanvasMeta } from '@pingarden/shared';
 import { snapshotsApi } from '../api/snapshots';
 
 interface Props {

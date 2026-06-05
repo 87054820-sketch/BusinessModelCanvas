@@ -3,16 +3,16 @@ import { initReactI18next } from 'react-i18next';
 import en from './en.json';
 import zh from './zh.json';
 
-const STORAGE_KEY = 'canvas-collab.lang';
+const STORAGE_KEY = 'pingarden.lang';
 
 const initial =
-  (typeof localStorage !== 'undefined' && localStorage.getItem(STORAGE_KEY)) || 'en';
+  (typeof localStorage !== 'undefined' && localStorage.getItem(STORAGE_KEY)) || 'zh';
 
 export const i18n = i18next.createInstance();
 
 void i18n.use(initReactI18next).init({
   lng: initial,
-  fallbackLng: 'en',
+  fallbackLng: 'zh',
   resources: {
     en: { translation: en },
     zh: { translation: zh },
@@ -26,5 +26,5 @@ export function setLanguage(lang: 'en' | 'zh') {
 }
 
 export function currentLanguage(): 'en' | 'zh' {
-  return (i18n.language as 'en' | 'zh') ?? 'en';
+  return (i18n.language as 'en' | 'zh') ?? 'zh';
 }

@@ -1,6 +1,6 @@
 import { useMemo, useRef } from 'react';
 import type * as Y from 'yjs';
-import type { CanvasDef, Pin, PinClass, PinIcon } from '@canvas-collab/shared';
+import type { CanvasDef, Pin, PinClass, PinIcon } from '@pingarden/shared';
 import { updatePin, usePins } from '../collab/pins';
 import { usePinClasses } from '../collab/pinClasses';
 import { useSelection } from '../state/selection';

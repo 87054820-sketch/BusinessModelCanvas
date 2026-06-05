@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as Y from 'yjs';
-import type { Lang, LocalizedLabel } from '@canvas-collab/shared';
+import type { Lang, LocalizedLabel } from '@pingarden/shared';
 
 /**
  * Per-canvas overrides for the manifest-supplied chart axis labels.

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as Y from 'yjs';
-import type { Lang } from '@canvas-collab/shared';
-import { STICKY_PALETTE } from '@canvas-collab/shared';
+import type { Lang } from '@pingarden/shared';
+import { STICKY_PALETTE } from '@pingarden/shared';
 
 /**
  * Per-canvas semantic mapping for the sticky-note palette. Each entry

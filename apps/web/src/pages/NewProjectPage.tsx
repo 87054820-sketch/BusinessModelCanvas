@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { Lang } from '@canvas-collab/shared';
+import type { Lang } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { projectsApi } from '../api/projects';
 import { useIdentity } from '../identity/useIdentity';

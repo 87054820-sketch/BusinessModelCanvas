@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta, Lang } from '@canvas-collab/shared';
+import type { CanvasMeta, Lang } from '@pingarden/shared';
 import { CanvasThumb } from '../../canvas/CanvasThumb';
 
 interface Props {

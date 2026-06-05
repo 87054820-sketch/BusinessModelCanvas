@@ -3,7 +3,7 @@ import type {
   Project,
   UpdateProjectInput,
   CanvasMeta,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 

@@ -1,4 +1,4 @@
-import type { AxisDef, Lang, ZoneDef } from '@canvas-collab/shared';
+import type { AxisDef, Lang, ZoneDef } from '@pingarden/shared';
 import { zoneBounds } from '../../canvas/hitTest';
 
 interface Props {

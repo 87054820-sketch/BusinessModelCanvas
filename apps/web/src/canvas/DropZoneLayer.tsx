@@ -1,4 +1,4 @@
-import type { ZoneDef } from '@canvas-collab/shared';
+import type { ZoneDef } from '@pingarden/shared';
 import { shapeToPath } from './hitTest';
 
 interface Props {

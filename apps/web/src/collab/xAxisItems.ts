@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as Y from 'yjs';
-import type { XAxisItem, Lang } from '@canvas-collab/shared';
+import type { XAxisItem, Lang } from '@pingarden/shared';
 
 /**
  * Stable Y.Doc root key. Server bulk-import / AI-context use the same

@@ -1,4 +1,4 @@
-# Canvas Collab
+# PinGarden
 
 Self-hostable, real-time collaborative tool for **Strategyzer-style strategy canvases** — Business Model Canvas, Value Proposition Canvas, Portfolio Map, with more on the way.
 
@@ -16,7 +16,7 @@ Self-hostable, real-time collaborative tool for **Strategyzer-style strategy can
 ## Project layout
 
 ```
-canvas-collab/
+pingarden/
 ├── apps/
 │   ├── web/                              # React + Vite SPA
 │   └── server/                           # Fastify + Yjs WS server

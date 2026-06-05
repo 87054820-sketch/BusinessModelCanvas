@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type * as Y from 'yjs';
-import type { CanvasDef, CanvasI18n, Lang } from '@canvas-collab/shared';
+import type { CanvasDef, CanvasI18n, Lang } from '@pingarden/shared';
 import { api } from '../api/client';
 import { DropZoneLayer } from './DropZoneLayer';
 import { ZoneLabel } from './ZoneLabel';

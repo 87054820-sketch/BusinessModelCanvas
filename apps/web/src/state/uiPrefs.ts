@@ -3,14 +3,14 @@ import { create } from 'zustand';
 /**
  * UI preferences that survive page reloads.
  *
- * Lives in localStorage under the `canvas-collab.uiPrefs` namespace —
+ * Lives in localStorage under the `pingarden.uiPrefs` namespace —
  * matches the precedent set by `useIdentity` and the i18n module.
  *
  * Today: left/right column collapse states. Future preferences (density
  * mode, pinned panel sizes, etc.) belong here so UI state stays in one
  * persistent place.
  */
-const STORAGE_KEY = 'canvas-collab.uiPrefs';
+const STORAGE_KEY = 'pingarden.uiPrefs';
 
 interface PersistedShape {
   leftSidebarCollapsed?: boolean;

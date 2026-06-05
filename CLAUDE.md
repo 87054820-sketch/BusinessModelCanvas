@@ -1,4 +1,4 @@
-# Canvas Collab — project memory for Claude
+# PinGarden — project memory for Claude
 
 This is a self-hostable real-time collaborative canvas tool (Strategyzer-style: Business Model Canvas, Value Proposition Canvas, Portfolio Map). pnpm workspace with `apps/server` (Fastify + Yjs) and `apps/web` (React + Vite + Tailwind + Yjs).
 
@@ -46,7 +46,7 @@ These are the load-bearing abstractions that let the project scale without rewri
 ## Where things live
 
 ```
-canvas-collab/
+pingarden/
 ├── apps/
 │   ├── web/                              React SPA, Vite dev on :5173
 │   └── server/                           Fastify API + (future) y-websocket on :4000
@@ -88,6 +88,6 @@ canvas-collab/
 
 Whenever you finish a chunk of work:
 - `pnpm typecheck` (all 3 workspaces must be green)
-- `pnpm --filter @canvas-collab/web build` (Vite must build)
+- `pnpm --filter @pingarden/web build` (Vite must build)
 
 The plan file for the current/most-recent work iteration is at `~/.claude-internal/plans/robust-foraging-mango.md`.

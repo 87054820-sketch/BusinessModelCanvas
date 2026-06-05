@@ -5,7 +5,7 @@ import type {
   CreateCanvasInput,
   Lang,
   UpdateCanvasInput,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 

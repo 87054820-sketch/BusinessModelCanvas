@@ -1,5 +1,5 @@
 {
-  "name": "canvas-collab",
+  "name": "pingarden",
   "version": "0.1.0",
   "private": true,
   "description": "Self-hostable, real-time collaborative tool for Strategyzer-style strategy canvases",
@@ -12,9 +12,12 @@
     "start": "./start.sh",
     "stop": "./stop.sh",
     "dev": "pnpm --parallel -r run dev",
-    "dev:server": "pnpm --filter @canvas-collab/server run dev",
-    "dev:web": "pnpm --filter @canvas-collab/web run dev",
+    "dev:server": "pnpm --filter @pingarden/server run dev",
+    "dev:web": "pnpm --filter @pingarden/web run dev",
     "build": "pnpm -r run build",
+    "build:desktop": "bash ./scripts/package-mac.sh",
+    "dist": "pnpm build:desktop",
+    "package:mac": "bash ./scripts/package-mac.sh",
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",
     "lint": "pnpm -r run lint"

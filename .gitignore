@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+apps/web/dist/
+apps/server/dist/
+apps/desktop/dist/
+packages/*/dist/
+*.tsbuildinfo
+
+# Desktop packaging artifacts
+apps/desktop/build/
+*.dmg
+*.zip
+*.blockmap
+
+# Dev runtime data (must never enter installer)
+apps/server/data/
+
+# Dev logs & PIDs
+.dev/
+*.log
+
+# OS
+.DS_Store

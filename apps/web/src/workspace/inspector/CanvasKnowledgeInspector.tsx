@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import type { CanvasDef, CanvasI18n, CanvasMeta, Lang } from '@canvas-collab/shared';
+import type { CanvasDef, CanvasI18n, CanvasMeta, Lang } from '@pingarden/shared';
 import type { CanvasKnowledge } from '../../api/client';
 import { Markdown } from '../../components/Markdown';
 import { RelatedCanvasesStrip } from './RelatedCanvasesStrip';

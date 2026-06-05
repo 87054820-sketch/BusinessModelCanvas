@@ -6,8 +6,8 @@ import type {
   PinClass,
   PinIcon,
   XAxisItem,
-} from '@canvas-collab/shared';
-import { CHART_PALETTE } from '@canvas-collab/shared';
+} from '@pingarden/shared';
+import { CHART_PALETTE } from '@pingarden/shared';
 import {
   addPinClass,
   removePinClass,

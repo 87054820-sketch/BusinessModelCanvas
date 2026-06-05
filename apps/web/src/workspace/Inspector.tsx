@@ -1,7 +1,7 @@
 import type * as Y from 'yjs';
 import { useTranslation } from 'react-i18next';
-import type { CanvasDef, CanvasI18n, CanvasMeta, Lang, Project, StickyNote } from '@canvas-collab/shared';
-import { effectiveObjectTypes } from '@canvas-collab/shared';
+import type { CanvasDef, CanvasI18n, CanvasMeta, Lang, Project, StickyNote } from '@pingarden/shared';
+import { effectiveObjectTypes } from '@pingarden/shared';
 import { ProjectInspector } from './inspector/ProjectInspector';
 import { BlockInspector } from './inspector/BlockInspector';
 import { StickyInspector } from './inspector/StickyInspector';

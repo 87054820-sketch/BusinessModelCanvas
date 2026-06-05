@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import type { BlockI18n, ZoneDef } from '@canvas-collab/shared';
+import type { BlockI18n, ZoneDef } from '@pingarden/shared';
 import { Markdown } from '../../components/Markdown';
 
 interface Props {

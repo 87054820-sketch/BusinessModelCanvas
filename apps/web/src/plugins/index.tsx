@@ -1,5 +1,5 @@
 import * as Y from 'yjs';
-import type { CanvasDef, Lang, ZoneDef } from '@canvas-collab/shared';
+import type { CanvasDef, Lang, ZoneDef } from '@pingarden/shared';
 import { AxisGridLayer } from './axisGrid/AxisGridLayer';
 import { ChartCanvasLayer } from './chartCanvas/ChartCanvasLayer';
 

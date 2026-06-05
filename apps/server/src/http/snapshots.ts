@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as Y from 'yjs';
-import type { CanvasMeta, Snapshot, SnapshotMeta } from '@canvas-collab/shared';
+import type { CanvasMeta, Snapshot, SnapshotMeta } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import { getIdentity } from './identity.js';
 

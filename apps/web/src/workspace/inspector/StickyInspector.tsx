@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { StickyNote } from '@canvas-collab/shared';
+import type { StickyNote } from '@pingarden/shared';
 import { STICKY_PALETTE } from '../../canvas/stickyColors';
 
 interface Props {

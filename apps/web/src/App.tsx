@@ -11,14 +11,28 @@ import { HistoryPage } from './pages/HistoryPage';
 export default function App() {
   const { t } = useTranslation();
   const { identity, save } = useIdentity();
+  const isDesktop = typeof window !== 'undefined' && 'electronAPI' in window;
+
+  const logo = (
+    <Link to="/" className="flex items-center gap-2 font-semibold text-gray-900">
+      <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900 text-sm text-white">
+        🌱
+      </span>
+      <span>{t('app.title')}</span>
+    </Link>
+  );
 
   return (
     <div className="flex h-full flex-col bg-stone-50">
-      <nav className="flex flex-shrink-0 items-center justify-between border-b border-gray-200 bg-white px-6 py-3">
-        <Link to="/" className="font-semibold">
-          {t('app.title')}
-        </Link>
-        <div className="flex items-center gap-6">
+      <nav className="relative flex h-12 flex-shrink-0 items-center justify-between border-b border-gray-200 bg-white px-6">
+        {isDesktop ? (
+          <div className="pointer-events-auto absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            {logo}
+          </div>
+        ) : (
+          logo
+        )}
+        <div className="ml-auto flex items-center gap-6">
           <LanguageSwitcher />
           {identity && (
             <span className="flex items-center gap-2 text-xs text-gray-600">
@@ -32,7 +46,7 @@ export default function App() {
         </div>
       </nav>
 
-      <div className="min-h-0 flex-1 overflow-hidden">
+      <div className="min-h-0 flex-1 overflow-auto">
         <Routes>
           <Route path="/" element={<ProjectListPage />} />
           <Route path="/p/new" element={<NewProjectPage />} />

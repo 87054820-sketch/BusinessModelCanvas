@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# start.sh — boot the canvas-collab MVP locally.
+# start.sh — boot the pingarden MVP locally.
 #
 # Idempotent: safe to re-run. Kills anything on :4000 / :5173 first so
 # you never get the "port already in use" trap, then daemonizes the API
@@ -65,14 +65,14 @@ done
 
 # ── 4. start the API server ─────────────────────────────────────────────
 echo "→ Starting API server on :$API_PORT (logs: $SERVER_LOG)"
-nohup pnpm --filter @canvas-collab/server run dev > "$SERVER_LOG" 2>&1 &
+nohup pnpm --filter @pingarden/server run dev > "$SERVER_LOG" 2>&1 &
 SERVER_PID=$!
 echo "$SERVER_PID" > "$SERVER_PID_FILE"
 disown "$SERVER_PID" 2>/dev/null || true
 
 # ── 5. start the web dev server ─────────────────────────────────────────
 echo "→ Starting web dev server on :$WEB_PORT (logs: $WEB_LOG)"
-nohup pnpm --filter @canvas-collab/web run dev > "$WEB_LOG" 2>&1 &
+nohup pnpm --filter @pingarden/web run dev > "$WEB_LOG" 2>&1 &
 WEB_PID=$!
 echo "$WEB_PID" > "$WEB_PID_FILE"
 disown "$WEB_PID" 2>/dev/null || true
@@ -107,7 +107,7 @@ wait_for "http://localhost:$WEB_PORT"        "Web" "$WEB_PID"
 cat <<EOF
 
 ────────────────────────────────────────────────────────
-  Canvas Collab is running
+  PinGarden is running
 
   Web:    http://localhost:$WEB_PORT
   API:    http://localhost:$API_PORT

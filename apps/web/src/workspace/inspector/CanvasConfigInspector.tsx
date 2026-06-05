@@ -7,8 +7,8 @@ import type {
   Lang,
   PinClass,
   XAxisItem,
-} from '@canvas-collab/shared';
-import { STICKY_PALETTE } from '@canvas-collab/shared';
+} from '@pingarden/shared';
+import { STICKY_PALETTE } from '@pingarden/shared';
 import {
   resolveChartLabel,
   updateChartConfigLabel,

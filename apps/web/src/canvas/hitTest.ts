@@ -1,4 +1,4 @@
-import type { ZoneDef, ZoneShape } from '@canvas-collab/shared';
+import type { ZoneDef, ZoneShape } from '@pingarden/shared';
 
 /** Bounding rect of any zone shape, in SVG coords. */
 export function zoneBounds(shape: ZoneShape): {

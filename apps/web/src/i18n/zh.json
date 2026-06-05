@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "商业模式画布",
+    "title": "PinGarden",
     "subtitle": "为团队打造的实时战略画布"
   },
   "nav": {
@@ -16,13 +16,23 @@
     "title": "项目",
     "newProject": "+ 新建项目",
     "empty": "还没有项目,创建一个开始使用吧。",
+    "loading": "加载中…",
+    "projectsHint": "你的工作区",
+    "noDescription": "暂无描述",
     "canvasCount_one": "{{count}} 张画布",
     "canvasCount_other": "{{count}} 张画布",
     "updated": "更新于 {{time}}",
-    "templates": "画布模板",
-    "templatesHint": "选一个模板直接开启新项目,或在下方从零开始创建项目。",
+    "templates": "从模板开始",
+    "templatesHint": "选一个画布模板开启新项目。",
     "noCanvasesYet": "尚无画布",
-    "relatedCanvases": "配套画布",
+    "welcomeTitle": "欢迎来到 PinGarden",
+    "welcomeIntro": "选一个画布模板，或创建空白项目，开始整理你的想法。",
+    "welcomeSubtitle": "「造一片草原，只需一株三叶草、一只蜜蜂，\n再加上一点点白日梦。」\n—— 艾米莉·狄金森",
+    "pickTemplateToStart": "选一个画布，开启你的第一个项目",
+    "createBlankInstead": "创建空白项目",
+    "openExistingProject": "打开已有项目",
+    "noProjects": "还没有项目",
+    "startWithTemplate": "用「{{name}}」创建项目",
     "relatedCanvases": "配套画布"
   },
   "newProject": {
@@ -193,6 +203,10 @@
     "prompt": "选一个显示名,方便团队成员知道是谁在编辑。随时可以修改。",
     "placeholder": "你的显示名",
     "submit": "继续"
+  },
+  "footer": {
+    "madeBy": "Sibo Li 制作",
+    "email": "sibo.li@foxmail.com"
   },
   "templates": {
     "business-model-canvas": {

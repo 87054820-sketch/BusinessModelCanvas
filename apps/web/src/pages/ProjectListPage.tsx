@@ -1,26 +1,20 @@
-import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta, Lang, Project } from '@canvas-collab/shared';
+import type { CanvasMeta, Lang, Project } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { projectsApi } from '../api/projects';
 import { useIdentity } from '../identity/useIdentity';
-import { MenuButton } from '../ui/MenuButton';
 import { TypeToConfirmDialog } from '../ui/TypeToConfirmDialog';
 import { CanvasThumb } from '../canvas/CanvasThumb';
-
-interface ProjectWithCanvases extends Project {
-  canvases: CanvasMeta[];
-}
+import { TemplatePreviewModal } from '../components/TemplatePreviewModal';
+import { ProjectPicker, type ProjectWithCanvases } from '../components/ProjectPicker';
 
 /**
- * Home page. Two sections:
- *   1. Canvas templates gallery — shows every canvas type the server
- *      ships with, click to start a new project pre-loaded with that
- *      canvas (NewProjectPage reads ?withCanvas=<defId>).
- *   2. Projects list — richer cards that preview the canvases inside
- *      each project so a glance differentiates them once the list
- *      grows past a handful.
+ * Home page — landing-style layout:
+ *   1. Center welcome (icon + poem + title + CTAs)
+ *   2. Templates (full-bleed horizontal scroll strip)
+ *   3. Footer
  */
 export function ProjectListPage() {
   const { t, i18n } = useTranslation();
@@ -29,6 +23,8 @@ export function ProjectListPage() {
   const [items, setItems] = useState<ProjectWithCanvases[] | null>(null);
   const [defs, setDefs] = useState<CanvasDefSummary[] | null>(null);
   const [pendingDelete, setPendingDelete] = useState<ProjectWithCanvases | null>(null);
+  const [previewDefId, setPreviewDefId] = useState<string | null>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   async function load() {
     if (!identity) return;
@@ -37,16 +33,12 @@ export function ProjectListPage() {
       api.listCanvases(identity.displayName),
       api.listDefs(),
     ]);
-    // Group canvases by project so each card can render its own
-    // thumbnail strip.
     const byProject = new Map<string, CanvasMeta[]>();
     for (const c of all) {
       const arr = byProject.get(c.projectId) ?? [];
       arr.push(c);
       byProject.set(c.projectId, arr);
     }
-    // Newest-updated canvas first inside each project so the most
-    // active one shows up at the front of the strip.
     for (const arr of byProject.values()) {
       arr.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
     }
@@ -63,10 +55,6 @@ export function ProjectListPage() {
 
   if (!identity) return null;
   const lang = (i18n.language as Lang) ?? 'en';
-  const dateFmt = new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : 'en-US', {
-    dateStyle: 'medium',
-    timeStyle: 'short',
-  });
 
   async function handleDelete(p: ProjectWithCanvases) {
     if (!identity) return;
@@ -75,156 +63,234 @@ export function ProjectListPage() {
     void load();
   }
 
-  return (
-    <main className="mx-auto max-w-5xl px-8 py-10">
-      {/* ─── Canvas templates gallery ─── */}
-      <section>
-        <h2 className="text-xl font-semibold tracking-tight text-gray-900">
-          {t('home.templates')}
-        </h2>
-        <p className="mt-1 text-sm text-gray-500">{t('home.templatesHint')}</p>
+  function scrollTemplates(dir: 'left' | 'right') {
+    const el = scrollRef.current;
+    if (!el) return;
+    const amount = dir === 'left' ? -400 : 400;
+    el.scrollBy({ left: amount, behavior: 'smooth' });
+  }
 
-        {defs === null ? (
-          <p className="mt-6 text-sm text-gray-400">…</p>
-        ) : (
-          <ul className="mt-5 flex flex-wrap gap-4">
-            {defs.map((d) => (
-              <li key={d.id} className="w-[200px]">
+  return (
+    <main className="flex min-h-[calc(100vh-3rem)] flex-col">
+      {/* ═══ Center welcome area ═══ */}
+      <div className="flex flex-1 items-center justify-center">
+        <div className="mx-auto w-full max-w-5xl px-8 py-6">
+          <section>
+            {items === null ? (
+              <div className="py-20 text-center text-sm text-gray-400">
+                <p className="animate-pulse">{t('home.loading')}</p>
+              </div>
+            ) : (
+              <CenterState
+                items={items}
+                onSelectProject={(p) => navigate(`/p/${p.id}`)}
+                onRequestDelete={(p) => setPendingDelete(p)}
+              />
+            )}
+          </section>
+        </div>
+      </div>
+
+      {/* ═══ Templates (full-bleed, sits just above footer) ═══ */}
+      {defs !== null && defs.length > 0 && (
+        <section className="border-t border-gray-100 bg-white py-5">
+          <div className="mx-auto max-w-5xl px-8">
+            <div className="mb-3 flex items-center justify-center gap-3">
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-gray-600">
+                {t('home.templates')}
+              </h2>
+              <div className="flex gap-1.5">
+                <ScrollArrow dir="left" onClick={() => scrollTemplates('left')} />
+                <ScrollArrow dir="right" onClick={() => scrollTemplates('right')} />
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            {/* Right-edge fade */}
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent" />
+
+            <div
+              ref={scrollRef}
+              className="flex gap-2.5 overflow-x-auto px-8 pb-1 scrollbar-hide"
+            >
+              {defs.map((d) => (
                 <button
+                  key={d.id}
                   type="button"
-                  onClick={() => navigate(`/p/new?withCanvas=${encodeURIComponent(d.id)}`)}
-                  className="group block w-full rounded-xl border border-gray-200 bg-white p-3 text-left transition hover:-translate-y-0.5 hover:border-gray-300 hover:ring-2 hover:ring-gray-100"
+                  onClick={() => setPreviewDefId(d.id)}
+                  className="group w-[148px] flex-shrink-0 rounded-xl border border-gray-200 bg-white p-2.5 text-left transition hover:border-gray-300 hover:shadow-sm"
                 >
-                  <div className="flex h-[112px] items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <CanvasThumb id={d.id} width={160} height={96} />
+                  <div className="flex h-[76px] items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <CanvasThumb id={d.id} width={108} height={64} />
                   </div>
-                  <div className="mt-3 truncate text-sm font-semibold text-gray-900">
+                  <div className="mt-2 truncate text-sm font-medium text-gray-900">
                     {t(`templates.${d.id}.name`, d.name[lang])}
                   </div>
-                  <div className="mt-0.5 line-clamp-2 text-xs text-gray-500">
+                  <div className="mt-0.5 line-clamp-2 text-[11px] leading-relaxed text-gray-500">
                     {t(`templates.${d.id}.tagline`, '')}
                   </div>
                 </button>
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
-
-      {/* ─── Projects list ─── */}
-      <section className="mt-12">
-        <header className="flex items-end justify-between">
-          <h2 className="text-xl font-semibold tracking-tight text-gray-900">
-            {t('home.title')}
-          </h2>
-          <Link
-            to="/p/new"
-            className="rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-black"
-          >
-            {t('home.newProject')}
-          </Link>
-        </header>
-
-        {items === null ? (
-          <p className="mt-8 text-sm text-gray-400">…</p>
-        ) : items.length === 0 ? (
-          <div className="mt-6 rounded-2xl border border-dashed border-gray-300 px-6 py-10 text-center text-sm text-gray-500">
-            {t('home.empty')}
+              ))}
+              <div className="w-8 flex-shrink-0" />
+            </div>
           </div>
-        ) : (
-          <ul className="mt-6 grid gap-4 md:grid-cols-2">
-            {items.map((p) => (
-              <li
-                key={p.id}
-                className="group cursor-pointer rounded-xl border border-gray-200 bg-white p-4 transition hover:border-gray-400"
-                onClick={() => navigate(`/p/${p.id}`)}
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <div className="min-w-0 flex-1">
-                    <div className="text-base font-semibold text-gray-900">{p.name}</div>
-                    {p.description && (
-                      <div className="mt-1 line-clamp-2 text-sm text-gray-600">
-                        {p.description}
-                      </div>
-                    )}
-                  </div>
-                  <div onClick={(e) => e.stopPropagation()}>
-                    <MenuButton
-                      align="right"
-                      items={[
-                        {
-                          label: t('confirm.delete'),
-                          danger: true,
-                          onClick: () => setPendingDelete(p),
-                        },
-                      ]}
-                    />
-                  </div>
-                </div>
+        </section>
+      )}
 
-                {/* Mini canvas strip — surfaces the project's contents
-                    so a project list of 10+ stays scannable. */}
-                <ProjectCanvasStrip canvases={p.canvases} />
+      {/* ═══ Footer (tight against templates) ═══ */}
+      <footer className="border-t border-gray-100 bg-white py-2 text-center text-[11px] text-gray-400">
+        <span>{t('footer.madeBy')}</span>
+        <span className="mx-2">·</span>
+        <a
+          href="mailto:sibo.li@foxmail.com"
+          className="underline hover:text-gray-600"
+        >
+          {t('footer.email')}
+        </a>
+      </footer>
 
-                <div className="mt-3 flex items-center gap-3 text-xs text-gray-500">
-                  <span>{t('home.canvasCount', { count: p.canvases.length })}</span>
-                  <span>·</span>
-                  <span>
-                    {t('home.updated', { time: dateFmt.format(new Date(p.updatedAt)) })}
-                  </span>
-                </div>
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+      <div className="mx-auto max-w-5xl px-8">
+        <TypeToConfirmDialog
+          open={!!pendingDelete}
+          title={t('confirm.deleteProject')}
+          message={t('confirm.deleteProjectMsg', {
+            count: pendingDelete?.canvases.length ?? 0,
+          })}
+          expected={pendingDelete?.name ?? ''}
+          confirmLabel={t('confirm.delete')}
+          cancelLabel={t('confirm.cancel')}
+          onCancel={() => setPendingDelete(null)}
+          onConfirm={async () => {
+            if (pendingDelete) await handleDelete(pendingDelete);
+          }}
+        />
 
-      <TypeToConfirmDialog
-        open={!!pendingDelete}
-        title={t('confirm.deleteProject')}
-        message={t('confirm.deleteProjectMsg', {
-          count: pendingDelete?.canvases.length ?? 0,
-        })}
-        expected={pendingDelete?.name ?? ''}
-        confirmLabel={t('confirm.delete')}
-        cancelLabel={t('confirm.cancel')}
-        onCancel={() => setPendingDelete(null)}
-        onConfirm={async () => {
-          if (pendingDelete) await handleDelete(pendingDelete);
-        }}
-      />
+        <TemplatePreviewModal
+          defId={previewDefId}
+          lang={lang}
+          onClose={() => setPreviewDefId(null)}
+        />
+      </div>
     </main>
   );
 }
 
-const STRIP_LIMIT = 6;
-
-/** Horizontal stack of mini canvas thumbnails for one project card. */
-function ProjectCanvasStrip({ canvases }: { canvases: CanvasMeta[] }) {
-  const { t } = useTranslation();
-  if (canvases.length === 0) {
-    return (
-      <div className="mt-3 inline-flex items-center rounded-full bg-gray-50 px-2 py-0.5 text-[11px] text-gray-400">
-        {t('home.noCanvasesYet')}
-      </div>
-    );
+/** Split a poem text by punctuation marks so each phrase gets its own line. */
+function splitByPunctuation(text: string): string[] {
+  const lines = text.split('\n');
+  const result: string[] = [];
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    // Attribution line — keep as-is
+    if (/^[—"'-]/.test(trimmed)) {
+      result.push(trimmed);
+      continue;
+    }
+    // Strip wrapping quotes / book-title marks
+    const clean = trimmed
+      .replace(/^[""''「『]/, '')
+      .replace(/[""''」』]$/, '');
+    // Split by common punctuation and trim whitespace
+    const parts = clean
+      .split(/[，、；：。！？,.;:.!?]+/)
+      .map((s) => s.trim())
+      .filter(Boolean);
+    result.push(...parts);
   }
-  const shown = canvases.slice(0, STRIP_LIMIT);
-  const overflow = canvases.length - shown.length;
+  return result;
+}
+
+/** Center landing state: icon → poem → title → CTAs */
+function CenterState({
+  items,
+  onSelectProject,
+  onRequestDelete,
+}: {
+  items: ProjectWithCanvases[];
+  onSelectProject: (p: ProjectWithCanvases) => void;
+  onRequestDelete: (p: ProjectWithCanvases) => void;
+}) {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const subtitle = t('home.welcomeSubtitle');
+  const poemLines = splitByPunctuation(subtitle);
+  const hasProjects = items.length > 0;
+
   return (
-    <div className="mt-3 flex flex-wrap items-center gap-1.5">
-      {shown.map((c) => (
-        <span
-          key={c.id}
-          title={c.title}
-          className="inline-flex items-center justify-center rounded-md border border-gray-200 bg-white p-1"
+    <div className="flex flex-col items-center">
+      {/* Poem card — subtle, sits at the top */}
+      <div className="mx-auto max-w-[15rem] rounded-2xl bg-stone-100 px-6 py-4 shadow-sm">
+        <div className="text-center font-serif text-xl leading-none text-gray-300">
+          &#x201C;
+        </div>
+        <div className="mt-1.5 space-y-0.5 text-center font-serif text-xs font-semibold italic leading-loose text-gray-500">
+          {poemLines.map((line, i) => {
+            if (
+              line.startsWith('—') ||
+              line.startsWith('"—') ||
+              line.startsWith('——') ||
+              line.startsWith('-')
+            ) {
+              return (
+                <p
+                  key={i}
+                  className="mt-2 text-[11px] font-normal not-italic tracking-wide text-gray-400"
+                >
+                  {line}
+                </p>
+              );
+            }
+            return <p key={i}>{line}</p>;
+          })}
+        </div>
+      </div>
+
+      {/* Sprout icon */}
+      <div className="mx-auto mt-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-900 text-3xl text-white">
+        🌱
+      </div>
+
+      {/* Title */}
+      <h1 className="mt-6 text-4xl font-semibold tracking-tight text-gray-900">
+        {t('home.welcomeTitle')}
+      </h1>
+
+      {/* One-line intro */}
+      <p className="mt-3 text-center text-base text-gray-400">
+        {t('home.welcomeIntro')}
+      </p>
+
+      {/* CTA buttons */}
+      <div className="mt-8 flex items-center gap-4">
+        <button
+          type="button"
+          onClick={() => navigate('/p/new')}
+          className="rounded-xl bg-emerald-600 px-9 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-600/20 transition-all hover:bg-emerald-700 hover:shadow-xl hover:shadow-emerald-600/30 active:scale-[0.98]"
         >
-          <CanvasThumb id={c.defId} width={32} height={22} />
-        </span>
-      ))}
-      {overflow > 0 && (
-        <span className="text-[11px] text-gray-500">+{overflow}</span>
-      )}
+          {t('home.createBlankInstead')}
+        </button>
+        <ProjectPicker
+          projects={items}
+          onSelect={onSelectProject}
+          onRequestDelete={onRequestDelete}
+          disabled={!hasProjects}
+        />
+      </div>
     </div>
+  );
+}
+
+function ScrollArrow({ dir, onClick }: { dir: 'left' | 'right'; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 bg-white text-sm text-gray-600 hover:border-gray-400 hover:text-gray-900"
+      aria-label={dir === 'left' ? 'Scroll left' : 'Scroll right'}
+    >
+      {dir === 'left' ? '‹' : '›'}
+    </button>
   );
 }

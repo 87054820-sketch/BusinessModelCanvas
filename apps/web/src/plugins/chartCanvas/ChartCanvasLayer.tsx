@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import type { Lang } from '@canvas-collab/shared';
+import type { Lang } from '@pingarden/shared';
 import { resolveLabel, useXAxisItems } from '../../collab/xAxisItems';
 import { resolveChartLabel, useChartConfig } from '../../collab/chartConfig';
 import type { PluginProps } from '../index';

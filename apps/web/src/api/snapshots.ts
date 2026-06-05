@@ -1,4 +1,4 @@
-import type { CanvasMeta, SnapshotMeta } from '@canvas-collab/shared';
+import type { CanvasMeta, SnapshotMeta } from '@pingarden/shared';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 

@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
-import type { CanvasMeta, Lang } from '@canvas-collab/shared';
+import type { CanvasMeta, Lang } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { getIdentity } from './identity.js';

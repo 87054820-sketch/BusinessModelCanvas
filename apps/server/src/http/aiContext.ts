@@ -6,7 +6,7 @@ import type {
   AiContextSticky,
   Lang,
   ZoneHistoryEntry,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import { loadKnowledgeForBundle, type LoadedCanvasDef } from '../canvasDefs/loader.js';
 import {
@@ -125,7 +125,7 @@ export function registerAiContextRoutes(
         const classesRoot = getPinClassesRoot(doc);
         const classByIdLocal = new Map<
           string,
-          { id: string; label: string; color: string; icon: import('@canvas-collab/shared').PinIcon }
+          { id: string; label: string; color: string; icon: import('@pingarden/shared').PinIcon }
         >();
         if (classesRoot.size > 0) {
           const arr: NonNullable<AiContext['pinClasses']> = [];

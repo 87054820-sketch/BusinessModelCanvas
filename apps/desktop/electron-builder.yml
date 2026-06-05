@@ -1,0 +1,12 @@
+appId: com.siboli.pingarden
+productName: PinGarden
+directories:
+  output: build
+files:
+  - "dist/**/*"
+  # Explicitly exclude any dev data that might exist
+  - "!**/data/**"
+mac:
+  category: public.app-category.productivity
+  target:
+    - dmg

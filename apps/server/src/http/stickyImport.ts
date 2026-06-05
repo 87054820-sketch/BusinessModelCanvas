@@ -2,13 +2,13 @@ import { randomUUID } from 'node:crypto';
 import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as Y from 'yjs';
-import type { ZoneShape } from '@canvas-collab/shared';
+import type { ZoneShape } from '@pingarden/shared';
 import {
   STICKY_MAX_HEIGHT,
   STICKY_MAX_WIDTH,
   STICKY_MIN_HEIGHT,
   STICKY_MIN_WIDTH,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { getIdentity } from './identity.js';

@@ -9,8 +9,10 @@ const here = dirname(fileURLToPath(import.meta.url));
 export const config = {
   port: Number(process.env.PORT ?? 4000),
   host: process.env.HOST ?? '0.0.0.0',
+  /** Optional desktop instance marker used by Electron to avoid connecting to another local service. */
+  desktopInstanceId: process.env.PINGARDEN_DESKTOP_INSTANCE_ID,
   /** Where canvas instance data + Yjs docs + snapshots live. */
   dataDir: resolve(process.env.DATA_DIR ?? resolve(here, '../data')),
   /** Where canvas-def asset bundles live. */
-  canvasDefsDir: resolve(here, '../../../packages/canvases'),
+  canvasDefsDir: resolve(process.env.CANVAS_DEFS_DIR ?? resolve(here, '../../../packages/canvases')),
 } as const;

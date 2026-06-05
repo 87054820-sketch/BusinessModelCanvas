@@ -1,6 +1,6 @@
 import * as Y from 'yjs';
-import type { ColorLegendEntry, Pin, PinClass, PinIcon, XAxisItem } from '@canvas-collab/shared';
-import { DEFAULT_CHART_COLOR, STICKY_PALETTE } from '@canvas-collab/shared';
+import type { ColorLegendEntry, Pin, PinClass, PinIcon, XAxisItem } from '@pingarden/shared';
+import { DEFAULT_CHART_COLOR, STICKY_PALETTE } from '@pingarden/shared';
 
 /**
  * Server-side mirror of the Y.Map encoders that live in

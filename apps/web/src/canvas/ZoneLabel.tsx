@@ -1,4 +1,4 @@
-import type { CanvasI18n, Lang, ZoneDef, ZoneShape } from '@canvas-collab/shared';
+import type { CanvasI18n, Lang, ZoneDef, ZoneShape } from '@pingarden/shared';
 import { zoneBounds } from './hitTest';
 
 interface Props {

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import type { CanvasMeta, Project } from '@canvas-collab/shared';
+import type { CanvasMeta, Project } from '@pingarden/shared';
 import { MenuButton } from '../ui/MenuButton';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 import { AddCanvasMenu } from './AddCanvasMenu';

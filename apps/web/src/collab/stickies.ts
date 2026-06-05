@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as Y from 'yjs';
-import type { StickyNote, ZoneHistoryEntry } from '@canvas-collab/shared';
+import type { StickyNote, ZoneHistoryEntry } from '@pingarden/shared';
 import { DEFAULT_STICKY_COLOR, STICKY_PALETTE } from '../canvas/stickyColors';
 
 const STICKIES_KEY = 'stickies';

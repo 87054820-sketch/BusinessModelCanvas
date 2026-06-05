@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import type { StickyNote } from '@canvas-collab/shared';
+import type { StickyNote } from '@pingarden/shared';
 import {
   DEFAULT_STICKY_HEIGHT,
   DEFAULT_STICKY_WIDTH,
@@ -7,7 +7,7 @@ import {
   STICKY_MAX_WIDTH,
   STICKY_MIN_HEIGHT,
   STICKY_MIN_WIDTH,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 
 const CLICK_THRESHOLD_PX = 4;
 /** Side length of the bottom-right resize handle in SVG-coord units. */

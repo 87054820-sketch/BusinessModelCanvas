@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta, Lang, Project } from '@canvas-collab/shared';
+import type { CanvasMeta, Lang, Project } from '@pingarden/shared';
 import { TypeToConfirmDialog } from '../../ui/TypeToConfirmDialog';
 import { RelatedCanvasesStrip } from './RelatedCanvasesStrip';
 

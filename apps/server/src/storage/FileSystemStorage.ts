@@ -6,7 +6,7 @@ import type {
   Snapshot,
   SnapshotKind,
   SnapshotMeta,
-} from '@canvas-collab/shared';
+} from '@pingarden/shared';
 import type { CanvasStorage } from './CanvasStorage.js';
 
 /**

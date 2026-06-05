@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as Y from 'yjs';
-import type { PinClass, PinIcon } from '@canvas-collab/shared';
-import { CHART_PALETTE, DEFAULT_CHART_COLOR } from '@canvas-collab/shared';
+import type { PinClass, PinIcon } from '@pingarden/shared';
+import { CHART_PALETTE, DEFAULT_CHART_COLOR } from '@pingarden/shared';
 
 /**
  * Stable Y.Doc root key. Server bulk-import / AI-context use the same

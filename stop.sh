@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# stop.sh — stop the local canvas-collab dev servers started by ./start.sh.
+# stop.sh — stop the local pingarden dev servers started by ./start.sh.
 
 set -euo pipefail
 

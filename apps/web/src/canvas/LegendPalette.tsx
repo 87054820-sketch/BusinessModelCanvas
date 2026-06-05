@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import type * as Y from 'yjs';
-import type { Lang, PinClass, PinIcon } from '@canvas-collab/shared';
+import type { Lang, PinClass, PinIcon } from '@pingarden/shared';
 import { addPinClass, usePinClasses } from '../collab/pinClasses';
 import { useActiveClass } from '../state/activeClass';
 import { useSelection } from '../state/selection';

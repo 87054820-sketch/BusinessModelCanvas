@@ -2,7 +2,7 @@ import { promises as fs } from 'node:fs';
 import { join, normalize, sep, extname } from 'node:path';
 import type { FastifyInstance } from 'fastify';
 import { loadKnowledgeForBundle, type LoadedCanvasDef } from '../canvasDefs/loader.js';
-import type { Lang } from '@canvas-collab/shared';
+import type { Lang } from '@pingarden/shared';
 
 /**
  * Routes:
