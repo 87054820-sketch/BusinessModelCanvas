@@ -38,11 +38,6 @@
     "addCanvas": "+ Add canvas",
     "noCanvases": "No canvases yet.",
     "selectCanvas": "Select a canvas from the sidebar",
-    "showZones": "show zones",
-    "addSticky": "+ Sticky",
-    "addPin": "+ Pin",
-    "pinModeOn": "Click canvas to drop · Esc to stop",
-    "pinHint": "Pick a class then click anywhere on the canvas to drop a pin. Same class auto-connects with a line.",
     "saveMilestone": "Save milestone",
     "viewHistory": "History",
     "rename": "Rename",
@@ -58,6 +53,14 @@
   },
   "inspector": {
     "tip": "Click a sticky or block on the canvas to inspect it.",
+    "title": {
+      "project": "Project",
+      "canvasIntro": "Canvas info",
+      "canvasConfig": "Canvas config",
+      "block": "Block info",
+      "sticky": "Edit sticky",
+      "pin": "Edit pin"
+    },
     "block": {
       "guidance": "Guidance",
       "examples": "Examples",
@@ -65,14 +68,19 @@
       "newSticky": "+ New empty sticky in this block"
     },
     "sticky": {
+      "header": "Sticky",
       "text": "Text",
+      "textHint": "Shown on canvas",
       "color": "Color",
       "block": "Block",
+      "meta": "Author / Created",
+      "metaHint": "{{author}} · {{date}}",
       "author": "Author",
       "createdAt": "Created",
       "delete": "Delete sticky",
       "clickToEdit": "Click to edit text",
-      "shortcuts": "Shortcuts: ⌘/Ctrl + C copy · ⌘/Ctrl + V paste · ⌘/Ctrl + X cut · Delete / Backspace remove. Shortcuts act on the sticky object — click into the text box (or double-click the sticky on the canvas) to edit its text."
+      "shortcuts": "Shortcuts: ⌘/Ctrl + C copy · ⌘/Ctrl + V paste · ⌘/Ctrl + X cut · Delete / Backspace remove. Shortcuts act on the sticky object — click into the text box (or double-click the sticky on the canvas) to edit its text.",
+      "shortcutsCompact": "⌘/Ctrl + C / V / X · Delete acts on the sticky object — click the text to edit it."
     },
     "project": {
       "name": "Project name",
@@ -93,31 +101,17 @@
       "configTab": "Config",
       "introTabTitle": "Canvas knowledge",
       "configTabTitle": "Canvas configuration",
+      "sectionStrategy": "Strategy axis & factors",
+      "sectionStrategyHint": "Per-canvas Y-axis labels and the X-axis competition factors. Strategy / portfolio canvases only.",
+      "sectionPins": "Pin legend",
+      "sectionPinsHint": "Each class is one company / theme / persona; same-class pins auto-connect with a line.",
+      "sectionStickies": "Sticky color legend",
+      "sectionStickiesHint": "Per-canvas meaning for each sticky colour. Empty rows are hidden from the canvas.",
       "yAxisHeader": "Y axis labels",
       "yAxisHint": "Per-canvas labels — overrides the template defaults. Leave a field blank to fall back.",
       "yAxisLabel": "Axis label",
       "yAxisLowLabel": "Low (bottom)",
       "yAxisHighLabel": "High (top)"
-    },
-    "config": {
-      "introTab": "Intro",
-      "configTab": "Config",
-      "introTabTitle": "Canvas knowledge",
-      "configTabTitle": "Canvas configuration",
-      "yAxisHeader": "Y axis labels",
-      "yAxisHint": "Per-canvas labels — overrides the template defaults. Leave a field blank to fall back.",
-      "yAxisLabel": "Axis label",
-      "yAxisLowLabel": "Low (bottom)",
-      "yAxisHighLabel": "High (top)"
-    },
-    "legend": {
-      "title": "Legend",
-      "editorHeader": "Color legend",
-      "editorHint": "Give each sticky color a meaning that's specific to this project. Empty rows are hidden from the sidebar.",
-      "labelPlaceholder": "Label (e.g. Customer pain)",
-      "descriptionPlaceholder": "Optional description",
-      "save": "Save legend",
-      "saved": "Saved"
     }
   },
   "history": {
@@ -157,9 +151,7 @@
     "header": "Legend",
     "headerHint": "Each class is one company / theme / persona. Pins of the same class auto-connect with a line.",
     "addClass": "+ Add class",
-    "namePlaceholder": "Name this class…",
-    "create": "Add",
-    "empty": "+ Add a legend class to start placing pins",
+    "addClassFull": "+ Pin legend",
     "exitDraw": "Exit draw",
     "numberHint": "Press {{n}} to switch",
     "activate": "Activate",
@@ -169,13 +161,30 @@
     "deleteClassTitle": "Delete class",
     "deleteClassMsg": "Delete '{{name}}'? All its pins on the canvas will be removed too."
   },
+  "stickyLegend": {
+    "addLabel": "+ Sticky legend",
+    "header": "Sticky color legend",
+    "headerHint": "Per-canvas meanings for each sticky colour. Empty rows are hidden from the canvas overlay.",
+    "empty": "No sticky legend yet — click '+ Add sticky legend' below to assign meaning to a colour.",
+    "addEntry": "+ Add sticky legend",
+    "addEntryAllUsed": "All six colors are already in use",
+    "addEntryPickHint": "Pick a colour to assign meaning",
+    "addEntryColorUsed": "Already mapped",
+    "labelPlaceholder": "Label (e.g. Customer pain)",
+    "descriptionPlaceholder": "Optional description",
+    "deleteEntryTitle": "Clear entry",
+    "deleteEntryMsg": "Clear the label + description for '{{label}}'? Stickies of this colour are unaffected."
+  },
   "pin": {
     "header": "Pin",
     "class": "Class",
     "classMissing": "(class deleted — pick another)",
+    "pickClass": "Pick a class",
     "label": "Label",
+    "labelHint": "Shown next to the pin on the canvas",
     "labelPlaceholder": "What does this pin mark?",
     "body": "Note (optional)",
+    "bodyHint": "Reference only — not shown on the canvas",
     "bodyPlaceholder": "One-line elaboration",
     "delete": "Delete pin"
   },

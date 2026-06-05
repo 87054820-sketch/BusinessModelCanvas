@@ -38,11 +38,6 @@
     "addCanvas": "+ 添加画布",
     "noCanvases": "暂无画布。",
     "selectCanvas": "从左侧选择一张画布",
-    "showZones": "显示分区",
-    "addSticky": "+ 便签",
-    "addPin": "+ Pin",
-    "pinModeOn": "点画布落 Pin · Esc 退出",
-    "pinHint": "选一个 class,然后在画布上点击落 Pin。同 class 的 Pin 会自动连成线。",
     "saveMilestone": "保存里程碑",
     "viewHistory": "历史",
     "rename": "重命名",
@@ -58,6 +53,14 @@
   },
   "inspector": {
     "tip": "在画布上选中便签或分区以查看详情。",
+    "title": {
+      "project": "项目",
+      "canvasIntro": "画布说明",
+      "canvasConfig": "画布编辑",
+      "block": "板块说明",
+      "sticky": "便签编辑",
+      "pin": "图钉编辑"
+    },
     "block": {
       "guidance": "说明",
       "examples": "示例",
@@ -65,14 +68,19 @@
       "newSticky": "+ 在此区块新增空便签"
     },
     "sticky": {
+      "header": "便签",
       "text": "内容",
+      "textHint": "显示在画布上",
       "color": "颜色",
       "block": "所属区块",
+      "meta": "作者 / 创建于",
+      "metaHint": "{{author}} · {{date}}",
       "author": "作者",
       "createdAt": "创建时间",
       "delete": "删除便签",
       "clickToEdit": "点击编辑文本",
-      "shortcuts": "快捷键:⌘/Ctrl + C 复制 · ⌘/Ctrl + V 粘贴 · ⌘/Ctrl + X 剪切 · Delete / Backspace 删除。快捷键直接作用于便签对象;如需编辑文字,点击文本框或在画布上双击便签即可。"
+      "shortcuts": "快捷键:⌘/Ctrl + C 复制 · ⌘/Ctrl + V 粘贴 · ⌘/Ctrl + X 剪切 · Delete / Backspace 删除。快捷键直接作用于便签对象;如需编辑文字,点击文本框或在画布上双击便签即可。",
+      "shortcutsCompact": "⌘/Ctrl + C / V / X · Delete 直接作用于便签对象,需要编辑文字请点击上方内容。"
     },
     "project": {
       "name": "项目名称",
@@ -93,20 +101,17 @@
       "configTab": "配置",
       "introTabTitle": "画布说明",
       "configTabTitle": "画布配置",
+      "sectionStrategy": "战略画布坐标 / 因子",
+      "sectionStrategyHint": "本张画布独立的 Y 轴文字与 X 轴竞争因子,仅战略 / 业务组合类画布有效。",
+      "sectionPins": "图钉图例",
+      "sectionPinsHint": "每个类别是一家公司 / 一个主题 / 一类 persona;同类别的图钉会自动连成线。",
+      "sectionStickies": "便签颜色图例",
+      "sectionStickiesHint": "为本张画布的便签颜色赋予含义,空白行不会出现在画布上。",
       "yAxisHeader": "Y 轴标签",
       "yAxisHint": "本张画布独立的 Y 轴文字。留空则回退到模板默认值。",
       "yAxisLabel": "Y 轴标签",
       "yAxisLowLabel": "低值标签",
       "yAxisHighLabel": "高值标签"
-    },
-    "legend": {
-      "title": "图例",
-      "editorHeader": "颜色图例",
-      "editorHint": "为每种便签颜色定义一个仅属于本项目的含义。空白行不会出现在左侧栏。",
-      "labelPlaceholder": "标签(如「客户痛点」)",
-      "descriptionPlaceholder": "可选说明",
-      "save": "保存图例",
-      "saved": "已保存"
     }
   },
   "history": {
@@ -140,15 +145,13 @@
     "factorsHeader": "竞争因子(X 轴)",
     "addFactor": "+ 添加因子",
     "deleteFactorTitle": "删除因子",
-    "deleteFactorMsg": "确认删除「{{name}}」?画布上的 Pin 位置不变,只是 X 轴少一列。"
+    "deleteFactorMsg": "确认删除「{{name}}」?画布上的图钉位置不变,只是 X 轴少一列。"
   },
   "legend": {
     "header": "图例",
-    "headerHint": "每个 class 是一家公司 / 一个主题 / 一类 persona。同 class 的 Pin 会自动连成线。",
+    "headerHint": "每个 class 是一家公司 / 一个主题 / 一类 persona。同 class 的图钉会自动连成线。",
     "addClass": "+ 添加类别",
-    "namePlaceholder": "类别名…",
-    "create": "添加",
-    "empty": "+ 先建一个类别,再开始落 Pin",
+    "addClassFull": "+ 图钉图例",
     "exitDraw": "退出画笔",
     "numberHint": "按 {{n}} 切换",
     "activate": "激活",
@@ -156,17 +159,34 @@
     "activateHint": "把这个类别设为「画笔」",
     "editClass": "编辑类别",
     "deleteClassTitle": "删除类别",
-    "deleteClassMsg": "确认删除「{{name}}」?该类别在画布上的所有 Pin 会被一并删除。"
+    "deleteClassMsg": "确认删除「{{name}}」?该类别在画布上的所有图钉会被一并删除。"
+  },
+  "stickyLegend": {
+    "addLabel": "+ 便签图例",
+    "header": "便签颜色图例",
+    "headerHint": "为本张画布的便签颜色定义含义。空白行不会出现在画布右上角。",
+    "empty": "暂未定义任何便签图例 —— 点击下方「+ 添加便签图例」选个颜色给个含义。",
+    "addEntry": "+ 添加便签图例",
+    "addEntryAllUsed": "六种颜色已全部使用",
+    "addEntryPickHint": "选一个颜色赋予含义",
+    "addEntryColorUsed": "该颜色已有图例",
+    "labelPlaceholder": "标签(如「客户痛点」)",
+    "descriptionPlaceholder": "可选说明",
+    "deleteEntryTitle": "清空图例",
+    "deleteEntryMsg": "确认清空「{{label}}」的标签和说明?画布上同色便签不受影响。"
   },
   "pin": {
-    "header": "Pin",
+    "header": "图钉",
     "class": "类别",
     "classMissing": "(类别已被删除 —— 请选择另一个)",
+    "pickClass": "选择一个类别",
     "label": "标签",
-    "labelPlaceholder": "这个 Pin 在标记什么?",
+    "labelHint": "显示在画布上的图钉旁",
+    "labelPlaceholder": "这个图钉在标记什么?",
     "body": "备注(可选)",
+    "bodyHint": "仅供参考,不会显示在画布上",
     "bodyPlaceholder": "一句话补充",
-    "delete": "删除 Pin"
+    "delete": "删除图钉"
   },
   "identity": {
     "title": "欢迎",

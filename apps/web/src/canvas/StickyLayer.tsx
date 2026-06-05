@@ -43,6 +43,8 @@ export function StickyLayer({ doc, zones, toSvgPoint, displayName }: Props) {
               updateSticky(doc, s.id, { x: centroid.x, y: centroid.y });
             }
           }}
+          onResize={(width, height) => updateSticky(doc, s.id, { width, height })}
+          onResizeEnd={(width, height) => updateSticky(doc, s.id, { width, height })}
           onText={(text) => updateSticky(doc, s.id, { text })}
           onSelect={() => selectSticky(s.id)}
         />

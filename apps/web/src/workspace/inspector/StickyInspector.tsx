@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { BlockI18n, StickyNote } from '@canvas-collab/shared';
+import type { StickyNote } from '@canvas-collab/shared';
 import { STICKY_PALETTE } from '../../canvas/stickyColors';
 
 interface Props {
@@ -13,7 +13,15 @@ interface Props {
 }
 
 /**
- * Right-panel content when a sticky is selected.
+ * Right-panel content when a sticky is selected. Shape mirrors
+ * `PinInspector`: a small uppercase header at the top, then a series
+ * of `Field`s with optional sub-hints, then a delete button pinned to
+ * the bottom. The two inspectors should read as siblings — the only
+ * difference is which fields they expose.
+ *
+ * Field hints use the same "shown on canvas" / "not shown on canvas"
+ * vocabulary that the pin inspector uses, so the user can predict
+ * which inputs surface on the canvas without having to test.
  *
  * Text editing is **opt-in**: by default the body shows a read-only
  * preview of the sticky text. Clicking the preview swaps in a focused
@@ -62,7 +70,14 @@ export function StickyInspector({ sticky, blockTitle, onText, onColor, onDelete 
   return (
     <div className="flex h-full flex-col">
       <div className="flex-1 overflow-y-auto p-5">
-        <Field label={t('inspector.sticky.text')}>
+        <div className="text-[11px] font-medium uppercase tracking-wider text-gray-500">
+          {t('inspector.sticky.header')}
+        </div>
+
+        <Field
+          label={t('inspector.sticky.text')}
+          hint={t('inspector.sticky.textHint')}
+        >
           {editing ? (
             <textarea
               ref={taRef}
@@ -131,25 +146,30 @@ export function StickyInspector({ sticky, blockTitle, onText, onColor, onDelete 
           <div className="text-sm text-gray-700">{blockTitle ?? sticky.zoneId}</div>
         </Field>
 
-        <Field label={t('inspector.sticky.author')}>
-          <div className="text-sm text-gray-700">{sticky.authorName || '—'}</div>
-        </Field>
-
-        <Field label={t('inspector.sticky.createdAt')}>
-          <div className="text-xs text-gray-500">
-            {new Date(sticky.createdAt).toLocaleString()}
+        {/* Author + createdAt collapsed onto one compact line — same
+            visual weight as the pin inspector's missing-meta line, so
+            the two inspectors don't diverge on the bottom half. */}
+        <Field label={t('inspector.sticky.meta')}>
+          <div className="text-[12px] text-gray-600">
+            {t('inspector.sticky.metaHint', {
+              author: sticky.authorName || '—',
+              date: new Date(sticky.createdAt).toLocaleString(),
+            })}
           </div>
         </Field>
-
-        <div className="mt-4 rounded-lg border border-gray-100 bg-gray-50 p-3 text-[11px] leading-relaxed text-gray-600">
-          {t('inspector.sticky.shortcuts')}
-        </div>
       </div>
 
       <div className="border-t border-gray-200 p-4">
+        {/* Compact one-line shortcuts caption — replaces the prior
+            multi-line info box. The full-text version still ships in
+            the delete button's tooltip for power users. */}
+        <p className="mb-2 text-[11px] italic leading-snug text-gray-400">
+          {t('inspector.sticky.shortcutsCompact')}
+        </p>
         <button
           type="button"
           onClick={onDelete}
+          title={t('inspector.sticky.shortcuts')}
           className="w-full rounded-lg border border-red-200 bg-white px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-50"
         >
           {t('inspector.sticky.delete')}
@@ -159,13 +179,30 @@ export function StickyInspector({ sticky, blockTitle, onText, onColor, onDelete 
   );
 }
 
-function Field({ label, children }: { label: string; children: React.ReactNode }) {
+interface FieldProps {
+  label: string;
+  /** Optional sub-hint rendered between the label and the input. */
+  hint?: string;
+  children: React.ReactNode;
+}
+
+/**
+ * Field wrapper — mirror of the one in PinInspector. Same DOM, same
+ * `hint` semantics, so both inspectors render identically when read
+ * side-by-side.
+ */
+function Field({ label, hint, children }: FieldProps) {
   return (
-    <div className="mb-4">
-      <div className="mb-1 text-[11px] font-medium uppercase tracking-wider text-gray-500">
+    <div className="mt-4">
+      <div className="text-[11px] font-medium uppercase tracking-wider text-gray-500">
         {label}
       </div>
-      {children}
+      {hint && (
+        <div className="mt-0.5 text-[11px] leading-snug text-gray-500">
+          {hint}
+        </div>
+      )}
+      <div className="mt-1">{children}</div>
     </div>
   );
 }

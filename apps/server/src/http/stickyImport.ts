@@ -3,6 +3,12 @@ import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import * as Y from 'yjs';
 import type { ZoneShape } from '@canvas-collab/shared';
+import {
+  STICKY_MAX_HEIGHT,
+  STICKY_MAX_WIDTH,
+  STICKY_MIN_HEIGHT,
+  STICKY_MIN_WIDTH,
+} from '@canvas-collab/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { getIdentity } from './identity.js';
@@ -37,6 +43,9 @@ const StickyInput = z.object({
   color: z.string().optional(),
   x: z.number().optional(),
   y: z.number().optional(),
+  /** Optional explicit dimensions; bounded so imported stickies stay legible. */
+  width: z.number().min(STICKY_MIN_WIDTH).max(STICKY_MAX_WIDTH).optional(),
+  height: z.number().min(STICKY_MIN_HEIGHT).max(STICKY_MAX_HEIGHT).optional(),
   authorName: z.string().optional(),
 });
 
@@ -107,6 +116,11 @@ export function registerStickyImportRoutes(
             sticky.set('zoneId', sIn.zoneId);
             sticky.set('x', x);
             sticky.set('y', y);
+            // Persist width/height ONLY when supplied — keeps the
+            // shape of stickies seeded without explicit dimensions
+            // identical to today (renderer falls back to defaults).
+            if (sIn.width !== undefined) sticky.set('width', sIn.width);
+            if (sIn.height !== undefined) sticky.set('height', sIn.height);
             sticky.set('text', sIn.text);
             sticky.set('color', sIn.color ?? DEFAULT_COLOR);
             sticky.set('authorName', author);

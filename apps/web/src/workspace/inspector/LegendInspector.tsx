@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type * as Y from 'yjs';
 import type {
@@ -32,6 +32,62 @@ const ICONS: Array<{ id: PinIcon; glyph: string }> = [
   { id: 'flag', glyph: '⚑' },
 ];
 
+export const PIN_ICON_GLYPH: Record<PinIcon, string> = {
+  circle: '●',
+  triangle: '▲',
+  square: '■',
+  star: '★',
+  flag: '⚑',
+};
+
+interface PinClassChipProps {
+  cls: { color: string; icon: PinIcon; label: string };
+  /** Append a downward chevron (▾) so the chip reads as a dropdown trigger. */
+  withChevron?: boolean;
+  /** Stronger highlight when this chip is the currently-selected option. */
+  active?: boolean;
+}
+
+/**
+ * Compact visual chip for one pin class — colour-tinted icon glyph +
+ * label, in one line. Used in the legend palette overlay, in the pin
+ * inspector's class-picker trigger, and inside the pin inspector's
+ * class-picker popover so the trigger and the option rows stay
+ * pixel-identical (no surprise when you click).
+ *
+ * The icon glyph IS the visual identity. We deliberately do NOT render
+ * a separate colour disc next to it — past iterations did that and the
+ * result was two circular shapes ("●" + colour disc) carrying the same
+ * information. One is enough.
+ */
+export function PinClassChip({
+  cls,
+  withChevron = false,
+  active = false,
+}: PinClassChipProps) {
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 ${
+        active ? 'font-medium text-gray-900' : 'text-gray-900'
+      }`}
+    >
+      <span
+        className="text-base leading-none"
+        style={{ color: cls.color }}
+        aria-hidden="true"
+      >
+        {PIN_ICON_GLYPH[cls.icon]}
+      </span>
+      <span className="truncate">{cls.label || '(unnamed)'}</span>
+      {withChevron && (
+        <span aria-hidden="true" className="ml-1 text-[10px] text-gray-400">
+          ▾
+        </span>
+      )}
+    </span>
+  );
+}
+
 /**
  * Two reusable inspector sub-sections: `LegendSection` (pin-class CRUD)
  * and `FactorsSection` (X-axis factor list — chart-canvas plugin only).
@@ -41,9 +97,10 @@ const ICONS: Array<{ id: PinIcon; glyph: string }> = [
  * own ConfirmDialog for delete operations because deletion is destructive
  * and benefits from a per-row prompt.
  *
- * `LegendInspector` (default export) keeps the prior behaviour for the
- * `selection.kind === 'pinClass'` path — the legend palette's ✎ button
- * still selects a class, and this wrapper scrolls/highlights it.
+ * Both accept `hideHeader` so a parent (e.g. `CanvasConfigInspector`'s
+ * card-based layout) that already renders its own card header can
+ * suppress the inline section header to avoid double-titles. Default
+ * (`false`) keeps the standalone behaviour.
  *
  * `CanvasConfigInspector` composes these sections with a Y-axis label
  * editor on top.
@@ -60,6 +117,12 @@ interface LegendSectionProps {
   lang: Lang;
   /** When set, scroll/highlight that class row. Used by the chip ✎ path. */
   scrollToClassId?: string | null;
+  /**
+   * Suppress the inline `legend.header` + hint. Intended for parents that
+   * already render their own section title (e.g. `CanvasConfigInspector`'s
+   * card layout).
+   */
+  hideHeader?: boolean;
 }
 
 export function LegendSection({
@@ -68,6 +131,7 @@ export function LegendSection({
   displayName,
   lang,
   scrollToClassId,
+  hideHeader = false,
 }: LegendSectionProps) {
   const { t } = useTranslation();
   const [pendingDelete, setPendingDelete] = useState<PinClass | null>(null);
@@ -83,14 +147,18 @@ export function LegendSection({
 
   return (
     <section>
-      <div className="text-[11px] font-medium uppercase tracking-wider text-gray-500">
-        {t('legend.header')}
-      </div>
-      <p className="mt-1 text-[11px] leading-snug text-gray-500">
-        {t('legend.headerHint')}
-      </p>
+      {!hideHeader && (
+        <>
+          <div className="text-[11px] font-medium uppercase tracking-wider text-gray-500">
+            {t('legend.header')}
+          </div>
+          <p className="mt-1 text-[11px] leading-snug text-gray-500">
+            {t('legend.headerHint')}
+          </p>
+        </>
+      )}
 
-      <ul className="mt-3 space-y-1.5">
+      <ul className={`${hideHeader ? '' : 'mt-3 '}space-y-1.5`}>
         {classes.map((c) => (
           <ClassRow
             key={c.id}
@@ -146,9 +214,19 @@ interface FactorsSectionProps {
   doc: Y.Doc;
   factors: XAxisItem[];
   lang: Lang;
+  /**
+   * Suppress the inline `chart.factorsHeader`. Same rationale as
+   * `LegendSection`'s `hideHeader`.
+   */
+  hideHeader?: boolean;
 }
 
-export function FactorsSection({ doc, factors, lang }: FactorsSectionProps) {
+export function FactorsSection({
+  doc,
+  factors,
+  lang,
+  hideHeader = false,
+}: FactorsSectionProps) {
   const { t } = useTranslation();
   const [pendingDelete, setPendingDelete] = useState<XAxisItem | null>(null);
 
@@ -164,10 +242,12 @@ export function FactorsSection({ doc, factors, lang }: FactorsSectionProps) {
 
   return (
     <section>
-      <div className="text-[11px] font-medium uppercase tracking-wider text-gray-500">
-        {t('chart.factorsHeader')}
-      </div>
-      <ul className="mt-2 space-y-1">
+      {!hideHeader && (
+        <div className="text-[11px] font-medium uppercase tracking-wider text-gray-500">
+          {t('chart.factorsHeader')}
+        </div>
+      )}
+      <ul className={`${hideHeader ? '' : 'mt-2 '}space-y-1`}>
         {factors.map((f, i) => (
           <FactorRow
             key={f.id}
@@ -220,56 +300,6 @@ export function FactorsSection({ doc, factors, lang }: FactorsSectionProps) {
 }
 
 // ──────────────────────────────────────────────────────────────────────
-// LegendInspector — the wrapper used by selection.kind === 'pinClass'
-// ──────────────────────────────────────────────────────────────────────
-
-interface LegendInspectorProps {
-  doc: Y.Doc;
-  classes: PinClass[];
-  /** Provided when the canvas's plugin is `chart-canvas`; otherwise undefined → factor section hidden. */
-  factors?: XAxisItem[];
-  /** Same — manifest yAxis config, undefined for non-chart canvases. */
-  yAxis?: unknown;
-  displayName: string;
-  lang: Lang;
-  scrollToClassId?: string | null;
-}
-
-/**
- * Right-panel content for `selection.kind === 'pinClass'`. Composes the
- * legend section (and, on chart-canvas, the factor section) into a
- * single scrollable column. The Y-axis labels live in
- * `CanvasConfigInspector` instead — `pinClass` is class-level focus.
- */
-export function LegendInspector({
-  doc,
-  classes,
-  factors,
-  yAxis,
-  displayName,
-  lang,
-  scrollToClassId,
-}: LegendInspectorProps) {
-  void yAxis;
-  return (
-    <div className="flex h-full flex-col">
-      <div className="flex-1 space-y-7 overflow-y-auto p-5">
-        <LegendSection
-          doc={doc}
-          classes={classes}
-          displayName={displayName}
-          lang={lang}
-          scrollToClassId={scrollToClassId}
-        />
-        {factors && (
-          <FactorsSection doc={doc} factors={factors} lang={lang} />
-        )}
-      </div>
-    </div>
-  );
-}
-
-// ──────────────────────────────────────────────────────────────────────
 // Internal row components
 // ──────────────────────────────────────────────────────────────────────
 
@@ -307,8 +337,12 @@ function ClassRow({
         highlight ? 'border-gray-900 bg-gray-50' : 'border-gray-200 bg-white'
       }`}
     >
-      <ColorSwatch color={cls.color} onPick={onColor} />
-      <IconPicker icon={cls.icon} color={cls.color} onPick={onIcon} />
+      <StylePicker
+        color={cls.color}
+        icon={cls.icon}
+        onColor={onColor}
+        onIcon={onIcon}
+      />
       <input
         value={draft}
         onChange={(e) => setDraft(e.target.value)}
@@ -349,82 +383,97 @@ function ClassRow({
   );
 }
 
-function ColorSwatch({ color, onPick }: { color: string; onPick: (c: string) => void }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <span className="relative inline-flex">
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="h-5 w-5 rounded-full border border-gray-300 hover:ring-2 hover:ring-gray-200"
-        style={{ backgroundColor: color }}
-        aria-label="Color"
-      />
-      {open && (
-        <div className="absolute left-0 top-7 z-30 flex gap-1.5 rounded-lg border border-gray-200 bg-white p-2 shadow-md">
-          {CHART_PALETTE.map((c) => (
-            <button
-              key={c}
-              type="button"
-              onClick={() => {
-                onPick(c);
-                setOpen(false);
-              }}
-              className={`h-5 w-5 rounded-full border ${
-                c === color ? 'border-gray-900' : 'border-gray-200'
-              }`}
-              style={{ backgroundColor: c }}
-              aria-label={c}
-            />
-          ))}
-        </div>
-      )}
-    </span>
-  );
-}
-
-function IconPicker({
-  icon,
+/**
+ * Combined color + icon picker. Renders a single button showing the
+ * class's icon glyph in its color; on click, opens ONE popover with
+ * both a color row and an icon row so the user can dial in both halves
+ * of a class's visual identity without juggling two popovers.
+ *
+ * The popover stays open across multiple picks (the user often wants
+ * to choose color AND icon in one go), and closes only on outside
+ * click or Escape.
+ */
+function StylePicker({
   color,
-  onPick,
+  icon,
+  onColor,
+  onIcon,
 }: {
-  icon: PinIcon;
   color: string;
-  onPick: (icon: PinIcon) => void;
+  icon: PinIcon;
+  onColor: (c: string) => void;
+  onIcon: (icon: PinIcon) => void;
 }) {
   const [open, setOpen] = useState(false);
+  const wrapRef = useRef<HTMLSpanElement | null>(null);
+
+  // Outside click + Escape close. Effect runs only while the popover
+  // is open so we don't pay the listener cost otherwise.
+  useEffect(() => {
+    if (!open) return;
+    function onDown(e: MouseEvent) {
+      if (!wrapRef.current) return;
+      if (!wrapRef.current.contains(e.target as Node)) setOpen(false);
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setOpen(false);
+    }
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
   return (
-    <span className="relative inline-flex">
+    <span ref={wrapRef} className="relative inline-flex">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex h-5 w-5 items-center justify-center rounded border border-gray-300 hover:ring-2 hover:ring-gray-200"
-        aria-label="Icon"
+        className="flex h-7 w-7 items-center justify-center rounded border border-gray-300 hover:ring-2 hover:ring-gray-200"
+        aria-label="Style"
         style={{ color }}
       >
-        <span className="text-sm leading-none">
-          {ICONS.find((i) => i.id === icon)?.glyph ?? '●'}
-        </span>
+        <span className="text-base leading-none">{PIN_ICON_GLYPH[icon]}</span>
       </button>
       {open && (
-        <div className="absolute left-0 top-7 z-30 flex gap-1 rounded-lg border border-gray-200 bg-white p-2 shadow-md">
-          {ICONS.map((opt) => (
-            <button
-              key={opt.id}
-              type="button"
-              onClick={() => {
-                onPick(opt.id);
-                setOpen(false);
-              }}
-              className={`flex h-6 w-6 items-center justify-center rounded border ${
-                opt.id === icon ? 'border-gray-900' : 'border-gray-200'
-              }`}
-              style={{ color }}
-              aria-label={opt.id}
-            >
-              <span className="text-sm">{opt.glyph}</span>
-            </button>
-          ))}
+        <div className="absolute left-0 top-9 z-30 rounded-lg border border-gray-200 bg-white p-2 shadow-md">
+          {/* Color row */}
+          <div className="flex gap-1.5">
+            {CHART_PALETTE.map((c) => (
+              <button
+                key={c}
+                type="button"
+                onClick={() => onColor(c)}
+                className={`h-5 w-5 rounded-full border ${
+                  c === color ? 'border-gray-900' : 'border-gray-200'
+                }`}
+                style={{ backgroundColor: c }}
+                aria-label={c}
+              />
+            ))}
+          </div>
+          {/* Divider */}
+          <div className="my-1.5 h-px w-full bg-gray-100" />
+          {/* Icon row — always rendered in the currently-selected color
+              so the user previews the combined look. */}
+          <div className="flex gap-1">
+            {ICONS.map((opt) => (
+              <button
+                key={opt.id}
+                type="button"
+                onClick={() => onIcon(opt.id)}
+                className={`flex h-6 w-6 items-center justify-center rounded border ${
+                  opt.id === icon ? 'border-gray-900' : 'border-gray-200'
+                }`}
+                style={{ color }}
+                aria-label={opt.id}
+              >
+                <span className="text-sm leading-none">{opt.glyph}</span>
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </span>

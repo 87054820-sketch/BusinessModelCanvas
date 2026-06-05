@@ -16,6 +16,7 @@ import { CanvasRenderer } from '../canvas/CanvasRenderer';
 import { StickyLayer } from '../canvas/StickyLayer';
 import { PinLayer } from '../canvas/PinLayer';
 import { LegendPalette } from '../canvas/LegendPalette';
+import { StickyLegendPalette } from '../canvas/StickyLegendPalette';
 import { clampPointToCanvas } from '../canvas/bounds';
 import { useYDoc } from '../collab/useYDoc';
 import { addSticky, deleteSticky, useStickies } from '../collab/stickies';
@@ -26,11 +27,12 @@ import {
   chartRect,
   snapXToFactor,
 } from '../plugins/chartCanvas/geometry';
-import { zoneCentroid } from '../canvas/hitTest';
-import { useSelection } from '../state/selection';
+import { zoneCentroid, hitTestZone } from '../canvas/hitTest';
+import { useSelection, type Selection } from '../state/selection';
 import { useStickyClipboard } from '../state/stickyClipboard';
 import { usePinClipboard } from '../state/pinClipboard';
 import { useActiveClass } from '../state/activeClass';
+import { useActiveStickyColor } from '../state/activeStickyColor';
 import { effectiveObjectTypes } from '@canvas-collab/shared';
 import { ProjectSidebar } from '../workspace/ProjectSidebar';
 import { CanvasToolbar } from '../workspace/CanvasToolbar';
@@ -51,6 +53,42 @@ function isEditableTarget(el: Element | null): boolean {
   if (tag === 'TEXTAREA' || tag === 'INPUT' || tag === 'SELECT') return true;
   if ((el as HTMLElement).isContentEditable) return true;
   return false;
+}
+
+/**
+ * Pick the i18n key for the right-aside header title slot, given the
+ * current selection and the canvas-level tab. Centralised here (instead
+ * of inside Inspector.tsx) because the title renders in the aside
+ * header, alongside the ⓘ ⚙ icons — outside the Inspector body.
+ *
+ * pinClass / stickyColor selections both correspond to "the user is
+ * editing canvas-level config, focused on a specific row" — they share
+ * the canvasConfig title because the body IS the config view scrolled
+ * to that row.
+ */
+function inspectorTitleKey(
+  selection: Selection,
+  tab: 'intro' | 'config',
+): string {
+  switch (selection.kind) {
+    case 'project':
+      return 'inspector.title.project';
+    case 'block':
+      return 'inspector.title.block';
+    case 'sticky':
+      return 'inspector.title.sticky';
+    case 'pin':
+      return 'inspector.title.pin';
+    case 'pinClass':
+    case 'stickyColor':
+      return 'inspector.title.canvasConfig';
+    case 'canvas':
+    case 'none':
+    default:
+      return tab === 'config'
+        ? 'inspector.title.canvasConfig'
+        : 'inspector.title.canvasIntro';
+  }
 }
 
 /**
@@ -76,7 +114,6 @@ export function ProjectWorkspacePage() {
     i18n: CanvasI18n;
     knowledge: CanvasKnowledge;
   } | null>(null);
-  const [showZones, setShowZones] = useState(false);
   /** All canvas-def summaries — used by the Inspector to label related-canvas chips. */
   const [defSummaries, setDefSummaries] = useState<CanvasDefSummary[]>([]);
 
@@ -210,14 +247,21 @@ export function ProjectWorkspacePage() {
   const factors = useXAxisItems(doc ?? null);
   const activeClassId = useActiveClass((s) => s.activeClassId);
   const clearActiveClass = useActiveClass((s) => s.clearActive);
+  const activeStickyColor = useActiveStickyColor((s) => s.activeStickyColor);
+  const clearActiveStickyColor = useActiveStickyColor((s) => s.clearActive);
   const selectPin = useSelection((s) => s.selectPin);
   const selectPinClass = useSelection((s) => s.selectPinClass);
 
-  // Reset active class on canvas switch — stale draw mode from a
-  // different canvas would be confusing.
+  // Reset both paint modes on canvas switch — stale draw modes from a
+  // different canvas would be confusing. Also drop the right inspector
+  // back to the Intro tab so a stale "edit pin class" / "edit factor"
+  // view doesn't carry over to the new canvas (the new canvas's
+  // factors / classes / Y-axis are completely separate state).
   useEffect(() => {
     clearActiveClass();
-  }, [activeCanvas?.id, clearActiveClass]);
+    clearActiveStickyColor();
+    useUiPrefs.getState().setRightInspectorTab('intro');
+  }, [activeCanvas?.id, clearActiveClass, clearActiveStickyColor]);
 
   // Workspace-level keyboard shortcuts.
   //
@@ -249,9 +293,12 @@ export function ProjectWorkspacePage() {
       // Esc is intentionally NOT focus-gated — pressing it inside a
       // textarea blurs the editor (handled by Sticky.tsx for the inline
       // editor, native behavior for the inspector). At the workspace
-      // level we additionally clear selection so the inspector closes.
+      // level we additionally clear selection AND any active paint
+      // tool so the canvas drops back to navigate mode in one tap.
       if (e.key === 'Escape') {
         clearSelection();
+        useActiveClass.getState().clearActive();
+        useActiveStickyColor.getState().clearActive();
         return;
       }
 
@@ -303,62 +350,77 @@ export function ProjectWorkspacePage() {
       }
 
       if (cmd && (e.key === 'v' || e.key === 'V')) {
+        // Sticky paste runs only when there's a sticky in the clipboard
+        // AND the canvas has zones AND the user isn't actively focused
+        // on a pin. If any of those don't hold we fall through to the
+        // pin paste handler below — without that, a user who has only
+        // ever copied a pin would see ⌘+V do nothing because this
+        // branch used to `return` on a null sticky entry.
         const entry = useStickyClipboard.getState().entry;
         const def = bundle?.def;
-        if (!entry || !def || def.zones.length === 0) return;
+        const stickyApplies =
+          entry &&
+          def &&
+          def.zones.length > 0 &&
+          // When a pin is the active selection, the user almost
+          // certainly wants pin behaviour — let pin paste take it.
+          sel.kind !== 'pin';
+        if (stickyApplies) {
+          let zoneId: string;
+          let x: number;
+          let y: number;
 
-        let zoneId: string;
-        let x: number;
-        let y: number;
-
-        if (sel.kind === 'block') {
-          // Paste into the selected zone — match BlockInspector "+ Add
-          // sticky" geometry so keyboard and mouse paths feel identical.
-          const zone = def.zones.find((z) => z.id === sel.zoneId);
-          if (!zone) return;
-          const c = zoneCentroid(zone.shape);
-          zoneId = zone.id;
-          x = c.x + (Math.random() - 0.5) * 60;
-          y = c.y + (Math.random() - 0.5) * 40;
-        } else if (sel.kind === 'sticky') {
-          // Paste near the currently-selected sticky in its zone — keeps
-          // the new clone visually anchored to the user's last action.
-          const anchor = stickies.find((s) => s.id === sel.stickyId);
-          if (!anchor) return;
-          zoneId = anchor.zoneId;
-          x = anchor.x + 24;
-          y = anchor.y + 24;
-        } else {
-          // Nothing relevant selected (canvas / project / none).
-          // Try the source zone of the buffered sticky; fall back to the
-          // active canvas's first zone so cross-canvas paste still works.
-          const zone =
-            def.zones.find((z) => z.id === entry.sourceZoneId) ?? def.zones[0]!;
-          const sameZone = zone.id === entry.sourceZoneId;
-          zoneId = zone.id;
-          if (sameZone) {
-            // Same zone we copied from → small offset from the source.
-            x = entry.sourceX + 24;
-            y = entry.sourceY + 24;
-          } else {
-            // Different canvas — drop at zone centroid + jitter.
+          if (sel.kind === 'block') {
+            // Paste into the selected zone — match BlockInspector "+ Add
+            // sticky" geometry so keyboard and mouse paths feel identical.
+            const zone = def.zones.find((z) => z.id === sel.zoneId);
+            if (!zone) return;
             const c = zoneCentroid(zone.shape);
+            zoneId = zone.id;
             x = c.x + (Math.random() - 0.5) * 60;
             y = c.y + (Math.random() - 0.5) * 40;
+          } else if (sel.kind === 'sticky') {
+            // Paste near the currently-selected sticky in its zone — keeps
+            // the new clone visually anchored to the user's last action.
+            const anchor = stickies.find((s) => s.id === sel.stickyId);
+            if (!anchor) return;
+            zoneId = anchor.zoneId;
+            x = anchor.x + 24;
+            y = anchor.y + 24;
+          } else {
+            // Nothing relevant selected (canvas / project / none).
+            // Try the source zone of the buffered sticky; fall back to the
+            // active canvas's first zone so cross-canvas paste still works.
+            const zone =
+              def.zones.find((z) => z.id === entry.sourceZoneId) ?? def.zones[0]!;
+            const sameZone = zone.id === entry.sourceZoneId;
+            zoneId = zone.id;
+            if (sameZone) {
+              // Same zone we copied from → small offset from the source.
+              x = entry.sourceX + 24;
+              y = entry.sourceY + 24;
+            } else {
+              // Different canvas — drop at zone centroid + jitter.
+              const c = zoneCentroid(zone.shape);
+              x = c.x + (Math.random() - 0.5) * 60;
+              y = c.y + (Math.random() - 0.5) * 40;
+            }
           }
-        }
 
-        e.preventDefault();
-        const newId = addSticky(doc!, {
-          zoneId,
-          x,
-          y,
-          text: entry.text,
-          color: entry.color,
-          authorName: identity!.displayName,
-        });
-        useSelection.getState().selectSticky(newId);
-        return;
+          e.preventDefault();
+          const newId = addSticky(doc!, {
+            zoneId,
+            x,
+            y,
+            text: entry.text,
+            color: entry.color,
+            authorName: identity!.displayName,
+          });
+          useSelection.getState().selectSticky(newId);
+          return;
+        }
+        // Sticky branch didn't apply — fall through to the pin paste
+        // handler below. No `return` here.
       }
 
       // ── Pin paths — parallel to sticky shortcuts above ──────────────
@@ -493,7 +555,6 @@ export function ProjectWorkspacePage() {
   async function handleProjectPatch(patch: {
     name?: string;
     description?: string;
-    colorLegend?: Record<string, ColorLegendEntry>;
   }) {
     if (!identity || !project) return;
     const updated = await projectsApi.update(project.id, patch, identity.displayName);
@@ -504,19 +565,6 @@ export function ProjectWorkspacePage() {
     if (!identity || !project) return;
     await projectsApi.delete(project.id, identity.displayName);
     navigate('/');
-  }
-
-  function handleAddStickyDefault() {
-    if (!doc || !bundle) return;
-    const z = bundle.def.zones[0];
-    if (!z) return;
-    const c = zoneCentroid(z.shape);
-    addSticky(doc, {
-      zoneId: z.id,
-      x: c.x,
-      y: c.y,
-      authorName: identity!.displayName,
-    });
   }
 
   return (
@@ -537,33 +585,6 @@ export function ProjectWorkspacePage() {
             <CanvasToolbar
               canvas={activeCanvas}
               projectId={project.id}
-              showZones={showZones}
-              onShowZonesChange={setShowZones}
-              onAddSticky={handleAddStickyDefault}
-              objectTypes={bundle?.def ? effectiveObjectTypes(bundle.def) : undefined}
-              onAddPin={
-                bundle?.def && doc
-                  ? () => {
-                      // No class → seed one and activate it. Has class
-                      // but none active → activate first. Has active →
-                      // toggle off.
-                      const state = useActiveClass.getState();
-                      if (pinClasses.length === 0) {
-                        const newId = addPinClass(doc, {
-                          label: lang === 'zh' ? '类别 1' : 'Class 1',
-                          authorName: identity!.displayName,
-                        });
-                        state.pickClass(newId);
-                        return;
-                      }
-                      if (!state.activeClassId) {
-                        state.pickClass(pinClasses[0]!.id);
-                      } else {
-                        state.clearActive();
-                      }
-                    }
-                  : undefined
-              }
               displayName={identity.displayName}
               onRename={async (title) => {
                 const updated = await api.updateCanvas(
@@ -589,20 +610,49 @@ export function ProjectWorkspacePage() {
                           lang={lang}
                         />
                       )}
+                    {/* Sticky color legend — every canvas allows
+                        stickies, so this overlay is unconditional. */}
+                    <StickyLegendPalette doc={doc} lang={lang} />
+                    {/* Sticky color legend — every canvas allows
+                        stickies, so this overlay is unconditional. */}
+                    <StickyLegendPalette doc={doc} lang={lang} />
                     <CanvasRenderer
                       defId={activeCanvas.defId}
                       lang={lang}
-                      showZones={showZones}
                       doc={doc}
                       displayName={identity.displayName}
                       onCanvasClick={
+                        // Two paint modes share this slot. Pin paint
+                        // wins if both somehow active (the active*
+                        // stores enforce mutual exclusion, but be
+                        // defensive). Both modes auto-exit when the
+                        // click lands outside any zone — clicking on
+                        // the canvas chrome (Y-axis labels, factor
+                        // strip, gutters between blocks) is the user's
+                        // way to say "I'm done painting" without
+                        // having to hit Esc or the exit button.
                         activeClassId && doc
                           ? (p) => {
                               if (!bundle?.def) return;
-                              // 1. Clamp to drawable area first so a click
-                              //    on the X-axis label strip / Y-axis
-                              //    numbers never produces a pin floating
-                              //    outside the chart.
+                              // Auto-exit when out of zone — better
+                              // than clamping a pin to the chart edge
+                              // where the user clearly didn't intend
+                              // it. clearActiveClass also drops the
+                              // chip's visual highlight.
+                              const zone = hitTestZone(
+                                bundle.def.zones,
+                                p.x,
+                                p.y,
+                              );
+                              if (!zone) {
+                                clearActiveClass();
+                                return;
+                              }
+                              // 1. Clamp to drawable area first so a
+                              //    chart-canvas click still respects
+                              //    the inner rect (Y-axis is fine but
+                              //    a click overshoot through the chart
+                              //    rect's edge gets pulled in).
                               const c = clampPointToCanvas(p, bundle.def);
                               // 2. X-snap on chart-canvas only.
                               let { x } = c;
@@ -618,6 +668,35 @@ export function ProjectWorkspacePage() {
                               });
                               selectPin(newId);
                               // stay in draw mode for streak placement
+                            }
+                          : activeStickyColor && doc
+                          ? (p) => {
+                              if (!bundle?.def) return;
+                              // Sticky must land in a real zone — the
+                              // BlockInspector / Inspector dispatches by
+                              // zoneId. Out-of-zone click → exit paint
+                              // (was a silent no-op; now a deliberate
+                              // exit so the chip highlight clears in
+                              // sympathy with what the user expects).
+                              const zone = hitTestZone(
+                                bundle.def.zones,
+                                p.x,
+                                p.y,
+                              );
+                              if (!zone) {
+                                clearActiveStickyColor();
+                                return;
+                              }
+                              const newId = addSticky(doc, {
+                                zoneId: zone.id,
+                                x: p.x,
+                                y: p.y,
+                                color: activeStickyColor,
+                                authorName: identity!.displayName,
+                              });
+                              useSelection.getState().selectSticky(newId);
+                              // stay in paint mode for streak placement —
+                              // user can keep clicking to drop more.
                             }
                           : undefined
                       }
@@ -728,6 +807,14 @@ export function ProjectWorkspacePage() {
                   }
                   onClick={() => pickInspectorTab('config')}
                 />
+              </div>
+              {/* Title slot — centred between the icon strip and the
+                  collapse caret, announces the current inspector mode
+                  ("画布说明" / "图钉编辑" / etc.). Uses min-w-0 +
+                  truncate so a long localised title doesn't push the
+                  caret off-screen on narrow viewports. */}
+              <div className="min-w-0 flex-1 truncate px-3 text-center text-sm font-semibold text-gray-900">
+                {t(inspectorTitleKey(selection, rightTab))}
               </div>
               <button
                 type="button"

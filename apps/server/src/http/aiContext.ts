@@ -14,6 +14,7 @@ import {
   getPinsRoot,
   getXAxisItemsRoot,
   readChartConfig,
+  readColorLegend,
   readPin,
   readPinClass,
   readXAxisItem,
@@ -76,6 +77,8 @@ export function registerAiContextRoutes(
     let valueCurves: AiContext['valueCurves'] | undefined;
     /** Per-canvas Y-axis label overrides (when chart-canvas plugin is active). */
     let chartOverrides: ChartConfigOverrides = {};
+    /** Per-canvas sticky-color legend (hex → label/description). */
+    let colorLegendOut: AiContext['colorLegend'] | undefined;
     const state = await storage.loadYDocState(req.params.id);
     if (state && state.byteLength > 0) {
       const doc = new Y.Doc();
@@ -85,6 +88,12 @@ export function registerAiContextRoutes(
         // both the canvas-meta surface (def name still resolves from
         // i18n) and any chart-related response fields.
         chartOverrides = readChartConfig(doc);
+
+        // Per-canvas sticky-color legend — empty object becomes
+        // `undefined` so the response stays terse when the user
+        // hasn't assigned colour meanings yet.
+        const legend = readColorLegend(doc);
+        if (Object.keys(legend).length > 0) colorLegendOut = legend;
 
         const root = doc.getMap<Y.Map<unknown>>(STICKIES_KEY);
         root.forEach((yMap) => {
@@ -257,6 +266,7 @@ export function registerAiContextRoutes(
       ...(pinClassesOut ? { pinClasses: pinClassesOut } : {}),
       ...(pinsOut ? { pins: pinsOut } : {}),
       ...(valueCurves ? { valueCurves } : {}),
+      ...(colorLegendOut ? { colorLegend: colorLegendOut } : {}),
       generatedAt: new Date().toISOString(),
     };
 
@@ -280,6 +290,12 @@ function readStickyForAi(yMap: Y.Map<unknown>): AiContextSticky | null {
   const color = (yMap.get('color') as string | undefined) ?? '';
   const authorName = (yMap.get('authorName') as string | undefined) ?? '';
   const createdAt = (yMap.get('createdAt') as string | undefined) ?? '';
+  // Width/height surface to the AI only when the user explicitly resized
+  // the sticky — same on/off semantics as the web client.
+  const widthRaw = yMap.get('width');
+  const heightRaw = yMap.get('height');
+  const width = typeof widthRaw === 'number' ? widthRaw : undefined;
+  const height = typeof heightRaw === 'number' ? heightRaw : undefined;
 
   const rawHistory = yMap.get('zoneHistory');
   let zoneHistory: ZoneHistoryEntry[] | undefined;
@@ -308,6 +324,8 @@ function readStickyForAi(yMap: Y.Map<unknown>): AiContextSticky | null {
     createdAt,
     x,
     y,
+    ...(width !== undefined ? { width } : {}),
+    ...(height !== undefined ? { height } : {}),
     zoneHistory,
   };
 }

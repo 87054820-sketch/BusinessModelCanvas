@@ -79,6 +79,8 @@ canvas-collab/
 - ✓ Home page redesign — canvas templates gallery + richer project cards + bulk-sticky import endpoint
 - ✓ Jobs To Be Done canvas — 5-block JTBD framework (situation → motivation → outcome → emotional → social)
 - ✓ Business Model Environment canvas + cross-canvas relationship chips (`related[]` in each manifest, "Pairs with" strip in inspector)
+- ✓ Unified Canvas Config inspector — strategy / pin / sticky sections visually grouped; pin & sticky chip rails share the same Add flow
+- ✓ Sticky resize handle + auto-add sticky legend + Pin/Sticky inspector visual parity (one-circle class picker, "shown on canvas" hints)
 - ☐ Real-time multi-cursor + presence (single tab only today)
 - ☐ Autosave snapshots, Docker Compose, polish
 

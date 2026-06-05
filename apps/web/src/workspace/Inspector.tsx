@@ -1,13 +1,12 @@
 import type * as Y from 'yjs';
 import { useTranslation } from 'react-i18next';
-import type { CanvasDef, CanvasI18n, CanvasMeta, ColorLegendEntry, Lang, Project, StickyNote } from '@canvas-collab/shared';
+import type { CanvasDef, CanvasI18n, CanvasMeta, Lang, Project, StickyNote } from '@canvas-collab/shared';
 import { effectiveObjectTypes } from '@canvas-collab/shared';
 import { ProjectInspector } from './inspector/ProjectInspector';
 import { BlockInspector } from './inspector/BlockInspector';
 import { StickyInspector } from './inspector/StickyInspector';
 import { CanvasKnowledgeInspector } from './inspector/CanvasKnowledgeInspector';
 import { CanvasConfigInspector } from './inspector/CanvasConfigInspector';
-import { LegendInspector } from './inspector/LegendInspector';
 import { PinInspector } from './inspector/PinInspector';
 import { useSelection } from '../state/selection';
 import { useUiPrefs } from '../state/uiPrefs';
@@ -16,6 +15,7 @@ import { usePinClasses } from '../collab/pinClasses';
 import { usePins } from '../collab/pins';
 import { useXAxisItems } from '../collab/xAxisItems';
 import { useChartConfig } from '../collab/chartConfig';
+import { useColorLegend } from '../collab/colorLegend';
 import { zoneCentroid } from '../canvas/hitTest';
 import type { CanvasKnowledge } from '../api/client';
 
@@ -40,7 +40,6 @@ interface Props {
   onProjectPatch: (patch: {
     name?: string;
     description?: string;
-    colorLegend?: Record<string, ColorLegendEntry>;
   }) => void;
   onProjectDelete: () => void;
 }
@@ -84,6 +83,7 @@ export function Inspector({
   const pins = usePins(doc ?? null);
   const factors = useXAxisItems(doc ?? null);
   const chartOverrides = useChartConfig(doc ?? null);
+  const colorLegend = useColorLegend(doc ?? null);
   const tab = useUiPrefs((s) => s.rightInspectorTab);
   const liveLang = useLiveLang();
 
@@ -122,7 +122,10 @@ export function Inspector({
    * ready, so callers can chain `?? renderProject()` to keep a sensible
    * fallback while a fresh canvas is hydrating.
    */
-  const renderCanvasConfig = (scrollToClassId?: string | null) => {
+  const renderCanvasConfig = (
+    scrollToClassId?: string | null,
+    scrollToStickyColor?: string | null,
+  ) => {
     if (!doc || !def) return null;
     return (
       <CanvasConfigInspector
@@ -132,9 +135,11 @@ export function Inspector({
         factors={def.chart ? factors : undefined}
         yAxis={def.chart?.yAxis}
         overrides={chartOverrides}
+        colorLegend={colorLegend}
         displayName={displayName}
         lang={liveLang}
         scrollToClassId={scrollToClassId ?? null}
+        scrollToStickyColor={scrollToStickyColor ?? null}
       />
     );
   };
@@ -191,17 +196,17 @@ export function Inspector({
     if (!def) return renderProject();
     const ot = effectiveObjectTypes(def);
     if (!ot.includes('pinClass')) return renderCanvasKnowledge() ?? renderProject();
-    return (
-      <LegendInspector
-        doc={doc}
-        classes={pinClasses}
-        factors={def.chart ? factors : undefined}
-        yAxis={def.chart?.yAxis}
-        displayName={displayName}
-        lang={liveLang}
-        scrollToClassId={selection.classId}
-      />
-    );
+    // Route pinClass selection through the unified Config view so the
+    // user sees the Y-axis editor + factor list + pin classes + sticky
+    // legend in one column. Scrolling/highlighting is driven by
+    // `scrollToClassId`.
+    return renderCanvasConfig(selection.classId, null) ?? renderProject();
+  }
+
+  if (selection.kind === 'stickyColor') {
+    // Same as pinClass: land in the Config view, scroll to the matching
+    // sticky-legend row.
+    return renderCanvasConfig(null, selection.hex) ?? renderProject();
   }
 
   if (selection.kind === 'pin') {

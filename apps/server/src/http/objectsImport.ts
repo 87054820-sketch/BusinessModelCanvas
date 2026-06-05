@@ -15,9 +15,11 @@ import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { getIdentity } from './identity.js';
 import {
+  getColorLegendRoot,
   getPinClassesRoot,
   getPinsRoot,
   getXAxisItemsRoot,
+  isStickyPaletteHex,
   makePinClassYMap,
   makePinYMap,
   makeXAxisItemYMap,
@@ -73,11 +75,23 @@ const XAxisItemInput = z.object({
   label: z.object({ en: z.string(), zh: z.string() }),
 });
 
+const ColorLegendEntryInput = z.object({
+  label: z.string().min(1).max(60),
+  description: z.string().max(240).optional(),
+});
+
 const BulkInput = z.object({
   stickies: z.array(StickyInput).max(500).optional(),
   pinClasses: z.array(PinClassInput).max(50).optional(),
   pins: z.array(PinInput).max(500).optional(),
   xAxisItems: z.array(XAxisItemInput).max(50).optional(),
+  /**
+   * Replace-style colour-legend payload. Keys MUST be hex strings drawn
+   * from `STICKY_PALETTE`; off-palette keys are rejected outright (no
+   * silent drop) so an AI agent gets a clear error rather than a
+   * mysteriously-empty legend.
+   */
+  colorLegend: z.record(z.string(), ColorLegendEntryInput).optional(),
 });
 
 const STICKIES_KEY = 'stickies';
@@ -113,8 +127,13 @@ export function registerObjectsImportRoutes(
 
       // Verify each provided key is allowed by the canvas's effective
       // objectTypes (sticky/pin/pinClass by default; xAxisItem opt-in).
+      // `colorLegend` is canvas-level metadata, not an object type — it
+      // applies to every canvas (no allow-list check).
       const allowed = new Set<ObjectType>(effectiveObjectTypes(bundle.def));
-      const provided2types: Record<keyof ObjectsBulkInput, ObjectType> = {
+      const provided2types: Record<
+        Exclude<keyof ObjectsBulkInput, 'colorLegend'>,
+        ObjectType
+      > = {
         stickies: 'sticky',
         pinClasses: 'pinClass',
         pins: 'pin',
@@ -122,6 +141,7 @@ export function registerObjectsImportRoutes(
       };
       for (const key of Object.keys(input) as Array<keyof ObjectsBulkInput>) {
         if (input[key] === undefined) continue;
+        if (key === 'colorLegend') continue; // metadata, not an ObjectType
         if (!allowed.has(provided2types[key])) {
           return reply.code(400).send({
             error: `Object type '${provided2types[key]}' not allowed on canvas '${meta.defId}'`,
@@ -266,6 +286,37 @@ export function registerObjectsImportRoutes(
           });
         }
 
+        // ── colorLegend (replace whole map) ──
+        // Keys MUST be members of STICKY_PALETTE — off-palette hex would
+        // sit in the doc orphaned (the chip palette only renders the
+        // known six). Reject up front so the AI gets a clear error.
+        if (input.colorLegend) {
+          const offPalette = Object.keys(input.colorLegend).filter(
+            (hex) => !isStickyPaletteHex(hex),
+          );
+          if (offPalette.length > 0) {
+            return reply.code(400).send({
+              error: 'colorLegend keys must be members of STICKY_PALETTE',
+              offPalette,
+            });
+          }
+          const root = getColorLegendRoot(doc);
+          doc.transact(() => {
+            // Replace-style: clear everything first, then write what was
+            // provided. Keeps semantics aligned with the other roots in
+            // this endpoint.
+            root.forEach((_v, k) => root.delete(k));
+            for (const [hex, entry] of Object.entries(input.colorLegend!)) {
+              const label = entry.label.trim();
+              if (label.length === 0) continue;
+              root.set(`${hex}.label`, label);
+              if (entry.description && entry.description.trim().length > 0) {
+                root.set(`${hex}.description`, entry.description.trim());
+              }
+            }
+          });
+        }
+
         const state = Y.encodeStateAsUpdate(doc);
         await storage.saveYDocState(req.params.id, state);
       } finally {
@@ -283,6 +334,9 @@ export function registerObjectsImportRoutes(
           pinClasses: input.pinClasses?.length ?? 0,
           pins: input.pins?.length ?? 0,
           xAxisItems: input.xAxisItems?.length ?? 0,
+          colorLegend: input.colorLegend
+            ? Object.keys(input.colorLegend).length
+            : 0,
         },
       });
     },

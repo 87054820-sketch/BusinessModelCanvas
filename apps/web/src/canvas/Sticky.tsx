@@ -1,15 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
 import type { StickyNote } from '@canvas-collab/shared';
+import {
+  DEFAULT_STICKY_HEIGHT,
+  DEFAULT_STICKY_WIDTH,
+  STICKY_MAX_HEIGHT,
+  STICKY_MAX_WIDTH,
+  STICKY_MIN_HEIGHT,
+  STICKY_MIN_WIDTH,
+} from '@canvas-collab/shared';
 
-const W = 140;
-const H = 100;
 const CLICK_THRESHOLD_PX = 4;
+/** Side length of the bottom-right resize handle in SVG-coord units. */
+const HANDLE_SIZE = 10;
 
 interface Props {
   sticky: StickyNote;
   selected: boolean;
   onMove: (x: number, y: number) => void;
   onMoveEnd: (x: number, y: number) => void;
+  onResize: (width: number, height: number) => void;
+  onResizeEnd: (width: number, height: number) => void;
   onText: (text: string) => void;
   onSelect: () => void;
   /** Convert a client pointer event to SVG-space coords. */
@@ -18,10 +28,17 @@ interface Props {
 
 /**
  * One sticky note in the canvas. Pointer interactions:
- *   - pointerdown → start drag-or-click tracking
+ *   - pointerdown on body → start drag-or-click tracking
  *   - movement < 4px between down/up = click → onSelect()
  *   - movement >= 4px = drag → onMove (live) + onMoveEnd (final)
  *   - dblclick → enter inline edit mode (HTML <textarea> via foreignObject)
+ *   - pointerdown on the bottom-right resize handle (only visible when
+ *     selected) → resize the sticky live, commit on pointerup
+ *
+ * Width / height come from `sticky.width` / `sticky.height` when
+ * present, falling back to the shared `DEFAULT_STICKY_*` constants
+ * otherwise. Bounds enforced via `STICKY_MIN_*` / `STICKY_MAX_*` while
+ * the user drags so the value can never escape the legible range.
  *
  * Color picking + delete now live in the right-side inspector — those
  * affordances were removed from the sticky body to declutter the canvas.
@@ -31,6 +48,8 @@ export function Sticky({
   selected,
   onMove,
   onMoveEnd,
+  onResize,
+  onResizeEnd,
   onText,
   onSelect,
   toSvgPoint,
@@ -43,7 +62,20 @@ export function Sticky({
     startClientY: number;
     moved: boolean;
   } | null>(null);
+  const resizeRef = useRef<{
+    startX: number;
+    startY: number;
+    startW: number;
+    startH: number;
+    width: number;
+    height: number;
+  } | null>(null);
   const taRef = useRef<HTMLTextAreaElement | null>(null);
+
+  // Effective dimensions — fall back to the shared defaults so stickies
+  // persisted before this feature existed render at the original size.
+  const W = sticky.width ?? DEFAULT_STICKY_WIDTH;
+  const H = sticky.height ?? DEFAULT_STICKY_HEIGHT;
 
   useEffect(() => {
     if (editing) {
@@ -105,6 +137,55 @@ export function Sticky({
       }
       onSelect();
     }
+  }
+
+  // Resize handle interaction. We track the pointer's SVG-space delta
+  // from the down event and apply it to the starting (W, H), clamping
+  // both axes independently so the user can drag horizontally to make
+  // a long strip without affecting height (and vice versa).
+  function startResize(e: React.PointerEvent) {
+    if (editing) return;
+    e.stopPropagation();
+    const p = toSvgPoint(e);
+    if (!p) return;
+    resizeRef.current = {
+      startX: p.x,
+      startY: p.y,
+      startW: W,
+      startH: H,
+      width: W,
+      height: H,
+    };
+    (e.target as Element).setPointerCapture(e.pointerId);
+  }
+
+  function onResizeMove(e: React.PointerEvent) {
+    if (!resizeRef.current) return;
+    const p = toSvgPoint(e);
+    if (!p) return;
+    const dx = p.x - resizeRef.current.startX;
+    const dy = p.y - resizeRef.current.startY;
+    const nextW = clamp(
+      resizeRef.current.startW + dx,
+      STICKY_MIN_WIDTH,
+      STICKY_MAX_WIDTH,
+    );
+    const nextH = clamp(
+      resizeRef.current.startH + dy,
+      STICKY_MIN_HEIGHT,
+      STICKY_MAX_HEIGHT,
+    );
+    resizeRef.current.width = nextW;
+    resizeRef.current.height = nextH;
+    onResize(nextW, nextH);
+  }
+
+  function endResize(e: React.PointerEvent) {
+    const r = resizeRef.current;
+    resizeRef.current = null;
+    (e.target as Element).releasePointerCapture?.(e.pointerId);
+    if (!r) return;
+    onResizeEnd(r.width, r.height);
   }
 
   return (
@@ -182,6 +263,33 @@ export function Sticky({
           {sticky.authorName}
         </text>
       )}
+
+      {/* resize handle — bottom-right, only when selected and not in
+          inline-edit mode. Filled square with `nwse-resize` cursor; its
+          own pointer handlers stop propagation so the body's drag-to-
+          move state machine never sees the resize gestures. */}
+      {selected && !editing && (
+        <rect
+          x={W - HANDLE_SIZE}
+          y={H - HANDLE_SIZE}
+          width={HANDLE_SIZE}
+          height={HANDLE_SIZE}
+          fill="#1F2937"
+          stroke="#fff"
+          strokeWidth={1}
+          vectorEffect="non-scaling-stroke"
+          style={{ cursor: 'nwse-resize' }}
+          onPointerDown={startResize}
+          onPointerMove={onResizeMove}
+          onPointerUp={endResize}
+        />
+      )}
     </g>
   );
+}
+
+function clamp(n: number, min: number, max: number): number {
+  if (n < min) return min;
+  if (n > max) return max;
+  return n;
 }

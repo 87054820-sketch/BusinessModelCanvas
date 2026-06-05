@@ -1,12 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type {
-  CanvasMeta,
-  ColorLegendEntry,
-  Lang,
-  Project,
-} from '@canvas-collab/shared';
-import { STICKY_PALETTE } from '@canvas-collab/shared';
+import type { CanvasMeta, Lang, Project } from '@canvas-collab/shared';
 import { TypeToConfirmDialog } from '../../ui/TypeToConfirmDialog';
 import { RelatedCanvasesStrip } from './RelatedCanvasesStrip';
 
@@ -17,7 +11,6 @@ interface Props {
   onPatch: (patch: {
     name?: string;
     description?: string;
-    colorLegend?: Record<string, ColorLegendEntry>;
   }) => void;
   onDelete: () => void;
   /** Active canvas's `related` peer-def ids. Empty → strip hidden. */
@@ -35,11 +28,14 @@ interface Props {
  *
  * Sections, top to bottom:
  *   1. Project name + description (editable, blur-to-save).
- *   2. Color legend editor — per-palette label + description; saving rewrites
- *      the project's `colorLegend` map. Empty-label rows are stripped before
- *      save so the sidebar legend stays clean.
- *   3. Related-canvases chip strip for the active canvas.
- *   4. Danger zone (type-to-confirm delete).
+ *   2. Related-canvases chip strip for the active canvas.
+ *   3. Danger zone (type-to-confirm delete).
+ *
+ * The previous "color legend editor" lived here too, but the legend has
+ * moved to a per-canvas overlay (`StickyLegendPalette`) plus a section
+ * inside `CanvasConfigInspector`. Per-project legends turned out to be
+ * the wrong granularity — different canvases in the same project use
+ * the same colours for different things.
  */
 export function ProjectInspector({
   project,
@@ -90,11 +86,6 @@ export function ProjectInspector({
         <div className="mt-1 text-[11px] text-gray-500">
           {new Date(project.updatedAt).toLocaleString()}
         </div>
-
-        <ColorLegendEditor
-          legend={project.colorLegend ?? {}}
-          onSave={(legend) => onPatch({ colorLegend: legend })}
-        />
 
         {relatedDefIds && relatedDefIds.length > 0 && projectCanvases && defNames && onSwitchCanvas && onAddCanvas && (
           <RelatedCanvasesStrip
@@ -150,130 +141,5 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
       </span>
       {children}
     </label>
-  );
-}
-
-interface LegendEditorProps {
-  legend: Record<string, ColorLegendEntry>;
-  onSave: (legend: Record<string, ColorLegendEntry>) => void;
-}
-
-/**
- * Editor for the project-scoped sticky-color legend. Each palette colour
- * gets a row with a label + optional description. We hold the draft state
- * locally and only push to the server on Save — that keeps the sidebar
- * (which reads `project.colorLegend`) from flickering on every keystroke.
- *
- * Empty labels are stripped on save so the sidebar legend never displays
- * a swatch with no caption.
- */
-function ColorLegendEditor({ legend, onSave }: LegendEditorProps) {
-  const { t } = useTranslation();
-
-  const initial = useMemo<Record<string, ColorLegendEntry>>(() => {
-    const out: Record<string, ColorLegendEntry> = {};
-    for (const hex of STICKY_PALETTE) {
-      out[hex] = { label: legend[hex]?.label ?? '', description: legend[hex]?.description ?? '' };
-    }
-    return out;
-  }, [legend]);
-
-  const [draft, setDraft] = useState(initial);
-  const [saved, setSaved] = useState(false);
-
-  // Re-sync draft when the persisted legend changes from outside (e.g. a
-  // parallel save). Without this the editor would silently shadow updates.
-  useEffect(() => {
-    setDraft(initial);
-  }, [initial]);
-
-  const dirty = STICKY_PALETTE.some((hex) => {
-    const a = draft[hex];
-    const b = legend[hex];
-    return (a?.label ?? '') !== (b?.label ?? '') ||
-      (a?.description ?? '') !== (b?.description ?? '');
-  });
-
-  return (
-    <div className="mt-6 border-t border-gray-100 pt-4">
-      <div className="text-[11px] font-medium uppercase tracking-wider text-gray-500">
-        {t('inspector.legend.editorHeader')}
-      </div>
-      <p className="mt-1 text-[11px] text-gray-500">
-        {t('inspector.legend.editorHint')}
-      </p>
-
-      <ul className="mt-3 space-y-2">
-        {STICKY_PALETTE.map((hex) => (
-          <li key={hex} className="flex items-start gap-2">
-            <span
-              aria-hidden
-              className="mt-1 h-5 w-5 flex-shrink-0 rounded-sm border border-black/10"
-              style={{ backgroundColor: hex }}
-            />
-            <div className="min-w-0 flex-1 space-y-1">
-              <input
-                value={draft[hex]?.label ?? ''}
-                onChange={(e) => {
-                  const value = e.target.value;
-                  setSaved(false);
-                  setDraft((d) => ({
-                    ...d,
-                    [hex]: {
-                      label: value,
-                      description: d[hex]?.description ?? '',
-                    },
-                  }));
-                }}
-                placeholder={t('inspector.legend.labelPlaceholder')}
-                className="w-full rounded-md border border-gray-300 px-2 py-1 text-xs focus:border-gray-900 focus:outline-none"
-              />
-              <input
-                value={draft[hex]?.description ?? ''}
-                onChange={(e) => {
-                  const value = e.target.value;
-                  setSaved(false);
-                  setDraft((d) => ({
-                    ...d,
-                    [hex]: {
-                      label: d[hex]?.label ?? '',
-                      description: value,
-                    },
-                  }));
-                }}
-                placeholder={t('inspector.legend.descriptionPlaceholder')}
-                className="w-full rounded-md border border-gray-200 px-2 py-1 text-[11px] text-gray-700 focus:border-gray-900 focus:outline-none"
-              />
-            </div>
-          </li>
-        ))}
-      </ul>
-
-      <div className="mt-3 flex items-center justify-end gap-2">
-        {saved && !dirty && (
-          <span className="text-[11px] text-emerald-600">
-            {t('inspector.legend.saved')}
-          </span>
-        )}
-        <button
-          type="button"
-          disabled={!dirty}
-          onClick={() => {
-            const trimmed: Record<string, ColorLegendEntry> = {};
-            for (const hex of STICKY_PALETTE) {
-              const label = (draft[hex]?.label ?? '').trim();
-              if (!label) continue;
-              const description = (draft[hex]?.description ?? '').trim();
-              trimmed[hex] = description ? { label, description } : { label };
-            }
-            onSave(trimmed);
-            setSaved(true);
-          }}
-          className="rounded-md border border-gray-300 bg-white px-3 py-1 text-xs font-medium text-gray-800 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
-        >
-          {t('inspector.legend.save')}
-        </button>
-      </div>
-    </div>
   );
 }

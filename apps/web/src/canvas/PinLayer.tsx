@@ -172,6 +172,22 @@ function DraggablePin({
         moved.current = false;
       }}
     >
+      {/* Selection halo — sits behind the glyph so the user has a clear
+          ring around the pin they just clicked. Far more visible than
+          the previous "slightly thicker stroke" approach. Hidden when
+          unselected so the canvas doesn't gain visual noise. */}
+      {selected && (
+        <circle
+          cx={0}
+          cy={0}
+          r={14}
+          fill="none"
+          stroke="#111827"
+          strokeWidth={1.5}
+          strokeDasharray="3 2"
+          pointerEvents="none"
+        />
+      )}
       <PinGlyph icon={cls.icon} color={cls.color} selected={selected} />
       {pin.label && (
         <text

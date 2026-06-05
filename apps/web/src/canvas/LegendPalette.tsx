@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type * as Y from 'yjs';
 import type { Lang, PinClass, PinIcon } from '@canvas-collab/shared';
@@ -6,22 +5,17 @@ import { addPinClass, usePinClasses } from '../collab/pinClasses';
 import { useActiveClass } from '../state/activeClass';
 import { useSelection } from '../state/selection';
 import { useUiPrefs } from '../state/uiPrefs';
+import { PIN_ICON_GLYPH } from '../workspace/inspector/LegendInspector';
 
 interface Props {
   doc: Y.Doc;
   /** Display name credited as the author of newly-created classes. */
   displayName: string;
-  /** Single-language UI hint used inside the inline new-class form. */
+  /** Single-language UI hint used for placeholder default-name generation. */
   lang: Lang;
 }
 
-const ICON_GLYPH: Record<PinIcon, string> = {
-  circle: '●',
-  triangle: '▲',
-  square: '■',
-  star: '★',
-  flag: '⚑',
-};
+const ICON_GLYPH: Record<PinIcon, string> = PIN_ICON_GLYPH;
 
 /**
  * The legend palette overlay — a horizontal strip of class chips that
@@ -34,8 +28,10 @@ const ICON_GLYPH: Record<PinIcon, string> = {
  *   - Click a chip → activate that class (canvas enters draw mode for
  *     that class). Click the active chip again → toggle off (back to
  *     select / pan).
- *   - "+" button at the right opens an inline name input → addPinClass
- *     auto-rotates next color/icon (see `pickNextClassStyle`).
+ *   - "+ Pin legend" button at the right creates a default-named class
+ *     and immediately opens the right inspector's Config tab scrolled to
+ *     that class for inline rename. Mirrors `StickyLegendPalette`'s
+ *     "+ Sticky legend" so the two chip rails behave the same way.
  *   - When no class exists, palette only shows the "+" affordance with
  *     a coaching prompt next to it.
  *
@@ -50,25 +46,20 @@ export function LegendPalette({ doc, displayName, lang }: Props) {
   const toggleClass = useActiveClass((s) => s.toggleClass);
   const clearActive = useActiveClass((s) => s.clearActive);
 
-  const [adding, setAdding] = useState(false);
-  const [draftLabel, setDraftLabel] = useState('');
-  const inputRef = useRef<HTMLInputElement | null>(null);
-
-  useEffect(() => {
-    if (adding) inputRef.current?.focus();
-  }, [adding]);
-
-  function commitAdd() {
-    const next = draftLabel.trim();
-    if (!next) {
-      setAdding(false);
-      setDraftLabel('');
-      return;
-    }
-    const id = addPinClass(doc, { label: next, authorName: displayName });
+  function handleAddClass() {
+    const idx = classes.length + 1;
+    const id = addPinClass(doc, {
+      label: lang === 'zh' ? `类别 ${idx}` : `Class ${idx}`,
+      authorName: displayName,
+    });
+    // Activate the new class (so the user can drop pins immediately) AND
+    // open the inspector scrolled to the row so the placeholder name can
+    // be replaced with something meaningful — same pattern that the
+    // sticky chip rail uses for its "+ Add" affordance.
     useActiveClass.getState().pickClass(id);
-    setAdding(false);
-    setDraftLabel('');
+    useUiPrefs.getState().setRightInspectorTab('config');
+    useUiPrefs.getState().setRightInspectorCollapsed(false);
+    useSelection.getState().selectPinClass(id);
   }
 
   return (
@@ -83,12 +74,6 @@ export function LegendPalette({ doc, displayName, lang }: Props) {
         >
           ✕ {t('legend.exitDraw')}
         </button>
-      )}
-
-      {classes.length === 0 && !adding && (
-        <span className="pointer-events-auto rounded-md border border-dashed border-gray-300 bg-white/90 px-2.5 py-1 text-[11px] italic text-gray-500 shadow-sm">
-          {t('legend.empty')}
-        </span>
       )}
 
       {classes.map((c, i) => (
@@ -109,47 +94,21 @@ export function LegendPalette({ doc, displayName, lang }: Props) {
         />
       ))}
 
-      {adding ? (
-        <div className="pointer-events-auto flex items-center gap-1 rounded-md border border-gray-300 bg-white p-1 shadow-sm">
-          <input
-            ref={inputRef}
-            value={draftLabel}
-            onChange={(e) => setDraftLabel(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') commitAdd();
-              if (e.key === 'Escape') {
-                setAdding(false);
-                setDraftLabel('');
-              }
-            }}
-            placeholder={t('legend.namePlaceholder')}
-            className="w-32 rounded border border-gray-200 px-1.5 py-0.5 text-xs focus:border-gray-900 focus:outline-none"
-            maxLength={48}
-          />
-          <button
-            type="button"
-            onClick={commitAdd}
-            className="rounded bg-gray-900 px-2 py-0.5 text-[11px] text-white hover:bg-black"
-          >
-            {t('legend.create')}
-          </button>
-        </div>
-      ) : (
-        <button
-          type="button"
-          onClick={() => setAdding(true)}
-          className="pointer-events-auto flex h-7 w-7 items-center justify-center rounded-md border border-dashed border-gray-300 bg-white/90 text-base text-gray-500 shadow-sm hover:border-gray-400 hover:text-gray-900"
-          title={t('legend.addClass')}
-        >
-          +
-        </button>
-      )}
+      <button
+        type="button"
+        onClick={handleAddClass}
+        className="pointer-events-auto rounded-md border border-gray-300 bg-white px-2.5 py-1 text-[12px] font-medium text-gray-700 shadow-sm hover:border-gray-900 hover:bg-gray-50 hover:text-gray-900"
+        title={t('legend.addClass')}
+        aria-label={t('legend.addClass')}
+      >
+        {t('legend.addClassFull')}
+      </button>
 
       {/* Hint when a class is active and the user has at least one
           factor — describe the paint workflow + paste shortcut. */}
       {activeClassId && (
         <span className="pointer-events-none ml-2 hidden items-center text-[11px] italic text-gray-500 md:flex">
-          {lang === 'zh' ? '点画布落 Pin · ⌘+V 复制粘贴' : 'Click canvas to drop · ⌘+V to paint'}
+          {lang === 'zh' ? '点画布落图钉 · ⌘+V 复制粘贴' : 'Click canvas to drop · ⌘+V to paint'}
         </span>
       )}
     </div>
@@ -184,13 +143,14 @@ function ClassChip({ cls, index, active, onToggle, onEdit }: ClassChipProps) {
         title={titleText}
         className="flex flex-1 items-center gap-1.5 px-2 py-1"
       >
+        {/* Single colored icon — replaces the previous color-disc +
+            icon-glyph pair. The glyph IS the visual identity; rendering
+            it in the class color carries the same information as a
+            separate swatch with less noise. */}
         <span
-          className="inline-block h-3.5 w-3.5 flex-shrink-0 rounded-full"
-          style={{ backgroundColor: cls.color }}
-        />
-        <span
-          className="text-[12px] leading-none"
+          className="text-base leading-none"
           style={{ color: cls.color }}
+          aria-hidden="true"
         >
           {ICON_GLYPH[cls.icon]}
         </span>

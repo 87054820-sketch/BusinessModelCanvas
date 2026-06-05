@@ -1,17 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type * as Y from 'yjs';
 import type { Pin, PinClass } from '@canvas-collab/shared';
 import { removePin, updatePin } from '../../collab/pins';
 import { useSelection } from '../../state/selection';
-
-const ICON_GLYPH: Record<string, string> = {
-  circle: '●',
-  triangle: '▲',
-  square: '■',
-  star: '★',
-  flag: '⚑',
-};
+import { PinClassChip } from './LegendInspector';
 
 interface Props {
   doc: Y.Doc;
@@ -22,9 +15,19 @@ interface Props {
 /**
  * Right-panel content when a pin is selected. Pin-level metadata is
  * minimal post-redesign:
- *   - which class it belongs to (visual signature read from the class)
- *   - optional label / body text rendered next to the icon
+ *   - which class it belongs to (one combined visual + picker — see
+ *     `ClassPicker` below; replaces the prior badge + select pair so
+ *     there's exactly one circular signature on the row, not two)
+ *   - optional label rendered next to the icon on the canvas (HINT
+ *     tells the user this surfaces on the canvas)
+ *   - optional body text shown only in the inspector (HINT explicitly
+ *     calls out that this DOES NOT render on the canvas)
  *   - delete
+ *
+ * Class assignment is constrained to existing legend classes — the
+ * picker has no inline "create new" affordance because adding a class
+ * is a canvas-level change that should happen through the Config tab
+ * or the canvas-overlay `+ 图钉图例` button.
  *
  * Color / icon / anchor used to live here pre-redesign — they're
  * gone: color and icon belong to the class (managed in the Legend
@@ -52,41 +55,44 @@ export function PinInspector({ doc, pin, classes }: Props) {
           {t('pin.header')}
         </div>
 
-        {/* Class chip — read-only visual badge + a select to reassign. */}
+        {/* Class — single combined dropdown trigger; opens a popover
+            of existing classes. No standalone read-only badge: the
+            trigger IS the badge and the picker, so the user sees one
+            chip instead of two redundant ones. */}
         <Field label={t('pin.class')}>
-          <div className="flex items-center gap-2">
-            {cls ? (
-              <span
-                className="inline-flex items-center gap-1.5 rounded-md border border-gray-200 bg-white px-2 py-1 text-xs"
-                style={{ color: cls.color }}
-              >
-                <span
-                  className="inline-block h-3 w-3 rounded-full"
-                  style={{ backgroundColor: cls.color }}
-                />
-                <span>{ICON_GLYPH[cls.icon] ?? '●'}</span>
-                <span className="text-gray-900">{cls.label || '(unnamed)'}</span>
-              </span>
-            ) : (
-              <span className="text-xs italic text-red-600">
+          {cls ? (
+            <ClassPicker
+              current={cls}
+              classes={classes}
+              onPick={(nextId) =>
+                updatePin(doc, pin.id, { classId: nextId })
+              }
+            />
+          ) : (
+            // Class was deleted out from under the pin — surface the
+            // problem and still offer the picker so the user can
+            // re-anchor it.
+            <div className="space-y-2">
+              <div className="text-xs italic text-red-600">
                 {t('pin.classMissing')}
-              </span>
-            )}
-            <select
-              value={pin.classId}
-              onChange={(e) => updatePin(doc, pin.id, { classId: e.target.value })}
-              className="rounded border border-gray-300 px-1.5 py-0.5 text-xs"
-            >
-              {classes.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.label || '(unnamed)'}
-                </option>
-              ))}
-            </select>
-          </div>
+              </div>
+              {classes.length > 0 && (
+                <ClassPicker
+                  current={null}
+                  classes={classes}
+                  onPick={(nextId) =>
+                    updatePin(doc, pin.id, { classId: nextId })
+                  }
+                />
+              )}
+            </div>
+          )}
         </Field>
 
-        <Field label={t('pin.label')}>
+        <Field
+          label={t('pin.label')}
+          hint={t('pin.labelHint')}
+        >
           <input
             value={labelDraft}
             onChange={(e) => setLabelDraft(e.target.value)}
@@ -101,7 +107,10 @@ export function PinInspector({ doc, pin, classes }: Props) {
           />
         </Field>
 
-        <Field label={t('pin.body')}>
+        <Field
+          label={t('pin.body')}
+          hint={t('pin.bodyHint')}
+        >
           <textarea
             value={bodyDraft}
             onChange={(e) => setBodyDraft(e.target.value)}
@@ -134,14 +143,121 @@ export function PinInspector({ doc, pin, classes }: Props) {
   );
 }
 
-function Field({ label, children }: { label: string; children: React.ReactNode }) {
+interface FieldProps {
+  label: string;
+  /** Optional sub-hint rendered between the label and the input. */
+  hint?: string;
+  children: React.ReactNode;
+}
+
+/**
+ * Field wrapper used across the inspector. The optional `hint` prop is
+ * what carries the "shown on canvas" / "not shown on canvas" signal
+ * the user asked for — one short line in muted text, just under the
+ * uppercase label.
+ */
+function Field({ label, hint, children }: FieldProps) {
   return (
     <label className="mt-4 block">
-      <span className="mb-1 block text-[11px] font-medium uppercase tracking-wider text-gray-500">
+      <span className="block text-[11px] font-medium uppercase tracking-wider text-gray-500">
         {label}
       </span>
-      {children}
+      {hint && (
+        <span className="mt-0.5 block text-[11px] leading-snug text-gray-500">
+          {hint}
+        </span>
+      )}
+      <span className="mt-1 block">{children}</span>
     </label>
+  );
+}
+
+interface ClassPickerProps {
+  current: PinClass | null;
+  classes: PinClass[];
+  onPick: (id: string) => void;
+}
+
+/**
+ * Combined trigger + popover for the pin's class assignment. Replaces
+ * the prior `[ badge ][ <select> ]` pair with one widget that does
+ * both jobs: shows the current class's visual signature AND exposes
+ * the list of existing classes for re-assignment. Outside-click and
+ * Escape close the popover.
+ *
+ * The popover is constrained to existing classes — adding a new class
+ * is a canvas-level change that lives in the Config tab.
+ */
+function ClassPicker({ current, classes, onPick }: ClassPickerProps) {
+  const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+  const wrapRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function onDown(e: MouseEvent) {
+      if (!wrapRef.current) return;
+      if (!wrapRef.current.contains(e.target as Node)) setOpen(false);
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setOpen(false);
+    }
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  return (
+    <div ref={wrapRef} className="relative inline-block">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="inline-flex items-center rounded-md border border-gray-300 bg-white px-2 py-1 text-xs hover:border-gray-900"
+      >
+        {current ? (
+          <PinClassChip cls={current} withChevron />
+        ) : (
+          <span className="inline-flex items-center gap-1.5 text-gray-500">
+            <span>{t('pin.pickClass')}</span>
+            <span aria-hidden="true" className="text-[10px] text-gray-400">
+              ▾
+            </span>
+          </span>
+        )}
+      </button>
+      {open && (
+        <div
+          className="absolute left-0 top-full z-30 mt-1 min-w-[180px] rounded-lg border border-gray-200 bg-white p-1 shadow-md"
+          role="listbox"
+        >
+          {classes.map((c) => {
+            const active = current?.id === c.id;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                role="option"
+                aria-selected={active}
+                onClick={() => {
+                  onPick(c.id);
+                  setOpen(false);
+                }}
+                className={`flex w-full items-center rounded px-2 py-1 text-left text-xs ${
+                  active
+                    ? 'bg-gray-100'
+                    : 'hover:bg-gray-50'
+                }`}
+              >
+                <PinClassChip cls={c} active={active} />
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }
 

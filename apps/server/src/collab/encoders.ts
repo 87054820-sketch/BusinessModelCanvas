@@ -1,6 +1,6 @@
 import * as Y from 'yjs';
-import type { Pin, PinClass, PinIcon, XAxisItem } from '@canvas-collab/shared';
-import { DEFAULT_CHART_COLOR } from '@canvas-collab/shared';
+import type { ColorLegendEntry, Pin, PinClass, PinIcon, XAxisItem } from '@canvas-collab/shared';
+import { DEFAULT_CHART_COLOR, STICKY_PALETTE } from '@canvas-collab/shared';
 
 /**
  * Server-side mirror of the Y.Map encoders that live in
@@ -164,4 +164,53 @@ export function readChartConfig(doc: Y.Doc): ChartConfigOverrides {
     }
   }
   return out;
+}
+
+// ─── color legend ─────────────────────────────────────────────────────
+//
+// Per-canvas semantic mapping from sticky-palette hex → { label,
+// description? }. Mirrors `apps/web/src/collab/colorLegend.ts`. Stored
+// flat in a Y.Map under `${hex}.label` / `${hex}.description`. Server
+// reads it for the AI context surface and as part of replace-mode
+// imports.
+export const COLOR_LEGEND_KEY = 'colorLegend';
+
+const STICKY_PALETTE_SET = new Set<string>(STICKY_PALETTE);
+
+export function getColorLegendRoot(doc: Y.Doc): Y.Map<unknown> {
+  return doc.getMap<unknown>(COLOR_LEGEND_KEY);
+}
+
+/**
+ * Read the colour legend as a plain object. Drops rows with no label —
+ * the AI never benefits from seeing "this colour has no meaning yet";
+ * it would just clutter the prompt. The inspector / Y.Map keep raw
+ * description-without-label rows around so the user's typing isn't
+ * lost, but the read path here filters them out.
+ */
+export function readColorLegend(
+  doc: Y.Doc,
+): Record<string, ColorLegendEntry> {
+  const root = getColorLegendRoot(doc);
+  const out: Record<string, ColorLegendEntry> = {};
+  for (const hex of STICKY_PALETTE) {
+    const label = root.get(`${hex}.label`);
+    if (typeof label !== 'string' || label.trim().length === 0) continue;
+    const description = root.get(`${hex}.description`);
+    out[hex] = {
+      label,
+      ...(typeof description === 'string' && description.length > 0
+        ? { description }
+        : {}),
+    };
+  }
+  return out;
+}
+
+/**
+ * Validate that `hex` is one of the six known palette colours. Used by
+ * `objectsImport` to reject off-palette keys before writing.
+ */
+export function isStickyPaletteHex(hex: string): boolean {
+  return STICKY_PALETTE_SET.has(hex);
 }

@@ -45,12 +45,23 @@ function readSticky(yMap: Y.Map<unknown>): StickyNote | null {
   const authorName = (yMap.get('authorName') as string | undefined) ?? '';
   const createdAt = (yMap.get('createdAt') as string | undefined) ?? '';
   if (!id || !zoneId || x === undefined || y === undefined) return null;
+  // Width/height are persisted only when the user has resized the
+  // sticky — older stickies decode without them and the renderer falls
+  // back to DEFAULT_STICKY_{WIDTH,HEIGHT}. Only emit the field when
+  // present so consumers can reliably distinguish "stuck at default"
+  // from "explicitly sized".
+  const widthRaw = yMap.get('width');
+  const heightRaw = yMap.get('height');
+  const width = typeof widthRaw === 'number' ? widthRaw : undefined;
+  const height = typeof heightRaw === 'number' ? heightRaw : undefined;
   const zoneHistory = readZoneHistory(yMap);
   return {
     id,
     zoneId,
     x,
     y,
+    ...(width !== undefined ? { width } : {}),
+    ...(height !== undefined ? { height } : {}),
     text,
     color,
     authorName,
@@ -140,7 +151,7 @@ interface UpdateStickyOptions {
 export function updateSticky(
   doc: Y.Doc,
   id: string,
-  patch: Partial<Pick<StickyNote, 'zoneId' | 'x' | 'y' | 'text' | 'color'>>,
+  patch: Partial<Pick<StickyNote, 'zoneId' | 'x' | 'y' | 'width' | 'height' | 'text' | 'color'>>,
   opts: UpdateStickyOptions = {},
 ) {
   const root = getStickiesRoot(doc);

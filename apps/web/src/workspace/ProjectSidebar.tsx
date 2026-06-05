@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import type { CanvasMeta, Project } from '@canvas-collab/shared';
-import { STICKY_PALETTE } from '@canvas-collab/shared';
 import { MenuButton } from '../ui/MenuButton';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 import { AddCanvasMenu } from './AddCanvasMenu';
@@ -27,16 +26,21 @@ interface Props {
  *   1. Back button
  *   2. Project header (selectable — routes the right inspector to project info)
  *   3. Canvases list with thumbs + delete menu
- *   4. Color legend (passive display, hidden when no entries are defined)
- *   5. "+ Add canvas" button
+ *   4. "+ Add canvas" button
  *
  * **Collapsed** (56 px):
  *   - `»` chevron at the top (acts as the expand toggle)
  *   - Vertical rail of `<CanvasThumb>` icons, one per canvas in the project
  *     (each with a `title=` tooltip carrying the canvas title)
  *   - `+` button at the bottom (popover anchored to the right)
- *   - Back button, project header, and color legend are hidden — to
- *     reach them, expand first.
+ *   - Back button and project header are hidden — to reach them, expand
+ *     first.
+ *
+ * The previous "color legend" strip lived here as a passive read-only
+ * display. It moved to a per-canvas overlay (`StickyLegendPalette`) so
+ * each canvas in the project can carry its own colour meanings —
+ * project granularity was wrong for the way teams actually use the
+ * canvases.
  */
 export function ProjectSidebar({
   project,
@@ -53,13 +57,6 @@ export function ProjectSidebar({
   const projectActive = selection.kind === 'project';
   const collapsed = useUiPrefs((s) => s.leftSidebarCollapsed);
   const toggleCollapsed = useUiPrefs((s) => s.toggleLeftSidebar);
-
-  /** Legend entries to render, in palette order, only those with a label. */
-  const legendEntries = STICKY_PALETTE.flatMap((hex) => {
-    const entry = project.colorLegend?.[hex];
-    if (!entry || !entry.label.trim()) return [];
-    return [{ hex, label: entry.label, description: entry.description }];
-  });
 
   if (collapsed) {
     return (
@@ -219,39 +216,6 @@ export function ProjectSidebar({
               );
             })}
           </ul>
-        )}
-
-        {legendEntries.length > 0 && (
-          <div className="mt-5 border-t border-gray-100 pt-3">
-            <div className="mb-2 px-1 text-[11px] uppercase tracking-wider text-gray-500">
-              {t('inspector.legend.title')}
-            </div>
-            <ul className="space-y-1.5">
-              {legendEntries.map(({ hex, label, description }) => (
-                <li
-                  key={hex}
-                  className="flex items-start gap-2 px-1"
-                  title={description ?? undefined}
-                >
-                  <span
-                    aria-hidden
-                    className="mt-0.5 h-3 w-3 flex-shrink-0 rounded-sm border border-black/10"
-                    style={{ backgroundColor: hex }}
-                  />
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate text-xs text-gray-800">
-                      {label}
-                    </span>
-                    {description && (
-                      <span className="block truncate text-[11px] text-gray-500">
-                        {description}
-                      </span>
-                    )}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
         )}
       </div>
 

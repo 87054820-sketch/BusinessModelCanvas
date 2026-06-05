@@ -16,14 +16,6 @@ export interface Project {
   createdBy: string;      // display name
   updatedAt: string;
   updatedBy: string;
-  /**
-   * Project-scoped semantic mapping for the sticky-note palette. Keys MUST
-   * be hex strings drawn from `STICKY_PALETTE`. The web client surfaces
-   * these as a passive "Legend" panel under the canvases list in the left
-   * sidebar — same colours, project-defined meaning. Absent / empty map →
-   * the legend panel is hidden entirely.
-   */
-  colorLegend?: Record<string, ColorLegendEntry>;
 }
 
 export interface ColorLegendEntry {
@@ -50,6 +42,23 @@ export const STICKY_PALETTE = [
 export type StickyColor = (typeof STICKY_PALETTE)[number];
 
 export const DEFAULT_STICKY_COLOR: StickyColor = '#FCF1A8';
+
+/**
+ * Sticky note size constants. `width` and `height` on a `StickyNote`
+ * are optional; when missing the renderer falls back to these defaults
+ * (preserving the look of stickies persisted before the field existed).
+ *
+ * Bounds are enforced both client-side (resize handle clamps the
+ * pointer-driven values) and server-side (Zod schema in
+ * `stickyImport.ts`). Picked to keep stickies legible while still
+ * allowing horizontal "long strip" + vertical "tall column" layouts.
+ */
+export const DEFAULT_STICKY_WIDTH = 140;
+export const DEFAULT_STICKY_HEIGHT = 100;
+export const STICKY_MIN_WIDTH = 60;
+export const STICKY_MIN_HEIGHT = 40;
+export const STICKY_MAX_WIDTH = 360;
+export const STICKY_MAX_HEIGHT = 280;
 
 // ──────────────────────────────────────────────────────────────────────────
 // Canvas instance metadata (one row per canvas the team has created)
@@ -238,6 +247,15 @@ export interface StickyNote {
   /** SVG-coord-space center of the sticky inside the zone. */
   x: number;
   y: number;
+  /**
+   * Optional explicit dimensions in SVG-coord units. When absent, the
+   * renderer falls back to `DEFAULT_STICKY_WIDTH`/`DEFAULT_STICKY_HEIGHT`.
+   * Persisted only when the user has explicitly resized the sticky, so
+   * stickies authored before the resize feature continue to round-trip
+   * unchanged.
+   */
+  width?: number;
+  height?: number;
   text: string;
   color: string;       // hex, e.g. '#FCF1A8'
   authorName: string;
@@ -418,12 +436,6 @@ export interface CreateProjectInput {
 export interface UpdateProjectInput {
   name?: string;
   description?: string;
-  /**
-   * Replace-style update: when present, the project's `colorLegend` map is
-   * overwritten in full with this value. Pass `{}` to clear the legend.
-   * Keys are validated against `STICKY_PALETTE` server-side.
-   */
-  colorLegend?: Record<string, ColorLegendEntry>;
 }
 
 export interface CreateCanvasInput {
@@ -521,6 +533,12 @@ export interface AiContext {
     color: string;
     points: Array<{ x: number; y: number }>;
   }>;
+  /**
+   * Per-canvas sticky-color legend, hex → meaning. Only entries with a
+   * non-empty `label` are emitted. Empty when the user hasn't assigned
+   * meanings yet.
+   */
+  colorLegend?: Record<string, ColorLegendEntry>;
   /** ISO timestamp of when the snapshot was assembled. */
   generatedAt: string;
 }
@@ -541,6 +559,9 @@ export interface AiContextSticky {
   createdAt: string;
   x: number;
   y: number;
+  /** Present only when the sticky has been explicitly resized. */
+  width?: number;
+  height?: number;
   /** Always non-empty — synthesised from creation metadata if missing. */
   zoneHistory: ZoneHistoryEntry[];
 }
@@ -559,6 +580,9 @@ export interface ObjectsBulkInput {
     color?: string;
     x?: number;
     y?: number;
+    /** Optional explicit dimensions in SVG-coord units. Bounded server-side. */
+    width?: number;
+    height?: number;
     authorName?: string;
   }>;
   pinClasses?: Array<{
@@ -581,4 +605,9 @@ export interface ObjectsBulkInput {
     id: string;
     label: LocalizedLabel;
   }>;
+  /**
+   * Replace-style colour legend. Keys must be hex strings drawn from
+   * `STICKY_PALETTE`. Off-palette keys are rejected by the server.
+   */
+  colorLegend?: Record<string, ColorLegendEntry>;
 }

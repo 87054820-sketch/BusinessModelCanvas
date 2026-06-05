@@ -1,55 +1,37 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta, ObjectType } from '@canvas-collab/shared';
+import type { CanvasMeta } from '@canvas-collab/shared';
 import { snapshotsApi } from '../api/snapshots';
-import { useActiveClass } from '../state/activeClass';
 
 interface Props {
   canvas: CanvasMeta;
   projectId: string;
-  showZones: boolean;
-  onShowZonesChange: (v: boolean) => void;
-  onAddSticky: () => void;
-  /**
-   * Object types this canvas allows — drives which toolbar buttons are
-   * shown. The host (workspace page) computes this via
-   * `effectiveObjectTypes(def)` so canvases without an explicit
-   * declaration still see pin / pinClass.
-   */
-  objectTypes?: ObjectType[];
-  /**
-   * Toggle pin draw mode. Host decides what happens (seed first class
-   * if none, activate first class if none active, deactivate
-   * otherwise). Undefined → button hidden.
-   */
-  onAddPin?: () => void;
   displayName: string;
   /** Called when the title input commits — workspace persists via API. */
   onRename: (title: string) => void;
 }
 
 /**
- * Top of the centre column. Inline rename, "+ Sticky" toolbar action,
- * "Save milestone" modal, "History" link, "show zones" toggle.
+ * Top of the centre column. Inline rename, "Save milestone" modal,
+ * "History" link.
+ *
+ * Sticky / pin creation lives entirely on the canvas overlay (the
+ * left-of-canvas LegendPalette for pins, the right-of-canvas
+ * StickyLegendPalette for stickies). Toolbar buttons for "+ Sticky" /
+ * "+ Pin" used to live here but were redundant with the chip paint-
+ * mode entrypoints — keeping them in two places caused the user to
+ * hunt across the chrome instead of staying near the chips.
  */
 export function CanvasToolbar({
   canvas,
   projectId,
-  showZones,
-  onShowZonesChange,
-  onAddSticky,
-  objectTypes,
-  onAddPin,
   displayName,
   onRename,
 }: Props) {
   const { t } = useTranslation();
   const [title, setTitle] = useState(canvas.title);
   const [milestoneOpen, setMilestoneOpen] = useState(false);
-  const activeClassId = useActiveClass((s) => s.activeClassId);
-
-  const allowsPin = objectTypes?.includes('pin') ?? false;
 
   // The input is sized in `ch` units. A `ch` is the width of the "0"
   // glyph, so CJK characters (which are roughly 2× wider) overflow when
@@ -82,35 +64,6 @@ export function CanvasToolbar({
         />
       </div>
       <div className="flex items-center gap-3">
-        <label className="flex items-center gap-1 text-xs text-gray-600">
-          <input
-            type="checkbox"
-            checked={showZones}
-            onChange={(e) => onShowZonesChange(e.target.checked)}
-          />
-          {t('workspace.showZones')}
-        </label>
-        {allowsPin && onAddPin && (
-          <button
-            type="button"
-            onClick={onAddPin}
-            className={`rounded-lg px-3 py-1 text-xs font-medium ${
-              activeClassId
-                ? 'bg-gray-900 text-white hover:bg-black'
-                : 'border border-gray-300 text-gray-900 hover:bg-gray-50'
-            }`}
-            title={t('workspace.pinHint')}
-          >
-            {activeClassId ? t('workspace.pinModeOn') : t('workspace.addPin')}
-          </button>
-        )}
-        <button
-          type="button"
-          onClick={onAddSticky}
-          className="rounded-lg bg-stone-200 px-3 py-1 text-xs font-medium text-gray-900 hover:bg-stone-300"
-        >
-          {t('workspace.addSticky')}
-        </button>
         <button
           type="button"
           onClick={() => setMilestoneOpen(true)}
