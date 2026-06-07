@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-brand-rgb: 5 150 105;
+  --color-brand-hover-rgb: 4 120 87;
+  --color-brand-soft-rgb: 209 250 229;
+}
+
+@layer components {
+  .brand-primary-button {
+    background-color: rgb(var(--color-brand-rgb));
+    color: white;
+    box-shadow: 0 12px 28px rgb(var(--color-brand-rgb) / 0.2);
+  }
+
+  .brand-primary-button:hover {
+    background-color: rgb(var(--color-brand-hover-rgb));
+    box-shadow: 0 16px 36px rgb(var(--color-brand-rgb) / 0.3);
+  }
+}
+
 html,
 body,
 #root {

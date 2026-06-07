@@ -9,67 +9,123 @@
     "en": "bg.en.svg",
     "zh": "bg.zh.svg"
   },
-  "related": ["business-model-canvas", "empathy-map", "jobs-to-be-done", "ad-lib-value-proposition", "customer-journey"],
+  "display": {
+    "canvas": {
+      "showBlockLabels": true,
+      "groupLabels": [
+        {
+          "id": "value-map",
+          "label": { "en": "Value Map", "zh": "价值地图" },
+          "description": { "en": "How your offer creates value", "zh": "你的方案如何创造价值" },
+          "x": 330,
+          "y": 74,
+          "align": "center",
+          "fontSize": 30
+        },
+        {
+          "id": "customer-profile",
+          "label": { "en": "Customer Profile", "zh": "客户画像" },
+          "description": { "en": "Jobs, pains, and gains of one segment", "zh": "一个客户细分的任务、痛点与收益" },
+          "x": 900,
+          "y": 74,
+          "align": "center",
+          "fontSize": 30
+        }
+      ]
+    },
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false,
+      "subtitle": {
+        "en": "Match your value map to one clear customer profile",
+        "zh": "把你的价值地图匹配到一个清晰的客户画像"
+      },
+      "groupLabels": [
+        {
+          "id": "value-map",
+          "label": { "en": "Value Map", "zh": "价值地图" },
+          "description": { "en": "Products, pain relievers, gain creators", "zh": "产品服务、痛点缓解、收益创造" },
+          "x": 330,
+          "y": 74,
+          "align": "center",
+          "fontSize": 36
+        },
+        {
+          "id": "customer-profile",
+          "label": { "en": "Customer Profile", "zh": "客户画像" },
+          "description": { "en": "Jobs, pains, and gains", "zh": "客户任务、痛点与收益" },
+          "x": 900,
+          "y": 74,
+          "align": "center",
+          "fontSize": 36
+        }
+      ]
+    }
+  },
+  "related": ["business-model-canvas", "empathy-map", "jobs-to-be-done", "ad-lib-value-proposition", "customer-journey", "design-criteria-canvas", "experiment-canvas"],
   "zones": [
     {
       "id": "gain-creators",
       "shape": {
         "type": "polygon",
-        "points": [[40, 100], [640, 100], [640, 400], [340, 400]]
+        "points": [[60, 145], [600, 145], [600, 415], [330, 415]]
       },
-      "label": { "x": 340, "y": 160, "align": "center" }
+      "label": { "x": 330, "y": 205, "align": "center", "fontSize": 18 }
     },
     {
       "id": "pain-relievers",
       "shape": {
         "type": "polygon",
-        "points": [[40, 700], [640, 700], [640, 400], [340, 400]]
+        "points": [[60, 685], [600, 685], [600, 415], [330, 415]]
       },
-      "label": { "x": 340, "y": 660, "align": "center" }
+      "label": { "x": 330, "y": 650, "align": "center", "fontSize": 18 }
     },
     {
       "id": "products-and-services",
       "shape": {
         "type": "polygon",
-        "points": [[40, 100], [40, 700], [340, 400]]
+        "points": [[60, 145], [60, 685], [330, 415]]
       },
-      "label": { "x": 60, "y": 405, "align": "left" }
+      "label": { "x": 82, "y": 420, "align": "left", "fontSize": 18 }
     },
     {
       "id": "gains",
       "shape": {
         "type": "circle-segment",
-        "cx": 940,
-        "cy": 400,
-        "r": 240,
+        "cx": 900,
+        "cy": 415,
+        "r": 220,
         "fromDeg": 180,
         "toDeg": 330
       },
-      "label": { "x": 940, "y": 200, "align": "center" }
+      "label": { "x": 900, "y": 250, "align": "center", "fontSize": 18 }
     },
     {
       "id": "pains",
       "shape": {
         "type": "circle-segment",
-        "cx": 940,
-        "cy": 400,
-        "r": 240,
+        "cx": 900,
+        "cy": 415,
+        "r": 220,
         "fromDeg": 30,
         "toDeg": 180
       },
-      "label": { "x": 940, "y": 600, "align": "center" }
+      "label": { "x": 900, "y": 620, "align": "center", "fontSize": 18 }
     },
     {
       "id": "customer-jobs",
       "shape": {
         "type": "circle-segment",
-        "cx": 940,
-        "cy": 400,
-        "r": 240,
+        "cx": 900,
+        "cy": 415,
+        "r": 220,
         "fromDeg": 330,
         "toDeg": 30
       },
-      "label": { "x": 1160, "y": 405, "align": "right" }
+      "label": { "x": 1100, "y": 420, "align": "right", "fontSize": 18 }
     }
   ]
 }

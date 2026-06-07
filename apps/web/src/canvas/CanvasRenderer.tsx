@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type * as Y from 'yjs';
-import type { CanvasDef, CanvasI18n, Lang } from '@pingarden/shared';
+import type { CanvasDef, CanvasGroupLabel, CanvasI18n, Lang } from '@pingarden/shared';
 import { api } from '../api/client';
 import { DropZoneLayer } from './DropZoneLayer';
 import { ZoneLabel } from './ZoneLabel';
@@ -155,9 +155,16 @@ export function CanvasRenderer({
             />
           );
         })()}
-        {def.zones.map((z) => (
-          <ZoneLabel key={z.id} zone={z} i18n={i18n} lang={lang} />
+        {(def.display?.canvas?.showBlockLabels ?? true) && def.zones.map((z) => (
+          <ZoneLabel
+            key={z.id}
+            zone={z}
+            i18n={i18n}
+            lang={lang}
+            showPrompt={def.display?.canvas?.showBlockPrompts === true}
+          />
         ))}
+        <CanvasGroupLabels labels={def.display?.canvas?.groupLabels} lang={lang} />
         {children?.({ def, toSvgPoint })}
       </svg>
 
@@ -168,5 +175,47 @@ export function CanvasRenderer({
         onFit={fit}
       />
     </div>
+  );
+}
+
+function CanvasGroupLabels({
+  labels,
+  lang,
+}: {
+  labels: CanvasGroupLabel[] | undefined;
+  lang: Lang;
+}) {
+  if (!labels?.length) return null;
+
+  return (
+    <g aria-label="canvas-group-labels">
+      {labels.map((group) => {
+        const align = group.align ?? 'center';
+        const anchor: 'start' | 'middle' | 'end' =
+          align === 'left' ? 'start' : align === 'right' ? 'end' : 'middle';
+        const label = group.label[lang] ?? group.label[lang === 'zh' ? 'en' : 'zh'];
+        const description = group.description?.[lang] ?? group.description?.[lang === 'zh' ? 'en' : 'zh'];
+        const fontSize = group.fontSize ?? 28;
+        return (
+          <text
+            key={group.id}
+            x={group.x}
+            y={group.y}
+            textAnchor={anchor}
+            fontFamily="Inter, 'PingFang SC', system-ui, sans-serif"
+            pointerEvents="none"
+          >
+            <tspan x={group.x} fontSize={fontSize} fontWeight={800} fill="#111827">
+              {label}
+            </tspan>
+            {description && (
+              <tspan x={group.x} dy={fontSize * 0.95} fontSize={Math.max(12, fontSize * 0.42)} fontWeight={500} fill="#6B7280">
+                {description}
+              </tspan>
+            )}
+          </text>
+        );
+      })}
+    </g>
   );
 }

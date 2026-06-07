@@ -10,7 +10,7 @@ import { HistoryPage } from './pages/HistoryPage';
 
 export default function App() {
   const { t } = useTranslation();
-  const { identity, save } = useIdentity();
+  const { identity, initializing, save } = useIdentity();
   const isDesktop = typeof window !== 'undefined' && 'electronAPI' in window;
 
   const logo = (

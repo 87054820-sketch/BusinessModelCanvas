@@ -3,7 +3,7 @@
   "blocks": {
     "gain-creators": {
       "title": "Gain Creators",
-      "prompt": "How do your products create gains?",
+      "prompt": "How does your offer create a specific gain customers value?",
       "examples": [
         "Saves 4 hours/week of manual reconciliation",
         "Audit-ready reports out of the box",
@@ -12,7 +12,7 @@
     },
     "pain-relievers": {
       "title": "Pain Relievers",
-      "prompt": "How do your products alleviate pains?",
+      "prompt": "How does your offer relieve a specific customer pain?",
       "examples": [
         "Eliminates manual data re-entry between systems",
         "SOC2-certified — passes vendor security review",
@@ -21,7 +21,7 @@
     },
     "products-and-services": {
       "title": "Products & Services",
-      "prompt": "What are you offering?",
+      "prompt": "What can customers actually buy, use, or experience?",
       "examples": [
         "iOS and Android mobile app",
         "Quarterly strategy workshop (2 days, on-site)",
@@ -30,7 +30,7 @@
     },
     "gains": {
       "title": "Gains",
-      "prompt": "What outcomes does the customer want?",
+      "prompt": "What outcomes does the customer expect, desire, or love?",
       "examples": [
         "Closes books faster than competitors",
         "Looks credible to investors",
@@ -39,7 +39,7 @@
     },
     "pains": {
       "title": "Pains",
-      "prompt": "What troubles the customer?",
+      "prompt": "Where does the customer hurt while getting the job done?",
       "examples": [
         "Manual cross-checking eats 6h every Friday",
         "Late filing risks $50k regulatory fine",
@@ -48,7 +48,7 @@
     },
     "customer-jobs": {
       "title": "Customer Jobs",
-      "prompt": "What is the customer trying to get done?",
+      "prompt": "What job is the customer trying to get done?",
       "examples": [
         "Close monthly books accurately",
         "Justify the SaaS budget to the CFO",

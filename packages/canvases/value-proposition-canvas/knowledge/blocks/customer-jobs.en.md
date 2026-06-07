@@ -1,1 +1,1 @@
-What customers are trying to get done in their work and life — functional jobs (perform a task), social jobs (look good, gain status), and emotional jobs (feel good, secure). One persona usually has multiple jobs; rank by importance to the customer.
+What customers are trying to get done in work and life — functional jobs, social jobs, emotional jobs, and basic needs all count. Put one job on each sticky and rank jobs by importance to the customer.

@@ -9,6 +9,15 @@
     "en": "bg.en.svg",
     "zh": "bg.zh.svg"
   },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    }
+  },
   "related": ["business-model-canvas"],
   "zones": [
     {

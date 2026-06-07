@@ -210,44 +210,37 @@
   },
   "templates": {
     "business-model-canvas": {
-      "name": "Business Model Canvas",
       "tagline": "Map an entire business model in nine blocks"
     },
     "value-proposition-canvas": {
-      "name": "Value Proposition Canvas",
       "tagline": "Align customer jobs with what you offer"
     },
     "portfolio-map": {
-      "name": "Portfolio Map",
       "tagline": "Manage exploration and exploitation portfolios"
     },
     "ad-lib-value-proposition": {
-      "name": "Ad-Lib Value Proposition",
       "tagline": "Draft a one-sentence value proposition and iterate"
     },
     "empathy-map": {
-      "name": "Empathy Map",
       "tagline": "Step into your customer's head — what they think, see, say, hear, feel"
     },
     "jobs-to-be-done": {
-      "name": "JTBD Story",
       "tagline": "When ___, I want to ___, so I can ___ — plus the emotional + social jobs underneath"
     },
     "business-model-environment": {
-      "name": "Business Model Environment",
       "tagline": "Map the four external forces shaping your business model"
     },
     "customer-journey": {
-      "name": "Customer Journey",
-      "tagline": "Map a customer's experience over time — find the dips, design the lifts"
-    },
-    "customer-journey": {
-      "name": "Customer Journey",
       "tagline": "Map a customer's experience over time — find the dips, design the lifts"
     },
     "blue-ocean-strategy-canvas": {
-      "name": "Strategy Canvas",
       "tagline": "Plot a value curve per company across competitive factors — Blue Ocean Strategy"
+    },
+    "design-criteria-canvas": {
+      "tagline": "Turn vision, research, and constraints into decision standards"
+    },
+    "experiment-canvas": {
+      "tagline": "Turn risky assumptions into measurable validation experiments"
     }
   }
 }

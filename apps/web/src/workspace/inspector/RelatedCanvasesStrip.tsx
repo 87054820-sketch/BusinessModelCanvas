@@ -56,10 +56,7 @@ export function RelatedCanvasesStrip({
         {relatedDefIds.map((defId) => {
           const peer = newestByDef.get(defId);
           const exists = !!peer;
-          const localizedName = t(
-            `templates.${defId}.name`,
-            defNames[defId]?.[lang] ?? defId,
-          );
+          const localizedName = defNames[defId]?.[lang] ?? defId;
           return (
             <li key={defId}>
               <button

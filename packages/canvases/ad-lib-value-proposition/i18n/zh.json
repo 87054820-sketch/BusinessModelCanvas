@@ -3,7 +3,7 @@
   "blocks": {
     "products-services": {
       "title": "产品与服务",
-      "prompt": "你提供的东西。",
+      "prompt": "句式中的具体产品/服务是什么？",
       "examples": [
         "实时协作白板",
         "带时间点恢复的托管 PostgreSQL",
@@ -12,7 +12,7 @@
     },
     "customer-segment": {
       "title": "客户细分",
-      "prompt": "你服务的人群。",
+      "prompt": "这句话服务哪个具体客户细分？",
       "examples": [
         "A 轮创业公司的 CTO",
         "拥有 10–50 辆车的独立车队运营者",
@@ -21,7 +21,7 @@
     },
     "jobs-to-be-done": {
       "title": "客户任务",
-      "prompt": "客户想要完成的事。",
+      "prompt": "这个客户想完成什么具体任务？",
       "examples": [
         "把产品规格无返工地交付给研发",
         "持续满足各州不同的保险合规要求",
@@ -30,7 +30,7 @@
     },
     "pain-verb": {
       "title": "动词(如减少、避免)",
-      "prompt": "你如何缓解痛点。",
+      "prompt": "用哪个动词说明你如何缓解痛点？",
       "examples": [
         "减少",
         "消除",
@@ -39,7 +39,7 @@
     },
     "customer-pain": {
       "title": "客户痛点",
-      "prompt": "你解决的具体痛点。",
+      "prompt": "你要减少或避免哪个具体痛点？",
       "examples": [
         "数据库非计划停机带来的成本",
         "因人工理赔申报浪费的数周时间",
@@ -48,7 +48,7 @@
     },
     "gain-verb": {
       "title": "动词(如提升、启用)",
-      "prompt": "你如何创造收益。",
+      "prompt": "用哪个动词说明你如何创造收益？",
       "examples": [
         "提升",
         "启用",
@@ -57,7 +57,7 @@
     },
     "customer-gain": {
       "title": "客户收益",
-      "prompt": "你创造的具体收益。",
+      "prompt": "你要增加或实现哪个具体收益？",
       "examples": [
         "5 分钟内回滚生产环境",
         "按里程实时查看保费",
@@ -66,7 +66,7 @@
     },
     "competing-value-proposition": {
       "title": "竞争价值主张",
-      "prompt": "客户当前使用什么替代方案。",
+      "prompt": "客户今天使用什么替代方案？",
       "examples": [
         "在 EC2 上自管的 Postgres",
         "按里程估算的年度车队保险",

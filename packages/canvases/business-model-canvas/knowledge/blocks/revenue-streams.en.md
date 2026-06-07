@@ -1,1 +1,3 @@
-The cash a company generates from each customer segment. Mechanics: asset sale, usage fee, subscription, lending/renting, licensing, brokerage, advertising. Pricing: fixed list price, bargaining, auction, market-dependent, volume-dependent, yield management. Match each stream to the segment that pays it.
+This block asks: what value are customers truly willing to pay for, and how do you charge? Revenue can be transactional or recurring: product sales, subscriptions, usage fees, leasing, licensing, brokerage, advertising, or services.
+
+Map each stream to the customer segment that pays. Specify the pricing logic: fixed price, negotiation, dynamic pricing, usage-based pricing, yield management, or a hybrid.

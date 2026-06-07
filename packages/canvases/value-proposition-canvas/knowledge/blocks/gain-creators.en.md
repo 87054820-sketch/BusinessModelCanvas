@@ -1,1 +1,1 @@
-How your products and services create customer gains — outcomes the customer expects, desires, or would be surprised by. Useful gains: required (must-have), expected (basic functions), desired (would love), unexpected (delight). Be specific about which customer gain each creator addresses.
+How your products and services create specific gains customers expect, desire, or would be delighted by: better outcomes, time or cost savings, lower risk, status, confidence, or positive emotion. Each sticky should map to a named gain on the customer side.

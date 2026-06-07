@@ -1,25 +1,18 @@
 # When to use the Business Model Canvas
 
-The Business Model Canvas (BMC) is a one-page, nine-block view of how a
-business creates, delivers, and captures value. Reach for it when you need
-a **shared, fast-to-revise picture** of an entire business model — for a
-new venture, a strategic pivot, or just to align a team on what the
-current model actually is.
+Use the Business Model Canvas when a team needs to quickly align on how a business works. It is useful for comparing new ventures, product lines, strategic pivots, or current-state models on one page while exposing the assumptions that need validation.
 
 ## Reach for it when
 
-- You're stress-testing assumptions about a new business or product line.
-- You want to compare two or more strategic options side-by-side on one
-  page.
-- A team has different mental models of "how the business works" and you
-  need to surface the disagreement.
-- You're explaining the business to a new joiner, partner, or investor.
+- You are designing a new venture, product line, or strategic pivot.
+- You want to map an existing business so the team shares one picture.
+- You need to compare multiple business-model options side by side.
+- Product, sales, operations, finance, and leadership need to discuss the same logic.
+- You want to identify risky assumptions before committing major resources.
 
 ## Skip it when
 
-- You're solving a single, well-scoped operational problem (use a
-  smaller, more targeted tool).
-- Your unit of analysis is a single customer segment's value proposition
-  — use the **Value Proposition Canvas** instead.
-- You need to model multi-sided economics with rigorous numbers — the
-  BMC is a sketching tool, not a financial model.
+- You are solving one narrow operational issue with a clear boundary.
+- Your unit of analysis is one customer segment's value proposition — use the **Value Proposition Canvas** instead.
+- You need a full business plan, detailed financial forecast, or rigorous profit model.
+- You need to analyze external forces, competition, regulation, or industry structure — pair BMC with environment analysis, SWOT, Five Forces, or similar tools.

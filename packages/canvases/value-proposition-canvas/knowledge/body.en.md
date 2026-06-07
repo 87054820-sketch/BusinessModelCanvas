@@ -2,62 +2,59 @@
 
 The VPC has two sides that face each other:
 
-- **Customer profile** (right, the circle) — what's true *for the
-  customer*, regardless of your offering.
-- **Value map** (left, the square) — what's true *about your offering*,
-  regardless of any single customer.
+- **Customer profile** (right, the circle) — what is true for the customer: what they are trying to get done, what hurts, and what they want to achieve.
+- **Value map** (left, the square) — what is true about your offer: what you provide, which pains it relieves, and which gains it creates.
 
-Fit happens when the two sides line up.
+Fit happens when the two sides line up. A strong value proposition is not "many features"; it is a small set of capabilities that match the customer's most important jobs, pains, and gains.
 
 ## Customer profile
 
-- **Customer jobs** — the tasks customers are trying to get done in
-  their work or life. Functional, social, *and* emotional jobs all
-  count.
-- **Pains** — the bad outcomes, obstacles, and risks they want to
-  avoid.
-- **Gains** — the outcomes and benefits they want to achieve, including
-  required gains, expected gains, desired gains, and unexpected gains.
+Start with the customer, not the product.
 
-A good profile is concrete and specific. "Save time" is a placeholder;
-"finish the weekly forecast in under 30 minutes without a spreadsheet
-crash" is a job.
+- **Customer jobs** — the tasks customers are trying to get done in work or life. Functional, social, emotional jobs, and basic needs all count.
+- **Pains** — bad outcomes, obstacles, costs, risks, and negative emotions customers want to avoid before, during, or after a job.
+- **Gains** — outcomes customers expect, desire, or would be delighted by, including functional utility, social gains, positive emotions, and time or cost savings.
+
+A good profile is concrete and specific. "Save time" is a placeholder; "finish the weekly forecast in under 30 minutes without a spreadsheet crash" is a job. Then prioritize: which jobs matter most, which pains are most intense or frequent, and which gains drive choice?
 
 ## Value map
 
-- **Products and services** — what you actually put in front of the
-  customer.
-- **Pain relievers** — how, specifically, your offering removes one of
-  the customer's pains.
-- **Gain creators** — how, specifically, your offering produces a gain
-  the customer wants.
+The value map is not a product inventory. It is your response mechanism to the customer profile.
 
-Pain relievers and gain creators must point at *named items in the
-profile*. If they don't, you have features looking for a problem.
+- **Products and services** — what you actually put in front of the customer: physical goods, digital products, services, rights, financial products, and so on.
+- **Pain relievers** — how your offer reduces, removes, or avoids a specific customer pain.
+- **Gain creators** — how your offer produces a specific expected, desired, or surprising customer gain.
 
-## Achieving fit
+Pain relievers and gain creators must point at named items in the profile. If they do not, you have features looking for a problem.
 
-1. **Sketch a profile** for one customer segment. Don't blend segments.
-2. **Sketch the value map** of what you're considering offering.
-3. **Match line by line.** Every pain reliever should resolve a listed
-   pain; every gain creator should produce a listed gain.
-4. **Mark unmatched items** on both sides — they're either unmet
-   opportunities (profile side) or unjustified features (value-map
-   side).
-5. **Test the matches with real customers** before scaling investment.
-   Fit is a hypothesis until evidence says otherwise.
+## Three levels of fit
+
+1. **Problem-Solution Fit**: does your solution truly respond to the customer's key jobs, pains, and gains?
+2. **Product-Market Fit**: do real customers in the market need, use, and value the proposition?
+3. **Business Model Fit**: can the proposition live inside a profitable, scalable, and sustainable business model?
+
+The VPC mainly helps you work toward the first two levels. Then zoom back out to the Business Model Canvas to test whether the whole business works.
+
+## How to use and test it
+
+1. **Choose one customer segment**. Do not blend several groups into one profile.
+2. **Map the customer profile first**, then the value map. Do not invent pains to justify existing features.
+3. **Match line by line**: every pain reliever should resolve a specific pain; every gain creator should produce a specific gain.
+4. **Mark unmatched items**: unmet profile items are opportunities; unmatched value-map items are features without a clear reason to exist.
+5. **Test with evidence**: use interviews, keyword ads, landing pages, feature-priority tests, or willingness-to-pay tests.
+
+A useful testing sequence is: test the customer profile first (Circle), then test whether the value map is attractive (Square), then test whether customers will pay or switch (Rectangle).
 
 ## Common failure modes
 
-- Inventing pains and gains to retrofit features you've already built.
-- Mixing several customer segments into one profile, which makes the
-  pains and gains list incoherent.
-- Treating "products and services" as the most important block — it's
-  actually the least informative; the relievers and creators are where
-  the argument lives.
+- Mixing several customer segments into one profile, which makes the jobs, pains, and gains incoherent.
+- Focusing only on functional jobs and missing social or emotional jobs.
+- Inventing pains and gains to retrofit features you already built.
+- Trying to solve every pain and create every gain instead of focusing on the few that matter most.
+- Treating "products and services" as the most important block — the real argument lives in pain relievers and gain creators.
 
 ## Reading further
 
 - *Value Proposition Design* — Osterwalder, Pigneur, Bernarda, Smith.
-- Pair with the **Business Model Canvas** to zoom out from a single
-  segment's fit to the whole business.
+- Pair with the **Ad-Lib Value Proposition** to compress the expanded canvas into a testable one-line statement.
+- Pair with the **Business Model Canvas** to zoom out from one segment's fit to the whole business model.

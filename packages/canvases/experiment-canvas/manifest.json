@@ -1,0 +1,60 @@
+{
+  "id": "experiment-canvas",
+  "name": {
+    "en": "Experiment Canvas",
+    "zh": "实验画布"
+  },
+  "viewBox": [0, 0, 1200, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "canvas": {
+      "showBlockPrompts": true
+    },
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockPrompts": true,
+      "subtitle": {
+        "en": "Turn risky assumptions into measurable learning experiments",
+        "zh": "把高风险假设转化为可衡量的学习实验"
+      }
+    }
+  },
+  "related": ["design-criteria-canvas", "value-proposition-canvas", "business-model-canvas"],
+  "zones": [
+    {
+      "id": "riskiest-assumption",
+      "shape": { "type": "rect", "x": 60, "y": 120, "w": 360, "h": 170 },
+      "label": { "x": 82, "y": 158, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "falsifiable-hypothesis",
+      "shape": { "type": "rect", "x": 420, "y": 120, "w": 720, "h": 170 },
+      "label": { "x": 442, "y": 158, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "experiment-setup",
+      "shape": { "type": "rect", "x": 60, "y": 290, "w": 1080, "h": 240 },
+      "label": { "x": 82, "y": 328, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "metrics-criteria",
+      "shape": { "type": "rect", "x": 60, "y": 530, "w": 360, "h": 190 },
+      "label": { "x": 82, "y": 568, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "results-conclusion",
+      "shape": { "type": "rect", "x": 420, "y": 530, "w": 360, "h": 190 },
+      "label": { "x": 442, "y": 568, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "next-steps",
+      "shape": { "type": "rect", "x": 780, "y": 530, "w": 360, "h": 190 },
+      "label": { "x": 802, "y": 568, "align": "left", "fontSize": 20 }
+    }
+  ]
+}

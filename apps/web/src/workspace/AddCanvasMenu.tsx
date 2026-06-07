@@ -55,7 +55,7 @@ export function AddCanvasMenu({ onPick, compact = false }: Props) {
           onClick={() => setOpen((v) => !v)}
           aria-label={t('workspace.addCanvas')}
           title={t('workspace.addCanvas')}
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-dashed border-gray-300 text-base text-gray-500 hover:border-gray-400 hover:text-gray-900"
+          className="brand-primary-button flex h-10 w-10 items-center justify-center rounded-xl text-lg font-semibold transition-all active:scale-[0.96]"
         >
           +
         </button>
@@ -63,7 +63,7 @@ export function AddCanvasMenu({ onPick, compact = false }: Props) {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="w-full rounded-lg border border-dashed border-gray-300 px-3 py-2 text-left text-xs text-gray-600 hover:border-gray-400 hover:text-gray-900"
+          className="brand-primary-button flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold transition-all active:scale-[0.98]"
         >
           {t('workspace.addCanvas')}
         </button>
@@ -95,7 +95,7 @@ export function AddCanvasMenu({ onPick, compact = false }: Props) {
                 <CanvasThumb id={d.id} />
                 <div className="flex-1">
                   <div className="text-sm font-medium text-gray-900">
-                    {t(`templates.${d.id}.name`, d.name[lang])}
+                    {d.name[lang]}
                   </div>
                   <div className="text-[11px] text-gray-500">
                     {t(`templates.${d.id}.tagline`, '')}

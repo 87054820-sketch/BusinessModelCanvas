@@ -116,6 +116,13 @@ export interface CanvasDef {
    */
   objectTypes?: ObjectType[];
   /**
+   * Template-specific display hints. These keep visual presentation choices
+   * in the canvas bundle instead of hard-coding canvas ids in React.
+   */
+  display?: CanvasDisplayConfig;
+  /** Default per-canvas sticky colour meanings seeded into an empty canvas doc. */
+  defaultColorLegend?: CanvasDefaultColorLegendEntry[];
+  /**
    * Chart-canvas configuration. Required when `plugin === 'chart-canvas'`,
    * otherwise unused. The Y axis is fixed at canvas-template level (a 0–5
    * scale for Strategy Canvas, a –2..+2 sentiment scale for Customer
@@ -124,6 +131,44 @@ export interface CanvasDef {
    * on first open so it isn't blank.
    */
   chart?: ChartConfig;
+}
+
+export interface CanvasDisplayConfig {
+  canvas?: {
+    /** Show zone/block titles on the live canvas. Defaults to true. */
+    showBlockLabels?: boolean;
+    /** Show each block's short prompt under its title on the live canvas. */
+    showBlockPrompts?: boolean;
+    /** Higher-level section labels rendered over the canvas. */
+    groupLabels?: CanvasGroupLabel[];
+  };
+  preview?: {
+    /** `structured` renders title/subtitle/block prompts over the SVG background. */
+    mode?: 'image' | 'structured' | 'chart-sample';
+    showTitle?: boolean;
+    showSubtitle?: boolean;
+    showBlockLabels?: boolean;
+    showBlockPrompts?: boolean;
+    subtitle?: LocalizedLabel;
+    /** Higher-level section labels rendered over the template preview. */
+    groupLabels?: CanvasGroupLabel[];
+  };
+}
+
+export interface CanvasGroupLabel {
+  id: string;
+  label: LocalizedLabel;
+  description?: LocalizedLabel;
+  x: number;
+  y: number;
+  align?: 'left' | 'center' | 'right';
+  fontSize?: number;
+}
+
+export interface CanvasDefaultColorLegendEntry {
+  hex: StickyColor;
+  label: LocalizedLabel;
+  description?: LocalizedLabel;
 }
 
 /**

@@ -9,27 +9,40 @@
     "en": "bg.en.svg",
     "zh": "bg.zh.svg"
   },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false,
+      "subtitle": {
+        "en": "Map a customer's needs, key moments, and emotional curve across stages",
+        "zh": "按阶段呈现客户需求、关键时刻与情绪曲线"
+      }
+    }
+  },
   "related": ["empathy-map", "value-proposition-canvas", "jobs-to-be-done"],
   "zones": [
     {
       "id": "persona",
       "shape": { "type": "rect", "x": 40, "y": 20, "w": 1320, "h": 80 },
-      "label": { "x": 60, "y": 65, "align": "left" }
+      "label": { "x": 60, "y": 68, "align": "left", "fontSize": 26 }
     },
     {
       "id": "needs",
       "shape": { "type": "rect", "x": 220, "y": 120, "w": 1140, "h": 220 },
-      "label": { "x": 60, "y": 165, "align": "left", "fontSize": 22 }
+      "label": { "x": 60, "y": 166, "align": "left", "fontSize": 28 }
     },
     {
       "id": "key-moment",
       "shape": { "type": "rect", "x": 220, "y": 360, "w": 1140, "h": 270 },
-      "label": { "x": 60, "y": 405, "align": "left", "fontSize": 22 }
+      "label": { "x": 60, "y": 406, "align": "left", "fontSize": 28 }
     },
     {
       "id": "satisfaction",
       "shape": { "type": "rect", "x": 220, "y": 650, "w": 1140, "h": 230 },
-      "label": { "x": 60, "y": 695, "align": "left", "fontSize": 22 }
+      "label": { "x": 60, "y": 696, "align": "left", "fontSize": 28 }
     }
   ]
 }

@@ -3,7 +3,7 @@
   "blocks": {
     "key-partners": {
       "title": "Key Partners",
-      "prompt": "Who helps you deliver this business model?",
+      "prompt": "Who are your key partners and key suppliers?",
       "examples": [
         "Cloud infrastructure provider (AWS / Aliyun)",
         "Channel reseller in Southeast Asia",
@@ -12,7 +12,7 @@
     },
     "key-activities": {
       "title": "Key Activities",
-      "prompt": "What does your business do every day to deliver the value proposition?",
+      "prompt": "What must you do to deliver the value proposition?",
       "examples": [
         "Continuous product engineering",
         "Customer onboarding workshops",
@@ -21,7 +21,7 @@
     },
     "key-resources": {
       "title": "Key Resources",
-      "prompt": "What strategic assets do you absolutely need?",
+      "prompt": "What resources are required to deliver the value proposition?",
       "examples": [
         "Proprietary recommendation algorithm",
         "10-year clinical trial dataset",
@@ -30,7 +30,7 @@
     },
     "value-propositions": {
       "title": "Value Propositions",
-      "prompt": "What value do you deliver to which customer?",
+      "prompt": "What value do you deliver, and what customer need do you satisfy?",
       "examples": [
         "Cut bookkeeping time from 5h to 30min per week",
         "Same-day delivery within Tier-1 cities",
@@ -39,7 +39,7 @@
     },
     "customer-relationships": {
       "title": "Customer Relationships",
-      "prompt": "How does each segment expect you to engage?",
+      "prompt": "What relationship does each customer segment expect?",
       "examples": [
         "Self-serve onboarding + in-app chat",
         "Dedicated CSM for accounts > $50k ARR",
@@ -48,7 +48,7 @@
     },
     "channels": {
       "title": "Channels",
-      "prompt": "How do you reach customers?",
+      "prompt": "How do your customer segments want to be reached?",
       "examples": [
         "Direct sales team",
         "Self-serve web purchase",
@@ -57,7 +57,7 @@
     },
     "customer-segments": {
       "title": "Customer Segments",
-      "prompt": "For whom are you creating value?",
+      "prompt": "Who are your customers, and who are the most important ones?",
       "examples": [
         "Mid-market SaaS teams (50–500 seats)",
         "Independent consultants billing clients",
@@ -66,7 +66,7 @@
     },
     "cost-structure": {
       "title": "Cost Structure",
-      "prompt": "What does running this business cost?",
+      "prompt": "What are the most important costs in this model?",
       "examples": [
         "Cloud compute & storage (~38% of OpEx)",
         "R&D headcount (~45% of OpEx)",
@@ -75,7 +75,7 @@
     },
     "revenue-streams": {
       "title": "Revenue Streams",
-      "prompt": "What are customers willing to pay for?",
+      "prompt": "For what value are customers really willing to pay?",
       "examples": [
         "Monthly per-seat SaaS subscription",
         "Usage-based API metering",

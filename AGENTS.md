@@ -34,6 +34,8 @@
 
 7. **AI/seed writes** — `POST /canvases/:id/stickies/bulk` is how Claude / seed scripts produce stickies in batch. Replace-mode JSON. Live runtime sync still flows through `PUT /canvases/:id/state`.
 
+8. **Canvas display contract** (`docs/CANVAS_DISPLAY_CONTRACT.md`) — before adding or changing any canvas bundle, follow this contract. Do not duplicate canvas title/subtitle across SVG, modal preview, and right knowledge panel. Zone labels come from `i18n`; preview/live display choices come from `manifest.display`; sticky colour meanings come from `defaultColorLegend`, not SVG artwork.
+
 ---
 
 ## Where Things Live

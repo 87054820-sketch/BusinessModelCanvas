@@ -3,20 +3,7 @@
   <rect x="0" y="0" width="1400" height="900" fill="#FAFAF7"/>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-    <text x="40" y="32" font-size="20" font-weight="700" fill="#1F2937">JTBD 工作故事</text>
-    <text x="40" y="55" font-size="13" font-style="italic" fill="#6B7280">当 ___,我想 ___,从而我能 ___</text>
-
-    <g font-size="12" fill="#374151">
-      <circle cx="1100" cy="40" r="5" fill="#FCD34D"/>
-      <text x="1113" y="44">功能性</text>
-
-      <circle cx="1180" cy="40" r="5" fill="#F9A8D4"/>
-      <text x="1193" y="44">情感性</text>
-
-      <circle cx="1260" cy="40" r="5" fill="#93C5FD"/>
-      <text x="1273" y="44">社交性</text>
-    </g>
-    <text x="1100" y="60" font-size="11" fill="#9CA3AF">建议用便签颜色区分</text>
+    <text x="40" y="52" font-size="13" font-style="italic" fill="#6B7280">当 ___,我想 ___,从而我能 ___</text>
   </g>
 
   <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">

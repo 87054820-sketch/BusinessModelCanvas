@@ -1,1 +1,1 @@
-A verb describing how your offering relieves the customer's pain. Pair with the customer pain on the right.
+Choose a verb that explains how you relieve pain: reducing, eliminating, avoiding, lowering. It should connect naturally to the specific customer pain on the right.

@@ -2,31 +2,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" preserveAspectRatio="xMidYMid meet">
   <rect x="0" y="0" width="1200" height="800" fill="#FAFAF7"/>
 
-  <!-- Value Map: square with three radial dividers from centre (340,400) to corners + right edge midpoint
-       → Gain Creators (top), Products & Services (left), Pain Relievers (bottom).
-       The east divider points toward the customer profile, mirroring the circle's west divider. -->
+  <!-- Value Map: square with three radial dividers.
+       Gain Creators (top), Products & Services (left), Pain Relievers (bottom). -->
   <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
-    <rect x="40" y="100" width="600" height="600"/>
-    <line x1="340" y1="400" x2="40"  y2="100"/>
-    <line x1="340" y1="400" x2="40"  y2="700"/>
-    <line x1="340" y1="400" x2="640" y2="400"/>
+    <rect x="60" y="145" width="540" height="540"/>
+    <line x1="330" y1="415" x2="60"  y2="145"/>
+    <line x1="330" y1="415" x2="60"  y2="685"/>
+    <line x1="330" y1="415" x2="600" y2="415"/>
   </g>
 
-  <!-- Customer Profile: circle with three radial dividers (180° west, 330° upper-right, 30° lower-right)
-       → Gains (top), Customer Jobs (right), Pains (bottom). Sized 240r and shifted right (cx=940)
-       so there is a clean gap between square and circle for the connector arrows. -->
+  <!-- Customer Profile: circle with three radial dividers.
+       Gains (top), Customer Jobs (right), Pains (bottom). -->
   <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
-    <circle cx="940" cy="400" r="240"/>
-    <line x1="940" y1="400" x2="700" y2="400"/>
-    <line x1="940" y1="400" x2="1148" y2="280"/>
-    <line x1="940" y1="400" x2="1148" y2="520"/>
+    <circle cx="900" cy="415" r="220"/>
+    <line x1="900" y1="415" x2="680" y2="415"/>
+    <line x1="900" y1="415" x2="1090.5" y2="305"/>
+    <line x1="900" y1="415" x2="1090.5" y2="525"/>
   </g>
 
-  <!-- Connector: square → ←  circle (matching Strategyzer convention; dual arrowheads facing each other) -->
+  <!-- Connector: value map → ← customer profile. -->
   <g stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
-    <line x1="640" y1="400" x2="655" y2="400"/>
-    <polygon points="655,395 655,405 665,400" fill="#1F2937" stroke="none"/>
-    <line x1="700" y1="400" x2="685" y2="400"/>
-    <polygon points="685,395 685,405 675,400" fill="#1F2937" stroke="none"/>
+    <line x1="600" y1="415" x2="625" y2="415"/>
+    <polygon points="625,410 625,420 635,415" fill="#1F2937" stroke="none"/>
+    <line x1="680" y1="415" x2="655" y2="415"/>
+    <polygon points="655,410 655,420 645,415" fill="#1F2937" stroke="none"/>
   </g>
 </svg>

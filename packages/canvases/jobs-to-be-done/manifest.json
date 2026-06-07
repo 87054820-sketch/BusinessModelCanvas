@@ -9,6 +9,41 @@
     "en": "bg.en.svg",
     "zh": "bg.zh.svg"
   },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    }
+  },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Functional Jobs", "zh": "功能性任务" },
+      "description": {
+        "en": "Practical tasks, goals, or problems the customer wants to get done.",
+        "zh": "客户想完成的实际任务、目标或问题。"
+      }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Emotional Jobs", "zh": "情感性任务" },
+      "description": {
+        "en": "How the customer wants to feel before, during, or after the job.",
+        "zh": "客户在任务前、中、后想获得或避免的情绪感受。"
+      }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "Social Jobs", "zh": "社交性任务" },
+      "description": {
+        "en": "How the customer wants to be perceived by others.",
+        "zh": "客户希望被他人如何看待。"
+      }
+    }
+  ],
   "related": ["value-proposition-canvas", "empathy-map", "ad-lib-value-proposition", "customer-journey"],
   "zones": [
     {

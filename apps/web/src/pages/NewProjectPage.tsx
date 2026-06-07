@@ -48,12 +48,9 @@ export function NewProjectPage() {
 
   if (!identity) return null;
 
-  // Localised name for the pre-selected canvas. Prefer the app's
-  // `templates.{id}.name` i18n key (curated copy); fall back to the
-  // server's `name[lang]` if the key isn't defined.
-  const withCanvasName = withCanvas
-    ? t(`templates.${withCanvas.id}.name`, withCanvas.name[lang])
-    : null;
+  // Localised name for the pre-selected canvas. Canvas names are owned by
+  // each bundle's manifest so template cards, modals and creation flows stay consistent.
+  const withCanvasName = withCanvas ? withCanvas.name[lang] : null;
 
   // Use an explicit click handler instead of <form onSubmit> — bypasses any
   // browser/IME edge cases where form submission doesn't fire after Chinese

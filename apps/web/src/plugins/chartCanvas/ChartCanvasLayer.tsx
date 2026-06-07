@@ -33,7 +33,9 @@ export function ChartCanvasLayer({ def, doc }: PluginProps) {
   const yAxis = def.chart.yAxis;
   const rect = chartRect(def.viewBox);
   const yTicks = yAxisTicks(yAxis);
-  const factorCount = factors.length;
+  const hasFactors = factors.length > 0;
+  const displayFactors = hasFactors ? factors : def.chart.factorsDefault;
+  const factorCount = displayFactors.length;
   const rotateFactorLabels = factorCount > 7;
 
   const yAxisLabel = resolveChartLabel(yAxis.label, overrides.yAxisLabel, lang);
@@ -117,50 +119,87 @@ export function ChartCanvasLayer({ def, doc }: PluginProps) {
       />
 
       {/* Factors */}
-      {factorCount === 0 ? (
+      {displayFactors.map((f, i) => {
+        const x = xForFactor(rect, i, factorCount);
+        const label = resolveLabel(f, lang);
+        return (
+          <g key={f.id} opacity={hasFactors ? 1 : 0.48}>
+            <line
+              x1={x}
+              x2={x}
+              y1={rect.y}
+              y2={rect.y + rect.h}
+              stroke={hasFactors ? '#F3F4F6' : '#E5E7EB'}
+              strokeWidth={1}
+              strokeDasharray={hasFactors ? undefined : '6 8'}
+            />
+            <text
+              x={x}
+              y={rect.y + rect.h + 28}
+              fontSize={12}
+              fill={hasFactors ? '#1F2937' : '#6B7280'}
+              textAnchor={rotateFactorLabels ? 'end' : 'middle'}
+              transform={
+                rotateFactorLabels
+                  ? `rotate(-25 ${x} ${rect.y + rect.h + 28})`
+                  : undefined
+              }
+            >
+              {label}
+            </text>
+          </g>
+        );
+      })}
+      {!hasFactors && <ChartEmptyState rect={rect} lang={lang} />}
+    </g>
+  );
+}
+
+function ChartEmptyState({
+  rect,
+  lang,
+}: {
+  rect: ReturnType<typeof chartRect>;
+  lang: Lang;
+}) {
+  const title = lang === 'zh' ? '先定义竞争因子' : 'Define competitive factors first';
+  const steps = lang === 'zh'
+    ? ['在右侧添加 5–15 个竞争因子', '添加行业平均或竞品曲线', '为每个因子放置评分点']
+    : ['Add 5–15 competitive factors on the right', 'Create industry or competitor curves', 'Place score points for each factor'];
+
+  return (
+    <g aria-label="chart-empty-state">
+      <rect
+        x={rect.x + rect.w * 0.22}
+        y={rect.y + rect.h * 0.28}
+        width={rect.w * 0.56}
+        height={rect.h * 0.32}
+        rx={18}
+        fill="#FFFFFF"
+        fillOpacity={0.92}
+        stroke="#E5E7EB"
+      />
+      <text
+        x={rect.x + rect.w / 2}
+        y={rect.y + rect.h * 0.36}
+        fontSize={20}
+        fontWeight={700}
+        fill="#1F2937"
+        textAnchor="middle"
+      >
+        {title}
+      </text>
+      {steps.map((step, index) => (
         <text
-          x={rect.x + rect.w / 2}
-          y={rect.y + rect.h / 2}
-          fontSize={14}
-          fill="#9CA3AF"
-          textAnchor="middle"
+          key={step}
+          x={rect.x + rect.w * 0.32}
+          y={rect.y + rect.h * (0.43 + index * 0.06)}
+          fontSize={15}
+          fill="#4B5563"
         >
-          {lang === 'zh'
-            ? '在右侧添加竞争因子以开始'
-            : 'Add competitive factors in the inspector to begin'}
+          {index + 1}. {step}
         </text>
-      ) : (
-        factors.map((f, i) => {
-          const x = xForFactor(rect, i, factorCount);
-          const label = resolveLabel(f, lang);
-          return (
-            <g key={f.id}>
-              <line
-                x1={x}
-                x2={x}
-                y1={rect.y}
-                y2={rect.y + rect.h}
-                stroke="#F3F4F6"
-                strokeWidth={1}
-              />
-              <text
-                x={x}
-                y={rect.y + rect.h + 28}
-                fontSize={12}
-                fill="#1F2937"
-                textAnchor={rotateFactorLabels ? 'end' : 'middle'}
-                transform={
-                  rotateFactorLabels
-                    ? `rotate(-25 ${x} ${rect.y + rect.h + 28})`
-                    : undefined
-                }
-              >
-                {label}
-              </text>
-            </g>
-          );
-        })
-      )}
+      ))}
     </g>
   );
 }

@@ -1,67 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  JTBD Story canvas (Make Us Proud's Job Story format, grounded in
-  Christensen's Jobs Theory). Three top columns spell out the canonical
-  Job Story sentence — "When ___, I want to ___, so I can ___" — and a
-  fourth wide row underneath captures the emotional + social jobs that
-  always sit beside the functional one. Block titles render via React
-  (ZoneLabel + i18n bundles); this SVG carries the geometry, the
-  decorative header sentence, helper questions, and the F/E/S legend.
-
-  Layout (1400 × 900):
-    Header strip (decorative)            y =   0..70
-      title + sentence + legend          (no zone)
-    Three Job Story columns              y =  80..580 (h = 500)
-      situation       x =  40..460
-      motivation      x = 490..910
-      ideal-outcome   x = 940..1360
-    Emotional + Social bottom row        y = 600..880 (h = 280)
-      emotional-social x = 40..1360
+  JTBD Story canvas. The semantic Functional / Emotional / Social colours
+  are seeded into the interactive sticky colour legend, not drawn here.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" preserveAspectRatio="xMidYMid meet">
   <rect x="0" y="0" width="1400" height="900" fill="#FAFAF7"/>
 
-  <!-- Header strip: canvas title + Job Story sentence + F/E/S legend.
-       Decorative only; no hit-test. -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-    <text x="40" y="32" font-size="20" font-weight="700" fill="#1F2937">JTBD Story</text>
-    <text x="40" y="55" font-size="13" font-style="italic" fill="#6B7280">When ___, I want to ___, so I can ___</text>
-
-    <!-- F/E/S legend (top-right). The dots are a hint that teams should
-         color-code their stickies (Functional / Emotional / Social) using
-         the per-project color legend. -->
-    <g font-size="12" fill="#374151">
-      <circle cx="1080" cy="40" r="5" fill="#FCD34D"/>
-      <text x="1093" y="44">Functional</text>
-
-      <circle cx="1180" cy="40" r="5" fill="#F9A8D4"/>
-      <text x="1193" y="44">Emotional</text>
-
-      <circle cx="1278" cy="40" r="5" fill="#93C5FD"/>
-      <text x="1291" y="44">Social</text>
-    </g>
-    <text x="1080" y="60" font-size="11" fill="#9CA3AF">suggest sticky colors</text>
+    <text x="40" y="52" font-size="13" font-style="italic" fill="#6B7280">When ___, I want to ___, so I can ___</text>
   </g>
 
-  <!-- Three Job Story columns. ZoneLabel renders the column titles
-       ("When", "I want to", "So I can") at the manifest's label
-       coordinates; helper subtitle + question sits just beneath in
-       light grey. -->
   <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
     <rect x="40"  y="80" width="420" height="500"/>
     <rect x="490" y="80" width="420" height="500"/>
     <rect x="940" y="80" width="420" height="500"/>
   </g>
 
-  <!-- Subtitles (decorative). Each column's role under the Job Story
-       sentence — "circumstance", "motivation/action", "outcome/progress". -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">
     <text x="60"  y="148">Situation · circumstance</text>
     <text x="510" y="148">Motivation · action</text>
     <text x="960" y="148">Outcome · progress</text>
   </g>
 
-  <!-- Helper questions in lighter grey. -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#9CA3AF">
     <text x="60"  y="178">What just happened?</text>
     <text x="60"  y="195">What triggers this need now?</text>
@@ -73,16 +33,10 @@
     <text x="960" y="195">What does success look or feel like?</text>
   </g>
 
-  <!-- Bottom strip: Emotional + Social jobs. Wider than the columns to
-       signal "this row spans all of the stories above." -->
   <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
     <rect x="40" y="600" width="1320" height="280"/>
   </g>
 
-  <!-- Subtitle + helpers for the emotional/social row. The dotted vertical
-       midline is a soft visual hint, not a hit-test boundary, suggesting
-       teams keep emotional jobs left of centre and social jobs right of
-       centre. -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
     <text x="60"  y="668" font-size="13" fill="#6B7280">Pair every functional Job Story above with at least one emotional and one social companion job.</text>
     <text x="60"  y="700" font-size="12" fill="#9CA3AF">Emotional — what does the customer want to feel? (e.g. "feel calm during close week")</text>

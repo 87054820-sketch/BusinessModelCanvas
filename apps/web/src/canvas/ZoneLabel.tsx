@@ -5,6 +5,7 @@ interface Props {
   zone: ZoneDef;
   i18n: CanvasI18n;
   lang: Lang;
+  showPrompt?: boolean;
 }
 
 /**
@@ -19,7 +20,7 @@ interface Props {
  * every label to the bounding-box top-left, which made overlapping zones
  * stack their labels — visible in VPC where 3 polygons share a square.)
  */
-export function ZoneLabel({ zone, i18n }: Props) {
+export function ZoneLabel({ zone, i18n, showPrompt = false }: Props) {
   const block = i18n.blocks[zone.id];
   if (!block) return null;
 
@@ -30,6 +31,9 @@ export function ZoneLabel({ zone, i18n }: Props) {
   // Allow the manifest to override the default 18-px label font when a
   // canvas's blocks are much bigger than usual (e.g. JTBD).
   const fontSize = pos.fontSize ?? 18;
+  const promptLines = showPrompt && block.prompt
+    ? wrapLabel(block.prompt, promptMaxChars(zone.shape))
+    : [];
 
   return (
     <text
@@ -37,14 +41,60 @@ export function ZoneLabel({ zone, i18n }: Props) {
       y={pos.y}
       textAnchor={anchor}
       fontFamily="Inter, 'PingFang SC', system-ui, sans-serif"
-      fontSize={fontSize}
-      fontWeight={600}
-      fill="#111827"
       pointerEvents="none"
     >
-      {block.title}
+      <tspan
+        x={pos.x}
+        dy={0}
+        fontSize={fontSize}
+        fontWeight={700}
+        fill="#111827"
+      >
+        {block.title}
+      </tspan>
+      {promptLines.map((line, index) => (
+        <tspan
+          key={`${zone.id}-prompt-${index}`}
+          x={pos.x}
+          dy={index === 0 ? fontSize * 1.15 : fontSize * 0.9}
+          fontSize={Math.max(11, fontSize * 0.58)}
+          fontWeight={500}
+          fill="#4B5563"
+        >
+          {line}
+        </tspan>
+      ))}
     </text>
   );
+}
+
+function wrapLabel(text: string, maxChars: number): string[] {
+  const normalized = text.trim();
+  if (!normalized) return [];
+  const parts = normalized.includes(' ')
+    ? normalized.split(/\s+/)
+    : Array.from(normalized);
+  const lines: string[] = [];
+  let current = '';
+  for (const part of parts) {
+    const next = current
+      ? normalized.includes(' ') ? `${current} ${part}` : `${current}${part}`
+      : part;
+    if (next.length > maxChars && current) {
+      lines.push(current);
+      current = part;
+    } else {
+      current = next;
+    }
+    if (lines.length >= 2) break;
+  }
+  if (current && lines.length < 2) lines.push(current);
+  return lines;
+}
+
+function promptMaxChars(shape: ZoneShape): number {
+  if (shape.type === 'rect') return shape.w >= 500 ? 36 : 18;
+  return 20;
 }
 
 function defaultLabelPos(

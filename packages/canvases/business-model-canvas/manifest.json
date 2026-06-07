@@ -9,7 +9,22 @@
     "en": "bg.en.svg",
     "zh": "bg.zh.svg"
   },
-  "related": ["business-model-environment", "value-proposition-canvas", "portfolio-map"],
+  "display": {
+    "canvas": {
+      "showBlockPrompts": true
+    },
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockPrompts": true,
+      "subtitle": {
+        "en": "Describe how a business creates, delivers, and captures value in 9 blocks",
+        "zh": "用 9 个模块描述业务如何创造、交付并获取价值"
+      }
+    }
+  },
+  "related": ["business-model-environment", "value-proposition-canvas", "portfolio-map", "design-criteria-canvas", "experiment-canvas"],
   "zones": [
     {
       "id": "key-partners",

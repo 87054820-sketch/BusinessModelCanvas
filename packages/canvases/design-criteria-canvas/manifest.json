@@ -1,0 +1,50 @@
+{
+  "id": "design-criteria-canvas",
+  "name": {
+    "en": "Design Criteria Canvas",
+    "zh": "设计准则画布"
+  },
+  "viewBox": [0, 0, 1200, 820],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "canvas": {
+      "showBlockPrompts": true
+    },
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockPrompts": true,
+      "subtitle": {
+        "en": "Turn vision, research, and constraints into clear design standards",
+        "zh": "把愿景、研究和约束转成清晰的设计判断标准"
+      }
+    }
+  },
+  "related": ["business-model-canvas", "value-proposition-canvas", "experiment-canvas"],
+  "zones": [
+    {
+      "id": "must-have",
+      "shape": { "type": "rect", "x": 60, "y": 120, "w": 1080, "h": 150 },
+      "label": { "x": 86, "y": 158, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "should-have",
+      "shape": { "type": "rect", "x": 60, "y": 270, "w": 1080, "h": 150 },
+      "label": { "x": 86, "y": 308, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "could-have",
+      "shape": { "type": "rect", "x": 60, "y": 420, "w": 1080, "h": 150 },
+      "label": { "x": 86, "y": 458, "align": "left", "fontSize": 22 }
+    },
+    {
+      "id": "wont-have",
+      "shape": { "type": "rect", "x": 60, "y": 570, "w": 1080, "h": 150 },
+      "label": { "x": 86, "y": 608, "align": "left", "fontSize": 22 }
+    }
+  ]
+}

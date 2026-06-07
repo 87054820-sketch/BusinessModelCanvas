@@ -1,1 +1,1 @@
-Name the alternative — direct competitor, workaround, or doing nothing. The contrast is what makes your proposition pitchable.
+Name what customers use today: a direct competitor, workaround, internal process, or doing nothing. This contrast creates differentiation and explains why customers should switch.

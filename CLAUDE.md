@@ -43,6 +43,8 @@ These are the load-bearing abstractions that let the project scale without rewri
 
 7. **AI/seed writes** — `POST /canvases/:id/stickies/bulk` (`apps/server/src/http/stickyImport.ts`) is how Claude / seed scripts / a future AI Copilot produce stickies in batch. **Replace-mode** JSON: the entire stickies map is rebuilt from the payload. Mirrors the web client's `addSticky` Yjs encoding (`apps/web/src/collab/stickies.ts` is the source of truth) so `useStickies` decodes the result correctly. Live runtime sync (multi-cursor, per-keystroke edits) still flows through `PUT /canvases/:id/state` — the two are intentionally separate seams: CRDT for live editing, batch JSON for seed/import.
 
+8. **Canvas display contract** (`docs/CANVAS_DISPLAY_CONTRACT.md`) — read this before adding or changing any canvas bundle. Do not duplicate canvas title/subtitle across SVG, modal preview, and right knowledge panel. Zone labels come from `i18n`; preview/live display choices come from `manifest.display`; sticky colour meanings come from `defaultColorLegend`, not SVG artwork.
+
 ## Where things live
 
 ```

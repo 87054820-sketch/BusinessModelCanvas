@@ -71,13 +71,19 @@ export function useYDoc(canvasId: string | undefined, displayName: string): Resu
       cancelled = true;
       ydoc.off('update', onUpdate);
       if (saveTimer.current) clearTimeout(saveTimer.current);
-      // Flush any pending change synchronously so refresh-after-edit is safe.
+      // Flush any pending change with identity headers so updatedBy stays useful
+      // for identity restoration on the next app launch.
       const state = Y.encodeStateAsUpdate(ydoc);
       const flushBody = new Uint8Array(state).buffer;
-      navigator.sendBeacon?.(
-        `${BASE}/canvases/${canvasId}/state`,
-        new Blob([flushBody], { type: 'application/octet-stream' }),
-      );
+      void fetch(`${BASE}/canvases/${canvasId}/state`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/octet-stream',
+          'X-Display-Name': displayName,
+        },
+        body: flushBody,
+        keepalive: true,
+      });
       ydoc.destroy();
     };
   }, [canvasId, displayName]);

@@ -125,7 +125,7 @@ export function ProjectListPage() {
                     <CanvasThumb id={d.id} width={108} height={64} />
                   </div>
                   <div className="mt-2 truncate text-sm font-medium text-gray-900">
-                    {t(`templates.${d.id}.name`, d.name[lang])}
+                    {d.name[lang]}
                   </div>
                   <div className="mt-0.5 line-clamp-2 text-[11px] leading-relaxed text-gray-500">
                     {t(`templates.${d.id}.tagline`, '')}
@@ -267,7 +267,7 @@ function CenterState({
         <button
           type="button"
           onClick={() => navigate('/p/new')}
-          className="rounded-xl bg-emerald-600 px-9 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-600/20 transition-all hover:bg-emerald-700 hover:shadow-xl hover:shadow-emerald-600/30 active:scale-[0.98]"
+          className="brand-primary-button rounded-xl px-9 py-3.5 text-base font-semibold transition-all active:scale-[0.98]"
         >
           {t('home.createBlankInstead')}
         </button>

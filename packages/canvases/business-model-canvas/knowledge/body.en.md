@@ -1,55 +1,56 @@
 # Reading the canvas
 
-The nine blocks are arranged so the **right half** describes the
-customer-facing side of the business and the **left half** describes the
-infrastructure that delivers it. Value Proposition sits in the middle —
-the bridge between the two.
+The nine BMC blocks are intentionally arranged: the **right half** describes the customer-facing value-delivery system, the **left half** describes the internal value-creation system, and the **Value Proposition** sits in the middle as the bridge between customer need and business capability. The bottom row — **Revenue Streams** and **Cost Structure** — asks whether the model can sustain itself economically.
+
+## Recommended filling order
+
+1. **Customer Segments**: define whom you serve and which customers matter most.
+2. **Value Propositions**: state what problem you solve or what need you satisfy.
+3. **Channels**: map how customers become aware, evaluate, buy, receive, and use the offer.
+4. **Customer Relationships**: decide how you acquire, retain, and grow customers.
+5. **Revenue Streams**: clarify what customers pay for and how they pay.
+6. **Key Activities**: identify the critical work required to deliver the offer.
+7. **Key Resources**: identify the assets, capabilities, data, people, or financing required.
+8. **Key Partners**: decide which resources or activities are better obtained externally.
+9. **Cost Structure**: summarize the most important fixed costs, variable costs, and scale effects.
 
 ## The two halves
 
-**Right (the front-of-house, "value delivery")**
+**Right side: value delivery**
 
-- **Customer Segments** — for whom are you creating value?
-- **Channels** — how does value reach them?
-- **Customer Relationships** — what kind of relationship does each
-  segment expect, and what does it cost to maintain?
-- **Revenue Streams** — what are customers willing to pay for, and how?
+- **Customer Segments** — who are the customers, and do different groups require different offers?
+- **Value Propositions** — why would they choose you instead of an alternative?
+- **Channels** — what handles awareness, evaluation, purchase, delivery, and after-sales support?
+- **Customer Relationships** — self-service, automation, community, personal assistance, or dedicated support?
+- **Revenue Streams** — one-time transactions, subscriptions, brokerage, licensing, advertising, or a hybrid?
 
-**Left (the back-of-house, "value creation")**
+**Left side: value creation**
 
-- **Key Activities** — what must the business *do*?
-- **Key Resources** — what must the business *have*?
-- **Key Partners** — what does it choose *not* to own, and who
-  supplies it instead?
-- **Cost Structure** — what does running this model cost?
+- **Key Activities** — what work directly determines whether value can be delivered?
+- **Key Resources** — which assets would make the model collapse if missing?
+- **Key Partners** — which partnerships reduce risk, fill capability gaps, or improve cost structure?
+- **Cost Structure** — which resources, activities, partners, and relationships drive the economics?
 
-## How to use it well
+## What good looks like
 
-1. **Start from the customer side** (right). A model that begins on the
-   left tends to be a list of capabilities looking for someone to sell to.
-2. **One model per customer segment.** If a single canvas tries to serve
-   multiple segments, the value proposition gets vague — duplicate the
-   canvas instead.
-3. **Iterate, don't perfect.** The BMC is a hypothesis sketch. Run real
-   experiments against the riskiest assumptions and update the canvas as
-   evidence comes in.
-4. **Look for the load-bearing block.** Every working model has one block
-   that, if removed, collapses the rest. Find it. Defend it.
+- Each block contains concise phrases, concrete assumptions, and evidence notes — not slogans.
+- Customer segments and value propositions are paired; “everyone” is not a segment.
+- Channels, relationships, and revenue streams explain the full customer journey.
+- Activities, resources, and partners support the promise on the right side instead of listing internal departments.
+- Revenue and cost choices reveal whether the model is cost-driven, value-driven, or a deliberate mix.
+- Unvalidated items are treated as assumptions to test through interviews, sales data, or experiments.
 
 ## Common failure modes
 
-- Treating the canvas as a strategy instead of a snapshot of one.
-- Filling every block to feel "complete" — empty blocks are a useful
-  signal.
-- Skipping the cost structure ("we'll figure it out later") — costs are
-  where most pivots actually originate.
-- Conflating channels (how value gets to the customer) with customer
-  relationships (how the customer experiences the business over time).
+- Treating the BMC as a full business plan; it is a model sketch and discussion tool.
+- Filling every block just to look complete; blanks often expose the real risk.
+- Conflating channels with customer relationships: one is reach and delivery, the other is ongoing engagement.
+- Describing only the ideal state instead of separating facts, assumptions, and open questions.
+- Ignoring the external environment; BMC does not fully cover competition, regulation, industry trends, or ecosystem impact.
 
 ## Reading further
 
-- *Business Model Generation* — Osterwalder & Pigneur. The original.
-- *Value Proposition Design* — same authors. The companion that drills
-  into the middle block.
-- The **Pairs with** chips below jump to canvases that complement the BMC
-  for specific zoom levels (environment forces, value-prop detail, etc.).
+- *Business Model Generation* — Osterwalder & Pigneur.
+- Strategyzer's Business Model Canvas template and guidance.
+- Strategic Management Insight's Business Model Canvas guide.
+- Pair with Value Proposition Canvas, Business Model Environment, SWOT, PESTEL, or Five Forces when you need a deeper view.

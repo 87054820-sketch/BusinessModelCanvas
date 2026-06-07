@@ -213,6 +213,50 @@ export function CanvasThumb({ id, width = 40, height = 28 }: Props) {
       </svg>
     );
   }
+  if (id === 'design-criteria-canvas') {
+    // Four horizontal MoSCoW-style bands: Must / Should / Could / Won't.
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="4" y="5" width="52" height="30" />
+          <line x1="4" y1="12.5" x2="56" y2="12.5" />
+          <line x1="4" y1="20" x2="56" y2="20" />
+          <line x1="4" y1="27.5" x2="56" y2="27.5" />
+        </g>
+        <g fill="#9CA3AF" stroke="none">
+          <circle cx="8" cy="8.5" r="0.9" />
+          <circle cx="8" cy="16" r="0.9" />
+          <circle cx="8" cy="23.5" r="0.9" />
+          <circle cx="8" cy="31" r="0.9" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === 'experiment-canvas') {
+    // Experiment flow: assumption + hypothesis, setup, then metrics/results/next.
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="4" y="5" width="52" height="30" />
+          <line x1="22" y1="5" x2="22" y2="14" />
+          <line x1="4" y1="14" x2="56" y2="14" />
+          <line x1="4" y1="25" x2="56" y2="25" />
+          <line x1="22" y1="25" x2="22" y2="35" />
+          <line x1="39" y1="25" x2="39" y2="35" />
+        </g>
+        <g stroke="#9CA3AF" strokeWidth="0.5" fill="none" strokeLinecap="round">
+          <line x1="8" y1="9" x2="17" y2="9" />
+          <line x1="26" y1="9" x2="52" y2="9" />
+          <line x1="8" y1="19" x2="52" y2="19" />
+          <line x1="8" y1="30" x2="17" y2="30" />
+          <line x1="26" y1="30" x2="34" y2="30" />
+          <line x1="43" y1="30" x2="52" y2="30" />
+        </g>
+      </svg>
+    );
+  }
   if (id === 'empathy-map') {
     // XPLANE-style layout: thin persona strip + big square with X diagonals
     // (4 triangle wedges) + head circle at the X intersection + a merged

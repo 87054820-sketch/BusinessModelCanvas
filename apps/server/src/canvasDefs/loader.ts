@@ -56,6 +56,19 @@ const ZoneDef = z.object({
 
 const LocalizedLabel = z.object({ en: z.string(), zh: z.string() });
 
+const DefaultColorLegendSchema = z.object({
+  hex: z.enum([
+    '#FCF1A8',
+    '#FBD0D9',
+    '#CFE3F5',
+    '#CFEBD3',
+    '#E2D5F0',
+    '#FBDDC0',
+  ]),
+  label: LocalizedLabel,
+  description: LocalizedLabel.optional(),
+});
+
 const ChartConfigSchema = z.object({
   yAxis: z.object({
     min: z.number(),
@@ -72,6 +85,37 @@ const ChartConfigSchema = z.object({
   ),
 });
 
+const GroupLabelSchema = z.object({
+  id: z.string().min(1),
+  label: LocalizedLabel,
+  description: LocalizedLabel.optional(),
+  x: z.number(),
+  y: z.number(),
+  align: z.enum(['left', 'center', 'right']).optional(),
+  fontSize: z.number().positive().optional(),
+});
+
+const DisplayConfigSchema = z.object({
+  canvas: z
+    .object({
+      showBlockLabels: z.boolean().optional(),
+      showBlockPrompts: z.boolean().optional(),
+      groupLabels: z.array(GroupLabelSchema).optional(),
+    })
+    .optional(),
+  preview: z
+    .object({
+      mode: z.enum(['image', 'structured', 'chart-sample']).optional(),
+      showTitle: z.boolean().optional(),
+      showSubtitle: z.boolean().optional(),
+      showBlockLabels: z.boolean().optional(),
+      showBlockPrompts: z.boolean().optional(),
+      subtitle: LocalizedLabel.optional(),
+      groupLabels: z.array(GroupLabelSchema).optional(),
+    })
+    .optional(),
+});
+
 const ManifestSchema = z.object({
   id: z.string().min(1),
   name: z.object({ en: z.string(), zh: z.string() }),
@@ -83,6 +127,8 @@ const ManifestSchema = z.object({
   zones: z.array(ZoneDef).min(1),
   plugin: z.enum(['axis-grid', 'chart-canvas']).optional(),
   related: z.array(z.string().min(1)).optional(),
+  display: DisplayConfigSchema.optional(),
+  defaultColorLegend: z.array(DefaultColorLegendSchema).optional(),
   /**
    * Declarative list of editable object types this canvas allows.
    * Defaults to `['sticky']` when omitted, matching pre-existing canvases.

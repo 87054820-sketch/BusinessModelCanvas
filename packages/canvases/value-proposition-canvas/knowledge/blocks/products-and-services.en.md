@@ -1,1 +1,1 @@
-The bundle of products and services your value proposition is built around. Can be physical/tangible, intangible (rights, services), digital, or financial. List the actual offer, not its benefits — those go in Gain Creators / Pain Relievers.
+The real offers your value proposition is built around: physical products, digital products, intangible services, rights, financial products, and more. List what customers can buy, use, or experience — benefits belong in Pain Relievers and Gain Creators.

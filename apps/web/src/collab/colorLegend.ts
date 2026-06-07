@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as Y from 'yjs';
-import type { Lang } from '@pingarden/shared';
+import type { CanvasDefaultColorLegendEntry, Lang } from '@pingarden/shared';
 import { STICKY_PALETTE } from '@pingarden/shared';
 
 /**
@@ -32,6 +32,46 @@ const PALETTE_SET = new Set<string>(STICKY_PALETTE);
 
 export function getColorLegendRoot(doc: Y.Doc): Y.Map<unknown> {
   return doc.getMap<unknown>(COLOR_LEGEND_KEY);
+}
+
+const DEFAULTS_SEEDED_KEY = '__defaultsSeeded';
+
+export function seedColorLegendDefaults(
+  doc: Y.Doc,
+  defaults: CanvasDefaultColorLegendEntry[] | undefined,
+  lang: Lang,
+): void {
+  if (!defaults?.length) return;
+  const root = getColorLegendRoot(doc);
+  if (root.get(DEFAULTS_SEEDED_KEY) === true) return;
+
+  let hasUserEntry = false;
+  for (const hex of STICKY_PALETTE) {
+    const label = root.get(`${hex}.label`);
+    const description = root.get(`${hex}.description`);
+    if (
+      (typeof label === 'string' && label.trim().length > 0) ||
+      (typeof description === 'string' && description.trim().length > 0)
+    ) {
+      hasUserEntry = true;
+      break;
+    }
+  }
+  if (hasUserEntry) {
+    root.set(DEFAULTS_SEEDED_KEY, true);
+    return;
+  }
+
+  const fallbackLang: Lang = lang === 'zh' ? 'en' : 'zh';
+  doc.transact(() => {
+    for (const entry of defaults) {
+      const label = entry.label[lang] || entry.label[fallbackLang];
+      const description = entry.description?.[lang] || entry.description?.[fallbackLang];
+      if (label) root.set(`${entry.hex}.label`, label);
+      if (description) root.set(`${entry.hex}.description`, description);
+    }
+    root.set(DEFAULTS_SEEDED_KEY, true);
+  });
 }
 
 function readEntries(root: Y.Map<unknown>): ColorLegendMap {

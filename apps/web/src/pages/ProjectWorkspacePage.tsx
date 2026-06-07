@@ -22,6 +22,7 @@ import { useYDoc } from '../collab/useYDoc';
 import { addSticky, deleteSticky, useStickies } from '../collab/stickies';
 import { addPin, removePin, usePins } from '../collab/pins';
 import { addPinClass, usePinClasses } from '../collab/pinClasses';
+import { seedColorLegendDefaults } from '../collab/colorLegend';
 import { useXAxisItems } from '../collab/xAxisItems';
 import {
   chartRect,
@@ -262,6 +263,11 @@ export function ProjectWorkspacePage() {
     clearActiveStickyColor();
     useUiPrefs.getState().setRightInspectorTab('intro');
   }, [activeCanvas?.id, clearActiveClass, clearActiveStickyColor]);
+
+  useEffect(() => {
+    if (!doc || !bundle?.def.defaultColorLegend) return;
+    seedColorLegendDefaults(doc, bundle.def.defaultColorLegend, lang);
+  }, [doc, bundle?.def.id, bundle?.def.defaultColorLegend, lang]);
 
   // Workspace-level keyboard shortcuts.
   //

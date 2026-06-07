@@ -1,0 +1,41 @@
+{
+  "canvasTitle": "Design Criteria Canvas",
+  "blocks": {
+    "must-have": {
+      "title": "Must Haves",
+      "prompt": "Which criteria are non-negotiable for the idea to work?",
+      "examples": [
+        "Must validate real purchase intent within 3 months",
+        "Must comply with current security and data rules",
+        "Must let core users reach first value in under 10 minutes"
+      ]
+    },
+    "should-have": {
+      "title": "Should Haves",
+      "prompt": "Which criteria are important, but not deal breakers?",
+      "examples": [
+        "Should reuse existing sales channels",
+        "Should support a mobile-first experience",
+        "Should be configurable by the support team"
+      ]
+    },
+    "could-have": {
+      "title": "Could Haves",
+      "prompt": "Which useful extras can wait until resources allow?",
+      "examples": [
+        "Could support multiple interface languages",
+        "Could offer advanced analytics reports",
+        "Could deeply integrate with third-party CRMs"
+      ]
+    },
+    "wont-have": {
+      "title": "Won't Haves",
+      "prompt": "Which directions are explicitly out of scope?",
+      "examples": [
+        "Won't rely on heavy manual review workflows",
+        "Won't depend on unlicensed data sources",
+        "Won't trade privacy for short-term growth"
+      ]
+    }
+  }
+}

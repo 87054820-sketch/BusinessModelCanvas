@@ -210,44 +210,37 @@
   },
   "templates": {
     "business-model-canvas": {
-      "name": "商业模式画布",
       "tagline": "用 9 个模块描绘整个商业模式"
     },
     "value-proposition-canvas": {
-      "name": "价值主张画布",
       "tagline": "对齐客户需求与你的解决方案"
     },
     "portfolio-map": {
-      "name": "业务组合地图",
       "tagline": "管理探索期与利用期业务组合"
     },
     "ad-lib-value-proposition": {
-      "name": "价值主张填空",
       "tagline": "用一句话写出价值主张,然后反复打磨"
     },
     "empathy-map": {
-      "name": "移情图",
       "tagline": "走进用户的内心:他们怎么想、看、说、听、感受"
     },
     "jobs-to-be-done": {
-      "name": "JTBD 工作故事",
       "tagline": "当 ___,我想 ___,从而我能 ___ —— 再加上底部的情感与社交任务"
     },
     "business-model-environment": {
-      "name": "商业模式环境",
       "tagline": "梳理影响商业模式的四股外部力量:趋势、市场、行业、宏观经济"
     },
     "customer-journey": {
-      "name": "用户旅程",
-      "tagline": "把客户在一段时间里的体验画出来 —— 找到低谷,设计抬升点"
-    },
-    "customer-journey": {
-      "name": "用户旅程",
       "tagline": "把客户在一段时间里的体验画出来 —— 找到低谷,设计抬升点"
     },
     "blue-ocean-strategy-canvas": {
-      "name": "战略画布",
       "tagline": "横轴是竞争因子,纵轴是投入水平,每家公司一条价值曲线 —— 蓝海战略"
+    },
+    "design-criteria-canvas": {
+      "tagline": "把愿景、研究和约束转成可判断的设计标准"
+    },
+    "experiment-canvas": {
+      "tagline": "把高风险假设转化为可衡量、可复盘的验证实验"
     }
   }
 }
