@@ -7,10 +7,12 @@ import type {
   ColorLegendEntry,
   Lang,
   Project,
+  StoryMeta,
 } from '@pingarden/shared';
 import { useTranslation } from 'react-i18next';
 import { api, type CanvasDefSummary, type CanvasKnowledge } from '../api/client';
 import { projectsApi } from '../api/projects';
+import { storiesApi } from '../api/stories';
 import { useIdentity } from '../identity/useIdentity';
 import { CanvasRenderer } from '../canvas/CanvasRenderer';
 import { StickyLayer } from '../canvas/StickyLayer';
@@ -41,6 +43,7 @@ import { Inspector } from '../workspace/Inspector';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { LightboxRoot } from '../components/Lightbox';
 import { useUiPrefs } from '../state/uiPrefs';
+import { StoryWorkspace } from '../story/StoryWorkspace';
 
 /**
  * `true` when the keystroke should be left to the browser's native text
@@ -100,16 +103,23 @@ function inspectorTitleKey(
  * Routes that hit this page:
  *   /p/:projectId
  *   /p/:projectId/c/:canvasId
+ *   /p/:projectId/s/:storyId
  */
 export function ProjectWorkspacePage() {
   const { t, i18n } = useTranslation();
-  const { projectId, canvasId } = useParams<{ projectId: string; canvasId?: string }>();
+  const { projectId, canvasId, storyId } = useParams<{
+    projectId: string;
+    canvasId?: string;
+    storyId?: string;
+  }>();
   const navigate = useNavigate();
   const { identity } = useIdentity();
 
   const [project, setProject] = useState<Project | null>(null);
   const [canvases, setCanvases] = useState<CanvasMeta[]>([]);
+  const [stories, setStories] = useState<StoryMeta[]>([]);
   const [activeCanvas, setActiveCanvas] = useState<CanvasMeta | null>(null);
+  const [activeStory, setActiveStory] = useState<StoryMeta | null>(null);
   const [bundle, setBundle] = useState<{
     def: CanvasDef;
     i18n: CanvasI18n;
@@ -120,6 +130,7 @@ export function ProjectWorkspacePage() {
 
   // Confirm dialogs
   const [pendingDeleteCanvas, setPendingDeleteCanvas] = useState<CanvasMeta | null>(null);
+  const [pendingDeleteStory, setPendingDeleteStory] = useState<StoryMeta | null>(null);
 
   const clearSelection = useSelection((s) => s.clear);
   const selectProject = useSelection((s) => s.selectProject);
@@ -169,11 +180,13 @@ export function ProjectWorkspacePage() {
     Promise.all([
       projectsApi.get(projectId, identity.displayName),
       projectsApi.listCanvases(projectId, identity.displayName),
+      storiesApi.list(projectId, identity.displayName),
     ])
-      .then(([p, list]) => {
+      .then(([p, list, storyList]) => {
         if (cancelled) return;
         setProject(p);
         setCanvases(list);
+        setStories(storyList);
       })
       .catch(() => {
         if (cancelled) return;
@@ -186,6 +199,10 @@ export function ProjectWorkspacePage() {
 
   // Choose the active canvas: explicit param > most recently updated > none.
   useEffect(() => {
+    if (storyId) {
+      setActiveCanvas(null);
+      return;
+    }
     if (canvases.length === 0) {
       setActiveCanvas(null);
       return;
@@ -204,7 +221,19 @@ export function ProjectWorkspacePage() {
       setActiveCanvas(first);
       if (projectId) navigate(`/p/${projectId}/c/${first.id}`, { replace: true });
     }
-  }, [canvases, canvasId, projectId, navigate]);
+  }, [canvases, canvasId, storyId, projectId, navigate]);
+
+  useEffect(() => {
+    if (!storyId) {
+      setActiveStory(null);
+      return;
+    }
+    const s = stories.find((item) => item.id === storyId);
+    setActiveStory(s ?? null);
+    if (!s && stories.length > 0 && projectId) {
+      navigate(`/p/${projectId}/s/${stories[0]!.id}`, { replace: true });
+    }
+  }, [stories, storyId, projectId, navigate]);
 
   // When the active canvas changes, default the right inspector to "this
   // canvas type's knowledge" view. Clicking a sticky/block on the canvas
@@ -213,7 +242,7 @@ export function ProjectWorkspacePage() {
   useEffect(() => {
     if (activeCanvas) selectCanvas();
     else clearSelection();
-  }, [activeCanvas?.id, selectCanvas, clearSelection]);
+  }, [activeCanvas?.id, activeStory?.id, selectCanvas, clearSelection]);
 
   const lang = useMemo<Lang>(() => (i18n.language as Lang) ?? 'en', [i18n.language]);
 
@@ -558,6 +587,41 @@ export function ProjectWorkspacePage() {
     setPendingDeleteCanvas(null);
   }
 
+  async function handleAddStory() {
+    if (!project || !identity) return;
+    const created = await storiesApi.create(
+      {
+        projectId: project.id,
+        title: t('story.untitled'),
+        content: `# ${t('story.untitled')}\n\n`,
+        status: 'draft',
+        contentDatePrecision: 'month',
+      },
+      identity.displayName,
+    );
+    const { content: _content, ...meta } = created;
+    setStories((prev) => [meta, ...prev]);
+    navigate(`/p/${project.id}/s/${created.id}`);
+  }
+
+  async function handleDeleteStory(s: StoryMeta) {
+    if (!identity || !project) return;
+    await storiesApi.delete(s.id, identity.displayName);
+    setStories((prev) => prev.filter((x) => x.id !== s.id));
+    if (activeStory?.id === s.id) {
+      const fallback = stories.find((x) => x.id !== s.id);
+      if (fallback) navigate(`/p/${project.id}/s/${fallback.id}`, { replace: true });
+      else if (canvases[0]) navigate(`/p/${project.id}/c/${canvases[0].id}`, { replace: true });
+      else navigate(`/p/${project.id}`, { replace: true });
+    }
+    setPendingDeleteStory(null);
+  }
+
+  function handleStoryUpdated(s: StoryMeta) {
+    setStories((prev) => prev.map((item) => (item.id === s.id ? s : item)));
+    setActiveStory(s);
+  }
+
   async function handleProjectPatch(patch: {
     name?: string;
     description?: string;
@@ -578,15 +642,29 @@ export function ProjectWorkspacePage() {
       <ProjectSidebar
         project={project}
         canvases={canvases}
+        stories={stories}
         activeCanvasId={activeCanvas?.id}
+        activeStoryId={activeStory?.id}
         onSelect={(id) => navigate(`/p/${project.id}/c/${id}`)}
+        onSelectStory={(id) => navigate(`/p/${project.id}/s/${id}`)}
         onSelectProject={selectProject}
         onAddCanvas={handleAddCanvas}
+        onAddStory={handleAddStory}
         onDeleteCanvas={(c) => setPendingDeleteCanvas(c)}
+        onDeleteStory={(s) => setPendingDeleteStory(s)}
       />
 
       <main className="flex flex-1 flex-col bg-stone-50">
-        {activeCanvas ? (
+        {activeStory ? (
+          <StoryWorkspace
+            storyId={activeStory.id}
+            projectId={project.id}
+            canvases={canvases}
+            lang={lang}
+            displayName={identity.displayName}
+            onStoryUpdated={handleStoryUpdated}
+          />
+        ) : activeCanvas ? (
           <>
             <CanvasToolbar
               canvas={activeCanvas}
@@ -751,6 +829,7 @@ export function ProjectWorkspacePage() {
         )}
       </main>
 
+      {!activeStory && (
       <aside
         className={`flex h-full flex-shrink-0 flex-col border-l border-gray-200 bg-white transition-[width] duration-150 ${
           rightCollapsed ? 'w-[56px]' : 'w-[500px]'
@@ -852,6 +931,7 @@ export function ProjectWorkspacePage() {
           </>
         )}
       </aside>
+      )}
 
       <ConfirmDialog
         open={!!pendingDeleteCanvas}
@@ -865,6 +945,21 @@ export function ProjectWorkspacePage() {
         onCancel={() => setPendingDeleteCanvas(null)}
         onConfirm={async () => {
           if (pendingDeleteCanvas) await handleDeleteCanvas(pendingDeleteCanvas);
+        }}
+      />
+
+      <ConfirmDialog
+        open={!!pendingDeleteStory}
+        title={t('confirm.deleteStory')}
+        message={t('confirm.deleteStoryMsg', {
+          title: pendingDeleteStory?.title ?? '',
+        })}
+        confirmLabel={t('confirm.delete')}
+        cancelLabel={t('confirm.cancel')}
+        danger
+        onCancel={() => setPendingDeleteStory(null)}
+        onConfirm={async () => {
+          if (pendingDeleteStory) await handleDeleteStory(pendingDeleteStory);
         }}
       />
 

@@ -75,6 +75,48 @@ function createWindow(appUrl: string) {
   });
 }
 
+function seedBundledSamples(dataDir: string, samplesDir: string) {
+  if (!fs.existsSync(samplesDir)) return;
+
+  fs.mkdirSync(dataDir, { recursive: true });
+  const markerPath = path.join(dataDir, '.samples-imported');
+  if (fs.existsSync(markerPath)) return;
+
+  const projectsDir = path.join(dataDir, 'projects');
+  const hasExistingProjects = fs.existsSync(projectsDir)
+    && fs.readdirSync(projectsDir).some((name) => name.endsWith('.json'));
+  if (hasExistingProjects) {
+    fs.writeFileSync(markerPath, new Date().toISOString(), 'utf8');
+    return;
+  }
+
+  const sampleIds = fs.readdirSync(samplesDir).filter((name) => {
+    const full = path.join(samplesDir, name);
+    return fs.statSync(full).isDirectory();
+  });
+
+  for (const sampleId of sampleIds) {
+    copyDirContents(path.join(samplesDir, sampleId), dataDir);
+  }
+
+  fs.writeFileSync(markerPath, new Date().toISOString(), 'utf8');
+}
+
+function copyDirContents(srcDir: string, destDir: string) {
+  if (!fs.existsSync(srcDir)) return;
+  fs.mkdirSync(destDir, { recursive: true });
+  for (const entry of fs.readdirSync(srcDir)) {
+    const src = path.join(srcDir, entry);
+    const dest = path.join(destDir, entry);
+    const stat = fs.statSync(src);
+    if (stat.isDirectory()) {
+      copyDirContents(src, dest);
+    } else if (!fs.existsSync(dest)) {
+      fs.copyFileSync(src, dest);
+    }
+  }
+}
+
 app.whenReady().then(async () => {
   const userData = app.getPath('userData');
   const dataDir = path.join(userData, 'data');
@@ -93,6 +135,11 @@ app.whenReady().then(async () => {
   const canvasDefsDir = isDev
     ? path.join(__dirname, '../../../../packages/canvases')
     : path.join(__dirname, 'canvases');
+
+  const samplesDir = isDev
+    ? path.join(__dirname, '../../../packages/samples')
+    : path.join(__dirname, 'samples');
+  seedBundledSamples(dataDir, samplesDir);
 
   const spawnEnv: NodeJS.ProcessEnv = {
     ...process.env,

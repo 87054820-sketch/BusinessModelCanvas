@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import type { CanvasMeta, Project } from '@pingarden/shared';
+import type { CanvasMeta, Project, StoryMeta } from '@pingarden/shared';
 import { MenuButton } from '../ui/MenuButton';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 import { AddCanvasMenu } from './AddCanvasMenu';
@@ -10,12 +10,17 @@ import { useUiPrefs } from '../state/uiPrefs';
 interface Props {
   project: Project;
   canvases: CanvasMeta[];
+  stories: StoryMeta[];
   activeCanvasId: string | undefined;
+  activeStoryId: string | undefined;
   onSelect: (canvasId: string) => void;
+  onSelectStory: (storyId: string) => void;
   /** Click on the project header — switches the right inspector to project info. */
   onSelectProject: () => void;
   onAddCanvas: (defId: string) => void;
+  onAddStory: () => void;
   onDeleteCanvas: (c: CanvasMeta) => void;
+  onDeleteStory: (s: StoryMeta) => void;
 }
 
 /**
@@ -45,11 +50,16 @@ interface Props {
 export function ProjectSidebar({
   project,
   canvases,
+  stories,
   activeCanvasId,
+  activeStoryId,
   onSelect,
+  onSelectStory,
   onSelectProject,
   onAddCanvas,
+  onAddStory,
   onDeleteCanvas,
+  onDeleteStory,
 }: Props) {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -106,12 +116,40 @@ export function ProjectSidebar({
               })}
             </ul>
           )}
+          {stories.length > 0 && (
+            <ul className="mt-3 space-y-1 px-1">
+              {stories.map((s) => (
+                <li key={s.id}>
+                  <button
+                    type="button"
+                    onClick={() => onSelectStory(s.id)}
+                    title={s.title}
+                    aria-label={s.title}
+                    className={`flex h-10 w-full items-center justify-center rounded-md text-base ${
+                      s.id === activeStoryId ? 'bg-[#2A6B6B] text-white' : 'text-[#2A6B6B] hover:bg-[#EAF3F1]'
+                    }`}
+                  >
+                    <span aria-hidden>✦</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
-        <div className="border-t border-gray-200 p-2">
+        <div className="space-y-2 border-t border-gray-200 p-2">
           <div className="flex justify-center">
             <AddCanvasMenu onPick={onAddCanvas} compact />
           </div>
+          <button
+            type="button"
+            onClick={onAddStory}
+            title={t('story.newStory')}
+            aria-label={t('story.newStory')}
+            className="flex h-9 w-full items-center justify-center rounded-md text-[#2A6B6B] hover:bg-[#EAF3F1]"
+          >
+            ✦
+          </button>
         </div>
       </aside>
     );
@@ -168,7 +206,7 @@ export function ProjectSidebar({
 
       <div className="flex-1 overflow-y-auto p-3">
         <div className="mb-2 px-1 text-[11px] uppercase tracking-wider text-gray-500">
-          Canvases
+          {t('workspace.canvases')}
         </div>
         {canvases.length === 0 ? (
           <p className="px-1 text-xs text-gray-400">{t('workspace.noCanvases')}</p>
@@ -217,10 +255,64 @@ export function ProjectSidebar({
             })}
           </ul>
         )}
+
+        <div className="mb-2 mt-6 px-1 text-[11px] uppercase tracking-wider text-[#2A6B6B]">
+          {t('story.stories')}
+        </div>
+        {stories.length === 0 ? (
+          <p className="px-1 text-xs text-gray-400">{t('story.noStories')}</p>
+        ) : (
+          <ul className="space-y-1">
+            {stories.map((s) => {
+              const active = s.id === activeStoryId;
+              return (
+                <li
+                  key={s.id}
+                  className={`group flex items-center justify-between rounded-md px-2 py-1.5 text-sm ${
+                    active ? 'bg-[#2A6B6B] text-white' : 'text-gray-800 hover:bg-[#EAF3F1]'
+                  }`}
+                >
+                  <button
+                    type="button"
+                    onClick={() => onSelectStory(s.id)}
+                    className="flex flex-1 items-center gap-2 truncate text-left"
+                  >
+                    <span className={`flex h-6 w-8 flex-shrink-0 items-center justify-center rounded border ${
+                      active ? 'border-white/30 bg-white/10' : 'border-[#B8D4D0] bg-[#EAF3F1] text-[#2A6B6B]'
+                    }`}>
+                      ✦
+                    </span>
+                    <span className="flex-1 truncate">{s.title}</span>
+                  </button>
+                  <div className={active ? 'text-white' : 'text-gray-500'}>
+                    <MenuButton
+                      label="···"
+                      align="right"
+                      items={[
+                        {
+                          label: t('confirm.delete'),
+                          danger: true,
+                          onClick: () => onDeleteStory(s),
+                        },
+                      ]}
+                    />
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
 
-      <div className="border-t border-gray-200 p-3">
+      <div className="space-y-2 border-t border-gray-200 p-3">
         <AddCanvasMenu onPick={onAddCanvas} />
+        <button
+          type="button"
+          onClick={onAddStory}
+          className="flex w-full items-center justify-center rounded-lg border border-[#B8D4D0] bg-[#EAF3F1] px-3 py-2 text-sm font-semibold text-[#2A6B6B] transition hover:bg-[#DCEDEB]"
+        >
+          {t('story.newStory')}
+        </button>
       </div>
     </aside>
   );

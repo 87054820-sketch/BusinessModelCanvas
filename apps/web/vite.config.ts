@@ -15,6 +15,7 @@ export default defineConfig({
       '/projects': { target: 'http://localhost:4000', changeOrigin: true },
       '/canvases': { target: 'http://localhost:4000', changeOrigin: true },
       '/canvas-defs': { target: 'http://localhost:4000', changeOrigin: true },
+      '/stories': { target: 'http://localhost:4000', changeOrigin: true },
       '/health': { target: 'http://localhost:4000', changeOrigin: true },
     },
   },

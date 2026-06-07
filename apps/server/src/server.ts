@@ -13,6 +13,7 @@ import { registerSnapshotRoutes } from './http/snapshots.js';
 import { registerAiContextRoutes } from './http/aiContext.js';
 import { registerStickyImportRoutes } from './http/stickyImport.js';
 import { registerObjectsImportRoutes } from './http/objectsImport.js';
+import { registerStoryRoutes } from './http/stories.js';
 
 async function main() {
   const app = Fastify({ logger: true, bodyLimit: 8 * 1024 * 1024 });
@@ -43,6 +44,7 @@ async function main() {
   registerAiContextRoutes(app, storage, defs);
   registerStickyImportRoutes(app, storage, defs);
   registerObjectsImportRoutes(app, storage, defs);
+  registerStoryRoutes(app, storage);
 
   app.get('/health', async () => ({
     ok: true,
@@ -66,6 +68,7 @@ async function main() {
         req.url.startsWith('/canvas-defs') ||
         req.url.startsWith('/canvases') ||
         req.url.startsWith('/projects') ||
+        req.url.startsWith('/stories') ||
         req.url.startsWith('/snapshots') ||
         req.url.startsWith('/ai-context') ||
         req.url.startsWith('/sticky-import') ||

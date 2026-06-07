@@ -6,6 +6,8 @@ import type {
   Snapshot,
   SnapshotKind,
   SnapshotMeta,
+  Story,
+  StoryMeta,
 } from '@pingarden/shared';
 import type { CanvasStorage } from './CanvasStorage.js';
 
@@ -80,6 +82,10 @@ export class FileSystemStorage implements CanvasStorage {
     for (const c of children) {
       await this.deleteCanvas(c.id);
     }
+    const stories = await this.listStories({ projectId: id });
+    for (const s of stories) {
+      await this.deleteStory(s.id);
+    }
     await fs.rm(this.projectPath(id), { force: true });
   }
 
@@ -128,6 +134,57 @@ export class FileSystemStorage implements CanvasStorage {
 
   async deleteCanvas(id: string): Promise<void> {
     await fs.rm(this.canvasDir(id), { recursive: true, force: true });
+  }
+
+  // ───────────────── stories ─────────────────
+  async listStories(opts?: { projectId?: string }): Promise<StoryMeta[]> {
+    const dir = this.storiesDir();
+    await fs.mkdir(dir, { recursive: true });
+    const ids = await fs.readdir(dir);
+    const out: StoryMeta[] = [];
+    for (const id of ids) {
+      const story = await this.readStory(id);
+      if (!story) continue;
+      if (opts?.projectId && story.projectId !== opts.projectId) continue;
+      const { content: _content, ...meta } = story;
+      out.push(meta);
+    }
+    out.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+    return out;
+  }
+
+  async getStory(id: string): Promise<Story | null> {
+    return this.readStory(id);
+  }
+
+  async createStory(story: Story): Promise<void> {
+    await fs.mkdir(this.storyDir(story.id), { recursive: true });
+    const { content, ...meta } = story;
+    await fs.writeFile(this.storyMetaPath(story.id), JSON.stringify(meta, null, 2), 'utf8');
+    await fs.writeFile(this.storyContentPath(story.id), content, 'utf8');
+  }
+
+  async updateStory(id: string, patch: Partial<Story>): Promise<Story> {
+    const cur = await this.readStory(id);
+    if (!cur) throw new Error(`Story ${id} not found`);
+    const next: Story = {
+      ...cur,
+      ...patch,
+      id: cur.id,
+      projectId: cur.projectId,
+      createdAt: cur.createdAt,
+      createdBy: cur.createdBy,
+      updatedAt: new Date().toISOString(),
+    };
+    const { content, ...meta } = next;
+    await fs.mkdir(this.storyDir(id), { recursive: true });
+    await fs.writeFile(this.storyMetaPath(id), JSON.stringify(meta, null, 2), 'utf8');
+    await fs.writeFile(this.storyContentPath(id), content, 'utf8');
+    return next;
+  }
+
+  async deleteStory(id: string): Promise<void> {
+    await fs.rm(this.storyDir(id), { recursive: true, force: true });
   }
 
   // ───────────────── Yjs binary ─────────────────
@@ -218,6 +275,18 @@ export class FileSystemStorage implements CanvasStorage {
   private canvasesDir() {
     return join(this.root, 'canvases');
   }
+  private storiesDir() {
+    return join(this.root, 'stories');
+  }
+  private storyDir(id: string) {
+    return join(this.storiesDir(), id);
+  }
+  private storyMetaPath(id: string) {
+    return join(this.storyDir(id), 'meta.json');
+  }
+  private storyContentPath(id: string) {
+    return join(this.storyDir(id), 'content.md');
+  }
   private canvasDir(id: string) {
     return join(this.canvasesDir(), id);
   }
@@ -235,6 +304,23 @@ export class FileSystemStorage implements CanvasStorage {
     try {
       const raw = await fs.readFile(this.metaPath(id), 'utf8');
       return JSON.parse(raw) as CanvasMeta;
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code === 'ENOENT') return null;
+      throw err;
+    }
+  }
+
+  private async readStory(id: string): Promise<Story | null> {
+    try {
+      const [metaRaw, content] = await Promise.all([
+        fs.readFile(this.storyMetaPath(id), 'utf8'),
+        fs.readFile(this.storyContentPath(id), 'utf8').catch((err) => {
+          if ((err as NodeJS.ErrnoException).code === 'ENOENT') return '';
+          throw err;
+        }),
+      ]);
+      const meta = JSON.parse(metaRaw) as StoryMeta;
+      return { ...meta, content };
     } catch (err) {
       if ((err as NodeJS.ErrnoException).code === 'ENOENT') return null;
       throw err;

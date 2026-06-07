@@ -46,6 +46,7 @@
   },
   "workspace": {
     "addCanvas": "+ Add canvas",
+    "canvases": "Canvases",
     "noCanvases": "No canvases yet.",
     "selectCanvas": "Select a canvas from the sidebar",
     "saveMilestone": "Save milestone",
@@ -55,6 +56,31 @@
     "expandSidebar": "Expand sidebar",
     "collapseInspector": "Collapse inspector",
     "expandInspector": "Expand inspector"
+  },
+  "story": {
+    "story": "Story",
+    "stories": "Stories",
+    "newStory": "+ New story",
+    "noStories": "No stories yet.",
+    "untitled": "Untitled story",
+    "loading": "Loading story…",
+    "read": "Read",
+    "edit": "Edit",
+    "editor": "Markdown editor",
+    "directiveHint": "Use ::canvas[] blocks to embed canvases from this project.",
+    "insertCanvas": "Insert canvas",
+    "contentPlaceholder": "Write the case background, key decisions, validation process, and retrospective…",
+    "titlePlaceholder": "Story title",
+    "contentDate": "Content date",
+    "noContentDate": "No content date",
+    "saving": "Saving…",
+    "saved": "Saved",
+    "saveError": "Save failed",
+    "loadError": "Failed to load story. Please refresh or try again later.",
+    "embeddedCanvas": "Embedded canvas",
+    "openCanvas": "Open canvas",
+    "loadingCanvas": "Loading canvas…",
+    "missingCanvas": "This canvas reference is missing or outside the current project."
   },
   "addCanvas": {
     "title": "Add a canvas to this project",
@@ -136,10 +162,12 @@
   "confirm": {
     "deleteCanvas": "Delete canvas",
     "deleteCanvasMsg": "Delete '{{title}}'? This removes all its milestones too.",
+    "deleteStory": "Delete story",
+    "deleteStoryMsg": "Delete '{{title}}'? The story content will be permanently removed.",
     "deleteMilestone": "Delete milestone",
     "deleteMilestoneMsg": "Delete '{{name}}'?",
     "deleteProject": "Delete project",
-    "deleteProjectMsg": "This will permanently delete the project, all {{count}} canvases inside, and all milestones. To confirm, type the project name:",
+    "deleteProjectMsg": "This will permanently delete project '{{name}}', all {{count}} canvases inside, and all milestones. This cannot be undone.",
     "delete": "Delete",
     "cancel": "Cancel"
   },

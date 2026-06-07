@@ -60,9 +60,11 @@ require_file "apps/desktop/dist/server/package.json"
 require_file "apps/desktop/dist/web/index.html"
 require_dir "apps/desktop/dist/web/assets"
 require_dir "apps/desktop/dist/canvases"
+require_dir "apps/desktop/dist/samples"
+require_dir "apps/desktop/dist/samples/wechat-private-domain"
 
 if find apps/desktop/dist -path '*/data/*' -print -quit | grep -q .; then
-  fail "Desktop bundle contains data files; installer must not include user/dev data."
+  fail "Desktop bundle contains runtime data files; installer must not include user/dev data directories."
 fi
 
 log "Packaging macOS DMG"

@@ -22,6 +22,7 @@ interface Props {
   onResizeEnd: (width: number, height: number) => void;
   onText: (text: string) => void;
   onSelect: () => void;
+  readonly?: boolean;
   /** Convert a client pointer event to SVG-space coords. */
   toSvgPoint: (ev: PointerEvent | React.PointerEvent) => { x: number; y: number } | null;
 }
@@ -52,6 +53,7 @@ export function Sticky({
   onResizeEnd,
   onText,
   onSelect,
+  readonly = false,
   toSvgPoint,
 }: Props) {
   const [editing, setEditing] = useState(false);
@@ -88,6 +90,10 @@ export function Sticky({
   function startDrag(e: React.PointerEvent) {
     if (editing) return;
     e.stopPropagation();
+    if (readonly) {
+      onSelect();
+      return;
+    }
     const p = toSvgPoint(e);
     if (!p) return;
     dragRef.current = {
@@ -191,7 +197,7 @@ export function Sticky({
   return (
     <g
       transform={`translate(${sticky.x - W / 2} ${sticky.y - H / 2})`}
-      style={{ cursor: editing ? 'text' : 'grab' }}
+      style={{ cursor: readonly ? 'default' : editing ? 'text' : 'grab' }}
     >
       {/* shadow */}
       <rect x={2} y={4} width={W} height={H} fill="rgba(0,0,0,0.12)" rx={2} />
@@ -211,7 +217,7 @@ export function Sticky({
         onPointerUp={endDrag}
         onDoubleClick={(e) => {
           e.stopPropagation();
-          setEditing(true);
+          if (!readonly) setEditing(true);
         }}
       />
 
@@ -233,7 +239,7 @@ export function Sticky({
                 e.currentTarget.blur();
               }
             }}
-            className="h-full w-full resize-none border-0 bg-transparent text-[13px] leading-tight text-gray-900 outline-none"
+            className="h-full w-full resize-none border-0 bg-transparent text-[14px] leading-[1.15] text-gray-900 outline-none"
             style={{ fontFamily: 'inherit' }}
           />
         </foreignObject>
@@ -254,9 +260,9 @@ export function Sticky({
       {sticky.authorName && (
         <text
           x={W - 6}
-          y={H - 6}
+          y={H - 5}
           textAnchor="end"
-          fontSize={9}
+          fontSize={8.5}
           fill="rgba(31,41,55,0.45)"
           pointerEvents="none"
         >
@@ -268,7 +274,7 @@ export function Sticky({
           inline-edit mode. Filled square with `nwse-resize` cursor; its
           own pointer handlers stop propagation so the body's drag-to-
           move state machine never sees the resize gestures. */}
-      {selected && !editing && (
+      {selected && !editing && !readonly && (
         <rect
           x={W - HANDLE_SIZE}
           y={H - HANDLE_SIZE}

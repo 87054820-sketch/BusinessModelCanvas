@@ -53,12 +53,18 @@ export const DEFAULT_STICKY_COLOR: StickyColor = '#FCF1A8';
  * `stickyImport.ts`). Picked to keep stickies legible while still
  * allowing horizontal "long strip" + vertical "tall column" layouts.
  */
-export const DEFAULT_STICKY_WIDTH = 140;
-export const DEFAULT_STICKY_HEIGHT = 100;
-export const STICKY_MIN_WIDTH = 60;
-export const STICKY_MIN_HEIGHT = 40;
+export const DEFAULT_STICKY_WIDTH = 184;
+export const DEFAULT_STICKY_HEIGHT = 62;
+export const STICKY_MIN_WIDTH = 88;
+export const STICKY_MIN_HEIGHT = 36;
 export const STICKY_MAX_WIDTH = 360;
 export const STICKY_MAX_HEIGHT = 280;
+
+// ──────────────────────────────────────────────────────────────────────────
+// Historical/content dating — separates when something happened from when it
+// was recorded in PinGarden. `createdAt` / `updatedAt` stay system audit fields.
+// ──────────────────────────────────────────────────────────────────────────
+export type ContentDatePrecision = 'year' | 'month' | 'day';
 
 // ──────────────────────────────────────────────────────────────────────────
 // Canvas instance metadata (one row per canvas the team has created)
@@ -69,10 +75,44 @@ export interface CanvasMeta {
   defId: string;          // 'business-model-canvas' | 'value-proposition-canvas' | …
   title: string;
   language: Lang;
+  /** Business/content date, e.g. '2023-12'. Distinct from system createdAt. */
+  contentDate?: string;
+  contentDatePrecision?: ContentDatePrecision;
+  contentDateLabel?: string;
   createdAt: string;      // ISO
   createdBy: string;      // display name
   updatedAt: string;      // ISO
   updatedBy: string;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Story — project-level narrative documents mixing Markdown and canvas embeds
+// ──────────────────────────────────────────────────────────────────────────
+export type StoryStatus = 'draft' | 'published';
+
+export interface StoryMeta {
+  id: string;
+  projectId: string;
+  title: string;
+  status: StoryStatus;
+  /** Business/content date, e.g. '2023-12'. Distinct from system createdAt. */
+  contentDate?: string;
+  contentDatePrecision?: ContentDatePrecision;
+  contentDateLabel?: string;
+  createdAt: string;
+  createdBy: string;
+  updatedAt: string;
+  updatedBy: string;
+}
+
+export interface Story extends StoryMeta {
+  content: string;
+}
+
+export interface StoryCanvasDirective {
+  canvasId: string;
+  defId?: string;
+  title?: string;
 }
 
 // ──────────────────────────────────────────────────────────────────────────
@@ -488,11 +528,66 @@ export interface CreateCanvasInput {
   defId: string;
   title: string;
   language: Lang;
+  contentDate?: string;
+  contentDatePrecision?: ContentDatePrecision;
+  contentDateLabel?: string;
 }
 
 export interface UpdateCanvasInput {
   title?: string;
   language?: Lang;
+  contentDate?: string;
+  contentDatePrecision?: ContentDatePrecision;
+  contentDateLabel?: string;
+}
+
+export interface CreateStoryInput {
+  projectId: string;
+  title: string;
+  content?: string;
+  status?: StoryStatus;
+  contentDate?: string;
+  contentDatePrecision?: ContentDatePrecision;
+  contentDateLabel?: string;
+}
+
+export interface UpdateStoryInput {
+  title?: string;
+  content?: string;
+  status?: StoryStatus;
+  contentDate?: string;
+  contentDatePrecision?: ContentDatePrecision;
+  contentDateLabel?: string;
+}
+
+export function parseStoryCanvasDirectives(content: string): StoryCanvasDirective[] {
+  const directives: StoryCanvasDirective[] = [];
+  const block = /^::canvas(?:\[([^\]\n]+)\])?\{([^}\n]*)\}\s*$/gm;
+  let match: RegExpExecArray | null;
+  while ((match = block.exec(content)) !== null) {
+    const defId = match[1]?.trim();
+    const attrs = parseDirectiveAttrs(match[2] ?? '');
+    const canvasId = attrs.canvasId?.trim();
+    if (!canvasId) continue;
+    directives.push({
+      canvasId,
+      ...(defId ? { defId } : {}),
+      ...(attrs.title ? { title: attrs.title } : {}),
+    });
+  }
+  return directives;
+}
+
+function parseDirectiveAttrs(raw: string): Record<string, string> {
+  const attrs: Record<string, string> = {};
+  const attr = /(\w+)="([^"]*)"|(\w+)='([^']*)'|(\w+)=([^\s]+)/g;
+  let match: RegExpExecArray | null;
+  while ((match = attr.exec(raw)) !== null) {
+    const key = match[1] ?? match[3] ?? match[5];
+    const value = match[2] ?? match[4] ?? match[6] ?? '';
+    if (key) attrs[key] = value;
+  }
+  return attrs;
 }
 
 export interface CreateMilestoneInput {

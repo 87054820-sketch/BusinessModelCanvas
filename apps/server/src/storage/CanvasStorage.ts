@@ -4,6 +4,8 @@ import type {
   Snapshot,
   SnapshotKind,
   SnapshotMeta,
+  Story,
+  StoryMeta,
 } from '@pingarden/shared';
 
 /**
@@ -28,6 +30,14 @@ export interface CanvasStorage {
   createCanvas(meta: CanvasMeta): Promise<void>;
   updateCanvasMeta(id: string, patch: Partial<CanvasMeta>): Promise<CanvasMeta>;
   deleteCanvas(id: string): Promise<void>;
+
+  // stories ────────────────────────────────────────────────
+  /** Optionally filter by project. */
+  listStories(opts?: { projectId?: string }): Promise<StoryMeta[]>;
+  getStory(id: string): Promise<Story | null>;
+  createStory(story: Story): Promise<void>;
+  updateStory(id: string, patch: Partial<Story>): Promise<Story>;
+  deleteStory(id: string): Promise<void>;
 
   // live Yjs document state (binary) ────────────────────────
   saveYDocState(id: string, state: Uint8Array): Promise<void>;

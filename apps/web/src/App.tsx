@@ -56,6 +56,10 @@ export default function App() {
             element={<ProjectWorkspacePage />}
           />
           <Route
+            path="/p/:projectId/s/:storyId"
+            element={<ProjectWorkspacePage />}
+          />
+          <Route
             path="/p/:projectId/c/:canvasId/history"
             element={<HistoryPage />}
           />

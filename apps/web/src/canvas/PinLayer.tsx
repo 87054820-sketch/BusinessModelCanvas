@@ -18,6 +18,7 @@ interface Props {
    * factor column. Other canvases pass undefined → x stays free.
    */
   snapX?: (x: number) => number;
+  readonly?: boolean;
 }
 
 /**
@@ -33,7 +34,7 @@ interface Props {
  * in the workspace) so pins float above sticky notes — they're meant
  * to be the "annotation focus".
  */
-export function PinLayer({ doc, def, toSvgPoint, snapX }: Props) {
+export function PinLayer({ doc, def, toSvgPoint, snapX, readonly = false }: Props) {
   const pins = usePins(doc);
   const classes = usePinClasses(doc);
   const selection = useSelection((s) => s.selection);
@@ -95,9 +96,10 @@ export function PinLayer({ doc, def, toSvgPoint, snapX }: Props) {
             selected={selection.kind === 'pin' && selection.pinId === p.id}
             toSvgPoint={toSvgPoint}
             snapX={snapX}
+            readonly={readonly}
             onSelect={() => selectPin(p.id)}
             onMove={(x, y) => {
-              updatePin(doc, p.id, { x, y });
+              if (!readonly) updatePin(doc, p.id, { x, y });
             }}
           />
         );
@@ -117,6 +119,7 @@ interface DraggablePinProps {
   snapX?: (x: number) => number;
   onSelect: () => void;
   onMove: (x: number, y: number) => void;
+  readonly?: boolean;
 }
 
 function DraggablePin({
@@ -128,6 +131,7 @@ function DraggablePin({
   snapX,
   onSelect,
   onMove,
+  readonly = false,
 }: DraggablePinProps) {
   const dragging = useRef(false);
   const moved = useRef(false);
@@ -135,9 +139,13 @@ function DraggablePin({
   return (
     <g
       transform={`translate(${pin.x}, ${pin.y})`}
-      style={{ cursor: 'grab', touchAction: 'none' }}
+      style={{ cursor: readonly ? 'default' : 'grab', touchAction: 'none' }}
       onPointerDown={(ev) => {
         ev.stopPropagation();
+        if (readonly) {
+          onSelect();
+          return;
+        }
         dragging.current = true;
         moved.current = false;
         (ev.target as Element).setPointerCapture?.(ev.pointerId);

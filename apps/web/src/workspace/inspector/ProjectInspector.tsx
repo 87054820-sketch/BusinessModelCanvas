@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { CanvasMeta, Lang, Project } from '@pingarden/shared';
-import { TypeToConfirmDialog } from '../../ui/TypeToConfirmDialog';
+import { ConfirmDialog } from '../../ui/ConfirmDialog';
 import { RelatedCanvasesStrip } from './RelatedCanvasesStrip';
 
 interface Props {
@@ -29,7 +29,7 @@ interface Props {
  * Sections, top to bottom:
  *   1. Project name + description (editable, blur-to-save).
  *   2. Related-canvases chip strip for the active canvas.
- *   3. Danger zone (type-to-confirm delete).
+ *   3. Danger zone (destructive delete confirmation).
  *
  * The previous "color legend editor" lived here too, but the legend has
  * moved to a per-canvas overlay (`StickyLegendPalette`) plus a section
@@ -116,13 +116,13 @@ export function ProjectInspector({
         </button>
       </div>
 
-      <TypeToConfirmDialog
+      <ConfirmDialog
         open={confirmOpen}
         title={t('confirm.deleteProject')}
-        message={t('confirm.deleteProjectMsg', { count: canvasCount })}
-        expected={project.name}
+        message={t('confirm.deleteProjectMsg', { name: project.name, count: canvasCount })}
         confirmLabel={t('confirm.delete')}
         cancelLabel={t('confirm.cancel')}
+        danger
         onCancel={() => setConfirmOpen(false)}
         onConfirm={async () => {
           await onDelete();

@@ -12,7 +12,7 @@ if (!root) throw new Error('No #root element');
 createRoot(root).render(
   <StrictMode>
     <I18nextProvider i18n={i18n}>
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <App />
       </BrowserRouter>
     </I18nextProvider>

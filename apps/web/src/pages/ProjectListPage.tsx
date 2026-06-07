@@ -5,7 +5,7 @@ import type { CanvasMeta, Lang, Project } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { projectsApi } from '../api/projects';
 import { useIdentity } from '../identity/useIdentity';
-import { TypeToConfirmDialog } from '../ui/TypeToConfirmDialog';
+import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 import { TemplatePreviewModal } from '../components/TemplatePreviewModal';
 import { ProjectPicker, type ProjectWithCanvases } from '../components/ProjectPicker';
@@ -151,15 +151,16 @@ export function ProjectListPage() {
       </footer>
 
       <div className="mx-auto max-w-5xl px-8">
-        <TypeToConfirmDialog
+        <ConfirmDialog
           open={!!pendingDelete}
           title={t('confirm.deleteProject')}
           message={t('confirm.deleteProjectMsg', {
+            name: pendingDelete?.name ?? '',
             count: pendingDelete?.canvases.length ?? 0,
           })}
-          expected={pendingDelete?.name ?? ''}
           confirmLabel={t('confirm.delete')}
           cancelLabel={t('confirm.cancel')}
+          danger
           onCancel={() => setPendingDelete(null)}
           onConfirm={async () => {
             if (pendingDelete) await handleDelete(pendingDelete);

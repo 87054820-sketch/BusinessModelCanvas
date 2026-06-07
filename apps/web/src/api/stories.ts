@@ -1,0 +1,61 @@
+import type { CreateStoryInput, Story, StoryMeta, UpdateStoryInput } from '@pingarden/shared';
+
+const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
+
+function authHeaders(displayName: string): HeadersInit {
+  return { 'X-Display-Name': displayName };
+}
+
+function authHeadersJson(displayName: string): HeadersInit {
+  return { 'X-Display-Name': displayName, 'Content-Type': 'application/json' };
+}
+
+async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
+  const res = await fetch(input, init);
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`HTTP ${res.status}: ${body}`);
+  }
+  return (await res.json()) as T;
+}
+
+async function fetchVoid(input: RequestInfo, init?: RequestInit): Promise<void> {
+  const res = await fetch(input, init);
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`HTTP ${res.status}: ${body}`);
+  }
+}
+
+export const storiesApi = {
+  list(projectId: string, displayName: string): Promise<StoryMeta[]> {
+    return fetchJson<StoryMeta[]>(`${BASE}/projects/${projectId}/stories`, {
+      headers: authHeaders(displayName),
+    });
+  },
+  get(id: string, displayName: string): Promise<Story> {
+    return fetchJson<Story>(`${BASE}/stories/${id}`, {
+      headers: authHeaders(displayName),
+    });
+  },
+  create(input: CreateStoryInput, displayName: string): Promise<Story> {
+    return fetchJson<Story>(`${BASE}/stories`, {
+      method: 'POST',
+      headers: authHeadersJson(displayName),
+      body: JSON.stringify(input),
+    });
+  },
+  update(id: string, patch: UpdateStoryInput, displayName: string): Promise<Story> {
+    return fetchJson<Story>(`${BASE}/stories/${id}`, {
+      method: 'PATCH',
+      headers: authHeadersJson(displayName),
+      body: JSON.stringify(patch),
+    });
+  },
+  delete(id: string, displayName: string): Promise<void> {
+    return fetchVoid(`${BASE}/stories/${id}`, {
+      method: 'DELETE',
+      headers: authHeaders(displayName),
+    });
+  },
+};

@@ -46,6 +46,7 @@
   },
   "workspace": {
     "addCanvas": "+ 添加画布",
+    "canvases": "画布",
     "noCanvases": "暂无画布。",
     "selectCanvas": "从左侧选择一张画布",
     "saveMilestone": "保存里程碑",
@@ -55,6 +56,31 @@
     "expandSidebar": "展开左栏",
     "collapseInspector": "收起右栏",
     "expandInspector": "展开右栏"
+  },
+  "story": {
+    "story": "故事",
+    "stories": "故事",
+    "newStory": "+ 写故事",
+    "noStories": "暂无故事。",
+    "untitled": "未命名故事",
+    "loading": "正在加载故事…",
+    "read": "阅读",
+    "edit": "编辑",
+    "editor": "Markdown 编辑器",
+    "directiveHint": "使用 ::canvas[] 块把项目内画布嵌入文章。",
+    "insertCanvas": "插入画布",
+    "contentPlaceholder": "写下案例背景、关键判断、验证过程和复盘结论…",
+    "titlePlaceholder": "故事标题",
+    "contentDate": "内容时间",
+    "noContentDate": "未设置内容时间",
+    "saving": "保存中…",
+    "saved": "已保存",
+    "saveError": "保存失败",
+    "loadError": "故事加载失败，请刷新或稍后重试。",
+    "embeddedCanvas": "嵌入画布",
+    "openCanvas": "打开原画布",
+    "loadingCanvas": "正在加载画布…",
+    "missingCanvas": "这个画布引用不存在，或不属于当前项目。"
   },
   "addCanvas": {
     "title": "向此项目添加画布",
@@ -136,10 +162,12 @@
   "confirm": {
     "deleteCanvas": "删除画布",
     "deleteCanvasMsg": "确认删除「{{title}}」?所有相关里程碑也将一并删除。",
+    "deleteStory": "删除故事",
+    "deleteStoryMsg": "确认删除「{{title}}」?故事正文将被永久删除。",
     "deleteMilestone": "删除里程碑",
     "deleteMilestoneMsg": "确认删除「{{name}}」?",
     "deleteProject": "删除项目",
-    "deleteProjectMsg": "这将永久删除项目、内含的 {{count}} 张画布及所有里程碑。请输入项目名称以确认:",
+    "deleteProjectMsg": "这将永久删除「{{name}}」项目、内含的 {{count}} 张画布及所有里程碑。此操作不可恢复。",
     "delete": "删除",
     "cancel": "取消"
   },

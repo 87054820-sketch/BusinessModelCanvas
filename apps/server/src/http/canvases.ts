@@ -6,16 +6,25 @@ import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { getIdentity } from './identity.js';
 
+const ContentDatePrecision = z.enum(['year', 'month', 'day']);
+const contentDate = z.string().regex(/^\d{4}(-\d{2}){0,2}$/).optional();
+
 const CreateInput = z.object({
   projectId: z.string().min(1),
   defId: z.string().min(1),
   title: z.string().min(1).max(200),
   language: z.enum(['en', 'zh']),
+  contentDate,
+  contentDatePrecision: ContentDatePrecision.optional(),
+  contentDateLabel: z.string().max(80).optional(),
 });
 
 const UpdateInput = z.object({
   title: z.string().min(1).max(200).optional(),
   language: z.enum(['en', 'zh']).optional(),
+  contentDate,
+  contentDatePrecision: ContentDatePrecision.optional(),
+  contentDateLabel: z.string().max(80).optional(),
 });
 
 export function registerCanvasRoutes(
@@ -58,6 +67,9 @@ export function registerCanvasRoutes(
       defId: input.defId,
       title: input.title,
       language: input.language as Lang,
+      ...(input.contentDate ? { contentDate: input.contentDate } : {}),
+      ...(input.contentDatePrecision ? { contentDatePrecision: input.contentDatePrecision } : {}),
+      ...(input.contentDateLabel ? { contentDateLabel: input.contentDateLabel } : {}),
       createdAt: now,
       createdBy: identity.displayName,
       updatedAt: now,
