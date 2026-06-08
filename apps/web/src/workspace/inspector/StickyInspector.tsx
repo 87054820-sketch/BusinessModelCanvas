@@ -1,12 +1,21 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { StickyNote } from '@pingarden/shared';
+import type { Lang, StickyNote } from '@pingarden/shared';
 import { STICKY_PALETTE } from '../../canvas/stickyColors';
+import { visibleLegendEntries, type ColorLegendMap } from '../../collab/colorLegend';
+import { StickyRichEditor, ensureHTML } from '../../canvas/StickyRichEditor';
 
 interface Props {
   sticky: StickyNote;
   /** Translated block info — used to show which block the sticky is in. */
   blockTitle: string | undefined;
+  /** Live canvas color legend — only colours with a non-empty `label`
+   *  are offered in the swatch picker, mirroring the StickyLegendPalette
+   *  on the canvas. Falls back to full STICKY_PALETTE when empty. */
+  colorLegend: ColorLegendMap;
+  /** Active language — passed through to `visibleLegendEntries` for
+   *  symmetry with future bilingual legend entries. */
+  lang: Lang;
   onText: (text: string) => void;
   onColor: (color: string) => void;
   onDelete: () => void;
@@ -31,41 +40,29 @@ interface Props {
  * keyboard focus stays at the page level so workspace shortcuts
  * (Cmd+C/V/X, Delete / Backspace) operate on the sticky as an OBJECT.
  */
-export function StickyInspector({ sticky, blockTitle, onText, onColor, onDelete }: Props) {
+export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText, onColor, onDelete }: Props) {
   const { t } = useTranslation();
-  const [text, setText] = useState(sticky.text);
   const [editing, setEditing] = useState(false);
-  const taRef = useRef<HTMLTextAreaElement | null>(null);
 
-  // Resync from prop when a different sticky is selected, or text was edited
-  // on-canvas (textarea inside foreignObject) and we should reflect it here.
-  useEffect(() => {
-    setText(sticky.text);
-  }, [sticky.id, sticky.text]);
+  // Resolve which colours should be offered for the current canvas. Mirrors
+  // the StickyLegendPalette logic so the inspector and the on-canvas legend
+  // strip stay in lockstep — a hidden legend chip and a hidden swatch are
+  // the same concept. Empty legend → fall back to the full palette so the
+  // user is never trapped without options on a brand-new project.
+  const visible = visibleLegendEntries(colorLegend, lang);
+  const swatches: Array<{ hex: string; label: string; description?: string }> =
+    visible.length === 0
+      ? STICKY_PALETTE.map((hex) => ({ hex, label: '', description: undefined }))
+      : visible;
+  const visibleSet = new Set(swatches.map((s) => s.hex));
+  const currentInLegend = visibleSet.has(sticky.color);
+  const showOffLegendChip = !currentInLegend && visible.length > 0;
 
   // When the selected sticky changes (e.g. user clicked a different
   // sticky), drop out of edit mode so the new selection starts read-only.
   useEffect(() => {
     setEditing(false);
   }, [sticky.id]);
-
-  // Focus + autosize the textarea once we enter edit mode.
-  useEffect(() => {
-    if (!editing) return;
-    const ta = taRef.current;
-    if (!ta) return;
-    ta.focus();
-    ta.setSelectionRange(ta.value.length, ta.value.length);
-  }, [editing]);
-
-  // Autosize the textarea on text change while editing.
-  useEffect(() => {
-    if (!editing) return;
-    const ta = taRef.current;
-    if (!ta) return;
-    ta.style.height = 'auto';
-    ta.style.height = `${Math.min(ta.scrollHeight, 240)}px`;
-  }, [text, editing]);
 
   return (
     <div className="flex h-full flex-col">
@@ -79,29 +76,17 @@ export function StickyInspector({ sticky, blockTitle, onText, onColor, onDelete 
           hint={t('inspector.sticky.textHint')}
         >
           {editing ? (
-            <textarea
-              ref={taRef}
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-              onBlur={() => {
-                if (text !== sticky.text) onText(text);
-                setEditing(false);
-              }}
-              onKeyDown={(e) => {
-                // Esc or Cmd/Ctrl+Enter: commit + exit edit mode. Same
-                // shortcuts as the canvas-side inline editor for muscle
-                // memory.
-                if (e.key === 'Escape') {
-                  e.stopPropagation();
-                  e.currentTarget.blur();
-                }
-                if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) {
-                  e.currentTarget.blur();
-                }
-              }}
-              className="w-full resize-none rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-gray-900 focus:outline-none"
-              rows={3}
-            />
+            <div className="rounded-lg border border-gray-300 px-3 py-2 focus-within:border-gray-900">
+              <StickyRichEditor
+                value={sticky.text}
+                onCommit={(html) => {
+                  if (html !== sticky.text) onText(html);
+                  setEditing(false);
+                }}
+                autoFocus
+                className="min-h-[64px]"
+              />
+            </div>
           ) : (
             <button
               type="button"
@@ -110,7 +95,10 @@ export function StickyInspector({ sticky, blockTitle, onText, onColor, onDelete 
               className="block min-h-[64px] w-full cursor-text rounded-lg border border-gray-200 bg-white px-3 py-2 text-left text-sm text-gray-800 hover:border-gray-400"
             >
               {sticky.text ? (
-                <span className="block whitespace-pre-wrap break-words">{sticky.text}</span>
+                <span
+                  className="sticky-readonly block whitespace-pre-wrap break-words"
+                  dangerouslySetInnerHTML={{ __html: ensureHTML(sticky.text) }}
+                />
               ) : (
                 <span className="italic text-gray-400">
                   {t('inspector.sticky.clickToEdit')}
@@ -121,25 +109,47 @@ export function StickyInspector({ sticky, blockTitle, onText, onColor, onDelete 
         </Field>
 
         <Field label={t('inspector.sticky.color')}>
-          <div className="flex items-center gap-2">
-            {STICKY_PALETTE.map((c) => {
-              const active = c === sticky.color;
+          <div className="flex flex-wrap items-center gap-2">
+            {showOffLegendChip && (
+              <button
+                type="button"
+                disabled
+                aria-disabled="true"
+                title={t('inspector.sticky.colorNotInLegend')}
+                className="h-8 w-8 cursor-not-allowed rounded-full border-2 border-dashed border-gray-400 opacity-60"
+                style={{ backgroundColor: sticky.color }}
+                aria-label={t('inspector.sticky.colorNotInLegend')}
+              />
+            )}
+            {swatches.map((entry) => {
+              const active = entry.hex === sticky.color;
+              const tooltip = entry.label
+                ? entry.description
+                  ? `${entry.label} — ${entry.description}`
+                  : entry.label
+                : entry.hex;
               return (
                 <button
-                  key={c}
+                  key={entry.hex}
                   type="button"
-                  onClick={() => onColor(c)}
+                  onClick={() => onColor(entry.hex)}
                   className={`h-8 w-8 rounded-full border-2 transition ${
                     active
                       ? 'border-gray-900 ring-2 ring-gray-900/20'
                       : 'border-white hover:border-gray-300'
                   }`}
-                  style={{ backgroundColor: c }}
-                  aria-label={c}
+                  style={{ backgroundColor: entry.hex }}
+                  title={tooltip}
+                  aria-label={tooltip}
                 />
               );
             })}
           </div>
+          {showOffLegendChip && (
+            <div className="mt-1.5 text-[11px] leading-snug text-gray-500">
+              {t('inspector.sticky.colorNotInLegend')}
+            </div>
+          )}
         </Field>
 
         <Field label={t('inspector.sticky.block')}>

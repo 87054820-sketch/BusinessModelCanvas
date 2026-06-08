@@ -36,6 +36,15 @@ const STICKIES_KEY = 'stickies';
  * (creates or moves a sticky), it goes through the same `PUT /canvases/:id/state`
  * route that the human web client uses. There is intentionally no
  * separate AI-write API surface.
+ *
+ * **Sticky text format:** since the introduction of the rich-text editor
+ * in `apps/web/src/canvas/StickyRichEditor.tsx`, `text` is stored
+ * verbatim and is typically a small HTML fragment (e.g. `<p>...</p>`,
+ * `<strong>`, `<em>`, `<u>`, `<span style="font-size: 14px; color: #...">`).
+ * Legacy stickies created before the editor landed remain plain strings
+ * and are still valid input. Consumers (LLMs, future tooling) should
+ * treat `text` as opaque markup; if a plain-text view is needed, strip
+ * tags downstream rather than at this seam.
  */
 export function registerAiContextRoutes(
   app: FastifyInstance,

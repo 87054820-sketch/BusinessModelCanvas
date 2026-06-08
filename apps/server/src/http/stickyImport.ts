@@ -31,6 +31,15 @@ import { getIdentity } from './identity.js';
  * Live runtime sync (per-keystroke, multi-cursor) still flows through
  * `PUT /canvases/:id/state`. The two are intentionally separate seams:
  * CRDT for live editing, batch JSON for seed/import.
+ *
+ * **Sticky text format:** `text` is stored verbatim. As of the
+ * StickyRichEditor rollout, the web client emits a small HTML fragment
+ * (e.g. `<p>...</p>`, `<strong>`, `<em>`, `<u>`, inline
+ * `<span style="...">`). For seed / AI imports, plain-text strings are
+ * still accepted — they get round-tripped through the editor as a
+ * single paragraph on first read. There is no server-side HTML
+ * sanitization today; trust the producer (seed scripts and the future
+ * AI Copilot endpoint) to send shapes the editor can parse.
  */
 
 // ─── sticky encoding constants (mirror collab/stickies.ts) ──────────────

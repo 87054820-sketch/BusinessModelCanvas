@@ -108,6 +108,7 @@
       "text": "内容",
       "textHint": "显示在画布上",
       "color": "颜色",
+      "colorNotInLegend": "该颜色不在当前画布图例中。请选择图例内的颜色替换。",
       "block": "所属区块",
       "meta": "作者 / 创建于",
       "metaHint": "{{author}} · {{date}}",

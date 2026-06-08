@@ -1,0 +1,101 @@
+{
+  "book": "Value Proposition Design",
+  "authors": "Alex Osterwalder, Yves Pigneur, Greg Bernarda, Alan Smith",
+  "language": "en",
+  "total_chapters": 4,
+  "chapters": [
+    {
+      "slug": "01-canvas",
+      "title": "Canvas",
+      "page_start": 6,
+      "page_end": 69,
+      "keywords": ["value proposition canvas", "customer profile", "value map", "fit", "jobs pains gains"],
+      "summary": "Introduces the Value Proposition Canvas with its two sides—Customer Profile and Value Map—and explains how to achieve Fit between them.",
+      "has_images": true,
+      "image_count": 10,
+      "sections": ["Introduction", "Customer Profile", "Value Map", "Fit"],
+      "key_images": [
+        {
+          "file": "assets/fig-3-fit-concept.png",
+          "caption": "The Fit concept diagram showing the relationship between creating value and observing customers",
+          "category": "diagram",
+          "keywords": ["fit", "value proposition", "customer observation"]
+        },
+        {
+          "file": "assets/fig-8-vpc-example.png",
+          "caption": "A filled-in Value Proposition Canvas example mapping the Value Proposition Design book itself",
+          "category": "example",
+          "keywords": ["value proposition canvas", "example", "filled canvas"]
+        },
+        {
+          "file": "assets/fig-9-value-map-exercise.png",
+          "caption": "Step-by-step exercise for mapping how products and services create value",
+          "category": "template",
+          "keywords": ["value map", "exercise", "products and services"]
+        }
+      ]
+    },
+    {
+      "slug": "02-design",
+      "title": "Design",
+      "page_start": 70,
+      "page_end": 187,
+      "keywords": ["prototyping", "design thinking", "customer interviews", "starting points", "business model"],
+      "summary": "Covers the messy, nonlinear process of designing value propositions through prototyping, understanding customers, making choices, and finding the right business model.",
+      "has_images": true,
+      "image_count": 5,
+      "sections": ["Prototyping Possibilities", "Starting Points", "Understanding Customers", "Making Choices", "Finding the Right Business Model", "Designing in Established Organizations"],
+      "key_images": [
+        {
+          "file": "assets/fig-1-design-squiggle.png",
+          "caption": "The design squiggle illustrating the nonlinear journey from chaos to clarity in inventing and improving value propositions",
+          "category": "diagram",
+          "keywords": ["design process", "squiggle", "invent", "improve"]
+        },
+        {
+          "file": "assets/fig-4-prototyping-methods.png",
+          "caption": "Overview of five prototyping techniques: napkin sketches, ad-libs, Value Proposition Canvases, representations, and MVPs",
+          "category": "process",
+          "keywords": ["prototyping", "napkin sketches", "ad-libs", "MVP"]
+        },
+        {
+          "file": "assets/fig-5-interview-process.png",
+          "caption": "The Journalist interview process: a 7-step loop for conducting customer interviews to gain better understanding",
+          "category": "process",
+          "keywords": ["customer interviews", "journalist", "understanding customers"]
+        }
+      ]
+    },
+    {
+      "slug": "03-test",
+      "title": "Test",
+      "page_start": 188,
+      "page_end": 259,
+      "keywords": ["testing", "experiments", "hypotheses", "test card", "evidence"],
+      "summary": "Describes how to reduce risk by extracting hypotheses, designing experiments with the Test Card, and systematically validating or invalidating assumptions.",
+      "has_images": true,
+      "image_count": 2,
+      "sections": ["What to Test", "Testing Step-by-Step", "Experiment Library", "Bringing It All Together"],
+      "key_images": [
+        {
+          "file": "assets/fig-2-testing-process.png",
+          "caption": "Illustrated testing factory showing the flow from design through hypothesis extraction, experimentation, data analysis, and learning",
+          "category": "process",
+          "keywords": ["testing process", "hypothesis", "experiment", "learning"]
+        }
+      ]
+    },
+    {
+      "slug": "04-evolve",
+      "title": "Evolve",
+      "page_start": 260,
+      "page_end": 277,
+      "keywords": ["alignment", "measurement", "improvement", "reinvention", "established organizations"],
+      "summary": "Explains how to continuously evolve value propositions by creating alignment, measuring progress, improving relentlessly, and reinventing constantly.",
+      "has_images": false,
+      "image_count": 0,
+      "sections": ["Create Alignment", "Measure & Monitor", "Improve Relentlessly", "Reinvent Yourself Constantly"],
+      "key_images": []
+    }
+  ]
+}

@@ -94,3 +94,15 @@ body,
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Electron desktop: top app shell is the only draggable surface so the
+   user can move the (frameless / hiddenInset) window. Interactive
+   children must opt back out via -webkit-app-region: no-drag, otherwise
+   clicks are swallowed by the drag handler. App.tsx adds this class
+   only when `isDesktop`, so browser users are unaffected. */
+.app-drag-region { -webkit-app-region: drag; }
+.app-drag-region a,
+.app-drag-region button,
+.app-drag-region input,
+.app-drag-region select,
+.app-drag-region [role="button"] { -webkit-app-region: no-drag; }

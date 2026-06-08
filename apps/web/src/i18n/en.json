@@ -108,6 +108,7 @@
       "text": "Text",
       "textHint": "Shown on canvas",
       "color": "Color",
+      "colorNotInLegend": "This colour isn't in the canvas legend. Pick a legend colour to replace it.",
       "block": "Block",
       "meta": "Author / Created",
       "metaHint": "{{author}} · {{date}}",

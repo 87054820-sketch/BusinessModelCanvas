@@ -205,8 +205,13 @@ app.whenReady().then(async () => {
   Menu.setApplicationMenu(Menu.buildFromTemplate(template));
 });
 
+// PinGarden is a single-window utility app: closing the window means
+// the user is done. Override Electron's macOS default (which keeps the
+// app in the dock after the last window closes) so the red traffic
+// light fully terminates the process. The matching `before-quit`
+// handler below tears down the embedded Fastify server.
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit();
+  app.quit();
 });
 
 app.on('before-quit', () => {

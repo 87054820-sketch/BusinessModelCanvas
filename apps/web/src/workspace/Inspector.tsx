@@ -228,6 +228,8 @@ export function Inspector({
     <StickyInspector
       sticky={sticky}
       blockTitle={blockTitle}
+      colorLegend={colorLegend}
+      lang={liveLang}
       onText={(text) => updateSticky(doc, sticky.id, { text })}
       onColor={(color) => updateSticky(doc, sticky.id, { color })}
       onDelete={() => {

@@ -11,6 +11,7 @@ This is a self-hostable real-time collaborative canvas tool (Strategyzer-style: 
 | 重启 / restart                   | Run `./start.sh` (it's idempotent — kills old instances first)      |
 | 看日志 / logs / tail             | `tail -f .dev/server.log .dev/web.log`                              |
 | 状态 / 是否运行 / status         | `lsof -ti tcp:4000 tcp:5173` to check, then report                  |
+| 打包 / 打 dmg / package / build dmg / 重打 dmg | Run `pnpm package:mac` from the project root (see "Packaging" below) |
 
 `start.sh` is idempotent: it kills anything on `:4000` / `:5173` first, runs `pnpm install` only if `node_modules/` is missing, daemonizes both servers via `nohup`, and waits for both to answer before printing the URLs. Logs and PID files live in `.dev/` (gitignored).
 
@@ -24,6 +25,34 @@ URLs once started:
 - Web SPA: http://localhost:5173
 - API:     http://localhost:4000
 - Health:  http://localhost:4000/health
+
+## Packaging (macOS DMG)
+
+The desktop app is shipped as an unsigned macOS DMG. **There is exactly one canonical packaging entry point** — anything else risks producing an .app without a DMG (or a stale DMG, which is what bit us when a release "looked" un-updated).
+
+```bash
+pnpm package:mac          # at the repo root — preferred
+# all of these are aliases that run scripts/package-mac.sh:
+pnpm build:desktop
+pnpm dist
+bash scripts/package-mac.sh
+```
+
+Every successful run produces **both** artifacts in `apps/desktop/build/`:
+1. `mac-arm64/PinGarden.app`         (loose .app bundle for direct copy)
+2. `PinGarden-<version>-arm64.dmg`   (DMG installer)
+
+If either is missing the script exits non-zero. The script also runs `pnpm typecheck` upfront and fails fast on type errors — packaging is the gating moment for "is the workspace green".
+
+**Before packaging a release**: bump `apps/desktop/package.json:version` (this is what flows into `CFBundleShortVersionString`, the DMG filename, and macOS About / Get Info). Without a bump, recipients see the same version string and assume the build is identical to the previous one even when source has changed.
+
+**Distribution caveat**: there's no Apple Developer ID signing yet, so on any machine other than the builder's, the recipient must clear the quarantine bit after dragging the .app into /Applications:
+```bash
+xattr -cr /Applications/PinGarden.app
+```
+The script's success summary prints this reminder.
+
+**Do NOT** use `pnpm --filter @pingarden/desktop run dist:dir` for distribution — that target is intentionally DMG-less (it produces only the loose .app for desktop-shell debugging and is much faster). It is a release foot-gun: the DMG file in `apps/desktop/build/` will not be regenerated, so a follow-up `cp` or upload silently ships the previous DMG.
 
 ## Architectural seams (don't break these)
 

@@ -12,6 +12,13 @@
   },
   "dependencies": {
     "@pingarden/shared": "workspace:*",
+    "@tiptap/core": "^2.10.4",
+    "@tiptap/extension-color": "^2.10.4",
+    "@tiptap/extension-text-style": "^2.10.4",
+    "@tiptap/extension-underline": "^2.10.4",
+    "@tiptap/pm": "^2.10.4",
+    "@tiptap/react": "^2.10.4",
+    "@tiptap/starter-kit": "^2.10.4",
     "i18next": "^23.12.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

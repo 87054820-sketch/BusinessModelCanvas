@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import type { StickyNote } from '@pingarden/shared';
 import {
   DEFAULT_STICKY_HEIGHT,
@@ -8,6 +8,7 @@ import {
   STICKY_MIN_HEIGHT,
   STICKY_MIN_WIDTH,
 } from '@pingarden/shared';
+import { StickyRichEditor, ensureHTML } from './StickyRichEditor';
 
 const CLICK_THRESHOLD_PX = 4;
 /** Side length of the bottom-right resize handle in SVG-coord units. */
@@ -72,20 +73,15 @@ export function Sticky({
     width: number;
     height: number;
   } | null>(null);
-  const taRef = useRef<HTMLTextAreaElement | null>(null);
 
   // Effective dimensions — fall back to the shared defaults so stickies
   // persisted before this feature existed render at the original size.
   const W = sticky.width ?? DEFAULT_STICKY_WIDTH;
   const H = sticky.height ?? DEFAULT_STICKY_HEIGHT;
 
-  useEffect(() => {
-    if (editing) {
-      const ta = taRef.current;
-      ta?.focus();
-      ta?.select();
-    }
-  }, [editing]);
+  // Focus management for inline editing is now handled inside
+  // StickyRichEditor via its `autoFocus` prop, so the previous
+  // textarea-focus useEffect (and `taRef`) are no longer needed.
 
   function startDrag(e: React.PointerEvent) {
     if (editing) return;
@@ -224,35 +220,32 @@ export function Sticky({
       {/* text */}
       {editing ? (
         <foreignObject x={6} y={6} width={W - 12} height={H - 12}>
-          <textarea
-            ref={taRef}
-            defaultValue={sticky.text}
-            onBlur={(e) => {
-              onText(e.currentTarget.value);
+          <StickyRichEditor
+            compact
+            autoFocus
+            value={sticky.text}
+            onCommit={(html) => {
+              onText(html);
               setEditing(false);
             }}
-            onKeyDown={(e) => {
-              if (e.key === 'Escape') {
-                e.currentTarget.blur();
-              }
-              if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) {
-                e.currentTarget.blur();
-              }
-            }}
-            className="h-full w-full resize-none border-0 bg-transparent text-[14px] leading-[1.15] text-gray-900 outline-none"
-            style={{ fontFamily: 'inherit' }}
+            className="h-full w-full"
           />
         </foreignObject>
       ) : (
         <foreignObject x={6} y={6} width={W - 12} height={H - 12} pointerEvents="none">
-          <div className="h-full w-full overflow-hidden whitespace-pre-wrap break-words text-[13px] leading-tight text-gray-900">
-            {sticky.text || (
+          {sticky.text ? (
+            <div
+              className="sticky-readonly h-full w-full overflow-hidden whitespace-pre-wrap break-words text-[13px] leading-tight text-gray-900"
+              dangerouslySetInnerHTML={{ __html: ensureHTML(sticky.text) }}
+            />
+          ) : (
+            <div className="h-full w-full overflow-hidden whitespace-pre-wrap break-words text-[13px] leading-tight text-gray-900">
               <span className="italic text-gray-500">
                 {/* Hint shown for empty stickies. Localized via i18n later if needed. */}
                 双击编辑
               </span>
-            )}
-          </div>
+            </div>
+          )}
         </foreignObject>
       )}
 

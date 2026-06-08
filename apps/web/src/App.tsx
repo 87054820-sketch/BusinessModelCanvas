@@ -24,7 +24,11 @@ export default function App() {
 
   return (
     <div className="flex h-full flex-col bg-stone-50">
-      <nav className="relative flex h-12 flex-shrink-0 items-center justify-between border-b border-gray-200 bg-white px-6">
+      <nav
+        className={`relative flex h-12 flex-shrink-0 items-center justify-between border-b border-gray-200 bg-white px-6 ${
+          isDesktop ? 'app-drag-region pl-20' : ''
+        }`}
+      >
         {isDesktop ? (
           <div className="pointer-events-auto absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             {logo}
