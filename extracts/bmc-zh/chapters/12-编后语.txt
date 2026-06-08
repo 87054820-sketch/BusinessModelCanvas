@@ -1,0 +1,930 @@
+# 编后语
+
+本书从何而来
+背景
+2004年，亚历山大·奥斯特瓦德（Alexander Osterwalder）在瑞士洛桑
+高等商学院（HEC Lausanne）的伊夫·皮尼厄（Yves Pigneur）教授的
+指导下完成了商业模式创新方向的博士论文。时光飞逝。2006年，论
+文中提出的方法开始被广泛应用到世界各地，包括3M、爱立信、德勤
+和挪威电信公司这些著名的企业。亚历山大的商业模式博客起到了主
+要的作用。在荷兰的一次研讨会中，帕特里克·范德皮尔（Patrick van
+der Pijl）问：“为什么没有一本书来介绍这种方法？”亚历山大和伊夫于
+是承担起这项任务。但如何才能从每年无数的战略和管理书籍中脱颖
+而出呢？
+模式创新
+亚历山大和伊夫相信，除非采用一种创新的商业模式来写，否则这样
+一本关于商业模式创新的书绝不会令人信服。他们不顾出版商的反
+对，建立了一个在线互动平台（Hub），从开始写作的第一天就通过互
+联网分享他们的书稿。任何人只要有兴趣就可以付费加入这个平台
+（一开始是24美元，后来为了限制平台的人数逐步上升到243美元）。
+376
+
+
+作为写作过程中的一项创新，平台的收入和其他创新的收益来源为本
+书的制作筹得了早期资金。为了给读者创造更多的价值，本书还打破
+了战略和管理类图书的传统格式：得益于大家的共同创作，它非常直
+观，而且辅以各种练习和研讨建议。
+关键读者远见卓识和颠覆未来的……
+企业家/咨询师/高级管理者
+创作地点……
+文字：瑞士洛桑
+设计：英国伦敦
+编辑：美国波特兰
+377
+
+
+摄影：加拿大多伦多
+制作：荷兰阿姆斯特丹
+活动：阿姆斯特丹和多伦多
+过程
+为了启动这个项目，由亚历山大、伊夫和帕特里克组成的核心团队召
+开了很多次会议，绘制出了本书的商业模式。在线互动平台的启动使
+得全球的商业模式创新的实践者能够共同创作这样一本书。The
+Movement公司的创意总监阿兰·史密斯（Alan Smith）听说这个项目
+后，抛下他的公司投入到我们的团队中来。最终，在线互动平台中的
+一位成员蒂姆·克拉克（Tim Clark）在知道我们需要一名编辑后也加入
+到我们的核心团队。JAM公司的加入使得我们有了一个完整的团队。这
+是一家利用视觉化思考来解决商业问题的公司。我们启动了一个互动
+循环流程来向在线互动平台输入“大块”新鲜内容，以获取丰富的反馈和
+贡献。本书的写作过程变得完全透明。内容、设计、插图和框架被不
+断地分享到在线互动平台上，并接受来自全球的平台成员的充分评
+论。核心团队对每一个评论都一一回复，并且将这些反馈吸纳到书中
+的文字和设计中去。我们在荷兰的阿姆斯特丹为本书组织了一次“虚拟
+发布会”，在线互动平台的成员在活动中面对面地交流并且分享他们在
+商业模式创新方面的经验。和JAM公司一起绘制互动式的商业模式成了
+378
+
+
+活动当天的核心工作。我们印刷了200本（清样）书稿，并且由
+Fisheye Media公司制作了一个关于写作过程的视频片段。经过更多次
+的迭代，我们终于出版了本书的第1版印刷本。
+用到的工具
+战略：
+·环境扫描（environmental scanning）
+·商业模式画布（business model canvas）
+·客户移情图（customer empathy map）
+内容和研究：
+·客户洞察（customer insights）
+·案例研究（case studies）
+开放流程：
+·在线互动平台（online platform）
+·共同创造（co-creation）
+·开放式创作（access to unfinished work）
+379
+
+
+·评论和反馈（commenting & feedback）
+设计：
+·开放设计流程（open design process）
+·情绪板（moodboards）
+·纸模型（paper mockups）
+·视觉化（visualization）
+·插图（illustration）
+·摄影（photography）
+数字
+9
+年的研究和实践
+470
+位合著者
+380
+
+
+19
+个知识模块
+8
+种书稿模型
+200
+份内容混乱的试验印刷本
+77
+场论坛讨论
+287
+通Skype电话
+1 360
+381
+
+
+条评论
+45
+个国家
+137 757
+次（出版前的）在线浏览
+13.18
+GB的内容
+28 456
+张使用过的便利贴
+4 000
+多个小时的工作
+382
+
+
+521
+张照片
+383
+
+
+参考文献
+Boland, Richard Jr., and Collopy, Fred. Managing as Designing.
+Stanford: Stanford Business Books. 2004.
+Buxton, Bill. Sketching User Experience, Getting the Design Right
+and the Right Design. New York: Elsevier. 2007.
+Denning, Stephen. The Leader's Guide to Storytelling: Mastering
+the Art and Discipline of Business Narrative.
+San Francisco: Jossey-Bass. 2005.
+Galbraith, Jay R. Designing Complex Organizations. Reading:
+Addison Wesley. 1973.
+Goodwin, Kim. Designing for the Digital Age: How to Create
+Human-Centered Products and Services. New York: John Wiley &
+sons, Inc. 2009.
+Harrison, Sam. Ideaspotting: How to Find Your Next Great Idea.
+Cincinnati: How Books. 2006.
+384
+
+
+Heath, Chip, and Heath, Dan. Made to Stick: Why Some Ideas
+Survive and Others Die. New York: Random House. 2007.
+Hunter, Richard, and McDonald, Mark, “Getting the right IT:
+Using Business Models.” Gartner EXP CIO Signature report, October
+2007.
+Kelley, Tom, et. al. The Art of Innovation: Lessons in Creativity
+from IDEO, America's Leading Design Firm. New York: Broadway
+Business. 2001.
+Kelley, Tom. The Ten Faces of Innovation: Strategies for
+Heightening Creativity. New York: Profile Business. 2008.
+Kim, W. Chan, and Mauborgne, Renée. Blue Ocean Strategy:
+How to Create Uncontested Market Space and Make Competition
+Irrelevant. Boston: Harvard Business School Press. 2005.
+Markides, Constantinos C. Game-Changing Strategies: How to
+Create New Market Space in Established Industries by Breaking the
+Rules. san Francisco: Jossey-Bass. 2008.
+Medina, John. Brain Rules: 12 Principles for Surviving and
+Thriving at Work, Home, and School. Seattle: Pear Press. 2009.
+385
+
+
+Moggridge, Bill. Designing interactions. Cambridge: MIT Press.
+2007.
+O'Reilly, Charles A., III, and Michael L. Tushman. “The Ambi-
+dextrous Organization.” Harvard Business Review 82, no. 4 （April
+2004）: 74-81.
+Pillkahn, Ulf. Using Trends and Scenarios as Tools for Strategy
+Development. New York: John Wiley & Sons, Inc. 2008.
+Pink, Daniel H. A Whole New Mind: Why Right-Brainers Will Rule
+the Future. New York: Riverhead Trade. 2006.
+Porter, Michael. Competitive Strategy: Techniques for Analyzing
+Industries and Competitors. New York: Free Press. 1980.
+Roam, Dan. The Back of the Napkin: Solving Problems and
+Selling Ideas with Pictures. New York: Portfolio Hardcover. 2008.
+schrage, Michael. Serious Play: How the World's Best Companies
+Simulate to Innovate. Boston: Harvard Business School Press. 1999.
+Schwartz, Peter. The Art of the Long View: Planning for the
+Future in an Uncertain World. New York: Currency Doubleday. 1996.
+386
+
+
+Weill, Peter, and Vitale, Michael. Place to Space: Migrating to
+Ebusiness Models. Boston: Harvard Business school Press. 2001.
+市场反响
+本书的市场反响尤其让人欢欣鼓舞。在没有任何营销预算也没有任何
+传统出版商支持的情况下，首次印刷的5000本在两个月内一售而空。
+关于本书的消息完全通过口口相传、博客、网站、Email和Twitter。最
+令人欣慰的是，读者和在线互动平台的成员在世界各个角落自发地组
+织起各种研讨会，讨论本书中的内容。
+387
+
+
+来自Twitter上的留言#BMGEN
+@business—design有效利用《商业模式新生代》的三个步骤：①买
+书；②活学活用；③见证奇迹☺http://bit.ly/OzZhO
+@Acluytens
+好兴奋！终于收到《商业模式新生代》了！周末要全部用来读书了，
+对不起了，亲爱的！☺#bmgen
+@tkeppins
+388
+
+
+这个星期天的早晨，房间依然安静。一边静静地享受一杯卡布奇诺咖
+啡，一边品读《商业模式新生代》。
+@hvandendergh
+我现在是左右为难：是应该报个班学习呢，还是跟着
+@business_design享受《商业模式新生代》的乐趣……
+@vshamanov
+刚刚通过@business_design拿到一本《商业模式新生代》，
+@thinksmith的设计比我想象的还要漂亮#bmgen
+@remarkk
+今晚到#ftjco上访问了@ryantaylor并借了他的《商业模式新生代》。
+惊喜连连的一整夜！
+@bgilham
+我情不自禁地要在我的那本《商业模式新生代》上从头到尾写下心得
+体会，但是它太漂亮了，实在不忍心破坏它的美感。看来我需要买两
+本《商业模式新生代〉了。#bmgen to
+@skanwar
+389
+
+
+刚刚收到我的《商业模式新生代》，看上去既漂亮又实用。祝贺！
+@fancoisnel
+@business_design我被我从《商业模式新生代》中学到的内容征服
+了！感激之情溢于言表！
+@will_lam
+正在读《商业模式新生代》……这可能是我读过的设计最精巧、最具创
+新性的书了！
+@jhemlig
+我爱死这本书了！感谢@business_design#bmgen
+@evelynso
+390
+
+
+是只有我这么幸运，还是多伦多的每个人都拿到了一本《商业模式新
+生代》？#bmgen
+@will_iam
+刚刚拿到了一本《商业模式新生代》……太好了！写作创新的新时代。
+@Neerumarya
+刚刚收到《商业模式新生代》。想要跳出框架思考的创业者必须
+要有这样一本书。
+@Peter_Engel
+《商业模式新生代》确实是一本极有魅力的书。现在拿着它在手里感
+觉就像一个收到圣诞礼物的孩子。#bmgen
+@mrchrisadams
+我的《商业模式新生代》已经收到了！这是有史以来最酷的一本商业
+图书！WOW！#bmgen
+@snuikas
+《商业模式新生代》这本书将使当前比较肤浅的商业模式讨论到达新
+的深度。#bmgenhttp://pic.gd/6671ef
+391
+
+
+@provice
+在伦敦一边独自享用晚餐一边读《商业模式新生代》。这本书设计得
+如此精巧，一旦拿起它，就放不下来。
+@roryoconnor
+很兴奋能够参与《商业模式新生代》的制作。现在终于出版了！
+@pvanabbema
+激动得像一个孩子。刚刚收到了我的《商业模式新生代》
+http://tinyurl.com/1847fj这本书设计得超棒。
+@santiago_rdm
+正在读亚历山大·奥斯特瓦德和伊夫·皮尼厄的《商业模式新生代》，它
+将会是一本很难被超越的管理学图书。
+@joostC
+你的宏大实验刚刚到达日本。首次印刷的《商业模式新生代》。令人
+兴奋的实操手册。
+@CoCreatr
+392
+
+
+@business_design和伊夫·皮尼厄创作的《商业模式新生代》到了！有
+幸成为本书极小的一分子，真的是太棒了。
+@jaygoldman
+@thinksmith@business_design@patrickpijl伙伴们，我很开心！太疯狂
+了。多么美妙的结果。
+@dulk
+几天前我亲手拿到《商业模式新生代》，非常棒！干得漂亮，
+@business_design, @thinksmith和所有人！
+@evangineer
+能和超过40位拥有商业模式基因的同仁一起在多伦多跌宕思维，那真
+的是绝妙的经历。#bmgento——这个城市正在发生巨变！
+@davidfeldt
+393
+
+
+协作
+Ellen Di Resta
+Michael Anton Dila
+Remko Vochteloo
+Victor Lombardi
+Jeremy Hayes
+394
+
+
+Alf Rehn
+Jeff De Cagna
+Andrea Mason
+Jan Ondrus
+Simon Evenblij
+Chris Walters
+Caspar van Rijnbach
+benmlih
+Rodrigo Miranda
+Saul Kaplan
+Lars Geisel
+Simon Scott
+Dimitri Lévita
+Johan fflñrneblad
+395
+
+
+Craig Sadler
+Praveen Singh
+Livia Labate
+Kristian Salvesen
+Daniel Egger
+Diogo Carmo
+Marcel Ott
+Guilhem Bertholet
+Thibault Estier
+Stephane Rey
+Chris Peasner
+Jonathan Lin
+Cesar Picos
+Florian
+396
+
+
+Armando Maldonado
+Eduardo Míguez
+Anouar Hamidouche
+Francisco Perez
+Nicky Smyth
+Bob Dunn
+Carlo Arioli
+Matthew Milan
+Ralf Beuker
+Sander Smit
+Norbert Herman
+Atanas Zaprianov
+Linus Malmberg
+Deborah Mills-Scofield
+397
+
+
+Peter Knol
+Jess McMullin
+Marianela Ledezma
+Ray Guyot
+Martin Andres Giorgetti
+Geert van Vlijmen
+Rasmus Rønholt
+Tim Clark
+Richard Bell
+Erwin Blom
+Frédéric Sidler
+John LM Kiggundu
+Robert Elm
+Ziv Baida
+398
+
+
+Andra Larin-van der Pijl
+Eirik V Johnsen
+Boris Fritscher
+Mike Lachapelle
+Albert Meige
+Pablo M. Ramírez
+Jean-Loup
+Colin Pons
+Vacherand
+Guillermo Jose Aguilar
+Adriel Haeni
+Lukas Prochazka
+Kim Korn
+Abdullah Nadeem
+399
+
+
+Rory O'Connor
+Hubert de Candé
+Frans Wittenberg
+Jonas Lindelöf
+Gordon Gray
+Karen Hembrough
+Ronald Pilot
+Yves Claude Aubert
+Wim Saly
+Woutergort
+Fanco Ivan Santos Negrelli
+Amee Shah
+Lars Mårtensson
+Kevin Donaldson
+400
+
+
+JD Stein
+Ralf de Graaf
+Lars Norrman
+Sergey Trikhachev
+Thomas
+Alfred Herman
+Bert Spangenberg
+Robert van Kooten
+Hans Suter
+Wolf Schumacher
+Bill Welter
+Michele Leidi
+Asim J. Ranjha
+Peter Troxler
+401
+
+
+Ola Dagberg
+Wouter van der Burg
+Artur Schmidt
+Slabber
+Peter Jones
+Sebastian Ullrich
+Andrew Pope
+Fredrik Eliasson
+Bruce MacVarish
+Göran Hagert
+Markus Gander
+Marc Castricum
+Nicholas K. Niemann
+Christian Labezin
+402
+
+
+Claudio D'Ipolitto
+Aurel Hosennen
+Adrian Zaugg
+Frank Camille Lagerveld
+Andres Alcalde
+Alvaro Villalobos M
+Bernard Racine
+Pekka Matilainen
+Bas van Oosterhout
+Gillian Hunt
+Bart Boone
+Michael Moriarty
+Mike
+Design for Innovation
+403
+
+
+Tom Corcoran
+Ari Wurmann
+Antonio Robert
+Wibe van der Pol
+paola valeri
+Michael Sommers
+Nicolas Fleury
+Gert Steens
+Jose Sebastian Palazuelos
+Lopez
+jorge zavala
+Harry Heijligers
+Armand Dickey
+Jason King
+404
+
+
+Kjartan Mjoesund
+Louis Rosenfeld
+Ivo Georgiev
+Donald Chapin
+Annie Shum
+Valentin Crettaz
+Dave Crowther
+Chris J Davis
+Frank Della Rosa
+Christian Schüller
+Luis Eduardo de Carvalho
+Patrik Ekström
+Greg Krauska
+Giorgio Casoni
+405
+
+
+Stef Silvis
+Peter Froberg
+Lino Piani
+Eric Jackson
+Indrajit Datta Chaudhuri
+Martin Fanghanel
+Michael Sandfær
+Niall Casey
+John McGuire
+Vivian Vendeirinho
+Martèl Bakker Schut
+Stefano Mastrogiacoo
+Mark Hickman
+Dibrov
+406
+
+
+Reinhold König
+Marcel Jaeggi
+John O'Connell
+Javier Ibarra
+Lytton He
+Marije Sluis
+David Edwards
+Martin Kuplens-Ewart
+Jay Goldman
+Isckia
+Nabil Harfoush
+Yannick
+Raoef Hussainali
+ronald van den hoff
+407
+
+
+Melbert Visscher
+Manfred Fischer
+Joe Chao
+Carlos Meca
+Mario Morales
+Paul Johannesson
+Rob Griffitts
+Marc-Antoine Garrigue
+Wassili Bertoen
+Bart Pieper
+Bruce E. Terry
+Michael N. Wilkens
+Himikel-TrebeA
+Jeroen de Jong
+408
+
+
+Gertjan Verstoep
+Steven Devijver
+Jana Thiel
+Walter Brand
+Stephan Ziegenhorn
+Frank Meeuwsen
+Colin Henderson
+Danilo Tic
+Marco Raaijmakers
+Marc Sniukas
+Khaled Algasem
+Jan Pelttari
+Yves Sinner
+Michael Kinder
+409
+
+
+Vince Kuraitis
+Teofilo Asuan Santiago IV
+Ray Lai
+Brainstorm Weekly
+Huub Raemakers
+Peter Salmon
+Philippe
+Khawaja M.
+Jille Sol
+Renninger, Wolfgang
+Daniel Pandza
+Robin Uchida
+Pius Bienz
+Ivan Torreblanca
+410
+
+
+Berry Vetjens
+David Crow
+Helge Hannisdal
+Maria Droujkova
+Leonard Belanger
+Fernando Saenz-Marrero
+Susan Foley
+Vesela Koleva
+Martijn
+Eugen Rodel
+Edward Giesen
+Marc Faltheim
+Nicolas De Santis
+Antoine Perruchoud
+411
+
+
+Bernd Nurnberger
+Patrick van Abbema
+Terje Sand
+Leandro Jesus
+Karen Davis
+Tim Turmelle
+Anders Sundelin
+Renata Phillippi
+Martin Kaczynski
+Frank
+Bala Vaddi
+Andrew Jenkins
+Dariush Ghatan
+Marcus Ambrosch
+412
+
+
+Jens Hoffmann
+Steve Thomson
+Eduardo M Morgado
+Rafal Dudkowski
+António Lucena de Faria
+Knut Petter Nor
+Ventenat Vincent
+Peter Eckrich
+Shridhar Lolla
+Jens Larsson
+David Sibbet
+Mihail Krikunov
+Edwin Kruis
+Roberto Ortelli
+413
+
+
+Shana Ferrigan Bourcier
+Jeffrey Murphy
+Lonnie Sanders III
+Arnold Wytenburg
+David Hughes
+Paul Ferguson
+Frontier Service Design, LLC
+Peter Noteboom
+Ricardo Dorado
+John Smith
+Rod
+Eddie
+Jeffrey Huang
+Terrance Moore
+414
+
+
+nse_55
+Leif-Arne Bakker
+Edler Herbert
+Björn Kijl
+Chris Finlay
+Philippe Rousselot
+Rob Schokker
+Wouter Verwer
+Jan Schmiedgen
+Ugo Merkli
+Jelle
+Dave Gray
+Rick le Roy
+Ravila White
+415
+
+
+David G Luna Arellano
+Joyce Hostyn
+Thorwald Westmaas
+Jason Theodor
+Sandra Pickering
+Trond M Fflòvstegaard
+Jeaninne Horowitz Gassol
+Lukas Feuerstein
+Nathalie Magniez
+Giorgio Pauletto
+Martijn Pater
+Gerardo Pagalday Eraña
+Haider Raza
+Ajay Ailawadhi
+416
+
+
+Adriana Ieraci
+Daniël Giesen
+Erik Dejonghe
+Tom Winstanley
+Heiner P. Kaufmann
+Edwin Lee Ming Jin
+Stephan Linnenbank
+Liliana
+Jose Fernando Quintana
+Reinhard Prügl
+Brian Moore
+Gabi
+Marko Seppänen
+Erwin Fielt
+417
+
+
+Olivier Glassey
+Francisco Conde Fernández
+Valérie Chanal
+Anne McCrossan
+Larsen
+Fred Collopy
+Jana Görs
+Patrick Foran
+Edward Osborn
+Greger Hagström
+Alberto Saavedra
+Remco de Kramer
+Lillian Thompson
+Howard Brown
+418
+
+
+Emil Ansarov
+Frank Elbers
+Horacio Alvaro Viana
+Markus Schroll
+Hylke Zeijlstra
+Cheenu Srinivasan
+Cyril Durand
+Jamil Aslam
+Oliver Buecken
+John Wesner Price
+Axel Friese
+Gudmundur Kristjansson
+Rita Shor
+Jesus Villar
+419
+
+
+Espen Figenschou-Skotterud
+James Clark
+Jose Alfonso Lopez
+Eric Schreurs
+Donielle Buie
+Adilson Chicória
+Asanka Warusevitane
+Jacob Ravn
+Hampus Jakobsson
+Adriaan Kik
+Julián Domínguez Laperal
+Marco W J Derksen
+Dr. Karsten Willrodt
+Patrick Feiner
+420
+
+
+Dave Cutherell Di Prisco
+Darlene Goetzman
+Mohan Nadarajah
+Fabrice Delaye
+Sunil Malhotra
+Jasper Bouwsma
+Ouke Arts
+Alexander Troitzsch
+Brett Patching
+Clifford Thompson
+Jorgen Dahlberg
+Christoph Mühlethaler
+Ernest Buise
+Alfonso Mireles
+421
+
+
+Richard Zandink
+Fraunhofer IAO
+Tor Rolfsen Grønsund
+David M. Weiss
+Kim Peiter Jørgensen
+Stephanie Diamond
+Stefan Olsson
+Anders Stølan
+Edward Koops
+Prasert Thawat-chokethawee
+Pablo Azar
+Melissa Withers
+Edwin Beumer
+Dax Denneboom
+422
+
+
+Mohammed Mushtaq
+Gaurav Bhalla
+Silvia Adelhelm
+Heather McGowan
+Phil Sang Yim
+Noel Barry
+Vishwanath Edavayyanamath
+Rob Manson
+Rafael Figueiredo
+Jeroen Mulder
+Emilio De Giacomo
+Franco Gasperoni
+Michael Weiss
+Francisco Andrade
+423
+
+
+Arturo Herrera Sapunar
+Vincent de Jong
+Kees Groeneveld
+Henk Bohlander
+Sushil Chatterji
+Tim Parsey
+Georg E. A. Stampfl
+Markus Kreutzer
+Iwan Schneider
+Michael Schuster
+Ingrid Beck
+Antti Äkräs
+EHJ Peet
+Ronald Poulton
+424
+
+
+Ralf Weidenhammer
+Craig Rispin
+Nella van Heuven
+Ravi Sodhi
+Dick Rempt
+Rolf Mehnert
+Luis Stabile
+Enterprise Consulting
+Aline Frankfort
+Manuel Toscano
+John Sutherland
+Remo Knops
+Juan Marquez
+Chris Hopf
+425
+
+
+Marc Faeh
+Urquhart Wood
+Lise Tormod
+Curtis L. Sippel
+Abdul Razak Manaf
+George B. Steltman
+Karl Burrow
+Mark McKeever
+Linda Bryant
+Jeroen Hinfelaar
+Dan Keldsen
+Damien
+Roger A. Shepherd
+Morten Povlsen
+426
+
+
+Lars Zahl
+Elin Mørch Langlo
+Xuemei Tian
+Harry Verwayen
+Riccardo Bonazzi
+André Johansen
+Colin Bush
+Alexander Korbee
+J Bartels
+Steven Ritchey
+Clark Golestani
+Leslie Cohen
+Amanda Smith
+Benjamin De Pauw
+427
+
+
+Andre Macieira
+Wiebe de Jager
+Raym Crow
+Mark Evans DM
+Susan Schaper
+428
+
+
+作者简介
+亚历山大·奥斯特瓦德（Alexander Osterwalder），作者
+奥斯特瓦德博士是商业模式创新领域的作家、演说家和导师。他
+和伊夫·皮尼厄博士一起开发的设计创新商业模式的实用方法已经被广
+泛应用到全世界各行各业的公司中，包括3M、爱立信、凯捷咨询公司
+（Capgemini）、德勤、挪威电信等。他曾经帮助建立并出售了一家
+战略咨询公司，参与建设了一个总部位于泰国、在全球范围内对抗艾
+滋病和疟疾的非营利组织，还在瑞士洛桑大学做过研究工作。
+伊夫·皮尼厄（Yves Pigneur），合著者
+429
+
+
+皮尼厄博士从1984年开始成为洛桑大学管理信息系统（manage-
+ment information systems）领域的教授。他还是美国亚特兰大市佐治
+亚州立大学（Georgia State University）和加拿大温哥华市英属哥伦
+比亚大学（University of British Columbia）的客座教授。他在信息系
+统设计、需求设计、信息技术管理、创新和电子商务领域领导了多个
+研究项目。
+阿兰·史密斯（Alan Smith），创意总监
+430
+
+
+阿兰既是一个宏观思想家又非常热爱细节。他参与创办了名副其
+实的变革机构The Movement。在那里，他与富于创意的客户一起将
+社会知识、商业逻辑和设计思维融为一体。他们设计出的战略、创意
+和交互式项目看起来就像来自未来的艺术品，但总是和当今的人们紧
+密相连。为什么？因为他在每个项目、每一天全情投入其设计中。
+蒂姆·克拉克（Tim Clark），编辑和合著者
+431
+
+
+创业领域的老师、作家和演说家。蒂姆的思考源于他创办并成功
+出售一家营销研究咨询公司的经历。这家公司曾经服务过亚马逊、贝
+塔斯曼（Bertelsmann）、通用汽车、路易威登集团（LVMH）、仁科
+软件公司（PeopleSoft）等。商业模式思考是他对个人和专业学习提
+出的“人人皆是企业家”（entrepreneurship for everyone）方法论的关
+键，也是在国际商业模式可移植性方面的博士研究课题的核心。《商
+业模式新生代》是他的第四部著作。
+帕特里克·范德皮尔（Patrick van der Pijl），制作人
+帕特里克·范德皮尔是国际商业模式咨询公司Business Model, Inc.
+的创始人。通过展望、评估和实施新的商业模式，帕特里克帮助很多
+组织、企业家和管理团队发现了做生意的很多新的方式。帕特里克通
+过深入的研讨会、培训课程和手把手的辅导帮助很多客户获得了成
+功。
+432
+
+
+译者简介
+黄涛
+具有10年全球500强企业销售工作经验，足迹遍布欧洲、印度、
+中国等全球主要市场。他研究开发的营销变革流程和应用软件，将业
+界领先的营销理念借助互联网技术贯彻到营销一线的实战中。
+郁婧
+经济学学士，管理学硕士，互联网旅游规划师。2009年上海工业
+博览会翻译。著有《论旅游的商品性》等。
+审校者简介
+会杰
+在全球500强企业从事销售和管理工作20余年，是最早一批走出
+去在海外创办企业分支机构的管理者，亲自创办并管理了数十个海外
+国家的营销和服务组织，成功运作了超过100个战略项目。
+433
+
+
+434

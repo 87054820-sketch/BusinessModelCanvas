@@ -1,0 +1,889 @@
+# Process
+
+cess
+
+
+244
+In this chapter we tie together the concepts and tools from the book 
+to simplify the task of setting up and executing a business model 
+design initiative. We propose a generic business model design pro-
+cess adaptable to your organization’s speciﬁc needs.
+Every business model design project is unique, and presents its own 
+challenges, obstacles, and critical success factors. Every organization 
+starts from a different point and has its own context and objectives 
+when it begins addressing an issue as fundamental as its business 
+model. Some may be reacting to a crisis situation, some may be seek-
+ing new growth potential, some may be in startup mode, and still oth-
+ers may be planning to bring a new product or technology to market. 
+The process we describe provides a starting point upon which just 
+about any organization can customize its own approach. Our process 
+has ﬁve phases: Mobilize, Understand, Design, Implement, and  
+Manage. We describe each of these phases in a general way, then 
+revisit them from the perspective of the established organization, as  
+business model innovation in enterprises already executing on one  
+or more existing business models requires taking additional factors 
+into account. 
+Business model innovation results from one of four objectives:  
+(1) to satisfy existing but unanswered market needs, (2) to bring new 
+technologies, products, or services to market, (3) to improve, disrupt, 
+or transform an existing market with a better business model, or  
+(4) to create an entirely new market.
+ 
+In longstanding enterprises, business model innovation efforts  
+typically reﬂect the existing model and organizational structure.  
+The effort usually has one of four motivations: (1) a crisis with the 
+existing business model (in some cases a “near death” experience), 
+(2) adjusting, improving, or defending the existing model to adapt  
+to a changing environment, (3) bringing new technologies, products, 
+or services to market, or (4) preparing for the future by exploring 
+and testing completely new business models that might eventually 
+replace existing ones. 
+Business Model Design Process
+
+
+245
+Business Model Design  
+and Innovation 
+Satisfy market: Fulﬁll an unanswered market need 
+(e.g. Tata car, NetJets, GrameenBank, Lulu.com)
+Bring to market: Bring a new technology, product, or 
+service to market or exploit existing intellectual property  
+(IP) (e.g. Xerox 914, Swatch, Nespresso, Red Hat)
+Improve market: Improve or disrupt an existing market 
+(e.g. Dell, EFG Bank, Nintendo Wii, IKEA, Bharti Airtel,  
+Skype, Zipcar, Ryanair, Amazon.com retail, better place)
+Create market: Create an entirely new type of business 
+(Diners Club, Google)
+challenges
+Finding the right model
+Testing the model before a full-scale launch
+Inducing the market to adopt the new model
+Continuously adapting the model in response to market feedback
+Managing uncertainty
+challenges
+Developing an appetite for new models
+Aligning old and new models
+Managing vested interests
+Focusing on the long term
+Factors Speciﬁc to  
+Established Organizations 
+Reactive: Arising out of a crisis with the existing business model 
+(e.g. IBM in the 1990s, Nintendo Wii, Rolls Royce jet engines)
+Adaptive: Adjusting, improving, or defending the existing business 
+model (Nokia “comes with music,” P&G open innovation, Hilti)
+Expansive: Launching a new technology, product, or service 
+(e.g. Nespresso, Xerox 914 in the 1960s, iPod/iTunes)
+Pro-active/explorative: Preparing for the future
+(e.g. car2go by Daimler, Amazon Web Services)
+starting point for business model innovation
+
+
+246
+Business model innovation rarely happens by coincidence. But  
+neither is it the exclusive domain of the creative business genius.  
+It is something that can be managed, structured into processes, and 
+used to leverage the creative potential of an entire organization. 
+The challenge, though, is that business model innovation remains 
+messy and unpredictable, despite attempts to implement a process. 
+It requires the ability to deal with ambiguity and uncertainty until a 
+good solution emerges. This takes time. Participants must be willing 
+to invest signiﬁcant time and energy exploring many possibilities 
+without jumping too quickly to adopt one solution. The reward for 
+time invested will likely be a powerful new business model that 
+assures future growth.
+We call this approach design attitude, which differs sharply from 
+the decision attitude that dominates traditional business manage-
+ment. Fred Collopy and Richard Boland of the Weatherhead School 
+of Management eloquently explain this point in their article “Design 
+Matters” in the book Managing as Designing. The decision attitude, 
+they write, assumes that it is easy to come up with alternatives but 
+difﬁcult to choose between them. The design attitude, in contrast, 
+assumes that it is difﬁcult to design an outstanding alternative, 
+but once you have, the decision about which alternative to select 
+becomes trivial (see p. 164). 
+This distinction is particularly applicable to business model innova-
+tion. You can do as much analysis as you want yet still fail to develop 
+a satisfactory new business model. The world is so full of ambiguity 
+and uncertainty that the design attitude of exploring and prototyping 
+multiple possibilities is most likely to lead to a powerful new business 
+model. Such exploration involves messy, opportunistic bouncing 
+back and forth between market research, analysis, business model 
+prototyping, and idea generation. Design attitude is far less linear and 
+uncertain than decision attitude, which focuses on analysis, decision, 
+and optimization. Yet a purposeful quest for new and competitive 
+growth models demands the design approach. 
+Damien Newman of the design ﬁrm Central eloquently expressed 
+the design attitude in an image he calls the “Design Squiggle.” The 
+Design Squiggle embodies the characteristics of the design process: 
+Uncertain at the outset, it is messy and opportunistic, until it focuses 
+on a single point of clarity once the design has matured.
+Design Attitude
+
+
+247
+uncertainty
+clarity / focus
+Source: Adapted from Damien Newman, Central
+research
+& understand
+design business 
+model prototypes
+implement business 
+model design
+
+
+248
+The business model design process we propose has ﬁve phases: 
+Mobilize, Understand, Design, Implement, and Manage. As previ-
+ously mentioned, the progression through these phases is rarely 
+as linear as depicted in the table on the right. In particular, the 
+Understanding and Design phases tend to proceed in parallel. Busi-
+ness model prototyping can start early in the Understanding phase, 
+in the form of sketching preliminary business model ideas. Similarly, 
+prototyping during the design phase may lead to new ideas requiring 
+additional research—and a revisiting of the Understand phase. 
+Finally, the last phase, Manage, is about continuously managing your 
+business model(s). In today’s climate, it’s best to assume that most 
+business models, even successful ones, will have a short lifespan. 
+Considering the substantial investment an enterprise makes in 
+producing a business model, it makes sense to extend its life through 
+continuous management and evolution until it needs complete 
+rethinking. Management of the model’s evolution will determine 
+which components are still relevant and which are obsolete.
+For each process phase we outline the objective, the focus, and 
+which content in Business Model Generation supports that phase. 
+Then we outline the ﬁve phases in more detail, and explain how the 
+circumstances and focus can change when you are working with an 
+existing business model in an established organization.
+5 Phases
+ 
+objective
+focus
+description
+book sections
+
+
+249
+Mobilize
+Understand
+Design
+Implement
+Manage
+Prepare for a successful 
+business model design 
+project
+Research and analyze 
+elements needed for the 
+business model design eΩort
+Generate and test viable 
+business model options, 
+and select the best
+Implement the 
+business model prototype 
+in the ﬁ eld
+Adapt and modify the 
+business model in response 
+to market reaction
+Setting the stage
+Immersion
+Inquiry
+Execution
+Evolution 
+Assemble all the elements for 
+successful business model design. 
+Create awareness of the need for a 
+new business model, describe the 
+motivation behind the project, and 
+establish a common language to 
+describe, design, and analyze and 
+discuss business models.
+You and the business model 
+design team immerse yourselves 
+in relevant knowledge: custom-
+ers, technology, and environment. 
+You collect information, interview 
+experts, study potential cus-
+tomers, and identify needs and 
+problems. 
+Transform the information and 
+ideas from the previous phase 
+into business model prototypes 
+that can be explored and tested. 
+After an intensive business model 
+inquiry, select the most satisfac-
+tory business model design.
+Implement the selected business 
+model design.  
+Set up the management struc-
+tures to continuously monitor, 
+evaluate, and adapt or transform 
+your business model.
+Business Model Canvas (p. 44)
+Storytelling (p. 170)
+Business Model Canvas (p. 44)
+Business Model Patterns (p. 52)
+Customer Insights (p. 126)
+Visual Thinking (p. 146)
+Scenarios (p. 180)
+Business Model Environment (p. 200)
+Evaluating Business Models (p. 212)
+Business Model Canvas (p. 44)
+Business Model Patterns (p. 52)
+Ideation (p. 134)
+Visual Thinking (p. 146)
+Prototyping (p. 160)
+Scenarios (p. 180)
+Evaluating Business Models (p. 212)
+Business Model Perspective 
+on Blue Ocean Strategy (p. 226)
+Managing Multiple Business Models 
+(p. 232)
+Business Model Canvas (p. 44)
+Visual Thinking (p. 146)
+Storytelling (p. 170)
+Managing Multiple Business Models 
+(p. 232)
+Business Model Canvas (p. 44)
+Visual Thinking (p. 146) 
+Scenarios (p. 180)
+Business Model Environment (p. 200)
+Evaluating Business Models (p. 212)
+
+
+250
+activities
+=iXd\gifa\ZkfYa\Zk`m\j
+K\jkgi\c`d`eXipYlj`e\jj`[\Xj
+GcXe
+8jj\dYc\k\Xd
+critical success factors
+8ggifgi`Xk\g\fgc\#\og\i`\eZ\#
+Xe[befnc\[^\
+key dangers
+Fm\i\jk`dXk`e^mXcl\f]`e`k`Xc`[\Xj 
+Mobilize
+Prepare for a successful business  
+model design project
+1 
+2 
+3 
+4 
+5
+Crucial activities in this ﬁrst phase include assembling the project 
+team and gaining access to the right people and information. While 
+there are no rules about training the perfect team—again, each 
+project is unique—it makes sense to seek a mix of people with broad 
+management and industry experience, fresh ideas, the right personal 
+networks, and a deep commitment to business model innovation.  
+You may want to start doing some preliminary testing of the basic 
+business idea during the mobilization phase. But since the potential 
+of a business idea depends heavily on the choice of the right business 
+model, this is easier said than done. When Skype launched its busi-
+ness, who would have imagined it would become the world’s largest 
+long-distance call carrier? 
+In any case, establish the Business Model Canvas as the shared 
+language of the design effort. This will help you structure and present 
+preliminary ideas more effectively and improve communications. You 
+may also want to try weaving your business model ideas into some 
+stories to test them. 
+The main activities of this ﬁrst phase are framing the project objec-
+tives, testing preliminary ideas, planning the project, and assembling 
+the team. 
+How objectives are framed will vary depending on the project, but 
+this usually covers establishing the rationale, project scope, and 
+main objectives. Initial planning should cover the ﬁrst phases of a 
+business model design project: Mobilize, Understand, and Design. 
+The Implementation and Management phases depend heavily on 
+the outcome of these ﬁrst three phases—namely the business model 
+direction—and therefore can only be planned later. 
+
+
+251
+cooperation. A straightforward way to create legitimacy and visible sponsorship is to directly 
+involve a respected member of top management from the very beginning. 
+} Manage vested interests Take care to identify and manage vested interests throughout the 
+organization. Not everybody in an organization is interested in reinventing the current business 
+model. In fact, the design effort may threaten some people. 
+} Cross-functional team As described previously (see p. 143), the ideal business model task force 
+is composed of people from across the organization, including different business units, business 
+functions (e.g. marketing, ﬁnance, IT), levels of seniority and expertise, and so forth. Different 
+organizational perspectives help generate better ideas, and increase the likelihood that the 
+project will succeed. A cross-functional team helps identify and overcome potential obstacles  
+to reinvention early in the game and encourages buy-in. 
+} Orienting decision makers You should plan on spending a considerable amount of time 
+orienting and educating decision makers on business models, their importance, and the design 
+and innovation process. This is critical to gaining buy-in and overcoming resistance to the 
+unknown or not-yet-understood. Depending on your organization’s management style you may 
+want to avoid overemphasizing the conceptual aspects of business models. Stay practical and 
+deliver your message with stories and images rather than concepts and theory.
+One clear danger in the Mobilization phase is that people tend to 
+overestimate the potential of initial business model ideas. This can 
+lead to a closed mindset and limited exploration of other possibili-
+ties. Try to mitigate this risk by continuously testing the new ideas 
+with people from varied backgrounds. You may also want to consider 
+organizing a so-called kill/thrill session in which all participants  
+are tasked ﬁrst with brainstorming for 20 minutes on reasons why 
+the idea won’t work (the “kill” portion), then spend 20 minutes 
+brainstorming exclusively on why the idea will ﬂy (the “thrill” por-
+tion). It’s a powerful way to challenge an idea’s fundamental worth. 
+Working from the Established Company Perspective
+} Project legitimacy Building project legitimacy is a critical suc-
+cess factor when working within established organizations. 
+Since business model design projects affect people across 
+organizational boundaries, a strong and visible commitment by 
+the board and/or top management is indispensable to obtaining 
+
+
+252
+Understanding
+1 
+2 
+3 
+4 
+5
+Scanning, though, is inevitably accompanied by the risk of over-
+researching. Make your team aware of this risk at the outset and 
+ensure that everyone agrees to avoid excessive researching. “Analysis 
+paralysis” can also be avoided by prototyping business models early 
+on (see Prototyping, p. 160). This has the added beneﬁt of allowing you 
+to quickly collect feedback. As mentioned earlier, research, under-
+standing, and designing go hand in hand, and the boundaries separat-
+ing them are often unclear.
+During research, one area that deserves careful attention is develop-
+ing deep knowledge of the customer. This sounds obvious, but it  
+is often neglected, particularly in technology-focused projects.  
+The Customer Empathy Map (see p. 131) can serve as a powerful tool 
+to help you structure customer research. One common challenge is  
+that the Customer Segment is not necessarily clear from the outset.  
+A technology “still in search of a problem to solve” may be applicable 
+in several different markets.
+This second phase consists of developing a good understanding  
+of the context in which the business model will evolve. 
+Scanning the business model environment is a mix of activities, 
+including market research, studying and involving customers, 
+interviewing domain experts, and sketching out competitor business 
+models. The project team should immerse itself in the necessary 
+materials and activities to develop a deep understanding of the  
+business model “design space.” 
+activities
+JZXe\em`ifed\ek
+Jkl[pgfk\ek`XcZljkfd\ij
+@ek\im`\n\og\ikj
+I\j\XiZ_n_Xk_XjXci\X[pY\\e
+ki`\[\%^%\oXdgc\jf]]X`cli\jXe[
+k_\`iZXlj\j 
+:fcc\Zk`[\XjXe[fg`e`fej
+critical success factors
+;\\gle[\ijkXe[`e^f]gfk\ek`Xc
+kXi^\kdXib\kj
+Cffb`e^Y\pfe[k_\kiX[`k`feXc
+Yfle[Xi`\j[\Ôe`e^kXi^\kdXib\kj
+key dangers
+Fm\i$i\j\XiZ_`e^1[`jZfee\Zk
+Y\kn\\ei\j\XiZ_Xe[fYa\Zk`m\j
+9`Xj\[i\j\XiZ_Y\ZXlj\f]gi\Zfd$
+d`kd\ekkfXZ\ikX`eYlj`e\jj`[\X
+Research and analyze the elements needed  
+for the business model design effort
+ing
+
+
+253
+informed
+design
+make tangible
+Directions
+Working from the Established Company Perspective
+} Mapping/assessing existing business models Established organizations start with existing 
+business models. Ideally, mapping and assessing your current business model should be done in 
+separate workshops involving people throughout the organization, at the same time ideas and 
+opinions for new business models are being collected. This will provide multiple perspectives 
+on the strengths and weaknesses of your business model, and provide the ﬁrst ideas for new models. 
+} Looking beyond the status-quo It is particularly challenging to see beyond the current business 
+model and business model patterns. Because the status quo is usually the result of a successful 
+past, it is deeply embedded in organizational culture. 
+} Searching beyond the existing client base Searching beyond your existing client base is critical  
+when seeking lucrative new business models. Tomorrow’s proﬁt potential may well lie elsewhere.  
+} Demonstrate progress Excessive analysis risks losing senior management support due to a 
+perceived lack of productivity. Demonstrate your progress by describing customer insights or 
+showing a series of business model sketches based on what you’ve learned from research. 
+A critical success factor in this phase is questioning industry 
+assumptions and established business model patterns. The game 
+console industry was building and selling cutting edge subsidized 
+consoles until the Nintendo Wii overturned commonly accepted 
+assumptions (see p. 82). Questioning assumptions includes  
+exploring the potential of “the low end” of established markets,  
+as Scott Anthony points out in The Silver Lining. As you scan 
+the environment and assess trends, markets, and competitors, 
+remember that the seeds of business model innovation can be  
+found just about anywhere. 
+During the Understanding phase you should also actively seek input 
+from varied sources, including customers. Start testing preliminary 
+business model directions early by soliciting feedback on Business 
+Model Canvas sketches. Bear in mind, though, that breakthrough 
+ideas may encounter strong resistance.
+
+
+254
+seek alternative revenue streams, and explore the value of multiple 
+distribution channels. Try out different business model patterns (see  
+p. 52) to explore and test new possibilities. 
+To test potential business models with outside experts or prospective 
+clients, develop a narrative for each and seek feedback on your telling 
+of each model’s “story.” This is not to imply that you need to modify 
+your model based on each and every comment. You will hear feedback 
+such as “this won’t work, customers don’t need it,” “that’s not doable, 
+it goes against industry logic,” or “the marketplace just isn’t ready.” 
+Such comments indicate potential roadblocks ahead but should not 
+be considered showstoppers.  Further inquiry may well enable you to 
+successfully reﬁne your model. 
+Iqbal Quadir’s quest to bring mobile telephony to poor rural villagers 
+in Bangladesh in the late 1990s provides a powerful example. Most 
+industry experts rejected his idea, saying poor villagers were pressed by 
+more basic needs and wouldn’t pay for mobile telephones. But seeking 
+feedback and developing contacts outside the telecommunications 
+activities
+9iX`ejkfid
+Gifkfkpg\
+K\jk
+J\c\Zk
+critical success factors
+:f$Zi\Xk\n`k_g\fgc\]ifdXZifjj
+k_\fi^Xe`qXk`fe
+8Y`c`kpkfj\\Y\pfe[jkXkljhlf
+KXb`e^k`d\kf\ogcfi\dlck`gc\
+Ylj`e\jjdf[\c`[\Xj
+key dangers
+NXk\i`e^[fnefijlggi\jj`e^
+Yfc[`[\Xj
+=Xcc`e^`ecfm\n`k_`[\Xjkffhl`Zbcp
+Design
+Adapt and modify the business model  
+in response to market response
+1 
+2 
+3 
+4 
+5
+The key challenge during the Design phase is to generate and stick 
+with bold new models. Expansive thinking is the critical success 
+factor here. In order to generate breakthrough ideas, team members 
+must develop the ability to abandon the status quo (current business 
+models and patterns) during ideation. An inquiry-focused design 
+attitude is also crucial. Teams must take the time to explore multiple 
+ideas, because the process of exploring different paths is most likely 
+to yield the best alternatives. 
+Avoid “falling in love” with ideas too early. Take the time to think 
+through multiple business model options before selecting the one 
+you want to implement. Experiment with different partnership models,
+
+
+255
+design
+decide
+execute
+inquiry
+provoke
+prototype
+decide
+d
+uncertainty. If you clearly deﬁne the uncertainties involved (e.g. new pricing mechanisms, new 
+Distribution Channels), you can prototype and test them in the market to better predict how the 
+model will perform when launched full-scale. 
+} Participatory design Another way to improve the likelihood of having bold ideas adopted and 
+subsequently implemented is to be especially inclusive when assembling the design team. Co-
+create with people from different business units, different levels of the organizational hierarchy, 
+and different areas of expertise. By integrating comments and concerns from across the organi-
+zation, your design can anticipate and possibly circumvent implementation roadblocks. 
+} Old versus new One big design question is whether the old and new business models should 
+be separated or integrated into one. The right design choice will greatly affect chances of suc-
+cess (see Managing Multiple Business Models, p. 232).
+} Avoid short-term focus One limitation to avoid is a short-term focus on ideas with large ﬁrst-
+year revenue potential. Big corporations, in particular, can experience huge absolute growth. 
+A company with annual sales of U.S. $5 billion, for example, generates $200 million in new 
+revenues by growing at the modest rate of four percent. Few breakthrough business models can 
+achieve such revenues during their ﬁrst year (doing so would require acquiring 1.6 million new 
+customers, each paying an annual fee of $125). Therefore, a longer-term perspective is required 
+when exploring new business models. Otherwise, your organization is likely to miss out on 
+many future growth opportunities. How much do you imagine Google earned in its ﬁrst year?
+industry led to a partnership with microﬁnance institution Grameen 
+Bank, which became the cornerstone of Grameenphone’s business 
+model. Contrary to expert opinion, poor villagers were indeed willing to 
+pay for mobile connectivity, and Grameenphone became Bangladesh’s 
+leading telecommunications provider. 
+Working from the Established Company Perspective
+} Prevent taming of bold ideas Established organizations tend 
+to water down bold business model ideas. Your challenge is  
+to defend their boldness —while assuring that they won’t face 
+overwhelming obstacles if implemented. 
+ 
+To achieve this tricky balance it can be helpful to draw a 
+risk/reward proﬁle of each model. The proﬁle could include 
+questions such as, What is the proﬁt/loss potential? Describe 
+potential conﬂicts with existing business units. How might 
+this affect our brand? How will existing customers react? This 
+approach can help you clarify and address the uncertainties 
+in each model. The bolder the model, the higher the level of 
+prototype
+
+
+256
+Business Model Generation focuses on understanding and developing 
+innovative business models, but we’d also like to offer some sug-
+gestions on implementing new business models, particularly within 
+established organizations. 
+Once you’ve arrived at a ﬁnal business model design, you will start 
+translating this into an implementation design. This includes deﬁning all 
+related projects, specifying milestones, organizing any legal structures, 
+preparing a detailed budget and project roadmap, and so forth. The 
+implementation phase is often outlined in a business plan and itemized 
+in a project management document.
+Particular attention needs to be paid to managing uncertainties. This 
+implies closely monitoring how risk/reward expectations play out 
+against actual results. It also means developing mechanisms to quickly 
+adapt your business model to market feedback. 
+1 
+2 
+3 
+4 
+5
+activities
+:fddle`ZXk\Xe[`emfcm\
+<o\Zlk\
+critical success factors
+9\jkgiXZk`Z\gifa\ZkdXeX^\d\ek
+8Y`c`kpXe[n`cc`e^e\jjkfiXg`[cp
+X[Xgkk_\Ylj`e\jjdf[\c
+8c`^eÈfc[ÉXe[Èe\nÉYlj`e\jj
+df[\cj
+key dangers
+N\Xbfi]X[`e^dfd\ekld
+Implement
+Implement the business model  
+prototype in the ﬁeld
+
+
+257
+mentation of the new model is even planned. Deep, cross-functional participation allows you to 
+directly address any concerns regarding the new business model before drawing the roadmap 
+for its implementation.
+} Project sponsorship A second success element is the sustained and visible support of your 
+project sponsor, something that signals the importance and legitimacy of the business model 
+design effort. Both elements are crucial to keeping vested interests from undermining the  
+successful implementation of a new business model. 
+} Old versus new business model A third element is creating the right organizational structure 
+for your new business model (see Managing Multiple Business Models, p. 232). Should it be a 
+standalone entity or a business unit within the parent organization? Will it draw on resources 
+shared with an existing business model? Will it inherit the parent’s organizational culture? 
+} Communication campaign Finally, conduct a highly visible, multi-channel internal commu-
+nication campaign announcing the new business model. This will help you counter “fear of the 
+new” in your organization. As outlined earlier, stories and visualizations are powerful, engaging 
+tools that help people understand the logic of and rationale for the new business model. 
+For example, when Skype started becoming successful and was  
+signing up tens of thousands of new users each day, it had to  
+immediately develop mechanisms to cost-effectively handle user  
+feedback and complaints. Otherwise, skyrocketing expenses and  
+user dissatisfaction would have brought the company to its knees. 
+Working from the Established Company Perspective
+} Proactively managing “roadblocks” The single element that 
+most increases the likelihood of a new business model’s  
+success is in place long before actual implementation. By this 
+we are referring to the participation of people from throughout 
+the organization during the Mobilization, Understanding, and 
+Design phases. Such a participatory approach will have already 
+established buy-in and uncovered obstacles before the imple-
+
+
+258
+At least one person on the organizational strategy team—if not a new 
+team—should be assigned responsibility for business models and 
+their long-term evolution. Consider organizing regular workshops with 
+cross-functional teams to evaluate your business model. This will help 
+you  judge whether a model needs minor adjustments or a complete 
+overhaul. 
+Ideally, improving and rethinking the organization’s business model 
+should be every employee’s obsession rather than something that  
+preoccupies only top management. With the Business Model Canvas 
+you now have a formidable tool with which to make business models 
+clear to everybody throughout the enterprise. New business model 
+ideas often emerge from unlikely places within an organization. 
+Proactive response to market evolutions is also increasingly important 
+Consider managing a “portfolio” of business models. We live in the 
+business model generation, a time when the shelf life of successful 
+business models is shrinking quickly. As with traditional product life-
+1 
+2 
+3 
+4 
+5
+activities
+JZXek_\\em`ifed\ek
+:fek`elfljcpXjj\jjpfli
+Ylj`e\jjdf[\c
+I\alm\eXk\fii\k_`ebpflidf[\c
+8c`^eYlj`e\jjdf[\cjk_ifl^_flk
+k_\\ek\igi`j\
+DXeX^\jpe\i^`\jfiZfeÕ`Zkj
+Y\kn\\edf[\cj
+critical success factors
+Cfe^$k\idg\ijg\Zk`m\
+GifXZk`m\e\jj
+>fm\ieXeZ\f]Ylj`e\jjdf[\cj
+key dangers
+9\Zfd`e^Xm`Zk`df]pflifne
+jlZZ\jj#]X`c`e^kfX[Xgk
+Manage
+Adapt and modify the business model  
+in response to market reaction
+For successful organizations, creating a new business model or 
+rethinking an existing one is not a one-time exercise. It’s an activity 
+that continues beyond implementation. The Manage phase includes 
+continuously assessing the model and scanning the environment  
+to understand how it might be affected by external factors over the 
+long term. 
+
+
+259
+vation or redesign projects, and track the overall evolution of the organization’s business mod-
+els. It should also manage the “master” business model that describes the entire organization. 
+This master template could serve as the starting point for each business model project within 
+the organization. The master business model would also help different functional groups, such 
+as operations, manufacturing, or sales align with the organization’s overarching goals.
+} Manage synergies and conﬂicts One of the business model governance authority’s main tasks 
+would be to align business models with each other to exploit synergies and avoid or manage 
+conﬂicts. A Canvas document describing each business model in the organization would help 
+illuminate the big picture and achieve better alignment. 
+} Business model portfolio Successful, established companies should proactively manage a 
+“portfolio” of business models. Many formerly successful companies in the music, newspaper, 
+and automotive industries failed to proactively examine their business models and slid into 
+crisis as a result. A promising approach to avoiding this fate is to develop a portfolio of business 
+models whereby cash-generating businesses ﬁnance business model experiments for the future. 
+} A beginner’s mindset Maintaining a beginner's mindset helps keep us from becoming victims 
+of our own successes. We all need to constantly scan the landscape and continuously assess our 
+own business models. Take a fresh look at your model regularly. You may need to overhaul a 
+successful model sooner than you thought. 
+cycle management, we all need to start thinking about replacing  
+our current cash-generating business models with growth models  
+for tomorrow’s marketplace. 
+Dell disrupted the PC industry when it introduced the build-to-order 
+format and direct online sales. Over the years, Dell grew so success-
+fully that it established itself as the industry leader. But the company 
+failed to fully rethink its once disruptive business model. Now that 
+the industry landscape has changed, Dell risks remaining stuck  
+in a commoditized PC market, while growth and proﬁts, generated 
+elsewhere, lie outside its reach. 
+Working from the Established Company Perspective
+} Business Model Governance Consider establishing a “business 
+model governance” authority to help better manage business 
+models across the enterprise. This group’s role would be to 
+orchestrate business models, engage stakeholders, launch inno-
+informed
+design
+make tangible
+Directions
+Di
+
+
+ 
+ Gifkfkpg`e^`j
+gfk\ek`Xccpk_\
+dfjk`dgfikXek
+gXikf]k_\
+YffbXe[kffcj
+gifm`[\[%
+Dpi\Xjfe`e^`jYXj\[lgfek_\jki\jj
+Xe[i\j`jkXeZ\k_Xk\jkXYc`j_\[fi^X$
+e`qXk`fejXi\]XZ`e^`ek_\gifZ\jjf]
+`eefmXk`e^k_\`ifneYlj`e\jjdf[\cj%
+K_\i\]fi\Xm\ipgfk\ekjkiXk\^p`j
+gifkfkpg`e^Ç`efi[\ikfZi\Xk\Ylp$`e
+gifZ\jj\je\\[\[%
+Terje Sand, Norway
+ Typically when an 
+organization looks 
+at improving their 
+business model, 
+it is as a result of 
+gaps.M`jlXc`q`e^pfliZlii\ek
+Ylj`e\jjdf[\cZXe[\dfejkiXk\
+k_\cf^`ZXc^Xgjk_Xk\o`jkXe[dXb\
+k_\dkXe^`Yc\XjXZk`fe`k\dj%
+Ravila White, United States  
+@e\jkXYc`j_\[ZfdgXe`\j#k_\i\Xi\
+f]k\eXdgc\g_pj`ZXcgif[lZk`[\Xj
+k_Xke\m\i^\kj\i`fljZfej`[\iXk`fe
+Y\ZXlj\k_\p[fek`dd\[`Xk\cpÔkk_\
+gi\mX`c`e^Ylj`e\jjdf[\c%
+Gert Steens, Netherlands
+Do not get too attached to the 
+first idea or implementation.
+9l`c[`e]\\[YXZbcffgjXe[dfe`kfi
+\XicpnXie`e^j`^eXcjkf\ogc`Z`kcp
+Z_Xcc\e^\pflifi`^`eXcZfeZ\gkXe[Y\
+n`cc`e^Xe[XYc\kfZfdgc\k\cpZ_Xe^\
+`k`]i\hl`i\[%
+Erwin Fielt, Australia
+K_\]i\\d`ldYlj`e\jjdf[\cXjk_\
+i\m\ij\f]`ejliXeZ\Ç`ej`^_k]lc
+DXb\jd\nXekkfkliefk_\idf[\cj
+lgj`[\[fne
+Victor Lombardi, United States
+8Ylj`e\jjdf[\c`jk_\
+"CORE CONTENT"
+ 
+or the
+"SHORT STORY" 
+f]k_\ZfdgXepXZklXcfigifjg\Zk`m\ %
+8Ylj`e\jjgcXe`jk_\È^l`[\c`e\]fik_\
+XZk`feÉfik_\È]lccjkfip%É
+Fernando Saenz-Marrero, Spain
+N_\e@nfibn`k_efe$gifÔkjk_\Ôijk
+k_`e^@k\cck_\d`jk_Xkk_\p`e]XZk_Xm\
+XYlj`e\jjdf[\c `ek_Xkk_\pdljk
+Zi\Xk\Xe[ZXgkli\mXcl\#n_\k_\ik_Xk
+mXcl\Zfd\j]ifd[feXk`fej#jlYjZi`g$
+k`fej#Xe[jffe%
+Kim Korn, United States
+9\^`en`k_k_\
+\e[`ed`e[
+n_`c\kXb`e^
+k_\\e[Zc`\ek
+g\ijg\Zk`m\%
+Karl Burrow, Japan
+
+N?8K
+<CJ<6
+260
+
+
+@kËjfe\k_`e^kfdXgflkX
+9lj`e\jjDf[\c:XemXj%9lk]fi
+Zi\Xk`e^XYlj`e\jjdf[\ck_Xk`e
+`kj\c]`jXYi\Xbk_ifl^_`eefmXk`fe#
+`k`j_\cg]lckflj\kffcjlj\[kf
+Zi\Xk\Yi\Xbk_ifl^_`eefmXk`fe`e
+fk_\i`e[ljki`\j#jlZ_Xj`e[\j`^e%
+Ellen Di Resta, United States
+8iXm`e[lj\jk_\=i\\d`ld9lj`e\jj
+Df[\ckf\eXYc\=I<<\p\jli^\ip
+]fik_\gffi`e@e[`X%9lj`e\jjdf[\c
+`eefmXk`feZXei\XccpdXb\X[`]]\i\eZ\
+Anders Sundelin, Sweden
+ @Ôe[k_XkXck_fl^_
+dfjkdXeX^\ij
+le[\ijkXe[jkiXk\^p
+ZfeZ\gkj#k_\p
+_Xm\Xkfl^_k`d\
+Xggcp`e^k_\j\
+ZfeZ\gkjXkk_\`i
+c\m\cf]k_\
+fi^Xe`qXk`fe%
+?fn\m\i#[`jZljj`fejXYflkYlj`e\jj
+df[\cjZfee\Zkk_\_`^_$c\m\c
+ZfeZ\gkjkf[Xp$kf$[Xp[\Z`j`fe$
+dXb`e^%@kjX^i\Xkd`[[c\^ifle[%
+Bill Welter, United States
+ 
+ 
+G\ijfeXj#JZ\eXi`fj#M`jlXc`qXk`fe#
+<dgXk_pdXgj#Xe[jffeXi\k\Z_e`hl\j
+k_Xk@_Xm\lj\[j`eZ\k_\cXk\(00'j`e
+lj\i\og\i`\eZ\kpg\gifa\Zkj%@ek_\cXjk
+]\np\Xij@_Xm\j\\ek_Xkk_\pXi\`eZi\[$
+`Ycp\]]\Zk`m\XkXjkiXk\^p&Ylj`e\jjc\m\c%
+Eirik V Johnsen, Norway
+ @]jfcm`e^
+_ldXe`kpËjZlii\ek
+gifYc\dji\hl`i\j
+i\k_`eb`e^_fnmXcl\
+`j^\e\iXk\[Xe[]fi
+n_fd#k_\eYlj`e\jj
+df[\c`eefmXk`fe
+`jk_\gi\d`\i
+kffckffi^Xe`q\#
+Zfddle`ZXk\#Xe[
+`dgc\d\ekk_Xk
+e\nk_`eb`e^%
+Nabil Harfoush, Canada
+@d`ek\i\jk\[`e_\Xi`e^_fng\fgc\
+Xi\`ek\^iXk`e^k\Z_efcf^p`[\Xj`ekf
+k_\`idf[\cjlj`e^k_\:XemXj%N\m\
+\ogcfi\[X[[`e^`kXjXj\gXiXk\cXp\i
+XYfm\fiY\cfnÔeXeZ`Xc Ylk_Xm\
+efnj\kkc\[fe`ek\^iXk`e^`kXjefk\j
+fe\XZ_f]k_\0b\pXi\Xj%=ifdk_`jn\
+k_\ejk\gYXZbXe[[\m\cfgXj\gXiXk\
+`ek\^iXk\[k\Z_efcf^pgcXe%
+Rob Manson, Australia
+ YOUR 
+BUSINESS 
+MODEL 
+IS NOT YOUR 
+BUSINESS 
+@kËjXd\k_f[f]`ehl`ipkf_\cg
+pflle[\ijkXe[n_Xkkf[fe\ok%
+K\jk`e^Xe[`k\iXk`fe`jb\p%
+Matthew Milan, Canada
+Dlck`$j`[\[gcXk]fidjXi\XZklXccpiXk_\i
+\XjpXkk_\Ylj`e\jjdf[\cc\m\c2k_\[`]$
+ÔZlckpZfd\j`e\o\Zlk`fe1XkkiXZk`e^k_\
+jlYj`[`q\[j`[\#gi`Z`e^feYfk_j`[\j#
+m\ik`ZXcfi_fi`qfekXc`ek\^iXk`fe#_fnkf
+Z_Xe^\k_\Ylj`e\jjdf[\c`ejk\gn`k_
+k_\j`q\f]k_\dXib\kfe\XZ_j`[\%
+Hampus Jakobsson, Sweden
+business model  
+innovation 
+combines creativity 
+with a structured 
+approach—the best 
+of both worlds.
+Ziv Baida, Netherlands
+DXepf]dpZc`\ekj[fefk_Xm\X
+_fc`jk`Zm`\nf]k_\`iYlj`e\jjdf[\c
+Xe[k\e[kf]fZljfekip`e^kfX[[i\jj
+k_\`dd\[`Xk\gifYc\d%K_\9lj`e\jj
+Df[\c:XemXjgifm`[\jX]iXd\nfib
+k_Xk_\cgjZcXi`]pk_\n_p#n_f#n_Xk#
+n_\e#n_\i\#Xe[_fn%
+Patrick van Abbema, Canada
+@cfm\k_\`[\Xf]
+lj`e^k_\j\kffcjkf
+[\j`^eYlj`e\jj\j
+Xe[kfk`eb\ile[\i
+k_\_ff[f]
+k_\\e^`e\f]Xe
+fi^Xe`qXk`fe%
+Michael Anton Dila, Canada
+K_\i\Xi\thousands of business 
+models to be investigatedXe[dXep
+thousands of people who are 
+interested`ek_\d%
+Steven Devijver, Belgium
+J`dgc`Z`kp`jm\ip`dgfikXekkf\ogcX`e
+k_\gXkk\iejXe[kfki`^^\ik_\efe$
+gif]\jj`feXcj`emfcm\d\ek`eYlj`e\jj
+`eefmXk`fe%
+Gertjan Verstoep, Netherlands
+We have been working too long 
+and too hard for companies with 
+bad or improper business models.
+Lytton He, China
+K_\k\idYlj`e\jjdf[\c`jk_ifne
+Xifle[XcfkXe[dfi\]i\hl\ekcp
+k_Xeefkkfd\XeXe`eZfdgc\k\
+le[\ijkXe[`e^f]n_XkdXb\jX
+Ylj`e\jjXYlj`e\jjdfjkcpaljk
+k_\ÔeXeZ`Xc&i\m\el\Xjg\Zk %
+Livia Labate, United States
+9lj`e\jjdf[\c`eefmXk`fe`jfe\f]k_\
+C<8JKLJ<;
+& MOST POWERFUL
+nXpjkfZi\Xk\jljkX`eXYc\gifÔk
+^ifnk_#\Zfefd`Z[\m\cfgd\ekXe[
+Zi\Xk\e\nÊdXib\kjËXe[Ê`e[ljki`\jË%
+Deborah Mills-Scoﬁeld, United States
+261
+
+
+Outlook

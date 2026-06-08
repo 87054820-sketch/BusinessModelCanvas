@@ -1,20 +1,23 @@
 # When to use the Value Proposition Canvas
 
-The Value Proposition Canvas (VPC) is a plug-in for the Business Model Canvas: it zooms into the relationship between **Customer Segments** and **Value Propositions** by separating them into a **Customer Profile** and a **Value Map**. Use it to ask: **does what you offer truly fit the most important jobs, pains, and gains of one specific customer segment?**
-
-It is not a static worksheet. It is a way to make value-proposition hypotheses explicit, prioritize them, test them, and iterate.
+Use the Value Proposition Canvas when you need to deeply understand what your customers truly want and design offerings that match those desires. It is the perfect companion to the Business Model Canvas when your unit of analysis is a single customer segment and its value proposition.
 
 ## Reach for it when
 
-- You have a candidate customer segment and want to test whether the offer fits.
-- You need to explain *why* a feature deserves to exist, not just *what* it does.
-- A team is rallying around an idea but has not named the underlying customer job clearly.
-- You are preparing interviews, landing-page tests, or willingness-to-pay experiments.
-- You want to compare several value-proposition directions and find the strongest, most differentiated one.
+- You are designing a new product, service, or feature and need to ensure it creates real customer value.
+- You want to move beyond features and technology to understand the jobs, pains, and gains of a specific customer segment.
+- Your team is debating ideas without a shared understanding of the customer.
+- You need to test whether your value proposition actually fits what customers care about.
+- You want to align product, marketing, and sales around a clear customer profile.
 
 ## Skip it when
 
-- You do not yet have a candidate customer segment — start broader.
-- You are modelling the whole business — use the Business Model Canvas.
-- You are optimizing a mature, well-validated feature — the VPC's discovery framing may be too heavy.
-- You only need a one-line message — use the VPC to find fit first, then use the Ad-Lib Value Proposition to compress it.
+- You need to map the entire business model, not just one value proposition — use the **Business Model Canvas** instead.
+- Your analysis spans multiple customer segments with different needs — the VPC focuses on one segment at a time.
+- You are solving an internal operational issue with no external customer impact.
+
+## From the book
+
+![The Value Proposition Canvas — Customer Profile (right) and Value Map (left). Source: *Value Proposition Design* (Osterwalder et al., 2014)](assets/vpc-overview.png)
+
+> Value Proposition Design helps you successfully understand the patterns of value creation, leverage the experience and skills of your team, and avoid wasting time with ideas that won't work.

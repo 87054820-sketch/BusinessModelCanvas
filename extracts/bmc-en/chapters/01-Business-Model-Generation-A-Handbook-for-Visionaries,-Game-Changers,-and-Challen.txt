@@ -1,0 +1,707 @@
+# Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers
+
+
+
+Business  
+Model 
+Generation
+
+
+This book is printed on acid-free paper. o
+Copyright © 2010 by Alexander Osterwalder. All rights reserved.
+Published by John Wiley & Sons, Inc., Hoboken, New Jersey.
+Published simultaneously in Canada.
+No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, 
+photocopying, recording, scanning, or otherwise, except as permitted under Section 107 or 108 of the 1976 United States Copyright Act, without 
+either the prior written permission of the Publisher, or authorization through payment of the appropriate per-copy fee to the Copyright Clearance 
+Center, Inc., 222 Rosewood Drive, Danvers, MA 01923, (978) 750-8400, fax (978) 646-8600, or on the web at www.copyright.com. Requests to 
+the Publisher for permission should be addressed to the Permissions Department, John Wiley & Sons, Inc., 111 River Street, Hoboken, NJ 07030, 
+(201) 748-6011, fax (201) 748-6008, or online at http://www.wiley.com/go/permissions.
+Limit of Liability/Disclaimer of Warranty: While the publisher and author have used their best efforts in preparing this book, they make no 
+representations or warranties with respect to the accuracy or completeness of the contents of this book and speciﬁcally disclaim any implied 
+warranties of merchantability or ﬁtness for a particular purpose. No warranty may be created or extended by sales representatives or written 
+sales materials. The advice and strategies contained herein may not be suitable for your situation. You should consult with a professional where 
+appropriate. Neither the publisher nor author shall be liable for any loss of proﬁt or any other commercial damages, including but not limited to 
+special, incidental, consequential, or other damages.
+For general information on our other products and services or for technical support, please contact our Customer Care Department within the 
+United States at (800) 762-2974, outside the United States at (317) 572-3993 or fax (317) 572-4002.
+Wiley also publishes its books in a variety of electronic formats. Some content that appears in print may not be available in electronic books. For 
+more information about Wiley products, visit our web site at www.wiley.com.
+ISBN:  978-0470-87641-1
+Printed in the United States of America
+10   9   8   7   6   5   4   3   2   1
+
+
+Written by
+Alexander Osterwalder and Yves Pigneur
+Design
+Alan Smith, The Movement
+Editor and Contributing Co-Author
+Tim Clark
+Production
+Patrick van der Pijl
+Co-created by an amazing crowd of  
+470 practitioners from 45 countries
+Business  
+Model 
+Generation
+A Handbook for Visionaries, Game Changers, and Challengers
+John Wiley & Sons, Inc.
+
+
+Ellen Di Resta
+Michael Anton Dila
+Remko Vochteloo
+Victor Lombardi
+Matthew Milan
+Ralf Beuker
+Sander Smit
+Norbert Herman
+Karen Hembrough
+Ronald Pilot
+Yves Claude Aubert
+Wim Saly
+Frank Camille Lagerveld
+Andres Alcalde
+Alvaro Villalobos M
+Bernard Racine
+Peter Froberg
+Lino Piani
+Eric Jackson
+Indrajit Datta Chaudhuri
+Jeroen de Jong
+Gertjan Verstoep
+Steven Devijver
+Jana Thiel
+Jeremy Hayes
+Alf Rehn
+Jeff De Cagna
+Andrea Mason
+Jan Ondrus
+Simon Evenblij
+Chris Walters
+Caspar van Rijnbach
+benmlih
+Rodrigo Miranda
+Saul Kaplan
+Lars Geisel
+Simon Scott
+Dimitri Lévita
+Johan √ñrneblad
+Craig Sadler
+Praveen Singh
+Livia Labate
+Kristian Salvesen
+Daniel Egger
+Diogo Carmo
+Marcel Ott
+Atanas Zaprianov
+Linus Malmberg
+Deborah Mills-Scoﬁeld
+Peter Knol
+Jess McMullin
+Marianela Ledezma
+Ray Guyot
+Martin Andres Giorgetti
+Geert van Vlijmen
+Rasmus Rønholt
+Tim Clark
+Richard Bell
+Erwin Blom
+Frédéric Sidler
+John LM Kiggundu
+Robert Elm
+Ziv Baida
+Andra Larin-van der Pijl
+Eirik V Johnsen
+Boris Fritscher
+Mike Lachapelle
+Albert Meige
+Woutergort
+Fanco Ivan Santos Negrelli
+Amee Shah
+Lars Mårtensson
+Kevin Donaldson
+JD Stein
+Ralf de Graaf
+Lars Norrman
+Sergey Trikhachev
+Thomas
+Alfred Herman
+Bert Spangenberg
+Robert van Kooten
+Hans Suter
+Wolf Schumacher
+Bill Welter
+Michele Leidi
+Asim J. Ranjha
+Peter Troxler
+Ola Dagberg
+Wouter van der Burg
+Artur Schmidt
+Pekka Matilainen
+Bas van Oosterhout
+Gillian Hunt
+Bart Boone
+Michael Moriarty
+Mike
+Design for Innovation
+Tom Corcoran
+Ari Wurmann
+Antonio Robert
+Wibe van der Pol
+paola valeri
+Michael Sommers
+Nicolas Fleury
+Gert Steens
+Jose Sebastian Palazuelos 
+Lopez
+jorge zavala
+Harry Heijligers
+Armand Dickey
+Jason King
+Kjartan Mjoesund
+Martin Fanghanel
+Michael Sandfær
+Niall Casey
+John McGuire
+Vivian Vendeirinho
+Martèl Bakker Schut
+Stefano Mastrogiacoo
+Mark Hickman
+Dibrov
+Reinhold König
+Marcel Jaeggi
+John O'Connell
+Javier Ibarra
+Lytton He
+Marije Sluis
+David Edwards
+Martin Kuplens-Ewart
+Jay Goldman
+Isckia
+Nabil Harfoush
+Yannick
+Raoef Hussainali
+Walter Brand
+Stephan Ziegenhorn
+Frank Meeuwsen
+Colin Henderson
+Danilo Tic
+Marco Raaijmakers
+Marc Sniukas
+Khaled Algasem
+Jan Pelttari
+Yves Sinner
+Michael Kinder
+Vince Kuraitis
+Teoﬁlo Asuan Santiago IV
+Ray Lai
+Brainstorm Weekly
+Huub Raemakers
+Peter Salmon
+Philippe
+Khawaja M.
+Jille Sol
+Renninger, Wolfgang
+Daniel Pandza
+Guilhem Bertholet
+Thibault Estier
+Stephane Rey
+Chris Peasner
+Jonathan Lin
+Cesar Picos
+Florian
+Armando Maldonado
+Eduardo Míguez
+Anouar Hamidouche
+Francisco Perez
+Nicky Smyth
+Bob Dunn
+Carlo Arioli
+Pablo M. Ramírez
+Jean-Loup
+Colin Pons
+Vacherand
+Guillermo Jose Aguilar
+Adriel Haeni
+Lukas Prochazka
+Kim Korn
+Abdullah Nadeem
+Rory O'Connor
+Hubert de Candé
+Frans Wittenberg
+Jonas Lindelöf
+Gordon Gray
+Slabber
+Peter Jones
+Sebastian Ullrich
+Andrew Pope
+Fredrik Eliasson
+Bruce MacVarish
+Göran Hagert
+Markus Gander
+Marc Castricum
+Nicholas K. Niemann
+Christian Labezin
+Claudio D'Ipolitto
+Aurel Hosennen
+Adrian Zaugg
+Louis Rosenfeld
+Ivo Georgiev
+Donald Chapin
+Annie Shum
+Valentin Crettaz
+Dave Crowther
+Chris J Davis
+Frank Della Rosa
+Christian Schüller
+Luis Eduardo de Carvalho
+Patrik Ekström
+Greg Krauska
+Giorgio Casoni
+Stef Silvis
+ronald van den hoff
+Melbert Visscher
+Manfred Fischer
+Joe Chao
+Carlos Meca
+Mario Morales
+Paul Johannesson
+Rob Grifﬁtts
+Marc-Antoine Garrigue
+Wassili Bertoen
+Bart Pieper
+Bruce E. Terry
+Michael N. Wilkens
+Himikel - TrebeA
+Robin Uchida
+Pius Bienz
+Ivan Torreblanca
+Berry Vetjens
+David Crow
+Helge Hannisdal
+Maria Droujkova
+Leonard Belanger
+Fernando Saenz-Marrero
+Susan Foley
+Vesela Koleva
+Martijn
+Eugen Rodel
+Edward Giesen
+Co-created by:
+
+
+Marc Faltheim
+Nicolas De Santis
+Antoine Perruchoud
+Bernd Nurnberger
+Patrick van Abbema
+Terje Sand
+Leandro Jesus
+Karen Davis
+Tim Turmelle
+Anders Sundelin
+Renata Phillippi
+Martin Kaczynski
+Frank
+Ricardo Dorado
+John Smith
+Rod
+Eddie
+Jeffrey Huang
+Terrance Moore
+nse_55
+Leif-Arne Bakker
+Edler Herbert
+Björn Kijl
+Chris Finlay
+Philippe Rousselot
+Rob Schokker
+Stephan Linnenbank
+Liliana
+Jose Fernando Quintana
+Reinhard Prügl
+Brian Moore
+Gabi
+Marko Seppänen
+Erwin Fielt
+Olivier Glassey
+Francisco Conde  
+ 
+Fernández
+Valérie Chanal
+Anne McCrossan
+Jose Alfonso Lopez
+Eric Schreurs
+Donielle Buie
+Adilson Chicória
+Asanka Warusevitane
+Jacob Ravn
+Hampus Jakobsson
+Adriaan Kik
+Julián Domínguez Laperal
+Marco W J Derksen
+Dr. Karsten Willrodt
+Patrick Feiner
+Dave Cutherell
+Edwin Beumer
+Dax Denneboom
+Mohammed Mushtaq
+Gaurav Bhalla
+Silvia Adelhelm
+Heather McGowan
+Phil Sang Yim
+Noel Barry
+Vishwanath  
+ 
+Edavayyanamath
+Rob Manson
+Rafael Figueiredo
+Jeroen Mulder
+Manuel Toscano
+John Sutherland
+Remo Knops
+Juan Marquez
+Chris Hopf
+Marc Faeh
+Urquhart Wood
+Lise Tormod
+Curtis L. Sippel
+Abdul Razak Manaf
+George B. Steltman
+Karl Burrow
+Mark McKeever
+Bala Vaddi
+Andrew Jenkins
+Dariush Ghatan
+Marcus Ambrosch
+Jens Hoffmann
+Steve Thomson
+Eduardo M Morgado
+Rafal Dudkowski
+António Lucena de Faria
+Knut Petter Nor
+Ventenat Vincent
+Peter Eckrich
+Shridhar Lolla
+Wouter Verwer
+Jan Schmiedgen
+Ugo Merkli
+Jelle
+Dave Gray
+Rick le Roy
+Ravila White
+David G Luna Arellano
+Joyce Hostyn
+Thorwald Westmaas
+Jason Theodor
+Sandra Pickering
+Trond M Fﬂòvstegaard 
+Larsen
+Fred Collopy
+Jana Görs
+Patrick Foran
+Edward Osborn
+Greger Hagström
+Alberto Saavedra
+Remco de Kramer
+Lillian Thompson
+Howard Brown
+Emil Ansarov
+Frank Elbers
+Horacio Alvaro Viana  
+ 
+Di Prisco
+Darlene Goetzman
+Mohan Nadarajah
+Fabrice Delaye
+Sunil Malhotra
+Jasper Bouwsma
+Ouke Arts
+Alexander Troitzsch
+Brett Patching
+Clifford Thompson
+Jorgen Dahlberg
+Christoph Mühlethaler
+Ernest Buise
+Emilio De Giacomo
+Franco Gasperoni
+Michael Weiss
+Francisco Andrade
+Arturo Herrera Sapunar
+Vincent de Jong
+Kees Groeneveld
+Henk Bohlander
+Sushil Chatterji
+Tim Parsey
+Georg E. A. Stampﬂ
+Markus Kreutzer
+Iwan Schneider
+Linda Bryant
+Jeroen Hinfelaar
+Dan Keldsen
+Damien
+Roger A. Shepherd
+Morten Povlsen
+Lars Zahl
+Elin Mørch Langlo
+Xuemei Tian
+Harry Verwayen
+Riccardo Bonazzi
+André Johansen
+Colin Bush
+Jens Larsson
+David Sibbet
+Mihail Krikunov
+Edwin Kruis
+Roberto Ortelli
+Shana Ferrigan Bourcier
+Jeffrey Murphy
+Lonnie Sanders III
+Arnold Wytenburg
+David Hughes
+Paul Ferguson
+Frontier Service Design,  
+ 
+LLC
+Peter Noteboom
+Jeaninne Horowitz Gassol
+Lukas Feuerstein
+Nathalie Magniez
+Giorgio Pauletto
+Martijn Pater
+Gerardo Pagalday Eraña
+Haider Raza
+Ajay Ailawadhi
+Adriana Ieraci
+Daniël Giesen
+Erik Dejonghe
+Tom Winstanley
+Heiner P. Kaufmann
+Edwin Lee Ming Jin
+Markus Schroll
+Hylke Zeijlstra
+Cheenu Srinivasan
+Cyril Durand
+Jamil Aslam
+Oliver Buecken
+John Wesner Price
+Axel Friese
+Gudmundur Kristjansson
+Rita Shor
+Jesus Villar
+Espen Figenschou- 
+ 
+Skotterud
+James Clark
+Alfonso Mireles
+Richard Zandink
+Fraunhofer IAO
+Tor Rolfsen Grønsund
+David M. Weiss
+Kim Peiter Jørgensen
+Stephanie Diamond
+Stefan Olsson
+Anders Stølan
+Edward Koops
+Prasert Thawat- 
+ 
+chokethawee
+Pablo Azar
+Melissa Withers
+Michael Schuster
+Ingrid Beck
+Antti Äkräs
+EHJ Peet
+Ronald Poulton
+Ralf Weidenhammer
+Craig Rispin
+Nella van Heuven
+Ravi Sodhi 
+Dick Rempt
+Rolf Mehnert
+Luis Stabile
+Enterprise Consulting
+Aline Frankfort
+Alexander Korbee
+J Bartels
+Steven Ritchey
+Clark Golestani
+Leslie Cohen
+Amanda Smith
+Benjamin De Pauw
+Andre Macieira
+Wiebe de Jager
+Raym Crow
+Mark Evans DM
+Susan Schaper
+
+
+Are you an entrepreneurial spirit?
+yes _______ no _______
+Are you constantly thinking about how to 
+create value and build new businesses, or how 
+to improve or transform your organization?
+yes _______ no _______
+Are you trying to find innovative 
+ways of doing business to replace  
+old, outdated ones?
+yes _______ no _______
+
+
+If you’ve answered 
+“yes” to any of these 
+questions, welcome  
+to our group!
+ 
+You’re holding a handbook for visionaries, game 
+changers, and challengers striving to defy outmoded 
+business models and design tomorrow’s enterprises. 
+It’s a book for the business model generation.
+
+
+Today countless innovative business models 
+are emerging. Entirely new industries are  
+forming as old ones crumble. Upstarts are 
+challenging the old guard, some of whom are 
+struggling feverishly to reinvent themselves.
+How do you imagine your organization’s  
+business model might look two, five, or ten 
+years from now? Will you be among the  
+dominant players? Will you face competitors 
+brandishing formidable new business models?
+
+
+This book will give you deep insight into the nature of business models. 
+It describes traditional and bleeding-edge models and their dynamics, 
+innovation techniques, how to position your model within an intensely 
+competitive landscape, and how to lead the redesign of your own organi-
+zation’s business model. 
+ 
+Certainly you’ve noticed that this is not the typical strategy or man-
+agement book. We designed it to convey the essentials of what you need 
+to know, quickly, simply, and in a visual format. Examples are presented 
+pictorially and the content is complemented with exercises and workshop 
+scenarios you can use immediately. Rather than writing a conventional 
+book about business model innovation, we’ve tried to design a practical 
+guide for visionaries, game changers, and challengers eager to design or 
+reinvent business models. We’ve also worked hard to create a beautiful 
+book to enhance the pleasure of your “consumption.” We hope you enjoy 
+using it as much as we’ve enjoyed creating it. 
+ 
+An online community complements this book (and was integral to 
+its creation, as you will discover later). Since business model innovation 
+is a rapidly evolving ﬁeld, you may want to go beyond the essentials in 
+Business Model Generation and discover new tools online. Please consider 
+joining our worldwide community of business practitioners and research-
+ers who have co-created this book.  On the Hub you can participate in 
+discussions about business models, learn from others’ insights, and try  
+out new tools provided by the authors. Visit the Business Model Hub at
+www.BusinessModelGeneration.com/hub.
+ 
+Business model innovation is hardly new. When the founders of Diners 
+Club introduced the credit card in 1950, they were practicing business 
+model innovation. The same goes for Xerox, when it introduced photo-
+copier leasing and the per-copy payment system in 1959. In fact, we might 
+trace business model innovation all the way back to the ﬁfteenth century, 
+when Johannes Gutenberg sought applications for the mechanical printing 
+device he had invented. 
+ 
+But the scale and speed at which innovative business models are 
+transforming industry landscapes today is unprecedented. For entre- 
+preneurs, executives, consultants, and academics, it is high time to  
+understand the impact of this extraordinary evolution. Now is the time  
+to understand and to methodically address the challenge of business  
+model innovation.
+ 
+Ultimately, business model innovation is about creating value, for 
+companies, customers, and society. It is about replacing outdated models. 
+With its iPod digital media player and iTunes.com online store, Apple 
+created an innovative new business model that transformed the company 
+into the dominant force in online music. Skype brought us dirt-cheap 
+global calling rates and free Skype-to-Skype calls with an innovative 
+business model built on so-called peer-to-peer technology. It is now the 
+world’s largest carrier of international voice trafﬁc. Zipcar frees city dwell-
+ers from automobile ownership by offering hourly or daily on-demand 
+car rentals under a fee-based membership system. It’s a business model 
+response to emerging user needs and pressing environmental concerns. 
+Grameen Bank is helping alleviate poverty through an innovative business 
+model that popularized microlending to the poor. 
+ 
+But how can we systematically invent, design, and implement  
+these powerful new business models? How can we question, challenge,  
+and transform old, outmoded ones? How can we turn visionary ideas  
+into game-changing business models that challenge the establishment—or 
+rejuvenate it if we ourselves are the incumbents? Business Model Generation 
+aims to give you the answers. 
+ 
+Since practicing is better than preaching, we adopted a new model 
+for writing this book. Four hundred and seventy members of the Business 
+Model Innovation Hub contributed cases, examples, and critical com-
+ments to the manuscript—and we took their feedback to heart. Read more 
+about our experience in the ﬁnal chapter of Business Model Generation.
+
+
+Seven Faces of 
+Business Model 
+Innovation
+The Senior Executive
+Jean-Pierre Cuoni, 
+Chairman / EFG International
+Focus: Establish a new business model 
+in an old industry
+Jean-Pierre Cuoni is chairman of 
+EFG International, a private bank 
+with what may be the industry’s most 
+innovative business model. With 
+EFG he is profoundly transforming 
+the traditional relationships between 
+bank, clients, and client relationship 
+managers. Envisioning, crafting, and 
+executing an innovative business 
+model in a conservative industry with 
+established players is an art, and 
+one that has placed EFG International 
+among the fastest growing banks 
+in its sector.
+The Intrapreneur
+Dagﬁ nn Myhre,  
+Head of R&I Business Models / Telenor
+Focus: Help exploit the latest techno-
+logical developments with the right 
+business models
+Dagﬁ nn leads a business model unit 
+at Telenor, one of the world’s ten larg-
+est mobile telephone operators. The 
+telecom sector demands continuous 
+innovation, and Dagﬁ nn’s initiatives 
+help Telenor identify and understand 
+sustainable models that exploit the 
+potential of the latest technological 
+developments. Through deep analysis 
+of key industry trends, and by develop-
+ing and using leading-edge analytical 
+tools, Dagﬁ nn’s team explores new 
+business concepts and opportunities. 
+The Entrepreneur
+Mariëlle Sijgers, 
+Entrepreneur / CDEF Holding BV
+Focus: Address unsatisﬁ ed customer 
+needs and build new business models 
+around them
+Marielle Sijgers is a full-ﬂ edged 
+entrepreneur. Together with her 
+business partner, Ronald van den 
+Hoff, she’s shaking up the meeting, 
+congress, and hospitality industry 
+with innovative business models. 
+Led by unsatisﬁ ed customer needs, 
+the pair has invented new concepts 
+such as Seats2meet.com, which allows 
+on-the-ﬂ y booking of meetings in 
+untraditional locations. Together, 
+Sijgers and van den Hoff constantly 
+play with new business model ideas 
+and launch the most promising 
+concepts as new ventures.

@@ -6,6 +6,8 @@ files:
   - "dist/**/*"
   # Explicitly exclude any dev data that might exist
   - "!**/data/**"
+  # Exclude full book chapter extractions (reference material, not runtime assets)
+  - "!dist/canvases/**/knowledge/book/**"
 mac:
   category: public.app-category.productivity
   target:

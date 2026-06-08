@@ -1,0 +1,1440 @@
+# Strategy
+
+tegy
+
+  “There’s not a single  
+business model . . . 
+There are really a lot of  
+opportunities and a lot of 
+options and we just have  
+to discover all of them.” 
+
+CX\>zATX[[h24>>zATX[[h
+
+In previous sections we taught you a language for describing, discussing, 
+and designing business models, described business model patterns, 
+and explained techniques that facilitate the design and invention of new 
+business models. This next section is about re-interpreting strategy 
+through the lens of the Business Model Canvas. This will help you 
+constructively question established business models and strategically 
+examine the environment in which your own business model functions.
+The following pages explore four strategic areas: the Business Model 
+Environment, Evaluating Business Models, a Business Model Perspective 
+on Blue Ocean Strategies, and how to Manage Multiple Business Models 
+within an enterprise. 
+Strategy 200 Business Model 
+Environment 212 Evaluating Business 
+Models 226 Business Model 
+Perspective on Blue 
+Ocean Strategy 232 Managing Multiple 
+Business Models business model environment: 
+context, design drivers, and constraints Business models are designed and executed in specific environments. 
+Developing a good understanding of your organization’s environment helps 
+you conceive stronger, more competitive business models. 
+ 
+Continuous environmental scanning is more important than ever 
+because of the growing complexity of the economic landscape (e.g. networked business models), greater uncertainty (e.g. technology innovations) 
+and severe market disruptions (e.g. economic turmoil, disruptive new Value 
+Propositions). Understanding changes in the environment helps you adapt 
+your model more effectively to shifting external forces. 
+ 
+You may fi nd it helpful to conceive of the external environment as a 
+sort of “design space.” By this we mean thinking of it as a context in which 
+to conceive or adapt your business model, taking into account a number 
+of design drivers (e.g. new customer needs, new technologies, etc.) and 
+design constraints (e.g. regulatory trends, dominant competitors, etc.). This 
+environment should in no way limit your creativity or predefi ne your business 
+model. It should, however, infl uence your design choices and help you make 
+more informed decisions. With a breakthrough business model, you may 
+even become a shaper and transformer of this environment, and set new 
+standards for your industry. 
+ 
+To get a better grasp on your business model “design space,” we suggest 
+roughly mapping four main areas of your environment. These are (1) market 
+forces, (2) industry forces, (3) key trends, and (4) macroeconomic forces. 
+If you’d like to deepen your analysis of the landscape beyond the simple 
+mapping we propose, each of these four areas is backed by a large body of 
+literature and specifi c analytical tools. 
+ 
+In the following pages, we describe the key external forces that infl uence 
+business models and categorize them using the four areas just mentioned. 
+The pharmaceutical industry, introduced in the previous chapter, is used to 
+illustrate each external force. The pharma sector is likely to undergo substantial transformation in coming years, though it is unclear how the changes 
+will play out. Will biotechnology companies, which are currently copying the 
+pharmaceutical sector’s blockbuster drug model, come up with new, disruptive business models? Will technological change lead to transformation? 
+Will consumers and market demand force changes?
+ 
+We strongly advocate mapping your own business model environment 
+and refl ecting on what trends mean for the future of your enterprise. A good 
+understanding of the environment will allow you to better evaluate the different directions in which your business model might evolve. You may also want 
+to consider creating scenarios of future business model environments (see p. 
+186). This can be a valuable tool for jumpstarting business model innovation 
+work or simply preparing your organization for the future.  
+technology trends socioeconomic trends regulatory trends societal and cultural trends market issues market segments switching costs revenue attractiveness needs and demands rends socioe ory trends societal an marke mar switch revenue at needs and VP CR CH CS KP KA KR R$
+C$
+stakeholders suppliers and other value 
+chain actors competitors 
+(incumbents)
+new entrants 
+(insurgents)
+substitute products 
+and services key trends global market conditions economic infrastructure capital markets commodities and other resources market forces industry forces macroeconomic forces
+— macroeconomics —
+—foresight  —
+— competitive analysis —
+— market analysis —
+d ta ta o
+titit or or r
+KP KP n
+ec e
+o
+ 
+rs rs ld l
+it b
+r t
+ro ro K
+S i
+h at at ar d
+e Main Qs market issues Identifi es key issues driving and transforming your 
+market from Customer and Offer perspectives What are the crucial issues affecting the customer 
+landscape? Which shifts are underway? Where is 
+the market heading?
+market segments Identifi es the major market segments, describes their 
+attractiveness, and seeks to spot new segments What are the most important Customer Segments? 
+Where is the biggest growth potential? Which segments 
+are declining? Which peripheral segments deserve 
+attention?
+needs and demands Outlines market needs and analyzes how well 
+they are served What do customers need? Where are the biggest 
+unsatisfi ed customer needs? What do customers really 
+want to get done? Where is demand increasing?  
+Declining?
+switching costs Describes elements related to customers switching 
+business to competitors What binds customers to a company and its offer? 
+What switching costs prevent customers from defecting 
+to competitors? Is it easy for customers to fi nd 
+and purchase similar offers? How important is brand?
+revenue 
+attractiveness Identifi es elements related to revenue attractiveness 
+and pricing power What are customers really willing to pay for? Where can 
+the largest margins be achieved? Can customers easily 
+fi nd and purchase cheaper products and services?
+market issues Ident market 
+needs and demands Outlines marke they are serve switching costs Describes business revenue attractiveness e
+ke e
+es es s
+s s
+t t
+— market analysis —
+market forces e major market segments, describes their s, and seeks to spot new segments What are the most important Customer Segments?
+Where is the biggest growth potential? Which segments are declining? Which peripheral segments deserve attention?
+market segments Identifi es the 
+attractiveness e
+s Pharmaceutical Industry Landscape
+ Skyrocketing healthcare costs
+ Emphasis shifting from treatment to prevention
+ Treatments, diagnostics, devices, and support services 
+are converging
+ Emerging markets becoming more important
+ Doctors and healthcare providers
+ Governments/regulators
+ Distributors
+ Patients 
+ Strong potential in emerging markets
+ U.S. remains the predominant global market
+ Strong, with dispersed need for niche treatments
+ Need to manage exploding cost of health care 
+ Large, unsatisfi ed health care needs in emerging markets 
+and developing countries
+ Consumers are better informed 
+ Monopoly on patent-protected drugs
+ Low switching costs for patent-expired drugs replaceable 
+by generic versions
+ Growing amount of quality information available online 
+ Deals with governments, large-scale healthcare providers 
+increase switching costs
+  High margins on patent-protected drugs
+  Low margins on generic drugs
+  Healthcare providers, governments enjoy growing infl uence 
+over prices
+  Patients continue to have little infl uence over prices what new key 
+resources do we need 
+to develop or acquire 
+in light of the ongoing 
+shift from treatment 
+to prevention?
+how can our value 
+proposition address 
+the issue of exploding 
+health costs?
+what would a greater 
+focus on emerging 
+markets mean for the 
+other building blocks 
+in our model?
+what kind of new 
+revenue opportunities 
+might be created by 
+the shift in emphasis 
+from treatment to 
+prevention? 
+how can we maintain earnings while 
+addressing the public 
+struggle to cope with 
+skyrocketing healthcare costs? 
+what does the convergence of treatment, 
+diagnostics, devices, 
+and support services 
+mean for our 
+key resources and 
+activities? 
+VP CR CH CS KP KA KR R$
+C$
+ Doctors and healthcare providers
+ Governments/regulators
+ Distributors
+ Patients
+ Strong potential in emerging markets
+ U.S. remains the predominant global market Main Qs competitors 
+(incumbents)
+Identifi es incumbent competitors and their 
+relative strengths Who are our competitors? Who are the dominant 
+players in our particular sector? What are their 
+competitive advantages or disadvantages? Describe 
+their main offers. Which Customer Segments are they 
+focusing on? What is their Cost Structure? How much 
+infl uence do they exert on our Customer Segments, 
+Revenue Streams, and margins?
+new entrants 
+(insurgents)
+Identifi es new, insurgent players and determines whether 
+they compete with a business model different from yours Who are the new entrants in your market? How 
+are they different? What competitive advantages or 
+disadvantages do they have? Which barriers must they 
+overcome? What are their Value Propositions? Which 
+Customer Segments are they focused on? What is their 
+Cost Structure? To what extent do they infl uence your 
+Customer Segments, Revenue Streams, and margins?
+substitute products 
+and services Describes potential substitutes for your offers—including 
+those from other markets and industries Which products or services could replace ours? How 
+much do they cost compared to ours? How easy it is for 
+customers to switch to these substitutes? What business 
+model traditions do these substitute products stem from 
+(e.g. high-speed trains versus airplanes, mobile phones 
+versus cameras, Skype versus long-distance telephone 
+companies)?
+suppliers and other 
+value chain actors Describes the key value chain incumbents in your market 
+and spots new, emerging players Who are the key players in your industry value chain? 
+To what extent does your business model depend 
+on other players? Are peripheral players emerging? 
+Which are most profi table? 
+stakeholders Specifi es which actors may infl uence your organization 
+and business model Which stakeholders might infl uence your business 
+model? How infl uential are shareholders? Workers? 
+The government? Lobbyists?
+(incu new entrants
+(insurgents)
+Identifi they com substitute products and services Describes pote those from oth stakeholders o
+n incu tifii om om o
+e h
+— competitive analysis —
+industry forces he key value chain incumbents in your market new, emerging players Who are the key players in your industry value chain?
+To what extent does your business model depend on other players? Are peripheral players emerging?
+Which are most profi table? 
+suppliers and other value chain actors Describes th and spots n h
+n Pharmaceutical Industry Landscape
+ Several large and medium size players compete in pharma
+ Most players are struggling with empty product 
+pipelines and low R&D productivity
+ Growing trend toward consolidation through mergers 
+and acquisitions
+ Major players acquire biotech, specialty drug developers 
+to fi ll product pipeline
+ Several players starting to build on open innovation processes
+ Little disruption of the pharmaceutical industry over the 
+last decade
+ Main new entrants are generic drug companies, particularly 
+from India
+ To a certain extent, prevention represents a substitution 
+for treatment
+ Patent-expired drugs replaced by low-cost generics
+ Increasing use of research contractors
+ Biotech fi rms and specialty drug developers as important 
+new product generators
+ Doctors and healthcare providers
+ Insurance companies
+ Bioinformatics providers growing in importance
+ Laboratories
+ Shareholder pressure forces drug companies to focus 
+on short term (quarterly) fi nancial results
+ Governments/regulators have a strong stake in the actions 
+of pharmaceutical companies because of their pivotal role 
+in healthcare services
+ Lobbyists, social enterprise groups and/or foundations, 
+particularly those pursuing agendas such as low-cost 
+treatments for developing countries
+ Scientists, who represent the core talent of the drug 
+manufacturing industry for which parts of 
+the industry value 
+chain should key 
+partnerships be built 
+as opposed to developing key resources and 
+activities in-house? 
+must the value 
+proposition change to 
+accommodate shifts in 
+the industry (e.g. the 
+growing importance 
+of biotech fi rms)?
+which part of the 
+pharma industry 
+offers the greatest 
+earnings potential?
+which of the key 
+resources emerging 
+among new actors in 
+the value chain need to 
+be developed in-house 
+(e.g. bioinformatics)? 
+ 
+is it necessary to 
+acquire smaller 
+fi rms to fi ll product 
+pipelines?
+could suppliers 
+such as research 
+contractors turn 
+into competitors?
+VP CR CH CS KP KA KR R$
+C$
+ Increasing use of research contractors
+ Biotech fi rms and specialty drug developers as important 
+new product generators
+ Doctors and healthcare providers
+ Insurance companies
+ Bioinformatics providers growing in importance
+ Laboratories Main Qs technology trends Identifi es technology trends that could threaten your 
+business model—or enable it to evolve or improve 
+What are the major technology trends both inside and 
+outside your market? Which technologies represent 
+important opportunities or disruptive threats? Which 
+emerging technologies are peripheral customers adopting?
+regulatory trends Describes regulations and regulatory trends that infl uence 
+your business model Which regulatory trends infl uence your market? What 
+rules may affect your business model? Which regulations 
+and taxes affect customer demand?
+societal and 
+cultural trends Identifi es major societal trends that may infl uence your 
+business model Describe key societal trends. Which shifts in cultural or 
+societal values affect your business model? Which trends 
+might infl uence buyer behavior? 
+socioeconomic 
+trends Outlines major socioeconomic trends relevant to your 
+business model What are the key demographic trends? How would 
+you characterize income and wealth distribution in your 
+market? How high are disposable incomes? Describe 
+spending patterns in your market (e.g. housing, healthcare, entertainment, etc.). What portion of the population lives in urban areas as opposed to rural settings?
+technology trends Iden busine societal and cultural trends Identifi es majo business mode socioeconomic trends Outline busin o
+e e
+n n
+e
+— foresight  —
+key trends egulations and regulatory trends that infl uence 
+s model Which regulatory trends infl uence your market? What rules may affect your business model? Which regulations and taxes affect customer demand?
+regulatory trends Describes reg your business eg s
+Pharmaceutical Industry Landscape
+ Emergence of pharmacogenomics, declining cost of gene 
+sequencing, and the immenent rise of personalized medicine
+ Major advances in diagnostics
+ Use of pervasive computing and nanotechnology for the 
+injection/delivery of drugs
+ Heterogeneous global regulatory landscape in the pharmaceutical industry
+ Many countries prohibit drug companies from marketing 
+directly to consumers
+ Regulatory agency pressure to publish data on unsuccessful 
+clinical trials
+ Generally unfavorable image of big drug makers
+ Growing social consciousness among consumers
+ Customers increasingly conscious of global warming, 
+sustainability issues, prefer “green” purchases
+ Customers are better informed about drug maker activity 
+in developing countries (e.g. HIV/AIDS drugs)
+ Aging society in many mature markets
+ Good but costly healthcare infrastructure in mature markets
+ Growing middle class in emerging markets
+ Large, unsatisfi ed healthcare needs in developing countries which new key 
+resources and 
+activities will prove 
+advantageous when 
+personalized drugs 
+and diagnostics are 
+widely used? 
+which technologies 
+are likely to improve 
+value proposition 
+competitiveness in 
+the evolving pharma 
+landscape?
+how are customers 
+reacting to new technological developments in the pharmaceutical industry?
+do advances in 
+pharmacogenomics, 
+diagnostics, pervasive 
+computing, or nanotechnology offer new 
+revenue opportunities?
+how will technology 
+such as pharmacogenomics, pervasive 
+computing, and nanotechnology affect the 
+cost structure of a 
+drug maker’s business 
+model?
+which partnerships 
+will become essential 
+when pharmacogenomics is an integral 
+part of the industry 
+landscape? 
+VP CR CH CS KP KA KR R$
+C$
+ Heterogeneous global regulatory landscape in the pharmaceutical industry
+ Many countries prohibit drug companies from marketing directly to consumers
+ Regulatory agency pressure to publish data on unsuccessful clinical trials Main Qs global market 
+conditions Outlines current overall conditions from a 
+macroeconomic perspective Is the economy in a boom or bust phase? Describe 
+general market sentiment. What is the GDP growth rate? 
+How high is the unemployment rate?
+capital markets Describes current capital market conditions as they 
+relate to your capital needs What is the state of the capital markets? How easy is 
+it to obtain funding in your particular market? Is seed 
+capital, venture capital, public funding, market capital, or 
+credit readily available? How costly is it to procure funds?
+commodities and 
+other resources Highlights current prices and price trends for resources 
+required for your business model Describe the current status of markets for commodities and other resources essential to your business 
+(e.g. oil prices and labor costs). How easy is it to obtain 
+the resources needed to execute your business model 
+(e.g. attract prime talent)? How costly are they? 
+Where are prices headed?
+economic 
+infrastructure Describes the economic infrastructure of the market 
+in which your business operates How good is the (public) infrastructure in your market? 
+How would you characterize transportation, trade, school 
+quality, and access to suppliers and customers? How 
+high are individual and corporate taxes? How good are 
+public services for organizations? How would you rate 
+the quality of life? 
+global market conditions Out macro capital markets Describes cu relate to your commodities and other resources Highlights curr required for you ut ro cu c
+r r
+u
+— macroeconomics  —
+macroeconomic 
+forces s the economic infrastructure of the market h your business operates How good is the (public) infrastructure in your market?
+How would you characterize transportation, trade, school quality, and access to suppliers and customers? How high are individual and corporate taxes? How good are public services for organizations? How would you rate the quality of life?
+economic infrastructure Describes 
+in which 
+s s h
+Pharmaceutical Industry Landscape
+ Global recession
+ Negative GDP growth in Europe, Japan, and the United States
+ Slower growth rates in China and India
+ Uncertainty as to when recovery will occur
+ Tight capital markets
+ Credit availability restricted due to banking crisis
+ Little venture capital available
+ Risk capital availability extremely limited
+ Fierce “battles” for prime talent
+ Employees seek to join pharmaceutical companies 
+with positive public image
+ Commodity prices rising from recent lows
+ Demand for natural resources likely to pick up with 
+economic recovery
+ Oil prices continue to fl uctuate
+ Specifi c to the region in which a company operates does the economic 
+infrastructure 
+adequately support 
+key activities? 
+does the infrastructure and trade environment adequately 
+support channels?
+how will local and 
+national taxes affect 
+the business model?
+do universities and 
+other educational 
+institutions furnish 
+a suffi cient amount 
+of qualifi ed talent? 
+VP CR CH CS KP KA KR R$
+C$
+ Specifi c to the region in which a company operates how should your 
+business model evolve 
+in light of a changing 
+environment?
+A competitive business model that makes sense in today’s environment 
+might be outdated or even obsolete tomorrow. We all have to improve 
+our understanding of a model’s environment and how it might evolve. 
+Of course we can’t be certain about the future, because of the complexities, 
+uncertainties, and potential disruptions inherent in the evolving business 
+environment. We can, however, develop a number of hypotheses about the 
+future to serve as guidelines for designing tomorrow’s business models. 
+Assumptions about how market forces, industry forces, key trends, and 
+macroeconomic forces unfold give us the “design space” to develop potential 
+business model options or prototypes (see p. 160) for the future. The role 
+of business model scenarios (see p. 186) in forecasting should also be evident by now. Painting pictures of the future makes it much easier to generate 
+potential business models. Depending on your own criteria (e.g. acceptable 
+level of risk, growth potential sought, etc.) you may then select one option 
+over another. 
+driving trends market forces industry forces macroeconomic forces fo n
+or o
+VP CR CH CS KP KA KR R$
+C$
+R$
+VP CR CS KA KP K
+C$
+KP S
+KP K
+S CS industry forces macroeconomic forces Time Options driving trends market forces
+— present environment —
+— projected environment —
+evaluating business models Like seeing the doctor for an annual exam, regularly assessing a business model is an important management activity that allows an 
+organization to evaluate the health of its market position and adapt accordingly. This checkup may become the basis for incremental business model 
+improvements, or it might trigger a serious intervention in the form of a 
+business model innovation initiative. As the automobile, newspaper, and 
+music industries have shown, failing to conduct regular checkups may 
+prevent early detection of business model problems, and may even lead 
+to a company’s demise.
+ 
+In the previous chapter on the business models environment (see p. 200), 
+we evaluated the infl uence of external forces. In this chapter, we adopt the 
+point of view of an existing business model and analyze external forces from 
+the inside out. 
+ 
+The following pages outline two types of assessment. First, we provide a 
+big picture assessment of Amazon.com’s online retailing model circa 2005 
+and describe how the company has built strategically on that model since. 
+Second, we provide a set of checklists for assessing your business model’s 
+strengths, weaknesses, opportunities, and threats (SWOT) and to help 
+you evaluate each Building Block. Keep in mind that assessing a business 
+model from a big picture perspective and assessing it from a Building Block 
+perspective are complementary activities. A weakness in one Building 
+Block, for example, may have consequences for one or several other 
+Building Blocks—or for the entire model. Business model assessment, 
+therefore, alternates between individual elements and overall integrity. 
+— positive —
+— negative —
+— internal —
+— external —
+logistics 
+partners affi liates fulfi llment it infrastructure
+& software development
+& maintenance online retail 
+shop customized 
+online profi les & 
+recommendations global 
+consumer 
+market 
+(north america, 
+europe, asia)
+it infrastructure
+& software global 
+fulfi llment 
+infrastructure amazon.com 
+(& overseas sites)
+affi liates marketing technology & content fulfi llment sales margin VP CR CH CS KP KA KR R$
+C$
+Amazon.com provides a powerful illustration of implementing business model innovation based on an analysis of strengths and weaknesses. We’ve already described why it 
+made sense for Amazon.com to launch a series of new service offers under the moniker 
+Amazon Web Services (see p. 176). Now let’s examine how those new offers launched 
+in 2006 related to Amazon.com’s strengths and weaknesses the previous year.
+ 
+Assessing the strengths and weaknesses of Amazon.com’s business model circa 
+2005 reveals an enormous strength and a dangerous weakness. Amazon.com’s 
+strength was its extraordinary customer reach and huge selection of products for sale. 
+The company’s main costs lay in the activities in which it excelled, namely fulfi llment 
+($745 million, or 46.3 percent of operating expenses) and technology and content 
+($451 million, or 28.1 percent of operating expenses). The key weakness of Amazon.
+com’s business model was weak margins, the result of selling primarily low-value, lowmargin products such as books, music CDs, and DVDs. As an online retailer, Amazon.
+com recorded sales of $8.5 billion in 2005 with a net margin of only 4.2 percent. At the 
+time, Google enjoyed a net margin of 23.9 percent on sales of $6.1 billion while eBay 
+achieved a net margin of 23.7 percent on sales of $4.6 billion. 
+ 
+Looking to the future, founder Jeff Bezos and his management team took a twopronged approach to building on Amazon.com’s business model. First, they aimed to 
+grow the online retail business through a continuing focus on customer satisfaction 
+and effi cient fulfi llment. Second, they began growth initiatives in new areas. Management was clear on the requirements for these new initiatives. They had to (1) target 
+underserved markets, (2) be scalable with potential for signifi cant growth, and (3) 
+leverage existing Amazon.com capabilities to bring strong customer-facing differentiation to that marketplace. 
+big picture 
+assessment:
+amazon.com relatively 
+low value items relatively 
+capital 
+sensitive low 
+margins cost 
+effi ciency economies 
+of scope large 
+reach fulfi llment 
+excellency IT infra 
+excellency large 
+product 
+range Amazon.com’s main strengths and weaknesses in 2005:
+logistics 
+partners affi liates fulfi llment it infrastructure
+& software development
+& maintenance online retail 
+shop fulfi llment by 
+amazon amazon web 
+services: s3, ec2, 
+sqs, other web 
+services customized 
+online profi les & 
+recommendations global 
+consumer 
+market 
+(north america, 
+europe, asia)
+developers & 
+companies individuals & 
+companies that 
+need fulfi llment it infrastructure
+& software global 
+fulfi llment 
+infrastructure amazon.com 
+(& countries)
+affi liates APIs marketing technology & content fulfi llment sales margin utility computing fees fulfi llment handling fees VP CR CH CS KP KA KR R$
+C$
+In 2006 Amazon.com focused on two new initiatives that satisfi ed the above requirements and which promised to powerfully extend the existing business model. The fi rst 
+was a service called Fulfi llment by Amazon, and the second was a series of new Amazon 
+Web Services. Both initiatives built on the company’s core strengths—order fulfi llment 
+and Web IT expertise—and both addressed underserved markets. What’s more, both 
+initiatives promised higher margins than the company’s core online retailing business. 
+ 
+Fulfi llment by Amazon allows individuals and companies to use Amazon.com’s 
+fulfi llment infrastructure for their own businesses in exchange for a fee. Amazon.com 
+stores a seller’s inventory in its warehouses, then picks, packs, and ships on the seller’s 
+behalf when an order is received. Sellers can sell through Amazon.com, their own Channels, or a combination of both.
+ 
+Amazon Web Services targets software developers and any party requiring highperformance server capability by offering on-demand storage and computing capacity. 
+Amazon Simple Storage Systems (Amazon S3) allows developers to use Amazon.com’s 
+massive data center infrastructure for their own data storage needs. Similarly, Amazon 
+Elastic Compute Cloud (EC2), allows developers to “rent” servers on which to run 
+their own applications. Thanks to its deep expertise and unprecedented experience 
+scaling an online shopping site, the company can offer both at cutthroat prices, yet still 
+earn higher margins compared to its online retail operations. 
+ 
+Investors and investment analysts were initially skeptical about these new long-term 
+growth strategies. Unconvinced that the diversifi cation made sense, they contested 
+Amazon.com’s investments in even more IT infrastructure. Eventually, Amazon.com 
+overcame their skepticism. Nonetheless, the true returns from this long-term strategy 
+may not be known for several more years—and after even more investment 
+in the new business model.
+Opportunities Amazon.com explored in 2006:
+synergies in the use 
+of activities and 
+resources 
+for new offers two totally new 
+customer segments which 
+are underserved as to the 
+proposed offer 
+new revenue streams with 
+higher margins than retail Assessing your business model’s overall integrity is crucial, but looking at 
+its components in detail can also reveal interesting paths to innovation and 
+renewal. An effective way to do this is to combine classic strengths, weaknesses, opportunities, and threats (SWOT) analysis with the Business Model 
+Canvas. SWOT analysis provides four perspectives from which to assess the 
+elements of a business model, while the Business Model Canvas provides 
+the focus necessary for a structured discussion.
+ 
+SWOT analysis is familiar to many businesspeople. It is used to analyze 
+an organization’s strengths and weaknesses and identify potential opportunities and threats. It is an attractive tool because of its simplicity, yet its use 
+can lead to vague discussions because its very openness offers little direction concerning which aspects of an organization to analyze. A lack of useful 
+outcomes may result, which has lead to a certain SWOT-fatigue among 
+managers. When combined with the Business Model Canvas, though, SWOT 
+enables a focused assessment and evaluation of an organization’s business 
+model and its Building Blocks.
+ 
+SWOT asks four big, simple questions. The fi rst two—what are your 
+organization’s strength and weaknesses?—assess your organization internally. The second two—what opportunities does your organization have 
+and what potential threats does it face?—assess your organization’s position within its environment. Of these four questions, two look at helpful areas 
+(strengths and opportunities) and two address harmful areas. It is useful to 
+ask these four questions with respect to both the overall business model and 
+each of its nine Building Blocks. This type of SWOT analysis provides a good 
+basis for further discussions, decision-making, and ultimately innovation 
+around business models.
+detailed swot 
+assessment of each 
+building block What are your business model’s . . . 
+strengths weaknesses opportunities threats
+— helpful —
+— harmful —
+— external —
+— internal —
+ 
+The following pages contain non-exhaustive sets of questions to help 
+you assess the strengths and weaknesses of each of your business model 
+Building Blocks. Each set can help jumpstart your own assessments. Results 
+from this exercise can become the foundation for business model change 
+and innovation in your organization. 
+Value Proposition Assessment Our Value Propositions are well 
+aligned with customer needs 54321 12345 Our Value Propositions and 
+customer needs are misaligned Our Value Propositions have strong 
+network effects 54321 12345 Our Value Propositions have 
+no network effects There are strong synergies between 
+our products and services 54321 12345 There are no synergies between 
+our products and services Our customers are very satisfi ed 
+54321 12345 We have frequent complaints 
+Cost/Revenue Assessment We benefi t from strong margins 54321 12345 Our margins are poor Our revenues are predictable 54321 12345 Our revenues are unpredictable We have recurring Revenue 
+Streams and frequent repeat 
+purchases 54321 12345 Our revenues are transactional 
+with few repeat purchases Our Revenue Streams are 
+diversifi ed 54321 12345 We depend on a single Revenue 
+Stream Our Revenue Streams are 
+sustainable 54321 12345 Our revenue sustainability is 
+questionable We collect revenues before 
+we incur expenses 54321 12345 We incur high costs before we 
+collect revenues We charge for what customers 
+are really willing to pay for 54321 12345 We fail to charge for things 
+customers are willing to pay for Our pricing mechanisms capture 
+full willingness to pay 54321 12345 Our pricing mechanisms leave 
+money on the table Our costs are predictable 54321 12345 Our costs are unpredictable Our Cost Structure is correctly 
+matched to our business model 54321 12345 Our Cost Structure and business 
+model are poorly matched Our operations are cost-effi cient 
+54321 12345 Our operations are cost-ineffi cient We benefi t from economies of scale 54321 12345 We enjoy no economies of scale certainty of evaluation 1-10 certainty of evaluation 1-10 importance to my b.m. 1–10 importance to my b.m. 1–10 Infrastructure Assessment Our Key Resources are diffi cult for 
+competitors to replicate 54321 12345 Our Key Resources are easily 
+replicated Resource needs are predictable 54321 12345 Resource needs are unpredictable We deploy Key Resources in the 
+right amount at the right time 54321 12345 We have trouble deploying the 
+right resources at the right time We effi ciently execute Key Activities 54321 12345 Key Activity execution is ineffi cient Our Key Activities are diffi cult 
+to copy 54321 12345 Our Key Activities are easily 
+copied Execution quality is high 54321 12345 Execution quality is low Balance of in-house versus 
+outsourced execution is ideal 54321 12345 We execute too many or too few 
+activities ourselves We are focused and work with 
+partners when necessary 54321 12345 We are unfocused and fail to work 
+suffi ciently with partners We enjoy good working 
+relationships with Key Partners 54321 12345 Working relationships with Key 
+Partners are confl ict-ridden certainty of evaluation 1-10 importance to my b.m. 1–10 Customer Interface Assessment Customer churn rates are low 54321 12345 Customer churn rates are high Customer base is well segmented 54321 12345 Customer base is unsegmented We are continuously acquiring 
+new customers 54321 12345 We are failing to acquire new 
+customers Our Channels are very effi cient 54321 12345 Our Channels are ineffi cient Our Channels are very effective 54321 12345 Our Channels are ineffective Channel reach is strong among 
+customers 54321 12345 Channel reach among prospects 
+is weak Customers can easily see our 
+Channels 54321 12345 Prospects fail to notice our 
+Channels Channels are strongly integrated 54321 12345 Channels are poorly integrated Channels provide economies 
+of scope 54321 12345 Channels provide no economies 
+of scope Channels are well matched to 
+Customer Segments 54321 12345 Channels are poorly matched to 
+Customer Segments Strong Customer Relationships 54321 12345 Weak Customer Relationships Relationship quality correctly 
+matches Customer Segments 54321 12345 Relationship quality is poorly 
+matched to Customer Segments Relationships bind customers 
+through high switching costs 54321 12345 Customers switching costs are low Our brand is strong 54321 12345 Our brand is weak 
+certainty of evaluation 1-10 importance to my b.m. 1–10 assessing threats We’ve described how business models are situated within specifi c environments, and shown how external forces such as competition, the legal 
+environment, or technology innovation can infl uence or threaten a business 
+model (see p. 200). In this section we look at threats specifi c to each business model Building Block, and provide a non-exhaustive set of questions 
+to help you think about ways to address each threat. 
+Value Proposition Threats Are substitute products and 
+services available?
+Are competitors threatening to 
+offer better price or value?
+Cost/Revenue Threats Are our margins threatened by 
+competitors? By technology?
+Do we depend excessively on one 
+or more Revenue Streams?
+Which Revenue Streams are likely 
+to disappear in the future?
+Which costs threaten to become 
+unpredictable?
+Which costs threaten to grow 
+more quickly than the revenues 
+they support?
+221 Infrastructure Threats Could we face a disruption in the 
+supply of certain resources?
+Is the quality of our resources 
+threatened in any way?
+What Key Activities might 
+be disrupted?
+Is the quality of our activities 
+threatened in any way?
+Are we in danger of losing any 
+partners?
+Might our partners collaborate 
+with competitors?
+Are we too dependent on certain 
+partners?
+Customer Interface Threats Could our market be saturated 
+soon?
+Are competitors threatening 
+our market share?
+How likely are customers 
+to defect?
+How quickly will competition 
+in our market intensify?
+Do competitors threaten our 
+Channels?
+Are our Channels in danger of 
+becoming irrelevant to customers? 12345 Are any of our Customer Relationships in danger of deteriorating?
+222 assessing opportunities As with threats, we can assess the opportunities that may lie within each 
+business model Building Block. Here’s a non-exhaustive set of questions 
+to help you think about opportunities that could emerge from each of the 
+Building Blocks in your business model. 
+Value Proposition Opportunities Could we generate recurring 
+revenues by converting products 
+into services?
+Could we better integrate our 
+products or services?
+Which additional customer needs 
+could we satisfy?
+What complements to or 
+extensions of our Value Proposition 
+are possible?
+What other jobs could we do on 
+behalf of customers?
+Cost/Revenue Opportunities Can we replace one-time 
+transaction revenues with recurring 
+revenues?
+What other elements would 
+customers be willing to pay for?
+Do we have cross-selling 
+opportunities either internally 
+or with partners?
+What other Revenue Streams could 
+we add or create?
+Can we increase prices?
+Where can we reduce costs?
+223 Infrastructure Opportunities Could we use less costly resources 
+to achieve the same result?
+Which Key Resources could be 
+better sourced from partners?
+Which Key Resources are 
+under-exploited?
+Do we have unused intellectual 
+property of value to others?
+Could we standardize some Key 
+Activities?
+How could we improve effi ciency 
+in general?
+Would IT support boost effi ciency? 12345 Are there outsourcing 
+opportunities?
+Could greater collaboration with 
+partners help us focus on our core 
+business?
+Are there cross-selling 
+opportunities with partners?
+Could partner Channels help us 
+better reach customers?
+Could partners complement our 
+Value Proposition?
+Customer Interface Opportunities How can we benefi t from a growing 
+market?
+Could we serve new Customer 
+Segments?
+Could we better serve our customers through fi ner segmentation?
+How could we improve channel 
+effi ciency or effectiveness?
+Could we integrate our Channels 
+better?
+Could we fi nd new complementary 
+partner Channels?
+Could we increase margins by 
+directly serving customers?
+Could we better align Channels 
+with Customer Segments?
+Is there potential to improve 
+customer follow-up?
+How could we tighten our 
+relationships with customers?
+Could we improve personalization? 12345 How could we increase switching 
+costs?
+Have we identifi ed and “fi red” 
+unprofi table customers? If not, 
+why not?
+Do we need to automate some 
+relationships?
+224 using swot assessment analysis results to 
+design new business model options A structured SWOT assessment of your business model yields two results. 
+It provides a snapshot of where you are now (strengths and weaknesses) 
+and it suggests some future trajectories (opportunities and threats). This is 
+valuable input that can help you design new business model options toward 
+which your enterprise can evolve. SWOT analysis is thus a signifi cant part 
+of the process of designing both business model prototypes (see p. 160) and, 
+with luck, a new business model that you will eventually implement.
+Current Model Future Model(s)
+— swot process —
+In this section we blend our business model tools with the Blue Ocean Strategy concept coined by Kim and Mauborgne in their 
+million-selling book of the same name. The Business Model Canvas is a 
+perfect extension of the analytical tools presented by Kim and Mauborgne. 
+Together they provide a powerful framework for questioning incumbent 
+business models and creating new, more competitive models. 
+ 
+Blue Ocean Strategy is a potent method for questioning Value Propositions and business models and exploring new Customer Segments. The 
+Business Model Canvas complements Blue Ocean by providing a visual 
+“big picture” that helps us understand how changing one part of a business 
+model impacts other components.
+ 
+In a nutshell, Blue Ocean Strategy is about creating completely new 
+industries through fundamental differentiation as opposed to competing in 
+existing industries by tweaking established models. Rather than outdoing 
+competitors in terms of traditional performance metrics, Kim and Mauborgne 
+advocate creating new, uncontested market space through what the authors 
+call value innovation. This means increasing value for customers by creating 
+new benefi ts and services, while simultaneously reducing costs by eliminating less valuable features or services. Notice how this approach rejects the 
+traditionally accepted trade-off between differentiation and lower cost.
+ 
+ 
+To achieve value innovation, Kim and Mauborgne propose an analytical 
+tool they call the Four Actions Framework. These four key questions 
+challenge an industry’s strategic logic and established business model:
+1. Which of the factors that the industry takes for granted should 
+be eliminated?
+2. Which factors should be reduced well below the industry standard?
+3. Which factors should be raised well above the industry standard?
+4. Which factors should be created that the industry has never offered?
+ 
+In addition to value innovation, Kim and Mauborgne propose exploring 
+non-customer groups to create Blue Oceans and tap untouched markets.
+ 
+Blending Kim and Mauborgne’s value innovation concept and Four 
+Actions Framework with the Business Model Canvas creates a powerful new 
+tool. In the Business Model Canvas the right-hand side represents value 
+creation and the left-hand side represents costs. This fi ts well with Kim and 
+Mauborgne’s value innovation logic of increasing value and reducing costs.
+business model perspective 
+on blue ocean strategy which factors should 
+be raised well above the 
+industry's standard?
+which factors should be 
+created that the industry 
+has never offered?
+which factors should be 
+reduced well below the 
+industry's standard?
+which factors can you 
+eliminate that your industry has long competed on?
+— four actions framework —
+— value innovation —
++ value
+– costs eliminate raise reduce create Source: Adapted from Blue Ocean Strategy.
+The Business Model Canvas consists of a right-hand 
+value and customer-focused side, and a left-hand cost 
+and infrastructure side, as descibed earlier (see p. 49). 
+Changing elements on the right-hand side has implications for the left-hand side. For example, if we add to 
+or eliminate parts of the Value Proposition, Channels, 
+or Customer Relationship Building Blocks, this will 
+have immediate implications for Resources, Activities, 
+Partnerships, and Costs. 
+Blue Ocean Strategy is about simultaneously increasing 
+value while reducing costs. This is achieved by identifying which elements of the Value Proposition can be eliminated, reduced, raised, or newly created. The fi rst goal 
+is to lower costs by reducing or eliminating less valuable 
+features or services. The second goal is to enhance or 
+create high-value features or services that do not signifi -
+cantly increase the cost base.
+Blending Blue Ocean Strategy and the Business Model 
+Canvas lets you systematically analyze a business model 
+innovation in its entirety. You can ask the Four Actions 
+Framework questions (eliminate, create, reduce, raise) 
+about each business model Building Block and immediately recognize implications for the other parts of the 
+business model, (e.g. what are the implications for the 
+cost side when we make changes on the value side? 
+and vice versa).
++value value-side value creation
+–costs cost-side cost implications blending the blue ocean strategy framework 
+with the business model canvas
++
+=
+eliminate raise reduce create Business Model Canvas Value innovation Blending approaches artistic 
+development animal care star performers animal shows aisle consession 
+sales multiple show 
+arenas fun & humor thrill & danger theme refi ned 
+environment mutliple 
+productions artistic music & 
+dance unique venue focus on families focus on theater 
+& opera visitors animals star performers refi ned 
+environment costly animal maintenance costly star performer fees artistic production ticket price increase aisle concession sales Cirque du Soleil features prominently among Blue Ocean 
+Strategy examples. Next we apply the blended Blue 
+Ocean and Business Model Canvas approach to this 
+intriguing and highly successful Canadian business. 
+ 
+First, the Four Actions Framework shows how Cirque 
+du Soleil “played” with the traditional elements of the circus business Value Proposition. It eliminated costly elements, such as animals and star performers, while adding 
+other elements, such as theme, artistic atmosphere, and 
+cirque du soleil unique venue theme refi ned environment multiple productions artistic music & dance fun & humor thrill & danger star performers animal shows aisle concession sales multiple show arenas VP CR CH CS KP KA KR R$
+C$
+adding the artistic 
+element to the value 
+proposition changes 
+activities & costs eliminating animals from 
+the show substantially 
+reduces costs the value proposition 
+combines elements from 
+circus, theater & opera, 
+which allows catering to 
+higher end customers who 
+pay higher ticket prices refi ned music. This revamped Value Proposition allowed 
+Cirque du Soleil to broaden its appeal to theatergoers and 
+other adults seeking sophisticated entertainment, rather 
+than the traditional circus audience of families. 
+ 
+As a consequence, it was able to substantially raise 
+ticket prices. The Four Actions Framework, outlined in 
+blue and gray in the business model canvas above, illustrates the effects of changes in the Value Proposition.
+Source: Adapted from Blue Ocean Strategy.
+al m
+f n
+on eliminate reduce create raise We’ve discussed Nintendo’s successful Wii game console 
+as an example of a multi-sided platform business model 
+pattern (see p. 76). Now we look at how Nintendo differentiated itself from competitors Sony and Microsoft 
+from the standpoint of Blue Ocean Strategy. Compared 
+to Sony’s PlayStation 3 and Microsoft’s Xbox 360, Nintendo pursued a fundamentally different strategy and 
+business model with Wii.
+ 
+The heart of Nintendo’s strategy was the assumption 
+that consoles do not necessarily require leading-edge 
+power and performance. This was a radical stance in an 
+industry that traditionally competed on technological 
+performance, graphic quality, and game realism: factors 
+valued primarily by diehard gaming fans. Nintendo 
+shifted its focus to providing a new form of player interaction targeted at a wider demographic than the traditional 
+avid gamer audience. With the Wii, Nintendo brought 
+to market a console that technologically underperformed 
+rival machines, but boosted the fun factor with new 
+motion control technology. Players could control games 
+through a sort of “magic wand,” the Wii Remote, simply 
+through physical movement. The console was an instant 
+success with casual gamers, and outsold rival consoles 
+focused on the traditional market of “hardcore” gamers. 
+nintendo’s wii
+ 
+Nintendo’s new business model has the following 
+characteristics: A shift in focus from “hardcore” to casual 
+gamers, which allowed the company to reduce console 
+performance and add a new element of motion control 
+that created more fun; elimination of state-of-the-art 
+chip development and increased use of off-the-shelf 
+components, reducing costs and allowing lower console 
+prices; elimination of console subsidies resulting in profits on each console sold.
+game 
+developers off-the-shelf 
+hardware 
+component 
+manufacturers state of 
+the art chi development high end console 
+performance & 
+graphics motion 
+controlled 
+games fun factor & 
+group (family) 
+experience narow market 
+of “hardcore” 
+gamers large market of 
+casual gamers & 
+families game developers new proprietary 
+technology motion control 
+technology retail 
+distribution console production price technology development costs console subsidies profi t on console sales console subsidies royalties from game developers VP CR CH CS KP KA KR R$
+C$
+p o
+c o
+eliminate unchanged create reduce The combination of Blue Ocean Strategy tools and the Business Model Canvas provide 
+a solid foundation upon which to question your business model from value creation, 
+customer, and Cost Structure perspectives. We propose that three different perspectives—the Customer Segment perspective, the Value Proposition perspective, and the 
+cost perspective—provide ideal starting points from which to start questioning your 
+business model using the Four Actions Framework. Changes to each starting point then 
+allow you to analyze impacts on other areas of the Business Model Canvas (see also 
+innovation epicenters on p. 138).
+Identify the highest cost infrastructure elements and 
+evaluate what happens if you eliminate or reduce them. 
+What value elements disappear, and what would you 
+have to create to compensate for their absence? Then, 
+identify infrastructure investments you may want to 
+make and analyze how much value they create.
+ Which activities, resources, and partnerships have 
+the highest costs?
+ What happens if you reduce or eliminate some of 
+these cost factors?
+ How could you replace, using less costly elements, 
+the value lost by reducing or eliminating expensive 
+resources, activities, or partnerships?
+ What value would be created by planned new 
+investments?
+Begin the process of transforming your Value Proposition 
+by asking the Four Actions Framework questions. 
+Simultaneously, consider the impact on the cost side 
+and evaluate what elements you need to (or could) 
+change on the value side, such as Channels, Relationships, Revenue Streams, and Customer Segments.
+ What less-valued features or services could be 
+eliminated or reduced?
+ What features or services could be enhanced or newly 
+created to produce a valuable new customer experience?
+ What are the cost implications of your changes to 
+the Value Proposition?
+ How will changes to the Value Proposition affect the 
+customer side of the model?
+Ask yourself the Four Actions Framework questions 
+about each business model Building Block on the 
+customer side of the Canvas: Channels, Relationships, 
+and Revenue Streams. Analyze what happens to the 
+cost side if you eliminate, reduce, raise, or create value 
+side elements.
+ Which new Customer Segments could you focus 
+on, and which segments could you possibly reduce or 
+eliminate?
+ What jobs do new Customer Segments really want 
+to have done?
+ How do these customers prefer to be reached and 
+what kind of relationship do they expect?
+ What are the cost implications of serving new 
+Customer Segments?
+value-side cost-side cost-side Cost Impact Exploration 
+Exploring Value Proposition Impact Exploring Customer Impact 
+?
+?
+?
+?
+eliminate reduce raise create eliminate reduce raise create eliminate reduce raise create questioning your canvas with the 
+four actions framework 
+Visionaries, game changers, and challengers are generating innovative business models around the world—as entrepreneurs and as 
+workers within established organizations. An entrepreneur’s challenge is 
+to design and successfully implement a new business model. Established 
+organizations, though, face an equally daunting task: how to implement 
+and manage new models while maintaining existing ones. 
+ 
+Business thinkers such as Constantinos Markides, Charles O'Reilly III, 
+and Michael Tushman have a word for groups that successfully meet this 
+challenge: ambidextrous organizations. Implementing a new business model 
+in a longstanding enterprise can be extraordinarily diffi cult because the 
+new model may challenge or even compete with established models. 
+The new model might require a different organizational culture, or it might 
+target prospective customers formerly ignored by the enterprise. This begs 
+a question: How do we implement innovative business models within 
+long-established organizations? 
+ 
+Scholars are divided on the issue. Many suggest spinning off new business model initiatives into separate entities. Others propose a less drastic 
+approach and argue that innovative new business models can thrive within 
+established organizations, either as-is or in separate business units. 
+Constantinos Markides, for example, proposes a two-variable framework 
+for deciding on how to manage new and traditional business models simultaneously. The fi rst variable expresses the severity of confl ict between the 
+models, while the second expresses strategic similarity. Yet, he also shows 
+that success depends not only on the correct choice—integrated versus 
+standalone implementation—but also on how the choice is implemented. 
+Synergies, Markides claims, should be carefully exploited even when the new 
+model is implemented in a standalone unit. 
+ 
+Risk is a third variable to consider when deciding whether to integrate 
+or separate an emerging model. How big is the risk that the new model will 
+negatively affect the established one in terms of brand image, earnings, 
+legal liability, and so forth? 
+ 
+During the fi nancial crisis of 2008, ING, the Dutch fi nancial group, was 
+nearly toppled by its ING Direct unit, which provides online and telephone 
+retail banking services in overseas markets. In effect, ING treated ING Direct 
+more as a marketing initiative than as a new, separate business model that 
+would have been better housed in a separate entity.
+ 
+Finally, choices evolve over time. Markides emphasizes that companies may want to consider a phased integration or a phased separation of 
+business models. e.Schwab, the Internet arm of Charles Schwab, the U.S. 
+retail securities broker, was initially set up as a separate unit, but later was 
+integrated back into the main business with great success. Tesco.com, the 
+Internet branch of Tesco, the giant U.K. retailer, made a successful transition 
+from integrated business line into standalone unit.
+ 
+In the following pages we examine the issue of integration versus separation with three examples described using the Business Model Canvas. The 
+fi rst, Swiss watch manufacturer SMH, chose the integration route for its new 
+Swatch business model in the 1980s. The second, Swiss foodmaker Nestlé, 
+chose the separation route for bringing Nespresso to the marketplace. As 
+of this writing, the third, German vehicle manufacturer Daimler, has yet to 
+choose an approach for its car2go vehicle rental concept.
+managing multiple business models
+— similarity of nine building blocks —
+— potential 
+for synergies —
+— potential 
+for confl icts —
+avoid confl icts between the 
+integrated business models and 
+allow for necessary autonomy 
+create synergies among the separated 
+business models and coordinate 
+between them as necessary integration autonomy separation smh’s autonomous model for swatch In the mid-seventies the Swiss watch industry, which had historically dominated the 
+timepiece sector, found itself in deep crisis. Japanese and Hong Kong watch manufacturers had dislodged the Swiss from their leadership position with cheap quartz 
+watches designed for the low-end market. The Swiss continued to focus on traditional mechanical watches for the mid- and high-end markets, but all the while 
+Asian competitors threatened to intrude on these segments as well. 
+  In the early 1980s competitive pressure intensifi ed to the point that most Swiss 
+manufacturers, with the exception of a handful of luxury brands, were teetering on 
+collapse. Then Nicolas G. Hayek took over the reigns of SMH (later renamed Swatch 
+Group). He completely restructured a newly formed group cobbled together from companies with roots in the two biggest ailing Swiss watchmakers. 
+ 
+Hayek envisioned a strategy whereby SMH would offer healthy, growing brands in 
+all three market segments: low, mid, and luxury. At the time, Swiss fi rms dominated the 
+luxury watch market with a 97 percent share. But the Swiss owned only 3 percent of 
+the middle market and were non-players in the low end, leaving the entire segment of 
+inexpensive timepieces to Asian rivals. 
+ 
+Launching a new brand at the bottom end was provocative and risky, and triggered 
+fears among investors that the move would cannibalize Tissot, SMH’s middle-market 
+brand. From a strategic point of view, Hayek’s vision meant nothing less than combining a high-end luxury business model with a low-cost business model under the same 
+roof, with all the attending confl icts and trade-offs. Nevertheless, Hayek insisted on this 
+three-tiered strategy, which triggered development of the Swatch, a new type of affordable Swiss watch priced starting at around U.S. $40. 
+ 
+The specifi cations for the new watch were demanding: inexpensive enough to 
+compete with Japanese offers yet providing Swiss quality, plus suffi cient margins and 
+the potential to anchor a larger product line. This forced engineers to entirely rethink 
+the very idea of a timepiece and its manufacture; they were essentially deprived of the 
+ability to apply their traditional watchmaking knowledge. 
+ 
+The result was a watch made with far fewer components. Manufacturing was highly 
+automated: molding replaced screws, direct labor costs were driven down to less than 
+10 percent, and the watches were produced in large quantities. Innovative guerrilla 
+marketing concepts were used to bring the watch to market under several different 
+designs. Hayek saw the new product communicating a lifestyle message, rather than just 
+telling time on the cheap. 
+ 
+Thus the Swatch was born: high quality at a low price, for a functional, fashionable 
+product. The rest is history. Fifty-fi ve million Swatches were sold in fi ve years, and in 
+2006 the company celebrated aggregate sales of over 333 million Swatches.
+ 
+SMH’s choice to implement the low end Swatch business model is particularly interesting in light of its potential impact on SMH’s higher end brands. Despite a completely 
+different organizational and brand culture, Swatch was launched under SMH and not as 
+a standalone entity. 
+ 
+SMH, though, was careful to give Swatch and all its other brands near-complete 
+autonomy regarding product and marketing decisions, while centralizing everything else. 
+Manufacturing, purchasing, and R&D were each regrouped under a single entity serving 
+all of SMH’s brands. Today, SMH maintains a strong vertical integration policy in order 
+to achieve scale and defend itself against Asian competitors.
+production & 
+quality control r&d hr, fi nance, etc.
+blancpain, 
+omega, longines, 
+rado tissot, certina, 
+hamilton, mido swatch, fl ik fl ak high end 
+and luxury 
+segment mid segment mass market manufacturing 
+plants brand portfolio watch sales VP CR CH CS KP KA KR R$
+C$
+SMH as 
+production 
+partner product design marketing & 
+communication trendy low-cost 
+lifestyle 
+(second) watch lifestyle 
+movement mass-market swatch design 
+swatch brand swatch shops retail lifestyle events guerrilla 
+marketing manufacturing payments to SMH marketing watch sales VP CR CH CS KP KA KR R$
+C$
+B<7XbeTacXRP[[hX]cTVaPcTSP]S
+centralized with respect to production, 
+R&D, sourcing and HR.
+
+4PRWB<7QaP]ST]Y^hbPdc^]^\h
+regarding product, design, and marketing 
+communication decisions.
+blancpain,
+omega, longines,
+rado high and lu seg gh end uxury gment tissot, certina,
+hamilton, mido mi segm CH eg mid gment segm swatch, fl ik fl ak mass m a
+market seg ts watch sal R$
+ts brand portfolio SMH Swatch SMH as production partner product design marketing & 
+communication trendy low-cost lifestyle
+(second) watch lifestyle movement mass-market swatch design swatch brand swatch shops retail lifestyle events guerrilla marketing manufacturing payments to SMH marketing watch sales VP CR CH CS KP KA KR R$
+C$
+centralized decentralized the nespresso success model Another ambidextrous organization is Nespresso, part of Nestlé, the world’s largest 
+food company with 2008 sales of approximately U.S. $101 billion.
+  Nespresso, which each year sells over U.S.$1.9 billion worth of single-serve 
+premium coffee for home consumption, offers a potent example of an ambidextrous 
+business model. In 1976, Eric Favre, a young researcher at a Nestlé research lab, fi led 
+his fi rst patent for the Nespresso system. At the time Nestlé dominated the huge 
+instant coffee market with its Nescafé brand, but was weak in the roast and ground 
+coffee segments. The Nespresso system was designed to bridge that gap with a dedicated espresso machine and pod system that could conveniently produce restaurantquality espresso. 
+ 
+An internal unit headed by Favre was set up to eliminate technical problems and 
+bring the system to market. After a short, unsuccessful attempt to enter the restaurant 
+market, in 1986 Nestlé created Nespresso SA, a wholly-owned subsidiary that would 
+start marketing the system to offi ces in support of another Nestlé joint venture with a 
+coffee machine manufacturer already active in the offi ce segment. Nespresso SA was 
+completely independent of Nescafé, Nestlé’s established coffee business. But by 1987 
+Nespresso’s sales had sagged far below expectations and it was kept alive only because 
+of its large remaining inventory of high-value coffee machines. 
+ 
+In 1988 Nestlé installed Jean-Paul Gaillard as the new CEO of Nespresso. Gaillard 
+completely overhauled the company’s business model with two drastic changes. First, 
+Nespresso shifted its focus from offi ces to high-income households and started selling coffee capsules directly by mail. Such a strategy was unheard of at Nestlé, which 
+traditionally focused on targeting mass markets through retail Channels (later on Nespresso would start selling online and build high-end retail stores at premium locations 
+such as the Champs-Élysées, as well as launch its own in-store boutiques in high-end 
+department stores). The model proved successful, and over the past decade Nespresso 
+has posted average annual growth rates exceeding of 35 percent. 
+ 
+Of particular interest is how Nespresso compares to Nescafé, Nestlé’s traditional 
+coffee business. Nescafé focuses on instant coffee sold to consumers indirectly through 
+mass-market retailers, while Nespresso concentrates on direct sales to affl uent consumers. Each approach requires completely different logistics, resources, and activities. Thanks to the different focus there was no risk of direct cannibalization. Yet, this 
+also meant little potential for synergy between the two businesses. The main confl ict 
+between Nescafé and Nespresso arose from the considerable time and resource drain 
+imposed on Nestlé’s coffee business until Nespresso fi nally became successful. The 
+organizational separation likely kept the Nespresso project from being cancelled during 
+hard times. 
+ 
+The story does not end there. In 2004 Nestlé aimed to introduce a new system, 
+complementary to the espresso-only Nespresso devices, that could also serve cappuccino and lattes. The question, of course, was with which business model and under 
+which brand should the system be launched? Or should a new company be created, as 
+with Nespresso? The technology was originally developed at Nespresso, but cappuccinos and lattes seemed more appropriate for the mid-tier mass market. Nestlé fi nally 
+decided to launch under a new brand, Nescafé Dolce Gusto, but with the product 
+completely integrated into Nescafé’s mass-market business model and organizational 
+structure. Dolce Gusto pods sell on retail shelves alongside Nescafé’s soluble coffee, 
+but also via the Internet—a tribute to Nespresso’s online success. 
+first patent 
+filed for 
+nespresso 
+system focus on 
+the office 
+market separate 
+company 
+created new ceo 
+overhauls 
+strategy nespresso 
+is launched 
+internationally first ad 
+campaigns 
+launched 
+george 
+clooney 
+retained 
+as spokesman for 
+nespresso focus on 
+internet 
+with web 
+site redesign 2000–2008 
+average 
+annual 
+growth of 
+over 35%
+retailers production marketing dolce gusto: 
+multi-beverage 
+machine & pods nescafé: quality 
+instant coffee retail online shop mass market manufacturing 
+plants brand portfolio retail marketing & sales production sales through retail 
+(lower margin)
+VP CR CH CS KP KA KR R$
+C$
+C$
+coffee machine 
+manufacturers marketing 
+production logistics high-end 
+restaurant 
+quality espresso 
+at home nespresso club households offi ce market distribution 
+channels patents on 
+system brand production 
+plants nespresso.com nespresso 
+boutiques call center retail (machines 
+only)
+mail order manufacturing 
+marketing distribution & Channels main revenues: capsules other: machines & accessories VP CR CH CS KA KP KR R$
+C$
+dolce gusto:
+multi-beverage machine & pods retail online shop nescafé: quality instant coffee retail Nescafé high-end
+(Nespresso)
+mid-tier
+(Dolce Gusto)
+mass-market
+(Nescafé)
+Nespresso coffee machine manufacturers marketing production logistics high-end restaurant quality espresso at home nespresso club households offi ce market distribution channels patents on system brand production plants nespresso.com nespresso boutiques call center retail (machines only)
+mail order manufacturing marketing distribution & Channels main revenues: capsules other: machines & accessories VP CR CH CS KA KP KR R$
+C$
+nestlé’s portfolio of 
+coffee business models m
+daimler’s car2go business model Our fi nal example is still emerging as of this writing. Car2go is a new concept in mobility 
+created by German vehicle manufacturer Daimler. Car2go provides an example of a business model innovation that complements the parent company’s core model of manufacturing, selling, and fi nancing vehicles ranging from luxury cars to trucks and buses. 
+   Daimler’s core business generates annual revenue exceeding U.S. $136 billion 
+through sales of more than two million vehicles. Car2go, on the other hand, is a 
+startup business offering city dwellers mobility on demand using a citywide fl eet 
+of smart cars (smart is Daimler’s smallest and lowest-priced vehicle brand). The 
+service is currently being tested in the German city of Ulm, one of Daimler’s key 
+operational bases. The business model was developed by Daimler’s Business Innovation 
+Department, which is tasked with developing new business ideas and supporting their 
+implementation. 
+ 
+Here’s how car2go works: a fl eet of smart “fortwo” two-person vehicles is made 
+available throughout the city, serving as a vehicle pool accessible by customers at any 
+time. Following a one-time registration process, customers can rent fortwo cars on the 
+spot (or reserve them in advance) then use them for as long as they like. Once a trip is 
+completed, the driver simply parks the car somewhere within the city limits. 
+ 
+Rentals cost the equivalent $0.27 per minute, all-inclusive, or $14.15 per hour with 
+a maximum of $70 per day. Customers pay monthly. The concept resembles popular 
+car-sharing companies such as Zipcar in North America and the U.K. Distinctive characteristics of car2go include freedom from the obligation to use an assigned parking 
+place, on-the-spot rental for as long as one likes, and a simple pricing structure. 
+Daimler launched car2go in response to the accelerating global trend toward urbanization, and saw the service as an intriguing complement to its core business. As a pure 
+service model, car2go naturally has completely different dynamics compared to Daimler’s traditional business, and revenues will likely remain comparatively small for some 
+years. But Daimler clearly has high hopes for car2go over the long term. 
+ 
+In the pilot phase, launched in October of 2008, 50 fortwo cars were made available to some 500 employees of the Daimler Research Center in Ulm. These 500, 
+plus 200 family members, participated as initial customers. The aim was to test the 
+technical systems, gather data on user acceptance and behavior, and give the service 
+an overall “road test.” In February 2009, the pilot was extended to include employees 
+of Mercedes-Benz sales and service outlets and other Daimler subsidiaries, with the 
+number of vehicles increased to 100. At the end of March, a public test was initiated 
+with 200 vehicles and car2go was made available to all 120,000 of Ulm’s residents 
+and visitors. 
+ 
+At the same time, Daimler announced a U.S. pilot in Austin, Texas, a city with 
+750,000 residents. As in the fi rst phase of the German test, car2go will begin with a 
+limited user group, such as city employees, then be opened to the public. These pilots 
+can be seen as prototypes of a business model (see p. 160). Now, car2go’s business 
+model prototype is being fi xed into organizational form. 
+ 
+As of this writing, Daimler had not yet decided whether to internalize car2go or spin 
+it off as a separate company. Daimler chose to start with business model design, then 
+test the concept in the fi eld, and defer decisions regarding organizational structure until 
+it could assess car2go’s relationship to its long-established core business. 
+concept 
+development internal 
+pilot extended internal pilot ulm 
+public pilot austin 
+internal pilot austin 
+public pilot which 
+organizational 
+form?
+Market introduction of car2go car parts 
+manufacturers manufacturing design cars, trucks, 
+vans, buses, 
+fi nancial 
+services 
+(e.g. mercedes 
+brands)
+mainly high-end 
+brands mass market vehicle plants intellectual 
+property brands dealers sales force marketing & sales manufacturing r&d vehicle sales vehicle fi nancing VP CR CH CS KP KA KR R$
+C$
+C$
+city 
+management fl eet 
+management telematics 
+management cleaning individual urban 
+mobility without 
+car ownership one-off sign-up city dwellers service team telematic 
+systems smart fortwo 
+car fl eet car2go.com mobile phone car2go parking 
+lots car2go shops pick-up/drop-off 
+anywhere systems management fl eet management pay per minute—$0.27
+(all inclusive)
+VP CR CH CS KA KP KR R$
+C$
+Daimler car2go car parts manufacturers manufacturing design cars, trucks,
+vans, buses,
+fi nancial 
+services
+(e.g. mercedes brands)
+mainly high-end brands mass market vehicle plants intellectual property brands dealers sales force marketing & sales manufacturing r&d vehicle sales vehicle fi nancing VP CR CH CS KP KA KR R$
+C$
+Daimler’s phased approach 
+to business model innovation:
+Phase 1: Business model design within 
+Daimler Innovation Department Phase 2: Field test of the concept run 
+by Daimler Innovation Phase 3: Decision on organizational 
+structure of new business model 
+(integration versus separation) vis-à-vis 
+relationship to established core business city management fl eet 
+management telematics management cleaning individual urban mobility without car ownership one-off sign-up city dwellers service team telematic systems smart fortwo car fl eet car2go.com mobile phone car2go parking lots car2go shops pick-up/drop-off anywhere systems management fl eet management pay per minute—$0.27
+(all inclusive)
+VP CR CH CS KA KP KR R$
+C$
+
+improve
+
+invent
+
+Pro

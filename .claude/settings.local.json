@@ -3,7 +3,8 @@
     "allow": [
       "Bash(node *)",
       "Bash(pnpm typecheck *)",
-      "Bash(pnpm --filter @pingarden/web build)"
+      "Bash(pnpm --filter @pingarden/web build)",
+      "Bash(codesign -dv --verbose=4 /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/apps/desktop/build/mac-arm64/PinGarden.app)"
     ]
   }
 }

@@ -7,6 +7,8 @@ new bubbles into the picture so the company always has a next act.
 
 ## The two portfolios
 
+![The Portfolio Map template — Explore (bottom-left) and Exploit (top-right) with their respective axes. Source: *The Invincible Company*](assets/pm-template.png)
+
 ### Exploit (top-right block)
 
 What you already run.
@@ -37,6 +39,8 @@ A healthy Explore portfolio looks like a funnel — many cheap, small
 bubbles on the left (early experiments), fewer larger ones in the
 middle, a small number of well-tested bubbles approaching graduation on
 the right.
+
+![Potential Steps in the Exploration Journey — four quadrants based on expected return and innovation risk. Source: *The Invincible Company*](assets/pm-exploration-journey.png)
 
 ## The actions on each side
 
@@ -93,6 +97,8 @@ quarter:
 - **Bubbles that never move.** Either the team isn't running real
   experiments (Explore) or isn't tracking disruption signals (Exploit).
   Static maps are unread maps.
+
+![The Innovation Journey — from chaotic exploration to clear exploitation. Source: *The Invincible Company*](assets/pm-innovation-journey.png)
 - **Treating bubble size as ego.** Bubbles should encode something
   decision-relevant — invested capital, head-count, expected revenue —
   not "how much our team likes this idea."

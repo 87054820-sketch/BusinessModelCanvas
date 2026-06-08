@@ -72,14 +72,16 @@ pnpm --filter @pingarden/desktop run dist
 
 DMG_PATH="$(find apps/desktop/build -maxdepth 1 -type f -name '*.dmg' | sort | tail -n 1)"
 [ -n "$DMG_PATH" ] || fail "DMG was not generated under apps/desktop/build"
-require_dir "apps/desktop/build/mac/PinGarden.app"
+if [ ! -d "apps/desktop/build/mac/PinGarden.app" ] && [ ! -d "apps/desktop/build/mac-arm64/PinGarden.app" ]; then
+  fail "Missing required directory: apps/desktop/build/mac/PinGarden.app (or mac-arm64)"
+fi
 
 cat <<EOF
 
 ✓ PinGarden macOS package is ready
 
   DMG:  $ROOT/$DMG_PATH
-  App:  $ROOT/apps/desktop/build/mac/PinGarden.app
+  App:  $ROOT/apps/desktop/build/mac-arm64/PinGarden.app (or build/mac/PinGarden.app)
   Logs: ~/Library/Application Support/PinGarden/logs/server.log
 
 Use this script, or root \`pnpm dist\`, as the canonical packaging path.

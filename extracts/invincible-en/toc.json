@@ -1,0 +1,907 @@
+[
+  {
+    "level": 1,
+    "title": "The Invincible Company",
+    "page": 3
+  },
+  {
+    "level": 1,
+    "title": "From Business Model Generation to Invincible Company",
+    "page": 12
+  },
+  {
+    "level": 1,
+    "title": "How to Read This Book",
+    "page": 14
+  },
+  {
+    "level": 1,
+    "title": "Contents",
+    "page": 16
+  },
+  {
+    "level": 1,
+    "title": "Chapter 1: Tool",
+    "page": 18
+  },
+  {
+    "level": 2,
+    "title": "Business Model Portfolio",
+    "page": 20
+  },
+  {
+    "level": 3,
+    "title": "The Explore/Exploit Continuum",
+    "page": 26
+  },
+  {
+    "level": 3,
+    "title": "The Portfolio Map",
+    "page": 28
+  },
+  {
+    "level": 3,
+    "title": "Portfolio Management",
+    "page": 30
+  },
+  {
+    "level": 2,
+    "title": "Explore",
+    "page": 32
+  },
+  {
+    "level": 3,
+    "title": "Five Innovation Journey Myths",
+    "page": 35
+  },
+  {
+    "level": 3,
+    "title": "Expected Return and Innovation Risk",
+    "page": 37
+  },
+  {
+    "level": 3,
+    "title": "Search and Pivot",
+    "page": 39
+  },
+  {
+    "level": 3,
+    "title": "Explore Actions",
+    "page": 41
+  },
+  {
+    "level": 3,
+    "title": "Bosch",
+    "page": 43
+  },
+  {
+    "level": 2,
+    "title": "Exploit",
+    "page": 45
+  },
+  {
+    "level": 3,
+    "title": "Return and Death and Disruption Risk",
+    "page": 46
+  },
+  {
+    "level": 3,
+    "title": "Growth and Decline Trajectories",
+    "page": 48
+  },
+  {
+    "level": 3,
+    "title": "Exploit Actions",
+    "page": 50
+  },
+  {
+    "level": 3,
+    "title": "Nestlé",
+    "page": 52
+  },
+  {
+    "level": 2,
+    "title": "Explore and Exploit",
+    "page": 55
+  },
+  {
+    "level": 3,
+    "title": "Types of Innovation",
+    "page": 56
+  },
+  {
+    "level": 3,
+    "title": "Gore",
+    "page": 58
+  },
+  {
+    "level": 3,
+    "title": "Using the Portfolio Map",
+    "page": 60
+  },
+  {
+    "level": 1,
+    "title": "Chapter 2: Manage",
+    "page": 64
+  },
+  {
+    "level": 2,
+    "title": "Manage Your Portfolio",
+    "page": 66
+  },
+  {
+    "level": 3,
+    "title": "Guidance",
+    "page": 68
+  },
+  {
+    "level": 3,
+    "title": "Portfolio Funnel Quiz",
+    "page": 70
+  },
+  {
+    "level": 3,
+    "title": "You Can’t Pick the Winner",
+    "page": 72
+  },
+  {
+    "level": 3,
+    "title": "Smaller Outcome, Fewer Bets",
+    "page": 74
+  },
+  {
+    "level": 3,
+    "title": "Amazon",
+    "page": 78
+  },
+  {
+    "level": 3,
+    "title": "Ping An",
+    "page": 80
+  },
+  {
+    "level": 3,
+    "title": "Business R&D",
+    "page": 84
+  },
+  {
+    "level": 3,
+    "title": "Guidance",
+    "page": 86
+  },
+  {
+    "level": 2,
+    "title": "Explore",
+    "page": 88
+  },
+  {
+    "level": 3,
+    "title": "Exploration Portfolio",
+    "page": 90
+  },
+  {
+    "level": 3,
+    "title": "Business Model Design Performance",
+    "page": 92
+  },
+  {
+    "level": 3,
+    "title": "Design–Test",
+    "page": 94
+  },
+  {
+    "level": 3,
+    "title": "The Business Model Canvas",
+    "page": 96
+  },
+  {
+    "level": 3,
+    "title": "Hypothesize",
+    "page": 98
+  },
+  {
+    "level": 3,
+    "title": "Experiment",
+    "page": 100
+  },
+  {
+    "level": 3,
+    "title": "Learn",
+    "page": 102
+  },
+  {
+    "level": 3,
+    "title": "Innovation Metrics",
+    "page": 106
+  },
+  {
+    "level": 3,
+    "title": "Hypothesis Level",
+    "page": 108
+  },
+  {
+    "level": 3,
+    "title": "Business Model Level",
+    "page": 110
+  },
+  {
+    "level": 3,
+    "title": "Portfolio Level",
+    "page": 112
+  },
+  {
+    "level": 3,
+    "title": "Decisions and Actions",
+    "page": 114
+  },
+  {
+    "level": 3,
+    "title": "Project Scorecard",
+    "page": 116
+  },
+  {
+    "level": 3,
+    "title": "From Risk Assessment to Action",
+    "page": 118
+  },
+  {
+    "level": 3,
+    "title": "Invest Like a Venture Capitalist",
+    "page": 120
+  },
+  {
+    "level": 3,
+    "title": "Growth and Innovation Investment Committee",
+    "page": 122
+  },
+  {
+    "level": 3,
+    "title": "Metered Funding",
+    "page": 123
+  },
+  {
+    "level": 3,
+    "title": "Sony Startup Acceleration Program",
+    "page": 124
+  },
+  {
+    "level": 2,
+    "title": "Exploit",
+    "page": 127
+  },
+  {
+    "level": 3,
+    "title": "Performance Assessment",
+    "page": 128
+  },
+  {
+    "level": 3,
+    "title": "Trend Assessment",
+    "page": 130
+  },
+  {
+    "level": 3,
+    "title": "From Risk Assessment to Action",
+    "page": 132
+  },
+  {
+    "level": 3,
+    "title": "Microsoft",
+    "page": 134
+  },
+  {
+    "level": 3,
+    "title": "Unilever",
+    "page": 136
+  },
+  {
+    "level": 3,
+    "title": "Logitech",
+    "page": 138
+  },
+  {
+    "level": 3,
+    "title": "FUJIFILM Holdings",
+    "page": 140
+  },
+  {
+    "level": 3,
+    "title": "Business Model Shifts",
+    "page": 142
+  },
+  {
+    "level": 1,
+    "title": "Chapter 3: Invent Pattern Library",
+    "page": 154
+  },
+  {
+    "level": 2,
+    "title": "Frontstage Disruption",
+    "page": 160
+  },
+  {
+    "level": 3,
+    "title": "Market Explorers",
+    "page": 162
+  },
+  {
+    "level": 3,
+    "title": "Tesla Motors",
+    "page": 164
+  },
+  {
+    "level": 3,
+    "title": "M-Pesa",
+    "page": 166
+  },
+  {
+    "level": 3,
+    "title": "Sears, Roebuck and Co.",
+    "page": 167
+  },
+  {
+    "level": 3,
+    "title": "Channel Kings",
+    "page": 168
+  },
+  {
+    "level": 3,
+    "title": "Dollar Shave Club",
+    "page": 170
+  },
+  {
+    "level": 3,
+    "title": "Tupperware",
+    "page": 172
+  },
+  {
+    "level": 3,
+    "title": "Gravity Creators",
+    "page": 174
+  },
+  {
+    "level": 3,
+    "title": "Microsoft Windows",
+    "page": 176
+  },
+  {
+    "level": 3,
+    "title": "Microsoft Xbox",
+    "page": 177
+  },
+  {
+    "level": 2,
+    "title": "Backstage Disruption",
+    "page": 180
+  },
+  {
+    "level": 3,
+    "title": "Resource Castles",
+    "page": 182
+  },
+  {
+    "level": 3,
+    "title": "Waze",
+    "page": 184
+  },
+  {
+    "level": 3,
+    "title": "DiDi",
+    "page": 186
+  },
+  {
+    "level": 3,
+    "title": "Dyson",
+    "page": 188
+  },
+  {
+    "level": 3,
+    "title": "Wedgwood",
+    "page": 189
+  },
+  {
+    "level": 3,
+    "title": "Activity Differentiators",
+    "page": 190
+  },
+  {
+    "level": 3,
+    "title": "Ford Model T",
+    "page": 192
+  },
+  {
+    "level": 3,
+    "title": "Zara",
+    "page": 193
+  },
+  {
+    "level": 3,
+    "title": "Patagonia",
+    "page": 194
+  },
+  {
+    "level": 3,
+    "title": "Dell Computers",
+    "page": 195
+  },
+  {
+    "level": 3,
+    "title": "Scalers",
+    "page": 196
+  },
+  {
+    "level": 3,
+    "title": "IKEA",
+    "page": 198
+  },
+  {
+    "level": 3,
+    "title": "ARM",
+    "page": 200
+  },
+  {
+    "level": 3,
+    "title": "Harper",
+    "page": 202
+  },
+  {
+    "level": 2,
+    "title": "Profit Formula Disruption",
+    "page": 206
+  },
+  {
+    "level": 3,
+    "title": "Revenue Differentiators",
+    "page": 208
+  },
+  {
+    "level": 3,
+    "title": "Xerox",
+    "page": 210
+  },
+  {
+    "level": 3,
+    "title": "Kodak",
+    "page": 212
+  },
+  {
+    "level": 3,
+    "title": "Spotify",
+    "page": 214
+  },
+  {
+    "level": 3,
+    "title": "Fortnite",
+    "page": 215
+  },
+  {
+    "level": 3,
+    "title": "Cost Differentiators",
+    "page": 216
+  },
+  {
+    "level": 3,
+    "title": "Airbnb",
+    "page": 218
+  },
+  {
+    "level": 3,
+    "title": "WhatsApp",
+    "page": 220
+  },
+  {
+    "level": 3,
+    "title": "easyJet",
+    "page": 221
+  },
+  {
+    "level": 3,
+    "title": "Margin Masters",
+    "page": 222
+  },
+  {
+    "level": 3,
+    "title": "citizenM",
+    "page": 224
+  },
+  {
+    "level": 3,
+    "title": "iPhone",
+    "page": 226
+  },
+  {
+    "level": 2,
+    "title": "Assessment Questions for Leaders",
+    "page": 230
+  },
+  {
+    "level": 3,
+    "title": "CitizenM",
+    "page": 232
+  },
+  {
+    "level": 3,
+    "title": "OneConnect",
+    "page": 234
+  },
+  {
+    "level": 3,
+    "title": "Salesforce",
+    "page": 236
+  },
+  {
+    "level": 1,
+    "title": "Chapter 4: Improve Pattern Library",
+    "page": 240
+  },
+  {
+    "level": 2,
+    "title": "Business Model Shifts",
+    "page": 242
+  },
+  {
+    "level": 2,
+    "title": "Shift Pattern Library",
+    "page": 244
+  },
+  {
+    "level": 2,
+    "title": "Shift Patterns",
+    "page": 246
+  },
+  {
+    "level": 2,
+    "title": "Value Proposition Shifts",
+    "page": 248
+  },
+  {
+    "level": 3,
+    "title": "From Product to Recurring Service",
+    "page": 249
+  },
+  {
+    "level": 3,
+    "title": "Hilti",
+    "page": 250
+  },
+  {
+    "level": 3,
+    "title": "From Low Tech to High Tech",
+    "page": 252
+  },
+  {
+    "level": 3,
+    "title": "From Sales to Platform",
+    "page": 253
+  },
+  {
+    "level": 3,
+    "title": "Netflix",
+    "page": 254
+  },
+  {
+    "level": 3,
+    "title": "The App Store",
+    "page": 256
+  },
+  {
+    "level": 3,
+    "title": "Nintendo Wii",
+    "page": 258
+  },
+  {
+    "level": 3,
+    "title": "Amazon Private Label",
+    "page": 259
+  },
+  {
+    "level": 2,
+    "title": "Frontstage Driven Shifts",
+    "page": 260
+  },
+  {
+    "level": 3,
+    "title": "From Niche Market to Mass Market",
+    "page": 261
+  },
+  {
+    "level": 3,
+    "title": "TED",
+    "page": 262
+  },
+  {
+    "level": 3,
+    "title": "From B2B to B2(B2)C",
+    "page": 264
+  },
+  {
+    "level": 3,
+    "title": "From Low Touch to High Touch",
+    "page": 265
+  },
+  {
+    "level": 3,
+    "title": "Intel Inside",
+    "page": 266
+  },
+  {
+    "level": 3,
+    "title": "Apple Genius Bar",
+    "page": 268
+  },
+  {
+    "level": 3,
+    "title": "Direct to Consumer Trend",
+    "page": 270
+  },
+  {
+    "level": 3,
+    "title": "Rise of Niche",
+    "page": 271
+  },
+  {
+    "level": 2,
+    "title": "Backstage Driven Shifts",
+    "page": 272
+  },
+  {
+    "level": 3,
+    "title": "From Dedicated Resources to Multi-Usage Resources",
+    "page": 273
+  },
+  {
+    "level": 3,
+    "title": "Fujifilm",
+    "page": 274
+  },
+  {
+    "level": 3,
+    "title": "From Asset Heavy to Asset Light",
+    "page": 276
+  },
+  {
+    "level": 3,
+    "title": "From Closed to Open (Innovation)",
+    "page": 277
+  },
+  {
+    "level": 3,
+    "title": "Bharti Airtel",
+    "page": 278
+  },
+  {
+    "level": 3,
+    "title": "Microsoft",
+    "page": 280
+  },
+  {
+    "level": 3,
+    "title": "Big Data Trends: 23andMe",
+    "page": 282
+  },
+  {
+    "level": 3,
+    "title": "Disney Parks & Resorts",
+    "page": 283
+  },
+  {
+    "level": 2,
+    "title": "Profit Formula Driven Shifts",
+    "page": 284
+  },
+  {
+    "level": 3,
+    "title": "From High Cost to Low Cost",
+    "page": 285
+  },
+  {
+    "level": 3,
+    "title": "Dow Corning Xiameter",
+    "page": 286
+  },
+  {
+    "level": 3,
+    "title": "From Transactional to Recurring Revenue",
+    "page": 288
+  },
+  {
+    "level": 3,
+    "title": "From Conventional to Contrarian",
+    "page": 289
+  },
+  {
+    "level": 3,
+    "title": "Adobe",
+    "page": 290
+  },
+  {
+    "level": 3,
+    "title": "Apple iMac",
+    "page": 292
+  },
+  {
+    "level": 3,
+    "title": "Ørsted",
+    "page": 294
+  },
+  {
+    "level": 3,
+    "title": "Rolls-Royce",
+    "page": 296
+  },
+  {
+    "level": 3,
+    "title": "The Washington Post",
+    "page": 296
+  },
+  {
+    "level": 3,
+    "title": "GORE-TEX",
+    "page": 297
+  },
+  {
+    "level": 3,
+    "title": "Delta Airlines",
+    "page": 297
+  },
+  {
+    "level": 2,
+    "title": "Questions for Leaders",
+    "page": 298
+  },
+  {
+    "level": 3,
+    "title": "Invincible Companies Transcend Industry Boundaries",
+    "page": 300
+  },
+  {
+    "level": 1,
+    "title": "Chapter 5: Culture",
+    "page": 302
+  },
+  {
+    "level": 2,
+    "title": "Design Your Culture",
+    "page": 304
+  },
+  {
+    "level": 3,
+    "title": "Cultivate Explore and Exploit Under One Roof",
+    "page": 308
+  },
+  {
+    "level": 3,
+    "title": "How It Fits Together",
+    "page": 310
+  },
+  {
+    "level": 3,
+    "title": "The Culture Map",
+    "page": 314
+  },
+  {
+    "level": 3,
+    "title": "Amazon’s Innovation Culture",
+    "page": 320
+  },
+  {
+    "level": 3,
+    "title": "Amazon",
+    "page": 322
+  },
+  {
+    "level": 3,
+    "title": "Applying the Culture Map",
+    "page": 324
+  },
+  {
+    "level": 2,
+    "title": "Designing an Exploration Culture",
+    "page": 326
+  },
+  {
+    "level": 3,
+    "title": "Innovation Behaviors and Outcomes",
+    "page": 328
+  },
+  {
+    "level": 3,
+    "title": "Innovation Culture Blockers",
+    "page": 330
+  },
+  {
+    "level": 3,
+    "title": "Innovation Culture Assessment",
+    "page": 332
+  },
+  {
+    "level": 3,
+    "title": "Leadership Support",
+    "page": 334
+  },
+  {
+    "level": 3,
+    "title": "Organizational Design",
+    "page": 338
+  },
+  {
+    "level": 3,
+    "title": "Legitimacy, Power, and Bridge to the Core",
+    "page": 340
+  },
+  {
+    "level": 3,
+    "title": "Chief Entrepreneur Head Hunting",
+    "page": 342
+  },
+  {
+    "level": 3,
+    "title": "Where Does Innovation Live?",
+    "page": 344
+  },
+  {
+    "level": 3,
+    "title": "Rewards and Incentives",
+    "page": 346
+  },
+  {
+    "level": 3,
+    "title": "Innovation Practice",
+    "page": 350
+  },
+  {
+    "level": 3,
+    "title": "Innovation Tools and Process",
+    "page": 352
+  },
+  {
+    "level": 3,
+    "title": "Skills Development",
+    "page": 354
+  },
+  {
+    "level": 3,
+    "title": "Entrepreneurial Leadership and Team",
+    "page": 356
+  },
+  {
+    "level": 3,
+    "title": "Innovation Culture Readiness",
+    "page": 362
+  },
+  {
+    "level": 1,
+    "title": "Glossary",
+    "page": 366
+  },
+  {
+    "level": 1,
+    "title": "Notes",
+    "page": 369
+  },
+  {
+    "level": 1,
+    "title": "Image Credits",
+    "page": 380
+  },
+  {
+    "level": 1,
+    "title": "Index",
+    "page": 382
+  },
+  {
+    "level": 1,
+    "title": "Acknowledgments",
+    "page": 393
+  },
+  {
+    "level": 1,
+    "title": "About the Author",
+    "page": 394
+  },
+  {
+    "level": 1,
+    "title": "Advert",
+    "page": 396
+  }
+]

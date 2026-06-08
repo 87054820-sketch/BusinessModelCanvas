@@ -1,0 +1,606 @@
+# Outlook
+
+We hope we’ve shown you how visionaries, game changers, and  
+challengers can tackle the vital issue of business models. We hope  
+we’ve provided you with the language, the tools and techniques, and  
+the dynamic approach needed to design innovative and competitive  
+new models. But much remains to be said. So here we touch on ﬁve  
+topics, each of which might well merit its own book. 
+The ﬁrst examines business models beyond proﬁt: how the Canvas can 
+drive business model innovation in the public and non-proﬁt sectors.  
+The second suggests how computer-aided business model design might 
+leverage the paper-based approach and allow for complex manipulation 
+of business model elements. The third discusses the relationship between 
+business models and business plans. The fourth addresses issues that 
+arise when implementing business models in either new or existing  
+organizations. The ﬁnal topic examines how to better achieve business 
+model and IT alignment.
+
+
+264
+MG
+:I
+:?
+:J
+R$
+Beyond-Proﬁt Business Models
+The application of the Canvas is in no way limited to for-proﬁt cor-
+porations. You can easily apply the technique to non-proﬁt organiza-
+tions, charities, public sector entities, and for-proﬁt social ventures. 
+ 
+Every organization has a business model, even if the word “busi-
+ness” is not used as a descriptor. To survive, every organization that 
+creates and delivers value must generate enough revenue to cover its 
+expenses. Hence it has a business model. The difference is merely a 
+matter of focus: the for-proﬁt business’s goal is to maximize earnings, 
+while the organizations discussed in the following pages have strong 
+non-ﬁnancial missions focused on ecology, social causes, and public 
+service mandates. We ﬁnd useful entrepreneur Tim Clark's suggestion 
+that the term “enterprise model” be applied to such organizations.
+ 
+We distinguish between two categories of beyond-proﬁt models: 
+third-party funded enterprise models (e.g. philanthropy, charities, 
+government) and so-called triple bottom line business models with a 
+strong ecological and/or social mission (“triple bottom line” refers to 
+the practice of accounting for environmental and social, as well as ﬁnan-
+cial, costs). It is mainly the source of revenue that distinguishes these 
+two, but as a direct consequence they have two very different business 
+model patterns and drivers. Many organizations are experimenting 
+with blending the two models in order to exploit the best of both.
+Third-Party Funded Models
+In this type of enterprise model, the product or service recipient is 
+not the payer. Products and services are paid for by a third party, 
+which might be a donor or the public sector. The third party pays the 
+organization to fulﬁll a mission, which may be of a social, ecological, 
+or public service nature. For example, government (and indirectly, 
+taxpayers) pays schools to deliver education services. Likewise, 
+donors to Oxfam, a large U.K. non-proﬁt organization, help ﬁnance 
+its efforts to end poverty and social injustice. Third parties rarely 
+expect to receive direct economic beneﬁts from the exchange, unlike  
+advertisers—who are players in for-proﬁt business models which 
+also feature third party ﬁnancing. 
+ 
+One risk of the third-party enterprise model is that value creation 
+incentives can become misaligned. The third-party ﬁnancer becomes 
+the main “customer,” so to speak, while the recipient becomes a 
+mere receiver. Since the very existence of the enterprise depends on 
+contributions, the incentive to create value for donors may be stron-
+ger than the incentive to create value for recipients. 
+ 
+All this is not to say that third-party funded enterprise models 
+are bad and recipient-funded business models are good. Conven-
+tional businesslike selling of products and services doesn’t always 
+work: education, healthcare, and utility services are clear examples. 
+There are no simple answers to the questions raised by third-party 
+ﬁnanced enterprise models and the resulting risks of misaligned 
+incentives. We must explore which models make sense, then strive 
+to design optimal solutions.
+mission
+product or 
+service
+“donor”
+“recipient”
+free
+donation
+
+
+265
+Solving the big issues of 
+our generation requires 
+bold new business models
+Triple Bottom Line Business Models
+Earlier we shared the story of how Iqbal Quadir, an investment 
+banker in New York, set out to build Grameenphone. His goal was to 
+provide universal access to telecommunications services in remote, 
+rural areas of his home country of Bangladesh. He achieved his aim 
+with a for-proﬁt model that had a profound, positive impact on rural 
+Bangladesh. Grameenphone eventually provided over 200,000 
+women in rural areas with income-earning opportunities, raised their 
+social status, connected 60,000 villages to a mobile phone network, 
+reached 100 million people, turned a proﬁt, and became the Bangla-
+deshi government’s biggest taxpayer. 
+ 
+To accommodate triple bottom line business models, we can 
+extend the Canvas with Blocks illustrating two outcomes: (1) the 
+social and environmental costs of a business model (i.e. its negative 
+impact), and (2) the social and environmental beneﬁts of a business 
+model (i.e. its positive impact). Just as earnings are increased by 
+minimizing ﬁnancial costs and maximizing income, the triple bottom 
+line model seeks to minimize negative social and environmental 
+impacts and maximize the positive. 
+Villagers in Bangladesh were too poor 
+to afford phones, so Grameenphone 
+partnered with Grameen Bank, the 
+microﬁnance institution, to provide local 
+women with microloans to purchase 
+mobile phones. The women sold calling 
+services in their villages, repaid the loans, 
+earned income, and thereby improved 
+their social status.
+Grameenphone went beyond establishing 
+near universal access to telephone service 
+and earning a proﬁt. It also had substan-
+tial social impact by providing “village 
+phone ladies” with earning opportunities 
+and improved social status. 
+grameen bank
+network 
+consortium 
+(telenor)
+manage 
+network
+ 
+income  
+opportunity
+mobile  
+communication
+village phone 
+ladies
+villagers
+network
+grameen bank
+village phone 
+ladies
+network
+communication income
+MG
+:I
+:?
+:J
+BG
+KA
+KR
+R$
+:
+social and environmental costs
+social and environmental beneﬁts
+“universal access”
+income for women and  
+better social status
+
+
+Prototype of a computer aided business 
+model editor: www.bmdesigner.com 
+266
+Computer-Aided Business Model Design
+Mike, a senior business analyst with a large ﬁnancial group, wraps up 
+the ﬁrst of a two-day workshop he is facilitating with a group of 24 
+executives. He collects the business model prototypes and ideas that 
+participants sketched on large Canvas posters and hurries to his ofﬁce. 
+ 
+There, Mike and his team enter the ideas into a collaborative  
+computer-aided business model design program to further develop 
+the prototypes. Other business analysts working overseas add 
+resource and activity cost estimates, as well as calculations of 
+potential Revenue Streams. The software then spits out four dif-
+ferent ﬁnancial scenarios, with business model data and prototype 
+diagrams for each plotted on large posters. The following morning 
+Mike presents the results to the executives, who have gathered for 
+the second day of their workshop to discuss the potential risks and 
+rewards of each prototype.
+ 
+This scenario doesn’t yet describe reality, but it soon will. A 
+Business Model Canvas printed on a large poster and a big box of 
+Post-it™ notes are still the best tools for triggering creativity and 
+generating innovative business model ideas. But this paper-based 
+approach could be extended with the help of computers.
+ 
+Turning a prototype business model into a spreadsheet is time-
+consuming, and each change to the prototype usually requires a 
+manual modiﬁcation of the spreadsheet. A computer-aided system 
+could do this automatically and make possible lightning-quick, 
+comprehensive business model simulations. Furthermore, computer 
+support could make creating, storing, manipulating, tracking, and 
+communicating business models far easier. Such support would 
+seem to be almost a requirement for collaboratively working on busi-
+ness models with geographically disparate teams. 
+ 
+Doesn’t it seem strange that we can design, simulate, and 
+build airplanes or develop software across continents, yet we can’t 
+manipulate highly valuable business models outside of the board-
+room and without paper and pencil? It’s time to bring the speed and 
+power of microprocessors to the development and management of 
+new business models. Inventing innovative business models certainly 
+requires human creativity, but computer-aided systems could help us 
+manipulate business models in more sophisticated and complex ways.
+ 
+An example from the ﬁeld of architecture is helpful in illustrat-
+ing the power of computer-aided design. In the 1980s so-called 
+Computer-Aided Design (CAD) systems started becoming more 
+affordable and slowly were adopted by architectural ﬁrms. CAD 
+made it much easier and cheaper for architects to create three-
+dimensional models and prototypes. They brought speed, integration, 
+improved collaboration, simulation, and better planning to architec-
+ture practices, Cumbersome manual tasks, such as constant redraw-
+ing and blueprint sharing, were eliminated, and a whole new world 
+of opportunity, such as rapid visual 3D exploration and prototyping, 
+opened up. Today paper-based sketching and CAD happily co-exist, 
+each method retaining its own strengths and weaknesses. 
+
+
+267
+In the realm of business models, too, computer-aided systems 
+could make many tasks easier and quicker, while revealing as-yet 
+unseen opportunity. At the least, CAD systems could help visual-
+ize, store, manipulate, track, annotate, and communicate business 
+models. More complex functions would involve manipulating layers 
+or business model versions, or moving business model elements 
+dynamically and evaluating the impact in real-time. Sophisticated 
+systems might facilitate business model critiquing, provide a reposi-
+Paper-based
+ Paper or poster-based Canvases can be easily created  
+and used just about anywhere 
+ Paper and poster-based Canvases impose few barriers: 
+no need to learn a speciﬁc computer application
+ Very intuitive and engaging in group settings
+ Fosters creativity, spurs ideation when used on large surfaces 
+ Napkin sketches to draw, understand, or explain  
+business models
+ Collaborative brainstorming sessions to develop  
+business model ideas
+ Collaborative assessment of business models
+Computer-aided
+Easy to create, store, manipulate, and track business models 
+ Enable remote collaboration 
+ Quick, comprehensive ﬁnancial, other simulations 
+ Provide business model design guidance (critiquing  
+systems, business model database, pattern ideas,  
+control mechanisms) 
+ Collaborative business model design with remote teams
+ Complex manipulations of business models (navigation, 
+business model layers, merging models)
+ Deep, comprehensive analysis 
+Advantages
+Applications
+tory of business model patterns and off-the-shelf building blocks, 
+enable distributed business model development and management, 
+simulate models, or integrate with other enterprise systems (e.g.  
+ERP or business process management). 
+ 
+Computer-aided business model design systems will likely evolve 
+in step with interface improvements. Manipulating business models 
+on wall-sized touch screens would bring computer-aided design 
+closer to the intuitive paper-based approach and improve usability. 
+
+
+268
+Business Models and Business Plans
+The purpose of a business plan is to describe and communicate a 
+for-proﬁt or non-proﬁt project and how it can be implemented, either 
+inside or outside an organization. The motivation behind the busi-
+ness plan may be to “sell” a project, either to potential investors or 
+internal organizational stakeholders. A business plan may also serve 
+as an implementation guide. 
+ 
+In fact, the work you may have done designing and thinking 
+through your own business model is the perfect basis for writing a 
+strong business plan. We suggest giving business plans a ﬁve-section 
+structure: The Team, The Business Model, Financial Analysis, Exter-
+nal Environment, Implementation Roadmap, and Risk Analysis. 
+The Team
+One business plan element that venture capitalists particularly 
+emphasize is the management team. Is the team experienced, knowl-
+edgeable, and connected enough to accomplish what they propose? 
+Do the members have successful track records? Highlight why your 
+team is the right one to successfully build and execute the business 
+model you propose. 
+The Business Model
+This section showcases the attractiveness of the business model. 
+Use the Canvas to provide readers with an immediate visual portrait 
+of your model. Ideally, illustrate the elements with drawings. Then, 
+describe the Value Proposition, show evidence of customer need, 
+and explain how you will reach the market. Use stories. Highlight the 
+attractiveness of your target segments to pique the reader’s interest. 
+Finally, describe the Key Resources and Activities needed to build 
+and execute the business model. 
+Financial Analysis
+This is traditionally an important business plan component that 
+attracts much attention. You can make pro forma calculations based 
+on your Canvas Building Blocks and estimate how many customers 
+can be acquired. Include elements such as breakeven analysis, sales 
+scenarios, and operating costs. The Canvas can also help with capital 
+spending calculations and other implementation cost estimates. 
+Total cost, revenue, and cash ﬂow projections determine your fund-
+ing requirements.
+External Environment
+This section of the business plan describes how your business model is 
+positioned with respect to the external environment. The four external 
+forces covered earlier (see p. 201) provide the basis for this descrip-
+tion. Summarize your business model’s competitive advantages. 
+Implementation Roadmap
+This section shows the reader what it will take to implement your 
+business model and how you will do it. Include a summary of all 
+projects and the overarching milestones. Outline the implementation 
+agenda with a project roadmap that includes Gantt charts. Projects 
+can be derived directly from your Canvas.
+Risk Analysis
+In closing, describe limiting factors and obstacles, as well as critical 
+success factors. These can be derived from a SWOT analysis of your 
+business model (see p. 216).
+
+
+269
+BUSINESS PLAN 
+executive summary 
+the team
+ Management Proﬁle
+ Why We Are a Winning Team
+the business model 
+ Vision, Mission, and Values  
+ How Our Business Model Works 
+ Value Proposition  
+ Target Markets  
+ Marketing Plan  
+ Key Resources and Activities  
+ﬁnancial analysis  
+ Breakeven Analysis  
+ Sales Scenarios and Projections  
+ Capital Spending  
+ Operating Costs  
+ Funding Requirements  
+external environment  
+ The Economy  
+ Market Analysis and Key Trends  
+ Competitor Analysis  
+ Competitive Advantages of Our Business Model 
+implementation roadmap  
+ Projects  
+ Milestones  
+ Roadmap  
+risk analysis  
+ Limiting Factors and Obstacles  
+ Critical Success Factors  
+ Speciﬁc Risks and Countermeasures 
+conclusion 
+annexes 
+  
+MG
+:I
+:?
+:J
+BG
+KA
+KR
+R$
+:
+environmental analysis
+ﬁnancial spreadsheets
+implementation roadmap
+SWOT and uncertainty analysis
+
+
+270
+Implementing Business Models in Organizations
+We’ve laid out the fundamentals of business model innovation, 
+explained the dynamics of different patterns, and outlined tech-
+niques for inventing and designing models. Naturally there is much 
+more to say about the implementation that is critical to a business 
+model’s success. 
+ 
+We’ve already addressed the question of how to manage multiple 
+business models (see p. 232). Now let’s turn to another aspect of 
+implementation: turning your business model into a sustainable 
+enterprise, or implementing it in an existing organization. To illus-
+trate, we’ve combined the Canvas with Jay Galbraith’s Star Model to 
+suggest aspects of organizational design you may want to consider 
+when executing a business model. 
+ 
+Galbraith speciﬁes ﬁve areas that should be aligned in an organi-
+zation: Strategy, Structure, Processes, Rewards, and People. We place 
+the business model in the middle of the star as a “center of gravity” 
+that holds the ﬁve areas together.
+Strategy
+Strategy drives the business model. Do you want to grow 20 percent 
+in new market segments? Then that should be reﬂected in your  
+business model in terms of new Customer Segments, Channels, or 
+Key Activities. 
+Structure
+The characteristics of a business model determine the optimal  
+organizational structure for its execution. Does your business model  
+call for a highly centralized or decentralized organizational structure? 
+If you will implement the model in an established business, should 
+the new operation be integrated or spun off (see p. 233)?
+Processes
+Each business model demands different processes. Operations 
+run under a low-cost business model should be lean and highly 
+automated. If the model calls for selling high-value machines, quality 
+processes must be exceptionally rigorous. 
+Rewards
+Different business models require different reward systems. A reward 
+system must use appropriate incentives to motivate workers to do  
+the right things. Does your model require a direct sales force to 
+acquire new customers? Then your reward system should be highly 
+performance oriented. Does your model depend heavily on customer 
+satisfaction? Then your reward system must reﬂect that commitment.
+People
+Certain business models call for people with particular mindsets. For 
+example, some business models call for particularly entrepreneurial 
+mechanisms to bring products and services to market. Such models 
+must give employees signiﬁcant leeway, which means hiring proac-
+tive, but dependable, free-thinkers. 
+
+
+271
+  
+MG
+:I
+:?
+:J
+BG
+KA
+KR
+R$
+:
+people
+processes
+structure
+strategy
+Power
+What type of organizational structure 
+does your business model require?
+Skills/mindset
+What kinds of people with what skills 
+does your business model require? What 
+type of mindset is needed?
+Direction
+What are your strategic goals? How do 
+they drive the business model?
+Information
+What information ﬂows, processes,  
+and workﬂows does your business  
+model require?
+Motivation
+What reward system does your business 
+model require? How can you motivate 
+your people?
+rewards
+
+
+272
+Aligning IT with Business
+Aligning information systems and business goals is fundamental 
+to the success of an enterprise. Chief executives ofﬁcers ask their 
+chief information ofﬁcers (CIOs), Do we have the right IT? How do 
+we know? How can we best align our business with our technology 
+systems? 
+ 
+Information technology research and advisory ﬁrm Gartner 
+highlights this issue in a report called “Getting the Right IT: Using 
+Business Models.” Gartner asserts that the Business Model Canvas  
+is a powerful tool that helps CIOs quickly grasp how a business 
+works without getting bogged down in operational details. Gartner 
+recommends that CIOs use the Business Model Canvas to align IT 
+and key business processes. This helps them align business and IT 
+decisions without diving too deeply into tactical issues.
+ 
+We ﬁnd it useful to pair the Canvas with an Enterprise Archi-
+tecture approach. Many of the various Enterprise Architecture 
+concepts describe the enterprise from three perspectives: the busi-
+ness perspective, the applications perspective, and the technology 
+perspective. We recommend using the Canvas to guide the business 
+perspective, then align the business with the applications and tech-
+nology perspectives. 
+ 
+In the application perspective, you describe the portfolio of 
+applications that leverage aspects of your business model (e.g. 
+recommendation systems, supply chain management applications, 
+etc.) and you describe all the business model’s information require-
+ments (e.g. customer proﬁles, warehousing, etc.). In the technology 
+perspective you describe the technology infrastructure that drives 
+your business model (e.g. server farms, data storage systems, etc.). 
+ 
+Authors Weill and Vitale propose another interesting way to 
+explore IT alignment. They pair categories of IT infrastructure service 
+with business models. Weill and Vitale propose aligning business 
+models with application infrastructure, communications manage-
+ment, data management, IT management, security, IT architecture, 
+channel management, IT research and development, and IT training 
+and education. 
+ 
+On the opposite page we’ve brought these elements together in 
+a graphic to help you pose some fundamental questions regarding 
+business and IT alignment. 
+
+
+273
+Business
+Applications
+Technology
+  
+MG
+:I
+:?
+:J
+BG
+KA
+KR
+R$
+:
+strategy
+business model
+operational models
+How can IT support the processes and 
+workﬂows required by my business 
+models?
+What information do I need to capture, 
+store, share, and manage to improve my 
+business model?
+How does my application portfolio 
+leverage the speciﬁc dynamics of  
+my business model?
+How will IT architecture, standards,  
+and interface choices limit or leverage 
+my business model?
+Which technology infrastructure is 
+required and crucial to the success of 
+my business model (e.g. server farms, 
+communications, and so on)?
+Where in my business model does  
+security play an important role and  
+how does that inﬂuence my IT?
+Do I need to invest in IT training  
+and education to leverage my business 
+model?
+Could investments in IT research  
+and development improve my business 
+model in the future?
+
+
+ 
+274
+ CONTEXT 
+2004:8c\oXe[\iFjk\inXc[\iZfd$
+gc\k\jXG_%;%[`jj\ikXk`fefek_\kfg`Z
+f]Ylj`e\jjdf[\c`eefmXk`fen`k_
+Gif]\jjfiPm\jG`^e\liXk?<:CXljXee\#
+Jn`kq\icXe[%=Xjk]finXi[%2006:K_\
+XggifXZ_flkc`e\[`ek_\[`jj\ikXk`fe
+jkXikjY\`e^Xggc`\[Xifle[k_\nfic[
+YXj\[fe8c\oXe[\iËjYlj`e\jjdf[\c
+Ycf^#efkXYcp`eZfdgXe`\jjlZ_Xj*D#
+<i`Zjjfe#;\cf`kk\#Xe[K\c\efi%;li`e^
+Xnfibj_fg`ek_\E\k_\icXe[jGXki`Zb
+mXe[\iG`acXjbj “why is there no 
+book accompanying the method?”
+8c\oXe[\iXe[Pm\jkXb\lgk_\Z_Xc$
+c\e^\%But how does one stand 
+out in a market where countless 
+strategy and management books 
+are published every year?
+ @EEFM8K@E>
+the model 
+8c\oXe[\iXe[Pm\j[\Z`[\they can’t 
+credibly write a book about  
+business model innovation with-
+out an innovative business model.
+K_\p[`kZ_glYc`j_\ijXe[cXleZ_k_\
+?lY#Xefec`e\gcXk]fidkfj_Xi\k_\`i
+ni`k`e^j]ifd[Xpfe\%8epYf[pn`k_
+Xe`ek\i\jk`ek_\kfg`ZZXeaf`ek_\
+gcXk]fid]fiX]\\`e`k`XccpL%J%)+#
+n_`Z_`j^iX[lXccpiX`j\[kfL%J%)+*kf
+b\\gk_\gcXk]fid\oZclj`m\ %K_Xkk_`j
+Xe[fk_\i`eefmXk`m\I\m\el\Jki\Xdj
+ÔeXeZ\k_\Yffbgif[lZk`fe`eX[mXeZ\
+`kj\c]`jXe`eefmXk`feXjn\cc%@kYi\Xbj
+k_\]fidXkf]Zfem\ek`feXcjkiXk\^pXe[
+dXeX^\d\ekYffbj`efi[\ikfZi\Xk\
+dfi\mXcl\]fii\X[\ij1`k`jZf$Zi\Xk\[
+_`^_cpm`jlXc#Xe[Zfdgc\d\ek\[Yp
+\o\iZ`j\jXe[nfibj_fgk`gj%
+
+ key audience 
+visionary and 
+game changing . . . 
+\eki\gi\e\lij&
+ZfejlckXekj&
+\o\Zlk`m\j
+
+N?<I<
+;@;K?@J
+9FFB
+:FD<
+=IFD6
+kj &
+j
+[

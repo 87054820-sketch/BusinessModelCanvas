@@ -2,6 +2,8 @@
 
 The nine BMC blocks are intentionally arranged: the **right half** describes the customer-facing value-delivery system, the **left half** describes the internal value-creation system, and the **Value Proposition** sits in the middle as the bridge between customer need and business capability. The bottom row — **Revenue Streams** and **Cost Structure** — asks whether the model can sustain itself economically.
 
+![Apple iTunes business model as a filled-in canvas example. Source: *Business Model Generation*](assets/bmc-apple-example.png)
+
 ## Recommended filling order
 
 1. **Customer Segments**: define whom you serve and which customers matter most.
@@ -34,7 +36,7 @@ The nine BMC blocks are intentionally arranged: the **right half** describes the
 ## What good looks like
 
 - Each block contains concise phrases, concrete assumptions, and evidence notes — not slogans.
-- Customer segments and value propositions are paired; “everyone” is not a segment.
+- Customer segments and value propositions are paired; "everyone" is not a segment.
 - Channels, relationships, and revenue streams explain the full customer journey.
 - Activities, resources, and partners support the promise on the right side instead of listing internal departments.
 - Revenue and cost choices reveal whether the model is cost-driven, value-driven, or a deliberate mix.
@@ -52,5 +54,4 @@ The nine BMC blocks are intentionally arranged: the **right half** describes the
 
 - *Business Model Generation* — Osterwalder & Pigneur.
 - Strategyzer's Business Model Canvas template and guidance.
-- Strategic Management Insight's Business Model Canvas guide.
 - Pair with Value Proposition Canvas, Business Model Environment, SWOT, PESTEL, or Five Forces when you need a deeper view.

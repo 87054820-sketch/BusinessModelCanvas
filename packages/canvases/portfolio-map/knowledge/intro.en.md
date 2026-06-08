@@ -17,6 +17,8 @@ portfolio is evolving** — which models are graduating, which are
 declining, where the next one will come from — rather than the details
 of any single model.
 
+![The Explore / Exploit Continuum — managing both sides simultaneously. Source: *The Invincible Company* (Osterwalder et al., 2020)](assets/pm-continuum.png)
+
 ## Reach for it when
 
 - You're preparing a board / leadership review and need a single page
