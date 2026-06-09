@@ -4,7 +4,15 @@
       "Bash(node *)",
       "Bash(pnpm typecheck *)",
       "Bash(pnpm --filter @pingarden/web build)",
-      "Bash(codesign -dv --verbose=4 /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/apps/desktop/build/mac-arm64/PinGarden.app)"
+      "Bash(codesign -dv --verbose=4 /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/apps/desktop/build/mac-arm64/PinGarden.app)",
+      "Bash(rm -rf ~/.claude/skills/pingarden)",
+      "Read(//Users/siboli/.claude/skills/**)",
+      "Read(//Users/siboli/.claude/skills/pingarden/**)",
+      "Bash(rm -rf ~/.claude/skills/pingarden ~/.claude/skills/pingarden.preview)",
+      "Bash(pnpm --filter @pingarden/cli run build)",
+      "Bash(pnpm --filter @pingarden/cli run typecheck)",
+      "Bash(sed -n '/^## Pairs with/,$p' /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/.claude/skills/pingarden/canvases/empathy-map.zh.md)",
+      "Bash(sed -n '/^## Anti-patterns/,/^## /p' /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/.claude/skills/pingarden/canvases/jobs-to-be-done.en.md)"
     ]
   }
 }

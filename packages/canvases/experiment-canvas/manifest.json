@@ -25,6 +25,20 @@
     }
   },
   "related": ["design-criteria-canvas", "value-proposition-canvas", "business-model-canvas"],
+  "relatedNotes": {
+    "design-criteria-canvas": {
+      "en": "If the experiment passes, lock the result into a Must-have on the Design Criteria Canvas.",
+      "zh": "实验通过的话,把结论锁进 Design Criteria Canvas 的 Must-have。"
+    },
+    "value-proposition-canvas": {
+      "en": "Most riskiest assumptions live in VPC — Pains being acute enough, Gain Creators actually creating gains.",
+      "zh": "致命假设大多藏在 VPC 里 —— 痛点是否真的够痛、收益创造能否真的产生收益。"
+    },
+    "business-model-canvas": {
+      "en": "When the riskiest assumption is structural (channel, revenue stream), feed results back into the BMC block.",
+      "zh": "致命假设是结构性的(渠道、收入来源等)时,把结果反馈进 BMC 对应那一块。"
+    }
+  },
   "zones": [
     {
       "id": "riskiest-assumption",

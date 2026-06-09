@@ -45,6 +45,42 @@
     }
   ],
   "related": ["value-proposition-canvas", "empathy-map", "ad-lib-value-proposition", "customer-journey"],
+  "relatedNotes": {
+    "value-proposition-canvas": {
+      "en": "Use this validated job as the central Customer Job in VPC; design Pain Relievers + Gain Creators around it.",
+      "zh": "把这条验证过的工作放进 VPC 中心,绕着它设计痛点缓解和收益创造。"
+    },
+    "empathy-map": {
+      "en": "Anchor this job to a specific persona × moment to keep it concrete.",
+      "zh": "把这个工作锚到一个具体 persona × 时刻,让它具体起来。"
+    },
+    "ad-lib-value-proposition": {
+      "en": "Compress the validated job + outcome into the one-sentence value-prop slot for stakeholder alignment.",
+      "zh": "把验证过的工作 + 结果压缩进 Ad-Lib 一句话,用来对齐利益相关方。"
+    },
+    "customer-journey": {
+      "en": "Plot when in the journey this job becomes acute — that's where the offering should hit hardest.",
+      "zh": "标出这个工作在旅程的哪个阶段变得紧迫 —— 那就是产品该发力的地方。"
+    }
+  },
+  "relatedNotes": {
+    "value-proposition-canvas": {
+      "en": "Use this validated job as the central Customer Job in VPC; design Pain Relievers + Gain Creators around it.",
+      "zh": "把这条验证过的工作放进 VPC 中心,绕着它设计痛点缓解和收益创造。"
+    },
+    "empathy-map": {
+      "en": "Anchor this job to a specific persona × moment to keep it concrete.",
+      "zh": "把这个工作锚到一个具体 persona × 时刻,让它具体起来。"
+    },
+    "ad-lib-value-proposition": {
+      "en": "Compress the validated job + outcome into the one-sentence value-prop slot for stakeholder alignment.",
+      "zh": "把验证过的工作 + 结果压缩进 Ad-Lib 一句话,用来对齐利益相关方。"
+    },
+    "customer-journey": {
+      "en": "Plot when in the journey this job becomes acute — that's where the offering should hit hardest.",
+      "zh": "标出这个工作在旅程的哪个阶段变得紧迫 —— 那就是产品该发力的地方。"
+    }
+  },
   "zones": [
     {
       "id": "situation",

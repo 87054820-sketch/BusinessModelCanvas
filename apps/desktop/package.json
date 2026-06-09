@@ -10,6 +10,7 @@
     "build:web": "pnpm --filter @pingarden/web run build",
     "build:server": "pnpm --filter @pingarden/server run build",
     "build:electron": "rm -rf dist/server dist/web dist/canvases dist/samples && cp -r ../server/dist dist/server && echo '{\"type\":\"module\"}' > dist/server/package.json && cp -r ../web/dist dist/web && cp -r ../../packages/canvases dist/canvases && cp -r ../../packages/samples dist/samples && tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
     "package:mac": "cd ../.. && bash scripts/package-mac.sh",
     "dist": "electron-builder --mac dmg",
     "dist:dir": "electron-builder --mac dir"

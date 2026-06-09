@@ -25,6 +25,28 @@
     }
   },
   "related": ["business-model-environment", "value-proposition-canvas", "portfolio-map", "design-criteria-canvas", "experiment-canvas"],
+  "relatedNotes": {
+    "business-model-environment": {
+      "en": "External forces (trends, market, industry, macro) that pressure the model. Use it to surface risks BMC can't see.",
+      "zh": "外部力量(趋势 / 市场 / 行业 / 宏观),压在模型四周。BMC 看不见的风险靠它暴露。"
+    },
+    "value-proposition-canvas": {
+      "en": "Zoom into one Customer Segment + its Value Proposition. Build one VPC per segment that matters.",
+      "zh": "对一个客户细分 + 它的价值主张做深度展开。每个值得做的细分配一张 VPC。"
+    },
+    "portfolio-map": {
+      "en": "Plot multiple BMCs against each other (existing vs new, mature vs experimental) to compare strategy posture.",
+      "zh": "把多张 BMC 摆在一起比(成熟 vs 探索、现有 vs 新增),用于战略组合的取舍。"
+    },
+    "design-criteria-canvas": {
+      "en": "Make the constraints and aspirations explicit before designing the next model iteration.",
+      "zh": "在画下一版模型之前,把约束和理想先写清楚。"
+    },
+    "experiment-canvas": {
+      "en": "Pick the riskiest assumptions on the BMC and design a cheap test for each.",
+      "zh": "挑出 BMC 上最致命的假设,为每条设计最便宜的实验。"
+    }
+  },
   "zones": [
     {
       "id": "key-partners",

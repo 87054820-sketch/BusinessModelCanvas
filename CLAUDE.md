@@ -12,6 +12,7 @@ This is a self-hostable real-time collaborative canvas tool (Strategyzer-style: 
 | 看日志 / logs / tail             | `tail -f .dev/server.log .dev/web.log`                              |
 | 状态 / 是否运行 / status         | `lsof -ti tcp:4000 tcp:5173` to check, then report                  |
 | 打包 / 打 dmg / package / build dmg / 重打 dmg | Run `pnpm package:mac` from the project root (see "Packaging" below) |
+| CLI / pingarden 命令             | `node apps/cli/dist/index.js <subcommand>` (after `pnpm --filter @pingarden/cli run build`) — see `apps/cli/README.md` |
 
 `start.sh` is idempotent: it kills anything on `:4000` / `:5173` first, runs `pnpm install` only if `node_modules/` is missing, daemonizes both servers via `nohup`, and waits for both to answer before printing the URLs. Logs and PID files live in `.dev/` (gitignored).
 
@@ -74,13 +75,17 @@ These are the load-bearing abstractions that let the project scale without rewri
 
 8. **Canvas display contract** (`docs/CANVAS_DISPLAY_CONTRACT.md`) — read this before adding or changing any canvas bundle. Do not duplicate canvas title/subtitle across SVG, modal preview, and right knowledge panel. Zone labels come from `i18n`; preview/live display choices come from `manifest.display`; sticky colour meanings come from `defaultColorLegend`, not SVG artwork.
 
+9. **`pingarden` CLI + Claude skill** (`apps/cli/`) — the AI-write seam at the shell level. The CLI is a pure HTTP client; it discovers the running server via `<dataDir>/server.port` (or `.dev/server.port` in dev) and calls the same endpoints the web client uses. Every `canvas write` takes an auto pre-edit milestone snapshot, validates `zoneId`s locally against `/ai-context`, then POSTs to `/objects/bulk`. **Never let CLI code touch `apps/server/data/` directly** or parse Yjs binary — it must go through the API. The companion **skill** is fully generated from `packages/canvases/<id>/{manifest.json,i18n,knowledge,skill.{en,zh}.md}` — no parallel methodology files. Adding curated TL;DR to a canvas = drop `skill.{en,zh}.md` next to its manifest. Adding a "Pairs with" reason = add a `relatedNotes` entry to the manifest. The repo commits a copy of the generated skill at `<repo>/.claude/skills/pingarden/` (browsable on GitHub, auto-activates when Claude Code runs in this repo); also installable globally to `~/.claude/skills/pingarden/`. See `apps/cli/README.md` for full UX, `apps/cli/src/skill/templates.ts` for the markdown contract.
+
 ## Where things live
 
 ```
 pingarden/
 ├── apps/
 │   ├── web/                              React SPA, Vite dev on :5173
-│   └── server/                           Fastify API + (future) y-websocket on :4000
+│   ├── server/                           Fastify API + (future) y-websocket on :4000
+│   ├── desktop/                          Electron shell (DMG packaging entry)
+│   └── cli/                              `pingarden` CLI for AI agents — see apps/cli/README.md
 ├── packages/
 │   ├── shared/                           TypeScript domain types (browser + node safe)
 │   └── canvases/
@@ -92,7 +97,7 @@ pingarden/
 │       ├── ad-lib-value-proposition/     8 sentence-template zones, portrait
 │       └── jobs-to-be-done/              5 sequential blocks, portrait (situation→motivation→outcome→emotional→social)
 ├── start.sh, stop.sh                     local boot scripts
-├── .dev/                                 logs + PID files (gitignored)
+├── .dev/                                 logs + PID files + server.port (gitignored)
 ├── apps/server/data/                     persisted canvas state (gitignored)
 └── pnpm-workspace.yaml
 ```
@@ -112,6 +117,7 @@ pingarden/
 - ✓ Business Model Environment canvas + cross-canvas relationship chips (`related[]` in each manifest, "Pairs with" strip in inspector)
 - ✓ Unified Canvas Config inspector — strategy / pin / sticky sections visually grouped; pin & sticky chip rails share the same Add flow
 - ✓ Sticky resize handle + auto-add sticky legend + Pin/Sticky inspector visual parity (one-circle class picker, "shown on canvas" hints)
+- ✓ `pingarden` CLI (`apps/cli/`) + official Claude skill — AI-write seam at the shell level. Auto-snapshot before bulk write, local zoneId validation, server discovery via port file, dual distribution (Mac app DMG + npm). Skill auto-generated from canvas bundles; **all 11 canvases** have curated `skill.{en,zh}.md` (TL;DR / fill order / cross-block invariants / anti-patterns / tone) and `relatedNotes` for bilingual "Pairs with" reasons. Project-local skill committed at `<repo>/.claude/skills/pingarden/`.
 - ☐ Real-time multi-cursor + presence (single tab only today)
 - ☐ Autosave snapshots, Docker Compose, polish
 

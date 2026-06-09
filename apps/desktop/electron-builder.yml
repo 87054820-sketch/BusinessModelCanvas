@@ -8,6 +8,14 @@ files:
   - "!**/data/**"
   # Exclude full book chapter extractions (reference material, not runtime assets)
   - "!dist/canvases/**/knowledge/book/**"
+extraResources:
+  # Bundle the CLI alongside the app so users can invoke `pingarden` from
+  # their shell after onboarding (electron.main.ts wires the wrapper +
+  # runs `skill install` on first launch).
+  - from: ../cli/dist
+    to: cli/dist
+  - from: ../cli/assets
+    to: cli/assets
 mac:
   category: public.app-category.productivity
   target:

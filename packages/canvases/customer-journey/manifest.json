@@ -23,6 +23,34 @@
     }
   },
   "related": ["empathy-map", "value-proposition-canvas", "jobs-to-be-done"],
+  "relatedNotes": {
+    "empathy-map": {
+      "en": "If the persona feels generic, build the Empathy Map first to anchor the journey to a specific person.",
+      "zh": "如果 persona 太空,先做 Empathy Map 把旅程锚到具体的人。"
+    },
+    "value-proposition-canvas": {
+      "en": "Friction at any journey stage is a Pain — feed it back into VPC and design a Pain Reliever for it.",
+      "zh": "旅程任何阶段的摩擦都是 VPC 的痛点 —— 把它喂回 VPC,为它设计一个痛点缓解。"
+    },
+    "jobs-to-be-done": {
+      "en": "The journey's biggest dip usually points at an unmet job — turn that into a JTBD canvas.",
+      "zh": "旅程里最大的凹陷通常对应一条未满足的工作 —— 把它转成一张 JTBD 画布。"
+    }
+  },
+  "relatedNotes": {
+    "empathy-map": {
+      "en": "If the persona feels generic, build the Empathy Map first to anchor the journey to a specific person.",
+      "zh": "如果 persona 太空,先做 Empathy Map 把旅程锚到具体的人。"
+    },
+    "value-proposition-canvas": {
+      "en": "Friction at any journey stage is a Pain — feed it back into VPC and design a Pain Reliever for it.",
+      "zh": "旅程任何阶段的摩擦都是 VPC 的痛点 —— 把它喂回 VPC,为它设计一个痛点缓解。"
+    },
+    "jobs-to-be-done": {
+      "en": "The journey's biggest dip usually points at an unmet job — turn that into a JTBD canvas.",
+      "zh": "旅程里最大的凹陷通常对应一条未满足的工作 —— 把它转成一张 JTBD 画布。"
+    }
+  },
   "zones": [
     {
       "id": "persona",

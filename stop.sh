@@ -9,6 +9,7 @@ cd "$ROOT"
 LOG_DIR=".dev"
 SERVER_PID_FILE="$LOG_DIR/server.pid"
 WEB_PID_FILE="$LOG_DIR/web.pid"
+SERVER_PORT_FILE="$LOG_DIR/server.port"
 
 stop_pid() {
   local file=$1
@@ -29,6 +30,10 @@ stop_pid() {
 
 stop_pid "$SERVER_PID_FILE" "API"
 stop_pid "$WEB_PID_FILE"    "Web"
+
+# Server should have unlinked its own port file on SIGTERM; clear it
+# defensively in case it crashed without cleanup.
+rm -f "$SERVER_PORT_FILE"
 
 # Belt-and-braces: clear the ports in case something else got bound.
 for port in 4000 5173; do

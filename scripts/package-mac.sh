@@ -56,7 +56,9 @@ rm -rf \
   apps/desktop/dist/web \
   apps/desktop/dist/canvases \
   apps/desktop/dist/samples \
-  apps/desktop/build
+  apps/desktop/build \
+  apps/cli/dist \
+  apps/cli/assets
 rm -f \
   apps/desktop/dist/electron.main.js \
   apps/desktop/dist/electron.preload.js
@@ -64,6 +66,9 @@ mkdir -p apps/desktop/dist
 
 log "Running workspace typecheck"
 pnpm typecheck
+
+log "Building CLI (tsup → dist + assets/canvases)"
+pnpm --filter @pingarden/cli run build
 
 log "Building fresh desktop bundle"
 pnpm --filter @pingarden/desktop run build:desktop
@@ -78,6 +83,11 @@ require_dir "apps/desktop/dist/web/assets"
 require_dir "apps/desktop/dist/canvases"
 require_dir "apps/desktop/dist/samples"
 require_dir "apps/desktop/dist/samples/wechat-private-domain"
+# CLI tree gets pulled in via electron-builder extraResources; verify it
+# was actually built before electron-builder picks it up.
+require_file "apps/cli/dist/index.js"
+require_dir "apps/cli/assets/canvases"
+require_file "apps/cli/assets/canvases/business-model-canvas/manifest.json"
 
 if find apps/desktop/dist -path '*/data/*' -print -quit | grep -q .; then
   fail "Desktop bundle contains runtime data files; installer must not include user/dev data directories."

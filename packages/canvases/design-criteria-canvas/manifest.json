@@ -25,6 +25,34 @@
     }
   },
   "related": ["business-model-canvas", "value-proposition-canvas", "experiment-canvas"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Must-haves should be defensible against the BMC's Value Propositions and Customer Segments.",
+      "zh": "Must-have 必须能用 BMC 的价值主张和客户细分来辩护。"
+    },
+    "value-proposition-canvas": {
+      "en": "Each must-have should trace to a VPC Pain or Gain. Without that link it's a wishlist item.",
+      "zh": "每条 must-have 都要追溯到 VPC 的某条痛点或收益。否则就是 wishlist。"
+    },
+    "experiment-canvas": {
+      "en": "When a should-have or won't-have feels uncertain, design an experiment to make the call.",
+      "zh": "Should-have 或 won't-have 拿不准时,设计一个实验来定。"
+    }
+  },
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Must-haves should be defensible against the BMC's Value Propositions and Customer Segments.",
+      "zh": "Must-have 必须能用 BMC 的价值主张和客户细分来辩护。"
+    },
+    "value-proposition-canvas": {
+      "en": "Each must-have should trace to a VPC Pain or Gain. Without that link it's a wishlist item.",
+      "zh": "每条 must-have 都要追溯到 VPC 的某条痛点或收益。否则就是 wishlist。"
+    },
+    "experiment-canvas": {
+      "en": "When a should-have or won't-have feels uncertain, design an experiment to make the call.",
+      "zh": "Should-have 或 won't-have 拿不准时,设计一个实验来定。"
+    }
+  },
   "zones": [
     {
       "id": "must-have",

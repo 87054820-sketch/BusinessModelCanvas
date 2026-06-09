@@ -136,6 +136,17 @@ export interface CanvasDef {
    */
   related?: string[];
   /**
+   * Optional bilingual one-liner explaining WHY each `related` canvas
+   * pairs with this one. Surfaced by the AI skill (`canvases/<id>.<lang>.md`
+   * "Pairs with" section) so the agent can suggest a meaningful next
+   * step instead of just dropping a bare canvas-def id on the user.
+   *
+   * Keys are canvas-def ids; values are bilingual labels. Entries
+   * absent from `related` are ignored. Entries in `related` but
+   * missing here render as a bare bullet — graceful fallback.
+   */
+  relatedNotes?: Record<string, LocalizedLabel>;
+  /**
    * Declarative list of editable object types this canvas allows. Lets
    * the workspace toolbar / inspector / bulk-import know what the canvas
    * supports without inferring it from the plugin.

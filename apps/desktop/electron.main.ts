@@ -4,6 +4,7 @@ import { randomUUID } from 'crypto';
 import fs from 'fs';
 import net from 'net';
 import path from 'path';
+import { setupCliOnboarding } from './cli-onboarding';
 
 const isDev = !app.isPackaged;
 const desktopHost = '127.0.0.1';
@@ -180,6 +181,20 @@ app.whenReady().then(async () => {
 
   await waitForServer(`${appUrl}/health`, desktopInstanceId);
   createWindow(appUrl);
+
+  // Wire up the bundled `pingarden` CLI: install/refresh the Claude
+  // skill, generate a wrapper script in userData, and refresh the
+  // onboarding readme. Skipped in dev — developers run the CLI from
+  // the workspace directly (`node apps/cli/dist/index.js`). All
+  // failures are logged but never block startup.
+  if (!isDev) {
+    setupCliOnboarding({
+      userData,
+      resourcesPath: process.resourcesPath,
+      electronExec: process.execPath,
+      appVersion: app.getVersion(),
+    });
+  }
 
   const template: Electron.MenuItemConstructorOptions[] = [
     {

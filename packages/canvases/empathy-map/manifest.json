@@ -19,6 +19,34 @@
     }
   },
   "related": ["value-proposition-canvas", "jobs-to-be-done", "customer-journey"],
+  "relatedNotes": {
+    "value-proposition-canvas": {
+      "en": "Lift the Pains and Gains from this persona into VPC's customer side.",
+      "zh": "把这个 persona 的痛点和收益搬进 VPC 的客户侧。"
+    },
+    "jobs-to-be-done": {
+      "en": "Sharpen the persona's central problem into a JTBD situation → motivation → outcome story.",
+      "zh": "把 persona 的核心问题锐化成 JTBD 的情境 → 动机 → 结果故事。"
+    },
+    "customer-journey": {
+      "en": "Walk this persona's day across stages to find where the friction actually lives.",
+      "zh": "把这个 persona 的一天沿阶段走一遍,找出摩擦真正发生在哪。"
+    }
+  },
+  "relatedNotes": {
+    "value-proposition-canvas": {
+      "en": "Lift the Pains and Gains from this persona into VPC's customer side.",
+      "zh": "把这个 persona 的痛点和收益搬进 VPC 的客户侧。"
+    },
+    "jobs-to-be-done": {
+      "en": "Sharpen the persona's central problem into a JTBD situation → motivation → outcome story.",
+      "zh": "把 persona 的核心问题锐化成 JTBD 的情境 → 动机 → 结果故事。"
+    },
+    "customer-journey": {
+      "en": "Walk this persona's day across stages to find where the friction actually lives.",
+      "zh": "把这个 persona 的一天沿阶段走一遍,找出摩擦真正发生在哪。"
+    }
+  },
   "zones": [
     {
       "id": "persona",

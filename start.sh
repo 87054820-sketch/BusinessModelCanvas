@@ -18,6 +18,7 @@ SERVER_LOG="$LOG_DIR/server.log"
 WEB_LOG="$LOG_DIR/web.log"
 SERVER_PID_FILE="$LOG_DIR/server.pid"
 WEB_PID_FILE="$LOG_DIR/web.pid"
+SERVER_PORT_FILE="$LOG_DIR/server.port"
 
 API_PORT=4000
 WEB_PORT=5173
@@ -65,7 +66,11 @@ done
 
 # ── 4. start the API server ─────────────────────────────────────────────
 echo "→ Starting API server on :$API_PORT (logs: $SERVER_LOG)"
-nohup pnpm --filter @pingarden/server run dev > "$SERVER_LOG" 2>&1 &
+# Stale port file from a previous crash → clear before relaunch so the
+# new process always writes its own.
+rm -f "$SERVER_PORT_FILE"
+PINGARDEN_PORT_FILE="$ROOT/$SERVER_PORT_FILE" \
+  nohup pnpm --filter @pingarden/server run dev > "$SERVER_LOG" 2>&1 &
 SERVER_PID=$!
 echo "$SERVER_PID" > "$SERVER_PID_FILE"
 disown "$SERVER_PID" 2>/dev/null || true

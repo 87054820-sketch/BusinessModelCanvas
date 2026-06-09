@@ -66,6 +66,36 @@
     }
   },
   "related": ["business-model-canvas", "empathy-map", "jobs-to-be-done", "ad-lib-value-proposition", "customer-journey", "design-criteria-canvas", "experiment-canvas"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Lift the validated Value Proposition + Customer Segment back into the BMC so the rest of the model adapts.",
+      "zh": "把验证过的价值主张 + 客户细分搬回 BMC,让模型其余部分跟着改。"
+    },
+    "empathy-map": {
+      "en": "Deep-dive on what the customer thinks / says / feels before listing Jobs and Pains. Anchors the right side.",
+      "zh": "在写工作和痛点之前,先把客户在想 / 说 / 感受什么搞清楚。给右侧定锚。"
+    },
+    "jobs-to-be-done": {
+      "en": "Sharpen Customer Jobs into a single situation → motivation → outcome story. Disambiguates fuzzy jobs.",
+      "zh": "把客户工作锐化成一条「情境 → 动机 → 结果」的故事。把模糊的工作澄清出来。"
+    },
+    "ad-lib-value-proposition": {
+      "en": "Compress the entire VPC into one sentence the team can say out loud — exposes weak spots.",
+      "zh": "把整张 VPC 压缩成一句团队能朗读出口的话 —— 弱点立刻暴露。"
+    },
+    "customer-journey": {
+      "en": "Walk Pains and Gains across the customer's timeline so you see when each one bites.",
+      "zh": "把痛点和收益沿着客户的时间线铺开,看清每一项在什么节点起作用。"
+    },
+    "design-criteria-canvas": {
+      "en": "Translate the validated Pains and Gains into design criteria for the offering.",
+      "zh": "把验证过的痛点和收益翻译成产品设计的硬约束。"
+    },
+    "experiment-canvas": {
+      "en": "Pick the riskiest Pain Reliever or Gain Creator and design a cheap test for it.",
+      "zh": "挑出最不靠谱的那条痛点缓解或收益创造,为它设计最便宜的实验。"
+    }
+  },
   "zones": [
     {
       "id": "gain-creators",

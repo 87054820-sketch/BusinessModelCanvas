@@ -5,6 +5,8 @@ node_modules/
 apps/web/dist/
 apps/server/dist/
 apps/desktop/dist/
+apps/cli/dist/
+apps/cli/assets/
 packages/*/dist/
 *.tsbuildinfo
 

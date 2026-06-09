@@ -19,6 +19,18 @@
     }
   },
   "related": ["business-model-canvas"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "The environment map exists to pressure-test a specific BMC. Always pair them — and revisit BME whenever the BMC changes.",
+      "zh": "环境图就是为了对一张具体的 BMC 做压力测试。两张要配对用 —— BMC 一改,环境图回头复核。"
+    }
+  },
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "The environment map exists to pressure-test a specific BMC. Always pair them — and revisit BME whenever the BMC changes.",
+      "zh": "环境图就是为了对一张具体的 BMC 做压力测试。两张要配对用 —— BMC 一改,环境图回头复核。"
+    }
+  },
   "zones": [
     {
       "id": "key-trends",

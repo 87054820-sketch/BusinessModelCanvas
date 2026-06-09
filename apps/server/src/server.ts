@@ -14,6 +14,11 @@ import { registerAiContextRoutes } from './http/aiContext.js';
 import { registerStickyImportRoutes } from './http/stickyImport.js';
 import { registerObjectsImportRoutes } from './http/objectsImport.js';
 import { registerStoryRoutes } from './http/stories.js';
+import {
+  getPortFilePath,
+  registerPortFileCleanup,
+  writePortFile,
+} from './util/portFile.js';
 
 async function main() {
   const app = Fastify({ logger: true, bodyLimit: 8 * 1024 * 1024 });
@@ -82,6 +87,21 @@ async function main() {
   }
 
   await app.listen({ port: config.port, host: config.host });
+
+  // Publish port discovery file so external tooling (CLI, tests) can find
+  // this server without lsof guesswork. Cleaned up on graceful shutdown.
+  const address = app.server.address();
+  const actualPort =
+    address && typeof address === 'object' ? address.port : config.port;
+  const portFile = getPortFilePath(config.dataDir);
+  writePortFile(portFile, {
+    port: actualPort,
+    pid: process.pid,
+    desktopInstanceId: config.desktopInstanceId,
+    startedAt: new Date().toISOString(),
+  });
+  registerPortFileCleanup(portFile);
+  app.log.info({ portFile }, 'Wrote server port discovery file');
 }
 
 main().catch((err) => {
