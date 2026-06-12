@@ -4,6 +4,7 @@ import { z } from 'zod';
 import * as Y from 'yjs';
 import type { ZoneShape } from '@pingarden/shared';
 import {
+  DEFAULT_STICKY_HEIGHT,
   STICKY_MAX_HEIGHT,
   STICKY_MAX_WIDTH,
   STICKY_MIN_HEIGHT,
@@ -204,18 +205,18 @@ function resolvePosition(
 ): { x: number; y: number } {
   if (x !== undefined && y !== undefined) return { x, y };
   const b = zoneBounds(shape);
-  const cx = b.x + b.w / 2;
-  const cy = b.y + b.h / 2;
-  // Spiral-ish offset: each new sticky in the same zone shifts a bit so
-  // the cluster spreads out instead of stacking. Capped to ~30% of the
-  // zone's smaller dimension so we never escape the box.
-  const cap = Math.min(b.w, b.h) * 0.3;
-  const step = Math.min(28, cap / Math.max(1, idx));
-  const angle = idx * 137.5 * (Math.PI / 180); // golden-angle for nice spread
-  const dx = Math.cos(angle) * step * Math.sqrt(idx);
-  const dy = Math.sin(angle) * step * Math.sqrt(idx);
+  const cx = b.x + b.w / 2; // horizontal center of zone
+
+  // Vertical-stack layout: place stickies top-down with spacing.
+  // Each sticky is positioned at the top of the zone, then offset downward
+  // by (STICKY_MAX_HEIGHT + verticalPadding) * idx to avoid overlap.
+  const verticalPadding = 8; // pixels between stickies
+  const stackSpacing = DEFAULT_STICKY_HEIGHT + verticalPadding;
+  const startY = b.y + 8; // start padding from zone top
+  const stackY = startY + stackSpacing * idx;
+
   return {
-    x: cx + (x === undefined ? dx : 0),
-    y: cy + (y === undefined ? dy : 0),
+    x: x === undefined ? cx : x,
+    y: y === undefined ? stackY : y,
   };
 }
