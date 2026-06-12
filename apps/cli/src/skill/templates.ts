@@ -56,12 +56,14 @@ ${list}
 - \`workflows/story.md\` — write a project narrative with embedded canvases
 - \`workflows/snapshot.md\` — when to milestone, how to restore
 - \`workflows/translate.md\` — en ⇄ zh round trip
+- \`workflows/case-library.md\` — read curated company cases for inspiration, or fork one to start fast
 
 ### Reference
 - \`reference/cli-cheatsheet.md\` — top commands with JSON output examples
 - \`reference/color-legend.md\` — sticky palette + how to interpret colours
 - \`reference/identity.md\` — \`X-Display-Name\` / \`--as\` / audit trail
 - \`reference/ai-context-shape.md\` — shape of the \`/ai-context\` JSON
+- \`reference/case-library.md\` — case kinds, slug rules, read-only rules
 
 ## Key invariants — never violate
 
@@ -382,6 +384,63 @@ When translating, **do not translate \`zoneId\` keys** — they are stable API i
 
 The \`prompt\` and \`title\` shown in \`canvas describe\` already come back in the requested \`--lang\`, so use those as the anchor for what each block expects.
 `,
+
+  'workflows/case-library.md': `# Case library — read for inspiration, fork to edit
+
+PinGarden ships a curated **case library** at \`packages/case-library/\` (read-only) — real company analyses across multiple canvases, with the user's local "my projects" living in writable user storage. The library and the user's projects are federated: the same HTTP routes (and the same CLI) read both, but the library cannot be edited.
+
+Two flows you'll see most:
+
+## 1. Read-only borrow — "show me how X did it"
+
+User asks "how would Tesla fill the BMC?" or "I want a private-banking BMC like Maerki Baumann does it." Don't fork yet — first read the library, learn the shape, then apply that knowledge to the user's own canvases.
+
+\`\`\`bash
+# Browse what's available
+pingarden case list --json
+pingarden case list --tag automotive --json
+
+# Get the structural shape (zone titles, color legend, canvas list) without
+# pulling every sticky — cheap, good for orientation
+pingarden case describe <slug> --lang <en|zh> --json
+
+# THE KILLER COMMAND: pull every canvas + every story body of a case
+# in one shot. Use this when the user wants you to actually mirror the
+# analysis or quote from it.
+pingarden case read <slug> --lang <en|zh> --json
+\`\`\`
+
+\`case read\` returns the full \`AiContext\` for every canvas (block-grouped sticky JSON, identical to \`canvas read\`) plus the markdown body of every story. Same shape as a normal canvas read — just batched and labelled by case.
+
+The library is **read-only**: any \`canvas write\` against a library canvas returns 403. If the user wants to actually edit, you must fork first.
+
+## 2. Fork to edit — "use Y as my starting point"
+
+User wants their own copy of a library case (often "the structure looks great, change the company / details"). Fork = deep copy into user storage with new UUIDs; story \`::canvas[]{canvasId="..."}\` directives are rewritten to point at the new canvases so the forked story renders correctly.
+
+\`\`\`bash
+# 1. Fork — returns the new project + canvas + story IDs
+pingarden case fork <slug> --json
+
+# 2. From here it's standard editing. The new canvases are normal user
+#    canvases — write, snapshot, restore, story all work as usual.
+pingarden canvas read <newCanvasId> --json
+echo '<payload>' | pingarden canvas write <newCanvasId> --json
+\`\`\`
+
+The fork does NOT track the upstream — future library updates won't propagate. That's deliberate; the user's copy is fully independent.
+
+## When to read vs fork
+
+- **Read** when the user wants insight, comparison, or to copy *concepts* into their own work. Don't pollute their workspace with a copy they didn't ask for.
+- **Fork** only when the user explicitly says "I want my own version" / "use this as my starting point" / "edit it for me." Never auto-fork.
+
+## Anti-patterns
+
+- ❌ Trying to \`canvas write\` against a case-library canvas. The 403 will block you, and the user wasn't asking to edit the library anyway.
+- ❌ Forking a case "just in case the user wants to edit later." Forks are visible in their project list — only fork when asked.
+- ❌ Pulling \`case read\` for every case in the library at once to "have context." Pull the one(s) you actually need; \`case list\` gives you the slug + summary first.
+`,
 };
 
 export const REFERENCE_FILES: Record<string, string> = {
@@ -426,6 +485,18 @@ pingarden snapshot create <canvasId> --label "..." --json
 pingarden snapshot restore <canvasId> <sid> --mode replace
 pingarden snapshot restore <canvasId> <sid> --mode fork
 \`\`\`
+
+## Case library (read-only curated cases)
+
+\`\`\`bash
+pingarden case list --json                              # all slugs + companyName + tags + canvas/story counts
+pingarden case list --tag <tag> --json                  # filter by tag
+pingarden case describe <slug> --lang <en|zh> --json    # zone titles / prompts / colour legend per canvas (no sticky bodies)
+pingarden case read <slug> --lang <en|zh> --json        # full canvases (block-grouped stickies) + full story bodies
+pingarden case fork <slug> --json                       # deep-copy into a new editable user project
+\`\`\`
+
+Library canvases are read-only. \`canvas write\` against a library canvasId returns 403. See \`workflows/case-library.md\` for the read-vs-fork decision and \`reference/case-library.md\` for kinds, slugs, and the read-only enforcement story.
 
 ## Output envelope
 
@@ -524,5 +595,44 @@ interface AiContext {
 \`zoneHistory\` is the per-sticky audit trail of every zone it has occupied. Useful when refining: a sticky that has bounced between zones is probably a sign of a fuzzy concept.
 
 The \`generatedAt\` ISO timestamp is the only non-deterministic field — don't rely on it for diffs across reads.
+`,
+
+  'reference/case-library.md': `# Case library — quick reference
+
+The case library is a **read-only** federated corpus that ships with the app. Each \`Project\` has a \`source\` field: \`'user'\` (default, writable) or \`'library'\` (read-only). Library writes return HTTP 403 with \`code: "CASE_LIBRARY_READ_ONLY"\`.
+
+## Case kinds
+
+The \`kind\` field in \`case.json\` is one of:
+
+- **\`company\`** — a single real company analysed across multiple canvases (BMC + VPC + …). The default and most common kind. Example: \`wechat-private-domain\`.
+- **\`industry\`** — an industry archetype + N concrete-company variants on the same canvas type. Use the \`variant\` field on each \`CanvasMeta\` (\`{ id, label, role: 'archetype' | 'variant' }\`) to label each one. Example use case: Strategyzer's "Unbundling" — one archetype BMC + Maerki Baumann (unbundled) + Pictet (integrated).
+- **\`pattern\`** — an abstract reusable business pattern (Unbundling, Long Tail, Free, Multi-Sided Platform). Carries \`patternName\` and \`examples[]\` referencing other case slugs.
+- **\`comparison\`** — multiple subjects placed side-by-side (Tesla vs BYD on the same BMC type).
+
+The \`kind\` chip colour in the web LibraryPage is keyed off this field — \`company\` = emerald, \`industry\` = amber, \`pattern\` = violet, \`comparison\` = sky.
+
+## Slug rules
+
+- Kebab-case (lowercase letters, digits, dashes). Validated by \`pingarden case author\` and \`case validate\`.
+- Globally unique within the library — \`pingarden case validate\` fails packaging if two cases share a slug.
+- Same-named companies disambiguated by suffix: \`apple-inc\` / \`apple-records\`.
+- Same-company multi-source analyses: ONE slug, sticky \`createdBy\` field carries source labels ("HBR 2023" / "Tencent 财报"). One canvas per analytic frame, never one canvas per source.
+
+## Read-only enforcement layers
+
+Three independent layers refuse library writes — they're redundant on purpose:
+
+1. **\`BundleStorage\`** throws \`BundleReadOnlyError\` from every write method.
+2. **\`FederatedStorage\`** checks bundle ownership before delegating to user storage.
+3. **\`server.ts\` \`setErrorHandler\`** maps \`BundleReadOnlyError\` → HTTP 403 \`{ code: "CASE_LIBRARY_READ_ONLY", … }\`.
+
+This means even if a future route forgets to consider the library, the storage layer still blocks the write. Don't try to "fix" library data via a sneakier write path — there isn't one.
+
+## Authoring (offline)
+
+\`pingarden case author --from <spec.json> --out packages/case-library/cases/<slug>/\` produces the full directory layout. The Yjs encoder used is the same \`encodeObjectsBulk\` from \`@pingarden/shared/yjs\` that the server uses for \`POST /objects/bulk\`, so authored cases round-trip through the runtime byte-identically.
+
+\`pingarden case validate\` runs as a packaging gate (\`scripts/package-mac.sh\`); a broken case fails the DMG build before electron-builder kicks in.
 `,
 };

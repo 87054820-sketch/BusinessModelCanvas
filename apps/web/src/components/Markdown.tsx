@@ -1,5 +1,6 @@
 import { createContext, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkCjkFriendly from 'remark-cjk-friendly';
 import { useLightbox } from '../state/lightbox';
 
 interface Props {
@@ -164,6 +165,7 @@ export function Markdown({
   return (
     <div className={className}>
       <ReactMarkdown
+        remarkPlugins={[remarkCjkFriendly]}
         rehypePlugins={isBlockGuidance ? [rehypeGroupH3Sections] : undefined}
         components={{
           // Heading scale tuned for the right-side inspector. Body sits

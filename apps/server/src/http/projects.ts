@@ -3,6 +3,7 @@ import type { FastifyInstance } from 'fastify';
 import { z } from 'zod';
 import type { Project } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
+import { BundleReadOnlyError } from '../storage/errors.js';
 import { getIdentity } from './identity.js';
 
 const CreateInput = z.object({
@@ -59,7 +60,11 @@ export function registerProjectRoutes(app: FastifyInstance, storage: CanvasStora
         updatedBy: identity.displayName,
       });
       return updated;
-    } catch {
+    } catch (err) {
+      // BundleReadOnlyError must reach the global handler so it maps
+      // to 403; only "not found" plain errors from FileSystemStorage
+      // keep the existing 404 behaviour.
+      if (err instanceof BundleReadOnlyError) throw err;
       return reply.code(404).send({ error: 'Project not found' });
     }
   });

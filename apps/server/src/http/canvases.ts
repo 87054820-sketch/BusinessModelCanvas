@@ -4,6 +4,7 @@ import { z } from 'zod';
 import type { CanvasMeta, Lang } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
+import { BundleReadOnlyError } from '../storage/errors.js';
 import { getIdentity } from './identity.js';
 
 const ContentDatePrecision = z.enum(['year', 'month', 'day']);
@@ -92,7 +93,10 @@ export function registerCanvasRoutes(
         updatedBy: identity.displayName,
       });
       return updated;
-    } catch {
+    } catch (err) {
+      // Read-only library writes propagate to the global handler → 403;
+      // only plain "not found" errors keep the existing 404 reply.
+      if (err instanceof BundleReadOnlyError) throw err;
       return reply.code(404).send({ error: 'Canvas not found' });
     }
   });

@@ -1,0 +1,35 @@
+{
+  "slug": "mobile-telco-unbundling",
+  "version": 1,
+  "kind": "industry",
+  "companyName": {
+    "en": "Mobile Telco Unbundling",
+    "zh": "移动通信运营商解绑"
+  },
+  "summary": {
+    "en": "Traditionally a mobile telecom operator did three businesses under one roof — running the network (infrastructure management), acquiring and retaining subscribers (customer relationship), and inventing new mobile products (product innovation). Each obeys a different economic logic: scale, scope, speed. Carriers like France Telecom, KPN, Vodafone, and Bharti Airtel are unbundling: outsourcing the network to equipment manufacturers (Nokia Siemens, Ericsson, Alcatel-Lucent), licensing innovation from creative shops (Mobilizy, tat), and keeping only the relationship business in-house. Drawn from Osterwalder & Pigneur, Business Model Generation pp. 62-63.",
+    "zh": "传统移动通信运营商把三种生意揉在一个屋檐下——运营网络(基础设施管理)、获取和留存用户(客户关系)、发明新的移动产品(产品创新)。三者经济逻辑不同:规模、范围、速度。法国电信、KPN、Vodafone、印度 Bharti Airtel 等运营商正在解绑:把网络外包给设备制造商(诺基亚西门子、爱立信、阿尔卡特朗讯),把创新外包给小型创意公司(Mobilizy、tat),自己只保留客户关系业务。素材来自 Osterwalder & Pigneur《商业模式新生代》第 62-63 页。"
+  },
+  "tags": [
+    "telecom",
+    "unbundling",
+    "infrastructure",
+    "consumer",
+    "industry-archetype"
+  ],
+  "sources": [
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Unbundling the Mobile Telco (pp. 62-63)"
+    },
+    {
+      "label": "Hagel III & Singer · Unbundling the Corporation · HBR 1999"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "9a7fb828-099d-44a7-baaa-37c162e67566",
+  "canvasCount": 8,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "unbundling"
+  ]
+}

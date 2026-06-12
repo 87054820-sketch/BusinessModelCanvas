@@ -197,7 +197,12 @@ export function Sticky({
     >
       {/* shadow */}
       <rect x={2} y={4} width={W} height={H} fill="rgba(0,0,0,0.12)" rx={2} />
-      {/* body */}
+      {/* body — `stroke` is always at least a faint 1px outline so
+          two stickies of the same colour stacked next to each other
+          (common in case-library auto-layout where every sticky in
+          a zone is one legend colour) read as TWO stickies, not as
+          one big blob. The selected state escalates to a darker
+          2px outline. */}
       <rect
         x={0}
         y={0}
@@ -205,8 +210,8 @@ export function Sticky({
         height={H}
         fill={sticky.color}
         rx={2}
-        stroke={selected ? '#1F2937' : 'transparent'}
-        strokeWidth={selected ? 2 : 0}
+        stroke={selected ? '#1F2937' : 'rgba(15,23,42,0.22)'}
+        strokeWidth={selected ? 2 : 1}
         vectorEffect="non-scaling-stroke"
         onPointerDown={startDrag}
         onPointerMove={onDrag}

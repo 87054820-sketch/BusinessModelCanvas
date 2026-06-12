@@ -38,12 +38,14 @@ You are working with **PinGarden**, a local Strategyzer-style canvas tool. This 
 - `workflows/story.md` — write a project narrative with embedded canvases
 - `workflows/snapshot.md` — when to milestone, how to restore
 - `workflows/translate.md` — en ⇄ zh round trip
+- `workflows/case-library.md` — read curated company cases for inspiration, or fork one to start fast
 
 ### Reference
 - `reference/cli-cheatsheet.md` — top commands with JSON output examples
 - `reference/color-legend.md` — sticky palette + how to interpret colours
 - `reference/identity.md` — `X-Display-Name` / `--as` / audit trail
 - `reference/ai-context-shape.md` — shape of the `/ai-context` JSON
+- `reference/case-library.md` — case kinds, slug rules, read-only rules
 
 ## Key invariants — never violate
 

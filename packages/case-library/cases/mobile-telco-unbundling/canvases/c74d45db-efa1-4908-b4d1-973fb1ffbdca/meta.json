@@ -1,0 +1,23 @@
+{
+  "id": "c74d45db-efa1-4908-b4d1-973fb1ffbdca",
+  "projectId": "9a7fb828-099d-44a7-baaa-37c162e67566",
+  "defId": "business-model-canvas",
+  "title": "[EN] Unbundled telco — pure customer-relationship business",
+  "language": "en",
+  "variant": {
+    "id": "unbundled-telco-en",
+    "label": {
+      "en": "Unbundled telco (EN)",
+      "zh": "解绑后的运营商(英文版)"
+    },
+    "description": {
+      "en": "Bharti Airtel (India): outsourced network operations to Ericsson + Nokia Siemens, IT to IBM. Kept brand, retail, and customer relationships in-house. Economic engine is share-of-wallet growth.",
+      "zh": "Bharti Airtel(印度):把网络运营外包给爱立信+诺基亚西门子,IT 交给 IBM。自己只留品牌、零售、客户关系。经济引擎是钱包份额增长。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-12T11:12:39.541Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-12T11:12:39.541Z",
+  "updatedBy": "PinGarden Library"
+}

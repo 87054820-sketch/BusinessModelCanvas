@@ -4,6 +4,9 @@ import staticPlugin from '@fastify/static';
 import { resolve } from 'node:path';
 import { config } from './config.js';
 import { FileSystemStorage } from './storage/FileSystemStorage.js';
+import { BundleStorage } from './storage/BundleStorage.js';
+import { FederatedStorage } from './storage/FederatedStorage.js';
+import { BundleReadOnlyError } from './storage/errors.js';
 import { loadCanvasDefs } from './canvasDefs/loader.js';
 import { registerCanvasDefRoutes } from './http/canvasDefs.js';
 import { registerCanvasRoutes } from './http/canvases.js';
@@ -14,6 +17,7 @@ import { registerAiContextRoutes } from './http/aiContext.js';
 import { registerStickyImportRoutes } from './http/stickyImport.js';
 import { registerObjectsImportRoutes } from './http/objectsImport.js';
 import { registerStoryRoutes } from './http/stories.js';
+import { registerLibraryRoutes } from './http/library.js';
 import {
   getPortFilePath,
   registerPortFileCleanup,
@@ -38,8 +42,13 @@ async function main() {
     `Loaded ${defs.length} canvas definitions`,
   );
 
-  const storage = new FileSystemStorage(config.dataDir);
-  app.log.info({ dataDir: config.dataDir }, 'Using FileSystemStorage');
+  const userStorage = new FileSystemStorage(config.dataDir);
+  const bundleStorage = await BundleStorage.load(config.caseLibraryDir);
+  const storage = new FederatedStorage(userStorage, bundleStorage);
+  app.log.info(
+    { dataDir: config.dataDir, caseLibraryDir: config.caseLibraryDir, libraryCases: bundleStorage.size },
+    'Using FederatedStorage (user FileSystemStorage + read-only BundleStorage)',
+  );
 
   registerCanvasDefRoutes(app, defs);
   registerProjectRoutes(app, storage);
@@ -50,6 +59,24 @@ async function main() {
   registerStickyImportRoutes(app, storage, defs);
   registerObjectsImportRoutes(app, storage, defs);
   registerStoryRoutes(app, storage);
+  registerLibraryRoutes(app, storage);
+
+  // Global error handler — maps storage-level read-only failures to a
+  // structured 403 so every mutating route gets correct HTTP semantics
+  // without each handler having to remember the check. Anything else
+  // delegates to fastify's default behaviour.
+  app.setErrorHandler((error, _req, reply) => {
+    if (error instanceof BundleReadOnlyError) {
+      return reply.code(403).send({
+        error: 'Forbidden',
+        message: error.message,
+        code: 'CASE_LIBRARY_READ_ONLY',
+        operation: error.operation,
+        ...(error.targetId ? { targetId: error.targetId } : {}),
+      });
+    }
+    return reply.send(error);
+  });
 
   app.get('/health', async () => ({
     ok: true,

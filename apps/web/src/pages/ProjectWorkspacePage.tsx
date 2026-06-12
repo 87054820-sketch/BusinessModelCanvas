@@ -4,6 +4,7 @@ import type {
   CanvasDef,
   CanvasI18n,
   CanvasMeta,
+  CaseLibraryEntry,
   ColorLegendEntry,
   Lang,
   Project,
@@ -42,8 +43,10 @@ import { CanvasToolbar } from '../workspace/CanvasToolbar';
 import { Inspector } from '../workspace/Inspector';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { LightboxRoot } from '../components/Lightbox';
+import { ReadOnlyBanner } from '../components/ReadOnlyBanner';
 import { useUiPrefs } from '../state/uiPrefs';
 import { StoryWorkspace } from '../story/StoryWorkspace';
+import { libraryApi } from '../api/library';
 
 /**
  * `true` when the keystroke should be left to the browser's native text
@@ -128,6 +131,18 @@ export function ProjectWorkspacePage() {
   /** All canvas-def summaries — used by the Inspector to label related-canvas chips. */
   const [defSummaries, setDefSummaries] = useState<CanvasDefSummary[]>([]);
 
+  /**
+   * Bilingual case-library metadata (name + summary) for the active
+   * project, ONLY when the project is a library case. Lazily fetched
+   * via `libraryApi.get(slug)` once per project load. Lets us swap
+   * `Project.name` (single-string, English-only on the bundle) for
+   * `case.companyName[lang]` in every surface that displays the
+   * project header (sidebar, inspector). User projects keep
+   * `caseEntry === null` and the surfaces fall back to `project.name`
+   * unchanged.
+   */
+  const [caseEntry, setCaseEntry] = useState<CaseLibraryEntry | null>(null);
+
   // Confirm dialogs
   const [pendingDeleteCanvas, setPendingDeleteCanvas] = useState<CanvasMeta | null>(null);
   const [pendingDeleteStory, setPendingDeleteStory] = useState<StoryMeta | null>(null);
@@ -159,6 +174,130 @@ export function ProjectWorkspacePage() {
     selectCanvas();
     if (rightCollapsed) setRightCollapsed(false);
   }
+
+  // True when the active project is a library case (read-only). Server
+  // already returns 403 on any write to a library canvas; this flag is
+  // the *UI* mirror — disable every editing affordance so the user
+  // doesn't waste effort dragging a sticky that won't save. Source of
+  // truth lives on `project.source` (synthesized by BundleStorage).
+  const readOnly = project?.source === 'library';
+
+  // ── Library projects: per-language sidebar filter ─────────────────
+  // The case library ships canvases with a per-canvas `language` field
+  // (the bilingual workaround until sticky.text becomes a localised
+  // string). When the user opens a library project we want the
+  // workspace to feel single-language: only show the canvases / stories
+  // matching the active UI language. Forks become regular user
+  // projects (`source === 'user'`) so this filter never fires for
+  // them — user projects can mix EN / ZH freely.
+  //
+  // Single-language cases (e.g. wechat-private-domain when EN content
+  // doesn't exist yet) fall back to showing everything they ship —
+  // see `langFallbackActive` for the small banner that explains.
+  //
+  // Declared up here (instead of further down with the rest of the
+  // memos) because the route-effect below pins the URL's
+  // `:canvasId` / `:storyId` against the *filtered* list so a deep
+  // link to a hidden language redirects to the user's active-lang
+  // first item.
+  const liveLang: Lang = i18n.language === 'zh' ? 'zh' : 'en';
+  const filteredCanvases = useMemo(() => {
+    if (!readOnly) return canvases;
+    const matched = canvases.filter((c) => c.language === liveLang);
+    return matched.length > 0 ? matched : canvases;
+  }, [canvases, readOnly, liveLang]);
+  const filteredStories = useMemo(() => {
+    if (!readOnly) return stories;
+    // Older library stories (pre-language-tagging) have no `language`
+    // field — when nothing matches the active UI lang, fall back to
+    // showing every available story rather than an empty list.
+    const matched = stories.filter((s) => s.language === liveLang);
+    return matched.length > 0 ? matched : stories;
+  }, [stories, readOnly, liveLang]);
+
+  // ── Library-case bilingual metadata fetch ─────────────────────────
+  // Library projects are synthesised by BundleStorage with
+  // `project.name = caseJson.companyName.en` (single-string, see
+  // apps/server/src/storage/BundleStorage.ts:318-327). The bilingual
+  // version lives on `case.json.companyName: LocalizedLabel` and
+  // `case.json.summary: LocalizedLabel`. Fetch the case detail once
+  // per project load and stash on `caseEntry`; the `displayProject`
+  // memo below swaps in the language-matching strings so every
+  // sidebar / inspector surface naturally renders the right language.
+  // Network failure leaves `caseEntry === null`, so surfaces fall
+  // back to `project.name` (English) — graceful degradation.
+  useEffect(() => {
+    let cancelled = false;
+    if (!readOnly || !project?.companySlug || !identity) {
+      setCaseEntry(null);
+      return;
+    }
+    libraryApi
+      .get(project.companySlug, identity.displayName)
+      .then((detail) => {
+        if (!cancelled) setCaseEntry(detail.case);
+      })
+      .catch(() => {
+        if (!cancelled) setCaseEntry(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [readOnly, project?.companySlug, identity]);
+
+  /**
+   * Project shape rendered everywhere: identical to `project` for
+   * user projects; for library cases we splice in the bilingual
+   * `companyName` / `summary` from the case-library entry so the
+   * sidebar header + right "项目" inspector tab follow the language
+   * switcher. The Project type itself stays single-language — only
+   * the strings we display are swapped.
+   *
+   * Computed below the `if (!project)` early return so `project` is
+   * already narrowed to non-null. Skipping `useMemo` here is fine —
+   * the work is one object spread and two lookups, and React's
+   * shallow prop equality means children only re-render on actual
+   * `name`/`description` changes (caseEntry / lang flips).
+   */
+  // (defined further down, after the null guard at `if (!project)`).
+  /**
+   * `true` when the workspace is showing a library case in the wrong
+   * language — i.e. the case ships content but none of it is tagged
+   * with the user's active UI language. Drives the small fallback
+   * notice under the read-only banner. We compare against the *raw*
+   * canvases list so the notice survives the fallback substitution
+   * inside `filteredCanvases` (which would otherwise hide the
+   * mismatch).
+   */
+  const langFallbackActive = useMemo(() => {
+    if (!readOnly) return false;
+    if (canvases.length === 0) return false;
+    return !canvases.some((c) => c.language === liveLang);
+  }, [readOnly, canvases, liveLang]);
+  /**
+   * The single language a fallback case is actually available in
+   * (used in the notice copy). Returns the most common foreign
+   * language across the case's canvases — typically just one.
+   */
+  const fallbackAvailableLang = useMemo<Lang | null>(() => {
+    if (!langFallbackActive) return null;
+    const counts: Partial<Record<Lang, number>> = {};
+    for (const c of canvases) {
+      if (c.language === 'en' || c.language === 'zh') {
+        counts[c.language] = (counts[c.language] ?? 0) + 1;
+      }
+    }
+    let best: Lang | null = null;
+    let bestN = 0;
+    for (const k of ['en', 'zh'] as Lang[]) {
+      const n = counts[k] ?? 0;
+      if (n > bestN) {
+        bestN = n;
+        best = k;
+      }
+    }
+    return best;
+  }, [langFallbackActive, canvases]);
 
   // Load the canvas-defs summary list once. Used to localise the
   // "Pairs with" chip labels in the Inspector for canvas types that
@@ -198,42 +337,62 @@ export function ProjectWorkspacePage() {
   }, [projectId, identity, navigate]);
 
   // Choose the active canvas: explicit param > most recently updated > none.
+  // For BARE project URLs (no canvasId, no storyId), prefer to land on
+  // the first story when one exists — case-library cases ship with
+  // curated narrative, and even user projects with a story usually
+  // benefit from the "reading first" entry point. Only fall back to
+  // first canvas when the project has no stories.
   useEffect(() => {
     if (storyId) {
       setActiveCanvas(null);
       return;
     }
-    if (canvases.length === 0) {
+    if (canvasId) {
+      if (filteredCanvases.length === 0) {
+        setActiveCanvas(null);
+        return;
+      }
+      const m = filteredCanvases.find((c) => c.id === canvasId);
+      setActiveCanvas(m ?? filteredCanvases[0] ?? null);
+      // Auto-redirect if URL points to a missing canvas, or to one
+      // hidden by the per-language filter (e.g. user toggles the lang
+      // switcher while sitting on an EN canvas of a bilingual library
+      // case — pin to the first ZH canvas instead).
+      if (!m && filteredCanvases[0] && projectId) {
+        navigate(`/p/${projectId}/c/${filteredCanvases[0].id}`, { replace: true });
+      }
+      return;
+    }
+    // Bare project URL — pick a default landing.
+    // Prefer first story (story-first reading flow). Falls back to
+    // first canvas if there are no stories. If the project has
+    // neither, leave both null so the workspace shows its empty
+    // state.
+    if (filteredStories.length > 0 && projectId) {
+      navigate(`/p/${projectId}/s/${filteredStories[0]!.id}`, { replace: true });
       setActiveCanvas(null);
       return;
     }
-    if (canvasId) {
-      const m = canvases.find((c) => c.id === canvasId);
-      setActiveCanvas(m ?? canvases[0] ?? null);
-      // Auto-redirect if URL points to a missing canvas.
-      if (!m && canvases[0] && projectId) {
-        navigate(`/p/${projectId}/c/${canvases[0].id}`, { replace: true });
-      }
-    } else {
-      // No canvas specified — pick the first (most recently updated) and
-      // update the URL so deep-links work.
-      const first = canvases[0]!;
+    if (filteredCanvases.length > 0) {
+      const first = filteredCanvases[0]!;
       setActiveCanvas(first);
       if (projectId) navigate(`/p/${projectId}/c/${first.id}`, { replace: true });
+      return;
     }
-  }, [canvases, canvasId, storyId, projectId, navigate]);
+    setActiveCanvas(null);
+  }, [filteredCanvases, filteredStories, canvasId, storyId, projectId, navigate]);
 
   useEffect(() => {
     if (!storyId) {
       setActiveStory(null);
       return;
     }
-    const s = stories.find((item) => item.id === storyId);
+    const s = filteredStories.find((item) => item.id === storyId);
     setActiveStory(s ?? null);
-    if (!s && stories.length > 0 && projectId) {
-      navigate(`/p/${projectId}/s/${stories[0]!.id}`, { replace: true });
+    if (!s && filteredStories.length > 0 && projectId) {
+      navigate(`/p/${projectId}/s/${filteredStories[0]!.id}`, { replace: true });
     }
-  }, [stories, storyId, projectId, navigate]);
+  }, [filteredStories, storyId, projectId, navigate]);
 
   // When the active canvas changes, default the right inspector to "this
   // canvas type's knowledge" view. Clicking a sticky/block on the canvas
@@ -348,6 +507,10 @@ export function ProjectWorkspacePage() {
         (e.key === 'Delete' || e.key === 'Backspace') &&
         sel.kind === 'sticky'
       ) {
+        // Library cases are read-only — block destructive shortcuts so
+        // the user gets no partial UI animation that the server is
+        // about to reject anyway.
+        if (readOnly) return;
         e.preventDefault();
         deleteSticky(doc!, sel.stickyId);
         useSelection.getState().clear();
@@ -355,6 +518,10 @@ export function ProjectWorkspacePage() {
       }
 
       if (cmd && (e.key === 'c' || e.key === 'C') && sel.kind === 'sticky') {
+        // Cmd-C is a *read* — store the sticky in our in-memory
+        // clipboard so the user can paste it into one of their own
+        // editable projects. We deliberately do NOT gate this on
+        // `readOnly`: copying out of the library is a useful flow.
         const sticky = stickies.find((s) => s.id === sel.stickyId);
         if (!sticky) return;
         e.preventDefault();
@@ -369,6 +536,7 @@ export function ProjectWorkspacePage() {
       }
 
       if (cmd && (e.key === 'x' || e.key === 'X') && sel.kind === 'sticky') {
+        if (readOnly) return; // cut = copy + delete; the delete half is forbidden
         const sticky = stickies.find((s) => s.id === sel.stickyId);
         if (!sticky) return;
         e.preventDefault();
@@ -385,6 +553,7 @@ export function ProjectWorkspacePage() {
       }
 
       if (cmd && (e.key === 'v' || e.key === 'V')) {
+        if (readOnly) return; // paste creates a new sticky / pin — forbidden
         // Sticky paste runs only when there's a sticky in the clipboard
         // AND the canvas has zones AND the user isn't actively focused
         // on a pin. If any of those don't hold we fall through to the
@@ -464,6 +633,7 @@ export function ProjectWorkspacePage() {
         (e.key === 'Delete' || e.key === 'Backspace') &&
         sel.kind === 'pin'
       ) {
+        if (readOnly) return;
         e.preventDefault();
         removePin(doc!, sel.pinId);
         useSelection.getState().clear();
@@ -471,6 +641,7 @@ export function ProjectWorkspacePage() {
       }
 
       if (cmd && (e.key === 'c' || e.key === 'C') && sel.kind === 'pin') {
+        // Read-only — copying a pin out of the library is fine.
         const pin = pins.find((p) => p.id === sel.pinId);
         if (!pin) return;
         e.preventDefault();
@@ -485,6 +656,7 @@ export function ProjectWorkspacePage() {
       }
 
       if (cmd && (e.key === 'x' || e.key === 'X') && sel.kind === 'pin') {
+        if (readOnly) return; // cut on a library pin would delete; forbidden
         const pin = pins.find((p) => p.id === sel.pinId);
         if (!pin) return;
         e.preventDefault();
@@ -501,6 +673,7 @@ export function ProjectWorkspacePage() {
       }
 
       if (cmd && (e.key === 'v' || e.key === 'V')) {
+        if (readOnly) return; // pin paste would create a new pin — forbidden
         // Pin paste fires when sticky paste didn't apply (no sticky
         // entry / no pin selected combo above didn't hit `return`).
         const entry = usePinClipboard.getState().entry;
@@ -549,7 +722,7 @@ export function ProjectWorkspacePage() {
 
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [doc, stickies, pins, pinClasses, bundle, identity, clearSelection]);
+  }, [doc, stickies, pins, pinClasses, bundle, identity, clearSelection, readOnly]);
 
   if (!identity || !projectId) return null;
   if (!project) {
@@ -559,6 +732,26 @@ export function ProjectWorkspacePage() {
       </div>
     );
   }
+
+  // Bilingual project header: for library cases, replace the
+  // single-string `Project.name` / `Project.description` (which
+  // BundleStorage seeded from `case.companyName.en`) with the active
+  // UI language's version pulled from the case-library detail. User
+  // projects (`caseEntry === null`) pass through unchanged. See the
+  // `caseEntry` fetch effect above.
+  const displayProject: Project = caseEntry
+    ? {
+        ...project,
+        name:
+          caseEntry.companyName[liveLang] ||
+          caseEntry.companyName.en ||
+          project.name,
+        description:
+          caseEntry.summary[liveLang] ||
+          caseEntry.summary.en ||
+          project.description,
+      }
+    : project;
 
   async function handleAddCanvas(defId: string) {
     if (!project || !identity) return;
@@ -637,12 +830,48 @@ export function ProjectWorkspacePage() {
     navigate('/');
   }
 
+  /**
+   * Banner Fork CTA — deep-copy the library case into the user's own
+   * project list and navigate to the new project. We honour the user's
+   * current UI language: an EN user gets an EN-only fork, a ZH user
+   * gets a ZH-only fork. The slug + lang are produced by the banner
+   * (which itself is derived from `project.companySlug` + the same
+   * `lang` we pass in below).
+   */
+  async function handleForkLibraryCase(slug: string, forkLang: Lang) {
+    if (!identity) return;
+    const result = await libraryApi.fork(slug, identity.displayName, forkLang);
+    navigate(`/p/${result.project.id}`);
+  }
+
   return (
-    <div className="flex h-full">
-      <ProjectSidebar
-        project={project}
-        canvases={canvases}
-        stories={stories}
+    <div className="flex h-full flex-col">
+      {readOnly && (
+        <ReadOnlyBanner
+          companySlug={project.companySlug}
+          lang={lang}
+          onFork={handleForkLibraryCase}
+        />
+      )}
+      {langFallbackActive && fallbackAvailableLang && (
+        // Lighter strip beneath the read-only banner, fired only when
+        // the case has zero canvases tagged with the active UI lang
+        // (typically: single-language cases like wechat-private-domain
+        // before its EN translation lands). The user still sees the
+        // case content via the fallback inside `filteredCanvases`;
+        // this strip just explains why nothing flipped over when they
+        // toggled the language switcher.
+        <div className="border-b border-amber-100 bg-amber-50/60 px-6 py-2 text-xs text-amber-800">
+          {t('library.langFallbackNotice', {
+            availableLang: t(`language.${fallbackAvailableLang}`),
+          })}
+        </div>
+      )}
+      <div className="flex min-h-0 flex-1">
+        <ProjectSidebar
+        project={displayProject}
+        canvases={filteredCanvases}
+        stories={filteredStories}
         activeCanvasId={activeCanvas?.id}
         activeStoryId={activeStory?.id}
         onSelect={(id) => navigate(`/p/${project.id}/c/${id}`)}
@@ -652,6 +881,7 @@ export function ProjectWorkspacePage() {
         onAddStory={handleAddStory}
         onDeleteCanvas={(c) => setPendingDeleteCanvas(c)}
         onDeleteStory={(s) => setPendingDeleteStory(s)}
+        readOnly={readOnly}
       />
 
       <main className="flex flex-1 flex-col bg-stone-50">
@@ -659,10 +889,11 @@ export function ProjectWorkspacePage() {
           <StoryWorkspace
             storyId={activeStory.id}
             projectId={project.id}
-            canvases={canvases}
+            canvases={filteredCanvases}
             lang={lang}
             displayName={identity.displayName}
             onStoryUpdated={handleStoryUpdated}
+            readOnly={readOnly}
           />
         ) : activeCanvas ? (
           <>
@@ -670,6 +901,7 @@ export function ProjectWorkspacePage() {
               canvas={activeCanvas}
               projectId={project.id}
               displayName={identity.displayName}
+              readOnly={readOnly}
               onRename={async (title) => {
                 const updated = await api.updateCanvas(
                   activeCanvas.id,
@@ -683,24 +915,45 @@ export function ProjectWorkspacePage() {
               }}
             />
             <div className="flex-1 overflow-hidden p-3">
-              <div className="relative h-full w-full rounded-lg bg-white shadow-sm">
+              <div className="relative flex h-full w-full flex-col rounded-lg bg-white shadow-sm">
                 {ready && doc ? (
                   <>
-                    {bundle?.def &&
-                      effectiveObjectTypes(bundle.def).includes('pinClass') && (
-                        <LegendPalette
+                    {/* Top legend strip — fixed 56px header that
+                        permanently reserves room for the pin/sticky
+                        legend chips. Previously these palettes floated
+                        as `position: absolute` over the SVG, which
+                        meant zooming the canvas pushed canvas content
+                        UNDER them and the chips obscured stickies near
+                        the top edge. The strip approach trades a bit
+                        of vertical canvas space for legends that
+                        can never be overlapped at any zoom level.
+                        Empty pin-class section (BMC etc.) still
+                        reserves the space — keeps layout stable across
+                        canvases. */}
+                    <div className="relative flex h-14 flex-shrink-0 items-center justify-between gap-3 border-b border-gray-200 px-3">
+                      <div className="flex min-w-0 items-center">
+                        {bundle?.def &&
+                          effectiveObjectTypes(bundle.def).includes('pinClass') && (
+                            <LegendPalette
+                              doc={doc}
+                              displayName={identity.displayName}
+                              lang={lang}
+                              readOnly={readOnly}
+                            />
+                          )}
+                      </div>
+                      {/* Sticky color legend — every canvas allows
+                          stickies, so this overlay is unconditional. */}
+                      <div className="flex min-w-0 items-center">
+                        <StickyLegendPalette
                           doc={doc}
-                          displayName={identity.displayName}
                           lang={lang}
+                          readOnly={readOnly}
                         />
-                      )}
-                    {/* Sticky color legend — every canvas allows
-                        stickies, so this overlay is unconditional. */}
-                    <StickyLegendPalette doc={doc} lang={lang} />
-                    {/* Sticky color legend — every canvas allows
-                        stickies, so this overlay is unconditional. */}
-                    <StickyLegendPalette doc={doc} lang={lang} />
-                    <CanvasRenderer
+                      </div>
+                    </div>
+                    <div className="relative flex-1 overflow-hidden">
+                      <CanvasRenderer
                       defId={activeCanvas.defId}
                       lang={lang}
                       doc={doc}
@@ -715,7 +968,14 @@ export function ProjectWorkspacePage() {
                         // strip, gutters between blocks) is the user's
                         // way to say "I'm done painting" without
                         // having to hit Esc or the exit button.
-                        activeClassId && doc
+                        // Library cases are read-only — the LegendPalette
+                        // will refuse to enter paint mode (Step 7), but
+                        // belt-and-suspenders: even if `activeClassId`
+                        // somehow gets set, swallow the click here so
+                        // no pin / sticky writes leak through.
+                        readOnly
+                          ? undefined
+                          : activeClassId && doc
                           ? (p) => {
                               if (!bundle?.def) return;
                               // Auto-exit when out of zone — better
@@ -792,6 +1052,7 @@ export function ProjectWorkspacePage() {
                             zones={def.zones}
                             toSvgPoint={toSvgPoint}
                             displayName={identity.displayName}
+                            readonly={readOnly}
                           />
                           {effectiveObjectTypes(def).includes('pin') && (
                             <PinLayer
@@ -808,11 +1069,13 @@ export function ProjectWorkspacePage() {
                                       )
                                   : undefined
                               }
+                              readonly={readOnly}
                             />
                           )}
                         </>
                       )}
                     </CanvasRenderer>
+                    </div>
                   </>
                 ) : (
                   <div className="flex h-full items-center justify-center text-sm text-gray-500">
@@ -913,25 +1176,27 @@ export function ProjectWorkspacePage() {
             </div>
             <div className="flex-1 overflow-hidden">
               <Inspector
-                project={project}
+                project={displayProject}
                 canvasCount={canvases.length}
                 doc={doc}
                 def={bundle?.def ?? null}
                 i18n={bundle?.i18n ?? null}
                 knowledge={bundle?.knowledge ?? null}
                 displayName={identity.displayName}
-                projectCanvases={canvases}
+                projectCanvases={filteredCanvases}
                 defNames={Object.fromEntries(defSummaries.map((d) => [d.id, d.name]))}
                 onSwitchCanvas={(id) => navigate(`/p/${project.id}/c/${id}`)}
                 onAddCanvas={handleAddCanvas}
                 onProjectPatch={handleProjectPatch}
                 onProjectDelete={handleProjectDelete}
+                readOnly={readOnly}
               />
             </div>
           </>
         )}
       </aside>
       )}
+      </div>
 
       <ConfirmDialog
         open={!!pendingDeleteCanvas}

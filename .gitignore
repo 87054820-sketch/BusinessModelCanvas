@@ -12,6 +12,8 @@ packages/*/dist/
 
 # Desktop packaging artifacts
 apps/desktop/build/
+# CLI packaging artifacts (skill zip distribution lives here)
+apps/cli/build/
 *.dmg
 *.zip
 *.blockmap

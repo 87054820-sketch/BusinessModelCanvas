@@ -90,7 +90,7 @@ export default defineConfig({
   // extraResources copy is self-contained — no node_modules needed
   // alongside dist/. Without this the CLI errors with
   // ERR_MODULE_NOT_FOUND when run from the packaged Mac app.
-  noExternal: [/^@pingarden\//, 'clipanion', 'picocolors', 'zod'],
+  noExternal: [/^@pingarden\//, 'clipanion', 'picocolors', 'zod', 'yjs'],
   // Inline the package version at build time so `pingarden --version`
   // and `pingarden doctor` report the real number from the bundle —
   // import.meta.url + readFile would point at the bundled file's

@@ -17,6 +17,11 @@ interface Props {
   canvasDefId: string;
   /** Add a sticky to this zone with optional pre-filled text. */
   onAddSticky: (text?: string) => void;
+  /** Library / read-only mode: hide the "+ Add as sticky" example
+   *  buttons and the "+ New empty sticky" footer button. The block
+   *  guidance + examples list itself stays visible (it's
+   *  educational content). */
+  readOnly?: boolean;
 }
 
 /** Right-panel content when a block is selected. */
@@ -26,6 +31,7 @@ export function BlockInspector({
   guidanceMd,
   canvasDefId,
   onAddSticky,
+  readOnly = false,
 }: Props) {
   const { t } = useTranslation();
 
@@ -63,14 +69,16 @@ export function BlockInspector({
                   className="group flex items-center justify-between gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2"
                 >
                   <span className="flex-1 text-xs text-gray-700">{ex}</span>
-                  <button
-                    type="button"
-                    onClick={() => onAddSticky(ex)}
-                    className="rounded border border-gray-200 px-2 py-0.5 text-[11px] text-gray-700 opacity-0 transition group-hover:opacity-100 hover:bg-gray-50"
-                    title={t('inspector.block.addAsSticky')}
-                  >
-                    +
-                  </button>
+                  {!readOnly && (
+                    <button
+                      type="button"
+                      onClick={() => onAddSticky(ex)}
+                      className="rounded border border-gray-200 px-2 py-0.5 text-[11px] text-gray-700 opacity-0 transition group-hover:opacity-100 hover:bg-gray-50"
+                      title={t('inspector.block.addAsSticky')}
+                    >
+                      +
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>
@@ -78,17 +86,26 @@ export function BlockInspector({
         )}
       </div>
 
-      <div className="border-t border-gray-200 p-4">
-        <button
-          type="button"
-          onClick={() => onAddSticky()}
-          className="w-full rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:bg-black"
-        >
-          {t('inspector.block.newSticky')}
-        </button>
-        {/* Reference: zone id — useful for debugging plugin canvases like Portfolio Map. */}
-        <div className="mt-2 text-center text-[10px] text-gray-400">{zone.id}</div>
-      </div>
+      {!readOnly && (
+        <div className="border-t border-gray-200 p-4">
+          <button
+            type="button"
+            onClick={() => onAddSticky()}
+            className="w-full rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:bg-black"
+          >
+            {t('inspector.block.newSticky')}
+          </button>
+          {/* Reference: zone id — useful for debugging plugin canvases like Portfolio Map. */}
+          <div className="mt-2 text-center text-[10px] text-gray-400">{zone.id}</div>
+        </div>
+      )}
+      {readOnly && (
+        // In read-only the zone id is still useful for debugging /
+        // copy-paste reference, even without the buttons.
+        <div className="border-t border-gray-200 p-3 text-center text-[10px] text-gray-400">
+          {zone.id}
+        </div>
+      )}
     </div>
   );
 }

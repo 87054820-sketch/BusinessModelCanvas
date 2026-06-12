@@ -21,6 +21,15 @@ interface Props {
   onAddStory: () => void;
   onDeleteCanvas: (c: CanvasMeta) => void;
   onDeleteStory: (s: StoryMeta) => void;
+  /**
+   * Library-case mode: hide every write affordance.
+   *   - "+ Add canvas" / "+ New story" footer buttons disappear
+   *   - per-row "···" delete menus disappear
+   *   - canvas / story selection stays clickable (navigation is read-only)
+   *   - project header stays clickable (it just switches the inspector tab)
+   * The collapsed-rail variant follows the same rules.
+   */
+  readOnly?: boolean;
 }
 
 /**
@@ -60,6 +69,7 @@ export function ProjectSidebar({
   onAddStory,
   onDeleteCanvas,
   onDeleteStory,
+  readOnly = false,
 }: Props) {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -137,20 +147,22 @@ export function ProjectSidebar({
           )}
         </div>
 
-        <div className="space-y-2 border-t border-gray-200 p-2">
-          <div className="flex justify-center">
-            <AddCanvasMenu onPick={onAddCanvas} compact />
+        {!readOnly && (
+          <div className="space-y-2 border-t border-gray-200 p-2">
+            <div className="flex justify-center">
+              <AddCanvasMenu onPick={onAddCanvas} compact />
+            </div>
+            <button
+              type="button"
+              onClick={onAddStory}
+              title={t('story.newStory')}
+              aria-label={t('story.newStory')}
+              className="flex h-9 w-full items-center justify-center rounded-md text-[#2A6B6B] hover:bg-[#EAF3F1]"
+            >
+              ✦
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={onAddStory}
-            title={t('story.newStory')}
-            aria-label={t('story.newStory')}
-            className="flex h-9 w-full items-center justify-center rounded-md text-[#2A6B6B] hover:bg-[#EAF3F1]"
-          >
-            ✦
-          </button>
-        </div>
+        )}
       </aside>
     );
   }
@@ -237,19 +249,21 @@ export function ProjectSidebar({
                     </span>
                     <span className="flex-1 truncate">{c.title}</span>
                   </button>
-                  <div className={active ? 'text-white' : 'text-gray-500'}>
-                    <MenuButton
-                      label="···"
-                      align="right"
-                      items={[
-                        {
-                          label: t('confirm.delete'),
-                          danger: true,
-                          onClick: () => onDeleteCanvas(c),
-                        },
-                      ]}
-                    />
-                  </div>
+                  {!readOnly && (
+                    <div className={active ? 'text-white' : 'text-gray-500'}>
+                      <MenuButton
+                        label="···"
+                        align="right"
+                        items={[
+                          {
+                            label: t('confirm.delete'),
+                            danger: true,
+                            onClick: () => onDeleteCanvas(c),
+                          },
+                        ]}
+                      />
+                    </div>
+                  )}
                 </li>
               );
             })}
@@ -284,19 +298,21 @@ export function ProjectSidebar({
                     </span>
                     <span className="flex-1 truncate">{s.title}</span>
                   </button>
-                  <div className={active ? 'text-white' : 'text-gray-500'}>
-                    <MenuButton
-                      label="···"
-                      align="right"
-                      items={[
-                        {
-                          label: t('confirm.delete'),
-                          danger: true,
-                          onClick: () => onDeleteStory(s),
-                        },
-                      ]}
-                    />
-                  </div>
+                  {!readOnly && (
+                    <div className={active ? 'text-white' : 'text-gray-500'}>
+                      <MenuButton
+                        label="···"
+                        align="right"
+                        items={[
+                          {
+                            label: t('confirm.delete'),
+                            danger: true,
+                            onClick: () => onDeleteStory(s),
+                          },
+                        ]}
+                      />
+                    </div>
+                  )}
                 </li>
               );
             })}
@@ -304,16 +320,18 @@ export function ProjectSidebar({
         )}
       </div>
 
-      <div className="space-y-2 border-t border-gray-200 p-3">
-        <AddCanvasMenu onPick={onAddCanvas} />
-        <button
-          type="button"
-          onClick={onAddStory}
-          className="flex w-full items-center justify-center rounded-lg border border-[#B8D4D0] bg-[#EAF3F1] px-3 py-2 text-sm font-semibold text-[#2A6B6B] transition hover:bg-[#DCEDEB]"
-        >
-          {t('story.newStory')}
-        </button>
-      </div>
+      {!readOnly && (
+        <div className="space-y-2 border-t border-gray-200 p-3">
+          <AddCanvasMenu onPick={onAddCanvas} />
+          <button
+            type="button"
+            onClick={onAddStory}
+            className="flex w-full items-center justify-center rounded-lg border border-[#B8D4D0] bg-[#EAF3F1] px-3 py-2 text-sm font-semibold text-[#2A6B6B] transition hover:bg-[#DCEDEB]"
+          >
+            {t('story.newStory')}
+          </button>
+        </div>
+      )}
     </aside>
   );
 }

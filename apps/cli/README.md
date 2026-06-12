@@ -83,6 +83,15 @@ pingarden canvas    list | get | create | update | delete
 pingarden template  list | get
 pingarden snapshot  list <canvasId> | create | restore --mode replace|fork | delete
 pingarden story     list | get | create | update | delete
+pingarden case      list [--tag <tag>]                 # browse the case library
+                    get <slug>                          # case.json + project + canvas/story metadata
+                    describe <slug> [--lang en|zh]      # zone titles / colour legend per canvas (no sticky bodies)
+                    read <slug> [--lang en|zh]          # full canvases (block-grouped) + full story bodies
+                    canvases <slug>                     # list canvases in a case
+                    stickies <slug> <canvasId>          # one canvas's sticky JSON
+                    fork <slug>                         # deep-copy into a new editable user project
+                    author --from <spec.json> --out <dir>  # offline: produce a complete case directory
+                    validate [<slug>]                   # offline: schema + ydoc decode + manifest consistency
 pingarden skill     build [--out <dir>] [--lang en|zh|both]
                     install [--local] [--dry-run]
 ```
@@ -166,6 +175,35 @@ pingarden snapshot restore <canvasId> <sid> --mode replace
 # or fork to a side branch:
 pingarden snapshot restore <canvasId> <sid> --mode fork
 ```
+
+**Browse the case library, then fork.** PinGarden ships a curated read-only library of company / industry / pattern / comparison analyses. Read commands let an AI inspect them as inspiration without polluting the user's workspace; `fork` deep-copies one into editable user storage.
+
+```bash
+pingarden case list --json                                  # all slugs + tags + counts
+pingarden case describe wechat-private-domain --lang en --json  # zone shape, no sticky bodies
+pingarden case read wechat-private-domain --lang en --json      # full canvases + story bodies
+pingarden case fork wechat-private-domain --json            # deep copy → new editable user project
+```
+
+`canvas write` against a library canvas returns 403 — the library is enforced read-only at the storage layer. Fork first to edit.
+
+**Author a new case (offline).** When you have a fully-prepped JSON spec describing a company analysis, produce the on-disk case directory:
+
+```bash
+pingarden case author --from spec.json --out packages/case-library/cases/tesla-2024
+pingarden case author --from spec.json --out /tmp/preview --dry-run --json   # validate without writing
+```
+
+The encoder is the same `encodeObjectsBulk` from `@pingarden/shared/yjs` the server uses for `POST /objects/bulk` — authored cases round-trip through the runtime byte-identically. Pin `--now <iso>` and pre-set `id` fields in the spec to make output byte-stable across rebuilds (CI gate).
+
+**Validate the case library (CI / packaging gate).**
+
+```bash
+pingarden case validate                       # scan everything
+pingarden case validate wechat-private-domain # one slug
+```
+
+Checks slug-vs-directory match, schema validity, manifest consistency, that every `live.ydoc` decodes via `Y.applyUpdate`, and that referenced project/canvas/story files exist. Wired into `scripts/package-mac.sh` so a broken case fails the DMG build before electron-builder runs.
 
 ## Troubleshooting
 

@@ -16,6 +16,55 @@ export interface Project {
   createdBy: string;      // display name
   updatedAt: string;
   updatedBy: string;
+  // ── Case-library origin metadata (only set when source==='library') ────
+  /** `'user'` (default when omitted) or `'library'`. Library projects are
+   *  read-only: the storage backend rejects mutations. Set by BundleStorage
+   *  when hydrating a project from the bundled case-library tree. */
+  source?: ProjectSource;
+  /** Stable kebab-case slug — single source of truth for case identity.
+   *  Mirrors `case.json.slug`. Library-only. */
+  companySlug?: string;
+  /** Human-readable name (full company name, industry name, pattern name).
+   *  Library-only. */
+  companyName?: string;
+  /** Free-form classification tags (industry, region, era, theme).
+   *  Library-only. */
+  tags?: string[];
+  /** Discriminator that lets clients render different cards / behaviours
+   *  per kind. Mirrors `case.json.kind`. Library-only. */
+  caseKind?: CaseKind;
+}
+
+export type ProjectSource = 'user' | 'library';
+
+/**
+ * Case-library entry kind. Lets the UI and AI distinguish between four
+ * fundamentally different teaching artifacts that all live in the case
+ * library:
+ *
+ * - `'company'`   — single company analysis (e.g. WeChat private domain).
+ *                   The default for back-compat: a project without a
+ *                   `caseKind` field is treated as a company case.
+ * - `'industry'`  — industry archetype (typical model BMC) plus N company
+ *                   variants of the same defId, distinguished by
+ *                   `CanvasMeta.variant`. Example: Swiss Private Banking
+ *                   (archetype + Maerki Baumann + Pictet).
+ * - `'pattern'`   — abstract reusable business-model pattern (Unbundling,
+ *                   Long Tail, Multi-Sided Platforms, Free, Open). Carries
+ *                   `patternName` and references industry/company examples
+ *                   via `examples`.
+ * - `'comparison'` — side-by-side comparison of multiple peers (Tesla vs
+ *                    BYD). Like `'industry'` but without an archetype.
+ */
+export type CaseKind = 'company' | 'industry' | 'pattern' | 'comparison';
+
+/**
+ * Bibliographic citation attached to a case. Surfaced in the case library
+ * preview modal and via `pingarden case read`.
+ */
+export interface CaseSource {
+  label: string;
+  url?: string;
 }
 
 export interface ColorLegendEntry {
@@ -83,6 +132,30 @@ export interface CanvasMeta {
   createdBy: string;      // display name
   updatedAt: string;      // ISO
   updatedBy: string;
+  /**
+   * Library-only. When a single case (project) holds multiple canvases of
+   * the SAME defId — e.g. an industry archetype BMC plus one BMC per
+   * company variant — `variant` distinguishes them. Drives UI tabs in the
+   * read-only case viewer and lets `pingarden case read` group canvases
+   * by variant in its output. Absent on user-authored canvases.
+   */
+  variant?: CanvasVariant;
+}
+
+/**
+ * Variant tag on a library-case canvas. Used when one case (slug) needs
+ * multiple canvases of the same defId — e.g. Swiss Private Banking carries
+ * an industry-archetype BMC and one BMC per concrete bank.
+ */
+export interface CanvasVariant {
+  /** Stable id within the case, e.g. 'archetype' | 'maerki-baumann'. */
+  id: string;
+  label: LocalizedLabel;
+  description?: LocalizedLabel;
+  /** Optional role hint. `'archetype'` marks the typical industry default;
+   *  `'variant'` marks a deviation. Comparison-kind cases typically leave
+   *  this unset (all peers are equals). */
+  role?: 'archetype' | 'variant';
 }
 
 // ──────────────────────────────────────────────────────────────────────────
@@ -99,6 +172,13 @@ export interface StoryMeta {
   contentDate?: string;
   contentDatePrecision?: ContentDatePrecision;
   contentDateLabel?: string;
+  /**
+   * Authoring language. Required on case-library stories so the
+   * workspace can render the right one per UI language; optional on
+   * user-created stories (which are free-form and don't get filtered).
+   * `case author` enforces this for new library cases.
+   */
+  language?: Lang;
   createdAt: string;
   createdBy: string;
   updatedAt: string;
@@ -715,6 +795,104 @@ export interface AiContextSticky {
   height?: number;
   /** Always non-empty — synthesised from creation metadata if missing. */
   zoneHistory: ZoneHistoryEntry[];
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// Case library — read-only catalog of curated business-analysis examples
+// shipped with each app version. Sourced from `packages/case-library/cases/
+// <slug>/case.json` plus the project / canvases / stories beneath it. The
+// HTTP surface is `GET /library/cases`, `GET /library/cases/:slug`,
+// `POST /library/cases/:slug/fork`. See plan: generic-strolling-tarjan.md.
+// ──────────────────────────────────────────────────────────────────────────
+
+/**
+ * Case-library catalog entry — what `GET /library/cases` returns per case.
+ * Same shape on disk in `case.json` (the server hydrates it via
+ * BundleStorage).
+ */
+export interface CaseLibraryEntry {
+  /** Stable kebab-case identity. Build script enforces uniqueness. */
+  slug: string;
+  /** case.json schema version; lets us evolve the on-disk shape later. */
+  version: number;
+  kind: CaseKind;
+  /** Bilingual headline label. For `kind==='company'` this is the company
+   *  name; for `industry` the industry name; for `pattern` the pattern
+   *  name (mirrored on `patternName`); for `comparison` the comparison
+   *  topic. */
+  companyName: LocalizedLabel;
+  /** Bilingual one-paragraph blurb shown on the case card and preview. */
+  summary: LocalizedLabel;
+  /** Free-form classification tags (industry, region, era, theme). */
+  tags: string[];
+  /** Bibliographic citations / source attributions. */
+  sources: CaseSource[];
+  /** Resolved project id (the FederatedStorage project that holds the
+   *  canvases + stories). Stable across app launches because the bundle
+   *  is the source of truth. */
+  projectId: string;
+  /** Number of canvases in the case (for card display). */
+  canvasCount: number;
+  /** Number of stories in the case. */
+  storyCount: number;
+  /**
+   * Per-language counts derived by `BundleStorage` from each canvas's
+   * `language` field. Lets the case card / preview / workspace show
+   * the user-facing count for the current UI language (with the total
+   * as fallback for back-compat or single-language cases). Optional so
+   * older case bundles without per-canvas language don't break.
+   */
+  canvasesByLanguage?: Partial<Record<Lang, number>>;
+  /** Same as `canvasesByLanguage` but for stories. */
+  storiesByLanguage?: Partial<Record<Lang, number>>;
+  /** Optional def id of the canvas to use as the card thumbnail. When
+   *  absent the UI picks the first canvas. */
+  thumbnailDefId?: string;
+  /** `kind==='pattern'` only — the formal pattern name (often slightly
+   *  different from `companyName` for branding). */
+  patternName?: LocalizedLabel;
+  /** `kind==='pattern'` only — links to industry/company cases that
+   *  illustrate this pattern. */
+  examples?: CaseExampleRef[];
+  /** `kind` ∈ `'company' | 'industry'` — backlinks to the abstract
+   *  patterns this case exemplifies. Pattern slugs only. */
+  appliesPatterns?: string[];
+}
+
+/**
+ * Reference from a pattern case to a concrete example case (industry or
+ * company). `role` lets us highlight a "primary" exemplar in the UI.
+ */
+export interface CaseExampleRef {
+  slug: string;
+  role?: 'primary' | 'secondary';
+}
+
+/**
+ * Response from `POST /library/cases/:slug/fork`. The new project lives in
+ * user storage and is fully editable; the original library case is
+ * untouched.
+ */
+export interface CaseForkResult {
+  project: Project;
+  /** New canvas ids in the user copy (parallel to the source library
+   *  canvases by index). Useful when the caller wants to deep-link
+   *  straight into a specific forked canvas. */
+  canvasIds: string[];
+  /** New story ids in the user copy. */
+  storyIds: string[];
+}
+
+/**
+ * Detail response for `GET /library/cases/:slug` — case metadata plus
+ * the runtime project / canvas / story metadata that lives behind it.
+ * Keeps the case browsing UI in one round trip.
+ */
+export interface CaseLibraryDetail {
+  case: CaseLibraryEntry;
+  project: Project;
+  canvases: CanvasMeta[];
+  stories: StoryMeta[];
 }
 
 // ──────────────────────────────────────────────────────────────────────────

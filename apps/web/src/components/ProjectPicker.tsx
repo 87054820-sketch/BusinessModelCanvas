@@ -61,7 +61,9 @@ export function ProjectPicker({ projects, onSelect, onRequestDelete, disabled }:
             </div>
           ) : (
             <div className="max-h-72 overflow-y-auto py-1">
-              {projects.map((p) => (
+              {projects.map((p) => {
+                const isLibrary = p.source === 'library';
+                return (
                 <div
                   key={p.id}
                   className="group flex items-start gap-1 px-3 py-2.5 hover:bg-gray-50"
@@ -74,8 +76,15 @@ export function ProjectPicker({ projects, onSelect, onRequestDelete, disabled }:
                     }}
                     className="min-w-0 flex-1 text-left"
                   >
-                    <div className="truncate text-sm font-medium text-gray-900">
-                      {p.name}
+                    <div className="flex items-center gap-1.5">
+                      <span className="truncate text-sm font-medium text-gray-900">
+                        {p.name}
+                      </span>
+                      {isLibrary && (
+                        <span className="shrink-0 rounded-full bg-amber-50 px-1.5 py-0.5 text-[9px] font-medium text-amber-700">
+                          {t('library.readOnlyBadge')}
+                        </span>
+                      )}
                     </div>
                     {p.description ? (
                       <div className="mt-0.5 line-clamp-1 text-xs text-gray-500">
@@ -87,34 +96,37 @@ export function ProjectPicker({ projects, onSelect, onRequestDelete, disabled }:
                       {dateFmt.format(new Date(p.updatedAt))}
                     </div>
                   </button>
-                  <button
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setOpen(false);
-                      onRequestDelete(p);
-                    }}
-                    className="mt-0.5 shrink-0 rounded p-1 text-gray-400 hover:bg-red-50 hover:text-red-600"
-                    title={t('confirm.delete')}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                  {!isLibrary && (
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setOpen(false);
+                        onRequestDelete(p);
+                      }}
+                      className="mt-0.5 shrink-0 rounded p-1 text-gray-400 hover:bg-red-50 hover:text-red-600"
+                      title={t('confirm.delete')}
                     >
-                      <path d="M3 6h18" />
-                      <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
-                      <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
-                    </svg>
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M3 6h18" />
+                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                      </svg>
+                    </button>
+                  )}
                 </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

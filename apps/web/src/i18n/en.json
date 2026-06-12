@@ -33,7 +33,11 @@
     "openExistingProject": "Open existing project",
     "noProjects": "No projects yet",
     "startWithTemplate": "Start project with {{name}}",
-    "relatedCanvases": "Pairs with"
+    "relatedCanvases": "Pairs with",
+    "browseLibraryLink": "Browse case library & all projects",
+    "browseLibraryAndProjects": "Browse cases & projects",
+    "browseLibrary": "Browse case library",
+    "myProjects": "My projects"
   },
   "newProject": {
     "title": "Create project",
@@ -270,6 +274,42 @@
     },
     "experiment-canvas": {
       "tagline": "Turn risky assumptions into measurable validation experiments"
+    }
+  },
+  "myProjects": {
+    "pageSubtitle": "Your own projects — created from a blank canvas or forked from the case library.",
+    "empty": "No projects yet — create a blank one above, or fork a case from the library."
+  },
+  "library": {
+    "pageTitle": "Case library",
+    "pageSubtitle": "Real company analyses curated by PinGarden — open as read-only, or fork any case to make it editable.",
+    "casesSection": "Case library",
+    "myProjectsSection": "My projects",
+    "caseCount_one": "{{count}} case",
+    "caseCount_other": "{{count}} cases",
+    "storyCount_one": "{{count}} story",
+    "storyCount_other": "{{count}} stories",
+    "canvasesInCase_one": "{{count}} canvas in this case",
+    "canvasesInCase_other": "{{count}} canvases in this case",
+    "storiesInCase_one": "{{count}} story",
+    "storiesInCase_other": "{{count}} stories",
+    "noCases": "No cases shipped in this version yet.",
+    "noCanvases": "No canvases in this case.",
+    "noUserProjects": "You don't have any projects yet — fork a case above, or create a blank one from the home page.",
+    "sources": "Sources",
+    "openReadOnly": "Open as read-only",
+    "fork": "Fork to my projects",
+    "forking": "Forking",
+    "readOnlyBadge": "Library · read-only",
+    "workspaceBannerHint": "You're viewing a read-only library case.",
+    "langFallbackNotice": "This case is currently only available in {{availableLang}}.",
+    "langFallbackNotice": "This case is currently only available in {{availableLang}}.",
+    "workspaceBannerHint": "You're viewing a read-only library case.",
+    "kind": {
+      "company": "Company",
+      "industry": "Industry",
+      "pattern": "Pattern",
+      "comparison": "Comparison"
     }
   }
 }

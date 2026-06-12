@@ -42,6 +42,14 @@ interface Props {
     description?: string;
   }) => void;
   onProjectDelete: () => void;
+  /**
+   * True when this project belongs to the read-only case library.
+   * Disables every editing affordance in every sub-inspector — text
+   * inputs become readonly, color/class pickers become non-interactive,
+   * delete buttons hide. The visible UI stays informational so the user
+   * can still inspect content; what disappears are the actions.
+   */
+  readOnly?: boolean;
 }
 
 /**
@@ -75,6 +83,7 @@ export function Inspector({
   onAddCanvas,
   onProjectPatch,
   onProjectDelete,
+  readOnly = false,
 }: Props) {
   const selection = useSelection((s) => s.selection);
   const clear = useSelection((s) => s.clear);
@@ -98,6 +107,7 @@ export function Inspector({
       defNames={defNames}
       onSwitchCanvas={onSwitchCanvas}
       onAddCanvas={onAddCanvas}
+      readOnly={readOnly}
     />
   );
 
@@ -127,6 +137,12 @@ export function Inspector({
     scrollToStickyColor?: string | null,
   ) => {
     if (!doc || !def) return null;
+    // Config tab is exclusively about editing canvas-level knobs
+    // (Y-axis labels, factors, pin classes, sticky legend) — there's
+    // no read-only story for it. In library mode just fall through to
+    // the Knowledge / Intro view so the inspector still shows
+    // something useful when the user clicks the cog tab.
+    if (readOnly) return null;
     return (
       <CanvasConfigInspector
         doc={doc}
@@ -175,6 +191,7 @@ export function Inspector({
         block={block}
         guidanceMd={knowledge?.blocks[zone.id]}
         canvasDefId={def.id}
+        readOnly={readOnly}
         onAddSticky={(text) => {
           const c = zoneCentroid(zone.shape);
           // Add a small random offset so multiple stickies don't stack exactly.
@@ -212,7 +229,7 @@ export function Inspector({
   if (selection.kind === 'pin') {
     const pin = pins.find((p) => p.id === selection.pinId);
     if (!pin) return renderCanvasKnowledge() ?? renderProject();
-    return <PinInspector doc={doc} pin={pin} classes={pinClasses} />;
+    return <PinInspector doc={doc} pin={pin} classes={pinClasses} readOnly={readOnly} />;
   }
 
   // sticky
@@ -230,6 +247,7 @@ export function Inspector({
       blockTitle={blockTitle}
       colorLegend={colorLegend}
       lang={liveLang}
+      readOnly={readOnly}
       onText={(text) => updateSticky(doc, sticky.id, { text })}
       onColor={(color) => updateSticky(doc, sticky.id, { color })}
       onDelete={() => {

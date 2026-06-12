@@ -40,6 +40,18 @@ pingarden snapshot restore <canvasId> <sid> --mode replace
 pingarden snapshot restore <canvasId> <sid> --mode fork
 ```
 
+## Case library (read-only curated cases)
+
+```bash
+pingarden case list --json                              # all slugs + companyName + tags + canvas/story counts
+pingarden case list --tag <tag> --json                  # filter by tag
+pingarden case describe <slug> --lang <en|zh> --json    # zone titles / prompts / colour legend per canvas (no sticky bodies)
+pingarden case read <slug> --lang <en|zh> --json        # full canvases (block-grouped stickies) + full story bodies
+pingarden case fork <slug> --json                       # deep-copy into a new editable user project
+```
+
+Library canvases are read-only. `canvas write` against a library canvasId returns 403. See `workflows/case-library.md` for the read-vs-fork decision and `reference/case-library.md` for kinds, slugs, and the read-only enforcement story.
+
 ## Output envelope
 
 Every `--json` invocation returns:

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "cases": [
+    { "slug": "wechat-private-domain", "featured": true },
+    { "slug": "swiss-private-banking", "featured": true },
+    { "slug": "mobile-telco-unbundling", "featured": true },
+    { "slug": "patagonia", "featured": true },
+    { "slug": "carvana", "featured": true },
+    { "slug": "udemy", "featured": true },
+    { "slug": "aliexpress", "featured": true },
+    { "slug": "cainiao", "featured": true }
+  ]
+}

@@ -21,6 +21,11 @@ interface Props {
   defNames?: Record<string, Record<Lang, string>>;
   onSwitchCanvas?: (canvasId: string) => void;
   onAddCanvas?: (defId: string) => void;
+  /** Library-case mode: name / description become read-only, the
+   *  "Danger zone" delete block disappears entirely (a library project
+   *  is not the user's to delete), and the "+ add canvas" affordance
+   *  in `RelatedCanvasesStrip` is suppressed via the same flag. */
+  readOnly?: boolean;
 }
 
 /**
@@ -47,6 +52,7 @@ export function ProjectInspector({
   defNames,
   onSwitchCanvas,
   onAddCanvas,
+  readOnly = false,
 }: Props) {
   const { t } = useTranslation();
   const [name, setName] = useState(project.name);
@@ -61,10 +67,14 @@ export function ProjectInspector({
             value={name}
             onChange={(e) => setName(e.target.value)}
             onBlur={() => {
+              if (readOnly) return;
               if (name.trim() && name.trim() !== project.name) onPatch({ name: name.trim() });
               else setName(project.name);
             }}
-            className="w-full rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-gray-900 focus:outline-none"
+            readOnly={readOnly}
+            className={`w-full rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-gray-900 focus:outline-none ${
+              readOnly ? 'bg-gray-50 text-gray-700' : ''
+            }`}
           />
         </Field>
 
@@ -73,10 +83,14 @@ export function ProjectInspector({
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             onBlur={() => {
+              if (readOnly) return;
               if (description !== (project.description ?? '')) onPatch({ description });
             }}
+            readOnly={readOnly}
             rows={4}
-            className="w-full resize-none rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-gray-900 focus:outline-none"
+            className={`w-full resize-none rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-gray-900 focus:outline-none ${
+              readOnly ? 'bg-gray-50 text-gray-700' : ''
+            }`}
           />
         </Field>
 
@@ -93,7 +107,7 @@ export function ProjectInspector({
             projectCanvases={projectCanvases}
             defNames={defNames}
             onSwitchCanvas={onSwitchCanvas}
-            onAddCanvas={onAddCanvas}
+            onAddCanvas={readOnly ? undefined : onAddCanvas}
           />
         )}
 
@@ -102,19 +116,21 @@ export function ProjectInspector({
         </div>
       </div>
 
-      <div className="border-t border-gray-200 bg-red-50/40 p-4">
-        <div className="text-[11px] font-medium uppercase tracking-wider text-red-700">
-          {t('inspector.project.deleteHeader')}
+      {!readOnly && (
+        <div className="border-t border-gray-200 bg-red-50/40 p-4">
+          <div className="text-[11px] font-medium uppercase tracking-wider text-red-700">
+            {t('inspector.project.deleteHeader')}
+          </div>
+          <p className="mt-2 text-xs text-gray-600">{t('inspector.project.deleteHint')}</p>
+          <button
+            type="button"
+            onClick={() => setConfirmOpen(true)}
+            className="mt-3 rounded-lg border border-red-200 bg-white px-3 py-1.5 text-xs font-medium text-red-700 hover:bg-red-50"
+          >
+            {t('inspector.project.delete')}
+          </button>
         </div>
-        <p className="mt-2 text-xs text-gray-600">{t('inspector.project.deleteHint')}</p>
-        <button
-          type="button"
-          onClick={() => setConfirmOpen(true)}
-          className="mt-3 rounded-lg border border-red-200 bg-white px-3 py-1.5 text-xs font-medium text-red-700 hover:bg-red-50"
-        >
-          {t('inspector.project.delete')}
-        </button>
-      </div>
+      )}
 
       <ConfirmDialog
         open={confirmOpen}

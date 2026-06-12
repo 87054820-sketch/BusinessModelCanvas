@@ -33,7 +33,11 @@
     "openExistingProject": "打开已有项目",
     "noProjects": "还没有项目",
     "startWithTemplate": "用「{{name}}」创建项目",
-    "relatedCanvases": "配套画布"
+    "relatedCanvases": "配套画布",
+    "browseLibraryLink": "浏览案例库和我的项目",
+    "browseLibraryAndProjects": "浏览案例库与项目",
+    "browseLibrary": "浏览案例库",
+    "myProjects": "我的项目"
   },
   "newProject": {
     "title": "创建项目",
@@ -270,6 +274,36 @@
     },
     "experiment-canvas": {
       "tagline": "把高风险假设转化为可衡量、可复盘的验证实验"
+    }
+  },
+  "myProjects": {
+    "pageSubtitle": "你创建或 fork 的项目 —— 从空白模板新建或从案例库复制一份。",
+    "empty": "还没有项目 —— 在上方新建一个空白项目,或者从案例库 fork 一份。"
+  },
+  "library": {
+    "pageTitle": "案例库",
+    "pageSubtitle": "PinGarden 精选的真实公司分析 —— 以只读方式打开浏览,任何案例都可以 fork 一份成为可编辑的副本。",
+    "casesSection": "案例库",
+    "myProjectsSection": "我的项目",
+    "caseCount_other": "{{count}} 个案例",
+    "storyCount_other": "{{count}} 篇故事",
+    "canvasesInCase_other": "本案例包含 {{count}} 张画布",
+    "storiesInCase_other": "{{count}} 篇故事",
+    "noCases": "本版本暂未附带案例。",
+    "noCanvases": "本案例暂无画布。",
+    "noUserProjects": "你还没有自己的项目 —— 上面的案例 fork 一份,或者从首页创建一个空白项目。",
+    "sources": "出处 / 引用",
+    "openReadOnly": "以只读方式打开",
+    "fork": "Fork 到我的项目",
+    "forking": "正在复制",
+    "readOnlyBadge": "案例库 · 只读",
+    "workspaceBannerHint": "你正在浏览案例库的只读副本。",
+    "langFallbackNotice": "本案例目前只有{{availableLang}}版本。",
+    "kind": {
+      "company": "公司",
+      "industry": "行业",
+      "pattern": "模式",
+      "comparison": "对比"
     }
   }
 }

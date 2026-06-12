@@ -13,6 +13,14 @@ interface Props {
   displayName: string;
   /** Single-language UI hint used for placeholder default-name generation. */
   lang: Lang;
+  /**
+   * Hides every "write" affordance (the "+ Pin legend" button and per-
+   * chip ✎ edit handle) — the chips themselves remain visible so the
+   * pin-class colours / icons / labels can still serve as a reading
+   * legend. Used by the case-library workspace and by story-embedded
+   * canvases, both of which mount this palette purely as documentation.
+   */
+  readOnly?: boolean;
 }
 
 const ICON_GLYPH: Record<PinIcon, string> = PIN_ICON_GLYPH;
@@ -39,7 +47,7 @@ const ICON_GLYPH: Record<PinIcon, string> = PIN_ICON_GLYPH;
  * labels are rendered next to the curves (via PinLayer) and managed
  * via the inspector. The palette is the *picker*, not the list.
  */
-export function LegendPalette({ doc, displayName, lang }: Props) {
+export function LegendPalette({ doc, displayName, lang, readOnly = false }: Props) {
   const { t } = useTranslation();
   const classes = usePinClasses(doc);
   const activeClassId = useActiveClass((s) => s.activeClassId);
@@ -63,9 +71,11 @@ export function LegendPalette({ doc, displayName, lang }: Props) {
   }
 
   return (
-    <div className="pointer-events-none absolute left-3 top-3 z-10 flex items-center gap-1.5">
-      {/* Select / pan affordance — only visible when something IS active */}
-      {activeClassId && (
+    <div className="pointer-events-none flex items-center gap-1.5">
+      {/* Select / pan affordance — only visible when something IS active.
+          readOnly callers (case library / story embeds) never enter
+          paint mode, so this row is hidden there. */}
+      {!readOnly && activeClassId && (
         <button
           type="button"
           onClick={clearActive}
@@ -81,8 +91,12 @@ export function LegendPalette({ doc, displayName, lang }: Props) {
           key={c.id}
           cls={c}
           index={i}
-          active={activeClassId === c.id}
-          onToggle={() => toggleClass(c.id)}
+          active={!readOnly && activeClassId === c.id}
+          readOnly={readOnly}
+          onToggle={() => {
+            if (readOnly) return;
+            toggleClass(c.id);
+          }}
           onEdit={() => {
             // Open the right inspector to the Config tab AND scroll to
             // the clicked class. Setting both at once keeps the tab
@@ -94,19 +108,21 @@ export function LegendPalette({ doc, displayName, lang }: Props) {
         />
       ))}
 
-      <button
-        type="button"
-        onClick={handleAddClass}
-        className="pointer-events-auto rounded-md border border-gray-300 bg-white px-2.5 py-1 text-[12px] font-medium text-gray-700 shadow-sm hover:border-gray-900 hover:bg-gray-50 hover:text-gray-900"
-        title={t('legend.addClass')}
-        aria-label={t('legend.addClass')}
-      >
-        {t('legend.addClassFull')}
-      </button>
+      {!readOnly && (
+        <button
+          type="button"
+          onClick={handleAddClass}
+          className="pointer-events-auto rounded-md border border-gray-300 bg-white px-2.5 py-1 text-[12px] font-medium text-gray-700 shadow-sm hover:border-gray-900 hover:bg-gray-50 hover:text-gray-900"
+          title={t('legend.addClass')}
+          aria-label={t('legend.addClass')}
+        >
+          {t('legend.addClassFull')}
+        </button>
+      )}
 
       {/* Hint when a class is active and the user has at least one
           factor — describe the paint workflow + paste shortcut. */}
-      {activeClassId && (
+      {!readOnly && activeClassId && (
         <span className="pointer-events-none ml-2 hidden items-center text-[11px] italic text-gray-500 md:flex">
           {lang === 'zh' ? '点画布落图钉 · ⌘+V 复制粘贴' : 'Click canvas to drop · ⌘+V to paint'}
         </span>
@@ -122,9 +138,11 @@ interface ClassChipProps {
   onToggle: () => void;
   /** Open the LegendInspector scrolled to this class — for rename / recolor / delete. */
   onEdit: () => void;
+  /** Readonly chips drop the trailing ✎ pencil and the toggle is a no-op. */
+  readOnly?: boolean;
 }
 
-function ClassChip({ cls, index, active, onToggle, onEdit }: ClassChipProps) {
+function ClassChip({ cls, index, active, onToggle, onEdit, readOnly = false }: ClassChipProps) {
   const { t } = useTranslation();
   const titleText = `${cls.label} — ${t('legend.numberHint', { n: index + 1 })}`;
   return (
@@ -134,6 +152,8 @@ function ClassChip({ cls, index, active, onToggle, onEdit }: ClassChipProps) {
       className={`pointer-events-auto group flex max-w-[200px] items-center rounded-md border bg-white/95 shadow-sm transition ${
         active
           ? 'border-gray-900 ring-2 ring-gray-200'
+          : readOnly
+          ? 'border-gray-200'
           : 'border-gray-200 hover:border-gray-400'
       }`}
     >
@@ -141,7 +161,10 @@ function ClassChip({ cls, index, active, onToggle, onEdit }: ClassChipProps) {
         type="button"
         onClick={onToggle}
         title={titleText}
-        className="flex flex-1 items-center gap-1.5 px-2 py-1"
+        disabled={readOnly}
+        className={`flex flex-1 items-center gap-1.5 px-2 py-1 ${
+          readOnly ? 'cursor-default' : ''
+        }`}
       >
         {/* Single colored icon — replaces the previous color-disc +
             icon-glyph pair. The glyph IS the visual identity; rendering
@@ -161,18 +184,20 @@ function ClassChip({ cls, index, active, onToggle, onEdit }: ClassChipProps) {
           {index + 1 <= 9 ? index + 1 : ''}
         </span>
       </button>
-      <button
-        type="button"
-        onClick={(e) => {
-          e.stopPropagation();
-          onEdit();
-        }}
-        title={t('legend.editClass')}
-        aria-label={t('legend.editClass')}
-        className="flex h-full flex-shrink-0 items-center border-l border-gray-200 px-1.5 text-[11px] text-gray-400 hover:bg-gray-50 hover:text-gray-700"
-      >
-        ✎
-      </button>
+      {!readOnly && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onEdit();
+          }}
+          title={t('legend.editClass')}
+          aria-label={t('legend.editClass')}
+          className="flex h-full flex-shrink-0 items-center border-l border-gray-200 px-1.5 text-[11px] text-gray-400 hover:bg-gray-50 hover:text-gray-700"
+        >
+          ✎
+        </button>
+      )}
     </div>
   );
 }

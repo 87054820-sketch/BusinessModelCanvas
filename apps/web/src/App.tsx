@@ -4,6 +4,8 @@ import { useIdentity } from './identity/useIdentity';
 import { IdentityModal } from './identity/IdentityModal';
 import { LanguageSwitcher } from './i18n/LanguageSwitcher';
 import { ProjectListPage } from './pages/ProjectListPage';
+import { LibraryPage } from './pages/LibraryPage';
+import { MyProjectsPage } from './pages/MyProjectsPage';
 import { NewProjectPage } from './pages/NewProjectPage';
 import { ProjectWorkspacePage } from './pages/ProjectWorkspacePage';
 import { HistoryPage } from './pages/HistoryPage';
@@ -53,6 +55,8 @@ export default function App() {
       <div className="min-h-0 flex-1 overflow-auto">
         <Routes>
           <Route path="/" element={<ProjectListPage />} />
+          <Route path="/library" element={<LibraryPage />} />
+          <Route path="/projects" element={<MyProjectsPage />} />
           <Route path="/p/new" element={<NewProjectPage />} />
           <Route path="/p/:projectId" element={<ProjectWorkspacePage />} />
           <Route

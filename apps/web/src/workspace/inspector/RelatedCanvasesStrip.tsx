@@ -9,8 +9,13 @@ interface Props {
   projectCanvases: readonly CanvasMeta[];
   /** Click → navigate to a sibling canvas of the related def. */
   onSwitchCanvas: (canvasId: string) => void;
-  /** Click → create a new canvas of the related def in this project. */
-  onAddCanvas: (defId: string) => void;
+  /**
+   * Click → create a new canvas of the related def in this project.
+   * Optional — when the inspector is showing a read-only library
+   * project, the parent passes `undefined` so the dashed "+ create"
+   * chips collapse to plain reference labels (no clickable affordance).
+   */
+  onAddCanvas?: (defId: string) => void;
   /** Localised def names — `name[lang]` from the canvas-defs API. */
   defNames: Record<string, Record<Lang, string>>;
 }
@@ -57,6 +62,11 @@ export function RelatedCanvasesStrip({
           const peer = newestByDef.get(defId);
           const exists = !!peer;
           const localizedName = defNames[defId]?.[lang] ?? defId;
+          // Library / read-only mode: missing peers render as plain
+          // reference labels with no click handler. Only existing
+          // peers stay clickable (they're "navigate to canvas",
+          // which is read-only).
+          const canCreate = !exists && !!onAddCanvas;
           return (
             <li key={defId}>
               <button
@@ -64,21 +74,27 @@ export function RelatedCanvasesStrip({
                 title={
                   exists
                     ? `→ ${localizedName}`
-                    : `+ ${localizedName}`
+                    : canCreate
+                    ? `+ ${localizedName}`
+                    : localizedName
                 }
                 onClick={() => {
                   if (exists && peer) onSwitchCanvas(peer.id);
-                  else onAddCanvas(defId);
+                  else if (canCreate) onAddCanvas!(defId);
                 }}
+                disabled={!exists && !canCreate}
+                aria-disabled={!exists && !canCreate}
                 className={
                   exists
                     ? 'inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-2 py-1 text-xs font-medium text-gray-800 hover:border-gray-400 hover:bg-gray-50'
-                    : 'inline-flex items-center gap-2 rounded-lg border border-dashed border-gray-300 bg-transparent px-2 py-1 text-xs font-medium text-gray-500 hover:border-gray-500 hover:text-gray-700'
+                    : canCreate
+                    ? 'inline-flex items-center gap-2 rounded-lg border border-dashed border-gray-300 bg-transparent px-2 py-1 text-xs font-medium text-gray-500 hover:border-gray-500 hover:text-gray-700'
+                    : 'inline-flex items-center gap-2 rounded-lg border border-dashed border-gray-200 bg-transparent px-2 py-1 text-xs font-medium text-gray-400 cursor-default'
                 }
               >
                 <CanvasThumb id={defId} width={28} height={20} />
                 <span className="max-w-[140px] truncate">{localizedName}</span>
-                {!exists && <span className="text-gray-400">+</span>}
+                {canCreate && <span className="text-gray-400">+</span>}
               </button>
             </li>
           );

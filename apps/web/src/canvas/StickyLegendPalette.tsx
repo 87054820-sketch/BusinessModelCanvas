@@ -15,6 +15,14 @@ import { useStickyLegendFocus } from '../state/stickyLegendFocus';
 interface Props {
   doc: Y.Doc;
   lang: Lang;
+  /**
+   * Hides every "write" affordance (the "+ Sticky legend" button and
+   * per-chip ✎ edit handle) — the colour-meaning chips themselves
+   * remain visible so the legend still works as a reading aid in
+   * read-only contexts (case-library workspace, story-embedded
+   * canvases).
+   */
+  readOnly?: boolean;
 }
 
 /**
@@ -38,7 +46,7 @@ interface Props {
  * project-scoped legend because different canvases in the same
  * project use the same six colours for completely different things.
  */
-export function StickyLegendPalette({ doc, lang }: Props) {
+export function StickyLegendPalette({ doc, lang, readOnly = false }: Props) {
   const { t } = useTranslation();
   const legend = useColorLegend(doc);
   const entries = visibleLegendEntries(legend, lang);
@@ -76,17 +84,18 @@ export function StickyLegendPalette({ doc, lang }: Props) {
   }
 
   return (
-    <div className="pointer-events-none absolute right-3 top-3 z-10 flex items-center gap-1.5">
+    <div className="pointer-events-none flex items-center gap-1.5">
       {/* Inline hint when paint mode is active — same coaching pattern as
-          LegendPalette uses for pin paint. */}
-      {activeStickyColor && (
+          LegendPalette uses for pin paint. readOnly callers (case
+          library / story embeds) never enter paint mode. */}
+      {!readOnly && activeStickyColor && (
         <span className="pointer-events-none mr-1 hidden items-center text-[11px] italic text-gray-500 md:flex">
           {lang === 'zh' ? '点画布落便签 · Esc 退出' : 'Click canvas to drop · Esc to stop'}
         </span>
       )}
 
       {/* Exit-paint affordance — mirrors LegendPalette's "✕ exit draw". */}
-      {activeStickyColor && (
+      {!readOnly && activeStickyColor && (
         <button
           type="button"
           onClick={clearActive}
@@ -98,7 +107,7 @@ export function StickyLegendPalette({ doc, lang }: Props) {
       )}
 
       {entries.map(({ hex, label, description }) => {
-        const active = activeStickyColor === hex;
+        const active = !readOnly && activeStickyColor === hex;
         return (
           <div
             key={hex}
@@ -107,14 +116,22 @@ export function StickyLegendPalette({ doc, lang }: Props) {
             className={`pointer-events-auto group flex max-w-[220px] items-center rounded-md border bg-white/95 shadow-sm transition ${
               active
                 ? 'border-gray-900 ring-2 ring-gray-200'
+                : readOnly
+                ? 'border-gray-200'
                 : 'border-gray-200 hover:border-gray-400'
             }`}
           >
             <button
               type="button"
-              onClick={() => toggleColor(hex)}
+              onClick={() => {
+                if (readOnly) return;
+                toggleColor(hex);
+              }}
+              disabled={readOnly}
               title={description ? `${label} — ${description}` : label}
-              className="flex flex-1 items-center gap-1.5 px-2 py-1"
+              className={`flex flex-1 items-center gap-1.5 px-2 py-1 ${
+                readOnly ? 'cursor-default' : ''
+              }`}
             >
               <span
                 aria-hidden
@@ -125,31 +142,35 @@ export function StickyLegendPalette({ doc, lang }: Props) {
                 {label}
               </span>
             </button>
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                openConfigForHex(hex);
-              }}
-              title={t('legend.editClass')}
-              aria-label={t('legend.editClass')}
-              className="flex h-full flex-shrink-0 items-center border-l border-gray-200 px-1.5 text-[11px] text-gray-400 hover:bg-gray-50 hover:text-gray-700"
-            >
-              ✎
-            </button>
+            {!readOnly && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  openConfigForHex(hex);
+                }}
+                title={t('legend.editClass')}
+                aria-label={t('legend.editClass')}
+                className="flex h-full flex-shrink-0 items-center border-l border-gray-200 px-1.5 text-[11px] text-gray-400 hover:bg-gray-50 hover:text-gray-700"
+              >
+                ✎
+              </button>
+            )}
           </div>
         );
       })}
 
-      <button
-        type="button"
-        onClick={handleAddEntry}
-        className="pointer-events-auto rounded-md border border-gray-300 bg-white px-2.5 py-1 text-[12px] font-medium text-gray-700 shadow-sm hover:border-gray-900 hover:bg-gray-50 hover:text-gray-900"
-        title={t('stickyLegend.addLabel')}
-        aria-label={t('stickyLegend.addLabel')}
-      >
-        {t('stickyLegend.addLabel')}
-      </button>
+      {!readOnly && (
+        <button
+          type="button"
+          onClick={handleAddEntry}
+          className="pointer-events-auto rounded-md border border-gray-300 bg-white px-2.5 py-1 text-[12px] font-medium text-gray-700 shadow-sm hover:border-gray-900 hover:bg-gray-50 hover:text-gray-900"
+          title={t('stickyLegend.addLabel')}
+          aria-label={t('stickyLegend.addLabel')}
+        >
+          {t('stickyLegend.addLabel')}
+        </button>
+      )}
     </div>
   );
 }

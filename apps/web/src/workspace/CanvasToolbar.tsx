@@ -10,6 +10,13 @@ interface Props {
   displayName: string;
   /** Called when the title input commits — workspace persists via API. */
   onRename: (title: string) => void;
+  /**
+   * Library-case mode: title becomes a read-only label (still selectable
+   * for copy), the "Save milestone" button disappears (writes to data),
+   * the "History" link stays — viewing old snapshots is read-only and
+   * useful for inspecting how the case evolved.
+   */
+  readOnly?: boolean;
 }
 
 /**
@@ -28,6 +35,7 @@ export function CanvasToolbar({
   projectId,
   displayName,
   onRename,
+  readOnly = false,
 }: Props) {
   const { t } = useTranslation();
   const [title, setTitle] = useState(canvas.title);
@@ -48,29 +56,38 @@ export function CanvasToolbar({
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           onBlur={() => {
+            if (readOnly) return;
             const next = title.trim();
             if (next && next !== canvas.title) onRename(next);
             else setTitle(canvas.title);
           }}
           onKeyDown={(e) => {
+            if (readOnly) return;
             if (e.key === 'Enter') (e.target as HTMLInputElement).blur();
             if (e.key === 'Escape') {
               setTitle(canvas.title);
               (e.target as HTMLInputElement).blur();
             }
           }}
-          className="rounded border border-transparent px-2 py-1 text-base font-semibold text-gray-900 hover:border-gray-300 focus:border-gray-900 focus:outline-none"
+          readOnly={readOnly}
+          className={`rounded border border-transparent px-2 py-1 text-base font-semibold text-gray-900 focus:outline-none ${
+            readOnly
+              ? 'cursor-default'
+              : 'hover:border-gray-300 focus:border-gray-900'
+          }`}
           style={{ width: `${widthCh}ch` }}
         />
       </div>
       <div className="flex items-center gap-3">
-        <button
-          type="button"
-          onClick={() => setMilestoneOpen(true)}
-          className="rounded-lg border border-gray-300 px-3 py-1 text-xs hover:bg-gray-50"
-        >
-          {t('workspace.saveMilestone')}
-        </button>
+        {!readOnly && (
+          <button
+            type="button"
+            onClick={() => setMilestoneOpen(true)}
+            className="rounded-lg border border-gray-300 px-3 py-1 text-xs hover:bg-gray-50"
+          >
+            {t('workspace.saveMilestone')}
+          </button>
+        )}
         <Link
           to={`/p/${projectId}/c/${canvas.id}/history`}
           className="rounded-lg border border-gray-300 px-3 py-1 text-xs hover:bg-gray-50"
@@ -79,7 +96,7 @@ export function CanvasToolbar({
         </Link>
       </div>
 
-      {milestoneOpen && (
+      {milestoneOpen && !readOnly && (
         <MilestoneModal
           onClose={() => setMilestoneOpen(false)}
           onSave={async (name, description) => {

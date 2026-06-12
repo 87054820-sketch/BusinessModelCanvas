@@ -5,6 +5,7 @@ import * as Y from 'yjs';
 import type { ZoneShape } from '@pingarden/shared';
 import {
   DEFAULT_STICKY_HEIGHT,
+  DEFAULT_STICKY_WIDTH,
   STICKY_MAX_HEIGHT,
   STICKY_MAX_WIDTH,
   STICKY_MIN_HEIGHT,
@@ -114,23 +115,45 @@ export function registerStickyImportRoutes(
       try {
         const root = doc.getMap<Y.Map<unknown>>(STICKIES_KEY);
         doc.transact(() => {
-          input.forEach((sIn, idx) => {
+          // Per-zone counters — `resolvePosition` expects per-zone
+          // idx (so each zone's stickies start at row 0) AND the
+          // total in that zone (so the layout knows whether to
+          // shrink stickyH to make all of them fit). The pre-pass
+          // builds the totals; the encode pass increments idx as
+          // we walk the input.
+          const totalByZone = new Map<string, number>();
+          for (const sIn of input) {
+            totalByZone.set(sIn.zoneId, (totalByZone.get(sIn.zoneId) ?? 0) + 1);
+          }
+          const idxByZone = new Map<string, number>();
+          input.forEach((sIn) => {
             const id = randomUUID();
             ids.push(id);
             const zone = zoneById.get(sIn.zoneId)!;
-            const { x, y } = resolvePosition(zone.shape, sIn.x, sIn.y, idx);
+            const localIdx = idxByZone.get(sIn.zoneId) ?? 0;
+            idxByZone.set(sIn.zoneId, localIdx + 1);
+            const total = totalByZone.get(sIn.zoneId) ?? 1;
+            const placed = resolvePosition(
+              zone.shape,
+              sIn.x,
+              sIn.y,
+              localIdx,
+              total,
+            );
             const author = (sIn.authorName ?? identity.displayName).slice(0, 64);
 
             const sticky = new Y.Map<unknown>();
             sticky.set('id', id);
             sticky.set('zoneId', sIn.zoneId);
-            sticky.set('x', x);
-            sticky.set('y', y);
-            // Persist width/height ONLY when supplied — keeps the
-            // shape of stickies seeded without explicit dimensions
-            // identical to today (renderer falls back to defaults).
-            if (sIn.width !== undefined) sticky.set('width', sIn.width);
-            if (sIn.height !== undefined) sticky.set('height', sIn.height);
+            sticky.set('x', placed.x);
+            sticky.set('y', placed.y);
+            // Persist width/height when caller supplied them OR when
+            // auto-layout had to shrink the sticky to fit. Renderer
+            // falls back to DEFAULT_STICKY_{WIDTH,HEIGHT} otherwise.
+            const width = sIn.width ?? placed.width;
+            const height = sIn.height ?? placed.height;
+            if (width !== undefined) sticky.set('width', width);
+            if (height !== undefined) sticky.set('height', height);
             sticky.set('text', sIn.text);
             sticky.set('color', sIn.color ?? DEFAULT_COLOR);
             sticky.set('authorName', author);
@@ -201,22 +224,62 @@ function resolvePosition(
   shape: ZoneShape,
   x: number | undefined,
   y: number | undefined,
-  idx: number,
-): { x: number; y: number } {
+  idxInZone: number,
+  totalInZone: number,
+): { x: number; y: number; width?: number; height?: number } {
   if (x !== undefined && y !== undefined) return { x, y };
+  // Mirror the auto-layout in `packages/shared/src/yjs.ts` so the
+  // `POST /stickies/bulk` endpoint and the `case author` /
+  // `case relayout` CLIs place stickies identically. See that file
+  // for the full rationale (sticky x/y is centre, top inset clears
+  // zone title, single-column-preferred + auto-shrink fallback).
   const b = zoneBounds(shape);
-  const cx = b.x + b.w / 2; // horizontal center of zone
+  const topPad = 70;
+  const sidePad = 12;
+  const botPad = 12;
+  const gap = 8;
+  const innerH = Math.max(STICKY_MIN_HEIGHT, b.h - topPad - botPad);
+  const innerW = Math.max(STICKY_MIN_WIDTH, b.w - 2 * sidePad);
 
-  // Vertical-stack layout: place stickies top-down with spacing.
-  // Each sticky is positioned at the top of the zone, then offset downward
-  // by (STICKY_MAX_HEIGHT + verticalPadding) * idx to avoid overlap.
-  const verticalPadding = 8; // pixels between stickies
-  const stackSpacing = DEFAULT_STICKY_HEIGHT + verticalPadding;
-  const startY = b.y + 8; // start padding from zone top
-  const stackY = startY + stackSpacing * idx;
+  const total = Math.max(1, totalInZone);
+  let cols = 1;
+  let rowsPerCol = total;
+  let stickyW = Math.min(DEFAULT_STICKY_WIDTH, innerW);
+  let stickyH = Math.min(
+    DEFAULT_STICKY_HEIGHT,
+    (innerH - (rowsPerCol - 1) * gap) / rowsPerCol,
+  );
 
-  return {
+  if (stickyH < STICKY_MIN_HEIGHT && innerW >= 2 * STICKY_MIN_WIDTH + gap) {
+    cols = 2;
+    rowsPerCol = Math.ceil(total / cols);
+    stickyW = Math.min(DEFAULT_STICKY_WIDTH, (innerW - gap) / cols);
+    stickyH = Math.min(
+      DEFAULT_STICKY_HEIGHT,
+      (innerH - (rowsPerCol - 1) * gap) / rowsPerCol,
+    );
+  }
+  if (stickyH < STICKY_MIN_HEIGHT && innerW >= 3 * STICKY_MIN_WIDTH + 2 * gap) {
+    cols = 3;
+    rowsPerCol = Math.ceil(total / cols);
+    stickyW = Math.min(DEFAULT_STICKY_WIDTH, (innerW - 2 * gap) / cols);
+    stickyH = Math.min(
+      DEFAULT_STICKY_HEIGHT,
+      (innerH - (rowsPerCol - 1) * gap) / rowsPerCol,
+    );
+  }
+  stickyH = Math.max(stickyH, STICKY_MIN_HEIGHT);
+  stickyW = Math.max(stickyW, STICKY_MIN_WIDTH);
+
+  const col = Math.min(cols - 1, Math.floor(idxInZone / rowsPerCol));
+  const row = idxInZone - col * rowsPerCol;
+  const cx = b.x + sidePad + stickyW / 2 + col * (stickyW + gap);
+  const cy = b.y + topPad + stickyH / 2 + row * (stickyH + gap);
+  const out: { x: number; y: number; width?: number; height?: number } = {
     x: x === undefined ? cx : x,
-    y: y === undefined ? stackY : y,
+    y: y === undefined ? cy : y,
   };
+  if (stickyW < DEFAULT_STICKY_WIDTH) out.width = stickyW;
+  if (stickyH < DEFAULT_STICKY_HEIGHT) out.height = stickyH;
+  return out;
 }

@@ -1,0 +1,41 @@
+{
+  "slug": "aliexpress",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "AliExpress",
+    "zh": "速卖通(AliExpress)"
+  },
+  "summary": {
+    "en": "Alibaba's cross-border consumer e-commerce platform — Chinese sellers shipping direct to consumers in 200+ countries, no minimum order quantity, in 15+ local languages. Long the home of dropshippers and small-ticket impulse buys; since 2023 the AliExpress Choice program (curated catalog + 5-10 day delivery + after-sales guarantee) is its frontal response to Temu and Shein.",
+    "zh": "阿里巴巴海外面向消费者的电商平台 —— 中国卖家直发全球 200+ 国家、无 MOQ、支持 15+ 本地语言。长期是 dropshipper 和小件冲动消费的大本营;2023 年起的 AliExpress Choice(选品 + 5-10 天达 + 售后兜底)是它对 Temu 和 Shein 的正面回击。"
+  },
+  "tags": [
+    "e-commerce",
+    "cross-border",
+    "marketplace",
+    "China",
+    "Alibaba"
+  ],
+  "sources": [
+    {
+      "label": "businessmodelhacking.com · Business Model Canvas Examples",
+      "url": "https://www.businessmodelhacking.com/business-model-canvas-examples/"
+    },
+    {
+      "label": "Alibaba 2024 Annual Report (International Digital Commerce segment)",
+      "url": "https://www.alibabagroup.com/"
+    },
+    {
+      "label": "Reuters / Bloomberg coverage on AliExpress Choice + Temu competition (2023-2024)"
+    },
+    {
+      "label": "aliexpress.com (官网)",
+      "url": "https://www.aliexpress.com/"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "06959c78-f30f-4e08-bca5-b2b85aa42831",
+  "canvasCount": 2,
+  "storyCount": 2
+}

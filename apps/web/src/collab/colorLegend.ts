@@ -164,6 +164,22 @@ export function removeColorLegendEntry(doc: Y.Doc, hex: string): void {
 }
 
 /**
+ * Cheap one-shot check: does this canvas have any colour-legend entries
+ * worth rendering as chips? "Worth rendering" follows the same rule as
+ * `visibleLegendEntries` — at least one palette hex carries a non-empty
+ * label. Used by the story-embedded canvas to decide whether to mount
+ * the StickyLegendPalette overlay at all.
+ */
+export function hasColorLegend(doc: Y.Doc): boolean {
+  const root = getColorLegendRoot(doc);
+  for (const hex of STICKY_PALETTE) {
+    const label = root.get(`${hex}.label`);
+    if (typeof label === 'string' && label.trim().length > 0) return true;
+  }
+  return false;
+}
+
+/**
  * Pure resolver — given the live legend map, return only entries that
  * SHOULD render as chips. Mirrors the contract documented on
  * `StickyLegendPalette`: a row counts as "renderable" iff it has a

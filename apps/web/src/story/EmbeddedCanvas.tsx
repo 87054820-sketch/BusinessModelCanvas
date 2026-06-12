@@ -5,7 +5,11 @@ import { useTranslation } from 'react-i18next';
 import { CanvasRenderer } from '../canvas/CanvasRenderer';
 import { StickyLayer } from '../canvas/StickyLayer';
 import { PinLayer } from '../canvas/PinLayer';
+import { LegendPalette } from '../canvas/LegendPalette';
+import { StickyLegendPalette } from '../canvas/StickyLegendPalette';
 import { useReadOnlyYDoc } from '../collab/useReadOnlyYDoc';
+import { hasPinClasses } from '../collab/pinClasses';
+import { hasColorLegend } from '../collab/colorLegend';
 
 interface Props {
   projectId: string;
@@ -47,24 +51,61 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
         </Link>
       </div>
       <div className="h-[520px] bg-[#FAF8F3] p-4">
-        <div className="relative h-full w-full overflow-hidden rounded-2xl bg-white shadow-inner">
+        <div className="relative flex h-full w-full flex-col overflow-hidden rounded-2xl bg-white shadow-inner">
           {ready && doc ? (
-            <CanvasRenderer defId={canvas.defId} lang={lang} doc={doc} displayName={displayName}>
-              {({ def, toSvgPoint }) => (
-                <>
-                  <StickyLayer
-                    doc={doc}
-                    zones={def.zones}
-                    toSvgPoint={toSvgPoint}
-                    displayName={displayName}
-                    readonly
-                  />
-                  {effectiveObjectTypes(def).includes('pin') && (
-                    <PinLayer doc={doc} def={def} toSvgPoint={toSvgPoint} readonly />
-                  )}
-                </>
+            <>
+              {/* Top legend strip — 48px (h-12) reserved row that
+                  hosts the pin-class palette (left) and sticky-color
+                  palette (right). Mirrors the workspace strip but a
+                  notch shorter (workspace is h-14) because embeds
+                  are only 520px tall — every pixel matters.
+
+                  We previously placed both palettes as
+                  `position: absolute top-3 left-3 / right-3` overlay
+                  chips, but on a BMC the right-corner sticky-color
+                  legend physically overlapped the "Customer
+                  Relationships" zone. Strip approach trades 48px of
+                  canvas height for legends that cannot ever obscure
+                  content at any zoom level.
+
+                  The whole strip is conditional: if neither pin
+                  classes nor color legend has at least one entry,
+                  it disappears entirely so unstyled embeds stay
+                  pure SVG (preserves the "if no legend, no chrome"
+                  contract). */}
+              {(hasPinClasses(doc) || hasColorLegend(doc)) && (
+                <div className="flex h-12 flex-shrink-0 items-center justify-between gap-3 border-b border-stone-200 bg-stone-50/40 px-3">
+                  <div className="flex min-w-0 items-center">
+                    {hasPinClasses(doc) && (
+                      <LegendPalette doc={doc} displayName={displayName} lang={lang} readOnly />
+                    )}
+                  </div>
+                  <div className="flex min-w-0 items-center">
+                    {hasColorLegend(doc) && (
+                      <StickyLegendPalette doc={doc} lang={lang} readOnly />
+                    )}
+                  </div>
+                </div>
               )}
-            </CanvasRenderer>
+              <div className="relative flex-1 overflow-hidden">
+                <CanvasRenderer defId={canvas.defId} lang={lang} doc={doc} displayName={displayName}>
+                  {({ def, toSvgPoint }) => (
+                    <>
+                      <StickyLayer
+                        doc={doc}
+                        zones={def.zones}
+                        toSvgPoint={toSvgPoint}
+                        displayName={displayName}
+                        readonly
+                      />
+                      {effectiveObjectTypes(def).includes('pin') && (
+                        <PinLayer doc={doc} def={def} toSvgPoint={toSvgPoint} readonly />
+                      )}
+                    </>
+                  )}
+                </CanvasRenderer>
+              </div>
+            </>
           ) : (
             <div className="flex h-full items-center justify-center text-sm text-gray-500">
               {t('story.loadingCanvas')}

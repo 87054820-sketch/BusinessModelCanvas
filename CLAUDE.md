@@ -47,6 +47,10 @@ If either is missing the script exits non-zero. The script also runs `pnpm typec
 
 **Before packaging a release**: bump `apps/desktop/package.json:version` (this is what flows into `CFBundleShortVersionString`, the DMG filename, and macOS About / Get Info). Without a bump, recipients see the same version string and assume the build is identical to the previous one even when source has changed.
 
+**Skill regeneration is part of packaging.** `scripts/package-mac.sh` runs `pingarden skill install --local` after the CLI build, so the project-local skill at `<repo>/.claude/skills/pingarden/` is always regenerated against the canvas bundles being shipped. The script verifies `.claude/skills/pingarden/SKILL.md` exists before continuing — if you remove that step, the committed skill silently drifts from the DMG's canvas content. Don't.
+
+**Skill zip distribution.** The same packaging run also produces `apps/cli/build/skill/pingarden-skill-<version>.zip` — a portable artifact for users on non-Claude-Code agents (Cursor, Copilot Chat, Cline, …) or air-gapped machines. The zip contains `pingarden/` (the full skill tree) plus a top-level `INSTALL.md` with copy-paste install commands for every common agent. Filename embeds the content-hash version (e.g. `0.1.0-ff95de6f`) so identical canvas bundles always produce identical zip names. This file is the only `apps/cli/build/` output and is gitignored.
+
 **Distribution caveat**: there's no Apple Developer ID signing yet, so on any machine other than the builder's, the recipient must clear the quarantine bit after dragging the .app into /Applications:
 ```bash
 xattr -cr /Applications/PinGarden.app
@@ -77,6 +81,12 @@ These are the load-bearing abstractions that let the project scale without rewri
 
 9. **`pingarden` CLI + Claude skill** (`apps/cli/`) — the AI-write seam at the shell level. The CLI is a pure HTTP client; it discovers the running server via `<dataDir>/server.port` (or `.dev/server.port` in dev) and calls the same endpoints the web client uses. Every `canvas write` takes an auto pre-edit milestone snapshot, validates `zoneId`s locally against `/ai-context`, then POSTs to `/objects/bulk`. **Never let CLI code touch `apps/server/data/` directly** or parse Yjs binary — it must go through the API. The companion **skill** is fully generated from `packages/canvases/<id>/{manifest.json,i18n,knowledge,skill.{en,zh}.md}` — no parallel methodology files. Adding curated TL;DR to a canvas = drop `skill.{en,zh}.md` next to its manifest. Adding a "Pairs with" reason = add a `relatedNotes` entry to the manifest. The repo commits a copy of the generated skill at `<repo>/.claude/skills/pingarden/` (browsable on GitHub, auto-activates when Claude Code runs in this repo); also installable globally to `~/.claude/skills/pingarden/`. See `apps/cli/README.md` for full UX, `apps/cli/src/skill/templates.ts` for the markdown contract.
 
+10. **Case library — read-only federated storage** (`packages/case-library/` + `apps/server/src/storage/{Bundle,Federated}Storage.ts`) — curated company / industry / pattern / comparison analyses ship baked into the app like canvas bundles. Storage is a federation: `FederatedStorage` reads from `BundleStorage` (read-only, scans `<bundleDir>/cases/<slug>/`) first, falls back to `FileSystemStorage` (writable user data). Any write hitting a library id throws `BundleReadOnlyError` → 403 (mapped by `app.setErrorHandler` in `server.ts`). HTTP routes: `GET /library/cases`, `GET /library/cases/:slug`, `POST /library/cases/:slug/fork` (deep copy with story canvasId rewrite). The Yjs encoder for case `live.ydoc` files lives in `packages/shared/src/yjs.ts` — `encodeObjectsBulk` is a pure function consumed by both the server (`POST /objects/bulk`) and the CLI (`pingarden case author`), so authored cases round-trip through the runtime byte-identically. Adding a new case = `pingarden case author --from <spec.json> --out packages/case-library/cases/<slug>/` then add the slug to `packages/case-library/manifest.json`. Validation gate runs in `scripts/package-mac.sh` via `pingarden case validate`. **Bilingual content is required**: every case ships with both EN and ZH. Case metadata uses LocalizedLabel and is type-enforced; sticky text and story content currently use parallel canvases per language (2N canvases for N variants — see `packages/case-library/cases/swiss-private-banking/`) until a future schema upgrade folds sticky.text into LocalizedString. Single-language cases trigger a `case validate` warning today and an error once `wechat-private-domain` is translated.
+
+## Web UX norms (long-term)
+
+- **首页布局禁动 / Home page layout is frozen.** `ProjectListPage` (CenterState welcome + template strip + footer) has a stable visual contract that long-time users recognize. **Never** add a new section to the home page, restructure CenterState, or reorder/redesign the template strip for a new feature. New browse / detail experiences live on a second-level route (e.g. `/library`, `/projects`); cross-cutting features (analytics, sharing, comments, …) must follow the same pattern. **What is allowed**: swapping or adding CTAs in the existing CenterState button row. The 2026-06 polish swapped "Open existing project" → "Browse case library", then split the secondary CTA into two separate buttons (`/library` for cases, `/projects` for user work). All three buttons sit at the same visual weight (one primary, two secondaries) — that's the contract: button row remains a single horizontal flex group, all buttons size-matched, only one primary at a time. **What stays forbidden**: pushing additional sections (banners, strips, cards) above or between the welcome / button-row / template-strip / footer blocks; making the button row visually heterogeneous (different heights, different shapes); demoting the [Create blank project] primary or promoting a secondary.
+
 ## Where things live
 
 ```
@@ -87,7 +97,8 @@ pingarden/
 │   ├── desktop/                          Electron shell (DMG packaging entry)
 │   └── cli/                              `pingarden` CLI for AI agents — see apps/cli/README.md
 ├── packages/
-│   ├── shared/                           TypeScript domain types (browser + node safe)
+│   ├── shared/                           TypeScript domain types (browser + node safe; `./yjs` sub-export = pure encoder)
+│   ├── case-library/                     read-only curated case studies shipped with the app (one slug = one company / industry / pattern / comparison)
 │   └── canvases/
 │       ├── business-model-canvas/        real Strategyzer SVG, 9 rect zones
 │       ├── business-model-environment/   4 external forces (key trends, market, industry, macro) around BMC ref
@@ -102,7 +113,7 @@ pingarden/
 └── pnpm-workspace.yaml
 ```
 
-## Status (2026-06-02)
+## Status (2026-06-10)
 
 - ✓ M1 — skeleton, types, BMC bundle (real Strategyzer SVG)
 - ✓ M2 — sticky CRUD via Yjs + file persistence (single-user MVP)
@@ -118,6 +129,7 @@ pingarden/
 - ✓ Unified Canvas Config inspector — strategy / pin / sticky sections visually grouped; pin & sticky chip rails share the same Add flow
 - ✓ Sticky resize handle + auto-add sticky legend + Pin/Sticky inspector visual parity (one-circle class picker, "shown on canvas" hints)
 - ✓ `pingarden` CLI (`apps/cli/`) + official Claude skill — AI-write seam at the shell level. Auto-snapshot before bulk write, local zoneId validation, server discovery via port file, dual distribution (Mac app DMG + npm). Skill auto-generated from canvas bundles; **all 11 canvases** have curated `skill.{en,zh}.md` (TL;DR / fill order / cross-block invariants / anti-patterns / tone) and `relatedNotes` for bilingual "Pairs with" reasons. Project-local skill committed at `<repo>/.claude/skills/pingarden/`.
+- ✓ **Case library** (`packages/case-library/`, federation at `apps/server/src/storage/{Bundle,Federated}Storage.ts`) — read-only curated company / industry / pattern / comparison analyses ship baked into the app. Federation routes reads through bundle → user, writes always to user; library write attempts return 403. New `/library` second-level page (home page layout untouched per Web UX norm). CLI commands: `pingarden case {list,get,describe,read,canvases,stickies,fork,author,validate}`. First case migrated: `wechat-private-domain` (4 canvases, 1 long-form story).
 - ☐ Real-time multi-cursor + presence (single tab only today)
 - ☐ Autosave snapshots, Docker Compose, polish
 
@@ -127,4 +139,14 @@ Whenever you finish a chunk of work:
 - `pnpm typecheck` (all 3 workspaces must be green)
 - `pnpm --filter @pingarden/web build` (Vite must build)
 
-The plan file for the current/most-recent work iteration is at `~/.claude-internal/plans/robust-foraging-mango.md`.
+**Watch out for `@pingarden/shared` dist drift.** `packages/shared/package.json` resolves the `exports` field to `./dist/*.js` at runtime (types come from `src/`). The CLI's `case author` / `case relayout` / the server's runtime import the compiled dist, NOT the source — so a `pnpm typecheck` green only proves the types align. If you change `packages/shared/src/yjs.ts` (the Yjs encoder shared by CLI + server) and forget to rebuild, the CLI keeps using the old algorithm and your "fix" silently no-ops. After any edit to `packages/shared/src/`, run:
+
+```bash
+pnpm --filter @pingarden/shared run build
+pnpm --filter @pingarden/cli run build   # picks up new shared
+./start.sh                               # restart server with new shared
+```
+
+Without this dance, every downstream verification will hit stale binaries even though typecheck claimed green.
+
+The plan file for the current/most-recent work iteration is at `~/.claude-internal/plans/generic-strolling-tarjan.md`.

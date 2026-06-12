@@ -10,6 +10,10 @@ interface Props {
   doc: Y.Doc;
   pin: Pin;
   classes: PinClass[];
+  /** Library-case mode: class picker is disabled (clicking it does
+   *  nothing), label / body inputs are read-only, delete button is
+   *  hidden. */
+  readOnly?: boolean;
 }
 
 /**
@@ -33,7 +37,7 @@ interface Props {
  * gone: color and icon belong to the class (managed in the Legend
  * inspector), anchoring is no longer a concept.
  */
-export function PinInspector({ doc, pin, classes }: Props) {
+export function PinInspector({ doc, pin, classes, readOnly = false }: Props) {
   const { t } = useTranslation();
   const clear = useSelection((s) => s.clear);
 
@@ -64,6 +68,7 @@ export function PinInspector({ doc, pin, classes }: Props) {
             <ClassPicker
               current={cls}
               classes={classes}
+              disabled={readOnly}
               onPick={(nextId) =>
                 updatePin(doc, pin.id, { classId: nextId })
               }
@@ -76,7 +81,7 @@ export function PinInspector({ doc, pin, classes }: Props) {
               <div className="text-xs italic text-red-600">
                 {t('pin.classMissing')}
               </div>
-              {classes.length > 0 && (
+              {!readOnly && classes.length > 0 && (
                 <ClassPicker
                   current={null}
                   classes={classes}
@@ -97,11 +102,15 @@ export function PinInspector({ doc, pin, classes }: Props) {
             value={labelDraft}
             onChange={(e) => setLabelDraft(e.target.value)}
             onBlur={() => {
+              if (readOnly) return;
               if (labelDraft !== (pin.label ?? '')) {
                 updatePin(doc, pin.id, { label: labelDraft || null });
               }
             }}
-            className="w-full rounded border border-gray-300 px-2 py-1 text-sm focus:border-gray-900 focus:outline-none"
+            readOnly={readOnly}
+            className={`w-full rounded border border-gray-300 px-2 py-1 text-sm focus:border-gray-900 focus:outline-none ${
+              readOnly ? 'bg-gray-50 text-gray-700' : ''
+            }`}
             placeholder={t('pin.labelPlaceholder')}
             maxLength={120}
           />
@@ -115,11 +124,15 @@ export function PinInspector({ doc, pin, classes }: Props) {
             value={bodyDraft}
             onChange={(e) => setBodyDraft(e.target.value)}
             onBlur={() => {
+              if (readOnly) return;
               if (bodyDraft !== (pin.body ?? '')) {
                 updatePin(doc, pin.id, { body: bodyDraft || null });
               }
             }}
-            className="w-full rounded border border-gray-300 px-2 py-1 text-sm focus:border-gray-900 focus:outline-none"
+            readOnly={readOnly}
+            className={`w-full rounded border border-gray-300 px-2 py-1 text-sm focus:border-gray-900 focus:outline-none ${
+              readOnly ? 'bg-gray-50 text-gray-700' : ''
+            }`}
             placeholder={t('pin.bodyPlaceholder')}
             rows={2}
             maxLength={400}
@@ -127,18 +140,20 @@ export function PinInspector({ doc, pin, classes }: Props) {
         </Field>
       </div>
 
-      <div className="border-t border-gray-200 p-4">
-        <button
-          type="button"
-          onClick={() => {
-            removePin(doc, pin.id);
-            clear();
-          }}
-          className="w-full rounded-lg border border-red-200 bg-white px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-50"
-        >
-          {t('pin.delete')}
-        </button>
-      </div>
+      {!readOnly && (
+        <div className="border-t border-gray-200 p-4">
+          <button
+            type="button"
+            onClick={() => {
+              removePin(doc, pin.id);
+              clear();
+            }}
+            className="w-full rounded-lg border border-red-200 bg-white px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-50"
+          >
+            {t('pin.delete')}
+          </button>
+        </div>
+      )}
     </div>
   );
 }
@@ -176,6 +191,7 @@ interface ClassPickerProps {
   current: PinClass | null;
   classes: PinClass[];
   onPick: (id: string) => void;
+  disabled?: boolean;
 }
 
 /**
@@ -187,8 +203,13 @@ interface ClassPickerProps {
  *
  * The popover is constrained to existing classes — adding a new class
  * is a canvas-level change that lives in the Config tab.
+ *
+ * `disabled` collapses to a non-interactive chip — used by the
+ * library-case read-only inspector. The chip stays visible (so the
+ * user knows which class the pin belongs to) but the popover is
+ * suppressed, so there's no "click does nothing" UX trap.
  */
-function ClassPicker({ current, classes, onPick }: ClassPickerProps) {
+function ClassPicker({ current, classes, onPick, disabled = false }: ClassPickerProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -214,21 +235,30 @@ function ClassPicker({ current, classes, onPick }: ClassPickerProps) {
     <div ref={wrapRef} className="relative inline-block">
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="inline-flex items-center rounded-md border border-gray-300 bg-white px-2 py-1 text-xs hover:border-gray-900"
+        onClick={() => {
+          if (disabled) return;
+          setOpen((v) => !v);
+        }}
+        disabled={disabled}
+        aria-disabled={disabled}
+        className={`inline-flex items-center rounded-md border border-gray-300 bg-white px-2 py-1 text-xs ${
+          disabled ? 'cursor-default' : 'hover:border-gray-900'
+        }`}
       >
         {current ? (
-          <PinClassChip cls={current} withChevron />
+          <PinClassChip cls={current} withChevron={!disabled} />
         ) : (
           <span className="inline-flex items-center gap-1.5 text-gray-500">
             <span>{t('pin.pickClass')}</span>
-            <span aria-hidden="true" className="text-[10px] text-gray-400">
-              ▾
-            </span>
+            {!disabled && (
+              <span aria-hidden="true" className="text-[10px] text-gray-400">
+                ▾
+              </span>
+            )}
           </span>
         )}
       </button>
-      {open && (
+      {open && !disabled && (
         <div
           className="absolute left-0 top-full z-30 mt-1 min-w-[180px] rounded-lg border border-gray-200 bg-white p-1 shadow-md"
           role="listbox"

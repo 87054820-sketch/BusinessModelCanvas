@@ -1,20 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { CanvasMeta, Lang, Project } from '@pingarden/shared';
+import type { CanvasMeta, Lang } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { projectsApi } from '../api/projects';
 import { useIdentity } from '../identity/useIdentity';
-import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 import { TemplatePreviewModal } from '../components/TemplatePreviewModal';
-import { ProjectPicker, type ProjectWithCanvases } from '../components/ProjectPicker';
+import type { ProjectWithCanvases } from '../components/ProjectPicker';
 
 /**
  * Home page — landing-style layout:
  *   1. Center welcome (icon + poem + title + CTAs)
  *   2. Templates (full-bleed horizontal scroll strip)
  *   3. Footer
+ *
+ * The two CTAs are always [Create blank project] and [Browse cases &
+ * projects]. The latter routes to /library — the second-level page that
+ * carries both the case-library grid and the user's existing projects.
+ * Project deletion lives there too; the home page intentionally does no
+ * destructive operations.
  */
 export function ProjectListPage() {
   const { t, i18n } = useTranslation();
@@ -22,7 +27,6 @@ export function ProjectListPage() {
   const navigate = useNavigate();
   const [items, setItems] = useState<ProjectWithCanvases[] | null>(null);
   const [defs, setDefs] = useState<CanvasDefSummary[] | null>(null);
-  const [pendingDelete, setPendingDelete] = useState<ProjectWithCanvases | null>(null);
   const [previewDefId, setPreviewDefId] = useState<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -56,13 +60,6 @@ export function ProjectListPage() {
   if (!identity) return null;
   const lang = (i18n.language as Lang) ?? 'en';
 
-  async function handleDelete(p: ProjectWithCanvases) {
-    if (!identity) return;
-    await projectsApi.delete(p.id, identity.displayName);
-    setPendingDelete(null);
-    void load();
-  }
-
   function scrollTemplates(dir: 'left' | 'right') {
     const el = scrollRef.current;
     if (!el) return;
@@ -81,11 +78,7 @@ export function ProjectListPage() {
                 <p className="animate-pulse">{t('home.loading')}</p>
               </div>
             ) : (
-              <CenterState
-                items={items}
-                onSelectProject={(p) => navigate(`/p/${p.id}`)}
-                onRequestDelete={(p) => setPendingDelete(p)}
-              />
+              <CenterState items={items} />
             )}
           </section>
         </div>
@@ -151,22 +144,6 @@ export function ProjectListPage() {
       </footer>
 
       <div className="mx-auto max-w-5xl px-8">
-        <ConfirmDialog
-          open={!!pendingDelete}
-          title={t('confirm.deleteProject')}
-          message={t('confirm.deleteProjectMsg', {
-            name: pendingDelete?.name ?? '',
-            count: pendingDelete?.canvases.length ?? 0,
-          })}
-          confirmLabel={t('confirm.delete')}
-          cancelLabel={t('confirm.cancel')}
-          danger
-          onCancel={() => setPendingDelete(null)}
-          onConfirm={async () => {
-            if (pendingDelete) await handleDelete(pendingDelete);
-          }}
-        />
-
         <TemplatePreviewModal
           defId={previewDefId}
           lang={lang}
@@ -206,18 +183,19 @@ function splitByPunctuation(text: string): string[] {
 /** Center landing state: icon → poem → title → CTAs */
 function CenterState({
   items,
-  onSelectProject,
-  onRequestDelete,
 }: {
   items: ProjectWithCanvases[];
-  onSelectProject: (p: ProjectWithCanvases) => void;
-  onRequestDelete: (p: ProjectWithCanvases) => void;
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const subtitle = t('home.welcomeSubtitle');
   const poemLines = splitByPunctuation(subtitle);
-  const hasProjects = items.length > 0;
+  // `items` is no longer used here — both opening an existing project and
+  // browsing the case library are handled on the /library second-level
+  // page. We keep the prop for signature compatibility with the loading
+  // state hand-off; if a future home-page widget needs the project list
+  // again, it's already wired through.
+  void items;
 
   return (
     <div className="flex flex-col items-center">
@@ -263,21 +241,34 @@ function CenterState({
         {t('home.welcomeIntro')}
       </p>
 
-      {/* CTA buttons */}
-      <div className="mt-8 flex items-center gap-4">
+      {/* CTA buttons — three side-by-side. The home page intentionally
+          delegates two of the three to second-level routes: /library
+          for curated cases, /projects for the user's own work. Keeping
+          all three at the same visual weight (one primary, two
+          secondaries) preserves the welcome page's quiet aesthetic
+          while making both browse paths clearly discoverable. */}
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <button
           type="button"
           onClick={() => navigate('/p/new')}
-          className="brand-primary-button rounded-xl px-9 py-3.5 text-base font-semibold transition-all active:scale-[0.98]"
+          className="brand-primary-button rounded-xl px-7 py-3.5 text-base font-semibold transition-all active:scale-[0.98]"
         >
           {t('home.createBlankInstead')}
         </button>
-        <ProjectPicker
-          projects={items}
-          onSelect={onSelectProject}
-          onRequestDelete={onRequestDelete}
-          disabled={!hasProjects}
-        />
+        <button
+          type="button"
+          onClick={() => navigate('/library')}
+          className="rounded-xl border border-gray-200 bg-white px-7 py-3.5 text-base font-semibold text-gray-900 transition-all hover:border-gray-300 hover:bg-gray-50 active:scale-[0.98]"
+        >
+          {t('home.browseLibrary')}
+        </button>
+        <button
+          type="button"
+          onClick={() => navigate('/projects')}
+          className="rounded-xl border border-gray-200 bg-white px-7 py-3.5 text-base font-semibold text-gray-900 transition-all hover:border-gray-300 hover:bg-gray-50 active:scale-[0.98]"
+        >
+          {t('home.myProjects')}
+        </button>
       </div>
     </div>
   );

@@ -34,6 +34,20 @@ import {
 } from './commands/story.js';
 import { SkillBuildCommand, SkillInstallCommand } from './commands/skill.js';
 import { TemplateGetCommand, TemplateListCommand } from './commands/template.js';
+import {
+  CaseCanvasesCommand,
+  CaseDescribeCommand,
+  CaseForkCommand,
+  CaseGetCommand,
+  CaseListCommand,
+  CaseReadCommand,
+  CaseStickiesCommand,
+} from './commands/case.js';
+import {
+  CaseAuthorCommand,
+  CaseValidateCommand,
+} from './commands/caseAuthor.js';
+import { CaseRelayoutCommand } from './commands/caseRelayout.js';
 
 const [, , ...args] = process.argv;
 
@@ -85,6 +99,19 @@ cli.register(StoryDeleteCommand);
 // Templates (canvas-defs)
 cli.register(TemplateListCommand);
 cli.register(TemplateGetCommand);
+
+// Case library (read-only curated business analyses)
+cli.register(CaseListCommand);
+cli.register(CaseGetCommand);
+cli.register(CaseDescribeCommand);
+cli.register(CaseReadCommand);
+cli.register(CaseCanvasesCommand);
+cli.register(CaseStickiesCommand);
+cli.register(CaseForkCommand);
+// Case authoring + validation (offline, filesystem-only)
+cli.register(CaseAuthorCommand);
+cli.register(CaseValidateCommand);
+cli.register(CaseRelayoutCommand);
 
 // Skill
 cli.register(SkillBuildCommand);

@@ -19,6 +19,11 @@ interface Props {
   onText: (text: string) => void;
   onColor: (color: string) => void;
   onDelete: () => void;
+  /** Library-case mode: text becomes view-only, swatches become
+   *  non-interactive previews, delete button is hidden. The
+   *  shortcut hint at the bottom is also dropped — the sticky-as-object
+   *  shortcuts (Cmd-X / Delete) are gated upstream too. */
+  readOnly?: boolean;
 }
 
 /**
@@ -40,7 +45,7 @@ interface Props {
  * keyboard focus stays at the page level so workspace shortcuts
  * (Cmd+C/V/X, Delete / Backspace) operate on the sticky as an OBJECT.
  */
-export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText, onColor, onDelete }: Props) {
+export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText, onColor, onDelete, readOnly = false }: Props) {
   const { t } = useTranslation();
   const [editing, setEditing] = useState(false);
 
@@ -75,7 +80,7 @@ export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText,
           label={t('inspector.sticky.text')}
           hint={t('inspector.sticky.textHint')}
         >
-          {editing ? (
+          {editing && !readOnly ? (
             <div className="rounded-lg border border-gray-300 px-3 py-2 focus-within:border-gray-900">
               <StickyRichEditor
                 value={sticky.text}
@@ -90,9 +95,16 @@ export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText,
           ) : (
             <button
               type="button"
-              onClick={() => setEditing(true)}
-              title={t('inspector.sticky.clickToEdit')}
-              className="block min-h-[64px] w-full cursor-text rounded-lg border border-gray-200 bg-white px-3 py-2 text-left text-sm text-gray-800 hover:border-gray-400"
+              onClick={() => {
+                if (readOnly) return;
+                setEditing(true);
+              }}
+              title={readOnly ? undefined : t('inspector.sticky.clickToEdit')}
+              disabled={readOnly}
+              aria-disabled={readOnly}
+              className={`block min-h-[64px] w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-left text-sm text-gray-800 ${
+                readOnly ? 'cursor-default' : 'cursor-text hover:border-gray-400'
+              }`}
             >
               {sticky.text ? (
                 <span
@@ -101,7 +113,7 @@ export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText,
                 />
               ) : (
                 <span className="italic text-gray-400">
-                  {t('inspector.sticky.clickToEdit')}
+                  {readOnly ? '—' : t('inspector.sticky.clickToEdit')}
                 </span>
               )}
             </button>
@@ -132,10 +144,17 @@ export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText,
                 <button
                   key={entry.hex}
                   type="button"
-                  onClick={() => onColor(entry.hex)}
+                  onClick={() => {
+                    if (readOnly) return;
+                    onColor(entry.hex);
+                  }}
+                  disabled={readOnly}
+                  aria-disabled={readOnly}
                   className={`h-8 w-8 rounded-full border-2 transition ${
                     active
                       ? 'border-gray-900 ring-2 ring-gray-900/20'
+                      : readOnly
+                      ? 'border-white cursor-default'
                       : 'border-white hover:border-gray-300'
                   }`}
                   style={{ backgroundColor: entry.hex }}
@@ -169,22 +188,24 @@ export function StickyInspector({ sticky, blockTitle, colorLegend, lang, onText,
         </Field>
       </div>
 
-      <div className="border-t border-gray-200 p-4">
-        {/* Compact one-line shortcuts caption — replaces the prior
-            multi-line info box. The full-text version still ships in
-            the delete button's tooltip for power users. */}
-        <p className="mb-2 text-[11px] italic leading-snug text-gray-400">
-          {t('inspector.sticky.shortcutsCompact')}
-        </p>
-        <button
-          type="button"
-          onClick={onDelete}
-          title={t('inspector.sticky.shortcuts')}
-          className="w-full rounded-lg border border-red-200 bg-white px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-50"
-        >
-          {t('inspector.sticky.delete')}
-        </button>
-      </div>
+      {!readOnly && (
+        <div className="border-t border-gray-200 p-4">
+          {/* Compact one-line shortcuts caption — replaces the prior
+              multi-line info box. The full-text version still ships in
+              the delete button's tooltip for power users. */}
+          <p className="mb-2 text-[11px] italic leading-snug text-gray-400">
+            {t('inspector.sticky.shortcutsCompact')}
+          </p>
+          <button
+            type="button"
+            onClick={onDelete}
+            title={t('inspector.sticky.shortcuts')}
+            className="w-full rounded-lg border border-red-200 bg-white px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-50"
+          >
+            {t('inspector.sticky.delete')}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

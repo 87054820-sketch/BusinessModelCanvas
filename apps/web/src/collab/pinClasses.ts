@@ -148,3 +148,22 @@ export function removePinClass(doc: Y.Doc, id: string) {
     root.delete(id);
   });
 }
+
+/**
+ * Cheap one-shot check: does this canvas have any pin classes worth
+ * showing in a legend? Used by the story-embedded canvas to decide
+ * whether to render the LegendPalette overlay at all — empty
+ * canvases don't get a chrome strip with nothing in it. Doesn't
+ * subscribe; if the caller needs reactivity it should still use
+ * `usePinClasses`.
+ */
+export function hasPinClasses(doc: Y.Doc): boolean {
+  const root = getPinClassesRoot(doc);
+  let found = false;
+  root.forEach((y) => {
+    if (found) return;
+    const c = readClass(y);
+    if (c) found = true;
+  });
+  return found;
+}
