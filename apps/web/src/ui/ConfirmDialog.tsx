@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { getApiErrorMessage } from '../api/errors';
 
 interface Props {
   open: boolean;
@@ -33,12 +35,17 @@ export function ConfirmDialog({
   onCancel,
   onConfirm,
 }: Props) {
+  const { t } = useTranslation();
   const [busy, setBusy] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   // Reset busy whenever the dialog opens or closes — guards against a stale
   // "loading" state if the parent unmounts/remounts the dialog.
   useEffect(() => {
-    if (!open) setBusy(false);
+    if (!open) {
+      setBusy(false);
+      setErrorMessage(null);
+    }
   }, [open]);
 
   // Esc cancels (unless an action is in flight).
@@ -58,6 +65,14 @@ export function ConfirmDialog({
       <div role="dialog" aria-modal="true" className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl">
         <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
         <div className="mt-3 text-sm text-gray-700">{message}</div>
+        {errorMessage && (
+          <div
+            role="alert"
+            className="mt-4 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-800"
+          >
+            {errorMessage}
+          </div>
+        )}
         <div className="mt-6 flex justify-end gap-2">
           <button
             type="button"
@@ -72,6 +87,7 @@ export function ConfirmDialog({
             disabled={busy}
             onClick={async () => {
               setBusy(true);
+              setErrorMessage(null);
               try {
                 await onConfirm();
                 // Don't reset busy on success — the parent typically closes
@@ -79,13 +95,13 @@ export function ConfirmDialog({
                 // dialog open after a successful action, the open→false
                 // useEffect will reset it on the next close.
               } catch (err) {
-                // Surface failures so a broken handler stops looking like
-                // "the click did nothing".
+                // Surface failures inline so a broken handler stops looking
+                // like "the click did nothing", but never dump a raw HTTP
+                // body into a native alert() — go through the friendly
+                // ApiError → i18n mapper instead.
                 console.error('[ConfirmDialog] confirm action failed:', err);
                 setBusy(false);
-                alert(
-                  err instanceof Error ? err.message : String(err ?? 'Action failed'),
-                );
+                setErrorMessage(getApiErrorMessage(err, t));
               }
             }}
             className={`rounded-lg px-4 py-2 text-sm font-medium text-white disabled:opacity-40 ${

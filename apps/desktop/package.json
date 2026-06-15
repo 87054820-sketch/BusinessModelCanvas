@@ -1,7 +1,7 @@
 {
   "name": "@pingarden/desktop",
   "productName": "PinGarden",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "private": true,
   "main": "dist/electron.main.js",
   "scripts": {

@@ -176,6 +176,10 @@
     "delete": "Delete",
     "cancel": "Cancel"
   },
+  "error": {
+    "generic": "Something went wrong. Please try again.",
+    "caseLibraryReadOnly": "This is a read-only library case. Fork it to your own projects first if you want to edit or delete it."
+  },
   "milestone": {
     "title": "Save milestone",
     "prompt": "Name the current state of the canvas. You can restore it later.",

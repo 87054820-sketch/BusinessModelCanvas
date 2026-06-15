@@ -1,4 +1,5 @@
 import type { CanvasMeta, SnapshotMeta } from '@pingarden/shared';
+import { ensureOk } from './errors';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 
@@ -13,19 +14,13 @@ function authHeadersJson(displayName: string): HeadersInit {
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
   const res = await fetch(input, init);
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`HTTP ${res.status}: ${body}`);
-  }
+  await ensureOk(res);
   return (await res.json()) as T;
 }
 
 async function fetchVoid(input: RequestInfo, init?: RequestInit): Promise<void> {
   const res = await fetch(input, init);
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`HTTP ${res.status}: ${body}`);
-  }
+  await ensureOk(res);
 }
 
 export const snapshotsApi = {

@@ -11,6 +11,7 @@ import {
 } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { readBundle, type CanvasBundle } from './bundle.js';
+import { CLI_VERSION } from '../lib/version.js';
 import {
   REFERENCE_FILES,
   WORKFLOW_FILES,
@@ -63,8 +64,14 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
   }
 
   // 3. Compute content hash from every input that affects output.
+  // Skill version = `<CLI semver>-<8-char content hash>`. The CLI
+  // version is sourced from `apps/cli/package.json` (inlined by tsup
+  // via `__PINGARDEN_CLI_VERSION__`). Bumping the CLI bumps the skill
+  // prefix automatically; the trailing hash captures whether canvas
+  // bundles actually changed. Identical inputs always produce
+  // byte-identical zips.
   const contentHash = hashBundles(bundles);
-  const version = `0.1.0-${contentHash.slice(0, 8)}`;
+  const version = `${CLI_VERSION}-${contentHash.slice(0, 8)}`;
 
   // 4. Build the file map.
   const files: Record<string, string> = {};

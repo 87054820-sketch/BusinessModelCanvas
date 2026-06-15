@@ -4,6 +4,7 @@ import type {
   CaseLibraryEntry,
   Lang,
 } from '@pingarden/shared';
+import { ensureOk } from './errors';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 
@@ -13,10 +14,7 @@ function authHeaders(displayName: string): HeadersInit {
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
   const res = await fetch(input, init);
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`HTTP ${res.status}: ${body}`);
-  }
+  await ensureOk(res);
   return (await res.json()) as T;
 }
 

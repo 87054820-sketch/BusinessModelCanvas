@@ -1,7 +1,7 @@
 ---
 name: pingarden
 description: Use when the user asks to create, edit, translate, or narrate Business Model Canvas, Value Proposition Canvas, JTBD, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, or Experiment Canvas via the local PinGarden app. Triggers on phrases like "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", or any `pingarden` CLI invocation.
-version: 0.1.0-ff95de6f
+version: 0.2.2-ff95de6f
 ---
 
 # PinGarden — official skill

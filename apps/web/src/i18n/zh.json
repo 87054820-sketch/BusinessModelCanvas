@@ -176,6 +176,10 @@
     "delete": "删除",
     "cancel": "取消"
   },
+  "error": {
+    "generic": "操作失败,请稍后重试。",
+    "caseLibraryReadOnly": "这是案例库的只读副本。如需编辑或删除,请先 fork 一份到你的项目里。"
+  },
   "milestone": {
     "title": "保存里程碑",
     "prompt": "为当前画布状态命名,日后可随时恢复。",
