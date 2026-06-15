@@ -1,0 +1,26 @@
+{
+  "id": "33788f09-d2a9-4b13-a12c-49b9d52d83b1",
+  "projectId": "1534b03d-3838-4a62-9e46-1996611b38e6",
+  "defId": "business-model-canvas",
+  "title": "Alibaba Group — orchestrator BMC",
+  "language": "en",
+  "contentDate": "2024",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2024 (post-Ant-pause, mature ecosystem)",
+  "variant": {
+    "id": "alibaba-group-orchestrator",
+    "label": {
+      "en": "Group orchestrator (parent view)",
+      "zh": "集团编排者(母体视角)"
+    },
+    "description": {
+      "en": "Single ecosystem BMC capturing Alibaba Group as the orchestrator of multiple sub-businesses (Alibaba.com B2B, Taobao C2C, Tmall B2C, AliExpress cross-border, Alipay/Ant payments, Cainiao logistics, Alibaba Cloud, DAMO research). Customer Segments split into multiple platform sides; Revenue Streams aggregate across marketplace commissions, advertising fees, financial services, and Cloud SaaS. The orchestrator role is the value the group adds beyond what any single sub-business could deliver alone.",
+      "zh": "单张生态 BMC 捕获阿里巴巴集团作为多个子业务编排者的角色(Alibaba.com B2B、淘宝 C2C、天猫 B2C、AliExpress 跨境、支付宝 / 蚂蚁支付、菜鸟物流、阿里云、达摩院研发)。客户细分划分为多个平台侧;收入来源横跨市场佣金、广告费、金融服务、云 SaaS。编排者角色是集团在「任何单一子业务靠自己达不到」的层面上所添加的价值。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T09:39:00.889Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T09:39:00.889Z",
+  "updatedBy": "PinGarden Library"
+}

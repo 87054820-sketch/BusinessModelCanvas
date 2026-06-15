@@ -1,0 +1,23 @@
+{
+  "id": "784f9df0-ee00-498f-8993-23e7b2288965",
+  "projectId": "3b1d113f-3e0c-431a-a13c-8c103d5f2330",
+  "defId": "business-model-canvas",
+  "title": "[ZH] Lulu.com —— 2025 年(现代化版本)",
+  "language": "zh",
+  "variant": {
+    "id": "lulu-2025-zh",
+    "label": {
+      "en": "Lulu.com (2025)",
+      "zh": "Lulu.com(2025 年)"
+    },
+    "description": {
+      "en": "Today's Lulu — same long-tail core but with AI-assisted publishing tools (Lulu Studio, 2023+), Print API for Shopify / Etsy / direct-author storefronts, education + enterprise B2B publishing, and climate-neutral printing.",
+      "zh": "今天的 Lulu —— 长尾内核没变,但增加了 AI 辅助出版工具(Lulu Studio,2023 年起)、面向 Shopify / Etsy / 作者独立店铺的 Print API、教育与企业 B2B 出版,以及碳中和印刷。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T05:22:54.962Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T05:22:54.962Z",
+  "updatedBy": "PinGarden Library"
+}

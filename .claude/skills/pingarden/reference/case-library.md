@@ -8,10 +8,11 @@ The `kind` field in `case.json` is one of:
 
 - **`company`** — a single real company analysed across multiple canvases (BMC + VPC + …). The default and most common kind. Example: `wechat-private-domain`.
 - **`industry`** — an industry archetype + N concrete-company variants on the same canvas type. Use the `variant` field on each `CanvasMeta` (`{ id, label, role: 'archetype' | 'variant' }`) to label each one. Example use case: Strategyzer's "Unbundling" — one archetype BMC + Maerki Baumann (unbundled) + Pictet (integrated).
-- **`pattern`** — an abstract reusable business pattern (Unbundling, Long Tail, Free, Multi-Sided Platform). Carries `patternName` and `examples[]` referencing other case slugs.
 - **`comparison`** — multiple subjects placed side-by-side (Tesla vs BYD on the same BMC type).
 
-The `kind` chip colour in the web LibraryPage is keyed off this field — `company` = emerald, `industry` = amber, `pattern` = violet, `comparison` = sky.
+The `kind` chip colour in the web LibraryPage is keyed off this field — `company` = emerald, `industry` = amber, `comparison` = sky.
+
+> Business-model **patterns** (Unbundling, Long Tail, Multi-Sided Platforms, …) are NOT a case kind. They are a separate first-class entity at `packages/case-library/patterns/<slug>/` with their own HTTP routes (`/library/patterns`, `/library/patterns/:slug`). See `reference/patterns.md`.
 
 ## Slug rules
 

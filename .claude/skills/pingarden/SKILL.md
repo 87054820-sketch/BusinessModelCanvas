@@ -1,7 +1,7 @@
 ---
 name: pingarden
 description: Use when the user asks to create, edit, translate, or narrate Business Model Canvas, Value Proposition Canvas, JTBD, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, or Experiment Canvas via the local PinGarden app. Triggers on phrases like "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", or any `pingarden` CLI invocation.
-version: 0.2.2-ff95de6f
+version: 0.4.1-b4de424c
 ---
 
 # PinGarden — official skill
@@ -30,6 +30,13 @@ You are working with **PinGarden**, a local Strategyzer-style canvas tool. This 
 - `canvases/portfolio-map.en.md` / `canvases/portfolio-map.zh.md`
 - `canvases/value-proposition-canvas.en.md` / `canvases/value-proposition-canvas.zh.md`
 
+### Business model patterns (one per pattern, both languages)
+- `patterns/free.en.md` / `patterns/free.zh.md`
+- `patterns/long-tail.en.md` / `patterns/long-tail.zh.md`
+- `patterns/multi-sided-platforms.en.md` / `patterns/multi-sided-platforms.zh.md`
+- `patterns/open-business-models.en.md` / `patterns/open-business-models.zh.md`
+- `patterns/unbundling-business-models.en.md` / `patterns/unbundling-business-models.zh.md`
+
 ### Workflows
 - `workflows/discover.md` — first call into a fresh session
 - `workflows/greenfield.md` — chat → app, brand new canvas
@@ -39,6 +46,8 @@ You are working with **PinGarden**, a local Strategyzer-style canvas tool. This 
 - `workflows/snapshot.md` — when to milestone, how to restore
 - `workflows/translate.md` — en ⇄ zh round trip
 - `workflows/case-library.md` — read curated company cases for inspiration, or fork one to start fast
+- `workflows/patterns.md` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern
+- `workflows/authoring-patterns.md` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)
 
 ### Reference
 - `reference/cli-cheatsheet.md` — top commands with JSON output examples
@@ -46,6 +55,7 @@ You are working with **PinGarden**, a local Strategyzer-style canvas tool. This 
 - `reference/identity.md` — `X-Display-Name` / `--as` / audit trail
 - `reference/ai-context-shape.md` — shape of the `/ai-context` JSON
 - `reference/case-library.md` — case kinds, slug rules, read-only rules
+- `reference/patterns.md` — pattern slug index, the `pingarden pattern <list|get>` commands, and the case ↔ pattern cross-link rules
 
 ## Key invariants — never violate
 

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useIdentity } from './identity/useIdentity';
@@ -12,7 +13,8 @@ import { HistoryPage } from './pages/HistoryPage';
 
 export default function App() {
   const { t } = useTranslation();
-  const { identity, initializing, save } = useIdentity();
+  const { identity, save } = useIdentity();
+  const [editingIdentity, setEditingIdentity] = useState(false);
   const isDesktop = typeof window !== 'undefined' && 'electronAPI' in window;
 
   const logo = (
@@ -41,13 +43,18 @@ export default function App() {
         <div className="ml-auto flex items-center gap-6">
           <LanguageSwitcher />
           {identity && (
-            <span className="flex items-center gap-2 text-xs text-gray-600">
+            <button
+              type="button"
+              onClick={() => setEditingIdentity(true)}
+              title={t('identity.editTitle')}
+              className="flex items-center gap-2 rounded-full px-2 py-1 text-xs text-gray-600 transition hover:bg-gray-100"
+            >
               <span
                 className="inline-block h-2 w-2 rounded-full"
                 style={{ background: identity.color }}
               />
               {identity.displayName}
-            </span>
+            </button>
           )}
         </div>
       </nav>
@@ -74,7 +81,22 @@ export default function App() {
         </Routes>
       </div>
 
+      {/*
+       * IdentityModal renders in two modes:
+       *  - First-launch (no identity): blocking, no cancel.
+       *  - Edit (badge clicked): pre-filled, dismissible via ✕.
+       */}
       {!identity && <IdentityModal onSubmit={save} />}
+      {identity && editingIdentity && (
+        <IdentityModal
+          initialName={identity.displayName}
+          onSubmit={(next) => {
+            save(next);
+            setEditingIdentity(false);
+          }}
+          onCancel={() => setEditingIdentity(false)}
+        />
+      )}
     </div>
   );
 }

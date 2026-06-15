@@ -1,0 +1,26 @@
+{
+  "id": "692a9384-c4c9-4b3d-8c3c-1f57c1059b87",
+  "projectId": "2e07808f-cc10-418a-bbf7-861ecd49e021",
+  "defId": "business-model-canvas",
+  "title": "传统唱片业 —— 单曲所有权基线(2008 年前)",
+  "language": "zh",
+  "contentDate": "2005",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "约 2005 年(Spotify 之前)",
+  "variant": {
+    "id": "traditional-music-industry",
+    "label": {
+      "en": "Traditional music industry archetype",
+      "zh": "传统唱片业基线"
+    },
+    "description": {
+      "en": "Per-track ownership baseline (CDs, iTunes 2003-onwards): listener buys each track once, owns it forever. The model Spotify unbundles. NOT Spotify-specific.",
+      "zh": "「每首歌单独购买」基线(CD,以及 2003 年起的 iTunes):听众每首歌买一次,拥有终身。Spotify 颠覆的对象。并不专指 Spotify。"
+    },
+    "role": "archetype"
+  },
+  "createdAt": "2026-06-15T08:06:42.534Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T08:06:42.534Z",
+  "updatedBy": "PinGarden Library"
+}

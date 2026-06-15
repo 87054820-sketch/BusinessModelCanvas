@@ -1,0 +1,104 @@
+{
+  "slug": "free",
+  "name": {
+    "en": "Free",
+    "zh": "免费模式"
+  },
+  "summary": {
+    "en": "At least one substantial customer segment continuously benefits from a free-of-charge offer; another part of the business or another customer segment covers the cost. The book identifies three structurally distinct flavors: ad-supported, freemium, and bait-and-hook (lock-in).",
+    "zh": "至少有一类客户群持续从「免费」中获益,而成本由业务的另一部分或另一类客户群承担。书中识别出三种结构上各不相同的子类型:广告支持、Freemium 增值订阅、诱饵与钩子(锁定)。"
+  },
+  "sources": [
+    { "label": "Chris Anderson · Free: The Future of a Radical Price · Hyperion · 2009" },
+    { "label": "Chris Anderson · 'Why $0.00 Is the Future of Business' · Wired · February 2008", "url": "https://www.wired.com/2008/02/ff-free/" },
+    { "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 4, pp. 88-107)" }
+  ],
+  "references": [
+    {
+      "type": "article",
+      "cite": "Anderson 2008 Wired",
+      "label": "Chris Anderson · 'Why $0.00 Is the Future of Business' · Wired",
+      "year": 2008,
+      "pages": "Feb 2008 issue",
+      "url": "https://www.wired.com/2008/02/ff-free/",
+      "note": {
+        "en": "Wired feature that named the pattern. Argues falling marginal cost of digital goods makes 'free' a serious business strategy, not a marketing gimmick.",
+        "zh": "把这一模式命名出来的 Wired 特稿。论证数字商品边际成本不断下降时,「免费」是一种严肃的商业战略,而非营销噱头。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "Anderson 2009",
+      "label": "Chris Anderson · Free: The Future of a Radical Price · Hyperion",
+      "year": 2009,
+      "note": {
+        "en": "Book-length expansion. Coined the three flavors used in the BMC pattern catalog: cross-subsidies (ad-supported), freemium, and gift economies. Names the freemium 1:9 / 1:99 ratios that became canonical SaaS thinking.",
+        "zh": "书籍版的完整扩展。明确划分了三种「免费」形态:跨边补贴(广告支持)、Freemium、礼物经济。书中提出的 1:9 / 1:99 付费转化比成为后来 SaaS 行业的标准思维。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "BMG 2010",
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley",
+      "year": 2010,
+      "pages": "pp. 88–107",
+      "note": {
+        "en": "Adapts Free into the BMC pattern catalog (Pattern No. 4). Splits the pattern into three structurally distinct sub-types — each gets its own paradigm case (Metro newspaper / Skype / Gillette razors).",
+        "zh": "把免费模式收录为 BMC 模式手册(第 4 号模式)。把这一模式拆为三个结构上不同的子类型 —— 各自对应一个范式案例(Metro 报纸 / Skype / 吉列剃须刀)。"
+      }
+    }
+  ],
+  "subtypes": [
+    {
+      "id": "ad-supported",
+      "name": {
+        "en": "Advertising-supported",
+        "zh": "广告支持型"
+      },
+      "summary": {
+        "en": "Free for one customer side because another side (advertisers) pays for their attention. Mechanically a multi-sided platform with one side priced at zero — the BMC overlaps strongly with MSP.",
+        "zh": "其中一边客户免费,因为另一边(广告主)在为他们的注意力买单。机制上是「一侧定价为零」的多边平台 —— BMC 与多边平台模式高度重叠。"
+      },
+      "examples": [
+        { "slug": "google-multi-sided", "role": "primary" }
+      ]
+    },
+    {
+      "id": "freemium",
+      "name": {
+        "en": "Freemium",
+        "zh": "Freemium 增值订阅"
+      },
+      "summary": {
+        "en": "Most users use a free tier; a small percentage (typically 5-10%) upgrades to a paid premium tier whose revenue covers the entire base. Cross-subsidy is across users on the same platform.",
+        "zh": "绝大多数用户用免费版;一小部分(通常 5-10%)升级到付费高级版,这部分收入支撑整个用户基数。补贴发生在同一平台不同用户之间。"
+      },
+      "examples": [
+        { "slug": "spotify",  "role": "primary"   },
+        { "slug": "udemy",    "role": "secondary" }
+      ]
+    },
+    {
+      "id": "bait-and-hook",
+      "name": {
+        "en": "Bait and hook (lock-in)",
+        "zh": "诱饵与钩子(锁定)"
+      },
+      "summary": {
+        "en": "An initial product is sold cheaply (or given away — the bait) to lock the customer into expensive recurring consumables (the hook). Cross-subsidy is intertemporal — cheap now, expensive later.",
+        "zh": "前端产品低价出售或赠送(诱饵),把客户锁进高价的耗材或持续消费(钩子)。补贴发生在时间维度 —— 现在便宜,以后贵。"
+      },
+      "examples": [
+        { "slug": "gillette",  "role": "primary"   },
+        { "slug": "nespresso", "role": "secondary" }
+      ]
+    }
+  ],
+  "examples": [
+    { "slug": "google-multi-sided", "role": "primary"   },
+    { "slug": "spotify",            "role": "primary"   },
+    { "slug": "gillette",           "role": "primary"   },
+    { "slug": "nespresso",          "role": "primary"   },
+    { "slug": "udemy",              "role": "secondary" }
+  ]
+}

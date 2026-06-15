@@ -10,18 +10,29 @@ import {
   writeFileSync,
 } from 'node:fs';
 import { join, dirname } from 'node:path';
-import { readBundle, type CanvasBundle } from './bundle.js';
+import {
+  readBundle,
+  readPatternBundle,
+  type CanvasBundle,
+  type PatternBundle,
+} from './bundle.js';
 import { CLI_VERSION } from '../lib/version.js';
 import {
   REFERENCE_FILES,
   WORKFLOW_FILES,
   renderCanvasMd,
+  renderPatternMd,
   renderSkillMd,
 } from './templates.js';
 
 export interface GenerateOptions {
   /** Where the canvas bundles live (resolved by discoverBundlesDir). */
   bundlesDir: string;
+  /**
+   * Where the pattern bundles live (resolved by discoverPatternsDir).
+   * Optional — `null`/missing produces a skill with no patterns/ tree.
+   */
+  patternsDir?: string | null;
   /** Where to write the skill tree. */
   outDir: string;
   /** Restrict canvas md output to these languages. Defaults to both. */
@@ -33,6 +44,7 @@ export interface GenerateResult {
   version: string;
   contentHash: string;
   canvasIds: string[];
+  patternSlugs: string[];
 }
 
 /**
@@ -63,14 +75,32 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
     if (b) bundles.push(b);
   }
 
+  // 2b. Discover + read patterns. The order in `patterns/` on disk is
+  //     not authoritative; we sort by slug for deterministic output.
+  const patternBundles: PatternBundle[] = [];
+  if (opts.patternsDir && existsSync(opts.patternsDir)) {
+    const patternSlugs = readdirSync(opts.patternsDir, { withFileTypes: true })
+      .filter(
+        (d) =>
+          d.isDirectory() &&
+          existsSync(join(opts.patternsDir!, d.name, 'pattern.json')),
+      )
+      .map((d) => d.name)
+      .sort();
+    for (const slug of patternSlugs) {
+      const pb = readPatternBundle(opts.patternsDir, slug);
+      if (pb) patternBundles.push(pb);
+    }
+  }
+
   // 3. Compute content hash from every input that affects output.
   // Skill version = `<CLI semver>-<8-char content hash>`. The CLI
   // version is sourced from `apps/cli/package.json` (inlined by tsup
   // via `__PINGARDEN_CLI_VERSION__`). Bumping the CLI bumps the skill
   // prefix automatically; the trailing hash captures whether canvas
-  // bundles actually changed. Identical inputs always produce
-  // byte-identical zips.
-  const contentHash = hashBundles(bundles);
+  // OR pattern bundles actually changed. Identical inputs always
+  // produce byte-identical zips.
+  const contentHash = hashBundles(bundles, patternBundles);
   const version = `${CLI_VERSION}-${contentHash.slice(0, 8)}`;
 
   // 4. Build the file map.
@@ -79,11 +109,18 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
   files['SKILL.md'] = renderSkillMd({
     version,
     canvasIds: bundles.map((b) => b.id),
+    patternSlugs: patternBundles.map((p) => p.slug),
   });
 
   for (const b of bundles) {
     for (const lang of langs) {
       files[`canvases/${b.id}.${lang}.md`] = renderCanvasMd({ bundle: b, lang });
+    }
+  }
+
+  for (const pb of patternBundles) {
+    for (const lang of langs) {
+      files[`patterns/${pb.slug}.${lang}.md`] = renderPatternMd({ bundle: pb, lang });
     }
   }
 
@@ -134,6 +171,7 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
     version,
     contentHash,
     canvasIds: bundles.map((b) => b.id),
+    patternSlugs: patternBundles.map((p) => p.slug),
   };
 }
 
@@ -168,9 +206,14 @@ function copyDirRecursive(src: string, dest: string) {
  * Hash every input that affects generator output. Walks bundles in
  * sorted order; each bundle hashes its manifest (canonicalised),
  * i18n JSONs, intro markdown, every block markdown, and the optional
- * curated skill markdown.
+ * curated skill markdown. Pattern bundles are hashed in the same
+ * sorted-by-slug order, with their pattern.json (canonicalised) +
+ * description + skill markdown for both languages.
  */
-function hashBundles(bundles: CanvasBundle[]): string {
+function hashBundles(
+  bundles: CanvasBundle[],
+  patternBundles: PatternBundle[],
+): string {
   const h = createHash('sha256');
   for (const b of bundles) {
     h.update(`bundle:${b.id}\n`);
@@ -195,6 +238,19 @@ function hashBundles(bundles: CanvasBundle[]): string {
     h.update(b.curated.en ?? '');
     h.update('\n');
     h.update(b.curated.zh ?? '');
+    h.update('\n');
+  }
+  for (const pb of patternBundles) {
+    h.update(`pattern:${pb.slug}\n`);
+    h.update(canonicalJson(pb.pattern));
+    h.update('\n');
+    h.update(pb.description.en ?? '');
+    h.update('\n');
+    h.update(pb.description.zh ?? '');
+    h.update('\n');
+    h.update(pb.skill.en ?? '');
+    h.update('\n');
+    h.update(pb.skill.zh ?? '');
     h.update('\n');
   }
   return h.digest('hex');

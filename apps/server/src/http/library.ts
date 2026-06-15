@@ -19,10 +19,14 @@ import { getIdentity } from './identity.js';
  *   GET  /library/cases                       → CaseLibraryEntry[]
  *   GET  /library/cases/:slug                 → CaseLibraryDetail
  *   POST /library/cases/:slug/fork            → CaseForkResult (new user project)
+ *   GET  /library/patterns                    → BusinessModelPattern[]
+ *   GET  /library/patterns/:slug              → BusinessModelPatternDetail
  *
  * Mutations on library projects/canvases/stories elsewhere in the API
  * surface as 403 via the global error handler in `server.ts` — those
- * paths reach `BundleStorage`, which rejects every write op.
+ * paths reach `BundleStorage`, which rejects every write op. Patterns
+ * have no mutation surface at all (no fork, no edit) — they are pure
+ * curated content.
  */
 export function registerLibraryRoutes(
   app: FastifyInstance,
@@ -55,6 +59,17 @@ export function registerLibraryRoutes(
       const lang = parseLang(req.query.lang);
       const result = await forkCase(slug, identity.displayName, storage, lang);
       return reply.code(201).send(result);
+    },
+  );
+
+  app.get('/library/patterns', async () => bundle.listPatterns());
+
+  app.get<{ Params: { slug: string } }>(
+    '/library/patterns/:slug',
+    async (req, reply) => {
+      const detail = await bundle.getPattern(req.params.slug);
+      if (!detail) return reply.code(404).send({ error: 'Pattern not found' });
+      return detail;
     },
   );
 }

@@ -1,6 +1,11 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { CanvasDef, CanvasI18n, Lang } from '@pingarden/shared';
+import type {
+  BusinessModelPattern,
+  CanvasDef,
+  CanvasI18n,
+  Lang,
+} from '@pingarden/shared';
 
 /**
  * Bundle-reading helpers used by the skill generator. Kept separate
@@ -157,4 +162,52 @@ export function firstParagraphs(md: string | undefined, maxParagraphs: number): 
 
 export function pickI18n(bundle: CanvasBundle, lang: Lang): CanvasI18n {
   return bundle.i18n[lang] ?? bundle.i18n.en;
+}
+
+/**
+ * Pattern bundle — the parallel of `CanvasBundle` for business-model
+ * patterns shipped under `packages/case-library/patterns/<slug>/`.
+ *
+ *   - `pattern`     — the parsed pattern.json (slug, name, summary,
+ *                     sources, examples)
+ *   - `description` — bilingual long-form markdown for end users (the
+ *                     web UI's PatternList renders this)
+ *   - `skill`       — bilingual concise AI-facing markdown (TL;DR /
+ *                     signals / anti-patterns / cross-references). When
+ *                     missing for a language, the skill generator
+ *                     falls back to the first paragraphs of
+ *                     `description.<lang>.md`.
+ */
+export interface PatternBundle {
+  slug: string;
+  pattern: BusinessModelPattern;
+  description: { en?: string; zh?: string };
+  skill: { en?: string; zh?: string };
+}
+
+export function readPatternBundle(
+  patternsDir: string,
+  slug: string,
+): PatternBundle | null {
+  const dir = join(patternsDir, slug);
+  const patternJsonPath = join(dir, 'pattern.json');
+  if (!existsSync(patternJsonPath)) return null;
+  let pattern: BusinessModelPattern;
+  try {
+    pattern = JSON.parse(readFileSync(patternJsonPath, 'utf8')) as BusinessModelPattern;
+  } catch {
+    return null;
+  }
+  return {
+    slug,
+    pattern,
+    description: {
+      en: readMarkdownOrUndefined(join(dir, 'description.en.md')),
+      zh: readMarkdownOrUndefined(join(dir, 'description.zh.md')),
+    },
+    skill: {
+      en: readMarkdownOrUndefined(join(dir, 'skill.en.md')),
+      zh: readMarkdownOrUndefined(join(dir, 'skill.zh.md')),
+    },
+  };
 }

@@ -49,7 +49,7 @@ const CaseSourceSchema = z.object({
   url: z.string().url().optional(),
 });
 
-const CaseKindSchema = z.enum(['company', 'industry', 'pattern', 'comparison']);
+const CaseKindSchema = z.enum(['company', 'industry', 'comparison']);
 
 const CanvasVariantSchema = z.object({
   id: z.string().min(1),
@@ -167,18 +167,12 @@ const CaseAuthorInput = z.object({
   tags: z.array(z.string().min(1)).default([]),
   sources: z.array(CaseSourceSchema).default([]),
   thumbnailDefId: z.string().optional(),
-  // pattern-only
-  patternName: Localized.optional(),
-  examples: z
-    .array(
-      z.object({
-        slug: z.string().min(1),
-        role: z.enum(['primary', 'secondary']).optional(),
-      }),
-    )
-    .optional(),
-  // company / industry only
+  // case → pattern forward link (slug points to packages/case-library/patterns/<slug>/)
   appliesPatterns: z.array(z.string().min(1)).optional(),
+  // Optional sub-type refinement per pattern. Each value must match a
+  // `subtypes[].id` on the referenced pattern. `case validate` enforces
+  // both directions; this command just passes the field through.
+  appliesPatternSubtypes: z.record(z.string(), z.string().min(1)).optional(),
 
   project: ProjectAuthorInput,
   canvases: z.array(CanvasAuthorInput).min(1),
@@ -379,9 +373,10 @@ export async function caseAuthorHandler(
     projectId,
     canvasCount: input.canvases.length,
     storyCount: input.stories.length,
-    ...(input.patternName ? { patternName: input.patternName } : {}),
-    ...(input.examples ? { examples: input.examples } : {}),
     ...(input.appliesPatterns ? { appliesPatterns: input.appliesPatterns } : {}),
+    ...(input.appliesPatternSubtypes
+      ? { appliesPatternSubtypes: input.appliesPatternSubtypes }
+      : {}),
   };
   files.set(join(outDir, 'case.json'), Buffer.from(JSON.stringify(caseJson, null, 2) + '\n'));
 
@@ -530,11 +525,8 @@ const CaseJsonSchema = z.object({
   projectId: z.string().min(1),
   canvasCount: z.number().int().nonnegative().optional(),
   storyCount: z.number().int().nonnegative().optional(),
-  patternName: Localized.optional(),
-  examples: z
-    .array(z.object({ slug: z.string().min(1), role: z.enum(['primary', 'secondary']).optional() }))
-    .optional(),
   appliesPatterns: z.array(z.string().min(1)).optional(),
+  appliesPatternSubtypes: z.record(z.string(), z.string().min(1)).optional(),
 });
 
 export async function caseValidateHandler(args: {
@@ -555,12 +547,15 @@ export async function caseValidateHandler(args: {
   // Read manifest.json (one level up from cases/)
   const manifestPath = join(root, '..', 'manifest.json');
   let manifestSlugs: string[] = [];
+  let manifestPatternSlugs: string[] = [];
   if (existsSync(manifestPath)) {
     try {
       const manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as {
         cases?: Array<{ slug: string }>;
+        patterns?: Array<{ slug: string }>;
       };
       manifestSlugs = (manifest.cases ?? []).map((c) => c.slug);
+      manifestPatternSlugs = (manifest.patterns ?? []).map((p) => p.slug);
       const seen = new Set<string>();
       for (const s of manifestSlugs) {
         if (seen.has(s)) {
@@ -572,6 +567,18 @@ export async function caseValidateHandler(args: {
           });
         }
         seen.add(s);
+      }
+      const seenPattern = new Set<string>();
+      for (const s of manifestPatternSlugs) {
+        if (seenPattern.has(s)) {
+          issues.push({
+            slug: s,
+            level: 'error',
+            message: `Duplicate pattern slug '${s}' in manifest.json`,
+            path: manifestPath,
+          });
+        }
+        seenPattern.add(s);
       }
     } catch (err) {
       issues.push({
@@ -598,6 +605,15 @@ export async function caseValidateHandler(args: {
       })
     : [];
 
+  // Patterns live as a sibling directory to cases (../patterns/<slug>/).
+  const patternsRoot = join(root, '..', 'patterns');
+  const patternsOnDisk = existsSync(patternsRoot)
+    ? readdirSync(patternsRoot).filter((entry) => {
+        const full = join(patternsRoot, entry);
+        return statSync(full).isDirectory() && existsSync(join(full, 'pattern.json'));
+      })
+    : [];
+
   // Cross-check: every manifest slug must have a corresponding case dir
   for (const s of manifestSlugs) {
     if (!casesOnDisk.includes(s)) {
@@ -619,9 +635,45 @@ export async function caseValidateHandler(args: {
     }
   }
 
+  // Same orphan / dangling check for patterns.
+  for (const s of manifestPatternSlugs) {
+    if (!patternsOnDisk.includes(s)) {
+      issues.push({
+        slug: s,
+        level: 'error',
+        message: `Manifest references pattern '${s}' but no pattern.json found at patterns/${s}/`,
+      });
+    }
+  }
+  for (const s of patternsOnDisk) {
+    if (manifestPatternSlugs.length > 0 && !manifestPatternSlugs.includes(s)) {
+      issues.push({
+        slug: s,
+        level: 'warn',
+        message: `Pattern directory '${s}' is not listed in manifest.json (will not be loaded by server)`,
+      });
+    }
+  }
+
+  // Validate each pattern bundle's structural shape + cross-references back
+  // to cases. Failure to resolve an example slug is a hard error: a dangling
+  // example breaks the UI's "examples strip" silently otherwise.
+  for (const slug of patternsOnDisk) {
+    validateOnePattern(patternsRoot, slug, manifestSlugs, issues);
+  }
+
+  // Build a slug → subtype-id-set index from each pattern.json so the
+  // case-side validator can verify `appliesPatternSubtypes[slug]` resolves
+  // to a real subtype on the referenced pattern.
+  const patternSubtypeIndex = buildPatternSubtypeIndex(patternsRoot, patternsOnDisk);
+
   const targets = args.slug ? [args.slug] : casesOnDisk;
   for (const slug of targets) {
     validateOneCase(root, slug, issues);
+    // Cross-validate: every appliesPatterns[] slug on this case must
+    // resolve to a manifested pattern. Catches the "I forgot to author
+    // the pattern entry" footgun the unbundling slug-rename was prompted by.
+    validateAppliesPatterns(root, slug, manifestPatternSlugs, patternSubtypeIndex, issues);
   }
 
   const errorCount = issues.filter((i) => i.level === 'error').length;
@@ -852,6 +904,217 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
       }
     }
   }
+}
+
+/**
+ * Validate one pattern bundle on disk:
+ *   - pattern.json parses + has the required fields
+ *   - description.{en,zh}.md both exist (bilingual hard rule)
+ *   - skill.{en,zh}.md missing → warn only (skill generator falls back
+ *     to a snippet of description; same fallback story as canvas skill)
+ *   - examples[].slug all resolve to known case slugs in the manifest
+ */
+function validateOnePattern(
+  patternsRoot: string,
+  slug: string,
+  manifestCaseSlugs: string[],
+  issues: CaseValidateIssue[],
+) {
+  const dir = join(patternsRoot, slug);
+  const patternJsonPath = join(dir, 'pattern.json');
+  if (!existsSync(patternJsonPath)) {
+    issues.push({ slug, level: 'error', message: `Pattern missing pattern.json`, path: patternJsonPath });
+    return;
+  }
+  let pattern: {
+    slug?: string;
+    name?: { en?: string; zh?: string };
+    summary?: { en?: string; zh?: string };
+    examples?: Array<{ slug?: string }>;
+    subtypes?: Array<{
+      id?: string;
+      name?: { en?: string; zh?: string };
+      summary?: { en?: string; zh?: string };
+      examples?: Array<{ slug?: string }>;
+    }>;
+  };
+  try {
+    pattern = JSON.parse(readFileSync(patternJsonPath, 'utf8'));
+  } catch (err) {
+    issues.push({ slug, level: 'error', message: `pattern.json parse failed: ${(err as Error).message}`, path: patternJsonPath });
+    return;
+  }
+  if (pattern.slug && pattern.slug !== slug) {
+    issues.push({ slug, level: 'error', message: `pattern.json slug='${pattern.slug}' does not match directory name '${slug}'` });
+  }
+  if (!pattern.name?.en || !pattern.name?.zh) {
+    issues.push({ slug, level: 'error', message: `pattern.json must carry bilingual name (en + zh)` });
+  }
+  if (!pattern.summary?.en || !pattern.summary?.zh) {
+    issues.push({ slug, level: 'error', message: `pattern.json must carry bilingual summary (en + zh)` });
+  }
+  for (const lang of ['en', 'zh'] as const) {
+    if (!existsSync(join(dir, `description.${lang}.md`))) {
+      issues.push({ slug, level: 'error', message: `Missing description.${lang}.md (bilingual descriptions are required)` });
+    }
+    if (!existsSync(join(dir, `skill.${lang}.md`))) {
+      issues.push({
+        slug,
+        level: 'warn',
+        message: `Missing skill.${lang}.md — skill generator will fall back to description.${lang}.md`,
+      });
+    }
+  }
+  for (const ex of pattern.examples ?? []) {
+    if (!ex.slug) {
+      issues.push({ slug, level: 'error', message: `examples[] entry missing slug` });
+      continue;
+    }
+    if (manifestCaseSlugs.length > 0 && !manifestCaseSlugs.includes(ex.slug)) {
+      issues.push({
+        slug,
+        level: 'error',
+        message: `examples references unknown case '${ex.slug}' — add it to manifest.json or remove the reference`,
+      });
+    }
+  }
+  // Subtype validation. Each subtype must carry id + bilingual name +
+  // bilingual summary; ids must be unique within the pattern; and every
+  // subtype example slug must resolve to a manifested case (same rule as
+  // the top-level examples list).
+  const seenSubtypeIds = new Set<string>();
+  for (const st of pattern.subtypes ?? []) {
+    if (!st.id) {
+      issues.push({ slug, level: 'error', message: `subtypes[] entry missing id` });
+      continue;
+    }
+    if (seenSubtypeIds.has(st.id)) {
+      issues.push({ slug, level: 'error', message: `subtypes[] duplicate id '${st.id}'` });
+    }
+    seenSubtypeIds.add(st.id);
+    if (!st.name?.en || !st.name?.zh) {
+      issues.push({ slug, level: 'error', message: `subtype '${st.id}' must carry bilingual name (en + zh)` });
+    }
+    if (!st.summary?.en || !st.summary?.zh) {
+      issues.push({ slug, level: 'error', message: `subtype '${st.id}' must carry bilingual summary (en + zh)` });
+    }
+    for (const ex of st.examples ?? []) {
+      if (!ex.slug) {
+        issues.push({ slug, level: 'error', message: `subtype '${st.id}' examples[] entry missing slug` });
+        continue;
+      }
+      if (manifestCaseSlugs.length > 0 && !manifestCaseSlugs.includes(ex.slug)) {
+        issues.push({
+          slug,
+          level: 'error',
+          message: `subtype '${st.id}' references unknown case '${ex.slug}' — add it to manifest.json or remove the reference`,
+        });
+      }
+    }
+  }
+}
+
+/**
+ * Cross-check that every `appliesPatterns[]` entry on a case resolves
+ * to a manifested pattern. The 0.2.x → 0.3.0 unbundling slug rename
+ * (`unbundling` → `unbundling-business-models`) was prompted by exactly
+ * this kind of dangling reference; this validator makes it impossible
+ * to ship that footgun again.
+ *
+ * Also cross-checks `appliesPatternSubtypes` (introduced for the Free
+ * pattern's three flavors): every key must appear in `appliesPatterns[]`,
+ * and every value must resolve to a `subtypes[].id` declared on the
+ * referenced pattern's `pattern.json`. A dangling subtype id silently
+ * degrades to "no subtype" in the chip render — catching it at validate
+ * time keeps that drift impossible.
+ */
+function validateAppliesPatterns(
+  root: string,
+  slug: string,
+  manifestPatternSlugs: string[],
+  patternSubtypeIndex: Map<string, Set<string>>,
+  issues: CaseValidateIssue[],
+) {
+  const caseJsonPath = join(root, slug, 'case.json');
+  if (!existsSync(caseJsonPath)) return; // separate validator already reported
+  let parsed: { appliesPatterns?: string[]; appliesPatternSubtypes?: Record<string, string> };
+  try {
+    parsed = JSON.parse(readFileSync(caseJsonPath, 'utf8'));
+  } catch {
+    return;
+  }
+  for (const ref of parsed.appliesPatterns ?? []) {
+    if (manifestPatternSlugs.length > 0 && !manifestPatternSlugs.includes(ref)) {
+      issues.push({
+        slug,
+        level: 'error',
+        message: `appliesPatterns references unknown pattern '${ref}' — author the pattern at patterns/${ref}/ or remove the reference`,
+        path: caseJsonPath,
+      });
+    }
+  }
+  // Subtype refinement check.
+  const appliedSet = new Set(parsed.appliesPatterns ?? []);
+  for (const [patternSlug, subtypeId] of Object.entries(parsed.appliesPatternSubtypes ?? {})) {
+    if (!appliedSet.has(patternSlug)) {
+      issues.push({
+        slug,
+        level: 'error',
+        message: `appliesPatternSubtypes refines pattern '${patternSlug}' but that slug is not in appliesPatterns[] — add '${patternSlug}' to appliesPatterns or drop the subtype refinement`,
+        path: caseJsonPath,
+      });
+      continue;
+    }
+    const known = patternSubtypeIndex.get(patternSlug);
+    if (known && known.size > 0 && !known.has(subtypeId)) {
+      issues.push({
+        slug,
+        level: 'error',
+        message: `appliesPatternSubtypes['${patternSlug}']='${subtypeId}' does not match any subtypes[].id on pattern '${patternSlug}' (known: ${[...known].sort().join(', ')})`,
+        path: caseJsonPath,
+      });
+    } else if (!known) {
+      // The pattern has no `subtypes[]` declared at all. Refining a
+      // subtype on a pattern that doesn't sub-type itself is meaningless.
+      issues.push({
+        slug,
+        level: 'error',
+        message: `appliesPatternSubtypes refines pattern '${patternSlug}' but that pattern declares no subtypes[] — drop the refinement, or author the subtype on the pattern`,
+        path: caseJsonPath,
+      });
+    }
+  }
+}
+
+/**
+ * Read every `pattern.json` once and produce a slug → set-of-subtype-ids
+ * index. Only patterns that DECLARE `subtypes[]` get a populated set;
+ * patterns without subtyping return undefined from `.get(slug)` so the
+ * case-side validator can distinguish "subtype declared but unknown id"
+ * from "no subtypes on this pattern at all".
+ */
+function buildPatternSubtypeIndex(
+  patternsRoot: string,
+  slugs: string[],
+): Map<string, Set<string>> {
+  const out = new Map<string, Set<string>>();
+  for (const slug of slugs) {
+    const patternJsonPath = join(patternsRoot, slug, 'pattern.json');
+    if (!existsSync(patternJsonPath)) continue;
+    try {
+      const parsed = JSON.parse(readFileSync(patternJsonPath, 'utf8')) as {
+        subtypes?: Array<{ id?: string }>;
+      };
+      const ids = new Set<string>();
+      for (const st of parsed.subtypes ?? []) {
+        if (typeof st.id === 'string' && st.id.length > 0) ids.add(st.id);
+      }
+      if (ids.size > 0) out.set(slug, ids);
+    } catch {
+      // pattern.json parse failure already surfaced by validateOnePattern.
+    }
+  }
+  return out;
 }
 
 // ─── default case-library dir resolution ─────────────────────────────────────

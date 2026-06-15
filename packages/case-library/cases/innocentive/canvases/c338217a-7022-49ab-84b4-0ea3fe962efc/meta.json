@@ -1,0 +1,26 @@
+{
+  "id": "c338217a-7022-49ab-84b4-0ea3fe962efc",
+  "projectId": "5253d634-8c10-4001-a14c-a9db31d50c7e",
+  "defId": "business-model-canvas",
+  "title": "InnoCentive — connector platform BMC",
+  "language": "en",
+  "contentDate": "2010",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2010 (post-spinout, post-P&G partnership)",
+  "variant": {
+    "id": "innocentive-bmc",
+    "label": {
+      "en": "InnoCentive (connector platform)",
+      "zh": "InnoCentive(连接器平台)"
+    },
+    "description": {
+      "en": "InnoCentive aggregates seekers (companies with unsolved problems) and solvers (independent scientists) into a multi-sided platform. Seekers pay challenge-listing fees + award commissions; solvers get free access and can win cash prizes. The platform IS the open-innovation infrastructure that companies like P&G use to run their outside-in programmes.",
+      "zh": "InnoCentive 把 Seeker(有未解问题的公司)与 Solver(独立科学家)聚合到一个多边平台上。Seeker 付挑战发布费 + 中奖佣金;Solver 免费访问、可以拿到奖金。这个平台**就是**像宝洁这种公司在跑「由外而内」项目时所依赖的开放式创新基础设施。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T09:04:48.079Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T09:04:48.079Z",
+  "updatedBy": "PinGarden Library"
+}

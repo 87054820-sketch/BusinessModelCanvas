@@ -1,6 +1,8 @@
 import { promises as fs } from 'node:fs';
 import { join } from 'node:path';
 import type {
+  BusinessModelPattern,
+  BusinessModelPatternDetail,
   CanvasMeta,
   CaseLibraryEntry,
   Lang,
@@ -16,13 +18,20 @@ import { BundleReadOnlyError } from './errors.js';
 
 /**
  * Top-level manifest schema (`<bundleDir>/manifest.json`). Lists every
- * shipped case in curated display order. Directories under `cases/` that
- * are not listed here are ignored (treated as orphaned; the build
- * script's case-library validator will surface them).
+ * shipped case AND pattern in curated display order. Directories under
+ * `cases/` or `patterns/` that are not listed here are ignored (treated
+ * as orphaned; the build script's case-library validator will surface
+ * them).
+ *
+ * `version: 1` shipped without `patterns`. `version: 2` adds the
+ * `patterns` array. Both are accepted at runtime — we treat missing
+ * `patterns` as an empty list rather than refusing to load.
  */
 interface CaseLibraryManifest {
   version: number;
   cases: Array<{ slug: string; featured?: boolean }>;
+  /** Optional in v1 manifests; required in v2+. */
+  patterns?: Array<{ slug: string; featured?: boolean }>;
 }
 
 /**
@@ -39,6 +48,22 @@ interface BundleCaseRecord {
   project: Project;
   canvasIds: string[];
   storyIds: string[];
+}
+
+/**
+ * Resolved index entry for one business-model pattern. Mirrors
+ * `BundleCaseRecord` but for the parallel `patterns/<slug>/` directory.
+ * Patterns have no project / canvases / stories — only metadata + a
+ * pair of bilingual markdown description files (and optional skill
+ * markdown that the CLI's skill generator picks up; the runtime server
+ * doesn't read skill.md).
+ */
+interface BundlePatternRecord {
+  slug: string;
+  patternDir: string;
+  index: number;
+  featured: boolean;
+  pattern: BusinessModelPattern;
 }
 
 /**
@@ -71,6 +96,8 @@ export class BundleStorage implements CanvasStorage {
   private readonly stories = new Map<string, { record: BundleCaseRecord; meta: StoryMeta; storyDir: string }>();
   /** slug → record (used by the /library/cases route) */
   private readonly bySlug = new Map<string, BundleCaseRecord>();
+  /** pattern slug → record (used by the /library/patterns routes). */
+  private readonly patternsBySlug = new Map<string, BundlePatternRecord>();
 
   private constructor(public readonly bundleDir: string) {}
 
@@ -92,6 +119,7 @@ export class BundleStorage implements CanvasStorage {
     this.canvases.clear();
     this.stories.clear();
     this.bySlug.clear();
+    this.patternsBySlug.clear();
     await this.scan();
   }
 
@@ -111,6 +139,43 @@ export class BundleStorage implements CanvasStorage {
   /** Reverse lookup: which case owns this resource? Used by the fork route. */
   caseSlugForProject(projectId: string): string | null {
     return this.projects.get(projectId)?.slug ?? null;
+  }
+
+  // ─── pattern accessors (used by /library/patterns routes) ──────────
+
+  /** Catalog list of patterns — manifest order. */
+  listPatterns(): BusinessModelPattern[] {
+    return [...this.patternsBySlug.values()]
+      .sort((a, b) => a.index - b.index)
+      .map((rec) => rec.pattern);
+  }
+
+  /**
+   * Resolve a pattern by slug, hydrating its bilingual long-form
+   * markdown description and the example cases listed in
+   * `pattern.examples[]`. Returns `null` when the slug isn't shipped.
+   * Example cases whose slug doesn't resolve to a shipped case are
+   * dropped silently — the build-time validator catches dangling
+   * references; runtime stays best-effort so a half-broken bundle
+   * still serves what it can.
+   */
+  async getPattern(slug: string): Promise<BusinessModelPatternDetail | null> {
+    const rec = this.patternsBySlug.get(slug);
+    if (!rec) return null;
+    const description = {
+      en: await readDescriptionMd(rec.patternDir, 'en'),
+      zh: await readDescriptionMd(rec.patternDir, 'zh'),
+    };
+    const exampleCases: CaseLibraryEntry[] = [];
+    for (const ref of rec.pattern.examples) {
+      const c = this.bySlug.get(ref.slug)?.caseJson;
+      if (c) exampleCases.push(c);
+    }
+    return { pattern: rec.pattern, description, exampleCases };
+  }
+
+  hasPattern(slug: string): boolean {
+    return this.patternsBySlug.has(slug);
   }
 
   hasProject(id: string): boolean {
@@ -295,6 +360,29 @@ export class BundleStorage implements CanvasStorage {
         // at runtime.
       }
     }
+
+    // Patterns are optional in v1 manifests; absent → empty list.
+    const patternEntries = Array.isArray(manifest.patterns) ? manifest.patterns : [];
+    for (let i = 0; i < patternEntries.length; i++) {
+      const entry = patternEntries[i]!;
+      try {
+        const record = await this.loadPattern(entry.slug, i, !!entry.featured);
+        this.patternsBySlug.set(record.slug, record);
+      } catch {
+        // Same robustness story as cases.
+      }
+    }
+  }
+
+  private async loadPattern(
+    slug: string,
+    orderIndex: number,
+    featured: boolean,
+  ): Promise<BundlePatternRecord> {
+    const patternDir = join(this.bundleDir, 'patterns', slug);
+    const patternJsonRaw = await fs.readFile(join(patternDir, 'pattern.json'), 'utf8');
+    const pattern = JSON.parse(patternJsonRaw) as BusinessModelPattern;
+    return { slug: pattern.slug, patternDir, index: orderIndex, featured, pattern };
   }
 
   private async loadCase(
@@ -470,4 +558,20 @@ function countByLanguage(
     out[lang] = (out[lang] ?? 0) + 1;
   }
   return out;
+}
+
+/**
+ * Read the bilingual `description.<lang>.md` next to a pattern's
+ * `pattern.json`. Returns the empty string when the file is missing —
+ * the UI's per-language fallback (`description.en` ↔ `description.zh`)
+ * decides what to render. Returning '' rather than null keeps the
+ * caller-side rendering branch simple.
+ */
+async function readDescriptionMd(patternDir: string, lang: Lang): Promise<string> {
+  try {
+    return await fs.readFile(join(patternDir, `description.${lang}.md`), 'utf8');
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === 'ENOENT') return '';
+    throw err;
+  }
 }

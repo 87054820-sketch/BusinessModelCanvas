@@ -1,10 +1,27 @@
 import { useTranslation } from 'react-i18next';
-import type { CaseLibraryEntry, Lang } from '@pingarden/shared';
+import type {
+  BusinessModelPattern,
+  CaseLibraryEntry,
+  Lang,
+} from '@pingarden/shared';
 
 interface Props {
   entry: CaseLibraryEntry;
   lang: Lang;
   onClick: (entry: CaseLibraryEntry) => void;
+  /**
+   * All patterns shipped in the library, used to look up localized names
+   * for the violet "applies patterns" chips. Optional — when absent or
+   * the case has no `appliesPatterns`, the chip row is omitted entirely.
+   */
+  patterns?: BusinessModelPattern[];
+  /**
+   * Callback when the user clicks a pattern chip. The host page is
+   * expected to switch to the Patterns tab and scroll to the matching
+   * pattern card. The chip stops event propagation so the card's main
+   * `onClick` (open modal) doesn't also fire.
+   */
+  onPatternClick?: (slug: string) => void;
 }
 
 /**
@@ -18,7 +35,7 @@ interface Props {
  * placeholder. Removed in 2026-06 — no signal, lots of vertical space.
  * If we later author per-case real artwork, the right place is here.
  */
-export function CaseCard({ entry, lang, onClick }: Props) {
+export function CaseCard({ entry, lang, onClick, patterns, onPatternClick }: Props) {
   const { t } = useTranslation();
   const name = entry.companyName[lang] ?? entry.companyName.en;
   const summary = entry.summary[lang] ?? entry.summary.en;
@@ -33,11 +50,41 @@ export function CaseCard({ entry, lang, onClick }: Props) {
   const localizedStoryCount =
     entry.storiesByLanguage?.[lang] ?? entry.storyCount;
 
+  // Resolve appliesPatterns slugs → pattern objects so we can render
+  // localized names. Drop unresolved slugs silently — `case validate`
+  // catches dangling references at build time, runtime stays robust.
+  const applied: BusinessModelPattern[] =
+    (entry.appliesPatterns ?? [])
+      .map((slug) => patterns?.find((p) => p.slug === slug))
+      .filter((p): p is BusinessModelPattern => !!p);
+
+  // Optional sub-type refinement per pattern. Pattern-with-subtypes
+  // (e.g. Free → ad-supported / freemium / bait-and-hook) lets the case
+  // chip read `[Free · Freemium]` instead of just `[Free]`. Looked up
+  // by id from the pattern's own subtypes[]; unresolved → no suffix.
+  const subtypeMap = entry.appliesPatternSubtypes ?? {};
+  function chipLabel(p: BusinessModelPattern): string {
+    const baseName = p.name[lang] ?? p.name.en;
+    const subtypeId = subtypeMap[p.slug];
+    if (!subtypeId) return baseName;
+    const sub = p.subtypes?.find((s) => s.id === subtypeId);
+    if (!sub) return baseName;
+    const subName = sub.name[lang] ?? sub.name.en;
+    return `${baseName} · ${subName}`;
+  }
+
   return (
-    <button
-      type="button"
+    <div
+      role="button"
+      tabIndex={0}
       onClick={() => onClick(entry)}
-      className="group flex w-full flex-col rounded-xl border border-gray-200 bg-white p-4 text-left transition hover:border-gray-300 hover:shadow-sm"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick(entry);
+        }
+      }}
+      className="group flex w-full cursor-pointer flex-col rounded-xl border border-gray-200 bg-white p-4 text-left transition hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-violet-300"
     >
       {/* Title + kind chip */}
       <div className="flex items-start gap-2">
@@ -55,6 +102,26 @@ export function CaseCard({ entry, lang, onClick }: Props) {
           {t(`library.kind.${entry.kind}`)}
         </span>
       </div>
+
+      {/* Applies-patterns chips — only when the case backlinks to ≥1 pattern. */}
+      {applied.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-1">
+          {applied.map((p) => (
+            <button
+              type="button"
+              key={p.slug}
+              onClick={(e) => {
+                e.stopPropagation();
+                onPatternClick?.(p.slug);
+              }}
+              className="rounded-full border border-dashed border-violet-300 bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 transition hover:bg-violet-100"
+              title={t('library.appliesPatterns')}
+            >
+              {chipLabel(p)}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Tags + counts */}
       <div className="mt-3 flex items-center justify-between gap-2">
@@ -75,7 +142,7 @@ export function CaseCard({ entry, lang, onClick }: Props) {
             : ''}
         </div>
       </div>
-    </button>
+    </div>
   );
 }
 
@@ -85,8 +152,6 @@ function kindChipColor(kind: CaseLibraryEntry['kind']): string {
       return 'bg-emerald-50 text-emerald-700';
     case 'industry':
       return 'bg-amber-50 text-amber-700';
-    case 'pattern':
-      return 'bg-violet-50 text-violet-700';
     case 'comparison':
       return 'bg-sky-50 text-sky-700';
   }

@@ -1,0 +1,66 @@
+{
+  "slug": "multi-sided-platforms",
+  "name": {
+    "en": "Multi-Sided Platforms",
+    "zh": "多边平台"
+  },
+  "summary": {
+    "en": "A platform that brings together two or more distinct but interdependent groups of customers. Value is created only when all sides are present, and pricing is typically asymmetric — one side is subsidised so the other side will show up. Search engines, payment networks, marketplaces, app stores, gaming consoles all run this pattern.",
+    "zh": "一个把两类或更多类相互依赖的客户群聚到一起的平台 —— 价值只有在各方都到场时才产生,定价通常不对称(给一方补贴以吸引另一方)。搜索引擎、支付网络、交易市场、应用商店、游戏主机都跑的是这个模式。"
+  },
+  "sources": [
+    { "label": "Jean-Charles Rochet & Jean Tirole · 'Platform Competition in Two-Sided Markets' · Journal of the European Economic Association · 2003", "url": "https://doi.org/10.1162/154247603322493212" },
+    { "label": "Eisenmann, Parker & Van Alstyne · 'Strategies for Two-Sided Markets' · Harvard Business Review · October 2006", "url": "https://hbr.org/2006/10/strategies-for-two-sided-markets" },
+    { "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 3, pp. 76-81)" }
+  ],
+  "references": [
+    {
+      "type": "paper",
+      "cite": "Rochet & Tirole 2003",
+      "label": "Jean-Charles Rochet & Jean Tirole · 'Platform Competition in Two-Sided Markets' · Journal of the European Economic Association",
+      "year": 2003,
+      "pages": "vol. 1, no. 4, pp. 990–1029",
+      "url": "https://doi.org/10.1162/154247603322493212",
+      "note": {
+        "en": "Originating economics paper. Formalises pricing in two-sided markets and the role of cross-side network effects. Tirole later won the 2014 Nobel for related work.",
+        "zh": "原始经济学论文,正式描述双边市场的定价模型与跨边网络效应。Tirole 后因相关研究获 2014 年诺贝尔经济学奖。"
+      }
+    },
+    {
+      "type": "paper",
+      "cite": "Eisenmann, Parker & Van Alstyne 2006",
+      "label": "Thomas Eisenmann, Geoffrey Parker & Marshall Van Alstyne · 'Strategies for Two-Sided Markets' · Harvard Business Review",
+      "year": 2006,
+      "pages": "Oct 2006 issue",
+      "url": "https://hbr.org/2006/10/strategies-for-two-sided-markets",
+      "note": {
+        "en": "Manager-friendly translation of the academic theory. Introduces the 'subsidy side / money side' framing, the chicken-and-egg ignition problem, and platform envelopment risk.",
+        "zh": "把学术理论翻译给管理者读的一篇。引入了「补贴方 / 收钱方」的视角、先有鸡还是先有蛋的启动困境,以及平台被吞并的风险。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "BMG 2010",
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley",
+      "year": 2010,
+      "pages": "pp. 76–81",
+      "note": {
+        "en": "Adapts MSP into the BMC pattern catalog (Pattern No. 3). Featured paradigm cases: Google (3-sided: searchers + advertisers + content sites) and Wii (gamers + game developers).",
+        "zh": "把多边平台收录为 BMC 模式手册(第 3 号模式)。书中重点案例:Google(三边:用户 + 广告主 + 内容站)与任天堂 Wii(玩家 + 游戏开发者)。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "google-multi-sided", "role": "primary"   },
+    { "slug": "visa",               "role": "primary"   },
+    { "slug": "nintendo-wii",       "role": "primary"   },
+    { "slug": "uber",               "role": "primary"   },
+    { "slug": "airbnb",             "role": "primary"   },
+    { "slug": "udemy",              "role": "primary"   },
+    { "slug": "aliexpress",         "role": "primary"   },
+    { "slug": "alibaba-group",      "role": "secondary" },
+    { "slug": "cainiao",            "role": "secondary" },
+    { "slug": "lulu-com",           "role": "secondary" },
+    { "slug": "lego-long-tail",     "role": "secondary" }
+  ]
+}

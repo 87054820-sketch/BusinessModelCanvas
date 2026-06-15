@@ -1,0 +1,26 @@
+{
+  "id": "a8c80cc2-823b-4efc-89c9-3d077cb3228d",
+  "projectId": "1aa36d1e-cd80-4f7a-bc3d-30a0d7546938",
+  "defId": "business-model-canvas",
+  "title": "Airbnb 房东侧 —— 供给侧",
+  "language": "zh",
+  "contentDate": "2020",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2020 年(IPO 基线)",
+  "variant": {
+    "id": "airbnb-hosts",
+    "label": {
+      "en": "Hosts (supply side)",
+      "zh": "房东(供给侧)"
+    },
+    "description": {
+      "en": "Property owners (often homeowners renting spare rooms; increasingly professional short-term-let operators). Receive nightly rate minus a ~3% host service fee, paid 24 hours after guest check-in. AirCover provides up to $3M property-damage protection. Superhost programme rewards consistent quality with badge + search-ranking boost.",
+      "zh": "房产所有者(早期多为出租闲置房间的业主,后期逐渐专业化的短租运营商)。收到每晚租金扣除约 3% 房东服务费后的款项,在客人入住 24 小时后到账。AirCover 为房东提供高达 300 万美元的房产损坏保护。「超赞房东」计划用徽章 + 搜索权重加成奖励持续高质量的房东。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T09:28:27.092Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T09:28:27.092Z",
+  "updatedBy": "PinGarden Library"
+}

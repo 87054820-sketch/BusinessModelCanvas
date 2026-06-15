@@ -239,7 +239,11 @@
     "title": "欢迎",
     "prompt": "选一个显示名,方便团队成员知道是谁在编辑。随时可以修改。",
     "placeholder": "你的显示名",
-    "submit": "继续"
+    "submit": "继续",
+    "editTitle": "修改显示名",
+    "editPrompt": "这个名字会出现在你创建的每张便签和每条审计记录上。",
+    "save": "保存",
+    "cancel": "取消"
   },
   "footer": {
     "madeBy": "Sibo Li 制作",
@@ -297,6 +301,13 @@
     "noCanvases": "本案例暂无画布。",
     "noUserProjects": "你还没有自己的项目 —— 上面的案例 fork 一份,或者从首页创建一个空白项目。",
     "sources": "出处 / 引用",
+    "references": "参考文献",
+    "referenceTypes": {
+      "book": "书籍",
+      "article": "文章",
+      "paper": "论文",
+      "web": "网页"
+    },
     "openReadOnly": "以只读方式打开",
     "fork": "Fork 到我的项目",
     "forking": "正在复制",
@@ -308,6 +319,26 @@
       "industry": "行业",
       "pattern": "模式",
       "comparison": "对比"
+    },
+    "tabs": {
+      "cases": "案例",
+      "patterns": "模式",
+      "description": "详细说明",
+      "relatedCases": "相关案例"
+    },
+    "appliesPatterns": "适用模式",
+    "examplesSection": "示例",
+    "exampleCount_other": "{{count}} 个示例",
+    "sourceCount_other": "{{count}} 处出处",
+    "showDescription": "查看说明",
+    "hideDescription": "收起说明",
+    "patternsEmpty": "本版本暂未附带商业模式分类。",
+    "descriptionEmpty": "本模式暂未撰写说明。",
+    "examplesEmpty": "本模式暂未关联示例案例。",
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页",
+      "page": "第 {{current}} 页 / 共 {{total}} 页"
     }
   }
 }

@@ -37,5 +37,8 @@
   "thumbnailDefId": "business-model-canvas",
   "projectId": "06959c78-f30f-4e08-bca5-b2b85aa42831",
   "canvasCount": 2,
-  "storyCount": 2
+  "storyCount": 2,
+  "appliesPatterns": [
+    "multi-sided-platforms"
+  ]
 }

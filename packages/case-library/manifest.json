@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "cases": [
     { "slug": "wechat-private-domain", "featured": true },
     { "slug": "swiss-private-banking", "featured": true },
@@ -8,6 +8,28 @@
     { "slug": "carvana", "featured": true },
     { "slug": "udemy", "featured": true },
     { "slug": "aliexpress", "featured": true },
-    { "slug": "cainiao", "featured": true }
+    { "slug": "cainiao", "featured": true },
+    { "slug": "lulu-com", "featured": true },
+    { "slug": "lego-long-tail", "featured": true },
+    { "slug": "google-multi-sided", "featured": true },
+    { "slug": "visa", "featured": true },
+    { "slug": "nintendo-wii", "featured": true },
+    { "slug": "spotify", "featured": true },
+    { "slug": "gillette", "featured": true },
+    { "slug": "procter-gamble-cd", "featured": true },
+    { "slug": "glaxosmithkline-patent-pool", "featured": true },
+    { "slug": "innocentive", "featured": true },
+    { "slug": "uber", "featured": true },
+    { "slug": "airbnb", "featured": true },
+    { "slug": "nespresso", "featured": true },
+    { "slug": "alibaba-group", "featured": true },
+    { "slug": "cemex", "featured": true }
+  ],
+  "patterns": [
+    { "slug": "long-tail", "featured": true },
+    { "slug": "unbundling-business-models", "featured": true },
+    { "slug": "multi-sided-platforms", "featured": true },
+    { "slug": "free", "featured": true },
+    { "slug": "open-business-models", "featured": true }
   ]
 }

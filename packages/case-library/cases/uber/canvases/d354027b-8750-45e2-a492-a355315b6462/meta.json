@@ -1,0 +1,26 @@
+{
+  "id": "d354027b-8750-45e2-a492-a355315b6462",
+  "projectId": "af66cb77-9174-442d-9b60-98b8df50363f",
+  "defId": "business-model-canvas",
+  "title": "Uber 乘客侧 —— 需求侧",
+  "language": "zh",
+  "contentDate": "2019",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2019 年(IPO 基线)",
+  "variant": {
+    "id": "uber-riders",
+    "label": {
+      "en": "Riders (demand side)",
+      "zh": "乘客(需求侧)"
+    },
+    "description": {
+      "en": "App-based on-demand transportation. Riders see a fare upfront, pay via card-on-file, get matched to the nearest driver. Surge pricing applies during peak demand. The rider side is the subsidy-receiving side — heavy promotional spend (free first ride, referral credits) to bootstrap network density; commission per ride is the revenue extraction.",
+      "zh": "基于 App 的按需出行。乘客在叫车时直接看到预估车费,通过绑卡支付,系统匹配最近的司机。高峰期触发 Surge 动态定价。乘客侧是补贴侧 —— 通过大量促销(首单免费、邀请红包)来引爆网络密度;每单佣金是收入抽取的来源。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T09:23:49.200Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T09:23:49.200Z",
+  "updatedBy": "PinGarden Library"
+}

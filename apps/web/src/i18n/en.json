@@ -239,7 +239,11 @@
     "title": "Welcome",
     "prompt": "Pick a display name so your teammates can see who's drawing what. You can change this any time.",
     "placeholder": "Your display name",
-    "submit": "Continue"
+    "submit": "Continue",
+    "editTitle": "Change display name",
+    "editPrompt": "This name appears on every sticky and audit entry you create.",
+    "save": "Save",
+    "cancel": "Cancel"
   },
   "footer": {
     "madeBy": "Made by Sibo Li",
@@ -301,19 +305,46 @@
     "noCanvases": "No canvases in this case.",
     "noUserProjects": "You don't have any projects yet — fork a case above, or create a blank one from the home page.",
     "sources": "Sources",
+    "references": "References",
+    "referenceTypes": {
+      "book": "Books",
+      "article": "Articles",
+      "paper": "Papers",
+      "web": "Web"
+    },
     "openReadOnly": "Open as read-only",
     "fork": "Fork to my projects",
     "forking": "Forking",
     "readOnlyBadge": "Library · read-only",
     "workspaceBannerHint": "You're viewing a read-only library case.",
     "langFallbackNotice": "This case is currently only available in {{availableLang}}.",
-    "langFallbackNotice": "This case is currently only available in {{availableLang}}.",
-    "workspaceBannerHint": "You're viewing a read-only library case.",
     "kind": {
       "company": "Company",
       "industry": "Industry",
       "pattern": "Pattern",
       "comparison": "Comparison"
+    },
+    "tabs": {
+      "cases": "Cases",
+      "patterns": "Patterns",
+      "description": "Description",
+      "relatedCases": "Related cases"
+    },
+    "appliesPatterns": "Applies patterns",
+    "examplesSection": "Examples",
+    "exampleCount_one": "{{count}} example",
+    "exampleCount_other": "{{count}} examples",
+    "sourceCount_one": "{{count}} source",
+    "sourceCount_other": "{{count}} sources",
+    "showDescription": "Show description",
+    "hideDescription": "Hide description",
+    "patternsEmpty": "No patterns shipped in this version yet.",
+    "descriptionEmpty": "No description authored for this pattern yet.",
+    "examplesEmpty": "No example cases curated for this pattern yet.",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {{current}} of {{total}}"
     }
   }
 }

@@ -1,0 +1,49 @@
+{
+  "slug": "gillette",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Gillette",
+    "zh": "吉列(Gillette)"
+  },
+  "summary": {
+    "en": "King C. Gillette filed the safety razor patent in 1901 — the originating bait-and-hook business model. Sell the razor handle cheap (sometimes given away in cereal boxes, soap packaging, military rations); make the money on the patented blades that only fit Gillette handles. Acquired by Procter & Gamble in 2005 for $57B. The mechanism is intertemporal cross-subsidy: cheap upfront product locks the customer into expensive recurring consumables. The case shows the asymmetric BMC pair — razors-bait + blades-hook — that every successor (HP printers + ink, Nespresso machines + capsules, mobile phone subsidies) has copied for 120+ years.",
+    "zh": "King C. Gillette 在 1901 年申请了安全剃须刀专利 —— 这是「诱饵 & 钩子」商业模式的起源。剃须刀手柄低价出售(有时还会作为麦片盒、肥皂包装或军队配给的赠品);真正的钱在那些只能配合吉列手柄的专利刀片上。2005 年被宝洁(P&G)以 570 亿美元收购。模式机制是时间维度的跨期补贴:前端产品低价锁定客户、然后靠高价的耗材持续收钱。本案例呈现了那对不对称 BMC —— 剃须刀诱饵 + 刀片钩子 —— 这正是 HP 打印机 + 墨水、Nespresso 机器 + 胶囊、手机合约补贴等所有继承者在过去 120 多年里反复复制的母本。"
+  },
+  "tags": [
+    "razors",
+    "consumer-goods",
+    "bait-and-hook",
+    "lock-in",
+    "USA",
+    "P&G"
+  ],
+  "sources": [
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (pp. 100-103 bait-and-hook pattern)"
+    },
+    {
+      "label": "Chris Anderson · Free: The Future of a Radical Price · Hyperion · 2009"
+    },
+    {
+      "label": "Russell B. Adams · King C. Gillette: The Man and His Wonderful Shaving Device · Little, Brown · 1978"
+    },
+    {
+      "label": "Procter & Gamble · 2005 Annual Report (Gillette acquisition)",
+      "url": "https://www.pginvestor.com/"
+    },
+    {
+      "label": "Tim Hwang · 'Subprime Attention Crisis' (sidebar on Gillette economics) · 2020"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "9a84e71a-e3b4-46ec-9466-d4ceb9460f02",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "free"
+  ],
+  "appliesPatternSubtypes": {
+    "free": "bait-and-hook"
+  }
+}

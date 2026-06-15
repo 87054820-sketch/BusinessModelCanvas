@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography';
+
 export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
@@ -15,5 +17,10 @@ export default {
       },
     },
   },
-  plugins: [],
+  // Adds proper paragraph / heading / list spacing for markdown
+  // bodies rendered with `<div class="prose">` (e.g. pattern
+  // description.{en,zh}.md inside PatternDetailModal). Without this
+  // plugin, `prose` classes are no-ops and react-markdown output
+  // collapses into one undifferentiated wall of text.
+  plugins: [typography],
 };

@@ -1,25 +1,54 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { CaseLibraryEntry, Lang } from '@pingarden/shared';
+import type {
+  BusinessModelPattern,
+  CaseLibraryEntry,
+  Lang,
+} from '@pingarden/shared';
 import { libraryApi } from '../api/library';
 import { useIdentity } from '../identity/useIdentity';
 import { CaseCard } from '../components/CaseCard';
 import { CasePreviewModal } from '../components/CasePreviewModal';
+import { PatternList } from '../components/PatternList';
+import { PatternDetailModal } from '../components/PatternDetailModal';
+import { Pagination } from '../components/Pagination';
+
+type LibraryTab = 'cases' | 'patterns';
+
+/**
+ * Items per page on both the Cases and Patterns tabs. Picked to match
+ * the 3-col grid (3 rows × 3 cols = 9 cards) so a full page lands as
+ * a clean rectangle without orphan rows. Cases tab passes the threshold
+ * today (10 cases → 2 pages); Patterns tab is below it (3 patterns →
+ * pager renders nothing) but the wiring is symmetric so the pager
+ * activates automatically when patterns grow > 9.
+ */
+const PAGE_SIZE = 9;
 
 /**
  * Case-library browse page. Lives at `/library`. Hosts ONLY curated
- * read-only cases (`source: 'library'`); the user's own projects live
- * on `/projects` after the 2026-06 split.
+ * read-only content (`source: 'library'`); the user's own projects
+ * live on `/projects` after the 2026-06 split.
  *
- * Layout:
- *   - Header: back link, title/subtitle, [+ Create blank project] CTA
- *   - Section: case-card grid (kind chips: company / industry / pattern / comparison)
+ * The page is split into two tabs (default: Cases) per 2026-06-15
+ * decision:
+ *   - **Cases** — concrete projects (companies + industries +
+ *     comparisons) rendered as a 3-column grid of `CaseCard`.
+ *   - **Patterns** — abstract reusable business-model patterns (Long
+ *     Tail, Unbundling, …) as a 3-column grid of compact pattern cards.
+ *     Patterns are NOT projects: no fork, no canvas. Click a card to
+ *     open `PatternDetailModal` — a large tabbed modal with the
+ *     long-form description (markdown) and the curated example cases.
+ *     Per 2026-06-15 feedback the list itself is intentionally lean
+ *     so the page scales to many patterns without becoming a wall of
+ *     nested collapsibles.
  *
- * Click a case → preview modal with summary, sources, canvases list.
- * From the modal the user picks "Open as read-only" (enters the
- * read-only workspace) or "Fork to my projects" (deep copy to
- * `/projects`, story canvasId directives rewritten).
+ * Cross-tab navigation:
+ *   - Cases tab: a CaseCard's violet "applies patterns" chip → switch
+ *     to Patterns tab + open that pattern's detail modal.
+ *   - Patterns tab: an example case in the modal → close pattern modal,
+ *     switch to Cases tab, open that case's preview modal.
  */
 export function LibraryPage() {
   const { t, i18n } = useTranslation();
@@ -27,12 +56,62 @@ export function LibraryPage() {
   const navigate = useNavigate();
 
   const [cases, setCases] = useState<CaseLibraryEntry[] | null>(null);
+  const [patterns, setPatterns] = useState<BusinessModelPattern[] | null>(null);
   const [previewEntry, setPreviewEntry] = useState<CaseLibraryEntry | null>(null);
+  const [selectedPattern, setSelectedPattern] = useState<BusinessModelPattern | null>(null);
+  const [tab, setTab] = useState<LibraryTab>('cases');
+  // Per-tab page state. Reset to 1 when the underlying list reloads or
+  // the user switches tab — so coming back to a tab always lands you
+  // at the top, not on a "Page 3" they don't remember leaving on.
+  const [casesPage, setCasesPage] = useState(1);
+  const [patternsPage, setPatternsPage] = useState(1);
+  // Anchor for "scroll the list region into view" on page change.
+  // Sits above the tab strip so the user sees the new page's first row
+  // without scrolling up after clicking Next.
+  const listAnchorRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (!identity) return;
     void libraryApi.list(identity.displayName).then(setCases);
+    // Patterns are public — no displayName required. Fetched once on
+    // mount alongside cases so the Cases tab can render pattern chips
+    // immediately (lookup needs the patterns list).
+    void libraryApi.listPatterns().then(setPatterns);
   }, [identity]);
+
+  // Reset pagers whenever the underlying list reloads (defensive: if
+  // the count shrinks, a stale page index could land on an empty
+  // page). Cheap; runs at most twice per mount.
+  useEffect(() => {
+    setCasesPage(1);
+  }, [cases]);
+  useEffect(() => {
+    setPatternsPage(1);
+  }, [patterns]);
+
+  // Smooth-scroll to the list anchor on page change so the user
+  // doesn't have to scroll up by hand.
+  function scrollToList() {
+    listAnchorRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function handleCasesPageChange(p: number) {
+    setCasesPage(p);
+    // requestAnimationFrame so the new content has rendered before we scroll
+    requestAnimationFrame(scrollToList);
+  }
+  function handlePatternsPageChange(p: number) {
+    setPatternsPage(p);
+    requestAnimationFrame(scrollToList);
+  }
+  // Tab switch: reset pagers + park at the list region. Avoids the
+  // surprise of clicking from Cases (page 2) to Patterns (which had
+  // its own page 2 from earlier in the session).
+  function handleTabChange(next: LibraryTab) {
+    if (next === tab) return;
+    setTab(next);
+    setCasesPage(1);
+    setPatternsPage(1);
+  }
 
   if (!identity) return null;
   const lang = (i18n.language as Lang) ?? 'en';
@@ -56,10 +135,28 @@ export function LibraryPage() {
     navigate(`/p/${result.project.id}`);
   }
 
+  /** Cases tab → Patterns tab: open the matching pattern's detail modal. */
+  function handlePatternChipClick(slug: string) {
+    const p = patterns?.find((x) => x.slug === slug);
+    if (!p) return;
+    setPreviewEntry(null);
+    handleTabChange('patterns');
+    setSelectedPattern(p);
+  }
+
+  /** Patterns tab → Cases tab: open the case's preview modal. */
+  function handleExampleClick(slug: string) {
+    const entry = cases?.find((c) => c.slug === slug);
+    if (!entry) return;
+    setSelectedPattern(null);
+    handleTabChange('cases');
+    setPreviewEntry(entry);
+  }
+
   return (
-    <main className="mx-auto max-w-6xl px-8 py-8">
+    <main className="mx-auto max-w-6xl px-8 py-6">
       {/* Page header — back link + title + create CTA on the right */}
-      <header className="mb-8 flex items-end justify-between gap-6">
+      <header className="mb-4 flex items-end justify-between gap-6">
         <div>
           <Link
             to="/"
@@ -67,8 +164,8 @@ export function LibraryPage() {
           >
             ← {t('nav.back')}
           </Link>
-          <h1 className="mt-3 text-2xl font-semibold text-gray-900">
-            {t('library.casesSection')}
+          <h1 className="mt-2 text-2xl font-semibold text-gray-900">
+            {t('library.pageTitle')}
           </h1>
           <p className="mt-1 text-sm text-gray-500">{t('library.pageSubtitle')}</p>
         </div>
@@ -81,36 +178,143 @@ export function LibraryPage() {
         </button>
       </header>
 
-      {/* Case grid */}
-      <section>
-        {cases === null ? (
-          <p className="text-sm text-gray-400">{t('home.loading')}…</p>
-        ) : cases.length === 0 ? (
-          <p className="rounded-lg border border-dashed border-gray-200 bg-white py-12 text-center text-sm text-gray-400">
-            {t('library.noCases')}
-          </p>
-        ) : (
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {cases.map((c) => (
-              <CaseCard
-                key={c.slug}
-                entry={c}
-                lang={lang}
-                onClick={(entry) => setPreviewEntry(entry)}
-              />
-            ))}
-          </div>
-        )}
-      </section>
+      {/* Tab strip — default Cases. State is in-memory (no URL sync yet). */}
+      <div
+        ref={listAnchorRef}
+        className="mb-4 flex items-end gap-1 border-b border-gray-200"
+        role="tablist"
+      >
+        <TabButton
+          active={tab === 'cases'}
+          onClick={() => handleTabChange('cases')}
+          label={t('library.tabs.cases')}
+          count={cases?.length}
+        />
+        <TabButton
+          active={tab === 'patterns'}
+          onClick={() => handleTabChange('patterns')}
+          label={t('library.tabs.patterns')}
+          count={patterns?.length}
+        />
+      </div>
 
-      {/* Preview modal */}
+      {tab === 'cases' && (
+        <section role="tabpanel">
+          {cases === null ? (
+            <p className="text-sm text-gray-400">{t('home.loading')}…</p>
+          ) : cases.length === 0 ? (
+            <p className="rounded-lg border border-dashed border-gray-200 bg-white py-12 text-center text-sm text-gray-400">
+              {t('library.noCases')}
+            </p>
+          ) : (
+            <>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {cases
+                  .slice((casesPage - 1) * PAGE_SIZE, casesPage * PAGE_SIZE)
+                  .map((c) => (
+                    <CaseCard
+                      key={c.slug}
+                      entry={c}
+                      lang={lang}
+                      onClick={(entry) => setPreviewEntry(entry)}
+                      patterns={patterns ?? undefined}
+                      onPatternClick={handlePatternChipClick}
+                    />
+                  ))}
+              </div>
+              <Pagination
+                total={cases.length}
+                pageSize={PAGE_SIZE}
+                currentPage={casesPage}
+                onPageChange={handleCasesPageChange}
+                className="mt-5"
+              />
+            </>
+          )}
+        </section>
+      )}
+
+      {tab === 'patterns' && (
+        <section role="tabpanel">
+          {patterns === null ? (
+            <p className="text-sm text-gray-400">{t('home.loading')}…</p>
+          ) : (
+            <>
+              <PatternList
+                patterns={patterns.slice(
+                  (patternsPage - 1) * PAGE_SIZE,
+                  patternsPage * PAGE_SIZE,
+                )}
+                lang={lang}
+                onSelect={setSelectedPattern}
+              />
+              <Pagination
+                total={patterns.length}
+                pageSize={PAGE_SIZE}
+                currentPage={patternsPage}
+                onPageChange={handlePatternsPageChange}
+                className="mt-5"
+              />
+            </>
+          )}
+        </section>
+      )}
+
+      {/* Case preview modal */}
       <CasePreviewModal
         entry={previewEntry}
         lang={lang}
         onClose={() => setPreviewEntry(null)}
         onOpenReadOnly={handleOpenReadOnly}
         onFork={handleFork}
+        patterns={patterns ?? undefined}
+        onPatternClick={handlePatternChipClick}
+      />
+
+      {/* Pattern detail modal — large, tabbed (description / examples) */}
+      <PatternDetailModal
+        pattern={selectedPattern}
+        lang={lang}
+        onClose={() => setSelectedPattern(null)}
+        onExampleClick={handleExampleClick}
       />
     </main>
+  );
+}
+
+function TabButton({
+  active,
+  onClick,
+  label,
+  count,
+}: {
+  active: boolean;
+  onClick: () => void;
+  label: string;
+  count?: number;
+}) {
+  return (
+    <button
+      type="button"
+      role="tab"
+      aria-selected={active}
+      onClick={onClick}
+      className={`-mb-px border-b-2 px-4 py-2 text-sm font-medium transition ${
+        active
+          ? 'border-gray-900 text-gray-900'
+          : 'border-transparent text-gray-500 hover:text-gray-800'
+      }`}
+    >
+      {label}
+      {typeof count === 'number' && (
+        <span
+          className={`ml-2 rounded-full px-1.5 py-0.5 text-[10px] ${
+            active ? 'bg-gray-100 text-gray-700' : 'bg-gray-50 text-gray-500'
+          }`}
+        >
+          {count}
+        </span>
+      )}
+    </button>
   );
 }

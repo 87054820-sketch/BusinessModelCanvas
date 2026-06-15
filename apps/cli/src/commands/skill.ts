@@ -4,7 +4,7 @@ import { homedir } from 'node:os';
 import { join, resolve } from 'node:path';
 import pc from 'picocolors';
 import { BaseCommand } from '../lib/baseCommand.js';
-import { discoverBundlesDir } from '../skill/discover.js';
+import { discoverBundlesDir, discoverPatternsDir } from '../skill/discover.js';
 import { generateSkill, readInstalledHash } from '../skill/generate.js';
 
 const GLOBAL_INSTALL_DIR = join(homedir(), '.claude', 'skills', 'pingarden');
@@ -14,12 +14,20 @@ const LOCAL_INSTALL_DIR = join('.claude', 'skills', 'pingarden');
 
 export function skillBuildHandler(args: {
   bundlesDir?: string;
+  patternsDir?: string;
   outDir: string;
   langs?: Array<'en' | 'zh'>;
 }) {
   const bundlesDir = discoverBundlesDir({ override: args.bundlesDir });
+  // Patterns are optional — discoverPatternsDir returns null when no
+  // patterns/ directory is found, and the generator gracefully omits
+  // the patterns/ tree from the output when so.
+  const patternsDir = discoverPatternsDir({
+    ...(args.patternsDir !== undefined ? { override: args.patternsDir } : {}),
+  });
   return generateSkill({
     bundlesDir,
+    patternsDir,
     outDir: args.outDir,
     ...(args.langs !== undefined ? { langs: args.langs } : {}),
   });
@@ -27,6 +35,7 @@ export function skillBuildHandler(args: {
 
 export function skillInstallHandler(args: {
   bundlesDir?: string;
+  patternsDir?: string;
   local: boolean;
   dryRun: boolean;
   langs?: Array<'en' | 'zh'>;
@@ -34,12 +43,16 @@ export function skillInstallHandler(args: {
   const targetDir = args.local
     ? resolve(LOCAL_INSTALL_DIR)
     : GLOBAL_INSTALL_DIR;
+  const patternsDir = discoverPatternsDir({
+    ...(args.patternsDir !== undefined ? { override: args.patternsDir } : {}),
+  });
 
   if (args.dryRun) {
     // Run a build into a temp dir, then compare hash with installed.
     const tmp = `${targetDir}.preview`;
     const result = generateSkill({
       bundlesDir: discoverBundlesDir({ override: args.bundlesDir }),
+      patternsDir,
       outDir: tmp,
       ...(args.langs !== undefined ? { langs: args.langs } : {}),
     });
@@ -58,6 +71,7 @@ export function skillInstallHandler(args: {
       contentHash: result.contentHash,
       previousHash: installedHash,
       canvasIds: result.canvasIds,
+      patternSlugs: result.patternSlugs,
     };
   }
 
@@ -66,6 +80,7 @@ export function skillInstallHandler(args: {
   // We need to compute the hash to know whether to skip. Run generate.
   const result = generateSkill({
     bundlesDir: discoverBundlesDir({ override: args.bundlesDir }),
+    patternsDir,
     outDir: targetDir,
     ...(args.langs !== undefined ? { langs: args.langs } : {}),
   });
@@ -76,6 +91,7 @@ export function skillInstallHandler(args: {
     previousHash: installedHash,
     upToDate: installedHash === result.contentHash,
     canvasIds: result.canvasIds,
+    patternSlugs: result.patternSlugs,
   };
 }
 
@@ -115,6 +131,7 @@ export class SkillBuildCommand extends BaseCommand {
         `  content hash  ${r.contentHash.slice(0, 12)}…`,
         `  files         ${r.files.length}`,
         `  canvases      ${r.canvasIds.length} (${r.canvasIds.join(', ')})`,
+        `  patterns      ${r.patternSlugs.length}${r.patternSlugs.length > 0 ? ` (${r.patternSlugs.join(', ')})` : ''}`,
       ].join('\n'),
     );
   }
@@ -166,12 +183,13 @@ export class SkillInstallCommand extends BaseCommand {
             : pc.green('  status        up to date'),
         ].join('\n');
       }
-      const r2 = r as { targetDir: string; upToDate: boolean; version: string; canvasIds: string[] };
+      const r2 = r as { targetDir: string; upToDate: boolean; version: string; canvasIds: string[]; patternSlugs: string[] };
       return [
         pc.green(r2.upToDate ? '✓ skill up to date' : '✓ skill installed'),
         `  target        ${r2.targetDir}`,
         `  version       ${r2.version}`,
         `  canvases      ${r2.canvasIds.length}`,
+        `  patterns      ${r2.patternSlugs.length}${r2.patternSlugs.length > 0 ? ` (${r2.patternSlugs.join(', ')})` : ''}`,
       ].join('\n');
     });
   }

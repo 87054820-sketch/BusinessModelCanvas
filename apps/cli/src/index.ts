@@ -48,6 +48,7 @@ import {
   CaseValidateCommand,
 } from './commands/caseAuthor.js';
 import { CaseRelayoutCommand } from './commands/caseRelayout.js';
+import { PatternGetCommand, PatternListCommand } from './commands/pattern.js';
 
 const [, , ...args] = process.argv;
 
@@ -112,6 +113,10 @@ cli.register(CaseForkCommand);
 cli.register(CaseAuthorCommand);
 cli.register(CaseValidateCommand);
 cli.register(CaseRelayoutCommand);
+
+// Business-model patterns (read-only, peer of cases — no fork / no edit)
+cli.register(PatternListCommand);
+cli.register(PatternGetCommand);
 
 // Skill
 cli.register(SkillBuildCommand);

@@ -3,17 +3,17 @@
   "version": 1,
   "kind": "company",
   "companyName": {
-    "en": "Tencent — WeChat Private Domain",
-    "zh": "腾讯 · 微信私域项目"
+    "en": "Tencent Games — Heima Private Domain Project",
+    "zh": "腾讯游戏 · 黑马私域项目"
   },
   "summary": {
-    "en": "Late-2023 retrospective of a WeChat private-domain operations playbook within Tencent — repositioned from selling a platform to selling outcome accompaniment, with measurable success rates lifted from the industry's <20% to 40–50%. Includes a BMC, VPC, design-criteria canvas, and experiment canvas, plus a long-form narrative tying them together.",
-    "zh": "2023 年底对腾讯内部微信私域运营项目的复盘:从“卖平台”转向“卖效果陪伴”,把行业里 < 20% 的成功率拉到 40–50%。包含商业模式、价值主张、设计准则、实验四张画布,以及一篇贯通的长篇叙事。"
+    "en": "Late-2023 retrospective of the Heima sub-team's WeChat private-domain operations playbook within Tencent Games — repositioned from selling a platform to selling outcome accompaniment, with measurable success rates lifted from the industry's <20% to 40–50%. Includes a BMC, VPC, design-criteria canvas, and experiment canvas, plus a long-form narrative tying them together.",
+    "zh": "2023 年底对腾讯游戏黑马团队微信私域运营项目的复盘:从“卖平台”转向“卖效果陪伴”,把行业里 < 20% 的成功率拉到 40–50%。包含商业模式、价值主张、设计准则、实验四张画布,以及一篇贯通的长篇叙事。"
   },
-  "tags": ["consumer-tech", "platform", "china", "private-domain", "tencent"],
+  "tags": ["consumer-tech", "platform", "china", "private-domain", "tencent", "tencent-games", "heima"],
   "sources": [
     {
-      "label": "Internal retrospective by sibo (Tencent), recorded December 2023"
+      "label": "Internal retrospective by sibo (Tencent Games · Heima), recorded December 2023"
     }
   ],
   "thumbnailDefId": "business-model-canvas",

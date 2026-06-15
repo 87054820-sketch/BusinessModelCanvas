@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { CaseLibraryDetail, CaseLibraryEntry, Lang } from '@pingarden/shared';
+import type {
+  BusinessModelPattern,
+  CaseLibraryDetail,
+  CaseLibraryEntry,
+  Lang,
+} from '@pingarden/shared';
 import { libraryApi } from '../api/library';
 import { useIdentity } from '../identity/useIdentity';
 
@@ -12,6 +17,18 @@ interface Props {
   onOpenReadOnly: (entry: CaseLibraryEntry, detail: CaseLibraryDetail) => void;
   /** Fork to a new editable user project, then navigate to it. */
   onFork: (entry: CaseLibraryEntry) => Promise<void>;
+  /**
+   * All patterns shipped — used to render the violet "applies patterns"
+   * chips with localized names. When absent or the case has no
+   * `appliesPatterns`, the section is hidden entirely.
+   */
+  patterns?: BusinessModelPattern[];
+  /**
+   * Click handler for an applies-patterns chip. Host page is expected
+   * to close the modal and switch to the Patterns tab + scroll to the
+   * pattern's card.
+   */
+  onPatternClick?: (slug: string) => void;
 }
 
 /**
@@ -26,7 +43,15 @@ interface Props {
  * driven (no SVG plugin preview) — a case is a project + canvases +
  * stories, not a single canvas template.
  */
-export function CasePreviewModal({ entry, lang, onClose, onOpenReadOnly, onFork }: Props) {
+export function CasePreviewModal({
+  entry,
+  lang,
+  onClose,
+  onOpenReadOnly,
+  onFork,
+  patterns,
+  onPatternClick,
+}: Props) {
   const { t } = useTranslation();
   const { identity } = useIdentity();
   const [detail, setDetail] = useState<CaseLibraryDetail | null>(null);
@@ -158,6 +183,47 @@ export function CasePreviewModal({ entry, lang, onClose, onOpenReadOnly, onFork 
             </div>
           )}
 
+          {/* Applies-patterns — only when the case backlinks to ≥1 pattern.
+              Chip label includes a sub-type suffix when
+              entry.appliesPatternSubtypes refines the pattern (e.g.
+              `Free · Ad-supported` instead of `Free`). */}
+          {(() => {
+            const applied: BusinessModelPattern[] =
+              (entry.appliesPatterns ?? [])
+                .map((slug) => patterns?.find((p) => p.slug === slug))
+                .filter((p): p is BusinessModelPattern => !!p);
+            if (applied.length === 0) return null;
+            const subtypeMap = entry.appliesPatternSubtypes ?? {};
+            const chipLabel = (p: BusinessModelPattern): string => {
+              const baseName = p.name[lang] ?? p.name.en;
+              const subtypeId = subtypeMap[p.slug];
+              if (!subtypeId) return baseName;
+              const sub = p.subtypes?.find((s) => s.id === subtypeId);
+              if (!sub) return baseName;
+              const subName = sub.name[lang] ?? sub.name.en;
+              return `${baseName} · ${subName}`;
+            };
+            return (
+              <section className="mt-5">
+                <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                  {t('library.appliesPatterns')}
+                </h3>
+                <div className="flex flex-wrap gap-1.5">
+                  {applied.map((p) => (
+                    <button
+                      type="button"
+                      key={p.slug}
+                      onClick={() => onPatternClick?.(p.slug)}
+                      className="rounded-full border border-dashed border-violet-300 bg-violet-50 px-3 py-1 text-xs font-medium text-violet-700 transition hover:bg-violet-100"
+                    >
+                      {chipLabel(p)}
+                    </button>
+                  ))}
+                </div>
+              </section>
+            );
+          })()}
+
           {/* Canvases */}
           <section className="mt-6">
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">
@@ -270,8 +336,6 @@ function kindChipColor(kind: CaseLibraryEntry['kind']): string {
       return 'bg-emerald-50 text-emerald-700';
     case 'industry':
       return 'bg-amber-50 text-amber-700';
-    case 'pattern':
-      return 'bg-violet-50 text-violet-700';
     case 'comparison':
       return 'bg-sky-50 text-sky-700';
   }

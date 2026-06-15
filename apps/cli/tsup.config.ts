@@ -13,6 +13,8 @@ import { defineConfig } from 'tsup';
 
 const ASSETS_CANVASES = resolve('assets/canvases');
 const BUNDLES_SRC = resolve('../../packages/canvases');
+const ASSETS_PATTERNS = resolve('assets/patterns');
+const PATTERNS_SRC = resolve('../../packages/case-library/patterns');
 const DIST_PACKAGE_JSON = resolve('dist/package.json');
 
 const PKG_VERSION = (
@@ -44,6 +46,24 @@ function syncCanvasesToAssets() {
     rmSync(ASSETS_CANVASES, { recursive: true, force: true, maxRetries: 5, retryDelay: 50 });
   }
   copyTree(BUNDLES_SRC, ASSETS_CANVASES);
+}
+
+/**
+ * Mirror packages/case-library/patterns/ into apps/cli/assets/patterns/
+ * so the skill generator can scan them when running from the published
+ * tarball or the Mac-app extraResources copy. Same rationale as
+ * `syncCanvasesToAssets` — patterns ship in the npm tarball, no
+ * workspace siblings at runtime.
+ *
+ * Patterns are tiny markdown + json (no SVG, no Yjs binary), so we
+ * copy them verbatim with no skip filters.
+ */
+function syncPatternsToAssets() {
+  if (existsSync(ASSETS_PATTERNS)) {
+    rmSync(ASSETS_PATTERNS, { recursive: true, force: true, maxRetries: 5, retryDelay: 50 });
+  }
+  if (!existsSync(PATTERNS_SRC)) return; // empty pattern dir is allowed
+  copyTree(PATTERNS_SRC, ASSETS_PATTERNS);
 }
 
 function copyTree(src: string, dest: string) {
@@ -100,6 +120,7 @@ export default defineConfig({
   },
   async onSuccess() {
     syncCanvasesToAssets();
+    syncPatternsToAssets();
     // Mark `dist/` as ESM. Without this sentinel, Node treats `.js`
     // as CommonJS — fatal when the CLI is run via Electron-as-Node
     // from inside the Mac app, where the parent app's package.json

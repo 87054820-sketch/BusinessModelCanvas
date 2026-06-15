@@ -1,0 +1,55 @@
+{
+  "slug": "unbundling-business-models",
+  "name": {
+    "en": "Unbundling Business Models",
+    "zh": "解绑型商业模式"
+  },
+  "summary": {
+    "en": "Most companies bundle three fundamentally different businesses inside one entity: customer relationships, product innovation, and infrastructure. Each has its own economics and culture. Unbundling means separating them into independent firms or operating units to remove the conflicts that inevitably arise.",
+    "zh": "大多数公司把三种本质不同的业务捆绑在一家实体里:客户关系、产品创新、基础设施。它们各有自己的经济、竞争和文化驱动力。解绑就是把它们拆分到独立的公司或事业部,消除捆绑必然带来的内生冲突。"
+  },
+  "sources": [
+    { "label": "John Hagel III & Marc Singer · 'Unbundling the Corporation' · Harvard Business Review · March 1999", "url": "https://hbr.org/1999/03/unbundling-the-corporation" },
+    { "label": "Michael Treacy & Fred Wiersema · The Discipline of Market Leaders · Addison-Wesley · 1995" },
+    { "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 1, pp. 56-65)" }
+  ],
+  "references": [
+    {
+      "type": "paper",
+      "cite": "Hagel & Singer 1999",
+      "label": "John Hagel III & Marc Singer · 'Unbundling the Corporation' · Harvard Business Review",
+      "year": 1999,
+      "pages": "Mar–Apr 1999 issue",
+      "url": "https://hbr.org/1999/03/unbundling-the-corporation",
+      "note": {
+        "en": "Originating paper. Names the three business types (customer relationship, product innovation, infrastructure) and argues bundling forces unavoidable strategic compromises.",
+        "zh": "原始论文。提出三类业务(客户关系、产品创新、基础设施)的概念,论证把它们捆绑在一家公司里必然导致战略妥协。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "Treacy & Wiersema 1995",
+      "label": "Michael Treacy & Fred Wiersema · The Discipline of Market Leaders · Addison-Wesley",
+      "year": 1995,
+      "note": {
+        "en": "Pre-Hagel framing of three value disciplines (customer intimacy, product leadership, operational excellence) that map almost 1:1 onto the three unbundled business types.",
+        "zh": "Hagel 之前的奠基性框架。提出三种价值规则(客户亲密、产品领先、运营卓越),与解绑后的三类业务几乎一一对应。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "BMG 2010",
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley",
+      "year": 2010,
+      "pages": "pp. 56–65",
+      "note": {
+        "en": "Adapts unbundling into the BMC pattern catalog (Pattern No. 1). Uses Swiss private banking and mobile telecom as the two paradigm cases — both shipped in this library.",
+        "zh": "把解绑收录为 BMC 模式手册(第 1 号模式)。书中两个范式案例:瑞士私人银行业、移动电信业 —— 本案例库均已收录。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "swiss-private-banking",   "role": "primary" },
+    { "slug": "mobile-telco-unbundling", "role": "primary" }
+  ]
+}

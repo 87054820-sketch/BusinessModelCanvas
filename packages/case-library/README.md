@@ -255,3 +255,298 @@ pingarden case relayout swiss-private-banking
 pingarden case relayout wechat-private-domain
 ```
 
+## Adding a new business-model pattern
+
+A **pattern** (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open
+Business Model …) is a separate first-class entity in the library, not
+a kind of case. Patterns have no BMC, no canvases, no Yjs binary, no
+fork affordance — they are curated explanation + a list of example
+cases. They live at `packages/case-library/patterns/<slug>/` and are
+listed in `manifest.json.patterns`.
+
+### File layout
+
+```
+packages/case-library/patterns/<slug>/
+├── pattern.json         BusinessModelPattern (slug, name, summary,
+│                        sources, references?, examples)
+├── description.en.md    long-form user-facing narrative (web modal
+├── description.zh.md       renders this with prose typography)
+├── skill.en.md          AI-facing concise guide (skill page renders
+└── skill.zh.md             this; falls back to first 3 paras of
+                            description if missing)
+```
+
+Skipping any of the five files breaks the build's `pingarden case
+validate` gate. The pattern's `examples[]` slugs must resolve to
+manifested cases; cases' `appliesPatterns[]` slugs must resolve to
+manifested patterns. Both directions are validated.
+
+### `pattern.json` template
+
+```jsonc
+{
+  "slug": "<kebab-case>",
+  "name":    { "en": "<Display Name>", "zh": "<中文名称>" },
+  "summary": {
+    "en": "(~60 words: what the pattern is, what makes it distinct.)",
+    "zh": "(~60 字。)"
+  },
+  // Legacy flat list. Kept for backward compat — when `references`
+  // is also present, both UI and skill prefer `references` and ignore
+  // `sources`. New patterns can leave `sources` as a duplicate of
+  // references' label fields, or pare it down — both choices work.
+  "sources": [
+    { "label": "Author · Title · Venue · Year", "url": "https://..." }
+  ],
+  // Annotated bibliography. PREFERRED for new patterns. See
+  // PatternReference in packages/shared/src/index.ts.
+  "references": [
+    {
+      "type": "paper",  // 'book' | 'article' | 'paper' | 'web'
+      "cite": "Hagel & Singer 1999",  // author-year handle. Used
+                                      // verbatim in description.md prose
+                                      // and the rendered bibliography.
+      "label": "John Hagel III & Marc Singer · 'Unbundling the Corporation' · Harvard Business Review",
+      "year": 1999,
+      "pages": "Mar–Apr 1999 issue",
+      "url": "https://hbr.org/...",
+      "note": {
+        "en": "(~30 words: WHAT THIS source contributes that others don't.)",
+        "zh": "(~30 字。)"
+      }
+    }
+    // ...usually 2–4 entries: originating paper / book → adapter /
+    // translator → BMG canonicalisation. Order does not matter — the
+    // skill renderer groups by `type` then by year.
+  ],
+  // Curated reverse links to concrete cases that exemplify the pattern.
+  // `role: "primary"` flags the most paradigmatic exemplars; "secondary"
+  // is reserved for cases tagged with the pattern but where it's one
+  // of several patterns the case applies.
+  "examples": [
+    { "slug": "<case-slug>", "role": "primary"   },
+    { "slug": "<case-slug>", "role": "secondary" }
+  ]
+}
+```
+
+### `description.{en,zh}.md` 5-section template
+
+All patterns shipped to date follow this skeleton. Stick to it — it's
+what makes the modal's prose readable across patterns and what makes
+the skill's `firstParagraphs` fallback land on coherent content.
+
+```markdown
+# <Pattern Name>
+
+> *<pull-quote from canonical source — typically BMG p. NN>*
+> — Author, *Title*, p. NN  *(CiteHandle)*
+
+## Why this pattern matters
+
+(~250 words.) Origin: who proposed it, when, what problem they were
+solving. Use cite handles in prose ("Hagel and Singer (Hagel & Singer
+1999) argued…"). Connect the originating paper / book to BMG's
+adaptation (BMG 2010). Make sure the reader understands *why this is
+its own thing* and not a special case of an adjacent pattern.
+
+## What a <pattern> BMC looks like
+
+(~200 words.) Block-by-block: which BMC blocks the pattern most
+affects, what they typically contain, what the relationships
+between them tend to be. Pick **5–6 of the 9 blocks** — not all 9
+— and don't fill in trivia. The reader should walk away knowing
+which blocks are the *signal* of this pattern.
+
+## Concrete examples
+
+4–8 examples, including at least 2 that are shipped library cases.
+Each entry: `**Name**` + 1–2 sentences saying what makes it an
+exemplar of the pattern. Mix *(cite handles)* into the prose where
+useful (e.g. "Anderson 2004's headline example"). It's fine to list
+examples that aren't in the library yet — name-checking them helps
+the AI agent recognise them later.
+
+## What goes wrong
+
+3–5 failure modes, framed as **bold lead-in then explanation**.
+Borrow anti-patterns from the originating sources where they exist
+(BMG 2010, Eisenmann 2006, etc.); cite them with handles. The reader
+should leave knowing how to *not* misapply the pattern.
+
+## Read the examples
+
+Direct slug pointers to library cases, ordered by which one to read
+first. For each: 1–2 sentences on what specifically that case
+demonstrates. Group by `role: primary` first, then `role: secondary`.
+```
+
+### `skill.{en,zh}.md` template
+
+The skill page is **AI-facing, condensed**. Expected length ~200
+words. The skill generator falls back to `firstParagraphs(description,
+3)` when this file is missing for a language, so writing it is
+strictly an improvement.
+
+```markdown
+# <Pattern Name> — AI skill page
+
+## TL;DR
+
+(One short paragraph: pattern in a sentence + cite handle for the
+canonical source.)
+
+## When this pattern applies (signals)
+
+- (Bulleted list of 3–4 signals — the cues that suggest the pattern
+  fits a given business idea.)
+
+## How to spot it from a BMC
+
+- **Block name**: what to expect there.
+- (One bullet per signature block, 3–5 bullets.)
+
+## Anti-patterns
+
+- ❌ (Common misapplication.)
+- ❌ (Another.)
+
+## Cross-references
+
+- (Other patterns this often co-exists with or contrasts to.)
+- (Library cases that exemplify the cross-references.)
+
+## How to act on it
+
+When the user asks about a [pattern] company:
+
+1. (CLI commands.)
+2. (Reasoning steps.)
+3. (Pattern-fit check before drafting.)
+```
+
+### Pattern audit checklist — REQUIRED on every new pattern
+
+When adding pattern X, walk **every existing case** in `cases/` and
+decide: does this case ALSO apply pattern X? If yes, append the slug
+to the case's `appliesPatterns[]`. Skipping this audit silently
+weakens the cross-link graph — the new pattern becomes an orphan
+relative to cases that should exemplify it.
+
+Concrete steps:
+
+1. List all cases: `ls packages/case-library/cases/`
+2. For each case, read `case.json` and decide whether the new pattern
+   applies. Use the new pattern's "signals" (from skill.md) as the
+   decision criteria. **Bias toward fewer tags** — only tag a case
+   when the pattern is clearly a primary or secondary description of
+   the business, not a faint adjacency.
+3. For matching cases, edit `appliesPatterns[]` (extend if non-empty,
+   add if absent). The case's `tags[]` is unchanged — it lives in a
+   different namespace.
+4. Verify: `pingarden case validate` enforces both directions resolve.
+   Read the new pattern's `examples[]` and grep all `case.json` for
+   the new pattern slug — the two should agree.
+
+A worked example of this audit lives in the 2026-06-15 round 3 plan
+(`generic-strolling-tarjan.md`): when we added `multi-sided-platforms`,
+the audit tagged 4 existing cases (udemy, aliexpress, lulu-com,
+lego-long-tail) and explicitly rejected 6 (wechat-private-domain,
+swiss-private-banking, mobile-telco-unbundling, patagonia, carvana,
+cainiao) — the rejections matter as much as the tags.
+
+### When the pattern has structural sub-types
+
+Some patterns are textbook-grouped under one chapter but have
+meaningfully different BMC shapes per flavor — the canonical example
+is **Free** (BMG Pattern No. 4) which has three sub-types:
+ad-supported (Google search side), freemium (Spotify, Dropbox), and
+bait-and-hook (Gillette razors+blades, HP printers+ink). Treating
+them as one opaque tag throws information away; treating them as
+three separate patterns over-fragments. The compromise: ONE pattern
+with explicit sub-typing.
+
+`pattern.json` adds an optional `subtypes[]` array. Each entry:
+
+```json
+{
+  "id": "freemium",
+  "name":    { "en": "Freemium", "zh": "Freemium 增值订阅" },
+  "summary": { "en": "Free tier + paid premium tier; ~5–10% of users convert. Cross-subsidy is across users on the same platform.", "zh": "..." },
+  "examples": [
+    { "slug": "spotify", "role": "primary" },
+    { "slug": "udemy",   "role": "secondary" }
+  ]
+}
+```
+
+- `id` — kebab-case stable within the pattern (e.g. `ad-supported`,
+  `freemium`, `bait-and-hook`)
+- `name`, `summary` — bilingual; both languages required
+- `examples` — curated cases for THIS sub-type; subset of the
+  parent `pattern.examples[]` (which remains the union, useful as
+  a default flat list)
+
+Cases tag the sub-type via the parallel field `appliesPatternSubtypes`
+on `case.json`:
+
+```jsonc
+{
+  "appliesPatterns": ["multi-sided-platforms", "free"],
+  "appliesPatternSubtypes": { "free": "ad-supported" }
+}
+```
+
+The map key must appear in `appliesPatterns[]` (validator enforces)
+and the value must match a `subtypes[].id` on the referenced pattern
+(validator enforces). Cases that don't refine simply omit the field —
+fully optional and fully backward-compatible with patterns that don't
+sub-type.
+
+The pattern's `description.{en,zh}.md` should have an explicit
+`## Three sub-types` (or however many) section with `### <Sub-type>`
+headers matching the `subtypes[].name` — the typography plugin renders
+these as visible sub-headings in the modal. Audit existing cases per
+sub-type, not just per pattern, to maintain cross-link granularity.
+
+The 2026-06-15 round 4 rollout is the worked example: Free pattern
+shipped with 3 sub-types, 4 example cases (`google-multi-sided` =
+ad-supported, `spotify` = freemium, `udemy` = freemium secondary,
+`gillette` = bait-and-hook).
+
+### Manifest entry
+
+```json
+{
+  "version": 2,
+  "cases":   [ ... ],
+  "patterns": [
+    { "slug": "<new-pattern-slug>", "featured": true }
+  ]
+}
+```
+
+The order in the array is the order the patterns appear in the
+LibraryPage Patterns tab (curate carefully).
+
+### Skill regen
+
+After authoring the pattern AND tagging cases AND updating the
+manifest, regenerate the skill so the pattern surfaces inside the AI's
+mental model:
+
+```bash
+pnpm --filter @pingarden/cli run build      # picks up new content
+node apps/cli/dist/index.js skill install --local
+git diff .claude/skills/pingarden/          # expect:
+                                            # - patterns/<slug>.{en,zh}.md
+                                            # - SKILL.md version + index
+                                            # - workflows/patterns.md
+                                            # - reference/patterns.md
+```
+
+If `git diff` doesn't show the new `patterns/<slug>.<lang>.md` files,
+the manifest entry is wrong or the `pattern.json` failed to parse —
+check `pingarden pattern list --json` first.
+

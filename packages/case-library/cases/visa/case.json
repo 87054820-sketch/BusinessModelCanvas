@@ -1,0 +1,48 @@
+{
+  "slug": "visa",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Visa",
+    "zh": "Visa(维萨)"
+  },
+  "summary": {
+    "en": "The urtype multi-sided platform: a payment network that brings together cardholders and merchants, plus the issuing and acquiring banks that serve them. Founded as BankAmericard 1958 → Visa 1976. Operates on the classic asymmetric MSP pricing — cardholders pay ~$0 per transaction (often rewarded), merchants pay ~1.5-3% interchange. As of 2024 Visa processes ~$15 trillion in payments volume across ~4.5 billion cards and ~150 million merchant locations. The platform predates the language used to describe it and remains the textbook non-tech MSP — useful as a cross-check when teaching the pattern, since the digital examples (Google, Apple) can make MSPs feel like a 21st-century thing.",
+    "zh": "教科书式的多边平台原型:一个支付网络把持卡人、商户、以及服务它们的发卡行和收单行连在一起。1958 年作为美国银行卡(BankAmericard)起步,1976 年改名 Visa。运行在经典的不对称 MSP 定价机制上 —— 持卡人每笔支付几乎不付费(经常还能拿返现),商户付约 1.5-3% 的回扣。截至 2024 年,Visa 处理约 15 万亿美元支付额、覆盖约 45 亿张卡、约 1.5 亿商户网点。这个平台比给它命名的术语还早出现,至今仍是非科技领域的教科书 MSP —— 当教这个模式时,Visa 是必要的对照,因为数字时代的例子(Google、Apple)容易让人误以为「多边平台」是 21 世纪的概念。"
+  },
+  "tags": [
+    "payments",
+    "platform",
+    "multi-sided",
+    "USA",
+    "infrastructure",
+    "non-tech-classic"
+  ],
+  "sources": [
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (pp. 76-81)"
+    },
+    {
+      "label": "Eisenmann, Parker & Van Alstyne · 'Strategies for Two-Sided Markets' · Harvard Business Review · October 2006",
+      "url": "https://hbr.org/2006/10/strategies-for-two-sided-markets"
+    },
+    {
+      "label": "David S. Evans & Richard Schmalensee · Paying with Plastic · MIT Press · 2005"
+    },
+    {
+      "label": "Visa 2024 Annual Report (Form 10-K)",
+      "url": "https://investor.visa.com/"
+    },
+    {
+      "label": "visa.com / About Visa",
+      "url": "https://usa.visa.com/about-visa.html"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "bb444a7f-3c5b-4b41-b1f8-3d975690239f",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "multi-sided-platforms"
+  ]
+}

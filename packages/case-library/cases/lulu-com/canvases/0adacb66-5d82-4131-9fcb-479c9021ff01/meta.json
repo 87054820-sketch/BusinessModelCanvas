@@ -1,0 +1,23 @@
+{
+  "id": "0adacb66-5d82-4131-9fcb-479c9021ff01",
+  "projectId": "3b1d113f-3e0c-431a-a13c-8c103d5f2330",
+  "defId": "business-model-canvas",
+  "title": "[ZH] 传统图书出版业 —— 被颠覆的捆绑型行业基线",
+  "language": "zh",
+  "variant": {
+    "id": "traditional-publishing-zh",
+    "label": {
+      "en": "Traditional book publishing",
+      "zh": "传统图书出版业(行业基线)"
+    },
+    "description": {
+      "en": "Pre-Lulu industry baseline: publishers gatekeep manuscripts, select for predicted bestsellers, print in volume, sell through retail. The 'old model' Lulu inverts.",
+      "zh": "Lulu 出现之前的行业基线:出版社先做选题筛选、押注预测中的爆款、批量印刷、通过零售批发。Lulu 颠覆的「旧模式」。"
+    },
+    "role": "archetype"
+  },
+  "createdAt": "2026-06-15T05:22:54.962Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T05:22:54.962Z",
+  "updatedBy": "PinGarden Library"
+}

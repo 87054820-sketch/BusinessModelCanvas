@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import type { CanvasMeta, Identity, Project } from '@pingarden/shared';
+import type { Identity } from '@pingarden/shared';
 
-const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 const STORAGE_KEY = 'pingarden.identity';
 const CHANGE_EVENT = 'pingarden:identity-change';
 const ANONYMOUS = 'Anonymous';
@@ -10,8 +9,6 @@ const PALETTE = [
   '#EF4444', '#F97316', '#F59E0B', '#10B981',
   '#06B6D4', '#3B82F6', '#8B5CF6', '#EC4899',
 ];
-
-let bootstrapPromise: Promise<Identity | null> | null = null;
 
 function uuid(): string {
   if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) return crypto.randomUUID();
@@ -63,66 +60,27 @@ function load(): Identity | null {
   }
 }
 
-async function fetchJson<T>(url: string): Promise<T> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return (await res.json()) as T;
-}
-
-function candidateName(name: string | undefined, at: string | undefined) {
-  const trimmed = name?.trim();
-  if (!trimmed || trimmed === ANONYMOUS) return null;
-  return { name: trimmed, at: at ?? '' };
-}
-
-function inferIdentity(projects: Project[], canvases: CanvasMeta[]): Identity | null {
-  const candidates = [
-    ...projects.flatMap((p) => [
-      candidateName(p.updatedBy, p.updatedAt),
-      candidateName(p.createdBy, p.createdAt),
-    ]),
-    ...canvases.flatMap((c) => [
-      candidateName(c.updatedBy, c.updatedAt),
-      candidateName(c.createdBy, c.createdAt),
-    ]),
-  ].filter((x): x is { name: string; at: string } => x !== null);
-
-  candidates.sort((a, b) => b.at.localeCompare(a.at));
-  return candidates[0] ? makeIdentity(candidates[0].name) : null;
-}
-
-async function bootstrapFromExistingData(): Promise<Identity | null> {
-  const existing = load();
-  if (existing) return existing;
-  bootstrapPromise ??= Promise.all([
-    fetchJson<Project[]>(`${BASE}/projects`),
-    fetchJson<CanvasMeta[]>(`${BASE}/canvases`),
-  ])
-    .then(([projects, canvases]) => {
-      const inferred = inferIdentity(projects, canvases);
-      if (inferred) persist(inferred);
-      return inferred;
-    })
-    .catch(() => null);
-  return bootstrapPromise;
-}
-
 /**
  * Lightweight identity for v1: a self-declared display name persisted in
- * localStorage. If localStorage is empty but existing projects/canvases carry
- * author metadata, restore the most recent non-anonymous display name so a
- * server restart or fresh embedded preview does not ask again.
+ * localStorage. If localStorage is empty, the App shell renders the
+ * IdentityModal so the user can fill it in. The badge in the navbar
+ * is clickable to re-open the modal in edit mode.
+ *
+ * Earlier versions silently bootstrapped from the most-recent
+ * `createdBy` on `/projects` + `/canvases` to "remember" identity
+ * across browser-data clears — that path is gone (Round 5, 2026-06-15)
+ * because it leaked the bundled case library's `"PinGarden Library"`
+ * audit-trail value into user identity on a fresh Mac install. Source
+ * of truth is now strictly localStorage; the user types their name
+ * once and can edit it via the badge button.
  *
  * Uses a custom DOM event so every useIdentity() instance in the same
  * window stays in sync (the native `storage` event only fires across tabs).
  */
 export function useIdentity() {
   const [identity, setIdentity] = useState<Identity | null>(load);
-  const [initializing, setInitializing] = useState(() => load() === null);
 
   useEffect(() => {
-    let cancelled = false;
-
     function onStorage(e: StorageEvent) {
       if (e.key === STORAGE_KEY) setIdentity(load());
     }
@@ -133,20 +91,7 @@ export function useIdentity() {
     window.addEventListener('storage', onStorage);
     window.addEventListener(CHANGE_EVENT, onCustom);
 
-    bootstrapFromExistingData()
-      .then((next) => {
-        if (cancelled) return;
-        if (next) {
-          setIdentity(next);
-          window.dispatchEvent(new Event(CHANGE_EVENT));
-        }
-      })
-      .finally(() => {
-        if (!cancelled) setInitializing(false);
-      });
-
     return () => {
-      cancelled = true;
       window.removeEventListener('storage', onStorage);
       window.removeEventListener(CHANGE_EVENT, onCustom);
     };
@@ -158,16 +103,14 @@ export function useIdentity() {
     if (!next) return;
     persist(next);
     setIdentity(next);
-    setInitializing(false);
     window.dispatchEvent(new Event(CHANGE_EVENT));
   }
 
   function clear() {
     localStorage.removeItem(STORAGE_KEY);
     setIdentity(null);
-    setInitializing(false);
     window.dispatchEvent(new Event(CHANGE_EVENT));
   }
 
-  return { identity, initializing, save, clear };
+  return { identity, save, clear };
 }

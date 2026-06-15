@@ -38,25 +38,29 @@ export interface Project {
 export type ProjectSource = 'user' | 'library';
 
 /**
- * Case-library entry kind. Lets the UI and AI distinguish between four
- * fundamentally different teaching artifacts that all live in the case
+ * Case-library entry kind. Lets the UI and AI distinguish between three
+ * fundamentally different teaching artifacts that live in the case
  * library:
  *
- * - `'company'`   — single company analysis (e.g. WeChat private domain).
- *                   The default for back-compat: a project without a
- *                   `caseKind` field is treated as a company case.
- * - `'industry'`  — industry archetype (typical model BMC) plus N company
- *                   variants of the same defId, distinguished by
- *                   `CanvasMeta.variant`. Example: Swiss Private Banking
- *                   (archetype + Maerki Baumann + Pictet).
- * - `'pattern'`   — abstract reusable business-model pattern (Unbundling,
- *                   Long Tail, Multi-Sided Platforms, Free, Open). Carries
- *                   `patternName` and references industry/company examples
- *                   via `examples`.
+ * - `'company'`    — single company analysis (e.g. WeChat private domain).
+ *                    The default for back-compat: a project without a
+ *                    `caseKind` field is treated as a company case.
+ * - `'industry'`   — industry archetype (typical model BMC) plus N company
+ *                    variants of the same defId, distinguished by
+ *                    `CanvasMeta.variant`. Example: Swiss Private Banking
+ *                    (archetype + Maerki Baumann + Pictet).
  * - `'comparison'` — side-by-side comparison of multiple peers (Tesla vs
  *                    BYD). Like `'industry'` but without an archetype.
+ *
+ * NOTE: Business-model **patterns** (Unbundling, Long Tail, Multi-Sided
+ * Platforms, Free, Open) are NOT a case kind — they are a separate
+ * first-class entity (`BusinessModelPattern`) with their own storage
+ * directory (`packages/case-library/patterns/<slug>/`) and HTTP routes
+ * (`/library/patterns`). A pattern is not a project: it has no BMC, no
+ * canvases, no Yjs binary. Concrete cases backlink to the patterns they
+ * exemplify via `CaseLibraryEntry.appliesPatterns: string[]`.
  */
-export type CaseKind = 'company' | 'industry' | 'pattern' | 'comparison';
+export type CaseKind = 'company' | 'industry' | 'comparison';
 
 /**
  * Bibliographic citation attached to a case. Surfaced in the case library
@@ -817,9 +821,8 @@ export interface CaseLibraryEntry {
   version: number;
   kind: CaseKind;
   /** Bilingual headline label. For `kind==='company'` this is the company
-   *  name; for `industry` the industry name; for `pattern` the pattern
-   *  name (mirrored on `patternName`); for `comparison` the comparison
-   *  topic. */
+   *  name; for `industry` the industry name; for `comparison` the
+   *  comparison topic. */
   companyName: LocalizedLabel;
   /** Bilingual one-paragraph blurb shown on the case card and preview. */
   summary: LocalizedLabel;
@@ -848,24 +851,199 @@ export interface CaseLibraryEntry {
   /** Optional def id of the canvas to use as the card thumbnail. When
    *  absent the UI picks the first canvas. */
   thumbnailDefId?: string;
-  /** `kind==='pattern'` only — the formal pattern name (often slightly
-   *  different from `companyName` for branding). */
-  patternName?: LocalizedLabel;
-  /** `kind==='pattern'` only — links to industry/company cases that
-   *  illustrate this pattern. */
-  examples?: CaseExampleRef[];
-  /** `kind` ∈ `'company' | 'industry'` — backlinks to the abstract
-   *  patterns this case exemplifies. Pattern slugs only. */
+  /** Pattern slugs this case exemplifies. Patterns live as separate
+   *  entities under `packages/case-library/patterns/<slug>/`; this is the
+   *  forward link case → pattern. The reverse link
+   *  (pattern → curated example cases) lives on
+   *  `BusinessModelPattern.examples`. Many-to-many: a case can apply
+   *  multiple patterns. Validation enforces every slug here resolves to
+   *  an entry in `manifest.json.patterns[]`. */
   appliesPatterns?: string[];
+  /**
+   * Optional sub-type refinement, keyed by pattern slug. Each value
+   * must match a `subtypes[].id` on the referenced pattern. Cases
+   * that don't refine simply omit this field. Used for patterns like
+   * `free` that ship with structural sub-types (ad-supported / freemium
+   * / bait-and-hook) — the case tag carries enough information to
+   * render `[Free · Freemium]` instead of just `[Free]` and to
+   * surface in the right sub-section of the pattern modal.
+   *
+   * Validation enforces:
+   *   - every key here is also in `appliesPatterns[]` (you can't refine
+   *     a pattern you haven't claimed to apply)
+   *   - every value resolves to a `subtypes[].id` on the referenced
+   *     pattern's `pattern.json`
+   *
+   * Example:
+   *   appliesPatterns:        ['multi-sided-platforms', 'free']
+   *   appliesPatternSubtypes: { free: 'ad-supported' }
+   */
+  appliesPatternSubtypes?: Record<string, string>;
 }
 
 /**
- * Reference from a pattern case to a concrete example case (industry or
- * company). `role` lets us highlight a "primary" exemplar in the UI.
+ * Reference from a pattern to a concrete example case (industry or
+ * company). `role` lets the UI highlight a "primary" exemplar.
  */
 export interface CaseExampleRef {
   slug: string;
   role?: 'primary' | 'secondary';
+}
+
+/**
+ * Business-model **pattern** — an abstract reusable model (Unbundling,
+ * Long Tail, Multi-Sided Platforms, Free, Open). Lives alongside
+ * `CaseLibraryEntry` as a peer entity, not as a special kind of case:
+ * a pattern is a *collection* of concrete cases plus narrative text,
+ * not a project. It has no BMC, no canvases, no Yjs binary, no fork.
+ *
+ * On disk: `packages/case-library/patterns/<slug>/`:
+ *   ├── pattern.json        ← this shape
+ *   ├── description.en.md   ← long-form user-facing narrative
+ *   ├── description.zh.md
+ *   ├── skill.en.md         ← optional, AI-facing concise guide
+ *   └── skill.zh.md
+ *
+ * Listed in `manifest.json.patterns[]` (parallel to `manifest.cases[]`).
+ * Served via `GET /library/patterns` (list) and
+ * `GET /library/patterns/:slug` (detail with hydrated example cases +
+ * markdown description).
+ */
+export interface BusinessModelPattern {
+  /** Stable kebab-case identity (e.g. `'long-tail'`,
+   *  `'unbundling-business-models'`). Referenced verbatim by
+   *  `CaseLibraryEntry.appliesPatterns[]`. */
+  slug: string;
+  /** Bilingual pattern name (e.g. "The Long Tail" / "长尾模式"). */
+  name: LocalizedLabel;
+  /** Bilingual one-paragraph blurb shown on the pattern card. */
+  summary: LocalizedLabel;
+  /** Flat bibliographic sources for the pattern definition (book chapter,
+   *  HBR article, blog post). Same shape as `CaseSource`. Kept for
+   *  backward compatibility — when `references` is also present, UI and
+   *  skill prefer `references` and ignore this field. New patterns
+   *  should populate `references` instead. */
+  sources: CaseSource[];
+  /**
+   * Annotated bibliography. When present, supersedes `sources` in both
+   * the web modal footer and the generated skill page. Each entry adds
+   * a `type` (book/article/paper/web), a short citable handle, optional
+   * page range, and a bilingual ~30-word note explaining what *that*
+   * source contributes — turning a flat list into something an AI agent
+   * (or a human reader) can actually reason about.
+   */
+  references?: PatternReference[];
+  /** Curated list of concrete cases that illustrate this pattern. The
+   *  reverse direction (case → pattern) lives on
+   *  `CaseLibraryEntry.appliesPatterns`. Validation enforces every
+   *  example slug resolves to an entry in `manifest.json.cases[]`.
+   *  When `subtypes` is present, this top-level list typically holds
+   *  the union of all subtype examples — useful as a flat fallback
+   *  for renderers that don't surface subtype grouping. */
+  examples: CaseExampleRef[];
+  /**
+   * Optional sub-typing within the pattern. Used when one pattern has
+   * multiple structurally distinct flavors that the originating source
+   * itself separates (Free → ad-supported / freemium / bait-and-hook
+   * per BMG 2010). Each sub-type carries its own bilingual name,
+   * summary, and curated `examples[]`. Drives:
+   *   - sub-section grouping in the modal's Related Cases tab
+   *   - per-sub-type chip suffix on case cards
+   *     (`[Free · Ad-supported]` instead of `[Free]`)
+   *   - a `## Sub-types` section in the generated skill markdown
+   *
+   * Most patterns ship without sub-typing — only declare `subtypes`
+   * when the originating source really does carve the pattern into
+   * distinct shapes. Don't manufacture sub-types from your own
+   * analysis; push back to the user if no canonical source segments
+   * the pattern that way.
+   */
+  subtypes?: PatternSubtype[];
+}
+
+/**
+ * One sub-type within a pattern. Sibling of `BusinessModelPattern.examples`
+ * but scoped to a specific structural flavor. Cases reference a
+ * sub-type via `CaseLibraryEntry.appliesPatternSubtypes[<patternSlug>]`,
+ * matched by `id`.
+ */
+export interface PatternSubtype {
+  /** Stable kebab-case id within the parent pattern, e.g.
+   *  `'ad-supported'`, `'freemium'`, `'bait-and-hook'`. Must be unique
+   *  across the parent pattern's `subtypes[]`. */
+  id: string;
+  /** Bilingual sub-type display name. */
+  name: LocalizedLabel;
+  /** Bilingual short blurb (~40 words) — what makes this sub-type
+   *  structurally distinct from its siblings. */
+  summary: LocalizedLabel;
+  /** Curated example cases for this specific sub-type. Slugs must
+   *  resolve to manifested cases. The case must also tag the parent
+   *  pattern in its `appliesPatterns[]` AND specify this `id` in
+   *  its `appliesPatternSubtypes[<patternSlug>]`. */
+  examples: CaseExampleRef[];
+}
+
+/**
+ * Source category for a pattern reference. Drives icon + grouping in the
+ * modal footer and the generated skill page.
+ *
+ * - `'book'`    — published book (BMG, The Long Tail, etc.)
+ * - `'article'` — magazine / newspaper / web feature article
+ * - `'paper'`   — peer-reviewed paper or journal article (HBR, etc.)
+ * - `'web'`     — web page, documentation, blog post (no print equivalent)
+ */
+export type PatternReferenceType = 'book' | 'article' | 'paper' | 'web';
+
+/**
+ * One annotated reference attached to a `BusinessModelPattern`. Lives
+ * inside `BusinessModelPattern.references[]`. The annotation
+ * (`note`) is what distinguishes this from the flat `sources` list:
+ * each entry says *what this source contributes that others don't* so
+ * downstream readers (AI agents reading the skill, humans skimming the
+ * modal) can pick the right citation without re-reading the body.
+ */
+export interface PatternReference {
+  /** Visual category. */
+  type: PatternReferenceType;
+  /**
+   * Short citable handle in author-year style — e.g. `"Anderson 2006"`,
+   * `"Hagel & Singer 1999"`, `"BMG 2010"`. The single source of truth
+   * for any inline mention in `description.{en,zh}.md` prose so cites
+   * stay traceable when someone edits the bibliography.
+   */
+  cite: string;
+  /** Author(s) · title · venue, e.g.
+   *  `"Chris Anderson · The Long Tail · Hyperion"`. */
+  label: string;
+  /** Publication year, separated so sort order is stable. */
+  year?: number;
+  /** Page range or chapter, e.g. `"pp. 66–71"`, `"Ch. 3"`,
+   *  `"Mar–Apr 1999 issue"`. */
+  pages?: string;
+  /** Optional permalink / DOI. */
+  url?: string;
+  /** Bilingual ~30-word note: what THIS source contributes that others
+   *  don't. The field that turns a flat bibliography into an annotated
+   *  one. Both languages are required when present. */
+  note?: LocalizedLabel;
+}
+
+/**
+ * Detail response for `GET /library/patterns/:slug`. Bundles the
+ * pattern metadata, the long-form bilingual description (read from the
+ * disk markdown files), and hydrated example case metadata so the UI
+ * can render the examples strip without an N+1 round trip.
+ */
+export interface BusinessModelPatternDetail {
+  pattern: BusinessModelPattern;
+  /** Bilingual long-form markdown body. UI renders the language matching
+   *  the current locale; falls back to the other language if missing. */
+  description: { en: string; zh: string };
+  /** Hydrated case metadata for `pattern.examples[].slug`. Empty array
+   *  if all example slugs are unresolved (validation should have caught
+   *  this at build time). */
+  exampleCases: CaseLibraryEntry[];
 }
 
 /**

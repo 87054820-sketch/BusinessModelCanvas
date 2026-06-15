@@ -1,4 +1,6 @@
 import type {
+  BusinessModelPattern,
+  BusinessModelPatternDetail,
   CaseForkResult,
   CaseLibraryDetail,
   CaseLibraryEntry,
@@ -47,6 +49,28 @@ export const libraryApi = {
     return fetchJson<CaseForkResult>(
       url,
       { method: 'POST', headers: authHeaders(displayName) },
+    );
+  },
+  /**
+   * List all business-model patterns shipped in the library. Patterns
+   * are NOT cases — they have no project, no canvas, no fork. Each is
+   * an abstract reusable model (Long Tail, Unbundling, …) with a
+   * curated `examples[]` list pointing to concrete cases.
+   *
+   * Public route — no auth header required.
+   */
+  listPatterns(): Promise<BusinessModelPattern[]> {
+    return fetchJson<BusinessModelPattern[]>(`${BASE}/library/patterns`);
+  },
+  /**
+   * Resolve a pattern by slug — returns the pattern metadata, the
+   * bilingual long-form markdown description, and the hydrated case
+   * metadata for the slugs in `examples[]` (so the UI can render the
+   * examples strip without an N+1 round trip).
+   */
+  getPattern(slug: string): Promise<BusinessModelPatternDetail> {
+    return fetchJson<BusinessModelPatternDetail>(
+      `${BASE}/library/patterns/${encodeURIComponent(slug)}`,
     );
   },
 };

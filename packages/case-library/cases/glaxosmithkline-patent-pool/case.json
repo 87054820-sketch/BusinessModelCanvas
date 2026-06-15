@@ -1,0 +1,50 @@
+{
+  "slug": "glaxosmithkline-patent-pool",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "GlaxoSmithKline — Patent Pool for Neglected Diseases",
+    "zh": "葛兰素史克 —— 被忽视疾病专利池"
+  },
+  "summary": {
+    "en": "GSK's flagship inside-out open-innovation programme, announced in 2009 by then-CEO Andrew Witty and formally launched in 2010. Big Pharma R&D produces lots of compounds with potential activity against neglected tropical diseases (malaria, leishmaniasis, schistosomiasis, etc.) but no path to a profitable drug — neglected populations cannot afford typical pharma pricing. GSK pooled the relevant IP and opened it to outside researchers, charging modest license fees while gaining reputation, regulatory goodwill, and follow-on R&D leads. WIPO Re:Search expanded the model to other pharma companies in 2011. The case shows the asymmetric BMC pair — closed Big Pharma archetype vs the patent-pool variant — that codifies the inside-out sub-type of Open Business Models.",
+    "zh": "葛兰素史克(GSK)旗舰级的「由内而外」开放式创新项目,2009 年由当时 CEO Andrew Witty 宣布、2010 年正式启动。大型药企的研发会产出许多对被忽视热带病(疟疾、利什曼病、血吸虫病等)有潜在活性的化合物,但走不到盈利药品的路 —— 这些人群无法承担药企典型定价。GSK 把相关 IP 汇入池中向外部研究者开放,收取适度的许可费,同时收获声誉、监管善意,以及后续研发线索。WIPO Re:Search 在 2011 年把这一模式扩展到其他药企。本案例呈现了那对不对称 BMC —— 封闭式大型药企原型对比专利池变体 —— 把开放式商业模式中「由内而外」子类型的机制讲清楚。"
+  },
+  "tags": [
+    "pharma",
+    "open-innovation",
+    "IP-licensing",
+    "inside-out",
+    "neglected-diseases",
+    "UK"
+  ],
+  "sources": [
+    {
+      "label": "Andrew Witty · 'New Strategies for Innovation in Global Health: A Pharmaceutical Industry Perspective' · Speech at Harvard Medical School · February 2009"
+    },
+    {
+      "label": "Henry Chesbrough · Open Business Models: How to Thrive in the New Innovation Landscape · Harvard Business Review Press · 2006"
+    },
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 5, pp. 112-113 patent pool example)"
+    },
+    {
+      "label": "WIPO Re:Search (consortium expansion 2011)",
+      "url": "https://www.wipo.int/research/en/"
+    },
+    {
+      "label": "GSK Annual Report 2010 (patent pool launch disclosure)",
+      "url": "https://www.gsk.com/"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "d5ec6cec-bca8-47ca-b020-bc006480e937",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "open-business-models"
+  ],
+  "appliesPatternSubtypes": {
+    "open-business-models": "inside-out"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "9bd9633b-f6ea-4ede-8b5c-b5e4cf8b47e8",
+  "projectId": "fb50b308-99c6-4cec-98c1-391a3cf90bad",
+  "defId": "business-model-canvas",
+  "title": "Cemex —— 按需混凝土配送 BMC",
+  "language": "zh",
+  "contentDate": "2005",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2005 年(Zambrano 时代峰值,2008 危机前)",
+  "variant": {
+    "id": "cemex-ondemand-cement",
+    "label": {
+      "en": "On-demand concrete delivery (post-1990s)",
+      "zh": "按需混凝土配送(1990 年代后)"
+    },
+    "description": {
+      "en": "Single BMC capturing Cemex post-Zambrano-era operational transformation. Cement / ready-mix concrete is the physical product, but the value capture is in the on-time delivery service overlay — GPS-tracked trucks, dispatch optimisation, 20-minute on-site commitment, and Construrama retailer-network coordination. The customer 'job' shifted from 'buy concrete' to 'have concrete on-site exactly when needed'.",
+      "zh": "单张 BMC 捕获 Zambrano 时代之后 Cemex 的运营转型。水泥 / 预拌混凝土是实物产品,但价值捕获在准时送达的服务叠加层上 —— GPS 车队、调度优化、20 分钟到场承诺,以及 Construrama 零售商网络协同。客户的「任务」从「买混凝土」变成了「让混凝土准时到工地」。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T09:42:30.164Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T09:42:30.164Z",
+  "updatedBy": "PinGarden Library"
+}
