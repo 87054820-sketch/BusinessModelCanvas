@@ -52,7 +52,7 @@ ${patternSlugs.map((s) => `- \`patterns/${s}.en.md\` / \`patterns/${s}.zh.md\``)
       : '';
   return `---
 name: pingarden
-description: Use when the user asks to create, edit, translate, or narrate Business Model Canvas, Value Proposition Canvas, JTBD, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, or Experiment Canvas via the local PinGarden app. Triggers on phrases like "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", or any \`pingarden\` CLI invocation.
+description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Tencent, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", or any \`pingarden\` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改"。On activation, **run \`pingarden doctor\` first** to confirm the CLI is on PATH and the PinGarden app is running; if \`pingarden\` returns "command not found", fall back to \`node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js\` and prompt the user to follow INSTALL.md §三 to symlink it.
 version: ${version}
 ---
 
@@ -60,12 +60,25 @@ version: ${version}
 
 You are working with **PinGarden**, a local Strategyzer-style canvas tool. This skill teaches you how to fill each canvas correctly and how to call the \`pingarden\` CLI to read and write canvas state.
 
-## How to use this skill
+## First action when this skill activates
+
+Don't wait for the user to ask twice — when this skill loads, do this **immediately**, before producing any canvas content:
+
+1. Run \`pingarden doctor\` to confirm both halves are up:
+   - **CLI on PATH.** If you get \`command not found\`, fall back to \`node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js <args>\` AND tell the user to symlink it permanently per INSTALL.md §三 (\`sudo ln -s /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js /usr/local/bin/pingarden\`). Don't silently keep typing the long path forever.
+   - **PinGarden app/server.** Doctor reports the discovered port and a \`/health\` ping. If the server is down, tell the user to launch the PinGarden app — never try to write to \`apps/server/data/\` directly or parse Yjs binary as a workaround.
+2. If both are green, **list what already exists** before suggesting fresh authoring:
+   - \`pingarden case list --json\` — 23 curated company cases (Spotify, Uber, Airbnb, Tencent Games · Heima, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
+   - \`pingarden pattern list --json\` — 5 BMG patterns (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open Business Models). Patterns surface "which canvases / cases apply this".
+3. Only after the environment is confirmed and the existing library is scanned should you start producing canvases / stickies / stories.
+
+## How to use this skill (reading order)
 
 1. **Always read \`reference/cli-cheatsheet.md\` first** — it lists the exact commands and JSON envelope shape you'll consume.
 2. **Before writing to a canvas**, read its description with \`pingarden canvas describe <id> --json\` (existing canvas) or \`pingarden canvas describe-template <defId> --json\` (new canvas). NEVER hardcode \`zoneId\`s — they come from the live def.
 3. **For each canvas the user works on**, consult \`canvases/<id>.<lang>.md\` for filling rules, fill order, examples, and anti-patterns.
-4. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
+4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library already has 23 curated companies and 5 BMG patterns cross-linked both ways.
+5. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
 
 ## Index
 
