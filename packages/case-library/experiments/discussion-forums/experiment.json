@@ -1,0 +1,35 @@
+{
+  "slug": "discussion-forums",
+  "name": {
+    "en": "Discussion Forums",
+    "zh": "论坛潜伏"
+  },
+  "summary": {
+    "en": "Passive listening on Reddit, Discord, Slack communities, Hacker News, Twitter, and niche industry forums where your target customer already hangs out. The cheapest discovery surface — text customers wrote unprompted is gold.",
+    "zh": "在 Reddit / Discord / Slack 社区 / Hacker News / 微博 / 知乎 / 行业论坛等目标客户已经聚集的地方被动观察。最便宜的探索面 —— 客户没人提示时主动写的东西是金子。"
+  },
+  "theme": "discovery",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "weak",
+  "cost": "cheap",
+  "setupTime": "hours",
+  "runTime": "days",
+  "capabilities": [
+    "community-research",
+    "qualitative-coding",
+    "search-querying"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "empathy-map",
+    "jobs-to-be-done"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Discussion Forums"
+    }
+  ],
+  "examples": []
+}

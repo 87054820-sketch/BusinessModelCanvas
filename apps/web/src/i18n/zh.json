@@ -318,11 +318,13 @@
       "company": "公司",
       "industry": "行业",
       "pattern": "模式",
-      "comparison": "对比"
+      "comparison": "对比",
+      "experiment": "实验"
     },
     "tabs": {
       "cases": "案例",
       "patterns": "模式",
+      "experiments": "实验库",
       "description": "详细说明",
       "relatedCases": "相关案例"
     },
@@ -333,8 +335,68 @@
     "showDescription": "查看说明",
     "hideDescription": "收起说明",
     "patternsEmpty": "本版本暂未附带商业模式分类。",
+    "experimentsEmpty": "本版本暂未附带实验。",
     "descriptionEmpty": "本模式暂未撰写说明。",
     "examplesEmpty": "本模式暂未关联示例案例。",
+    "experiments": {
+      "intro": {
+        "title": "在动手做之前先测一下最致命的假设",
+        "body": "每张卡片都是一个**便宜、可证伪**的实验,用来测一个最致命的假设。挑选时看三件事:**阶段**(Discovery 便宜证据弱,Validation 贵证据强)、**风险类型**(需求性 / 可行性 / 可营性)、**成本带**(团队预算扛得住的)。每个实验都列出了它最常用来验证的画布 —— 也就是你已经在 VPC、Empathy Map、Customer Journey、BMC 上写下的那些主张。要跑一个实验,点开卡片再点「用这个实验开个新画布」,我们会创建一张实验画布并把方法预填好。"
+      },
+      "useThisExperiment": "用这个实验开个新画布",
+      "seedFailed": "实验内容预填失败 —— 画布会以空白方式打开,你可以手动填进去。",
+      "picker": {
+        "title": "在哪里使用这个实验?",
+        "modeNew": "创建新项目",
+        "modeNewHint": "新建一个项目,把这个实验作为它的第一张画布。",
+        "modeExisting": "加到已有项目",
+        "modeExistingHint": "实验画布会加入你选中的项目。",
+        "noProjects": "暂无可编辑项目,先创建一个吧。",
+        "selectPlaceholder": "选择一个项目…",
+        "cancel": "取消",
+        "confirm": "使用这个实验"
+      }
+    },
+    "experiment": {
+      "theme": {
+        "discovery": "Discovery",
+        "validation": "Validation"
+      },
+      "risk": {
+        "desirability": "需求性",
+        "feasibility": "可行性",
+        "viability": "可营性"
+      },
+      "cost": {
+        "cheap": "便宜",
+        "medium": "中等",
+        "expensive": "昂贵"
+      },
+      "evidence": {
+        "weak": "弱证据",
+        "medium": "中等证据",
+        "strong": "强证据"
+      },
+      "duration": {
+        "hours": "小时",
+        "days": "天",
+        "weeks": "周"
+      },
+      "setupRunTime": "准备 {{setup}} · 执行 {{run}}",
+      "capabilitiesSection": "需要的能力",
+      "appliesToSection": "常用于验证",
+      "examplesSection": "真实世界案例",
+      "examplesEmpty": "暂未撰写真实案例。",
+      "openFullCase": "打开完整案例",
+      "fields": {
+        "hypothesis": "假设",
+        "experiment": "实验设计",
+        "evidence": "证据",
+        "insights": "洞察",
+        "actions": "后续行动"
+      },
+      "descriptionEmpty": "本实验暂未撰写说明。"
+    },
     "pagination": {
       "previous": "上一页",
       "next": "下一页",

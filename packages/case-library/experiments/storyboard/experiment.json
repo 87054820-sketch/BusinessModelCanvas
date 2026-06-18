@@ -1,0 +1,35 @@
+{
+  "slug": "storyboard",
+  "name": {
+    "en": "Storyboard",
+    "zh": "故事板"
+  },
+  "summary": {
+    "en": "A 6-12 panel comic-style sequence walking a target customer through 'before, during, and after' the moment your idea exists in their life. Discovery via reaction.",
+    "zh": "6-12 格漫画式序列,带目标客户走过 \"你的 idea 出现在他们生活中之前、之中、之后\" 的时刻。通过他们的反应做 Discovery。"
+  },
+  "theme": "discovery",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "weak",
+  "cost": "cheap",
+  "setupTime": "hours",
+  "runTime": "hours",
+  "capabilities": [
+    "narrative-design",
+    "sketching",
+    "interview-design"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "customer-journey",
+    "jobs-to-be-done"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Storyboard"
+    }
+  ],
+  "examples": []
+}

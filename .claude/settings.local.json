@@ -12,7 +12,11 @@
       "Bash(pnpm --filter @pingarden/cli run build)",
       "Bash(pnpm --filter @pingarden/cli run typecheck)",
       "Bash(sed -n '/^## Pairs with/,$p' /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/.claude/skills/pingarden/canvases/empathy-map.zh.md)",
-      "Bash(sed -n '/^## Anti-patterns/,/^## /p' /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/.claude/skills/pingarden/canvases/jobs-to-be-done.en.md)"
+      "Bash(sed -n '/^## Anti-patterns/,/^## /p' /Users/siboli/Documents/CodeBuddy/BusinessModelCanvas/.claude/skills/pingarden/canvases/jobs-to-be-done.en.md)",
+      "Bash(pingarden doctor *)",
+      "Bash(grep -E \"\\\\.en\\\\.md$\")",
+      "Bash(python3 -c \"import json; json.load\\(open\\('packages/case-library/experiments/smoke-test/experiment.json'\\)\\)\")",
+      "Bash(python3 -c \"import json; json.load\\(open\\('packages/case-library/experiments/wizard-of-oz/experiment.json'\\)\\)\")"
     ]
   }
 }

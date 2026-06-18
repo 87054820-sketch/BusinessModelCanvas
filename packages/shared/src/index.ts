@@ -1046,6 +1046,184 @@ export interface BusinessModelPatternDetail {
   exampleCases: CaseLibraryEntry[];
 }
 
+// ─── Experiment library ─────────────────────────────────────────────────────
+// Curated test recipes from Bland & Osterwalder, Testing Business Ideas
+// (Wiley, 2019). Each Experiment is a typed metadata record for one of the
+// 44 experiments in TBI; the long-form prose lives in the parallel
+// `description.{en,zh}.md` and `skill.{en,zh}.md` files. Skill-only surface
+// for V1 — the BundleStorage / HTTP routes / LibraryPage are NOT extended;
+// experiments are picked up by the skill generator (`apps/cli/src/skill/*`)
+// via a directory walk over `packages/case-library/experiments/`.
+//
+// Cross-link to canvases is forward-only: an experiment names which
+// canvases it helps validate via `appliesToCanvases[]`. Canvases do not
+// know about specific experiments; the agent picks an experiment from the
+// library when the user lands on a riskiest-assumption sticky.
+
+/** Where in the search-and-test journey this experiment fits. Discovery
+ *  experiments are cheaper, weaker, and meant to course-correct fast;
+ *  Validation experiments cost more and produce stronger evidence. */
+export type ExperimentTheme = 'discovery' | 'validation';
+
+/** TBI's three risk axes: Desirability (do customers want it?),
+ *  Feasibility (can we build / deliver it?), Viability (can we earn
+ *  money from it?). One experiment may target one or several. */
+export type ExperimentRisk = 'desirability' | 'feasibility' | 'viability';
+
+/** Strength of evidence the experiment produces. TBI's rule of thumb:
+ *  call-to-action > opinion; ≥5 customers > 1; quantitative + qualitative
+ *  > one alone; live tests > recalled. */
+export type ExperimentEvidenceStrength = 'weak' | 'medium' | 'strong';
+
+/** Coarse cost / setup / run-time tier — used by the skill workflow to
+ *  match an experiment to the user's available budget and timeline. */
+export type ExperimentCost = 'cheap' | 'medium' | 'expensive';
+export type ExperimentDuration = 'hours' | 'days' | 'weeks';
+
+/**
+ * One curated experiment from the library. Lives at
+ * `packages/case-library/experiments/<slug>/experiment.json`. The
+ * sibling `description.{en,zh}.md` files carry the prose; the sibling
+ * `skill.{en,zh}.md` files carry the AI-agent TL;DR.
+ */
+export interface Experiment {
+  /** Stable kebab-case identity, e.g. `'customer-interview'`,
+   *  `'smoke-test'`, `'wizard-of-oz'`. */
+  slug: string;
+  /** Bilingual experiment name. */
+  name: LocalizedLabel;
+  /** Bilingual one-paragraph blurb (~30 words) shown on the experiment
+   *  card and at the top of the generated skill page. */
+  summary: LocalizedLabel;
+  /** Discovery vs Validation theme. */
+  theme: ExperimentTheme;
+  /** Subset of D/F/V the experiment helps test. Most discovery tests
+   *  target Desirability only; validation tests usually combine. */
+  risks: ExperimentRisk[];
+  /** Evidence strength after a well-run instance. */
+  evidenceStrength: ExperimentEvidenceStrength;
+  /** Coarse cost band. */
+  cost: ExperimentCost;
+  /** Time to design and prepare the experiment. */
+  setupTime: ExperimentDuration;
+  /** Time to actually run + collect data once set up. */
+  runTime: ExperimentDuration;
+  /** Skills the team needs to run this well — drives "Capabilities"
+   *  bullets in the skill page. Free-form kebab-case strings, e.g.
+   *  `'interview-design'`, `'landing-page-copy'`, `'data-analysis'`. */
+  capabilities: string[];
+  /** Canvas ids this experiment most often validates. Drives the
+   *  "Cross-canvas" section of the skill page and the agent's match
+   *  logic when a user is editing a specific canvas. */
+  appliesToCanvases: string[];
+  /** Bibliography for the experiment definition. Same shape as
+   *  `CaseSource` and `BusinessModelPattern.sources`. */
+  sources: CaseSource[];
+  /** Real-world examples of the experiment being run. Authored from
+   *  Bland & Osterwalder TBI's case studies (e.g. Buffer Mock Sale,
+   *  p.292) plus well-documented common-knowledge stories. Each entry
+   *  carries either a single `story` paragraph (Compact density) or
+   *  the full TBI 5-field structure (Featured density). When `caseSlug`
+   *  resolves to a case-library entry the modal also renders an
+   *  "Open full case" affordance. Empty array is fine — V1 ships with
+   *  ~12-18 examples authored across the 12 experiments. */
+  examples: ExperimentExample[];
+  /** Pre-filled scaffold canvas the user lands on when they click "Use
+   *  this experiment" from the library. Each entry maps to one zone of
+   *  the experiment-canvas (riskiest-assumption / falsifiable-hypothesis
+   *  / experiment-setup / metrics-criteria / results-conclusion /
+   *  next-steps). When absent, the seed flow falls back to the single
+   *  setup-zone sticky shape from Round 11. V1 ships templates for all
+   *  12 experiments. */
+  template?: ExperimentTemplate;
+}
+
+/**
+ * Scaffold content shipped with each experiment so the experiment-canvas
+ * lands populated rather than empty when a user picks "Use this
+ * experiment" from the library. Each sticky is placed into one of the
+ * canvas's 6 zones; the user's job is to replace the bracketed
+ * placeholders (e.g. `[Customer segment X]`) with their specifics.
+ *
+ * Authoring lives in `packages/case-library/experiments/<slug>/experiment.json`.
+ * The seed payload builder (`apps/web/src/lib/seedExperimentStickies.ts`)
+ * resolves a template into a `bulkStickies` payload; both the new-project
+ * flow and the add-to-existing-project flow consume the same builder so
+ * the two paths produce identical canvas content.
+ */
+export interface ExperimentTemplate {
+  stickies: Array<{
+    /** Must match a zone id from `experiment-canvas/manifest.json:zones[].id`. */
+    zoneId: string;
+    /** Sticky text — HTML fragment (`<p>`, `<strong>`, `<em>`, …) per
+     *  the round-trip contract documented in `apps/server/src/http/stickyImport.ts`. */
+    text: LocalizedLabel;
+    /** Optional sticky-color override. e.g. `results-conclusion` may use
+     *  a paler shade to signal "fill in after running". */
+    color?: string;
+  }>;
+}
+
+/**
+ * One real-world example of an experiment being run. Lives embedded in
+ * `experiment.json:examples[]` — no separate directory tree (mirrors
+ * how `BusinessModelPattern.examples` lists case slugs but inlines the
+ * `role` metadata; here the entire vignette is inlined and the case
+ * pointer is optional).
+ *
+ * Two render densities share this shape:
+ *   - **Compact** — only `company` + `story` populated. Single
+ *     paragraph. Used for the lesser examples / vignettes.
+ *   - **Featured** — `hypothesis` + `experiment` + `evidence` +
+ *     `insights` + `actions` populated. Full TBI case-study layout.
+ *     `story` becomes optional context paragraph above the 5-field
+ *     stack. Used for the most documented stories (Buffer Mock Sale,
+ *     Dropbox MVP video, Zappos bootstrap).
+ *
+ * The modal switches between densities by checking `hypothesis` —
+ * presence flips to Featured. This keeps a single typed shape for both
+ * authoring paths.
+ */
+export interface ExperimentExample {
+  /** Company / product name, bilingual. */
+  company: LocalizedLabel;
+  /** Year or year-range — "2007", "2010-2012". Optional when fuzzy. */
+  year?: string;
+  /** Optional memorable headline (TBI style: "They will come, when you
+   *  build it"). Rendered italic below the company line. */
+  headline?: LocalizedLabel;
+  /** Short narrative paragraph. Required for Compact density; optional
+   *  context for Featured. */
+  story?: LocalizedLabel;
+  /** When set, the modal switches to Featured density and renders
+   *  `hypothesis` / `experiment` / `evidence` / `insights` / `actions`
+   *  as 5 stacked sub-blocks. */
+  hypothesis?: LocalizedLabel;
+  experiment?: LocalizedLabel;
+  evidence?: LocalizedLabel;
+  insights?: LocalizedLabel;
+  actions?: LocalizedLabel;
+  /** Bibliographic citation — book + page, blog post, interview. */
+  source?: string;
+  /** When set, must resolve to `packages/case-library/cases/<slug>/`.
+   *  The modal renders an "Open full case →" link that opens
+   *  `CasePreviewModal`. The build-time `pingarden case validate`
+   *  validator enforces the slug exists. */
+  caseSlug?: string;
+}
+
+/**
+ * Hydrated experiment payload — what `GET /library/experiments/:slug`
+ * returns. Mirrors `BusinessModelPatternDetail` minus `exampleCases[]`:
+ * experiments are abstract methods, not associated with concrete cases.
+ */
+export interface BusinessModelExperimentDetail {
+  experiment: Experiment;
+  /** Bilingual long-form markdown body. UI renders the language matching
+   *  the current locale; falls back to the other language if missing. */
+  description: { en: string; zh: string };
+}
+
 /**
  * Response from `POST /library/cases/:slug/fork`. The new project lives in
  * user storage and is fully editable; the original library case is

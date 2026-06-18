@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "cases": [
     { "slug": "wechat-private-domain", "featured": true },
     { "slug": "swiss-private-banking", "featured": true },
@@ -31,5 +31,19 @@
     { "slug": "multi-sided-platforms", "featured": true },
     { "slug": "free", "featured": true },
     { "slug": "open-business-models", "featured": true }
+  ],
+  "experiments": [
+    { "slug": "customer-interview", "featured": true },
+    { "slug": "online-survey", "featured": true },
+    { "slug": "discussion-forums", "featured": true },
+    { "slug": "search-trend-analysis", "featured": true },
+    { "slug": "boomerang", "featured": true },
+    { "slug": "storyboard", "featured": true },
+    { "slug": "clickable-prototype", "featured": true },
+    { "slug": "smoke-test", "featured": true },
+    { "slug": "wizard-of-oz", "featured": true },
+    { "slug": "concierge", "featured": true },
+    { "slug": "letter-of-intent", "featured": true },
+    { "slug": "pre-sale", "featured": true }
   ]
 }

@@ -37,6 +37,66 @@ async function getAvailablePort(host: string): Promise<number> {
   });
 }
 
+/**
+ * Probe whether `host:port` is bindable right now. Resolves true when
+ * the OS lets us listen and we close cleanly; false on EADDRINUSE or
+ * any other listen error. Used to reuse the previously chosen port so
+ * the renderer's localStorage origin (`http://127.0.0.1:<port>`) stays
+ * stable across launches — otherwise IdentityModal would re-prompt
+ * every time because each new origin has its own empty localStorage.
+ */
+async function canBindPort(host: string, port: number): Promise<boolean> {
+  return new Promise((resolveResult) => {
+    const server = net.createServer();
+    server.unref();
+    let settled = false;
+    const finish = (ok: boolean) => {
+      if (settled) return;
+      settled = true;
+      server.removeAllListeners();
+      try {
+        server.close(() => resolveResult(ok));
+      } catch {
+        resolveResult(ok);
+      }
+    };
+    server.on('error', () => finish(false));
+    server.listen(port, host, () => finish(true));
+  });
+}
+
+function readRememberedPort(filePath: string): number | null {
+  try {
+    if (!fs.existsSync(filePath)) return null;
+    const raw = fs.readFileSync(filePath, 'utf8').trim();
+    const n = Number(raw);
+    if (!Number.isInteger(n) || n < 1024 || n > 65535) return null;
+    return n;
+  } catch {
+    return null;
+  }
+}
+
+function rememberPort(filePath: string, port: number): void {
+  try {
+    fs.mkdirSync(path.dirname(filePath), { recursive: true });
+    fs.writeFileSync(filePath, String(port), 'utf8');
+  } catch {
+    // best-effort — losing the memo means the next launch re-prompts
+    // for identity (annoying but not broken)
+  }
+}
+
+async function resolveStablePort(host: string, memoFile: string): Promise<number> {
+  const remembered = readRememberedPort(memoFile);
+  if (remembered && (await canBindPort(host, remembered))) {
+    return remembered;
+  }
+  const fresh = await getAvailablePort(host);
+  rememberPort(memoFile, fresh);
+  return fresh;
+}
+
 async function waitForServer(
   url: string,
   desktopInstanceId: string,
@@ -89,7 +149,12 @@ function createWindow(appUrl: string) {
 app.whenReady().then(async () => {
   const userData = app.getPath('userData');
   const dataDir = path.join(userData, 'data');
-  const port = await getAvailablePort(desktopHost);
+  // Reuse the same port across launches when possible: keeps the
+  // renderer origin (and therefore localStorage, including the saved
+  // identity) stable. Falls back to a fresh OS-assigned port if the
+  // remembered one is taken or the memo file is missing/corrupt.
+  const portMemoFile = path.join(userData, 'desktop-last-port');
+  const port = await resolveStablePort(desktopHost, portMemoFile);
   const appUrl = `http://${desktopHost}:${port}`;
   const desktopInstanceId = randomUUID();
 

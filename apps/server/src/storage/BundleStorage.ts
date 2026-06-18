@@ -1,10 +1,12 @@
 import { promises as fs } from 'node:fs';
 import { join } from 'node:path';
 import type {
+  BusinessModelExperimentDetail,
   BusinessModelPattern,
   BusinessModelPatternDetail,
   CanvasMeta,
   CaseLibraryEntry,
+  Experiment,
   Lang,
   Project,
   Snapshot,
@@ -32,6 +34,8 @@ interface CaseLibraryManifest {
   cases: Array<{ slug: string; featured?: boolean }>;
   /** Optional in v1 manifests; required in v2+. */
   patterns?: Array<{ slug: string; featured?: boolean }>;
+  /** Optional through v2 manifests; required in v3+. */
+  experiments?: Array<{ slug: string; featured?: boolean }>;
 }
 
 /**
@@ -67,6 +71,22 @@ interface BundlePatternRecord {
 }
 
 /**
+ * Resolved index entry for one curated experiment from the Testing
+ * Business Ideas library. Mirrors `BundlePatternRecord` for the parallel
+ * `experiments/<slug>/` directory. Like patterns, experiments have no
+ * project/canvases/stories — only metadata + bilingual markdown
+ * description (the sibling `skill.{en,zh}.md` files are read by the CLI's
+ * skill generator, not by the runtime server).
+ */
+interface BundleExperimentRecord {
+  slug: string;
+  experimentDir: string;
+  index: number;
+  featured: boolean;
+  experiment: Experiment;
+}
+
+/**
  * Read-only storage backend that exposes the bundled case library
  * (`packages/case-library/` in dev; `<.app>/Resources/case-library/`
  * when packaged) as a `CanvasStorage`. Every mutation method throws
@@ -98,6 +118,8 @@ export class BundleStorage implements CanvasStorage {
   private readonly bySlug = new Map<string, BundleCaseRecord>();
   /** pattern slug → record (used by the /library/patterns routes). */
   private readonly patternsBySlug = new Map<string, BundlePatternRecord>();
+  /** experiment slug → record (used by the /library/experiments routes). */
+  private readonly experimentsBySlug = new Map<string, BundleExperimentRecord>();
 
   private constructor(public readonly bundleDir: string) {}
 
@@ -120,6 +142,7 @@ export class BundleStorage implements CanvasStorage {
     this.stories.clear();
     this.bySlug.clear();
     this.patternsBySlug.clear();
+    this.experimentsBySlug.clear();
     await this.scan();
   }
 
@@ -176,6 +199,35 @@ export class BundleStorage implements CanvasStorage {
 
   hasPattern(slug: string): boolean {
     return this.patternsBySlug.has(slug);
+  }
+
+  // ─── experiment accessors (used by /library/experiments routes) ────
+
+  /** Catalog list of experiments — manifest order. */
+  listExperiments(): Experiment[] {
+    return [...this.experimentsBySlug.values()]
+      .sort((a, b) => a.index - b.index)
+      .map((rec) => rec.experiment);
+  }
+
+  /**
+   * Resolve an experiment by slug, hydrating its bilingual long-form
+   * markdown description. Returns `null` when the slug isn't shipped.
+   * No example-cases hydration — experiments are abstract methods, not
+   * tied to concrete cases.
+   */
+  async getExperiment(slug: string): Promise<BusinessModelExperimentDetail | null> {
+    const rec = this.experimentsBySlug.get(slug);
+    if (!rec) return null;
+    const description = {
+      en: await readDescriptionMd(rec.experimentDir, 'en'),
+      zh: await readDescriptionMd(rec.experimentDir, 'zh'),
+    };
+    return { experiment: rec.experiment, description };
+  }
+
+  hasExperiment(slug: string): boolean {
+    return this.experimentsBySlug.has(slug);
   }
 
   hasProject(id: string): boolean {
@@ -372,6 +424,38 @@ export class BundleStorage implements CanvasStorage {
         // Same robustness story as cases.
       }
     }
+
+    // Experiments are optional through v2 manifests; absent → empty list.
+    const experimentEntries = Array.isArray(manifest.experiments) ? manifest.experiments : [];
+    for (let i = 0; i < experimentEntries.length; i++) {
+      const entry = experimentEntries[i]!;
+      try {
+        const record = await this.loadExperiment(entry.slug, i, !!entry.featured);
+        this.experimentsBySlug.set(record.slug, record);
+      } catch {
+        // Same robustness story as cases / patterns.
+      }
+    }
+  }
+
+  private async loadExperiment(
+    slug: string,
+    orderIndex: number,
+    featured: boolean,
+  ): Promise<BundleExperimentRecord> {
+    const experimentDir = join(this.bundleDir, 'experiments', slug);
+    const experimentJsonRaw = await fs.readFile(
+      join(experimentDir, 'experiment.json'),
+      'utf8',
+    );
+    const experiment = JSON.parse(experimentJsonRaw) as Experiment;
+    return {
+      slug: experiment.slug,
+      experimentDir,
+      index: orderIndex,
+      featured,
+      experiment,
+    };
   }
 
   private async loadPattern(
@@ -567,9 +651,9 @@ function countByLanguage(
  * decides what to render. Returning '' rather than null keeps the
  * caller-side rendering branch simple.
  */
-async function readDescriptionMd(patternDir: string, lang: Lang): Promise<string> {
+async function readDescriptionMd(dir: string, lang: Lang): Promise<string> {
   try {
-    return await fs.readFile(join(patternDir, `description.${lang}.md`), 'utf8');
+    return await fs.readFile(join(dir, `description.${lang}.md`), 'utf8');
   } catch (err) {
     if ((err as NodeJS.ErrnoException).code === 'ENOENT') return '';
     throw err;

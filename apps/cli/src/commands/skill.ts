@@ -4,7 +4,11 @@ import { homedir } from 'node:os';
 import { join, resolve } from 'node:path';
 import pc from 'picocolors';
 import { BaseCommand } from '../lib/baseCommand.js';
-import { discoverBundlesDir, discoverPatternsDir } from '../skill/discover.js';
+import {
+  discoverBundlesDir,
+  discoverExperimentsDir,
+  discoverPatternsDir,
+} from '../skill/discover.js';
 import { generateSkill, readInstalledHash } from '../skill/generate.js';
 
 const GLOBAL_INSTALL_DIR = join(homedir(), '.claude', 'skills', 'pingarden');
@@ -15,6 +19,7 @@ const LOCAL_INSTALL_DIR = join('.claude', 'skills', 'pingarden');
 export function skillBuildHandler(args: {
   bundlesDir?: string;
   patternsDir?: string;
+  experimentsDir?: string;
   outDir: string;
   langs?: Array<'en' | 'zh'>;
 }) {
@@ -25,9 +30,13 @@ export function skillBuildHandler(args: {
   const patternsDir = discoverPatternsDir({
     ...(args.patternsDir !== undefined ? { override: args.patternsDir } : {}),
   });
+  const experimentsDir = discoverExperimentsDir({
+    ...(args.experimentsDir !== undefined ? { override: args.experimentsDir } : {}),
+  });
   return generateSkill({
     bundlesDir,
     patternsDir,
+    experimentsDir,
     outDir: args.outDir,
     ...(args.langs !== undefined ? { langs: args.langs } : {}),
   });
@@ -36,6 +45,7 @@ export function skillBuildHandler(args: {
 export function skillInstallHandler(args: {
   bundlesDir?: string;
   patternsDir?: string;
+  experimentsDir?: string;
   local: boolean;
   dryRun: boolean;
   langs?: Array<'en' | 'zh'>;
@@ -46,6 +56,9 @@ export function skillInstallHandler(args: {
   const patternsDir = discoverPatternsDir({
     ...(args.patternsDir !== undefined ? { override: args.patternsDir } : {}),
   });
+  const experimentsDir = discoverExperimentsDir({
+    ...(args.experimentsDir !== undefined ? { override: args.experimentsDir } : {}),
+  });
 
   if (args.dryRun) {
     // Run a build into a temp dir, then compare hash with installed.
@@ -53,6 +66,7 @@ export function skillInstallHandler(args: {
     const result = generateSkill({
       bundlesDir: discoverBundlesDir({ override: args.bundlesDir }),
       patternsDir,
+      experimentsDir,
       outDir: tmp,
       ...(args.langs !== undefined ? { langs: args.langs } : {}),
     });
@@ -72,6 +86,7 @@ export function skillInstallHandler(args: {
       previousHash: installedHash,
       canvasIds: result.canvasIds,
       patternSlugs: result.patternSlugs,
+      experimentSlugs: result.experimentSlugs,
     };
   }
 
@@ -81,6 +96,7 @@ export function skillInstallHandler(args: {
   const result = generateSkill({
     bundlesDir: discoverBundlesDir({ override: args.bundlesDir }),
     patternsDir,
+    experimentsDir,
     outDir: targetDir,
     ...(args.langs !== undefined ? { langs: args.langs } : {}),
   });
@@ -92,6 +108,7 @@ export function skillInstallHandler(args: {
     upToDate: installedHash === result.contentHash,
     canvasIds: result.canvasIds,
     patternSlugs: result.patternSlugs,
+    experimentSlugs: result.experimentSlugs,
   };
 }
 
@@ -132,6 +149,7 @@ export class SkillBuildCommand extends BaseCommand {
         `  files         ${r.files.length}`,
         `  canvases      ${r.canvasIds.length} (${r.canvasIds.join(', ')})`,
         `  patterns      ${r.patternSlugs.length}${r.patternSlugs.length > 0 ? ` (${r.patternSlugs.join(', ')})` : ''}`,
+        `  experiments   ${r.experimentSlugs.length}${r.experimentSlugs.length > 0 ? ` (${r.experimentSlugs.join(', ')})` : ''}`,
       ].join('\n'),
     );
   }
@@ -183,13 +201,14 @@ export class SkillInstallCommand extends BaseCommand {
             : pc.green('  status        up to date'),
         ].join('\n');
       }
-      const r2 = r as { targetDir: string; upToDate: boolean; version: string; canvasIds: string[]; patternSlugs: string[] };
+      const r2 = r as { targetDir: string; upToDate: boolean; version: string; canvasIds: string[]; patternSlugs: string[]; experimentSlugs: string[] };
       return [
         pc.green(r2.upToDate ? '✓ skill up to date' : '✓ skill installed'),
         `  target        ${r2.targetDir}`,
         `  version       ${r2.version}`,
         `  canvases      ${r2.canvasIds.length}`,
         `  patterns      ${r2.patternSlugs.length}${r2.patternSlugs.length > 0 ? ` (${r2.patternSlugs.join(', ')})` : ''}`,
+        `  experiments   ${r2.experimentSlugs.length}${r2.experimentSlugs.length > 0 ? ` (${r2.experimentSlugs.join(', ')})` : ''}`,
       ].join('\n');
     });
   }

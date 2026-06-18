@@ -289,7 +289,7 @@ async function request(path, options = {}) {
   const res = await fetch(`${API_BASE}${path}`, {
     method: options.method ?? 'GET',
     headers: {
-      'X-Display-Name': DISPLAY_NAME,
+      'X-Display-Name': encodeURIComponent(DISPLAY_NAME),
       ...(options.body ? { 'Content-Type': 'application/json' } : {}),
     },
     ...(options.body ? { body: JSON.stringify(options.body) } : {}),

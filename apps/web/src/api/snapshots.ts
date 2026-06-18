@@ -1,16 +1,8 @@
 import type { CanvasMeta, SnapshotMeta } from '@pingarden/shared';
 import { ensureOk } from './errors';
+import { authHeaders, authHeadersJson } from './authHeaders';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
-
-/** Bodyless requests — see api/client.ts header for the Fastify rationale. */
-function authHeaders(displayName: string): HeadersInit {
-  return { 'X-Display-Name': displayName };
-}
-
-function authHeadersJson(displayName: string): HeadersInit {
-  return { 'X-Display-Name': displayName, 'Content-Type': 'application/json' };
-}
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
   const res = await fetch(input, init);

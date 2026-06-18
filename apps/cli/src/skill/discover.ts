@@ -114,3 +114,54 @@ function looksLikePatternsDir(path: string): boolean {
   // empty patterns dirs (manifest declares zero) are acceptable.
   return true;
 }
+
+/**
+ * Find the case-library experiments directory at runtime. Same fallback
+ * chain as `discoverPatternsDir`, but for the parallel
+ * `packages/case-library/experiments/` tree (Testing Business Ideas
+ * recipes — see `Experiment` in `@pingarden/shared`).
+ *
+ * Returns `null` when no experiments dir is found — the surface is
+ * optional just like patterns, so the CLI still works for canvas-only
+ * flows when none ship.
+ */
+export function discoverExperimentsDir(opts: {
+  override?: string;
+}): string | null {
+  if (opts.override && opts.override.length > 0) {
+    if (!existsSync(opts.override)) {
+      throw new CliError(
+        'BAD_INPUT',
+        `Experiments dir not found: ${opts.override}`,
+      );
+    }
+    return opts.override;
+  }
+
+  try {
+    const here = dirname(fileURLToPath(import.meta.url));
+    const packaged = resolve(here, '..', 'assets', 'experiments');
+    if (looksLikeExperimentsDir(packaged)) return packaged;
+    const dev = resolve(here, '..', '..', 'assets', 'experiments');
+    if (looksLikeExperimentsDir(dev)) return dev;
+  } catch {
+    /* import.meta.url shenanigans — fall through */
+  }
+
+  let dir = process.cwd();
+  for (let i = 0; i < 10; i++) {
+    const candidate = join(dir, 'packages', 'case-library', 'experiments');
+    if (looksLikeExperimentsDir(candidate)) return candidate;
+    const parent = resolve(dir, '..');
+    if (parent === dir) break;
+    dir = parent;
+  }
+
+  return null;
+}
+
+function looksLikeExperimentsDir(path: string): boolean {
+  if (!existsSync(path)) return false;
+  if (!statSync(path).isDirectory()) return false;
+  return true;
+}

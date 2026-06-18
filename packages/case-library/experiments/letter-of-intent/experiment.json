@@ -1,0 +1,34 @@
+{
+  "slug": "letter-of-intent",
+  "name": {
+    "en": "Letter of Intent",
+    "zh": "意向书 (Letter of Intent)"
+  },
+  "summary": {
+    "en": "A signed (non-binding) document from a B2B target buyer committing to purchase under stated conditions if the product exists. The strongest viability signal in B2B before code is written.",
+    "zh": "一份 B2B 目标买家签字(非具约束力)的意向书,承诺在产品存在且满足约定条件时采购。在 B2B 写代码之前,可营性最强的信号。"
+  },
+  "theme": "validation",
+  "risks": [
+    "viability"
+  ],
+  "evidenceStrength": "strong",
+  "cost": "medium",
+  "setupTime": "days",
+  "runTime": "weeks",
+  "capabilities": [
+    "b2b-sales",
+    "stakeholder-mapping",
+    "contract-drafting"
+  ],
+  "appliesToCanvases": [
+    "business-model-canvas",
+    "value-proposition-canvas"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-22 Letter of Intent"
+    }
+  ],
+  "examples": []
+}

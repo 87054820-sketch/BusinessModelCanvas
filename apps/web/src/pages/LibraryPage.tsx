@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import ReactMarkdown from 'react-markdown';
 import type {
   BusinessModelPattern,
   CaseLibraryEntry,
+  Experiment,
   Lang,
 } from '@pingarden/shared';
 import { libraryApi } from '../api/library';
@@ -12,9 +14,11 @@ import { CaseCard } from '../components/CaseCard';
 import { CasePreviewModal } from '../components/CasePreviewModal';
 import { PatternList } from '../components/PatternList';
 import { PatternDetailModal } from '../components/PatternDetailModal';
+import { ExperimentList } from '../components/ExperimentList';
+import { ExperimentDetailModal } from '../components/ExperimentDetailModal';
 import { Pagination } from '../components/Pagination';
 
-type LibraryTab = 'cases' | 'patterns';
+type LibraryTab = 'cases' | 'patterns' | 'experiments';
 
 /**
  * Items per page on both the Cases and Patterns tabs. Picked to match
@@ -57,14 +61,17 @@ export function LibraryPage() {
 
   const [cases, setCases] = useState<CaseLibraryEntry[] | null>(null);
   const [patterns, setPatterns] = useState<BusinessModelPattern[] | null>(null);
+  const [experiments, setExperiments] = useState<Experiment[] | null>(null);
   const [previewEntry, setPreviewEntry] = useState<CaseLibraryEntry | null>(null);
   const [selectedPattern, setSelectedPattern] = useState<BusinessModelPattern | null>(null);
+  const [selectedExperiment, setSelectedExperiment] = useState<Experiment | null>(null);
   const [tab, setTab] = useState<LibraryTab>('cases');
   // Per-tab page state. Reset to 1 when the underlying list reloads or
   // the user switches tab — so coming back to a tab always lands you
   // at the top, not on a "Page 3" they don't remember leaving on.
   const [casesPage, setCasesPage] = useState(1);
   const [patternsPage, setPatternsPage] = useState(1);
+  const [experimentsPage, setExperimentsPage] = useState(1);
   // Anchor for "scroll the list region into view" on page change.
   // Sits above the tab strip so the user sees the new page's first row
   // without scrolling up after clicking Next.
@@ -77,6 +84,8 @@ export function LibraryPage() {
     // mount alongside cases so the Cases tab can render pattern chips
     // immediately (lookup needs the patterns list).
     void libraryApi.listPatterns().then(setPatterns);
+    // Experiments — same shape as patterns: public, fetched once.
+    void libraryApi.listExperiments().then(setExperiments);
   }, [identity]);
 
   // Reset pagers whenever the underlying list reloads (defensive: if
@@ -88,6 +97,9 @@ export function LibraryPage() {
   useEffect(() => {
     setPatternsPage(1);
   }, [patterns]);
+  useEffect(() => {
+    setExperimentsPage(1);
+  }, [experiments]);
 
   // Smooth-scroll to the list anchor on page change so the user
   // doesn't have to scroll up by hand.
@@ -103,6 +115,10 @@ export function LibraryPage() {
     setPatternsPage(p);
     requestAnimationFrame(scrollToList);
   }
+  function handleExperimentsPageChange(p: number) {
+    setExperimentsPage(p);
+    requestAnimationFrame(scrollToList);
+  }
   // Tab switch: reset pagers + park at the list region. Avoids the
   // surprise of clicking from Cases (page 2) to Patterns (which had
   // its own page 2 from earlier in the session).
@@ -111,6 +127,7 @@ export function LibraryPage() {
     setTab(next);
     setCasesPage(1);
     setPatternsPage(1);
+    setExperimentsPage(1);
   }
 
   if (!identity) return null;
@@ -149,6 +166,16 @@ export function LibraryPage() {
     const entry = cases?.find((c) => c.slug === slug);
     if (!entry) return;
     setSelectedPattern(null);
+    handleTabChange('cases');
+    setPreviewEntry(entry);
+  }
+
+  /** Experiments tab → Cases tab: an `experiment.examples[].caseSlug`
+   *  was clicked. Mirrors handleExampleClick (Patterns → Cases). */
+  function handleExperimentExampleCaseClick(slug: string) {
+    const entry = cases?.find((c) => c.slug === slug);
+    if (!entry) return;
+    setSelectedExperiment(null);
     handleTabChange('cases');
     setPreviewEntry(entry);
   }
@@ -195,6 +222,12 @@ export function LibraryPage() {
           onClick={() => handleTabChange('patterns')}
           label={t('library.tabs.patterns')}
           count={patterns?.length}
+        />
+        <TabButton
+          active={tab === 'experiments'}
+          onClick={() => handleTabChange('experiments')}
+          label={t('library.tabs.experiments')}
+          count={experiments?.length}
         />
       </div>
 
@@ -260,6 +293,33 @@ export function LibraryPage() {
         </section>
       )}
 
+      {tab === 'experiments' && (
+        <section role="tabpanel">
+          <ExperimentsTabIntro />
+          {experiments === null ? (
+            <p className="text-sm text-gray-400">{t('home.loading')}…</p>
+          ) : (
+            <>
+              <ExperimentList
+                experiments={experiments.slice(
+                  (experimentsPage - 1) * PAGE_SIZE,
+                  experimentsPage * PAGE_SIZE,
+                )}
+                lang={lang}
+                onSelect={setSelectedExperiment}
+              />
+              <Pagination
+                total={experiments.length}
+                pageSize={PAGE_SIZE}
+                currentPage={experimentsPage}
+                onPageChange={handleExperimentsPageChange}
+                className="mt-5"
+              />
+            </>
+          )}
+        </section>
+      )}
+
       {/* Case preview modal */}
       <CasePreviewModal
         entry={previewEntry}
@@ -277,6 +337,14 @@ export function LibraryPage() {
         lang={lang}
         onClose={() => setSelectedPattern(null)}
         onExampleClick={handleExampleClick}
+      />
+
+      {/* Experiment detail modal — single-pane (description + sources) */}
+      <ExperimentDetailModal
+        experiment={selectedExperiment}
+        lang={lang}
+        onClose={() => setSelectedExperiment(null)}
+        onOpenCase={handleExperimentExampleCaseClick}
       />
     </main>
   );
@@ -316,5 +384,29 @@ function TabButton({
         </span>
       )}
     </button>
+  );
+}
+
+/**
+ * Intro block above the Experiments grid. Always-visible, ~3 sentences,
+ * bilingual. Frames experiments for users who arrive cold: what they're
+ * for, how they connect to canvases, how to actually run one. Uses
+ * react-markdown so the body can carry **bold** emphasis on the three
+ * picking signals (theme / risk / cost band).
+ */
+function ExperimentsTabIntro() {
+  const { t } = useTranslation();
+  return (
+    <div className="mb-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
+      <h2 className="text-sm font-semibold text-gray-900">
+        {t('library.experiments.intro.title')}
+      </h2>
+      <div
+        className="mt-1.5 text-[12px] leading-relaxed text-gray-600
+                   [&_strong]:font-semibold [&_strong]:text-gray-900"
+      >
+        <ReactMarkdown>{t('library.experiments.intro.body')}</ReactMarkdown>
+      </div>
+    </div>
   );
 }

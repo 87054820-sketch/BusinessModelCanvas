@@ -1,5 +1,8 @@
 import type {
   BusinessModelPattern,
+  Experiment,
+  ExperimentDuration,
+  ExperimentRisk,
   Lang,
   PatternReference,
   PatternReferenceType,
@@ -9,6 +12,7 @@ import {
   firstSentencesFromMarkdown,
   pickI18n,
   type CanvasBundle,
+  type ExperimentBundle,
   type PatternBundle,
 } from './bundle.js';
 
@@ -31,9 +35,19 @@ export interface SkillMdInput {
   /** Pattern slugs (sorted) shipped with this skill build. Empty when
    *  no patterns directory exists or it's empty. */
   patternSlugs: string[];
+  /** Experiment slugs (sorted) shipped with this skill build. Empty
+   *  when no experiments directory exists or it's empty. Treated
+   *  symmetrically to patterns: index entry, workflow link, and
+   *  reference page only emit when the list is non-empty. */
+  experimentSlugs: string[];
 }
 
-export function renderSkillMd({ version, canvasIds, patternSlugs }: SkillMdInput): string {
+export function renderSkillMd({
+  version,
+  canvasIds,
+  patternSlugs,
+  experimentSlugs,
+}: SkillMdInput): string {
   const canvasList = canvasIds.map((id) => `- \`canvases/${id}.en.md\` / \`canvases/${id}.zh.md\``).join('\n');
   const patternsBlock =
     patternSlugs.length > 0
@@ -42,17 +56,32 @@ export function renderSkillMd({ version, canvasIds, patternSlugs }: SkillMdInput
 ### Business model patterns (one per pattern, both languages)
 ${patternSlugs.map((s) => `- \`patterns/${s}.en.md\` / \`patterns/${s}.zh.md\``).join('\n')}`
       : '';
+  const experimentsBlock =
+    experimentSlugs.length > 0
+      ? `
+
+### Experiment library (Testing Business Ideas — one per experiment, both languages)
+${experimentSlugs.map((s) => `- \`experiments/${s}.en.md\` / \`experiments/${s}.zh.md\``).join('\n')}`
+      : '';
   const patternsWorkflow =
     patternSlugs.length > 0
       ? `\n- \`workflows/patterns.md\` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern\n- \`workflows/authoring-patterns.md\` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)`
+      : '';
+  const experimentsWorkflow =
+    experimentSlugs.length > 0
+      ? `\n- \`workflows/experiments.md\` — when the user has a riskiest assumption to test: classify it as Desirability / Feasibility / Viability and recommend 2–3 experiments from the library matched on theme + risk + cost`
       : '';
   const patternsReference =
     patternSlugs.length > 0
       ? `\n- \`reference/patterns.md\` — pattern slug index, the \`pingarden pattern <list|get>\` commands, and the case ↔ pattern cross-link rules`
       : '';
+  const experimentsReference =
+    experimentSlugs.length > 0
+      ? `\n- \`reference/experiments.md\` — experiment slug index with theme / risk / cost / strength columns, plus the matching heuristic for a given riskiest assumption`
+      : '';
   return `---
 name: pingarden
-description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Tencent, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", or any \`pingarden\` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改"。On activation, **run \`pingarden doctor\` first** to confirm the CLI is on PATH and the PinGarden app is running; if \`pingarden\` returns "command not found", fall back to \`node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js\` and prompt the user to follow INSTALL.md §三 to symlink it.
+description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Tencent, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any \`pingarden\` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run \`pingarden doctor\` first** to confirm the CLI is on PATH and the PinGarden app is running; if \`pingarden\` returns "command not found", fall back to \`node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js\` and prompt the user to follow INSTALL.md §三 to symlink it.
 version: ${version}
 ---
 
@@ -78,12 +107,13 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 2. **Before writing to a canvas**, read its description with \`pingarden canvas describe <id> --json\` (existing canvas) or \`pingarden canvas describe-template <defId> --json\` (new canvas). NEVER hardcode \`zoneId\`s — they come from the live def.
 3. **For each canvas the user works on**, consult \`canvases/<id>.<lang>.md\` for filling rules, fill order, examples, and anti-patterns.
 4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library already has 23 curated companies and 5 BMG patterns cross-linked both ways.
-5. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
+5. **For "how do I test this assumption" / "what experiment should I run"** — go to \`workflows/experiments.md\` and the \`experiments/\` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
+6. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
 
 ## Index
 
 ### Canvases (one per template, both languages)
-${canvasList}${patternsBlock}
+${canvasList}${patternsBlock}${experimentsBlock}
 
 ### Workflows
 - \`workflows/discover.md\` — first call into a fresh session
@@ -93,14 +123,14 @@ ${canvasList}${patternsBlock}
 - \`workflows/story.md\` — write a project narrative with embedded canvases
 - \`workflows/snapshot.md\` — when to milestone, how to restore
 - \`workflows/translate.md\` — en ⇄ zh round trip
-- \`workflows/case-library.md\` — read curated company cases for inspiration, or fork one to start fast${patternsWorkflow}
+- \`workflows/case-library.md\` — read curated company cases for inspiration, or fork one to start fast${patternsWorkflow}${experimentsWorkflow}
 
 ### Reference
 - \`reference/cli-cheatsheet.md\` — top commands with JSON output examples
 - \`reference/color-legend.md\` — sticky palette + how to interpret colours
 - \`reference/identity.md\` — \`X-Display-Name\` / \`--as\` / audit trail
 - \`reference/ai-context-shape.md\` — shape of the \`/ai-context\` JSON
-- \`reference/case-library.md\` — case kinds, slug rules, read-only rules${patternsReference}
+- \`reference/case-library.md\` — case kinds, slug rules, read-only rules${patternsReference}${experimentsReference}
 
 ## Key invariants — never violate
 
@@ -646,6 +676,57 @@ Restart \`./start.sh\` and open \`/library\` in the browser:
 - ❌ Inventing a pattern that isn't in a real source. Patterns must come from BMG, Hagel & Singer, Eisenmann/Parker/Van Alstyne, Anderson, Rochet & Tirole, etc. Don't synthesise patterns from your own analysis — push back to the user and ask for the canonical source.
 - ❌ Forgetting to rebuild the CLI before \`skill install --local\`. The CLI imports compiled \`@pingarden/shared/dist\` at runtime; new schema fields don't reach the skill output until the CLI is rebuilt.
 `,
+
+  'workflows/experiments.md': `# Workflow: pick an experiment from the library
+
+When the user has a riskiest assumption to test (or asks "how do I validate X", "what experiment should I run", "我该怎么验证…"), don't free-style. The library at \`experiments/<slug>.{en,zh}.md\` ships ~12 curated TBI recipes; pick from those before inventing.
+
+## The 3-step match
+
+### 1. Classify the assumption — Desirability / Feasibility / Viability
+
+TBI's three risk axes:
+
+- **Desirability** — "Do customers want it?" The market is too small, customers don't care, the value proposition doesn't land.
+- **Feasibility** — "Can we build / deliver it?" Tech, IP, key resources, partners, capabilities.
+- **Viability** — "Can we earn money from it?" Pricing, revenue stream, willingness to pay, unit economics.
+
+Most early-stage assumptions are Desirability-flavored ("users will pay $X / month for Y"). When the user names a structural / cost / supply assumption, it's Feasibility or Viability.
+
+### 2. Decide Discovery vs Validation
+
+- **Discovery** — first insights, course-correct rapidly. Cheap, weak evidence. Answers "is the direction even plausible?" Customer Interview, Online Survey, Discussion Forums, Search Trend Analysis, Boomerang, Storyboard, Clickable Prototype.
+- **Validation** — confirm the direction with strong evidence. Costlier, slower, but the result is closer to "we should bet on this." Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale.
+
+Default to Discovery when the user has zero data; jump to Validation only when (a) Discovery has already pointed in the direction and (b) the user explicitly wants stronger evidence (board ask, funding gate, build commitment).
+
+### 3. Match on cost + capabilities + canvas
+
+Within the chosen Discovery / Validation set, narrow to 2-3 candidates by:
+
+- **Cost band** — \`cheap\` / \`medium\` / \`expensive\`. Match user's stated budget; default to cheap.
+- **Capabilities** — does the user's team actually have the skills? E.g. \`landing-page-copy\` for Smoke Test, \`interview-design\` for Customer Interview.
+- **Canvas affinity** — \`experiment.appliesToCanvases[]\` lists which canvases each test most often validates. If the user is editing a VPC pain sticky, prefer experiments tagged \`value-proposition-canvas\`.
+
+## Output shape
+
+Return 2-3 candidate experiments with **trade-offs**, not a single "right" answer:
+
+> Your assumption ("enterprises will pay $30k/yr for analytics dashboards") is **Desirability + Viability**. Three candidates:
+>
+> 1. \`customer-interview\` — cheap, hours to set up. Confirms whether the pain is real and chronic, but does NOT confirm willingness to pay.
+> 2. \`smoke-test\` — medium cost, days to set up. Landing page with "Get pricing" CTA gates demand quantitatively, but doesn't verify enterprise procurement will sign.
+> 3. \`letter-of-intent\` — medium cost, weeks to set up. Strong viability evidence (signed commitment), but slow and you need a target list of ~10 enterprises to approach.
+>
+> If you're at Discovery: do (1) first. If you've already done interviews and want stronger evidence: (2) → (3).
+
+## Don't
+
+- Don't recommend an experiment that the user can't actually run (no engineering team → no Wizard of Oz, no e-commerce site → no A/B Test).
+- Don't claim weak-evidence tests (Customer Interview) "validated" anything; they Discover, not Validate.
+- Don't invent experiments that aren't in the library. If genuinely none fit, recommend the closest two and flag the gap to the user.
+- Don't fill the Experiment Canvas in the app yet — first agree on the experiment, then \`pingarden canvas write\` to populate the canvas's 6 zones.
+`,
 };
 
 export const REFERENCE_FILES: Record<string, string> = {
@@ -910,6 +991,41 @@ Skill generator emits a grouped \`## References\` block (Books → Papers → Ar
 - ❌ Patterns have no fork. Users do not fork a pattern; they read its description and walk the example cases.
 - ❌ Patterns do not appear on \`/projects\` (the user's own work). They live exclusively under the case library — \`/library\` web page, "Patterns" tab.
 `,
+
+  'reference/experiments.md': `# Reference: experiment library
+
+Curated test recipes from **Bland & Osterwalder · Testing Business Ideas · Wiley · 2019**. Each experiment ships at \`experiments/<slug>.{en,zh}.md\` with structured metadata at \`experiment.json\` (see \`Experiment\` interface in \`@pingarden/shared\`). Skill-only surface for V1 — no HTTP routes, no LibraryPage tab, no \`pingarden experiment\` CLI subcommand. The library is consumed by AI agents through the markdown files.
+
+## Cross-link to canvases
+
+The forward edge is \`experiment.appliesToCanvases[]\` — each experiment names which canvases it most often validates. Canvases do NOT carry a reverse \`validatesWith[]\` field; the agent computes it on demand by walking the library when a user lands on a canvas.
+
+## Match heuristic
+
+When the user names a riskiest assumption, use this 3-step heuristic (full version in \`workflows/experiments.md\`):
+
+1. Classify Desirability / Feasibility / Viability.
+2. Decide Discovery (cheap, weak evidence, "is the direction plausible?") vs Validation (costlier, stronger evidence, "should we bet?").
+3. Within the chosen set, narrow to 2-3 candidates by cost band, team capabilities, and canvas affinity. Return tradeoffs — never a single "right" answer.
+
+## Filter signals
+
+Each \`experiment.json\` carries:
+
+- \`theme\`: \`discovery\` | \`validation\`
+- \`risks[]\`: subset of \`desirability\` / \`feasibility\` / \`viability\`
+- \`evidenceStrength\`: \`weak\` | \`medium\` | \`strong\`
+- \`cost\`: \`cheap\` | \`medium\` | \`expensive\`
+- \`setupTime\` / \`runTime\`: \`hours\` | \`days\` | \`weeks\`
+- \`capabilities[]\`: kebab-case skill tags (e.g. \`interview-design\`, \`landing-page-copy\`, \`payment-processing\`)
+- \`appliesToCanvases[]\`: canvas-id list (matches \`packages/canvases/<id>/manifest.json\`)
+
+## What experiments are NOT
+
+- ❌ Experiments are not patterns. Patterns describe HOW a business makes money; experiments describe HOW you test a hypothesis. Different content type, different surface.
+- ❌ Experiments are not cases. Cases are concrete companies; experiments are reusable recipes that any case might run.
+- ❌ The library is not exhaustive. V1 ships ~12 of the 44 in TBI; the agent should recommend "closest 2-3 from the library + flag the gap" if no perfect fit exists, rather than invent.
+`,
 };
 
 // ─── Per-pattern .{en,zh}.md ─────────────────────────────────────────────────
@@ -1079,4 +1195,133 @@ function renderPatternReferenceEntry(r: PatternReference, lang: Lang): string {
   const note = r.note?.[lang] || r.note?.en;
   const noteLine = note ? `\n  ${note}` : '';
   return `- ${headline}${metaLine}${noteLine}`;
+}
+
+// ─── Per-experiment .{en,zh}.md ──────────────────────────────────────────────
+
+export interface ExperimentMdInput {
+  bundle: ExperimentBundle;
+  lang: Lang;
+}
+
+/**
+ * Render the per-experiment skill markdown for the Testing Business
+ * Ideas library. Mirrors `renderPatternMd`: prefers the curated
+ * `skill.{en,zh}.md` body, falls back to first paragraphs of
+ * `description.{en,zh}.md` when missing. Adds a structured `## At a
+ * glance` block at the top — theme / risks / cost / strength / setup
+ * / run / capabilities / canvases — derived from `experiment.json` so
+ * the AI can answer "is this a cheap discovery test for desirability?"
+ * without parsing prose.
+ */
+export function renderExperimentMd({ bundle, lang }: ExperimentMdInput): string {
+  const { experiment } = bundle;
+  const name = experiment.name[lang] ?? experiment.name.en;
+  const summary = experiment.summary[lang] ?? experiment.summary.en;
+
+  const skill = bundle.skill[lang];
+  const description = bundle.description[lang];
+  const body = skill && skill.trim().length > 0
+    ? skill
+    : description && description.trim().length > 0
+      ? firstParagraphs(description, 3)
+      : '_(No description authored for this language yet.)_';
+
+  const ataGlance = renderExperimentAtAGlance(experiment, lang);
+  const sourcesSection = renderExperimentSourcesSection(experiment, lang);
+
+  return `# ${name}
+
+> ${summary}
+
+## Slug
+
+\`${experiment.slug}\` — referenced by AI agents matching a riskiest assumption to a candidate experiment. Cross-reference into canvases is via \`experiment.appliesToCanvases[]\`.
+
+${ataGlance}
+
+${body.trim()}
+
+${sourcesSection}
+`;
+}
+
+const EXPERIMENT_THEME_LABEL: Record<'discovery' | 'validation', { en: string; zh: string }> = {
+  discovery: { en: 'Discovery', zh: '探索 (Discovery)' },
+  validation: { en: 'Validation', zh: '验证 (Validation)' },
+};
+
+const EXPERIMENT_RISK_LABEL: Record<ExperimentRisk, { en: string; zh: string }> = {
+  desirability: { en: 'Desirability', zh: '需求性 (Desirability)' },
+  feasibility: { en: 'Feasibility', zh: '可行性 (Feasibility)' },
+  viability: { en: 'Viability', zh: '可营性 (Viability)' },
+};
+
+const EXPERIMENT_STRENGTH_LABEL: Record<'weak' | 'medium' | 'strong', { en: string; zh: string }> = {
+  weak: { en: 'Weak', zh: '弱 (weak)' },
+  medium: { en: 'Medium', zh: '中 (medium)' },
+  strong: { en: 'Strong', zh: '强 (strong)' },
+};
+
+const EXPERIMENT_COST_LABEL: Record<'cheap' | 'medium' | 'expensive', { en: string; zh: string }> = {
+  cheap: { en: 'Cheap', zh: '便宜 (cheap)' },
+  medium: { en: 'Medium', zh: '中等 (medium)' },
+  expensive: { en: 'Expensive', zh: '贵 (expensive)' },
+};
+
+const EXPERIMENT_DURATION_LABEL: Record<ExperimentDuration, { en: string; zh: string }> = {
+  hours: { en: 'Hours', zh: '小时级' },
+  days: { en: 'Days', zh: '天级' },
+  weeks: { en: 'Weeks', zh: '周级' },
+};
+
+function renderExperimentAtAGlance(e: Experiment, lang: Lang): string {
+  const heading = lang === 'zh' ? '## 速览' : '## At a glance';
+  const themeLine = lang === 'zh' ? '阶段' : 'Theme';
+  const risksLine = lang === 'zh' ? '风险类别' : 'Risks';
+  const strengthLine = lang === 'zh' ? '证据强度' : 'Evidence strength';
+  const costLine = lang === 'zh' ? '成本' : 'Cost';
+  const setupLine = lang === 'zh' ? '准备时间' : 'Setup time';
+  const runLine = lang === 'zh' ? '执行时间' : 'Run time';
+  const capLine = lang === 'zh' ? '能力要求' : 'Capabilities';
+  const canvasesLine = lang === 'zh' ? '关联画布' : 'Applies to canvases';
+
+  const themeText = EXPERIMENT_THEME_LABEL[e.theme][lang];
+  const risksText = e.risks
+    .map((r) => EXPERIMENT_RISK_LABEL[r][lang])
+    .join(' · ');
+  const strengthText = EXPERIMENT_STRENGTH_LABEL[e.evidenceStrength][lang];
+  const costText = EXPERIMENT_COST_LABEL[e.cost][lang];
+  const setupText = EXPERIMENT_DURATION_LABEL[e.setupTime][lang];
+  const runText = EXPERIMENT_DURATION_LABEL[e.runTime][lang];
+  const capText = e.capabilities.length > 0
+    ? e.capabilities.map((c) => `\`${c}\``).join(' · ')
+    : (lang === 'zh' ? '_(\u672a\u8bf4\u660e)_' : '_(unspecified)_');
+  const canvasesText = e.appliesToCanvases.length > 0
+    ? e.appliesToCanvases.map((c) => `\`${c}\``).join(' · ')
+    : (lang === 'zh' ? '_(\u4efb\u610f\u753b\u5e03)_' : '_(any canvas)_');
+
+  return `${heading}
+
+| | |
+| --- | --- |
+| **${themeLine}** | ${themeText} |
+| **${risksLine}** | ${risksText} |
+| **${strengthLine}** | ${strengthText} |
+| **${costLine}** | ${costText} |
+| **${setupLine}** | ${setupText} |
+| **${runLine}** | ${runText} |
+| **${capLine}** | ${capText} |
+| **${canvasesLine}** | ${canvasesText} |`;
+}
+
+function renderExperimentSourcesSection(e: Experiment, lang: Lang): string {
+  const header = lang === 'zh' ? '## 出处' : '## Sources';
+  if (e.sources.length === 0) {
+    return `${header}\n\n${lang === 'zh' ? '_(\u672a\u6807\u660e)_' : '_(No sources cited.)_'}`;
+  }
+  const flat = e.sources
+    .map((s) => (s.url ? `- [${s.label}](${s.url})` : `- ${s.label}`))
+    .join('\n');
+  return `${header}\n\n${flat}`;
 }

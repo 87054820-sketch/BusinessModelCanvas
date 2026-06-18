@@ -322,11 +322,13 @@
       "company": "Company",
       "industry": "Industry",
       "pattern": "Pattern",
-      "comparison": "Comparison"
+      "comparison": "Comparison",
+      "experiment": "Experiment"
     },
     "tabs": {
       "cases": "Cases",
       "patterns": "Patterns",
+      "experiments": "Experiments",
       "description": "Description",
       "relatedCases": "Related cases"
     },
@@ -339,8 +341,68 @@
     "showDescription": "Show description",
     "hideDescription": "Hide description",
     "patternsEmpty": "No patterns shipped in this version yet.",
+    "experimentsEmpty": "No experiments shipped in this version yet.",
     "descriptionEmpty": "No description authored for this pattern yet.",
     "examplesEmpty": "No example cases curated for this pattern yet.",
+    "experiments": {
+      "intro": {
+        "title": "Test risky assumptions before you build",
+        "body": "Each card is a cheap, falsifiable test of ONE risky assumption. Pick one based on **theme** (Discovery is cheaper / weaker evidence; Validation is costlier / stronger), the **risk** it tests (Desirability / Feasibility / Viability), and the **cost band** your team can afford. Every experiment lists the canvases it most often validates — claims you've already written on Value Proposition Canvas, Empathy Map, Customer Journey, BMC, etc. To run one, open the card and click \"Use this experiment\" — we'll spin up a fresh Experiment Canvas with the method already filled in."
+      },
+      "useThisExperiment": "Use this experiment to start a new canvas",
+      "seedFailed": "Couldn't pre-fill the experiment — start the canvas blank and add the method manually.",
+      "picker": {
+        "title": "Use this experiment in...",
+        "modeNew": "Create a new project",
+        "modeNewHint": "Spin up a fresh project with this experiment as its first canvas.",
+        "modeExisting": "Add to an existing project",
+        "modeExistingHint": "The experiment canvas will be added to the project you choose.",
+        "noProjects": "No editable projects yet — create one first.",
+        "selectPlaceholder": "Choose a project…",
+        "cancel": "Cancel",
+        "confirm": "Use this experiment"
+      }
+    },
+    "experiment": {
+      "theme": {
+        "discovery": "Discovery",
+        "validation": "Validation"
+      },
+      "risk": {
+        "desirability": "Desirability",
+        "feasibility": "Feasibility",
+        "viability": "Viability"
+      },
+      "cost": {
+        "cheap": "Cheap",
+        "medium": "Medium",
+        "expensive": "Expensive"
+      },
+      "evidence": {
+        "weak": "Weak evidence",
+        "medium": "Medium evidence",
+        "strong": "Strong evidence"
+      },
+      "duration": {
+        "hours": "Hours",
+        "days": "Days",
+        "weeks": "Weeks"
+      },
+      "setupRunTime": "Setup {{setup}} · Run {{run}}",
+      "capabilitiesSection": "Capabilities needed",
+      "appliesToSection": "Often used to validate",
+      "examplesSection": "Real-world examples",
+      "examplesEmpty": "No real-world examples authored yet.",
+      "openFullCase": "Open full case",
+      "fields": {
+        "hypothesis": "Hypothesis",
+        "experiment": "Experiment",
+        "evidence": "Evidence",
+        "insights": "Insights",
+        "actions": "Actions"
+      },
+      "descriptionEmpty": "No description authored for this experiment yet."
+    },
     "pagination": {
       "previous": "Previous",
       "next": "Next",

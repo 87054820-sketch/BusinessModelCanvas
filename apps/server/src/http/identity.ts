@@ -16,10 +16,29 @@ export interface RequestIdentity {
 
 const HEADER = 'x-display-name';
 
+/**
+ * Decode the wire form back to UTF-8. Web/CLI clients now wrap the
+ * display name with `encodeURIComponent` because HTTP header values
+ * must be ISO-8859-1; Chromium throws TypeError on raw non-Latin-1
+ * bytes. Wrapping is idempotent for ASCII names — `decodeURIComponent('Sibo')`
+ * returns `'Sibo'` — so older clients that did not encode keep working.
+ *
+ * `decodeURIComponent` throws on malformed `%`-sequences; in that case
+ * we fall back to the raw value rather than 500 the request.
+ */
+function tryDecode(s: string): string {
+  try {
+    return decodeURIComponent(s);
+  } catch {
+    return s;
+  }
+}
+
 export function getIdentity(req: FastifyRequest): RequestIdentity {
   const raw = req.headers[HEADER];
   const name = Array.isArray(raw) ? raw[0] : raw;
-  const displayName = (name ?? '').toString().trim() || 'Anonymous';
+  const decoded = tryDecode((name ?? '').toString());
+  const displayName = decoded.trim() || 'Anonymous';
   return { displayName: displayName.slice(0, 64) };
 }
 

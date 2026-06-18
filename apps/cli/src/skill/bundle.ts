@@ -4,6 +4,7 @@ import type {
   BusinessModelPattern,
   CanvasDef,
   CanvasI18n,
+  Experiment,
   Lang,
 } from '@pingarden/shared';
 
@@ -201,6 +202,54 @@ export function readPatternBundle(
   return {
     slug,
     pattern,
+    description: {
+      en: readMarkdownOrUndefined(join(dir, 'description.en.md')),
+      zh: readMarkdownOrUndefined(join(dir, 'description.zh.md')),
+    },
+    skill: {
+      en: readMarkdownOrUndefined(join(dir, 'skill.en.md')),
+      zh: readMarkdownOrUndefined(join(dir, 'skill.zh.md')),
+    },
+  };
+}
+
+/**
+ * Experiment bundle — the parallel of `PatternBundle` for the Testing
+ * Business Ideas experiment library at
+ * `packages/case-library/experiments/<slug>/`.
+ *
+ *   - `experiment`  — the parsed experiment.json (typed metadata, see
+ *                     `Experiment` in `@pingarden/shared`)
+ *   - `description` — bilingual long-form markdown: when to use, how to
+ *                     run, what good looks like, anti-patterns
+ *   - `skill`       — bilingual concise AI-facing markdown (TL;DR for
+ *                     AI agents to recommend the experiment from a
+ *                     riskiest assumption). Falls back to the first
+ *                     paragraphs of `description.<lang>.md` when missing.
+ */
+export interface ExperimentBundle {
+  slug: string;
+  experiment: Experiment;
+  description: { en?: string; zh?: string };
+  skill: { en?: string; zh?: string };
+}
+
+export function readExperimentBundle(
+  experimentsDir: string,
+  slug: string,
+): ExperimentBundle | null {
+  const dir = join(experimentsDir, slug);
+  const experimentJsonPath = join(dir, 'experiment.json');
+  if (!existsSync(experimentJsonPath)) return null;
+  let experiment: Experiment;
+  try {
+    experiment = JSON.parse(readFileSync(experimentJsonPath, 'utf8')) as Experiment;
+  } catch {
+    return null;
+  }
+  return {
+    slug,
+    experiment,
     description: {
       en: readMarkdownOrUndefined(join(dir, 'description.en.md')),
       zh: readMarkdownOrUndefined(join(dir, 'description.zh.md')),

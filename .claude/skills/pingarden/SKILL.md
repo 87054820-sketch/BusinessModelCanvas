@@ -1,7 +1,7 @@
 ---
 name: pingarden
-description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Tencent, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js` and prompt the user to follow INSTALL.md §三 to symlink it.
-version: 0.4.1-b4de424c
+description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Tencent, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js` and prompt the user to follow INSTALL.md §三 to symlink it.
+version: 0.4.1-133f98f7
 ---
 
 # PinGarden — official skill
@@ -26,7 +26,8 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 2. **Before writing to a canvas**, read its description with `pingarden canvas describe <id> --json` (existing canvas) or `pingarden canvas describe-template <defId> --json` (new canvas). NEVER hardcode `zoneId`s — they come from the live def.
 3. **For each canvas the user works on**, consult `canvases/<id>.<lang>.md` for filling rules, fill order, examples, and anti-patterns.
 4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library already has 23 curated companies and 5 BMG patterns cross-linked both ways.
-5. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
+5. **For "how do I test this assumption" / "what experiment should I run"** — go to `workflows/experiments.md` and the `experiments/` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
+6. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
 
 ## Index
 
@@ -50,6 +51,20 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `patterns/open-business-models.en.md` / `patterns/open-business-models.zh.md`
 - `patterns/unbundling-business-models.en.md` / `patterns/unbundling-business-models.zh.md`
 
+### Experiment library (Testing Business Ideas — one per experiment, both languages)
+- `experiments/boomerang.en.md` / `experiments/boomerang.zh.md`
+- `experiments/clickable-prototype.en.md` / `experiments/clickable-prototype.zh.md`
+- `experiments/concierge.en.md` / `experiments/concierge.zh.md`
+- `experiments/customer-interview.en.md` / `experiments/customer-interview.zh.md`
+- `experiments/discussion-forums.en.md` / `experiments/discussion-forums.zh.md`
+- `experiments/letter-of-intent.en.md` / `experiments/letter-of-intent.zh.md`
+- `experiments/online-survey.en.md` / `experiments/online-survey.zh.md`
+- `experiments/pre-sale.en.md` / `experiments/pre-sale.zh.md`
+- `experiments/search-trend-analysis.en.md` / `experiments/search-trend-analysis.zh.md`
+- `experiments/smoke-test.en.md` / `experiments/smoke-test.zh.md`
+- `experiments/storyboard.en.md` / `experiments/storyboard.zh.md`
+- `experiments/wizard-of-oz.en.md` / `experiments/wizard-of-oz.zh.md`
+
 ### Workflows
 - `workflows/discover.md` — first call into a fresh session
 - `workflows/greenfield.md` — chat → app, brand new canvas
@@ -61,6 +76,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `workflows/case-library.md` — read curated company cases for inspiration, or fork one to start fast
 - `workflows/patterns.md` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern
 - `workflows/authoring-patterns.md` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)
+- `workflows/experiments.md` — when the user has a riskiest assumption to test: classify it as Desirability / Feasibility / Viability and recommend 2–3 experiments from the library matched on theme + risk + cost
 
 ### Reference
 - `reference/cli-cheatsheet.md` — top commands with JSON output examples
@@ -69,6 +85,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `reference/ai-context-shape.md` — shape of the `/ai-context` JSON
 - `reference/case-library.md` — case kinds, slug rules, read-only rules
 - `reference/patterns.md` — pattern slug index, the `pingarden pattern <list|get>` commands, and the case ↔ pattern cross-link rules
+- `reference/experiments.md` — experiment slug index with theme / risk / cost / strength columns, plus the matching heuristic for a given riskiest assumption
 
 ## Key invariants — never violate
 

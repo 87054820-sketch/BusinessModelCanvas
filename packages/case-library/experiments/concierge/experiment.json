@@ -1,0 +1,39 @@
+{
+  "slug": "concierge",
+  "name": {
+    "en": "Concierge",
+    "zh": "贴身管家 (Concierge)"
+  },
+  "summary": {
+    "en": "You deliver the value entirely manually to a tiny set of customers. Maximum learning, minimum infrastructure. Validates desirability + viability + the unit-of-value before any product exists.",
+    "zh": "对一小群客户完全手工交付价值。学习最多、基础设施最少。在产品都还不存在的时候,验证需求性 + 可营性 + 价值单元。"
+  },
+  "theme": "validation",
+  "risks": [
+    "desirability",
+    "viability"
+  ],
+  "evidenceStrength": "strong",
+  "cost": "medium",
+  "setupTime": "days",
+  "runTime": "weeks",
+  "capabilities": [
+    "domain-expertise",
+    "customer-success",
+    "manual-operations"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "business-model-canvas",
+    "customer-journey"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-10 Concierge"
+    },
+    {
+      "label": "Eric Ries · The Lean Startup · Crown Business · 2011"
+    }
+  ],
+  "examples": []
+}

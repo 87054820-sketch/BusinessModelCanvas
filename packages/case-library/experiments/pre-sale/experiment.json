@@ -1,0 +1,35 @@
+{
+  "slug": "pre-sale",
+  "name": {
+    "en": "Pre-Sale",
+    "zh": "预售 (Pre-Sale)"
+  },
+  "summary": {
+    "en": "Take real money for a not-yet-built product — Kickstarter, pre-orders, deposits. The strongest desirability + viability signal you can get short of an actual product launch.",
+    "zh": "为还没造出来的产品收真钱 —— Kickstarter、预购、定金。在产品真正发布之前,需求性 + 可营性的最强信号。"
+  },
+  "theme": "validation",
+  "risks": [
+    "desirability",
+    "viability"
+  ],
+  "evidenceStrength": "strong",
+  "cost": "medium",
+  "setupTime": "weeks",
+  "runTime": "weeks",
+  "capabilities": [
+    "marketing-launch",
+    "payment-processing",
+    "customer-communication"
+  ],
+  "appliesToCanvases": [
+    "business-model-canvas",
+    "value-proposition-canvas"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-23 Pre-Sales"
+    }
+  ],
+  "examples": []
+}

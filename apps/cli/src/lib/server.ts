@@ -136,7 +136,7 @@ export class HttpClient {
 
   async request<T>(method: string, path: string, body?: unknown): Promise<T> {
     const headers: Record<string, string> = {
-      'X-Display-Name': this.displayName,
+      'X-Display-Name': encodeURIComponent(this.displayName),
       Accept: 'application/json',
     };
     let payload: BodyInit | undefined;

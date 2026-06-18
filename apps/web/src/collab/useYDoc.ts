@@ -59,7 +59,7 @@ export function useYDoc(canvasId: string | undefined, displayName: string): Resu
           method: 'PUT',
           headers: {
             'Content-Type': 'application/octet-stream',
-            'X-Display-Name': displayName,
+            'X-Display-Name': encodeURIComponent(displayName),
           },
           body,
         });
@@ -79,7 +79,7 @@ export function useYDoc(canvasId: string | undefined, displayName: string): Resu
         method: 'PUT',
         headers: {
           'Content-Type': 'application/octet-stream',
-          'X-Display-Name': displayName,
+          'X-Display-Name': encodeURIComponent(displayName),
         },
         body: flushBody,
         keepalive: true,

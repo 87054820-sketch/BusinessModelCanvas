@@ -7,19 +7,9 @@ import type {
   UpdateCanvasInput,
 } from '@pingarden/shared';
 import { ensureOk } from './errors';
+import { authHeaders, authHeadersJson } from './authHeaders';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
-
-/** Bodyless requests (GET, DELETE) — must NOT set Content-Type, otherwise
- *  Fastify's JSON parser rejects the empty body with FST_ERR_CTP_EMPTY_JSON_BODY. */
-function authHeaders(displayName: string): HeadersInit {
-  return { 'X-Display-Name': displayName };
-}
-
-/** Body-bearing requests (POST, PATCH, PUT) — JSON body. */
-function authHeadersJson(displayName: string): HeadersInit {
-  return { 'X-Display-Name': displayName, 'Content-Type': 'application/json' };
-}
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
   const res = await fetch(input, init);
@@ -112,5 +102,34 @@ export const api = {
       method: 'DELETE',
       headers: authHeaders(displayName),
     });
+  },
+  /**
+   * Replace-mode bulk sticky import. Used by seed flows (e.g. the
+   * library's "Use this experiment" CTA pre-fills the experiment-setup
+   * zone). Mirrors the server endpoint contract documented in
+   * `apps/server/src/http/stickyImport.ts`.
+   */
+  bulkStickies(
+    canvasId: string,
+    stickies: Array<{
+      zoneId: string;
+      text: string;
+      color?: string;
+      x?: number;
+      y?: number;
+      width?: number;
+      height?: number;
+      authorName?: string;
+    }>,
+    displayName: string,
+  ): Promise<{ replaced: number; ids: string[] }> {
+    return fetchJson<{ replaced: number; ids: string[] }>(
+      `${BASE}/canvases/${canvasId}/stickies/bulk`,
+      {
+        method: 'POST',
+        headers: authHeadersJson(displayName),
+        body: JSON.stringify({ stickies }),
+      },
+    );
   },
 };

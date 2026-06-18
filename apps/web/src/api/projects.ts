@@ -5,18 +5,9 @@ import type {
   CanvasMeta,
 } from '@pingarden/shared';
 import { ensureOk } from './errors';
+import { authHeaders, authHeadersJson } from './authHeaders';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
-
-/** Bodyless requests (GET, DELETE) — must NOT set Content-Type, otherwise
- *  Fastify's JSON parser rejects the empty body with FST_ERR_CTP_EMPTY_JSON_BODY. */
-function authHeaders(displayName: string): HeadersInit {
-  return { 'X-Display-Name': displayName };
-}
-
-function authHeadersJson(displayName: string): HeadersInit {
-  return { 'X-Display-Name': displayName, 'Content-Type': 'application/json' };
-}
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
   const res = await fetch(input, init);

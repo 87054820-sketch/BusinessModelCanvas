@@ -1,18 +1,17 @@
 import type {
+  BusinessModelExperimentDetail,
   BusinessModelPattern,
   BusinessModelPatternDetail,
   CaseForkResult,
   CaseLibraryDetail,
   CaseLibraryEntry,
+  Experiment,
   Lang,
 } from '@pingarden/shared';
 import { ensureOk } from './errors';
+import { authHeaders } from './authHeaders';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
-
-function authHeaders(displayName: string): HeadersInit {
-  return { 'X-Display-Name': displayName };
-}
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
   const res = await fetch(input, init);
@@ -71,6 +70,29 @@ export const libraryApi = {
   getPattern(slug: string): Promise<BusinessModelPatternDetail> {
     return fetchJson<BusinessModelPatternDetail>(
       `${BASE}/library/patterns/${encodeURIComponent(slug)}`,
+    );
+  },
+  /**
+   * List all curated experiments shipped in the library. Like patterns,
+   * experiments are pure read-only content (no project, no canvas, no
+   * fork). The 12 V1 experiments come from the Bland & Osterwalder
+   * "Testing Business Ideas" library — surfacing them in the App is the
+   * non-AI counterpart to the Claude skill's experiment recipes.
+   *
+   * Public route — no auth header required.
+   */
+  listExperiments(): Promise<Experiment[]> {
+    return fetchJson<Experiment[]>(`${BASE}/library/experiments`);
+  },
+  /**
+   * Resolve an experiment by slug — returns the experiment metadata and
+   * its bilingual long-form markdown description. No `exampleCases[]`
+   * surface (experiments are abstract methods, not bound to concrete
+   * cases).
+   */
+  getExperiment(slug: string): Promise<BusinessModelExperimentDetail> {
+    return fetchJson<BusinessModelExperimentDetail>(
+      `${BASE}/library/experiments/${encodeURIComponent(slug)}`,
     );
   },
 };

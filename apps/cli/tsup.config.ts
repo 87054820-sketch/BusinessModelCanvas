@@ -15,6 +15,8 @@ const ASSETS_CANVASES = resolve('assets/canvases');
 const BUNDLES_SRC = resolve('../../packages/canvases');
 const ASSETS_PATTERNS = resolve('assets/patterns');
 const PATTERNS_SRC = resolve('../../packages/case-library/patterns');
+const ASSETS_EXPERIMENTS = resolve('assets/experiments');
+const EXPERIMENTS_SRC = resolve('../../packages/case-library/experiments');
 const DIST_PACKAGE_JSON = resolve('dist/package.json');
 
 const PKG_VERSION = (
@@ -64,6 +66,24 @@ function syncPatternsToAssets() {
   }
   if (!existsSync(PATTERNS_SRC)) return; // empty pattern dir is allowed
   copyTree(PATTERNS_SRC, ASSETS_PATTERNS);
+}
+
+/**
+ * Mirror packages/case-library/experiments/ into apps/cli/assets/experiments/.
+ * Same rationale + same shape as `syncPatternsToAssets` — experiments
+ * are tiny markdown + json files, no SVG, no Yjs binary; copy verbatim.
+ */
+function syncExperimentsToAssets() {
+  if (existsSync(ASSETS_EXPERIMENTS)) {
+    rmSync(ASSETS_EXPERIMENTS, {
+      recursive: true,
+      force: true,
+      maxRetries: 5,
+      retryDelay: 50,
+    });
+  }
+  if (!existsSync(EXPERIMENTS_SRC)) return; // empty experiments dir is allowed
+  copyTree(EXPERIMENTS_SRC, ASSETS_EXPERIMENTS);
 }
 
 function copyTree(src: string, dest: string) {
@@ -121,6 +141,7 @@ export default defineConfig({
   async onSuccess() {
     syncCanvasesToAssets();
     syncPatternsToAssets();
+    syncExperimentsToAssets();
     // Mark `dist/` as ESM. Without this sentinel, Node treats `.js`
     // as CommonJS — fatal when the CLI is run via Electron-as-Node
     // from inside the Mac app, where the parent app's package.json

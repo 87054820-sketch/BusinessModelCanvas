@@ -1,0 +1,38 @@
+{
+  "slug": "online-survey",
+  "name": {
+    "en": "Online Survey",
+    "zh": "在线问卷"
+  },
+  "summary": {
+    "en": "Quantitative survey of 100+ target customers to confirm whether interview-stage themes scale across the segment, and to compare relative pain / gain magnitudes.",
+    "zh": "对 100+ 目标客户做的量化问卷,验证访谈阶段浮现的主题是否在整个细分上成立,以及比较痛点 / 收益的相对量级。"
+  },
+  "theme": "discovery",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "weak",
+  "cost": "cheap",
+  "setupTime": "days",
+  "runTime": "days",
+  "capabilities": [
+    "survey-design",
+    "non-leading-questions",
+    "data-analysis"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "empathy-map",
+    "jobs-to-be-done"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Online Survey"
+    },
+    {
+      "label": "Don A. Dillman · Internet, Phone, Mail, and Mixed-Mode Surveys · Wiley · 2014"
+    }
+  ],
+  "examples": []
+}

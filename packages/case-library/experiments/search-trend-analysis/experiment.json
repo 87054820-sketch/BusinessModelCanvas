@@ -1,0 +1,33 @@
+{
+  "slug": "search-trend-analysis",
+  "name": {
+    "en": "Search Trend Analysis",
+    "zh": "搜索趋势分析"
+  },
+  "summary": {
+    "en": "Use Google Trends, keyword volume tools, and SEO data to gauge whether an unmet need is widespread enough to bother building for, and how it's trending over months or years.",
+    "zh": "用 Google Trends、关键词工具、SEO 数据来判断某个未被满足的需求是否广泛到值得做,以及它在月 / 年级别上的走势。"
+  },
+  "theme": "discovery",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "weak",
+  "cost": "cheap",
+  "setupTime": "hours",
+  "runTime": "hours",
+  "capabilities": [
+    "keyword-research",
+    "trend-analysis"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "business-model-environment"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Search Trend Analysis"
+    }
+  ],
+  "examples": []
+}
