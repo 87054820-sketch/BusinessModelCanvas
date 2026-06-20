@@ -191,9 +191,9 @@ export function ProjectWorkspacePage() {
   // projects (`source === 'user'`) so this filter never fires for
   // them — user projects can mix EN / ZH freely.
   //
-  // Single-language cases (e.g. wechat-private-domain when EN content
-  // doesn't exist yet) fall back to showing everything they ship —
-  // see `langFallbackActive` for the small banner that explains.
+  // If a future library case is missing the active UI language, we
+  // fall back to showing everything it ships — see `langFallbackActive`
+  // for the small banner that explains.
   //
   // Declared up here (instead of further down with the rest of the
   // memos) because the route-effect below pins the URL's
@@ -453,9 +453,10 @@ export function ProjectWorkspacePage() {
   }, [activeCanvas?.id, clearActiveClass, clearActiveStickyColor]);
 
   useEffect(() => {
+    if (readOnly) return;
     if (!doc || !bundle?.def.defaultColorLegend) return;
     seedColorLegendDefaults(doc, bundle.def.defaultColorLegend, lang);
-  }, [doc, bundle?.def.id, bundle?.def.defaultColorLegend, lang]);
+  }, [doc, bundle?.def.id, bundle?.def.defaultColorLegend, lang, readOnly]);
 
   // Workspace-level keyboard shortcuts.
   //
@@ -855,10 +856,9 @@ export function ProjectWorkspacePage() {
       )}
       {langFallbackActive && fallbackAvailableLang && (
         // Lighter strip beneath the read-only banner, fired only when
-        // the case has zero canvases tagged with the active UI lang
-        // (typically: single-language cases like wechat-private-domain
-        // before its EN translation lands). The user still sees the
-        // case content via the fallback inside `filteredCanvases`;
+        // the case has zero canvases tagged with the active UI lang.
+        // The user still sees the case content via the fallback inside
+        // `filteredCanvases`;
         // this strip just explains why nothing flipped over when they
         // toggled the language switcher.
         <div className="border-b border-amber-100 bg-amber-50/60 px-6 py-2 text-xs text-amber-800">
@@ -1047,13 +1047,15 @@ export function ProjectWorkspacePage() {
                     >
                       {({ def, toSvgPoint }) => (
                         <>
-                          <StickyLayer
-                            doc={doc}
-                            zones={def.zones}
-                            toSvgPoint={toSvgPoint}
-                            displayName={identity.displayName}
-                            readonly={readOnly}
-                          />
+                          {effectiveObjectTypes(def).includes('sticky') && (
+                            <StickyLayer
+                              doc={doc}
+                              zones={def.zones}
+                              toSvgPoint={toSvgPoint}
+                              displayName={identity.displayName}
+                              readonly={readOnly}
+                            />
+                          )}
                           {effectiveObjectTypes(def).includes('pin') && (
                             <PinLayer
                               doc={doc}

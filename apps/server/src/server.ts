@@ -102,6 +102,7 @@ async function main() {
         req.url.startsWith('/projects') ||
         req.url.startsWith('/stories') ||
         req.url.startsWith('/snapshots') ||
+        req.url.startsWith('/library') ||
         req.url.startsWith('/ai-context') ||
         req.url.startsWith('/sticky-import') ||
         req.url.startsWith('/objects-import');

@@ -1,0 +1,36 @@
+{
+  "slug": "transsion-africa",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Transsion in Africa",
+    "zh": "传音在非洲"
+  },
+  "summary": {
+    "en": "Transsion built phone brands for African markets by optimizing for local constraints such as multi-SIM use, battery life, camera tuning for darker skin tones, durability, and distribution reach.",
+    "zh": "传音围绕非洲市场本地约束打造手机品牌，优化多卡、续航、深肤色拍照、耐用性和渠道覆盖。"
+  },
+  "tags": [
+    "mobile",
+    "Africa",
+    "consumer-electronics",
+    "blue-ocean",
+    "China"
+  ],
+  "sources": [
+    {
+      "label": "Transsion public company materials"
+    },
+    {
+      "label": "Africa mobile market analyses"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "8e48fe8c-2e8e-4517-b05d-d70068dccf07",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy",
+    "business-model-environment-scan"
+  ]
+}

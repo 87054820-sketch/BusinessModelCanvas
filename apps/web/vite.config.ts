@@ -42,6 +42,7 @@ export default defineConfig({
       '/library/cases': { target: 'http://localhost:4000', changeOrigin: true },
       '/library/patterns': { target: 'http://localhost:4000', changeOrigin: true },
       '/library/experiments': { target: 'http://localhost:4000', changeOrigin: true },
+      '/library/strategy-frameworks': { target: 'http://localhost:4000', changeOrigin: true },
       '/health': { target: 'http://localhost:4000', changeOrigin: true },
     },
   },

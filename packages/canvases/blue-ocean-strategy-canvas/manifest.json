@@ -10,7 +10,7 @@
     "zh": "bg.zh.svg"
   },
   "plugin": "chart-canvas",
-  "objectTypes": ["sticky", "pin", "pinClass", "xAxisItem"],
+  "objectTypes": ["pin", "pinClass", "xAxisItem"],
   "chart": {
     "yAxis": {
       "min": 0,
@@ -49,20 +49,10 @@
   "zones": [
     {
       "id": "chart-area",
-      "shape": { "type": "rect", "x": 100, "y": 64, "w": 980, "h": 706 }
+      "shape": { "type": "rect", "x": 100, "y": 64, "w": 1100, "h": 706 }
     }
   ],
   "related": ["business-model-canvas", "value-proposition-canvas"],
-  "relatedNotes": {
-    "business-model-canvas": {
-      "en": "Take the differentiated value curve back into BMC's Value Propositions and Customer Segments — the whole model usually shifts.",
-      "zh": "把差异化后的价值曲线带回 BMC 的价值主张和客户细分 —— 整个模型通常都会跟着改。"
-    },
-    "value-proposition-canvas": {
-      "en": "ERIC moves (Eliminate / Reduce / Raise / Create) translate directly into VPC's Pain Relievers and Gain Creators.",
-      "zh": "ERIC 动作(剔除 / 减少 / 提升 / 创造)直接对应 VPC 的痛点缓解和收益创造。"
-    }
-  },
   "relatedNotes": {
     "business-model-canvas": {
       "en": "Take the differentiated value curve back into BMC's Value Propositions and Customer Segments — the whole model usually shifts.",

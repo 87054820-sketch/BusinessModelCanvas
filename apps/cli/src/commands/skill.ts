@@ -8,6 +8,7 @@ import {
   discoverBundlesDir,
   discoverExperimentsDir,
   discoverPatternsDir,
+  discoverStrategyFrameworksDir,
 } from '../skill/discover.js';
 import { generateSkill, readInstalledHash } from '../skill/generate.js';
 
@@ -20,6 +21,7 @@ export function skillBuildHandler(args: {
   bundlesDir?: string;
   patternsDir?: string;
   experimentsDir?: string;
+  strategyFrameworksDir?: string;
   outDir: string;
   langs?: Array<'en' | 'zh'>;
 }) {
@@ -33,10 +35,16 @@ export function skillBuildHandler(args: {
   const experimentsDir = discoverExperimentsDir({
     ...(args.experimentsDir !== undefined ? { override: args.experimentsDir } : {}),
   });
+  const strategyFrameworksDir = discoverStrategyFrameworksDir({
+    ...(args.strategyFrameworksDir !== undefined
+      ? { override: args.strategyFrameworksDir }
+      : {}),
+  });
   return generateSkill({
     bundlesDir,
     patternsDir,
     experimentsDir,
+    strategyFrameworksDir,
     outDir: args.outDir,
     ...(args.langs !== undefined ? { langs: args.langs } : {}),
   });
@@ -46,6 +54,7 @@ export function skillInstallHandler(args: {
   bundlesDir?: string;
   patternsDir?: string;
   experimentsDir?: string;
+  strategyFrameworksDir?: string;
   local: boolean;
   dryRun: boolean;
   langs?: Array<'en' | 'zh'>;
@@ -59,6 +68,11 @@ export function skillInstallHandler(args: {
   const experimentsDir = discoverExperimentsDir({
     ...(args.experimentsDir !== undefined ? { override: args.experimentsDir } : {}),
   });
+  const strategyFrameworksDir = discoverStrategyFrameworksDir({
+    ...(args.strategyFrameworksDir !== undefined
+      ? { override: args.strategyFrameworksDir }
+      : {}),
+  });
 
   if (args.dryRun) {
     // Run a build into a temp dir, then compare hash with installed.
@@ -67,6 +81,7 @@ export function skillInstallHandler(args: {
       bundlesDir: discoverBundlesDir({ override: args.bundlesDir }),
       patternsDir,
       experimentsDir,
+      strategyFrameworksDir,
       outDir: tmp,
       ...(args.langs !== undefined ? { langs: args.langs } : {}),
     });
@@ -87,6 +102,7 @@ export function skillInstallHandler(args: {
       canvasIds: result.canvasIds,
       patternSlugs: result.patternSlugs,
       experimentSlugs: result.experimentSlugs,
+      strategyFrameworkSlugs: result.strategyFrameworkSlugs,
     };
   }
 
@@ -97,6 +113,7 @@ export function skillInstallHandler(args: {
     bundlesDir: discoverBundlesDir({ override: args.bundlesDir }),
     patternsDir,
     experimentsDir,
+    strategyFrameworksDir,
     outDir: targetDir,
     ...(args.langs !== undefined ? { langs: args.langs } : {}),
   });
@@ -109,6 +126,7 @@ export function skillInstallHandler(args: {
     canvasIds: result.canvasIds,
     patternSlugs: result.patternSlugs,
     experimentSlugs: result.experimentSlugs,
+    strategyFrameworkSlugs: result.strategyFrameworkSlugs,
   };
 }
 
@@ -150,6 +168,7 @@ export class SkillBuildCommand extends BaseCommand {
         `  canvases      ${r.canvasIds.length} (${r.canvasIds.join(', ')})`,
         `  patterns      ${r.patternSlugs.length}${r.patternSlugs.length > 0 ? ` (${r.patternSlugs.join(', ')})` : ''}`,
         `  experiments   ${r.experimentSlugs.length}${r.experimentSlugs.length > 0 ? ` (${r.experimentSlugs.join(', ')})` : ''}`,
+        `  frameworks    ${r.strategyFrameworkSlugs.length}${r.strategyFrameworkSlugs.length > 0 ? ` (${r.strategyFrameworkSlugs.join(', ')})` : ''}`,
       ].join('\n'),
     );
   }

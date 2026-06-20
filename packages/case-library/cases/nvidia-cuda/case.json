@@ -1,0 +1,36 @@
+{
+  "slug": "nvidia-cuda",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "NVIDIA CUDA",
+    "zh": "NVIDIA CUDA"
+  },
+  "summary": {
+    "en": "NVIDIA expanded GPUs beyond graphics by building CUDA and a developer ecosystem for parallel computing, opening demand in scientific computing, AI, and accelerated workloads.",
+    "zh": "NVIDIA 通过 CUDA 和开发者生态，把 GPU 从图形处理扩展到并行计算，在科学计算、AI 和加速负载中创造新需求。"
+  },
+  "tags": [
+    "semiconductors",
+    "ai",
+    "platform",
+    "blue-ocean",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "NVIDIA CUDA public history"
+    },
+    {
+      "label": "Accelerated computing and AI platform analyses"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "82bb904e-ac69-4ef4-bb8f-f32055e6b895",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy",
+    "business-model-portfolio-management"
+  ]
+}

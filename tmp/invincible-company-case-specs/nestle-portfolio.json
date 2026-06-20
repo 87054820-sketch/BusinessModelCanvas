@@ -1,0 +1,111 @@
+{
+  "slug": "nestle-portfolio",
+  "kind": "company",
+  "companyName": {
+    "en": "Nestlé — exploit portfolio actions",
+    "zh": "雀巢 —— 开发组合动作"
+  },
+  "summary": {
+    "en": "Nestlé illustrates Exploit portfolio management: the company manages mature categories through acquire, partner, improve, and divest actions rather than treating the existing business portfolio as static.",
+    "zh": "雀巢展示了 Exploit 开发组合管理：公司通过收购、合作、改善和剥离等动作管理成熟品类，而不是把现有业务组合当成静态资产。"
+  },
+  "tags": ["food-and-beverage", "portfolio", "exploit", "M&A", "Switzerland"],
+  "sources": [
+    { "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley · 2020 · Nestlé portfolio example" },
+    { "label": "Nestlé investor day and public portfolio materials" }
+  ],
+  "thumbnailDefId": "portfolio-map",
+  "appliesStrategyFrameworks": ["business-model-portfolio-management"],
+  "project": {
+    "name": "Nestlé — exploit portfolio actions",
+    "description": "Exploit portfolio action map inspired by The Invincible Company."
+  },
+  "canvases": [
+    {
+      "key": "portfolio-en",
+      "defId": "portfolio-map",
+      "title": "Nestlé exploit portfolio actions",
+      "language": "en",
+      "pinClasses": [
+        { "id": "core-category", "label": "Core category", "color": "#4F46E5", "icon": "circle" },
+        { "id": "acquire-partner", "label": "Acquire / partner", "color": "#10B981", "icon": "triangle" },
+        { "id": "improve-divest", "label": "Improve / divest", "color": "#EF4444", "icon": "flag" }
+      ],
+      "pins": [
+        { "classId": "core-category", "x": 1010, "y": 130, "label": "Beverages", "body": "Large existing category with strong returns and active renewal." },
+        { "classId": "core-category", "x": 930, "y": 170, "label": "Pet care", "body": "Scaled exploit business with growth and acquisition options." },
+        { "classId": "acquire-partner", "x": 780, "y": 250, "label": "Starbucks license", "body": "Partner/acquire-style move to strengthen beverages." },
+        { "classId": "acquire-partner", "x": 410, "y": 575, "label": "Sweet Earth", "body": "Explore/adjacent bet around plant-based foods." },
+        { "classId": "improve-divest", "x": 820, "y": 345, "label": "Skin Health review", "body": "Improve or divest when fit and risk profile weaken." },
+        { "classId": "improve-divest", "x": 900, "y": 360, "label": "Confectionery divestment", "body": "Divest portfolio positions that no longer fit strategic direction." }
+      ]
+    },
+    {
+      "key": "bmc-en",
+      "defId": "business-model-canvas",
+      "title": "Nestlé portfolio management model",
+      "language": "en",
+      "stickies": [
+        { "zoneId": "customer-segments", "text": "Global consumers across food, beverage, nutrition, and pet care" },
+        { "zoneId": "value-propositions", "text": "Trusted brands refreshed through portfolio actions" },
+        { "zoneId": "channels", "text": "Retail, foodservice, licensed channels, direct partnerships" },
+        { "zoneId": "customer-relationships", "text": "Brand trust, repeat consumption, category loyalty" },
+        { "zoneId": "revenue-streams", "text": "Category sales, licensed products, acquired growth platforms" },
+        { "zoneId": "key-resources", "text": "Brands, distribution, M&A capability, category knowledge" },
+        { "zoneId": "key-activities", "text": "Manage categories; acquire, partner, improve, divest" },
+        { "zoneId": "key-partners", "text": "Retailers, licensors, acquisition targets, supply partners" },
+        { "zoneId": "cost-structure", "text": "Brand investment, manufacturing, acquisitions, integration costs" }
+      ]
+    },
+    {
+      "key": "portfolio-zh",
+      "defId": "portfolio-map",
+      "title": "雀巢开发组合动作",
+      "language": "zh",
+      "pinClasses": [
+        { "id": "core-category", "label": "核心品类", "color": "#4F46E5", "icon": "circle" },
+        { "id": "acquire-partner", "label": "收购 / 合作", "color": "#10B981", "icon": "triangle" },
+        { "id": "improve-divest", "label": "改善 / 剥离", "color": "#EF4444", "icon": "flag" }
+      ],
+      "pins": [
+        { "classId": "core-category", "x": 1010, "y": 130, "label": "饮料", "body": "大型现有品类，收益强，需要持续更新。" },
+        { "classId": "core-category", "x": 930, "y": 170, "label": "宠物护理", "body": "规模化开发业务，具备增长和收购选项。" },
+        { "classId": "acquire-partner", "x": 780, "y": 250, "label": "星巴克授权", "body": "通过合作 / 授权动作强化饮料组合。" },
+        { "classId": "acquire-partner", "x": 410, "y": 575, "label": "Sweet Earth", "body": "围绕植物基食品的相邻探索下注。" },
+        { "classId": "improve-divest", "x": 820, "y": 345, "label": "皮肤健康审查", "body": "当战略匹配度和风险状态变弱时，选择改善或剥离。" },
+        { "classId": "improve-divest", "x": 900, "y": 360, "label": "糖果业务剥离", "body": "剥离不再符合战略方向的组合位置。" }
+      ]
+    },
+    {
+      "key": "bmc-zh",
+      "defId": "business-model-canvas",
+      "title": "雀巢组合管理模式",
+      "language": "zh",
+      "stickies": [
+        { "zoneId": "customer-segments", "text": "食品、饮料、营养和宠物护理的全球消费者" },
+        { "zoneId": "value-propositions", "text": "通过组合动作持续焕新的可信品牌" },
+        { "zoneId": "channels", "text": "零售、餐饮渠道、授权渠道、直接合作" },
+        { "zoneId": "customer-relationships", "text": "品牌信任、重复消费、品类忠诚" },
+        { "zoneId": "revenue-streams", "text": "品类销售、授权产品、收购带来的增长平台" },
+        { "zoneId": "key-resources", "text": "品牌、分销网络、并购能力、品类知识" },
+        { "zoneId": "key-activities", "text": "管理品类，执行收购、合作、改善和剥离" },
+        { "zoneId": "key-partners", "text": "零售商、授权方、收购标的、供应伙伴" },
+        { "zoneId": "cost-structure", "text": "品牌投入、制造成本、收购成本、整合成本" }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "title": "Nestlé exploit portfolio actions",
+      "language": "en",
+      "status": "published",
+      "contentMd": "# Nestlé exploit portfolio actions\n\nNestlé is useful for reading the Exploit side of the Portfolio Map. The important lesson is that mature categories still require active management. A portfolio can be improved through acquire, partner, improve, divest, and dismantle decisions.\n\n## Portfolio reading\n\nThe map separates large current categories from portfolio actions. Beverages and pet care are existing engines; licensing, acquisitions, and plant-based bets are moves around the edge of the current portfolio. Strategic reviews and divestments show that exploit management is not just growth, but also pruning.\n\n## Transfer lesson\n\nFor incumbents, portfolio discipline means asking whether every business still earns its place. Improving and divesting can be as strategic as launching something new."
+    },
+    {
+      "title": "雀巢开发组合动作",
+      "language": "zh",
+      "status": "published",
+      "contentMd": "# 雀巢开发组合动作\n\n雀巢适合用来阅读 Portfolio Map 的 Exploit 开发侧。关键经验是：成熟品类也需要主动管理。一个组合可以通过收购、合作、改善、剥离和拆除等动作持续更新。\n\n## 组合阅读\n\n组合图把大型现有品类和组合动作分开。饮料和宠物护理是现有增长引擎；授权、收购和植物基食品下注则是围绕现有组合边缘展开的动作。战略审查和剥离说明，开发组合管理不只是增长，也包括修剪。\n\n## 转移经验\n\n对成熟公司来说，组合纪律意味着持续追问每项业务是否仍然值得留在组合里。改善和剥离与推出新业务一样具有战略意义。"
+    }
+  ]
+}

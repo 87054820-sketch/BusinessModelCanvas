@@ -91,13 +91,15 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
                 <CanvasRenderer defId={canvas.defId} lang={lang} doc={doc} displayName={displayName}>
                   {({ def, toSvgPoint }) => (
                     <>
-                      <StickyLayer
-                        doc={doc}
-                        zones={def.zones}
-                        toSvgPoint={toSvgPoint}
-                        displayName={displayName}
-                        readonly
-                      />
+                      {effectiveObjectTypes(def).includes('sticky') && (
+                        <StickyLayer
+                          doc={doc}
+                          zones={def.zones}
+                          toSvgPoint={toSvgPoint}
+                          displayName={displayName}
+                          readonly
+                        />
+                      )}
                       {effectiveObjectTypes(def).includes('pin') && (
                         <PinLayer doc={doc} def={def} toSvgPoint={toSvgPoint} readonly />
                       )}

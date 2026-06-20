@@ -3,6 +3,7 @@ import type {
   BusinessModelPattern,
   CaseLibraryEntry,
   Lang,
+  StrategyFramework,
 } from '@pingarden/shared';
 
 interface Props {
@@ -15,6 +16,8 @@ interface Props {
    * the case has no `appliesPatterns`, the chip row is omitted entirely.
    */
   patterns?: BusinessModelPattern[];
+  /** Strategy frameworks shipped in the library, for localized chips. */
+  strategyFrameworks?: StrategyFramework[];
   /**
    * Callback when the user clicks a pattern chip. The host page is
    * expected to switch to the Patterns tab and scroll to the matching
@@ -22,6 +25,8 @@ interface Props {
    * `onClick` (open modal) doesn't also fire.
    */
   onPatternClick?: (slug: string) => void;
+  /** Callback when the user clicks a strategy-framework chip. */
+  onStrategyFrameworkClick?: (slug: string) => void;
 }
 
 /**
@@ -35,7 +40,15 @@ interface Props {
  * placeholder. Removed in 2026-06 — no signal, lots of vertical space.
  * If we later author per-case real artwork, the right place is here.
  */
-export function CaseCard({ entry, lang, onClick, patterns, onPatternClick }: Props) {
+export function CaseCard({
+  entry,
+  lang,
+  onClick,
+  patterns,
+  onPatternClick,
+  strategyFrameworks,
+  onStrategyFrameworkClick,
+}: Props) {
   const { t } = useTranslation();
   const name = entry.companyName[lang] ?? entry.companyName.en;
   const summary = entry.summary[lang] ?? entry.summary.en;
@@ -57,6 +70,10 @@ export function CaseCard({ entry, lang, onClick, patterns, onPatternClick }: Pro
     (entry.appliesPatterns ?? [])
       .map((slug) => patterns?.find((p) => p.slug === slug))
       .filter((p): p is BusinessModelPattern => !!p);
+  const appliedFrameworks: StrategyFramework[] =
+    (entry.appliesStrategyFrameworks ?? [])
+      .map((slug) => strategyFrameworks?.find((f) => f.slug === slug))
+      .filter((f): f is StrategyFramework => !!f);
 
   // Optional sub-type refinement per pattern. Pattern-with-subtypes
   // (e.g. Free → ad-supported / freemium / bait-and-hook) lets the case
@@ -103,21 +120,35 @@ export function CaseCard({ entry, lang, onClick, patterns, onPatternClick }: Pro
         </span>
       </div>
 
-      {/* Applies-patterns chips — only when the case backlinks to ≥1 pattern. */}
-      {applied.length > 0 && (
-        <div className="mt-3 flex flex-wrap gap-1">
+      {/* Pattern + strategy-framework chips share one compact two-column area. */}
+      {(applied.length > 0 || appliedFrameworks.length > 0) && (
+        <div className="mt-3 grid grid-cols-2 gap-1">
           {applied.map((p) => (
             <button
               type="button"
-              key={p.slug}
+              key={`pattern-${p.slug}`}
               onClick={(e) => {
                 e.stopPropagation();
                 onPatternClick?.(p.slug);
               }}
-              className="rounded-full border border-dashed border-violet-300 bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 transition hover:bg-violet-100"
+              className="w-full truncate rounded-full border border-dashed border-violet-300 bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 transition hover:bg-violet-100"
               title={t('library.appliesPatterns')}
             >
               {chipLabel(p)}
+            </button>
+          ))}
+          {appliedFrameworks.map((f) => (
+            <button
+              type="button"
+              key={`framework-${f.slug}`}
+              onClick={(e) => {
+                e.stopPropagation();
+                onStrategyFrameworkClick?.(f.slug);
+              }}
+              className="w-full truncate rounded-full border border-dashed border-indigo-300 bg-indigo-50 px-2 py-0.5 text-[10px] font-medium text-indigo-700 transition hover:bg-indigo-100"
+              title={t('library.appliesStrategyFrameworks')}
+            >
+              {f.name[lang] ?? f.name.en}
             </button>
           ))}
         </div>

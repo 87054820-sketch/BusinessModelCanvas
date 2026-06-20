@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from '
 import { join, relative, resolve } from 'node:path';
 import { Command, Option } from 'clipanion';
 import * as Y from 'yjs';
-import * as pc from 'picocolors';
+import pc from 'picocolors';
 import type {
   CanvasDef,
   CanvasMeta,
@@ -64,7 +64,7 @@ export class CaseRelayoutCommand extends Command {
     `,
     examples: [
       ['Re-layout the Swiss case', 'pingarden case relayout swiss-private-banking'],
-      ['Preview without writing', 'pingarden case relayout wechat-private-domain --dry-run'],
+      ['Preview without writing', 'pingarden case relayout swiss-private-banking --dry-run'],
     ],
   });
 

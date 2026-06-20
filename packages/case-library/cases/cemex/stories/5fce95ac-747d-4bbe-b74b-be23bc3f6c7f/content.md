@@ -48,6 +48,6 @@ Three paths the library could take in future rounds:
 
 1. **Add Jobs-To-Be-Done as a pattern entity**, with Cemex as the primary case. JTBD is a recognised business-strategy lens (Christensen et al.) but isn't in the BMG catalog.
 2. **Add Operational Excellence as a pattern**, with Cemex + FedEx + Toyota Production System as primary cases.
-3. **Leave it untagged**. This is the current decision. The case still teaches well as a standalone — it sits next to `patagonia`, `carvana`, `cainiao`, and `wechat-private-domain` in the library's 'interesting cases without a clean BMG pattern fit' tier. The audit decision is recorded so future readers see the rationale.
+3. **Leave it untagged**. This is the current decision. The case still teaches well as a standalone — it sits next to `patagonia`, `carvana`, and `cainiao` in the library's 'interesting cases without a clean BMG pattern fit' tier. The audit decision is recorded so future readers see the rationale.
 
 The pattern-fit question matters because pattern tags drive cross-reference behaviour in the library UI. A case without a pattern tag still appears in the Cases tab and can be opened normally; it just doesn't show up in any pattern's Related Cases tab. That's the right behaviour for Cemex today.

@@ -41,5 +41,8 @@
   "projectId": "fb50b308-99c6-4cec-98c1-391a3cf90bad",
   "canvasCount": 2,
   "storyCount": 2,
-  "appliesPatterns": []
+  "appliesPatterns": [],
+  "appliesStrategyFrameworks": [
+    "business-model-environment-scan"
+  ]
 }

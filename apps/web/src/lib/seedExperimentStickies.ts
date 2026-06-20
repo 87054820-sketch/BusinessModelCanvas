@@ -30,9 +30,8 @@ export interface SeedStickyPayload {
  *      project then immediately seeds it with the same payload.
  *
  * Both paths produce identical canvas content from the same template.
- * If a future experiment ships without a template (V1 has all 12
- * authored), the function falls back to a single setup-zone sticky
- * matching Round 11's shape.
+ * All shipped experiments carry a six-zone scaffold; the fallback remains
+ * a defensive guard for malformed or third-party experiment bundles.
  */
 export function buildSeedPayload(
   detail: BusinessModelExperimentDetail,

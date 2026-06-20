@@ -34,5 +34,88 @@
       "label": "Don A. Dillman · Internet, Phone, Mail, and Mixed-Mode Surveys · Wiley · 2014"
     }
   ],
-  "examples": []
+  "examples": [
+    {
+      "company": {
+        "en": "Superhuman",
+        "zh": "Superhuman"
+      },
+      "year": "2017-2018",
+      "headline": {
+        "en": "Measure product-market fit before scaling growth.",
+        "zh": "在放大增长前先测产品市场匹配。"
+      },
+      "story": {
+        "en": "Superhuman used a Sean Ellis-style survey to ask active users how they would feel if they could no longer use the product, then segmented responses to understand which users loved it, what benefits mattered, and which product improvements would move more users into the “very disappointed” group.",
+        "zh": "Superhuman 使用 Sean Ellis 式问卷询问活跃用户：如果以后不能再使用这个产品会有什么感受。团队随后按用户群体和回答分层，理解谁真正热爱产品、他们重视什么收益，以及哪些改进能让更多用户进入「非常失望」组。"
+      },
+      "hypothesis": {
+        "en": "The team believed it could use survey responses as a leading indicator of product-market fit and prioritize improvements that would increase the share of users who would be very disappointed without Superhuman.",
+        "zh": "团队相信，问卷回答可以作为产品市场匹配的领先指标，并帮助他们优先改进那些能提升「没有 Superhuman 会非常失望」用户占比的事项。"
+      },
+      "experiment": {
+        "en": "They surveyed active users with the Sean Ellis question, analyzed segments and qualitative reasons, then translated the response patterns into a product roadmap.",
+        "zh": "他们用 Sean Ellis 问题调研活跃用户，分析不同细分和开放回答原因，再把回答模式转化成产品路线图。"
+      },
+      "evidence": {
+        "en": "The product-market-fit score and verbatim responses gave the team a measurable baseline and showed which customer segment had the strongest pull.",
+        "zh": "产品市场匹配得分和用户原话给团队提供了可度量基线，也显示出哪个客户细分的拉力最强。"
+      },
+      "insights": {
+        "en": "The survey was most useful when treated as a segmentation and learning tool, not a vanity metric. It revealed whose pain to serve first and what to improve next.",
+        "zh": "当问卷被当成细分和学习工具，而不是虚荣指标时最有价值。它揭示了应该优先服务谁的痛点，以及下一步该改什么。"
+      },
+      "actions": {
+        "en": "Superhuman used the learning to focus the product and improve its product-market-fit score before scaling broader growth efforts.",
+        "zh": "Superhuman 用这些学习聚焦产品，并在扩大增长之前提升产品市场匹配得分。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery Survey, pp. 122-125 and Validation Survey / Sean Ellis Test, pp. 280-281; Rahul Vohra · First Round Review · How Superhuman Built an Engine to Find Product/Market Fit · 2018"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile population-level assumption.</em></p><p>e.g. <strong>[Segment X]</strong> experiences <strong>[pain Y]</strong> frequently enough, and with enough urgency, to justify focusing the product on it.</p>",
+          "zh": "<p><em>替换成一条最脆弱的人群层面假设。</em></p><p>例如：<strong>[客群 X]</strong> 经历 <strong>[痛点 Y]</strong> 的频率和紧迫度足够高，值得我们把产品聚焦在这里。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [segment] has measurable demand patterns around [problem / behavior].</p><p><strong>To verify, we will</strong> collect 150 qualified survey responses within 10 days.</p><p><strong>And measure</strong> problem frequency, severity, current workaround, willingness to be contacted, and segment differences.</p><p><strong>We are right if</strong> ≥ 40% report the problem monthly and ≥ 25% leave contact for follow-up.</p>",
+          "zh": "<p><strong>我们相信</strong> [客群] 围绕 [问题 / 行为] 存在可量化需求模式。</p><p><strong>为了验证，我们将</strong> 在 10 天内收集 150 份合格问卷。</p><p><strong>并测量</strong> 问题频率、严重度、当前绕行方案、愿意被联系比例和细分差异。</p><p><strong>如果</strong> ≥ 40% 每月至少遇到一次问题，且 ≥ 25% 留下联系方式 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Design:</strong> keep it under 8 minutes. Use screening questions first, then mostly closed questions on frequency, severity, alternatives, spend/time cost, and one open “tell us about the last time” prompt.</p><p><strong>Recruit:</strong> send through 2-3 channels that match the segment: customer list, communities, panels, LinkedIn, or newsletter. Require n ≥ 150 qualified completes; remove speeders and duplicates.</p><p><strong>Analyze:</strong> predefine segments before launch. Cut results by role, company size, use case, or urgency. Recruit 10 high-signal respondents for follow-up interviews.</p>",
+          "zh": "<p><strong>设计：</strong>控制在 8 分钟内。先放筛选题，再用封闭题测频率、严重度、替代方案、金钱 / 时间成本，最后放一个开放题「讲讲最近一次」。</p><p><strong>招募：</strong>通过 2-3 个匹配客群的渠道投放：客户列表、社区、样本平台、LinkedIn 或 newsletter。要求 n ≥ 150 份合格完成；剔除极速答卷和重复样本。</p><p><strong>分析：</strong>上线前预定义细分。按角色、公司规模、用例或紧迫度切结果。邀请 10 位高信号答卷者做后续访谈。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 40% qualified respondents experience the problem monthly; ≥ 30% rate severity ≥ 7/10; ≥ 25% opt into follow-up.</p><p><strong>Fail:</strong> problem frequency is low, severity is low, or signal exists only in an unreachable segment.</p><p><strong>Inconclusive:</strong> aggregate is weak but one segment is strong; rerun with n ≥ 100 in that segment.</p>",
+          "zh": "<p><strong>通过：</strong>≥ 40% 合格答卷者每月至少遇到该问题；≥ 30% 严重度 ≥ 7/10；≥ 25% 愿意后续联系。</p><p><strong>失败：</strong>问题频率低、严重度低，或信号只存在于无法触达的细分。</p><p><strong>不清晰：</strong>总体弱但某个细分强；在该细分中追加 n ≥ 100 的问卷。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Qualified completes: __ ; Monthly problem frequency: __ %; Severity ≥ 7/10: __ %; Follow-up opt-ins: __ %.</p><p>Strongest segment: __ . Top open-text theme: __ . Verdict: validated / invalidated / inconclusive.</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>合格答卷：__；每月问题频率：__ %；严重度 ≥ 7/10：__ %；后续联系比例：__ %。</p><p>最强细分：__。开放题最高频主题：__。结论：已验证 / 已证伪 / 不清晰。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → interview 10 high-signal respondents or run a Smoke Test against the strongest segment.<br/>• <strong>Pivot</strong> → narrow the segment / problem statement based on the strongest cut.<br/>• <strong>Kill</strong> → if frequency and severity are both weak, stop treating this as a priority problem.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 访谈 10 位高信号答卷者，或针对最强细分跑 Smoke Test。<br/>• <strong>Pivot</strong> → 根据最强切片收窄客群 / 问题表述。<br/>• <strong>Kill</strong> → 如果频率和严重度都弱，不要把它当优先问题。</p>"
+        }
+      }
+    ]
+  }
 }

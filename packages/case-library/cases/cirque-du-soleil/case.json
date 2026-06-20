@@ -1,0 +1,40 @@
+{
+  "slug": "cirque-du-soleil",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Cirque du Soleil",
+    "zh": "太阳马戏团"
+  },
+  "summary": {
+    "en": "A flagship Blue Ocean Strategy case: Cirque du Soleil escaped the declining traditional circus red ocean by eliminating costly animals and star performers, borrowing from theatre and opera, and creating a premium live-entertainment experience for adults and corporate buyers.",
+    "zh": "蓝海战略标志案例：太阳马戏团没有在衰退的传统马戏红海中继续争夺儿童和家庭观众，而是剔除高成本动物与明星演员，借鉴剧场和歌剧，创造面向成人和企业客户的高端现场娱乐。"
+  },
+  "tags": [
+    "entertainment",
+    "live-performance",
+    "blue-ocean",
+    "Canada",
+    "theatre"
+  ],
+  "sources": [
+    {
+      "label": "Blue Ocean Strategy · Cirque du Soleil Case Study",
+      "url": "https://www.blueoceanstrategy.com/blue-ocean-strategy-examples/cirque-du-soleil/"
+    },
+    {
+      "label": "Blue Ocean Strategy teaching materials · Cirque du Soleil",
+      "url": "https://www.blueoceanstrategy.com/teaching-materials/cirque-du-soleil/"
+    },
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Blue Ocean Strategy chapter"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "78fafd16-24fd-4451-9813-47b4090cd129",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
+  ]
+}

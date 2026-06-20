@@ -83,9 +83,7 @@ multiplayer, hardcore-gamer titles, and price**, Wii:
 - **Score on a 0–5 scale.** The exact number doesn't matter; the
   *shape* does. 0 = "we don't offer this at all," 5 = "this is what
   we're famous for."
-- **Use pins for anchoring decisions.** Once you've picked an ERRC move
-  on a factor, pin a one-line note ("ELIMINATE — focus elsewhere") to
-  the curve point so the rationale survives the meeting.
+- **Keep the chart to curve data.** Points and lines should communicate the shape; ERRC rationale, noncustomer insight, trade-off logic, and conclusions belong in the Story, not in long stickies floating over the chart.
 - **Pair with the BMC.** A great Strategy Canvas is unimplementable
   without a coherent Cost Structure / Key Resources story; build both
   in the same project.

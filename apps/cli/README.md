@@ -179,10 +179,10 @@ pingarden snapshot restore <canvasId> <sid> --mode fork
 **Browse the case library, then fork.** PinGarden ships a curated read-only library of company / industry / pattern / comparison analyses. Read commands let an AI inspect them as inspiration without polluting the user's workspace; `fork` deep-copies one into editable user storage.
 
 ```bash
-pingarden case list --json                                  # all slugs + tags + counts
-pingarden case describe wechat-private-domain --lang en --json  # zone shape, no sticky bodies
-pingarden case read wechat-private-domain --lang en --json      # full canvases + story bodies
-pingarden case fork wechat-private-domain --json            # deep copy → new editable user project
+pingarden case list --json                              # all slugs + tags + counts
+pingarden case describe swiss-private-banking --lang en --json  # zone shape, no sticky bodies
+pingarden case read swiss-private-banking --lang en --json      # full canvases + story bodies
+pingarden case fork swiss-private-banking --json            # deep copy → new editable user project
 ```
 
 `canvas write` against a library canvas returns 403 — the library is enforced read-only at the storage layer. Fork first to edit.
@@ -200,7 +200,7 @@ The encoder is the same `encodeObjectsBulk` from `@pingarden/shared/yjs` the ser
 
 ```bash
 pingarden case validate                       # scan everything
-pingarden case validate wechat-private-domain # one slug
+pingarden case validate swiss-private-banking # one slug
 ```
 
 Checks slug-vs-directory match, schema validity, manifest consistency, that every `live.ydoc` decodes via `Y.applyUpdate`, and that referenced project/canvas/story files exist. Wired into `scripts/package-mac.sh` so a broken case fails the DMG build before electron-builder runs.

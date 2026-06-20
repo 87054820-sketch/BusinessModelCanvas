@@ -7,6 +7,8 @@ import type {
   CaseLibraryEntry,
   Experiment,
   Lang,
+  StrategyFramework,
+  StrategyFrameworkDetail,
 } from '@pingarden/shared';
 import { ensureOk } from './errors';
 import { authHeaders } from './authHeaders';
@@ -93,6 +95,19 @@ export const libraryApi = {
   getExperiment(slug: string): Promise<BusinessModelExperimentDetail> {
     return fetchJson<BusinessModelExperimentDetail>(
       `${BASE}/library/experiments/${encodeURIComponent(slug)}`,
+    );
+  },
+  /**
+   * List all strategic analysis methods shipped in the library. Frameworks
+   * are abstract methods (Blue Ocean Strategy, Five Forces, …), not cases.
+   */
+  listStrategyFrameworks(): Promise<StrategyFramework[]> {
+    return fetchJson<StrategyFramework[]>(`${BASE}/library/strategy-frameworks`);
+  },
+  /** Resolve one strategy framework with bilingual markdown and hydrated examples. */
+  getStrategyFramework(slug: string): Promise<StrategyFrameworkDetail> {
+    return fetchJson<StrategyFrameworkDetail>(
+      `${BASE}/library/strategy-frameworks/${encodeURIComponent(slug)}`,
     );
   },
 };

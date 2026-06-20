@@ -47,8 +47,8 @@ One company, one or more canvases of different defIds. Sticky
 sources (e.g. "HBR 2023" / "annual report 2024") — that's how multi-
 source agreement / disagreement surfaces inside a single canvas.
 
-**Example**: `wechat-private-domain` — WeChat's BMC + VPC + JTBD with
-stickies attributed to Tencent's annual report and an HBR case.
+**Example**: `airbnb` — Airbnb's BMC and related canvases with a
+bilingual story tying the analysis together.
 
 ### `"industry"` — industry archetype + variants
 
@@ -106,10 +106,9 @@ language's canvas IDs. See `packages/case-library/cases/swiss-private-banking/`
 for the canonical layout — 6 canvases (archetype × 2 langs +
 maerki × 2 langs + pictet × 2 langs) and 2 stories.
 
-`pingarden case validate` will **warn** (not fail, yet) if a case has
-canvases in only one language — the warning becomes an error once
-existing single-language cases (`wechat-private-domain` is currently
-zh-only) are translated and the warning has zero false positives.
+`pingarden case validate` fails if a case has canvases in only one
+language. Every shipped case must include both `en` and `zh` canvases
+so the bilingual browsing experience stays complete.
 
 A future schema upgrade will fold `Sticky.text` into a
 `LocalizedString = { en: string; zh: string }` and the parallel-canvas
@@ -125,8 +124,8 @@ canvas per variant. Out of scope for the current release.
 > what you'd hand to Claude when asking for a new case).
 
 The author command is implemented in P6 of the case library plan.
-Until then, the existing `wechat-private-domain` migration (P5) can
-serve as a working example of the on-disk format.
+Use any shipped bilingual case as a working example of the on-disk
+format.
 
 ### Slug rules
 
@@ -174,7 +173,7 @@ the array is the order in which cases appear in the LibraryPage grid
 {
   "version": 1,
   "cases": [
-    { "slug": "wechat-private-domain", "featured": true },
+    { "slug": "airbnb", "featured": true },
     { "slug": "swiss-private-banking", "featured": false }
   ]
 }
@@ -252,7 +251,7 @@ pingarden case relayout swiss-private-banking --dry-run
 
 # Apply in-place
 pingarden case relayout swiss-private-banking
-pingarden case relayout wechat-private-domain
+pingarden case relayout airbnb
 ```
 
 ## Adding a new business-model pattern
@@ -452,8 +451,8 @@ Concrete steps:
 A worked example of this audit lives in the 2026-06-15 round 3 plan
 (`generic-strolling-tarjan.md`): when we added `multi-sided-platforms`,
 the audit tagged 4 existing cases (udemy, aliexpress, lulu-com,
-lego-long-tail) and explicitly rejected 6 (wechat-private-domain,
-swiss-private-banking, mobile-telco-unbundling, patagonia, carvana,
+lego-long-tail) and explicitly rejected several adjacent cases
+(swiss-private-banking, mobile-telco-unbundling, patagonia, carvana,
 cainiao) — the rejections matter as much as the tags.
 
 ### When the pattern has structural sub-types

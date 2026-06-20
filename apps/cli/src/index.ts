@@ -49,6 +49,10 @@ import {
 } from './commands/caseAuthor.js';
 import { CaseRelayoutCommand } from './commands/caseRelayout.js';
 import { PatternGetCommand, PatternListCommand } from './commands/pattern.js';
+import {
+  StrategyFrameworkGetCommand,
+  StrategyFrameworkListCommand,
+} from './commands/strategyFramework.js';
 
 const [, , ...args] = process.argv;
 
@@ -117,6 +121,10 @@ cli.register(CaseRelayoutCommand);
 // Business-model patterns (read-only, peer of cases — no fork / no edit)
 cli.register(PatternListCommand);
 cli.register(PatternGetCommand);
+
+// Strategy frameworks (read-only analysis methods — no fork / no edit)
+cli.register(StrategyFrameworkListCommand);
+cli.register(StrategyFrameworkGetCommand);
 
 // Skill
 cli.register(SkillBuildCommand);

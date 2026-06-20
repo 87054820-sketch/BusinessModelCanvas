@@ -6,6 +6,7 @@ import type {
   Lang,
   PatternReference,
   PatternReferenceType,
+  StrategyFramework,
 } from '@pingarden/shared';
 import {
   firstParagraphs,
@@ -14,6 +15,7 @@ import {
   type CanvasBundle,
   type ExperimentBundle,
   type PatternBundle,
+  type StrategyFrameworkBundle,
 } from './bundle.js';
 
 /**
@@ -40,6 +42,8 @@ export interface SkillMdInput {
    *  symmetrically to patterns: index entry, workflow link, and
    *  reference page only emit when the list is non-empty. */
   experimentSlugs: string[];
+  /** Strategy framework slugs (sorted) shipped with this skill build. */
+  strategyFrameworkSlugs: string[];
 }
 
 export function renderSkillMd({
@@ -47,6 +51,7 @@ export function renderSkillMd({
   canvasIds,
   patternSlugs,
   experimentSlugs,
+  strategyFrameworkSlugs,
 }: SkillMdInput): string {
   const canvasList = canvasIds.map((id) => `- \`canvases/${id}.en.md\` / \`canvases/${id}.zh.md\``).join('\n');
   const patternsBlock =
@@ -63,6 +68,13 @@ ${patternSlugs.map((s) => `- \`patterns/${s}.en.md\` / \`patterns/${s}.zh.md\``)
 ### Experiment library (Testing Business Ideas — one per experiment, both languages)
 ${experimentSlugs.map((s) => `- \`experiments/${s}.en.md\` / \`experiments/${s}.zh.md\``).join('\n')}`
       : '';
+  const strategyFrameworksBlock =
+    strategyFrameworkSlugs.length > 0
+      ? `
+
+### Strategy frameworks (one per framework, both languages)
+${strategyFrameworkSlugs.map((s) => `- \`strategy-frameworks/${s}.en.md\` / \`strategy-frameworks/${s}.zh.md\``).join('\n')}`
+      : '';
   const patternsWorkflow =
     patternSlugs.length > 0
       ? `\n- \`workflows/patterns.md\` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern\n- \`workflows/authoring-patterns.md\` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)`
@@ -70,6 +82,10 @@ ${experimentSlugs.map((s) => `- \`experiments/${s}.en.md\` / \`experiments/${s}.
   const experimentsWorkflow =
     experimentSlugs.length > 0
       ? `\n- \`workflows/experiments.md\` — when the user has a riskiest assumption to test: classify it as Desirability / Feasibility / Viability and recommend 2–3 experiments from the library matched on theme + risk + cost`
+      : '';
+  const strategyFrameworksWorkflow =
+    strategyFrameworkSlugs.length > 0
+      ? `\n- \`workflows/strategy-frameworks.md\` — when the user asks for strategic analysis methods such as Blue Ocean Strategy or wants cases by framework`
       : '';
   const patternsReference =
     patternSlugs.length > 0
@@ -79,9 +95,13 @@ ${experimentSlugs.map((s) => `- \`experiments/${s}.en.md\` / \`experiments/${s}.
     experimentSlugs.length > 0
       ? `\n- \`reference/experiments.md\` — experiment slug index with theme / risk / cost / strength columns, plus the matching heuristic for a given riskiest assumption`
       : '';
+  const strategyFrameworksReference =
+    strategyFrameworkSlugs.length > 0
+      ? `\n- \`reference/strategy-frameworks.md\` — strategy framework slug index and case ↔ framework cross-link rules`
+      : '';
   return `---
 name: pingarden
-description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Tencent, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any \`pingarden\` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run \`pingarden doctor\` first** to confirm the CLI is on PATH and the PinGarden app is running; if \`pingarden\` returns "command not found", fall back to \`node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js\` and prompt the user to follow INSTALL.md §三 to symlink it.
+description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any \`pingarden\` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run \`pingarden doctor\` first** to confirm the CLI is on PATH and the PinGarden app is running; if \`pingarden\` returns "command not found", fall back to \`node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js\` and prompt the user to follow INSTALL.md §三 to symlink it.
 version: ${version}
 ---
 
@@ -97,7 +117,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
    - **CLI on PATH.** If you get \`command not found\`, fall back to \`node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js <args>\` AND tell the user to symlink it permanently per INSTALL.md §三 (\`sudo ln -s /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js /usr/local/bin/pingarden\`). Don't silently keep typing the long path forever.
    - **PinGarden app/server.** Doctor reports the discovered port and a \`/health\` ping. If the server is down, tell the user to launch the PinGarden app — never try to write to \`apps/server/data/\` directly or parse Yjs binary as a workaround.
 2. If both are green, **list what already exists** before suggesting fresh authoring:
-   - \`pingarden case list --json\` — 23 curated company cases (Spotify, Uber, Airbnb, Tencent Games · Heima, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
+   - \`pingarden case list --json\` — 22 curated company cases (Spotify, Uber, Airbnb, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
    - \`pingarden pattern list --json\` — 5 BMG patterns (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open Business Models). Patterns surface "which canvases / cases apply this".
 3. Only after the environment is confirmed and the existing library is scanned should you start producing canvases / stickies / stories.
 
@@ -106,14 +126,14 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 1. **Always read \`reference/cli-cheatsheet.md\` first** — it lists the exact commands and JSON envelope shape you'll consume.
 2. **Before writing to a canvas**, read its description with \`pingarden canvas describe <id> --json\` (existing canvas) or \`pingarden canvas describe-template <defId> --json\` (new canvas). NEVER hardcode \`zoneId\`s — they come from the live def.
 3. **For each canvas the user works on**, consult \`canvases/<id>.<lang>.md\` for filling rules, fill order, examples, and anti-patterns.
-4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library already has 23 curated companies and 5 BMG patterns cross-linked both ways.
+4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library already has 22 curated companies and 5 BMG patterns cross-linked both ways.
 5. **For "how do I test this assumption" / "what experiment should I run"** — go to \`workflows/experiments.md\` and the \`experiments/\` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
 6. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
 
 ## Index
 
 ### Canvases (one per template, both languages)
-${canvasList}${patternsBlock}${experimentsBlock}
+${canvasList}${patternsBlock}${experimentsBlock}${strategyFrameworksBlock}
 
 ### Workflows
 - \`workflows/discover.md\` — first call into a fresh session
@@ -123,14 +143,14 @@ ${canvasList}${patternsBlock}${experimentsBlock}
 - \`workflows/story.md\` — write a project narrative with embedded canvases
 - \`workflows/snapshot.md\` — when to milestone, how to restore
 - \`workflows/translate.md\` — en ⇄ zh round trip
-- \`workflows/case-library.md\` — read curated company cases for inspiration, or fork one to start fast${patternsWorkflow}${experimentsWorkflow}
+- \`workflows/case-library.md\` — read curated company cases for inspiration, or fork one to start fast${patternsWorkflow}${experimentsWorkflow}${strategyFrameworksWorkflow}
 
 ### Reference
 - \`reference/cli-cheatsheet.md\` — top commands with JSON output examples
 - \`reference/color-legend.md\` — sticky palette + how to interpret colours
 - \`reference/identity.md\` — \`X-Display-Name\` / \`--as\` / audit trail
 - \`reference/ai-context-shape.md\` — shape of the \`/ai-context\` JSON
-- \`reference/case-library.md\` — case kinds, slug rules, read-only rules${patternsReference}${experimentsReference}
+- \`reference/case-library.md\` — case kinds, slug rules, read-only rules${patternsReference}${experimentsReference}${strategyFrameworksReference}
 
 ## Key invariants — never violate
 
@@ -377,21 +397,42 @@ When the link is tight (e.g. one VPC per BMC Customer Segment), prefix the canva
 Stories are markdown documents at the project level, optionally embedding canvases. Use stories to:
 
 - Explain WHY a canvas is the way it is.
-- Capture decisions, dates, and people.
-- Tie multiple canvases into a coherent narrative.
+- Teach a newcomer the market context, strategic move, and operating logic.
+- Tie multiple canvases into a coherent narrative with explanatory bridges.
+
+## Quality bar for case-library stories
+
+A case-library story is not a caption. It must include:
+
+1. Context and tension — what market, customer problem, or competitive trap existed before the move.
+2. Strategic move — what the company changed, including trade-offs.
+3. Canvas reading guide — introduce each embedded canvas and tell readers what to notice.
+4. Mechanism — why the model works economically and operationally.
+5. Risks and limits — what could break or what the case does not prove.
+6. Transfer lesson — how to apply the insight elsewhere.
+
+For Blue Ocean Strategy cases, also explain the red-ocean baseline, noncustomers, ERRC logic, value-curve shape, and BMC consequences. Keep the Strategy Canvas clean: factors, curve classes, and score points only; put rationale and conclusions in the Story, not in long chart stickies.
 
 \`\`\`markdown
 # Coffee Co — March narrative
 
-We targeted urban specialty coffee drinkers and decided on weekly subscription delivery.
+## Context and tension
+
+Specialty coffee delivery looked crowded because every player promised freshness, origin stories, and café-grade quality. The unresolved job was different: busy office workers wanted reliable weekday coffee without learning barista vocabulary.
+
+## The strategic move
+
+We reduced choice complexity and origin theatre, raised subscription reliability, and created a team-level replenishment ritual.
+
+## Read the BMC first
 
 ::canvas[business-model-canvas]{canvasId="<bmc-uuid>"}
 
-The unit economics still need stress testing.
+The important link is not the subscription sticky by itself; it is how recurring revenue funds predictable roasting batches and lower failed-delivery cost.
 
-::canvas[value-proposition-canvas]{canvasId="<vpc-uuid>"}
+## What to test next
 
-Next: validate the wholesale-cafés segment with a 4-week pilot.
+The riskiest assumption is office-manager willingness to own coffee replenishment. Validate it before scaling paid acquisition.
 \`\`\`
 
 \`\`\`bash
@@ -634,7 +675,7 @@ ls packages/case-library/cases/
 
 For each case that applies, edit \`case.json\` and append the new pattern's slug to \`appliesPatterns[]\`. Be biased toward fewer tags — only tag when the new pattern is clearly a primary or secondary description of the case, not a faint adjacency.
 
-The 2026-06-15 MSP rollout is the worked example: 4 of 10 existing cases were tagged (\`udemy\`, \`aliexpress\`, \`lulu-com\`, \`lego-long-tail\`) and 6 were explicitly rejected (\`wechat-private-domain\`, \`swiss-private-banking\`, \`mobile-telco-unbundling\`, \`patagonia\`, \`carvana\`, \`cainiao\`). The rejections matter as much as the tags.
+The 2026-06-15 MSP rollout is the worked example: 4 existing cases were tagged (\`udemy\`, \`aliexpress\`, \`lulu-com\`, \`lego-long-tail\`) and several adjacent cases were explicitly rejected (\`swiss-private-banking\`, \`mobile-telco-unbundling\`, \`patagonia\`, \`carvana\`, \`cainiao\`). The rejections matter as much as the tags.
 
 ### 5. Manifest entry
 
@@ -726,6 +767,27 @@ Return 2-3 candidate experiments with **trade-offs**, not a single "right" answe
 - Don't claim weak-evidence tests (Customer Interview) "validated" anything; they Discover, not Validate.
 - Don't invent experiments that aren't in the library. If genuinely none fit, recommend the closest two and flag the gap to the user.
 - Don't fill the Experiment Canvas in the app yet — first agree on the experiment, then \`pingarden canvas write\` to populate the canvas's 6 zones.
+`,
+
+  'workflows/strategy-frameworks.md': `# Strategy frameworks — analysis methods, separate from patterns
+
+A **strategy framework** (for example Blue Ocean Strategy) is an analysis method, not a case and not a business-model pattern. Frameworks live at \`packages/case-library/strategy-frameworks/<slug>/\`, are listed in \`manifest.json.strategyFrameworks\`, and are served by \`/library/strategy-frameworks(/:slug)\`.
+
+## When to use
+
+Use this workflow when the user asks for a strategic analysis method, wants examples of Blue Ocean Strategy / Business Model Environment Scan, or asks which cases demonstrate a framework.
+
+1. \`pingarden strategy-framework list --json\` to see available methods.
+2. \`pingarden strategy-framework get <slug> --json\` to read the framework description and hydrated example cases.
+3. For a concrete company, read the case with \`pingarden case read <case-slug> --json\` and inspect \`appliesStrategyFrameworks[]\`.
+4. For Blue Ocean Strategy specifically, pair the framework page with \`canvases/blue-ocean-strategy-canvas.<lang>.md\` before writing any value curve.
+5. For Business Model Environment Scan specifically, pair the framework page with \`canvases/business-model-environment.<lang>.md\` and a concrete BMC; every environment signal must point back to one or more BMC blocks.
+
+## Cross-link rules
+
+- Framework → case: \`StrategyFramework.examples[]\` lists curated case slugs.
+- Case → framework: \`CaseLibraryEntry.appliesStrategyFrameworks[]\` lists methods demonstrated by the case.
+- Do not tag a case just because it is innovative. Tag it only when the framework is a clear teaching lens.
 `,
 };
 
@@ -891,7 +953,7 @@ The case library is a **read-only** federated corpus that ships with the app. Ea
 
 The \`kind\` field in \`case.json\` is one of:
 
-- **\`company\`** — a single real company analysed across multiple canvases (BMC + VPC + …). The default and most common kind. Example: \`wechat-private-domain\`.
+- **\`company\`** — a single real company analysed across multiple canvases (BMC + VPC + …). The default and most common kind. Example: \`airbnb\`.
 - **\`industry\`** — an industry archetype + N concrete-company variants on the same canvas type. Use the \`variant\` field on each \`CanvasMeta\` (\`{ id, label, role: 'archetype' | 'variant' }\`) to label each one. Example use case: Strategyzer's "Unbundling" — one archetype BMC + Maerki Baumann (unbundled) + Pictet (integrated).
 - **\`comparison\`** — multiple subjects placed side-by-side (Tesla vs BYD on the same BMC type).
 
@@ -904,7 +966,7 @@ The \`kind\` chip colour in the web LibraryPage is keyed off this field — \`co
 - Kebab-case (lowercase letters, digits, dashes). Validated by \`pingarden case author\` and \`case validate\`.
 - Globally unique within the library — \`pingarden case validate\` fails packaging if two cases share a slug.
 - Same-named companies disambiguated by suffix: \`apple-inc\` / \`apple-records\`.
-- Same-company multi-source analyses: ONE slug, sticky \`createdBy\` field carries source labels ("HBR 2023" / "Tencent 财报"). One canvas per analytic frame, never one canvas per source.
+- Same-company multi-source analyses: ONE slug, sticky \`createdBy\` field carries source labels ("HBR 2023" / "annual report 2024"). One canvas per analytic frame, never one canvas per source.
 
 ## Read-only enforcement layers
 
@@ -919,6 +981,16 @@ This means even if a future route forgets to consider the library, the storage l
 ## Authoring (offline)
 
 \`pingarden case author --from <spec.json> --out packages/case-library/cases/<slug>/\` produces the full directory layout. The Yjs encoder used is the same \`encodeObjectsBulk\` from \`@pingarden/shared/yjs\` that the server uses for \`POST /objects/bulk\`, so authored cases round-trip through the runtime byte-identically.
+
+## Localization quality
+
+For bilingual cases, \`language: "zh"\` must mean the visible canvas and story content is actually Chinese — not just Chinese titles or metadata. After authoring or batch-importing a bilingual case, always inspect the real content with \`pingarden case read <slug> --lang zh --json\` and confirm the Chinese BMC / VPC / Strategy Canvas stickies are localized. \`pingarden case validate\` also performs a content-level heuristic check and will flag Chinese canvases or stories that still look like English text.
+
+## Story quality
+
+Every published case story must stand on its own for a newcomer. Required sections: context and tension, strategic move, canvas reading guide, operating/economic mechanism, risks and limits, and transfer lesson. Do not place embedded canvases back-to-back without explanation.
+
+For Blue Ocean Strategy cases, the story must explain the red-ocean baseline, noncustomers, ERRC logic, value-curve shape, and BMC consequences. Keep the Strategy Canvas visually clean: use factors, curve classes, and score points only; write rationale in the Story instead of long sticky notes on the chart.
 
 \`pingarden case validate\` runs as a packaging gate (\`scripts/package-mac.sh\`); a broken case fails the DMG build before electron-builder kicks in.
 `,
@@ -994,7 +1066,7 @@ Skill generator emits a grouped \`## References\` block (Books → Papers → Ar
 
   'reference/experiments.md': `# Reference: experiment library
 
-Curated test recipes from **Bland & Osterwalder · Testing Business Ideas · Wiley · 2019**. Each experiment ships at \`experiments/<slug>.{en,zh}.md\` with structured metadata at \`experiment.json\` (see \`Experiment\` interface in \`@pingarden/shared\`). Skill-only surface for V1 — no HTTP routes, no LibraryPage tab, no \`pingarden experiment\` CLI subcommand. The library is consumed by AI agents through the markdown files.
+Curated test recipes from **Bland & Osterwalder · Testing Business Ideas · Wiley · 2019**. Each experiment ships at \`experiments/<slug>.{en,zh}.md\` with structured metadata at \`experiment.json\` (see \`Experiment\` interface in \`@pingarden/shared\`). The runtime app exposes experiments through the Library page and HTTP routes; the generated skill consumes the same bundles through markdown files.
 
 ## Cross-link to canvases
 
@@ -1025,6 +1097,33 @@ Each \`experiment.json\` carries:
 - ❌ Experiments are not patterns. Patterns describe HOW a business makes money; experiments describe HOW you test a hypothesis. Different content type, different surface.
 - ❌ Experiments are not cases. Cases are concrete companies; experiments are reusable recipes that any case might run.
 - ❌ The library is not exhaustive. V1 ships ~12 of the 44 in TBI; the agent should recommend "closest 2-3 from the library + flag the gap" if no perfect fit exists, rather than invent.
+`,
+
+  'reference/strategy-frameworks.md': `# Reference: strategy frameworks
+
+Strategy frameworks are reusable analysis methods, not cases and not business-model patterns. They live at \`packages/case-library/strategy-frameworks/<slug>/\` with \`framework.json\`, bilingual descriptions, and AI-facing skill pages.
+
+## CLI
+
+\`\`\`bash
+pingarden strategy-framework list --json
+pingarden strategy-framework get blue-ocean-strategy --json
+pingarden strategy-framework get business-model-portfolio-management --json
+\`\`\`
+
+## Cross-link rules
+
+- Framework → case: \`StrategyFramework.examples[]\` points to manifested case slugs.
+- Case → framework: \`CaseLibraryEntry.appliesStrategyFrameworks[]\` points back to manifested framework slugs.
+- \`pingarden case validate\` enforces both directions.
+
+## Blue Ocean Strategy note
+
+Blue Ocean Strategy should be treated as a strategic analysis framework: Strategy Canvas, ERRC, noncustomers, and market-boundary reconstruction. Do not file it under business-model patterns.
+
+## Business Model Portfolio Management note
+
+Business Model Portfolio Management should be treated as a portfolio-level strategic management framework. It uses \`portfolio-map\` to manage Explore and Exploit portfolios, then expands important pins into BMCs or Experiment Canvases. Do not file it under business-model patterns, and do not tag a case merely because the company is innovative.
 `,
 };
 
@@ -1087,6 +1186,64 @@ ${subtypesSection}
 ${examplesSection}
 
 To explore an example case's BMC, follow with \`pingarden case get <slug>\` → \`pingarden case canvases <slug>\` → \`pingarden canvas describe <canvas-id> --json\`.
+
+${referencesSection}
+`;
+}
+
+// ─── Per-strategy-framework .{en,zh}.md ───────────────────────────────────────
+
+export interface StrategyFrameworkMdInput {
+  bundle: StrategyFrameworkBundle;
+  lang: Lang;
+}
+
+export function renderStrategyFrameworkMd({
+  bundle,
+  lang,
+}: StrategyFrameworkMdInput): string {
+  const { framework } = bundle;
+  const name = framework.name[lang] ?? framework.name.en;
+  const summary = framework.summary[lang] ?? framework.summary.en;
+  const skill = bundle.skill[lang];
+  const description = bundle.description[lang];
+  const body = skill && skill.trim().length > 0
+    ? skill
+    : description && description.trim().length > 0
+      ? firstParagraphs(description, 3)
+      : '_(No description authored for this language yet.)_';
+  const examplesSection = framework.examples.length > 0
+    ? framework.examples
+        .map((ex) => `- \`${ex.slug}\`${ex.role ? ` (${ex.role})` : ''}`)
+        .join('\n')
+    : '_(No examples curated yet.)_';
+  const canvasSection = (framework.relatedCanvasDefIds ?? []).length > 0
+    ? (framework.relatedCanvasDefIds ?? []).map((id) => `- \`${id}\``).join('\n')
+    : '_(No related canvases declared yet.)_';
+  const referencesSection = renderPatternReferencesSection(
+    framework as unknown as BusinessModelPattern,
+    lang,
+  );
+
+  return `# ${name}
+
+> ${summary}
+
+## Slug
+
+\`${framework.slug}\` — referenced by \`CaseLibraryEntry.appliesStrategyFrameworks[]\` on cases that demonstrate this analysis method.
+
+${body.trim()}
+
+## Related canvases
+
+${canvasSection}
+
+## Example cases shipped in this skill
+
+${examplesSection}
+
+To explore an example case, follow with \`pingarden case read <slug> --json\`. To inspect the method itself, use \`pingarden strategy-framework get ${framework.slug} --json\`.
 
 ${referencesSection}
 `;

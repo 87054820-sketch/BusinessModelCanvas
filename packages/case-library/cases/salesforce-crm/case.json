@@ -1,0 +1,35 @@
+{
+  "slug": "salesforce-crm",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Salesforce CRM",
+    "zh": "Salesforce CRM"
+  },
+  "summary": {
+    "en": "Salesforce reframed CRM from installed enterprise software into browser-based SaaS, reducing implementation burden and creating subscription access for teams that could not tolerate heavy on-premise projects.",
+    "zh": "Salesforce 把 CRM 从本地部署企业软件重构为浏览器上的 SaaS，降低实施负担，让无法承受重型本地项目的团队也能使用。"
+  },
+  "tags": [
+    "saas",
+    "crm",
+    "enterprise-software",
+    "blue-ocean",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "Salesforce company history"
+    },
+    {
+      "label": "SaaS business model analyses"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "781107fc-9a57-4b72-ad96-9c4f60830aaf",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
+  ]
+}

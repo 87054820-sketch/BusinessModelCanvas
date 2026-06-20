@@ -319,16 +319,19 @@
       "industry": "行业",
       "pattern": "模式",
       "comparison": "对比",
-      "experiment": "实验"
+      "experiment": "实验",
+      "strategyFramework": "战略方法"
     },
     "tabs": {
-      "cases": "案例",
-      "patterns": "模式",
-      "experiments": "实验库",
+      "cases": "企业案例",
+      "patterns": "商业模式",
+      "experiments": "实验设计",
+      "strategyFrameworks": "战略分析",
       "description": "详细说明",
       "relatedCases": "相关案例"
     },
     "appliesPatterns": "适用模式",
+    "appliesStrategyFrameworks": "战略分析方法",
     "examplesSection": "示例",
     "exampleCount_other": "{{count}} 个示例",
     "sourceCount_other": "{{count}} 处出处",
@@ -336,8 +339,18 @@
     "hideDescription": "收起说明",
     "patternsEmpty": "本版本暂未附带商业模式分类。",
     "experimentsEmpty": "本版本暂未附带实验。",
+    "strategyFrameworksEmpty": "本版本暂未附带战略分析方法。",
     "descriptionEmpty": "本模式暂未撰写说明。",
     "examplesEmpty": "本模式暂未关联示例案例。",
+    "strategyFrameworks": {
+      "intro": {
+        "title": "用战略方法看懂案例背后的市场重构",
+        "body": "战略分析方法不是单个商业模式，而是一套**分析框架**。先从这里理解方法，再打开关联案例，看企业如何通过价值曲线、竞争因素、非顾客和取舍动作重构市场。第一套方法是 **Blue Ocean Strategy / 蓝海战略**。"
+      }
+    },
+    "strategyFramework": {
+      "descriptionEmpty": "本战略方法暂未撰写说明。"
+    },
     "experiments": {
       "intro": {
         "title": "在动手做之前先测一下最致命的假设",

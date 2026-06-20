@@ -169,6 +169,8 @@ const CaseAuthorInput = z.object({
   thumbnailDefId: z.string().optional(),
   // case → pattern forward link (slug points to packages/case-library/patterns/<slug>/)
   appliesPatterns: z.array(z.string().min(1)).optional(),
+  // case → strategy framework forward link (slug points to packages/case-library/strategy-frameworks/<slug>/)
+  appliesStrategyFrameworks: z.array(z.string().min(1)).optional(),
   // Optional sub-type refinement per pattern. Each value must match a
   // `subtypes[].id` on the referenced pattern. `case validate` enforces
   // both directions; this command just passes the field through.
@@ -374,6 +376,9 @@ export async function caseAuthorHandler(
     canvasCount: input.canvases.length,
     storyCount: input.stories.length,
     ...(input.appliesPatterns ? { appliesPatterns: input.appliesPatterns } : {}),
+    ...(input.appliesStrategyFrameworks
+      ? { appliesStrategyFrameworks: input.appliesStrategyFrameworks }
+      : {}),
     ...(input.appliesPatternSubtypes
       ? { appliesPatternSubtypes: input.appliesPatternSubtypes }
       : {}),
@@ -526,8 +531,75 @@ const CaseJsonSchema = z.object({
   canvasCount: z.number().int().nonnegative().optional(),
   storyCount: z.number().int().nonnegative().optional(),
   appliesPatterns: z.array(z.string().min(1)).optional(),
+  appliesStrategyFrameworks: z.array(z.string().min(1)).optional(),
   appliesPatternSubtypes: z.record(z.string(), z.string().min(1)).optional(),
 });
+
+const LOCALIZED_CONTENT_DEF_IDS = new Set([
+  'business-model-canvas',
+  'value-proposition-canvas',
+  'blue-ocean-strategy-canvas',
+]);
+
+function textStats(text: string): { cjk: number; latinWords: number; total: number } {
+  const compact = text.replace(/\s+/g, '');
+  return {
+    cjk: compact.match(/[\u4e00-\u9fff]/g)?.length ?? 0,
+    latinWords: text.match(/[A-Za-z][A-Za-z-]{3,}/g)?.length ?? 0,
+    total: compact.length,
+  };
+}
+
+function validateZhTextContent(
+  slug: string,
+  label: string,
+  text: string,
+  path: string,
+  issues: CaseValidateIssue[],
+) {
+  const trimmed = text.trim();
+  if (!trimmed) return;
+  const stats = textStats(trimmed);
+  const cjkRatio = stats.total === 0 ? 0 : stats.cjk / stats.total;
+  if (stats.cjk < 4 && stats.latinWords >= 6) {
+    issues.push({
+      slug,
+      level: 'error',
+      message: `${label}: language='zh' but content appears untranslated (${stats.latinWords} English words, ${stats.cjk} Chinese chars)`,
+      path,
+    });
+  } else if (stats.latinWords >= 12 && cjkRatio < 0.12) {
+    issues.push({
+      slug,
+      level: 'warn',
+      message: `${label}: language='zh' has low Chinese text ratio; inspect for mixed English content`,
+      path,
+    });
+  }
+}
+
+function validateZhCanvasContent(
+  slug: string,
+  cid: string,
+  defId: string | undefined,
+  doc: Y.Doc,
+  ydocPath: string,
+  issues: CaseValidateIssue[],
+) {
+  if (!defId || !LOCALIZED_CONTENT_DEF_IDS.has(defId)) return;
+  const texts: string[] = [];
+  doc.getMap<Y.Map<unknown>>('stickies').forEach((value) => {
+    const text = value.get('text');
+    if (typeof text === 'string') texts.push(text);
+  });
+  validateZhTextContent(
+    slug,
+    `canvas ${cid} (${defId})`,
+    texts.join(' '),
+    ydocPath,
+    issues,
+  );
+}
 
 export async function caseValidateHandler(args: {
   caseLibraryDir: string;
@@ -548,14 +620,17 @@ export async function caseValidateHandler(args: {
   const manifestPath = join(root, '..', 'manifest.json');
   let manifestSlugs: string[] = [];
   let manifestPatternSlugs: string[] = [];
+  let manifestStrategyFrameworkSlugs: string[] = [];
   if (existsSync(manifestPath)) {
     try {
       const manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as {
         cases?: Array<{ slug: string }>;
         patterns?: Array<{ slug: string }>;
+        strategyFrameworks?: Array<{ slug: string }>;
       };
       manifestSlugs = (manifest.cases ?? []).map((c) => c.slug);
       manifestPatternSlugs = (manifest.patterns ?? []).map((p) => p.slug);
+      manifestStrategyFrameworkSlugs = (manifest.strategyFrameworks ?? []).map((f) => f.slug);
       const seen = new Set<string>();
       for (const s of manifestSlugs) {
         if (seen.has(s)) {
@@ -579,6 +654,18 @@ export async function caseValidateHandler(args: {
           });
         }
         seenPattern.add(s);
+      }
+      const seenFramework = new Set<string>();
+      for (const s of manifestStrategyFrameworkSlugs) {
+        if (seenFramework.has(s)) {
+          issues.push({
+            slug: s,
+            level: 'error',
+            message: `Duplicate strategy framework slug '${s}' in manifest.json`,
+            path: manifestPath,
+          });
+        }
+        seenFramework.add(s);
       }
     } catch (err) {
       issues.push({
@@ -611,6 +698,15 @@ export async function caseValidateHandler(args: {
     ? readdirSync(patternsRoot).filter((entry) => {
         const full = join(patternsRoot, entry);
         return statSync(full).isDirectory() && existsSync(join(full, 'pattern.json'));
+      })
+    : [];
+
+  // Strategy frameworks live as another sibling directory to cases.
+  const strategyFrameworksRoot = join(root, '..', 'strategy-frameworks');
+  const strategyFrameworksOnDisk = existsSync(strategyFrameworksRoot)
+    ? readdirSync(strategyFrameworksRoot).filter((entry) => {
+        const full = join(strategyFrameworksRoot, entry);
+        return statSync(full).isDirectory() && existsSync(join(full, 'framework.json'));
       })
     : [];
 
@@ -655,11 +751,35 @@ export async function caseValidateHandler(args: {
     }
   }
 
+  // Same orphan / dangling check for strategy frameworks.
+  for (const s of manifestStrategyFrameworkSlugs) {
+    if (!strategyFrameworksOnDisk.includes(s)) {
+      issues.push({
+        slug: s,
+        level: 'error',
+        message: `Manifest references strategy framework '${s}' but no framework.json found at strategy-frameworks/${s}/`,
+      });
+    }
+  }
+  for (const s of strategyFrameworksOnDisk) {
+    if (manifestStrategyFrameworkSlugs.length > 0 && !manifestStrategyFrameworkSlugs.includes(s)) {
+      issues.push({
+        slug: s,
+        level: 'warn',
+        message: `Strategy framework directory '${s}' is not listed in manifest.json (will not be loaded by server)`,
+      });
+    }
+  }
+
   // Validate each pattern bundle's structural shape + cross-references back
   // to cases. Failure to resolve an example slug is a hard error: a dangling
   // example breaks the UI's "examples strip" silently otherwise.
   for (const slug of patternsOnDisk) {
     validateOnePattern(patternsRoot, slug, manifestSlugs, issues);
+  }
+
+  for (const slug of strategyFrameworksOnDisk) {
+    validateOneStrategyFramework(strategyFrameworksRoot, slug, manifestSlugs, issues);
   }
 
   // Build a slug → subtype-id-set index from each pattern.json so the
@@ -674,6 +794,7 @@ export async function caseValidateHandler(args: {
     // resolve to a manifested pattern. Catches the "I forgot to author
     // the pattern entry" footgun the unbundling slug-rename was prompted by.
     validateAppliesPatterns(root, slug, manifestPatternSlugs, patternSubtypeIndex, issues);
+    validateAppliesStrategyFrameworks(root, slug, manifestStrategyFrameworkSlugs, issues);
   }
 
   const errorCount = issues.filter((i) => i.level === 'error').length;
@@ -768,11 +889,15 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
     const cdir = join(canvasesDir, cid);
     const metaPath = join(cdir, 'meta.json');
     const ydocPath = join(cdir, 'live.ydoc');
+    let canvasMeta: { defId?: string; language?: string } | undefined;
     if (!existsSync(metaPath)) {
       issues.push({ slug, level: 'error', message: `canvas ${cid}: meta.json missing`, path: metaPath });
     } else {
       try {
-        JSON.parse(readFileSync(metaPath, 'utf8'));
+        canvasMeta = JSON.parse(readFileSync(metaPath, 'utf8')) as {
+          defId?: string;
+          language?: string;
+        };
       } catch (err) {
         issues.push({
           slug,
@@ -791,6 +916,9 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
         const doc = new Y.Doc();
         try {
           Y.applyUpdate(doc, new Uint8Array(buf));
+          if (canvasMeta?.language === 'zh') {
+            validateZhCanvasContent(slug, cid, canvasMeta.defId, doc, ydocPath, issues);
+          }
         } finally {
           doc.destroy();
         }
@@ -821,11 +949,12 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
     const sdir = join(storiesDir, sid);
     const metaPath = join(sdir, 'meta.json');
     const contentPath = join(sdir, 'content.md');
+    let storyMeta: { language?: string } | undefined;
     if (!existsSync(metaPath)) {
       issues.push({ slug, level: 'error', message: `story ${sid}: meta.json missing`, path: metaPath });
     } else {
       try {
-        JSON.parse(readFileSync(metaPath, 'utf8'));
+        storyMeta = JSON.parse(readFileSync(metaPath, 'utf8')) as { language?: string };
       } catch (err) {
         issues.push({
           slug,
@@ -837,14 +966,19 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
     }
     if (!existsSync(contentPath)) {
       issues.push({ slug, level: 'error', message: `story ${sid}: content.md missing`, path: contentPath });
+    } else if (storyMeta?.language === 'zh') {
+      validateZhTextContent(
+        slug,
+        `story ${sid}`,
+        readFileSync(contentPath, 'utf8'),
+        contentPath,
+        issues,
+      );
     }
   }
 
-  // Bilingual coverage — every case must have canvases in both `en`
-  // and `zh`. Today this is a `warn` (because some legacy cases like
-  // wechat-private-domain are still single-language); once those are
-  // translated it gets promoted to `error` so the packaging gate
-  // refuses to ship a single-language case.
+  // Bilingual coverage — every shipped case must have canvases in both
+  // `en` and `zh`. Missing either language is a packaging error.
   const canvasLangs = new Set<string>();
   for (const cid of canvasIds) {
     const metaPath = join(canvasesDir, cid, 'meta.json');
@@ -860,7 +994,7 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
     const present = [...canvasLangs].sort().join(', ') || '(none)';
     issues.push({
       slug,
-      level: 'warn',
+      level: 'error',
       message: `bilingual coverage: case has canvases only in language(s) [${present}]; PinGarden case-library convention requires both 'en' and 'zh'`,
     });
   }
@@ -1028,6 +1162,66 @@ function validateOnePattern(
  * degrades to "no subtype" in the chip render — catching it at validate
  * time keeps that drift impossible.
  */
+function validateOneStrategyFramework(
+  frameworksRoot: string,
+  slug: string,
+  manifestCaseSlugs: string[],
+  issues: CaseValidateIssue[],
+) {
+  const dir = join(frameworksRoot, slug);
+  const frameworkJsonPath = join(dir, 'framework.json');
+  if (!existsSync(frameworkJsonPath)) {
+    issues.push({ slug, level: 'error', message: `Strategy framework missing framework.json`, path: frameworkJsonPath });
+    return;
+  }
+  let framework: {
+    slug?: string;
+    name?: { en?: string; zh?: string };
+    summary?: { en?: string; zh?: string };
+    examples?: Array<{ slug?: string }>;
+  };
+  try {
+    framework = JSON.parse(readFileSync(frameworkJsonPath, 'utf8'));
+  } catch (err) {
+    issues.push({ slug, level: 'error', message: `framework.json parse failed: ${(err as Error).message}`, path: frameworkJsonPath });
+    return;
+  }
+  if (framework.slug && framework.slug !== slug) {
+    issues.push({ slug, level: 'error', message: `framework.json slug='${framework.slug}' does not match directory name '${slug}'` });
+  }
+  if (!framework.name?.en || !framework.name?.zh) {
+    issues.push({ slug, level: 'error', message: `framework.json must carry bilingual name (en + zh)` });
+  }
+  if (!framework.summary?.en || !framework.summary?.zh) {
+    issues.push({ slug, level: 'error', message: `framework.json must carry bilingual summary (en + zh)` });
+  }
+  for (const lang of ['en', 'zh'] as const) {
+    if (!existsSync(join(dir, `description.${lang}.md`))) {
+      issues.push({ slug, level: 'error', message: `Missing description.${lang}.md (bilingual descriptions are required)` });
+    }
+    if (!existsSync(join(dir, `skill.${lang}.md`))) {
+      issues.push({
+        slug,
+        level: 'warn',
+        message: `Missing skill.${lang}.md — skill generator will fall back to description.${lang}.md`,
+      });
+    }
+  }
+  for (const ex of framework.examples ?? []) {
+    if (!ex.slug) {
+      issues.push({ slug, level: 'error', message: `examples[] entry missing slug` });
+      continue;
+    }
+    if (manifestCaseSlugs.length > 0 && !manifestCaseSlugs.includes(ex.slug)) {
+      issues.push({
+        slug,
+        level: 'error',
+        message: `examples references unknown case '${ex.slug}' — add it to manifest.json or remove the reference`,
+      });
+    }
+  }
+}
+
 function validateAppliesPatterns(
   root: string,
   slug: string,
@@ -1080,6 +1274,35 @@ function validateAppliesPatterns(
         slug,
         level: 'error',
         message: `appliesPatternSubtypes refines pattern '${patternSlug}' but that pattern declares no subtypes[] — drop the refinement, or author the subtype on the pattern`,
+        path: caseJsonPath,
+      });
+    }
+  }
+}
+
+function validateAppliesStrategyFrameworks(
+  root: string,
+  slug: string,
+  manifestStrategyFrameworkSlugs: string[],
+  issues: CaseValidateIssue[],
+) {
+  const caseJsonPath = join(root, slug, 'case.json');
+  if (!existsSync(caseJsonPath)) return;
+  let parsed: { appliesStrategyFrameworks?: string[] };
+  try {
+    parsed = JSON.parse(readFileSync(caseJsonPath, 'utf8'));
+  } catch {
+    return;
+  }
+  for (const ref of parsed.appliesStrategyFrameworks ?? []) {
+    if (
+      manifestStrategyFrameworkSlugs.length > 0 &&
+      !manifestStrategyFrameworkSlugs.includes(ref)
+    ) {
+      issues.push({
+        slug,
+        level: 'error',
+        message: `appliesStrategyFrameworks references unknown strategy framework '${ref}' — author the framework at strategy-frameworks/${ref}/ or remove the reference`,
         path: caseJsonPath,
       });
     }
@@ -1229,7 +1452,7 @@ export class CaseValidateCommand extends BaseCommand {
     `,
     examples: [
       ['Validate everything', '$0 case validate'],
-      ['Validate one case',  '$0 case validate wechat-private-domain'],
+      ['Validate one case',  '$0 case validate swiss-private-banking'],
     ],
   });
 

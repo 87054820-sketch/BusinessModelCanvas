@@ -43,5 +43,9 @@
   "storyCount": 2,
   "appliesPatterns": [
     "multi-sided-platforms"
+  ],
+  "appliesStrategyFrameworks": [
+    "business-model-environment-scan",
+    "business-model-portfolio-management"
   ]
 }

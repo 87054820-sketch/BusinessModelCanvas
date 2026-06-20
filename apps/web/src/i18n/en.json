@@ -323,16 +323,19 @@
       "industry": "Industry",
       "pattern": "Pattern",
       "comparison": "Comparison",
-      "experiment": "Experiment"
+      "experiment": "Experiment",
+      "strategyFramework": "Strategy method"
     },
     "tabs": {
-      "cases": "Cases",
-      "patterns": "Patterns",
-      "experiments": "Experiments",
+      "cases": "Company Cases",
+      "patterns": "Business Models",
+      "experiments": "Experiment Design",
+      "strategyFrameworks": "Strategy Analysis",
       "description": "Description",
       "relatedCases": "Related cases"
     },
     "appliesPatterns": "Applies patterns",
+    "appliesStrategyFrameworks": "Strategy methods",
     "examplesSection": "Examples",
     "exampleCount_one": "{{count}} example",
     "exampleCount_other": "{{count}} examples",
@@ -342,8 +345,18 @@
     "hideDescription": "Hide description",
     "patternsEmpty": "No patterns shipped in this version yet.",
     "experimentsEmpty": "No experiments shipped in this version yet.",
+    "strategyFrameworksEmpty": "No strategy frameworks shipped in this version yet.",
     "descriptionEmpty": "No description authored for this pattern yet.",
     "examplesEmpty": "No example cases curated for this pattern yet.",
+    "strategyFrameworks": {
+      "intro": {
+        "title": "Use strategy methods to read the market logic behind cases",
+        "body": "Strategy methods are **analysis frameworks**, not single business models. Start here to understand the method, then open linked cases to see how companies reconstruct markets through value curves, factors of competition, noncustomers, and strategic trade-offs. The first method is **Blue Ocean Strategy**."
+      }
+    },
+    "strategyFramework": {
+      "descriptionEmpty": "No description authored for this strategy method yet."
+    },
     "experiments": {
       "intro": {
         "title": "Test risky assumptions before you build",

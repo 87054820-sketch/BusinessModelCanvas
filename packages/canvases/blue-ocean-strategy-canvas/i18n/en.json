@@ -3,7 +3,7 @@
   "blocks": {
     "chart-area": {
       "title": "Chart area",
-      "prompt": "Stickies dropped here float around the value-curve chart — use them for notes, ERRC bullets, takeaways."
+      "prompt": "Chart area is for value-curve factors, curve classes, and score points only; put ERRC rationale, notes, and conclusions in the Story."
     }
   }
 }

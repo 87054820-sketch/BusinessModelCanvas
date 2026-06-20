@@ -7,6 +7,7 @@ import type {
   CaseLibraryEntry,
   Experiment,
   Lang,
+  StrategyFramework,
 } from '@pingarden/shared';
 import { libraryApi } from '../api/library';
 import { useIdentity } from '../identity/useIdentity';
@@ -16,9 +17,11 @@ import { PatternList } from '../components/PatternList';
 import { PatternDetailModal } from '../components/PatternDetailModal';
 import { ExperimentList } from '../components/ExperimentList';
 import { ExperimentDetailModal } from '../components/ExperimentDetailModal';
+import { StrategyFrameworkList } from '../components/StrategyFrameworkList';
+import { StrategyFrameworkDetailModal } from '../components/StrategyFrameworkDetailModal';
 import { Pagination } from '../components/Pagination';
 
-type LibraryTab = 'cases' | 'patterns' | 'experiments';
+type LibraryTab = 'cases' | 'patterns' | 'experiments' | 'strategyFrameworks';
 
 /**
  * Items per page on both the Cases and Patterns tabs. Picked to match
@@ -35,11 +38,10 @@ const PAGE_SIZE = 9;
  * read-only content (`source: 'library'`); the user's own projects
  * live on `/projects` after the 2026-06 split.
  *
- * The page is split into two tabs (default: Cases) per 2026-06-15
- * decision:
- *   - **Cases** — concrete projects (companies + industries +
+ * The page is split into three tabs (default: Cases):
+ *   - **Company cases** — concrete projects (companies + industries +
  *     comparisons) rendered as a 3-column grid of `CaseCard`.
- *   - **Patterns** — abstract reusable business-model patterns (Long
+ *   - **Business models** — abstract reusable business-model patterns (Long
  *     Tail, Unbundling, …) as a 3-column grid of compact pattern cards.
  *     Patterns are NOT projects: no fork, no canvas. Click a card to
  *     open `PatternDetailModal` — a large tabbed modal with the
@@ -62,9 +64,11 @@ export function LibraryPage() {
   const [cases, setCases] = useState<CaseLibraryEntry[] | null>(null);
   const [patterns, setPatterns] = useState<BusinessModelPattern[] | null>(null);
   const [experiments, setExperiments] = useState<Experiment[] | null>(null);
+  const [strategyFrameworks, setStrategyFrameworks] = useState<StrategyFramework[] | null>(null);
   const [previewEntry, setPreviewEntry] = useState<CaseLibraryEntry | null>(null);
   const [selectedPattern, setSelectedPattern] = useState<BusinessModelPattern | null>(null);
   const [selectedExperiment, setSelectedExperiment] = useState<Experiment | null>(null);
+  const [selectedStrategyFramework, setSelectedStrategyFramework] = useState<StrategyFramework | null>(null);
   const [tab, setTab] = useState<LibraryTab>('cases');
   // Per-tab page state. Reset to 1 when the underlying list reloads or
   // the user switches tab — so coming back to a tab always lands you
@@ -72,6 +76,7 @@ export function LibraryPage() {
   const [casesPage, setCasesPage] = useState(1);
   const [patternsPage, setPatternsPage] = useState(1);
   const [experimentsPage, setExperimentsPage] = useState(1);
+  const [strategyFrameworksPage, setStrategyFrameworksPage] = useState(1);
   // Anchor for "scroll the list region into view" on page change.
   // Sits above the tab strip so the user sees the new page's first row
   // without scrolling up after clicking Next.
@@ -79,13 +84,15 @@ export function LibraryPage() {
 
   useEffect(() => {
     if (!identity) return;
-    void libraryApi.list(identity.displayName).then(setCases);
+    void libraryApi.list(identity.displayName).then(setCases).catch(() => setCases([]));
     // Patterns are public — no displayName required. Fetched once on
     // mount alongside cases so the Cases tab can render pattern chips
     // immediately (lookup needs the patterns list).
-    void libraryApi.listPatterns().then(setPatterns);
+    void libraryApi.listPatterns().then(setPatterns).catch(() => setPatterns([]));
     // Experiments — same shape as patterns: public, fetched once.
-    void libraryApi.listExperiments().then(setExperiments);
+    void libraryApi.listExperiments().then(setExperiments).catch(() => setExperiments([]));
+    // Strategy frameworks — public, fetched once for case chips and the tab.
+    void libraryApi.listStrategyFrameworks().then(setStrategyFrameworks).catch(() => setStrategyFrameworks([]));
   }, [identity]);
 
   // Reset pagers whenever the underlying list reloads (defensive: if
@@ -100,6 +107,9 @@ export function LibraryPage() {
   useEffect(() => {
     setExperimentsPage(1);
   }, [experiments]);
+  useEffect(() => {
+    setStrategyFrameworksPage(1);
+  }, [strategyFrameworks]);
 
   // Smooth-scroll to the list anchor on page change so the user
   // doesn't have to scroll up by hand.
@@ -119,6 +129,10 @@ export function LibraryPage() {
     setExperimentsPage(p);
     requestAnimationFrame(scrollToList);
   }
+  function handleStrategyFrameworksPageChange(p: number) {
+    setStrategyFrameworksPage(p);
+    requestAnimationFrame(scrollToList);
+  }
   // Tab switch: reset pagers + park at the list region. Avoids the
   // surprise of clicking from Cases (page 2) to Patterns (which had
   // its own page 2 from earlier in the session).
@@ -128,6 +142,7 @@ export function LibraryPage() {
     setCasesPage(1);
     setPatternsPage(1);
     setExperimentsPage(1);
+    setStrategyFrameworksPage(1);
   }
 
   if (!identity) return null;
@@ -176,6 +191,24 @@ export function LibraryPage() {
     const entry = cases?.find((c) => c.slug === slug);
     if (!entry) return;
     setSelectedExperiment(null);
+    handleTabChange('cases');
+    setPreviewEntry(entry);
+  }
+
+  /** Cases tab → Strategy Analysis tab: open the matching framework. */
+  function handleStrategyFrameworkChipClick(slug: string) {
+    const f = strategyFrameworks?.find((x) => x.slug === slug);
+    if (!f) return;
+    setPreviewEntry(null);
+    handleTabChange('strategyFrameworks');
+    setSelectedStrategyFramework(f);
+  }
+
+  /** Strategy Analysis tab → Cases tab: open the case preview. */
+  function handleStrategyFrameworkExampleClick(slug: string) {
+    const entry = cases?.find((c) => c.slug === slug);
+    if (!entry) return;
+    setSelectedStrategyFramework(null);
     handleTabChange('cases');
     setPreviewEntry(entry);
   }
@@ -229,6 +262,12 @@ export function LibraryPage() {
           label={t('library.tabs.experiments')}
           count={experiments?.length}
         />
+        <TabButton
+          active={tab === 'strategyFrameworks'}
+          onClick={() => handleTabChange('strategyFrameworks')}
+          label={t('library.tabs.strategyFrameworks')}
+          count={strategyFrameworks?.length}
+        />
       </div>
 
       {tab === 'cases' && (
@@ -252,6 +291,8 @@ export function LibraryPage() {
                       onClick={(entry) => setPreviewEntry(entry)}
                       patterns={patterns ?? undefined}
                       onPatternClick={handlePatternChipClick}
+                      strategyFrameworks={strategyFrameworks ?? undefined}
+                      onStrategyFrameworkClick={handleStrategyFrameworkChipClick}
                     />
                   ))}
               </div>
@@ -320,6 +361,33 @@ export function LibraryPage() {
         </section>
       )}
 
+      {tab === 'strategyFrameworks' && (
+        <section role="tabpanel">
+          <StrategyFrameworksTabIntro />
+          {strategyFrameworks === null ? (
+            <p className="text-sm text-gray-400">{t('home.loading')}…</p>
+          ) : (
+            <>
+              <StrategyFrameworkList
+                frameworks={strategyFrameworks.slice(
+                  (strategyFrameworksPage - 1) * PAGE_SIZE,
+                  strategyFrameworksPage * PAGE_SIZE,
+                )}
+                lang={lang}
+                onSelect={setSelectedStrategyFramework}
+              />
+              <Pagination
+                total={strategyFrameworks.length}
+                pageSize={PAGE_SIZE}
+                currentPage={strategyFrameworksPage}
+                onPageChange={handleStrategyFrameworksPageChange}
+                className="mt-5"
+              />
+            </>
+          )}
+        </section>
+      )}
+
       {/* Case preview modal */}
       <CasePreviewModal
         entry={previewEntry}
@@ -329,6 +397,8 @@ export function LibraryPage() {
         onFork={handleFork}
         patterns={patterns ?? undefined}
         onPatternClick={handlePatternChipClick}
+        strategyFrameworks={strategyFrameworks ?? undefined}
+        onStrategyFrameworkClick={handleStrategyFrameworkChipClick}
       />
 
       {/* Pattern detail modal — large, tabbed (description / examples) */}
@@ -345,6 +415,14 @@ export function LibraryPage() {
         lang={lang}
         onClose={() => setSelectedExperiment(null)}
         onOpenCase={handleExperimentExampleCaseClick}
+      />
+
+      {/* Strategy framework detail modal — large, tabbed */}
+      <StrategyFrameworkDetailModal
+        framework={selectedStrategyFramework}
+        lang={lang}
+        onClose={() => setSelectedStrategyFramework(null)}
+        onExampleClick={handleStrategyFrameworkExampleClick}
       />
     </main>
   );
@@ -406,6 +484,23 @@ function ExperimentsTabIntro() {
                    [&_strong]:font-semibold [&_strong]:text-gray-900"
       >
         <ReactMarkdown>{t('library.experiments.intro.body')}</ReactMarkdown>
+      </div>
+    </div>
+  );
+}
+
+function StrategyFrameworksTabIntro() {
+  const { t } = useTranslation();
+  return (
+    <div className="mb-5 rounded-xl border border-indigo-100 bg-indigo-50/50 p-4">
+      <h2 className="text-sm font-semibold text-gray-900">
+        {t('library.strategyFrameworks.intro.title')}
+      </h2>
+      <div
+        className="mt-1.5 text-[12px] leading-relaxed text-gray-600
+                   [&_strong]:font-semibold [&_strong]:text-gray-900"
+      >
+        <ReactMarkdown>{t('library.strategyFrameworks.intro.body')}</ReactMarkdown>
       </div>
     </div>
   );

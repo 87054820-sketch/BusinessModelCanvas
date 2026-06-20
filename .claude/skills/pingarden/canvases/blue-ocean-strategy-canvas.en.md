@@ -59,7 +59,7 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 ### `chart-area` — Chart area
 
-**Prompt** — Stickies dropped here float around the value-curve chart — use them for notes, ERRC bullets, takeaways.
+**Prompt** — Chart area is for value-curve factors, curve classes, and score points only; put ERRC rationale, notes, and conclusions in the Story.
 
 ## Colour legend
 

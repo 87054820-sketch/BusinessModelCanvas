@@ -36,13 +36,20 @@
     {
       "label": "Iwata Asks · interviews on the Wii development",
       "url": "https://iwataasks.nintendo.com/"
+    },
+    {
+      "label": "Blue Ocean Strategy · 7 Powerful Blue Ocean Strategy Examples",
+      "url": "https://www.blueoceanstrategy.com/blog/7-powerful-blue-ocean-strategy-examples/"
     }
   ],
   "thumbnailDefId": "business-model-canvas",
   "projectId": "05ed256b-92a0-433c-9e28-4ffac6efc35d",
-  "canvasCount": 4,
-  "storyCount": 2,
+  "canvasCount": 6,
+  "storyCount": 4,
   "appliesPatterns": [
     "multi-sided-platforms"
+  ],
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
   ]
 }

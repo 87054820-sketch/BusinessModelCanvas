@@ -1,0 +1,111 @@
+{
+  "slug": "bosch-accelerator",
+  "kind": "company",
+  "companyName": {
+    "en": "Bosch Accelerator — explore portfolio journey",
+    "zh": "博世加速器 —— 探索组合旅程"
+  },
+  "summary": {
+    "en": "Bosch Accelerator illustrates the Explore side of portfolio management: many early teams enter the funnel, most are retired through evidence, and a few persevere or transfer toward exploitation when risk drops enough.",
+    "zh": "博世加速器展示了组合管理的 Explore 探索侧：大量早期团队进入漏斗，多数根据证据被终止，少数在风险下降后继续坚持或转入开发。"
+  },
+  "tags": ["industrial", "accelerator", "portfolio", "explore", "Germany"],
+  "sources": [
+    { "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley · 2020 · Bosch Accelerator example" },
+    { "label": "Bosch public innovation and accelerator materials" }
+  ],
+  "thumbnailDefId": "portfolio-map",
+  "appliesStrategyFrameworks": ["business-model-portfolio-management"],
+  "project": {
+    "name": "Bosch Accelerator — explore portfolio journey",
+    "description": "Explore portfolio funnel inspired by The Invincible Company."
+  },
+  "canvases": [
+    {
+      "key": "portfolio-en",
+      "defId": "portfolio-map",
+      "title": "Bosch Accelerator explore portfolio journey",
+      "language": "en",
+      "pinClasses": [
+        { "id": "ideate", "label": "Ideate", "color": "#94A3B8", "icon": "circle" },
+        { "id": "persevere", "label": "Persevere", "color": "#10B981", "icon": "triangle" },
+        { "id": "retire", "label": "Retire", "color": "#EF4444", "icon": "flag" },
+        { "id": "transfer", "label": "Transfer", "color": "#F59E0B", "icon": "star" }
+      ],
+      "pins": [
+        { "classId": "ideate", "x": 575, "y": 720, "label": "200 early teams", "body": "Many ideas enter with high innovation risk and little evidence." },
+        { "classId": "retire", "x": 520, "y": 760, "label": "Retired majority", "body": "Most ideas should be killed cheaply when evidence is weak." },
+        { "classId": "persevere", "x": 440, "y": 615, "label": "60 teams remain", "body": "Teams continue when evidence supports the next hypothesis." },
+        { "classId": "persevere", "x": 340, "y": 545, "label": "15 scaling teams", "body": "Risk falls as desirability, feasibility, viability, and adaptability evidence grows." },
+        { "classId": "transfer", "x": 715, "y": 360, "label": "Transfer to business", "body": "De-risked projects need a home in the exploit portfolio." }
+      ]
+    },
+    {
+      "key": "bmc-en",
+      "defId": "business-model-canvas",
+      "title": "Bosch Accelerator operating model",
+      "language": "en",
+      "stickies": [
+        { "zoneId": "customer-segments", "text": "Internal venture teams, business units, future industrial customers" },
+        { "zoneId": "value-propositions", "text": "A disciplined exploration funnel that learns cheaply" },
+        { "zoneId": "channels", "text": "Accelerator cohorts, internal sponsors, business-unit transfer paths" },
+        { "zoneId": "customer-relationships", "text": "Coaching, evidence reviews, sponsor alignment" },
+        { "zoneId": "revenue-streams", "text": "Future transferred businesses and strategic options" },
+        { "zoneId": "key-resources", "text": "Teams, mentors, experiment budget, industrial expertise" },
+        { "zoneId": "key-activities", "text": "Ideate, test, retire, persevere, transfer" },
+        { "zoneId": "key-partners", "text": "Business units, customers, technical experts, venture coaches" },
+        { "zoneId": "cost-structure", "text": "Small experiment budgets, coaching time, team allocation" }
+      ]
+    },
+    {
+      "key": "portfolio-zh",
+      "defId": "portfolio-map",
+      "title": "博世加速器探索组合旅程",
+      "language": "zh",
+      "pinClasses": [
+        { "id": "ideate", "label": "构想", "color": "#94A3B8", "icon": "circle" },
+        { "id": "persevere", "label": "坚持", "color": "#10B981", "icon": "triangle" },
+        { "id": "retire", "label": "终止", "color": "#EF4444", "icon": "flag" },
+        { "id": "transfer", "label": "转入", "color": "#F59E0B", "icon": "star" }
+      ],
+      "pins": [
+        { "classId": "ideate", "x": 575, "y": 720, "label": "200 个早期团队", "body": "大量想法以高创新风险和低证据状态进入。" },
+        { "classId": "retire", "x": 520, "y": 760, "label": "多数被终止", "body": "当证据不足时，应以低成本快速杀掉多数想法。" },
+        { "classId": "persevere", "x": 440, "y": 615, "label": "60 个团队留下", "body": "当证据支持下一条关键假设时，团队继续测试。" },
+        { "classId": "persevere", "x": 340, "y": 545, "label": "15 个规模化团队", "body": "当可取性、可行性、可盈利性和适应性证据增强时，风险下降。" },
+        { "classId": "transfer", "x": 715, "y": 360, "label": "转入业务", "body": "已降风险的项目需要在开发组合中找到承接位置。" }
+      ]
+    },
+    {
+      "key": "bmc-zh",
+      "defId": "business-model-canvas",
+      "title": "博世加速器运营模式",
+      "language": "zh",
+      "stickies": [
+        { "zoneId": "customer-segments", "text": "内部创业团队、业务单元、未来工业客户" },
+        { "zoneId": "value-propositions", "text": "用纪律化探索漏斗低成本学习" },
+        { "zoneId": "channels", "text": "加速器批次、内部赞助人、业务单元转入路径" },
+        { "zoneId": "customer-relationships", "text": "教练辅导、证据评审、赞助人对齐" },
+        { "zoneId": "revenue-streams", "text": "未来转入业务和战略选项价值" },
+        { "zoneId": "key-resources", "text": "团队、导师、实验预算、工业专业知识" },
+        { "zoneId": "key-activities", "text": "构想、测试、终止、坚持、转入" },
+        { "zoneId": "key-partners", "text": "业务单元、客户、技术专家、创业教练" },
+        { "zoneId": "cost-structure", "text": "小额实验预算、辅导时间、团队投入" }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "title": "Bosch Accelerator explore portfolio journey",
+      "language": "en",
+      "status": "published",
+      "contentMd": "# Bosch Accelerator explore portfolio journey\n\nBosch is useful for reading the Explore side of the Portfolio Map. Exploration is not a single big bet; it is a managed funnel where many ideas enter, evidence reduces uncertainty, and only a few ideas deserve transfer into the existing business portfolio.\n\n## Portfolio reading\n\nThe map deliberately shows many teams starting in high-risk territory. The portfolio becomes healthier when weak ideas are retired early, promising teams persevere with stronger experiments, and a few de-risked models transfer toward exploitation.\n\n## Transfer lesson\n\nExplore portfolio management should make failure cheap and learning visible. The goal is not to keep every idea alive, but to produce a few credible future growth engines without betting the company too early."
+    },
+    {
+      "title": "博世加速器探索组合旅程",
+      "language": "zh",
+      "status": "published",
+      "contentMd": "# 博世加速器探索组合旅程\n\n博世适合用来阅读 Portfolio Map 的 Explore 探索侧。探索不是一次大型下注，而是一个被管理的漏斗：大量想法进入，证据逐步降低不确定性，只有少数想法值得转入现有业务组合。\n\n## 组合阅读\n\n组合图刻意展示许多团队从高风险区域出发。当弱想法被尽早终止，有潜力的团队用更强实验继续坚持，少数已降风险模型转向开发侧时，组合会更健康。\n\n## 转移经验\n\n探索组合管理应该让失败变便宜，让学习变可见。目标不是让每个想法都活着，而是在不过早押上公司的前提下，产出少数可信的未来增长引擎。"
+    }
+  ]
+}

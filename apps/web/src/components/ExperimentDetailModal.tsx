@@ -35,10 +35,9 @@ let canvasDefsCache = new Map<string, CanvasDefSummary>();
 
 /**
  * Detail modal for a single curated experiment from the Testing
- * Business Ideas library. Single-pane layout — experiments have no
- * examples surface (they are abstract methods, not bound to concrete
- * cases), so a tab strip would just add noise. Header + metadata
- * banner stay fixed; only the body scrolls.
+ * Business Ideas library. Single-pane layout with long-form method
+ * notes, canvas affinities, real-world examples, and sources. Header +
+ * metadata banner stay fixed; only the body scrolls.
  *
  * Detail (description markdown) is fetched lazily on first open per
  * experiment and cached for the modal lifetime via React state.

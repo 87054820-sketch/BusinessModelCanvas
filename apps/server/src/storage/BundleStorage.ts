@@ -14,6 +14,8 @@ import type {
   SnapshotMeta,
   Story,
   StoryMeta,
+  StrategyFramework,
+  StrategyFrameworkDetail,
 } from '@pingarden/shared';
 import type { CanvasStorage } from './CanvasStorage.js';
 import { BundleReadOnlyError } from './errors.js';
@@ -36,6 +38,8 @@ interface CaseLibraryManifest {
   patterns?: Array<{ slug: string; featured?: boolean }>;
   /** Optional through v2 manifests; required in v3+. */
   experiments?: Array<{ slug: string; featured?: boolean }>;
+  /** Optional through v3 manifests; required in v4+. */
+  strategyFrameworks?: Array<{ slug: string; featured?: boolean }>;
 }
 
 /**
@@ -68,6 +72,15 @@ interface BundlePatternRecord {
   index: number;
   featured: boolean;
   pattern: BusinessModelPattern;
+}
+
+/** Resolved index entry for one strategy framework. */
+interface BundleStrategyFrameworkRecord {
+  slug: string;
+  frameworkDir: string;
+  index: number;
+  featured: boolean;
+  framework: StrategyFramework;
 }
 
 /**
@@ -120,6 +133,8 @@ export class BundleStorage implements CanvasStorage {
   private readonly patternsBySlug = new Map<string, BundlePatternRecord>();
   /** experiment slug → record (used by the /library/experiments routes). */
   private readonly experimentsBySlug = new Map<string, BundleExperimentRecord>();
+  /** strategy framework slug → record (used by /library/strategy-frameworks routes). */
+  private readonly strategyFrameworksBySlug = new Map<string, BundleStrategyFrameworkRecord>();
 
   private constructor(public readonly bundleDir: string) {}
 
@@ -143,6 +158,7 @@ export class BundleStorage implements CanvasStorage {
     this.bySlug.clear();
     this.patternsBySlug.clear();
     this.experimentsBySlug.clear();
+    this.strategyFrameworksBySlug.clear();
     await this.scan();
   }
 
@@ -199,6 +215,33 @@ export class BundleStorage implements CanvasStorage {
 
   hasPattern(slug: string): boolean {
     return this.patternsBySlug.has(slug);
+  }
+
+  // ─── strategy framework accessors (used by /library/strategy-frameworks routes) ────
+
+  listStrategyFrameworks(): StrategyFramework[] {
+    return [...this.strategyFrameworksBySlug.values()]
+      .sort((a, b) => a.index - b.index)
+      .map((rec) => rec.framework);
+  }
+
+  async getStrategyFramework(slug: string): Promise<StrategyFrameworkDetail | null> {
+    const rec = this.strategyFrameworksBySlug.get(slug);
+    if (!rec) return null;
+    const description = {
+      en: await readDescriptionMd(rec.frameworkDir, 'en'),
+      zh: await readDescriptionMd(rec.frameworkDir, 'zh'),
+    };
+    const exampleCases: CaseLibraryEntry[] = [];
+    for (const ref of rec.framework.examples) {
+      const c = this.bySlug.get(ref.slug)?.caseJson;
+      if (c) exampleCases.push(c);
+    }
+    return { framework: rec.framework, description, exampleCases };
+  }
+
+  hasStrategyFramework(slug: string): boolean {
+    return this.strategyFrameworksBySlug.has(slug);
   }
 
   // ─── experiment accessors (used by /library/experiments routes) ────
@@ -436,6 +479,31 @@ export class BundleStorage implements CanvasStorage {
         // Same robustness story as cases / patterns.
       }
     }
+
+    // Strategy frameworks are optional through v3 manifests; absent → empty list.
+    const frameworkEntries = Array.isArray(manifest.strategyFrameworks)
+      ? manifest.strategyFrameworks
+      : [];
+    for (let i = 0; i < frameworkEntries.length; i++) {
+      const entry = frameworkEntries[i]!;
+      try {
+        const record = await this.loadStrategyFramework(entry.slug, i, !!entry.featured);
+        this.strategyFrameworksBySlug.set(record.slug, record);
+      } catch {
+        // Same robustness story as cases / patterns / experiments.
+      }
+    }
+  }
+
+  private async loadStrategyFramework(
+    slug: string,
+    orderIndex: number,
+    featured: boolean,
+  ): Promise<BundleStrategyFrameworkRecord> {
+    const frameworkDir = join(this.bundleDir, 'strategy-frameworks', slug);
+    const frameworkJsonRaw = await fs.readFile(join(frameworkDir, 'framework.json'), 'utf8');
+    const framework = JSON.parse(frameworkJsonRaw) as StrategyFramework;
+    return { slug: framework.slug, frameworkDir, index: orderIndex, featured, framework };
   }
 
   private async loadExperiment(

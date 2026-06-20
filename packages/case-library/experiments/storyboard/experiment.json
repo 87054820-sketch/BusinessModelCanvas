@@ -31,5 +31,68 @@
       "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Storyboard"
     }
   ],
-  "examples": []
+  "examples": [
+    {
+      "company": {
+        "en": "Airbnb",
+        "zh": "Airbnb"
+      },
+      "year": "2011",
+      "headline": {
+        "en": "Draw the end-to-end experience before scaling it.",
+        "zh": "先画完整体验，再放大它。"
+      },
+      "story": {
+        "en": "Airbnb famously storyboarded host and guest journeys to make the end-to-end service experience visible. By drawing scenes such as discovery, booking, arrival, stay, and post-trip moments, the team could discuss where the experience broke down and what needed to be designed before scaling the marketplace further.",
+        "zh": "Airbnb 曾用故事板把房东和房客的端到端旅程可视化。团队把发现、预订、到达、入住、离开后等场景画出来，从而讨论体验在哪里断裂，以及在继续放大平台前哪些环节需要被设计清楚。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Storyboard, pp. 186-189; public Airbnb design accounts on storyboarding the host and guest journey"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile scenario assumption.</em></p><p>e.g. <strong>[Target users]</strong> recognize the trigger, sequence, and payoff of <strong>[new experience]</strong> as a believable way to make progress.</p>",
+          "zh": "<p><em>替换成一条最脆弱的场景假设。</em></p><p>例如：<strong>[目标用户]</strong> 能识别 <strong>[新体验]</strong> 的触发、过程和收益，并认为它是可信的进展方式。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [target users] will understand and prefer the proposed scenario for [job].</p><p><strong>To verify, we will</strong> show 3 low-fidelity storyboard alternatives to 8 users within 1 week.</p><p><strong>And measure</strong> recognition, emotional resonance, missing steps, preferred version, and objections.</p><p><strong>We are right if</strong> ≥ 6/8 recognize the situation and ≥ 5 choose the same scenario as most compelling.</p>",
+          "zh": "<p><strong>我们相信</strong> [目标用户] 能理解并偏好 [任务] 的拟议场景。</p><p><strong>为了验证，我们将</strong> 在 1 周内向 8 位用户展示 3 个低保真故事板方案。</p><p><strong>并测量</strong> 场景识别、情绪共鸣、缺失步骤、偏好版本和异议。</p><p><strong>如果</strong> ≥ 6/8 识别该情境，且 ≥ 5 人选择同一个最有吸引力方案 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Sketch:</strong> create 3 alternatives, each with 6-8 panels: trigger, current struggle, first interaction, key decision, value delivery, outcome, and after-state. Keep visuals rough; make context and sequence clear.</p><p><strong>Recruit:</strong> 8 people who recently experienced [scenario]. Run 30-minute critique sessions, remote or in person.</p><p><strong>Run:</strong> show one storyboard at a time. Ask users to narrate what is happening, mark confusing panels, choose the most believable scenario, and describe what would stop them. Record quotes and panel-level annotations.</p>",
+          "zh": "<p><strong>绘制：</strong>做 3 个方案，每个 6-8 格：触发、当前困境、首次互动、关键决策、价值交付、结果和后状态。视觉保持粗糙，但上下文和顺序必须清楚。</p><p><strong>招募：</strong>8 位最近经历过 [场景] 的人。远程或线下跑 30 分钟评审。</p><p><strong>执行：</strong>一次展示一个故事板。让用户讲述发生了什么、标记困惑画面、选择最可信方案，并说明什么会阻止他们。记录原话和每格批注。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 6/8 correctly narrate the intended situation; ≥ 5 prefer the same storyboard; no critical step is marked confusing by more than 2 users.</p><p><strong>Fail:</strong> users cannot follow the sequence, reject the premise, or disagree on the moment of value.</p><p><strong>Inconclusive:</strong> premise resonates but sequence is confusing; redraw panels and retest 5 users.</p>",
+          "zh": "<p><strong>通过：</strong>≥ 6/8 正确复述预期情境；≥ 5 人偏好同一个故事板；没有关键步骤被超过 2 人标记为困惑。</p><p><strong>失败：</strong>用户跟不上顺序、拒绝前提，或对价值出现的关键时刻没有共识。</p><p><strong>不清晰：</strong>前提有共鸣但顺序困惑；重画画面后再测 5 位。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Users tested: __ ; Correct narration: __ /8; Winning storyboard: __ ; Preference count: __ /8.</p><p>Most confusing panel: __ . Missing step: __ . Verdict: validated / invalidated / inconclusive.</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>测试用户：__；正确复述：__ /8；胜出故事板：__；偏好人数：__ /8。</p><p>最困惑画面：__。缺失步骤：__。结论：已验证 / 已证伪 / 不清晰。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → turn the winning storyboard into a Clickable Prototype, Explainer Video, or Smoke Test.<br/>• <strong>Pivot</strong> → redraw the trigger, sequence, or customer segment and rerun.<br/>• <strong>Kill</strong> → if users do not recognize the job, return to Customer Interviews.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 把胜出故事板转成 Clickable Prototype、Explainer Video 或 Smoke Test。<br/>• <strong>Pivot</strong> → 重画触发、顺序或客群，再跑一次。<br/>• <strong>Kill</strong> → 如果用户不识别这个 Job，回到客户访谈。</p>"
+        }
+      }
+    ]
+  }
 }

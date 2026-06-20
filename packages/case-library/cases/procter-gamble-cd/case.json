@@ -45,5 +45,8 @@
   ],
   "appliesPatternSubtypes": {
     "open-business-models": "outside-in"
-  }
+  },
+  "appliesStrategyFrameworks": [
+    "business-model-portfolio-management"
+  ]
 }

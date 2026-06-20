@@ -99,7 +99,7 @@ AI 会自动选一种方式帮你装好(通常是 `npm install -g @pingarden/cli
 
 > "我做的事情和 **<Spotify / Uber / Nespresso / 哪家公司>** 比较像,fork 一份它的画布过来,**把客户细分和收入流改成我的:<我和它的差别>**,其它先保留原版做对照。"
 
-要点:案例库里有 23 家公司的真实画布(Uber / Airbnb / Spotify / 腾讯游戏黑马私域 / Nespresso …),fork 出来都是**你的私有副本**,可以随便改。
+要点:案例库里有 22 家公司的真实画布(Uber / Airbnb / Spotify / Nespresso …),fork 出来都是**你的私有副本**,可以随便改。
 
 ### 3. 让 AI 判断"我这是什么商业模式"
 

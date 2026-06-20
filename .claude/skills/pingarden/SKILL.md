@@ -1,7 +1,7 @@
 ---
 name: pingarden
-description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Tencent, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js` and prompt the user to follow INSTALL.md §三 to symlink it.
-version: 0.4.1-133f98f7
+description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js` and prompt the user to follow INSTALL.md §三 to symlink it.
+version: 0.4.1-2d59da67
 ---
 
 # PinGarden — official skill
@@ -16,7 +16,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
    - **CLI on PATH.** If you get `command not found`, fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js <args>` AND tell the user to symlink it permanently per INSTALL.md §三 (`sudo ln -s /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js /usr/local/bin/pingarden`). Don't silently keep typing the long path forever.
    - **PinGarden app/server.** Doctor reports the discovered port and a `/health` ping. If the server is down, tell the user to launch the PinGarden app — never try to write to `apps/server/data/` directly or parse Yjs binary as a workaround.
 2. If both are green, **list what already exists** before suggesting fresh authoring:
-   - `pingarden case list --json` — 23 curated company cases (Spotify, Uber, Airbnb, Tencent Games · Heima, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
+   - `pingarden case list --json` — 22 curated company cases (Spotify, Uber, Airbnb, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
    - `pingarden pattern list --json` — 5 BMG patterns (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open Business Models). Patterns surface "which canvases / cases apply this".
 3. Only after the environment is confirmed and the existing library is scanned should you start producing canvases / stickies / stories.
 
@@ -25,7 +25,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 1. **Always read `reference/cli-cheatsheet.md` first** — it lists the exact commands and JSON envelope shape you'll consume.
 2. **Before writing to a canvas**, read its description with `pingarden canvas describe <id> --json` (existing canvas) or `pingarden canvas describe-template <defId> --json` (new canvas). NEVER hardcode `zoneId`s — they come from the live def.
 3. **For each canvas the user works on**, consult `canvases/<id>.<lang>.md` for filling rules, fill order, examples, and anti-patterns.
-4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library already has 23 curated companies and 5 BMG patterns cross-linked both ways.
+4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library already has 22 curated companies and 5 BMG patterns cross-linked both ways.
 5. **For "how do I test this assumption" / "what experiment should I run"** — go to `workflows/experiments.md` and the `experiments/` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
 6. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
 
@@ -65,6 +65,11 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `experiments/storyboard.en.md` / `experiments/storyboard.zh.md`
 - `experiments/wizard-of-oz.en.md` / `experiments/wizard-of-oz.zh.md`
 
+### Strategy frameworks (one per framework, both languages)
+- `strategy-frameworks/blue-ocean-strategy.en.md` / `strategy-frameworks/blue-ocean-strategy.zh.md`
+- `strategy-frameworks/business-model-environment-scan.en.md` / `strategy-frameworks/business-model-environment-scan.zh.md`
+- `strategy-frameworks/business-model-portfolio-management.en.md` / `strategy-frameworks/business-model-portfolio-management.zh.md`
+
 ### Workflows
 - `workflows/discover.md` — first call into a fresh session
 - `workflows/greenfield.md` — chat → app, brand new canvas
@@ -77,6 +82,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `workflows/patterns.md` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern
 - `workflows/authoring-patterns.md` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)
 - `workflows/experiments.md` — when the user has a riskiest assumption to test: classify it as Desirability / Feasibility / Viability and recommend 2–3 experiments from the library matched on theme + risk + cost
+- `workflows/strategy-frameworks.md` — when the user asks for strategic analysis methods such as Blue Ocean Strategy or wants cases by framework
 
 ### Reference
 - `reference/cli-cheatsheet.md` — top commands with JSON output examples
@@ -86,6 +92,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `reference/case-library.md` — case kinds, slug rules, read-only rules
 - `reference/patterns.md` — pattern slug index, the `pingarden pattern <list|get>` commands, and the case ↔ pattern cross-link rules
 - `reference/experiments.md` — experiment slug index with theme / risk / cost / strength columns, plus the matching heuristic for a given riskiest assumption
+- `reference/strategy-frameworks.md` — strategy framework slug index and case ↔ framework cross-link rules
 
 ## Key invariants — never violate
 

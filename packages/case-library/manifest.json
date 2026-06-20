@@ -1,7 +1,6 @@
 {
   "version": 3,
   "cases": [
-    { "slug": "wechat-private-domain", "featured": true },
     { "slug": "swiss-private-banking", "featured": true },
     { "slug": "mobile-telco-unbundling", "featured": true },
     { "slug": "patagonia", "featured": true },
@@ -14,6 +13,25 @@
     { "slug": "google-multi-sided", "featured": true },
     { "slug": "visa", "featured": true },
     { "slug": "nintendo-wii", "featured": true },
+    { "slug": "cirque-du-soleil", "featured": true },
+    { "slug": "yellow-tail", "featured": true },
+    { "slug": "qb-house", "featured": true },
+    { "slug": "novo-nordisk-novopen", "featured": true },
+    { "slug": "bloomberg-terminal", "featured": true },
+    { "slug": "salesforce-crm", "featured": true },
+    { "slug": "citizenm-hotels", "featured": true },
+    { "slug": "nickel-bank", "featured": true },
+    { "slug": "marvel-studios", "featured": true },
+    { "slug": "stitch-fix", "featured": true },
+    { "slug": "healthmedia", "featured": true },
+    { "slug": "drybar", "featured": true },
+    { "slug": "tata-nano", "featured": true },
+    { "slug": "transsion-africa", "featured": true },
+    { "slug": "ping-an-good-doctor", "featured": true },
+    { "slug": "nvidia-cuda", "featured": true },
+    { "slug": "ping-an-group", "featured": true },
+    { "slug": "nestle-portfolio", "featured": true },
+    { "slug": "bosch-accelerator", "featured": true },
     { "slug": "spotify", "featured": true },
     { "slug": "gillette", "featured": true },
     { "slug": "procter-gamble-cd", "featured": true },
@@ -31,6 +49,11 @@
     { "slug": "multi-sided-platforms", "featured": true },
     { "slug": "free", "featured": true },
     { "slug": "open-business-models", "featured": true }
+  ],
+  "strategyFrameworks": [
+    { "slug": "blue-ocean-strategy", "featured": true },
+    { "slug": "business-model-environment-scan", "featured": true },
+    { "slug": "business-model-portfolio-management", "featured": true }
   ],
   "experiments": [
     { "slug": "customer-interview", "featured": true },

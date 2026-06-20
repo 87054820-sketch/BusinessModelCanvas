@@ -30,5 +30,88 @@
       "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-22 Letter of Intent"
     }
   ],
-  "examples": []
+  "examples": [
+    {
+      "company": {
+        "en": "Thrive Smart Systems",
+        "zh": "Thrive Smart Systems"
+      },
+      "year": "2010s",
+      "headline": {
+        "en": "From 'a ton' to a written number.",
+        "zh": "把「很多」变成写下来的数量。"
+      },
+      "story": {
+        "en": "Thrive Smart Systems was developing wireless irrigation technology. Landscapers often said they would buy “a ton” or “as many as you can give me,” but the founders needed stronger evidence before completing product development, so they asked interested customers to put intended purchases into writing.",
+        "zh": "Thrive Smart Systems 正在开发无线灌溉技术。园林承包商常说会买「很多」或「你有多少我买多少」，但创始人在完成产品开发前需要更强证据，于是要求有兴趣的客户把购买意向写下来。"
+      },
+      "hypothesis": {
+        "en": "Seth Bangerter and Grant Rowberry believed they could generate $25,000 in projected purchases during the test phase through 20 LOIs.",
+        "zh": "Seth Bangerter 和 Grant Rowberry 相信，他们能在测试阶段通过 20 份 LOI 产生 25,000 美元的预计采购额。"
+      },
+      "experiment": {
+        "en": "They asked interested customers to write a Letter of Intent specifying how many units they were willing to purchase, then created a repeatable LOI template for future prospects.",
+        "zh": "他们要求有兴趣的客户写下意向书，明确愿意采购多少台，并把关键要素整理成可复用的 LOI 模板。"
+      },
+      "evidence": {
+        "en": "Without advertising, simply asking potential customers to fill out the form generated more than $50,000 in projected revenue.",
+        "zh": "没有投广告，仅仅要求潜在客户填写表单，就产生了超过 50,000 美元的预计收入。"
+      },
+      "insights": {
+        "en": "Customers said larger numbers verbally than they were willing to write down. Writing created more skin in the game and exposed a more realistic demand level.",
+        "zh": "客户口头承诺的数量明显高于他们愿意写下来的数量。落笔让承诺更有分量，也暴露出更真实的需求规模。"
+      },
+      "actions": {
+        "en": "The team refined LOIs into two forms: a purchase pledge for buyers and a testing agreement for beta participants.",
+        "zh": "团队把 LOI 迭代成两种版本：面向购买者的采购承诺，以及面向 beta 测试参与者的测试协议。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Thrive Smart Systems case study, pp. 298-299"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile commitment assumption.</em></p><p>e.g. <strong>[Economic buyer]</strong> wants <strong>[outcome]</strong> enough to sign a non-binding LOI with scope, target price, and pilot conditions.</p>",
+          "zh": "<p><em>替换成一条最脆弱的承诺假设。</em></p><p>例如：<strong>[经济买方]</strong> 对 <strong>[结果]</strong> 的需求强到愿意签一份包含范围、目标价格和试点条件的非约束性意向书。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [buyer segment] will make a written commitment to [pilot / purchase intent].</p><p><strong>To verify, we will</strong> present a 1-page pilot proposal and LOI to 10 qualified buyers within 3 weeks.</p><p><strong>And measure</strong> signed LOIs, procurement objections, price acceptance, and requested conditions.</p><p><strong>We are right if</strong> ≥ 3/10 sign an LOI and at least one includes a named budget or target start date.</p>",
+          "zh": "<p><strong>我们相信</strong> [买方客群] 会对 [试点 / 购买意向] 做出书面承诺。</p><p><strong>为了验证，我们将</strong> 在 3 周内向 10 位合格买方展示 1 页试点提案和 LOI。</p><p><strong>并测量</strong> 签署意向书数、采购阻力、价格接受度和附加条件。</p><p><strong>如果</strong> ≥ 3/10 签署 LOI，且至少 1 份包含预算或目标启动日期 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Prepare:</strong> write a 1-page offer: customer problem, pilot scope, success metric, target price range, timeline, responsibilities, and what the LOI does / does not commit to legally.</p><p><strong>Recruit:</strong> 10 economic buyers or budget influencers from existing interviews, sales network, or partner intros. Confirm they own the problem and can influence budget.</p><p><strong>Run:</strong> hold 30-minute calls. Present the pilot, ask what must be true to sign, then send the LOI the same day via e-signature. Track redlines, delays, and who else must approve.</p>",
+          "zh": "<p><strong>准备：</strong>写 1 页提供物：客户问题、试点范围、成功指标、目标价格区间、时间线、双方职责，以及 LOI 在法律上承诺 / 不承诺什么。</p><p><strong>招募：</strong>从已有访谈、销售网络或伙伴转介绍中找 10 位经济买方或预算影响者。确认他们拥有该问题，并能影响预算。</p><p><strong>执行：</strong>每次 30 分钟沟通。展示试点，询问签署前必须满足什么条件，然后当天用电子签发出 LOI。跟踪修改、拖延和还需谁批准。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 3 signed LOIs; ≥ 1 with named budget or target start date; no single blocker appears in more than half of refusals.</p><p><strong>Fail:</strong> buyers praise the idea but refuse written commitment, push price to zero, or require a different decision maker you cannot reach.</p><p><strong>Inconclusive:</strong> verbal yes but legal/procurement blocks signature; run a Pre-Sale or paid pilot with a simpler contracting path.</p>",
+          "zh": "<p><strong>通过：</strong>≥ 3 份签署 LOI；≥ 1 份包含预算或目标启动日期；拒绝原因中没有一个单一阻碍超过半数。</p><p><strong>失败：</strong>买方口头称赞但拒绝书面承诺、把价格压到 0，或要求一个你触达不到的决策者。</p><p><strong>不清晰：</strong>口头同意但法务 / 采购阻止签署；改跑签约路径更简单的 Pre-Sale 或付费试点。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Buyers contacted: __ ; LOIs sent: __ ; LOIs signed: __ ; Budget/start-date commitments: __ .</p><p>Top objection: __ . Redline pattern: __ . Verdict: validated / invalidated / inconclusive.</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>触达买方：__；发出 LOI：__；签署 LOI：__；含预算 / 启动日期承诺：__。</p><p>最高频异议：__。修改条款模式：__。结论：已验证 / 已证伪 / 不清晰。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → convert LOIs into paid pilots or Pre-Sales within 30 days.<br/>• <strong>Pivot</strong> → adjust scope, price, buyer persona, or required proof based on refusal patterns.<br/>• <strong>Kill</strong> → if buyers will not write anything down, do not count verbal enthusiasm as evidence.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 30 天内把 LOI 转成付费试点或 Pre-Sale。<br/>• <strong>Pivot</strong> → 根据拒绝模式调整范围、价格、买方角色或所需证据。<br/>• <strong>Kill</strong> → 如果买方不愿写下任何承诺，不要把口头热情当证据。</p>"
+        }
+      }
+    ]
+  }
 }

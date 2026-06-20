@@ -1,0 +1,38 @@
+{
+  "slug": "marvel-studios",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Marvel Studios",
+    "zh": "漫威影业"
+  },
+  "summary": {
+    "en": "Marvel Studios used lesser-known characters, integrated storytelling, and in-house production control to create the Marvel Cinematic Universe, expanding demand beyond traditional comic fans.",
+    "zh": "漫威影业用非顶级角色、互联叙事和自有制片控制，创造漫威电影宇宙，把需求扩展到传统漫画粉丝之外。"
+  },
+  "tags": [
+    "entertainment",
+    "film",
+    "comics",
+    "blue-ocean",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "Blue Ocean Strategy 7 Powerful Examples"
+    },
+    {
+      "label": "Disney acquisition public records"
+    },
+    {
+      "label": "Marvel Studios public history"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "2b9a930c-890a-42be-a556-60e9dcdea9bd",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
+  ]
+}

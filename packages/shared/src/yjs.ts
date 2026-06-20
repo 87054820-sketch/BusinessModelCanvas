@@ -361,6 +361,8 @@ export function encodeObjectsBulk(
             sIn.y,
             localIdx,
             total,
+            sIn.width,
+            sIn.height,
           );
           const author = (sIn.authorName ?? defaultAuthor).slice(0, 64);
 
@@ -374,8 +376,8 @@ export function encodeObjectsBulk(
           // renderer falls back to DEFAULT_STICKY_{WIDTH,HEIGHT} when
           // these are absent, so omitting them when at default keeps
           // the stored Yjs shape minimal and byte-stable.
-          const width = sIn.width ?? placed.width;
-          const height = sIn.height ?? placed.height;
+          const width = placed.width ?? sIn.width;
+          const height = placed.height ?? sIn.height;
           if (width !== undefined) sticky.set('width', width);
           if (height !== undefined) sticky.set('height', height);
           sticky.set('text', sIn.text);
@@ -576,8 +578,9 @@ function resolvePosition(
   y: number | undefined,
   idxInZone: number,
   totalInZone: number,
+  explicitWidth?: number,
+  explicitHeight?: number,
 ): { x: number; y: number; width?: number; height?: number } {
-  if (x !== undefined && y !== undefined) return { x, y };
   const b = zoneBounds(shape);
   const topPad = 70; // clears zone label + prompt baked into the SVG
   const sidePad = 12;
@@ -585,6 +588,19 @@ function resolvePosition(
   const gap = 8;
   const innerH = Math.max(STICKY_MIN_HEIGHT, b.h - topPad - botPad);
   const innerW = Math.max(STICKY_MIN_WIDTH, b.w - 2 * sidePad);
+  const requestedW = explicitWidth ?? DEFAULT_STICKY_WIDTH;
+  const requestedH = explicitHeight ?? DEFAULT_STICKY_HEIGHT;
+
+  if (x !== undefined && y !== undefined) {
+    const stickyW = Math.min(Math.max(requestedW, STICKY_MIN_WIDTH), innerW);
+    const stickyH = Math.min(Math.max(requestedH, STICKY_MIN_HEIGHT), b.h);
+    const clamped = clampStickyCenterToBounds(x, y, b, stickyW, stickyH);
+    return {
+      ...clamped,
+      ...(stickyW !== requestedW ? { width: stickyW } : {}),
+      ...(stickyH !== requestedH ? { height: stickyH } : {}),
+    };
+  }
 
   // Try cols = 1 first. Escalate to 2 / 3 only when single-column
   // shrinking would make stickies unreadably short AND the zone is
@@ -593,27 +609,27 @@ function resolvePosition(
   const total = Math.max(1, totalInZone);
   let cols = 1;
   let rowsPerCol = total;
-  let stickyW = Math.min(DEFAULT_STICKY_WIDTH, innerW);
+  let stickyW = Math.min(requestedW, innerW);
   let stickyH = Math.min(
-    DEFAULT_STICKY_HEIGHT,
+    requestedH,
     (innerH - (rowsPerCol - 1) * gap) / rowsPerCol,
   );
 
   if (stickyH < STICKY_MIN_HEIGHT && innerW >= 2 * STICKY_MIN_WIDTH + gap) {
     cols = 2;
     rowsPerCol = Math.ceil(total / cols);
-    stickyW = Math.min(DEFAULT_STICKY_WIDTH, (innerW - gap) / cols);
+    stickyW = Math.min(requestedW, (innerW - gap) / cols);
     stickyH = Math.min(
-      DEFAULT_STICKY_HEIGHT,
+      requestedH,
       (innerH - (rowsPerCol - 1) * gap) / rowsPerCol,
     );
   }
   if (stickyH < STICKY_MIN_HEIGHT && innerW >= 3 * STICKY_MIN_WIDTH + 2 * gap) {
     cols = 3;
     rowsPerCol = Math.ceil(total / cols);
-    stickyW = Math.min(DEFAULT_STICKY_WIDTH, (innerW - 2 * gap) / cols);
+    stickyW = Math.min(requestedW, (innerW - 2 * gap) / cols);
     stickyH = Math.min(
-      DEFAULT_STICKY_HEIGHT,
+      requestedH,
       (innerH - (rowsPerCol - 1) * gap) / rowsPerCol,
     );
   }
@@ -627,14 +643,32 @@ function resolvePosition(
   const row = idxInZone - col * rowsPerCol;
   const cx = b.x + sidePad + stickyW / 2 + col * (stickyW + gap);
   const cy = b.y + topPad + stickyH / 2 + row * (stickyH + gap);
+  const clamped = clampStickyCenterToBounds(x ?? cx, y ?? cy, b, stickyW, stickyH);
   // Only persist width / height when the layout had to shrink. The
   // renderer's defaults handle the common case so the stored Yjs
   // shape stays minimal.
-  const out: { x: number; y: number; width?: number; height?: number } = {
-    x: x === undefined ? cx : x,
-    y: y === undefined ? cy : y,
-  };
-  if (stickyW < DEFAULT_STICKY_WIDTH) out.width = stickyW;
-  if (stickyH < DEFAULT_STICKY_HEIGHT) out.height = stickyH;
+  const out: { x: number; y: number; width?: number; height?: number } = clamped;
+  if (stickyW !== requestedW || stickyW < DEFAULT_STICKY_WIDTH) out.width = stickyW;
+  if (stickyH !== requestedH || stickyH < DEFAULT_STICKY_HEIGHT) out.height = stickyH;
   return out;
+}
+
+function clampStickyCenterToBounds(
+  x: number,
+  y: number,
+  b: { x: number; y: number; w: number; h: number },
+  stickyW: number,
+  stickyH: number,
+): { x: number; y: number } {
+  return {
+    x: clampCenter(x, b.x, b.x + b.w, stickyW),
+    y: clampCenter(y, b.y, b.y + b.h, stickyH),
+  };
+}
+
+function clampCenter(value: number, minEdge: number, maxEdge: number, size: number): number {
+  const min = minEdge + size / 2;
+  const max = maxEdge - size / 2;
+  if (min > max) return (minEdge + maxEdge) / 2;
+  return Math.min(Math.max(value, min), max);
 }

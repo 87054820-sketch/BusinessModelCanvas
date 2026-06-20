@@ -181,6 +181,9 @@ export function Inspector({
   // From here on we need a live doc + canvas bundle to do anything useful.
   if (!doc || !def || !i18n) return renderProject();
 
+  const objectTypes = effectiveObjectTypes(def);
+  const supportsSticky = objectTypes.includes('sticky');
+
   if (selection.kind === 'block') {
     const zone = def.zones.find((z) => z.id === selection.zoneId);
     const block = zone ? i18n.blocks[zone.id] : undefined;
@@ -211,8 +214,7 @@ export function Inspector({
 
   if (selection.kind === 'pinClass') {
     if (!def) return renderProject();
-    const ot = effectiveObjectTypes(def);
-    if (!ot.includes('pinClass')) return renderCanvasKnowledge() ?? renderProject();
+    if (!objectTypes.includes('pinClass')) return renderCanvasKnowledge() ?? renderProject();
     // Route pinClass selection through the unified Config view so the
     // user sees the Y-axis editor + factor list + pin classes + sticky
     // legend in one column. Scrolling/highlighting is driven by

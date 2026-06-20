@@ -431,7 +431,7 @@ function ChartTemplatePreviewOverlay({ def, lang }: { def: CanvasDef; lang: Lang
         const y = yForScore(rect, yAxis, score);
         return <circle key={`${factors[index]?.id ?? index}-point`} cx={x} cy={y} r={8} fill="#1F77B4" stroke="#FFFFFF" strokeWidth={3} />;
       })}
-      <PreviewLegend x={rect.x + rect.w + 30} y={rect.y + 28} lang={lang} />
+      <PreviewLegend x={rect.x + rect.w - 150} y={rect.y + 28} lang={lang} />
       <text x={rect.x + rect.w / 2} y={rect.y + 32} fontSize={18} fill="#9CA3AF" textAnchor="middle" fontWeight={600}>
         {lang === 'zh' ? '示例价值曲线' : 'Sample value curves'}
       </text>

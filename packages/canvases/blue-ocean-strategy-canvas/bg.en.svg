@@ -10,5 +10,5 @@
 
   <!-- Subtle frame around the plotting area; the chart plugin draws the
        gridlines, axis labels, factor labels, and curves on top. -->
-  <rect x="100" y="64" width="980" height="706" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <rect x="100" y="64" width="1100" height="706" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
 </svg>

@@ -5,6 +5,7 @@ import type {
   CaseLibraryDetail,
   CaseLibraryEntry,
   Lang,
+  StrategyFramework,
 } from '@pingarden/shared';
 import { libraryApi } from '../api/library';
 import { useIdentity } from '../identity/useIdentity';
@@ -23,12 +24,16 @@ interface Props {
    * `appliesPatterns`, the section is hidden entirely.
    */
   patterns?: BusinessModelPattern[];
+  /** Strategy frameworks shipped in the library, for localized chips. */
+  strategyFrameworks?: StrategyFramework[];
   /**
    * Click handler for an applies-patterns chip. Host page is expected
    * to close the modal and switch to the Patterns tab + scroll to the
    * pattern's card.
    */
   onPatternClick?: (slug: string) => void;
+  /** Click handler for a strategy-framework chip. */
+  onStrategyFrameworkClick?: (slug: string) => void;
 }
 
 /**
@@ -51,6 +56,8 @@ export function CasePreviewModal({
   onFork,
   patterns,
   onPatternClick,
+  strategyFrameworks,
+  onStrategyFrameworkClick,
 }: Props) {
   const { t } = useTranslation();
   const { identity } = useIdentity();
@@ -217,6 +224,34 @@ export function CasePreviewModal({
                       className="rounded-full border border-dashed border-violet-300 bg-violet-50 px-3 py-1 text-xs font-medium text-violet-700 transition hover:bg-violet-100"
                     >
                       {chipLabel(p)}
+                    </button>
+                  ))}
+                </div>
+              </section>
+            );
+          })()}
+
+          {/* Applies strategy frameworks. */}
+          {(() => {
+            const applied: StrategyFramework[] =
+              (entry.appliesStrategyFrameworks ?? [])
+                .map((slug) => strategyFrameworks?.find((f) => f.slug === slug))
+                .filter((f): f is StrategyFramework => !!f);
+            if (applied.length === 0) return null;
+            return (
+              <section className="mt-5">
+                <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                  {t('library.appliesStrategyFrameworks')}
+                </h3>
+                <div className="flex flex-wrap gap-1.5">
+                  {applied.map((f) => (
+                    <button
+                      type="button"
+                      key={f.slug}
+                      onClick={() => onStrategyFrameworkClick?.(f.slug)}
+                      className="rounded-full border border-dashed border-indigo-300 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 transition hover:bg-indigo-100"
+                    >
+                      {f.name[lang] ?? f.name.en}
                     </button>
                   ))}
                 </div>

@@ -165,3 +165,49 @@ function looksLikeExperimentsDir(path: string): boolean {
   if (!statSync(path).isDirectory()) return false;
   return true;
 }
+
+/**
+ * Find the case-library strategy frameworks directory at runtime. Same
+ * fallback chain as patterns and experiments, but for the parallel
+ * `packages/case-library/strategy-frameworks/` tree.
+ */
+export function discoverStrategyFrameworksDir(opts: {
+  override?: string;
+}): string | null {
+  if (opts.override && opts.override.length > 0) {
+    if (!existsSync(opts.override)) {
+      throw new CliError(
+        'BAD_INPUT',
+        `Strategy frameworks dir not found: ${opts.override}`,
+      );
+    }
+    return opts.override;
+  }
+
+  try {
+    const here = dirname(fileURLToPath(import.meta.url));
+    const packaged = resolve(here, '..', 'assets', 'strategy-frameworks');
+    if (looksLikeStrategyFrameworksDir(packaged)) return packaged;
+    const dev = resolve(here, '..', '..', 'assets', 'strategy-frameworks');
+    if (looksLikeStrategyFrameworksDir(dev)) return dev;
+  } catch {
+    /* import.meta.url shenanigans — fall through */
+  }
+
+  let dir = process.cwd();
+  for (let i = 0; i < 10; i++) {
+    const candidate = join(dir, 'packages', 'case-library', 'strategy-frameworks');
+    if (looksLikeStrategyFrameworksDir(candidate)) return candidate;
+    const parent = resolve(dir, '..');
+    if (parent === dir) break;
+    dir = parent;
+  }
+
+  return null;
+}
+
+function looksLikeStrategyFrameworksDir(path: string): boolean {
+  if (!existsSync(path)) return false;
+  if (!statSync(path).isDirectory()) return false;
+  return true;
+}

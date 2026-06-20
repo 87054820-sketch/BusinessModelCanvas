@@ -859,6 +859,12 @@ export interface CaseLibraryEntry {
    *  multiple patterns. Validation enforces every slug here resolves to
    *  an entry in `manifest.json.patterns[]`. */
   appliesPatterns?: string[];
+  /** Strategy-framework slugs this case demonstrates. Frameworks live as
+   *  separate first-class methods under
+   *  `packages/case-library/strategy-frameworks/<slug>/`; unlike patterns,
+   *  they describe analysis methods (Blue Ocean Strategy, Five Forces,
+   *  PESTEL, …), not business-model structures. */
+  appliesStrategyFrameworks?: string[];
   /**
    * Optional sub-type refinement, keyed by pattern slug. Each value
    * must match a `subtypes[].id` on the referenced pattern. Cases
@@ -1046,14 +1052,61 @@ export interface BusinessModelPatternDetail {
   exampleCases: CaseLibraryEntry[];
 }
 
+// ─── Strategy framework library ─────────────────────────────────────────────
+// Strategic analysis methods such as Blue Ocean Strategy. Frameworks are
+// read-only curated content like patterns, but semantically separate:
+// they describe analysis methods and tools, not business-model structures.
+
+export type StrategyFrameworkReferenceType = PatternReferenceType;
+
+export interface StrategyFrameworkReference {
+  type: StrategyFrameworkReferenceType;
+  cite: string;
+  label: string;
+  year?: number;
+  pages?: string;
+  url?: string;
+  note?: LocalizedLabel;
+}
+
+export interface StrategyFrameworkExampleRef {
+  slug: string;
+  role?: 'primary' | 'secondary';
+}
+
+export interface StrategyFramework {
+  /** Stable kebab-case identity, e.g. 'blue-ocean-strategy'. */
+  slug: string;
+  /** Bilingual framework display name. */
+  name: LocalizedLabel;
+  /** Bilingual one-paragraph blurb shown on the framework card. */
+  summary: LocalizedLabel;
+  /** Flat sources for backward-compatible citation rendering. */
+  sources: CaseSource[];
+  /** Annotated bibliography preferred by the UI and generated skill. */
+  references?: StrategyFrameworkReference[];
+  /** Curated concrete cases that demonstrate this framework. */
+  examples: StrategyFrameworkExampleRef[];
+  /** Canvas definitions that usually implement this framework. */
+  relatedCanvasDefIds?: string[];
+}
+
+export interface StrategyFrameworkDetail {
+  framework: StrategyFramework;
+  /** Bilingual long-form markdown body. */
+  description: { en: string; zh: string };
+  /** Hydrated case metadata for `framework.examples[].slug`. */
+  exampleCases: CaseLibraryEntry[];
+}
+
 // ─── Experiment library ─────────────────────────────────────────────────────
 // Curated test recipes from Bland & Osterwalder, Testing Business Ideas
 // (Wiley, 2019). Each Experiment is a typed metadata record for one of the
-// 44 experiments in TBI; the long-form prose lives in the parallel
-// `description.{en,zh}.md` and `skill.{en,zh}.md` files. Skill-only surface
-// for V1 — the BundleStorage / HTTP routes / LibraryPage are NOT extended;
-// experiments are picked up by the skill generator (`apps/cli/src/skill/*`)
-// via a directory walk over `packages/case-library/experiments/`.
+// selected experiments in TBI; the long-form prose lives in the parallel
+// `description.{en,zh}.md` and `skill.{en,zh}.md` files. Experiments are
+// served through BundleStorage / HTTP routes / LibraryPage and also picked
+// up by the skill generator (`apps/cli/src/skill/*`) via a directory walk
+// over `packages/case-library/experiments/`.
 //
 // Cross-link to canvases is forward-only: an experiment names which
 // canvases it helps validate via `appliesToCanvases[]`. Canvases do not
@@ -1132,9 +1185,8 @@ export interface Experiment {
    *  this experiment" from the library. Each entry maps to one zone of
    *  the experiment-canvas (riskiest-assumption / falsifiable-hypothesis
    *  / experiment-setup / metrics-criteria / results-conclusion /
-   *  next-steps). When absent, the seed flow falls back to the single
-   *  setup-zone sticky shape from Round 11. V1 ships templates for all
-   *  12 experiments. */
+   *  next-steps). Shipped experiments should carry all six zones; when
+   *  absent, the seed flow falls back to a single setup-zone sticky. */
   template?: ExperimentTemplate;
 }
 

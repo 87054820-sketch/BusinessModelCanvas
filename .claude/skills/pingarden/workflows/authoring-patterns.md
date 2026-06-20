@@ -73,7 +73,7 @@ ls packages/case-library/cases/
 
 For each case that applies, edit `case.json` and append the new pattern's slug to `appliesPatterns[]`. Be biased toward fewer tags — only tag when the new pattern is clearly a primary or secondary description of the case, not a faint adjacency.
 
-The 2026-06-15 MSP rollout is the worked example: 4 of 10 existing cases were tagged (`udemy`, `aliexpress`, `lulu-com`, `lego-long-tail`) and 6 were explicitly rejected (`wechat-private-domain`, `swiss-private-banking`, `mobile-telco-unbundling`, `patagonia`, `carvana`, `cainiao`). The rejections matter as much as the tags.
+The 2026-06-15 MSP rollout is the worked example: 4 existing cases were tagged (`udemy`, `aliexpress`, `lulu-com`, `lego-long-tail`) and several adjacent cases were explicitly rejected (`swiss-private-banking`, `mobile-telco-unbundling`, `patagonia`, `carvana`, `cainiao`). The rejections matter as much as the tags.
 
 ### 5. Manifest entry
 

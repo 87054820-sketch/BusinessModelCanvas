@@ -1,0 +1,109 @@
+{
+  "slug": "ping-an-group",
+  "kind": "company",
+  "companyName": {
+    "en": "Ping An Group — portfolio transformation",
+    "zh": "平安集团 —— 组合转型"
+  },
+  "summary": {
+    "en": "Ping An illustrates business model portfolio management at group level: a financial-services core keeps exploiting insurance and banking strengths while the group explores technology-enabled platforms in health, auto, fintech, and enterprise services.",
+    "zh": "平安集团展示了集团层面的商业模式组合管理：金融服务核心继续开发保险和银行能力，同时探索医疗、汽车、金融科技和企业服务等科技平台。"
+  },
+  "tags": ["financial-services", "portfolio", "platform-ecosystem", "healthcare", "China"],
+  "sources": [
+    { "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley · 2020 · Ping An case" },
+    { "label": "Ping An public annual reports and investor materials" }
+  ],
+  "thumbnailDefId": "portfolio-map",
+  "appliesStrategyFrameworks": ["business-model-portfolio-management"],
+  "project": {
+    "name": "Ping An Group — portfolio transformation",
+    "description": "Group-level Explore/Exploit portfolio view inspired by The Invincible Company."
+  },
+  "canvases": [
+    {
+      "key": "portfolio-en",
+      "defId": "portfolio-map",
+      "title": "Ping An Group portfolio map",
+      "language": "en",
+      "pinClasses": [
+        { "id": "exploit-core", "label": "Exploit core", "color": "#4F46E5", "icon": "circle" },
+        { "id": "explore-platform", "label": "Explore platform", "color": "#10B981", "icon": "triangle" },
+        { "id": "transfer-candidate", "label": "Transfer candidate", "color": "#F59E0B", "icon": "star" }
+      ],
+      "pins": [
+        { "classId": "exploit-core", "x": 1010, "y": 145, "label": "Insurance core", "body": "High return core business; must keep reducing disruption risk." },
+        { "classId": "exploit-core", "x": 930, "y": 190, "label": "Banking and wealth", "body": "Existing financial-services engine with ecosystem cross-sell." },
+        { "classId": "explore-platform", "x": 390, "y": 575, "label": "Good Doctor", "body": "Digital health platform explored around medical access and insurance adjacency." },
+        { "classId": "explore-platform", "x": 450, "y": 610, "label": "Auto owner ecosystem", "body": "Mobility and claims platform around car ownership moments." },
+        { "classId": "transfer-candidate", "x": 530, "y": 535, "label": "OneConnect", "body": "Enterprise fintech infrastructure that can become a scaled platform business." }
+      ]
+    },
+    {
+      "key": "bmc-en",
+      "defId": "business-model-canvas",
+      "title": "Ping An Group portfolio operating model",
+      "language": "en",
+      "stickies": [
+        { "zoneId": "customer-segments", "text": "Insurance customers, patients, car owners, financial institutions" },
+        { "zoneId": "value-propositions", "text": "Trusted finance plus technology-enabled daily-life services" },
+        { "zoneId": "channels", "text": "Agents, mobile apps, partner ecosystems, enterprise sales" },
+        { "zoneId": "customer-relationships", "text": "Cross-sell, advisory relationships, app-based engagement" },
+        { "zoneId": "revenue-streams", "text": "Premiums, financial fees, platform services, technology fees" },
+        { "zoneId": "key-resources", "text": "Customer base, capital, data capability, technology talent" },
+        { "zoneId": "key-activities", "text": "Operate core finance; incubate and scale platform ventures" },
+        { "zoneId": "key-partners", "text": "Hospitals, auto-service partners, technology vendors, distribution partners" },
+        { "zoneId": "cost-structure", "text": "Technology investment, compliance, customer acquisition, venture funding" }
+      ]
+    },
+    {
+      "key": "portfolio-zh",
+      "defId": "portfolio-map",
+      "title": "平安集团业务组合地图",
+      "language": "zh",
+      "pinClasses": [
+        { "id": "exploit-core", "label": "开发核心", "color": "#4F46E5", "icon": "circle" },
+        { "id": "explore-platform", "label": "探索平台", "color": "#10B981", "icon": "triangle" },
+        { "id": "transfer-candidate", "label": "转入候选", "color": "#F59E0B", "icon": "star" }
+      ],
+      "pins": [
+        { "classId": "exploit-core", "x": 1010, "y": 145, "label": "保险核心", "body": "高收益核心业务，需要持续降低颠覆风险。" },
+        { "classId": "exploit-core", "x": 930, "y": 190, "label": "银行与财富", "body": "现有金融服务引擎，并承接生态交叉销售。" },
+        { "classId": "explore-platform", "x": 390, "y": 575, "label": "平安好医生", "body": "围绕医疗可及性和保险邻近场景探索数字健康平台。" },
+        { "classId": "explore-platform", "x": 450, "y": 610, "label": "车主生态", "body": "围绕车主、理赔和服务场景探索移动平台。" },
+        { "classId": "transfer-candidate", "x": 530, "y": 535, "label": "金融壹账通", "body": "企业金融科技基础设施，有机会转入规模化平台业务。" }
+      ]
+    },
+    {
+      "key": "bmc-zh",
+      "defId": "business-model-canvas",
+      "title": "平安集团组合运营模式",
+      "language": "zh",
+      "stickies": [
+        { "zoneId": "customer-segments", "text": "保险客户、患者、车主、金融机构" },
+        { "zoneId": "value-propositions", "text": "可信金融服务加科技化日常生活服务" },
+        { "zoneId": "channels", "text": "代理人、移动 App、伙伴生态、企业销售" },
+        { "zoneId": "customer-relationships", "text": "交叉销售、顾问关系、基于 App 的持续互动" },
+        { "zoneId": "revenue-streams", "text": "保费、金融服务费、平台服务、技术服务费" },
+        { "zoneId": "key-resources", "text": "客户基础、资本、数据能力、技术人才" },
+        { "zoneId": "key-activities", "text": "运营核心金融业务，孵化并规模化平台项目" },
+        { "zoneId": "key-partners", "text": "医院、汽车服务伙伴、技术供应商、分销伙伴" },
+        { "zoneId": "cost-structure", "text": "技术投入、合规成本、获客成本、探索项目资金" }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "title": "Ping An Group portfolio transformation",
+      "language": "en",
+      "status": "published",
+      "contentMd": "# Ping An Group portfolio transformation\n\nPing An is useful as a group-level portfolio case rather than only as a single digital-health company. The core financial-services engine belongs on the Exploit side; the technology platforms belong on the Explore side until evidence and scale justify transfer.\n\n## Portfolio reading\n\nThe map shows insurance and banking as high-return existing engines. Digital health, auto-owner services, and enterprise fintech start as exploration platforms. The strategic question is not whether each initiative is innovative, but which ones reduce future disruption risk and which ones can become new growth engines.\n\n## Transfer lesson\n\nA portfolio lens prevents treating every venture as a separate story. It asks which platform should be funded, which should be transferred into the core, and which should be retired if evidence or strategic fit weakens."
+    },
+    {
+      "title": "平安集团组合转型",
+      "language": "zh",
+      "status": "published",
+      "contentMd": "# 平安集团组合转型\n\n平安更适合作为集团级组合案例，而不只是一个数字医疗公司案例。金融服务核心位于 Exploit 开发侧；科技平台位于 Explore 探索侧，直到证据和规模足以支持转入。\n\n## 组合阅读\n\n组合图把保险和银行放在高收益的现有业务位置，把数字健康、车主服务和企业金融科技放在探索平台位置。战略问题不是这些项目是否新颖，而是哪些项目能降低未来颠覆风险，哪些项目可能成为新的增长引擎。\n\n## 转移经验\n\n组合视角避免把每个项目都当成孤立故事。它会追问：哪个平台应该继续加投，哪个项目应该转入核心业务，哪个项目在证据或战略匹配度不足时应该终止。"
+    }
+  ]
+}

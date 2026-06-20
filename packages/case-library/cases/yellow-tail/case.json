@@ -1,0 +1,37 @@
+{
+  "slug": "yellow-tail",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "[yellow tail]",
+    "zh": "黄尾袋鼠葡萄酒"
+  },
+  "summary": {
+    "en": "Casella Winery’s [yellow tail] entered the crowded 2001 US wine market by making wine simple, fun, and easy to drink for non-wine consumers, becoming one of the fastest-growing imported wine brands.",
+    "zh": "Casella Winery 的黄尾袋鼠在 2001 年进入拥挤的美国葡萄酒市场，把葡萄酒变得简单、有趣、容易入口，吸引非葡萄酒消费者，成为增长最快的进口葡萄酒品牌之一。"
+  },
+  "tags": [
+    "wine",
+    "consumer-goods",
+    "blue-ocean",
+    "Australia",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "Blue Ocean Strategy teaching materials · Yellow Tail",
+      "url": "https://www.blueoceanstrategy.com/teaching-materials/yellowtail/"
+    },
+    {
+      "label": "Blue Ocean Strategy · 7 Powerful Examples",
+      "url": "https://www.blueoceanstrategy.com/blog/7-powerful-blue-ocean-strategy-examples/"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "5efbc6b5-2400-4e6f-8318-0b5c68e49de4",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
+  ]
+}

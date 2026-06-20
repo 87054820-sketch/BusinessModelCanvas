@@ -1,0 +1,34 @@
+{
+  "slug": "citizenm-hotels",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "citizenM Hotels",
+    "zh": "citizenM 酒店"
+  },
+  "summary": {
+    "en": "citizenM rebuilt the hotel value curve for mobile travelers: compact rooms, self check-in, strong design, central locations, and luxury touches without full-service hotel complexity.",
+    "zh": "citizenM 为移动旅行者重画酒店价值曲线：小房间、自助入住、强设计、核心地段和关键奢华触点，同时避开全服务酒店复杂度。"
+  },
+  "tags": [
+    "hospitality",
+    "hotels",
+    "blue-ocean",
+    "Netherlands"
+  ],
+  "sources": [
+    {
+      "label": "citizenM public brand materials"
+    },
+    {
+      "label": "Blue Ocean Strategy strategy canvas references"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "770811bb-f728-4fd2-b75e-7694c3870be4",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
+  ]
+}

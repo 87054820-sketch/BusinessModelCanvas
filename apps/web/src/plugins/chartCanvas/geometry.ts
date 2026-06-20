@@ -9,12 +9,10 @@ import type { ChartConfig } from '@pingarden/shared';
  *
  *   ┌────────────────── viewBox ──────────────────┐
  *   │ padTop                                      │
- *   │   ┌── chart rect ──────────┐  padRight     │
- *   │   │ ◀──── chart.w ────▶    │  (line label  │
- *   │   │                        │   tails fit   │
- *   │   │   ◎───◎───◎───◎...     │   here)       │
- *   │   │   │                    │               │
- *   │   └────────────────────────┘               │
+ *   │   ┌── chart rect ───────────────────┐ padRight │
+ *   │   │ ◀──────── chart.w ───────────▶   │          │
+ *   │   │   ◎───◎───◎───◎...              │          │
+ *   │   └──────────────────────────────────┘          │
  *   │ padBottom (factor labels)                  │
  *   └─────────────────────────────────────────────┘
  *      padLeft (Y axis labels)
@@ -36,8 +34,8 @@ export interface ChartGeometry {
 export const CHART_PADDING = {
   /** Y-axis numeric labels live to the left of this. */
   left: 100,
-  /** Right end of each polyline carries the line label inside this strip. */
-  right: 200,
+  /** Keep a small breathing room for the last factor's marker and label. */
+  right: 80,
   /** Title / Y-axis high label sit above this. */
   top: 64,
   /** X-axis factor labels live below this. */

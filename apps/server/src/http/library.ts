@@ -23,6 +23,8 @@ import { getIdentity } from './identity.js';
  *   GET  /library/patterns/:slug              → BusinessModelPatternDetail
  *   GET  /library/experiments                 → Experiment[]
  *   GET  /library/experiments/:slug           → BusinessModelExperimentDetail
+ *   GET  /library/strategy-frameworks         → StrategyFramework[]
+ *   GET  /library/strategy-frameworks/:slug   → StrategyFrameworkDetail
  *
  * Mutations on library projects/canvases/stories elsewhere in the API
  * surface as 403 via the global error handler in `server.ts` — those
@@ -85,6 +87,17 @@ export function registerLibraryRoutes(
       return detail;
     },
   );
+
+  app.get('/library/strategy-frameworks', async () => bundle.listStrategyFrameworks());
+
+  app.get<{ Params: { slug: string } }>(
+    '/library/strategy-frameworks/:slug',
+    async (req, reply) => {
+      const detail = await bundle.getStrategyFramework(req.params.slug);
+      if (!detail) return reply.code(404).send({ error: 'Strategy framework not found' });
+      return detail;
+    },
+  );
 }
 
 /**
@@ -121,10 +134,9 @@ async function loadCaseDetail(
  * When `lang` is provided we filter the source canvases / stories down
  * to that language before copying, so an EN-UI user forks a 3-canvas
  * EN-only project rather than the full 6-canvas bilingual original.
- * Single-language cases (e.g. wechat-private-domain when EN content
- * doesn't exist yet) fall back to copying everything — better that
- * than producing an empty project just because the requested lang
- * isn't shipped.
+ * If a future bundle is missing the requested language, fork falls back
+ * to copying everything — better that than producing an empty project
+ * just because the requested lang isn't shipped.
  *
  * Story content is rewritten so `::canvas[<defId>]{canvasId="..."}`
  * directives point at the *new* canvas ids in the user's copy. Without

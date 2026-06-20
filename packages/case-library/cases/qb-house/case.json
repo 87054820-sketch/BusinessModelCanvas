@@ -1,0 +1,33 @@
+{
+  "slug": "qb-house",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "QB House",
+    "zh": "QB House 快剪"
+  },
+  "summary": {
+    "en": "QB House challenged the emotional orientation of Japanese barbershops by stripping away nonessential services and creating a functional 10-minute, low-price haircut system with air-wash and traffic-light waiting signals.",
+    "zh": "QB House 挑战日本男士理发店的情感化服务导向，剔除非必要服务，创造 10 分钟、低价格、功能型快剪系统，并配合 air-wash 和交通灯等候提示。"
+  },
+  "tags": [
+    "personal-care",
+    "service-design",
+    "blue-ocean",
+    "Japan",
+    "operations"
+  ],
+  "sources": [
+    {
+      "label": "Blue Ocean Strategy · QB House case study",
+      "url": "https://www.blueoceanstrategy.com/blue-ocean-strategy-examples/qb-house/"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "28517c33-f5ba-4dd5-9c8e-298253bbdbbf",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "novo-nordisk-novopen",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Novo Nordisk NovoPen",
+    "zh": "诺和诺德 NovoPen"
+  },
+  "summary": {
+    "en": "NovoPen reframed insulin delivery from a clinical syringe ritual into a portable pen-like self-injection system, lowering psychological and practical barriers for people with diabetes.",
+    "zh": "NovoPen 把胰岛素注射从临床化的针筒仪式，重构为便携、笔式、自我注射系统，降低糖尿病患者的心理和操作门槛。"
+  },
+  "tags": [
+    "healthcare",
+    "medical-device",
+    "diabetes",
+    "blue-ocean",
+    "Denmark"
+  ],
+  "sources": [
+    {
+      "label": "Blue Ocean Strategy teaching examples and Novo Nordisk company history"
+    },
+    {
+      "label": "Novo Nordisk public history of insulin pens"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "7d195ccf-595e-4921-8931-ddbd2b6e94c2",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy"
+  ]
+}

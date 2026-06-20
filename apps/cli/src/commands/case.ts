@@ -289,7 +289,7 @@ export class CaseReadCommand extends BaseCommand {
       filling another project's canvases. Read-only; never mutates.
     `,
     examples: [
-      ['Pull everything', '$0 case read wechat-private-domain --json'],
+      ['Pull everything', '$0 case read swiss-private-banking --json'],
     ],
   });
 

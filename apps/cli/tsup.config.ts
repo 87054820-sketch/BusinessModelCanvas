@@ -17,6 +17,8 @@ const ASSETS_PATTERNS = resolve('assets/patterns');
 const PATTERNS_SRC = resolve('../../packages/case-library/patterns');
 const ASSETS_EXPERIMENTS = resolve('assets/experiments');
 const EXPERIMENTS_SRC = resolve('../../packages/case-library/experiments');
+const ASSETS_STRATEGY_FRAMEWORKS = resolve('assets/strategy-frameworks');
+const STRATEGY_FRAMEWORKS_SRC = resolve('../../packages/case-library/strategy-frameworks');
 const DIST_PACKAGE_JSON = resolve('dist/package.json');
 
 const PKG_VERSION = (
@@ -86,6 +88,19 @@ function syncExperimentsToAssets() {
   copyTree(EXPERIMENTS_SRC, ASSETS_EXPERIMENTS);
 }
 
+function syncStrategyFrameworksToAssets() {
+  if (existsSync(ASSETS_STRATEGY_FRAMEWORKS)) {
+    rmSync(ASSETS_STRATEGY_FRAMEWORKS, {
+      recursive: true,
+      force: true,
+      maxRetries: 5,
+      retryDelay: 50,
+    });
+  }
+  if (!existsSync(STRATEGY_FRAMEWORKS_SRC)) return;
+  copyTree(STRATEGY_FRAMEWORKS_SRC, ASSETS_STRATEGY_FRAMEWORKS);
+}
+
 function copyTree(src: string, dest: string) {
   const stats = statSync(src);
   if (stats.isDirectory()) {
@@ -142,6 +157,7 @@ export default defineConfig({
     syncCanvasesToAssets();
     syncPatternsToAssets();
     syncExperimentsToAssets();
+    syncStrategyFrameworksToAssets();
     // Mark `dist/` as ESM. Without this sentinel, Node treats `.js`
     // as CommonJS — fatal when the CLI is run via Electron-as-Node
     // from inside the Mac app, where the parent app's package.json

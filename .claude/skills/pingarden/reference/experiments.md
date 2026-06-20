@@ -1,6 +1,6 @@
 # Reference: experiment library
 
-Curated test recipes from **Bland & Osterwalder · Testing Business Ideas · Wiley · 2019**. Each experiment ships at `experiments/<slug>.{en,zh}.md` with structured metadata at `experiment.json` (see `Experiment` interface in `@pingarden/shared`). Skill-only surface for V1 — no HTTP routes, no LibraryPage tab, no `pingarden experiment` CLI subcommand. The library is consumed by AI agents through the markdown files.
+Curated test recipes from **Bland & Osterwalder · Testing Business Ideas · Wiley · 2019**. Each experiment ships at `experiments/<slug>.{en,zh}.md` with structured metadata at `experiment.json` (see `Experiment` interface in `@pingarden/shared`). The runtime app exposes experiments through the Library page and HTTP routes; the generated skill consumes the same bundles through markdown files.
 
 ## Cross-link to canvases
 

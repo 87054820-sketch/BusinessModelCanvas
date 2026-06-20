@@ -105,8 +105,8 @@ export const api = {
   },
   /**
    * Replace-mode bulk sticky import. Used by seed flows (e.g. the
-   * library's "Use this experiment" CTA pre-fills the experiment-setup
-   * zone). Mirrors the server endpoint contract documented in
+   * library's "Use this experiment" CTA pre-fills the six-zone Experiment
+   * Canvas scaffold). Mirrors the server endpoint contract documented in
    * `apps/server/src/http/stickyImport.ts`.
    */
   bulkStickies(

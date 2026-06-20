@@ -26,12 +26,6 @@
       "zh": "组合图上每个 pin 都是一张 mini BMC。哪个 pin 有意思,就展开成一张完整 BMC。"
     }
   },
-  "relatedNotes": {
-    "business-model-canvas": {
-      "en": "Each pin on the portfolio is a BMC in miniature. When a pin is interesting, expand it into a full BMC.",
-      "zh": "组合图上每个 pin 都是一张 mini BMC。哪个 pin 有意思,就展开成一张完整 BMC。"
-    }
-  },
   "zones": [
     {
       "id": "explore",

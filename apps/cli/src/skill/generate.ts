@@ -14,18 +14,21 @@ import {
   readBundle,
   readExperimentBundle,
   readPatternBundle,
+  readStrategyFrameworkBundle,
   type CanvasBundle,
   type ExperimentBundle,
   type PatternBundle,
+  type StrategyFrameworkBundle,
 } from './bundle.js';
 import { CLI_VERSION } from '../lib/version.js';
 import {
   REFERENCE_FILES,
   WORKFLOW_FILES,
   renderCanvasMd,
-  renderExperimentMd,
-  renderPatternMd,
-  renderSkillMd,
+    renderExperimentMd,
+    renderPatternMd,
+    renderSkillMd,
+    renderStrategyFrameworkMd,
 } from './templates.js';
 
 export interface GenerateOptions {
@@ -42,6 +45,8 @@ export interface GenerateOptions {
    * with no experiments/ tree.
    */
   experimentsDir?: string | null;
+  /** Where the strategy framework bundles live. Optional like patterns. */
+  strategyFrameworksDir?: string | null;
   /** Where to write the skill tree. */
   outDir: string;
   /** Restrict canvas md output to these languages. Defaults to both. */
@@ -55,6 +60,7 @@ export interface GenerateResult {
   canvasIds: string[];
   patternSlugs: string[];
   experimentSlugs: string[];
+  strategyFrameworkSlugs: string[];
 }
 
 /**
@@ -103,7 +109,26 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
     }
   }
 
-  // 2c. Discover + read experiments (TBI library). Same shape as
+  // 2c. Discover + read strategy frameworks. Same shape as patterns.
+  const strategyFrameworkBundles: StrategyFrameworkBundle[] = [];
+  if (opts.strategyFrameworksDir && existsSync(opts.strategyFrameworksDir)) {
+    const strategyFrameworkSlugs = readdirSync(opts.strategyFrameworksDir, {
+      withFileTypes: true,
+    })
+      .filter(
+        (d) =>
+          d.isDirectory() &&
+          existsSync(join(opts.strategyFrameworksDir!, d.name, 'framework.json')),
+      )
+      .map((d) => d.name)
+      .sort();
+    for (const slug of strategyFrameworkSlugs) {
+      const fb = readStrategyFrameworkBundle(opts.strategyFrameworksDir, slug);
+      if (fb) strategyFrameworkBundles.push(fb);
+    }
+  }
+
+  // 2d. Discover + read experiments (TBI library). Same shape as
   //     patterns: sorted by slug, optional surface (no experiments dir
   //     => empty list, no experiments/ tree in output).
   const experimentBundles: ExperimentBundle[] = [];
@@ -131,7 +156,12 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
   // prefix automatically; the trailing hash captures whether canvas,
   // pattern, OR experiment bundles actually changed. Identical inputs
   // always produce byte-identical zips.
-  const contentHash = hashBundles(bundles, patternBundles, experimentBundles);
+  const contentHash = hashBundles(
+    bundles,
+    patternBundles,
+    experimentBundles,
+    strategyFrameworkBundles,
+  );
   const version = `${CLI_VERSION}-${contentHash.slice(0, 8)}`;
 
   // 4. Build the file map.
@@ -142,6 +172,7 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
     canvasIds: bundles.map((b) => b.id),
     patternSlugs: patternBundles.map((p) => p.slug),
     experimentSlugs: experimentBundles.map((e) => e.slug),
+    strategyFrameworkSlugs: strategyFrameworkBundles.map((f) => f.slug),
   });
 
   for (const b of bundles) {
@@ -160,6 +191,15 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
     for (const lang of langs) {
       files[`experiments/${eb.slug}.${lang}.md`] = renderExperimentMd({
         bundle: eb,
+        lang,
+      });
+    }
+  }
+
+  for (const fb of strategyFrameworkBundles) {
+    for (const lang of langs) {
+      files[`strategy-frameworks/${fb.slug}.${lang}.md`] = renderStrategyFrameworkMd({
+        bundle: fb,
         lang,
       });
     }
@@ -214,6 +254,7 @@ export function generateSkill(opts: GenerateOptions): GenerateResult {
     canvasIds: bundles.map((b) => b.id),
     patternSlugs: patternBundles.map((p) => p.slug),
     experimentSlugs: experimentBundles.map((e) => e.slug),
+    strategyFrameworkSlugs: strategyFrameworkBundles.map((f) => f.slug),
   };
 }
 
@@ -256,6 +297,7 @@ function hashBundles(
   bundles: CanvasBundle[],
   patternBundles: PatternBundle[],
   experimentBundles: ExperimentBundle[],
+  strategyFrameworkBundles: StrategyFrameworkBundle[],
 ): string {
   const h = createHash('sha256');
   for (const b of bundles) {
@@ -307,6 +349,19 @@ function hashBundles(
     h.update(eb.skill.en ?? '');
     h.update('\n');
     h.update(eb.skill.zh ?? '');
+    h.update('\n');
+  }
+  for (const fb of strategyFrameworkBundles) {
+    h.update(`strategy-framework:${fb.slug}\n`);
+    h.update(canonicalJson(fb.framework));
+    h.update('\n');
+    h.update(fb.description.en ?? '');
+    h.update('\n');
+    h.update(fb.description.zh ?? '');
+    h.update('\n');
+    h.update(fb.skill.en ?? '');
+    h.update('\n');
+    h.update(fb.skill.zh ?? '');
     h.update('\n');
   }
   return h.digest('hex');

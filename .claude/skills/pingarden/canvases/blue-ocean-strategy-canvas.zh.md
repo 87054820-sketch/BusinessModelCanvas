@@ -59,7 +59,7 @@ source: packages/canvases/blue-ocean-strategy-canvas/
 
 ### `chart-area` — 图表区
 
-**Prompt** — 扔到这里的便签会浮在价值曲线图上,适合写注记、ERRC 要点、结论等。
+**Prompt** — 图表区只放价值曲线的竞争因素、曲线类别和评分点；ERRC 要点、解释和结论写入 Story。
 
 ## Colour legend
 

@@ -6,6 +6,7 @@ import type {
   CanvasI18n,
   Experiment,
   Lang,
+  StrategyFramework,
 } from '@pingarden/shared';
 
 /**
@@ -202,6 +203,41 @@ export function readPatternBundle(
   return {
     slug,
     pattern,
+    description: {
+      en: readMarkdownOrUndefined(join(dir, 'description.en.md')),
+      zh: readMarkdownOrUndefined(join(dir, 'description.zh.md')),
+    },
+    skill: {
+      en: readMarkdownOrUndefined(join(dir, 'skill.en.md')),
+      zh: readMarkdownOrUndefined(join(dir, 'skill.zh.md')),
+    },
+  };
+}
+
+/** Strategy framework bundle — peer of PatternBundle for analysis methods. */
+export interface StrategyFrameworkBundle {
+  slug: string;
+  framework: StrategyFramework;
+  description: { en?: string; zh?: string };
+  skill: { en?: string; zh?: string };
+}
+
+export function readStrategyFrameworkBundle(
+  frameworksDir: string,
+  slug: string,
+): StrategyFrameworkBundle | null {
+  const dir = join(frameworksDir, slug);
+  const frameworkJsonPath = join(dir, 'framework.json');
+  if (!existsSync(frameworkJsonPath)) return null;
+  let framework: StrategyFramework;
+  try {
+    framework = JSON.parse(readFileSync(frameworkJsonPath, 'utf8')) as StrategyFramework;
+  } catch {
+    return null;
+  }
+  return {
+    slug,
+    framework,
     description: {
       en: readMarkdownOrUndefined(join(dir, 'description.en.md')),
       zh: readMarkdownOrUndefined(join(dir, 'description.zh.md')),
