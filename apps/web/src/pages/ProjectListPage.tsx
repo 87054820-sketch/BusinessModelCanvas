@@ -15,11 +15,9 @@ import type { ProjectWithCanvases } from '../components/ProjectPicker';
  *   2. Templates (full-bleed horizontal scroll strip)
  *   3. Footer
  *
- * The two CTAs are always [Create blank project] and [Browse cases &
- * projects]. The latter routes to /library — the second-level page that
- * carries both the case-library grid and the user's existing projects.
- * Project deletion lives there too; the home page intentionally does no
- * destructive operations.
+ * The primary CTAs route to strategy-project creation, the Strategy Library,
+ * and the user's existing projects. Template browsing stays in the visible
+ * strip below instead of duplicating a scroll button in the hero.
  */
 export function ProjectListPage() {
   const { t, i18n } = useTranslation();
@@ -237,16 +235,22 @@ function CenterState({
       </h1>
 
       {/* One-line intro */}
-      <p className="mt-3 text-center text-base text-gray-400">
+      <p className="mt-3 max-w-2xl text-center text-base leading-relaxed text-gray-500">
         {t('home.welcomeIntro')}
       </p>
 
-      {/* CTA buttons — three side-by-side. The home page intentionally
-          delegates two of the three to second-level routes: /library
-          for curated cases, /projects for the user's own work. Keeping
-          all three at the same visual weight (one primary, two
-          secondaries) preserves the welcome page's quiet aesthetic
-          while making both browse paths clearly discoverable. */}
+      <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
+        {['businessModel', 'strategy', 'experiments', 'caseLearning'].map((key) => (
+          <span
+            key={key}
+            className="rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800"
+          >
+            {t(`home.positioningTags.${key}`)}
+          </span>
+        ))}
+      </div>
+
+      {/* CTA buttons — task-oriented routes from strategy work to learning. */}
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <button
           type="button"

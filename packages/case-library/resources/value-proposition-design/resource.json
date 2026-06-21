@@ -1,0 +1,41 @@
+{
+  "slug": "value-proposition-design",
+  "type": "book",
+  "title": {
+    "en": "Value Proposition Design",
+    "zh": "《Value Proposition Design / 价值主张设计》"
+  },
+  "summary": {
+    "en": "Strategyzer's practical guide for turning customer jobs, pains, and gains into value propositions, then testing whether the fit is real before scaling the business model.",
+    "zh": "Strategyzer 关于价值主张设计的实践指南：把客户任务、痛点和收益转化为价值主张，并在扩大投入前验证匹配是否真实。"
+  },
+  "recommendation": {
+    "en": "Use this when BMC's Customer Segments and Value Proposition are too generic. It gives teams a concrete way to describe customers, design fit, and connect discovery work to experiments.",
+    "zh": "当 BMC 里的客户细分和价值主张过于泛泛时，推荐用这本。它能把客户描述、价值设计和实验验证连起来，避免价值主张停留在营销口号。"
+  },
+  "authors": ["Alexander Osterwalder", "Yves Pigneur", "Greg Bernarda", "Alan Smith"],
+  "publisher": "Wiley / Strategyzer",
+  "year": 2014,
+  "tags": ["value-proposition", "customer-fit", "discovery"],
+  "relatedCanvasDefIds": ["value-proposition-canvas", "business-model-canvas", "empathy-map", "jobs-to-be-done", "customer-journey", "ad-lib-value-proposition"],
+  "relatedCaseSlugs": ["nespresso", "drybar", "novo-nordisk-novopen", "stitch-fix", "patagonia"],
+  "relatedExperimentSlugs": ["customer-interview", "online-survey", "clickable-prototype", "smoke-test", "storyboard"],
+  "relatedStrategyFrameworkSlugs": ["innovation-metrics"],
+  "sources": [
+    {
+      "label": "Alexander Osterwalder, Yves Pigneur, Greg Bernarda & Alan Smith · Value Proposition Design: How to Create Products and Services Customers Want · Wiley · 2014 · ISBN 978-1118968055 · 320 pages"
+    },
+    {
+      "label": "Strategyzer · Value Proposition Design book page and free preview",
+      "url": "https://www.strategyzer.com/library/value-proposition-design-2"
+    },
+    {
+      "label": "Amazon · Value Proposition Design product page",
+      "url": "https://www.amazon.com/Value-Proposition-Design-Customers-Strategyzer/dp/1118968050"
+    },
+    {
+      "label": "Wiley · Value Proposition Design product page",
+      "url": "https://www.wiley.com/en-us/shop/general-introductory-business-management/value-proposition-design-how-to-create-products-and-services-customers-want-p-9781118968055"
+    }
+  ]
+}

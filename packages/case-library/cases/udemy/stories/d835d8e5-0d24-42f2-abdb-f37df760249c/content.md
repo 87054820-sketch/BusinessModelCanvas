@@ -25,3 +25,6 @@ Three pink-sticky tensions are worth flagging. First, **quality variance** — w
 ## What the case teaches
 
 Udemy's BMC is the cleanest illustration of why **two-sided marketplaces convert into B2B subscription businesses** as they mature. The marketplace creates the catalog at zero capital cost (instructors pay themselves through revenue share). The catalog becomes valuable enough to sell as a bundle. The B2B bundle has dramatically better unit economics. Every successful UGC platform eventually faces this temptation; Udemy executed it more cleanly than most.
+## Free pattern reading
+
+Udemy also has a Free / Freemium pattern element: the consumer marketplace creates a broad, low-friction catalog and awareness funnel, while Udemy Business captures recurring subscription revenue from enterprises that need curated learning at scale. The free or low-cost front door matters because it makes supply, demand, and search data visible before enterprise packaging.

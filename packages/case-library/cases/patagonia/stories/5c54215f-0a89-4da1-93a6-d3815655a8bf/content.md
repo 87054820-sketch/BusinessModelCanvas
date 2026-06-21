@@ -20,6 +20,12 @@ The blue stickies on the canvas are the parts every outdoor-apparel brand must e
 
 The pink stickies acknowledge the tensions. Worn Wear and the lifetime-repair promise are in active conflict with revenue from new sales — the more durable the gear, the longer between repurchases. Patagonia's bet is that brand premium plus new tribes joining offsets the slowdown, but the math is delicate. The 2022 ownership transfer locks in the mission but raises an unanswered question: with Chouinard now in his 80s, who carries the cultural torch when he's gone? And the high price point that funds the 1% donation also caps Gen-Z penetration in a generation that's broke and increasingly buys vintage on Depop.
 
+## Read the Scenario Matrix
+
+::canvas[scenario-matrix]{canvasId="10e75e95-130e-4b73-a0c1-ff37c5241601"}
+
+The scenario matrix turns those tensions into two uncertainties: whether mission premium strengthens or price sensitivity rises, and whether circularity regulation tightens or remains voluntary. Patagonia's robust moves are the ones that work across futures: repair, resale, durability proof, supply-chain transparency, and community activism.
+
 ## What the case teaches
 
 Patagonia's BMC is interesting precisely because the strategic-differentiation cells (yellow) are also the **cost** cells — the differentiation isn't free. The brand has decided, explicitly, to spend its margin on integrity rather than growth. That's a coherent business model, and it works because every part of the canvas has been brought into alignment with that single decision. Most brands that try to copy Patagonia copy the marketing surface (the "purpose" campaigns) but skip the cost; Patagonia's edge is that it's willing to pay the cost.

@@ -1,0 +1,37 @@
+{
+  "slug": "blue-ocean-shift",
+  "type": "book",
+  "title": {
+    "en": "Blue Ocean Shift",
+    "zh": "《Blue Ocean Shift / 蓝海战略 2》"
+  },
+  "summary": {
+    "en": "The follow-up to Blue Ocean Strategy, focused on the human and step-by-step process for moving an existing team or organization from red-ocean competition to market creation.",
+    "zh": "《蓝海战略》的后续实践书，重点不是解释概念，而是说明一个既有团队或组织如何通过步骤化流程，从红海竞争转向市场创造。"
+  },
+  "recommendation": {
+    "en": "Use this when Blue Ocean Strategy has produced a promising new curve but the team still needs a change process: aligning people, exploring noncustomers, choosing moves, and building confidence through evidence.",
+    "zh": "当蓝海战略已经画出新价值曲线，但团队还需要推动转型流程时，推荐读这本：它关注人员对齐、非顾客洞察、战略选择和用证据建立信心。"
+  },
+  "authors": ["W. Chan Kim", "Renée Mauborgne"],
+  "publisher": "Hachette Books / Macmillan",
+  "year": 2017,
+  "tags": ["blue-ocean", "transformation", "market-creation"],
+  "relatedCanvasDefIds": ["blue-ocean-strategy-canvas", "customer-journey", "design-criteria-canvas", "business-model-canvas", "experiment-canvas"],
+  "relatedCaseSlugs": ["cemex", "cirque-du-soleil", "yellow-tail", "qb-house", "citizenm-hotels"],
+  "relatedExperimentSlugs": ["customer-interview", "online-survey", "storyboard", "clickable-prototype"],
+  "relatedStrategyFrameworkSlugs": ["blue-ocean-strategy"],
+  "sources": [
+    {
+      "label": "W. Chan Kim & Renée Mauborgne · Blue Ocean Shift · 2017"
+    },
+    {
+      "label": "Blue Ocean Strategy · Blue Ocean Shift book page",
+      "url": "https://www.blueoceanstrategy.com/books/blue-ocean-shift-book/"
+    },
+    {
+      "label": "Blue Ocean Strategy · Blue Ocean Toolkit",
+      "url": "https://www.blueoceanstrategy.com/tools/"
+    }
+  ]
+}

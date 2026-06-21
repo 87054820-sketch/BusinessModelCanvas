@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 5,
   "cases": [
     { "slug": "swiss-private-banking", "featured": true },
     { "slug": "mobile-telco-unbundling", "featured": true },
@@ -48,12 +48,18 @@
     { "slug": "unbundling-business-models", "featured": true },
     { "slug": "multi-sided-platforms", "featured": true },
     { "slug": "free", "featured": true },
-    { "slug": "open-business-models", "featured": true }
+    { "slug": "open-business-models", "featured": true },
+    { "slug": "from-closed-to-open-innovation", "featured": true },
+    { "slug": "from-sales-to-platform", "featured": true },
+    { "slug": "from-transactional-to-recurring-revenue", "featured": true }
   ],
   "strategyFrameworks": [
     { "slug": "blue-ocean-strategy", "featured": true },
     { "slug": "business-model-environment-scan", "featured": true },
-    { "slug": "business-model-portfolio-management", "featured": true }
+    { "slug": "business-model-portfolio-management", "featured": true },
+    { "slug": "innovation-metrics", "featured": true },
+    { "slug": "scenario-planning", "featured": true },
+    { "slug": "platform-strategy", "featured": true }
   ],
   "experiments": [
     { "slug": "customer-interview", "featured": true },
@@ -68,5 +74,15 @@
     { "slug": "concierge", "featured": true },
     { "slug": "letter-of-intent", "featured": true },
     { "slug": "pre-sale", "featured": true }
+  ],
+  "resources": [
+    { "slug": "business-model-generation", "featured": true },
+    { "slug": "value-proposition-design", "featured": true },
+    { "slug": "testing-business-ideas", "featured": true },
+    { "slug": "the-invincible-company", "featured": true },
+    { "slug": "blue-ocean-strategy", "featured": true },
+    { "slug": "blue-ocean-shift", "featured": true },
+    { "slug": "the-art-of-the-long-view", "featured": true },
+    { "slug": "platform-revolution", "featured": true }
   ]
 }

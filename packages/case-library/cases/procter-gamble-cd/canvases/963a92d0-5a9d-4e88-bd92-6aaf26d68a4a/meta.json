@@ -1,0 +1,26 @@
+{
+  "id": "963a92d0-5a9d-4e88-bd92-6aaf26d68a4a",
+  "projectId": "41aa249b-bdb9-477d-bf63-faefe3db56bb",
+  "defId": "portfolio-map",
+  "title": "宝洁 Connect & Develop 业务组合地图",
+  "language": "zh",
+  "contentDate": "2000",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2000 年后：开放创新作为探索管道",
+  "variant": {
+    "id": "connect-develop-portfolio",
+    "label": {
+      "en": "Connect & Develop portfolio",
+      "zh": "Connect & Develop 组合"
+    },
+    "description": {
+      "en": "How external ideas move from Explore into the mature consumer-goods engine.",
+      "zh": "外部创意如何从探索组合转入成熟消费品引擎。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-20T16:00:00.000Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-20T16:00:00.000Z",
+  "updatedBy": "PinGarden Library"
+}

@@ -1,0 +1,1 @@
+Evidence Scorecard reviews the evidence state of one Explore project or critical assumption. It puts test results, evidence strength, learning velocity, risk reduction, and portfolio decision on one canvas so the team does not only report activity volume.

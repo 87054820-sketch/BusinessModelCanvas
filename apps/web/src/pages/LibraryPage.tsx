@@ -7,8 +7,10 @@ import type {
   CaseLibraryEntry,
   Experiment,
   Lang,
+  LibraryResource,
   StrategyFramework,
 } from '@pingarden/shared';
+import { api, type CanvasDefSummary } from '../api/client';
 import { libraryApi } from '../api/library';
 import { useIdentity } from '../identity/useIdentity';
 import { CaseCard } from '../components/CaseCard';
@@ -19,9 +21,12 @@ import { ExperimentList } from '../components/ExperimentList';
 import { ExperimentDetailModal } from '../components/ExperimentDetailModal';
 import { StrategyFrameworkList } from '../components/StrategyFrameworkList';
 import { StrategyFrameworkDetailModal } from '../components/StrategyFrameworkDetailModal';
+import { ResourceList } from '../components/ResourceList';
+import { ResourceDetailModal } from '../components/ResourceDetailModal';
+import { CanvasMethodList } from '../components/CanvasMethodList';
 import { Pagination } from '../components/Pagination';
 
-type LibraryTab = 'cases' | 'patterns' | 'experiments' | 'strategyFrameworks';
+type LibraryTab = 'cases' | 'canvases' | 'patterns' | 'experiments' | 'strategyFrameworks' | 'resources';
 
 /**
  * Items per page on both the Cases and Patterns tabs. Picked to match
@@ -63,20 +68,25 @@ export function LibraryPage() {
 
   const [cases, setCases] = useState<CaseLibraryEntry[] | null>(null);
   const [patterns, setPatterns] = useState<BusinessModelPattern[] | null>(null);
+  const [canvasDefs, setCanvasDefs] = useState<CanvasDefSummary[] | null>(null);
   const [experiments, setExperiments] = useState<Experiment[] | null>(null);
   const [strategyFrameworks, setStrategyFrameworks] = useState<StrategyFramework[] | null>(null);
+  const [resources, setResources] = useState<LibraryResource[] | null>(null);
   const [previewEntry, setPreviewEntry] = useState<CaseLibraryEntry | null>(null);
   const [selectedPattern, setSelectedPattern] = useState<BusinessModelPattern | null>(null);
   const [selectedExperiment, setSelectedExperiment] = useState<Experiment | null>(null);
   const [selectedStrategyFramework, setSelectedStrategyFramework] = useState<StrategyFramework | null>(null);
+  const [selectedResource, setSelectedResource] = useState<LibraryResource | null>(null);
   const [tab, setTab] = useState<LibraryTab>('cases');
   // Per-tab page state. Reset to 1 when the underlying list reloads or
   // the user switches tab — so coming back to a tab always lands you
   // at the top, not on a "Page 3" they don't remember leaving on.
   const [casesPage, setCasesPage] = useState(1);
+  const [canvasDefsPage, setCanvasDefsPage] = useState(1);
   const [patternsPage, setPatternsPage] = useState(1);
   const [experimentsPage, setExperimentsPage] = useState(1);
   const [strategyFrameworksPage, setStrategyFrameworksPage] = useState(1);
+  const [resourcesPage, setResourcesPage] = useState(1);
   // Anchor for "scroll the list region into view" on page change.
   // Sits above the tab strip so the user sees the new page's first row
   // without scrolling up after clicking Next.
@@ -89,10 +99,14 @@ export function LibraryPage() {
     // mount alongside cases so the Cases tab can render pattern chips
     // immediately (lookup needs the patterns list).
     void libraryApi.listPatterns().then(setPatterns).catch(() => setPatterns([]));
+    // Canvas methods — same templates used by the home page and workspace picker.
+    void api.listDefs().then(setCanvasDefs).catch(() => setCanvasDefs([]));
     // Experiments — same shape as patterns: public, fetched once.
     void libraryApi.listExperiments().then(setExperiments).catch(() => setExperiments([]));
     // Strategy frameworks — public, fetched once for case chips and the tab.
     void libraryApi.listStrategyFrameworks().then(setStrategyFrameworks).catch(() => setStrategyFrameworks([]));
+    // Resources — books, reports, articles, and public sources.
+    void libraryApi.listResources().then(setResources).catch(() => setResources([]));
   }, [identity]);
 
   // Reset pagers whenever the underlying list reloads (defensive: if
@@ -110,6 +124,9 @@ export function LibraryPage() {
   useEffect(() => {
     setStrategyFrameworksPage(1);
   }, [strategyFrameworks]);
+  useEffect(() => {
+    setResourcesPage(1);
+  }, [resources]);
 
   // Smooth-scroll to the list anchor on page change so the user
   // doesn't have to scroll up by hand.
@@ -119,6 +136,10 @@ export function LibraryPage() {
   function handleCasesPageChange(p: number) {
     setCasesPage(p);
     // requestAnimationFrame so the new content has rendered before we scroll
+    requestAnimationFrame(scrollToList);
+  }
+  function handleCanvasDefsPageChange(p: number) {
+    setCanvasDefsPage(p);
     requestAnimationFrame(scrollToList);
   }
   function handlePatternsPageChange(p: number) {
@@ -133,6 +154,10 @@ export function LibraryPage() {
     setStrategyFrameworksPage(p);
     requestAnimationFrame(scrollToList);
   }
+  function handleResourcesPageChange(p: number) {
+    setResourcesPage(p);
+    requestAnimationFrame(scrollToList);
+  }
   // Tab switch: reset pagers + park at the list region. Avoids the
   // surprise of clicking from Cases (page 2) to Patterns (which had
   // its own page 2 from earlier in the session).
@@ -140,9 +165,11 @@ export function LibraryPage() {
     if (next === tab) return;
     setTab(next);
     setCasesPage(1);
+    setCanvasDefsPage(1);
     setPatternsPage(1);
     setExperimentsPage(1);
     setStrategyFrameworksPage(1);
+    setResourcesPage(1);
   }
 
   if (!identity) return null;
@@ -153,7 +180,7 @@ export function LibraryPage() {
     detail: import('@pingarden/shared').CaseLibraryDetail,
   ) {
     setPreviewEntry(null);
-    navigate(`/p/${detail.project.id}`);
+    navigate(`/p/${detail.project.id}`, { state: { caseDetail: detail } });
   }
 
   async function handleFork(entry: CaseLibraryEntry) {
@@ -213,6 +240,15 @@ export function LibraryPage() {
     setPreviewEntry(entry);
   }
 
+  /** Resources tab → Cases tab: open the case preview. */
+  function handleResourceCaseClick(slug: string) {
+    const entry = cases?.find((c) => c.slug === slug);
+    if (!entry) return;
+    setSelectedResource(null);
+    handleTabChange('cases');
+    setPreviewEntry(entry);
+  }
+
   return (
     <main className="mx-auto max-w-6xl px-8 py-6">
       {/* Page header — back link + title + create CTA on the right */}
@@ -251,6 +287,12 @@ export function LibraryPage() {
           count={cases?.length}
         />
         <TabButton
+          active={tab === 'canvases'}
+          onClick={() => handleTabChange('canvases')}
+          label={t('library.tabs.canvases')}
+          count={canvasDefs?.length}
+        />
+        <TabButton
           active={tab === 'patterns'}
           onClick={() => handleTabChange('patterns')}
           label={t('library.tabs.patterns')}
@@ -268,10 +310,17 @@ export function LibraryPage() {
           label={t('library.tabs.strategyFrameworks')}
           count={strategyFrameworks?.length}
         />
+        <TabButton
+          active={tab === 'resources'}
+          onClick={() => handleTabChange('resources')}
+          label={t('library.tabs.resources')}
+          count={resources?.length}
+        />
       </div>
 
       {tab === 'cases' && (
         <section role="tabpanel">
+          <CasesTabIntro />
           {cases === null ? (
             <p className="text-sm text-gray-400">{t('home.loading')}…</p>
           ) : cases.length === 0 ? (
@@ -308,8 +357,36 @@ export function LibraryPage() {
         </section>
       )}
 
+      {tab === 'canvases' && (
+        <section role="tabpanel">
+          <CanvasMethodsTabIntro />
+          {canvasDefs === null ? (
+            <p className="text-sm text-gray-400">{t('home.loading')}…</p>
+          ) : (
+            <>
+              <CanvasMethodList
+                defs={canvasDefs.slice(
+                  (canvasDefsPage - 1) * PAGE_SIZE,
+                  canvasDefsPage * PAGE_SIZE,
+                )}
+                lang={lang}
+                onStart={(defId) => navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`)}
+              />
+              <Pagination
+                total={canvasDefs.length}
+                pageSize={PAGE_SIZE}
+                currentPage={canvasDefsPage}
+                onPageChange={handleCanvasDefsPageChange}
+                className="mt-5"
+              />
+            </>
+          )}
+        </section>
+      )}
+
       {tab === 'patterns' && (
         <section role="tabpanel">
+          <PatternsTabIntro />
           {patterns === null ? (
             <p className="text-sm text-gray-400">{t('home.loading')}…</p>
           ) : (
@@ -388,6 +465,33 @@ export function LibraryPage() {
         </section>
       )}
 
+      {tab === 'resources' && (
+        <section role="tabpanel">
+          <ResourcesTabIntro />
+          {resources === null ? (
+            <p className="text-sm text-gray-400">{t('home.loading')}…</p>
+          ) : (
+            <>
+              <ResourceList
+                resources={resources.slice(
+                  (resourcesPage - 1) * PAGE_SIZE,
+                  resourcesPage * PAGE_SIZE,
+                )}
+                lang={lang}
+                onSelect={setSelectedResource}
+              />
+              <Pagination
+                total={resources.length}
+                pageSize={PAGE_SIZE}
+                currentPage={resourcesPage}
+                onPageChange={handleResourcesPageChange}
+                className="mt-5"
+              />
+            </>
+          )}
+        </section>
+      )}
+
       {/* Case preview modal */}
       <CasePreviewModal
         entry={previewEntry}
@@ -423,6 +527,14 @@ export function LibraryPage() {
         lang={lang}
         onClose={() => setSelectedStrategyFramework(null)}
         onExampleClick={handleStrategyFrameworkExampleClick}
+      />
+
+      {/* Resource detail modal — reading notes / related content / sources */}
+      <ResourceDetailModal
+        resource={selectedResource}
+        lang={lang}
+        onClose={() => setSelectedResource(null)}
+        onCaseClick={handleResourceCaseClick}
       />
     </main>
   );
@@ -465,43 +577,56 @@ function TabButton({
   );
 }
 
-/**
- * Intro block above the Experiments grid. Always-visible, ~3 sentences,
- * bilingual. Frames experiments for users who arrive cold: what they're
- * for, how they connect to canvases, how to actually run one. Uses
- * react-markdown so the body can carry **bold** emphasis on the three
- * picking signals (theme / risk / cost band).
- */
-function ExperimentsTabIntro() {
+function TabIntro({
+  titleKey,
+  bodyKey,
+  tone,
+}: {
+  titleKey: string;
+  bodyKey: string;
+  tone: 'emerald' | 'sky' | 'gray' | 'indigo' | 'amber';
+}) {
   const { t } = useTranslation();
+  const toneClass = {
+    emerald: 'border-emerald-100 bg-emerald-50/60',
+    sky: 'border-sky-100 bg-sky-50/60',
+    gray: 'border-gray-200 bg-gray-50',
+    indigo: 'border-indigo-100 bg-indigo-50/50',
+    amber: 'border-amber-100 bg-amber-50/50',
+  }[tone];
   return (
-    <div className="mb-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
-      <h2 className="text-sm font-semibold text-gray-900">
-        {t('library.experiments.intro.title')}
-      </h2>
+    <div className={`mb-5 rounded-xl border p-4 ${toneClass}`}>
+      <h2 className="text-sm font-semibold text-gray-900">{t(titleKey)}</h2>
       <div
         className="mt-1.5 text-[12px] leading-relaxed text-gray-600
                    [&_strong]:font-semibold [&_strong]:text-gray-900"
       >
-        <ReactMarkdown>{t('library.experiments.intro.body')}</ReactMarkdown>
+        <ReactMarkdown>{t(bodyKey)}</ReactMarkdown>
       </div>
     </div>
   );
 }
 
+function CasesTabIntro() {
+  return <TabIntro titleKey="library.cases.intro.title" bodyKey="library.cases.intro.body" tone="emerald" />;
+}
+
+function CanvasMethodsTabIntro() {
+  return <TabIntro titleKey="library.canvasMethods.intro.title" bodyKey="library.canvasMethods.intro.body" tone="sky" />;
+}
+
+function PatternsTabIntro() {
+  return <TabIntro titleKey="library.patterns.intro.title" bodyKey="library.patterns.intro.body" tone="gray" />;
+}
+
+function ExperimentsTabIntro() {
+  return <TabIntro titleKey="library.experiments.intro.title" bodyKey="library.experiments.intro.body" tone="gray" />;
+}
+
 function StrategyFrameworksTabIntro() {
-  const { t } = useTranslation();
-  return (
-    <div className="mb-5 rounded-xl border border-indigo-100 bg-indigo-50/50 p-4">
-      <h2 className="text-sm font-semibold text-gray-900">
-        {t('library.strategyFrameworks.intro.title')}
-      </h2>
-      <div
-        className="mt-1.5 text-[12px] leading-relaxed text-gray-600
-                   [&_strong]:font-semibold [&_strong]:text-gray-900"
-      >
-        <ReactMarkdown>{t('library.strategyFrameworks.intro.body')}</ReactMarkdown>
-      </div>
-    </div>
-  );
+  return <TabIntro titleKey="library.strategyFrameworks.intro.title" bodyKey="library.strategyFrameworks.intro.body" tone="indigo" />;
+}
+
+function ResourcesTabIntro() {
+  return <TabIntro titleKey="library.resources.intro.title" bodyKey="library.resources.intro.body" tone="amber" />;
 }

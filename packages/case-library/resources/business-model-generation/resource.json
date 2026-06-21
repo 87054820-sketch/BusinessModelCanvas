@@ -1,0 +1,37 @@
+{
+  "slug": "business-model-generation",
+  "type": "book",
+  "title": {
+    "en": "Business Model Generation",
+    "zh": "《Business Model Generation / 商业模式新生代》"
+  },
+  "summary": {
+    "en": "The foundational Strategyzer handbook behind Business Model Canvas: nine building blocks, recurring model patterns, visual design techniques, strategy questions, and a process for moving from idea to model.",
+    "zh": "Business Model Canvas 背后的基础手册：用九大模块描述商业模式，并系统介绍模式类型、视觉设计方法、战略提问和从想法到模型的设计流程。"
+  },
+  "recommendation": {
+    "en": "Read this first when a team is still treating BMC as a blank form. It explains what each block means, how the blocks work as a system, and how patterns such as Long Tail, Multi-Sided Platforms, Free, Open, and Unbundling change the model logic.",
+    "zh": "当团队还只是把 BMC 当作空白表格填写时，优先读这本。它讲清九大模块如何构成系统，并解释长尾、多边平台、免费、开放、拆分等模式如何改变商业逻辑。"
+  },
+  "authors": ["Alexander Osterwalder", "Yves Pigneur"],
+  "publisher": "Wiley / Strategyzer",
+  "year": 2010,
+  "tags": ["business-model-canvas", "patterns", "strategy-design"],
+  "relatedCanvasDefIds": ["business-model-canvas", "value-proposition-canvas", "business-model-environment", "portfolio-map"],
+  "relatedCaseSlugs": ["swiss-private-banking", "lulu-com", "lego-long-tail", "google-multi-sided", "nintendo-wii", "gillette", "nespresso"],
+  "relatedPatternSlugs": ["unbundling-business-models", "long-tail", "multi-sided-platforms", "free", "open-business-models"],
+  "relatedStrategyFrameworkSlugs": ["business-model-environment-scan"],
+  "sources": [
+    {
+      "label": "Alexander Osterwalder & Yves Pigneur · Business Model Generation · Wiley · 2010"
+    },
+    {
+      "label": "Strategyzer · Business Model Generation book page",
+      "url": "https://www.strategyzer.com/library/business-model-generation"
+    },
+    {
+      "label": "Wiley · Business Model Generation",
+      "url": "https://www.wiley.com/en-us/Business+Model+Generation%3A+A+Handbook+for+Visionaries%2C+Game+Changers%2C+and+Challengers-p-9780470876411"
+    }
+  ]
+}

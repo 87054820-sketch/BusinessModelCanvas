@@ -34,8 +34,7 @@
     { "slug": "nestle-portfolio", "role": "primary" },
     { "slug": "bosch-accelerator", "role": "primary" },
     { "slug": "alibaba-group", "role": "primary" },
-    { "slug": "procter-gamble-cd", "role": "secondary" },
-    { "slug": "nvidia-cuda", "role": "secondary" }
+    { "slug": "procter-gamble-cd", "role": "secondary" }
   ],
   "relatedCanvasDefIds": [
     "portfolio-map",

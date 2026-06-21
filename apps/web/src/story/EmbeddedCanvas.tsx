@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import type { CanvasMeta, Lang } from '@pingarden/shared';
 import { effectiveObjectTypes } from '@pingarden/shared';
 import { Link } from 'react-router-dom';
@@ -21,7 +22,29 @@ interface Props {
 
 export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: Props) {
   const { t } = useTranslation();
-  const { doc, ready } = useReadOnlyYDoc(canvas?.id);
+  const rootRef = useRef<HTMLElement | null>(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const { doc, ready } = useReadOnlyYDoc(shouldLoad ? canvas?.id : undefined);
+
+  useEffect(() => {
+    setShouldLoad(false);
+  }, [canvas?.id]);
+
+  useEffect(() => {
+    const node = rootRef.current;
+    if (!node || shouldLoad) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '320px 0px' },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [shouldLoad]);
 
   if (!canvas) {
     return (
@@ -32,7 +55,7 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
   }
 
   return (
-    <section className="my-10 overflow-hidden rounded-[28px] border border-stone-200 bg-white shadow-[0_24px_70px_rgba(42,107,107,0.10)]">
+    <section ref={rootRef} className="my-10 overflow-hidden rounded-[28px] border border-stone-200 bg-white shadow-[0_24px_70px_rgba(42,107,107,0.10)]">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-200 bg-gradient-to-r from-[#F3F0EA] via-white to-[#EAF3F1] px-5 py-4">
         <div>
           <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#2A6B6B]">
@@ -52,7 +75,14 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
       </div>
       <div className="h-[520px] bg-[#FAF8F3] p-4">
         <div className="relative flex h-full w-full flex-col overflow-hidden rounded-2xl bg-white shadow-inner">
-          {ready && doc ? (
+          {!shouldLoad ? (
+            <div className="flex h-full flex-col items-center justify-center gap-3 px-6 text-center text-sm text-gray-500">
+              <div className="rounded-full border border-[#B8D4D0] bg-white px-4 py-2 font-semibold text-[#2A6B6B]">
+                {t('story.embeddedCanvas')}
+              </div>
+              <p>{t('story.loadingCanvas')}</p>
+            </div>
+          ) : ready && doc ? (
             <>
               {/* Top legend strip — 48px (h-12) reserved row that
                   hosts the pin-class palette (left) and sticky-color

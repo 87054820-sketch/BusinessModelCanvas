@@ -30,7 +30,9 @@
   "canvasCount": 4,
   "storyCount": 2,
   "appliesStrategyFrameworks": [
-    "blue-ocean-strategy",
-    "business-model-portfolio-management"
+    "blue-ocean-strategy"
+  ],
+  "appliesPatterns": [
+    "from-sales-to-platform"
   ]
 }

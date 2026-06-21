@@ -1,7 +1,7 @@
 ---
 name: pingarden
 description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js` and prompt the user to follow INSTALL.md §三 to symlink it.
-version: 0.4.1-2d59da67
+version: 0.4.1-9685e9c9
 ---
 
 # PinGarden — official skill
@@ -39,13 +39,20 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `canvases/customer-journey.en.md` / `canvases/customer-journey.zh.md`
 - `canvases/design-criteria-canvas.en.md` / `canvases/design-criteria-canvas.zh.md`
 - `canvases/empathy-map.en.md` / `canvases/empathy-map.zh.md`
+- `canvases/evidence-scorecard.en.md` / `canvases/evidence-scorecard.zh.md`
 - `canvases/experiment-canvas.en.md` / `canvases/experiment-canvas.zh.md`
+- `canvases/innovation-culture-map.en.md` / `canvases/innovation-culture-map.zh.md`
 - `canvases/jobs-to-be-done.en.md` / `canvases/jobs-to-be-done.zh.md`
+- `canvases/platform-ecosystem-map.en.md` / `canvases/platform-ecosystem-map.zh.md`
 - `canvases/portfolio-map.en.md` / `canvases/portfolio-map.zh.md`
+- `canvases/scenario-matrix.en.md` / `canvases/scenario-matrix.zh.md`
 - `canvases/value-proposition-canvas.en.md` / `canvases/value-proposition-canvas.zh.md`
 
 ### Business model patterns (one per pattern, both languages)
 - `patterns/free.en.md` / `patterns/free.zh.md`
+- `patterns/from-closed-to-open-innovation.en.md` / `patterns/from-closed-to-open-innovation.zh.md`
+- `patterns/from-sales-to-platform.en.md` / `patterns/from-sales-to-platform.zh.md`
+- `patterns/from-transactional-to-recurring-revenue.en.md` / `patterns/from-transactional-to-recurring-revenue.zh.md`
 - `patterns/long-tail.en.md` / `patterns/long-tail.zh.md`
 - `patterns/multi-sided-platforms.en.md` / `patterns/multi-sided-platforms.zh.md`
 - `patterns/open-business-models.en.md` / `patterns/open-business-models.zh.md`
@@ -69,6 +76,9 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `strategy-frameworks/blue-ocean-strategy.en.md` / `strategy-frameworks/blue-ocean-strategy.zh.md`
 - `strategy-frameworks/business-model-environment-scan.en.md` / `strategy-frameworks/business-model-environment-scan.zh.md`
 - `strategy-frameworks/business-model-portfolio-management.en.md` / `strategy-frameworks/business-model-portfolio-management.zh.md`
+- `strategy-frameworks/innovation-metrics.en.md` / `strategy-frameworks/innovation-metrics.zh.md`
+- `strategy-frameworks/platform-strategy.en.md` / `strategy-frameworks/platform-strategy.zh.md`
+- `strategy-frameworks/scenario-planning.en.md` / `strategy-frameworks/scenario-planning.zh.md`
 
 ### Workflows
 - `workflows/discover.md` — first call into a fresh session
@@ -79,6 +89,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `workflows/snapshot.md` — when to milestone, how to restore
 - `workflows/translate.md` — en ⇄ zh round trip
 - `workflows/case-library.md` — read curated company cases for inspiration, or fork one to start fast
+- `workflows/library-evolution.md` — when adding a new canvas, case, pattern, experiment, strategy framework, or resource: decide the content layer, integrate it into cases/stories, validate, then regenerate the skill
 - `workflows/patterns.md` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern
 - `workflows/authoring-patterns.md` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)
 - `workflows/experiments.md` — when the user has a riskiest assumption to test: classify it as Desirability / Feasibility / Viability and recommend 2–3 experiments from the library matched on theme + risk + cost

@@ -55,13 +55,19 @@ export interface CanvasDefDetail {
   knowledge: Record<Lang, CanvasKnowledge>;
 }
 
+const defDetailCache = new Map<string, Promise<CanvasDefDetail>>();
+
 export const api = {
   // canvas defs
   listDefs(): Promise<CanvasDefSummary[]> {
     return fetchJson<CanvasDefSummary[]>(`${BASE}/canvas-defs`);
   },
   getDef(id: string): Promise<CanvasDefDetail> {
-    return fetchJson<CanvasDefDetail>(`${BASE}/canvas-defs/${id}`);
+    const cached = defDetailCache.get(id);
+    if (cached) return cached;
+    const promise = fetchJson<CanvasDefDetail>(`${BASE}/canvas-defs/${id}`);
+    defDetailCache.set(id, promise);
+    return promise;
   },
   bgUrl(defId: string, lang: Lang): string {
     return `${BASE}/canvas-defs/${defId}/bg/${lang}`;

@@ -31,5 +31,8 @@
   "storyCount": 2,
   "appliesStrategyFrameworks": [
     "blue-ocean-strategy"
+  ],
+  "appliesPatterns": [
+    "from-transactional-to-recurring-revenue"
   ]
 }

@@ -168,7 +168,7 @@ export function ProjectSidebar({
   }
 
   return (
-    <aside className="flex h-full w-[260px] flex-shrink-0 flex-col border-r border-gray-200 bg-white transition-[width] duration-150">
+    <aside className="relative z-40 flex h-full w-[260px] flex-shrink-0 flex-col border-r border-gray-200 bg-white transition-[width] duration-150">
       <div className="flex items-center justify-between border-b border-gray-200 pr-2">
         <button
           type="button"

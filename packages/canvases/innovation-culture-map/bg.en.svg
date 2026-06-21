@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880" width="1280" height="880" preserveAspectRatio="xMidYMid meet">
+  <rect x="0" y="0" width="1280" height="880" fill="#FAFAF7"/>
+
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <rect x="40" y="24" width="1200" height="76"/>
+    <rect x="255" y="120" width="470" height="48"/>
+    <rect x="765" y="120" width="470" height="48"/>
+    <rect x="255" y="188" width="470" height="150"/>
+    <rect x="765" y="188" width="470" height="150"/>
+    <rect x="255" y="358" width="470" height="210"/>
+    <rect x="765" y="358" width="470" height="210"/>
+    <rect x="255" y="588" width="470" height="250"/>
+    <rect x="765" y="588" width="470" height="250"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" fill="#111827">
+    <text x="64" y="72" font-size="28" font-weight="800">Innovation Culture Map</text>
+    <text x="1040" y="60" font-size="13" font-weight="600" text-anchor="end">From current culture to desired culture</text>
+    <text x="1040" y="78" font-size="12" fill="#6B7280" text-anchor="end">Outcomes · Behaviors · Enablers / Blockers</text>
+
+    <text x="490" y="151" font-size="20" font-weight="800" text-anchor="middle">Current Innovation Culture</text>
+    <text x="1000" y="151" font-size="20" font-weight="800" text-anchor="middle">Desired Innovation Culture</text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" fill="#111827">
+    <text x="64" y="228" font-size="30" font-weight="800">Outcomes</text>
+    <text x="64" y="250" font-size="12" fill="#6B7280">What does culture produce?</text>
+
+    <text x="64" y="398" font-size="30" font-weight="800">Behaviors</text>
+    <text x="64" y="420" font-size="12" fill="#6B7280">What do people repeatedly do?</text>
+
+    <text x="64" y="628" font-size="30" font-weight="800">Enablers / Blockers</text>
+    <text x="64" y="650" font-size="12" fill="#6B7280">What makes behaviors happen or stop?</text>
+  </g>
+
+  <g stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke">
+    <line x1="745" y1="120" x2="745" y2="838"/>
+    <line x1="40" y1="348" x2="1240" y2="348"/>
+    <line x1="40" y1="578" x2="1240" y2="578"/>
+  </g>
+</svg>

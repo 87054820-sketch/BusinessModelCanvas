@@ -41,7 +41,8 @@
   "storyCount": 2,
   "appliesPatterns": [
     "multi-sided-platforms",
-    "open-business-models"
+    "open-business-models",
+    "from-closed-to-open-innovation"
   ],
   "appliesPatternSubtypes": {
     "open-business-models": "outside-in"

@@ -46,7 +46,12 @@ async function main() {
   const bundleStorage = await BundleStorage.load(config.caseLibraryDir);
   const storage = new FederatedStorage(userStorage, bundleStorage);
   app.log.info(
-    { dataDir: config.dataDir, caseLibraryDir: config.caseLibraryDir, libraryCases: bundleStorage.size },
+    {
+      dataDir: config.dataDir,
+      caseLibraryDir: config.caseLibraryDir,
+      libraryCases: bundleStorage.size,
+      libraryResources: bundleStorage.listResources().length,
+    },
     'Using FederatedStorage (user FileSystemStorage + read-only BundleStorage)',
   );
 

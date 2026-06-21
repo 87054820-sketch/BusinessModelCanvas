@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import remarkCjkFriendly from 'remark-cjk-friendly';
+import remarkGfm from 'remark-gfm';
 import type { CanvasMeta, Lang } from '@pingarden/shared';
 import { parseStoryBlocks } from './storyDirectives';
 import { EmbeddedCanvas } from './EmbeddedCanvas';
@@ -23,7 +24,7 @@ interface Props {
  * Same plugin should be added to any other react-markdown call site —
  * see `apps/web/src/components/Markdown.tsx`.
  */
-const REMARK_PLUGINS = [remarkCjkFriendly];
+const REMARK_PLUGINS = [remarkCjkFriendly, remarkGfm];
 
 export function StoryRenderer({ content, projectId, canvases, lang, displayName }: Props) {
   const blocks = parseStoryBlocks(content);

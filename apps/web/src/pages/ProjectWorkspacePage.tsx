@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import type {
   CanvasDef,
   CanvasI18n,
   CanvasMeta,
+  CaseLibraryDetail,
   CaseLibraryEntry,
   ColorLegendEntry,
   Lang,
@@ -116,6 +117,8 @@ export function ProjectWorkspacePage() {
     storyId?: string;
   }>();
   const navigate = useNavigate();
+  const location = useLocation();
+  const preloadedCaseDetail = (location.state as { caseDetail?: CaseLibraryDetail } | null)?.caseDetail;
   const { identity } = useIdentity();
 
   const [project, setProject] = useState<Project | null>(null);
@@ -232,6 +235,10 @@ export function ProjectWorkspacePage() {
       setCaseEntry(null);
       return;
     }
+    if (preloadedCaseDetail?.case.slug === project.companySlug) {
+      setCaseEntry(preloadedCaseDetail.case);
+      return;
+    }
     libraryApi
       .get(project.companySlug, identity.displayName)
       .then((detail) => {
@@ -243,7 +250,7 @@ export function ProjectWorkspacePage() {
     return () => {
       cancelled = true;
     };
-  }, [readOnly, project?.companySlug, identity]);
+  }, [readOnly, project?.companySlug, identity, preloadedCaseDetail]);
 
   /**
    * Project shape rendered everywhere: identical to `project` for
@@ -316,6 +323,12 @@ export function ProjectWorkspacePage() {
   useEffect(() => {
     if (!projectId || !identity) return;
     let cancelled = false;
+    if (preloadedCaseDetail?.project.id === projectId) {
+      setProject(preloadedCaseDetail.project);
+      setCanvases(preloadedCaseDetail.canvases);
+      setStories(preloadedCaseDetail.stories);
+      return;
+    }
     Promise.all([
       projectsApi.get(projectId, identity.displayName),
       projectsApi.listCanvases(projectId, identity.displayName),
@@ -334,7 +347,7 @@ export function ProjectWorkspacePage() {
     return () => {
       cancelled = true;
     };
-  }, [projectId, identity, navigate]);
+  }, [projectId, identity, navigate, preloadedCaseDetail]);
 
   // Choose the active canvas: explicit param > most recently updated > none.
   // For BARE project URLs (no canvasId, no storyId), prefer to land on

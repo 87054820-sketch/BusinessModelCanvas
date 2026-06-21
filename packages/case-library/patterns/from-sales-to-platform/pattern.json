@@ -1,0 +1,31 @@
+{
+  "slug": "from-sales-to-platform",
+  "name": {
+    "en": "From Sales to Platform",
+    "zh": "从销售到平台"
+  },
+  "summary": {
+    "en": "A shift pattern where a company moves from selling products or services one transaction at a time to orchestrating a platform where third parties, developers, partners, or users create compounding value.",
+    "zh": "一种迁移模式：公司从逐笔销售产品或服务，转向编排一个让第三方、开发者、伙伴或用户共同创造复利价值的平台。"
+  },
+  "sources": [
+    { "label": "Osterwalder et al. · The Invincible Company · Wiley · 2020 · Shift Pattern Library" }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "cite": "Invincible Company 2020",
+      "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley",
+      "year": 2020,
+      "pages": "Shift Pattern Library: From Sales to Platform",
+      "note": {
+        "en": "Defines platform shifts as a way for established models to create stronger networked positions.",
+        "zh": "把平台迁移定义为成熟模式建立更强网络化位置的方法。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "nvidia-cuda", "role": "primary" },
+    { "slug": "alibaba-group", "role": "secondary" }
+  ]
+}

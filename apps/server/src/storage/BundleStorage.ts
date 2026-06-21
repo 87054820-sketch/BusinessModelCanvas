@@ -8,6 +8,8 @@ import type {
   CaseLibraryEntry,
   Experiment,
   Lang,
+  LibraryResource,
+  LibraryResourceDetail,
   Project,
   Snapshot,
   SnapshotKind,
@@ -40,6 +42,8 @@ interface CaseLibraryManifest {
   experiments?: Array<{ slug: string; featured?: boolean }>;
   /** Optional through v3 manifests; required in v4+. */
   strategyFrameworks?: Array<{ slug: string; featured?: boolean }>;
+  /** Optional through v4 manifests; required in v5+. */
+  resources?: Array<{ slug: string; featured?: boolean }>;
 }
 
 /**
@@ -99,6 +103,15 @@ interface BundleExperimentRecord {
   experiment: Experiment;
 }
 
+/** Resolved index entry for one curated reference resource. */
+interface BundleResourceRecord {
+  slug: string;
+  resourceDir: string;
+  index: number;
+  featured: boolean;
+  resource: LibraryResource;
+}
+
 /**
  * Read-only storage backend that exposes the bundled case library
  * (`packages/case-library/` in dev; `<.app>/Resources/case-library/`
@@ -135,6 +148,8 @@ export class BundleStorage implements CanvasStorage {
   private readonly experimentsBySlug = new Map<string, BundleExperimentRecord>();
   /** strategy framework slug → record (used by /library/strategy-frameworks routes). */
   private readonly strategyFrameworksBySlug = new Map<string, BundleStrategyFrameworkRecord>();
+  /** resource slug → record (used by /library/resources routes). */
+  private readonly resourcesBySlug = new Map<string, BundleResourceRecord>();
 
   private constructor(public readonly bundleDir: string) {}
 
@@ -159,6 +174,7 @@ export class BundleStorage implements CanvasStorage {
     this.patternsBySlug.clear();
     this.experimentsBySlug.clear();
     this.strategyFrameworksBySlug.clear();
+    this.resourcesBySlug.clear();
     await this.scan();
   }
 
@@ -271,6 +287,33 @@ export class BundleStorage implements CanvasStorage {
 
   hasExperiment(slug: string): boolean {
     return this.experimentsBySlug.has(slug);
+  }
+
+  // ─── resource accessors (used by /library/resources routes) ────────
+
+  listResources(): LibraryResource[] {
+    return [...this.resourcesBySlug.values()]
+      .sort((a, b) => a.index - b.index)
+      .map((rec) => rec.resource);
+  }
+
+  async getResource(slug: string): Promise<LibraryResourceDetail | null> {
+    const rec = this.resourcesBySlug.get(slug);
+    if (!rec) return null;
+    const description = {
+      en: await readDescriptionMd(rec.resourceDir, 'en'),
+      zh: await readDescriptionMd(rec.resourceDir, 'zh'),
+    };
+    const relatedCases: CaseLibraryEntry[] = [];
+    for (const caseSlug of rec.resource.relatedCaseSlugs ?? []) {
+      const c = this.bySlug.get(caseSlug)?.caseJson;
+      if (c) relatedCases.push(c);
+    }
+    return { resource: rec.resource, description, relatedCases };
+  }
+
+  hasResource(slug: string): boolean {
+    return this.resourcesBySlug.has(slug);
   }
 
   hasProject(id: string): boolean {
@@ -493,6 +536,29 @@ export class BundleStorage implements CanvasStorage {
         // Same robustness story as cases / patterns / experiments.
       }
     }
+
+    // Resources are optional through v4 manifests; absent → empty list.
+    const resourceEntries = Array.isArray(manifest.resources) ? manifest.resources : [];
+    for (let i = 0; i < resourceEntries.length; i++) {
+      const entry = resourceEntries[i]!;
+      try {
+        const record = await this.loadResource(entry.slug, i, !!entry.featured);
+        this.resourcesBySlug.set(record.slug, record);
+      } catch {
+        // Same robustness story as other library sections.
+      }
+    }
+  }
+
+  private async loadResource(
+    slug: string,
+    orderIndex: number,
+    featured: boolean,
+  ): Promise<BundleResourceRecord> {
+    const resourceDir = join(this.bundleDir, 'resources', slug);
+    const resourceJsonRaw = await fs.readFile(join(resourceDir, 'resource.json'), 'utf8');
+    const resource = JSON.parse(resourceJsonRaw) as LibraryResource;
+    return { slug: resource.slug, resourceDir, index: orderIndex, featured, resource };
   }
 
   private async loadStrategyFramework(

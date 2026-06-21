@@ -1,0 +1,36 @@
+{
+  "slug": "blue-ocean-strategy",
+  "type": "book",
+  "title": {
+    "en": "Blue Ocean Strategy",
+    "zh": "《Blue Ocean Strategy / 蓝海战略》"
+  },
+  "summary": {
+    "en": "A strategy reference for creating uncontested market space through value innovation, strategy canvas, four actions, six paths, and demand creation beyond existing industry boundaries.",
+    "zh": "一本关于开创新市场空间的战略参考书，核心是价值创新、战略布局图、四步动作框架、六条路径，以及突破既有产业边界创造新需求。"
+  },
+  "recommendation": {
+    "en": "Use this when the team is trapped in competitor comparison. It helps turn a BMC or value proposition into a differentiated strategic profile rather than another feature-by-feature race.",
+    "zh": "当团队陷入竞品对比和功能竞赛时，推荐用这本。它能把 BMC 或价值主张转换成差异化战略轮廓，而不是继续在同一条赛道上加功能。"
+  },
+  "authors": ["W. Chan Kim", "Renée Mauborgne"],
+  "publisher": "Harvard Business Review Press",
+  "year": 2015,
+  "tags": ["blue-ocean", "value-innovation", "strategy-canvas"],
+  "relatedCanvasDefIds": ["blue-ocean-strategy-canvas", "business-model-canvas", "value-proposition-canvas", "design-criteria-canvas"],
+  "relatedCaseSlugs": ["cirque-du-soleil", "yellow-tail", "qb-house", "nintendo-wii"],
+  "relatedStrategyFrameworkSlugs": ["blue-ocean-strategy"],
+  "sources": [
+    {
+      "label": "W. Chan Kim & Renée Mauborgne · Blue Ocean Strategy, Expanded Edition · Harvard Business Review Press · 2015"
+    },
+    {
+      "label": "Blue Ocean Strategy · Strategy Canvas tool",
+      "url": "https://www.blueoceanstrategy.com/tools/strategy-canvas/"
+    },
+    {
+      "label": "Harvard Business Publishing · Blue Ocean Strategy, Expanded Edition",
+      "url": "https://hbsp.harvard.edu/product/13892-HBK-ENG"
+    }
+  ]
+}

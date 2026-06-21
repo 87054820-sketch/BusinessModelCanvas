@@ -27,9 +27,10 @@
   ],
   "thumbnailDefId": "portfolio-map",
   "projectId": "79d422da-b8fa-4a82-bc5d-e2195fe6e50a",
-  "canvasCount": 4,
+  "canvasCount": 6,
   "storyCount": 2,
   "appliesStrategyFrameworks": [
-    "business-model-portfolio-management"
+    "business-model-portfolio-management",
+    "innovation-metrics"
   ]
 }

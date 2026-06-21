@@ -1,0 +1,53 @@
+{
+  "slug": "innovation-metrics",
+  "name": {
+    "en": "Innovation Metrics",
+    "zh": "创新指标"
+  },
+  "summary": {
+    "en": "A framework for measuring Explore work by evidence strength, learning velocity, risk reduction, and portfolio decisions instead of mature-business KPIs too early.",
+    "zh": "一套衡量探索型创新的框架：用证据强度、学习速度、风险下降和组合决策，而不是过早套用成熟业务 KPI。"
+  },
+  "sources": [
+    {
+      "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley · 2020"
+    },
+    {
+      "label": "David J. Bland & Alexander Osterwalder · Testing Business Ideas · Wiley · 2019"
+    }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "cite": "Osterwalder et al. 2020",
+      "label": "The Invincible Company · Wiley",
+      "year": 2020,
+      "pages": "Innovation Metrics and Portfolio sections",
+      "note": {
+        "en": "Main source for measuring Explore portfolios with evidence, risk, and portfolio movement rather than early revenue certainty.",
+        "zh": "用证据、风险和组合移动衡量探索组合，而不是过早要求收入确定性的主要来源。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "Bland & Osterwalder 2019",
+      "label": "Testing Business Ideas · Wiley",
+      "year": 2019,
+      "note": {
+        "en": "Experiment design source for evidence strength, pass/fail criteria, and learning from falsifiable tests.",
+        "zh": "实验设计来源，支撑证据强度、通过/失败标准和可证伪学习。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "bosch-accelerator", "role": "primary" },
+    { "slug": "ping-an-group", "role": "primary" },
+    { "slug": "procter-gamble-cd", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "evidence-scorecard",
+    "experiment-canvas",
+    "portfolio-map",
+    "innovation-culture-map"
+  ]
+}

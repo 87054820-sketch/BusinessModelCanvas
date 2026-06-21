@@ -53,12 +53,7 @@
   ],
   "examples": [
     { "slug": "patagonia", "role": "primary" },
-    { "slug": "carvana", "role": "primary" },
-    { "slug": "uber", "role": "primary" },
-    { "slug": "airbnb", "role": "primary" },
-    { "slug": "alibaba-group", "role": "secondary" },
-    { "slug": "cemex", "role": "secondary" },
-    { "slug": "transsion-africa", "role": "secondary" }
+    { "slug": "alibaba-group", "role": "secondary" }
   ],
   "relatedCanvasDefIds": [
     "business-model-environment",

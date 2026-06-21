@@ -42,7 +42,8 @@
   "canvasCount": 4,
   "storyCount": 2,
   "appliesPatterns": [
-    "free"
+    "free",
+    "from-transactional-to-recurring-revenue"
   ],
   "appliesPatternSubtypes": {
     "free": "bait-and-hook"

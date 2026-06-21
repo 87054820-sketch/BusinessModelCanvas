@@ -101,6 +101,7 @@ const DisplayConfigSchema = z.object({
       showBlockLabels: z.boolean().optional(),
       showBlockPrompts: z.boolean().optional(),
       groupLabels: z.array(GroupLabelSchema).optional(),
+      showPinConnections: z.boolean().optional(),
     })
     .optional(),
   preview: z

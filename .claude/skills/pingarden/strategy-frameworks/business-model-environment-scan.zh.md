@@ -40,12 +40,7 @@
 ## Example cases shipped in this skill
 
 - `patagonia` (primary)
-- `carvana` (primary)
-- `uber` (primary)
-- `airbnb` (primary)
 - `alibaba-group` (secondary)
-- `cemex` (secondary)
-- `transsion-africa` (secondary)
 
 To explore an example case, follow with `pingarden case read <slug> --json`. To inspect the method itself, use `pingarden strategy-framework get business-model-environment-scan --json`.
 

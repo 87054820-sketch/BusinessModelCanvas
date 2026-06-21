@@ -29,6 +29,12 @@ The reason Airbnb worked when CouchSurfing and Craigslist 'rooms for rent' didn'
 
 None of these were technically hard. The combination took Airbnb ~5 years to get right. By 2014 the trust system was strong enough that guest behaviour shifted from 'I'll try it once cautiously' to 'this is my default booking channel for trips'.
 
+## Read the Platform Ecosystem Map
+
+::canvas[platform-ecosystem-map]{canvasId="e5a4b289-1636-4cda-8607-84f8d38d3a21"}
+
+The ecosystem map shows why Airbnb is not just a travel booking BMC. Its core interaction links guests, hosts, listings, payment escrow, and reviews into a repeated trust loop. Network effects come from inventory depth and review history, while governance and regulation determine whether growth remains trusted city by city.
+
 ## The 2020 IPO + COVID pivot
 
 Airbnb filed its IPO in November 2020, in the middle of the worst travel year on record. The company had cut staff by 25% in May 2020 and seen revenue drop ~70% in Q2. The IPO worked anyway — closing at $146/share day one (vs $68 IPO price), valuing the company at ~$87B. The market saw what the management team was already executing on: **the guest mix had shifted from 2-3 night city-break bookings to 28+ night long-stays + 'live anywhere' digital nomad bookings.**

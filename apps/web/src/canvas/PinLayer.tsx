@@ -23,9 +23,9 @@ interface Props {
 
 /**
  * Universal pin layer — runs on every canvas. Renders:
- *   1. One polyline per PinClass through that class's pins, sorted by x
- *      (auto-connection — same on Strategy Canvas value curves and
- *      anywhere else).
+ *   1. Optional one polyline per PinClass through that class's pins,
+ *      sorted by x. Enabled by default only for chart-canvas value curves
+ *      or when the canvas manifest explicitly opts in.
  *   2. Each pin as its class's icon in its class's color, draggable.
  *   3. The active class's pins get a slightly heavier stroke when
  *      selected, so the user can spot which group they're editing.
@@ -39,7 +39,7 @@ export function PinLayer({ doc, def, toSvgPoint, snapX, readonly = false }: Prop
   const classes = usePinClasses(doc);
   const selection = useSelection((s) => s.selection);
   const selectPin = useSelection((s) => s.selectPin);
-  void def;
+  const showConnections = def.display?.canvas?.showPinConnections ?? def.plugin === 'chart-canvas';
 
   // Group pins by classId once per render so the polyline pass and the
   // marker pass both see the same ordering.
@@ -63,7 +63,7 @@ export function PinLayer({ doc, def, toSvgPoint, snapX, readonly = false }: Prop
     <g aria-label="pins">
       {/* polylines under markers — connect pins of each class. Skip
           single-pin classes (no line to draw). */}
-      {[...grouped.entries()].map(([classId, group]) => {
+      {showConnections && [...grouped.entries()].map(([classId, group]) => {
         if (group.length < 2) return null;
         const cls = classById.get(classId);
         if (!cls) return null;

@@ -1,0 +1,57 @@
+{
+  "slug": "platform-strategy",
+  "name": {
+    "en": "Platform Strategy",
+    "zh": "平台战略"
+  },
+  "summary": {
+    "en": "A framework for analyzing multi-sided ecosystems through participant sides, core interactions, network effects, governance, trust, monetization, and regulatory risk.",
+    "zh": "一套分析多边生态系统的框架：看清参与方、核心交互、网络效应、治理、信任、变现和监管风险。"
+  },
+  "sources": [
+    {
+      "label": "Geoffrey G. Parker, Marshall W. Van Alstyne & Sangeet Paul Choudary · Platform Revolution · W. W. Norton & Company · 2016"
+    },
+    {
+      "label": "Alexander Osterwalder & Yves Pigneur · Business Model Generation · Wiley · 2010 · Multi-sided platforms pattern"
+    }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "cite": "Parker et al. 2016",
+      "label": "Platform Revolution · W. W. Norton & Company",
+      "year": 2016,
+      "note": {
+        "en": "Core source for network effects, platform governance, openness, launch, and monetization trade-offs.",
+        "zh": "网络效应、平台治理、开放性、启动和变现取舍的核心来源。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "BMG 2010",
+      "label": "Business Model Generation · Wiley",
+      "year": 2010,
+      "pages": "Multi-sided platforms pattern",
+      "note": {
+        "en": "Business-model pattern source for understanding platform sides through BMC logic.",
+        "zh": "从 BMC 逻辑理解平台多边结构的商业模式模式来源。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "uber", "role": "primary" },
+    { "slug": "airbnb", "role": "primary" },
+    { "slug": "google-multi-sided", "role": "primary" },
+    { "slug": "visa", "role": "secondary" },
+    { "slug": "nvidia-cuda", "role": "secondary" },
+    { "slug": "alibaba-group", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "platform-ecosystem-map",
+    "business-model-canvas",
+    "value-proposition-canvas",
+    "customer-journey",
+    "portfolio-map"
+  ]
+}

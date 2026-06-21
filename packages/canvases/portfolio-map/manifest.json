@@ -10,6 +10,9 @@
     "zh": "bg.zh.svg"
   },
   "display": {
+    "canvas": {
+      "showPinConnections": false
+    },
     "preview": {
       "mode": "structured",
       "showTitle": false,

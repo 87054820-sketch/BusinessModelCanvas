@@ -39,10 +39,11 @@
   ],
   "thumbnailDefId": "business-model-canvas",
   "projectId": "1534b03d-3838-4a62-9e46-1996611b38e6",
-  "canvasCount": 2,
-  "storyCount": 2,
+  "canvasCount": 8,
+  "storyCount": 4,
   "appliesPatterns": [
-    "multi-sided-platforms"
+    "multi-sided-platforms",
+    "from-sales-to-platform"
   ],
   "appliesStrategyFrameworks": [
     "business-model-environment-scan",

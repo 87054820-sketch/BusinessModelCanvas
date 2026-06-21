@@ -171,22 +171,26 @@ export function registerAiContextRoutes(
           });
           if (arr.length > 0) pinsOut = arr;
 
-          // Auto-derived per-class polylines — sort by x so the curve
-          // reads left-to-right. Skip classes with <2 points (no line).
-          const curves: NonNullable<AiContext['valueCurves']> = [];
-          for (const [classId, points] of byClass) {
-            if (points.length < 2) continue;
-            const cls = classByIdLocal.get(classId);
-            if (!cls) continue;
-            points.sort((a, b) => a.x - b.x);
-            curves.push({
-              classId,
-              classLabel: cls.label,
-              color: cls.color,
-              points,
-            });
+          const showPinConnections =
+            bundle.def.display?.canvas?.showPinConnections ?? bundle.def.plugin === 'chart-canvas';
+          if (showPinConnections) {
+            // Auto-derived per-class polylines — sort by x so the curve
+            // reads left-to-right. Skip classes with <2 points (no line).
+            const curves: NonNullable<AiContext['valueCurves']> = [];
+            for (const [classId, points] of byClass) {
+              if (points.length < 2) continue;
+              const cls = classByIdLocal.get(classId);
+              if (!cls) continue;
+              points.sort((a, b) => a.x - b.x);
+              curves.push({
+                classId,
+                classLabel: cls.label,
+                color: cls.color,
+                points,
+              });
+            }
+            if (curves.length > 0) valueCurves = curves;
           }
-          if (curves.length > 0) valueCurves = curves;
         }
       } finally {
         doc.destroy();

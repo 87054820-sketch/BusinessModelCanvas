@@ -276,6 +276,11 @@ export interface CanvasDisplayConfig {
     showBlockPrompts?: boolean;
     /** Higher-level section labels rendered over the canvas. */
     groupLabels?: CanvasGroupLabel[];
+    /**
+     * Whether pins in the same class should be connected by a polyline.
+     * Defaults to true for chart-canvas value curves and false elsewhere.
+     */
+    showPinConnections?: boolean;
   };
   preview?: {
     /** `structured` renders title/subtitle/block prompts over the SVG background. */
@@ -471,12 +476,13 @@ export interface ZoneHistoryEntry {
 //   `pins`       (Y.Map<id, Y.Map>) — the data points / annotations.
 //                                     Each pin belongs to exactly one
 //                                     class and lives at a free (x, y)
-//                                     in viewBox space. Classes auto-
-//                                     connect their pins by sorted-x
-//                                     polyline, which on a chart-canvas
-//                                     plugin canvas reads as a value
-//                                     curve, on other canvases as
-//                                     "this group of related markers".
+//                                     in viewBox space. Rendering may
+//                                     connect same-class pins by sorted-x
+//                                     polyline when the canvas opts into
+//                                     pin connections (chart-canvas by
+//                                     default). Other canvases, such as
+//                                     Portfolio Map, read pins as scatter
+//                                     points.
 //
 // `xAxisItems` (Y.Array<Y.Map>) is still here, used by the chart-canvas
 // plugin to draw factor / stage labels along the X axis. Pin x is in
@@ -522,9 +528,9 @@ export interface PinClass {
 
 /**
  * One annotation / data point. Free-positioned in viewBox space; the
- * universal PinLayer renders it using its class's color + icon. Pins of
- * the same class auto-connect via a sorted-x polyline at render time —
- * no separate "line" entity exists.
+ * universal PinLayer renders it using its class's color + icon. Canvases
+ * that opt into pin connections derive same-class polylines at render time;
+ * scatter canvases keep pins unconnected. No separate "line" entity exists.
  *
  * Not zone-bound (unlike StickyNote). A pin can sit anywhere, including
  * outside a zone, and its visual meaning is "this point belongs to
@@ -1274,6 +1280,53 @@ export interface BusinessModelExperimentDetail {
   /** Bilingual long-form markdown body. UI renders the language matching
    *  the current locale; falls back to the other language if missing. */
   description: { en: string; zh: string };
+}
+
+// ─── Resource library ───────────────────────────────────────────────────────
+// Curated books, articles, reports, and public sources that explain where the
+// case-library methods come from and how to read them.
+
+export type LibraryResourceType = 'book' | 'article' | 'paper' | 'report' | 'web';
+
+export interface LibraryResource {
+  /** Stable kebab-case identity. */
+  slug: string;
+  /** Source format for filtering and display. */
+  type: LibraryResourceType;
+  /** Bilingual title shown on the resource card. */
+  title: LocalizedLabel;
+  /** Bilingual one-paragraph summary of what the source is about. */
+  summary: LocalizedLabel;
+  /** Bilingual recommendation: why PinGarden users should read this. */
+  recommendation: LocalizedLabel;
+  /** Authors, editors, or publishing institution. */
+  authors: string[];
+  /** Publisher / journal / institution. */
+  publisher?: string;
+  /** Publication year when known. */
+  year?: number;
+  /** Lightweight topical tags. */
+  tags?: string[];
+  /** Related canvas templates. */
+  relatedCanvasDefIds?: string[];
+  /** Related case-library case slugs. */
+  relatedCaseSlugs?: string[];
+  /** Related pattern slugs. */
+  relatedPatternSlugs?: string[];
+  /** Related experiment slugs. */
+  relatedExperimentSlugs?: string[];
+  /** Related strategy-framework slugs. */
+  relatedStrategyFrameworkSlugs?: string[];
+  /** Bibliographic / web citation rows. */
+  sources: CaseSource[];
+}
+
+export interface LibraryResourceDetail {
+  resource: LibraryResource;
+  /** Bilingual long-form reading note. */
+  description: { en: string; zh: string };
+  /** Hydrated cases for `relatedCaseSlugs[]`. */
+  relatedCases: CaseLibraryEntry[];
 }
 
 /**

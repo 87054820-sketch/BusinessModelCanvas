@@ -25,6 +25,8 @@ import { getIdentity } from './identity.js';
  *   GET  /library/experiments/:slug           → BusinessModelExperimentDetail
  *   GET  /library/strategy-frameworks         → StrategyFramework[]
  *   GET  /library/strategy-frameworks/:slug   → StrategyFrameworkDetail
+ *   GET  /library/resources                   → LibraryResource[]
+ *   GET  /library/resources/:slug             → LibraryResourceDetail
  *
  * Mutations on library projects/canvases/stories elsewhere in the API
  * surface as 403 via the global error handler in `server.ts` — those
@@ -95,6 +97,17 @@ export function registerLibraryRoutes(
     async (req, reply) => {
       const detail = await bundle.getStrategyFramework(req.params.slug);
       if (!detail) return reply.code(404).send({ error: 'Strategy framework not found' });
+      return detail;
+    },
+  );
+
+  app.get('/library/resources', async () => bundle.listResources());
+
+  app.get<{ Params: { slug: string } }>(
+    '/library/resources/:slug',
+    async (req, reply) => {
+      const detail = await bundle.getResource(req.params.slug);
+      if (!detail) return reply.code(404).send({ error: 'Resource not found' });
       return detail;
     },
   );

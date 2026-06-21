@@ -49,7 +49,6 @@
 - `bosch-accelerator` (primary)
 - `alibaba-group` (primary)
 - `procter-gamble-cd` (secondary)
-- `nvidia-cuda` (secondary)
 
 To explore an example case, follow with `pingarden case read <slug> --json`. To inspect the method itself, use `pingarden strategy-framework get business-model-portfolio-management --json`.
 

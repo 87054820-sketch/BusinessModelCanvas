@@ -37,9 +37,10 @@
   ],
   "thumbnailDefId": "business-model-canvas",
   "projectId": "02df9825-ac03-4cb3-b894-dc93612c11fd",
-  "canvasCount": 2,
+  "canvasCount": 4,
   "storyCount": 2,
   "appliesStrategyFrameworks": [
-    "business-model-environment-scan"
+    "business-model-environment-scan",
+    "scenario-planning"
   ]
 }

@@ -32,7 +32,8 @@ function readPin(yMap: Y.Map<unknown>): Pin | null {
 
 /**
  * Subscribes to the pins map and returns a fresh array per change. The
- * universal PinLayer renders these grouped by classId for auto-connection.
+ * universal PinLayer renders these grouped by classId; same-class
+ * auto-connection is controlled by each canvas definition.
  */
 export function usePins(doc: Y.Doc | null): Pin[] {
   const [items, setItems] = useState<Pin[]>([]);

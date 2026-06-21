@@ -280,6 +280,88 @@ export function CanvasThumb({ id, width = 40, height = 28 }: Props) {
       </svg>
     );
   }
+  if (id === 'innovation-culture-map') {
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="3" y="3" width="54" height="5" />
+          <rect x="14" y="10" width="20" height="7" />
+          <rect x="37" y="10" width="20" height="7" />
+          <rect x="14" y="19" width="20" height="8" />
+          <rect x="37" y="19" width="20" height="8" />
+          <rect x="14" y="29" width="20" height="8" />
+          <rect x="37" y="29" width="20" height="8" />
+        </g>
+        <g stroke="#9CA3AF" strokeWidth="0.5" fill="none">
+          <line x1="34" y1="13.5" x2="37" y2="13.5" />
+          <line x1="34" y1="23" x2="37" y2="23" />
+          <line x1="34" y1="33" x2="37" y2="33" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === 'evidence-scorecard') {
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="4" y="5" width="15" height="9" />
+          <rect x="22.5" y="5" width="15" height="9" />
+          <rect x="41" y="5" width="15" height="9" />
+          <rect x="4" y="17" width="15" height="9" />
+          <rect x="22.5" y="17" width="15" height="9" />
+          <rect x="41" y="17" width="15" height="9" />
+          <rect x="4" y="29" width="52" height="8" />
+        </g>
+        <g stroke="#9CA3AF" strokeWidth="0.5" fill="none" strokeLinecap="round">
+          <line x1="7" y1="9" x2="16" y2="9" />
+          <line x1="25.5" y1="9" x2="34.5" y2="9" />
+          <line x1="44" y1="9" x2="53" y2="9" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === 'scenario-matrix') {
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="4" y="3" width="24" height="6" />
+          <rect x="32" y="3" width="24" height="6" />
+          <rect x="4" y="12" width="24" height="10" />
+          <rect x="32" y="12" width="24" height="10" />
+          <rect x="4" y="24" width="24" height="10" />
+          <rect x="32" y="24" width="24" height="10" />
+          <rect x="4" y="36" width="52" height="2" />
+        </g>
+        <g fill="#9CA3AF" stroke="none">
+          <circle cx="30" cy="17" r="1" />
+          <circle cx="30" cy="29" r="1" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === 'platform-ecosystem-map') {
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="3" y="4" width="15" height="12" />
+          <rect x="22" y="4" width="16" height="12" />
+          <rect x="42" y="4" width="15" height="12" />
+          <rect x="3" y="20" width="17" height="8" />
+          <rect x="22" y="20" width="16" height="8" />
+          <rect x="40" y="20" width="17" height="8" />
+          <rect x="3" y="32" width="54" height="5" />
+        </g>
+        <g stroke="#9CA3AF" strokeWidth="0.7" fill="none" strokeLinecap="round">
+          <path d="M18 10 C20 8 20 8 22 10" />
+          <path d="M38 10 C40 8 40 8 42 10" />
+        </g>
+      </svg>
+    );
+  }
   // Generic fallback (e.g. for future canvas types).
   return (
     <svg viewBox="0 0 60 40" {...sizeProps}>

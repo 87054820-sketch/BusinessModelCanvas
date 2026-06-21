@@ -7,6 +7,8 @@ import type {
   CaseLibraryEntry,
   Experiment,
   Lang,
+  LibraryResource,
+  LibraryResourceDetail,
   StrategyFramework,
   StrategyFrameworkDetail,
 } from '@pingarden/shared';
@@ -21,6 +23,8 @@ async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> 
   return (await res.json()) as T;
 }
 
+const caseDetailCache = new Map<string, Promise<CaseLibraryDetail>>();
+
 export const libraryApi = {
   list(displayName: string): Promise<CaseLibraryEntry[]> {
     return fetchJson<CaseLibraryEntry[]>(`${BASE}/library/cases`, {
@@ -28,10 +32,14 @@ export const libraryApi = {
     });
   },
   get(slug: string, displayName: string): Promise<CaseLibraryDetail> {
-    return fetchJson<CaseLibraryDetail>(
+    const cached = caseDetailCache.get(slug);
+    if (cached) return cached;
+    const promise = fetchJson<CaseLibraryDetail>(
       `${BASE}/library/cases/${encodeURIComponent(slug)}`,
       { headers: authHeaders(displayName) },
     );
+    caseDetailCache.set(slug, promise);
+    return promise;
   },
   /**
    * Deep-copy a library case into the user's writable storage.
@@ -108,6 +116,16 @@ export const libraryApi = {
   getStrategyFramework(slug: string): Promise<StrategyFrameworkDetail> {
     return fetchJson<StrategyFrameworkDetail>(
       `${BASE}/library/strategy-frameworks/${encodeURIComponent(slug)}`,
+    );
+  },
+  /** List curated books, reports, articles, and public sources. */
+  listResources(): Promise<LibraryResource[]> {
+    return fetchJson<LibraryResource[]>(`${BASE}/library/resources`);
+  },
+  /** Resolve one resource with bilingual reading note and hydrated related cases. */
+  getResource(slug: string): Promise<LibraryResourceDetail> {
+    return fetchJson<LibraryResourceDetail>(
+      `${BASE}/library/resources/${encodeURIComponent(slug)}`,
     );
   },
 };

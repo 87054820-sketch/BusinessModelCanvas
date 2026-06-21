@@ -38,10 +38,11 @@
   ],
   "thumbnailDefId": "business-model-canvas",
   "projectId": "41aa249b-bdb9-477d-bf63-faefe3db56bb",
-  "canvasCount": 4,
-  "storyCount": 2,
+  "canvasCount": 6,
+  "storyCount": 4,
   "appliesPatterns": [
-    "open-business-models"
+    "open-business-models",
+    "from-closed-to-open-innovation"
   ],
   "appliesPatternSubtypes": {
     "open-business-models": "outside-in"

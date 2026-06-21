@@ -143,10 +143,9 @@ export class FileSystemStorage implements CanvasStorage {
     const ids = await fs.readdir(dir);
     const out: StoryMeta[] = [];
     for (const id of ids) {
-      const story = await this.readStory(id);
-      if (!story) continue;
-      if (opts?.projectId && story.projectId !== opts.projectId) continue;
-      const { content: _content, ...meta } = story;
+      const meta = await this.readStoryMeta(id);
+      if (!meta) continue;
+      if (opts?.projectId && meta.projectId !== opts.projectId) continue;
       out.push(meta);
     }
     out.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
@@ -304,6 +303,16 @@ export class FileSystemStorage implements CanvasStorage {
     try {
       const raw = await fs.readFile(this.metaPath(id), 'utf8');
       return JSON.parse(raw) as CanvasMeta;
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code === 'ENOENT') return null;
+      throw err;
+    }
+  }
+
+  private async readStoryMeta(id: string): Promise<StoryMeta | null> {
+    try {
+      const raw = await fs.readFile(this.storyMetaPath(id), 'utf8');
+      return JSON.parse(raw) as StoryMeta;
     } catch (err) {
       if ((err as NodeJS.ErrnoException).code === 'ENOENT') return null;
       throw err;

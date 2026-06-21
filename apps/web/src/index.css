@@ -74,6 +74,38 @@
     color: #1f2937;
     font-weight: 700;
   }
+
+  .story-markdown table {
+    margin: 1.25rem 0;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .story-markdown thead {
+    background: #f3f4f6;
+  }
+
+  .story-markdown th,
+  .story-markdown td {
+    border: 1px solid #d1d5db;
+    padding: 0.65rem 0.75rem;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .story-markdown th {
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .story-markdown td {
+    color: #374151;
+  }
 }
 
 html,

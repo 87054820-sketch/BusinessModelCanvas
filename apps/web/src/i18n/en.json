@@ -22,21 +22,27 @@
     "canvasCount_one": "{{count}} canvas",
     "canvasCount_other": "{{count}} canvases",
     "updated": "updated {{time}}",
-    "templates": "Start from template",
-    "templatesHint": "Pick a canvas to start a new project.",
+    "templates": "Analysis canvases",
+    "templatesHint": "Pick a canvas to start a strategy project.",
     "noCanvasesYet": "No canvases yet",
     "welcomeTitle": "Welcome to PinGarden",
-    "welcomeIntro": "Pick a canvas template below or start blank to organize your ideas.",
+    "welcomeIntro": "Use structured canvases to map business models, reason through strategy choices, and turn critical assumptions into testable action.",
     "welcomeSubtitle": "\"To make a prairie it takes a clover and one bee,\nOne clover, and a bee,\nAnd revery.\"\n— Emily Dickinson",
+    "positioningTags": {
+      "businessModel": "Business model design",
+      "strategy": "Strategy analysis",
+      "experiments": "Assumption testing",
+      "caseLearning": "Case learning"
+    },
     "pickTemplateToStart": "Pick a canvas to start your first project",
-    "createBlankInstead": "Create a blank project",
+    "createBlankInstead": "Create strategy project",
     "openExistingProject": "Open existing project",
     "noProjects": "No projects yet",
     "startWithTemplate": "Start project with {{name}}",
     "relatedCanvases": "Pairs with",
-    "browseLibraryLink": "Browse case library & all projects",
-    "browseLibraryAndProjects": "Browse cases & projects",
-    "browseLibrary": "Browse case library",
+    "browseLibraryLink": "Browse strategy library & all projects",
+    "browseLibraryAndProjects": "Browse strategy library & projects",
+    "browseLibrary": "Browse strategy library",
     "myProjects": "My projects"
   },
   "newProject": {
@@ -89,7 +95,9 @@
   "addCanvas": {
     "title": "Add a canvas to this project",
     "createIn": "Create",
-    "language": "Language"
+    "language": "Language",
+    "searchPlaceholder": "Search canvases…",
+    "noMatches": "No matching canvases"
   },
   "inspector": {
     "tip": "Click a sticky or block on the canvas to inspect it.",
@@ -282,6 +290,18 @@
     },
     "experiment-canvas": {
       "tagline": "Turn risky assumptions into measurable validation experiments"
+    },
+    "evidence-scorecard": {
+      "tagline": "Summarize evidence strength, learning velocity, risk reduction, and portfolio decision"
+    },
+    "innovation-culture-map": {
+      "tagline": "Diagnose why innovation gets stuck by mapping outcomes, behaviors, and organizational mechanisms"
+    },
+    "scenario-matrix": {
+      "tagline": "Build four plausible futures from two critical uncertainties"
+    },
+    "platform-ecosystem-map": {
+      "tagline": "Map platform sides, core interaction, network effects, governance, and monetization"
     }
   },
   "myProjects": {
@@ -289,9 +309,9 @@
     "empty": "No projects yet — create a blank one above, or fork a case from the library."
   },
   "library": {
-    "pageTitle": "Case library",
-    "pageSubtitle": "Real company analyses curated by PinGarden — open as read-only, or fork any case to make it editable.",
-    "casesSection": "Case library",
+    "pageTitle": "Strategy Library",
+    "pageSubtitle": "A connected path through company cases, analysis canvases, business model patterns, experiments, strategy frameworks, and source materials.",
+    "casesSection": "Company cases",
     "myProjectsSection": "My projects",
     "caseCount_one": "{{count}} case",
     "caseCount_other": "{{count}} cases",
@@ -312,6 +332,13 @@
       "paper": "Papers",
       "web": "Web"
     },
+    "resourceTypes": {
+      "book": "Book",
+      "article": "Article",
+      "paper": "Paper",
+      "report": "Report",
+      "web": "Web"
+    },
     "openReadOnly": "Open as read-only",
     "fork": "Fork to my projects",
     "forking": "Forking",
@@ -324,13 +351,16 @@
       "pattern": "Pattern",
       "comparison": "Comparison",
       "experiment": "Experiment",
-      "strategyFramework": "Strategy method"
+      "strategyFramework": "Strategy method",
+      "resource": "Resource"
     },
     "tabs": {
       "cases": "Company Cases",
+      "canvases": "Analysis Canvases",
       "patterns": "Business Models",
       "experiments": "Experiment Design",
       "strategyFrameworks": "Strategy Analysis",
+      "resources": "Resources",
       "description": "Description",
       "relatedCases": "Related cases"
     },
@@ -344,18 +374,59 @@
     "showDescription": "Show description",
     "hideDescription": "Hide description",
     "patternsEmpty": "No patterns shipped in this version yet.",
+    "canvasMethodsEmpty": "No analysis canvases shipped in this version yet.",
     "experimentsEmpty": "No experiments shipped in this version yet.",
     "strategyFrameworksEmpty": "No strategy frameworks shipped in this version yet.",
+    "resourcesEmpty": "No resources shipped in this version yet.",
     "descriptionEmpty": "No description authored for this pattern yet.",
     "examplesEmpty": "No example cases curated for this pattern yet.",
+    "cases": {
+      "intro": {
+        "title": "Start from real companies and strategic judgment",
+        "body": "Company cases are the **application layer** of the Strategy Library: each one connects company context, canvases, and narrative. Read a case to understand the strategic question, then move into the related canvases, patterns, and frameworks."
+      }
+    },
+    "canvasMethods": {
+      "intro": {
+        "title": "Put the question onto a working canvas",
+        "body": "Analysis canvases are the **working-tool layer** of the library. They are not attachments; they structure business models, customer value, value curves, portfolios, evidence, and future scenarios into editable workspaces."
+      }
+    },
+    "canvasMethod": {
+      "kind": "Canvas",
+      "start": "Start with this canvas",
+      "defaultTagline": "Use this to structure a business or strategy question."
+    },
+    "patterns": {
+      "intro": {
+        "title": "Recognize reusable business structures",
+        "body": "Business models are the **pattern layer** of the library: they explain how companies organize revenue, cost, platforms, long tails, free models, and open innovation. Read the pattern, then return to cases to see how it works in practice."
+      }
+    },
     "strategyFrameworks": {
       "intro": {
-        "title": "Use strategy methods to read the market logic behind cases",
-        "body": "Strategy methods are **analysis frameworks**, not single business models. Start here to understand the method, then open linked cases to see how companies reconstruct markets through value curves, factors of competition, noncustomers, and strategic trade-offs. The first method is **Blue Ocean Strategy**."
+        "title": "Use strategy frameworks to reason about choices, not just describe the present",
+        "body": "Strategy analysis is the library's **lens layer**: it helps you read competition, environment, innovation portfolios, future scenarios, and platform ecosystems. Learn the framework, then open related cases to see how companies form trade-offs and action."
       }
     },
     "strategyFramework": {
       "descriptionEmpty": "No description authored for this strategy method yet."
+    },
+    "resources": {
+      "intro": {
+        "title": "Trace the sources behind cases and methods",
+        "body": "Resources are the library's **source layer**: recommended books, articles, reports, papers, and public materials. Each entry explains why it is worth reading, which canvases / cases / methods it supports, and what questions it helps answer."
+      }
+    },
+    "resource": {
+      "recommendation": "Why read this",
+      "related": "Related content",
+      "relatedCanvases": "Related canvases",
+      "relatedCount_one": "{{count}} related item",
+      "relatedCount_other": "{{count}} related items",
+      "relatedEmpty": "No related content yet.",
+      "descriptionEmpty": "No reading note authored for this resource yet.",
+      "referencesEmpty": "No sources recorded yet."
     },
     "experiments": {
       "intro": {

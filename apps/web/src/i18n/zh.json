@@ -22,21 +22,27 @@
     "canvasCount_one": "{{count}} 张画布",
     "canvasCount_other": "{{count}} 张画布",
     "updated": "更新于 {{time}}",
-    "templates": "从模板开始",
-    "templatesHint": "选一个画布模板开启新项目。",
+    "templates": "分析画布",
+    "templatesHint": "选一个画布模板开启战略项目。",
     "noCanvasesYet": "尚无画布",
     "welcomeTitle": "欢迎来到 PinGarden",
-    "welcomeIntro": "选一个画布模板，或创建空白项目，开始整理你的想法。",
+    "welcomeIntro": "用结构化画布拆解商业模式、推演战略选择，并把关键假设转化为可验证的行动。",
     "welcomeSubtitle": "「造一片草原，只需一株三叶草、一只蜜蜂，\n再加上一点点白日梦。」\n—— 艾米莉·狄金森",
+    "positioningTags": {
+      "businessModel": "商业模式拆解",
+      "strategy": "战略分析",
+      "experiments": "假设验证",
+      "caseLearning": "案例学习"
+    },
     "pickTemplateToStart": "选一个画布，开启你的第一个项目",
-    "createBlankInstead": "创建空白项目",
+    "createBlankInstead": "创建战略项目",
     "openExistingProject": "打开已有项目",
     "noProjects": "还没有项目",
     "startWithTemplate": "用「{{name}}」创建项目",
     "relatedCanvases": "配套画布",
-    "browseLibraryLink": "浏览案例库和我的项目",
-    "browseLibraryAndProjects": "浏览案例库与项目",
-    "browseLibrary": "浏览案例库",
+    "browseLibraryLink": "浏览策略库和我的项目",
+    "browseLibraryAndProjects": "浏览策略库与项目",
+    "browseLibrary": "浏览策略库",
     "myProjects": "我的项目"
   },
   "newProject": {
@@ -89,7 +95,9 @@
   "addCanvas": {
     "title": "向此项目添加画布",
     "createIn": "创建",
-    "language": "语言"
+    "language": "语言",
+    "searchPlaceholder": "搜索画布…",
+    "noMatches": "没有匹配的画布"
   },
   "inspector": {
     "tip": "在画布上选中便签或分区以查看详情。",
@@ -282,6 +290,18 @@
     },
     "experiment-canvas": {
       "tagline": "把高风险假设转化为可衡量、可复盘的验证实验"
+    },
+    "evidence-scorecard": {
+      "tagline": "汇总证据强度、学习速度、风险下降和下一步组合决策"
+    },
+    "innovation-culture-map": {
+      "tagline": "诊断创新为什么卡住：把结果、行为和组织机制放在一张图上"
+    },
+    "scenario-matrix": {
+      "tagline": "用两个关键不确定性构造四个可信未来"
+    },
+    "platform-ecosystem-map": {
+      "tagline": "看清平台各边、核心交互、网络效应、治理和变现"
     }
   },
   "myProjects": {
@@ -289,9 +309,9 @@
     "empty": "还没有项目 —— 在上方新建一个空白项目,或者从案例库 fork 一份。"
   },
   "library": {
-    "pageTitle": "案例库",
-    "pageSubtitle": "PinGarden 精选的真实公司分析 —— 以只读方式打开浏览,任何案例都可以 fork 一份成为可编辑的副本。",
-    "casesSection": "案例库",
+    "pageTitle": "策略库",
+    "pageSubtitle": "把真实企业案例、分析画布、商业模式、实验方法、战略框架和参考资料放在同一条学习路径里。",
+    "casesSection": "企业案例",
     "myProjectsSection": "我的项目",
     "caseCount_other": "{{count}} 个案例",
     "storyCount_other": "{{count}} 篇故事",
@@ -308,6 +328,13 @@
       "paper": "论文",
       "web": "网页"
     },
+    "resourceTypes": {
+      "book": "书籍",
+      "article": "文章",
+      "paper": "论文",
+      "report": "报告",
+      "web": "网页"
+    },
     "openReadOnly": "以只读方式打开",
     "fork": "Fork 到我的项目",
     "forking": "正在复制",
@@ -320,13 +347,16 @@
       "pattern": "模式",
       "comparison": "对比",
       "experiment": "实验",
-      "strategyFramework": "战略方法"
+      "strategyFramework": "战略方法",
+      "resource": "资料"
     },
     "tabs": {
       "cases": "企业案例",
+      "canvases": "分析画布",
       "patterns": "商业模式",
       "experiments": "实验设计",
       "strategyFrameworks": "战略分析",
+      "resources": "资料",
       "description": "详细说明",
       "relatedCases": "相关案例"
     },
@@ -338,18 +368,58 @@
     "showDescription": "查看说明",
     "hideDescription": "收起说明",
     "patternsEmpty": "本版本暂未附带商业模式分类。",
+    "canvasMethodsEmpty": "本版本暂未附带分析画布。",
     "experimentsEmpty": "本版本暂未附带实验。",
     "strategyFrameworksEmpty": "本版本暂未附带战略分析方法。",
+    "resourcesEmpty": "本版本暂未附带资料。",
     "descriptionEmpty": "本模式暂未撰写说明。",
     "examplesEmpty": "本模式暂未关联示例案例。",
+    "cases": {
+      "intro": {
+        "title": "从真实企业进入商业判断",
+        "body": "企业案例是策略库的**应用层**：每个案例都把公司背景、画布和故事放在一起。先读案例理解一个战略问题，再进入关联画布、商业模式和战略框架。"
+      }
+    },
+    "canvasMethods": {
+      "intro": {
+        "title": "把问题放进一张可操作的分析画布",
+        "body": "分析画布是策略库的**工作工具层**：它们不是资料附件，而是用来拆解商业模式、客户价值、竞争曲线、组合管理、实验证据和未来情景的结构化方法。"
+      }
+    },
+    "canvasMethod": {
+      "kind": "画布",
+      "start": "用这张画布开始",
+      "defaultTagline": "用于结构化拆解一个商业或战略问题。"
+    },
+    "patterns": {
+      "intro": {
+        "title": "识别可复用的商业结构",
+        "body": "商业模式是策略库的**模式层**：它解释企业如何组织收入、成本、平台、长尾、免费和开放创新等机制。读完模式后，再回到案例看它如何落地。"
+      }
+    },
     "strategyFrameworks": {
       "intro": {
-        "title": "用战略方法看懂案例背后的市场重构",
-        "body": "战略分析方法不是单个商业模式，而是一套**分析框架**。先从这里理解方法，再打开关联案例，看企业如何通过价值曲线、竞争因素、非顾客和取舍动作重构市场。第一套方法是 **Blue Ocean Strategy / 蓝海战略**。"
+        "title": "用战略框架推演选择，而不是只描述现状",
+        "body": "战略分析是策略库的**视角层**：它帮助你看清竞争格局、外部环境、创新组合、未来情景和平台生态。先理解框架，再打开关联案例，看企业如何形成取舍和行动。"
       }
     },
     "strategyFramework": {
       "descriptionEmpty": "本战略方法暂未撰写说明。"
+    },
+    "resources": {
+      "intro": {
+        "title": "追溯案例和方法背后的来源",
+        "body": "资料是策略库的**来源层**：它收录推荐书籍、文章、报告、论文和公开资料。每条资料都会说明为什么值得读、适合搭配哪些画布 / 案例 / 方法，以及它能帮助你回答什么问题。"
+      }
+    },
+    "resource": {
+      "recommendation": "推荐理由",
+      "related": "关联内容",
+      "relatedCanvases": "关联画布",
+      "relatedCount_other": "{{count}} 个关联",
+      "relatedEmpty": "暂未关联其他内容。",
+      "descriptionEmpty": "本资料暂未撰写说明。",
+      "referencesEmpty": "暂未登记出处。"
     },
     "experiments": {
       "intro": {

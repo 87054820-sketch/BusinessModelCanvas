@@ -191,6 +191,8 @@ require_dir "apps/desktop/dist/canvases"
 require_dir "apps/desktop/dist/case-library"
 require_file "apps/desktop/dist/case-library/manifest.json"
 require_dir "apps/desktop/dist/case-library/cases/swiss-private-banking"
+require_dir "apps/desktop/dist/case-library/resources"
+require_file "apps/desktop/dist/case-library/resources/the-invincible-company/resource.json"
 # CLI tree gets pulled in via electron-builder extraResources; verify it
 # was actually built before electron-builder picks it up.
 require_file "apps/cli/dist/index.js"

@@ -1,0 +1,40 @@
+{
+  "slug": "scenario-planning",
+  "name": {
+    "en": "Scenario Planning",
+    "zh": "情景规划"
+  },
+  "summary": {
+    "en": "A framework for turning environment signals and critical uncertainties into multiple plausible futures, then testing which business-model moves remain robust across them.",
+    "zh": "一套把环境信号和关键不确定性转成多个可信未来，并检验哪些商业模式动作在多个情景下都稳健的框架。"
+  },
+  "sources": [
+    {
+      "label": "Peter Schwartz · The Art of the Long View · Currency Doubleday · 1991"
+    }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "cite": "Schwartz 1991",
+      "label": "Peter Schwartz · The Art of the Long View · Currency Doubleday",
+      "year": 1991,
+      "note": {
+        "en": "Classic source for scenario thinking, driving forces, critical uncertainties, and strategy robustness across futures.",
+        "zh": "情景思考、驱动力、关键不确定性和跨未来稳健战略的经典来源。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "nintendo-wii", "role": "primary" },
+    { "slug": "transsion-africa", "role": "primary" },
+    { "slug": "tata-nano", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "scenario-matrix",
+    "business-model-environment",
+    "business-model-canvas",
+    "portfolio-map",
+    "design-criteria-canvas"
+  ]
+}

@@ -42,7 +42,8 @@
   "canvasCount": 4,
   "storyCount": 2,
   "appliesPatterns": [
-    "open-business-models"
+    "open-business-models",
+    "from-closed-to-open-innovation"
   ],
   "appliesPatternSubtypes": {
     "open-business-models": "inside-out"

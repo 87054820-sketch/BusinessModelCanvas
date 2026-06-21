@@ -38,8 +38,5 @@
   "thumbnailDefId": "business-model-canvas",
   "projectId": "4ce1bb1e-d506-4104-875f-0f417f6e4c0e",
   "canvasCount": 2,
-  "storyCount": 2,
-  "appliesStrategyFrameworks": [
-    "business-model-environment-scan"
-  ]
+  "storyCount": 2
 }

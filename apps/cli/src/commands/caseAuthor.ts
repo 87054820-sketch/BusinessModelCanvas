@@ -601,6 +601,117 @@ function validateZhCanvasContent(
   );
 }
 
+interface StorySupportProfile {
+  label: string;
+  terms: string[];
+}
+
+const STRATEGY_STORY_PROFILES: Record<string, StorySupportProfile> = {
+  'blue-ocean-strategy': {
+    label: 'Blue Ocean Strategy',
+    terms: ['blue ocean', 'red ocean', 'errc', 'noncustomer', 'strategy canvas', 'value curve', '蓝海', '红海', '四步动作', '非顾客', '战略画布', '价值曲线'],
+  },
+  'business-model-environment-scan': {
+    label: 'Business Model Environment Scan',
+    terms: ['environment', 'trend', 'market forces', 'industry forces', 'macro', 'external forces', '环境', '趋势', '市场力量', '行业力量', '宏观', '外部力量'],
+  },
+  'business-model-portfolio-management': {
+    label: 'Business Model Portfolio Management',
+    terms: ['portfolio', 'portfolio map', 'explore', 'exploit', 'transfer', 'divest', '业务组合', '组合地图', '探索', '开发', '转入', '剥离'],
+  },
+  'innovation-metrics': {
+    label: 'Innovation Metrics',
+    terms: ['innovation metrics', 'evidence scorecard', 'evidence strength', 'learning velocity', 'risk reduction', '创新指标', '证据评分卡', '证据强度', '学习速度', '风险下降'],
+  },
+  'scenario-planning': {
+    label: 'Scenario Planning',
+    terms: ['scenario planning', 'scenario matrix', 'critical uncertainty', 'robust moves', 'early signals', '情景规划', '情景矩阵', '关键不确定性', '稳健动作', '早期信号'],
+  },
+  'platform-strategy': {
+    label: 'Platform Strategy',
+    terms: ['platform strategy', 'platform ecosystem', 'core interaction', 'network effects', 'governance', '平台战略', '平台生态', '核心交互', '网络效应', '治理'],
+  },
+};
+
+const PATTERN_STORY_PROFILES: Record<string, StorySupportProfile> = {
+  'long-tail': { label: 'Long Tail', terms: ['long tail', '长尾'] },
+  'unbundling-business-models': { label: 'Unbundling Business Models', terms: ['unbundling', 'unbundle', '拆分', '解构'] },
+  'multi-sided-platforms': { label: 'Multi-Sided Platforms', terms: ['multi-sided', 'platform', 'network effect', '多边', '平台', '网络效应'] },
+  free: { label: 'Free', terms: ['free', 'freemium', 'ad-supported', 'bait-and-hook', '免费', '增值', '广告支持', '诱饵'] },
+  'open-business-models': { label: 'Open Business Models', terms: ['open innovation', 'open business', 'outside-in', 'inside-out', '开放创新', '开放式', '由外而内', '由内而外'] },
+  'from-closed-to-open-innovation': { label: 'From Closed to Open Innovation', terms: ['closed to open', 'open innovation', 'outside-in', 'inside-out', '封闭创新', '开放创新', '由外而内', '由内而外'] },
+  'from-sales-to-platform': { label: 'From Sales to Platform', terms: ['sales to platform', 'platform', 'ecosystem', 'developer', '从销售到平台', '平台', '生态', '开发者'] },
+  'from-transactional-to-recurring-revenue': { label: 'From Transactional to Recurring Revenue', terms: ['recurring revenue', 'subscription', 'retention', 'lifetime value', '经常性收入', '订阅', '留存', '生命周期价值'] },
+};
+
+function hasAnyTerm(text: string, terms: string[]): boolean {
+  const lower = text.toLowerCase();
+  return terms.some((term) => lower.includes(term.toLowerCase()));
+}
+
+function validateStorySupport(
+  slug: string,
+  refs: string[] | undefined,
+  profiles: Record<string, StorySupportProfile>,
+  refKind: 'strategy framework' | 'pattern',
+  allStoryText: string,
+  issues: CaseValidateIssue[],
+) {
+  if (!refs?.length) return;
+  const text = allStoryText.trim();
+  for (const ref of refs) {
+    const profile = profiles[ref];
+    if (!profile) continue;
+    if (!text || !hasAnyTerm(text, profile.terms)) {
+      issues.push({
+        slug,
+        level: 'warn',
+        message: `story support: ${refKind} '${ref}' is tagged but no story clearly explains ${profile.label}`,
+      });
+    }
+  }
+}
+
+function extractEmbeddedCanvasIds(text: string): Set<string> {
+  const out = new Set<string>();
+  const re = /::canvas\[[^\]]+\]\{[^}]*canvasId="([^"]+)"[^}]*\}/g;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(text))) {
+    const canvasId = match[1];
+    if (canvasId) out.add(canvasId);
+  }
+  return out;
+}
+
+function validatePortfolioMapSupport(
+  slug: string,
+  refs: string[] | undefined,
+  canvasDefIdsById: Map<string, string>,
+  allStoryText: string,
+  issues: CaseValidateIssue[],
+) {
+  if (!refs?.includes('business-model-portfolio-management')) return;
+  const portfolioCanvasIds = [...canvasDefIdsById.entries()]
+    .filter(([, defId]) => defId === 'portfolio-map')
+    .map(([id]) => id);
+  if (portfolioCanvasIds.length === 0) {
+    issues.push({
+      slug,
+      level: 'warn',
+      message: "portfolio support: business-model-portfolio-management is tagged but the case has no portfolio-map canvas",
+    });
+    return;
+  }
+  const embedded = extractEmbeddedCanvasIds(allStoryText);
+  if (!portfolioCanvasIds.some((id) => embedded.has(id))) {
+    issues.push({
+      slug,
+      level: 'warn',
+      message: "portfolio support: case has portfolio-map canvas but no story embeds it with ::canvas[portfolio-map]",
+    });
+  }
+}
+
 export async function caseValidateHandler(args: {
   caseLibraryDir: string;
   slug?: string;
@@ -878,6 +989,7 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
   const canvasIds = existsSync(canvasesDir)
     ? readdirSync(canvasesDir).filter((d) => statSync(join(canvasesDir, d)).isDirectory())
     : [];
+  const canvasDefIdsById = new Map<string, string>();
   if (caseJson.canvasCount !== undefined && canvasIds.length !== caseJson.canvasCount) {
     issues.push({
       slug,
@@ -898,6 +1010,7 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
           defId?: string;
           language?: string;
         };
+        if (canvasMeta.defId) canvasDefIdsById.set(cid, canvasMeta.defId);
       } catch (err) {
         issues.push({
           slug,
@@ -945,6 +1058,7 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
       message: `case.json storyCount=${caseJson.storyCount} but ${storyIds.length} story directories exist`,
     });
   }
+  const storyTexts: string[] = [];
   for (const sid of storyIds) {
     const sdir = join(storiesDir, sid);
     const metaPath = join(sdir, 'meta.json');
@@ -966,16 +1080,44 @@ function validateOneCase(root: string, slug: string, issues: CaseValidateIssue[]
     }
     if (!existsSync(contentPath)) {
       issues.push({ slug, level: 'error', message: `story ${sid}: content.md missing`, path: contentPath });
-    } else if (storyMeta?.language === 'zh') {
-      validateZhTextContent(
-        slug,
-        `story ${sid}`,
-        readFileSync(contentPath, 'utf8'),
-        contentPath,
-        issues,
-      );
+    } else {
+      const content = readFileSync(contentPath, 'utf8');
+      storyTexts.push(content);
+      if (storyMeta?.language === 'zh') {
+        validateZhTextContent(
+          slug,
+          `story ${sid}`,
+          content,
+          contentPath,
+          issues,
+        );
+      }
     }
   }
+  const allStoryText = storyTexts.join('\n\n');
+  validateStorySupport(
+    slug,
+    caseJson.appliesStrategyFrameworks,
+    STRATEGY_STORY_PROFILES,
+    'strategy framework',
+    allStoryText,
+    issues,
+  );
+  validateStorySupport(
+    slug,
+    caseJson.appliesPatterns,
+    PATTERN_STORY_PROFILES,
+    'pattern',
+    allStoryText,
+    issues,
+  );
+  validatePortfolioMapSupport(
+    slug,
+    caseJson.appliesStrategyFrameworks,
+    canvasDefIdsById,
+    allStoryText,
+    issues,
+  );
 
   // Bilingual coverage — every shipped case must have canvases in both
   // `en` and `zh`. Missing either language is a packaging error.
