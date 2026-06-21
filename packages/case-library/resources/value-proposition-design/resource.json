@@ -16,14 +16,17 @@
   "authors": ["Alexander Osterwalder", "Yves Pigneur", "Greg Bernarda", "Alan Smith"],
   "publisher": "Wiley / Strategyzer",
   "year": 2014,
-  "tags": ["value-proposition", "customer-fit", "discovery"],
+  "tags": ["value-proposition", "customer-fit", "discovery", "case-index"],
   "relatedCanvasDefIds": ["value-proposition-canvas", "business-model-canvas", "empathy-map", "jobs-to-be-done", "customer-journey", "ad-lib-value-proposition"],
-  "relatedCaseSlugs": ["nespresso", "drybar", "novo-nordisk-novopen", "stitch-fix", "patagonia"],
+  "relatedCaseSlugs": ["nespresso", "airbnb", "alibaba-group", "drybar", "novo-nordisk-novopen", "stitch-fix", "patagonia"],
   "relatedExperimentSlugs": ["customer-interview", "online-survey", "clickable-prototype", "smoke-test", "storyboard"],
   "relatedStrategyFrameworkSlugs": ["innovation-metrics"],
   "sources": [
     {
       "label": "Alexander Osterwalder, Yves Pigneur, Greg Bernarda & Alan Smith · Value Proposition Design: How to Create Products and Services Customers Want · Wiley · 2014 · ISBN 978-1118968055 · 320 pages"
+    },
+    {
+      "label": "Local review · Value+Proposition+FULL.pdf and Value Proposition Design EPUB in BusinessBooks · complete book used for case extraction"
     },
     {
       "label": "Strategyzer · Value Proposition Design book page and free preview",

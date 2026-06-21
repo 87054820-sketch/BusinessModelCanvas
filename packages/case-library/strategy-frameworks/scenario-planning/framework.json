@@ -11,6 +11,12 @@
   "sources": [
     {
       "label": "Peter Schwartz · The Art of the Long View · Currency Doubleday · 1991"
+    },
+    {
+      "label": "Thomas J. Chermack · Scenario Planning in Organizations · Berrett-Koehler Publishers · 2011"
+    },
+    {
+      "label": "Paul J. H. Schoemaker · Scenario Planning: A Tool for Strategic Thinking · Sloan Management Review · 1995"
     }
   ],
   "references": [
@@ -23,12 +29,31 @@
         "en": "Classic source for scenario thinking, driving forces, critical uncertainties, and strategy robustness across futures.",
         "zh": "情景思考、驱动力、关键不确定性和跨未来稳健战略的经典来源。"
       }
+    },
+    {
+      "type": "book",
+      "cite": "Chermack 2011",
+      "label": "Thomas J. Chermack · Scenario Planning in Organizations · Berrett-Koehler Publishers",
+      "year": 2011,
+      "pages": "Performance-Based Scenario System; Project Preparation; Scenario Exploration; Scenario Development; Scenario Implementation; Project Assessment",
+      "note": {
+        "en": "Adds the organizational project, implementation, assessment, and human-perception layer to scenario planning.",
+        "zh": "补充情景规划的组织项目、实施、评估和人的感知层。"
+      }
+    },
+    {
+      "type": "article",
+      "cite": "Schoemaker 1995",
+      "label": "Paul J. H. Schoemaker · Scenario Planning: A Tool for Strategic Thinking · Sloan Management Review",
+      "year": 1995,
+      "note": {
+        "en": "Classic management article positioning scenario planning as a disciplined tool for strategic thinking under uncertainty.",
+        "zh": "把情景规划定位为不确定性下战略思考工具的经典管理文章。"
+      }
     }
   ],
   "examples": [
-    { "slug": "nintendo-wii", "role": "primary" },
-    { "slug": "transsion-africa", "role": "primary" },
-    { "slug": "tata-nano", "role": "secondary" }
+    { "slug": "patagonia", "role": "primary" }
   ],
   "relatedCanvasDefIds": [
     "scenario-matrix",

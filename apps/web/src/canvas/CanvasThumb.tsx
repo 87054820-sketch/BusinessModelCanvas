@@ -76,6 +76,47 @@ export function CanvasThumb({ id, width = 40, height = 28 }: Props) {
       </svg>
     );
   }
+  if (id === 'three-horizons-map') {
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="3" y="5" width="16" height="18" rx="1" />
+          <rect x="22" y="5" width="16" height="18" rx="1" />
+          <rect x="41" y="5" width="16" height="18" rx="1" />
+          <rect x="3" y="27" width="26" height="9" rx="1" />
+          <rect x="31" y="27" width="26" height="9" rx="1" />
+        </g>
+        <g stroke="#4A7FC1" strokeWidth="0.8" fill="none" strokeLinecap="round">
+          <path d="M7 20 C12 15 16 10 19 6" opacity="0.45" />
+          <path d="M26 20 C31 15 35 10 38 6" opacity="0.55" />
+          <path d="M45 20 C50 15 54 10 57 6" opacity="0.65" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === 'bcg-growth-share-matrix') {
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          <rect x="4" y="4" width="24" height="12" />
+          <rect x="32" y="4" width="24" height="12" />
+          <rect x="4" y="19" width="24" height="12" />
+          <rect x="32" y="19" width="24" height="12" />
+          <rect x="4" y="34" width="52" height="3" />
+        </g>
+        <g stroke="#9CA3AF" strokeWidth="0.4" strokeDasharray="1 1">
+          <line x1="30" y1="4" x2="30" y2="31" />
+          <line x1="4" y1="17.5" x2="56" y2="17.5" />
+        </g>
+        <g fill="#4A7FC1" stroke="none">
+          <circle cx="44" cy="10" r="1.1" />
+          <circle cx="44" cy="25" r="1.1" />
+        </g>
+      </svg>
+    );
+  }
   if (id === 'ad-lib-value-proposition') {
     // Vertical fill-in-the-blank lines, the visual signature of an ad-lib template.
     return (

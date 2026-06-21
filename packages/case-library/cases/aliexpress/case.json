@@ -40,5 +40,8 @@
   "storyCount": 2,
   "appliesPatterns": [
     "multi-sided-platforms"
+  ],
+  "appliesStrategyFrameworks": [
+    "porters-five-forces"
   ]
 }

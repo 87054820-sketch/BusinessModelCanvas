@@ -41,6 +41,8 @@
   "storyCount": 2,
   "appliesStrategyFrameworks": [
     "business-model-environment-scan",
-    "scenario-planning"
+    "scenario-planning",
+    "mckinsey-7s",
+    "porters-five-forces"
   ]
 }

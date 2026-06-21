@@ -35,6 +35,9 @@
     },
     {
       "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 3, multi-sided-platforms pp. 76-81)"
+    },
+    {
+      "label": "Osterwalder, Pigneur, Bernarda & Smith · Value Proposition Design · Wiley · 2014 (Evolve chapter: Taobao reinventing e-commerce, pp. 268-271)"
     }
   ],
   "thumbnailDefId": "business-model-canvas",
@@ -47,6 +50,8 @@
   ],
   "appliesStrategyFrameworks": [
     "business-model-environment-scan",
-    "business-model-portfolio-management"
+    "business-model-portfolio-management",
+    "mckinsey-three-horizons",
+    "bcg-growth-share-matrix"
   ]
 }

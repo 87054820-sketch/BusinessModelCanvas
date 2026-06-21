@@ -1,0 +1,30 @@
+{
+  "canvasTitle": "BCG Growth-Share Matrix",
+  "blocks": {
+    "question-marks": {
+      "title": "Question Marks",
+      "prompt": "High market growth, low relative share. Which units deserve selective investment, and which should be abandoned before they consume too much cash?",
+      "examples": ["Fast-growing category where we are a small challenger", "New product with market momentum but weak share", "Promising geography where leadership is still uncertain"]
+    },
+    "stars": {
+      "title": "Stars",
+      "prompt": "High market growth, high relative share. Which units require investment to defend leadership and become future cash generators?",
+      "examples": ["Category leader in a fast-growing market", "Platform business with rapid adoption and strong position", "Brand with share leadership and expanding demand"]
+    },
+    "dogs": {
+      "title": "Dogs",
+      "prompt": "Low market growth, low relative share. Which units should be divested, closed, repositioned, or kept only for strategic reasons?",
+      "examples": ["Legacy product in a flat market with weak share", "Local brand with no path to leadership", "Low-growth service consuming management attention"]
+    },
+    "cash-cows": {
+      "title": "Cash Cows",
+      "prompt": "Low market growth, high relative share. Which units should be managed for cash, defended efficiently, and used to fund future bets?",
+      "examples": ["Mature category leader with high margins", "Installed-base product producing repeat revenue", "Stable franchise that funds H2/H3 growth options"]
+    },
+    "portfolio-actions": {
+      "title": "Portfolio actions",
+      "prompt": "Translate quadrant positions into actions: invest, harvest, select, divest, reposition, or validate the market/share assumptions.",
+      "examples": ["Invest in two Question Marks, harvest one Cash Cow, divest one Dog", "Recheck market growth using external data", "Expand one Star into BMC and funding plan"]
+    }
+  }
+}

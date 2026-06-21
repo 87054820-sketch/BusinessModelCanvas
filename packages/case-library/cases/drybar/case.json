@@ -29,6 +29,7 @@
   "canvasCount": 4,
   "storyCount": 2,
   "appliesStrategyFrameworks": [
-    "blue-ocean-strategy"
+    "blue-ocean-strategy",
+    "bain-elements-of-value"
   ]
 }

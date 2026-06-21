@@ -30,6 +30,7 @@
   "canvasCount": 4,
   "storyCount": 2,
   "appliesStrategyFrameworks": [
-    "business-model-portfolio-management"
+    "business-model-portfolio-management",
+    "bcg-growth-share-matrix"
   ]
 }

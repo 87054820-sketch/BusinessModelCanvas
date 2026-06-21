@@ -26,6 +26,9 @@
       "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (bait-and-hook example, Free pattern, pp. 100-103)"
     },
     {
+      "label": "Osterwalder, Pigneur, Bernarda & Smith · Value Proposition Design · Wiley · 2014 (Design constraints: razor-blade / recurring consumable example, p. 90)"
+    },
+    {
       "label": "Chris Anderson · Free: The Future of a Radical Price · Hyperion · 2009"
     },
     {
@@ -47,5 +50,8 @@
   ],
   "appliesPatternSubtypes": {
     "free": "bait-and-hook"
-  }
+  },
+  "appliesStrategyFrameworks": [
+    "bain-elements-of-value"
+  ]
 }

@@ -31,5 +31,8 @@
   "storyCount": 2,
   "appliesPatterns": [
     "unbundling-business-models"
+  ],
+  "appliesStrategyFrameworks": [
+    "porters-five-forces"
   ]
 }

@@ -769,10 +769,8 @@ export function ProjectWorkspacePage() {
 
   async function handleAddCanvas(defId: string) {
     if (!project || !identity) return;
-    const defaultTitle =
-      lang === 'zh'
-        ? `未命名 · ${new Date().toLocaleDateString('zh-CN')}`
-        : `Untitled · ${new Date().toLocaleDateString('en-US')}`;
+    const def = defSummaries.find((item) => item.id === defId);
+    const defaultTitle = def?.name[lang] || def?.name.en || defId;
     const c = await api.createCanvas(
       { projectId: project.id, defId, title: defaultTitle, language: lang },
       identity.displayName,

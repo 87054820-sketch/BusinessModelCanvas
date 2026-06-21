@@ -1,0 +1,57 @@
+{
+  "slug": "bain-elements-of-value",
+  "name": {
+    "en": "Bain Elements of Value",
+    "zh": "贝恩价值元素"
+  },
+  "summary": {
+    "en": "A customer-value framework from Bain that breaks perceived value into 30 elements across functional, emotional, life-changing, and social-impact levels, helping teams deepen value proposition design beyond generic pains and gains.",
+    "zh": "贝恩提出的客户价值框架，把感知价值拆成 30 个元素，分布在功能、情感、改变人生和社会影响四个层级，帮助团队把价值主张分析做得比泛泛的痛点/收益更细。"
+  },
+  "sources": [
+    {
+      "label": "Bain & Company · The Elements of Value",
+      "url": "https://www.bain.com/insights/the-elements-of-value-hbr/"
+    },
+    {
+      "label": "Bain & Company · Elements of Value interactive graphic",
+      "url": "https://media.bain.com/elements-of-value/"
+    }
+  ],
+  "references": [
+    {
+      "type": "article",
+      "cite": "Bain Elements of Value 2016",
+      "label": "Bain & Company · The Elements of Value",
+      "year": 2016,
+      "url": "https://www.bain.com/insights/the-elements-of-value-hbr/",
+      "note": {
+        "en": "Primary Bain/HBR article describing 30 Elements of Value in four categories.",
+        "zh": "介绍 30 个价值元素及四个层级的 Bain/HBR 主要文章。"
+      }
+    },
+    {
+      "type": "web",
+      "cite": "Bain interactive graphic",
+      "label": "Bain & Company · Elements of Value interactive graphic",
+      "url": "https://media.bain.com/elements-of-value/",
+      "note": {
+        "en": "Public interactive hierarchy used to map the value elements into VPC, JTBD, empathy, and journey work.",
+        "zh": "可公开查看的价值层级交互图，可用于映射到 VPC、JTBD、共情图和客户旅程。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "nespresso", "role": "primary" },
+    { "slug": "drybar", "role": "secondary" },
+    { "slug": "stitch-fix", "role": "secondary" },
+    { "slug": "citizenm-hotels", "role": "secondary" },
+    { "slug": "novo-nordisk-novopen", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "value-proposition-canvas",
+    "jobs-to-be-done",
+    "empathy-map",
+    "customer-journey"
+  ]
+}

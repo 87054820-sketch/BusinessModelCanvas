@@ -31,6 +31,8 @@
   "storyCount": 2,
   "appliesStrategyFrameworks": [
     "business-model-portfolio-management",
-    "innovation-metrics"
+    "innovation-metrics",
+    "mckinsey-three-horizons",
+    "mckinsey-7s"
   ]
 }

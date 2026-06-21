@@ -57,9 +57,15 @@
     { "slug": "blue-ocean-strategy", "featured": true },
     { "slug": "business-model-environment-scan", "featured": true },
     { "slug": "business-model-portfolio-management", "featured": true },
+    { "slug": "mckinsey-three-horizons", "featured": true },
+    { "slug": "bcg-growth-share-matrix", "featured": true },
     { "slug": "innovation-metrics", "featured": true },
+    { "slug": "mckinsey-7s", "featured": true },
     { "slug": "scenario-planning", "featured": true },
-    { "slug": "platform-strategy", "featured": true }
+    { "slug": "performance-based-scenario-planning", "featured": true },
+    { "slug": "platform-strategy", "featured": true },
+    { "slug": "bain-elements-of-value", "featured": true },
+    { "slug": "porters-five-forces", "featured": true }
   ],
   "experiments": [
     { "slug": "customer-interview", "featured": true },
@@ -83,6 +89,11 @@
     { "slug": "blue-ocean-strategy", "featured": true },
     { "slug": "blue-ocean-shift", "featured": true },
     { "slug": "the-art-of-the-long-view", "featured": true },
-    { "slug": "platform-revolution", "featured": true }
+    { "slug": "scenario-planning-in-organizations", "featured": true },
+    { "slug": "platform-revolution", "featured": true },
+    { "slug": "world-bank-data-catalog", "featured": true },
+    { "slug": "oecd-data-explorer", "featured": true },
+    { "slug": "world-bank-enterprise-surveys", "featured": true },
+    { "slug": "wipo-global-innovation-index", "featured": true }
   ]
 }

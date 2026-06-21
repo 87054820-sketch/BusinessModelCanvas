@@ -48,6 +48,9 @@
     "open-business-models": "outside-in"
   },
   "appliesStrategyFrameworks": [
-    "business-model-portfolio-management"
+    "business-model-portfolio-management",
+    "mckinsey-three-horizons",
+    "bcg-growth-share-matrix",
+    "mckinsey-7s"
   ]
 }

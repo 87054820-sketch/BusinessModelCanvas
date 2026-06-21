@@ -267,6 +267,12 @@
     "portfolio-map": {
       "tagline": "Manage exploration and exploitation portfolios"
     },
+    "three-horizons-map": {
+      "tagline": "Sequence core businesses, emerging growth engines, and future options"
+    },
+    "bcg-growth-share-matrix": {
+      "tagline": "Classify a portfolio as Stars, Cash Cows, Question Marks, and Dogs"
+    },
     "ad-lib-value-proposition": {
       "tagline": "Draft a one-sentence value proposition and iterate"
     },
