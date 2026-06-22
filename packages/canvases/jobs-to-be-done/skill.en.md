@@ -35,6 +35,10 @@ Each block must build on the previous. If `motivation` doesn't follow naturally 
 - ❌ **Outcome that's the product.** "Have AI tool installed" is owning the product, not the outcome. The outcome is what the AI tool _produces_ in their world.
 - ❌ **Ignoring failure modes.** A real job has a "what could go wrong" shadow. If failure feels harmless, the job isn't important enough to design for.
 
+## Bain value lens handoff
+
+JTBD is the upstream input for the Bain value lens. Do not start by selecting from the 30 value elements; first write the situation, the progress sought, and the emotional/social consequence of failure. Then map the most important `emotional-social` stickies to Bain emotional, social, or higher-order value elements before feeding them into VPC `gains` and `gain-creators`.
+
 ## Tone
 
 The canvas should read as a story, not a checklist. Each block in 1-3 sentences max — it's a sketch, not a brief.

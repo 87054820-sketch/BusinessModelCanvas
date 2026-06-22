@@ -27,7 +27,7 @@ export function CanvasMethodList({ defs, lang, onStart }: Props) {
         return (
           <article
             key={def.id}
-            className="group flex min-h-[220px] flex-col rounded-xl border border-gray-200 bg-white p-4 transition hover:border-emerald-200 hover:shadow-sm"
+            className="group flex min-h-[208px] flex-col rounded-xl border border-gray-200 bg-white p-4 transition hover:border-emerald-200 hover:shadow-sm"
           >
             <div className="flex h-24 items-center justify-center rounded-lg bg-[#FAFAF7] ring-1 ring-gray-100 transition group-hover:bg-white">
               <CanvasThumb id={def.id} width={148} height={88} />
@@ -39,7 +39,7 @@ export function CanvasMethodList({ defs, lang, onStart }: Props) {
                   {t('library.canvasMethod.kind')}
                 </span>
               </div>
-              <p className="mt-2 line-clamp-3 text-[12px] leading-relaxed text-gray-500">
+              <p className="mt-2 line-clamp-2 text-[12px] leading-relaxed text-gray-500">
                 {tagline || t('library.canvasMethod.defaultTagline')}
               </p>
               {def.related && def.related.length > 0 && (

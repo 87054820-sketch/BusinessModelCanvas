@@ -30,7 +30,7 @@
     },
     "emotional-social": {
       "title": "Emotional + Social jobs",
-      "prompt": "For each functional Job Story above, name at least one emotional and one social companion job.",
+      "prompt": "For each functional Job Story above, name at least one emotional and one social companion job; these can later map to Bain value elements.",
       "examples": [
         "Emotional — Feel calm during close week instead of dreading it",
         "Emotional — Be reassured the numbers are right without re-checking",

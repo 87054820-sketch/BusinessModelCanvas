@@ -5,9 +5,11 @@
     "zh": "贝恩价值元素"
   },
   "summary": {
-    "en": "A customer-value framework from Bain that breaks perceived value into 30 elements across functional, emotional, life-changing, and social-impact levels, helping teams deepen value proposition design beyond generic pains and gains.",
-    "zh": "贝恩提出的客户价值框架，把感知价值拆成 30 个元素，分布在功能、情感、改变人生和社会影响四个层级，帮助团队把价值主张分析做得比泛泛的痛点/收益更细。"
+    "en": "A supporting customer-value lens from Bain that breaks perceived value into 30 elements across functional, emotional, life-changing, and social-impact levels. Use it to deepen VPC, JTBD, empathy, and journey work — not as a standalone primary canvas.",
+    "zh": "贝恩提出的辅助型客户价值透镜，把感知价值拆成 30 个元素，分布在功能、情感、改变人生和社会影响四个层级。它用于深化 VPC、JTBD、共情图和客户旅程，而不是独立主画布。"
   },
+  "category": "customer-value-lens",
+  "analysisRole": "supporting-lens",
   "sources": [
     {
       "label": "Bain & Company · The Elements of Value",

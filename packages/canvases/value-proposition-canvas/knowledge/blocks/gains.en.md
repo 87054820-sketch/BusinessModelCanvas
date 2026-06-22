@@ -2,6 +2,8 @@
 
 Gains describe the outcomes and benefits your customers want to achieve. Some gains are required, expected, or desired, while others may surprise them. Gains include functional utility, social gains, positive emotions, and cost savings.
 
+If gains sound too abstract, use Bain Elements of Value as a supporting classification: functional, emotional, life-changing, and social-impact value. This is only an annotation layer; the gain itself must still be a concrete result the customer can recognize.
+
 It is important not to confuse gains with pains. Gains are what customers want to achieve; pains are what they want to avoid.
 
 ## Types of Gains

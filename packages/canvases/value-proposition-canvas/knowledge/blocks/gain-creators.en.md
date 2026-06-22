@@ -4,6 +4,8 @@ Gain Creators describe how your products and services create customer gains. The
 
 Because Pain Relievers are already in place, Gain Creators don't need to address every gain identified in the customer profile. Focus on the gains that are relevant and that differentiate your products and services.
 
+When using the Bain value lens, a Gain Creator should explain how the product mechanism creates the tagged value element, for example `[functional-saves time] auto-fills the return`, instead of just saying “more convenient.”
+
 ## How Gain Creators Create Value
 
 ### Save Time, Money, or Effort

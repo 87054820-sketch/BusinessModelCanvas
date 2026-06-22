@@ -406,11 +406,22 @@
     "strategyFrameworks": {
       "intro": {
         "title": "用战略框架推演选择，而不是只描述现状",
-        "body": "战略分析是策略库的**视角层**：它帮助你看清竞争格局、外部环境、创新组合、未来情景和平台生态。先理解框架，再打开关联案例，看企业如何形成取舍和行动。"
+        "body": "战略分析是策略库的**视角层**：它帮助你看清竞争格局、外部环境、创新组合、未来情景、平台生态和客户价值。部分方法是主分析框架，部分是 Bain 这类辅助透镜；先理解框架角色，再打开关联案例，看企业如何形成取舍和行动。"
       }
     },
     "strategyFramework": {
       "descriptionEmpty": "本战略方法暂未撰写说明。"
+    },
+    "strategyFrameworkCategories": {
+      "portfolio-growth": "组合与增长",
+      "environment-competition": "环境与竞争",
+      "organization-ecosystem": "组织与生态",
+      "innovation-evidence": "创新与证据",
+      "customer-value-lens": "客户价值透镜"
+    },
+    "strategyFrameworkRoles": {
+      "primary-framework": "主分析框架",
+      "supporting-lens": "辅助工具"
     },
     "resources": {
       "intro": {

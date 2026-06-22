@@ -70,6 +70,17 @@ For `business-model-portfolio-management`, the story must explain:
 6. **Movement over time** — how the portfolio changes as evidence, risk, and scale change. For dynamic cases, prefer multiple dated Portfolio Maps or a movement table.
 7. **Evidence and risks** — what supports the placement and what could invalidate it.
 
+### Bain Elements of Value
+
+For `bain-elements-of-value`, the story must treat the framework as a **customer value lens**, not as a standalone strategy canvas. It should explain:
+
+1. **Primary customer segment and situation** — which customer context makes the value element matter.
+2. **VPC mapping** — which `gains`, `gain-creators`, or `pain-relievers` carry the value.
+3. **JTBD evidence** — which functional, emotional, or social job explains why the value is important.
+4. **Journey touchpoint** — where the value is actually perceived, amplified, or broken.
+5. **Focus** — the few value elements that define the proposition; never claim all 30.
+6. **Evidence boundary** — which value claims are supported by customer behaviour versus only brand/marketing interpretation.
+
 ### Future Innovation Metrics
 
 For a future `innovation-metrics` framework, the story should explain risk reduction, evidence strength, learning velocity, cost, expected return, and the difference between exploration metrics and execution KPIs.

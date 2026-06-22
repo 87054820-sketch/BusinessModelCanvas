@@ -66,7 +66,11 @@ PinGarden.app
 │   └── loadURL('http://127.0.0.1:{dynamicPort}')
 ├── Web frontend (apps/web/dist → served by Fastify @fastify/static)
 ├── API server (apps/server/dist → Node.js ESM)
-└── Canvas definitions (packages/canvases)
+├── Canvas definitions (packages/canvases)
+└── CLI onboarding
+    ├── wrapper: ~/Library/Application Support/PinGarden/bin/pingarden
+    ├── auto PATH symlink: /usr/local/bin/pingarden when writable
+    └── fallback PATH symlink: ~/.local/bin/pingarden + shell profiles
 ```
 
 **Why dynamic localhost port:**
@@ -190,3 +194,4 @@ The deterministic script is the source of truth. A CodeBuddy Skill, if added lat
 | `Canvas defs dir not found` | `CANVAS_DEFS_DIR` env var missing or wrong | Verify `apps/desktop/dist/canvases/` exists before packaging |
 | Blank screen after identity login | `useIdentity()` instances out of sync | See `apps/web/src/identity/useIdentity.ts` — broadcast custom event on save/clear |
 | Missing `@pingarden/shared` types in build | Shared package not built | Use `pnpm dist`; the script runs the full desktop build chain |
+| AI says `pingarden: command not found` after installing app + skill | App was not opened once, or `/usr/local/bin` registration needed administrator approval | Open PinGarden, choose `Help → Install CLI to PATH`, then verify `which pingarden && pingarden doctor` in a new terminal |

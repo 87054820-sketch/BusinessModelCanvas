@@ -81,6 +81,10 @@ seen.
   customer-profile side of the VPC.
 - Pair it with **Jobs To Be Done**: *Say + Do* surface the functional
   job; *Think & Feel* surface the emotional and social jobs.
+- Pair it with the **Bain value lens**: only tag *Gains* as emotional,
+  social, or higher-order value elements when the outer-ring evidence
+  supports them. Bain tags are post-evidence classification, not
+  pre-interview assumptions.
 - Print or screenshot it onto the team-room wall. The whole point is
   shared reference, not a one-time deliverable.
 

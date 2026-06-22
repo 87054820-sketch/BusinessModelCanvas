@@ -50,6 +50,12 @@ Fit is not a one-time event — it is earned through repeated experiments. Start
 
 > When you are ready to turn assumptions into structured experiments, use the **Experiment Canvas** to define hypothesis, method, metrics, and evidence criteria for each test.
 
+## Bain Value Lens
+
+When `gains` or `gain-creators` collapse into vague words like “convenient,” “premium,” or “reassuring,” use **Bain Elements of Value** as a supporting annotation lens, not as a separate primary canvas. Keep the VPC sticky text, then add a light tag such as `[functional-saves time]`, `[emotional-reduces anxiety]`, `[social-badge value]`, or `[higher-order-self-actualization]`.
+
+Bain helps the team explain why customers perceive value: which items are basic functional value, which are emotional/social value, and which are still unvalidated marketing claims. After annotation, return to the Customer Journey and Experiment Canvas to verify whether customers actually recognize the value.
+
 ## Common Failure Modes
 
 - Confusing pains with gains — they are not simply opposites.

@@ -27,7 +27,7 @@
   "thumbnailDefId": "blue-ocean-strategy-canvas",
   "projectId": "979cc615-ebc8-4c53-8593-196877533ed0",
   "canvasCount": 4,
-  "storyCount": 2,
+  "storyCount": 4,
   "appliesStrategyFrameworks": [
     "blue-ocean-strategy",
     "bain-elements-of-value"

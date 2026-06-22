@@ -631,6 +631,30 @@ const STRATEGY_STORY_PROFILES: Record<string, StorySupportProfile> = {
     label: 'Platform Strategy',
     terms: ['platform strategy', 'platform ecosystem', 'core interaction', 'network effects', 'governance', '平台战略', '平台生态', '核心交互', '网络效应', '治理'],
   },
+  'mckinsey-three-horizons': {
+    label: 'McKinsey Three Horizons',
+    terms: ['three horizons', 'horizon 1', 'horizon 2', 'horizon 3', 'H1', 'H2', 'H3', 'core', 'emerging', 'future options', '三层增长', 'H1', 'H2', 'H3', '核心', '增长引擎', '未来选项'],
+  },
+  'bcg-growth-share-matrix': {
+    label: 'BCG Growth-Share Matrix',
+    terms: ['growth-share', 'growth share', 'cash cow', 'cash cows', 'star', 'stars', 'question mark', 'question marks', 'dog', 'dogs', 'market share', 'market growth', '增长份额', '现金牛', '明星', '问题业务', '瘦狗', '市场份额', '市场增长'],
+  },
+  'mckinsey-7s': {
+    label: 'McKinsey 7S',
+    terms: ['7S', '7-S', 'strategy', 'structure', 'systems', 'shared values', 'skills', 'style', 'staff', '组织', '结构', '系统', '共同价值观', '技能', '风格', '人员'],
+  },
+  'bain-elements-of-value': {
+    label: 'Bain Elements of Value',
+    terms: ['elements of value', 'customer value lens', 'functional value', 'emotional value', 'life-changing', 'social impact', 'value proposition', '价值元素', '客户价值透镜', '功能价值', '情感价值', '改变生活', '社会影响', '价值主张'],
+  },
+  'porters-five-forces': {
+    label: "Porter's Five Forces",
+    terms: ['five forces', 'rivalry', 'buyer power', 'supplier power', 'substitutes', 'new entrants', 'industry pressure', '五力', '行业内竞争', '买方', '供应商', '替代品', '新进入者', '行业压力'],
+  },
+  'performance-based-scenario-planning': {
+    label: 'Performance-Based Scenario Planning',
+    terms: ['performance-based scenario', 'project preparation', 'scenario exploration', 'scenario development', 'scenario implementation', 'project assessment', '基于绩效的情景规划', '项目准备', '情景探索', '情景开发', '情景实施', '项目评估'],
+  },
 };
 
 const PATTERN_STORY_PROFILES: Record<string, StorySupportProfile> = {

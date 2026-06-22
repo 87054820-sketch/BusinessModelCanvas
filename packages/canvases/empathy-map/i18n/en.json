@@ -57,7 +57,7 @@
     },
     "gain": {
       "title": "Gain",
-      "prompt": "Wants, needs, definitions of success.",
+      "prompt": "Wants, needs, definitions of success; map to Bain value elements when evidence is strong.",
       "examples": [
         "Ships one zero-to-one feature with measurable adoption",
         "Stops being the bottleneck for cross-team launches",

@@ -1065,6 +1065,15 @@ export interface BusinessModelPatternDetail {
 
 export type StrategyFrameworkReferenceType = PatternReferenceType;
 
+export type StrategyFrameworkCategory =
+  | 'portfolio-growth'
+  | 'environment-competition'
+  | 'organization-ecosystem'
+  | 'innovation-evidence'
+  | 'customer-value-lens';
+
+export type StrategyFrameworkAnalysisRole = 'primary-framework' | 'supporting-lens';
+
 export interface StrategyFrameworkReference {
   type: StrategyFrameworkReferenceType;
   cite: string;
@@ -1087,6 +1096,10 @@ export interface StrategyFramework {
   name: LocalizedLabel;
   /** Bilingual one-paragraph blurb shown on the framework card. */
   summary: LocalizedLabel;
+  /** High-level family used to distinguish portfolio, environment, organization, and customer-value lenses. */
+  category?: StrategyFrameworkCategory;
+  /** Whether this method is a primary decision framework or a supporting interpretation lens. */
+  analysisRole?: StrategyFrameworkAnalysisRole;
   /** Flat sources for backward-compatible citation rendering. */
   sources: CaseSource[];
   /** Annotated bibliography preferred by the UI and generated skill. */

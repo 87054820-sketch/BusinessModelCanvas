@@ -30,7 +30,7 @@
     },
     "satisfaction": {
       "title": "Customer Satisfaction",
-      "prompt": "How does the customer feel at this moment — happy, neutral, or frustrated?",
+      "prompt": "How does the customer feel at this moment — happy, neutral, or frustrated? This also tests whether Bain emotional/social value is real.",
       "examples": [
         "Frustrated — pricing page is opaque, has to email sales just to get a number",
         "Neutral — onboarding finished but the value still feels theoretical",

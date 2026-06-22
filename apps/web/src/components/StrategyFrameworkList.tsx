@@ -44,6 +44,12 @@ function StrategyFrameworkCard({
   const { t } = useTranslation();
   const name = framework.name[lang] ?? framework.name.en;
   const summary = framework.summary[lang] ?? framework.summary.en;
+  const categoryLabel = framework.category
+    ? t(`library.strategyFrameworkCategories.${framework.category}`, framework.category)
+    : null;
+  const roleLabel = framework.analysisRole
+    ? t(`library.strategyFrameworkRoles.${framework.analysisRole}`, framework.analysisRole)
+    : null;
 
   return (
     <div
@@ -71,6 +77,16 @@ function StrategyFrameworkCard({
         <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600">
           {t('library.exampleCount', { count: framework.examples.length })}
         </span>
+        {categoryLabel && (
+          <span className="rounded bg-indigo-50 px-1.5 py-0.5 text-[10px] text-indigo-700">
+            {categoryLabel}
+          </span>
+        )}
+        {roleLabel && (
+          <span className="rounded bg-amber-50 px-1.5 py-0.5 text-[10px] text-amber-700">
+            {roleLabel}
+          </span>
+        )}
         {(framework.references?.length ?? framework.sources.length) > 0 && (
           <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600">
             {t('library.sourceCount', {

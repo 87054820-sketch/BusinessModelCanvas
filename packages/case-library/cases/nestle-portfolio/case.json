@@ -27,8 +27,8 @@
   ],
   "thumbnailDefId": "portfolio-map",
   "projectId": "6c31a714-4fbf-4d70-9143-5108dc2fc758",
-  "canvasCount": 4,
-  "storyCount": 2,
+  "canvasCount": 6,
+  "storyCount": 4,
   "appliesStrategyFrameworks": [
     "business-model-portfolio-management",
     "bcg-growth-share-matrix"

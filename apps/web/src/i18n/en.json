@@ -412,11 +412,22 @@
     "strategyFrameworks": {
       "intro": {
         "title": "Use strategy frameworks to reason about choices, not just describe the present",
-        "body": "Strategy analysis is the library's **lens layer**: it helps you read competition, environment, innovation portfolios, future scenarios, and platform ecosystems. Learn the framework, then open related cases to see how companies form trade-offs and action."
+        "body": "Strategy analysis is the library's **lens layer**: it helps you read competition, environment, innovation portfolios, future scenarios, platform ecosystems, and customer value. Some methods are primary frameworks; others, like Bain, are supporting lenses. Learn the role, then open related cases to see how companies form trade-offs and action."
       }
     },
     "strategyFramework": {
       "descriptionEmpty": "No description authored for this strategy method yet."
+    },
+    "strategyFrameworkCategories": {
+      "portfolio-growth": "Portfolio & Growth",
+      "environment-competition": "Environment & Competition",
+      "organization-ecosystem": "Organization & Ecosystem",
+      "innovation-evidence": "Innovation & Evidence",
+      "customer-value-lens": "Customer Value Lens"
+    },
+    "strategyFrameworkRoles": {
+      "primary-framework": "Primary framework",
+      "supporting-lens": "Supporting tool"
     },
     "resources": {
       "intro": {

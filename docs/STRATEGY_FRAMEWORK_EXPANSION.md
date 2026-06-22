@@ -26,6 +26,8 @@ First batch data resources:
 
 ## Relationship model
 
+PinGarden separates primary decision frameworks from supporting lenses. Bain Elements of Value stays in `strategyFrameworks`, but its product role is `customer-value-lens`: it annotates VPC/JTBD/Empathy/Journey work rather than becoming a standalone canvas.
+
 PinGarden should treat portfolio work as a family of related lenses:
 
 | Tool | Role | Primary question |

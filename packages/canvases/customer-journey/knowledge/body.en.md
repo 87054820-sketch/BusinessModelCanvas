@@ -80,6 +80,10 @@ across is the punch line — that's where the design opportunity lives.
 - **Pump emotional valleys into the product roadmap.** The dips in
   the satisfaction row are the highest-leverage places to invest.
   Number them, sequence them.
+- **Check whether Bain value elements actually appear.** If VPC tags
+  `[emotional-reduces anxiety]` or `[social-badge value]`, the journey
+  must show which touchpoint creates it; a value element with no
+  touchpoint is probably marketing copy.
 - **Pair with the Empathy Map.** The map gives you depth on the
   person; the journey gives you breadth across time. Together they
   explain both **who** and **when**.

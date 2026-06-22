@@ -38,6 +38,10 @@ Skipping straight to think-and-feel is the canonical failure mode — that's whe
 - ❌ **Using it as a marketing persona.** Empathy Map is for operational empathy, not a deck. No demographic clichés ("loves matcha"), no brand stereotypes.
 - ❌ **Treating it as static.** Update the map as evidence arrives. A 6-month-old empathy map is folklore.
 
+## Bain value lens handoff
+
+Empathy Map is the evidence intake for the Bain value lens. Map `gain` or `pain` into emotional, social, or higher-order value elements only when `see` / `say-and-do` / `hear` / `think-and-feel` contains customer evidence. Do not choose Bain elements first and backfill feelings; that projects team aspiration onto the customer.
+
 ## Tone
 
 `say-and-do` and `hear` should sound like raw transcript snippets. `think-and-feel` / `pain` / `gain` should be in the persona's voice, not yours.

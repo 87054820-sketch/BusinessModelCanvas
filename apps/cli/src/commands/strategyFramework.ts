@@ -51,6 +51,8 @@ export class StrategyFrameworkListCommand extends BaseCommand {
           slug: f.slug,
           'name.en': f.name.en,
           'name.zh': f.name.zh,
+          category: f.category ?? '',
+          role: f.analysisRole ?? '',
           examples: f.examples.length,
         })),
       ),

@@ -6,16 +6,12 @@ The PinGarden command-line tool. Lets AI agents (and humans) read and write canv
 
 There are two supported paths.
 
-**1. Bundled with the Mac app (recommended).** Install the PinGarden DMG. On first launch the app drops a wrapper script at `~/Library/Application Support/PinGarden/bin/pingarden` and writes setup instructions to `cli-readme.txt` in the same dir. The app uses Electron-as-Node to run the CLI, so you do **not** need a separate Node.js install.
+**1. Bundled with the Mac app (recommended).** Install the PinGarden DMG and open the app once. On launch the app drops a wrapper script at `~/Library/Application Support/PinGarden/bin/pingarden`, then automatically tries to register it on PATH: first `/usr/local/bin/pingarden`, then `~/.local/bin/pingarden` plus shell profile PATH entries. The app uses Electron-as-Node to run the CLI, so you do **not** need a separate Node.js install.
 
-To make `pingarden` available globally, follow option A or B from `cli-readme.txt`. Quick copy-paste:
+If PATH registration needs repair, use the desktop menu `Help → Install CLI to PATH`. Temporary fallback:
 
 ```bash
-# option A — symlink into /usr/local/bin (may need sudo on modern macOS)
-ln -s "$HOME/Library/Application Support/PinGarden/bin/pingarden" /usr/local/bin/pingarden
-
-# option B — add the bin directory to PATH (zsh)
-echo 'export PATH="$HOME/Library/Application Support/PinGarden/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+"$HOME/Library/Application Support/PinGarden/bin/pingarden" doctor
 ```
 
 **2. Standalone npm package.** When the Mac app isn't an option (CI, Linux, headless server, version-pin a different CLI release than the app):
@@ -230,7 +226,6 @@ Each command is split into a `Command` class (clipanion glue) and a pure handler
 
 ### Deferred (intentionally not in v1)
 
-- **Auto-symlink to `/usr/local/bin`.** Modern macOS requires admin for that path; a sudo prompt during first launch is user-hostile. Today the Mac app writes a wrapper to `<userData>/bin/pingarden` and a `cli-readme.txt` with three copy-paste install options. Revisit when there's a clearer "happy path" (e.g., the user is on Homebrew and has `/usr/local/bin` writable).
-- **Onboarding UI panel.** No React component yet for "Add `pingarden` to PATH" — the readme is plain text. Cheap to add later if telemetry shows users miss the file.
+- **Onboarding UI panel.** The desktop Help menu can repair CLI PATH registration, but there is still no React onboarding panel for it.
 - **`--lang` enforcement on `canvas write`.** The flag exists for fetching ai-context during diff, but the server's `objects/bulk` is language-agnostic. Validating that sticky text language matches the canvas language is a future heuristic.
 - **CI gate for skill drift.** The plan calls for `pingarden skill build && git diff --exit-code <repo>/.claude/skills/pingarden/` to catch un-committed canvas-bundle changes. Wire when GitHub Actions is added.

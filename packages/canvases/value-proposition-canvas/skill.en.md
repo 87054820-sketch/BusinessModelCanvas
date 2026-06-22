@@ -37,6 +37,10 @@ The most common failure mode is filling the Value Map first; you'll then backfit
 5. **Pain Relievers** — for each Pain, how does your offering reduce or remove it? Be explicit per pain.
 6. **Gain Creators** — for each Gain, how does your offering produce or amplify it? Be explicit per gain.
 
+### Bain value lens (supporting, not primary canvas):
+
+When gains are too vague, use `bain-elements-of-value` to add light tags to `gains` / `gain-creators`, for example `[functional-saves time]`, `[emotional-reduces anxiety]`, or `[social-badge value]`. The tag explains the VPC sticky; it never replaces real customer jobs, pains, or gains.
+
 ## Cross-block invariants — VPC's whole logic depends on these
 
 - **Each Pain Reliever should map to ≥1 specific Pain.** If a reliever doesn't address an actual pain you wrote, it's a feature looking for a problem.

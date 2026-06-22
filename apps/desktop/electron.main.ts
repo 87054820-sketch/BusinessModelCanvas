@@ -1,10 +1,10 @@
-import { app, BrowserWindow, Menu, shell } from 'electron';
+import { app, BrowserWindow, dialog, Menu, shell } from 'electron';
 import { spawn } from 'child_process';
 import { randomUUID } from 'crypto';
 import fs from 'fs';
 import net from 'net';
 import path from 'path';
-import { setupCliOnboarding } from './cli-onboarding';
+import { installCliToPath, setupCliOnboarding } from './cli-onboarding';
 
 const isDev = !app.isPackaged;
 const desktopHost = '127.0.0.1';
@@ -215,10 +215,10 @@ app.whenReady().then(async () => {
   await waitForServer(`${appUrl}/health`, desktopInstanceId);
   createWindow(appUrl);
 
-  // Wire up the bundled `pingarden` CLI: install/refresh the Claude
-  // skill, generate a wrapper script in userData, and refresh the
-  // onboarding readme. Skipped in dev — developers run the CLI from
-  // the workspace directly (`node apps/cli/dist/index.js`). All
+  // Wire up the bundled `pingarden` CLI: generate the wrapper, register
+  // it on PATH when possible, install/refresh the Claude skill, and
+  // refresh the onboarding readme. Skipped in dev — developers run the
+  // CLI from the workspace directly (`node apps/cli/dist/index.js`). All
   // failures are logged but never block startup.
   if (!isDev) {
     setupCliOnboarding({
@@ -241,6 +241,27 @@ app.whenReady().then(async () => {
     {
       label: 'Help',
       submenu: [
+        {
+          label: 'Install CLI to PATH',
+          enabled: !isDev,
+          click: async () => {
+            const result = await installCliToPath(
+              {
+                userData,
+                resourcesPath: process.resourcesPath,
+                electronExec: process.execPath,
+                appVersion: app.getVersion(),
+              },
+              { allowAdminPrompt: true },
+            );
+            await dialog.showMessageBox({
+              type: result.ok ? 'info' : 'error',
+              message: result.ok ? 'PinGarden CLI installed' : 'PinGarden CLI install failed',
+              detail: result.detail,
+            });
+          },
+        },
+        { type: 'separator' },
         {
           label: 'Contact Sibo Li',
           click: () => {

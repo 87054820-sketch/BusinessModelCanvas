@@ -109,6 +109,11 @@ job was solved; the customer still churned.
 - **Pair with the Value Proposition Canvas** — every Job Story
   becomes a Customer Job in VPC; emotional jobs especially feed VPC's
   Pains; outcomes feed VPC's Gains.
+- **Pair with the Bain value lens** — do not backfill needs from the
+  30 elements; first use JTBD to capture the real situation and
+  emotional/social consequence, then tag the key gains as
+  `[functional-saves time]`, `[emotional-reduces anxiety]`,
+  `[social-badge value]`, and similar value elements.
 - **Pair with the Empathy Map** — the empathy map gives you depth on
   the customer; the Job Stories distil that depth into hireable
   units.

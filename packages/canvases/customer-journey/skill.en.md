@@ -35,6 +35,10 @@ A complete journey reads in one direction (start → end of journey) and you can
 - ❌ **Ignoring post-purchase.** Customer journeys often end at purchase in low-quality maps. Onboarding, daily use, support, advocacy are where retention lives.
 - ❌ **Treating it as static.** Customer journeys are moving — re-examine after every release / experiment.
 
+## Bain value lens handoff
+
+Customer Journey is the timeline check for the Bain value lens. Values tagged in VPC as `[functional]`, `[emotional]`, or `[social]` must be perceived by the customer at some stage; if a value element has no touchpoint, it may be marketing copy. Satisfaction dips usually indicate value breakage and should feed back into VPC `pains` or `pain-relievers`.
+
 ## Tone
 
 Each sticky should sit at a specific stage and read in the persona's voice or as an observable event. "On day 3, can't find the export button" beats "Hard to use."

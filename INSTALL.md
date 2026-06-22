@@ -73,15 +73,24 @@ AI 应该会:
 
 ## 如果 AI 说"找不到 pingarden 命令"(少数情况)
 
-大多数情况下,AI 会自己找到 PinGarden 应用里自带的命令行工具,不需要你额外做什么。
+打开 PinGarden 桌面应用后,它会自动把自带的 CLI 注册到 PATH:
 
-但如果 AI 反复告诉你"`pingarden: command not found`"或者"找不到 CLI",**把下面这句话原封不动复制粘贴给 AI**:
+- 优先注册到 `/usr/local/bin/pingarden`
+- 如果没有权限,会回退到 `~/.local/bin/pingarden`,并把 `~/.local/bin` 写入 zsh/bash 配置
 
-> 请帮我把 pingarden CLI 装到系统 PATH 上,这样以后你就能直接用了。我是 macOS。如果需要我装 Node / npm,告诉我具体步骤。
+如果 AI 仍然提示"`pingarden: command not found`"或者"找不到 CLI":
 
-AI 会自动选一种方式帮你装好(通常是 `npm install -g @pingarden/cli`),然后继续完成你原来的任务。装好之后**这台电脑以后都不需要再处理这个问题了**。
+1. 确认 PinGarden App 已经打开过至少一次。
+2. 在菜单里点 `Help → Install CLI to PATH`。
+3. 重新打开终端 / AI 工具,再试 `pingarden doctor`。
 
-> 如果 AI 让你装 Node,可以在浏览器搜 "Node.js 官网" 下载安装包(或者用 Homebrew 跑 `brew install node`),装完再让 AI 继续。
+临时兜底命令是:
+
+```bash
+"$HOME/Library/Application Support/PinGarden/bin/pingarden" doctor
+```
+
+不需要安装 Node / npm,也不要让 AI 用 `node /Applications/PinGarden.app/.../index.js` 跑打包后的 CLI。
 
 ---
 
@@ -129,7 +138,7 @@ AI 会自动选一种方式帮你装好(通常是 `npm install -g @pingarden/cli
 | --- | --- |
 | 双击 .app 弹出"已损坏,无法打开" | 没跑那条 `xattr -cr` 命令,回到 §第一步·2 |
 | `xattr` 命令报权限错误 | 在前面加 `sudo`:`sudo xattr -cr /Applications/PinGarden.app` |
-| AI 加载了技能,但说"找不到 pingarden 命令" | 见上文「**如果 AI 说"找不到 pingarden 命令"**」一节 —— 复制那句话给 AI |
+| AI 加载了技能,但说"找不到 pingarden 命令" | 打开 PinGarden 一次,再点 `Help → Install CLI to PATH`; 仍不行就用上文的 wrapper 兜底命令 |
 | 应用打开后浏览器是空白 / 报端口冲突 | 端口 4000 被其他程序占用,关掉那个程序后重启 PinGarden |
 | AI 完全没反应,不知道有 PinGarden | 检查 `~/.claude/skills/pingarden/SKILL.md` 这个文件存不存在,不存在就重新跑 §第二步的 unzip 命令 |
 | 升级技能包但 AI 还在用旧版 | 把新的 zip 重新 unzip 一遍盖上去就行 |
@@ -149,4 +158,9 @@ rm -rf ~/Library/Application\ Support/PinGarden
 rm -rf ~/.claude/skills/pingarden
 ```
 
-如果当时让 AI 帮忙装过 `pingarden` 命令,再多跑一句:`npm uninstall -g @pingarden/cli`。
+如果要顺手清掉 CLI 软链,再多跑一句:
+
+```bash
+sudo rm -f /usr/local/bin/pingarden
+rm -f ~/.local/bin/pingarden
+```
