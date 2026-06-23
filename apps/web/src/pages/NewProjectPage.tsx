@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { Lang, Project } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
@@ -7,12 +7,15 @@ import { libraryApi } from '../api/library';
 import { projectsApi } from '../api/projects';
 import { useIdentity } from '../identity/useIdentity';
 import { buildSeedPayload } from '../lib/seedExperimentStickies';
+import { BackLink } from '../components/BackLink';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 type Mode = 'newProject' | 'existingProject';
 
 export function NewProjectPage() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const { identity } = useIdentity();
   const [params] = useSearchParams();
 
@@ -144,7 +147,7 @@ export function NewProjectPage() {
           console.warn('Pre-selected canvas create failed:', err);
         }
       }
-      navigate(`/p/${p.id}`);
+      navigate(`/p/${p.id}`, { state: preserveNavigationState(location) });
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error('Create project failed:', err);
@@ -171,7 +174,7 @@ export function NewProjectPage() {
         identity.displayName,
       );
       await maybeSeedExperiment(newCanvas.id);
-      navigate(`/p/${selectedProjectId}`);
+      navigate(`/p/${selectedProjectId}`, { state: preserveNavigationState(location) });
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error('Add canvas to existing project failed:', err);
@@ -199,9 +202,9 @@ export function NewProjectPage() {
 
   return (
     <main className="mx-auto max-w-xl px-8 py-12">
-      <Link to="/" className="text-sm text-gray-600 hover:text-gray-900">
+      <BackLink fallback="/" className="text-sm text-gray-600 hover:text-gray-900">
         ← {t('nav.back')}
-      </Link>
+      </BackLink>
       <h1 className="mt-4 text-2xl font-semibold">{t('newProject.title')}</h1>
 
       {withCanvasName && (
@@ -286,12 +289,12 @@ export function NewProjectPage() {
         )}
 
         <div className="flex justify-end gap-2">
-          <Link
-            to="/"
+          <BackLink
+            fallback="/"
             className="rounded-lg border border-gray-300 px-4 py-2 text-sm hover:bg-gray-50"
           >
             {t('newProject.cancel')}
-          </Link>
+          </BackLink>
           <button
             type="button"
             onClick={handleSubmit}

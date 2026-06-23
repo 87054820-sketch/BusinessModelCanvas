@@ -6,7 +6,7 @@
 
 三件事让 Patagonia 与户外服饰行业基线区分开。第一,**1% for the Planet 承诺**:营业额的 1%(不是利润 —— 这点很重要,亏损年份也得交)强制捐给环保事业。创始人 Yvon Chouinard 把这个机制外溢成一个跨行业网络,鼓励其他品牌一起。第二,**终身保修 + 免费修补**:品牌主动劝顾客不要扔旧衣,公司自己付钱让 Worn Wear 团队修补回流的服装,还派出巡回修补卡车跟户外赛事一起跑。第三,**2022 年的所有权重组**:Chouinard 把 100% 股权交给 Patagonia Purpose Trust + Holdfast Collective —— 一种「反 IPO」的姿态,把公司使命锁定在股东压力之外。《纽约时报》当时的标题是「Billionaire No More」。
 
-::canvas[business-model-canvas]{canvasId="3a77ca72-4d47-4ec9-a99d-6a54a07beb87"}
+::canvas[business-model-canvas]{variant="main-zh"}
 
 ## 增长引擎
 
@@ -22,7 +22,7 @@ Patagonia 不靠最大化新客获取来增长,而是最大化与价值观对齐
 
 ## 阅读 Scenario Matrix
 
-::canvas[scenario-matrix]{canvasId="1bc7ecbb-81ca-4526-b34a-14f23b0a7e7a"}
+::canvas[scenario-matrix]{}
 
 情景矩阵把这些张力转成两个关键不确定性：使命溢价会增强还是价格敏感度会上升，循环经济监管会收紧还是继续自愿化。Patagonia 的稳健动作，是那些在多个未来都成立的动作：维修、转售、耐用性证明、供应链透明和社区行动主义。
 

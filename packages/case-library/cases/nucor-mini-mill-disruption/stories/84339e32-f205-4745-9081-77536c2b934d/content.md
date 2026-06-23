@@ -27,7 +27,7 @@ Faced with mini-mill competition in rebar, US Steel and Bethlehem did exactly wh
 
 Nucor's rebar share climbed. Margins in rebar were never great, but Nucor's variable-wage cost structure meant **its** margins on rebar were profitable.
 
-::canvas[business-model-canvas]{canvasId="be8935f4-35fb-4409-8a0a-11a2a6307735"}
+::canvas[business-model-canvas]{}
 
 ## Step 2: Improving the steel (1975–1980s)
 
@@ -39,7 +39,7 @@ The Rubicon was **flat-rolled sheet** — the segment that fed Detroit and Chica
 
 In 1989 Nucor commissioned **Crawfordsville, Indiana**, the world's first commercial **thin-slab continuous caster** (SMS Schloemann technology, 50mm slab vs the integrated mill's 200–300mm). Thin-slab cut energy costs and made flat-rolled economic at mini-mill scale. The metallurgy had limits — initially Crawfordsville sold to appliance OEMs, construction, and the lower-grade auto interior parts. But the trajectory was clear.
 
-::canvas[disruption-diagnosis]{canvasId="94f4fa23-332a-4713-ad6e-2dc6980e1d65"}
+::canvas[disruption-diagnosis]{}
 
 ## Step 4: The endgame (1990s–2001)
 

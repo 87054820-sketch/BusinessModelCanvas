@@ -51,6 +51,7 @@ import { useUiPrefs } from '../state/uiPrefs';
 import { StoryWorkspace } from '../story/StoryWorkspace';
 import { libraryApi } from '../api/library';
 import type { AttachedRef } from '../copilot/useConversation';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 /**
  * `true` when the keystroke should be left to the browser's native text
@@ -347,7 +348,7 @@ export function ProjectWorkspacePage() {
       })
       .catch(() => {
         if (cancelled) return;
-        navigate('/');
+        navigate('/projects');
       });
     return () => {
       cancelled = true;
@@ -387,18 +388,26 @@ export function ProjectWorkspacePage() {
     // neither, leave both null so the workspace shows its empty
     // state.
     if (filteredStories.length > 0 && projectId) {
-      navigate(`/p/${projectId}/s/${filteredStories[0]!.id}`, { replace: true });
+      navigate(`/p/${projectId}/s/${filteredStories[0]!.id}`, {
+        replace: true,
+        state: preserveNavigationState(location),
+      });
       setActiveCanvas(null);
       return;
     }
     if (filteredCanvases.length > 0) {
       const first = filteredCanvases[0]!;
       setActiveCanvas(first);
-      if (projectId) navigate(`/p/${projectId}/c/${first.id}`, { replace: true });
+      if (projectId) {
+        navigate(`/p/${projectId}/c/${first.id}`, {
+          replace: true,
+          state: preserveNavigationState(location),
+        });
+      }
       return;
     }
     setActiveCanvas(null);
-  }, [filteredCanvases, filteredStories, canvasId, storyId, projectId, navigate]);
+  }, [filteredCanvases, filteredStories, canvasId, storyId, projectId, navigate, location]);
 
   useEffect(() => {
     if (!storyId) {
@@ -408,9 +417,12 @@ export function ProjectWorkspacePage() {
     const s = filteredStories.find((item) => item.id === storyId);
     setActiveStory(s ?? null);
     if (!s && filteredStories.length > 0 && projectId) {
-      navigate(`/p/${projectId}/s/${filteredStories[0]!.id}`, { replace: true });
+      navigate(`/p/${projectId}/s/${filteredStories[0]!.id}`, {
+        replace: true,
+        state: preserveNavigationState(location),
+      });
     }
-  }, [filteredStories, storyId, projectId, navigate]);
+  }, [filteredStories, storyId, projectId, navigate, location]);
 
   // When the active canvas changes, default the right inspector to "this
   // canvas type's knowledge" view. Clicking a sticky/block on the canvas
@@ -781,7 +793,7 @@ export function ProjectWorkspacePage() {
       identity.displayName,
     );
     setCanvases((prev) => [c, ...prev]);
-    navigate(`/p/${project.id}/c/${c.id}`);
+    navigate(`/p/${project.id}/c/${c.id}`, { state: preserveNavigationState(location) });
   }
 
   async function handleDeleteCanvas(c: CanvasMeta) {
@@ -791,8 +803,17 @@ export function ProjectWorkspacePage() {
     if (activeCanvas?.id === c.id) {
       // Pick another canvas in the project, or land on project root.
       const fallback = canvases.find((x) => x.id !== c.id);
-      if (fallback) navigate(`/p/${project.id}/c/${fallback.id}`, { replace: true });
-      else navigate(`/p/${project.id}`, { replace: true });
+      if (fallback) {
+        navigate(`/p/${project.id}/c/${fallback.id}`, {
+          replace: true,
+          state: preserveNavigationState(location),
+        });
+      } else {
+        navigate(`/p/${project.id}`, {
+          replace: true,
+          state: preserveNavigationState(location),
+        });
+      }
     }
     setPendingDeleteCanvas(null);
   }
@@ -811,7 +832,7 @@ export function ProjectWorkspacePage() {
     );
     const { content: _content, ...meta } = created;
     setStories((prev) => [meta, ...prev]);
-    navigate(`/p/${project.id}/s/${created.id}`);
+    navigate(`/p/${project.id}/s/${created.id}`, { state: preserveNavigationState(location) });
   }
 
   async function handleDeleteStory(s: StoryMeta) {
@@ -820,9 +841,22 @@ export function ProjectWorkspacePage() {
     setStories((prev) => prev.filter((x) => x.id !== s.id));
     if (activeStory?.id === s.id) {
       const fallback = stories.find((x) => x.id !== s.id);
-      if (fallback) navigate(`/p/${project.id}/s/${fallback.id}`, { replace: true });
-      else if (canvases[0]) navigate(`/p/${project.id}/c/${canvases[0].id}`, { replace: true });
-      else navigate(`/p/${project.id}`, { replace: true });
+      if (fallback) {
+        navigate(`/p/${project.id}/s/${fallback.id}`, {
+          replace: true,
+          state: preserveNavigationState(location),
+        });
+      } else if (canvases[0]) {
+        navigate(`/p/${project.id}/c/${canvases[0].id}`, {
+          replace: true,
+          state: preserveNavigationState(location),
+        });
+      } else {
+        navigate(`/p/${project.id}`, {
+          replace: true,
+          state: preserveNavigationState(location),
+        });
+      }
     }
     setPendingDeleteStory(null);
   }
@@ -844,7 +878,7 @@ export function ProjectWorkspacePage() {
   async function handleProjectDelete() {
     if (!identity || !project) return;
     await projectsApi.delete(project.id, identity.displayName);
-    navigate('/');
+    navigate('/projects');
   }
 
   /**
@@ -858,7 +892,7 @@ export function ProjectWorkspacePage() {
   async function handleForkLibraryCase(slug: string, forkLang: Lang) {
     if (!identity) return;
     const result = await libraryApi.fork(slug, identity.displayName, forkLang);
-    navigate(`/p/${result.project.id}`);
+    navigate(`/p/${result.project.id}`, { state: preserveNavigationState(location) });
   }
 
   function openProjectCopilot() {
@@ -933,8 +967,8 @@ export function ProjectWorkspacePage() {
         stories={filteredStories}
         activeCanvasId={activeCanvas?.id}
         activeStoryId={activeStory?.id}
-        onSelect={(id) => navigate(`/p/${project.id}/c/${id}`)}
-        onSelectStory={(id) => navigate(`/p/${project.id}/s/${id}`)}
+        onSelect={(id) => navigate(`/p/${project.id}/c/${id}`, { state: preserveNavigationState(location) })}
+        onSelectStory={(id) => navigate(`/p/${project.id}/s/${id}`, { state: preserveNavigationState(location) })}
         onSelectProject={selectProject}
         onAddCanvas={handleAddCanvas}
         onAddStory={handleAddStory}
@@ -1250,7 +1284,7 @@ export function ProjectWorkspacePage() {
                 displayName={identity.displayName}
                 projectCanvases={filteredCanvases}
                 defNames={Object.fromEntries(defSummaries.map((d) => [d.id, d.name]))}
-                onSwitchCanvas={(id) => navigate(`/p/${project.id}/c/${id}`)}
+                onSwitchCanvas={(id) => navigate(`/p/${project.id}/c/${id}`, { state: preserveNavigationState(location) })}
                 onAddCanvas={handleAddCanvas}
                 onProjectPatch={handleProjectPatch}
                 onProjectDelete={handleProjectDelete}

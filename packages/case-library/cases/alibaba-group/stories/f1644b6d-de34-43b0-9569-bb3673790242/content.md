@@ -14,7 +14,7 @@
 
 ## 一张 BMC,因为故事在跨业务的连接处
 
-::canvas[business-model-canvas]{canvasId="b09083f2-5cb1-4553-8429-69ffb83e0750"}
+::canvas[business-model-canvas]{variant="alibaba-group-orchestrator"}
 
 与 Uber、Airbnb 等本库中其他经典 MSP 案例不同,阿里巴巴集团只用了一张 BMC,不是两张。理由:这个案例不是要讲单一子业务里乘客 vs 司机式的不对称 —— 那是 `aliexpress`、`cainiao`、(将来的)`taobao` / `tmall` 这些案例要做的事。这个案例要讲的是**集团母体在任何单一子业务交付之上额外添加了什么价值**。
 

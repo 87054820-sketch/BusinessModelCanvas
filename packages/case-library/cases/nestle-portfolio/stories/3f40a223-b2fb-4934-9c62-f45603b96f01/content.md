@@ -4,7 +4,7 @@
 
 Nestlé is a better BCG example than a single-product startup because the unit of analysis is a portfolio of categories, brands, and platforms. The question is not “is Nestlé innovative?” It is whether mature cash-generating categories can fund selected growth platforms without protecting every legacy brand forever.
 
-::canvas[bcg-growth-share-matrix]{canvasId="cdc2ca5b-12c4-48c0-93a7-1e9dfbb38cac"}
+::canvas[bcg-growth-share-matrix]{}
 
 Cash cows are mature global brands and repeat-purchase categories that can fund the rest of the portfolio. Stars are businesses where Nestlé has both category momentum and a strong relative position. Question marks include health science or plant-based alternatives when the market is attractive but the right-to-win is not yet proven. Dogs are low-growth, low-fit units whose capital, management attention, or brand architecture may be better redeployed.
 

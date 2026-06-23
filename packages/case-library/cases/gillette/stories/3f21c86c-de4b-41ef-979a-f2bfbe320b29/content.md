@@ -6,13 +6,13 @@ King C. Gillette filed US Patent 775,134 in November 1901, granted November 1904
 
 *Business Model Generation (BMG 2010)* uses Gillette as the bait-and-hook paradigm case at pp. 100-103. The reason the case is taught with two BMCs and not one is exactly the same reason Multi-Sided Platforms is taught with two — the asymmetry IS the model. Mashing the razor side and the blade side into one BMC hides what makes the pattern work.
 
-::canvas[business-model-canvas]{canvasId="83deac35-a56b-4c3b-adab-8e4426337e15"}
+::canvas[business-model-canvas]{variant="razors-bait"}
 
 The razor BMC reads strangely until you see the third sticky in `Revenue Streams`: "REAL revenue is from blade business" (cross-side dependency, blue). The razor's per-unit margin is low — sometimes negative when bundled into cereal boxes or distributed through Army contracts during WWI (Gillette signed a 3.5 million-razor military contract in 1917 that put the brand into nearly every American man's pocket within two years). The pink "sometimes negative" sticky in Revenue Streams is correct: this side is a *loss leader* in many distribution channels.
 
 What the razor BMC really captures is *customer acquisition*. Every razor in circulation is a long-term blade customer. The patent enforces the lock-in: only Gillette blades fit Gillette razors.
 
-::canvas[business-model-canvas]{canvasId="a19db9b8-62ab-4438-b3e7-96604b607680"}
+::canvas[business-model-canvas]{variant="blades-hook"}
 
 The blade BMC is where the money is. High gross margin (~50-70% in the 20th century, similar today). Recurring revenue from every razor in circulation. The cross-side dependency on the installed razor base (blue sticky in Customer Segments) makes the connection legible: blades only sell because razors got distributed first.
 

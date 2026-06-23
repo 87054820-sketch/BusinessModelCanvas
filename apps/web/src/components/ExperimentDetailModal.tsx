@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import type {
@@ -10,6 +10,7 @@ import type {
 } from '@pingarden/shared';
 import { libraryApi } from '../api/library';
 import { api, type CanvasDefSummary } from '../api/client';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 interface Props {
   experiment: Experiment | null;
@@ -45,6 +46,7 @@ let canvasDefsCache = new Map<string, CanvasDefSummary>();
 export function ExperimentDetailModal({ experiment, lang, onClose, onOpenCase }: Props) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const [detail, setDetail] = useState<BusinessModelExperimentDetail | null>(null);
   const [loading, setLoading] = useState(false);
   // Lookup of canvas defs so we can render localised names for
@@ -155,6 +157,7 @@ export function ExperimentDetailModal({ experiment, lang, onClose, onOpenCase }:
                 `/p/new?withCanvas=experiment-canvas&seedExperiment=${encodeURIComponent(
                   experiment.slug,
                 )}`,
+                { state: preserveNavigationState(location) },
               );
             }}
             className="rounded-lg bg-violet-600 px-3 py-1.5 text-[12px] font-semibold text-white transition hover:bg-violet-700"
@@ -272,6 +275,7 @@ function AppliesToCanvases({
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   if (experiment.appliesToCanvases.length === 0) return null;
   return (
     <section className="mt-8 border-t border-gray-100 pt-4">
@@ -289,7 +293,9 @@ function AppliesToCanvases({
               key={defId}
               type="button"
               onClick={() =>
-                navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`)
+                navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, {
+                  state: preserveNavigationState(location),
+                })
               }
               className="rounded-full border border-gray-200 bg-white px-2.5 py-1 text-[11px] font-medium text-gray-700 transition hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
             >

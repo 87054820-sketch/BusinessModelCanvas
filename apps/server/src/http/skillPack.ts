@@ -19,9 +19,9 @@ import type { FastifyInstance } from 'fastify';
  * UX model (per 2026-06-22 user feedback): instead of distributing N
  * per-tool unzip commands the user has to copy + run themselves, we
  * provide ONE universal install prompt the user pastes into whichever
- * AI agent they're using. The AI agent (Claude Code / Cursor / Cline /
- * Code Buddy / Work Buddy / Roo / Kilo / …) detects itself, picks the
- * right install path, and runs `pingarden doctor` to verify the CLI.
+ * AI agent they're using. The AI agent (Claude / Code Cursor / Codex /
+ * CodeBuddy / WorkBuddy / Other) detects itself, picks the right install
+ * path, and runs `pingarden doctor` to verify the CLI.
  * The prompt itself lives in the renderer's i18n (it's a UI string,
  * not data); this endpoint just returns metadata + the supported-agent
  * list for the chip strip.
@@ -34,14 +34,12 @@ import type { FastifyInstance } from 'fastify';
  */
 
 const SUPPORTED_AGENTS: ReadonlyArray<{ id: string; label: string }> = [
-  { id: 'claude-code', label: 'Claude Code' },
-  { id: 'cursor', label: 'Cursor' },
-  { id: 'cline', label: 'Cline' },
-  { id: 'code-buddy', label: 'Code Buddy' },
-  { id: 'work-buddy', label: 'Work Buddy' },
-  { id: 'roo-code', label: 'Roo Code' },
-  { id: 'kilo-code', label: 'Kilo Code' },
-  { id: 'continue', label: 'Continue' },
+  { id: 'claude', label: 'Claude' },
+  { id: 'code-cursor', label: 'Code Cursor' },
+  { id: 'codex', label: 'Codex' },
+  { id: 'codebuddy', label: 'CodeBuddy' },
+  { id: 'workbuddy', label: 'WorkBuddy' },
+  { id: 'other', label: '其他' },
 ];
 
 const here = dirname(fileURLToPath(import.meta.url));

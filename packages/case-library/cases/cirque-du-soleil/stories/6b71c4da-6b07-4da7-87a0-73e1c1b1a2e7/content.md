@@ -14,7 +14,7 @@ That opened a different buyer group: adults, tourists, corporate buyers, and peo
 
 ## Read the Business Model Canvas first
 
-::canvas[business-model-canvas]{canvasId="69e999a0-931c-4eef-b8bb-015fac8e02f4"}
+::canvas[business-model-canvas]{}
 
 The BMC shows why the strategy is not just creative branding. The value proposition is premium live spectacle, not cheap family amusement. The customer segment shifts from mainly children and families to adults, tourists, and corporate clients. That shift changes revenue streams: higher ticket prices, destination shows, touring productions, and licensing become more important than low-price mass attendance.
 
@@ -22,7 +22,7 @@ On the cost side, the elimination choices matter. Removing animals cuts major lo
 
 ## Then read the Strategy Canvas
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="d0baed15-486e-449c-ac7e-3ff5b7821754"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 The Strategy Canvas should be read as a shape change. Traditional circus scored high on animals, multiple rings, star acts, aisle concessions, and child-oriented fun. Cirque scores low or zero on several of those. It scores high on artistic theme, music, dance, production quality, and adult appeal.
 

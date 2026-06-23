@@ -44,6 +44,10 @@ export function CopilotChatSettings({ onClose }: { onClose?: () => void }) {
     await config.save(input.trim());
     setInput('');
     setSavedFlash(true);
+    if (onClose) {
+      onClose();
+      return;
+    }
     window.setTimeout(() => setSavedFlash(false), 1500);
   }
 

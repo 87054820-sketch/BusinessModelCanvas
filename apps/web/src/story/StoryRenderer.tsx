@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkCjkFriendly from 'remark-cjk-friendly';
 import remarkGfm from 'remark-gfm';
-import type { CanvasMeta, Lang } from '@pingarden/shared';
+import type { CanvasMeta, Lang, StoryCanvasDirective } from '@pingarden/shared';
 import { parseStoryBlocks } from './storyDirectives';
 import { EmbeddedCanvas } from './EmbeddedCanvas';
 
@@ -32,7 +32,7 @@ export function StoryRenderer({ content, projectId, canvases, lang, displayName 
     <article className="mx-auto max-w-5xl px-8 py-8 text-gray-800">
       {blocks.map((block, idx) => {
         if (block.kind === 'canvas') {
-          const canvas = canvases.find((c) => c.id === block.directive.canvasId);
+          const canvas = resolveEmbeddedCanvas(canvases, block.directive);
           return (
             <EmbeddedCanvas
               key={`${block.raw}-${idx}`}
@@ -52,4 +52,22 @@ export function StoryRenderer({ content, projectId, canvases, lang, displayName 
       })}
     </article>
   );
+}
+
+function resolveEmbeddedCanvas(
+  canvases: CanvasMeta[],
+  directive: StoryCanvasDirective,
+): CanvasMeta | undefined {
+  if (directive.canvasId) {
+    const byId = canvases.find((c) => c.id === directive.canvasId);
+    if (byId) return byId;
+  }
+  if (!directive.defId) return undefined;
+
+  const sameDef = canvases.filter((c) => c.defId === directive.defId);
+  if (directive.variantId) {
+    const byVariant = sameDef.find((c) => c.variant?.id === directive.variantId);
+    if (byVariant) return byVariant;
+  }
+  return sameDef[0];
 }

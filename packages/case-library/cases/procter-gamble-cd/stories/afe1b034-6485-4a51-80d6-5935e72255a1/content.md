@@ -8,7 +8,7 @@ The portfolio unit is not an individual product idea; it is an innovation source
 
 ## Read the Portfolio Map
 
-::canvas[portfolio-map]{canvasId="c4e8d7f1-0893-4c8b-9a65-7ee6f69b8a2f"}
+::canvas[portfolio-map]{variant="connect-develop-portfolio"}
 
 The core brands on the right are the exploit engine: they already have revenue, shelf space, supply chains, and consumer memory. Closed R&D is also on the right, but marked as a risk watch item because it still produces value while no longer being sufficient as the sole source of future options.
 

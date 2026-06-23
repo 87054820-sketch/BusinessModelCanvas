@@ -4,13 +4,13 @@ When Osterwalder and Pigneur wrote *Business Model Generation* in 2010, they nee
 
 ## The traditional bundle
 
-::canvas[business-model-canvas]{canvasId="3ce4c7cd-6e95-43ee-afaf-8aea6288e1c0"}
+::canvas[business-model-canvas]{variant="traditional-publishing-en"}
 
 Traditional book publishing is built around a single load-bearing decision: **publishers screen manuscripts before printing**. This decision sets up everything else on the canvas. Editors gatekeep — they accept maybe 1% of submitted manuscripts and reject the rest because the unit economics of selecting wrong are catastrophic. To recover the cost of editing, design, and a print run of 5,000 to 50,000 copies before knowing demand, the publisher needs to predict bestsellers. The retail network then carries those predicted bestsellers; whatever doesn't sell is *returned* and pulped (industry-wide return rates ran around 30%). The revenue model — wholesale to bookstores at 40-50% off — only works at scale, which only works if you've successfully picked hits. The yellow stickies on this canvas are the *industry-defining* choices; the pink stickies are the built-in tensions Lulu would later exploit.
 
 ## The 2006 inversion
 
-::canvas[business-model-canvas]{canvasId="4648ab40-a093-45b0-9a02-4cbd5746ea43"}
+::canvas[business-model-canvas]{variant="lulu-2006-en"}
 
 Lulu.com's 2006 BMC takes that load-bearing decision and reverses it. Anyone can publish. There is no manuscript screening. The economics work because **books are printed only after a buyer orders one** — print-on-demand collapses the inventory risk to zero. Failed titles cost Lulu nothing. Successful niche titles still produce revenue: Lulu collects a sales commission on each book sold (low percentage per title, but multiplied across hundreds of thousands of niche titles) plus optional publishing service fees (ISBN, distribution upgrades, formatting help).
 
@@ -22,7 +22,7 @@ The pink stickies on the 2006 canvas are honest. Most Lulu books sell fewer than
 
 ## 2025 — same core, three new layers
 
-::canvas[business-model-canvas]{canvasId="d384bb48-9afd-4326-a493-6147a0c00311"}
+::canvas[business-model-canvas]{variant="lulu-2025-en"}
 
 The 2025 canvas keeps the long-tail core intact (the blue stickies — "anyone can publish", marketplace operations, print-on-demand — carry over from 2006) and adds three new layers in yellow.
 

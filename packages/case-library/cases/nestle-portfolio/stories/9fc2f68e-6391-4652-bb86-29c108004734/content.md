@@ -8,7 +8,7 @@
 
 ## 阅读 Portfolio Map
 
-::canvas[portfolio-map]{canvasId="48a47679-315e-452d-a82d-6d0d54a14e00"}
+::canvas[portfolio-map]{}
 
 地图右侧主要是 Exploit 组合。饮料、咖啡和宠物护理是已有规模与收益的开发业务。星巴克授权和 Blue Bottle 这类动作不是随机收购，而是围绕高端咖啡与渠道扩展去降低组合的未来风险。
 

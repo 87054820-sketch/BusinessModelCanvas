@@ -8,7 +8,7 @@ The bet looks obvious in hindsight, but it required ignoring the consensus that 
 
 Three differentiators. First, **anyone can publish**. Udemy doesn't require credentials, prior teaching experience, or institutional affiliation. A working software engineer can record a Solidity course on a Sunday and start earning royalties on Monday. Second, **price elasticity through promotional discounts**. Courses list at $200 but routinely sell at $13.99 during weekly sales — the dynamic creates 'I'll buy it now or kick myself' urgency that drives impulse purchases at scale. Third, **the B2B funnel**. Consumers find courses on udemy.com; corporate L&D teams find Udemy Business — a curated subset of the catalog sold as an enterprise subscription. Same content, different package, much higher gross margin.
 
-::canvas[business-model-canvas]{canvasId="2295d245-6606-4ff3-8be1-df86da7fb2fa"}
+::canvas[business-model-canvas]{variant="main-en"}
 
 ## The growth engine
 

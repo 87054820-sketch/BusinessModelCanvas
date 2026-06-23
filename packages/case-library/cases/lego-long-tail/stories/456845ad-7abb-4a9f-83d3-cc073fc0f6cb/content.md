@@ -4,7 +4,7 @@ In 2003 LEGO posted the worst financial results in its 70-year history — a DKK
 
 The traditional toy-industry archetype is what unwound LEGO's profitability:
 
-::canvas[business-model-canvas]{canvasId="a3f1545b-1a77-424b-af71-8aa1faeb0c5e"}
+::canvas[business-model-canvas]{variant="traditional-toy-industry"}
 
 The blocks that look benign on this canvas — Mass-market kids, Wholesale margins, Big-box retail, Bestseller forecasting — are exactly the ones that broke when the predictions stopped working. **Inventory carrying cost** is colored as a pain point because forecasts must be paid for in capital long before the customer signal arrives.
 
@@ -14,7 +14,7 @@ Under Jørgen Vig Knudstorp's leadership, LEGO went looking for ways to *use the
 
 The mechanism was elegant on paper: free Lego Digital Designer software let a user virtually assemble any set they could imagine; LEGO printed a personalized manual, picked the exact bricks from inventory, packaged them in a box with the user's design on the front, and shipped. Each user got one custom set. The platform tapped *exactly* the customer the bestseller model couldn't reach — the AFOL who wanted a steam locomotive in 1:32 scale, or a recreation of their hometown's church.
 
-::canvas[business-model-canvas]{canvasId="fb6f9d65-f17a-43c2-af9a-a25cb1b1dcdb"}
+::canvas[business-model-canvas]{variant="lego-factory"}
 
 Factory's BMC carries forward the brick library and the LEGO brand from the core business (mint stickies) but introduces a new long-tail engine (yellow): the design tool, custom POD warehouse line, per-order pick-and-pack, personalized manual. The pink stickies mark the hidden risk — *per-order brick picking + packing* and *marginal cost never reached zero*. Factory had a real customer, real revenue, and an honest pricing model (price ≈ pieces × per-piece rate, plus a premium). What it didn't have was the marginal economics of a real long tail. Every order was a manual operation. The platform closed in 2014 — not for lack of customer love, but because Anderson's first economic shift (democratization of *production*) hadn't actually happened on LEGO's factory floor.
 
@@ -22,7 +22,7 @@ Factory's BMC carries forward the brick library and the LEGO brand from the core
 
 In parallel, LEGO began experimenting with a different long-tail shape via a 2008 partnership with Japanese platform CUUSOO. Instead of *one user → one custom set*, this was *one fan design → many buyers if community votes for it*. Fans submit complete set designs to ideas.lego.com. Other fans vote. Designs that reach 10,000 supporters within a year enter LEGO's internal review. The ones that pass enter standard LEGO production — same molds, same retail, same supply chain — and the original designer earns a 1% royalty on net sales.
 
-::canvas[business-model-canvas]{canvasId="0c7691f2-68fa-4dcc-b43d-77bb26a50200"}
+::canvas[business-model-canvas]{variant="lego-ideas"}
 
 Ideas's BMC reads very differently from Factory's. The carry-over from core business (mint) is much larger — Ideas reuses LEGO's existing manufacturing, retail, and supply chain. The long-tail engine (yellow) is no longer per-order picking; it's a platform that aggregates niche designs and a community that signals which ones have an audience. A new color appears: lavender, the **curation layer** — community voting plus LEGO's design review. Anderson's third shift (falling search costs) is doing the work, not the second (democratization of distribution): Ideas doesn't change how LEGO makes things, it changes which things LEGO makes.
 

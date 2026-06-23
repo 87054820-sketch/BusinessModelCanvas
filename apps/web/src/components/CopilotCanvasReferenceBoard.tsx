@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type {
   CanvasDefaultColorLegendEntry,
@@ -20,6 +20,7 @@ import { StickyLegendPalette } from '../canvas/StickyLegendPalette';
 import { useReadOnlyYDoc } from '../collab/useReadOnlyYDoc';
 import { hasPinClasses } from '../collab/pinClasses';
 import { hasColorLegend } from '../collab/colorLegend';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 const UUID_RE = /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/gi;
 const KEBAB_RE = /`?\b[a-z][a-z0-9]+(?:-[a-z0-9]+)+\b`?/g;
@@ -260,6 +261,7 @@ export function CopilotCaseReferenceBoard({
   onNavigateToCanvas?: () => void;
 }) {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const lang = (i18n.language === 'zh' ? 'zh' : 'en') as Lang;
 
   if (refs.length === 0) return null;
@@ -293,6 +295,7 @@ export function CopilotCaseReferenceBoard({
               </div>
               <Link
                 to={`/p/${ref.detail.project.id}`}
+                state={preserveNavigationState(location)}
                 onClick={onNavigateToCanvas}
                 className="shrink-0 rounded-full bg-indigo-600 px-3 py-1.5 text-[11px] font-semibold text-white hover:bg-indigo-700"
               >
@@ -342,6 +345,7 @@ function CanvasReferencePopover({
   onNavigateToCanvas?: () => void;
 }) {
   const { t } = useTranslation();
+  const location = useLocation();
   const { canvas, defName } = refItem;
   const { doc, ready } = useReadOnlyYDoc(canvas.id);
   const [defaultColorLegend, setDefaultColorLegend] = useState<
@@ -391,6 +395,7 @@ function CanvasReferencePopover({
           <div className="flex shrink-0 items-center gap-2">
             <Link
               to={`/p/${canvas.projectId}/c/${canvas.id}`}
+              state={preserveNavigationState(location)}
               onClick={() => {
                 onClose();
                 onNavigateToCanvas?.();

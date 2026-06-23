@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { CanvasMeta } from '@pingarden/shared';
 import { api } from '../api/client';
@@ -8,6 +8,8 @@ import { useIdentity } from '../identity/useIdentity';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { ProjectCard } from '../components/ProjectCard';
 import type { ProjectWithCanvases } from '../components/ProjectPicker';
+import { BackLink } from '../components/BackLink';
+import { stateWithFrom } from '../navigation/useSmartBack';
 
 /**
  * Browse page for the user's projects. Lives at `/projects`. Was once
@@ -28,6 +30,7 @@ export function MyProjectsPage() {
   const { t } = useTranslation();
   const { identity } = useIdentity();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [projects, setProjects] = useState<ProjectWithCanvases[] | null>(null);
   const [pendingDelete, setPendingDelete] = useState<ProjectWithCanvases | null>(null);
@@ -85,12 +88,12 @@ export function MyProjectsPage() {
       {/* Page header — back link + title + create CTA on the right */}
       <header className="mb-8 flex items-end justify-between gap-6">
         <div>
-          <Link
-            to="/"
+          <BackLink
+            fallback="/"
             className="inline-flex items-center text-sm text-gray-500 hover:text-gray-900"
           >
             ← {t('nav.back')}
-          </Link>
+          </BackLink>
           <h1 className="mt-3 text-2xl font-semibold text-gray-900">
             {t('home.myProjects')}
           </h1>
@@ -98,7 +101,7 @@ export function MyProjectsPage() {
         </div>
         <button
           type="button"
-          onClick={() => navigate('/p/new')}
+          onClick={() => navigate('/p/new', { state: stateWithFrom(location) })}
           className="shrink-0 rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50"
         >
           + {t('home.createBlankInstead')}
@@ -118,7 +121,7 @@ export function MyProjectsPage() {
             <ProjectCard
               key={p.id}
               project={p}
-              onOpen={(proj) => navigate(`/p/${proj.id}`)}
+              onOpen={(proj) => navigate(`/p/${proj.id}`, { state: stateWithFrom(location) })}
               onRequestDelete={(proj) => setPendingDelete(proj)}
             />
           ))}

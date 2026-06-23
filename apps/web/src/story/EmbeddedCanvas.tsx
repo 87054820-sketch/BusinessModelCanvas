@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { CanvasDefaultColorLegendEntry, CanvasMeta, Lang } from '@pingarden/shared';
 import { effectiveObjectTypes } from '@pingarden/shared';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { CanvasRenderer } from '../canvas/CanvasRenderer';
 import { StickyLayer } from '../canvas/StickyLayer';
@@ -12,6 +12,7 @@ import { useReadOnlyYDoc } from '../collab/useReadOnlyYDoc';
 import { hasPinClasses } from '../collab/pinClasses';
 import { hasColorLegend } from '../collab/colorLegend';
 import { api } from '../api/client';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 interface Props {
   projectId: string;
@@ -23,6 +24,7 @@ interface Props {
 
 export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: Props) {
   const { t } = useTranslation();
+  const location = useLocation();
   const rootRef = useRef<HTMLElement | null>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
   const [defaultColorLegend, setDefaultColorLegend] = useState<
@@ -84,6 +86,7 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
         </div>
         <Link
           to={`/p/${projectId}/c/${canvas.id}`}
+          state={preserveNavigationState(location)}
           className="rounded-full border border-[#B8D4D0] bg-white px-4 py-2 text-sm font-semibold text-[#2A6B6B] transition hover:bg-[#EAF3F1]"
         >
           {t('story.openCanvas')}

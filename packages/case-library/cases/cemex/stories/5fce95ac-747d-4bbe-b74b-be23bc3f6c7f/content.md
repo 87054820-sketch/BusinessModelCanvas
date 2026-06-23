@@ -4,7 +4,7 @@ In 1985 Lorenzo Zambrano took over as CEO of Cemex, then a regional Mexican ceme
 
 ## One BMC because the story is the service overlay
 
-::canvas[business-model-canvas]{canvasId="1c635f3d-0044-4324-a7e8-e6e91ddc23ea"}
+::canvas[business-model-canvas]{variant="cemex-ondemand-cement"}
 
 Unlike the multi-sided cases in this library (Uber, Airbnb, Visa, Google, etc.), Cemex is shown with ONE BMC. It's not a multi-sided platform; it's a single-side commodity manufacturer that *built a service moat around the commodity*. The interesting visual:
 

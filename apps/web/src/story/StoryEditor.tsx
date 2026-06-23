@@ -19,7 +19,7 @@ export function StoryEditor({ content, canvases, onChange }: Props) {
 
   function insertCanvas() {
     if (!selectedCanvas) return;
-    const directive = canvasDirective(selectedCanvas.defId, selectedCanvas.id, selectedCanvas.title);
+    const directive = canvasDirective(selectedCanvas.defId, selectedCanvas.variant?.id, selectedCanvas.title);
     const prefix = content.trimEnd();
     onChange(`${prefix}${prefix ? '\n\n' : ''}${directive}\n\n`);
   }

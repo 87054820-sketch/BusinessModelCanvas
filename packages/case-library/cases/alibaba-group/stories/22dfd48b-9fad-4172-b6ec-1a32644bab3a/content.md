@@ -14,7 +14,7 @@ The arc is the case's main lesson: **each sub-business is itself a multi-sided p
 
 ## One BMC because the story is the cross-business connections
 
-::canvas[business-model-canvas]{canvasId="33788f09-d2a9-4b13-a12c-49b9d52d83b1"}
+::canvas[business-model-canvas]{variant="alibaba-group-orchestrator"}
 
 Unlike Uber, Airbnb, and the other classic MSP cases in this library, Alibaba Group is shown with ONE BMC, not two. The reason: this case isn't trying to teach the rider-vs-driver-side asymmetry of any single sub-business — that's what the `aliexpress`, `cainiao`, and (future) `taobao` / `tmall` cases would do. This case is trying to teach **what value the parent group adds beyond what any single sub-business could deliver alone**.
 

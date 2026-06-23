@@ -8,11 +8,11 @@ Lafley's intervention was structural. Instead of asking R&D to spend more or hir
 
 *Business Model Generation (BMG 2010)* uses Connect & Develop as the outside-in paradigm at pp. 110-111. The reason the case is taught with two BMCs and not one is the same reason all open-business-models cases are: **the boundary between the firm and its partners is a load-bearing part of the model**. Hiding it inside one BMC misses what's structurally new.
 
-::canvas[business-model-canvas]{canvasId="2e3efd99-7cd0-41d4-ba1d-77971c75624d"}
+::canvas[business-model-canvas]{variant="pg-closed-rd"}
 
 The closed-R&D BMC reads like a generic Fortune-50 consumer-goods firm. Internal scientists invent products; patents defend them; supermarket distribution + TV advertising sell them. The pink stickies in `Cost Structure` and `Customer Relationships` mark where the model was breaking: declining R&D productivity, no direct consumer relationship, share price falling. Notice the pink sticky in `Key Partners` — *(NO innovation partners — closed by design)*. That single absence is the whole pattern shift.
 
-::canvas[business-model-canvas]{canvasId="f3483670-281f-4ec2-87f5-f124ebca56e1"}
+::canvas[business-model-canvas]{variant="pg-connect-develop"}
 
 The Connect & Develop BMC keeps almost all the right-side blocks (Customer Segments, Channels, Customer Relationships, Revenue Streams) the same — open innovation isn't about changing what you sell, it's about changing how you source what you sell. The transformation lives in `Key Resources`, `Key Activities`, and especially `Key Partners`.
 

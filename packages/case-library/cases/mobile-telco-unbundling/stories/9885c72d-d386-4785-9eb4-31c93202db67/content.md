@@ -12,7 +12,7 @@ Mobile telcos are picking apart that tangle.
 
 The archetype canvas captures the tangle. Blue stickies (infrastructure) sit next to green stickies (customer relationship) sit next to pink (product innovation) — all sharing the same Key Activities, Key Resources, Cost Structure. Each economic logic gets diluted.
 
-::canvas[business-model-canvas]{canvasId="0844a2ba-51e8-43bf-a0de-8e41b08460fc"}
+::canvas[business-model-canvas]{variant="integrated-en"}
 
 ## Unbundled #1 — Equipment manufacturers run the network
 
@@ -20,7 +20,7 @@ Network operations was always a scale game, but it was a *single-tenant* scale g
 
 France Telecom outsourced. KPN outsourced. Vodafone outsourced. Bharti was the most aggressive — they outsourced before they hit critical mass on subscriber count, betting that focusing internal capex on customer growth would compound faster than running their own towers.
 
-::canvas[business-model-canvas]{canvasId="a93b66d9-c737-4040-88a6-6cf2e9af545a"}
+::canvas[business-model-canvas]{variant="equipment-mfr-en"}
 
 ## Unbundled #2 — The pure customer-relationship telco
 
@@ -28,7 +28,7 @@ With the network outsourced, the telco can sharpen its focus on **branding and s
 
 Bharti Airtel is the canonical example. Today it's one of India's largest telcos — and structurally, it is closer to a consumer-marketing company than a network operator. The marketing budget dominates the P&L. The retail footprint dominates the balance sheet. The network is somebody else's problem.
 
-::canvas[business-model-canvas]{canvasId="c74d45db-efa1-4908-b4d1-973fb1ffbdca"}
+::canvas[business-model-canvas]{variant="unbundled-telco-en"}
 
 ## Unbundled #3 — Innovation comes from outside
 
@@ -36,7 +36,7 @@ For product and service innovation, the unbundled telco turns to **smaller, crea
 
 Mobilizy of Austria built location-based service solutions for smartphones — including a popular mobile travel guide. Sweden's tat focused on advanced mobile user interfaces. Telcos license these IP packages and ship them under their own brand. The creative firm gets distribution; the telco gets innovation it couldn't have built in-house at the same speed.
 
-::canvas[business-model-canvas]{canvasId="1dcde087-5d32-45ba-8623-2cc26db38ef1"}
+::canvas[business-model-canvas]{variant="content-providers-en"}
 
 ## What it teaches
 

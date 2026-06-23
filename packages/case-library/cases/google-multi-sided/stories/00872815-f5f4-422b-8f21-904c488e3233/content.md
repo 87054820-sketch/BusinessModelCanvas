@@ -8,11 +8,11 @@
 
 这就是教科书级的双边 MSP 结构。搜索者 BMC 和广告主 BMC 描述同一个平台,但形态完全不同:
 
-::canvas[business-model-canvas]{canvasId="92380f65-9f43-4977-a4a5-f38d873b5ea2"}
+::canvas[business-model-canvas]{variant="google-searchers"}
 
 对搜索者而言,Google 的价值主张是*快、相关、广、免费*。「收入来源」一格只有一张便签:「0 元 —— 搜索者不付费」。平台靠*别人为搜索者的注意力买单*运转。
 
-::canvas[business-model-canvas]{canvasId="9eeb28b0-69d0-4b67-bb36-75627a5a717a"}
+::canvas[business-model-canvas]{variant="google-advertisers"}
 
 对广告主而言,Google 的价值主张是*在搜索意图爆发的瞬间触达用户*。「收入来源」一格罗列着 CPC 竞价、CPM 展示、质量得分调节的定价,以及 2023 年的一个数字:**广告收入 2370 亿美元**。这就是承担收入主体的「收钱方」。注意蓝色便签标注的跨边依赖:搜索者注意力池不是 Google 自己生产的资产,而是平台必须吸引到场的一边客户;搜索者 BMC 的免费体验,正是他们愿意继续到场的理由。
 
@@ -22,7 +22,7 @@
 
 让 Google 从一个*很赚钱的双边平台*跃升为「教科书级 MSP」的关键一步发生在 2003 年。**AdSense** 让任何网站都能加入这个平台,把一段 JavaScript 贴到自己页面上,Google 就用*同一套 AdWords 的竞价系统*向访客投广告 —— 网站发布者拿走约 68% 的收入。
 
-::canvas[business-model-canvas]{canvasId="624706f6-127b-459a-93f3-123fdab8f3fc"}
+::canvas[business-model-canvas]{variant="google-content-sites"}
 
 对内容站而言,Google 的价值主张是*不用养销售团队就能把流量变现*。独立博主、食谱站、中尾科技发布者都能加入,从原本支撑 Google 搜索的同一个广告主池得到竞价定价的填充,收入按月自动结算。这一边的跨边依赖(蓝色便签)是*广告主一侧* —— 没有广告主愿意为 AdSense 库存竞价,发布者就拿不到有意义的填充率。
 

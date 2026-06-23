@@ -8,9 +8,8 @@ import zh from '../i18n/zh.json';
  * The 📦 Skill pack tab of the Copilot drawer.
  *
  * UX model (2026-06-22): a single universal install prompt the user
- * pastes into whichever AI coding agent they're already using (Claude
- * Code, Cursor, Cline, Code Buddy, Work Buddy, Roo Code, Kilo Code,
- * Continue, …). The AI detects itself, extracts the zip into its own
+ * pastes into whichever AI coding agent they're already using (Claude,
+ * Code Cursor, Codex, CodeBuddy, WorkBuddy, or another tool). The AI detects itself, extracts the zip into its own
  * standard skill / rules / workflows directory, and runs
  * `pingarden doctor` to verify the PinGarden CLI is reachable.
  *

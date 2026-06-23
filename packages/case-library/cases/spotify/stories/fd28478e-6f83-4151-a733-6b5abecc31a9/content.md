@@ -6,7 +6,7 @@ Spotify 在 2008 年 10 月从瑞典上线,带着不同的命题:别再试图为
 
 ## 行业基线
 
-::canvas[business-model-canvas]{canvasId="692a9384-c4c9-4b3d-8c3c-1f57c1059b87"}
+::canvas[business-model-canvas]{variant="traditional-music-industry"}
 
 传统唱片业 —— 先 CD、再 iTunes —— 的 BMC 是一种「单边的所有权转移模型」。客户细分:愿意为每张专辑付 15-20 美元或每首歌付 0.99 美元的人。收入来源:每次购买。客户关系:「一次性交易,没有持续关系」。粉色便签恰好标注了模式失灵的地方:「盗版下载用户」是一个客户细分,但行业只能把它当作诉讼成本处理,而无法把它视为 BMC 意义上的客户。
 
@@ -16,11 +16,11 @@ Spotify 在 2008 年 10 月从瑞典上线,带着不同的命题:别再试图为
 
 Spotify 模式有时会被画成一张 BMC。其实不应该 —— 免费档与付费档之间的不对称就是整个故事,把它们硬塞进同一张画布会把机制藏起来。两张并排的 BMC 才能把它讲清楚。
 
-::canvas[business-model-canvas]{canvasId="d6cbcfca-150f-4363-a1b4-3ed8200123b7"}
+::canvas[business-model-canvas]{variant="spotify-free"}
 
 对免费用户而言,Spotify 是「完整曲库 + 间歇性的音频广告」。移动端只能随机播放、不能下载。「收入来源」一格的第一张便签是「免费用户付 0 元」—— 这一边的全部收入都来自广告主(蓝色便签标注的跨边依赖)。粉色摩擦便签是有意设计的:「移动端只能随机播放」、「每 15-30 分钟一次音频广告」、「持续推送升级 Premium」—— *Spotify 让免费体验差到刚好能推动转化的程度*。这就是 Eisenmann 式的「补贴方校准」:太慷慨转化死、太苛刻免费档作为获客引擎也死。
 
-::canvas[business-model-canvas]{canvasId="51dcee41-18d7-4008-abed-edb9f7e4fee0"}
+::canvas[business-model-canvas]{variant="spotify-premium"}
 
 对 Premium 订阅者,Spotify 是「同一曲库,无广告,移动端按需点播,可离线,更高码率」。个人版每月 €10.99,还有家庭、双人、学生套餐。「收入来源」一格里有一张便签直接抓住了 Freemium 的经济学:「占 Spotify 总收入的 88%」。Premium 是收钱方,它在养活整个平台。
 

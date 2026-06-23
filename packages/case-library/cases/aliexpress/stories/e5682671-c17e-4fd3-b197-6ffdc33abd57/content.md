@@ -8,7 +8,7 @@ Temu — Pinduoduo's overseas arm — copied AliExpress's deepest moat (China-di
 
 Three differentiators define AliExpress today. First, **direct access to China's manufacturing base**. No middlemen, no licensed importers — the seller of the $3 phone case is a Shenzhen factory or a Yiwu trader, and you ship from there. Second, **no MOQ, dropshipper-friendly**. AliExpress made its early reputation as the supplier-of-supply for thousands of small Western e-commerce shops; that's a structural strength competitors took years to copy. Third, **the Choice program** — fully-managed, 5-10 day delivery, after-sales guaranteed. Choice is AliExpress's bet that the platform can compete with Temu by leveraging Cainiao's logistics + Alibaba's existing seller relationships, without requiring sellers to learn a new operating model.
 
-::canvas[business-model-canvas]{canvasId="b2e5645d-bb2b-4b1e-8c83-e6dd9b6a7051"}
+::canvas[business-model-canvas]{variant="main-en"}
 
 ## The growth engine
 

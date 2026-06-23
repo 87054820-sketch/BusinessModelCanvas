@@ -14,13 +14,13 @@ NVIDIA 构建 CUDA，让开发者能用 GPU 做通用并行计算，减少对纯
 
 ## 先读商业模式画布
 
-::canvas[business-model-canvas]{canvasId="68cab8df-c2e3-4993-8b4e-9a55cdda4b4b"}
+::canvas[business-model-canvas]{}
 
 BMC 把价值曲线落成运营模型。`客户细分` 说明目标不再只是旧行业最重视的顾客；`价值主张` 说明新的任务是什么；`关键业务` 和 `核心资源` 展示公司必须在哪些能力上变强；`成本结构` 和 `收入来源` 则检验这条战略曲线能不能持续交付，而不是只停留在营销叙事。
 
 ## 再读蓝海战略画布
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="281fb53a-0ea2-4ec9-8c92-992921fdb333"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 战略画布要看形状。红海基准通常在传统复杂度、专家门槛或行业惯例上得分更高；NVIDIA CUDA 则在可及性、易用性、个性化价值、成本效率或新需求创造上更高。这个形状就是战略论证。如果公司试图在所有传统因素和所有新因素上同时拉满，往往会重新背上旧行业的成本结构。
 

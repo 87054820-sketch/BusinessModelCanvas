@@ -103,15 +103,38 @@ async function validateEmbeddedCanvases(
   storage: CanvasStorage,
   projectId: string,
   content: string,
-): Promise<{ error: string; canvasId?: string } | null> {
+): Promise<{ error: string; canvasId?: string; defId?: string; variantId?: string } | null> {
   const directives = parseStoryCanvasDirectives(content);
+  const projectCanvases = directives.some((d) => !d.canvasId)
+    ? await storage.listCanvases({ projectId })
+    : [];
+
   for (const d of directives) {
-    const canvas = await storage.getCanvas(d.canvasId);
-    if (!canvas || canvas.projectId !== projectId) {
-      return { error: 'Canvas directive must reference a canvas in the same project', canvasId: d.canvasId };
+    if (d.canvasId) {
+      const canvas = await storage.getCanvas(d.canvasId);
+      if (!canvas || canvas.projectId !== projectId) {
+        return { error: 'Canvas directive must reference a canvas in the same project', canvasId: d.canvasId };
+      }
+      if (d.defId && d.defId !== canvas.defId) {
+        return { error: 'Canvas directive defId does not match the referenced canvas', canvasId: d.canvasId };
+      }
+      if (d.variantId && d.variantId !== canvas.variant?.id) {
+        return { error: 'Canvas directive variant does not match the referenced canvas', canvasId: d.canvasId };
+      }
+      continue;
     }
-    if (d.defId && d.defId !== canvas.defId) {
-      return { error: 'Canvas directive defId does not match the referenced canvas', canvasId: d.canvasId };
+
+    if (!d.defId) continue;
+    const candidates = projectCanvases.filter((c) => c.defId === d.defId);
+    const match = d.variantId
+      ? candidates.find((c) => c.variant?.id === d.variantId)
+      : candidates[0];
+    if (!match) {
+      return {
+        error: 'Canvas directive must resolve to a canvas in the same project',
+        defId: d.defId,
+        ...(d.variantId ? { variantId: d.variantId } : {}),
+      };
     }
   }
   return null;

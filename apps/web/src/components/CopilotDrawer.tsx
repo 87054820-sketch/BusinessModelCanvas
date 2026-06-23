@@ -7,14 +7,22 @@ import {
   type ClipboardEvent,
   type DragEvent,
   type MutableRefObject,
+  type PointerEvent as ReactPointerEvent,
   type ReactNode,
 } from 'react';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import remarkCjkFriendly from 'remark-cjk-friendly';
 import remarkGfm from 'remark-gfm';
-import type { CopilotImageAttachment, Lang } from '@pingarden/shared';
+import type {
+  BusinessModelPattern,
+  CopilotImageAttachment,
+  Experiment,
+  Lang,
+  StrategyFramework,
+} from '@pingarden/shared';
 import { copilotApi } from '../api/copilot';
+import type { CanvasDefSummary } from '../api/client';
 import { useKeyConfig } from '../copilot/useKeyConfig';
 import {
   useConversation,
@@ -46,6 +54,14 @@ interface Props {
   onNavigateToCanvas?: () => void;
   attachedRef: AttachedRef | null;
   lang: Lang;
+  libraryCatalog?: LibraryStarterCatalog;
+}
+
+interface LibraryStarterCatalog {
+  patterns?: BusinessModelPattern[] | null;
+  experiments?: Experiment[] | null;
+  strategyFrameworks?: StrategyFramework[] | null;
+  canvasDefs?: CanvasDefSummary[] | null;
 }
 
 type ActiveTab = 'chat' | 'skillPack';
@@ -57,12 +73,16 @@ type ComposerQuickAction = {
   includePendingImages?: boolean;
 };
 type StarterTone = 'violet' | 'rose' | 'cyan' | 'amber' | 'emerald' | 'slate';
+type StarterOption = { label: string; value: string };
 type StarterControl = {
   id: string;
   label: string;
   prefix?: string;
   suffix?: string;
-  options: Array<{ label: string; value: string }>;
+  options: StarterOption[];
+  featuredCount?: number;
+  searchable?: boolean;
+  searchPlaceholder?: string;
 };
 type StarterAction = {
   id: string;
@@ -81,6 +101,8 @@ const ACCEPTED_IMAGE_TYPES = ['image/png', 'image/jpeg', 'image/webp', 'image/gi
 const MAX_IMAGE_ATTACHMENTS = 2;
 const MAX_IMAGE_BYTES = 2 * 1024 * 1024;
 const PROMPT_IMAGE_MAX_BYTES = 64 * 1024;
+const REVEAL_INTERVAL_MS = 24;
+const REVEAL_CHUNK_SIZE = 36;
 
 /**
  * Right-side slide-over Copilot panel. ~420px wide, full window height.
@@ -103,6 +125,7 @@ export function CopilotDrawer({
   onNavigateToCanvas,
   attachedRef,
   lang,
+  libraryCatalog,
 }: Props) {
   const { t } = useTranslation();
   const { identity } = useIdentity();
@@ -122,7 +145,11 @@ export function CopilotDrawer({
   const [cliAvailable, setCliAvailable] = useState<boolean | null>(null);
   const [suggestionsDismissed, setSuggestionsDismissed] = useState(false);
   const [suggestionsCollapsed, setSuggestionsCollapsed] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const stopRef = useRef<(() => void) | null>(null);
+  const revealQueueRef = useRef('');
+  const revealTimerRef = useRef<number | null>(null);
+  const streamDoneRef = useRef(false);
   const listEndRef = useRef<HTMLDivElement | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -151,16 +178,20 @@ export function CopilotDrawer({
     if (!config.hasKey && activeTab === 'chat') setSettingsOpen(true);
   }, [open, config.hasKey, activeTab]);
 
+  const lastMessageLength = conv.messages[conv.messages.length - 1]?.content.length ?? 0;
+
   // Auto-scroll on new messages / streaming deltas.
   useEffect(() => {
     if (!open || activeTab !== 'chat') return;
     listEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
-  }, [open, activeTab, conv.messages.length, streaming]);
+  }, [open, activeTab, conv.messages.length, lastMessageLength, streaming]);
 
-  // Cleanup in-flight stream on unmount.
+  // Cleanup in-flight stream and reveal timer on unmount.
   useEffect(
     () => () => {
       stopRef.current?.();
+      clearRevealTimer();
+      revealQueueRef.current = '';
     },
     [],
   );
@@ -177,8 +208,8 @@ export function CopilotDrawer({
   const currentContextKey = attachedRef ? attachedRefKey(attachedRef) : 'library';
   const copilotMode = useMemo(() => deriveCopilotMode(attachedRef), [attachedRef]);
   const starterActions = useMemo(
-    () => buildStarterActions(attachedRef, lang),
-    [attachedRef, lang],
+    () => buildStarterActions(attachedRef, lang, libraryCatalog),
+    [attachedRef, lang, libraryCatalog],
   );
 
   useEffect(() => {
@@ -246,6 +277,48 @@ export function CopilotDrawer({
     if (files.length === 0) return;
     e.preventDefault();
     void handleAddImageFiles(files);
+  }
+
+  function clearRevealTimer() {
+    if (revealTimerRef.current === null) return;
+    window.clearTimeout(revealTimerRef.current);
+    revealTimerRef.current = null;
+  }
+
+  function revealNextChunk() {
+    clearRevealTimer();
+    const chunk = takeRevealChunk(revealQueueRef.current);
+    if (!chunk) {
+      if (streamDoneRef.current) {
+        setStreaming(false);
+        stopRef.current = null;
+      }
+      return;
+    }
+
+    revealQueueRef.current = revealQueueRef.current.slice(chunk.length);
+    conv.updateLast((msg) => ({ ...msg, content: msg.content + chunk }));
+    revealTimerRef.current = window.setTimeout(revealNextChunk, REVEAL_INTERVAL_MS);
+  }
+
+  function enqueueAssistantDelta(delta: string) {
+    revealQueueRef.current += delta;
+    if (revealTimerRef.current === null) revealNextChunk();
+  }
+
+  function finishAssistantReveal() {
+    streamDoneRef.current = true;
+    if (revealTimerRef.current === null && !revealQueueRef.current) {
+      setStreaming(false);
+      stopRef.current = null;
+    }
+  }
+
+  function flushAssistantReveal() {
+    clearRevealTimer();
+    const rest = revealQueueRef.current;
+    revealQueueRef.current = '';
+    if (rest) conv.updateLast((msg) => ({ ...msg, content: msg.content + rest }));
   }
 
   async function handleSend(overridePrompt?: string, options?: SendOptions) {
@@ -322,6 +395,9 @@ export function CopilotDrawer({
       ...(attachedRef ? { attachedRef } : {}),
     });
 
+    clearRevealTimer();
+    revealQueueRef.current = '';
+    streamDoneRef.current = false;
     setStreaming(true);
     const stop = copilotApi.streamChat(
       {
@@ -332,13 +408,13 @@ export function CopilotDrawer({
       },
       {
         onDelta: (delta) => {
-          conv.updateLast((msg) => ({ ...msg, content: msg.content + delta }));
+          enqueueAssistantDelta(delta);
         },
         onDone: () => {
-          setStreaming(false);
-          stopRef.current = null;
+          finishAssistantReveal();
         },
         onError: (message) => {
+          flushAssistantReveal();
           setError(message);
           setStreaming(false);
           stopRef.current = null;
@@ -351,6 +427,9 @@ export function CopilotDrawer({
   function handleStop() {
     stopRef.current?.();
     stopRef.current = null;
+    clearRevealTimer();
+    revealQueueRef.current = '';
+    streamDoneRef.current = false;
     setStreaming(false);
   }
 
@@ -366,27 +445,71 @@ export function CopilotDrawer({
     onClose();
   }
 
+  function handleResizePointerDown(e: ReactPointerEvent<HTMLButtonElement>) {
+    e.preventDefault();
+    const startX = e.clientX;
+    const wasExpanded = expanded;
+
+    function handleMove(event: PointerEvent) {
+      const delta = event.clientX - startX;
+      if (!wasExpanded && delta < -80) setExpanded(true);
+      if (wasExpanded && delta > 80) setExpanded(false);
+    }
+
+    function handleUp() {
+      window.removeEventListener('pointermove', handleMove);
+      window.removeEventListener('pointerup', handleUp);
+    }
+
+    window.addEventListener('pointermove', handleMove);
+    window.addEventListener('pointerup', handleUp, { once: true });
+  }
+
   if (!open) return null;
 
   return (
     <aside
       role="complementary"
       aria-label={t('library.copilot.drawerTitle')}
-      className="fixed right-0 top-0 z-[90] flex h-full w-full max-w-[420px] flex-col border-l border-gray-200 bg-white shadow-2xl"
+      className={`fixed right-0 top-0 z-[90] flex h-full w-full flex-col border-l border-gray-200 bg-white shadow-2xl transition-[max-width] duration-200 ${
+        expanded ? 'max-w-none' : 'max-w-[480px]'
+      }`}
     >
+      <button
+        type="button"
+        onPointerDown={handleResizePointerDown}
+        onDoubleClick={() => setExpanded((v) => !v)}
+        title={t('library.copilot.resizeHint')}
+        aria-label={t('library.copilot.resizeHint')}
+        className="group absolute left-0 top-12 bottom-0 z-10 flex w-3 cursor-ew-resize items-center justify-center"
+      >
+        <span className="h-16 w-1 rounded-full bg-gray-300 opacity-60 transition group-hover:h-24 group-hover:bg-gray-500 group-hover:opacity-100" />
+      </button>
+
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-gray-100 px-4 py-3">
-        <h2 className="text-sm font-semibold text-gray-900">
+      <div className={`flex items-center justify-between border-b border-gray-100 py-3 pr-4 ${expanded ? 'pl-20' : 'pl-4'}`}>
+        <h2 className="min-w-0 flex-1 truncate pr-3 text-sm font-semibold text-gray-900">
           {t('library.copilot.drawerTitle')}
         </h2>
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label="Close"
-          className="flex h-7 w-7 items-center justify-center rounded-full text-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700"
-        >
-          ×
-        </button>
+        <div className="flex shrink-0 items-center gap-1">
+          <button
+            type="button"
+            onClick={() => setExpanded((v) => !v)}
+            aria-label={expanded ? t('library.copilot.restore') : t('library.copilot.expand')}
+            title={expanded ? t('library.copilot.restore') : t('library.copilot.expand')}
+            className="rounded-full border border-gray-200 px-2.5 py-1 text-[11px] font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+          >
+            {expanded ? t('library.copilot.restore') : t('library.copilot.expand')}
+          </button>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close"
+            className="flex h-7 w-7 items-center justify-center rounded-full text-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700"
+          >
+            ×
+          </button>
+        </div>
       </div>
 
       {/* Tab strip */}
@@ -443,6 +566,21 @@ export function CopilotDrawer({
       )}
     </aside>
   );
+}
+
+function takeRevealChunk(text: string): string {
+  if (text.length <= REVEAL_CHUNK_SIZE) return text;
+  const windowText = text.slice(0, REVEAL_CHUNK_SIZE * 2);
+  const boundary = Math.max(
+    windowText.lastIndexOf('\n'),
+    windowText.lastIndexOf('。'),
+    windowText.lastIndexOf('，'),
+    windowText.lastIndexOf('. '),
+    windowText.lastIndexOf(', '),
+    windowText.lastIndexOf(' '),
+  );
+  if (boundary >= Math.floor(REVEAL_CHUNK_SIZE * 0.6)) return text.slice(0, boundary + 1);
+  return text.slice(0, REVEAL_CHUNK_SIZE);
 }
 
 function attachedRefKey(ref: AttachedRef): string {
@@ -537,9 +675,13 @@ function fetchAttachedContext(ref: AttachedRef | null, lang: Lang): Promise<{ ma
   }
 }
 
-function buildStarterActions(ref: AttachedRef | null, lang: Lang): StarterAction[] {
+function buildStarterActions(
+  ref: AttachedRef | null,
+  lang: Lang,
+  catalog?: LibraryStarterCatalog,
+): StarterAction[] {
   const isZh = lang === 'zh';
-  if (!ref) return buildStrategyLibraryStarterActions(isZh);
+  if (!ref) return buildStrategyLibraryStarterActions(isZh, lang, catalog);
 
   if (isLibraryProjectRef(ref)) {
     return buildLibraryProjectStarterActions(isZh);
@@ -642,7 +784,40 @@ function buildStarterActions(ref: AttachedRef | null, lang: Lang): StarterAction
   ];
 }
 
-function buildStrategyLibraryStarterActions(isZh: boolean): StarterAction[] {
+function buildStrategyLibraryStarterActions(
+  isZh: boolean,
+  lang: Lang,
+  catalog?: LibraryStarterCatalog,
+): StarterAction[] {
+  const strategyOptions = uniqueStarterOptions(
+    (catalog?.strategyFrameworks ?? []).map((item) => ({
+      label: localizeLabel(item.name, lang),
+      value: localizeLabel(item.name, lang),
+    })),
+    fallbackStrategyOptions(isZh),
+  );
+  const canvasOptions = uniqueStarterOptions(
+    (catalog?.canvasDefs ?? []).map((item) => ({
+      label: localizeLabel(item.name, lang),
+      value: localizeLabel(item.name, lang),
+    })),
+    fallbackCanvasOptions(isZh),
+  );
+  const patternOptions = uniqueStarterOptions(
+    (catalog?.patterns ?? []).map((item) => ({
+      label: localizeLabel(item.name, lang),
+      value: localizeLabel(item.name, lang),
+    })),
+    fallbackPatternOptions(isZh),
+  );
+  const experimentOptions = uniqueStarterOptions(
+    (catalog?.experiments ?? []).map((item) => ({
+      label: localizeLabel(item.name, lang),
+      value: localizeLabel(item.name, lang),
+    })),
+    fallbackExperimentOptions(isZh),
+  );
+
   return [
     {
       id: 'strategy-choice',
@@ -656,13 +831,10 @@ function buildStrategyLibraryStarterActions(isZh: boolean): StarterAction[] {
           label: isZh ? '战略' : 'Strategy',
           prefix: isZh ? '我想了解' : 'I want to explore',
           suffix: isZh ? '这个战略' : 'as a strategy',
-          options: [
-            { label: isZh ? '蓝海战略' : 'Blue Ocean', value: isZh ? '蓝海战略' : 'Blue Ocean Strategy' },
-            { label: isZh ? '五力模型' : 'Five Forces', value: isZh ? '波特五力模型' : "Porter's Five Forces" },
-            { label: isZh ? '三层增长' : 'Three Horizons', value: isZh ? '麦肯锡三层增长' : 'McKinsey Three Horizons' },
-            { label: isZh ? '情景规划' : 'Scenario', value: isZh ? '情景规划' : 'Scenario Planning' },
-            { label: isZh ? '组合管理' : 'Portfolio', value: isZh ? '业务组合管理' : 'Business Model Portfolio Management' },
-          ],
+          options: strategyOptions,
+          featuredCount: 5,
+          searchable: true,
+          searchPlaceholder: isZh ? '搜索战略框架…' : 'Search strategy frameworks…',
         },
       ],
     },
@@ -678,13 +850,10 @@ function buildStrategyLibraryStarterActions(isZh: boolean): StarterAction[] {
           label: isZh ? '画布' : 'Canvas',
           prefix: isZh ? '我关注' : 'I care about',
           suffix: isZh ? '这张画布' : 'as a canvas',
-          options: [
-            { label: 'BMC', value: 'Business Model Canvas' },
-            { label: 'VPC', value: 'Value Proposition Canvas' },
-            { label: isZh ? '组合地图' : 'Portfolio Map', value: 'Portfolio Map' },
-            { label: isZh ? '战略画布' : 'Strategy Canvas', value: 'Strategy Canvas' },
-            { label: isZh ? '实验画布' : 'Experiment Canvas', value: 'Experiment Canvas' },
-          ],
+          options: canvasOptions,
+          featuredCount: 5,
+          searchable: true,
+          searchPlaceholder: isZh ? '搜索画布…' : 'Search canvases…',
         },
       ],
     },
@@ -700,16 +869,121 @@ function buildStrategyLibraryStarterActions(isZh: boolean): StarterAction[] {
           label: isZh ? '主题' : 'Theme',
           prefix: isZh ? '我想找' : 'Find me',
           suffix: isZh ? '相关案例' : 'cases',
-          options: [
-            { label: isZh ? '增长机会' : 'Growth', value: isZh ? '增长机会' : 'growth opportunities' },
-            { label: isZh ? '客户价值' : 'Customer value', value: isZh ? '客户价值' : 'customer value' },
-            { label: isZh ? '竞争差异化' : 'Differentiation', value: isZh ? '竞争差异化' : 'competitive differentiation' },
-            { label: isZh ? '平台生态' : 'Platform', value: isZh ? '平台生态' : 'platform ecosystems' },
-            { label: isZh ? '订阅/复购' : 'Recurring', value: isZh ? '订阅和复购' : 'recurring revenue' },
-          ],
+          options: fallbackCaseThemeOptions(isZh),
+          featuredCount: 5,
+          searchable: true,
+          searchPlaceholder: isZh ? '搜索主题…' : 'Search themes…',
         },
       ],
     },
+    {
+      id: 'business-model-pattern',
+      title: isZh ? '商业模式' : 'Business model',
+      description: isZh ? '选一个商业模式模式，学习机制和案例。' : 'Choose a business-model pattern and study mechanics plus cases.',
+      template: isZh ? '我想学习「{{pattern}}」这个商业模式。请推荐策略库里最适合对照学习的案例、关键机制、相关画布和阅读顺序。' : 'I want to study the {{pattern}} business model. Recommend the best Strategy Library cases, key mechanics, related canvases, and reading order.',
+      tone: 'emerald',
+      controls: [
+        {
+          id: 'pattern',
+          label: isZh ? '商业模式' : 'Business model',
+          prefix: isZh ? '我想学习' : 'I want to study',
+          suffix: isZh ? '这个商业模式' : 'as a business model',
+          options: patternOptions,
+          featuredCount: 5,
+          searchable: true,
+          searchPlaceholder: isZh ? '搜索商业模式…' : 'Search business models…',
+        },
+      ],
+    },
+    {
+      id: 'experiment-method',
+      title: isZh ? '实验方法' : 'Experiment method',
+      description: isZh ? '选择一种实验，匹配假设和验证路径。' : 'Choose an experiment and match it to assumptions and evidence.',
+      template: isZh ? '我想了解「{{experiment}}」这个实验方法。请说明它适合验证什么假设、需要什么准备、如何判断证据强度，并推荐可搭配的案例或画布。' : 'I want to understand the {{experiment}} experiment. Explain what assumptions it validates, what setup it needs, how to judge evidence strength, and which cases or canvases pair well with it.',
+      tone: 'rose',
+      controls: [
+        {
+          id: 'experiment',
+          label: isZh ? '实验' : 'Experiment',
+          prefix: isZh ? '我想了解' : 'I want to explore',
+          suffix: isZh ? '这个实验' : 'as an experiment',
+          options: experimentOptions,
+          featuredCount: 5,
+          searchable: true,
+          searchPlaceholder: isZh ? '搜索实验…' : 'Search experiments…',
+        },
+      ],
+    },
+  ];
+}
+
+function localizeLabel(label: Record<Lang, string>, lang: Lang): string {
+  return label[lang] || label.en || label.zh || '';
+}
+
+function uniqueStarterOptions(primary: StarterOption[], fallback: StarterOption[]): StarterOption[] {
+  const seen = new Set<string>();
+  const merged: StarterOption[] = [];
+  for (const option of [...primary, ...fallback]) {
+    const value = option.value.trim();
+    const label = option.label.trim();
+    if (!value || seen.has(value.toLowerCase())) continue;
+    seen.add(value.toLowerCase());
+    merged.push({ label, value });
+  }
+  return merged;
+}
+
+function fallbackStrategyOptions(isZh: boolean): StarterOption[] {
+  return [
+    { label: isZh ? '蓝海战略' : 'Blue Ocean', value: isZh ? '蓝海战略' : 'Blue Ocean Strategy' },
+    { label: isZh ? '五力模型' : 'Five Forces', value: isZh ? '波特五力模型' : "Porter's Five Forces" },
+    { label: isZh ? '三层增长' : 'Three Horizons', value: isZh ? '麦肯锡三层增长' : 'McKinsey Three Horizons' },
+    { label: isZh ? '情景规划' : 'Scenario', value: isZh ? '情景规划' : 'Scenario Planning' },
+    { label: isZh ? '组合管理' : 'Portfolio', value: isZh ? '业务组合管理' : 'Business Model Portfolio Management' },
+  ];
+}
+
+function fallbackCanvasOptions(isZh: boolean): StarterOption[] {
+  return [
+    { label: 'BMC', value: 'Business Model Canvas' },
+    { label: 'VPC', value: 'Value Proposition Canvas' },
+    { label: isZh ? '组合地图' : 'Portfolio Map', value: 'Portfolio Map' },
+    { label: isZh ? '战略画布' : 'Strategy Canvas', value: 'Strategy Canvas' },
+    { label: isZh ? '实验画布' : 'Experiment Canvas', value: 'Experiment Canvas' },
+  ];
+}
+
+function fallbackPatternOptions(isZh: boolean): StarterOption[] {
+  return [
+    { label: isZh ? '长尾模式' : 'Long Tail', value: isZh ? '长尾模式' : 'Long Tail' },
+    { label: isZh ? '免费模式' : 'Free', value: isZh ? '免费模式' : 'Free' },
+    { label: isZh ? '多边平台' : 'Multi-Sided Platforms', value: isZh ? '多边平台' : 'Multi-Sided Platforms' },
+    { label: isZh ? '开放商业模式' : 'Open Business Models', value: isZh ? '开放商业模式' : 'Open Business Models' },
+    { label: isZh ? '拆分模式' : 'Unbundling', value: isZh ? '拆分模式' : 'Unbundling Business Models' },
+  ];
+}
+
+function fallbackExperimentOptions(isZh: boolean): StarterOption[] {
+  return [
+    { label: isZh ? '客户访谈' : 'Customer Interview', value: isZh ? '客户访谈' : 'Customer Interview' },
+    { label: isZh ? '烟雾测试' : 'Smoke Test', value: isZh ? '烟雾测试' : 'Smoke Test' },
+    { label: isZh ? '绿野仙踪' : 'Wizard of Oz', value: isZh ? '绿野仙踪实验' : 'Wizard of Oz' },
+    { label: isZh ? '礼宾测试' : 'Concierge', value: isZh ? '礼宾测试' : 'Concierge' },
+    { label: isZh ? '预售' : 'Pre-Sale', value: isZh ? '预售实验' : 'Pre-Sale' },
+  ];
+}
+
+function fallbackCaseThemeOptions(isZh: boolean): StarterOption[] {
+  return [
+    { label: isZh ? '增长机会' : 'Growth', value: isZh ? '增长机会' : 'growth opportunities' },
+    { label: isZh ? '客户价值' : 'Customer value', value: isZh ? '客户价值' : 'customer value' },
+    { label: isZh ? '竞争差异化' : 'Differentiation', value: isZh ? '竞争差异化' : 'competitive differentiation' },
+    { label: isZh ? '平台生态' : 'Platform', value: isZh ? '平台生态' : 'platform ecosystems' },
+    { label: isZh ? '订阅/复购' : 'Recurring', value: isZh ? '订阅和复购' : 'recurring revenue' },
+    { label: isZh ? '低成本创新' : 'Low-cost innovation', value: isZh ? '低成本创新' : 'low-cost innovation' },
+    { label: isZh ? '服务体验' : 'Service experience', value: isZh ? '服务体验' : 'service experience' },
+    { label: isZh ? '破坏式创新' : 'Disruption', value: isZh ? '破坏式创新' : 'disruptive innovation' },
   ];
 }
 
@@ -894,6 +1168,7 @@ function ChatPane({
 }) {
   const { t } = useTranslation();
   const composerActions = buildComposerQuickActions(attachedRef, mode);
+  const composerPlaceholder = `${t(`library.copilot.modeHints.${mode}.hint`)}\n${t(`library.copilot.modeHints.${mode}.placeholder`)}`;
 
   function handleComposerAction(action: ComposerQuickAction) {
     const actionPrompt = t(`library.copilot.composerPrompts.${action.promptKey}`);
@@ -976,18 +1251,18 @@ function ChatPane({
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-4 py-3">
+      <div className="flex-1 overflow-y-auto bg-white px-4 py-4">
         {messages.length === 0 ? (
-          <div className="rounded-lg border border-dashed border-gray-200 bg-gray-50 px-3 py-6 text-center text-[12px] text-gray-500">
-            {hasKey ? t('library.copilot.emptyState') : t('library.copilot.emptyStateNoKey')}
+          <div className="flex min-h-24 items-center justify-center px-3 py-6 text-center text-[12px] text-gray-400">
+            {hasKey ? t('library.copilot.emptyStateCompact') : t('library.copilot.emptyStateNoKey')}
           </div>
         ) : (
           <ul className="space-y-3">
-            {messages.map((m) => (
+            {messages.map((m, index) => (
               <MessageBubble
                 key={m.id}
                 message={m}
-                streaming={streaming}
+                streaming={streaming && index === messages.length - 1}
                 allowProjectDrafts={allowProjectDrafts}
                 lang={lang}
                 displayName={displayName}
@@ -1012,10 +1287,6 @@ function ChatPane({
         onDragOver={(e) => e.preventDefault()}
         onDrop={onDrop}
       >
-        <ComposerContextHint
-          mode={mode}
-          hasImages={pendingImages.length > 0}
-        />
         {pendingImages.length > 0 && (
           <div className="mb-2 flex gap-2 overflow-x-auto pb-1">
             {pendingImages.map((image) => (
@@ -1038,10 +1309,10 @@ function ChatPane({
               void onSend();
             }
           }}
-          rows={2}
+          rows={4}
           disabled={streaming}
-          placeholder={t(`library.copilot.modeHints.${mode}.placeholder`)}
-          className="block w-full resize-none rounded-md border border-gray-200 px-2 py-1.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none disabled:opacity-50"
+          placeholder={composerPlaceholder}
+          className="block w-full resize-none rounded-xl border border-gray-200 px-3 py-2 text-sm leading-relaxed text-gray-900 focus:border-gray-400 focus:outline-none disabled:opacity-50"
         />
         <input
           ref={fileInputRef}
@@ -1101,28 +1372,6 @@ function ChatPane({
   );
 }
 
-function ComposerContextHint({
-  mode,
-  hasImages,
-}: {
-  mode: CopilotMode;
-  hasImages: boolean;
-}) {
-  const { t } = useTranslation();
-  return (
-    <div className="mb-2 rounded-xl border border-emerald-100 bg-emerald-50 px-2.5 py-2 text-[11px] leading-relaxed text-emerald-950">
-      <div className="flex items-center justify-between gap-2">
-        <span>{t(`library.copilot.modeHints.${mode}.hint`)}</span>
-        {hasImages && (
-          <span className="shrink-0 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">
-            {t('library.copilot.modeHints.imageReady')}
-          </span>
-        )}
-      </div>
-    </div>
-  );
-}
-
 function StarterActionList({
   actions,
   disabled,
@@ -1162,8 +1411,10 @@ function StarterActionCard({
     action.controls.map((control) => [control.id, control.options[0]?.value ?? '']),
   );
   const [values, setValues] = useState<Record<string, string>>(initial);
+  const [pickerControlId, setPickerControlId] = useState<string | null>(null);
   const prompt = renderStarterPrompt(action, values);
   const tone = starterTone(action.tone ?? 'slate');
+  const pickerControl = action.controls.find((control) => control.id === pickerControlId) ?? null;
 
   return (
     <div className={`min-w-[260px] snap-start rounded-xl border p-2.5 text-left shadow-sm ${tone.card}`}>
@@ -1173,10 +1424,30 @@ function StarterActionCard({
         <div className="mt-2 space-y-2">
           {action.controls.map((control) => {
             const hasPreview = Boolean(control.prefix || control.suffix);
+            const featuredCount = control.featuredCount ?? 5;
+            const visibleOptions = withSelectedOption(
+              control.options.slice(0, featuredCount),
+              control.options,
+              values[control.id],
+            );
+            const hiddenCount = Math.max(0, control.options.length - featuredCount);
+            const canOpenPicker = control.options.length > featuredCount;
+
             return (
               <div key={control.id} className="rounded-lg border border-white/70 bg-white/45 p-2">
-                <div className={`text-[10px] font-medium uppercase tracking-wide ${tone.meta}`}>
-                  {control.label}
+                <div className="flex items-center justify-between gap-2">
+                  <div className={`text-[10px] font-medium uppercase tracking-wide ${tone.meta}`}>
+                    {control.label}
+                  </div>
+                  {canOpenPicker && (
+                    <button
+                      type="button"
+                      onClick={() => setPickerControlId(control.id)}
+                      className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${tone.chip}`}
+                    >
+                      {t('library.copilot.chooseMoreOptions', { count: hiddenCount })}
+                    </button>
+                  )}
                 </div>
                 {hasPreview && (
                   <div className={`mt-1 rounded-md border border-gray-200/70 bg-white/80 px-2 py-1.5 text-[10px] ${tone.desc}`}>
@@ -1186,15 +1457,13 @@ function StarterActionCard({
                   </div>
                 )}
                 <div className={`${hasPreview ? 'mt-1.5 border-t border-gray-200/70 pt-1.5' : 'mt-1.5'} flex flex-wrap gap-1`}>
-                  {control.options.map((option) => {
+                  {visibleOptions.map((option) => {
                     const selected = values[control.id] === option.value;
                     return (
                       <button
                         key={option.value}
                         type="button"
-                        onClick={() =>
-                          setValues((prev) => ({ ...prev, [control.id]: option.value }))
-                        }
+                        onClick={() => setValues((prev) => ({ ...prev, [control.id]: option.value }))}
                         className={`rounded-full border px-2 py-0.5 text-[10px] font-medium transition ${
                           selected ? tone.selectedChip : tone.chip
                         }`}
@@ -1217,8 +1486,103 @@ function StarterActionCard({
       >
         {t('library.copilot.startAction')}
       </button>
+      {pickerControl && (
+        <StarterOptionPicker
+          control={pickerControl}
+          selectedValue={values[pickerControl.id]}
+          tone={tone}
+          onSelect={(value) => {
+            setValues((prev) => ({ ...prev, [pickerControl.id]: value }));
+            setPickerControlId(null);
+          }}
+          onClose={() => setPickerControlId(null)}
+        />
+      )}
     </div>
   );
+}
+
+function StarterOptionPicker({
+  control,
+  selectedValue,
+  tone,
+  onSelect,
+  onClose,
+}: {
+  control: StarterControl;
+  selectedValue: string | undefined;
+  tone: ReturnType<typeof starterTone>;
+  onSelect(value: string): void;
+  onClose(): void;
+}) {
+  const { t } = useTranslation();
+  const [query, setQuery] = useState('');
+  const q = query.trim().toLowerCase();
+  const filteredOptions = q
+    ? control.options.filter((option) => `${option.label} ${option.value}`.toLowerCase().includes(q))
+    : control.options;
+
+  return (
+    <div className="fixed inset-0 z-[120] flex items-center justify-center bg-gray-950/35 px-4" role="dialog" aria-modal="true">
+      <div className="w-full max-w-md rounded-2xl border border-gray-200 bg-white p-4 shadow-2xl">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900">{t('library.copilot.optionPickerTitle', { label: control.label })}</h3>
+            <p className="mt-0.5 text-[11px] text-gray-500">{t('library.copilot.optionPickerSubtitle')}</p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={t('library.copilot.optionPickerClose')}
+            className="rounded-full px-2 py-1 text-lg leading-none text-gray-400 hover:bg-gray-100 hover:text-gray-700"
+          >
+            ×
+          </button>
+        </div>
+        <input
+          type="search"
+          autoFocus
+          value={query}
+          onChange={(e) => setQuery(e.currentTarget.value)}
+          placeholder={control.searchPlaceholder ?? t('library.copilot.searchOptions')}
+          className="mt-3 w-full rounded-xl border border-gray-200 px-3 py-2 text-sm text-gray-900 outline-none focus:border-gray-400"
+        />
+        <div className="mt-3 max-h-72 overflow-y-auto rounded-xl border border-gray-100 bg-gray-50/70 p-2">
+          {filteredOptions.length === 0 ? (
+            <div className="px-2 py-8 text-center text-xs text-gray-400">{t('library.copilot.noOptions')}</div>
+          ) : (
+            <div className="flex flex-wrap gap-1.5">
+              {filteredOptions.map((option) => {
+                const selected = selectedValue === option.value;
+                return (
+                  <button
+                    key={option.value}
+                    type="button"
+                    onClick={() => onSelect(option.value)}
+                    className={`rounded-full border px-2.5 py-1 text-[11px] font-medium transition ${
+                      selected ? tone.selectedChip : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50'
+                    }`}
+                  >
+                    {option.label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function withSelectedOption(
+  visible: StarterOption[],
+  all: StarterOption[],
+  selectedValue: string | undefined,
+): StarterOption[] {
+  if (!selectedValue || visible.some((option) => option.value === selectedValue)) return visible;
+  const selected = all.find((option) => option.value === selectedValue);
+  return selected ? [selected, ...visible] : visible;
 }
 
 function starterTone(tone: StarterTone): {
@@ -1387,7 +1751,7 @@ function MessageBubble({
         }`}
       >
         {isEmptyAssistant && streaming ? (
-          <span className="italic text-gray-400">{t('library.copilot.thinking')}</span>
+          <ThinkingIndicator label={t('library.copilot.thinking')} />
         ) : isUser ? (
           <div className="space-y-2">
             <span style={{ whiteSpace: 'pre-wrap' }}>{message.content}</span>
@@ -1420,6 +1784,19 @@ function MessageBubble({
         )}
       </div>
     </li>
+  );
+}
+
+function ThinkingIndicator({ label }: { label: string }) {
+  return (
+    <span className="inline-flex items-center gap-2 text-gray-500">
+      <span className="relative flex h-2.5 w-8 items-center justify-between">
+        <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.2s]" />
+        <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.1s]" />
+        <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gray-400" />
+      </span>
+      <span className="text-[12px] italic">{label}</span>
+    </span>
   );
 }
 

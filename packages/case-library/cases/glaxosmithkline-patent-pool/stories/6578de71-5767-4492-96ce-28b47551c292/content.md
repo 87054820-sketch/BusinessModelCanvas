@@ -10,11 +10,11 @@
 
 ## 两张 BMC,因为「跨边界的方向」就是模式本身
 
-::canvas[business-model-canvas]{canvasId="157702a7-6cc9-45be-a92a-06858241c411"}
+::canvas[business-model-canvas]{variant="gsk-traditional-pharma"}
 
 传统大型药企 BMC 读起来像每一家重磅药公司。内部科学家发现化合物;临床试验做出疗效证据;监管机构批准;销售代表把它卖出去。「客户细分」和「收入来源」中的粉色便签标出了模型**缺失**的地方:贫困国家患者没有被服务;闲置 IP 的授权收入是零 —— IP 是用来防御的,不是出租。「核心资源」里那张 —— **(对 NTD 有效的闲置化合物 —— 经济上是死重)** —— 命名了即将开始流动的资产。
 
-::canvas[business-model-canvas]{canvasId="bc644dda-0241-4df6-a649-6d34a7947007"}
+::canvas[business-model-canvas]{variant="gsk-patent-pool"}
 
 专利池 BMC 在左半边几乎完全没动(核心资源、关键业务、成本结构)—— 由内而外不是改变你怎么做研发,而是改变你**怎么处理那些没赚钱的研发产出**。变化集中在「收入来源」、「客户细分」,尤其是「重要合作」上。
 

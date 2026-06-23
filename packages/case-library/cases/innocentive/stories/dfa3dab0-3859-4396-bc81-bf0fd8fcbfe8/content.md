@@ -4,7 +4,7 @@ In 2001, Eli Lilly's CIO at the time, Alpheus Bingham, ran an internal experimen
 
 ## One BMC because the structure is the platform
 
-::canvas[business-model-canvas]{canvasId="c338217a-7022-49ab-84b4-0ea3fe962efc"}
+::canvas[business-model-canvas]{variant="innocentive-bmc"}
 
 Unlike the P&G and GSK cases (which use two BMCs because the *boundary direction* is the model), InnoCentive uses one BMC because the *platform structure* is the model. The key visual:
 

@@ -44,9 +44,14 @@ export function parseCanvasDirective(line: string): StoryCanvasDirective | null 
   };
 }
 
-export function canvasDirective(defId: string, canvasId: string, title?: string): string {
+export function canvasDirective(defId: string, variantId?: string, title?: string): string {
   const safeTitle = title?.replace(/"/g, '\\"');
-  return `::canvas[${defId}]{canvasId="${canvasId}"${safeTitle ? ` title="${safeTitle}"` : ''}}`;
+  const safeVariant = variantId?.replace(/"/g, '\\"');
+  const attrs = [
+    safeVariant ? `variant="${safeVariant}"` : '',
+    safeTitle ? `title="${safeTitle}"` : '',
+  ].filter(Boolean).join(' ');
+  return `::canvas[${defId}]{${attrs}}`;
 }
 
 function parseDirectiveAttrs(raw: string): Record<string, string> {

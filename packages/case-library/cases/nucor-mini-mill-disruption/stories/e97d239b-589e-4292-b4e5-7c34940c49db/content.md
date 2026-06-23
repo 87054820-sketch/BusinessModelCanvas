@@ -27,7 +27,7 @@
 
 纽柯在螺纹钢的份额节节上升。螺纹钢段毛利从来不好，但纽柯的浮动工资成本结构意味着**它的**螺纹钢毛利是赚钱的。
 
-::canvas[business-model-canvas]{canvasId="16307885-b7f0-4242-b1fb-52e57c0e58e6"}
+::canvas[business-model-canvas]{}
 
 ## 第二段：改进钢质（1975–1980 年代）
 
@@ -39,7 +39,7 @@
 
 1989 年，纽柯在印第安纳州投产**克劳福兹维尔**——世界第一座商业**薄板坯连铸**机（SMS Schloemann 技术，50mm 板坯 vs 一体化钢厂的 200–300mm）。薄板坯削减能源消耗，让扁平材在小型钢厂规模下经济可行。冶金有上限——克劳福兹维尔初期卖给家电 OEM、建筑用、汽车内饰低端件。但轨迹清晰。
 
-::canvas[disruption-diagnosis]{canvasId="a93b6f61-26e1-47b1-b997-aebb7eacefc4"}
+::canvas[disruption-diagnosis]{}
 
 ## 第四段：终局（1990 年代–2001）
 

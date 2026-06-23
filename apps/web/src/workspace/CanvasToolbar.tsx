@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { CanvasMeta } from '@pingarden/shared';
 import { snapshotsApi } from '../api/snapshots';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 interface Props {
   canvas: CanvasMeta;
@@ -40,6 +41,7 @@ export function CanvasToolbar({
   readOnly = false,
 }: Props) {
   const { t } = useTranslation();
+  const location = useLocation();
   const [title, setTitle] = useState(canvas.title);
   const [milestoneOpen, setMilestoneOpen] = useState(false);
 
@@ -99,6 +101,7 @@ export function CanvasToolbar({
         )}
         <Link
           to={`/p/${projectId}/c/${canvas.id}/history`}
+          state={preserveNavigationState(location)}
           className="rounded-lg border border-gray-300 px-3 py-1 text-xs hover:bg-gray-50"
         >
           {t('workspace.viewHistory')}

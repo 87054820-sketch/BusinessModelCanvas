@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { CanvasDef, CanvasI18n, Lang, XAxisItem } from '@pingarden/shared';
 import { api, type CanvasDefDetail } from '../api/client';
 import { Markdown } from './Markdown';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 import {
   chartRect,
   xForFactor,
@@ -20,6 +21,7 @@ interface Props {
 export function TemplatePreviewModal({ defId, lang, onClose }: Props) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const [detail, setDetail] = useState<CanvasDefDetail | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -164,7 +166,9 @@ export function TemplatePreviewModal({ defId, lang, onClose }: Props) {
               type="button"
               onClick={() => {
                 onClose();
-                navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`);
+                navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, {
+                  state: preserveNavigationState(location),
+                });
               }}
               className="w-full rounded-lg bg-gray-900 py-2.5 text-sm font-medium text-white hover:bg-black"
             >

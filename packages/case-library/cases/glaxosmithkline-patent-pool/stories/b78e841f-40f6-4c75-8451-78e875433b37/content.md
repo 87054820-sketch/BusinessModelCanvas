@@ -10,11 +10,11 @@ These compounds sit in the IP portfolio generating zero revenue. A patent costs 
 
 ## Two BMCs because the *boundary direction* IS the model
 
-::canvas[business-model-canvas]{canvasId="333a2072-dfdc-41df-8de5-099418d3efe1"}
+::canvas[business-model-canvas]{variant="gsk-traditional-pharma"}
 
 The traditional Big Pharma BMC reads like every blockbuster-drug company. Internal scientists discover compounds; clinical trials prove them; regulators approve them; sales reps sell them. The pink stickies in `Customer Segments` and `Revenue Streams` mark what's *missing*: poor-country patients aren't served; idle-IP licensing revenue is zero — IP is defended, not licensed. The sticky in `Key Resources` — *(Idle NTD-relevant compounds — economic dead weight)* — names the asset that's about to move.
 
-::canvas[business-model-canvas]{canvasId="e32e147a-87e6-4d8c-a10b-51e32fdf5e4a"}
+::canvas[business-model-canvas]{variant="gsk-patent-pool"}
 
 The patent-pool BMC keeps almost all the left-side blocks (Key Resources, Key Activities, Cost Structure) the same — inside-out isn't about changing how you do R&D, it's about changing what you do with the R&D that didn't pay off. The transformation lives in `Revenue Streams`, `Customer Segments`, and especially `Key Partners`.
 

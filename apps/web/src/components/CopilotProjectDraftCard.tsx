@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import type { CopilotProjectDraft, Lang } from '@pingarden/shared';
 import { api } from '../api/client';
 import { projectsApi } from '../api/projects';
 import { useIdentity } from '../identity/useIdentity';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 type CreateState = 'idle' | 'creating' | 'created' | 'error';
 
@@ -17,6 +18,7 @@ export function CopilotProjectDraftCard({
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const { identity } = useIdentity();
   const [state, setState] = useState<CreateState>('idle');
   const [error, setError] = useState<string | null>(null);
@@ -75,7 +77,7 @@ export function CopilotProjectDraftCard({
       }
 
       setState('created');
-      navigate(`/p/${project.id}`);
+      navigate(`/p/${project.id}`, { state: preserveNavigationState(location) });
     } catch (err) {
       console.error('Create Copilot project draft failed:', err);
       setError(err instanceof Error ? err.message : String(err));

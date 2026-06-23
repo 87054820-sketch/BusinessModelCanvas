@@ -194,8 +194,12 @@ export interface Story extends StoryMeta {
 }
 
 export interface StoryCanvasDirective {
-  canvasId: string;
+  /** Absolute legacy reference. Kept for existing user-authored stories. */
+  canvasId?: string;
+  /** Relative reference: canvas definition id in the current project/case. */
   defId?: string;
+  /** Relative disambiguator when a project has multiple canvases of the same defId. */
+  variantId?: string;
   title?: string;
 }
 

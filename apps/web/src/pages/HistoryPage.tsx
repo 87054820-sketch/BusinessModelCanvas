@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { CanvasMeta, SnapshotMeta } from '@pingarden/shared';
 import { api } from '../api/client';
 import { snapshotsApi } from '../api/snapshots';
 import { useIdentity } from '../identity/useIdentity';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
+import { preserveNavigationState } from '../navigation/useSmartBack';
 
 export function HistoryPage() {
   const { t, i18n } = useTranslation();
   const { projectId, canvasId } = useParams<{ projectId: string; canvasId: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const { identity } = useIdentity();
   const [meta, setMeta] = useState<CanvasMeta | null>(null);
   const [items, setItems] = useState<SnapshotMeta[] | null>(null);
@@ -44,13 +46,13 @@ export function HistoryPage() {
     if (!confirm(lang === 'zh' ? '确认恢复到此版本?当前进度将被覆盖。' : 'Restore this version? Current state will be replaced.'))
       return;
     await snapshotsApi.restore(canvasId, sid, 'replace', identity!.displayName);
-    navigate(`/p/${projectId}/c/${canvasId}`);
+    navigate(`/p/${projectId}/c/${canvasId}`, { state: preserveNavigationState(location) });
   }
 
   async function onFork(sid: string) {
     if (!canvasId || !projectId) return;
     const res = await snapshotsApi.restore(canvasId, sid, 'fork', identity!.displayName);
-    navigate(`/p/${projectId}/c/${res.canvas.id}`);
+    navigate(`/p/${projectId}/c/${res.canvas.id}`, { state: preserveNavigationState(location) });
   }
 
   async function onDelete(s: SnapshotMeta) {
@@ -64,6 +66,7 @@ export function HistoryPage() {
     <main className="mx-auto max-w-3xl px-8 py-10">
       <Link
         to={`/p/${projectId}/c/${canvasId}`}
+        state={preserveNavigationState(location)}
         className="text-sm text-gray-600 hover:text-gray-900"
       >
         ← {t('nav.back')}

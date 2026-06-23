@@ -6,11 +6,11 @@ The word 'platform' didn't get applied to Visa until decades after Visa was runn
 
 The canonical MSP move is to render the platform from each side's perspective rather than mash them into one canvas:
 
-::canvas[business-model-canvas]{canvasId="1cffa011-ec29-4ea1-b1f6-66103c6358bf"}
+::canvas[business-model-canvas]{variant="visa-cardholders"}
 
 For cardholders, Visa's value proposition is *acceptance everywhere, free at point of sale, often rewarded*. The Revenue Streams block leads with `$0 per transaction to cardholder`. This is the canonical subsidy side — Visa survives on cardholders showing up, not on charging them.
 
-::canvas[business-model-canvas]{canvasId="64424dc3-002d-4911-9b18-4179dffd30df"}
+::canvas[business-model-canvas]{variant="visa-merchants"}
 
 For merchants, the same platform looks completely different. Value proposition: *accept ~4.5 billion cards globally*. Revenue Streams: 1.5-3% interchange per transaction; ~$36B in 2024 net revenue. This is the money side. Notice the friction stickies (pink): network rules and chargeback regime push back on merchants, and `No real ability to refuse Visa` is a reluctant stick — once consumers carry the card, merchants effectively can't decline. This is *(Eisenmann, Parker & Van Alstyne 2006)*'s 'lock-in via the subsidy side' — Visa controls merchants by controlling cardholders.
 

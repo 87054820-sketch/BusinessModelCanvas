@@ -6,13 +6,13 @@ In October 2007, three roommates in San Francisco — Brian Chesky, Joe Gebbia, 
 
 *Business Model Generation (BMG 2010)* uses the multi-sided-platforms pattern (No. 3, pp. 76-81) — Airbnb is its archetypal modern peer-to-peer instance. Like Uber, Visa, Google, Nintendo, and InnoCentive in this library, the case is taught with two BMCs because **the asymmetric flow between the sides IS the model**. Mashing guests and hosts into one BMC hides the negative cash conversion mechanic, AirCover insurance, and the reviews-as-trust substitute that define how Airbnb actually works.
 
-::canvas[business-model-canvas]{canvasId="cc999f2f-9a4d-4cbe-99c6-e9032ed1c257"}
+::canvas[business-model-canvas]{variant="airbnb-guests"}
 
 The guest BMC reads as a clean travel-booking experience. Notice the `Revenue Streams` block: guest service fee, premium tiers, and the most distinctive sticky — **Negative cash conversion (collect at booking)**. Airbnb collects the entire booking amount (rate + cleaning + service fee + taxes) when the guest books, but only pays the host 24 hours after check-in. At $80B+ booking volume per year, the float between booking and check-in is multi-billion-dollar working-capital that scales with growth.
 
 The blue stickies in `Value Propositions` and `Key Resources` mark the cross-side dependency: **Reviews + ratings as trust substitute** and **Listings inventory** + **Cumulative review database**. These are the platform's deepest moat. Hotels have brand trust (Hilton, Marriott) built over decades; Airbnb couldn't replicate that, so it built a different moat — every successful stay produces a review, every review reduces guest risk on the next booking, and the cumulative review database becomes very expensive for a competitor to replicate from cold.
 
-::canvas[business-model-canvas]{canvasId="93ee694d-2c38-46ff-8b13-f7378d797e60"}
+::canvas[business-model-canvas]{variant="airbnb-hosts"}
 
 The host BMC reads inverted: hosts RECEIVE rather than pay. The blue sticky in `Revenue Streams` — *(Host side: hosts RECEIVE 97% of nightly rate)* — is the cross-side flow that makes the asymmetry visible. Airbnb's own host-side revenue is the ~3% service fee.
 
@@ -31,7 +31,7 @@ None of these were technically hard. The combination took Airbnb ~5 years to get
 
 ## Read the Platform Ecosystem Map
 
-::canvas[platform-ecosystem-map]{canvasId="e5a4b289-1636-4cda-8607-84f8d38d3a21"}
+::canvas[platform-ecosystem-map]{}
 
 The ecosystem map shows why Airbnb is not just a travel booking BMC. Its core interaction links guests, hosts, listings, payment escrow, and reviews into a repeated trust loop. Network effects come from inventory depth and review history, while governance and regulation determine whether growth remains trusted city by city.
 

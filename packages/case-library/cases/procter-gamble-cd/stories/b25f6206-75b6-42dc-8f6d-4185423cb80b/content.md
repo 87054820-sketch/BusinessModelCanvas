@@ -8,7 +8,7 @@
 
 ## 阅读 Portfolio Map
 
-::canvas[portfolio-map]{canvasId="963a92d0-5a9d-4e88-bd92-6aaf26d68a4a"}
+::canvas[portfolio-map]{variant="connect-develop-portfolio"}
 
 地图右侧的核心品牌是开发引擎：它们已经有收益、货架、供应链和消费者心智。封闭式研发也在右侧，但带着风险观察标记，因为它仍有产出，却无法单独提供足够多的未来选项。
 

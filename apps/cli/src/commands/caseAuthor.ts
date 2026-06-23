@@ -721,15 +721,20 @@ function validateStorySupport(
   }
 }
 
-function extractEmbeddedCanvasIds(text: string): Set<string> {
-  const out = new Set<string>();
-  const re = /::canvas\[[^\]]+\]\{[^}]*canvasId="([^"]+)"[^}]*\}/g;
+function extractEmbeddedCanvasRefs(text: string): { ids: Set<string>; defIds: Set<string> } {
+  const ids = new Set<string>();
+  const defIds = new Set<string>();
+  const re = /::canvas\[([^\]\n]+)\]\{([^}\n]*)\}/g;
   let match: RegExpExecArray | null;
   while ((match = re.exec(text))) {
-    const canvasId = match[1];
-    if (canvasId) out.add(canvasId);
+    const defId = match[1]?.trim();
+    if (defId) defIds.add(defId);
+    const attrs = match[2] ?? '';
+    const idMatch = /canvasId=(?:"([^"]+)"|'([^']+)'|([^\s}]+))/.exec(attrs);
+    const canvasId = idMatch?.[1] ?? idMatch?.[2] ?? idMatch?.[3];
+    if (canvasId) ids.add(canvasId);
   }
-  return out;
+  return { ids, defIds };
 }
 
 function validatePortfolioMapSupport(
@@ -751,8 +756,8 @@ function validatePortfolioMapSupport(
     });
     return;
   }
-  const embedded = extractEmbeddedCanvasIds(allStoryText);
-  if (!portfolioCanvasIds.some((id) => embedded.has(id))) {
+  const embedded = extractEmbeddedCanvasRefs(allStoryText);
+  if (!portfolioCanvasIds.some((id) => embedded.ids.has(id)) && !embedded.defIds.has('portfolio-map')) {
     issues.push({
       slug,
       level: 'warn',

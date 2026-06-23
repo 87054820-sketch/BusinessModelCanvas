@@ -8,7 +8,7 @@
 
 ## 阅读 Portfolio Map
 
-::canvas[portfolio-map]{canvasId="a74867f0-8c4f-4387-9e00-3b0c9451de8c"}
+::canvas[portfolio-map]{}
 
 地图右上角是 Exploit 开发核心：保险、银行与财富管理。它们已有收益、客户信任和运营规模，但面对死亡与颠覆风险：新竞争者、监管、消费者行为变化和平台脱媒。
 

@@ -4,11 +4,11 @@ In November 2006 three new game consoles launched within weeks of each other: Mi
 
 ## The two BMCs make the choice legible
 
-::canvas[business-model-canvas]{canvasId="067ed1e8-2c5f-41a8-8371-938e21aac74e"}
+::canvas[business-model-canvas]{variant="wii-gamers"}
 
 For gamers, Nintendo did three things at once: (1) addressed an audience PS3/360 ignored — older and family / casual gamers — with motion controls and Wii Sports; (2) priced the hardware at half of PS3 by skipping HD and using off-the-shelf parts; (3) leaned hard on first-party IP (Mario, Zelda) the platform owned outright. Crucially, Nintendo's hardware was *actually profitable per unit* — not a loss-leader like the PS3 — even at $250. The subsidy wasn't 'lose money on hardware'; it was 'price the hardware where the casual / family side will show up'.
 
-::canvas[business-model-canvas]{canvasId="feab3b21-ef06-44d3-aa3e-b2ccb5432743"}
+::canvas[business-model-canvas]{variant="wii-developers"}
 
 For third-party game developers, the Wii's value proposition was different from PS3/360: a 100M-user base that the other consoles couldn't reach, lower dev cost (modest hardware specs), and motion controls as a brand new gameplay category. In return, developers paid Nintendo a per-disc royalty (~$8-10) plus dev-kit license fees. *That royalty stream was Nintendo's hidden gold* — the money side that funded Nintendo's choice to keep gamer hardware profitable rather than charge gamers PS3 prices.
 

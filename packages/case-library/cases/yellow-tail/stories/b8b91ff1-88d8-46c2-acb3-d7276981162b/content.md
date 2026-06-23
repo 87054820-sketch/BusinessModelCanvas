@@ -14,7 +14,7 @@ This matters because “easy” was not just a marketing word. It simplified pro
 
 ## Read the Business Model Canvas first
 
-::canvas[business-model-canvas]{canvasId="680269d6-9c9c-404a-8df8-3f65d3859556"}
+::canvas[business-model-canvas]{}
 
 The BMC shows that the value proposition is not “better wine.” It is approachable taste, a recognizable brand, and low-risk choice. The key customer segment is not the wine expert; it is the non-wine or light-wine consumer who wants a social drink. That shift changes the channels: shelf visibility, mass retail, and simple point-of-sale cues become more important than sommelier recommendation or specialist wine media.
 
@@ -22,7 +22,7 @@ Notice the cost-side consequence. Reducing complexity is not only good for the c
 
 ## Then read the Strategy Canvas
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="9ecaeb2a-6693-4162-862c-6ed2da86d62a"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 The value curve should be read as a change in the rules of comparison. Traditional wine scores high on prestige, complexity, region/vintage signals, and expert evaluation. [yellow tail] scores lower on those factors by design. It scores higher on easy selection, easy drinking, brand memorability, and casual fun. The curve is not simply above the industry curve; it has a different shape.
 

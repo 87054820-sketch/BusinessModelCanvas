@@ -14,7 +14,7 @@ Casella Wines 在 2001 年把 [yellow tail] 推向美国市场时，葡萄酒市
 
 ## 先读商业模式画布
 
-::canvas[business-model-canvas]{canvasId="693c1627-5b76-44e5-8297-247e74c85398"}
+::canvas[business-model-canvas]{}
 
 这张 BMC 的核心不是“更好的酒”，而是“更容易被非专家选择的酒”。客户细分从懂酒人群转向非葡萄酒消费者和轻度饮酒者；价值主张从复杂风味转向易饮、可靠、好认和社交安全感。这个变化会带动渠道变化：大众零售、货架呈现、醒目的品牌识别，比侍酒师推荐或专业酒评更关键。
 
@@ -22,7 +22,7 @@ Casella Wines 在 2001 年把 [yellow tail] 推向美国市场时，葡萄酒市
 
 ## 再读蓝海战略画布
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="25585f5a-618f-4242-98bc-34dac570d5cd"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 这张战略画布要看的不是“黄尾袋鼠是不是每一项都比传统葡萄酒高”，而是曲线形状有没有变。传统葡萄酒在产区、年份、复杂度、声望和专家评价上很高；黄尾袋鼠有意在这些因素上降低投入。它把投入转到易选择、易入口、品牌记忆点和轻松社交感上。
 

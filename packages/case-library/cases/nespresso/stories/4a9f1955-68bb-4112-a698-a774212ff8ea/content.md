@@ -8,13 +8,13 @@ What changed in the 2000s wasn't the BMC structure (it was bait-and-hook from da
 
 *(BMG 2010)* uses Nespresso alongside Gillette as the bait-and-hook paradigm. Like Gillette, Nespresso is taught with two BMCs because **mashing the bait and the hook into one canvas hides the cross-subsidy that makes the model work**.
 
-::canvas[business-model-canvas]{canvasId="84978a20-8df7-4257-987e-c7fb4e546eab"}
+::canvas[business-model-canvas]{variant="nespresso-machines-bait"}
 
 The machine BMC reads strangely until you see the third sticky in `Revenue Streams`: **REAL revenue is from capsule business (cross-side)**. Nespresso's machine margin is low (10-20%, sometimes negative for promotional bundles in hotels and airlines). The interesting design is that Nespresso doesn't manufacture all its machines directly — it licenses Krups, De'Longhi, and Magimix to manufacture under Nespresso specifications, taking an OEM royalty. That's a clever move: the machine business operates at low margin OR breakeven, but the OEMs are the ones absorbing the manufacturing capital cost. Nespresso captures value at the patent + brand layer, not the manufacturing layer.
 
 The pink sticky in `Key Activities` — *Patent enforcement against compatible-capsule makers* — is the structural defense, identical to Gillette's patent-vs-generic-blade fight. The key resource is *Patented capsule-machine interface*. Lose that patent and the entire bait-and-hook collapses.
 
-::canvas[business-model-canvas]{canvasId="e71e41c8-b918-48eb-be4f-29a141ac9211"}
+::canvas[business-model-canvas]{variant="nespresso-capsules-hook"}
 
 The capsule BMC is where the money is — reported gross margins above 80%. The blue sticky in `Customer Segments` (*Existing Nespresso machine owners*) and the cross-side dependency throughout `Key Resources` and `Key Partners` make the connection legible: capsules only sell because machines were distributed first.
 

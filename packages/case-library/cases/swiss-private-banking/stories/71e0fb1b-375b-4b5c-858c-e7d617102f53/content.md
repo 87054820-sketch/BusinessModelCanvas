@@ -16,7 +16,7 @@ For most of the 20th century, a Swiss private bank was a **single integrated ent
 
 The archetype canvas captures this tangle: yellow stickies (relationship), green (product innovation), blue (infrastructure) all share the same Key Activities, Key Resources, and Cost Structure. The trade-offs are real but invisible to the outside.
 
-::canvas[business-model-canvas]{canvasId="ea894855-6250-4cd6-8a83-9e801dcf324e"}
+::canvas[business-model-canvas]{variant="archetype-en"}
 
 ## Path A: Unbundle (Maerki Baumann)
 
@@ -26,7 +26,7 @@ Maerki Baumann, a Zurich-based bank, **spun off its transaction platform** as In
 
 The result: a much smaller balance sheet, no internal product-pressure conflicts, and a sharper value proposition ("independent advice"). The trade-off is gone because the trade-off-prone businesses are gone.
 
-::canvas[business-model-canvas]{canvasId="b0ec9c1a-bb7a-46e6-89a0-9b1ffb9e14db"}
+::canvas[business-model-canvas]{variant="maerki-baumann-en"}
 
 ## Path B: Stay integrated (Pictet)
 
@@ -34,7 +34,7 @@ Pictet, the largest Swiss private bank, took the opposite path. They kept all th
 
 This is harder to execute but gives Pictet something Maerki Baumann doesn't have: **end-to-end control over the client experience**, including discretion (in-house transaction platform) and proprietary product IP (Pictet-branded structures with a 200-year track record).
 
-::canvas[business-model-canvas]{canvasId="38a6beeb-b19d-4fbb-a4b1-f02fa13cda8d"}
+::canvas[business-model-canvas]{variant="pictet-en"}
 
 ## What it teaches
 

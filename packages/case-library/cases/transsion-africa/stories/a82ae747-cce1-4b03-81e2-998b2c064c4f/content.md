@@ -6,7 +6,7 @@
 
 ## 先读商业模式画布
 
-::canvas[business-model-canvas]{canvasId="83c10590-62c3-4f21-a47b-1665ceba06d4"}
+::canvas[business-model-canvas]{}
 
 BMC 显示了传音如何把非洲约束转化成具体运营选择：多卡支持、长续航、深肤色拍照、本地零售网络。但 BMC 不会告诉你**这套模式为什么没被在位者抄走**。要回答这个问题，需要跑一次颠覆诊断。
 

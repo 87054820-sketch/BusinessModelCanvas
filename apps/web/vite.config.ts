@@ -9,6 +9,25 @@ export default defineConfig({
     },
   },
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes('node_modules')) return undefined;
+          if (id.includes('/react/') || id.includes('/react-dom/') || id.includes('/react-router-dom/')) {
+            return 'react-vendor';
+          }
+          if (id.includes('/react-markdown/') || id.includes('/remark-') || id.includes('/micromark') || id.includes('/mdast-') || id.includes('/unified/')) {
+            return 'markdown-vendor';
+          }
+          if (id.includes('/yjs/') || id.includes('/y-protocols/') || id.includes('/lib0/')) {
+            return 'collab-vendor';
+          }
+          return undefined;
+        },
+      },
+    },
+  },
   server: {
     port: 5173,
     proxy: {

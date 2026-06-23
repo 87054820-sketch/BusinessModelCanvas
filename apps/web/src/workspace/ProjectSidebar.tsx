@@ -6,6 +6,7 @@ import { CanvasThumb } from '../canvas/CanvasThumb';
 import { AddCanvasMenu } from './AddCanvasMenu';
 import { useSelection } from '../state/selection';
 import { useUiPrefs } from '../state/uiPrefs';
+import { useSmartBack } from '../navigation/useSmartBack';
 
 interface Props {
   project: Project;
@@ -74,7 +75,7 @@ export function ProjectSidebar({
   readOnly = false,
 }: Props) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
+  const goBack = useSmartBack(readOnly ? '/library' : '/projects');
   const selection = useSelection((s) => s.selection);
   const projectActive = selection.kind === 'project';
   const collapsed = useUiPrefs((s) => s.leftSidebarCollapsed);
@@ -185,7 +186,7 @@ export function ProjectSidebar({
       <div className="flex items-center justify-between border-b border-gray-200 pr-2">
         <button
           type="button"
-          onClick={() => navigate('/')}
+          onClick={goBack}
           className="flex-1 px-4 py-3 text-left text-xs text-gray-500 hover:text-gray-900"
         >
           ← {t('nav.back')}

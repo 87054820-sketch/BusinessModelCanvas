@@ -8,13 +8,13 @@
 
 *(BMG 2010)* 把 Nespresso 与吉列一起作为「诱饵 + 钩子」的范式。和吉列一样,Nespresso 用两张 BMC 来呈现,理由相同:**把诱饵和钩子塞进同一张 BMC 会把让模式跑通的跨边补贴藏起来**。
 
-::canvas[business-model-canvas]{canvasId="fefe5b61-f7c2-4679-ab48-d7a17f98e514"}
+::canvas[business-model-canvas]{variant="nespresso-machines-bait"}
 
 机器 BMC 读起来挺奇怪 —— 直到你看到「收入来源」一格的第三张便签:**真正的收入在胶囊业务(跨边)**。Nespresso 的机器毛利低(10-20%,在酒店与航司的促销搭售里有时是负利)。一个有意思的设计是 Nespresso 自己**不**直接生产所有机器 —— 而是授权 Krups、De'Longhi、Magimix 按 Nespresso 规范制造,收取 OEM 版税。这是一招很聪明的设计:机器业务在低利甚至盈亏平衡,但承担制造资本开销的是 OEM,而不是 Nespresso。Nespresso 捕获价值的是专利 + 品牌层,不是制造层。
 
 「关键业务」中那张粉色便签 —— **对兼容胶囊厂商的专利诉讼** —— 是结构性防御,与吉列的「专利 vs 通用刀片」之战完全相同。核心资源是「**专利保护的胶囊 - 机器接口**」。失去这个专利,整个「诱饵 + 钩子」就崩了。
 
-::canvas[business-model-canvas]{canvasId="8045a704-68d2-4a28-95d5-74e791c24ad5"}
+::canvas[business-model-canvas]{variant="nespresso-capsules-hook"}
 
 胶囊 BMC 才是钱所在的地方 —— 据报道毛利在 80% 以上。「客户细分」中的蓝色便签(**已经拥有 Nespresso 机器的人**)与「核心资源」、「重要合作」中遍布的跨边依赖,让连接关系一目了然:胶囊之所以卖得动,前提是机器先被分发了。
 

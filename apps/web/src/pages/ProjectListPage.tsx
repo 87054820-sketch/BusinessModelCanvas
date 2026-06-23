@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { CanvasMeta, Lang } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
@@ -8,6 +8,7 @@ import { useIdentity } from '../identity/useIdentity';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 import { TemplatePreviewModal } from '../components/TemplatePreviewModal';
 import type { ProjectWithCanvases } from '../components/ProjectPicker';
+import { stateWithFrom } from '../navigation/useSmartBack';
 
 /**
  * Home page — landing-style layout:
@@ -23,6 +24,7 @@ export function ProjectListPage() {
   const { t, i18n } = useTranslation();
   const { identity } = useIdentity();
   const navigate = useNavigate();
+  const location = useLocation();
   const [items, setItems] = useState<ProjectWithCanvases[] | null>(null);
   const [defs, setDefs] = useState<CanvasDefSummary[] | null>(null);
   const [previewDefId, setPreviewDefId] = useState<string | null>(null);
@@ -254,7 +256,7 @@ function CenterState({
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <button
           type="button"
-          onClick={() => navigate('/p/new')}
+          onClick={() => navigate('/p/new', { state: stateWithFrom(location) })}
           className="brand-primary-button rounded-xl px-7 py-3.5 text-base font-semibold transition-all active:scale-[0.98]"
         >
           {t('home.createBlankInstead')}
@@ -268,7 +270,7 @@ function CenterState({
         </button>
         <button
           type="button"
-          onClick={() => navigate('/projects')}
+          onClick={() => navigate('/projects', { state: stateWithFrom(location) })}
           className="rounded-xl border border-gray-200 bg-white px-7 py-3.5 text-base font-semibold text-gray-900 transition-all hover:border-gray-300 hover:bg-gray-50 active:scale-[0.98]"
         >
           {t('home.myProjects')}

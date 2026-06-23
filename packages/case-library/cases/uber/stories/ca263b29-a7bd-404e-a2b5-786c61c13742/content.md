@@ -6,13 +6,13 @@ Garrett Camp registered the domain UberCab.com in 2009 after a frustrating night
 
 *Business Model Generation (BMG 2010)* uses the multi-sided-platforms pattern (No. 3, pp. 76-81) — Uber post-2012 is its archetypal modern instance. The reason this case (like Visa, Google, Nintendo, P&G's Connect & Develop, and InnoCentive in this library) is taught with two BMCs is the same: **the asymmetric pricing between sides IS the model**. Mashing rider-side and driver-side into one BMC hides surge pricing, the negative cash conversion mechanic, and the platform-vs-supplier tension that define how Uber actually works.
 
-::canvas[business-model-canvas]{canvasId="1eda5ceb-4838-4068-8237-ea08495a5479"}
+::canvas[business-model-canvas]{variant="uber-riders"}
 
 The rider BMC reads as a clean tap-and-go consumer experience. Notice the `Revenue Streams` block: per-ride fare, surge pricing, tier upsell, and the most distinctive sticky — **Negative cash conversion (collect now, pay later)**. Riders pay Uber instantly via card-on-file; Uber pays drivers on a delay (typically weekly). At Uber's scale that delay is a multi-hundred-million-dollar float that grows with volume. This is the financial mechanic that lets Uber blitzscale globally without needing matching working-capital lines — growth IS the funding source.
 
 The pink stickies in `Cost Structure` and `Key Activities` mark the model's friction: regulatory defense per-city (the model's existence depends on local-government tolerance) and surge-pricing PR backlash (riders treat 3x surge as price-gouging when it kicks in during snowstorms or terror events).
 
-::canvas[business-model-canvas]{canvasId="611afc1f-f0a9-4574-ab71-19476ab62bce"}
+::canvas[business-model-canvas]{variant="uber-drivers"}
 
 The driver BMC reads inverted: drivers RECEIVE rather than pay. The blue sticky in `Revenue Streams` — *(Driver side: drivers RECEIVE 70-85% of fare)* — is the cross-side flow that makes the asymmetry visible. Uber's own revenue is the 15-30% commission. The pink stickies cluster around **worker-classification disputes** — the structural legal risk that has shaped Uber's regulatory life since 2014.
 

@@ -8,7 +8,7 @@ The portfolio unit is not SKU. It is category / brand platform: beverages, coffe
 
 ## Read the Portfolio Map
 
-::canvas[portfolio-map]{canvasId="d3beb13f-9541-4c4a-baa9-5be7ef9a3ea7"}
+::canvas[portfolio-map]{}
 
 The right side is mostly the Exploit portfolio. Beverages, coffee, and pet care are scaled return businesses. Actions such as the Starbucks license or Blue Bottle are not random acquisitions; they strengthen the portfolio around premium coffee, channels, and growth.
 

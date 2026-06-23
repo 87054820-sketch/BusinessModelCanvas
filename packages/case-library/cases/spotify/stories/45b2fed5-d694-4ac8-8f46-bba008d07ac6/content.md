@@ -6,7 +6,7 @@ Spotify launched in Sweden in October 2008 with a different proposition: don't t
 
 ## The traditional industry baseline
 
-::canvas[business-model-canvas]{canvasId="8c86f135-3365-4190-b512-16ba667f8023"}
+::canvas[business-model-canvas]{variant="traditional-music-industry"}
 
 The BMC of the traditional music business — CDs, then iTunes — looks like a single-sided ownership-transfer model. Customer Segments: people willing to pay $15-20 per album or $0.99 per track. Revenue Streams: per-purchase. Customer Relationships: "transactional, no ongoing relationship". The pink stickies mark exactly where the model broke: a Customer Segment for "pirate downloads" that the industry could only treat as litigation cost, not as a customer in the BMC sense.
 
@@ -16,11 +16,11 @@ The industry's response in 2003-2008 was iTunes — same model in a digital wrap
 
 The Spotify model is sometimes described as one BMC. It really shouldn't be — the asymmetry between the free tier and the paid tier is the whole story, and forcing them into one canvas hides the mechanism. Two BMCs, side by side, make it legible.
 
-::canvas[business-model-canvas]{canvasId="0da44c50-a3f6-4c52-bdd6-9394c045fb0c"}
+::canvas[business-model-canvas]{variant="spotify-free"}
 
 For the free user, Spotify is a *full music catalog with periodic audio ads*. Mobile is shuffle-only, no downloads. The Revenue Streams block leads with `$0 from the free user` — the entire revenue from this side comes from advertisers (cross-side dependency, blue stickies). Friction stickies (pink) are deliberate: "Shuffle-only on mobile", "Audio ads every 15-30 minutes", "Constant Premium upgrade prompts" — *Spotify is making the free experience just inferior enough to push conversion*. This is the Eisenmann-style subsidy-side calibration: too generous and conversion dies; too restricted and the free tier fails as an acquisition engine.
 
-::canvas[business-model-canvas]{canvasId="3cdbe8f7-d5be-4519-b9f0-7e77f423a2de"}
+::canvas[business-model-canvas]{variant="spotify-premium"}
 
 For Premium subscribers, Spotify is the *same catalog, no ads, on-demand mobile, offline, higher bitrate*. €10.99/mo individual, with Family, Duo, and Student tiers. The Revenue Streams block has a single sticky that captures the freemium economics: `88% of total Spotify revenue`. Premium is the money side; it's funding everything.
 

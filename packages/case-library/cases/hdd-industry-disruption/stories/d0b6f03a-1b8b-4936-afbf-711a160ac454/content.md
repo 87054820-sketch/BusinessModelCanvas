@@ -33,7 +33,7 @@ Seagate, Miniscribe, and Maxtor dominate the 5.25-inch market. Their core custom
 
 A startup called Conner Peripherals ships a 3.5-inch drive aimed at the portable-PC market — a segment so new that the desktop OEMs do not yet consider it part of their market. The drive is **half the capacity** of contemporary 5.25-inch drives, **higher cost per megabyte**, and from an unknown brand. But it is **physically half the volume**, **half the mass**, and **lower power consumption**.
 
-::canvas[business-model-canvas]{canvasId="c53cbcbc-28bd-4ea5-80eb-bdb7dbca838b"}
+::canvas[business-model-canvas]{}
 
 Conner's BMC is not a budget version of Seagate's BMC. It is structurally different — direct OEM design-win sales (no retail), Singapore cleanroom assembly, just-in-time custom-order manufacturing. The cost structure and channel choices come from serving portable PC OEMs, not from serving desktop OEMs cheaper.
 
@@ -49,7 +49,7 @@ Their customers — Compaq's *desktop* division, IBM, the clones — were asking
 
 Conner improved 3.5-inch capacity faster than Seagate improved 5.25-inch capacity (smaller platter = simpler engineering at each capacity step). By 1987, 3.5-inch capacity exceeded the 'good enough' threshold for desktop PCs. Apple's Macintosh, then PC OEMs, switched to 3.5-inch in 1988–1990.
 
-::canvas[disruption-diagnosis]{canvasId="9038cd3e-188f-417d-9a7b-bd11fc56cdb7"}
+::canvas[disruption-diagnosis]{}
 
 ### The collapse (1990–1992)
 

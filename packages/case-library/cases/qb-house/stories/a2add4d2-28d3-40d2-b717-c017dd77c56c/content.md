@@ -14,7 +14,7 @@ The strategic insight is that functional speed is not just a lower-price version
 
 ## Read the Business Model Canvas first
 
-::canvas[business-model-canvas]{canvasId="69a62753-b2a5-4a38-87f4-56e3d4b4aa8a"}
+::canvas[business-model-canvas]{}
 
 The BMC shows a narrow but coherent model. The customer segment is time-constrained men who value convenience more than a full grooming ritual. The value proposition is not “best haircut” in an artistic sense; it is quick, clean, predictable, low-price hair maintenance.
 
@@ -22,7 +22,7 @@ Key activities are process standardization, station-level throughput, hygiene co
 
 ## Then read the Strategy Canvas
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="0db9b4f4-2646-4126-a894-cf268890f713"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 The Strategy Canvas contrasts emotional barbershop factors with QB House’s functional curve. Traditional barbershops score high on service ritual, conversation, shampoo, shave, and personalization. QB House deliberately scores low on those. It scores high on speed, price clarity, wait-time visibility, cleanliness, and location convenience.
 

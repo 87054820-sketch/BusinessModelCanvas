@@ -4,7 +4,7 @@
 
 ## 一张 BMC,因为故事在服务叠加层上
 
-::canvas[business-model-canvas]{canvasId="9bd9633b-f6ea-4ede-8b5c-b5e4cf8b47e8"}
+::canvas[business-model-canvas]{variant="cemex-ondemand-cement"}
 
 不像本库中其他多边平台案例(Uber、Airbnb、Visa、Google 等),Cemex 用一张 BMC 呈现。它不是多边平台;它是一家单边的大宗商品制造商,**在大宗商品周围造了一条服务护城河**。视觉上的关键点:
 

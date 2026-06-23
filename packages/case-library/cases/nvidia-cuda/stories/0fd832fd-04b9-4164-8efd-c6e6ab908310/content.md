@@ -14,13 +14,13 @@ The strategic move combines differentiation with a cost or complexity break. The
 
 ## Read the Business Model Canvas first
 
-::canvas[business-model-canvas]{canvasId="64bbb77f-0587-49c2-8eff-2706938d0e6c"}
+::canvas[business-model-canvas]{}
 
 The BMC turns the value-curve choice into an operating model. In `Customer Segments`, notice that the target is not simply the incumbent industry's favorite customer. In `Value Propositions`, the promise is framed around the new job-to-be-done. In `Key Activities` and `Key Resources`, the model shows what the company must become excellent at. Finally, `Cost Structure` and `Revenue Streams` test whether the strategic move can be delivered repeatedly rather than as a one-off campaign.
 
 ## Then read the Strategy Canvas
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="78b21bff-7528-48da-a69a-12d2e530c970"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 The Strategy Canvas should be read as a shape. The red-ocean baseline scores higher on legacy complexity and expertise-heavy factors. NVIDIA CUDA scores higher on access, usability, personalized value, cost efficiency, or new-demand creation, depending on the case. That shape is the strategic argument. If the company tried to score high on every traditional factor and every new factor, it would likely recreate the cost structure of the old industry.
 

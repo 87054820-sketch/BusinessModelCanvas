@@ -8,11 +8,11 @@ In October 2000 Google launched **AdWords**, a self-service auction-based ad pla
 
 This is the canonical 2-sided MSP shape. The searcher BMC and the advertiser BMC are different even though they describe the same platform:
 
-::canvas[business-model-canvas]{canvasId="c1c5fb36-5252-422d-ad89-f200a5b223ea"}
+::canvas[business-model-canvas]{variant="google-searchers"}
 
 For searchers, Google's value proposition is *speed + relevance + breadth + free*. The Revenue Streams block is a single sticky: "$0 — searchers pay nothing." The platform is funded *by someone else paying for the searcher's attention*.
 
-::canvas[business-model-canvas]{canvasId="1944df19-d2f5-407d-971d-6f83f6092b24"}
+::canvas[business-model-canvas]{variant="google-advertisers"}
 
 For advertisers, Google's value proposition is *reach searchers at the moment of intent*. The Revenue Streams block lists CPC auctions, CPM display, quality-score-modulated pricing, and a 2023 number that captures the scale: **$237 billion in advertising revenue**. That's the money side bearing the load. Notice the cross-side dependency (blue stickies): the searcher attention pool isn't an Asset Google produces — it's a side of the platform that has to keep showing up, and the searcher BMC's free experience is what keeps them showing up.
 
@@ -22,7 +22,7 @@ This asymmetry — searchers free, advertisers paying auction-clearing prices �
 
 The move that turned Google from a *very profitable 2-sided platform* into the textbook MSP came in 2003. **AdSense** let any website join the platform, paste a JavaScript snippet on its pages, and have Google serve ads from the *same auction* that powered AdWords — with the publisher keeping ~68% of the revenue.
 
-::canvas[business-model-canvas]{canvasId="99cb02dc-fbaa-406b-99d7-645ba424cf8a"}
+::canvas[business-model-canvas]{variant="google-content-sites"}
 
 For content sites, Google's value proposition is *monetize traffic without running an ad sales team*. Any indie blogger, recipe site, or mid-tail tech publisher could join, get auction-priced fill from the same advertiser pool that funded Google Search, and have payouts auto-deposited monthly. The cross-side dependency (blue stickies) here is *the advertiser side* — without advertisers willing to bid for relevance against AdSense inventory, publishers wouldn't have meaningful fill rates.
 

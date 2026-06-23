@@ -14,13 +14,13 @@ The strategic move combines differentiation with a cost or complexity break. The
 
 ## Read the Business Model Canvas first
 
-::canvas[business-model-canvas]{canvasId="cd2e734c-b039-4149-9bf3-9980d2451c29"}
+::canvas[business-model-canvas]{}
 
 The BMC turns the value-curve choice into an operating model. In `Customer Segments`, notice that the target is not simply the incumbent industry's favorite customer. In `Value Propositions`, the promise is framed around the new job-to-be-done. In `Key Activities` and `Key Resources`, the model shows what the company must become excellent at. Finally, `Cost Structure` and `Revenue Streams` test whether the strategic move can be delivered repeatedly rather than as a one-off campaign.
 
 ## Then read the Strategy Canvas
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="62a96b14-952e-4109-b14d-46084cd0e213"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 The Strategy Canvas should be read as a shape. The red-ocean baseline scores higher on legacy complexity and expertise-heavy factors. Stitch Fix scores higher on access, usability, personalized value, cost efficiency, or new-demand creation, depending on the case. That shape is the strategic argument. If the company tried to score high on every traditional factor and every new factor, it would likely recreate the cost structure of the old industry.
 

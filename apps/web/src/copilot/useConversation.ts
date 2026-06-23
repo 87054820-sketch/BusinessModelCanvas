@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useSyncExternalStore } from 'react';
 
 export interface ConversationImageAttachment {
   id: string;
@@ -57,12 +57,43 @@ export type AttachedRef =
 
 const LEGACY_STORAGE_KEY_PREFIX = 'pingarden.copilot.conversation.';
 
+type ConversationListener = () => void;
+
+const EMPTY_MESSAGES: ConversationMessage[] = [];
+const sessionConversations = new Map<string, ConversationMessage[]>();
+const conversationListeners = new Map<string, Set<ConversationListener>>();
+let legacyStorageCleared = false;
+
 function clearPersistedConversations() {
+  if (legacyStorageCleared) return;
+  legacyStorageCleared = true;
   if (typeof localStorage === 'undefined') return;
   for (let i = localStorage.length - 1; i >= 0; i -= 1) {
     const key = localStorage.key(i);
     if (key?.startsWith(LEGACY_STORAGE_KEY_PREFIX)) localStorage.removeItem(key);
   }
+}
+
+function conversationKey(displayName: string | undefined): string {
+  return displayName?.trim() || 'anonymous';
+}
+
+function getMessages(key: string): ConversationMessage[] {
+  return sessionConversations.get(key) ?? EMPTY_MESSAGES;
+}
+
+function emit(key: string) {
+  conversationListeners.get(key)?.forEach((listener) => listener());
+}
+
+function subscribeToConversation(key: string, listener: ConversationListener): () => void {
+  const listeners = conversationListeners.get(key) ?? new Set<ConversationListener>();
+  listeners.add(listener);
+  conversationListeners.set(key, listeners);
+  return () => {
+    listeners.delete(listener);
+    if (listeners.size === 0) conversationListeners.delete(key);
+  };
 }
 
 function uuid(): string {
@@ -71,20 +102,25 @@ function uuid(): string {
 }
 
 /**
- * Single-thread in-memory chat history for the current app session.
+ * App-session in-memory chat history.
+ *
  * Conversation content is intentionally not written to localStorage or
  * server files, so packaged builds never carry one user's Copilot chats
- * to another device. The clear button wipes the current in-memory thread;
- * first load also removes legacy persisted conversation keys from older
- * builds.
+ * to another device. The module-level store survives route changes while
+ * the app is open; closing/reloading the app releases it.
  */
 export function useConversation(displayName: string | undefined) {
-  const [messages, setMessages] = useState<ConversationMessage[]>([]);
+  const key = useMemo(() => conversationKey(displayName), [displayName]);
 
   useEffect(() => {
     clearPersistedConversations();
-    setMessages([]);
-  }, [displayName]);
+  }, []);
+
+  const messages = useSyncExternalStore(
+    useCallback((listener) => subscribeToConversation(key, listener), [key]),
+    useCallback(() => getMessages(key), [key]),
+    () => EMPTY_MESSAGES,
+  );
 
   const append = useCallback(
     (msg: Omit<ConversationMessage, 'id' | 'ts'>): ConversationMessage => {
@@ -93,29 +129,31 @@ export function useConversation(displayName: string | undefined) {
         ts: new Date().toISOString(),
         ...msg,
       };
-      setMessages((prev) => [...prev, full]);
+      sessionConversations.set(key, [...getMessages(key), full]);
+      emit(key);
       return full;
     },
-    [],
+    [key],
   );
 
   /** Append-into-last: streaming helper that grows the trailing assistant message. */
   const updateLast = useCallback(
     (mutator: (msg: ConversationMessage) => ConversationMessage) => {
-      setMessages((prev) => {
-        if (prev.length === 0) return prev;
-        const last = prev[prev.length - 1]!;
-        const updated = mutator(last);
-        return [...prev.slice(0, -1), updated];
-      });
+      const prev = getMessages(key);
+      if (prev.length === 0) return;
+      const last = prev[prev.length - 1]!;
+      const updated = mutator(last);
+      sessionConversations.set(key, [...prev.slice(0, -1), updated]);
+      emit(key);
     },
-    [],
+    [key],
   );
 
   const clear = useCallback(() => {
     clearPersistedConversations();
-    setMessages([]);
-  }, []);
+    sessionConversations.set(key, []);
+    emit(key);
+  }, [key]);
 
   return { messages, append, updateLast, clear };
 }

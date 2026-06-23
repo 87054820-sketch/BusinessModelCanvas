@@ -8,7 +8,7 @@ The portfolio unit should be â€œindependently operable platform / business unitâ
 
 ## Read the Portfolio Map
 
-::canvas[portfolio-map]{canvasId="1b1cfb82-488f-4235-8ecd-8d6f54212d10"}
+::canvas[portfolio-map]{}
 
 The upper-right side is the Exploit core: insurance, banking, and wealth management. They already have revenue, customer trust, and operating scale, but they face death and disruption risk from new competitors, regulation, consumer behavior, and platform disintermediation.
 

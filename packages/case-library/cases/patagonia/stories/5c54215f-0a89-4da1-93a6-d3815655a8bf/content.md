@@ -6,7 +6,7 @@ For most apparel brands, the question is **how do we sell more**. For Patagonia,
 
 Three things mark Patagonia apart from the outdoor-apparel industry baseline. First, the **1% for the Planet pledge**: 1% of revenue (not profit — that distinction matters; it's a tax even in years the company loses money) goes to environmental causes. Yvon Chouinard founded the cross-industry network to encourage other brands to do the same. Second, **lifetime warranty + free repairs**: the brand asks customers not to throw away clothes; it pays Worn Wear repair technicians to fix what comes back, and operates roving repair trucks that show up at outdoor events. Third, the **2022 ownership restructuring**: Chouinard gave away 100% of the company to the Patagonia Purpose Trust + Holdfast Collective — an explicit anti-IPO that locks in the mission against shareholder pressure. The *New York Times* headline read "Billionaire No More".
 
-::canvas[business-model-canvas]{canvasId="23021172-4b1c-4b15-96f1-0d715e8bb23e"}
+::canvas[business-model-canvas]{variant="main-en"}
 
 ## The growth engine
 
@@ -22,7 +22,7 @@ The pink stickies acknowledge the tensions. Worn Wear and the lifetime-repair pr
 
 ## Read the Scenario Matrix
 
-::canvas[scenario-matrix]{canvasId="10e75e95-130e-4b73-a0c1-ff37c5241601"}
+::canvas[scenario-matrix]{}
 
 The scenario matrix turns those tensions into two uncertainties: whether mission premium strengthens or price sensitivity rises, and whether circularity regulation tightens or remains voluntary. Patagonia's robust moves are the ones that work across futures: repair, resale, durability proof, supply-chain transparency, and community activism.
 

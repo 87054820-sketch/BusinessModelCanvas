@@ -6,7 +6,7 @@
 
 ## 先读商业模式画布
 
-::canvas[business-model-canvas]{canvasId="fccd9ecf-5ca0-4c3d-80fc-22cd281461ec"}
+::canvas[business-model-canvas]{}
 
 BMC 显示了平安好医生的运营拼图：自雇全职 AI 辅助家庭医生 + APP 7×24 在线咨询 + 与平安生态打通的付费模型 + 大量轻症用户的低 ARPU 流量池。但 BMC 不解释**为什么三甲医院和省级医保系统没有率先做这件事**。颠覆诊断要回答这个问题。
 

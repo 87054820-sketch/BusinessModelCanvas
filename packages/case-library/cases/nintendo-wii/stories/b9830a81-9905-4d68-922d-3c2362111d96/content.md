@@ -14,7 +14,7 @@ That strategic move also protected the business model. Lower hardware requiremen
 
 ## Read the Strategy Canvas
 
-::canvas[blue-ocean-strategy-canvas]{canvasId="4c0a6260-99d2-4ba0-a82b-22858d9a4bd8"}
+::canvas[blue-ocean-strategy-canvas]{}
 
 The red-ocean curve is the performance-console curve: high on graphics, processor power, hardcore title depth, and multimedia capability. Wii’s curve is lower on many of those factors by design. It is higher on motion control, ease of use, social play, family appeal, and price accessibility.
 

@@ -8,7 +8,7 @@ This story fixes the portfolio unit of analysis as “independently operable pla
 
 ## Period 1: 2003–2004, trust experiments beside the current engine
 
-::canvas[portfolio-map]{canvasId="f5e2a5b0-0c74-4dfc-8b3e-82988c1f3a04"}
+::canvas[portfolio-map]{variant="portfolio-2004"}
 
 In 2003–2004 the portfolio is simple. Alibaba.com B2B is the relatively validated Exploit engine. Taobao and Alipay are still Explore options. Taobao has large potential, but high uncertainty against eBay China, consumer trust, and the sustainability of a zero-fee model. Alipay is even more experimental: it is not yet a fintech platform; it is an escrow mechanism designed to reduce transaction risk in the marketplace.
 
@@ -16,7 +16,7 @@ The portfolio actions here are not Scale. They are **Ideate + Invest + Persevere
 
 ## Period 2: 2014, commerce and payments transfer into exploit
 
-::canvas[portfolio-map]{canvasId="b7b572b2-2f4e-4c73-858f-df2f0e5c9f42"}
+::canvas[portfolio-map]{variant="portfolio-2014"}
 
 By the 2014 IPO, Taobao / Tmall and Alipay / Ant have transferred from Explore into Exploit. They are no longer ideas. They have traffic, merchants, advertising economics, commissions, payment accounts, and financial-services scale. The action is **Transfer**: early exploration is accepted into the exploit portfolio and becomes the group's profit and data engine.
 
@@ -24,7 +24,7 @@ At the same time, a new exploration wave appears. Cainiao tests a logistics coor
 
 ## Period 3: 2024, mature portfolio under regulation and competition
 
-::canvas[portfolio-map]{canvasId="e93d3b40-09ef-481a-9556-bd659aa4bf7d"}
+::canvas[portfolio-map]{variant="portfolio-2024"}
 
 The 2024 map is not a “more businesses is better” story. It shows the complexity of a mature portfolio. Taobao / Tmall remains a high-return engine, but Pinduoduo, Douyin commerce, JD, merchant pressure, and regulation push it toward higher disruption risk. Ant / Alipay still has enormous user identity and trust assets, but the post-2020 regulatory reset changes fintech profitability and governance.
 

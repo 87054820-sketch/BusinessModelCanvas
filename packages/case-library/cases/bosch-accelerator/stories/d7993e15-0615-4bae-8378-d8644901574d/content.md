@@ -2,7 +2,7 @@
 
 Bosch Accelerator 不是一组创新项目清单。用**三层增长**看，既有工业制造基础是 H1，被验证的内部创业项目可能成为 H2 增长引擎，早期想法则是 H3 未来选项。加速器的价值在于建立从选项到证据充分的新业务的迁移系统。
 
-::canvas[three-horizons-map]{canvasId="276745b8-1083-4523-9a4b-9dadb64d9f6d"}
+::canvas[three-horizons-map]{}
 
 **McKinsey 7S** 让组织挑战变得清楚。Strategy 表明 Bosch 要在核心之外寻找未来增长；Structure 给内部团队独立的加速器路径；Systems 提供证据评审和项目关口；Shared Values 必须承认“先学习、后规模化”的合理性；Skills 包括发现、原型和创业构建，这不同于核心工程交付；Style 和 Staff 决定赞助人是保护学习，还是过早套用成熟业务指标。
 

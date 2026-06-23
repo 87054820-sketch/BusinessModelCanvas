@@ -4,7 +4,7 @@
 
 ## 一张 BMC,因为「平台结构」就是模式本身
 
-::canvas[business-model-canvas]{canvasId="b5f1b76d-8cba-47e0-bc7b-0ce3676c6bf2"}
+::canvas[business-model-canvas]{variant="innocentive-bmc"}
 
 与宝洁、GSK 的案例不同(它们用两张 BMC,因为「跨边界的方向」就是模式),InnoCentive 用一张 BMC 就够,因为「平台结构」就是模式。视觉上的关键:
 

@@ -8,7 +8,7 @@ A decade later, Cainiao is the logistics backbone for Alibaba's $1T+ GMV ecosyst
 
 Three differentiators define Cainiao versus its competitors. First, **asset-light coordination**. Cainiao doesn't own a courier fleet; it owns the data platform that makes the existing fleets interoperate. Routing decisions, electronic waybills, package tracking — all standardised across partners. SF Express owns its own trucks. JD Logistics owns its own warehouses end-to-end. Cainiao's bet is that data + standards captures more value than capital + fleet, and that being asset-light makes the platform faster to scale internationally. Second, **EWTP global e-hubs**. The Electronic World Trade Platform is Cainiao's six-hub network — Kuala Lumpur, Dubai, Liège, Hong Kong, Bangkok, Mexico City — that consolidates Chinese cross-border outbound at hub-and-spoke scale. AliExpress Choice's 5-10 day delivery promise is technically possible because of these hubs. Third, **Cainiao Station**. The neighbourhood-pickup network in China (over 100,000 stations) solves last-mile cost in the cheapest way: humans in convenience stores collecting packages on behalf of dozens of recipients per drop.
 
-::canvas[business-model-canvas]{canvasId="8a3487b5-dff3-4a2d-8d1c-fe9f74953b2f"}
+::canvas[business-model-canvas]{variant="main-en"}
 
 ## The growth engine
 

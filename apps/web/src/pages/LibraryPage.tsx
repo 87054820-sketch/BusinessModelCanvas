@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import type {
@@ -28,6 +28,8 @@ import { Pagination } from '../components/Pagination';
 import { CopilotDrawer } from '../components/CopilotDrawer';
 import { CopilotErrorBoundary } from '../components/CopilotErrorBoundary';
 import type { AttachedRef } from '../copilot/useConversation';
+import { BackLink } from '../components/BackLink';
+import { stateWithFrom } from '../navigation/useSmartBack';
 
 type LibraryTab = 'cases' | 'canvases' | 'patterns' | 'experiments' | 'strategyFrameworks' | 'resources';
 
@@ -69,6 +71,7 @@ export function LibraryPage() {
   const { t, i18n } = useTranslation();
   const { identity } = useIdentity();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [cases, setCases] = useState<CaseLibraryEntry[] | null>(null);
   const [patterns, setPatterns] = useState<BusinessModelPattern[] | null>(null);
@@ -100,6 +103,10 @@ export function LibraryPage() {
   // Sits above the tab strip so the user sees the new page's first row
   // without scrolling up after clicking Next.
   const listAnchorRef = useRef<HTMLDivElement | null>(null);
+  const copilotLibraryCatalog = useMemo(
+    () => ({ patterns, experiments, strategyFrameworks, canvasDefs }),
+    [patterns, experiments, strategyFrameworks, canvasDefs],
+  );
 
   useEffect(() => {
     if (!identity) return;
@@ -189,7 +196,9 @@ export function LibraryPage() {
     detail: import('@pingarden/shared').CaseLibraryDetail,
   ) {
     setPreviewEntry(null);
-    navigate(`/p/${detail.project.id}`, { state: { caseDetail: detail } });
+    navigate(`/p/${detail.project.id}`, {
+      state: { ...stateWithFrom(location), caseDetail: detail },
+    });
   }
 
   async function handleFork(entry: CaseLibraryEntry) {
@@ -200,7 +209,7 @@ export function LibraryPage() {
     // whole case when the requested lang isn't shipped.
     const result = await libraryApi.fork(entry.slug, identity.displayName, lang);
     setPreviewEntry(null);
-    navigate(`/p/${result.project.id}`);
+    navigate(`/p/${result.project.id}`, { state: stateWithFrom(location) });
   }
 
   /** Cases tab → Patterns tab: open the matching pattern's detail modal. */
@@ -289,12 +298,12 @@ export function LibraryPage() {
       {/* Page header — back link + title + create CTA on the right */}
       <header className="mb-4 flex items-end justify-between gap-6">
         <div>
-          <Link
-            to="/"
+          <BackLink
+            fallback="/"
             className="inline-flex items-center text-sm text-gray-500 hover:text-gray-900"
           >
             ← {t('nav.back')}
-          </Link>
+          </BackLink>
           <h1 className="mt-2 text-2xl font-semibold text-gray-900">
             {t('library.pageTitle')}
           </h1>
@@ -315,7 +324,7 @@ export function LibraryPage() {
           </button>
           <button
             type="button"
-            onClick={() => navigate('/p/new')}
+            onClick={() => navigate('/p/new', { state: stateWithFrom(location) })}
             className="rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50"
           >
             + {t('home.createBlankInstead')}
@@ -419,7 +428,7 @@ export function LibraryPage() {
                   canvasDefsPage * SHOWCASE_PAGE_SIZE,
                 )}
                 lang={lang}
-                onStart={(defId) => navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`)}
+                onStart={(defId) => navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, { state: stateWithFrom(location) })}
               />
               <Pagination
                 total={canvasDefs.length}
@@ -596,6 +605,7 @@ export function LibraryPage() {
           onClose={() => setCopilotOpen(false)}
           attachedRef={attachedRef}
           lang={lang}
+          libraryCatalog={copilotLibraryCatalog}
         />
       </CopilotErrorBoundary>
     </main>

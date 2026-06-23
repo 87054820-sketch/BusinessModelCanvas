@@ -8,7 +8,7 @@
 
 ## 第一阶段：2003–2004，当前引擎旁边长出信任实验
 
-::canvas[portfolio-map]{canvasId="f1b48e5d-2705-4a8d-8b36-78ccf42e5c14"}
+::canvas[portfolio-map]{variant="portfolio-2004"}
 
 2003–2004 年的组合很简单：Alibaba.com B2B 是相对确定的 Exploit 开发引擎，淘宝和支付宝仍是 Explore 探索选项。淘宝的潜力很大，但面对 eBay China、本地消费者信任和免费模式可持续性的风险。支付宝更像一个“降低交易风险的实验”：它还不是金融科技平台，而是为淘宝解决“陌生买卖双方不信任”的关键假设。
 
@@ -16,7 +16,7 @@
 
 ## 第二阶段：2014，电商与支付转入开发组合
 
-::canvas[portfolio-map]{canvasId="db2f2d9b-0f61-4f6f-998b-4fce30df08a5"}
+::canvas[portfolio-map]{variant="portfolio-2014"}
 
 到 2014 年上市时，淘宝 / 天猫和支付宝 / 蚂蚁已经从 Explore 转入 Exploit。它们不再只是想法，而是有流量、商家、广告收入、佣金、支付账户和金融服务的规模化平台。这个阶段的动作是 **Transfer**：早期探索项目被开发组合接住，成为集团的利润和数据引擎。
 
@@ -24,7 +24,7 @@
 
 ## 第三阶段：2024，成熟组合变成监管与竞争下的组合
 
-::canvas[portfolio-map]{canvasId="42c49c54-b389-4aa1-8145-6e463692f032"}
+::canvas[portfolio-map]{variant="portfolio-2024"}
 
 2024 年的图不是“越多业务越好”，而是显示成熟组合的复杂性。淘宝 / 天猫仍是高收益引擎，但被拼多多、抖音电商、京东和商家关系重塑推向更高颠覆风险。蚂蚁 / 支付宝也仍有巨大用户基础，但 2020 年后监管重置改变了金融科技的盈利性和治理边界。
 

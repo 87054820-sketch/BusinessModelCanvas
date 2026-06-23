@@ -8,7 +8,7 @@
 
 三个差异点。第一,**任何人都能开课**。Udemy 不要求资质、教学经验、机构挂靠。一个一线软件工程师周日录一门 Solidity 课,周一就能开始收版税。第二,**用促销折扣做价格弹性**。课程标价 200 美元,但周周做活动卖 13.99 美元 —— 这种节奏制造「现在不买就后悔」的紧迫感,把冲动消费规模化。第三,**B2B 漏斗**。消费者在 udemy.com 找课;企业 L&D 团队找 Udemy Business —— 课程库的精选子集,以企业订阅形式出售。同样内容、不同包装、毛利高得多。
 
-::canvas[business-model-canvas]{canvasId="331c0d89-6ee8-4392-a318-7d3b7f1601f5"}
+::canvas[business-model-canvas]{variant="main-zh"}
 
 ## 增长引擎
 

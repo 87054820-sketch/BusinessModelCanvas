@@ -26,6 +26,22 @@ fail() {
   exit 1
 }
 
+print_package_diagnostics() {
+  printf '\nPackage diagnostics:\n' >&2
+  printf '  build dir: ' >&2
+  if [ -d apps/desktop/build ]; then
+    find apps/desktop/build -maxdepth 2 -print | sed 's#^#    #' >&2
+  else
+    printf 'missing\n' >&2
+  fi
+  printf '  desktop dist: ' >&2
+  if [ -d apps/desktop/dist ]; then
+    du -sh apps/desktop/dist >&2 || true
+  else
+    printf 'missing\n' >&2
+  fi
+}
+
 require_file() {
   local path=$1
   [ -f "$path" ] || fail "Missing required file: $path"
@@ -121,9 +137,9 @@ log "Refreshing project-local Claude skill (.claude/skills/pingarden/)"
 node apps/cli/dist/index.js skill install --local
 
 # Build a portable zip of the skill so it can be handed to users who
-# want it in a non-Claude-Code agent (Cursor, Copilot, Cline, …) or
-# air-gapped machines. Filename embeds the content-hash version so two
-# zips with the same name are guaranteed byte-identical inputs.
+# want it in Claude, Code Cursor, Codex, CodeBuddy, WorkBuddy, or other
+# agents. Filename embeds the content-hash version so two zips with the
+# same name are guaranteed byte-identical inputs.
 log "Bundling skill zip distribution (apps/cli/build/skill/)"
 SKILL_VERSION="$(tr -d '[:space:]' < .claude/skills/pingarden/.pingarden-skill-version)"
 [ -n "$SKILL_VERSION" ] || fail "Could not read skill version sentinel — was 'skill install --local' aborted?"
@@ -164,7 +180,7 @@ Auto-loads on the next Claude Code session. Trigger phrases: "draft a
 BMC", "fill the value proposition", "snapshot before editing", or any
 `pingarden …` invocation.
 
-## Cursor
+## Code Cursor
 
 ```bash
 unzip -o pingarden-skill-*.zip -d <repo>/.cursor/skills/
@@ -172,19 +188,24 @@ echo 'See .cursor/skills/pingarden/SKILL.md before any pingarden task.' \
   >> <repo>/.cursorrules
 ```
 
-## GitHub Copilot Chat
+## Codex
 
 ```bash
-unzip -o pingarden-skill-*.zip -d <repo>/.github/skills/
-cat <repo>/.github/skills/pingarden/SKILL.md \
-  >> <repo>/.github/copilot-instructions.md
+unzip -o pingarden-skill-*.zip -d ~/.codex/skills/
+# If your Codex setup uses a repo-level instructions file, reference
+# ~/.codex/skills/pingarden/SKILL.md from there.
 ```
 
-## Cline / Roo Code / Continue.dev / Aider
+## CodeBuddy / WorkBuddy
 
-Unzip anywhere on disk, then point the agent's rules file
-(`.clinerules` / `.continuerules` / `.aider.conf.yml`'s `read:`) at
-the absolute path of `pingarden/SKILL.md`.
+Use the official skill installation path for your CodeBuddy or WorkBuddy
+client, then place the extracted `pingarden/` folder there.
+
+## Other
+
+If your tool is not listed above, unzip anywhere on disk and point that
+agent's rules / memory / instructions file at the absolute path of
+`pingarden/SKILL.md`.
 
 ## Generic LLM (no rules system)
 
@@ -258,7 +279,10 @@ if find apps/desktop/dist -path '*/data/*' -print -quit | grep -q .; then
 fi
 
 log "Packaging macOS DMG (electron-builder, dmg target)"
-pnpm --filter @pingarden/desktop run dist
+if ! pnpm --filter @pingarden/desktop run dist; then
+  print_package_diagnostics
+  fail "electron-builder failed while generating the macOS DMG. See the diagnostics above."
+fi
 
 # Locate the produced .app and .dmg. electron-builder writes to either
 # `mac/` (Intel build) or `mac-arm64/` (Apple Silicon) depending on the
@@ -291,10 +315,10 @@ cat <<EOF
   Skill zip:  $ROOT/$SKILL_ZIP   ($SKILL_ZIP_SIZE_HUMAN, version $SKILL_VERSION)
   Logs:       ~/Library/Application Support/PinGarden/logs/server.log
 
-The skill zip is a portable artifact for non-Claude-Code agents
-(Cursor, Copilot, Cline, …). Hand-deliver it; the recipient unzips
-into ~/.claude/skills/ (or another agent's rules dir — see INSTALL.md
-inside the zip).
+The skill zip is a portable artifact for Claude, Code Cursor, Codex,
+CodeBuddy, WorkBuddy, and other agents. Hand-deliver it; the recipient
+unpacks it into the matching skills / rules dir — see INSTALL.md inside
+the zip.
 
 This build is unsigned (no Apple Developer ID). On any machine other
 than the one that built it, the recipient must clear the quarantine

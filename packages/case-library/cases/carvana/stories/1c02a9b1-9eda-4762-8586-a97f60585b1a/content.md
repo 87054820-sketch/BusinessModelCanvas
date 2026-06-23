@@ -8,7 +8,7 @@ It worked. By 2021, Carvana was a $40B-market-cap public company. Then 2022 happ
 
 Three differentiators are baked into the canvas. First, **fully online flow**: every step from vehicle selection to title transfer happens on the website. The user never speaks to a salesperson unless they want to. Second, **no-haggle pricing + 7-day return**: the price you see is the price; if you don't like the car, return it within seven days, no penalty. This was a frontal attack on the dealership's information-asymmetry margin — and it created enormous trust premium. Third, **the car vending machines** — 33 glass towers nationwide that double as marketing infrastructure (every time someone uploads their pickup video to TikTok, Carvana gets free distribution).
 
-::canvas[business-model-canvas]{canvasId="d32d3576-68a8-43d1-94f6-5dcf302ca207"}
+::canvas[business-model-canvas]{variant="main-en"}
 
 ## The growth engine
 

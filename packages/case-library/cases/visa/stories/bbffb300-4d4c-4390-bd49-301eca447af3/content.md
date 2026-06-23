@@ -6,11 +6,11 @@
 
 多边平台的标志性手法是「从每一边的视角分别画 BMC」,而不是把所有内容塞进一张画布:
 
-::canvas[business-model-canvas]{canvasId="343c9401-89fb-4ec2-b4af-04f97c404232"}
+::canvas[business-model-canvas]{variant="visa-cardholders"}
 
 持卡人眼中,Visa 的价值主张是*处处可用、刷卡免费、经常还有权益*。「收入来源」一格的第一张便签就是「持卡人每笔交易付 0 元」—— 这是教科书级的补贴方,Visa 靠的是持卡人留在网络里,而不是靠向他们收费。
 
-::canvas[business-model-canvas]{canvasId="180ec04b-2f2b-4edf-9d13-6b45c683bc27"}
+::canvas[business-model-canvas]{variant="visa-merchants"}
 
 商户眼中,同一个平台看起来完全不同。价值主张:*接 45 亿张全球流通的卡*。收入来源:每笔交易 1.5-3% 的回扣;2024 年净收入约 360 亿美元。这就是收钱方。注意几张粉色「张力」便签:网络规则和拒付制度对商户产生反推,「实际上无法拒绝接 Visa」是一种被动的依赖 —— 一旦消费者都带这张卡,商户事实上没法不接。这是 *(Eisenmann, Parker & Van Alstyne 2006)* 提出的「通过补贴方锁定收钱方」—— Visa 通过控制持卡人来锁住商户。
 

@@ -8,7 +8,7 @@ The portfolio unit is an exploration project / team, not a business department. 
 
 ## Read the Portfolio Map
 
-::canvas[portfolio-map]{canvasId="e6a5d0a9-1306-4035-b4ec-bc94e4325107"}
+::canvas[portfolio-map]{}
 
 The left side of the map shows an exploration funnel. Many early teams sit in the high-risk zone because they have little evidence beyond slides and assumptions. Retired teams are not traditional failures; they are low-cost learning. Persevering teams have enough evidence to test the next key assumption. Transfer candidates have reduced desirability, feasibility, profitability, and adaptability risk enough to deserve an owner in the business.
 
@@ -24,7 +24,7 @@ The left side of the map shows an exploration funnel. Many early teams sit in th
 
 ## Read the Evidence Scorecard
 
-::canvas[evidence-scorecard]{canvasId="74f38468-b7d2-4e08-92e8-cc5e29e2a101"}
+::canvas[evidence-scorecard]{}
 
 The evidence scorecard makes the innovation metrics explicit. Bosch should not measure the accelerator by demo-day volume or number of ideas. The useful metric is whether each team is producing stronger evidence, reducing desirability / feasibility / viability risk, and earning a concrete portfolio decision: persevere, pivot, retire, or transfer.
 
