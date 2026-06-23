@@ -6,8 +6,8 @@ import { createInterface } from 'node:readline';
 import { resolveKimiBinary, KimiBinaryNotFoundError } from './kimiBinaryResolver.js';
 
 /**
- * Single adapter for the bundled Kimi CLI. Spawns `kimi -p
- * --output-format stream-json --model kimi-code/kimi-for-coding "<prompt>"`
+ * Single adapter for the bundled Kimi CLI. Spawns `kimi --print -p
+ * "<prompt>" --output-format stream-json --model kimi-code/kimi-for-coding`
  * in a per-spawn scratch tmpdir so the subprocess has no view of the
  * PinGarden source tree (defence in depth — kimi has no `--disallowed-tools`
  * flag, so we rely on `default_permission_mode = "manual"` in
@@ -85,6 +85,7 @@ export async function* streamKimiChat(
     child = spawn(
       bin,
       [
+        '--print',
         '-p', promptText,
         '--output-format', 'stream-json',
         '--model', MODEL_ALIAS,
@@ -205,13 +206,25 @@ function buildPrompt(req: KimiStreamRequest): string {
  *
  * Meta lines (`role: "meta"`) and anything else are skipped silently.
  */
-function extractTextDelta(evt: unknown): string | undefined {
+export function extractTextDelta(evt: unknown): string | undefined {
   if (!evt || typeof evt !== 'object') return undefined;
   const obj = evt as Record<string, unknown>;
 
-  // Kimi 0.11+ stream-json: {"role":"assistant","content":"..."}
+  // Kimi 0.11 stream-json: {"role":"assistant","content":"..."}
   if (obj.role === 'assistant' && typeof obj.content === 'string') {
     return obj.content;
+  }
+
+  // Kimi 1.47 stream-json: {"role":"assistant","content":[{"type":"think"},{"type":"text","text":"..."}]}
+  if (obj.role === 'assistant' && Array.isArray(obj.content)) {
+    const text = obj.content
+      .map((part) => {
+        if (!part || typeof part !== 'object') return '';
+        const item = part as Record<string, unknown>;
+        return item.type === 'text' && typeof item.text === 'string' ? item.text : '';
+      })
+      .join('');
+    return text || undefined;
   }
 
   // Claude-Code-style nested envelope: {type:"stream_event", event:{...}}

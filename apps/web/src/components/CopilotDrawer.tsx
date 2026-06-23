@@ -23,6 +23,7 @@ import type {
 } from '@pingarden/shared';
 import { copilotApi } from '../api/copilot';
 import type { CanvasDefSummary } from '../api/client';
+import { REVEAL_INTERVAL_MS, splitStreamingBlocks, takeRevealChunk } from '../copilot/reveal';
 import { useKeyConfig } from '../copilot/useKeyConfig';
 import {
   useConversation,
@@ -101,8 +102,8 @@ const ACCEPTED_IMAGE_TYPES = ['image/png', 'image/jpeg', 'image/webp', 'image/gi
 const MAX_IMAGE_ATTACHMENTS = 2;
 const MAX_IMAGE_BYTES = 2 * 1024 * 1024;
 const PROMPT_IMAGE_MAX_BYTES = 64 * 1024;
-const REVEAL_INTERVAL_MS = 24;
-const REVEAL_CHUNK_SIZE = 36;
+const COPILOT_PROGRESS_STEP_COUNT = 4;
+const COPILOT_PROGRESS_INTERVAL_MS = 2200;
 
 /**
  * Right-side slide-over Copilot panel. ~420px wide, full window height.
@@ -141,6 +142,7 @@ export function CopilotDrawer({
   const [input, setInput] = useState('');
   const [pendingImages, setPendingImages] = useState<PendingImageAttachment[]>([]);
   const [streaming, setStreaming] = useState(false);
+  const [streamProgressIndex, setStreamProgressIndex] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [cliAvailable, setCliAvailable] = useState<boolean | null>(null);
   const [suggestionsDismissed, setSuggestionsDismissed] = useState(false);
@@ -149,6 +151,7 @@ export function CopilotDrawer({
   const stopRef = useRef<(() => void) | null>(null);
   const revealQueueRef = useRef('');
   const revealTimerRef = useRef<number | null>(null);
+  const progressTimerRef = useRef<number | null>(null);
   const streamDoneRef = useRef(false);
   const listEndRef = useRef<HTMLDivElement | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
@@ -191,6 +194,7 @@ export function CopilotDrawer({
     () => () => {
       stopRef.current?.();
       clearRevealTimer();
+      clearProgressTimer();
       revealQueueRef.current = '';
     },
     [],
@@ -285,11 +289,26 @@ export function CopilotDrawer({
     revealTimerRef.current = null;
   }
 
+  function clearProgressTimer() {
+    if (progressTimerRef.current === null) return;
+    window.clearInterval(progressTimerRef.current);
+    progressTimerRef.current = null;
+  }
+
+  function startProgressTimer() {
+    clearProgressTimer();
+    setStreamProgressIndex(0);
+    progressTimerRef.current = window.setInterval(() => {
+      setStreamProgressIndex((value) => Math.min(value + 1, COPILOT_PROGRESS_STEP_COUNT - 1));
+    }, COPILOT_PROGRESS_INTERVAL_MS);
+  }
+
   function revealNextChunk() {
     clearRevealTimer();
     const chunk = takeRevealChunk(revealQueueRef.current);
     if (!chunk) {
       if (streamDoneRef.current) {
+        clearProgressTimer();
         setStreaming(false);
         stopRef.current = null;
       }
@@ -398,6 +417,7 @@ export function CopilotDrawer({
     clearRevealTimer();
     revealQueueRef.current = '';
     streamDoneRef.current = false;
+    startProgressTimer();
     setStreaming(true);
     const stop = copilotApi.streamChat(
       {
@@ -415,6 +435,7 @@ export function CopilotDrawer({
         },
         onError: (message) => {
           flushAssistantReveal();
+          clearProgressTimer();
           setError(message);
           setStreaming(false);
           stopRef.current = null;
@@ -533,6 +554,7 @@ export function CopilotDrawer({
           attachedRef={attachedRef}
           messages={conv.messages}
           streaming={streaming}
+          streamProgressIndex={streamProgressIndex}
           error={error}
           input={input}
           pendingImages={pendingImages}
@@ -566,21 +588,6 @@ export function CopilotDrawer({
       )}
     </aside>
   );
-}
-
-function takeRevealChunk(text: string): string {
-  if (text.length <= REVEAL_CHUNK_SIZE) return text;
-  const windowText = text.slice(0, REVEAL_CHUNK_SIZE * 2);
-  const boundary = Math.max(
-    windowText.lastIndexOf('\n'),
-    windowText.lastIndexOf('。'),
-    windowText.lastIndexOf('，'),
-    windowText.lastIndexOf('. '),
-    windowText.lastIndexOf(', '),
-    windowText.lastIndexOf(' '),
-  );
-  if (boundary >= Math.floor(REVEAL_CHUNK_SIZE * 0.6)) return text.slice(0, boundary + 1);
-  return text.slice(0, REVEAL_CHUNK_SIZE);
 }
 
 function attachedRefKey(ref: AttachedRef): string {
@@ -1109,6 +1116,7 @@ function ChatPane({
   attachedRef,
   messages,
   streaming,
+  streamProgressIndex,
   error,
   input,
   pendingImages,
@@ -1140,6 +1148,7 @@ function ChatPane({
   attachedRef: AttachedRef | null;
   messages: ConversationMessage[];
   streaming: boolean;
+  streamProgressIndex: number;
   error: string | null;
   input: string;
   pendingImages: PendingImageAttachment[];
@@ -1263,6 +1272,7 @@ function ChatPane({
                 key={m.id}
                 message={m}
                 streaming={streaming && index === messages.length - 1}
+                progressIndex={streamProgressIndex}
                 allowProjectDrafts={allowProjectDrafts}
                 lang={lang}
                 displayName={displayName}
@@ -1707,6 +1717,7 @@ function MessageImageGrid({ images }: { images: ConversationImageAttachment[] })
 function MessageBubble({
   message,
   streaming,
+  progressIndex,
   allowProjectDrafts,
   lang,
   displayName,
@@ -1715,6 +1726,7 @@ function MessageBubble({
 }: {
   message: ConversationMessage;
   streaming: boolean;
+  progressIndex: number;
   allowProjectDrafts: boolean;
   lang: Lang;
   displayName: string;
@@ -1742,16 +1754,16 @@ function MessageBubble({
   const visibleProjectDrafts = allowProjectDrafts ? projectDrafts : [];
 
   return (
-    <li className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
+    <li className={`flex min-w-0 ${isUser ? 'justify-end' : 'justify-start'}`}>
       <div
-        className={`${isUser ? 'max-w-[88%]' : 'max-w-[96%]'} rounded-2xl px-3 py-2 text-[13px] leading-relaxed ${
+        className={`${isUser ? 'max-w-[88%]' : 'min-w-0 max-w-[96%] overflow-hidden'} rounded-2xl px-3 py-2 text-[13px] leading-relaxed ${
           isUser
             ? 'bg-gray-900 text-white'
             : 'border border-gray-100 bg-gray-50 text-gray-900'
         }`}
       >
         {isEmptyAssistant && streaming ? (
-          <ThinkingIndicator label={t('library.copilot.thinking')} />
+          <CopilotStreamingProgress progressIndex={progressIndex} />
         ) : isUser ? (
           <div className="space-y-2">
             <span style={{ whiteSpace: 'pre-wrap' }}>{message.content}</span>
@@ -1761,7 +1773,9 @@ function MessageBubble({
           </div>
         ) : (
           <>
-            {contentForRender && <CopilotMarkdown content={contentForRender} />}
+            {contentForRender && (
+              streaming ? <CopilotStreamingText content={contentForRender} /> : <CopilotMarkdown content={contentForRender} />
+            )}
             <CopilotCaseReferenceBoard refs={caseRefs} onNavigateToCanvas={onNavigateToCanvas} />
             <CopilotCanvasReferenceBoard
               refs={canvasRefs}
@@ -1787,6 +1801,27 @@ function MessageBubble({
   );
 }
 
+function CopilotStreamingProgress({ progressIndex }: { progressIndex: number }) {
+  const { t } = useTranslation();
+  const activeIndex = Math.max(0, Math.min(progressIndex, COPILOT_PROGRESS_STEP_COUNT - 1));
+  return (
+    <div className="min-w-0 space-y-2">
+      {Array.from({ length: activeIndex + 1 }, (_, index) => (
+        <div
+          key={index}
+          className={`rounded-xl border px-3 py-2 ${
+            index === activeIndex
+              ? 'border-emerald-100 bg-white text-gray-700 shadow-sm'
+              : 'border-gray-100 bg-white/70 text-gray-500'
+          }`}
+        >
+          <ThinkingIndicator label={t(`library.copilot.progress.${index}`)} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function ThinkingIndicator({ label }: { label: string }) {
   return (
     <span className="inline-flex items-center gap-2 text-gray-500">
@@ -1800,11 +1835,24 @@ function ThinkingIndicator({ label }: { label: string }) {
   );
 }
 
+function CopilotStreamingText({ content }: { content: string }) {
+  const blocks = splitStreamingBlocks(content);
+  return (
+    <div className="min-w-0 space-y-2 break-words text-[13px] leading-relaxed text-gray-900">
+      {blocks.map((block, index) => (
+        <p key={`${index}:${block.slice(0, 16)}`} className="whitespace-pre-wrap rounded-xl bg-white/70 px-2.5 py-2">
+          {block}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 function CopilotMarkdown({ content }: { content: string }) {
   const openLightbox = useLightbox((s) => s.open);
 
   return (
-    <div className="max-w-none text-[13px] leading-relaxed text-gray-900">
+    <div className="min-w-0 max-w-none overflow-hidden break-words text-[13px] leading-relaxed text-gray-900">
       <ReactMarkdown
         remarkPlugins={COPILOT_REMARK_PLUGINS}
         components={{
@@ -1823,7 +1871,7 @@ function CopilotMarkdown({ content }: { content: string }) {
               {children}
             </h5>
           ),
-          p: ({ children }) => <p className="my-1.5 leading-relaxed">{children}</p>,
+          p: ({ children }) => <p className="my-1.5 break-words leading-relaxed">{children}</p>,
           a: ({ href, children }) => (
             <a
               href={href}
@@ -1844,7 +1892,7 @@ function CopilotMarkdown({ content }: { content: string }) {
           ),
           hr: () => <hr className="my-4 border-gray-200" />,
           table: ({ children }) => (
-            <div className="my-3 max-w-full overflow-x-auto rounded-xl border border-gray-200 bg-white shadow-sm">
+            <div className="my-3 w-full max-w-full overflow-x-auto rounded-xl border border-gray-200 bg-white shadow-sm">
               <table className="min-w-full border-collapse text-left text-[12px] leading-relaxed">
                 {children}
               </table>
@@ -1859,7 +1907,7 @@ function CopilotMarkdown({ content }: { content: string }) {
             </th>
           ),
           td: ({ children }) => (
-            <td className="min-w-[120px] border-r border-gray-100 px-3 py-2 text-gray-700 last:border-r-0">
+            <td className="min-w-[120px] break-words border-r border-gray-100 px-3 py-2 text-gray-700 last:border-r-0">
               {children}
             </td>
           ),

@@ -60,8 +60,8 @@ export const copilotApi = {
 
   /**
    * Probe whether the candidate API key works. Server writes Kimi's
-   * config.toml with the key, spawns one tiny `kimi -p` turn, returns
-   * `{ok}` based on the first frame. The 测试连接 button consumes this.
+   * config.toml with the key, spawns one tiny `kimi --print -p` turn,
+   * returns `{ok}` based on the first frame. The 测试连接 button consumes this.
    */
   testKey(apiKey: string): Promise<{ ok: boolean; message?: string }> {
     return fetchJson<{ ok: boolean; message?: string }>(

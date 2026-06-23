@@ -621,6 +621,12 @@
       "optionPickerClose": "关闭选择器",
       "stop": "停止",
       "thinking": "思考中…",
+      "progress": {
+        "0": "正在连接 Kimi Code…",
+        "1": "正在分析你的问题和当前资料…",
+        "2": "正在组织回答结构…",
+        "3": "内容生成中，完成后会按段落显示…"
+      },
       "errorPrefix": "出错了",
       "noKeyConfigured": "尚未配置 Kimi Code Key,在设置中粘贴一个。",
       "clearChat": "清空对话",

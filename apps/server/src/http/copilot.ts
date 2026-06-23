@@ -38,9 +38,9 @@ type CopilotImageAttachment = {
  *   plaintext in the request body. The server uses it for the request
  *   lifetime only — written to `~/.kimi-code/config.toml` just before
  *   spawning `kimi`, never persisted to PinGarden's own dataDir.
- * - **kimi-subprocess transport.** Bundled `kimi -p ... --output-format
- *   stream-json` is the only way to legally reach the kimi-for-coding
- *   model (it's gated to registered coding agents). Output is parsed
+ * - **kimi-subprocess transport.** Bundled `kimi --print -p ...
+ *   --output-format stream-json` is the only way to legally reach the
+ *   kimi-for-coding model (it's gated to registered coding agents). Output is parsed
  *   line-by-line in `kimiCliAdapter.ts`.
  * - **SSE wire shape:** uniform `data: {"delta": "..."}` frames followed
  *   by a final `data: {"done": true}` frame. Errors emit a single
@@ -855,7 +855,7 @@ function buildPatternMarkdown(
 function buildSystemPrompt(attachedContext?: string): string {
   const base = [
     'You are PinGarden Copilot, a strategy-analysis assistant for business-model canvases, projects, cases, stories, and the strategy library.',
-    'Answer in concise markdown — no tool use, no file ops, no web fetches.',
+    'Answer in concise markdown — no tool use, no file ops, no web fetches. Use short sections separated by blank lines; prefer headings and bullets, and avoid wide markdown tables unless the user explicitly asks for a table.',
     'Keep responses grounded in the supplied PinGarden context; cite specific stories, canvases, or canvas blocks when relevant.',
     'Do not infer library availability from the subprocess working directory; use the supplied PinGarden context as the source of truth.',
     'When recommending a next step, prefer concrete PinGarden actions such as reading a case, opening a canvas, drafting a story, choosing a paired canvas, or testing an assumption.',

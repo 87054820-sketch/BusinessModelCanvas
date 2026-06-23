@@ -628,6 +628,12 @@
       "optionPickerClose": "Close picker",
       "stop": "Stop",
       "thinking": "Thinking…",
+      "progress": {
+        "0": "Connecting to Kimi Code…",
+        "1": "Analyzing your question and context…",
+        "2": "Structuring the response…",
+        "3": "Generating content; it will appear by paragraphs when ready…"
+      },
       "errorPrefix": "Error",
       "noKeyConfigured": "No Kimi Code key configured. Open settings to paste one.",
       "clearChat": "Clear chat",
