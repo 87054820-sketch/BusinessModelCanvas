@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880">
+  <rect width="1280" height="880" fill="#FAFAF7"/>
+  <g fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="14">
+    <text x="80" y="55">Support Activities</text>
+    <text x="80" y="455">Primary Activities</text>
+  </g>
+  <g fill="none" stroke="#1F2937" stroke-width="1.4">
+    <rect x="80" y="85" width="1000" height="85" rx="10"/>
+    <rect x="80" y="175" width="1000" height="85" rx="10"/>
+    <rect x="80" y="265" width="1000" height="85" rx="10"/>
+    <rect x="80" y="355" width="1000" height="85" rx="10"/>
+    <rect x="80" y="475" width="200" height="300" rx="10"/>
+    <rect x="285" y="475" width="200" height="300" rx="10"/>
+    <rect x="490" y="475" width="200" height="300" rx="10"/>
+    <rect x="695" y="475" width="200" height="300" rx="10"/>
+    <rect x="900" y="475" width="200" height="300" rx="10"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#1F2937" stroke-width="1.4">
+    <path d="M1120 85 L1220 85 L1240 430 L1220 775 L1120 775 Z"/>
+  </g>
+  <g fill="none" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="6 8">
+    <line x1="80" y1="455" x2="1100" y2="455"/>
+  </g>
+  <g fill="none" stroke="#4A7FC1" stroke-width="2" stroke-linecap="round">
+    <path d="M1080 625 L1115 625"/>
+    <path d="M1105 615 L1115 625 L1105 635"/>
+  </g>
+  <g fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="12" font-style="italic">
+    <text x="80" y="800">Inbound → Operations → Outbound → Marketing &amp; Sales → Service  →  Margin</text>
+  </g>
+</svg>

@@ -43,6 +43,10 @@ A complete journey reads in one direction (start → end of journey) and you can
 - ❌ **Ignoring post-purchase.** Customer journeys often end at purchase in low-quality maps. Onboarding, daily use, support, advocacy are where retention lives.
 - ❌ **Treating it as static.** Customer journeys are moving — re-examine after every release / experiment.
 
+## Bain value lens handoff
+
+Customer Journey is the timeline check for the Bain value lens. Values tagged in VPC as `[functional]`, `[emotional]`, or `[social]` must be perceived by the customer at some stage; if a value element has no touchpoint, it may be marketing copy. Satisfaction dips usually indicate value breakage and should feed back into VPC `pains` or `pain-relievers`.
+
 ## Tone
 
 Each sticky should sit at a specific stage and read in the persona's voice or as an observable event. "On day 3, can't find the export button" beats "Hard to use."
@@ -77,7 +81,7 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 ### `satisfaction` — Customer Satisfaction
 
-**Prompt** — How does the customer feel at this moment — happy, neutral, or frustrated?
+**Prompt** — How does the customer feel at this moment — happy, neutral, or frustrated? This also tests whether Bain emotional/social value is real.
 
 **Example** — Frustrated — pricing page is opaque, has to email sales just to get a number
 
@@ -92,7 +96,7 @@ _Not customised — use the six-colour sticky default palette. Colours carry no 
 This canvas typically pairs with the following — once done, suggest the user move to one of these next:
 
 - `empathy-map` — If the persona feels generic, build the Empathy Map first to anchor the journey to a specific person.
-- `value-proposition-canvas` — Friction at any journey stage is a Pain — feed it back into VPC and design a Pain Reliever for it.
+- `value-proposition-canvas` — Friction at any journey stage is a Pain; moments of delight are Gains. Feed both back into VPC and use Bain tags only where the value is actually perceived.
 - `jobs-to-be-done` — The journey's biggest dip usually points at an unmet job — turn that into a JTBD canvas.
 
 ---

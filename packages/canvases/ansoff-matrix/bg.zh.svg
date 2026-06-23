@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880">
+  <rect width="1280" height="880" fill="#FAFAF7"/>
+  <g fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="14">
+    <text x="80" y="52">现有产品</text>
+    <text x="1220" y="52" text-anchor="end">新产品</text>
+    <text x="50" y="92" transform="rotate(-90 50 92)">新市场</text>
+    <text x="50" y="670" transform="rotate(-90 50 670)">现有市场</text>
+  </g>
+  <g fill="none" stroke="#1F2937" stroke-width="1.4">
+    <rect x="80" y="80" width="560" height="290" rx="12"/>
+    <rect x="660" y="80" width="560" height="290" rx="12"/>
+    <rect x="80" y="380" width="560" height="290" rx="12"/>
+    <rect x="660" y="380" width="560" height="290" rx="12"/>
+    <rect x="80" y="700" width="1140" height="130" rx="12"/>
+  </g>
+  <g fill="none" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="6 8">
+    <line x1="650" y1="80" x2="650" y2="670"/>
+    <line x1="80" y1="375" x2="1220" y2="375"/>
+  </g>
+  <g fill="none" stroke="#C5736A" stroke-width="2" stroke-linecap="round">
+    <path d="M620 410 L700 330"/>
+    <path d="M690 332 L700 330 L702 340"/>
+  </g>
+  <g fill="#C5736A" font-family="Inter, Arial, sans-serif" font-size="11" font-style="italic">
+    <text x="555" y="425">风险 ↗</text>
+  </g>
+</svg>

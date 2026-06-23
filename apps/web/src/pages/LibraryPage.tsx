@@ -25,18 +25,22 @@ import { ResourceList } from '../components/ResourceList';
 import { ResourceDetailModal } from '../components/ResourceDetailModal';
 import { CanvasMethodList } from '../components/CanvasMethodList';
 import { Pagination } from '../components/Pagination';
+import { CopilotDrawer } from '../components/CopilotDrawer';
+import { CopilotErrorBoundary } from '../components/CopilotErrorBoundary';
+import type { AttachedRef } from '../copilot/useConversation';
 
 type LibraryTab = 'cases' | 'canvases' | 'patterns' | 'experiments' | 'strategyFrameworks' | 'resources';
 
 /**
- * Items per page on both the Cases and Patterns tabs. Picked to match
- * the 3-col grid (3 rows × 3 cols = 9 cards) so a full page lands as
- * a clean rectangle without orphan rows. Cases tab passes the threshold
- * today (10 cases → 2 pages); Patterns tab is below it (3 patterns →
- * pager renders nothing) but the wiring is symmetric so the pager
- * activates automatically when patterns grow > 9.
+ * Default library page size: 3-column grid × 3 rows.
  */
 const PAGE_SIZE = 9;
+
+/**
+ * Visual-method and resource cards are intentionally taller, so keep
+ * those tabs to 3-column grid × 2 rows per page.
+ */
+const SHOWCASE_PAGE_SIZE = 6;
 
 /**
  * Case-library browse page. Lives at `/library`. Hosts ONLY curated
@@ -87,6 +91,11 @@ export function LibraryPage() {
   const [experimentsPage, setExperimentsPage] = useState(1);
   const [strategyFrameworksPage, setStrategyFrameworksPage] = useState(1);
   const [resourcesPage, setResourcesPage] = useState(1);
+  // Copilot state — drawer open flag + the currently-attached case/pattern.
+  // Selecting a card in a tab updates `attachedRef` so the drawer's
+  // context chip swaps automatically; clicking the chip's × clears it.
+  const [copilotOpen, setCopilotOpen] = useState(false);
+  const [attachedRef, setAttachedRef] = useState<AttachedRef | null>(null);
   // Anchor for "scroll the list region into view" on page change.
   // Sits above the tab strip so the user sees the new page's first row
   // without scrolling up after clicking Next.
@@ -203,6 +212,32 @@ export function LibraryPage() {
     setSelectedPattern(p);
   }
 
+  // ── Copilot auto-attach helpers ────────────────────────────────────
+  // When the drawer is open and the user clicks a card, auto-set the
+  // attached ref so the chip swaps to the just-clicked entity. When the
+  // drawer is closed, do nothing — preserves the "open the preview
+  // modal" affordance for the common browse-without-AI case.
+  function handleCaseCardClick(entry: CaseLibraryEntry) {
+    if (copilotOpen) {
+      setAttachedRef({
+        type: 'case',
+        slug: entry.slug,
+        companyName: entry.companyName[lang] ?? entry.companyName.en,
+      });
+    }
+    setPreviewEntry(entry);
+  }
+  function handlePatternSelect(p: BusinessModelPattern) {
+    if (copilotOpen) {
+      setAttachedRef({
+        type: 'pattern',
+        slug: p.slug,
+        name: p.name[lang] ?? p.name.en,
+      });
+    }
+    setSelectedPattern(p);
+  }
+
   /** Patterns tab → Cases tab: open the case's preview modal. */
   function handleExampleClick(slug: string) {
     const entry = cases?.find((c) => c.slug === slug);
@@ -265,13 +300,27 @@ export function LibraryPage() {
           </h1>
           <p className="mt-1 text-sm text-gray-500">{t('library.pageSubtitle')}</p>
         </div>
-        <button
-          type="button"
-          onClick={() => navigate('/p/new')}
-          className="shrink-0 rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50"
-        >
-          + {t('home.createBlankInstead')}
-        </button>
+        <div className="flex shrink-0 items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setCopilotOpen((v) => !v)}
+            aria-pressed={copilotOpen}
+            className={`rounded-xl border px-4 py-2 text-sm font-semibold transition ${
+              copilotOpen
+                ? 'border-gray-900 bg-gray-900 text-white hover:bg-black'
+                : 'border-gray-200 bg-white text-gray-900 hover:border-gray-300 hover:bg-gray-50'
+            }`}
+          >
+            💬 {t('library.copilot.openButton')}
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate('/p/new')}
+            className="rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50"
+          >
+            + {t('home.createBlankInstead')}
+          </button>
+        </div>
       </header>
 
       {/* Tab strip — default Cases. State is in-memory (no URL sync yet). */}
@@ -337,7 +386,7 @@ export function LibraryPage() {
                       key={c.slug}
                       entry={c}
                       lang={lang}
-                      onClick={(entry) => setPreviewEntry(entry)}
+                      onClick={handleCaseCardClick}
                       patterns={patterns ?? undefined}
                       onPatternClick={handlePatternChipClick}
                       strategyFrameworks={strategyFrameworks ?? undefined}
@@ -366,15 +415,15 @@ export function LibraryPage() {
             <>
               <CanvasMethodList
                 defs={canvasDefs.slice(
-                  (canvasDefsPage - 1) * PAGE_SIZE,
-                  canvasDefsPage * PAGE_SIZE,
+                  (canvasDefsPage - 1) * SHOWCASE_PAGE_SIZE,
+                  canvasDefsPage * SHOWCASE_PAGE_SIZE,
                 )}
                 lang={lang}
                 onStart={(defId) => navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`)}
               />
               <Pagination
                 total={canvasDefs.length}
-                pageSize={PAGE_SIZE}
+                pageSize={SHOWCASE_PAGE_SIZE}
                 currentPage={canvasDefsPage}
                 onPageChange={handleCanvasDefsPageChange}
                 className="mt-5"
@@ -397,7 +446,7 @@ export function LibraryPage() {
                   patternsPage * PAGE_SIZE,
                 )}
                 lang={lang}
-                onSelect={setSelectedPattern}
+                onSelect={handlePatternSelect}
               />
               <Pagination
                 total={patterns.length}
@@ -474,15 +523,15 @@ export function LibraryPage() {
             <>
               <ResourceList
                 resources={resources.slice(
-                  (resourcesPage - 1) * PAGE_SIZE,
-                  resourcesPage * PAGE_SIZE,
+                  (resourcesPage - 1) * SHOWCASE_PAGE_SIZE,
+                  resourcesPage * SHOWCASE_PAGE_SIZE,
                 )}
                 lang={lang}
                 onSelect={setSelectedResource}
               />
               <Pagination
                 total={resources.length}
-                pageSize={PAGE_SIZE}
+                pageSize={SHOWCASE_PAGE_SIZE}
                 currentPage={resourcesPage}
                 onPageChange={handleResourcesPageChange}
                 className="mt-5"
@@ -536,6 +585,19 @@ export function LibraryPage() {
         onClose={() => setSelectedResource(null)}
         onCaseClick={handleResourceCaseClick}
       />
+
+      {/* Library Copilot — right slide-over chat panel.
+          Mounted once at the page root; visibility flag-driven.
+          Wrapped in an error boundary so a Copilot bug never blanks
+          out the entire Library page. */}
+      <CopilotErrorBoundary label="Copilot crashed — details below">
+        <CopilotDrawer
+          open={copilotOpen}
+          onClose={() => setCopilotOpen(false)}
+          attachedRef={attachedRef}
+          lang={lang}
+        />
+      </CopilotErrorBoundary>
     </main>
   );
 }

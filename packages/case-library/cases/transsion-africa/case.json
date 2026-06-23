@@ -28,8 +28,10 @@
   "thumbnailDefId": "blue-ocean-strategy-canvas",
   "projectId": "8e48fe8c-2e8e-4517-b05d-d70068dccf07",
   "canvasCount": 4,
-  "storyCount": 2,
+  "storyCount": 3,
   "appliesStrategyFrameworks": [
-    "blue-ocean-strategy"
+    "blue-ocean-strategy",
+    "pestel-analysis",
+    "disruptive-innovation"
   ]
 }

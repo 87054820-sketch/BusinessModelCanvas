@@ -46,6 +46,10 @@ source: packages/canvases/empathy-map/
 - ❌ **当成营销 persona 用。** 共情图是为运营提供同理心,不是给市场部做 deck。不要写人口统计陈词滥调("爱抹茶"),不要写品牌刻板印象。
 - ❌ **当作静态文档。** 有新证据就更新地图。半年没动的共情图就是民间传说。
 
+## Bain 价值透镜衔接
+
+共情图是 Bain 价值透镜的证据入口。只有当 `see` / `say-and-do` / `hear` / `think-and-feel` 中有客户证据时，才把 `gain` 或 `pain` 映射到情感、社会或高阶价值元素。不要先选 Bain 元素再倒推客户感受；那会把团队愿望投射到客户身上。
+
 ## 语气
 
 `say-and-do` 和 `hear` 要像原始访谈片段。`think-and-feel` / `pain` / `gain` 要用 persona 的语气,不要你的。
@@ -104,7 +108,7 @@ source: packages/canvases/empathy-map/
 
 ### `gain` — 收获
 
-**Prompt** — 渴望、需求、成功的定义。
+**Prompt** — 渴望、需求、成功的定义；证据充分时可映射到 Bain 价值元素。
 
 **Example** — 上线一个从零到一的新功能,且有可量化的采用数据
 
@@ -118,9 +122,9 @@ _未自定义,使用六色 sticky 默认调色板。颜色无固定语义,作者
 
 这张画布常和这些一起用,做完后引导用户接下去做:
 
-- `value-proposition-canvas` — 把这个 persona 的痛点和收益搬进 VPC 的客户侧。
+- `value-proposition-canvas` — 把有证据的痛点和收益搬进 VPC 客户侧；Bain 标签应在证据之后使用，而不是预设。
 - `jobs-to-be-done` — 把 persona 的核心问题锐化成 JTBD 的情境 → 动机 → 结果故事。
-- `customer-journey` — 把这个 persona 的一天沿阶段走一遍,找出摩擦真正发生在哪。
+- `customer-journey` — 把这个 persona 的一天沿阶段走一遍，找出摩擦和被感知的价值真正发生在哪。
 
 ---
 Source: `packages/canvases/empathy-map/` — regenerate with `pingarden skill build`.

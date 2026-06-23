@@ -27,8 +27,9 @@
   "thumbnailDefId": "blue-ocean-strategy-canvas",
   "projectId": "9143f505-921c-4b89-b186-c81553dc7f1b",
   "canvasCount": 4,
-  "storyCount": 2,
+  "storyCount": 3,
   "appliesStrategyFrameworks": [
-    "blue-ocean-strategy"
+    "blue-ocean-strategy",
+    "disruptive-innovation"
   ]
 }

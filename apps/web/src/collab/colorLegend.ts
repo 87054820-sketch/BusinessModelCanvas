@@ -25,6 +25,13 @@ export interface ColorLegendEntry {
   description?: string;
 }
 
+export interface VisibleColorLegendEntry {
+  hex: string;
+  label: string;
+  description?: string;
+  source: 'live' | 'default';
+}
+
 /** Hex (from STICKY_PALETTE) → entry. Hex strings only — never raw colour names. */
 export type ColorLegendMap = Record<string, ColorLegendEntry>;
 
@@ -170,8 +177,14 @@ export function removeColorLegendEntry(doc: Y.Doc, hex: string): void {
  * label. Used by the story-embedded canvas to decide whether to mount
  * the StickyLegendPalette overlay at all.
  */
-export function hasColorLegend(doc: Y.Doc): boolean {
+export function hasColorLegend(
+  doc: Y.Doc,
+  lang?: Lang,
+  defaults?: CanvasDefaultColorLegendEntry[],
+): boolean {
   const root = getColorLegendRoot(doc);
+  const live = readEntries(root);
+  if (lang && resolveVisibleLegendEntries(live, lang, defaults).length > 0) return true;
   for (const hex of STICKY_PALETTE) {
     const label = root.get(`${hex}.label`);
     if (typeof label === 'string' && label.trim().length > 0) return true;
@@ -179,32 +192,76 @@ export function hasColorLegend(doc: Y.Doc): boolean {
   return false;
 }
 
+function resolveDefaultLegendMap(
+  defaults: CanvasDefaultColorLegendEntry[] | undefined,
+  lang: Lang,
+): ColorLegendMap {
+  if (!defaults?.length) return {};
+  const fallbackLang: Lang = lang === 'zh' ? 'en' : 'zh';
+  const out: ColorLegendMap = {};
+  for (const entry of defaults) {
+    if (!PALETTE_SET.has(entry.hex)) continue;
+    const label = (entry.label[lang] || entry.label[fallbackLang] || '').trim();
+    if (!label) continue;
+    const description = (
+      entry.description?.[lang] || entry.description?.[fallbackLang] || ''
+    ).trim();
+    out[entry.hex] = {
+      label,
+      ...(description ? { description } : {}),
+    };
+  }
+  return out;
+}
+
 /**
- * Pure resolver — given the live legend map, return only entries that
- * SHOULD render as chips. Mirrors the contract documented on
- * `StickyLegendPalette`: a row counts as "renderable" iff it has a
- * non-empty `label`. Order follows STICKY_PALETTE so the chip strip
- * has a stable left-to-right reading direction.
- *
- * `lang` is currently unused (entries are language-agnostic — labels
- * are written by the user in whatever they pick), but the parameter
- * is kept for symmetry with `resolveLabel(factor, lang)` so future
- * bilingual entries don't require touching every call site.
+ * Pure resolver — given the live legend map plus optional manifest defaults,
+ * return only entries that SHOULD render as chips. Live Y.Doc labels win;
+ * manifest defaults fill only missing colours. A live description without a
+ * live label is treated as an intentional incomplete row and is not rendered.
  */
-export function visibleLegendEntries(
+export function resolveVisibleLegendEntries(
   legend: ColorLegendMap,
-  _lang: Lang,
-): Array<{ hex: string; label: string; description?: string }> {
-  void _lang;
-  const out: Array<{ hex: string; label: string; description?: string }> = [];
+  lang: Lang,
+  defaults?: CanvasDefaultColorLegendEntry[],
+): VisibleColorLegendEntry[] {
+  const defaultLegend = resolveDefaultLegendMap(defaults, lang);
+  const out: VisibleColorLegendEntry[] = [];
   for (const hex of STICKY_PALETTE) {
-    const e = legend[hex];
-    if (!e || !e.label.trim()) continue;
+    const live = legend[hex];
+    const liveLabel = live?.label.trim() ?? '';
+    if (liveLabel) {
+      out.push({
+        hex,
+        label: liveLabel,
+        ...(live?.description?.trim() ? { description: live.description.trim() } : {}),
+        source: 'live',
+      });
+      continue;
+    }
+    if (live?.description?.trim()) continue;
+    const fallback = defaultLegend[hex];
+    if (!fallback?.label.trim()) continue;
     out.push({
       hex,
-      label: e.label,
-      ...(e.description ? { description: e.description } : {}),
+      label: fallback.label,
+      ...(fallback.description ? { description: fallback.description } : {}),
+      source: 'default',
     });
   }
   return out;
+}
+
+export function visibleLegendEntries(
+  legend: ColorLegendMap,
+  lang: Lang,
+  defaults?: CanvasDefaultColorLegendEntry[],
+): Array<{ hex: string; label: string; description?: string }> {
+  return resolveVisibleLegendEntries(legend, lang, defaults).map(
+    ({ hex, label, description }) => ({
+      hex,
+      label,
+      ...(description ? { description } : {}),
+    }),
+  );
 }

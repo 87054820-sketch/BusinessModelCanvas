@@ -308,6 +308,15 @@
     },
     "platform-ecosystem-map": {
       "tagline": "看清平台各边、核心交互、网络效应、治理和变现"
+    },
+    "ansoff-matrix": {
+      "tagline": "市场渗透、市场开发、产品开发、多元化 —— 用 2×2 框定增长路径与风险"
+    },
+    "disruption-diagnosis": {
+      "tagline": "用 Christensen 三段严格判定:立足点 + 起步劣势 + 向上迁移"
+    },
+    "porters-value-chain": {
+      "tagline": "把公司拆成 5 个主要活动 + 4 个支持活动,看利润从哪一段挤出来"
     }
   },
   "myProjects": {
@@ -353,7 +362,7 @@
       "pattern": "模式",
       "comparison": "对比",
       "experiment": "实验",
-      "strategyFramework": "战略方法",
+      "strategyFramework": "战略框架",
       "resource": "资料"
     },
     "tabs": {
@@ -361,13 +370,13 @@
       "canvases": "分析画布",
       "patterns": "商业模式",
       "experiments": "实验设计",
-      "strategyFrameworks": "战略分析",
+      "strategyFrameworks": "战略框架",
       "resources": "资料",
       "description": "详细说明",
       "relatedCases": "相关案例"
     },
     "appliesPatterns": "适用模式",
-    "appliesStrategyFrameworks": "战略分析方法",
+    "appliesStrategyFrameworks": "战略框架",
     "examplesSection": "示例",
     "exampleCount_other": "{{count}} 个示例",
     "sourceCount_other": "{{count}} 处出处",
@@ -376,7 +385,7 @@
     "patternsEmpty": "本版本暂未附带商业模式分类。",
     "canvasMethodsEmpty": "本版本暂未附带分析画布。",
     "experimentsEmpty": "本版本暂未附带实验。",
-    "strategyFrameworksEmpty": "本版本暂未附带战略分析方法。",
+    "strategyFrameworksEmpty": "本版本暂未附带战略框架。",
     "resourcesEmpty": "本版本暂未附带资料。",
     "descriptionEmpty": "本模式暂未撰写说明。",
     "examplesEmpty": "本模式暂未关联示例案例。",
@@ -406,22 +415,19 @@
     "strategyFrameworks": {
       "intro": {
         "title": "用战略框架推演选择，而不是只描述现状",
-        "body": "战略分析是策略库的**视角层**：它帮助你看清竞争格局、外部环境、创新组合、未来情景、平台生态和客户价值。部分方法是主分析框架，部分是 Bain 这类辅助透镜；先理解框架角色，再打开关联案例，看企业如何形成取舍和行动。"
+        "body": "战略框架是策略库的**视角层**：它帮助你看清竞争格局、外部环境、组织能力、创新组合、未来情景和客户价值。每个框架都有一个分析对象——先理解它在分析什么，再打开关联案例，看企业如何形成取舍和行动。"
       }
     },
     "strategyFramework": {
-      "descriptionEmpty": "本战略方法暂未撰写说明。"
+      "descriptionEmpty": "本战略框架暂未撰写说明。"
     },
     "strategyFrameworkCategories": {
       "portfolio-growth": "组合与增长",
       "environment-competition": "环境与竞争",
       "organization-ecosystem": "组织与生态",
       "innovation-evidence": "创新与证据",
-      "customer-value-lens": "客户价值透镜"
-    },
-    "strategyFrameworkRoles": {
-      "primary-framework": "主分析框架",
-      "supporting-lens": "辅助工具"
+      "customer-value-lens": "客户价值透镜",
+      "foresight-scenarios": "未来与情景"
     },
     "resources": {
       "intro": {
@@ -501,6 +507,154 @@
       "previous": "上一页",
       "next": "下一页",
       "page": "第 {{current}} 页 / 共 {{total}} 页"
+    },
+    "copilot": {
+      "openButton": "PinGarden Copilot",
+      "drawerTitle": "PinGarden Copilot",
+      "emptyState": "选择一个建议操作，或直接提问 —— 可以研究案例、检查项目、推荐画布、优化 story 或寻找下一步实验。",
+      "emptyStateNoKey": "尚未配置 API Key,粘贴你的 Kimi Code Key 即可开始对话。",
+      "encryptionWarning": "未检测到系统钥匙串,密钥以明文形式存储在浏览器 localStorage。",
+      "encryptionEnabled": "密钥已通过系统钥匙串(safeStorage)加密保存。",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "sk-...",
+      "getKey": "获取 Kimi Code Key →",
+      "testConnection": "测试连接",
+      "testing": "测试中…",
+      "testOk": "连接成功",
+      "save": "保存",
+      "saved": "已保存",
+      "remove": "删除",
+      "removeConfirm": "确认删除已保存的 Kimi Code Key?",
+      "composerPlaceholder": "向 PinGarden Copilot 提问…",
+      "attachImage": "+ 图片",
+      "attachImageHint": "上传图片,也可以拖拽或粘贴截图",
+      "removeImageAttachment": "移除图片 {{name}}",
+      "imageOnlyPrompt": "请根据我发送的图片,帮我分析并生成一个适合 PinGarden 的项目草稿。",
+      "imageLimit": "最多只能附带 {{count}} 张图片。",
+      "imageTooLarge": "{{name}} 太大了,单张图片不能超过 {{size}}。",
+      "imageUnsupported": "{{name}} 的图片格式暂不支持。",
+      "modeHints": {
+        "imageReady": "已有图片",
+        "createProject": {
+          "hint": "可以先输入问题、想法、资料或链接；普通发送会继续聊天，点击「创建项目」会带着当前内容生成项目草稿。",
+          "placeholder": "输入问题、想法、资料或链接…",
+          "imageOnlyPrompt": "请根据我发送的图片创建一个 PinGarden 项目草稿。"
+        },
+        "libraryReference": {
+          "hint": "当前内容是只读参考。你可以先提问理解它，也可以复制/迁移成自己的项目起点。",
+          "placeholder": "输入想迁移的方向、问题或资料…",
+          "imageOnlyPrompt": "请结合这张图片和当前参考资料，帮我整理可迁移的启发。"
+        },
+        "projectWork": {
+          "hint": "当前基于这个项目工作。可以新增画布、补充 Story，或让 Copilot 分析下一步。",
+          "placeholder": "输入问题、资料、截图说明或下一步目标…",
+          "imageOnlyPrompt": "请结合这张图片和当前项目，建议可以新增的画布或 Story。"
+        }
+      },
+      "composerActions": {
+        "createProject": "创建项目",
+        "askLibrary": "问问资料",
+        "createFromReference": "基于它创建项目",
+        "copyProject": "复制项目",
+        "askReference": "问问这个项目",
+        "addCanvas": "新增画布",
+        "addStory": "新增 Story"
+      },
+      "composerPrompts": {
+        "createProject": "请根据我提供的图片、链接和说明创建一个 PinGarden 项目草稿；如果信息不够，请先问我最关键的问题。",
+        "askLibrary": "请基于策略库，先帮我梳理有哪些案例、画布或方法值得参考，并问我一个最关键的问题。",
+        "createFromReference": "请基于当前参考内容，帮我整理成一个可创建的新项目草稿；如果信息不够，先问我最关键的问题。",
+        "copyProject": "请基于当前只读参考项目，帮我整理成一个可复制到我的工作区的新项目草稿，并保留最重要的画布结构和洞察。",
+        "askReference": "请解释当前参考内容最值得借鉴的地方，并说明我可以如何迁移到自己的项目。",
+        "addCanvas": "请基于当前项目和我提供的内容，判断下一张最值得新增的画布，说明原因，并给出画布草稿思路。",
+        "addStory": "请基于当前项目和我提供的内容，新增一篇 Story 草稿，用来串联关键画布、洞察、假设和下一步行动。"
+      },
+      "projectDraft": {
+        "title": "项目草稿",
+        "subtitle": "确认后会创建项目、画布和初始便签。",
+        "autoFilledHint": "我会尽量从图片里自动解析画布内容；你只需要确认项目名称和项目描述。看不清的画布内容可以创建后继续调整。",
+        "projectName": "项目名称",
+        "projectNamePlaceholder": "例如：微信私域运营项目",
+        "projectDescription": "项目描述",
+        "projectDescriptionPlaceholder": "用一句话说明目标客户、核心价值和业务目标",
+        "needNameAndDescription": "请先补充项目名称和项目描述。",
+        "needName": "请先补充项目名称。",
+        "needDescription": "请先补充项目描述。",
+        "canvasCount": "画布",
+        "stickyCount": "便签",
+        "create": "确认创建项目",
+        "creating": "创建中…",
+        "created": "已创建"
+      },
+      "canvasRefs": {
+        "title": "相关画布看板",
+        "subtitle": "我已把回答中的画布引用转成可打开的看板；点击预览，可在预览中查看详情。",
+        "preview": "预览",
+        "detail": "查看详情",
+        "popoverLabel": "画布预览",
+        "close": "关闭画布预览",
+        "loading": "正在加载画布…"
+      },
+      "caseRefs": {
+        "title": "推荐案例入口",
+        "subtitle": "我已把回答中的案例 slug 转成可打开入口；可直接查看案例。",
+        "canvasCount": "{{count}} 张画布",
+        "detail": "查看案例"
+      },
+      "referenceHint": {
+        "caseNotFound": "未找到可打开的案例：{{items}}",
+        "canvasNotFound": "未找到可直接打开的画布：{{items}}"
+      },
+      "send": "发送",
+      "startAction": "开始",
+      "stop": "停止",
+      "thinking": "思考中…",
+      "errorPrefix": "出错了",
+      "noKeyConfigured": "尚未配置 Kimi Code Key,在设置中粘贴一个。",
+      "clearChat": "清空对话",
+      "clearChatConfirm": "确认清空整段对话?",
+      "attached": "已附带",
+      "contextSource": "基于当前项目",
+      "contextProjectSource": "基于当前项目",
+      "contextReferenceSource": "基于当前资料",
+      "contextCreateSource": "创建入口",
+      "strategyLibraryContext": "策略库",
+      "attachClear": "移除附带上下文",
+      "suggestions": {
+        "title": "建议操作",
+        "expand": "展开",
+        "collapse": "收起"
+      },
+      "contextLoading": "加载上下文中…",
+      "contextFailed": "上下文加载失败,将不带上下文继续。",
+      "settingsButton": "设置",
+      "cliMissing": "本机未安装 Kimi CLI。",
+      "cliInstallHint": "运行 `npm install -g @moonshot-ai/kimi-code` 后重新打开应用。",
+      "kimi": {
+        "title": "连接 Kimi Code",
+        "intro": "粘贴你的 Kimi Code API Key。我们会在本机加密保存,并自动写入 Kimi CLI 的配置 —— 不需要打开终端。",
+        "console": "前往 kimi.com/code/console 获取 Key"
+      },
+      "tabs": {
+        "chat": "💬 对话",
+        "skillPack": "📦 技能包"
+      },
+      "skillPack": {
+        "heading": "在你自己的 AI 工具里用 PinGarden",
+        "intro": "下载 skill 包,把一段安装提示词粘贴到你正在用的 AI Agent —— Claude Code、Cursor、Cline、Code Buddy、Work Buddy 等。AI 会自动解压、选好安装路径,并验证 PinGarden CLI。",
+        "step1": "第 1 步 · 下载",
+        "step2": "第 2 步 · 复制安装提示词",
+        "download": "下载 ({{size}})",
+        "downloading": "下载中…",
+        "version": "版本 {{version}}",
+        "promptIntro": "把 zip 拖到 AI 对话窗口(或告诉它路径),然后粘贴下面这段提示词:",
+        "copyPrompt": "复制提示词",
+        "copied": "已复制",
+        "supportedAgentsLabel": "已适配",
+        "installPrompt": "我刚下载了 PinGarden Skill Pack:{{filename}}(版本 {{version}})。\n\n请帮我安装:\n\n1. 识别你所在的 AI 编程 Agent(Claude Code、Cursor、Cline、Code Buddy、Work Buddy、Roo Code、Kilo Code、Continue 等),把 zip 解压到该 Agent 的标准 skills / rules / workflows 目录。常见位置:\n   - Claude Code:~/.claude/skills/\n   - Cursor:~/.cursor/rules/\n   - Cline:~/Documents/Cline/Workflows/\n   - Code Buddy / Work Buddy:按其官方 skill 安装路径\n   - 其他:查看 zip 内的 INSTALL.md\n\n2. 运行 `pingarden doctor` 验证 PinGarden CLI 在 PATH 中。如未找到,提示我先打开 PinGarden 桌面应用(CLI 随应用资源一起分发)。\n\n3. 安装完成后,简要介绍这个 skill 能做什么、以及如何在你这里调用。",
+        "installMdHint": "如果你的 AI 工具不在上面的清单里,zip 内的 INSTALL.md 提供了手动安装步骤。",
+        "notReady": "skill 包尚未生成,运行 `pnpm package:mac` 即可产出。"
+      }
     }
   }
 }

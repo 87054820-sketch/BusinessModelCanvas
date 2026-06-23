@@ -1,0 +1,56 @@
+{
+  "slug": "ansoff-matrix",
+  "name": {
+    "en": "Ansoff Matrix",
+    "zh": "安索夫矩阵"
+  },
+  "summary": {
+    "en": "A growth-direction framework that classifies a move along two axes — existing vs. new products × existing vs. new markets — yielding four routes (market penetration, market development, product development, diversification) ordered by risk.",
+    "zh": "一套增长方向框架：把增长动作放在「现有/新产品 × 现有/新市场」两个轴上，得到 4 条路径（市场渗透、市场开发、产品开发、多元化），按风险递增排列。"
+  },
+  "category": "portfolio-growth",
+  "sources": [
+    {
+      "label": "H. Igor Ansoff · Strategies for Diversification · Harvard Business Review · 1957",
+      "url": "https://hbr.org/1957/09/strategies-for-diversification"
+    },
+    {
+      "label": "H. Igor Ansoff · Corporate Strategy · McGraw-Hill · 1965"
+    }
+  ],
+  "references": [
+    {
+      "type": "article",
+      "cite": "Ansoff 1957",
+      "label": "H. Igor Ansoff · Strategies for Diversification · Harvard Business Review",
+      "year": 1957,
+      "url": "https://hbr.org/1957/09/strategies-for-diversification",
+      "note": {
+        "en": "Original HBR article introducing the product-market growth matrix and the four growth vectors.",
+        "zh": "首次提出产品-市场增长矩阵及四个增长向量的 HBR 原文。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "Ansoff 1965",
+      "label": "H. Igor Ansoff · Corporate Strategy · McGraw-Hill",
+      "year": 1965,
+      "note": {
+        "en": "Book-length elaboration of the growth matrix and its place in corporate-level strategy.",
+        "zh": "对增长矩阵及其在公司战略中位置的书籍版扩展。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "spotify", "role": "primary" },
+    { "slug": "stitch-fix", "role": "primary" },
+    { "slug": "nintendo-wii", "role": "primary" },
+    { "slug": "nestle-portfolio", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "ansoff-matrix",
+    "business-model-canvas",
+    "portfolio-map",
+    "design-criteria-canvas"
+  ]
+}

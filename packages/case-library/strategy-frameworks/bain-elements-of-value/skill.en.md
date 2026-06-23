@@ -2,7 +2,7 @@
 
 ## Positioning
 
-This is a `customer-value-lens`: a supporting tool inside the strategy-analysis library. Do not treat it as a standalone primary canvas; use it to deepen `value-proposition-canvas`, `jobs-to-be-done`, `empathy-map`, and `customer-journey` work.
+This is a `customer-value-lens` framework inside the strategy framework library. Its analysis object is the customer-perceived value layers a proposition stands on; use it to deepen `value-proposition-canvas`, `jobs-to-be-done`, `empathy-map`, and `customer-journey` work by naming which of the 30 elements actually carry the value.
 
 ## Select this framework when
 

@@ -43,6 +43,10 @@ Each block must build on the previous. If `motivation` doesn't follow naturally 
 - ❌ **Outcome that's the product.** "Have AI tool installed" is owning the product, not the outcome. The outcome is what the AI tool _produces_ in their world.
 - ❌ **Ignoring failure modes.** A real job has a "what could go wrong" shadow. If failure feels harmless, the job isn't important enough to design for.
 
+## Bain value lens handoff
+
+JTBD is the upstream input for the Bain value lens. Do not start by selecting from the 30 value elements; first write the situation, the progress sought, and the emotional/social consequence of failure. Then map the most important `emotional-social` stickies to Bain emotional, social, or higher-order value elements before feeding them into VPC `gains` and `gain-creators`.
+
 ## Tone
 
 The canvas should read as a story, not a checklist. Each block in 1-3 sentences max — it's a sketch, not a brief.
@@ -77,7 +81,7 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 ### `emotional-social` — Emotional + Social jobs
 
-**Prompt** — For each functional Job Story above, name at least one emotional and one social companion job.
+**Prompt** — For each functional Job Story above, name at least one emotional and one social companion job; these can later map to Bain value elements.
 
 **Example** — Emotional — Feel calm during close week instead of dreading it
 
@@ -93,10 +97,10 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 This canvas typically pairs with the following — once done, suggest the user move to one of these next:
 
-- `value-proposition-canvas` — Use this validated job as the central Customer Job in VPC; design Pain Relievers + Gain Creators around it.
-- `empathy-map` — Anchor this job to a specific persona × moment to keep it concrete.
+- `value-proposition-canvas` — Use this validated job as the central Customer Job in VPC; Bain value tags can later clarify which gains are functional, emotional, or social.
+- `empathy-map` — Anchor this job to a specific persona × moment before assigning higher-order value claims.
 - `ad-lib-value-proposition` — Compress the validated job + outcome into the one-sentence value-prop slot for stakeholder alignment.
-- `customer-journey` — Plot when in the journey this job becomes acute — that's where the offering should hit hardest.
+- `customer-journey` — Plot when in the journey this job becomes acute and where the promised value is actually perceived.
 
 ---
 Source: `packages/canvases/jobs-to-be-done/` — regenerate with `pingarden skill build`.

@@ -47,5 +47,8 @@
   ],
   "appliesPatternSubtypes": {
     "free": "freemium"
-  }
+  },
+  "appliesStrategyFrameworks": [
+    "ansoff-matrix"
+  ]
 }

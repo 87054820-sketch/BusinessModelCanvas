@@ -1,6 +1,6 @@
 # Bain Elements of Value
 
-Bain Elements of Value breaks perceived customer value into 30 elements across four levels: functional, emotional, life-changing, and social impact. In PinGarden, it is classified as a **Customer Value Lens**: still part of the strategy-analysis library, but used as a supporting lens for interpreting value propositions rather than as a standalone primary canvas.
+Bain Elements of Value breaks perceived customer value into 30 elements across four levels: functional, emotional, life-changing, and social impact. In PinGarden, it sits in the **Customer Value Lens** category of the strategy framework library — its analysis object is the customer-perceived value layers a proposition stands on, complementing VPC, JTBD, Empathy, and Journey canvases.
 
 ## Method identity
 

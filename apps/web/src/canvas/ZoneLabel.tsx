@@ -93,8 +93,12 @@ function wrapLabel(text: string, maxChars: number): string[] {
 }
 
 function promptMaxChars(shape: ZoneShape): number {
-  if (shape.type === 'rect') return shape.w >= 500 ? 36 : 18;
-  return 20;
+  if (shape.type === 'rect') {
+    if (shape.w >= 500) return 36;
+    if (shape.w >= 300) return 22;
+    return 14;
+  }
+  return 16;
 }
 
 function defaultLabelPos(

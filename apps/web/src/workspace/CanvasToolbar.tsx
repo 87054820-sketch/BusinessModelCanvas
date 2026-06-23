@@ -10,6 +10,7 @@ interface Props {
   displayName: string;
   /** Called when the title input commits — workspace persists via API. */
   onRename: (title: string) => void;
+  onOpenCopilot: () => void;
   /**
    * Library-case mode: title becomes a read-only label (still selectable
    * for copy), the "Save milestone" button disappears (writes to data),
@@ -35,6 +36,7 @@ export function CanvasToolbar({
   projectId,
   displayName,
   onRename,
+  onOpenCopilot,
   readOnly = false,
 }: Props) {
   const { t } = useTranslation();
@@ -79,6 +81,13 @@ export function CanvasToolbar({
         />
       </div>
       <div className="flex items-center gap-3">
+        <button
+          type="button"
+          onClick={onOpenCopilot}
+          className="rounded-lg border border-gray-300 px-3 py-1 text-xs font-medium hover:bg-gray-50"
+        >
+          {t('library.copilot.openButton')}
+        </button>
         {!readOnly && (
           <button
             type="button"

@@ -1,0 +1,52 @@
+{
+  "slug": "christensen-innovators-dilemma",
+  "type": "book",
+  "title": {
+    "en": "The Innovator's Dilemma",
+    "zh": "《创新者的窘境》"
+  },
+  "summary": {
+    "en": "Clayton Christensen's 1997 book on why great companies rationally fail. Distinguishes sustaining innovation (incumbents win) from disruptive innovation (entrants win from overshot or non-consumption footholds, then climb upmarket). The HDD industry chapter is the empirical engine; Nucor steel, mechanical excavators, and Honda Supercub are the canonical extensions.",
+    "zh": "Clayton Christensen 1997 年的奠基之作，解释为什么伟大公司「理性地」失败。把创新分为维持性（在位者赢）与颠覆性（新进入者从过度满足或不消费立足点起步、再向高端迁移）。硬盘驱动器一章是理论的实证发动机；Nucor 钢铁、机械挖掘机、Honda Supercub 是经典扩展样本。"
+  },
+  "recommendation": {
+    "en": "Read this before applying the `disruption-diagnosis` canvas to any candidate. The book's strict 3-part test (foothold + initial inferiority + upmarket trajectory) is what separates real disruption from sustaining innovation, new-market entry, or direct competition — and getting the label wrong leads to wrong strategy.",
+    "zh": "在你用 `disruption-diagnosis` 画布判定任何候选之前先读这本书。书里的三段严格判定（立足点 + 起步劣势 + 向上迁移）正是区分真正的颠覆与维持性创新、新市场进入、直接竞争的关键——标签贴错就意味着战略错。"
+  },
+  "authors": [
+    "Clayton M. Christensen"
+  ],
+  "publisher": "Harvard Business School Press",
+  "year": 1997,
+  "tags": ["disruption", "innovation", "incumbent-failure", "value-network", "HBS"],
+  "relatedCanvasDefIds": [
+    "disruption-diagnosis",
+    "business-model-canvas",
+    "portfolio-map",
+    "three-horizons-map"
+  ],
+  "relatedCaseSlugs": [
+    "nucor-mini-mill-disruption",
+    "hdd-industry-disruption",
+    "transsion-africa",
+    "carvana",
+    "ping-an-good-doctor",
+    "tata-nano"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "disruptive-innovation",
+    "mckinsey-three-horizons"
+  ],
+  "sources": [
+    {
+      "label": "Clayton M. Christensen · The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail · Harvard Business School Press · 1997"
+    },
+    {
+      "label": "Clayton M. Christensen, Michael E. Raynor & Rory McDonald · What Is Disruptive Innovation? · Harvard Business Review · December 2015",
+      "url": "https://hbr.org/2015/12/what-is-disruptive-innovation"
+    },
+    {
+      "label": "克莱顿·克里斯坦森 ·《创新者的窘境》· 中信出版社"
+    }
+  ]
+}

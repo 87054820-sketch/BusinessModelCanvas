@@ -18,6 +18,8 @@ import { registerStickyImportRoutes } from './http/stickyImport.js';
 import { registerObjectsImportRoutes } from './http/objectsImport.js';
 import { registerStoryRoutes } from './http/stories.js';
 import { registerLibraryRoutes } from './http/library.js';
+import { registerCopilotRoutes } from './http/copilot.js';
+import { registerSkillPackRoutes } from './http/skillPack.js';
 import {
   getPortFilePath,
   registerPortFileCleanup,
@@ -65,6 +67,8 @@ async function main() {
   registerObjectsImportRoutes(app, storage, defs);
   registerStoryRoutes(app, storage);
   registerLibraryRoutes(app, storage);
+  registerCopilotRoutes(app, storage, defs);
+  registerSkillPackRoutes(app);
 
   // Global error handler — maps storage-level read-only failures to a
   // structured 403 so every mutating route gets correct HTTP semantics
@@ -110,7 +114,8 @@ async function main() {
         req.url.startsWith('/library') ||
         req.url.startsWith('/ai-context') ||
         req.url.startsWith('/sticky-import') ||
-        req.url.startsWith('/objects-import');
+        req.url.startsWith('/objects-import') ||
+        req.url.startsWith('/copilot');
       if (apiPrefix) {
         reply.code(404);
         return { error: 'Not Found' };

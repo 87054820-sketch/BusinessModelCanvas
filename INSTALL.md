@@ -1,6 +1,6 @@
 # PinGarden 安装指南
 
-> 当前版本:**v0.4.1**(macOS · Apple Silicon)
+> 当前版本:**v0.5.0**(macOS · Apple Silicon)
 
 PinGarden 是一个本地运行的商业模式画布工具(BMC / VPC / 客户旅程 / JTBD …),核心特点是 **AI 助手能直接帮你起草和迭代画布**。
 
@@ -8,8 +8,8 @@ PinGarden 是一个本地运行的商业模式画布工具(BMC / VPC / 客户旅
 
 | 文件 | 作用 |
 | --- | --- |
-| **`PinGarden-0.4.1-arm64.dmg`** | 桌面应用本体 |
-| **`pingarden-skill-0.4.1-*.zip`** | AI 助手的"使用说明书",让 Claude / Cursor 等 AI 知道怎么操作 PinGarden |
+| **`PinGarden-0.5.0-arm64.dmg`** | 桌面应用本体 |
+| **`pingarden-skill-0.5.0-*.zip`** | AI 助手的"使用说明书",让 Claude / Cursor 等 AI 知道怎么操作 PinGarden |
 
 整个安装大约 **3 分钟**,只在终端粘贴 1~2 条命令。
 
@@ -17,7 +17,7 @@ PinGarden 是一个本地运行的商业模式画布工具(BMC / VPC / 客户旅
 
 ## 第一步:装桌面应用
 
-1. 双击 `PinGarden-0.4.1-arm64.dmg`,在弹出的窗口里把 `PinGarden` 图标拖到旁边的 `Applications` 文件夹快捷方式上。
+1. 双击 `PinGarden-0.5.0-arm64.dmg`,在弹出的窗口里把 `PinGarden` 图标拖到旁边的 `Applications` 文件夹快捷方式上。
 2. ⚠️ **关键一步:复制下面这条命令,粘到「终端 (Terminal)」里回车**:
 
    ```bash

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import type * as Y from 'yjs';
-import type { Lang } from '@pingarden/shared';
+import type { CanvasDefaultColorLegendEntry, Lang } from '@pingarden/shared';
 import { STICKY_PALETTE } from '@pingarden/shared';
 import {
   updateColorLegendEntry,
@@ -23,6 +23,7 @@ interface Props {
    * canvases).
    */
   readOnly?: boolean;
+  defaultColorLegend?: CanvasDefaultColorLegendEntry[];
 }
 
 /**
@@ -46,10 +47,15 @@ interface Props {
  * project-scoped legend because different canvases in the same
  * project use the same six colours for completely different things.
  */
-export function StickyLegendPalette({ doc, lang, readOnly = false }: Props) {
+export function StickyLegendPalette({
+  doc,
+  lang,
+  readOnly = false,
+  defaultColorLegend,
+}: Props) {
   const { t } = useTranslation();
   const legend = useColorLegend(doc);
-  const entries = visibleLegendEntries(legend, lang);
+  const entries = visibleLegendEntries(legend, lang, defaultColorLegend);
   const activeStickyColor = useActiveStickyColor((s) => s.activeStickyColor);
   const toggleColor = useActiveStickyColor((s) => s.toggleColor);
   const clearActive = useActiveStickyColor((s) => s.clearActive);

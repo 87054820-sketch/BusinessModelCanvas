@@ -183,6 +183,27 @@ const CaseAuthorInput = z.object({
 
 type CaseAuthorInputT = z.infer<typeof CaseAuthorInput>;
 
+function defaultColorLegendForAuthor(
+  defaults: CanvasDef['defaultColorLegend'],
+  lang: Lang,
+): ObjectsBulkInput['colorLegend'] | undefined {
+  if (!defaults?.length) return undefined;
+  const fallbackLang: Lang = lang === 'zh' ? 'en' : 'zh';
+  const out: NonNullable<ObjectsBulkInput['colorLegend']> = {};
+  for (const entry of defaults) {
+    const label = (entry.label[lang] || entry.label[fallbackLang] || '').trim();
+    if (!label) continue;
+    const description = (
+      entry.description?.[lang] || entry.description?.[fallbackLang] || ''
+    ).trim();
+    out[entry.hex] = {
+      label,
+      ...(description ? { description } : {}),
+    };
+  }
+  return Object.keys(out).length > 0 ? out : undefined;
+}
+
 // ─── case author handler (pure) ──────────────────────────────────────────────
 
 interface AuthorOpts {
@@ -310,12 +331,16 @@ export async function caseAuthorHandler(
   input.canvases.forEach((c, idx) => {
     const id = canvasIds[idx]!;
     const def = defsById.get(c.defId)!;
+    const colorLegend =
+      c.colorLegend !== undefined
+        ? c.colorLegend
+        : defaultColorLegendForAuthor(def.defaultColorLegend, c.language as Lang);
     const bulk: ObjectsBulkInput = {
       ...(c.stickies ? { stickies: c.stickies } : {}),
       ...(c.pinClasses ? { pinClasses: c.pinClasses } : {}),
       ...(c.pins ? { pins: c.pins } : {}),
       ...(c.xAxisItems ? { xAxisItems: c.xAxisItems } : {}),
-      ...(c.colorLegend ? { colorLegend: c.colorLegend } : {}),
+      ...(colorLegend !== undefined ? { colorLegend } : {}),
     };
     let result;
     try {

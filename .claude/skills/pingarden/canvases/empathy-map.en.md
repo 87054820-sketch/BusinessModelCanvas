@@ -46,6 +46,10 @@ Skipping straight to think-and-feel is the canonical failure mode — that's whe
 - ❌ **Using it as a marketing persona.** Empathy Map is for operational empathy, not a deck. No demographic clichés ("loves matcha"), no brand stereotypes.
 - ❌ **Treating it as static.** Update the map as evidence arrives. A 6-month-old empathy map is folklore.
 
+## Bain value lens handoff
+
+Empathy Map is the evidence intake for the Bain value lens. Map `gain` or `pain` into emotional, social, or higher-order value elements only when `see` / `say-and-do` / `hear` / `think-and-feel` contains customer evidence. Do not choose Bain elements first and backfill feelings; that projects team aspiration onto the customer.
+
 ## Tone
 
 `say-and-do` and `hear` should sound like raw transcript snippets. `think-and-feel` / `pain` / `gain` should be in the persona's voice, not yours.
@@ -104,7 +108,7 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 ### `gain` — Gain
 
-**Prompt** — Wants, needs, definitions of success.
+**Prompt** — Wants, needs, definitions of success; map to Bain value elements when evidence is strong.
 
 **Example** — Ships one zero-to-one feature with measurable adoption
 
@@ -118,9 +122,9 @@ _Not customised — use the six-colour sticky default palette. Colours carry no 
 
 This canvas typically pairs with the following — once done, suggest the user move to one of these next:
 
-- `value-proposition-canvas` — Lift the Pains and Gains from this persona into VPC's customer side.
+- `value-proposition-canvas` — Lift evidenced Pains and Gains from this persona into VPC's customer side; Bain tags come after evidence, not before.
 - `jobs-to-be-done` — Sharpen the persona's central problem into a JTBD situation → motivation → outcome story.
-- `customer-journey` — Walk this persona's day across stages to find where the friction actually lives.
+- `customer-journey` — Walk this persona's day across stages to find where the friction and perceived value actually live.
 
 ---
 Source: `packages/canvases/empathy-map/` — regenerate with `pingarden skill build`.

@@ -23,3 +23,7 @@ Blue Ocean Strategy should be treated as a strategic analysis framework: Strateg
 ## Business Model Portfolio Management note
 
 Business Model Portfolio Management should be treated as a portfolio-level strategic management framework. It uses `portfolio-map` to manage Explore and Exploit portfolios, then expands important pins into BMCs or Experiment Canvases. A tagged case must include and embed a Portfolio Map in its story; dynamic cases should show dated movement. Do not file it under business-model patterns, and do not tag a case merely because the company is innovative.
+
+## Bain Elements of Value note
+
+Bain Elements of Value should be treated as a Customer Value Lens: a supporting strategy-analysis tool that deepens `value-proposition-canvas`, `jobs-to-be-done`, `empathy-map`, and `customer-journey`. Do not create a standalone Bain canvas or use it as a 30-element checklist; map selected value elements back to VPC gains, gain creators, pain relievers, and journey touchpoints.

@@ -73,9 +73,6 @@ export function StrategyFrameworkDetailModal({
   const categoryLabel = framework.category
     ? t(`library.strategyFrameworkCategories.${framework.category}`, framework.category)
     : null;
-  const roleLabel = framework.analysisRole
-    ? t(`library.strategyFrameworkRoles.${framework.analysisRole}`, framework.analysisRole)
-    : null;
 
   return (
     <div
@@ -99,11 +96,6 @@ export function StrategyFrameworkDetailModal({
               {categoryLabel && (
                 <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-[10px] font-medium text-indigo-700">
                   {categoryLabel}
-                </span>
-              )}
-              {roleLabel && (
-                <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-medium text-amber-700">
-                  {roleLabel}
                 </span>
               )}
               <span className="text-[10px] text-gray-400">{framework.slug}</span>

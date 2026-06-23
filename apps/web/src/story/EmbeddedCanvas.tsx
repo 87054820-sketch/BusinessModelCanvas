@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import type { CanvasMeta, Lang } from '@pingarden/shared';
+import type { CanvasDefaultColorLegendEntry, CanvasMeta, Lang } from '@pingarden/shared';
 import { effectiveObjectTypes } from '@pingarden/shared';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -11,6 +11,7 @@ import { StickyLegendPalette } from '../canvas/StickyLegendPalette';
 import { useReadOnlyYDoc } from '../collab/useReadOnlyYDoc';
 import { hasPinClasses } from '../collab/pinClasses';
 import { hasColorLegend } from '../collab/colorLegend';
+import { api } from '../api/client';
 
 interface Props {
   projectId: string;
@@ -24,11 +25,26 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
   const { t } = useTranslation();
   const rootRef = useRef<HTMLElement | null>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
+  const [defaultColorLegend, setDefaultColorLegend] = useState<
+    CanvasDefaultColorLegendEntry[] | undefined
+  >(undefined);
   const { doc, ready } = useReadOnlyYDoc(shouldLoad ? canvas?.id : undefined);
 
   useEffect(() => {
     setShouldLoad(false);
   }, [canvas?.id]);
+
+  useEffect(() => {
+    let cancelled = false;
+    setDefaultColorLegend(undefined);
+    if (!canvas) return;
+    api.getDef(canvas.defId).then((bundle) => {
+      if (!cancelled) setDefaultColorLegend(bundle.def.defaultColorLegend);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [canvas?.defId]);
 
   useEffect(() => {
     const node = rootRef.current;
@@ -103,7 +119,7 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
                   it disappears entirely so unstyled embeds stay
                   pure SVG (preserves the "if no legend, no chrome"
                   contract). */}
-              {(hasPinClasses(doc) || hasColorLegend(doc)) && (
+              {(hasPinClasses(doc) || hasColorLegend(doc, lang, defaultColorLegend)) && (
                 <div className="flex h-12 flex-shrink-0 items-center justify-between gap-3 border-b border-stone-200 bg-stone-50/40 px-3">
                   <div className="flex min-w-0 items-center">
                     {hasPinClasses(doc) && (
@@ -111,8 +127,13 @@ export function EmbeddedCanvas({ projectId, canvas, title, lang, displayName }: 
                     )}
                   </div>
                   <div className="flex min-w-0 items-center">
-                    {hasColorLegend(doc) && (
-                      <StickyLegendPalette doc={doc} lang={lang} readOnly />
+                    {hasColorLegend(doc, lang, defaultColorLegend) && (
+                      <StickyLegendPalette
+                        doc={doc}
+                        lang={lang}
+                        readOnly
+                        defaultColorLegend={defaultColorLegend}
+                      />
                     )}
                   </div>
                 </div>

@@ -308,6 +308,15 @@
     },
     "platform-ecosystem-map": {
       "tagline": "Map platform sides, core interaction, network effects, governance, and monetization"
+    },
+    "ansoff-matrix": {
+      "tagline": "Market Penetration, Market Development, Product Development, Diversification — a 2×2 framing growth paths and risk"
+    },
+    "disruption-diagnosis": {
+      "tagline": "Christensen's strict 3-part test: foothold + initial inferiority + upmarket trajectory"
+    },
+    "porters-value-chain": {
+      "tagline": "Break the firm into 5 primary + 4 support activities to see where margin is squeezed"
     }
   },
   "myProjects": {
@@ -357,7 +366,7 @@
       "pattern": "Pattern",
       "comparison": "Comparison",
       "experiment": "Experiment",
-      "strategyFramework": "Strategy method",
+      "strategyFramework": "Strategy framework",
       "resource": "Resource"
     },
     "tabs": {
@@ -365,13 +374,13 @@
       "canvases": "Analysis Canvases",
       "patterns": "Business Models",
       "experiments": "Experiment Design",
-      "strategyFrameworks": "Strategy Analysis",
+      "strategyFrameworks": "Strategy Frameworks",
       "resources": "Resources",
       "description": "Description",
       "relatedCases": "Related cases"
     },
     "appliesPatterns": "Applies patterns",
-    "appliesStrategyFrameworks": "Strategy methods",
+    "appliesStrategyFrameworks": "Strategy frameworks",
     "examplesSection": "Examples",
     "exampleCount_one": "{{count}} example",
     "exampleCount_other": "{{count}} examples",
@@ -412,22 +421,19 @@
     "strategyFrameworks": {
       "intro": {
         "title": "Use strategy frameworks to reason about choices, not just describe the present",
-        "body": "Strategy analysis is the library's **lens layer**: it helps you read competition, environment, innovation portfolios, future scenarios, platform ecosystems, and customer value. Some methods are primary frameworks; others, like Bain, are supporting lenses. Learn the role, then open related cases to see how companies form trade-offs and action."
+        "body": "Strategy frameworks are the library's **lens layer**: they help you read competition, environment, organizational capability, innovation portfolios, future scenarios, and customer value. Each framework analyzes a specific object — understand what it looks at first, then open related cases to see how companies form trade-offs and action."
       }
     },
     "strategyFramework": {
-      "descriptionEmpty": "No description authored for this strategy method yet."
+      "descriptionEmpty": "No description authored for this strategy framework yet."
     },
     "strategyFrameworkCategories": {
       "portfolio-growth": "Portfolio & Growth",
       "environment-competition": "Environment & Competition",
       "organization-ecosystem": "Organization & Ecosystem",
       "innovation-evidence": "Innovation & Evidence",
-      "customer-value-lens": "Customer Value Lens"
-    },
-    "strategyFrameworkRoles": {
-      "primary-framework": "Primary framework",
-      "supporting-lens": "Supporting tool"
+      "customer-value-lens": "Customer Value Lens",
+      "foresight-scenarios": "Foresight & Scenarios"
     },
     "resources": {
       "intro": {
@@ -508,6 +514,154 @@
       "previous": "Previous",
       "next": "Next",
       "page": "Page {{current}} of {{total}}"
+    },
+    "copilot": {
+      "openButton": "PinGarden Copilot",
+      "drawerTitle": "PinGarden Copilot",
+      "emptyState": "Pick a suggested action or ask directly — study cases, review projects, recommend canvases, improve stories, or find the next experiment.",
+      "emptyStateNoKey": "No API key configured yet. Paste your Kimi Code key to start chatting.",
+      "encryptionWarning": "Your OS keychain is not available. Keys are stored in browser localStorage as plaintext.",
+      "encryptionEnabled": "Keys are encrypted via your OS keychain (safeStorage).",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "sk-...",
+      "getKey": "Get a Kimi Code key →",
+      "testConnection": "Test connection",
+      "testing": "Testing…",
+      "testOk": "Connection OK",
+      "save": "Save",
+      "saved": "Saved",
+      "remove": "Remove",
+      "removeConfirm": "Remove the saved Kimi Code key?",
+      "composerPlaceholder": "Ask PinGarden Copilot…",
+      "attachImage": "+ Image",
+      "attachImageHint": "Upload an image, or drag and paste a screenshot",
+      "removeImageAttachment": "Remove image {{name}}",
+      "imageOnlyPrompt": "Please analyze the image I sent and draft a suitable PinGarden project from it.",
+      "imageLimit": "You can attach up to {{count}} images.",
+      "imageTooLarge": "{{name}} is too large. Each image must be under {{size}}.",
+      "imageUnsupported": "{{name}} uses an unsupported image format.",
+      "modeHints": {
+        "imageReady": "Image ready",
+        "createProject": {
+          "hint": "Enter a question, idea, material, or link first. Send keeps chatting; Create project sends the same content into a project draft.",
+          "placeholder": "Enter a question, idea, material, or link…",
+          "imageOnlyPrompt": "Please create a PinGarden project draft from the image I sent."
+        },
+        "libraryReference": {
+          "hint": "This is read-only reference material. Ask to understand it, or copy/adapt it into your own project starting point.",
+          "placeholder": "Enter what to adapt, your question, or supporting material…",
+          "imageOnlyPrompt": "Please combine this image with the current reference material and summarize transferable insights."
+        },
+        "projectWork": {
+          "hint": "Working from this project. You can add a canvas, draft a Story, or ask Copilot to analyze the next step.",
+          "placeholder": "Enter a question, material, screenshot note, or next-step goal…",
+          "imageOnlyPrompt": "Please combine this image with the current project and suggest canvases or Stories to add."
+        }
+      },
+      "composerActions": {
+        "createProject": "Create project",
+        "askLibrary": "Ask materials",
+        "createFromReference": "Create from it",
+        "copyProject": "Copy project",
+        "askReference": "Ask this project",
+        "addCanvas": "Add canvas",
+        "addStory": "Add Story"
+      },
+      "composerPrompts": {
+        "createProject": "Create a PinGarden project draft from my images, links, and notes. If anything essential is missing, ask me the key question first.",
+        "askLibrary": "Based on the Strategy Library, summarize which cases, canvases, or methods are worth looking at, then ask me the single most important question.",
+        "createFromReference": "Based on the current reference material, turn it into a new project draft. If essential information is missing, ask me the key question first.",
+        "copyProject": "Based on this read-only reference project, prepare a new project draft I can copy into my workspace while preserving the most important canvas structure and insights.",
+        "askReference": "Explain what is most worth borrowing from the current reference material and how I could adapt it into my own project.",
+        "addCanvas": "Based on the current project and the material I provide, decide the most valuable next canvas to add, explain why, and draft the first-pass canvas thinking.",
+        "addStory": "Based on the current project and the material I provide, draft a new Story that connects key canvases, insights, assumptions, and next actions."
+      },
+      "projectDraft": {
+        "title": "Project draft",
+        "subtitle": "After confirmation, PinGarden will create the project, canvases, and initial stickies.",
+        "autoFilledHint": "I will infer canvas content from the image as much as possible. You only need to confirm the project name and description; unclear canvas notes can be adjusted after creation.",
+        "projectName": "Project name",
+        "projectNamePlaceholder": "e.g. WeCom private-domain operations project",
+        "projectDescription": "Project description",
+        "projectDescriptionPlaceholder": "One sentence about target customers, core value, and business goal",
+        "needNameAndDescription": "Please add the project name and description first.",
+        "needName": "Please add the project name first.",
+        "needDescription": "Please add the project description first.",
+        "canvasCount": "Canvases",
+        "stickyCount": "Stickies",
+        "create": "Create project",
+        "creating": "Creating…",
+        "created": "Created"
+      },
+      "canvasRefs": {
+        "title": "Related canvas boards",
+        "subtitle": "I converted canvas references in the answer into openable boards. Preview first, then open details from the preview.",
+        "preview": "Preview",
+        "detail": "View details",
+        "popoverLabel": "Canvas preview",
+        "close": "Close canvas preview",
+        "loading": "Loading canvas…"
+      },
+      "caseRefs": {
+        "title": "Recommended case entries",
+        "subtitle": "I converted case slugs in the answer into openable entries. Open the case directly.",
+        "canvasCount": "{{count}} canvases",
+        "detail": "View case"
+      },
+      "referenceHint": {
+        "caseNotFound": "Couldn't find an openable case: {{items}}",
+        "canvasNotFound": "Couldn't find an openable canvas: {{items}}"
+      },
+      "send": "Send",
+      "startAction": "Start",
+      "stop": "Stop",
+      "thinking": "Thinking…",
+      "errorPrefix": "Error",
+      "noKeyConfigured": "No Kimi Code key configured. Open settings to paste one.",
+      "clearChat": "Clear chat",
+      "clearChatConfirm": "Clear the entire conversation?",
+      "attached": "Attached",
+      "contextSource": "Based on current project",
+      "contextProjectSource": "Based on current project",
+      "contextReferenceSource": "Based on current material",
+      "contextCreateSource": "Creation entry",
+      "strategyLibraryContext": "Strategy Library",
+      "attachClear": "Remove attached context",
+      "suggestions": {
+        "title": "Suggested actions",
+        "expand": "Expand",
+        "collapse": "Collapse"
+      },
+      "contextLoading": "Loading context…",
+      "contextFailed": "Couldn't load context — sending without it.",
+      "settingsButton": "Settings",
+      "cliMissing": "Kimi CLI isn't installed on this machine.",
+      "cliInstallHint": "Run `npm install -g @moonshot-ai/kimi-code` then reload the app.",
+      "kimi": {
+        "title": "Connect Kimi Code",
+        "intro": "Paste your Kimi Code API key. We'll encrypt it locally and wire Kimi CLI's config for you — no terminal required.",
+        "console": "Get a key from kimi.com/code/console"
+      },
+      "tabs": {
+        "chat": "💬 Chat",
+        "skillPack": "📦 Skill pack"
+      },
+      "skillPack": {
+        "heading": "Use PinGarden in your own AI tool",
+        "intro": "Download the skill pack and paste one install prompt into your AI agent — Claude Code, Cursor, Cline, Code Buddy, Work Buddy, and more. The agent extracts the zip, picks the right install path, and verifies the PinGarden CLI for you.",
+        "step1": "Step 1 · Download",
+        "step2": "Step 2 · Copy install prompt",
+        "download": "Download ({{size}})",
+        "downloading": "Downloading…",
+        "version": "Version {{version}}",
+        "promptIntro": "Drag the zip into your AI chat (or share its path), then paste this prompt:",
+        "copyPrompt": "Copy prompt",
+        "copied": "Copied",
+        "supportedAgentsLabel": "Works with",
+        "installPrompt": "I just downloaded the PinGarden Skill Pack: {{filename}} (version {{version}}).\n\nPlease help me install it:\n\n1. Detect which AI coding agent you are (Claude Code, Cursor, Cline, Code Buddy, Work Buddy, Roo Code, Kilo Code, Continue, …) and extract the zip into that agent's standard skills / rules / workflows directory. Common locations:\n   - Claude Code: ~/.claude/skills/\n   - Cursor: ~/.cursor/rules/\n   - Cline: ~/Documents/Cline/Workflows/\n   - Code Buddy / Work Buddy: their official skill install path\n   - Anything else: read INSTALL.md inside the zip\n\n2. Verify the PinGarden CLI is on PATH by running `pingarden doctor`. If it's missing, tell me to launch the PinGarden desktop app first (the CLI ships inside the app's resources).\n\n3. Once installed, briefly summarise what the PinGarden skill enables and how I can invoke it here.",
+        "installMdHint": "If your AI tool isn't listed above, the zip ships with an INSTALL.md covering manual setup.",
+        "notReady": "Skill pack isn't built yet — run `pnpm package:mac` to produce one."
+      }
     }
   }
 }

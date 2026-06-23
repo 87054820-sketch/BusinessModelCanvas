@@ -21,6 +21,7 @@ interface Props {
   onAddStory: () => void;
   onDeleteCanvas: (c: CanvasMeta) => void;
   onDeleteStory: (s: StoryMeta) => void;
+  onOpenCopilot: () => void;
   /**
    * Library-case mode: hide every write affordance.
    *   - "+ Add canvas" / "+ New story" footer buttons disappear
@@ -69,6 +70,7 @@ export function ProjectSidebar({
   onAddStory,
   onDeleteCanvas,
   onDeleteStory,
+  onOpenCopilot,
   readOnly = false,
 }: Props) {
   const { t } = useTranslation();
@@ -147,10 +149,20 @@ export function ProjectSidebar({
           )}
         </div>
 
-        {!readOnly && (
-          <div className="space-y-2 border-t border-gray-200 p-2">
-            <div className="flex justify-center">
-              <AddCanvasMenu onPick={onAddCanvas} compact />
+        <div className="space-y-2 border-t border-gray-200 p-2">
+          <button
+            type="button"
+            onClick={onOpenCopilot}
+            title={t('library.copilot.drawerTitle')}
+            aria-label={t('library.copilot.drawerTitle')}
+            className="flex h-9 w-full items-center justify-center rounded-md text-gray-700 hover:bg-gray-100"
+          >
+            AI
+          </button>
+          {!readOnly && (
+            <>
+              <div className="flex justify-center">
+                <AddCanvasMenu onPick={onAddCanvas} compact />
             </div>
             <button
               type="button"
@@ -161,8 +173,9 @@ export function ProjectSidebar({
             >
               ✦
             </button>
-          </div>
-        )}
+            </>
+          )}
+        </div>
       </aside>
     );
   }
@@ -215,6 +228,16 @@ export function ProjectSidebar({
           </div>
         )}
       </button>
+
+      <div className="border-b border-gray-100 px-3 py-2">
+        <button
+          type="button"
+          onClick={onOpenCopilot}
+          className="flex w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-3 py-2 text-xs font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50"
+        >
+          {t('library.copilot.drawerTitle')}
+        </button>
+      </div>
 
       <div className="flex-1 overflow-y-auto p-3">
         <div className="mb-2 px-1 text-[11px] uppercase tracking-wider text-gray-500">

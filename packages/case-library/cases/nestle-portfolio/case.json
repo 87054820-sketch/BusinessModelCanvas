@@ -31,6 +31,8 @@
   "storyCount": 4,
   "appliesStrategyFrameworks": [
     "business-model-portfolio-management",
-    "bcg-growth-share-matrix"
+    "bcg-growth-share-matrix",
+    "ansoff-matrix",
+    "porters-value-chain"
   ]
 }

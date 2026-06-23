@@ -2,7 +2,7 @@
 
 ## 定位
 
-这是 `customer-value-lens`：客户价值透镜 / 辅助工具。它属于战略分析方法库，但不要把它当独立主画布；它服务于 `value-proposition-canvas`、`jobs-to-be-done`、`empathy-map` 和 `customer-journey`。
+这是战略框架库中的 `customer-value-lens` 框架，分析对象是客户感知价值的层级。把它接在 `value-proposition-canvas`、`jobs-to-be-done`、`empathy-map` 和 `customer-journey` 后面，用 30 个价值元素具体指出哪几个元素真正在承载价值。
 
 ## 何时选择
 

@@ -1,0 +1,44 @@
+{
+  "slug": "hdd-industry-disruption",
+  "version": 1,
+  "kind": "industry",
+  "companyName": {
+    "en": "Hard Disk Drive Industry (1976–1995)",
+    "zh": "硬盘驱动器行业（1976–1995）"
+  },
+  "summary": {
+    "en": "The empirical engine of Christensen's Innovator's Dilemma. Five waves of disk drive disruption — 14-inch → 8-inch → 5.25-inch → 3.5-inch → 2.5-inch → 1.8-inch — each one initially worse on capacity and reliability, each one good enough for a smaller-form-factor host computer (mainframe → mini → desktop → portable → laptop → handheld), each one ignored by the dominant 14-inch incumbents (IBM, CDC, Memorex) until the new entrants moved upmarket and ate them. Christensen tracked the dataset of every disk drive shipped 1976–1995 and showed it was the same pattern five times. This case is included not because the technology is current (it is not — flash memory disrupted HDD itself after 2010), but because the historical industry remains the cleanest empirical demonstration that disruption is mechanical, repeatable, and predictable in retrospect.",
+    "zh": "Christensen《创新者的窘境》理论的实证发动机。硬盘行业的五次颠覆浪潮——14 英寸 → 8 英寸 → 5.25 英寸 → 3.5 英寸 → 2.5 英寸 → 1.8 英寸——每一代初期容量和可靠性都更差，每一代刚好够用于更小尺寸的宿主计算机（大型机 → 小型机 → 桌面机 → 便携 → 笔记本 → 掌上），每一代都被主导 14 英寸的在位者（IBM、CDC、Memorex）忽视，直到新进入者向高端迁移并把它们吃掉。Christensen 追踪了 1976–1995 年间出货的每一台硬盘数据集，证明同一个剧本上演了五次。本案例收录不是因为这项技术还在用（不在用了——闪存于 2010 年后颠覆了 HDD 本身），而是因为这段历史至今仍是颠覆机制可重复、事后可预测的最清晰实证。"
+  },
+  "tags": [
+    "hard-disk-drive",
+    "industry",
+    "Christensen",
+    "low-end-disruption",
+    "computing-history",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "Christensen, C. M. · The Innovator's Dilemma · Harvard Business School Press · 1997 · Ch. 1, 2, 3, 5, 6"
+    },
+    {
+      "label": "Christensen, C. M. · 'The Rigid Disk Drive Industry: A History of Commercial and Technological Turbulence' · Business History Review · 1993",
+      "url": "https://www.cambridge.org/core/journals/business-history-review"
+    },
+    {
+      "label": "Disk/Trend Report · annual industry data 1976–1995 (cited extensively in Christensen 1997)"
+    },
+    {
+      "label": "Christensen, C. M. & Bower, J. L. · 'Customer Power, Strategic Investment, and the Failure of Leading Firms' · Strategic Management Journal · 1996",
+      "url": "https://onlinelibrary.wiley.com/journal/10970266"
+    }
+  ],
+  "thumbnailDefId": "disruption-diagnosis",
+  "projectId": "8a81e771-0bce-4dcb-ad31-0b40b739d076",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesStrategyFrameworks": [
+    "disruptive-innovation"
+  ]
+}

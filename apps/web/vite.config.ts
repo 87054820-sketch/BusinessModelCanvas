@@ -42,6 +42,7 @@ export default defineConfig({
       '/library/experiments': { target: 'http://localhost:4000', changeOrigin: true },
       '/library/strategy-frameworks': { target: 'http://localhost:4000', changeOrigin: true },
       '/library/resources': { target: 'http://localhost:4000', changeOrigin: true },
+      '/copilot': { target: 'http://localhost:4000', changeOrigin: true },
       '/health': { target: 'http://localhost:4000', changeOrigin: true },
     },
   },

@@ -1,0 +1,35 @@
+{
+  "canvasTitle": "Disruption Diagnosis",
+  "blocks": {
+    "foothold-customer": {
+      "title": "Foothold customer",
+      "prompt": "Who is the foothold? Overshot mainstream customer (low-end disruption) or non-consumer the incumbent never served (new-market disruption)? Be specific about segment, geography, occasion.",
+      "examples": ["African feature-phone users — non-consumers from Apple's perspective", "Used-car buyers who refuse to negotiate at dealerships — overshot mainstream", "Chinese users without easy specialist access — non-consumers of in-person healthcare"]
+    },
+    "worse-on-dimension": {
+      "title": "Worse on dimension",
+      "prompt": "On which dimensions valued by mainstream customers is the disruptor *initially inferior*? Name the dimension and quantify the gap — Christensen requires this.",
+      "examples": ["Sound quality lower than CDs initially", "Camera resolution lower than DSLRs in 2007", "Specialist depth lower than in-person doctor visits"]
+    },
+    "acceptable-on-dimension": {
+      "title": "Acceptable on dimension",
+      "prompt": "What is the disruptor better on, that the foothold customer values enough to accept the inferiority above? Price, simplicity, accessibility, convenience, or context fit?",
+      "examples": ["50% lower price + multi-day battery (Transsion)", "Zero negotiation + 7-day return (Carvana)", "Instant access + no commute (Ping An Good Doctor)"]
+    },
+    "incumbent-rational-ignore": {
+      "title": "Incumbent's rational reason to ignore",
+      "prompt": "Why will incumbents rationally *not* respond? Typical: thin margin, small market today, cannibalisation risk against current high-margin products. Their customer interview correctly tells them to ignore you.",
+      "examples": ["Apple cannot serve <$50 phones without destroying its brand-margin model", "Traditional dealerships cannot match Carvana's price without breaking franchise economics", "Established hospitals cannot scale specialist time at telehealth unit price"]
+    },
+    "upmarket-migration-path": {
+      "title": "Upmarket migration path",
+      "prompt": "Concrete trajectory: how will you improve along the mainstream dimensions while preserving foothold advantage? Product milestones, customer-segment migration, scale economics.",
+      "examples": ["Feature phone → Android smartphone for emerging-market mainstream", "Trade-in → certified pre-owned → near-new inventory expansion", "Generalist tele-consult → specialist tele-consult → partnered in-person care"]
+    },
+    "riskiest-assumptions": {
+      "title": "Riskiest assumptions",
+      "prompt": "Which assumption will break the case if false? Pick from: foothold customer willingness, improvement trajectory feasibility, incumbent inattention duration, organisational insulation from parent's margin metrics.",
+      "examples": ["≥X% of foothold customers will actually pay the price we promised", "We can improve mainstream dimension Y by Z% in 24 months", "Incumbent will not respond within 36 months because of cannibalisation risk"]
+    }
+  }
+}

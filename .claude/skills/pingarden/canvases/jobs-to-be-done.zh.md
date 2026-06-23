@@ -43,6 +43,10 @@ source: packages/canvases/jobs-to-be-done/
 - ❌ **结果写成"用上产品"。** "装上了 AI 工具"是拥有产品,不是结果。结果是这个 AI 工具在他们的世界里**产出**了什么。
 - ❌ **忽略失败模式。** 真正重要的工作都有"如果搞砸了"的阴影。如果失败感觉无所谓,这个工作不值得为它做设计。
 
+## Bain 价值透镜衔接
+
+JTBD 是 Bain 价值透镜的上游输入。不要直接从 30 个价值元素开始选；先写清“当什么情境发生、客户想取得什么进展、失败会造成什么情感/社交后果”。然后把 `emotional-social` 中最重要的便签映射到 Bain 的情感、社会或高阶价值元素，再送入 VPC 的 `gains` 和 `gain-creators`。
+
 ## 语气
 
 整张画布读起来要像一个故事,不是一个清单。每一块 1-3 句话内 —— 是一个素描,不是一份立项书。
@@ -77,7 +81,7 @@ source: packages/canvases/jobs-to-be-done/
 
 ### `emotional-social` — 情感 + 社交任务
 
-**Prompt** — 针对上面每一条功能性工作故事,至少为它配一条情感任务和一条社交任务。
+**Prompt** — 针对上面每一条功能性工作故事,至少为它配一条情感任务和一条社交任务；这些可进一步映射到 Bain 价值元素。
 
 **Example** — 情感 — 月结那一周心定下来,不再焦虑
 
@@ -93,10 +97,10 @@ source: packages/canvases/jobs-to-be-done/
 
 这张画布常和这些一起用,做完后引导用户接下去做:
 
-- `value-proposition-canvas` — 把这条验证过的工作放进 VPC 中心,绕着它设计痛点缓解和收益创造。
-- `empathy-map` — 把这个工作锚到一个具体 persona × 时刻,让它具体起来。
-- `ad-lib-value-proposition` — 把验证过的工作 + 结果压缩进 Ad-Lib 一句话,用来对齐利益相关方。
-- `customer-journey` — 标出这个工作在旅程的哪个阶段变得紧迫 —— 那就是产品该发力的地方。
+- `value-proposition-canvas` — 把这条验证过的工作放进 VPC 中心；后续可用 Bain 价值标签区分功能、情感或社会收益。
+- `empathy-map` — 先把这个工作锚到具体 persona × 时刻，再判断是否存在高阶价值。
+- `ad-lib-value-proposition` — 把验证过的工作 + 结果压缩进 Ad-Lib 一句话，用来对齐利益相关方。
+- `customer-journey` — 标出这个工作在旅程的哪个阶段变得紧迫，以及承诺价值在哪里被感知。
 
 ---
 Source: `packages/canvases/jobs-to-be-done/` — regenerate with `pingarden skill build`.

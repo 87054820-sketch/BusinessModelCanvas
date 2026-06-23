@@ -403,6 +403,87 @@ export function CanvasThumb({ id, width = 40, height = 28 }: Props) {
       </svg>
     );
   }
+  if (id === 'porters-value-chain') {
+    // Porter's Value Chain: 4 horizontal support layers on top (firm
+    // infrastructure / HR / tech / procurement) sitting above 5 vertical
+    // primary activity bars (inbound / ops / outbound / marketing / service)
+    // with a margin arrowhead on the right edge — the classic chevron.
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          {/* 4 support layers */}
+          <rect x="3" y="4"  width="44" height="3.5" />
+          <rect x="3" y="8"  width="44" height="3.5" />
+          <rect x="3" y="12" width="44" height="3.5" />
+          <rect x="3" y="16" width="44" height="3.5" />
+          {/* 5 primary verticals */}
+          <rect x="3"    y="22" width="8.4" height="14" />
+          <rect x="11.8" y="22" width="8.4" height="14" />
+          <rect x="20.6" y="22" width="8.4" height="14" />
+          <rect x="29.4" y="22" width="8.4" height="14" />
+          <rect x="38.2" y="22" width="8.4" height="14" />
+        </g>
+        {/* margin chevron on the right edge */}
+        <polygon
+          points="47,4 56,20 47,36"
+          fill="#FCF1A8"
+          stroke="#1F2937"
+          strokeWidth="0.6"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+  if (id === 'disruption-diagnosis') {
+    // Christensen's 3-part strict test laid out as 3 stacked rows:
+    // foothold row · trajectory row · incumbent-reaction row. The
+    // small arrow on the right hints at the upmarket-migration vector.
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          {/* 3 rows of 2 cells each */}
+          <rect x="3"  y="4"  width="26" height="10" />
+          <rect x="31" y="4"  width="26" height="10" />
+          <rect x="3"  y="15" width="26" height="10" />
+          <rect x="31" y="15" width="26" height="10" />
+          <rect x="3"  y="26" width="26" height="10" />
+          <rect x="31" y="26" width="26" height="10" />
+        </g>
+        {/* upmarket trajectory arrow (low-left → high-right) */}
+        <g stroke="#4A7FC1" strokeWidth="0.9" fill="none" strokeLinecap="round">
+          <line x1="6" y1="34" x2="54" y2="8" />
+          <polyline points="50,7 54,8 53,12" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === 'ansoff-matrix') {
+    // Ansoff 2×2: rows = product (existing / new), cols = market
+    // (existing / new). A diagonal arrow runs from low-risk
+    // (top-left penetration) to high-risk (bottom-right diversification);
+    // a bottom strip holds the growth-rationale close-out.
+    return (
+      <svg viewBox="0 0 60 40" {...sizeProps}>
+        <rect x="0" y="0" width="60" height="40" fill="#FAFAF7" />
+        <g fill="none" stroke="#1F2937" strokeWidth="0.6">
+          {/* 2×2 quadrants */}
+          <rect x="4"  y="4"  width="26" height="13" />
+          <rect x="30" y="4"  width="26" height="13" />
+          <rect x="4"  y="17" width="26" height="13" />
+          <rect x="30" y="17" width="26" height="13" />
+          {/* rationale strip */}
+          <rect x="4"  y="32" width="52" height="5" />
+        </g>
+        {/* risk-escalation diagonal */}
+        <g stroke="#D62728" strokeWidth="0.9" fill="none" strokeLinecap="round">
+          <line x1="8" y1="8" x2="52" y2="26" />
+          <polyline points="48,25 52,26 51,22" />
+        </g>
+      </svg>
+    );
+  }
   // Generic fallback (e.g. for future canvas types).
   return (
     <svg viewBox="0 0 60 40" {...sizeProps}>

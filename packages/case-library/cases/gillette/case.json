@@ -45,5 +45,8 @@
   ],
   "appliesPatternSubtypes": {
     "free": "bait-and-hook"
-  }
+  },
+  "appliesStrategyFrameworks": [
+    "porters-value-chain"
+  ]
 }

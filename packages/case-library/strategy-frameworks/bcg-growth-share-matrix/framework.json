@@ -8,6 +8,7 @@
     "en": "A classic portfolio-management framework from BCG that classifies businesses by market growth and relative market share into Stars, Cash Cows, Question Marks, and Dogs to guide investment, harvesting, selection, and divestment decisions.",
     "zh": "BCG 的经典组合管理框架，用市场增长率和相对市场份额把业务分为明星、现金牛、问题和瘦狗，从而指导投入、收割、选择和剥离。"
   },
+  "category": "portfolio-growth",
   "sources": [
     {
       "label": "Boston Consulting Group · What Is the Growth Share Matrix?",

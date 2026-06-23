@@ -31,6 +31,7 @@
   "storyCount": 4,
   "appliesStrategyFrameworks": [
     "blue-ocean-strategy",
-    "bain-elements-of-value"
+    "bain-elements-of-value",
+    "ansoff-matrix"
   ]
 }

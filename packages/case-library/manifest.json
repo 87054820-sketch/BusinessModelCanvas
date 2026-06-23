@@ -41,7 +41,9 @@
     { "slug": "airbnb", "featured": true },
     { "slug": "nespresso", "featured": true },
     { "slug": "alibaba-group", "featured": true },
-    { "slug": "cemex", "featured": true }
+    { "slug": "cemex", "featured": true },
+    { "slug": "nucor-mini-mill-disruption", "featured": true },
+    { "slug": "hdd-industry-disruption", "featured": true }
   ],
   "patterns": [
     { "slug": "long-tail", "featured": true },
@@ -65,7 +67,11 @@
     { "slug": "performance-based-scenario-planning", "featured": true },
     { "slug": "platform-strategy", "featured": true },
     { "slug": "bain-elements-of-value", "featured": true },
-    { "slug": "porters-five-forces", "featured": true }
+    { "slug": "porters-five-forces", "featured": true },
+    { "slug": "pestel-analysis", "featured": true },
+    { "slug": "ansoff-matrix", "featured": true },
+    { "slug": "porters-value-chain", "featured": true },
+    { "slug": "disruptive-innovation", "featured": true }
   ],
   "experiments": [
     { "slug": "customer-interview", "featured": true },
@@ -91,6 +97,7 @@
     { "slug": "the-art-of-the-long-view", "featured": true },
     { "slug": "scenario-planning-in-organizations", "featured": true },
     { "slug": "platform-revolution", "featured": true },
+    { "slug": "christensen-innovators-dilemma", "featured": true },
     { "slug": "world-bank-data-catalog", "featured": true },
     { "slug": "oecd-data-explorer", "featured": true },
     { "slug": "world-bank-enterprise-surveys", "featured": true },

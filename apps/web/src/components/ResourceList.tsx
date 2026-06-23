@@ -57,7 +57,7 @@ function ResourceCard({
           onClick();
         }
       }}
-      className="group flex w-full cursor-pointer flex-col rounded-xl border border-gray-200 bg-white p-4 text-left transition hover:border-amber-300 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-300"
+      className="group flex min-h-[220px] w-full cursor-pointer flex-col rounded-xl border border-gray-200 bg-white p-4 text-left transition hover:border-amber-300 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-300"
     >
       <div className="flex items-start justify-between gap-2">
         <h2 className="min-w-0 flex-1 text-sm font-semibold text-gray-900">{title}</h2>
@@ -65,10 +65,10 @@ function ResourceCard({
           {t(`library.resourceTypes.${resource.type}`)}
         </span>
       </div>
-      <p className="mt-2 line-clamp-4 text-[12px] leading-relaxed text-gray-500">
+      <p className="mt-3 line-clamp-5 text-[12px] leading-relaxed text-gray-500">
         {recommendation}
       </p>
-      <div className="mt-3 text-[11px] text-gray-400">
+      <div className="mt-auto pt-4 text-[11px] text-gray-400">
         {[resource.authors.join(', '), resource.year].filter(Boolean).join(' · ')}
       </div>
       <div className="mt-3 flex flex-wrap gap-1.5">

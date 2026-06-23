@@ -661,6 +661,42 @@ export interface UpdateStoryInput {
   contentDateLabel?: string;
 }
 
+export type CopilotImageMimeType = 'image/png' | 'image/jpeg' | 'image/webp' | 'image/gif';
+
+export interface CopilotImageAttachment {
+  id: string;
+  name: string;
+  mimeType: CopilotImageMimeType;
+  sizeBytes: number;
+  dataUrl: string;
+  width?: number;
+  height?: number;
+  thumbnailDataUrl?: string;
+}
+
+export interface CopilotDraftSticky {
+  zoneId: string;
+  text: string;
+  color?: string;
+}
+
+export interface CopilotDraftCanvas {
+  defId: string;
+  title: string;
+  stickies: CopilotDraftSticky[];
+}
+
+export interface CopilotProjectDraft {
+  kind: 'pingarden.projectDraft';
+  project: {
+    name: string;
+    description?: string;
+  };
+  canvases: CopilotDraftCanvas[];
+  missingFields?: string[];
+  notes?: string[];
+}
+
 export function parseStoryCanvasDirectives(content: string): StoryCanvasDirective[] {
   const directives: StoryCanvasDirective[] = [];
   const block = /^::canvas(?:\[([^\]\n]+)\])?\{([^}\n]*)\}\s*$/gm;
@@ -1070,9 +1106,8 @@ export type StrategyFrameworkCategory =
   | 'environment-competition'
   | 'organization-ecosystem'
   | 'innovation-evidence'
-  | 'customer-value-lens';
-
-export type StrategyFrameworkAnalysisRole = 'primary-framework' | 'supporting-lens';
+  | 'customer-value-lens'
+  | 'foresight-scenarios';
 
 export interface StrategyFrameworkReference {
   type: StrategyFrameworkReferenceType;
@@ -1096,10 +1131,8 @@ export interface StrategyFramework {
   name: LocalizedLabel;
   /** Bilingual one-paragraph blurb shown on the framework card. */
   summary: LocalizedLabel;
-  /** High-level family used to distinguish portfolio, environment, organization, and customer-value lenses. */
+  /** High-level family used to distinguish portfolio, environment, organization, foresight, and customer-value lenses. */
   category?: StrategyFrameworkCategory;
-  /** Whether this method is a primary decision framework or a supporting interpretation lens. */
-  analysisRole?: StrategyFrameworkAnalysisRole;
   /** Flat sources for backward-compatible citation rendering. */
   sources: CaseSource[];
   /** Annotated bibliography preferred by the UI and generated skill. */

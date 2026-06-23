@@ -16,6 +16,8 @@ extraResources:
     to: cli/dist
   - from: ../cli/assets
     to: cli/assets
+  - from: ../cli/build/skill
+    to: skill-pack
 mac:
   category: public.app-category.productivity
   target:

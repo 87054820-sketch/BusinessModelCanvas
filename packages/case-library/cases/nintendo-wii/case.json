@@ -50,6 +50,7 @@
     "multi-sided-platforms"
   ],
   "appliesStrategyFrameworks": [
-    "blue-ocean-strategy"
+    "blue-ocean-strategy",
+    "ansoff-matrix"
   ]
 }

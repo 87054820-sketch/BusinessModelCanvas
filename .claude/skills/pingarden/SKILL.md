@@ -1,7 +1,7 @@
 ---
 name: pingarden
-description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js` and prompt the user to follow INSTALL.md §三 to symlink it.
-version: 0.4.1-9685e9c9
+description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `"${HOME}/Library/Application Support/PinGarden/bin/pingarden"` and tell the user to open PinGarden once or use Help → Install CLI to PATH.
+version: 0.5.0-8ed0e359
 ---
 
 # PinGarden — official skill
@@ -13,7 +13,7 @@ You are working with **PinGarden**, a local Strategyzer-style canvas tool. This 
 Don't wait for the user to ask twice — when this skill loads, do this **immediately**, before producing any canvas content:
 
 1. Run `pingarden doctor` to confirm both halves are up:
-   - **CLI on PATH.** If you get `command not found`, fall back to `node /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js <args>` AND tell the user to symlink it permanently per INSTALL.md §三 (`sudo ln -s /Applications/PinGarden.app/Contents/Resources/cli/dist/index.js /usr/local/bin/pingarden`). Don't silently keep typing the long path forever.
+   - **CLI on PATH.** If you get `command not found`, first try `"${HOME}/Library/Application Support/PinGarden/bin/pingarden" <args>`; if that path is missing, tell the user to launch PinGarden once, then use `Help → Install CLI to PATH`. Don't fall back to running bundled JS with `node`.
    - **PinGarden app/server.** Doctor reports the discovered port and a `/health` ping. If the server is down, tell the user to launch the PinGarden app — never try to write to `apps/server/data/` directly or parse Yjs binary as a workaround.
 2. If both are green, **list what already exists** before suggesting fresh authoring:
    - `pingarden case list --json` — 22 curated company cases (Spotify, Uber, Airbnb, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
@@ -33,19 +33,24 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 
 ### Canvases (one per template, both languages)
 - `canvases/ad-lib-value-proposition.en.md` / `canvases/ad-lib-value-proposition.zh.md`
+- `canvases/ansoff-matrix.en.md` / `canvases/ansoff-matrix.zh.md`
+- `canvases/bcg-growth-share-matrix.en.md` / `canvases/bcg-growth-share-matrix.zh.md`
 - `canvases/blue-ocean-strategy-canvas.en.md` / `canvases/blue-ocean-strategy-canvas.zh.md`
 - `canvases/business-model-canvas.en.md` / `canvases/business-model-canvas.zh.md`
 - `canvases/business-model-environment.en.md` / `canvases/business-model-environment.zh.md`
 - `canvases/customer-journey.en.md` / `canvases/customer-journey.zh.md`
 - `canvases/design-criteria-canvas.en.md` / `canvases/design-criteria-canvas.zh.md`
+- `canvases/disruption-diagnosis.en.md` / `canvases/disruption-diagnosis.zh.md`
 - `canvases/empathy-map.en.md` / `canvases/empathy-map.zh.md`
 - `canvases/evidence-scorecard.en.md` / `canvases/evidence-scorecard.zh.md`
 - `canvases/experiment-canvas.en.md` / `canvases/experiment-canvas.zh.md`
 - `canvases/innovation-culture-map.en.md` / `canvases/innovation-culture-map.zh.md`
 - `canvases/jobs-to-be-done.en.md` / `canvases/jobs-to-be-done.zh.md`
 - `canvases/platform-ecosystem-map.en.md` / `canvases/platform-ecosystem-map.zh.md`
+- `canvases/porters-value-chain.en.md` / `canvases/porters-value-chain.zh.md`
 - `canvases/portfolio-map.en.md` / `canvases/portfolio-map.zh.md`
 - `canvases/scenario-matrix.en.md` / `canvases/scenario-matrix.zh.md`
+- `canvases/three-horizons-map.en.md` / `canvases/three-horizons-map.zh.md`
 - `canvases/value-proposition-canvas.en.md` / `canvases/value-proposition-canvas.zh.md`
 
 ### Business model patterns (one per pattern, both languages)
@@ -73,11 +78,21 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `experiments/wizard-of-oz.en.md` / `experiments/wizard-of-oz.zh.md`
 
 ### Strategy frameworks (one per framework, both languages)
+- `strategy-frameworks/ansoff-matrix.en.md` / `strategy-frameworks/ansoff-matrix.zh.md`
+- `strategy-frameworks/bain-elements-of-value.en.md` / `strategy-frameworks/bain-elements-of-value.zh.md`
+- `strategy-frameworks/bcg-growth-share-matrix.en.md` / `strategy-frameworks/bcg-growth-share-matrix.zh.md`
 - `strategy-frameworks/blue-ocean-strategy.en.md` / `strategy-frameworks/blue-ocean-strategy.zh.md`
 - `strategy-frameworks/business-model-environment-scan.en.md` / `strategy-frameworks/business-model-environment-scan.zh.md`
 - `strategy-frameworks/business-model-portfolio-management.en.md` / `strategy-frameworks/business-model-portfolio-management.zh.md`
+- `strategy-frameworks/disruptive-innovation.en.md` / `strategy-frameworks/disruptive-innovation.zh.md`
 - `strategy-frameworks/innovation-metrics.en.md` / `strategy-frameworks/innovation-metrics.zh.md`
+- `strategy-frameworks/mckinsey-7s.en.md` / `strategy-frameworks/mckinsey-7s.zh.md`
+- `strategy-frameworks/mckinsey-three-horizons.en.md` / `strategy-frameworks/mckinsey-three-horizons.zh.md`
+- `strategy-frameworks/performance-based-scenario-planning.en.md` / `strategy-frameworks/performance-based-scenario-planning.zh.md`
+- `strategy-frameworks/pestel-analysis.en.md` / `strategy-frameworks/pestel-analysis.zh.md`
 - `strategy-frameworks/platform-strategy.en.md` / `strategy-frameworks/platform-strategy.zh.md`
+- `strategy-frameworks/porters-five-forces.en.md` / `strategy-frameworks/porters-five-forces.zh.md`
+- `strategy-frameworks/porters-value-chain.en.md` / `strategy-frameworks/porters-value-chain.zh.md`
 - `strategy-frameworks/scenario-planning.en.md` / `strategy-frameworks/scenario-planning.zh.md`
 
 ### Workflows
@@ -94,6 +109,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `workflows/authoring-patterns.md` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)
 - `workflows/experiments.md` — when the user has a riskiest assumption to test: classify it as Desirability / Feasibility / Viability and recommend 2–3 experiments from the library matched on theme + risk + cost
 - `workflows/strategy-frameworks.md` — when the user asks for strategic analysis methods such as Blue Ocean Strategy or wants cases by framework
+- `workflows/strategy-framework-combinations.md` — when the user asks which frameworks to chain, which look similar but differ (PESTEL vs BMEScan, Ansoff vs BCG, Blue Ocean vs Disruption), or what to run after a given analysis
 
 ### Reference
 - `reference/cli-cheatsheet.md` — top commands with JSON output examples

@@ -30,6 +30,7 @@
   "canvasCount": 4,
   "storyCount": 2,
   "appliesStrategyFrameworks": [
-    "blue-ocean-strategy"
+    "blue-ocean-strategy",
+    "pestel-analysis"
   ]
 }

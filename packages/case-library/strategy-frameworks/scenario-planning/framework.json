@@ -8,6 +8,7 @@
     "en": "A framework for turning environment signals and critical uncertainties into multiple plausible futures, then testing which business-model moves remain robust across them.",
     "zh": "一套把环境信号和关键不确定性转成多个可信未来，并检验哪些商业模式动作在多个情景下都稳健的框架。"
   },
+  "category": "foresight-scenarios",
   "sources": [
     {
       "label": "Peter Schwartz · The Art of the Long View · Currency Doubleday · 1991"

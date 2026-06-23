@@ -206,6 +206,10 @@ require_dir ".claude/skills/pingarden/canvases"
 # The skill zip is the portable artifact for non-Claude-Code agents.
 require_file "$SKILL_ZIP"
 
+if ! grep -q 'to: skill-pack' apps/desktop/electron-builder.yml; then
+  fail "electron-builder.yml must bundle apps/cli/build/skill as extraResources → skill-pack."
+fi
+
 if find apps/desktop/dist -path '*/data/*' -print -quit | grep -q .; then
   fail "Desktop bundle contains runtime data files; installer must not include user/dev data directories."
 fi

@@ -45,9 +45,12 @@ import { Inspector } from '../workspace/Inspector';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { LightboxRoot } from '../components/Lightbox';
 import { ReadOnlyBanner } from '../components/ReadOnlyBanner';
+import { CopilotDrawer } from '../components/CopilotDrawer';
+import { CopilotErrorBoundary } from '../components/CopilotErrorBoundary';
 import { useUiPrefs } from '../state/uiPrefs';
 import { StoryWorkspace } from '../story/StoryWorkspace';
 import { libraryApi } from '../api/library';
+import type { AttachedRef } from '../copilot/useConversation';
 
 /**
  * `true` when the keystroke should be left to the browser's native text
@@ -149,6 +152,8 @@ export function ProjectWorkspacePage() {
   // Confirm dialogs
   const [pendingDeleteCanvas, setPendingDeleteCanvas] = useState<CanvasMeta | null>(null);
   const [pendingDeleteStory, setPendingDeleteStory] = useState<StoryMeta | null>(null);
+  const [copilotOpen, setCopilotOpen] = useState(false);
+  const [attachedRef, setAttachedRef] = useState<AttachedRef | null>(null);
 
   const clearSelection = useSelection((s) => s.clear);
   const selectProject = useSelection((s) => s.selectProject);
@@ -856,6 +861,49 @@ export function ProjectWorkspacePage() {
     navigate(`/p/${result.project.id}`);
   }
 
+  function openProjectCopilot() {
+    setAttachedRef({
+      type: 'project',
+      projectId: displayProject.id,
+      projectName: displayProject.name,
+      projectSource: readOnly ? 'library' : 'user',
+      ...(activeCanvas ? { activeCanvasId: activeCanvas.id } : {}),
+      ...(activeStory ? { activeStoryId: activeStory.id } : {}),
+    });
+    setCopilotOpen(true);
+  }
+
+  function openCanvasCopilot(canvas: CanvasMeta) {
+    setAttachedRef({
+      type: 'canvas',
+      canvasId: canvas.id,
+      canvasTitle: canvas.title,
+      projectId: displayProject.id,
+      projectName: displayProject.name,
+      projectSource: readOnly ? 'library' : 'user',
+    });
+    setCopilotOpen(true);
+  }
+
+  function openStoryCopilot(story: StoryMeta) {
+    setAttachedRef({
+      type: 'story',
+      storyId: story.id,
+      storyTitle: story.title,
+      projectId: displayProject.id,
+      projectName: displayProject.name,
+      projectSource: readOnly ? 'library' : 'user',
+    });
+    setCopilotOpen(true);
+  }
+
+  function handleCopilotNavigateToCanvas() {
+    setCopilotOpen(false);
+    setRightTab('intro');
+    selectCanvas();
+    setRightCollapsed(false);
+  }
+
   return (
     <div className="flex h-full flex-col">
       {readOnly && (
@@ -892,6 +940,7 @@ export function ProjectWorkspacePage() {
         onAddStory={handleAddStory}
         onDeleteCanvas={(c) => setPendingDeleteCanvas(c)}
         onDeleteStory={(s) => setPendingDeleteStory(s)}
+        onOpenCopilot={openProjectCopilot}
         readOnly={readOnly}
       />
 
@@ -904,6 +953,7 @@ export function ProjectWorkspacePage() {
             lang={lang}
             displayName={identity.displayName}
             onStoryUpdated={handleStoryUpdated}
+            onOpenCopilot={() => openStoryCopilot(activeStory)}
             readOnly={readOnly}
           />
         ) : activeCanvas ? (
@@ -913,6 +963,7 @@ export function ProjectWorkspacePage() {
               projectId={project.id}
               displayName={identity.displayName}
               readOnly={readOnly}
+              onOpenCopilot={() => openCanvasCopilot(activeCanvas)}
               onRename={async (title) => {
                 const updated = await api.updateCanvas(
                   activeCanvas.id,
@@ -960,6 +1011,7 @@ export function ProjectWorkspacePage() {
                           doc={doc}
                           lang={lang}
                           readOnly={readOnly}
+                          defaultColorLegend={bundle?.def.defaultColorLegend}
                         />
                       </div>
                     </div>
@@ -1240,6 +1292,16 @@ export function ProjectWorkspacePage() {
           if (pendingDeleteStory) await handleDeleteStory(pendingDeleteStory);
         }}
       />
+
+      <CopilotErrorBoundary label="PinGarden Copilot crashed — details below">
+        <CopilotDrawer
+          open={copilotOpen}
+          onClose={() => setCopilotOpen(false)}
+          onNavigateToCanvas={handleCopilotNavigateToCanvas}
+          attachedRef={attachedRef}
+          lang={lang}
+        />
+      </CopilotErrorBoundary>
 
       <LightboxRoot />
     </div>

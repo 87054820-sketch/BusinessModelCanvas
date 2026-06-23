@@ -260,9 +260,17 @@ function PinGlyph({
     case 'flag':
       return (
         <g>
-          <line x1={0} y1={9} x2={0} y2={-10} stroke={color} strokeWidth={2} />
-          <polygon
-            points="0,-10 12,-7 0,-3"
+          <line
+            x1={-0.5}
+            y1={10}
+            x2={-0.5}
+            y2={-10}
+            stroke={color}
+            strokeWidth={2.2}
+            strokeLinecap="round"
+          />
+          <path
+            d="M 0 -10 L 14 -10 L 11 -6 L 14 -2 L 0 -2 Z"
             fill={color}
             stroke={stroke}
             strokeWidth={strokeWidth}

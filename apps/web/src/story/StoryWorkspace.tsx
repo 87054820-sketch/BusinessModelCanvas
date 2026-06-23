@@ -12,6 +12,7 @@ interface Props {
   lang: Lang;
   displayName: string;
   onStoryUpdated: (story: StoryMeta) => void;
+  onOpenCopilot: () => void;
   /**
    * Library-case mode: title / contentDate / markdown content all
    * become non-editable, the read/edit segmented control disappears
@@ -30,6 +31,7 @@ export function StoryWorkspace({
   lang,
   displayName,
   onStoryUpdated,
+  onOpenCopilot,
   readOnly = false,
 }: Props) {
   const { t } = useTranslation();
@@ -142,6 +144,13 @@ export function StoryWorkspace({
               />
             </label>
             <div className="text-xs text-gray-500">{savedLabel}</div>
+            <button
+              type="button"
+              onClick={onOpenCopilot}
+              className="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition hover:border-stone-300 hover:bg-stone-50"
+            >
+              {t('library.copilot.openButton')}
+            </button>
             {!readOnly && (
               <div className="rounded-full bg-stone-100 p-1">
                 <button

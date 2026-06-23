@@ -1,0 +1,78 @@
+{
+  "id": "porters-value-chain",
+  "name": {
+    "en": "Porter's Value Chain",
+    "zh": "波特价值链"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    },
+    "canvas": {
+      "showBlockPrompts": true
+    }
+  },
+  "related": ["business-model-canvas", "design-criteria-canvas", "platform-ecosystem-map"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Every value-chain activity translates into a Key Activity, Key Resource, or Key Partner on the BMC. Don't let Value Chain stay on a slide — map each activity into a BMC block.",
+      "zh": "每个价值链活动都对应 BMC 的某个关键活动、关键资源或关键伙伴。不要让 Value Chain 停在图上——把每个活动映射到 BMC 的某个块。"
+    },
+    "design-criteria-canvas": {
+      "en": "Encode activity-level rules (gross margin ≥30%, service response ≤4h, supplier defect rate ≤0.1%) as design criteria the next business-model iteration must respect.",
+      "zh": "把活动级规则（毛利 ≥30%、服务响应 ≤4h、供应商缺陷率 ≤0.1%）编码为下一轮商业模式迭代必须遵守的设计准则。"
+    },
+    "platform-ecosystem-map": {
+      "en": "For platform / multi-sided businesses, physical inbound and outbound logistics shrink to near-zero; Technology Development and capacity Procurement dominate. Use the ecosystem map alongside.",
+      "zh": "对于平台 / 多边业务，实体的进货与出货物流几乎消失，技术开发与容量采购成为主导。配合生态地图一起看。"
+    }
+  },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Cost-advantage activity", "zh": "成本优势活动" },
+      "description": { "en": "Activity where scale, automation, or process design creates a defendable cost gap vs. competitors.", "zh": "通过规模、自动化或流程设计相对竞争对手建立可守护成本差的活动。" }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "Differentiation-advantage activity", "zh": "差异化优势活动" },
+      "description": { "en": "Activity where quality, design, or experience creates a price premium customers will pay for.", "zh": "通过品质、设计或体验创造客户愿意付溢价的活动。" }
+    },
+    {
+      "hex": "#E2D5F0",
+      "label": { "en": "Linkage / handoff", "zh": "联动 / 接缝" },
+      "description": { "en": "Reinforcing or conflicting handoff between two activities (e.g., procurement quality → operations consistency).", "zh": "两个活动之间互相加强或互相打架的接缝（如采购品质 → 生产稳定性）。" }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Leak / weakness", "zh": "漏点 / 弱项" },
+      "description": { "en": "Activity where cost is rising, differentiation is eroding, or capability is below the bar required by the strategic intent.", "zh": "成本上涨、差异化失效，或能力低于战略意图所要求底线的活动。" }
+    },
+    {
+      "hex": "#CFEBD3",
+      "label": { "en": "Capability investment", "zh": "能力投入" },
+      "description": { "en": "Capability or asset the firm should invest in to deepen advantage at this activity.", "zh": "为强化此活动优势需要追加投入的能力或资产。" }
+    }
+  ],
+  "zones": [
+    { "id": "firm-infrastructure", "shape": { "type": "rect", "x": 80, "y": 85, "w": 1000, "h": 85 }, "label": { "x": 100, "y": 118, "align": "left", "fontSize": 18 } },
+    { "id": "human-resource-management", "shape": { "type": "rect", "x": 80, "y": 175, "w": 1000, "h": 85 }, "label": { "x": 100, "y": 208, "align": "left", "fontSize": 18 } },
+    { "id": "technology-development", "shape": { "type": "rect", "x": 80, "y": 265, "w": 1000, "h": 85 }, "label": { "x": 100, "y": 298, "align": "left", "fontSize": 18 } },
+    { "id": "procurement", "shape": { "type": "rect", "x": 80, "y": 355, "w": 1000, "h": 85 }, "label": { "x": 100, "y": 388, "align": "left", "fontSize": 18 } },
+    { "id": "inbound-logistics", "shape": { "type": "rect", "x": 80, "y": 475, "w": 200, "h": 300 }, "label": { "x": 95, "y": 510, "align": "left", "fontSize": 16 } },
+    { "id": "operations", "shape": { "type": "rect", "x": 285, "y": 475, "w": 200, "h": 300 }, "label": { "x": 300, "y": 510, "align": "left", "fontSize": 16 } },
+    { "id": "outbound-logistics", "shape": { "type": "rect", "x": 490, "y": 475, "w": 200, "h": 300 }, "label": { "x": 505, "y": 510, "align": "left", "fontSize": 16 } },
+    { "id": "marketing-sales", "shape": { "type": "rect", "x": 695, "y": 475, "w": 200, "h": 300 }, "label": { "x": 710, "y": 510, "align": "left", "fontSize": 16 } },
+    { "id": "service", "shape": { "type": "rect", "x": 900, "y": 475, "w": 200, "h": 300 }, "label": { "x": 915, "y": 510, "align": "left", "fontSize": 16 } },
+    { "id": "margin", "shape": { "type": "rect", "x": 1120, "y": 85, "w": 120, "h": 690 }, "label": { "x": 1180, "y": 130, "align": "center", "fontSize": 18 } }
+  ]
+}

@@ -16,7 +16,23 @@
       "Bash(pingarden doctor *)",
       "Bash(grep -E \"\\\\.en\\\\.md$\")",
       "Bash(python3 -c \"import json; json.load\\(open\\('packages/case-library/experiments/smoke-test/experiment.json'\\)\\)\")",
-      "Bash(python3 -c \"import json; json.load\\(open\\('packages/case-library/experiments/wizard-of-oz/experiment.json'\\)\\)\")"
+      "Bash(python3 -c \"import json; json.load\\(open\\('packages/case-library/experiments/wizard-of-oz/experiment.json'\\)\\)\")",
+      "Bash(pnpm --filter @pingarden/shared run build)",
+      "Bash(./start.sh)",
+      "Bash(curl -s http://localhost:4000/library/strategy-frameworks)",
+      "Bash(python3 -c \"import sys, json; d=json.load\\(sys.stdin\\); fs=d.get\\('frameworks', d\\) if isinstance\\(d, dict\\) else d; print\\(f'count={len\\(fs\\)}'\\); [print\\(f\\\\\"{f['slug']:40} {f.get\\('category',''\\)}\\\\\"\\) for f in fs]\")",
+      "Bash(curl -s \"http://localhost:4000/canvas-defs/porters-value-chain?lang=en\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('id:',d.get\\('id'\\)\\); print\\('zones:',len\\(d.get\\('zones',[]\\)\\)\\); print\\('related:',d.get\\('related'\\)\\)\")",
+      "Bash(curl -s \"http://localhost:4000/canvas-defs/disruption-diagnosis?lang=en\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('id:',d.get\\('id'\\)\\); print\\('zones:',len\\(d.get\\('zones',[]\\)\\)\\)\")",
+      "Bash(curl -s \"http://localhost:4000/canvas-defs/ansoff-matrix?lang=en\")",
+      "Bash(curl -s 'http://localhost:4000/canvas-defs/__TRACKED_VAR__?lang=en')",
+      "Bash(xargs cat *)",
+      "Bash(xargs -I {} dirname {})",
+      "Bash(xargs -I {} basename {})",
+      "Bash(pnpm --filter @pingarden/web run typecheck)",
+      "Bash(uuidgen)",
+      "Bash(python3 *)"
     ]
   }
 }

@@ -10,6 +10,7 @@ import { MyProjectsPage } from './pages/MyProjectsPage';
 import { NewProjectPage } from './pages/NewProjectPage';
 import { ProjectWorkspacePage } from './pages/ProjectWorkspacePage';
 import { HistoryPage } from './pages/HistoryPage';
+import { CopilotErrorBoundary } from './components/CopilotErrorBoundary';
 
 export default function App() {
   const { t } = useTranslation();
@@ -60,25 +61,27 @@ export default function App() {
       </nav>
 
       <div className="min-h-0 flex-1 overflow-auto">
-        <Routes>
-          <Route path="/" element={<ProjectListPage />} />
-          <Route path="/library" element={<LibraryPage />} />
-          <Route path="/projects" element={<MyProjectsPage />} />
-          <Route path="/p/new" element={<NewProjectPage />} />
-          <Route path="/p/:projectId" element={<ProjectWorkspacePage />} />
-          <Route
-            path="/p/:projectId/c/:canvasId"
-            element={<ProjectWorkspacePage />}
-          />
-          <Route
-            path="/p/:projectId/s/:storyId"
-            element={<ProjectWorkspacePage />}
-          />
-          <Route
-            path="/p/:projectId/c/:canvasId/history"
-            element={<HistoryPage />}
-          />
-        </Routes>
+        <CopilotErrorBoundary label="Route crashed — see stack below">
+          <Routes>
+            <Route path="/" element={<ProjectListPage />} />
+            <Route path="/library" element={<LibraryPage />} />
+            <Route path="/projects" element={<MyProjectsPage />} />
+            <Route path="/p/new" element={<NewProjectPage />} />
+            <Route path="/p/:projectId" element={<ProjectWorkspacePage />} />
+            <Route
+              path="/p/:projectId/c/:canvasId"
+              element={<ProjectWorkspacePage />}
+            />
+            <Route
+              path="/p/:projectId/s/:storyId"
+              element={<ProjectWorkspacePage />}
+            />
+            <Route
+              path="/p/:projectId/c/:canvasId/history"
+              element={<HistoryPage />}
+            />
+          </Routes>
+        </CopilotErrorBoundary>
       </div>
 
       {/*

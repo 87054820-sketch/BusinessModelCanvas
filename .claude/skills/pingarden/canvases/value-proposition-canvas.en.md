@@ -45,6 +45,10 @@ The most common failure mode is filling the Value Map first; you'll then backfit
 5. **Pain Relievers** — for each Pain, how does your offering reduce or remove it? Be explicit per pain.
 6. **Gain Creators** — for each Gain, how does your offering produce or amplify it? Be explicit per gain.
 
+### Bain value lens (supporting, not primary canvas):
+
+When gains are too vague, use `bain-elements-of-value` to add light tags to `gains` / `gain-creators`, for example `[functional-saves time]`, `[emotional-reduces anxiety]`, or `[social-badge value]`. The tag explains the VPC sticky; it never replaces real customer jobs, pains, or gains.
+
 ## Cross-block invariants — VPC's whole logic depends on these
 
 - **Each Pain Reliever should map to ≥1 specific Pain.** If a reliever doesn't address an actual pain you wrote, it's a feature looking for a problem.
@@ -75,7 +79,7 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 ### `gain-creators` — Gain Creators
 
-**Prompt** — How does your offer create a specific gain customers value?
+**Prompt** — How does your offer create a specific gain customers value? Add Bain value tags when useful.
 
 **Example** — Saves 4 hours/week of manual reconciliation
 
@@ -99,7 +103,7 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 ### `gains` — Gains
 
-**Prompt** — What outcomes does the customer expect, desire, or love?
+**Prompt** — What outcomes does the customer expect, desire, or love? Use Bain tags to separate functional, emotional, and social value.
 
 **Example** — Closes books faster than competitors
 
@@ -131,7 +135,7 @@ This canvas typically pairs with the following — once done, suggest the user m
 
 - `business-model-canvas` — Lift the validated Value Proposition + Customer Segment back into the BMC so the rest of the model adapts.
 - `empathy-map` — Deep-dive on what the customer thinks / says / feels before listing Jobs and Pains. Anchors the right side.
-- `jobs-to-be-done` — Sharpen Customer Jobs into a single situation → motivation → outcome story. Disambiguates fuzzy jobs.
+- `jobs-to-be-done` — Sharpen Customer Jobs into a situation → motivation → outcome story before using Bain tags to classify value layers.
 - `ad-lib-value-proposition` — Compress the entire VPC into one sentence the team can say out loud — exposes weak spots.
 - `customer-journey` — Walk Pains and Gains across the customer's timeline so you see when each one bites.
 - `design-criteria-canvas` — Translate the validated Pains and Gains into design criteria for the offering.

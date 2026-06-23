@@ -1,0 +1,78 @@
+{
+  "id": "disruption-diagnosis",
+  "name": {
+    "en": "Disruption Diagnosis",
+    "zh": "颠覆诊断画布"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    },
+    "canvas": {
+      "showBlockPrompts": true
+    }
+  },
+  "related": ["business-model-canvas", "portfolio-map", "value-proposition-canvas", "three-horizons-map"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Disruption is rarely just a product story. Sketch the incumbent's BMC alongside the disruptor's BMC and name where they diverge — channels, cost structure, key activities, partners.",
+      "zh": "颠覆几乎从来不只是产品故事。并排画在位者 BMC 和颠覆者 BMC，指出在哪里分叉——渠道、成本结构、关键活动、伙伴。"
+    },
+    "portfolio-map": {
+      "en": "Disruptive bets sit deep in the Explore quadrant with high risk and uncertain return. The foothold → mainstream → upmarket trajectory becomes a path of pin migrations on the Portfolio Map.",
+      "zh": "颠覆性押注深处于 Explore 象限，高风险、收益不确定。立足点 → 主流 → 高端的轨迹在 Portfolio Map 上变成一条 pin 迁移路径。"
+    },
+    "value-proposition-canvas": {
+      "en": "For new-market disruption, the customer side is non-consumers — pains and jobs never previously served. For low-end, it is overshot mainstream customers — pains specifically caused by the incumbent's over-engineering.",
+      "zh": "新市场颠覆的客户侧是不消费者——从未被服务过的痛和工作。低端颠覆的客户侧是被过度满足的主流客户——来自在位者「过度工程」的痛。"
+    },
+    "three-horizons-map": {
+      "en": "A disruption candidate is typically an H3 bet. Run Disruption Diagnosis first to pass the Christensen strict test, then place on Three Horizons for time-portfolio sequencing, then use Innovation Metrics to measure.",
+      "zh": "颠覆候选通常是 H3 押注。先用 Disruption Diagnosis 通过 Christensen 严格判定，再放进三层增长做时间组合排序，再用创新指标度量。"
+    }
+  },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Incumbent baseline", "zh": "在位者基线" },
+      "description": { "en": "How the incumbent currently serves mainstream customers along conventional dimensions.", "zh": "在位者目前如何沿传统维度服务主流客户。" }
+    },
+    {
+      "hex": "#CFEBD3",
+      "label": { "en": "Disruptor foothold", "zh": "颠覆者立足点" },
+      "description": { "en": "Where the new entrant starts: overshot mainstream customer or non-consumer the incumbent rationally ignores.", "zh": "新进入者起点：被过度满足的主流客户，或在位者理性忽视的不消费者。" }
+    },
+    {
+      "hex": "#E2D5F0",
+      "label": { "en": "Migration evidence", "zh": "迁移证据" },
+      "description": { "en": "Evidence of improvement trajectory along mainstream dimensions: product milestones, customer-segment migration, scale curve.", "zh": "沿主流维度改进轨迹的证据：产品里程碑、客户群迁移、规模曲线。" }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Riskiest assumption", "zh": "最致命假设" },
+      "description": { "en": "Foothold willingness, improvement trajectory, or incumbent inattention duration — which assumption is most likely to break first.", "zh": "立足点意愿、改进轨迹或在位者继续忽视的时长——哪一条最可能先破。" }
+    },
+    {
+      "hex": "#FBDDC0",
+      "label": { "en": "Strict-test note", "zh": "严格判定备注" },
+      "description": { "en": "Note against Christensen's 3-part test (low-end or non-consumption foothold / initially inferior on mainstream / upmarket improvement) — does this candidate truly qualify?", "zh": "对照 Christensen 三段判定（低端或不消费立足点 / 起步主流维度更差 / 沿主流维度向上改进）的备注——这个候选真的够格吗？" }
+    }
+  ],
+  "zones": [
+    { "id": "foothold-customer", "shape": { "type": "rect", "x": 40, "y": 90, "w": 400, "h": 360 }, "label": { "x": 60, "y": 128, "align": "left", "fontSize": 18 } },
+    { "id": "worse-on-dimension", "shape": { "type": "rect", "x": 455, "y": 90, "w": 400, "h": 360 }, "label": { "x": 475, "y": 128, "align": "left", "fontSize": 18 } },
+    { "id": "acceptable-on-dimension", "shape": { "type": "rect", "x": 870, "y": 90, "w": 370, "h": 360 }, "label": { "x": 890, "y": 128, "align": "left", "fontSize": 18 } },
+    { "id": "incumbent-rational-ignore", "shape": { "type": "rect", "x": 40, "y": 470, "w": 400, "h": 360 }, "label": { "x": 60, "y": 508, "align": "left", "fontSize": 18 } },
+    { "id": "upmarket-migration-path", "shape": { "type": "rect", "x": 455, "y": 470, "w": 400, "h": 360 }, "label": { "x": 475, "y": 508, "align": "left", "fontSize": 18 } },
+    { "id": "riskiest-assumptions", "shape": { "type": "rect", "x": 870, "y": 470, "w": 370, "h": 360 }, "label": { "x": 890, "y": 508, "align": "left", "fontSize": 18 } }
+  ]
+}
