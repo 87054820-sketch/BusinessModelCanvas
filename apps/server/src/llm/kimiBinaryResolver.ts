@@ -1,4 +1,4 @@
-import { execSync } from 'node:child_process';
+import { execFileSync, execSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -83,7 +83,7 @@ export function resolveKimiBinary(): string {
 export function readKimiVersion(binPath?: string): string | undefined {
   try {
     const bin = binPath ?? resolveKimiBinary();
-    const out = execSync(`${bin} --version`, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+    const out = execFileSync(bin, ['--version'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
     return out.trim() || undefined;
   } catch {
     return undefined;

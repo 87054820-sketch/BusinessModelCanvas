@@ -55,38 +55,14 @@ export type AttachedRef =
       projectSource?: 'user' | 'library';
     };
 
-const STORAGE_KEY_PREFIX = 'pingarden.copilot.conversation.';
+const LEGACY_STORAGE_KEY_PREFIX = 'pingarden.copilot.conversation.';
 
-function storageKey(displayName: string): string {
-  return STORAGE_KEY_PREFIX + displayName;
-}
-
-function load(displayName: string): ConversationMessage[] {
-  if (typeof localStorage === 'undefined') return [];
-  const raw = localStorage.getItem(storageKey(displayName));
-  if (!raw) return [];
-  try {
-    const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return [];
-    return parsed.filter(isMessage);
-  } catch {
-    return [];
+function clearPersistedConversations() {
+  if (typeof localStorage === 'undefined') return;
+  for (let i = localStorage.length - 1; i >= 0; i -= 1) {
+    const key = localStorage.key(i);
+    if (key?.startsWith(LEGACY_STORAGE_KEY_PREFIX)) localStorage.removeItem(key);
   }
-}
-
-function isMessage(v: unknown): v is ConversationMessage {
-  if (!v || typeof v !== 'object') return false;
-  const m = v as Partial<ConversationMessage>;
-  return (
-    typeof m.id === 'string' &&
-    (m.role === 'user' || m.role === 'assistant') &&
-    typeof m.content === 'string' &&
-    typeof m.ts === 'string'
-  );
-}
-
-function persist(displayName: string, msgs: ConversationMessage[]) {
-  localStorage.setItem(storageKey(displayName), JSON.stringify(msgs));
 }
 
 function uuid(): string {
@@ -95,74 +71,51 @@ function uuid(): string {
 }
 
 /**
- * Single-thread chat history keyed by `displayName`. The current model
- * is one ongoing thread per user — closing the drawer doesn't reset it,
- * and the user can resume the conversation after a page reload. A
- * future "🗑 Clear" button calls `clear()` to wipe the thread.
- *
- * Why no server-side history in v1: per the user's plan choice
- * (2026-06-22), conversations live in localStorage only — no
- * server-side conversation file. This keeps the secrets boundary
- * clean and matches the user's expressed preference.
+ * Single-thread in-memory chat history for the current app session.
+ * Conversation content is intentionally not written to localStorage or
+ * server files, so packaged builds never carry one user's Copilot chats
+ * to another device. The clear button wipes the current in-memory thread;
+ * first load also removes legacy persisted conversation keys from older
+ * builds.
  */
 export function useConversation(displayName: string | undefined) {
-  const [messages, setMessages] = useState<ConversationMessage[]>(() =>
-    displayName ? load(displayName) : [],
-  );
+  const [messages, setMessages] = useState<ConversationMessage[]>([]);
 
-  // Reload whenever the displayName changes — covers the rare case
-  // where the user edits their identity mid-session.
   useEffect(() => {
-    if (!displayName) {
-      setMessages([]);
-      return;
-    }
-    setMessages(load(displayName));
+    clearPersistedConversations();
+    setMessages([]);
   }, [displayName]);
 
   const append = useCallback(
     (msg: Omit<ConversationMessage, 'id' | 'ts'>): ConversationMessage => {
-      if (!displayName) {
-        // No identity yet — we can't even key the storage. Return a
-        // synthetic record so the caller can still render it in-memory.
-        return { id: uuid(), ts: new Date().toISOString(), ...msg };
-      }
       const full: ConversationMessage = {
         id: uuid(),
         ts: new Date().toISOString(),
         ...msg,
       };
-      setMessages((prev) => {
-        const next = [...prev, full];
-        persist(displayName, next);
-        return next;
-      });
+      setMessages((prev) => [...prev, full]);
       return full;
     },
-    [displayName],
+    [],
   );
 
   /** Append-into-last: streaming helper that grows the trailing assistant message. */
   const updateLast = useCallback(
     (mutator: (msg: ConversationMessage) => ConversationMessage) => {
-      if (!displayName) return;
       setMessages((prev) => {
         if (prev.length === 0) return prev;
         const last = prev[prev.length - 1]!;
         const updated = mutator(last);
-        const next = [...prev.slice(0, -1), updated];
-        persist(displayName, next);
-        return next;
+        return [...prev.slice(0, -1), updated];
       });
     },
-    [displayName],
+    [],
   );
 
   const clear = useCallback(() => {
-    if (!displayName) return;
-    persist(displayName, []);
+    clearPersistedConversations();
     setMessages([]);
-  }, [displayName]);
+  }, []);
 
   return { messages, append, updateLast, clear };
 }

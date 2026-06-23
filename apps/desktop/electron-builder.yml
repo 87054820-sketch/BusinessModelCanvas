@@ -18,6 +18,8 @@ extraResources:
     to: cli/assets
   - from: ../cli/build/skill
     to: skill-pack
+  - from: .package/kimi-cli
+    to: kimi-cli
 mac:
   category: public.app-category.productivity
   target:

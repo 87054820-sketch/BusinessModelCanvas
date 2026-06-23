@@ -36,6 +36,40 @@ require_dir() {
   [ -d "$path" ] || fail "Missing required directory: $path"
 }
 
+resolve_kimi_bin() {
+  if [ -n "${KIMI_BIN:-}" ] && [ -f "$KIMI_BIN" ]; then
+    printf '%s\n' "$KIMI_BIN"
+    return 0
+  fi
+
+  if [ -f "$HOME/.kimi-code/bin/kimi" ]; then
+    printf '%s\n' "$HOME/.kimi-code/bin/kimi"
+    return 0
+  fi
+
+  local found
+  found="$(command -v kimi 2>/dev/null || true)"
+  if [ -n "$found" ] && [ -f "$found" ]; then
+    printf '%s\n' "$found"
+    return 0
+  fi
+
+  return 1
+}
+
+stage_kimi_cli() {
+  local src
+  src="$(resolve_kimi_bin)" || fail "Kimi CLI binary is required for release packaging. Install Kimi Code first or set KIMI_BIN=/path/to/kimi."
+
+  local stage_dir="apps/desktop/.package/kimi-cli"
+  rm -rf "$stage_dir"
+  mkdir -p "$stage_dir/bin"
+  cp "$src" "$stage_dir/bin/kimi"
+  chmod 755 "$stage_dir/bin/kimi"
+
+  "$stage_dir/bin/kimi" --version >/dev/null 2>&1 || fail "Staged Kimi CLI failed to run: $stage_dir/bin/kimi"
+}
+
 command -v pnpm >/dev/null 2>&1 || fail "pnpm is required. Install pnpm first."
 
 if [ ! -d node_modules ]; then
@@ -57,6 +91,7 @@ rm -rf \
   apps/desktop/dist/canvases \
   apps/desktop/dist/case-library \
   apps/desktop/build \
+  apps/desktop/.package \
   apps/cli/dist \
   apps/cli/assets
 rm -f \
@@ -177,6 +212,9 @@ INSTALL_EOF
 ( cd "$SKILL_STAGE" && zip -r -X --quiet "$ROOT/$SKILL_ZIP" pingarden INSTALL.md )
 rm -rf "$SKILL_STAGE"
 
+log "Staging bundled Kimi CLI (binary only, no local config/logs)"
+stage_kimi_cli
+
 log "Building fresh desktop bundle"
 pnpm --filter @pingarden/desktop run build:desktop
 
@@ -205,9 +243,14 @@ require_file ".claude/skills/pingarden/SKILL.md"
 require_dir ".claude/skills/pingarden/canvases"
 # The skill zip is the portable artifact for non-Claude-Code agents.
 require_file "$SKILL_ZIP"
+require_file "apps/desktop/.package/kimi-cli/bin/kimi"
 
 if ! grep -q 'to: skill-pack' apps/desktop/electron-builder.yml; then
   fail "electron-builder.yml must bundle apps/cli/build/skill as extraResources → skill-pack."
+fi
+
+if ! grep -q 'to: kimi-cli' apps/desktop/electron-builder.yml; then
+  fail "electron-builder.yml must bundle apps/desktop/.package/kimi-cli as extraResources → kimi-cli."
 fi
 
 if find apps/desktop/dist -path '*/data/*' -print -quit | grep -q .; then
@@ -227,6 +270,7 @@ elif [ -d "apps/desktop/build/mac/PinGarden.app" ]; then
   APP_PATH="apps/desktop/build/mac/PinGarden.app"
 fi
 [ -n "$APP_PATH" ] || fail "Missing .app bundle: expected apps/desktop/build/{mac,mac-arm64}/PinGarden.app"
+require_file "$APP_PATH/Contents/Resources/kimi-cli/bin/kimi"
 
 DMG_PATH="$(find apps/desktop/build -maxdepth 1 -type f -name '*.dmg' | sort | tail -n 1)"
 [ -n "$DMG_PATH" ] || fail "DMG was not generated under apps/desktop/build"

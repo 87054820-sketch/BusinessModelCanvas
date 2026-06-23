@@ -215,6 +215,8 @@ app.whenReady().then(async () => {
     ? path.join(__dirname, '../../cli/build/skill')
     : path.join(process.resourcesPath, 'skill-pack');
 
+  const kimiBundledDir = isDev ? undefined : path.join(process.resourcesPath, 'kimi-cli');
+
   const spawnEnv: NodeJS.ProcessEnv = {
     ...process.env,
     NODE_ENV: 'production',
@@ -225,6 +227,7 @@ app.whenReady().then(async () => {
     CANVAS_DEFS_DIR: canvasDefsDir,
     CASE_LIBRARY_DIR: caseLibraryDir,
     SKILL_PACK_DIR: skillPackDir,
+    ...(kimiBundledDir ? { KIMI_BUNDLED_DIR: kimiBundledDir } : {}),
     PINGARDEN_DESKTOP_INSTANCE_ID: desktopInstanceId,
   };
 
