@@ -38,7 +38,7 @@ type CopilotImageAttachment = {
  *   plaintext in the request body. The server uses it for the request
  *   lifetime only — written to `~/.kimi-code/config.toml` just before
  *   spawning `kimi`, never persisted to PinGarden's own dataDir.
- * - **kimi-subprocess transport.** Bundled `kimi --print -p ...
+ * - **kimi-subprocess transport.** Bundled `kimi -p ...
  *   --output-format stream-json` is the only way to legally reach the
  *   kimi-for-coding model (it's gated to registered coding agents). Output is parsed
  *   line-by-line in `kimiCliAdapter.ts`.

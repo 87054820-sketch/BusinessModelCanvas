@@ -6,7 +6,7 @@ import { createInterface } from 'node:readline';
 import { resolveKimiBinary, KimiBinaryNotFoundError } from './kimiBinaryResolver.js';
 
 /**
- * Single adapter for the bundled Kimi CLI. Spawns `kimi --print -p
+ * Single adapter for the bundled Kimi CLI. Spawns `kimi -p
  * "<prompt>" --output-format stream-json --model kimi-code/kimi-for-coding`
  * in a per-spawn scratch tmpdir so the subprocess has no view of the
  * PinGarden source tree (defence in depth — kimi has no `--disallowed-tools`
@@ -85,7 +85,6 @@ export async function* streamKimiChat(
     child = spawn(
       bin,
       [
-        '--print',
         '-p', promptText,
         '--output-format', 'stream-json',
         '--model', MODEL_ALIAS,
