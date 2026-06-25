@@ -43,7 +43,6 @@ import { ProjectSidebar } from '../workspace/ProjectSidebar';
 import { CanvasToolbar } from '../workspace/CanvasToolbar';
 import { Inspector } from '../workspace/Inspector';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
-import { LightboxRoot } from '../components/Lightbox';
 import { ReadOnlyBanner } from '../components/ReadOnlyBanner';
 import { CopilotDrawer } from '../components/CopilotDrawer';
 import { CopilotErrorBoundary } from '../components/CopilotErrorBoundary';
@@ -1337,7 +1336,6 @@ export function ProjectWorkspacePage() {
         />
       </CopilotErrorBoundary>
 
-      <LightboxRoot />
     </div>
   );
 }

@@ -24,6 +24,9 @@
       }
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["business-model-canvas", "value-proposition-canvas", "experiment-canvas"],
   "relatedNotes": {
     "business-model-canvas": {

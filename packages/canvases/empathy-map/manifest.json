@@ -18,6 +18,9 @@
       "showBlockPrompts": false
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["value-proposition-canvas", "jobs-to-be-done", "customer-journey"],
   "relatedNotes": {
     "value-proposition-canvas": {

@@ -188,26 +188,43 @@ function DraggablePin({
         <circle
           cx={0}
           cy={0}
-          r={14}
-          fill="none"
+          r={18}
+          fill="rgba(255,255,255,0.72)"
           stroke="#111827"
-          strokeWidth={1.5}
-          strokeDasharray="3 2"
+          strokeWidth={2}
+          strokeDasharray="4 2"
           pointerEvents="none"
         />
       )}
       <PinGlyph icon={cls.icon} color={cls.color} selected={selected} />
       {pin.label && (
-        <text
-          x={20}
-          y={5}
-          fontSize={12}
-          fontWeight={selected ? 700 : 600}
-          fill="#1F2937"
-          pointerEvents="none"
-        >
-          {pin.label}
-        </text>
+        <g pointerEvents="none">
+          <text
+            x={24}
+            y={6}
+            fontSize={14}
+            fontWeight={800}
+            fill="#FFFFFF"
+            stroke="#FFFFFF"
+            strokeWidth={4}
+            strokeLinejoin="round"
+            paintOrder="stroke fill"
+          >
+            {pin.label}
+          </text>
+          <text
+            x={24}
+            y={6}
+            fontSize={14}
+            fontWeight={800}
+            fill="#111827"
+            stroke={selected ? '#FFFFFF' : 'none'}
+            strokeWidth={selected ? 1 : 0}
+            paintOrder="stroke fill"
+          >
+            {pin.label}
+          </text>
+        </g>
       )}
     </g>
   );
@@ -223,54 +240,70 @@ function PinGlyph({
   selected: boolean;
 }) {
   const stroke = selected ? '#111827' : '#FFFFFF';
-  const strokeWidth = selected ? 2.2 : 1.5;
+  const strokeWidth = selected ? 3 : 2.4;
+  const common = {
+    filter: 'drop-shadow(0 2px 4px rgba(17,24,39,0.38))',
+  };
   switch (icon) {
     case 'triangle':
       return (
         <polygon
-          points="0,-9 8,7 -8,7"
+          points="0,-13 11,10 -11,10"
           fill={color}
           stroke={stroke}
           strokeWidth={strokeWidth}
           strokeLinejoin="round"
+          style={common}
         />
       );
     case 'square':
       return (
         <rect
-          x={-7}
-          y={-7}
-          width={14}
-          height={14}
+          x={-10}
+          y={-10}
+          width={20}
+          height={20}
+          rx={3}
           fill={color}
           stroke={stroke}
           strokeWidth={strokeWidth}
+          style={common}
         />
       );
     case 'star':
       return (
         <polygon
-          points="0,-9 2.6,-2.8 9,-2.8 3.7,1.6 5.6,8 0,4.4 -5.6,8 -3.7,1.6 -9,-2.8 -2.6,-2.8"
+          points="0,-13 3.8,-4 13,-4 5.4,2.4 8,12 0,6.4 -8,12 -5.4,2.4 -13,-4 -3.8,-4"
           fill={color}
           stroke={stroke}
           strokeWidth={strokeWidth}
           strokeLinejoin="round"
+          style={common}
         />
       );
     case 'flag':
       return (
-        <g>
+        <g style={common}>
           <line
-            x1={-0.5}
-            y1={10}
-            x2={-0.5}
-            y2={-10}
+            x1={-1}
+            y1={13}
+            x2={-1}
+            y2={-13}
+            stroke="#FFFFFF"
+            strokeWidth={5}
+            strokeLinecap="round"
+          />
+          <line
+            x1={-1}
+            y1={13}
+            x2={-1}
+            y2={-13}
             stroke={color}
-            strokeWidth={2.2}
+            strokeWidth={3}
             strokeLinecap="round"
           />
           <path
-            d="M 0 -10 L 14 -10 L 11 -6 L 14 -2 L 0 -2 Z"
+            d="M 0 -13 L 18 -13 L 14 -8 L 18 -3 L 0 -3 Z"
             fill={color}
             stroke={stroke}
             strokeWidth={strokeWidth}
@@ -284,10 +317,11 @@ function PinGlyph({
         <circle
           cx={0}
           cy={0}
-          r={8}
+          r={11}
           fill={color}
           stroke={stroke}
           strokeWidth={strokeWidth}
+          style={common}
         />
       );
   }

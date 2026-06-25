@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
-import type { CopilotProjectDraft, Lang } from '@pingarden/shared';
+import type { CopilotDraftSticky, CopilotProjectDraft, Lang, QualityIssue, QualityReport } from '@pingarden/shared';
 import { api } from '../api/client';
 import { projectsApi } from '../api/projects';
+import { storiesApi } from '../api/stories';
+import { getSourceCoverageIssues } from '../copilot/projectDraft';
+import { rewriteStoryCanvasDirectivesToCanvasIds, type CopilotCanvasReference } from '../copilot/storyCanvasReferences';
 import { useIdentity } from '../identity/useIdentity';
 import { preserveNavigationState } from '../navigation/useSmartBack';
 
@@ -12,9 +15,11 @@ type CreateState = 'idle' | 'creating' | 'created' | 'error';
 export function CopilotProjectDraftCard({
   draft,
   lang,
+  expectedSourceImageCount,
 }: {
   draft: CopilotProjectDraft;
   lang: Lang;
+  expectedSourceImageCount?: number;
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -26,33 +31,61 @@ export function CopilotProjectDraftCard({
   const [projectDescription, setProjectDescription] = useState(() =>
     normalizeProjectDescription(draft.project.description ?? ''),
   );
+  const stories = draft.stories ?? [];
   const stickyCount = draft.canvases.reduce((sum, canvas) => sum + canvas.stickies.length, 0);
+  const sourceCoverage = draft.sourceCoverage;
+  const sourceFindings = sourceCoverage?.findings ?? [];
+  const sourceMappedCount = sourceCoverage?.mappedFindingIds?.length ?? 0;
+  const unmappedCount = sourceCoverage?.unmappedSourceItems?.length ?? 0;
+  const sourceIssues = useMemo(
+    () => getSourceCoverageIssues(sourceCoverage, {
+      expectedImageCount: expectedSourceImageCount,
+      requireCompleteCoverage: true,
+      requireStoryForTextFindings: true,
+      stories,
+    }),
+    [sourceCoverage, expectedSourceImageCount, stories],
+  );
+  const emptyCanvasCount = draft.canvases.filter((canvas) => canvas.stickies.length === 0).length;
   const missingName = projectName.trim().length === 0;
   const missingDescription = projectDescription.trim().length === 0;
-  const ready = !missingName && !missingDescription;
+  const quality = draft.quality;
+  const hardIssues = quality?.issues.filter((issue) => issue.severity === 'hard') ?? [];
+  const softIssues = quality?.issues.filter((issue) => issue.severity === 'soft') ?? [];
+  const ready = !missingName && !missingDescription && emptyCanvasCount === 0 && sourceIssues.length === 0 && hardIssues.length === 0;
 
   async function createProject() {
     if (!identity || !ready || state === 'creating') return;
     setState('creating');
     setError(null);
+    // Final hard-rule gate. `ready` already blocks when hardIssues is
+    // non-empty, but re-check here so a stale `draft` that hasn't been
+    // re-validated (e.g. after a state edit) can never reach the server.
+    if (hardIssues.length > 0) {
+      const first = hardIssues[0]!;
+      setError(t('library.copilot.projectDraft.qualityHardBlocked', {
+        message: first.message[lang] ?? first.message.en,
+      }));
+      setState('error');
+      return;
+    }
     try {
       const preparedCanvases = await Promise.all(
         draft.canvases.map(async (canvasDraft) => {
           const detail = await api.getDef(canvasDraft.defId);
           const validZones = new Set(detail.def.zones.map((zone) => zone.id));
+          const stickies = normalizeStickies(canvasDraft.stickies).filter((sticky) => validZones.has(sticky.zoneId));
+          if (stickies.length === 0) {
+            throw new Error(t('library.copilot.projectDraft.emptyCanvasBlocked', { title: canvasDraft.title }));
+          }
           return {
             defId: canvasDraft.defId,
             title: canvasDraft.title.trim() || detail.def.name[lang] || detail.def.name.en,
-            stickies: canvasDraft.stickies
-              .filter((sticky) => validZones.has(sticky.zoneId.trim()) && sticky.text.trim())
-              .map((sticky) => ({
-                zoneId: sticky.zoneId.trim(),
-                text: sticky.text.trim(),
-                ...(sticky.color ? { color: sticky.color } : {}),
-              })),
+            stickies,
           };
         }),
       );
+
       const project = await projectsApi.create(
         {
           name: projectName.trim(),
@@ -61,6 +94,7 @@ export function CopilotProjectDraftCard({
         identity.displayName,
       );
 
+      const createdCanvasRefs: CopilotCanvasReference[] = [];
       for (const canvasDraft of preparedCanvases) {
         const created = await api.createCanvas(
           {
@@ -71,9 +105,28 @@ export function CopilotProjectDraftCard({
           },
           identity.displayName,
         );
-        if (canvasDraft.stickies.length > 0) {
-          await api.bulkStickies(created.id, canvasDraft.stickies, identity.displayName);
-        }
+        await api.bulkStickies(created.id, canvasDraft.stickies, identity.displayName);
+        createdCanvasRefs.push({
+          canvasId: created.id,
+          defId: created.defId,
+          title: created.title,
+          ...(created.variant?.id ? { variantId: created.variant.id } : {}),
+        });
+      }
+
+      for (const storyDraft of stories) {
+        const title = storyDraft.title.trim();
+        const content = rewriteStoryCanvasDirectivesToCanvasIds(storyDraft.content.trim(), createdCanvasRefs);
+        if (!title || !content) continue;
+        await storiesApi.create(
+          {
+            projectId: project.id,
+            title,
+            content,
+            status: 'draft',
+          },
+          identity.displayName,
+        );
       }
 
       setState('created');
@@ -122,20 +175,57 @@ export function CopilotProjectDraftCard({
           </label>
         </div>
 
-        {(missingName || missingDescription) && (
-          <div className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] text-amber-900">
-            {missingName && missingDescription
-              ? t('library.copilot.projectDraft.needNameAndDescription')
-              : missingName
-                ? t('library.copilot.projectDraft.needName')
-                : t('library.copilot.projectDraft.needDescription')}
+        {(missingName || missingDescription || emptyCanvasCount > 0 || sourceIssues.length > 0 || hardIssues.length > 0 || softIssues.length > 0) && (
+          <div className="space-y-2">
+            {(missingName || missingDescription || emptyCanvasCount > 0 || sourceIssues.length > 0 || hardIssues.length > 0) && (
+              <div className="space-y-1 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] text-amber-900">
+                {(missingName || missingDescription) && (
+                  <div>
+                    {missingName && missingDescription
+                      ? t('library.copilot.projectDraft.needNameAndDescription')
+                      : missingName
+                        ? t('library.copilot.projectDraft.needName')
+                        : t('library.copilot.projectDraft.needDescription')}
+                  </div>
+                )}
+                {emptyCanvasCount > 0 && <div>{t('library.copilot.projectDraft.emptyCanvasWarning')}</div>}
+                {sourceIssues.length > 0 && <div>{t('library.copilot.projectDraft.sourceCoverageWarning')}</div>}
+                {hardIssues.length > 0 && (
+                  <QualityIssueList
+                    label={t('library.copilot.projectDraft.qualityHardTitle', { count: hardIssues.length })}
+                    issues={hardIssues}
+                    lang={lang}
+                    tone="hard"
+                  />
+                )}
+              </div>
+            )}
+            {softIssues.length > 0 && (
+              <div className="space-y-1 rounded-xl border border-yellow-200 bg-yellow-50/80 px-3 py-2 text-[11px] text-yellow-900">
+                <div className="font-medium">{t('library.copilot.projectDraft.qualitySoftTitle', { count: softIssues.length })}</div>
+                <QualityIssueList issues={softIssues} lang={lang} tone="soft" />
+              </div>
+            )}
           </div>
         )}
 
         <div className="grid grid-cols-2 gap-2 text-[11px]">
           <Metric label={t('library.copilot.projectDraft.canvasCount')} value={draft.canvases.length} />
           <Metric label={t('library.copilot.projectDraft.stickyCount')} value={stickyCount} />
+          <Metric label={t('library.copilot.projectDraft.storyCount')} value={stories.length} />
+          <Metric label={t('library.copilot.projectDraft.sourceCount')} value={sourceFindings.length} />
         </div>
+
+        {sourceCoverage && (
+          <div className="rounded-xl border border-sky-100 bg-sky-50/60 px-3 py-2 text-[11px] leading-relaxed text-sky-900">
+            {t('library.copilot.projectDraft.sourceCoverageSummary', {
+              images: sourceCoverage.sourceImageCount ?? 0,
+              findings: sourceFindings.length,
+              mapped: sourceMappedCount,
+              unmapped: unmappedCount,
+            })}
+          </div>
+        )}
 
         {draft.canvases.length > 0 && (
           <div className="space-y-1.5">
@@ -144,10 +234,23 @@ export function CopilotProjectDraftCard({
                 <div className="flex items-center justify-between gap-2">
                   <span className="text-[12px] font-medium text-gray-900">{canvas.title}</span>
                   <span className="shrink-0 rounded-full bg-white px-2 py-0.5 text-[10px] text-gray-500">
-                    {canvas.stickies.length} notes
+                    {t('library.copilot.projectDraft.notesBadge', { count: canvas.stickies.length })}
                   </span>
                 </div>
                 <div className="mt-1 text-[10px] text-gray-400">{canvas.defId}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {stories.length > 0 && (
+          <div className="space-y-1.5">
+            {stories.map((story, index) => (
+              <div key={`${story.title}:${index}`} className="rounded-xl border border-emerald-100 bg-emerald-50/70 px-3 py-2">
+                <div className="text-[12px] font-medium text-emerald-950">{story.title}</div>
+                <div className="mt-1 line-clamp-2 text-[10px] leading-relaxed text-emerald-700">
+                  {story.content.replace(/[#*_`>\-]/g, '').trim()}
+                </div>
               </div>
             ))}
           </div>
@@ -183,6 +286,54 @@ function Metric({ label, value }: { label: string; value: number }) {
       <div className="mt-0.5 text-[15px] font-semibold text-gray-950">{value}</div>
     </div>
   );
+}
+
+function QualityIssueList({
+  issues,
+  lang,
+  tone,
+  label,
+}: {
+  issues: QualityIssue[];
+  lang: Lang;
+  tone: 'hard' | 'soft';
+  label?: string;
+}) {
+  const { t } = useTranslation();
+  return (
+    <div className="space-y-0.5">
+      {label && <div className="font-medium">{label}</div>}
+      {issues.map((issue, index) => (
+        <div key={`${issue.code}:${index}`} className="leading-relaxed">
+          <span className="mr-1 inline-block rounded px-1 py-px text-[9px] font-semibold uppercase tracking-wide">
+            {tone === 'hard'
+              ? t('library.copilot.quality.severityHard')
+              : t('library.copilot.quality.severitySoft')}
+          </span>
+          {issue.message[lang] ?? issue.message.en}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function summariseQuality(report: QualityReport | undefined): string {
+  if (!report) return '';
+  if (report.hardCount === 0 && report.softCount === 0) return '';
+  const parts: string[] = [];
+  if (report.hardCount > 0) parts.push(`${report.hardCount} hard`);
+  if (report.softCount > 0) parts.push(`${report.softCount} soft`);
+  return parts.join(' · ');
+}
+
+function normalizeStickies(stickies: CopilotDraftSticky[]) {
+  return stickies
+    .filter((sticky) => sticky.zoneId.trim() && sticky.text.trim())
+    .map((sticky) => ({
+      zoneId: sticky.zoneId.trim(),
+      text: sticky.text.trim(),
+      ...(sticky.color ? { color: sticky.color } : {}),
+    }));
 }
 
 function normalizeProjectName(value: string): string {

@@ -2,10 +2,15 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type {
+  BusinessModelPattern,
   CanvasDefaultColorLegendEntry,
   CanvasMeta,
   CaseLibraryDetail,
+  Experiment,
   Lang,
+  LibraryResource,
+  LibraryResourceDetail,
+  StrategyFramework,
 } from '@pingarden/shared';
 import { effectiveObjectTypes } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
@@ -24,13 +29,17 @@ import { preserveNavigationState } from '../navigation/useSmartBack';
 
 const UUID_RE = /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/gi;
 const KEBAB_RE = /`?\b[a-z][a-z0-9]+(?:-[a-z0-9]+)+\b`?/g;
-const MAX_REFERENCES = 4;
+const MAX_CANVAS_REFERENCES = 4;
+const MAX_CASE_REFERENCES = 8;
+const MAX_RESOURCE_REFERENCES = 8;
+const REFERENCE_GRID_CLASS = 'grid grid-cols-[repeat(auto-fit,minmax(260px,360px))] justify-start gap-2 p-2.5';
 const CANVAS_ALIASES: Record<string, string[]> = {
   'business-model-canvas': ['BMC', '商业模式画布'],
   'value-proposition-canvas': ['VPC', '价值主张画布'],
   'portfolio-map': ['Portfolio', '组合地图', '业务组合', '业务组合管理'],
   'three-horizons-map': ['三层增长', '三层增长地图', 'Three Horizons'],
   'bcg-growth-share-matrix': ['BCG', '增长份额矩阵', 'BCG 矩阵'],
+  'ad-lib-value-proposition': ['Ad-Lib VP', '价值主张速写', '一句话价值主张', '价值主张模板', '价值主张填空'],
 };
 
 export interface CopilotCanvasReference {
@@ -43,9 +52,14 @@ export interface CopilotCaseReference {
   matchedCanvases: CopilotCanvasReference[];
 }
 
+export interface CopilotResourceReference {
+  resource: LibraryResource;
+}
+
 export interface CopilotRecommendationReferences {
   canvasRefs: CopilotCanvasReference[];
   caseRefs: CopilotCaseReference[];
+  resourceRefs: CopilotResourceReference[];
   unresolvedCaseSlugs: string[];
   unresolvedCanvasLabels: string[];
 }
@@ -53,6 +67,7 @@ export interface CopilotRecommendationReferences {
 const EMPTY_RECOMMENDATION_REFS: CopilotRecommendationReferences = {
   canvasRefs: [],
   caseRefs: [],
+  resourceRefs: [],
   unresolvedCaseSlugs: [],
   unresolvedCanvasLabels: [],
 };
@@ -81,21 +96,24 @@ export function useCopilotRecommendationReferences(
         defs.map((def) => [def.id, def.name[lang] ?? def.name.en ?? def.id]),
       );
       const canvasCandidates = extractCanvasCandidates(content, defs);
-      const caseSlugCandidates = await extractCaseSlugs(content, displayName);
+      const [caseSlugCandidates, resourceRefs] = await Promise.all([
+        extractCaseSlugs(content, displayName),
+        extractResourceRefs(content, lang),
+      ]);
 
       const uuidRefs = (
         await Promise.all(
           ids.map((id) =>
             api
               .getCanvas(id, displayName)
-              .then((canvas) => toCanvasReference(canvas, defNameById, lang))
+              .then((canvas) => (canvas.language === lang ? toCanvasReference(canvas, defNameById, lang) : null))
               .catch(() => null),
           ),
         )
       ).filter((item): item is CopilotCanvasReference => item !== null);
 
       const caseDetails = await Promise.all(
-        caseSlugCandidates.slice(0, MAX_REFERENCES).map((slug) =>
+        caseSlugCandidates.slice(0, MAX_CASE_REFERENCES).map((slug) =>
           libraryApi
             .get(slug, displayName)
             .then((detail) => ({ slug, detail }))
@@ -120,7 +138,7 @@ export function useCopilotRecommendationReferences(
         ...uuidRefs,
         ...matchedCaseCanvasRefs,
         ...contextCanvasRefs,
-      ]).slice(0, MAX_REFERENCES);
+      ]).slice(0, MAX_CANVAS_REFERENCES);
 
       const caseRefs: CopilotCaseReference[] = resolvedCases.map(({ detail }) => ({
         detail,
@@ -132,7 +150,7 @@ export function useCopilotRecommendationReferences(
           : [];
 
       if (!cancelled) {
-        setRefs({ canvasRefs, caseRefs, unresolvedCaseSlugs, unresolvedCanvasLabels });
+        setRefs({ canvasRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels });
       }
     })();
 
@@ -210,7 +228,7 @@ export function CopilotCanvasReferenceBoard({
           {t('library.copilot.canvasRefs.subtitle')}
         </div>
       </div>
-      <div className="space-y-2 p-2.5">
+      <div className={REFERENCE_GRID_CLASS}>
         {refs.map((ref) => (
           <div
             key={ref.canvas.id}
@@ -276,7 +294,7 @@ export function CopilotCaseReferenceBoard({
           {t('library.copilot.caseRefs.subtitle')}
         </div>
       </div>
-      <div className="space-y-2 p-2.5">
+      <div className={REFERENCE_GRID_CLASS}>
         {refs.map((ref) => {
           const caseName = ref.detail.case.companyName[lang] ?? ref.detail.case.companyName.en;
           return (
@@ -291,6 +309,7 @@ export function CopilotCaseReferenceBoard({
                     {ref.detail.case.slug}
                   </span>
                   <span>{t('library.copilot.caseRefs.canvasCount', { count: ref.detail.canvases.length })}</span>
+                  <span>{t('library.copilot.caseRefs.storyCount', { count: ref.detail.stories.length })}</span>
                 </div>
               </div>
               <Link
@@ -306,6 +325,235 @@ export function CopilotCaseReferenceBoard({
         })}
       </div>
     </div>
+  );
+}
+
+export function CopilotResourceReferenceBoard({
+  refs,
+}: {
+  refs: CopilotResourceReference[];
+}) {
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.language === 'zh' ? 'zh' : 'en') as Lang;
+  const [preview, setPreview] = useState<LibraryResource | null>(null);
+
+  if (refs.length === 0) return null;
+
+  return (
+    <div className="mt-3 overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-sm">
+      <div className="border-b border-amber-100 bg-gradient-to-r from-amber-50 via-white to-orange-50 px-3 py-2">
+        <div className="text-[12px] font-semibold text-amber-950">
+          {t('library.copilot.readingRefs.title')}
+        </div>
+        <div className="mt-0.5 text-[11px] leading-relaxed text-amber-700">
+          {t('library.copilot.readingRefs.subtitle')}
+        </div>
+      </div>
+      <div className={REFERENCE_GRID_CLASS}>
+        {refs.map(({ resource }) => {
+          const title = localize(resource.title, lang);
+          const summary = localize(resource.summary, lang);
+          return (
+            <div
+              key={resource.slug}
+              className="flex min-h-[118px] flex-col justify-between rounded-xl border border-amber-100 bg-amber-50/30 p-2.5 transition hover:border-amber-200 hover:bg-amber-50/60"
+            >
+              <div className="min-w-0">
+                <div className="flex items-center gap-1.5">
+                  <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
+                    {t(`library.resourceTypes.${resource.type}`)}
+                  </span>
+                  <span className="truncate font-mono text-[10px] text-gray-400">{resource.slug}</span>
+                </div>
+                <div className="mt-1.5 line-clamp-1 text-[12px] font-semibold text-gray-950">{title}</div>
+                <p className="mt-1 line-clamp-2 text-[11px] leading-relaxed text-gray-600">{summary}</p>
+              </div>
+              <div className="mt-2 flex items-center justify-between gap-2">
+                <span className="truncate text-[10px] text-gray-400">
+                  {[resource.authors[0], resource.year].filter(Boolean).join(' · ')}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setPreview(resource)}
+                  className="shrink-0 rounded-full bg-amber-600 px-3 py-1.5 text-[11px] font-semibold text-white hover:bg-amber-700"
+                >
+                  {t('library.copilot.readingRefs.preview')}
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      {preview && <ResourceReferencePopover resource={preview} lang={lang} onClose={() => setPreview(null)} />}
+    </div>
+  );
+}
+
+function ResourceReferencePopover({
+  resource,
+  lang,
+  onClose,
+}: {
+  resource: LibraryResource;
+  lang: Lang;
+  onClose: () => void;
+}) {
+  const { t } = useTranslation();
+  const location = useLocation();
+  const [detail, setDetail] = useState<LibraryResourceDetail | null>(null);
+  const [defs, setDefs] = useState<CanvasDefSummary[]>([]);
+  const [patterns, setPatterns] = useState<BusinessModelPattern[]>([]);
+  const [experiments, setExperiments] = useState<Experiment[]>([]);
+  const [frameworks, setFrameworks] = useState<StrategyFramework[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    setDetail(null);
+    void Promise.all([
+      libraryApi.getResource(resource.slug).catch(() => null),
+      api.listDefs().catch(() => [] as CanvasDefSummary[]),
+      libraryApi.listPatterns().catch(() => [] as BusinessModelPattern[]),
+      libraryApi.listExperiments().catch(() => [] as Experiment[]),
+      libraryApi.listStrategyFrameworks().catch(() => [] as StrategyFramework[]),
+    ]).then(([nextDetail, nextDefs, nextPatterns, nextExperiments, nextFrameworks]) => {
+      if (cancelled) return;
+      setDetail(nextDetail);
+      setDefs(nextDefs);
+      setPatterns(nextPatterns);
+      setExperiments(nextExperiments);
+      setFrameworks(nextFrameworks);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [resource.slug]);
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') onClose();
+    }
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  const title = localize(resource.title, lang);
+  const summary = localize(resource.summary, lang);
+  const recommendation = localize(resource.recommendation, lang);
+  const description = detail?.description[lang] || detail?.description.en || '';
+  const nextItems = buildResourceNextItems(resource, detail, defs, patterns, experiments, frameworks, lang, t);
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      onClick={onClose}
+      className="fixed inset-0 z-[130] flex items-center justify-center bg-black/60 p-5 backdrop-blur-sm"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="flex max-h-[86vh] w-full max-w-4xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl"
+      >
+        <div className="border-b border-amber-100 bg-gradient-to-r from-amber-50 via-white to-orange-50 px-5 py-4">
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <div className="flex items-center gap-2">
+                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
+                  {t(`library.resourceTypes.${resource.type}`)}
+                </span>
+                <span className="font-mono text-[10px] text-gray-400">{resource.slug}</span>
+              </div>
+              <h3 className="mt-2 truncate text-lg font-bold text-gray-950">{title}</h3>
+              <p className="mt-1 text-xs leading-relaxed text-gray-600">{summary}</p>
+              <div className="mt-2 text-[11px] text-gray-400">
+                {[resource.authors.join(', '), resource.publisher, resource.year].filter(Boolean).join(' · ')}
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xl text-gray-400 hover:bg-white hover:text-gray-700"
+              aria-label={t('library.copilot.readingRefs.close')}
+            >
+              ×
+            </button>
+          </div>
+        </div>
+        <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
+          <section className="rounded-2xl border border-amber-100 bg-amber-50/50 px-4 py-3">
+            <div className="text-[11px] font-semibold uppercase tracking-wide text-amber-700">
+              {t('library.copilot.readingRefs.recommendation')}
+            </div>
+            <p className="mt-1 text-[12px] leading-relaxed text-gray-700">{recommendation}</p>
+          </section>
+
+          {description && (
+            <section className="mt-4">
+              <h4 className="text-[13px] font-bold text-gray-950">{t('library.copilot.readingRefs.quickIntro')}</h4>
+              <p className="mt-2 whitespace-pre-wrap text-[12px] leading-relaxed text-gray-700">
+                {summarizeMarkdown(description)}
+              </p>
+            </section>
+          )}
+
+          {nextItems.length > 0 && (
+            <section className="mt-4">
+              <h4 className="text-[13px] font-bold text-gray-950">{t('library.copilot.readingRefs.nextOpen')}</h4>
+              <div className="mt-2 grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-2">
+                {nextItems.map((item) => (
+                  item.to ? (
+                    <Link
+                      key={`${item.kind}:${item.id}`}
+                      to={item.to}
+                      state={preserveNavigationState(location)}
+                      className="rounded-xl border border-gray-100 bg-white px-3 py-2 text-left transition hover:border-amber-200 hover:bg-amber-50/40"
+                    >
+                      <ReferenceItemBody item={item} />
+                    </Link>
+                  ) : (
+                    <div key={`${item.kind}:${item.id}`} className="rounded-xl border border-gray-100 bg-white px-3 py-2">
+                      <ReferenceItemBody item={item} />
+                    </div>
+                  )
+                ))}
+              </div>
+            </section>
+          )}
+
+          {resource.sources.length > 0 && (
+            <section className="mt-4">
+              <h4 className="text-[13px] font-bold text-gray-950">{t('library.copilot.readingRefs.sources')}</h4>
+              <ul className="mt-2 space-y-2">
+                {resource.sources.map((source, index) => (
+                  <li key={`${source.label}:${index}`} className="rounded-xl bg-gray-50 px-3 py-2 text-[12px] text-gray-700">
+                    {source.url ? (
+                      <a href={source.url} target="_blank" rel="noreferrer" className="text-amber-700 hover:underline">
+                        {source.label}
+                      </a>
+                    ) : source.label}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+interface ResourceNextItem {
+  id: string;
+  label: string;
+  kind: string;
+  to?: string;
+}
+
+function ReferenceItemBody({ item }: { item: ResourceNextItem }) {
+  return (
+    <>
+      <div className="text-[10px] font-semibold uppercase tracking-wide text-amber-700">{item.kind}</div>
+      <div className="mt-1 line-clamp-2 text-[12px] font-semibold text-gray-900">{item.label}</div>
+    </>
   );
 }
 
@@ -492,6 +740,24 @@ async function extractCaseSlugs(content: string, displayName: string): Promise<s
   return Array.from(new Set([...explicit, ...kebabCandidates.filter((slug) => caseSlugs.has(slug))]));
 }
 
+async function extractResourceRefs(content: string, lang: Lang): Promise<CopilotResourceReference[]> {
+  const resources = await libraryApi.listResources().catch(() => []);
+  if (resources.length === 0) return [];
+
+  const lower = content.toLowerCase();
+  const kebabCandidates = new Set(extractKebabTokens(content));
+  const matched = resources.filter((resource) => {
+    if (kebabCandidates.has(resource.slug)) return true;
+    const title = resource.title[lang] ?? resource.title.en;
+    const altTitle = lang === 'zh' ? resource.title.en : resource.title.zh;
+    return [title, altTitle]
+      .filter(Boolean)
+      .some((item) => lower.includes(item.toLowerCase()));
+  });
+
+  return matched.slice(0, MAX_RESOURCE_REFERENCES).map((resource) => ({ resource }));
+}
+
 function extractCanvasCandidates(content: string, defs: CanvasDefSummary[]): CanvasCandidate[] {
   const lower = content.toLowerCase();
   const found = new Map<string, string>();
@@ -538,8 +804,7 @@ function matchCanvases(
   if (candidates.length === 0) return [];
   const candidateIds = new Set(candidates.map((item) => item.defId));
   return canvases
-    .filter((canvas) => candidateIds.has(canvas.defId))
-    .sort((a, b) => languageRank(a, lang) - languageRank(b, lang))
+    .filter((canvas) => candidateIds.has(canvas.defId) && canvas.language === lang)
     .map((canvas) => toCanvasReference(canvas, defNameById, lang));
 }
 
@@ -563,8 +828,75 @@ function dedupeCanvasRefs(refs: CopilotCanvasReference[]): CopilotCanvasReferenc
   });
 }
 
-function languageRank(canvas: CanvasMeta, lang: Lang): number {
-  return canvas.language === lang ? 0 : 1;
+function buildResourceNextItems(
+  resource: LibraryResource,
+  detail: LibraryResourceDetail | null,
+  defs: CanvasDefSummary[],
+  patterns: BusinessModelPattern[],
+  experiments: Experiment[],
+  frameworks: StrategyFramework[],
+  lang: Lang,
+  t: (key: string, opts?: Record<string, unknown>) => string,
+): ResourceNextItem[] {
+  const items: ResourceNextItem[] = [];
+  for (const entry of detail?.relatedCases ?? []) {
+    items.push({
+      id: entry.slug,
+      label: localize(entry.companyName, lang),
+      kind: t('library.copilot.readingRefs.itemCase', { lang: t(`language.${lang}`) }),
+      to: `/p/${entry.projectId}`,
+    });
+  }
+  for (const defId of resource.relatedCanvasDefIds ?? []) {
+    const def = defs.find((item) => item.id === defId);
+    items.push({
+      id: defId,
+      label: def ? (def.name[lang] ?? def.name.en ?? defId) : defId,
+      kind: t('library.copilot.readingRefs.itemCanvas', { lang: t(`language.${lang}`) }),
+    });
+  }
+  for (const slug of resource.relatedStrategyFrameworkSlugs ?? []) {
+    const framework = frameworks.find((item) => item.slug === slug);
+    items.push({
+      id: slug,
+      label: framework ? localize(framework.name, lang) : slug,
+      kind: t('library.copilot.readingRefs.itemFramework'),
+    });
+  }
+  for (const slug of resource.relatedPatternSlugs ?? []) {
+    const pattern = patterns.find((item) => item.slug === slug);
+    items.push({
+      id: slug,
+      label: pattern ? localize(pattern.name, lang) : slug,
+      kind: t('library.copilot.readingRefs.itemPattern'),
+    });
+  }
+  for (const slug of resource.relatedExperimentSlugs ?? []) {
+    const experiment = experiments.find((item) => item.slug === slug);
+    items.push({
+      id: slug,
+      label: experiment ? localize(experiment.name, lang) : slug,
+      kind: t('library.copilot.readingRefs.itemExperiment'),
+    });
+  }
+  return items;
+}
+
+function summarizeMarkdown(markdown: string): string {
+  return markdown
+    .replace(/^# .+$/gm, '')
+    .replace(/^## .+$/gm, '')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .slice(0, 4)
+    .join('\n');
+}
+
+function localize(label: { en: string; zh: string }, lang: Lang): string {
+  return label[lang] ?? label.en;
 }
 
 function attachedProjectId(ref: AttachedRef | null | undefined): string | undefined {

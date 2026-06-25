@@ -271,7 +271,7 @@ function extractErrorMessage(evt: unknown): string {
 
 function normalizeKimiError(message: string): string {
   if (message.includes('compaction.unable')) {
-    return 'Kimi 上下文过长，图片或对话内容无法压缩。已优化图片压缩和上下文发送，请重新上传图片后再试。';
+    return 'Kimi 上下文过长，当前原图或对话内容超出可处理范围。请减少图片数量、缩短对话，或换用小于上限的原图后重试。';
   }
   return message.slice(0, 400);
 }

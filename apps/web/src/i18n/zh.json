@@ -531,8 +531,11 @@
       "removeConfirm": "确认删除已保存的 Kimi Code Key?",
       "composerPlaceholder": "向 PinGarden Copilot 提问…",
       "attachImage": "+ 图片",
-      "attachImageHint": "上传图片,也可以拖拽或粘贴截图",
+      "attachImageHint": "最多 9 张，支持拖拽或粘贴截图",
       "removeImageAttachment": "移除图片 {{name}}",
+      "imageTrayStatus": "已添加 {{count}}/{{max}} 张图片",
+      "imageTrayRemaining": "还可添加 {{remaining}} 张",
+      "imageTrayFull": "图片已满 9 张",
       "imageOnlyPrompt": "请根据我发送的图片,帮我分析并生成一个适合 PinGarden 的项目草稿。",
       "imageLimit": "最多只能附带 {{count}} 张图片。",
       "imageTooLarge": "{{name}} 太大了,单张图片不能超过 {{size}}。",
@@ -545,9 +548,9 @@
           "imageOnlyPrompt": "请根据我发送的图片创建一个 PinGarden 项目草稿。"
         },
         "libraryReference": {
-          "hint": "当前内容是只读参考。你可以先提问理解它，也可以复制/迁移成自己的项目起点。",
-          "placeholder": "输入想迁移的方向、问题或资料…",
-          "imageOnlyPrompt": "请结合这张图片和当前参考资料，帮我整理可迁移的启发。"
+          "hint": "当前内容是只读参考。你可以先提问理解资料；如果需要，也可以基于它创建项目起点。",
+          "placeholder": "输入想理解的问题、补充资料或分析方向…",
+          "imageOnlyPrompt": "请结合这张图片和当前参考资料，先解释核心内容、背景线索和最值得追问的问题。"
         },
         "projectWork": {
           "hint": "当前基于这个项目工作。可以新增画布、补充 Story，或让 Copilot 分析下一步。",
@@ -560,23 +563,25 @@
         "askLibrary": "问问资料",
         "createFromReference": "基于它创建项目",
         "copyProject": "复制项目",
-        "askReference": "问问这个项目",
+        "askReference": "理解这份资料",
+        "extractInsight": "提炼洞察",
         "addCanvas": "新增画布",
         "addStory": "新增 Story"
       },
       "composerPrompts": {
-        "createProject": "请根据我提供的图片、链接和说明创建一个 PinGarden 项目草稿；如果信息不够，请先问我最关键的问题。",
+        "createProject": "请根据我提供的图片、链接和说明创建一个 PinGarden 项目草稿；尽量完整整合每张图片中的可见标签/便签，并把描述性文字整理成 Story。",
         "askLibrary": "请基于策略库，先帮我梳理有哪些案例、画布或方法值得参考，并问我一个最关键的问题。",
         "createFromReference": "请基于当前参考内容，帮我整理成一个可创建的新项目草稿；如果信息不够，先问我最关键的问题。",
         "copyProject": "请基于当前只读参考项目，帮我整理成一个可复制到我的工作区的新项目草稿，并保留最重要的画布结构和洞察。",
-        "askReference": "请解释当前参考内容最值得借鉴的地方，并说明我可以如何迁移到自己的项目。",
-        "addCanvas": "请基于当前项目和我提供的内容，判断下一张最值得新增的画布，说明原因，并给出画布草稿思路。",
-        "addStory": "请基于当前项目和我提供的内容，新增一篇 Story 草稿，用来串联关键画布、洞察、假设和下一步行动。"
+        "askReference": "请解释当前参考资料的核心问题、关键机制、行业/案例背景，以及最值得继续追问的地方。",
+        "extractInsight": "请把这段讨论整理成一个本次会话内的洞察卡，包含来源引用和可应用到项目的建议动作。不要直接写入项目数据。",
+        "addCanvas": "请基于当前项目和我提供的内容，输出一个可应用的项目更新草稿：新增或补充最值得做的画布，并写出要落到画布上的完整便签。",
+        "addStory": "请基于当前项目和我提供的内容，输出一个可应用的项目更新草稿：创建或更新一篇 Story，用来串联关键画布、洞察、假设和下一步行动。"
       },
       "projectDraft": {
         "title": "项目草稿",
-        "subtitle": "确认后会创建项目、画布和初始便签。",
-        "autoFilledHint": "我会尽量从图片里自动解析画布内容；你只需要确认项目名称和项目描述。看不清的画布内容可以创建后继续调整。",
+        "subtitle": "确认后会创建项目、画布、初始便签和 Story。",
+        "autoFilledHint": "我会尽量从每张图片里完整解析可见标签/便签，并把描述性文字整理成 Story；未覆盖来源会在下方提示。",
         "projectName": "项目名称",
         "projectNamePlaceholder": "例如：微信私域运营项目",
         "projectDescription": "项目描述",
@@ -584,11 +589,102 @@
         "needNameAndDescription": "请先补充项目名称和项目描述。",
         "needName": "请先补充项目名称。",
         "needDescription": "请先补充项目描述。",
+        "emptyCanvasWarning": "有画布没有便签，不能创建空画布。请让 Copilot 补齐。",
+        "emptyCanvasBlocked": "「{{title}}」没有有效便签，已阻止创建。",
+        "sourceCoverageWarning": "仍有图片或文字来源未完整覆盖，不能直接应用。请让 Copilot 补齐遗漏。",
+        "sourceCoverageSummary": "来源覆盖：{{images}} 张图片，{{findings}} 个抽取项，已映射 {{mapped}} 个，未覆盖 {{unmapped}} 个。",
         "canvasCount": "画布",
         "stickyCount": "便签",
+        "storyCount": "Story",
+        "sourceCount": "来源项",
+        "notesBadge": "{{count}} 条便签",
         "create": "确认创建项目",
         "creating": "创建中…",
-        "created": "已创建"
+        "created": "已创建",
+        "qualityHardTitle": "{{count}} 条硬规则问题需要先修复:",
+        "qualitySoftTitle": "{{count}} 条软提示(仅供参考,不阻塞):",
+        "qualityHardBlocked": "硬规则阻止应用:{{message}}"
+      },
+      "projectUpdate": {
+        "title": "项目更新草稿",
+        "subtitle": "确认后会把变更应用到当前项目。",
+        "projectMismatch": "这个草稿指向的项目与当前项目不一致，已阻止应用。",
+        "sourceCoverageWarning": "仍有图片或文字来源未完整覆盖，不能直接应用。请让 Copilot 补齐遗漏。",
+        "operationWarning": "存在空画布、空 Story 或无操作，不能直接应用。",
+        "sourceCoverageSummary": "来源覆盖：{{images}} 张图片，{{findings}} 个抽取项，已映射 {{mapped}} 个，未覆盖 {{unmapped}} 个。",
+        "operationCount": "操作",
+        "stickyCount": "便签",
+        "storyOperationCount": "Story 操作",
+        "sourceCount": "来源项",
+        "createCanvas": "新增画布",
+        "replaceCanvas": "更新画布",
+        "createStory": "新增 Story",
+        "replaceStory": "更新 Story",
+        "applyReportTitle": "应用结果",
+        "applyReportSuccess": "已完成：{{label}}",
+        "applyReportFailed": "失败：{{label}} — {{message}}",
+        "apply": "应用到项目",
+        "applying": "应用中…",
+        "applied": "已应用",
+        "qualityHardTitle": "{{count}} 条硬规则问题需要先修复:",
+        "qualitySoftTitle": "{{count}} 条软提示(仅供参考,不阻塞):",
+        "qualityHardBlocked": "硬规则阻止应用:{{message}}"
+      },
+      "quality": {
+        "severityHard": "硬",
+        "severitySoft": "软"
+      },
+      "discussionInsight": {
+        "badge": "讨论洞察",
+        "sessionOnly": "仅本次会话",
+        "suggestedActions": "建议项目动作",
+        "addToBasket": "加入篮子",
+        "added": "已加入",
+        "applyToProject": "应用到项目"
+      },
+      "sessionBasket": {
+        "title": "会话洞察篮子",
+        "expand": "展开",
+        "collapse": "收起",
+        "clear": "清空",
+        "privacyHint": "仅保存在本次 App 会话内。保存到项目或长期记忆都需要确认。",
+        "empty": "还没有收集洞察。",
+        "remove": "移除洞察",
+        "markUseful": "标记有用",
+        "usefulMarked": "有用",
+        "apply": "应用",
+        "applyAgain": "再次应用"
+      },
+      "applyLearning": {
+        "title": "把学习洞察应用到项目",
+        "subtitle": "选择这条洞察要去哪里。Copilot 会生成可确认草稿，不会直接写入。",
+        "target": "目标",
+        "newProject": "新项目",
+        "action": "动作",
+        "actions": {
+          "updateProject": "更新项目",
+          "createCanvas": "创建或补充画布",
+          "createStory": "创建 Story",
+          "saveProjectInsight": "保存为项目洞察"
+        },
+        "reviewHint": "下一条回复仍会走确认卡流程，确认前不会写入任何项目数据。",
+        "cancel": "取消",
+        "generate": "生成草稿"
+      },
+      "memory": {
+        "profileTitle": "本地 Copilot Profile",
+        "localOnly": "仅属于当前本地用户。可查看、接受、忽略或删除。",
+        "noPreferences": "暂无已确认偏好。",
+        "suggestionsTitle": "记忆建议",
+        "reviewHint": "待确认建议不是长期记忆，接受后才会保存。",
+        "noSuggestions": "暂无待确认建议。",
+        "ignore": "忽略",
+        "accept": "接受",
+        "confidence": {
+          "high": "高",
+          "medium": "中",
+          "low": "低"
+        }
       },
       "canvasRefs": {
         "title": "相关画布看板",
@@ -603,7 +699,23 @@
         "title": "推荐案例入口",
         "subtitle": "我已把回答中的案例 slug 转成可打开入口；可直接查看案例。",
         "canvasCount": "{{count}} 张画布",
+        "storyCount": "{{count}} 个故事",
         "detail": "查看案例"
+      },
+      "readingRefs": {
+        "title": "参考阅读",
+        "subtitle": "我已把回答中的书籍、文章和资料转成可预览入口；点击可快速了解为什么值得读。",
+        "preview": "预览",
+        "close": "关闭参考阅读预览",
+        "recommendation": "推荐理由",
+        "quickIntro": "快速介绍",
+        "nextOpen": "下一步可以打开",
+        "sources": "来源",
+        "itemCase": "{{lang}}案例",
+        "itemCanvas": "{{lang}}画布模板",
+        "itemFramework": "战略框架",
+        "itemPattern": "商业模式",
+        "itemExperiment": "实验方法"
       },
       "referenceHint": {
         "caseNotFound": "未找到可打开的案例：{{items}}",
@@ -669,6 +781,8 @@
         "copyPrompt": "复制提示词",
         "copied": "已复制",
         "supportedAgentsLabel": "已适配",
+        "bundledPlaybooksTitle": "App 内置 Playbook",
+        "bundledPlaybooksIntro": "这些只读 playbook 随 App 预置。你确认过的本地偏好可以覆盖 Copilot 使用它们的方式。",
         "installPrompt": "我刚下载了 PinGarden Skill Pack:{{filename}}(版本 {{version}})。\n\n请帮我安装:\n\n1. 识别你所在的 AI 编程 Agent(Claude、Code Cursor、Codex、CodeBuddy、WorkBuddy 或其他),把 zip 解压到该 Agent 的标准 skills / rules / workflows 目录。常见位置:\n   - Claude:~/.claude/skills/\n   - Code Cursor:~/.cursor/rules/\n   - Codex:~/.codex/\n   - CodeBuddy / WorkBuddy:按其官方 skill 安装路径\n   - 其他:查看 zip 内的 INSTALL.md\n\n2. 运行 `pingarden doctor` 验证 PinGarden CLI 在 PATH 中。如未找到,提示我先打开 PinGarden 桌面应用(CLI 随应用资源一起分发)。\n\n3. 安装完成后,简要介绍这个 skill 能做什么、以及如何在你这里调用。",
         "installMdHint": "如果你的 AI 工具不在上面的清单里,zip 内的 INSTALL.md 提供了手动安装步骤。",
         "notReady": "skill 包尚未生成,运行 `pnpm package:mac` 即可产出。"

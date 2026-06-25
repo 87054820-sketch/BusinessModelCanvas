@@ -1,26 +1,31 @@
 import type { FastifyInstance } from 'fastify';
 import * as Y from 'yjs';
 import { z } from 'zod';
-import type { CanvasMeta, Lang } from '@pingarden/shared';
+import {
+  COPILOT_ACCEPTED_IMAGE_TYPES,
+  COPILOT_MAX_IMAGE_ATTACHMENTS,
+  COPILOT_MAX_IMAGE_BYTES,
+  type CanvasMeta,
+  type CopilotImageAttachment,
+  type Lang,
+} from '@pingarden/shared';
 import type { FederatedStorage } from '../storage/FederatedStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { streamKimiChat, type KimiChatMessage } from '../llm/kimiCliAdapter.js';
 import { resolveKimiBinary, readKimiVersion, KimiBinaryNotFoundError } from '../llm/kimiBinaryResolver.js';
 import { writeConfig as writeKimiConfig, clearConfig as clearKimiConfig } from '../llm/kimiConfig.js';
+import { buildBundledPlaybookPrompt } from '../copilot/bundledPlaybooks.js';
+import { buildMemorySuggestionPrompt } from '../copilot/memorySummarizer.js';
+import { buildCopilotProtocol, type CopilotProtocolIntent } from '../copilot/protocols.js';
+import { CopilotUserProfileStore } from '../copilot/userProfileStore.js';
+import { config } from '../config.js';
+import { getIdentity } from './identity.js';
 
 const STICKIES_KEY = 'stickies';
-const ACCEPTED_IMAGE_TYPES = ['image/png', 'image/jpeg', 'image/webp', 'image/gif'] as const;
-const MAX_IMAGE_ATTACHMENTS = 2;
-const MAX_IMAGE_BYTES = 2 * 1024 * 1024;
+const ACCEPTED_IMAGE_TYPES = COPILOT_ACCEPTED_IMAGE_TYPES;
+const MAX_IMAGE_ATTACHMENTS = COPILOT_MAX_IMAGE_ATTACHMENTS;
+const MAX_IMAGE_BYTES = COPILOT_MAX_IMAGE_BYTES;
 const MAX_IMAGE_DATA_URL_LENGTH = Math.ceil(MAX_IMAGE_BYTES * 4 / 3) + 128;
-
-type CopilotImageAttachment = {
-  id: string;
-  name: string;
-  mimeType: (typeof ACCEPTED_IMAGE_TYPES)[number];
-  sizeBytes: number;
-  dataUrl: string;
-};
 
 /**
  * Copilot HTTP surface — Mode A (Kimi CLI chat) routes:
@@ -54,6 +59,7 @@ export function registerCopilotRoutes(
 ) {
   const bundle = storage.bundleStorage;
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
+  const profileStore = new CopilotUserProfileStore(config.dataDir);
 
   // ── GET /copilot/health ──────────────────────────────────────────────
   // Namespaced under `kimi` so future modes (MCP server, GitHub Action,
@@ -130,7 +136,7 @@ export function registerCopilotRoutes(
 
   const ChatRequestSchema = z.object({
     apiKey: z.string().min(1),
-    intent: z.enum(['project-draft']).optional(),
+    intent: z.enum(['project-draft', 'project-update', 'discussion-insight', 'apply-learning-to-project']).optional(),
     messages: z
       .array(
         z.object({
@@ -142,6 +148,8 @@ export function registerCopilotRoutes(
       .min(1),
     /** Optional pre-fetched case/pattern markdown digest. */
     attachedContext: z.string().optional(),
+    /** UI language — controls the quality-rules prompt language. */
+    lang: z.enum(['en', 'zh']).optional(),
   });
 
   app.post('/copilot/chat', async (req, reply) => {
@@ -215,8 +223,10 @@ export function registerCopilotRoutes(
       content: m.content,
     }));
 
-    const systemPromptText = buildSystemPrompt(body.attachedContext);
-    const latestUserMsg = buildLatestUserMessage(last.content, last.imageAttachments ?? [], body.intent);
+    const identity = getIdentity(req);
+    const userProfileContext = await profileStore.buildPromptContext(identity.displayName);
+    const systemPromptText = buildSystemPrompt(body.attachedContext, userProfileContext);
+    const latestUserMsg = buildLatestUserMessage(last.content, last.imageAttachments ?? [], body.intent, body.lang);
 
     try {
       for await (const chunk of streamKimiChat({
@@ -358,15 +368,16 @@ function validateImageAttachments(images: CopilotImageAttachment[]): string | nu
 function buildLatestUserMessage(
   content: string,
   images: CopilotImageAttachment[],
-  intent?: 'project-draft',
+  intent?: CopilotProtocolIntent,
+  lang?: 'en' | 'zh',
 ): string {
   const lines = [content.trim()];
-  if (intent === 'project-draft') {
-    lines.push('', buildProjectDraftProtocol());
+  if (intent) {
+    lines.push('', buildCopilotProtocol(intent, lang));
   }
   if (images.length > 0) {
     lines.push('', '## Attached images');
-    lines.push('The user attached the following images as source material. Use the visible layout, text, objects, and structure in these images when drafting PinGarden project/canvas recommendations.');
+    lines.push('The user attached the following original, uncompressed images as source material. Use every visible label/sticky/note in every image. Extract sourceFindings first, then map each finding to canvas stickies or story content; do not silently drop visible items.');
     for (const [index, image] of images.entries()) {
       lines.push('');
       lines.push(`### Image ${index + 1}: ${image.name}`);
@@ -376,42 +387,6 @@ function buildLatestUserMessage(
     }
   }
   return lines.join('\n').trim();
-}
-
-function buildProjectDraftProtocol(): string {
-  return [
-    '## Hidden PinGarden project-draft protocol',
-    'Use this protocol internally. Do not repeat it to the user.',
-    'Infer every visible canvas block from the image as much as possible; do not ask the user to fill canvas zones one by one.',
-    'Only project.name and project.description are user-supplied essentials. If they are missing, leave them empty or use a clearly tentative short guess, and put only "project.name" and/or "project.description" in missingFields.',
-    'Never put paths such as canvases[0].stickies.* in missingFields. If a canvas block is unclear, omit it or add a short note instead of asking for that field.',
-    'If a link is not directly accessible, ask the user to paste key information from that link. Do not pretend you browsed it.',
-    'When enough information is available or the image contains enough canvas content, give a short explanation and output exactly one fenced JSON code block matching this shape:',
-    '```json',
-    '{',
-    '  "kind": "pingarden.projectDraft",',
-    '  "project": {',
-    '    "name": "Project name",',
-    '    "description": "One-sentence description of audience, value, and goal"',
-    '  },',
-    '  "canvases": [',
-    '    {',
-    '      "defId": "business-model-canvas",',
-    '      "title": "Business Model Canvas",',
-    '      "stickies": [',
-    '        { "zoneId": "customer-segments", "text": "Target customer segment" },',
-    '        { "zoneId": "value-propositions", "text": "Core value proposition" }',
-    '      ]',
-    '    }',
-    '  ],',
-    '  "missingFields": ["project.name", "project.description"],',
-    '  "notes": ["Canvas content was inferred from the image; unclear blocks may be edited after creation"]',
-    '}',
-    '```',
-    'Keep stickies short: one sticky, one concept.',
-    'Common Business Model Canvas zoneIds: key-partners, key-activities, key-resources, value-propositions, customer-relationships, channels, customer-segments, cost-structure, revenue-streams.',
-    'If the user uploaded a Business Model Canvas image, prefer creating a business-model-canvas.',
-  ].join('\n');
 }
 
 function escapeMarkdownAlt(input: string): string {
@@ -445,6 +420,8 @@ function buildLibraryMarkdown(
   lines.push('# PinGarden Strategy Library');
   lines.push('');
   lines.push('This is the curated PinGarden library available in the app. Use these real ids/slugs when recommending content. Do not claim the library is empty.');
+  lines.push('');
+  lines.push('Taxonomy rules: Cases are concrete company/industry/comparison examples listed only under ## Cases. Resources are books/articles/papers/reports/web pages listed only under ## Resources; never call a resource a case. Canvas templates, business-model patterns, strategy frameworks, and experiments are method assets, not cases. When answering in Chinese, use “案例” only for ## Cases and use “参考阅读/资料/书籍” for ## Resources.');
   lines.push('');
   lines.push(`Counts: ${cases.length} cases, ${defs.length} canvas templates, ${patterns.length} business-model patterns, ${frameworks.length} strategy frameworks, ${experiments.length} experiments, ${resources.length} resources.`);
   lines.push('');
@@ -640,7 +617,7 @@ async function buildProjectMarkdown(
       const block = defsById.get(canvas.defId);
       const defName = block?.def.name[lang] ?? block?.def.name.en ?? canvas.defId;
       const active = canvas.id === activeCanvasId ? ' — active' : '';
-      lines.push(`- ${canvas.title} (${defName}, id: ${canvas.id})${active}`);
+      lines.push(`- ${canvas.title} (${defName}, id: ${canvas.id}, updatedAt: ${canvas.updatedAt})${active}`);
     }
   }
   lines.push('');
@@ -652,7 +629,7 @@ async function buildProjectMarkdown(
   } else {
     for (const story of stories) {
       const active = story.id === activeStoryId ? ' — active' : '';
-      lines.push(`- ${story.title} (id: ${story.id})${active}`);
+      lines.push(`- ${story.title} (id: ${story.id}, updatedAt: ${story.updatedAt})${active}`);
     }
   }
   lines.push('');
@@ -852,15 +829,18 @@ function buildPatternMarkdown(
  * into the prompt body. Kept terse to leave room for conversation
  * history and the user's question within the model's context window.
  */
-function buildSystemPrompt(attachedContext?: string): string {
+function buildSystemPrompt(attachedContext?: string, userProfileContext?: string): string {
   const base = [
     'You are PinGarden Copilot, a strategy-analysis assistant for business-model canvases, projects, cases, stories, and the strategy library.',
     'Answer in concise markdown — no tool use, no file ops, no web fetches. Use short sections separated by blank lines; prefer headings and bullets, and avoid wide markdown tables unless the user explicitly asks for a table.',
     'Keep responses grounded in the supplied PinGarden context; cite specific stories, canvases, or canvas blocks when relevant.',
     'Do not infer library availability from the subprocess working directory; use the supplied PinGarden context as the source of truth.',
     'When recommending a next step, prefer concrete PinGarden actions such as reading a case, opening a canvas, drafting a story, choosing a paired canvas, or testing an assumption.',
+    'Keep library categories distinct: “case” means only concrete entries from the Cases section; books/articles/reports/web pages are Resources or reference reading, never cases. Separate recommended cases, reference reading, canvas templates, strategy frameworks, patterns, and experiments in the answer when more than one category appears. In Chinese answers, prefer localized display names and omit internal slugs/defIds in prose unless the user explicitly asks for IDs; do not expose jargon such as “ad-lib” when a Chinese name exists. In English answers, show the display name first and include slug/id only when useful.',
     'When the user wants to create a project from text, links, or images, first ask for missing essentials such as project name, target customers, and goal. Once enough information is available, output exactly one fenced JSON project draft with kind "pingarden.projectDraft" so the UI can show a confirmation card. Never claim the project is created until the user presses the confirmation button.',
   ].join(' ');
-  if (!attachedContext) return base;
-  return `${base}\n\nContext for this conversation:\n\n${attachedContext}`;
+  const sections = [base, buildBundledPlaybookPrompt(), buildMemorySuggestionPrompt()];
+  if (userProfileContext) sections.push(userProfileContext);
+  if (attachedContext) sections.push(`Context for this conversation:\n\n${attachedContext}`);
+  return sections.join('\n\n');
 }

@@ -18,6 +18,9 @@
       "showBlockPrompts": false
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["business-model-canvas"],
   "relatedNotes": {
     "business-model-canvas": {

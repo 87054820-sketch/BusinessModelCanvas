@@ -665,41 +665,8 @@ export interface UpdateStoryInput {
   contentDateLabel?: string;
 }
 
-export type CopilotImageMimeType = 'image/png' | 'image/jpeg' | 'image/webp' | 'image/gif';
-
-export interface CopilotImageAttachment {
-  id: string;
-  name: string;
-  mimeType: CopilotImageMimeType;
-  sizeBytes: number;
-  dataUrl: string;
-  width?: number;
-  height?: number;
-  thumbnailDataUrl?: string;
-}
-
-export interface CopilotDraftSticky {
-  zoneId: string;
-  text: string;
-  color?: string;
-}
-
-export interface CopilotDraftCanvas {
-  defId: string;
-  title: string;
-  stickies: CopilotDraftSticky[];
-}
-
-export interface CopilotProjectDraft {
-  kind: 'pingarden.projectDraft';
-  project: {
-    name: string;
-    description?: string;
-  };
-  canvases: CopilotDraftCanvas[];
-  missingFields?: string[];
-  notes?: string[];
-}
+export * from './copilot.js';
+export * from './qualityRules.js';
 
 export function parseStoryCanvasDirectives(content: string): StoryCanvasDirective[] {
   const directives: StoryCanvasDirective[] = [];
@@ -709,10 +676,12 @@ export function parseStoryCanvasDirectives(content: string): StoryCanvasDirectiv
     const defId = match[1]?.trim();
     const attrs = parseDirectiveAttrs(match[2] ?? '');
     const canvasId = attrs.canvasId?.trim();
-    if (!canvasId) continue;
+    const variantId = attrs.variantId?.trim() ?? attrs.variant?.trim();
+    if (!canvasId && !defId) continue;
     directives.push({
-      canvasId,
+      ...(canvasId ? { canvasId } : {}),
       ...(defId ? { defId } : {}),
+      ...(variantId ? { variantId } : {}),
       ...(attrs.title ? { title: attrs.title } : {}),
     });
   }

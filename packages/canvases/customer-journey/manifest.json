@@ -22,6 +22,9 @@
       }
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["empathy-map", "value-proposition-canvas", "jobs-to-be-done"],
   "relatedNotes": {
     "empathy-map": {

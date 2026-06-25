@@ -4,7 +4,7 @@ import { create } from 'zustand';
  * Global lightbox state. One image at a time — opening a new one
  * replaces the previous. Lives in Zustand so any component can open
  * the lightbox without prop-drilling, and a single `<LightboxRoot/>`
- * mounted at the page level renders the modal.
+ * mounted at the app level renders the modal.
  */
 interface LightboxStore {
   src: string | null;

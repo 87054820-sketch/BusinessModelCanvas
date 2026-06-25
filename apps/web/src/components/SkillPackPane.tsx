@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import type { CopilotPlaybookDescriptor } from '@pingarden/shared';
 import { copilotApi, type SkillPackInfo } from '../api/copilot';
+import { CopilotMemoryReviewPanel } from './CopilotMemoryReviewPanel';
 import en from '../i18n/en.json';
 import zh from '../i18n/zh.json';
 
@@ -18,20 +20,24 @@ import zh from '../i18n/zh.json';
  * install paths; one prompt covers them all and leaves the
  * tool-specific minutiae inside the zip's INSTALL.md as a fallback.
  */
-export function SkillPackPane() {
+export function SkillPackPane({ displayName }: { displayName: string }) {
   const { t, i18n } = useTranslation();
   const [info, setInfo] = useState<SkillPackInfo | null>(null);
+  const [playbooks, setPlaybooks] = useState<CopilotPlaybookDescriptor[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [downloading, setDownloading] = useState(false);
   const [copiedPrompt, setCopiedPrompt] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
-    copilotApi
-      .getSkillPackInfo()
-      .then((next) => {
+    Promise.all([
+      copilotApi.getSkillPackInfo(),
+      copilotApi.getBundledPlaybooks().catch(() => []),
+    ])
+      .then(([next, nextPlaybooks]) => {
         if (cancelled) return;
         setInfo(next);
+        setPlaybooks(nextPlaybooks);
         setError(null);
       })
       .catch((err) => {
@@ -170,6 +176,30 @@ export function SkillPackPane() {
           ))}
         </div>
       </section>
+
+      {playbooks.length > 0 && (
+        <section className="rounded-xl border border-indigo-100 bg-indigo-50/70 p-3">
+          <h4 className="text-[12px] font-semibold text-indigo-950">
+            {t('library.copilot.skillPack.bundledPlaybooksTitle')}
+          </h4>
+          <p className="mt-1 text-[11px] leading-relaxed text-indigo-700">
+            {t('library.copilot.skillPack.bundledPlaybooksIntro')}
+          </p>
+          <div className="mt-2 space-y-1.5">
+            {playbooks.map((playbook) => (
+              <div key={playbook.id} className="rounded-lg border border-white bg-white/85 px-3 py-2">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-[11px] font-semibold text-gray-950">{playbook.title}</span>
+                  <span className="rounded-full bg-gray-100 px-2 py-0.5 text-[9px] text-gray-500">v{playbook.version}</span>
+                </div>
+                <div className="mt-0.5 text-[10px] leading-relaxed text-gray-500">{playbook.summary}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {displayName && <CopilotMemoryReviewPanel displayName={displayName} />}
 
       <p className="text-[10px] leading-relaxed text-gray-400">
         {t('library.copilot.skillPack.installMdHint')}

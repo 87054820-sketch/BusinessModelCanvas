@@ -2,7 +2,7 @@
   "id": "ad-lib-value-proposition",
   "name": {
     "en": "Ad-Lib Value Proposition",
-    "zh": "价值主张速写模版"
+    "zh": "一句话价值主张模板"
   },
   "viewBox": [0, 0, 1200, 1500],
   "background": {
@@ -10,24 +10,17 @@
     "zh": "bg.zh.svg"
   },
   "related": ["value-proposition-canvas", "jobs-to-be-done"],
-  "relatedNotes": {
-    "value-proposition-canvas": {
-      "en": "Always run VPC first; the Ad-Lib only compresses what's already in VPC into one sentence.",
-      "zh": "永远先做 VPC;Ad-Lib 只是把 VPC 里已有的东西压缩成一句话。"
-    },
-    "jobs-to-be-done": {
-      "en": "Use the dominant Customer Job as the 'who want to' slot for cleaner positioning language.",
-      "zh": "用最主要的客户工作填进'他们想做的'槽,定位语言更干净。"
-    }
+  "quality": {
+    "softHints": true
   },
   "relatedNotes": {
     "value-proposition-canvas": {
       "en": "Always run VPC first; the Ad-Lib only compresses what's already in VPC into one sentence.",
-      "zh": "永远先做 VPC;Ad-Lib 只是把 VPC 里已有的东西压缩成一句话。"
+      "zh": "永远先做 VPC；一句话价值主张模板只是把 VPC 里已有的东西压缩成一句话。"
     },
     "jobs-to-be-done": {
       "en": "Use the dominant Customer Job as the 'who want to' slot for cleaner positioning language.",
-      "zh": "用最主要的客户工作填进'他们想做的'槽,定位语言更干净。"
+      "zh": "用最主要的客户工作填进'他们想做的'槽，定位语言更干净。"
     }
   },
   "zones": [

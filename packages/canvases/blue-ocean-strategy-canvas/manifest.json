@@ -53,6 +53,9 @@
     }
   ],
   "related": ["business-model-canvas", "value-proposition-canvas"],
+  "quality": {
+    "softHints": true
+  },
   "relatedNotes": {
     "business-model-canvas": {
       "en": "Take the differentiated value curve back into BMC's Value Propositions and Customer Segments — the whole model usually shifts.",

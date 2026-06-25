@@ -21,6 +21,9 @@
       "showBlockPrompts": true
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["experiment-canvas", "portfolio-map", "innovation-culture-map"],
   "defaultColorLegend": [
     {

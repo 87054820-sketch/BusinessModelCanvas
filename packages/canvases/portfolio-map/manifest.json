@@ -21,6 +21,9 @@
       "showBlockPrompts": false
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "plugin": "axis-grid",
   "related": ["business-model-canvas"],
   "relatedNotes": {

@@ -4,7 +4,7 @@ language: zh
 source: packages/canvases/ad-lib-value-proposition/
 ---
 
-# 价值主张速写模版
+# 一句话价值主张模板
 
 ## 何时使用
 
@@ -129,8 +129,8 @@ _未自定义,使用六色 sticky 默认调色板。颜色无固定语义,作者
 
 这张画布常和这些一起用,做完后引导用户接下去做:
 
-- `value-proposition-canvas` — 永远先做 VPC;Ad-Lib 只是把 VPC 里已有的东西压缩成一句话。
-- `jobs-to-be-done` — 用最主要的客户工作填进'他们想做的'槽,定位语言更干净。
+- `value-proposition-canvas` — 永远先做 VPC；一句话价值主张模板只是把 VPC 里已有的东西压缩成一句话。
+- `jobs-to-be-done` — 用最主要的客户工作填进'他们想做的'槽，定位语言更干净。
 
 ---
 Source: `packages/canvases/ad-lib-value-proposition/` — regenerate with `pingarden skill build`.

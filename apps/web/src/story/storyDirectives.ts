@@ -35,11 +35,13 @@ export function parseCanvasDirective(line: string): StoryCanvasDirective | null 
   if (!match) return null;
   const attrs = parseDirectiveAttrs(match[2] ?? '');
   const canvasId = attrs.canvasId?.trim();
-  if (!canvasId) return null;
   const defId = match[1]?.trim();
+  const variantId = attrs.variantId?.trim() ?? attrs.variant?.trim();
+  if (!canvasId && !defId) return null;
   return {
-    canvasId,
+    ...(canvasId ? { canvasId } : {}),
     ...(defId ? { defId } : {}),
+    ...(variantId ? { variantId } : {}),
     ...(attrs.title ? { title: attrs.title } : {}),
   };
 }

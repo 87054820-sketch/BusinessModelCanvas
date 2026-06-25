@@ -11,6 +11,7 @@ import { NewProjectPage } from './pages/NewProjectPage';
 import { ProjectWorkspacePage } from './pages/ProjectWorkspacePage';
 import { HistoryPage } from './pages/HistoryPage';
 import { CopilotErrorBoundary } from './components/CopilotErrorBoundary';
+import { LightboxRoot } from './components/Lightbox';
 
 export default function App() {
   const { t } = useTranslation();
@@ -100,6 +101,7 @@ export default function App() {
           onCancel={() => setEditingIdentity(false)}
         />
       )}
+      <LightboxRoot />
     </div>
   );
 }

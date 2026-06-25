@@ -8,6 +8,13 @@ export interface ConversationImageAttachment {
   previewDataUrl: string;
 }
 
+export interface CopilotUpdateBaseline {
+  projectId: string;
+  capturedAt: string;
+  canvases: Record<string, string>;
+  stories: Record<string, string>;
+}
+
 export interface ConversationMessage {
   id: string;
   role: 'user' | 'assistant';
@@ -25,6 +32,8 @@ export interface ConversationMessage {
    */
   attachedRef?: AttachedRef;
   imageAttachments?: ConversationImageAttachment[];
+  expectedSourceImageCount?: number;
+  updateBaseline?: CopilotUpdateBaseline;
 }
 
 export type AttachedRef =

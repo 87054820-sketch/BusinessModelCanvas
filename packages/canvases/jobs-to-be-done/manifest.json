@@ -18,6 +18,9 @@
       "showBlockPrompts": false
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "defaultColorLegend": [
     {
       "hex": "#FCF1A8",
@@ -56,7 +59,7 @@
     },
     "ad-lib-value-proposition": {
       "en": "Compress the validated job + outcome into the one-sentence value-prop slot for stakeholder alignment.",
-      "zh": "把验证过的工作 + 结果压缩进 Ad-Lib 一句话，用来对齐利益相关方。"
+      "zh": "把验证过的工作 + 结果压缩进一句话价值主张模板，用来对齐利益相关方。"
     },
     "customer-journey": {
       "en": "Plot when in the journey this job becomes acute and where the promised value is actually perceived.",

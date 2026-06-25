@@ -1,4 +1,11 @@
-import type { CopilotImageAttachment, Lang } from '@pingarden/shared';
+import type {
+  CopilotImageAttachment,
+  CopilotMemoryState,
+  CopilotMemorySuggestion,
+  CopilotPlaybookDescriptor,
+  CopilotUserProfile,
+  Lang,
+} from '@pingarden/shared';
 import { ensureOk } from './errors';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
@@ -28,13 +35,15 @@ export interface CopilotChatMessage {
   imageAttachments?: CopilotImageAttachment[];
 }
 
-export type CopilotIntent = 'project-draft';
+export type CopilotIntent = 'project-draft' | 'project-update' | 'discussion-insight' | 'apply-learning-to-project';
 
 export interface CopilotStreamRequest {
   /** Plaintext Kimi Code API key (decrypted by the renderer just before sending). */
   apiKey: string;
   /** Conversation history including the latest user turn. */
   messages: CopilotChatMessage[];
+  /** Display name used only for local user-profile isolation. */
+  displayName?: string;
   /** Optional pre-fetched case/pattern markdown digest. */
   attachedContext?: string;
   /** Optional hidden task protocol selected by the UI. */
@@ -131,6 +140,43 @@ export const copilotApi = {
     return `${BASE}/copilot/skill-pack`;
   },
 
+  getMemoryState(displayName: string): Promise<CopilotMemoryState> {
+    return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory`, {
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
+  acceptMemorySuggestion(id: string, displayName: string): Promise<CopilotUserProfile> {
+    return fetchJson<CopilotUserProfile>(`${BASE}/copilot/memory/suggestions/${encodeURIComponent(id)}/accept`, {
+      method: 'POST',
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
+  ignoreMemorySuggestion(id: string, displayName: string): Promise<CopilotMemorySuggestion> {
+    return fetchJson<CopilotMemorySuggestion>(`${BASE}/copilot/memory/suggestions/${encodeURIComponent(id)}/ignore`, {
+      method: 'POST',
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
+  deleteUserPreference(id: string, displayName: string): Promise<{ ok: true }> {
+    return fetchJson<{ ok: true }>(`${BASE}/copilot/memory/preferences/${encodeURIComponent(id)}`, {
+      method: 'DELETE',
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
+  exportMemory(displayName: string): Promise<CopilotMemoryState> {
+    return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/export`, {
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
+  getBundledPlaybooks(): Promise<CopilotPlaybookDescriptor[]> {
+    return fetchJson<CopilotPlaybookDescriptor[]>(`${BASE}/copilot/playbooks/bundled`);
+  },
+
   /**
    * Stream a chat turn. Same SSE wire shape as Round 1 — server emits
    * `data: {"delta":"..."}\n\n` then `data: {"done":true}\n\n`, error
@@ -145,7 +191,10 @@ export const copilotApi = {
       try {
         const res = await fetch(`${BASE}/copilot/chat`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            ...(req.displayName ? { 'X-Display-Name': encodeURIComponent(req.displayName) } : {}),
+          },
           body: JSON.stringify(req),
           signal: abort.signal,
         });

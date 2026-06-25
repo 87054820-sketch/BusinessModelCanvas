@@ -21,6 +21,9 @@
       "showBlockPrompts": true
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["portfolio-map", "business-model-canvas", "business-model-environment"],
   "relatedNotes": {
     "portfolio-map": {

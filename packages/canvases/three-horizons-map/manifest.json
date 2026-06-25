@@ -21,6 +21,9 @@
       "showBlockPrompts": true
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["portfolio-map", "business-model-canvas", "experiment-canvas", "evidence-scorecard"],
   "relatedNotes": {
     "portfolio-map": {

@@ -2,6 +2,7 @@ import Fastify from 'fastify';
 import cors from '@fastify/cors';
 import staticPlugin from '@fastify/static';
 import { resolve } from 'node:path';
+import { COPILOT_MAX_IMAGE_ATTACHMENTS, COPILOT_MAX_IMAGE_BYTES } from '@pingarden/shared';
 import { config } from './config.js';
 import { FileSystemStorage } from './storage/FileSystemStorage.js';
 import { BundleStorage } from './storage/BundleStorage.js';
@@ -19,6 +20,7 @@ import { registerObjectsImportRoutes } from './http/objectsImport.js';
 import { registerStoryRoutes } from './http/stories.js';
 import { registerLibraryRoutes } from './http/library.js';
 import { registerCopilotRoutes } from './http/copilot.js';
+import { registerCopilotMemoryRoutes } from './http/copilotMemory.js';
 import { registerSkillPackRoutes } from './http/skillPack.js';
 import {
   getPortFilePath,
@@ -26,8 +28,13 @@ import {
   writePortFile,
 } from './util/portFile.js';
 
+const JSON_BASE64_OVERHEAD = 4 / 3;
+const COPILOT_BODY_LIMIT = Math.ceil(
+  COPILOT_MAX_IMAGE_ATTACHMENTS * COPILOT_MAX_IMAGE_BYTES * JSON_BASE64_OVERHEAD,
+) + 1024 * 1024;
+
 async function main() {
-  const app = Fastify({ logger: true, bodyLimit: 8 * 1024 * 1024 });
+  const app = Fastify({ logger: true, bodyLimit: COPILOT_BODY_LIMIT });
 
   await app.register(cors, { origin: true });
 
@@ -68,6 +75,7 @@ async function main() {
   registerStoryRoutes(app, storage);
   registerLibraryRoutes(app, storage);
   registerCopilotRoutes(app, storage, defs);
+  registerCopilotMemoryRoutes(app, config.dataDir);
   registerSkillPackRoutes(app);
 
   // Global error handler — maps storage-level read-only failures to a

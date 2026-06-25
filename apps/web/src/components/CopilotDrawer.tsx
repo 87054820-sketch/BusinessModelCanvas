@@ -14,15 +14,21 @@ import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import remarkCjkFriendly from 'remark-cjk-friendly';
 import remarkGfm from 'remark-gfm';
-import type {
-  BusinessModelPattern,
-  CopilotImageAttachment,
-  Experiment,
-  Lang,
-  StrategyFramework,
+import {
+  COPILOT_ACCEPTED_IMAGE_TYPES,
+  COPILOT_MAX_IMAGE_ATTACHMENTS,
+  COPILOT_MAX_IMAGE_BYTES,
+  type BusinessModelPattern,
+  type CopilotDiscussionInsight,
+  type CopilotImageAttachment,
+  type CopilotSessionInsightItem,
+  type Experiment,
+  type Lang,
+  type StrategyFramework,
 } from '@pingarden/shared';
-import { copilotApi } from '../api/copilot';
-import type { CanvasDefSummary } from '../api/client';
+import { copilotApi, type CopilotIntent } from '../api/copilot';
+import { api, type CanvasDefSummary } from '../api/client';
+import { storiesApi } from '../api/stories';
 import { REVEAL_INTERVAL_MS, splitStreamingBlocks, takeRevealChunk } from '../copilot/reveal';
 import { useKeyConfig } from '../copilot/useKeyConfig';
 import {
@@ -30,23 +36,33 @@ import {
   type AttachedRef,
   type ConversationImageAttachment,
   type ConversationMessage,
+  type CopilotUpdateBaseline,
 } from '../copilot/useConversation';
 import { useIdentity } from '../identity/useIdentity';
 import {
+  extractDiscussionInsights,
   extractProjectDrafts,
+  extractProjectUpdateDrafts,
   stripProjectDraftBlocks,
 } from '../copilot/projectDraft';
+import { useSessionInsightBasket } from '../copilot/useSessionInsightBasket';
 import { useLightbox } from '../state/lightbox';
 import { CopilotChatSettings } from './CopilotChatSettings';
 import {
   CopilotCanvasReferenceBoard,
   CopilotCaseReferenceBoard,
   CopilotReferenceResolutionHint,
+  CopilotResourceReferenceBoard,
   stripResolvedCanvasIds,
   stripResolvedCaseSlugs,
   useCopilotRecommendationReferences,
 } from './CopilotCanvasReferenceBoard';
 import { CopilotProjectDraftCard } from './CopilotProjectDraftCard';
+import { CopilotProjectUpdateDraftCard } from './CopilotProjectUpdateDraftCard';
+import { CopilotDiscussionInsightCard } from './CopilotDiscussionInsightCard';
+import { CopilotImageAttachmentGrid } from './CopilotImageAttachmentGrid';
+import { CopilotSessionInsightBasket } from './CopilotSessionInsightBasket';
+import { CopilotApplyLearningDialog, type ApplyLearningTarget } from './CopilotApplyLearningDialog';
 import { SkillPackPane } from './SkillPackPane';
 
 interface Props {
@@ -67,10 +83,11 @@ interface LibraryStarterCatalog {
 
 type ActiveTab = 'chat' | 'skillPack';
 type CopilotMode = 'createProject' | 'libraryReference' | 'projectWork';
+type CopilotActionIntent = CopilotIntent;
 type ComposerQuickAction = {
   labelKey: string;
   promptKey: string;
-  intent?: 'project-draft';
+  intent?: CopilotActionIntent;
   includePendingImages?: boolean;
 };
 type StarterTone = 'violet' | 'rose' | 'cyan' | 'amber' | 'emerald' | 'slate';
@@ -93,15 +110,21 @@ type StarterAction = {
   controls: StarterControl[];
   tone?: StarterTone;
 };
-type SendOptions = { forceContext?: boolean; includePendingImages?: boolean; intent?: 'project-draft' };
+type SendOptions = {
+  forceContext?: boolean;
+  includePendingImages?: boolean;
+  intent?: CopilotActionIntent;
+  contextOverride?: string;
+  projectIdOverride?: string;
+};
 type PendingImageAttachment = CopilotImageAttachment & { previewDataUrl: string };
 const TAB_STORAGE_KEY = 'pingarden.copilot.activeTab';
 const COPILOT_REMARK_PLUGINS = [remarkCjkFriendly, remarkGfm];
 const SELECTED_CHIP_CLASS = 'border-gray-300 bg-gray-900 text-white shadow-sm ring-1 ring-gray-300';
-const ACCEPTED_IMAGE_TYPES = ['image/png', 'image/jpeg', 'image/webp', 'image/gif'] as const;
-const MAX_IMAGE_ATTACHMENTS = 2;
-const MAX_IMAGE_BYTES = 2 * 1024 * 1024;
-const PROMPT_IMAGE_MAX_BYTES = 64 * 1024;
+const ACCEPTED_IMAGE_TYPES = COPILOT_ACCEPTED_IMAGE_TYPES;
+const MAX_IMAGE_ATTACHMENTS = COPILOT_MAX_IMAGE_ATTACHMENTS;
+const MAX_IMAGE_BYTES = COPILOT_MAX_IMAGE_BYTES;
+const PREVIEW_IMAGE_MAX_BYTES = 64 * 1024;
 const COPILOT_PROGRESS_STEP_COUNT = 4;
 const COPILOT_PROGRESS_INTERVAL_MS = 2200;
 
@@ -132,7 +155,9 @@ export function CopilotDrawer({
   const { identity } = useIdentity();
   const config = useKeyConfig();
   const conv = useConversation(identity?.displayName);
+  const insightBasket = useSessionInsightBasket();
 
+  const [activeInsightItem, setActiveInsightItem] = useState<CopilotSessionInsightItem | null>(null);
   const [activeTab, setActiveTab] = useState<ActiveTab>(() => {
     if (typeof localStorage === 'undefined') return 'chat';
     const stored = localStorage.getItem(TAB_STORAGE_KEY);
@@ -227,10 +252,43 @@ export function CopilotDrawer({
     void handleSend(prompt, { forceContext: true });
   }
 
+  function handleAddInsight(insight: CopilotDiscussionInsight, sourceMessageId?: string) {
+    const item = insightBasket.add(insight, sourceMessageId);
+    return item;
+  }
+
+  function handleApplyInsight(insight: CopilotDiscussionInsight, sourceMessageId?: string) {
+    const item = handleAddInsight(insight, sourceMessageId);
+    setActiveInsightItem(item);
+  }
+
+  async function handleGenerateFromInsight(prompt: string, target: ApplyLearningTarget) {
+    setActiveInsightItem(null);
+    if (target.kind === 'new-project') {
+      void handleSend(prompt, { forceContext: true, intent: 'project-draft' });
+      return;
+    }
+    let contextMd: string | undefined;
+    try {
+      const result = await copilotApi.fetchProjectContext(target.projectId, lang);
+      contextMd = result.markdown;
+    } catch {
+      contextMd = undefined;
+    }
+    void handleSend(prompt, {
+      forceContext: true,
+      intent: 'apply-learning-to-project',
+      ...(contextMd ? { contextOverride: contextMd } : {}),
+      projectIdOverride: target.projectId,
+    });
+    if (activeInsightItem) insightBasket.markApplied(activeInsightItem.id);
+  }
+
   async function handleAddImageFiles(files: FileList | File[]) {
     if (streaming) return;
     const candidates = Array.from(files).filter((file) => file.type.startsWith('image/'));
     if (candidates.length === 0) return;
+    setError(null);
 
     const slots = MAX_IMAGE_ATTACHMENTS - pendingImages.length;
     if (slots <= 0) {
@@ -257,11 +315,16 @@ export function CopilotDrawer({
     if (accepted.length === 0) return;
 
     const next = await Promise.all(accepted.map(readImageAttachment));
-    setPendingImages((prev) => [...prev, ...next]);
+    setPendingImages((prev) => {
+      const remainingSlots = MAX_IMAGE_ATTACHMENTS - prev.length;
+      if (remainingSlots <= 0) return prev;
+      return [...prev, ...next.slice(0, remainingSlots)];
+    });
   }
 
   function handleRemoveImage(id: string) {
     setPendingImages((prev) => prev.filter((item) => item.id !== id));
+    setError(null);
   }
 
   function handleFileInputChange(files: FileList | null) {
@@ -345,7 +408,7 @@ export function CopilotDrawer({
     const imagesForTurn = overridePrompt && !options?.includePendingImages ? [] : pendingImages;
     const isImageOnlyProjectCreation =
       attachedRef === null && !overridePrompt && copilotMode === 'createProject' && !trimmed && imagesForTurn.length > 0;
-    const inferredIntent = options?.intent ?? (isImageOnlyProjectCreation ? 'project-draft' : undefined);
+    const inferredIntent = options?.intent ?? (isImageOnlyProjectCreation ? 'project-draft' : inferProjectWorkIntent(trimmed, copilotMode));
     if ((!trimmed && imagesForTurn.length === 0) || streaming) return;
     const messageText = trimmed || t(`library.copilot.modeHints.${copilotMode}.imageOnlyPrompt`);
     setError(null);
@@ -369,17 +432,29 @@ export function CopilotDrawer({
       attachedRef !== null &&
       !conv.messages.some((m) => m.attachedRef && attachedRefKey(m.attachedRef) === attachedKey);
 
-    let contextMd: string | undefined;
+    let contextMd: string | undefined = options?.contextOverride;
     const shouldFetchContext =
-      inferredIntent === 'project-draft' && attachedRef === null
+      !contextMd &&
+      (inferredIntent === 'project-draft' && attachedRef === null
         ? false
-        : options?.forceContext === true || attachedRef === null || isFirstTurnWithThisAttached;
+        : options?.forceContext === true || attachedRef === null || isFirstTurnWithThisAttached);
     if (shouldFetchContext) {
       try {
         const result = await fetchAttachedContext(attachedRef, lang);
         contextMd = result.markdown;
       } catch {
         contextMd = undefined;
+      }
+    }
+
+    const expectedSourceImageCount = inferredIntent && imagesForTurn.length > 0 ? imagesForTurn.length : undefined;
+    const activeProjectId = options?.projectIdOverride ?? projectIdFromAttachedRef(attachedRef);
+    let updateBaseline: CopilotUpdateBaseline | undefined;
+    if ((inferredIntent === 'project-update' || inferredIntent === 'apply-learning-to-project') && activeProjectId && identity?.displayName) {
+      try {
+        updateBaseline = await captureUpdateBaseline(activeProjectId, identity.displayName);
+      } catch {
+        updateBaseline = undefined;
       }
     }
 
@@ -412,6 +487,8 @@ export function CopilotDrawer({
       providerId: 'kimi',
       model: 'kimi-for-coding',
       ...(attachedRef ? { attachedRef } : {}),
+      ...(expectedSourceImageCount ? { expectedSourceImageCount } : {}),
+      ...(updateBaseline ? { updateBaseline } : {}),
     });
 
     clearRevealTimer();
@@ -423,6 +500,7 @@ export function CopilotDrawer({
       {
         apiKey,
         messages: outbound,
+        ...(identity?.displayName ? { displayName: identity.displayName } : {}),
         ...(contextMd ? { attachedContext: contextMd } : {}),
         ...(inferredIntent ? { intent: inferredIntent } : {}),
       },
@@ -458,6 +536,7 @@ export function CopilotDrawer({
     if (!window.confirm(t('library.copilot.clearChatConfirm'))) return;
     handleStop();
     conv.clear();
+    insightBasket.clear();
     setError(null);
   }
 
@@ -547,6 +626,17 @@ export function CopilotDrawer({
         />
       </div>
 
+      {activeInsightItem && (
+        <CopilotApplyLearningDialog
+          item={activeInsightItem}
+          lang={lang}
+          displayName={identity?.displayName ?? ''}
+          currentProjectId={projectIdFromAttachedRef(attachedRef)}
+          onClose={() => setActiveInsightItem(null)}
+          onGenerate={handleGenerateFromInsight}
+        />
+      )}
+
       {activeTab === 'chat' ? (
         <ChatPane
           settingsOpen={settingsOpen}
@@ -580,10 +670,17 @@ export function CopilotDrawer({
           lang={lang}
           displayName={identity?.displayName ?? ''}
           onNavigateToCanvas={handleNavigateToCanvas}
+          basketItems={insightBasket.items}
+          onRemoveBasketItem={insightBasket.remove}
+          onClearBasket={insightBasket.clear}
+          onMarkBasketUseful={insightBasket.markUseful}
+          onApplyBasketItem={setActiveInsightItem}
+          onAddInsight={handleAddInsight}
+          onApplyInsight={handleApplyInsight}
         />
       ) : (
         <div className="flex-1 overflow-y-auto">
-          <SkillPackPane />
+          <SkillPackPane displayName={identity?.displayName ?? ''} />
         </div>
       )}
     </aside>
@@ -618,6 +715,12 @@ function attachedRefLabel(ref: AttachedRef): string {
   }
 }
 
+function projectIdFromAttachedRef(ref: AttachedRef | null): string | undefined {
+  if (!ref || ref.type === 'case' || ref.type === 'pattern') return undefined;
+  if (ref.projectSource === 'library') return undefined;
+  return ref.projectId;
+}
+
 function allowProjectDraftCards(ref: AttachedRef | null): boolean {
   return ref === null || ref.type === 'case' || ref.type === 'pattern' || isLibraryProjectRef(ref);
 }
@@ -629,27 +732,37 @@ function deriveCopilotMode(ref: AttachedRef | null): CopilotMode {
   return 'projectWork';
 }
 
+function inferProjectWorkIntent(text: string, mode: CopilotMode): CopilotActionIntent | undefined {
+  if (mode !== 'projectWork') return undefined;
+  if (/补充|新增|增加|扩展|创建|修改|调整|优化|便签|标签|画布|story|故事|add|create|update|revise|improve|sticky|canvas/i.test(text)) {
+    return 'project-update';
+  }
+  return undefined;
+}
+
 function buildComposerQuickActions(ref: AttachedRef | null, mode: CopilotMode): ComposerQuickAction[] {
   if (mode === 'createProject') {
     return [
       { labelKey: 'createProject', promptKey: 'createProject', intent: 'project-draft', includePendingImages: true },
+      { labelKey: 'extractInsight', promptKey: 'extractInsight', intent: 'discussion-insight' },
       { labelKey: 'askLibrary', promptKey: 'askLibrary' },
     ];
   }
   if (mode === 'libraryReference') {
     return [
+      { labelKey: 'askReference', promptKey: 'askReference' },
+      { labelKey: 'extractInsight', promptKey: 'extractInsight', intent: 'discussion-insight' },
       {
         labelKey: isLibraryProjectRef(ref) ? 'copyProject' : 'createFromReference',
         promptKey: isLibraryProjectRef(ref) ? 'copyProject' : 'createFromReference',
         intent: 'project-draft',
         includePendingImages: true,
       },
-      { labelKey: 'askReference', promptKey: 'askReference' },
     ];
   }
   return [
-    { labelKey: 'addCanvas', promptKey: 'addCanvas' },
-    { labelKey: 'addStory', promptKey: 'addStory' },
+    { labelKey: 'addCanvas', promptKey: 'addCanvas', intent: 'project-update', includePendingImages: true },
+    { labelKey: 'addStory', promptKey: 'addStory', intent: 'project-update', includePendingImages: true },
   ];
 }
 
@@ -682,6 +795,19 @@ function fetchAttachedContext(ref: AttachedRef | null, lang: Lang): Promise<{ ma
   }
 }
 
+async function captureUpdateBaseline(projectId: string, displayName: string): Promise<CopilotUpdateBaseline> {
+  const [canvases, stories] = await Promise.all([
+    api.listCanvases(displayName, { projectId }),
+    storiesApi.list(projectId, displayName),
+  ]);
+  return {
+    projectId,
+    capturedAt: new Date().toISOString(),
+    canvases: Object.fromEntries(canvases.map((canvas) => [canvas.id, canvas.updatedAt])),
+    stories: Object.fromEntries(stories.map((story) => [story.id, story.updatedAt])),
+  };
+}
+
 function buildStarterActions(
   ref: AttachedRef | null,
   lang: Lang,
@@ -694,7 +820,92 @@ function buildStarterActions(
     return buildLibraryProjectStarterActions(isZh);
   }
 
-  if (ref.type === 'project' || ref.type === 'canvas' || ref.type === 'story') {
+  if (ref.type === 'canvas') {
+    return [
+      {
+        id: 'canvas-read-current',
+        title: isZh ? '理解当前画布' : 'Understand this canvas',
+        description: isZh ? '解释这张画布的核心判断和空白点。' : 'Explain the core logic and gaps in this canvas.',
+        template: isZh ? '请细读当前画布，说明它现在表达了什么核心判断、哪些区块证据最强、哪些区块还缺信息。' : 'Read the current canvas closely: what core judgment does it express, which blocks have the strongest evidence, and which blocks still lack information?',
+        controls: [],
+      },
+      {
+        id: 'canvas-block-gaps',
+        title: isZh ? '检查区块缺口' : 'Check block gaps',
+        description: isZh ? '按一个重点区块找缺口和补充问题。' : 'Find gaps and follow-up questions for one key block.',
+        template: isZh ? '请围绕当前画布的「{{block}}」区块，列出已有信息、明显缺口、需要追问的问题，以及最应该补充的便签。' : 'For the {{block}} block in the current canvas, list existing information, obvious gaps, follow-up questions, and stickies that should be added first.',
+        controls: [
+          {
+            id: 'block',
+            label: isZh ? '重点区块' : 'Key block',
+            options: [
+              { label: isZh ? '客户/用户' : 'Customer/user', value: isZh ? '客户/用户' : 'customer/user' },
+              { label: isZh ? '价值主张' : 'Value proposition', value: isZh ? '价值主张' : 'value proposition' },
+              { label: isZh ? '渠道/关系' : 'Channels/relationship', value: isZh ? '渠道/关系' : 'channels/relationship' },
+              { label: isZh ? '收入/成本' : 'Revenue/cost', value: isZh ? '收入/成本' : 'revenue/cost' },
+              { label: isZh ? '关键活动/资源' : 'Activities/resources', value: isZh ? '关键活动/资源' : 'key activities/resources' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'canvas-next-action',
+        title: isZh ? '转成下一步' : 'Turn into next steps',
+        description: isZh ? '把画布缺口转成行动、实验或 Story。' : 'Convert canvas gaps into actions, experiments, or a Story.',
+        template: isZh ? '请基于当前画布，按「{{output}}」整理下一步：先列出判断依据，再给出 3 个可执行动作。' : 'Based on the current canvas, organize next steps as {{output}}: state the reasoning first, then give 3 executable actions.',
+        controls: [
+          {
+            id: 'output',
+            label: isZh ? '输出形式' : 'Output',
+            options: [
+              { label: isZh ? '补充便签' : 'New stickies', value: isZh ? '补充便签' : 'new stickies' },
+              { label: isZh ? '实验建议' : 'Experiment ideas', value: isZh ? '实验建议' : 'experiment ideas' },
+              { label: isZh ? 'Story 大纲' : 'Story outline', value: isZh ? 'Story 大纲' : 'Story outline' },
+            ],
+          },
+        ],
+      },
+    ];
+  }
+
+  if (ref.type === 'story') {
+    return [
+      {
+        id: 'story-read-current',
+        title: isZh ? '细读当前 Story' : 'Read this Story',
+        description: isZh ? '提炼 Story 的主线、证据和结论。' : 'Extract the storyline, evidence, and conclusion.',
+        template: isZh ? '请细读当前 Story，提炼它的核心主张、论证结构、最有价值的洞察，以及读完后还应该追问的问题。' : 'Read the current Story closely. Extract its core claim, argument structure, most valuable insights, and follow-up questions worth asking.',
+        controls: [],
+      },
+      {
+        id: 'story-evidence-chain',
+        title: isZh ? '补强证据链' : 'Strengthen evidence',
+        description: isZh ? '找出 Story 中需要更多画布或事实支撑的位置。' : 'Find where the Story needs stronger canvas or factual support.',
+        template: isZh ? '请从「{{lens}}」角度检查当前 Story 的证据链：哪些结论已有画布支撑，哪些地方缺证据，建议补哪张画布或哪些便签。' : 'Check the evidence chain in this Story from the perspective of {{lens}}: which conclusions are supported by canvases, what lacks evidence, and which canvas or stickies should be added.',
+        controls: [
+          {
+            id: 'lens',
+            label: isZh ? '检查角度' : 'Lens',
+            options: [
+              { label: isZh ? '用户洞察' : 'Customer insight', value: isZh ? '用户洞察' : 'customer insight' },
+              { label: isZh ? '商业可行性' : 'Business viability', value: isZh ? '商业可行性' : 'business viability' },
+              { label: isZh ? '竞争差异化' : 'Differentiation', value: isZh ? '竞争差异化' : 'differentiation' },
+              { label: isZh ? '行动闭环' : 'Action loop', value: isZh ? '行动闭环' : 'action loop' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'story-to-canvas-work',
+        title: isZh ? '转成画布任务' : 'Turn into canvas work',
+        description: isZh ? '把 Story 里的判断拆回可操作的画布补充。' : 'Convert Story claims into concrete canvas updates.',
+        template: isZh ? '请把当前 Story 拆成画布待办：哪些判断要补到现有画布，哪些判断需要新增画布，哪些应该先验证。' : 'Turn the current Story into canvas work: which claims should update existing canvases, which need new canvases, and which should be validated first.',
+        controls: [],
+      },
+    ];
+  }
+
+  if (ref.type === 'project') {
     return [
       {
         id: 'diagnose-project',
@@ -830,7 +1041,7 @@ function buildStrategyLibraryStarterActions(
       id: 'strategy-choice',
       title: isZh ? '战略选择' : 'Strategy choice',
       description: isZh ? '像填空一样选择一个战略框架。' : 'Choose a strategy framework like filling a blank.',
-      template: isZh ? '我想了解「{{strategy}}」。请推荐策略库中最适合学习它的案例、相关画布和阅读顺序。' : 'I want to understand {{strategy}}. Recommend the best cases, related canvases, and reading order from the Strategy Library.',
+      template: isZh ? '我想了解「{{strategy}}」。请把策略库中的真实案例、参考阅读资料、相关画布分开展示，并给出学习顺序。注意：书籍/文章是参考阅读，不要放进案例列表。' : 'I want to understand {{strategy}}. Separate Strategy Library cases, reference readings, and related canvases, then give a learning order. Books/articles are reference readings, not cases.',
       tone: 'violet',
       controls: [
         {
@@ -868,7 +1079,7 @@ function buildStrategyLibraryStarterActions(
       id: 'case-inspiration',
       title: isZh ? '案例灵感' : 'Case inspiration',
       description: isZh ? '按主题找案例，再组合方法和画布。' : 'Find cases by theme, then combine methods and canvases.',
-      template: isZh ? '请围绕「{{theme}}」帮我组合一条学习路径：先看哪个案例，再用哪个战略框架，最后画哪几张画布。' : 'Build a learning path for {{theme}}: which case to read first, which strategy framework to use, and which canvases to draw.',
+      template: isZh ? '请围绕「{{theme}}」帮我组合一条学习路径：先看哪些真实案例，再读哪些参考资料/书籍，再用哪个战略框架，最后画哪几张画布。注意不要把参考资料写成案例。' : 'Build a learning path for {{theme}}: which real cases to read first, which reference readings/books to read, which strategy framework to use, and which canvases to draw. Do not label resources as cases.',
       tone: 'amber',
       controls: [
         {
@@ -887,7 +1098,7 @@ function buildStrategyLibraryStarterActions(
       id: 'business-model-pattern',
       title: isZh ? '商业模式' : 'Business model',
       description: isZh ? '选一个商业模式模式，学习机制和案例。' : 'Choose a business-model pattern and study mechanics plus cases.',
-      template: isZh ? '我想学习「{{pattern}}」这个商业模式。请推荐策略库里最适合对照学习的案例、关键机制、相关画布和阅读顺序。' : 'I want to study the {{pattern}} business model. Recommend the best Strategy Library cases, key mechanics, related canvases, and reading order.',
+      template: isZh ? '我想学习「{{pattern}}」这个商业模式。请把策略库里最适合对照学习的真实案例、参考阅读资料、关键机制、相关画布分开展示，并给出阅读顺序。注意不要把书籍/文章写成案例。' : 'I want to study the {{pattern}} business model. Separate the best Strategy Library cases, reference readings, key mechanics, and related canvases, then give a reading order. Do not label books/articles as cases.',
       tone: 'emerald',
       controls: [
         {
@@ -997,84 +1208,84 @@ function fallbackCaseThemeOptions(isZh: boolean): StarterOption[] {
 function buildLibraryProjectStarterActions(isZh: boolean): StarterAction[] {
   return [
     {
-      id: 'case-background-research',
-      title: isZh ? '补充案例背景' : 'Enrich case background',
+      id: 'reference-industry-structure',
+      title: isZh ? '理解行业结构' : 'Understand industry structure',
       tone: 'emerald',
       description: isZh
-        ? '列出还值得补充的市场、公司和行业背景。'
-        : 'Identify market, company, and industry background worth adding.',
+        ? '先看行业角色、价值链和压力来源。'
+        : 'Start with industry roles, value chain, and pressure points.',
       template: isZh
-        ? '请基于当前案例内容，围绕「{{focus}}」列出还值得补充的背景信息、可能的公开资料来源和检索关键词。注意：如果你不能联网，请明确区分“已有上下文可判断”和“需要外部检索确认”的部分。'
-        : 'Based on this case, list additional background worth researching around {{focus}}, likely public sources, and search keywords. If you cannot browse the web, clearly separate what is grounded in the current context from what needs external verification.',
+        ? '请基于当前参考资料，围绕「{{focus}}」解释这个行业/案例的结构：主要角色、价值链位置、关键约束、正在变化的压力，以及这些变化为什么重要。'
+        : 'Based on the current reference material, explain the industry/case structure around {{focus}}: key actors, value-chain positions, constraints, changing pressures, and why those changes matter.',
       controls: [
         {
           id: 'focus',
-          label: isZh ? '补充方向' : 'Focus',
+          label: isZh ? '分析重点' : 'Focus',
           options: [
-            { label: isZh ? '公司背景' : 'Company context', value: isZh ? '公司背景' : 'company context' },
-            { label: isZh ? '行业变化' : 'Industry shifts', value: isZh ? '行业变化' : 'industry shifts' },
+            { label: isZh ? '行业角色' : 'Industry actors', value: isZh ? '行业角色' : 'industry actors' },
+            { label: isZh ? '价值链变化' : 'Value-chain shifts', value: isZh ? '价值链变化' : 'value-chain shifts' },
             { label: isZh ? '竞争格局' : 'Competition', value: isZh ? '竞争格局' : 'competitive landscape' },
-            { label: isZh ? '关键时间线' : 'Timeline', value: isZh ? '关键时间线' : 'key timeline' },
+            { label: isZh ? '客户需求变化' : 'Customer shifts', value: isZh ? '客户需求变化' : 'customer shifts' },
           ],
         },
       ],
     },
     {
-      id: 'case-strategy-reading',
-      title: isZh ? '细读战略逻辑' : 'Read strategy logic deeply',
+      id: 'reference-mechanism-reading',
+      title: isZh ? '拆解案例机制' : 'Dissect the mechanism',
       tone: 'violet',
       description: isZh
-        ? '把案例里的战略框架、取舍和机制讲细。'
-        : 'Explain the frameworks, trade-offs, and mechanisms in the case.',
+        ? '把案例里的模式、取舍和因果链讲清。'
+        : 'Clarify the pattern, trade-offs, and causal chain.',
       template: isZh
-        ? '请用「{{lens}}」细读当前案例：它采用了什么战略逻辑、关键取舍是什么、画布里哪些区块最能支撑这个判断、还有哪些地方可以解读得更细。'
-        : 'Read this case through {{lens}}: what strategic logic is being used, what trade-offs matter, which canvas blocks support that reading, and where the interpretation can go deeper.',
+        ? '请用「{{lens}}」细读当前参考资料：它描述的核心机制是什么，关键取舍是什么，哪些画布区块或事实支撑这个判断，哪些地方还可能有另一种解释。'
+        : 'Read the current reference through {{lens}}: what core mechanism does it describe, what trade-offs matter, which canvas blocks or facts support that reading, and where another interpretation may exist.',
       controls: [
         {
           id: 'lens',
           label: isZh ? '解读视角' : 'Lens',
           options: [
             { label: isZh ? '商业模式机制' : 'Business model mechanics', value: isZh ? '商业模式机制' : 'business model mechanics' },
-            { label: isZh ? '竞争战略' : 'Competitive strategy', value: isZh ? '竞争战略' : 'competitive strategy' },
-            { label: isZh ? '平台/生态' : 'Platform/ecosystem', value: isZh ? '平台/生态' : 'platform/ecosystem strategy' },
-            { label: isZh ? '增长组合' : 'Growth portfolio', value: isZh ? '增长组合' : 'growth portfolio' },
+            { label: isZh ? '战略取舍' : 'Strategic trade-offs', value: isZh ? '战略取舍' : 'strategic trade-offs' },
+            { label: isZh ? '组织能力' : 'Capabilities', value: isZh ? '组织能力' : 'organizational capabilities' },
+            { label: isZh ? '客户价值' : 'Customer value', value: isZh ? '客户价值' : 'customer value' },
           ],
         },
       ],
     },
     {
-      id: 'case-transfer-fields',
-      title: isZh ? '迁移到其他领域' : 'Transfer to other domains',
+      id: 'reference-path-comparison',
+      title: isZh ? '对比不同路径' : 'Compare paths',
       tone: 'amber',
       description: isZh
-        ? '判断这个案例适合启发哪些行业和业务场景。'
-        : 'Map where this case can inspire other industries or scenarios.',
+        ? '比较行业里不同公司或模式的选择。'
+        : 'Compare choices across companies or models in the industry.',
       template: isZh
-        ? '请判断当前案例最适合迁移到哪些其他领域或业务场景。按「{{criterion}}」排序，说明可迁移的机制、不能直接照搬的限制，以及建议先看哪张画布。'
-        : 'Identify other domains or business scenarios where this case is transferable. Rank them by {{criterion}}, explain the transferable mechanism, limits that should not be copied blindly, and which canvas to inspect first.',
+        ? '请围绕「{{dimension}}」对比当前参考资料里的不同路径：各自选择了什么、为什么这样选、代价是什么、适合什么条件、最终给读者留下什么判断。'
+        : 'Compare the different paths in the current reference around {{dimension}}: what each path chooses, why, the cost, the conditions where it fits, and the judgment it leaves for the reader.',
       controls: [
         {
-          id: 'criterion',
-          label: isZh ? '排序标准' : 'Ranking',
+          id: 'dimension',
+          label: isZh ? '对比维度' : 'Dimension',
           options: [
-            { label: isZh ? '相似商业模式' : 'Similar model', value: isZh ? '相似商业模式' : 'similar business model' },
-            { label: isZh ? '相似客户问题' : 'Similar customer job', value: isZh ? '相似客户问题' : 'similar customer job' },
-            { label: isZh ? '相似渠道/生态' : 'Similar channel/ecosystem', value: isZh ? '相似渠道/生态' : 'similar channel or ecosystem' },
-            { label: isZh ? '高启发性' : 'Highest inspiration', value: isZh ? '高启发性' : 'highest inspiration value' },
+            { label: isZh ? '战略定位' : 'Strategic positioning', value: isZh ? '战略定位' : 'strategic positioning' },
+            { label: isZh ? '能力边界' : 'Capability boundaries', value: isZh ? '能力边界' : 'capability boundaries' },
+            { label: isZh ? '客户关系' : 'Customer relationship', value: isZh ? '客户关系' : 'customer relationship' },
+            { label: isZh ? '风险与收益' : 'Risk and return', value: isZh ? '风险与收益' : 'risk and return' },
           ],
         },
       ],
     },
     {
-      id: 'case-open-questions',
-      title: isZh ? '我还应该知道什么' : 'What else should I know?',
+      id: 'reference-source-checklist',
+      title: isZh ? '补充资料清单' : 'Source checklist',
       tone: 'slate',
       description: isZh
-        ? '帮你列出读这个案例前后最值得追问的问题。'
-        : 'List the best follow-up questions for reading this case.',
+        ? '列出理解它还需要核对的事实和资料。'
+        : 'List facts and sources to verify for deeper understanding.',
       template: isZh
-        ? '请基于当前案例，列出我还应该知道的 8-10 个问题，分成：背景事实、战略选择、画布证据、可迁移启发、需要外部资料确认。'
-        : 'Based on this case, list 8-10 things I should still want to know, grouped into background facts, strategic choices, canvas evidence, transferable lessons, and items needing external verification.',
+        ? '请基于当前参考资料，列出我还应该核对的 8-10 个问题，分成：行业事实、公司/案例事实、时间线、数据证据、需要外部资料确认。注意区分“资料中已经说明”和“需要另查”。'
+        : 'Based on the current reference material, list 8-10 questions I should verify, grouped into industry facts, company/case facts, timeline, data evidence, and items needing external confirmation. Separate what the material already states from what needs more research.',
       controls: [],
     },
   ];
@@ -1142,6 +1353,13 @@ function ChatPane({
   lang,
   displayName,
   onNavigateToCanvas,
+  basketItems,
+  onRemoveBasketItem,
+  onClearBasket,
+  onMarkBasketUseful,
+  onApplyBasketItem,
+  onAddInsight,
+  onApplyInsight,
 }: {
   settingsOpen: boolean;
   onToggleSettings(): void;
@@ -1174,6 +1392,13 @@ function ChatPane({
   lang: Lang;
   displayName: string;
   onNavigateToCanvas(): void;
+  basketItems: CopilotSessionInsightItem[];
+  onRemoveBasketItem(id: string): void;
+  onClearBasket(): void;
+  onMarkBasketUseful(id: string, useful: boolean): void;
+  onApplyBasketItem(item: CopilotSessionInsightItem): void;
+  onAddInsight(insight: CopilotDiscussionInsight, sourceMessageId?: string): CopilotSessionInsightItem;
+  onApplyInsight(insight: CopilotDiscussionInsight, sourceMessageId?: string): void;
 }) {
   const { t } = useTranslation();
   const composerActions = buildComposerQuickActions(attachedRef, mode);
@@ -1259,6 +1484,14 @@ function ChatPane({
         )}
       </div>
 
+      <CopilotSessionInsightBasket
+        items={basketItems}
+        onRemove={onRemoveBasketItem}
+        onClear={onClearBasket}
+        onMarkUseful={onMarkBasketUseful}
+        onApply={onApplyBasketItem}
+      />
+
       {/* Messages */}
       <div className="flex-1 overflow-y-auto bg-white px-4 py-4">
         {messages.length === 0 ? (
@@ -1278,6 +1511,9 @@ function ChatPane({
                 displayName={displayName}
                 attachedRef={attachedRef}
                 onNavigateToCanvas={onNavigateToCanvas}
+                basketItems={basketItems}
+                onAddInsight={onAddInsight}
+                onApplyInsight={onApplyInsight}
               />
             ))}
           </ul>
@@ -1297,18 +1533,13 @@ function ChatPane({
         onDragOver={(e) => e.preventDefault()}
         onDrop={onDrop}
       >
-        {pendingImages.length > 0 && (
-          <div className="mb-2 flex gap-2 overflow-x-auto pb-1">
-            {pendingImages.map((image) => (
-              <ImageAttachmentChip
-                key={image.id}
-                image={image}
-                disabled={streaming}
-                onRemove={() => onRemoveImage(image.id)}
-              />
-            ))}
-          </div>
-        )}
+        <CopilotImageAttachmentGrid
+          images={pendingImages}
+          variant="composer"
+          maxImages={MAX_IMAGE_ATTACHMENTS}
+          disabled={streaming}
+          onRemove={onRemoveImage}
+        />
         <textarea
           value={input}
           onChange={(e) => onInput(e.target.value)}
@@ -1336,15 +1567,15 @@ function ChatPane({
           }}
         />
         <div className="mt-2 flex items-center justify-between gap-2">
-          <button
-            type="button"
-            disabled={streaming || pendingImages.length >= MAX_IMAGE_ATTACHMENTS}
-            onClick={() => fileInputRef.current?.click()}
-            className="rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
-            title={t('library.copilot.attachImageHint')}
-          >
-            {t('library.copilot.attachImage')}
-          </button>
+          <div className="flex min-w-0 items-center gap-2">
+            <span className="truncate text-[11px] text-gray-400">
+              {pendingImages.length > 0
+                ? pendingImages.length >= MAX_IMAGE_ATTACHMENTS
+                  ? t('library.copilot.imageTrayFull')
+                  : t('library.copilot.imageTrayRemaining', { remaining: MAX_IMAGE_ATTACHMENTS - pendingImages.length })
+                : t('library.copilot.attachImageHint')}
+            </span>
+          </div>
           {streaming ? (
             <button
               type="button"
@@ -1669,51 +1900,6 @@ function starterTone(tone: StarterTone): {
   }
 }
 
-function ImageAttachmentChip({
-  image,
-  disabled,
-  onRemove,
-}: {
-  image: PendingImageAttachment;
-  disabled: boolean;
-  onRemove(): void;
-}) {
-  const { t } = useTranslation();
-  return (
-    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg border border-gray-200 bg-gray-50 shadow-sm">
-      <img src={image.previewDataUrl} alt={image.name} className="h-full w-full object-cover" />
-      <button
-        type="button"
-        disabled={disabled}
-        onClick={onRemove}
-        aria-label={t('library.copilot.removeImageAttachment', { name: image.name })}
-        className="absolute right-1 top-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/70 text-[12px] leading-none text-white hover:bg-black disabled:opacity-50"
-      >
-        ×
-      </button>
-    </div>
-  );
-}
-
-function MessageImageGrid({ images }: { images: ConversationImageAttachment[] }) {
-  const openLightbox = useLightbox((s) => s.open);
-  return (
-    <div className="grid grid-cols-2 gap-2">
-      {images.map((image) => (
-        <button
-          key={image.id}
-          type="button"
-          onClick={() => openLightbox(image.previewDataUrl, image.name)}
-          className="overflow-hidden rounded-lg border border-white/25 bg-white/10"
-          title={`${image.name} · ${formatBytes(image.sizeBytes)}`}
-        >
-          <img src={image.previewDataUrl} alt={image.name} className="h-24 w-full object-cover" />
-        </button>
-      ))}
-    </div>
-  );
-}
-
 function MessageBubble({
   message,
   streaming,
@@ -1723,6 +1909,9 @@ function MessageBubble({
   displayName,
   attachedRef,
   onNavigateToCanvas,
+  basketItems,
+  onAddInsight,
+  onApplyInsight,
 }: {
   message: ConversationMessage;
   streaming: boolean;
@@ -1732,19 +1921,25 @@ function MessageBubble({
   displayName: string;
   attachedRef: AttachedRef | null;
   onNavigateToCanvas(): void;
+  basketItems: CopilotSessionInsightItem[];
+  onAddInsight(insight: CopilotDiscussionInsight, sourceMessageId?: string): CopilotSessionInsightItem;
+  onApplyInsight(insight: CopilotDiscussionInsight, sourceMessageId?: string): void;
 }) {
   const { t } = useTranslation();
   const isUser = message.role === 'user';
   const isEmptyAssistant = message.role === 'assistant' && message.content.length === 0;
   const projectDrafts = isUser ? [] : extractProjectDrafts(message.content);
-  const visibleContent = projectDrafts.length > 0 ? stripProjectDraftBlocks(message.content) : message.content;
+  const projectUpdateDrafts = isUser ? [] : extractProjectUpdateDrafts(message.content);
+  const discussionInsights = isUser ? [] : extractDiscussionInsights(message.content);
+  const hasStructuredBlocks = projectDrafts.length > 0 || projectUpdateDrafts.length > 0 || discussionInsights.length > 0;
+  const visibleContent = hasStructuredBlocks ? stripProjectDraftBlocks(message.content) : message.content;
   const recommendationRefs = useCopilotRecommendationReferences(
     isUser ? '' : visibleContent,
     displayName,
     lang,
     message.attachedRef ?? attachedRef,
   );
-  const { canvasRefs, caseRefs, unresolvedCaseSlugs, unresolvedCanvasLabels } = recommendationRefs;
+  const { canvasRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels } = recommendationRefs;
   const contentWithoutCanvasIds = canvasRefs.length > 0
     ? stripResolvedCanvasIds(visibleContent, canvasRefs)
     : visibleContent;
@@ -1752,6 +1947,9 @@ function MessageBubble({
     ? stripResolvedCaseSlugs(contentWithoutCanvasIds, caseRefs)
     : contentWithoutCanvasIds;
   const visibleProjectDrafts = allowProjectDrafts ? projectDrafts : [];
+  const activeRef = message.attachedRef ?? attachedRef;
+  const activeProjectId = projectIdFromAttachedRef(activeRef);
+  const visibleProjectUpdateDrafts = projectUpdateDrafts.filter((draft) => Boolean(draft.projectId || activeProjectId));
 
   return (
     <li className={`flex min-w-0 ${isUser ? 'justify-end' : 'justify-start'}`}>
@@ -1768,7 +1966,11 @@ function MessageBubble({
           <div className="space-y-2">
             <span style={{ whiteSpace: 'pre-wrap' }}>{message.content}</span>
             {message.imageAttachments && message.imageAttachments.length > 0 && (
-              <MessageImageGrid images={message.imageAttachments} />
+              <CopilotImageAttachmentGrid
+                images={message.imageAttachments}
+                variant="message"
+                maxImages={MAX_IMAGE_ATTACHMENTS}
+              />
             )}
           </div>
         ) : (
@@ -1777,6 +1979,7 @@ function MessageBubble({
               streaming ? <CopilotStreamingText content={contentForRender} /> : <CopilotMarkdown content={contentForRender} />
             )}
             <CopilotCaseReferenceBoard refs={caseRefs} onNavigateToCanvas={onNavigateToCanvas} />
+            <CopilotResourceReferenceBoard refs={resourceRefs} />
             <CopilotCanvasReferenceBoard
               refs={canvasRefs}
               lang={lang}
@@ -1787,11 +1990,34 @@ function MessageBubble({
               caseSlugs={unresolvedCaseSlugs}
               canvasLabels={unresolvedCanvasLabels}
             />
+            {discussionInsights.map((insight, index) => {
+              const added = basketItems.some((item) => item.insight.title === insight.title && item.insight.summary === insight.summary);
+              return (
+                <CopilotDiscussionInsightCard
+                  key={`${insight.title}:${index}`}
+                  insight={insight}
+                  added={added}
+                  onAdd={() => onAddInsight(insight, message.id)}
+                  onApply={() => onApplyInsight(insight, message.id)}
+                />
+              );
+            })}
             {visibleProjectDrafts.map((draft, index) => (
               <CopilotProjectDraftCard
                 key={`${draft.project.name}:${index}`}
                 draft={draft}
                 lang={lang}
+                expectedSourceImageCount={message.expectedSourceImageCount}
+              />
+            ))}
+            {visibleProjectUpdateDrafts.map((draft, index) => (
+              <CopilotProjectUpdateDraftCard
+                key={`${draft.projectId}:${index}`}
+                draft={draft}
+                projectId={draft.projectId || activeProjectId}
+                lang={lang}
+                expectedSourceImageCount={message.expectedSourceImageCount}
+                updateBaseline={message.updateBaseline}
               />
             ))}
           </>
@@ -1850,6 +2076,7 @@ function CopilotStreamingText({ content }: { content: string }) {
 
 function CopilotMarkdown({ content }: { content: string }) {
   const openLightbox = useLightbox((s) => s.open);
+  const normalizedContent = normalizeOrderedListMarkers(content);
 
   return (
     <div className="min-w-0 max-w-none overflow-hidden break-words text-[13px] leading-relaxed text-gray-900">
@@ -1931,10 +2158,37 @@ function CopilotMarkdown({ content }: { content: string }) {
           },
         }}
       >
-        {content}
+        {normalizedContent}
       </ReactMarkdown>
     </div>
   );
+}
+
+function normalizeOrderedListMarkers(content: string): string {
+  const lines = content.split('\n');
+  let inFence = false;
+  let activeCounter = 0;
+
+  return lines.map((line) => {
+    if (/^\s*```/.test(line)) {
+      inFence = !inFence;
+      return line;
+    }
+    if (inFence) return line;
+
+    const ordered = /^(\s{0,3})(\d+)([.)])(\s+)/.exec(line);
+    if (ordered) {
+      activeCounter = activeCounter > 0 ? activeCounter + 1 : 1;
+      return `${ordered[1]}${activeCounter}${ordered[3]}${ordered[4]}${line.slice(ordered[0].length)}`;
+    }
+
+    const trimmed = line.trim();
+    if (/^\s{0,3}#{1,6}\s+/.test(line)) activeCounter = 0;
+    if (trimmed && !/^\s{0,3}[-*+]\s+/.test(line) && !/^\s{4,}/.test(line)) {
+      activeCounter = 0;
+    }
+    return line;
+  }).join('\n');
 }
 
 function CodeBlock({ children }: { children: ReactNode }) {
@@ -2023,7 +2277,7 @@ function createImagePreview(dataUrl: string, _mimeType: string): Promise<string>
         ctx.drawImage(img, 0, 0, width, height);
         for (const quality of qualities) {
           const compressed = canvas.toDataURL('image/jpeg', quality);
-          if (dataUrlByteLength(compressed) <= PROMPT_IMAGE_MAX_BYTES) {
+          if (dataUrlByteLength(compressed) <= PREVIEW_IMAGE_MAX_BYTES) {
             resolve(compressed);
             return;
           }
@@ -2037,13 +2291,12 @@ function createImagePreview(dataUrl: string, _mimeType: string): Promise<string>
 }
 
 function toCopilotImageAttachment(image: PendingImageAttachment): CopilotImageAttachment {
-  const promptDataUrl = image.previewDataUrl;
   return {
     id: image.id,
     name: image.name,
-    mimeType: dataUrlMimeType(promptDataUrl) ?? image.mimeType,
-    sizeBytes: dataUrlByteLength(promptDataUrl),
-    dataUrl: promptDataUrl,
+    mimeType: image.mimeType,
+    sizeBytes: image.sizeBytes,
+    dataUrl: image.dataUrl,
   };
 }
 
@@ -2055,11 +2308,6 @@ function toConversationImageAttachment(image: PendingImageAttachment): Conversat
     sizeBytes: image.sizeBytes,
     previewDataUrl: image.previewDataUrl,
   };
-}
-
-function dataUrlMimeType(dataUrl: string): CopilotImageAttachment['mimeType'] | undefined {
-  const match = /^data:(image\/(?:png|jpeg|webp|gif));base64,/.exec(dataUrl);
-  return match?.[1] as CopilotImageAttachment['mimeType'] | undefined;
 }
 
 function dataUrlByteLength(dataUrl: string): number {

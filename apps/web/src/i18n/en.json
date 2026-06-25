@@ -538,9 +538,12 @@
       "removeConfirm": "Remove the saved Kimi Code key?",
       "composerPlaceholder": "Ask PinGarden Copilot…",
       "attachImage": "+ Image",
-      "attachImageHint": "Upload an image, or drag and paste a screenshot",
+      "attachImageHint": "Up to 9 images. Drag, paste, or upload screenshots",
       "removeImageAttachment": "Remove image {{name}}",
-      "imageOnlyPrompt": "Please analyze the image I sent and draft a suitable PinGarden project from it.",
+      "imageTrayStatus": "{{count}}/{{max}} images attached",
+      "imageTrayRemaining": "{{remaining}} slots left",
+      "imageTrayFull": "9-image limit reached",
+      "imageOnlyPrompt": "Please analyze the images I sent and draft a suitable PinGarden project from them.",
       "imageLimit": "You can attach up to {{count}} images.",
       "imageTooLarge": "{{name}} is too large. Each image must be under {{size}}.",
       "imageUnsupported": "{{name}} uses an unsupported image format.",
@@ -552,9 +555,9 @@
           "imageOnlyPrompt": "Please create a PinGarden project draft from the image I sent."
         },
         "libraryReference": {
-          "hint": "This is read-only reference material. Ask to understand it, or copy/adapt it into your own project starting point.",
-          "placeholder": "Enter what to adapt, your question, or supporting material…",
-          "imageOnlyPrompt": "Please combine this image with the current reference material and summarize transferable insights."
+          "hint": "This is read-only reference material. Ask to understand it first; if needed, create a project starting point from it later.",
+          "placeholder": "Enter the question, supporting material, or analysis direction…",
+          "imageOnlyPrompt": "Please combine this image with the current reference material and explain the core content, background clues, and best follow-up questions."
         },
         "projectWork": {
           "hint": "Working from this project. You can add a canvas, draft a Story, or ask Copilot to analyze the next step.",
@@ -567,23 +570,25 @@
         "askLibrary": "Ask materials",
         "createFromReference": "Create from it",
         "copyProject": "Copy project",
-        "askReference": "Ask this project",
+        "askReference": "Understand this reference",
+        "extractInsight": "Extract insight",
         "addCanvas": "Add canvas",
         "addStory": "Add Story"
       },
       "composerPrompts": {
-        "createProject": "Create a PinGarden project draft from my images, links, and notes. If anything essential is missing, ask me the key question first.",
+        "createProject": "Create a PinGarden project draft from my images, links, and notes. Preserve visible labels/stickies from every image and turn descriptive notes into a Story.",
         "askLibrary": "Based on the Strategy Library, summarize which cases, canvases, or methods are worth looking at, then ask me the single most important question.",
         "createFromReference": "Based on the current reference material, turn it into a new project draft. If essential information is missing, ask me the key question first.",
         "copyProject": "Based on this read-only reference project, prepare a new project draft I can copy into my workspace while preserving the most important canvas structure and insights.",
-        "askReference": "Explain what is most worth borrowing from the current reference material and how I could adapt it into my own project.",
-        "addCanvas": "Based on the current project and the material I provide, decide the most valuable next canvas to add, explain why, and draft the first-pass canvas thinking.",
-        "addStory": "Based on the current project and the material I provide, draft a new Story that connects key canvases, insights, assumptions, and next actions."
+        "askReference": "Explain the core question, key mechanism, industry/case background, and best follow-up questions in the current reference material.",
+        "extractInsight": "Summarize this discussion into a session insight card with source references and suggested project actions. Do not write project data yet.",
+        "addCanvas": "Based on the current project and the material I provide, output an applicable project update draft: add or enrich the most valuable canvas and include the complete stickies to write.",
+        "addStory": "Based on the current project and the material I provide, output an applicable project update draft: create or update a Story connecting key canvases, insights, assumptions, and next actions."
       },
       "projectDraft": {
         "title": "Project draft",
-        "subtitle": "After confirmation, PinGarden will create the project, canvases, and initial stickies.",
-        "autoFilledHint": "I will infer canvas content from the image as much as possible. You only need to confirm the project name and description; unclear canvas notes can be adjusted after creation.",
+        "subtitle": "After confirmation, PinGarden will create the project, canvases, initial stickies, and Stories.",
+        "autoFilledHint": "I will preserve visible labels/stickies from every image and turn descriptive notes into a Story. Uncovered sources are shown below.",
         "projectName": "Project name",
         "projectNamePlaceholder": "e.g. WeCom private-domain operations project",
         "projectDescription": "Project description",
@@ -591,11 +596,102 @@
         "needNameAndDescription": "Please add the project name and description first.",
         "needName": "Please add the project name first.",
         "needDescription": "Please add the project description first.",
+        "emptyCanvasWarning": "At least one canvas has no stickies. Empty canvases cannot be created; ask Copilot to fill the gaps.",
+        "emptyCanvasBlocked": "'{{title}}' has no valid stickies, so creation was blocked.",
+        "sourceCoverageWarning": "Some image or text sources are still uncovered. Ask Copilot to fill the missing items before applying.",
+        "sourceCoverageSummary": "Source coverage: {{images}} images, {{findings}} findings, {{mapped}} mapped, {{unmapped}} uncovered.",
         "canvasCount": "Canvases",
         "stickyCount": "Stickies",
+        "storyCount": "Stories",
+        "sourceCount": "Sources",
+        "notesBadge": "{{count}} notes",
         "create": "Create project",
         "creating": "Creating…",
-        "created": "Created"
+        "created": "Created",
+        "qualityHardTitle": "{{count}} hard issue(s) must be fixed before apply:",
+        "qualitySoftTitle": "{{count}} soft hint(s) — informational, will not block apply:",
+        "qualityHardBlocked": "Apply blocked by hard rule: {{message}}"
+      },
+      "projectUpdate": {
+        "title": "Project update draft",
+        "subtitle": "After confirmation, PinGarden will apply these changes to the current project.",
+        "projectMismatch": "This draft targets a different project, so it cannot be applied here.",
+        "sourceCoverageWarning": "Some image or text sources are still uncovered. Ask Copilot to fill the missing items before applying.",
+        "operationWarning": "The draft has an empty canvas, empty Story, or no operation, so it cannot be applied.",
+        "sourceCoverageSummary": "Source coverage: {{images}} images, {{findings}} findings, {{mapped}} mapped, {{unmapped}} uncovered.",
+        "operationCount": "Operations",
+        "stickyCount": "Stickies",
+        "storyOperationCount": "Story ops",
+        "sourceCount": "Sources",
+        "createCanvas": "Add canvas",
+        "replaceCanvas": "Update canvas",
+        "createStory": "Add Story",
+        "replaceStory": "Update Story",
+        "applyReportTitle": "Apply report",
+        "applyReportSuccess": "Done: {{label}}",
+        "applyReportFailed": "Failed: {{label}} — {{message}}",
+        "apply": "Apply to project",
+        "applying": "Applying…",
+        "applied": "Applied",
+        "qualityHardTitle": "{{count}} hard issue(s) must be fixed before apply:",
+        "qualitySoftTitle": "{{count}} soft hint(s) — informational, will not block apply:",
+        "qualityHardBlocked": "Apply blocked by hard rule: {{message}}"
+      },
+      "quality": {
+        "severityHard": "Hard",
+        "severitySoft": "Soft"
+      },
+      "discussionInsight": {
+        "badge": "Discussion insight",
+        "sessionOnly": "Session only",
+        "suggestedActions": "Suggested project actions",
+        "addToBasket": "Add to basket",
+        "added": "Added",
+        "applyToProject": "Apply to project"
+      },
+      "sessionBasket": {
+        "title": "Session insight basket",
+        "expand": "Expand",
+        "collapse": "Collapse",
+        "clear": "Clear",
+        "privacyHint": "Stored only for this app session. Saving to a project or long-term memory requires confirmation.",
+        "empty": "No insights collected yet.",
+        "remove": "Remove insight",
+        "markUseful": "Mark useful",
+        "usefulMarked": "Useful",
+        "apply": "Apply",
+        "applyAgain": "Apply again"
+      },
+      "applyLearning": {
+        "title": "Apply learning to project",
+        "subtitle": "Choose where this insight should go. Copilot will generate a confirmable draft, not write directly.",
+        "target": "Target",
+        "newProject": "New project",
+        "action": "Action",
+        "actions": {
+          "updateProject": "Update project",
+          "createCanvas": "Create or enrich canvas",
+          "createStory": "Create Story",
+          "saveProjectInsight": "Save as project insight"
+        },
+        "reviewHint": "The next response will still use the normal confirmation card before writing any project data.",
+        "cancel": "Cancel",
+        "generate": "Generate draft"
+      },
+      "memory": {
+        "profileTitle": "Local Copilot profile",
+        "localOnly": "Local to this user. View, accept, ignore, or delete anytime.",
+        "noPreferences": "No confirmed preferences yet.",
+        "suggestionsTitle": "Memory suggestions",
+        "reviewHint": "Pending suggestions are not long-term memory until accepted.",
+        "noSuggestions": "No pending suggestions.",
+        "ignore": "Ignore",
+        "accept": "Accept",
+        "confidence": {
+          "high": "High",
+          "medium": "Medium",
+          "low": "Low"
+        }
       },
       "canvasRefs": {
         "title": "Related canvas boards",
@@ -610,7 +706,23 @@
         "title": "Recommended case entries",
         "subtitle": "I converted case slugs in the answer into openable entries. Open the case directly.",
         "canvasCount": "{{count}} canvases",
+        "storyCount": "{{count}} stories",
         "detail": "View case"
+      },
+      "readingRefs": {
+        "title": "Reference reading",
+        "subtitle": "I converted recommended books, articles, and resources into previewable entries.",
+        "preview": "Preview",
+        "close": "Close reading preview",
+        "recommendation": "Why read this",
+        "quickIntro": "Quick intro",
+        "nextOpen": "Open next",
+        "sources": "Sources",
+        "itemCase": "{{lang}} case",
+        "itemCanvas": "{{lang}} canvas template",
+        "itemFramework": "Strategy framework",
+        "itemPattern": "Business model pattern",
+        "itemExperiment": "Experiment method"
       },
       "referenceHint": {
         "caseNotFound": "Couldn't find an openable case: {{items}}",
@@ -676,6 +788,8 @@
         "copyPrompt": "Copy prompt",
         "copied": "Copied",
         "supportedAgentsLabel": "Works with",
+        "bundledPlaybooksTitle": "Built-in playbooks",
+        "bundledPlaybooksIntro": "These read-only playbooks are bundled with the app. Your confirmed local preferences can override how Copilot uses them.",
         "installPrompt": "I just downloaded the PinGarden Skill Pack: {{filename}} (version {{version}}).\n\nPlease help me install it:\n\n1. Detect which AI coding agent you are (Claude, Code Cursor, Codex, CodeBuddy, WorkBuddy, or Other) and extract the zip into that agent's standard skills / rules / workflows directory. Common locations:\n   - Claude: ~/.claude/skills/\n   - Code Cursor: ~/.cursor/rules/\n   - Codex: ~/.codex/\n   - CodeBuddy / WorkBuddy: their official skill install path\n   - Other: read INSTALL.md inside the zip\n\n2. Verify the PinGarden CLI is on PATH by running `pingarden doctor`. If it's missing, tell me to launch the PinGarden desktop app first (the CLI ships inside the app's resources).\n\n3. Once installed, briefly summarise what the PinGarden skill enables and how I can invoke it here.",
         "installMdHint": "If your AI tool isn't listed above, the zip ships with an INSTALL.md covering manual setup.",
         "notReady": "Skill pack isn't built yet — run `pnpm package:mac` to produce one."

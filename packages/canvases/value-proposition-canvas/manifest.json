@@ -65,6 +65,9 @@
       ]
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["business-model-canvas", "empathy-map", "jobs-to-be-done", "ad-lib-value-proposition", "customer-journey", "design-criteria-canvas", "experiment-canvas"],
   "relatedNotes": {
     "business-model-canvas": {

@@ -21,6 +21,9 @@
       "showBlockPrompts": true
     }
   },
+  "quality": {
+    "softHints": true
+  },
   "related": ["business-model-canvas", "portfolio-map", "value-proposition-canvas", "three-horizons-map"],
   "relatedNotes": {
     "business-model-canvas": {
