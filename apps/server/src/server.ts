@@ -109,18 +109,33 @@ async function main() {
       root: resolve(webDistDir),
       prefix: '/',
       wildcard: false,
+      setHeaders(res, pathName) {
+        if (pathName.endsWith('/index.html') || pathName.endsWith('index.html')) {
+          res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+          return;
+        }
+        if (pathName.includes('/assets/')) {
+          res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        }
+      },
     });
     // SPA fallback: unknown non-API paths serve index.html
     app.setNotFoundHandler(async (req, reply) => {
       const wantsHtml = req.headers.accept?.includes('text/html');
       const pathname = req.url.split('?', 1)[0] ?? req.url;
+      if (pathname.startsWith('/assets/')) {
+        reply.code(404);
+        return { error: 'Asset Not Found' };
+      }
       const spaRoute =
         wantsHtml &&
         (pathname === '/library' ||
           pathname === '/projects' ||
           pathname.startsWith('/p/'));
       if (spaRoute) {
-        return reply.sendFile('index.html', resolve(webDistDir));
+        return reply
+          .header('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate')
+          .sendFile('index.html', resolve(webDistDir));
       }
       const apiPrefix =
         req.url.startsWith('/health') ||
@@ -138,7 +153,9 @@ async function main() {
         reply.code(404);
         return { error: 'Not Found' };
       }
-      return reply.sendFile('index.html', resolve(webDistDir));
+      return reply
+        .header('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate')
+        .sendFile('index.html', resolve(webDistDir));
     });
   }
 
@@ -158,6 +175,15 @@ async function main() {
   });
   registerPortFileCleanup(portFile);
   app.log.info({ portFile }, 'Wrote server port discovery file');
+}
+
+function getRequestPathname(url: string): string {
+  const raw = url.split('?', 1)[0] ?? url;
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return raw;
+  }
 }
 
 main().catch((err) => {

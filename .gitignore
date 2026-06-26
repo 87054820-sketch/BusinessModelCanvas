@@ -11,6 +11,10 @@ apps/cli/assets/
 packages/*/dist/
 *.tsbuildinfo
 
+# Generated deployment staging contexts
+# These are copied from apps/ and packages/ before CloudBase CloudRun deploys.
+deploy/cloudbase/
+
 # Desktop packaging artifacts
 apps/desktop/build/
 apps/desktop/.package/

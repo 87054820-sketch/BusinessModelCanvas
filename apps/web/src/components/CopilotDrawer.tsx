@@ -542,6 +542,13 @@ export function CopilotDrawer({
     setStreaming(false);
   }
 
+  function handleRetryLastUserTurn() {
+    const lastUser = [...conv.messages].reverse().find((message) => message.role === 'user');
+    if (!lastUser || streaming) return;
+    setError(null);
+    void handleSend(lastUser.content);
+  }
+
   function handleClear() {
     if (!window.confirm(t('library.copilot.clearChatConfirm'))) return;
     handleStop();
@@ -581,8 +588,8 @@ export function CopilotDrawer({
     <aside
       role="complementary"
       aria-label={t('library.copilot.drawerTitle')}
-      className={`fixed right-0 top-0 z-[90] flex h-full w-full flex-col border-l border-gray-200 bg-white shadow-2xl transition-[max-width] duration-200 ${
-        expanded ? 'max-w-none' : 'max-w-[480px]'
+      className={`fixed right-0 top-0 z-[90] flex h-[100dvh] max-h-[100dvh] w-full flex-col border-l border-gray-200 bg-white shadow-2xl transition-[max-width] duration-200 sm:h-full sm:max-h-none ${
+        expanded ? 'max-w-none' : 'sm:max-w-[480px]'
       }`}
     >
       <button
@@ -591,13 +598,13 @@ export function CopilotDrawer({
         onDoubleClick={() => setExpanded((v) => !v)}
         title={t('library.copilot.resizeHint')}
         aria-label={t('library.copilot.resizeHint')}
-        className="group absolute left-0 top-12 bottom-0 z-10 flex w-3 cursor-ew-resize items-center justify-center"
+        className="group absolute left-0 top-12 bottom-0 z-10 hidden w-3 cursor-ew-resize items-center justify-center sm:flex"
       >
         <span className="h-16 w-1 rounded-full bg-gray-300 opacity-60 transition group-hover:h-24 group-hover:bg-gray-500 group-hover:opacity-100" />
       </button>
 
       {/* Header */}
-      <div className={`flex items-center justify-between border-b border-gray-100 py-3 pr-4 ${expanded ? 'pl-20' : 'pl-4'}`}>
+      <div className={`flex items-center justify-between border-b border-gray-100 py-2.5 pr-3 sm:py-3 sm:pr-4 ${expanded ? 'pl-4 sm:pl-20' : 'pl-4'}`}>
         <h2 className="min-w-0 flex-1 truncate pr-3 text-sm font-semibold text-gray-900">
           {t('library.copilot.drawerTitle')}
         </h2>
@@ -607,7 +614,7 @@ export function CopilotDrawer({
             onClick={() => setExpanded((v) => !v)}
             aria-label={expanded ? t('library.copilot.restore') : t('library.copilot.expand')}
             title={expanded ? t('library.copilot.restore') : t('library.copilot.expand')}
-            className="rounded-full border border-gray-200 px-2.5 py-1 text-[11px] font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+            className="hidden rounded-full border border-gray-200 px-2.5 py-1 text-[11px] font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 sm:inline-flex"
           >
             {expanded ? t('library.copilot.restore') : t('library.copilot.expand')}
           </button>
@@ -675,6 +682,7 @@ export function CopilotDrawer({
           showStarterActions={!suggestionsDismissed}
           suggestionsCollapsed={suggestionsCollapsed}
           onToggleSuggestions={() => setSuggestionsCollapsed((v) => !v)}
+          onRetry={() => handleRetryLastUserTurn()}
           mode={copilotMode}
           allowProjectDrafts={allowProjectDraftCards(attachedRef)}
           lang={lang}
@@ -1364,6 +1372,7 @@ function ChatPane({
   showStarterActions,
   suggestionsCollapsed,
   onToggleSuggestions,
+  onRetry,
   mode,
   allowProjectDrafts,
   lang,
@@ -1403,6 +1412,7 @@ function ChatPane({
   showStarterActions: boolean;
   suggestionsCollapsed: boolean;
   onToggleSuggestions(): void;
+  onRetry(): void;
   mode: CopilotMode;
   allowProjectDrafts: boolean;
   lang: Lang;
@@ -1513,7 +1523,7 @@ function ChatPane({
       )}
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto bg-white px-4 py-4">
+      <div className="flex-1 overflow-y-auto bg-white px-3 py-3 sm:px-4 sm:py-4">
         {messages.length === 0 ? (
           <div className="flex min-h-24 items-center justify-center px-3 py-6 text-center text-[12px] text-gray-400">
             {hasKey ? t('library.copilot.emptyStateCompact') : t('library.copilot.emptyStateNoKey')}
@@ -1542,14 +1552,24 @@ function ChatPane({
       </div>
 
       {error && (
-        <div className="border-t border-red-100 bg-red-50/60 px-4 py-2 text-[11px] text-red-700">
-          {t('library.copilot.errorPrefix')}: {error}
+        <div className="border-t border-red-100 bg-red-50/80 px-3 py-2 text-[11px] text-red-700 sm:px-4">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <span className="leading-relaxed">{t('library.copilot.errorPrefix')}: {error}</span>
+            <button
+              type="button"
+              onClick={onRetry}
+              disabled={streaming}
+              className="w-fit rounded-md border border-red-200 bg-white px-2.5 py-1 text-[11px] font-medium text-red-700 hover:bg-red-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {t('library.copilot.retry')}
+            </button>
+          </div>
         </div>
       )}
 
       {/* Composer */}
       <div
-        className="border-t border-gray-100 bg-white px-3 py-3"
+        className="border-t border-gray-100 bg-white px-3 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]"
         onDragOver={(e) => e.preventDefault()}
         onDrop={onDrop}
       >
@@ -1586,7 +1606,7 @@ function ChatPane({
             e.currentTarget.value = '';
           }}
         />
-        <div className="mt-2 flex items-center justify-between gap-2">
+        <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex min-w-0 items-center gap-2">
             <button
               type="button"
@@ -1618,7 +1638,7 @@ function ChatPane({
                 type="button"
                 onClick={() => onSend()}
                 disabled={(!input.trim() && pendingImages.length === 0) || !hasKey || providerHealth?.available === false}
-                className="rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
+                className="rounded-md border border-gray-200 bg-white px-3 py-2 text-xs font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50 sm:py-1.5"
               >
                 ➤ {t('library.copilot.send')}
               </button>
@@ -1628,7 +1648,7 @@ function ChatPane({
                   type="button"
                   onClick={() => handleComposerAction(action)}
                   disabled={!hasKey || providerHealth?.available === false}
-                  className="rounded-md bg-gray-900 px-3 py-1.5 text-xs font-medium text-white hover:bg-black disabled:cursor-not-allowed disabled:opacity-50"
+                  className="rounded-md bg-gray-900 px-3 py-2 text-xs font-medium text-white hover:bg-black disabled:cursor-not-allowed disabled:opacity-50 sm:py-1.5"
                 >
                   ➤ {t(`library.copilot.composerActions.${action.labelKey}`)}
                 </button>

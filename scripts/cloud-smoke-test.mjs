@@ -45,6 +45,21 @@ async function main() {
     }
   });
 
+  await run('cloud-dynamic-chunks', async () => {
+    const html = await fetchText('/');
+    const entryAssets = extractAssets(html).filter((asset) => asset.endsWith('.js'));
+    const dynamicAssets = new Set();
+    for (const asset of entryAssets) {
+      const js = await fetchText(asset.startsWith('/') ? asset : `/${asset}`);
+      for (const dynamicAsset of extractDynamicAssets(js)) dynamicAssets.add(dynamicAsset);
+    }
+    assert(dynamicAssets.size > 0, 'No dynamic chunks found in entry assets');
+    for (const asset of dynamicAssets) {
+      const text = await fetchText(asset.startsWith('/') ? asset : `/${asset}`);
+      assert(!/^<!doctype\s+html/i.test(text.trim()) && !/^<html[\s>]/i.test(text.trim()), `Dynamic chunk ${asset} returned HTML`);
+    }
+  });
+
   await run('cloud-library-context-filter', async () => {
     const json = await fetchJson('/copilot/library-context?lang=zh&q=%E8%93%9D%E6%B5%B7%E6%88%98%E7%95%A5');
     const markdown = json.markdown ?? '';
@@ -227,6 +242,14 @@ function extractAssets(html) {
   const re = /(?:src|href)="([^"]+\.(?:js|css))"/g;
   let match;
   while ((match = re.exec(html))) assets.add(match[1]);
+  return [...assets];
+}
+
+function extractDynamicAssets(js) {
+  const assets = new Set();
+  const re = /assets\/[^"'`\\]+\.js/g;
+  let match;
+  while ((match = re.exec(js))) assets.add(`/${match[0]}`);
   return [...assets];
 }
 

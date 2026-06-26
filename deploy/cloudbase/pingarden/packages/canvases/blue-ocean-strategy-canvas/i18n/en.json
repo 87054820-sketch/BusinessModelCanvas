@@ -1,9 +1,0 @@
-{
-  "canvasTitle": "Strategy Canvas",
-  "blocks": {
-    "chart-area": {
-      "title": "Chart area",
-      "prompt": "Chart area is for value-curve factors, curve classes, and score points only; put ERRC rationale, notes, and conclusions in the Story."
-    }
-  }
-}

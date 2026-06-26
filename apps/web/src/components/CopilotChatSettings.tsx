@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { copilotApi, type CopilotProviderHealth } from '../api/copilot';
+import { copilotApi, normalizeCopilotFetchError, type CopilotProviderHealth } from '../api/copilot';
 import { useKeyConfig } from '../copilot/useKeyConfig';
 
 export function CopilotChatSettings({
@@ -36,7 +36,7 @@ export function CopilotChatSettings({
       const result = await copilotApi.testKey(input.trim());
       setTestResult(result);
     } catch (err) {
-      setTestResult({ ok: false, message: err instanceof Error ? err.message : String(err) });
+      setTestResult({ ok: false, message: normalizeCopilotFetchError(err) });
     } finally {
       setTesting(false);
     }

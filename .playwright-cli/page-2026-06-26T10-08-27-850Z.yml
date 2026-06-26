@@ -1,0 +1,17 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - link "🌱 PinGarden" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: 🌱
+      - generic [ref=e7]: PinGarden
+    - generic [ref=e9]:
+      - generic [ref=e10]: "语言:"
+      - combobox "语言:" [ref=e11]:
+        - option "English"
+        - option "中文" [selected]
+  - generic [ref=e13]: 加载中…
+  - generic [ref=e15]:
+    - heading "欢迎" [level=2] [ref=e16]
+    - paragraph [ref=e17]: 选一个显示名,方便团队成员知道是谁在编辑。随时可以修改。
+    - textbox "你的显示名" [active] [ref=e18]
+    - button "继续" [disabled] [ref=e19]

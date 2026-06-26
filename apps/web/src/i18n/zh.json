@@ -544,6 +544,7 @@
       "imageLimit": "最多只能附带 {{count}} 张图片。",
       "imageTooLarge": "{{name}} 太大了,单张图片不能超过 {{size}}。",
       "imageUnsupported": "{{name}} 的图片格式暂不支持。",
+      "retry": "重试上一条",
       "modeHints": {
         "imageReady": "已有图片",
         "createProject": {

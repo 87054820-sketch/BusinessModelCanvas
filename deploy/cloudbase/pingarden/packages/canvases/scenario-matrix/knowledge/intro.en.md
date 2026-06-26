@@ -1,1 +1,0 @@
-Scenario Matrix turns two critical uncertainties into four plausible futures and compares opportunities, threats, and robust moves across them. It is the next step after Business Model Environment scanning.

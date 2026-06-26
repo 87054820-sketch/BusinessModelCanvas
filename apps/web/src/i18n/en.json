@@ -551,6 +551,7 @@
       "imageLimit": "You can attach up to {{count}} images.",
       "imageTooLarge": "{{name}} is too large. Each image must be under {{size}}.",
       "imageUnsupported": "{{name}} uses an unsupported image format.",
+      "retry": "Retry last message",
       "modeHints": {
         "imageReady": "Image ready",
         "createProject": {

@@ -1,1 +1,0 @@
-A concrete, named frustration the customer experiences today. Prioritize pains that are intense, frequent, and strong enough to affect choice or switching behavior. Make it observable and ideally measurable.

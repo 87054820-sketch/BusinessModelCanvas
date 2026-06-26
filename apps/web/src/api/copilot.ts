@@ -77,6 +77,15 @@ async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> 
   return (await res.json()) as T;
 }
 
+export function normalizeCopilotFetchError(err: unknown): string {
+  if (err instanceof DOMException && err.name === 'AbortError') return '请求已取消。';
+  const message = err instanceof Error ? err.message : String(err);
+  if (/load failed|failed to fetch|networkerror|internet connection|network request failed|fetch.*failed/i.test(message)) {
+    return '移动端网络连接中断或当前 WebView 拦截了请求，请检查网络后重试。';
+  }
+  return message;
+}
+
 function normalizeCopilotStreamError(status: number, body: string): string {
   const text = body.trim();
   if (isHtmlResponse(text)) {

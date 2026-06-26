@@ -1,9 +1,0 @@
-{
-  "id": "af66cb77-9174-442d-9b60-98b8df50363f",
-  "name": "Uber — two-sided ride-hailing platform",
-  "description": "The textbook on-demand two-sided ride-hailing platform. Two BMCs — riders (subsidy-side scale; pay an app-set fare) and drivers (revenue-extraction side; receive fare minus 15-30% commission) — that together show how surge pricing, blitzscaling, and the negative cash conversion cycle operate at the platform's two sides.",
-  "createdAt": "2026-06-15T09:23:49.200Z",
-  "createdBy": "PinGarden Library",
-  "updatedAt": "2026-06-15T09:23:49.200Z",
-  "updatedBy": "PinGarden Library"
-}

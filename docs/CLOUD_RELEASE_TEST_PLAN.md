@@ -9,6 +9,7 @@
 - SSE 被网关缓冲或超时，前端长时间卡住。
 - nginx / CloudRun HTML 错误页直接显示在 Copilot 聊天区。
 - 前端资源没有更新，导致按钮或交互缺失，例如 `+ 图片` 上传按钮不可见。
+- 动态 lazy chunk 与入口 JS 版本错配，导致 `Failed to fetch dynamically imported module`。
 - Kimi API Key 被误保存到服务端或错误日志里。
 
 ## 分层测试门禁
@@ -75,6 +76,7 @@ PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm smoke:cloud -- --url https://pingarden-
 | cloud-copilot-health | `GET /copilot/health` | provider 为 `kimi-http`，`available=true` |
 | cloud-home-html | `GET /` | 包含 `PinGarden`，不是 5xx HTML |
 | cloud-static-assets | 首页引用的 JS/CSS | 全部 `200` |
+| cloud-dynamic-chunks | 首页入口 JS 中引用的 lazy chunks | 全部 `200`，不得返回 HTML；覆盖 `ProjectWorkspacePage-*.js` 加载失败 |
 | cloud-chat-sse-invalid-key | 无效 key 调 `/copilot/chat` | 返回 SSE，包含 `data:` 或 SSE comment；不得返回 nginx HTML 504 |
 | cloud-no-key-leak | chat 错误响应 | 不包含原始 API Key |
 | cloud-real-kimi-optional | 真实 key 调 `/copilot/test-key` 和带裁剪策略库上下文的 `/copilot/chat` | 在超时内收到 `ok` 与至少一个 `delta` |
@@ -83,16 +85,23 @@ PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm smoke:cloud -- --url https://pingarden-
 
 发布后人工或浏览器自动化检查：
 
+```bash
+pnpm smoke:mobile -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com
+```
+
 | 场景 | 预期 |
 | --- | --- |
-| 打开 Copilot | 状态栏显示 `✓ Kimi API` |
-| 输入区 | 可见 `+ 图片` 按钮 |
+| 手机打开 `/library` | 标题、副标题不被挤成逐字竖排 |
+| 分类标签 | 单行展示，可横向滚动，不逐字折行 |
+| 打开 Copilot | 移动端全屏抽屉，状态栏显示 `✓ Kimi API` |
+| 输入区 | 可见 `+ 图片` 按钮，底部不被安全区遮挡 |
 | 上传图片 | 可选择文件，图片进入 attachment grid |
 | 粘贴截图 | 图片进入 attachment grid |
 | 拖拽截图 | 图片进入 attachment grid |
 | 超过 9 张 | 显示数量限制错误 |
 | 无 key 发送 | 发送按钮禁用或提示配置 Key |
-| 上游超时 | 显示可读错误，不显示 HTML |
+| 上游超时/移动端网络中断 | 显示可读错误，不显示 HTML 或原始 `Load failed` |
+| 云端刚发布新版本 | chunk 加载失败时提示刷新页面，而不是直接暴露红屏 stack |
 
 ### 5. Kimi / Copilot 专项测试
 
@@ -116,6 +125,6 @@ PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm smoke:cloud -- --url https://pingarden-
 
 ## 当前已知缺口
 
-- 还没有浏览器级自动化 UI 测试；后续可加入 Playwright 覆盖 `+ 图片` 按钮、文件选择、Copilot 面板打开等交互。
+- 浏览器级移动端 UI 测试已提供 `pnpm smoke:mobile`，但依赖本机已安装 `playwright-cli`。
 - 真实 Kimi 测试依赖用户自己的 API Key，默认 smoke test 只能验证链路/SSE/错误处理，不能保证真实模型质量。
 - CloudRun 版本切换是异步的，部署命令返回成功后仍需轮询 `queryCloudRun detail` 或重复 smoke test，直到线上资源更新。

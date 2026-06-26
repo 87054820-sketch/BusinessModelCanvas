@@ -1,1 +1,0 @@
-The one specific customer segment this sentence targets. Do not say "businesses" or "users" — be precise about industry, size, role, situation, or behavior. Different segments should produce different ad-libs.

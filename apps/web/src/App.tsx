@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useIdentity } from './identity/useIdentity';
@@ -32,19 +32,28 @@ export default function App() {
   const [editingIdentity, setEditingIdentity] = useState(false);
   const isDesktop = typeof window !== 'undefined' && 'electronAPI' in window;
 
+  useEffect(() => {
+    const onPreloadError = (event: Event) => {
+      event.preventDefault();
+      window.location.reload();
+    };
+    window.addEventListener('vite:preloadError', onPreloadError);
+    return () => window.removeEventListener('vite:preloadError', onPreloadError);
+  }, []);
+
   const logo = (
-    <Link to="/" className="flex items-center gap-2 font-semibold text-gray-900">
+    <Link to="/" className="flex min-w-0 items-center gap-2 font-semibold text-gray-900">
       <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gray-900 text-sm text-white">
         🌱
       </span>
-      <span>{t('app.title')}</span>
+      <span className="truncate">{t('app.title')}</span>
     </Link>
   );
 
   return (
     <div className="flex h-full flex-col bg-stone-50">
       <nav
-        className={`relative flex h-12 flex-shrink-0 items-center justify-between border-b border-gray-200 bg-white px-6 ${
+        className={`relative flex h-12 flex-shrink-0 items-center justify-between gap-2 border-b border-gray-200 bg-white px-3 sm:px-6 ${
           isDesktop ? 'app-drag-region pl-20' : ''
         }`}
       >
@@ -55,7 +64,7 @@ export default function App() {
         ) : (
           logo
         )}
-        <div className="ml-auto flex items-center gap-6">
+        <div className="ml-auto flex shrink-0 items-center gap-2 sm:gap-6">
           <LanguageSwitcher />
           {identity && (
             <button

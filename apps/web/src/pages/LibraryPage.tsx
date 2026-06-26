@@ -294,50 +294,51 @@ export function LibraryPage() {
   }
 
   return (
-    <main className="mx-auto max-w-6xl px-8 py-6">
+    <main className="mx-auto max-w-6xl px-4 py-4 sm:px-8 sm:py-6">
       {/* Page header — back link + title + create CTA on the right */}
-      <header className="mb-4 flex items-end justify-between gap-6">
-        <div>
+      <header className="mb-4 flex flex-col items-stretch gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+        <div className="min-w-0 flex-1">
           <BackLink
             fallback="/"
             className="inline-flex items-center text-sm text-gray-500 hover:text-gray-900"
           >
             ← {t('nav.back')}
           </BackLink>
-          <h1 className="mt-2 text-2xl font-semibold text-gray-900">
+          <h1 className="mt-2 text-2xl font-semibold leading-tight text-gray-900 sm:text-3xl">
             {t('library.pageTitle')}
           </h1>
-          <p className="mt-1 text-sm text-gray-500">{t('library.pageSubtitle')}</p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-500">{t('library.pageSubtitle')}</p>
         </div>
-        <div className="flex shrink-0 items-center gap-2">
+        <div className="grid grid-cols-2 gap-2 sm:flex sm:w-auto sm:shrink-0 sm:items-center">
           <button
             type="button"
             onClick={() => setCopilotOpen((v) => !v)}
             aria-pressed={copilotOpen}
-            className={`rounded-xl border px-4 py-2 text-sm font-semibold transition ${
+            className={`min-w-0 rounded-xl border px-3 py-2 text-sm font-semibold leading-tight transition sm:px-4 ${
               copilotOpen
                 ? 'border-gray-900 bg-gray-900 text-white hover:bg-black'
                 : 'border-gray-200 bg-white text-gray-900 hover:border-gray-300 hover:bg-gray-50'
             }`}
           >
-            💬 {t('library.copilot.openButton')}
+            <span className="whitespace-nowrap">💬 {t('library.copilot.openButton')}</span>
           </button>
           <button
             type="button"
             onClick={() => navigate('/p/new', { state: stateWithFrom(location) })}
-            className="rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50"
+            className="min-w-0 rounded-xl border border-gray-200 bg-white px-3 py-2 text-sm font-semibold leading-tight text-gray-900 transition hover:border-gray-300 hover:bg-gray-50 sm:px-4"
           >
-            + {t('home.createBlankInstead')}
+            <span className="whitespace-nowrap">+ {t('home.createBlankInstead')}</span>
           </button>
         </div>
       </header>
 
       {/* Tab strip — default Cases. State is in-memory (no URL sync yet). */}
-      <div
-        ref={listAnchorRef}
-        className="mb-4 flex items-end gap-1 border-b border-gray-200"
-        role="tablist"
-      >
+      <div className="-mx-4 mb-4 overflow-x-auto border-b border-gray-200 px-4 scrollbar-hide sm:mx-0 sm:px-0">
+        <div
+          ref={listAnchorRef}
+          className="flex min-w-max items-end gap-1"
+          role="tablist"
+        >
         <TabButton
           active={tab === 'cases'}
           onClick={() => handleTabChange('cases')}
@@ -374,6 +375,7 @@ export function LibraryPage() {
           label={t('library.tabs.resources')}
           count={resources?.length}
         />
+        </div>
       </div>
 
       {tab === 'cases' && (
@@ -629,13 +631,13 @@ function TabButton({
       role="tab"
       aria-selected={active}
       onClick={onClick}
-      className={`-mb-px border-b-2 px-4 py-2 text-sm font-medium transition ${
+      className={`-mb-px shrink-0 whitespace-nowrap border-b-2 px-3 py-2 text-sm font-medium transition sm:px-4 ${
         active
           ? 'border-gray-900 text-gray-900'
           : 'border-transparent text-gray-500 hover:text-gray-800'
       }`}
     >
-      {label}
+      <span>{label}</span>
       {typeof count === 'number' && (
         <span
           className={`ml-2 rounded-full px-1.5 py-0.5 text-[10px] ${

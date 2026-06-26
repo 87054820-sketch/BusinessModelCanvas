@@ -1,9 +1,0 @@
-{
-  "id": "1aa36d1e-cd80-4f7a-bc3d-30a0d7546938",
-  "name": "Airbnb — peer-to-peer accommodation platform",
-  "description": "The textbook P2P accommodation two-sided platform. Two BMCs — guests (demand-side scale; pay nightly fare + service fee) and hosts (supply-side income; receive nightly fare minus host fee) — that together show how reviews substitute for prior brand trust, how AirCover works as the platform's insurance overlay, and how the negative cash conversion mechanic generates float at IPO scale.",
-  "createdAt": "2026-06-15T09:28:27.092Z",
-  "createdBy": "PinGarden Library",
-  "updatedAt": "2026-06-15T09:28:27.092Z",
-  "updatedBy": "PinGarden Library"
-}

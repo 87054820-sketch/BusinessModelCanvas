@@ -124,21 +124,19 @@ export function useZoomPan(initialViewBox: ViewBox): Result {
   );
 
   const onPan = useCallback((e: React.PointerEvent<SVGSVGElement>) => {
-    if (!panRef.current) return;
-    const dxRaw = e.clientX - panRef.current.sx;
-    const dyRaw = e.clientY - panRef.current.sy;
-    if (!panRef.current.moved && Math.hypot(dxRaw, dyRaw) >= CLICK_THRESHOLD_PX) {
-      panRef.current.moved = true;
+    const pan = panRef.current;
+    if (!pan) return;
+    const dxRaw = e.clientX - pan.sx;
+    const dyRaw = e.clientY - pan.sy;
+    if (!pan.moved && Math.hypot(dxRaw, dyRaw) >= CLICK_THRESHOLD_PX) {
+      pan.moved = true;
     }
-    if (!panRef.current.moved) return;
-    const dx = dxRaw / panRef.current.scale;
-    const dy = dyRaw / panRef.current.scale;
-    setVb((cur) => [
-      panRef.current!.vbX - dx,
-      panRef.current!.vbY - dy,
-      cur[2],
-      cur[3],
-    ]);
+    if (!pan.moved) return;
+    const dx = dxRaw / pan.scale;
+    const dy = dyRaw / pan.scale;
+    const nextX = pan.vbX - dx;
+    const nextY = pan.vbY - dy;
+    setVb((cur) => [nextX, nextY, cur[2], cur[3]]);
   }, []);
 
   // Tracks the *just-finished* gesture so callers can ask "was that a click?"

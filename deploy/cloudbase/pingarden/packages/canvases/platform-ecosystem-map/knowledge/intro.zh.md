@@ -1,1 +1,0 @@
-平台生态地图用于分析多边平台的参与方、核心交互、网络效应、治理、变现和风险。它适合 Uber、Airbnb、Visa、Google、NVIDIA CUDA 等平台型案例。

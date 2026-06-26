@@ -21,6 +21,7 @@
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",
     "smoke:cloud": "node scripts/cloud-smoke-test.mjs",
+    "smoke:mobile": "node scripts/mobile-ui-smoke.mjs",
     "lint": "pnpm -r run lint"
   },
   "devDependencies": {
