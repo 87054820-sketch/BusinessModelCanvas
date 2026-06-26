@@ -1,3 +1,4 @@
+import type { ServerResponse } from 'node:http';
 import type { FastifyInstance } from 'fastify';
 import * as Y from 'yjs';
 import { z } from 'zod';
@@ -11,9 +12,9 @@ import {
 } from '@pingarden/shared';
 import type { FederatedStorage } from '../storage/FederatedStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
-import { streamKimiChat, type KimiChatMessage } from '../llm/kimiCliAdapter.js';
-import { resolveKimiBinary, readKimiVersion, KimiBinaryNotFoundError } from '../llm/kimiBinaryResolver.js';
-import { writeConfig as writeKimiConfig, clearConfig as clearKimiConfig } from '../llm/kimiConfig.js';
+import type { CopilotAiChatMessage, CopilotAiProvider } from '../llm/aiProvider.js';
+import { KimiCliProvider } from '../llm/kimiCliProvider.js';
+import { KimiHttpProvider } from '../llm/kimiHttpProvider.js';
 import { buildBundledPlaybookPrompt } from '../copilot/bundledPlaybooks.js';
 import { buildMemorySuggestionPrompt } from '../copilot/memorySummarizer.js';
 import { buildCopilotProtocol, type CopilotProtocolIntent } from '../copilot/protocols.js';
@@ -26,6 +27,7 @@ const ACCEPTED_IMAGE_TYPES = COPILOT_ACCEPTED_IMAGE_TYPES;
 const MAX_IMAGE_ATTACHMENTS = COPILOT_MAX_IMAGE_ATTACHMENTS;
 const MAX_IMAGE_BYTES = COPILOT_MAX_IMAGE_BYTES;
 const MAX_IMAGE_DATA_URL_LENGTH = Math.ceil(MAX_IMAGE_BYTES * 4 / 3) + 128;
+const COPILOT_SSE_HEARTBEAT_MS = 15_000;
 
 /**
  * Copilot HTTP surface — Mode A (Kimi CLI chat) routes:
@@ -60,24 +62,21 @@ export function registerCopilotRoutes(
   const bundle = storage.bundleStorage;
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
   const profileStore = new CopilotUserProfileStore(config.dataDir);
+  const aiProvider = createCopilotAiProvider();
 
   // ── GET /copilot/health ──────────────────────────────────────────────
-  // Namespaced under `kimi` so future modes (MCP server, GitHub Action,
-  // …) can add their own health sub-objects without breaking the schema.
   app.get('/copilot/health', async () => {
-    try {
-      const bin = resolveKimiBinary();
-      const version = readKimiVersion(bin);
-      return { kimi: { available: true, ...(version ? { version } : {}) } };
-    } catch {
-      return { kimi: { available: false } };
-    }
+    const provider = await aiProvider.health();
+    return {
+      provider,
+      kimi: {
+        available: provider.provider === 'kimi-cli' ? provider.available : true,
+        ...(provider.version ? { version: provider.version } : {}),
+      },
+    };
   });
 
   // ── POST /copilot/test-key ──────────────────────────────────────────
-  // Quick probe: write config.toml with the candidate key, spawn one
-  // tiny kimi turn, return ok on first text delta. Used by the
-  // settings panel's "测试连接" button.
   const TestKeySchema = z.object({
     apiKey: z.string().min(1),
   });
@@ -87,41 +86,12 @@ export function registerCopilotRoutes(
     if (!parse.success) {
       return reply.code(400).send({ ok: false, message: 'Invalid request body' });
     }
-    try {
-      await writeKimiConfig(parse.data.apiKey);
-    } catch (err) {
-      return reply.code(500).send({
-        ok: false,
-        message: err instanceof Error ? err.message : 'Failed to write Kimi config',
-      });
-    }
-
-    // Spawn one ping; resolve as soon as we see any delta (or error).
-    const probe = streamKimiChat({
-      systemPromptText: 'Reply with exactly the word "pong".',
-      conversation: [],
-      latestUserMsg: 'ping',
-    });
-    const timeout = new Promise<{ ok: false; message: string }>((resolve) => {
-      setTimeout(() => resolve({ ok: false, message: 'Timed out after 20s' }), 20_000);
-    });
-    const probeResult = (async () => {
-      for await (const chunk of probe) {
-        if ('error' in chunk) return { ok: false as const, message: chunk.error };
-        if ('delta' in chunk && chunk.delta) return { ok: true as const };
-      }
-      return { ok: false as const, message: 'Empty response from kimi' };
-    })();
-    const result = await Promise.race([probeResult, timeout]);
-    return reply.send(result);
+    return reply.send(await aiProvider.testKey(parse.data.apiKey));
   });
 
   // ── POST /copilot/clear-key ─────────────────────────────────────────
-  // Wipes ~/.kimi-code/config.toml back to its empty stub. Called by the
-  // renderer when the user clicks "Remove" in settings.
   app.post('/copilot/clear-key', async (_req, reply) => {
-    await clearKimiConfig();
-    return reply.send({ ok: true });
+    return reply.send(await aiProvider.clearKey());
   });
 
   // ── POST /copilot/chat — SSE stream proxy ────────────────────────────
@@ -168,28 +138,6 @@ export function registerCopilotRoutes(
       return reply.code(400).send({ error: attachmentError });
     }
 
-    // Write the user's key into Kimi's config every turn so we always
-    // pick up the latest credential without trusting whatever was there
-    // before. Cheap (one small file write) and avoids stale-key bugs.
-    try {
-      await writeKimiConfig(body.apiKey);
-    } catch (err) {
-      return reply.code(500).send({
-        error: err instanceof Error ? err.message : 'Failed to write Kimi config',
-      });
-    }
-
-    // Verify kimi binary is reachable before opening the SSE — avoids
-    // sending the user a half-open stream that immediately errors.
-    try {
-      resolveKimiBinary();
-    } catch (err) {
-      if (err instanceof KimiBinaryNotFoundError) {
-        return reply.code(503).send({ error: err.message });
-      }
-      throw err;
-    }
-
     // Hijack the reply so Fastify won't try to serialise a body on our
     // behalf — we write the SSE stream to reply.raw directly.
     reply.hijack();
@@ -200,6 +148,12 @@ export function registerCopilotRoutes(
       Connection: 'keep-alive',
       'X-Accel-Buffering': 'no',
     });
+    raw.flushHeaders?.();
+    writeSseComment(raw, 'stream-open');
+
+    const heartbeat = setInterval(() => {
+      if (!raw.writableEnded) writeSseComment(raw, 'heartbeat');
+    }, COPILOT_SSE_HEARTBEAT_MS);
 
     // Watch the RESPONSE stream for client disconnect (not req.raw — see
     // the long comment in the previous round's code for why).
@@ -214,11 +168,12 @@ export function registerCopilotRoutes(
     const last = body.messages[lastIdx]!;
     if (last.role !== 'user') {
       // Defensive — surface as SSE error so the renderer sees it.
-      raw.write(`data: ${JSON.stringify({ error: 'Last message must be from user' })}\n\n`);
+      writeSseData(raw, { error: 'Last message must be from user' });
       raw.end();
+      clearInterval(heartbeat);
       return;
     }
-    const prior: KimiChatMessage[] = body.messages.slice(0, lastIdx).map((m) => ({
+    const prior: CopilotAiChatMessage[] = body.messages.slice(0, lastIdx).map((m) => ({
       role: m.role,
       content: m.content,
     }));
@@ -229,7 +184,8 @@ export function registerCopilotRoutes(
     const latestUserMsg = buildLatestUserMessage(last.content, last.imageAttachments ?? [], body.intent, body.lang);
 
     try {
-      for await (const chunk of streamKimiChat({
+      for await (const chunk of aiProvider.streamChat({
+        apiKey: body.apiKey,
         systemPromptText,
         conversation: prior,
         latestUserMsg,
@@ -237,25 +193,27 @@ export function registerCopilotRoutes(
       })) {
         if (raw.writableEnded) break;
         if ('error' in chunk) {
-          raw.write(`data: ${JSON.stringify({ error: chunk.error })}\n\n`);
+          writeSseData(raw, { error: chunk.error });
           raw.end();
           return;
         }
         if (chunk.delta) {
-          raw.write(`data: ${JSON.stringify({ delta: chunk.delta })}\n\n`);
+          writeSseData(raw, { delta: chunk.delta });
         }
       }
       if (!raw.writableEnded) {
-        raw.write(`data: ${JSON.stringify({ done: true })}\n\n`);
+        writeSseData(raw, { done: true });
         raw.end();
       }
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Unknown error';
       app.log.warn({ err: msg }, 'Copilot chat stream failed');
       if (!raw.writableEnded) {
-        raw.write(`data: ${JSON.stringify({ error: msg })}\n\n`);
+        writeSseData(raw, { error: msg });
         raw.end();
       }
+    } finally {
+      clearInterval(heartbeat);
     }
   });
 
@@ -345,6 +303,18 @@ export function registerCopilotRoutes(
     const markdown = await buildStoryMarkdown(story.id, storage, defsById, lang);
     return reply.header('Cache-Control', 'no-store').send({ markdown });
   });
+}
+
+function createCopilotAiProvider(): CopilotAiProvider {
+  return config.aiProvider === 'kimi-http' ? new KimiHttpProvider() : new KimiCliProvider();
+}
+
+function writeSseComment(raw: ServerResponse, comment: string): void {
+  raw.write(`: ${comment}\n\n`);
+}
+
+function writeSseData(raw: ServerResponse, payload: Record<string, unknown>): void {
+  raw.write(`data: ${JSON.stringify(payload)}\n\n`);
 }
 
 function validateImageAttachments(images: CopilotImageAttachment[]): string | null {

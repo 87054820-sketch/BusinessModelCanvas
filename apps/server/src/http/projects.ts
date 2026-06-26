@@ -17,7 +17,12 @@ const UpdateInput = z.object({
 });
 
 export function registerProjectRoutes(app: FastifyInstance, storage: CanvasStorage) {
-  app.get('/projects', async () => storage.listProjects());
+  app.get('/projects', async (req, reply) => {
+    if (req.headers.accept?.includes('text/html')) {
+      return reply.callNotFound();
+    }
+    return storage.listProjects();
+  });
 
   app.get<{ Params: { id: string } }>('/projects/:id', async (req, reply) => {
     const project = await storage.getProject(req.params.id);

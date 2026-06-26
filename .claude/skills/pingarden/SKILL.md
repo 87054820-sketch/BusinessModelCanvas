@@ -1,7 +1,7 @@
 ---
 name: pingarden
 description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `"${HOME}/Library/Application Support/PinGarden/bin/pingarden"` and tell the user to open PinGarden once or use Help → Install CLI to PATH.
-version: 0.5.0-420d9c65
+version: 0.6.0-420d9c65
 ---
 
 # PinGarden — official skill
@@ -16,18 +16,20 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
    - **CLI on PATH.** If you get `command not found`, first try `"${HOME}/Library/Application Support/PinGarden/bin/pingarden" <args>`; if that path is missing, tell the user to launch PinGarden once, then use `Help → Install CLI to PATH`. Don't fall back to running bundled JS with `node`.
    - **PinGarden app/server.** Doctor reports the discovered port and a `/health` ping. If the server is down, tell the user to launch the PinGarden app — never try to write to `apps/server/data/` directly or parse Yjs binary as a workaround.
 2. If both are green, **list what already exists** before suggesting fresh authoring:
-   - `pingarden case list --json` — 22 curated company cases (Spotify, Uber, Airbnb, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
-   - `pingarden pattern list --json` — 5 BMG patterns (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open Business Models). Patterns surface "which canvases / cases apply this".
-3. Only after the environment is confirmed and the existing library is scanned should you start producing canvases / stickies / stories.
+   - `pingarden case list --json` — the curated company case library (Spotify, Uber, Airbnb, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
+   - `pingarden pattern list --json` — the business-model pattern library (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open Business Models, …). Patterns surface "which canvases / cases apply this".
+3. **Self-update check after installation or app upgrades:** run `pingarden skill install --dry-run`. If it reports `would change`, run `pingarden skill install` when the user asked to install/update/release, then ask the user to reload the agent session if their tool caches skills.
+4. Only after the environment is confirmed, the skill is current, and the existing library is scanned should you start producing canvases / stickies / stories.
 
 ## How to use this skill (reading order)
 
 1. **Always read `reference/cli-cheatsheet.md` first** — it lists the exact commands and JSON envelope shape you'll consume.
 2. **Before writing to a canvas**, read its description with `pingarden canvas describe <id> --json` (existing canvas) or `pingarden canvas describe-template <defId> --json` (new canvas). NEVER hardcode `zoneId`s — they come from the live def.
 3. **For each canvas the user works on**, consult `canvases/<id>.<lang>.md` for filling rules, fill order, examples, and anti-patterns.
-4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library already has 22 curated companies and 5 BMG patterns cross-linked both ways.
+4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library and pattern library are cross-linked both ways.
 5. **For "how do I test this assumption" / "what experiment should I run"** — go to `workflows/experiments.md` and the `experiments/` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
-6. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
+6. **For install/update/release or skill drift questions** — read `workflows/self-iteration.md` and keep the installed skill, project-local skill, zip, and DMG in sync.
+7. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
 
 ## Index
 
@@ -104,6 +106,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `workflows/snapshot.md` — when to milestone, how to restore
 - `workflows/translate.md` — en ⇄ zh round trip
 - `workflows/case-library.md` — read curated company cases for inspiration, or fork one to start fast
+- `workflows/self-iteration.md` — keep installed skills, project-local skills, skill zips, and app releases in sync after updates
 - `workflows/library-evolution.md` — when adding a new canvas, case, pattern, experiment, strategy framework, or resource: decide the content layer, integrate it into cases/stories, validate, then regenerate the skill
 - `workflows/patterns.md` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern
 - `workflows/authoring-patterns.md` — when the user asks to add a NEW pattern to the library (file layout, description template, audit checklist, manifest, skill regen)

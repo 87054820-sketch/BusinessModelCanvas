@@ -20,6 +20,7 @@
     "package:mac": "bash ./scripts/package-mac.sh",
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",
+    "smoke:cloud": "node scripts/cloud-smoke-test.mjs",
     "lint": "pnpm -r run lint"
   },
   "devDependencies": {

@@ -1,22 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 
-/**
- * Single-provider hook managing the Kimi Code API key. Replaces the
- * Round 1 `useProviders` hook (which juggled 4 providers).
- *
- * Storage: the encrypted blob lives in localStorage under
- * `pingarden.copilot.kimi-key`. We use Electron's `safeStorage` via the
- * preload bridge (`window.electronAPI.safeStorage`) when available;
- * fall back to plaintext localStorage with a visible warning banner
- * when it's not (typical dev / pure-web case).
- *
- * The plaintext key never crosses HTTP except when the caller
- * explicitly hands it back via `resolveKey()` for a chat turn. The
- * server writes it into `~/.kimi-code/config.toml` just before spawning
- * the bundled kimi subprocess, then leaves it there for kimi to read.
- */
+type KeyStorageMode = 'session' | 'local';
 
-const STORAGE_KEY = 'pingarden.copilot.kimi-key';
+const LOCAL_STORAGE_KEY = 'pingarden.copilot.kimi-key';
+const SESSION_STORAGE_KEY = 'pingarden.copilot.kimi-key.session';
 const CHANGE_EVENT = 'pingarden:copilot-key-change';
 
 interface KeyRecord {
@@ -24,6 +11,11 @@ interface KeyRecord {
   blob: string;
   isPlaintext: boolean;
   savedAt: string;
+  storageMode?: KeyStorageMode;
+}
+
+interface LoadedKeyRecord extends KeyRecord {
+  storageMode: KeyStorageMode;
 }
 
 interface ElectronSafeStorageBridge {
@@ -43,29 +35,49 @@ function bridge(): ElectronSafeStorageBridge | null {
   return (window as unknown as ElectronApiWindow).electronAPI?.safeStorage ?? null;
 }
 
-function load(): KeyRecord | null {
-  if (typeof localStorage === 'undefined') return null;
-  const raw = localStorage.getItem(STORAGE_KEY);
+function parseRecord(raw: string | null, fallbackMode: KeyStorageMode): LoadedKeyRecord | null {
   if (!raw) return null;
   try {
     const parsed = JSON.parse(raw);
     if (!parsed || typeof parsed !== 'object') return null;
     const c = parsed as Partial<KeyRecord>;
     if (typeof c.blob !== 'string' || typeof c.isPlaintext !== 'boolean') return null;
-    return parsed as KeyRecord;
+    return {
+      blob: c.blob,
+      isPlaintext: c.isPlaintext,
+      savedAt: typeof c.savedAt === 'string' ? c.savedAt : new Date().toISOString(),
+      storageMode: c.storageMode === 'session' || c.storageMode === 'local' ? c.storageMode : fallbackMode,
+    };
   } catch {
     return null;
   }
 }
 
-function persist(rec: KeyRecord | null) {
-  if (rec === null) localStorage.removeItem(STORAGE_KEY);
-  else localStorage.setItem(STORAGE_KEY, JSON.stringify(rec));
+function load(): LoadedKeyRecord | null {
+  if (typeof sessionStorage !== 'undefined') {
+    const sessionRecord = parseRecord(sessionStorage.getItem(SESSION_STORAGE_KEY), 'session');
+    if (sessionRecord) return sessionRecord;
+  }
+  if (typeof localStorage !== 'undefined') {
+    return parseRecord(localStorage.getItem(LOCAL_STORAGE_KEY), 'local');
+  }
+  return null;
+}
+
+function persist(rec: KeyRecord | null, mode: KeyStorageMode) {
+  if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem(SESSION_STORAGE_KEY);
+  if (typeof localStorage !== 'undefined') localStorage.removeItem(LOCAL_STORAGE_KEY);
+
+  if (rec !== null) {
+    const payload = JSON.stringify({ ...rec, storageMode: mode });
+    if (mode === 'session') sessionStorage.setItem(SESSION_STORAGE_KEY, payload);
+    else localStorage.setItem(LOCAL_STORAGE_KEY, payload);
+  }
   window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
 export function useKeyConfig() {
-  const [record, setRecord] = useState<KeyRecord | null>(load);
+  const [record, setRecord] = useState<LoadedKeyRecord | null>(load);
   const [encryptionAvailable, setEncryptionAvailable] = useState<boolean>(false);
 
   useEffect(() => {
@@ -89,49 +101,54 @@ export function useKeyConfig() {
   }, []);
 
   useEffect(() => {
-    function onStorage(e: StorageEvent) {
-      if (e.key === STORAGE_KEY) setRecord(load());
-    }
-    function onCustom() {
+    function refresh() {
       setRecord(load());
     }
+    function onStorage(e: StorageEvent) {
+      if (e.key === LOCAL_STORAGE_KEY || e.key === SESSION_STORAGE_KEY) refresh();
+    }
     window.addEventListener('storage', onStorage);
-    window.addEventListener(CHANGE_EVENT, onCustom);
+    window.addEventListener(CHANGE_EVENT, refresh);
     return () => {
       window.removeEventListener('storage', onStorage);
-      window.removeEventListener(CHANGE_EVENT, onCustom);
+      window.removeEventListener(CHANGE_EVENT, refresh);
     };
   }, []);
 
-  const save = useCallback(async (plaintextKey: string) => {
+  const save = useCallback(async (plaintextKey: string, opts?: { rememberInBrowser?: boolean }) => {
+    const mode: KeyStorageMode = opts?.rememberInBrowser ? 'local' : 'session';
     const b = bridge();
     let blob = plaintextKey;
     let isPlaintext = true;
-    if (b && (await b.available().catch(() => false))) {
+    if (mode === 'local' && b && (await b.available().catch(() => false))) {
       try {
         blob = await b.encrypt(plaintextKey);
         isPlaintext = false;
       } catch {
-        // Best-effort fallback — better to save plaintext than reject
-        // the user's pasted key with no path forward.
         blob = plaintextKey;
         isPlaintext = true;
       }
     }
-    persist({ blob, isPlaintext, savedAt: new Date().toISOString() });
-    setRecord({ blob, isPlaintext, savedAt: new Date().toISOString() });
+    const next: LoadedKeyRecord = {
+      blob,
+      isPlaintext,
+      savedAt: new Date().toISOString(),
+      storageMode: mode,
+    };
+    persist(next, mode);
+    setRecord(next);
   }, []);
 
   const remove = useCallback(() => {
-    persist(null);
+    persist(null, 'session');
     setRecord(null);
   }, []);
 
   /**
-   * Resolve the plaintext key for the next chat turn. Returns null when
-   * the user hasn't saved one yet, OR when the encrypted blob can't be
-   * decrypted (rare — most likely an OS keychain that disappeared
-   * between launches; user will need to re-paste).
+   * Resolve the plaintext key for the next chat turn. In cloud web mode
+   * the key is session-scoped by default; if the user chooses to remember
+   * this browser it is read from localStorage. The server receives it only
+   * in the request body for the current test/chat request.
    */
   const resolveKey = useCallback(async (): Promise<string | null> => {
     const rec = load();
@@ -149,6 +166,8 @@ export function useKeyConfig() {
   return {
     hasKey: record !== null,
     savedAt: record?.savedAt ?? null,
+    storageMode: record?.storageMode ?? null,
+    rememberInBrowser: record?.storageMode === 'local',
     encryptionAvailable,
     encryptedAtRest: record !== null && !record.isPlaintext,
     save,

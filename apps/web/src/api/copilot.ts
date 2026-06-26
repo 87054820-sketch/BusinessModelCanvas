@@ -10,7 +10,20 @@ import { ensureOk } from './errors';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 
+export type CopilotAiProviderKind = 'kimi-cli' | 'kimi-http';
+
+export interface CopilotProviderHealth {
+  provider: CopilotAiProviderKind;
+  available: boolean;
+  version?: string;
+  model?: string;
+  requiresApiKey: boolean;
+  storesKeyServerSide: false;
+  message?: string;
+}
+
 export interface CopilotHealth {
+  provider: CopilotProviderHealth;
   kimi: {
     available: boolean;
     version?: string;
@@ -38,7 +51,7 @@ export interface CopilotChatMessage {
 export type CopilotIntent = 'project-draft' | 'project-update' | 'discussion-insight' | 'apply-learning-to-project';
 
 export interface CopilotStreamRequest {
-  /** Plaintext Kimi Code API key (decrypted by the renderer just before sending). */
+  /** Plaintext Kimi API key resolved by the renderer just before sending; the server must not persist it. */
   apiKey: string;
   /** Conversation history including the latest user turn. */
   messages: CopilotChatMessage[];
@@ -48,6 +61,8 @@ export interface CopilotStreamRequest {
   attachedContext?: string;
   /** Optional hidden task protocol selected by the UI. */
   intent?: CopilotIntent;
+  /** UI language — controls backend protocol prompt language. */
+  lang?: Lang;
 }
 
 export interface CopilotStreamCallbacks {
@@ -62,15 +77,37 @@ async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> 
   return (await res.json()) as T;
 }
 
+function normalizeCopilotStreamError(status: number, body: string): string {
+  const text = body.trim();
+  if (isHtmlResponse(text)) {
+    if (status === 504 || /504\s+Gateway\s+Time-?out/i.test(text)) {
+      return '云端 AI 请求超时，请重试或缩小资料范围。';
+    }
+    return `云端 AI 请求失败（HTTP ${status}），请稍后重试。`;
+  }
+  try {
+    const parsed = JSON.parse(text) as { error?: unknown; message?: unknown };
+    const message = typeof parsed.error === 'string' ? parsed.error : parsed.message;
+    if (typeof message === 'string' && message.trim()) return message.trim();
+  } catch {
+    /* not JSON */
+  }
+  return text.slice(0, 400) || `HTTP ${status}`;
+}
+
+function isHtmlResponse(text: string): boolean {
+  return /^<!doctype\s+html/i.test(text) || /^<html[\s>]/i.test(text) || /<body[\s>]/i.test(text);
+}
+
 export const copilotApi = {
   getHealth(): Promise<CopilotHealth> {
     return fetchJson<CopilotHealth>(`${BASE}/copilot/health`);
   },
 
   /**
-   * Probe whether the candidate API key works. Server writes Kimi's
-   * config.toml with the key, spawns one tiny `kimi --print -p` turn,
-   * returns `{ok}` based on the first frame. The 测试连接 button consumes this.
+   * Probe whether the candidate API key works for the active provider.
+   * CLI mode may render a local Kimi config; HTTP BYOK mode only uses
+   * the key for this request and never stores it server-side.
    */
   testKey(apiKey: string): Promise<{ ok: boolean; message?: string }> {
     return fetchJson<{ ok: boolean; message?: string }>(
@@ -244,7 +281,7 @@ export const copilotApi = {
           } catch {
             /* best-effort */
           }
-          cb.onError(bodyText || `HTTP ${res.status}`);
+          cb.onError(normalizeCopilotStreamError(res.status, bodyText));
           return;
         }
 

@@ -3,6 +3,12 @@ import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 
+export type CopilotAiProviderMode = 'kimi-cli' | 'kimi-http';
+
+function parseAiProvider(raw: string | undefined): CopilotAiProviderMode {
+  return raw === 'kimi-http' ? 'kimi-http' : 'kimi-cli';
+}
+
 /**
  * Centralised runtime configuration. Reads from process.env with sane defaults.
  */
@@ -11,6 +17,8 @@ export const config = {
   host: process.env.HOST ?? '0.0.0.0',
   /** Optional desktop instance marker used by Electron to avoid connecting to another local service. */
   desktopInstanceId: process.env.PINGARDEN_DESKTOP_INSTANCE_ID,
+  /** Copilot provider: local/desktop defaults to Kimi CLI; CloudRun sets kimi-http. */
+  aiProvider: parseAiProvider(process.env.PINGARDEN_AI_PROVIDER),
   /** Where canvas instance data + Yjs docs + snapshots live. */
   dataDir: resolve(process.env.DATA_DIR ?? resolve(here, '../data')),
   /** Where canvas-def asset bundles live. */

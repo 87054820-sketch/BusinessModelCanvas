@@ -10,7 +10,7 @@ import {
   discoverPatternsDir,
   discoverStrategyFrameworksDir,
 } from '../skill/discover.js';
-import { generateSkill, readInstalledHash } from '../skill/generate.js';
+import { generateSkill, readInstalledHash, readInstalledVersion } from '../skill/generate.js';
 
 const GLOBAL_INSTALL_DIR = join(homedir(), '.claude', 'skills', 'pingarden');
 const LOCAL_INSTALL_DIR = join('.claude', 'skills', 'pingarden');
@@ -86,7 +86,8 @@ export function skillInstallHandler(args: {
       ...(args.langs !== undefined ? { langs: args.langs } : {}),
     });
     const installedHash = readInstalledHash(targetDir);
-    const wouldChange = installedHash !== result.contentHash;
+    const installedVersion = readInstalledVersion(targetDir);
+    const wouldChange = installedHash !== result.contentHash || installedVersion !== result.version;
     // Clean up the preview — it served its purpose.
     try {
       rmSync(tmp, { recursive: true, force: true });
@@ -99,6 +100,7 @@ export function skillInstallHandler(args: {
       version: result.version,
       contentHash: result.contentHash,
       previousHash: installedHash,
+      previousVersion: installedVersion,
       canvasIds: result.canvasIds,
       patternSlugs: result.patternSlugs,
       experimentSlugs: result.experimentSlugs,
@@ -106,8 +108,9 @@ export function skillInstallHandler(args: {
     };
   }
 
-  // Real install — short-circuit when hash matches.
+  // Real install — compare both semantic version and content hash.
   const installedHash = readInstalledHash(targetDir);
+  const installedVersion = readInstalledVersion(targetDir);
   // We need to compute the hash to know whether to skip. Run generate.
   const result = generateSkill({
     bundlesDir: discoverBundlesDir({ override: args.bundlesDir }),
@@ -122,7 +125,8 @@ export function skillInstallHandler(args: {
     version: result.version,
     contentHash: result.contentHash,
     previousHash: installedHash,
-    upToDate: installedHash === result.contentHash,
+    previousVersion: installedVersion,
+    upToDate: installedHash === result.contentHash && installedVersion === result.version,
     canvasIds: result.canvasIds,
     patternSlugs: result.patternSlugs,
     experimentSlugs: result.experimentSlugs,
@@ -209,11 +213,12 @@ export class SkillInstallCommand extends BaseCommand {
 
     ctx.output.print(result, (r) => {
       if (this.dryRun) {
-        const r2 = r as { targetDir: string; wouldChange: boolean; version: string; previousHash: string | null };
+        const r2 = r as { targetDir: string; wouldChange: boolean; version: string; previousHash: string | null; previousVersion?: string | null };
         return [
           pc.bold('Skill install — DRY RUN'),
           `  target        ${r2.targetDir}`,
           `  version       ${r2.version}`,
+          `  previous      ${r2.previousVersion ?? '(none — fresh install)'}`,
           `  previous hash ${r2.previousHash ?? '(none — fresh install)'}`,
           r2.wouldChange
             ? pc.yellow('  status        would change')

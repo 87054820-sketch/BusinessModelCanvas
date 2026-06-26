@@ -117,18 +117,20 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
    - **CLI on PATH.** If you get \`command not found\`, first try \`"\${HOME}/Library/Application Support/PinGarden/bin/pingarden" <args>\`; if that path is missing, tell the user to launch PinGarden once, then use \`Help → Install CLI to PATH\`. Don't fall back to running bundled JS with \`node\`.
    - **PinGarden app/server.** Doctor reports the discovered port and a \`/health\` ping. If the server is down, tell the user to launch the PinGarden app — never try to write to \`apps/server/data/\` directly or parse Yjs binary as a workaround.
 2. If both are green, **list what already exists** before suggesting fresh authoring:
-   - \`pingarden case list --json\` — 22 curated company cases (Spotify, Uber, Airbnb, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
-   - \`pingarden pattern list --json\` — 5 BMG patterns (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open Business Models). Patterns surface "which canvases / cases apply this".
-3. Only after the environment is confirmed and the existing library is scanned should you start producing canvases / stickies / stories.
+   - \`pingarden case list --json\` — the curated company case library (Spotify, Uber, Airbnb, Alibaba, Nespresso, Gillette, P&G, GSK, Patagonia, …). Often the user's question ("how does Uber make money?", "give me a freemium example") is already answered by an existing case — fork or read it instead of inventing.
+   - \`pingarden pattern list --json\` — the business-model pattern library (Long Tail, Unbundling, Multi-Sided Platforms, Free, Open Business Models, …). Patterns surface "which canvases / cases apply this".
+3. **Self-update check after installation or app upgrades:** run \`pingarden skill install --dry-run\`. If it reports \`would change\`, run \`pingarden skill install\` when the user asked to install/update/release, then ask the user to reload the agent session if their tool caches skills.
+4. Only after the environment is confirmed, the skill is current, and the existing library is scanned should you start producing canvases / stickies / stories.
 
 ## How to use this skill (reading order)
 
 1. **Always read \`reference/cli-cheatsheet.md\` first** — it lists the exact commands and JSON envelope shape you'll consume.
 2. **Before writing to a canvas**, read its description with \`pingarden canvas describe <id> --json\` (existing canvas) or \`pingarden canvas describe-template <defId> --json\` (new canvas). NEVER hardcode \`zoneId\`s — they come from the live def.
 3. **For each canvas the user works on**, consult \`canvases/<id>.<lang>.md\` for filling rules, fill order, examples, and anti-patterns.
-4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library already has 22 curated companies and 5 BMG patterns cross-linked both ways.
+4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library and pattern library are cross-linked both ways.
 5. **For "how do I test this assumption" / "what experiment should I run"** — go to \`workflows/experiments.md\` and the \`experiments/\` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
-6. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
+6. **For install/update/release or skill drift questions** — read \`workflows/self-iteration.md\` and keep the installed skill, project-local skill, zip, and DMG in sync.
+7. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
 
 ## Index
 
@@ -144,6 +146,7 @@ ${canvasList}${patternsBlock}${experimentsBlock}${strategyFrameworksBlock}
 - \`workflows/snapshot.md\` — when to milestone, how to restore
 - \`workflows/translate.md\` — en ⇄ zh round trip
 - \`workflows/case-library.md\` — read curated company cases for inspiration, or fork one to start fast
+- \`workflows/self-iteration.md\` — keep installed skills, project-local skills, skill zips, and app releases in sync after updates
 - \`workflows/library-evolution.md\` — when adding a new canvas, case, pattern, experiment, strategy framework, or resource: decide the content layer, integrate it into cases/stories, validate, then regenerate the skill${patternsWorkflow}${experimentsWorkflow}${strategyFrameworksWorkflow}
 
 ### Reference
@@ -285,6 +288,44 @@ function renderRelated(bundle: CanvasBundle, lang: Lang): string {
 // ─── Workflow markdowns (curated, static) ────────────────────────────────────
 
 export const WORKFLOW_FILES: Record<string, string> = {
+  'workflows/self-iteration.md': `# Self-iteration — keep the installed skill current
+
+Use this workflow whenever the user asks to install, update, package, release, or verify the PinGarden skill, or when the app has just been upgraded.
+
+## Activation self-check
+
+1. Run \`pingarden doctor\` first. If the CLI is missing, ask the user to launch the PinGarden desktop app once or use **Help → Install CLI to PATH**.
+2. Run a non-destructive update probe:
+
+\`\`\`bash
+pingarden skill install --dry-run --json
+\`\`\`
+
+3. Parse \`data.wouldChange\`:
+   - \`false\` → the installed skill is current; continue normal work.
+   - \`true\` → the app/CLI/library content can improve the installed skill. If the user asked for install/update/release, run \`pingarden skill install\`. If the host agent requires approval for writing outside the workspace, request it before installing.
+4. After an update, run \`pingarden doctor\` again and tell the user to reload/restart the AI agent session if their tool caches skills.
+
+## Source-repo release loop
+
+When working inside the PinGarden repo and changing canvases, cases, patterns, experiments, strategy frameworks, skill templates, or install prompts:
+
+\`\`\`bash
+pnpm typecheck
+pnpm --filter @pingarden/cli build
+node apps/cli/dist/index.js skill install --local
+pnpm package:mac
+\`\`\`
+
+\`pnpm package:mac\` is the canonical release path: it regenerates the project-local skill, creates the portable \`pingarden-skill-<version>.zip\`, and bundles that zip into the macOS DMG via \`extraResources → skill-pack\`.
+
+## Drift rules
+
+- Do not manually edit an installed global skill as the source of truth. Change generator inputs, rebuild the CLI, then reinstall.
+- Do not keep multiple stale \`pingarden-skill-*.zip\` files around; packaging intentionally leaves one current zip.
+- Do not parse \`.ydoc\` files or write runtime data while iterating the skill.
+- Treat \`.pingarden-skill-version\` as the installed skill identity: it includes the CLI semver plus the content hash.
+`,
   'workflows/discover.md': `# Discover — first call in a session
 
 Before doing anything else, figure out what's already there. Ask in this order:

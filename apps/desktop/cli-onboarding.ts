@@ -29,10 +29,10 @@ import { dirname, join } from 'path';
  *      plus shell profile PATH entries when the global directory is not
  *      writable.
  *
- *   3. Run `pingarden skill install` against the user's
- *      `~/.claude/skills/pingarden/`. The skill generator is
- *      idempotent — it short-circuits on subsequent launches when
- *      the canvas content hash hasn't changed.
+ *   3. Probe `pingarden skill install --dry-run --json`, then run
+ *      `pingarden skill install` against the user's
+ *      `~/.claude/skills/pingarden/` when the app version, skill
+ *      version, or bundled content changed.
  *
  *   4. Write a refreshed onboarding readme to
  *      `<userData>/cli-readme.txt` with the resolved wrapper path and
@@ -169,36 +169,95 @@ async function installSkill(
   } catch {
     /* fresh install */
   }
-  if (lastInstalled === runtime.paths.appVersion) {
-    log(`skill install skipped — sentinel matches app v${runtime.paths.appVersion}`);
+
+  let shouldInstall = lastInstalled !== runtime.paths.appVersion;
+  const dryRun = await runBundledCli(
+    runtime,
+    ['skill', 'install', '--bundles', runtime.cliAssets, '--dry-run', '--json'],
+    log,
+    'skill dry-run',
+  );
+  if (dryRun.code === 0) {
+    const probe = parseSkillDryRun(dryRun.stdout);
+    if (probe) {
+      shouldInstall = shouldInstall || probe.wouldChange;
+      log(
+        `skill dry-run result: wouldChange=${probe.wouldChange}, version=${probe.version}, previous=${probe.previousVersion ?? 'none'}`,
+      );
+    }
+  } else {
+    log(`skill dry-run failed; falling back to app-version sentinel (${dryRun.code ?? 'null'})`);
+  }
+
+  if (!shouldInstall) {
+    log(`skill install skipped — app v${runtime.paths.appVersion} and skill probe are current`);
     return;
   }
 
-  await new Promise<void>((resolve) => {
-    const proc = spawn(
-      runtime.paths.electronExec,
-      [runtime.cliJs, 'skill', 'install', '--bundles', runtime.cliAssets],
-      {
-        env: { ...process.env, ELECTRON_RUN_AS_NODE: '1' },
-        stdio: ['ignore', 'pipe', 'pipe'],
-      },
-    );
-    proc.stdout.on('data', (d: Buffer) => log(`skill stdout: ${d.toString().trim()}`));
-    proc.stderr.on('data', (d: Buffer) => log(`skill stderr: ${d.toString().trim()}`));
-    proc.on('close', (code) => {
-      log(`skill install exit ${code ?? 'null'}`);
-      if (code === 0) {
-        try {
-          writeFileSync(sentinelPath, runtime.paths.appVersion, 'utf8');
-        } catch (err) {
-          log(`sentinel write failed: ${(err as Error).message}`);
-        }
-      }
-      resolve();
+  const install = await runBundledCli(
+    runtime,
+    ['skill', 'install', '--bundles', runtime.cliAssets],
+    log,
+    'skill install',
+  );
+  log(`skill install exit ${install.code ?? 'null'}`);
+  if (install.code === 0) {
+    try {
+      writeFileSync(sentinelPath, runtime.paths.appVersion, 'utf8');
+    } catch (err) {
+      log(`sentinel write failed: ${(err as Error).message}`);
+    }
+  }
+}
+
+interface SkillDryRunProbe {
+  wouldChange: boolean;
+  version: string;
+  previousVersion?: string | null;
+}
+
+function parseSkillDryRun(stdout: string): SkillDryRunProbe | null {
+  try {
+    const parsed = JSON.parse(stdout.trim()) as { data?: Partial<SkillDryRunProbe> };
+    const data = parsed.data;
+    if (!data || typeof data.wouldChange !== 'boolean' || typeof data.version !== 'string') return null;
+    return {
+      wouldChange: data.wouldChange,
+      version: data.version,
+      previousVersion: data.previousVersion ?? null,
+    };
+  } catch {
+    return null;
+  }
+}
+
+async function runBundledCli(
+  runtime: CliOnboardingRuntime,
+  args: string[],
+  log: (line: string) => void,
+  label: string,
+): Promise<{ code: number | null; stdout: string; stderr: string }> {
+  return new Promise((resolve) => {
+    const proc = spawn(runtime.paths.electronExec, [runtime.cliJs, ...args], {
+      env: { ...process.env, ELECTRON_RUN_AS_NODE: '1' },
+      stdio: ['ignore', 'pipe', 'pipe'],
     });
+    let stdout = '';
+    let stderr = '';
+    proc.stdout.on('data', (d: Buffer) => {
+      const chunk = d.toString();
+      stdout += chunk;
+      log(`${label} stdout: ${chunk.trim()}`);
+    });
+    proc.stderr.on('data', (d: Buffer) => {
+      const chunk = d.toString();
+      stderr += chunk;
+      log(`${label} stderr: ${chunk.trim()}`);
+    });
+    proc.on('close', (code) => resolve({ code, stdout, stderr }));
     proc.on('error', (err) => {
-      log(`skill install spawn error: ${err.message}`);
-      resolve();
+      log(`${label} spawn error: ${err.message}`);
+      resolve({ code: 1, stdout, stderr: err.message });
     });
   });
 }
@@ -369,8 +428,9 @@ Verify:
 The skill (Claude Code methodology) is auto-installed at:
     ~/.claude/skills/pingarden
 
-It is regenerated on every Mac app launch — idempotent, so unchanged
-canvas content is a no-op.
+On each Mac app launch, PinGarden probes the installed skill with
+\`pingarden skill install --dry-run --json\`; when the app version,
+skill version, or bundled content changed, it refreshes the skill automatically.
 
 Logs from onboarding:
     ${join(dirname(dirname(wrapperPath)), 'logs', 'cli-onboarding.log')}

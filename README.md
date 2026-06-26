@@ -63,6 +63,34 @@ Each canvas bundle ships with a placeholder SVG so the app runs end-to-end. Repl
 | Canvas types | Schema + bundle in `packages/canvases/<id>/` | Same schema; users contribute new bundles. |
 | Plugins  | (M6) `axis-grid` for Portfolio Map             | Drop-in plugin folder with `BlockOverride`/`StickyOverride`/`Toolbar`. |
 
+## CloudBase deployment
+
+Current preview deployment:
+
+- Environment: `pingarden-d5gyvjbtdc321cc10`
+- CloudRun service: `pingarden`
+- Type: container service
+- Public URL: https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com/
+- Health check: https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com/health
+- Resources: `CPU=0.5`, `Mem=1GB`, `MinNum=1`, `MaxNum=2`, `Port=3000`
+- Runtime env: `NODE_ENV=production`, `HOST=0.0.0.0`, `PORT=3000`, `PINGARDEN_AI_PROVIDER=kimi-http`, `PINGARDEN_KIMI_HTTP_TIMEOUT_MS=120000`
+- Copilot provider: Kimi HTTP BYOK (`/copilot/health` returns `provider.provider=kimi-http`)
+- Release smoke test: `pnpm smoke:cloud -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com`
+
+This is a single-service preview deployment: the Fastify server serves both API routes and the built Vite SPA.
+
+Cloud Copilot uses Bring Your Own Key mode:
+
+- The browser stores the Kimi API Key in `sessionStorage` by default.
+- If the user checks "Remember on this browser", the key is stored in that browser's `localStorage`.
+- CloudRun receives the key only in each `test-key` / `chat` request body and never writes it to CloudBase, environment variables, server files, logs, or user data.
+- Desktop/local mode can still use the existing `kimi-cli` provider when `PINGARDEN_AI_PROVIDER` is unset.
+
+Important limitations before production use:
+
+- User project data currently uses `FileSystemStorage` with `DATA_DIR=/tmp/pingarden-data` on CloudRun. This is suitable for preview only; persistent multi-user cloud use should replace it with CloudBase PostgreSQL/MySQL/NoSQL storage behind the existing `CanvasStorage` seam.
+- Direct refresh of SPA sub-routes should be verified after every deployment. The server contains an SPA fallback path for production, but CloudRun version rollout can lag behind a successful deploy response.
+
 ## License
 
 MIT (code). Strategyzer canvas visuals are © Strategyzer AG and not redistributed in this repository — drop your own copies into the canvas bundles.

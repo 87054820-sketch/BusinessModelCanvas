@@ -1,22 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { copilotApi } from '../api/copilot';
+import { copilotApi, type CopilotProviderHealth } from '../api/copilot';
 import { useKeyConfig } from '../copilot/useKeyConfig';
 
-/**
- * Single-card connect form for the Kimi Code API key. Replaces the
- * Round 1 4-provider catalog modal.
- *
- * Renders as a sheet pinned at the top of the Copilot drawer's Chat tab
- * — not a separate modal — because there's only one credential to
- * manage and the user needs to see the chat panel behind it while
- * setting up.
- */
-export function CopilotChatSettings({ onClose }: { onClose?: () => void }) {
+export function CopilotChatSettings({
+  onClose,
+  provider,
+}: {
+  onClose?: () => void;
+  provider?: CopilotProviderHealth | null;
+}) {
   const { t } = useTranslation();
   const config = useKeyConfig();
+  const isHttpProvider = provider?.provider === 'kimi-http';
 
   const [input, setInput] = useState('');
+  const [rememberInBrowser, setRememberInBrowser] = useState(false);
   const [testing, setTesting] = useState(false);
   const [testResult, setTestResult] = useState<{ ok: boolean; message?: string } | null>(null);
   const [savedFlash, setSavedFlash] = useState(false);
@@ -24,6 +23,10 @@ export function CopilotChatSettings({ onClose }: { onClose?: () => void }) {
   useEffect(() => {
     setTestResult(null);
   }, [input]);
+
+  useEffect(() => {
+    setRememberInBrowser(config.rememberInBrowser || provider?.provider === 'kimi-cli');
+  }, [config.rememberInBrowser, provider?.provider]);
 
   async function handleTest() {
     if (!input.trim()) return;
@@ -41,7 +44,7 @@ export function CopilotChatSettings({ onClose }: { onClose?: () => void }) {
 
   async function handleSave() {
     if (!input.trim()) return;
-    await config.save(input.trim());
+    await config.save(input.trim(), { rememberInBrowser });
     setInput('');
     setSavedFlash(true);
     if (onClose) {
@@ -63,9 +66,11 @@ export function CopilotChatSettings({ onClose }: { onClose?: () => void }) {
     <div className="border-b border-gray-100 bg-gray-50/60 px-4 py-3">
       <div className="flex items-start justify-between gap-2">
         <div>
-          <h3 className="text-sm font-semibold text-gray-900">{t('library.copilot.kimi.title')}</h3>
+          <h3 className="text-sm font-semibold text-gray-900">
+            {t(isHttpProvider ? 'library.copilot.kimi.httpTitle' : 'library.copilot.kimi.title')}
+          </h3>
           <p className="mt-1 text-[11px] leading-relaxed text-gray-600">
-            {t('library.copilot.kimi.intro')}
+            {t(isHttpProvider ? 'library.copilot.kimi.httpIntro' : 'library.copilot.kimi.intro')}
           </p>
         </div>
         {onClose && (
@@ -82,14 +87,22 @@ export function CopilotChatSettings({ onClose }: { onClose?: () => void }) {
 
       <div
         className={`mt-2 rounded-md border px-2 py-1.5 text-[11px] ${
-          config.encryptionAvailable
-            ? 'border-emerald-100 bg-emerald-50/60 text-emerald-800'
-            : 'border-amber-100 bg-amber-50/60 text-amber-800'
+          isHttpProvider
+            ? rememberInBrowser
+              ? 'border-amber-100 bg-amber-50/60 text-amber-800'
+              : 'border-emerald-100 bg-emerald-50/60 text-emerald-800'
+            : config.encryptionAvailable
+              ? 'border-emerald-100 bg-emerald-50/60 text-emerald-800'
+              : 'border-amber-100 bg-amber-50/60 text-amber-800'
         }`}
       >
-        {config.encryptionAvailable
-          ? t('library.copilot.encryptionEnabled')
-          : t('library.copilot.encryptionWarning')}
+        {isHttpProvider
+          ? rememberInBrowser
+            ? t('library.copilot.browserRememberWarning')
+            : t('library.copilot.sessionOnlyNotice')
+          : config.encryptionAvailable
+            ? t('library.copilot.encryptionEnabled')
+            : t('library.copilot.encryptionWarning')}
       </div>
 
       <div className="mt-3">
@@ -114,6 +127,19 @@ export function CopilotChatSettings({ onClose }: { onClose?: () => void }) {
           {t('library.copilot.getKey')}
         </a>
       </div>
+
+      <label className="mt-3 flex items-start gap-2 text-[11px] text-gray-600">
+        <input
+          type="checkbox"
+          checked={rememberInBrowser}
+          onChange={(e) => setRememberInBrowser(e.target.checked)}
+          className="mt-0.5 h-3.5 w-3.5 rounded border-gray-300"
+        />
+        <span>
+          <span className="font-medium text-gray-800">{t('library.copilot.rememberThisBrowser')}</span>
+          <span className="block leading-relaxed text-gray-500">{t('library.copilot.rememberThisBrowserHint')}</span>
+        </span>
+      </label>
 
       {testResult && (
         <div className={`mt-2 text-[11px] ${testResult.ok ? 'text-emerald-700' : 'text-red-600'}`}>

@@ -112,6 +112,16 @@ async function main() {
     });
     // SPA fallback: unknown non-API paths serve index.html
     app.setNotFoundHandler(async (req, reply) => {
+      const wantsHtml = req.headers.accept?.includes('text/html');
+      const pathname = req.url.split('?', 1)[0] ?? req.url;
+      const spaRoute =
+        wantsHtml &&
+        (pathname === '/library' ||
+          pathname === '/projects' ||
+          pathname.startsWith('/p/'));
+      if (spaRoute) {
+        return reply.sendFile('index.html', resolve(webDistDir));
+      }
       const apiPrefix =
         req.url.startsWith('/health') ||
         req.url.startsWith('/canvas-defs') ||

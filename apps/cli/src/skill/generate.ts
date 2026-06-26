@@ -388,3 +388,15 @@ export function readInstalledHash(installDir: string): string | null {
   if (!statSync(path).isFile()) return null;
   return readFileSync(path, 'utf8').trim();
 }
+
+/**
+ * Read the installed skill version sentinel. This includes the CLI semver
+ * prefix, so version-only app releases can still refresh SKILL.md even when
+ * the underlying canvas/library content hash is unchanged.
+ */
+export function readInstalledVersion(installDir: string): string | null {
+  const path = join(installDir, '.pingarden-skill-version');
+  if (!existsSync(path)) return null;
+  if (!statSync(path).isFile()) return null;
+  return readFileSync(path, 'utf8').trim();
+}

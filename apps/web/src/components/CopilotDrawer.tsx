@@ -26,7 +26,7 @@ import {
   type Lang,
   type StrategyFramework,
 } from '@pingarden/shared';
-import { copilotApi, type CopilotIntent } from '../api/copilot';
+import { copilotApi, type CopilotIntent, type CopilotProviderHealth } from '../api/copilot';
 import { api, type CanvasDefSummary } from '../api/client';
 import { storiesApi } from '../api/stories';
 import { maybeConsolidateCopilotMemory } from '../copilot/memoryConsolidation';
@@ -133,7 +133,7 @@ const COPILOT_PROGRESS_INTERVAL_MS = 2200;
  * Right-side slide-over Copilot panel. ~420px wide, full window height.
  *
  * Two tabs at the top:
- *   💬 Chat       — bundled Kimi CLI subprocess + the user's pasted key
+ *   💬 Chat       — active Kimi provider + the user's request-scoped key
  *   📦 Skill pack — download the PinGarden methodology zip + per-tool
  *                   install snippets
  *
@@ -170,7 +170,7 @@ export function CopilotDrawer({
   const [streaming, setStreaming] = useState(false);
   const [streamProgressIndex, setStreamProgressIndex] = useState(0);
   const [error, setError] = useState<string | null>(null);
-  const [cliAvailable, setCliAvailable] = useState<boolean | null>(null);
+  const [providerHealth, setProviderHealth] = useState<CopilotProviderHealth | null>(null);
   const [suggestionsDismissed, setSuggestionsDismissed] = useState(false);
   const [suggestionsCollapsed, setSuggestionsCollapsed] = useState(false);
   const [expanded, setExpanded] = useState(false);
@@ -182,23 +182,31 @@ export function CopilotDrawer({
   const listEndRef = useRef<HTMLDivElement | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
-  // Probe /copilot/health on drawer open so we can show "Kimi CLI not
-  // installed" before the user even tries to chat.
+  // Probe /copilot/health on drawer open so UI can adapt to local CLI
+  // mode or CloudRun HTTP BYOK mode before the user tries to chat.
   useEffect(() => {
     if (!open) return;
     let cancelled = false;
     copilotApi
       .getHealth()
       .then((h) => {
-        if (!cancelled) setCliAvailable(h.kimi.available);
+        if (!cancelled) setProviderHealth(h.provider);
       })
       .catch(() => {
-        if (!cancelled) setCliAvailable(false);
+        if (!cancelled) {
+          setProviderHealth({
+            provider: 'kimi-cli',
+            available: false,
+            requiresApiKey: true,
+            storesKeyServerSide: false,
+            message: t('library.copilot.providerUnavailable'),
+          });
+        }
       });
     return () => {
       cancelled = true;
     };
-  }, [open]);
+  }, [open, t]);
 
   // Open settings automatically the very first time the drawer mounts
   // with no saved key — saves the user a click.
@@ -414,8 +422,8 @@ export function CopilotDrawer({
     const messageText = trimmed || t(`library.copilot.modeHints.${copilotMode}.imageOnlyPrompt`);
     setError(null);
 
-    if (cliAvailable === false) {
-      setError(t('library.copilot.cliMissing'));
+    if (providerHealth?.available === false) {
+      setError(providerHealth.message ?? t(providerHealth.provider === 'kimi-cli' ? 'library.copilot.cliMissing' : 'library.copilot.providerUnavailable'));
       return;
     }
     const apiKey = await config.resolveKey();
@@ -660,7 +668,7 @@ export function CopilotDrawer({
           onStop={handleStop}
           onClear={handleClear}
           listEndRef={listEndRef}
-          cliAvailable={cliAvailable}
+          providerHealth={providerHealth}
           hasKey={config.hasKey}
           starterActions={starterActions}
           showStarterActions={!suggestionsDismissed}
@@ -770,6 +778,11 @@ function buildComposerQuickActions(ref: AttachedRef | null, mode: CopilotMode): 
 
 function isLibraryProjectRef(ref: AttachedRef | null): boolean {
   return Boolean(ref && ref.type !== 'case' && ref.type !== 'pattern' && ref.projectSource === 'library');
+}
+
+function providerLabel(provider: CopilotProviderHealth | null): string {
+  if (provider?.provider === 'kimi-http') return 'Kimi API';
+  return 'Kimi Code';
 }
 
 function contextSourceKey(mode: CopilotMode): string {
@@ -1344,7 +1357,7 @@ function ChatPane({
   onStop,
   onClear,
   listEndRef,
-  cliAvailable,
+  providerHealth,
   hasKey,
   starterActions,
   showStarterActions,
@@ -1383,7 +1396,7 @@ function ChatPane({
   onStop(): void;
   onClear(): void;
   listEndRef: MutableRefObject<HTMLDivElement | null>;
-  cliAvailable: boolean | null;
+  providerHealth: CopilotProviderHealth | null;
   hasKey: boolean;
   starterActions: StarterAction[];
   showStarterActions: boolean;
@@ -1419,15 +1432,17 @@ function ChatPane({
   return (
     <>
       {/* Settings sheet (optional, pinned at top of chat pane) */}
-      {settingsOpen && <CopilotChatSettings onClose={() => onToggleSettings()} />}
+      {settingsOpen && <CopilotChatSettings provider={providerHealth} onClose={() => onToggleSettings()} />}
 
       {/* Status + actions row */}
       <div className="flex items-center justify-between border-b border-gray-100 px-4 py-1.5 text-[11px]">
         <span className="text-gray-500">
-          {cliAvailable === false ? (
-            <span className="text-amber-700">⚠ {t('library.copilot.cliMissing')}</span>
+          {providerHealth?.available === false ? (
+            <span className="text-amber-700">
+              ⚠ {providerHealth.message ?? t(providerHealth.provider === 'kimi-cli' ? 'library.copilot.cliMissing' : 'library.copilot.providerUnavailable')}
+            </span>
           ) : hasKey ? (
-            <span className="text-emerald-700">✓ Kimi Code</span>
+            <span className="text-emerald-700">✓ {providerLabel(providerHealth)}</span>
           ) : (
             <span className="text-gray-500">— {t('library.copilot.noKeyConfigured')}</span>
           )}
@@ -1479,7 +1494,7 @@ function ChatPane({
           <div className="mt-2">
             <StarterActionList
               actions={starterActions}
-              disabled={streaming || cliAvailable === false}
+              disabled={streaming || providerHealth?.available === false}
               onSend={onStarterSend}
             />
           </div>
@@ -1572,6 +1587,14 @@ function ChatPane({
         />
         <div className="mt-2 flex items-center justify-between gap-2">
           <div className="flex min-w-0 items-center gap-2">
+            <button
+              type="button"
+              onClick={() => fileInputRef.current?.click()}
+              disabled={streaming || pendingImages.length >= MAX_IMAGE_ATTACHMENTS}
+              className="shrink-0 rounded-md border border-gray-200 bg-white px-2.5 py-1.5 text-[11px] font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {t('library.copilot.attachImage')}
+            </button>
             <span className="truncate text-[11px] text-gray-400">
               {pendingImages.length > 0
                 ? pendingImages.length >= MAX_IMAGE_ATTACHMENTS
@@ -1593,7 +1616,7 @@ function ChatPane({
               <button
                 type="button"
                 onClick={() => onSend()}
-                disabled={(!input.trim() && pendingImages.length === 0) || !hasKey || cliAvailable === false}
+                disabled={(!input.trim() && pendingImages.length === 0) || !hasKey || providerHealth?.available === false}
                 className="rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 ➤ {t('library.copilot.send')}
@@ -1603,7 +1626,7 @@ function ChatPane({
                   key={action.labelKey}
                   type="button"
                   onClick={() => handleComposerAction(action)}
-                  disabled={!hasKey || cliAvailable === false}
+                  disabled={!hasKey || providerHealth?.available === false}
                   className="rounded-md bg-gray-900 px-3 py-1.5 text-xs font-medium text-white hover:bg-black disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   ➤ {t(`library.copilot.composerActions.${action.labelKey}`)}
