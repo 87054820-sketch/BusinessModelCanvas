@@ -1,0 +1,89 @@
+# Copilot Performance Diagnostics
+
+This document defines how to diagnose slow Auto Pilot / Copilot replies without logging secrets or full user content.
+
+## Latency chain
+
+A single turn is split into these phases:
+
+| Layer | Metric | Meaning |
+| --- | --- | --- |
+| Client | `keyResolveMs` | Time to read/decrypt the request-scoped Kimi key. |
+| Client | `contextFetchMs` | Time spent fetching library/case/project/canvas/story context before chat. |
+| Client | `baselineCaptureMs` | Time spent capturing project update baseline. |
+| Client | `responseHeaders` | Browser request start to `/copilot/chat` response headers. |
+| Client | `firstSseFrame` | Browser request start to first SSE frame, including `stream-open`. |
+| Client | `firstDelta` | Browser request start to first assistant delta visible to the reveal queue. |
+| Client | `networkDone` | Browser request start to final `done` SSE frame. |
+| Server | `preUpstreamDoneMs` | Request start to finished validation, memory context, and prompt build. |
+| Server | `firstDownstreamDeltaMs` | Request start to first server-to-client delta write. |
+| Server | `totalMs` | Full `/copilot/chat` handler duration. |
+| Provider | `upstreamHeaders` | Request start to Kimi response headers. |
+| Provider | `upstreamFirstFrame` | Request start to first upstream SSE/CLI frame. |
+| Provider | `upstreamFirstDelta` | Request start to first upstream assistant delta. |
+| Provider | `upstreamDone` | Request start to upstream completion. |
+
+All metrics are safe: they record durations, counts, lengths, provider, model, status, and request id only. They do not record API keys, message bodies, image data URLs, or full payloads.
+
+## Benchmark command
+
+Use a real Kimi key through an environment variable:
+
+```bash
+PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm benchmark:copilot -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com --runs 5
+```
+
+Optional project context scenario:
+
+```bash
+PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm benchmark:copilot -- --runs 5 --project-id <projectId>
+```
+
+The benchmark prints per-run request ids plus p50/p95 for:
+
+- `ttfbMs`
+- `ttftMs`
+- `totalMs`
+- `charsPerSec`
+
+## Initial baseline targets
+
+These are diagnostic targets, not hard production SLOs yet:
+
+| Scenario | Target |
+| --- | --- |
+| No context | TTFT < 8s |
+| Filtered library context | TTFT < 12s |
+| Project context | TTFT < 15s |
+| Any scenario | Server `preUpstreamDoneMs` should usually stay under 1s unless project context is large. |
+| Any scenario | If client `networkDone` is fast but visible completion is slow, inspect reveal queue behavior. |
+
+## Diagnosis decision tree
+
+1. **High `contextFetchMs`**
+   - Check whether the same attached context is fetched repeatedly.
+   - Prefer cached `attachedRef + lang + query` context.
+   - For project context, inspect canvas/story counts and active canvas/story options.
+
+2. **High `preUpstreamDoneMs` but low context fetch**
+   - Check memory profile JSON reads and prompt assembly.
+   - Inspect `systemPromptChars`, `latestUserPromptChars`, and `priorConversationChars`.
+
+3. **High `upstreamHeaders`**
+   - Kimi API connection or scheduling is slow.
+   - Compare p50/p95 and check whether CloudRun instance is warm.
+
+4. **High `upstreamFirstDelta` with normal `upstreamHeaders`**
+   - Model reasoning/prompt size is the likely bottleneck.
+   - Reduce attached context and prior conversation size.
+
+5. **High client `firstDelta` but normal provider first delta**
+   - Inspect server SSE forwarding, CloudRun/network buffering, and request id logs.
+
+6. **High visible completion after `networkDone`**
+   - Reveal pacing is the likely bottleneck.
+   - Large reveal queues use an accelerated interval to avoid artificial delay.
+
+## Request id workflow
+
+The browser reads `X-Request-Id` and the final SSE `done.requestId`. The Copilot drawer shows the short id in the status row and logs a safe `Copilot latency snapshot` to the browser console. Use that id to find the matching CloudRun structured log entry.

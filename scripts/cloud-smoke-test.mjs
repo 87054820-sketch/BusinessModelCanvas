@@ -60,6 +60,23 @@ async function main() {
     }
   });
 
+  await run('cloud-skill-pack', async () => {
+    const info = await fetchJson('/copilot/skill-pack/info');
+    assert(/^pingarden-skill-.+\.zip$/.test(info.filename ?? ''), `Unexpected skill filename: ${JSON.stringify(info)}`);
+    assert(Number.isInteger(info.sizeBytes) && info.sizeBytes > 10_000, `Unexpected skill size: ${JSON.stringify(info)}`);
+    assert(Array.isArray(info.supportedAgents) && info.supportedAgents.length > 0, 'Missing supported agents');
+
+    const res = await fetchWithTimeout(`${baseUrl}/copilot/skill-pack`, { method: 'GET' });
+    const contentType = res.headers.get('content-type') ?? '';
+    const disposition = res.headers.get('content-disposition') ?? '';
+    assert(res.ok, `/copilot/skill-pack returned HTTP ${res.status}`);
+    assert(contentType.includes('application/zip'), `Expected application/zip, got ${contentType}`);
+    assert(disposition.includes(info.filename), `Download filename mismatch: ${disposition}`);
+    const bytes = new Uint8Array(await res.arrayBuffer());
+    assert(bytes.length === info.sizeBytes, `Downloaded zip size mismatch: ${bytes.length} !== ${info.sizeBytes}`);
+    assert(bytes[0] === 0x50 && bytes[1] === 0x4b, 'Downloaded skill pack is not a zip file');
+  });
+
   await run('cloud-library-context-filter', async () => {
     const json = await fetchJson('/copilot/library-context?lang=zh&q=%E8%93%9D%E6%B5%B7%E6%88%98%E7%95%A5');
     const markdown = json.markdown ?? '';

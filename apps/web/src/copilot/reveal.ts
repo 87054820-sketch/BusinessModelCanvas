@@ -1,6 +1,8 @@
 export const REVEAL_INTERVAL_MS = 24;
+export const REVEAL_FAST_INTERVAL_MS = 8;
 export const REVEAL_MIN_CHUNK_SIZE = 120;
 export const REVEAL_TARGET_CHUNK_SIZE = 360;
+export const REVEAL_LARGE_QUEUE_CHARS = 2400;
 
 export function takeRevealChunk(text: string): string {
   if (text.length <= REVEAL_TARGET_CHUNK_SIZE) return text;
@@ -22,6 +24,10 @@ export function takeRevealChunk(text: string): string {
   if (sentenceBoundary >= REVEAL_MIN_CHUNK_SIZE) return text.slice(0, sentenceBoundary + 1);
 
   return text.slice(0, REVEAL_TARGET_CHUNK_SIZE);
+}
+
+export function revealDelayMs(remainingChars: number): number {
+  return remainingChars > REVEAL_LARGE_QUEUE_CHARS ? REVEAL_FAST_INTERVAL_MS : REVEAL_INTERVAL_MS;
 }
 
 export function splitStreamingBlocks(content: string): string[] {

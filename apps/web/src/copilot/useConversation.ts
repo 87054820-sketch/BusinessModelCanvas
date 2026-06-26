@@ -158,11 +158,19 @@ export function useConversation(displayName: string | undefined) {
     [key],
   );
 
+  const popLast = useCallback((count = 1) => {
+    if (count <= 0) return;
+    const prev = getMessages(key);
+    if (prev.length === 0) return;
+    sessionConversations.set(key, prev.slice(0, Math.max(0, prev.length - count)));
+    emit(key);
+  }, [key]);
+
   const clear = useCallback(() => {
     clearPersistedConversations();
     sessionConversations.set(key, []);
     emit(key);
   }, [key]);
 
-  return { messages, append, updateLast, clear };
+  return { messages, append, updateLast, popLast, clear };
 }

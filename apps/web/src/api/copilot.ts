@@ -6,6 +6,8 @@ import type {
   CopilotUserProfile,
   Lang,
 } from '@pingarden/shared';
+import type { CopilotClientTimingEvent, CopilotLatencySnapshot } from '../copilot/performance';
+import { nowMs, roundMs } from '../copilot/performance';
 import { ensureOk } from './errors';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
@@ -65,10 +67,19 @@ export interface CopilotStreamRequest {
   lang?: Lang;
 }
 
+export interface CopilotStreamDonePayload {
+  requestId?: string;
+  timings?: Record<string, number>;
+  providerTimings?: Record<string, number>;
+}
+
 export interface CopilotStreamCallbacks {
   onDelta(delta: string): void;
-  onDone(): void;
-  onError(message: string): void;
+  onDone(payload?: CopilotStreamDonePayload): void;
+  onError(message: string, requestId?: string): void;
+  onRequestId?(requestId: string): void;
+  onTiming?(event: CopilotClientTimingEvent): void;
+  onSnapshot?(snapshot: CopilotLatencySnapshot): void;
 }
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
@@ -77,13 +88,20 @@ async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> 
   return (await res.json()) as T;
 }
 
-export function normalizeCopilotFetchError(err: unknown): string {
-  if (err instanceof DOMException && err.name === 'AbortError') return '请求已取消。';
-  const message = err instanceof Error ? err.message : String(err);
+export function normalizeCopilotRuntimeError(input: unknown): string {
+  const message = extractCopilotErrorMessage(input)?.trim() || String(input).trim();
   if (/load failed|failed to fetch|networkerror|internet connection|network request failed|fetch.*failed/i.test(message)) {
     return '移动端网络连接中断或当前 WebView 拦截了请求，请检查网络后重试。';
   }
+  if (/message at position \d+ with role ['"]assistant['"] must not be empty/i.test(message)) {
+    return '上一轮 AI 回复没有成功完成，请重试上一条。';
+  }
   return message;
+}
+
+export function normalizeCopilotFetchError(err: unknown): string {
+  if (err instanceof DOMException && err.name === 'AbortError') return '请求已取消。';
+  return normalizeCopilotRuntimeError(err);
 }
 
 function normalizeCopilotStreamError(status: number, body: string): string {
@@ -94,14 +112,26 @@ function normalizeCopilotStreamError(status: number, body: string): string {
     }
     return `云端 AI 请求失败（HTTP ${status}），请稍后重试。`;
   }
-  try {
-    const parsed = JSON.parse(text) as { error?: unknown; message?: unknown };
-    const message = typeof parsed.error === 'string' ? parsed.error : parsed.message;
-    if (typeof message === 'string' && message.trim()) return message.trim();
-  } catch {
-    /* not JSON */
+  return normalizeCopilotRuntimeError(text.slice(0, 400) || `HTTP ${status}`);
+}
+
+function extractCopilotErrorMessage(input: unknown): string | null {
+  if (typeof input === 'string') {
+    const trimmed = input.trim();
+    if (!trimmed) return null;
+    try {
+      return extractCopilotErrorMessage(JSON.parse(trimmed)) ?? trimmed;
+    } catch {
+      return trimmed;
+    }
   }
-  return text.slice(0, 400) || `HTTP ${status}`;
+  if (!input || typeof input !== 'object') return null;
+  const record = input as Record<string, unknown>;
+  return (
+    extractCopilotErrorMessage(record.message) ??
+    extractCopilotErrorMessage(record.error) ??
+    (typeof record.type === 'string' ? null : null)
+  );
 }
 
 function isHtmlResponse(text: string): boolean {
@@ -274,6 +304,21 @@ export const copilotApi = {
    */
   streamChat(req: CopilotStreamRequest, cb: CopilotStreamCallbacks): () => void {
     const abort = new AbortController();
+    const startedAt = nowMs();
+    const clientTimings: Record<string, number> = {};
+    let requestId: string | undefined;
+    const mark = (phase: string, details?: Record<string, string | number | boolean | null>) => {
+      const elapsedMs = roundMs(nowMs() - startedAt);
+      clientTimings[phase] = elapsedMs;
+      cb.onTiming?.({ phase, elapsedMs, requestId, details });
+    };
+
+    mark('requestStart', {
+      messageCount: req.messages.length,
+      attachedContextChars: req.attachedContext?.length ?? 0,
+      attachmentCount: req.messages.reduce((total, message) => total + (message.imageAttachments?.length ?? 0), 0),
+    });
+
     void (async () => {
       try {
         const res = await fetch(`${BASE}/copilot/chat`, {
@@ -285,6 +330,9 @@ export const copilotApi = {
           body: JSON.stringify(req),
           signal: abort.signal,
         });
+        requestId = res.headers.get('x-request-id') ?? undefined;
+        if (requestId) cb.onRequestId?.(requestId);
+        mark('responseHeaders', { status: res.status });
         if (!res.ok || !res.body) {
           let bodyText = '';
           try {
@@ -292,7 +340,7 @@ export const copilotApi = {
           } catch {
             /* best-effort */
           }
-          cb.onError(normalizeCopilotStreamError(res.status, bodyText));
+          cb.onError(normalizeCopilotStreamError(res.status, bodyText), requestId);
           return;
         }
 
@@ -300,6 +348,7 @@ export const copilotApi = {
         const decoder = new TextDecoder('utf-8');
         let buf = '';
         let saw = false;
+        let sawFrame = false;
 
         while (true) {
           const { value, done } = await reader.read();
@@ -309,21 +358,34 @@ export const copilotApi = {
           const parts = normalised.split('\n\n');
           buf = parts.pop() ?? '';
           for (const frame of parts) {
+            if (!sawFrame) {
+              sawFrame = true;
+              mark('firstSseFrame');
+            }
             for (const line of frame.split('\n')) {
               if (!line.startsWith('data:')) continue;
               const payload = line.slice(5).trim();
               if (!payload) continue;
               try {
-                const parsed = JSON.parse(payload);
+                const parsed = JSON.parse(payload) as CopilotStreamDonePayload & { error?: string; delta?: string; done?: boolean };
                 if (typeof parsed.error === 'string') {
-                  cb.onError(parsed.error);
+                  mark('streamError');
+                  cb.onError(parsed.error, parsed.requestId ?? requestId);
                   return;
                 }
                 if (parsed.done === true) {
-                  cb.onDone();
+                  mark('networkDone');
+                  cb.onSnapshot?.({
+                    requestId: parsed.requestId ?? requestId,
+                    client: { ...clientTimings },
+                    server: parsed.timings,
+                    provider: parsed.providerTimings,
+                  });
+                  cb.onDone(parsed);
                   return;
                 }
                 if (typeof parsed.delta === 'string') {
+                  if (!saw) mark('firstDelta', { deltaChars: parsed.delta.length });
                   saw = true;
                   cb.onDelta(parsed.delta);
                 }
@@ -333,11 +395,14 @@ export const copilotApi = {
             }
           }
         }
-        if (saw) cb.onDone();
-        else cb.onError('Empty response from kimi');
+        if (saw) {
+          mark('networkDone');
+          cb.onSnapshot?.({ requestId, client: { ...clientTimings } });
+          cb.onDone({ requestId });
+        } else cb.onError('Empty response from kimi', requestId);
       } catch (err) {
         if (err instanceof DOMException && err.name === 'AbortError') return;
-        cb.onError(err instanceof Error ? err.message : String(err));
+        cb.onError(normalizeCopilotFetchError(err), requestId);
       }
     })();
     return () => abort.abort();

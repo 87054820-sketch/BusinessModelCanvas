@@ -18,9 +18,11 @@
     "build:desktop": "bash ./scripts/package-mac.sh",
     "dist": "pnpm build:desktop",
     "package:mac": "bash ./scripts/package-mac.sh",
+    "build:skill-pack": "pnpm --filter @pingarden/cli run build && node apps/cli/dist/index.js skill install --local && node scripts/build-skill-pack.mjs",
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",
     "smoke:cloud": "node scripts/cloud-smoke-test.mjs",
+    "benchmark:copilot": "node scripts/copilot-latency-benchmark.mjs",
     "smoke:mobile": "node scripts/mobile-ui-smoke.mjs",
     "lint": "pnpm -r run lint"
   },

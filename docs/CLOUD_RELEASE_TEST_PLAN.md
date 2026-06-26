@@ -10,6 +10,7 @@
 - nginx / CloudRun HTML 错误页直接显示在 Copilot 聊天区。
 - 前端资源没有更新，导致按钮或交互缺失，例如 `+ 图片` 上传按钮不可见。
 - 动态 lazy chunk 与入口 JS 版本错配，导致 `Failed to fetch dynamically imported module`。
+- AI Strategy Skill Pack 没有打进云端镜像，导致线上无法单独下载学习包。
 - Kimi API Key 被误保存到服务端或错误日志里。
 
 ## 分层测试门禁
@@ -77,6 +78,7 @@ PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm smoke:cloud -- --url https://pingarden-
 | cloud-home-html | `GET /` | 包含 `PinGarden`，不是 5xx HTML |
 | cloud-static-assets | 首页引用的 JS/CSS | 全部 `200` |
 | cloud-dynamic-chunks | 首页入口 JS 中引用的 lazy chunks | 全部 `200`，不得返回 HTML；覆盖 `ProjectWorkspacePage-*.js` 加载失败 |
+| cloud-skill-pack | `GET /copilot/skill-pack/info` 与 `/copilot/skill-pack` | 返回 zip 元数据与可下载 skill 包；skill 可独立用于战略学习/顾问模式 |
 | cloud-chat-sse-invalid-key | 无效 key 调 `/copilot/chat` | 返回 SSE，包含 `data:` 或 SSE comment；不得返回 nginx HTML 504 |
 | cloud-no-key-leak | chat 错误响应 | 不包含原始 API Key |
 | cloud-real-kimi-optional | 真实 key 调 `/copilot/test-key` 和带裁剪策略库上下文的 `/copilot/chat` | 在超时内收到 `ok` 与至少一个 `delta` |
@@ -112,6 +114,7 @@ pnpm smoke:mobile -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudba
 | 图片建项目 | 上传 1 张小图 + 创建项目 | 图片进入请求；若模型成功，返回 projectDraft；若失败，错误可读 |
 | 错误 key | `sk-test` | 返回 invalid auth 错误，不泄漏 key |
 | 超时 | 人为缩短 `PINGARDEN_KIMI_HTTP_TIMEOUT_MS` | 前端显示“云端 AI 请求超时” |
+| 性能基准 | `PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm benchmark:copilot -- --runs 5` | 输出每轮 requestId、TTFB、TTFT、total、chars/sec 和 p50/p95；慢请求可用 requestId 对照 CloudRun 日志 |
 
 ## 发布流程建议
 

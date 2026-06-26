@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { CopilotPlaybookDescriptor } from '@pingarden/shared';
 import { copilotApi, type SkillPackInfo } from '../api/copilot';
+import { ApiError } from '../api/errors';
 import { CopilotMemoryReviewPanel } from './CopilotMemoryReviewPanel';
 import en from '../i18n/en.json';
 import zh from '../i18n/zh.json';
@@ -24,7 +25,7 @@ export function SkillPackPane({ displayName }: { displayName: string }) {
   const { t, i18n } = useTranslation();
   const [info, setInfo] = useState<SkillPackInfo | null>(null);
   const [playbooks, setPlaybooks] = useState<CopilotPlaybookDescriptor[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<Error | null>(null);
   const [downloading, setDownloading] = useState(false);
   const [copiedPrompt, setCopiedPrompt] = useState(false);
 
@@ -42,7 +43,7 @@ export function SkillPackPane({ displayName }: { displayName: string }) {
       })
       .catch((err) => {
         if (cancelled) return;
-        setError(err instanceof Error ? err.message : String(err));
+        setError(err instanceof Error ? err : new Error(String(err)));
       });
     return () => {
       cancelled = true;
@@ -74,12 +75,15 @@ export function SkillPackPane({ displayName }: { displayName: string }) {
   }
 
   if (error) {
+    const shouldShowRawError = !(error instanceof ApiError && error.code === 'SKILL_PACK_NOT_BUILT');
     return (
       <div className="px-4 py-5">
-        <div className="rounded-lg border border-amber-100 bg-amber-50/60 px-3 py-3 text-[12px] text-amber-900">
+        <div className="rounded-lg border border-amber-100 bg-amber-50/60 px-3 py-3 text-[12px] leading-relaxed text-amber-900">
           {t('library.copilot.skillPack.notReady')}
         </div>
-        <p className="mt-2 text-[10px] text-gray-400 break-words">{error}</p>
+        {shouldShowRawError && (
+          <p className="mt-2 text-[10px] text-gray-400 break-words">{error.message}</p>
+        )}
       </div>
     );
   }

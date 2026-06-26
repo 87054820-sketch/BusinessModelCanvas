@@ -64,8 +64,21 @@ export class KimiCliProvider implements CopilotAiProvider {
   }
 
   async *streamChat(input: CopilotAiStreamInput) {
+    input.metrics?.({
+      name: 'upstreamRequestStart',
+      atMs: Date.now(),
+      details: {
+        provider: 'kimi-cli',
+        model: MODEL,
+        messageCount: input.conversation.length + 2,
+        systemPromptChars: input.systemPromptText.length,
+        latestUserChars: input.latestUserMsg.length,
+      },
+    });
+
     try {
       await writeKimiConfig(input.apiKey);
+      input.metrics?.({ name: 'cliConfigWritten', atMs: Date.now() });
     } catch (err) {
       yield { error: err instanceof Error ? err.message : 'Failed to write Kimi config' };
       return;
@@ -73,6 +86,7 @@ export class KimiCliProvider implements CopilotAiProvider {
 
     try {
       resolveKimiBinary();
+      input.metrics?.({ name: 'cliBinaryResolved', atMs: Date.now() });
     } catch (err) {
       if (err instanceof KimiBinaryNotFoundError) {
         yield { error: err.message };
@@ -86,6 +100,7 @@ export class KimiCliProvider implements CopilotAiProvider {
       conversation: input.conversation,
       latestUserMsg: input.latestUserMsg,
       signal: input.signal,
+      metrics: input.metrics,
     });
   }
 }

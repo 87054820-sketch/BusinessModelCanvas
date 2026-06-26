@@ -793,8 +793,8 @@
         "skillPack": "📦 Skill pack"
       },
       "skillPack": {
-        "heading": "Use PinGarden in your own AI tool",
-        "intro": "Download the skill pack and paste one install prompt into your AI agent — Claude, Code Cursor, Codex, CodeBuddy, WorkBuddy, or Other. The agent extracts the zip, picks the right install path, and verifies the PinGarden CLI for you.",
+        "heading": "PinGarden AI Strategy Skill Pack",
+        "intro": "Download the skill pack and use it directly in Claude, Code Cursor, Codex, CodeBuddy, WorkBuddy, or another AI agent. Even without the PinGarden app it works as a strategy-learning and business-canvas advisor; with the Mac app and CLI installed it can also read and write your local canvases.",
         "step1": "Step 1 · Download",
         "step2": "Step 2 · Copy install prompt",
         "download": "Download ({{size}})",
@@ -804,11 +804,11 @@
         "copyPrompt": "Copy prompt",
         "copied": "Copied",
         "supportedAgentsLabel": "Works with",
-        "bundledPlaybooksTitle": "Built-in playbooks",
-        "bundledPlaybooksIntro": "These read-only playbooks are bundled with the app. Your confirmed local preferences can override how Copilot uses them.",
-        "installPrompt": "I just downloaded the PinGarden Skill Pack: {{filename}} (version {{version}}).\n\nPlease help me install it and set up its self-iteration loop:\n\n1. Detect which AI coding agent you are (Claude, Code Cursor, Codex, CodeBuddy, WorkBuddy, or Other) and extract the zip into that agent's standard skills / rules / workflows directory. Common locations:\n   - Claude: ~/.claude/skills/\n   - Code Cursor: ~/.cursor/rules/\n   - Codex: ~/.codex/\n   - CodeBuddy / WorkBuddy: their official skill install path\n   - Other: read INSTALL.md inside the zip\n\n2. Verify the PinGarden CLI is on PATH by running `pingarden doctor`. If it's missing, tell me to launch the PinGarden desktop app first (the CLI ships inside the app's resources).\n\n3. Run `pingarden skill install --dry-run --json` to check whether the installed skill should update. If `data.wouldChange` is true, run `pingarden skill install`, then run `pingarden doctor` again.\n\n4. Once installed, briefly summarise what the PinGarden skill enables, how I can invoke it here, and remind me that after PinGarden app upgrades or library changes I can ask you to repeat step 3 to self-iterate.",
-        "installMdHint": "If your AI tool isn't listed above, the zip ships with an INSTALL.md covering manual setup.",
-        "notReady": "Skill pack isn't built yet — run `pnpm package:mac` to produce one."
+        "bundledPlaybooksTitle": "Strategy methods you can learn from",
+        "bundledPlaybooksIntro": "These playbooks can guide the AI's strategy coaching. Without the PinGarden app it stays in learning/advisor mode; only a connected app can enable canvas reads and writes.",
+        "installPrompt": "I just downloaded the PinGarden AI Strategy Skill Pack: {{filename}} (version {{version}}).\n\nPlease install it and use it in two modes:\n\n1. Detect which AI coding agent you are (Claude, Code Cursor, Codex, CodeBuddy, WorkBuddy, or Other) and extract the zip into that agent's standard skills / rules / workflows directory. Common locations:\n   - Claude: ~/.claude/skills/\n   - Code Cursor: ~/.cursor/rules/\n   - Codex: ~/.codex/\n   - CodeBuddy / WorkBuddy: their official skill install path\n   - Other: read INSTALL.md inside the zip\n\n2. If the PinGarden app or `pingarden` CLI is not available, use learning/advisor mode: explain strategy canvases, coach me through BMC/VPC/JTBD/customer journeys, analyse cases, and suggest experiments, but do not claim you can write into the app.\n\n3. If I have installed and launched the PinGarden Mac app, run `pingarden doctor` to verify the CLI and local server. Only after that, switch to connected app mode where you may read/write local projects, canvases, snapshots, and case forks.\n\n4. After installation, briefly explain what each mode enables and remind me that after PinGarden app or library upgrades I can ask you to re-check and update the skill.",
+        "installMdHint": "If your AI tool is not listed above, INSTALL.md inside the zip provides a generic setup path; you can still use the pack for strategy learning without the PinGarden app.",
+        "notReady": "The skill pack was not bundled in this build. Run `pnpm build:skill-pack` before Mac packaging or cloud deployment."
       }
     }
   }

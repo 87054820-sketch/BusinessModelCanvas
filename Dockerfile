@@ -16,6 +16,7 @@ COPY apps/web apps/web
 COPY packages/shared packages/shared
 COPY packages/canvases packages/canvases
 COPY packages/case-library packages/case-library
+COPY apps/cli/build/skill apps/cli/build/skill
 
 RUN pnpm --filter @pingarden/shared run build \
   && pnpm --filter @pingarden/web run build \
@@ -28,6 +29,7 @@ ENV NODE_ENV=production \
   WEB_DIST_DIR=/app/apps/web/dist \
   CANVAS_DEFS_DIR=/app/packages/canvases \
   CASE_LIBRARY_DIR=/app/packages/case-library \
+  SKILL_PACK_DIR=/app/apps/cli/build/skill \
   PINGARDEN_AI_PROVIDER=kimi-http \
   PINGARDEN_KIMI_HTTP_TIMEOUT_MS=120000
 

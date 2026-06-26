@@ -12,7 +12,7 @@ import {
 } from '@pingarden/shared';
 import type { FederatedStorage } from '../storage/FederatedStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
-import type { CopilotAiChatMessage, CopilotAiProvider } from '../llm/aiProvider.js';
+import type { CopilotAiChatMessage, CopilotAiMetricEvent, CopilotAiProvider } from '../llm/aiProvider.js';
 import { KimiCliProvider } from '../llm/kimiCliProvider.js';
 import { KimiHttpProvider } from '../llm/kimiHttpProvider.js';
 import { buildBundledPlaybookPrompt } from '../copilot/bundledPlaybooks.js';
@@ -21,6 +21,7 @@ import { buildCopilotProtocol, type CopilotProtocolIntent } from '../copilot/pro
 import { CopilotUserProfileStore } from '../copilot/userProfileStore.js';
 import { config } from '../config.js';
 import { getIdentity } from './identity.js';
+import { stripEmptyAssistantMessages } from './copilotMessages.js';
 
 const STICKIES_KEY = 'stickies';
 const ACCEPTED_IMAGE_TYPES = COPILOT_ACCEPTED_IMAGE_TYPES;
@@ -124,20 +125,66 @@ export function registerCopilotRoutes(
   });
 
   app.post('/copilot/chat', async (req, reply) => {
+    const routeStartedAt = Date.now();
+    const timings: Record<string, number> = {};
+    const providerTimings: Record<string, number> = {};
+    const providerDetails: Record<string, Record<string, string | number | boolean | null>> = {};
+    const mark = (name: string) => {
+      timings[name] = Date.now() - routeStartedAt;
+    };
+    const recordProviderMetric = (event: CopilotAiMetricEvent) => {
+      providerTimings[event.name] = event.atMs - routeStartedAt;
+      if (event.details) providerDetails[event.name] = event.details;
+    };
+
+    const identity = getIdentity(req);
+    mark('identityMs');
     const parse = ChatRequestSchema.safeParse(req.body);
+    mark('requestParsedMs');
     if (!parse.success) {
+      req.log.warn(
+        {
+          route: '/copilot/chat',
+          displayName: identity.displayName,
+          issues: parse.error.issues,
+        },
+        'Copilot chat rejected: invalid request body',
+      );
       return reply.code(400).send({
         error: 'Invalid request body',
         details: parse.error.issues,
       });
     }
+
     const body = parse.data;
+    const sanitizedMessages = stripEmptyAssistantMessages(body.messages);
+    const strippedEmptyAssistantCount = body.messages.length - sanitizedMessages.length;
+    const attachmentCount = sanitizedMessages.reduce(
+      (total, message) => total + (message.imageAttachments?.length ?? 0),
+      0,
+    );
+    mark('messagesPreparedMs');
+    const requestLog = req.log.child({
+      route: '/copilot/chat',
+      displayName: identity.displayName,
+      provider: config.aiProvider,
+      intent: body.intent ?? null,
+      lang: body.lang ?? null,
+      messageCount: body.messages.length,
+      sanitizedMessageCount: sanitizedMessages.length,
+      strippedEmptyAssistantCount,
+      attachmentCount,
+      attachedContextChars: body.attachedContext?.length ?? 0,
+    });
+
     const attachmentError = validateImageAttachments(
-      body.messages.flatMap((msg) => msg.imageAttachments ?? []),
+      sanitizedMessages.flatMap((msg) => msg.imageAttachments ?? []),
     );
     if (attachmentError) {
+      requestLog.warn({ error: attachmentError, timings }, 'Copilot chat rejected: invalid attachments');
       return reply.code(400).send({ error: attachmentError });
     }
+    mark('attachmentsValidatedMs');
 
     // Hijack the reply so Fastify won't try to serialise a body on our
     // behalf — we write the SSE stream to reply.raw directly.
@@ -148,9 +195,12 @@ export function registerCopilotRoutes(
       'Cache-Control': 'no-cache, no-transform',
       Connection: 'keep-alive',
       'X-Accel-Buffering': 'no',
+      'X-Request-Id': req.id,
     });
     raw.flushHeaders?.();
+    mark('responseHeadersFlushedMs');
     writeSseComment(raw, 'stream-open');
+    mark('streamOpenCommentMs');
 
     const heartbeat = setInterval(() => {
       if (!raw.writableEnded) writeSseComment(raw, 'heartbeat');
@@ -159,58 +209,147 @@ export function registerCopilotRoutes(
     // Watch the RESPONSE stream for client disconnect (not req.raw — see
     // the long comment in the previous round's code for why).
     const abort = new AbortController();
+    let clientDisconnected = false;
     raw.on('close', () => {
-      if (!raw.writableEnded) abort.abort();
+      if (!raw.writableEnded) {
+        clientDisconnected = true;
+        abort.abort();
+      }
     });
 
     // Split messages[] into "prior conversation" + "latest user msg".
     // The renderer always appends a final user turn; we expect that.
-    const lastIdx = body.messages.length - 1;
-    const last = body.messages[lastIdx]!;
-    if (last.role !== 'user') {
-      // Defensive — surface as SSE error so the renderer sees it.
-      writeSseData(raw, { error: 'Last message must be from user' });
+    const lastIdx = sanitizedMessages.length - 1;
+    const last = sanitizedMessages[lastIdx];
+    if (!last || last.role !== 'user') {
+      requestLog.warn({ lastRole: last?.role ?? null, timings }, 'Copilot chat rejected: last message must be user');
+      writeSseData(raw, { error: 'Last message must be from user', requestId: req.id });
       raw.end();
       clearInterval(heartbeat);
       return;
     }
-    const prior: CopilotAiChatMessage[] = body.messages.slice(0, lastIdx).map((m) => ({
+
+    const prior: CopilotAiChatMessage[] = sanitizedMessages.slice(0, lastIdx).map((m) => ({
       role: m.role,
       content: m.content,
     }));
+    const startedAt = Date.now();
+    let deltaChunks = 0;
+    let deltaChars = 0;
 
-    const identity = getIdentity(req);
-    const userProfileContext = await profileStore.buildPromptContext(identity.displayName);
-    const systemPromptText = buildSystemPrompt(body.attachedContext, userProfileContext);
-    const latestUserMsg = buildLatestUserMessage(last.content, last.imageAttachments ?? [], body.intent, body.lang);
+    requestLog.info(
+      {
+        priorMessageCount: prior.length,
+        latestUserChars: last.content.length,
+      },
+      'Copilot chat stream started',
+    );
 
     try {
+      const memoryStartedAt = Date.now();
+      const userProfileContext = await profileStore.buildPromptContext(identity.displayName);
+      timings.memoryPromptContextMs = Date.now() - memoryStartedAt;
+      mark('memoryPromptContextDoneMs');
+
+      const promptStartedAt = Date.now();
+      const systemPromptText = buildSystemPrompt(body.attachedContext, userProfileContext);
+      const latestUserMsg = buildLatestUserMessage(last.content, last.imageAttachments ?? [], body.intent, body.lang);
+      timings.promptBuildMs = Date.now() - promptStartedAt;
+      timings.systemPromptChars = systemPromptText.length;
+      timings.latestUserPromptChars = latestUserMsg.length;
+      timings.priorConversationChars = prior.reduce((total, message) => total + message.content.length, 0);
+      mark('preUpstreamDoneMs');
+
       for await (const chunk of aiProvider.streamChat({
         apiKey: body.apiKey,
         systemPromptText,
         conversation: prior,
         latestUserMsg,
         signal: abort.signal,
+        metrics: recordProviderMetric,
       })) {
         if (raw.writableEnded) break;
         if ('error' in chunk) {
-          writeSseData(raw, { error: chunk.error });
+          requestLog.warn(
+            {
+              durationMs: Date.now() - startedAt,
+              totalMs: Date.now() - routeStartedAt,
+              deltaChunks,
+              deltaChars,
+              upstreamError: chunk.error,
+              timings,
+              providerTimings,
+              providerDetails,
+            },
+            'Copilot chat upstream returned error',
+          );
+          writeSseData(raw, { error: chunk.error, requestId: req.id });
           raw.end();
           return;
         }
         if (chunk.delta) {
+          if (deltaChunks === 0) mark('firstDownstreamDeltaMs');
+          deltaChunks += 1;
+          deltaChars += chunk.delta.length;
           writeSseData(raw, { delta: chunk.delta });
         }
       }
+
       if (!raw.writableEnded) {
-        writeSseData(raw, { done: true });
+        const totalMs = Date.now() - routeStartedAt;
+        timings.totalMs = totalMs;
+        writeSseData(raw, {
+          done: true,
+          requestId: req.id,
+          timings,
+          providerTimings,
+        });
         raw.end();
+        requestLog.info(
+          {
+            durationMs: Date.now() - startedAt,
+            totalMs,
+            deltaChunks,
+            deltaChars,
+            timings,
+            providerTimings,
+            providerDetails,
+          },
+          'Copilot chat stream completed',
+        );
       }
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Unknown error';
-      app.log.warn({ err: msg }, 'Copilot chat stream failed');
+      if (clientDisconnected || abort.signal.aborted) {
+        requestLog.info(
+          {
+            durationMs: Date.now() - startedAt,
+            totalMs: Date.now() - routeStartedAt,
+            deltaChunks,
+            deltaChars,
+            timings,
+            providerTimings,
+            providerDetails,
+          },
+          'Copilot chat stream aborted by client',
+        );
+        return;
+      }
+      requestLog.warn(
+        {
+          durationMs: Date.now() - startedAt,
+          totalMs: Date.now() - routeStartedAt,
+          deltaChunks,
+          deltaChars,
+          err: msg,
+          timings,
+          providerTimings,
+          providerDetails,
+        },
+        'Copilot chat stream failed',
+      );
       if (!raw.writableEnded) {
-        writeSseData(raw, { error: msg });
+        writeSseData(raw, { error: msg, requestId: req.id });
         raw.end();
       }
     } finally {

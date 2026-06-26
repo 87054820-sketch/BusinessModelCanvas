@@ -27,10 +27,13 @@ import {
   type StrategyFramework,
 } from '@pingarden/shared';
 import { copilotApi, type CopilotIntent, type CopilotProviderHealth } from '../api/copilot';
+import type { CopilotLatencySnapshot } from '../copilot/performance';
+import { nowMs, roundMs, safeTimingDetails } from '../copilot/performance';
 import { api, type CanvasDefSummary } from '../api/client';
 import { storiesApi } from '../api/stories';
 import { maybeConsolidateCopilotMemory } from '../copilot/memoryConsolidation';
-import { REVEAL_INTERVAL_MS, splitStreamingBlocks, takeRevealChunk } from '../copilot/reveal';
+import { isEmptyAssistantMessage, stripEmptyAssistantMessages } from '../copilot/chatMessages';
+import { revealDelayMs, splitStreamingBlocks, takeRevealChunk } from '../copilot/reveal';
 import { useKeyConfig } from '../copilot/useKeyConfig';
 import {
   useConversation,
@@ -128,6 +131,8 @@ const MAX_IMAGE_BYTES = COPILOT_MAX_IMAGE_BYTES;
 const PREVIEW_IMAGE_MAX_BYTES = 64 * 1024;
 const COPILOT_PROGRESS_STEP_COUNT = 4;
 const COPILOT_PROGRESS_INTERVAL_MS = 2200;
+const ATTACHED_CONTEXT_CACHE_LIMIT = 20;
+const attachedContextCache = new Map<string, { markdown: string }>();
 
 /**
  * Right-side slide-over Copilot panel. ~420px wide, full window height.
@@ -170,6 +175,8 @@ export function CopilotDrawer({
   const [streaming, setStreaming] = useState(false);
   const [streamProgressIndex, setStreamProgressIndex] = useState(0);
   const [error, setError] = useState<string | null>(null);
+  const [latestCopilotRequestId, setLatestCopilotRequestId] = useState<string | null>(null);
+  const [latestLatencySnapshot, setLatestLatencySnapshot] = useState<CopilotLatencySnapshot | null>(null);
   const [providerHealth, setProviderHealth] = useState<CopilotProviderHealth | null>(null);
   const [suggestionsDismissed, setSuggestionsDismissed] = useState(false);
   const [suggestionsCollapsed, setSuggestionsCollapsed] = useState(false);
@@ -389,7 +396,7 @@ export function CopilotDrawer({
 
     revealQueueRef.current = revealQueueRef.current.slice(chunk.length);
     conv.updateLast((msg) => ({ ...msg, content: msg.content + chunk }));
-    revealTimerRef.current = window.setTimeout(revealNextChunk, REVEAL_INTERVAL_MS);
+    revealTimerRef.current = window.setTimeout(revealNextChunk, revealDelayMs(revealQueueRef.current.length));
   }
 
   function enqueueAssistantDelta(delta: string) {
@@ -413,6 +420,11 @@ export function CopilotDrawer({
   }
 
   async function handleSend(overridePrompt?: string, options?: SendOptions) {
+    const turnStartedAt = nowMs();
+    const prepTimings: Record<string, number> = {};
+    const markPrep = (phase: string) => {
+      prepTimings[phase] = roundMs(nowMs() - turnStartedAt);
+    };
     const trimmed = (overridePrompt ?? input).trim();
     const imagesForTurn = overridePrompt && !options?.includePendingImages ? [] : pendingImages;
     const isImageOnlyProjectCreation =
@@ -421,17 +433,38 @@ export function CopilotDrawer({
     if ((!trimmed && imagesForTurn.length === 0) || streaming) return;
     const messageText = trimmed || t(`library.copilot.modeHints.${copilotMode}.imageOnlyPrompt`);
     setError(null);
+    setLatestCopilotRequestId(null);
+    setLatestLatencySnapshot(null);
+    markPrep('inputPrepared');
 
     if (providerHealth?.available === false) {
       setError(providerHealth.message ?? t(providerHealth.provider === 'kimi-cli' ? 'library.copilot.cliMissing' : 'library.copilot.providerUnavailable'));
       return;
     }
+    const keyStartedAt = nowMs();
     const apiKey = await config.resolveKey();
+    prepTimings.keyResolveMs = roundMs(nowMs() - keyStartedAt);
+    markPrep('keyResolved');
     if (!apiKey) {
       setError(t('library.copilot.noKeyConfigured'));
       setSettingsOpen(true);
       return;
     }
+
+    const messagesBeforeTurn = isEmptyAssistantMessage(conv.messages.at(-1)) ? conv.messages.slice(0, -1) : conv.messages;
+    if (messagesBeforeTurn.length !== conv.messages.length) conv.popLast();
+    const previousMessages = stripEmptyAssistantMessages(messagesBeforeTurn);
+    conv.append({
+      role: 'user',
+      content: messageText,
+      ...(attachedRef ? { attachedRef } : {}),
+      ...(imagesForTurn.length > 0
+        ? { imageAttachments: imagesForTurn.map(toConversationImageAttachment) }
+        : {}),
+    });
+    setInput('');
+    if (!overridePrompt || options?.includePendingImages) setPendingImages([]);
+    markPrep('userMessageShown');
 
     // Fetch attached context on the first turn for this exact entry.
     // Free-form creation from the empty project entry skips library context;
@@ -448,11 +481,15 @@ export function CopilotDrawer({
         ? false
         : options?.forceContext === true || attachedRef === null || isFirstTurnWithThisAttached);
     if (shouldFetchContext) {
+      const contextStartedAt = nowMs();
       try {
-        const result = await fetchAttachedContext(attachedRef, lang, messageText);
+        const result = await fetchAttachedContextCached(attachedRef, lang, messageText);
         contextMd = result.markdown;
       } catch {
         contextMd = undefined;
+      } finally {
+        prepTimings.contextFetchMs = roundMs(nowMs() - contextStartedAt);
+        markPrep('contextReady');
       }
     }
 
@@ -460,16 +497,20 @@ export function CopilotDrawer({
     const activeProjectId = options?.projectIdOverride ?? projectIdFromAttachedRef(attachedRef);
     let updateBaseline: CopilotUpdateBaseline | undefined;
     if ((inferredIntent === 'project-update' || inferredIntent === 'apply-learning-to-project') && activeProjectId && identity?.displayName) {
+      const baselineStartedAt = nowMs();
       try {
         updateBaseline = await captureUpdateBaseline(activeProjectId, identity.displayName);
       } catch {
         updateBaseline = undefined;
+      } finally {
+        prepTimings.baselineCaptureMs = roundMs(nowMs() - baselineStartedAt);
+        markPrep('baselineReady');
       }
     }
 
     // Outbound: full conversation history + the new user turn.
     const outbound = [
-      ...conv.messages.map((m) => ({ role: m.role, content: m.content })),
+      ...previousMessages.map((m) => ({ role: m.role, content: m.content })),
       {
         role: 'user' as const,
         content: messageText,
@@ -479,16 +520,7 @@ export function CopilotDrawer({
       },
     ];
 
-    conv.append({
-      role: 'user',
-      content: messageText,
-      ...(attachedRef ? { attachedRef } : {}),
-      ...(imagesForTurn.length > 0
-        ? { imageAttachments: imagesForTurn.map(toConversationImageAttachment) }
-        : {}),
-    });
-    setInput('');
-    if (!overridePrompt || options?.includePendingImages) setPendingImages([]);
+    markPrep('requestBuilt');
 
     conv.append({
       role: 'assistant',
@@ -505,6 +537,7 @@ export function CopilotDrawer({
     streamDoneRef.current = false;
     startProgressTimer();
     setStreaming(true);
+    let receivedDelta = false;
     const stop = copilotApi.streamChat(
       {
         apiKey,
@@ -516,17 +549,45 @@ export function CopilotDrawer({
       },
       {
         onDelta: (delta) => {
+          receivedDelta = true;
           enqueueAssistantDelta(delta);
         },
         onDone: () => {
           finishAssistantReveal();
         },
-        onError: (message) => {
+        onError: (message, requestId) => {
+          if (requestId) setLatestCopilotRequestId(requestId);
           flushAssistantReveal();
           clearProgressTimer();
+          if (!receivedDelta) conv.popLast();
           setError(message);
           setStreaming(false);
           stopRef.current = null;
+        },
+        onRequestId: (requestId) => {
+          setLatestCopilotRequestId(requestId);
+        },
+        onTiming: (event) => {
+          if (event.requestId) setLatestCopilotRequestId(event.requestId);
+        },
+        onSnapshot: (snapshot) => {
+          const merged: CopilotLatencySnapshot = {
+            ...snapshot,
+            client: { ...prepTimings, ...snapshot.client },
+          };
+          setLatestLatencySnapshot(merged);
+          setLatestCopilotRequestId(merged.requestId ?? null);
+          console.info('Copilot latency snapshot', safeTimingDetails({
+            requestId: merged.requestId ?? '',
+            keyResolveMs: merged.client.keyResolveMs ?? 0,
+            contextFetchMs: merged.client.contextFetchMs ?? 0,
+            baselineCaptureMs: merged.client.baselineCaptureMs ?? 0,
+            responseHeadersMs: merged.client.responseHeaders ?? 0,
+            firstDeltaMs: merged.client.firstDelta ?? 0,
+            networkDoneMs: merged.client.networkDone ?? 0,
+            serverTotalMs: merged.server?.totalMs ?? 0,
+            upstreamFirstDeltaMs: merged.provider?.upstreamFirstDelta ?? 0,
+          }));
         },
       },
     );
@@ -539,12 +600,18 @@ export function CopilotDrawer({
     clearRevealTimer();
     revealQueueRef.current = '';
     streamDoneRef.current = false;
+    if (isEmptyAssistantMessage(conv.messages.at(-1))) conv.popLast();
     setStreaming(false);
   }
 
   function handleRetryLastUserTurn() {
-    const lastUser = [...conv.messages].reverse().find((message) => message.role === 'user');
+    const messagesWithoutEmptyAssistant = isEmptyAssistantMessage(conv.messages.at(-1))
+      ? conv.messages.slice(0, -1)
+      : conv.messages;
+    const lastUser = [...messagesWithoutEmptyAssistant].reverse().find((message) => message.role === 'user');
     if (!lastUser || streaming) return;
+    if (isEmptyAssistantMessage(conv.messages.at(-1))) conv.popLast();
+    if (messagesWithoutEmptyAssistant.at(-1)?.id === lastUser.id) conv.popLast();
     setError(null);
     void handleSend(lastUser.content);
   }
@@ -663,6 +730,8 @@ export function CopilotDrawer({
           streaming={streaming}
           streamProgressIndex={streamProgressIndex}
           error={error}
+          latestRequestId={latestCopilotRequestId}
+          latestLatencySnapshot={latestLatencySnapshot}
           input={input}
           pendingImages={pendingImages}
           fileInputRef={fileInputRef}
@@ -794,6 +863,25 @@ function providerLabel(provider: CopilotProviderHealth | null): string {
   return 'Kimi Code';
 }
 
+function formatLatencySnapshotInline(snapshot: CopilotLatencySnapshot | null, requestId: string | null): string {
+  const id = requestId ?? snapshot?.requestId;
+  const ttft = snapshot?.client.firstDelta;
+  const total = snapshot?.client.networkDone;
+  const metrics = [ttft ? `TTFT ${ttft}ms` : '', total ? `Total ${total}ms` : ''].filter(Boolean).join(' · ');
+  if (id && metrics) return `${shortRequestId(id)} · ${metrics}`;
+  if (id) return shortRequestId(id);
+  return metrics;
+}
+
+function formatLatencySnapshotTitle(snapshot: CopilotLatencySnapshot | null, requestId: string | null): string {
+  const id = requestId ?? snapshot?.requestId ?? 'n/a';
+  return JSON.stringify({ requestId: id, ...snapshot }, null, 2);
+}
+
+function shortRequestId(requestId: string): string {
+  return requestId.length > 12 ? requestId.slice(0, 12) : requestId;
+}
+
 function contextSourceKey(mode: CopilotMode): string {
   if (mode === 'createProject') return 'library.copilot.contextCreateSource';
   if (mode === 'libraryReference') return 'library.copilot.contextReferenceSource';
@@ -817,6 +905,29 @@ function fetchAttachedContext(ref: AttachedRef | null, lang: Lang, query?: strin
     case 'story':
       return copilotApi.fetchProjectContext(ref.projectId, lang, { activeStoryId: ref.storyId });
   }
+}
+
+async function fetchAttachedContextCached(ref: AttachedRef | null, lang: Lang, query?: string): Promise<{ markdown: string }> {
+  const key = attachedContextCacheKey(ref, lang, query);
+  const cached = attachedContextCache.get(key);
+  if (cached) {
+    attachedContextCache.delete(key);
+    attachedContextCache.set(key, cached);
+    return cached;
+  }
+  const result = await fetchAttachedContext(ref, lang, query);
+  attachedContextCache.set(key, result);
+  while (attachedContextCache.size > ATTACHED_CONTEXT_CACHE_LIMIT) {
+    const oldest = attachedContextCache.keys().next().value;
+    if (!oldest) break;
+    attachedContextCache.delete(oldest);
+  }
+  return result;
+}
+
+function attachedContextCacheKey(ref: AttachedRef | null, lang: Lang, query?: string): string {
+  const refKey = ref ? attachedRefKey(ref) : 'library';
+  return `${lang}:${refKey}:${(query ?? '').trim().toLowerCase().slice(0, 200)}`;
 }
 
 async function captureUpdateBaseline(projectId: string, displayName: string): Promise<CopilotUpdateBaseline> {
@@ -1353,6 +1464,8 @@ function ChatPane({
   streaming,
   streamProgressIndex,
   error,
+  latestRequestId,
+  latestLatencySnapshot,
   input,
   pendingImages,
   fileInputRef,
@@ -1393,6 +1506,8 @@ function ChatPane({
   streaming: boolean;
   streamProgressIndex: number;
   error: string | null;
+  latestRequestId: string | null;
+  latestLatencySnapshot: CopilotLatencySnapshot | null;
   input: string;
   pendingImages: PendingImageAttachment[];
   fileInputRef: MutableRefObject<HTMLInputElement | null>;
@@ -1458,6 +1573,14 @@ function ChatPane({
             <span className="text-gray-500">— {t('library.copilot.noKeyConfigured')}</span>
           )}
         </span>
+        {(latestRequestId || latestLatencySnapshot) && (
+          <span
+            className="hidden max-w-[220px] truncate rounded-full border border-gray-100 bg-gray-50 px-2 py-0.5 font-mono text-[10px] text-gray-500 sm:inline"
+            title={formatLatencySnapshotTitle(latestLatencySnapshot, latestRequestId)}
+          >
+            {formatLatencySnapshotInline(latestLatencySnapshot, latestRequestId)}
+          </span>
+        )}
         <span className="flex items-center gap-1">
           <button
             type="button"

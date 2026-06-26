@@ -4,6 +4,7 @@ import type {
   CopilotAiProviderHealth,
   CopilotAiStreamInput,
   CopilotAiStreamChunk,
+  CopilotAiMetricCallback,
 } from './aiProvider.js';
 
 const DEFAULT_BASE_URL = 'https://api.kimi.com/coding/v1';
@@ -67,6 +68,19 @@ export class KimiHttpProvider implements CopilotAiProvider {
     if (input.signal?.aborted) controller.abort();
     else input.signal?.addEventListener('abort', onAbort, { once: true });
 
+    const messages = buildMessages(input.systemPromptText, input.conversation, input.latestUserMsg);
+    input.metrics?.({
+      name: 'upstreamRequestStart',
+      atMs: Date.now(),
+      details: {
+        provider: 'kimi-http',
+        model: this.model,
+        messageCount: messages.length,
+        systemPromptChars: input.systemPromptText.length,
+        latestUserChars: input.latestUserMsg.length,
+      },
+    });
+
     try {
       const res = await fetch(`${this.baseUrl}/chat/completions`, {
         method: 'POST',
@@ -77,9 +91,19 @@ export class KimiHttpProvider implements CopilotAiProvider {
         body: JSON.stringify({
           model: this.model,
           stream: true,
-          messages: buildMessages(input.systemPromptText, input.conversation, input.latestUserMsg),
+          messages,
         }),
         signal: controller.signal,
+      });
+
+      const contentType = res.headers.get('content-type') ?? '';
+      input.metrics?.({
+        name: 'upstreamHeaders',
+        atMs: Date.now(),
+        details: {
+          status: res.status,
+          contentType: contentType.slice(0, 80),
+        },
       });
 
       if (!res.ok || !res.body) {
@@ -87,13 +111,12 @@ export class KimiHttpProvider implements CopilotAiProvider {
         return;
       }
 
-      const contentType = res.headers.get('content-type') ?? '';
       if (!contentType.includes('text/event-stream')) {
-        yield* parseNonStreamingResponse(res, input.apiKey);
+        yield* parseNonStreamingResponse(res, input.apiKey, input.metrics);
         return;
       }
 
-      yield* parseSseResponse(res, input.apiKey);
+      yield* parseSseResponse(res, input.apiKey, input.metrics);
     } catch (err) {
       yield { error: normalizeHttpError(err, input.apiKey) };
     } finally {
@@ -111,10 +134,18 @@ function buildMessages(systemPromptText: string, conversation: CopilotAiChatMess
   ];
 }
 
-async function* parseSseResponse(res: Response, apiKey: string): AsyncGenerator<CopilotAiStreamChunk, void, void> {
+async function* parseSseResponse(
+  res: Response,
+  apiKey: string,
+  metrics?: CopilotAiMetricCallback,
+): AsyncGenerator<CopilotAiStreamChunk, void, void> {
   const reader = res.body!.getReader();
   const decoder = new TextDecoder('utf-8');
   let buf = '';
+  let sawFrame = false;
+  let sawDelta = false;
+  let deltaChunks = 0;
+  let deltaChars = 0;
   try {
     while (true) {
       const { value, done } = await reader.read();
@@ -124,16 +155,40 @@ async function* parseSseResponse(res: Response, apiKey: string): AsyncGenerator<
       const frames = normalised.split('\n\n');
       buf = frames.pop() ?? '';
       for (const frame of frames) {
+        if (!sawFrame) {
+          sawFrame = true;
+          metrics?.({ name: 'upstreamFirstFrame', atMs: Date.now() });
+        }
         const chunk = parseSseFrame(frame, apiKey);
         if (!chunk) continue;
-        if ('done' in chunk) return;
+        if ('done' in chunk) {
+          metrics?.({ name: 'upstreamDone', atMs: Date.now(), details: { deltaChunks, deltaChars } });
+          return;
+        }
+        if ('delta' in chunk) {
+          if (!sawDelta) {
+            sawDelta = true;
+            metrics?.({ name: 'upstreamFirstDelta', atMs: Date.now() });
+          }
+          deltaChunks += 1;
+          deltaChars += chunk.delta.length;
+        }
         yield chunk;
       }
     }
     if (buf.trim()) {
+      if (!sawFrame) metrics?.({ name: 'upstreamFirstFrame', atMs: Date.now() });
       const chunk = parseSseFrame(buf, apiKey);
-      if (chunk && !('done' in chunk)) yield chunk;
+      if (chunk && !('done' in chunk)) {
+        if ('delta' in chunk) {
+          if (!sawDelta) metrics?.({ name: 'upstreamFirstDelta', atMs: Date.now() });
+          deltaChunks += 1;
+          deltaChars += chunk.delta.length;
+        }
+        yield chunk;
+      }
     }
+    metrics?.({ name: 'upstreamDone', atMs: Date.now(), details: { deltaChunks, deltaChars } });
   } catch (err) {
     yield { error: normalizeHttpError(err, apiKey) };
   }
@@ -159,17 +214,27 @@ function parseSseFrame(frame: string, apiKey: string): CopilotAiStreamChunk | { 
   return null;
 }
 
-async function* parseNonStreamingResponse(res: Response, apiKey: string): AsyncGenerator<CopilotAiStreamChunk, void, void> {
+async function* parseNonStreamingResponse(
+  res: Response,
+  apiKey: string,
+  metrics?: CopilotAiMetricCallback,
+): AsyncGenerator<CopilotAiStreamChunk, void, void> {
   try {
     const parsed = await res.json() as Record<string, unknown>;
+    metrics?.({ name: 'upstreamFirstFrame', atMs: Date.now(), details: { streaming: false } });
     const error = extractUpstreamError(parsed);
     if (error) {
       yield { error: redact(error, apiKey) };
       return;
     }
     const text = extractOpenAiMessage(parsed);
-    if (text) yield { delta: text };
-    else yield { error: 'Empty response from Kimi API' };
+    if (text) {
+      metrics?.({ name: 'upstreamFirstDelta', atMs: Date.now(), details: { streaming: false } });
+      yield { delta: text };
+      metrics?.({ name: 'upstreamDone', atMs: Date.now(), details: { deltaChunks: 1, deltaChars: text.length } });
+    } else {
+      yield { error: 'Empty response from Kimi API' };
+    }
   } catch (err) {
     yield { error: normalizeHttpError(err, apiKey) };
   }

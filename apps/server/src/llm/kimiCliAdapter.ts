@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createInterface } from 'node:readline';
 import { resolveKimiBinary, KimiBinaryNotFoundError } from './kimiBinaryResolver.js';
+import type { CopilotAiMetricCallback } from './aiProvider.js';
 
 /**
  * Single adapter for the bundled Kimi CLI. Spawns `kimi -p
@@ -36,6 +37,7 @@ export interface KimiStreamRequest {
   latestUserMsg: string;
   /** Optional AbortSignal for client-disconnect propagation. */
   signal?: AbortSignal;
+  metrics?: CopilotAiMetricCallback;
 }
 
 export interface KimiDelta {
@@ -75,6 +77,12 @@ export async function* streamKimiChat(
   // text with clearly labelled sections.
   const promptText = buildPrompt(req);
 
+  req.metrics?.({
+    name: 'cliPromptBuilt',
+    atMs: Date.now(),
+    details: { promptChars: promptText.length },
+  });
+
   // Scratch cwd ensures kimi can't accidentally read PinGarden source
   // even if `default_permission_mode = "manual"` somehow falls through
   // and a tool gets approved. Cleaned up in finally.
@@ -82,6 +90,7 @@ export async function* streamKimiChat(
 
   let child: ReturnType<typeof spawn> | null = null;
   try {
+    req.metrics?.({ name: 'cliSpawnStart', atMs: Date.now() });
     child = spawn(
       bin,
       [
@@ -95,6 +104,7 @@ export async function* streamKimiChat(
         stdio: ['ignore', 'pipe', 'pipe'],
       },
     );
+    req.metrics?.({ name: 'cliSpawned', atMs: Date.now() });
 
     // Wire client-disconnect → SIGTERM the subprocess.
     if (req.signal) {
@@ -112,10 +122,17 @@ export async function* streamKimiChat(
       stderrBuf += chunk.toString();
     });
 
+    let sawStdoutLine = false;
     let sawTextDelta = false;
+    let deltaChunks = 0;
+    let deltaChars = 0;
     for await (const line of rl) {
       const trimmed = line.trim();
       if (!trimmed) continue;
+      if (!sawStdoutLine) {
+        sawStdoutLine = true;
+        req.metrics?.({ name: 'upstreamFirstFrame', atMs: Date.now(), details: { provider: 'kimi-cli' } });
+      }
       let evt: unknown;
       try {
         evt = JSON.parse(trimmed);
@@ -125,13 +142,17 @@ export async function* streamKimiChat(
       }
       const delta = extractTextDelta(evt);
       if (delta) {
+        if (!sawTextDelta) req.metrics?.({ name: 'upstreamFirstDelta', atMs: Date.now(), details: { provider: 'kimi-cli' } });
         sawTextDelta = true;
+        deltaChunks += 1;
+        deltaChars += delta.length;
         yield { delta };
         continue;
       }
       if (isResultFrame(evt)) {
         // End of turn — break the read loop; the iterator returns
         // normally and the caller emits its `{done: true}` SSE frame.
+        req.metrics?.({ name: 'upstreamDone', atMs: Date.now(), details: { deltaChunks, deltaChars, provider: 'kimi-cli' } });
         return;
       }
       if (isErrorFrame(evt)) {
@@ -147,6 +168,8 @@ export async function* streamKimiChat(
       yield {
         error: stderrBuf.trim().slice(0, 400) || 'kimi exited without producing output',
       };
+    } else {
+      req.metrics?.({ name: 'upstreamDone', atMs: Date.now(), details: { deltaChunks, deltaChars, provider: 'kimi-cli' } });
     }
   } catch (err) {
     yield { error: normalizeKimiError(err instanceof Error ? err.message : String(err)) };

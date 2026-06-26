@@ -15,12 +15,21 @@ export interface CopilotAiChatMessage {
   content: string;
 }
 
+export interface CopilotAiMetricEvent {
+  name: string;
+  atMs: number;
+  details?: Record<string, string | number | boolean | null>;
+}
+
+export type CopilotAiMetricCallback = (event: CopilotAiMetricEvent) => void;
+
 export interface CopilotAiStreamInput {
   apiKey: string;
   systemPromptText: string;
   conversation: CopilotAiChatMessage[];
   latestUserMsg: string;
   signal?: AbortSignal;
+  metrics?: CopilotAiMetricCallback;
 }
 
 export interface CopilotAiDelta {

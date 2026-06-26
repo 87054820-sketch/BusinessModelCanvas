@@ -786,8 +786,8 @@
         "skillPack": "📦 技能包"
       },
       "skillPack": {
-        "heading": "在你自己的 AI 工具里用 PinGarden",
-        "intro": "下载 skill 包,把一段安装提示词粘贴到你正在用的 AI Agent —— Claude、Code Cursor、Codex、CodeBuddy、WorkBuddy 或其他。AI 会自动解压、选好安装路径,并验证 PinGarden CLI。",
+        "heading": "PinGarden AI 战略学习 Skill 包",
+        "intro": "下载 skill 包后,可以直接在 Claude、Code Cursor、Codex、CodeBuddy、WorkBuddy 或其他 AI Agent 中使用。即使没有安装 PinGarden App,它也能作为战略学习与商业画布顾问；安装 Mac App 和 CLI 后,还能进一步读写你的本地画布。",
         "step1": "第 1 步 · 下载",
         "step2": "第 2 步 · 复制安装提示词",
         "download": "下载 ({{size}})",
@@ -797,11 +797,11 @@
         "copyPrompt": "复制提示词",
         "copied": "已复制",
         "supportedAgentsLabel": "已适配",
-        "bundledPlaybooksTitle": "App 内置 Playbook",
-        "bundledPlaybooksIntro": "这些只读 playbook 随 App 预置。你确认过的本地偏好可以覆盖 Copilot 使用它们的方式。",
-        "installPrompt": "我刚下载了 PinGarden Skill Pack:{{filename}}(版本 {{version}})。\n\n请帮我安装并建立后续自我迭代机制:\n\n1. 识别你所在的 AI 编程 Agent(Claude、Code Cursor、Codex、CodeBuddy、WorkBuddy 或其他),把 zip 解压到该 Agent 的标准 skills / rules / workflows 目录。常见位置:\n   - Claude:~/.claude/skills/\n   - Code Cursor:~/.cursor/rules/\n   - Codex:~/.codex/\n   - CodeBuddy / WorkBuddy:按其官方 skill 安装路径\n   - 其他:查看 zip 内的 INSTALL.md\n\n2. 运行 `pingarden doctor` 验证 PinGarden CLI 在 PATH 中。如未找到,提示我先打开 PinGarden 桌面应用(CLI 随应用资源一起分发)。\n\n3. 运行 `pingarden skill install --dry-run --json` 检查已安装 skill 是否需要更新；如果 `data.wouldChange` 为 true,请执行 `pingarden skill install`,然后再次运行 `pingarden doctor`。\n\n4. 安装完成后,简要介绍这个 skill 能做什么、如何调用,并提醒我:PinGarden App 升级或库内容变化后,可以让你重新执行第 3 步来自我迭代。",
-        "installMdHint": "如果你的 AI 工具不在上面的清单里,zip 内的 INSTALL.md 提供了手动安装步骤。",
-        "notReady": "skill 包尚未生成,运行 `pnpm package:mac` 即可产出。"
+        "bundledPlaybooksTitle": "可学习的战略方法",
+        "bundledPlaybooksIntro": "这些 playbook 可作为 AI 的战略学习资料。没有 PinGarden App 时,它会停留在学习/顾问模式；连接 App 后才执行画布读写。",
+        "installPrompt": "我刚下载了 PinGarden AI Strategy Skill Pack:{{filename}}(版本 {{version}})。\n\n请帮我安装它,并按两种模式使用:\n\n1. 识别你所在的 AI 编程 Agent(Claude、Code Cursor、Codex、CodeBuddy、WorkBuddy 或其他),把 zip 解压到该 Agent 的标准 skills / rules / workflows 目录。常见位置:\n   - Claude:~/.claude/skills/\n   - Code Cursor:~/.cursor/rules/\n   - Codex:~/.codex/\n   - CodeBuddy / WorkBuddy:按其官方 skill 安装路径\n   - 其他:查看 zip 内的 INSTALL.md\n\n2. 如果当前没有 PinGarden App 或 `pingarden` CLI,请以“战略学习/顾问模式”使用:解释商业画布、指导我填写 BMC/VPC/JTBD/客户旅程,拆解案例,推荐实验,但不要声称可以写入 App。\n\n3. 如果我安装并启动了 PinGarden Mac App,请运行 `pingarden doctor` 验证 CLI 和本地服务；验证通过后,再进入“连接 App 模式”,可以读取/写入本地项目、画布、快照和案例 fork。\n\n4. 安装完成后,简要介绍这两种模式分别能做什么,并提醒我:PinGarden App 或内容库升级后,可以让你重新检查并更新 skill。",
+        "installMdHint": "如果你的 AI 工具不在清单里,zip 内的 INSTALL.md 提供了通用安装方式；没有 PinGarden App 也可以先用于战略学习。",
+        "notReady": "skill 包尚未随当前构建发布。请先运行 `pnpm build:skill-pack`,再进行 Mac 打包或云端部署。"
       }
     }
   }

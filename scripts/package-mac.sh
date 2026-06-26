@@ -136,102 +136,14 @@ node apps/cli/dist/index.js case validate
 log "Refreshing project-local Claude skill (.claude/skills/pingarden/)"
 node apps/cli/dist/index.js skill install --local
 
-# Build a portable zip of the skill so it can be handed to users who
-# want it in Claude, Code Cursor, Codex, CodeBuddy, WorkBuddy, or other
-# agents. Filename embeds the content-hash version so two zips with the
-# same name are guaranteed byte-identical inputs.
+# Build a portable zip of the skill so it can be handed to users who want
+# AI strategy guidance even before they install the PinGarden Mac app.
 log "Bundling skill zip distribution (apps/cli/build/skill/)"
-SKILL_VERSION="$(tr -d '[:space:]' < .claude/skills/pingarden/.pingarden-skill-version)"
-[ -n "$SKILL_VERSION" ] || fail "Could not read skill version sentinel — was 'skill install --local' aborted?"
+node scripts/build-skill-pack.mjs
 SKILL_OUT_DIR="apps/cli/build/skill"
-SKILL_ZIP="$SKILL_OUT_DIR/pingarden-skill-${SKILL_VERSION}.zip"
-SKILL_STAGE="apps/cli/build/skill-staging"
-
-rm -rf "$SKILL_STAGE"
-mkdir -p "$SKILL_STAGE/pingarden" "$SKILL_OUT_DIR"
-ditto .claude/skills/pingarden/ "$SKILL_STAGE/pingarden/"
-
-# Wipe stale zips — keeping multiple versions side-by-side just confuses
-# downstream consumers. The file is content-addressed by hash anyway.
-find "$SKILL_OUT_DIR" -maxdepth 1 -type f -name 'pingarden-skill-*.zip' -delete
-
-# Generate the install README inside the zip. Kept here (not in the
-# skill tree) so it never pollutes Claude Code's loaded context.
-cat > "$SKILL_STAGE/INSTALL.md" <<'INSTALL_EOF'
-# PinGarden skill — install
-
-This zip contains the official PinGarden domain skill: how to fill each
-canvas (BMC, VPC, JTBD, Empathy Map, Customer Journey, Strategy Canvas,
-…) and how to drive the local PinGarden app via the `pingarden` CLI.
-
-The `pingarden/` folder is **plain markdown** — no code, no runtime.
-Version: see `pingarden/.pingarden-skill-version` (content-addressed
-SHA-256 over the source canvas bundles; identical inputs always produce
-identical zip contents).
-
-## Claude Code (native)
-
-```bash
-unzip -o pingarden-skill-*.zip -d ~/.claude/skills/
-# → ~/.claude/skills/pingarden/SKILL.md
-```
-
-Auto-loads on the next Claude Code session. Trigger phrases: "draft a
-BMC", "fill the value proposition", "snapshot before editing", or any
-`pingarden …` invocation.
-
-## Code Cursor
-
-```bash
-unzip -o pingarden-skill-*.zip -d <repo>/.cursor/skills/
-echo 'See .cursor/skills/pingarden/SKILL.md before any pingarden task.' \
-  >> <repo>/.cursorrules
-```
-
-## Codex
-
-```bash
-unzip -o pingarden-skill-*.zip -d ~/.codex/skills/
-# If your Codex setup uses a repo-level instructions file, reference
-# ~/.codex/skills/pingarden/SKILL.md from there.
-```
-
-## CodeBuddy / WorkBuddy
-
-Use the official skill installation path for your CodeBuddy or WorkBuddy
-client, then place the extracted `pingarden/` folder there.
-
-## Other
-
-If your tool is not listed above, unzip anywhere on disk and point that
-agent's rules / memory / instructions file at the absolute path of
-`pingarden/SKILL.md`.
-
-## Generic LLM (no rules system)
-
-Concatenate the markdown into the system prompt:
-
-```bash
-unzip -o pingarden-skill-*.zip -d /tmp
-cat /tmp/pingarden/SKILL.md /tmp/pingarden/canvases/*.md /tmp/pingarden/workflows/*.md \
-  > /tmp/pingarden-context.md
-```
-
-## What you also need
-
-The skill teaches the agent how to call the `pingarden` CLI; the CLI
-itself ships with the PinGarden Mac app, or via
-`npm install -g @pingarden/cli`. Without the CLI installed and the
-PinGarden server running, the agent has methodology but no write path.
-
-Run `pingarden doctor` to confirm both halves are in place.
-INSTALL_EOF
-
-# -X strips extra attrs for stability across machines; --quiet keeps
-# packaging logs readable. Run from staging so paths are clean
-# (`pingarden/...` and `INSTALL.md` at the zip root, no leading dirs).
-( cd "$SKILL_STAGE" && zip -r -X --quiet "$ROOT/$SKILL_ZIP" pingarden INSTALL.md )
-rm -rf "$SKILL_STAGE"
+SKILL_ZIP="$(find "$SKILL_OUT_DIR" -maxdepth 1 -type f -name 'pingarden-skill-*.zip' | sort | tail -n 1)"
+[ -n "$SKILL_ZIP" ] || fail "Skill zip was not generated under $SKILL_OUT_DIR"
+SKILL_VERSION="$(basename "$SKILL_ZIP" | sed -E 's/^pingarden-skill-(.+)\.zip$/\1/')"
 
 log "Staging bundled Kimi CLI (binary only, no local config/logs)"
 stage_kimi_cli

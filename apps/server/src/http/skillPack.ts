@@ -11,24 +11,21 @@ import type { FastifyInstance } from 'fastify';
  *   GET  /copilot/skill-pack/info  → metadata + supported-agent list
  *   GET  /copilot/skill-pack       → streams the zip with Content-Disposition
  *
- * The zip is produced by `scripts/package-mac.sh` at
+ * The zip is produced by `pnpm build:skill-pack` at
  * `apps/cli/build/skill/pingarden-skill-<version>.zip`. The version is
- * content-hash-derived so identical canvas bundles always produce the
- * same filename.
+ * content-hash-derived so identical canvas/library bundles always produce
+ * the same filename.
  *
- * UX model (per 2026-06-22 user feedback): instead of distributing N
- * per-tool unzip commands the user has to copy + run themselves, we
- * provide ONE universal install prompt the user pastes into whichever
- * AI agent they're using. The AI agent (Claude / Code Cursor / Codex /
- * CodeBuddy / WorkBuddy / Other) detects itself, picks the right install
- * path, and runs `pingarden doctor` to verify the CLI.
- * The prompt itself lives in the renderer's i18n (it's a UI string,
- * not data); this endpoint just returns metadata + the supported-agent
- * list for the chip strip.
+ * UX model: the skill can be used in two modes. Without the PinGarden app
+ * or CLI it still acts as an AI strategy-learning/advisor pack. With the
+ * Mac app + `pingarden` CLI installed it additionally teaches agents how
+ * to read and write local projects, canvases, snapshots, and case forks.
+ * The install prompt itself lives in the renderer's i18n; this endpoint
+ * returns metadata + the supported-agent list for the chip strip.
  *
  * Resolution order for the zip directory:
- *  1. `process.env.SKILL_PACK_DIR` (set by `electron.main.ts` in
- *     packaged builds, points at `<appResources>/skill-pack/`).
+ *  1. `process.env.SKILL_PACK_DIR` (set by Electron packaged builds and
+ *     by CloudRun, both pointing at a bundled `skill-pack`/build folder).
  *  2. Dev fallback: `<repoRoot>/apps/cli/build/skill/`, resolved
  *     relative to this file at import time.
  */
@@ -87,7 +84,8 @@ export function registerSkillPackRoutes(app: FastifyInstance) {
     const zip = await resolveLatestZip();
     if (!zip) {
       return reply.code(503).send({
-        error: 'Skill pack not built yet. Run `pnpm package:mac` to produce one.',
+        error: 'Skill pack is not available in this build.',
+        message: 'The PinGarden AI Strategy Skill Pack can be used standalone for strategy learning, or with the Mac app for connected canvas workflows. Run `pnpm build:skill-pack` before packaging or deploying to bundle it.',
         code: 'SKILL_PACK_NOT_BUILT',
       });
     }
@@ -103,7 +101,8 @@ export function registerSkillPackRoutes(app: FastifyInstance) {
     const zip = await resolveLatestZip();
     if (!zip) {
       return reply.code(503).send({
-        error: 'Skill pack not built yet. Run `pnpm package:mac` to produce one.',
+        error: 'Skill pack is not available in this build.',
+        message: 'The PinGarden AI Strategy Skill Pack can be used standalone for strategy learning, or with the Mac app for connected canvas workflows. Run `pnpm build:skill-pack` before packaging or deploying to bundle it.',
         code: 'SKILL_PACK_NOT_BUILT',
       });
     }
