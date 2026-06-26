@@ -752,6 +752,61 @@
         "2": "正在组织回答结构…",
         "3": "内容生成中，完成后会按段落显示…"
       },
+      "phase": {
+        "preparing": {
+          "title": "正在准备问题",
+          "description": "我正在整理你的输入、图片和对话上下文。"
+        },
+        "context": {
+          "title": "正在整理资料",
+          "description": "正在读取策略库或当前项目资料，让回答更贴合上下文。",
+          "slow1": "资料稍多，正在压缩成适合模型分析的上下文。"
+        },
+        "baseline": {
+          "title": "正在记录项目状态",
+          "description": "这一步会记录当前画布和故事，方便后续生成可确认的更新建议。",
+          "slow1": "项目内容较多，正在记录当前画布和故事状态。"
+        },
+        "connecting": {
+          "title": "正在连接云端 Copilot",
+          "description": "请求已准备好，正在建立流式连接。",
+          "slow1": "云端连接时间略长，正在继续等待响应。"
+        },
+        "waitingModel": {
+          "title": "正在等待 Kimi 分析",
+          "description": "云端已连接，正在等待模型返回第一段内容。",
+          "slow1": "模型正在分析资料，首段输出可能需要几秒钟。",
+          "slow2": "资料或问题较复杂，Kimi 仍在深度分析；你可以继续等待或点击停止后缩小范围。"
+        },
+        "generating": {
+          "title": "正在生成回复",
+          "description": "已经收到首段内容，接下来会持续流式展示。"
+        },
+        "revealing": {
+          "title": "正在整理长回复",
+          "description": "模型已返回内容，正在按段落整理展示。",
+          "slow1": "回复较长，正在加速整理展示。"
+        },
+        "done": {
+          "title": "回复完成",
+          "description": "内容已展示完成。"
+        },
+        "error": {
+          "title": "请求遇到问题",
+          "description": "这次请求未能完成，可以根据 requestId 排查。"
+        }
+      },
+      "phaseSteps": {
+        "prepare": "准备",
+        "connect": "连接",
+        "analyze": "分析",
+        "generate": "生成",
+        "polish": "整理"
+      },
+      "phaseMeta": {
+        "elapsed": "已等待 {{seconds}} 秒",
+        "requestId": "请求 {{requestId}}"
+      },
       "errorPrefix": "出错了",
       "noKeyConfigured": "尚未配置 Kimi API Key,在设置中粘贴一个。",
       "clearChat": "清空对话",

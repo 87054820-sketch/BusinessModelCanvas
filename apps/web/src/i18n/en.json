@@ -759,6 +759,61 @@
         "2": "Structuring the response…",
         "3": "Generating content; it will appear by paragraphs when ready…"
       },
+      "phase": {
+        "preparing": {
+          "title": "Preparing your question",
+          "description": "I’m organizing your input, images, and conversation context."
+        },
+        "context": {
+          "title": "Collecting context",
+          "description": "Reading the strategy library or current project so the answer can stay grounded.",
+          "slow1": "There is a bit more material, so I’m compressing it into model-ready context."
+        },
+        "baseline": {
+          "title": "Capturing project state",
+          "description": "Recording the current canvases and stories so updates can be reviewed safely.",
+          "slow1": "This project has more content, so I’m still capturing the current state."
+        },
+        "connecting": {
+          "title": "Connecting to cloud Copilot",
+          "description": "The request is ready and the streaming connection is opening.",
+          "slow1": "The cloud connection is taking a little longer than usual."
+        },
+        "waitingModel": {
+          "title": "Waiting for Kimi to analyze",
+          "description": "Cloud Copilot is connected and waiting for the model’s first output.",
+          "slow1": "Kimi is analyzing the material; the first response can take a few seconds.",
+          "slow2": "The question or context is complex, so Kimi is still doing deeper analysis. You can wait, or stop and narrow the scope."
+        },
+        "generating": {
+          "title": "Generating the reply",
+          "description": "The first content has arrived and more will stream in."
+        },
+        "revealing": {
+          "title": "Polishing a long reply",
+          "description": "The model has returned content; I’m organizing it into readable sections.",
+          "slow1": "This reply is long, so I’m speeding up the final display."
+        },
+        "done": {
+          "title": "Reply complete",
+          "description": "The answer is fully displayed."
+        },
+        "error": {
+          "title": "Request hit an issue",
+          "description": "This request did not complete. Use the requestId for troubleshooting."
+        }
+      },
+      "phaseSteps": {
+        "prepare": "Prepare",
+        "connect": "Connect",
+        "analyze": "Analyze",
+        "generate": "Generate",
+        "polish": "Polish"
+      },
+      "phaseMeta": {
+        "elapsed": "{{seconds}}s elapsed",
+        "requestId": "Req {{requestId}}"
+      },
       "errorPrefix": "Error",
       "noKeyConfigured": "No Kimi API key configured. Open settings to paste one.",
       "clearChat": "Clear chat",

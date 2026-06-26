@@ -84,6 +84,22 @@ These are diagnostic targets, not hard production SLOs yet:
    - Reveal pacing is the likely bottleneck.
    - Large reveal queues use an accelerated interval to avoid artificial delay.
 
+## Streaming experience phases
+
+The Copilot drawer uses real request events instead of a fake timer-only progress indicator:
+
+| Phase | Trigger | User-facing meaning |
+| --- | --- | --- |
+| `preparing` | User message and assistant placeholder are created | Preparing the input before network work starts. |
+| `context` | Attached library/project/canvas/story context is being fetched | Gathering and compressing relevant material. |
+| `baseline` | Project update baseline is being captured | Recording current project state for safe update cards. |
+| `connecting` | Request body is ready and `/copilot/chat` is being opened | Connecting to cloud Copilot. |
+| `waitingModel` | Response headers / first SSE frame arrived, but no delta yet | Cloud is connected; waiting for Kimi's first output. |
+| `generating` | First delta arrived | Content is actively streaming. |
+| `revealing` | Network done but reveal queue still has content | Long answer is being organized into readable sections. |
+
+Slow-wait copy is phase-specific and does not pretend progress has advanced. For example, `waitingModel` after 5 seconds says the model is analyzing; after 15 seconds it explains that the question or context may be complex.
+
 ## Request id workflow
 
-The browser reads `X-Request-Id` and the final SSE `done.requestId`. The Copilot drawer shows the short id in the status row and logs a safe `Copilot latency snapshot` to the browser console. Use that id to find the matching CloudRun structured log entry.
+The browser reads `X-Request-Id` and the final SSE `done.requestId`. The Copilot drawer shows the short id in the status row and inside the waiting card, then logs a safe `Copilot latency snapshot` to the browser console. Use that id to find the matching CloudRun structured log entry.

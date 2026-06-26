@@ -27,8 +27,8 @@ import {
   type StrategyFramework,
 } from '@pingarden/shared';
 import { copilotApi, type CopilotIntent, type CopilotProviderHealth } from '../api/copilot';
-import type { CopilotLatencySnapshot } from '../copilot/performance';
-import { nowMs, roundMs, safeTimingDetails } from '../copilot/performance';
+import type { CopilotLatencySnapshot, CopilotStreamPhase, CopilotStreamStatus } from '../copilot/performance';
+import { elapsedSeconds, nowMs, phaseStepIndex, roundMs, safeTimingDetails, slowWaitLevel } from '../copilot/performance';
 import { api, type CanvasDefSummary } from '../api/client';
 import { storiesApi } from '../api/stories';
 import { maybeConsolidateCopilotMemory } from '../copilot/memoryConsolidation';
@@ -129,8 +129,7 @@ const ACCEPTED_IMAGE_TYPES = COPILOT_ACCEPTED_IMAGE_TYPES;
 const MAX_IMAGE_ATTACHMENTS = COPILOT_MAX_IMAGE_ATTACHMENTS;
 const MAX_IMAGE_BYTES = COPILOT_MAX_IMAGE_BYTES;
 const PREVIEW_IMAGE_MAX_BYTES = 64 * 1024;
-const COPILOT_PROGRESS_STEP_COUNT = 4;
-const COPILOT_PROGRESS_INTERVAL_MS = 2200;
+const COPILOT_PHASE_TICK_MS = 1000;
 const ATTACHED_CONTEXT_CACHE_LIMIT = 20;
 const attachedContextCache = new Map<string, { markdown: string }>();
 
@@ -173,7 +172,8 @@ export function CopilotDrawer({
   const [input, setInput] = useState('');
   const [pendingImages, setPendingImages] = useState<PendingImageAttachment[]>([]);
   const [streaming, setStreaming] = useState(false);
-  const [streamProgressIndex, setStreamProgressIndex] = useState(0);
+  const [streamStatus, setStreamStatus] = useState<CopilotStreamStatus | null>(null);
+  const [, setStreamPhaseTick] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [latestCopilotRequestId, setLatestCopilotRequestId] = useState<string | null>(null);
   const [latestLatencySnapshot, setLatestLatencySnapshot] = useState<CopilotLatencySnapshot | null>(null);
@@ -186,6 +186,7 @@ export function CopilotDrawer({
   const revealTimerRef = useRef<number | null>(null);
   const progressTimerRef = useRef<number | null>(null);
   const streamDoneRef = useRef(false);
+  const turnCancelledRef = useRef(false);
   const listEndRef = useRef<HTMLDivElement | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -374,12 +375,39 @@ export function CopilotDrawer({
     progressTimerRef.current = null;
   }
 
-  function startProgressTimer() {
+  function startPhaseTimer() {
     clearProgressTimer();
-    setStreamProgressIndex(0);
+    setStreamPhaseTick(0);
     progressTimerRef.current = window.setInterval(() => {
-      setStreamProgressIndex((value) => Math.min(value + 1, COPILOT_PROGRESS_STEP_COUNT - 1));
-    }, COPILOT_PROGRESS_INTERVAL_MS);
+      setStreamPhaseTick((value) => value + 1);
+    }, COPILOT_PHASE_TICK_MS);
+  }
+
+  function startStreamPhase(phase: CopilotStreamPhase, details?: Record<string, string | number | boolean | null>) {
+    clearProgressTimer();
+    const startedAt = nowMs();
+    setStreamStatus({ phase, startedAt, phaseStartedAt: startedAt, details });
+    startPhaseTimer();
+  }
+
+  function updateStreamPhase(phase: CopilotStreamPhase, details?: Record<string, string | number | boolean | null>) {
+    const phaseStartedAt = nowMs();
+    setStreamStatus((prev) => ({
+      phase,
+      startedAt: prev?.startedAt ?? phaseStartedAt,
+      phaseStartedAt: prev?.phase === phase ? prev.phaseStartedAt : phaseStartedAt,
+      requestId: prev?.requestId,
+      details,
+    }));
+  }
+
+  function updateStreamRequestId(requestId: string) {
+    setStreamStatus((prev) => prev ? { ...prev, requestId } : prev);
+  }
+
+  function finishStreamPhase(phase: CopilotStreamPhase = 'done') {
+    clearProgressTimer();
+    setStreamStatus((prev) => prev ? { ...prev, phase, phaseStartedAt: nowMs() } : prev);
   }
 
   function revealNextChunk() {
@@ -387,7 +415,7 @@ export function CopilotDrawer({
     const chunk = takeRevealChunk(revealQueueRef.current);
     if (!chunk) {
       if (streamDoneRef.current) {
-        clearProgressTimer();
+        finishStreamPhase('done');
         setStreaming(false);
         stopRef.current = null;
       }
@@ -406,10 +434,13 @@ export function CopilotDrawer({
 
   function finishAssistantReveal() {
     streamDoneRef.current = true;
-    if (revealTimerRef.current === null && !revealQueueRef.current) {
-      setStreaming(false);
-      stopRef.current = null;
+    if (revealTimerRef.current !== null || revealQueueRef.current) {
+      updateStreamPhase('revealing', { remainingChars: revealQueueRef.current.length });
+      return;
     }
+    finishStreamPhase('done');
+    setStreaming(false);
+    stopRef.current = null;
   }
 
   function flushAssistantReveal() {
@@ -454,6 +485,8 @@ export function CopilotDrawer({
     const messagesBeforeTurn = isEmptyAssistantMessage(conv.messages.at(-1)) ? conv.messages.slice(0, -1) : conv.messages;
     if (messagesBeforeTurn.length !== conv.messages.length) conv.popLast();
     const previousMessages = stripEmptyAssistantMessages(messagesBeforeTurn);
+    const expectedSourceImageCount = inferredIntent && imagesForTurn.length > 0 ? imagesForTurn.length : undefined;
+    turnCancelledRef.current = false;
     conv.append({
       role: 'user',
       content: messageText,
@@ -462,6 +495,19 @@ export function CopilotDrawer({
         ? { imageAttachments: imagesForTurn.map(toConversationImageAttachment) }
         : {}),
     });
+    conv.append({
+      role: 'assistant',
+      content: '',
+      providerId: 'kimi',
+      model: 'kimi-for-coding',
+      ...(attachedRef ? { attachedRef } : {}),
+      ...(expectedSourceImageCount ? { expectedSourceImageCount } : {}),
+    });
+    stopRef.current = () => {
+      turnCancelledRef.current = true;
+    };
+    startStreamPhase('preparing');
+    setStreaming(true);
     setInput('');
     if (!overridePrompt || options?.includePendingImages) setPendingImages([]);
     markPrep('userMessageShown');
@@ -481,6 +527,7 @@ export function CopilotDrawer({
         ? false
         : options?.forceContext === true || attachedRef === null || isFirstTurnWithThisAttached);
     if (shouldFetchContext) {
+      updateStreamPhase('context', { source: attachedRef ? attachedRef.type : 'library' });
       const contextStartedAt = nowMs();
       try {
         const result = await fetchAttachedContextCached(attachedRef, lang, messageText);
@@ -491,12 +538,13 @@ export function CopilotDrawer({
         prepTimings.contextFetchMs = roundMs(nowMs() - contextStartedAt);
         markPrep('contextReady');
       }
+      if (turnCancelledRef.current) return;
     }
 
-    const expectedSourceImageCount = inferredIntent && imagesForTurn.length > 0 ? imagesForTurn.length : undefined;
     const activeProjectId = options?.projectIdOverride ?? projectIdFromAttachedRef(attachedRef);
     let updateBaseline: CopilotUpdateBaseline | undefined;
     if ((inferredIntent === 'project-update' || inferredIntent === 'apply-learning-to-project') && activeProjectId && identity?.displayName) {
+      updateStreamPhase('baseline');
       const baselineStartedAt = nowMs();
       try {
         updateBaseline = await captureUpdateBaseline(activeProjectId, identity.displayName);
@@ -506,6 +554,8 @@ export function CopilotDrawer({
         prepTimings.baselineCaptureMs = roundMs(nowMs() - baselineStartedAt);
         markPrep('baselineReady');
       }
+      if (turnCancelledRef.current) return;
+      if (updateBaseline) conv.updateLast((msg) => msg.role === 'assistant' ? { ...msg, updateBaseline } : msg);
     }
 
     // Outbound: full conversation history + the new user turn.
@@ -522,21 +572,10 @@ export function CopilotDrawer({
 
     markPrep('requestBuilt');
 
-    conv.append({
-      role: 'assistant',
-      content: '',
-      providerId: 'kimi',
-      model: 'kimi-for-coding',
-      ...(attachedRef ? { attachedRef } : {}),
-      ...(expectedSourceImageCount ? { expectedSourceImageCount } : {}),
-      ...(updateBaseline ? { updateBaseline } : {}),
-    });
-
     clearRevealTimer();
     revealQueueRef.current = '';
     streamDoneRef.current = false;
-    startProgressTimer();
-    setStreaming(true);
+    updateStreamPhase('connecting');
     let receivedDelta = false;
     const stop = copilotApi.streamChat(
       {
@@ -549,6 +588,7 @@ export function CopilotDrawer({
       },
       {
         onDelta: (delta) => {
+          if (!receivedDelta) updateStreamPhase('generating', { deltaChars: delta.length });
           receivedDelta = true;
           enqueueAssistantDelta(delta);
         },
@@ -556,9 +596,12 @@ export function CopilotDrawer({
           finishAssistantReveal();
         },
         onError: (message, requestId) => {
-          if (requestId) setLatestCopilotRequestId(requestId);
+          if (requestId) {
+            setLatestCopilotRequestId(requestId);
+            updateStreamRequestId(requestId);
+          }
           flushAssistantReveal();
-          clearProgressTimer();
+          finishStreamPhase('error');
           if (!receivedDelta) conv.popLast();
           setError(message);
           setStreaming(false);
@@ -566,9 +609,16 @@ export function CopilotDrawer({
         },
         onRequestId: (requestId) => {
           setLatestCopilotRequestId(requestId);
+          updateStreamRequestId(requestId);
         },
         onTiming: (event) => {
-          if (event.requestId) setLatestCopilotRequestId(event.requestId);
+          if (event.requestId) {
+            setLatestCopilotRequestId(event.requestId);
+            updateStreamRequestId(event.requestId);
+          }
+          if (event.phase === 'responseHeaders' || event.phase === 'firstSseFrame') updateStreamPhase('waitingModel');
+          if (event.phase === 'firstDelta') updateStreamPhase('generating', event.details);
+          if (event.phase === 'networkDone' && revealQueueRef.current.length > 0) updateStreamPhase('revealing', { remainingChars: revealQueueRef.current.length });
         },
         onSnapshot: (snapshot) => {
           const merged: CopilotLatencySnapshot = {
@@ -577,6 +627,7 @@ export function CopilotDrawer({
           };
           setLatestLatencySnapshot(merged);
           setLatestCopilotRequestId(merged.requestId ?? null);
+          if (merged.requestId) updateStreamRequestId(merged.requestId);
           console.info('Copilot latency snapshot', safeTimingDetails({
             requestId: merged.requestId ?? '',
             keyResolveMs: merged.client.keyResolveMs ?? 0,
@@ -595,11 +646,14 @@ export function CopilotDrawer({
   }
 
   function handleStop() {
+    turnCancelledRef.current = true;
     stopRef.current?.();
     stopRef.current = null;
     clearRevealTimer();
+    clearProgressTimer();
     revealQueueRef.current = '';
     streamDoneRef.current = false;
+    setStreamStatus(null);
     if (isEmptyAssistantMessage(conv.messages.at(-1))) conv.popLast();
     setStreaming(false);
   }
@@ -728,7 +782,7 @@ export function CopilotDrawer({
           attachedRef={attachedRef}
           messages={conv.messages}
           streaming={streaming}
-          streamProgressIndex={streamProgressIndex}
+          streamStatus={streamStatus}
           error={error}
           latestRequestId={latestCopilotRequestId}
           latestLatencySnapshot={latestLatencySnapshot}
@@ -1462,7 +1516,7 @@ function ChatPane({
   attachedRef,
   messages,
   streaming,
-  streamProgressIndex,
+  streamStatus,
   error,
   latestRequestId,
   latestLatencySnapshot,
@@ -1504,7 +1558,7 @@ function ChatPane({
   attachedRef: AttachedRef | null;
   messages: ConversationMessage[];
   streaming: boolean;
-  streamProgressIndex: number;
+  streamStatus: CopilotStreamStatus | null;
   error: string | null;
   latestRequestId: string | null;
   latestLatencySnapshot: CopilotLatencySnapshot | null;
@@ -1658,7 +1712,7 @@ function ChatPane({
                 key={m.id}
                 message={m}
                 streaming={streaming && index === messages.length - 1}
-                progressIndex={streamProgressIndex}
+                streamStatus={index === messages.length - 1 ? streamStatus : null}
                 allowProjectDrafts={allowProjectDrafts}
                 lang={lang}
                 displayName={displayName}
@@ -2074,7 +2128,7 @@ function starterTone(tone: StarterTone): {
 function MessageBubble({
   message,
   streaming,
-  progressIndex,
+  streamStatus,
   allowProjectDrafts,
   lang,
   displayName,
@@ -2086,7 +2140,7 @@ function MessageBubble({
 }: {
   message: ConversationMessage;
   streaming: boolean;
-  progressIndex: number;
+  streamStatus: CopilotStreamStatus | null;
   allowProjectDrafts: boolean;
   lang: Lang;
   displayName: string;
@@ -2132,7 +2186,7 @@ function MessageBubble({
         }`}
       >
         {isEmptyAssistant && streaming ? (
-          <CopilotStreamingProgress progressIndex={progressIndex} />
+          <CopilotStreamingProgress status={streamStatus} />
         ) : isUser ? (
           <div className="space-y-2">
             <span style={{ whiteSpace: 'pre-wrap' }}>{message.content}</span>
@@ -2198,37 +2252,58 @@ function MessageBubble({
   );
 }
 
-function CopilotStreamingProgress({ progressIndex }: { progressIndex: number }) {
+function CopilotStreamingProgress({ status }: { status: CopilotStreamStatus | null }) {
   const { t } = useTranslation();
-  const activeIndex = Math.max(0, Math.min(progressIndex, COPILOT_PROGRESS_STEP_COUNT - 1));
-  return (
-    <div className="min-w-0 space-y-2">
-      {Array.from({ length: activeIndex + 1 }, (_, index) => (
-        <div
-          key={index}
-          className={`rounded-xl border px-3 py-2 ${
-            index === activeIndex
-              ? 'border-emerald-100 bg-white text-gray-700 shadow-sm'
-              : 'border-gray-100 bg-white/70 text-gray-500'
-          }`}
-        >
-          <ThinkingIndicator label={t(`library.copilot.progress.${index}`)} />
-        </div>
-      ))}
-    </div>
-  );
-}
+  const now = nowMs();
+  const phase = status?.phase ?? 'preparing';
+  const totalSeconds = status ? elapsedSeconds(status.startedAt, now) : 0;
+  const phaseSeconds = status ? elapsedSeconds(status.phaseStartedAt, now) : 0;
+  const slowLevel = slowWaitLevel(phase, phaseSeconds);
+  const activeIndex = phaseStepIndex(phase);
+  const phaseKey = `library.copilot.phase.${phase}`;
+  const description = slowLevel > 0
+    ? t(`${phaseKey}.slow${slowLevel}`, { defaultValue: t(`${phaseKey}.description`) })
+    : t(`${phaseKey}.description`);
+  const steps = ['prepare', 'connect', 'analyze', 'generate', 'polish'];
 
-function ThinkingIndicator({ label }: { label: string }) {
   return (
-    <span className="inline-flex items-center gap-2 text-gray-500">
-      <span className="relative flex h-2.5 w-8 items-center justify-between">
-        <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.2s]" />
-        <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.1s]" />
-        <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gray-400" />
-      </span>
-      <span className="text-[12px] italic">{label}</span>
-    </span>
+    <div className="min-w-0 overflow-hidden rounded-2xl border border-emerald-100 bg-gradient-to-br from-white via-emerald-50/80 to-white p-3 shadow-sm">
+      <div className="flex items-start gap-3">
+        <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 shadow-inner">
+          <span className="relative flex h-3 w-4 items-center justify-between">
+            <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-emerald-600 [animation-delay:-0.2s]" />
+            <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-emerald-500 [animation-delay:-0.1s]" />
+            <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-emerald-400" />
+          </span>
+        </span>
+        <div className="min-w-0 flex-1 space-y-2">
+          <div>
+            <div className="text-[13px] font-semibold text-gray-950">{t(`${phaseKey}.title`)}</div>
+            <p className="mt-0.5 text-[12px] leading-relaxed text-gray-600">{description}</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-1.5 text-[10px] text-gray-500">
+            <span className="rounded-full border border-emerald-100 bg-white/80 px-2 py-0.5">
+              {t('library.copilot.phaseMeta.elapsed', { seconds: totalSeconds })}
+            </span>
+            {status?.requestId && (
+              <span className="rounded-full border border-slate-100 bg-white/80 px-2 py-0.5 font-mono" title={status.requestId}>
+                {t('library.copilot.phaseMeta.requestId', { requestId: shortRequestId(status.requestId) })}
+              </span>
+            )}
+          </div>
+          <div className="grid grid-cols-5 gap-1">
+            {steps.map((step, index) => (
+              <div key={step} className="min-w-0">
+                <div className={`h-1 rounded-full ${index < activeIndex ? 'bg-emerald-500' : index === activeIndex ? 'bg-gray-900' : 'bg-gray-200'}`} />
+                <div className={`mt-1 truncate text-[9px] ${index <= activeIndex ? 'text-gray-700' : 'text-gray-400'}`}>
+                  {t(`library.copilot.phaseSteps.${step}`)}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
