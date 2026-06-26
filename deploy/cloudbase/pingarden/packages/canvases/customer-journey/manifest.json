@@ -1,0 +1,65 @@
+{
+  "id": "customer-journey",
+  "name": {
+    "en": "Customer Journey",
+    "zh": "用户旅程"
+  },
+  "viewBox": [0, 0, 1400, 900],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false,
+      "subtitle": {
+        "en": "Map a customer's needs, key moments, and emotional curve across stages",
+        "zh": "按阶段呈现客户需求、关键时刻与情绪曲线"
+      }
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "related": ["empathy-map", "value-proposition-canvas", "jobs-to-be-done"],
+  "relatedNotes": {
+    "empathy-map": {
+      "en": "If the persona feels generic, build the Empathy Map first to anchor the journey to a specific person.",
+      "zh": "如果 persona 太空，先做 Empathy Map 把旅程锚到具体的人。"
+    },
+    "value-proposition-canvas": {
+      "en": "Friction at any journey stage is a Pain; moments of delight are Gains. Feed both back into VPC and use Bain tags only where the value is actually perceived.",
+      "zh": "旅程任何阶段的摩擦都是 VPC 的痛点，惊喜时刻是收益；回写到 VPC，并只给真实被感知的价值加 Bain 标签。"
+    },
+    "jobs-to-be-done": {
+      "en": "The journey's biggest dip usually points at an unmet job — turn that into a JTBD canvas.",
+      "zh": "旅程里最大的凹陷通常对应一条未满足的工作 —— 把它转成一张 JTBD 画布。"
+    }
+  },
+  "zones": [
+    {
+      "id": "persona",
+      "shape": { "type": "rect", "x": 40, "y": 20, "w": 1320, "h": 80 },
+      "label": { "x": 60, "y": 68, "align": "left", "fontSize": 26 }
+    },
+    {
+      "id": "needs",
+      "shape": { "type": "rect", "x": 220, "y": 120, "w": 1140, "h": 220 },
+      "label": { "x": 60, "y": 166, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "key-moment",
+      "shape": { "type": "rect", "x": 220, "y": 360, "w": 1140, "h": 270 },
+      "label": { "x": 60, "y": 406, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "satisfaction",
+      "shape": { "type": "rect", "x": 220, "y": 650, "w": 1140, "h": 230 },
+      "label": { "x": 60, "y": 696, "align": "left", "fontSize": 28 }
+    }
+  ]
+}

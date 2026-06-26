@@ -1,0 +1,57 @@
+{
+  "slug": "nespresso",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Nespresso",
+    "zh": "Nespresso(浓遇咖啡)"
+  },
+  "summary": {
+    "en": "Nestlé's premium single-serve espresso system. Originally patented 1976, internally developed at Nestlé through the 1980s, commercially launched 1986, and famously took ~20 years before turning profitable — the canonical example of a slow-burn bait-and-hook business that almost died several times before working. Sells coffee machines (the bait) at low or zero margin through Nespresso boutiques, online, and partner retailers; sells proprietary aluminium capsules (the hook) at ~CHF 0.50-0.70 each through the Nespresso Club and boutique stores at gross margins reportedly above 80%. The capsule geometry was patent-protected — the original Original-line patent expired ~2012-2014, opening the door to compatible third-party capsules; Nespresso responded with the new-geometry Vertuo line (2014, fresh patents). George Clooney's 'Nespresso. What else?' campaign (2006-onward) is the textbook brand build that turned a struggling product into a luxury status symbol. The case shows the asymmetric BMC pair — machines (bait) + capsules (hook) — that codifies the modern bait-and-hook descendant of Gillette's 1901 urtype.",
+    "zh": "雀巢旗下的高端单次冲泡浓缩咖啡系统。专利最早可追溯到 1976 年,1980 年代在雀巢内部研发,1986 年商业上市,著名地用了约 20 年才扭亏为盈 —— 这是「诱饵 + 钩子」慢速燃烧型业务的经典案例,过程中几乎好几次差点被砍掉。咖啡机(诱饵)以低利或零利通过 Nespresso 精品店、官网、合作零售商出售;专属铝胶囊(钩子)以每颗 CHF 0.50-0.70 的价格通过 Nespresso 俱乐部和精品店出售,毛利据报道在 80% 以上。胶囊接口由专利保护 —— 最早的 Original 系列专利在 2012-2014 年间过期,打开了第三方兼容胶囊的口子;Nespresso 用全新接口的 Vertuo 系列(2014,新专利)做应对。乔治·克鲁尼那句「Nespresso. What else?」广告(2006 年起)是教科书级的品牌打造,把一个挣扎中的产品变成了奢侈品级的身份象征。本案例呈现了那对不对称 BMC —— 咖啡机(诱饵)+ 胶囊(钩子) —— 把吉列 1901 原型在现代语境下的「诱饵 + 钩子」继承者讲清楚。"
+  },
+  "tags": [
+    "coffee",
+    "premium-consumer",
+    "bait-and-hook",
+    "lock-in",
+    "Switzerland",
+    "Nestle"
+  ],
+  "sources": [
+    {
+      "label": "Joachim Schoettli (Nespresso CEO 2000-2008) interviews · various Swiss + FT 2007-2010"
+    },
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (bait-and-hook example, Free pattern, pp. 100-103)"
+    },
+    {
+      "label": "Osterwalder, Pigneur, Bernarda & Smith · Value Proposition Design · Wiley · 2014 (Design constraints: razor-blade / recurring consumable example, p. 90)"
+    },
+    {
+      "label": "Chris Anderson · Free: The Future of a Radical Price · Hyperion · 2009"
+    },
+    {
+      "label": "Reuters · 'Nespresso loses dominance as patents expire' · 2014",
+      "url": "https://www.reuters.com/"
+    },
+    {
+      "label": "Nestlé Annual Reports (Nespresso revenue disclosures, 2010-2024)",
+      "url": "https://www.nestle.com/investors"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "48da6e18-16e8-4963-b652-a4e432c980c2",
+  "canvasCount": 4,
+  "storyCount": 4,
+  "appliesPatterns": [
+    "free",
+    "from-transactional-to-recurring-revenue"
+  ],
+  "appliesPatternSubtypes": {
+    "free": "bait-and-hook"
+  },
+  "appliesStrategyFrameworks": [
+    "bain-elements-of-value"
+  ]
+}

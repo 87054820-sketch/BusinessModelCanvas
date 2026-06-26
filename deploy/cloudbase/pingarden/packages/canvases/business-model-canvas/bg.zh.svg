@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Placeholder 中文 Business Model Canvas background.
+  Identical proportions to bg.en.svg so the same drop-zone manifest applies.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1190 842" width="1190" height="842" preserveAspectRatio="xMidYMid meet">
+  <rect x="0" y="0" width="1190" height="842" fill="#FAFAF7"/>
+
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <rect x="0"   y="0"   width="238" height="572"/>
+    <rect x="238" y="0"   width="238" height="286"/>
+    <rect x="238" y="286" width="238" height="286"/>
+    <rect x="476" y="0"   width="238" height="572"/>
+    <rect x="714" y="0"   width="238" height="286"/>
+    <rect x="714" y="286" width="238" height="286"/>
+    <rect x="952" y="0"   width="238" height="572"/>
+    <rect x="0"   y="572" width="595" height="270"/>
+    <rect x="595" y="572" width="595" height="270"/>
+  </g>
+</svg>

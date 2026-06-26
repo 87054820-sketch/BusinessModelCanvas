@@ -1,0 +1,98 @@
+{
+  "slug": "discussion-forums",
+  "name": {
+    "en": "Discussion Forums",
+    "zh": "论坛潜伏"
+  },
+  "summary": {
+    "en": "Passive listening on Reddit, Discord, Slack communities, Hacker News, Twitter, and niche industry forums where your target customer already hangs out. The cheapest discovery surface — text customers wrote unprompted is gold.",
+    "zh": "在 Reddit / Discord / Slack 社区 / Hacker News / 微博 / 知乎 / 行业论坛等目标客户已经聚集的地方被动观察。最便宜的探索面 —— 客户没人提示时主动写的东西是金子。"
+  },
+  "theme": "discovery",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "weak",
+  "cost": "cheap",
+  "setupTime": "hours",
+  "runTime": "days",
+  "capabilities": [
+    "community-research",
+    "qualitative-coding",
+    "search-querying"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "empathy-map",
+    "jobs-to-be-done"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Discussion Forums"
+    }
+  ],
+  "examples": [
+    {
+      "company": {
+        "en": "Product Hunt",
+        "zh": "Product Hunt"
+      },
+      "year": "2013",
+      "headline": {
+        "en": "A tiny community signal before a full platform.",
+        "zh": "在做完整平台之前，先看小社区有没有信号。"
+      },
+      "story": {
+        "en": "Ryan Hoover first tested Product Hunt as a lightweight link-sharing group. He invited startup friends, announced it on Quibb, a technology-focused online community, and Twitter, then watched whether product people would contribute, click, discuss, and share. The community response showed a real appetite for a place to discover new products.",
+        "zh": "Ryan Hoover 最初把 Product Hunt 做成一个轻量链接分享组。他邀请创业圈朋友参与，并在技术社区 Quibb 和 Twitter 上发布，观察产品人是否会贡献链接、点击、讨论和分享。社区反应显示，用户确实需要一个发现新产品的地方。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Product Hunt case study, pp. 166-167; Discussion Forums, pp. 134-137"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile organic-demand assumption.</em></p><p>e.g. <strong>[Target community]</strong> already discusses <strong>[problem/topic]</strong> with enough urgency that our solution angle can earn attention without paid promotion.</p>",
+          "zh": "<p><em>替换成一条最脆弱的自然需求假设。</em></p><p>例如：<strong>[目标社区]</strong> 已经高频且高紧迫度地讨论 <strong>[问题 / 主题]</strong>，我们的方案角度能在无付费推广下获得注意。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [target community] contains visible pull for [problem/topic].</p><p><strong>To verify, we will</strong> analyze 50 relevant threads and make 5 value-adding posts/comments across 3 communities within 7 days.</p><p><strong>And measure</strong> frequency, sentiment, engagement, direct replies, and invitations to continue the conversation.</p><p><strong>We are right if</strong> ≥ 20 threads show acute pain and ≥ 10 qualified members engage with our contributions.</p>",
+          "zh": "<p><strong>我们相信</strong> [目标社区] 中已经存在对 [问题 / 主题] 的可见拉力。</p><p><strong>为了验证，我们将</strong> 在 7 天内分析 50 条相关讨论，并在 3 个社区发布 / 回复 5 条有价值内容。</p><p><strong>并测量</strong> 频次、情绪、互动、直接回复和继续对话邀请。</p><p><strong>如果</strong> ≥ 20 条讨论呈现强痛点，且 ≥ 10 位合格成员与我们的贡献互动 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Map communities:</strong> choose 3 places where the segment already asks for help: Reddit, Product Hunt, Indie Hackers, Discord, Slack, Facebook groups, or niche forums. Define keywords and exclusion terms.</p><p><strong>Observe first:</strong> collect 50 threads from the last 90 days. Tag problem wording, workaround, emotion, requested alternatives, upvotes/comments, and member profile.</p><p><strong>Participate:</strong> write 5 non-promotional contributions: answer a question, share a checklist, ask a clarifying question, or offer a lightweight resource. Track replies and invite 5 qualified members to short discovery calls.</p>",
+          "zh": "<p><strong>定位社区：</strong>选择 3 个目标客群已经求助的地方：Reddit、Product Hunt、Indie Hackers、Discord、Slack、Facebook 群或垂直论坛。定义关键词和排除词。</p><p><strong>先观察：</strong>收集最近 90 天的 50 条讨论。标注问题表达、绕行方案、情绪、请求的替代品、点赞 / 评论和成员画像。</p><p><strong>再参与：</strong>写 5 条非推广贡献：回答问题、分享清单、追问细节或提供轻量资源。跟踪回复，并邀请 5 位合格成员进行短访谈。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 20/50 threads show acute pain; ≥ 10 qualified engagements; ≥ 3 members agree to a follow-up call or waitlist.</p><p><strong>Fail:</strong> discussion is mostly curiosity, vendor spam, or too broad to identify an ICP.</p><p><strong>Inconclusive:</strong> one community is strong but others are weak; narrow to that community and rerun with 30 more threads.</p>",
+          "zh": "<p><strong>通过：</strong>≥ 20/50 条讨论呈现强痛点；≥ 10 次合格互动；≥ 3 位成员同意后续访谈或加入候补。</p><p><strong>失败：</strong>讨论主要是好奇、供应商广告，或过宽导致无法识别 ICP。</p><p><strong>不清晰：</strong>一个社区信号强、其他弱；缩到强社区，再补 30 条讨论。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Threads reviewed: __ ; Acute-pain threads: __ ; Qualified engagements: __ ; Follow-up opt-ins: __ .</p><p>Best community: __ . Repeated wording: __ . Verdict: validated / invalidated / inconclusive.</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>已分析讨论：__；强痛点讨论：__；合格互动：__；后续同意数：__。</p><p>最佳社区：__。重复措辞：__。结论：已验证 / 已证伪 / 不清晰。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → invite engaged members into Customer Interviews or a Concierge pilot.<br/>• <strong>Pivot</strong> → reposition around the words and subsegment that generated engagement.<br/>• <strong>Kill</strong> → if the community shows no organic pull, do not rely on this as an early channel.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 邀请互动成员进入客户访谈或 Concierge 试点。<br/>• <strong>Pivot</strong> → 围绕产生互动的措辞和子客群重新定位。<br/>• <strong>Kill</strong> → 如果社区没有自然拉力，不要把它当早期渠道。</p>"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "23021172-4b1c-4b15-96f1-0d715e8bb23e",
+  "projectId": "02df9825-ac03-4cb3-b894-dc93612c11fd",
+  "defId": "business-model-canvas",
+  "title": "[EN] Patagonia — \"Earth is our only shareholder\"",
+  "language": "en",
+  "variant": {
+    "id": "main-en",
+    "label": {
+      "en": "Patagonia (EN)",
+      "zh": "Patagonia(英文版)"
+    },
+    "description": {
+      "en": "BMC of Patagonia's current operating model, with the strategic-differentiation cells highlighting the moves that distinguish it from a generic outdoor-apparel brand.",
+      "zh": "Patagonia 现行运营模式的商业画布,其中黄色「战略差异点」格子突出与同行不同的招式。"
+    }
+  },
+  "createdAt": "2026-06-12T12:05:31.459Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-12T12:05:31.459Z",
+  "updatedBy": "PinGarden Library"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "lulu-com",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Lulu.com",
+    "zh": "Lulu.com(露露在线出版)"
+  },
+  "summary": {
+    "en": "Self-publishing platform founded by Bob Young (the Red Hat founder) in 2002. Lulu inverts traditional bestseller-centric publishing by letting any author publish a book through print-on-demand and an online marketplace — books are printed only after a buyer orders one. Strategyzer's flagship Long Tail example. The case contrasts traditional book publishing (the bundled archetype), Lulu in 2006 (the breakthrough described in Business Model Generation), and Lulu in 2025 (current state with AI-assisted publishing tools and Shopify/Amazon distribution).",
+    "zh": "Bob Young(Red Hat 创始人)2002 年创立的自助出版平台。Lulu 把传统「先选爆款、后印发售」的出版逻辑彻底翻转 —— 让任何作者通过按需印刷和在线市场发表作品,只在买家下单后才印书。Strategyzer 长尾模式的旗舰示例。本案例对照三张 BMC:传统图书出版业(被颠覆的捆绑型行业基线)、2006 年的 Lulu(《商业模式新生代》中描述的突破),以及 2025 年的 Lulu(当前状态,带 AI 辅助出版工具与 Shopify / Amazon 分发集成)。"
+  },
+  "tags": [
+    "publishing",
+    "self-publishing",
+    "platform",
+    "long-tail",
+    "print-on-demand",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (pp. 70-71)"
+    },
+    {
+      "label": "Chris Anderson · The Long Tail · Hyperion · 2006"
+    },
+    {
+      "label": "Lulu.com · About + Lulu Studio launch",
+      "url": "https://www.lulu.com/about"
+    },
+    {
+      "label": "Bob Young · Lulu Press founder interviews · Inc / Forbes archive"
+    },
+    {
+      "label": "Lulu Direct + Print API documentation (2024)",
+      "url": "https://developers.lulu.com/"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "3b1d113f-3e0c-431a-a13c-8c103d5f2330",
+  "canvasCount": 6,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "long-tail",
+    "multi-sided-platforms"
+  ]
+}

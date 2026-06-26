@@ -1,0 +1,119 @@
+{
+  "slug": "wizard-of-oz",
+  "name": {
+    "en": "Wizard of Oz",
+    "zh": "绿野仙踪 (Wizard of Oz)"
+  },
+  "summary": {
+    "en": "Frontend looks fully automated; backend is humans pretending to be the product. Used to validate desirability + parts of feasibility before building the expensive automation.",
+    "zh": "前端看起来全自动;后端实际是人在假扮产品。用来在造昂贵的自动化之前,验证需求性 + 部分可行性。"
+  },
+  "theme": "validation",
+  "risks": [
+    "desirability",
+    "feasibility"
+  ],
+  "evidenceStrength": "medium",
+  "cost": "medium",
+  "setupTime": "days",
+  "runTime": "weeks",
+  "capabilities": [
+    "manual-operations",
+    "ux-design",
+    "customer-support"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "business-model-canvas",
+    "customer-journey"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-9 Wizard of Oz"
+    }
+  ],
+  "examples": [
+    {
+      "company": {
+        "en": "Zappos",
+        "zh": "Zappos"
+      },
+      "year": "1999",
+      "headline": {
+        "en": "Don't build the warehouse until you know people will buy.",
+        "zh": "在知道有人买之前,别建仓库。"
+      },
+      "story": {
+        "en": "Nick Swinmurn had been hunting for a specific pair of shoes at the mall and couldn't find them. The problem felt big — but he had no proof people would buy shoes online sight-unseen, and building inventory + warehousing for a national e-commerce shoe store would burn millions before he learned anything. Instead, Nick walked into local San Francisco shoe stores, asked permission to photograph their inventory, posted the photos on a simple website, and waited. When an order came in, he walked back into the store, bought the pair at retail price, and shipped it to the customer. From the buyer's side, Zappos looked like an online shoe retailer. Behind the curtain, it was Nick playing logistics by hand.",
+        "zh": "Nick Swinmurn 当时在商场里找一双特定的鞋,死活找不到。这个痛感觉很大 —— 但他没有证据证明人们会在没看实物的情况下网购鞋子,而要为一个全国性的鞋类电商建库存 + 仓储,在他学到任何东西之前就要烧掉好几百万美元。Nick 没这么干,而是走进旧金山本地的鞋店,征得许可拍下他们的库存,把照片发到一个简单的网站上,然后等。订单一来,他就走回那家店,按零售价买下来,寄给客户。买家看到的 Zappos 像一个网络鞋店;幕后,是 Nick 在用人肉跑物流。"
+      },
+      "hypothesis": {
+        "en": "Nick believed people would buy shoes online without trying them on, given a clean catalog and a no-fuss return policy. He needed evidence before committing to inventory.",
+        "zh": "Nick 相信:如果有干净的商品目录和无麻烦的退货政策,人们会在不试穿的情况下网购鞋子。在投钱压库存之前,他需要证据。"
+      },
+      "experiment": {
+        "en": "Nick built a basic web catalog populated with photos taken (with permission) at local shoe stores. He took orders, walked to the store to buy the pair at retail, then shipped it personally. There was no warehouse, no logistics partner, no inventory — just Nick acting as the entire backend while the front-end looked like a real e-commerce store.",
+        "zh": "Nick 搭了一个基础的网页目录,商品图都是经允许后在本地鞋店拍的。订单一进来,他亲自走去店里按零售价买下,自己打包寄出。没有仓库、没有物流伙伴、没有库存 —— Nick 一个人扮演整个后端,前端则看起来是个真实的电商。"
+      },
+      "evidence": {
+        "en": "Orders kept coming. Customers paid retail or above for shoes they'd never tried on, returned the rare wrong-fit purchase via mail without complaint, and many came back for a second order. The unit economics were terrible (Nick was losing margin on every sale), but the desirability question — \"will people buy shoes online?\" — was answered yes.",
+        "zh": "订单源源不断。客户为没试穿过的鞋付了零售价甚至更高,偶尔尺码不合也愿意邮寄退货、不抱怨;很多人会回来下第二单。单位经济很烂(Nick 每一单都在亏毛利),但需求性问题 ——「人们会网购鞋子吗?」—— 已经被回答:会。"
+      },
+      "insights": {
+        "en": "The bet wasn't really about shoes — it was about whether trust, photo quality, and return policy could compensate for not trying on. The Wizard let Nick learn that customers were forgiving as long as the front-end experience was credible. Once that was proved, building the actual warehouse was a feasibility-and-scale problem, not a desirability one.",
+        "zh": "赌的不是鞋本身 —— 而是「信任 + 图片质量 + 退货政策」能否替代试穿。Wizard of Oz 让 Nick 学到:只要前端体验可信,客户是宽容的。需求性一旦被证明,建实体仓库就只是可行性 + 规模问题,而不再是需求性问题。"
+      },
+      "actions": {
+        "en": "Nick raised funding on the back of this evidence, built real inventory + warehouse operations, and grew Zappos into a $1 billion+ online shoe retailer acquired by Amazon in 2009 for $1.2B.",
+        "zh": "Nick 拿这一段证据去融资,真正建起库存 + 仓储,把 Zappos 做成了 10 亿美元级的在线鞋类零售商,2009 年被 Amazon 以 12 亿美元收购。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Wizard of Oz chapter; Eric Ries · The Lean Startup · 2011"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile assumption.</em></p><p>e.g. <strong>[Customers in segment X]</strong> will <strong>buy / use</strong> [the offering] often enough that we can justify automating the [hidden manual back-end].</p>",
+          "zh": "<p><em>替换成一条最致命的假设。</em></p><p>例如:<strong>[客户群体 X]</strong> 会 <strong>购买 / 使用</strong> [提供物] 的频率,足以让我们投资把 [隐藏的人工后端] 自动化。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [target customers] will engage with [the offering] as if it's a real product.</p><p><strong>To verify, we will</strong> ship a believable front-end and run the back-end manually behind the curtain.</p><p><strong>And measure</strong> orders / activations / repeat usage over a 4-week window.</p><p><strong>We're right if</strong> ≥ 30 paying transactions complete and ≥ 25% of customers come back for a 2nd action.</p>",
+          "zh": "<p><strong>我们相信</strong> [目标客户] 会把 [提供物] 当作真实产品来使用。</p><p><strong>为了验证,我们将</strong> 上线一个可信的前端,后端用人工在幕后处理。</p><p><strong>并测量</strong> 4 周内的订单 / 激活 / 复购。</p><p><strong>如果</strong> 完成 ≥ 30 笔付费交易 且 ≥ 25% 客户回头做第二次行动 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Build the front-end:</strong> a credible website / app surface — clean copy, real branding, a working checkout / submission flow. No \"BETA\" or \"prototype\" disclaimers; the user must believe they're using a real product. Whatever the front-end promises (delivery time, price, response speed) becomes your back-end SLA. Define it explicitly before launch.</p><p><strong>Staff the back-end manually:</strong> 1-2 humans on call to fulfil each order or request behind the curtain — receive the order, do the actual work (curate / pick / configure / answer), deliver via the same channel the front-end promised. Set a daily throughput cap (e.g. 5 orders / day) and pause new orders rather than break SLA. Run for 4 weeks.</p><p><strong>Instrument both layers:</strong> log every customer-facing action (page view, click, order, support ticket) AND every back-end step (time-to-fulfil, hand-off count, rework rate). Interview 5-10 customers post-fulfilment. You're collecting two things in parallel: desirability evidence (do they come back?) AND the labour-cost data you'll need to justify automation later.</p>",
+          "zh": "<p><strong>搭前端:</strong> 一个可信的网站 / app 表面 —— 干净的文案、真实的品牌、能跑通的下单 / 提交流程。不要写「BETA」或「原型」;必须让用户相信他们在用一个真实产品。前端承诺什么(交付时间、价格、响应速度)就是你的后端 SLA。上线前明确写下来。</p><p><strong>后端人工值班:</strong> 1-2 人随叫随到,在幕后完成每一单或每一次请求 —— 接单、做实事(筛选 / 拣货 / 配置 / 回复)、按前端承诺的同一渠道交付。设每日吞吐上限(如每天 5 单),超出就暂停新订单,绝不砸 SLA。跑 4 周。</p><p><strong>两层都埋点:</strong> 记录每一次客户侧动作(浏览、点击、下单、客服工单)和每一步后端动作(履约耗时、转手次数、返工率)。完单后访谈 5-10 位客户。你在同时收两件事:需求性证据(他们会回来吗?)+ 后期论证自动化所需的人力成本数据。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 30 completed paid transactions in 4 weeks, ≥ 25% repeat rate within the window, NPS ≥ 30 from completers, &lt; 10% complaints surfacing the manual nature.</p><p><strong>Fail:</strong> &lt; 10 completions, OR &gt; 30% complain about the experience (signal: the front-end illusion broke), OR repeat rate &lt; 10%.</p><p><strong>Watch the labour curve:</strong> if each order takes &gt; 1h human time, the eventual automation business case must clear that bar — track hours/order weekly to project automation ROI.</p><p><strong>Watch hand-offs:</strong> count how many human steps each order touches. The first automation candidate is whichever step has the highest cost × volume.</p>",
+          "zh": "<p><strong>通过:</strong> 4 周内 ≥ 30 笔完成付款,窗口内复购 ≥ 25%,完成者 NPS ≥ 30,&lt; 10% 的客户投诉触及到「人工」这件事。</p><p><strong>失败:</strong> 完成 &lt; 10 单,或 &gt; 30% 抱怨体验(信号:前端幻觉破了),或复购 &lt; 10%。</p><p><strong>盯人力曲线:</strong> 如果每单花 &gt; 1 小时人工,后续自动化的商业价值必须能盖住这条线 —— 按周跟踪「小时/单」,推算自动化 ROI。</p><p><strong>盯转手次数:</strong> 数每单经过几步人工。优先要自动化的,是「成本 × 频次」最高的那一步。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Completed orders: __ ; Repeat rate: __ %; Avg back-end labour: __ min/order; NPS: __ .</p><p>Most painful manual step: __ . Most surprising delight moment: __ . % of customers who suspected the manual nature: __ %.</p><p>Verdict: validated / invalidated / inconclusive. One-line summary of why: __ .</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>完成订单:__ ; 复购:__ %; 后端人均耗时:__ 分钟/单;NPS:__ 。</p><p>最痛的人工步骤:__ 。最意外的惊喜点:__ 。怀疑「这是人工」的客户比例:__ %。</p><p>结论:已验证 / 已证伪 / 不清晰。一句话原因:__ 。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → automate the highest-cost-×-volume manual step first; keep the rest manual until volume justifies. Run a <strong>Pre-Sale</strong> in parallel to harden willingness-to-pay before scaling capacity.<br/>• <strong>Pivot</strong> → demand exists but for a different shape — adjust offering scope (smaller bundle, different segment, different price point) and re-run.<br/>• <strong>Kill</strong> → either the front-end illusion broke (customers found it suspect) OR the labour cost can't shrink enough to be viable. Reopen <strong>Customer Interviews</strong> to reframe the underlying job.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 优先自动化「成本 × 频次」最高的那一步,其余继续人工,等量起来再投。同时跑一个 <strong>Pre-Sale</strong>,在扩容之前把付费意愿夯实。<br/>• <strong>Pivot</strong> → 需求存在但形状不同 —— 调整提供物范围(更小的捆绑、换人群、换价位),再跑一次。<br/>• <strong>Kill</strong> → 要么前端幻觉破了(客户怀疑了),要么人力成本压不下来无法成立。重开 <strong>客户访谈</strong>,重新框定底层 Job。</p>"
+        }
+      }
+    ]
+  }
+}

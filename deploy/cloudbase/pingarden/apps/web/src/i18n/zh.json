@@ -1,0 +1,807 @@
+{
+  "app": {
+    "title": "PinGarden",
+    "subtitle": "为团队打造的实时战略画布"
+  },
+  "nav": {
+    "back": "返回",
+    "history": "历史版本"
+  },
+  "language": {
+    "label": "语言",
+    "en": "English",
+    "zh": "中文"
+  },
+  "home": {
+    "title": "项目",
+    "newProject": "+ 新建项目",
+    "empty": "还没有项目,创建一个开始使用吧。",
+    "loading": "加载中…",
+    "projectsHint": "你的工作区",
+    "noDescription": "暂无描述",
+    "canvasCount_one": "{{count}} 张画布",
+    "canvasCount_other": "{{count}} 张画布",
+    "updated": "更新于 {{time}}",
+    "templates": "分析画布",
+    "templatesHint": "选一个画布模板开启战略项目。",
+    "noCanvasesYet": "尚无画布",
+    "welcomeTitle": "欢迎来到 PinGarden",
+    "welcomeIntro": "用结构化画布拆解商业模式、推演战略选择，并把关键假设转化为可验证的行动。",
+    "welcomeSubtitle": "「造一片草原，只需一株三叶草、一只蜜蜂，\n再加上一点点白日梦。」\n—— 艾米莉·狄金森",
+    "positioningTags": {
+      "businessModel": "商业模式拆解",
+      "strategy": "战略分析",
+      "experiments": "假设验证",
+      "caseLearning": "案例学习"
+    },
+    "pickTemplateToStart": "选一个画布，开启你的第一个项目",
+    "createBlankInstead": "创建战略项目",
+    "openExistingProject": "打开已有项目",
+    "noProjects": "还没有项目",
+    "startWithTemplate": "用「{{name}}」创建项目",
+    "relatedCanvases": "配套画布",
+    "browseLibraryLink": "浏览策略库和我的项目",
+    "browseLibraryAndProjects": "浏览策略库与项目",
+    "browseLibrary": "浏览策略库",
+    "myProjects": "我的项目"
+  },
+  "newProject": {
+    "title": "创建项目",
+    "name": "项目名称",
+    "namePlaceholder": "例如: Acme Q3 战略",
+    "description": "描述(可选)",
+    "submit": "创建",
+    "cancel": "取消",
+    "withCanvas": "项目创建后将自动开启一张「{{canvas}}」画布。"
+  },
+  "workspace": {
+    "addCanvas": "+ 添加画布",
+    "canvases": "画布",
+    "noCanvases": "暂无画布。",
+    "selectCanvas": "从左侧选择一张画布",
+    "saveMilestone": "保存里程碑",
+    "viewHistory": "历史",
+    "rename": "重命名",
+    "collapseSidebar": "收起左栏",
+    "expandSidebar": "展开左栏",
+    "collapseInspector": "收起右栏",
+    "expandInspector": "展开右栏"
+  },
+  "story": {
+    "story": "故事",
+    "stories": "故事",
+    "newStory": "+ 写故事",
+    "noStories": "暂无故事。",
+    "untitled": "未命名故事",
+    "loading": "正在加载故事…",
+    "read": "阅读",
+    "edit": "编辑",
+    "editor": "Markdown 编辑器",
+    "directiveHint": "使用 ::canvas[] 块把项目内画布嵌入文章。",
+    "insertCanvas": "插入画布",
+    "contentPlaceholder": "写下案例背景、关键判断、验证过程和复盘结论…",
+    "titlePlaceholder": "故事标题",
+    "contentDate": "内容时间",
+    "noContentDate": "未设置内容时间",
+    "saving": "保存中…",
+    "saved": "已保存",
+    "saveError": "保存失败",
+    "loadError": "故事加载失败，请刷新或稍后重试。",
+    "embeddedCanvas": "嵌入画布",
+    "openCanvas": "打开原画布",
+    "loadingCanvas": "正在加载画布…",
+    "missingCanvas": "这个画布引用不存在，或不属于当前项目。"
+  },
+  "addCanvas": {
+    "title": "向此项目添加画布",
+    "createIn": "创建",
+    "language": "语言",
+    "searchPlaceholder": "搜索画布…",
+    "noMatches": "没有匹配的画布"
+  },
+  "inspector": {
+    "tip": "在画布上选中便签或分区以查看详情。",
+    "title": {
+      "project": "项目",
+      "canvasIntro": "画布说明",
+      "canvasConfig": "画布编辑",
+      "block": "板块说明",
+      "sticky": "便签编辑",
+      "pin": "图钉编辑"
+    },
+    "block": {
+      "guidance": "说明",
+      "examples": "示例",
+      "addAsSticky": "+ 加到便签",
+      "newSticky": "+ 在此区块新增空便签"
+    },
+    "sticky": {
+      "header": "便签",
+      "text": "内容",
+      "textHint": "显示在画布上",
+      "color": "颜色",
+      "colorNotInLegend": "该颜色不在当前画布图例中。请选择图例内的颜色替换。",
+      "block": "所属区块",
+      "meta": "作者 / 创建于",
+      "metaHint": "{{author}} · {{date}}",
+      "author": "作者",
+      "createdAt": "创建时间",
+      "delete": "删除便签",
+      "clickToEdit": "点击编辑文本",
+      "shortcuts": "快捷键:⌘/Ctrl + C 复制 · ⌘/Ctrl + V 粘贴 · ⌘/Ctrl + X 剪切 · Delete / Backspace 删除。快捷键直接作用于便签对象;如需编辑文字,点击文本框或在画布上双击便签即可。",
+      "shortcutsCompact": "⌘/Ctrl + C / V / X · Delete 直接作用于便签对象,需要编辑文字请点击上方内容。"
+    },
+    "project": {
+      "name": "项目名称",
+      "description": "描述",
+      "createdBy": "由 {{name}} 创建",
+      "deleteHeader": "危险操作",
+      "delete": "删除项目",
+      "deleteHint": "将永久删除项目、所有画布和所有里程碑。"
+    },
+    "canvasKnowledge": {
+      "usageIntro": "使用介绍",
+      "knowledgeBody": "知识体系",
+      "empty": "这种画布的知识体系还没有撰写。",
+      "emptyHint": "在 packages/canvases/{{id}}/knowledge/ 下补充 intro.{{lang}}.md 和 body.{{lang}}.md。"
+    },
+    "config": {
+      "introTab": "简介",
+      "configTab": "配置",
+      "introTabTitle": "画布说明",
+      "configTabTitle": "画布配置",
+      "sectionStrategy": "战略画布坐标 / 因子",
+      "sectionStrategyHint": "本张画布独立的 Y 轴文字与 X 轴竞争因子,仅战略 / 业务组合类画布有效。",
+      "sectionPins": "图钉图例",
+      "sectionPinsHint": "每个类别是一家公司 / 一个主题 / 一类 persona;同类别的图钉会自动连成线。",
+      "sectionStickies": "便签颜色图例",
+      "sectionStickiesHint": "为本张画布的便签颜色赋予含义,空白行不会出现在画布上。",
+      "yAxisHeader": "Y 轴标签",
+      "yAxisHint": "本张画布独立的 Y 轴文字。留空则回退到模板默认值。",
+      "yAxisLabel": "Y 轴标签",
+      "yAxisLowLabel": "低值标签",
+      "yAxisHighLabel": "高值标签"
+    }
+  },
+  "history": {
+    "title": "历史版本",
+    "empty": "暂无里程碑,在画布上点击「保存里程碑」以创建。",
+    "restoreHere": "恢复至此",
+    "restoreAsNew": "另存为新画布",
+    "deleteMilestone": "删除里程碑",
+    "stickyCount_one": "{{count}} 张便签",
+    "stickyCount_other": "{{count}} 张便签"
+  },
+  "confirm": {
+    "deleteCanvas": "删除画布",
+    "deleteCanvasMsg": "确认删除「{{title}}」?所有相关里程碑也将一并删除。",
+    "deleteStory": "删除故事",
+    "deleteStoryMsg": "确认删除「{{title}}」?故事正文将被永久删除。",
+    "deleteMilestone": "删除里程碑",
+    "deleteMilestoneMsg": "确认删除「{{name}}」?",
+    "deleteProject": "删除项目",
+    "deleteProjectMsg": "这将永久删除「{{name}}」项目、内含的 {{count}} 张画布及所有里程碑。此操作不可恢复。",
+    "delete": "删除",
+    "cancel": "取消"
+  },
+  "error": {
+    "generic": "操作失败,请稍后重试。",
+    "caseLibraryReadOnly": "这是案例库的只读副本。如需编辑或删除,请先 fork 一份到你的项目里。"
+  },
+  "milestone": {
+    "title": "保存里程碑",
+    "prompt": "为当前画布状态命名,日后可随时恢复。",
+    "namePlaceholder": "例如: v1 - 启动会议",
+    "descriptionPlaceholder": "描述(可选)",
+    "save": "保存",
+    "cancel": "取消"
+  },
+  "chart": {
+    "factorsHeader": "竞争因子(X 轴)",
+    "addFactor": "+ 添加因子",
+    "deleteFactorTitle": "删除因子",
+    "deleteFactorMsg": "确认删除「{{name}}」?画布上的图钉位置不变,只是 X 轴少一列。"
+  },
+  "legend": {
+    "header": "图例",
+    "headerHint": "每个 class 是一家公司 / 一个主题 / 一类 persona。同 class 的图钉会自动连成线。",
+    "addClass": "+ 添加类别",
+    "addClassFull": "+ 图钉图例",
+    "exitDraw": "退出画笔",
+    "numberHint": "按 {{n}} 切换",
+    "activate": "激活",
+    "active": "已激活",
+    "activateHint": "把这个类别设为「画笔」",
+    "editClass": "编辑类别",
+    "deleteClassTitle": "删除类别",
+    "deleteClassMsg": "确认删除「{{name}}」?该类别在画布上的所有图钉会被一并删除。"
+  },
+  "stickyLegend": {
+    "addLabel": "+ 便签图例",
+    "header": "便签颜色图例",
+    "headerHint": "为本张画布的便签颜色定义含义。空白行不会出现在画布右上角。",
+    "empty": "暂未定义任何便签图例 —— 点击下方「+ 添加便签图例」选个颜色给个含义。",
+    "addEntry": "+ 添加便签图例",
+    "addEntryAllUsed": "六种颜色已全部使用",
+    "addEntryPickHint": "选一个颜色赋予含义",
+    "addEntryColorUsed": "该颜色已有图例",
+    "labelPlaceholder": "标签(如「客户痛点」)",
+    "descriptionPlaceholder": "可选说明",
+    "deleteEntryTitle": "清空图例",
+    "deleteEntryMsg": "确认清空「{{label}}」的标签和说明?画布上同色便签不受影响。"
+  },
+  "pin": {
+    "header": "图钉",
+    "class": "类别",
+    "classMissing": "(类别已被删除 —— 请选择另一个)",
+    "pickClass": "选择一个类别",
+    "label": "标签",
+    "labelHint": "显示在画布上的图钉旁",
+    "labelPlaceholder": "这个图钉在标记什么?",
+    "body": "备注(可选)",
+    "bodyHint": "仅供参考,不会显示在画布上",
+    "bodyPlaceholder": "一句话补充",
+    "delete": "删除图钉"
+  },
+  "identity": {
+    "title": "欢迎",
+    "prompt": "选一个显示名,方便团队成员知道是谁在编辑。随时可以修改。",
+    "placeholder": "你的显示名",
+    "submit": "继续",
+    "editTitle": "修改显示名",
+    "editPrompt": "这个名字会出现在你创建的每张便签和每条审计记录上。",
+    "save": "保存",
+    "cancel": "取消"
+  },
+  "footer": {
+    "madeBy": "Sibo Li 制作",
+    "email": "sibo.li@foxmail.com"
+  },
+  "templates": {
+    "business-model-canvas": {
+      "tagline": "用 9 个模块描绘整个商业模式"
+    },
+    "value-proposition-canvas": {
+      "tagline": "对齐客户需求与你的解决方案"
+    },
+    "portfolio-map": {
+      "tagline": "管理探索期与利用期业务组合"
+    },
+    "three-horizons-map": {
+      "tagline": "梳理当前核心、新增长引擎和未来选项的接续关系"
+    },
+    "bcg-growth-share-matrix": {
+      "tagline": "把业务组合分成明星、现金牛、问题和瘦狗"
+    },
+    "ad-lib-value-proposition": {
+      "tagline": "用一句话写出价值主张,然后反复打磨"
+    },
+    "empathy-map": {
+      "tagline": "走进用户的内心:他们怎么想、看、说、听、感受"
+    },
+    "jobs-to-be-done": {
+      "tagline": "当 ___,我想 ___,从而我能 ___ —— 再加上底部的情感与社交任务"
+    },
+    "business-model-environment": {
+      "tagline": "梳理影响商业模式的四股外部力量:趋势、市场、行业、宏观经济"
+    },
+    "customer-journey": {
+      "tagline": "把客户在一段时间里的体验画出来 —— 找到低谷,设计抬升点"
+    },
+    "blue-ocean-strategy-canvas": {
+      "tagline": "横轴是竞争因子,纵轴是投入水平,每家公司一条价值曲线 —— 蓝海战略"
+    },
+    "design-criteria-canvas": {
+      "tagline": "把愿景、研究和约束转成可判断的设计标准"
+    },
+    "experiment-canvas": {
+      "tagline": "把高风险假设转化为可衡量、可复盘的验证实验"
+    },
+    "evidence-scorecard": {
+      "tagline": "汇总证据强度、学习速度、风险下降和下一步组合决策"
+    },
+    "innovation-culture-map": {
+      "tagline": "诊断创新为什么卡住：把结果、行为和组织机制放在一张图上"
+    },
+    "scenario-matrix": {
+      "tagline": "用两个关键不确定性构造四个可信未来"
+    },
+    "platform-ecosystem-map": {
+      "tagline": "看清平台各边、核心交互、网络效应、治理和变现"
+    },
+    "ansoff-matrix": {
+      "tagline": "市场渗透、市场开发、产品开发、多元化 —— 用 2×2 框定增长路径与风险"
+    },
+    "disruption-diagnosis": {
+      "tagline": "用 Christensen 三段严格判定:立足点 + 起步劣势 + 向上迁移"
+    },
+    "porters-value-chain": {
+      "tagline": "把公司拆成 5 个主要活动 + 4 个支持活动,看利润从哪一段挤出来"
+    }
+  },
+  "myProjects": {
+    "pageSubtitle": "你创建或 fork 的项目 —— 从空白模板新建或从案例库复制一份。",
+    "empty": "还没有项目 —— 在上方新建一个空白项目,或者从案例库 fork 一份。"
+  },
+  "library": {
+    "pageTitle": "策略库",
+    "pageSubtitle": "把真实企业案例、分析画布、商业模式、实验方法、战略框架和参考资料放在同一条学习路径里。",
+    "casesSection": "企业案例",
+    "myProjectsSection": "我的项目",
+    "caseCount_other": "{{count}} 个案例",
+    "storyCount_other": "{{count}} 篇故事",
+    "canvasesInCase_other": "本案例包含 {{count}} 张画布",
+    "storiesInCase_other": "{{count}} 篇故事",
+    "noCases": "本版本暂未附带案例。",
+    "noCanvases": "本案例暂无画布。",
+    "noUserProjects": "你还没有自己的项目 —— 上面的案例 fork 一份,或者从首页创建一个空白项目。",
+    "sources": "出处 / 引用",
+    "references": "参考文献",
+    "referenceTypes": {
+      "book": "书籍",
+      "article": "文章",
+      "paper": "论文",
+      "web": "网页"
+    },
+    "resourceTypes": {
+      "book": "书籍",
+      "article": "文章",
+      "paper": "论文",
+      "report": "报告",
+      "web": "网页"
+    },
+    "openReadOnly": "以只读方式打开",
+    "fork": "Fork 到我的项目",
+    "forking": "正在复制",
+    "readOnlyBadge": "案例库 · 只读",
+    "workspaceBannerHint": "你正在浏览案例库的只读副本。",
+    "langFallbackNotice": "本案例目前只有{{availableLang}}版本。",
+    "kind": {
+      "company": "公司",
+      "industry": "行业",
+      "pattern": "模式",
+      "comparison": "对比",
+      "experiment": "实验",
+      "strategyFramework": "战略框架",
+      "resource": "资料"
+    },
+    "tabs": {
+      "cases": "企业案例",
+      "canvases": "分析画布",
+      "patterns": "商业模式",
+      "experiments": "实验设计",
+      "strategyFrameworks": "战略框架",
+      "resources": "资料",
+      "description": "详细说明",
+      "relatedCases": "相关案例"
+    },
+    "appliesPatterns": "适用模式",
+    "appliesStrategyFrameworks": "战略框架",
+    "examplesSection": "示例",
+    "exampleCount_other": "{{count}} 个示例",
+    "sourceCount_other": "{{count}} 处出处",
+    "showDescription": "查看说明",
+    "hideDescription": "收起说明",
+    "patternsEmpty": "本版本暂未附带商业模式分类。",
+    "canvasMethodsEmpty": "本版本暂未附带分析画布。",
+    "experimentsEmpty": "本版本暂未附带实验。",
+    "strategyFrameworksEmpty": "本版本暂未附带战略框架。",
+    "resourcesEmpty": "本版本暂未附带资料。",
+    "descriptionEmpty": "本模式暂未撰写说明。",
+    "examplesEmpty": "本模式暂未关联示例案例。",
+    "cases": {
+      "intro": {
+        "title": "从真实企业进入商业判断",
+        "body": "企业案例是策略库的**应用层**：每个案例都把公司背景、画布和故事放在一起。先读案例理解一个战略问题，再进入关联画布、商业模式和战略框架。"
+      }
+    },
+    "canvasMethods": {
+      "intro": {
+        "title": "把问题放进一张可操作的分析画布",
+        "body": "分析画布是策略库的**工作工具层**：它们不是资料附件，而是用来拆解商业模式、客户价值、竞争曲线、组合管理、实验证据和未来情景的结构化方法。"
+      }
+    },
+    "canvasMethod": {
+      "kind": "画布",
+      "start": "用这张画布开始",
+      "defaultTagline": "用于结构化拆解一个商业或战略问题。"
+    },
+    "patterns": {
+      "intro": {
+        "title": "识别可复用的商业结构",
+        "body": "商业模式是策略库的**模式层**：它解释企业如何组织收入、成本、平台、长尾、免费和开放创新等机制。读完模式后，再回到案例看它如何落地。"
+      }
+    },
+    "strategyFrameworks": {
+      "intro": {
+        "title": "用战略框架推演选择，而不是只描述现状",
+        "body": "战略框架是策略库的**视角层**：它帮助你看清竞争格局、外部环境、组织能力、创新组合、未来情景和客户价值。每个框架都有一个分析对象——先理解它在分析什么，再打开关联案例，看企业如何形成取舍和行动。"
+      }
+    },
+    "strategyFramework": {
+      "descriptionEmpty": "本战略框架暂未撰写说明。"
+    },
+    "strategyFrameworkCategories": {
+      "portfolio-growth": "组合与增长",
+      "environment-competition": "环境与竞争",
+      "organization-ecosystem": "组织与生态",
+      "innovation-evidence": "创新与证据",
+      "customer-value-lens": "客户价值透镜",
+      "foresight-scenarios": "未来与情景"
+    },
+    "resources": {
+      "intro": {
+        "title": "追溯案例和方法背后的来源",
+        "body": "资料是策略库的**来源层**：它收录推荐书籍、文章、报告、论文和公开资料。每条资料都会说明为什么值得读、适合搭配哪些画布 / 案例 / 方法，以及它能帮助你回答什么问题。"
+      }
+    },
+    "resource": {
+      "recommendation": "推荐理由",
+      "related": "关联内容",
+      "relatedCanvases": "关联画布",
+      "relatedCount_other": "{{count}} 个关联",
+      "relatedEmpty": "暂未关联其他内容。",
+      "descriptionEmpty": "本资料暂未撰写说明。",
+      "referencesEmpty": "暂未登记出处。"
+    },
+    "experiments": {
+      "intro": {
+        "title": "在动手做之前先测一下最致命的假设",
+        "body": "每张卡片都是一个**便宜、可证伪**的实验,用来测一个最致命的假设。挑选时看三件事:**阶段**(Discovery 便宜证据弱,Validation 贵证据强)、**风险类型**(需求性 / 可行性 / 可营性)、**成本带**(团队预算扛得住的)。每个实验都列出了它最常用来验证的画布 —— 也就是你已经在 VPC、Empathy Map、Customer Journey、BMC 上写下的那些主张。要跑一个实验,点开卡片再点「用这个实验开个新画布」,我们会创建一张实验画布并把方法预填好。"
+      },
+      "useThisExperiment": "用这个实验开个新画布",
+      "seedFailed": "实验内容预填失败 —— 画布会以空白方式打开,你可以手动填进去。",
+      "picker": {
+        "title": "在哪里使用这个实验?",
+        "modeNew": "创建新项目",
+        "modeNewHint": "新建一个项目,把这个实验作为它的第一张画布。",
+        "modeExisting": "加到已有项目",
+        "modeExistingHint": "实验画布会加入你选中的项目。",
+        "noProjects": "暂无可编辑项目,先创建一个吧。",
+        "selectPlaceholder": "选择一个项目…",
+        "cancel": "取消",
+        "confirm": "使用这个实验"
+      }
+    },
+    "experiment": {
+      "theme": {
+        "discovery": "Discovery",
+        "validation": "Validation"
+      },
+      "risk": {
+        "desirability": "需求性",
+        "feasibility": "可行性",
+        "viability": "可营性"
+      },
+      "cost": {
+        "cheap": "便宜",
+        "medium": "中等",
+        "expensive": "昂贵"
+      },
+      "evidence": {
+        "weak": "弱证据",
+        "medium": "中等证据",
+        "strong": "强证据"
+      },
+      "duration": {
+        "hours": "小时",
+        "days": "天",
+        "weeks": "周"
+      },
+      "setupRunTime": "准备 {{setup}} · 执行 {{run}}",
+      "capabilitiesSection": "需要的能力",
+      "appliesToSection": "常用于验证",
+      "examplesSection": "真实世界案例",
+      "examplesEmpty": "暂未撰写真实案例。",
+      "openFullCase": "打开完整案例",
+      "fields": {
+        "hypothesis": "假设",
+        "experiment": "实验设计",
+        "evidence": "证据",
+        "insights": "洞察",
+        "actions": "后续行动"
+      },
+      "descriptionEmpty": "本实验暂未撰写说明。"
+    },
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页",
+      "page": "第 {{current}} 页 / 共 {{total}} 页"
+    },
+    "copilot": {
+      "openButton": "PinGarden Copilot",
+      "drawerTitle": "PinGarden Copilot",
+      "expand": "全屏",
+      "restore": "收回侧栏",
+      "resizeHint": "拖拽边界切换全屏/侧栏，双击也可切换",
+      "emptyState": "选择一个建议操作，或直接提问 —— 可以研究案例、检查项目、推荐画布、优化 story 或寻找下一步实验。",
+      "emptyStateCompact": "选择上方建议操作，或直接在下方输入。",
+      "emptyStateNoKey": "尚未配置 Kimi API Key,粘贴后即可开始对话。",
+      "encryptionWarning": "未检测到系统钥匙串,如果选择记住浏览器,密钥会以明文形式保存在浏览器 localStorage。",
+      "encryptionEnabled": "密钥已通过系统钥匙串(safeStorage)加密保存。",
+      "sessionOnlyNotice": "默认仅保存在当前浏览器会话(sessionStorage),请求时临时发送给 PinGarden 服务,不会保存到云端。",
+      "browserRememberWarning": "已选择记住这台浏览器,密钥会保存在当前浏览器 localStorage,不会保存到 PinGarden 云端服务。",
+      "rememberThisBrowser": "记住在这台浏览器",
+      "rememberThisBrowserHint": "不勾选时只保存在当前会话；关闭标签页或浏览器后需要重新输入。",
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "sk-...",
+      "getKey": "获取 Kimi API Key →",
+      "testConnection": "测试连接",
+      "testing": "测试中…",
+      "testOk": "连接成功",
+      "save": "保存",
+      "saved": "已保存",
+      "remove": "删除",
+      "removeConfirm": "确认删除已保存的 Kimi API Key?",
+      "composerPlaceholder": "向 PinGarden Copilot 提问…",
+      "attachImage": "+ 图片",
+      "attachImageHint": "最多 9 张，支持拖拽或粘贴截图",
+      "removeImageAttachment": "移除图片 {{name}}",
+      "imageTrayStatus": "已添加 {{count}}/{{max}} 张图片",
+      "imageTrayRemaining": "还可添加 {{remaining}} 张",
+      "imageTrayFull": "图片已满 9 张",
+      "imageOnlyPrompt": "请根据我发送的图片,帮我分析并生成一个适合 PinGarden 的项目草稿。",
+      "imageLimit": "最多只能附带 {{count}} 张图片。",
+      "imageTooLarge": "{{name}} 太大了,单张图片不能超过 {{size}}。",
+      "imageUnsupported": "{{name}} 的图片格式暂不支持。",
+      "modeHints": {
+        "imageReady": "已有图片",
+        "createProject": {
+          "hint": "可以先输入问题、想法、资料或链接；普通发送会继续聊天，点击「创建项目」会带着当前内容生成项目草稿。",
+          "placeholder": "输入问题、想法、资料或链接…",
+          "imageOnlyPrompt": "请根据我发送的图片创建一个 PinGarden 项目草稿。"
+        },
+        "libraryReference": {
+          "hint": "当前内容是只读参考。你可以先提问理解资料；如果需要，也可以基于它创建项目起点。",
+          "placeholder": "输入想理解的问题、补充资料或分析方向…",
+          "imageOnlyPrompt": "请结合这张图片和当前参考资料，先解释核心内容、背景线索和最值得追问的问题。"
+        },
+        "projectWork": {
+          "hint": "当前基于这个项目工作。可以新增画布、补充 Story，或让 Copilot 分析下一步。",
+          "placeholder": "输入问题、资料、截图说明或下一步目标…",
+          "imageOnlyPrompt": "请结合这张图片和当前项目，建议可以新增的画布或 Story。"
+        }
+      },
+      "composerActions": {
+        "createProject": "创建项目",
+        "askLibrary": "问问资料",
+        "createFromReference": "基于它创建项目",
+        "copyProject": "复制项目",
+        "askReference": "理解这份资料",
+        "extractInsight": "提炼洞察",
+        "optimizeProject": "优化当前项目",
+        "addCanvas": "新增画布",
+        "addStory": "新增 Story"
+      },
+      "composerPrompts": {
+        "createProject": "请根据我提供的图片、链接和说明创建一个 PinGarden 项目草稿；尽量完整整合每张图片中的可见标签/便签，并把描述性文字整理成 Story。",
+        "askLibrary": "请基于策略库，先帮我梳理有哪些案例、画布或方法值得参考，并问我一个最关键的问题。",
+        "createFromReference": "请基于当前参考内容，帮我整理成一个可创建的新项目草稿；如果信息不够，先问我最关键的问题。",
+        "copyProject": "请基于当前只读参考项目，帮我整理成一个可复制到我的工作区的新项目草稿，并保留最重要的画布结构和洞察。",
+        "askReference": "请解释当前参考资料的核心问题、关键机制、行业/案例背景，以及最值得继续追问的地方。",
+        "extractInsight": "请把这段讨论整理成一个本次会话内的洞察卡，包含来源引用和可应用到项目的建议动作。不要直接写入项目数据。",
+        "addCanvas": "请基于当前项目和我提供的内容，输出一个可应用的项目更新草稿：新增或补充最值得做的画布，并写出要落到画布上的完整便签。",
+        "addStory": "请基于当前项目和我提供的内容，输出一个可应用的项目更新草稿：创建或更新一篇 Story，用来串联关键画布、洞察、假设和下一步行动。"
+      },
+      "projectDraft": {
+        "title": "项目草稿",
+        "subtitle": "确认后会创建项目、画布、初始便签和 Story。",
+        "autoFilledHint": "我会尽量从每张图片里完整解析可见标签/便签，并把描述性文字整理成 Story；未覆盖来源会在下方提示。",
+        "projectName": "项目名称",
+        "projectNamePlaceholder": "例如：微信私域运营项目",
+        "projectDescription": "项目描述",
+        "projectDescriptionPlaceholder": "用一句话说明目标客户、核心价值和业务目标",
+        "needNameAndDescription": "请先补充项目名称和项目描述。",
+        "needName": "请先补充项目名称。",
+        "needDescription": "请先补充项目描述。",
+        "emptyCanvasWarning": "有画布没有便签，不能创建空画布。请让 Copilot 补齐。",
+        "emptyCanvasBlocked": "「{{title}}」没有有效便签，已阻止创建。",
+        "sourceCoverageWarning": "仍有图片或文字来源未完整覆盖，不能直接应用。请让 Copilot 补齐遗漏。",
+        "sourceCoverageSummary": "来源覆盖：{{images}} 张图片，{{findings}} 个抽取项，已映射 {{mapped}} 个，未覆盖 {{unmapped}} 个。",
+        "canvasCount": "画布",
+        "stickyCount": "便签",
+        "storyCount": "Story",
+        "sourceCount": "来源项",
+        "notesBadge": "{{count}} 条便签",
+        "create": "确认创建项目",
+        "creating": "创建中…",
+        "created": "已创建",
+        "qualityHardTitle": "{{count}} 条硬规则问题需要先修复:",
+        "qualitySoftTitle": "{{count}} 条软提示(仅供参考,不阻塞):",
+        "qualityHardBlocked": "硬规则阻止应用:{{message}}"
+      },
+      "projectUpdate": {
+        "title": "项目更新草稿",
+        "subtitle": "确认后会把变更应用到当前项目。",
+        "projectMismatch": "这个草稿指向的项目与当前项目不一致，已阻止应用。",
+        "sourceCoverageWarning": "仍有图片或文字来源未完整覆盖，不能直接应用。请让 Copilot 补齐遗漏。",
+        "operationWarning": "存在空画布、空 Story 或无操作，不能直接应用。",
+        "sourceCoverageSummary": "来源覆盖：{{images}} 张图片，{{findings}} 个抽取项，已映射 {{mapped}} 个，未覆盖 {{unmapped}} 个。",
+        "operationCount": "操作",
+        "stickyCount": "便签",
+        "storyOperationCount": "Story 操作",
+        "sourceCount": "来源项",
+        "createCanvas": "新增画布",
+        "replaceCanvas": "更新画布",
+        "createStory": "新增 Story",
+        "replaceStory": "更新 Story",
+        "applyReportTitle": "应用结果",
+        "applyReportSuccess": "已完成：{{label}}",
+        "applyReportFailed": "失败：{{label}} — {{message}}",
+        "apply": "应用到项目",
+        "applying": "应用中…",
+        "applied": "已应用",
+        "qualityHardTitle": "{{count}} 条硬规则问题需要先修复:",
+        "qualitySoftTitle": "{{count}} 条软提示(仅供参考,不阻塞):",
+        "qualityHardBlocked": "硬规则阻止应用:{{message}}"
+      },
+      "quality": {
+        "severityHard": "硬",
+        "severitySoft": "软"
+      },
+      "discussionInsight": {
+        "badge": "讨论洞察",
+        "sessionOnly": "仅本次会话",
+        "suggestedActions": "建议项目动作",
+        "addToBasket": "加入篮子",
+        "added": "已加入",
+        "applyToProject": "应用到项目"
+      },
+      "sessionBasket": {
+        "title": "会话洞察篮子",
+        "expand": "展开",
+        "collapse": "收起",
+        "clear": "清空",
+        "privacyHint": "仅保存在本次 App 会话内。保存到项目或长期记忆都需要确认。",
+        "empty": "还没有收集洞察。",
+        "remove": "移除洞察",
+        "markUseful": "标记有用",
+        "usefulMarked": "有用",
+        "apply": "应用",
+        "applyAgain": "再次应用"
+      },
+      "applyLearning": {
+        "title": "把学习洞察应用到项目",
+        "subtitle": "选择这条洞察要去哪里。Copilot 会生成可确认草稿，不会直接写入。",
+        "target": "目标",
+        "newProject": "新项目",
+        "action": "动作",
+        "actions": {
+          "updateProject": "更新项目",
+          "createCanvas": "创建或补充画布",
+          "createStory": "创建 Story",
+          "saveProjectInsight": "保存为项目洞察"
+        },
+        "reviewHint": "下一条回复仍会走确认卡流程，确认前不会写入任何项目数据。",
+        "cancel": "取消",
+        "generate": "生成草稿"
+      },
+      "memory": {
+        "profileTitle": "Copilot 记忆",
+        "localOnly": "自动整合本地使用偏好；不保存原始聊天，可随时归档、删除或撤销最近整合。",
+        "lastConsolidated": "最近整理",
+        "revertLatest": "撤销最近整合",
+        "noLayerItems": "这一层还没有稳定记忆。",
+        "archive": "归档",
+        "delete": "删除",
+        "layers": {
+          "collaboration": "协作偏好",
+          "productThinking": "产品 / 商业判断",
+          "projectWorkflow": "项目工作流",
+          "contentAndEvidence": "内容与证据",
+          "visualAndUX": "视觉与体验",
+          "domainContext": "领域上下文"
+        },
+        "confidence": {
+          "high": "高",
+          "medium": "中",
+          "low": "低"
+        }
+      },
+      "canvasRefs": {
+        "title": "相关画布看板",
+        "subtitle": "我已把回答中的画布引用转成可打开的看板；点击预览，可在预览中查看详情。",
+        "preview": "预览",
+        "detail": "查看详情",
+        "popoverLabel": "画布预览",
+        "close": "关闭画布预览",
+        "loading": "正在加载画布…"
+      },
+      "caseRefs": {
+        "title": "推荐案例入口",
+        "subtitle": "我已把回答中的案例 slug 转成可打开入口；可直接查看案例。",
+        "canvasCount": "{{count}} 张画布",
+        "storyCount": "{{count}} 个故事",
+        "detail": "查看案例"
+      },
+      "readingRefs": {
+        "title": "参考阅读",
+        "subtitle": "我已把回答中的书籍、文章和资料转成可预览入口；点击可快速了解为什么值得读。",
+        "preview": "预览",
+        "close": "关闭参考阅读预览",
+        "recommendation": "推荐理由",
+        "quickIntro": "快速介绍",
+        "nextOpen": "下一步可以打开",
+        "sources": "来源",
+        "itemCase": "{{lang}}案例",
+        "itemCanvas": "{{lang}}画布模板",
+        "itemFramework": "战略框架",
+        "itemPattern": "商业模式",
+        "itemExperiment": "实验方法"
+      },
+      "referenceHint": {
+        "caseNotFound": "未找到可打开的案例：{{items}}",
+        "canvasNotFound": "未找到可直接打开的画布：{{items}}"
+      },
+      "send": "发送",
+      "startAction": "开始",
+      "moreOptions": "更多 {{count}} 个",
+      "chooseMoreOptions": "选择其他 {{count}} 个",
+      "lessOptions": "收起",
+      "searchOptions": "搜索选项…",
+      "noOptions": "没有匹配选项",
+      "optionPickerTitle": "选择{{label}}",
+      "optionPickerSubtitle": "可以搜索并选择默认 5 个之外的选项。",
+      "optionPickerClose": "关闭选择器",
+      "stop": "停止",
+      "thinking": "思考中…",
+      "progress": {
+        "0": "正在连接 Kimi…",
+        "1": "正在分析你的问题和当前资料…",
+        "2": "正在组织回答结构…",
+        "3": "内容生成中，完成后会按段落显示…"
+      },
+      "errorPrefix": "出错了",
+      "noKeyConfigured": "尚未配置 Kimi API Key,在设置中粘贴一个。",
+      "clearChat": "清空对话",
+      "clearChatConfirm": "确认清空整段对话?",
+      "attached": "已附带",
+      "contextSource": "基于当前项目",
+      "contextProjectSource": "基于当前项目",
+      "contextReferenceSource": "基于当前资料",
+      "contextCreateSource": "创建入口",
+      "strategyLibraryContext": "策略库",
+      "attachClear": "移除附带上下文",
+      "suggestions": {
+        "title": "建议操作",
+        "expand": "展开",
+        "collapse": "收起"
+      },
+      "contextLoading": "加载上下文中…",
+      "contextFailed": "上下文加载失败,将不带上下文继续。",
+      "settingsButton": "设置",
+      "providerUnavailable": "当前 AI Provider 暂不可用。",
+      "cliMissing": "本机未安装 Kimi CLI。",
+      "cliInstallHint": "运行 `npm install -g @moonshot-ai/kimi-code` 后重新打开应用。",
+      "kimi": {
+        "title": "连接 Kimi Code",
+        "intro": "粘贴你的 Kimi Code API Key。我们会在本机加密保存,并自动写入 Kimi CLI 的配置 —— 不需要打开终端。",
+        "httpTitle": "连接 Kimi API",
+        "httpIntro": "粘贴你的 Kimi API Key。PinGarden 云端只会在本次请求中临时转发调用,不会保存到 CloudBase 或 PinGarden 服务器。",
+        "console": "前往 kimi.com/code/console 获取 Key"
+      },
+      "tabs": {
+        "chat": "💬 对话",
+        "skillPack": "📦 技能包"
+      },
+      "skillPack": {
+        "heading": "在你自己的 AI 工具里用 PinGarden",
+        "intro": "下载 skill 包,把一段安装提示词粘贴到你正在用的 AI Agent —— Claude、Code Cursor、Codex、CodeBuddy、WorkBuddy 或其他。AI 会自动解压、选好安装路径,并验证 PinGarden CLI。",
+        "step1": "第 1 步 · 下载",
+        "step2": "第 2 步 · 复制安装提示词",
+        "download": "下载 ({{size}})",
+        "downloading": "下载中…",
+        "version": "版本 {{version}}",
+        "promptIntro": "把 zip 拖到 AI 对话窗口(或告诉它路径),然后粘贴下面这段提示词:",
+        "copyPrompt": "复制提示词",
+        "copied": "已复制",
+        "supportedAgentsLabel": "已适配",
+        "bundledPlaybooksTitle": "App 内置 Playbook",
+        "bundledPlaybooksIntro": "这些只读 playbook 随 App 预置。你确认过的本地偏好可以覆盖 Copilot 使用它们的方式。",
+        "installPrompt": "我刚下载了 PinGarden Skill Pack:{{filename}}(版本 {{version}})。\n\n请帮我安装并建立后续自我迭代机制:\n\n1. 识别你所在的 AI 编程 Agent(Claude、Code Cursor、Codex、CodeBuddy、WorkBuddy 或其他),把 zip 解压到该 Agent 的标准 skills / rules / workflows 目录。常见位置:\n   - Claude:~/.claude/skills/\n   - Code Cursor:~/.cursor/rules/\n   - Codex:~/.codex/\n   - CodeBuddy / WorkBuddy:按其官方 skill 安装路径\n   - 其他:查看 zip 内的 INSTALL.md\n\n2. 运行 `pingarden doctor` 验证 PinGarden CLI 在 PATH 中。如未找到,提示我先打开 PinGarden 桌面应用(CLI 随应用资源一起分发)。\n\n3. 运行 `pingarden skill install --dry-run --json` 检查已安装 skill 是否需要更新；如果 `data.wouldChange` 为 true,请执行 `pingarden skill install`,然后再次运行 `pingarden doctor`。\n\n4. 安装完成后,简要介绍这个 skill 能做什么、如何调用,并提醒我:PinGarden App 升级或库内容变化后,可以让你重新执行第 3 步来自我迭代。",
+        "installMdHint": "如果你的 AI 工具不在上面的清单里,zip 内的 INSTALL.md 提供了手动安装步骤。",
+        "notReady": "skill 包尚未生成,运行 `pnpm package:mac` 即可产出。"
+      }
+    }
+  }
+}

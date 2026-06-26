@@ -1,0 +1,26 @@
+{
+  "id": "9eeb28b0-69d0-4b67-bb36-75627a5a717a",
+  "projectId": "bf754996-5245-4045-bdf8-ccd94bc57149",
+  "defId": "business-model-canvas",
+  "title": "Google — 广告主视角(Google Ads / AdWords)",
+  "language": "zh",
+  "contentDate": "2024",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "约 2024 年",
+  "variant": {
+    "id": "google-advertisers",
+    "label": {
+      "en": "Advertisers' side",
+      "zh": "广告主一侧"
+    },
+    "description": {
+      "en": "Google Ads (formerly AdWords) as the advertiser experiences it: keyword auction, conversion attribution, billions in spend annually. The 'money side' of the platform — what funds the searchers' free experience.",
+      "zh": "广告主眼中的 Google Ads(原 AdWords):关键词竞价、转化归因,每年百亿级广告花费。这是平台的「收钱方」—— 它支付了搜索者的免费体验。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T07:30:49.639Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T07:30:49.639Z",
+  "updatedBy": "PinGarden Library"
+}

@@ -1,0 +1,121 @@
+{
+  "slug": "smoke-test",
+  "name": {
+    "en": "Smoke Test",
+    "zh": "Smoke Test (烟雾测试)"
+  },
+  "summary": {
+    "en": "A real-looking landing page that promotes a product or feature you have NOT built. Measure visit-to-signup conversion to see if demand is real before sinking engineering. The defining first Validation experiment.",
+    "zh": "一个看起来真实的落地页,推广一个你*还没造出来*的产品或功能。测访问到注册的转化,在投入工程之前看真实需求是否存在。Validation 阶段最经典的第一个实验。"
+  },
+  "theme": "validation",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "medium",
+  "cost": "medium",
+  "setupTime": "days",
+  "runTime": "days",
+  "capabilities": [
+    "landing-page-copy",
+    "ad-targeting",
+    "analytics-funnel"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "business-model-canvas",
+    "ad-lib-value-proposition"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-1 Smoke Test"
+    },
+    {
+      "label": "Eric Ries · The Lean Startup · Crown Business · 2011"
+    }
+  ],
+  "examples": [
+    {
+      "company": {
+        "en": "Buffer",
+        "zh": "Buffer"
+      },
+      "year": "2010",
+      "headline": {
+        "en": "They will come, when you build it.",
+        "zh": "你建出来,他们就会来。"
+      },
+      "story": {
+        "en": "When Joel Gascoigne, cofounder of Buffer, started the company from his bedroom nine years before TBI was published, he wasn't certain people would even pay for his social media scheduling service. Social media managers were still manually logging into multiple platforms and posting their content — using calendars and reminders to tell them the perfect moment to post across time zones. Buffer would solve that problem, beginning with a scheduling service for Twitter before expanding to additional platforms. Joel decided to lightly test the desirability of the Buffer app by adding a 'Plans and Pricing' button to his simple landing page. When clicked, it displayed a message saying Buffer wasn't quite ready yet with an email signup form to be notified.",
+        "zh": "Buffer 的联合创始人 Joel Gascoigne 九年前从自己卧室创办公司时,并不确定人们是否愿意为他的社交媒体调度服务付费。当时社交媒体经理还在手动登录多个平台发帖,用日历和提醒告诉自己什么时候是跨时区发帖的最佳时机 —— 半夜发帖尤其难受。Buffer 要解决的就是这个问题,先做 Twitter 的调度服务,再扩展到其他平台。Joel 决定轻量级地测一下 Buffer 的需求性 —— 在他简单的落地页上加了一个「Plans and Pricing」按钮。用户点击时,会显示「Buffer 还没准备好上线」的提示和一个留邮箱的表单。几个人留下邮箱之后,Joel 判断有初步兴趣,但需要收集更多证据。"
+      },
+      "hypothesis": {
+        "en": "Joel believed that people would pay a monthly fee to schedule their social media posts on Twitter. It wasn't enough that people would enter their email without any pricing information. Joel needed to know if it was viable.",
+        "zh": "Joel 相信用户会为「在 Twitter 上调度社交帖子」按月付费。仅仅留邮箱(无任何价格信息)还不够,Joel 需要知道它是否具备可营性。"
+      },
+      "experiment": {
+        "en": "Joel tested viability by adding three payment-tier options to the landing page. Free = $0/month for 1 tweet a day and 5 tweets in the buffer queue. Standard = $5/month for 10 tweets a day and 50 tweets in queue. Max = $20/month for unlimited tweets a day and unlimited tweets in queue. The options appeared after clicking the 'Plans and Pricing' button. Once a price was clicked, an email signup form appeared stating Buffer wasn't yet ready for launch. Each option had analytics integrated, so Joel could analyze who was signing up based on the selected price.",
+        "zh": "Joel 在落地页加了三档付费选项来测可营性:Free = $0/月,每天 1 条推文 + 5 条排队;Standard = $5/月,每天 10 条 + 50 条排队;Max = $20/月,每天无限制 + 无限排队。点击「Plans and Pricing」后才显示这些选项,选中后再弹出留邮箱表单。每个选项都接了分析,Joel 能看到不同价位各有谁在留邮箱。"
+      },
+      "evidence": {
+        "en": "A $5/month signal. The $5/month plan was the clear winner in this initial test. This option generated the most email signups when compared to the $0 and $20 options.",
+        "zh": "$5/月 是清晰信号。在这一轮初测里,$5/月 档完胜 —— 它的留邮箱数明显高于 $0 和 $20 两档。"
+      },
+      "insights": {
+        "en": "People were interested in paying. The data showing the $5/month plan was the most popular started to clarify how people valued Buffer. They didn't need to schedule only one tweet a day — they could simply log in and do that. On the other hand, they didn't need unlimited tweets either, because social media managers don't want to overwhelm their audience and be perceived as spam. The sweet spot seemed to be 5 tweets per day, where it was enough of a hassle that people would pay a $5/month fee to address.",
+        "zh": "人们愿意付费。$5/月 最受欢迎的数据开始揭示用户对 Buffer 的价值认知:他们不需要只调度 1 条/天(自己登录就能做),也不需要无限条(社交经理不想被当成垃圾消息)。甜蜜点在每天 5 条 —— 这个量级既麻烦得让人愿意付费 $5/月,又不会过载。"
+      },
+      "actions": {
+        "en": "Evidence that Buffer should be built. After generating evidence and insights into the demand for Buffer, Joel decided to build the application. He used this learning to help shape his price points for launch. Joel also kept it lean and manually processed the payments for each customer early on. Today Buffer is used by hundreds of thousands of customers around the world and has a monthly recurring revenue of $1.54 million.",
+        "zh": "证据说明 Buffer 值得建。拿到 Buffer 的需求证据和洞察后,Joel 决定动手开发。他用这些学习去定上线时的价格点。Joel 早期还手动给每个客户处理付款,保持精益。今天 Buffer 在全球被几十万客户使用,月经常性收入达 154 万美元。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · pp. 292-293"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile assumption.</em></p><p>e.g. <strong>[Target visitors X]</strong> are interested enough in <strong>[the value proposition Y]</strong> to give us their email or click through to a non-existent product.</p>",
+          "zh": "<p><em>替换成一条最致命的假设。</em></p><p>例如:<strong>[目标访客 X]</strong> 对 <strong>[价值主张 Y]</strong> 感兴趣到愿意留邮箱、或点击一个还不存在的产品。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [target segment] will signal demand for [proposed offering].</p><p><strong>To verify, we will</strong> drive paid traffic to a landing page and offer a fake CTA (signup / pre-order / waitlist).</p><p><strong>And measure</strong> the click-through-to-action conversion rate.</p><p><strong>We're right if</strong> ≥ 12% of arrivals convert within 14 days, n ≥ 300 visits.</p>",
+          "zh": "<p><strong>我们相信</strong> [目标客群] 会对 [拟议提供物] 释放真实的需求信号。</p><p><strong>为了验证,我们将</strong> 投放付费流量到落地页,提供一个假 CTA(留邮箱 / 预订 / 加候补)。</p><p><strong>并测量</strong> 访客到点击转化的比例。</p><p><strong>如果</strong> 14 天内 ≥ 12% 访客转化、n ≥ 300 次访问 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Build the landing page:</strong> single page with one specific headline (the value promise), one hero visual, 3 benefit bullets keyed to [target customer]'s top jobs/pains, FAQ for credibility, and one prominent CTA (\"Get early access\" / \"Reserve your spot\" / \"Pre-order at intro pricing\"). Use Carrd / Webflow / Framer — half a day. Author 2-3 headline variants for A/B test.</p><p><strong>Drive qualified traffic:</strong> $300-500 ad spend on Google Search (intent-rich keywords) + Meta / LinkedIn (audience-rich targeting), depending on where [target segment] lives. Aim for n ≥ 300 unique visits, ≥ 100 from each channel for comparability.</p><p><strong>Capture intent honestly:</strong> on CTA click, show a transparent \"we're not live yet — leave your email and we'll keep you posted\" form. Add an optional 1-question exit survey for non-converters (\"What stopped you?\"). Tag every visit with channel + variant via UTM; pipe to Plausible / GA4. Run for 14 days OR until n = 300, whichever first.</p>",
+          "zh": "<p><strong>搭落地页:</strong> 单页,一句具体的 headline(价值承诺)、一张主视觉、3 条对准 [目标客户] 核心 jobs/pains 的收益点、FAQ 增加可信度、一个醒目的 CTA(「抢先体验」 / 「预订名额」 / 「以内测价预购」)。工具:Carrd / Webflow / Framer,半天搞定。准备 2-3 条 headline 变体做 A/B。</p><p><strong>导合格流量:</strong> $300-500 广告预算,Google 搜索(意图明确的关键词)+ Meta / LinkedIn(人群定向)按 [目标客群] 在哪选投。目标 n ≥ 300 独立访问,每个渠道 ≥ 100 以便对比。</p><p><strong>诚实地捕捉意向:</strong> 点击 CTA 后,弹出一个透明的「我们还没上线 —— 留邮箱我们会通知你」表单。给未转化的人加一个 1 题退出问卷(「是什么让你没继续?」)。每次访问按渠道 + 变体打 UTM,数据进 Plausible / GA4。跑 14 天或 n=300 先到先停。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 12% visit-to-email conversion, n ≥ 300 unique visits, ≥ 60% of signups self-identify (via UTM or signup form) as the targeted segment, blended CAC ≤ [your tolerable acquisition cost].</p><p><strong>Fail:</strong> &lt; 5% conversion, OR signups skew to a segment you don't intend to serve, OR CAC &gt; 3× your tolerable threshold.</p><p><strong>Inconclusive (5-12%):</strong> hold call with the strongest headline + tightest audience targeting; re-run with same budget.</p><p><strong>Watch:</strong> exit-survey themes — frequent \"too expensive\" vs \"didn't trust it\" vs \"don't need it\" tells you whether the next move is pricing, credibility, or value-prop work.</p>",
+          "zh": "<p><strong>通过:</strong> 访问到留邮箱转化 ≥ 12%,n ≥ 300 独立访问,≥ 60% 留邮箱者(通过 UTM 或表单字段)自我标记为目标客群,混合 CAC ≤ [可承受的获客成本]。</p><p><strong>失败:</strong> 转化 &lt; 5%,或留邮箱主要来自你并不打算服务的人群,或 CAC &gt; 3 倍可承受阈值。</p><p><strong>不清晰(5-12%):</strong> 留下转化最高的 headline + 最精准的人群,同预算再跑一次。</p><p><strong>关注:</strong> 退出问卷里的主题分布 ——「太贵」「不信任」「用不到」分别意味着下一步是定价、可信度,还是价值主张要重做。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Visits: __ ; Conversions: __ (rate __ %); In-segment share: __ %; Blended CAC: $__ .</p><p>Top-converting headline: __ . Top-converting channel: __ . Top exit-survey theme: __ .</p><p>Verdict: validated / invalidated / inconclusive. One-line summary of why: __ .</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>访问数:__ ; 转化数:__ (转化率 __ %);属于目标客群比例:__ %;混合 CAC: $__ 。</p><p>转化最高 headline:__ 。转化最高渠道:__ 。退出问卷最高频主题:__ 。</p><p>结论:已验证 / 已证伪 / 不清晰。一句话原因:__ 。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → run a <strong>Concierge</strong> or <strong>Wizard of Oz</strong> on the email list to manually deliver the value and validate willingness-to-pay; OR <strong>Pre-Sale</strong> with real money to harden the desirability claim.<br/>• <strong>Pivot</strong> → re-target audience (the wrong people converted), reposition the value-prop (the right people didn't convert), or change pricing — re-run same budget.<br/>• <strong>Kill</strong> → demand isn't there for this segment + this value-prop. Reopen <strong>Customer Interviews</strong> on a different segment or pain frame before spending more.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 对留邮箱的人跑 <strong>Concierge</strong> 或 <strong>Wizard of Oz</strong>,人工交付价值并验证付费意愿;或用真金白银的 <strong>Pre-Sale</strong> 把需求性证据夯实。<br/>• <strong>Pivot</strong> → 换人群定向(错的人转化了)、换价值主张(对的人没转化),或改定价 —— 同预算再跑一次。<br/>• <strong>Kill</strong> → 这个人群 × 这个价值主张组合没有需求。先回去对另一人群或换一个痛点切面跑 <strong>客户访谈</strong>,再花钱。</p>"
+        }
+      }
+    ]
+  }
+}

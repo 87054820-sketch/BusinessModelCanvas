@@ -1,0 +1,125 @@
+{
+  "slug": "customer-interview",
+  "name": {
+    "en": "Customer Interview",
+    "zh": "客户访谈"
+  },
+  "summary": {
+    "en": "30-60 minute conversation with target customers about their world, jobs, pains, and gains. The first move when you have a desirability hypothesis but no data — surfaces the problem framing, not the solution.",
+    "zh": "用 30-60 分钟和目标客户聊他们的世界、要做的事、痛点和收益。当你只有一个需求性假设、还没有任何数据时,先做这一步 —— 它探的是问题的框,不是解决方案。"
+  },
+  "theme": "discovery",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "weak",
+  "cost": "cheap",
+  "setupTime": "hours",
+  "runTime": "hours",
+  "capabilities": [
+    "interview-design",
+    "active-listening",
+    "note-taking"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "empathy-map",
+    "jobs-to-be-done",
+    "customer-journey"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Customer Interview"
+    },
+    {
+      "label": "Steve Portigal · Interviewing Users · Rosenfeld Media · 2013"
+    },
+    {
+      "label": "Erika Hall · Just Enough Research · A Book Apart · 2013"
+    }
+  ],
+  "examples": [
+    {
+      "company": {
+        "en": "Intuit",
+        "zh": "Intuit"
+      },
+      "year": "1980s-2010s",
+      "headline": {
+        "en": "Close the say/do gap by going home with the customer.",
+        "zh": "跟客户回到真实现场，缩小说和做之间的差距。"
+      },
+      "story": {
+        "en": "Intuit's Follow-Me-Home program grew from Scott Cook's early practice of watching real customers install and use products like Quicken and QuickBooks in their own environment. Teams observed first, then asked why behind the observed behavior. The practice became part of Intuit's Design for Delight system for deep customer empathy.",
+        "zh": "Intuit 的 Follow-Me-Home 项目源自 Scott Cook 早期观察真实客户在自己环境中安装和使用 Quicken、QuickBooks 等产品的做法。团队先观察，再追问行为背后的原因。这个实践后来成为 Intuit Design for Delight 中建立深度客户共情的核心方法。"
+      },
+      "hypothesis": {
+        "en": "Intuit believed product teams would discover better product opportunities by observing customers in the real context where the pain happened, rather than relying only on scripted interviews or survey answers.",
+        "zh": "Intuit 相信：相比只依赖脚本访谈或问卷答案，团队在客户真实发生痛点的场景中观察，能发现更好的产品机会。"
+      },
+      "experiment": {
+        "en": "Teams visited customers, watched them install or use financial software with their real tools, captured direct observations, and only then asked interview-style questions about the why behind the behavior.",
+        "zh": "团队拜访客户，观察他们用真实工具安装或使用财务软件，记录直接观察，再用访谈问题追问行为背后的原因。"
+      },
+      "evidence": {
+        "en": "The observations uncovered surprises about how customers actually used the software and repeatedly led to product improvements; the method was codified and taught across Intuit.",
+        "zh": "这些观察不断揭示客户真实使用方式中的意外发现，并多次转化为产品改进；该方法随后被体系化并在 Intuit 内推广。"
+      },
+      "insights": {
+        "en": "The team learned that observed behavior is stronger discovery evidence than what people claim they would do, and that interview questions work best after observation anchors the conversation.",
+        "zh": "团队学到：被观察到的行为比客户声称自己会做什么更有发现价值；访谈问题最好放在观察之后，用真实行为作为对话锚点。"
+      },
+      "actions": {
+        "en": "Intuit kept evolving the program, including remote versions with video and screen sharing for customers around the world.",
+        "zh": "Intuit 持续演进该项目，包括为全球客户设计基于视频和屏幕共享的远程版本。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Intuit Follow-Me-Home case study, pp. 120-121"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile problem assumption.</em></p><p>e.g. <strong>[Customer segment X]</strong> in <strong>[context Y]</strong> suffers <strong>[pain Z]</strong> severely enough that they are actively trying to solve it now.</p>",
+          "zh": "<p><em>替换成一条最脆弱的问题假设。</em></p><p>例如：<strong>[客户群体 X]</strong> 在 <strong>[场景 Y]</strong> 中承受 <strong>[痛点 Z]</strong>，严重到他们现在已经主动在解决。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [problem assumption] is a real current pain for [segment].</p><p><strong>To verify, we will</strong> interview 8 ICP customers within 2 weeks.</p><p><strong>And measure</strong> unprompted mentions, severity, current workaround, recent spend/time cost, and trigger events.</p><p><strong>We are right if</strong> ≥ 5/8 mention the pain unprompted and can describe a recent workaround.</p>",
+          "zh": "<p><strong>我们相信</strong> [问题假设] 是 [客群] 当前真实存在的痛点。</p><p><strong>为了验证，我们将</strong> 在 2 周内访谈 8 位 ICP 客户。</p><p><strong>并测量</strong> 不引导提及、严重度、当前绕行方案、近期花费 / 时间成本和触发事件。</p><p><strong>如果</strong> ≥ 5/8 不引导提及该痛点，并能描述最近一次绕行 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Recruit:</strong> 8 ICP-matched customers via LinkedIn cold outreach, customer communities, and warm intros. Screen for people who experienced [scenario] in the last 30 days.</p><p><strong>Run:</strong> 30-60 minute conversations. Start with “tell me about the last time you [scenario]”. Probe current workflow, workaround, cost, alternatives, and decision trigger. No pitching and no “would you use” questions.</p><p><strong>Record:</strong> transcript or detailed notes, 5-10 direct quotes per session, severity score, and evidence of real behavior. Post-process into VPC jobs / pains / gains and JTBD triggers.</p>",
+          "zh": "<p><strong>招募：</strong>通过 LinkedIn 冷邮、客户社区和熟人转介绍招 8 位符合 ICP 的客户。筛选条件：最近 30 天内真实经历过 [场景]。</p><p><strong>执行：</strong>30-60 分钟开放式对话，以「最近一次遇到 [场景] 的经历」起手。追问当前流程、绕行方案、成本、替代品和决策触发点。不要推销，也不要问「你会不会用」。</p><p><strong>记录：</strong>转写稿或详细笔记，每场 5-10 条直接引语、严重度评分和真实行为证据。会后归入 VPC jobs / pains / gains 与 JTBD 触发点。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 5/8 customers mention [core pain] unprompted; median severity ≥ 7/10; ≥ 4 show a current workaround, budget, or time loss.</p><p><strong>Fail:</strong> &lt; 5 mention it, or they describe a different job, low urgency, or no active workaround.</p><p><strong>Inconclusive:</strong> signal splits by subsegment; label the split and run 5 more interviews in the stronger segment.</p>",
+          "zh": "<p><strong>通过：</strong>≥ 5/8 客户不引导地提到 [核心痛点]；严重度中位数 ≥ 7/10；≥ 4 人展示当前绕行、预算或时间损失。</p><p><strong>失败：</strong>&lt; 5 人提到，或他们描述的是另一个任务、低紧迫度、没有主动绕行。</p><p><strong>不清晰：</strong>信号按子客群分裂；标记分裂点，并在更强子客群补访 5 位。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Interviewed: __ /8; Unprompted pain mentions: __ ; Median severity: __ /10; Active workaround count: __ .</p><p>Top job: __ . Top quote: __ . Verdict: validated / invalidated / inconclusive.</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>已访谈：__ /8；不引导提及痛点：__；严重度中位数：__ /10；有主动绕行人数：__。</p><p>最高频 Job：__。最强原话：__。结论：已验证 / 已证伪 / 不清晰。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → convert the validated pain into a Storyboard, Smoke Test, or Concierge pilot.<br/>• <strong>Pivot</strong> → reframe the assumption around the stronger job or subsegment that emerged.<br/>• <strong>Kill</strong> → if urgency and behavior are absent, stop testing this problem frame.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 把已验证痛点转成 Storyboard、Smoke Test 或 Concierge 试点。<br/>• <strong>Pivot</strong> → 围绕浮现出来的更强 Job 或子客群重写假设。<br/>• <strong>Kill</strong> → 如果没有紧迫度和真实行为，停止测试这个问题框架。</p>"
+        }
+      }
+    ]
+  }
+}

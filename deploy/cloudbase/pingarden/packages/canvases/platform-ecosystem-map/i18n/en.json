@@ -1,0 +1,40 @@
+{
+  "canvasTitle": "Platform Ecosystem Map",
+  "blocks": {
+    "demand-side": {
+      "title": "Demand side",
+      "prompt": "Which demand-side participants does the platform serve? Why do they come?",
+      "examples": ["Riders need faster access to cars", "Advertisers need to reach high-intent users"]
+    },
+    "core-interaction": {
+      "title": "Core interaction",
+      "prompt": "What is the minimum viable value exchange? Who produces the value unit and who consumes it?",
+      "examples": ["Hosts list homes; travelers search, book, and review", "Developers publish apps; users install and pay"]
+    },
+    "supply-side": {
+      "title": "Supply side / complementors",
+      "prompt": "Who are the supply-side or complementor participants? Why do they participate?",
+      "examples": ["Drivers use idle time to accept rides", "Developers use the platform to distribute software"]
+    },
+    "network-effects": {
+      "title": "Network effects",
+      "prompt": "Are effects same-side or cross-side? How does growth make the next participant more valuable?",
+      "examples": ["More drivers reduce wait time and attract riders", "More merchants increase choice and attract consumers"]
+    },
+    "governance-trust": {
+      "title": "Governance & trust",
+      "prompt": "Which rules, reviews, reputation, or incentives ensure quality and trust?",
+      "examples": ["Two-sided reviews", "Deposits and protection policies", "API review and app-store rules"]
+    },
+    "monetization": {
+      "title": "Monetization",
+      "prompt": "How does the platform charge? Does monetization harm the core interaction or participant incentives?",
+      "examples": ["Transaction commission", "Subscription fee", "Ad auction", "Premium services"]
+    },
+    "cold-start-risks": {
+      "title": "Cold start / risks",
+      "prompt": "Which side must be activated first? What regulatory, fraud, quality, subsidy, or backlash risks exist?",
+      "examples": ["Subsidize supply first to create coverage", "Regulation requires licenses", "Low-quality supply damages trust"]
+    }
+  }
+}

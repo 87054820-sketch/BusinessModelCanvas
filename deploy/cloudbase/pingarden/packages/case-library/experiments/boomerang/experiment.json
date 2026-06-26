@@ -1,0 +1,97 @@
+{
+  "slug": "boomerang",
+  "name": {
+    "en": "Boomerang",
+    "zh": "回旋镖测试"
+  },
+  "summary": {
+    "en": "Send target customers to a competitor's product or to a legacy alternative; measure delta — what worked, what didn't, what they'd want changed. Pulls insight without you having built anything.",
+    "zh": "把目标客户引导到竞品或现有替代品上;测量 delta —— 什么好用、什么不好用、他们想改什么。在你还没造任何东西的时候就能拿到洞察。"
+  },
+  "theme": "discovery",
+  "risks": [
+    "desirability"
+  ],
+  "evidenceStrength": "medium",
+  "cost": "cheap",
+  "setupTime": "hours",
+  "runTime": "days",
+  "capabilities": [
+    "interview-design",
+    "structured-observation"
+  ],
+  "appliesToCanvases": [
+    "value-proposition-canvas",
+    "customer-journey",
+    "empathy-map"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Discovery / Boomerang"
+    }
+  ],
+  "examples": [
+    {
+      "company": {
+        "en": "Kromatic client teams",
+        "zh": "Kromatic 客户团队"
+      },
+      "year": "2010s",
+      "headline": {
+        "en": "Learn from the product customers already use.",
+        "zh": "先从客户已经在用的产品里学习。"
+      },
+      "story": {
+        "en": "Kromatic documents boomerang-style tests in which teams put an existing competing or analogous product in front of target customers, observe where they struggle, and use those gaps to shape a sharper value proposition before building their own version. The point is not to copy or rebrand the competitor, but to let real usage reveal unmet jobs, pains, and gains in an already active market.",
+        "zh": "Kromatic 记录的 Boomerang 类测试中，团队会把一个现有竞品或相邻品类产品放到目标客户面前，观察客户在哪里卡住、抱怨什么、如何绕开限制，再用这些缺口来塑造自己的价值主张。重点不是复制或重新包装竞品，而是在已经存在的市场里，用真实使用行为暴露未满足的 jobs、pains 和 gains。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Boomerang, pp. 204-207; Kromatic · The Real Startup Book · Boomerang Smoke Test"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile competitor-learning assumption.</em></p><p>e.g. <strong>[Users of competitor / workaround X]</strong> are frustrated by <strong>[job or pain Y]</strong> often enough that a sharper alternative could win switching intent.</p>",
+          "zh": "<p><em>替换成一条最脆弱的竞品学习假设。</em></p><p>例如：<strong>[竞品 / 替代方案 X 的用户]</strong> 经常被 <strong>[任务或痛点 Y]</strong> 困扰，严重到一个更聚焦的替代方案有机会赢得切换意愿。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [target segment] repeatedly struggles with [job/pain] while using [competitor or workaround].</p><p><strong>To verify, we will</strong> observe 10 current users completing 2 realistic tasks in that existing product within 5 days.</p><p><strong>And measure</strong> repeated friction, workaround frequency, severity score, and direct switching language.</p><p><strong>We are right if</strong> ≥ 6/10 users hit the same friction and rate it ≥ 7/10 severe.</p>",
+          "zh": "<p><strong>我们相信</strong> [目标客群] 在使用 [竞品或替代方案] 完成 [任务 / 痛点] 时会反复卡住。</p><p><strong>为了验证，我们将</strong> 在 5 天内观察 10 位现用户用该产品完成 2 个真实任务。</p><p><strong>并测量</strong> 重复摩擦、绕行频次、严重度评分和直接切换语言。</p><p><strong>如果</strong> ≥ 6/10 用户遇到同一摩擦且严重度 ≥ 7/10 = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Recruit:</strong> 10 current users of [competitor/workaround] from customer communities, review sites, or LinkedIn; screen out people who have never used it for the target job.</p><p><strong>Run:</strong> 45-minute moderated sessions. Ask each user to share screen, complete 2-3 job-realistic tasks, and think aloud. Do not pitch your solution or rebrand the competitor as yours.</p><p><strong>Record:</strong> screen recording + timestamped notes. Capture every hesitation, workaround, complaint, abandoned step, and quote; cluster findings into jobs / pains / gains after all sessions.</p>",
+          "zh": "<p><strong>招募：</strong>从客户社区、评论网站或 LinkedIn 找 10 位 [竞品 / 替代方案] 现用户；筛掉没有用它完成目标任务的人。</p><p><strong>执行：</strong>每场 45 分钟观察。让用户共享屏幕，完成 2-3 个真实任务并边做边说。不要推销你的方案，也不要把竞品包装成你的产品。</p><p><strong>记录：</strong>录屏 + 时间戳笔记。记录犹豫、绕行、抱怨、放弃步骤和原话；全部结束后归类到 jobs / pains / gains。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 6/10 users hit the same high-severity friction; ≥ 4 explicitly say they would try a better alternative.</p><p><strong>Fail:</strong> issues are scattered, mild, caused only by cosmetic UX, or users accept the workaround as good enough.</p><p><strong>Inconclusive:</strong> friction appears in 3-5 sessions; recruit 5 more users from the same segment before changing direction.</p>",
+          "zh": "<p><strong>通过：</strong>≥ 6/10 用户遇到同一个高严重度摩擦；≥ 4 人明确表示愿意尝试更好的替代方案。</p><p><strong>失败：</strong>问题分散、程度轻、只来自表层 UX，或用户认为现有绕行方案已经足够好。</p><p><strong>不清晰：</strong>3-5 场出现同类摩擦；同一客群再补招 5 位后再判断。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Users observed: __ ; Repeated friction count: __ /10; Median severity: __ /10; Switching-language count: __ /10.</p><p>Top quote: __ . Main workaround: __ . Verdict: validated / invalidated / inconclusive.</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>观察用户数：__；重复摩擦人数：__ /10；严重度中位数：__ /10；出现切换语言人数：__ /10。</p><p>最强原话：__。主要绕行方案：__。结论：已验证 / 已证伪 / 不清晰。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → convert the repeated gap into a Storyboard or Clickable Prototype within 1 week.<br/>• <strong>Pivot</strong> → switch the job, segment, or competitor set and rerun 5 sessions.<br/>• <strong>Kill</strong> → if no repeated unmet need appears, stop building against this competitor gap.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 1 周内把重复缺口转成 Storyboard 或 Clickable Prototype。<br/>• <strong>Pivot</strong> → 换任务、客群或竞品集合，再跑 5 场。<br/>• <strong>Kill</strong> → 如果没有重复出现的未满足需求，不要围绕这个竞品缺口开工。</p>"
+        }
+      }
+    ]
+  }
+}

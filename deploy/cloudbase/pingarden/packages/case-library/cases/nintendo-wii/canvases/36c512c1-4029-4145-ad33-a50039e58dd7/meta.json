@@ -1,0 +1,26 @@
+{
+  "id": "36c512c1-4029-4145-ad33-a50039e58dd7",
+  "projectId": "05ed256b-92a0-433c-9e28-4ffac6efc35d",
+  "defId": "business-model-canvas",
+  "title": "Wii — 玩家视角",
+  "language": "zh",
+  "contentDate": "2008",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "约 2008 年(Wii 高峰期)",
+  "variant": {
+    "id": "wii-gamers",
+    "label": {
+      "en": "Gamers' side",
+      "zh": "玩家一侧"
+    },
+    "description": {
+      "en": "The Wii as the gamer experiences it: motion controls, a casual / family-friendly catalog (Wii Sports, Wii Fit, Mario Kart Wii), $250 hardware vs PS3's $599. The subsidy side — Nintendo accepted thin or negative hardware margin to bring this audience to the platform.",
+      "zh": "玩家眼中的 Wii:体感控制器、面向休闲 / 家庭用户的内容目录(Wii Sports、Wii Fit、马里奥赛车 Wii)、硬件 250 美元(PS3 同期 599 美元)。这是补贴方 —— 任天堂接受硬件薄利甚至亏本出货,为的就是把这一边客户拉到平台上。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T07:36:35.940Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T07:36:35.940Z",
+  "updatedBy": "PinGarden Library"
+}

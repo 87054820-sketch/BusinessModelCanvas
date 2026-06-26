@@ -1,0 +1,80 @@
+{
+  "id": "three-horizons-map",
+  "name": {
+    "en": "Three Horizons Map",
+    "zh": "三层增长地图"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    },
+    "canvas": {
+      "showBlockPrompts": true
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "related": ["portfolio-map", "business-model-canvas", "experiment-canvas", "evidence-scorecard"],
+  "relatedNotes": {
+    "portfolio-map": {
+      "en": "Use Portfolio Map for the whole portfolio's risk/return position; use Three Horizons when timing, maturity, and migration between core, emerging, and future bets are the main question.",
+      "zh": "业务组合地图用于看整体风险/收益位置；当重点是时间、成熟度以及核心业务、增长业务、未来选项之间的迁移时，使用三层增长地图。"
+    },
+    "business-model-canvas": {
+      "en": "Each important horizon item should resolve to a specific business model logic before it receives serious funding.",
+      "zh": "每个重要的层级项目在获得重大投入前，都应能展开为一套清晰的商业模式逻辑。"
+    },
+    "experiment-canvas": {
+      "en": "H2 and H3 bets need experiments that reduce the assumptions blocking movement toward the core.",
+      "zh": "H2 和 H3 项目需要实验来降低阻碍其向核心业务推进的关键假设风险。"
+    },
+    "evidence-scorecard": {
+      "en": "Use Evidence Scorecard to decide whether a bet has enough evidence to move, fund, pause, pivot, or retire.",
+      "zh": "用证据评分卡判断某个项目是否有足够证据继续推进、追加投入、暂停、转向或终止。"
+    }
+  },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "H1 core", "zh": "H1 核心业务" },
+      "description": { "en": "Current businesses to defend, extend, and improve.", "zh": "需要防守、延展和改善的当前业务。" }
+    },
+    {
+      "hex": "#CFEBD3",
+      "label": { "en": "H2 emerging", "zh": "H2 增长引擎" },
+      "description": { "en": "Emerging businesses that may become material growth engines.", "zh": "有机会成为重要增长引擎的新兴业务。" }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "H3 option", "zh": "H3 未来选项" },
+      "description": { "en": "Early options, technologies, or markets that need learning before scaling.", "zh": "需要先学习验证的早期选项、技术或市场。" }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Risk / assumption", "zh": "风险 / 假设" },
+      "description": { "en": "The assumption that blocks a bet from moving to the next horizon.", "zh": "阻碍项目进入下一层级的关键假设。" }
+    },
+    {
+      "hex": "#E2D5F0",
+      "label": { "en": "Migration action", "zh": "迁移动作" },
+      "description": { "en": "Funding, transfer, governance, or organizational action that changes horizon position.", "zh": "改变层级位置所需的投入、转入、治理或组织动作。" }
+    }
+  ],
+  "zones": [
+    { "id": "horizon-1-core", "shape": { "type": "rect", "x": 40, "y": 80, "w": 380, "h": 360 }, "label": { "x": 60, "y": 118, "align": "left", "fontSize": 20 } },
+    { "id": "horizon-2-emerging", "shape": { "type": "rect", "x": 450, "y": 80, "w": 380, "h": 360 }, "label": { "x": 470, "y": 118, "align": "left", "fontSize": 20 } },
+    { "id": "horizon-3-options", "shape": { "type": "rect", "x": 860, "y": 80, "w": 380, "h": 360 }, "label": { "x": 880, "y": 118, "align": "left", "fontSize": 20 } },
+    { "id": "migration-actions", "shape": { "type": "rect", "x": 40, "y": 480, "w": 585, "h": 340 }, "label": { "x": 60, "y": 518, "align": "left", "fontSize": 20 } },
+    { "id": "evidence-risks", "shape": { "type": "rect", "x": 655, "y": 480, "w": 585, "h": 340 }, "label": { "x": 675, "y": 518, "align": "left", "fontSize": 20 } }
+  ]
+}

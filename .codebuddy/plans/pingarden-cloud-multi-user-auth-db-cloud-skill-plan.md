@@ -47,6 +47,16 @@ AI Agent
 
 ## 阶段 0：云端 Copilot 504 超时治理
 
+当前执行状态（2026-06-26）：
+
+- 已完成 SSE 首包、heartbeat、HTML 错误清洗、Kimi HTTP timeout。
+- 已补充策略库上下文按用户问题过滤，避免“问资料”每次携带完整 50KB+ 策略库导致 Kimi API 超时。
+- 已恢复 Copilot 请求中的 `lang` 参数。
+- 已完成本地 `pnpm typecheck`、`pnpm test`、`web/server build`。
+- 已部署 CloudRun `pingarden-008`，环境变量包含 `PINGARDEN_DEPLOY_STAMP=20260626-1709`。
+- 已运行默认 `pnpm smoke:cloud`，6/6 通过：health、copilot health、首页、静态资源、策略库上下文过滤、SSE invalid-key 链路。
+- 真实 Kimi Key 测试已加入 `--real-kimi` 用例，但 Key 只能由本机临时环境变量或 CI Secret 注入，不能写入计划、仓库或 CloudRun 环境。
+
 现象：
 
 - 云端 Copilot 显示 `✓ Kimi API`，说明 provider health 正常。
@@ -122,6 +132,8 @@ pnpm smoke:cloud -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbas
 ```bash
 PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm smoke:cloud -- --real-kimi
 ```
+
+真实 Kimi Key 只能通过本机临时环境变量或 CI Secret 注入，不能保存到 CloudRun/server 环境、仓库文件、README 或计划文件。
 
 验收：
 

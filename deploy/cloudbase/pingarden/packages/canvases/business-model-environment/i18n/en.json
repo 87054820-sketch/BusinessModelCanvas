@@ -1,0 +1,41 @@
+{
+  "canvasTitle": "Business Model Environment",
+  "blocks": {
+    "key-trends": {
+      "title": "Key Trends",
+      "prompt": "Which trends are reshaping the field?",
+      "examples": [
+        "Generative AI commoditising basic content production",
+        "Tightening data-residency regulation in the EU",
+        "Gen Z preferring subscription over ownership"
+      ]
+    },
+    "market-forces": {
+      "title": "Market Forces",
+      "prompt": "Who do you serve, and what do they need?",
+      "examples": [
+        "Mid-market segment growing 25% / yr while enterprise stalls",
+        "Buyers now expect SOC 2 evidence within the first 30 days",
+        "Switching cost dominated by data-migration friction"
+      ]
+    },
+    "industry-forces": {
+      "title": "Industry Forces",
+      "prompt": "Who are you competing with — directly and indirectly?",
+      "examples": [
+        "Two incumbents bundling our feature into their suite",
+        "Open-source alternative reaching feature parity in 6 months",
+        "Cloud provider raising egress fees — squeezes our margin"
+      ]
+    },
+    "macroeconomic-forces": {
+      "title": "Macroeconomic Forces",
+      "prompt": "What's the global economic backdrop?",
+      "examples": [
+        "Capital scarce — bridge round must extend runway 18 months",
+        "China engineering talent now 40% of the global pool",
+        "USD strength makes our overseas revenue worth less"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "180ec04b-2f2b-4edf-9d13-6b45c683bc27",
+  "projectId": "bb444a7f-3c5b-4b41-b1f8-3d975690239f",
+  "defId": "business-model-canvas",
+  "title": "Visa — 商户视角",
+  "language": "zh",
+  "contentDate": "2024",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "约 2024 年",
+  "variant": {
+    "id": "visa-merchants",
+    "label": {
+      "en": "Merchants' side",
+      "zh": "商户一侧"
+    },
+    "description": {
+      "en": "Visa as the merchant experiences it: ~1.5-3% interchange fee per swipe, no choice but to accept (consumers carry it), service obligations to authorize and settle. The money side that funds the cardholders' free experience.",
+      "zh": "商户眼中的 Visa:每笔交易付约 1.5-3% 的回扣;基本没有不接的选择(消费者都带这卡);需要承担授权与结算的合规义务。这是支付网络的「收钱方」,它支付了持卡人的免费体验。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T07:33:37.882Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T07:33:37.882Z",
+  "updatedBy": "PinGarden Library"
+}

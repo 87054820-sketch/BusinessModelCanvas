@@ -1,0 +1,50 @@
+{
+  "slug": "udemy",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Udemy",
+    "zh": "Udemy"
+  },
+  "summary": {
+    "en": "Two-sided online learning marketplace where anyone can publish a course and any learner can take one. Long-tail catalog of 250,000+ courses competes by breadth, not credentials — Coursera owns degrees and MasterClass owns prestige; Udemy owns 'I need to learn this specific tool by Tuesday'. Public since 2021. The B2C consumer flywheel funnels into Udemy Business, the much higher-margin enterprise subscription product.",
+    "zh": "双边在线学习市场:任何人都能开课、任何学习者都能上课。25 万+ 长尾课程库,差异点是「广度」而不是「证书」—— Coursera 占学位、MasterClass 占名人光环、Udemy 占「我下周二之前必须学会这个工具」。2021 年上市。C 端流量漏斗到 Udemy Business 企业订阅产品(后者毛利高得多)。"
+  },
+  "tags": [
+    "edtech",
+    "marketplace",
+    "consumer",
+    "B2B",
+    "USA",
+    "two-sided"
+  ],
+  "sources": [
+    {
+      "label": "businessmodelhacking.com · Business Model Canvas Examples",
+      "url": "https://www.businessmodelhacking.com/business-model-canvas-examples/"
+    },
+    {
+      "label": "Udemy S-1 IPO Filing (2021-10)",
+      "url": "https://www.sec.gov/"
+    },
+    {
+      "label": "Udemy 2023 Annual Report (Form 10-K)",
+      "url": "https://investors.udemy.com/"
+    },
+    {
+      "label": "udemy.com / udemy.com/business (官网)",
+      "url": "https://www.udemy.com/"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "bd953365-f275-4b11-b62e-460b216f5f45",
+  "canvasCount": 2,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "multi-sided-platforms",
+    "free"
+  ],
+  "appliesPatternSubtypes": {
+    "free": "freemium"
+  }
+}

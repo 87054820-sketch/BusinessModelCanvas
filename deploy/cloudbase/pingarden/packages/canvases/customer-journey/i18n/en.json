@@ -1,0 +1,41 @@
+{
+  "canvasTitle": "Customer Journey",
+  "blocks": {
+    "persona": {
+      "title": "Persona",
+      "prompt": "Whose journey is this? Name the protagonist, their situation and goal.",
+      "examples": [
+        "Maria, 38 — Operations Director at a mid-market logistics firm; needs to cut weekly reporting from 6 hours to 1",
+        "Jin, first-time SaaS buyer evaluating CRMs for a 12-person sales team",
+        "Anya, returning customer who churned 3 months ago and is reconsidering"
+      ]
+    },
+    "needs": {
+      "title": "Customer Needs",
+      "prompt": "What does the customer need to get done at this stage of the journey?",
+      "examples": [
+        "Discovery: trustworthy comparison of options without vendor sales pressure",
+        "Onboarding: get a real report out within day one — no \"hello world\" demo data",
+        "Retention: a way to share monthly value with their boss, in their words"
+      ]
+    },
+    "key-moment": {
+      "title": "Key Moment",
+      "prompt": "If you took a snapshot of this moment, what would be in frame? Where, what, who, on which channel?",
+      "examples": [
+        "Friday 4pm, laptop on kitchen counter, comparing 3 vendor sites in tabs while kids watch TV",
+        "Slack DM to a peer: \"Have you used X? Worth it?\" — answer arrives 2 days later",
+        "Login screen on Monday morning — sees the wrong workspace and nearly closes the tab"
+      ]
+    },
+    "satisfaction": {
+      "title": "Customer Satisfaction",
+      "prompt": "How does the customer feel at this moment — happy, neutral, or frustrated? This also tests whether Bain emotional/social value is real.",
+      "examples": [
+        "Frustrated — pricing page is opaque, has to email sales just to get a number",
+        "Neutral — onboarding finished but the value still feels theoretical",
+        "Happy — first weekly report saved 4 hours; sent screenshot to teammates"
+      ]
+    }
+  }
+}

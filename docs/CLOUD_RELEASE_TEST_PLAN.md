@@ -54,11 +54,18 @@ pnpm --filter @pingarden/server build
 pnpm smoke:cloud -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com
 ```
 
-如果要验证真实 Kimi 可用性：
+如果要验证真实 Kimi 可用性，只能通过本机临时环境变量或 CI Secret 注入，不要写入仓库、CloudRun 环境变量、README、计划文件或聊天记录：
 
 ```bash
 PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm smoke:cloud -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com --real-kimi
 ```
+
+真实 Kimi 模式会额外验证：
+
+- `/copilot/test-key` 能成功。
+- `/copilot/library-context?q=...` 返回裁剪后的策略库上下文。
+- `/copilot/chat` 携带裁剪上下文后能收到至少一个模型 `delta`。
+- 响应中不包含原始 API Key。
 
 必测用例：
 
@@ -70,7 +77,7 @@ PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm smoke:cloud -- --url https://pingarden-
 | cloud-static-assets | 首页引用的 JS/CSS | 全部 `200` |
 | cloud-chat-sse-invalid-key | 无效 key 调 `/copilot/chat` | 返回 SSE，包含 `data:` 或 SSE comment；不得返回 nginx HTML 504 |
 | cloud-no-key-leak | chat 错误响应 | 不包含原始 API Key |
-| cloud-real-kimi-optional | 真实 key 调 `/copilot/test-key` 或短 chat | 在超时内返回 `ok` 或可读错误 |
+| cloud-real-kimi-optional | 真实 key 调 `/copilot/test-key` 和带裁剪策略库上下文的 `/copilot/chat` | 在超时内收到 `ok` 与至少一个 `delta` |
 
 ### 4. UI 回归测试
 

@@ -1,0 +1,54 @@
+{
+  "id": "scenario-matrix",
+  "name": {
+    "en": "Scenario Matrix",
+    "zh": "情景矩阵"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": false,
+      "showBlockPrompts": false
+    },
+    "canvas": {
+      "showBlockPrompts": true
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "related": ["business-model-environment", "business-model-canvas", "portfolio-map", "design-criteria-canvas"],
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Signal", "zh": "信号" },
+      "description": { "en": "External trend, weak signal, or trigger event.", "zh": "外部趋势、弱信号或触发事件。" }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "Scenario implication", "zh": "情景影响" },
+      "description": { "en": "What changes for the business model in this future.", "zh": "这个未来会如何改变商业模式。" }
+    },
+    {
+      "hex": "#CFEBD3",
+      "label": { "en": "Robust move", "zh": "稳健动作" },
+      "description": { "en": "Action useful across more than one scenario.", "zh": "在多个情景下都值得做的动作。" }
+    }
+  ],
+  "zones": [
+    { "id": "uncertainty-a", "shape": { "type": "rect", "x": 40, "y": 60, "w": 580, "h": 120 }, "label": { "x": 60, "y": 94, "align": "left", "fontSize": 20 } },
+    { "id": "uncertainty-b", "shape": { "type": "rect", "x": 660, "y": 60, "w": 580, "h": 120 }, "label": { "x": 680, "y": 94, "align": "left", "fontSize": 20 } },
+    { "id": "scenario-1", "shape": { "type": "rect", "x": 40, "y": 210, "w": 580, "h": 250 }, "label": { "x": 60, "y": 244, "align": "left", "fontSize": 20 } },
+    { "id": "scenario-2", "shape": { "type": "rect", "x": 660, "y": 210, "w": 580, "h": 250 }, "label": { "x": 680, "y": 244, "align": "left", "fontSize": 20 } },
+    { "id": "scenario-3", "shape": { "type": "rect", "x": 40, "y": 490, "w": 580, "h": 250 }, "label": { "x": 60, "y": 524, "align": "left", "fontSize": 20 } },
+    { "id": "scenario-4", "shape": { "type": "rect", "x": 660, "y": 490, "w": 580, "h": 250 }, "label": { "x": 680, "y": 524, "align": "left", "fontSize": 20 } },
+    { "id": "robust-moves", "shape": { "type": "rect", "x": 40, "y": 770, "w": 1200, "h": 70 }, "label": { "x": 60, "y": 812, "align": "left", "fontSize": 20 } }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "ping-an-group",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Ping An Group — portfolio transformation",
+    "zh": "平安集团 —— 组合转型"
+  },
+  "summary": {
+    "en": "Ping An illustrates business model portfolio management at group level: a financial-services core keeps exploiting insurance and banking strengths while the group explores technology-enabled platforms in health, auto, fintech, and enterprise services.",
+    "zh": "平安集团展示了集团层面的商业模式组合管理：金融服务核心继续开发保险和银行能力，同时探索医疗、汽车、金融科技和企业服务等科技平台。"
+  },
+  "tags": [
+    "financial-services",
+    "portfolio",
+    "platform-ecosystem",
+    "healthcare",
+    "China"
+  ],
+  "sources": [
+    {
+      "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley · 2020 · Ping An case"
+    },
+    {
+      "label": "Ping An public annual reports and investor materials"
+    }
+  ],
+  "thumbnailDefId": "portfolio-map",
+  "projectId": "f4720edf-8d40-4f1f-b4f4-19f3226e6bd0",
+  "canvasCount": 8,
+  "storyCount": 4,
+  "appliesStrategyFrameworks": [
+    "business-model-portfolio-management",
+    "mckinsey-three-horizons",
+    "bcg-growth-share-matrix",
+    "mckinsey-7s",
+    "pestel-analysis"
+  ]
+}

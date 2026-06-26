@@ -1,0 +1,77 @@
+{
+  "id": "innovation-culture-map",
+  "name": {
+    "en": "Innovation Culture Map",
+    "zh": "创新文化地图"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    },
+    "canvas": {
+      "showBlockPrompts": true
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "related": ["portfolio-map", "experiment-canvas", "business-model-canvas"],
+  "relatedNotes": {
+    "portfolio-map": {
+      "en": "Culture explains whether the organization can support Explore and Exploit portfolios at the same time.",
+      "zh": "文化解释组织是否能同时支撑探索组合与开发组合。"
+    },
+    "experiment-canvas": {
+      "en": "Innovation culture should make cheap learning, evidence, and experiment cadence normal.",
+      "zh": "创新文化应该让低成本学习、证据和实验节奏成为日常。"
+    },
+    "business-model-canvas": {
+      "en": "Culture determines whether a new business model can be executed, protected, and scaled.",
+      "zh": "文化决定新商业模式能否被执行、保护和规模化。"
+    }
+  },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Observed evidence", "zh": "观察证据" },
+      "description": { "en": "Concrete facts, examples, quotes, repeated signals, or incidents.", "zh": "具体事实、例子、原话、反复信号或事件。" }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "Behavior", "zh": "行为" },
+      "description": { "en": "What people actually do or say, not values or slogans.", "zh": "人们实际做什么或说什么，不是价值观口号。" }
+    },
+    {
+      "hex": "#CFEBD3",
+      "label": { "en": "Enabler", "zh": "促进因素" },
+      "description": { "en": "Formal or informal mechanisms that make good behaviors easier.", "zh": "让好行为更容易发生的正式或非正式机制。" }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Blocker", "zh": "阻碍因素" },
+      "description": { "en": "Formal or informal mechanisms that prevent useful behaviors.", "zh": "阻止有用行为发生的正式或非正式机制。" }
+    },
+    {
+      "hex": "#E2D5F0",
+      "label": { "en": "Leadership intervention", "zh": "领导动作" },
+      "description": { "en": "Explicit leadership choices needed to cultivate the target culture.", "zh": "培育目标文化所需的明确领导选择。" }
+    }
+  ],
+  "zones": [
+    { "id": "current-outcomes", "shape": { "type": "rect", "x": 255, "y": 188, "w": 470, "h": 150 }, "label": { "x": 275, "y": 222, "align": "left", "fontSize": 20 } },
+    { "id": "desired-outcomes", "shape": { "type": "rect", "x": 765, "y": 188, "w": 470, "h": 150 }, "label": { "x": 785, "y": 222, "align": "left", "fontSize": 20 } },
+    { "id": "current-behaviors", "shape": { "type": "rect", "x": 255, "y": 358, "w": 470, "h": 210 }, "label": { "x": 275, "y": 392, "align": "left", "fontSize": 20 } },
+    { "id": "desired-behaviors", "shape": { "type": "rect", "x": 765, "y": 358, "w": 470, "h": 210 }, "label": { "x": 785, "y": 392, "align": "left", "fontSize": 20 } },
+    { "id": "current-enablers-blockers", "shape": { "type": "rect", "x": 255, "y": 588, "w": 470, "h": 250 }, "label": { "x": 275, "y": 622, "align": "left", "fontSize": 20 } },
+    { "id": "desired-enablers-blockers", "shape": { "type": "rect", "x": 765, "y": 588, "w": 470, "h": 250 }, "label": { "x": 785, "y": 622, "align": "left", "fontSize": 20 } }
+  ]
+}

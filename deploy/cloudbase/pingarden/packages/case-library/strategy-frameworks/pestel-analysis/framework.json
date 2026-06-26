@@ -1,0 +1,54 @@
+{
+  "slug": "pestel-analysis",
+  "name": {
+    "en": "PESTEL Analysis",
+    "zh": "PESTEL 宏观环境分析"
+  },
+  "summary": {
+    "en": "A macro-environment scanning framework that maps six categories of external forces — political, economic, social, technological, environmental, and legal — so teams see which long-running shifts shape the industry before drafting business-model moves.",
+    "zh": "一套宏观环境扫描框架，把外部力量分成政治、经济、社会、技术、环境和法律 6 类，让团队在动手改商业模式之前先看清哪些长周期变化在塑造行业。"
+  },
+  "category": "environment-competition",
+  "sources": [
+    {
+      "label": "Francis J. Aguilar · Scanning the Business Environment · Macmillan · 1967"
+    },
+    {
+      "label": "CIPD · PESTLE analysis factsheet",
+      "url": "https://www.cipd.org/en/knowledge/factsheets/pestle-analysis-factsheet/"
+    }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "cite": "Aguilar 1967",
+      "label": "Francis J. Aguilar · Scanning the Business Environment · Macmillan",
+      "year": 1967,
+      "note": {
+        "en": "Original source for ETPS — economic, technological, political, social — the seed of PEST/PESTEL macro environment scanning.",
+        "zh": "ETPS（经济、技术、政治、社会）的原始来源，也是 PEST/PESTEL 宏观环境扫描的源头。"
+      }
+    },
+    {
+      "type": "web",
+      "cite": "CIPD PESTLE",
+      "label": "CIPD · PESTLE analysis factsheet",
+      "url": "https://www.cipd.org/en/knowledge/factsheets/pestle-analysis-factsheet/",
+      "note": {
+        "en": "Concise contemporary explanation of the six-letter extension (PESTEL/PESTLE) and how to apply it as a scanning routine.",
+        "zh": "现行 6 字母扩展（PESTEL/PESTLE）的简明说明，以及作为扫描例程如何使用。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "patagonia", "role": "primary" },
+    { "slug": "nickel-bank", "role": "primary" },
+    { "slug": "transsion-africa", "role": "secondary" },
+    { "slug": "ping-an-group", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "business-model-environment",
+    "scenario-matrix",
+    "business-model-canvas"
+  ]
+}

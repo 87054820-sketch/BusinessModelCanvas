@@ -1,0 +1,32 @@
+{
+  "slug": "testing-business-ideas",
+  "type": "book",
+  "title": {
+    "en": "Testing Business Ideas",
+    "zh": "《Testing Business Ideas》"
+  },
+  "summary": {
+    "en": "A practical library of experiments for reducing desirability, feasibility, and viability risk before teams overbuild a product or business model.",
+    "zh": "一本面向商业实验的实践手册，帮助团队在过度投入之前，用实验降低需求性、可行性和可营性风险。"
+  },
+  "recommendation": {
+    "en": "Use this as the operating manual for Experiment Canvas and innovation metrics: it explains how to choose evidence, define pass/fail criteria, and learn fast.",
+    "zh": "它是实验画布和创新指标的操作手册：帮助你选择证据、定义通过/失败标准，并让团队更快学习。"
+  },
+  "authors": ["David J. Bland", "Alexander Osterwalder"],
+  "publisher": "Wiley / Strategyzer",
+  "year": 2019,
+  "tags": ["experiments", "evidence", "validation"],
+  "relatedCanvasDefIds": ["experiment-canvas", "evidence-scorecard", "value-proposition-canvas", "business-model-canvas"],
+  "relatedExperimentSlugs": ["customer-interview", "clickable-prototype", "smoke-test", "wizard-of-oz", "pre-sale"],
+  "relatedStrategyFrameworkSlugs": ["innovation-metrics"],
+  "sources": [
+    {
+      "label": "David J. Bland & Alexander Osterwalder · Testing Business Ideas · Wiley · 2019"
+    },
+    {
+      "label": "Strategyzer · Testing Business Ideas book page",
+      "url": "https://www.strategyzer.com/library/testing-business-ideas-book"
+    }
+  ]
+}

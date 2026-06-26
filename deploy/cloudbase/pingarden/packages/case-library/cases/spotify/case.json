@@ -1,0 +1,54 @@
+{
+  "slug": "spotify",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Spotify",
+    "zh": "Spotify"
+  },
+  "summary": {
+    "en": "Music-streaming service founded in Stockholm 2006 by Daniel Ek and Martin Lorentzon, launched 2008. Operates a textbook freemium model: ~250M MAU on the ad-supported free tier + ~250M paying Premium subscribers (€10.99/mo as of 2024) — Anderson 2009's canonical 1:9 ratio in production. Inverted the traditional music industry's per-track ownership economics (CD sales, iTunes downloads) into a per-listening-time access model where ~70% of revenue is paid back to rights-holders. Strategyzer's flagship Freemium case once Skype was sunsetted by Microsoft. The case shows three BMCs — the traditional music industry baseline being unbundled, then Spotify's free tier + premium tier in parallel — to make the cross-user subsidy mechanic legible.",
+    "zh": "音乐流媒体服务,2006 年由 Daniel Ek 和 Martin Lorentzon 在斯德哥尔摩创立,2008 年正式上线。运营教科书级的 Freemium 模式:广告支持的免费档约 2.5 亿 MAU + 约 2.5 亿付费 Premium 订阅(2024 年价格 €10.99/月)—— 这正是 Anderson 2009 提出的经典 1:9 比例的现实样本。把传统唱片业「每首歌单独购买」(CD 销售、iTunes 下载)的经济模型彻底翻转成「按收听时长访问」,其中约 70% 收入回流给版权方。Skype 被微软关停后,Spotify 已成为 Strategyzer《商业模式新生代》Freemium 模式的旗舰案例。本案例用三张 BMC 呈现:被颠覆的传统唱片业基线,以及并排的 Spotify 免费档 + Premium 档,把「跨用户补贴」机制清楚呈现出来。"
+  },
+  "tags": [
+    "music",
+    "streaming",
+    "freemium",
+    "platform",
+    "Sweden",
+    "subscription"
+  ],
+  "sources": [
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (pp. 96-97 freemium pattern)"
+    },
+    {
+      "label": "Chris Anderson · Free: The Future of a Radical Price · Hyperion · 2009 (1:9 ratio)"
+    },
+    {
+      "label": "Spotify Technology S.A. · 2024 Annual Report (Form 20-F)",
+      "url": "https://investors.spotify.com/"
+    },
+    {
+      "label": "Sven Carlsson & Jonas Leijonhufvud · The Spotify Play · Diversion Books · 2021"
+    },
+    {
+      "label": "Spotify Newsroom · Premium pricing changes (2023, 2024)",
+      "url": "https://newsroom.spotify.com/"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "2e07808f-cc10-418a-bbf7-861ecd49e021",
+  "canvasCount": 6,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "free",
+    "from-transactional-to-recurring-revenue"
+  ],
+  "appliesPatternSubtypes": {
+    "free": "freemium"
+  },
+  "appliesStrategyFrameworks": [
+    "ansoff-matrix"
+  ]
+}

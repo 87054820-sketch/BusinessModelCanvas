@@ -1,0 +1,26 @@
+{
+  "id": "0c7691f2-68fa-4dcc-b43d-77bb26a50200",
+  "projectId": "5e9d382d-cfe0-4a0d-9f37-75d1494b1ffd",
+  "defId": "business-model-canvas",
+  "title": "LEGO Ideas / CUUSOO (2008-present)",
+  "language": "en",
+  "contentDate": "2024",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2008-present",
+  "variant": {
+    "id": "lego-ideas",
+    "label": {
+      "en": "LEGO Ideas (2008-present)",
+      "zh": "LEGO Ideas(2008-至今)"
+    },
+    "description": {
+      "en": "Second long-tail move: fans submit set designs; community votes; designs reaching the threshold are reviewed by LEGO and may go to commercial production with revenue share. Operating since 2008 (CUUSOO Japan), rebranded Lego Ideas in 2014. 60+ commercially released sets to date.",
+      "zh": "乐高的第二次长尾动作:粉丝提交套装设计,社区投票,达到阈值后由乐高评审,被选中的设计正式量产并和原作者分成。2008 年从日本 CUUSOO 起步,2014 年改名为 LEGO Ideas。截至 2025 年已有 60+ 套基于粉丝设计的商业化套装。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T07:04:03.138Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T07:04:03.138Z",
+  "updatedBy": "PinGarden Library"
+}

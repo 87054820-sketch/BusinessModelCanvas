@@ -1,0 +1,47 @@
+{
+  "slug": "uber",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Uber",
+    "zh": "Uber(优步)"
+  },
+  "summary": {
+    "en": "On-demand ride-hailing platform founded 2009 (initially as UberCab black-car service); UberX peer-to-peer launch 2012 made it the textbook two-sided platform: riders pay an app-set fare via card-on-file, drivers receive ~70-85% (Uber takes 15-30% commission). Surge / dynamic pricing is the canonical 'yield management' mechanic that matches supply to demand minute-by-minute. Blitzscaled globally 2013-2018, IPO 2019 at ~$75B. Sub-businesses (Uber Eats 2014, Uber Freight 2017, Uber Health) reuse the same dispatch + payments + driver-network infrastructure for adjacent two-sided markets. Notable mechanic: 'negative cash conversion cycle' — Uber collects from riders instantly but pays drivers on a delay, so growing volume actually generates float. The case shows the asymmetric BMC pair — riders (subsidy-side scale) + drivers (revenue-extraction side) — that codifies a pure two-sided platform with surge pricing and network effects.",
+    "zh": "按需打车平台,2009 年创立(最初是 UberCab 高端黑车服务);2012 年 UberX 同城拼车上线后,成为教科书级的双边平台:乘客通过 App 自动定价并用绑卡支付,司机拿到约 70-85%(Uber 抽取 15-30% 佣金)。Surge 动态定价是经典的「Yield Management」机制 —— 按分钟匹配供需。2013-2018 年全球闪电扩张,2019 年以约 750 亿美元上市。子业务(2014 年 Uber Eats、2017 年 Uber Freight、Uber Health)复用同一套调度 + 支付 + 司机网络基础设施去做相邻的双边市场。一个值得关注的机制:**负现金转换周期** —— Uber 从乘客收款是即时的,给司机付款是延后的,所以业务量增长实际上会生成 Float。本案例呈现了那对不对称 BMC —— 乘客侧(规模补贴侧)+ 司机侧(收入抽取侧) —— 把带 Surge 定价和网络效应的纯双边平台讲清楚。"
+  },
+  "tags": [
+    "mobility",
+    "ride-hailing",
+    "multi-sided-platform",
+    "sharing-economy",
+    "yield-management",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "Brad Stone · The Upstarts: How Uber, Airbnb, and the Killer Companies of the New Silicon Valley Are Changing the World · Little, Brown · 2017"
+    },
+    {
+      "label": "Reid Hoffman & Chris Yeh · Blitzscaling · Currency · 2018 (Uber as worked example)"
+    },
+    {
+      "label": "businessmodelhacking.com · Uber Business Model Canvas",
+      "url": "https://www.businessmodelhacking.com/uber-business-model-canvas/"
+    },
+    {
+      "label": "Uber S-1 filing · April 2019",
+      "url": "https://www.sec.gov/"
+    },
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 3, multi-sided-platforms pp. 76-81)"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "af66cb77-9174-442d-9b60-98b8df50363f",
+  "canvasCount": 4,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "multi-sided-platforms"
+  ]
+}

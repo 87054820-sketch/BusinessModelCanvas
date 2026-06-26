@@ -1,0 +1,22 @@
+{
+  "id": "8a3487b5-dff3-4a2d-8d1c-fe9f74953b2f",
+  "projectId": "8080d64a-e1ac-497b-87e7-8a7b87ef57e9",
+  "defId": "business-model-canvas",
+  "title": "[EN] Cainiao — Asset-light logistics coordination",
+  "language": "en",
+  "variant": {
+    "id": "main-en",
+    "label": {
+      "en": "Cainiao (EN)",
+      "zh": "菜鸟(英文版)"
+    },
+    "description": {
+      "en": "BMC of Cainiao's current operating model: a coordination platform on top of third-party couriers, with selective owned infrastructure (EWTP e-hubs, smart warehouses, Cainiao Stations).",
+      "zh": "菜鸟现行运营模式的画布:底层是第三方快递,菜鸟在上面做协调平台,只在关键节点自建(EWTP e-hub、智能仓、菜鸟驿站)。"
+    }
+  },
+  "createdAt": "2026-06-12T12:05:31.788Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-12T12:05:31.788Z",
+  "updatedBy": "PinGarden Library"
+}

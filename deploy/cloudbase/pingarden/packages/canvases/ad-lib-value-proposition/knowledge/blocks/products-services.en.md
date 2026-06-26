@@ -1,0 +1,1 @@
+Name the concrete product or service the customer can buy, use, or experience. Specific beats abstract — "hosted PostgreSQL with point-in-time recovery" beats "data infrastructure" — and works better in a one-sentence proposition.

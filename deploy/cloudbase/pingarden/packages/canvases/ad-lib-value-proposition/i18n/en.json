@@ -1,0 +1,77 @@
+{
+  "canvasTitle": "Ad-Lib Value Proposition",
+  "blocks": {
+    "products-services": {
+      "title": "Products and Services",
+      "prompt": "What specific product or service goes into the sentence?",
+      "examples": [
+        "Real-time collaboration whiteboard",
+        "Hosted PostgreSQL with point-in-time recovery",
+        "Pay-per-mile fleet insurance"
+      ]
+    },
+    "customer-segment": {
+      "title": "Customer Segment",
+      "prompt": "Which specific customer segment does this sentence serve?",
+      "examples": [
+        "Series A startup CTOs",
+        "Independent fleet operators with 10–50 vehicles",
+        "Solo product designers at SaaS companies"
+      ]
+    },
+    "jobs-to-be-done": {
+      "title": "Jobs to Be Done",
+      "prompt": "What specific job is this customer trying to get done?",
+      "examples": [
+        "Ship product specs to engineering without rework",
+        "Stay compliant with state-by-state insurance regulations",
+        "Onboard a junior dev in under a week"
+      ]
+    },
+    "pain-verb": {
+      "title": "Verb (e.g. reducing, avoiding)",
+      "prompt": "Which verb explains how you relieve the pain?",
+      "examples": [
+        "reducing",
+        "eliminating",
+        "avoiding"
+      ]
+    },
+    "customer-pain": {
+      "title": "A customer pain",
+      "prompt": "Which specific pain do you reduce or avoid?",
+      "examples": [
+        "the cost of unplanned database downtime",
+        "weeks lost to manual claim filing",
+        "endless review cycles for design specs"
+      ]
+    },
+    "gain-verb": {
+      "title": "Verb (e.g. increasing, enabling)",
+      "prompt": "Which verb explains how you create the gain?",
+      "examples": [
+        "increasing",
+        "enabling",
+        "accelerating"
+      ]
+    },
+    "customer-gain": {
+      "title": "A customer gain",
+      "prompt": "Which specific gain do you increase or enable?",
+      "examples": [
+        "5-minute production rollback",
+        "instant pay-per-mile pricing visibility",
+        "single-link spec hand-off to engineering"
+      ]
+    },
+    "competing-value-proposition": {
+      "title": "Competing value proposition",
+      "prompt": "What do customers use today instead of you?",
+      "examples": [
+        "self-managed Postgres on EC2",
+        "annual fleet insurance with mile estimates",
+        "Notion docs + email back-and-forth"
+      ]
+    }
+  }
+}

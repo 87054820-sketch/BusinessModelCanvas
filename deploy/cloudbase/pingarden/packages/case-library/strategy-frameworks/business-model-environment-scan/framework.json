@@ -1,0 +1,63 @@
+{
+  "slug": "business-model-environment-scan",
+  "name": {
+    "en": "Business Model Environment Scan",
+    "zh": "商业模式环境扫描"
+  },
+  "summary": {
+    "en": "A strategic analysis framework for pressure-testing a business model against external forces: key trends, market forces, industry forces, and macro-economic forces.",
+    "zh": "一套用外部环境压力测试商业模式的战略分析框架：系统扫描关键趋势、市场力量、行业力量和宏观经济力量。"
+  },
+  "category": "environment-competition",
+  "sources": [
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 · Business Model Environment"
+    },
+    {
+      "label": "Strategyzer Library · How to scan through your environment's disruptive threats and opportunities"
+    },
+    {
+      "label": "Michael E. Porter · Competitive Strategy · Free Press · 1980"
+    }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "cite": "BMG 2010",
+      "label": "Alexander Osterwalder & Yves Pigneur · Business Model Generation · Wiley",
+      "year": 2010,
+      "pages": "Business Model Environment section, pp. 200-211",
+      "note": {
+        "en": "Canonical source for the four-force Business Model Environment map and its link back to BMC pressure points.",
+        "zh": "商业模式环境四类力量及其与 BMC 压力点联动的经典来源。"
+      }
+    },
+    {
+      "type": "web",
+      "cite": "Strategyzer Library",
+      "label": "Strategyzer Library · How to scan through your environment's disruptive threats and opportunities",
+      "note": {
+        "en": "Practical guidance for treating environment signals as threats, opportunities, and constraints rather than generic trend notes.",
+        "zh": "说明如何把环境信号当作威胁、机会和约束处理，而不是泛泛记录趋势。"
+      }
+    },
+    {
+      "type": "book",
+      "cite": "Porter 1980",
+      "label": "Michael E. Porter · Competitive Strategy · Free Press",
+      "year": 1980,
+      "note": {
+        "en": "Useful lens for the Industry Forces quadrant: rivalry, entrants, substitutes, suppliers, and buyers, extended here with stakeholders.",
+        "zh": "可用于行业力量象限：竞争者、新进入者、替代品、供应商和买方，并在本框架中扩展到利益相关者。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "patagonia", "role": "primary" },
+    { "slug": "alibaba-group", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "business-model-environment",
+    "business-model-canvas"
+  ]
+}

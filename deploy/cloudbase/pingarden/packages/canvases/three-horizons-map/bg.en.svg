@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880">
+  <rect width="1280" height="880" fill="#FAFAF7"/>
+  <g fill="none" stroke="#1F2937" stroke-width="1.4">
+    <rect x="40" y="80" width="380" height="360" rx="14"/>
+    <rect x="450" y="80" width="380" height="360" rx="14"/>
+    <rect x="860" y="80" width="380" height="360" rx="14"/>
+    <rect x="40" y="480" width="585" height="340" rx="14"/>
+    <rect x="655" y="480" width="585" height="340" rx="14"/>
+  </g>
+  <g stroke="#9CA3AF" stroke-width="1" stroke-dasharray="6 8">
+    <line x1="420" y1="260" x2="450" y2="260"/>
+    <line x1="830" y1="260" x2="860" y2="260"/>
+    <line x1="330" y1="440" x2="330" y2="480"/>
+    <line x1="950" y1="440" x2="950" y2="480"/>
+  </g>
+  <g fill="none" stroke="#4A7FC1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M112 405 C250 340, 360 250, 420 120" opacity="0.35"/>
+    <path d="M474 400 C610 310, 750 210, 826 116" opacity="0.45"/>
+    <path d="M892 402 C1020 308, 1130 202, 1210 112" opacity="0.55"/>
+  </g>
+  <g fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="14">
+    <text x="40" y="52">Now</text>
+    <text x="604" y="52" text-anchor="middle">Emerging</text>
+    <text x="1240" y="52" text-anchor="end">Future</text>
+  </g>
+</svg>

@@ -1,0 +1,1 @@
+Platform Ecosystem Map analyzes participant sides, core interaction, network effects, governance, monetization, and risk in multi-sided platforms. It fits platform cases such as Uber, Airbnb, Visa, Google, and NVIDIA CUDA.

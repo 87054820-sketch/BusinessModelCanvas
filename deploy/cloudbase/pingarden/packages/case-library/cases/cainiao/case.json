@@ -1,0 +1,51 @@
+{
+  "slug": "cainiao",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Cainiao Network",
+    "zh": "菜鸟网络"
+  },
+  "summary": {
+    "en": "Alibaba's logistics platform — an asset-light coordination layer (vs SF Express's and JD Logistics's heavy fleets) that aggregates third-party couriers, layers a data-and-electronic-waybill standard on top, and adds owned key nodes only where leverage demands it (six EWTP global e-hubs, smart warehouses, neighbourhood Cainiao Stations). Filed for HKEX IPO in 2023, withdrew it in early 2024, and was re-folded into Alibaba Group later that year.",
+    "zh": "阿里巴巴的物流平台 —— 轻资产协调层(对比顺丰、京东物流的重资产),聚合第三方快递,在上面叠加数据中台与电子运单标准,只在杠杆点上自建关键节点(EWTP 全球 6 大 e-hub、智能仓、社区菜鸟驿站)。2023 年向港交所递交招股书,2024 年初撤回,同年并回阿里集团。"
+  },
+  "tags": [
+    "logistics",
+    "supply-chain",
+    "e-commerce",
+    "China",
+    "Alibaba",
+    "asset-light"
+  ],
+  "sources": [
+    {
+      "label": "businessmodelhacking.com · Business Model Canvas Examples",
+      "url": "https://www.businessmodelhacking.com/business-model-canvas-examples/"
+    },
+    {
+      "label": "Alibaba 2024 Annual Report (Cainiao segment)",
+      "url": "https://www.alibabagroup.com/"
+    },
+    {
+      "label": "Cainiao Smart Logistics Network · HKEX IPO Prospectus (2023, withdrawn)"
+    },
+    {
+      "label": "EWTP Whitepaper (Hangzhou + Kuala Lumpur)"
+    },
+    {
+      "label": "cainiao.com / global.cainiao.com (官网)",
+      "url": "https://global.cainiao.com/"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "8080d64a-e1ac-497b-87e7-8a7b87ef57e9",
+  "canvasCount": 2,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "multi-sided-platforms"
+  ],
+  "appliesStrategyFrameworks": [
+    "porters-value-chain"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "canvasTitle": "Business Model Canvas",
+  "blocks": {
+    "key-partners": {
+      "title": "Key Partners",
+      "prompt": "Who are your key partners and key suppliers?",
+      "examples": [
+        "Cloud infrastructure provider (AWS / Aliyun)",
+        "Channel reseller in Southeast Asia",
+        "Open-source community / upstream maintainer"
+      ]
+    },
+    "key-activities": {
+      "title": "Key Activities",
+      "prompt": "What must you do to deliver the value proposition?",
+      "examples": [
+        "Continuous product engineering",
+        "Customer onboarding workshops",
+        "Daily content moderation"
+      ]
+    },
+    "key-resources": {
+      "title": "Key Resources",
+      "prompt": "What resources are required to deliver the value proposition?",
+      "examples": [
+        "Proprietary recommendation algorithm",
+        "10-year clinical trial dataset",
+        "In-house design team of 12"
+      ]
+    },
+    "value-propositions": {
+      "title": "Value Propositions",
+      "prompt": "What value do you deliver, and what customer need do you satisfy?",
+      "examples": [
+        "Cut bookkeeping time from 5h to 30min per week",
+        "Same-day delivery within Tier-1 cities",
+        "Industry-specific compliance built in"
+      ]
+    },
+    "customer-relationships": {
+      "title": "Customer Relationships",
+      "prompt": "What relationship does each customer segment expect?",
+      "examples": [
+        "Self-serve onboarding + in-app chat",
+        "Dedicated CSM for accounts > $50k ARR",
+        "Active user community on Discord"
+      ]
+    },
+    "channels": {
+      "title": "Channels",
+      "prompt": "How do your customer segments want to be reached?",
+      "examples": [
+        "Direct sales team",
+        "Self-serve web purchase",
+        "AppStore distribution"
+      ]
+    },
+    "customer-segments": {
+      "title": "Customer Segments",
+      "prompt": "Who are your customers, and who are the most important ones?",
+      "examples": [
+        "Mid-market SaaS teams (50–500 seats)",
+        "Independent consultants billing clients",
+        "Enterprise procurement (Fortune 500)"
+      ]
+    },
+    "cost-structure": {
+      "title": "Cost Structure",
+      "prompt": "What are the most important costs in this model?",
+      "examples": [
+        "Cloud compute & storage (~38% of OpEx)",
+        "R&D headcount (~45% of OpEx)",
+        "Customer support team"
+      ]
+    },
+    "revenue-streams": {
+      "title": "Revenue Streams",
+      "prompt": "For what value are customers really willing to pay?",
+      "examples": [
+        "Monthly per-seat SaaS subscription",
+        "Usage-based API metering",
+        "Annual professional services contract"
+      ]
+    }
+  }
+}

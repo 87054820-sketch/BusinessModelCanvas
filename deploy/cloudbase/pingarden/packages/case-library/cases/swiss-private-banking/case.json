@@ -1,0 +1,38 @@
+{
+  "slug": "swiss-private-banking",
+  "version": 1,
+  "kind": "industry",
+  "companyName": {
+    "en": "Swiss Private Banking — Unbundling",
+    "zh": "瑞士私人银行业 · 解绑模式"
+  },
+  "summary": {
+    "en": "An industry archetype of the traditional integrated Swiss private bank, contrasted with two real responses to the same unbundling pressure: Maerki Baumann (Zurich) spun off its transaction platform and now focuses purely on customer relationships, while Pictet (Geneva) chose to remain vertically integrated and manages the three-way trade-off between relationship, product, and infrastructure businesses. Drawn from Hagel & Singer (1999) and Osterwalder's Business Model Generation pattern catalog.",
+    "zh": "传统瑞士私人银行的行业 archetype,以及面对同样解绑压力的两种现实选择:Maerki Baumann(苏黎世)剥离了交易平台、现在只专注于客户关系业务;Pictet(日内瓦)选择保持纵向整合、用一家公司谨慎管理客户关系/产品创新/基础设施三种商业活动的内生冲突。内容来自 Hagel & Singer (1999) 与《商业模式新生代》解绑模式案例。"
+  },
+  "tags": [
+    "banking",
+    "wealth-management",
+    "switzerland",
+    "unbundling",
+    "industry-archetype"
+  ],
+  "sources": [
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Unbundling Pattern (pp. 56-63)"
+    },
+    {
+      "label": "Hagel III & Singer · Unbundling the Corporation · HBR 1999"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "f50c3a8d-5b7b-4830-9bc7-36c2f6165449",
+  "canvasCount": 6,
+  "storyCount": 4,
+  "appliesPatterns": [
+    "unbundling-business-models"
+  ],
+  "appliesStrategyFrameworks": [
+    "porters-five-forces"
+  ]
+}

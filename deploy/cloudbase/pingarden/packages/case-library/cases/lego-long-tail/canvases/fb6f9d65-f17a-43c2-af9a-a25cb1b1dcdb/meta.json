@@ -1,0 +1,26 @@
+{
+  "id": "fb6f9d65-f17a-43c2-af9a-a25cb1b1dcdb",
+  "projectId": "5e9d382d-cfe0-4a0d-9f37-75d1494b1ffd",
+  "defId": "business-model-canvas",
+  "title": "LEGO Factory / Design byME (2005-2014)",
+  "language": "en",
+  "contentDate": "2008",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2005-2014",
+  "variant": {
+    "id": "lego-factory",
+    "label": {
+      "en": "LEGO Factory (2005-2014)",
+      "zh": "LEGO Factory(2005-2014)"
+    },
+    "description": {
+      "en": "First long-tail move: LEGO Digital Designer software lets a user assemble a custom set virtually; LEGO ships the exact bricks plus a printed personalized manual. Closed in 2014.",
+      "zh": "乐高的第一次长尾动作:LEGO Digital Designer 软件让用户在虚拟世界里拼搭自己的套装,乐高把对应零件配齐 + 个性化纸质说明书发出。2014 年关停。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T07:04:03.138Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T07:04:03.138Z",
+  "updatedBy": "PinGarden Library"
+}

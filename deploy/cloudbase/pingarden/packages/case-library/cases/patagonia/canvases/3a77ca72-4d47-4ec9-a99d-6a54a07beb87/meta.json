@@ -1,0 +1,22 @@
+{
+  "id": "3a77ca72-4d47-4ec9-a99d-6a54a07beb87",
+  "projectId": "02df9825-ac03-4cb3-b894-dc93612c11fd",
+  "defId": "business-model-canvas",
+  "title": "[ZH] Patagonia —— 「地球是唯一的股东」",
+  "language": "zh",
+  "variant": {
+    "id": "main-zh",
+    "label": {
+      "en": "Patagonia (ZH)",
+      "zh": "Patagonia(中文版)"
+    },
+    "description": {
+      "en": "BMC of Patagonia's current operating model, with the strategic-differentiation cells highlighting the moves that distinguish it from a generic outdoor-apparel brand.",
+      "zh": "Patagonia 现行运营模式的商业画布,其中黄色「战略差异点」格子突出与同行不同的招式。"
+    }
+  },
+  "createdAt": "2026-06-12T12:05:31.459Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-12T12:05:31.459Z",
+  "updatedBy": "PinGarden Library"
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "airbnb",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Airbnb",
+    "zh": "Airbnb(爱彼迎)"
+  },
+  "summary": {
+    "en": "Peer-to-peer accommodation platform founded in 2008 in San Francisco — three roommates rented air mattresses on their living-room floor to rescue rent during a sold-out conference and named the result 'Air Bed & Breakfast'. Mechanically a textbook two-sided platform: hosts list spare rooms, apartments, or whole properties; guests book per night via the platform with reviews + ratings as the trust substitute. Airbnb takes ~3% from hosts + ~14% from guests per booking (combined ~13-15% take rate). Network effects + reviews-as-cumulative-asset compound: more hosts → more inventory → more guest searches → more reviews → higher trust → more hosts. Blitzscaled internationally 2011-2018, IPO 2020 at ~$87B during the COVID-era pivot to long-stays + 'live anywhere'. Sub-brands: Airbnb Plus (verified-quality 2018), Airbnb Luxe (high-end 2019), Airbnb Experiences (host-led tours, scaled 2016+). The case shows the asymmetric BMC pair — guests (demand-side scale) + hosts (supply-side income) — that codifies a peer-to-peer accommodation marketplace where reviews substitute for prior brand trust.",
+    "zh": "P2P 共享住宿平台,2008 年在旧金山创立 —— 三个室友在客厅地板上摆了几张充气床,用来在爆满的设计师大会期间救房租,起名「Air Bed & Breakfast」。机制上是教科书级的双边平台:房东挂出空房间、整套公寓或整栋房产;客人按晚通过平台预订,评论与评分作为信任替代物。Airbnb 向房东抽 ~3%、向客人收 ~14%(合计抽成约 13-15%)。网络效应 + 评论作为累积资产同时复利:房东越多 → 库存越多 → 客人搜索越多 → 评论越多 → 信任越强 → 房东越多。2011-2018 年全球闪电扩张,2020 年在新冠疫情期间转向长租 + 「Live anywhere」时上市,市值约 870 亿美元。子品牌:Airbnb Plus(2018 质量验证)、Airbnb Luxe(2019 高端)、Airbnb Experiences(房东带的小团游,2016 后规模化)。本案例呈现了那对不对称 BMC —— 客人侧(需求侧规模)+ 房东侧(供给侧收入) —— 把那种「评论替代品牌信任」的 P2P 住宿市场讲清楚。"
+  },
+  "tags": [
+    "hospitality",
+    "peer-to-peer",
+    "multi-sided-platform",
+    "sharing-economy",
+    "reviews-trust",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "Brad Stone · The Upstarts: How Uber, Airbnb, and the Killer Companies of the New Silicon Valley Are Changing the World · Little, Brown · 2017"
+    },
+    {
+      "label": "Leigh Gallagher · The Airbnb Story · Houghton Mifflin Harcourt · 2017"
+    },
+    {
+      "label": "businessmodelhacking.com · Airbnb Business Model Canvas Example",
+      "url": "https://www.businessmodelhacking.com/airbnb-business-model-canvas-example/"
+    },
+    {
+      "label": "Airbnb S-1 filing · November 2020",
+      "url": "https://www.sec.gov/"
+    },
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 3, multi-sided-platforms pp. 76-81)"
+    },
+    {
+      "label": "Osterwalder, Pigneur, Bernarda & Smith · Value Proposition Design · Wiley · 2014 (Design constraints: platform value propositions, p. 91)"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "1aa36d1e-cd80-4f7a-bc3d-30a0d7546938",
+  "canvasCount": 6,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "multi-sided-platforms"
+  ],
+  "appliesStrategyFrameworks": [
+    "platform-strategy"
+  ]
+}

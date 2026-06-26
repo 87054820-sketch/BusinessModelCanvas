@@ -1,0 +1,75 @@
+{
+  "id": "portfolio-map",
+  "name": {
+    "en": "Portfolio Map",
+    "zh": "业务组合地图"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "canvas": {
+      "showPinConnections": false
+    },
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "plugin": "axis-grid",
+  "related": ["business-model-canvas"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Each pin on the portfolio is a BMC in miniature. When a pin is interesting, expand it into a full BMC.",
+      "zh": "组合图上每个 pin 都是一张 mini BMC。哪个 pin 有意思,就展开成一张完整 BMC。"
+    }
+  },
+  "zones": [
+    {
+      "id": "explore",
+      "shape": { "type": "rect", "x": 80, "y": 440, "w": 560, "h": 380 },
+      "label": { "x": 360, "y": 470, "align": "center" },
+      "axes": {
+        "x": {
+          "min": 0,
+          "max": 1,
+          "kind": "risk",
+          "label": { "en": "Innovation Risk", "zh": "创新风险" }
+        },
+        "y": {
+          "min": 0,
+          "max": 1,
+          "kind": "return",
+          "label": { "en": "Expected Return", "zh": "预期收益" }
+        }
+      }
+    },
+    {
+      "id": "exploit",
+      "shape": { "type": "rect", "x": 640, "y": 60, "w": 560, "h": 380 },
+      "label": { "x": 920, "y": 90, "align": "center" },
+      "axes": {
+        "x": {
+          "min": 0,
+          "max": 1,
+          "kind": "risk",
+          "label": { "en": "Disruption Risk", "zh": "颠覆风险" }
+        },
+        "y": {
+          "min": 0,
+          "max": 1,
+          "kind": "return",
+          "label": { "en": "Returns", "zh": "收益" }
+        }
+      }
+    }
+  ]
+}

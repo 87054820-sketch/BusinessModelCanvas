@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  JTBD Story canvas. The semantic Functional / Emotional / Social colours
+  are seeded into the interactive sticky colour legend, not drawn here.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" preserveAspectRatio="xMidYMid meet">
+  <rect x="0" y="0" width="1400" height="900" fill="#FAFAF7"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="40" y="52" font-size="13" font-style="italic" fill="#6B7280">When ___, I want to ___, so I can ___</text>
+  </g>
+
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <rect x="40"  y="80" width="420" height="500"/>
+    <rect x="490" y="80" width="420" height="500"/>
+    <rect x="940" y="80" width="420" height="500"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280">
+    <text x="60"  y="148">Situation · circumstance</text>
+    <text x="510" y="148">Motivation · action</text>
+    <text x="960" y="148">Outcome · progress</text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#9CA3AF">
+    <text x="60"  y="178">What just happened?</text>
+    <text x="60"  y="195">What triggers this need now?</text>
+
+    <text x="510" y="178">What does the customer want to do?</text>
+    <text x="510" y="195">Lead with a verb.</text>
+
+    <text x="960" y="178">What progress are they making?</text>
+    <text x="960" y="195">What does success look or feel like?</text>
+  </g>
+
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <rect x="40" y="600" width="1320" height="280"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="60"  y="668" font-size="13" fill="#6B7280">Pair every functional Job Story above with at least one emotional and one social companion job.</text>
+    <text x="60"  y="700" font-size="12" fill="#9CA3AF">Emotional — what does the customer want to feel? (e.g. "feel calm during close week")</text>
+    <text x="60"  y="717" font-size="12" fill="#9CA3AF">Social — how do they want to be perceived? (e.g. "be seen as the PM whose reviews are on schedule")</text>
+  </g>
+
+  <g stroke="#D1D5DB" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke">
+    <line x1="700" y1="730" x2="700" y2="870"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">
+    <text x="370"  y="745">Emotional</text>
+    <text x="1030" y="745">Social</text>
+  </g>
+</svg>

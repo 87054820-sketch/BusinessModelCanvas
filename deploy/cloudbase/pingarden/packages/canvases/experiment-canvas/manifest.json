@@ -1,0 +1,77 @@
+{
+  "id": "experiment-canvas",
+  "name": {
+    "en": "Experiment Canvas",
+    "zh": "实验画布"
+  },
+  "viewBox": [0, 0, 1200, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "canvas": {
+      "showBlockPrompts": true
+    },
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockPrompts": true,
+      "subtitle": {
+        "en": "Turn risky assumptions into measurable learning experiments",
+        "zh": "把高风险假设转化为可衡量的学习实验"
+      }
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "related": ["design-criteria-canvas", "value-proposition-canvas", "business-model-canvas"],
+  "relatedNotes": {
+    "design-criteria-canvas": {
+      "en": "If the experiment passes, lock the result into a Must-have on the Design Criteria Canvas.",
+      "zh": "实验通过的话,把结论锁进 Design Criteria Canvas 的 Must-have。"
+    },
+    "value-proposition-canvas": {
+      "en": "Most riskiest assumptions live in VPC — Pains being acute enough, Gain Creators actually creating gains.",
+      "zh": "致命假设大多藏在 VPC 里 —— 痛点是否真的够痛、收益创造能否真的产生收益。"
+    },
+    "business-model-canvas": {
+      "en": "When the riskiest assumption is structural (channel, revenue stream), feed results back into the BMC block.",
+      "zh": "致命假设是结构性的(渠道、收入来源等)时,把结果反馈进 BMC 对应那一块。"
+    }
+  },
+  "zones": [
+    {
+      "id": "riskiest-assumption",
+      "shape": { "type": "rect", "x": 60, "y": 120, "w": 360, "h": 170 },
+      "label": { "x": 82, "y": 158, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "falsifiable-hypothesis",
+      "shape": { "type": "rect", "x": 420, "y": 120, "w": 720, "h": 170 },
+      "label": { "x": 442, "y": 158, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "experiment-setup",
+      "shape": { "type": "rect", "x": 60, "y": 290, "w": 1080, "h": 240 },
+      "label": { "x": 82, "y": 328, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "metrics-criteria",
+      "shape": { "type": "rect", "x": 60, "y": 530, "w": 360, "h": 190 },
+      "label": { "x": 82, "y": 568, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "results-conclusion",
+      "shape": { "type": "rect", "x": 420, "y": 530, "w": 360, "h": 190 },
+      "label": { "x": 442, "y": 568, "align": "left", "fontSize": 20 }
+    },
+    {
+      "id": "next-steps",
+      "shape": { "type": "rect", "x": 780, "y": 530, "w": 360, "h": 190 },
+      "label": { "x": 802, "y": 568, "align": "left", "fontSize": 20 }
+    }
+  ]
+}

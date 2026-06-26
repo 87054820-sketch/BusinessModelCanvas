@@ -1,0 +1,35 @@
+{
+  "slug": "ping-an-good-doctor",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Ping An Good Doctor",
+    "zh": "平安好医生"
+  },
+  "summary": {
+    "en": "Ping An Good Doctor reframed parts of healthcare access around online consultation, triage, pharmacy, and insurance ecosystem links, aiming to reduce friction before offline care.",
+    "zh": "平安好医生围绕在线咨询、分诊、药房和保险生态连接重构部分医疗可及性，试图降低线下就医前的摩擦。"
+  },
+  "tags": [
+    "healthcare",
+    "telemedicine",
+    "China",
+    "blue-ocean"
+  ],
+  "sources": [
+    {
+      "label": "Ping An Good Doctor public company materials"
+    },
+    {
+      "label": "Telemedicine market analyses"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "59f1879b-2e20-45f6-aa74-d45993d9ace3",
+  "canvasCount": 4,
+  "storyCount": 3,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy",
+    "disruptive-innovation"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "tata-nano",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "Tata Nano",
+    "zh": "塔塔 Nano"
+  },
+  "summary": {
+    "en": "Tata Nano attempted to create a new market for families moving from two-wheelers to safer enclosed cars, but shows how a blue-ocean value curve can fail when status, safety perception, and execution do not fit.",
+    "zh": "塔塔 Nano 试图为从两轮车升级到封闭汽车的家庭创造新市场，但也说明蓝海曲线若与身份、安全感和执行不匹配，可能失败。"
+  },
+  "tags": [
+    "automotive",
+    "India",
+    "low-cost",
+    "blue-ocean"
+  ],
+  "sources": [
+    {
+      "label": "Tata Nano public history"
+    },
+    {
+      "label": "Automotive business case analyses"
+    }
+  ],
+  "thumbnailDefId": "blue-ocean-strategy-canvas",
+  "projectId": "9143f505-921c-4b89-b186-c81553dc7f1b",
+  "canvasCount": 4,
+  "storyCount": 3,
+  "appliesStrategyFrameworks": [
+    "blue-ocean-strategy",
+    "disruptive-innovation"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "c1c5fb36-5252-422d-ad89-f200a5b223ea",
+  "projectId": "bf754996-5245-4045-bdf8-ccd94bc57149",
+  "defId": "business-model-canvas",
+  "title": "Google as searchers experience it",
+  "language": "en",
+  "contentDate": "2024",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "circa 2024",
+  "variant": {
+    "id": "google-searchers",
+    "label": {
+      "en": "Searchers' side",
+      "zh": "搜索者一侧"
+    },
+    "description": {
+      "en": "Google Search as the searcher experiences it: free, ad-supported, fast and broad. The subsidy side of the 3-sided platform.",
+      "zh": "搜索者眼中的 Google 搜索:免费、有广告、快速、覆盖广。这是三边平台的「补贴方」。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T07:30:49.639Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T07:30:49.639Z",
+  "updatedBy": "PinGarden Library"
+}

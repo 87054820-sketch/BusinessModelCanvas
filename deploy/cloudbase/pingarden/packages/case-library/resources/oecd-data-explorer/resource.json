@@ -1,0 +1,31 @@
+{
+  "slug": "oecd-data-explorer",
+  "type": "web",
+  "title": {
+    "en": "OECD Data Explorer",
+    "zh": "OECD 数据浏览器"
+  },
+  "summary": {
+    "en": "OECD’s data exploration entry point for comparing economies, sectors, innovation, productivity, trade, entrepreneurship, and related policy indicators.",
+    "zh": "OECD 的数据浏览入口，可用于比较经济体、产业、创新、生产率、贸易、创业和相关政策指标。"
+  },
+  "recommendation": {
+    "en": "Use this when a strategy claim needs comparable country, industry, productivity, innovation, or entrepreneurship indicators. Record the exact indicator and year on the canvas.",
+    "zh": "当战略判断需要可比的国家、产业、生产率、创新或创业指标时使用。应在画布上记录具体指标和年份。"
+  },
+  "authors": ["OECD"],
+  "publisher": "OECD",
+  "tags": ["data", "industry", "innovation", "productivity", "trade"],
+  "relatedCanvasDefIds": ["business-model-environment", "scenario-matrix", "evidence-scorecard"],
+  "relatedStrategyFrameworkSlugs": ["business-model-environment-scan", "scenario-planning", "innovation-metrics", "porters-five-forces"],
+  "sources": [
+    {
+      "label": "OECD · OECD Data Explorer",
+      "url": "https://data-explorer.oecd.org/"
+    },
+    {
+      "label": "OECD · Data",
+      "url": "https://www.oecd.org/en/data.html"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "331c0d89-6ee8-4392-a318-7d3b7f1601f5",
+  "projectId": "bd953365-f275-4b11-b62e-460b216f5f45",
+  "defId": "business-model-canvas",
+  "title": "[ZH] Udemy —— 「任何人都能教,任何人都能学」",
+  "language": "zh",
+  "variant": {
+    "id": "main-zh",
+    "label": {
+      "en": "Udemy (ZH)",
+      "zh": "Udemy(中文版)"
+    },
+    "description": {
+      "en": "BMC of Udemy's current operating model: a long-tail consumer marketplace funnel feeding the Udemy Business B2B subscription product.",
+      "zh": "Udemy 现行运营模式的画布:消费者长尾市场漏斗喂给 Udemy Business 企业订阅。"
+    }
+  },
+  "createdAt": "2026-06-12T12:05:31.620Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-12T12:05:31.620Z",
+  "updatedBy": "PinGarden Library"
+}

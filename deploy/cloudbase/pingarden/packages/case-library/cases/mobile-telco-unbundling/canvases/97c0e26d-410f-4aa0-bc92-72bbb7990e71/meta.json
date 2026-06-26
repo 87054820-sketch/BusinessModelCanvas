@@ -1,0 +1,23 @@
+{
+  "id": "97c0e26d-410f-4aa0-bc92-72bbb7990e71",
+  "projectId": "9a7fb828-099d-44a7-baaa-37c162e67566",
+  "defId": "business-model-canvas",
+  "title": "[ZH] 设备制造商 — 基础设施被解绑出去",
+  "language": "zh",
+  "variant": {
+    "id": "equipment-mfr-zh",
+    "label": {
+      "en": "Equipment manufacturers (ZH)",
+      "zh": "设备制造商(中文版)"
+    },
+    "description": {
+      "en": "Nokia Siemens Networks, Alcatel-Lucent, Ericsson. Run telco networks AS A SERVICE. Their economic engine is scale across multiple telco contracts — same engineers, same NOC, many telcos.",
+      "zh": "诺基亚西门子、阿尔卡特朗讯、爱立信。把电信运营商的网络当成「服务」来运营。经济发动机是「跨多家运营商合同的规模」——同一支工程团队、同一个 NOC,服务多家 telco。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-12T11:12:39.541Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-12T11:12:39.541Z",
+  "updatedBy": "PinGarden Library"
+}

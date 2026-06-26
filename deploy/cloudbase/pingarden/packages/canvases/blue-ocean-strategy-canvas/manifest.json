@@ -1,0 +1,69 @@
+{
+  "id": "blue-ocean-strategy-canvas",
+  "name": {
+    "en": "Strategy Canvas (Blue Ocean)",
+    "zh": "战略画布(蓝海战略)"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "plugin": "chart-canvas",
+  "objectTypes": ["pin", "pinClass", "xAxisItem"],
+  "chart": {
+    "yAxis": {
+      "min": 0,
+      "max": 5,
+      "label": { "en": "Offering level", "zh": "投入 / 表现水平" },
+      "lowLabel": { "en": "Low", "zh": "低" },
+      "highLabel": { "en": "High", "zh": "高" }
+    },
+    "factorsDefault": [
+      {
+        "id": "price",
+        "label": { "en": "Price", "zh": "价格" }
+      },
+      {
+        "id": "quality",
+        "label": { "en": "Quality", "zh": "质量" }
+      },
+      {
+        "id": "service",
+        "label": { "en": "Service", "zh": "服务" }
+      },
+      {
+        "id": "speed",
+        "label": { "en": "Speed", "zh": "速度" }
+      },
+      {
+        "id": "brand",
+        "label": { "en": "Brand", "zh": "品牌" }
+      },
+      {
+        "id": "innovation",
+        "label": { "en": "Innovation", "zh": "创新" }
+      }
+    ]
+  },
+  "zones": [
+    {
+      "id": "chart-area",
+      "shape": { "type": "rect", "x": 100, "y": 64, "w": 1100, "h": 706 }
+    }
+  ],
+  "related": ["business-model-canvas", "value-proposition-canvas"],
+  "quality": {
+    "softHints": true
+  },
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Take the differentiated value curve back into BMC's Value Propositions and Customer Segments — the whole model usually shifts.",
+      "zh": "把差异化后的价值曲线带回 BMC 的价值主张和客户细分 —— 整个模型通常都会跟着改。"
+    },
+    "value-proposition-canvas": {
+      "en": "ERIC moves (Eliminate / Reduce / Raise / Create) translate directly into VPC's Pain Relievers and Gain Creators.",
+      "zh": "ERIC 动作(剔除 / 减少 / 提升 / 创造)直接对应 VPC 的痛点缓解和收益创造。"
+    }
+  }
+}

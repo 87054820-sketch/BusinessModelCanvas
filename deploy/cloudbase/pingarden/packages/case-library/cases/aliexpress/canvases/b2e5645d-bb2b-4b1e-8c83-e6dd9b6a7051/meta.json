@@ -1,0 +1,22 @@
+{
+  "id": "b2e5645d-bb2b-4b1e-8c83-e6dd9b6a7051",
+  "projectId": "06959c78-f30f-4e08-bca5-b2b85aa42831",
+  "defId": "business-model-canvas",
+  "title": "[EN] AliExpress — China-to-world consumer marketplace",
+  "language": "en",
+  "variant": {
+    "id": "main-en",
+    "label": {
+      "en": "AliExpress (EN)",
+      "zh": "速卖通(英文版)"
+    },
+    "description": {
+      "en": "BMC of AliExpress's current operating model, with the AliExpress Choice fully-managed program highlighted as the strategic differentiator.",
+      "zh": "速卖通现行运营模式的画布,「AliExpress Choice 全托管」作为战略差异点。"
+    }
+  },
+  "createdAt": "2026-06-12T12:05:31.706Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-12T12:05:31.706Z",
+  "updatedBy": "PinGarden Library"
+}

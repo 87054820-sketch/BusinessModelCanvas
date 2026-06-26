@@ -1,0 +1,164 @@
+{
+  "id": "value-proposition-canvas",
+  "name": {
+    "en": "Value Proposition Canvas",
+    "zh": "价值主张画布"
+  },
+  "viewBox": [0, 0, 1200, 800],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "canvas": {
+      "showBlockLabels": true,
+      "groupLabels": [
+        {
+          "id": "value-map",
+          "label": { "en": "Value Map", "zh": "价值地图" },
+          "description": { "en": "How your offer creates value", "zh": "你的方案如何创造价值" },
+          "x": 330,
+          "y": 74,
+          "align": "center",
+          "fontSize": 30
+        },
+        {
+          "id": "customer-profile",
+          "label": { "en": "Customer Profile", "zh": "客户画像" },
+          "description": { "en": "Jobs, pains, and gains of one segment", "zh": "一个客户细分的任务、痛点与收益" },
+          "x": 900,
+          "y": 74,
+          "align": "center",
+          "fontSize": 30
+        }
+      ]
+    },
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false,
+      "subtitle": {
+        "en": "Match your value map to one clear customer profile",
+        "zh": "把你的价值地图匹配到一个清晰的客户画像"
+      },
+      "groupLabels": [
+        {
+          "id": "value-map",
+          "label": { "en": "Value Map", "zh": "价值地图" },
+          "description": { "en": "Products, pain relievers, gain creators", "zh": "产品服务、痛点缓解、收益创造" },
+          "x": 330,
+          "y": 74,
+          "align": "center",
+          "fontSize": 36
+        },
+        {
+          "id": "customer-profile",
+          "label": { "en": "Customer Profile", "zh": "客户画像" },
+          "description": { "en": "Jobs, pains, and gains", "zh": "客户任务、痛点与收益" },
+          "x": 900,
+          "y": 74,
+          "align": "center",
+          "fontSize": 36
+        }
+      ]
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "related": ["business-model-canvas", "empathy-map", "jobs-to-be-done", "ad-lib-value-proposition", "customer-journey", "design-criteria-canvas", "experiment-canvas"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "Lift the validated Value Proposition + Customer Segment back into the BMC so the rest of the model adapts.",
+      "zh": "把验证过的价值主张 + 客户细分搬回 BMC,让模型其余部分跟着改。"
+    },
+    "empathy-map": {
+      "en": "Deep-dive on what the customer thinks / says / feels before listing Jobs and Pains. Anchors the right side.",
+      "zh": "在写工作和痛点之前,先把客户在想 / 说 / 感受什么搞清楚。给右侧定锚。"
+    },
+    "jobs-to-be-done": {
+      "en": "Sharpen Customer Jobs into a situation → motivation → outcome story before using Bain tags to classify value layers.",
+      "zh": "先把客户工作锐化成「情境 → 动机 → 结果」故事，再用 Bain 标签分类价值层级。"
+    },
+    "ad-lib-value-proposition": {
+      "en": "Compress the entire VPC into one sentence the team can say out loud — exposes weak spots.",
+      "zh": "把整张 VPC 压缩成一句团队能朗读出口的话 —— 弱点立刻暴露。"
+    },
+    "customer-journey": {
+      "en": "Walk Pains and Gains across the customer's timeline so you see when each one bites.",
+      "zh": "把痛点和收益沿着客户的时间线铺开,看清每一项在什么节点起作用。"
+    },
+    "design-criteria-canvas": {
+      "en": "Translate the validated Pains and Gains into design criteria for the offering.",
+      "zh": "把验证过的痛点和收益翻译成产品设计的硬约束。"
+    },
+    "experiment-canvas": {
+      "en": "Pick the riskiest Pain Reliever or Gain Creator and design a cheap test for it.",
+      "zh": "挑出最不靠谱的那条痛点缓解或收益创造,为它设计最便宜的实验。"
+    }
+  },
+  "zones": [
+    {
+      "id": "gain-creators",
+      "shape": {
+        "type": "polygon",
+        "points": [[60, 145], [600, 145], [600, 415], [330, 415]]
+      },
+      "label": { "x": 330, "y": 205, "align": "center", "fontSize": 18 }
+    },
+    {
+      "id": "pain-relievers",
+      "shape": {
+        "type": "polygon",
+        "points": [[60, 685], [600, 685], [600, 415], [330, 415]]
+      },
+      "label": { "x": 330, "y": 650, "align": "center", "fontSize": 18 }
+    },
+    {
+      "id": "products-and-services",
+      "shape": {
+        "type": "polygon",
+        "points": [[60, 145], [60, 685], [330, 415]]
+      },
+      "label": { "x": 82, "y": 420, "align": "left", "fontSize": 18 }
+    },
+    {
+      "id": "gains",
+      "shape": {
+        "type": "circle-segment",
+        "cx": 900,
+        "cy": 415,
+        "r": 220,
+        "fromDeg": 180,
+        "toDeg": 330
+      },
+      "label": { "x": 900, "y": 250, "align": "center", "fontSize": 18 }
+    },
+    {
+      "id": "pains",
+      "shape": {
+        "type": "circle-segment",
+        "cx": 900,
+        "cy": 415,
+        "r": 220,
+        "fromDeg": 30,
+        "toDeg": 180
+      },
+      "label": { "x": 900, "y": 620, "align": "center", "fontSize": 18 }
+    },
+    {
+      "id": "customer-jobs",
+      "shape": {
+        "type": "circle-segment",
+        "cx": 900,
+        "cy": 415,
+        "r": 220,
+        "fromDeg": 330,
+        "toDeg": 30
+      },
+      "label": { "x": 1100, "y": 420, "align": "right", "fontSize": 18 }
+    }
+  ]
+}

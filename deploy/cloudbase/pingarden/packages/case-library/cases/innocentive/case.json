@@ -1,0 +1,50 @@
+{
+  "slug": "innocentive",
+  "version": 1,
+  "kind": "company",
+  "companyName": {
+    "en": "InnoCentive — the connector platform",
+    "zh": "InnoCentive —— 连接器平台"
+  },
+  "summary": {
+    "en": "Originally an Eli Lilly internal R&D experiment (2001), spun out as an independent company in 2005. Connects 'seekers' (companies with unsolved problems — P&G, Eli Lilly, NASA, Rockefeller Foundation, US DoD) with 'solvers' (a global network of ~500K independent scientists and amateur problem-solvers) via published challenges with cash prizes ranging from $5K to $1M. Mechanically a multi-sided platform: seekers pay listing fees + commission on awards; solvers get free access plus the prize money. Strategically the canonical *connector platform* that runs outside-in open innovation as-a-service for many seekers — a meta-application of Open Business Models. The case is dual-tagged: `multi-sided-platforms` (the structure) + `open-business-models / outside-in` (the strategy it serves).",
+    "zh": "最早是礼来(Eli Lilly)2001 年的内部研发实验项目,2005 年分拆为独立公司。把「Seeker」(有未解问题的公司 —— 宝洁、礼来、NASA、洛克菲勒基金会、美国国防部)与「Solver」(全球约 50 万独立科学家和业余解题人组成的网络)通过带奖金的公开挑战赛连接起来,奖金从 5,000 美元到 100 万美元不等。机制上是一个多边平台:Seeker 付挑战发布费 + 中奖佣金,Solver 免费访问并能拿到奖金。战略层面这是把「由外而内」开放式创新**作为服务**提供给众多 Seeker 的典范连接器平台 —— 是开放式商业模式的元应用。本案例同时打了两个标签:`multi-sided-platforms`(结构)+ `open-business-models / outside-in`(它服务的战略)。"
+  },
+  "tags": [
+    "open-innovation",
+    "crowdsourcing",
+    "multi-sided-platform",
+    "outside-in",
+    "USA"
+  ],
+  "sources": [
+    {
+      "label": "InnoCentive (official site)",
+      "url": "https://www.innocentive.com/"
+    },
+    {
+      "label": "Karim R. Lakhani et al. · 'The Value of Openness in Scientific Problem Solving' · Harvard Business School Working Paper 07-050 · 2007"
+    },
+    {
+      "label": "Henry Chesbrough · Open Business Models: How to Thrive in the New Innovation Landscape · Harvard Business Review Press · 2006 (InnoCentive sidebar pp. 105-108)"
+    },
+    {
+      "label": "Osterwalder & Pigneur · Business Model Generation · Wiley · 2010 (Pattern No. 5, pp. 114 InnoCentive sidebar)"
+    },
+    {
+      "label": "Andy Zynga · 'Open Innovation Marketplaces' (Lakhani's Harvard course materials referenced)"
+    }
+  ],
+  "thumbnailDefId": "business-model-canvas",
+  "projectId": "5253d634-8c10-4001-a14c-a9db31d50c7e",
+  "canvasCount": 2,
+  "storyCount": 2,
+  "appliesPatterns": [
+    "multi-sided-platforms",
+    "open-business-models",
+    "from-closed-to-open-innovation"
+  ],
+  "appliesPatternSubtypes": {
+    "open-business-models": "outside-in"
+  }
+}

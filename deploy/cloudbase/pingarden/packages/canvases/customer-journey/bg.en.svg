@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Customer Journey (Design A Better Business convention) — three horizontal
+  rows (Customer Needs, Key Moment, Customer Satisfaction) running across
+  five timeline stages. The stages are dashed verticals only; stickies
+  are dropped at any x-position within a row, so the manifest defines
+  4 hit-test zones (persona band + 3 row rects), not 15 cells.
+
+  Layout (1400 × 900):
+    persona       : (40, 20)  → (1360, 100)   ← name + role + situation strip
+    needs row     : (220, 120) → (1360, 340)
+    key-moment    : (220, 360) → (1360, 630)
+    satisfaction  : (220, 650) → (1360, 880)
+    left margin   : x=40..220 carries the row label, helper text, and the
+                    happy/neutral/frustrated smiley legend
+    stage columns : dashed at x=448, 676, 904, 1132; numbered 1..5 above
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" preserveAspectRatio="xMidYMid meet">
+  <rect x="0" y="0" width="1400" height="900" fill="#FAFAF7"/>
+
+  <!-- Persona band (full-width strip; the protagonist of this journey) -->
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <rect x="40" y="20" width="1320" height="80"/>
+  </g>
+
+  <!-- Three content rows: outlines only. ZoneLabel renders the row title
+       (from the manifest's label coordinates); helper questions sit just
+       beneath in the left margin, in light grey, to keep the framing
+       sharp. -->
+  <g fill="none" stroke="#1F2937" stroke-width="1.5" vector-effect="non-scaling-stroke">
+    <rect x="220" y="120" width="1140" height="220"/>
+    <rect x="220" y="360" width="1140" height="270"/>
+    <rect x="220" y="650" width="1140" height="230"/>
+  </g>
+
+  <!-- Helper questions, one short line at a time so the left margin stays
+       readable at 180px wide. -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#9CA3AF">
+    <text x="60" y="195">What does the customer</text>
+    <text x="60" y="212">need at this stage?</text>
+
+    <text x="60" y="435">If you took a snapshot of</text>
+    <text x="60" y="452">this moment, what's in it?</text>
+
+    <text x="60" y="725">How does the customer</text>
+    <text x="60" y="742">feel here?</text>
+  </g>
+
+  <!-- Smiley legend, vertically stacked in the satisfaction row's left
+       margin. Read the satisfaction row across the timeline as the
+       customer's emotional curve — that's where the design opportunity is. -->
+  <g vector-effect="non-scaling-stroke">
+    <!-- Happy -->
+    <circle cx="100" cy="775" r="14" fill="#FAFAF7" stroke="#1F2937" stroke-width="1.2"/>
+    <circle cx="95"  cy="772" r="1.5" fill="#1F2937"/>
+    <circle cx="105" cy="772" r="1.5" fill="#1F2937"/>
+    <path d="M 93 780 Q 100 786 107 780" fill="none" stroke="#1F2937" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="125" y="780" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#374151">Happy</text>
+
+    <!-- Neutral -->
+    <circle cx="100" cy="815" r="14" fill="#FAFAF7" stroke="#1F2937" stroke-width="1.2"/>
+    <circle cx="95"  cy="812" r="1.5" fill="#1F2937"/>
+    <circle cx="105" cy="812" r="1.5" fill="#1F2937"/>
+    <line x1="93" y1="822" x2="107" y2="822" stroke="#1F2937" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="125" y="820" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#374151">Neutral</text>
+
+    <!-- Frustrated -->
+    <circle cx="100" cy="855" r="14" fill="#FAFAF7" stroke="#1F2937" stroke-width="1.2"/>
+    <circle cx="95"  cy="852" r="1.5" fill="#1F2937"/>
+    <circle cx="105" cy="852" r="1.5" fill="#1F2937"/>
+    <path d="M 93 864 Q 100 858 107 864" fill="none" stroke="#1F2937" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="125" y="860" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#374151">Frustrated</text>
+  </g>
+
+  <!-- Dashed stage dividers — decorative, NOT hit-test boundaries.
+       Stickies anchor by x-position within their row, so dragging across
+       a divider re-stages the sticky without any cell magic. -->
+  <g stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke">
+    <line x1="448"  y1="120" x2="448"  y2="880"/>
+    <line x1="676"  y1="120" x2="676"  y2="880"/>
+    <line x1="904"  y1="120" x2="904"  y2="880"/>
+    <line x1="1132" y1="120" x2="1132" y2="880"/>
+  </g>
+
+  <!-- Stage labels above each column (in the 20-px gap between persona
+       and the first row). -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#6B7280" text-anchor="middle">
+    <text x="334"  y="115">Stage 1</text>
+    <text x="562"  y="115">Stage 2</text>
+    <text x="790"  y="115">Stage 3</text>
+    <text x="1018" y="115">Stage 4</text>
+    <text x="1246" y="115">Stage 5</text>
+  </g>
+</svg>

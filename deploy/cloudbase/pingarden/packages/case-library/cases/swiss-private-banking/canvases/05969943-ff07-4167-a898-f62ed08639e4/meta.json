@@ -1,0 +1,23 @@
+{
+  "id": "05969943-ff07-4167-a898-f62ed08639e4",
+  "projectId": "f50c3a8d-5b7b-4830-9bc7-36c2f6165449",
+  "defId": "business-model-canvas",
+  "title": "[中文] 行业 archetype —— 传统纵向整合的瑞士私人银行",
+  "language": "zh",
+  "variant": {
+    "id": "archetype-zh",
+    "label": {
+      "en": "Industry archetype (ZH)",
+      "zh": "行业 archetype(中文版)"
+    },
+    "description": {
+      "en": "The traditional vertically-integrated Swiss private bank that did everything in-house — relationship management, financial-product R&D, and transaction infrastructure all under one roof.",
+      "zh": "传统的纵向整合瑞士私人银行 —— 客户关系管理、金融产品研发、交易基础设施全部内部完成,所有业务在一个屋檐下。"
+    },
+    "role": "archetype"
+  },
+  "createdAt": "2026-06-11T10:12:59.622Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-11T10:12:59.622Z",
+  "updatedBy": "PinGarden Library"
+}

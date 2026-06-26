@@ -1,0 +1,37 @@
+{
+  "slug": "the-invincible-company",
+  "type": "book",
+  "title": {
+    "en": "The Invincible Company",
+    "zh": "《The Invincible Company》"
+  },
+  "summary": {
+    "en": "Strategyzer's guide to managing business-model portfolios, balancing Explore and Exploit, and building innovation systems that repeatedly renew the company.",
+    "zh": "Strategyzer 关于商业模式组合管理的核心著作，讲如何平衡 Explore 与 Exploit，并建立可持续重塑公司的创新系统。"
+  },
+  "recommendation": {
+    "en": "Read this when you need to connect Portfolio Map, Experiment Canvas, Culture Map, and innovation metrics into one management loop instead of treating them as separate templates.",
+    "zh": "当你想把业务组合地图、实验画布、文化地图和创新指标连成一个管理闭环，而不是把它们当作孤立模板时，优先读这本。"
+  },
+  "authors": [
+    "Alexander Osterwalder",
+    "Yves Pigneur",
+    "Fred Etiemble",
+    "Alan Smith"
+  ],
+  "publisher": "Wiley / Strategyzer",
+  "year": 2020,
+  "tags": ["portfolio", "innovation-metrics", "explore-exploit"],
+  "relatedCanvasDefIds": ["portfolio-map", "experiment-canvas", "evidence-scorecard", "innovation-culture-map", "business-model-canvas"],
+  "relatedCaseSlugs": ["ping-an-group", "nestle-portfolio", "bosch-accelerator", "alibaba-group"],
+  "relatedStrategyFrameworkSlugs": ["business-model-portfolio-management", "innovation-metrics"],
+  "sources": [
+    {
+      "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley · 2020"
+    },
+    {
+      "label": "Strategyzer · The Invincible Company book page",
+      "url": "https://www.strategyzer.com/library/the-invincible-company"
+    }
+  ]
+}

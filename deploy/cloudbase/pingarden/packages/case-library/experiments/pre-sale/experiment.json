@@ -1,0 +1,118 @@
+{
+  "slug": "pre-sale",
+  "name": {
+    "en": "Pre-Sale",
+    "zh": "预售 (Pre-Sale)"
+  },
+  "summary": {
+    "en": "Take real money for a not-yet-built product — Kickstarter, pre-orders, deposits. The strongest desirability + viability signal you can get short of an actual product launch.",
+    "zh": "为还没造出来的产品收真钱 —— Kickstarter、预购、定金。在产品真正发布之前,需求性 + 可营性的最强信号。"
+  },
+  "theme": "validation",
+  "risks": [
+    "desirability",
+    "viability"
+  ],
+  "evidenceStrength": "strong",
+  "cost": "medium",
+  "setupTime": "weeks",
+  "runTime": "weeks",
+  "capabilities": [
+    "marketing-launch",
+    "payment-processing",
+    "customer-communication"
+  ],
+  "appliesToCanvases": [
+    "business-model-canvas",
+    "value-proposition-canvas"
+  ],
+  "sources": [
+    {
+      "label": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-23 Pre-Sales"
+    }
+  ],
+  "examples": [
+    {
+      "company": {
+        "en": "Pebble",
+        "zh": "Pebble"
+      },
+      "year": "2012",
+      "headline": {
+        "en": "Real money before manufacturing at scale.",
+        "zh": "规模化生产前，先收真实的钱。"
+      },
+      "story": {
+        "en": "Pebble tested demand for its smartwatch through a Kickstarter pre-sale before committing to manufacturing at scale. Backers did not merely click interest; they pledged money for a product that had not yet shipped, giving the team stronger viability evidence than signups or survey intent.",
+        "zh": "Pebble 在投入规模化生产之前，通过 Kickstarter 预售测试智能手表需求。支持者不只是表达兴趣，而是为尚未交付的产品承诺付款，这比留邮箱或问卷意向提供了更强的可营性证据。"
+      },
+      "hypothesis": {
+        "en": "The Pebble team believed enough early adopters would pay upfront for a customizable smartwatch to justify manufacturing and fulfilment.",
+        "zh": "Pebble 团队相信，会有足够早期用户愿意为一款可定制智能手表提前付款，从而支撑制造和履约投入。"
+      },
+      "experiment": {
+        "en": "They launched a Kickstarter campaign with a product story, demo materials, reward tiers, and delivery promises, using pledged dollars as the main demand signal.",
+        "zh": "他们发起 Kickstarter 活动，提供产品故事、演示材料、奖励档位和交付承诺，用承诺付款金额作为主要需求信号。"
+      },
+      "evidence": {
+        "en": "The campaign quickly exceeded its funding goal and became one of Kickstarter's breakout hardware pre-sales, proving strong early willingness to pay.",
+        "zh": "该活动很快超过融资目标，并成为 Kickstarter 早期标志性的硬件预售案例之一，证明了强烈的早期付费意愿。"
+      },
+      "insights": {
+        "en": "Pre-sales validate demand with stronger evidence, but also create fulfilment risk: every pledge becomes an operational promise the team must honor.",
+        "zh": "预售用更强证据验证需求，但也制造履约风险：每一笔承诺付款都会变成团队必须兑现的运营承诺。"
+      },
+      "actions": {
+        "en": "Pebble used the funding and demand proof to move into production, while learning the operational difficulty of shipping hardware to a large backer base.",
+        "zh": "Pebble 用资金和需求证据推进生产，同时也学到向大量支持者交付硬件的运营难度。"
+      },
+      "source": "Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Pre-Sales, pp. 282-283; Kickstarter · Pebble campaign · 2012"
+    }
+  ],
+  "template": {
+    "stickies": [
+      {
+        "zoneId": "riskiest-assumption",
+        "text": {
+          "en": "<p><em>Replace this with one fragile willingness-to-pay assumption.</em></p><p>e.g. <strong>[Target customers]</strong> need <strong>[outcome]</strong> badly enough to pay or place a deposit before the product is built.</p>",
+          "zh": "<p><em>替换成一条最脆弱的付费意愿假设。</em></p><p>例如：<strong>[目标客户]</strong> 对 <strong>[结果]</strong> 的需求强到愿意在产品做出来之前付款或付订金。</p>"
+        }
+      },
+      {
+        "zoneId": "falsifiable-hypothesis",
+        "text": {
+          "en": "<p><strong>We believe</strong> [target customers] will commit money for [offering] before it exists.</p><p><strong>To verify, we will</strong> present a real pre-order / paid pilot offer to 50 qualified prospects within 3 weeks.</p><p><strong>And measure</strong> paid conversions, deposit amount, refund requests, objections, and sales-cycle time.</p><p><strong>We are right if</strong> ≥ 5 prospects pay at least [deposit/price] and refund requests stay below 10%.</p>",
+          "zh": "<p><strong>我们相信</strong> [目标客户] 会在 [提供物] 尚未存在时为它付钱承诺。</p><p><strong>为了验证，我们将</strong> 在 3 周内向 50 位合格潜客提出真实预购 / 付费试点 offer。</p><p><strong>并测量</strong> 付款转化、订金金额、退款请求、异议和销售周期。</p><p><strong>如果</strong> ≥ 5 位潜客支付至少 [订金 / 价格]，且退款请求 &lt; 10% = 通过。</p>"
+        }
+      },
+      {
+        "zoneId": "experiment-setup",
+        "text": {
+          "en": "<p><strong>Package:</strong> define exactly what buyers get, expected delivery date, refund policy, early-bird price, and capacity limit. Use a real checkout, invoice, or purchase order path.</p><p><strong>Recruit:</strong> build a list of 50 qualified prospects from interviews, waitlist, communities, or sales network. Prioritize people with visible urgency and budget authority.</p><p><strong>Sell:</strong> send a direct offer and run short calls. Do not accept “sounds interesting” as success; ask for card, deposit, signed order, or paid pilot. Track every objection in CRM.</p>",
+          "zh": "<p><strong>打包：</strong>明确买方得到什么、预计交付日期、退款政策、早鸟价和容量上限。使用真实 checkout、发票或采购订单路径。</p><p><strong>招募：</strong>从访谈、候补名单、社区或销售网络中整理 50 位合格潜客。优先选择紧迫度可见且有预算影响力的人。</p><p><strong>销售：</strong>发出直接 offer 并做短通话。不要把「听起来不错」当成功；要求刷卡、订金、签单或付费试点。把每个异议记录到 CRM。</p>"
+        }
+      },
+      {
+        "zoneId": "metrics-criteria",
+        "text": {
+          "en": "<p><strong>Pass:</strong> ≥ 5 paid commitments at [price/deposit]; refund requests &lt; 10%; at least 60% of payers match the intended segment.</p><p><strong>Fail:</strong> prospects only join a free waitlist, ask for deep discounts, or payment requires features outside the core offer.</p><p><strong>Inconclusive:</strong> strong verbal intent but purchasing friction blocks payment; test Letter of Intent with economic buyers.</p>",
+          "zh": "<p><strong>通过：</strong>≥ 5 个按 [价格 / 订金] 付款承诺；退款请求 &lt; 10%；付款者中至少 60% 属于目标客群。</p><p><strong>失败：</strong>潜客只愿加入免费候补、要求大幅折扣，或付款依赖核心 offer 之外的功能。</p><p><strong>不清晰：</strong>口头意愿强但采购摩擦阻止付款；改用 Letter of Intent 测经济买方。</p>"
+        }
+      },
+      {
+        "zoneId": "results-conclusion",
+        "text": {
+          "en": "<p><em>Fill in after running.</em></p><p>Prospects contacted: __ ; Sales calls: __ ; Paid commitments: __ ; Revenue/deposits: $__ ; Refund requests: __ .</p><p>Top objection: __ . Buyer profile of payers: __ . Verdict: validated / invalidated / inconclusive.</p>",
+          "zh": "<p><em>实验后填写。</em></p><p>触达潜客：__；销售通话：__；付款承诺：__；收入 / 订金：$__；退款请求：__。</p><p>最高频异议：__。付款者画像：__。结论：已验证 / 已证伪 / 不清晰。</p>"
+        }
+      },
+      {
+        "zoneId": "next-steps",
+        "text": {
+          "en": "<p><em>Pick one based on the result.</em></p><p>• <strong>Persevere</strong> → deliver the smallest promised version manually or via Wizard of Oz by the committed date.<br/>• <strong>Pivot</strong> → adjust price, package, segment, or promise based on objections and payer profile.<br/>• <strong>Kill</strong> → if people will not pay, do not substitute free waitlist interest for viability evidence.</p>",
+          "zh": "<p><em>根据结果选一个。</em></p><p>• <strong>Persevere</strong> → 在承诺日期前，用人工或 Wizard of Oz 交付最小承诺版本。<br/>• <strong>Pivot</strong> → 根据异议和付款者画像调整价格、包装、客群或承诺。<br/>• <strong>Kill</strong> → 如果人们不愿付款，不要用免费候补兴趣替代可营性证据。</p>"
+        }
+      }
+    ]
+  }
+}

@@ -9,6 +9,7 @@ const baseUrl = trimTrailingSlash(args.url ?? process.env.PINGARDEN_SMOKE_BASE_U
 const timeoutMs = parsePositiveInt(args.timeoutMs ?? process.env.PINGARDEN_SMOKE_TIMEOUT_MS, DEFAULT_TIMEOUT_MS);
 const realKimi = args.realKimi === true;
 const realKimiKey = process.env.PINGARDEN_SMOKE_KIMI_API_KEY;
+const realKimiQuestion = args.realKimiQuestion ?? process.env.PINGARDEN_SMOKE_KIMI_QUESTION ?? '请用两句话解释蓝海战略，并给出一个 PinGarden 策略库里的真实案例。';
 
 const results = [];
 
@@ -44,6 +45,14 @@ async function main() {
     }
   });
 
+  await run('cloud-library-context-filter', async () => {
+    const json = await fetchJson('/copilot/library-context?lang=zh&q=%E8%93%9D%E6%B5%B7%E6%88%98%E7%95%A5');
+    const markdown = json.markdown ?? '';
+    assert(markdown.includes('Filtered for user question'), 'Library context is not query-filtered');
+    assert(markdown.includes('蓝海') || markdown.includes('blue-ocean'), 'Filtered library context does not include Blue Ocean references');
+    assert(markdown.length < 15_000, `Filtered library context is too large: ${markdown.length} chars`);
+  });
+
   await run('cloud-chat-sse-invalid-key', async () => {
     const body = await fetchSseHead('/copilot/chat', {
       apiKey: INVALID_KEY,
@@ -64,6 +73,20 @@ async function main() {
         body: JSON.stringify({ apiKey: realKimiKey }),
       });
       assert(json.ok === true, `Real Kimi probe failed: ${safeMessage(json.message ?? JSON.stringify(json))}`);
+    });
+
+    await run('cloud-real-kimi-library-chat', async () => {
+      assert(Boolean(realKimiKey), 'PINGARDEN_SMOKE_KIMI_API_KEY is required when --real-kimi is used');
+      const context = await fetchJson(`/copilot/library-context?lang=zh&q=${encodeURIComponent(realKimiQuestion)}`);
+      const result = await fetchSseUntilTerminal('/copilot/chat', {
+        apiKey: realKimiKey,
+        messages: [{ role: 'user', content: realKimiQuestion }],
+        attachedContext: context.markdown,
+        lang: 'zh',
+      });
+      assert(result.sawDelta, `Expected at least one Kimi delta, got ${JSON.stringify(result)}`);
+      assert(!result.error, `Real Kimi library chat returned error: ${safeMessage(result.error ?? '')}`);
+      assert(!result.text.includes(realKimiKey), 'Response leaked the real API key');
     });
   }
 
@@ -117,6 +140,59 @@ async function fetchSseHead(path, jsonBody) {
   return text;
 }
 
+async function fetchSseUntilTerminal(path, jsonBody) {
+  const res = await fetchWithTimeout(`${baseUrl}${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(jsonBody),
+  });
+  const contentType = res.headers.get('content-type') ?? '';
+  assert(res.ok, `${path} returned HTTP ${res.status}`);
+  assert(contentType.includes('text/event-stream'), `${path} did not return text/event-stream, got ${contentType}`);
+  if (!res.body) return { sawDelta: false, done: false, error: 'Missing response body', text: '' };
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder('utf-8');
+  let buffer = '';
+  let text = '';
+  let sawDelta = false;
+  let done = false;
+  let error = '';
+
+  try {
+    while (!done && !error && text.length < 20_000) {
+      const { value, done: streamDone } = await reader.read();
+      if (streamDone) break;
+      buffer += decoder.decode(value, { stream: true });
+      const normalised = buffer.replace(/\r\n/g, '\n');
+      const frames = normalised.split('\n\n');
+      buffer = frames.pop() ?? '';
+      for (const frame of frames) {
+        for (const line of frame.split('\n')) {
+          if (!line.startsWith('data:')) continue;
+          const payload = line.slice(5).trim();
+          if (!payload) continue;
+          const parsed = JSON.parse(payload);
+          if (typeof parsed.delta === 'string') {
+            sawDelta = true;
+            text += parsed.delta;
+          }
+          if (typeof parsed.error === 'string') error = parsed.error;
+          if (parsed.done === true) done = true;
+        }
+      }
+    }
+  } finally {
+    try {
+      await reader.cancel();
+    } catch {
+      // best effort
+    }
+  }
+
+  return { sawDelta, done, error, text: safeMessage(text) };
+}
+
 async function fetchWithTimeout(url, init) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
@@ -165,8 +241,9 @@ function parseArgs(argv) {
     if (arg === '--url') out.url = argv[++i];
     else if (arg === '--timeout-ms') out.timeoutMs = argv[++i];
     else if (arg === '--real-kimi') out.realKimi = true;
+    else if (arg === '--real-kimi-question') out.realKimiQuestion = argv[++i];
     else if (arg === '--help' || arg === '-h') {
-      console.log('Usage: pnpm smoke:cloud -- --url <base-url> [--real-kimi] [--timeout-ms 20000]');
+      console.log('Usage: pnpm smoke:cloud -- --url <base-url> [--real-kimi] [--real-kimi-question <text>] [--timeout-ms 20000]');
       process.exit(0);
     }
   }

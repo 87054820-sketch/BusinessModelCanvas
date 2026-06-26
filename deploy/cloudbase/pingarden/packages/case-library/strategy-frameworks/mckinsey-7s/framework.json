@@ -1,0 +1,45 @@
+{
+  "slug": "mckinsey-7s",
+  "name": {
+    "en": "McKinsey 7-S Framework",
+    "zh": "麦肯锡 7S 框架"
+  },
+  "summary": {
+    "en": "An organization-alignment framework for checking whether strategy, structure, systems, shared values, style, staff, and skills reinforce each other enough for strategy execution.",
+    "zh": "一套组织一致性分析框架，用于检查战略、结构、系统、共同价值观、风格、人员和技能是否相互支撑，从而让战略能够落地。"
+  },
+  "category": "organization-ecosystem",
+  "sources": [
+    {
+      "label": "McKinsey & Company · Enduring Ideas: The 7-S Framework · 2008",
+      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework"
+    },
+    {
+      "label": "Thomas J. Peters & Robert H. Waterman Jr. · In Search of Excellence · 1982"
+    }
+  ],
+  "references": [
+    {
+      "type": "web",
+      "cite": "McKinsey 2008",
+      "label": "McKinsey & Company · Enduring Ideas: The 7-S Framework",
+      "year": 2008,
+      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework",
+      "note": {
+        "en": "McKinsey source for the 7-S organization-alignment lens.",
+        "zh": "7S 组织一致性视角的麦肯锡来源。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "bosch-accelerator", "role": "primary" },
+    { "slug": "procter-gamble-cd", "role": "primary" },
+    { "slug": "ping-an-group", "role": "secondary" },
+    { "slug": "patagonia", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "innovation-culture-map",
+    "design-criteria-canvas",
+    "business-model-canvas"
+  ]
+}

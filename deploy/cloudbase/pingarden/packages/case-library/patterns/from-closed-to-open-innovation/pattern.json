@@ -1,0 +1,33 @@
+{
+  "slug": "from-closed-to-open-innovation",
+  "name": {
+    "en": "From Closed to Open Innovation",
+    "zh": "从封闭创新到开放创新"
+  },
+  "summary": {
+    "en": "A shift pattern for established companies that move from relying mainly on internal R&D to systematically sourcing, integrating, or releasing ideas across firm boundaries.",
+    "zh": "一种适用于成熟公司的迁移模式：从主要依赖内部研发，转向系统性地跨企业边界获取、整合或释放创意与技术。"
+  },
+  "sources": [
+    { "label": "Osterwalder et al. · The Invincible Company · Wiley · 2020 · Shift Pattern Library" },
+    { "label": "Henry Chesbrough · Open Business Models · Harvard Business Review Press · 2006" }
+  ],
+  "references": [
+    {
+      "type": "book",
+      "cite": "Invincible Company 2020",
+      "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley",
+      "year": 2020,
+      "pages": "Shift Pattern Library: From Closed to Open (Innovation)",
+      "note": {
+        "en": "Frames closed-to-open innovation as a business-model shift, not just an R&D practice.",
+        "zh": "把从封闭到开放创新视为商业模式迁移，而不只是研发实践变化。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "procter-gamble-cd", "role": "primary" },
+    { "slug": "innocentive", "role": "secondary" },
+    { "slug": "glaxosmithkline-patent-pool", "role": "secondary" }
+  ]
+}

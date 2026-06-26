@@ -1,0 +1,84 @@
+{
+  "id": "ansoff-matrix",
+  "name": {
+    "en": "Ansoff Matrix",
+    "zh": "安索夫矩阵"
+  },
+  "viewBox": [0, 0, 1280, 880],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    },
+    "canvas": {
+      "showBlockPrompts": true
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "related": ["business-model-canvas", "portfolio-map", "design-criteria-canvas", "bcg-growth-share-matrix", "three-horizons-map"],
+  "relatedNotes": {
+    "business-model-canvas": {
+      "en": "The chosen Ansoff quadrant predicts which BMC blocks must change: penetration → channels/customer-relationships; market dev → segments/channels; product dev → value-proposition/key-resources; diversification → nearly everything.",
+      "zh": "所选的安索夫象限直接预言 BMC 哪些块必须改：渗透 → 渠道/客户关系；市场开发 → 客户细分/渠道；产品开发 → 价值主张/关键资源；多元化 → 几乎所有块。"
+    },
+    "portfolio-map": {
+      "en": "Diversification moves should appear as new Explore pins on the Portfolio Map; product or market development should appear as branches or movements on existing pins.",
+      "zh": "多元化动作应该成为 Portfolio Map 上新的 Explore pin；产品 / 市场开发应该是现有 pin 上的分支或移动。"
+    },
+    "design-criteria-canvas": {
+      "en": "Encode the constraint the next bet must respect (must share existing channels, must reuse current production base) so the team does not slip from one quadrant into another by accident.",
+      "zh": "编码下一个动作必须满足的约束（必须复用现有渠道、必须复用现有生产基础），防止团队无意中从一个象限滑到另一个。"
+    },
+    "bcg-growth-share-matrix": {
+      "en": "BCG classifies existing businesses; Ansoff picks the growth direction for one business. Multi-business: BCG first (allocate across SBUs) → Ansoff per business (pick direction). Single business: skip BCG, use Ansoff.",
+      "zh": "BCG 给现有业务分类；Ansoff 为单一业务选增长方向。多业务：先 BCG 在 SBU 间分配，再对每个业务用 Ansoff 选方向。单业务：跳过 BCG，直接用 Ansoff。"
+    },
+    "three-horizons-map": {
+      "en": "H1 work is usually penetration; H2 is often product or market development; H3 is often diversification or new-market disruption. Position the Ansoff quadrant within the time-portfolio.",
+      "zh": "H1 通常是渗透；H2 常常是产品或市场开发；H3 常常是多元化或新市场颠覆。把 Ansoff 象限放进时间组合的位置。"
+    }
+  },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Candidate growth move", "zh": "候选增长动作" },
+      "description": { "en": "A specific growth bet under consideration — name the product, the market, and the unit size.", "zh": "正在考虑的具体增长押注——写明产品、市场和单位规模。" }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "What stays the same", "zh": "维持不变的部分" },
+      "description": { "en": "BMC blocks, customer relationships, capabilities, or channels that carry over unchanged from today's business.", "zh": "从今天的业务原封不动延续过来的 BMC 块、客户关系、能力或渠道。" }
+    },
+    {
+      "hex": "#CFEBD3",
+      "label": { "en": "What must change", "zh": "必须改的部分" },
+      "description": { "en": "New channels, new resources, new partners, or new cost structure the move requires.", "zh": "动作所需的新渠道、新资源、新伙伴或新成本结构。" }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Riskiest assumption", "zh": "最致命假设" },
+      "description": { "en": "The specific assumption that, if false, would kill the move. Falsifiable, with a metric.", "zh": "如果不成立就会让动作崩盘的具体假设。可被证伪，带指标。" }
+    },
+    {
+      "hex": "#E2D5F0",
+      "label": { "en": "Capacity constraint", "zh": "容量约束" },
+      "description": { "en": "Organisational capacity / management bandwidth limit that may force a sequence rather than parallel pursuit.", "zh": "可能迫使你顺序而非并行推进的组织容量 / 管理带宽限制。" }
+    }
+  ],
+  "zones": [
+    { "id": "market-development", "shape": { "type": "rect", "x": 80, "y": 80, "w": 560, "h": 290 }, "label": { "x": 100, "y": 118, "align": "left", "fontSize": 20 } },
+    { "id": "diversification", "shape": { "type": "rect", "x": 660, "y": 80, "w": 560, "h": 290 }, "label": { "x": 680, "y": 118, "align": "left", "fontSize": 20 } },
+    { "id": "market-penetration", "shape": { "type": "rect", "x": 80, "y": 380, "w": 560, "h": 290 }, "label": { "x": 100, "y": 418, "align": "left", "fontSize": 20 } },
+    { "id": "product-development", "shape": { "type": "rect", "x": 660, "y": 380, "w": 560, "h": 290 }, "label": { "x": 680, "y": 418, "align": "left", "fontSize": 20 } },
+    { "id": "growth-rationale", "shape": { "type": "rect", "x": 80, "y": 700, "w": 1140, "h": 130 }, "label": { "x": 100, "y": 738, "align": "left", "fontSize": 18 } }
+  ]
+}

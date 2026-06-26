@@ -1,0 +1,26 @@
+{
+  "id": "157702a7-6cc9-45be-a92a-06858241c411",
+  "projectId": "d5ec6cec-bca8-47ca-b020-bc006480e937",
+  "defId": "business-model-canvas",
+  "title": "传统大型药企 —— 封闭式 IP 原型",
+  "language": "zh",
+  "contentDate": "2008",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "约 2008 年(专利池之前)",
+  "variant": {
+    "id": "gsk-traditional-pharma",
+    "label": {
+      "en": "Traditional Big Pharma (pre-2009)",
+      "zh": "传统大型药企(2009 年前)"
+    },
+    "description": {
+      "en": "GSK as a self-contained pharma company optimising for blockbuster drugs (>$1B/yr each) sold in OECD markets. IP defended through patents until expiry, then loses to generics. Compounds with potential activity against neglected tropical diseases (NTDs) sit idle in the portfolio — no profitable market.",
+      "zh": "GSK 作为一家自给自足的药企,围绕「重磅药」(单品 > 10 亿美元/年)在经合组织市场做优化。IP 靠专利保护,专利到期后输给仿制药。组合内对被忽视热带病(NTD)可能有效的化合物则一直闲置 —— 没有盈利市场。"
+    },
+    "role": "archetype"
+  },
+  "createdAt": "2026-06-15T09:00:53.771Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T09:00:53.771Z",
+  "updatedBy": "PinGarden Library"
+}

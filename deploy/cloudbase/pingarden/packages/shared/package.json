@@ -1,0 +1,30 @@
+{
+  "name": "@pingarden/shared",
+  "version": "0.6.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./yjs": {
+      "types": "./src/yjs.ts",
+      "default": "./dist/yjs.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "yjs": "^13.6.18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4",
+    "vitest": "^1.6.0"
+  }
+}

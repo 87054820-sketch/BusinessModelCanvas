@@ -1,0 +1,23 @@
+{
+  "id": "dea6b231-0071-4761-a983-152c7bb5a81f",
+  "projectId": "f50c3a8d-5b7b-4830-9bc7-36c2f6165449",
+  "defId": "business-model-canvas",
+  "title": "[中文] Maerki Baumann —— 解绑型,只做客户关系业务",
+  "language": "zh",
+  "variant": {
+    "id": "maerki-baumann-zh",
+    "label": {
+      "en": "Maerki Baumann · unbundled (ZH)",
+      "zh": "Maerki Baumann · 解绑型(中文版)"
+    },
+    "description": {
+      "en": "Zurich-based private bank that spun off its transaction-platform business as Incore Bank and now focuses solely on building customer relationships and curating products from external boutiques.",
+      "zh": "苏黎世私人银行,将交易平台业务剥离为独立的 Incore Bank,自身仅专注于经营客户关系和从外部金融产品商店中精选产品。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-11T10:12:59.622Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-11T10:12:59.622Z",
+  "updatedBy": "PinGarden Library"
+}

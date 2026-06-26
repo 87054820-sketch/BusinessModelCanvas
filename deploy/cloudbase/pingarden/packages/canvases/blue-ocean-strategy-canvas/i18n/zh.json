@@ -1,0 +1,9 @@
+{
+  "canvasTitle": "战略画布",
+  "blocks": {
+    "chart-area": {
+      "title": "图表区",
+      "prompt": "图表区只放价值曲线的竞争因素、曲线类别和评分点；ERRC 要点、解释和结论写入 Story。"
+    }
+  }
+}

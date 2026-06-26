@@ -1,0 +1,26 @@
+{
+  "id": "9a46f95c-8607-49b9-ac94-d66fa9830b5b",
+  "projectId": "41aa249b-bdb9-477d-bf63-faefe3db56bb",
+  "defId": "business-model-canvas",
+  "title": "封闭式研发 —— 2000 年前的宝洁原型",
+  "language": "zh",
+  "contentDate": "1995",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "约 1995 年(Connect & Develop 之前)",
+  "variant": {
+    "id": "pg-closed-rd",
+    "label": {
+      "en": "Closed R&D (pre-2000)",
+      "zh": "封闭式研发(2000 年前)"
+    },
+    "description": {
+      "en": "P&G as a self-contained innovation machine — ~7,500 internal scientists across 30 R&D facilities; everything invented in-house, defended by patents, commercialised through P&G channels. Shrinking R&D productivity into the late 1990s set up the C&D pivot.",
+      "zh": "宝洁作为一个自给自足的创新机器 —— 30 个研发中心、约 7,500 名内部科学家;一切都在内部发明、靠专利保护、通过宝洁自己的渠道商业化。1990 年代后期研发产出率持续下降,为 Connect & Develop 的转向埋下了伏笔。"
+    },
+    "role": "archetype"
+  },
+  "createdAt": "2026-06-15T08:56:38.329Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T08:56:38.329Z",
+  "updatedBy": "PinGarden Library"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "mckinsey-three-horizons",
+  "name": {
+    "en": "McKinsey Three Horizons",
+    "zh": "麦肯锡三层增长"
+  },
+  "summary": {
+    "en": "A growth-portfolio framework for managing today’s core business, emerging growth engines, and future options at the same time, so the company does not over-invest in the present or starve its next act.",
+    "zh": "一套增长组合框架，用于同时管理今天的核心业务、新增长引擎和未来选项，避免公司只优化当下或饿死下一代业务。"
+  },
+  "category": "portfolio-growth",
+  "sources": [
+    {
+      "label": "McKinsey & Company · Enduring Ideas: The three horizons of growth · 2009",
+      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-three-horizons-of-growth"
+    }
+  ],
+  "references": [
+    {
+      "type": "web",
+      "cite": "McKinsey 2009",
+      "label": "McKinsey & Company · Enduring Ideas: The three horizons of growth",
+      "year": 2009,
+      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-three-horizons-of-growth",
+      "note": {
+        "en": "Primary consulting source for using three horizons to discuss growth over time.",
+        "zh": "用三层时间视角讨论增长组合的主要咨询来源。"
+      }
+    }
+  ],
+  "examples": [
+    { "slug": "ping-an-group", "role": "primary" },
+    { "slug": "bosch-accelerator", "role": "primary" },
+    { "slug": "alibaba-group", "role": "secondary" },
+    { "slug": "procter-gamble-cd", "role": "secondary" }
+  ],
+  "relatedCanvasDefIds": [
+    "three-horizons-map",
+    "portfolio-map",
+    "business-model-canvas",
+    "experiment-canvas",
+    "evidence-scorecard"
+  ]
+}

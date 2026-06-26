@@ -1,0 +1,26 @@
+{
+  "id": "18da518a-2722-4d6d-81d5-434900dc3ca7",
+  "projectId": "05ed256b-92a0-433c-9e28-4ffac6efc35d",
+  "defId": "business-model-canvas",
+  "title": "Wii — 第三方游戏开发者视角",
+  "language": "zh",
+  "contentDate": "2008",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "约 2008 年(Wii 高峰期)",
+  "variant": {
+    "id": "wii-developers",
+    "label": {
+      "en": "Game developers' side",
+      "zh": "游戏开发者一侧"
+    },
+    "description": {
+      "en": "The Wii as the third-party game developer experiences it: SDK + dev kit + per-disc licensing fee + access to a 100M+ user base that PS3/Xbox 360 didn't reach. The money side — what funded Nintendo's hardware subsidy of the gamer side.",
+      "zh": "第三方游戏开发者眼中的 Wii:SDK + 开发套件 + 按光盘付授权费 + 触达 PS3 / Xbox 360 触达不到的 1 亿+ 用户群。这是收钱方 —— 它支付了任天堂在玩家一边的硬件补贴。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-15T07:36:35.940Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-15T07:36:35.940Z",
+  "updatedBy": "PinGarden Library"
+}

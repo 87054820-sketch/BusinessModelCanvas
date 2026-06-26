@@ -1,0 +1,26 @@
+{
+  "id": "f5e2a5b0-0c74-4dfc-8b3e-82988c1f3a04",
+  "projectId": "1534b03d-3838-4a62-9e46-1996611b38e6",
+  "defId": "portfolio-map",
+  "title": "Alibaba portfolio map — 2003–2004 trust experiments",
+  "language": "en",
+  "contentDate": "2004",
+  "contentDatePrecision": "year",
+  "contentDateLabel": "2003–2004: Taobao and Alipay still exploratory",
+  "variant": {
+    "id": "portfolio-2004",
+    "label": {
+      "en": "Portfolio 2003–2004",
+      "zh": "2003–2004 组合"
+    },
+    "description": {
+      "en": "Early map: Alibaba.com is the current engine; Taobao and Alipay are high-risk adjacent bets.",
+      "zh": "早期地图：Alibaba.com 是当前引擎；淘宝和支付宝仍是高风险相邻下注。"
+    },
+    "role": "variant"
+  },
+  "createdAt": "2026-06-20T16:00:00.000Z",
+  "createdBy": "PinGarden Library",
+  "updatedAt": "2026-06-20T16:00:00.000Z",
+  "updatedBy": "PinGarden Library"
+}

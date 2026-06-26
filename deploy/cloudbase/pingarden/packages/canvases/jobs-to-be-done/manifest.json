@@ -1,0 +1,91 @@
+{
+  "id": "jobs-to-be-done",
+  "name": {
+    "en": "JTBD Story",
+    "zh": "JTBD 工作故事"
+  },
+  "viewBox": [0, 0, 1400, 900],
+  "background": {
+    "en": "bg.en.svg",
+    "zh": "bg.zh.svg"
+  },
+  "display": {
+    "preview": {
+      "mode": "structured",
+      "showTitle": false,
+      "showSubtitle": false,
+      "showBlockLabels": true,
+      "showBlockPrompts": false
+    }
+  },
+  "quality": {
+    "softHints": true
+  },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Functional Jobs", "zh": "功能性任务" },
+      "description": {
+        "en": "Practical tasks, goals, or problems the customer wants to get done.",
+        "zh": "客户想完成的实际任务、目标或问题。"
+      }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Emotional Jobs", "zh": "情感性任务" },
+      "description": {
+        "en": "How the customer wants to feel before, during, or after the job.",
+        "zh": "客户在任务前、中、后想获得或避免的情绪感受。"
+      }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "Social Jobs", "zh": "社交性任务" },
+      "description": {
+        "en": "How the customer wants to be perceived by others.",
+        "zh": "客户希望被他人如何看待。"
+      }
+    }
+  ],
+  "related": ["value-proposition-canvas", "empathy-map", "ad-lib-value-proposition", "customer-journey"],
+  "relatedNotes": {
+    "value-proposition-canvas": {
+      "en": "Use this validated job as the central Customer Job in VPC; Bain value tags can later clarify which gains are functional, emotional, or social.",
+      "zh": "把这条验证过的工作放进 VPC 中心；后续可用 Bain 价值标签区分功能、情感或社会收益。"
+    },
+    "empathy-map": {
+      "en": "Anchor this job to a specific persona × moment before assigning higher-order value claims.",
+      "zh": "先把这个工作锚到具体 persona × 时刻，再判断是否存在高阶价值。"
+    },
+    "ad-lib-value-proposition": {
+      "en": "Compress the validated job + outcome into the one-sentence value-prop slot for stakeholder alignment.",
+      "zh": "把验证过的工作 + 结果压缩进一句话价值主张模板，用来对齐利益相关方。"
+    },
+    "customer-journey": {
+      "en": "Plot when in the journey this job becomes acute and where the promised value is actually perceived.",
+      "zh": "标出这个工作在旅程的哪个阶段变得紧迫，以及承诺价值在哪里被感知。"
+    }
+  },
+  "zones": [
+    {
+      "id": "situation",
+      "shape": { "type": "rect", "x": 40, "y": 80, "w": 420, "h": 500 },
+      "label": { "x": 60, "y": 120, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "motivation",
+      "shape": { "type": "rect", "x": 490, "y": 80, "w": 420, "h": 500 },
+      "label": { "x": 510, "y": 120, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "ideal-outcome",
+      "shape": { "type": "rect", "x": 940, "y": 80, "w": 420, "h": 500 },
+      "label": { "x": 960, "y": 120, "align": "left", "fontSize": 28 }
+    },
+    {
+      "id": "emotional-social",
+      "shape": { "type": "rect", "x": 40, "y": 600, "w": 1320, "h": 280 },
+      "label": { "x": 60, "y": 640, "align": "left", "fontSize": 28 }
+    }
+  ]
+}
