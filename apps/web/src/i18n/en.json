@@ -582,6 +582,7 @@
         "copyProject": "Based on this read-only reference project, prepare a new project draft I can copy into my workspace while preserving the most important canvas structure and insights.",
         "askReference": "Explain the core question, key mechanism, industry/case background, and best follow-up questions in the current reference material.",
         "extractInsight": "Summarize this discussion into a session insight card with source references and suggested project actions. Do not write project data yet.",
+        "optimizeProject": "Audit the current project using its existing canvases, Stories, and my long-term preferences. Find the 3-5 highest-value improvements and output a confirmable project update draft. Prefer concrete canvas sticky or Story updates over generic advice.",
         "addCanvas": "Based on the current project and the material I provide, output an applicable project update draft: add or enrich the most valuable canvas and include the complete stickies to write.",
         "addStory": "Based on the current project and the material I provide, output an applicable project update draft: create or update a Story connecting key canvases, insights, assumptions, and next actions."
       },
@@ -679,14 +680,21 @@
         "generate": "Generate draft"
       },
       "memory": {
-        "profileTitle": "Local Copilot profile",
-        "localOnly": "Local to this user. View, accept, ignore, or delete anytime.",
-        "noPreferences": "No confirmed preferences yet.",
-        "suggestionsTitle": "Memory suggestions",
-        "reviewHint": "Pending suggestions are not long-term memory until accepted.",
-        "noSuggestions": "No pending suggestions.",
-        "ignore": "Ignore",
-        "accept": "Accept",
+        "profileTitle": "Copilot memory",
+        "localOnly": "Automatically consolidates local usage preferences; raw chats are not stored, and you can archive, delete, or revert the latest consolidation anytime.",
+        "lastConsolidated": "Last consolidated",
+        "revertLatest": "Revert latest",
+        "noLayerItems": "No stable memory in this layer yet.",
+        "archive": "Archive",
+        "delete": "Delete",
+        "layers": {
+          "collaboration": "Collaboration",
+          "productThinking": "Product / business judgment",
+          "projectWorkflow": "Project workflow",
+          "contentAndEvidence": "Content and evidence",
+          "visualAndUX": "Visual and UX",
+          "domainContext": "Domain context"
+        },
         "confidence": {
           "high": "High",
           "medium": "Medium",

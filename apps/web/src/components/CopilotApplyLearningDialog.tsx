@@ -35,7 +35,11 @@ export function CopilotApplyLearningDialog({
     projectsApi
       .list(displayName)
       .then((next) => {
-        if (!cancelled) setProjects(next);
+        const writableProjects = next.filter((project) => project.source !== 'library');
+        if (!cancelled) {
+          setProjects(writableProjects);
+          setSelected((value) => (value === 'new' || writableProjects.some((project) => project.id === value) ? value : 'new'));
+        }
       })
       .catch((err) => console.error('Load projects for apply learning failed:', err))
       .finally(() => {

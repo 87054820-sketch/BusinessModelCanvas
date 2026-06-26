@@ -146,6 +146,45 @@ export const copilotApi = {
     });
   },
 
+  consolidateMemory(
+    displayName: string,
+    input: {
+      messages: Array<{ role: 'user' | 'assistant'; content: string }>;
+      projectId?: string;
+      contextLabel?: string;
+    },
+  ): Promise<CopilotMemoryState> {
+    return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/consolidate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Display-Name': encodeURIComponent(displayName),
+      },
+      body: JSON.stringify(input),
+    });
+  },
+
+  archiveMemoryItem(id: string, displayName: string): Promise<CopilotMemoryState> {
+    return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/items/${encodeURIComponent(id)}/archive`, {
+      method: 'POST',
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
+  deleteMemoryItem(id: string, displayName: string): Promise<CopilotMemoryState> {
+    return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/items/${encodeURIComponent(id)}`, {
+      method: 'DELETE',
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
+  revertLatestMemoryChange(displayName: string): Promise<CopilotMemoryState> {
+    return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/revert-latest`, {
+      method: 'POST',
+      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+    });
+  },
+
   acceptMemorySuggestion(id: string, displayName: string): Promise<CopilotUserProfile> {
     return fetchJson<CopilotUserProfile>(`${BASE}/copilot/memory/suggestions/${encodeURIComponent(id)}/accept`, {
       method: 'POST',

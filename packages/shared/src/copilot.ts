@@ -229,6 +229,103 @@ export interface CopilotMemorySuggestion {
   createdAt: string;
 }
 
+export const COPILOT_MEMORY_LAYERS = [
+  'collaboration',
+  'productThinking',
+  'projectWorkflow',
+  'contentAndEvidence',
+  'visualAndUX',
+  'domainContext',
+] as const;
+
+export type CopilotMemoryLayer = (typeof COPILOT_MEMORY_LAYERS)[number];
+export type CopilotMemoryItemStatus = 'active' | 'soft' | 'archived';
+export type CopilotMemorySource = 'conversation' | 'project-work' | 'manual' | 'migration';
+
+export interface CopilotMemoryAppliesTo {
+  projectIds?: string[];
+  canvasDefIds?: string[];
+  contexts?: string[];
+}
+
+export interface CopilotMemoryItem {
+  id: string;
+  layer: CopilotMemoryLayer;
+  semanticKey: string;
+  title: string;
+  value: string;
+  status: CopilotMemoryItemStatus;
+  confidence: number;
+  evidenceCount: number;
+  evidenceSummary: string;
+  source: CopilotMemorySource;
+  appliesTo?: CopilotMemoryAppliesTo;
+  firstSeenAt: string;
+  lastSeenAt: string;
+  updatedAt: string;
+}
+
+export interface CopilotMemorySignal {
+  id: string;
+  layer: CopilotMemoryLayer;
+  semanticKey: string;
+  summary: string;
+  confidence: number;
+  evidenceSummary: string;
+  source: CopilotMemorySource;
+  projectId?: string;
+  createdAt: string;
+}
+
+export interface CopilotMemoryChange {
+  id: string;
+  summary: string;
+  createdAt: string;
+  upsertedIds: string[];
+  mergedIds: string[];
+  archivedIds: string[];
+  deletedIds?: string[];
+  previousLayeredMemory?: CopilotLayeredMemory;
+}
+
+export type CopilotMemoryLayers = Record<CopilotMemoryLayer, CopilotMemoryItem[]>;
+
+export interface CopilotLayeredMemory {
+  version: number;
+  updatedAt: string;
+  layers: CopilotMemoryLayers;
+  recentSignals: CopilotMemorySignal[];
+  changelog: CopilotMemoryChange[];
+}
+
+export interface CopilotMemoryPatchUpsert {
+  layer: CopilotMemoryLayer;
+  semanticKey: string;
+  title: string;
+  value: string;
+  status?: CopilotMemoryItemStatus;
+  confidence?: number;
+  evidenceSummary: string;
+  source?: CopilotMemorySource;
+  appliesTo?: CopilotMemoryAppliesTo;
+}
+
+export interface CopilotMemoryPatch {
+  upsert?: CopilotMemoryPatchUpsert[];
+  merge?: Array<{
+    targetId: string;
+    sourceIds: string[];
+    result?: CopilotMemoryPatchUpsert;
+    reason: string;
+  }>;
+  archive?: Array<{
+    id: string;
+    reason: string;
+  }>;
+  signals?: Array<Omit<CopilotMemorySignal, 'id' | 'createdAt'>>;
+  summary: string;
+}
+
 export interface CopilotPlaybookDescriptor {
   id: string;
   title: string;
@@ -244,6 +341,7 @@ export interface CopilotPlaybookDescriptor {
 export interface CopilotMemoryState {
   profile: CopilotUserProfile;
   suggestions: CopilotMemorySuggestion[];
+  layeredMemory: CopilotLayeredMemory;
   bundledPlaybooks: CopilotPlaybookDescriptor[];
   userPlaybooks: CopilotPlaybookDescriptor[];
 }

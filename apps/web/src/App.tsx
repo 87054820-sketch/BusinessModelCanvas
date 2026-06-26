@@ -1,17 +1,30 @@
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useIdentity } from './identity/useIdentity';
 import { IdentityModal } from './identity/IdentityModal';
 import { LanguageSwitcher } from './i18n/LanguageSwitcher';
-import { ProjectListPage } from './pages/ProjectListPage';
-import { LibraryPage } from './pages/LibraryPage';
-import { MyProjectsPage } from './pages/MyProjectsPage';
-import { NewProjectPage } from './pages/NewProjectPage';
-import { ProjectWorkspacePage } from './pages/ProjectWorkspacePage';
-import { HistoryPage } from './pages/HistoryPage';
 import { CopilotErrorBoundary } from './components/CopilotErrorBoundary';
 import { LightboxRoot } from './components/Lightbox';
+
+const ProjectListPage = lazy(() =>
+  import('./pages/ProjectListPage').then((module) => ({ default: module.ProjectListPage })),
+);
+const LibraryPage = lazy(() =>
+  import('./pages/LibraryPage').then((module) => ({ default: module.LibraryPage })),
+);
+const MyProjectsPage = lazy(() =>
+  import('./pages/MyProjectsPage').then((module) => ({ default: module.MyProjectsPage })),
+);
+const NewProjectPage = lazy(() =>
+  import('./pages/NewProjectPage').then((module) => ({ default: module.NewProjectPage })),
+);
+const ProjectWorkspacePage = lazy(() =>
+  import('./pages/ProjectWorkspacePage').then((module) => ({ default: module.ProjectWorkspacePage })),
+);
+const HistoryPage = lazy(() =>
+  import('./pages/HistoryPage').then((module) => ({ default: module.HistoryPage })),
+);
 
 export default function App() {
   const { t } = useTranslation();
@@ -63,25 +76,33 @@ export default function App() {
 
       <div className="min-h-0 flex-1 overflow-auto">
         <CopilotErrorBoundary label="Route crashed — see stack below">
-          <Routes>
-            <Route path="/" element={<ProjectListPage />} />
-            <Route path="/library" element={<LibraryPage />} />
-            <Route path="/projects" element={<MyProjectsPage />} />
-            <Route path="/p/new" element={<NewProjectPage />} />
-            <Route path="/p/:projectId" element={<ProjectWorkspacePage />} />
-            <Route
-              path="/p/:projectId/c/:canvasId"
-              element={<ProjectWorkspacePage />}
-            />
-            <Route
-              path="/p/:projectId/s/:storyId"
-              element={<ProjectWorkspacePage />}
-            />
-            <Route
-              path="/p/:projectId/c/:canvasId/history"
-              element={<HistoryPage />}
-            />
-          </Routes>
+          <Suspense
+            fallback={
+              <div className="flex h-full items-center justify-center text-sm text-gray-500">
+                {t('home.loading')}
+              </div>
+            }
+          >
+            <Routes>
+              <Route path="/" element={<ProjectListPage />} />
+              <Route path="/library" element={<LibraryPage />} />
+              <Route path="/projects" element={<MyProjectsPage />} />
+              <Route path="/p/new" element={<NewProjectPage />} />
+              <Route path="/p/:projectId" element={<ProjectWorkspacePage />} />
+              <Route
+                path="/p/:projectId/c/:canvasId"
+                element={<ProjectWorkspacePage />}
+              />
+              <Route
+                path="/p/:projectId/s/:storyId"
+                element={<ProjectWorkspacePage />}
+              />
+              <Route
+                path="/p/:projectId/c/:canvasId/history"
+                element={<HistoryPage />}
+              />
+            </Routes>
+          </Suspense>
         </CopilotErrorBoundary>
       </div>
 

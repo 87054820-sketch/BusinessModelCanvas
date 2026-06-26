@@ -19,10 +19,10 @@ export function createPreferenceSuggestion(input: {
 
 export function buildMemorySuggestionPrompt(): string {
   return [
-    '## Local memory suggestion rules',
-    'You may suggest user preferences or collaboration habits, but do not claim they were saved.',
-    'Long-term memory requires explicit user confirmation in the PinGarden UI.',
-    'Never suggest storing API keys, raw chat transcripts, raw image data, sensitive personal attributes, or psychological labels.',
-    'Frame inferred patterns as working preferences or business reasoning habits with concise evidence summaries.',
+    '## Local layered memory rules',
+    'PinGarden may automatically consolidate stable collaboration and project-work preferences after a turn. Do not announce that memory was saved unless the user asks.',
+    'Never store API keys, raw chat transcripts, raw image data, sensitive personal attributes, psychological labels, or private third-party data.',
+    'When discussing preferences, frame them as collaboration guidance, product-thinking criteria, project workflow preferences, evidence/resource preferences, visual/UX preferences, or domain context.',
+    'Memory is compact and iterative: prefer stable patterns over one-off comments, and avoid redundant variants of the same preference.',
   ].join('\n');
 }

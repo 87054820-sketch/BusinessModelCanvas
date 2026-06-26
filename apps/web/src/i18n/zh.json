@@ -565,6 +565,7 @@
         "copyProject": "复制项目",
         "askReference": "理解这份资料",
         "extractInsight": "提炼洞察",
+        "optimizeProject": "优化当前项目",
         "addCanvas": "新增画布",
         "addStory": "新增 Story"
       },
@@ -672,14 +673,21 @@
         "generate": "生成草稿"
       },
       "memory": {
-        "profileTitle": "本地 Copilot Profile",
-        "localOnly": "仅属于当前本地用户。可查看、接受、忽略或删除。",
-        "noPreferences": "暂无已确认偏好。",
-        "suggestionsTitle": "记忆建议",
-        "reviewHint": "待确认建议不是长期记忆，接受后才会保存。",
-        "noSuggestions": "暂无待确认建议。",
-        "ignore": "忽略",
-        "accept": "接受",
+        "profileTitle": "Copilot 记忆",
+        "localOnly": "自动整合本地使用偏好；不保存原始聊天，可随时归档、删除或撤销最近整合。",
+        "lastConsolidated": "最近整理",
+        "revertLatest": "撤销最近整合",
+        "noLayerItems": "这一层还没有稳定记忆。",
+        "archive": "归档",
+        "delete": "删除",
+        "layers": {
+          "collaboration": "协作偏好",
+          "productThinking": "产品 / 商业判断",
+          "projectWorkflow": "项目工作流",
+          "contentAndEvidence": "内容与证据",
+          "visualAndUX": "视觉与体验",
+          "domainContext": "领域上下文"
+        },
         "confidence": {
           "high": "高",
           "medium": "中",

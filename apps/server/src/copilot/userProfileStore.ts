@@ -2,18 +2,32 @@ import { createHash, randomUUID } from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import { dirname, join } from 'node:path';
 import type {
+  CopilotLayeredMemory,
+  CopilotMemoryItem,
+  CopilotMemoryLayer,
   CopilotMemoryState,
   CopilotMemorySuggestion,
   CopilotPlaybookDescriptor,
   CopilotUserPreference,
   CopilotUserProfile,
 } from '@pingarden/shared';
+import { COPILOT_MEMORY_LAYERS } from '@pingarden/shared';
 import { BUNDLED_PLAYBOOKS } from './bundledPlaybooks.js';
+import {
+  applyMemoryPatch,
+  archiveMemoryItem,
+  buildMemoryPatch,
+  createEmptyLayeredMemory,
+  deleteMemoryItem,
+  normaliseLayeredMemory,
+  revertLatestMemoryChange,
+  type MemoryConsolidationInput,
+} from './memoryConsolidator.js';
 
-const SCHEMA_VERSION = 1;
+const SCHEMA_VERSION = 2;
 
-interface StoredMemoryState extends CopilotMemoryState {
-  schemaVersion: number;
+interface StoredMemoryState extends Partial<CopilotMemoryState> {
+  schemaVersion?: number;
 }
 
 export class CopilotUserProfileStore {
@@ -27,7 +41,11 @@ export class CopilotUserProfileStore {
       await writeJson(path, { schemaVersion: SCHEMA_VERSION, ...state });
       return state;
     }
-    return normaliseState(displayName, stored);
+    const state = normaliseState(displayName, stored);
+    if (stored.schemaVersion !== SCHEMA_VERSION || !stored.layeredMemory) {
+      await this.saveState(displayName, state);
+    }
+    return state;
   }
 
   async acceptSuggestion(displayName: string, suggestionId: string): Promise<CopilotUserProfile> {
@@ -45,6 +63,19 @@ export class CopilotUserProfileStore {
       confirmedAt: now,
       updatedAt: now,
     };
+    const layeredMemory = applyMemoryPatch(state.layeredMemory, {
+      summary: 'Accepted a legacy memory suggestion into layered memory.',
+      upsert: [{
+        layer: 'collaboration',
+        semanticKey: `legacy-preference/${normaliseKey(preference.label)}`,
+        title: preference.label,
+        value: preference.value,
+        status: 'active',
+        confidence: preference.confidence ?? 0.75,
+        evidenceSummary: preference.evidenceSummary ?? suggestion.summary,
+        source: 'manual',
+      }],
+    }, now);
     const next: CopilotMemoryState = {
       ...state,
       profile: {
@@ -52,6 +83,7 @@ export class CopilotUserProfileStore {
         preferences: upsertById(state.profile.preferences, preference),
         updatedAt: now,
       },
+      layeredMemory,
       suggestions: state.suggestions.map((item) => item.id === suggestionId ? { ...item, status: 'accepted' } : item),
     };
     await this.saveState(displayName, next);
@@ -94,8 +126,61 @@ export class CopilotUserProfileStore {
     return suggestion;
   }
 
+  async consolidateMemory(displayName: string, input: MemoryConsolidationInput): Promise<CopilotMemoryState> {
+    const state = await this.getState(displayName);
+    const now = new Date().toISOString();
+    const patch = buildMemoryPatch(input);
+    if ((patch.upsert?.length ?? 0) === 0 && (patch.signals?.length ?? 0) === 0) return state;
+    const next: CopilotMemoryState = {
+      ...state,
+      layeredMemory: applyMemoryPatch(state.layeredMemory, patch, now),
+      profile: { ...state.profile, updatedAt: now },
+    };
+    await this.saveState(displayName, next);
+    return next;
+  }
+
+  async archiveLayeredMemoryItem(displayName: string, id: string): Promise<CopilotMemoryState> {
+    const state = await this.getState(displayName);
+    const next = { ...state, layeredMemory: archiveMemoryItem(state.layeredMemory, id) };
+    await this.saveState(displayName, next);
+    return next;
+  }
+
+  async deleteLayeredMemoryItem(displayName: string, id: string): Promise<CopilotMemoryState> {
+    const state = await this.getState(displayName);
+    const next = { ...state, layeredMemory: deleteMemoryItem(state.layeredMemory, id) };
+    await this.saveState(displayName, next);
+    return next;
+  }
+
+  async revertLatestMemoryChange(displayName: string): Promise<CopilotMemoryState> {
+    const state = await this.getState(displayName);
+    const next = { ...state, layeredMemory: revertLatestMemoryChange(state.layeredMemory) };
+    await this.saveState(displayName, next);
+    return next;
+  }
+
   async buildPromptContext(displayName: string): Promise<string> {
     const state = await this.getState(displayName);
+    const lines: string[] = [
+      '## User Memory for PinGarden',
+      'Use this as collaboration guidance. Do not reveal memory internals unless the user asks.',
+    ];
+    let count = 0;
+    for (const layer of COPILOT_MEMORY_LAYERS) {
+      const items = state.layeredMemory.layers[layer]
+        .filter((item) => item.status === 'active' && item.confidence >= 0.7)
+        .slice(0, 5);
+      if (items.length === 0) continue;
+      lines.push('', `### ${layerTitle(layer)}`);
+      for (const item of items) {
+        lines.push(`- ${item.title}: ${item.value}`);
+        count += 1;
+      }
+    }
+    if (count > 0) return lines.join('\n');
+
     const prefs = state.profile.preferences.slice(0, 12);
     const habits = state.profile.reasoningHabits.filter((habit) => habit.confirmedAt).slice(0, 8);
     if (prefs.length === 0 && habits.length === 0) return '';
@@ -131,6 +216,7 @@ export class CopilotUserProfileStore {
         updatedAt: now,
       },
       suggestions: [],
+      layeredMemory: createEmptyLayeredMemory(now),
       bundledPlaybooks: BUNDLED_PLAYBOOKS,
       userPlaybooks: [],
     };
@@ -139,17 +225,44 @@ export class CopilotUserProfileStore {
 
 function normaliseState(displayName: string, stored: StoredMemoryState): CopilotMemoryState {
   const now = new Date().toISOString();
+  const profile: CopilotUserProfile = {
+    displayName: stored.profile?.displayName || displayName.trim() || 'Anonymous',
+    preferences: stored.profile?.preferences ?? [],
+    reasoningHabits: stored.profile?.reasoningHabits ?? [],
+    preferredCanvasIds: stored.profile?.preferredCanvasIds ?? [],
+    updatedAt: stored.profile?.updatedAt ?? now,
+  };
+  const layeredMemory = migrateLegacyMemory(normaliseLayeredMemory(stored.layeredMemory, now), profile, now);
   return {
-    profile: {
-      displayName: stored.profile?.displayName || displayName.trim() || 'Anonymous',
-      preferences: stored.profile?.preferences ?? [],
-      reasoningHabits: stored.profile?.reasoningHabits ?? [],
-      preferredCanvasIds: stored.profile?.preferredCanvasIds ?? [],
-      updatedAt: stored.profile?.updatedAt ?? now,
-    },
+    profile,
     suggestions: stored.suggestions ?? [],
+    layeredMemory,
     bundledPlaybooks: BUNDLED_PLAYBOOKS,
     userPlaybooks: (stored.userPlaybooks ?? []).filter((item: CopilotPlaybookDescriptor) => item.scope === 'user-local'),
+  };
+}
+
+function migrateLegacyMemory(layeredMemory: CopilotLayeredMemory, profile: CopilotUserProfile, now: string): CopilotLayeredMemory {
+  if (COPILOT_MEMORY_LAYERS.some((layer) => layeredMemory.layers[layer].length > 0)) return layeredMemory;
+  const migrated: CopilotMemoryItem[] = profile.preferences.map((pref) => ({
+    id: pref.id.startsWith('mem_') ? pref.id : `mem_${pref.id}`,
+    layer: 'collaboration',
+    semanticKey: `legacy-preference/${normaliseKey(pref.label)}`,
+    title: pref.label,
+    value: pref.value,
+    status: 'active',
+    confidence: pref.confidence ?? 0.75,
+    evidenceCount: 1,
+    evidenceSummary: pref.evidenceSummary ?? 'Migrated from legacy confirmed preference.',
+    source: 'migration',
+    firstSeenAt: pref.confirmedAt,
+    lastSeenAt: pref.updatedAt,
+    updatedAt: pref.updatedAt,
+  }));
+  return {
+    ...layeredMemory,
+    updatedAt: migrated.length > 0 ? now : layeredMemory.updatedAt,
+    layers: { ...layeredMemory.layers, collaboration: migrated },
   };
 }
 
@@ -170,4 +283,25 @@ function upsertById<T extends { id: string }>(items: T[], next: T): T[] {
   const exists = items.some((item) => item.id === next.id);
   if (!exists) return [next, ...items];
   return items.map((item) => item.id === next.id ? next : item);
+}
+
+function normaliseKey(value: string): string {
+  return value.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'preference';
+}
+
+function layerTitle(layer: CopilotMemoryLayer): string {
+  switch (layer) {
+    case 'collaboration':
+      return 'Collaboration';
+    case 'productThinking':
+      return 'Product Thinking';
+    case 'projectWorkflow':
+      return 'Project Workflow';
+    case 'contentAndEvidence':
+      return 'Evidence / Resources';
+    case 'visualAndUX':
+      return 'Visual / UX';
+    case 'domainContext':
+      return 'Domain Context';
+  }
 }

@@ -29,6 +29,7 @@ import {
 import { copilotApi, type CopilotIntent } from '../api/copilot';
 import { api, type CanvasDefSummary } from '../api/client';
 import { storiesApi } from '../api/stories';
+import { maybeConsolidateCopilotMemory } from '../copilot/memoryConsolidation';
 import { REVEAL_INTERVAL_MS, splitStreamingBlocks, takeRevealChunk } from '../copilot/reveal';
 import { useKeyConfig } from '../copilot/useKeyConfig';
 import {
@@ -761,6 +762,7 @@ function buildComposerQuickActions(ref: AttachedRef | null, mode: CopilotMode): 
     ];
   }
   return [
+    { labelKey: 'optimizeProject', promptKey: 'optimizeProject', intent: 'project-update', includePendingImages: true },
     { labelKey: 'addCanvas', promptKey: 'addCanvas', intent: 'project-update', includePendingImages: true },
     { labelKey: 'addStory', promptKey: 'addStory', intent: 'project-update', includePendingImages: true },
   ];
@@ -1484,13 +1486,15 @@ function ChatPane({
         )}
       </div>
 
-      <CopilotSessionInsightBasket
-        items={basketItems}
-        onRemove={onRemoveBasketItem}
-        onClear={onClearBasket}
-        onMarkUseful={onMarkBasketUseful}
-        onApply={onApplyBasketItem}
-      />
+      {basketItems.length > 0 && (
+        <CopilotSessionInsightBasket
+          items={basketItems}
+          onRemove={onRemoveBasketItem}
+          onClear={onClearBasket}
+          onMarkUseful={onMarkBasketUseful}
+          onApply={onApplyBasketItem}
+        />
+      )}
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto bg-white px-4 py-4">

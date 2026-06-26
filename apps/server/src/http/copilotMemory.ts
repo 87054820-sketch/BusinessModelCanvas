@@ -13,6 +13,15 @@ const SuggestionInput = z.object({
   evidenceSummary: z.string().min(1).max(1000),
 });
 
+const ConsolidateInput = z.object({
+  messages: z.array(z.object({
+    role: z.enum(['user', 'assistant']),
+    content: z.string().max(12000),
+  })).min(1).max(12),
+  projectId: z.string().min(1).max(120).optional(),
+  contextLabel: z.string().min(1).max(240).optional(),
+});
+
 export function registerCopilotMemoryRoutes(app: FastifyInstance, dataDir: string) {
   const store = new CopilotUserProfileStore(dataDir);
 
@@ -24,6 +33,28 @@ export function registerCopilotMemoryRoutes(app: FastifyInstance, dataDir: strin
   app.get('/copilot/memory/export', async (req, reply) => {
     const identity = getIdentity(req);
     return reply.header('Cache-Control', 'no-store').send(await store.getState(identity.displayName));
+  });
+
+  app.post('/copilot/memory/consolidate', async (req, reply) => {
+    const parse = ConsolidateInput.safeParse(req.body);
+    if (!parse.success) return reply.code(400).send({ error: 'Invalid request body', details: parse.error.issues });
+    const identity = getIdentity(req);
+    return store.consolidateMemory(identity.displayName, parse.data);
+  });
+
+  app.post<{ Params: { id: string } }>('/copilot/memory/items/:id/archive', async (req) => {
+    const identity = getIdentity(req);
+    return store.archiveLayeredMemoryItem(identity.displayName, req.params.id);
+  });
+
+  app.delete<{ Params: { id: string } }>('/copilot/memory/items/:id', async (req) => {
+    const identity = getIdentity(req);
+    return store.deleteLayeredMemoryItem(identity.displayName, req.params.id);
+  });
+
+  app.post('/copilot/memory/revert-latest', async (req) => {
+    const identity = getIdentity(req);
+    return store.revertLatestMemoryChange(identity.displayName);
   });
 
   app.post('/copilot/memory/suggestions', async (req, reply) => {

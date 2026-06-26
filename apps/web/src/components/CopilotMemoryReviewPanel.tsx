@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { CopilotMemoryState } from '@pingarden/shared';
+import { COPILOT_MEMORY_LAYERS, type CopilotMemoryItem, type CopilotMemoryLayer, type CopilotMemoryState } from '@pingarden/shared';
 import { copilotApi } from '../api/copilot';
-import { memoryConfidenceLabel, pendingMemorySuggestions } from '../copilot/localEvolution';
 
 export function CopilotMemoryReviewPanel({ displayName }: { displayName: string }) {
   const { t } = useTranslation();
   const [state, setState] = useState<CopilotMemoryState | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
 
   useEffect(() => {
     if (!displayName) return;
@@ -28,34 +28,45 @@ export function CopilotMemoryReviewPanel({ displayName }: { displayName: string 
     };
   }, [displayName]);
 
-  const pending = useMemo(() => pendingMemorySuggestions(state?.suggestions ?? []), [state]);
+  const activeCount = useMemo(() => {
+    if (!state) return 0;
+    return COPILOT_MEMORY_LAYERS.reduce(
+      (sum, layer) => sum + state.layeredMemory.layers[layer].filter((item) => item.status === 'active').length,
+      0,
+    );
+  }, [state]);
 
-  async function accept(id: string) {
-    const profile = await copilotApi.acceptMemorySuggestion(id, displayName);
-    setState((prev) => prev ? {
-      ...prev,
-      profile,
-      suggestions: prev.suggestions.map((item) => item.id === id ? { ...item, status: 'accepted' } : item),
-    } : prev);
+  async function archive(id: string) {
+    setBusy(true);
+    try {
+      setState(await copilotApi.archiveMemoryItem(id, displayName));
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setBusy(false);
+    }
   }
 
-  async function ignore(id: string) {
-    const ignored = await copilotApi.ignoreMemorySuggestion(id, displayName);
-    setState((prev) => prev ? {
-      ...prev,
-      suggestions: prev.suggestions.map((item) => item.id === id ? ignored : item),
-    } : prev);
+  async function remove(id: string) {
+    setBusy(true);
+    try {
+      setState(await copilotApi.deleteMemoryItem(id, displayName));
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setBusy(false);
+    }
   }
 
-  async function removePreference(id: string) {
-    await copilotApi.deleteUserPreference(id, displayName);
-    setState((prev) => prev ? {
-      ...prev,
-      profile: {
-        ...prev.profile,
-        preferences: prev.profile.preferences.filter((item) => item.id !== id),
-      },
-    } : prev);
+  async function revert() {
+    setBusy(true);
+    try {
+      setState(await copilotApi.revertLatestMemoryChange(displayName));
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setBusy(false);
+    }
   }
 
   if (error) {
@@ -63,68 +74,113 @@ export function CopilotMemoryReviewPanel({ displayName }: { displayName: string 
   }
 
   if (!state) {
-    return <div className="rounded-xl border border-gray-100 bg-gray-50 px-3 py-3 text-[11px] text-gray-400">{t('home.loading')}…</div>;
+    return <div className="rounded-xl border border-stone-200 bg-stone-50 px-3 py-3 text-[11px] text-gray-400">{t('home.loading')}…</div>;
   }
+
+  const latestChange = state.layeredMemory.changelog[0];
 
   return (
     <div className="space-y-3">
-      <section className="rounded-2xl border border-gray-200 bg-white p-3">
-        <div className="flex items-center justify-between gap-2">
+      <section className="rounded-2xl border border-stone-200 bg-white p-3 shadow-sm">
+        <div className="flex items-start justify-between gap-3">
           <div>
             <h4 className="text-[12px] font-semibold text-gray-950">{t('library.copilot.memory.profileTitle')}</h4>
-            <p className="mt-0.5 text-[10px] text-gray-500">{t('library.copilot.memory.localOnly')}</p>
+            <p className="mt-0.5 text-[10px] leading-relaxed text-gray-500">{t('library.copilot.memory.localOnly')}</p>
           </div>
-          <span className="rounded-full bg-gray-100 px-2 py-0.5 text-[10px] text-gray-600">
-            {state.profile.preferences.length}
+          <span className="rounded-full border border-stone-200 bg-stone-50 px-2 py-0.5 text-[10px] text-gray-600">
+            {activeCount}
           </span>
         </div>
-        <div className="mt-2 space-y-1.5">
-          {state.profile.preferences.length === 0 ? (
-            <div className="text-[11px] text-gray-400">{t('library.copilot.memory.noPreferences')}</div>
-          ) : state.profile.preferences.map((pref) => (
-            <div key={pref.id} className="rounded-xl border border-gray-100 bg-gray-50 px-3 py-2">
-              <div className="flex items-start justify-between gap-2">
-                <div className="min-w-0">
-                  <div className="text-[11px] font-medium text-gray-900">{pref.label}</div>
-                  <div className="mt-0.5 text-[11px] leading-relaxed text-gray-600">{pref.value}</div>
-                </div>
-                <button type="button" onClick={() => removePreference(pref.id)} className="shrink-0 rounded px-1.5 text-[12px] text-gray-400 hover:bg-gray-100 hover:text-gray-800">×</button>
-              </div>
-            </div>
-          ))}
+        <div className="mt-2 flex flex-wrap items-center justify-between gap-2 border-t border-stone-100 pt-2 text-[10px] text-gray-400">
+          <span>{t('library.copilot.memory.lastConsolidated')}: {formatDate(state.layeredMemory.updatedAt)}</span>
+          <button
+            type="button"
+            onClick={revert}
+            disabled={busy || !latestChange}
+            className="rounded-md border border-stone-200 bg-white px-2 py-1 text-gray-500 hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            {t('library.copilot.memory.revertLatest')}
+          </button>
         </div>
       </section>
 
-      <section className="rounded-2xl border border-indigo-100 bg-indigo-50/60 p-3">
-        <h4 className="text-[12px] font-semibold text-indigo-950">{t('library.copilot.memory.suggestionsTitle')}</h4>
-        <p className="mt-0.5 text-[10px] text-indigo-700">{t('library.copilot.memory.reviewHint')}</p>
-        <div className="mt-2 space-y-2">
-          {pending.length === 0 ? (
-            <div className="rounded-xl bg-white/70 px-3 py-3 text-center text-[11px] text-indigo-400">{t('library.copilot.memory.noSuggestions')}</div>
-          ) : pending.map((item) => (
-            <div key={item.id} className="rounded-xl border border-white bg-white px-3 py-2 shadow-sm">
-              <div className="flex items-start justify-between gap-2">
-                <div className="min-w-0">
-                  <div className="text-[11px] font-semibold text-gray-950">{item.title}</div>
-                  <div className="mt-0.5 text-[11px] leading-relaxed text-gray-600">{item.summary}</div>
-                </div>
-                <span className="shrink-0 rounded-full bg-indigo-100 px-2 py-0.5 text-[10px] text-indigo-700">
-                  {t(`library.copilot.memory.confidence.${memoryConfidenceLabel(item.confidence)}`)}
-                </span>
-              </div>
-              <div className="mt-1 text-[10px] leading-relaxed text-gray-400">{item.evidenceSummary}</div>
-              <div className="mt-2 flex justify-end gap-1.5">
-                <button type="button" onClick={() => ignore(item.id)} className="rounded-md border border-gray-200 px-2 py-1 text-[10px] text-gray-600 hover:bg-gray-50">
-                  {t('library.copilot.memory.ignore')}
-                </button>
-                <button type="button" onClick={() => accept(item.id)} className="rounded-md bg-gray-950 px-2 py-1 text-[10px] font-medium text-white hover:bg-black">
-                  {t('library.copilot.memory.accept')}
-                </button>
-              </div>
+      {COPILOT_MEMORY_LAYERS.map((layer) => {
+        const items = visibleLayerItems(state, layer);
+        return (
+          <section key={layer} className="rounded-2xl border border-stone-200 bg-white p-3 shadow-sm">
+            <div className="flex items-center justify-between gap-2">
+              <h4 className="text-[12px] font-semibold text-gray-950">{t(`library.copilot.memory.layers.${layer}`)}</h4>
+              <span className="text-[10px] text-gray-400">{items.length}</span>
             </div>
-          ))}
-        </div>
-      </section>
+            <div className="mt-2 space-y-2">
+              {items.length === 0 ? (
+                <div className="rounded-xl border border-dashed border-stone-200 bg-stone-50/70 px-3 py-3 text-center text-[11px] text-gray-400">
+                  {t('library.copilot.memory.noLayerItems')}
+                </div>
+              ) : items.map((item) => (
+                <MemoryItemCard
+                  key={item.id}
+                  item={item}
+                  busy={busy}
+                  onArchive={() => archive(item.id)}
+                  onDelete={() => remove(item.id)}
+                />
+              ))}
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
+}
+
+function MemoryItemCard({
+  item,
+  busy,
+  onArchive,
+  onDelete,
+}: {
+  item: CopilotMemoryItem;
+  busy: boolean;
+  onArchive(): void;
+  onDelete(): void;
+}) {
+  const { t } = useTranslation();
+  return (
+    <div className="rounded-xl border border-stone-100 bg-stone-50/70 px-3 py-2">
+      <div className="flex items-start justify-between gap-2">
+        <div className="min-w-0">
+          <div className="text-[11px] font-semibold text-gray-900">{item.title}</div>
+          <div className="mt-0.5 text-[11px] leading-relaxed text-gray-600">{item.value}</div>
+        </div>
+        <span className="shrink-0 rounded-full border border-stone-200 bg-white px-2 py-0.5 text-[10px] text-gray-500">
+          {Math.round(item.confidence * 100)}%
+        </span>
+      </div>
+      <div className="mt-1 text-[10px] leading-relaxed text-gray-400">{item.evidenceSummary}</div>
+      <div className="mt-2 flex items-center justify-between gap-2 text-[10px] text-gray-400">
+        <span>{formatDate(item.lastSeenAt)}</span>
+        <span className="flex items-center gap-1.5">
+          <button type="button" disabled={busy} onClick={onArchive} className="rounded-md border border-stone-200 bg-white px-2 py-1 hover:bg-stone-50 disabled:opacity-40">
+            {t('library.copilot.memory.archive')}
+          </button>
+          <button type="button" disabled={busy} onClick={onDelete} className="rounded-md px-2 py-1 text-gray-400 hover:bg-stone-100 hover:text-gray-700 disabled:opacity-40">
+            {t('library.copilot.memory.delete')}
+          </button>
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function visibleLayerItems(state: CopilotMemoryState, layer: CopilotMemoryLayer): CopilotMemoryItem[] {
+  return state.layeredMemory.layers[layer]
+    .filter((item) => item.status !== 'archived')
+    .slice(0, 5);
+}
+
+function formatDate(value: string): string {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 }
