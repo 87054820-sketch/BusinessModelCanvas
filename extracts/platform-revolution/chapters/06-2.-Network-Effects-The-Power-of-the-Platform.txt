@@ -1,0 +1,589 @@
+# 2. Network Effects: The Power of the Platform
+
+OpenTable, Zillow, and eBay, Gurley argued that the $17 billion valuation
+was likely an underestimate, and that Damodaran’s figure could be short by
+a factor of 25.2 Gurley questioned Damodaran’s assumptions about both the
+total market size and Uber’s potential market share, basing his calculations
+on economist W. Brian Arthur’s analysis of network effects.3
+In classic platform style, Uber performs a matching service. It helps
+riders find drivers, and vice versa. As drivers sign on and coverage density
+rises within a city, a number of striking growth dynamics are set in motion.
+Riders tell their friends about the service; some even start driving
+themselves in their spare time. Wait time falls for riders, and downtime falls
+for drivers. Less downtime means that a driver can make the same amount
+of money even if fares are lower, because he has more riders during the
+same number of working hours. Thus, less downtime means that Uber can
+cut fares and stimulate even more demand, which creates a virtuous cycle
+that increases coverage density still further.
+In his article, Gurley reproduced a graphic from another investor that
+illustrates how this virtuous cycle works—a napkin sketch created by David
+Sacks, co-founder of Yammer and veteran of PayPal (Figure 2.1).
+Sacks’s napkin sketch captures a classic example of network effects. It
+shows how the value of Uber to each of its participants grows the more
+people use it—which attracts still more users, thereby increasing the value
+of the service even more.
+Network effects refers to the impact that the number of users of a
+platform has on the value created for each user. Positive network effects
+refers to the ability of a large, well-managed platform community to
+produce significant value for each user of the platform. Negative network
+effects refers to the possibility that the growth in numbers of a poorly-
+managed platform community can reduce the value produced for each user.
+As we’ll see, positive network effects are the main source of value
+creation and competitive advantage in a platform business. However,
+network effects can also be negative, and in this chapter we’ll explain how
+and why negative network effects arise and what platform business
+managers can do about them. But understanding value creation via positive
+network effects is the essential first step.
+
+
+FIGURE 2.1. David Sacks’s napkin sketch of Uber’s virtuous cycle. Reprinted by permission.
+Gurley’s data showed that, by mid-2014, network effects were already
+beginning to drive Uber’s growth. When Travis Kalanick, CEO of Uber,
+sought seed funding in 2009, the size of the taxi and limousine market in
+Uber’s hometown of San Francisco was $120 million. Based on Uber’s own
+data, the market in 2014 appeared already to be three times as large and still
+growing. This threefold multiple would, all by itself, justify increasing
+Damodaran’s $5.9 billion valuation to the $17 billion value imputed by
+investors. Unaware of this insider information, Damodaran hadn’t adjusted
+his equations for network effects—as he graciously conceded in an elegant
+and well-reasoned response.
+DEMAND ECONOMIES OF SCALE
+The network effect represents a new economic phenomenon, driven by
+technological innovation. In the twentieth-century industrial era, giant
+monopolies were created based on supply economies of scale. These are
+
+
+driven by production efficiencies, which reduce the unit cost of creating a
+product or service as the quantities produced increase. These supply
+economies of scale can give the largest company in an industrial economy a
+cost advantage that is extremely difficult for competitors to overcome.
+Consider some of the giant businesses that grew up during the industrial
+era. In steel production, the British Bessemer process of blowing air
+through molten slag removed impurities and cut costs of production from
+£40 to £7 per ton. Operating eighteen five-ton Bessemer blast furnaces,
+Barrow Hematite Steel Company became the largest steel mill in the world
+at the turn of the twentieth century. Similarly, the German Haber-Bosch
+process of producing fertilizer from nitrogen in air, which is used in the
+production of half of all foodstuffs consumed today, was one factor
+contributing to rise of giant BASF, which is still the world’s largest
+chemical company. And American Thomas Edison’s inventions in lighting
+and cheap power generation gave rise to General Electric, while Henry
+Ford’s use of mass production accelerated the rise of Ford Motor Company.
+The bigger the business, the cheaper the costs of production, marketing, and
+distribution—a positive spiral that helped companies grow steadily larger
+and more profitable (until the process was derailed by government
+intervention or disruptive technological change that rendered the old
+economies obsolete).
+In the twenty-first-century Internet era, comparable monopolies are
+being created by demand economies of scale (a term used by the two
+experts largely responsible for popularizing the concept of network effects,
+Hal Varian, the chief economist at Google, and business professor Carl
+Shapiro).4 By contrast with supply economies of scale, demand economies
+of scale take advantage of technological improvements on the demand side
+—the other half of the profit equation from the production side. Demand
+economies of scale are driven by efficiencies in social networks, demand
+aggregation, app development, and other phenomena that make bigger
+networks more valuable to their users. They can give the largest company in
+a platform market a network effect advantage that is extremely difficult for
+competitors to overcome.
+Demand economies of scale are the fundamental source of positive
+network effects, and thus the chief drivers of economic value in today’s
+world. This is not to say that supply economies of scale no longer matter; of
+
+
+course they do. But demand economies of scale, in the form of network
+effects, have become the most important differentiating factor.
+Metcalfe’s law is a useful way of encapsulating how network effects
+create value for those who participate in a network as well as for those who
+own or manage the network. Robert Metcalfe, co-inventor of Ethernet and
+founder of 3Com, pointed out that the value of a telephone network grows
+nonlinearly as the number of subscribers to the network increases, making
+more connections among subscribers possible.
+When there’s only one node in a network, no connections are possible.
+An MIT professor we know likes to joke that the prize for “greatest
+salesperson in history” should go to whoever sold the first telephone.
+Arguably, it had zero value, because when there’s only one telephone in the
+world, you can’t call anyone. But as more people buy telephones, the value
+grows. With two telephones, one connection is possible. With four
+telephones, six. With twelve, sixty-six. And with 100 telephones, there are
+4,950 connections. This is known as nonlinear or convex growth, and it is
+precisely the characteristic growth pattern seen in companies like Microsoft
+in the 1990s, Apple and Facebook today, and Uber tomorrow. (Working in
+reverse, it explains the convex collapse of Blackberry in the 2000s: as users
+began to flee the Blackberry platform, the loss of network nodes caused the
+value of the network itself to plummet, encouraging still more people to
+abandon Blackberry for other devices.)
+Major economic consequences follow from this pattern. Growth via
+network effects leads to market expansion. New buyers enter the market,
+attracted by the growing number of friends who are part of the network. If
+prices also fall—as they often do when technology matures and production
+quantities increase—then network effects work together with more
+attractive pricing to drive massive market adoption.
+TWO-SIDED NETWORK EFFECTS
+David Sacks’s napkin sketch suggests a second dynamic at work in the
+growth of Uber, one we refer to as a two-sided network effect.5 In
+Metcalfe’s telephone example, phone users attract more phone users. But in
+the case of Uber, two sides of the market are involved: riders attract drivers,
+and drivers attract riders. A similar dynamic can be seen in many other
+
+
+platform businesses. In the case of Google’s Android, app developers attract
+consumers, and consumers attract app developers. On Upwork (formerly
+known as Elance-oDesk), job listings attract freelancers, and freelancers
+attract job listings. On PayPal, sellers attract buyers, and buyers attract
+sellers. And on Airbnb, hosts attract guests, and guests attract hosts. All of
+these businesses attract two-sided network effects with positive feedback.
+The importance of these effects for stimulating network growth is so
+great that platform businesses will often spend money to attract participants
+to one side of the market. They know that, if they can get one side to join
+the platform, the other side will follow. Two-sided network effects with
+positive feedback explain how Uber can afford to use millions of dollars of
+money from Bill Gurley and other investors to give away free rides worth
+$30 each. Uber’s coupons buy market share in a way that attracts a virtuous
+cycle of drivers and riders who will later pay full price to participate in the
+network.
+A familiar (non-tech) example is a local bar that holds a weekly Ladies’
+Night, when discounted drinks are offered to female customers. When the
+women show up, the men appear—and they’re happy to buy their own
+drinks at full price. Thus, in a two-sided market, it can sometimes make
+economic sense to accept financial losses—not just temporarily, but
+permanently!—in Market A if growing that market enables growth in a
+related Market B. The only proviso is that the profits to be earned in Market
+B must outweigh the losses incurred in Market A.
+NETWORK EFFECTS VERSUS
+OTHER GROWTH-BUILDING TOOLS
+It’s important to distinguish network effects from other familiar market-
+building tools, such as price effects and brand effects. Misunderstanding of
+these distinctions is a source of the current confusion over how to value
+platform business models, and contributed to the dot-com boom and bust of
+1997–2000.
+During the dot-com boom, investors in startups like eToys, Webvan, and
+FreePC regarded market share as practically the only significant metric of
+business success. Captivated by slogans like “Get big fast” and “Get large
+or get lost,” they urged companies to spend lavishly to lure customers in
+
+
+hopes of achieving an insurmountable market share advantage. The
+companies responded: for example, via discounting and couponing, they
+created price effects. Attracting customers through extraordinarily low
+pricing—as low as zero in some cases—is a foolproof way of buying
+market share, at least temporarily. Books like the bestselling Free: The
+Future of a Radical Price, published in 2009 by Chris Anderson, then the
+editor-in-chief of Wired magazine, preached the gospel of the giveaway,
+positing a steady climb from “free” to “premium” to “freemium” (free +
+premium) pricing of the product or service.
+The problem is that price effects are evanescent. They disappear the
+moment the discounts end or another firm offers a better price. Typically,
+only 1–2 percent of customers convert from free to paying. Thus, as David
+Cohen, CEO and founder of the venture incubator Techstars, says, you need
+to reach millions of customers before the giveaway model becomes
+profitable.6 Freemium models also create freeloaders than can be hard to
+monetize (that is, to profit from), as FreePC discovered in 1999 when it
+gave away free Pentium PCs in exchange for viewing ads and the prospect
+of online sales.7
+Brand effects are stickier. They arise when people come to associate a
+particular brand with quality. But brand effects, like price effects, are often
+difficult to sustain. They can also be extremely expensive. EToys spent
+millions to establish a brand in hopes of competing with Amazon and
+Toys“R”Us. Kozmo, an online company that promised free one-hour
+delivery of food, books, coffee, and other basic goods in major U.S. cities,
+hired actress Whoopi Goldberg as a spokesperson and paid her in stock,
+only to have the business collapse soon thereafter. In January 2000—the
+peak before the dot-com crash—nineteen startups bought Super Bowl ads,
+spending over $2 million each in order to build brand recognition. A decade
+or so later, eight of them no longer existed.8
+Price effects and brand effects have their place in a startup’s growth
+strategy. But only network effects create the virtuous cycle we described
+above, which leads to the building of a longlasting network of users—a
+phenomenon we called lock-in.
+Another growth-building tool that’s easy to confuse with network effects
+is virality. Derived from the expression “going viral,” virality is the
+tendency of an idea or brand to be circulated rapidly and widely from one
+Internet user to another.
+
+
+Virality can attract people to a network—for example, when fans of an
+irresistibly cute, funny, or startling video persuade their friends to visit
+YouTube. But network effects keep them there. Virality is about attracting
+people who are off the platform and enticing them to join it, while network
+effects are about increasing value among people on-platform.
+When the dot-com boom turned to bust in 2000, two of the authors of
+this book (Geoff Parker and Marshall Van Alstyne) were recent PhD
+graduates from MIT. We watched the cycle with fascination, observing as
+smart investment firms like Benchmark and Sequoia made both lucrative
+hits and expensive misses. (Benchmark Capital, the venture capital firm that
+is now getting it right in the case of Uber, invested in Webvan, which was
+listed by CNET as one of the biggest dot-com disasters in history,9 as did
+Sequoia Capital, which nonetheless got it right with Apple, Google, and
+PayPal.)
+Curious about what separated the successful companies from those that
+failed, we examined dozens of cases and found that the failures mostly
+relied on price or brand effects. By contrast, the successes hit on an idea
+that really worked—driving traffic from one user group in order to drive
+profits from another user group. We described our findings in a paper that
+analyzed the mathematics of two-sided network effects.10 Today, such
+successful platform businesses as eBay, Uber, Airbnb, Upwork, PayPal, and
+Google exhibit this model extensively.11
+SCALING NETWORK EFFECTS: FRICTIONLESS ENTRY
+AND OTHER SCALABILITY TOOLS
+As you can see, network effects depend on the size of the network.12 So one
+important corollary is that effective platforms are able to expand in size
+quickly and easily, thereby scaling the value that derives from network
+effects.
+It’s hard to remember now, but there was a time when Yahoo was a more
+popular portal to the Internet than Google. The story of how Google
+overtook Yahoo—despite the latter’s four-year head start—vividly
+illustrates the importance of being able to scale both sides of a network.
+
+
+Yahoo started out as a human-edited database. It classified web pages
+using a tree structure of subcategories within categories the same way
+librarians organize books or biologists organize plant and animal species.
+This worked well for a time. But during the 1990s and early 2000s, growth
+in Internet users and web page producers increased exponentially—and it
+soon became apparent that employee-edited hierarchical databases do not
+scale well.13 One of the authors recalls submitting web pages to Yahoo, then
+waiting days and weeks until the results showed up in master lists. (No
+wonder frustrated users began claiming that Yahoo stood for “Yet Another
+Hierarchical Officious Oracle!”)
+By contrast, Google found a way to serve web page searchers by
+harnessing the work of web page producers. Google’s page rank algorithm
+considers the extent to which web pages link to one another. To attract page
+viewers, page producers already consider what viewers want. More links
+from more important pages mean higher-priority search results. Therefore,
+Google’s algorithm effectively matches both sides of the network. Not only
+do algorithms scale better than employees, but using web links as the key
+sorting tool shifted the focus from inside the firm to outside the firm, where
+the choices of the crowd could control the action—a far more scalable
+model than Yahoo’s.
+As the story of Google suggests, networks that permit frictionless entry
+are able to grow organically almost without bound. Frictionless entry is the
+ability of users to quickly and easily join a platform and begin participating
+in the value creation that the platform facilitates. Frictionless entry is a key
+factor in enabling a platform to grow rapidly.
+Threadless is a T-shirt company founded by people with expertise in
+information technology services, web design, and consulting. Their
+business model involves holding weekly design contests open to outside
+participants, printing only T-shirts with the most popular designs, and
+selling them to their large and growing customer base. Threadless doesn’t
+need to hire artistic talent, since skilled designers compete for prizes and
+prestige. It doesn’t need to do marketing, since eager designers contact their
+friends to solicit votes and sales. It doesn’t need to forecast sales, since
+voting customers have already announced what numbers they will buy. By
+outsourcing production, Threadless can also minimize its handling and
+inventory costs. Thanks to this almost frictionless model, Threadless can
+scale rapidly and easily, with minimal structural restrictions.
+
+
+Threadless’s business model arose by accident. The founders originally
+thought they were in the web services business, selling consulting to firms
+who needed websites. But selling web consulting didn’t scale: each project
+had to be negotiated individually, each project required dedicated staff, and
+after completion, no project could be resold without modification. The
+company founders launched the T-shirt contest website as a side project to
+illustrate their capabilities. It was simply an online copy of an offline
+contest that one of the founders had entered. When this side venture
+exploded in popularity, its enormous scalability advantages became
+obvious.
+Scaling a network requires that both sides of the market grow
+proportionally. For example, one Uber driver can serve an average of about
+three Uber riders an hour. It would make no sense for Uber to have one
+rider and 1,000 drivers—nor 1,000 riders and one driver. Airbnb faces a
+parallel issue in scaling both hosts and guests. If one side becomes
+disproportionally large, coupons or discounting to attract more participants
+to the other side becomes good business.
+In some cases, the growth of a platform can be facilitated by an effect we
+call side switching. This occurs when users of one side of the platform join
+the opposite side—for example, when those who consume goods or services
+begin to produce goods and services for others to consume. On some
+platforms, users engage in side switching easily and repeatedly.
+Uber, for example, recruits new drivers from among its rider pool, just as
+Airbnb recruits new hosts from among its guest pool. A scalable business
+model, frictionless entry, and side switching all serve to lubricate network
+effects.
+NEGATIVE NETWORK EFFECTS:
+THEIR CAUSE AND CURE
+So far, we’ve been focusing on positive network effects. But the very
+qualities that lead platform networks to grow so quickly may also lead them
+to fail quickly. The growth of a network can produce negative network
+effects that drive away participants, even leading to the death of a platform
+business.
+
+
+One negative network effect occurs when the growth in numbers that
+enables more matches between producers and consumers also leads to
+increasing difficulty, or impossibility, in finding the best match. To avoid
+this dilemma, frictionless entry must be balanced through effective
+curation. This is the process by which a platform filters, controls, and limits
+the access of users to the platform, the activities they participate in, and the
+connections they form with other users. When the quality of a platform is
+effectively curated, users find it easy to make matches that produce
+significant value for them; when curation is nonexistent or poorly handled,
+users find it difficult to identify potentially valuable matches amid a flood
+of worthless matches.
+Dating platform OkCupid discovered that scale can cause network
+collapse if not carefully managed. According to CEO Christian Rudder,
+when you get lots of users on a dating website, the natural tendency of men
+on the platform is to approach the most beautiful women. Scaling male
+behavior creates the problem that most of the men who approach a highly
+attractive woman will be markedly less attractive—she is “out of their
+league,” as the saying goes. When these B-level males (our description, not
+Rudder’s!) bombard the A-level females with requests for a date, no one is
+happy. The beautiful females are unhappy and likely to abandon the site
+because of all the unfiltered attention, while the B-level males are unhappy
+because the women of their choice never respond. And the few highly
+attractive men who might have been a good match for the most attractive
+women are unhappy because the women they want have left the platform.14
+Once this happens, the men at all attractiveness levels converge on the
+women in the second most beautiful tier, and the whole process repeats.
+Network effects reverse, and the business model breaks down.
+To solve this problem, OkCupid implemented a curation strategy
+involving multiple levels of network matching. The first level addresses the
+obvious issue of matching compatible interests. Do both parties smoke? Do
+both parties like tattoos and horror movies? Do both parties believe in
+dinosaurs? This level eliminates many clearly unsuitable matches and
+reduces the number of participants in the process.
+The second matching level addresses the question of comparative
+attractiveness—the “in her league” question. If OkCupid’s algorithm
+determines, based on reactions by other users, that Joe is significantly less
+attractive than Mary (for example), then Joe’s routine search for matches
+
+
+will not turn up Mary’s picture. (She might show up in a highly targeted
+search, but not otherwise.) Instead, Joe will be presented with a selection of
+women thought to be comparable to him in attractiveness. The result is win-
+win. Mary is happier because the platform helps her find what she’s looking
+for while protecting her from an onslaught. And Joe is happier, too, because
+women are returning his messages when previously he got the cold
+shoulder.
+Of course, the use of this algorithm means that, if a guy only sees
+pictures of average-looking women when conducting an OkCupid search,
+he probably doesn’t have the movie-star good looks he thought he had. But
+his chances for a successful match have greatly increased, which should
+lead in the long run to a higher level of satisfaction.
+Skillful curation like that practiced by OkCupid greatly reduces negative
+network effects. At the same time, it increases and leverages the benefits of
+positive network effects. As the number of participants in the network
+grows, the volume of information about them increases. As any statistician
+will tell you, having more data to work with generally increases the
+accuracy and value of the inferences you can draw from the data. Thus, the
+larger your network grows, the better your curation can become—a
+phenomenon we refer to as data-driven network effects. Of course, this is
+dependent on having well-designed curation tools that are continually
+tested, updated, and improved.
+By contrast, poor curation leads to greater noise, which makes the
+platform less useful and may even cause it to unravel. Such a negative
+feedback loop following the exponential growth of Chatroulette quickly led
+to an equally dramatic collapse.
+Chatroulette pairs random people from around the world for webcam
+conversations. People can leave a conversation at any time by initiating a
+new connection or simply by quitting. The strangely addictive site grew
+from twenty people at launch in late 2009 to more than 1.5 million users six
+months later.
+Initially, Chatroulette had no registration requirement and no controls of
+any kind, leading to what became known as the Naked Hairy Men problem.
+As the network grew without policing, a growing number of naked hairy
+men showed up to chat, leading many of the non-naked, non-hairy others to
+abandon the network. As legitimate users fled, the noise level on the
+platform increased, setting a negative feedback loop in motion.
+
+
+Chatroulette realized it needed to curate access in a way that scales with
+platform growth. The platform now lets users filter other users in addition
+to using algorithms to screen callers with undesirable images, and it is
+growing again—though more slowly than during its initial phase.
+Every successful platform faces the problem of matching content and
+connections at scale—which means that, at some point in its growth, every
+successful platform must address the challenge of effective curation. We’ll
+return to the issue of curation in later chapters.
+FOUR KINDS OF NETWORK EFFECTS
+A two-sided network (i.e., one with both producers and consumers) has four
+kinds of network effects. It’s important to understand and consider all four
+when designing and managing a platform.
+In a two-sided market, same-side effects are network effects created by
+the impact of users from one side of the market on other users from the
+same side of the market—the effects that consumers have on other
+consumers and those that producers have on other producers. By contrast,
+cross-side effects are network effects created by the impact of users from
+one side of the market on users from the other side of the market—the
+effects that consumers have on producers and those that producers have on
+consumers. Both same-side effects and cross-side effects can be positive or
+negative, depending on the design of the system and the rules put in place.
+Here’s how these four types of network effects work.
+The first category, positive same-side effects, includes the positive
+benefits received by users when the number of users of the same kind
+increases—for example, the effect that arose as the number of subscribers to
+the Bell Telephone network grew. The more of your friends and neighbors
+who were accessible on “the Bell,” the greater the value you received from
+your Bell membership. Today, a comparable positive effect on the
+consumer-to-consumer side can be seen with a gaming platform like the
+Xbox MMOG: the more fellow gamers you encounter on the platform, the
+greater the fun you experience when using it.
+Positive same-side effects can also be found on the producer side. For
+example, consider Adobe’s all-but-universal image production and sharing
+platform. The more people who are creating and sharing images using the
+
+
+PDF platform, the greater the benefit you get from using the same platform
+for your own image production needs.
+However, not all same-side effects are positive. Sometimes there is a
+downside to the numbers growth on one side of a platform. This is called a
+negative same-side effect. For example, consider the information
+technology platform Covisint, which connects businesses that are interested
+in developing cloud-based networking tools with service providers. As the
+number of competing suppliers on the Covisint platform grows, customers
+are attracted to the platform, which makes the suppliers happy. But when
+the list of suppliers grows too great, it becomes more difficult for
+appropriate providers and customers to find one another.
+Cross-side effects arise when either consumers or producers gain or lose
+based on the number of users on the opposite side of the platform. Positive
+cross-side effects occur when users benefit from an increase in the number
+of participants on the other side of the market. Think about a payment
+mechanism like Visa: when more merchants (producers) agree to accept the
+Visa card, the flexibility and convenience of the shopping experience
+increases for shoppers (consumers), creating a positive cross-side effect.
+The same effect works in the opposite direction, of course; more Visa
+cardholders lead to more potential customers for merchants. In a similar
+way, when the number of app developers for Windows grows, the versatility
+and power of the operating system increases for users; and when the
+number of Windows users grows, so do the potential benefits (financial and
+otherwise) for app developers. Positive cross-side effects produce win-win
+results.
+Of course, cross-side effects are not necessarily symmetrical. On
+OkCupid, women attract men more than men attract women. On Uber, a
+single driver is more critical to growth than a single rider. On Android, a
+single developer’s app attracts users more than a single user attracts
+developer apps. On Twitter, the vast majority of people read, while a
+minority tweet. On question-and-answer networks like Quora, the vast
+majority asks questions, while a minority answers them.15
+Again, however, there is the dark side to consider—the situation in
+which negative cross-side effects arise. Think about a platform that
+facilitates the sharing of digital media—music, text, images, videos, and the
+like. In most circumstances, a growing number of producers (music
+companies, for example) leads to positive benefits for consumers, but it can
+
+
+also lead to growing complexity and expense—for example, too many
+varying digital rights management forms to read and accept. When this
+happens, the cross-side effects flip from positive to negative, leading
+consumers to abandon the platform or at least reduce their usage. In a
+similar way, when the proliferation of messages from competing merchants
+on a platform site leads to unpleasant advertising clutter, the positive impact
+of expanding producer choice may be transformed into a negative cross-
+side effect that turns off consumers and damages the platform’s value.
+We can foresee the arrival of growing pains at Uber as a result of
+increasing negative cross-side effects. If Uber attracts too many drivers
+relative to the number of riders, driver downtimes will go up; if Uber
+attracts too many riders relative to drivers, rider wait times will go up (see
+Figure 2.2, in which the resulting feedback loops have been inserted).
+FIGURE 2.2. David Sacks’s napkin sketch of Uber, with negative feedback loops inserted.
+In fact, this is happening already. As Uber reaches saturation within a
+given market, too many drivers conflict with one another, increasing
+downtimes and causing some drivers to abandon the market. The more
+
+
+complete depiction of Uber’s growth spiral in Figure 2.2 highlights the fact
+that a firm in a two-sided market must manage all four network effects.
+Good platform husbandry seeks to reinforce positive network effects,
+creating and strengthening as many positive feedback loops as possible.
+This is another topic we’ll return to in later chapters, where we’ll offer
+specific advice about how to manage these challenges effectively.
+STRUCTURAL CHANGE: NETWORK EFFECTS TURN
+FIRMS INSIDE OUT
+As we’ve seen, in the industrial era, giant companies relied on supply-side
+economies of scale. By contrast, most Internet era giants rely on demand-
+side economies of scale. Firms such as Airbnb, Uber, Dropbox, Threadless,
+Upwork, Google, and Facebook are not valuable because of their cost
+structures: the capital they employ, the machinery they run, or the human
+resources they command. They are valuable because of the communities
+that participate in their platforms. The reason Instagram sold for $1 billion
+is not its thirteen employees; the reason WhatsApp sold for $19 billion
+wasn’t its fifty employees. The reasons were the same: the network effects
+both organizations had created.
+Standard accounting practices might not factor the value of communities
+into the value of a firm, but stock markets do. Little by little, the
+accountants are catching up. A team of experts collaborating with the
+consulting and accounting firm of Deloitte published research that sorts
+companies into four broad categories based on their chief economic
+activity: asset builders, service providers, technology creators, and network
+orchestrators. Asset builders develop physical assets that they use to deliver
+physical goods; companies like Ford and Walmart are examples. Service
+providers employ workers who provide services to customers; companies
+like UnitedHealthcare and Accenture are examples. Technology creators
+develop and sell forms of intellectual property, such as software and
+biotechnology; Microsoft and Amgen are examples. And network
+orchestrators develop networks in which people and companies create value
+together—in effect, platform businesses. The research suggests that, of the
+four, network orchestrators are by far the most efficient value creators. On
+average, they enjoy a market multiplier (based on the relationship between
+
+
+a firm’s market valuation and its price-to-earnings ratio) of 8.2, as
+compared with 4.8 for technology creators, 2.6 for service providers, and
+2.0 for asset builders.16 It’s only a slight simplification to say that that
+quantitative difference represents the value produced by network effects.
+Furthermore, where network effects are present, industries operate by
+different rules.17 One reason is that it is far easier to scale network effects
+outside a firm than inside it—since there are always many more people
+outside a firm than inside it. Thus, where network effects are present, the
+focus of organizational attention must shift from inside to outside. The firm
+inverts; it turns inside out. The management of human resources shifts from
+employees to crowds.18 Innovation shifts from in-house R & D to open
+innovation.19 The primary venue for activities in which value is created for
+participants shifts from an internal production department to a collection of
+external producers and consumers—which means that management of
+externalities becomes a key leadership skill. Growth comes not from
+horizontal integration and vertical integration but from functional
+integration and network orchestration. The focus on processes such as
+finance and accounting shifts from cash flows and assets you can own to
+communities and assets you can influence. And while platform businesses
+themselves are often extraordinarily profitable, the chief locus of wealth
+creation is now outside rather than inside the organization.
+Network effects are creating the giants of the twenty-first century.
+Google and Facebook each touch more than one-seventh of the world’s
+population. In the world of network effects, ecosystems of users are the new
+source of competitive advantage and market dominance.
+
+
+TAKEAWAYS FROM CHAPTER TWO
+    Whereas giant industrial-era firms were made possible by supply economies of scale,
+today’s giants are made possible by demand economies of scale—expressed as network
+effects.
+    Network effects are not the same as price effects, brand effects, or other familiar growth-
+building tools.
+    Frictionless entry and other features of scalability maximize the value-building impact of
+network effects.
+    A two-sided market (with both producers and consumers) gives rise to four kinds of
+network effects: same-side effects (positive and negative) and cross-side effects (positive
+and negative). A growing platform business must manage all four.
+    The key to minimizing most negative network effects is quality curation, which increases
+the chances of a happy match between producer and consumer.
+OceanofPDF.com
+
+
+3
+ARCHITECTURE
+Principles for Designing
+a Successful Platform
+How do we build a platform that invites participation and creates
+significant value for all its users? How do we provide tools and services that
+make it easy for producers and consumers to interact in mutually rewarding
+ways? And how do we design a technological infrastructure that is capable
+of scaling rapidly, and encouraging positive network effects while
+minimizing negative ones?
+These are daunting challenges. Platforms are complex, multisided
+systems that must support large networks of users who play different roles
+and interact in a wide variety of ways. An industry-wide platform—a
+platform for the health care industry, for example—may need to facilitate
+interactions among an enormous range of industry participants with
+motivations that vary widely and change frequently as economic,
+regulatory, and technological circumstances evolve.
+Designers and builders of any complex system often find it difficult to
+identify a logical starting point. This problem is particularly acute with
+platform businesses, since they are less familiar and much more
+complicated than pipeline businesses, which generally feature a
+straightforward linear design. The natural tendency of those charged with
+creating a new platform business is to study similar implementations and
+imitate them. But because no two markets are identical, this strategy often
+fails. A poorly designed platform produces little or no value for users and
+generates weak network effects, or none at all.

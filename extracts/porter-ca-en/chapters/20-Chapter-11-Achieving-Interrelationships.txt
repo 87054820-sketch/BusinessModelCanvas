@@ -1,0 +1,1288 @@
+# Chapter 11: Achieving Interrelationships
+
+has identiﬁed interrelationships that meet the tests of strategic signiﬁcance
+described in Chapter 9. The focus here is on mechanisms for exploiting
+them.
+I will ﬁrst identify the organizational impediments to achieving
+interrelationships that are present in many ﬁrms and their causes. Having
+done so, I will describe the ways in which ﬁrms can overcome these
+impediments through what I term horizontal organization. The predominant
+form of corporate organization in diversiﬁed ﬁrms is a vertical organization,
+through which top management directs the activities of the various business
+units. Information, decisions, and resources ﬂow vertically, from business
+units to top management and vice versa. Organizational subunits in
+between, often referred to as groups and sectors, are designed primarily to
+oversee this vertical process and reduce the span of control of top
+management. Firmwide strategic planning and incentive systems further
+reinforce the vertical nature of decision making and control.
+In contrast, horizontal organization in a diversiﬁed ﬁrm overlays the
+business unit structure and facilitates collaboration among business units.
+Horizontal organizational mechanisms include the grouping of business
+units, standing committees, management systems, human resources
+policies, and a variety of other formal and informal devices designed to
+coordinate 
+business 
+unit 
+activities. 
+Any 
+ﬁrm 
+with 
+signiﬁcant
+interrelationships needs a horizontal corporate organization to supplement
+its vertical organization. The pervasiveness of interrelationships suggests
+that a new organizational form for managing the diversiﬁed ﬁrm will
+become increasingly necessary—one that involves a much closer balance
+between the horizontal and vertical dimensions of organization.
+Horizontal organization does not seek to eliminate or replace
+decentralization. The logic of decentralization is sound and some diversiﬁed
+ﬁrms, in fact, have failed to decentralize enough. Horizontal organization
+overlays a set of mechanisms on the vertical organization to ensure that
+interrelationships yielding a competitive advantage are exploited.3 The
+result is not a matrix organization, but independent business units that are
+connected by organizational devices and a set of shared values. While
+business unit autonomy may be reduced in the process, the real purpose of
+horizontal organization is to redeﬁne business unit autonomy in terms more
+conducive to the ﬁrm’s overall success.
+
+
+Impediments to Achieving Interrelationships
+Achieving tangible interrelationships requires a business unit to share
+activities in its value chain with other units while remaining a separate
+entity that acts independently in other value activities and maintains proﬁt
+responsibility. Similarly, achieving intangible interrelationships requires the
+transfer 
+of 
+know-how 
+among 
+business 
+units. 
+The 
+pursuit 
+of
+interrelationships may well lead to joint activity with more than one sister
+unit in different parts of the value chain. A business unit may share a sales
+force with one division, for example, and a plant with another.
+Implementing any interrelationship inevitably requires costs of
+coordination no matter how a ﬁrm is organized. However, a variety of
+organizational impediments can raise these costs unnecessarily for many
+ﬁrms. These impediments bear some relationship to the factors that make
+functional coordination difﬁcult within a single business unit. However, the
+organizational impediments to interrelationships are usually much stronger
+than impediments to functional coordination. Nothing compels coordination
+among business units, while the functions within a business unit must
+coordinate in order to do business. In fact, business units often view each
+other as rivals competing for limited resources and senior management
+attention on the basis of performance.
+Sources of Impediments
+Impediments to business unit coordination grow out of the differences
+between the perspective of business unit and corporate managers. Some of
+the most important impediments are as follows:
+ASYMMETRIC BENEFITS
+Interrelationships are often resisted by some business units because the
+beneﬁts are or appear to be asymmetric. As I discussed in previous chapters,
+differences in the size and strategy of business units often mean that the
+competitive advantage arising from an interrelationship accrues more to one
+business unit than another. In some cases, an interrelationship can have a
+net negative impact on one business unit while being clearly beneﬁcial to
+
+
+the ﬁrm as a whole. Unless the motivation system reﬂects these differences,
+it will be extremely difﬁcult to get business units to agree to pursue an
+interrelationship and to work together to implement it successfully. Instead,
+they become embroiled in fruitless negotiations over the allocation of
+shared costs or over procedures for sharing revenue. The result is that
+interrelationships that clearly beneﬁt all the involved business units are
+quickly adopted when recognized, but those with asymmetric beneﬁts
+frequently remain untapped.
+LOSS OF AUTONOMY AND CONTROL
+In addition to resistance on economic grounds, managers often
+vigorously resist interrelationships to avoid a perceived or actual loss of
+autonomy. Some of the common sources of resistance include:
+Protection of Turf. Business unit managers may jealously guard their
+“turf.” They exercise full control over their operations and draw personal
+satisfaction from it as well as perceived inﬂuence within the corporation.
+Autonomy has become associated in many ﬁrms with full control over all
+functions, which makes managers loath to give up any of them.
+Perceived Dilution of Buyer Relationships. Business units often resist
+market interrelationships because of fears that they will lose control of their
+buyers, or that relations with buyers will be damaged. Business units are
+concerned that sister units will steal “their” buyers, damage their image, or
+create confusion in buyers’ minds over the appropriate point of contact with
+the ﬁrm. Stockbrokers, for example, have been reluctant to share client lists
+with sister units in their parent companies despite the existence of
+interrelationships in ﬁnancial services.
+Inability to “Fire” a Sister Division. Business units often feel in more
+control when dealing with an outside company, rather than being saddled
+with a sister unit’s service, delivery, or product problems. Working with a
+sister unit is perceived as locking the business unit into an adverse
+bargaining situation, because corporate management will be prone to
+intervene in disputes and not allow an interrelationship to be severed in the
+
+
+event of poor sister unit performance. Managers perceive fewer constraints
+in dealing with an outside ﬁrm, because an outside ﬁrm can be “ﬁred” if the
+interrelationship fails.4
+Conﬂicts Over Priorities in Shared Activities. Business units are often
+quick to recognize the risk of conﬂicting priorities in shared value activities
+such as a shared sales force, shared logistical network, or shared
+development center. In a shared development center, for example,
+engineering time may be allocated in favor of the business unit with the
+most pressing need; a shared sales force will inevitably concentrate more on
+some products than others. While setting such priorities is rational from a
+corporate viewpoint, business unit managers do not welcome the prospect
+of compromising their plans. Thus business units resist sharing in the ﬁrst
+place, or press to create their own autonomous unit once the shared activity
+has been established.
+Unfair Blame for Poor Performance. Business unit managers often fear
+that they will be unfairly blamed for the failure of an interrelationship.
+Managers see the possibility that they will be evaluated for results over
+which they lack full control. This can encourage them to forgo the beneﬁt of
+an interrelationship to ensure control over their own destiny.
+A ﬁrm’s history and organizational conﬁguration have an important
+inﬂuence on the strength of managers’ desire for complete autonomy. In
+many diversiﬁed ﬁrms, business unit autonomy is a longstanding policy that
+has been carefully nurtured and emphasized. In companies such as
+Consolidated Foods, Beatrice Foods, Johnson & Johnson, Emerson Electric,
+and Hewlett-Packard, for example, the belief in business unit autonomy is
+strongly held and has been emphasized as a key to the ﬁrm’s success. While
+autonomy does indeed play an important positive role, there is a strong
+tendency to carry it too far and ignore changing competitive circumstances.
+Business units in ﬁrms with a long history of autonomy may resist even the
+most worthwhile joint projects. Emerson Electric, for example, has had to
+struggle to get divisions to cooperate on such relatively non-threatening
+interrelationships as joint R&D centers on selected technologies.
+Firms with a long commitment to business unit autonomy have trained
+and promoted those managers who have performed well in an environment
+
+
+stressing independence. Self selection has also attracted managers who
+value independence to join the ﬁrm. Moreover, acquisitions are also often
+consummated by a promise of autonomy. With such a legacy, managers are
+likely to resist any intrusion on their autonomy or any corporate move
+toward centralization on principle.
+Firms that have pushed the principle of decentralization down to the
+smallest viable business units often face the most difﬁculty in achieving
+interrelationships, despite the fact that they frequently have the greatest
+need to achieve the scale economies that result from them. Autonomy can
+be most jealously guarded when business units are small. For example,
+American Hospital Supply has many small divisions selling various kinds
+of medical products to the same buyers, via many separate yet overlapping
+sales forces. It seems to have experienced difﬁculties in achieving
+coordination among its many units, due to the ﬁerce independence of many
+of its managers.
+BIASED INCENTIVE SYSTEMS
+Corporate incentive plans often exacerbate the difﬁculties of
+implementing interrelationships by indirectly penalizing managers for
+pursuing them. Business units often lack any positive incentive to
+participate in interrelationships. They see little gain in changing the way
+they perform activities to facilitate sharing or transferring know-how, both
+essential to a successful interrelationship. Worse yet, some incentive
+systems actually encourage the formation of outside coalitions in preference
+to interrelationships with sister units.
+Some of the ways in which incentive systems work against
+interrelationships include:
+Lack of Credit for Contributions to Other Units. Incentive systems
+typically measure only a business unit’s performance and fail to value its
+contribution to sister units. A business unit’s contribution to an
+interrelationship, and hence to overall corporate performance, is often
+difﬁcult to measure. Uniform ﬁnancial objectives across business units and
+mechanical transfer pricing and allocation formulas are easy to administer
+
+
+and convey the impression of precision. However, they can fail to measure a
+business unit’s total contribution to ﬁrm performance.
+Managers are reluctant to spend time and resources on interrelationship
+projects if they are uncertain to receive credit for them. They see no point in
+participating in interrelationships in which they must bear compromise
+costs or, worse yet, get less beneﬁt from the interrelationship than a sister
+unit. In Matsushita, for example, cross-divisional product development
+teams have encountered some problems of this type. Participants do not
+know if the new products will contribute to their division’s proﬁts and
+therefore are reluctant to contribute to their development.
+Measurement Biases. In some ﬁrms, there are biases in the way
+revenues, costs, or assets are measured and allocated that prompt business
+units to ignore or resist interrelationships. For example, investing in assets
+or making acquisitions is capitalized, while the cost of pursuing an
+interrelationship must be expensed. Business units that are measured on
+return on sales will tend to invest in assets rather than diminish their
+proﬁtability, while business units with narrowly conceived revenue growth
+objectives will be loath to split revenues with other units on an
+interrelationship project. They will prefer instead to incur the cost of
+contracting with an outside ﬁrm.
+DIFFERING BUSINESS UNIT CIRCUMSTANCES
+Interrelationships are difﬁcult to achieve where business units have
+different organizational circumstances. Such differences raise problems of
+communication, and cause business units to perceive sister units as “other
+companies.” Some of the most common organizational differences among
+business units that impede interrelationships include:
+Strong Business Unit Identities. Pursuing interrelationships is difﬁcult
+where business units have distinct histories and identities apart from the
+parent ﬁrm’s. For example, business units may have originally been separate
+companies that were acquired, or have long been freestanding units with
+their own names. In such cases, managers and staff often identify more with
+the business unit than with the parent. The problem is exacerbated by past
+
+
+success. If business units have been industry leaders or pioneers, for
+example, they often resist any move toward joint efforts with sister units.
+Differing Cultures. Cooperation can prove very difﬁcult to achieve if
+business units have differing cultures. Relevant cultural differences include
+such things as norms of interpersonal behavior, terminology and basic
+business philosophy. Such differences can inhibit communication and make
+working relationships hard to negotiate and maintain. American Express’s
+banking subsidiary has struggled to integrate with the Swiss based Trade
+Development Bank it acquired, for example, because of different styles and
+language barriers, among other reasons.
+Corporate and business unit managers are also sometimes uneasy about
+interrelationships between culturally distinct units on the grounds that they
+will blur the differences among them. They see interrelationships as threats
+to the distinct cultures that made the business units successful in the ﬁrst
+place. This issue is particularly likely to arise in business units that were
+acquired, or in a diversiﬁed ﬁrm with a strong tradition of autonomy. For
+example, the senior management of Brunswick has expressed such fears.5
+Brunswick operates in a variety of leisure-oriented industries and has
+acquired a number of well-known companies. It is hesitant to integrate them
+for fear of disrupting their cultures.
+Management Differences. If the proﬁle, skills and style of managers
+differ among business units, forging interrelationships may prove difﬁcult.
+Contacts may be uncomfortable or strained, making agreements harder to
+reach. Management differences that may inhibit interrelationships include
+differences in age, titles, educational background, technical skills, and
+tenure in ofﬁce.
+Differing Procedures. Business units may have different operating
+procedures that make interrelationships difﬁcult to achieve, including
+different accounting and information systems, approval limits, and union
+agreements. Procedural differences create friction and confusion when units
+attempt to work together, and add extra costs of coordination.
+
+
+Geographic Separation. Business units separated geographically can
+have difﬁculty achieving the ongoing coordination required to make
+interrelationships a success. Distance reduces the ongoing interchange so
+necessary to work out problems.
+FEAR OF TAMPERING WITH DECENTRALIZATION
+The impediments to achieving interrelationships discussed so far stem
+largely from the orientation and motivation of business unit managers.
+Corporate management may be equally hesitant to tamper with
+decentralization. A number of common reasons for this include:
+Dampening Entrepreneurship. Corporate management may fear that
+anything that tampers with decentralization will undermine the
+entrepreneurial spirit in business units.6 No fundamental contradiction
+exists between entrepreneurship and interrelationships, however, unless one
+equates entrepreneurship narrowly with independence. While there is some
+justiﬁcation for extreme decentralization in startup ventures, business unit
+managers can often create the greatest competitive advantage through
+entrepreneurship 
+that 
+identiﬁes 
+and 
+exploits 
+interrelationships.
+Nevertheless, the view that pure decentralization provides the greatest
+entrepreneurial incentives remains deeply ingrained in many ﬁrms. Business
+unit managers often raise reduced incentives as an argument for resisting
+interrelationships as well.
+Desire for a Consistent Organization. Many diversiﬁed ﬁrms have
+tended to organize all business units identically. This may simplify
+management’s task in some ways, but it is inconsistent with
+interrelationships. Interrelationships imply that different business units (and
+groups of business units) should have varying degrees of autonomy and
+control over different activities, as well as different measures of
+performance and objectives.
+Difﬁculty of Measuring Performance. Many ﬁrms base incentives solely
+on objective, quantiﬁable criteria such as growth and proﬁtability.
+Interrelationships almost inevitably introduce some subjectivity into
+
+
+performance measurement, however, because business unit contributions to
+the ﬁrm as a whole are often hard to quantify precisely. In some ﬁrms,
+however, subjectivity is considered undesirable.
+Fear of Providing “Excuses.” Interrelationships almost inevitably cloud
+the clean lines of authority and responsibility in business units. Hence top
+management 
+may 
+fear 
+that 
+business 
+unit 
+managers 
+will 
+use
+interrelationships as excuses to justify poor performance.
+Interrelationships and Equity
+Many 
+of 
+these 
+organizational 
+impediments 
+to 
+achieving
+interrelationships 
+are 
+based 
+on 
+the 
+perceived 
+conﬂict 
+between
+interrelationships and equity. Equity, or fairness, is a principle embraced by
+virtually all ﬁrms. It is part of the fabric of an organization that allows
+conﬂicts to be reconciled and underpins the motivation of managers. Yet
+interrelationships can conﬂict with equity in the minds of some managers.
+Interrelationships can yield differing beneﬁts to the business units involved.
+Interrelationships also imply that managers should have different degrees of
+autonomy, differing objectives, and differing bases for incentives. Managers
+may complain that they are “carrying” other business units, and that rewards
+are given to other managers whose performance is not as good.
+Many diversiﬁed ﬁrms have explicitly or implicitly adopted a narrow
+view of equity that stems from their decentralized organizational structures.
+Equity is deﬁned to mean treating every business unit the same and
+avoiding any subjectivity in decision making—particularly in such sensitive
+areas as incentives or transfer prices. Equity is further deﬁned as meaning
+that all business units must agree on interrelationships.
+A narrow view of equity is not only logically incorrect but makes
+interrelationships achievable only in those rare cases where all business
+units beneﬁt equally or the interrelationship can be achieved through arm’s-
+length dealings with little loss of autonomy. A more constructive view of
+equity, which emphasizes fairness rather than sameness in the ways in
+which top management treat business units, is a prerequisite to successfully
+achieving interrelationships. Creating such a view of equity, as well as
+
+
+building allegiance to a higher corporate purpose, is an essential task of
+horizontal organization.
+Differences in Impediments among Firms
+The extent of impediments to achieving interrelationships differs widely
+among ﬁrms, as a result of their histories, mix of businesses, organizational
+structures, 
+and 
+policies. 
+The 
+greatest 
+difﬁculties 
+in 
+achieving
+interrelationships tend to occur under the following conditions:
+• Highly decentralized ﬁrms with many small business units
+• Firms with a strong tradition of autonomy
+• Firms built through the acquisition of independent companies
+• Firms that have made little or no effort to create a corporate identity
+• Firms with little or no history of interrelationships, or who have had a
+bad experience in attempting to pursue an interrelationship
+Organizational Mechanisms for Achieving Interrelationships
+A purely vertical corporate organizational structure is insufﬁcient to
+assure that beneﬁcial interrelationships will be recognized and achieved.
+The impediments to achieving interrelationships not only get in the way of
+interrelationships at the working level, but also provide business unit
+managers with a set of arguments with which to counter efforts by group or
+corporate management to champion important interrelationships. Business
+unit managers will also clearly see the compromises required to achieve
+interrelationships, and may be suspicious of the beneﬁts. Senior
+management may be ill equipped to counter the resistance without an in-
+depth knowledge of the industries involved.
+Companies tend to react in one of two broad ways to these
+organizational 
+impediments 
+to 
+achieving 
+interrelationships. 
+Some
+companies conclude that, despite their strategic logic, interrelationships can
+never work. After encountering such problems, business unit managers give
+up on working with sister units and resolve instead to proceed
+independently. Corporate management becomes frustrated with resolving
+disputes and dealing with unclear accountability, and opts for extreme
+
+
+decentralization. In other companies, however, there is recognition that the
+beneﬁts of interrelationships are so important that the traditional ways of
+managing diversity must change to accomodate them.
+Interrelationships will not occur by accident or by ﬁat. Positive
+organizational mechanisms must be put in place to encourage business unit
+managers to pursue interrelationships and to ease the inherent coordination
+and communication difﬁculties in making them work. I term organizational
+practices 
+that 
+facilitate 
+interrelationships 
+horizontal 
+organization.
+Horizontal corporate organization links business units together within a
+vertical structure. A balance must be struck between the vertical and
+horizontal elements in a diversiﬁed ﬁrm if the potential of interrelationships
+is to be unleashed.
+Horizontal organization can be divided into four broad categories:
+•  Horizontal structure. Organizational devices that cut across business
+unit lines, such as grouping of business units, partial centralization,
+interdivisional task forces, and market or channel focus committees.
+•  Horizontal systems. Management systems with a cross business unit
+dimension, in areas such as planning, control, incentives and capital
+budgeting.
+•  Horizontal human resource practices. Human resource practices that
+facilitate business unit cooperation, such as cross-business unit job
+rotation, management forums and training.
+•  Horizontal conﬂict resolution processes. Management processes that
+resolve conﬂicts among business units. Such processes can be usefully
+distinguished from horizontal structure and systems, and relate more to
+the style of managing a ﬁrm.
+Organizational structure and systems frequently have both a horizontal
+and vertical dimension. Grouping business units, for example, can be a
+purely vertical device to reduce the span of control of top management or
+can play a major role in horizontal strategy, depending on how groups are
+managed. Similarly, corporate incentives systems can be entirely vertical or
+contain provisions that encourage cross-business unit cooperation. I will
+concentrate on the horizontal aspects of organizational practices,
+recognizing that the horizontal and vertical aspects will interact. The issues
+
+
+raised by vertical aspects of organizational structure and systems in
+diversiﬁed ﬁrms have been the subject of considerable study.7
+No single device for encouraging and facilitating cooperation among
+business units is sufﬁcient to ensure that all strategically beneﬁcial
+interrelationships are achieved. Instead, a variety of practices that reinforce
+each other are required. Firms with successful horizontal strategies tend to
+employ an array of practices simultaneously to gain the maximum beneﬁts
+from interrelationships. The array of appropriate practices can differ for
+each business unit, because each will have its own pattern of
+interrelationships with other units with a different balance of beneﬁts and
+costs.
+Corporate management also has a powerful role in reinforcing horizontal
+organization through its behavior, the way in which it articulates corporate
+purpose, and its choice of modes of entry into new businesses. After
+describing the use of horizontal organization in achieving interrelationships,
+I will return to the role of top management.
+Horizontal Structure
+Horizontal structure refers to temporary or permanent organizational
+entities that cut across business unit boundaries, supplementing the business
+unit structure. A variety of such entities, which are not mutually exclusive,
+may be employed to facilitate interrelationships.
+GROUPING BUSINESS UNITS
+Perhaps the most common form of horizontal structure is the group or
+sector, in which a number of business units report to a single executive.
+Most group and sector structures were originally created to reduce the
+CEO’s span of control, or to train and evaluate managers in managing
+diversity as a stepping stone to corporate management. Groups and sectors
+have long played an important role in the vertical organization.
+Group and sector executives have tended to play a relatively passive role
+in strategy formulation, however. They review and approve business unit
+strategies and coach business unit managers, rather than initiate strategy.
+Yet the group or sector executive should have a vital role in identifying,
+
+
+pursuing, and managing interrelationships, provided the boundaries of the
+group or sector are properly drawn and the role of the group or sector
+executive is properly constituted.
+The grouping of business units into groups and sectors should reﬂect
+strategically important interrelationships. The boundaries of groups and
+sectors are often difﬁcult to draw, however, because there are multiple
+patterns of interrelationships among business units. In General Foods, for
+example, some business units have common buyers and channels while
+different but overlapping groups of business units are related by product
+form and production technology (e.g., frozen food). Where there are several
+possible bases for grouping business units reﬂecting different types of
+interrelationships, a ﬁrm must choose one. Interrelationships are frequently
+not equally signiﬁcant for all the business units involved, making the
+selection of a basis for grouping all the more difﬁcult.
+While grouping business units is never an exact science, the principle is
+clear. Groups (and sectors) should be constructed around the
+interrelationships that are most signiﬁcant for competitive advantage,
+growing out of a systematic look at all the interrelationships within the ﬁrm.
+For example, if a large percentage of cost or the most signiﬁcant sources of
+differentiation reside in product positioning, advertising, and distribution,
+groups should be formed around market interrelationships. In a consumer
+package goods company, for example, it may be more appropriate to group
+businesses by buyer or channel than to organize around manufacturing
+technology. In a high-technology company with a differentiation strategy,
+conversely, it may make more sense to group business units around
+technologies, since exploiting technological interrelationships will be a key
+to competitive advantage. Tangible interrelationships should generally be
+the primary basis for grouping, with intangible interrelationships serving as
+the basis if tangible interrelationships are minor or are exhausted. For
+example, groups may link business units with strong tangible
+interrelationships, while sectors may be based on weaker tangible
+interrelationships and/or intangible interrelationships.
+Business units should be grouped around the most strategically
+important interrelationships because grouping is perhaps the single most
+powerful device for focusing attention on and reinforcing interrelationships,
+if groups are managed accordingly. Where all business units report to a
+
+
+single group (or sector) executive, coordination, the management of shared
+activities, conﬂict resolution, transfer or know-how, and setting of the
+appropriate objectives and incentives are all facilitated.
+The principle that business units should be grouped around the most
+important interrelationship does not imply that all groups in a diversiﬁed
+ﬁrm should be based on the same type of interrelationship. All groups need
+not and should not be market-based, production-based, or technology-
+based, though ﬁrms sometimes have a tendency to use the same basis for
+grouping all their business units. Unless one form of interrelationship is
+dominant throughout an entire ﬁrm, different groups should be based on
+different types of interrelationships.
+The strength of interrelationships among the business units in a group
+may well vary from group to group, depending on a ﬁrm’s particular mix of
+businesses. Some groups may have strongly interrelated business units,
+while others may be characterized by few if any interrelationships and exist
+largely to reduce span-of-control. The way groups are managed should
+reﬂect these differences. Within a group, moreover, the interrelationship
+present will vary in strategic importance for the different business units.
+Business units that perceive few beneﬁts of being in the group will have to
+be managed differently from others since they will have the greatest
+tendency to choose strategies that are inconsistent with strengthening
+interrelationships in the group. The way their performance is measured and
+their incentives may well have to be modiﬁed. It is important, however, that
+such business units are not forced to compromise their strategies so greatly
+as to undermine their relative competitive position. Managing any
+interrelationship is always a process of balancing the overall competitive
+advantage gained against the cost, using the tools described in Chapter 9.
+ROLE OF THE GROUP EXECUTIVE8
+Historically, the role of many group executives has sometimes been
+ambiguous and uncomfortable.9 Business unit managers frequently are the
+strategists in diversiﬁed ﬁrms, while group executives act as reviewers.
+Many group executives feel, as a result, that they receive much blame but
+little credit for the group’s performance.
+
+
+Identifying and achieving interrelationships both within and outside the
+group may well be the single most important task of a group executive. In a
+group with signiﬁcant interrelationships, the group executive must become
+the chief strategic ofﬁcer of the group. What a “group strategy” is is
+ambiguous in many diversiﬁed ﬁrms. Group executives have had the
+tendency to behave as if they were mini-portfolio managers, balancing the
+capital needs of different business units in the group. Where there are
+interrelationships, this conception of the group executive’s role is
+fundamentally ﬂawed. Group strategy must be more than the summation of
+independently proposed business unit strategies. It must include a horizontal
+strategy that encompasses all the business units. A group strategy does not
+replace the need for business unit strategies, but integrates them.
+In order to achieve interrelationships, the group executive must have
+ultimate authority to modify business units’ strategies. Furthermore, the
+group executive must be willing to initiate horizontal strategy as well as
+respond to business unit proposals. For all the reasons described earlier,
+business units acting independently will rarely propose the strategies
+necessary to reap the beneﬁts of interrelationships, or risk compromising
+their objectives for the beneﬁt of the group. To play the role of chief
+strategist, a group executive will typically require the capacity to identify
+and analyze interrelationships within and outside the group and to analyze
+multipoint competitors. An in-depth knowledge of the businesses in the
+group will be necessary. The role of the group executive as a horizontal
+strategist must also be reinforced by other horizontal devices that orient
+business unit managers toward the goal of achieving interrelationships.
+Partial centralization of key value activities, control over part of incentives,
+and a role in recruiting will all reinforce the ability of the group executive to
+build a true horizontal strategy.10
+PARTIAL CENTRALIZATION
+Another type of horizontal structure is partial centralization. It may be
+appropriate 
+to 
+centralize 
+value 
+activities 
+because 
+of 
+important
+interrelationships, while still maintaining the proﬁt responsibility of
+business units. Centralized value activities may also sometimes serve more
+than one group.
+
+
+Partial centralization is relatively common in activities such as
+procurement, sales, and logistical systems. In General Foods, for example,
+manufacturing, procurement, and logistics are quite centralized across a
+range of divisions that span groups, while product development and
+marketing functions all report directly to division managers. McGraw-Hill
+has a shared order fulﬁllment system that serves many book, magazine, and
+other business units, while Castle and Cooke has a shared marketing and
+distribution system for many types of fresh foods.
+Shared activities can have a variety of reporting relationships. One
+business unit can have formal control while others have a dotted-line
+relationship. Alternatively, shared activities can report to several business
+units, or shared activities can report directly to a group or corporate
+executive. It is desirable that centralized activities report to a line executive
+in order to maintain a marketplace orientation. The responsible executive
+must take an active role in managing the coordination between the
+centralized value activity and the business units, mindful of the issues raised
+in this and the previous chapter. Such a management provides a contrast to
+the passive, arm’s-length approach sometimes employed in guiding
+relations between business units and shared activities.
+Success in partial centralization requires creating the proper structure
+and incentives for business units to manage an activity themselves, or
+assigning the activity to a line executive with authority over the involved
+business units. Success also requires an awareness on the part of all
+concerned that the interrelationship is valuable to the ﬁrm, as well as the
+creation of formal and informal coordinating mechanisms between
+centralized activities and involved business units. Joint planning for
+centralized activities that involve the affected business units is beneﬁcial, as
+is regular formal contact between activity managers and business units.
+OTHER CROSS-BUSINESS UNIT ORGANIZATIONAL MECHANISMS
+Grouping of business units and partial centralization of value activities
+are 
+the 
+strongest 
+forms 
+of 
+organizational 
+impetus 
+to 
+achieve
+interrelationships. Group structure should be designed to capture the most
+important interrelationship. It may not encompass all interrelationships,
+however, because secondary interrelationships may be present that go
+
+
+outside the group but that also enhance competitive advantage. Thus
+temporary and permanent cross-business unit mechanisms that provide a
+means of achieving interrelationships not captured in the primary
+organizational structure are an important part of horizontal structure. Such
+mechanisms can serve not only as ways of initiating and implementing
+interrelationship projects, but also as mechanisms for educating managers
+about the importance of interrelationships.11 They should not be
+misconstrued as a “matrix” organization, but rather as devices to facilitate
+cross business unit cooperation.
+Some of the most important organizational devices to serve this purpose
+are as follows:
+1. Market focus committees. Where a ﬁrm is organized around products
+or 
+technologies, 
+there 
+are 
+often 
+important 
+though 
+secondary
+interrelationships around markets. McGraw-Hill, for example, has
+established its primary organization around product forms such as books,
+magazines, and data bases. However, there are a number of markets, such as
+construction and ﬁnancial services, into which many of the business units
+sell. McGraw-Hill can harness these interrelationships if it can attack the
+markets in a coordinated way, while exploiting the interrelationships around
+products through the primary organizational structure.
+A ﬁrm can gain market interrelationships through what might be termed
+market focus committees. To form such committees, a ﬁrm identiﬁes the
+critical markets where potential interrelationships exist and designates an
+executive to be responsible for overseeing the ﬁrm’s efforts in each such
+market. A standing committee is constituted consisting of senior managers
+of business units serving or potentially serving the market, which meets
+regularly to supervise market research, identify and plan for the
+achievement of interrelationships in existing product areas, and identify
+gaps that need to be ﬁlled to strengthen the ﬁrm’s overall position in the
+market. Staff resources are drawn in to perform the necessary analysis.
+Speciﬁc interrelationship projects are then assigned to line executives
+within the affected business units. While such committees can be time
+consuming, competitive advantage will be lost without them to competitors
+who can organize to achieve interrelationships.
+
+
+Market focus committees can also serve as an interim step in shifting
+from a product- or technology-based organization to a market-based
+organization in a diversiﬁed ﬁrm, if market interrelationships become the
+most strategically important. If a ﬁrm shifts to a market-based primary
+organization, however, it should probably establish some organizational
+mechanisms to reinforce the production or technological interrelationships
+present.
+2. Technology, channel and other interrelationship committees. Standing
+committees or working groups involving a number of business units can
+also be created around other important interrelationships, in products (e.g.
+ofﬁce 
+automation), 
+production, 
+procurement, 
+technologies, 
+shared
+distribution channels, logistical systems, or order processing systems. Their
+function is analogous to market focus committees, and the principles for
+organizing them are similar. A senior line executive must accept overall
+responsibility for the effort, and regular progress reviews are required so
+that the effort will be taken seriously.
+3. Temporary Task Forces. While important interrelationships that cut
+across the primary organization structure may well require standing
+committees 
+to 
+manage 
+their 
+ongoing 
+implementation, 
+some
+interrelationships may be best exploited through temporary cross-business
+unit task forces. Temporary task forces are a very common mechanism to
+achieve the transfer of know-how involved in intangible interrelationships
+and some tangible interrelationships can be implemented this way. In
+addition, temporary task forces can be a device for studying
+interrelationships and recommending permanent ways to achieve them,
+whether through partial centralization, a standing committee, or a one-time
+change in the way business units operate.
+Temporary cross-business unit task forces may address numerous types
+of interrelationships. General Motors, for example, forms project centers to
+manage critical projects that cut across business unit lines. Staff members
+are completely detached from existing organizational units to participate for
+periods of up to several years. An example of a less formal temporary
+organization is McGraw-Hill’s Information Resources Task Force, which
+studied the management of computing capacity across the corporation. This
+
+
+temporary organization used part-time staff drawn from divisions,
+supported by staff from the corporate planning department. Another
+example is Sears, that is now using study groups to search for
+interrelationships among its businesses and to pursue interrelationships in
+ﬁnancial services.
+GROUP OR CORPORATE INTERRELATIONSHIP CHAMPIONS
+A ﬁnal structural device to facilitate interrelationships is the appointment
+of executives at the group, sector, or corporate level to act as champions for
+interrelationship. While staff roles such as this have fallen out of favor in
+some ﬁrms, they can contribute signiﬁcantly to managing interrelationships.
+Staff executives can take responsibility for identifying key interrelationships
+in their areas, and then work with the affected business units to assist in
+achieving them. For example, a marketing staff executive can coordinate the
+procurement of advertising space to maximize bargaining leverage, or
+coordinate plans vis-à-vis a shared distribution channel. Staff executives can
+also assist in the management of other mechanisms to harness
+interrelationships such as committees and task forces of business unit
+managers.
+MANAGING CROSS-BUSINESS UNIT ORGANIZATIONS
+Cross-business unit organizations are difﬁcult to manage, particularly in
+U.S. ﬁrms. Because the principle of autonomy is so ingrained and because
+committees are often viewed as a “waste of time” rather than an integral
+part of the management function, careful design of cross-business unit
+organizations is necessary if they are to be accepted.
+A cross-business unit organization must report to a senior line executive,
+in order to provide it with the necessary inﬂuence within the ﬁrm and to
+ensure that its efforts remain focused on important issues. The cross-
+business unit organization must also be headed by a credible executive who
+is not too closely identiﬁed with a particular point of view, and who is held
+responsible for results. The organization must result in tangible action, or it
+will not be taken seriously. Top management should assign line executives
+from each affected business unit to the cross-business unit organization to
+
+
+help ensure that plans for achieving interrelationships will be implemented
+once developed. The representatives assigned should be senior enough to be
+able to inﬂuence their units to action. Some staff capability must be made
+available to cross-business unit organizations, or members may be called on
+to contribute personnel to allow meaningful analysis and thoughtful
+recommendations. Finally, cross-business unit organizations must be
+supplemented by other types of horizontal organization to help overcome
+the other impediments to interrelationships. In a ﬁrm with signiﬁcant
+interrelationships, simply overcoming the cynicism toward cross-business
+committees will yield a major competitive advantage.
+Horizontal Systems
+A second aspect of horizontal organization is horizontal systems—
+management systems that reinforce coordination and linkages among
+business units. While most management systems have a strong vertical
+element, they can also be designed to support the achievement of
+interrelationships. A number of systems have particular signiﬁcance for
+achieving interrelationships.
+Horizontal Strategic Planning. Most diversiﬁed ﬁrms employ vertical
+strategic planning systems. Business units prepare strategic plans and
+submit them to senior management for approval. When there are important
+interrelationships, however, a horizontal component must be overlaid on the
+vertical strategic planning process to make planning truly meaningful.
+There are a number of possible approaches for introducing a horizontal
+dimension into strategic planning. First, the corporate planning department
+can accept responsibility for identifying interrelationships and initiating
+steps to exploit them. Second, group and sector executives can be given
+responsibility for horizontal strategy and the content of the group plan
+should concentrate on interrelationships. A third approach is to add an
+interrelationships section to business unit plans. Each business unit is asked
+to identify important interrelationships it has with other units inside and
+outside its group, and to develop action plans to exploit important ones. A
+
+
+ﬁnal approach is to require separate, joint strategic plans from business
+units involved in important interrelationships.
+NEC Corporation has opted for the ﬁnal approach, and has adopted two
+planning systems. In addition to a normal business unit planning system, it
+has established the CBP (Corporate Business Plan) system in which
+separate strategic plans are prepared for critical investments or programs
+that cut across business unit lines. The system forces business unit
+managers involved in an interrelationship to meet and agree on a strategic
+plan for dealing with it over the long term. In effect, this system requires a
+special plan for important horizontal issues.
+The various approaches to adding a horizontal component to planning
+are not mutually exclusive. Usually, several should be pursued
+simultaneously. At the very least, mechanisms for horizontal planning must
+exist at both the group and corporate levels, since the horizontal strategy
+issues at these levels differ. No business unit will have the perspective to
+identify all interrelationships or develop plans to achieve them.
+Horizontal Procedures. Interrelationships are facilitated by the presence
+of procedures governing cross-business unit activities. Many ﬁrms have
+transfer pricing policies, and some ﬁrms have policies governing in-house
+versus external purchasing. Relatively few ﬁrms, however, have guidelines
+for issues such as revenue or cost sharing on joint projects, or capital
+budgeting procedures for joint projects. Without such guidelines, pursuing
+interrelationship will involve a great deal of administrative turmoil and
+protracted 
+negotiations. 
+General 
+guidelines 
+can 
+greatly 
+facilitate
+interrelationships, limiting incentives for business units to seek outside
+coalitions or avoid internal interrelationships.
+Transfer pricing and purchasing rules often reﬂect a misunderstanding of
+interrelationships. Simple transfer pricing rules, based on market prices,
+treat business units as stand-alone entities in arm’s-length relationships with
+each other. This negates the logic underlying interrelationships, no matter
+how administratively appealing it may be. Interrelationships imply that
+transfer pricing and other decisions should be designed to improve the
+ﬁrm’s overall position and not the ﬁnancial results of individual business
+units.12 For example, Perkin-Elmer has a system in which the selling
+division sells at market price, while the buying division buys at cost. Both
+
+
+have the incentive to do business, while the buying division sets prices
+based on the true cost to the corporation.13 Business unit goals also may
+need to be adjusted in order to make them consistent with transfer pricing
+rules. Business units that transfer at cost, for example, should not be held to
+ﬁrmwide proﬁtability targets.
+Purchasing rules are another area where administrative simplicity often
+outweighs strategic logic. Firms defeat the purpose if they adopt the hands-
+off view that units can buy from the “best” source, external or internal.
+Most ﬁrms that are successful at achieving interrelationships treat in-house
+purchasing as the assumption, and business units that supply sister units
+view them as their most important buyers. Senior management should
+clearly communicate this expectation throughout the ﬁrm, and ensure that
+business units who treat their sister units as unimportant buyers or suppliers
+are not rewarded.
+Horizontal Incentives. The incentive system must recognize that the ﬁrm
+can gain from interrelationships, and should reward business unit and group
+managers for achieving them instead of encouraging them to concentrate on
+their individual results. It is also necessary to remove any biases in
+measurement that favor external or go-it-alone investments instead of joint
+efforts with other business units. In ﬁrms with important interrelationships,
+the incentive system should reward business units and their managers to
+some extent on group and corporate results as well as on business unit
+results. In nearly every ﬁrm I have observed that is successful at achieving
+interrelationships, compensation plans emphasize group or corporate
+performance. These ﬁrms have proven that business unit managers do not
+need to have all their compensation based on business unit results in order
+to be highly motivated. Tying compensation solely to business unit results
+reﬂects a simplistic view of motivation. Instead, business unit managements
+can and should be made part of the ﬁrm’s general management team
+through a broader basis of compensation.14 Performance measurement
+should differ for each unit. Performance targets should reﬂect the differing
+balance between individual business units’ results and their broader
+contribution to the ﬁrm through interrelationships. Senior management must
+accept the responsibility to convince all its business unit managers that this
+is fair and reﬂects a higher corporate purpose.
+
+
+Incentives should contain a subjective component in ﬁrms with important
+interrelationships. A business unit’s contribution to the ﬁrm cannot usually
+be measured quantitatively. Any one quantitative standard will not be able
+to weigh all factors and may indirectly bias behavior against a ﬁrm’s
+interests. Instead, group and corporate management must be prepared to
+judge a business unit’s contribution to group or corporate strategy. While
+ﬁrms have traditionally avoided subjective incentives, top management
+must communicate to groups and business units a need for them and a sense
+of fairness in rewarding contributions to the ﬁrm as a whole.15
+Horizontal Human Resource Practices
+A third aspect of horizontal organization is human resource policies.
+These are policies for hiring, training, and managing human resources that
+facilitate cross-business unit collaboration, as well as successful
+relationships between business units and centralized functions. As with
+horizontal systems, horizontal human resource policies should apply to an
+entire ﬁrm or to those parts with signiﬁcant interrelationships.
+Personnel Rotation among Business Units. The rotation of personnel
+among business units facilitates the achievement of interrelationships in a
+number of ways. It helps to reduce cultural and procedural differences
+among business units, creates personal relationships that facilitate joint
+projects, 
+educates 
+managers 
+about 
+areas 
+of 
+opportunity 
+for
+interrelationships with other units, and promotes a corporate (or group)
+identity in addition to the business unit identity.16 Though there may be
+some cost in terms of training time and continuity when rotating personnel,
+the long-term beneﬁts can be signiﬁcant not only for interrelationships but
+also in retarding the onset of conventional wisdom in business units. Firms
+such as DuPont, General Electric, and Citicorp have active rotation
+programs that seem to have facilitated interrelationships.
+Some Firmwide Role in Hiring and Training. A ﬁrmwide (or group) role
+in hiring and training can help build a corporate identity and an awareness
+of the overall interests of the ﬁrm. Corporate orientation and training
+programs can educate managers about other business units, and encourage
+
+
+personal relationships among incoming managers who will eventually be
+dispersed to different units. Ongoing management development programs
+can also facilitate interrelationships. Programs that bring managers from
+different units together not only can have an educational function, but also
+develop understanding and encourage personal relationships. Such a
+corporate role in orientation and training need not reduce the ability of
+business units to hire personnel that ﬁt their needs.
+Promotion from Within. Promotion from within tends to reinforce a
+corporate perspective, and can lead to managers adopting a longer time
+horizon. Both of these effects can facilitate interrelationships. Home-grown
+managers not only tend to identify more strongly with a ﬁrm, but are also
+more likely to develop a network of personal relationships within the ﬁrm
+that facilitates horizontal collaboration. While there are risks of reinforcing
+conventional wisdom, a general preference to promote from within (though
+not necessarily from within the same business unit) can be important to
+ﬁrms with strong interrelationships.
+Cross-business Unit Forums and Meetings. Carefully designed meetings
+that bring managers from different business units together can facilitate the
+discovery and achievement of interrelationships. It is particularly effective
+in such meetings to ask managers to brief their peers about their respective
+businesses, and to encourage group discussions of issues that cut across unit
+lines.
+Education on Interrelationship Concepts. It is vital that key managers
+understand the strategic logic of interrelationships and have a language
+system for discussing and an analytical framework for identifying them in
+their own businesses. This education can be part of management
+development programs, companywide meetings, and other forums. While
+top management often understand the concept of interrelationships, middle
+managers frequently do not and changes in their behavior will make or
+break the achievement of interrelationships in practice.
+Horizontal Conﬂict Resolution Processes
+
+
+The fourth aspect of horizontal organization is management processes
+for resolving conﬂict among business units. Any successful organizational
+structure combines formal structures and systems with ongoing processes
+through which managers interact. While less tangible than structure and
+systems, these processes can be just as important to success, particularly
+where responsibilities are not clear and frequent interaction among
+organizational units is necessary.
+Achieving interrelationships nearly always involves the sharing of
+authority, the need for frequent coordination, and subjective performance
+evaluation. Hence processes for resolving conﬂict among business units are
+vitally important to achieving interrelationships. The processes themselves
+vary greatly from ﬁrm to ﬁrm, though senior management always plays an
+important role by setting the tone for how business units should interact and
+by acting as ﬁnal arbiters of any disputes. What is important is not the exact
+form of the process in a ﬁrm, but the existence of some process that is
+managed by group, sector, and corporate management which is perceived as
+fair.
+The Corporate Role in Facilitating Interrelationships
+A purely bottom-up approach to interrelationships rarely succeeds. Chief
+executive ofﬁcers can have a major impact on the achievement of
+interrelationships through their behavior, as can other line executives above
+the business unit level. There are many opportunities available to senior
+management to deﬁne a larger corporate purpose, to stress the importance
+of interrelationships, and to discourage parochial behavior by business unit,
+group, and sector managers. A strong set of ﬁrmwide values and a strong
+corporate identity are vital links in reducing cynicism toward committees,
+resolving conﬂicts, and so on.
+One important way to reinforce interrelationships is through articulating
+a unifying theme. A unifying theme at the corporate, sector, and group
+levels that stresses interrelationships can be a powerful tool for motivating
+managers to ﬁnd and implement them. It should be prominently and
+repeatedly stressed by senior management both externally and internally,
+and at all levels of the company. NEC Corporation, for example, has the
+
+
+theme of “C&C” (computers and communications), which symbolizes the
+converging of electronics and communications technology into integrated
+C&C systems. Going hand in hand with the theme is a diagram that vividly
+displays the merging of the technologies. This theme is a constant one in
+top management speeches, annual report copy, and internal discussions.
+NEC’s managers at all levels understand the theme, and it has reinforced the
+search for interrelationships by business units.
+Interrelationships are also facilitated if the corporate identity is displayed
+prominently in each business unit on logos, signs, and stationery. This does
+not imply the abandonment of valuable business unit trade names. Instead,
+it suggests that a ﬁrm should develop both its corporate identity as well as
+those of business units, within the ﬁrm and outside. This not only affects
+management’s view of themselves, but can directly facilitate the
+achievement of market interrelationships by making buyers more aware of
+the connection among business units.
+Interrelationships and the Mode of Diversiﬁcation
+The achievement of interrelationships is facilitated by developing new
+businesses internally rather than acquiring them. Internal development is
+typically based on interrelationships, and organically grown units are likely
+to have strategies consistent with other parts of the ﬁrm. Shared value
+activities are more likely to be designed for sharing. Acquisitions, on the
+other hand, require that interrelationships be forged with a heretofore
+separate organization, with all the associated impediments. Acquisitions
+also raise the odds that compromises in strategy will be necessary to pursue
+interrelationship opportunities.17 Firms such as IBM, Kodak, GE, DuPont
+and 
+Procter 
+& 
+Gamble, 
+which 
+have 
+successfully 
+exploited
+interrelationships, have traditions of creating many businesses internally.
+The difﬁculties posed by acquisitions for achieving interrelationships do
+not imply that ﬁrms should never make acquisitions. Rather, they suggest
+that ﬁrms apply a rigorous test in choosing between acquisitions and
+internal entry, and that horizontal strategy issues be prominent in the search
+for acquisitions. The choice of acquisition should reﬂect the added difﬁculty
+of achieving interrelationships with acquired ﬁrms. Many ﬁrms have chosen
+
+
+to acquire to minimize start-up losses and to have a quicker impact on
+revenues, sacriﬁcing interrelationships in the process that were important to
+the ﬁrm’s long term strategy.
+If acquisition emerges as the best way to enter a new business, horizontal
+strategy issues should not be ignored. Unless an acquisition is in an
+unrelated ﬁeld, the ability to integrate the acquired ﬁrm in a way that
+achieves interrelationships must be weighed. Many acquirers almost
+guarantee that interrelationships will not occur by promising complete
+autonomy to the management of prospective acquisitions. For example, in
+Transamerica’s purchase of Fred S. James Company, an insurance broker,
+Transamerica pledged that the James Company would be independent and
+report directly to the CEO instead of through Transamerica’s insurance
+group. Despite the fact that the James acquisition offered great possibilities
+for achieving interrelationships, achieving them has been made substantially
+more difﬁcult, at least for a time.
+Managing Horizontal Organization
+Achieving interrelationships is a function of instituting an array of
+horizontal practices. As many companies have discovered, organizational
+structure alone is not sufﬁcient. Merely grouping related businesses together
+will not guarantee the exploitation of interrelationships. Structure must be
+reinforced by group and sector executives who understand their roles as
+horizontal strategists, as well as appropriate management systems and
+human resource policies. The array of horizontal practices must not be
+uniform across the ﬁrm, but tailored to reﬂect the patterns of
+interrelationships that are present. Some business units are more connected
+than others, and hence the balance between vertical and horizontal
+organization should vary. Top management must also reinforce
+interrelationships by sending clear signals about their importance, and
+promoting a culture where the corporation has an identity that transcends
+and reinforces that of business units.
+Achieving interrelationships usually requires the creation of some shared
+values within a ﬁrm. Managers must perceive that collaboration with other
+business units is important and will be rewarded, and that senior
+
+
+management will act fairly in measuring the performance of the individual
+units involved. While interrelationships can sometimes be imposed,
+interrelationships that are imposed on business units will rarely be so strong
+or durable as those based on common understanding and consensus.
+Instituting horizontal organizational mechanisms throughout the ﬁrm is
+usually necessary for this attitude to occur. The process takes time, and
+cannot be expected to occur just because the potential for interrelationships
+is discovered.
+Promising Examples
+American Express provides an example of a ﬁrm with a corporate
+strategy built on interrelationships. It has set out to be a broadly based
+ﬁnancial services company for upwardly mobile afﬂuent consumers, as well
+as providing specialized services for ﬁnancial institutions and corporations.
+The acquisition of Shearson Loeb Rhoades was a major step in this strategy,
+as was the earlier acquisition of Fireman’s Fund. There are many
+interrelationships among the businesses of American Express, Shearson,
+and Fireman’s Fund, as well as many potential new businesses that could
+add to American Express’s overall competitive position in ﬁnancial services
+via interrelationships. American Express and Shearson had different
+cultures, however, exacerbating the problems inherent in achieving
+interrelationships. Moreover, American Express had traditionally been run
+with quite autonomous units.
+To achieve interrelationships, American Express has employed a wide
+range of horizontal devices. A coordinated ﬁnancial services strategy has
+become the overall theme for American Express, and top management has
+frequently stated and reinforced this theme. A quotation from American
+Express’s Annual Report is illustrative:
+Key to the Company’s future is our ability to work as “one enterprise,” with staff ofﬁces at each
+of our major business segments interacting with one another to blend products, services,
+distribution and expertise to meet the demands of sophisticated customers and add to their
+convenience and satisfaction. Last year’s Annual Report cover graphically depicts the one
+enterprise concept: our American Express logo at the center of four distinct but interrelated
+business lines.18 (See Figure 11–1.)
+
+
+Figure 11–1. The American Express Logo
+A ﬁnancial services committee composed of executives from American
+Express and Shearson was constituted, with responsibility for developing an
+overall scheme for approaching the ﬁnancial marketplace. Shearson’s name
+was changed to Shearson/American Express, reinforcing a ﬁrmwide
+identity. Executives, including many at senior levels, have been cross-
+posted. A coordinating group has been established to manage the ﬁnancing
+of the various units. Unity across the company is stressed at management
+meetings. American Express has also recognized that although cultures are
+different in acquired units and homogenization of cultures should not be the
+goal, some parts of each business unit’s culture can usefully be transplanted.
+It remains to be seen to what extent American Express will actually be
+successful in exploiting all its potential interrelationships. Managers
+occasionally complain of endless meetings, and cultural and style
+differences are still strong among units. However, there are many examples
+of interrelationships that the company has achieved. Cross selling of buyers
+is now well under way, and units are providing products to each other. New
+
+
+acquisitions such as Investors Diversiﬁed Services (IDS) and Ayco
+Corporation 
+(personal 
+ﬁnancial 
+counseling) 
+are 
+extending 
+old
+interrelationships and creating new ones. Moreover, interrelationships
+appear to be driving the search for new acquisitions, and the ability to
+integrate acquired companies into the overall strategy has become a key test
+of further acquisitions. The acquisition of IDS was postponed after a close
+look uncovered problems of sharing computer systems. The acquisition
+occurred only after the purchase price had been reduced to reﬂect the added
+coordination and compromise costs. If American Express continues to be
+able to identify and achieve interrelationships, it seems on its way to
+becoming a leading ﬁnancial services ﬁrm.
+NEC Corporation is another ﬁrm in interrelated businesses that has made
+considerable progress in achieving interrelationships. NEC competes in
+semiconductors, telecommunications, computers, and home electronics.
+These four broad business areas are linked by numerous interrelationships
+in buyers, channels, technology, procurement, and production processes.
+NEC has been remarkably effective in exploiting these interrelationships
+without internal conﬂict. Business units share many activities, including
+R&D labs, sales forces, plants, and channels. A great deal of internal
+coordination takes place across divisions in joint selling, transfers of
+technology, buyer/supplier relationships, and many other areas. Given
+NEC’s moderate size relative to its competitors in each of its four main
+business areas, an important reason for its success is its ability to exploit
+interrelationships while its larger competitors were largely focusing on only
+one or two business areas.
+How has NEC been able to achieve these interrelationships? The answer
+lies in the extensive horizontal organization NEC has put in place to
+facilitate interrelationships. This overlays an equally well-developed
+vertical organization, in which decentralized business units are managed
+through planning, control, resource allocation, and incentive systems.
+Structurally, NEC has organized itself into four broad groups—electron
+devices, telecommunications, computers, and home electronics—that each
+reﬂect strong interrelationships in products, markets, and technology. Note
+that the computer, telecommunications, and electron devices groups are
+organized around technology while home electronics is a market-oriented
+grouping. Within these broad groups, related products such as switching
+
+
+equipment and transmission equipment have been grouped together,
+reﬂecting even stronger interrelationships.
+To promote interrelationships across groups there are forty-four ongoing
+corporatewide committees, many involving important interrelationships.
+Perhaps the most powerful of these is the “C&C Committee,” charged with
+identifying and exploiting the potential interrelationships created by the
+convergence of computers and communications. Partial centralization of
+activities is also prevalent at NEC in sales, distribution, manufacturing, and
+technology development. Corporate units in areas such as production
+technology and software development share the development of widely
+used technologies. Finally, many temporary committees are employed to get
+managers in different business units together.
+NEC’s C&C theme has constantly reinforced the need to exploit
+interrelationships. Every division also identiﬁes itself with the NEC brand.
+The vast majority of businesses have been developed internally. Managers
+rotate among divisions and undergo extensive training upon joining the
+corporation (all personnel are hired centrally) and throughout their careers.
+Frequent forums allow managers to meet with counterparts in related
+business units.
+The strategic planning process at NEC includes the CBP system
+described earlier, which allows uniﬁed planning for businesses with
+interrelationships. Incentives are not solely linked to ﬁnancial results, but
+reﬂect the business unit’s overall contribution to the company. Internal
+customers are viewed as the most important, and external sourcing is
+practiced only if superior quality and price are available from outside. The
+net result is a clear culture at NEC which reinforces ﬁnding and exploiting
+interrelationships.
+Japanese Firms and Interrelationships
+While there are many non-Japanese ﬁrms that have achieved
+interrelationships, a number of characteristics of many, though not all,
+Japanese ﬁrms make them well positioned for exploiting interrelationships:
+• strong belief in overarching corporate themes
+
+
+• internal development of new businesses
+• a less rigid tradition of autonomy
+• more ﬂexible incentives, less based on business unit results
+• willingness to centralize activities
+•  greater tradition of committees and frequent personal contact among
+executives
+• intensive and continuing in-house training
+• corporatewide hiring and training
+Given their history, Japanese ﬁrms may be in a position to strike a better
+balance between horizontal and vertical organization in the diversiﬁed ﬁrm
+than U.S. and European ﬁrms, which tend to have either a strong tradition
+of autonomy or a high degree of centralized control. In many ways, the
+ability of Japanese ﬁrms to achieve interrelationships can be viewed as a
+major 
+future 
+challenge 
+in 
+competing 
+with 
+Western 
+ﬁrms 
+as
+interrelationships grow in importance. The ﬁrst Japanese challenge, low
+labor costs, has been replaced by the second Japanese challenge of quality
+and productivity. Perhaps interrelationships will emerge as the next
+Japanese source of competitive advantage, coupled with an increasing
+ability to innovate.
+It is also intriguing to note that the U.S. companies that have achieved
+interrelationships, such as GE, DuPont, IBM, and Procter & Gamble, have
+many of the same characteristics. As interrelationships become increasingly
+critical to competitive advantage, these ﬁrms may serve as role models for
+ﬁrms steeped in the tradition of extreme autonomy and diversiﬁcation
+through acquisition so characteristic of U.S. industry.
+A New Organizational Form
+The principles underlying horizontal organization imply a new
+organizational form for diversiﬁed ﬁrms. The concept of decentralization
+has revolutionized the way diversiﬁed ﬁrms are managed, bringing with it a
+wide range of practices and management expectations. Many leading
+companies have successfully made the transition to decentralization.
+
+
+Diversiﬁed ﬁrms must undergo further organizational evolution if they
+are to respond to today’s competition. Because of the importance of
+interrelationships, there is a growing need for a new corporate
+organizational form that recognizes both vertical and horizontal dimensions.
+Decentralization in diversiﬁed ﬁrms is still a necessity, but must be overlaid
+with mechanisms to achieve the important interrelationships. The balance
+between the vertical (decentralization) and horizontal dimensions in the
+organization of the diversiﬁed ﬁrm is an ever changing one, and the ideal is
+perhaps a constant shifting of the balance as the need to emphasize different
+activities changes. However, a balance that combines signiﬁcant elements of
+both vertical and horizontal will be increasingly necessary.19 The balance
+must also reﬂect differing interrelationships from business unit to business
+unit.
+Increasingly, diversity does not imply the absence of interrelationships.
+Business units can be distinct and beneﬁt from decentralization, while being
+linked by interrelationships. Hewlett-Packard, a ﬁrm noted for its strong
+tradition of decentralization, is just one example of the growing need to
+balance vertical with horizontal. Recently, HP has recombined a number of
+divisions involved in the design and manufacture of personal computers and
+related products. These divisions were proceeding independently, but lacked
+the scale economies and cross-product coordination to mount a concerted
+attack on IBM and Apple.
+This new organizational form requires a modiﬁcation of rigid or narrow
+views of autonomy, as well as changing attitudes toward incentives systems
+and toward the role of group and sector executives. Instead of seeking
+autonomy and viewing committees and other joint efforts as a waste of
+time, business unit managers will have to modify their conception of what
+“managing their own business” means. The new requirements of the
+diversiﬁed ﬁrm will involve a price in terms of less simplicity, greater
+ambiguity, more subjectivity, and potentially more conﬂict. However,
+diversiﬁed ﬁrms that can successfully negotiate this transition will reap
+rewards in terms of competitive advantage. If they can make this new
+transition, there will be little debate over whether diversiﬁed ﬁrms add
+value.
+
+
+12
+Complementary Products and
+Competitive Advantage
+Most industries are affected in some way by complementary products—that
+is, products that are used jointly with their product by the buyer. Computer
+software and computer hardware, for example, are complements.
+Complements are the opposite of substitutes, because the sale of one
+promotes the sale of another. Sometimes a number of complements are part
+of a ﬁrm’s product line, while in other cases complements are supplied by
+other industries.
+Complementary products represent one type of interrelatedness among
+industries, and raise important issues for a ﬁrm’s competitive scope. Though
+interrelationships among industries in general terms have been the subject
+of the previous chapters, complementary products are singled out for
+attention here because they involve not only questions of the breadth of a
+ﬁrm’s competitive scope but also of how it should compete within particular
+industries.
+This chapter examines the three important strategic practices in
+industries that have important complementary products:
+•  Control over complementary products. Offering a full range of
+complementary products rather than leaving some of them to be
+supplied by others (“we sell both”).
+•  Bundling. Selling a group of distinct but complementary products
+together only as a bundle, at a single price (“we only sell both
+together”).

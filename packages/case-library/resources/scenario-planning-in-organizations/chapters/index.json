@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "ch01-intro",
+    "order": 1,
+    "title": { "en": "Foundations of Scenario Planning", "zh": "情景规划的基础" },
+    "summary": {
+      "en": "Thomas Chermack's comprehensive academic monograph (2011) brings rigor to scenario planning. Distinguishes the field from the popular Schwartz and van der Heijden works by providing a research-based theory: what scenario planning actually does at the cognitive (individual mental model change), organizational (decision-making improvement), and system level (strategic agility). Introduces the Performance-Based Scenario Planning system.",
+      "zh": "Thomas Chermack 2011 年的全面学术专著，为情景规划带来了严谨性。通过提供研究基础的理论，将情景规划这个领域与流行的 Schwartz 和 van der Heijden 著作区分开来。该理论涵盖情景规划在认知（个体心智模型改变）、组织（决策改善）和系统层面（战略敏捷性）的实际作用。引入了基于绩效的情景规划体系。"
+    },
+    "relatedStrategyFrameworkSlugs": ["scenario-planning", "performance-based-scenario-planning"]
+  },
+  {
+    "slug": "ch02-methods",
+    "order": 2,
+    "title": { "en": "Methods and Techniques: A Comprehensive Review", "zh": "方法和技术：全面综述" },
+    "summary": {
+      "en": "A taxonomy of scenario methods: intuitive logics (Shell/Schwartz tradition), trend-impact analysis, cross-impact analysis, morphological analysis, field anomaly relaxation. Chermack compares their theoretical foundations, empirical evidence, and practical trade-offs. The key insight: no single method is universally best — the choice depends on organizational context (decision type, time horizon, available expertise, cultural readiness for uncertainty).",
+      "zh": "情景方法的分类学：直觉逻辑法（Shell/Schwartz 传统）、趋势冲击分析、交叉影响分析、形态分析、场异松弛法。Chermack 比较了它们的理论基础、经验证据和实践权衡。关键洞见：没有一种方法是普遍最优的——选择取决于组织情境（决策类型、时间跨度、可用专业能力、对不确定性的文化准备度）。"
+    },
+    "relatedStrategyFrameworkSlugs": ["scenario-planning"]
+  },
+  {
+    "slug": "ch03-performance",
+    "order": 3,
+    "title": { "en": "Performance-Based Scenario Planning", "zh": "基于绩效的情景规划" },
+    "summary": {
+      "en": "Chermack's original contribution: tying scenario planning to measurable organizational performance. A six-phase system: (1) project preparation and performance diagnosis, (2) scenario exploration, (3) scenario development, (4) scenario implementation, (5) performance assessment, (6) continuous monitoring. Each phase includes specific outputs, facilitation guidelines, and common traps. The system embeds scenario work into ongoing strategy management rather than treating it as a one-off workshop.",
+      "zh": "Chermack 的原创贡献：将情景规划与可衡量的组织绩效联系起来。六阶段系统： (1) 项目准备和绩效诊断， (2) 情景探索， (3) 情景开发， (4) 情景实施， (5) 绩效评估， (6) 持续监控。每个阶段都有具体的成果产出、引导指南和常见陷阱。该系统将情景工作嵌入持续战略管理，而不是把它当作一次性工作坊。"
+    },
+    "relatedStrategyFrameworkSlugs": ["performance-based-scenario-planning"],
+    "relatedCanvasDefIds": ["scenario-matrix"]
+  },
+  {
+    "slug": "ch04-integration",
+    "order": 4,
+    "title": { "en": "Integrating Scenarios into Organizations", "zh": "将情景融入组织" },
+    "summary": {
+      "en": "The organizational infrastructure for sustained scenario work: governance structures (steering committees, scenario champions), cadence (annual refresh vs. trigger-based update), communications (executive briefings, cascading workshops), and capability building (internal facilitator development, scenario thinking as a leadership competency). The failure mode: organizations spend months building brilliant scenarios, then file them away — integration discipline is what separates scenario planning from scenario shelf-decoration.",
+      "zh": "持续情景工作的组织基础设施：治理架构（指导委员会、情景倡导者）、节奏（年度更新 vs. 基于触发器的更新）、沟通（高管简报、逐层工作坊）和能力建设（内部引导师培养、情景思维作为领导力能力）。失败模式：组织花好几个月构建精彩的情景，然后归档——整合纪律才是区分情景规划与情景书架装饰的关键。"
+    }
+  },
+  {
+    "slug": "ch05-facilitation",
+    "order": 5,
+    "title": { "en": "Facilitation and Process Design", "zh": "引导和流程设计" },
+    "summary": {
+      "en": "Scenario planning lives or dies on facilitation quality. Chermack provides a detailed facilitation guide: pre-workshop interviewing to surface assumptions and mental models, managing cognitive biases in scenario building (anchoring, confirmation, availability), dealing with dominant voices and power dynamics, keeping groups in discomfort without spiraling into anxiety, and closing workshops with concrete commitments rather than vague enthusiasm. Includes a facilitator self-assessment instrument.",
+      "zh": "情景规划成败在于引导质量。Chermack 提供了详细的引导指南：工作坊前访谈以暴露假设和心智模型、管理情景构建中的认知偏差（锚定、确认、可得性）、处理主导声音和权力动态、让群体保持不适但不滑入焦虑、以具体承诺而非模糊热情结束工作坊。附有引导师自评工具。"
+    }
+  }
+]

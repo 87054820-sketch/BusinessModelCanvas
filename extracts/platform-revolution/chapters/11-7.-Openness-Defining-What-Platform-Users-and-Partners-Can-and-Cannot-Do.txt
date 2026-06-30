@@ -1,0 +1,898 @@
+# 7. Openness: Defining What Platform Users and Partners Can and Cannot Do
+
+“I just read the entire article from top to bottom, and I have concerns that
+most serious criticism of the trial from reliable sources has been excluded
+or presented in a negative fashion.” Shortly thereafter, he wrote, “I am
+concerned that, since I raised the issue, even I have been attacked as being
+something like a ‘conspiracy theorist.’” Perhaps most disturbing, some of
+the editors involved in slanting the Kercher page were found to be
+contributors to other websites dedicated to “hating” Amanda Knox, thereby
+shattering any illusion of objectivity.1
+The problems Wikipedia faces in maintaining high quality while
+maximizing its accessibility to all the users who want to contribute to its
+content illustrate the challenges inherent in managing an open platform
+model. Yet the obvious solution—to close down the model and institute
+strict controls over participation—has a huge downside. Increasing the
+friction involved in actively using any platform inevitably reduces
+participation and can even destroy the value-creation potential of the
+platform altogether.
+HOW OPEN? HOW CLOSED?:
+WALKING THE TIGHTROPE
+In one of the first discussions of platform openness back in 2009, two of the
+authors of this book (Geoffrey Parker and Marshall Van Alstyne, in
+collaboration with Thomas Eisenmann) provided a basic definition of
+openness:
+A platform is “open” to the extent that (1) no restrictions are placed on participation in its
+development, commercialization, or use; or (2) any restrictions—for example, requirements to
+conform with technical standards or pay licensing fees—are reasonable and non-discriminatory,
+that is, they are applied uniformly to all potential platform participants.2
+Being closed isn’t simply a matter of absolutely forbidding outside
+participants on the platform. It may also involve creating such onerous
+participation rules that would-be users are discouraged, or charging such
+excessive fees (or “rents”) that the profit margins of potential participants
+are reduced below sustainable levels.3 The choice between open and closed
+isn’t a choice between black and white; there is a spectrum between the two
+extremes.
+
+
+Calibrating the right level of openness is undoubtedly one of the most
+complex as well as one of the most critical decisions that a platform
+business must make.4 The decision affects usage, developer participation,
+monetization, and regulation. It’s a challenge that Steve Jobs struggled with
+throughout his career. In the 1980s, he got it wrong by choosing to keep the
+Apple Macintosh a closed system. Competitor Microsoft opened its less
+elegant operating system to outside developers and licensed it to a host of
+computer manufacturers. The resulting flood of innovation enabled
+Windows to claim a share of the personal computer market that dwarfed
+Apple’s. In the 2000s, Jobs got the balance right: he opened the iPhone’s
+operating system, made iTunes available on Windows, and captured the
+lion’s share of the smartphone market from rivals like Nokia and
+Blackberry.5
+Jobs liked to recast the open/closed dilemma as a choice between
+“fragmented” and “integrated,” terms that subtly skewed the debate in favor
+of a closed, controlled system. He wasn’t completely wrong: it’s true that,
+the more open a system becomes, the more fragmented it becomes. An open
+system is also more difficult for its creator to monetize, and the intellectual
+property that defines it is more difficult to control. Yet openness also
+encourages innovation.
+It’s a difficult tradeoff to master. And the consequences of choosing the
+wrong level of openness in either direction can be severe, as the rise and
+fall of the social network Myspace suggests.
+Although the history is now sometimes forgotten, Myspace was the
+dominant social network before Facebook was launched in 2004, and
+remained so until 2008. Even in its early days, it had much of the
+functionality that would be familiar to users of today’s social networks. Its
+internal staff created a wide variety of features, such as instant messaging,
+classified ads, video playback, karaoke, “self-serve advertising” easily
+purchased through the use of simple online menus, and more.
+However, because of limited engineering resources, these features were
+often buggy, leading to a poor user experience.6 And an ill-considered
+decision to keep the site closed to outside developers made solving the
+problem practically impossible. Chris DeWolfe, cofounder of Myspace,
+recalled the company’s flawed thinking in a 2011 interview: “We tried to
+create every feature in the world and said, ‘O.K., we can do it, why should
+we [open up to] let a third party do it?’ We should have picked 5 to 10 key
+
+
+features that we totally focused on and let other people innovate on
+everything else.”
+Facebook didn’t make the same mistake. Like Myspace, it was initially
+closed to outside innovators. It opened to dot-com users in 2006. This
+helped Facebook begin a slow climb toward competitiveness with Myspace.
+The trend is reflected in Figure 7.1, which shows the average daily reach of
+the two platforms in terms of percentage of Internet users during 2006 and
+early 2007, when Myspace was still king.
+When Facebook launched Facebook Platform to help developers create
+apps in May 2007, the big shift began. An ecosystem of partners willing to
+extend the capabilities of Facebook quickly took root.7 By November 2007,
+there were 7,000 outside applications on the site.8 Recognizing how this
+flood of new apps was enhancing its rival’s appeal, Myspace responded by
+opening to developers in February 2008. But the tide had already turned, as
+shown in Figure 7.2. Facebook overtook Myspace in April 2008, and today
+it enjoys unquestioned supremacy in the social networking space.
+FIGURE 7.1. The market dominance of Myspace over Facebook during 2006 and early 2007. ©
+2015, Alexa Internet (www.alexa.com).
+
+
+FIGURE 7.2. Facebook rapidly overtakes Myspace after opening its platform to developers in
+May 2007. © 2015, Alexa Internet (www.alexa.com).
+Had Myspace opened itself earlier to contributions from a wider
+community of outside developers—especially those who had world-class
+technology for specific functions that Myspace wanted to build out, such as
+classified advertising, an effective spam filter, and user-friendly
+communication tools—they might have had a more robust product offering.
+Perhaps today Myspace and Facebook would still be competing on an
+almost equal footing.
+At first glance, then, it would appear that Myspace’s problems arose
+from precisely the opposite direction as Wikipedia’s: the collaborative
+encyclopedia is struggling with the consequences of too much openness,
+while Myspace foundered as a result of too little. That’s true to some extent
+—but the story is more complicated than that. Along some other important
+dimensions, Myspace was actually too open.
+For example, Myspace’s self-serve advertising feature created an all-too-
+accessible pathway for a significant amount of inappropriate content,
+including pornography available to platform users of any age. The lack of
+control over such material made Myspace less attractive to many users and
+even triggered investigations by a number of state attorneys general. In
+combination with Myspace’s slowness to accommodate outside app
+
+
+developers, this failure to adequately curate its content helped accelerate the
+platform’s competitive collapse.
+It might seem impossible for a platform to be both too closed and too
+open simultaneously, but Myspace managed the feat.
+THE PLATFORM ECOSYSTEM AND THE VARIETIES OF
+OPENNESS
+How can we make sense of the openness decisions that platform managers
+must make? It’s helpful to start by recalling the key elements of a platform
+as discussed in chapter 3. As we explained there, a platform is
+fundamentally an infrastructure designed to facilitate interactions among
+producers and consumers of value. These two basic types of participants use
+the platform to connect with each other and to engage in exchanges—first,
+an exchange of information; then, if desired, an exchange of goods or
+services in return for some form of currency. These participants come
+together on the platform to engage in a core interaction that is at the heart of
+the platform’s value-creating mission. In time, other kinds of interactions
+may be layered onto the platform, increasing its usefulness and attracting
+other participants.
+Given this basic design, it’s axiomatic that a vibrant and healthy platform
+is dependent on the value created by partners who are outside of the
+platform itself. If a platform is too closed, then partners cannot or will not
+contribute the value required to make mutually rewarding exchanges
+possible.9
+Consider Google’s YouTube. Because the system is highly open, it has
+become a viable outlet for commercial as well as amateur videos, delivering
+a wide array of content, ranging from the silly to the practical to the
+political and the inspirational. Without its vast array of user-supplied
+content, YouTube would be dependent on one or a few corporate sources of
+video material. Over time, it would likely evolve into more of a distribution
+system—similar to Hulu, for instance—than a true platform.
+However, as we’ve noted, and as the examples of Wikipedia and
+Myspace illustrate, openness is not a black-or-white area. Decisions about
+degrees and kinds of openness are critical and often challenging.
+
+
+There are three kinds of openness decisions that platform designers and
+managers need to grapple with. These are:
+•    Decisions regarding manager and sponsor participation
+•    Decisions regarding developer participation
+•    Decisions regarding user participation
+Each type of decision has unique ramifications and implications. Let’s
+consider them in turn.
+MANAGER AND SPONSOR PARTICIPATION
+Behind any platform, with responsibility for its structure and operation, are
+two entities: the firm that manages the platform and directly touches users,
+and the firm that sponsors the platform and retains legal control over the
+technology. In many cases, these two entities are one and the same.
+Companies like Facebook, Uber, eBay, Airbnb, Alibaba, and many others
+are both platform managers and platform sponsors. In this situation, control
+of the platform, including decisions about openness, rests completely with
+the manager/sponsor firm.
+In other cases, however, the platform manager and the platform sponsor
+are not identical. In general terms, the platform manager organizes and
+controls producer/consumer interactions, while the platform sponsor
+controls the overall architecture of the platform, the intellectual property
+that underlies the platform (such as the software code that controls its
+operations), and the allocation of other rights. When the manager and the
+sponsor are separate, the manager is closest to the customer/producer
+relationship as well as to outside developers who may contribute to the
+platform. This gives the manager considerable influence over the daily
+operations of the platform. But, in general, the sponsor has greater legal and
+economic control over the platform and therefore a larger measure of power
+over its long-term strategy.
+In some cases, both the platform manager and the platform sponsor can
+be either a single company or a group of companies—with further
+implications for issues of control and openness.10
+Figure 7.3 illustrates four models for managing and sponsoring
+platforms. In some cases, a single firm both manages and sponsors the
+
+
+platform. We call this the proprietary model. For example, the hardware,
+software, and underlying technical standards for the Macintosh operating
+system and mobile iOS are all controlled by Apple.
+Sometimes a group of firms manages the platform while one firm
+sponsors it. This is the licensing model. Google, for example, sponsors the
+“stock” Android operating system, but it encourages a number of hardware
+firms to supply devices that connect consumers to the platform. These
+device makers, including Samsung, Sony, LG, Motorola, Huawei, and
+Amazon, are licensed by Google to manage the interface between producers
+and consumers.
+
+
+FIGURE 7.3. Four models for managing and sponsoring platforms. Adapted from “Opening
+Platforms: How, When and Why,” by Thomas Eisenmann, Geoffrey Parker, and Marshall Van
+Alstyne.11
+In still other cases, a single firm manages the platform while a group of
+firms sponsors it—the joint venture model. The Orbitz travel reservations
+platform was launched in 2001 as a joint venture sponsored by a collection
+of major airlines in order to compete with upstart Travelocity. Similarly, the
+job search platform CareerBuilder was created jointly in 1995 (under the
+original name of NetStart) by three newspaper groups as a platform for
+help-wanted advertising.
+Finally, in some cases, a group of firms manages the platform while
+another group sponsors it—the shared model. For example, there are both
+many sponsors and many managers of the open source Linux operating
+system, which, like the Mac and iOS systems, serves as a platform
+connecting app developers and other producers to millions of consumers.
+Corporate sponsors of Linux include IBM, Intel, HP, Fujitsu, NEC, Oracle,
+Samsung, and many other companies, while the manager companies include
+dozens of device makers—TiVo, Roomba, Ubuntu, Qualcomm, and many
+others.
+Sometimes, a particular platform may migrate from one model to
+another as business demands and the structure of the marketplace evolve.
+Consider, for example, the Visa credit card operation, which is a platform
+that permits merchants and consumers to engage in payment transactions
+with one another. It originated in 1958 as a proprietary platform under the
+name of BankAmericard, sponsored and managed by the Bank of America.
+In the 1970s, it took on the Visa brand name and morphed into a joint
+venture, independently managed while being sponsored by a number of
+banks. In 2007, Visa became a freestanding corporate entity and reverted to
+the proprietary model. It is now self-sponsoring rather than being supported
+by an outside institution.
+As you can see, these four models of manager and sponsor participation
+are, in effect, variant patterns of openness. The proprietary model provides
+the greatest control and facilitates the most closed system of operation, as
+exemplified by Apple’s management of the Mac operating system. The
+licensing and joint venture models are, in effect, open at one end and closed
+on the other, while the shared model, exemplified by Linux, leads to a
+
+
+platform that is open to both a wide array of sponsors and a wide array of
+managers.
+Who wins? Who loses? Which of these four models is most
+advantageous to platform sponsors? Which works best for platform
+managers? Which model generates the greatest flow of predictable,
+controllable profits? It would be nice to offer definitive, one-size-fits-all
+answers to these questions—but, as is usually the case in business, the
+answer is, “It depends.”
+The proprietary model, used with enormous success by Apple, might
+seem to be every platform company’s dream. After all, it allows you to
+capture an entire market and to realize all the profits it generates. The
+logical way to accomplish this is by developing a new technology standard
+and maintaining sole control of it. And this is not impossible—but in the
+real world, it doesn’t always produce lasting economic returns.
+A classic illustration is the so-called VCR war of the 1970s and 1980s,
+which pitted two technology platforms against each other: the Betamax
+videotape standard sponsored by Sony, and the VHS standard sponsored by
+JVC. Unlike most platforms of today, these standards from the pre-Internet
+era did not create an online venue in which producers and consumers could
+meet to conduct interactions together. However, they qualified as platforms
+because they established technology systems that would allow multiple
+producers (chiefly movie and TV studios) to sell products to consumers.
+Thus, they faced many of the same kinds of strategic challenges that today’s
+Internet-based platforms must confront.
+From a technical quality standpoint, the Betamax platform was slightly
+better, providing sharper images and longer recording times. But the
+outcome of the war was decided by the varying sponsorship/management
+strategies chosen by the rivals.
+Sony chose the proprietary platform model, retaining control of the
+Betamax standard on the theory that, in the long run, its better quality
+would win out in the marketplace. But that never happened. JVC followed
+the licensing model, enlisting many manufacturers to produce VHS
+recorders and players. As manufacturing volume increased, prices fell,
+making VHS devices more attractive to consumers. With more device
+makers supporting the VHS standard and with more consumers owning
+VHS players, movie studios and other content providers issued more
+
+
+products in VHS format than in Betamax. A feedback loop set in that gave
+VHS a large, steadily growing advantage over Betamax. By the mid-1980s,
+manufacturers that embraced the VHS standard came to dominate the VCR
+arena. Ironically, however, JVC itself enjoyed only modest profits from this
+victory; its development of the original VHS standard didn’t lead to a large
+or lasting stream of income.
+Years later, Sony became embroiled in a new format war with a different
+outcome—though one that proved to be no more satisfactory in the long run
+to the Japanese giant. In the mid-2000s, when videotape gave way to digital
+video discs (DVDs), Sony’s Blu-ray high-definition video standard
+competed against the HD-DVD standard pioneered by Toshiba. Sony
+decided to pursue the same sole proprietorship model it had chosen for
+Betamax. In this case, Sony won the battle, thanks largely to its successful
+introduction of the PlayStation 3 gaming device, which included Blu-ray
+video and made it instantly available to millions of consumers.
+Unfortunately for Sony, this victory proved short-lived. Today, a few
+years after the triumph of Blu-ray, the migration of consumers away from
+DVD to streaming video is well under way, making Bluray’s dominance
+increasingly irrelevant. The lesson? If, like Sony, you choose to fight a
+standards battle in quest of proprietary control of a market, you’d better win
+it—and win it fast, before the next big thing supersedes the very technology
+you seek to dominate.
+The story of Visa—another platform that originated in the pre-digital era
+—illustrates some of the other challenges faced by different management
+and sponsorship models. During its years of sponsorship by a consortium of
+big banks, Visa achieved significant success as a leading credit card
+company. But over time, this management model proved cumbersome.
+When a platform is sponsored—and therefore owned—by a number of
+companies, key decisions must be approved by a committee of owners with
+varying goals and preferences, which is an inherently inefficient
+management system. This is why Visa’s owners ultimately agreed to spin
+off the business as a self-contained entity, granting it the capability to make
+competitive moves more nimbly.
+The inherent awkwardness of multi-sponsor decision-making can affect
+the elegance, simplicity, and ease of use of technology. The long history of
+the personal computer wars between Apple’s proprietary model and
+Microsoft’s so-called Wintel standard clearly illustrates the fact that a
+
+
+standard controlled by a single company with a unified esthetic and
+technical vision can produce more attractive, intuitive tools and services
+than a collection of competing companies, each with its own design
+approach. Apple has also become far more profitable and valuable than any
+single company in the Wintel universe—despite the fact that its market
+share of computer sales has never approached that of the PC.
+Similarly, Apple’s iPhone is generally considered more elegant and user-
+friendly than any smartphone created using Google’s less tightly controlled
+Android standard. This is particularly so today, with the Android Open
+Source Platform (AOSP) permitting experimentation and change by any
+interested company. AOSP is the platform used by Amazon in its Kindle
+Fire and by China’s Xiaomi in its mobile phones.
+This doesn’t mean that Apple’s proprietary iPhone strategy is necessarily
+“better” than Google’s more open strategy. In fact, the story is a
+complicated one. Even though Apple’s iPhone continues to be a more
+elegant device than competing Android phones, by 2014, open innovation
+by multiple phone manufacturers had earned Android about 80 percent of
+the smartphone market, as compared with just 15 percent for Apple.12
+A big win for Google? Not really. The AOSP operating system doesn’t
+automatically channel user traffic to Google’s online services—which
+means that Google, despite being the progenitor of Android, receives no
+revenue or data flow from AOSP devices. In response, Google has reversed
+course and closed Android in an effort to reassert its control over the
+system.13 (We’ll return to this story later in the chapter.)
+In the end, of course, the choice of a sponsorship/management model
+comes down to the purposes for which the platform is being developed and
+the goals of those designing it. The wireless radio frequency identification
+(RFID) technology is used to create smart tags that can be attached by the
+millions to products for inventory control. In effect, the RFID system is an
+inventory management platform that retailers can access to interact with the
+goods they distribute.
+The RFID platform was sponsored by a huge consortium of retailers, and
+the tags themselves are now manufactured by many companies which
+compete on the basis of price as well as design. The shared model of
+sponsorship and management means that the RFID technology itself doesn’t
+generate enormous profits for anyone—the tags sell for just a few cents
+
+
+apiece. But this suits the sponsors perfectly, since their goal all along was to
+make the technology as simple, accessible, and affordable as possible.
+DEVELOPER PARTICIPATION
+As you’ve seen, designing and building a platform generally starts with a
+core interaction. But over time, many platforms expand to include other
+kinds of interactions that create additional value for users and attract new
+kinds of participants. These new interactions are created by developers who
+may be afforded more or less open access to the platform and its
+infrastructure. We refer to the three kinds of developers as core developers,
+extension developers, and data aggregators.
+Core developers create the core platform functions that provide value to
+platform participants. These developers are generally employed by the
+platform management company itself. Their main job is to get the platform
+into the hands of users and to deliver value through tools and rules that
+make the core interaction easy and mutually satisfying.
+Core developers are responsible for basic platform capabilities. Airbnb
+provides an infrastructure that allows guests and hosts to interact with each
+other using system resources, including the search capabilities and data
+services that allow guests to find attractive properties as well as the
+payment mechanisms necessary to conclude a transaction. In addition,
+Airbnb manages behind-the-scenes functions that reduce transaction costs
+for guests and hosts. For example, the platform provides default insurance
+contracts for both parties, protecting guests in the event of accident or crime
+and protecting hosts from negligent guest behavior (though, as we’ll discuss
+in chapter 11, this insurance coverage is not without its shortcomings). It
+also verifies the identity of participants in order to make its reputation
+system a meaningful measure of user behavior. Designing, fine-tuning,
+maintaining, and continually improving systems like these are all elements
+of the work of Airbnb’s core developers.
+Extension developers add features and value to the platform and enhance
+its functionality. They are normally outside parties, not employed by the
+platform management firm, who find ways to extract a portion of the value
+they create and thereby profit from the benefits they offer. A familiar group
+of extension developers is the individuals and companies that produce apps
+
+
+sold via the iTunes store—games, information and productivity tools,
+activity enhancers, and so on. One of the crucial decisions a platform
+manager must make—and often reconsider as the market evolves—is the
+extent to which the platform will be open to extension developers.
+A number of extension developers have enhanced the value of the
+Airbnb platform. For example, Airbnb’s own research reveals that
+properties listed with professional-quality photographs are viewed by
+prospective renters twice as often as those with lower-quality images. In
+response, an extension developer now offers professional support under the
+rubric of “Airbnb photography service” to create compelling images that
+should make an Airbnb host more successful.
+Extension developer Pillow (formerly known as Airenvy) supports hosts
+on the platform by providing tools to simplify property listing, guest
+checkin, and cleaning and linen delivery. Other developers, including Urban
+Bellhop and Guesthop, make travel arrangements for guests, such as dining
+reservations and babysitting services. With the assistance of outside firms,
+an Airbnb host can offer a suite of services that compares to those provided
+by a full-service hotel.
+In order to facilitate this extension of its platform’s functionality, Airbnb
+must open its business to participation by these extension developers. But
+calibrating its degree of openness is a challenge for Airbnb. If the platform
+is too closed—if it is too onerous for extension developers to hawk their
+wares on the site—it will lose the opportunity to provide valuable extra
+services to platform users, perhaps alienating participants in the process.
+But if the platform is too open—if it is too easy for extension developers to
+appear on the site—then it’s likely that poor-quality service providers will
+join the platform, tarnishing the reputation of the other developers as well
+as that of Airbnb itself. Furthermore, excessive openness may lead to too
+many providers of the same type of service, which will reduce the profit
+earned by any one provider and reduce the incentive to extension
+developers to customize services for Airbnb users.
+Platforms that choose to encourage extension developers by granting a
+high degree of openness will usually create an application programming
+interface. This is one of the control points that a platform manager can use
+to manage open access to its system. An application programming interface
+(API) is a standardized set of routines, protocols, and tools for building
+
+
+software applications that makes it easy for an outside programmer to write
+code that will connect seamlessly with the platform infrastructure.
+Currently, although Airbnb has developed an API, it is not generally
+available to all developers that wish to connect to the platform—an
+indication of the middle way the platform managers want to tread when it
+comes to developer participation.
+Some companies erect steep barriers against extension developers not
+just to protect the quality of platform content but also in an effort to retain
+control of the revenue streams their platforms generate. We’ve already seen
+how this strategy backfired on Myspace. Today, a similar fate may be
+hitting Keurig, the popular maker of coffee machines—which, for this
+purpose, may be viewed as a platform dedicated to brewing hot beverages.
+We’ll consider Keurig’s story in chapter 8.
+The Guardian, a British daily newspaper, has gone in the opposite
+direction. The paper’s website enjoys significant international readership
+and has always been open to users, who are free to read its content, as
+written and edited by the newspaper’s staff. However, the site was formerly
+closed to extension developers. Recognizing the value of the Guardian’s
+vast trove of information and ideas, and the potential benefit to be derived
+from transforming the paper’s website into an open platform, the company’s
+management went through a months-long strategic exercise in which they
+discussed and analyzed the implications of such a shift. Having studied both
+the possible risks and the likely rewards, the Guardian’s managers decided
+both to “open in” the website, by bringing in more data and applications
+from the outside, and to “open out” the site, by enabling partners to create
+products using Guardian content and services on other digital platforms.
+To work toward the “open out” goal, the Guardian created a set of APIs
+that made its content easily available to external parties. These interfaces
+include three different levels of access. The lowest access tier, which the
+paper calls Keyless, allows anyone to use Guardian headlines, metadata,
+and information architecture (that is, the software and design elements that
+structure Guardian data and make it easier to access, analyze, and use)
+without requesting permission and without any requirement to share
+revenues that might be generated. The second access tier, Approved, allows
+registered developers to reprint entire Guardian articles, with certain time
+and usage restrictions. Advertising revenues are shared between the
+newspaper and the developers. The third and highest access tier, Bespoke, is
+
+
+a customized support package that provides unlimited use of Guardian
+content—for a fee.
+Some of the first products released under the Guardian’s new open
+platform model include a Content API, which provides access to over a
+million articles; a Politics API, which provides election results and
+candidate information; a Data Store, which provides access to data sets and
+visualizations, ranging from a table of country-by-country laws and
+practices regarding the death penalty to a colorful graph depicting all of the
+time-travel journeys of TV sci-fi hero Doctor Who; and an App Framework,
+which facilitates app development, aimed at making the system easy to
+experiment with and build applications for. In response, over 2,000
+extension developers signed up in the first twelve months.
+The power of APIs to attract extension developers and the value they can
+create is enormous. Compare the financial results experienced by two major
+retailers: traditional giant Walmart and online platform Amazon. Amazon
+has some thirty-three open APIs as well as over 300 API “mashups” (i.e.,
+combination tools that span two or more APIs), enabling e-commerce,
+cloud computing, messaging, search engine optimization, and payments. By
+contrast, Walmart has just one API, an e-commerce tool.14 Partly as a result
+of this difference, Amazon’s stock market capitalization exceeded that of
+Walmart for the first time in June 2015, reflecting Wall Street’s bullish view
+of Amazon’s future growth prospects.15
+Other platform businesses have reaped similar benefits from their APIs.
+Cloud computing and computer services platform Salesforce generates 50
+percent of its revenues through APIs, while for travel platform Expedia, the
+figure is 90 percent.16
+The third category of developers who add value to the interactions on a
+platform are data aggregators. Data aggregators enhance the matching
+function of the platform by adding data from multiple sources. Under
+license from the platform manager, they “vacuum up” data about platform
+users and the interactions they engage in, which they generally resell to
+other companies for purposes such as advertising placement. The platform
+that is the source of the data shares a portion of the profits generated.
+When the services provided by data aggregators are well designed, they
+can match platform users with producers whose goods and services are
+interesting and potentially valuable to them. For example, if a Facebook
+user has been posting information about plans for a vacation in France, a
+
+
+data aggregator might sell that data to an advertising agency that, in turn,
+would generate messages about Paris hotels, tour guides, discount airfares,
+and other topics likely to be of interest.
+Data aggregation is now practiced by many kinds of businesses, both on
+and off digital platforms. When it works well, it produces results that
+consumers experience as seamless and even delightful: “How did they
+know I’ve been looking for kitchen tiles in exactly that shade of blue!” But
+when it is ham-fisted—as is too often the case—the results feel intrusive
+and sometimes creepy.
+A story—possibly apocryphal—recounted by Charles Duhigg in the New
+York Times describes the angry father of a teenage girl marching into a
+Target store to ask why his daughter had been receiving coupons for baby
+products. “Are you trying to encourage her to get pregnant?” he demanded.
+The store manager apologized, but when he called the family to discuss the
+matter a few days later, the father was embarrassed and apologetic. “I had a
+talk with my daughter,” he said. “She’s due in August.”
+How did Target “know” about the girl’s pregnancy before her family
+did? Duhigg describes Target’s system for analyzing customer behaviors in
+an effort to anticipate future needs and purchasing activities. Thus, when a
+(hypothetical) female consumer visits her local Target store and buys cocoa
+butter lotion, a diaper bag–sized purse, zinc and magnesium supplements,
+and a bright blue rug, Target’s algorithm calculates an 83 percent chance
+that she is pregnant. Cue the coupons for baby clothes.17
+Perhaps for obvious reasons, data aggregation systems such as these are
+little discussed by the platform businesses that provide them access.
+Knowing the degree to which their personal behavior is being monitored
+makes many consumers queasy. Because data aggregation is a large and
+growing source of revenue for platform companies, managing it
+appropriately poses an enormous ethical, legal, and business challenge.
+We’ll delve into this topic in more detail in chapters 8 and 11, which deal
+with platform governance and regulation.
+WHAT TO OPEN AND WHAT TO OWN
+As we’ve seen, innovations that are valuable to platform users can come
+from many sources. Some are created by core developers and therefore are
+
+
+owned and controlled by the platform company itself. Others are created by
+extension developers and therefore are owned and controlled by outside
+businesses. This raises the question: when does the power of an outside
+developer threaten that of the platform itself? And when this happens, how
+should the platform manager respond?
+The answer to these questions depends on the amount of value created
+by a particular extension app. If you are a platform manager, you don’t want
+to let an outside firm control a primary source of user value on your
+platform. When this happens, you need to move to take control of the value-
+creating app—most often by buying the app or the company that created it.
+On the other hand, when an extension app adds a modest amount of
+additional value, then it’s perfectly safe and generally very efficient to allow
+the outside developer to retain control of it.
+Consider, for example, the ownership and control decisions Apple has
+made in regard to its mobile phone operating system. Apple has been
+careful to own most of the applications that come preloaded with the
+iPhone, such as music playing, photography, and voice recording. It bought
+SRI International, the company that developed the technology behind the
+iPhone’s “virtual personal assistant,” Siri.18 All of these are all-high-value-
+adding features with significant impact on the market for the iPhone, which
+is why Apple is eager to own and control them.
+By contrast, YouTube is content to own its video distribution and playing
+technology while leaving control of the millions of video clips available on
+the platform in the hands of the people and organizations that uploaded
+them. One might assume that globally popular videos like the Korean pop
+hit “Gangnam Style” generate significant value for YouTube consumers.
+But that value is ephemeral (this year’s favorite video is quickly displaced
+by next year’s) and represents just a tiny fraction of the total value of
+YouTube’s video content. In a case like this, the platform owner has no
+need to own or control the individual element of value.
+There are two other principles that platform managers should consider
+when weighing whether an extension app represents a threat to their
+economic power.
+First, if a particular app has the potential to become a powerful platform
+in its own right, the manager of the platform that hosts the app should seek
+to own it—or to replace it with an app controlled by the platform itself.
+
+
+In 2012, Google Maps had become the premier provider of mapping
+services and location data for mobile phone users. It was a popular feature
+on Apple’s iPhone. However, with more consumer activity moving to
+mobile devices and becoming increasingly integrated with location data,
+Apple realized that Google Maps was becoming a significant threat to the
+long-term profitability of its mobile platform. There was a real possibility
+that Google could make its mapping technology into a separate platform,
+offering valuable customer connections and geographic data to merchants,
+and siphoning this potential revenue source away from Apple.
+Apple’s decision to create its own mapping app to compete with Google
+Maps made sound strategic sense—despite the fact that the initial service
+was so poorly designed that it caused Apple significant public
+embarrassment. The new app misclassified nurseries as airports and cities
+as hospitals, suggested driving routes that passed over open water (your car
+had better float!), and even stranded unwary travelers in an Australian
+desert a full seventy kilometers from the town they expected to find there.
+iPhone users erupted in howls of protest, the media had a field day
+lampooning Apple’s misstep, and CEO Tim Cook had to issue a public
+apology.19 Apple accepted the bad publicity, likely reasoning that it could
+quickly improve its mapping service to an acceptable quality level—and
+this is essentially what has happened. The iPhone platform is no longer
+dependent on Google for mapping technology, and Apple has control over
+the mapping application as a source of significant value.
+Second, if particular functionality is reinvented by a number of extension
+developers and gains widespread acceptance by platform users, the manager
+of the platform should acquire the functionality and make it available
+through an open API. Widely useful functions such as video and audio
+playback, photo editing, text cutting-and-pasting, and voice commands have
+often been invented by extension developers. Recognizing their broad
+applicability, platform managers have moved to standardize these functions
+and incorporate them into APIs that all developers can use. This accelerates
+innovation and enables improvements in service for everyone who uses the
+platform.
+USER PARTICIPATION
+
+
+The third kind of openness that platform managers need to control is user
+participation—in particular, producer openness, which is the right to freely
+add content to the platform. Remember, many platforms are designed to
+facilitate side switching, which enables consumers to become producers,
+and vice versa; so the same individual users who consume value units on
+the platform can also create value units for others to consume. YouTube
+users can both view others’ videos and upload videos of their own; Airbnb
+guests can become hosts; Etsy customers can sell their own craft products
+on the site.
+The platform’s objective in opening to these users is to facilitate the
+creation and provision of as much high-quality content as possible. Of
+course, this stipulation—that the objective is the development of high-
+quality content—is the reason most platforms reject absolute openness as a
+strategy for managing user participation.
+When it was launched, Wikipedia aspired to a condition of complete
+openness. Maintenance of quality would be entrusted solely to the users of
+the platform, who would take it upon themselves to monitor the content of
+the site, fix errors, and challenge biases.
+This was a utopian vision that assumed good intentions on the part of all
+Wikipedia users; or, a trifle less idealistically, it assumed that the varying,
+sometimes conflicting motivations and attitudes of users would eventually
+balance one another, producing content that represented the combined
+wisdom of the entire community, much as, in capitalist theory, the “invisible
+hand” of the market is supposed to maximize the benefits for all through the
+interaction of countless self-interested participants.
+However, reality teaches us that democracy—like free markets—can be
+messy, especially when intense passions and partisanship are involved.
+Hence the episode we recounted at the start of this chapter, in which the
+Wikipedia article about the death of Meredith Kercher was hijacked by
+“haters” of Amanda Knox who were determined to make sure the page
+should assert her guilt and were prepared to eradicate any signs of
+dissension.
+The Kercher killing is not the only instance in which Wikipedia is
+embroiled in controversy—far from it. An article on the platform headed
+“Wikipedia: List of controversial issues” lists over 800 topics that “are
+constantly being re-edited in a circular manner, or are otherwise the focus of
+edit warring or article sanctions.” Organized under headings that include
+
+
+“Politics and economics,” “History,” “Science, biology, and health,”
+“Philosophy,” and “Media and culture,” they include everything from
+“Anarchism,” “Genocide denial,” “Occupy Wall Street,” and “Apollo moon
+landing hoax accusations” to “Hare Krishna,” “Chiropractic,” “SeaWorld,”
+and “Disco music.”
+Limiting openness through artful curation. How can Wikipedia
+establish high standards for the quality of the platform’s content when some
+of its users are determined to manipulate it for their own purposes? That is
+not easy. Those who manage the platform try hard to rely primarily on
+community standards and social pressure. Guidelines are promulgated
+through articles like “Wikipedia: five pillars,” which explains one of the
+platform’s “fundamental principles” this way:
+Wikipedia is written from a neutral point of view: We strive for articles that document and explain
+the major points of view, giving due weight with respect to their prominence in an impartial tone.
+We avoid advocacy and we characterize information and issues rather than debate them. In some
+areas there may be just one well-recognized point of view; in others, we describe multiple points
+of view, presenting each accurately and in context rather than as “the truth” or “the best view”. All
+articles must strive for verifiable accuracy, citing reliable, authoritative sources, especially when
+the topic is controversial or is on living persons. Editors’ personal experiences, interpretations, or
+opinions do not belong.
+Yet there are times when community pressure is not enough. When the
+quality of particular articles is repeatedly degraded by biased or dishonest
+content, other methods and tools for protecting Wikipedia’s integrity kick
+in. These include VandalProof, a software program written especially for
+Wikipedia that highlights articles edited by users with a track record of
+unreliable work; tagging tools that draw attention to potentially problematic
+articles so that other editors can review and, if necessary, improve them;
+and a range of blocking and protection systems that can only be employed
+by users who have earned special privileges through the general consensus
+of the Wikipedia community.
+This complex, largely self-organized set of interlocking systems for
+ensuring the quality of Wikipedia content is a form of curation—the crucial
+content protection process that must be fine-tuned to ensure the right degree
+and kind of producer openness.
+Curation usually takes the form of screening and feedback at critical
+points of access to the platform. Screening decides who to let in, while
+
+
+feedback encourages desirable behavior on the part of those who have been
+granted entry. A user’s reputation, as shaped by past behavior both on and
+off the platform, is usually a key factor in curation: users rated positively by
+the rest of the community are more likely to pass through the screening
+process and to receive favorable feedback than those with poor reputations.
+Curation can be managed through human gatekeepers—moderators who
+personally screen users, edit content, and provide feedback designed to
+promote quality. Media platforms such as blogs and online magazines often
+use this kind of system. But employing moderators who are trained and paid
+by the platform company is time-consuming and costly. A better system—
+though one that can be challenging to design and implement—relies on
+users themselves to curate the platform, generally through software tools
+that quickly gather and aggregate feedback and apply it to curation
+decisions.
+As we’ve seen, user-driven curation facilitated by software tools is the
+method Wikipedia employs. Similarly, Facebook relies on users to flag
+objectionable content such as hate speech, harassment, offensively graphic
+images, and threats of violence. Service platforms like Uber and Airbnb
+incorporate user ratings into their software tools so consumers and
+producers can make informed choices about whom they choose to interact
+with.
+No system of curation is foolproof. When curation tools err on the side
+of openness, potentially offensive or even dangerous content can slip
+through. When the tools are overly restrictive, valuable users and
+appropriate content may be screened out or discouraged—as when social
+networking algorithms intended to eliminate pornography end up blocking
+educational materials on topics like breast cancer awareness. Platform
+managers need to devote significant time and resources—including human
+eyeballs and informed judgment—to continually monitoring their
+platforms’ boundaries between openness and closedness and ensuring they
+are set appropriately.
+SIMILAR PLATFORMS CAN COMPETE THROUGH
+DIFFERING LEVELS OF OPENNESS
+
+
+Platforms that operate in similar arenas may choose to differentiate
+themselves by adapting different levels and kinds of openness. These
+variant openness regimes will attract different kinds and numbers of
+participants, generate distinct ecosystem cultures, and may ultimately
+produce divergent business models.
+As we’ve previously observed, two platforms that made very different
+openness 
+decisions 
+are Apple’s 
+Mac 
+operating 
+system/hardware
+combination and Microsoft’s Windows operating system in the 1980s and
+1990s. Although some critics describe Windows as a closed system, by
+comparison to Apple it has been much more open. Apple made the decision
+to charge extension developers a relatively high $10,000 for system
+development kits (SDKs), thereby ensuring a small, select pool of outside
+software developers. Microsoft, by contrast, basically gave the developer
+SDKs away and consequently attracted a much larger developer pool.
+Meanwhile, IBM lost control of the hardware standard, partly as the
+result of regulatory action, making it possible for any manufacturer to enter
+the PC market, which drove costs rapidly down. The combination of a large
+developer pool with inexpensive hardware was compelling to consumers,
+and the so-called Wintel platform dominated the market for nearly twenty
+years—while the share of the industry enjoyed by the closed Apple system
+steadily dwindled. In this case, it seems clear that the open path was far
+more successful than the closed path.
+More recently, as we’ve seen, Google and Apple made differing
+openness decisions regarding their mobile platforms. Google allowed the
+development of an open-source version of Android, which is freely
+available to any manufacturer, while Apple sponsored the proprietary iOS
+operating system and tightly controlled the hardware so that it is the sole
+device provider and therefore the sole manager of the system.
+At first, this might look like a repeat of the Microsoft/Apple PC
+operating system battle. However, although Apple is much more closed than
+Google—for example, retaining control of the vital device manufacturing
+function rather than opening it to other companies—it is more open than it
+was in the previous technological generation. Having opened its system just
+enough to encourage developers, Apple now assists them with strong
+developer toolkits and gives them access to its user base through the iTunes
+store. A multitude of apps has appeared as a result.
+
+
+Google, meanwhile, needed to be more open because it entered the
+market after Apple. As a result, AOSP quickly grew beyond Google’s
+control, prompting Google to seek to restrict access to its platform through
+a variety of mechanisms. Because the underlying operating system is free to
+all, Google cannot easily close AOSP, but almost the same goal can be
+achieved by exerting control over critical functions. Journalist Ron Amadeo
+has described how Google closed the Android applications for functions
+such as search, music, calendar, keyboard, and camera, while also working
+hard to encourage handset manufacturers to join its so-called open handset
+alliance, dedicated to developing and maintaining open software and
+hardware standards for mobile devices. Amadeo explains the impact of
+Google’s move toward closing AOSP on extension developers:
+If you use any Google APIs and try to run your app on a Kindle, or any other non-Google version
+of AOSP: surprise! Your app is broken. Google’s Android is a very high percentage of the Android
+market, and developers only really care about making their app easily, making it work well, and
+reaching a wide audience. Google APIs accomplish all that, with the side effect that your app is
+now dependent on the device having a Google Apps license.20
+By requiring a license to access Google Play, the official app store for
+AOSP, the firm is able to control access to the platform even though the
+underlying technology is open source. In this way, Google can manage
+potential competition as well as ensure a more orderly technology
+environment for users and developers.
+Stories like these illustrate the complicated competitive factors that
+impact openness decisions—as well as the never-ending balancing act that
+platform sponsors and managers need to practice to ensure that their
+platforms remain relevant, vibrant, and valuable to a growing base of users.
+OPENING OVER TIME:
+THE BENEFITS AND THE RISKS
+As we’ve seen, platforms can expand and develop stronger network effects
+by opening out over time. More rarely, as in the case of Android, they can
+choose to become more closed over time.
+The choice to become more open or more closed depends on whether a
+platform was originally structured as a proprietary or shared platform.
+
+
+Naturally, a proprietary platform, which is sponsored, managed, and
+completely controlled by a single company, can only become more open.
+By contrast, a fully open, shared platform (Linux, for example) can only
+become more closed.
+As we noted in chapter 5, which deals with launching a platform, a new
+platform will often choose to execute virtually all of its processes internally
+simply because there are no partners willing to make the necessary
+investment. In these cases, employees must provide both content and
+curation. Over time, as the platform grows and outside developers are
+attracted, the openness pattern may change, which means that curation
+processes need to evolve as well.
+A forward-looking platform management team must design ways to
+continually evaluate the platform’s openness level. Preferably, the platform
+will use a consistent strategic framework to make decisions for opening
+over time. Eventually, as the maturing platform moves processes outside the
+firm from employees to partners, it may need to develop algorithms to
+automate curation or to decentralize curation to the entire base of users.
+YouTube now depends upon its large user base to evaluate content, provide
+feedback, and flag content that should not be on the platform.
+As the platform’s openness policies evolve, the challenge is always to
+find balance. If a platform is too closed—for example, if it extracts
+excessive rents in the form of unreasonable and arbitrary fees—its partners
+may refuse to make platform-specific investments. On the other hand,
+platforms face trouble when extension developers begin to insert
+themselves too aggressively between the platform and its users. If a
+particular developer successfully displaces other competitors, a platform
+manager should be careful to ensure that the developer does not seek to
+displace the platform itself.
+There are a number of examples of such struggles for control of a
+particular platform’s user base. Consider SAP, the German-based
+multinational giant that produces software for large enterprises to use in
+managing their internal operations, customer relationships, and other
+processes. SAP, which operates a large business processes platform, has
+partnered with the U.S.-based firm ADP to provide payroll processing
+services to its users, partly in order to take advantage of ADP’s superior
+access to cloud computing capabilities. However, ADP has substantial
+customer relationships of its own and can serve as the platform host linking
+
+
+customers to a number of data/computing/storage partners. Thus, the
+partnership creates an opportunity for ADP to displace SAP as the primary
+manager of the customer relationship. This is an instance in which the
+platform manager (SAP) is in danger of losing control of the customer
+connection to an extension developer (ADP).
+The unique power and value of the platform lies in its ability to facilitate
+connections among participants from outside the platform itself. But
+defining exactly who should have access to the platform and precisely how
+they can participate is an enormously complex issue with ever-changing
+strategic implications. That’s why the question of openness needs to be at
+the top of every platform manager’s agenda—not just during the initial
+design process, but throughout the life of the platform.
+TAKEAWAYS FROM CHAPTER SEVEN
+    There are three kinds of openness decisions that managers face: those regarding
+manager/sponsor participation, developer participation, and user participation.
+    Management and sponsorship of a platform may be controlled by a single firm, by different
+firms, or by groups of firms. The four possible combinations lead to differing patterns of
+openness and control, with various advantages and disadvantages.
+    The open/closed dichotomy isn’t black or white. There are shades of gray, and benefits and
+drawbacks to every point on the spectrum. Sometimes, similar platforms choose to compete
+on the basis of differing openness policies.
+    Maturing platforms often evolve in the direction of greater openness. This demands
+continually reevaluating and adjusting curation processes to ensure consistently high
+quality of platform content and service value.
+OceanofPDF.com
+
+
+8
+GOVERNANCE
+Policies to Increase Value
+and Enhance Growth
+In the first quarter of 2015, Brian P. Kelley, the CEO of Keurig Green
+Mountain coffee company, had some explaining to do. The company had
+just launched the Keurig 2.0, a next-generation coffee brewer touted as the
+future king of brewing. The reigning king, the Keurig 1.0, had become
+ubiquitous in homes, offices, and hotels, and Green Mountain’s expensive
+coffee cartridges had helped fuel the growth of what had been a regional
+brewer into a firm worth more than $18 billion.
+Yet with the launch of Keurig 2.0, sales did not rise further. Instead, they
+fell by 12 percent.
+The problem had its origins back in 2012, when key patents on Keurig’s
+coffee pod design expired. Taking advantage of this change, competing
+coffee makers began selling pods that were compatible with Keurig’s
+machines and significantly cheaper. These rivals were like extension
+developers offering new sources of value to Keurig users. Of course, their
+existence, and the competition they presented to the official Keurig pods,
+caused an erosion of Keurig’s market share.
+To fight back, Keurig included in its brewer version 2.0 a scanning
+device that prevented the use of any pods not marked with a special
+proprietary emblem. Consumers were furious. Many denounced Keurig on
+shopping websites; thousands watched YouTube videos purporting to
+demonstrate how to hack the system, tricking it into accepting coffee pods
+unauthorized by Keurig. Buyers lamented the firm’s “ridiculous corporate

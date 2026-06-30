@@ -1,0 +1,79 @@
+{
+  "chapter": "ch02-cost-advantage",
+  "sourceFiles": {
+    "en": "10-Chapter-3-Cost-Advantage.txt"
+  },
+  "concepts": [
+    {
+      "name": "Structural Analysis",
+      "definition": "Porter's discipline of decomposing competition into underlying structural forces, activities, positions, and trade-offs rather than treating performance as personality or luck."
+    },
+    {
+      "name": "Competitive Advantage",
+      "definition": "A durable difference in relative cost, willingness to pay, position, or activity configuration that allows above-average returns."
+    },
+    {
+      "name": "Chapter-Specific Framework",
+      "definition": "Chapter 3. Cost advantage is achieved by controlling the drivers of cost at the activity level better than competitors. The ten cost drivers: (1) economies of scale, (2) learning and spillovers, (3) capacity utilization, (4) linkages (within the value chain and with suppliers/channels), (5) interrelationships with other business units, (6) vertical integration, (7) timing (first-mover advantages/disadvantages), (8) discretionary policies (product features, service levels, HR practices), (9) location, (10) institutional factors (regulation, unions, tariffs). The chapter provides a step-by-step method: identify the firm's value chain, diagnose cost drivers for each activity, compare relative costs to competitors, and target specific drivers for cost reduction. 'Cost advantage is not about being cheap — it's about understanding which activities drive cost and why.'"
+    },
+    {
+      "name": "Strategic Fit and Trade-offs",
+      "definition": "The requirement that choices reinforce each other across activities, customers, scope, cost, and differentiation so the strategy is hard to imitate."
+    }
+  ],
+  "arguments": [
+    {
+      "claim": "Strategy must be grounded in structure, not slogans",
+      "evidence": "The chapter provides a diagnostic system for understanding why profitability differs across industries, segments, competitors, activities, buyers, suppliers, or time."
+    },
+    {
+      "claim": "Advantage is built in choices and activities",
+      "evidence": "Porter repeatedly shows that superior performance comes from configuring activities and positions differently, not from generic ambition to be better."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Porter framework application",
+      "context": "A manager uses the chapter framework to diagnose a real competitive situation rather than relying on surface financials.",
+      "illustrates": "How structural variables and activity choices reveal where advantage is created or destroyed.",
+      "lesson": "Use the framework as a map for choices, not as a label."
+    }
+  ],
+  "logicChains": [
+    {
+      "description": "Define the competitive question → decompose structure or activities → diagnose drivers and trade-offs → compare relative position → choose actions that improve defensible advantage.",
+      "sourceHint": "Synthesized from Porter source chapter and index summary."
+    }
+  ],
+  "terminology": [
+    {
+      "term": "Industry structure",
+      "definition": "The underlying economic forces shaping profitability."
+    },
+    {
+      "term": "Activity system",
+      "definition": "The configuration of activities through which a firm creates value and incurs cost."
+    },
+    {
+      "term": "Trade-off",
+      "definition": "A choice that makes some positions incompatible with others and protects strategy from imitation."
+    }
+  ],
+  "nuance": [
+    "Porter frameworks are diagnostic disciplines, not fill-in templates.",
+    "Average industry or firm performance hides the drivers that matter at force, segment, activity, or competitor level."
+  ],
+  "crossReferences": {
+    "relatedStrategyFrameworkSlugs": [
+      "porters-value-chain"
+    ],
+    "relatedCanvasDefIds": [
+      "porters-value-chain"
+    ],
+    "relatedCaseSlugs": [],
+    "relatedChapters": [
+      "ch01-value-chain",
+      "ch03-differentiation"
+    ]
+  }
+}

@@ -45,46 +45,87 @@ function ResourceCard({
   const title = resource.title[lang] ?? resource.title.en;
   const recommendation = resource.recommendation[lang] ?? resource.recommendation.en;
   const relatedCount = countRelated(resource);
+  const initials = getResourceInitials(title);
+  const accent = resourceAccentClass(resource.type);
 
   return (
-    <div
-      role="button"
-      tabIndex={0}
+    <button
+      type="button"
       onClick={onClick}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          onClick();
-        }
-      }}
-      className="group flex min-h-[220px] w-full cursor-pointer flex-col rounded-xl border border-gray-200 bg-white p-4 text-left transition hover:border-amber-300 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-300"
+      className="group relative flex min-h-[256px] w-full cursor-pointer overflow-hidden rounded-2xl border border-stone-200/80 bg-gradient-to-br from-white via-stone-50 to-amber-50/40 p-0 text-left shadow-[0_12px_32px_rgba(120,72,18,0.06)] transition duration-200 hover:-translate-y-1 hover:border-amber-300 hover:shadow-[0_22px_46px_rgba(120,72,18,0.14)] focus:outline-none focus:ring-2 focus:ring-amber-300"
     >
-      <div className="flex items-start justify-between gap-2">
-        <h2 className="min-w-0 flex-1 text-sm font-semibold text-gray-900">{title}</h2>
-        <span className="shrink-0 rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-medium text-amber-700">
-          {t(`library.resourceTypes.${resource.type}`)}
-        </span>
+      <div className={`w-3 shrink-0 ${accent.spine}`} />
+      <div className="flex min-w-0 flex-1 flex-col p-4">
+        <div className="flex items-start gap-3">
+          <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-sm font-bold shadow-inner ring-1 ring-white/70 ${accent.cover}`}>
+            {initials}
+          </div>
+          <div className="min-w-0 flex-1">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${resourceTypeClass(resource.type)}`}>
+                {t(`library.resourceTypes.${resource.type}`)}
+              </span>
+              {resource.chapterCount ? (
+                <span className="rounded-full bg-white/80 px-2 py-0.5 text-[10px] font-medium text-amber-700 ring-1 ring-amber-200">
+                  {t('library.resource.chapterCount', { count: resource.chapterCount })}
+                </span>
+              ) : null}
+            </div>
+            <h2 className="mt-2 line-clamp-2 text-[15px] font-semibold leading-snug text-stone-950">
+              {title}
+            </h2>
+          </div>
+        </div>
+
+        <div className="mt-4 rounded-xl border border-amber-100 bg-white/70 px-3 py-2.5">
+          <p className="line-clamp-5 text-[12px] leading-relaxed text-stone-600">
+            {recommendation}
+          </p>
+        </div>
+
+        <div className="mt-auto pt-4 text-[11px] leading-relaxed text-stone-400">
+          {[resource.authors.join(', '), resource.year].filter(Boolean).join(' · ')}
+        </div>
+        <div className="mt-3 flex flex-wrap items-center gap-1.5">
+          {resource.tags?.slice(0, 3).map((tag) => (
+            <span key={tag} className="rounded-full bg-white/80 px-2 py-0.5 text-[10px] text-stone-600 ring-1 ring-stone-200">
+              {tag}
+            </span>
+          ))}
+          {relatedCount > 0 && (
+            <span className="rounded-full bg-stone-900 px-2 py-0.5 text-[10px] font-medium text-white/90">
+              {t('library.resource.relatedCount', { count: relatedCount })}
+            </span>
+          )}
+        </div>
       </div>
-      <p className="mt-3 line-clamp-5 text-[12px] leading-relaxed text-gray-500">
-        {recommendation}
-      </p>
-      <div className="mt-auto pt-4 text-[11px] text-gray-400">
-        {[resource.authors.join(', '), resource.year].filter(Boolean).join(' · ')}
-      </div>
-      <div className="mt-3 flex flex-wrap gap-1.5">
-        {resource.tags?.slice(0, 3).map((tag) => (
-          <span key={tag} className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600">
-            {tag}
-          </span>
-        ))}
-        {relatedCount > 0 && (
-          <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600">
-            {t('library.resource.relatedCount', { count: relatedCount })}
-          </span>
-        )}
-      </div>
-    </div>
+    </button>
   );
+}
+
+function getResourceInitials(title: string): string {
+  return title
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join('')
+    .toUpperCase();
+}
+
+function resourceAccentClass(type: LibraryResourceType): { spine: string; cover: string } {
+  switch (type) {
+    case 'book':
+      return { spine: 'bg-gradient-to-b from-amber-700 via-amber-500 to-orange-300', cover: 'bg-amber-100 text-amber-800' };
+    case 'article':
+      return { spine: 'bg-gradient-to-b from-sky-700 via-sky-500 to-cyan-300', cover: 'bg-sky-100 text-sky-800' };
+    case 'paper':
+      return { spine: 'bg-gradient-to-b from-violet-700 via-violet-500 to-fuchsia-300', cover: 'bg-violet-100 text-violet-800' };
+    case 'report':
+      return { spine: 'bg-gradient-to-b from-emerald-700 via-emerald-500 to-lime-300', cover: 'bg-emerald-100 text-emerald-800' };
+    case 'web':
+      return { spine: 'bg-gradient-to-b from-stone-700 via-stone-500 to-stone-300', cover: 'bg-stone-100 text-stone-800' };
+  }
 }
 
 function countRelated(resource: LibraryResource): number {

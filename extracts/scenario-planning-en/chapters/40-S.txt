@@ -1,0 +1,188 @@
+# S
+
+  
+INDEX 
+267
+Scenario building, 64, 65, 67–68
+compared to scenario deployment, 65–66
+development phase in. See Development 
+of scenario projects
+exploration phase in. See Exploration 
+phase
+preparation phase in. See Preparation 
+phase
+Scenario deployment, 64, 65–66, 67, 68–69
+assessment phase in. See Assessment of 
+scenario projects
+compared to scenario building, 65–66
+implementation phase in. See 
+Implementation of scenarios
+Scenario-Driven Planning (Georgantzas and 
+Acar), 30
+Scenario planning
+approaches to, 18–27
+deﬁnitions of, 13, 14–17
+history of, 10–13
+outcomes of, 13–17. See also Outcomes of 
+scenario planning
+performance-based, 2, 3–28
+deﬁnition of, 16–17
+theoretical foundations of, 2, 29–59
+publication activity on, 13, 15
+Scenario Planning: The Link between Future 
+and Strategy (Lindgren and 
+Bandhold), 24
+Scenario Planning Handbook (Ralston and 
+Wilson), 24
+Scenario system, 64–69
+performance-based, 2, 66–69, 243–245
+phases of. See Phases of performance-
+based scenario system
+Technology Corporation case study of. 
+See Technology Corporation case study
+scenario building component of. See 
+Scenario building
+scenario deployment component of. See 
+Scenario deployment
+Scenario team. See Team roles and 
+responsibilities in scenario projects
+Schoemaker, P. J. H., 14, 22–24, 222, 226
+Schon, D. A., 34
+Schwartz, P., 14, 18, 19, 27, 42, 175
+Scope of project deﬁned in project proposal, 
+89–91, 98
+Selsky, J. E., 5
+Senge, P., 44, 48
+Serfass, R., 15
+Shared meanings, 39–40
+Shell. See Royal Dutch/Shell
+Short-term strategies in theory of business/
+business idea, 117
+Signals or leading indicators in scenarios, 
+20, 179–180
+Simon, H. A., 42
+Simpson, D. G., 14
+Simulations in military planning, 7
+Situational scenarios, 20
+Sloan, Alfred, 6, 9
+Small Business Administration (SBA), 72
+Small Business Innovation Development 
+Act, 72
+Small Business Innovation Research (SBIR) 
+funding, 72, 73, 77, 89
+airbus scenario on, 154
+Concorde scenario on, 152
+horse-and-buggy scenario on, 155, 156
+in theory of business, 117–118
+Titanic scenario on, 157, 158
+Small Business Technology Transfer 
+(STTR) funding, 72, 73, 77
+Social, technological, economic, 
+environmental, and political (STEEP) 
+analysis, 102, 103–105
+Social construction of reality, 39–40
+Social friction, 45
+Social intelligence, 236
+Socialization, primary and secondary, 40
+Soft creative methods approach to scenario 
+planning, 26–27
+Stakeholder satisfaction, 192, 195, 197, 210, 
+211
+Stanford Research Institute, 7, 11–12, 24
+Status quo scenarios, 144, 145
+STEEP (social, technological, economic, 
+environmental, and political) analysis, 
+102, 103–105
+
+
+268 
+INDEX
+Stickiness of information, 44–45, 46
+Story lines of scenarios, 20, 42–43
+assessment of, 161, 164–165
+development of, 150–152
+memory of, 42–43, 161
+Strategic planning, 3, 6–8
+Strategy, 6–10
+conversation about, 35, 84, 184–187
+examined in implementation phase 
+workshop, 178–179
+Strengths, SWOT analysis of. See SWOT 
+analysis
+Supply chain processes, 57
+Surveys. See Questionnaires and surveys
+Swanson, R. A., 54, 95, 108, 121–124, 191
+SWOT analysis
+in design school model of strategy, 63
+of external environment, 102, 107, 108
+of internal environment, 108–111
+Symphony criteria in scenario assessment, 
+161–162, 164–165
+System
+Forrester models on, 7
+internal and external elements of, 44
+mental models of, 49
+performance at level of, 62, 193, 205–206, 
+210, 212
+diagnosis matrix on, 121, 122, 123
+planning, 62, 64
+subsystems in, 2, 62–66
+and symphony criteria in scenario 
+assessment, 161–162
+T groups, 34
+TAIDA method, 24
+Taylor, Frederick, 9
+Team roles and responsibilities in scenario 
+projects, 91–94, 98
+clariﬁcation of, 223
+of coordinators, 93, 94, 219
+importance of, 218–219
+of project leader, 91–93
+of remarkable people, 93–94, 223, 224
+Technological forces, STEEP analysis of, 
+104
+Technology Corporation case study, 71–77
+airbus scenario in. See Airbus scenario of 
+Technology Corporation
+Concorde scenario in. See Concorde 
+scenario of Technology Corporation
+horse-and-buggy scenario in. See Horse-
+and-buggy scenario of Technology 
+Corporation
+scenario assessment in, 198, 201
+comprehensive plan for, 210, 211–212
+gains and losses matrix in, 207–208, 209
+scenario development in
+brainstorming workshop in, 134, 135
+quadrants of ranking space in, 140
+quality assessment checklist on, 163, 165
+ranking forces by relative impact in, 136, 
+147
+ranking forces by relative uncertainty 
+in, 138, 139
+scenario logics in, 145–146
+two-by-two matrix on critical 
+uncertainties in, 142–143
+scenario exploration in
+performance diagnosis matrix in,  
+122–124
+SWOT analysis in, 110–111
+theory of business/business idea in,  
+116–120
+thinking hats approach in, 106
+scenario implementation in, 174
+revision of theory of business/business 
+idea in, 177–178
+signals and leading indicators in,  
+179–180
+wind tunneling in, 182–183
+scenario proposal in, 98–100
+on expected outcomes and assessment 
+measures, 96, 97, 98–100
+on purpose and question, 88–89, 98
+on scope and time frame, 91, 92, 98
+on team roles and responsibilities, 94, 
+98
+Titanic scenario in. See Titanic scenario of 
+Technology Corporation
+Telephone interviews, 112

@@ -284,6 +284,17 @@ export function LibraryPage() {
     setPreviewEntry(entry);
   }
 
+  function handleResourceSelect(resource: LibraryResource) {
+    if (copilotOpen) {
+      setAttachedRef({
+        type: 'resource',
+        slug: resource.slug,
+        title: resource.title[lang] ?? resource.title.en,
+      });
+    }
+    setSelectedResource(resource);
+  }
+
   /** Resources tab → Cases tab: open the case preview. */
   function handleResourceCaseClick(slug: string) {
     const entry = cases?.find((c) => c.slug === slug);
@@ -538,7 +549,7 @@ export function LibraryPage() {
                   resourcesPage * SHOWCASE_PAGE_SIZE,
                 )}
                 lang={lang}
-                onSelect={setSelectedResource}
+                onSelect={handleResourceSelect}
               />
               <Pagination
                 total={resources.length}

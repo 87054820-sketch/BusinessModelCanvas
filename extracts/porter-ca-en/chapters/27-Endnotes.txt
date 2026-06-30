@@ -1,0 +1,454 @@
+# Endnotes
+
+ 
+1Many strategic planning concepts have ignored industry attractiveness and stressed the pursuit of
+market share, often a recipe for pyrrhic victories. The winner in a ﬁght for share in an unattractive
+industry may not be proﬁtable, and the ﬁght itself may make industry structure worse or erode the
+winner’s proﬁtability. Other planning concepts associate stalemates, or inability to get ahead of
+competitors, with unattractive proﬁts. In fact, stalemates can be quite proﬁtable in attractive
+industries.
+2These concepts apply equally to products and services. I will use the term “product” in the generic
+sense throughout this book to refer to both product and service industries.
+3Industry structure is discussed in detail in Competitive Strategy, Chapter 1.
+4Generic products pose the same risks to many consumer good industries.
+5Without a sustainable competitive advantage, above-average performance is usually a sign of
+harvesting.
+6Parity implies either an identical product offering to competitors, or a different combination of
+product attributes that is equally preferred by buyers.
+7While the cost leader will be the most proﬁtable, it is not necessary to be the cost leader to sustain
+above-average returns in commodity industries where there are limited opportunities to build
+efﬁcient capacity. A ﬁrm that is in the lowest quartile of costs though not the cost leader will usually
+still be an above-average performer. Such a situation exists in the aluminum industry, where the
+ability to add low-cost capacity is limited by access to low-cost power, bauxite, and infrastructure.
+8Overall differentiation and differentiation focus are perhaps the most often confused strategies in
+practice. The difference is that the overall differentiator bases its strategy on widely valued
+attributes (e.g., IBM in computers), while the differentiation focuser looks for segments with special
+needs and meets them better (e.g., Cray Research in computers).
+9This example is discussed in more detail in Chapter 7.
+10Competitive Strategy, Chapter 8, describes the processes that drive industry structural change.
+11A more detailed review of the differing skills required by each generic strategy is given in
+Competitive Strategy, Chapter 2, pp. 40–41.
+
+
+ 
+1The business system concept, developed by McKinsey and Company, captures the idea that a ﬁrm is
+a series of functions (e.g., R&D, manufacturing, marketing, channels), and that analyzing how each
+is performed relative to competitors can provide useful insights. McKinsey also stresses the power
+of redeﬁning the business system to gain competitive advantage, an important idea. The business
+system concept addresses broad functions rather than activities, however, and does not distinguish
+among types of activities or show how they are related. The concept is also not linked speciﬁcally to
+competitive advantage nor to competitive scope. The most complete descriptions of the business
+system concept are Gluck (1980) and Bauron (1981). See also Bower (1973).
+2The notion of a strategic business unit as the relevant entity for strategy formulation is well
+accepted, and grows out of work by many scholars and consultants. Business units are often poorly
+deﬁned, however, a problem exposed by value chain analysis to which I will return below.
+3Economists have characterized the ﬁrm as having a production function that deﬁnes how inputs are
+converted into outputs. The value chain is a theory of the ﬁrm that views the ﬁrm as being a
+collection of discrete but related production functions, if production functions are deﬁned as
+activities. The value chain formulation focuses on how these activities create value and what
+determines their cost, giving the ﬁrm considerable latitude in determining how activities are
+conﬁgured and combined.
+4There may also be infrastructure activities at the group or sector level.
+5For a discussion of some of the structural issues see Competitive Strategy, Chapters 1 and 6.
+6Unlike a ﬁrm, which can measure value in terms of price or proﬁt, a consumer’s measure of value is
+complex and relates to the satisfaction of needs. See Chapter 4.
+7The same principles that determine a ﬁrm’s differentiation also can be used to analyze the threat of
+substitution, as I discuss in Chapter 8.
+8The term scope of the ﬁrm is used in economic theory to reﬂect the boundary between the activities
+a ﬁrm performs internally and those it obtains in market transactions—e.g., vertical integration (see,
+for example, Coase [1937, 1972]). Some recent work has begun to examine the extent of a ﬁrm’s
+diversiﬁcation as an issue in scope (see Teece [1980]). Competitive scope is used here to refer to a
+broader conception of the scope of a ﬁrm’s activities, encompassing industry segment coverage,
+integration, geographic markets served, and coordinated competition in related industries.
+9Interrelationships among value chains serving different segments, geographic areas and related
+industries are analytically the same. See Chapters 7 and 9.
+10See Porter (1985).
+11Sorter, op. cit. See also Porter, Fuller, and Rawlinson (1984).
+12For the seminal work see Lawrence and Lorsch (1967).
+
+
+ 
+1Including when a competitor shares the activity with related business units and the ﬁrm does not.
+See Chapter 9.
+2If assets are assigned by some measure of asset value, a capital charge will still be required to
+evaluate any tradeoffs with operating costs that are present.
+3Scale is not the same as market share. Depending on the relevant measure of scale, the appropriate
+deﬁnition of market share that will serve as a proxy for scale will differ markedly.
+4The term “experience” is often used to describe cost reduction over time, reﬂecting the wide
+possibilities for learning. The “experience curve” mixes both learning and economies of scale,
+however, which are very different cost drivers. I use the term learning to encompass all types of cost
+reduction that result from improving know-how and procedures independent of scale.
+5A 15 percent reduction in costs with a doubling of cumulative volume represents the median of a
+large number of academic studies. This average masks a wide variation in learning rates among
+activities, however. For an insightful treatment of learning, see Pankaj Ghemawat (1984).
+6Even if learning cannot be kept proprietary, however, there may be ﬁrst-mover advantages to
+pioneering certain types of learning. See below and Chapter 5.
+7The popular measure of the rate of learning, cumulative ﬁrm volume, has the beneﬁt of simplicity.
+However, this measure obscures differential rates of learning in value activities and is not an
+appropriate proxy for the rate of learning in many activities.
+8I have described the relationship between integration and competitive advantage in detail in
+Competitive Strategy, Chapter 14.
+9Bundling of complementary products is discussed in detail in Chapter 12.
+10For a description of the industry structural factors see Chapter 1 and Competitive Strategy, Chapter
+6.
+11The same principles apply to assessing the costs of potential competitors.
+12The use of competitors to reduce volume ﬂuctuation as well as for other strategic purposes is
+discussed in Chapter 6.
+13Chapter 5 describes in some detail how technology can affect competition.
+14For a general description of Iowa Beef, see Stuart (1981).
+15See Chapter 14, which discusses defensive strategy.
+16Deliberate cross subsidy can be strategically justiﬁed in some industries. See Chapter 12.
+17Opportunities for exploiting cross subsidy to attack market leaders will be discussed in Chapter 15.
+
+
+ 
+1Hereafter I will use the term price premium to refer to all of these beneﬁts of differentiation.
+2The stream of research in demand theory pioneered by Lancaster sees a product as a bundle of
+attributes that the buyer desires. See Lancaster (1979) for a recent summary. This chapter shows
+how valuable attributes grow out of a buyer’s value chain, how product attributes actually create
+buyer value, and how valuable attributes relate to the activities performed by a ﬁrm.
+3In identifying new or better products, the literature in marketing tends to focus on the physical
+product and assume the attributes of the product that are desired are known (for a survey see
+Shocker and Srinivasan [1979]). I focus here on what makes attributes valuable to buyers, and how
+the ﬁrm’s total activities can create value.
+4This same analysis determines the relative value of a substitute product, discussed in Chapter 8. See
+Chapter 8 for further examples of how ﬁrms actually lower buyer costs or raise buyer performance.
+5Lowering buyer risk of failure is equivalent to lowering buyer cost.
+6The ways to lower the buyer’s costs are discussed further in Chapter 8, in the parallel case of one
+product substituting for another. Forbis and Mehta (1979) also contains a useful discussion of some
+of the issues in lowering buyer cost.
+7Such a strategy presupposes that the ﬁrm can perform such activities more cheaply than the buyer
+can.
+8A persistent price in excess of buyer value is usually possible only when a ﬁrm and its product’s
+effect on buyer cost or performance are very intangible and hard to measure.
+9For a description see Steinway and Sons (1981).
+10For an interesting discussion of this issue with further examples, see Levitt (1981).
+11Even intangible use criteria such as styling can often be quantiﬁed—e.g., ratings in industry surveys.
+12Some quantitative techniques for ranking product attributes have been developed in the marketing
+literature, though they are based principally on the use of competitive product sales data and
+customer polling and not on calculating value directly. For a survey, see Shocker and Srinivasan
+(1979).
+13See Competitive Strategy, Chapters 1 and 6, for descriptions of the sources of switching costs.
+Switching costs are also discussed in Chapter 8.
+
+
+ 
+1Hence the label “technology development” in the generic value chain instead of the more limited
+phrase “research and development.”
+2See Competitive Strategy, Chapter 13, and Porter (1985).
+3The same ideas can be generalized to evaluate pioneering of any kind, such as pioneering in
+marketing or in the approach to procurement.
+4Some of these advantages also accrue to other early movers besides the ﬁrst.
+5The costs of pioneering are discussed in the context of an emerging industry in Competitive Strategy,
+Chapter 10.
+6Another possible form of coalition is joint technology development with another ﬁrm. Joint
+development involves many of the same issues as licensing.
+7See Abernathy and Utterback (1978).
+8Abernathy, Clark, and Kantrow (1983).
+9See Competitive Strategy, Chapter 8, for a broader discussion of industry evolution and its causes.
+1Price discrimination is the sale of identical products to different buyers at different prices.
+2I will have more to say about this below. The vulnerabilities of leaders resulting from this and other
+practices are discussed in Chapter 14.
+3In the particular case of rate-of-return regulation, allowable rates are often determined by average
+costs of competitors. Hence having competitors may allow an efﬁcient producer to be more
+proﬁtable.
+4For further examples of the effect of antitrust considerations on leader behavior, see Bloom and
+Kotler (1975).
+5Strategies such as this that link complementary products are described more fully in Chapter 12.
+6The problems of launching an emerging industry are discussed in Competitive Strategy, Chapter 10.
+7Chapter 15 describes how market leaders can be successfully attacked with focus strategies.
+8The effect of product proliferation in breakfast cereals on entry is analyzed by Schmalensee (1978).
+9Competitor analysis is described in detail in Competitive Strategy, Chapters 3 through 5.
+10See Chapter 14 for a fuller discussion of defensive strategy.
+11See Chapter 14.
+12The undesirability of a 100 percent share is also recognized by Bloom and Kotler (1975), based on
+valid reasons. Bloom and Kotler cite the antitrust problems of high share, the possible effect of high
+share in attracting entry, and risks faced by high-share companies of the attack by consumerist or
+public interest organizations.
+13For an empirical study supporting some of these factors, see Caves, Fortunato, and Ghemawat
+(1981).
+14Industry growth interacts with scale economies to determine the optimal share. In a rapid-growth
+industry, scale economies yield less of an entry barrier and cost advantage than in a slow-growth
+industry.
+15See Bloom and Kotler (1975).
+16Evidence from examining a cross section of industries suggests that a signiﬁcant difference in share
+among competitors is associated with greater stability. Buzzell’s (1981) statistical test suggested
+that stable market share patterns often follow a semilogarithmic distribution, where each
+competitor’s share is a constant proportion of the next higher-ranking ﬁrm’s. Boston Consulting
+Group (1976) has also hypothesized that a stable market share distribution will have only three
+signiﬁcant competitors with market shares in the proportion 4:2:1. This is a special case of the
+
+
+semilogarithmic distribution. Such generalizations can be misleading, however, because they do not
+reﬂect other industry and competitor characteristics besides share. BCG’s hypothesis, for example,
+will not hold in all industries, but is most likely to hold in commodity industries where there are bad
+competitors.
+
+
+ 
+1Focus strategies are described in Chapter 1.
+2Throughout this book the term “product” has been used to describe both products and services. In
+most industries producing products there are some services that are part of the offering, and these
+are important to segmentation. The principles of analyzing both products and services for
+segmentation purposes are the same.
+3Chapter 12 describes the strategic issues in bundling together physically distinct products and selling
+them as a package, something that many companies do without knowing it.
+4As we will see, industry segmentation ﬂows from the intrinsic characteristics of an industry’s
+products and buyers, irrespective of ﬁrms’ existing strategies. Strategic groups (Competitive
+Strategy, Chapter 7) are the result of differences in ﬁrms’ strategies, one dimension of which may
+be the different segments they serve. Thus industry segmentation is a building block for analyzing
+strategic groups.
+5The threat of substitution and the threat of entry tend to be greater for segments than for an industry
+as a whole, because other product varieties are often substitutes for a product variety and
+competitors operating in other segments are often well-placed potential entrants to a segment.
+6Geographic buyer location reﬂects the importance of geographic scope, deﬁned in Chapter 2. For
+practical reasons, scope within the industry and geographic scope are best treated together in
+segmentation.
+7Chapter 12 describes the strategic issues involved in bundling in some detail.
+8For a good survey, see Moriarty (1983). Bonoma and Shapiro (1984) present a very useful analysis
+of industrial market segmentation and its implications for marketing strategy.
+9Marketers have proposed a number of other related ways of segmenting consumers, such as
+personality and loyalty. For a survey, see Kotler (1980).
+10The strength of interrelationships within an industry and between industries determine the
+boundaries of strategically distinct industries.
+11It may also be illuminating to distinguish among strong and weak positions in each segment.
+12There is no need for strategies that combine segments to be horizontal or vertical on the
+segmentation matrix. However, focus strategies are often horizontal or vertical because product,
+buyer, channel, or geographic focus strategies are common.
+
+
+ 
+1See Levitt (1960) for the classic statement of the need to think functionally.
+2Chapter 12 describes the strategic issues raised by complementary products in more detail.
+Differential cost and quality of complementary products are rarely issues in differentiation among
+brands.
+3“General Cinema Corporation,” 1976.
+4The costs of switching suppliers are described in Competitive Strategy, Chapters 1 and 6.
+5The discussion of industry evolution in Competitive Strategy, Chapter 8, provides tools for
+forecasting structural changes in the substitute and threatened industries; the analysis of emerging
+industries in Competitive Strategy, Chapter 10, is also often applicable to substitute industries
+because they are frequently new industries.
+6Margins can be negative, and sometimes are for a substitute that is beginning its penetration.
+7Chapter 8 in Competitive Strategy describes how the product life cycle is a poor generalization about
+industry structural change. The S-shaped path of sales growth, though by no means universal, is
+among the most commonly occurring predictions that grow out of life cycle theory.
+8The path of substitution is analogous to the diffusion of an innovation. Diffusion research has
+emphasized the information and attitudinal factors that affect the diffusion process. See Robertson
+(1971) for a survey.
+9Falling cost of the substitute, like most of these reasons for increasing penetration, should not be
+treated as inevitable as noted earlier.
+10Diffusion models have been widely used in forecasting the growth of new brands and in forecasting
+the rate of diffusion of technology. Important diffusion models are those of Mansﬁeld (1961), Bass
+(1969), and Fisher and Pry (1971). The logistic model described here is similar to Fisher and Pry’s.
+11The logistic function produces an inﬂection point of the S-curve at 50 percent substitution. A related
+function, known as the Gompertz function, has its inﬂection point at 37 percent penetration. While
+both functions have received empirical support, the logistic function is easier to use in practice. For
+a survey of diffusion models, see Mahajan and Muller (1979).
+12Penetration rates must be adjusted if there were capacity constraints in supplying the substitute.
+13Logistic curves have often been misused by both managers and their advisors. Decisions have been
+made with too little diagnosis of the underlying economics of substitution.
+14The strategic role of complementary goods is discussed in more detail in Chapter 12.
+15These concepts are important in declining industries. See Competitive Strategy, Chapter 12, which
+also discusses harvest strategies.
+16See Chapter 9.
+17For a discussion, see World Business Weekly (1981).
+1In a recent article, Haspeslagh (1982) found evidence that portfolio planning techniques were in use
+in someway by over 300 of the Fortune 1000.
+2Recent work on stock market valuation has identiﬁed a conglomerate discount, where unrelated
+business units in a ﬁrm are worth less than if they were stand-alone units. Without a horizontal
+strategy that actually exploits interrelationships, a conglomerate discount is often justiﬁed.
+3For a treatment of geographic interrelationships, see Porter (1985).
+4Some of the same forces are leading to the globalization of industries.
+5While the availability of cheap computing power may be reducing the need to share computers in
+some applications, a stronger trend seems to be for the technology to spawn new opportunities for
+sharing.
+
+
+6John R. Wells (1984) has done an important study on interrelationships that provides evidence of
+how portfolio membership has affected business units in a sample of diversiﬁed ﬁrms.
+7Economists have begun to use the term “economies of scope” to refer to economies available to
+multiproduct ﬁrms (see Baumol, Panzar, and Willig, 1982). The sources of economies of scope have
+not been operationalized, nor have the conditions that nullify them.
+8Sharing can increase the rate of learning in an activity by increasing its throughput. Intangible
+interrelationships are also a form of learning, but one in which knowledge gained in one business
+unit is transferred to another though each business unit has separate activities.
+9Terms such as shared experience or shared resources are sometimes used to reﬂect the possibility
+that activities can be shared. Such terms are not well deﬁned, however; nor do they grow out of a
+framework that speciﬁes the potential competitive advantages of sharing and its costs.
+10The important scale differences among business units are those in the value activity being shared,
+which is not necessarily the same as the overall scale of the business unit. A small business unit
+may utilize logistics very intensively, for example.
+11The cost of coordination is clearly dependent on a ﬁrm’s organizational practices. See Chapter 11.
+12See Competitive Strategy, Chapter 1, for a discussion of exit barriers.
+13For a summary discussion of the ways of gaining competitive position in an industry see Chapter 15.
+14See Wells (1984).
+15John R. Wells’s (1984) study contains important work on intangible interrelationships that provides
+further insight into when and how they arise.
+16There may be a ﬁne line in some cases between transferring know-how and sharing technology
+development. The basis for separating tangible and intangible interrelationships is whether an
+activity is shared in some way on an ongoing basis, or whether know-how is transferred between
+essentially separate activities.
+17The analysis of multipoint competitors in both related and unrelated industries has strong parallels to
+the analysis of competitors in local or regional industries, as well as to competitive analysis in
+global competition. In a regional industry such as airlines, for example, ﬁrms compete with each
+other in a number of overlapping routes. Internationally, ﬁrms often compete in a number of country
+markets. The principles described here can be applied in all of these settings (see Porter 1985).
+18For a deﬁnition and discussion of focal points, see Thomas Schelling (1960) and Competitive
+Strategy, Chapter 5.
+
+
+ 
+1Other examples of coordinated pricing are discussed in Chapter 12.
+2See Competitive Strategy, Chapter 16, for the basic strategic logic of entry into a new business.
+
+
+ 
+1The literature on organizational behavior contains some useful insights into the problems of
+achieving interrelationships among business units, but little research that treats the subject directly.
+Most literature in organizational behavior examines the organizational problems of coordination
+within business units, or how to divisionalize. Lorsch and Allen (1973) and Galbraith (1973)
+contain the most useful ideas for cross-business unit coordination, but have not treated
+interrelationships as a major theme.
+2Thus this book on strategy must contain an unexpected chapter on organization.
+3If a diversiﬁed ﬁrm does not have a well functioning decentralized organization, in fact, it may need
+to decentralize further before it begins to overlay a horizontal organization across its business units.
+4In economists’ terms, the perceived transaction costs of dealing externally are lower than those of
+dealing internally.
+5For a discussion of the Brunswick example see Stengrevics (1981).
+6Entrepreneurship is viewed as so important in some ﬁrms that business units are even encouraged to
+compete among themselves.
+7Leading works include Lorsch and Allen (1973), Galbraith (1973), Lawrence and Lorsch (1967),
+and Kotter (1982).
+8The sector executive’s role is analogous to the role of the group executive and equally important to
+horizontal strategy.
+9There has been little research on the role of the group executive, surprising given the prevalence of
+group structures. Stengrevics’ (1981) work is the only known comprehensive study, and provides
+many useful insights into the group executive’s role and job satisfaction.
+10For a supporting view, see Stengrevics (forthcoming).
+11Galbraith (1973) provides a useful description of a number of such “lateral” organizations and
+conditions their success. His and other discussions are primarily oriented to within business unit
+rather than cross-business unit efforts, however.
+12Eccles (1985) provides an excellent discussion of transfer pricing that reﬂects many of these issues.
+13See Stengrevics (1981). No transfer pricing scheme is ever perfect, but arms-length schemes are
+almost always ﬂawed where there are signiﬁcant interrelationships.
+14Lorsch and Allen (1973) provide an illustration of this role of incentives in a vertically integrated
+ﬁrm.
+15For a study supporting the need for subjective incentives when interrelationships are high, see Gupta
+and Govindarajan (1983).
+16It may be valuable, for example, to switch business managers or other executives in two business
+units involved in an interrelationship.
+17Acquiring a toehold in an industry through a smaller acquisition, and then building it, resembles
+internal development more than acquisition in this respect.
+18American Express Company, Annual Report, 1982.
+19This new organizational form is more complex than Williamson’s (1973) M-form, which is
+distinguished by a pattern of top management control of divisions in which top management is not
+involved in operating affairs. The importance of interrelationships suggests that divisionalization in
+its traditional sense is no longer appropriate in many ﬁrms.
+1Signaling criteria are described in Chapter 4.
+2The cost of complements is hence part of the comparison between a product and substitutes. See
+Chapter 8.
+
+
+3For a discussion of quasi-integration, see Competitive Strategy, Chapter 14.
+4For a discussion of the problems of emerging industries, including the role of complementary
+products, see Competitive Strategy, Chapter 10.
+5For a demonstration of this in the case of a monopolist, see Adams and Yellen (1976).
+6Unbundling is one important variant of the focus strategy which involves performing fewer
+functions for the buyer. See Chapter 7.
+7See Chapter 9.
+8Chapter 5 discusses how the pattern of technological change in an industry evolves over time,
+important to these changes.
+9Protecting the bundle is sometimes part of defensive strategy. See Chapter 14.
+10This is one of a series of reasons why having competitors can be beneﬁcial (see Chapter 6).
+
+
+ 
+1A survey in 1979 estimated that between 8 and 22 percent of the Fortune 1000 had made some use
+of scenarios. The users were concentrated in process industries and aerospace ﬁrms (Klein and
+Linneman [1979]). A more recent survey of European companies by Malaska et al. (1983) showed a
+higher percentage of users. However, in interpreting data such as these, it is important to recognize
+that the deﬁnition of scenarios varies widely and that the way scenarios are used can and does vary
+widely.
+2The approach to scenario planning pioneered by Shell is described in “Shell’s Multiple Scenario
+Planning” (1980), Mandell (1982), and Wack (1984).
+3The evolutionary forces are discussed in detail in Competitive Strategy, Chapter 8.
+4See Competitive Strategy, Chapters 3–5 for a description of competitor analysis techniques.
+Competitive Strategy, Chapter 7, describes strategic mapping.
+5For example, see Hamilton (1981).
+6For a fascinating discussion of the process of changing management thinking at Royal Dutch Shell
+through scenarios see Wack (1984).
+
+
+ 
+1A ﬁrm may enter an industry without a sequenced entry strategy in mind, but initial success may
+lead to sequencing nonetheless. See Competitive Strategy, Chapter 16, for a discussion of the
+motivations for a sequenced entry strategy.
+2Shrinkage barriers, discussed in Chapter 6, are barriers to reducing sales volume. They are closely
+related to exit barriers.
+3Postponing of risk is one of the important motivations for a sequenced entry strategy.
+4Much research by economists on entry does not recognize that entry is an extended investment
+process, and hence concludes that many entry-deterring investments are irrational once an initial
+entry investment has been made. For example, see A. Dixit (1980). An example would be a ﬁrm
+that attempts to deter entry by building excess capacity as a threat to potential entrants that a price
+war will be triggered if they enter. Once the entrant has come into the industry, however, it has been
+argued that it is no longer rational to carry out the threat. This, of course, makes excess capacity less
+effective as a threat in the ﬁrst place.
+The ﬂaw in the argument is that the commencing of entry does not mean that resources have
+been fully committed to the industry, or that the entrant should be viewed as an incumbent. Thus a
+price war during the entering or sequencing phases may well be effective if it causes the entrant to
+conclude that its ultimate target strategy cannot be achieved at acceptable cost. Entry may thus be
+terminated or a less ambitious target set, an outcome that has occurred in many industries such as
+video games and semiconductors. Entry deterrence also rests heavily on shaping potential
+competitor assumptions, and thus on the lack of complete information by potential competitors.
+5New brands and new positionings can be offensive opportunities. I focus here on situations where
+they are not attractive enough to be offensive opportunities, but yet have high defensive value
+because they block a likely avenue of attack.
+6Some conditions for achieving credible commitment to retaliate are described in Competitive
+Strategy, Chapter 5.
+7At the industry level, this balance is reﬂected in the concept of the entry-deterring price discussed in
+Competitive Strategy, Chapter 1.
+8See Competitive Strategy Chapters 8 and 16, for further discussion of potential entrants and how
+they can change.
+
+
+ 
+1Yip’s (1982) discussion of how ﬁrms can ﬁnd “gateways” to entry shows how leaders can be
+vulnerable. Yip describes how innovations in technology development and marketing can allow
+entrants to overcome incumbents.
+2Sequenced entry strategies are described in Competitive Strategy, Chapter 16. Sequenced
+repositioning employs the same principles.
+3See Competitive Strategy, Chapter 14.
+4The competitive advantages of a global strategy and the circumstances where global strategies are
+appropriate are discussed in Competitive Strategy, Chapter 13, and in Porter (1985).
+5See the chapter on coalitions in Porter (1985).
+6Diagnosing impediments requires a competitor analysis of the leader. See Competitive Strategy,
+Chapter 3, for a framework plus a discussion of concepts such as mixed motives and blind spots
+employed here.
+
+
+Bibliography
+ABERNATHY, WILLIAM J., AND JAMES M. UTTERBACK. “Patterns of Industrial
+Innovation,” Technology Review, Vol. 80, No. 7 (June-July 1978).
+ABERNATHY, WILLIAM J., KIM B. CLARK, AND ALAN M. KANTROW. Industrial
+Renaissance. New York: Basic Books, 1983.
+ADAMS, WILLIAM J., AND JANET L. YELLEN. “Commodity Bundling and the
+Burden of Monopoly,” Quarterly Journal of Economics, Vol. SC (August
+1976), pp. 475–498.
+AMERICAN EXPRESS COMPANY, 1982 Annual Report.
+BASS, FRANK M. “A New Product Growth Model for Consumer Durables,”
+Management Science, Vol. 15 (January 1969), pp. 215–227.
+BAUMOL, WILLIAM J., JOHN C. PANZAR, AND ROBERT D. WILLIG, with
+contributions by Elizabeth E. Bailey, Dietrich Fischer, and Herman C.
+Quirmbach, Contestable Markets and The Theory of Industry Structure,
+New York: Harcourt Brace Jovanovich, 1982.
+BLOOM, PAUL N., AND PHILIP KOTLER. “Strategies for High Market Share
+Companies,” Harvard Business Review (November-December 1975), pp.
+62–72.
+BONOMA, THOMAS V., AND BENSON P. SHAPIRO. Segmenting the Industrial
+Market. Lexington, Mass.: Lexington Books, 1983.
+BOSTON CONSULTING GROUP. “The Rule of Three and Four,” Perspectives
+No. 187 (1976).
+BOWER, JOSEPH, L., “Simple Economic Tools For Strategic Analysis,”
+Harvard Business School Case Study, No. 9–373–094.
+BUARON, ROBERTO, “New-Game Stategies,” The McKinsey Quarterly
+(Spring, 1981), pp. 24–40.

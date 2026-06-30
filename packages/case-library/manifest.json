@@ -101,6 +101,8 @@
     { "slug": "world-bank-data-catalog", "featured": true },
     { "slug": "oecd-data-explorer", "featured": true },
     { "slug": "world-bank-enterprise-surveys", "featured": true },
-    { "slug": "wipo-global-innovation-index", "featured": true }
+    { "slug": "wipo-global-innovation-index", "featured": true },
+    { "slug": "porter-competitive-strategy", "featured": true },
+    { "slug": "porter-competitive-advantage", "featured": true }
   ]
 }

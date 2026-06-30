@@ -1,0 +1,582 @@
+# 9.   Discovering an Ocean of Noncustomers
+
+The way the industry saw it, the US credit card market was saturated,
+with scant room for profitable growth, especially given the tighter
+regulations on interest rates and fees that followed the 2008 global
+financial crisis. But was it? That wasn’t the way Square saw it. To the
+contrary, Square, founded in 2009 by Jack Dorsey, who also cofounded
+Twitter, and Jim McKelvey, saw an ocean of noncustomers.
+Yes, most Americans have a credit card, and almost all medium-sized
+and large merchants accept them. But could Americans use their credit
+cards to pay the pizza delivery person, the gardener, the electrician who
+visits their home, the piano teacher, or the ice cream truck at the beach?
+Could they use credit cards or debit cards to pay the babysitter or the
+housekeeper, or to pay back the friend they borrowed $50 from? No.
+Every person who wanted to make a person-to-person payment was a
+noncustomer of the credit and debit card industry, and so were many new
+businesses and microbusinesses, like farmers’ market vendors, food
+trucks, and pop-up shops.
+Of America’s 27 million small businesses, roughly 55 percent don’t
+accept credit cards. Yet research shows that more than 55 percent of
+customers wish they did. Moreover, other studies show that when people
+are given payment options in addition to cash, they are likely to spend
+more per purchase, which helps small businesses grow. In other words,
+there were lots of entrepreneurs, small business owners, and newly
+started businesses that didn’t offer customers the option of credit or debit
+card payment, but would benefit handsomely if they did. And there were
+lots of person-to-person transactions, typically handled by cash or check,
+that people would be thrilled to use credit or debit cards for. This is the
+ocean of noncustomers Square saw in 2009 and has been rapidly
+capturing with its mobile payment system, which allows individuals,
+small businesses, and even large organizations to accept credit or debit
+card payments on their iPhones, Androids, or iPads, simply by attaching
+a free Square reader, a small plastic device that’s literally a snap to use.
+Today many other followers have joined in and, like Square, are
+unlocking this ocean of noncustomers, which continues to grow, while
+the industry itself is constantly evolving.
+As Square, Comic Relief, Salesforce.com, and many others
+understood, the universe of noncustomers not only exists, but provides
+expanding growth opportunities. Yet most organizations are so focused
+on their industries’ existing customers that they cannot see beyond this
+
+
+narrow frame. To be fair, it is always easier to talk with existing
+customers, the ones who have already crossed your threshold. And, of
+course, their opinions matter. But, to grow, you have to bring new people
+into the industry.
+The Three Tiers of Noncustomers
+To help organizations broaden their vision, we developed a framework
+that defines and identifies three tiers of noncustomers, as the graphic in
+figure 9-1 shows. The three tiers provide successively wider lenses with
+which teams can view the ocean of noncustomers they could tap into to
+unlock new demand. We have found that without such an organizing
+framework, the notion of noncustomers, though seductive, becomes too
+broad a catchall to use to systematically analyze and understand—and
+hence capture—potential demand. In this context, we present two
+formulas that are key to making a blue ocean shift and, we would argue,
+are increasingly tied to your organization’s ability to grow.
+Figure 9-1
+The Three Tiers of Noncustomers
+First, contrary to common practice,
+
+
+Total demand potential ≠ function (existing industry customers)
+Rather,
+Total demand potential = function (existing industry customers +
+first-tier noncustomers + second-tier noncustomers + third-tier
+noncustomers)
+Let’s consider the definitions of the three tiers, how they differ, and
+why they are often closer to an industry than most organizations imagine.
+First-tier noncustomers are all the soon-to-be noncustomers of your
+industry. These buyers patronize your industry not because they want to,
+but because they have to. They use current market offerings minimally,
+to get by, as they search for or simply wait for something better. Upon
+discovering a superior alternative, they will eagerly jump ship. In this
+sense, they sit on the edge of your market. Go back to the US credit card
+industry. Of the small and midsize merchants who accept credit card
+payments and debit transactions, many do so reluctantly. They have
+tolerated the cost of installing point-of-sale technology, the fees for
+processing transactions, and the often hidden costs they may be charged
+(especially those that don’t have the bargaining power to negotiate fees),
+because they knew customers expected to be able to pay with their cards.
+But these noncustomers would willingly make a switch if an easier, less
+cumbersome, and less expensive alternative to the current system
+existed.
+Just think for a moment about how many industries you patronize
+only because you have to, not because you want to, are proud to, or
+enjoy the experience. And think about how you might love to jump ship
+if a compelling alternative came along. If you are like most people, you
+will quickly realize how many industries and organizations you are a
+first-tier noncustomer of. First-tier noncustomers are not only highly
+vulnerable to being poached, but if an alternative could eliminate their
+pain points, it’s likely the rate and frequency of their use would multiply.
+Do you know who your industry’s first-tier noncustomers are?
+Second-tier noncustomers are refusing noncustomers—people or
+organizations that have consciously thought about using your industry’s
+offering, but then rejected it, either because another industry’s offering
+better meets their needs or because yours is beyond their means, in
+which case their needs are either dealt with by another industry or
+ignored. For the credit and debit card industry, second-tier noncustomers
+are all the new businesses, microbusinesses, and self-employed
+
+
+individuals who thought about offering credit and debit card payment but
+in the end chose against it. Even though they knew customers would
+probably appreciate it, their small annual sales, the fragility of their new
+enterprise, or the perceived complication of setting up and paying for the
+point-of-sale system made them reject the industry. Cash and checks tend
+to be the standard payment options for this broad swath of organizations.
+Think about how often you or your organization has been a second-
+tier noncustomer. For example, did you recently choose to paint your
+living room after contemplating the pros and cons of using wallpaper
+instead? If yes, you were a second-tier noncustomer of the wallpaper
+industry. Or did your management decide to use stone flooring in the
+new head office after contemplating wood as an alternative? If yes, your
+organization was a second-tier noncustomer of the wood-flooring
+industry. You see, being a second-tier noncustomer is as easy as that, and
+happens far more frequently than most people or organizations ever
+assume, imagine, or give much systematic thought to. And yet, think of
+how close second-tier noncustomers actually are to patronizing the
+industry they chose against. The simple fact that they contemplated and
+weighed the pros and cons tells you that the industry they rejected is still
+far closer to capturing their wallets than most of its players ever realize.
+Do you know who the second-tier noncustomers of your industry are?
+And why, after considering your offering, they dismissed it?
+Third-tier noncustomers are the furthest away from an industry’s
+existing customers. Commonly, these unexplored noncustomers have
+never been thought of as potential customers, nor targeted by any of the
+industry’s players, because their needs and the business opportunities
+associated with them have always been assumed to belong to other
+industries. Go back to credit cards. Before Square, the industry always
+assumed that a merchant was half of the transaction equation. All the
+transactions that occur between individuals were left off the table and
+unexplored, because they were assumed to belong to another industry—
+cash and checks. After all, who would install a point-of-sale credit/debit
+card system at home? Yet, we would wager that most of us have opened
+our wallets to pay someone, only to discover that we’ve run out of cash
+and wished we could use a credit card instead. But since we can’t, what
+do we do? We reluctantly but hastily go to the nearest ATM. Those are
+the third-tier noncustomers that Square set out to unlock through its
+simple, easy-to-use, easy-to-carry, pay-only-when-you-use-it Square
+
+
+reader.
+Do you, like Square, know who the third-tier noncustomers of your
+industry are? Have you or your organization ever given much thought to
+this tier? You should, because this can be the largest catchment of
+noncustomers an organization can unlock. Quick caution, though: Do not
+be tricked into thinking third-tier noncustomers are “everyone else.”
+They are not. They are people or organizations that would ideally like to
+use, or who could benefit from, what your industry fundamentally offers,
+but who have never seriously considered doing so because your industry
+has made this somehow unfeasible, unattractive, or unimaginable.
+Identifying the Three Tiers of Noncustomers in Your Industry
+When teams are introduced to the three-tiers framework, a natural first
+reaction from some members is to question whether the concept of
+noncustomers applies to their industry. The concept is typically easy for
+executives to grasp when their organization operates in or intends to
+enter a nascent industry. In those circumstances, most teams get the
+applicability right away, even if they struggle initially to identify who the
+dominant noncustomer categories in each tier are. Take, for example, the
+MP3 player. As Apple was designing the first iPod, the number of
+noncustomers of MP3 players was huge and far overshadowed existing
+industry customers.
+Noncustomers abound in every industry, however, not just new ones.
+Think for a moment about orchestras or museums. Significant
+noncustomers? Absolutely. How about credit cards? Square highlighted
+just how many noncustomers there were. CRM software? Think of
+Salesforce.com. Flying? Think about US aviation pre–Southwest
+Airlines. Coffee drinking? You bet—Starbucks grew that industry. And
+the list goes on and on.
+The purpose of this exercise—and what you should aim for—is to
+move the discussion of the three tiers from a theoretical concept to a
+pragmatic reality. Identifying the three tiers of noncustomers in your own
+industry allows you to make this happen.
+Begin with the basic concept
+Start by laying out the definitions of the three tiers of noncustomers
+
+
+using the descriptions and graphic from the previous section. To deepen
+the team’s understanding, and to show how the tiers apply in various
+industries, walk the team through several examples from outside their
+own field. Table 9-1 shows the three tiers of several red ocean industries:
+the credit/debit card industry discussed above, the UK charity fund-
+raising industry examined before, the language translation industry, and
+the orchestra industry. Ask the team questions like these: “If these red
+ocean industries all had oceans of noncustomers could the same be true
+in our industry?” And “If we were to zoom out, and apply a wider-angle
+lens, would we see our own noncustomers?” You should pose these
+questions to the team explicitly to ensure they are seeing the connection
+between the noncustomer insights of these industries and your own
+industry setting. As your team discusses these examples and answers
+these questions, the meaning and relevance of the three tiers will begin to
+sink in. This is typically a sit-up-in-your-chair moment for team
+members, when their emotions start to shift from denial—“Nah, this
+doesn’t really apply to our industry”—to wonder—“Could it be in our
+industry, too? It might just be.”
+Table 9-1 Noncustomers in Various Industries
+The Credit Card/Debit Card Industry
+First Tier of Noncustomers: Small and midsize merchants that
+reluctantly accept credit and debit cards for payment
+Second Tier of Noncustomers: New business, microbusinesses, and
+self-employed individuals who do not accept credit or debit cards
+Third Tier of Noncustomers: Individuals needing to make payments to
+other individuals
+The UK Charity Fund-raising Industry
+First Tier of Noncustomers: Older wealthy individuals who feel
+frustrated with year-round solicitations for funds
+Second Tier of Noncustomers: Young professionals who choose not to
+donate, due to the lack of transparency in percentage of funds that go
+to the cause
+Third Tier of Noncustomers: Children and low-income individuals
+who never thought of donating
+The Language Translation Industry
+
+
+First Tier of Noncustomers: Large corporations frustrated by the time,
+expense, and fractured nature of securing language translation of
+business materials, including website copy, brochures, product
+documentation, etc.
+Second Tier of Noncustomers: Midsize organizations that don’t use
+translation services for the vast majority of languages, even though,
+with the Internet, people from virtually every country can be their
+potential customers
+Third Tier of Noncustomers: Individuals with blogs and small
+organizations, who never thought of using language translation, even
+though it could open a far wider global audience and customer base
+for them
+The Orchestra Industry
+First Tier of Noncustomers: Individuals who attend concerts once a
+season or every few years, as it’s seen more as something they should
+do than something they want to do
+Second Tier of Noncustomers: Individuals who can afford to attend but
+choose not to, as they find the experience boring, outdated, or too
+pretentious
+Third Tier of Noncustomers: Individuals who never considered going
+to the orchestra, as they have no real knowledge of classical music
+and feel the orchestra experience is essentially for the educated elite,
+not ordinary people
+Shift to your industry and offering
+Realizing that noncustomers probably abound in their industry doesn’t
+always make it immediately obvious who those noncustomers are. So
+rather than ask your team to identify them now, start by discussing who
+typically buys and uses the industry’s current offering. Everyone
+working on the team (and in the organization) should have a good feel
+for this information already. It’s also information that’s generally
+available in considerable detail, so it provides a good reference point for
+the team as they start thinking about the total demand landscape. The
+objective, however, is not to engage in a deep analysis of fine-grained
+demographic differences within the existing market, as marketers often
+do. Rather, it is to see whether a major variable, such as age, sex,
+income, family structure, or, for a B2B business, organization size is a
+
+
+reasonable predictor of who the industry’s existing customers are. For
+video games pre–Nintendo’s Wii, for example, the dominant customer
+demographic was young males between the ages of 14 and 26. Likewise,
+higher-income, older, educated individuals were the predominant donor
+group for the UK charity fund-raising industry pre–Comic Relief. As for
+CRM software, before Salesforce.com entered the scene, the dominant
+customer group was Fortune 500 and 1,000 firms.
+Throughout this discussion, it’s important for you to keep the team
+focused on the big picture, and not to let people get bogged down or lost
+in minute details, like what proportion of young male video game users
+are black, white, and Hispanic. Such a discussion and analysis may be
+the path to refining an offering, but it will prevent the team from seeing
+the major defining contours of the industry’s current customers. In our
+experience, too many organizations that have analyzed their customers in
+granular detail fail to see the big picture and the commonalities that unite
+the largest group of them.
+If team members identify several groups of existing customers,
+challenge them to see whether they can identify a broader category that
+would encompass most, if not all, of them. The point here is not to
+duplicate what marketing departments are generally good at doing,
+which is developing a refined understanding of the differences across
+existing customer segments. Rather, the purpose is to seek a higher-level
+understanding of the macro contours and commonalities that cut across
+and unite existing customers so you’ll be able to see the forest for the
+trees.
+Identify the three tiers of noncustomers in your industry
+Now we turn from current customers to noncustomers. Using the three-
+tiers graphic, shown in figure 9-1, as a guide, ask each of the team
+members to think through and write down their thoughts about who
+might be in each tier. To help you perform this task effectively, relevant
+materials and templates are provided for your free download and use at
+www.blueoceanshift.com/ExerciseTemplates. Here are the questions you
+want to ask:
+1. Who sits on the edge of our industry and uses its offering
+reluctantly and/or minimally?
+
+
+2. Who considers our industry and then consciously rejects it,
+satisfying their needs through another industry’s offering or not at
+all?
+3. Who could strongly benefit from the utility our industry offers,
+but doesn’t even consider it, because the way it is currently being
+delivered makes the industry seem irrelevant or out of their
+financial reach?
+For many people, this will be the first time they’ve ever been asked to
+systematically think through the issue of noncustomers. As we have
+witnessed, if an organization has given thought to noncustomers, it’s
+usually in terms of their competitors’ customers, not the noncustomers of
+their overall industry. They ask, “Who are our competitors’ customers,
+and how can we win a greater share of those who patronize other
+players?” But this is not the meaning of noncustomers in blue ocean
+terms. What is key at this stage is getting team members thinking deeply
+about noncustomers and, critically, letting them discover for themselves
+how little they may know or have thought about the wider opportunity
+landscape that exists beyond the current industry’s horizon.
+Organizations often become comfortable commissioning and
+outsourcing large, formal market studies. Hence, it is not surprising that,
+at this juncture, we’ve often been asked, “Don’t we need to be supported
+by formal market research so we will know, concretely, who the three
+tiers of noncustomers are?” In response, remind them that the blue ocean
+shift process is built on firsthand discovery that will be done when the
+team goes out in the field. The purpose here is to maximize the team’s
+firsthand learning and confidence in what they see for themselves in the
+field. With firsthand discovery, the resulting strategy is likely to be
+executed strongly, as the confidence that emanates from the team
+reverberates throughout the larger organization.
+Much to their surprise, team members generally find that, by
+struggling through this exercise independently, they flesh out a rich list
+of noncustomer groups and are really pushed to broaden their thinking.
+Equally important, they see how tightly focused on existing customers
+their strategic lens has been. When people are spoon-fed answers by
+having reports commissioned up front, they seldom realize what they
+don’t know, and too often easily conclude that they “got it, knew it, no
+
+
+big deal,” when, in fact, they didn’t have or know it, and it is a big deal.
+People seldom realize what they don’t know or appreciate the value of
+what they’ve learned if they haven’t struggled to obtain it themselves.
+Making people discover firsthand that what they know—and don’t know
+—is key to getting them to internalize and value what they learn.
+After each of the team members has compiled their list of
+noncustomers, ask them to share their thoughts about whom they put
+where and why. The objective now is for the team to identify and select
+the people or organizations they collectively see as the dominant
+noncustomer group or groups in each tier. Note that team members may
+continue to feel a bit uneasy, because they’re being asked not only to
+move away from what they know, but also to share their thoughts in front
+of their colleagues. Some unease is good, however, because it means that
+team members are being pushed to broaden their current understanding.
+As each of the team members contributes their thoughts on each of the
+three tiers, you should record and post them in front of the group. This
+allows everyone to see the whole team’s thoughts, which in itself is eye-
+opening, as they get to appreciate the differences and similarities in how
+each of them views the same market reality.
+As people share and debate their selections and the thought processes
+behind them, team members’ understanding of who potentially belongs
+in each tier starts to deepen. So does their confidence that opportunity
+exists in the untapped demand that lies beyond the boundaries of their
+industry as it’s currently defined. Typically, as members discuss the
+validity of one another’s reasoning, a number of customer groups are
+crossed off, and different sets of customers get grouped together,
+producing fairly solid agreement among team members as to whom they
+see as the main noncustomer groups in each tier. With this, a good
+understanding of the industry’s total demand landscape starts to come
+into focus.
+Determine the rough size of the new demand landscape
+In this age of Google, where search is simple and easy, and a significant
+amount of industry information is available online, the team can now
+proceed to get a good sense of the new demand that a reconstructed
+offering could potentially unlock. Break the team into subteams, and ask
+them to Google basic statistics on the rough size of each of the
+noncustomer groups. What are the relative proportions of the groups?
+
+
+Just how big is their respective potential demand, based on their per-
+capita or, for B2B players, per-organization spending? Have each team
+do this for all three tiers.
+The objective here is not to nail down specific numbers for each tier,
+but to get a rough sense of how potentially important each tier could be
+to the organization, if it were unlocked. For example, if a noncustomer
+group is currently small and only growing in single digits, it’s likely this
+tier will remain small for the foreseeable future. On the other hand, if a
+noncustomer group is growing at a fairly consistent clip of, say, 30
+percent a year, the team can reasonably surmise that even if the group is
+relatively small today, this tier has the potential to become a significant
+source of noncustomers within a meaningful time frame.
+By the end of this step, teams have usually surprised themselves by
+how much they agree on who the key groups of noncustomers in each
+tier are and the relative demand potential for each. In the next stage of
+the process, these answers may be revised: The relative proportions of
+potential demand across the three tiers may shift, for example, or a new
+group of noncustomers may be identified. Nonetheless, these insights
+allow the team to see both that there is clear scope for creating new
+demand and how limited their understanding of the unlocked demand
+beyond their industry’s conventional boundaries has been. The power of
+this step lies not only in the insights and confidence gained, but also in
+the speed with which team members achieved and internalized these
+insights. This can usually be accomplished in a half- or full-day off-site
+meeting.
+To see how the three-tier exercise can transform a team’s
+understanding of the potential demand for their offering, let’s listen to a
+group of educators discover their noncustomers.
+Discovering an Ocean of Potential Undergraduates
+A private, four-year, US university that we’ll call CU faced a mounting
+challenge. With a student body composed primarily of first-generation,
+college-bound youth from families in the bottom 25 percent of the
+country’s income distribution, CU had a vital mission. But the school’s
+retention rates were falling and operational costs were rising. The
+president of CU not only wanted to turn this situation around, he wanted
+to grow CU and make it a model urban university for youth.
+
+
+The CU blue ocean initiative team, comprising faculty and
+administrators, had just completed the buyer utility map exercise. As the
+team leader summed it up, “There are a lot of pain points in our industry,
+based on outdated, misguided, or wrong assumptions.” “Exactly!” said a
+team member. “We believe we provide a quality education because our
+hearts are in it, we work long hours, and we charge a premium. But none
+of that really matters. Quality is what students get out of school and what
+they can afford. And the competition is getting tougher.”
+“The question is,” the team leader continued, “Will surveying our
+current students give us the answers we need to create a blue ocean and
+break away from the pack?” Team members quickly agreed that existing
+students were likely to request the same things their peers at other
+schools did: better dormitories, a more lively campus, better teachers,
+greater course selection, better school food. “What we’re saying,” the
+team leader concluded, “is that if we start looking for solutions by asking
+our students what they want, at best, we’ll achieve incremental gains at
+an even higher cost. And we won’t grow. To do that we’ll have to look
+outside our market, at our noncustomers. We know who our customers
+are, but who are our noncustomers? Maybe we can discover some
+answers by focusing first on what our ultimate purpose really is.”
+After some spirited discussion, the team reached a unanimous
+conclusion about what constituted their purpose: providing a step change
+in the lives of young people in terms of their economic prospects, self-
+confidence, and ability to thrive in the world. “If that is really the case,”
+said the team leader, “and we all heartily believe it is, then let’s use that
+to be more specific about who the dominant noncustomer groups in our
+three tiers are.”
+“First tier are bright students who enrolled in CU but now are
+insufficiently challenged by their classes and classmates,” one professor
+observed. “They are increasingly tempted to transfer to other schools for
+a greater intellectual challenge.”
+“An even bigger group are students who attend with the help of
+financial aid, parent PLUS loans, and Pell grants,” added another. “But
+as soon as those supplemental funds run out, typically in the third year or
+so, they depart. And neither we nor our peers have strong work-study
+programs to help them close that gap, nor have we challenged ourselves
+on how we could dramatically bring costs down to make our education
+more affordable. Essentially, we try to offer and match everything your
+
+
+standard four-year private college offers with a small fraction of the
+resources. So, our costs are high while quality is compromised. It’s not
+even clear that what these students need from CU to make a step change
+in their lives is what your standard college offers.” Silence.
+Once the discussion on the first tier wound down, and everyone felt
+heard, the team leader shifted to the second tier. “Who are the refusing
+noncustomers of private four-year universites?”
+“This tier is huge,” noted one team member. “It’s all the students who
+choose to go to state universities, over private colleges like ours.” Heads
+nodded. The noncustomer demand landscape was growing.
+The conversation did not stop here, however. “What about all the
+students who choose to go to junior colleges?” a faculty member asked.
+“That’s another large group of second-tier noncustomers. Those are
+students who may want a four-year school but ultimately choose a junior
+college—maybe because it’s more practical, given their professional
+aspirations and personal lives, or because they have more confidence that
+they can succeed in that environment, or maybe they just don’t have the
+funds. Whatever the reason, it’s still a big catchment of second-tier
+noncustomers.” Without any analysis or debate, everyone in the room
+agreed that second-tier noncustomers represented a larger tier of
+potential demand than the existing market.
+The team leader then shifted the discussion to the third tier, the
+noncustomers who could benefit from higher education’s ultimate
+purpose, but who never thought about the industry’s offerings as an
+option. “What are your ideas on who this would be?” asked the team
+leader. After a little while, a sober answer came back: These
+noncustomers are the peers of our students who chose another route
+entirely. Many of CU’s undergraduates come from poor public school
+districts where K-12 education itself is weak. Students in economically
+impoverished districts typically are discouraged from considering higher
+education, and those who do seldom receive the kind of counseling they
+need and that is routinely provided for their peers in better-off districts.
+And yet for these young people, higher education could be the most
+powerful path out of poverty.
+Where could these noncustomers be found? The team members were
+full of ideas: “The military.” “Blue-collar work.” “Missionaries.” “Store
+personnel.” “Maybe entrepreneurs?” This tier, the team agreed, was the
+largest of all. “Look at our competition locally,” said the team leader.
+
+
+“Are they trying to understand these three tiers of noncustomers?” “No!
+Not at all,” responded team members. “That’s why all colleges look the
+same.” The eagerness in the room to look beyond their usual customer
+base was palpable, as was the team members’ impatience to get started.
+Understanding the Strategic Implications of Your Three Tiers
+Before beginning to discuss the overall implications of this exercise,
+have team members again collect their thoughts individually and write
+down the takeaways that jump out at them. Then, as with all the steps in
+the blue ocean shift process, ask each of the team members to share the
+insights they recorded to ensure that all points are put on the table and to
+create collective ownership of the discussion. This precludes the most
+articulate from drowning out the opinions of members who may be more
+reserved but no less perceptive. More than that, the simple act of having
+each member record and voice their key takeaways ensures a deeper
+level of internalized learning, even before you start to calibrate the points
+the team has made.
+In our work with teams, we find they tend to get the most out of this
+discussion when you structure the group discussion via a set of
+systematic questions:
+• What did we learn? Who are the first-tier, second-tier, and third-
+tier noncustomers of our industry or target industry?
+• What is the approximate magnitude of each tier of noncustomers,
+relative to the industry’s existing customer base?
+• Is each of the three tiers small, suggesting scant room to create a
+blue ocean? Or are one, two, or all three of the tiers noteworthy in
+terms of the magnitude of their potential demand?
+• Which tier, if any, has the largest group of noncustomers that could
+potentially be unlocked with a reconstructed offering?
+• Do we see a link between the blocks to utility revealed in the buyer
+utility map and any of the three tiers?
+• Might these blocks to utility be causing the noncustomer groups to
+patronize another industry to fulfill their ultimate purpose?
+• If yes, do we imagine that this tier of noncustomers might be
+
+
+unlocked by systematically exploring what it would take to convert
+them into customers?
+As team members review what they have discovered, they may
+become eager to probe deeper into the hurdles or attitudes that are
+keeping the industry’s noncustomers noncustomers: “What’s missing
+from the industry’s offerings, which, if we included it, would start to
+unlock new demand?” they may ask. This is a sign that they’re
+intellectually engaged and eager to take their learning to the next step.
+You should let them know that in the next step of the process they will
+do precisely that. That said, if the energy generated by this topic is high,
+allow the team to hypothesize about what could be different, while at the
+same time reminding them that, right now, the points being made are just
+that: hypotheses. This allows people to feel heard, while also signaling
+that developing blue ocean offerings demands grounded live field
+research and a structured method, not simply brainstorming in a
+conference room. Team members usually respect this reminder
+tremendously.
+As they discuss the broad context of the industry and the available
+demand opportunity, the team’s understanding of the relative proportions
+of the market for existing buyers and users and the three types of
+noncustomers will start to crystallize. As it does, their perception of
+potential demand will shift from existing industry customers to the far
+larger total demand landscape.
+End Strong
+At the end of this step, to ensure that everyone is on the same page, and
+to create another opportunity for team members to internalize key
+lessons, you should recap the steps the team has taken to date.
+Specifically, you want to remind the team that, as they applied the as-is
+strategy canvas tool, they became clear on the current state of play in the
+industry, the factors the industry competes on, and the degree of
+convergence between their organization’s current strategic profile and
+that of its competitors—convergence that has likely thrown the
+organization into the red ocean. The subsequent step, where they applied
+the buyer utility map, revealed both the subset of utility spaces in which
+
+
+the industry currently competes and, at the same time, the pain points
+and points of intimidation imposed by the industry that potentially limit
+usage by existing customers and turn noncustomers away. By doing so,
+the team has already been able to benefit by identifying low-hanging
+fruit that the organization could act on and fix, even if it decided not to
+go any further. Last, by applying the three-tiers framework, the team
+gained a good grasp of the potential new demand that could be unlocked
+with a reconstructed offering. Noncustomers who were once invisible to
+the team and to the industry have now been made visible.
+At this juncture, the team’s confidence and competence are usually
+another notch higher. Team members start to think, “Yes, there is a way
+out of the red ocean, and just maybe there are real opportunities that we
+could unlock to create a blue ocean.” The team dynamic will also have
+started to shift quite noticeably, as team members now begin to push to
+get on to the next step, rather than wait for the team leader or top
+management to push them to move forward. This is the emotional state
+you want to achieve, and it brings us to the next step where the process
+shifts from broadening perspectives and imagining what could be, to
+generating practical, real-world, blue ocean options. Here the team will
+meet the market and explore the six systematic ways to reconstruct
+market boundaries to unlock new demand and create new market space.
+Let’s get started.
+
+
+Step Four: 
+Find How You Get There

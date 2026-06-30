@@ -1,0 +1,157 @@
+# Glossary
+
+messages, more attractive presentations, or interactions with particularly valuable users are using
+enhanced access as a monetization technique.
+Envelopment. The process by which one platform effectively absorbs the functions—and often the
+user base—of an adjacent platform.
+Excess inertia. The power of network effects to slow or prevent the adoption of new, perhaps better,
+technologies. When one or a few platforms are able to dominate a particular market because of the
+power of network effects, they may choose to resist beneficial innovations in order to protect
+themselves from the costs of change and other disruptive effects.
+Feedback loop. In platforms, any pattern of interactions that serves to create a constant stream of
+self-reinforcing activity. In the typical feedback loop, a flow of value units is delivered to the
+participant which generates a response from him or her. If the units are relevant and interesting,
+the user will be drawn to the platform repeatedly, generating a further flow of value units and
+prompting more interactions. Effective feedback loops help to swell the network, increase value
+creation, and enhance network effects.
+Filter. An algorithmic, software-based tool used by the platform to enable the exchange of
+appropriate units of information between users. A well-designed filter ensures that platform users
+receive only units of information that are relevant and valuable to them; a poorly-designed filter
+(or no filter at all) means users may be flooded with units of information they find irrelevant and
+valueless, driving them to abandon the platform.
+Frictionless entry. The ability of users to quickly and easily join a platform and begin participating
+in the value creation that the platform facilitates. Frictionless entry is a key factor in enabling a
+platform to grow rapidly.
+Linear value chain. See Pipeline.
+Liquidity. A state in which there are a minimum number of producers and consumers in a platform
+marketplace and a high level of interactions taking place. When liquidity is achieved, interaction
+failure is minimized, and the intent of users to interact is consistently satisfied within a reasonable
+period of time. Achieving liquidity is the first and most important milestone in the life cycle of a
+platform.
+Market aggregation. The process whereby platforms provide centralized markets to serve widely
+dispersed individuals and organizations. Market aggregation provides information and power to
+platform users who formerly engaged in interactions in a haphazard fashion, often without access
+to reliable or up-to-date market data.
+Matching quality. The accuracy of the search algorithm and the intuitiveness of the navigation tools
+offered to users as they seek other users with whom they can engage in value-creating
+interactions. Matching quality is critical to delivering value and stimulating the long-term growth
+and success of a platform. It is achieved through excellence in product or service curation.
+Metcalfe’s law. A principle formulated by Robert Metcalfe which states that the value of a network
+grows nonlinearly as the number of users of the network increases, making more connections
+among users possible (a type of growth also known as convex growth). Specifically, Metcalfe’s
+law posits that the value of a network with n connected users is proportional to the square of the
+number of users (n2).
+Multihoming. The phenomenon of users engaging in similar types of interaction on more than one
+platform. A freelance professional who presents his credentials on two or more service marketing
+platforms, a music fan who downloads, stores, and shares tunes on more than one music site, and
+a driver who solicits rides through both Uber and Lyft all illustrate the phenomenon of
+multihoming. Platform businesses seek to discourage multihoming, since it facilitates switching—
+the abandonment by users of one platform in favor of another.
+Network effects. The impact that the number of users of a platform has on the value created for each
+user. “Positive network effects” refers to the ability of a large, well-managed platform community
+
+
+to produce significant value for each user of the platform. “Negative network effects” refers to the
+possibility that the growth in numbers of a poorly managed platform community can reduce the
+value produced for each user.
+Pipeline. The structure of a traditional (non-platform) business, in which a firm first designs a
+product or service, then manufactures the product and offers it for sale or puts in place a system to
+deliver the service. Finally, a customer shows up and purchases the product or service. This step-
+by-step arrangement for creating and transferring value can be viewed as a kind of pipeline, with
+producers at one end and consumers at the other. Also known as a linear value chain.
+Platform. A business based on enabling value-creating interactions between external producers and
+consumers. The platform provides an open, participative infrastructure for these interactions and
+sets governance conditions for them. The platform’s overarching purpose: to consummate matches
+among users and facilitate the exchange of goods, services, or social currency, thereby enabling
+value creation for all participants.
+Platform envelopment. The process whereby one platform effectively absorbs the functions—and
+the user base—of an adjacent platform.
+Price effects. The power of extremely low prices for goods or services to (temporarily) attract
+consumers and lead to rapid growth of a business. Not to be confused with network effects.
+Product or service curation. See Matching quality.
+Re-intermediation. The process whereby platforms introduce new kinds of middlemen into markets.
+Typically, re-intermediation involves replacing non-scalable and inefficient agent intermediaries
+with online, often automated tools and systems that offer valuable new goods and services to
+participants on both sides of the platform.
+Same-side effects. In a two-sided market, network effects created by the impact of users from one
+side of the market on other users from the same side of the market—for example, the effects that
+consumers have on other consumers and the effects that producers have on other producers. Same-
+side effects can be positive or negative, depending on the design of the system and the rules put in
+place.
+Sharing economy. The growing sector of the economy in which products, services, and resources are
+shared among people and organizations rather than having their availability limited to one
+proprietor. Often facilitated by platform businesses, sharing economy systems have the potential
+to unlock hidden or untapped sources of value and to reduce waste.
+Side switching. The phenomenon of platform users from one side of the platform joining the
+opposite side—for example, when those who consume goods or services produced on the platform
+begin to produce goods and services for others to consume. On some platforms, users engage in
+side switching easily and repeatedly.
+Spreadable value unit. See Value unit.
+Supply economies of scale. Economic advantages driven by production efficiencies, which reduce
+the unit cost of creating a product or service as the quantities produced increase. These supply
+economies of scale can give the largest company in an industrial economy a cost advantage that is
+extremely difficult for competitors to overcome.
+Switching. The abandonment by users of one platform in favor of another.
+Switching costs. The costs incurred by users when they abandon one platform in favor of another.
+These may be financial costs (for example, cancellation fees) or costs in terms of time, effort, and
+inconvenience (for example, the need to move information files from one platform to another).
+Trust. The degree to which users of a platform feel comfortable with the level of risk associated with
+engaging in interactions on the platform. Trust is achieved through excellent curation of
+participants in the platform.
+Value unit. The most basic item of value that may be exchanged by users on a platform—for
+example, a photo on Instagram, a video on YouTube, a craft product on Etsy, or a freelance project
+
+
+on Upwork. When a value unit is spreadable, it can be easily distributed by users both on and off
+the platform, thereby helping to fuel viral growth.
+Viral growth. A pull-based process that encourages users to spread the word about the platform to
+other potential users. When users themselves encourage others to join the network, the network
+becomes the driver of its own growth.
+Virality. The tendency of an idea or brand to be circulated rapidly and widely from one Internet user
+to another. Virality can attract people to a network, but network effects keep them there. Virality is
+about stimulating growth among people off-platform, while network effects are about increasing
+value among people on-platform.
+Winner-take-all market. A market in which specific forces conspire to encourage users to gravitate
+toward one platform and to abandon others. The four forces that most often characterize winner-
+take-all markets are supply economies of scale, strong network effects, high multihoming or
+switching costs, and lack of niche specialization.
+OceanofPDF.com
+
+
+NOTES
+CHAPTER 1: TODAY
+1.    Bill Gurley, “A Rake Too Far: Optimal Platform Pricing Strategy,” Above the Crowd, April 18,
+2013, http://abovethecrowd.com/2013/04/18/a-rake-too-far-optimal-platformpricing-strategy/.
+2.    Thomas Steenburgh, Jill Avery, and Naseem Dahod, “HubSpot: Inbound Marketing and Web
+2.0,” Harvard Business School Case 509-049, 2009.
+3.        Tom Goodwin, “The Battle Is for the Customer Interface,” TechCrunch, March 3, 2015,
+http://techcrunch.com/2015/03/03/in-the-age-of-disintermediation-the-battle-is-all-for-the-
+customer-interface/.
+CHAPTER 2: NETWORK EFFECTS
+1.    Aswath Damodaran, “Uber Isn’t Worth $17 Billion,” FiveThirty-
+EightEconomics, June 18, 2014, http://fivethirtyeight.com/features/uber-isnt-worth-17-billion/.
+2.    Bill Gurley, “How to Miss By a Mile: An Alternative Look at Uber’s Potential Market Size,”
+Above the Crowd, July 11, 2014, http://abovethecrowd.com/2014/07/11/how-to-miss-by-a-
+mile-an-alternative-look-at-ubers-potential-market-size/.
+3.    W. Brian Arthur, “Increasing Returns and the Two Worlds of Business,” Harvard Business
+Review 74, no. 4 (1996): 100–9; Michael L. Katz and Carl Shapiro, “Network Externalities,
+Competition, and Compatibility,” American Economic Review 75, no. 3 (1985): 424–40.
+4.        Carl Shapiro and Hal R. Varian, Information Rules (Cambridge, MA: Harvard Business
+School Press, 1999).
+5.    Thomas Eisenmann, Geoffrey Parker, and Marshall Van Alstyne, “Strategies for Two-Sided
+Markets,” Harvard Business Review 84, no. 10 (2006): 92–101.
+6.    Sarah Needleman and Angus Loten, “When Freemium Fails,” Wall Street Journal, August 22,
+2012.
+7.    Saul Hansell, “No More Giveaway Computers. Free-PC To Be Bought by eMachines,” New
+York Times, November 30, 1999, http://www.nytimes.com/1999/11/30/business/no-more-
+giveaway-computers-free-pc-to-be-bought-by-emachines.html.
+8.        Dashiell Bennett, “8 Dot-Coms That Spent Millions on Super Bowl Ads and No Longer
+Exist,” Business Insider, February 2, 2011, http://www.businessinsider.com/8-dot-com-super-
+bowl-advertisers-that-no-longer-exist-2011-2.
+9.    “The Greatest Defunct Web Sites and Dotcom Disasters,” Crave, cnet
+.co.uk, 
+June 
+5, 
+2008,
+http://web.archive.org/web/20080607211840/http://crave.cnet.co.uk/0,39029477,49296926-
+6,00.htm.

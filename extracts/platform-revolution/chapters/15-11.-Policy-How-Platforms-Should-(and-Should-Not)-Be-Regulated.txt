@@ -1,0 +1,1069 @@
+# 11. Policy: How Platforms Should (and Should Not) Be Regulated
+
+public. The issues under debate: Is Airbnb a blessing and a boon to New
+York and its citizens, or a cancer that is undermining the quality of life and
+the economic soundness of the city? And who should have the right and the
+power to decide?
+THE REGULATORY CHALLENGE: REWORKING OLD
+RULES FOR A NEW WORLD
+The emergence of the world of platforms is giving rise to an increasingly
+important social challenge: the need to design balanced internal governance
+systems and external regulatory regimes to ensure they operate fairly.1 As
+platforms such as Airbnb, Uber, Upwork, RelayRides, and many more play
+a growing role in the economy and in the social and political spheres, issues
+about the rights of participants as well as the impact of platform businesses
+on other sectors and on society as a whole are becoming increasingly
+salient. Thus, the unprecedented growth of platforms is bringing regulatory
+issues to the front of the popular consciousness in ways that have not been
+seen since the financial meltdown of 2008–09.
+As debates about these issues rage, many observers are beginning to
+recognize that much of what we all “know” about regulatory policy is
+wrong—at least when applied to today’s rapidly evolving platform markets.
+There is significant tension between the social goals of promoting
+innovation and economic development, which argue for a relatively laissez-
+faire approach to regulating platforms, and the social goals of preventing
+harm, encouraging fair competition, and maintaining respect for the rule of
+law.
+It’s time for policymakers, legal scholars, and business advocates to
+reexamine old assumptions about regulation in light of the changes being
+brought about by the rise of the platform. In this chapter, we’ll explore
+some of the key questions that leaders must grapple with in the years to
+come as platforms continue to transform the economy. Some of the issues
+we will explore include possible effects on tax policy, affordable housing,
+public safety, economic fairness, data privacy, labor rights, and more.
+
+
+THE DARK SIDE OF THE
+PLATFORM REVOLUTION
+We have already noted the many benefits that the explosive growth of
+network platforms is providing. However, we must also acknowledge that
+the spread of platforms will not usher in some kind of new-economy
+nirvana. Like every business, social, or technological innovation, the rise of
+platforms has the potential for harm.2
+Some of the complaints about the rise of platforms reflect the disruptive
+impact of platform businesses on traditional industries. It’s natural that
+companies and workers whose profits and livelihood may be threatened by
+new business models will fight back by any means available, including
+seizing on evidence, meaningful or not, that the new models are causing
+economic, environmental, social, or cultural harm. Some of the attacks on
+platform businesses certainly fall into this category. It’s not hard to
+understand why large publishers and bookstore chains might hate Amazon,
+why record companies might hate iTunes, why taxi companies might hate
+Uber, and why hotel chains might hate Airbnb. Naturally, when criticism of
+platforms—including calls for strict regulation to limit their impact—comes
+from interested sources like these, it should be taken with a grain of salt.
+But this doesn’t mean that there are no legitimate complaints to be raised
+about the impact of platform businesses. Visitors to New York who take
+advantage of Airbnb to enjoy affordable accommodations are fans of the
+service, as are the hosts who make extra money by renting out their spare
+rooms. But some of their neighbors are unhappy. Horror stories about orgies
+in Airbnb rentals, assignations with prostitutes (one of whom reportedly
+ended up getting stabbed), and parties with uncontrolled groups of rowdy
+young drunks have found their way into the tabloid press. One worried
+Manhattan landlord, Ken Podziba, felt driven to install surveillance cameras
+to prove that a tenant was renting out her place in violation of a state law
+forbidding short-term sublets. He succeeded in having her evicted. “Airbnb
+is making money while letting people do whatever they want,” Podziba
+exclaims. “It’s crazy.”3
+As we saw in chapter 8, the impacts of Airbnb on third parties
+uninvolved in the rental arrangement are what economists call externalities.
+A recurring economic problem is when the cost of negative externalities is
+
+
+borne not by the people or companies that created them but by “innocent
+bystanders” who are stuck with the problem. Externality issues are a great
+way for a business to antagonize its neighbors and invite intervention by
+regulators—and Airbnb is currently grappling with a number of them.
+Lack of consistent insurance coverage has been one of the most serious
+externality questions around Airbnb. In December 2014, after years of
+complaints, Airbnb announced a new policy that would provide $1 million
+of liability coverage to protect its U.S. hosts from damages caused by
+wayward guests. The problem: this is so-called secondary coverage, which
+only kicks in after the host’s personal homeowner’s policy is used up. And
+nearly all personal homeowner’s policies in the U.S. specifically exclude
+coverage for “commercial activity” in the home—including rentals. Airbnb
+appears to be hoping that the cost of damages will somehow get pushed
+onto personal insurance policies administered by companies that aren’t
+diligent about investigating claims—or that are deceived by homeowners
+who lie about their role as Airbnb hosts.
+Naturally, this partial insurance coverage is worrisome to many Airbnb
+hosts. But as financial journalist Ron Lieber points out, it also creates an
+externality that could impact thousands of otherwise uninvolved citizens.
+“If Airbnb succeeds in sharing risk with personal insurance companies,” he
+writes, “then everyone’s premiums have to rise to cover it.”4
+Of course, as we’ve noted, some externalities are positive—economic
+and other benefits that businesses provide to uninvolved third parties. Some
+data suggest that hotel prices fell slightly after the entry of Airbnb, likely
+increasing the tourism business and ultimately benefiting local restaurants
+and other attractions.5 Other data suggest that the number of drunk driving
+deaths has fallen slightly after the entry of Uber.6 But such positive
+externalities are often difficult to document and quantify, while negative
+externalities tend to be vivid, unmistakable, and painful. Is it fair for Airbnb
+to slough off those external costs onto individuals who are not part of the
+platform, or onto the society at large?
+These issues are far from theoretical. Some platform businesses have
+actually been shut down because of concerns about negative externalities.
+Consider the MonkeyParking app. Launched in San Francisco in January
+2014, this system encouraged drivers to vacate parking spaces by
+auctioning off the empty places to other users of the system, splitting the
+proceeds with the driver who vacated. Many observers considered it unfair
+
+
+that the system encouraged the privatization and monetization of a public
+good—parking spaces—and thereby affected the openness and accessibility
+of a public transportation system on which countless individuals and
+businesses depend. It also had a negative impact on privately owned
+parking lots, whose owners had invested in their businesses to serve the
+same need. In response to the complaints, in June 2014, regulators stepped
+in to close the platform.7
+The MonkeyParking story isn’t a black-and-white judgment call. It raises
+the question of whether, when, and how the social harm of privatizing a
+public resource outweighs the benefit of providing planned access to a
+scarce resource. A case can be made that a system like MonkeyParking
+produces environmental benefits by reducing the need for drivers to roam
+downtown streets in search of parking spaces, burning fossil fuels and
+adding to traffic congestion in the process. But if we permit MonkeyParking
+to auction off public parking spaces for private profit, are we opening up to
+other questionable market activities? Should platform users be permitted to
+claim choice locations in public parks or beaches on summer weekends and
+auction them off to the highest bidders? What about seats in the most
+desirable public schools? Or private rooms in the best-run public hospitals?
+Do we want to live in a society where those with the most money can claim
+an ever larger share of the most attractive public goods? These are some of
+the questions about external impacts that a seemingly simple case like the
+MonkeyParking story raises.
+Labor platforms, bulwarks of what some call the freelance or 1099
+economy, raise still other issues of social impact and equity. Platforms like
+Upwork, TaskRabbit, and Washio are fine for people who value a flexible
+work schedule above all, but are much more problematic for people who
+find themselves with no choice except to operate as full-time employees on
+a freelance basis without the benefits and worker protections normally
+mandated by law. It’s understandable that businesses want to take advantage
+of the agility and low overhead costs that labor platforms make possible.
+But in a society like the United States, where basic services such as health
+care are provided largely through employer programs, is it desirable to
+create an economic advantage to companies that offload the costs of such
+services onto their freelance employees—or onto government support
+programs that are already financially stressed?8
+
+
+Platforms certainly create benefits for their users—if they didn’t, they
+wouldn’t be exploding in popularity. But they also create unintended side
+effects, including negative externalities, that society as a whole must
+consider and address.
+THE CASE AGAINST REGULATION
+Despite the problems illustrated by platform business like Monkey-Parking,
+there are many who would argue that the potential abuses and social
+dislocations caused by platforms are a small price for the tremendous
+innovation, new value, and economic growth they produce. Platform
+businesses are here to stay, and they are bringing undoubted benefits to
+millions of people. Why run the risk of discouraging innovation through the
+heavy hand of regulation?
+Opponents of regulation are quick to point out the many cases in which
+it fails or backfires. Nobel Prize-winners Ronald Coase and George Stigler,
+members of the famous laissez-faire-oriented Chicago School of
+economics, argue that the vast majority of market failures are best
+addressed 
+by 
+market 
+mechanisms 
+themselves—for 
+example, 
+by
+encouraging the free growth of competitors who provide goods and services
+that produce greater social benefits than their rivals. In their view, the
+evidence of history suggests that government regulators tend to be
+incompetent or corrupt, which means that regulation generally fails to solve
+the problems it is intended to address. In specific instances where the free
+market fails to resolve a significant problem of market fairness or consumer
+protection, it can be addressed by private litigation in the courts.
+One of the most common mechanisms of regulatory failure was labeled
+by Stigler “regulatory capture.”9 The basic premise is that market
+participants will act to influence regulation in their own interests, often
+making the underlying market problems worse rather than better. In his
+1971 article, Stigler illustrated the point with examples drawn from oil
+import quotas, the prevention of new firms entering the airline, trucking,
+and banking industries, and the control of access to labor markets through
+licensing requirements for workers such as barbers, embalmers, physicians,
+and pharmacists. Thanks to regulatory capture, government rules are often
+used to block competition and thwart innovation rather than to protect
+
+
+consumers and benefit society. Stigler and his followers argue that the
+economy and society as a whole will benefit when regulatory capture is
+eliminated—and that this requires the elimination of most government
+regulation of business. Jean-Jacques Laffont and Jean Tirole (the latter the
+2014 winner of the Nobel Prize in Economics) extended Stigler’s analysis
+using an agency perspective, making the point that “principals,” like voters,
+have imperfect control over their “agents,” including elected and appointed
+officials. Laffont and Tirole show that it would be impossible for firms to
+benefit from regulatory capture if the principals involved had more
+complete information about and control over the behavior of their agents.10
+There’s no doubt that regulatory capture does exist. Managers of
+government agencies charged with devising and enforcing business
+regulations must often turn to business leaders for advice and guidance on
+how to craft those regulations, which often means that the rules end up
+benefiting companies—or certain highly influential companies—rather than
+the public at large. In some powerful industries, such as financial services,
+executives have been known to divide their careers between Washington
+and the private sector, so that the same people who design regulatory
+regimes later advise corporations on the best ways to evade those regimes
+or manipulate them for profit (a practice that Laffont and Tirole specifically
+highlighted).
+Today, some of the regulatory battles about platform businesses reflect,
+in part, efforts by traditional industries to use government regulation as
+shields against the competitive models that platforms introduce. Thus, as
+commentator Conor Friedersdorf puts it, “The car service Uber is fighting
+in cities all over America to end the regulatory capture enjoyed by the
+taxicab industry.”11 Airbnb is facing similar battles with regulators who are
+influenced by long-standing relationships with the hospitality industry.
+In the eyes of some observers, the phenomenon of regulatory capture
+sharply undercuts the claims to legitimacy of most economic regulation by
+government. For example, in a post on his blog Cafe Hayek, libertarian
+economist Don Boudreaux summarizes the way Uber enables drivers to
+transform their personal cars from private goods into part of the economy’s
+capital stock, then goes on to criticize “government interventions against
+Uber and other sharing-economy innovations” as both “obstacles to market
+forces that improve consumers’ access to goods and services” and “assaults
+
+
+against market forces that increase the amount of wealth-producing capital
+that ordinary people are able to own, control, and profit from.”12
+You may or may not agree with Boudreaux that attempts to restrict the
+spread of Uber constitute today’s “single most obnoxious example of
+government intervention.” But the existence of the phenomenon of
+regulatory capture is not necessarily a fatal blow to the argument in favor of
+regulation—or even the argument in favor of regulating platforms in
+particular. It’s possible to argue that, rather than eliminating regulation
+altogether, we need to design political, social, and economic systems that
+reduce the likelihood of regulatory capture—for example, through laws that
+restrict the “revolving door” between business and government.
+Economist Andrei Shleifer, a scholar in the areas of corporate
+governance and government regulation, points out that there are strong
+differences in the prevalence of regulatory capture across countries. When
+governments are relatively unchecked by their citizens, strong regulation
+often leads to high levels of corruption and expropriation by government
+officials. And, indeed, this is widely seen in authoritarian countries.
+However, in countries with more accountable governments, such as those
+seen in northern Europe, higher levels of regulation appear to be relatively
+free of such corruption, which reduces the level of regulatory capture. In
+these circumstances, Shleifer argues, regulation can be compatible with
+promotion of social welfare and economic growth.
+Shleifer notes, moreover, that the reliance of the Chicago School on
+litigation as an alternative to regulation assumes and depends upon the
+existence of an independent and honest judiciary. This ignores the fact that
+judges and lawyers are just as subject to manipulation and capture as other
+government employees.13 More broadly, Shleifer’s argument is consistent
+with the argument made by Laffont and Tirole in favor of regulation that is
+specific to countries and technologies.14
+In general, the historical record doesn’t support the arguments of people
+who favor no regulation of business. In fact, it’s difficult to identify any
+developed marketplace that has been completely free of intervention by
+government authorities. Regulation to prevent anti-competitive practices
+goes back at least as far as ancient Greece and Rome, where state
+authorities took swift action to mitigate grain market price fluctuations that
+occurred due to natural (weather) events as well as deliberate market
+manipulation by merchants and shipping agents.15 In the same way, modern
+
+
+societies depend upon regulators to enforce rules of fair play in markets.
+When regulation fails, we get the scandals of insider trading, the meltdown
+of the mortgage securities market, or the high prices enjoyed by incumbent
+monopolists.
+Relatively few people want to live in a world free of all regulation, and
+in a complex society like the one we live in today, regulation serves a
+number of important social functions. The airline system in the developed
+world is astonishingly safe, given the complexity of the technologies
+involved and terrorist attempts to sabotage it.16 This record is a result both
+of improved technology and training and of relentless post-crash
+investigations by government agencies like the National Transportation
+Safety Board, which have led to a systematic elimination of risk factors. In
+similar fashion, we depend upon regulation to maintain the purity of our
+drinking water, the safety of our transportation systems, and our ability to
+respond to and control infectious diseases.
+For all these reasons, only a relatively small fraction of the population
+would endorse the extreme libertarian position of calling for a complete
+elimination of business regulations—which means that the question is not
+whether, but precisely how, platform businesses should be covered by
+regulatory regimes.
+Of course, there is a tradeoff between the benefits and costs of
+regulation. A complete absence of regulation is likely to produce high social
+and economic costs through the persistence of problems like business fraud,
+unfair competition, monopolistic and oligopolistic practices, and market
+manipulation. On the other hand, the most extreme level of government
+intervention into markets, as seen in some totalitarian countries, leads to
+other problems, including corruption, inefficiency, waste, and lack of
+innovation. Usually the existence of such tradeoffs implies that an
+intermediate solution is best, and indeed the world’s most vibrant
+economies have typically employed some intermediate level of government
+regulation via oversight agencies, judicial review, or some combination of
+the two.
+Economist Simeon Djankov and colleagues have classified the range of
+possible regulatory regimes on a spectrum from private orderings (what we
+call private governance), through systems that rely on court rulings
+administered by independent judges or regulation by state employees, to
+direct government ownership of assets (socialism).17 Their visual depiction
+
+
+of this spectrum (Figure 11.1) reflects the tradeoff between social losses
+because of private misdeeds and social losses because of government
+misbehavior.
+Over the last two generations, as Andrei Shleifer has noted, most
+economists and political theorists have shifted from viewing government
+intervention in a positive light to preferring privatization.18 Today, there’s a
+trend toward regulation that was once provided by governments now being
+provided by private entities acting in their own self-interest—for example,
+the gradual shift from nationally mandated accounting standards like the
+Generally Accepted Accounting Principles used in the United States toward
+the International Financial Reporting Standards promulgated by the
+International Accounting Standards Board, a private organization based in
+London. We believe this trend will continue and that governments must
+rethink what they choose to regulate and what kinds of regulation private
+entities can provide more efficiently. One purpose of this chapter will be to
+suggest the circumstances in which regulators should consider intervention
+in platform markets and those in which platforms might best govern
+themselves.
+
+
+FIGURE 11.1. Djankov’s depiction of the curve of “social losses” produced by either the
+complete absence of regulation (on the left) or total control of business by government (on the
+right). Reprinted by permission.
+REGULATORY ISSUES RAISED BY THE GROWTH OF
+PLATFORM BUSINESSES
+Let’s consider some of the most significant regulatory issues that have come
+to the fore as a result of the rise of platform businesses over the last two
+decades.
+
+
+Platform access. As platforms become increasingly important markets
+for goods and services, access to platforms can be a legitimate subject for
+inquiry by regulatory authorities. When certain potential participants are
+excluded from a platform, it raises questions about who benefits from the
+exclusion, whether that exclusion is fair, and what its long-term impact on
+the overall marketplace is likely to be.
+For example, the Alibaba Group handles 80 percent of e-commerce
+transactions in China.19 The threat of exclusion presents a serious challenge
+to any firm conducting business online. Access is also a concern of every
+startup hoping to break into the top listings, among millions, when they
+have no transactions history to raise their page ranks. In the computer game
+console market, the platform sponsors (Sony, Microsoft, and Nintendo)
+have been known to offer category exclusivity to certain firms such as
+Electronic Arts in exchange for their support of the platform. Firms can
+achieve the same ends when they buy producers that provide critical
+components or software for their platforms. For example, Microsoft
+acquired the game studio Bungie in order to ensure exclusive access to the
+popular Halo video game franchise when the Xbox was launched in 2001.
+Access and exclusivity also play a role in platform compatibility. In
+1997, Sun Microsystems filed suit against Microsoft for intentionally
+“forking” the Java programming language—that is, creating an
+incompatible branch in the code base—in order to limit its appeal on
+operating systems other than Microsoft Windows. Sun filed another suit in
+2002 when Microsoft excluded Java from desktop distribution in favor of
+.NET, a proprietary Microsoft language.20 In 2015, the mobile operating
+system Android has split into open and proprietary versions. Commercial
+and regulatory inducements to maintain compatibility can be necessary to
+preserve the interests of consumers.
+The issue of exclusion is especially significant when network effects are
+strong, as business professor Carl Shapiro argues. “[S]uch exclusionary
+contracts and exclusive membership rules,” Shapiro notes, “can be
+especially pernicious in network industries, posing a danger that new and
+improved technologies will be unable to gain the critical mass necessary to
+truly threaten the current market leader.”21 He goes on to say: “Ultimately,
+this is not a story about consumer harm based on monopoly pricing,
+although that can be part of the problem. The graver problem is that the
+pace of innovation may be slowed, denying consumers the full benefits of
+
+
+technological progress that a dynamically competitive market would offer.”
+This phenomenon has been dubbed excess inertia, referring to the power of
+network effects to slow or prevent the adoption of new, perhaps better,
+technologies. When one or a few platforms can dominate a particular
+market because of the power of network effects, they may choose to resist
+beneficial innovations in order to protect themselves from the costs of
+change and other disruptive effects.
+It’s certainly arguable that regulators should consider whether
+government intervention would be appropriate in cases where arbitrary
+denial of access to a particular platform seems likely to lead to excess
+inertia.22 However, it’s not always easy for observers to judge what the true
+impact of a particular competitive move may be. In some instances, the
+apparent outcome may change dramatically when viewed over time.
+For example, in a 2014 article, two of the authors of this book (Geoffrey
+Parker and Marshall Van Alstyne) argued that platform policies that limit
+competition among developers can actually benefit consumers in the long
+run by fostering higher rates of innovation.23 The process works like a short-
+term micro-patent: a platform grants temporary category exclusivity to a
+particular extension developer in exchange for substantial investment in
+new products or services. (SAP has used this “preferred partner” strategy
+with developers like ADP, and Microsoft has used it with selected game
+developers.) Over time, the innovations created under this time-limited
+arrangement tend to be folded into the core platform. They then become
+available to all consumers for their direct consumption and also become
+available to the next generation of developers to foment new innovation.
+For these reasons, we’d urge regulators to move with caution when
+considering intervention in cases that concern platform access.
+Fair pricing. A practice that has traditionally drawn regulatory interest is
+predatory pricing—the situation in which a firm prices goods or services so
+low that it cannot possibly be making money. The low prices temporarily
+benefit consumers, but in the long run harm them by driving competitors
+out of business, which permits the remaining supplier to raise prices to
+monopoly levels. This, of course, is the objective of the predatory pricer in
+the first place, and it explains why government regulators have sometimes
+stepped in to prohibit pricing practices they view as predatory in nature.
+
+
+However, two of the authors of this book (Parker and Van Alstyne) have
+done research that calls into question the traditional interpretation of lower-
+than-cost prices and therefore the regulator’s definition of predatory pricing.
+Our analysis shows that in fact firms with strong two-sided network
+externalities can maximize profit even when they distribute services to one
+side of the market at a price of zero. They achieve this result by earning
+attractive profits through sales of the goods or services they provide to the
+other side of the market.24
+Along with other authors, including Jean Tirole, this line of research in
+two-sided networks has overturned the conventional wisdom and required
+regulators to retool their predation tests to incorporate network effects.25 In
+particular, regulators have viewed the practice of selling goods or services
+at or below cost as evidence of intent to drive competitors out of business
+with the intent of then raising prices once those competitors are gone.
+However, as discussed above, when firms take cross-market externalities
+into account, they can rationally price their goods or services at zero when
+selling to certain groups of customers, even in the absence of competition.
+Despite these changes in competition analysis, there are still open issues
+of platform law to be decided. The case brought against Google’s search
+service by the European Union in 2015, which accuses Google of favoring
+its own comparison shopping service over that of rivals, illustrates this
+point.26 Interestingly, a similar complaint to the Federal Trade Commission
+(FTC) in the U.S. was dropped in 2013.27 Another platform giant, Amazon,
+is facing scrutiny over its role in the book market. The concern is that
+Amazon is lowering prices in order to gain market share and that, once
+competitors exit, prices will rise.28 We are skeptical about the specific
+charge against Amazon—namely, that book prices will rise significantly
+once the company’s dominance is complete—but we are somewhat more
+sympathetic to the idea that Amazon might act as too powerful a gatekeeper
+for an important cultural industry, perhaps establishing its own proprietary
+format for digital content, as it has tried to do with Amazon Word (AZW),
+the format used on the Kindle reader. Free pricing of book chapters given
+away in the AZW format, for example, could be used as a Trojan horse,
+attracting readers as part of a long-term strategy leading to increased
+platform control and a shift from an open to a closed proprietary standard.
+
+
+Data privacy and security. Citizens have long had reason to wonder
+about what firms might be doing with the personal data they collect about
+their customers. The ability of businesses to gather finely detailed data
+about individual households expanded dramatically with the introduction of
+the consumer credit card. This financial innovation helped increase
+consumer spending by making it much easier to access credit. But this, of
+course, meant banks had a significant incentive to use data to measure the
+creditworthiness of customers. To provide this analysis, three major
+consumer credit information agencies arose: Equinox, Experian, and
+Transunion. In exchange for interaction-level detail from the banks, the
+agencies computed credit scores for consumers that banks could use to
+decide whether to extend credit and if so, at what rates. If you’ve ever taken
+out a car loan or a mortgage, you’re familiar with the importance and
+impact of your credit score.
+Early data security regulation focused on the need to provide
+transparency around the criteria used to compute credit scores. Stories of
+racial and geographic discrimination abounded.29
+In 1974, Congress passed the Equal Credit Opportunity Act, which
+prohibited credit discrimination on the basis of sex and marital status. It was
+amended in 1976 to include race, color, religion, national origin, source of
+income, and age. In 1977, the FTC began to devote a significant fraction of
+its resources toward enforcing the act and addressing the discriminatory
+practices that had led to its passage.30
+Today, however, issues regarding the use of consumer data have grown
+in scale and complexity. The credit agencies have been plagued by
+problems such as stolen and mistaken identities that can take years for
+consumers to resolve, causing untold harm.31 The use and abuse of
+consumer information by the credit agencies and the lenders who rely upon
+them are also the subject of fierce debate. Practices like predatory lending
+—the deliberate targeting of consumers who can’t afford credit by lenders
+eager to profit from exorbitant interest rates and fees for missed payments
+—have been blamed for contributing to economic inequality and even
+market instability.
+It’s against this backdrop that the FTC came to be the leading U.S.
+player in regulating the practices of data service providers.
+Most consumers appear to be willing to trade access to detailed data
+about their spending behavior for easy access to credit. But many may not
+
+
+fully appreciate the fact that the same dynamics that power the credit
+agencies underlie the services provided by “free” information service
+businesses—the data aggregators we described in chapter 7. If you’ve gone
+online to search for or simply research information about a camera, a book,
+or any other consumer product, you probably noticed that advertisements
+for the same product subsequently popped up on every website you visited.
+This is data-driven marketing in action, and the sale of the underlying
+personal information about consumers is a significant source of income for
+many platform businesses.
+You may find those customized ads on the Internet a bit unsettling. Even
+more unsettling are some of the less obvious ways in which personal data
+are used. Many firms—both platform businesses and others—track
+consumers’ web usage, financial interactions, magazine subscriptions,
+political and charitable contributions, and much more to create highly
+detailed individual profiles. In the aggregate, such data can be used for
+cross-marketing to people who share profiles, as when a recommendation
+engine on a shopping site tells you, “People like you who bought product A
+often enjoy product B, too!” The anonymity of this process renders it
+unobjectionable to most people. But the same underlying data can be, and
+is, sold to prospective employers, government agencies, health care
+providers, and marketers of all kinds. Individually identifiable data about
+sensitive topics such as sexual orientation, prescription drug use,
+alcoholism, and personal travel (tracked through cell phone location data)
+can be purchased through data broker firms such as Acxiom.32
+Consumer concern over the practices of the data broker industry has led
+to a number of investigations, including a major FTC inquiry that resulted
+in a report titled “Data Brokers: A Call for Transparency and
+Accountability.”33 But very little has actually changed to prevent practices
+that many find objectionable.34
+Skeptics say that, in reality, citizen concerns about data privacy are
+superficial. They point out that consumers routinely share intimate personal
+information about themselves on social media platforms such as LinkedIn
+and Facebook, and that they are increasingly “instrumenting themselves”
+using fitness, health, and diet tools like Fitbit, Jawbone, and MyFitnessPal.
+Although these platforms have privacy policies that are available to
+consumers, they are written in dense legalese that very few users bother to
+read. The readiness with which consumers publicly expose information
+
+
+about themselves through platforms suggests that few citizens care
+passionately about the issue of data privacy—which makes it unlikely that
+either regulators or platform managers will rein in the use of personal data
+any time soon.
+One final point with respect to privacy is the issue of data ownership.
+Data aggregators and other firms with access to information are, in effect,
+asserting an ownership interest in data that might otherwise be viewed as
+belonging to individuals. In a provocative act designed to shed light on the
+issue, a young woman named Jennifer Lyn Morone has incorporated herself
+in order to assert an ownership interest in the data stream that she
+generates.35 Companies that profit from the use and sale of personal data, of
+course, are unlikely to find Morone’s gesture either amusing or persuasive.
+But the issue is not going to disappear. J. P. Rangaswami, chief data officer
+for Deutsche Bank, predicts:
+As we learn more about the value of personal and collective information, our approach to such
+information will mirror our natural motivations. We will learn to develop and extend these rights.
+The most important change will be to do with collective (sometimes, but not always, public)
+information. We will learn to value it more; we will appreciate the trade-offs between personal
+and collective information; we will allow those learnings to inform us when it comes to mores,
+conventions, and legislation.36
+In a world where data is widely described as “the new oil,” it’s clear that
+the issue of data ownership will need to be resolved through some
+combination of regulatory action, court rulings, and industry self-
+regulation.37 Each new scandal involving the release of sensitive
+information, such as the 2014 disclosure that Sony Pictures had leaked
+access to the viewing history of millions of users, is likely to increase the
+push to establish ownership rights over user data.38 Such ownership rights
+would give victims a legal course of action after data breaches occur; the
+theory is that, given high enough liability, firms will take data security more
+seriously and act to prevent future leaks.39 In some niche markets,
+agreements over data ownership are already being developed. For example,
+in November 2014, a collection of major agricultural companies and
+organizations, including Dow, DuPont, Monsanto, and the National Corn
+Growers Association, agreed on a set of principles defining the rights of
+farmers to own and control data about their crops.40 Consider the
+implications: sensor data used to improve crop yield could just as easily be
+used to predict soybean futures. These secondary uses have the potential to
+
+
+create vast wealth in which the sources of that data would have a legitimate
+interest.
+National control of information assets. The global reach of the Internet
+has added significant complication to business regulation. Developing
+sensible rules concerning the role of national borders in business
+transactions, and then finding ways to enforce those rules consistently and
+fairly, is far more difficult in a world that is electronically interconnected.
+One example of this difficulty is the application to platform businesses of
+rules regarding national control of data access.
+When multinational firms expand into less developed countries, they are
+usually required to follow so-called local content regulations, which are
+designed to stimulate the local economy and to ensure that a portion of the
+economic growth created by the new venture remains in the host country
+rather than being transferred to the headquarters of the multinational. For
+example, when corporations like Siemens and GE expand into sub-Saharan
+Africa, they are often required to set up local operations, in activities such
+as training and service. This is why Siemens operates a Siemens Power
+Academy in Lagos, Nigeria, to train technicians for the electrical power
+industry.
+Some industry observers believe it is possible that the local content
+requirement might extend to data services—requiring, for example, that
+business data be stored and processed locally rather than internationally. If
+this principle becomes widely established, the value of the data involved
+may be significantly diminished. For example, if GE or Siemens power
+turbines around the globe were connected into a single network for data
+collection and study, the resulting data flow could become the basis of
+comparative analysis that would yield a unique “usage signature” for each
+machine. This would enable data analysts to make more accurate
+predictions of turbine performance and create customized maintenance
+schedules that could save money for both the corporation and its customers.
+However, realizing this positive outcome requires access to tremendous
+amounts of information for real-time processing—access that local data
+content laws might thwart. It’s a good example of the kind of regulatory
+restriction that governments should reconsider in the light of the new
+capabilities offered by platform ecosystems.41
+
+
+Privacy laws in Europe represent another form of what might be called
+data nationalism. Rules concerning the flow of data have been established
+for the ostensible purpose of protecting citizens’ privacy. The result is a
+hodgepodge of local data processing centers and a fragmentation of data
+that, if aggregated, could be used for commercial purposes. The number of
+billion-dollar startups in the U.S. is forty-two, but only thirteen in the EU.42
+An inability to scale network effects could be one reason. Recent evidence
+suggests that this EU data privacy regime is already having a notable
+economic impact. For example, ad placement firms, which rely on insights
+from big data to optimize their decisions, are significantly less effective in
+their European operations than in comparably wealthy regions such as the
+United States that lack restrictive data management rules.43
+Tax policy. One of the hottest regulatory issues facing platforms is tax
+policy. As quickly growing platforms that do business around the country
+and even around the world reorganize the economy and put countless local
+“mom and pop” companies out of business, who benefits from the sales tax
+dollars generated? Should they be paid at the location of a central producer,
+or should they be collected at the point of consumption? The economic and
+political impact of questions like these can be substantial.
+As the world’s second biggest online retailer (based on revenues),
+Amazon has been the poster child for this issue. In most countries where
+Amazon operates, a national sales or value-added tax is levied, which
+Amazon must collect from all customers. However, the crazy quilt of state
+and local sales taxes in the U.S. creates opportunities for Amazon to
+minimize its tax collection obligations and thereby keep the perceived price
+of its goods as low as possible. The company has battled with numerous
+state regulators and legislatures over sales tax rules, often refusing to collect
+taxes until specifically compelled to do so by the passage of new laws. In
+some states, Amazon claims not to maintain a “legal presence” sufficient to
+require payment of sales tax, despite operating large warehouses and
+shipping centers in those states. And in some cases, Amazon has played one
+state off against another—for example, apparently rewarding Indiana for
+passing a law that exempted the company from collecting sales tax by
+locating no fewer than five of its regional warehouses in the state. Today,
+Amazon collects sales taxes in twenty-three U.S. states, including several of
+
+
+the largest, while holding out against tax collection requirements
+elsewhere.44
+The same issue exists in regard to other online platforms, such as labor
+platform Upwork, which reduces local tax collections by putting local
+staffing agencies out of business. It would seem that the international reach
+of online platforms renders traditional local and state sales tax regimes
+obsolete, and that a national sales tax law would be a natural and logical
+solution. However, as of the mid-2010s, it seems highly unlikely that the
+U.S. Congress, with its strong anti-tax bias, will pass such a law.
+A next-best solution would be a bill making it easier for states to impose
+sales tax on goods purchased online from out-of-state sources, and such a
+bill has in fact been introduced in Congress several times since 2010. An
+early version, called the Main Street Fairness Act, failed to advance beyond
+the committee stage, thanks in part to heavy lobbying against the bill by
+representatives of Amazon.
+A newer version called the Marketplace Fairness Act was passed in the
+Senate in May 2013, though it has not yet been brought to a vote in the
+House. In a fascinating twist, the Marketplace Fairness Act has been
+publicly supported by Amazon (as well as by retail giant Walmart). The
+likely reason for the reversal: since Amazon now collects sales tax on most
+of the goods it sells, the company stands to gain from a simplified sales tax
+system that will apply equally to all Internet merchants—including the
+many smaller rivals of Amazon who currently skate by collecting little or
+no tax on most of their sales. It’s a classic illustration of how regulatory
+debates that evoke majestic concepts such as equity, freedom, and the
+sanctity of the marketplace often turn, in the end, on nitty-gritty issues of
+dollars and cents and the political clout that various players bring to the
+legislative table.
+Labor regulation. Those who operate labor platforms usually choose to
+describe their systems as intermediaries that serve solely to match labor
+with demand for services. In this view, the people who sign up for work
+through firms such as Uber, TaskRabbit, and Mechanical Turk are truly
+independent contractors, and the platform bears little legal (or moral)
+responsibility to the parties on either side of the interaction once the match
+has been made.
+
+
+However, from the perspective of regulators who are charged with
+safeguarding the welfare of working men and women, this position is
+dubious. In the traditional world of offline business, a number of firms that
+classify full-time, permanent employees as contract labor for legal and
+regulatory purposes have been drawing unfavorable attention for the
+practice. For example, in August 2014, FedEx lost a federal court case
+involving 2,300 full-time workers in California who were classified as
+contractors rather than employees. The practice, which the court ruled was
+illegal, reduced FedEx’s responsibility for benefits, overtime payments,
+Social Security and Medicare contributions, and even reimbursement for
+work expenses such as uniforms. (FedEx has said it plans to appeal the
+ruling.)45
+Labor platforms will need to monitor the evolution of regulation in this
+area very carefully. While government agencies and judges vary in their
+attitudes and in their readiness to challenge widespread business practices,
+many look askance at employment models that seem to be designed solely
+to shield companies from responsibility for the well-being of their workers.
+Perhaps equally significant, the reputation of online labor platforms has
+already taken a serious hit in the unofficial “court of public opinion”—as
+reflected, for example, in more than a million Google results, many from
+respectable mainstream media outlets, in response to the query “Internet
+sweatshop.”46 In the long run, public disapproval of business behavior can
+have a meaningful impact on the value of a company’s brand—which
+means that the court of public opinion operates, at times, as an unofficial
+regulatory body that business leaders are wise to heed.
+Similarly, there are limits to the extent to which labor platforms will be
+able to evade responsibility for their practices in hiring, screening, training,
+and supervising workers—even when those workers are technically
+classified as independent contractors. Uber, for example, has experienced
+significant criticism for alleged sexual assaults committed by its drivers on
+passengers.47 At a time when Uber is engaged in a fierce battle over
+regulation with the traditional taxi industry, it can ill afford the suspicion
+that its labor practices are shoddy.
+On a very different front, the emergence of online labor platforms is
+creating new challenges for regulators tasked with monitoring and
+measuring the national and local labor markets. Because of multihoming,
+freelancers can switch between multiple platforms over the course of a day
+
+
+—for example, drivers can accept jobs for both Uber and Lyft. This makes
+it all the more complex for government agencies to accurately capture labor
+and unemployment data, which in turn play an important role in economic
+and political policy debates. If employment platforms continue to grow, this
+will be an increasingly important issue.
+Potential manipulation of consumers and markets. When platforms
+grow big enough, they have the potential to cease being mere participants in
+markets—serving to efficiently match existing supply with existing demand
+—and actually begin manipulating individual users and even entire markets
+through their great size and reach.
+There are disturbing indications that this is already beginning to happen.
+Retail platform Amazon controls such a large share of the online book
+market that even giant publishers feel pressured to accept business terms
+they’d otherwise consider unacceptable. During a seven-month dispute with
+Amazon over price-setting policy, the French-based Hachette Book Group
+—one of the world’s largest publishers—found online sales of its products
+being delayed and preorder buttons for some of its titles being removed.
+Since preorders play an important role in determining whether or not a book
+achieves bestseller status, these steps by Amazon impacted the long-term
+success of a number of Hachette publications. The two sides finally came to
+terms in November 2014, having apparently reached some kind of
+compromise and with neither side claiming outright victory.48
+Facebook users and privacy experts were distressed in June 2014, when
+it was revealed that, two years previously, the newsfeeds of almost 700,000
+members had been deliberately manipulated as part of a psychological
+experiment. The researchers, including Cornell professor Jeffrey Hancock
+as well as some Facebook employees, altered the news flows to include an
+abnormally low or an abnormally high number of either positive or negative
+posts. According to the study results, the status messages posted by the
+Facebook members in response showed that “emotional states can be
+transferred to others via emotional contagion, leading people to experience
+the same emotions without their awareness.”49
+The stakes get higher as influence moves to politics. In one study of 61
+million Facebook users, news feeds with positive social pressure caused
+roughly 2 percent more people to vote or at least declare that they had voted
+relative to people who did not receive such messages. In fact, Facebook
+
+
+social messaging increased turnout directly by about 60,000 people and
+indirectly by about 280,000 more people via social contagion.50 While there
+is no evidence that election outcomes changed, one can imagine close races
+where a 2 percent margin affects who wins.
+It’s an interesting finding—one that Facebook advertisers and others
+seeking to influence the attitudes and behaviors of large numbers of people
+might find valuable. But these studies were conducted without the
+knowledge or consent of their subjects. And not all the studies received
+prior approval by any institutional review board, which is normally required
+before experimentation on human subjects is conducted. Outside experts
+responded by challenging the ethics and possibly even the legality of
+Facebook’s actions. Amidst the ensuing furor, Mike Schroepfer, Facebook’s
+chief technology officer, announced that the company would henceforth
+conduct an “enhanced review process” before performing research dealing
+with sensitive emotional issues.51
+In a third case, Uber was embroiled in controversy in July 2015, when a
+team funded by FUSE Labs, a research organization sponsored by
+Microsoft, reported on the existence of so-called “phantom cabs” on the
+Uber passenger app—cars that appear to be close to a passenger pickup
+location but which in fact do not exist. An Uber spokesperson explained the
+phantoms as a mere “visual effect” that riders should ignore, but some
+drivers and passengers suspect they may be a deliberate ploy to trick riders
+into thinking Uber cabs are closer than they really are. Other reported visual
+anomalies on the Uber app create misleading or confusing impressions of
+high-demand areas that forecast higher “surge” pricing.
+The FUSE researchers say that both drivers and passengers are learning
+to game the system, trying to avoid being misled by Uber’s inaccurate
+visual data. They conclude: “Uber’s access to real-time information about
+where passengers and drivers are has helped make it one of the most
+efficient and useful apps produced by Silicon Valley in recent years. But if
+you open the app assuming you’ll get the same insight, think again: drivers
+and passengers are only getting part of the picture.”52
+Cases like these illustrate the wide variety of ways that highly popular
+platforms can use their market power and their access to vast amounts of
+data to mislead people and manipulate their behavior without their
+knowledge or consent. The temptation for platform managers to engage in
+such practices for potential economic gain is likely to be huge. But defining
+
+
+this kind of ethically questionable behavior, developing clear and
+reasonable rules to discourage it, and then enforcing those rules without
+excessive intrusiveness and bureaucracy will be a huge challenge for
+regulators.
+TIME FOR REGULATION 2.0?
+Some observers say that the advent of the information age, in which vast
+amounts of previously inaccessible data are now available for evaluation,
+analysis, and use in smart decision-making, should drive a wholesale
+rethinking of traditional approaches to regulation. Nick Grossman, an
+entrepreneur, investor, and former MIT Media Lab Scholar, calls for a
+transition from today’s Regulation 1.0, which emphasizes prescriptive rules,
+certification processes, and gatekeeping, to a new system he calls
+Regulation 2.0, based on open innovation tempered by data-driven
+transparency and accountability.53 Both kinds of regulatory regime share the
+goal of creating trust and fostering fairness, security, and safety, but the
+means employed are very different.
+In Grossman’s view, regulation based on restricted access makes sense in
+a world of scarce information. Traditionally, it was difficult or impossible
+for a consumer to gather accurate information about the quality or safety of
+a particular taxi driver or hotel. That’s why most governments have taken
+steps to screen and certify taxi drivers, require insurance coverage for
+drivers, and monitor the safety and cleanliness of hotel accommodations.
+But in a world of abundant information, regulation based on data-driven
+accountability makes more sense. Firms like Uber and Airbnb can be
+granted freedom to operate in exchange for access to their data. Because it
+is possible to know exactly who did what to whom and when, consumers
+and regulators can hold people and platforms accountable for their
+behaviors after the fact. Uber customers can use driver ratings to decide
+whether or not to accept a particular ride; Airbnb customers can use host
+ratings to pick a safe and comfortable place for a night’s stay; and both
+organizations can be sanctioned or even shut down by regulators if their
+activities violate public expectations of safety and fair dealing.
+Under Grossman’s Regulation 2.0 scheme, government regulatory
+agencies would operate quite differently from the way they do today. Rather
+
+
+than establishing rules of market access, their primary job would be to
+establish and enforce requirements for after-the-fact transparency.
+Grossman imagines a city government responding to the arrival of Uber by
+passing an ordinance that states: “Anyone offering for-hire vehicle services
+may opt out of existing regulations as long as they implement mobile
+dispatch, e-hailing, and e-payments, 360-degree peer-review of drivers and
+passengers, and provide an open data API for public auditing of system
+performance with regards to equity, access, performance, and safety.”54
+It certainly makes sense for policy-makers to seek ways to take
+advantage of the vast new flows of data created by online business—and in
+particular by the rise of platforms—in developing new systems for
+monitoring and regulating economic activity. And in some arenas, enhanced
+transparency, perhaps under government mandate, can powerfully
+supplement or even replace traditional forms of regulation, reducing the
+costs and inertia associated with government intervention and encouraging
+innovation.55 For example, mandated disclosures of food nutrition data, auto
+safety ratings, and the energy efficiency of appliances have helped millions
+of consumers to make wiser choices and encouraged companies to improve
+the quality of their products.56
+Grossman’s emphasis on the power of transparency to enforce high
+community standards of behavior is particularly relevant in an age driven
+by information. An interesting analogy can be drawn with the ideas
+promulgated by Richard Stallman, the programmer–activist who is a leader
+of the “free software” movement. Stallman points out that one of the key
+virtues of free (or open source) software is that anyone can inspect the code
+and see what it does. Of course, only experts are likely to do this. But those
+who take the opportunity will be in a position to offer an informed
+judgment about the virtues and vices of the program, and, when necessary,
+to alert the general public to the problems they detect. If software code
+allows a company to spy on customers, defraud them, or misappropriate
+their data, then making the code freely accessible to all will quickly expose
+the problem and likely force its correction.57
+In this sense, free software resembles the free speech guaranteed to
+Americans by the Bill of Rights—in the hands of engaged citizens, both can
+serve as crucial weapons in the battle against private or public malfeasance.
+And the same can be said about the platform data that Grossman’s new
+regulatory system would rely upon. As Supreme Court Justice Louis
+
+
+Brandeis famously said, “Sunshine is said to be the best disinfectant;
+electric light the most efficient policeman.”
+Of course, it’s unlikely, especially in the short term, that a wholesale
+replacement of traditional regulation with a new, information-based system
+would produce results that most citizens would find acceptable. Would most
+families be satisfied to have government inspections of food processing
+plants eliminated, so long as statistics about deaths from salmonella and
+trichinosis associated with particular companies were widely available? In
+matters of life and death, traditional systems of standard-setting and
+certification make it easier for people to consume goods and services
+without anxiety, and it’s hard to imagine that most consumers would want
+to completely eliminate those systems.
+Furthermore, an effective Regulation 2.0 regime would require
+significant talent upgrades on the part of government agencies as well as
+complex revisions to existing statutory codes. As suggested by the cases of
+apparent customer and market manipulation we described earlier in this
+chapter, platform businesses can’t necessarily be trusted to behave with
+consistent transparency and integrity unless independent outsiders are
+monitoring their actions. These outsiders could be teams of tech-savvy
+experts employed by government agencies; they could be employees of
+rival businesses who take advantage of open data access to study the
+behavior of their competitors and publicize instances of wrongdoing. In
+either case, Regulation 2.0 could still end up being fairly intrusive and
+costly.
+Grossman cites the work of economist Carlota Perez, who has described
+how “great surges” in technology have led to “profound changes in people,
+organizations and skills in a sort of habit-breaking hurricane.” Perez goes
+on to say that these surges also demand changes in regulatory regimes—and
+Grossman’s contention is that the advent of the information age represents
+the latest such surge.58
+There’s much truth in the notion that the information age—including the
+rise of the platform—is a paradigm-altering shift that will profoundly
+impact every corner of society, including government regulation of
+business. But, as Grossman notes, Perez describes the great surges as cycles
+of change that take around fifty years to play out. That’s about right—and
+this suggests that it will take time to determine in exactly what ways the
+traditional regulatory system can safely be discarded in favor of a system
+
+
+like Regulation 2.0. In many cases, we may conclude that maintaining at
+least a portion of the current permission-based regulatory apparatus while
+augmenting its effectiveness using systems of permissionless, data-driven
+accountability will yield the best results.
+OUR ADVICE FOR REGULATORS
+We began this chapter by describing the basic economic tradeoff between
+private governance and government regulation. Corporate governance acts
+to mitigate negative externalities that affect the private interests of the firm.
+Platforms are adept at regulating market failures on-platform but less able
+to regulate them off-platform. Experience suggests that firms are usually
+quick to react to changing technology and market conditions, but they
+generally do not act to maximize social welfare unless forced to do so by
+the power of public opinion or by regulatory constraints.
+Government regulation, on the other hand, is supposed to be focused on
+safeguarding the interests of the general public and those of private
+industry. It can wield tools of enforcement such as search warrants, the
+power of civil forfeiture, and the authority of law. Unfortunately, regulators
+are subject to capture, especially in countries with weak democracy and
+government oversight. Thus, neither private governance nor government
+regulation can be counted on to serve as a foolproof guardian of the public
+interest.
+For policymakers who are taking on the challenging task of adapting
+traditional regulatory systems to the new conditions of the age of platforms,
+we recommend two sets of frameworks. The first, provided by economists
+Heli Koski and Tobias Kretschmer, suggests that industries with strong
+network effects can generate market inefficiencies and that the goal of
+public policy should be to minimize those. The market inefficiencies of
+particular concern are abuse of dominant position and the failure to ensure
+that new and better technologies are adopted as soon as they become
+available.59
+The second framework, developed by David S. Evans, proposes a three-
+step process to test for the desirability of government regulatory action. The
+first step is to examine whether the platform has a functioning internal
+governance system in place. The second step is to see whether the
+
+
+governance system is mostly being used to reduce negative externalities
+that would harm the platform (such as criminal behavior by users) or to
+reduce competition or take advantage of a dominant market position. If, on
+balance, the firm is using its governance system to deter negative
+externalities, then no further action is necessary. However, if the
+governance system appears to encourage anticompetitive practices, then a
+third and final step is required. This step involves asking whether the
+anticompetitive behavior outweighs the positive benefits of the governance
+system. If so, then a violation has occurred, and a regulatory response is
+required. If not, then no further action is needed.60
+Proponents of low regulation are likely to urge restraint in applying
+government pressure to platform businesses, especially during the startup
+phase. After all, they might reason, the harm done to the marketplace or to
+the general public by a startup company is likely to be relatively small,
+especially when compared with the potential positive effects to be derived
+from innovation, new business model development, and economic growth.
+The time to apply the rules more stringently will come later, once the start
+up has grown to the point where the costs and benefits of regulation are
+both reasonable.
+Early in its history, YouTube had an informal though unacknowledged
+policy of allowing copyrighted material to be posted on its site. As YouTube
+grew, concern over this lax enforcement of intellectual property rights
+increased, putting pressure on the company to establish a stricter
+compliance standard. Over time, mechanisms have been worked out to
+compensate rights holders, and today there are many instances of musicians
+earning significant revenues from their YouTube channels.
+However, this approach does not satisfy everyone. Harvard professor
+Benjamin Edelman observes:
+If we let tech companies launch first and ask questions later, we invite misbehavior … Perhaps
+some sectors suffer unnecessary or outdated regulation; if so, let’s remove the regulations through
+proper democratic processes. If we let a few firms ignore the rules, we effectively penalize those
+that comply with the law, while granting windfalls to free-wheeling competitors. That’s surely not
+a business model consumers are looking for.61
+We close with some general principles of regulatory guidance:
+Where possible, we would hope that regulators will move to make
+adjustments to law to more quickly adapt to technological change. Old
+
+
+regulatory practices, such as the predatory pricing tests developed for non-
+network industries, simply do not work for new technologies and business
+models. Regulation must incorporate the recent advances in economic
+theory that show that firms can still be maximizing their profits even when
+they choose to distribute certain products and services at zero price.
+Regulators should also act to reduce the opportunities for arbitrage.
+Given that the number of New York City taxi medallions has not changed
+since 1937, it should surprise no one that an alternate market would develop
+to leap the regulatory hurdle. In this sense, Uber is a response to regulatory-
+driven market failure, much like the gypsy cabs that have long operated
+under the regulatory radar.
+Another area where regulators can add value to new technologies is
+where consumers depend upon accurate information in order for markets to
+function. Gas stations have long had their pump accuracy checked,
+restaurants have had health inspectors, and buildings have had safety
+inspections. Such audits have provided the consumer confidence for those
+markets to function. Comparable systems for auditing ratings and service
+quality might help the new platform-based markets develop and thrive.
+Access to platform data represents a real opportunity to limit market
+failures both on and off platform.
+Finally, we would encourage regulators to have a light touch in order to
+encourage innovation. Change often provokes anxiety, and there’s an
+understandable impulse to slow the pace of technological and economic
+innovation in order to fend off unforeseeable consequences that may be
+harmful. But history suggests that, in most cases, allowing change to
+flourish leads mainly to positive results in the long run.
+One of the most notable regulatory battles related to technological
+change took place in the early 1980s, when the major movie studios fought
+to prevent ordinary citizens from using the then-new video recording
+technology to create copies of movies and TV shows for their personal use.
+In the landmark 1984 case Sony Corp. of America v. Universal City Studios,
+Inc., the Supreme Court ruled that such copying constituted fair use and
+therefore did not violate copyright law. From an economic standpoint, the
+Sony decision proved to be highly beneficial. To the surprise of the movie
+moguls, the studios that once opposed video recorders made more money
+after the new technology was allowed to emerge, through the creation of an
+entirely new secondary market for movie rentals that did not previously
+
+
+exist. In a similar fashion, new platform markets are likely to create
+unexpected new opportunities for growth and profit, even for many
+incumbent businesses that may be fearful of change. For this reason,
+regulator-induced industry sclerosis must be strenuously avoided, despite
+the pressures government officials may feel from anxious business leaders
+eager to protect their familiar turf.
+TAKEAWAYS FROM CHAPTER ELEVEN
+    Opponents of regulation point to phenomena like regulatory capture to argue that
+government intervention in business is usually ineffectual. But history suggests that some
+level of societal regulation of business is healthy and beneficial both to the economy and to
+society as a whole.
+    There are a number of regulatory issues that are unique to platform businesses or that
+require fresh thinking in the light of the economic changes that platforms are causing.
+These include access to platforms, compatibility, fair pricing, data privacy and security,
+national control of information assets, tax policy, and labor regulation.
+    The flood of new data made available by today’s information age technologies suggests the
+possibility of new regulatory approaches based on after-the-fact transparency and
+accountability rather than restrictions on market access. But such new approaches will need
+to be designed thoughtfully and carefully to fully protect the public.
+    Economic frameworks for industries with network effects suggest that dominance alone is
+not necessarily cause for government intervention. Rather, failure to manage externalities,
+abuse of dominance, manipulating populations, and delaying innovation can indicate when
+intervention in platform markets is necessary and appropriate.
+OceanofPDF.com
+
+
+12
+TOMORROW
+The Future of the Platform Revolution
+As you’ve seen in the previous chapters of this book, platforms have been
+transforming entire sectors of the economy, marginalizing incumbents and
+enabling small startups to rise rapidly to global dominance. It’s rare to see a
+single new business model sweep the field in so many industries so quickly.
+Still, you might be feeling that we’ve been overstating the impact of the
+platform, at least a bit. After all, hasn’t the platform revolution so far been
+restricted to a relative handful of sectors? Many of the most important
+aspects of our economy, our society, and our lives—education and
+government, health care and finance, energy and manufacturing—appear
+largely unaffected by the rise of the platform.
+That’s true—so far. But these and other arenas are already seeing the
+encroachment of platform business models. In the years to come, we
+believe it’s likely that platform businesses, while not claiming control of
+every aspect of these economic sectors, will stake out significant areas of
+influence in all of them. In this final chapter, we want to sketch some of the
+future trends that are already taking shape and that you will want to be
+aware of as you make plans for your own future.
+WHAT MAKES AN INDUSTRY READY FOR
+THE PLATFORM REVOLUTION?

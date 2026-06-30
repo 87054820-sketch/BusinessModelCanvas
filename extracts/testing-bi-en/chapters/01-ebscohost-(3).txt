@@ -1,0 +1,1909 @@
+# ebscohost (3)
+
+
+
+Testing
+Business
+Ideas
+
+
+Copyright © 2020 by David Bland and Alex Osterwalder. All rights reserved. 
+ 
+Published by John Wiley & Sons, Inc., Hoboken, New Jersey. 
+Published simultaneously in Canada.
+No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying,  
+recording, scanning, or otherwise, except as permitted under Section 107 or 108 of the 1976 United States Copyright Act, without either the prior written permission of 
+the Publisher, or authorization through payment of the appropriate per-copy fee to the Copyright Clearance Center, Inc., 222 Rosewood Drive, Danvers, MA 01923, (978) 
+750-8400, fax (978) 646-8600, or on the Web at www.copyright.com. Requests to the Publisher for permission should be addressed to the Permissions Department,  
+John Wiley & Sons, Inc., 111 River Street, Hoboken, NJ 07030, (201) 748-6011, fax (201) 748-6008, or online at http://www.wiley.com/go/permissions.
+Limit of Liability/Disclaimer of Warranty: While the publisher and author have used their best efforts in preparing this book, they make no representations or  
+warranties with respect to the accuracy or completeness of the contents of this book and specifically disclaim any implied warranties of merchantability or fitness  
+for a particular purpose.  No warranty may be created or extended by sales representatives or written sales materials.  The advice and strategies contained herein 
+may not be suitable for your situation.  You should consult with a professional where appropriate.  Neither the publisher nor author shall be liable for any loss of profit 
+or any other commercial damages, including but not limited to special, incidental, consequential, or other damages.
+For general information on our other products and services or for technical support, please contact our Customer Care Department within the United States at (800) 
+762-2974, outside the United States at (317) 572-3993 or fax (317) 572-4002.
+Wiley publishes in a variety of print and electronic formats and by print-on-demand. Some material included with standard print versions of this book may not be 
+included in e-books or in print-on-demand. If this book refers to media such as a CD or DVD that is not included in the version you purchased, you may download  
+this material at http://booksupport.wiley.com. For more information about Wiley products, visit www.wiley.com.
+ISBN 9781119551447 (Paperback) 
+ISBN 9781119551423 (ePDF) 
+ISBN 9781119551416 (ePub) 
+ 
+Cover Design and Front Cover Illustration: © Alan Smith
+Back Cover Illustrations by Owen D. Pomery
+ 
+10   9   8   7   6   5   4   3   2   1
+
+
+strategyzer.com/test
+ 
+WRITTEN BY 
+David J. Bland
+Alex Osterwalder  
+ 
+DESIGNED BY 
+Alan Smith
+Trish Papadakos
+Testing
+Business
+Ideas
+You’re holding a field guide for rapid experimentation. 
+Use the 44 experiments inside to find your path to scale. 
+Systematically win big with small bets by...
+
+
+IV
+This book will help you Start Testing  
+Business Ideas 
+ 
+You are relatively new to the concept of Testing 
+Business Ideas. Maybe you’ve read the leading books 
+in the domain by Steve Blank and Eric Ries, maybe 
+you haven’t. However, you do know that you want to 
+get started. You are eager to test your ideas. 
+Learn how the  
+testing process works
+Design and run your 
+first experiments
+Reduce the 
+risk of your 
+business idea
+
+
+V
+Boost your  
+Testing Skills
+ 
+You are very familiar with the process of Testing 
+Business Ideas. You have read all of the books that 
+cover the topic. You have run several projects and 
+built minimum viable products. Now you want to up 
+your game and boost your testing skills. 
+Scale Testing  
+in Your Organization
+ 
+You are tasked with systematizing and scaling testing 
+activities in your organization. You are experienced 
+with the topic and are looking for state-of-the-art 
+practical thinking to bring to teams throughout your 
+organization.
+Fine-tune your 
+testing process
+Learn about 
+experimentation 
+ceremonies.
+Be able to share 
+an extensive test-
+ing library with all 
+your teams.
+Reduce risk and 
+uncertainty of new 
+ideas across your 
+organization. 
+Discover an extensive 
+experiment library that 
+goes beyond interviews, 
+surveys, and minimum 
+viable products
+Bullet-proof your 
+business ideas with 
+stronger evidence  
+than you’ve ever  
+gathered before. 
+ 
+ 
+
+
+VI
+Corporate Innovator who is challenging the 
+status quo and who is building new business 
+ventures within the constraints of a large 
+organization.  
+Startup Entrepreneur who wants to test the 
+building blocks of your business model to 
+avoid wasting the time, energy, and money 
+of the team, cofounders, and investors.  
+Solopreneur who has a side hustle or  
+an idea that isn’t quite yet a business.  
+This book was made for 
+Corporate Innovators,  
+Startup Entrepreneurs, 
+and Solopreneurs.
+Which best describes you?
+
+
+VII
+□
+□I know the perils of prema-
+turely scaling a company 
+that isn’t quite ready yet, so 
+I want to test my business 
+model to produce evidence 
+that shows I am on the right 
+track. 
+□
+□I don’t have the resources of 
+a funded startup, let alone 
+a corporation. 
+□
+□I am seeking to find new 
+ways to experiment, instead 
+of always relying on focus 
+groups, interviews, and 
+surveys. 
+Which of the following resonates with you?
+□
+□I know that I need to 
+allocate limited resources 
+wisely and make decisions 
+based on strong evidence.
+□
+□I haven’t necessarily tried 
+any of this before, so I want 
+to make these late nights 
+and weekends worth it. 
+□
+□I want to succeed at creat-
+ing new growth but don’t 
+want to accidentally dam-
+age my company’s brand in 
+the testing process. 
+□
+□I want to fall asleep at 
+night knowing we've spent 
+our frantic day working on 
+the most important things 
+that matter to our startup’s 
+success.
+□
+□I eventually want to devote 
+all of my time to this idea, 
+but it all seems so risky. In 
+order to make the leap, I'll 
+need the evidence that I'm 
+onto something big.
+□
+□I understand that to be 
+truly disruptive, I need a 
+dedicated team who owns 
+the work and is capable of 
+creating their own evidence.
+□
+□I am mindful that we need 
+to show evidence of prog-
+ress to justify current and 
+future investment rounds.
+□
+□I have read a few books on 
+entrepreneurship, but need 
+guidance on how to test my 
+ideas and what types of 
+experiments to run.
+
+
+VIII
+How to Get from a Good Idea 
+to a Validated Business
+Too many entrepreneurs and innovators execute 
+ideas prematurely because they look great in presen-
+tations, make excellent sense in the spreadsheet, and 
+look irresistible in the business plan… only to learn 
+later that their vision turned out to be a hallucination. 
+Don’t make the mistake  
+of executing business ideas 
+without evidence: test your 
+ideas thoroughly, regardless 
+of how great they may seem 
+in theory.
+Idea
+Business
+Search & Testing
+Execution
+
+
+IX
+Search & Testing
+Navigate the Experiment Library in  
+This Book to Make Your Ideas Bulletproof 
+Testing is the activity of reducing the risk of pursuing 
+ideas that look good in theory, but won’t work in real-
+ity. You test ideas by conducting rapid experiments 
+that allow you to learn and adapt.  
+	
+This book outlines the most extensive testing 
+library on the market to help you make your ideas 
+bulletproof with evidence. Test extensively to avoid 
+wasting time, energy, and resources on ideas that 
+won’t work. 
+The entrepreneur’s and 
+innovator’s #1 task is to 
+reduce risk and uncertainty.
+Discovery 
+Discover if your general 
+direction is right. 
+ Test basic assumptions. 
+Get first insights to 
+course correct rapidly. 
+Validation 
+Validate the direction 
+you’ve taken. Confirm  
+with strong evidence  
+that your business idea  
+is very likely to work. 
+Idea
+Business
+Uncertainty  
+& Risk
+Search & Testing
+Execution
+
+
+X
+The Iterative 
+Process
+Business Concept Design 
+ 
+Design is the activity of turning vague ideas, 
+market insights, and evidence into concrete  
+value propositions and solid business 
+models. Good design involves the use of 
+strong business model patterns to maximize 
+returns and compete beyond product, price, 
+and technology. 
+	
+The risk is that a business can’t get 
+access to key resources (technology, IP, 
+brand, etc.), can’t develop capabilities to 
+perform key activities, or can’t find key  
+partners to build and scale the value  
+proposition.
+TEST
+BUSINESS 
+DESIGN
+Ideate
+Business 
+Prototype
+Assess
+Learn
+Decide
+Hypothesize
+Experiment
+ 
+Idea 
+ 
+ 
+ 
+ 
+Business Model 
+ 
+ 
+Value Proposition
+
+
+XI
+Testing and reducing risk 
+ 
+To test a big business idea you break 
+it down into smaller chunks of testable 
+hypotheses. These hypotheses cover three 
+types of risk. First, that customers aren’t 
+interested in your idea (desirability). 
+	
+Second, that you can’t build and deliver 
+your idea (feasibility). Third, that you  
+can’t earn enough money from your idea 
+(viability). 
+	
+You test your most important hypoth-
+eses with appropriate experiments. Each 
+experiment generates evidence and insights 
+that allow you to learn and decide. Based 
+on the evidence and your insights you either 
+adapt your idea, if you learn you were  
+on the wrong path, or continue testing other 
+aspects of your idea, if the evidence  
+supports your direction.
+Desirability risk  
+Customers aren’t interested
+The risk is that the market a 
+business is targeting is too 
+small; that too few customers 
+want the value proposition; or 
+that the company can’t reach, 
+acquire, and retain targeted 
+customers.
+Feasibility risk  
+We can’t build and deliver
+The risk is that a business can’t 
+get access to key resources 
+(technology, IP, brand, etc.), 
+can’t develop capabilities to 
+perform key activities, or can’t 
+find key partners to build and 
+scale the value proposition.
+Viability risk  
+We can’t earn enough money
+The risk is that a business can’t 
+generate successful revenue 
+streams, that customers are 
+unwilling to pay (enough), or 
+that the costs are too high to 
+make a sustainable profit.
+Reducing  
+Uncertainty  
+& Risk
+ 
+Key Hypotheses
+ 
+ 
+ 
+ 
+Experiments
+ 
+ 
+Key Insights
+
+
+XII
+TEST
+BUSINESS 
+DESIGN
+Ideate
+Business 
+Prototype
+Assess
+Learn
+Decide
+Hypothesize
+Experiment
+Validation
+Select an 
+Experiment 
+Discovery
+Design the Team
+Avoid Pitfalls
+Lead through  
+Experimentation 
+Organize for 
+Experiments
+
+
+XIII
+1 2 3 4
+Design
+ 
+ 
+Design the Team 
+p. 3 
+ 
+ 
+Shape the Idea 
+p. 15
+Experiments
+ 
+ 
+Select an Experiment 
+p. 91
+ 
+Discovery 
+p. 101
+ 
+Validation 
+p. 231
+Test
+ 
+ 
+Hypothesize 
+p. 27
+ 
+Experiment 
+p. 41
+ 
+Learn 
+p. 49
+ 
+Decide 
+p. 59
+ 
+Manage 
+p. 65
+Mindset
+ 
+ 
+Avoid Experiment  
+Pitfalls 
+p. 313
+ 
+Lead through  
+Experimentation 
+p. 317
+ 
+Organize for  
+Experiments 
+p. 323
+AFTERWORD 
+p. 329
+
+
+XIV
+EXPERIMENTS
+discovery
+Des
+
+
+1
+sign
+
+
+2
+EXPERIMENTS
+discovery
+“The strength of the team  
+is each individual member.  
+The strength of each member  
+is the team.” 
+Phil Jackson 
+Former NBA Coach
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+1 
+—
+ 
+D
+E
+S
+I
+G
+N
+1
+.
+1
+ 
+—
+ 
+D
+E
+S
+I
+G
+N
+ 
+T
+H
+E
+ 
+T
+E
+A
+M
+
+
+4
+EXPERIMENTS
+discovery
+TEST
+BUSINESS 
+DESIGN
+Team
+
+
+5
+Team
+Behavior
+Environment
+
+
+6
+Design
+Access to Missing Skillsets 
+If you do not have all of the skills needed  
+or are unable to partner with external  
+team members, then evaluate technologi-
+cal tools to fill the void. 
+Cross-Functional Skillset 
+A cross-functional team has all the core 
+abilities needed to ship the product and 
+learn from customers. A common basic 
+example of a cross-functional team con-
+sists of design, product, and engineering.
+SYNOPSIS 
+Team Design
+ 
+What kind of team do we need  
+to create our business? 
+Having worked with teams all around the 
+world, we have learned that behind every 
+successful new venture is a great team. If 
+you are at a startup, the founding team is 
+the glue that holds it all together. If you are 
+in a corporation, you’ll still need a solid team 
+to create a new business venture. If you 
+are a solopreneur, the team you eventually 
+bring in will make or break your business.
+Adapted from Jeff Patton.
+Design
+Product 
+Tech
+Legal 
+Data
+Sales
+Marketing
+Research
+Finance
+Commonly Required Skills  
+to Test Business Ideas
+
+
+7
+Design THE TEAM
+Diversity 
+Team member diversity means they vary 
+in aspects such as race, ethnicity, gender, 
+age, experience, and thought. Now, more 
+than ever, new businesses have real world 
+impact on people and society. If the people 
+who make up your team all have similar 
+life experiences, thoughts, and appear-
+ance, then it can make it very difficult to 
+navigate uncertainty.
+A lack of diverse experiences and perspec-
+tives on a team will result in baking your 
+biases right into the business. 
+	
+When forming your team, keep diversity 
+top of mind, rather than as an afterthought. 
+Lead by example, by having a diverse lead-
+ership team. The issues that arise from  
+having a homogeneous team are very  
+difficult to rectify later.
+Testing Tools  
+There are new tools coming on to the market 
+every day that allow you to:
+• Create landing pages
+• Design logos
+• Run online ads
+• And more... 
+All with little or no expertise needed.
+Entrepreneurial Experience 
+It’s not a coincidence that successful 
+businesses benefit from those who already 
+have entrepreneurial experience.
+Many entrepreneurs needed several 
+attempts before finding success. Rovio’s  
+hit game, Angry Birds, was preceded by  
+six years and 51 failed games.
+
+
+8
+Design
+1. Data Influenced
+You do not have to be data 
+driven, but you need to be 
+data influenced. Teams no 
+longer have the luxury of 
+burning down a product back-
+log of features. The insights 
+generated from data shape 
+the backlog and strategy.
+2. Experiment Driven
+Teams are willing to be wrong 
+and experiment. They are not 
+only focused on the delivery of 
+features, but also craft exper-
+iments to learn about their 
+riskiest assumptions. Match 
+experiments to what you are 
+trying to learn over time.
+5. Iterative Approach
+Teams aim for a desired result 
+by means of a repeated cycle 
+of operations. The iterative 
+approach assumes you may 
+not know the solution, so you 
+iterate through different tac-
+tics to achieve the outcome.
+6. Question Assumptions
+Teams have to be willing to 
+challenge the status quo and 
+business as usual. They aren’t 
+afraid to test out a disruptive 
+business model that will lead 
+to big results, as compared to 
+always playing it safe.
+SYNOPSIS 
+Team  
+Behavior 
+ 
+How does our team need to act? 
+Team design is necessary, but not sufficient. 
+You can have entrepreneurial experience, 
+but how you interact with your team needs 
+to exhibit entrepreneurial characteristics as 
+well. Team behavior can be unpacked into 
+six categories that are leading indicators of 
+team success.
+Successful Teams  
+Exhibit Six Behaviors
+3. Customer Centric
+To create new businesses 
+today, teams have to 
+know “the why” behind the 
+work. This begins with being 
+constantly connected to the 
+customer. This should not be 
+limited to the new customer 
+experience, and expands to 
+both inside and outside of the 
+product.
+4. Entrepreneurial
+Move fast and validate 
+things. Teams have a sense of 
+urgency and create momen-
+tum toward a viable outcome. 
+This includes creative  
+problem-solving at speed.
+
+
+9
+Design THE TEAM
+Growing the Team 
+You can begin this journey without a team, but as 
+experiments get more complicated over time, chances 
+are you’ll be adding to your team. Expect to grow 
+and evolve your team configuration over time, as you 
+eventually find product/market fit, build the right way, 
+and scale. 
+ 
+Team Size 
++ 
+Experiment fidelity
+Uncertainty & Risk
+PROGRESS
+
+
+10
+Design
+SYNOPSIS 
+Team  
+Environment 
+ 
+How can you design an environment 
+for your team to thrive?
+Teams need a supportive environment to 
+explore new business opportunities. They 
+cannot be held to a standard where failure 
+is not an option. Failure will occur, but failure 
+isn’t the goal. The goal is to learn faster 
+than the competition and put that learning 
+into action. Leaders need to intentionally 
+design an environment where this can occur, 
+otherwise even an ideal team configuration 
+with the right behaviors will eventually stall 
+out and give up.
+Dedicated
+Teams need an environment in 
+which they can be dedicated 
+to the work. Multitasking 
+across several projects will 
+silently kill any progress. 
+Small teams who are dedi-
+cated to the work make more 
+progress than large teams 
+who are not dedicated.
+Funded
+It’s unrealistic to expect 
+these teams to function 
+without a budget or funding. 
+Experiments cost money. 
+Incrementally fund the teams 
+using a venture-capital style 
+approach, based on the 
+learnings they share during 
+stakeholder reviews.
+Autonomous
+Teams need to be given  
+space to own the work. Do 
+not micromanage them to 
+the extent where it slows 
+down their progress. Instead, 
+give them space to give an 
+accounting of how they are 
+making progress toward the 
+goal.
+The Team Needs to be... 
+
+
+11
+Design THE TEAM
+The Company Needs to Provide...
+Support
+ 
+Leadership 
+Teams need an environment that has the 
+right type of leadership support. A facilita-
+tive leadership style is ideal here because 
+you do not know the solution. Lead with 
+questions, not answers, and be mindful that 
+the bottleneck is always at the top of the 
+bottle.
+Coaching 
+Teams need coaching, especially if this is 
+their first journey together. Coaches, either 
+internal or external, can help guide the 
+teams when they are stuck trying to find the 
+next experiment to run. Teams that have 
+only used interviews and surveys can benefit 
+from coaches who’ve seen a wide range of 
+experiments.
+Access
+ 
+Customers 
+Teams need access to customers. The trend 
+over the years has been to isolate teams 
+from the customer, but in order to solve 
+customer problems, this can no longer be 
+the case. If teams keep getting pushback 
+on customer access, they’ll eventually just 
+guess and build it anyway. 
+ 
+Resources 
+Teams need access to resources in order 
+to be successful. Constraints are good, but 
+starving a team will not yield results. They 
+need enough resources to make progress 
+and generate evidence. Resources can be 
+physical or digital in nature, depending on 
+the new business idea.
+Direction 
+Strategy 
+Teams need a direction and strategy, or 
+it’ll be very difficult to make informed pivot, 
+persevere, or kill decisions on the new  
+business idea. Without a clear coherent 
+strategy, you’ll mistake being busy with 
+making progress.
+Guidance 
+Teams need constraints to focus their 
+experimentation. Whether it’s an adjacent 
+market or creating a new one, to unlock new 
+revenue teams need direction on where they 
+will play.
+KPIs 
+Teams need key performance indicators 
+(KPIs) to help everyone understand whether 
+they are making progress toward a goal. 
+Without signposts along the way, it may be 
+challenging to know if you should invest in 
+the new business.
+
+
+12
+Design
+6.	 Write down the biggest risks 
+that could arise. 
+Joint Risks 
+What can prevent us from 
+succeeding?
+7.	 Describe how  to address 
+the biggest risks by  
+creating new objectives  
+and commitments.
+8.	 Describe how to address 
+resource constraints.
+9.	 Set joint dates and validate.
+SYNOPSIS 
+Team  
+Alignment 
+ 
+How can you ensure your team  
+members are aligned? 
+Teams often lack a shared goal, context, 
+and language when being formed. This 
+can be devastating later on, if not resolved 
+during the team formation and kickoff. 
+	
+The Team Alignment Map, created by 
+Stefano Mastrogiacomo, is a visual tool that 
+allows participants to prepare for action: 
+hold more productive meetings and struc-
+ture the content of their conversations.  
+It can help teams have more productive 
+kickoffs, with better engagement and 
+increased business success.
+Each building block illus-
+trates essential information 
+to be discussed with your 
+team. Identifying perception 
+gaps early on can prevent 
+you from being misaligned 
+without even knowing it.
+To learn more about  
+the Team Map visit  
+www.teamalignment.co.
+3
+4
+5
+6
+7
+8
+9
+Joint 
+Objectives
+Joint 
+Commitments
+Forward Pass
+Backward 
+Pass
+Joint  
+Resources
+Joint  
+Risks
+Period
+Mission
+Team Alignment 
+Map
+2
+1
+1.	 Define the mission.
+2.	 Define the time box for the 
+agreement.
+3.	 Create joint team objectives. 
+Joint Objectives 
+What do we intend to 
+achieve together?
+4.	 Identify commitment levels 
+for team members. 
+Joint Commitments 
+Who does what?
+5.	 Document joint resources 
+needed to succeed. 
+Joint Resources 
+What resources do we 
+need?
+
+
+13
+Design THE TEAM
+
+
+14
+EXPERIMENTS
+discovery
+“Generating ideas  
+is not a problem.” 
+ 
+Rita McGrath 
+Professor of Management  
+Columbia Business School
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+1 
+—
+ 
+D
+E
+S
+I
+G
+N
+1
+.
+2
+ 
+—
+ 
+S
+H
+A
+P
+E
+ 
+T
+H
+E
+ I
+D
+E
+A
+
+
+16
+EXPERIMENTS
+discovery
+TEST
+Ideate
+Assess
+BUSINESS 
+DESIGN
+Business 
+Prototype
+
+
+17
+Synthesize
+Generate
+BUSINESS 
+DESIGN
+Business 
+Prototype
+Assess
+Ideate
+
+
+18
+Design
+SYNOPSIS 
+Business 
+Design 
+ 
+In the design loop you shape and reshape 
+your business idea to turn it into the best 
+possible value proposition and business 
+model. Your first iterations are based on 
+your intuition and starting point (product 
+idea, technology, market opportunity, etc.). 
+Subsequent iterations are based on evi-
+dence and insights from the testing loop. 
+Generate
+The first phase of the design 
+loop is about generating as 
+many possibilities and ideas 
+as you can. It requires expan-
+sive thinking. 
+BUSINESS 
+DESIGN
+Business 
+Prototype
+Assess
+Ideate
+Synthesize
+The second phase of the design 
+loop is about synthesizing possi-
+bilities and narrowing the options 
+down to the most promising 
+opportunity. 
+
+
+19
+SHAPE THE IDEA
+BUSINESS 
+DESIGN
+Caveat
+This book focuses on  
+Testing Business Ideas and 
+provides you with a library of 
+experiments to test your ideas 
+and business prototypes. If 
+you want to learn more about 
+business design, we suggest 
+you read Business Model 
+Generation (Wiley, 2010) and 
+Value Proposition Design 
+(Wiley, 2014) or download the 
+free online material. 
+Business 
+Prototype
+Assess
+Ideate
+The design loop has three steps. 
+1.	Ideate 
+In this first step you try to come up with 
+as many alternative ways as possible to 
+use your initial intuition or insights from 
+testing to turn your idea into a strong 
+business. Don’t fall in love with your first 
+ideas.  
+2.	Business Prototype 
+In this second step you narrow down the 
+alternatives from ideation with business 
+prototypes. When you start out you 
+might use rough prototypes like napkin 
+sketches. Subsequently, use the Value 
+Proposition Canvas and Business Model 
+Canvas to make your ideas clear and 
+tangible. In this book we use these two 
+tools to break ideas into smaller testable 
+chunks. You will constantly improve your 
+business prototypes with insights from 
+testing in future iterations. 
+3.	Assess 
+In this last step of the design loop you 
+assess the design of your business proto-
+types. You ask questions like “Is this the 
+best way to address our customers’ jobs, 
+pains, and gains?,” or, “Is this the best way 
+to monetize our idea?,” or, “Does this best 
+take into account what we have learned 
+from testing?” Once you are satisfied with 
+the design of your business prototypes 
+you start testing in the field or go back to 
+testing, if you are working on subsequent 
+iterations.
+
+
+20
+Design
+Customer Segments
+Describe the different groups 
+of people or organizations you 
+aim to reach and serve.
+ 
+Value Propositions
+Describe the bundle of prod-
+ucts and services that create 
+value for a specific customer 
+segment. 
+ 
+ 
+Channels
+Describe how a company 
+communicates with and 
+reaches its customer seg-
+ments to deliver a value 
+proposition. 
+ 
+ 
+ 
+Customer Relationships
+Describe the types of relation-
+ships a company estab-
+lishes with specific customer 
+segments.
+Synopsis 
+The Business 
+Model  
+Canvas
+ 
+You don’t have to be a master of the 
+Business Model Canvas to use this book, but 
+you can use it to shape ideas into a business 
+model so you can define, test, and manage 
+risk. In this book, we use the Business Model 
+Canvas to define the desirability, feasibility, 
+and viability of an idea. If you’d like to go 
+deeper than the synopsis of the Business 
+Model Canvas, we recommend reading 
+Business Model Generation or go online to 
+learn more.
+Revenue Streams
+Describe the cash a company 
+generates from each cus-
+tomer segment. 
+ 
+ 
+Key Resources
+Describe the most important 
+assets required to make a 
+business model work. 
+ 
+ 
+Key Activities
+Describe the most important 
+things a company must do to 
+make its business model work. 
+ 
+ 
+Key Partners
+Describe the network of sup-
+pliers and partners that make 
+the business model work. 
+ 
+ 
+Cost Structure
+Describe all costs incurred to 
+operate a business model.
+To learn more about the Business Model Canvas visit  
+strategyzer.com/books/business-model-generation.
+
+
+21
+SHAPE THE IDEA
+
+
+22
+Design
+Value Map 
+Describes the features of 
+a specific value propo-
+sition in your business 
+model in a structured 
+and detailed way. 
+ 
+Products and Services
+List the products and services 
+your value proposition is built 
+around. 
+ 
+ 
+ 
+Gain Creators
+Describe how your products 
+and services create customer 
+gains. 
+ 
+ 
+ 
+Pain Relievers
+Describe how your products 
+and services alleviate cus-
+tomer pains.
+Customer Profile 
+Describes a specific  
+customer segment  
+in your business in  
+a structured and 
+detailed way. 
+ 
+Customer Jobs
+Describe what customers are 
+trying to get done in their 
+work and in their lives. 
+ 
+ 
+ 
+Gains
+Describe the outcomes cus-
+tomers want to achieve or the 
+concrete benefits they are 
+seeking. 
+ 
+ 
+ 
+Pains
+Describe the bad outcomes, 
+risk, and obstacles related to 
+customer jobs.
+SYNOPSIS
+The Value  
+Proposition 
+Canvas
+ 
+Much like the Business Model Canvas, the 
+same goes for the Value Proposition Canvas. 
+You’ll get value from this book without 
+having a proficiency in using it, but we do 
+reference it for framing your experimenta-
+tion, especially with regard to understand-
+ing the customer and how your products 
+and services create value. If you’d like to 
+go deeper than the synopsis of the Value 
+Proposition Canvas, we recommend reading 
+Value Proposition Design or go online to 
+learn more.
+To learn more about the Value Proposition Canvas visit  
+strategyzer.com/books/value-proposition-design.
+
+
+23
+SHAPE THE IDEA
+
+
+24
+EXPERIMENTS
+discovery
+Te
+
+
+25
+est
+
+
+26
+EXPERIMENTS
+discovery
+“A founding vision for a startup  
+is similar to a scientific hypothesis.” 
+Rashmi Sinha 
+Founder, Slideshare
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+2 
+—
+ T
+E
+S
+T
+2
+.
+1
+ 
+—
+ 
+H
+Y
+P
+O
+T
+H
+E
+S
+I
+Z
+E
+
+
+28
+EXPERIMENTS
+discovery
+TEST
+Hypothesize
+BUSINESS 
+DESIGN
+
+
+29
+1.	 Identify the Hypotheses 
+Underlying Your Idea 
+To test a business idea you 
+first have to make explicit 
+all the risks that your idea 
+won’t work. You need to turn 
+the assumptions underlying 
+your idea into clear hypoth-
+eses that you can test. 
+2.	 Prioritize Most Important 
+Hypotheses 
+To identify the most import-
+ant hypotheses to test 
+first, you need to ask two 
+questions. First, “What is the 
+most important hypothesis 
+that needs to be true for my 
+idea to work?” Second, “For 
+which hypotheses do I lack 
+concrete evidence from the 
+field?”
+
+
+30
+TEST
+DEFINITION
+Hypothesis
+ 
+The hypothesis has its roots in 
+ancient civilization. The English 
+word “hypothesis” comes from the 
+Greek word hupothesis which means 
+“to suppose.” Some even refer to a 
+hypothesis as an educated guess. 
+Hypotheses are instruments you use 
+to prove or refute your assumptions. 
+ 
+For the purposes of Testing Business Ideas, 
+we focus on your business hypothesis,  
+which is defined as:
+• an assumption that your value proposition, 
+business model, or strategy builds on.
+• what you need to learn about to under-
+stand if your business idea might work.
+Creating a good business hypothesis
+When creating hypotheses you believe to be 
+true for your business idea, begin by writing 
+the phrase “We believe that…” 
+	
+“We believe that millennial parents  
+will subscribe to monthly educational  
+science projects for their kids.” 
+ 
+Be mindful that if you create all of your 
+hypotheses in the “We believe that…” format, 
+you can fall into a confirmation bias trap. 
+You’ll be constantly trying to prove what 
+you believe, instead of trying to refute it. In 
+order to prevent this from occurring create 
+a few hypotheses that try to disprove your 
+assumptions.  
+	
+“We believe that millennial parents won’t 
+subscribe to monthly educational science 
+projects for their kids.” 
+	
+You can even test these competing 
+hypotheses at the same time. This is espe-
+cially helpful when team members cannot 
+agree on which hypothesis to test.
+
+
+31
+HYPOTHESIZE
+Characteristics of a good hypothesis
+A well-formed business hypothesis describes 
+a testable, precise, and discrete thing you 
+want to investigate. With that in mind, 
+we can continue to refine and unpack our 
+hypotheses about the science project  
+subscription business.
+Testable 
+Your hypothesis is testable when it can  
+be shown true (validated) or false (invali-
+dated), based on evidence (and guided  
+by experience).
+Precise 
+Your hypothesis is precise when you know 
+what success looks like. Ideally, it describes 
+the precise what, who, and when of your 
+assumptions.
+Discrete 
+Your hypothesis is discrete when it describes 
+only one distinct, testable, and precise thing 
+you want to investigate.
+□
+□We believe millennial par-
+ents prefer curated science 
+projects that match their 
+kids’ education level.
+□
+□We believe millennial  
+parents with kids ages  
+5–9 will pay $15 a month 
+for curated science  
+projects that match their 
+kids’ education level.
+□
+□We believe we can  
+purchase science project 
+materials at wholesale for 
+less than $3 a box.
+□
+□We believe we can ship 
+science project materials 
+domestically for less than 
+$5 a box.
+–
+– We believe millennial  
+parents prefer craft 
+projects.
+–
+– We believe millennials  
+will spend a lot on science 
+projects.
+–
+– We believe we can buy  
+and ship science project 
+boxes at a profit.
+
+
+32
+TEST
+Adapted from Larry Keeley, Doblin Group and IDEO.
+“Do they want this?”
+“Can we do this?”
+“Should we do this?”
+Desirable
+Feasible
+Viable
+The risk is that the market a 
+business is targeting is too 
+small; that too few customers 
+want the value proposition; or 
+that the company can’t reach, 
+acquire, and retain targeted 
+customers.
+The risk is that a business 
+can’t manage, scale, or get 
+access to key resources (tech-
+nology, IP, brand, etc.), key 
+activities, or key partners.
+The risk that a business  
+cannot generate more 
+revenue than costs (revenue 
+stream and cost structure).
+Types of Hypotheses
+
+
+33
+HYPOTHESIZE
+Desirable
+Feasible
+Viable
+Types of Hypotheses on the Business Model Canvas
+
+
+34
+TEST
+MARKET RISK 
+Desirability Hypotheses 
+Explore first
+Customer Profile 
+We believe that we…
+• are addressing jobs that 
+really matter to customers. 
+• are focused on pains that 
+really matter to customers.
+• are focused on gains that 
+really matter to customers. 
+Value Map 
+We believe…
+• our products and services 
+really solve for high-value 
+customer jobs.
+• our products and services 
+relieve top customer pains.
+• our products and services 
+create important customer 
+gains. 
+Customer Segments 
+We believe…
+• we are targeting the right 
+customer segments. 
+• the segments we are  
+targeting actually exist.
+• the segments we are  
+targeting are big enough. 
+Value Propositions 
+We believe…
+• we have the right value 
+propositions for the cus-
+tomer segments we are 
+targeting. 
+• 	our value proposition is 
+unique enough to replicate. 
+The Value Proposition Canvas contains mar-
+ket risk in both the Value Map and Customer 
+Profile. Identify the desirability hypotheses 
+you are making in:
+The Business Model Canvas contains mar-
+ket risk in the value proposition, customer 
+segment, channel, and customer relation-
+ship components. Identify the desirability 
+hypotheses you are making in:
+Channels 
+We believe…
+• we have the right channels 
+to reach and acquire our 
+customers.
+• we can master the channels 
+to deliver value.
+Customer Relationships 
+We believe…
+• we can build the right rela-
+tionships with customers.
+• it is difficult for customers 
+to switch to a competitor’s 
+product.
+• we can retain customers.
+
+
+35
+HYPOTHESIZE
+INFRASTRUCTURE RISK 
+Feasibility Hypotheses 
+Explore second
+FINANCIAL RISK 
+Viability Hypotheses 
+Explore third
+Revenue Streams 
+We believe that we…
+• can get customers to pay  
+a specific price for our  
+value propositions.
+• can generate sufficient 
+revenues.
+ 
+Cost Structure 
+We believe that we…
+• can manage costs from  
+our infrastucture and  
+keep them under control.
+ 
+Profit 
+We believe that we…
+• 	can generate more  
+revenues than costs in  
+order to make a profit. 
+Key Activities 
+We believe that we…
+• 	can perform all activities 
+(at scale) and at the right 
+quality level that is required 
+to build our business model.
+ 
+Key Resources 
+We believe that we…
+• can secure and manage all 
+technologies and resources 
+(at scale) that are required 
+to build our business model, 
+including intellectual prop-
+erty and human, financial, 
+and other resources. 
+ 
+Key Partners 
+We believe that we…
+• can create the partner-
+ships required to build our 
+business.
+The Business Model Canvas contains finan-
+cial risk in the revenue stream and cost 
+structure. Identify the viability hypotheses 
+you are making in:
+The Business Model Canvas contains 
+infrastructure risk in the key partners, key 
+activities, and key resources components. 
+Identify the feasibility hypotheses you are 
+making in:
+
+
+36
+TEST
+DEFINITION
+Assumptions 
+Mapping 
+ 
+A team exercise where desirability, 
+viability, and feasibility hypotheses 
+are made explicit and prioritized in 
+terms of importance and evidence.
+Every radically new idea, product, service, 
+value proposition, business model, or strat-
+egy requires a leap of faith. If proven false, 
+these important and yet unproven aspects 
+of your idea can make or break your busi-
+ness. The Assumptions Mapping exercise is 
+designed to help you make all risks explicit 
+in the form of hypotheses, so you can  
+prioritize them and focus your near-term  
+experimentation.
+Adapted from Gothelf & Seiden, Lean UX
+How to Facilitate 
+ 
+Core team 
+ 
+The core team consists of individuals who 
+are going to be dedicated to making this 
+new business endeavor a success. They 
+are cross-functional. This means they have 
+product, design, and technology skills 
+needed to ship and learn rapidly in the 
+market with real customers. At a minimum, 
+the core team needs to be present when 
+mapping out the assumptions from your 
+Business Model Canvas. 
+Supporting team 
+ 
+The supporting team consists of individuals 
+who are not necessarily dedicated to the 
+business endeavor but who are needed for 
+it to be a success. People from legal, safety, 
+compliance, marketing, and user research 
+will be required for testing assumptions 
+where the core team lacks the domain 
+knowledge and know-how. 
+	
+Without a strong supporting team, the 
+core members may lack evidence and 
+make uninformed decisions about what’s 
+important.
+
+
+37
+HYPOTHESIZE
+Use a sticky note to write down each:
+• desirability hypothesis and put it  
+on your canvases.
+• feasibility hypothesis and put it  
+on your canvases.
+• viability hypothesis and put it  
+on your canvases.
+Best Practices
+• Use different color sticky notes for 
+desirability, feasibility, and viability 
+hypotheses.
+• Your hypotheses should be as specific as 
+possible, to the best of your knowledge, 
+based on what you know today.
+• Every hypothesis should be a single sticky 
+note. Don’t use bullet points; that makes it 
+easier to prioritize your hypotheses.
+• Keep your hypotheses short and precise. 
+No blah blah blah.
+• Discuss and agree as a team when 
+writing.
+ASSUMPTIONS MAPPING 
+Identify Hypotheses 
+Step 1
+
+
+38
+TEST
+ASSUMPTIONS MAPPING 
+Prioritize Hypotheses 
+Step 2
+Use the Assumptions Map to prioritize all 
+your hypotheses in terms of importance and 
+existence or absence of evidence that sup-
+ports different types of hypotheses.
+x-Axis: Evidence 
+On the x-axis you place all your hypothe-
+ses positioned to show how much evidence 
+you have or don’t have to support or refute 
+a specific hypothesis. You place a hypoth-
+esis on the left if you are able to produce 
+relevant, observable, and recent evidence to 
+support a hypothesis. You place a hypothe-
+sis on the right if you do not have evidence 
+and therefore will need to generate it.
+y-Axis: Importance 
+On the y-axis you place all your hypotheses 
+in terms of importance. Position a hypoth-
+esis at the top if it is absolutely critical for 
+your business idea to succeed. In other 
+words, if that hypothesis is proven wrong, 
+your business idea will fail and all other 
+hypotheses become irrelevant. You place a 
+hypothesis at the bottom if it is not one of 
+the first things you’d go out and test.
+Top Left
+Share
+Check the top left quadrant 
+against your evidence and 
+share it with the team. Do 
+these hypotheses really have 
+observable evidence to back 
+them up? Challenge the evi-
+dence to make sure it’s good 
+enough. Keep track of these 
+hypotheses in your plan going 
+forward. 
+Top Right
+Experiment
+Focus on the top right quad-
+rant to identify which hypoth-
+eses to test first. This defines 
+your near-term experimen-
+tation. Create experiments 
+to address these high-risk 
+themes in your business.
+Have Evidence
+No Evidence
+Unimportant
+Important
+
+
+39
+HYPOTHESIZE
+Prioritize Desirability Hypotheses 
+As a team, pull over each desirabil-
+ity hypothesis and place it on the 
+Assumptions Map.
+Prioritize Feasibility Hypotheses 
+Next, pull over each feasibility hypothe-
+sis and place it on the Assumptions Map.
+Prioritize Viability Hypotheses 
+Then pull over each viability hypothesis  
+and place it on the Assumptions Map.   
+Have Evidence
+No Evidence
+Unimportant
+Important
+ASSUMPTIONS MAPPING 
+Identify and Prioritize  
+Riskiest Hypotheses 
+Step 3
+For the purposes of this book, the major 
+focus will be on how to test the top right 
+quadrant of your Assumptions Map:  
+experiments with important hypotheses 
+and with light evidence. These assump-
+tions, if proven false, will cause your  
+business to fail.
+
+
+40
+EXPERIMENTS
+discovery
+“It doesn’t matter how beautiful 
+your theory is, it doesn’t matter 
+how smart you are. If it doesn’t 
+agree with experiment, it’s wrong.” 
+Richard Feynman 
+American theoretical physicist
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+2 
+—
+ T
+E
+S
+T
+2
+.
+2
+ 
+—
+ E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+
+
+42
+EXPERIMENTS
+discovery
+TEST
+Experiment
+BUSINESS 
+DESIGN
+
+
+43
+Test Card
+Copyright Strategyzer
+1.	 Design Experiment
+To get started with testing 
+your business idea, you 
+turn your most important 
+hypotheses into experi-
+ments. You should start with 
+cheap and fast experiments 
+to learn quickly. Every 
+experiment will reduce the 
+risk that you’ll spend time, 
+energy, and money on ideas 
+that won’t work. 
+2.	 Run Experiment
+Every experiment has a spe-
+cific run time to generate 
+sufficient evidence that you 
+can learn from. Make sure 
+you run your experiments 
+almost like a scientist, so 
+that your evidence is clean 
+and not misleading. 
+Have Evidence
+No Evidence
+Unimportant
+Important
+
+
+44
+TEST
+DEFINITION
+Experiment 
+ 
+Experiments are the means to 
+reduce the risk and uncertainty  
+of your business idea.
+The experiment is at the core of scientific 
+method. Like the hypothesis, it can be 
+traced back through history to everything 
+from how the vision works with the eye to 
+measuring time. 
+	
+What has remained consistent over time 
+is that the scientific method is a valuable 
+method for generating insights.  
+	
+Children naturally experiment and iterate 
+their way through problems. Once they 
+begin to progress through traditional school-
+ing, experimentation gradually becomes 
+less and less of a practice outside of science 
+class. The way students are graded, judged, 
+and tested means they have to find the sin-
+gle right answer. In life, as it is in business, 
+there is rarely a single right answer. So over 
+time people optimize for being right, instead 
+of making progress, because they’re accus-
+tomed to being penalized for being wrong. 
+	
+It’s no surprise that children raised in this 
+style of educational system become adults 
+who often struggle with the idea of being 
+wrong. The culture of rewarding who is right 
+and penalizing who is wrong extends into 
+their businesses. They’ve been conditioned 
+to look for that one right answer. 
+	
+As you read this book and learn how to 
+test your business ideas, you will find there 
+is often not one path forward, but many.
+	
+As you experiment, think back to what 
+it felt like to be in kindergarten and pre-
+school: when you were allowed to try to 
+fit the square peg into the round hole. 
+Experimentation is about structured creativ-
+ity. Tap into that energy within yourself and 
+with your teams. 
+	
+For the purposes of Testing Business 
+Ideas, the focus is on business experiments, 
+which:
+• are procedures to reduce the risk and  
+uncertainty of a business idea.
+• produce weak or strong evidence that 
+supports or refutes a hypothesis.
+• 	can be fast/slow and cheap/expensive  
+to conduct.
+
+
+45
+EXPERIMENT
+What are the components of an experiment?  
+A well-formed business experiment is made  
+up of four components:
+1.	Hypothesis 
+The most critical hypothesis from the top 
+right quadrant of your Assumptions Map. 
+2.	Experiment 
+The description of the experiment  
+you will run to support or refute  
+the hypothesis. 
+3.	Metrics 
+The data you will measure as part  
+of the experiment. 
+4.	Criteria 
+The success criteria for your  
+experiment metrics.
+What is a good experiment? 
+A good experiment is precise enough so that 
+team members can replicate it and generate 
+usable and comparable data.
+• Defines the “who” precisely (test subject)
+• Defines the “where” precisely (test context)
+• Defines the “what” precisely (test elements)
+Call-to-Action Experiment 
+A specific type of experiment that prompts 
+a test subject to perform an observable 
+action. Used in an experiment in order to 
+test one or more hypotheses.

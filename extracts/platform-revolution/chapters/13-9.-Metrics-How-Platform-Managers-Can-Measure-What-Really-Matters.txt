@@ -1,0 +1,678 @@
+# 9. Metrics: How Platform Managers Can Measure What Really Matters
+
+offered for sale to end customers through a variety of sales and marketing
+channels. The details of the work may be very complex, but as long as the
+revenue exceeds the total cost of compensating pipeline participants, along
+with a margin to justify the risk and cover future development costs, all is
+well. While line workers and middle managers all along the pipeline need to
+be immersed in the fine points of design, manufacturing, production,
+marketing, and delivery, leaders at the C-suite level, as well as board
+members and outside investors, can focus on a few key numbers to get a
+quick sense of the relative health of the business.
+Traditional measures from pipeline businesses, which are familiar to
+most managers, include cash flow, inventory turns, and operating income.
+These work in combination to create a useful, broad-brush picture of a
+business, and their simplicity and clarity helps company leaders stay
+focused on the factors that are crucial to long-term success rather than
+getting distracted by secondary details.
+FROM PIPELINE TO PLATFORM: THE NEW
+MEASUREMENT CHALLENGE
+Unfortunately, the traditional metrics used in organizing and running
+pipeline businesses quickly break down in the context of a platform—and
+developing alternative metrics that effectively measure the true health and
+growth prospects of a platform business is far from easy.
+Consider the story of BranchOut. Launched in July 2010, BranchOut
+was a professional networking platform based mainly on an app that
+enabled users to make job-hunting connections via Facebook. Think of
+BranchOut as a variant of LinkedIn piggybacked on the vast Facebook
+network. In a world where the majority of jobs are filled not through help-
+wanted ads or Internet postings but through friend-to-friend word of mouth,
+BranchOut struck many people as a brilliant innovation. Its founder and
+CEO Rick Marini managed to attract $49 million in three rounds of
+investment.
+The company’s rocket-propelled ride to the top of the professional
+networking world was astonishing. BranchOut’s user base expanded from
+fewer than a million to a whopping 33 million between the spring and
+summer of 2012. But its implosion occurred as quickly. Before another four
+
+
+months had passed, the number of members had plummeted to fewer than
+two million. And by the following summer, the company was groping for an
+entirely new business strategy, hoping to become a “workplace chat”
+platform that teams of coworkers could use to stay in touch. Rich Marini
+admitted to reporters that “active users aren’t very big right now,” while
+saying that BranchOut was “not a failure, it’s still alive.”2
+Postmortems pointed to a variety of reasons for BranchOut’s collapse.
+Some blamed changes in Facebook’s app developer platform, which put a
+crimp in BranchOut’s communications system. Others pointed out that the
+whole notion of blending job search capabilities with Facebook’s social
+networking ambience was misguided. “Looking for a job is stressful,” as
+one observer put it. “It’s a lot of work. When I hang out with my friends,
+the last thing I want to do is talk about my job search. I want to escape it.”3
+These may have been factors in BranchOut’s failure. But the most
+significant mistake BranchOut made appears to have been focusing on—and
+measuring—the wrong things. Flush with investment capital and riding an
+incredible upsurge in “active user” enrollments, during those fateful months
+in the middle of 2012, BranchOut kept directing its efforts to boosting
+membership numbers. It incentivized users to invite as many friends as
+possible, and made it easy for Facebook members to invite everyone in their
+network to join BranchOut. As hundreds of millions of invitations flooded
+cyberspace, BranchOut’s enrollment figures skyrocketed.4
+Having a person’s name and email address on a membership list doesn’t
+promise success for a platform. What matters is activity—the number of
+satisfying interactions that platform users experience. If BranchOut had
+tracked the activity numbers as diligently as it tracked membership, it might
+have realized that its millions of members weren’t finding much value in
+the service—which led, of course, to plummeting membership rolls.
+The BranchOut story illustrates a vital truth about the world of
+platforms. Just as platforms transform traditional value chains, competitive
+strategy, and management techniques, they also demand new forms of
+internal measurement.
+Let’s return for a moment to the metrics that are most commonly used by
+pipeline managers: key numbers like cash flow, inventory turns, and
+operating income, as well as ancillary metrics like gross margin, overhead,
+and return on investment. These tools, in their varied ways, help to measure
+the same thing: the efficiency with which value flows through the pipeline.
+
+
+A successful pipeline business is one that produces goods and services with
+minimal waste of resources and then delivers a large quantity of these goods
+and services to customers through well-managed marketing, sales, and
+distribution systems, thereby generating revenues that are more than
+sufficient to recoup costs and produce profits to reward investors and
+finance future growth.
+Pipeline metrics are designed to gauge the efficiency of this value flow
+from one end of the pipeline to the other. They help managers recognize
+bottlenecks, logjams, and breakdowns in the flow that require improved
+process efficiencies or system enhancements that will facilitate a larger,
+faster, and more rewarding stream of value through the pipeline. Thus,
+when a statistic like inventory turns unexpectedly plummets, it’s generally a
+sign of overstocking, product obsolescence, or marketing failure, while an
+excessively high rate of turnover may indicate understocking and
+consequent loss of sales. Carefully monitoring this metric can help
+managers make necessary adjustments to keep the business humming.
+This kind of (admittedly simplified) analysis doesn’t work when we shift
+our focus to a platform business. As we’ve seen, platforms create value
+primarily through the impact of network effects. Platform managers in
+search of metrics that reveal the true health of their business need to focus
+on positive network effects and on the platform activities that drive them.
+In specific, platform metrics need to measure the rate of interaction
+success and the factors that contribute to it. Platforms exist to facilitate
+positive interactions among users—particularly between producers and
+consumers of value. The greater the number of positive interactions the
+platform creates, the more users will be drawn to the platform, and the more
+eager they will be to engage in activities and interactions of various kinds
+on the platform. Thus, the most important metrics are those that quantify the
+success of the platform in fostering sustainable repetition of desirable
+interactions. The end result: positive network effects and the creation of
+enormous value for everyone involved, including the users of the platform
+as well as the sponsors and managers of the platform.
+Note the difference between this core metric and the core metric of the
+pipeline. Whereas a pipeline manager is concerned with the flow of value
+from one end of the pipeline to the other, the platform manager is concerned
+with the creation, sharing, and delivery of value throughout the ecosystem
+—some occurring on the platform, some elsewhere. For a platform
+
+
+manager, process efficiencies and system enhancements may be quite
+important—but only insofar as they facilitate successful interactions among
+users. The big goal on which platform managers must remain focused is the
+creation of value for all users of the platform, which strengthens the
+community, improves its long-term health and vibrancy, and encourages the
+continual growth of positive network effects.
+DESIGNING METRICS THAT TRACK
+THE LIFE CYCLE OF THE PLATFORM
+In this chapter, we’ll consider some of the key issues related to developing
+and using appropriate metrics for platform businesses, following the life
+cycle of a platform from startup to maturity. In the startup phase, it is
+critical to have simple measures to guide decision-making around key
+questions of platform design and launch, including the design of the core
+interaction; the development of effective tools to pull users, facilitate
+interactions, and match producers with consumers; the creation of effective
+systems of curation; and decisions about how open the platform should be
+to various kinds of participants.
+In particular, firms in the startup phase must track the growth of their
+most important asset: active producers and consumers who are participating
+in a large volume of successful interactions. These users and the
+interactions they engage in are the key to generating the positive network
+effects that will ultimately make the platform successful. Notice that some
+of the traditional metrics generally regarded as crucial in the early years of a
+pipeline business—revenues, cash flow, profit margins, and the like—are
+largely irrelevant when evaluating a platform during the startup phase.
+Once the platform has reached critical mass and users are gaining
+significant value from the platform, the focus of metrics can shift to
+customer retention and the conversion of active users to paying customers.
+This is the phase in which monetization becomes a crucial issue. As we
+explained in chapter 6, decisions about how to monetize the platform are
+fraught. Platform managers will need to devise metrics that focus on some
+of the key issues related to monetization, for example: Which user groups
+are enjoying the greatest value from platform activities? Which user groups
+may need to be subsidized to ensure their continued participation? What
+
+
+fraction of the value creation unleashed by the platform is occurring on the
+platform rather than outside it? How much additional value can be created
+through services such as enhanced curation? Which groups outside the
+platform might find value in access to specific user groups on the platform?
+And most important, how can the platform capture and retain a fair share of
+the value being created on the platform without impeding the continued
+growth of network effects? During the growth phase, thoughtfully designed
+metrics can help platform managers develop accurate answers to questions
+like these.
+Finally, as the platform matures and a self-sustaining business model has
+been developed, the challenge of user retention and growth requires the
+platform to innovate. This is the best way to maintain and enhance the
+business’s value proposition relative to competing platforms. Metrics then
+must sensitively gauge the ongoing engagement of users and the degree to
+which they continue to discover new ways to create value on the platform.
+It’s crucial to measure and track the degree to which both producers and
+consumers are repeatedly participating in the platform and increasing their
+participation over time.
+Other competitive concerns include attempts by adjacent platforms to
+drain users and reduce the platform’s comparative advantage, as well as the
+possibility that participants in the platform (such as extension developers)
+may create platforms of their own that could eventually pull users away.
+These, too, call for the development of metrics that will enable platform
+leaders to recognize such threats and respond to them in time.
+STAGE 1:
+METRICS DURING THE STARTUP PHASE
+At startup companies—whether they operate as pipelines or as platforms—
+resources are usually stretched. With money, time, and talent at a premium,
+people find themselves doing multiple jobs, often in domains far from their
+expertise. In this kind of environment, deciding the categories of
+information to which to dedicate resources in collection and processing can
+be both critically important and challenging.
+Furthermore, the kinds of metrics that work in a startup context may be
+quite different from those that apply to a conventional, mature business.
+
+
+Entrepreneur Derek Sivers describes the problem:
+Most tools from general management are not designed to flourish in the harsh soil of extreme
+uncertainty in which startups thrive. The future is unpredictable, customers face a growing array
+of alternatives, and the pace of change is ever increasing. Yet most startups—in garages and
+enterprises alike—still are managed by using standard forecasts, product milestones, and detailed
+business plans.5
+So what kinds of metrics are most valuable during the startup phase of a
+platform business? Platform managers should focus on the core interaction
+and the benefits it creates for both producers and consumers on the
+platform. To define success or failure for a platform, and to identify how to
+improve it, there are three main metrics: liquidity, matching quality, and
+trust.
+Liquidity in a platform marketplace is a state in which there are a
+minimum number of producers and consumers and the percentage of
+successful interactions is high. When liquidity is achieved, interaction
+failure is minimized, and the intent of users to interact is consistently
+satisfied within a reasonable period of time. Achieving liquidity is the first
+and most important milestone in the life cycle of a platform. Therefore, the
+most valuable metric in the early months of a platform is one that can help
+you determine when liquidity is reached. Depending on the precise
+workings of the platform and the nature of its user base, the formula for this
+metric may vary.
+One reasonable way to measure liquidity is by tracking the percentage of
+listings that lead to interactions within a given time period. Of course, both
+the definition of “interactions” and the appropriate time period will vary
+depending on the market category. On an information and entertainment
+platform, an interaction might be the click-through that takes a consumer
+from a headline to a complete story; on a marketplace platform, it might be
+the purchase of a product; on a professional networking platform, it might
+be the offer of a recommendation, the swapping of contact information, or a
+posted response to a question on a discussion page. Any of these
+interactions would signify a greater degree of engagement by the user and
+represent the moment when the user has recognized, used, and enjoyed a
+value unit available on the platform.
+On the negative side, it’s important to look for and track the occurrence
+of illiquid situations. These are circumstances in which a desired transaction
+is impossible—for example, when an Uber user opens the app and
+
+
+discovers that no car is available. Illiquid situations discourage users from
+participating in the platform and so must be kept to a minimum.
+Note that user commitment and active usage of the platform are the vital
+metrics of platform adoption, not sign-ups. That’s why our definition of
+liquidity includes both user totals and the level of interactions occurring.
+New reports and investor pitches that emphasize impressive raw numbers of
+platform members can be very misleading and may be a sign that the
+platform, far from flourishing, is struggling to convert curiosity-seekers into
+active participants and value creators.
+Also note that the most meaningful metrics are comparative ones, which
+draw helpful distinctions between groups of users or over periods of time (a
+useful recommendation from Alistair Croll and Benjamin Yoskovitz,
+authors of Lean Analytics). A good example of an inherently comparative
+measure is a ratio or rate, which is calculated by dividing one number by
+another—for example, the ratio of active users, which is calculated by
+dividing the number of active users by the number of total users, or the rate
+of growth in active users, which is calculated by dividing the number of
+new active users by the number of total active users.6
+A second crucial category of metric for the startup platform is matching
+quality. This refers to the accuracy of the search algorithm and the
+intuitiveness of the navigation tools offered to users as they seek other users
+with whom they can engage in value-creating interactions. Matching quality
+is critical to delivering value and stimulating the long-term growth and
+success of the platform. It is achieved through excellence in product or
+service curation.
+As the definition implies, matching quality is closely related to the
+effectiveness with which products or service offerings on the platform are
+curated. Users generally participate in a platform with highly interactional
+intent; they want to find what they’re looking for as quickly as possible.
+Precision in matching leads to lower search costs for users—that is, they
+need to invest less time, energy, effort, and other resources in finding the
+matches they want. Thus, if the platform does a great job of linking users to
+one another quickly and accurately, those users are likely to become active
+participants and long-term members of the platform; if matching quality is
+poor, slow, and disappointing, users will soon dwindle in number,
+interactions will slow to a trickle, and the platform may be doomed to an
+early demise.
+
+
+Of course, it’s necessary to translate the abstract term “matching quality”
+into a concrete quantity with a clear operational definition in order to make
+it the basis of a meaningful metric. One way to measure the efficiency of
+the platform in successfully matching producers to consumers is by tracking
+the sales conversion rate, which can be expressed as the percentage of
+searches that lead to interactions.
+Obviously, the higher the percentage, the better—but where does the
+threshold between “poor” and “good” matching quality lie? There’s no
+single answer that applies to every kind of platform. However, the manager
+of a particular platform may be able to develop a useful rule of thumb by
+correlating the interaction percentage for particular users with the long-term
+rate of activity of those users—say, over a period of one to three months.
+Calculations like these may enable you to determine, for example, that an
+interaction percentage of 40 percent appears to represent a significant cutoff
+point for users of your platform: the majority of users who experience
+interaction percentage higher than 40 percent during their first week on the
+platform remain active members for at least three months, while a majority
+of those with an interaction percentage lower than 40 percent stop
+participating in activities on the site.
+Once you’ve calculated a number of this kind—whether it is 40 percent,
+higher, or lower—you can use it as a working target that serves as one
+measure of the health of your site. The daily interaction percentage can be
+measured, its trend over time can be observed, and improvements to the
+platform’s matching system can be developed, tested, and evaluated based
+on changes in this metric.
+The third crucial category of startup metric is trust. Trust refers to the
+degree to which users of a platform feel comfortable with the level of risk
+associated with engaging in interactions on the platform. It is achieved
+through excellent curation of participants in the platform.
+Building trust, of course, is central to marketplaces, especially those in
+which interactions carry some level of risk—and in the world of online
+platforms, where initial connections among users as well as many
+interactions are conducted entirely in cyberspace, the perception of risk may
+be even more significant. A well-run platform is one in which participants
+on both sides have been successfully curated so that users are comfortable
+with the level of risk involved in engaging in interactions on the platform.
+As we’ve noted, Airbnb is an example of a player in a high-risk category
+
+
+that has succeeded so far because of its ability to curate its participants
+successfully. It allows hosts and guests to review each other and has one of
+the highest review rates among platforms. It also takes additional measures
+to build trust, including having photographers certify the accuracy of the
+information contained in a host’s listing. By contrast, Airbnb’s competitor
+Craigslist has earned relatively low scores on the trust metric and has
+experienced a number of embarrassing scandals involving apparently sleazy
+platform users engaged in disreputable, even illegal activities.
+These three crucial categories of metrics—liquidity, matching quality,
+and trust—combine to provide the managers of startup platforms with an
+accurate picture of the platform’s rate of interaction success and the key
+factors that contribute to it. As we’ve noted, this measurement is at the heart
+of the platform’s purpose and plays a central role in determining its ability
+to create positive network effects.
+The specific formulas you use to define the metrics for a particular
+platform business need to be carefully devised to be appropriate for the kind
+of platform business involved—the nature of the platform, the types of
+users, the forms of value being created and exchanged, the variety of
+interactions performed, and so on.
+There are a number of specialized metrics that are potentially valuable
+for particular platform businesses. You might choose to measure
+engagement per interaction, time between interactions, and percentage of
+active users, all of which focus on the degree of user commitment to the
+ecosystem.
+Alternatively, you might choose to measure number of interactions, as,
+for example, the graphics and design platform Fiverr does. Since Fiverr has
+a fixed value per interaction—every “gig” traded on the site is priced at five
+dollars—the sheer number of interactions is a perfectly adequate and
+complete measurement of the current activity flow on the site.
+Other platforms need to develop more sophisticated interaction metrics.
+Airbnb, for example, tracks the number of nights booked, which is a better
+indicator of value creation for this platform than simply recording the
+number of interactions. The freelance work marketplace Upwork measures
+interaction volume by counting the hours of work delivered by a particular
+freelancer, which is a key measure of value creation in that ecosystem. In a
+similar fashion, Clarity can track the duration of a consulting call between
+an expert and the information seeker.
+
+
+Platforms whose revenue is based on claiming a share of the value of
+any interaction—a commission fee based on a percentage of the interaction,
+for example—may choose to measure interaction capture, which will
+reflect the value of interactions that occur on the platform. Amazon
+Marketplace, for instance, uses this metric, tracking the gross value of
+interactions processed by the platform as a key indicator of its activity level.
+Platforms that focus on content creation require different metrics. For
+example, some measure co-creation (the percentage of listings that are
+consumed by users) or consumer relevance (the percentage of listings that
+receive some minimum level of positive response from potential
+consumers). These metrics focus on interaction quality and reflect the skill
+with which production is being curated.
+Finally, other platforms focus on market access—the effectiveness with
+which users have been able to join the platform and find or connect with
+one another, regardless of whether a complete interaction has occurred.
+Some measure producer participation—that is, the rate at which producers
+join the platform and the growth of this rate over time. Dating and
+matrimonial sites often talk about number of women registered, since this
+metric serves as a useful proxy for the value that other users of the site can
+expect to receive. In a somewhat different fashion, OpenTable tracks
+restaurant reservations. These are not the actual interactions, in which
+restaurants are paid for meals served (information not readily available to
+the platform), but they serve as a fairly accurate proxy for the value created.
+The three key factors of liquidity, matching quality, and trust remain
+crucial to measuring the health of virtually any kind of newly launched
+platform. But as you can see, specific characteristics of a particular platform
+may dictate the need for additional, more specialized measurement tools.
+The variety and range of metrics that may be suitable during a platform’s
+startup phase is limited only by your ingenuity and the nature of the
+activities occurring in your burgeoning ecosystem.
+STAGE 2:
+METRICS DURING THE GROWTH PHASE
+The metrics that best measure the number and quality of interactions in
+your ecosystem will change over the life cycle of the platform, and it’s
+
+
+critical to identify points at which these transitions occur. Companies often
+make the mistake of clinging to metrics that their business has outgrown.
+Identifying and vetting the core metrics that are most relevant to the
+decisions you face today is important at every point in the platform’s
+development.
+For example, once the platform reaches a critical mass of users, new
+issues arise. Managers must still ensure that the core interaction is creating
+value and that the inflow of engaged users exceeds the outflow so that the
+platform is still growing. However, as growth continues, the platform must
+monitor the change in size of the user base over time. In particular, platform
+managers will want to work to ensure balance on the two sides of its
+market. This balance can be monitored by calculating the producer-to-
+consumer ratio, with an adjustment to include only active platform users—
+those who’ve engaged in interactions on the platform at a specific minimum
+rate of frequency that you consider appropriate. Experience shows that this
+ratio is a crucial factor in the rate of interaction success achieved by the
+platform.
+Consider the core interaction that the dating website OkCupid is
+facilitating: introductions between men and women. As we noted in chapter
+2, one of the critical things for this platform to manage is the access of
+straight men (who may be considered “consumers” in this context) to
+straight women (who play the role of “producers”).* As a result, OkCupid
+tracks the ratio of straight women to straight men, and platform managers
+work hard to adjust that ratio when it diverges from the level they deem
+optimal. They manage these adjustments by asking users to rate the
+attractiveness of those on the opposite side of the platform.7 The website
+then introduces a filter to reduce the number of men who can participate in
+the platform by seeing women’s profiles—especially women who are rated
+as particularly attractive.8 In this way, the OkCupid platform is helping to
+maintain positive network effects and fostering market liquidity by avoiding
+an imbalance that might otherwise alienate a segment of its female users.
+Continually measuring and monitoring the male–female ratio makes this
+maintenance possible. In similar fashion, the freelance platform Upwork
+focuses on keeping the number of freelancers proportional to the number of
+job postings, since a surfeit on either side causes participants to leave.
+For a traditional two-sided platform with producers on one side and
+consumers on the other, it is best to find ways to calculate the value of each
+
+
+user type. In Lean Analytics, the entrepreneur/author team of Alistair Croll
+and Benjamin Yoskovitz provide a useful illustration of metrics for a two-
+sided platform, which we adapt below.9
+On the producer side, the platform should monitor figures that include
+the frequency of producer participation, listings created, and outcomes
+achieved. The platform should also monitor interaction failure—the
+percentage of cases in which interactions, such as sales, are initiated but fall
+through for some reason. This is a crucial metric that many platform
+managers overlook. If users are being retained but the rate of successful
+interaction is falling, there is a serious problem.
+It’s especially important to monitor instances of producer fraud—for
+example, the failure of a producer to describe a product offering accurately
+or to deliver it in a timely fashion. Producer fraud is, of course, a
+particularly egregious, painful, and costly form of interaction failure.
+Examination of the characteristics of users and interactions repeatedly
+linked to fraud may be used to create predictive models that can help the
+platform prevent future fraud.
+Combining all these forms of data, the value of a producer can be
+calculated using traditional lifetime value (LTV) models used in many kinds
+of businesses. These models capture the mechanism by which repeat
+producers provide recurring platform revenues without incurring additional
+acquisition costs—that is, expenses incurred by the platform in attracting
+and engaging these producers. Because repeat producers are especially
+profitable to a platform, well-managed platform firms will work hard to
+create active repeat producers, just as subscriber-based services like
+magazines and cell service providers work to keep the rates of subscriber
+turnover (or churn) as low as possible.
+On the consumer side, the growing platform should monitor the
+frequency of consumption, searches, and rate of conversion to sale (the
+percentage of click-throughs that result in completed interactions). This
+information, along with the likelihood of repeat interactions, provides the
+data necessary to calculate each consumer’s LTV. Once both producer and
+consumer LTV measures have been created, the platform can run
+experiments in an effort to impact the critical determinants of LTV—churn
+rate, for example.10
+Most of today’s successful platform businesses have programs designed
+to encourage loyalty on the part of the most valuable active users and to
+
+
+discourage those who are less valuable. If you’ve ever had a platform like
+Facebook or LinkedIn ping you with an invitation to return to the platform
+after a falloff in your usage, you’ve been targeted by such a program.
+Similarly, Twitter has introduced the “popular in your network” feature to
+alert you to content that might be particularly relevant even if you have not
+subscribed to those authors’ feeds—another activity-building program that
+is driven by metrics and designed to stimulate more interactions around
+users with a proven track record of value-creating activity.11
+A critical variable from the startup phase that remains highly relevant
+during the growth phase is the interaction conversion rate—that is, the
+percentage of searches or queries that result in interactions. Well designed
+and consistently monitored metrics focusing on the sales conversion rate
+can help platform managers develop smart strategies that will enhance the
+platform’s continued growth—as when Airbnb introduced its professional
+photography service after discovering that high-quality photos increase
+property rental rates.12
+Interestingly, Airbnb has also discovered that its best source of hosts is
+people who have been guests. Consequently, it is now working hard to
+convert consumers on its platform into producers. In this case, the side
+switching rate—the rate at which people convert from one type of user to
+another—offers an important metric that the platform can use to track the
+health of its user base and to maintain balance across its network.
+New metrics are continually being devised by platform managers based
+on their specific objectives and interests as well as the unique
+characteristics of their users. Haier Group is a rapidly growing
+manufacturing company based in Qingdao, China. It is currently building a
+platform to connect its customers with the design and production teams,
+both inside and outside the organization, that create the products, which
+include home appliances and electronics. Haier’s CEO, Ruimin Zhang,
+spoke with the authors about a unique metric that the company is eager to
+capture and use—namely, the distance between consumers and producers.13
+In this case, the word “distance” is metaphorical, not literal; it refers to the
+frequency of direct interaction and the size, reach, and influence of the
+social networks that connect producers of Haier products to their users.
+To measure this distance, Haier has devised metrics based on
+interactions on WeChat, a social instant messaging and photo sharing tool
+developed by the Chinese company Tencent. The goal: to minimize the
+
+
+distance between Haier and its customers, thereby improving the fit
+between products and consumer needs, enhancing the company’s innovative
+capacities, and making its marketing and promotional efforts less costly and
+more effective.
+As CEO Zhang pointed out to us, the size of a company’s advertising
+budget might be viewed as a reflection of the distance between the
+company and its customers. For example, the annual brand value report
+issued in 2013 by the consulting firm Interbrand noted that Google’s
+advertising budget is just a tiny fraction of Coca-Cola’s. The likely reason:
+Google is deeply integrated into people’s lives through its many
+productivity and social applications, giving it constant user feedback that
+Coca-Cola doesn’t receive.
+Based on analogies like this, Haier’s leadership team hypothesizes that a
+reduction in its user distance measure may improve its product design,
+customer service, and marketing efficiency. Thus, a seemingly abstract
+metric like user distance may have a highly practical, dollars-and-cents
+impact on your bottom line.
+STAGE 3:
+METRICS DURING THE MATURITY PHASE
+Once a platform business has moved past the phases of startup and early
+growth, new challenges and issues emerge. Eric Ries, the writer and
+entrepreneur known for pioneering the “lean startup” movement,
+emphasizes that, for the mature company, incremental innovation and
+metrics must be closely related to each other. “When making improvements
+to your product,” Ries observes, “the only arbiter of whether or not it was
+successful is the metrics. And, when you are implementing an improvement
+to your product, you should be testing that improvement against a baseline.”
+Somewhat in line with Ries’s thinking, Amrit Tiwana, a professor at the
+University of Georgia, suggests that metrics suitable for information
+technology platforms that have reached the maturity phase should meet
+three major requirements: they should drive innovation, have a high signal-
+to-noise ratio, and facilitate resource allocation.14
+
+
+First, let’s focus on the role of metrics in driving innovation. In order to
+remain vibrant, a platform must be able to adapt to the needs of its users
+and to changes in the competitive and regulatory environment. One way for
+a platform to identify necessary adaptations is by studying the extensions
+provided by developers. These innovations may represent functionalities
+missing from the core platform, which the platform may choose to absorb.
+For example, during the era of the desktop computer, Microsoft Windows
+absorbed a number of applications that were once provided by stand-alone
+companies, such as disk defragmentation, file encryption, media playing,
+and more.15
+Cisco has followed the same absorption strategy in the router business,
+where it operates a platform known as the Cisco Application Extension
+Platform. The Cisco AXP (as it is called) is a Linux-based platform that
+allows third-party developers to create applications that work on Cisco
+routers, providing new capabilities that Cisco customers find useful—for
+example, enhanced security measures and customized monitoring systems.
+When we asked Cisco’s chief technology officer, Guido Jouret, how the
+company decided which functions to bundle into the Cisco AXP, his answer
+was illuminating:
+The issue is to embed into the platform multiple independent solutions to the same problem. Then
+this becomes common for everyone else. It’s a question of timing. If you do it right away, your
+ecosystem is scared that you’ll cannibalize their cash cows. If one provider builds a particular
+functionality, you don’t want to co-opt it. But if a whole slew of them have [developed the same
+capability], then competition reduces benefits anyway, and you can fold it in.16
+To enable this strategy, Cisco employs metrics that seek out instances in
+which the same capability is provided across multiple industry verticals—
+health care or the automotive business, for example. That is a sign that the
+platform is missing important features that should be part of the next round
+of continuous platform innovation.
+A platform may also choose to innovate when features provided by third
+parties become a large part of the overall value enjoyed by users. As we saw
+in chapter 7, this helps to explain Apple’s 2012 introduction of Apple Maps
+in response to the enormous popularity of Google Maps.
+Some kinds of platforms need still other customized metrics during their
+maturity phase. These include labor platforms such as Upwork, data
+platforms such as Thomson Reuters, connection platforms such as Skype,
+and platforms that connect machines such as GE’s Industrial Internet.
+
+
+Although these are distinct platform types with disparate needs, they all
+face the challenges of facilitating a core interaction, measuring the drivers
+of value, and innovating to maintain the platform’s ability to produce
+significant value for users.
+ELEMENTS OF SMART METRICS DESIGN
+The metrics dashboard you develop for your platform can be quite complex,
+allowing you to get a real-time glimpse of activities at a very fine level.
+However, simplicity is a virtue when developing metrics for your platform
+business. Overcomplex metrics make management less effective by
+introducing noise, discouraging frequent analysis, and distracting from the
+handful of data points that are most significant.
+At one time, oDesk (now known as Upwork) had so many metrics
+(measuring job postings, registered workers, service variety, and many
+other factors) that one board member complained, “You’re over-measured
+and under-prioritized.” Having learned from this mistake, Gary Swart,
+former CEO of oDesk, writes eloquently about the need for highly focused
+metrics, especially in the critical early period of a startup:
+As a business leader you need to figure out the metric that matters most for your company and
+understand that the more you measure, the less prioritized you’ll be. Don’t fall into the trap of
+trying to measure everything. What I’ve learned is that in the early days, what matters most is
+having customers who love and use your product. Figure out the one or two best measures to
+determine this.17
+Lean startup guru Eric Ries echoes the need to be selective in the design
+and use of metrics. In particular, he cautions against what he calls “vanity
+metrics,” such as total sign-ups—a relatively meaningless statistic that often
+increases even as the volume of interactions is flat or actually declining.
+Vanity metrics fail to indicate accurately whether the business is really
+achieving critical mass or the liquidity it needs.
+Instead, Ries suggests, “you should make sure your metrics meet the ‘3
+A’s test’ where your metrics are actionable, accessible, and auditable.” They
+must be actionable in that they provide clear guidance for strategic and
+managerial decisions, and in being clearly related to the success of the
+business. They must be accessible in that they are comprehensible to the
+people who gather and use the information. And they must be auditable in
+
+
+the sense that they are real and meaningful—based on clean, accurate data,
+precisely defined, and reflecting the reality of the business as perceived by
+users.18
+In the end, the most important metric is a simple one: the number of
+happy customers on every side of the network who are repeatedly and
+increasingly engaged in positive, value-creating interactions. The real
+question, which you should never lose sight of, is: are people happy enough
+with the ecosystem to continue participating in it actively? No matter how
+you end up designing the metric dashboard for your specific platform
+business, it should ultimately serve to accurately measure the answer to this
+key question.
+TAKEAWAYS FROM CHAPTER NINE
+    Since the value of a platform is derived primarily from network effects, platform metrics
+should ultimately seek to measure the rate of interaction success and the factors that
+contribute to it. Interaction success attracts active users and thereby enhances the
+development of positive network effects.
+    During the startup phase, platform companies should concentrate on metrics that track the
+strength of characteristics that enable core interactions on the platform, including liquidity,
+matching, and trust. These characteristics can be measured in a variety of specific ways,
+depending on the nature of the platform.
+    During the growth phase, platform companies should focus on metrics that are likely to
+impact growth and enhanced value creation, such as the relative size of various portions of
+the user base, the lifetime value of producers and consumers, and the sales conversion rate.
+    During the maturity phase, platform companies should focus on metrics that drive
+innovation by identifying new functionalities that can create value for users, as well as
+metrics that can identify strategic threats from competitors to which the platform needs to
+respond.
+ 
+*We recognize the unpleasant implications of this language. It reflects the currently prevailing
+dynamic of many male–female dating interactions in U.S. society at this time, including the fact that
+most online dating sites find it easier to attract male participants than females. Thus, females are “in
+demand” in a way that is analogous to the demand for highly-sought-after products on an auction site
+like eBay. As social norms evolve in the direction of greater gender equality, we hope and expect that
+this dynamic will also evolve, with implications for the effective management of dating platforms.
+OceanofPDF.com
+
+
+10
+STRATEGY
+How Platforms Change Competition
+In the world of platforms, the nature of competition is being transformed.
+Companies find themselves struggling to make sense of new competitive
+threats posed by unexpected, often counterintuitive rivals.1 The educational
+book publisher Houghton Mifflin Harcourt doesn’t fear McGraw-Hill as
+much as it fears Amazon. Broadcaster NBC worries less about ABC than
+about Netflix. Legal information purveyor Lexis feels less threatened by
+Westlaw than by Google and by the online legal services purveyor
+LegalZoom. Appliance maker Whirlpool fears GE and Siemens less than it
+fears Nest, the maker of smart home monitoring and control devices that is
+rapidly becoming a key element in the emerging “Internet of things.” And
+the social network Facebook was less worried about a rebooted Myspace
+than about Instagram and WhatsApp—which is why it bought them.
+What has changed is not simply the types of competitors but the very
+nature of the competitive battle. The result is a series of seismic upheavals
+that 
+are 
+making 
+one 
+business 
+landscape 
+after 
+another 
+almost
+unrecognizable. We’re not speaking only of the dramatic disruptions
+produced by the advent of platform businesses in traditional marketplaces
+(as described in chapter 4 and elsewhere in this book). We’re also referring
+to the dramatic competitive battles being waged within the world of
+platforms, between platform companies—with results that are often
+startling, even shocking.2
+It’s probably safe to say that the $25 billion initial public offering of
+shares in Alibaba Group in September 2014—the largest IPO in history—
+was one of the most unexpected business stories of the year. Many

@@ -1,0 +1,855 @@
+# 8. Governance: Policies to Increase Value and Enhance Growth
+
+greed” and bemoaned the fact that the Amazon rating system made it
+impossible for them to give the new Keurig a zero star rating.1
+By attempting to grab an even bigger share of the profits from its coffee-
+making platform, Green Mountain had angered its community and forfeited
+profits. The king of coffee had violated three fundamental rules of good
+governance:
+•    Always create value for the consumers you serve;
+•    Don’t use your power to change the rules in your favor; and
+•    Don’t take more than a fair share of the wealth.
+Governance is the set of rules concerning who gets to participate in an
+ecosystem, how to divide the value, and how to resolve conflicts.2 To
+understand good community governance is to understand the set of rules for
+orchestrating an ecosystem.3
+Green Mountain failed at the task of ecosystem governance. The Keurig
+in all its incarnations is simply a product platform, a single one-sided
+market serving a community of coffee drinkers. It could be much more
+successful as a beverage ecosystem with other value-adding options, a
+range of vetted suppliers, and an array of other high-quality services that
+customers would appreciate. Instead, Green Mountain chose to exclude
+suppliers that its customers found valuable, eliminating variety and freedom
+of choice in order to retain control. It overreached for a share of the value
+produced by its system. And it unilaterally placed its interest ahead of all
+others. Keurig users were the losers—and soon enough, so was Green
+Mountain.
+WHY GOVERNANCE MATTERS:
+PLATFORMS AS STATES
+The goal of good governance is to create wealth, fairly distributed among
+all those who add value. As we saw in chapter 2, the new technology-driven
+communities known as platform businesses are creating a vast amount of
+new wealth outside the firm, and these external benefits must be designed
+and managed fairly. Because these value-creating networks grow faster
+outside the firm than inside, ruling the ecosystem wisely puts a premium on
+not ruling it selfishly.
+
+
+If navigating the rules for governance is hard for one-sided platforms
+like the Keurig brewing system, it’s exponentially harder when platforms
+are multisided. After all, multisided platforms involve numerous interests
+that don’t always align. This makes it difficult for platform managers to
+ensure that various participants create value for one another, and it makes it
+likely that conflicts will emerge that governance rules must resolve as fairly
+and efficiently as possible.
+This is a juggling act that even giants and geniuses often get wrong.
+Facebook, for example, has alienated users with its privacy policies.4
+LinkedIn has angered its developers by turning off their access to APIs.5
+And Twitter has expropriated technologies developed by other members of
+its ecosystem while permitting Twitter users to harass one another. As
+Twitter’s CEO Dick Costolo said, “We suck at dealing with abuse.”6
+In the complexity of the governance issues they face, today’s biggest
+platform businesses resemble nation-states. With more than 1.5 billion
+users, Facebook oversees a “population” larger than China’s. Google
+handles 64 percent of the online searches in the U.S. and 90 percent of
+those in Europe, while Alibaba handles more than 1 trillion yuan ($162
+billion) worth of transactions a year and accounts for 70 percent of all
+commercial shipments in China.7 Platform businesses at this scale control
+economic systems that are bigger than all but the biggest national
+economies. No wonder Brad Burnham, one of the lead investors at Union
+Square Ventures, responded to the introduction of Facebook Credits—a
+short-lived system of virtual currency for use in playing online games—by
+wondering what the move said about Facebook’s monetary policy.8 In a
+similar vein, we might ask: In choosing to apply unilateral software
+standards as opposed to multilateral standards (as we saw in chapter 7),
+what kind of foreign policy is Apple pursuing? Is Twitter following an
+industrial policy based on investment in “state-owned” services or one
+relying on decentralized development by others? What does Google’s
+approach to censorship in China tell us about the company’s human rights
+policy?
+Like it or not, firms like these already serve as the unofficial and
+unelected regulators of millions of lives. For this reason, platforms have
+much to learn from cities and states, which have had thousands of years to
+evolve principles of good governance. Like the platform businesses of
+today, cities and states have long had to wrestle with the question of how
+
+
+best to create wealth and distribute it fairly. Increasing evidence suggests
+that just governance is a crucially important factor in the ability of a state to
+create wealth—even more important than such obviously valuable assets as
+natural resources, navigable waterways, and favorable agricultural
+conditions.
+Consider the modern city-state of Singapore. In 1959, when Lee Kuan
+Yew became prime minister, it had almost no natural resources. For defense
+and clean water, it relied on the Federation of Malaya, the predecessor of
+the nation of Malaysia (established in 1963). Corruption was rampant. Per
+capita GDP hovered below $430.9 Ethnic strife between Malays and
+Chinese, religious strife between Muslims and Buddhists, and political
+strife between capitalists and communists hamstrung progress.
+Lee Kuan Yew brought economic vitality to Singapore by changing its
+system of governance. Having studied at the London School of Economics
+and with a law degree from Fitzwilliam College, Cambridge, Yew
+introduced the British system of justice and rule by law. Then he attacked
+corruption. To make graft less attractive, he raised the salaries of civil
+servants to match those of similar workers in the private sector. New public
+servants had to wear white as a sign of purity when they assumed office.
+The anti-corruption rules were enforced strictly: the minister of state for the
+environment, a staunch supporter of Yew, committed suicide rather than
+face prosecution on bribery charges.10 Fairer, more open government was
+encouraged by the creation of multicultural councils empowered to give
+voice to religious and ethnic groups willing to work within the system.
+Singapore now boasts a government that ranks with those of New Zealand
+and the Scandinavian countries as one of the least corrupt in the world. This
+is significant, in part, because each 1 percent drop in corruption and misuse
+of public power for private gain is associated with a 1.7 percent rise in
+GDP.11
+Although Yew has been criticized in the West for throttling political
+dissent, the economic results produced by his good-governance campaign
+are impressive. By 2015, Singapore’s per capita GDP was $55,182, higher
+than that of the United States. During the fifty-five years from 1960 to
+2015, Singapore’s annual growth rate was 6.69 percent, almost 2 percent
+higher than that of Malaysia, from which it separated in 1965.12
+Similar evidence of the importance of good governance to wealth
+creation can be seen by comparing the GDP growth and innovation rates in
+
+
+communist East Germany and North Korea with those in their near-twin
+siblings, West Germany and South Korea.13 Good governance matters.
+MARKET FAILURE AND ITS CAUSES
+Good governance is important in both nation-states and platform businesses
+because absolutely free markets, in which people and organizations interact
+with no rules, restrictions, or safeguards, can’t always be relied upon to
+produce results that are fair and satisfactory to those involved.
+An example can be seen on eBay, where some participants inevitably
+have greater knowledge, market savvy, and bargaining skill than others. In
+most cases, the interactions that result are basically fair, even when a
+particular interaction produces a “winner” and a “loser.” But sometimes,
+outcomes that appear manipulative or even deceptive occur. For example, a
+group of eBay members, noticing that some inexperienced sellers were
+prone to misidentifying goods—for example, by misspelling Louis Vuitton
+with one “T” or Abercrombie and Fitch as “Abercrombee” or “Fich”—
+began taking advantage of these errors as middlemen. They would actively
+seek out mislabeled items, which were usually languishing unnoticed on the
+auction site, snatch them up at bargain prices, and then resell them for a
+huge markup under their proper names.
+In one celebrated example, the owner of an antique beer bottle that had
+been kept in his family for fifty years decided to list it on eBay.
+Unfortunately, the seller had no idea of the true value of his heirloom. The
+beer had been produced in the 1850s as the result of a brewing contest
+intended to provide “life-sustaining ale” to a crew navigating the Arctic in
+hopes of discovering the fabled Northwest Passage from the Atlantic to the
+Pacific. (At the time, it was believed—erroneously—that ale could prevent
+scurvy.)14 The expedition failed, but a little of the original brew survived,
+and by the time of the eBay sale, two bottles were known to exist, both
+eagerly sought after by beer collectors and history buffs.
+Unaware of all this—and careless to boot—the seller listed the precious
+bottle on eBay under the heading “Allsop’s Arctic Ale—full and corked
+with wax seal,” and proposed an opening bid of $299. The brand name
+should have been spelled “Allsopp’s,” with an extra P—a tiny error, but one
+big enough to confuse the serious collectors who would have been
+
+
+interested in the item. A shrewd scavenger for mislabeled bargains spotted
+the listing and jumped in as the sole bidder. He bought the bottle for $304
+and relisted it on eBay three days after receiving it. When collectors heard
+about it, the brew fetched bids exceeding $78,100.15
+The Case of the Ambiguous Ale is an example of market failure—a
+situation in which “good” interactions (fair and mutually satisfactory) fail to
+occur, or “bad” interactions do. If you can’t find an item you want on eBay,
+then a good interaction has failed to occur. If you did find an item you
+wanted but got cheated, abused, or deceived, then a bad interaction has
+occurred. In general, there are four main causes of market failures:
+information asymmetry, externalities, monopoly power, and risk.
+Information asymmetry arises whenever one party to an interaction
+knows facts that other parties don’t and uses that knowledge for personal
+advantage. Consider the problem of counterfeit goods, when the seller
+knows that the goods are fake but does not inform the buyer. Fakes account
+for Skullcandy headphones with lousy sound quality, Gucci handbags with
+broken stitching, Duracell batteries that don’t hold a charge, OtterBox
+mobile phone cases that are not drop-proof, and Viagra that provides no lift.
+Estimated at more than $350 billion worldwide, the size of the counterfeit
+goods market exceeds the trade in illegal drugs (estimated at $321 billion).16
+Externalities occur when spillover costs or benefits accrue to anyone not
+involved in a given interaction. Imagine that one of your friends provides
+your private contact information to a gaming company in exchange for a
+few digital points. This would be a bad interaction because it violates your
+privacy rights, and so it is an example of a negative externality.
+The concept of a positive externality is a bit more ambiguous. Consider
+what happens when Netflix analyzes the movie-watching behavior of
+someone whose tastes match yours and uses this data to give you a more
+accurate movie recommendation. This would be a positive externality,
+because it provides you with a benefit based on an interaction in which
+you’re not directly involved. Individuals who benefit from positive
+externalities aren’t likely to complain about them—but they are considered
+problems from a business design standpoint, since they reflect value that is
+not being fully captured by the platform. In an ideal world—at least,
+according to economic theory—every value created would somehow be
+accounted for and credited accurately to the entity responsible for it.
+
+
+A concept closely related to the positive externality is the public good,
+whose value is not fully captured by the party that created it. Individuals
+generally create too few public goods unless some governing mechanism is
+designed to recognize and reward them.
+Monopoly power arises when one supplier in an ecosystem becomes too
+powerful because of its control of the supply of a widely sought good, and
+uses this power to demand higher prices or special favors. At the height of
+its popularity (2009–10), game-maker Zynga became excessively powerful
+on Facebook, leading to conflicts over issues such as the sharing of user
+information, the split of gaming revenues, and the cost to Zynga of ads on
+the social network. eBay has experienced similar problems dealing with so-
+called power sellers.
+Risk is the possibility that something unexpected and essentially
+unpredictable may go wrong, turning a good interaction into a bad one.
+Risk is a perennial problem in all markets, not just on platforms. A well-
+designed market generally develops tools and systems that serve to mitigate
+the effects of risk, thereby encouraging participants to engage in more
+interactions.
+TOOLS FOR GOVERNANCE: LAWS, NORMS,
+ARCHITECTURE, AND MARKETS
+The literature on corporate governance is vast, especially in the field of
+finance. However, platform governance involves design principles that
+traditional finance theory overlooks. The single most heavily cited article
+on corporate governance is a literature survey that considers only “the ways
+in which suppliers of finance to corporations assure themselves of getting a
+return on their investment.”17 The focus here is on the information
+asymmetry arising from the separation of ownership and control—a critical
+element of governance design, but far from sufficient.18 Information
+asymmetry between the community of users and the firm also matters, and
+their interests too must be aligned.
+Additionally, platform governance rules must pay special heed to
+externalities. These are endemic in network markets, since, as we’ve seen
+when examining network effects, the spillover benefits users generate are a
+source of platform value. Understanding this forces a shift in corporate
+
+
+governance from a narrow focus on shareholder value to a broader view of
+stakeholder value.
+Market designer and Nobel Prize-winning economist Alvin Roth
+described a model of governance that uses four broad levers to address
+market failures.19 According to Roth, a well-designed market increases the
+safety of the market via transparency, quality, or insurance, thereby enabling
+good interactions to occur. It provides thickness, which enables participants
+from different sides of a multisided market to find one another more easily.
+It minimizes congestion, which hampers successful searches when too
+many people participate or low quality drives out high. And it minimizes
+repugnant activity—which explains why platform designers forbid porn on
+iTunes, human organ sales on Alibaba, and child labor on Upwork.
+According to Roth, good governance occurs when market managers use
+these levers to address market failures.
+A broader view of platform governance uses insights borrowed from the
+practices of nation-states as modeled by constitutional law scholar
+Lawrence Lessig. In Lessig’s formulation, systems of control involve four
+main sets of tools: laws, norms, architecture, and markets.20
+A familiar example can be used to clarify these four kinds of tools.
+Suppose leaders of a particular ecosystem want to reduce the harmful
+effects of smoking. Laws could be passed to ban cigarette sales to minors or
+forbid smoking in public spaces. Norms—informal codes of behavior
+shaped by culture—could be applied by using social pressure or advertising
+to stigmatize smoking and make it appear “uncool.” Architecture could be
+used to develop physical designs that reduce the impact of smoking—for
+example, air filters that clean the air, or smokeless devices that substitute
+for cigarettes. And market mechanisms could be used by taxing tobacco
+products or subsidizing “quit smoking” programs. Historically, those who
+want to control social behavior—including platform managers—have
+employed all four of these tools.
+Let’s consider some of the ways in which these four kinds of tools can be
+used by platform managers as part of a governance system.
+Laws. Of course, many laws created and enforced by nation-states—
+laws, in the traditional sense of the term—apply to platform businesses and
+their participants. Sometimes, the application of such laws can be tricky.
+For example, legal sanctions that punish bad actors offer one traditional
+
+
+way of addressing the problem of risk. However, applying these sanctions
+requires determining who is responsible for problems that arise and who
+should bear the blame when they do—something that is not always simple
+or straightforward.
+When it comes to platform businesses, this is far from a purely
+theoretical issue. We’ve mentioned some of the serious legal problems
+faced by platforms earlier: individuals who listed properties on Airbnb had
+their homes used for brothels and raves; people offering personal services
+on Craigslist have been murdered.21 Case law does not generally hold
+platforms accountable for misdeeds of platform users, even though the
+owners of the platform may be reasonably well positioned to regulate and
+control the behavior of the users. Thus, individual platform participants
+usually have to bear the downside risk, at least as far as national and local
+laws are concerned. (We’ll return to this topic in chapter 11, on regulation.)
+Applying Lessig’s concept of “law” to governance within the platform
+business takes us into a different arena. The “laws” of a platform are its
+explicit rules—for example, the terms of service drafted by lawyers or the
+rules of stakeholder behavior drafted by the platform’s designers. These
+laws moderate behavior at both the user and the ecosystem level. For
+example, at the user level, the Apple rule that allows a user to share digital
+content among up to six devices or family members prevents unlimited
+sharing while nonetheless providing economic incentives for the purchase
+of Apple services and making a reasonable amount of sharing convenient.22
+At the ecosystem level, the Apple rule compelling app developers to submit
+all code for review, combined with the rule that releases Apple from any
+duty of confidentiality, allows Apple to proliferate best practices.23
+Platform laws should be, and usually are, transparent. Stack Overflow,
+the most successful online community for answering programming
+questions, offers an explicit list of rules for earning points as well as the
+rights and privileges those points confer. One point confers the right to ask
+and answer questions. Fifteen points confers the right to vote up someone
+else’s content. At 125 points, you gain the right to vote down content—
+which also costs one point. And at 200 points, you’ve added so much value
+that you earn the privilege to see fewer ads. This system of explicit,
+transparent laws solves a public goods problem by encouraging members to
+share their best insights with everyone else on the platform.24
+
+
+An exception to the principle of transparency applies to laws that might
+facilitate bad behavior. Dating sites discovered this the hard way. When the
+sites applied laws that gave stalkers a quick “hand slap” when they
+misbehaved, the stalkers soon learned to avoid the specific trigger that
+flagged them. If, instead, the platform delayed the negative feedback, the
+stalker had a harder time learning how he’d been caught, which led to a
+more powerful and lasting disincentive.
+Similarly, when a troll on a user-generated content site has his account
+deleted, he often returns under a new identity. Smart platform managers
+started making nuisance posts invisible to everyone but the troll. Unable to
+inflame community sentiment, the troll retreated.
+The underlying principle: Give fast, open feedback when applying laws
+that define good behavior, but give slow, opaque feedback when applying
+laws that punish bad behavior.
+Norms. One of the greatest assets any platform—indeed, any business—
+can have is a dedicated community. This doesn’t happen by accident.
+Vibrant communities are nurtured by skilled platform managers in order to
+develop norms, cultures, and expectations that generate lasting sources of
+value.
+iStockphoto, today one of the world’s largest markets for crowdsourced
+photographs, was originally founded by Bruce Livingstone to sell CD-ROM
+collections of images by direct mail. As that business tanked, Bruce and his
+partners hated the thought that their work might go to waste. So they began
+giving away their images online.25 Within months, they were discovered by
+thousands of people who not only downloaded images but asked to share
+their own images as well. To maintain the quality Bruce prided himself on
+and to eliminate spam, pornography, and copyright infringement, he made
+sure that every image was scrutinized by an iStockphoto inspector. This was
+a painstaking and costly process. Bruce found himself working sixteen-hour
+days.26
+Realizing that individual human inspection could not scale, Bruce turned
+to crowd curation. He devised a system under which people who uploaded
+quality content could earn their way to becoming inspectors and community
+organizers. Groups emerged to handle specific categories of images—for
+example, images linked to locations like “New York” or categories like
+“Food.” Bruce himself worked relentlessly to praise, give feedback, and
+
+
+build his community. Under the online name Bitter, he regularly posted
+comments on the platform’s homepage promoting members and their work,
+such as when he noted “great new stuff from Delirium, also tasty food
+series from Izusek.”27
+These efforts established a powerful set of norms that came to govern the
+iStockphoto community. These norms included feedback, high-quality
+content, open engagement, and a natural role progression to greater levels
+of authority. Applying these norms, the community produced a remarkable
+body of stock photos, a classic and valuable public good.
+As the story of iStockphoto suggests, norms do not arise in a vacuum.
+They reflect behaviors, which means that they can be constructed through
+the intelligent application of the discipline of behavior design.
+Nir Eyal, who has worked in both advertising and game development,
+describes behavior design as a recurring sequence of trigger, action, reward,
+and investment.28
+The trigger is a platform-based signal, message, or alert such as an
+email, a web link, a news item, or an app notification. This prompts the
+platform member to take some action in response. The action, in turn,
+produces a reward for the member, usually one with some variable or
+unanticipated value, since variable reward mechanisms like slot machines
+and lotteries are habit-forming. Finally, the platform asks the member to
+make an investment of time, data, social capital, or money. The investment
+deepens the participant’s commitment and reinforces the behavior pattern
+platform managers want to see.
+Here’s an example of how the process works. Barbara is a member of
+Facebook. One day, an interesting photo shows up in Barbara’s news feed—
+perhaps a picture of a gorgeous sunlit beach in Maui, Barbara’s favorite
+vacation spot. This is the trigger. The action in response is designed to be as
+easy as possible (frictionless), which encourages Barbara to take the next
+step. In this case, the next step is clicking on the photo, which takes Barbara
+to Pinterest, the photo-sharing platform, which happens to be entirely new
+to Barbara. There she receives her reward: a variety of additional
+tantalizing, carefully curated photos selected specifically to engage her
+curiosity. (Imagine a photo collection titled “Ten Best Unknown Beaches of
+the South Pacific.”) Finally, Pinterest asks Barbara, whom they just
+rewarded, to make a small investment. She may be asked to invite friends,
+state preferences, build virtual assets, or learn new Pinterest features.29 Any
+
+
+of these actions will set up a new set of triggers for Barbara and others, and
+the cycle starts over.
+In the case of Pinterest, the norms fostered by this system of behavior
+design have produced a body of content that is a valuable public good. Of
+course, behavior design is not always used to benefit participants. It can
+also be used as a tool of selling and manipulation—which is one reason
+why users themselves should be aware of how such governance
+mechanisms work.
+As a rule, it’s desirable to have users participate in shaping the systems
+that govern them. Elinor Ostrom, the first woman ever to receive the Nobel
+Prize in Economics, observed that successful creation and policing of public
+goods by communities follows several regular patterns. Clearly defined
+boundaries delineate who is and who is not entitled to community benefits.
+People affected by decisions regarding how community resources will be
+appropriated have recognized channels they can use to influence the
+decision-making processes. People who monitor community member
+behavior are accountable to the community. Graduated sanctions apply to
+those who violate community rules. Members have access to low-cost
+dispute resolution systems. And, as community resources grow, governance
+should be structured in nested tiers, with certain simple issues controlled by
+small, local groups of users, and increasingly complex, global problems
+managed by larger, more formally organized groups.30 Norms that emerge in
+successful platform communities generally follow the patterns outlined by
+Ostrom.
+Jeff Jordan, former senior vice president at eBay, recounts the problems
+the company encountered when it sought to add a fixed-price sale format to
+the traditional auction format.31 The two main categories of market
+participants reacted quite differently to the plan. Buyers liked the idea of
+fixed prices, but the sellers who paid eBay’s marketplace fees feared that
+fixed-price listings would effectively kill the golden goose of auction-
+driven price escalation.
+The process Jordan used to resolve the dispute paralleled several of
+Ostrom’s ideas. eBay used focus groups and a “Voices” program to reflect
+user perspectives and gauge the strength of their feelings. Jordan’s team
+deployed thoughtful communications to alert buyers and sellers about
+proposed rule changes. They tested programs on smaller groups and pulled
+back if changes turned out badly. Ultimately, eBay’s leadership sided with
+
+
+the buyers, reasoning that the sellers would ultimately remain loyal to the
+platform because “merchants go where the consumers are.”32 The decision
+succeeded. Today, “Buy it Now” fixed-price listings account for about 70
+percent of eBay’s $83 billion in gross merchandise volume.
+Architecture. In the world of platform businesses, “architecture” refers
+basically to programming code. Well-designed software systems are self-
+improving: they encourage and reward good behavior, thereby producing
+more of the same.
+Online banking platforms such as peer-to-peer lending businesses are
+using software algorithms to displace traditional, labor-intensive, and
+expensive loan officers. They calculate a borrower’s likelihood of repaying
+using both conventional data such as credit scores and nontraditional data
+such as a Yelp rating (for a restaurant), the stability of the borrower’s email
+address, her connections on LinkedIn, and even how thoroughly she
+interacts with the loan assessment tools before applying.33 As the platform
+architecture becomes better at predicting borrower behavior, participation
+risk declines, attracting more lenders. Meanwhile, the low overhead costs
+allow the platform to offer lower rates, which attracts more borrowers.
+Greater participation further improves the data flow, and the cycle repeats.
+No wonder peer-to-peer lending platforms like the British firm Zopa
+have been enjoying such notable success. When Zopa proudly announced
+that it had provided more than $1 billion in loans, one of this book’s
+authors, Sangeet Choudary, congratulated the company leaders and politely
+asked, “Wouldn’t your loan default rate be a more significant measure of
+success?” Zopa responded by publicizing the fact that its loan default rate
+had fallen to 0.2 percent from 0.6 percent three years earlier.34 Such is the
+power of well-designed platform architecture.
+Architecture can also be used to prevent and correct market failures.
+Recall the middlemen on eBay who took advantage of seller misspellings.
+Although one might lament the lost opportunity for the hapless sellers to
+complete the deal, these middlemen provided market liquidity (“thickness”
+in Alvin Roth’s formulation) through the process known as arbitrage. If no
+one bids on misspelled items, the interaction never happens—so
+arbitrageurs can be viewed as providing a valuable service. Yet the
+existence of arbitrage opportunities also highlights market inefficiencies.
+eBay now uses automated systems to provide spelling assistance, so sellers
+
+
+can have more confidence that they’ll receive what their items are worth. In
+a case like this, wise governance may disenfranchise a specific group of
+stakeholders, such as arbitrageurs, in order to increase the overall health of
+the ecosystem.
+High-speed trading on the New York Stock Exchange offers another
+example. Firms like Goldman Sachs use supercomputers to determine when
+an order placed in one market will spill over to another market. Then they
+swoop in to intercept the deal, buying low, selling high, and skimming the
+margin. This methodology gives a few market participants who can afford
+massive computing power an unfair advantage over others.35 Such
+asymmetric market power risks driving away players who feel cheated. To
+solve this problem, competing exchanges, such as the alternative trading
+system IEX, are using their own supercomputers to precisely time the order
+of bids, thereby eliminating the advantages of a Goldman Sachs.36
+Architecture can level the playing field, making markets more competitive
+and fair for all.
+One of the most innovative forms of architectural control ever invented
+made its appearance in 2008, when an anonymous coding genius known as
+Satoshi Nakamoto published a paper on the Cryptography mailing list
+defining the Bitcoin digital currency and the so-called blockchain protocol
+governing it. Although Bitcoin is notable as the world’s first unforgeable
+digital currency that cannot be controlled by a government, bank, or
+individual, the blockchain is truly revolutionary. It makes possible fully
+decentralized, completely trustworthy interactions without any need for
+escrow payments or other guarantees.
+The blockchain is a distributed public ledger that enables storage of data
+in a container (the block) affixed to other containers (the chain).37 The data
+can be anything: dated proof of an invention, a title to a car, or digital coins.
+Anyone can verify that you placed data in the container because it has your
+public signature, but only your private key can open it to see or transfer the
+contents. Like your home address, a blockchain container is publicly,
+verifiably yours, but only people you authorize have a key that permits
+entry.38
+The blockchain protocol makes decentralized governance possible.
+Normally, when you sign a contract, you must either trust the other party to
+honor the terms or rely on a central authority such as the state, or on an
+escrow service like eBay, to enforce the deal. Public blockchain ownership
+
+
+empowers us to write self-enforcing smart contracts that automatically
+reassign ownership once contract terms are triggered. Neither party can
+back out because the code, running in a decentralized public fashion, is not
+under anyone’s control. It simply executes. These smart, autonomous
+contracts can even pay people for the output of their work—in effect,
+machines hiring people, not the other way around.
+For example, imagine a smart contract between a wedding photographer
+and a couple planning their nuptials. The blockchain-stored contract could
+specify that payment of the final installment of the photographer’s fee will
+be made promptly when the edited photo files are delivered electronically to
+the newlyweds. The automatic digital trigger ensures that the photographer
+is incentivized to deliver the photos promptly, while it also relieves her of
+any concern that her clients might fail to pay.
+Nakamoto’s invention has given birth to a new kind of platform—one
+with open architecture and a governance model but no central authority.
+Having no need for gatekeepers, it will put serious pressure on existing
+platforms that rely on costly gatekeepers. Financial services that claim 2–4
+percent of transactions simply for passing them may in the future be hard
+pressed to justify their rake.
+Furthermore, while most platforms address the problem of the market
+power of particular participants, Nakamoto’s platform addresses the
+problem of monopoly power of the platform itself. Not even Nakamoto,
+whose real identity remains a mystery, can remake the rules of the open
+source code to favor one participant over another.
+Markets. Markets can govern behavior through the use of mechanism
+design and various incentives—not money alone, but the trifecta of human
+motivations that may be summarized as fun, fame, and fortune. In fact, on
+many platforms, money is far less important than the more intangible,
+subjective form of value known as social currency.
+The idea behind social currency is to give something in order to get
+something. If you give fun in a photo, you can get people to share it. Social
+currency, measured as the economic value of a relationship, includes
+favorites and shares.39 It also includes the reputation a person builds up for
+good interactions on eBay, good news posts on Reddit, or good answers on
+Stack Overflow. It includes the number of followers a user attracts on
+Twitter and the number of skill endorsements she garners on LinkedIn.
+
+
+iStockphoto evolved a useful market mechanism based on social
+currency to manage exchange of photos. Every photo download cost the
+downloader one credit and earned one credit for the person who’d originally
+uploaded the photo.40 Credits could also be purchased for 25 cents each, and
+photographers received cash payment for accumulated credits valued at
+$100 or more. This system created a fair social exchange that allowed
+professional photographers and non-photographers to participate in the
+same market. The mechanism simultaneously encouraged supply and
+market “thickness,” giving birth to the micro stock photo industry.
+Social currencies have a number of remarkable and underappreciated
+properties. We can even use them to answer Brad Burnham’s interesting
+question about the “monetary policy” of a platform.
+The enterprise management platform company SAP uses a social
+currency like that of iStockphoto or Stack Overflow to motivate developers
+to answer one another’s questions. Points earned when the employee of a
+development company answers a question are credited to a company
+account; when the account reaches a specified level, SAP makes a generous
+contribution to a charity of the company’s choice. The system has saved
+SAP $6–8 million in tech support costs, generated numerous new product
+and service ideas, and reduced average response time to thirty minutes from
+the one business day that SAP promises.41 SAP estimates that knowledge
+spillovers from these activities account for a half-million-dollar gain in
+annual productivity for a typical enterprise software partner.42
+Even more interesting, SAP has used the social currency supply to
+stimulate its developer economy in the same way as the Federal Reserve
+uses the money supply to stimulate the U.S. economy. When SAP
+introduced a new customer relationship management (CRM) product, it
+offered double points on any answer, code, or white paper relating to CRM.
+During the two-month duration of this “monetary expansion” policy,
+developers found gaps in the software and devised new features at a vastly
+higher rate.43 Used as a money supply, the increased flow of social currency
+caused overall economic output to rise. In effect, SAP employed an
+expansionary monetary policy to stimulate growth—and it worked.
+In addition to promoting economic growth, well-designed market
+mechanisms can incentivize the creation and sharing of intellectual property
+and reduce the riskiness of interactions on the platform.
+
+
+Beautiful, useful ideas are public goods. Which raises the question: what
+is the optimal intellectual property policy for a platform business? If a
+developer working on a platform invents a valuable idea, who should own
+it, the developer or the platform? It’s possible to imagine arguments on both
+sides of the issue. Giving ownership to the developer provides incentives
+for idea creation. Giving ownership to the platform facilitates
+standardization and sharing, and enriches the platform ecosystem as a
+whole. State-mandated laws regarding patents and other forms of
+intellectual property protection are clumsy and expensive to enforce. A
+more elegant platform-based solution is required.
+SAP has tackled this problem through two practices. First, it publishes an
+18–24-month advance road map indicating what new products and services
+it intends to build to enhance its offerings to its corporate clients. This not
+only tells SAP’s outside developers what digital real estate will be available
+for their own innovations but also gives them up to two years before they
+face competition. The two-year window thus serves as a metaphorical
+patent period.44 Second, SAP has made a policy of partnering with
+developers financially or buying them out at a fair price. This assures
+developers that they will be fairly compensated for their work, reduces
+partner risk, and encourages outside investment in the SAP platform.
+The issue of risk reduction on a platform is a perennial one. History
+shows that platform owners generally seek to avoid responsibility for the
+risks faced by platform participants, especially in the early days of the
+platform. For example, in the 1960s, credit card companies, which host the
+two-sided merchant and cardholder platform, resisted insuring cardholders
+against fraud on their cards. They argued that insurance would promote
+fraud as consumers would become careless with their cards, and that banks
+forced to absorb more risk would become more reluctant to extend credit,
+hurting low-income consumers.
+Over the vigorous objections of major banks, the Fair Credit Reporting
+Act (1970) and a subsequent amendment required fraud insurance,
+imposing a limit of $50 on consumer liability for fraudulent use of a credit
+card. The disaster predicted by the credit card companies did not occur.
+Freed from the fear of fraud, consumers used their cards so much more
+often that the increase in interaction volume more than offset the increase in
+fraud. The business benefit from fraud insurance is so powerful that, in
+
+
+order to encourage adoption and use, many banks now waive the $50
+charge if consumers report a lost or stolen card within twenty-four hours.45
+In recent years, new platform businesses have made the same mistake as
+credit card companies did in the 1960s. Initially, Airbnb refused to
+indemnify hosts against bad guest behavior, and Uber refused to insure
+riders against bad driver behavior.46 Eventually, both companies realized
+that this refusal was hurting the growth of their platforms. Today, as we’ve
+noted, Airbnb offers its host members $1 million in homeowners’
+protection, and Uber is partnering with insurance firms to create new types
+of policies to protect its drivers.47
+Rather than seeking to minimize their own risk, platforms should use
+market mechanisms such as risk pooling and insurance to reduce risk for
+their participants and thereby maximize overall value creation. Good
+governance means looking after the health of one’s ecosystem partners.
+PRINCIPLES OF SMART SELF-GOVERNANCE
+FOR PLATFORMS
+Kings and conquerors like to make the rules; they don’t always like to abide
+by them. Yet results improve when smart rules of governance are applied to
+platform companies themselves as well as to platform partners and
+participants.
+The first big principle of smart self-governance for platforms is internal
+transparency. In platform companies, as in virtually all organizations,
+there’s a tendency for divisions or departments to become “siloed”—to
+develop unique perspectives, languages, systems, processes, and tools that
+are difficult for outsiders to understand, even those in another department of
+the same company. This makes it extremely hard to solve complex, large-
+scale problems that span two or more divisions, since it means that
+members of different work teams lack a shared vocabulary and tool set. It
+also makes it much harder for outsiders—including platform users and
+developers—to work effectively with the platform management team.
+To avoid this kind of dysfunction, platform managers should strive to
+give all their business divisions a clear view across the entire platform.
+
+
+Such transparency promotes consistency, helps others develop and use key
+resources, and facilitates growth to scale.
+The so-called Yegge Rant, executive Steve Yegge’s attempt to
+summarize a mandate issued by Amazon’s Jeff Bezos, captures the spirit of
+this principle very effectively. Bezos insisted that all members of the
+Amazon team must learn to communicate with one another using “service
+interfaces”—data communication tools specifically designed to be clear,
+understandable, and useful to everyone in the organization as well as to
+outside users and partners. The idea is to treat everyone you do business
+with—including your colleagues in other departments and divisions of the
+organization—as customers with legitimate and important information
+needs that you are responsible to meet. Hence the seven rules presented in
+the Yegge Rant:
+1.  All teams will henceforth expose their data and functionality through service interfaces.
+2.  Teams must communicate with each other through these interfaces.
+3.  There will be no other form of interprocess communication allowed: no direct linking, no
+direct reads of another team’s data store, no shared-memory model, no back-doors whatsoever.
+The only communication allowed is via service interface calls over the network.
+4.  It doesn’t matter what technology they use. HTTP, Corba, Pubsub, custom protocols—doesn’t
+matter. Bezos doesn’t care.
+5.    All service interfaces, without exception, must be designed from the ground up to be
+externalizable. That is to say, the team must plan and design to be able to expose the interface
+to developers in the outside world. No exceptions.
+6.  Anyone who doesn’t do this will be fired.
+7.  Thank you; have a nice day!
+Astute application of this principle of transparency underlies the success
+of Amazon Web Services (AWS), the platform’s giant cloud services
+company. Andrew Jassy, Amazon’s vice president of technology, had
+observed how different divisions of Amazon kept having to develop web
+service operations to store, search, and communicate data.48 Jassy urged that
+these varied projects should be combined into a single operation with one
+clear, flexible, and universally comprehensible set of protocols. Doing this
+would make all of Amazon’s vast body of data accessible and useful to
+everyone in the organization.
+Even more important, Jassy recognized that solving this problem for
+Amazon could have broader external applications. He reasoned that if
+multiple business units within Amazon had to solve this problem, then a
+reliable data management service that had solved the problem effectively
+
+
+might well be useful to outside firms with similar needs. AWS was born—
+one of the first businesses to offer cloud-based information storage and
+management services and expertise to companies with massive data
+challenges. Thanks to Jassy’s vision, AWS today has more market capacity
+than the next dozen cloud services combined.49
+By contrast, companies that limit their own ability to see across business
+units are likely to fail to establish viable platforms or to build their platform
+businesses to scale.
+Sony Corporation provides a sobering example. The Sony Walkman had
+dominated portable music since the 1970s. In 2007, when the Apple iPhone
+was introduced, Sony’s dominance of the world of electronic devices
+seemed unshakeable. Sony had a world-class MP3 player, it had a
+pioneering e-reader, and it made some of the best cameras. In the fall of that
+year, Sony introduced the next-generation PlayStation Portable (PSP), the
+best gaming device in the world. Sony even owned Time Warner movie and
+television studios, giving it the opportunity to offer unique content. Yet
+despite these piecemeal advantages, Sony never developed the vision to
+offer a platform. Instead, the firm embraced separate product lines and
+focused on individual systems.
+Sony’s siloed business vision prevented it from creating a unified
+platform ecosystem. Within a few years, Apple’s iPhone and the apps built
+on its growing platform had swept the field. Two years after the crash of
+2008, Sony’s stock price was still almost one-third below its prior value,
+while Apple’s price had soared to historic highs.
+The second big principle of platform self-governance is participation.
+It’s crucial for platform managers to give external partners and stakeholders
+a voice in internal decision processes equal to that of internal stakeholders.
+Otherwise, the decisions made will inevitably tend to favor the platform
+itself, which will eventually alienate outside partners and cause them to
+abandon the platform.
+In their book Platform Leadership, Annabelle Gawer and Michael A.
+Cusumano offer a vivid example of how giving partners a voice can be
+great platform governance. The ecosystem built around the universal serial
+bus (USB), promoted by Intel, was one of the first standards to facilitate
+data and power transfer between peripherals—keyboards, memory devices,
+monitors, cameras, network connectors, and so on—and computers. Yet
+peripherals were outside Intel’s core microchip business.50 This meant that
+
+
+Intel faced a particularly acute version of the chicken-or-egg launch
+problem that we discussed in chapter 5. No one wants to produce
+peripherals for a computer standard no one else has adopted, but no one
+wants to buy a computer for which no one else has made peripherals. And
+potential hardware partners were reluctant to link with Intel since, as the
+owner of the standard, Intel would have the option of making future
+changes to the standard that could render competing products incompatible,
+thereby capturing all the long-term value of partner investments.
+Intel cracked the chicken-or-egg conundrum by entrusting USB to its
+Intel Architecture Labs (IAL) division. As a new business unit, IAL did not
+fall under the authority of any internal product line. Its job was to serve as a
+neutral negotiator between ecosystem partners and internal business units,
+which it could only achieve through independence. IAL earned the trust of
+partners by advocating and enacting policies that advanced the health of the
+ecosystem even at the occasional expense of Intel business units. Over the
+course of a year, the IAL team visited over fifty companies, inviting them to
+help define the standard and design licenses that made them comfortable.
+Through IAL, Intel also committed not to trample partner markets. Intel
+used both reputation and contracts to limit its own future behavior. (See the
+sidebar here for a summary of IAL’s self-governance principles.)
+These efforts paid off. A consortium of seven companies—Compaq,
+DEC, IBM, Intel, Microsoft, NEC, and Nortel—united behind USB,
+producing an ecosystem standard that has evolved successfully for more
+than a decade.
+This returns us to the deep design principle we introduced early in this
+chapter: Just and fair governance can create wealth. We saw this principal
+operate in the story of Singapore’s rise; we see it here in the story of IAL
+and the launch of the USB standard.
+SELF-GOVERNANCE RULES FOLLOWED BY INTEL ARCHITECTURE LABS IN
+LAUNCHING THE USB STANDARD
+  1. Give customers a voice in key decisions. Use a separate business unit, with a “Chinese
+wall,” to handle conflicting agendas.
+  2. For trusting relationships, open standards must remain open.
+  3. Treat IP [intellectual property] fairly, yours and theirs.
+  4. Communicate a clear road map and stick to it. Commitments to act or not act must be
+credible.
+
+
+  5. Reserve the right to enter strategically important markets with notice. Don’t surprise
+people and don’t play favorites with news.
+  6. In case of big investments, share risk and bet your own money.
+  7. Do not promise to not change the platform. Do promise early notice. Have skin in the
+game, so change bites the platform, not just the partner.
+  8. It’s okay to offer differential benefits to partners with differentiated assets. Just make sure
+everyone understands how to qualify.
+  9. Promote the long-term financial health of partners, especially smaller ones.
+10. As the business matures, decisions increasingly favor outward progression from core
+platform, to complements, to new businesses that cannibalize the platform.51
+Fairness helps create wealth in two ways.52 First, if you treat people
+fairly, they are more likely to share their ideas. Having more ideas creates
+more opportunity to mix, match, and remake them into new innovations.
+Second, one of this book’s authors (Marshall Van Alstyne) has shown
+formally that fair governance leads participants in a market to allocate their
+resources more wisely and productively.53 Consider the USB standard. If
+each of the seven firms involved in creating the standard is sure to get a fair
+share of the value created, then each will willingly participate. By contrast,
+if five of the firms could gang up to steal the value of the other two—and
+those two know this could happen—the two may never join the coalition.
+This fracturing caused by the possibility of unfairness could have split the
+USB standard into competing standards, or, worse, prevented the
+development of any standard at all.
+This is not to say that fairness always creates wealth or that wealth can
+never be created without it. Keurig, Apple, Facebook, and others have all, at
+times, treated their communities badly yet thrived financially. But in the
+long run, designing fair participation into ecosystem governance prompts
+users to create more wealth than if the rules grant a platform owner the
+ability to make arbitrary decisions without accountability. Many platform
+managers choose governance principles that favor themselves over their
+users. Yet platforms that respect their users more can expect more from
+their users—with benefits ultimately accruing to all.
+Governance will always be imperfect. Whatever the rules, partners will
+find new forms of private advantage. There will always be information
+asymmetries and externalities. Interactions lead to complications, which
+lead to interventions, which lead to new complications. Indeed, if good
+governance allows third parties to innovate, then, as they create new
+
+
+sources of value, they will simultaneously create new struggles to control
+that value.
+When such conflicts arise, governance decisions should favor the
+greatest sources of new value or the direction where the market is headed,
+not where it used to be. Firms that choose only to guard their aging assets,
+as Microsoft has done, stagnate. The governance mechanism must therefore
+be self-healing and promote evolution. Sophisticated governance achieves
+efficiency at the level of “design for self-design”—that is, it encourages
+platform members to collaborate freely and experiment fearlessly in order
+to update the rules as necessary. Governance should not be static. When
+signs of change appear on the horizon—such as new behaviors by platform
+users, unanticipated conflicts among them, or encroachments by new
+competitors—information about the change should spread rapidly through
+the organization, encouraging creative conversations about how the
+governance system may need to evolve in response.
+No matter what kind of business or social ecosystem your platform
+inhabits, it will always include both fast-moving parts and slow-moving
+parts. Smart governance systems are flexible enough to respond to both.54
+TAKEAWAYS FROM CHAPTER EIGHT
+    Governance is necessary because absolutely free markets are prone to failures.
+    Market failures are generally caused by information asymmetry, externalities, monopoly
+power, and risk. Good governance helps prevent and mitigate market failures.
+    The basic tools for platform governance include laws, norms, architecture, and markets.
+Each must be designed and implemented with care in order to encourage platform
+participants to engage in positive behaviors, incentivize good interactions, and discourage
+bad interactions.
+    Self-governance is also crucial to effective platform management. Well-run platforms
+govern their own activities following the principles of transparency and participation.
+OceanofPDF.com
+
+
+9
+METRICS
+How Platform Managers
+Can Measure What Really Matters
+Leaders have always needed to focus on a handful of key metrics to guide
+them. This has been true for thousands of years in every domain of human
+activity, from business to government to warfare. Consider Jonathan Roth’s
+description of the key factors for Julius Caesar’s army in the Gallic
+campaigns (58–50 BCE):
+The Roman army took a vast array of materiel into the field: clothing, armor, edged weapons,
+missiles, tents, portable fortifications, cooking gear, medical supplies, writing materials, and much
+more … Yet, approximately ninety percent of the weight of the supplies needed by an ancient
+army was made up of only three elements: food, fodder and firewood. All military decisions from
+the basic strategic concept to the smallest tactical movements were affected by, and often
+determined by, the need to provide these supplies to the army.1
+Given a certain number of soldiers and animals, Caesar’s quartermaster
+could quickly determine how far the army could march and how long it
+could campaign before reprovisioning, simply by tabulating the quantity of
+food for the men, fodder for the animals, and firewood for warmth and
+cooking. These three key metrics shaped many of Caesar’s most
+fundamental strategic choices.
+Leaders of traditional for-profit companies that have linear value chains
+(pipelines) have, similarly, achieved success by working with a relatively
+limited set of standard metrics. For example, firms that manufacture goods
+such as automobiles or washing machines must source raw materials or
+subassemblies and then assemble these into complete products that are

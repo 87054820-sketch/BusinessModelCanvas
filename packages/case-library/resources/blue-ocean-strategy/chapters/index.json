@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "ch01-intro",
+    "order": 1,
+    "title": { "en": "Creating Blue Oceans: Value Innovation", "zh": "开创蓝海：价值创新" },
+    "summary": {
+      "en": "Red oceans are all the industries in existence today — the known market space where companies fight for a share of shrinking profit pools. Blue oceans are the industries not yet born — unknown market space defined by value innovation, not competition. The book's central claim: lasting success comes not from battling competitors, but from making them irrelevant by creating uncontested market space. Case studies: Cirque du Soleil (reinvented the circus), Yellow Tail (democratized wine).",
+      "zh": "红海是今天存在的所有产业——已知的市场空间，公司在日益缩小的利润池里争夺份额。蓝海是尚未诞生的产业——未知的市场空间，由价值创新而非竞争来定义。全书核心主张：持久的成功不来自与对手搏杀，而是通过创造无人竞争的市场空间让对手变得无关紧要。案例：太阳马戏团（重新发明马戏）、黄尾袋鼠（民主化葡萄酒）。"
+    },
+    "relatedCaseSlugs": ["cirque-du-soleil", "yellow-tail", "nintendo-wii"],
+    "relatedCanvasDefIds": ["blue-ocean-strategy-canvas"]
+  },
+  {
+    "slug": "ch02-tools",
+    "order": 2,
+    "title": { "en": "Analytical Tools and Frameworks", "zh": "分析工具和框架" },
+    "summary": {
+      "en": "The Strategy Canvas (an as-is diagnostic: plot the competitive factors on X, offering level on Y, draw each competitor's value curve) and the Four Actions Framework (Eliminate, Reduce, Raise, Create) — the ERRC grid. Together they show what the industry competes on and what a blue ocean strategy would change. The three hallmarks of a good strategy: focus (not diffuse across all factors), divergence (different from competitors), and a compelling tagline.",
+      "zh": "战略布局图（现状诊断：X 轴为竞争因子，Y 轴为投入水平，画出每家竞争者的价值曲线）和四项行动框架（消除、减少、提升、创造）——ERRC 网格。两者合在一起展示产业在竞争什么，以及蓝海战略会改变什么。好战略的三个标志：聚焦（不散布在所有因子上）、区隔（与竞争者的曲线不同）和一句打在人心上的口号。"
+    },
+    "relatedCanvasDefIds": ["blue-ocean-strategy-canvas"]
+  },
+  {
+    "slug": "ch03-reconstruct",
+    "order": 3,
+    "title": { "en": "Reconstruct Market Boundaries: The Six Paths", "zh": "重建市场边界：六条路径" },
+    "summary": {
+      "en": "Six systematic paths to look across conventional industry boundaries: (1) look across alternative industries, (2) look across strategic groups within industries, (3) look across the chain of buyers, (4) look across complementary product and service offerings, (5) look across functional-emotional orientation, (6) look across time (trends). Each path includes diagnostic questions and visual tools.",
+      "zh": "六条系统性路径来跨越传统产业边界：(1) 跨越替代产业，(2) 跨越产业内部的战略群组，(3) 跨越买方链，(4) 跨越互补产品和服务，(5) 跨越功能-情感导向，(6) 跨越时间（趋势）。每条路径都有诊断问题和可视化工具。"
+    }
+  },
+  {
+    "slug": "ch04-beyond",
+    "order": 4,
+    "title": { "en": "Focus on the Big Picture, Not the Numbers", "zh": "关注大局，不是数字" },
+    "summary": {
+      "en": "The Pioneer-Migrator-Settler map: plot your business units as pioneers (value innovators creating blue oceans), migrators (better-than-most but not distinctive value), and settlers (me-too offerings). Most companies unknowingly have settler-dominant portfolios — the map makes it visible. The goal: tilt the portfolio toward pioneers over planning horizons.",
+      "zh": "开拓者-迁移者-定居者地图：把事业单元按开拓者（创造蓝海的价值创新者）、迁移者（优于大多数但无明显区隔的价值）和定居者（模仿型产品）分类。大多数公司的组合在不自觉中定居者占大头——这张地图让人无法回避。目标：在规划的周期内，将组合向开拓者倾斜。"
+    },
+    "relatedCanvasDefIds": ["blue-ocean-strategy-canvas", "portfolio-map"]
+  },
+  {
+    "slug": "ch05-reach",
+    "order": 5,
+    "title": { "en": "Reach Beyond Existing Demand: Three Tiers of Noncustomers", "zh": "超越现有需求：非客户的三个层次" },
+    "summary": {
+      "en": "Instead of fighting for the same customers in shrinking segments, blue ocean strategy unlocks latent demand from three tiers of noncustomers: Tier 1 (soon-to-be noncustomers on the edge of your market), Tier 2 (refusing noncustomers who consciously vote against your industry), and Tier 3 (unexplored noncustomers in markets your industry has never considered). Each tier has a different unlock strategy.",
+      "zh": "与其在缩小的细分市场里争夺同样的客户，蓝海战略从三个层次的「非客户」中释放潜在需求：第一层（即将离开的边缘客户）、第二层（有意识拒绝你所在的产业的客户）、第三层（你所在的产业从未考虑过的市场中的客户）。每一层有不同的解锁策略。"
+    }
+  },
+  {
+    "slug": "ch06-sequence",
+    "order": 6,
+    "title": { "en": "Get the Strategic Sequence Right", "zh": "把战略次序排对" },
+    "summary": {
+      "en": "A blue ocean idea must pass four hurdles in sequence: (1) Buyer Utility — is there exceptional utility? Use the Buyer Utility Map across the buyer experience cycle. (2) Price — is the price accessible to the mass of target buyers? Set the strategic price first, then deduct the target profit margin to get the target cost. (3) Cost — can you deliver at the target cost? (4) Adoption — what adoption hurdles will block execution, and how will you address them upfront?",
+      "zh": "一个蓝海想法必须按次序通过四道关卡：(1) 买方效用——有没有格外突出的效用？用买方体验周期上的买方效用地图。 (2) 价格——定价是否对目标买方大众可及？先定战略价格，再扣除目标利润得到目标成本。 (3) 成本——能否以目标成本交付？ (4) 采用——哪些采用障碍会阻碍执行，如何提前解决？"
+    }
+  },
+  {
+    "slug": "ch07-overcome",
+    "order": 7,
+    "title": { "en": "Overcome Key Organizational Hurdles: Tipping Point Leadership", "zh": "克服关键组织障碍：引爆点领导力" },
+    "summary": {
+      "en": "Four organizational hurdles to executing blue ocean strategy: cognitive (waking people up to the need for change), resource (limited resources), motivational (getting people to move fast and persistently), and political (internal and external resistance). Tipping point leadership addresses each by concentrating on factors of disproportionate influence — the kingpins, the fishbowl, atomization, and silencing the devil's advocate.",
+      "zh": "执行蓝海战略的四道组织障碍：认知障碍（唤醒人们对变革必要性的认识）、资源障碍（资源有限）、动力障碍（让人快速且持续地动起来）、政治障碍（内外部的阻力）。引爆点领导力针对每一道障碍通过集中力量在不成比例的影响因子上——关键人物、鱼缸管理、拆解任务和让反对者闭嘴。"
+    }
+  },
+  {
+    "slug": "ch08-execution",
+    "order": 8,
+    "title": { "en": "Build Execution into Strategy: Fair Process", "zh": "把执行融入战略：公平过程" },
+    "summary": {
+      "en": "Strategy formulation and execution are not sequential — they must be integrated through fair process: engagement (involving people in decisions that affect them), explanation (explaining the rationale for final decisions), and expectation clarity (setting clear new rules of the game). When people feel the process is fair, they trust, commit, and voluntarily cooperate — even when the outcome is personally disadvantageous.",
+      "zh": "战略制定和执行不是先后顺序——它们必须通过公平过程交融在一起：参与（让人们参与影响他们的决策）、解释（解释最终决策的理由）和期望透明（设定清晰的新游戏规则）。当人们感到过程公平时，他们会信任、承诺并自愿合作——哪怕结果对个人不利。"
+    }
+  },
+  {
+    "slug": "ch09-sustainability",
+    "order": 9,
+    "title": { "en": "Sustainability and Renewal: Overcoming Imitation Barriers", "zh": "可持续与更新：克服模仿壁垒" },
+    "summary": {
+      "en": "No blue ocean stays blue forever. Imitation barriers include: alignment barrier (the business model defies conventional logic), cognitive and organizational barrier (competitors can't see the logic or can't reorganize), brand barrier (the pioneer owns credibility), economic barrier (natural monopoly in some markets), and legal barrier (patents and licenses). When blue oceans eventually turn red, the strategy shifts to renewal — another value innovation leap.",
+      "zh": "没有哪个蓝海永远蓝下去。模仿壁垒包括：对齐壁垒（商业模式违背常规逻辑）、认知和组织壁垒（竞争者看不懂逻辑或无法重组）、品牌壁垒（先驱占有了可信度）、经济壁垒（某些市场存在自然垄断）和法律壁垒（专利和许可）。当蓝海最终变红时，战略转向更新——再来一次价值创新的跃迁。"
+    }
+  }
+]

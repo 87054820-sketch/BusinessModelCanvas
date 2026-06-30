@@ -1,0 +1,1179 @@
+# 2 Theoretical Foundations of Scenario Planning
+
+30 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+scenario planning is and how it works (Torraco, 1997). The performance-
+based scenario system described in this book (presented in detail in Part 
+Two) is based on the theories and theoretical principles outlined in this 
+chapter. The tools and techniques provided in this book have been applied 
+in the practice of scenario planning and have demonstrated results. 
+THE UTILITY OF THEORY IN  
+SCENARIO PLANNING
+A discussion of theory in the context of scenario planning is important 
+for several reasons. First, the topic of theory is generally absent from the 
+scenario literature. The only scenario planning text that includes a discus-
+sion of theory is Scenario-Driven Planning by Georgantzas and Acar (1995). 
+However, their treatment of theory is limited to less than two pages. There 
+are valuable insights to be gained from relevant theory domains that aid 
+in understanding the practice of scenario planning. Scenario planning has 
+grown as a practitioner’s art and has received little academic attention. A 
+responsible analysis of any phenomenon should cover the theoretical basis 
+that makes the logic clear for understanding why practitioners take the ac-
+tions that they do. This can work in reverse as well: insights gained from 
+practicing a phenomenon can lead to a great depth of knowledge. To date, 
+the majority of what is understood about scenario planning is based on 
+knowledge gleaned from years of practice. This chapter suggests that much 
+can be learned by studying related theory disciplines with an ultimate goal 
+of integrating knowledge from practice and knowledge from close and care-
+ful study of the phenomenon.
+A theory of scenario planning (Chermack, 2004, 2005) is used as an 
+organizer for this chapter. The disciplines reviewed here provide support for 
+this theory, as each discipline is reviewed in its relationship and contribu-
+tion to the organizing theory.
+THE SIX DOMAINS OF SCENARIO  
+PLANNING THEORY
+The proposed building blocks of a theory of scenario planning are based 
+on extensive literature review (Chermack, Lynham, & Ruona, 2001; Geor-
+gantzas & Acar, 1995; Schwartz, 1991; van der Heijden, 1997; Wack 1985a, 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+31
+1985b). The literature around scenario planning puts forth six key domains 
+from which theories can be drawn to establish a theoretical foundation of 
+scenario planning (see Figure 2.1): 
+• Dialogue, conversation quality, and engagement
+• Learning
+• Mental models
+• Decision making
+• Leadership
+• Organization performance and change
+These theoretical domains appear over and over again in the scenario litera-
+ture. However, none of the current writings synthesize these elements in a 
+comprehensive and clear manner. The use of these domains is intended to 
+describe what the phenomenon of scenario planning is and how it works 
+(Torraco, 1997). To be clear, this chapter presents a view of how scenario 
+planning accomplishes its stated outcomes. 
+Scenario
+Planning
+Organization
+Performance
+and Change
+Dialogue,
+Conversation
+Quality and
+Engagement
+Learning
+Decision
+Making
+Mental
+Models
+Leadership
+Support
+F I G U R E  2.1  A Theory of Scenario Planning
+
+
+32 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+DIALOGUE, CONVERSATION QUALITY, AND ENGAGEMENT
+Dialogue, conversation quality, and engagement are critical to the scenario 
+planning process because they are the mechanism by which scenario plan-
+ning happens. They are means for shifting the thinking inside the organiza-
+tion. As the chapters on scenario development and scenario implementation 
+will describe in detail, dialogue, conversation, and engagement are the fun-
+damental means for sharing mental models and developing a shared under-
+standing of the organization and its external environment. 
+The speciﬁc work that informs how scenario planning involves dia-
+logue, conversation, and engagement includes Rogers’s communication the-
+ory; Nunnally, Miller, and Wackman’s communication work; Argyris and 
+Schon’s work on advocacy and inquiry; and Lewin’s theorizing on group 
+dynamics. Each of these is described later, and the link to scenario planning 
+is illustrated.
+Definition
+Dialogue and conversation are deﬁned, respectively, as “conversation be-
+tween two or more persons” (Oxford English Dictionary, 2001, p. 213) and 
+“informal interchange of thoughts, information, etc., by spoken words; oral 
+communication between persons; talk; colloquy” (Oxford English Diction-
+ary, 2001, p. 187). Bohm’s work (1989) sheds additional light on the subject:
+I give a meaning to the word “dialogue” that is somewhat different 
+from what is commonly used. The derivations of words often help to 
+suggest a deeper meaning. “Dialogue” comes from the Greek word dia-
+logos. Logos means “the word” or in our case we would think of the 
+“meaning of the word.” And dia means “through”—it doesn’t mean 
+“two.” A dialogue can be among any number of people, not just two. 
+The picture or image that this derivation suggests is a stream of meaning 
+ﬂowing among and through us and between us. This will make possible 
+a ﬂow of meaning in the whole group, out of which may emerge some 
+new understanding. (p. 6)
+Contrast this with the word “discussion,” which has the same root as 
+“percussion” and “concussion.” It really means to break things up. It 
+emphasizes the idea of analysis, where there may be many points of 
+view, and where everybody is presenting a different one—analyzing 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+33
+and breaking up. That obviously has value, but it is limited, and it will 
+not get us very far beyond various points of view. (p. 7)
+Description
+Dialogue, conversation quality, and engagement, are the means by which 
+ideas, experiences, knowledge, beliefs, assumptions, and tendencies are 
+shared throughout the scenario project. Scenarios deal with the two 
+worlds—the world of facts and data, and the world of ideas and percep-
+tions (Wack, 1985a). Dialogue, conversation quality, and engagement allow 
+people to experiment with ideas and perceptions by taking facts and data 
+into imagined or speculative worlds.
+Rogers’s Work on Communication Theory
+Carl Rogers spent much of his career focusing on individual experience. He 
+eventually posited three conditions for health in relating to other people: 
+(1) congruence, (2) unconditional positive regard, and (3) empathetic un-
+derstanding. By congruence, Rogers (1957) means “a match or ﬁt between 
+an individual’s feelings and outer display” (p. 97). Otherwise, individuals 
+match their thoughts and actions. Unconditional positive regard is simply 
+an attitude that one consciously tries to hold toward people; Rogers found 
+that he experienced deeper levels of trust by doing so (Rogers, 1961; Rogers 
+& Skinner, 1956). In addition, Rogers found that when people were re-
+minded to use this attitude, they developed deeper levels of trust with 
+others. Rogers’s third condition, empathetic understanding, is focused on 
+the beneﬁts of listening. A willingness to explore what it is like to be an-
+other person is a skill that Rogers found to bring him closer to those he 
+was trying to help (Rogers, 1961). Others have also drawn attention to 
+empathy as a key skill for knowledge workers in the twenty-ﬁrst century 
+(Pink, 2006). 
+Miller, Nunnally, and Wackman’s Work  
+on Communication in Families
+Nunnally developed a large body of work in the area of communication 
+in interpersonal relationships and among family members. These works 
+feature the self-awareness wheel as their primary contribution to under-
+standing communication, dialogue, and conversation (Miller, 1971; Miller, 
+Nunnally, & Wackman, 1976, 1979; Miller, Wackman, & Nunnally, 1982; 
+
+
+34 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+Nunnally, 1971; Nunnally & Moy, 1989). The self-awareness wheel helps 
+individuals recognize their own sensations, feelings, intentions, and actions 
+in the context of how they relate to others (Miller et al., 1979). The wheel 
+can be used as an individual or a 360-degree assessment tool, when appro-
+priate levels of trust have been established 
+While not speciﬁcally intended for use in scenario projects, the utility 
+of the self-awareness wheel is to gain a better understanding of how any in-
+dividual functions in relation to others. Linking to Rogers’s work, the goal 
+is to develop congruence among these ﬁve aspects around a given issue.
+Argyris and Schon’s Work on Advocacy and Inquiry
+Argyris and Schon (1996) are well-known for their scholarship in balanc-
+ing advocacy and inquiry in organizations. This balance is a combination 
+of pushing for individual goals and respecting that humans are part of the 
+larger organizational whole. They are most recognized for differentiating 
+Model I and Model II learning loops. Argyris and Schon (1996) have pro-
+posed that a signiﬁcant perceptual shift takes place when individuals begin 
+to pay attention to their behavior and evaluate it as they would another 
+person’s behavior. The ability to reﬂect on one’s own behavior is a uniquely 
+human trait and constitutes Model II learning. When individuals focus on 
+learning how they and others learn, a shift has taken place in terms of how 
+that individual engages in learning activities. Emphasizing common goals, 
+shared interests, and group efforts to achieve them, these understandings 
+contribute to the idea of reﬂecting on the learning process. This reﬂection 
+is known as Model II learning or double loop learning, and it contributes to 
+the theoretical underpinnings of scenario planning.
+Lewin’s Work on Group Dynamics
+Lewin’s (1951) famous T-groups were a breakthrough in understanding 
+communication among group members. The key contribution arose when 
+researchers allowed a participant to be present for an analysis of her ob-
+served behavior earlier in the day (Lewin, 1948). The participant happened 
+to be a woman, and she argued directly with Lewin about his inaccurate 
+interpretations of things she did (Lewin, 1951). Conversation ensued, and 
+a new method of intergroup skills training was born. Certainly, group 
+interactions are critical in scenario planning. The importance of sharing 
+insights, perceptions, and ideas will become clear as this book unfolds.
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+35
+Linking These Theories to Scenario Planning
+These theories explaining what communication is and how it works are 
+relevant in scenario planning because they describe the mode for creat-
+ing shared understandings of the internal and external environments. The 
+engagement of multiple stakeholders participating in an ongoing dialogue 
+about organization strategy has been called the strategic conversation. 
+Van der Heijden (1997) found that strategy is best approached as a con-
+versation, rather than an activity bound as an annual event. The strategic 
+conversation integrates all of the theories just described into a way of think-
+ing and acting about the future. He believed both formal and informal as-
+pects of strategy work together to form the strategic conversation. In other 
+words, the informal, water-cooler conversations can be as important and 
+inﬂuential as the strategy meetings that take place behind closed doors. The 
+strategic conversation can take on a life of its own as organization members 
+become involved in how their individual efforts link to the goals of the 
+organization as a whole. The strategic conversation requires the kind of re-
+ﬂective thinking and respectful, empathetic communication that has been 
+described earlier. 
+LEARNING THEORY
+Learning theory is a critical foundational theory domain for scenario plan-
+ning. In fact, several prominent scenario planning experts have described 
+planning as essentially a learning activity (de Geus, 1988; Schwartz, 1991; 
+van der Heijden, 1997), basing their argument on the logic that learning is a key 
+driver of organizational performance (Swanson & Holton, 2001). The useful-
+ness of learning in scenario planning is in the assumption that a core goal of any 
+planning system is to reperceive (Wack, 1984) the organization and how it ﬁts 
+with the environment (Godet, 1987, 2000; Wilson, 1992, 2000). 
+Definition
+Learning has been deﬁned in many ways, and there are many speciﬁc philo-
+sophical orientations toward the learning process. Learning will be gener-
+ally taken here to mean “the process of gaining knowledge or skill” (Oxford 
+English Dictionary, 2001, p. 247). In the context of scenario planning, 
+learning is deﬁned speciﬁcally as a process of gaining knowledge about the 
+internal and external environments and how they interact.
+
+
+36 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+Description
+The learning literature has identiﬁed ﬁve relevant meta-theories of learn-
+ing—namely, behaviorism, cognitivism, humanism, social learning, and 
+constructivism (Swanson & Holton, 2001). Each of these perspectives is dis-
+tinctive in its purity, but it should be noted that in practice “they are usually 
+adapted and blended to accomplish speciﬁc objectives” (Swanson & Holton, 
+2001, p. 150). Scenario planning seems to most effectively incorporate a 
+blend of social learning, cognitivsm, and constructivism (Chermack & van 
+der Merwe, 2003; de Geus, 1997; van der Heijden, 1997). Thus, principles 
+of social, cognitive, and constructivist learning are presented here to explain 
+how learning takes place in scenario building and planning systems.
+The Individual Construction of Meaning
+Piaget (1977) used examples of biological adaptation to illustrate his con-
+cepts of assimilation, accommodation, and equilibration. His early fascina-
+tion centered on the variability of a snail’s adaptation to the surrounding 
+environments. Piaget adopted the view that new behavior changes the genes 
+of the organism and thus results in new structures. He eventually arrived 
+at the belief that behavior and the organism must be viewed as a whole 
+system, and the goal is to achieve a balance between organism and envi-
+ronment. Piaget deﬁned this concept of equilibration as a dynamic process 
+of self-regulated behavior that balances two intrinsic polar behaviors, as-
+similation and accommodation. Equilibration is thought of as a dynamic 
+process that is reached only occasionally as the learner is constantly taking 
+in new information (assimilation), analyzing, and sometimes changing it 
+(accommodation). 
+Similarly, De Geus viewed the organization as a living entity. “Like all 
+organisms, the living company exists primarily for its own survival and im-
+provement: to fulﬁll its own potential and to become as great as it can be” 
+(1997, p. 4). Because a critical aim of scenario planning is to reveal assump-
+tions and mental models, individuals interpret and construct meaning, or, 
+more precisely, reinterpret and reconstruct meaning once their assumptions 
+have been revealed to them. This is a classic example of Piaget’s assimila-
+tion and accommodation. De Geus (1997) stated, “Corporations also have 
+a form of learning by accommodation. . . . [L]ong-lived companies ﬁnd 
+ways to respond to signals of change in the business environment, by chang-
+ing their own internal structure” (p. 18). Truly great companies have the 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+37
+foresight and innovation required to change the environment and set the 
+pace for the industry.
+Participants in scenario planning are continuously constructing indi-
+vidual meaning. They are taking in new information (assimilation) and 
+modifying or changing it (accommodation) in attempts to reach equilibra-
+tion (understanding). As information is processed, the mental models of 
+the individuals change and result in new structures for understanding the 
+business environment and how to negotiate within it. 
+There are two major aspects of scenario planning where construction 
+of individual meaning takes place (Wack, 1985b). One is the analysis and 
+research that takes place during the development of scenario stories. The 
+step of ranking the driving forces in the environment in terms of relative 
+impact on the future provokes a conversation during which the individuals 
+developing the scenarios adjust their assumptions. These adjustments are a 
+result of the assimilation and accommodation process. The second example 
+of construction of meaning is when scenario thinking/assumptions are em-
+bedded in organizational decision making (Wack, 1985a). 
+Social Influences on Construction
+Vygotsky (1962/1986) introduced three social inﬂuence concepts relevant 
+in scenario planning: (1) the zone of proximal development, (2) the idea of 
+“scaffolding,” and (3) the cultural-historical approach. 
+The Zone of Proximal Development. The zone of proximal development 
+is deﬁned as “the distance between his actual development, determined with 
+the help of independently solved tasks, and the level of the potential devel-
+opment of the [learner], determined with the help of tasks solved by the 
+[learner] under the guidance of [experts] and in cooperation with his more 
+intelligent partners” (Vygotsky, 1962/1986, p. 84). Through intelligence 
+testing, Vygotsky determined that there were “optimal” periods within which 
+to teach speciﬁc subjects. In brief, the zone of proximal development is the 
+optimal period for almost any learning, that space between what we can 
+accomplish on our own and what we can accomplish with some guidance.
+Scenario planning targets the zone of proximal development, and the 
+zone is often perceived as the learning capacity of the client. Vygotsky 
+(1978) referred to the zone of proximal development as “the place where the 
+client’s newly acquired, but as yet disorganized concepts ‘meet’ the logic of 
+experienced reasoning” (p. 24). The meeting of experienced reasoning with 
+
+
+38 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+the disorganized concepts of the client often produces a novel insight into 
+the strategic positioning of the organization (van der Heijden, 2005a)—
+what has been referred to as an “aha” experience (van der Merwe, 2002).
+The Idea of Scaffolding. Vygotsky proposed that as learners struggle 
+to formulate concepts, an inner dialogue occurs, and he argued that the most 
+effective learning occurs when the learner and the expert jointly construct 
+meaning (of an experience) through dialogue, thus drawing the learner out 
+to the potential level of performance (Fosnot, 1996). 
+The notion of dialogue as a critical component of learning has been ex-
+tended and developed into the concept of scaffolding. The famous example 
+of this involves studying children and their mothers engaged in dialogues 
+(Fosnot, 1996). Mothers often imitate babies, varying the response only 
+slightly, but enough to provide an example for the child to imitate (Fos-
+not, 1996). The mother and child are thought of as constructing meaning 
+together, the mother providing the “scaffolding,” or the upper limit of the 
+zone of proximal development. 
+The role of the scenario planning facilitator is to provide “scaffolding” 
+for members of the organization. “Scaffolds need to be built around the 
+existing knowledge structure to allow the client to relate new experiences 
+to existing knowledge” (Vygotsky, 1978, p. 56). Thus, the planners provide 
+the necessary scaffolding to draw up clients’ thought-processing abilities to 
+the limit of their zones of proximal development. Schwartz (1991) also em-
+phasized the notion of drawing managers out to “think the unthinkable.” 
+Changing the mental models of managers is a necessary condition for suc-
+cessful scenario planning, and the scenario planner must be capable of pro-
+viding the scaffolding required to do so.
+Kolb’s Learning Loop
+Van der Heijden (1997, 2005a) supported a view of learning based on the 
+idea of continuous development rather than seeking one right answer. In 
+so doing, he incorporated Kolb and Rubin’s (1991) learning loop into his 
+description of effective strategic thinking. Kolb and Rubin’s learning loop 
+integrates many of the ideas advocated by Piaget and others. The learn-
+ing loop features (1) concrete experience, (2) leading to observation and 
+reﬂection, (3) fueling the formation of abstract concepts, (4) which are then 
+tested in new situations. These elements are involved in a continuous, rein-
+forcing feedback loop.
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+39
+The learning loop integrates several distinguishing features, according 
+to van der Heijden (1997, 2005b). Among these features are the notions 
+that learning is a process that originates with a given experience. Reﬂection 
+on the experience brings an awareness resulting in new patterns and trends 
+that were not previously perceived. Mental models are shifted through an 
+internal process of incorporating new patterns into old models, new actions 
+are taken to test the implications of our new models, and all of this results 
+in yet another new experience (Kolb & Rubin, 1991). “The learning loop 
+describes the strategy development process in its integration of experience, 
+sense-making, and action into one holistic phenomenon” (Kolb & Rubin, 
+1991, p. 34). 
+The Social Construction of Reality
+The basic tenet of the social construction of reality is implied by the term: 
+that reality is constructed by society, and it is constructed socially. The ba-
+sic proposition set forth by the concept of the sociology of knowledge is 
+from Marx (1953)—that human consciousness is determined by social be-
+ing. Social constructionism also draws from Marx’s concepts of ideology 
+and false consciousness. The task for Berger and Luckmann (1966) was to 
+address how the sociology of knowledge is concerned with what passes for 
+knowledge in society. Berger and Luckmann approached reality from two 
+perspectives, objective and subjective.
+Objective Reality. In an examination of society as an objective real-
+ity, Berger and Luckmann (1966) posited that being fully human requires 
+social interaction: “the process of becoming human takes place in an inter-
+relationship with an environment . . . the developing human interrelates 
+with a given natural environment and also with a speciﬁc cultural and social 
+environment” (p. 21). Thus, social order is a product of human interactions 
+and cannot be “derived from the laws of nature.”
+One critical element in formulating a social order is the natural ten-
+dency for humans to habitualize (Berger & Luckmann, 1966). As human 
+beings, we tend to form habits to reduce options so that we don’t have to 
+think about every thing we do. Institutionalization occurs when there is a 
+reciprocation of habitualization. For example, family roles are established 
+through the reciprocal habitualization that a person will do X (Berger & 
+Luckmann, 1966). Institutionalization implies control, and these recip-
+rocal actions are built up “in the course of a shared history” (Berger & 
+
+
+40 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+Luckmann, 1966). Institutions become integrated through socially ar-
+ticulated and shared meanings established between individuals (Berger & 
+Luckmann, 1966). The shared meanings that are stored in the human con-
+sciousness are referred to as sedimented. Intersedimentation takes place when 
+several individuals share common experiences that are incorporated into the 
+system of society. 
+The concept of legitimation refers to the “second-order objectivation 
+of meaning,” or the building from simple to complex social structures. Le-
+gitimation explains and justiﬁes the institutional order by ascribing valid-
+ity to meanings and designating normative characteristics to the meanings 
+themselves (Berger & Luckmann, 1966). Legtimation occurs at several lev-
+els—incipient (signaled by the presence of linguistics), theoretical proposi-
+tions (folk sayings, proverbs), explicit theories (the purpose of a department 
+within an organization), and symbols (theories that connect the theoretical 
+propositions, such as the purpose of the entire organization).
+Subjective Reality. The individual is not a born member of society; 
+rather, the individual is inducted into society by a process. This process is 
+called internalization. Berger and Luckmann (1966) referred to primary so-
+cialization as “the ﬁrst socialization an individual undergoes in childhood, 
+through which he becomes a member of society” (p. 37). Through this pro-
+cess, objective reality becomes available and then is internalized into the 
+individual consciousness. Secondary socialization is the internalization of in-
+stitutional subworlds. “Secondary socialization requires the acquisition of 
+role-speciﬁc knowledge” (Berger & Luckmann, 1966, p. 41)and refers to 
+the process by which an individual is inducted into a further subgroup of a 
+society. A ritual often signiﬁes this process. 
+The maintenance of subjective reality is held within primary and sec-
+ondary socialization. Socialization is an ongoing event; and although there 
+are different levels of socialization, primary socialization is inevitable. 
+Through each successive secondary socialization, reality moves further and 
+further from the consciousness of the individual, as the meaning of reality 
+is placed further into the social domain. “The most important vehicle of 
+reality-maintenance is conversation” (Berger & Luckmann, 1966, p. 67). 
+Speech takes place as the background of a world as it is taken for granted. It 
+is through communicative interaction with other members of a society that 
+meaning is derived and negotiated within a social structure. 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+41
+DECISION-MAKING THEORY
+Decision-making theory is critical to understanding what scenario planning 
+is and how it works because decisions are often one of the outcomes of sce-
+nario planning (Wright & Goodwin, 2009).
+Definition
+A decision is “an act or process of reaching a conclusion or making up one’s 
+mind” (Oxford English Dictionary, 2001, p. 267).
+Description
+In the business context, decisions must have considerable forethought; how-
+ever, one of the pitfalls of strategic planning has been in its inﬂexibility, 
+causing planned decisions that do not account for changes within the envi-
+ronment (Mintzberg, 1994; Morecroft, 1983). Brehmer (1990, 1992) speci-
+ﬁed that decisions in applied contexts differ from the traditional cognitive 
+decisions studied by psychologists in the following four ways:
+• There is a series of decisions rather than a single decision.
+• The decisions are interdependent—current decisions constrain future 
+decisions.
+• The environment changes autonomously and as a result of decisions 
+made.
+• It is insufﬁcient for the correct decisions to be made in the correct 
+order—they must also be made at a precise moment in real time. 
+Decision theory also clariﬁes four barriers to effective decision making:
+• Bounded rationality
+• Exogenous variables
+• Knowledge stickiness and friction
+• Policies and decision premises
+Bounded Rationality. Bounded rationality is a main source of deci-
+sion failure. Put simply, the mental abilities of human decision makers have 
+limitations. Morecroft (1983) outlined the notion of bounded rationality 
+as developed by the Carnegie School of Thought, a pioneering research 
+foundation for decision making. Bounded rationality is deﬁned as “the severe 
+limitations on the information processing and computing abilities of human 
+
+
+42 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+decision makers” (1983, p. 133). According to Simon (1957), bounded 
+rationality is a property of decision making that inhibits objectively ratio-
+nal decisions because (1) all feasible alternative courses of action cannot be 
+generated by the individual, (2) individuals cannot collect and process the 
+information that would predict the consequences of an alternative, and (3) 
+individuals cannot accurately assess the values of anticipated consequences. 
+This simply means that humans cannot effectively cope with all of the 
+available information and alternatives in making decisions. Furthermore, 
+bounded rationality predicts that three main features will be present in hu-
+man organizations:
+• Factored decision making—decision making will be broken down into 
+subdecisions for subgroups.
+• Partial and certain information—research shows that ultimately, 
+“decisions are made on relatively few sources of information that are 
+readily available and low in uncertainty” (Morecroft, 1985, p. 133).
+• Rules of thumb—rules of thumb, or heuristics, are built up over time 
+that, through experience, make the gathering of information 
+unnecessary.
+Scenarios and Bounded Rationality. Scenarios appear to have util-
+ity in reducing bounded rationality. Scenarios communicate a vast amount 
+of information in a story. Research has shown that scenarios are effective 
+because they are highly memorable, conversational, and narrative in na-
+ture (Dorner, 1996; Martin, 1982; Morecroft, 1985). “Cognitive science 
+research tells us that memorable information is more likely to be acted 
+upon than is information that remains unconscious and not retrieved from 
+memory. Therefore, anything that tends to make information more memo-
+rable will have a greater likelihood of assuming signiﬁcance” (Martin, 1982, 
+p. 103). This point explains the importance placed on the selection of ti-
+tles for developed scenarios. Schwartz (1991) stated that “if the names are 
+vivid and memorable, the scenarios will have a much better chance of mak-
+ing their way into the decision-making and decision-implementing process 
+across the company” (p. 248). Important information about the future is 
+often too imprecise and complex for display in tables and graphs (Brehmer, 
+1992), and thus, stories have several advantages: (1) they provoke an open-
+ness to multiple perspectives, (2) they aid in coping with complexity, and (3) 
+they give meaning to events (Martin, 1982). 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+43
+In an experiment testing consumer preferences, Stanford MBA students 
+were asked to assess the persuasiveness of an advertisement from a Califor-
+nia winery (Martin, 1982). Given a choice among numerical data from the 
+winery’s sales division, a policy statement about the winery’s strict quality 
+standards, and a story about the founder of the winery and his procedures 
+for delivering a quality product, results showed an overwhelming preference 
+for the story precisely because it contained the same, or very similar, data 
+in a form that was easy to remember. Although the use of stories in this 
+context varies slightly from the use of scenarios in a planning context, some 
+parallels can be drawn. For example, this research demonstrates the avail-
+ability heuristic that suggests an event made more available from memory 
+will be more easily acted upon. In this sense, events made more available 
+from memory through inclusion in a scenario can reduce the time required 
+for managers or individuals to react to signals in the environment.
+Scenarios might be helpful to decision makers in coping with their own 
+bounded rationality by providing a vast amount of information in a detailed 
+story exhibiting features that are easily remembered. Although scenarios 
+can be helpful in addressing this core cause of decision failure, it should 
+be acknowledged that bounded rationality, as a feature of being human, 
+can never be completely solved. What is further required is a series of case 
+studies, or research regarding the speciﬁc impact of scenario planning on 
+individual habits of information gathering, synthesis, and decision making.
+Exogenous and Endogenous Variables
+Exogenous variables are variables that are external to the process under con-
+sideration and that come from outside the system. Decision makers have 
+tended to think of all variables as exogenous, mainly because these variables 
+are easily recognizable as external and are not often hidden by being coupled 
+to the system. Forrester (1961, 1994) was among the ﬁrst to take issue with 
+a tendency for models (and therefore decisions) to incorporate only exog-
+enous or external variables. Forrester argued that some variables are actually 
+coupled to the system and are embedded in the information feedback loops. 
+These were referred to as endogenous variables. Endogenous variables are 
+internal variables that are often produced in the feedback within the system, 
+and they then become coupled with the inputs to the system. Policies often 
+have endogenous variables associated with them. Decisions that consider 
+only exogenous variables, therefore, overlook critical inputs to the system, 
+
+
+44 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+and decisions made without considering such variables have consequences 
+that become magniﬁed because of their association with feedback processes.
+Scenarios and Exogenous Variables
+There is a variety of scenario planning methods, and each of them differ 
+slightly. However, all approaches advocate a systems view of the organiza-
+tion. The important link between scenario planning and systems theory 
+has been outlined in detail (Senge, 1990, 1994), the implications of which 
+include the examination of internal and external elements of the system. 
+Van der Heijden’s (1997, 2005b) approach to scenario planning begins with 
+mapping the organization as a system in what he terms the business idea. 
+Furthermore, he suggested the use of interviews, internal analysis, teams, and 
+remarkable people as methods for avoiding a focus solely on external forces. 
+Senge (1990, 1994) has developed systems archetypes that are essen-
+tially common combinations of feedback loops that inhibit systems. The 
+use of these archetypes as diagnosis tools forces scenario planners to con-
+sider system outputs that become system inputs—exogenous variables that 
+become endogenous variables, addressing Forrester’s (1961, 1994) concern. 
+The systems view incorporates the consideration of internal and external 
+variables and focuses on how they interact to change the system.
+Stickiness and Friction
+Stickiness and friction are characteristics of information and knowledge, 
+respectively. Generally, the term stickiness refers to a characteristic of infor-
+mation and is associated with the cost of its transfer. Friction is a character-
+istic of knowledge that dampens motions in a social setting. Socialization 
+itself causes a friction that catches minor errors before they can be magniﬁed 
+through feedback processes to a point at which they can cause a catastro-
+phe. Stickiness, or the cost associated with transferring information, causes 
+a problem for decision makers when expertise is needed. With automation 
+threatening to replace humans in many work and decision-related settings 
+(thus eliminating social friction), a concern has emerged about potential 
+increases in minor errors that lead to drastic decision failures.
+Stickiness. Organizations are increasingly relying on knowledge-in-
+tensive processes managed and operated by interdisciplinary teams (Ford & 
+Sterman, 1998). Stickiness in this context refers to the difﬁculty in informa-
+tion transfer between or among people. Von Hippel (1998) deﬁned stickiness 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+45
+as “the incremental expenditure required to transfer that unit of information 
+to a speciﬁed locus in a form useable by a given information seeker. When 
+this cost is low, information stickiness is low; when it is high, stickiness is 
+high” (p. 629). Discussions of stickiness have included the simple recogni-
+tion that a cost is associated with the transfer of information, as well as the 
+distinction between stickiness and friction (Rochlin, 1998). That informa-
+tion becomes “sticky” is important in decision making because often exper-
+tise or knowledge of a speciﬁc domain is required for decisions. For example, 
+McKinsey consultants who are on call and will ﬂy anywhere in the world to 
+make their expertise available are a result of the fact that knowledge becomes 
+incredibly sticky and an example that the costs associated with transferring 
+the information or knowledge can become quite high (Rochlin, 1998). 
+Friction. In social and political realms, “morals, ethics, knowledge, his-
+tory and memory may all serve as the sources of ‘social friction,’ by which 
+gross motions are damped, impetuous ones slowed and historical ones ab-
+sorbed. Such friction is essential to prevent the persistence and multiplica-
+tion of social and political movements once their driving force is removed” 
+(Von Hippel, 1998, p. 132). Friction can be described as the nuances and 
+double-checks that occur in the social interactions among humans in work 
+processes, such as those found in the operation of an aircraft carrier ﬂight 
+deck (Rochlin, LaPorte, & Roberts, 1987). Such double-checks only exist 
+as a result of social interaction among multiple individuals. Authors such as 
+Roch lin (1998), Dreyfus and Dreyfus (1998), and Von Hippel (1998) argued 
+that as technology threatens to replace many such human processes, deci-
+sion failure will increase because the loss of friction will allow many errors to 
+continue that were previously prevented during the course of normal social 
+interaction among the humans involved in the process. For example, friction 
+would not exist if computer automation were to take over the launching and 
+landing procedures aboard aircraft carriers (Rochlin et al., 1987).
+Frictionless knowledge (Rochlin, 1998) would initially be more efﬁ-
+cient, but it would also allow for a drastic increase in decision errors. Drey-
+fus and Dreyfus (1998) argued that their own model of novice, advanced 
+beginner, competence, proﬁciency, and expertise provides the experiential 
+elements required to reach the potential of true human intelligence. Fric-
+tionless knowledge would be knowledge that develops a “set of rules and 
+principles that produce expert-quality performance in an entire domain of 
+skill” (Rochlin, 1998, p. 284). In this view, frictionless knowledge could 
+
+
+46 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+be easily transferred to or among countless individuals, and it would not be 
+sticky as there would be no cost in transferring the knowledge. However, 
+Dreyfus and Dreyfus (1998) argued for the necessity of the experience and 
+thus the buildup of friction required for true expertise. 
+Scenarios, Stickiness, and Friction. Scenario planning is posited as a 
+tool for reducing the cost of information transfer and increasing the friction 
+among knowledgeable organizational decision makers. By reducing the cost 
+of information transfer, in theory, decisions can be made more effectively 
+and efﬁciently. By increasing the friction among decision makers, small er-
+rors may be caught and perspectives can be added that might have otherwise 
+been overlooked.
+Scenarios and scenario planning seem to address information stickiness 
+by providing a forum for multiple individuals to develop similar expertise 
+about the potentials of the organization. The strategic conversation (van der 
+Heijden, 1997, 2005b; Wright & Goodwin, 1999) is one example of how 
+developing a shared mental model, and thus a shared language, can reduce 
+the stickiness of information within the organization. The process of creat-
+ing a shared mental model facilitates the process of information transfer. 
+By requiring frequent and intense interaction, scenario planning reduces 
+the cost of information transfer, making information less sticky (Wright & 
+Goodwin, 1999). 
+Scenarios might further help decision makers take full advantage of the 
+necessary friction required for expertise in organizational decision making. 
+The process of scenario building requires intense interaction for extended 
+periods of time among managers and executives involved in the decision-
+making process. Through this interaction and friction, important forces in 
+the environment are often detected that would not have been if a single 
+decision maker were attempting to construct scenarios individually. 
+In scenario planning, van der Heijden (1997, 2005b) makes use of “re-
+markable people” (Wack, 1985b) to provide even more friction. Remark-
+able people are “those experts who are not in regular contact with the 
+client organization, such that an original contribution can be expected” 
+(Wack, 1984, p. 67). Remarkable people often provide insight, prevent 
+groupthink, help with information gathering and processing, increase the 
+friction and interaction among planning team members, and expand the 
+rationality of the group. 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+47
+Policies and Decision Premises. In this context, a policy is deﬁned 
+as “a formal statement giving the relationship between information inputs 
+and resulting decision ﬂows” (Forrester, 1994, p. 58). Policies, decision prem-
+ises, and decision rules are all terms that describe this same phenomenon. 
+“Informal policy results from habit, conformity, social pressures, ingrained 
+concepts of goals, awareness of power centers within the organization, and 
+personal interest” (Forrester, 1994, p. 58). Decision policies, premises, or 
+rules can be thought of as the guiding norms within the context that help 
+individuals make decisions when they are uncertain about the information 
+at hand or the “best practices” that offer guidance. It is argued here that such 
+policies, premises, or rules are developed according to the mental model in 
+use as mental models house our biases, values, and beliefs about how the 
+world works. Thus, to change or expand the decision rules, one must change 
+the mental model.
+Scenarios and Decision Premises. Decision premises and policies are 
+linked to mental models. Because premises and policies “result from habit, 
+conformity, social pressures, ingrained concepts of goals, awareness of power 
+centers within the organization, and personal interest” (Forrester, 1994, 
+p. 58), they can be changed through the alteration of mental models. The 
+key idea with regard to decision premises is that through the expansion of 
+mental models, guiding decision policies are revised to accommodate a more 
+adequate view of the world and the system within which the individual is 
+operating. 
+Scenarios may also provide a venue for testing new decision policies by 
+manipulating forces and potential responses to them in an experimental 
+environment. Decision makers can play out the possibilities of given deci-
+sion policies and examine their long-term effects. Furthermore, by creating 
+shared mental models and a strategic conversation within the organization, 
+policies undergo constant scrutiny, modiﬁcation, and adjustment to assure 
+that they provide decision makers with an informed perspective when con-
+fronted with an uncertain situation.
+MENTAL MODEL THEORY (COGNITIVE PSYCHOLOGY)
+Mental model theory is important in scenario planning because of its abil-
+ity to help understand individual learning and perceptions in organizations 
+(Morecroft, 1990, 1992; Senge, 1990; Wack, 1984; Weick, 1979, 1990). 
+
+
+48 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+Mental models encompass people’s assumptions, values, experiences, beliefs, 
+and ideas. Reperceiving the organization and its environment is thought to 
+occur through learning that forces participants to reexamine their assump-
+tions and alter their mental models (Wack, 1984, 1985a). While it may 
+sound simple, shifting mental models is a delicate process. Mental models 
+are not like computer hard drives that, once full or faulty, can simply be 
+removed or replaced. 
+Definition
+Doyle and Ford (1999) deﬁned a mental model as “a relatively enduring and 
+accessible, but limited, internal conceptual representation of an external sys-
+tem (historical, existing or projected) whose structure is analogous to the 
+perceived structure of that system” (p. 414).
+Description
+Originally introduced by Forrester (1961), mental models are the lenses 
+through which we see the world. They incorporate our experiences, learn-
+ing, biases, values, and beliefs about how the world works. These models 
+embody how individuals see the world, how individuals know and think 
+about the world, and how individuals act in the world. Furthermore, as a 
+result of action and learning, mental models are altered, leading to differ-
+ent ways of seeing the world, knowing and thinking about the world, and, 
+again, acting in the world. Mental models are constantly being adjusted, 
+reﬁned, and re-created in dynamic and ever-changing environments. Men-
+tal models both affect experience (active) and are affected by experience 
+(passive). Having brieﬂy established the active and passive roles of mental 
+models in the construction and interpretation of reality, we can now turn to 
+a detailed attempt at deﬁning them.
+Clarifying Mental Models. Different streams of decision-making lit-
+erature refer to mental models, representations and cognitive maps. Each of 
+these terms warrants clariﬁcation and description.
+Mental Models. Allee (1997) stated that mental models are “important 
+cornerstones for building knowledge and deﬁning some of the cognitive 
+processes that support change and learning” (p. 11). Senge (1990) deﬁned 
+mental models as “deeply ingrained assumptions, generalizations, or even 
+pictures or images that inﬂuence how we understand the world and how we 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+49
+take action. Very often, we are not consciously aware of our mental models 
+or the effects they have on our behavior” (p. 8). 
+Doyle and Ford (1998) explored the concept of mental models in de-
+tail: “Mental models are thus the stock in trade of research and practice in 
+system dynamics: they are the ‘product’ that modelers take from students 
+and clients, disassemble, and reconﬁgure, add to, subtract from, and return 
+with value added” (p. 4). After providing a comprehensive literature review 
+of the terms from both the systems dynamics and cognitive psychological 
+perspectives, and some discussion in Systems Dynamics Review, Doyle and 
+Ford eventually offered the following revised deﬁnition of mental models: 
+“A mental model of a dynamic system is a relatively enduring and acces-
+sible, but limited, internal conceptual representation of an external system 
+(historical, existing or projected) whose structure is analogous to the per-
+ceived structure of that system” (p. 414). Weick (1979, 1985, 1990) has ar-
+gued consistently that mental models guide, shape, and provide the basis on 
+which individuals interpret and make sense of organizational life.
+Representations. Cognitive psychology literature focuses on mental rep-
+resentations. Representations refer to the way humans build “stand-ins” for 
+reality in their minds. “One of the functions of representations is to stand 
+in for things outside the system; once a system has representations, it can 
+operate on them and not need the world” (Bechtel, 1998, p. 297). The con-
+cept of representation can best be introduced by considering that the mind 
+and brain are involved in “coordinating the behavior of an organism in its 
+environment” (Bechtel, 1998, p. 297). To coordinate such behavior, an or-
+ganism must create some working understanding of its environment, and it 
+does so by constructing a mental representation, or model of that environ-
+ment (Johnson-Laird, 1983). 
+Freyd (1987) suggested that mental representations are also dynamic: 
+“perceivers are sensitive to implicit dynamic information even when they 
+are not able to observe real-time changes” (p. 427). The signiﬁcance of 
+Freyd’s research is its suggestion that the human mind is itself anticipatory 
+in its perception and construction of events. That is, the human mind natu-
+rally anticipates possible future sequences of actions based on immediate 
+perceptions.
+Cognitive Maps. Cognitive maps apply metaphor to the notion of men-
+tal models. Weick (1990) recounted a favorite story about a Hungarian mili-
+tary unit on maneuvers in the Swiss Alps:
+
+
+50 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+Their young lieutenant sent a reconnaissance unit out into the icy wil-
+derness just as it began to snow. It snowed for two days, and the unit 
+did not return. The lieutenant feared that he had dispatched his people 
+to their deaths, but the third day the unit came back. Where had they 
+been? How had they made their way? Yes, they said, we considered our-
+selves lost and waited for the end, but then one of us found a map in 
+his pocket. That calmed us down. We pitched camp, lasted out the 
+snowstorm, and then with the map we found our bearings. And here we 
+are. The lieutenant took a good look at the map, and discovered, to his 
+astonishment, that it was a map of the Pyrenees. (This story was related 
+by the Nobel Laureate Albert Szent-Gyorgi and was turned into a poem 
+by Holub, 1977.) (p. 4) 
+Thus, the “cognitive map” refers to the way the mind creates a map 
+or model of a territory, or situation that it uses as a reference point. Weick 
+(1990) further explained that any map, no matter that it may be an incor-
+rect one, provides some reference point and increases the likelihood that 
+an individual or group will be able to navigate unfamiliar terrain. Weick’s 
+point seems to be that it is better to operate with a set of assumptions that 
+may be incomplete than to forego operating completely.
+Global Business Network, a consulting ﬁrm with specialization in sce-
+nario planning and strategic thinking, suggests a story of map use to illus-
+trate its point—a point that differs a bit from that of Weick (1990):
+This map [Figure 2.2] was made in 1701 by a Dutch mapmaker named 
+Herman Moll, working in London. He based his map on the explora-
+tions of the Spanish, who came up the western side of the Americas, 
+and originally encountered the southern point on the map, the tip of 
+today what we call the Baja Peninsula. And actually the ﬁrst maps were 
+right. Everything north of that was drawn as terra incognitas, one great 
+land mass. But then a few years later, around 1635, the Spanish sailed 
+to the northern points along this map and encountered what we call the 
+Straits of Juan de Fuca and the Puget Sound. Being good Cartesians, 
+they connected the northern point with the southern point and created 
+the Island of California. 
+Now, this would only be a historical curiosity were it not for the problem 
+of the missionaries, because the missionaries actually used this map. They 
+would land near what is today Monterey and go inland to bring the word 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+51
+of God to the American Indians. Now, if you’re on the western shores and 
+you want to go inland, what do you have to do? Well, of course, you have 
+to take your boats with you. So these poor missionaries disassembled their 
+boats, packed them on mules, hauled them across California and 12,000 
+feet up the Sierra Nevada, and then down the other side—only to ﬁnd a 
+beach, that went on and on, and on, and on. Until, of course, they ﬁnally 
+recognized that they were in the middle of the deserts of Nevada, and there 
+was no Island of California. So they wrote to the map-makers in Spain and 
+said, “Hey, listen, there’s no Island of California; your map is wrong!” And 
+the mapmakers would write back and say, “No, no, no! You’re in the wrong 
+place; the map is right!” 
+Well, ﬁnally, in 1685, the Spanish changed their maps. Sixteen years 
+later, when Moll was challenged by the Spanish about his map, he claimed, 
+F I G U R E  2.2 A Map of North America
+
+
+52 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+“I have actually talked to sailors who sailed all the way around the Island of 
+California. It’s an island.” Finally, in 1721, he changed his maps too.
+So, what’s the point? The point is, if you get your facts wrong, you get 
+your map wrong. If you get your map wrong, you do the wrong thing. But 
+worst of all once you believe a map, it is very, very hard to change. We all 
+have deeply ingrained maps—all of us—and particularly successful corpo-
+rate executives. Because, of course, they are successful precisely because they 
+have had good maps of the world as they have understood it. They would 
+not have risen to positions of power if they did not understand their busi-
+ness, the business environment, the evolution of their industry, and also 
+function effectively using this map. However, these executives have a prob-
+lem: the map that got them to the top is unlikely to be the map that they 
+need for the future. And worst of all, challenging those deeply ingrained 
+perceptions takes an enormous amount of skill, intelligence, information, 
+and judgment. (www.gbn.org/scenarios/maprap, accessed April 14, 2003)
+These two stories illustrate conﬂicting notions about the purposes and 
+pitfalls of cognitive maps. We are therefore left with something of a para-
+dox: any map is better than no map; however, an inaccurate map often leads 
+to an undesired location. Scenarios work to continuously adjust the maps, 
+based on new understandings of the terrain. New understandings of the 
+terrain come from rigorous research and constant “strategic” conversations 
+with other “explorers” of the terrain. 
+LEADERSHIP THEORY
+Leadership is included here as a key ingredient of scenario planning because 
+leadership is a critical component of any organization change and develop-
+ment effort. As with any other change project, if the leadership of the orga-
+nization is not involved and supportive, the project is likely to fail. Because 
+leadership is such an extensive topic itself, a lengthy review will be avoided 
+here. Instead, some recent research, led by colleagues Rochell McWhorter 
+and Susan Lynham, is summarized as an emerging foundation for develop-
+ing links between leadership capabilities/capacities and scenario planning. 
+Definition
+The Oxford English Dictionary (2006) deﬁnes leadership as “[a]n act or in-
+stance of guidance or direction” (p. 549). 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+53
+Description
+Leadership is obviously critical in organizations. The body of work examin-
+ing and analyzing leadership is far too vast to examine in depth here. Sufﬁce 
+it to say that leadership is clearly a complex phenomenon concerned with 
+how decision makers move organizations forward and inspire people around 
+them. Leaders drive virtually all aspects of organizational life, including 
+policy, human resource practices, structure, and compensation, among many, 
+many others.
+Emerging Research Linking Scenario Planning and Leadership
+Research thus far on leadership as a critical component of scenario plan-
+ning has focused on interviews with scenario planning experts (Lynham, 
+1998, 2000a, 2000b, 2002a, 2002b; McWhorter, Lynham, & Porter, 
+2008). Studies have explored the link between leadership development and 
+scenario planning by asking experts to describe their interpretation of this 
+relationship. Some exciting developments have included descriptions of sce-
+nario planning used as a leadership development activity. Companies have 
+been experimenting by asking emerging leaders to manage various aspects 
+of the scenario planning effort as a development activity. Interviews have 
+suggested that leaders in some organizations are realizing that planning will 
+be an increasingly critical skill set for the future, and they expect their fu-
+ture potential leaders to be familiar with scenario planning techniques (Mc-
+Whorter et al., 2008). 
+Kleiner and Roth’s (2000) Oil Change: Perspectives on Corporate Trans-
+formation and Lynham’s (2000a) The Development of a Theory of Responsible 
+Leadership for Performance provided strong additional conceptual starting 
+points. Several emerging research studies are promising in that they suggest 
+a clear link between leadership and scenario planning; however, such re-
+search is in the early stages of documenting this link technique (McWhorter 
+et al., 2008). Additional studies will clarify the strength and importance 
+of the relationship between leadership development and scenario planning, 
+but for now, the suggestion is that leadership must be involved with and 
+supportive of any scenario project in order for it to succeed. Perhaps in the 
+near future, scenario projects can be designed speciﬁcally as leadership de-
+velopment activities. More research must be done to understand how leader-
+ship is linked to scenario planning and how the two systems interact. 
+
+
+54 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+ORGANIZATION PERFORMANCE AND CHANGE
+Performance is one of the most talked-about aspects of organizational im-
+provement efforts. Swanson’s (1999) discussion of performance improvement 
+foundations provided a broad yet well-deﬁned perspective of performance 
+along with the means to assess it, describe it, and explain it in more detail. 
+Although the performance perspective has received criticism on the grounds 
+that it neglects the human elements in organizations and improvement ef-
+forts, “the best [performance improvement] theory and practice will in the 
+end validate the need for and contribution of human expertise to [perfor-
+mance improvement]” (Swanson, 1999, p. 4). The collective inﬂuence of 
+dialogue, conversation quality and engagement, learning, decision making, 
+mental models, and leadership on organization performance and change 
+was shown in Figure 2.1. These elements combine to create performance-
+based scenario planning.
+Definition
+Performance has been deﬁned as “the valued productive output of a system 
+in the form of goods or services” (Swanson, 1999, p. 5). 
+Description
+Performance occurs in four core domains: organization, process, group, 
+and individual. Performance has also been placed at the center of a lengthy 
+debate over the intended outcome of organizational interventions. The 
+perspective advocated here is that performance is necessary, although not 
+necessarily sufﬁcient, for organizational effectiveness. Clearly, responsible 
+scholars and practitioners must address both of these perspectives and 
+concerns, and the position argued in this model is that the scenario plan-
+ning system inherently requires that both learning and performance are 
+necessary outcomes. Research in this area also suggests it is a promis-
+ing area to continue exploring (Phelps, Chan, & Kapsalis, 2001; Visser & 
+Chermack, 2009).
+Levels of Performance
+Regarding the link between performance and strategy, Rummler and Brache 
+(1995) stated, “The most powerful strategy implementation tools we have 
+found are those that help us effectively design and manage performance at 
+the organization, process and job/performer levels” (p. 84). Thus, a clear 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+55
+strategy for evaluating the outcomes of the scenario planning processes is to 
+evaluate changes in performance at these three levels. 
+The Organization Level. Rummler and Brache (1995) deﬁned per-
+formance at the organization level in terms of three core variables: organiza-
+tion goals, organization design, and organization management. Organization 
+goals frequently include a focus on productivity, cycle time, cost, and proﬁt 
+improvement efforts. Performance-focused analysts “design an organization 
+that enables the goals to be met” (Rummler & Brache, 1995, p. 37); thus, 
+a focus on the input-output relationships within the organization allow a 
+design that accommodates and supports the organization’s goals. Goals, per-
+formance, resources, and interfaces between functions are all areas requiring 
+frequent assessment to “help identify what needs to get done (goals), the 
+relationships necessary to get it done (design), and the practices that remove 
+the impediments to getting it done (management)” (Rummler & Brache, 
+1995, p. 43). The organization level of performance provides the foundation 
+for understanding, analyzing, and managing performance at the process and 
+individual levels.
+The Process Level. Commonly viewed as how work is accomplished, 
+processes can be more speciﬁcally deﬁned as value chains in which each step 
+adds value to the previous step. Based on a view that effective process pro-
+duces effective organizations, Rummler and Brache (1995) asserted that 
+process goals, design, and management are the key variables to address for 
+improving process performance. Process goals are considered subgoals of 
+organization goals, and they should be designed to efﬁciently convert pro-
+cess inputs to process outputs. Managing, analyzing, and adjusting processes 
+goals, performance, resources, and interfaces ensure the maintenance of high 
+levels of process performance (Rummler & Brache, 1995). Targeted as the 
+level with the greatest opportunity to contribute to performance improve-
+ment, the process level is largely ignored and often misunderstood. 
+The Job/Performer Level. Jobs must be designed to support process 
+steps, enabling the achievement of process goals and, in turn, organization 
+goals. Job goals must be aligned with process goals, and jobs must be de-
+signed and structured such that the performer can achieve those job goals 
+(Rummler & Brache, 1995). Job management is considered a function of (1) 
+performance speciﬁcations, (2) task support, (3) consequences, (4) feedback, 
+(5) skills and knowledge, and (6) individual capacity. These components of 
+
+
+56 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+job management, if effectively addressed, help job performers achieve pro-
+cess goals, leading to the fulﬁllment of organization goals.
+Scenario Planning and the Levels of Performance 
+Improvement
+The link between scenario planning and performance improvement theory 
+seems obvious, yet scenario planning is increasingly applied without a per-
+formance need and without a theoretical basis, making evaluation a difﬁcult 
+exercise. Thus, the importance of the performance need in the performance 
+improvement context cannot be overstated. Van der Heijden et al. (2002) 
+identiﬁed a “lack of purposefulness” (p. 3) as a major reason that scenario 
+projects fail. It is in the performance need, determined by a thorough analy-
+sis, that such purposefulness can be discovered and acted upon (Holton, 
+1999; Swanson, 1994).
+Scenario Planning at the Organization Level
+Scenario planning must produce results at the organization level. While 
+evaluation efforts have been minimal, one study in particular attempted to 
+analyze the link between engagement in scenario planning and ﬁrm perfor-
+mance. Phelps, Chan, and Kapsalis (2001) evaluated scenario planning proj-
+ects in the water and IT industries. In the water industry, ﬁrm performance 
+measures included return on capital employed, water quality, variance in 
+water pressure over time, and supply interruptions. In the IT industry, ﬁrm 
+performance measures included annual growth rates of client companies, 
+return on capital employed, and net proﬁts. The authors concluded that 
+scenario planning had a considerable positive effect on ﬁrm performance 
+in the water industry, although the service score showed a considerable de-
+crease. The IT industry also showed a positive association between scenario 
+planning and performance, although it was less powerful and was based on 
+a questionably small sample size. Further studies such as these are needed 
+to establish the link between scenario planning and performance in terms 
+of economic beneﬁt. Studies focused on the relationship between scenario 
+planning and the achievement of organization goals are particularly advo-
+cated as one step in a comprehensive program of scenario evaluation.
+Several case studies—for example, Royal Dutch Shell (Wack, 1985a, 
+1985b), British Airways (Moyer, 1996), and Nokia (van der Heijden et al., 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+57
+2002)—examine the abilities of organizations to revive and renew them-
+selves, and the fact that these companies are still ﬂourishing despite some 
+extremely challenging situations is one indicator that scenario planning 
+might help an organization and its leaders cope with uncertainty. A compa-
+ny’s ability to survive may be the most basic indicator of performance at the 
+organization level. Other indicators may be speciﬁc to industry or company, 
+but effective scenario planning will select these speciﬁc indicators, measure 
+them, and address them. 
+Scenario Planning at the Process Level
+Only one study was found that explicitly examined the effects of scenario 
+planning on process capabilities or functions. A case study by Burt and van 
+der Heijden (in Ringland, 2002) had as one of its primary aims the recon-
+ﬁguration of supply chain processes. While it is clear that scenario thinking 
+might be used to develop alternative processes and explore more efﬁcient 
+means of delivering products and services, scenarios have rarely been ap-
+plied in this context. However, some scenario projects such as the IT com-
+pany International Computers Ltd. (Ringland, 2002) have incorporated 
+systems diagrams to map information markets in process formats; or, as 
+in the case of Daimler-Benz Aerospace (Tessum, 1997), systems diagrams 
+were used to map early warning systems as processes of contingency plan-
+ning. Van der Heijden et al. (2002) suggested that organizational change is 
+effectively brought about through process change, although “process gain 
+requires persistence and consistency over an extended period” (p. 84). 
+Some preliminary conceptual arguments for using scenarios in the pro-
+cess context include the use of scenarios as “cognitive objects” (P. E. John-
+son, personal communication, April 2003) in which scenarios are vehicles 
+for process management and knowledge transfer. These are key areas for 
+further investigation that might use scenarios to explore alternative pro-
+cesses for improved efﬁciency and storage spaces for descriptions of knowl-
+edge work. Research studies that document the effects of scenarios applied 
+to processes would provide much value by potentially providing an addi-
+tional application area for scenarios. As Rummler and Brache (1995) stated, 
+“[T]he process level has been the least understood level of performance” 
+(p. 44); as such, the process level provides the most potential for improving 
+performance.
+
+
+58 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+Scenario Planning at the Job/Performer Level
+Perhaps more than any other level, anecdotal evidence has supported the 
+claim of individual performance improvement. Whether through learning 
+via intense trend analysis (Wack, 1985b), shared mental models (van der 
+Heijden, 1997), or increased availability of information for more precise, 
+long-view-oriented decision making (Schwartz, 1991), virtually all reports 
+of scenario application address the performance of the individual. However, 
+none reports an empirical study, with measures of individual performance 
+improvement. Van der Heijden et al. (2002) stated that scenarios help in-
+dividuals reperceive reality from multiple perspectives, provide a forum for 
+people to think creatively, and are effectively used as communications tools. 
+These uses of scenarios are all aimed at improving performance, although 
+there is little beyond participant claims of improvement in these areas.
+INTEGRATING THE THEORETICAL 
+FOUNDATIONS FOR A THEORY OF  
+SCENARIO PLANNING
+Scenario planning is believed to contribute to organization performance 
+through the collective effect of each of the theories described in this chapter. 
+To some, this explanation may seem obvious, but such a system of concepts 
+explaining how scenario planning contributes to the organization and its 
+goals is not found in the literature. The goal of this chapter has been to 
+justify the theory of scenario planning and to capture what scenario plan-
+ning is and how it works (Torraco, 1997). In the proposed theory, conversa-
+tion quality and engagement, learning, decision making, mental models, 
+and leadership are positioned as drivers of organization performance and 
+change. What is unique about scenario planning is that it integrates these 
+critical drivers of organization performance and change (Visser & Cher-
+mack, 2009).
+The components of the theory of scenario planning are useful in un-
+derstanding what scenario planning is and how it works in numerous ways. 
+First, the theory provides a thinking tool for conceptualizing how sce-
+nario projects might be facilitated. It presents several “targets”—or items 
+that scenario planning is designed to change. The results of these changes 
+are intended to alter how participants view the internal and external envi-
+ronments. Participants can therefore reperceive their environment and the 
+
+
+  
+T H E O R E T I C A L F O U N D A T I O N S O F S C E N A R I O  P L A N N I N G  
+59
+options contained within it. Second, the components of the theory provide 
+convenient measurement points for assessing and evaluating the outcomes 
+of scenario planning. Finally, this theory provides a way of categorizing new 
+knowledge that is generated about scenario planning. To be sure, theories in 
+organization sciences require adjustment, reﬁnement, and development as 
+new insights are gained.
+CONCLUSION
+This chapter has reviewed the major theory domains that inform the prac-
+tice of scenario planning: (1) dialogue, conversation quality, and engage-
+ment; (2) organizational learning; (3) mental models; (4) decision making; 
+(5) leadership, and (6) organization performance and change. These theo-
+retical foundations have been explored in detail, with an aim of explaining 
+how each one is relevant in scenario planning practices and models. The 
+theoretical foundations were integrated into a theory of scenario planning 
+that attempts to present a conceptual explanation of what scenario plan-
+ning is and how it works. This chapter is critical in understanding scenario 
+planning practices as theories, and theoretical foundations provide a set of 
+“hooks” on which to hang knowledge as one navigates through the imple-
+mentation of any scenario planning project. In addition, the theories pre-
+sented in this chapter help to identify the elements that must be considered 
+in any scenario planning project intended to contribute to enhanced orga-
+nizational performance.
+
+
+This page intentionally left blank 
+
+
+ 61
+The Performance-Based 
+Scenario System
+This chapter situates scenario planning in the organizational context. It 
+explains how scenario planning ﬁts into the organizational system as a sub-
+system with its own inputs, processes, outputs, and feedback loops. 
+To accomplish this goal, the state of the economic, business, and soci-
+etal environment and its inﬂuence on organizational activity is described. 
+Not only does the environment make the case for scenario planning, but it 
+also sets up the reality of systems within systems and ever-changing condi-
+tions. This chapter also explains organizations as systems, describes scenario 
+planning as a system within the organization, and introduces the phases of 
+scenario planning that form the content for Part Two of this book.
+THE EXTERNAL ENVIRONMENTAL CONTEXT
+The nature of the environment was established in Chapter 1. To reiterate, 
+things change too rapidly for forecasts or other predictive planning models 
+to be useful. There are no signs that the rate of change will slow. Coupled 
+with the rate of change is its depth. Economic hiccups are deeper and di-
+sasters more devastating than ever. Decision makers are just trying to make 
+sense of a context that changes signiﬁcantly and frequently. Many have tried 
+other tools and been frustrated by the lack of ability to understand and ac-
+count for uncertainty. Today’s business context plainly leaves people in the 
+midst of turbulence. 
+3

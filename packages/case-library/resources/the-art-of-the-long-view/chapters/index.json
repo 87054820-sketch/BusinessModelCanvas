@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "ch01-intro",
+    "order": 1,
+    "title": { "en": "The Art of the Long View", "zh": "远见的艺术" },
+    "summary": {
+      "en": "Peter Schwartz's 1991 book that popularized scenario planning beyond Shell's corridors. Not about predicting the future — about preparing for multiple plausible futures so you recognize which one is unfolding early enough to act. Schwartz distills his Shell group-planning experience into a reproducible method: driving forces, predetermined elements, critical uncertainties, scenario logics, and early indicators. 'The end result is not an accurate picture of tomorrow, but better decisions about the future.'",
+      "zh": "Peter Schwartz 1991 年的书，把情景规划推广到 Shell 走廊之外。不是关于预测未来——而是为多种可能未来做准备，以便你能尽早识别哪个正在展开并采取行动。Schwartz 将他在 Shell 集团规划的经验提炼为一套可重现的方法：驱动力、预定因素、关键不确定性、情景逻辑和早期信号。「最终产物不是明天的精确图景，而是关于未来的更好决策。」"
+    },
+    "relatedCanvasDefIds": ["scenario-matrix"],
+    "relatedStrategyFrameworkSlugs": ["scenario-planning"]
+  },
+  {
+    "slug": "ch02-scenarios",
+    "order": 2,
+    "title": { "en": "What Are Scenarios? Stories About the Future", "zh": "什么是情景？关于未来的故事" },
+    "summary": {
+      "en": "Scenarios are not forecasts, not sensitivity analyses, not contingency plans. They are coherent, internally consistent stories about how the future might unfold. A good set has 2-4 scenarios, each built around different answers to the same critical question. The scenarios must be plausible (could happen), relevant (matters to decisions), challenging (stretches thinking), and divergent (structurally different from each other). Schwartz's 'three strikes' rule: any scenario containing three or more improbable events is rejected.",
+      "zh": "情景不是预测，不是敏感性分析，不是应急方案。它们是连贯、内部一致的故事，讲述未来可能会怎样展开。一组好的情景包含 2-4 个，每个都围绕对同一个关键问题的不同回答来构建。情景必须可信（可能发生）、相关（对决策重要）、有挑战性（拉伸思维）且具有区隔性（彼此结构上不同）。Schwartz 的「三振出局」规则：任何包含三个或以上不可能事件的情景都会被拒绝。"
+    }
+  },
+  {
+    "slug": "ch03-driving",
+    "order": 3,
+    "title": { "en": "Driving Forces and Predetermined Elements", "zh": "驱动力和预定因素" },
+    "summary": {
+      "en": "The deep currents that shape the future. Driving forces: societal dynamics (demographics, values), technology trends, economic forces, political forces, and environmental forces. Predetermined elements: slow-changing factors that are 'already in the pipeline' — demographic structures 20 years out, depleting resources, infrastructure decay. The scenario builder's job is to identify which driving forces are both high-impact and highly uncertain — these become the scenario axes.",
+      "zh": "塑造未来的深层洋流。驱动力：社会动态（人口统计、价值观）、技术趋势、经济力量、政治力量和环境力量。预定因素：缓慢变化的、「已在管道中」的因素——20年后的人口结构、正在耗尽的资源、基础设施老化。情景构建者的工作是找出哪些驱动力同时具有高影响力和高度不确定性——这些成为情景的轴线。"
+    },
+    "relatedCanvasDefIds": ["scenario-matrix", "business-model-environment"]
+  },
+  {
+    "slug": "ch04-logics",
+    "order": 4,
+    "title": { "en": "Scenario Logics: Bringing the Driving Forces Together", "zh": "情景逻辑：把驱动力聚在一起" },
+    "summary": {
+      "en": "The most critical design step: selecting two independent, high-impact, uncertain driving forces as the scenario axes (e.g. 'energy cost × regulation level' or 'technology openness × social cohesion'). The resulting 2×2 grid gives four structurally distinct worlds. Each quadrant gets a name evocative of its core logic — the name functions as a mnemonic, making the scenario discussable without re-explaining it every time. Shell famously used 'New Frontiers,' 'Barricades,' and so on.",
+      "zh": "最关键的步骤：选择两个独立、高影响力、不确定的驱动力作为情景轴线（如「能源成本 × 监管水平」或「技术开放性 × 社会凝聚力」）。生成的 2×2 网格给出四个结构上不同的世界。每个象限起一个能唤起其核心逻辑的名字——名字充当记忆辅助，使情景可以被讨论而不必每次重新解释。Shell 著名地使用了 'New Frontiers'、'Barricades' 等。"
+    },
+    "relatedCanvasDefIds": ["scenario-matrix"]
+  },
+  {
+    "slug": "ch05-plotting",
+    "order": 5,
+    "title": { "en": "Plotting Scenarios: From Logics to Narratives", "zh": "绘制情景：从逻辑到叙事" },
+    "summary": {
+      "en": "Building each scenario into a full narrative: the 'end state' at the planning horizon (e.g. 2035), the timeline of events that lead there, key actors and their moves, winners and losers, how the world feels to live in (not just what the data says). Schwartz recommends writing scenarios in the present tense as if a journalist is reporting from that future — this forces concreteness and reveals gaps in logic. Each scenario should be short enough to be read in one sitting, long enough to feel real.",
+      "zh": "把每个情景构建成完整叙事：规划时间点的「终局」（如 2035年），通往那里的时间线事件、关键行动者和他们的选择、赢家和输家、生活在那个世界上是什么感觉（不只是数据说了什么）。Schwartz 建议用现在时写情景，仿佛一个记者正从那个未来发回报道——这迫使具体化并暴露逻辑漏洞。每个情景应该短到一次读完，长到让人觉得真实。"
+    }
+  },
+  {
+    "slug": "ch06-implications",
+    "order": 6,
+    "title": { "en": "Strategic Implications: Decisions Across Scenarios", "zh": "战略意涵：跨情景的决策" },
+    "summary": {
+      "en": "The payoff of scenario work: testing current strategies against each scenario. Three tests: (1) Wind-tunneling — does the strategy hold up in every scenario? (2) Early indicators — what signposts tell you which world is emerging? (3) Robust actions — what moves make sense regardless of which scenario unfolds? The goal is not to pick the 'right' scenario but to build a strategy resilient across the entire set, with triggers and contingent moves for each possible path.",
+      "zh": "情景工作的回报：将当前战略在每种情景下测试。三项测试：(1) 风洞测试——战略在每种情景下都站得住吗？ (2) 早期信号——哪些路标告诉你哪个世界正在浮现？ (3) 稳健行动——哪些动作不管哪种情景展开都是有意义的？目标不是选出「正确」的情景，而是构建一个在全集合中都具备韧性的战略，并为每种可能路径设定触发器和备选动作。"
+    }
+  },
+  {
+    "slug": "ch07-leading",
+    "order": 7,
+    "title": { "en": "Leading Indicators: Recognising Which World Is Emerging", "zh": "领先信号：识别哪个世界正在浮现" },
+    "summary": {
+      "en": "Every scenario should come with a set of leading indicators — observable changes that suggest one world is becoming more probable than the others. Schwartz provides a taxonomy: macro indicators (GDP, energy prices, regulation changes), industry-specific 'canaries' (a competitor move, a technology adoption curve, a talent flow), and weak signals (anomalies that don't fit the current mental model but may become important). The discipline is to track these indicators regularly, not just at annual strategy off-sites.",
+      "zh": "每个情景都应附带一组领先信号——可观察的变化，提示某个世界正在比其他世界变得更可能。Schwartz 提供了一套分类：宏观指标（GDP、能源价格、监管变革）、行业特定的「金丝雀」（竞争对手的一次动作、一条技术采用曲线、一个人才流向）和弱信号（不符合当前思维模型但可能变重要的异常现象）。关键在于定期追踪这些指标，而不只是在年度战略会。"
+    },
+    "relatedCanvasDefIds": ["scenario-matrix", "business-model-environment"]
+  }
+]

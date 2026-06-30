@@ -1,0 +1,34 @@
+{
+  "chapter": "ch03-manage",
+  "sourceFiles": { "en": "10-Chapter-2-Manage.txt, 11-Manage-Your-Portfolio.txt, 12-Explore.txt, 13-Exploit.txt" },
+  "concepts": [
+    { "name": "Ambidextrous Organization", "definition": "An organization that can manage both Explore (search for new business models in high uncertainty) and Exploit (grow and optimize existing models in low uncertainty) simultaneously. Requires different structures, metrics, processes, and culture for each mode — but unified under a single strategic portfolio view." },
+    { "name": "Dual Operating System", "definition": "Running two management systems in parallel: one for efficiency/execution (Exploit) and one for innovation/search (Explore). Not two separate companies, but two modes within one organization, with clear interfaces, transition paths, and shared strategic intent." },
+    { "name": "Portfolio Management Rhythm", "definition": "A regular cadence of reviewing the entire Explore + Exploit portfolio, making resource allocation decisions, moving projects between zones, and killing underperforming bets. Typically quarterly, separated from operational reviews. If portfolio management doesn't have a calendar slot, it doesn't exist." },
+    { "name": "Innovation Metrics (Dual)", "definition": "Different KPIs per portfolio zone: Explore metrics (hypotheses tested, evidence gathered, learning velocity, pivots validated) vs. Exploit metrics (revenue growth, margin, market share, customer satisfaction). Using the same metrics for both destroys the Explore portfolio." },
+    { "name": "Transition Management", "definition": "The process of moving a validated Explore project into the Exploit portfolio. The hardest organizational moment: the project needs Exploit resources and scale but can't yet survive Exploit metrics. Premature transition kills the project; delayed transition starves it." }
+  ],
+  "arguments": [
+    { "claim": "The CEO's most important job is managing the Portfolio, not managing the business — operational management can be delegated; portfolio balance cannot", "evidence": "Portfolio management requires strategic judgment: how much to invest in Explore vs. Exploit, which projects to kill, which to accelerate, when to transition. If the CEO doesn't own the portfolio, no one does — and the organization defaults to Exploit-only decisions. The portfolio IS the strategy." },
+    { "claim": "Ambidexterity fails when Explore and Exploit compete for the same resources, talent, and attention — they need separate budgets, protected teams, and different career paths", "evidence": "When an Exploit division 'volunteers' to run an Explore project, the project dies (too small against quarterly targets). When Explore talent is evaluated by Exploit KPIs, the best people leave. Structural separation with strategic integration is the only proven model for sustained ambidexterity." }
+  ],
+  "cases": [
+    { "name": "Amazon: AWS as Explore that became Exploit", "context": "Amazon Web Services started as an internal infrastructure product, then became a separate Explore initiative, then grew into Amazon's most profitable business.", "illustrates": "How a successful Explore project transitions to Exploit. AWS was kept separate from Amazon's retail business (different metrics, different team, different culture) until it was big enough to stand alone. Then it became a second Exploit portfolio alongside retail.", "lesson": "The transition from Explore to Exploit is the critical moment. Keep the project separate until it has its own viable business model; then integrate it as a peer portfolio, not a sub-unit of the existing Exploit business." }
+  ],
+  "terminology": [
+    { "term": "Ambidextrous", "definition": "Capable of using both hands equally well — applied as a metaphor for managing both exploration and exploitation." },
+    { "term": "Portfolio review", "definition": "Regular meeting where senior leadership reviews the entire Explore + Exploit portfolio, makes resource decisions, and ensures strategic balance between today's business and tomorrow's." },
+    { "term": "Innovation theater", "definition": "Activities that look like innovation (labs, hackathons, outposts, demo days) but don't produce real business model innovations measured by portfolio impact. Distinguished from real innovation by whether projects move across the Explore portfolio or remain as side activities." }
+  ],
+  "nuance": [
+    "Ambidexterity is not a structure on an org chart — it's a leadership discipline. No reporting line can enforce it if leadership defaults to Exploit-only decisions when resources get tight.",
+    "The hardest transition isn't starting Explore projects — it's graduating them to Exploit at the right moment. Most companies kill the project by imposing Exploit metrics too early, or starve it by 'integrating it into the core business' before it's ready."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["portfolio-map"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-explore", "ch02-exploit", "ch04-patterns"]
+  }
+}

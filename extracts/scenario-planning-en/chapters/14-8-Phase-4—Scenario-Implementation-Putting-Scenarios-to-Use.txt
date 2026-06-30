@@ -1,0 +1,883 @@
+# 8 Phase 4—Scenario Implementation: Putting Scenarios to Use
+
+170 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+• Lewin’s force ﬁeld analysis
+• Nominal group technique
+• Team building
+• Value voting
+• Simulations
+• Visioning
+All of these approaches to change management can be useful in consider-
+ing the implications of scenarios, and all of them can be incorporated into 
+workshops using scenarios to leverage change in organizations. The critical 
+tip for focusing scenario use, however, is that the initial issue must drive any 
+method. This approach will keep the project from slipping onto other issues.
+F I G U R E  8.1  Performance-Based Scenario System—Scenario Implementation 
+Phase
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+171
+Each scenario planning project is a customized learning project. There-
+fore, there are few speciﬁc outcomes that will be common to all scenario 
+projects. Returning to the original purpose, issue, or question, and looking 
+at the business model in each scenario are critical requirements of nearly all 
+scenario projects. The suggestions in this chapter are a framework aimed 
+at getting the most out of scenarios. Experienced change consultants may 
+want to add to and modify the workshops listed here and create other ways 
+of using scenarios. The goal is to make sure the scenarios are used to think 
+critically about various aspects of the organization. Scenario use is intended 
+to shift the thinking inside the organization, so the fun and creativity that 
+emerge in developing scenarios should be carried through into the scenario 
+implementation phase. 
+Scenarios must be presented to participants in ways that provoke learn-
+ing that leads to strategic insight. Many participants will have insights and 
+communication breakthroughs during some of the scenario construction 
+workshops described in the previous chapter. Research shows that a great 
+deal of learning happens throughout the scenario construction and imple-
+mentation phases (Chermack, Lynham, & van der Merwe, 2006; Cher-
+mack & van der Merwe, 2003). Thus, the likelihood of provoking strategic 
+insights increases by involving people in the whole scenario planning sys-
+tem. This is another argument for deductive scenario building.
+USING SCENARIOS PURPOSEFULLY
+Roger Penrose (2004), a professor of mathematics at Oxford, wrote that 
+when two people successfully communicate, the words most often used are 
+“Oh, I see!” A logical question is “What is it that is seen?” What is the 
+substance of a strategic insight (frequently called an “aha” moment)? This 
+ability to see anew or to develop joint understanding via conversation and 
+dialogue is a key intention of most scenario projects.
+The speciﬁc activities using scenarios to build toward achieving this 
+sense of sight are the focus of this chapter. Revisiting the initial prob-
+lem and question begins the process of developing insights and creates a 
+basis for the strategic conversation described by van der Heijden (1997, 
+2005a). The most critical strategic learning happens from the synthesis 
+of using scenarios to examine strategic issues and various aspects of the 
+organization. 
+
+
+172 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+WIND TUNNELING
+The basic idea behind scenario implementation is the concept of wind tun-
+neling. Wind tunneling ﬁrst appeared in aerodynamics research to test air-
+planes and simulate the environment of free ﬂight. Eventually, wind tunnels 
+were used to test buildings and automobiles and examine a variety of struc-
+tural properties. The concept is the same with scenarios. Scenarios function 
+as conceptual wind tunnels in which to measure a variety of organizational 
+characteristics.
+This book—and many others—have highlighted the high degree of 
+change in the external environment, describing things as turbulent. Tur-
+bulence occurs when there are sudden changes in the environment and the 
+structural properties of objects begin to show their inadequacies. The ob-
+jects can be airplane wings in aerodynamic wind tunnels, or organizations 
+in conceptual wind tunnels. Either way, turbulence is an environmental 
+characteristic that puts stress on the object in question, be it an airplane or 
+an organization. Usually, pilots change altitude—they seek a different envi-
+ronment. Because such an option is not readily available for organizational 
+decision makers, they are forced to think about how to build an organiza-
+tion that can withstand the stresses imposed on it. Scenarios are tools for 
+building such a resilient organization.
+Scenarios create a way to analyze the organization in a variety of con-
+ditions. Remember that a basic premise of scenario planning is that the 
+environment changes too rapidly for most strategic planning models to be 
+useful. Scenario planning is built on the assumption that the environment 
+changes constantly. By building uncertainty into the environment as a basic 
+structural feature, scenarios vary the environment in which the organiza-
+tion is operating. Learning scenarios are speciﬁcally used to present a range 
+of possible external contextual conditions (Wack, 1984). With scenarios 
+serving as varying contextual conditions, critical aspects of the organization 
+are examined carefully. 
+Scenarios represent the different future conditions within which the 
+strategy, business model or other decisions must ﬁt. Wind tunneling 
+is used to test decisions for robustness and for exposing opportunities 
+and risks. An important additional beneﬁt of wind tunneling is that the 
+leadership engaged in wind tunneling are continually adjusting their as-
+sumptions as they enter the different worlds described in each scenario. 
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+173
+As leaders check their decisions or business models in the various sce-
+narios they are often required to adjust their thinking based on evidence 
+of ﬂawed assumptions. This process is ﬁlled with critical learning op-
+portunities in the scenario-based strategy framework, and draws highly 
+on constructivist learning principles (for a detailed description of the 
+cognitive processes at work in scenario planning and wind-tunneling, 
+see Chermack & van der Merwe, 2003). (van der Merwe, 2008, p. 233)
+Each of the suggested workshops in this chapter are variations on the 
+wind tunneling implementation strategy. To clarify, the workshops de-
+scribed here are all based on throwing ideas, strategies, plans, questions, and 
+projects into the scenarios, asking questions, and ﬁnding out what more can 
+be learned.
+OVERVIEW OF THE SCENARIO 
+IMPLEMENTATION WORKSHOPS
+Like the scenario development phase, a series of workshops must be designed 
+to use the scenarios and maximize their beneﬁt. This chapter presents ﬁve 
+recommended workshops for using scenarios, with the following focuses:
+• Examining the initial question
+• Testing the theory of the business/business idea
+• Analyzing current strategies
+• Developing “signals” 
+• Creating an experiential learning exercise
+The ﬁrst two workshops should be required; the others are optional. Again, 
+experienced consultants may want to integrate scenarios into other processes 
+with which they are familiar. 
+EXAMINING THE INITIAL QUESTION—WORKSHOP 1
+The ﬁrst step in putting the scenarios to use is to return to the initial pur-
+pose, problem, and question. After all, the priority of the project is to de-
+velop a variety of different ways to explore the problem and answer the 
+question. This workshop can be informal and needs only to bring the team 
+and decision makers back together in a room suitable for brainstorming. 
+Again, whiteboards or newsprint on the walls, room to move around, com-
+fortable chairs, and plenty of paper, pencils, and markers will work nicely. 
+
+
+174 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+The scenario project leader can present all of the scenarios, or, if appro-
+priate, individuals who wrote the speciﬁc scenarios can present them. The 
+presentations should be short, involve the essence of the stories, and use 
+colorful pictures or slides to describe each scenario. The project leader then 
+facilitates a dialogue relating back to the initial question. The following 
+questions may be useful in starting the conversation:
+• What have we learned throughout the scenario development process 
+that relates to our initial question?
+• How would we answer the initial question in each scenario? Are the 
+answers different in each scenario?
+• What additional information would we want to know?
+• What different ways of solving our strategic dilemma are suggested by 
+entertaining these scenarios?
+• What are the clear strategic opportunities that can be seen in each scenario?
+• What general actions would we recommend around the initial 
+problem, question, or issue, having considered each of these scenarios 
+and their implications?
+The goal of this workshop is to begin a genuine conversation about the 
+potential issues decision makers may face and to provide a mechanism to 
+wonder about the future. Research indicates that executives spend less than 
+10 percent of their time on strategic issues (Nash, 2007). Providing a space 
+to think and reﬂect on strategic issues on its own is a valuable contribution. 
+Depending on the size of the organization and the reaction to once again 
+thinking strategically, more than one scenario presentation around the ini-
+tial issue may be necessary. 
+Often, additional workshops to simply reﬂect on the project and explore 
+insights that have come up are requested. I have found that almost anyone 
+who participates in a scenario project develops a clear desire to reﬂect; and 
+once given the time and space to think in this way, they seem to want more 
+of it. This was certainly the case with Technology Corporation. Corporate 
+leaders initially agreed to three half-day workshops to implement scenarios. 
+Based on the participant interactions, and insightful dialogue that was com-
+ing out of the ﬁrst two workshops, leaders asked to extend the conversation 
+with two additional workshops beyond the initial three. They speciﬁcally 
+asked that the additional time not be structured but, rather, left open to 
+continue dialogue on deep issues that had arisen. 
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+175
+Tips for Presentations
+Presentations are an effective way to communicate scenarios. Wack’s pre-
+sentations at Shell are legendary, and he traveled throughout the world 
+delivering compelling sets of scenarios. By all accounts, he was a gifted com-
+municator. Honing communications skills is an evolutionary process, and a 
+few basic understandings will increase the effectiveness of any presentation. 
+The surest way to void a presentation of meaning and put the audience 
+to sleep is to read the presentation slides. This is an unacceptable practice, 
+yet many presenters fall into this habit. A few tips to consider in sharing a 
+presentation are as follows:
+• Rehearse. Great presenters rehearse for each slide of their presentations. 
+They plan the core message that goes along with each of the slides and 
+create innovative ways to deliver that message.
+• Use visuals. Slides should offer minimal text. Instead, incorporate 
+images that are aesthetically pleasing. These make it impossible to read 
+the slides, and they provide the viewer with something more interest- 
+ing to look at than bulleted text.
+• Be enthusiastic. If you don’t have passion for your topic, neither will 
+your audience. Great speakers get excited about what they are talking 
+about because they have to. Presentations given by Pierre Wack and 
+Peter Schwartz are legendary for their passion and enthusiasm.
+For more useful information about delivering effective presentations, con-
+sider Garr Reynolds’s (2010) book Presentation Zen, or visit his website at 
+www.garrreynolds.com. 
+SCENARIO IMMERSION: A VARIATION ON EXAMINING THE 
+INITIAL QUESTION—WORKSHOP 2
+A similar approach to considering the scenarios is called “scenario immer-
+sion” (Wilson & Ralston, 2006). Participants develop their thoughts about 
+the opportunities and threats as well as possible actions and strategies for 
+each scenario. The facilitator explains that the goal of the workshop is to 
+develop as many ideas as possible about how the organization should pro-
+ceed, and participants are encouraged to think broadly to capture a wide 
+range of possible actions for decision makers to take. The process unfolds as 
+each scenario is presented, and participants are asked to assume the role of 
+
+
+176 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+a decision maker. Each participant is asked to identify three to ﬁve oppor-
+tunities and three to ﬁve threats. Each of these is recorded on a single note 
+card. Participants are then asked to develop a strategy they believe could be 
+effective in that scenario. 
+Once these exercises are complete, the process moves into a voting 
+round. Each participant is asked to nominate one threat and one opportu-
+nity he or she believes to be critical in that scenario. The idea is to leverage 
+the collective capital of the participants in the room to distill a core set of 
+opportunities and threats. This part of the process is completed for each 
+scenario.
+When critical opportunities and threats have been identiﬁed, the pro-
+cess turns to strategies. The group is asked to consider all of the strategies 
+that have been brainstormed, and to look for the strategies that appear in 
+more than one scenario. The goal is to identify two or three strategies that 
+can be viable across all or multiple scenarios. This is perhaps the most useful 
+outcome of any scenario project.
+TESTING THE THEORY OF THE BUSINESS/BUSINESS IDEA—
+WORKSHOP 3
+Another effective exercise is to examine the theory of the business/business 
+idea in each scenario. Using the same brainstorming space set up described 
+in earlier chapters, the team can take the theory of the business and business 
+idea developed in the scenario exploration phase (see Chapter 6) and wind-
+tunnel them through each of the scenarios. 
+The process of testing the theory of the business in the context provided 
+by each scenario should take about a half day. The scenario team presents a 
+scenario to decision makers, and a dialogue is initiated about how the the-
+ory of the business may need to change in order to be viable in a given sce-
+nario. Key questions for exploring the theory of the business include these:
+• Do our assumptions about the environment, mission, and core com- 
+petencies ﬁt or enable us to take action within the futures presented in 
+each of the scenarios?
+• Do our assumptions about the environment, mission, and core com- 
+petencies ﬁt each other in each of the scenarios?
+• Is our theory of the business known and understood throughout the 
+organization?
+• How can we continuously test our theory of the business?
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+177
+These questions should be posed for each scenario. These conversations can 
+become quite diverse and reach into unexpected areas. It is OK to continue 
+to explore ideas during these conversations, but keep in mind the goal is to 
+work toward how the theory of the business may need to change to suit a 
+variety of potential futures.
+A similar process can be used to explore the business idea. One work-
+shop described in the scenario exploration phase is to ask decision makers 
+to draw or write out a model of how they interpret the business idea. Then, 
+facilitators attempt to synthesize the various models, capturing the variety 
+in interpretation. The synthesized model can then be considered in each 
+scenario. Here are key questions for the business idea:
+• Are we continuing to serve a business need with our products/services 
+in each scenario?
+• Would our distinctive competencies still be distinctive in each of the 
+scenarios?
+• Would we lose our competitive advantage in any of the scenarios? 
+How would it change?
+Revised Theory of the Business/Business Idea for  
+Technology Corporation
+As a result of a workshop to test the theory of the business/business idea in 
+Technology Corporation, the team decided their business idea needed to 
+change if they were to move beyond their current single source of funding. 
+The resulting revised business idea is captured in Figure 8.2.
+Technology Corporation’s revised business idea clearly includes moving 
+beyond the production of intellectual property and into the production of 
+new, useful technology products. The new business idea includes increased 
+contracting with R&D partners, the licensing and selling of new technol-
+ogy, and cross-functional collaboration. These additions will be critical in 
+moving Technology Corporation forward, beyond its current situation. 
+The response to the revised business idea in Technology Corporation 
+was overwhelming. Many expressed surprise that such a simple exercise 
+could have such profound results. Managers expressed a greater under-
+standing of what was going on in the minds of decision makers and leaders 
+after conversations about the core purpose of the organization. Executives 
+expressed a sense of unity in knowing and understanding what their col-
+leagues thought and their rationale for taking certain stances.
+
+
+178 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+ANALYZING CURRENT STRATEGIES—WORKSHOP 4
+Most decision makers operate under a set of strategic goals whether they 
+have used scenario planning or not. These goals and strategies can be viewed 
+through the “lens” of each scenario to see where they may or may not make 
+sense. In this optional workshop, participants come together to consider the 
+organization’s strategy, current strategic initiatives, risky potential projects, 
+and other organizational goals in the context of each scenario. The purpose 
+of this workshop is to assess current organizational goals and their viability 
+in each scenario. Ultimately, a manageable set of strategies that contribute 
+to the advancement of the organization is sought. Goals and strategies that 
+are found to distract from the core purpose of the organization (the theory 
+of the business/business idea) can be considered further and potentially re-
+moved from the strategic agenda.
+For example, a major corporation I worked with had a set of eleven 
+strategic goals. We designed a workshop in which we asked participants to 
+rank their eleven strategic goals in each of the scenarios. Participants saw 
+that their priorities shifted in each scenario. After working through the ex-
+ercise, decision makers saw that four of their strategic goals were generally 
+irrelevant in all four scenarios. They saw that elements of the four strategic 
+goals that were low in utility could be absorbed as components of other 
+F I G U R E  8.2 Technology Corporation’s Revised Business Idea
+Brainpower
+SBIR
+Phases
+I & II
+Intellectual
+Property
+New
+Technology
+Pure Science
+Science + Business Development
+Cross-
+functional
+Collaboration
+Innovation
+(Science
+Manufacturing
+Brainpower)
+License and
+sell new
+technologies
+External Forces
+Contract
+R&D
+Services
+with
+Partners
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+179
+goals. With some modiﬁcation, shifting, and rewriting, decision makers 
+collectively decided to collapse their goals into a more efﬁcient list of seven 
+strategic goals.
+The point is not necessarily to have fewer strategies or goals. Instead, 
+the goal is to learn to see redundancies or initiatives that are not useful in 
+moving the organization forward, or to discover activities that do not con-
+tribute to the long-term sustainability of the company. Activities that are 
+not seen to contribute should be examined closely and abandoned if they 
+don’t offer at least potential utility in sustaining the organization and con-
+tributing to growth over the long term.
+DEVELOPING “SIGNALS”—WORKSHOP 5
+Signals are sometimes referred to as “leading indicators” or “signposts.” Sig-
+nals are the events in a given scenario that may indicate its story is begin-
+ning to unfold. In other words, they are things to pay attention to that 
+could indicate the future is beginning to happen as it is described in one of 
+the scenarios. Developing signals is a highly undervalued part of the sce-
+nario planning system. It is worth spending time thinking about the things 
+that will indicate major shifts in the external environment. Using the same 
+workshop format as described earlier, the team should spend a few hours 
+going over each scenario and identifying the events that can be viewed as 
+triggers of larger change tendencies. 
+In another recent scenario project I facilitated, these signals were 
+the primary output sought by the CEO. She was very interested in these 
+events that signaled major changes on the horizon. Therefore, we spent 
+extra time on these elements and found it to be highly worthwhile. We 
+designed a presentation that focused solely on the signals. The conversa-
+tion that formed around the signals led to several other insights, and those 
+insights served to bolster the decision makers’ “anticipatory capacity” in 
+that they left that presentation knowing what to look for in the following 
+eighteen months.
+“Signals” for Technology Corporation
+Figure 8.3 presents the signals for Technology Corporation’s scenarios. 
+These signals are general indicators that a given scenario may be starting 
+to unfold. As such, these are the items that should be on decision makers’ 
+“radar screens.” 
+
+
+180 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+F I G U R E  8.3  Signals for Technology Corporation Scenarios
+Primarily R&D Contract Based
+Primarily SBIR Based
+Cohesive, Cross-functional, Collaboratively Innovative
+Neglected, Siloed, Individually Innovative
+Talent Management
+Concorde
+Airbus
+Titanic
+Horse and Buggy
+Funding Sources
+• Technology Corporation successfully recruits 
+world-renowned energy research scientists
+• Technology Corporation’s reputation in energy 
+research grows as its world-renowned energy 
+research scientists enable research 
+partnerships with national laboratories and 
+major research universities
+• Lucrative energy research partnerships create  
+pressure to sustain that portion of the enter- 
+prise to the detriment of development activities
+• Lack of collaboration from the scientists create 
+a dysfunctional siloed organization with each division 
+operating as functionally separate enterprises
+• A funnelling effect over the years transforms 
+Technology Corporation into a contract, 
+narrowly focused, energy research laboratory
+• “Brain-Drain” as scientists and engineers leave 
+or are recruited to more stable environments
+• Unable to turn Technology Corporation into 
+the entrepreneurial enterprise originally 
+envisioned, its owner decides to sell
+• Decrease in SBIR funding
+• Siloed mind-set
+• Increase in activities with cross-functional 
+teams
+• Growth in alternative energy government 
+funding
+• Stronger global protections on IP
+• Long-term R&D partnerships
+• Decrease in collaboration with outside partners
+• Increased interest in water technologies
+• Technologies do not advance beyond phase 2
+• Inability to identify investors for technologies
+• Technology development expenses outweigh 
+the revenues generated from the technology 
+over time
+• Significant, sharp decline in R&D services and 
+customer base
+• Existing employees transition from old framework to new 
+innovated/market-driven consciousness
+• 2012 Obama reelected and funding increased for 
+energy immovation—vision, goals aligned
+• Proprietary Foundation interested in partnering with Tech- 
+nology Corporation because of new success with partners
+• 10-year turn-around for innovations from conception to market
+• With a new election approaching in 2016, Technology 
+Corporation has protected itself against threat of SBIR 
+funding cut by securing primarily R&D contracts
+• Two key innovations take off
+• Demand for clean coal and other green technology 
+increases—gain more R&D contracts
+• Diversification in new market pays off
+• Propietary Foundation provides continued funding for 
+Technology Corporation—sparks interest from other 
+organization for R&D contracts
+• Top industry competitors were not prepared for the cut  
+of SBIR funding and fold or merge
+• Significant increase in employees
+• 2-year turn-around for innovations from conception to 
+market
+• Congress will vote to reauthorize the SBIR program prior 
+to March 20, 2009
+• Monitor http://www.zyn.com/ for increased chatter 
+regarding SBIR funding. Monitor number of SBIR training 
+seminars for increased attendance. Monitor statistics 
+regarding application and awards of SBIR projects
+• Technology Corporation is successful at retrieving, 
+retaining, and disseminating knowledge from not only its 
+workforce, but the industry as well. Technology Corpora- 
+tion Knows (TC-Knows) is an example of a “system” that 
+conceptually explores the possibilities of harnessing the 
+power of knowledge
+• The request for “bailouts” and “loans” continue to cause friction
+• Monitor national debt annual increases. Current estimates 
+are $2–3 trillion per year
+• Monitor national savings rate in U.S. provided by the 
+Bureau of Economic Analyst (http://www.bea.gov/
+briefrm/saving.htm)
+• Monitor AARP research for indicators of current issues 
+affecting the older generation. Monitor GDP for China and 
+U.S.: IMF (http://www.imf.org/external/index.htm); 
+World Bank (http://www.worldbank.org); CIA World 
+Factbook (https://www.cia.gov/publications/the-
+world-factbook/index.htm)
+• Monitor congressional hearings  
+related to SBIR funding
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+181
+CREATING AN EXPERIENTIAL LEARNING EXERCISE— 
+WORKSHOP 6
+One of the most profound scenario planning experiences I have had was 
+at a large international organization. Members of the scenario planning 
+team suggested we build four rooms, each reﬂecting one of the scenarios. 
+The rooms had walls that were plastered with artifacts, posters, banners, 
+and newspaper articles that characterized the scenarios. To the extent pos-
+sible, material artifacts (in this case, it was a computer company, so the 
+team brought in early computer logic boards) for participants to “play” 
+with will immediately capture participant attention. Executives were put 
+into cross-organizational teams, and each team was assigned to a room. 
+One of the members of the scenario planning team presented the sce-
+nario and explained that the task for the group was to tell the story of 
+how the scenario came to unfold. The “aha” moments and critical learn-
+ing points were observable in participant behavior. For some, it was a 
+highly emotional experience because the scenarios came alive in such 
+profound ways.
+Activities that attempt to bring the imagination into reality, like those 
+in this suggested workshop, have been shown to increase learning (Man-
+ning, 2002). The military has used simulations and virtual reality tech-
+nologies for decades because of their learning beneﬁts. The idea is similar 
+with experiential learning workshops. Anything that can be done to get the 
+scenarios “off the page” and into the microcosms of the decision makers 
+will increase their potential effects. Writers and ﬁlmmakers talk about the 
+“suspension of disbelief,” and this is a central concept in scenario planning 
+as well. Sometimes, scenarios will no doubt be met with disbelief, and it 
+is in the presentation, communication, and consideration of scenarios that 
+disbelief can be handled. Of course, scenarios must be well researched, so 
+that their potentially unbelievable stories can be told with data establishing 
+their legitimacy.
+Experiential learning workshops require a great deal of time and effort 
+to design, but their payoff can be high. Keep in mind, too, that some orga-
+nizational cultures will be less open to this kind of exercise than others. For 
+example, engineers are not likely to go for creative exercises like this one, 
+but designers, sociologists, and industries or organizations with close work-
+ing teams are likely to beneﬁt.
+
+
+182 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+OTHER WIND-TUNNELING STRATEGIES
+Decision makers can use the scenarios to examine their strategy, goals, hu-
+man resource capacity, speciﬁc decisions and outcomes, business model, and 
+a variety of other items (see Figure 8.4).
+Figure 8.4 is a basic structure for wind-tunneling various organizational 
+elements through each scenario. At its most simple, this framework suggests 
+some very basic questions that get to the heart of scenario planning. For ex-
+ample, logical questions that fall out of this framework include the following:
+• Do we have a viable strategy in each of the scenarios? In which 
+scenarios does our strategy fall apart?
+• Does our organization structure support the kind of organization we 
+might be in each of the scenarios?
+• Is our organizational culture an asset or liability in each scenario? 
+Why? What implications does our current organizational culture carry 
+for our strategic options in each scenario?
+• Do we have the necessary human resource capabilities to maintain our 
+business idea in each scenario? Do we have the leadership capacity to 
+manage the challenges evident in each scenario?
+WIND TUNNELING FOR TECHNOLOGY CORPORATION
+A wind-tunneling workshop was done with Technology Corporation, and 
+various organization elements were explored in each scenario. The results 
+F I G U R E  8.4  Using Scenarios to Examine Organizational Elements (based on 
+van der Merwe)
+Scenarios
+A
+B
+C
+D
+Organizational Elements
+The Business 
+Idea
+Strategy
+Structure
+Culture
+Capabilities
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+183
+revealed a need for several critical internal changes so that the organiza-
+tion could be better positioned to handle a variety of potential futures. The 
+workshop results are summarized in Figure 8.5.
+RESILIENCE AND ROBUSTNESS
+Additional or substitute workshops can be designed around any one, all, 
+or other organizational elements. The workshops need only to inform the 
+initial purpose of the project. Beyond that, the scenarios should be used to 
+explore. The more creatively they are used, the further the thinking inside 
+the organization can potentially be shifted. 
+Scenarios
+Concorde
+Airbus
+Horse and 
+Buggy
+Titanic
+Organization Elements
+Theory  
+of the 
+business/
+business idea
+Requires 
+changes
+Requires  
+changes
+Requires  
+changes
+OK (this is  
+what happens  
+if we continue  
+on as we are)
+Strategy
+(No clearly 
+articulated 
+strategy or 
+speciﬁc  
+goals)
+(No clearly 
+articulated 
+strategy or  
+speciﬁc  
+goals)
+(No clearly 
+articulated 
+strategy or  
+speciﬁc  
+goals)
+(No clearly 
+articulated 
+strategy or  
+speciﬁc  
+goals)
+Structure
+No impli- 
+cations for 
+structure
+No impli- 
+cations for 
+structure
+No impli- 
+cations for 
+structure
+No 
+implications 
+for structure
+Culture
+No impli- 
+cations for 
+culture
+Requires a 
+signiﬁcant 
+shift toward 
+team/col- 
+laboration
+Requires a 
+signiﬁcant 
+shift toward 
+team/col- 
+laboration
+No 
+implications 
+for culture
+Capabilities
+Requires  
+some 
+growth—
+hiring of 
+designers 
+and 
+scientists
+Requires 
+some 
+growth—
+hiring of 
+designers 
+and 
+scientists
+Reduction  
+of workforce 
+(can’t support 
+it)
+F I G U R E  8.5 Wind-Tunneling Summary for Technology Corporation
+
+
+184 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+The collective use of workshops designed in the scenario implementa-
+tion phase is generally thought to build organizational resilience and ro-
+bustness. For example, the scenario immersion activity described in this 
+chapter asked participants to identify strategies that work in all scenarios. 
+The purpose of this is to build a strategy that can handle the stresses of all 
+of the scenarios—a robust strategy. Scenario planning is not a magic bullet 
+and is not intended to gather up all of the potential futures. Rather, the pur-
+pose is to pose a variety of alternatives to decision makers such that they will 
+be more prepared for anything that might come to pass. Resilient organiza-
+tions are those that ﬁnd ways to survive in rapidly changing environmental 
+conditions. The activities suggested in this chapter are all aimed at develop-
+ing the ability to respond quickly to major shifts in the environment.
+Resilience can be deﬁned as “the ability to recover readily from illness, 
+depression, adversity, or the like” (Merriam-Webster’s Dictionary and The-
+saurus, 2006, p. 677). Some of the purposes of scenario planning are to 
+learn about the possible futures, prepare for them, and avoid catastrophe, 
+but equally important is the ability to recover quickly from challenging situ-
+ations. Thus, for many organization leaders, simply thinking through the 
+options can decrease the response time to challenging events. A reduced 
+response time can give some companies an edge over their competition.
+THE STRATEGIC CONVERSATION
+The other general outcome of the scenario implementation phase is to be-
+gin or sustain an ongoing conversation about strategy and alternatives—the 
+strategic conversation. If the organization is not currently using any struc-
+tured approach to strategy, this will be revolutionary. The simple idea is 
+that strategy must be more than an annual retreat-style event. Strategy must 
+become a part of the daily conversation that takes place within the organiza-
+tion. Scenarios are tools for having this conversation, but it is the informal 
+parts of the conversation—in the hallways, when colleagues just “stop by” 
+each other’s ofﬁces, or conversations that happen over lunch—that use the 
+scenario planning process as a foundation from which to leap forward to 
+other insight and creativity.
+The crux of the institutional aspects of the processual paradigm is 
+conversation. The learning loop model shows the interwovenness of 
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+185
+thinking and action. If action is based on planning on the basis of a 
+mental model, then institutional action must be based on a shared men-
+tal model. Only through a process of conversation can elements of ob-
+servation and thought be structured and embedded in the accepted and 
+shared organizational theories-in-use. (van der Heijden, 1997, p. 41)
+An effective strategic conversation requires (1) a common language, (2) 
+alignment of ideas, (3) willingness to engage in rational argumentation, and 
+(4) the evolution of ideas inside the organization (van der Heijden 1997).
+COMMON LANGUAGE
+The requirement for common language is logical and not complex. Stated 
+simply, organization members participating in any process need a common 
+understanding of the process to be used and some way to deﬁne and sort 
+through the jargon that has invaded today’s business world.
+ALIGNMENT OF IDEAS
+Strategy literature increasingly includes reference to the notion of alignment 
+(Manning, 2002; Mintzberg, Ahlstrand, & Lampel, 1999). While most 
+of the strategy literature refers to alignment among organization, process, 
+and individual goals, the strategic conversation aims to produce alignment 
+among ideas. The strategic conversation stresses the importance of revealing 
+and analyzing mental models in scenario planning and in this context, the 
+notion of idea alignment can be considered as an output of building a col-
+lective mental model (Wack, 1985b). Sharing assumptions, values, and the 
+basic scaffolding of a uniﬁed purpose are critical to establishing this kind of 
+alignment (Manning, 2002).
+WILLINGNESS TO ENGAGE IN RATIONAL ARGUMENTATION
+The scenario planning process is one of dialogue, challenge, and willing-
+ness to critique ideas. Thus, participants must be comfortable engaging in 
+conversation and must be open to having their ideas challenged by other 
+participants. By deﬁnition, learning happens when people begin to see 
+things in a new way. Without this critical piece, the strategic conversation 
+becomes lip service, and none of its implications are taken seriously as 
+nothing is learned.
+
+
+186 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+EVOLUTION OF IDEAS INSIDE THE ORGANIZATION
+This ﬁnal requirement can be thought of as the result of the previous three. 
+Evolution of ideas in the organization is the goal of the strategic conver-
+sation. The stage for the evolution of ideas within an organization is set 
+through a common language, working toward aligning ideas, and through 
+a willingness to critique and be critiqued by the majority of people in an or-
+ganization. Often, scenarios are just a starting point for ideas to be sparked, 
+which leads to revision of the scenarios and further debate and dialogue 
+until assumptions are shattered.
+DIALOGUE
+Although not one of van der Heijden’s initial components of the strategic 
+conversation, the notion of dialogue as developed by Bohm (1989, 2002, 
+2004) is an additional critical component that cannot be ignored in consid-
+ering the strategic conversation. Given the positioning of communication 
+in this article and in the larger context of scenario planning, it is useful to 
+consider the nature of communication.
+The requirements of strategic conversation are intended to clarify the 
+essence of strategic conversation itself. All of these elements are integrated in 
+the scenario planning system. Thus, it is a means by which to have strategic 
+conversations. The distinction is that the scenario planning system features 
+the formal part of the conversation. Decision makers would be wise to ﬁnd 
+ways to support the informal part of the conversation as well.
+CONCLUSION
+To reiterate, there is a lot of freedom in ﬁnding the most useful ways to im-
+plement and apply scenarios. The goal of this chapter has been to provide a 
+framework for using scenarios. Consultants should feel free to be creative in 
+designing a set of workshops for scenario implementation. However, keep-
+ing in line with the project proposal is critical, and therefore, returning to 
+the initial purpose, question, or issue is required for each project. In addi-
+tion, the business model should be tested in each scenario. These two work-
+shops are a minimum, in my view, and they will provoke strategic thinking 
+in virtually any circumstances. 
+
+
+  
+P H A S E 4—S C E N A R I O  I M P L E M E N TA T I O N  
+187
+This chapter has presented and described additional workshops that 
+focus on analyzing current strategies, developing signals, and facilitating 
+experiential exercises. These are all useful approaches to applying scenarios 
+and should also be considered. These workshops demonstrate the use of 
+wind-tunneling various organizational elements to ensure the development 
+of resilient and robust strategies.
+
+
+This page intentionally left blank 
+
+
+ 189
+Phase 5— 
+Project Assessment: 
+Documenting Results
+Assessing scenario projects is critical. Most texts on scenario planning do 
+not include methods for documenting or assessing the outcomes of scenario 
+planning. Pick up any of the popular scenario planning books, and check 
+the index for assessment, evaluation, or results. I predict that you will not 
+ﬁnd these entries. The lack of effort invested to understand the outcomes of 
+scenario projects is a serious shortcoming. The dearth of evidence demon-
+strating that scenario planning is an effective investment makes it difﬁcult 
+to argue for the proposed beneﬁts. Most seasoned practitioners and users of 
+scenario planning know through their own experience that scenarios cre-
+ate value in numerous ways. However, scenario planning should be more 
+than a strategic management tool falling in and out of favor depending on 
+the stability of the global business environment. To establish the true con-
+tribution of scenario planning, projects must be assessed to build a suite of 
+evidence supporting scenario planning and its utility. Minimally, “if the 
+scenario process does not bring out strategic options previously unconsid-
+ered by managers, then it has been sterile” (Wack, 1985c, p. 10). 
+The efforts described in this project assessment chapter are aimed at 
+understanding and documenting the strategic options that can be attrib-
+uted to scenario projects (Figure 9.1). Sadly, in my own experiences (includ-
+ing research projects with senior executives and several prominent scenario 
+planning professionals), I have heard numerous times that there is simply 
+no way to measure the success of scenario projects. One premise of this 
+9

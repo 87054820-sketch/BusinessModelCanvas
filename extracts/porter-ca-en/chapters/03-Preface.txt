@@ -1,0 +1,122 @@
+# Preface
+
+competitive advantage? How can a ﬁrm defend its competitive position?
+These are some of the questions that preoccupy this book.
+Competitive advantage grows fundamentally out of the value a ﬁrm is
+able to create for its buyers. It may take the form of prices lower than
+competitors’ for equivalent beneﬁts or the provision of unique beneﬁts that
+more than offset a premium price. This book uses a tool I call the value
+chain to disaggregate buyers, suppliers, and a ﬁrm into the discrete but
+interrelated activities from which value stems. The value chain will be a
+recurring theme throughout the book, and with it the speciﬁc sources of
+competitive advantage and how they relate to buyer value.
+Competitive advantage is hardly a new subject. In one way or another,
+many books about business deal directly or indirectly with it. The control of
+cost has long been of concern, as has differentiation and segmentation. This
+book cuts across many disciplines, because marketing, production, control,
+ﬁnance, and many other activities in a ﬁrm have a role in competitive
+advantage. Similarly, a long tradition of research in business policy and in
+industrial economics bears on this subject. However, competitive advantage
+cannot be truly understood without combining all these disciplines into a
+holistic view of the entire ﬁrm. By examining all the sources of competitive
+advantage in a broad and integrated way, I hope to provide a new
+perspective that draws from, rather than substitutes for, previous research. It
+is not possible to acknowledge all the contributions in the various
+disciplines that have inﬂuenced in some way the ideas presented here. This
+book, however, would not have been possible without them.
+This book is written for practitioners who are responsible for a ﬁrm’s
+strategy and must decide how to gain competitive advantage, as well as
+those who seek to understand ﬁrms and their performance better. Potential
+sources of competitive advantage are everywhere in a ﬁrm. Every
+department, facility, branch ofﬁce, and other organizational unit has a role
+that must be deﬁned and understood. All employees, regardless of their
+distance from the strategy formulation process, must recognize their role in
+helping a ﬁrm achieve and sustain competitive advantage. Scholars working
+on the subject of competition outside the strategy ﬁeld also need to be able
+to relate their research to some overall concept of competitive advantage. I
+hope that all these audiences will ﬁnd this book valuable.
+
+
+I have had a great deal of help in writing this book. The Harvard
+Business School has provided a uniquely fertile environment in which to
+explore this topic. I have drawn heavily on the multidisciplinary tradition at
+the School as well as the close connection between research and practice
+that exists there. Dean John McArthur has not only been a friend and source
+of encouragement to me for many years, but also extremely generous with
+resources and in providing the opportunity to integrate my research closely
+with my teaching responsibilities. Raymond Corey, Director of the Division
+of Research, has also been a staunch and valued ally. My heritage in the
+Business Policy group at Harvard has shaped my view of the subject, and I
+am particularly grateful to C. Roland Christensen for his support and to
+both he and Kenneth Andrews for sharing their wisdom with me. I have also
+drawn heavily on my work in industrial economics, and the constant
+intellectual stimulation of Richard Caves.
+This book would not have been possible without the creative
+contributions of a number of colleagues and friends who have worked
+directly with me during the last several years. John R. Wells, Assistant
+Professor at Harvard, has not only taught with me but contributed greatly to
+the ideas in Chapters 3 and 9. John’s own research in competitive strategy
+promises to make an important contribution to the ﬁeld. Pankaj Ghemawat,
+Assistant Professor at Harvard, has also taught my strategy formulation
+course with me as well as provided many useful comments. He is also doing
+important research in the ﬁeld. Mark B. Fuller, formerly Assistant Professor
+at Harvard and now at Monitor Company, has taught and worked with me
+for many years. His ideas have had a major impact on Chapter 11 and have
+inﬂuenced my thinking throughout the book. Catherine Hayden, also at
+Monitor, has been a constant source of encouragement and comments. Her
+ideas were of particular beneﬁt to me in Chapter 4.
+Joseph B. Fuller has worked with me in research and course
+development as well as in practicing in the strategy ﬁeld. He has been a
+truly invaluable source of thoughtful comments and conceptual insights
+throughout the writing of manuscript. Richard Rawlinson, Associates
+Fellow at Harvard, has worked with me in my research as well as
+commented perceptively on the entire book. Others who have given
+generously of their time in commenting on the book and contributing ideas
+include Mark Albion, Robert Eccles, Douglas Anderson, Elon Kohlberg,
+
+
+and Richard Meyer, all Harvard colleagues. Michael Bell, Thomas Craig,
+Mary Kearney, and Mark Thomas have most ably worked with me in
+putting these ideas into practice, and contributed greatly to my thinking in
+the process. Jane Kenney Austin, Eric Evans, and Paul Rosetti were
+invaluable in commenting or in researching important topic areas. Finally, I
+have beneﬁted from comments from colleagues at other schools, including
+Richard Schmalensee and John Stengrevics.
+I could not have stood up under the demands of preparing this book
+without my assistant Kathleen Svensson. She has not only organized my
+activities but also supervised the preparation of the manuscript. I am also
+grateful to Robert Wallace, my editor, as well as to others at The Free Press,
+for their patience and support in dealing with a sometimes recalcitrant
+author. I must also thank my many able Harvard MBA and doctoral students
+who have both stimulated my thinking and been a source of joy in using
+these ideas. I also want to thank Deborah Zylberberg for her constant
+encouragement. Finally, I owe a great deal to a number of thoughtful
+practitioners who have shared their concerns and problems with me.
+
+
+1
+Competitive Strategy: The Core Concepts
+Competition is at the core of the success or failure of ﬁrms. Competition
+determines the appropriateness of a ﬁrm’s activities that can contribute to its
+performance, such as innovations, a cohesive culture, or good
+implementation. Competitive strategy is the search for a favorable
+competitive position in an industry, the fundamental arena in which
+competition occurs. Competitive strategy aims to establish a proﬁtable and
+sustainable position against the forces that determine industry competition.
+Two central questions underlie the choice of competitive strategy. The
+ﬁrst is the attractiveness of industries for long-term proﬁtability and the
+factors that determine it. Not all industries offer equal opportunities for
+sustained proﬁtability, and the inherent proﬁtability of its industry is one
+essential ingredient in determining the proﬁtability of a ﬁrm. The second
+central question in competitive strategy is the determinants of relative
+competitive position within an industry. In most industries, some ﬁrms are
+much more proﬁtable than others, regardless of what the average
+proﬁtability of the industry may be.
+Neither question is sufﬁcient by itself to guide the choice of competitive
+strategy. A ﬁrm in a very attractive industry may still not earn attractive
+proﬁts if it has chosen a poor competitive position. Conversely, a ﬁrm in an
+excellent competitive position may be in such a poor industry that it is not
+very proﬁtable, and further efforts to enhance its position will be of little
+beneﬁt.1 Both questions are dynamic; industry attractiveness and
+competitive position change. Industries become more or less attractive over
+time, and competitive position reﬂects an unending battle among

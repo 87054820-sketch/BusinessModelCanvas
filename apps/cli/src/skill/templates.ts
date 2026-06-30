@@ -129,8 +129,9 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 3. **For each canvas the user works on**, consult \`canvases/<id>.<lang>.md\` for filling rules, fill order, examples, and anti-patterns.
 4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library and pattern library are cross-linked both ways.
 5. **For "how do I test this assumption" / "what experiment should I run"** — go to \`workflows/experiments.md\` and the \`experiments/\` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
-6. **For install/update/release or skill drift questions** — read \`workflows/self-iteration.md\` and keep the installed skill, project-local skill, zip, and DMG in sync.
-7. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
+6. **For book/resources reading, chapter-quality, or source-material questions** — go to \`workflows/resource-reading.md\`. Resources are now chapter-aware: use chapter summaries first, then fetch the full chapter only when needed.
+7. **For install/update/release or skill drift questions** — read \`workflows/self-iteration.md\` and keep the installed skill, project-local skill, zip, and DMG in sync.
+8. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
 
 ## Index
 
@@ -146,6 +147,7 @@ ${canvasList}${patternsBlock}${experimentsBlock}${strategyFrameworksBlock}
 - \`workflows/snapshot.md\` — when to milestone, how to restore
 - \`workflows/translate.md\` — en ⇄ zh round trip
 - \`workflows/case-library.md\` — read curated company cases for inspiration, or fork one to start fast
+- \`workflows/resource-reading.md\` — read curated books/resources with chapter-aware depth, and use the checklist → writing → audit quality gate when authoring resource chapters
 - \`workflows/self-iteration.md\` — keep installed skills, project-local skills, skill zips, and app releases in sync after updates
 - \`workflows/library-evolution.md\` — when adding a new canvas, case, pattern, experiment, strategy framework, or resource: decide the content layer, integrate it into cases/stories, validate, then regenerate the skill${patternsWorkflow}${experimentsWorkflow}${strategyFrameworksWorkflow}
 
@@ -154,7 +156,8 @@ ${canvasList}${patternsBlock}${experimentsBlock}${strategyFrameworksBlock}
 - \`reference/color-legend.md\` — sticky palette + how to interpret colours
 - \`reference/identity.md\` — \`X-Display-Name\` / \`--as\` / audit trail
 - \`reference/ai-context-shape.md\` — shape of the \`/ai-context\` JSON
-- \`reference/case-library.md\` — case kinds, slug rules, read-only rules${patternsReference}${experimentsReference}${strategyFrameworksReference}
+- \`reference/case-library.md\` — case kinds, slug rules, read-only rules
+- \`reference/resource-quality.md\` — 12 source-verified resources, chapter quality gates, and audit expectations${patternsReference}${experimentsReference}${strategyFrameworksReference}
 
 ## Key invariants — never violate
 
@@ -288,6 +291,66 @@ function renderRelated(bundle: CanvasBundle, lang: Lang): string {
 // ─── Workflow markdowns (curated, static) ────────────────────────────────────
 
 export const WORKFLOW_FILES: Record<string, string> = {
+  'workflows/resource-reading.md': `# Resource reading — use source books as chapter-aware strategy material
+
+Use this workflow whenever the user asks about a **book, report, article, paper, or source material** in the Resources tab, asks "what should I read", asks to explain a resource chapter, or asks to improve/add resource chapters.
+
+## Reading workflow
+
+1. Start from the resource metadata: title, recommendation, related canvases/frameworks/cases, and chapter index.
+2. Prefer the chapter index first. Use chapter titles and summaries to identify the minimum relevant chapter instead of loading an entire book note.
+3. Fetch full chapter content only when needed for a concrete question, teaching explanation, or source-grounded answer.
+4. Connect the chapter back to PinGarden tools: canvases, patterns, strategy frameworks, experiments, and cases. Resources are the **source-material layer**, not the project layer.
+5. When answering, distinguish:
+   - **What the source says** (chapter-level concept / argument / case)
+   - **What it means for the user's project** (canvas, strategic choice, assumption, or experiment)
+   - **What to do next** (open a related canvas, read another chapter, fork a case, or run an experiment)
+
+## Chapter-aware Resources UI
+
+The Resources tab can expose book-like entries with chapter counts. The detail modal supports:
+
+- a resource overview and recommendation
+- a Chapters tab with left chapter navigation
+- long-form bilingual chapter markdown
+- chapter-level related cases/canvases/patterns
+- references and source citations
+
+Do not assume every resource has chapters. Articles, reports, papers, and web links may only have a reading note and references.
+
+## Authoring / quality workflow for resource chapters
+
+When creating, expanding, rewriting, or auditing files under \`packages/case-library/resources/<resource>/chapters/\`, follow the hard quality gate below. Do **not** write a thin summary copied from \`chapters/index.json\`.
+
+### Three-role pipeline
+
+1. **Checklist role** — read source extracts only and write \`checklists/<chapter>.json\`.
+2. **Writing role** — write \`chapters/<chapter>.en.md\` and \`chapters/<chapter>.zh.md\` from the checklist.
+3. **Audit role** — compare checklist vs EN/ZH prose and write \`audit-report.md\` with item-level PASS/FAIL.
+
+Keep these roles conceptually separate. A chapter is complete only when the audit is all PASS.
+
+### Checklist contents
+
+Each checklist must include named concepts/frameworks, key arguments with evidence, cases/examples, logic chains, terminology, nuance, and valid cross-references. Cross-reference slugs must exist in the library manifest or canvas bundles.
+
+### Validation commands
+
+Run these from the repo root after authoring resource chapters:
+
+\`\`\`bash
+python3 .claude/skills/book-chapter-quality/scripts/check-orphans.py <resource-slug>
+python3 .claude/skills/book-chapter-quality/scripts/check-thickness.py <resource-slug>
+python3 .claude/skills/book-chapter-quality/scripts/check-bilingual.py <resource-slug>
+python3 .claude/skills/book-chapter-quality/scripts/audit-coverage.py <resource-slug> <chapter-slug>
+\`\`\`
+
+Also run a cross-reference check when adding or changing related slugs. Do not mark work complete if any script reports missing files, stubs, bilingual gaps, invalid slugs, or audit failures.
+
+## Current quality baseline
+
+The bundled resource library includes 12 source-verified business books with chapter-level content, checklists, and audit reports: BMC, VPC, The Invincible Company, The Innovator's Dilemma, Testing Business Ideas, Scenario Planning in Organizations, Blue Ocean Strategy, Blue Ocean Shift, Competitive Strategy, Competitive Advantage, The Art of the Long View, and Platform Revolution.
+`,
   'workflows/self-iteration.md': `# Self-iteration — keep the installed skill current
 
 Use this workflow whenever the user asks to install, update, package, release, or verify the PinGarden skill, or when the app has just been upgraded.
@@ -1128,6 +1191,17 @@ pingarden snapshot restore <canvasId> <sid> --mode replace
 pingarden snapshot restore <canvasId> <sid> --mode fork
 \`\`\`
 
+## Resource library (source books / articles / reports)
+
+\`\`\`bash
+pingarden resource list --json                          # resources + type + chapter count
+pingarden resource get <slug> --json                    # metadata + reading note + chapter index
+pingarden resource chapters <slug> --json               # chapter table of contents
+pingarden resource chapter <slug> <chapterSlug> --json  # full bilingual chapter prose
+\`\`\`
+
+Use resources as reference reading, not as cases. For deeper guidance, start from \`resource list\`, inspect \`resource chapters\`, then read the minimum relevant chapter.
+
 ## Case library (read-only curated cases)
 
 \`\`\`bash
@@ -1287,6 +1361,56 @@ Every published case story must stand on its own for a newcomer. Required sectio
 For Blue Ocean Strategy cases, the story must explain the red-ocean baseline, noncustomers, ERRC logic, value-curve shape, and BMC consequences. Keep the Strategy Canvas visually clean: use factors, curve classes, and score points only; write rationale in the Story instead of long sticky notes on the chart.
 
 \`pingarden case validate\` runs as a packaging gate (\`scripts/package-mac.sh\`); a broken case fails the DMG build before electron-builder kicks in.
+`,
+
+  'reference/resource-quality.md': `# Resource chapter quality — quick reference
+
+Resources are the **source-material layer** of the Strategy Library. They are recommended books, reports, articles, papers, and web sources that explain where the cases, canvases, patterns, experiments, and frameworks come from.
+
+## Current source-verified resource baseline
+
+The skill pack ships chapter-aware reading support for these 12 resources:
+
+- \`business-model-generation\`
+- \`value-proposition-design\`
+- \`the-invincible-company\`
+- \`christensen-innovators-dilemma\`
+- \`testing-business-ideas\`
+- \`scenario-planning-in-organizations\`
+- \`blue-ocean-strategy\`
+- \`blue-ocean-shift\`
+- \`porter-competitive-strategy\`
+- \`porter-competitive-advantage\`
+- \`the-art-of-the-long-view\`
+- \`platform-revolution\`
+
+Each book resource should have:
+
+- \`chapters/index.json\` — chapter truth source
+- \`chapters/<slug>.en.md\` and \`chapters/<slug>.zh.md\` — bilingual chapter prose
+- \`checklists/<slug>.json\` — coverage checklist
+- \`audit-report.md\` — item-level EN/ZH coverage report
+
+## Definition of done
+
+A resource chapter is done only when:
+
+1. Its checklist covers concepts, arguments, cases, logic chains, terminology, nuance, and cross-references.
+2. EN and ZH chapter markdown cover the same checklist.
+3. \`audit-report.md\` marks every item PASS for both EN and ZH.
+4. Orphan, thickness, bilingual, audit, and cross-reference checks are clean.
+
+## Anti-patterns
+
+- Copying \`chapters/index.json\` summaries into chapter prose.
+- Padding word count without adding concepts, evidence, cases, or logic chains.
+- Using related slugs that do not resolve in \`manifest.json\` or \`packages/canvases/\`.
+- Letting EN and ZH cover different ideas.
+- Treating \`audit-report.md\` as decorative rather than a hard gate.
+
+## UI implications
+
+Resources with chapters appear as book-like entries with chapter counts. The detail modal can show a Chapters tab with chapter navigation and long-form markdown. When advising users, use chapter summaries to route them to the right chapter before loading full chapter prose.
 `,
 
   'reference/patterns.md': `# Business-model patterns — quick reference

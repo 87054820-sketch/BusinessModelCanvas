@@ -40,6 +40,17 @@ pingarden snapshot restore <canvasId> <sid> --mode replace
 pingarden snapshot restore <canvasId> <sid> --mode fork
 ```
 
+## Resource library (source books / articles / reports)
+
+```bash
+pingarden resource list --json                          # resources + type + chapter count
+pingarden resource get <slug> --json                    # metadata + reading note + chapter index
+pingarden resource chapters <slug> --json               # chapter table of contents
+pingarden resource chapter <slug> <chapterSlug> --json  # full bilingual chapter prose
+```
+
+Use resources as reference reading, not as cases. For deeper guidance, start from `resource list`, inspect `resource chapters`, then read the minimum relevant chapter.
+
 ## Case library (read-only curated cases)
 
 ```bash

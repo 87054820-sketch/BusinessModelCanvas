@@ -1,0 +1,29 @@
+{
+  "chapter": "ch03-performance",
+  "sourceFiles": { "en": "07-6-Phase-2—Scenario-Exploration.txt, 08-7-Phase-3—Scenario-Development.txt, 15-9-Phase-5—Project-Assessment-Documenting-Results.txt" },
+  "concepts": [
+    { "name": "Performance-Based Scenario System", "definition": "A multi-phase system that links scenario planning to performance diagnosis, scenario exploration/development, implementation, assessment, and ongoing monitoring." },
+    { "name": "Predetermined Elements and Critical Uncertainties", "definition": "Predetermined elements are forces treated as relatively certain; critical uncertainties are high-impact, uncertain forces that structure the scenario matrix." },
+    { "name": "Results Assessment Domains", "definition": "Scenario project assessment should include satisfaction, learning, and performance rather than stopping with participant reactions." }
+  ],
+  "arguments": [
+    { "claim": "Scenario planning should be assessed as a performance intervention.", "evidence": "Chermack adapts results assessment to scenario projects, arguing that responsible performance improvement requires measuring satisfaction, learning, and system/financial outcomes where possible." },
+    { "claim": "Scenario development must move from forces to logics to implications.", "evidence": "The system ranks driving forces, separates predetermined elements from critical uncertainties, develops logics, writes plots, and constructs a research agenda." }
+  ],
+  "cases": [
+    { "name": "Performance diagnosis matrix", "context": "Project preparation and assessment use performance categories such as capacity, outcomes, and stakeholder needs.", "illustrates": "Scenario planning becomes rigorous when tied to specific performance questions.", "lesson": "Define performance questions before writing stories." }
+  ],
+  "logicChains": [
+    { "description": "Project preparation → performance diagnosis → scenario exploration → scenario development → implementation/wind tunneling → assessment → monitoring.", "sourceHint": "Performance-Based Scenario System phases." }
+  ],
+  "terminology": [
+    { "term": "Wind tunneling", "definition": "Testing a strategy, decision, or option against each scenario to see where it is robust or fragile." },
+    { "term": "Scenario matrix", "definition": "A two-by-two structure built from two critical uncertainties." },
+    { "term": "Learning results", "definition": "Changes in participant knowledge, mental models, or strategic understanding." }
+  ],
+  "nuance": [
+    "Participant satisfaction matters but should not become the only measure.",
+    "Scenario outcomes are often indirect and delayed, so assessment must be realistic but not ignored."
+  ],
+  "crossReferences": { "relatedStrategyFrameworkSlugs": ["performance-based-scenario-planning"], "relatedCanvasDefIds": ["scenario-matrix"], "relatedChapters": ["ch02-methods", "ch04-integration"] }
+}

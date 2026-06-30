@@ -1,0 +1,235 @@
+# Preface
+
+xvi 
+P REFACE
+to be true about what the future might hold. A more open view of what is 
+possible allows decision makers to be more prepared and adjust with mini-
+mal delay and disruption. An expanded view of the terrain is developed by 
+changing perceptions among key people in organizations. A primary out-
+come of scenario planning is to shift perceptions. Scenario planning is a tool 
+for helping decision makers reperceive the potential future in alternative 
+ways. Having these alternative ways of seeing helps decision makers avoid 
+surprises and prepare for a variety of plausible futures. 
+Over the last thirty years, scenario planning has been used in a variety 
+of contexts and organizations (Ogilvy, 1995, 2002; Ogilvy & Schwartz, 
+2000). For example, scenarios have been employed with great success in 
+anticipating the oil shocks in the 1970s, potential outcomes of Hurricane 
+Katrina, the events of September 11, 2001, and developing responses to 
+bridge collapses and other emergencies. Certainly, each of these events had 
+numerous management issues, and some were more effectively directed 
+than others. In each case, scenarios were developed that told stories quite 
+similar to how reality unfolded (D’arcy, O’Hanlong, Orszag, Shapiro, & 
+Steinberg, 2006; Hoffman, 2002; Lynch, 2005). Although there are many 
+anecdotes of scenario use, few have rigorously studied scenario planning, 
+and the process has been modiﬁed and changed as needed. As a result, sce-
+nario planning means different things to different people, and the reported 
+approaches are incomplete. 
+The purpose of this book is to provide a complete approach to sce-
+nario planning that includes key pieces missing from existing literature. 
+These missing pieces are the theoretical foundations of scenario planning, 
+a detailed guide to using scenarios once they have been developed, and a 
+structure for assessing the impact of scenario projects. The theoretical foun-
+dations of scenario planning are important for understanding how scenario 
+planning works. Such an understanding is critical for anyone serious about 
+using scenario planning to steer an organization into the future. Precisely 
+how to use scenarios is not well covered in the literature, either. This book 
+provides detailed suggestions for putting scenarios into practice and using 
+them to support organizational change. Finally, not a single text on the 
+topic deals with how to assess the impact of scenario projects. This book 
+provides a clear, concise guide to assessing the beneﬁts of scenario planning 
+in organizations. These three contributions make a complete scenario plan-
+ning system that is the focus of this book.
+
+
+  
+P REFACE 
+xvii
+AUDIENCES
+This book is for thoughtful people trying to move their organizations for-
+ward—leaders, managers, decision makers, practitioners, consultants, and 
+executives. This book provides the tools for facilitating scenario planning in 
+organizations and is therefore a guide. This book is also a text for university 
+courses focused on organization and business planning. Although this sug-
+gestion may indicate two separate audiences, I argue that they are one and 
+the same. Students in business planning courses are usually also managers, 
+decision makers, practitioners, consultants, or executives. Again, these are 
+people struggling to move their organizations forward amid a great deal of 
+chaos and uncertainty. 
+STRUCTURE OF THE BOOK
+This book features three parts: (1) Foundations of Scenario Planning, (2) 
+Phases of the Performance-Based Scenario System, and (3) Leading Sce-
+nario Projects.  
+Part One is focused on the foundations of scenario planning. These 
+chapters review scenario planning, its history, development, and inﬂuen-
+tial ﬁgures. Performance-based scenario planning—the contribution of this 
+book—is described and explained. Chapter 1 describes the development 
+and evolution of scenario planning. Key deﬁnitions, outcomes, and major 
+approaches are reviewed. Chapter 2 is a synthesis of the theoretical foun-
+dations of scenario planning, and is a comprehensive review of the major 
+content disciplines that inform the practice of scenario planning. Chapter 3 
+situates scenario planning in the organization system, and Chapter 4 pres-
+ents a case study. Part One provides a sense of the context in which scenario 
+planning was developed as a strategic tool, as well as an understanding of 
+the position of scenario planning inside organizations.
+Part Two presents the phases of the scenario system. These are Chapters 
+5 through 9, covering the major phases of scenario planning: (1) project 
+preparation, (2) scenario exploration, (3) scenario development, (4) scenario 
+implementation, and (5) project assessment. These are the chapters that be-
+come a guide for using the scenario system. Detailed examples are provided, 
+and the core case study that is presented in Chapter 4 is expanded further 
+in each subsequent chapter. The examples illustrate key outcomes of each 
+phase.
+
+
+xviii 
+P REFACE
+Part Three presents tips for managing and leading scenario projects. 
+Chapter 10 describes several pitfalls in scenario planning and how they can 
+be avoided or overcome. Chapter 11 summarizes some cutting-edge neurol-
+ogy research and how it relates to cognitive activity and human perceptions 
+in the scenario process. Finally, Chapter 12 offers suggestions for getting 
+started on your own scenario projects, followed by a summary of the book. 
+MY OWN FASCINATION WITH  
+SCENARIO PLANNING
+What continues to fascinate me about scenario planning is its potential ap-
+plication to almost any context, problem, issue, or situation, and its evolv-
+ing nature. There are many nuances throughout the facilitation of scenario 
+projects. As a result, there are always opportunities for improving scenario 
+planning and ﬁnding ways to increase its effectiveness. For timely examples, 
+Noah Raford is studying how to maintain dialogue over electronic media 
+such as Twitter, Facebook, and other Web 2.0 technologies in scenario plan-
+ning (see http://news.noahraford.com/?p=129). Others are working on 
+how scenario planning is used in nonproﬁt organizations, communities, 
+and nations. As the world’s problems evolve in their complexity, there is 
+only increasing utility for scenario planning.
+Scenario planning is a decision-making tool that can be used to explore 
+and understand a variety of issues in a variety of organizations and issues. 
+For example, scenarios can be used to consider the future of global climate 
+change, global water supply, natural resources, as well as business and com-
+munity decisions (such as in the Mont Fleur scenarios that explored the end 
+of apartheid in South Africa). These are all issues that involve complex dy-
+namics including diverse sets of stakeholders and varying knowledge bases, 
+and they are likely to require interdisciplinary collaboration to address. Any 
+situation in which a group of people is trying to work out how to create 
+aligned movement toward a common goal can consider scenario planning a 
+potentially useful tool.
+Human perceptions in scenario planning are another fascinating topic 
+for me. As I continue to witness strategic insights among participants in 
+scenario projects, I wonder why some participants have them and some 
+don’t. What are the characteristics of individuals that lend them to thinking 
+deeply about problems? What are the characteristics of scenarios that help 
+
+
+  
+P REFACE 
+xix
+people open up their thinking? These questions pose challenges to what is 
+known about scenario planning and how to maximize its impact. Neurosci-
+ence research is getting close to helping us understand how the brain learns 
+and what happens physiologically during these strategic insights, but there 
+is still a long way to go. 
+A lot about scenario planning remains unknown. Each scenario project 
+I work on reveals more about how to do it better next time. This book in-
+troduces scenario planning and its foundations, explains how to do it, and 
+describes how to tell whether it produces beneﬁts. This is a book for people 
+who want to improve the way their organizations prepare for the future. 
+Readers are encouraged to access the latest research on scenarios from my 
+website (www.thomaschermack.com) and to e-mail me reports of their ex-
+periences. I have also recently established the Scenario Planning Institute at 
+Colorado State University, and readers who want to get more involved can 
+engage at www.scenarioplanning.colostate.edu.
+Finally, scenario planning is a lot of fun! Scenario planning is a blend 
+of creative and analytical activities. There’s nothing like arranging complex 
+variables into stories that make sense, are rigorously researched, and can 
+move an audience. Seeing the moment when new understanding comes to-
+gether for a participant is exciting and rewarding. Indeed, helping people 
+think in new and interesting ways has immediate impact that can be applied 
+in a variety of situations. Wack (1984) may have put it best when he wrote, 
+“In our times of rapid change and discontinuity, crises of perception—the 
+inability to see a novel reality emerging by being locked inside obsolete as-
+sumptions—have become the main cause of strategic failures” (p. 95). Sce-
+nario planning is a way to avoid such crises of perception by learning how to 
+see the environment differently and perhaps a little more completely. 
+ACKNOWLEDGMENTS
+Some people say that writing a book is an inherently personal endeavor. 
+Mine has been a humbling experience. This book is the result of thou-
+sands of interactions, conversations, scholarly debates, e-mails, and other 
+exchanges with a variety of people over the last ten years. So, while it has 
+been a personal experience, I could not have written this book by myself.
+Richard A. Swanson’s name should appear as the second author of this 
+book. I offered it to him, but he would not accept it. He read, critiqued, 
+
+
+xx 
+P REFACE
+edited, moved, improved, shifted, guided, and reviewed every word on these 
+pages. His contributions made the ﬁnal product much more useful than it 
+would have been without his generosity. Thanks are not enough to cover 
+my appreciation for his direction and guidance, but it is all I can do in this 
+preface. Thank you, Dick.
+Thanks to Susan A. Lynham and Louis van der Merwe for their men-
+torship and guidance. Many conversations, experiences, and stories from 
+Susan and Louis have been foundational to my thinking about scenario 
+planning. I am grateful for the guidance and advice of two such accom-
+plished professionals. Thank you, Susan and Louis.
+Thanks to Evie Chenhall, Janet Colvin, Jennifer Fullerton, Maggie 
+Glick, Lea Hanson, Chris Harper, Stacey Herr, Martin Kollasch, Kyle 
+Stone, and Joy Wagner. Their contributions appear in some of the materials 
+for the Technology Corporation case, and their comments, suggestions, and 
+reviews have improved this book.
+Thanks to Ziad Labban, Dave Peck, John Weatherburn, Paul Grim-
+mer, Steve Beck, Joanne Provo, and Monica Danielson. Writing a book 
+about scenario planning requires experience in using its tools. These indi-
+viduals all provided learning opportunities and gave me access to situations 
+in which to learn how to apply scenario techniques.
+Thanks to Kees van der Heijden, Art Kleiner, Peter Schwartz, Napier 
+Collyns, George Burt, George Wright, Paul Schoemaker, and Louis van der 
+Merwe. These individuals have inﬂuenced and inspired me, and their ef-
+forts have established the scenario planning discipline. Thank you.
+Thanks to the late Pierre Wack and Ted Newland. These two visionary 
+thinkers sought a way to think differently about the future. Their work has 
+inspired many and is certainly the foundation of my own thinking about 
+scenario planning in organizations. 
+Finally, thank you to the outstanding team at Berrett-Koehler and, in 
+particular, Steve Piersanti and Jeevan Sivasubramaniam. 
+Thomas J. Chermack
+December 2010  
+Fort Collins, Colorado
+www.thomaschermack.com
+www.scenarioplanning.colostate.edu 
+
+
+ 1
+P
+A
+R
+T
+O
+N
+E
+FOUNDATIONS OF 
+SCENARIO PLANNING
+C H A P TE RS
+ 
+1 Introduction to Performance-Based Scenario Planning
+ 
+2  Theoretical Foundations of Scenario Planning 
+ 
+3 The Performance-Based Scenario System 
+ 
+4 Scenario Case Study 
+IF WE LOOK BACK over the history of planning in organizations, we can 
+see a fundamental illusion that is beginning to come to light. The illusion 
+is that planning can function like a machine, that the steps of organiza-
+tional planning need only be carried out. The basis of that illusion is an as-
+sumption that things more or less stay the same. Today, our rhetoric would 
+indicate we have realized our erroneous assumption, but actions indicate 
+otherwise. The world is changing faster than ever, yet many planners and 
+decision makers behave in opposition to what they know is true about the 
+world—they seek the answer, as if there is only one correct answer and their 
+job is to ﬁnd it.
+A key premise of this book is that things are ever-changing. Planning 
+therefore needs to take a different approach, one that assumes tomorrow’s 
+world will be fundamentally different from today’s. Scenario planning ex-
+plores a variety of outcomes, a variety of potential answers, and uses them 
+to create awareness and readiness. The hardest part of scenario planning is 

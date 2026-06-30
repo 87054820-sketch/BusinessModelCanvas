@@ -1,16 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type {
-  BusinessModelPattern,
   CanvasDefaultColorLegendEntry,
   CanvasMeta,
   CaseLibraryDetail,
-  Experiment,
   Lang,
   LibraryResource,
-  LibraryResourceDetail,
-  StrategyFramework,
 } from '@pingarden/shared';
 import { effectiveObjectTypes } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
@@ -26,6 +22,7 @@ import { useReadOnlyYDoc } from '../collab/useReadOnlyYDoc';
 import { hasPinClasses } from '../collab/pinClasses';
 import { hasColorLegend } from '../collab/colorLegend';
 import { preserveNavigationState } from '../navigation/useSmartBack';
+import { ResourceDetailModal } from './ResourceDetailModal';
 
 const UUID_RE = /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/gi;
 const KEBAB_RE = /`?\b[a-z][a-z0-9]+(?:-[a-z0-9]+)+\b`?/g;
@@ -330,12 +327,27 @@ export function CopilotCaseReferenceBoard({
 
 export function CopilotResourceReferenceBoard({
   refs,
+  displayName,
+  onNavigateToCanvas,
 }: {
   refs: CopilotResourceReference[];
+  displayName: string;
+  onNavigateToCanvas?: () => void;
 }) {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
   const lang = (i18n.language === 'zh' ? 'zh' : 'en') as Lang;
   const [preview, setPreview] = useState<LibraryResource | null>(null);
+
+  async function handleResourceCaseClick(slug: string) {
+    if (!displayName) return;
+    const detail = await libraryApi.get(slug, displayName).catch(() => null);
+    if (!detail) return;
+    setPreview(null);
+    navigate(`/p/${detail.project.id}`, { state: preserveNavigationState(location) });
+    onNavigateToCanvas?.();
+  }
 
   if (refs.length === 0) return null;
 
@@ -384,176 +396,16 @@ export function CopilotResourceReferenceBoard({
           );
         })}
       </div>
-      {preview && <ResourceReferencePopover resource={preview} lang={lang} onClose={() => setPreview(null)} />}
+      {preview && (
+        <ResourceDetailModal
+          resource={preview}
+          lang={lang}
+          onClose={() => setPreview(null)}
+          onCaseClick={handleResourceCaseClick}
+          overlayClassName="z-[130]"
+        />
+      )}
     </div>
-  );
-}
-
-function ResourceReferencePopover({
-  resource,
-  lang,
-  onClose,
-}: {
-  resource: LibraryResource;
-  lang: Lang;
-  onClose: () => void;
-}) {
-  const { t } = useTranslation();
-  const location = useLocation();
-  const [detail, setDetail] = useState<LibraryResourceDetail | null>(null);
-  const [defs, setDefs] = useState<CanvasDefSummary[]>([]);
-  const [patterns, setPatterns] = useState<BusinessModelPattern[]>([]);
-  const [experiments, setExperiments] = useState<Experiment[]>([]);
-  const [frameworks, setFrameworks] = useState<StrategyFramework[]>([]);
-
-  useEffect(() => {
-    let cancelled = false;
-    setDetail(null);
-    void Promise.all([
-      libraryApi.getResource(resource.slug).catch(() => null),
-      api.listDefs().catch(() => [] as CanvasDefSummary[]),
-      libraryApi.listPatterns().catch(() => [] as BusinessModelPattern[]),
-      libraryApi.listExperiments().catch(() => [] as Experiment[]),
-      libraryApi.listStrategyFrameworks().catch(() => [] as StrategyFramework[]),
-    ]).then(([nextDetail, nextDefs, nextPatterns, nextExperiments, nextFrameworks]) => {
-      if (cancelled) return;
-      setDetail(nextDetail);
-      setDefs(nextDefs);
-      setPatterns(nextPatterns);
-      setExperiments(nextExperiments);
-      setFrameworks(nextFrameworks);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [resource.slug]);
-
-  useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') onClose();
-    }
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
-
-  const title = localize(resource.title, lang);
-  const summary = localize(resource.summary, lang);
-  const recommendation = localize(resource.recommendation, lang);
-  const description = detail?.description[lang] || detail?.description.en || '';
-  const nextItems = buildResourceNextItems(resource, detail, defs, patterns, experiments, frameworks, lang, t);
-
-  return (
-    <div
-      role="dialog"
-      aria-modal="true"
-      onClick={onClose}
-      className="fixed inset-0 z-[130] flex items-center justify-center bg-black/60 p-5 backdrop-blur-sm"
-    >
-      <div
-        onClick={(e) => e.stopPropagation()}
-        className="flex max-h-[86vh] w-full max-w-4xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl"
-      >
-        <div className="border-b border-amber-100 bg-gradient-to-r from-amber-50 via-white to-orange-50 px-5 py-4">
-          <div className="flex items-start justify-between gap-3">
-            <div className="min-w-0">
-              <div className="flex items-center gap-2">
-                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
-                  {t(`library.resourceTypes.${resource.type}`)}
-                </span>
-                <span className="font-mono text-[10px] text-gray-400">{resource.slug}</span>
-              </div>
-              <h3 className="mt-2 truncate text-lg font-bold text-gray-950">{title}</h3>
-              <p className="mt-1 text-xs leading-relaxed text-gray-600">{summary}</p>
-              <div className="mt-2 text-[11px] text-gray-400">
-                {[resource.authors.join(', '), resource.publisher, resource.year].filter(Boolean).join(' · ')}
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={onClose}
-              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xl text-gray-400 hover:bg-white hover:text-gray-700"
-              aria-label={t('library.copilot.readingRefs.close')}
-            >
-              ×
-            </button>
-          </div>
-        </div>
-        <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
-          <section className="rounded-2xl border border-amber-100 bg-amber-50/50 px-4 py-3">
-            <div className="text-[11px] font-semibold uppercase tracking-wide text-amber-700">
-              {t('library.copilot.readingRefs.recommendation')}
-            </div>
-            <p className="mt-1 text-[12px] leading-relaxed text-gray-700">{recommendation}</p>
-          </section>
-
-          {description && (
-            <section className="mt-4">
-              <h4 className="text-[13px] font-bold text-gray-950">{t('library.copilot.readingRefs.quickIntro')}</h4>
-              <p className="mt-2 whitespace-pre-wrap text-[12px] leading-relaxed text-gray-700">
-                {summarizeMarkdown(description)}
-              </p>
-            </section>
-          )}
-
-          {nextItems.length > 0 && (
-            <section className="mt-4">
-              <h4 className="text-[13px] font-bold text-gray-950">{t('library.copilot.readingRefs.nextOpen')}</h4>
-              <div className="mt-2 grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-2">
-                {nextItems.map((item) => (
-                  item.to ? (
-                    <Link
-                      key={`${item.kind}:${item.id}`}
-                      to={item.to}
-                      state={preserveNavigationState(location)}
-                      className="rounded-xl border border-gray-100 bg-white px-3 py-2 text-left transition hover:border-amber-200 hover:bg-amber-50/40"
-                    >
-                      <ReferenceItemBody item={item} />
-                    </Link>
-                  ) : (
-                    <div key={`${item.kind}:${item.id}`} className="rounded-xl border border-gray-100 bg-white px-3 py-2">
-                      <ReferenceItemBody item={item} />
-                    </div>
-                  )
-                ))}
-              </div>
-            </section>
-          )}
-
-          {resource.sources.length > 0 && (
-            <section className="mt-4">
-              <h4 className="text-[13px] font-bold text-gray-950">{t('library.copilot.readingRefs.sources')}</h4>
-              <ul className="mt-2 space-y-2">
-                {resource.sources.map((source, index) => (
-                  <li key={`${source.label}:${index}`} className="rounded-xl bg-gray-50 px-3 py-2 text-[12px] text-gray-700">
-                    {source.url ? (
-                      <a href={source.url} target="_blank" rel="noreferrer" className="text-amber-700 hover:underline">
-                        {source.label}
-                      </a>
-                    ) : source.label}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-interface ResourceNextItem {
-  id: string;
-  label: string;
-  kind: string;
-  to?: string;
-}
-
-function ReferenceItemBody({ item }: { item: ResourceNextItem }) {
-  return (
-    <>
-      <div className="text-[10px] font-semibold uppercase tracking-wide text-amber-700">{item.kind}</div>
-      <div className="mt-1 line-clamp-2 text-[12px] font-semibold text-gray-900">{item.label}</div>
-    </>
   );
 }
 
@@ -828,72 +680,6 @@ function dedupeCanvasRefs(refs: CopilotCanvasReference[]): CopilotCanvasReferenc
   });
 }
 
-function buildResourceNextItems(
-  resource: LibraryResource,
-  detail: LibraryResourceDetail | null,
-  defs: CanvasDefSummary[],
-  patterns: BusinessModelPattern[],
-  experiments: Experiment[],
-  frameworks: StrategyFramework[],
-  lang: Lang,
-  t: (key: string, opts?: Record<string, unknown>) => string,
-): ResourceNextItem[] {
-  const items: ResourceNextItem[] = [];
-  for (const entry of detail?.relatedCases ?? []) {
-    items.push({
-      id: entry.slug,
-      label: localize(entry.companyName, lang),
-      kind: t('library.copilot.readingRefs.itemCase', { lang: t(`language.${lang}`) }),
-      to: `/p/${entry.projectId}`,
-    });
-  }
-  for (const defId of resource.relatedCanvasDefIds ?? []) {
-    const def = defs.find((item) => item.id === defId);
-    items.push({
-      id: defId,
-      label: def ? (def.name[lang] ?? def.name.en ?? defId) : defId,
-      kind: t('library.copilot.readingRefs.itemCanvas', { lang: t(`language.${lang}`) }),
-    });
-  }
-  for (const slug of resource.relatedStrategyFrameworkSlugs ?? []) {
-    const framework = frameworks.find((item) => item.slug === slug);
-    items.push({
-      id: slug,
-      label: framework ? localize(framework.name, lang) : slug,
-      kind: t('library.copilot.readingRefs.itemFramework'),
-    });
-  }
-  for (const slug of resource.relatedPatternSlugs ?? []) {
-    const pattern = patterns.find((item) => item.slug === slug);
-    items.push({
-      id: slug,
-      label: pattern ? localize(pattern.name, lang) : slug,
-      kind: t('library.copilot.readingRefs.itemPattern'),
-    });
-  }
-  for (const slug of resource.relatedExperimentSlugs ?? []) {
-    const experiment = experiments.find((item) => item.slug === slug);
-    items.push({
-      id: slug,
-      label: experiment ? localize(experiment.name, lang) : slug,
-      kind: t('library.copilot.readingRefs.itemExperiment'),
-    });
-  }
-  return items;
-}
-
-function summarizeMarkdown(markdown: string): string {
-  return markdown
-    .replace(/^# .+$/gm, '')
-    .replace(/^## .+$/gm, '')
-    .replace(/`([^`]+)`/g, '$1')
-    .replace(/\*\*([^*]+)\*\*/g, '$1')
-    .split('\n')
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .slice(0, 4)
-    .join('\n');
-}
 
 function localize(label: { en: string; zh: string }, lang: Lang): string {
   return label[lang] ?? label.en;
@@ -911,6 +697,8 @@ function attachedRefKey(ref: AttachedRef): string {
       return `case:${ref.slug}`;
     case 'pattern':
       return `pattern:${ref.slug}`;
+    case 'resource':
+      return `resource:${ref.slug}`;
     case 'project':
       return `project:${ref.projectId}:${ref.activeCanvasId ?? ''}:${ref.activeStoryId ?? ''}`;
     case 'canvas':

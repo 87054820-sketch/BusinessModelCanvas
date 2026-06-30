@@ -1,0 +1,616 @@
+# 1 Creating Blue Oceans
+
+with scaled-down versions. From the perspective of competition-based
+strategy, then, the circus industry appeared unattractive.
+Another compelling aspect of Cirque du Soleil’s success is that it did not
+win by taking customers from the already shrinking circus industry, which
+historically catered to children. Cirque du Soleil did not compete with
+Ringling Bros. and Barnum & Bailey. Instead it created uncontested new
+market space that made the competition irrelevant. It appealed to a whole
+new group of customers: adults and corporate clients prepared to pay a
+price several times as great as traditional circuses for an unprecedented
+entertainment experience. Significantly, one of the first Cirque productions
+was titled “We Reinvent the Circus.”
+OceanofPDF.com
+
+
+New Market Space
+Cirque du Soleil succeeded because it realized that to win in the future,
+companies must stop competing with each other. The only way to beat the
+competition is to stop trying to beat the competition.
+To understand what Cirque du Soleil achieved, imagine a market
+universe composed of two sorts of oceans: red oceans and blue oceans. Red
+oceans represent all the industries in existence today. This is the known
+market space. Blue oceans denote all the industries not in existence today.
+This is the unknown market space.
+In the red oceans, industry boundaries are defined and accepted, and the
+competitive rules of the game are known.1 Here, companies try to
+outperform their rivals to grab a greater share of existing demand. As the
+market space gets crowded, prospects for profits and growth are reduced.
+Products become commodities, and cutthroat competition turns the red
+ocean bloody.
+Blue oceans, in contrast, are defined by untapped market space, demand
+creation, and the opportunity for highly profitable growth. Although some
+blue oceans are created well beyond existing industry boundaries, most are
+created from within red oceans by expanding existing industry boundaries,
+as Cirque du Soleil did. In blue oceans, competition is irrelevant because
+the rules of the game are waiting to be set.
+It will always be important to swim successfully in the red ocean by
+outcompeting rivals. Red oceans will always matter and will always be a
+fact of business life. But with supply exceeding demand in more industries,
+competing for a share of contracting markets, while necessary, will not be
+sufficient to sustain high performance.2 Companies need to go beyond
+competing. To seize new profit and growth opportunities, they also need to
+create blue oceans.
+Unfortunately, blue oceans are largely uncharted. The dominant focus of
+strategy work over the past thirty years has been on competition-based red
+ocean strategies.3 The result has been a fairly good understanding of how to
+compete skillfully in red waters, from analyzing the underlying economic
+structure of an existing industry, to choosing a strategic position of low cost
+
+
+or differentiation or focus, to benchmarking the competition. Some
+discussions around blue oceans exist.4 However, there is little practical
+guidance on how to create them. Without analytic frameworks to create
+blue oceans and principles to effectively manage risk, creating blue oceans
+has remained wishful thinking that is seen as too risky for managers to
+pursue as strategy. This book provides practical frameworks and analytics
+for the systematic pursuit and capture of blue oceans.
+OceanofPDF.com
+
+
+The Continuing Creation of Blue Oceans
+Although the term blue oceans is new, their existence is not. They are a
+feature of business life, past and present. Look back 120 years and ask
+yourself, How many of today’s industries were then unknown? The answer:
+many industries as basic as automobiles, music recording, aviation,
+petrochemicals, health care, and management consulting were unheard of or
+had just begun to emerge at that time. Now turn the clock back only forty
+years. Again, a plethora of multibillion-and trillion-dollar industries jumps
+out—e-commerce; cell phones; laptops, routers, switches, and networking
+devices; gas-fired electricity plants; biotechnology; discount retail; express
+package delivery; minivans; snowboards; and coffee bars to name a few.
+Just four decades ago, none of these industries existed in a meaningful way.
+Now put the clock forward twenty years—or perhaps fifty years—and
+ask yourself how many now unknown industries will likely exist then. If
+history is any predictor of the future, again the answer is many of them.
+The reality is that industries never stand still. They continuously evolve.
+Operations improve, markets expand, and players come and go. History
+teaches us that we have a hugely underestimated capacity to create new
+industries and re-create existing ones. In fact, the more than half-century-
+old Standard Industrial Classification (SIC) system published by the US
+Census was replaced in 1997 by the North America Industry Classification
+Standard (NAICS) system. The new system expanded the ten SIC industry
+sectors into twenty sectors to reflect the emerging realities of new industry
+territories.5 The services sector under the old system, for example, is now
+expanded into seven business sectors ranging from information to health
+care and social assistance.6 Given that these systems are designed for
+standardization and continuity, such a replacement shows how significant
+the expansion of blue oceans has been.
+Yet the overriding focus of strategic thinking has been on competition-
+based red ocean strategies. Part of the explanation for this is that corporate
+strategy is heavily influenced by its roots in military strategy. The very
+language of strategy is deeply imbued with military references—chief
+executive “officers” in “headquarters,” “troops” on the “front lines.”
+Described this way, strategy is about confronting an opponent and fighting
+
+
+over a given piece of land that is both limited and constant.7 Unlike war,
+however, the history of industry shows us that the market universe has
+never been constant; rather, blue oceans have continuously been created
+over time. To focus on the red ocean is therefore to accept the key
+constraining factors of war—limited terrain and the need to beat an enemy
+to succeed—and to deny the distinctive strength of the business world: the
+capacity to create new market space that is uncontested.
+OceanofPDF.com
+
+
+The Impact of Creating Blue Oceans
+We set out to quantify the impact of creating blue oceans on a company’s
+growth in both revenues and profits in a study of the business launches of
+108 companies (see figure 1-1). We found that 86 percent of the launches
+were line extensions, that is, incremental improvements within the red ocean
+of existing market space. Yet they accounted for only 62 percent of total
+revenues and a mere 39 percent of total profits. The remaining 14 percent of
+the launches were aimed at creating blue oceans. They generated 38 percent
+of total revenues and 61 percent of total profits. Given that business launches
+included the total investments made for creating red and blue oceans
+(regardless of their subsequent revenue and profit consequences, including
+failures), the performance benefits of creating blue waters are evident.
+Although we don’t have data on the hit rate of success of red and blue ocean
+initiatives, the global performance differences between them are marked.
+FIGURE 1-1
+The profit and growth consequences of creating blue oceans
+OceanofPDF.com
+
+
+The Rising Imperative of Creating Blue Oceans
+There are several driving forces behind a rising imperative to create blue
+oceans. Accelerated technological advances have substantially improved
+industrial productivity and have allowed suppliers to produce an
+unprecedented array of products and services. The result is that in
+increasing numbers of industries, supply exceeds demand.8 The trend
+toward globalization compounds the situation. As trade barriers between
+nations and regions are dismantled and as information on products and
+prices becomes instantly and globally available, niche markets and havens
+for monopoly continue to disappear.9 While supply is on the rise as global
+competition intensifies, there is no clear evidence of an increase in demand
+relative to supply, and statistics even point to declining populations in many
+developed markets.10
+The result has been accelerated commoditization of products and
+services, increasing price wars, and shrinking profit margins. Industrywide
+studies on major American brands confirm this trend.11 They reveal that for
+major product and service categories, brands are generally becoming more
+similar, and as they are becoming more similar, people increasingly select
+based on price.12 People no longer insist, as in the past, that their laundry
+detergent be Tide. Nor will they necessarily stick to Colgate when Crest is
+on sale, and vice versa. In overcrowded industries, differentiating brands
+becomes harder in both economic upturns and downturns.
+All this suggests that the business environment in which most strategy
+and management approaches of the twentieth century evolved is
+increasingly disappearing. As red oceans become increasingly bloody,
+management will need to be more concerned with blue oceans than the
+current cohort of managers is accustomed to.
+OceanofPDF.com
+
+
+From Company and Industry to Strategic Move
+How can a company break out of the red ocean of bloody competition?
+How can it create a blue ocean? Is there a systematic approach to achieve
+this and thereby sustain high performance?
+In search of an answer, our initial step was to define the basic unit of
+analysis for our research. To understand the roots of high performance, the
+business literature typically uses the company as the basic unit of analysis.
+People have marveled at how companies attain strong, profitable growth
+with a distinguished set of strategic, operational, and organizational
+characteristics. Our question, however, was this: Are there lasting
+“excellent” or “visionary” companies that continuously outperform the
+market and repeatedly create blue oceans?
+Consider, for example, In Search of Excellence and Built to Last.13 The
+bestselling book In Search of Excellence was published some thirty years
+ago. Yet within two years of its publication, a number of the companies
+surveyed began to slip into oblivion: Atari, Chesebrough-Pond’s, Data
+General, Fluor, National Semiconductor. As documented in Managing on
+the Edge, two-thirds of the identified model firms in the book had fallen
+from their perches as industry leaders within five years of its publication.14
+The book Built to Last continued in the same footsteps. It sought out the
+“successful habits of visionary companies” that had a long-running track
+record of superior performance. To avoid the pitfalls of In Search of
+Excellence, however, the survey period of Built to Last was expanded to the
+entire life span of the companies, while its analysis was limited to firms
+more than forty years old. Built to Last also became a bestseller.
+But again, upon closer examination, deficiencies in some of the visionary
+companies spotlighted in Built to Last have come to light. As illustrated in
+the book Creative Destruction, much of the success attributed to some of
+the model companies in Built to Last was the result of industry-sector
+performance rather than the companies themselves.15 For example,
+Hewlett-Packard (HP) met the criteria of Built to Last by outperforming the
+market over the long term. In reality, while HP outperformed the market, so
+did the entire computer-hardware industry. What’s more, HP did not even
+
+
+outperform the competition within the industry. Through this and other
+examples, Creative Destruction questioned whether “visionary” companies
+that continuously outperform the market have ever existed.
+If there is no perpetually high-performing company and if the same
+company can be brilliant at one moment and wrongheaded at another, it
+appears that the company is not the appropriate unit of analysis in exploring
+the roots of high performance and blue oceans.
+As discussed earlier, history also shows that industries are constantly
+being created and expanded over time and that industry conditions and
+boundaries are not given; individual actors can shape them. Companies
+need not compete head-on in a given industry space; Cirque du Soleil
+created a new market space in the entertainment sector, generating strong,
+profitable growth as a result. It appears, then, that neither the company nor
+the industry is the best unit of analysis in studying the roots of profitable
+growth.
+Consistent with this observation, our study shows that the strategic move,
+and not the company or the industry, is the right unit of analysis for
+explaining the creation of blue oceans and sustained high performance. A
+strategic move is the set of managerial actions and decisions involved in
+making a major market-creating business offering. Compaq, for example,
+was acquired by Hewlett-Packard in 2001 and ceased to be an independent
+company. As a result, many people might judge the company as
+unsuccessful. This does not, however, invalidate the blue ocean strategic
+moves that Compaq made in creating the server industry. These strategic
+moves not only were a part of the company’s powerful comeback in the
+mid-1990s but also unlocked a new multibillion-dollar market space in
+computing.
+Appendix A, “A Sketch of the Historical Pattern of Blue Ocean
+Creation,” provides a snapshot overview of the history of three
+representative US industries drawn from our database: the auto industry—
+how we get to work; the computer industry—what we use at work; and the
+cinema industry—where we go after work for enjoyment. As shown in
+appendix A, no perpetually excellent company or industry is found. But a
+striking commonality appears to exist across strategic moves that have
+
+
+created blue oceans and have led to new trajectories of strong, profitable
+growth.
+The strategic moves we discuss—moves that have delivered products and
+services that opened and captured new market space, with a significant leap
+in demand—contain great stories of profitable growth as well as thought-
+provoking tales of missed opportunities by companies stuck in red oceans.
+We built our study around these strategic moves to understand the pattern
+by which blue oceans are created and high performance achieved. The
+original research for our book covered more than one hundred fifty strategic
+moves made from 1880 to 2000 in more than thirty industries. In
+conducting our research, we closely examined the relevant business players
+in each event. Industries ranged from hotels, the cinema, retail, airlines,
+energy, computers, broadcasting, and construction to automobiles and steel.
+We analyzed not only winning business players who created blue oceans
+but also their less successful competitors.
+Both within a given strategic move and across strategic moves, we
+searched for convergence among the group that created blue oceans and
+within less successful players caught in the red ocean. We also searched for
+divergence across these two groups. In so doing, we tried to discover the
+common factors leading to the creation of blue oceans and the key
+differences separating those winners from the mere survivors and the losers
+adrift in the red ocean.
+Our analysis of more than thirty industries confirms that neither industry
+nor organizational characteristics explain the distinction between the two
+groups. In assessing industry, organizational, and strategic variables, we
+found that the creation and capturing of blue oceans were achieved by small
+and large companies, by young and old managers, by companies in
+attractive and unattractive industries, by new entrants and established
+incumbents, by private and public companies, by companies in B2B and
+B2C industries, and by companies of diverse national origins.
+Our analysis failed to find any perpetually excellent company or industry.
+What we did find behind the seemingly idiosyncratic success stories,
+however, was a consistent and common pattern across strategic moves for
+creating and capturing blue oceans. Whether it was Ford in 1908 with the
+Model T; GM in 1924 with cars styled to appeal to the emotions; CNN in
+
+
+1980 with real-time news 24/7; or Compaq Servers, Starbucks, Southwest
+Airlines, Cirque du Soleil, or more recently Salesforce.com—or, for that
+matter, any of the other blue ocean moves in our study—the approach to
+strategy in creating blue oceans was consistent across time regardless of
+industry. Our research also reached out to embrace famous strategic moves
+in public-sector turnarounds. Here we found a strikingly similar pattern. As
+our database and research have continued to expand and grow over the last
+ten years since the first edition of our book was published, we have
+continued to observe similar patterns.
+OceanofPDF.com
+
+
+Value Innovation: The Cornerstone of Blue Ocean
+Strategy
+What consistently separated winners from losers in creating blue oceans was
+their approach to strategy. The companies caught in the red ocean followed a
+conventional approach, racing to beat the competition by building a
+defensible position within the existing industry order.16 The creators of blue
+oceans, surprisingly, didn’t use the competition as their benchmark.17
+Instead, they followed a different strategic logic that we call value
+innovation. Value innovation is the cornerstone of blue ocean strategy. We
+call it value innovation because instead of focusing on beating the
+competition, you focus on making the competition irrelevant by creating a
+leap in value for buyers and your company, thereby opening up new and
+uncontested market space.
+Value innovation places equal emphasis on value and innovation. Value
+without innovation tends to focus on value creation on an incremental scale,
+something that improves value but is not sufficient to make you stand out in
+the marketplace.18 Innovation without value tends to be technology-driven,
+market pioneering, or futuristic, often shooting beyond what buyers are
+ready to accept and pay for.19 In this sense, it is important to distinguish
+between value innovation as opposed to technology innovation and market
+pioneering. Our study shows that what separates winners from losers in
+creating blue oceans is neither bleeding-edge technology nor “timing for
+market entry.” Sometimes these exist; more often, however, they do not.
+Value innovation occurs only when companies align innovation with utility,
+price, and cost positions. If they fail to anchor innovation with value in this
+way, technology innovators and market pioneers often lay the eggs that other
+companies hatch.
+Value innovation is a new way of thinking about and executing strategy
+that results in the creation of a blue ocean and a break from the competition.
+Importantly, value innovation defies one of the most commonly accepted
+dogmas of competition-based strategy: the value-cost trade-off.20 It is
+conventionally believed that companies can either create greater value to
+customers at a higher cost or create reasonable value at a lower cost. Here
+strategy is seen as making a choice between differentiation and low cost.21
+
+
+In contrast, those that seek to create blue oceans pursue differentiation and
+low cost simultaneously.
+Let’s return to the example of Cirque du Soleil. Pursuing differentiation
+and low cost simultaneously lies at the heart of the entertainment experience
+it created. At the time of its debut, other circuses focused on benchmarking
+one another and maximizing their share of already shrinking demand by
+tweaking traditional circus acts. This included trying to secure more famous
+clowns and lion tamers, a strategy that raised circuses’ cost structure without
+substantially altering the circus experience. The result was rising costs
+without rising revenues, and a downward spiral of overall circus demand.
+These efforts were made irrelevant when Cirque du Soleil appeared.
+Neither an ordinary circus nor a classic theater production, Cirque du Soleil
+paid no heed to what the competition did. Instead of following the
+conventional logic of outpacing the competition by offering a better solution
+to the given problem—creating a circus with even greater fun and thrills—it
+sought to offer people the fun and thrill of the circus and the intellectual
+sophistication and artistic richness of the theater at the same time; hence, it
+redefined the problem itself.22 By breaking the market boundaries of theater
+and circus, Cirque du Soleil gained a new understanding not only of circus
+customers but also of circus noncustomers: adult theater customers.
+This led to a whole new circus concept that broke the value-cost trade-off
+and created a blue ocean of new market space. Consider the differences.
+Whereas other circuses focused on offering animal shows, hiring star
+performers, presenting multiple show arenas in the form of three rings, and
+pushing aisle concession sales, Cirque du Soleil did away with all these
+factors. These factors had long been taken for granted in the traditional
+circus industry, which never questioned their ongoing relevance. However,
+there was increasing public discomfort with the use of animals. Moreover,
+animal acts were one of the most expensive elements, including not only the
+cost of the animals but also their training, medical care, housing, insurance,
+and transportation.
+Similarly, while the circus industry focused on featuring stars, in the mind
+of the public the so-called stars of the circus were trivial next to movie stars
+or famous singers. Again, they were a high-cost component carrying little
+sway with spectators. Gone, too, are three-ring venues. Not only did this
+arrangement create angst among spectators as they rapidly switched their
+
+
+gaze from one ring to the other, but it also increased the number of
+performers needed, with obvious cost implications. And although aisle
+concession sales appeared to be a good way to generate revenue, in practice
+the high prices discouraged audiences from making purchases and made
+them feel they were being taken for a ride.
+The lasting allure of the traditional circus came down to only three key
+factors: the tent, the clowns, and the classic acrobatic acts such as the
+wheelman and short stunts. So Cirque du Soleil kept the clowns but shifted
+their humor from slapstick to a more enchanting, sophisticated style. It
+glamorized the tent, an element that, ironically, many circuses had begun to
+forfeit in favor of rented venues. Seeing that this unique venue symbolically
+captured the magic of the circus, Cirque du Soleil designed the classic
+symbol of the circus with a glorious external finish and a higher level of
+comfort, making its tents reminiscent of the grand epic circuses. Gone were
+the sawdust and hard benches. Acrobats and other thrilling acts are retained,
+but their roles were reduced and made more elegant by the addition of
+artistic flair and intellectual wonder to the acts.
+By looking across the market boundary of theater, Cirque du Soleil also
+offered new noncircus factors, such as a story line and, with it, intellectual
+richness, artistic music and dance, and multiple productions. These factors,
+entirely new creations for the circus industry, are drawn from the alternative
+live entertainment industry of theater.
+Unlike traditional circus shows having a series of unrelated acts, for
+example, Cirque du Soleil creations have a theme and story line, somewhat
+resembling a theater performance. Although the theme is vague (and
+intentionally so), it brings harmony and an intellectual element to the show
+—without limiting the potential for acts. Cirque also borrows ideas from
+Broadway shows. For example, it features multiple productions rather than
+the traditional “one for all” shows. As with Broadway shows, too, each
+Cirque du Soleil show has an original score and assorted music, which
+drives the visual performance, lighting, and timing of the acts rather than the
+other way around. The shows feature abstract and spiritual dance, an idea
+derived from theater and ballet. By introducing these new factors into its
+offering, Cirque du Soleil has created more sophisticated shows.
+Moreover, by injecting the concept of multiple productions and by giving
+people a reason to come to the circus more frequently, Cirque du Soleil
+
+
+dramatically increased demand.
+In short, Cirque du Soleil offers the best of both circus and theater, and it
+has eliminated or reduced everything else. By offering unprecedented utility,
+Cirque du Soleil created a blue ocean and invented a new form of live
+entertainment, one that is markedly different from both traditional circus and
+theater. At the same time, by eliminating many of the most costly elements
+of the circus, it dramatically reduced its cost structure, achieving both
+differentiation and low cost. Cirque strategically priced its tickets against
+those of the theater, lifting the price point of the circus industry by several
+multiples while still pricing its productions to capture the mass of adult
+customers, who were used to theater prices.
+Figure 1-2 depicts the differentiation– low cost dynamics underpinning
+value innovation.
+FIGURE 1-2
+Value innovation: The cornerstone of blue ocean strategy
+Value innovation is created in the region where a company’s actions
+favorably affect both its cost structure and its value proposition to buyers.
+Cost savings are made by eliminating and reducing the factors an industry
+competes on. Buyer value is lifted by raising and creating elements the
+industry has never offered. Over time, costs are reduced further as scale
+economies kick in due to the high sales volumes that superior value
+generates.
+
+
+As shown in figure 1-2, the creation of blue oceans is about driving costs
+down while simultaneously driving value up for buyers. This is how a leap
+in value for both the company and its buyers is achieved. Because buyer
+value comes from the utility and price that the company offers to buyers and
+because the value to the company is generated from price and its cost
+structure, value innovation is achieved only when the system of the
+company’s utility, price, and cost activities is properly aligned. To sustain
+value innovation, however, people working for and with the company need
+to support it. For value innovation to be a sustainable strategy, then, the
+alignment of the company’s utility, price, cost, and people is needed. It is
+this whole-system approach that makes value innovation strategic rather
+than operational or functional.
+In contrast, innovations such as production innovations can be achieved at
+the subsystem level without impacting the company’s overall strategy. An
+innovation in the production process, for example, may lower a company’s
+cost structure to reinforce its existing cost leadership strategy without
+changing the utility proposition of its offering. Although innovations of this
+sort may help to secure and even lift a company’s position in the existing
+
+
+market space, such a subsystem approach will rarely create a blue ocean of
+new market space.
+In this sense, value innovation is a distinct concept. It is about strategy
+that embraces the entire system of a company’s activities.23 Value innovation
+requires companies to orient the whole system toward achieving a leap in
+value for both buyers and themselves. Absent such an integral approach,
+innovation will remain divided from the core of strategy.24 Figure 1-3
+outlines the key defining features of red and blue ocean strategies.
+FIGURE 1-3
+Red ocean versus blue ocean strategy
+Competition-based red ocean strategy assumes that an industry’s structural
+conditions are given and that firms are forced to compete within them, an
+assumption based on what the academics call the structuralist view, or
+environmental determinism.25 In contrast, value innovation is based on the
+
+
+view that market boundaries and industry structure are not given and can be
+reconstructed by the actions and beliefs of industry players. We call this the
+reconstructionist view. In the red ocean, differentiation raises costs because
+firms compete with the same best-practice rule. Here, the strategic choices
+for firms are to pursue either differentiation or low cost. In the
+reconstructionist world, however, the strategic aim is to create new best-
+practice rules by breaking the existing value-cost trade-off and thereby
+creating a blue ocean. (For more discussions on this, see appendix B, “Value
+Innovation: A Reconstructionist View of Strategy.”)
+Cirque du Soleil broke the best practice rule of the circus industry,
+achieving both differentiation and low cost by reconstructing elements
+across existing industry boundaries. Is Cirque du Soleil, then, really a circus,
+with all that it eliminated, reduced, raised, and created? Or is it theater? And
+if it is theater, then what genre—a Broadway show, an opera, a ballet? It is
+not clear. Cirque du Soleil reconstructed elements across these alternatives,
+and, in the end, it is simultaneously a little of all of them and none of any of
+them in their entirety. It created a blue ocean of new, uncontested market
+space.
+OceanofPDF.com
+
+
+Formulating and Executing Blue Ocean Strategy
+Although economic conditions indicate the rising imperative of blue oceans,
+there is a general belief that the odds of success are lower when companies
+venture beyond existing industry space.26 The issue is how to succeed in
+blue oceans. How can companies systematically maximize the opportunities
+while simultaneously minimizing the risks of formulating and executing blue
+ocean strategy? If you lack an understanding of the opportunity-maximizing
+and risk-minimizing principles driving the creation and capture of blue
+oceans, the odds will be lengthened against your blue ocean initiative.
+Of course, there is no such thing as a riskless strategy.27 Strategy will
+always involve both opportunity and risk, be it a red ocean or a blue ocean
+initiative. But at present the playing field is dramatically unbalanced in favor
+of tools and analytical frameworks to succeed in red oceans. As long as this
+remains true, red oceans will continue to dominate companies’ strategic
+agendas even as the business imperative for creating blue oceans takes on
+new urgency. Perhaps this explains why, despite prior calls for companies to
+go beyond existing industry space, companies have yet to act seriously on
+these recommendations.
+This book seeks to address this imbalance by laying out a methodology to
+support our thesis. Here we present the principles and analytical frameworks
+to succeed in blue oceans.
+Chapter 2 introduces the analytical tools and frameworks that are essential
+for creating and capturing blue oceans. Although supplementary tools are
+introduced in other chapters as needed, these basic analytics are used
+throughout the book. Companies can make proactive changes in industry or
+market fundamentals through the purposeful application of these blue ocean
+tools and frameworks, which are grounded in the issues of both opportunity
+and risk. Subsequent chapters introduce the principles that drive the
+successful formulation and implementation of blue ocean strategy and
+explain how they, along with the analytics, are applied in action. There are
+four guiding principles for the successful formulation of blue ocean strategy.
+Chapters 3 through 6 address these in turn. Chapter 3 identifies the paths by
+which you can systematically create uncontested market space across diverse
+industry domains, hence attenuating search risk. It teaches you how to make
+
+
+the competition irrelevant by looking across the six conventional boundaries
+of competition to open up commercially important blue oceans. The six
+paths focus on looking across alternative industries, across strategic groups,
+across buyer groups, across complementary product and service offerings,
+across the functional-emotional orientation of an industry, and even across
+time.
+Chapter 4 shows how to design a company’s strategic planning process to
+go beyond incremental improvements to create value innovations. It presents
+an alternative to the existing strategic planning process, which is often
+criticized as a number-crunching exercise that keeps companies locked into
+making incremental improvements. This principle tackles planning risk.
+Using a visualizing approach that drives you to focus on the big picture
+rather than to be submerged in numbers and jargon, this chapter proposes a
+four-step process whereby you can build a strategy that creates and captures
+blue ocean opportunities.
+Chapter 5 shows how to maximize the size of a blue ocean. To create the
+greatest market of new demand, this chapter challenges the conventional
+practice of aiming for finer segmentation to better meet existing customer
+preferences. This practice often results in increasingly small target markets.
+Instead, this chapter shows you how to aggregate demand, not by focusing
+on the differences that separate customers but by building on the powerful
+commonalities across noncustomers to maximize the size of the blue ocean
+being created and new demand being unlocked, hence minimizing scale risk.
+Chapter 6 lays out the design of a strategy that allows you not only to
+provide a leap in value to the mass of buyers but also to build a viable
+business model to produce and maintain profitable growth. It shows you how
+to ensure that your company builds a business model that profits from the
+blue ocean it is creating. It addresses business model risk. The chapter
+articulates the sequence in which you should create a strategy to ensure that
+both you and your customers win as you create new business terrain. Such a
+strategy follows the sequence of utility, price, cost, and adoption.
+Chapters 7 through 10 turn to the principles that drive effective execution
+of blue ocean strategy. Specifically, chapter 7 introduces what we call
+tipping point leadership. Tipping point leadership shows managers how to
+mobilize an organization to overcome the key organizational hurdles that
+block the implementation of a blue ocean strategy. It deals with
+
+
+organizational risk. It lays out how leaders and managers alike can surmount
+the cognitive, resource, motivational, and political hurdles in spite of limited
+time and resources in executing blue ocean strategy.
+Chapter 8 argues for the integration of execution into strategy making,
+thus motivating people to act on and execute a blue ocean strategy in a
+sustained way deep in an organization. This chapter introduces what we call
+fair process. Because a blue ocean strategy perforce represents a departure
+from the status quo, this chapter shows how fair process facilitates both
+strategy making and execution by mobilizing people for the voluntary
+cooperation needed to execute blue ocean strategy. It deals with management
+risk associated with people’s attitudes and behaviors. People here include
+both internal and external stakeholders who work for and with an
+organization.
+Chapter 9, new in this expanded edition, tackles the overarching concept
+of alignment and the critical role it plays for the sustainability of a strategy.
+Here we provide a simple but comprehensive framework to fully develop
+and align an organization’s three strategy propositions from value to profit to
+people. It deals with how to manage sustainability risk. While this chapter
+starts with the importance of alignment for the sustainability of any strategy,
+whether blue or red, it shows how alignment works in the context of blue
+ocean strategy by illustrating and contrasting cases of success and failure.
+Chapter 10 addresses the issue of renewal and the dynamic aspects of blue
+ocean strategy at both the business level and the corporate level for
+multibusiness firms. Here we expand our original discussion on how to
+manage and monitor your individual business and your corporate portfolio
+over time to achieve continuing high performance. In so doing, this chapter
+deals with the important issue of managing renewal risk so that the blue
+ocean strategy process can become institutionalized rather than a one-off
+occurrence. This chapter shows how red and blue ocean strategies fit
+together and complement each other in the context of managing a corporate
+portfolio over time.
+Figure 1-4 highlights the eight principles driving the successful
+formulation and execution of blue ocean strategy and the risks that these
+principles attenuate.
+
+
+FIGURE 1-4
+The eight principles of blue ocean strategy
+Lastly, we end our expanded edition with a new chapter where we zoom
+in on the ten most-common red ocean traps that keep organizations anchored
+in the red even as they set out to sail into the blue. Here we expressly
+address how to avoid each of these traps. We highlight and set straight the
+misconceptions behind these red ocean traps to ensure people have not only
+the right framing but also the proper application of blue ocean strategy tools
+to achieve success in practice.
+Let’s now move on to chapter 2, where we lay out the basic analytical
+tools and frameworks that will be used throughout this book in the
+formulation and execution of blue ocean strategy.
+OceanofPDF.com
+
+
+CHAPTER 2
+Analytical Tools and Frameworks
+WE SPENT A DECADE DEVELOPING a set of analytical tools and frameworks
+in an attempt to make the formulation and execution of blue ocean strategy
+as systematic and actionable as competing in the red waters of known
+market space. These analytics fill a central void in the field of strategy,
+which has developed an impressive array of tools and frameworks to
+compete in red oceans, such as the five forces for analyzing existing
+industry conditions and three generic strategies, but has remained virtually
+silent on practical tools to excel in blue oceans. Instead, executives have
+received calls to be brave and entrepreneurial, to learn from failure, and to
+seek out revolutionaries. Although thought provoking, these are not
+substitutes for analytics to navigate successfully in blue waters. In the
+absence of analytics, executives cannot be expected to act on the call to
+break out of existing competition. Effective blue ocean strategy should be
+about risk minimization and not risk taking.
+To address this imbalance, we studied companies around the world and
+developed practical methodologies in the quest of blue oceans. We then
+applied and tested these tools and frameworks in action by working with
+companies in their pursuit of blue oceans, enriching and refining them in
+the process. The tools and frameworks presented here are used throughout
+this book as we discuss the eight principles of formulating and executing

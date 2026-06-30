@@ -1,0 +1,728 @@
+# 6. Monetization: Capturing the Value Created by Network Effects
+
+case to the VCs.”
+The aspiring platform moguls gazed at Marshall with such sincerity that
+he almost hated to burst their bubble. But he had to do it. As gently as he
+could, Marshall replied, “You’ve listed three possible ways to monetize Ad
+World, and you’ve asked me to pick one of them—or maybe all three. My
+answer is, none of the above.”
+The two founders in this story were smart, talented, thoughtful business
+leaders. They’d done a lot of homework on the nature of platform
+ecosystems. They did understand, in a general way, how platform
+businesses work and the challenges of attracting both sides of the market to
+make a robust set of interactions possible. But when it came to
+monetization, they were asking the wrong questions.
+These founders shouldn’t charge either side to be listed on their
+platform. Doing so would put terrible friction on entry into the ecosystem,
+discouraging many potential participants from becoming users. To charge
+for posting a deal simply means people post fewer deals. That’s bad. It
+reduces potential interaction volume, not to mention realized interactions.
+As a result, it also reduces the volume of data available to the platform—
+data desperately needed to enable the platform to forge powerful matches
+between consumers and producers.
+In fact, rather than charging users to join the platform, the founders
+should be subsidizing their participation—perhaps by providing tools and
+services to make it easy, fast, and effective for them to complete their
+profiles.
+This wasn’t a complete surprise to the founders. They had partly intuited
+this, as Marshall could tell by the fact that they’d used “scrapers”—
+automated software tools for collecting data from the Internet—to produce
+user profiles. They understood that building a base of users was their first
+and biggest challenge, and that creating friction around the process by
+charging money for it would be a serious mistake.
+How, then, could the founders monetize their platform model? The
+answer: They can charge users for the value they accrue from the
+ecosystem, but the charge should be levied on deal completion, not at the
+time of listing. They would make it possible for firms to post a deal risk-
+free by charging a fee only once the firms get what they need. The fee
+becomes performance-based, and it feels negligible because it simply skims
+off a small fraction of a transaction that’s occurring anyway.
+
+
+What’s more, the best strategy may be one the founders didn’t even
+consider. Why not charge ad agencies for a service that helps them do a
+postmortem to discover why they lost a deal? Not only would this fee create
+no friction on a deal, but it would reflect the value of the feedback
+provided; it would be recurring revenue rather than one-time revenue; and it
+could help ad agencies improve the quality of their offerings, thereby
+encouraging a rise in the value of interactions over time.
+The story of this fledgling platform and the strategic challenge its
+founders faced illustrates some of the complexity of platform businesses—
+as well as the creative thinking platform managers need to practice if they
+are going to realize the full value-creating potential of the ecosystems they
+are building. Monetization, in fact, is one of the most difficult—and
+fascinating—issues that any platform company must address.
+VALUE CREATION AND THE CHALLENGE OF
+MONETIZING NETWORK EFFECTS
+As we’ve explained, the inherent value of a platform business lies chiefly in
+the network effects it creates. But monetizing network effects poses a
+unique challenge. Network effects make a platform attractive by creating
+self-reinforcing feedback loops that grow the user base, often with minimal
+effort or investment by the platform manager. Higher value creation by
+producers on the platform attracts more consumers, who, in turn, attract
+more producers and further value creation.
+Yet, ironically, this powerfully positive growth dynamic makes
+monetization very tricky. Any charge levied on users is likely to discourage
+them from participating on the platform. Charging for access may lead
+people to avoid the platform altogether; charging for usage may inhibit
+frequent participation; charging for production reduces value creation,
+making the platform less attractive to consumers; and charging for
+consumption reduces consumption, making the platform less attractive to
+producers. This was the precise dilemma that the founders of Ad World
+were grappling with.
+How, then, do you monetize a platform without damaging or even
+destroying the network effects you’ve worked so hard to create?
+
+
+Some students of platform businesses leap to the assumption that the
+collaborative nature of value creation on the Internet means that the natural
+price for goods and services distributed online must be free. But of course a
+business that charges nothing for the benefits it offers is unlikely to survive
+for very long, since it will not produce the resources needed to maintain or
+enhance it, and investors will have no incentive to provide the capital
+needed for its growth.
+Some element of free pricing can be useful in building network effects
+for a platform business. But it’s important to understand the different
+models in which partially free pricing can power growth. As every business
+student learns, the model behind the safety razor business that entrepreneur
+King Gillette founded in 1901 involved distributing the razors for free—or
+at a very low, subsidized cost—while charging for the blades.
+As it happens, research by Randal C. Picker of the University of Chicago
+Law School has called into question the traditional story of Gillette and the
+razors-and-blades pricing strategy. Picker found that the timing of price
+changes for Gillette razors and blades, as well as the expiration date on the
+patent covering Gillette’s unique razor design, seems to undermine the
+notion that the company was employing the razors-and-blades strategy as
+commonly understood.1 Nonetheless, the familiar story remains a handy
+symbol for a strategy that has been used in a number of markets, including,
+for example, the printer market, where sales of high-priced toner cartridges
+generate profits that the relatively cheap printers themselves don’t produce.
+Another version of this strategy is the freemium model, in which a free
+layer of service attracts users who eventually pay for an enhanced version.
+Many online service platforms, including Dropbox and MailChimp, work
+this way. Both the razors-and-blades model and the freemium model
+monetize the same user base, or portions thereof.
+Platforms may also offer free or subsidized pricing to one user base
+while charging full price to an entirely different user base. This makes the
+design of monetization models more complex, since the platform must
+ensure that the value it gives away to one side can be used to capture value
+on the other side. Significant scholarly work has been done in this area.
+Two of this book’s authors (Geoff Parker and Marshall Van Alstyne) were
+among the first scholars to lay out the theory of two-sided market pricing.2
+And the theory was mentioned as part of the 2014 Nobel Prize awarded to
+one of the other originators of two-sided market economics, Jean Tirole.3
+
+
+Achieving the right balance among the complex factors involved in two-
+sided market pricing isn’t easy. Netscape, one of the pioneers of the Internet
+era, gave away browsers for free in hopes of selling web servers.
+Unfortunately, there was no proprietary connection between browsers and
+servers that Netscape could reliably control. Anyone could just as easily use
+Microsoft’s web server or the free Apache web server, which meant that
+Netscape was never able to monetize the other side of its free browser
+business. As this example illustrates, platform businesses that intend to use
+free pricing as part of their strategy need to ensure that the value they create
+and hope to ultimately monetize is fully controlled by the platform.
+Meeting the monetization challenge must begin with an analysis of the
+value created on the platform. Traditional non-platform businesses—
+pipelines—deliver value to their customers in the form of a product or
+service. They may charge for ownership of the product, as Whirlpool does
+when it sells a dishwasher, or for utilization of the product, as GE Aviation
+charges for installation and regular servicing of its aircraft engines.
+Like Whirlpool and GE, platform companies are engaged in designing
+and building technology. But rather than putting the technology in the hands
+of customers in exchange for a fee, they invite users to join the platform—
+and then they seek to monetize the platform by charging for the value that
+the platform technology creates for those users. This value falls into four
+broad categories:
+•    For consumers: Access to value created on the platform. Video viewers find the videos on
+YouTube valuable; Android users find value in the various activities made possible by the
+apps; students on Skillshare find value in the courses made available through the site.
+•    For producers or third-party providers: Access to a community or market. Airbnb is
+valuable for hosts because it provides access to a global market of travelers. Company
+recruiters find LinkedIn valuable because it enables them to connect to potential job-seekers.
+Merchants find Alibaba valuable because it enables them to sell their products to customers
+around the world.
+•        For both consumers and producers: Access to tools and services that facilitate
+interaction. Platforms create value by reducing the friction and barriers that prevent
+producers and consumers from interacting. Kickstarter helps creative entrepreneurs raise
+money for new projects. eBay, combined with PayPal, allows anyone to start an online store
+that serves customers anywhere in the world. YouTube allows musicians to provide their fans
+with performance videos, without having to produce physical products (CDs or DVDs) and
+without having to sell through intermediary retailers.
+•    For both consumers and producers: Access to curation mechanisms that enhance the
+quality of interactions. Consumers value access to high-quality goods and services that
+address their specific needs and interests, while producers value access to consumers who
+want their offerings and are willing to pay a fair price for them. Well-run platforms build and
+
+
+maintain curation systems that connect the right consumers with the right producers quickly
+and easily.
+These four forms of value wouldn’t exist without the platform, and so
+they may be described as sources of excess value that the platform
+generates. Most well-designed platforms create far more value than they
+directly capture—which is why they attract large numbers of users, who are
+happy to enjoy the benefits of all the “free” value provided by the platform.
+A smart monetization strategy begins by considering all four forms of
+value, then determines which sources of excess value can be exploited by
+the platform without inhibiting the continued growth of network effects.
+NUMBERS ARE NOT ENOUGH: FINDING THE VALUE IN
+NETWORK EFFECTS
+Founded in 2005 by Ethan Stock, Zvents was originally an online guide to
+local events in the Bay Area. It grew rapidly, expanding beyond California
+and becoming the largest site of its kind, serving hundreds of markets and
+attracting over 14 million visitors every month. It was a hit with both
+producers—the local event organizers who posted their concerts, shows,
+fairs, festivals, and other activities on the site—and consumers, who logged
+on to Zvents to find something fun to do after work and on the weekend.
+Stock seemed to be living the Silicon Valley dream. Having built a
+platform that millions of people had come to rely on, his only remaining
+challenge was to monetize it. But that proved to be far from simple.
+“Once we reached critical mass,” Stock recalls, “and it was clear we
+were becoming the market leader, we expected event organizers would start
+paying. … But there is a fatal flaw in some businesses that can hogtie their
+ability to make money—the expectation of completeness.”
+The problem was that consumers who visited Zvents expected to find a
+comprehensive listing of local events. If only a few of the available options
+were included, the interest of users would quickly evaporate. Which meant
+that Zvents didn’t have much leverage over the event organizers they hoped
+to charge. If they’d threatened organizers with having their listings pulled,
+the threats would have no teeth, since the whole value of Zvents lay in the
+
+
+completeness of its listings. Charging producers for access to the platform
+wasn’t going to work.
+Zvents experimented with another monetization technique that we’ll
+discuss later in this chapter—charging producers for enhanced access. They
+did manage to get a few organizers to pay for more prominent listings, but
+the value of the enhancements in terms of improved attendance or ticket
+sales proved small. Zvents ended up with a tiny trickle of revenue rather
+than the gusher they’d hoped for. In June 2013, with his hopes of building a
+lucrative platform empire to rival Google or Facebook dashed, Stock sold
+his company to eBay, which now uses Zvents as a bulletin board for arts
+and entertainment events in conjunction with its StubHub ticket resale
+platform.
+The lesson? Network effects as measured by numbers of visitors alone
+don’t necessarily reflect the monetary value of a platform. The interactions
+facilitated must generate a significant amount of excess value that can be
+captured by the platform without producing a negative impact on network
+effects. When that’s not the case, monetization may not be possible.
+The paradoxical relationship between network size and monetization
+potential doesn’t stop there. In some cases, the ability to monetize a
+platform may actually increase dramatically when the number of users
+declines—reflecting the power of negative network effects to impact the
+value of a platform.
+Meetup was launched in 2002 as a way for groups to organize offline
+meetings (“meetups”) by connecting online. Its cofounder, Scott Heiferman,
+said he was inspired by the way people in New York came together as a
+community following the 9/11 terror attacks.
+Meetup gained traction as a free platform, but the dot-com bust of the
+late 1990s served as a constant reminder to its managers of the need to
+develop a credible monetization model. They first tried to generate income
+by using lead generation, charging fees to offline venues such as restaurants
+and bars for the number of users that came in during a meetup. However, in
+a pre-smartphone world, this monetization model didn’t work very well.
+The number of people who actually showed up for events was different
+from the number who signed up, and Meetup had no way of counting heads
+to determine an appropriate fee.
+Meetup abandoned the lead generation model and experimented with
+other ways of monetizing its service. It tested advertising, but failed to
+
+
+attract significant numbers of advertisers. It tried offering a premium
+product called Meetup Plus, but the additional value provided generated
+little interest. (Perhaps understandably: years later, when asked in an
+interview to explain the extra service included with Meetup Plus,
+Heiferman responded with a laugh, “God, I don’t even remember what it
+got you. It got you some kind of features where you would be able to … I
+don’t know. I can’t remember.”) Meetup even tested charging fees to
+political organizations, which were a growing portion of the platform’s user
+base, but this, too, produced only modest revenue. Meetup’s options were
+running out.
+Meanwhile, Meetup found itself confronted with another problem—one
+that, paradoxically, would help save the company. This was the growth of
+negative network effects. As the platform grew, with low barriers to
+planning a meetup, many meetups were being started without a clear
+purpose or adequate planning. There was a lot of noise on the platform,
+leading to disappointing experiences for users, who would sign up for a
+meetup only to discover that attendance was small and activity minimal.
+Meetup’s leaders made a risky decision. They decided to start charging
+meetup organizers, despite the potential for drastically diminishing the scale
+of the platform and weakening its network effects. They reasoned that
+charging organizers would help them solve their monetization problem
+while weeding out organizers who weren’t serious about their goals. A letter
+went out to all organizers informing them that they would henceforth be
+asked to pay $19 per month for the right to keep using Meetup’s service.
+The backlash was huge. After Businessweek ran an article on Meetup’s
+new strategy, the magazine received emails from countless platform users
+predicting the service’s demise. One user from London wrote, “I think it’s
+fair to say most organisers were shocked, and most of the ones I’ve spoken
+to will simply cease organising for their groups … There isn’t anything
+Meetup is doing these days that users can’t simply do on their own and
+more effectively, and there’s plenty of open source software to make use of
+and create your own website.”4
+But despite the backlash, the strategy worked. The number of meetups
+promoted on the site fell drastically, but their quality, and therefore the
+quality of the interactions generated, improved significantly. As Heiferman
+explained in an interview five years later, “The big headline, by the way, in
+going from free to fee for us is: Yeah, we lost 95% of our activity but now
+
+
+we have much, much, more going on than we ever did before and half the
+Meetups are successful, as opposed to 1–2% being successful.”5
+As we’ve discussed, a platform’s goal is not simply to pump up the
+numbers of participants and interactions. It must also take steps to
+encourage desirable interactions and discourage undesirable ones. Meetup’s
+monetization model helped it achieve exactly that. By discouraging
+organizers who weren’t serious about their objectives, the pricing
+mechanism created a culture of quality on the platform.
+It’s a mistake to assume that network effects can always be optimized by
+simply refraining from charging users. A better approach to analyzing the
+monetization challenge is to ask these questions: How can we generate
+revenues without reducing our positive network effects? Can we devise a
+pricing strategy that strengthens our positive network effects while reducing
+our negative network effects? Can we create a strategy that encourages
+desirable interactions and discourages undesirable ones?
+WAYS TO MONETIZE (1):
+CHARGING A TRANSACTION FEE
+To begin exploring some of the ways that an effective monetization strategy
+can be developed, let’s look back at the four forms of excess value created
+by platforms—access to value creation, access to the market, access to
+tools, and curation. All four culminate in some kind of interaction. In many
+cases, this interaction involves an exchange of money, as when an Uber
+customer pays a driver for a ride, an eBay buyer pays a seller for a product,
+or a company using Upwork pays a freelancer for a completed project.
+Platforms that facilitate such monetary transactions can monetize the value
+created by charging a transaction fee, which may be calculated as either a
+percentage of the transaction price or a fixed fee per transaction. The latter
+system, which is simpler to administer, is particularly appealing when a
+high frequency of transactions is expected without a significant variation in
+the transaction size.
+Charging a transaction fee is a powerful way of monetizing the value
+created by the platform without hampering the growth of network effects.
+Because buyers and sellers are charged only when an actual transaction
+occurs, they are not discouraged from joining the platform and becoming
+
+
+part of the network. Of course, if the transaction fee is excessive, it may
+discourage transactions. Platform managers may need to experiment with
+various levels of fee to find the rate that captures a fair percentage of the
+value created without driving users away.
+A more serious and persistent challenge is to capture on the platform
+itself all the interactions facilitated by the platform. Buyers and sellers who
+find each other on the platform are naturally incentivized to take the
+interaction off the platform if they can, in order to avoid paying the
+transaction fee.
+This problem is especially rampant with platforms that connect service
+providers with service consumers. With the rise of the freelancer economy
+and the spread of the online sharing economy, platform businesses from
+Airbnb and Uber to TaskRabbit and Upwork have sprung up to facilitate
+service interactions. However, most of them are faced with the challenge of
+capturing the interaction on-platform. In most cases, the interaction can’t
+occur until the producer (in this case, the service provider) and the
+consumer (the purchaser of the service) agree on the terms of the service,
+which usually requires the two to interact directly. Furthermore, the actual
+exchange of money often follows the delivery of the service, which also
+requires the two participants to interact directly. These direct interactions
+weaken the platform’s ability to capture value by creating an opportunity
+for the parties to make a deal off-platform. As a result of avoiding the
+transaction fee, the consumer can obtain a discount on the service, while the
+provider gets to keep more of the total service charge. The only loser is the
+platform company itself.
+Platforms like Fiverr, Groupon, and Airbnb solve this problem by
+temporarily preventing participants from connecting. These platforms try to
+provide all the information a consumer needs to make an interaction
+decision, 
+without 
+connecting 
+the 
+consumer 
+directly 
+with 
+the
+producer.  Groupon does this by featuring services that are largely
+standardized, while the less-standardized Airbnb and Fiverr provide rating
+mechanisms and other social metrics that indicate the reliability of a service
+provider, making direct contact between the parties less necessary.
+Sometimes strategies like these are insufficient. This is especially the
+case with platforms that create a market for professional services, which
+often require discussions, exchanges, and workflow management before
+and during the provision of services. As a result, it may not be possible for
+
+
+the platform to retain control of all communications between the producer
+and the consumer, and charging the consumer ahead of the interaction may
+not be an option.
+In cases like these, the platform must extend its role as an interaction
+facilitator to include more value-creating activities. For example, Upwork
+provides tools for monitoring the service provider remotely. This enables
+consumers of professional services to monitor projects and make payments
+based on actual delivery of work.
+The Clarity platform for connecting advice seekers with experts retains
+control of the interaction through a similar mechanism. In the past, expert-
+matching platforms connected the two sides, charged a lead generation fee,
+and allowed the transaction to occur off-platform. Clarity provides
+additional call management and invoicing capabilities that serve to capture
+the interaction on the platform. To benefit producers, Clarity offers
+integrated payments and invoicing, making it simple for advice givers to
+generate income through small, one-off engagements. To benefit
+consumers, the call management software provides per-minute billing,
+which gives them the option to opt out of a call that isn’t proving useful.
+Both sides receive enough additional value to keep them connected to
+Clarity, with minimal incentive to take their interaction off-platform.
+As these examples illustrate, service provider platforms that want to
+capture and monetize interactions must create tools and services that benefit
+both parties by removing friction, mitigate risk, and otherwise facilitate
+interactions.
+However, additional benefits like these may not be sufficient to enable
+all service provider platforms to thrive. Local service platforms that connect
+consumers with relatively simple services like plumbing and house painting
+continue to struggle with the challenge of owning the interaction. The risks
+involved in such interactions are lower than when hiring a professional
+freelancer: the two sides get to meet in person, the work is simpler, its
+quality is less variable, and, since the work itself happens off-platform,
+usually under the direct supervision of the consumer, the consumer can
+monitor the service provider without having to rely on software tools. Some
+of these local service platforms may need to move to the enhanced access
+monetization model, which we’ll describe in a later section of this chapter.
+
+
+WAYS TO MONETIZE (2):
+CHARGING FOR ACCESS
+In some cases, it’s possible to monetize a platform by charging producers
+for access to a community of users who have joined the platform not in
+order to interact with producers but for other, unrelated reasons.
+Dribbble has rapidly gained prominence in the design community as a
+high-quality platform for designers—artists, illustrators, logo creators,
+graphic designers, typographers, and others—to show off their work,
+thereby gaining exposure, credibility, and valuable feedback from their
+peers. Adapting the jargon of basketball, Dribbble users call new images
+“shots,” image groups “buckets,” and reposts of favorite images
+“rebounds.” This unique lingo has helped foster a highly engaged
+community that includes many of today’s best designers.
+Dribbble’s managers are eager to protect the long-term value of this
+specialized community. For this reason, they do not charge members for
+access to the platform, which could weaken network effects. They’ve also
+opted not to permit sponsored images that provide enhanced access to the
+community (for example, by popping up, uninvited, on users’ home pages),
+since these could reduce the prestige of the site and its perceived value to its
+users. (We’ll describe the enhanced access strategy in more detail a bit later
+in this chapter.) So to monetize the site, Dribbble has invited third parties to
+pay for access to the community. In this case, companies looking for
+designers are charged to post employment listings on the site’s jobs board.
+This form of monetization creates interactions that benefit both parties.
+Designers are motivated to put up their best work on Dribbble, since these
+may generate leads to new gigs, while companies get access to top-flight
+designers whose portfolios have already been curated by the creative
+community.
+Dribbble’s monetization method can be described by the simple
+shorthand term “advertising.” But notice that, unlike most advertising,
+Dribbble’s highly targeted job listings generate value for the community,
+enhance the core interaction, and strengthen network effects rather than
+adding noise and depleting value.
+In a similar fashion, LinkedIn allows recruiters to present job
+opportunities to its members and offers companies the ability to compare
+
+
+and target professionals based on their résumés and professional brands.
+LinkedIn’s power as a recruiting platform encourages users to update their
+profiles more often, thereby keeping the platform active and healthy.
+As we’ve observed throughout this chapter, a monetization model is
+sustainable only when it strengthens network effects (rather than weakening
+them). Charging third-party producers for community access is effective if
+and only if the newly added contents—such as the job listings on Dribbble
+—enhance the value of the platform to its users.
+WAYS TO MONETIZE (3):
+CHARGING FOR ENHANCED ACCESS
+Sometimes a platform that facilitates a monetary transaction may be unable
+to own, and hence to monetize, the transaction. Such platforms may instead
+charge producers for enhanced access to consumers. This refers to the
+provision of tools that enable a producer to stand out above the crowd and
+be noticed on a two-sided platform, despite an abundance of rival producers
+and the resulting intense competition to attract consumer attention.
+Platforms that charge producers fees for better targeted messages, more
+attractive presentations, or interactions with particularly valuable users are
+using enhanced access as a monetization technique.
+The system of monetizing enhanced access generally doesn’t harm
+network effects, since all producers and consumers are permitted to
+participate in the platform on an open, non-enhanced basis. But those for
+whom the additional value of enhanced access is particularly great can pay
+for that extra value—allowing a portion of that value to be captured by the
+platform business.
+The traditional classified advertisement model, for example, supported
+local newspapers for decades through paid placement of commercial
+messages. Today, online platforms use a similar model, asking producers to
+pay for more prominent placement of their messages. Yelp, for example,
+offers restaurants enhanced visibility and better branding on its platform by
+charging for a premium listing in search results. Restaurants pay for this
+service, since it makes it easier for them to break through the noise and
+attract the attention of the most valuable potential consumers.
+
+
+Google search may also be seen through a similar lens. Every website
+publisher can achieve higher placement for its site through search engine
+optimization, a self-managed website design and coding process that
+produces no revenue for Google. However, some publishers choose to buy
+premium placement through Google Adwords. In a similar fashion, Tumblr,
+a micro-blogging platform acquired by Yahoo in 2013, allows users to
+promote their posts to a larger audience for a fee. Twitter, too, promotes
+sponsored content at the top of its feed.
+Another way of monetizing enhanced access is by charging users for
+lowering barriers that otherwise exist between users. Dating websites, for
+example, often allow men to see profiles of women without revealing
+identifying details. Users who pay a subscription fee are allowed access to
+additional information that enables them to connect directly with other
+users who interest them.
+Monetizing enhanced access to users needs to be done with care. If not
+done right, it can increase the noise level on the platform and decrease the
+relevance of content for consumers, leading to negative network effects, as
+described in chapter 2.
+One important principle is to ensure that consumers can easily
+distinguish between content that has been elevated or highlighted as part of
+a paid access program and content whose high ranking or prominence is
+organic. Premium listings on Yelp and ads associated with Google’s search
+results look different from organic results, creating a sense of transparency
+that enhances user trust. Most search engines before Google that failed to
+follow this principle ended up confusing and annoying users and damaging
+the value of their platforms. So-called native advertising techniques, where
+paid content on the Internet is designed to resemble unpaid content, run the
+risk of appearing deceptive and alienating users.
+Platform managers must also be careful not to allow monetization of
+enhanced access to create the impression that user access is being restricted.
+As the world’s largest social network, Facebook creates tremendous value
+for brands that want to engage with current and potential customers. Some
+consumer brands have grown massive followings on Facebook. However,
+during 2014 and 2015, Facebook was widely criticized for making curation
+changes that limit the reach of brands on the platform—except for those
+that pay extra for access to a wider audience. The perception was that
+Facebook was reducing services available to platform participants in order
+
+
+to facilitate a revenue grab. Facebook’s massive size and the powerful
+network effects it generates have enabled it to shrug off these complaints—
+at least, so far. But few other platforms would be able to get away with
+actions like these.
+Finally, platform managers must ensure that their usual curation
+principles are applied rigorously to content from producers who pay for
+enhanced access. Facebook’s value is based on the relevance of its news
+feed, and a torrent of sponsored posts that lack such relevance could
+eventually drive consumers away from the platform.
+WAYS TO MONETIZE (4):
+CHARGING FOR ENHANCED CURATION
+When we think of network effects, we often assume that more is better.
+However, as we noted in chapters 2 and 3, positive network effects are
+driven not simply by quantity but also by quality. When the quantity of
+content on a platform becomes overwhelmingly great, consumers may find
+it increasingly difficult to find the high-quality content they want, thereby
+reducing the platform’s value for them. When this happens, consumers may
+be willing to pay for access to guaranteed quality—in other words, for
+enhanced curation.
+Sittercity, a platform we’ve mentioned elsewhere in this book, charges
+parents to access the platform. To ensure quality and choice, it performs
+rigorous curation and screening of the babysitters who get access to the
+platform—a source of significant additional value to parents who worry
+about the well-being of their children. This extra value allows Sittercity to
+charge a subscription fee to parents instead of the transaction fee usually
+associated with a service provider platform.
+As an advisor at Skillshare, an education platform, Sangeet Choudary
+has helped the platform transition from a transaction-fee-only model to a
+model that provides enhanced value upon payment of a subscription charge.
+Skillshare allows students to pay separately for each course taken. But once
+the platform managers had curated a sizeable amount of high-quality
+courses, Skillshare began to allow students access to multiple courses via a
+monthly subscription fee. Teachers are paid “royalties” based on the
+number of subscription-paying students who sign up for their classes. The
+
+
+growing number of students who choose this model get better value per
+course consumed, while generating recurring revenues for the platform.
+WHOM SHOULD YOU CHARGE?
+A typical platform supports multiple types of users performing multiple
+roles. Given the differences among the users, their economic status, their
+motivations, their objectives, their incentives, and the differing forms and
+amounts of value they derive from the platform, decisions about whom you
+should charge and whom you should not can be complex—especially since
+every decision you make about one user category impacts others in ways
+that may not be obvious.
+However, the general goal of encouraging positive interactions that will
+create value for all participants—together with observations from the
+histories of successful platform businesses—enables us to develop a few
+useful heuristics about when particular pricing choices are appropriate and
+when they are not.
+•    Charging all users. As we’ve noted, platform businesses rarely charge all their users the way
+pipeline businesses generally do. Charging all users would, in most cases, discourage
+participation, thereby reducing or destroying network effects. However, in a few cases,
+charging all users actually enhances network effects. In the offline world, for instance,
+prestigious membership organizations like country clubs charge all members. High
+membership dues (along with vetting processes such as requiring recommendations from
+existing members) serve as curating techniques to guarantee member quality. Some online
+platforms use this model—for example, Carbon NYC, a platform for multimillionaire
+residents of New York City. However, in many social and business settings, “willingness to
+pay” and “quality” are far from synonymous, so this pricing system must be used very
+carefully and selectively.
+•    Charging one side while subsidizing another. Some platforms are able to charge members
+of one category of users (call them A) provided they allow members of another category of
+users (B) to participate for free—or even subsidize or incentivize them. This works when
+users from category A highly value the opportunity to make contact with users from category
+B—but the feeling is not equally reciprocated. As we’ve noted, bars and pubs in the offline
+world have long used this strategy by offering women free or discounted drinks on Ladies’
+Nights. Many online dating websites follow a similar strategy, incentivizing memberships for
+women as a way of attracting male members who will pay full freight.
+•        Charging most users full price while subsidizing stars. Certain platforms choose to
+subsidize or incentivize stars—super-users whose presence attracts large numbers of other
+users. In offline business, malls have been known to offer attractive lease terms to popular
+large retailers like Target, whose presence guarantees the customer traffic that other mall
+occupants will readily pay a premium for. In a similar way, online platforms like Skillshare
+
+
+and Indiegogo go to great lengths to court celebrity teachers and campaign creators, whose
+star power attracts other producers as well as large numbers of curious consumers. Microsoft
+learned this lesson when creating its Xbox gaming platform. Its initial monetization strategy
+paid game developers (producers) a one-time purchase fee while channeling ongoing user fees
+to Microsoft. But superstar game developer Electronic Arts refused to work on these terms and
+threatened to develop for Sony instead. Microsoft eventually had to succumb and agree to
+special terms for EA, though the details have not been publicly disclosed.
+•        Charging some users full price while subsidizing users who are price-sensitive. The
+category of users that is most sensitive to pricing is more likely to abandon the platform when
+charged, killing the network effect. Thus, it generally makes sense to discount or subsidize
+users who are price-sensitive while charging others the full freight. Real-world experience
+shows that it can be difficult to predict which side of a platform market is likely to be more
+price-sensitive. During the 1990s, the Denver real estate market experienced a glut of
+properties, making property owners desperate for rentals. Real estate agents charged owners
+broker fees, while tenants paid nothing. By contrast, during the same period, Boston had a
+scarcity of available properties, making would-be renters desperate to find places to stay; real
+estate agents charged potential tenants, while allowing owners to list their properties without
+paying a fee.
+As you can see, deciding whom to charge is a delicate balancing act. The
+need to monetize the platform must be carefully weighed against the
+friction invariably produced by imposing a cost. Deciding precisely where
+the system can afford to create some friction—and how much friction can
+be tolerated without crippling the growth of network effects—is no easy
+matter.
+Sometimes, a less-than-optimal monetization strategy can be made
+workable through ingenuity. During its early years, Alibaba, the e-
+commerce platform company that has been called China’s eBay and
+Amazon rolled into one, was unable to charge transaction fees simply
+because its primitive software had trouble tracking the flow of online deals.
+CEO Jack Ma was forced to charge membership fees instead—an option he
+would have preferred to avoid because of the entry friction it creates.
+Alibaba managed to overcome this problem by offering sizeable
+commissions to salespeople who convinced others to sign on to the
+platform. When word got around that some Alibaba sales agents were
+earning commissions in excess of a million Chinese yuan, equivalent to
+well over $100,000, the drive to enlist members shifted into high gear
+despite the friction caused by the entry fees. To this day, Alibaba charges no
+transaction fees, having managed to monetize the platform through
+advertising—as if a company that facilitated transactions, like Amazon and
+eBay, were to generate its profits by selling ads like Google.
+
+
+FROM FREE TO FEE: HOW DESIGN DECISIONS IMPACT
+THE TRANSITION TO MONETIZATION
+As many of the cases mentioned in this chapter suggest—and as plenty of
+familiar real-world examples illustrate—the imperative to create and grow
+network effects often leads platform founders to begin by offering their
+services for free. Creating value for users while asking nothing in return is
+often a great way to attract members and encourage participation. “Users
+first, monetization later,” as the slogan goes. Or, in a variant that we heard
+from the executive in charge of platform strategy for Haier Group, a
+Chinese manufacturing company, “You never take first money.” In other
+words, only after a value unit has been created and exchanged with results
+that are satisfactory to both the producer and the consumer should the
+platform business itself seek to capture a share of that value.
+A number of highly promising platforms have foundered because they
+ignored this rule and instead rushed to monetize their offerings prematurely.
+Sean Percival, the former vice president of online marketing for the failed
+social network Myspace, recalls the dire effect of financial pressures
+following the acquisition of the platform by Rupert Murdoch’s News
+Corporation. The “last nail in the coffin,” Percival says, was when Murdoch
+promised stock analysts in an earnings call that Myspace would generate a
+billion dollars in revenue that year—at a time when the true revenue figure
+was a tenth of that. As a result, Myspace managers began scrambling to sign
+up any program or service that someone was willing to sponsor—no matter
+how inane or annoying it might be. This was one of the factors that
+ultimately led users to abandon Myspace in favor of Facebook.6
+As we’ve observed, there are a number of ways to shift later to a
+monetization model that lets the platform business capture some fraction of
+the value created. However, the transition is often fraught with difficulty.
+These key principles of platform design help ensure that the transition to
+monetization—from free to fee, as Meetup’s Heiferman put it—can be
+managed successfully.
+•        If possible, avoid charging for value that users previously received for free. People
+naturally resent being told that they have to pay for a good or service they’ve previously
+received for free—as we saw in the case of Meetup. And not all platform businesses have been
+as successful as Meetup at navigating such a transition. Some, like Zvents, either died or were
+forced to dramatically alter the nature of their offering.
+
+
+•    Also, avoid reducing access to value that users have become accustomed to receiving. As
+we noted, Facebook was offering tremendous value for free and actually needed to cut down
+on that organic value when it decided to provide premium content promotion to paying
+producers. This led to complaints from both producers and consumers. Facebook’s enormous
+network effects enabled it to survive this course correction, but for many lesser platforms it
+might have been fatal.
+•    Instead, when transitioning from free to fee, strive to create new, additional value that
+justifies the charge. Of course, you must ensure that, if you charge for enhanced quality, you
+control for it and guarantee it. Critics have assailed Uber for charging a Safe Rides fee to pay
+for drivers’ background checks and other safety measures while apparently cutting corners on
+those same steps.
+•    Consider potential monetization strategies when making your initial platform design
+choices. From the time of launch, a platform should be architected in a manner that affords it
+control over possible sources of monetization. This directly impacts how open or closed the
+platform is. For example, if platform managers hope to monetize through a transaction fee,
+they need to ensure that the platform design makes it possible for them to capture control of
+transactions. If platform managers hope to monetize by charging for access to their user base,
+the platform should be designed to control the avenues through which content reaches the
+users as well as the flow of data about users.
+As this chapter has shown, monetization is a complicated challenge—
+and a crucial one that may determine the ultimate viability of a platform.
+Those seeking to launch a successful platform can’t afford to ignore the
+issues surrounding monetization or defer thinking about them until after
+network effects have been established. Instead, platform managers should
+be thinking about potential monetization strategies from day one, and plan
+their design decisions so as to keep as many monetization options as
+possible open for as long as possible.
+
+
+TAKEAWAYS FROM CHAPTER SIX
+    A well-managed platform can create excess value in four ways: access to value creation,
+access to the market, access to tools, and curation. Monetization is about capturing a
+portion of the excess value created.
+    Techniques for monetizing a platform include charging a transaction fee, charging users for
+enhanced access, charging third-party producers for access to a community, and charging a
+subscription fee for enhanced curation.
+    One of the most crucial monetization choices is deciding whom to charge, since the
+difference in roles played by various platform users means that charging them can have
+widely differing network effects.
+    Given the complexity of the monetization challenge, platform managers should take
+potential monetization strategies into account in every decision they make regarding
+platform design.
+OceanofPDF.com
+
+
+7
+OPENNESS
+Defining What Platform Users
+and Partners Can and Cannot Do
+Wikipedia is a marvel of the world of platforms—an open-sourced
+encyclopedia that, within a few years, eclipsed traditional purveyors of
+information to become the most popular reference site in the world.
+Millions of people have come to rely upon Wikipedia as a useful,
+universally accessible, virtually unlimited source of data that is generally
+highly reliable.
+Except when it isn’t. And when it isn’t, the results can be horrific.
+Many users of Wikipedia will be able to point to their own favorite tale
+of bizarre misinformation popping up on the site. Perhaps the most famous
+is the entry titled “Murder of Meredith Kercher”—better known by the
+names of the two people widely suspected of the crime, the American
+student Amanda Knox and her Italian boyfriend Raffaele Sollecito. Under
+Wikipedia’s policy of largely open editing by any interested party, this entry
+has now been edited over 8,000 times by over 1,000 people—almost
+entirely by people who have been convinced of the guilt of Knox and
+Sollecito ever since the crime was committed back in 2007. Throughout
+their complicated legal ordeal, including one conviction, its overturning by
+a second court, and another conviction, these self-appointed editors
+continually revised the page to eliminate any potentially exculpating
+evidence and to emphasize the likelihood of guilt.
+The controversy over the entry grew so intense that Wikipedia founder
+Jimmy Wales got involved. Wales studied the matter and issued a statement:

@@ -1,0 +1,2927 @@
+# BlandDavidJOste_2020_CardSorting_TestingBusinessIdeas
+
+226
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Product / Research / Finance
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Buy a Feature is ideal for prioritizing features and refining 
+customer jobs, pains, and gains.
+DISCOVERY / DISCUSSION PROTOTYPES
+Buy a Feature
+A technique where people use pretend currency to buy the features 
+that they would like to be available for a given product.
+
+
+227
+OVERVIEW
+1. Recruit
+□
+□Recruit 15 –20 target 
+customers.
+2. Prepare
+□
+□Set up the room with play 
+money, note cards, and grid 
+paper.
+3. Design
+□
+□Explain that this is a 
+hypothetical setting. Share 
+the list of 15 –30 features 
+and available play money 
+budget.
+4. Buy
+□
+□Each customer allocates 
+their budget to the features 
+they want. They can collab-
+orate with others to receive 
+more features. It’s import-
+ant not to bias customers 
+by providing feedback as 
+they choose features.
+5. Analyze
+□
+□Calculate on grid paper 
+which features received the 
+most play money.  
+ 
+To learn more about Buy a 
+Feature we highly recommend 
+reading Innovation Games  
+by Luke Hohmann.
+buy a feature
+preference & prioritization
+
+
+228
+EXPERIMENTS
+discovery
+Cost 
+Running a Buy a Feature experiment is 
+relatively cheap. If you are facilitating it in 
+person, then the only materials you need 
+are play money, note cards, and grid paper. 
+If you are facilitating it remotely over video, 
+then you’ll need low-cost or free virtual 
+white-boarding software.
+ 
+Setup Time 
+Setup time for Buy a Feature can take a  
+few days. You’ll need to recruit customers, 
+purchase supplies, and setup the room.  
+Most of your time will be spent defining and 
+pricing the features for the session.
+ 
+Run Time 
+Run time for Buy a Feature is very short.  
+You can facilitate it in less than one hour. 
+ 
+ 
+Evidence  
+ 
+ 
+Feature ranking 
+Customer jobs 
+Customer pains 
+Customer gains 
+Top three features that were purchased  
+the most by customers. 
+	
+Take note of any customer jobs, pains, 
+and gains mentioned that are driving the 
+customers’ prioritizations. 
+	
+Buy a Feature is relatively weak evi-
+dence — it’s a lab environment. However,  
+it can help inform higher fidelity feature 
+experiments that focus on action.
+ 
+Customer feedback 
+Customer Quotes 
+Take note of additional quotes from the cus-
+tomers that are not limited to customer jobs, 
+pains, and gains. 
+	
+Customer quotes are relatively weak evi-
+dence, but helpful for context and qualita-
+tive insights for upcoming experiments.
+ 
+Capabilities 
+Product / Research / Finance 
+Almost anyone can facilitate a Buy a 
+Feature with some practice. It will help, 
+however, if you have design, research, and 
+product abilities — you’ll want to assess 
+the outputs and provide inspiration when 
+needed.
+Requirements 
+Feature List and Target Customer 
+Buy a Feature requires you to put significant 
+thought into what features you’d like to 
+include in your product. It also requires 
+customers to have a bit of context about the 
+product, otherwise their rankings will not be 
+very useful to you. 
+DETAILS
+
+
+229
+Sales Force Feedback  
+p. 138 
+Use sales force feedback 
+to inform what features to 
+include in Buy a Feature.
+Feature Stub  
+p. 156  
+Create a Feature Stub for top 
+ranking features to determine 
+if people will show interest in 
+the real world.
+Customer Support Analysis 
+p. 142 
+Use customer support data 
+to inform what features could 
+address gaps in your product.
+Split Test  
+p. 270 
+Split Test different top-ranking 
+features in your product  
+to measure engagement.
+Discussion Forums  
+p. 134 
+Search through discussion 
+forums to see what unmet 
+needs customers have to 
+inform your feature list.
+Clickable Prototype  
+p. 236 
+Invite participants back to 
+test clickable prototypes of 
+the top ranking features.
+Buy a Feature
+PAIRINGS
+Before
+After
+buy a feature
+preference & prioritization
+
+
+230
+EXPERIMENTS
+discovery
+“Invention is not disruptive.  
+Only customer adoption  
+is disruptive.”  
+Jeff Bezos  
+Entrepreneur and philanthropist,  
+founder of Amazon.com
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+3 
+—
+ 
+E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+S
+3
+.
+3 
+—
+ V
+A
+L
+I
+D
+A
+T
+I
+O
+N
+
+
+232
+EXPERIMENTS
+discovery
+TEST
+BUSINESS  
+DESIGN
+Experiment
+
+
+233
+Discovery 
+Discover if your general 
+direction is right. Test basic 
+hypotheses. Get first insights 
+to course-correct rapidly. 
+Validation 
+Validate the direction you’ve 
+taken. Confirm with strong 
+evidence that your business 
+idea is very likely to work. 
+Idea
+Business
+Search & Testing
+Execution
+
+
+234
+EXPERIMENTS
+validation
+Validation  
+Experiments
+EXPERIMENT
+TYPE
+Interaction Prototypes
+Clickable Prototype  p. 236 
+Single Feature MVP  p. 240 
+Mash-Up  p. 244 
+Concierge  p. 248 
+Life-Sized Prototype  p. 254
+Call to Action
+Simple Landing Page  p. 260 
+Crowdfunding  p. 266 
+Split Test  p. 270 
+Presale  p. 274 
+Validation Survey  p. 278
+Simulation
+Wizard of Oz  p. 284 
+Mock Sale  p. 288 
+Letter of Intent  p. 294 
+Pop-Up Store  p. 300 
+Extreme Programming Spike  p. 306
+
+
+235
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+COST
+SETUP TIME
+EVIDENCE STRENGTH
+THEME
+RUN TIME
+
+
+236
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Clickable prototype is ideal for rapidly testing the concept of your 
+product quickly with customers at a higher fidelity than paper.
+Clickable prototype is not ideal as a replacement for proper 
+usability with customers. 
+DISCOVERY / INTERACTION PROTOTYPE
+Clickable Prototype
+Digital interface representation with clickable zones to simulate  
+the software’s reactions to customer interaction.
+
+
+237
+OVERVIEW
+Execute
+□
+□Explain to the customers 
+how this is an exercise to 
+get their feedback on what 
+you are planning to deliver. 
+Make sure they understand 
+that you value their input.
+□
+□Have one person conduct 
+the interviews and interact 
+with the customer.
+□
+□Have another person write 
+notes and act as a scribe.
+□
+□Wrap up and thank the 
+participants.
+Analyze
+□
+□Place the sketches on the 
+wall and place your notes, 
+observations, and quotes 
+around them.
+□
+□Where did they get stuck or 
+confused?
+□
+□What did they get excited 
+about?
+□
+□Use this feedback to inform 
+your next experiment of the 
+experience.
+Prepare
+□
+□Define the goals of your 
+clickable prototype 
+experiment.
+□
+□Determine the target audi-
+ence to test with, preferably 
+a group that isn’t cold and 
+has no context for your 
+offering.
+□
+□Write your script.
+□
+□Create your clickable proto-
+type screens with hot zones.
+□
+□Test it internally to make 
+sure that the interaction 
+works.
+□
+□Schedule your clickable 
+prototype experiments with 
+target customers.
+clickable prototype
+interaction prototypes
+
+
+238
+EXPERIMENTS
+validation
+Cost 
+Clickable prototypes are a little more 
+expensive than paper prototypes, but still 
+relatively cheap. There are many tools and 
+templates that allow you to quickly create  
+a clickable prototype without having to  
+create it from scratch yourself.
+ 
+Setup Time 
+Setup time for a clickable prototype is rela-
+tively short. It should only take a day or two 
+to create your clickable prototype.
+ 
+Run Time 
+Run time for a clickable prototype is also 
+short, as in a few days to a week. You’ll want 
+to rapidly test the clickable prototype with 
+target customers, to get feedback on the 
+Value Proposition and flow of the solution. 
+ 
+ 
+Evidence  
+ 
+ 
+Task completion 
+Task completion percentage.  
+Time to complete tasks. 
+	
+Manual task completion is not necessarily 
+strong evidence, but it is a bit stronger than 
+using paper and will provide glimpses into 
+where customers could get confused.
+ 
+Customer feedback 
+Customer quotes on the Value Proposition 
+and usefulness of the imagined solution. 
+	
+Customer quotes on clickable prototypes 
+are relatively weak evidence, but stronger 
+than feedback on paper prototype  
+experiments. 
+ 
+Capabilities 
+Design / Product / Technology / Research 
+In addition to a digital product idea, you’ll 
+need design skills to create the appearance 
+of the product in a prototype tool or template. 
+It’ll require you to create hot zones that link 
+to other mocked up screens once clicked. 
+You’ll also want to write a script and have 
+the sessions recorded.
+Requirements 
+A Digital Product Idea 
+Clickable prototyping requires that your 
+idea be digital in nature, since your audience 
+will be clicking through a digital experience 
+on a screen. At the point at which you’re con-
+sidering a clickable prototype, you should 
+have a strong opinion on what the flow of 
+the product should look like, but still be open 
+to it being wrong. 
+DETAILS
+
+
+239
+Customer Interviews  
+p. 106 
+Use the notes from your inter-
+views to inform your clickable 
+prototype script.
+Mash-Up 
+p. 244  
+Create a Mash-Up from  
+your clickable prototype 
+experiment with existing 
+technology.
+Paper Prototype 
+p. 182 
+Use the feedback from a 
+paper prototype to inform 
+your clickable prototype.
+Storyboard  
+p. 186 
+Use what you learned from 
+the clickable prototype test-
+ing to refine your flow with a 
+storyboarding experiment.
+Boomerang  
+p. 204 
+Use the notes from your 
+Boomerang testing to shape 
+how the clickable prototype 
+can address unmet needs.
+Explainer Video  
+p. 200 
+Use the notes from your 
+clickable prototype testing 
+to inform your higher fidelity 
+Explainer Video.
+Clickable Prototype
+PAIRINGS
+Before
+After
+clickable prototype
+interaction prototypes
+
+
+240
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Tech / Legal / Marketing / Finance
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Single Feature MVP is ideal for learning if the core promise  
+of your solution resonates with customers.
+DISCOVERY /  INTERACTION PROTOTYPE
+Single Feature MVP
+A functioning minimum viable product with the single feature  
+needed to test your assumption.
+
+
+241
+Prepare
+□
+□Design the smallest version 
+of your feature that solves 
+for a high impact customer 
+job.
+□
+□Test it out internally first to 
+make sure it works.
+□
+□Acquire customers for your 
+Single Feature MVP.
+Execute
+□
+□Conduct the Single Feature 
+MVP experiment with 
+customers.
+□
+□Gather satisfaction feed-
+back from the customers.
+Analyze
+□
+□Review your customer  
+satisfaction feedback.
+□
+□How many customers 
+converted?
+□
+□What did it cost you to  
+operate this solution?
+OVERVIEW
+single feature mvp
+interaction prototypes
+
+
+242
+EXPERIMENTS
+validation
+Cost 
+Single Feature MVPs are a bit more expen-
+sive then low fidelity experiments, because 
+you're creating a higher fidelity version that 
+delivers value to the customer.
+ 
+Setup Time 
+Setting up a Single Feature MVP can take 
+1–3 weeks. You’ll need to design, create, 
+and test it out internally before involving 
+customers. You are likely going to charge 
+for this version, so it’ll need to do one thing 
+really well.
+ 
+Run Time 
+Running a Single Feature MVP experiment 
+can take several weeks or months. You’ll 
+want to run it long enough to analyze qual-
+itative and quantitative feedback before 
+prematurely optimizing or trying to scale. 
+ 
+ 
+Evidence  
+ 
+ 
+Customer satisfaction 
+Customer quotes and feedback on how sat-
+isfied they were after receiving the output 
+from your Single Feature MVP. 
+	
+Customer satisfaction evidence is strong 
+in this case because you are asking for 
+feedback after the value was delivered to 
+the customer, instead of a hypothetical 
+situation.
+ 
+# of purchases 
+Customer purchases from using the Single 
+Feature MVP. 
+	
+Payments are strong evidence, even if 
+it’s only a single feature customers are 
+purchasing.
+ 
+Cost 
+How much does it cost to design, create, 
+deliver, and maintain a Single Feature MVP? 
+	
+The cost it takes you to deliver a Single 
+Feature MVP is strong evidence and a lead-
+ing indicator of what it’ll take to create a 
+viable business in the future. 
+ 
+Capabilities 
+Design / Product / Technology / Legal / 
+Marketing / Finance 
+You’ll need all of the capabilities to create 
+and deliver the feature to the customer. 
+This is very context specific, depending on 
+whether you are delivering a physical or  
+digital product or service to the end customer.
+Requirements 
+Evidence of Niche Customer Need 
+This is a longer, more expensive experiment 
+with a higher transaction cost. Before con-
+sidering a Single Feature MVP, you’ll need 
+to have worked through a series of lower 
+fidelity experiments to inform the feature. 
+You should have clear evidence of a specific 
+customer need that the feature will address. 
+DETAILS
+
+
+243
+Concierge  
+p. 248 
+Use what you’ve learned from 
+the Concierge experiment 
+to inform the design of your 
+feature.
+Customer Interviews  
+p. 106  
+Interview the people who 
+used the feature to better 
+understand how it satisfied 
+their needs.
+Wizard of Oz 
+p. 284 
+Use what you’ve learned from 
+the Wizard of Oz experiment 
+to inform the design of your 
+feature.
+Validation Survey 
+p. 278 
+Survey the people who used 
+the feature to better under-
+stand how it satisfied their 
+needs.
+Simple Landing Page  
+p. 260 
+Create a simple landing 
+page to collect interest in 
+your Single Feature MVP 
+experiment.
+Crowdfunding  
+p. 266 
+Create a crowdfunding cam-
+paign to fund what it would 
+take to scale beyond a single 
+feature.
+Single Feature MVP
+PAIRINGS
+Before
+After
+single feature mvp
+interaction prototypes
+
+
+244
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Tech / Legal / Marketing / Finance
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Mash-Up is ideal for learning if the solution resonates 
+with customers. 
+DISCOVERY /  INTERACTION PROTOTYPE
+Mash-Up
+A functioning minimum viable product that consists of combining 
+multiple existing services to deliver value.
+
+
+245
+Prepare
+□
+□Map out the process flow 
+needed to create the cus-
+tomer value.
+□
+□Assess the market for exist-
+ing technology products 
+that can be integrated to 
+complete the process.
+□
+□Integrate the technology 
+pieces and test the output.
+□
+□Acquire customers for the 
+Mash-Up.
+Execute
+□
+□Conduct the Mash-Up 
+experiment with customers.
+□
+□Gather satisfaction feedback 
+from customers.
+Analyze
+□
+□Review your customer satis-
+faction feedback.
+□
+□How many customers made 
+it through the process and 
+purchased?
+□
+□Where did they abandon the 
+process?
+□
+□Are there any gaps where 
+the existing technology 
+fell short of customer 
+expectations?
+□
+□Only consider building 
+custom solutions as a 
+result, if the experience was 
+unsatisfactory or if the cost 
+of using these solutions 
+doesn’t scale.
+OVERVIEW
+mash-up mvp
+interaction prototypes
+
+
+246
+EXPERIMENTS
+validation
+Cost 
+Mash-Ups are a bit more expensive then low 
+fidelity experiments, since you need to piece 
+together multiple existing technological 
+components to deliver an overall solution. 
+The costs incurred will be paying for the 
+existing technology and the effort to wire it 
+all together.
+ 
+Setup Time 
+Setting up a Mash-Up can take 1–3 weeks. 
+You’ll need to evaluate and piece together 
+existing technology.
+ 
+Run Time 
+Running a Mash-Up experiment can take 
+several weeks or months. You’ll want to run 
+it long enough to analyze qualitative and 
+quantitative feedback before prematurely 
+optimizing or trying to scale. 
+ 
+ 
+Evidence  
+ 
+ 
+Customer satisfaction 
+Customer quotes and feedback on how sat-
+isfied they were after receiving the output 
+from your Mash-Up. 
+	
+Customer satisfaction evidence is strong 
+in this case because you are asking for 
+feedback after the value was delivered to 
+the customer, instead of a hypothetical 
+situation.
+ 
+# of purchases 
+Customer purchases from using the 
+Mash-Up. 
+	
+Payments are strong evidence, even if 
+they don’t realize it’s pieced together  
+behind the scenes with existing technology. 
+ 
+ 
+Cost 
+How much does it cost to design, create, 
+deliver, and maintain a Mash-Up? 
+	
+The cost it takes you to deliver a Mash-Up 
+is strong evidence and a leading indicator 
+of what it’ll take to create a viable business 
+in the future.
+ 
+Capabilities 
+Design / Technology / Product /  
+Marketing / Legal / Finance 
+You’ll need to be able assess existing 
+technology, choose the right components, 
+and integrate them together into a solu-
+tion that can deliver the needed value to 
+customers. It doesn’t necessarily mean you 
+need to know how all the technology works, 
+but you’ll need to know enough to put it all 
+together behind the scenes. In addition, the 
+Mash-Up will need all of the other character-
+istics of a legitimate product.
+Requirements 
+A Process to Automate 
+This is another longer, more expensive 
+experiment with a higher transaction cost. 
+Before considering a Mash-Up, you’ll need to 
+have run enough lower fidelity experiments 
+to have an idea of the process you’ll need 
+to deliver value to the customer. Use that 
+process knowledge to begin the assessment 
+of what existing technology you could piece 
+together to deliver that value. 
+DETAILS
+
+
+247
+Concierge  
+p. 248 
+Use what you’ve learned from 
+the concierge experiment 
+to inform the design of your 
+Mash-Up.
+Customer Interviews  
+p. 106  
+Interview the people who 
+used the feature to better 
+understand how it satisfied 
+their needs.
+Wizard of Oz  
+p. 284 
+Use what you’ve learned from 
+the Wizard of Oz experiment 
+to inform the design of your 
+Mash-Up.
+Validation Survey  
+p. 278 
+Survey the people who used  
+the feature to better understand 
+how it satisfied their needs.
+Simple Landing Page  
+p. 260 
+Create a simple landing page 
+to collect interest in your 
+Mash-Up experiment.
+Crowdfunding  
+p. 266 
+Create a crowdfunding  
+campaign to fund what it 
+would take to scale beyond  
+a Mash-Up.
+Mash-Up
+PAIRINGS
+Before
+After
+mash-up mvp
+interaction prototypes
+
+
+248
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology / Legal / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Concierge is ideal for learning firsthand about steps needed  
+to create, capture, and deliver value to a customer. 
+Concierge is not ideal for scaling a product or business. 
+DISCOVERY /  INTERACTION PROTOTYPE
+Concierge
+Creating a customer experience and delivering value manually,  
+with people instead of using technology. Unlike Wizard of Oz,  
+the people involved are obvious to the customer.
+
+
+249
+Prepare
+□
+□Plan the steps of creating 
+the product manually.
+□
+□Create a board to track the 
+orders and steps needed.
+□
+□Test the steps with someone 
+first to make sure they 
+work.
+□
+□If taking orders on the web, 
+make sure analytics are 
+integrated. Otherwise, doc-
+ument the numbers on grid 
+paper or excel.
+ 
+Execute
+□
+□Receive orders for the  
+concierge experiment.
+□
+□Conduct the concierge 
+experiment.
+□
+□Document how long it takes 
+to complete the tasks.
+□
+□Gather feedback from  
+customers with interviews 
+and surveys.
+ 
+Analyze
+□
+□Review your customer 
+feedback.
+□
+□Review your metrics for:
+• Length of time for task 
+completion.
+• Where you experienced 
+delays in the process.
+• How many purchased.
+□
+□Use these findings to 
+improve your next concierge 
+experiment and to help 
+inform where to automate 
+the process.
+OVERVIEW
+concierge
+interaction prototypes
+
+
+250
+EXPERIMENTS
+validation
+Cost 
+As long as you keep the concierge experi-
+ments small and simple, they are cheap to 
+run, mostly because you are doing all of the 
+work manually with little to no technology 
+involved. If you try to scale the experiment 
+or make it overly complex, it’ll increase the 
+cost.
+ 
+Setup Time 
+Setting up a concierge experiment takes a 
+bit longer than other rapid prototyping tech-
+niques, because you have to manually plan 
+out all of the steps and acquire customers 
+for it.
+ 
+Run Time 
+Running a concierge experiment can take 
+days to weeks, depending on how complex 
+the process is and how many customers  
+you involve in the experiment. It generally 
+takes longer than other rapid prototyping 
+techniques.  
+ 
+ 
+Evidence  
+ 
+ 
+Customer satisfaction 
+Customer quotes and feedback on how  
+satisfied they were after receiving the output  
+from your experiment. 
+	
+Customer satisfaction evidence is strong 
+in this case because you are asking for 
+feedback after the value was delivered to 
+the customer, instead of a hypothetical 
+situation.
+ 
+# of purchases 
+Customer purchases from the concierge 
+experiment. What are they willing to pay  
+for a manual experience? 
+	
+Payments are strong evidence, even if  
+you are manually delivering value. 
+ 
+ 
+Time it takes to complete the process 
+Lead time is the total time measured from 
+customer request to when the order was 
+delivered. 
+	
+Cycle time is the amount of time spent 
+working on the request. It does not include 
+the time the request sits idle before action 
+was taken on it. 
+	
+The time it takes for you to complete the 
+concierge experiment is very strong, in that 
+it gives you firsthand knowledge of the steps 
+needed to receive a request and deliver 
+value to a customer.
+ 
+Capabilities 
+Design / Technology / Product /  
+Marketing / Legal 
+You’ll need all of the capabilities to man-
+ually create and deliver the product to 
+the customer. This is very context specific, 
+depending on whether you are delivering a 
+physical or digital product or service to the 
+end customer.     
+Requirements 
+Time 
+The biggest requirement for a concierge  
+test is time. Your time. The team’s time. If 
+you do not make time to run this experiment, 
+it will be frustrating for both you and the 
+customer. Be sure to plan when you will run 
+the Concierge experiment and clear your 
+schedule so that you can give it the atten-
+tion it will need. 
+DETAILS
+
+
+251
+Feature Stub  
+p. 156 
+Create a Feature Stub within 
+your existing product to use 
+as a funnel for your concierge 
+experiment.
+Mash-Up 
+p. 244  
+Automate manual steps from 
+your concierge experiment 
+with existing technology.
+Brochure  
+p. 194 
+Hand out brochures with a call 
+to action as a funnel for your 
+concierge experiment.
+Referral Program  
+p. 172 
+Create a referral program to 
+understand if those satisfied 
+with the outcome would refer 
+other customers.
+Simple Landing Page  
+p. 260 
+Create a simple landing page 
+to collect interest in your  
+concierge experiment.
+Wizard of Oz  
+p. 284 
+Use what you’ve learned from 
+the concierge experiment to 
+deliver the value manually, 
+without making the human 
+steps visible to the end 
+customer.
+Concierge
+PAIRINGS
+Before
+After
+concierge
+interaction prototypes
+
+
+252
+EXPERIMENTS
+validation
+CASE STUDY
+CONCIERGE 
+Buying and Selling a Home 
+Realtor.com
+R
+ealtor.com is a real estate listings web-
+site operated by Move, Inc. out of Santa 
+Clara, California. It provides buyers and 
+sellers with the information, tools and pro-
+fessional expertise they need throughout  
+the home journey. 
+
+
+253
+	
+Dave would then individually email 
+these PDFs out to the users who signed 
+up. Additionally in his email to them, Dave 
+added a meeting link to further connect to 
+these users in hopes to learn more and see 
+how we could help. 
+ 
+Evidence 
+80 signups in just a few minutes. 
+It surpassed expectations quite quickly. 
+Based on site statistical data, the team had 
+estimated that it would generate 30 signups 
+within 3 hours. It generated more than 80 
+signups in a few minutes, faster than they 
+could even shut it off.
+ 
+Insights 
+Hypothesis validated — audience has prob-
+lem. The team learned that a reasonably 
+large pool of people within their site that 
+had the buying and selling problem. 
+	
+The team also learned about the chal-
+lenge with concierge testing. High volume 
+could be a good sign but might require you 
+to do a lot more manual work than you ini-
+tially set out to do. It’s probably worth noting 
+that this type of work requires your ability to 
+execute for these users. When dual-tracking 
+work, you have to anticipate and set aside 
+appropriate time to deliver on this promise 
+and really aim to learn. With the copious 
+amounts of work you might have in your 
+day-to-day, it can be hard to manage it all.
+As realtor.com teams spoke with people who 
+were looking to sell their home, one of the 
+problems commonly heard was the struggle 
+with timing the process of selling a house 
+with buying a new one. When people move, 
+they end up moving to another zip code or 
+other cities or even other states.  
+	
+The idea was to aggregate and show 
+the market insights for them with the two 
+markets side by side. Would that be useful 
+for them? Would we extend that into a real 
+feature?
+ 
+Hypothesis 
+The realtor.com team believed that sellers 
+on their site who are looking to sell within 
+the next year will also be buying at the 
+same time.
+ 
+Experiment 
+Concierge delivery of PDF insights. 
+The team did a simple concierge experiment 
+that was triggered by a call to action. When 
+clicked, the modal window highlighting a 
+value proposition for insights on timing your 
+ability to buy and sell at the same time 
+appeared. Users would then click through 
+a series of questions. Once complete, Dave 
+Masters (the product manager) manually 
+created the output by piecing together 
+insights from other parts found throughout 
+Realtor.com into a PDF.  
+ 
+Actions 
+Persevere by testing in app features. 
+Knowing the audience mix was roughly  
+the size anticipated, the team felt confident 
+in moving forward with more experiments 
+targeting these users within this app. In fact, 
+the very next experiment was a feature stub 
+that included a link to a nonexistent tab 
+for “Selling-Tools” — a place that the team 
+would begin to put Seller specific features 
+and tests.
+concierge
+interaction prototypes
+
+
+254
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Life-sized prototypes are ideal for testing higher fidelity  
+solutions with customers at a small sample size, before  
+deciding to scale your solution. 
+DISCOVERY /  INTERACTION PROTOTYPE
+Life-Sized Prototype
+Life-sized prototypes and real-world replicas of service experiences.
+
+
+255
+Prepare
+□
+□Gather your previous 
+evidence to support the 
+solution.
+□
+□Create your life-sized  
+prototype, which is a replica 
+of your proposed solution.
+□
+□Source customers and 
+schedule the interactive 
+session.
+Execute
+□
+□Show the life-sized  
+prototype to customers.
+□
+□One person on the team 
+conducts the interview.
+□
+□Another person on the team 
+takes notes on customer 
+quotes, jobs, pains, gains, 
+and body language.
+□
+□Wrap up the interview with 
+a call to action or mock 
+sale, to get beyond what 
+the customer says and into 
+what they would do.
+Analyze
+□
+□Review your notes with the 
+team.
+□
+□Update your Value 
+Proposition Canvas based 
+on what you’ve learned.
+□
+□Calculate conversion on 
+mock sales and call to 
+action.
+□
+□Use what you’ve learned 
+to refine and iterate on 
+your prototype for the next 
+round of testing.
+OVERVIEW
+life-sized prototype
+interaction prototypes
+
+
+256
+EXPERIMENTS
+validation
+Cost 
+Life-sized prototypes can be moderately 
+expensive. They need to have a believable 
+level of polish and the bigger the size, the 
+greater the expense.
+ 
+Setup Time 
+The setup time for a life-sized prototype 
+can be quite long, depending on the size 
+and complexity of your solution. It may take 
+several weeks or months to create a high 
+fidelity replica.
+ 
+Run Time 
+Run time for a life-sized prototype is rela-
+tively short. You’ll want customers interact-
+ing with the prototype to better understand 
+the fit between your Value Proposition and 
+their customer jobs, pains, and gains.  
+ 
+ 
+Evidence  
+ 
+ 
+Customer jobs 
+Customer pains 
+Customer gains 
+Customer feedback 
+Customer jobs, pains, and gains and how  
+the prototype could solve for them. 
+	
+Take note of additional quotes from the 
+customers that are not limited to customer 
+jobs, pains, and gains. 
+	
+The evidence is relatively weak evidence —  
+they need to suspend belief and imagine 
+using it in real world scenarios.
+ 
+# of successful mock sales 
+You can calculate the mock sale conversion 
+rate by taking the number people who view 
+the price divided by the number of people 
+who filled out payment information. 
+	
+Payment information submission is very 
+strong evidence. 
+ 
+ 
+# of email signups 
+Conversion rate on people who you inter-
+viewed who provided their email address to 
+be contacted when the solution is available. 
+	
+Customer emails are rather weak  
+evidence, but good for future experiments.
+ 
+Capabilities 
+Design / Product 
+You’ll need mostly product and design capa-
+bilities to create the life-sized prototype. It 
+doesn’t need to be fully operational or have 
+all of the bells and whistles, but it needs to 
+be at a high enough fidelity to interact with 
+customers.
+Requirements 
+Evidence of a Solution 
+Before considering a life-sized prototype, 
+you’ll want to have a significant amount  
+of evidence that a solution is needed.  
+This means you’ve gathered and generated 
+evidence of unmet customer jobs, pains,  
+and gains in the market that warrant testing 
+a high fidelity experiment with customers. 
+DETAILS
+
+
+257
+Buy a Feature  
+p. 226 
+Prioritize what to include in 
+your life-sized prototype.
+Crowdfunding  
+p. 266  
+Generate demand and further 
+validate desirability and  
+viability at a bigger scale.
+Mock Sales  
+p. 288  
+Learn if your customers are 
+willing to pay for the solution 
+while they interact with the 
+prototype.
+Data Sheet  
+p. 190 
+Visualize the specifications 
+to include in your life-sized 
+prototype.
+Explainer Video  
+p. 200 
+Test a video of your Value 
+Proposition and solution with 
+more customers.
+Customer Interviews  
+p. 106 
+Interview your customers 
+while they interact with the 
+prototype to learn about cus-
+tomer jobs, pains, and gains.
+Life-Sized Prototype
+PAIRINGS
+Before
+After
+life-sized prototype
+interaction prototypes
+
+
+258
+EXPERIMENTS
+validation
+LIFE-SIZED PROTOTYPE 
+Validating a Physical Space 
+Zoku
+Z
+oku is a hive of smart lofts and friendly 
+spaces based in Amsterdam and is viewed 
+by experts as the next evolution of Airbnb. 
+They provide a home base for traveling  
+professionals who are living and working in 
+a city for periods from a few days to a few 
+months. As is the case any time you create  
+a new market, the Zoku team has risky 
+assumptions about their business that  
+need testing.
+CASE STUDY
+
+
+259
+ 
+Insights 
+The experience of the space means more 
+than the size of the space. 
+The experiment helped the Zoku team 
+understand nuances about the prototype. 
+When stacked all the normal home elements 
+(sleeping area, storage area, bathroom and 
+kitchen) on to each other like Tetris/Lego, it 
+resulted in a distinction between secondary 
+space (functional elements) and primary 
+space (living space to move around and put 
+your loose furniture).  
+	
+During the course of all the validation 
+rounds they learned that “the experience 
+of space” is different from the amount of 
+square feet and can be positively influenced 
+by clear sight lines through the furniture 
+(the shutters in the sleeping area), large 
+windows, and smart lighting. 
+ 
+Actions 
+Testing space flow with cleaning services. 
+Using what they had learned from the 
+Life-Sized Prototype testing, the team ran 
+another round of testing with cleaning 
+services for the unit. This helped them learn 
+about the service challenges, specifically 
+with the raised sleeping platform.
+ 
+Hypothesis 
+The Zoku team believed that traveling pro-
+fessionals would like to stay for weeks and 
+months in a micro-apartment of only 25m2 
+(around 250 square feet).
+ 
+Experiment 
+Testing living spaces with customers. 
+The team built a Life-Sized prototype of 
+the micro-apartment to test with traveling 
+professionals to determine if they’d stay 
+for weeks and months. They sourced 150 
+traveling professionals, shuttling them over 
+from their workplaces, to interact with the 
+Life-Sized Prototype. 
+	
+Travelers toured and stayed in the Life-
+Sized Prototype. The Zoku team interviewed 
+them while they interacted with the physical 
+space, learning about what worked and 
+what didn’t in the design. 
+ 
+Evidence 
+Gathering qualitative feedback on  
+the space. 
+People were the most enthusiastic about 
+staying when the space used stacking,  
+eliminating internal walls and circulation.  
+If the stairs are in, there is more living space; 
+if the stairs are out it becomes circulation 
+space for the sleeping area. This evidence 
+especially came out when they tested with 
+groups of 4–5 people at once.
+life-sized prototype
+interaction prototypes
+
+
+260
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+A simple landing page is ideal for determining if your  
+Value Proposition resonates with your customer segment. 
+VALIDATION / CALL TO ACTION
+Simple Landing Page
+A simple, digital web page that clearly illustrates your  
+Value Proposition with a call to action.
+
+
+261
+OVERVIEW
+Prepare
+□
+□Choose a template or 
+layout that supports your 
+industry.
+□
+□Find high quality, royalty- 
+free photos to use for your 
+design.
+□
+□Purchase a short, memo-
+rable domain name that 
+reinforces your brand.  
+If your preferred brand is 
+taken already, which many 
+domains are by now, use 
+a verb in front of the name 
+such as “try” or “get.”
+□
+□Include a Value Proposition 
+statement above the fold 
+in large font, preferably 
+header sized.
+□
+□Place your call-to-action 
+email signup above the 
+fold, below your Value 
+Proposition statement.
+□
+□Include customer pains, 
+your solution, and the 
+customer gains below the 
+call-to-action.
+□
+□Integrate analytics and  
+confirm they are working.
+□
+□Don’t forget website require-
+ments such as logo, brand, 
+contact, terms of service, 
+and cookie and privacy 
+policy information.
+Execute
+□
+□Make your landing page live 
+on the web.
+□
+□Drive traffic to your page.
+Analyze
+□
+□Review your analytics on 
+how many people:
+• viewed your landing page.
+• signed up with their email 
+address.
+• 	spent time or engaged 
+with the page by clicking 
+and scrolling.
+□
+□How did different traffic  
+sources convert? For 
+example, if a specific 
+social media ad or email 
+campaign causes more cus-
+tomers to sign up, you may 
+want to replicate it across 
+other platforms.
+□
+□Use these findings to refine 
+your Value Proposition and 
+contact those who signed 
+up for interviews.
+Connections
+Value propositions come 
+from your Value Map. Do not 
+create your Value Proposition 
+in a vacuum or neglect the 
+work that you’ve already 
+done. The Value Map contains 
+hypotheses and your landing 
+page value proposition test  
+is a great way to prove or 
+disprove those hypotheses.
+Customer pains come from 
+your Customer Profile. Take 
+the top three voted customer 
+pains from the canvas and 
+include them in the pains 
+description at the bottom left 
+of the landing page.
+Solution comes from the 
+Value Map product and 
+service. The visitor needs to 
+know how you are delivering 
+the Value Proposition in a real 
+tangible way. The product and 
+services in the middle column 
+of the page should reflect this.
+Gains come from the customer 
+profile. Take the top three 
+voted customer gains from the 
+canvas and include them in the 
+gains description at the bottom  
+right of the landing page.
+2
+3
+4
+2
+3
+4
+1
+simple landing page
+call to action
+
+
+262
+EXPERIMENTS
+validation
+Cost 
+Landing pages are relatively cheap to 
+produce, mostly due to the fact that digital 
+tools have evolved and are much easier to 
+use. It’s one of the cheapest ways you can 
+test your Value Proposition at scale with 
+potential customers.
+ 
+Setup Time 
+Landing pages can be deceptively difficult 
+to do, mostly because you are distilling 
+down all the customer jobs, pains, and gains 
+into short easy-to-understand statements. 
+Still, it shouldn’t take more than a few days 
+at most to design a landing page.
+ 
+Run Time 
+Run time takes a few weeks, although it is 
+largely depending on the amount of traffic 
+you can drive to the landing page. If the 
+daily traffic is low (i.e., less than 100 unique 
+visitors), then you’ll need to run the test for 
+a longer period of time to gather sufficient 
+information. 
+Evidence  
+Unique Views 
+Time Spent on Page 
+Email Signups 
+You can calculate the conversion rate by 
+taking the number views divided by actions 
+= conversion rate. Email conversion rates 
+vary widely by industry but on average it’s 
+between 2% – 5%. For early stage validation 
+we recommend 10% –15% in that you want 
+to be better than average, otherwise why 
+create something new? 
+	
+Email is a rather weak strength of evi-
+dence, in that everyone has email and they 
+give it out freely if even mildly interested. 
+It’s not difficult to unsubscribe or send 
+unwanted email to a junk folder.
+Capabilities 
+Design / Product / Technology  
+Landing pages need to communicate the 
+value clearly and succinctly in the language 
+of the customer. You’ll need the ability to do 
+this well, otherwise it has the risk of gen-
+erating false negatives. If you do not have 
+these abilities yourself, then don’t despair 
+because you are in luck. There are many 
+landing page services that have professional- 
+looking templates that allow you to cre-
+ate landing pages using drag-and-drop 
+technology.
+Requirements 
+Traffic 
+Landing pages need traffic to generate evi-
+dence, generally about 100 unique visitors a 
+day. The good news is that there are many 
+ways you can drive traffic to your landing 
+page, including:
+• Online ads.
+• Social media campaigns.
+• Email campaigns.
+• Redirecting existing traffic.
+• Word of mouth.
+• Discussion forums.
+DETAILS
+
+
+263
+Online Ads  
+p. 146 
+Create the smallest form 
+of your Value Proposition 
+as an online ad to test with 
+customers.
+Customer Interviews  
+p. 106  
+Contact the people who 
+signed up and interview them 
+to learn why they signed up.
+Customer Interviews  
+p. 106 
+Use the notes from inter-
+views to inform your Value 
+Proposition, jobs, pains, and 
+gains on the landing page.
+Validation Survey  
+p. 278 
+Perform surveys with those 
+who signed up to understand 
+why they signed up.
+Split Testing  
+p. 270 
+Try widely different versions 
+of your Value Proposition to 
+see what resonates best with 
+customers.
+Wizard of Oz  
+p. 284 
+Behind the scenes, manually 
+create the Value Proposition 
+for the customers who signed 
+up on the landing page.
+Simple Landing Page
+PAIRINGS
+Before
+After
+simple landing page
+call to action
+
+
+264
+EXPERIMENTS
+validation
+CONISDERATIONS
+Are you a 
+startup?
+Worried 
+about  
+damaging 
+your brand?
+Launch  
+a sub-branded 
+or off-brand 
+landing page
+Yes
+No
+No
+Launch the 
+landing page. 
+No one cares 
+about your 
+brand.
+Yes
+
+
+265
+Branding Concerns 
+Branding the landing page can become a  
+hand-wringing decision if you are part of a 
+larger corporation. Startups have the luxury 
+of testing without drawing attention, based 
+on their brand alone. They can launch a 
+landing page and when people sign up, 
+it’s rarely because of the startup’s brand. 
+Instead, people sign up because the idea 
+stands on its own merit as a solution that 
+can solve a problem for them. 
+	
+If corporations keep the landing page 
+on-brand, with the corporate logo front-and-
+center, it can make things harder for the 
+team. Branding and marketing reviews will 
+usually slow down the process by weeks, if 
+not months. People will visit the page just to 
+check it out because of the branding. It can 
+be difficult to sift through all of the traffic 
+noise to see who is really interested in the 
+Value Proposition. 
+CONISDERATIONS
+□
+□Use the words from cus-
+tomer interviews in your 
+headline. 
+□
+□Contact the people who 
+signed up and ask if they 
+are available for customer 
+interviews.
+□
+□Use high quality photos 
+and videos.
+□
+□Use a short domain name. 
+ 
+–
+– Don’t include fake tes-
+timonials to generate 
+conversions.
+–
+– Don’t label products as 
+“sold out” when you’ve  
+not yet created them.
+–
+– Don’t make unrealistic 
+claims for your product.
+–
+– Don’t use a negative or 
+harsh tone.
+	
+Create a sub-brand or new company to 
+test the business idea. It allows you to go 
+faster, without the endless meetings around 
+branding and what happens if people sign 
+up. A side effect of this approach is that you 
+won’t be able to leverage existing acquisition  
+channels for the brand. This means you’ll 
+need to do your own customer acquisition 
+by running ads, talking to people, and using 
+social media to drive traffic.
+simple landing page
+call to action
+
+
+266
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Marketing / Finance
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Crowdfunding is ideal for funding your new business venture 
+with customers who believe in your Value Proposition. 
+Crowdfunding is not ideal for determining whether your new 
+business venture is feasible.
+VALIDATION / CALL TO ACTION
+Crowdfunding
+Funding a project or venture by raising many small amounts of 
+money from a large number of people, typically via the Internet.
+
+
+267
+Prepare
+□
+□Define the dollar amount for 
+your funding target goal. Be 
+pragmatic and specific on 
+how the money will be used 
+for each activity needed to 
+create the product.
+□
+□Choose an existing crowd-
+funding platform or create 
+your own, custom crowd-
+funding website.
+□
+□Create your crowdfunding 
+video. It should be high 
+quality and draw the user 
+in to convince them to fund 
+your product.
+□
+□Include a Value Proposition 
+statement below your video 
+in large font, preferably 
+header sized.
+□
+□Place your call to action for 
+funding the product to the 
+right of the video in clear 
+language.
+□
+□Include customer pains, 
+your solution, and the 
+customer gains below the 
+Value Proposition.
+□
+□Include different pledge 
+amounts and desirable 
+perks.
+Execute
+□
+□Make your crowdfunding 
+campaign live to the public.
+□
+□Drive traffic to your page.
+□
+□Be active on social media 
+and your campaign page 
+by responding to comments 
+and answering questions  
+as they come in.
+OVERVIEW
+□
+□Account for the commission 
+percentage crowdfunding 
+platforms take as a fee 
+from your campaign.
+□
+□Refund those who contrib-
+uted if you didn’t meet 
+your goal.
+□
+□Be specific and transparent 
+on how the funds you are 
+raising will be used, includ-
+ing a cost breakdown of 
+the activities. 
+ 
+–
+– Include so may perks that 
+you spend all of your time 
+fulfilling them instead of 
+building the product.
+–
+– Be greedy and raise more 
+than you need for your 
+product build.
+–
+– Cut corners on the produc-
+tion quality of your video.
+–
+– Make unrealistic claims 
+on the benefits of your 
+product.
+Analyze
+□
+□Review how many pledges 
+were received, the amount 
+for each, and if you reached 
+your funding target goal.
+□
+□If you did not achieve your 
+goal, use what you’ve 
+learned to iterate on the 
+campaign.
+□
+□If you did achieve your goal, 
+then keep actively respond-
+ing on your progress to 
+backers through social 
+media and email.
+□
+□How did different traffic  
+sources convert? For exam-
+ple, if a specific social media 
+ad or email campaign 
+causes more customers to 
+pledge, you may want to 
+keep that in mind for cus-
+tomer acquisition once the 
+product is live and for sale.
+Connections
+Your video should tell a story, 
+leading with the greatest hits. 
+Show how your solution solves 
+for the top customer job, pain, 
+and gain for the customer 
+segment in your customer 
+profile. 
+2
+4
+3
+1
+Pains come from your 
+Customer Profile. Take the top 
+three voted customer pains 
+and include them in the pains 
+description at the bottom left 
+of the crowdfunding campaign 
+page.
+Solution comes from the 
+Value Map product and 
+service. Your potential 
+crowdfunding backers should 
+understand the solution, 
+which is next to the pain on 
+the crowdfunding campaign 
+page.
+Gains come from the 
+Customer Profile. Take the top 
+three voted customer gains 
+and include them in the gains 
+description at the bottom 
+right of the crowdfunding 
+campaign page.
+1
+crowdfunding
+call to action
+
+
+268
+EXPERIMENTS
+validation
+Cost 
+Crowdfunding costs are typically focused 
+around the video production, marketing, 
+logistics, and length of campaign. Even 
+though there are crowdfunding platforms 
+available, the fidelity needs to be high or 
+you will not garner interest from customers.
+ 
+Setup Time 
+Crowdfunding campaigns can take a few 
+weeks to a few months to put together. It’s 
+not trivial to produce a compelling, high 
+quality video, create content that conveys 
+the Value Proposition, and structure the  
+pricing tiers and perks for your customers.
+ 
+Run Time 
+Run time typically takes 30 – 60 days for a 
+crowdfunding campaign to run its course. 
+This isn’t to say you won’t be wildly suc-
+cessful and fund it in less — just be aware 
+that those funded in a few days are the 
+exceptions.  
+ 
+Evidence Strength  
+ 
+ 
+Referrers 
+# of unique views 
+# of comments 
+# of social media shares 
+Where your visitors are coming from online 
+and how they interact with your campaign. 
+	
+Views, comments, and shares are all  
+relatively weak evidence but good for quali-
+tative insights.
+ 
+# of pledges 
+Pledge amount 
+How your viewers are converting to pledges. 
+At least 6% of your pledges come from direct 
+traffic. At least 2% of your pledges come 
+from targeted online ads. 
+	
+Percent funded. Ideally this is 100% and 
+your idea gets funded. 
+	
+Viewers pledging their money to make 
+your crowdfunding campaign a success is 
+very strong evidence. They are voting with 
+their wallets, not just their words.
+ 
+Capabilities 
+Design / Product / Marketing / Finance 
+Crowdfunding’s popularity has created a 
+rise in crowdfunding platforms, which means 
+you don’t need an entire development team 
+to create a campaign anymore. You’ll still 
+need to create an authentic campaign with 
+interesting perks, while building awareness 
+in the market. Design plays a big role here in 
+that it needs to look professional, otherwise 
+you may get false negatives on your Value 
+Proposition. Finance plays a bigger role,  
+in that you need to correctly spec out your 
+pricing tiers and perks in hopes that you 
+can build a sustainable business from the 
+campaign.
+Requirements 
+Value Proposition and Customer Segment 
+Before jumping into a crowdfunding cam-
+paign, you’ll need a clear Value Proposition 
+that you can turn into a high quality 
+video and a target customer segment. 
+Crowdfunding campaigns without videos are 
+few and far between and their success rate 
+is quite low. You’ll also want to know how 
+you are targeting the customer, otherwise 
+it’ll be very difficult to drive people to it.
+DETAILS
+
+
+269
+Online Ads  
+p. 146 
+Drive targeted ad traffic  
+to your campaign.
+Customer Interviews  
+p. 106  
+Reach out and interview  
+people who contributed.
+Social Media Campaign  
+p. 168 
+Use social media to make 
+your campaign viral.
+Single Feature MVP  
+p. 240 
+Create a functioning minimum 
+viable product to test with 
+customers.
+Simple Landing Page  
+p. 260 
+Create a  landing page to 
+drive traffic to your campaign.
+Email Campaign  
+p. 162 
+Keep contributors in the loop 
+on what is happening after 
+the campaign.
+Crowdfunding
+PAIRINGS
+Before
+After
+crowdfunding
+call to action
+
+
+270
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Split Test is ideal for testing different versions of Value 
+Propositions, prices, and features to see what resonates  
+best with customers.
+VALIDATION / CALL TO ACTION
+Split Test
+Split Test is a method of comparing two versions, control A against 
+variant B, and determining which which one performs better.
+
+
+271
+Prepare
+□
+□Identify the customer 
+behavior you wish to 
+improve (i.e., progressing 
+through a funnel).
+□
+□Create your Control A.
+□
+□Baseline your Control A  
+and write it down.
+□
+□Create your Variant B.
+□
+□Define the measurable 
+improvement percentage 
+you wish to observe in 
+Variant B.
+□
+□Identify your customer 
+sample size and percent 
+confidence level.
+Prepare
+□
+□Run your Split Test by ran-
+domly driving 50% of your 
+traffic to Control A and 50% 
+of your traffic to Variant B.
+Analyze
+□
+□Review your results once the 
+sample size is met and if it 
+met your confidence level.
+□
+□Did you meet your confi-
+dence level? 
+• If so, consider replacing 
+Control A with your Variant 
+B as a static element.
+• If not, run another Split 
+Test with a different 
+Variant B.
+OVERVIEW
+□
+□Use quotes from customer 
+interviews to Split Test your 
+Value Propositions.
+□
+□Contact the people who 
+converted to understand 
+why.
+□
+□Use a Split Test calculator 
+to determine the sample 
+size needed to reach your 
+confidence level.
+□
+□Split Test radically different 
+ideas, especially early on. 
+It’ll yield more insights than 
+small incremental tests. 
+ 
+–
+– Stop your Split Tests early 
+because you like or dislike 
+the preliminary results.
+–
+– Forget to keep measuring 
+KPIs that you don’t want to 
+go down.
+–
+– Run too many Split Tests  
+all at once or in conjunction 
+with other experiments.
+–
+– Give up if your first Split 
+Test doesn’t yield amazing 
+results.
+split test
+call to action
+
+
+272
+EXPERIMENTS
+validation
+Cost 
+Split Tests are relatively cheap and online 
+digital tools allow you to perform them  
+without having to know much about  
+programming. You can copy and paste a 
+script into your page or app, then log into 
+the product and configure the Split Tests. 
+It resembles using a word processor, by 
+dragging, dropping, and typing. Split Tests 
+become more expensive if you are building 
+customized hardware or printing out mailers, 
+since you have to physically make two  
+different versions to test with customers.
+ 
+Setup Time 
+The setup time for Split Tests is relatively 
+short, especially with digital products where 
+you can use existing Split Testing tools. 
+Setup time can be a bit longer if you are 
+physically making two different versions.
+ 
+Run Time 
+The run time for Split Tests usually spans 
+several days to weeks. You’ll want to have 
+statistically significant data to gain insights 
+into which one performed better.  
+ 
+Evidence Strength  
+ 
+ 
+Traffic 
+Control A behavior 
+Control A Conversion Rate 
+Conversion rate is the number of people who 
+are routed into the Control A test divided by 
+number of actions. Use previous data if pos-
+sible to predict what the control conversion 
+rate is for a baseline.
+ 
+Variant B behavior 
+Variant B Conversion Rate 
+Conversion rate is the number of people 
+who are routed into the Variant B divided by 
+number of actions. Define what measurable 
+impact you’d like Variant B to have on the 
+conversion percentage. 
+	
+ 
+Evidence strength is moderate — customers 
+aren’t aware they are participating in the 
+Split Test. You’ll want to have, at the very 
+least, an 80% confidence level in the results. 
+Ideally you’d want 98% confidence level, 
+but it can vary depending on what you are 
+testing. Use an online Split Test calculator to 
+help guide you through the process. 
+Capabilities 
+Design / Product / Technology / Data 
+You’ll need the capabilities required to 
+define what you’ll be testing, the expected 
+baseline for Control A, and the needed 
+improvement from Variant B. You’ll want to 
+design it visually to fit the overall theme, 
+otherwise you’ll receive false negatives. It’ll 
+require some degree of technology to inte-
+grate if it’s software. Lastly, you’ll need to 
+be able to analyze the results to help inform 
+your next experiment.
+Requirements 
+Significant Traffic 
+Split Tests need a significant amount of 
+traffic to generate believable evidence. Your 
+traffic will be randomized to display either 
+Control A or Variant B to the customer. If you 
+have little to no traffic, it’ll take entirely too 
+much time to come to a conclusion that one 
+performs better than the other. 
+DETAILS
+
+
+273
+Online Ads  
+p. 146 
+Test different images or  
+copy for your online ad  
+to see what improves  
+click through rate.
+Brochure  
+p. 194  
+Test different images  
+and Value Propositions to 
+determine what converts 
+best on the contact call  
+to action.
+Customer Interviews  
+p. 106 
+Use quotes from your  
+interviews to Split Test  
+what converts better.
+Customer Interviews  
+p. 106 
+Interview your customers and 
+find out why they converted.
+Split Test
+PAIRINGS
+Before
+After
+Simple Landing Page  
+p. 260 
+Test different Value Propositions 
+and call to actions to see what 
+improves conversion.
+Email Campaign  
+p. 162 
+Test email subject lines,  
+copy, and images to  
+determine what causes  
+readers to open and click.
+split test
+call to action
+
+
+274
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Sales / Finance
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Presale is ideal for gauging market demand at a smaller scale 
+before you launch to the public.
+VALIDATION / CALL TO ACTION
+Presale
+A sale held before an item is made available for purchase. Unlike 
+mock sale, you are processing a financial transaction when it ships.
+
+
+275
+Prepare
+□
+□Create a simple landing 
+page.
+□
+□Insert your price options.
+□
+□On a price option click, show 
+a “we’re not available to the 
+public yet” pop-up with a 
+payment information form. 
+Cards will not be billed until 
+you ship the product.
+□
+□Integrate and verify web 
+analytics are working 
+correctly.
+OVERVIEW
+Execute
+□
+□Make your page live to  
+the public.
+□
+□Drive traffic to your page.
+Analyze
+□
+□Review your analytics on 
+how many people:
+• viewed your price options.
+• clicked on a price option.
+• added in their payment 
+information.
+• clicked on pre-order to be 
+billed when it ships.
+• dropped out of the flow 
+(i.e., web analytics funnel).
+• converted on your page, 
+based on traffic source.
+□
+□Use these findings to gauge 
+viability and refine your 
+Value Proposition and price 
+options. 
+Connections
+• Price options come from 
+your revenue stream in your 
+Business Model Canvas.
+presale
+call to action
+
+
+276
+EXPERIMENTS
+validation
+Cost 
+Presales are relatively cheap, but unlike 
+mock sales you have the additional costs 
+of processing the transaction and shipping 
+the product. If you are using a point of sale 
+system, then you may need to purchase 
+hardware or software. In addition, most 
+payment systems take a percentage of your 
+sales (2%–3%) and may charge a monthly 
+fee on top of that.
+ 
+Setup Time 
+Setup time for a presale is relatively short. 
+Once you are close to shipping your product, 
+it requires the setup of accepting and pro-
+cessing financial information.
+ 
+Run Time 
+Run time for a presale is a few days or 
+weeks. You’ll want to target a specific 
+audience with your solution and give 
+them enough time to consider a purchase. 
+Presales aren’t usually very long — payment 
+providers may require you to ship product 
+within 20 days of purchase.
+ 
+Evidence  
+ 
+ 
+# of unique views 
+# of purchases 
+You can calculate the purchase conversion 
+rate by taking the number people who view 
+the price divided by the number of purchases. 
+	
+Purchases are strong evidence. 
+Customers are paying for your solution 
+before it is generally available to the public. 
+ 
+ 
+# of abandons 
+Mostly associated with online shopping 
+carts, if people are beginning the purchase 
+process and then leaving, they are aban-
+doning the sale.  
+	
+You can calculate the abandonment rate 
+by dividing the total number of completed 
+purchases by the number of people who 
+entered the purchase process. 
+	
+People dropping out of the purchase  
+process is strong evidence, albeit a bad sign. 
+It means something is incorrect with your 
+process, misconfigured, or the purchase 
+price is not appropriate.
+Capabilities 
+Design / Sales / Finance 
+Conducting a presale will require defining 
+your price options. You’ll also need to design 
+the sale in such a way that it is the right 
+fidelity for your target audience. Finally, 
+you’ll need sales capability, especially if 
+you are conducting these in person in the 
+physical world.
+Requirements 
+Ability to Fulfill 
+Presales are different than mock sales: 
+you are collecting and processing payment 
+information, conducting an actual sale.  
+This means you should be close to the final 
+solution or at the very least have a minimum 
+viable product to deliver. Do not rush ahead 
+and conduct several presales without having 
+the ability to fulfill your promise to customers.
+DETAILS
+
+
+277
+Online Ad 
+p. 146 
+Create demand for your 
+presale by running targeted 
+online ads with your Value 
+Proposition.
+Wizard of Oz  
+p. 284  
+Behind the scenes, manually 
+create the Value Proposition 
+for the customers and deliver 
+it to them.
+Simple Landing Page  
+p. 260 
+Create a simple landing page 
+as a vehicle to conduct the 
+presale.
+Single Feature MVP  
+p. 240 
+Deliver a Single Feature MVP 
+to your customers.
+Brochure  
+p. 194 
+Use a brochure with pricing 
+to use as material for your 
+presale.
+Concierge  
+p. 248 
+Manually deliver the Value 
+Proposition to those custom-
+ers who purchased.
+Presale
+PAIRINGS
+Before
+After
+presale
+call to action
+
+
+278
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Product / Marketing / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+A validation survey is ideal for getting insights into whether 
+customers will be disappointed if your product went away  
+or if they’ll refer other customers.
+VALIDATION / call to actionE
+Validation Survey
+A closed-ended questionnaire used in the collection of information 
+from a sample of customers about a specific topic.
+
+
+279
+Discovering Missing Customer Jobs, 
+Pains, and Gains 
+In addition to ranking, you can take inspira-
+tion from the discovery survey and include 
+an open-ended question after each ranking, 
+just in case you are missing out on those you 
+didn’t think of: 
+• What job do you wish we would have 
+asked you about that wasn’t on this list? 
+Why?
+• What pain do you wish we would have 
+asked you about that wasn’t on this list? 
+Why?
+• What gain do you wish we would have 
+asked you about that wasn’t on this list? 
+Why?
+ 
+Other Types of Validation Surveys 
+Validation surveys are, in general, very sim-
+ple with closed-ended feedback responding 
+to a single question. With that in mind, you 
+can apply that to other types of assumptions  
+you wish to validate with your customers 
+such as:
+• CSAT (customer satisfaction).
+• CES (consumer effort score).
+• Brand awareness.
+OVERVIEW
+Ranking Customer Jobs, Pains, and Gains  
+Another popular type of validation survey 
+is validating the importance ranking of the 
+jobs, pains, and gains in your Customer 
+Profile in the Value Proposition Canvas. Most 
+teams take their best guess at this ranking 
+in a workshop setting, but need to quickly 
+get feedback from outside the building to 
+see how close they are to the real world. You 
+can easily do this in most survey software 
+today by creating two boxes, one for the list 
+and next to it one for the customer ranking.
+validation survey
+call to action
+
+
+280
+EXPERIMENTS
+validation
+OVERVIEW
+Sean Ellis Test 
+One type of survey is called the Sean Ellis 
+Test, which is named after it’s creator 
+and growth-hacking expert Sean Ellis. His 
+approach is to gauge desirability through 
+scarcity. 
+	
+The Sean Ellis Test keys in on one import-
+ant question: “How disappointed would you 
+be if you could no longer use this product? 
+Very disappointed, somewhat disappointed, 
+or not disappointed?” 
+	
+It can be argued that you’ve not achieved 
+product/market fit until a score of 40% is 
+reached. If customers are apathetic and do 
+not care if your product goes away, then you 
+have a desirability problem. It doesn’t make 
+sense to scale before you have fit, otherwise 
+you can waste a lot of money scaling things 
+that no one wants. 
+	
+Context is important when running a Sean 
+Ellis Test. If you run it as soon as the customer 
+experiences the Value Proposition, it can feel 
+very out of place and return skewed data 
+because they’ve yet to really experience the 
+product. Who is going to genuinely be disap-
+pointed if they’ve never really used it? 
+	
+On the flip side, if you show this survey to 
+someone who hasn’t used the product in six 
+months, then there’s a good chance they’re 
+long gone and won’t even take the survey at 
+this point. 
+	
+The recommendation is to show this 
+survey to gauge desirability with customers 
+who have experienced the core of your prod-
+uct at least twice in the past two weeks. 
+Discovery Survey  p. 122
+Recently, 
+more than 
+once?
+Have  
+customers 
+used the 
+product?
+No
+No
+Yes
+Yes
+Very
+Somewhat
+ Not at all
+Sean Ellis Test
+“How disappointed would you be if you 
+could no longer use this product?”
+
+
+281
+OVERVIEW
+NPS  
+Net promoter score (NPS) is one of the most 
+common types of surveys and is widely 
+adopted by organizations around the world. 	
+	
+The key question for a NPS survey is: 
+“How likely is it that you would recommend 
+this product to a friend or colleague? 
+0 (not at all) to  10 (extremely likely)” 
+	
+You can calculate NPS score using the  
+following formula: 
+	
+ 
+	
+% PROMOTERS - % DETRACTORS = NPS 
+	
+ 
+Much like the Sean Ellis test, the context 
+of when you show this to your customer 
+matters. They need to have completed 
+something meaningful in your product 
+before they would be willing to recommend 
+it to a friend or colleague. While interesting, 
+it’s not enough for customers to want to 
+recommend before they’ve used it. Likewise, 
+it’ll be tough to believe customers who say 
+they’ll recommend if they’ve used it, but 
+wouldn’t be disappointed if it went away 
+entirely. Use the NPS after they’ve answered 
+the Sean Ellis test.  
+	
+You want to avoid prematurely scaling  
+a business based on hypothetical referrals, 
+from people who’d not be disappointed if 
+your product went away.
+Net Promoter Score (NPS) 
+“How likely is it that you would recommend 
+this product to a friend or colleague?” 
+Sean Ellis 
+score of 
+40%?
+No
+Yes
+DETRACTOR
+PASSIVE
+PROMOTER
+Neutral
+Not at all
+Extremely
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+validation survey
+call to action
+
+
+282
+EXPERIMENTS
+validation
+Cost 
+Validation surveys are inexpensive because 
+you should already have a channel to reach 
+them. There are many tools and services 
+today to help you intercept active customers 
+on your website through a pop-up or email,  
+if they trigger a specific action.
+ 
+Setup Time 
+Setting up a validation survey is relatively 
+quick and should take you a few hours or a 
+day to configure.
+ 
+Run Time 
+If you have sufficient validation survey distri-
+bution channels, a survey may only take 1–3 
+days to get thousands of responses. If you 
+have a difficult time reaching your audience, 
+it may take a few weeks to get enough 
+responses. 
+ 
+Evidence  
+ 
+ 
+How disappointed would you be? 
+% Disappointed. 
+More than 40% disappointed is an ideal 
+score before you worry about scaling your 
+business. Otherwise, you’ll churn out people 
+as fast as you sign them up. 
+	
+Survey data is rather weak, but hinting 
+that the product could go away will solicit  
+a better response. 
+ 
+ 
+How likely would you be to refer? 
+% Likely to Refer 
+More than 0% is considered good, although 
+these can vary by industry. You’ll want to 
+search online for industry benchmarks. 
+	
+NPS survey data is weaker than a Sean 
+Ellis test. You are getting answers to a  
+hypothetical referral situation. 
+ 
+ 
+Jobs / Pains / Gains ranking 
+% Accuracy When Compared to  
+Customer Profile 
+Aim for 80%, since being wrong on this has 
+ripple effects in your entire strategy. 
+	
+Rather weak strength but an important 
+step before moving to more involved testing.
+Capabilities 
+Product / Marketing / Research 
+Validation surveys require the ability to 
+carefully craft questions and have the correct 
+tone and structure. Because validation sur-
+veys target existing customers, you’ll need 
+to be able to identify specific segments and 
+sub-segments to help reduce noise in the 
+data. 
+Requirements 
+Quantitative Source Material 
+Validation surveys are meant to have  
+customers respond to a situation, price,  
+or feature. You’ll need to have something  
+for them to respond to so that you can 
+quantitatively measure their responses.  
+ 
+Channel to an Existing Customer 
+Validation surveys are meant for existing 
+customers, which means you need to con-
+firm you can leverage the existing channel 
+to reach them, whether that is online via  
+the website, by email, or offline via direct 
+mail or a handout.
+DETAILS
+
+
+283
+Simple Landing Page  
+p. 260 
+Use an existing landing page 
+to hang your survey off of  
+to reach your audience in the 
+moment.
+Referral Program  
+p. 172  
+Use what you learn from the 
+survey results to inform your 
+referral program design.
+Single Feature MVP  
+p. 240 
+Deliver value repeatedly to 
+customers before asking them 
+validation survey questions.
+Discovery Survey  
+p. 122 
+Perform discovery surveys if 
+the scores are low, to better 
+understand unmet customer 
+needs.
+Wizard of Oz  
+p. 284 
+Behind the scenes, manually 
+deliver the value to customers 
+before asking them validation 
+survey questions.
+Customer Interviews  
+p. 106 
+Contact the people who 
+scored low and interview them 
+to learn about unmet needs.
+Validation Survey
+PAIRINGS
+Before
+After
+validation survey
+call to action
+
+
+284
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology / Legal / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Wizard of Oz is ideal for learning manually, firsthand about 
+steps needed to create, capture, and deliver value to a 
+customer. 
+Wizard of Oz is not ideal for scaling a product or business.
+VALIDATION / SIMULATION
+Wizard of Oz
+Creating a customer experience and delivering value manually,  
+with people instead of solely using technology. The name Wizard  
+of Oz is derived from the movie, where you have a request that  
+is handled by a person. Unlike Concierge, the people involved aren’t 
+visible to the customer.
+
+
+285
+OVERVIEW
+Prepare
+□
+□Plan the steps of creating 
+the product manually.
+□
+□Create a board to track 
+all of the orders and steps 
+needed.
+□
+□Test the steps with someone 
+internally first to make sure 
+it works.
+□
+□Integrate and verify web 
+analytics are working 
+correctly.
+Drawing a Line in the Sand 
+Wizard of Oz is one way to address the 
+issue of prematurely scaling a solution. We 
+recommend drawing a line in the sand where 
+automation of the manual Wizard of Oz 
+tasks makes sense. 
+	
+If it takes you 15 minutes to manually 
+create the value for the end customer,  
+ask yourself:
+1.	How many customer requests could  
+we perform manually each day?
+2.	What is the cost to deliver each one  
+(cost structure)?
+3.	What is the most customers will pay  
+(revenue streams)?
+4.	At what volume is it more cost effective  
+to automate these tasks?
+ 
+We’ve witnessed entrepreneurs rush to 
+automate the solution and, in turn, prema-
+turely scale. When you draw a line in the 
+sand to manually deliver the value, then 
+you don’t have to scale until that threshold 
+is exceeded. Some entrepreneurs exceed 
+it and and then turn to automation. Others 
+may never hit the threshold. For those who 
+never hit it, we recommend taking a step 
+back and re-evaluating the strategy.
+Execute
+□
+□Receive orders for the 
+Wizard of Oz experiment.
+□
+□Conduct the Wizard of Oz 
+experiment.
+□
+□Update your board with 
+the steps for each order. 
+Document how long it took 
+to complete the tasks.
+□
+□Gather satisfaction feed-
+back from the customers 
+with interviews and surveys.
+Analyze
+□
+□Review your customer  
+satisfaction feedback.
+□
+□Review your board metrics 
+for:
+• length of time for task 
+completion.
+• where you experienced 
+delays in the process.
+• how many purchased.
+□
+□Use these findings to 
+improve on your next 
+Wizard of Oz experiment 
+and to help inform where  
+to automate the process.
+wizard of oz
+simulation

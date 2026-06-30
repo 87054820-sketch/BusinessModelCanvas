@@ -1,0 +1,42 @@
+{
+  "chapter": "ch01-design",
+  "sourceFiles": { "en": "01-ebscohost-(3).txt" },
+  "concepts": [
+    { "name": "The Two Iterative Loops (Design + Test)", "definition": "Innovation runs two interlocking loops. The Business Design loop (Ideate \u2192 Business Prototype \u2192 Assess) turns vague ideas into concrete value propositions and business models. The Test loop (Hypothesize \u2192 Experiment \u2192 Learn \u2192 Decide) reduces the risk that the design won't work. Evidence and insights from the Test loop feed back into the next Design iteration." },
+    { "name": "Search & Testing vs. Execution", "definition": "Before execution comes Search & Testing: the activity of reducing the risk of pursuing ideas that look good in theory but won't work in reality. Ideas that look great in presentations, spreadsheets, and business plans often turn out to be hallucinations \u2014 testing is how you find out before betting the company." },
+    { "name": "The Three Risks (Desirability / Feasibility / Viability)", "definition": "Every business idea carries three risk types. Desirability (market risk): customers aren't interested, the market is too small, or you can't reach/acquire/retain customers. Feasibility (infrastructure risk): you can't build, scale, or access the key resources, activities, and partners. Viability (financial risk): you can't earn more revenue than cost. Each maps to specific Business Model Canvas / Value Proposition Canvas blocks." },
+    { "name": "Team Design, Behavior, and Environment", "definition": "Behind every successful venture is a great team. Team Design = a cross-functional team (design, product, engineering, plus legal/data/sales/marketing/research/finance as needed) with diversity and ideally entrepreneurial experience. Team Behavior = six leading-indicator behaviors (data-influenced, experiment-driven, customer-centric, entrepreneurial, iterative, question-assumptions). Team Environment = the team must be Dedicated, Funded (VC-style incremental funding), and Autonomous, with leadership/coaching/customer-access/strategy support." },
+    { "name": "Business Hypothesis", "definition": "An assumption that your value proposition, business model, or strategy builds on \u2014 the thing you need to learn about to know if the idea might work. Written starting with 'We believe that\u2026'. To avoid confirmation bias, also write competing refuting hypotheses ('We believe that\u2026 won't\u2026') and test both." },
+    { "name": "Assumptions Mapping", "definition": "A team exercise that makes all desirability, feasibility, and viability hypotheses explicit, then prioritizes them on two axes \u2014 Importance (y) and Evidence (x). Adapted from Gothelf & Seiden (Lean UX). The riskiest hypotheses (important + no evidence) define near-term experimentation." },
+    { "name": "Experiment (and the Test Card)", "definition": "An experiment is a procedure to reduce the risk and uncertainty of a business idea; it produces weak or strong evidence that supports or refutes a hypothesis, and can be fast/slow and cheap/expensive. A well-formed experiment has four components captured on the Test Card: Hypothesis, Experiment, Metrics, Criteria (the success threshold defined before running)." }
+  ],
+  "arguments": [
+    { "claim": "Replace 'I think' with 'We believe that\u2026, and we'll know we're right when\u2026' \u2014 this shift from opinion to falsifiable belief separates systematic entrepreneurship from gambling.", "evidence": "A hypothesis is only useful if it can be shown true (validated) or false (invalidated) by evidence. Defining the success criteria before running prevents you from rationalizing whatever result you get." },
+    { "claim": "Test desirability first, feasibility second, viability third.", "evidence": "Desirability (market) risk is the most common killer \u2014 if customers don't want it, feasibility and viability are moot. The book sequences exploration of hypotheses in this order, mapping each risk to canvas blocks so teams find the riskiest assumption to attack first." },
+    { "claim": "A good team is necessary but not sufficient \u2014 behavior and environment matter as much as composition.", "evidence": "An ideal team with the right skills will still stall if held to a standard where failure is not allowed, starved of funding, micromanaged, or cut off from customers. Leaders must intentionally design a Dedicated/Funded/Autonomous environment." }
+  ],
+  "cases": [
+    { "name": "The science-project subscription (running example)", "context": "A team considers a monthly subscription of curated educational science projects for millennial parents.", "illustrates": "How to turn a fuzzy idea into testable hypotheses \u2014 e.g. 'millennial parents with kids 5\u20139 will pay $15/month for curated science projects' \u2014 and refine them to be Testable, Precise, and Discrete.", "lesson": "Vague beliefs ('millennials will spend a lot on science projects') must be sharpened into precise who/what/when claims with explicit success criteria before they can be tested." },
+    { "name": "Rovio / Angry Birds", "context": "Rovio's hit game Angry Birds was preceded by six years and 51 failed games.", "illustrates": "Why entrepreneurial experience and tolerance for iteration matter on a team \u2014 success usually follows many invalidated attempts.", "lesson": "Treat early failures as paid-for learning; teams that have iterated through failure navigate uncertainty better." }
+  ],
+  "logicChains": [
+    { "description": "Identify hypotheses underlying the idea \u2192 classify as desirability/feasibility/viability and map to canvas blocks \u2192 place on the Assumptions Map by importance and evidence \u2192 pick the top-right (important, no evidence) hypotheses \u2192 turn each into a Test Card (hypothesis, experiment, metric, criteria) \u2192 run cheap/fast experiments first.", "sourceHint": "Hypothesize section: 'Identify the Hypotheses' \u2192 'Prioritize Most Important Hypotheses' \u2192 Assumptions Mapping Steps 1\u20133 \u2192 Experiment/Test Card." }
+  ],
+  "terminology": [
+    { "term": "Testable / Precise / Discrete", "definition": "The three characteristics of a well-formed hypothesis: Testable (can be validated or invalidated by evidence), Precise (you know exactly what success looks like \u2014 the what, who, and when), Discrete (describes only one distinct thing)." },
+    { "term": "Discovery vs. Validation", "definition": "Discovery experiments check whether your general direction is right and gather first insights to course-correct cheaply; Validation experiments confirm with strong evidence that the chosen direction is very likely to work." },
+    { "term": "Assumptions Map quadrants", "definition": "Top-left (important + have evidence) = re-check the evidence and keep tracking; Top-right (important + no evidence) = experiment first; bottom = defer." },
+    { "term": "Call-to-Action (CTA) experiment", "definition": "An experiment that prompts a test subject to perform an observable action, used to test one or more hypotheses with behavioral (rather than stated) evidence." }
+  ],
+  "nuance": [
+    "Writing every hypothesis in 'We believe that\u2026' form risks confirmation bias \u2014 deliberately add refuting hypotheses and test competing claims together.",
+    "Constraints are healthy, but starving a team of funding, resources, or customer access will not yield results \u2014 the bottleneck is often at the top of the bottle.",
+    "The book deliberately defers business design depth to Business Model Generation and Value Proposition Design \u2014 here the canvases are only used to break ideas into testable chunks."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["experiment-canvas", "business-model-canvas", "value-proposition-canvas"],
+    "relatedExperimentSlugs": ["customer-interview"],
+    "relatedResourceSlugs": ["business-model-generation", "value-proposition-design"],
+    "relatedChapters": ["ch02-test", "ch03-evidence"]
+  }
+}

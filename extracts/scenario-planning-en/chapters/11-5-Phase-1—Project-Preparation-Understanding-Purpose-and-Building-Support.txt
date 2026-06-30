@@ -1,0 +1,810 @@
+# 5 Phase 1—Project Preparation: Understanding Purpose and Building Support
+
+82 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+CONSTRUCTING A SCENARIO  
+PROJECT PROPOSAL
+The process of constructing a project proposal involves building agreement 
+among the project leader and organizational decision makers on ﬁve critical 
+items. These ﬁve items should be documented in the scenario project proposal:
+• The purpose and question of the scenario project
+• The estimated scope and time line of the scenario project
+• The scenario team and deﬁned roles for each team member
+• The general expected outcomes of the scenario project
+• Measures to assess the achievement/success of the expected outcomes
+F I G U R E  5.1  The Performance-Based Scenario System—Project Preparation 
+Phase
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+83
+ARTICULATING THE PURPOSE OF  
+THE SCENARIO PROJECT
+Most organizational interventions begin with the identiﬁcation of a prob-
+lem. Effective interventions are based on plans for tackling these problems 
+and gaining approval to work toward solutions. Problems are usually related 
+to continuously trying to optimize ﬁt with the environment, or they can be 
+classiﬁed into one of a few general categories. No matter what the problem 
+is, the ﬁrst phase in the scenario system is focused on listening to key 
+people talk about the situations they are facing. The project leader also 
+becomes oriented to the problem and begins gathering general perceptions 
+of the problem and the project that is designed to address it. Remember, 
+the term problem in this context means to put forth for conversation, and 
+the purpose of the project drives subsequent activities (Burt & van der Hei-
+jden, 2003).
+Increasingly, decision makers are overwhelmed by volatility, complex-
+ity, and uncertainty. Many are frustrated with current planning processes, 
+stating that the methods they are using don’t work. Many express a desire 
+to make sense of a complex set of forces and variables in the external envi-
+ronment that seem to have no structure or pattern of behavior that might 
+suggest how things will play out in the future. A key overarching purpose 
+of scenario planning is to develop a variety of alternatives so that decision 
+makers will be more prepared for anything that might come to pass.
+SCENARIO PLANNING CATEGORIES OF PURPOSE
+Four distinct purposes for engaging in scenario planning logically ﬂow from 
+the interactions between content and process on one continuum, and be-
+tween thinking and action on another (van der Heijden, 2004). Content 
+and process form the horizontal axis, while thinking and action form the 
+vertical axis, creating four cells. These four cells delineating distinct pur-
+poses of scenario planning are as follows:
+• Making sense
+• Optimal strategy
+• Anticipation
+• Adaptive learning
+A scenario planning project can focus on one or more of these purposes. 
+
+
+84 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+Making Sense
+The content-thinking combination—or making sense—is aimed at un-
+derstanding the external environment. Scenario projects framed from this 
+purpose result in contextual scenarios, or what Wack called “learning sce-
+narios.” Making-sense scenarios do not often provide major strategic in-
+sights for practicing managers because they do not provide a framework for 
+decision making. These projects are useful for deﬁning uncertain elements 
+or exploring the external environment in general. Success in making-sense 
+projects depends on deﬁning appropriate questions for analysis. However, 
+the intent of this purpose is to gain a new understanding of things in the 
+environment that are unclear and need deﬁnition, exploration, and analysis.
+Optimal Strategy
+Developing the content and action—or the purpose of optimal strategy—
+is aimed at using scenarios speciﬁcally to test a strategy already in place. 
+Projects based on this purpose often feature an organization “trying out” 
+scenarios as a one-time effort. Few success stories are documented using the 
+optimal strategy purpose in that stand-alone scenario efforts do not often 
+lead to strategic learning or insights. Reasons for the lack of success include 
+difﬁculties in shifting away from predictive thinking, inability to truly en-
+tertain multiple possible futures, variations on proven scenario planning 
+processes, and a lack of time and commitment to the project.
+Anticipation
+Thinking-process projects—those with the purpose of anticipation—are 
+new projects initiated within in a continual, ongoing scenario planning 
+cycle. Think of these scenario projects as continuous quality improvement 
+for planning in organizations. Combining thinking and process into antici-
+pation, these projects are focused on developing and continuing what van 
+der Heijden (2004) calls “the strategic conversation” in organizations. Such 
+an ongoing conversation builds shared mental models of the external en-
+vironment and of the organization itself. Organizations that are successful 
+with this purpose are able to prevent groupthink by continuously generating 
+new ideas in the scenario planning project, and they also prevent fragmen-
+tation by building an organizational community and generating collective 
+understanding.
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+85
+Adaptive Learning
+The action-process combination—adaptive learning—is the scenario pur-
+pose in which an organization is continually using scenarios to understand 
+the environment, holding internal strategic conversations, and taking action 
+to leverage strategic opportunities. Adaptive organizational learning is the 
+ultimate aim of scenario work because it signals an organization that learns 
+and changes from its own experience to navigate the turbulent business en-
+vironment. Furthermore, these organizations are simultaneously developing 
+a better understanding and awareness of uncertain elements in the environ-
+ment and improving the quality of the internal strategic conversation.
+Learning-Decision Scenarios
+Beyond these four purposes of scenario projects, scenario planning literature 
+and many of the documented processes clearly state that scenarios are also 
+effectively used to consider a speciﬁc decision, project, or issue. For example, 
+leaders at Royal Dutch/Shell often faced key speciﬁc decisions that required 
+the kind of analysis presented in scenario planning, such as the possibility 
+of constructing a new oil-drilling rig in a new location. Scenarios were built 
+around the possibilities of how such an investment might turn out. 
+In the early years at Royal Dutch/Shell, Wack repeatedly had a response 
+of “So what?” from managers after they would participate in his scenario 
+presentations. The ﬁrst-generation scenarios were always learning scenarios; 
+their purpose was not to impel action but to gain understanding and insight 
+(Wack, 1985a). Wack therefore called the ﬁrst-generation scenarios “learn-
+ing scenarios.” Initial scenarios rarely have an impact on managers’ mental 
+models because they often do not provide a basis on which managers could 
+exercise their judgment.
+The World Economic Forum has developed and published scenarios for 
+a variety of regions throughout the world. These scenarios are clearly learn-
+ing scenarios, and they explore several different economic contexts, setting 
+the stage to tell the stories that speculate on their implications. A variety of 
+reports and scenario projects are free to download directly from the World 
+Economic Forum at www.weforum.org/en/initiatives/Scenarios/index.htm.
+Eventually, a high degree of utility was realized in a second round of 
+scenario development. Second-generation scenarios became the “decision 
+scenarios.” Wack’s insights developed when he realized that to affect the 
+
+
+86 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+managers’ core thinking, he needed to target the scenarios to the deepest 
+concerns of the decision maker; and to accomplish that, he needed to tailor-
+ﬁt the scenarios to challenge the mental models of the managers who would 
+use them. Moreover, the scenarios also had to be targeted at a key issue or 
+decision the managers were facing.
+“Decision scenarios explore for facts out there, but they aim at percep-
+tions inside the head of critical decision makers. Their purpose is to gather 
+and transform information of potential strategic signiﬁcance into fresh per-
+ceptions that then lead to strategic insights that were previously beyond the 
+mind’s reach—those that would not even have been considered” (Wack, 
+1985a, p. 88).
+The two-tiered approach to scenario planning was effective at Shell. 
+To summarize, the ﬁrst round of scenarios were context-setting scenarios—
+learning scenarios—that explored the external environment. The second 
+round of scenarios were tailor-ﬁt to the mental models of the managers—
+decision scenarios. This tiered approach is reﬂected in Wack’s (1985a) use of 
+a cherry tree as a metaphor (see Figure 5.2):
+Scenarios are like cherry trees: cherries grow neither on the trunk, nor 
+on the large boughs; they grow on the small branches of the tree. None-
+theless, a tree needs a trunk and large branches in order to grow small 
+branches. The global, macro-scenarios are the trunk; the large branches 
+are the country scenarios developed by Shell operating companies, in 
+which factors individual to their own countries—predetermined and 
+uncertain—are taken into account and added. But the real fruits of the 
+scenarios are picked at the small branches, the focused scenarios which 
+are custom tailored around a strategic issue or a speciﬁc market or in-
+vestment project. (p. 83)
+To apply scenarios in this tiered way, decision makers would have to 
+entertain several rounds of scenario construction. This is why most single 
+instances of scenario planning fail. For example, ﬁrst the global/macro sce-
+narios should be constructed. These simply set the context for the appropri-
+ate industry. These are likely to be scenarios that capture external factors 
+only. Once complete, and depending on the size of the organization, deci-
+sion makers can move into more speciﬁc scenarios focused on a region (in 
+the case of a truly global organization with numerous regional ofﬁces) or 
+a speciﬁc strategic issue. When scenario planning is adopted as a way of 
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+87
+thinking in organizations, the ways in which scenarios can be used expands 
+drastically. 
+To do speciﬁc analyses of parts of the business, one develops “focused 
+scenarios” custom-tailored around a strategic issue, or a speciﬁc market 
+or investment project. But you cannot start with such focused scenarios 
+because you will almost certainly miss key things, or cast the focused 
+scenarios in the wrong way. You must wide-angle ﬁrst, to get the big 
+picture, and them zoom in on your business speciﬁcs. (Wack, 1985a, 
+p. 92)
+Some scenario planning experts favor a highly speciﬁc approach from 
+the start. For example, Louis van der Merwe tells stories about scenario 
+projects he has observed in which the facilitator spent two full days deﬁn-
+ing the initial strategic question. Asking the right question is important; 
+and the more speciﬁc the purpose, the easier it is to assess upon project 
+completion. However, the context, situation, decision maker conversations, 
+and other information will determine the level of focus required. There are 
+no hard rules here, but the context will usually indicate when enough detail 
+is reached. Gaining people’s understanding and readiness to move forward 
+is both hard to miss and a key indicator to proceed.
+F I G U R E  5.2  Scenarios Are Like Cherry Trees
+Local “Learning” Scenarios
+Global/Macro Scenarios
+Focused/Tailored
+“Decision” Scenarios
+
+
+88 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+ASKING THE QUESTION
+The question that is posed directs the purpose of the scenario project. The 
+ﬁrst priority is to develop a clear question that will set the tone of the proj-
+ect. Time should be spent reﬁning the question. The goal of the project is to 
+examine the range of possible environments in which strategic choices can 
+play out, and all of these have signiﬁcant implications for how the initial 
+question can be answered. It is important to remember that when dealing 
+with complex, strategic puzzles, there is no perfect answer. Therefore, ask-
+ing the question is not meant to ﬁnd a single correct answer. Rather, it is to 
+explore a variety of answers and the implications that each carries with it. 
+Scenario thinking “isn’t a magic 8-ball, a process where all you need to ask 
+is ‘should we do x?’ (and getting ‘ask again later’ as a result is neither use-
+ful nor surprising)” (Cascio, 2009, p. 1). The original question of purpose 
+should be revisited as the project progresses. Examining the question repeat-
+edly suggests a willingness to continuously check progress and make sure 
+the project is on track, which in turn may lead to a better question. The rest 
+of this book is aimed at how to go about providing a variety of answers to 
+the initial question, considering their implications, and assessing the range 
+of answers that can be developed.
+A few sample questions to consider are as follows:
+• How can we retain our current value proposition in a high-change 
+environment?
+• Should we introduce a completely new product or service?
+• How can we more effectively integrate our strengths to enhance the 
+value we provide to our customers and increase our efﬁciency?
+• What are the major technological advances on the horizon that we 
+have not thought about?
+Once the purpose of the project has been clariﬁed, it can be docu-
+mented in the project proposal. The next step is to move on to estimating 
+the scope of the project and a general time frame. 
+TECHNOLOGY CORPORATION’S PURPOSE AND QUESTION
+The case study of Technology Corporation started with an initial meeting and 
+conversation with corporate leaders, including the CEO, the vice president 
+of ﬁnance, the vice president of human resources, and the vice president of 
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+89
+product design. It was decided that the purpose for using scenarios was part 
+anticipation and part organizational learning. The priority of the project 
+was to anticipate major potential changes in Small Business Innovation 
+Research (SBIR) funding policy, as well as major developments in the 
+technology industry. In part, the project was also aimed at making sense 
+of the external environment, and organization leaders were clear that 
+they wanted to spend time exploring the things they didn’t know they 
+didn’t know. While it would be the ﬁrst scenario project inside Technology 
+Corporation, two of the leaders had prior exposure to scenario planning. 
+Both expressed interest in the learning orientation that scenario planning 
+demands, adding that learning something unexpected about their industry 
+would be of high value. Leaders settled on the following question to frame 
+the scenario project:
+How can we balance the number of projects we initiate, with a ﬁrmer 
+commitment to producing marketable products and generating rev-
+enue, and wean ourselves from relying on a single source of funding?
+DEFINING THE ESTIMATED  
+SCOPE AND TIME FRAME
+The next task is to develop a sense of the scope of the project. This is largely 
+dependent on the deﬁned purpose of the project. Key items to consider are 
+the amount of time and resources the organization is willing to invest in 
+the project, deadlines that may be relevant, and how far into the future the 
+scenarios will reach.
+Before attempting to estimate details about the time frame, it is useful 
+to know what is generally involved in scenario projects. Although each proj-
+ect is different, most can be expected to involve interviews and initial data 
+gathering, two to three full-day workshops (spaced out over a few weeks) 
+to build the scenarios, and two to three full-day workshops (spaced out 
+over a few weeks) to consider the implications of the scenarios. The space 
+between workshops is important for allowing participants to reﬂect on and 
+absorb ideas and information. Given these general guidelines, projects can 
+be expected to require ﬁve to nine weeks of commitment at a minimum. 
+Small projects with a clear focus may be able to move faster, and, of course, 
+large projects involving multiple organizational units over varying locations 
+
+
+90 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+can take longer. The purpose of this part of the scenario project proposal is 
+simply to estimate how long the project will take, clarifying any deadlines 
+or other critical dates that may pose barriers to the project.
+The time line can be represented graphically, in a list, or in a particular 
+software program. The point is to have a general estimation of the proj-
+ect. Will it be ﬁve weeks or nine? Are there other critical deadlines that 
+may draw attention and participation away from the project that must be 
+considered?
+The time line should also include general agreement on the estimated 
+number of workshops that will be aimed at scenario development and the num-
+ber that will be used for scenario consideration. In other words, the proposal 
+should include a framework for the approximate time investment on the 
+part of the decision makers and key stakeholders in the organization. 
+HOW FAR INTO THE FUTURE?
+This part of the scenario proposal must also consider how far into the future 
+the scenarios will reach. Will they explore ﬁve years or twenty-ﬁve? This 
+span is commonly referred to as the time horizon in scenario literature. “If it 
+takes three years to set up the widget factory, a ﬁve year target for the future 
+exercise would be useful to think through initial operating environment, 
+while a 12 year exercise will help to think about what things will be like over 
+time” (Cascio, 2009, p. 1). Cascio (2009) also recommends using political 
+cycles for considering how far the scenarios should explore. For example, in 
+the United States, scenarios that extend at least eight years into the future 
+are assured a change in the presidency, which will have pros and cons associ-
+ated with the party in power. Another strategy is to consider key forces that 
+one is already familiar with and play them out beyond what is known (e.g., 
+what does the 5G wireless network look like?) (Cascio, 2009). 
+A recent project I facilitated involved cell-phone technology. Given the 
+pace of current technological development, the scenarios we created reached 
+just ﬁve years into the future. The organization was looking at a few speciﬁc 
+decisions driven by competition and emerging, cutting-edge technology. As 
+a team, we looked at forces in the more immediate future to inform the spe-
+ciﬁc decisions in question. Certainly, it would have been a useful exercise to 
+look further into the future beyond, say, the 5G cell-phone network. How-
+ever, we chose a time frame that ﬁt the purpose of the project as the decision 
+makers had deﬁned it.
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+91
+The time horizon should also be included in the project proposal, but it 
+may be adjusted as the project progresses. Incoming information, reshaped 
+perceptions, and new understandings of the internal and external environ-
+ments can reshape how far the scenarios should explore. 
+TECHNOLOGY CORPORATION’S SCOPE AND TIME FRAME 
+Leaders in Technology Corporation were excited about using scenarios to 
+explore the question they had deﬁned and were ready to commit substan-
+tial time to the project. Leaders agreed to three half- to full-day workshops 
+focused on developing scenarios, and three half- to full-day workshops fo-
+cused on using scenarios, with additional time as needed by team members 
+to prepare for the workshops and conduct further research. We expected 
+the project to be completed in approximately three months (see Figure 5.3).
+Leaders further agreed that scenarios reaching ﬁfteen years into the fu-
+ture would be useful in provoking strategic insights about the organization, 
+its market, and how it might evolve.
+BUILDING THE SCENARIO TEAM  
+AND DETERMINING ROLES
+Getting the right people involved in the scenario project is absolutely criti-
+cal. To be effective, projects must involve the people who will use the sce-
+narios, as well as a representative from each level of the company. During 
+the project preparation phase, important stakeholder groups should be iden-
+tiﬁed, individuals with a high degree of organization knowledge should be 
+recruited, internal leaders at all levels of the organization should be identi-
+ﬁed, and the scenario team can be assembled. The scenario team manages 
+the project. Some suggested roles are described next.
+PROJECT LEADER
+The project leader is obviously responsible for directing the scenario project. 
+This person is often an external consultant with expertise in the scenario 
+planning system, and he or she should have signiﬁcant experience in a va-
+riety of business processes and change interventions. It is a good practice 
+to partner an internal expert to colead the project if an external consultant 
+is the main facilitator. Such a partnership allows the internal leader (and 
+
+
+F I G U R E  5.3  Technology Corporation’s Time Line and Scope
+Initial Meeting
+and
+Project Initiation
+Interviews with
+7–10 people (all
+senior managers
+and a cross section)
+3 Workshops for
+Scenario
+Development
+Scenario
+Presentation
+3 Workshops for
+Scenario
+Implementation
+Follow-up
+Evaluative
+Interviews
+Survey Research
+Data Collection
+(Pretest)
+Survey Research
+Data Collection
+(Posttest)
+2 hours
+1 hour per interview
+4 hours each = 12 hours
+2 hours
+4 hours each = 12 hours
+1 hour per interview
+September
+September/October
+October
+End October
+November
+Late November/
+December
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+93
+therefore the organization) to gain scenario planning expertise, and it can 
+help navigate the project inside the organization.
+TEAM MEMBERS
+Team members will participate in all of the workshops, generally be respon-
+sible for developing the detailed scenario story lines, and will accomplish 
+much of their work through subteams. For example, a subteam is often as-
+signed to work on each scenario, provide further details, and write the sce-
+nario narrative. The team should include someone from each level of the 
+organization, so that the team is ultimately cross-level and cross-functional.
+COORDINATOR
+One individual should be responsible for convening the group, managing 
+schedules, reserving spaces and locations for scenario work, creating internal 
+mechanisms for the scenario team to communicate, and performing other 
+administrative functions. 
+REMARKABLE PEOPLE
+Because scenario planning is a system designed to stretch the thinking in-
+side the organization, it should involve people with diverse backgrounds 
+and expertise. Perhaps Pierre Wack’s greatest contribution to modern sce-
+nario planning is the inclusion of what he called “remarkable people.” By 
+this, he simply meant people with a completely different outlook or mental 
+model than those inside the organization working on the issue and who 
+were known for their ability to think unconventionally. Global Business 
+Network has continued this tradition by frequently using musicians, art-
+ists, bench scientists, and other people from a wide range of backgrounds to 
+provide alternate perspectives in scenario projects. 
+In one of my own early projects, I did not consider the importance of 
+building a solid scenario planning team. I neglected spending time deﬁning 
+roles and responsibilities, and with a team loosely formed within the orga-
+nization, the project suffered because no one was responsible for basic func-
+tions of the project. For example, workshops and meetings were ill attended 
+because no one was coordinating the project activities. With few partici-
+pants attending the workshops, one can imagine that there was little learn-
+ing, ownership, buy-in, and implementation of the project outcomes. In the 
+end, the scenarios were never communicated throughout the organization 
+
+
+94 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+because they did not involve enough of the managers’ thinking. In this case, 
+my own failure to see the importance of establishing clear roles and respon-
+sibilities led to an ineffective project. However, it was a valuable learning 
+experience that I will not forget. Once the scenario team members and roles 
+have been identiﬁed, important conversations about outcomes can begin.
+TECHNOLOGY CORPORATION’S SCENARIO TEAM AND ROLES
+Technology Corporation’s scenario team and roles were deﬁned after some 
+conversation and clariﬁcation. Names have been omitted, but the roles were 
+as follows:
+• Project leader
+• Team members. The team was composed of the CEO, the vice 
+president of ﬁnance, the vice president of human resources, the vice 
+president of product design, three managers, and two line workers.
+• Coordinators. Two coordinators were involved in this project, the 
+CEO’s Executive assistant and another manager.
+• Remarkable people. Three remarkable people participated in the 
+project, at various times. One was invited by the CEO, and two were 
+recruited by the project leader.
+• Others. Other participants from Technology Corporation helped at 
+speciﬁc times, but they were not attached to the project as intimately 
+as team members. It is common for additional members to move in 
+and out of the project, with a base of consistent team members.
+ARTICULATING THE GENERAL  
+EXPECTED OUTCOMES
+It is important to know at the outset if a ﬁnancial analysis, a recommenda-
+tion regarding a speciﬁc decision, ongoing organizational learning, or some-
+thing else is sought as a result of the project. Time spent on clarifying the 
+initial purpose of the project provides a general idea of what is expected, 
+but additional conversations should consider any speciﬁc expectations. The 
+bulk of the scenario literature has ignored any process for assessing scenario 
+planning efforts. In contrast, this book assumes that scenario planning can 
+and should be assessed. Speciﬁc strategies for assessing scenario projects are 
+covered in Phase 5—Project Assessment, but it is wise to decide how the 
+project will be assessed from the beginning. 
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+95
+Precisely how to measure the effects of scenario projects can be tricky. 
+Assessing the costs associated with a major industry shift that did not hap-
+pen because it was anticipated through the scenario planning system is a 
+challenging activity. However, estimates can be made. Estimates of savings 
+due to anticipating major business discontinuities, or proﬁts gained through 
+strategic insights, or both, can and should be part of the scenario project. 
+Chapter 10 provides further details and examples for estimating the 
+ﬁnancial beneﬁts of a scenario planning project, but in the project prep-
+aration phase, it is useful to consider a basic ﬁnancial assessment model. 
+Swanson’s (2004) cost/beneﬁt model is a simple tool for thinking about the 
+ﬁnancial beneﬁts of any scenario planning project:
+Performance Value – Cost = Beneﬁt
+In the context of scenario planning, the costs of a project are relatively easy 
+to estimate. The performance value is the tricky part. It can be helpful to simply 
+ask decision makers, “What is the value that you place on a single novel strate-
+gic insight?” (van der Merwe, 2005), and the ensuing conversation will further 
+clarify expected outcomes and intended goals of the project. An additional use-
+ful question to pose is “If this project exceeded your expectations, what would 
+be true?” It is not a requirement that scenario planning projects carry a ﬁnan-
+cial assessment component, but if they do, they are more likely to garner 
+support from executives and project stakeholders. It is also important for 
+those interested in furthering the discipline of scenario planning to think 
+about the value of the contributions that are made through the scenario 
+planning system. The more evidence that is built in to show the beneﬁts of 
+scenario planning, the more conﬁdently its beneﬁts can be promoted.
+Outside of ﬁnancial data, many other tools can be used to assess in-
+dividual learning, mental models, decision making, and other important 
+outcomes of scenario planning. These tools tend to be more academic in 
+nature and may not be appropriate in some situations. However, when used, 
+they can make a very compelling case. These tools can provide valuable in-
+formation about learning, perceptions, decision making, and other critical 
+outcomes of scenario planning. Projects using these tools may look like re-
+search projects—but why wouldn’t they? The purpose of these projects is to 
+discover new knowledge about some organizational element as it may relate 
+to the scenario project. For the purposes of project preparation, it is useful 
+to know if decision makers are interested in assessing particular items. 
+
+
+96 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+The literature suggests that scenario planning can beneﬁt organizations 
+in several ways. Outcomes commonly associated with scenario planning in-
+clude the following:
+• Individual and organizational learning
+• Improved decision making
+• Stronger communication systems 
+• Shared mental models of the internal and external environments
+• Heightened organizational performance
+• Greater organizational agility
+• Stronger ability to ﬁt with the environment
+• Deeper anticipatory capacity
+• Increased strategic insights
+These are all domains that have related measures that can be assessed at the 
+start and again at the end of a scenario planning project. Measures that are 
+important to stakeholders and that are related to the purpose of the proj-
+ect should be agreed on as part of the purpose and documented in the 
+project proposal.
+TECHNOLOGY CORPORATION’S GENERAL EXPECTED OUTCOMES
+Leaders in Technology Corporation expressed interest in knowing whether 
+employees viewed the organization as a place that emphasized learning, 
+whether decision making could become a more team-oriented activity, and 
+whether better communication could be facilitated through the scenario 
+project. Leaders also placed a high value on the potential to know what 
+things to pay attention to. In other words, if certain events were indicators 
+that other events were about to happen, there was great value in indentify-
+ing these “indicators.” Finally, although leaders and executives in Technol-
+ogy Corporation did not expect a tangible return on investment, they were 
+interested in considering how the project could add ﬁnancial value.
+TAKING MEASURES RELATIVE TO  
+THE EXPECTED OUTCOMES
+Once the expected outcomes of the scenario planning project have been 
+decided, any measures relevant to those expected outcomes can be taken. 
+Think of this as any measure that can be taken at the start of the project 
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+97
+and then compared to a second measure of the same item at the conclusion 
+of the project—a simple pretest/posttest assessment strategy. The general 
+plan for what will be measured, where, how, and for what purpose should be 
+included in the scenario project proposal.
+RELATED MEASURES AT TECHNOLOGY CORPORATION
+The measures taken at Technology Corporation mapped directly to the ex-
+pected outcomes that were identiﬁed. We chose instruments that had a his-
+tory of validity and utility to measure the expected outcomes. The selection 
+was a collaborative process based on conversations that clariﬁed what proj-
+ect sponsors were hoping to achieve and other desirable changes that might 
+logically ﬂow from a scenario planning project.
+Learning Orientation —>  Watkins and Marsick’s Dimensions of 
+Learning Organization Questionnaire 
+(DLOQ)
+Team Decision Making —>  Scott and Bruce’s General Decision-
+Making Style Survey (GDMS)
+Communication 
+—>  Van der Merwe’s Conversation Quality 
+and Engagement Checklist
+Indicators 
+—>  A list of indicators or “signposts”
+Value-Added 
+—>  Swanson’s Cost/Beneﬁt Analysis
+CONCLUSION
+The components presented in this chapter represent the critical ﬁrst steps of 
+any scenario project. Deﬁning these components at the start of the project 
+will create anchors for other parts of the project later on. The scenario proj-
+ect proposal, the major output of the project preparation phase, is designed 
+to clarify assumptions, expectations, and get the project moving. Done well, 
+the project’s purpose, scenario team, time frame, estimated measures, out-
+comes, and beneﬁts have been articulated and provide a starting point. In 
+the event that disagreements ensue about the content of the improvement pro-
+posal, expectations can be clariﬁed and changed before moving ahead. The 
+scenario project proposal provides a general outline for the project and serves 
+as a contract for moving forward with the scenario planning effort. What 
+follows is a sample that illustrates the components discussed in this chapter.
+
+
+98 
+PH A S E S  OF P ERFO RM ANCE -B ASED S C E N AR I O S Y S T E M
+SAMPLE SCENARIO PROJECT PROPOSAL
+DATE: 
+Month / Day / Year
+TO: 
+Organization Contact / CEO / Relevant Decision Maker [title]
+FROM: 
+T. Chermack
+RE: 
+Scenario Project Proposal
+The purpose of this document is to establish the general, agreed-on objectives for a scenario 
+project in Technology Corporation. This document describes the purpose of the project, the 
+estimated scope and time frame, the composition of the scenario team, the general expected 
+outcomes, and the measurements to be taken prior to the start of the project. Also included is a 
+general ﬁnancial beneﬁt estimate.
+Purpose
+The purpose of a scenario project at Technology Corporation is to help make sense of a rapidly 
+changing technology industry and environment, and to help Technology Corporation anticipate 
+possible major shifts in the industry. More speciﬁcally, Technology Corporation is struggling 
+with the ineffectiveness of outdated planning models and intends to develop a learning-focused 
+approach to strategy. Rather than hike proﬁt expectations, Technology Corporation desires to 
+shift its culture toward one that supports continuous learning and development, improved 
+communication across silos, and shared, collaborative decision making. Speciﬁc issues include 
+questions about the amount of resources invested in each R&D project. Based on learning 
+scenarios generated for the technology/R&D industry, Technology Corporation also intends to 
+understand how to better distribute its resources across more viable projects expected to 
+eventually lead to marketable technology products. 
+Estimated Scope and Time Frame
+The project will begin with an initial organizing meeting starting on [mm/dd/yy]. Technology 
+Corporation estimates that six subsequent full-day workshops will be used over approximately 
+eight weeks to develop scenarios and use them in examining potential futures. Technology 
+Corporation also agrees to allow [internal or external consultant name] access to interview 
+participants from multiple levels of the organization, access to internal organizational records, 
+and other items relevant to the project. The scenarios will have a horizon year of [ﬁfteen years 
+out], which extends the scenarios into the creative future of the technology industry.
+Scenario Team and Roles
+The scenario team will include Pierre Wack as the project leader. Deepak Chopra, Katherine 
+Eisenhardt, Sansai Hosokawa, Candace Pert, Joe Dispenza, Bikram Choudhury, and Sen no 
+Rikyu will be team members. Pema Chodron will be the on-site project coordinator, and will 
+serve as the general administrative contact for the project. Pierre Wack will recruit additional 
+people with diverse backgrounds as he sees ﬁt throughout the project workshops and meetings  
+to introduce alternative thinking.
+General Expected Outcomes
+Technology Corporation expects several outcomes from the scenario project. These are 
+assessments of (1) perceptions of organizational learning characteristics, (2) team decision 
+
+
+  
+P H A S E 1—P R O J E C T  P R E P A R A T I O N  
+99
+making, (3) communication and conversation skills, (4) clear indicators or “signals” of events 
+about to unfold, and (5) a cost/beneﬁt analysis. Additional outcomes that are standard in scenario 
+planning are strategic insights about products and services in the technology industry, four unique 
+and detailed scenarios of the industry, and time devoted to dialogue about strategic issues. 
+Measurements
+Given the expected outcomes of this project, measurements will include ﬁnancial beneﬁt 
+estimates of the scenario projects and assessments of participant learning, decision making, and 
+conversation quality. The following measurements will be taken from project participants before 
+the project begins and at the end of the scenario project so as to determine changes:
+ 
+1. Dimensions of Learning Organization Characteristics
+ 
+2. General Decision-Making Style Survey
+ 
+3. Conversation Quality and Engagement Checklist
+ 
+4. Indicators or “signals”
+ 
+5. Cost/Beneﬁt Analysis
+The cost/beneﬁt estimate is provided here. We deﬁned the performance value as the value of the 
+scenario project with the assumption that it will provoke a strategic insight. We then estimate 
+the value of such an insight in the case that it provides a competitive edge or prepares us to react 
+faster. From this value, we subtract the costs of the project to derive the beneﬁt:
+ 
+Performance value 
+$250,000  
+(details of estimate below)
+        –         Cost 
+$100,000  
+(total breakdown of costs below)
+  
+Beneﬁt 
+$150,000
+Performance Value Estimate
+The performance value estimate follows. Assumption: The organization is able to generate a 
+signiﬁcant, innovative idea as a result of the scenario project that leads to a new technology 
+product/service. Let’s assume the product is a technology communication device. In 2009, RIM 
+reported shipping ﬁfty million BlackBerry smart phones, generating $11 billion in revenue. 
+Technology Corporation is much smaller, but based on a similarly priced device, assume that 
+Technology Corporation is able to develop, patent, market, and sell ﬁve million devices, 
+generating (conservatively) $8 million. Start-up, R&D, marketing, patenting, prototyping, and 
+other development costs can be estimated at approximately $5 million, which leaves $3 million. 
+Again, being highly conservative, we reduce the performance value to $250,000 based on other 
+potential development costs.
+Cost Estimate
+Costs related to facilitating the scenario project are as follows:
+ 
+Consulting Fees  =  $40,000   (6 days of facilitation at $5,000 per day = $30,000 + 
+$10,000 for other meetings and time spent on the 
+project)
+ 
+Materials  
+=  $5,000   (includes printing, transcription, software, participant 
+materials, preparation of all reports and scenario 
+packages, and all other project materials)
+
+
+100 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+  
+Travel  
+=  $5,000   (6 air tickets from Denver, CO, to [location] at $300 
+each = $1,800 + 15 nights’ lodging [location] at $150/
+night = $2,250 + $950 miscellaneous or extra travel)
+  
+Meals  
+=  $6,300   (6 workshop days × 3 meals per day × 7 participants 
+[assume $50 per person, per meal] = $6,300)
+ 
+Time away from
+ 
+regular work  
+=  $47,000   (This ﬁgure assumes approximately 27 participants at 
+any given time and estimates that each participant may 
+cost approximately $2,000 in time away from his or her 
+normally assigned functions)
+ 
+Total Project 
+ 
+Cost Estimate  
+=  $100,000
+
+
+ 101
+Phase 2— 
+Scenario Exploration: 
+Breathing In
+The scenario exploration phase of the scenario system focuses on analyzing 
+the external and internal environments of the organization. During these 
+analyses, the initial issue or purpose of the project from the project prepara-
+tion phase must be kept in mind as information is gathered. This chapter 
+describes a variety of methods and tools that can be used to assess the exter-
+nal and internal situation, context, and problem (see Figure 6.1).
+Scenario exploration is divided into two general parts, external analysis 
+and internal analysis. These two parts establish the boundaries of the proj-
+ect in preparation for the next phase, scenario development. Several tools for 
+gathering information about the external environment and two workshops 
+for the internal analysis are detailed. The workshops are intended to stimu-
+late strategic thinking, familiarize participants with key issues, and prepare 
+participants for constructing scenarios as described in Chapter 7.
+EXTERNAL ANALYSIS
+Information gathering is the foundation of the analysis of the external en-
+vironment. The scenario exploration phase involves data gathering both on 
+a general level and about the speciﬁc issue under consideration. The goal of 
+information gathering is to learn and to expand the project team’s familiar-
+ity with the industry and relevant economic and social factors. A secondary 
+goal is to gather information relevant to the speciﬁc issue or decision articu-
+lated in the project proposal. “Being a scenario planner, therefore, means 
+6

@@ -442,7 +442,12 @@
       "relatedCount_other": "{{count}} 个关联",
       "relatedEmpty": "暂未关联其他内容。",
       "descriptionEmpty": "本资料暂未撰写说明。",
-      "referencesEmpty": "暂未登记出处。"
+      "referencesEmpty": "暂未登记出处。",
+      "chapters": "章节",
+      "chapterCount_one": "{{count}} 章",
+      "chapterCount_other": "{{count}} 章",
+      "chapterContentEmpty": "本章暂无内容。",
+      "chapterRelated": "本章关联内容"
     },
     "experiments": {
       "intro": {

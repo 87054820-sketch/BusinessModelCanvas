@@ -1,0 +1,79 @@
+[
+  {
+    "slug": "ch01-value-chain",
+    "order": 1,
+    "title": { "en": "The Value Chain: Diagnosing Competitive Advantage", "zh": "价值链：诊断竞争优势" },
+    "summary": {
+      "en": "Chapter 2 of *Competitive Advantage*. The value chain disaggregates a firm into its strategically relevant activities to understand cost behaviour and existing/potential sources of differentiation. Five primary activities (inbound logistics, operations, outbound logistics, marketing & sales, service) plus four support activities (firm infrastructure, HR management, technology development, procurement). Margin is the difference between total value and the collective cost of performing all activities. The chain is not just a taxonomy — it reveals linkages between activities where advantage is actually built. Interdependencies between one activity's cost and another's performance are the strategic heart of the framework.",
+      "zh": "《竞争优势》第2章。价值链将企业拆解为其战略相关活动，以理解成本行为和现有/潜在的差异化来源。五项主要活动（内部物流、运营、外部物流、营销与销售、服务）加上四项支持活动（企业基础设施、人力资源管理、技术开发、采购）。利润是总价值与完成所有活动的总成本之间的差额。价值链不仅是一个分类——它揭示了活动之间的关联，优势正是在这些关联中构建的。一项活动的成本与另一项活动绩效之间的相互依赖关系是该框架的战略核心。"
+    },
+    "relatedCanvasDefIds": ["porters-value-chain"],
+    "relatedStrategyFrameworkSlugs": ["porters-value-chain"]
+  },
+  {
+    "slug": "ch02-cost-advantage",
+    "order": 2,
+    "title": { "en": "Cost Advantage: The Ten Cost Drivers", "zh": "成本优势：十大成本驱动因素" },
+    "summary": {
+      "en": "Chapter 3. Cost advantage is achieved by controlling the drivers of cost at the activity level better than competitors. The ten cost drivers: (1) economies of scale, (2) learning and spillovers, (3) capacity utilization, (4) linkages (within the value chain and with suppliers/channels), (5) interrelationships with other business units, (6) vertical integration, (7) timing (first-mover advantages/disadvantages), (8) discretionary policies (product features, service levels, HR practices), (9) location, (10) institutional factors (regulation, unions, tariffs). The chapter provides a step-by-step method: identify the firm's value chain, diagnose cost drivers for each activity, compare relative costs to competitors, and target specific drivers for cost reduction. 'Cost advantage is not about being cheap — it's about understanding which activities drive cost and why.'",
+      "zh": "第3章。成本优势通过在活动层面对成本驱动因素的控制优于竞争对手来实现。十大成本驱动因素：(1) 规模经济，(2) 学习和外溢，(3) 产能利用率，(4) 关联（价值链内部及与供应商/渠道），(5) 与其他业务单元的相互关系，(6) 纵向整合，(7) 时机（先发优势/劣势），(8) 自主政策（产品特性、服务水平、人力资源实践），(9) 地点，(10) 制度因素（监管、工会、关税）。本章提供了按步骤方法：识别企业价值链、诊断每项活动的成本驱动因素、与对手的相对成本比较、瞄准特定驱动因素降低成本。「成本优势不是关于低价——而是关于理解哪些活动驱动成本、为什么。」"
+    },
+    "relatedCanvasDefIds": ["porters-value-chain"],
+    "relatedStrategyFrameworkSlugs": ["porters-value-chain"]
+  },
+  {
+    "slug": "ch03-differentiation",
+    "order": 3,
+    "title": { "en": "Differentiation: Creating Unique Value Through Activities", "zh": "差异化：通过活动创造独特价值" },
+    "summary": {
+      "en": "Chapter 4. Differentiation arises from how the firm performs its value chain activities — every activity is a potential source of uniqueness. The uniqueness drivers mirror the cost drivers but operate through a different logic: policy choices, linkages, timing, location, interrelationships, learning, integration, scale, and institutional factors. The chapter introduces use criteria (actual reduction in buyer cost or improvement in buyer performance) and signalling criteria (means the buyer uses to infer value — advertising, reputation, packaging, appearance). Sustainable differentiation requires that the sources of uniqueness are hard to imitate and durable. The cost of differentiation must be lower than the price premium it commands — otherwise the firm earns above-average returns on paper but below-average in reality.",
+      "zh": "第4章。差异化来自企业如何执行其价值链活动——每项活动都是独特性的潜在来源。独特性驱动因素与成本驱动因素镜像但通过不同逻辑运作：政策选择、关联、时机、地点、相互关系、学习、整合、规模和制度因素。本章引入使用标准（实际降低买方成本或改善买方绩效）和信号标准（买方用于推断价值的手段——广告、声誉、包装、外观）。可持续差异化要求独特性来源难以模仿且持久。差异化的成本必须低于它所带来的价格溢价——否则企业账面回报高于平均水平，实际却低于。"
+    },
+    "relatedCanvasDefIds": ["porters-value-chain", "value-proposition-canvas"]
+  },
+  {
+    "slug": "ch04-technology",
+    "order": 4,
+    "title": { "en": "Technology and Competitive Advantage", "zh": "技术与竞争优势" },
+    "summary": {
+      "en": "Chapter 5. Technology affects competitive advantage through its impact on cost drivers and uniqueness drivers at the activity level. Porter's key move: don't analyze 'technology' in the abstract; map how each technology affects each activity's cost or differentiation. The technology value chain: every activity employs some technology or procedure. The technology strategy question is: which technologies to lead in vs. follow? The answer depends on: sustainability of technological lead, first-mover advantages/disadvantages (pioneering costs, demand uncertainty, buyer needs change, early vs. late technology discontinuities, low-cost imitation), and how the technology shifts the industry's Five Forces.",
+      "zh": "第5章。技术通过影响活动层面的成本驱动因素和独特性驱动因素来影响竞争优势。Porter 的关键操作：不要抽象地分析「技术」；而是要画出每种技术如何影响每项活动的成本或差异化。技术价值链：每一项活动都使用某种技术或程序。技术战略的问题是：在哪些技术上领先？哪些技术跟随？答案取决于：技术领先的可持续性、先发优势/劣势（先驱成本、需求不确定性、买方需求变化、早期 vs. 晚期技术不连续性、低成本模仿），以及技术如何改变产业的五力结构。"
+    }
+  },
+  {
+    "slug": "ch05-competitor-selection",
+    "order": 5,
+    "title": { "en": "Competitor Selection: Good Competitors and Bad Competitors", "zh": "竞争者选择：好对手和坏对手" },
+    "summary": {
+      "en": "Chapter 6. Not all competitors are threats — some improve the firm's competitive position. 'Good competitors' can: absorb demand fluctuations, increase the perceived differentiation of the firm, serve unattractive segments, provide a cost umbrella, improve bargaining position with labour and government, lower antitrust risk, and motivate effort in the firm. 'Bad competitors' destroy industry structure through price wars, overinvestment, or value-destroying acquisitions. The chapter provides a framework for diagnosing competitor quality and a taxonomy of moves to influence which competitors exit, stay, or never enter. The strategist's job is not eliminating competition — it's curating the competitive field.",
+      "zh": "第6章。不是所有竞争者都是威胁——有些反而会改善公司的竞争地位。「好对手」可以：吸收需求波动、提升公司感知差异化、服务不具吸引力的细分市场、提供成本伞、改善与劳动力和政府的谈判地位、降低反垄断风险、激励公司内部投入。「坏对手」通过价格战、过度投资或破坏价值的收购毁掉产业结构。本章提供了诊断竞争者质量的框架和影响哪些竞争者退出、留下或根本不进入的行动分类。战略家的任务不是消灭竞争——而是策展竞争场域。"
+    }
+  },
+  {
+    "slug": "ch06-segmentation",
+    "order": 6,
+    "title": { "en": "Industry Segmentation and Competitive Advantage", "zh": "产业细分与竞争优势" },
+    "summary": {
+      "en": "Chapter 7. Industry segmentation is not marketing segmentation — it's structural segmentation. Segments are defined by differences in the value chain required to serve them. Two kinds: product segments (different product varieties) and buyer segments (different buyer groups). The attractiveness of a segment depends on its own Five Forces structure, not on the industry average. The chapter provides a method for segment-level structural analysis and a framework for choosing between broad-coverage and focus strategies. Key warning: average industry profitability obscures enormous variation across segments — the segment-level analysis is where competitive advantage is actually won or lost.",
+      "zh": "第7章。产业细分不是营销细分——而是结构性细分。细分由服务于它们所需的价值链差异来定义。两种细分：产品细分（不同产品品种）和买方细分（不同买方群体）。一个细分领域的吸引力取决于其自身的五力结构，而不是产业平均。本章提供了细分层面结构分析的方法，以及选择广覆盖还是聚焦战略的框架。关键警告：产业平均利润率掩盖了细分领域间的巨大差异——细分层面的分析才是竞争优势实际被赢得或输掉的地方。"
+    }
+  },
+  {
+    "slug": "ch07-substitution",
+    "order": 7,
+    "title": { "en": "Substitution: The Most Rigorous Framework Ever Written", "zh": "替代：迄今最严谨的分析框架" },
+    "summary": {
+      "en": "Chapter 8. Substitution is the process by which one product/service replaces another in performing a specific buyer function. Porter's framework is the most detailed in strategy literature: substitution identification (products that perform the same generic function), the economics of substitution (relative value/price, switching costs, buyer propensity to substitute), substitution threat over time (changes in relative price-performance, buyer learning, diffusion S-curves), and strategic response to substitution (improve relative value/price, raise switching costs, segment to reduce exposure, enter the substitute industry, harvest). The chapter is dense but essential — most strategy practitioners use 'threat of substitutes' as a throwaway category without really analyzing it. Ch. 8 is the antidote.",
+      "zh": "第8章。替代是指一个产品/服务在执行特定买方功能方面取代另一个的过程。Porter 的框架是战略文献中最详尽的：替代识别（执行同一通用功能的产品）、替代经济学（相对价值/价格、转换成本、买方替代倾向）、随时间变化的替代威胁（相对价格-性能变化、买方学习、扩散 S 曲线）、面对替代的战略应对（改善相对价值/价格、提高转换成本、通过细分减少暴露、进入替代产业、收割）。本章信息密集但必不可少——大多数战略实践者把「替代品威胁」当作一个可抛弃的类别，从不真正深入分析。第8章是解药。"
+    }
+  },
+  {
+    "slug": "ch08-interrelationships",
+    "order": 8,
+    "title": { "en": "Interrelationships Among Business Units", "zh": "业务单元间的相互关系" },
+    "summary": {
+      "en": "Chapters 9-11. The horizontal strategy problem: how should business units in a diversified firm relate to each other for competitive advantage? Three types of interrelationships: tangible (sharing activities in the value chain — joint procurement, shared manufacturing, common sales force), intangible (transferring management know-how across units), and competitor interrelationships (multi-point competition across several businesses). The chapter introduces horizontal organization: structures, systems, and HR practices that make interrelationships real rather than just PowerPoint. Tangible interrelationships lower cost or enhance differentiation if sharing advantages exceed the costs of coordination, compromise, and inflexibility.",
+      "zh": "第9-11章。横向战略问题：多元化企业中各业务单元应该如何关联才能带来竞争优势？三种相互关系类型：有形的（共享价值链活动——联合采购、共享制造、共用销售团队）、无形的（跨单元转移管理诀窍）和竞争者相互关系（跨多个业务的多点竞争）。本章引入横向组织：使相互关系变得真实而非只是 PPT 的结构、系统和 HR 实践。有形相互关系在共享的优势超过协调、妥协和僵化的成本时能降低费用或增强差异化。"
+    }
+  }
+]

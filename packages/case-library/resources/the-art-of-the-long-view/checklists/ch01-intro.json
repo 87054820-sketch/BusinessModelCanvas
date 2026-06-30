@@ -1,0 +1,80 @@
+{
+  "chapter": "ch01-intro",
+  "sourceFiles": {
+    "en": "07-Introduction-to-the-Paperback-Edition-The-Strategic-Conversation—Broadening-the-.txt"
+  },
+  "concepts": [
+    {
+      "name": "Scenarios as strategic conversation",
+      "definition": "The book's core discipline for scenario planning: a way to structure attention, choices, and action around the central mechanism described in this chapter."
+    },
+    {
+      "name": "Chapter-Specific Framework",
+      "definition": "Peter Schwartz's 1991 book that popularized scenario planning beyond Shell's corridors. Not about predicting the future — about preparing for multiple plausible futures so you recognize which one is unfolding early enough to act. Schwartz distills his Shell group-planning experience into a reproducible method: driving forces, predetermined elements, critical uncertainties, scenario logics, and early indicators. 'The end result is not an accurate picture of tomorrow, but better decisions about the future.'"
+    },
+    {
+      "name": "Decision Discipline",
+      "definition": "A practical logic for turning analysis into choices, signals, tests, governance, or commitments rather than leaving insight as narrative."
+    },
+    {
+      "name": "System Effects",
+      "definition": "The recognition that outcomes emerge from interacting forces, participants, incentives, feedback loops, or external changes rather than from one isolated variable."
+    }
+  ],
+  "arguments": [
+    {
+      "claim": "The framework changes how managers see the system",
+      "evidence": "The chapter gives managers a vocabulary and sequence for seeing hidden structure: forces and signals in scenario work, or participants and interactions in platform work."
+    },
+    {
+      "claim": "The value appears only when insight changes action",
+      "evidence": "The chapter repeatedly links diagnosis to decisions, indicators, governance, metrics, launch choices, or strategic commitments."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Framework application case",
+      "context": "The chapter applies scenario planning to a concrete managerial problem.",
+      "illustrates": "How the framework reveals hidden structure, trade-offs, and action points.",
+      "lesson": "Use the method to change decisions, not merely to label a situation."
+    }
+  ],
+  "logicChains": [
+    {
+      "description": "Define the central decision → map forces/participants and uncertainties → identify the key mechanism → test implications or interactions → monitor signals and adapt action.",
+      "sourceHint": "Synthesized from source chapter and index summary."
+    }
+  ],
+  "terminology": [
+    {
+      "term": "Scenarios as strategic conversation",
+      "definition": "Core idea of this scenario planning chapter."
+    },
+    {
+      "term": "Signal",
+      "definition": "An observable indicator that a future, network state, or strategic condition is emerging."
+    },
+    {
+      "term": "Feedback loop",
+      "definition": "A reinforcing or balancing mechanism that changes outcomes over time."
+    }
+  ],
+  "nuance": [
+    "The method is not prediction; it is structured preparation and action under uncertainty.",
+    "The framework must be revisited as signals, participants, and conditions change."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": [
+      "scenario-matrix"
+    ],
+    "relatedStrategyFrameworkSlugs": [
+      "scenario-planning"
+    ],
+    "relatedPatternSlugs": [],
+    "relatedCaseSlugs": [],
+    "relatedChapters": [
+      "ch02-scenarios",
+      "ch03-driving"
+    ]
+  }
+}

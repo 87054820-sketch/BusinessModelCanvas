@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "ch01-canvas",
+    "order": 1,
+    "title": { "en": "Canvas: The Business Model Canvas", "zh": "画布：商业模式画布" },
+    "summary": {
+      "en": "The 9 building blocks that describe how an organization creates, delivers and captures value — customer segments, value propositions, channels, customer relationships, revenue streams, key resources, key activities, key partnerships, and cost structure. This chapter introduces the canvas as both a descriptive and a design tool.",
+      "zh": "描述组织如何创造、传递和获取价值的 9 个构造块：客户细分、价值主张、渠道、客户关系、收入来源、核心资源、关键业务、重要伙伴和成本结构。本章将画布同时作为描述工具和设计工具引入。"
+    },
+    "relatedCanvasDefIds": ["business-model-canvas"],
+    "relatedCaseSlugs": ["spotify", "nespresso", "swiss-private-banking"]
+  },
+  {
+    "slug": "ch02-patterns",
+    "order": 2,
+    "title": { "en": "Patterns: Five Business Model Patterns", "zh": "模式：五种商业模式形态" },
+    "summary": {
+      "en": "Unbundling, Long Tail, Multi-Sided Platforms, Free, and Open Business Models — five recurring structural patterns that reappear across industries. Understanding them lets you recognize business-model DNA rather than treating every company as a blank-slate design.",
+      "zh": "解绑、长尾、多边平台、免费和开放式商业模式——五种跨产业反复出现的结构性形态。理解它们让你识别商业模式的 DNA，而不是把每家公司当作白纸一张来设计。"
+    },
+    "relatedPatternSlugs": ["long-tail", "unbundling-business-models", "multi-sided-platforms", "free", "open-business-models"],
+    "relatedCaseSlugs": ["lego-long-tail", "mobile-telco-unbundling", "google-multi-sided", "gillette", "glaxosmithkline-patent-pool"]
+  },
+  {
+    "slug": "ch03-design",
+    "order": 3,
+    "title": { "en": "Design: Techniques and Tools", "zh": "设计：技巧和工具" },
+    "summary": {
+      "en": "Customer insights, ideation, visual thinking, prototyping, storytelling, and scenarios — six design techniques adapted from design thinking to business-model innovation. Not about drawing pretty pictures; about making assumptions visible and testable.",
+      "zh": "客户洞察、创意构思、视觉化思考、原型制作、故事讲述和情景推测——六种从设计思维改编到商业模式创新的技术。不是画好看的图，而是让假设看得见、测得着。"
+    },
+    "relatedCanvasDefIds": ["empathy-map", "value-proposition-canvas", "business-model-canvas"],
+    "relatedExperimentSlugs": ["customer-interview", "storyboard"]
+  },
+  {
+    "slug": "ch04-strategy",
+    "order": 4,
+    "title": { "en": "Strategy: Environment, Evaluation, and Portfolio", "zh": "战略：环境、评估和组合管理" },
+    "summary": {
+      "en": "Four lenses for evaluating business models: the business model environment (trends, industry forces, market forces, macroeconomic forces), SWOT-based assessment, Blue Ocean Strategy perspective, and managing multiple business models simultaneously. Strategy is not just picking a position — it's continuously adapting the model to a shifting environment.",
+      "zh": "评估商业模式的四个透镜：商业环境（趋势、产业力量、市场力量、宏观经济力量）、基于 SWOT 的评估、蓝海战略视角、同时管理多套商业模式。战略不只是选一个位置——是持续让模型适应变化的环境。"
+    },
+    "relatedCanvasDefIds": ["business-model-environment", "blue-ocean-strategy-canvas"],
+    "relatedStrategyFrameworkSlugs": ["business-model-environment-scan", "blue-ocean-strategy"]
+  },
+  {
+    "slug": "ch05-process",
+    "order": 5,
+    "title": { "en": "Process: From Design to Implementation", "zh": "流程：从设计到实施" },
+    "summary": {
+      "en": "The 5-phase business-model design process: Mobilize, Understand, Design, Implement, and Manage. Covers team composition, workshop facilitation, prototyping cycles, communication planning, and ongoing model stewardship. The canvas is a tool; the process is what turns it into action.",
+      "zh": "商业模式设计五阶段：动员、理解、设计、实施和管理。涵盖团队构成、工作坊引导、原型循环、沟通规划以及持续的模型管理。画布是工具，流程才是把工具变为行动的东西。"
+    }
+  }
+]

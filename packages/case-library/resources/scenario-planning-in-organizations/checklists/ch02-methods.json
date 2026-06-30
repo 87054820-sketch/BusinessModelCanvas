@@ -1,0 +1,29 @@
+{
+  "chapter": "ch02-methods",
+  "sourceFiles": { "en": "03-3-Scenario-Planning-Methods.txt" },
+  "concepts": [
+    { "name": "Scenario Method Taxonomy", "definition": "A review of multiple approaches including intuitive logics, trend-impact analysis, cross-impact analysis, morphological analysis, field anomaly relaxation, French school, Futures Group, TAIDA, and procedural variants." },
+    { "name": "Intuitive Logics", "definition": "The Shell/GBN tradition that builds internally consistent narratives from driving forces and critical uncertainties." },
+    { "name": "Method-Context Fit", "definition": "No method is universally best; choice depends on decision type, time horizon, expertise, data availability, and cultural readiness for uncertainty." }
+  ],
+  "arguments": [
+    { "claim": "Method selection is itself a strategic design choice.", "evidence": "Different methods trade off rigor, participation, data intensity, facilitation burden, and narrative richness." },
+    { "claim": "The two-by-two matrix is useful but not the whole field.", "evidence": "Chermack reviews multiple schools and warns against reducing scenario planning to one workshop template." }
+  ],
+  "cases": [
+    { "name": "Shell / GBN intuitive logics", "context": "Popular practice uses driving forces and critical uncertainties to create a small set of internally coherent futures.", "illustrates": "How narrative scenarios can support executive conversation and assumption testing.", "lesson": "Use intuitive logics when participation and strategic conversation matter." }
+  ],
+  "logicChains": [
+    { "description": "Clarify decision context → choose scenario method → collect driving forces → rank uncertainty and impact → form scenario logics → write narratives → test implications.", "sourceHint": "Methods review and scenario development guidance." }
+  ],
+  "terminology": [
+    { "term": "Driving forces", "definition": "External forces that may shape the organization's future environment." },
+    { "term": "Critical uncertainties", "definition": "High-impact, high-uncertainty forces that structure scenario logics." },
+    { "term": "Scenario logics", "definition": "The underlying structure or causal logic that makes each scenario coherent." }
+  ],
+  "nuance": [
+    "A method can be technically rigorous yet inappropriate for a group's culture or decision need.",
+    "The best scenario process makes assumptions discussable rather than merely producing polished stories."
+  ],
+  "crossReferences": { "relatedStrategyFrameworkSlugs": ["scenario-planning"], "relatedCanvasDefIds": ["scenario-matrix"], "relatedChapters": ["ch01-intro", "ch03-performance"] }
+}

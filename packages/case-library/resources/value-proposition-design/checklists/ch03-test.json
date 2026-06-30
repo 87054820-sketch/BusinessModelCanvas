@@ -1,0 +1,37 @@
+{
+  "chapter": "ch03-test",
+  "sourceFiles": { "en": "vpc-en/full.txt (search for 'test' sections)", "zh": "07-3.-测试.txt" },
+  "concepts": [
+    { "name": "10 Testing Principles", "definition": "(1) Realize that evidence trumps opinion, (2) Learn faster and reduce risk by embracing failure, (3) Test early; refine later, (4) Remember: experiments = reality checks, (5) Balance learnings and vision, (6) Identify idea killers — find the fatal flaws fast, (7) Understand customers first — desirability before feasibility/viability, (8) Make it measurable, (9) Accept that not all facts are equal — some evidence is stronger, (10) Test twice, launch once." },
+    { "name": "Three Testing Tiers", "definition": "Testing Circle (inner): Customer Jobs, Pains, Gains — test desirability first. Testing Square (middle): Value Proposition — test whether your solution actually addresses jobs/pains/gains. Testing Rectangle (outer): Business Model — test whether the full model works at scale with viability." },
+    { "name": "Test Card", "definition": "A structured tool to design experiments. Format: Hypothesis (we believe that...), Test (to verify that we will...), Metric (and measure...), Criteria (we are right if...)." },
+    { "name": "Learning Card", "definition": "A structured tool to capture experiment results. Format: Hypothesis (we believed that...), Observation (we observed...), Learning/Insight (from that we learned...), Decision/Action (therefore we will...)." },
+    { "name": "Progress Board", "definition": "A visual tool to track hypotheses, tests, and learnings. Shows which hypotheses need testing, which are being tested, which are validated, and which are invalidated. Drives the Build-Measure-Learn loop." },
+    { "name": "Build-Measure-Learn Loop", "definition": "Eric Ries's Lean Startup cycle: build a minimum viable product, measure how customers respond, learn whether to pivot or persevere. Applied to value propositions: build a test, measure evidence, learn whether the hypothesis is true." },
+    { "name": "5 Data Traps", "definition": "(1) False Positive — test says hypothesis is true but it's false, (2) False Negative — test says hypothesis is false but it's true, (3) Local Maximum — optimizing within current frame but missing bigger opportunity, (4) Exhausted Maximum — market saturated, no more growth possible, (5) Wrong Data — measuring something irrelevant." },
+    { "name": "Experiment Library", "definition": "A catalog of testing techniques ordered by certainty and cost: from low-certainty/low-cost (CTA, tracking ads) to high-certainty/high-cost (pre-sales, pilots). Includes: Call to Action, Unique Links, Datasheet, Brochure, Storyboard, Landing Page, Product Box, Video, Learning Prototype, Wizard of Oz, Concierge MVP, Crowdfunding, Pre-sale." }
+  ],
+  "arguments": [
+    { "claim": "Testing is not optional — it's the difference between building something nobody wants versus something customers love", "evidence": "Most startups and new ventures fail because they skip or underinvest in testing. They build the solution first, then discover nobody cares. Testing inverts this: validate demand BEFORE building. The cost of an experiment is always less than the cost of building the wrong thing." },
+    { "claim": "Match the experiment type to the stage of certainty, not the budget available", "evidence": "Early-stage (Problem-Solution Fit) should use low-cost experiments (landing pages, interviews) not because they're cheap but because they test the right things (desirability). Late-stage (Business Model Fit) needs higher-certainty experiments (pilots, pre-sales) even if they cost more." }
+  ],
+  "cases": [
+    { "name": "Kickstarter as a Testing Platform", "context": "Crowdfunding platforms combine multiple testing goals: demand validation (will people pay?), price discovery (at what price?), and early customer acquisition.", "illustrates": "How a single experiment platform can test multiple hypotheses simultaneously. A successful Kickstarter campaign validates desirability (people want this), viability (they'll pay $X), and generates early adopters — all before manufacturing.", "lesson": "Use platforms and tools that give you multiple data points from a single experiment. Don't test desirability and pricing separately if you can test both in one campaign." }
+  ],
+  "terminology": [
+    { "term": "Wizard of Oz MVP", "definition": "A front-end that looks like a functioning product, but the back-end is manually operated by humans. Tests whether customers will use a service before building the automated version." },
+    { "term": "Concierge MVP", "definition": "Manually delivering the service to a few customers to understand what they really need before automating. The opposite of 'build it and they will come.'" },
+    { "term": "Evidence strength", "definition": "Not all test results have equal validity. A customer saying 'I would buy that' (weak evidence) differs from a customer paying for a pre-sale (strong evidence)." }
+  ],
+  "nuance": [
+    "Testing can become an excuse to delay action ('we need more data'). The goal is to reduce the biggest risks to the point where you can commit, not to eliminate all uncertainty.",
+    "Not every hypothesis needs a formal test. Trivial hypotheses (e.g. 'people have this problem') should be tested; established facts (e.g. 'smartphone penetration is high') don't need testing."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["value-proposition-canvas"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch02-design", "ch04-align"]
+  }
+}

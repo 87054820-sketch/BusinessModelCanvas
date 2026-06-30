@@ -1,0 +1,77 @@
+[
+  {
+    "slug": "ch01-intro",
+    "order": 1,
+    "title": { "en": "From Red to Blue: Why Shift Matters", "zh": "从红到蓝：为什么要转型" },
+    "summary": {
+      "en": "The sequel to Blue Ocean Strategy — not another book about why, but a step-by-step guide to *how*. Introduces the Blue Ocean Shift Process: a systematic, five-step methodology for any organization (not just startups, but government agencies, non-profits, and traditional industries) to move from red to blue oceans. Distinguishes market-creating strategy from market-competing strategy.",
+      "zh": "蓝海战略的续作——不是又一本讲「为什么」的书，而是「怎么做」的步骤手册。引入蓝海转型流程：一套五步走的体系化方法论，让任何组织（不仅是创业公司，也包括政府机构、非营利组织和传统产业）从红海转向蓝海。区分了市场创造战略和市场争夺战略。"
+    }
+  },
+  {
+    "slug": "ch02-mindset",
+    "order": 2,
+    "title": { "en": "The Blue Ocean Shift Mindset", "zh": "蓝海转型的心态" },
+    "summary": {
+      "en": "Three mindset shifts prerequisite to any successful blue ocean move: (1) See opportunities where others see constraints — the humanness principle. (2) Focus on creating, not competing — value innovation as the north star. (3) Build people's confidence through field experience — psychological safety + concrete wins. The author introduces a set of diagnostic tools to assess organizational readiness.",
+      "zh": "任何成功蓝海行动的三项心态前提：(1) 在别人看到制约的地方看到机会——人本原则。 (2) 聚焦创造而非竞争——价值创新是北极星。 (3) 通过实地经验建立人们的信心——心理安全+具体胜利。作者引入一套诊断组织就绪度的工具。"
+    }
+  },
+  {
+    "slug": "ch03-process",
+    "order": 3,
+    "title": { "en": "The Five-Step Blue Ocean Shift Process", "zh": "五步蓝海转型流程" },
+    "summary": {
+      "en": "Step 1 — Get Started: choose the right scope and assemble the team. Step 2 — Understand Where You Are Now: draw the as-is strategy canvas with brutal honesty. Step 3 — Imagine Where You Could Be: use the buyer utility map, three tiers of noncustomers, and the six paths to reconstruct market boundaries. Step 4 — Find the Path: the ERRC grid to design the to-be strategy canvas. Step 5 — Make the Move: rapid market testing at low cost, then scale.",
+      "zh": "第一步—启动：选对范围、组建团队。 第二步—理解现状：用无情诚实画出现在的战略布局图。 第三步—想象可能性：用买方效用地图、三个层次的非客户和六条路径来重建市场边界。 第四步—找到路径：用 ERRC 网格设计未来的战略布局图。 第五步—行动：低成本快速市场测试，然后扩展。"
+    },
+    "relatedCanvasDefIds": ["blue-ocean-strategy-canvas"]
+  },
+  {
+    "slug": "ch04-pioneer",
+    "order": 4,
+    "title": { "en": "Pioneer-Migrator-Settler Map: The Portfolio Perspective", "zh": "开拓者-迁移者-定居者地图：组合视角" },
+    "summary": {
+      "en": "Expanding from the original Blue Ocean Strategy chapter — the PMS Map as a portfolio management tool. Codify each business unit's value curve as pioneer, migrator, or settler; visualize the current portfolio balance; set stretch targets for pioneer proportion; and track migration over planning cycles. Includes case examples from government services, showing the framework applies beyond for-profit firms.",
+      "zh": "从蓝海战略第一本的相关章节扩展——PMS 地图作为组合管理工具。把每个事业单元的价值曲线编码为开拓者、迁移者或定居者；将当前组合平衡可视化；设定开拓者占比的目标；跟踪规划周期内的迁移。包含政府服务的案例，展示了该框架超越营利性企业的适用性。"
+    },
+    "relatedCanvasDefIds": ["blue-ocean-strategy-canvas", "portfolio-map"]
+  },
+  {
+    "slug": "ch05-buyer",
+    "order": 5,
+    "title": { "en": "Buyer Utility Map: Across the Full Experience Cycle", "zh": "买方效用地图：跨越整个体验周期" },
+    "summary": {
+      "en": "The Buyer Utility Map as a systematic audit tool: map six utility levers (customer productivity, simplicity, convenience, risk, fun and image, environmental friendliness) across six stages of the buyer experience cycle (purchase, delivery, use, supplements, maintenance, disposal). Where is the biggest utility gap? That's where the blue ocean opportunity lives. Most companies map only 2-3 stages.",
+      "zh": "买方效用地图作为系统性审计工具：将六个效用杠杆（客户生产率、简单性、便利性、风险降低、趣味和形象、环保）与买方体验周期的六个阶段（购买、交付、使用、补充、维护、处置）交叉。最大的效用缺口在哪？那里就是蓝海机会所在。大多数公司只映射了 2-3 个阶段。"
+    }
+  },
+  {
+    "slug": "ch06-three-tiers",
+    "order": 6,
+    "title": { "en": "Three Tiers of Noncustomers: Expanded Framework", "zh": "非客户的三个层次：扩展框架" },
+    "summary": {
+      "en": "A deeper dive into the three tiers with diagnostic questions per tier: who are they, why do they stay away, what common pain points link tiers 1, 2, and 3? The key insight: the biggest blue oceans don't come from out-competing within existing demand — they come from unlocking the largest tier of noncustomers who have never been considered. Examples: Grameen Bank (tier 3), Nintendo Wii (tier 2).",
+      "zh": "对三个层次的更深探究，每层带诊断问题：他们是谁？为什么不来？哪些共同的痛点把第一、二、三层连在一起？关键洞察：最大的蓝海不来自在已有需求内竞争胜出——而来自解锁从未被考虑过的最大非客户层。案例：Grameen Bank（第三层）、任天堂 Wii（第二层）。"
+    },
+    "relatedCaseSlugs": ["nintendo-wii"]
+  },
+  {
+    "slug": "ch07-strategic",
+    "order": 7,
+    "title": { "en": "Strategic Sequencing: From Idea to Viable Business Model", "zh": "战略排序：从想法到可行的商业模式" },
+    "summary": {
+      "en": "Extending the original book's strategic sequence with implementation cases. The four-step sequence (utility → price → cost → adoption) is applied across industries, including government cases where 'price' becomes 'social cost' and 'profit' becomes 'sustainability margin'. The chapter includes diagnostic diagnostics for each step: how to know when you can move to the next stage versus when to iterate.",
+      "zh": "用实施案例扩展原书的战略次序。四步序列（效用→价格→成本→采用）被应用于多个行业，包括政府案例——其中「价格」变成「社会成本」、「利润」变成「可持续性盈余」。本章包含每步的诊断方法：如何判断何时可以进入下一阶段、何时应该回头迭代。"
+    }
+  },
+  {
+    "slug": "ch08-execution",
+    "order": 8,
+    "title": { "en": "Execution: Fair Process and Tipping Point Leadership in Action", "zh": "执行：公平过程和引爆点领导力实战" },
+    "summary": {
+      "en": "Execution case studies showing fair process and tipping point leadership in diverse contexts: a national government IT transformation, a traditional manufacturing firm, a non-profit education reform. Common patterns across all cases: start with visible, symbolic wins; identify and empower internal 'kingpins'; make the status quo's cost visible; and never skip the explanation step of fair process.",
+      "zh": "执行案例研究，展示公平过程和引爆点领导力在多样化情境中的应用：一国政府 IT 转型、一家传统制造企业、一项非营利教育改革。所有案例中的共同模式：从可见的象征性胜利开始；识别并授权内部「关键人物」；让维持现状的成本变得可见；绝不跳过公平过程的解释环节。"
+    }
+  }
+]

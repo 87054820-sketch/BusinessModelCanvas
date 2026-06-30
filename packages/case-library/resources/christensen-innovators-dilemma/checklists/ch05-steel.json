@@ -1,0 +1,29 @@
+{
+  "chapter": "ch05-steel",
+  "sourceFiles": { "en": "09-performance-provided-market-demand-and-the-product-life-cycl.txt" },
+  "concepts": [
+    { "name": "Steel Mini-Mills", "definition": "Low-cost steel producers using electric arc furnaces, initially able to make lower-quality steel such as rebar but eventually improving into bars, structural steel, and sheet." },
+    { "name": "What Goes Up, Can't Go Down", "definition": "Firms are pulled upmarket toward higher margins and better customers; once cost structure and profit expectations rise, moving downmarket becomes unattractive or impossible." },
+    { "name": "Performance Oversupply", "definition": "As technologies improve faster than mainstream customers need, lower-cost entrants can become good enough and then move upward." }
+  ],
+  "arguments": [
+    { "claim": "Integrated mills rationally ceded low-end markets and thereby opened the path for mini-mills.", "evidence": "Rebar was low-margin and unattractive to integrated mills, while mini-mills had lower cost structures and could profit there before improving into higher grades." },
+    { "claim": "Upmarket migration is economically natural for entrants and incumbents alike.", "evidence": "Mini-mills climbed from rebar to bar, structural, and sheet as each tier became technically feasible and more profitable." }
+  ],
+  "cases": [
+    { "name": "Nucor mini-mill disruption", "context": "Nucor and other mini-mills began in rebar and gradually attacked higher-value steel categories.", "illustrates": "The low-end foothold and upmarket trajectory at the heart of disruption.", "lesson": "A market leaders gladly exit can become the disruptor's training ground." }
+  ],
+  "logicChains": [
+    { "description": "Mini-mills enter rebar → integrated mills exit low-margin tier → mini-mills improve and attack bar → incumbents retreat again → entrants climb to structural and sheet → incumbents lose core profit pools.", "sourceHint": "Steel mini-mill story and performance-demand framing." }
+  ],
+  "terminology": [
+    { "term": "Rebar", "definition": "Low-end reinforcing bar market where mini-mills first gained foothold." },
+    { "term": "Integrated mill", "definition": "Traditional high-cost steel producer optimized for broad/high-grade production." },
+    { "term": "Low-end disruption", "definition": "A disruption that starts with overserved customers or unattractive low-end segments and moves upward." }
+  ],
+  "nuance": [
+    "Ceding low-margin business can be correct locally and disastrous strategically.",
+    "The disruptor's cost structure is as important as its technology."
+  ],
+  "crossReferences": { "relatedCaseSlugs": ["nucor-mini-mill-disruption"], "relatedStrategyFrameworkSlugs": ["disruptive-innovation"], "relatedChapters": ["ch06-disruption-model", "ch07-sustaining"] }
+}

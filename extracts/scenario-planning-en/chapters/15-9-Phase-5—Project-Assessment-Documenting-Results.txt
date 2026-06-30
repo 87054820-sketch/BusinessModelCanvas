@@ -1,0 +1,1360 @@
+# 9 Phase 5—Project Assessment: Documenting Results
+
+190 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+chapter is to disagree, and another is to present a comprehensive approach to 
+documenting the beneﬁts of scenario projects.
+Scenario projects are not that different from what we do every day in 
+our personal lives. We consider a variety of possibilities in our future and 
+then plan accordingly, often investing in insurance policies to prepare for an 
+occurrence that may never happen, but, should it happen, we have thought-
+fully considered it and planned for its possibility (Harper, 2010). An im-
+portant outcome of scenario work is a clear sense of choices, implications, 
+and costs and beneﬁts associated with a variety of possibilities. Thinking 
+through options—even unlikely (or undesirable) options—and giving them 
+equal attention and consideration is what leads to robust thinking about the 
+future. This is just what an insurance provider does.
+F I G U R E  9.1  The Performance-Based Scenario System—Project Assessment 
+Phase
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+191
+Scenario projects, by their very nature, deal with the world of percep-
+tions as well as knowledge and performance. Therefore, some traditional 
+approaches to assessment may not be appropriate. This chapter provides 
+strategies for assessing scenario projects. The foundation for project assess-
+ment is set in the project preparation phase at the start of the project. The 
+desired outcomes of the project, set forth in the earlier scenario project pro-
+posal, are what is measured once the project is complete. The assessment 
+strategy proposed in this chapter is a modiﬁed version of the results assess-
+ment system (Swanson & Holton, 1999). The results assessment system can 
+be applied to any organizational intervention. An overview of the system is 
+described, and then speciﬁc examples are used to illustrate the implementa-
+tion of this assessment system for scenario projects.
+OVERVIEW OF THE RESULTS  
+ASSESSMENT SYSTEM
+Swanson and Holton (1999) proposed a general assessment system for or-
+ganization improvement efforts. Their system was designed to be practi-
+cal, usable, and easy to implement. They were quick to point out that the 
+majority of assessments in organizations (if any is done at all) focus on per-
+ceptions of satisfaction (Swanson & Holton, 1999). In other words, most 
+change efforts are assessed on the basis of whether participants perceived 
+the project to be useful and enjoyable. To move beyond this level, a more 
+comprehensive approach is required. Consequently, the results assessment 
+system has three domains: satisfaction, learning, and performance (Swan-
+son & Holton, 1999). All three of these domains should be included in a 
+responsible assessment effort. 
+SATISFACTION RESULTS
+Satisfaction results measure opinions about the utility of the change inter-
+vention. Usually, short surveys are distributed, and participants rate their 
+perceptions of the event. Often, these are the only assessment measures used 
+at all. Responsible assessment must include other measures, but perceptions 
+matter, and they are an important part of estimating the success of any 
+project. The key is to obtain the data, use what is pertinent, and prevent 
+overanalysis of satisfaction results. Satisfaction results should be obtained 
+from both participants and stakeholders. 
+
+
+192 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+Participants 
+Participant perceptions can provide valuable information for making subtle 
+adjustments to any change project. Participant perceptions should not over-
+take the project and become the primary, or most important, measure of 
+success. These results can be used to improve practical issues related to the 
+experience of the project. 
+Stakeholders 
+Several categories of stakeholders are possible, and each should be included 
+in a measure of satisfaction. Stakeholders are leaders of divisions or systems 
+within the organization, or anyone with a vested interest in the organiza-
+tion. Stakeholders can be internal or external, such as board members, pro-
+ducers or consumers of company products, or anyone with a primary or 
+secondary investment in the organization (Swanson & Holton, 1999). A 
+short survey should be designed and sent to representatives from each stake-
+holder group. The purpose of these surveys is to take a quick measure of 
+whether the project has met stakeholder expectations. 
+LEARNING RESULTS
+Measures of learning are critical to organizational change efforts, as learn-
+ing is a prerequisite to change. People cannot change their behaviors, have 
+strategic insights, or create a novel way of seeing a situation if they have not 
+learned. Learning begins in the mind, and neuroscience is increasingly able 
+to explain, physiologically, how learning happens (see Dispenza, 2007). For 
+assessment purposes, it is important to ﬁnd out whether participants have 
+learned during the course of the project. Because learning is required for ac-
+tion, the logical other component in this domain is new expertise. In other 
+words, the aim of this domain is to assess what it is that participants know 
+and can do differently as a result of their engagement in the project.
+Knowledge
+Knowledge assessments involve having participants demonstrate the knowl-
+edge they gained through the course of the change project (Swanson & 
+Holton, 1999). Knowledge gains are usually measured with tests. However, 
+other techniques for analyzing knowledge gained, discussed later, are more 
+appropriate in the scenario planning context. The general idea is to ﬁnd a 
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+193
+way to determine what participants know after the project that they did not 
+know before the project.
+Expertise
+Expertise refers to action and doing. That is, participants should also be 
+able to do something differently based on knowledge they have gained 
+throughout the project. The goal of assessing expertise is to ﬁnd a way for 
+participants to demonstrate how what they have learned has changed their 
+behaviors.
+PERFORMANCE RESULTS
+Performance results are the most difﬁcult part of assessment for scenario 
+projects given the timeline of events. Performance results rest in two key 
+areas: system and ﬁnancial. System results generally refer to the product, 
+good, or service that can be increased or maximized through the change 
+intervention. The ﬁnancial results refer to the conversion of system result 
+gains into a ﬁnancial measure. 
+System
+System results can be the general performance indicators of the organization 
+as a whole. These are the products produced, contracts sold, hours billed, 
+and services provided. They are deﬁned as “the units of mission-related out-
+puts in the form of goods and/or services having value to the customer and 
+that are related to the core organizational, work process, and group or indi-
+vidual contributors in the organization” (Swanson & Holton, 1999, p. 14).
+Financial
+Financial results are “[t]he conversion of the output units of goods and 
+or services attributable to the intervention into ﬁnancial interpretation” 
+(Swanson & Holton, 1999, p. 16). Financial results convert any increases in 
+system results into a monetary measure (see Swanson, 2001a).
+SUMMARY
+This short overview of the results assessment system is intended to orient 
+readers to a comprehensive approach to assessment. Most organizations stop 
+at satisfaction surveys, if they assess anything at all. Responsible performance 
+improvement efforts must apply these concepts to speciﬁc organizational 
+
+
+194 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+interventions. The following section reﬁnes the system for use in the context 
+of scenario planning.
+ADAPTING THE RESULTS ASSESSMENT  
+SYSTEM TO SCENARIO PLANNING
+Some aspects of scenario projects are difﬁcult to assess, particularly when 
+they are successful. For example, how does the team know that they have 
+helped to avoid a catastrophe if they have, indeed, avoided it? How can in-
+novative ideas and strategic insights be attributed directly to the scenario 
+planning project? Because of these difﬁculties, most authors have chosen to 
+avoid dealing with how to assess scenario projects entirely. Given the costs 
+associated with most scenario planning projects, it is responsible to spend 
+time thinking about how the project has beneﬁtted the organization. That 
+is the purpose of adjusting the results assessment system for use in looking 
+at the effectiveness of scenario planning projects.
+To reiterate, many of the important and expected outcomes of the proj-
+ect were described and deﬁned in the project reparation phase. This, once 
+again, highlights the importance of the preparation phase in that the at-
+tention given to outcomes and expectation at the start of the project inﬂu-
+ences the ease and elegance of the project assessment. Spend time up-front 
+deﬁning the outcomes of the project, and keep the expectations and goals in 
+mind throughout.
+USING A VARIETY OF MEASURES IN EACH DOMAIN
+Because the assessment of scenario projects is not well documented and can 
+be difﬁcult, scenario project leaders should consider a variety of tools and 
+approaches. These can include both quantitative and qualitative strategies 
+for gathering and analyzing information. I suggest using the results assess-
+ment system as a framework and trying out a variety of speciﬁc tools within 
+each domain. For example, using surveys to gather satisfaction results 
+from participants and stakeholders is relatively straightforward. However, 
+tests to assess knowledge gained from scenario planning projects require a 
+closer attention. One way is to directly ask participants what they learned 
+throughout the project. The same skills used for interviews at the start of 
+the scenario project can be used to inquire into its results. This section 
+describes how the satisfaction, learning, and performance domains of the 
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+195
+results assessment system can be adjusted to form a comprehensive assess-
+ment strategy for scenario projects.
+Satisfaction Results in Scenario Projects
+There is little need to adjust the method for assessing satisfaction results in 
+the results assessment system. The method uses short surveys designed to 
+capture basic opinions and reactions to the scenario project. 
+Participants. The recommended approach is to design a simple survey 
+with ten or fewer questions plus room for comments and distribute it to 
+participants at the conclusion of the project. Data can be entered into a basic 
+software program and analyzed quickly. For example, Microsoft Excel can be 
+used to compute mean scores for each item. A sample participant survey is 
+provided in Figure 9.2.
+Stakeholders. Stakeholder satisfaction surveys are also simple and ef-
+fective. Again, a short survey should be sent to project stakeholders after the 
+conclusion of the project. The purpose is to gather stakeholder perceptions 
+of the usefulness of the project. A sample stakeholder satisfaction survey is 
+in Figure 9.3.
+Learning Results in Scenario Projects
+Unless the manager’s thinking changes, there will be no behavior changes 
+(Wack, 1985b). Results in the learning domain are intended to capture 
+whether, and to what degree, the thinking may have changed. Learning 
+results may require some adjustment from the original results assessment 
+system given the context of scenario planning and the fact that there is no 
+prescribed content to be learned in scenario projects. For example, tradi-
+tionally, paper-and-pencil tests are used to assess content mastery, and some 
+form of observation is used to determine the improved expertise. These ap-
+proaches are not always appropriate in scenario projects, but that does not 
+mean the domain should be neglected. The solution is in using other strate-
+gies that ﬁt the purpose of scenario projects. 
+Knowledge. Clearly, the intention is that participants learn during 
+the scenario project process. Because what is learned can vary signiﬁcantly 
+among participants in a group, a useful strategy is to look for patterns or 
+themes that connect the learning experience to the participants. For exam-
+ple, instead of looking at individual decisions per person, decision-making 
+
+
+196 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+F I G U R E  9.2 Participant Satisfaction Survey
+SCENARIO PLANNING PROJECT
+Project Title  ________________________________ 
+Date  ____________
+Project Leader  _______________________________ 
+Code  ____________
+Please answer the following questions. Your responses will help us improve future 
+programs. Circle the response that best represents your opinion.
+Strongly  
+agree
+Agree
+No  
+opinion
+Disagree
+Strongly  
+disagree
+ 1.  This project was useful for me in my role 
+in the organization.
+1
+2
+3
+4
+5
+ 2.  I was motivated to participate in this 
+project.
+1
+2
+3
+4
+5
+ 3.  The project made me think differently 
+about the organization.
+1
+2
+3
+4
+5
+ 4.  I learned about the industry and external 
+environment in this project.
+1
+2
+3
+4
+5
+ 5.  I expect that I will use what I learned in 
+this project.
+1
+2
+3
+4
+5
+ 6.  My colleagues were motivated to 
+participate in this project.
+1
+2
+3
+4
+5
+ 7.  I have a better understanding of 
+challenges facing the organization.
+1
+2
+3
+4
+5
+ 8.  I will encourage others to participate in 
+these projects in the future.
+1
+2
+3
+4
+5
+ 9.  I will make decisions differently based on 
+what I learned.
+1
+2
+3
+4
+5
+10.  This project will benefit the organization 
+as a whole.
+1
+2
+3
+4
+5
+What was the most valuable part of this project for you? 
+________________________________________________________________
+________________________________________________________________
+What was the least valuable part of this project for you? 
+________________________________________________________________
+________________________________________________________________
+Additional comments are appreciated. 
+________________________________________________________________
+________________________________________________________________
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+197
+F I G U R E  9.3 Stakeholder Satisfaction Survey
+SCENARIO PLANNING PROJECT
+Project Title  ________________________________ 
+Date  ____________
+Project Leader  _______________________________ 
+Code  ____________
+Please answer the following questions. Your responses will help us improve future 
+programs. Circle the response that best represents your opinion.
+Strongly  
+agree
+Agree
+No  
+opinion
+Disagree
+Strongly  
+disagree
+ 1.  This project has shown benefits for the 
+organization.
+1
+2
+3
+4
+5
+ 2.  I was motivated to support the purpose of 
+this project.
+1
+2
+3
+4
+5
+ 3.  The project has shown results.
+1
+2
+3
+4
+5
+ 4.  I can see evidence that participants 
+learned about the industry.
+1
+2
+3
+4
+5
+ 5.  I expect that our employees will use what 
+was learned in this project.
+1
+2
+3
+4
+5
+ 6.  My colleagues were motivated to 
+participate in this project.
+1
+2
+3
+4
+5
+ 7.  I have a better understanding of 
+challenges facing the organization.
+1
+2
+3
+4
+5
+ 8.  I will encourage others to participate in 
+these projects in the future.
+1
+2
+3
+4
+5
+ 9.  I will make decisions differently based on 
+results of this project.
+1
+2
+3
+4
+5
+10.  This project has possible long-term 
+benefits for the organization.
+1
+2
+3
+4
+5
+What was the most valuable part of this project for you? 
+________________________________________________________________
+________________________________________________________________
+What was the least valuable part of this project for you? 
+________________________________________________________________
+________________________________________________________________
+Additional comments are appreciated. 
+________________________________________________________________
+________________________________________________________________
+
+
+198 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+patterns or tendencies may be more appropriate. Useful tools for assessing 
+these patterns include van der Merwe’s Conversation Quality and Engage-
+ment Checklist (2007), Watkins and Marsick’s Dimensions of the Learning 
+Organization Questionnaire (1995), and Scott and Bruce’s General Deci-
+sion Making Style Survey (1994). 
+The Conversation Quality and Engagement Checklist (CQEC) was de-
+veloped by Louis van der Merwe at the Centre for Innovative Leadership 
+(www.cil.net). CIL specializes in capacity-building scale in (1) scenario-
+based strategy, (2) leadership development, (3) systems thinking, (4) or-
+ganization effectiveness, and (5) executive coaching. The CQEC has been 
+used in practice for over twenty years as a metric for conversation quality in 
+scenario work. It is divided into two categories: Level I skills and Level II 
+skills. Level I skills assess how individuals perceive their personal commu-
+nication capabilities. Level II skills assess individual perceptions of interper-
+sonal communication skills. The CQEC has also been used and validated in 
+a variety of organizations, industries, and contexts (van der Merwe, Cher-
+mack, Kulikowich, & Yang, 2007). The Conversation Quality and En-
+gagement Checklist is provided in Figure 9.4 as an example of the kinds of 
+surveys and instruments that can be useful in scenario projects.
+The CQEC was used with Technology Corporation in a pretest/post-
+test design. Participants assessed their own skill levels before and after the 
+scenario project. Again, mean scores for Level I and Level II skills were 
+computed, and a t-test was conducted between pre- and posttest scores. Re-
+sults showed that participants perceived improvement in their individual 
+and interpersonal dialogue, conversation quality, and engagement skills 
+over the course of the project.
+The Dimensions of Learning Organization Questionnaire (DLOQ) is 
+an instrument designed to assess perceptions of an organization’s learning 
+culture. In scenario projects, the DLOQ can be used to assess participant 
+perceptions of the organization’s orientation toward learning as a critical 
+function. The instrument has been heavily validated (Yang, 2003; Yang, 
+Watkins, & Marsick, 2004) and has been shown as a proxy for ﬁrm ﬁnan-
+cial performance (Ellinger, Ellinger, Yang, & Howton, 2002). The DLOQ 
+measures seven factors: (1) creating continuous learning opportunities, (2) 
+promoting inquiry and dialogue, (3) encouraging collaboration and team 
+learning, (4) creating systems to capture and share learning, (5) empower-
+ing people toward a collective vision, (6) connecting the organization to its 
+environment, and (7) providing strategic leadership for learning. 
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+199
+F I G U R E  9.4 The Conversation Quality and Engagement Checklist
+Please assess your conversation and engagement skills and score yourself. Ask 
+somebody else to also score your skills, and compare both scores. Use this 
+checklist both in the work setting as well as other settings such as any leadership, 
+social and family settings to keep practicing and improving your skills. Work on 
+improving Level 1 Skills first.
+Name  __________________________________________________________
+FEEDBACK—LEADERSHIP, AND MANAGING  
+ACCOUNTABILITY AND PERFORMANCE
+Complete the following statements by indicating which level of frequency 
+most accurately reflects your conduct in conversations and engagement in 
+a team and one-to-one setting. Each score should be accompanied by 
+concrete feedback support by describing specific behavior in specific 
+situations.
+Start the assessment process by asking: 
+  During leadership and performance conversations, . . .
+  (follow the items below)
+Never 
+Sometimes
+Often
+Usually
+Always
+LEVEL I SKILLS
+ 1.  I use active listening to understand another person’s point of view.
+1
+2
+3
+4
+5
+ 2.  I paraphrase what is said to ensure deeper understanding.
+1
+2
+3
+4
+5
+ 3.  I take responsibility for myself by choosing language that indicates this.
+1
+2
+3
+4
+5
+ 4.  I listen to what is being said and am self-aware when judging.
+1
+2
+3
+4
+5
+ 5.  I maintain balance between asking questions and stating my opinions.
+1
+2
+3
+4
+5
+ 6.  I do my best to be explicit about the assumptions under my opinions.
+1
+2
+3
+4
+5
+ 7.  I constantly question my opinions with intent of reaching observable data.
+1
+2
+3
+4
+5
+ 8.  I use concrete examples to describe behavior, sensing, feelings, and 
+impact.
+1
+2
+3
+4
+5
+ 9.  I stay engaged to identify events that could assist in understanding 
+underlying patterns of behavior and structural aspects.
+1
+2
+3
+4
+5
+10.  I use open-ended questions to clarify the patterns and structures.
+1
+2
+3
+4
+5
+LEVEL II SKILLS
+11.  I avoid third party involvement (triangulation) by dealing directly 
+with others with the issues at hand.
+1
+2
+3
+4
+5
+12.  I confront others constructively when I disagree with their opinions.
+1
+2
+3
+4
+5
+13.  I take a stand and express outcomes while remaining engaged with the 
+conversation at hand.
+1
+2
+3
+4
+5
+14.  I make informed choices about personal behavior by balancing the 
+purpose of the conversation, its desired results, and current reality.
+1
+2
+3
+4
+5
+15.  I encourage others to make choices that support engagement in the 
+conversation.
+1
+2
+3
+4
+5
+16.  I define personal and organizational boundaries and review them 
+when necessary.
+1
+2
+3
+4
+5
+(continued)
+
+
+200 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+F I G U R E  9.4 The Conversation Quality and Engagement Checklist (continued)
+ 
+Never 
+Sometimes
+Often
+Usually
+Always
+LEVEL II SKILLS (continued)
+17.  I know my personal patterns of behavior and “hot buttons” and can 
+intervene effectively and make choices. 
+1
+2
+3
+4
+5
+18.  I understand the origins of my behavioral patterns and “hot buttons.”
+1
+2
+3
+4
+5
+19.  I apply conflict resolution skills as required.
+1
+2
+3
+4
+5
+20.  I use applicable coaching skills such as deep listening, empathy, 
+respect, concreteness, and genuineness as appropriate.
+1
+2
+3
+4
+5
+SUB TOTAL
+TOTAL SCORE
+DEVELOPING CONVERSATION QUALITY  
+AND ENGAGEMENT SKILLS—SCORES
+Conversation quality and engagement skills can improve the quality of your relationships both at work and at 
+home. These essential life skills are the foundation to learning and leadership.
+Score
+Description and Interpretation Guidelines
+0–25
+Low potential for leadership. Others feel out of touch, and no effort is made to be in 
+touch; even disrespect. Conversations easily escalate into conflict and leave feelings of 
+frustration. General lack of trust and alignment. Low morale and commitment is 
+common. Open, authentic conversations are difficult and seldom happen. Teams and 
+individuals don’t know what their priorities and roles are, and results are unclear.  
+26–50
+Medium potential for leadership. Others feel that you are somewhat distant. Conver- 
+sations are often unsatisfactory, and people don’t know where they stand. Trust is at a low 
+level. Open and authentic conversations sometimes happen and when they do the 
+contrast is immediately noticed. Indirect behavior with third parties is commonplace, 
+and many areas of undiscussability develop. Priorities are often unclear, and choices are 
+difficult to make; boundaries are also unclear and easily violated.
+51–75
+Average to above-average potential for leadership. Trust levels are building. Practicing 
+conversation and engagement skills in real time is accepted and encouraged. Regular 
+feedback and coaching for the purposes of learning is commonplace. Priorities are clear 
+and tough choices are made and adhered to. Boundaries are often the focus of conver- 
+sations. Systems thinking is a way of looking at the world and influencing it, and this 
+informs many choices at interpersonal and intrapersonal levels.
+76–100
+High potential for leadership. Priorities are clear and there is continuous improvement 
+with little wastage. Raising of performance standards and changes in direction are both 
+easily executed. Others experience openness and authenticity in the leadership process. 
+Confidence, humility, courage, firmness, vulnerability, and openness characterizes 
+relationships. Confronting in a tough yet compassionate and constructive way occurs 
+frequently and is skillfully executed using conversation and engagement skills naturally, 
+and sometimes intuitively. Thinking and actions are informed by a systems perspective 
+and self-knowledge. Trust is continuously being built and the team performs at a high 
+level and in alignment with the overall goals and with each other.
+(continued)
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+201
+The DLOQ was used with Technology Corporation in a pretest/
+posttest design. Measures of participant perceptions were taken using the 
+DLOQ at the start of the scenario project and again at its conclusion. Pre- 
+and posttest scores were then compared. The mean scores for each of the 
+seven factors were considered, and then a t-test was conducted. The results 
+indicated participants perceived improvements in how their organization 
+created learning opportunities, promoted inquiry and dialogue, encouraged 
+team learning, connected the organization to its environment, and provided 
+strategic leadership for learning. 
+The General Decision Making Style Survey (GDMS) is another tool 
+for assessing knowledge results. The GDMS includes ﬁve decision-making 
+styles, and individuals will tend to favor one of these styles. The ﬁve styles 
+are (1) rational decision making, (2) intuitive decision making, (3) depen-
+dent decision making, (4) spontaneous decision making, and (5) avoidant 
+decision making. 
+The GDMS was also used to assess changes in decision-making 
+styles in Technology Corporation. Again, using a pretest/posttest design, 
+F I G U R E  9 . 4  The Conversation Quality and Engagement Checklist (continued)
+Leadership is defined as influence potential. Leadership is executed through the 
+capacity to take a stand and then skillfully, in a nonanxious way, holding this 
+stand while staying in touch with the system you lead, until the followers align 
+themselves with your stand.
+Competent conversation and engagement consists of frequent face-to-face 
+communications one on one as well as one on many, which are characterized by 
+openness and authenticity, together with a tough-minded focus on agreed purpose 
+and results. This enables high performance through robust, trusting relationships 
+and a learning climate. In this approach, individuals and teams are taking per-
+sonal responsibility and are accountable, which enables rapid self-correcting, 
+which in turn supports the capacity for self-organizing at individual, team, and 
+organizational levels. 
+Select one or two of the skills that you would like to improve and include them 
+in your Personal Development Plan (PDP). Create practice areas in different set-
+tings where you can raise your level of competence, including contracting for reg-
+ular structured feedback processes.
+Copyright © 2000 CIL Ltd. All rights reserved. Used under license to Centre for Innovative 
+Leadership BV, PO Box 14836, 1001 LH, Amsterdam, The Netherlands; telephone:  
++44 1414 160660; e-mail: info@cil.net; website: www.cil.net.
+
+
+202 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+participants took the survey before and after the scenario project. Results 
+indicated signiﬁcant shifts in participant decision-making styles. Of partic-
+ular interest is that participants who scored high on rational decision mak-
+ing in the pretest, tended to shift into other decision-making styles through 
+the scenario project. Intuitive and dependent decision-making categories 
+showed signiﬁcant increases in posttest scores. Overall, the results suggested 
+that the scenario project promoted intuitive and dependent approaches to 
+decision making. 
+These instruments captured participant perceptions of the organiza-
+tion’s learning capabilities, individual communication skills, and individual 
+decision-making styles. These surveys and instruments are best used when a 
+measure is taken at the beginning of the project and again at its conclusion 
+so that change comparisons can be made. A variety of tools can be used to 
+assess cognitive changes, and facilitators should use tools related to the goals 
+and purpose of the scenario project. Any surveys used for project assessment 
+should, however, be directly related to the expected outcomes deﬁned in the 
+project preparation phase. The instruments listed here are examples that are 
+related to common general objectives of scenario projects.
+Another effective strategy for understanding what participants learned 
+during the scenario project is to simply ask them. This approach will provide 
+details and anecdotes that are missed by the survey technique. At times, it is 
+more powerful to hear participant stories of their “aha” moments and strate-
+gic insights. A few simple questions can launch a useful conversation about 
+what was learned and how it may affect the ways in which participants go 
+about their work. Suggested questions are as follows:
+• What have you learned as a result of participating in this project?
+• Did you have any major strategic insights or “aha” moments? If so, can 
+you describe them?
+Expertise. As with assessing knowledge, assessing expertise gained 
+from a scenario planning project is tricky. Typically, expertise is observed. 
+Changed behaviors and the application of expertise can be demonstrated 
+in the performance of speciﬁc work tasks. In the context of scenario plan-
+ning, expertise is more difﬁcult to assess. Where appropriate, the observa-
+tion method of participants “doing” may still be used. For example, if an 
+individual usually makes decisions independently, without the review of 
+external information and without conversations including colleagues and 
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+203
+other experts prior to the scenario project, changes in how that individual 
+approaches decision making may be quite obvious afterward. It is common for 
+people to rely on conversations, colleagues, and further information gathering 
+in making decisions after participating in scenario planning projects (Cher-
+mack & Nimon, 2008). Behavioral changes can be observed. The key is to 
+create time and space in which the behaviors can be seen and discussed openly.
+The knowledge assessment instruments can be used as proxies for be-
+haviors and converted into an expert observation checklist. Using expert 
+observations to assess behavior change moves the assessment beyond self- 
+reported data and gains a level of objectivity. The knowledge assessment 
+tools described here informed the construction of an expert observation work-
+sheet. These items are combined in the scenario expertise audit (see Figure 9.5). 
+The audit is aimed at gathering evidence of performed behaviors that con-
+tribute to a valued service or product (Swanson & Holton, 1999). It is based 
+on expertise observation templates provided by Swanson and Holton (1999).
+The scenario expertise audit should be used for expert ratings of project 
+participants. The audit can be used to randomly observe individual par-
+ticipants after the project has concluded. The goal is to ﬁnd evidence for 
+changed observable behaviors when participants have returned to their nor-
+mal work functions. The audit combines elements from each of the knowl-
+edge assessment instruments outlined earlier. 
+Interview techniques can be an additional proxy for assessing expertise 
+gains. It is revealing to simply ask participants or fellow participants how 
+they or others function differently after participating in scenario planning. 
+Questions like this will prompt participants to reﬂect about their learning 
+experience. At times, a useful strategy is to send the questions a few days 
+prior to the interview so that participants can think through how their be-
+haviors may have changed as a result of the scenario planning experience. 
+Alternatively, sometimes immediate reactions are more useful. Other rel-
+evant questions can include the following:
+• How has your learning affected your behavior as a result of 
+participating in this scenario project?
+• How has learning of others affected the behavior as a result of 
+participating in this scenario project?
+• How do you function differently in your work that you would 
+attribute to participating in the scenario project?
+
+
+204 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+F I G U R E  9.5 The Scenario Expertise Audit
+Project Title  ________________________________________ 
+Date  ______________
+Participant Being Observed  ____________________________ 
+Code  _____________
+Experts should use the following items to rate participant performance in normal work 
+activities.
+0
+Unable to 
+observe
+No opportunity 
+to observe
+1
+Not  
+evident
+Does not 
+demonstrate
+2
+Functional
+Applies skills; 
+requires some 
+guidance
+3
+Proficient
+Uses skills in 
+complex situations; 
+minimal guidance
+4
+Expert
+Coaches and 
+supports others
+Behaviors                      Ratings*
+0
+1
+2
+3
+4
+In conversations, the participant:
+ 1.  Uses active listening to understand another person’s point of view.
+ 2.  Maintains balance between asking questions and stating opinions.
+ 3.  Questions his or her opinions with intent of reaching observable data.
+ 4.  Uses concrete examples to describe behavior, sensing, feelings, and 
+impact.
+ 5.  Confronts others constructively when opinions differ.
+In decision making the participant:
+ 6.  Plans important decisions carefully.
+ 7.  Relies on instincts.
+ 8.  Relies on intuition.
+ 9.  Uses the assistance of other people when making important decisions.
+10.  Uses the advice of other people in making important decisions.
+Regarding learning culture, the participant:
+11.  Extends effort to share and distribute learning/knowledge.
+12.  Continuously looks for opportunities to learn.
+13.  Helps other people learn.
+14.  Rewards people for learning.
+15.  Gives honest feedback for development.
+*For any rating of 2 or lower, attach development recommendations and explanations.
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+205
+• How do others function differently in their work that you would 
+attribute to participating in the scenario project?
+PERFORMANCE RESULTS IN SCENARIO PROJECTS
+Performance measures in scenario planning projects are necessarily esti-
+mates. Purposes of scenarios are either to “avoid regret or to generate in-
+sights that were previously beyond the mind’s reach” (Wack, 1985b, p. 87). 
+But how can these be valued? In fact, the entire insurance industry is based 
+on assigning values to things that have not happened yet. While there is 
+no standard formula for valuing strategic insights or avoiding catastrophes, 
+estimates are a useful way of suggesting the utility of scenario planning. 
+Assessing performance results is absolutely dependent on the purpose of the 
+scenario project. Logically, the more speciﬁc the purpose, the easier it will 
+be to estimate the performance results. For example, a project in which fo-
+cused scenarios are used to examine the uncertainties around building a 
+new oil-drilling platform in a remote location is much easier to evaluate 
+than general global scenarios used to explore the technology environment 
+for a cell-phone company. The more narrow the scope of the project, the 
+more deﬁned the estimates of system results can be. Scenario project system 
+results and ﬁnancial results are directly linked. Time spent carefully deﬁn-
+ing and estimating the system results will make for an easier assessment 
+because the ﬁnancial results merely required the conversion of system results 
+to a monetary value. 
+System
+At their most general level, system results are indicated by the fact that the 
+organization is still viable and operating. This point may seem obvious, but 
+most organizations have an average life span of forty to ﬁfty years (de Geus, 
+1997). The ability to stay a viable, proﬁtable organization is the primary 
+measure of system performance. More speciﬁc system results include ways 
+in which the scenario project is perceived to inﬂuence the productivity of 
+the organization. For example, Shell’s scenarios that explored whether to 
+construct an oil-drilling rig in Siberia included estimates of how that drill-
+ing rig would increase its oil supply, thus adding value to the company. 
+Similarly, scenario projects that reveal opportunities or foster innovative 
+product ideas may carry an estimate of how that idea can lead to results. For 
+example, if an engineering organization is the ﬁrst to achieve a technological 
+
+
+206 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+breakthrough and develop a new ﬂow technology that is superior to Coriolis 
+(a current standard in material ﬂow technology), there would be positive 
+implications for the organization’s system results. Conversely, heading off a 
+catastrophe or loss has its own positive result.
+For example, Toyota has long boasted its product quality. Toyota was 
+under strong ﬁre for not following its own famous quality management 
+principles (Liker, 2010). Error rates and defective products are system re-
+sults that may be useful in scenario projects. Error rate and defective prod-
+uct numbers can be gathered before the scenario planning project and again 
+afterward. Assuming that the strategic issue is focused on resolving error is-
+sues, the number of errors or defective products can be compared before and 
+after scenario planning to establish improvement. Furthermore, error rates 
+and defective products can easily be converted into ﬁnancial data. So, re-
+solving quality problems has direct implications for ﬁnancial performance.
+In another case, leaders in BP Amoco didn’t explore the “what ifs” as-
+sociated with the risks of drilling for oil ﬁve thousand feet below the surface 
+of the ocean at all. Fumbling around with what to do after over two million 
+gallons of oil ﬂowed into the ocean, while the whole world watched, had 
+serious implications for the oil giant. The complete lack of considering the 
+possible outcomes of a high-risk activity could have been the demise of the 
+organization. 
+Financial
+Fear and greed are effective motivators for organizational decision mak-
+ers—fear of the regrets, and motivators toward the strategic insights referred 
+to by Wack (1984). And few things inspire fear and greed better than dollar 
+signs. In looking at the ﬁnancial results of a scenario planning project, the 
+task is to convert system results into a dollar value. If we use the same ex-
+amples just cited, increasing oil reserves would have a dollar value attached 
+to it that would be relatively easy to compute. Likewise, developing a new 
+ﬂow technology before competitors would provide strategic marketing op-
+portunities and sales that could be estimated as a ﬁnancial return to the 
+organization. Other examples are as follows:
+• Apple Computer’s iPad is a signiﬁcant technological development. 
+Using this as an example (and speculating that Apple developed a 
+scenario project around such a tablet), estimates would have been 
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+207
+made that quantiﬁed the system results (projected demand and pro- 
+duction numbers of the tablet computer) and ﬁnancial results (sales 
+and proﬁts) based on previous successes with the iTunes music (now 
+media) store and the iPhone.
+(Note that this example positions scenario planning as an activity that could 
+generate ideas for the innovative, new product.)
+• A research and development company using scenarios to explore the 
+viability of several projects may ﬁnd that focusing on fewer projects 
+could leverage greater human capital. One possible outcome is that one 
+speciﬁc project becomes a marketable new technology. If we assume 
+the scenarios included this possibility, estimates of sales and produc- 
+tion quantities could be generated based on perceived demand for the 
+product. 
+Another effective question is what discontinuities have been avoided 
+due to anticipatory thinking? Using a ﬁnancial savings approach, each sce-
+nario can be approached from the mind-set of ﬁnancial resources saved if 
+things that may change the nature of our business are anticipated.
+Sound ﬁnancial data on projected or estimated costs and beneﬁts from 
+an internal organizational ﬁnancial expert can also be used in assessing 
+system and ﬁnancial results (see Swanson, 2001a, 2001b). Data gathering 
+should be designed to spark conversations about how estimates of savings 
+or proﬁts can be made due to avoiding major discontinuities or realizing 
+innovative opportunities. Suggested thinking with which to begin this data 
+gathering with experts includes the following:
+• What if scenario A happens and we are not prepared? What kind of 
+losses would we be looking at? 
+• Alternatively, what if scenario A happens and we are well prepared? 
+What gains can we imagine due to strategic insights that lead to 
+innovative products? (See Figure 9.6—the strategic gains and losses 
+matrix.)
+In Technology Corporation, we estimated costs and potential beneﬁts 
+based on assumptions that led to either signiﬁcant strategic gains or losses 
+within each scenario. For each scenario, we brainstormed what the implica-
+tions of the story line could be. There was a logical consistency that ﬂowed 
+
+
+208 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+from the stories that were told in each scenario. The estimated ﬁnancial 
+implications for each case are summarized in Figure 9.7. 
+COST/BENEFIT MODELS AND RETURN ON INVESTMENT
+Finally, there is high utility in considering cost/beneﬁt and return-on-
+investment models. In the project preparation phase, I suggested using a 
+simple ﬁnancial forecast model—the ﬁnancial assessment beneﬁt model 
+(Swanson, 2004): 
+Performance Value – Cost = Beneﬁt
+At this point in the project, the costs are known. The exercises in deﬁn-
+ing system and ﬁnancial results are aimed at estimating the performance 
+value of the project. These values can then be inserted into the simple equa-
+tion, and the beneﬁt of the scenario planning project can be estimated. Of 
+course, the goal is that the performance value exceeds the costs. In my ex-
+perience, using even modest estimates of performance value produces some 
+amount of beneﬁt. This model essentially produces the return on invest-
+ment. While other, more complex models can be used, this simple model 
+is usually effective in demonstrating the estimated beneﬁts of scenario 
+planning.
+F I G U R E  9.6  The Strategic Gains and Losses Matrix
+Scenario A 
+•  If we are not prepared, what kind 
+of losses would we be looking at? 
+•  If we generate strategic insights, 
+what estimates of sales and profits 
+can be made?
+Scenario B 
+•  If we are not prepared, what kind 
+of losses would we be looking at? 
+•  If we generate strategic insights, 
+what estimates of sales and profits 
+can be made?
+Scenario C 
+•  If we are not prepared, what kind 
+of losses would we be looking at? 
+•  If we generate strategic insights, 
+what estimates of sales and profits 
+can be made?
+Scenario D 
+•  If we are not prepared, what kind 
+of losses would we be looking at? 
+•  If we generate strategic insights, 
+what estimates of sales and profits 
+can be made?
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+209
+The scenario project proposal in Chapter 5 demonstrates how the esti-
+mation of ﬁnancial beneﬁts begins at the start of the project. While costs of 
+scenario projects can seem high at ﬁrst, consider the implications of saving 
+from one major catastrophe or one major strategic insight. For example, 
+if Toyota had done some scenario planning, not around brake pedals or 
+ﬂoor mats, but around the managed response to quality defects, executives 
+might have avoided a very costly and damaging sequence of events. The 
+same could be said for BP Amoco. Oil cleanup in the Gulf of Mexico, drilling 
+moratoriums, lawsuits for oil workers, compensating states with affected tour-
+ism industries, and many other related costs rose to potentially devastating 
+heights after the oil spill in the summer of 2010. The costs to the natural 
+ecosystem in the Gulf of Mexico and, by its integrated nature, the world 
+will not be realized for years, maybe decades.
+F I G U R E  9.7  The Strategic Gains and Losses Matrix for Technology 
+Corporation
+Concorde
+Strategic Losses
+Relying on the expertise of a few, 
+losses could be significant from 
+inability to leverage collective human 
+capital. Major project lost due to lack 
+of collaboration could potentially cost 
+up to $1 million.
+Airbus
+Strategic Gains
+Collective collaboration could bring 
+about new projects and more 
+efficient development of those 
+projects. Major project leading to 
+innovative technology that can be 
+taken to market (e.g., mobile phone) 
+could be worth $5 million or more.
+Titanic
+Potentially facing bankruptcy if 
+nothing changes. Little opportunity 
+for strategic gains in this situation.
+Horse and Buggy
+Strategic Losses 
+Collaborative efforts without new 
+funding sources allow for sustained 
+business, but minimal development.  
+Potential losses are considerable for 
+high numbers of missed opportunities. 
+Potentially $10 million or more in 
+losses.
+Strategic Gains
+It is still possible that a novel insight 
+could produce a marketable product.
+
+
+210 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+A COMPREHENSIVE PLAN FOR ASSESSING 
+SCENARIO PROJECTS
+The information relevant to assessing a scenario project can be put into a 
+table as a comprehensive plan for assessing scenario projects. Figure 9.8 is an 
+example of how this information can be synthesized. The earlier these ele-
+ments are considered in the project, the more relevant the measures will be. 
+If possible, these items should be considered as part of the project prepara-
+tion phase, and measurements of expected outcomes can be documented in 
+the scenario project proposal. The scenario assessment plan is a road map for 
+documenting the results of a scenario project. Using a comprehensive assess-
+ment plan ensures the ability to discuss results and track the contribution of 
+the scenario project to individual, process, and organization performance.
+The elements of the project come together for Technology Corporation 
+in Figure 9.9. The major assessment elements are taken directly from the 
+F I G U R E  9 . 8  
+A Comprehensive Plan for Assessing Scenario Projects
+Quantitative
+Qualitative
+Satisfaction Results
+ 
+Participant
+Survey (10 items, strongly agree to 
+strongly disagree)
+Interview 
+questions: 
+ 
+Stakeholder
+Survey (10 items, strongly agree to 
+strongly disagree)
+Interview 
+questions: 
+Learning Results
+ 
+Knowledge
+Surveys/instruments that measure  
+aspects of the organization related to  
+the purpose of the project
+Interview 
+questions: 
+ 
+Expertise
+Observations of behaviors where 
+appropriate using the Scenario  
+Expertise Audit
+Interview 
+questions: 
+Performance Results
+ 
+System
+Estimates of system results based on  
+the initial purpose of the project.
+Interview 
+questions: 
+ 
+Financial
+Performance Value – Cost = Benefit
+Estimates of discontinuities avoided
+Estimates of profits due to strategic 
+insights
+Interview 
+questions: 
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+211
+F I G U R E  9 . 9  
+ Comprehensive Scenario Project Assessment for Technology 
+Corporation
+Quantitative
+Qualitative
+Satisfaction Results
+ 
+Participant
+Survey (10 items, strongly 
+agree to strongly disagree)
+Interview questions: 
+1.  Are you satisfied or 
+dissatisfied with the 
+scenario planning project?  
+Why?
+2.  What things contributed 
+most to the utility (or lack 
+of utility) of the project?
+ 
+Stakeholder
+Survey (10 items, strongly 
+agree to strongly disagree)
+Interview questions: 
+1.  Describe your level of 
+satisfaction with the 
+scenario planning project.  
+2.  What things contributed 
+most to the utility (or lack 
+of utility) of the project?
+Learning Results
+ 
+Knowledge
+Surveys/instruments that 
+measure:
+• Decision making
+• Learning organization 
+• Characteristics
+• Mental models
+•  Conversation quality  
+and engagement
+Note: Use instruments 
+pre– and post–scenario 
+planning to measure 
+change.
+Interview questions: 
+1.  What have you learned as a 
+result of participating in this 
+project?
+2.  Did you have any major 
+strategic insights, or “aha” 
+moments?  If so, can you 
+describe them?
+ 
+Expertise
+Observations of behaviors 
+where appropriate using  
+the Scenario Expertise 
+Audit
+Interview questions: 
+1.  How has your learning 
+affected your behavior as a 
+result of participating in 
+this project?
+2.  What things do you do 
+differently in your work 
+that you would attribute to 
+participating in the scenario 
+planning project?
+(continued)
+
+
+212 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+proposal outlined at the start of the project. The project assessment phase 
+features the actual measures taken that can then be compared to create an 
+overall picture of the project’s success and inﬂuence. 
+CONCLUSION
+Assessing scenario planning projects is critical to understanding and docu-
+menting their effects. Furthermore, establishing evidence of the contribu-
+tions of scenario projects lends credibility to strategic activities in general. 
+This chapter has presented a comprehensive approach to assessing scenario 
+planning projects. The goal has been to present a method for estimating the 
+beneﬁts of scenario planning, and making the case that scenario planning 
+can result in a variety of beneﬁts. Among these beneﬁts are participant and 
+stakeholder satisfaction, participant knowledge and expertise, and system 
+and ﬁnancial improvements. 
+F I G U R E  9.9  Comprehensive Scenario Project Assessment for Technology 
+Corporation (continued)
+Quantitative
+Qualitative
+Performance Results
+ 
+System
+Estimates of system results 
+based on the initial  
+purpose of the project
+Interview questions: 
+1.  Has the scenario planning 
+project helped the 
+organization be more 
+productive?
+2.  If so, how?  In what ways?
+3.  Have there been strategic 
+insights, creative leaps, or 
+other innovations you feel 
+are attributable to the 
+scenario planning project? 
+Please describe them.
+ 
+Financial
+Performance Value – Cost  
+ = Benefit
+Estimates of discontinuities  
+ avoided
+Estimates of profits due to  
+ strategic insights
+Interview questions: 
+1.  How has the scenario 
+planning project 
+contributed to the financial 
+stability of the organization?
+
+
+  
+P H A S E 5—P R O J E C T  A S S E S S M E N T  
+213
+The literature on scenario planning generally does not include meth-
+ods or approaches to assessing the outcomes of scenario planning projects. 
+This chapter has acknowledged the difﬁculties in such an assessment and 
+provided a framework for synthesizing the results of scenario projects. The 
+elements of this approach form a complete and theoretically sound approach 
+to assessing scenario projects that moves beyond simple reaction forms and 
+into observable, objective results. Using the tools and techniques provided 
+in this chapter creates a mechanism for clearly understanding and docu-
+menting the impact of scenario projects.
+
+
+This page intentionally left blank 
+
+
+ 215
+P
+A
+R
+T
+T
+H
+R
+E
+E
+LEADING SCENARIO  
+PROJECTS
+C H A P TE RS
+ 
+10  Managing Scenario Projects
+ 
+11  Human Perceptions in the Scenario System 
+ 
+12  Initiating Your First Scenario Project
+SCENARIO PLANNING is a complex organizational activity, with many bar-
+riers and nuances that are often skimmed over or receive little attention. 
+Some dilemmas are not easily solved. Part Three of Scenario Planning in 
+Organizations explores some cutting-edge thinking that can suggest ways of 
+overcoming common barriers in scenario planning. 
+The following chapters make up this part:
+• Chapter 10, “Managing Scenario Projects”
+• Chapter 11, “Human Perceptions in Scenario Planning” 
+• Chapter 12, “Initiating Your First Scenario Project.”
+Chapter 10 describes several common pitfalls in scenario planning. A 
+scenario project worksheet is also provided to help structure the entire sce-
+nario project, as well as avoid the pitfalls. This chapter will help keep the 
+project on track, and its tools are useful in overall project management.
+Chapter 11 reviews some recent neurology research and suggests how 
+several barriers to human creativity can be overcome. This chapter also 

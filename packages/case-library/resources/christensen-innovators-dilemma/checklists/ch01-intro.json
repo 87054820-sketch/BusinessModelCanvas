@@ -1,0 +1,35 @@
+{
+  "chapter": "ch01-intro",
+  "sourceFiles": {"en": "01-how-can-great-firms-fail.txt"},
+  "concepts": [
+    {"name": "Technology Mudslide Hypothesis", "definition": "The hypothesis that relentless technological change makes it impossible for leading firms to stay on top. Christensen disproved this: neither pace nor difficulty of change caused failures."},
+    {"name": "Sustaining Technologies", "definition": "Technologies that sustain established performance trajectories. They make good products better in ways existing customers value. Incumbents nearly always lead."},
+    {"name": "Disruptive Technologies", "definition": "Technologies that are typically simpler, cheaper, and initially underperform on dimensions mainstream customers value. They offer a different value proposition for emerging or overlooked markets."},
+    {"name": "The Innovator's Dilemma", "definition": "The paradox that the same management practices that make companies industry leaders — listening to best customers, investing in highest-margin opportunities — also cause them to miss disruptive technologies. Good management can be the root cause of failure."},
+    {"name": "RPV Theory (Resources, Processes, Values)", "definition": "An organization's capabilities and disabilities are defined by its resources (what it has), processes (how it works), and values (what it prioritizes). These define what an organization can and cannot do."}
+  ],
+  "arguments": [
+    {"claim": "The technology mudslide hypothesis is wrong. Leading firms failed not because of pace or difficulty of technological change.", "evidence": "In every case of sustaining technology change (radical or incremental), established firms led. But in disruptive technology changes, entrants almost always won. The pattern is consistent across the HDD industry's 5 architectural generations."},
+    {"claim": "Good management practices — not bad management — caused leading firms to fail at disruptive technologies", "evidence": "Firms listened to their best customers (who didn't want the simpler technology), invested in highest-margin opportunities (disruption starts in low-margin markets), and pursued larger markets (disruption starts small). Each of these is sound management. The problem is structural, not incompetent."}
+  ],
+  "cases": [
+    {"name": "HDD Industry 1965-1995", "context": "Five architectural generations: 14-inch → 8-inch → 5.25-inch → 3.5-inch → 2.5-inch. Each generation's leaders never won the next.", "illustrates": "The pattern: incumbents lead in sustaining innovation (making existing drives better for existing customers) but entrants lead in disruptive innovation (introducing smaller, initially lower-capacity drives for new applications).", "lesson": "The pattern had no exceptions across 5 generations — it was structural, not random."}
+  ],
+  "logicChains": [
+    {"description": "Mainstream customers reject disruptive technology (too low performance on dimensions they value) → Managers rationally listen and ignore it → Disruptive technology finds foothold in new market (where its different attributes are valued) → Technology improves on its trajectory → Eventually meets mainstream needs → Incumbent enters too late", "sourceHint": "Chapter 1 introduction"}
+  ],
+  "terminology": [
+    {"term": "Performance trajectory", "definition": "The rate at which a technology improves along a measurable dimension over time."},
+    {"term": "Foothold market", "definition": "A market, often emerging or non-consumption-based, where a disruptive technology first takes hold because its different attributes are valued there."}
+  ],
+  "nuance": [
+    "Disruption is NOT about bad technology losing to good technology. It's about different definitions of performance for different markets.",
+    "The failure is NOT a management mistake — it's a rational outcome of the resource allocation process."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["disruption-diagnosis"],
+    "relatedCaseSlugs": ["hdd-industry-disruption"],
+    "relatedStrategyFrameworkSlugs": ["disruptive-innovation"],
+    "relatedChapters": ["ch02-value-networks", "ch06-disruption-model"]
+  }
+}

@@ -1,0 +1,2904 @@
+# BlandDavidJOste_2020_DiscoveryExperiments_TestingBusinessIdeas
+
+106
+EXPERIMENTS
+discovery
+DISCOVERY / EXPLORATION
+Customer Interview
+An interview that is focused on exploring customer jobs, pains,  
+gains, and willingness to pay.
+COST
+SETUP TIME
+CAPABILITIES  Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Customer Interviews are ideal for gaining qualitative insights 
+into the fit between your value proposition and the customer 
+segment. It’s also a good starting point for price testing.
+Customer Interviews are not ideal as a substitute for what 
+people will do.
+
+
+107
+Prepare
+□
+□Write a script to learn 
+about:
+• 	customers jobs, pains,  
+and gains. 
+• customers' willingness  
+to buy.
+• unmet needs between 
+product and solution.
+□
+□Find Interviewees.
+□
+□ Select a time frame for 
+your analysis.
+Execute
+□
+□Interviewer asks questions 
+from the script and dives 
+deeper when required.
+□
+□Scribe takes notes with 
+exact phrasing and notes 
+on body language.
+□
+□Repeat for 15 – 20 interviews.
+Analyze
+□
+□Do a 15-minute debrief 
+while impressions are fresh 
+in mind.
+□
+□Affinity sort the notes.
+□
+□Perform a ranking analysis.
+□
+□Update your Value 
+Proposition Canvas.
+OVERVIEW
+customer interview
+exploration
+
+
+108
+EXPERIMENTS
+discovery
+Cost 
+Cost is relatively low as customers may not 
+even need to be compensated. In general, 
+remote interviews over video have a lower 
+compensation than scheduled in-person 
+interviews. B2B interviews are typically more 
+expensive than B2C interviews, because the 
+sample size is smaller and may have less 
+free time.
+ 
+Setup Time 
+Setup time for customer interviews can be 
+very short or take a few weeks, depending  
+on where your customers are and how 
+accessible. You’ll need to create a script,  
+find your customers, and schedule the  
+interviews. 
+ 
+ 
+Run Time 
+Run time for customer interviews is relatively 
+short: they only take 15 – 30 minutes each. 
+You’ll need to have a 15-minute buffer in 
+between each one to recap your findings 
+and make any edits you need to the script.
+ 
+Evidence Strength 
+Customer jobs 
+Customer pains 
+Customer gains 
+80% average accuracy ranking on top-3 
+customer jobs, pains, and gains. You want to 
+be really dialed into your customer segment, 
+so set the bar high.	
+ 
+Customer feedback 
+Customer jobs, pains, and gains that were 
+not originally in your Customer Profile, but 
+were offered up by your interviewee.
+ 
+Interview referrals 
+Referrals are an added bonus. It’s a good 
+sign if they occur and it’ll save you on acqui-
+sition costs for more interviews. 
+ 
+Customer Interviews are relatively weak 
+evidence: it’s only what people say and not 
+necessarily what they’ll do. However, they 
+are great for qualitative insights to inform 
+your value proposition and customer jobs, 
+pains, and gains for future testing.
+Capabilities 
+Research 
+While customer interviews can be decep-
+tively difficult to do well, the good news 
+it that almost anyone can do them with 
+practice. It helps if you have a research 
+background, but it isn’t required. You’ll need 
+to write the script, source candidates,  
+conduct the interview, and synthesize 
+results. A partner makes this all so much 
+easier — otherwise you’ll have to record all  
+of the interviews and watch them again.
+Requirements 
+Target Customer 
+Customer Interviews work best when you 
+are focused on a narrow target audience. 
+Without a customer in mind, you’ll end up 
+getting very mixed results and conflicting 
+feedback. It takes much longer to interview 
+everyone, then back your way into a niche 
+customer segment. Instead, we recommend 
+you focus on a niche customer segment 
+before running any customer interviews.
+DETAILS
+discovery
+
+
+109
+Discussion Forums  
+ p. 134 
+Search Discussion Forums for 
+evidence of customers seek-
+ing out solutions to a problem.
+A Day in the Life   
+p. 116  
+Use what you learned in the 
+customer interviews to then 
+observe, and learn if, actions 
+match the words.
+Sales Force Feedback  
+p. 138 
+Use Sales Force Feedback to 
+find a pattern of customer 
+behavior.
+Discovery Survey 
+p. 122 
+Perform surveys using what 
+you learned in the customer 
+interviews to inform your  
+survey design.
+Search Trend Analysis  
+p. 126 
+Search online for volume 
+around a specific job, pain, 
+or gain.
+Paper Prototype 
+p. 182 
+Sketch out what the solution 
+to the customer jobs, pains, 
+and gains could look like on 
+paper.
+Customer Interview
+PAIRINGS
+Before
+After
+customer interview
+exploration
+
+
+110
+EXPERIMENTS
+discovery
+Writing a Script 
+Scripts are a key part of conducting effec-
+tive customer interviews, otherwise they 
+often turn into conversations that wander 
+and rarely extract the learning. You need to 
+de-risk your idea. We recommend building 
+your script after you’ve created your Value 
+Proposition Canvas and ranked the top three 
+customer jobs, pains, and gains.
+Finding Interviewees 
+B2C Segment 
+We recommend creating a Value Proposition 
+Canvas for your B2C segment and then 
+brainstorming where you can find them 
+online and offline. Vote as a team where you 
+want to focus your search.
+B2B Segment 
+Same exercise applies to B2B interviewee 
+candidates, although it may be harder to 
+brainstorm where to find them. Luckily there 
+are online and offline locations that, in gen-
+eral, work well for finding B2B interviewees.
+DETAILS
+Sample Script
+1.	 Introduction & Context
+“Hello, I am [ name ] doing 
+research on [ idea ]”
+“No pressure to make a 
+purchase.”
+“Not going to sell you 
+anything.” 
+2.	 Have Them Tell a Story
+“When was the last time 
+you experienced  
+[ pain or job ]?”
+“What motivated you  
+to do [ action ]?”
+“How did you solve it?”
+“If not, why?” 
+3.	 Ranking Customer Jobs, 
+Pains, and Gains
+List the top three customer 
+jobs, pains, and gains.
+Interviewee ranks them 
+based on personal 
+experiences.
+“Are there any others you 
+expected to be on the list?” 
+4.	 Thanks & Wrap Up
+“What question should  
+I have asked you?”
+“Can you refer me to  
+someone else?”
+“May we contact you  
+in the future?”
+“Thanks!” 
+Discussion 
+forum
+Twitter
+Webinar
+Craigslist
+Store
+Conference
+Online
+Offline
+Co-working 
+space
+Meetup
+Facebook
+LinkedIn
+
+
+111
+Vetting Interviewees 
+Vetting interview candidates isn’t fail-safe, 
+but overall it’ll save you time by screening 
+out those who do not qualify for the inter-
+view process. One or two less-than-ideal 
+candidates will always slip through, but  
+it’s still better than not qualifying people at 
+all. One way to do so is a simple screener 
+survey to qualify people before scheduling 
+anything.
+Screening on Craigslist 
+Craigslist is a popular website for posting 
+things to buy and sell, but it’s also a gold 
+mine for finding customers to interview. 
+Simply go to the Community -> Volunteers 
+section of Craigslist and post your research 
+request. In the description, include a survey 
+link for those who are interested in partici-
+pating. The survey should include qualifying 
+and disqualifying questions.  
+	
+For example, if you are looking for people 
+who own a bicycle, ask: “How many bicycles 
+do you own — 0, 1, 2, or 3+?” 
+	
+If people answer 0, then it saves you from 
+interviewing those who do not own a bicycle. 
+If people answer 3+, they also might not be 
+ideal candidates because they own so many 
+bicycles. Simple screener questions like this 
+will save you and your interviewees hours.
+DETAILS
+Roles & Responsibilities 
+We recommend not doing these on your own 
+if at all possible, whether your customer 
+interview is online or in person. It’s very diffi-
+cult and time-consuming to ask the ques-
+tion, actively listen, note body language and 
+response, and then ask the next question.  
+If you get permission to record the interview, 
+it’ll take twice as long because you’ll need to 
+watch and listen to it all again. Instead, we 
+recommend conducting interviews in pairs.
+Scribe
+• Takes notes.
+• Writes exact quotes 
+when possible without 
+paraphrasing.
+• Describes body language. 
+Interviewer
+• Asks questions from script.
+• Delves deeper when needed 
+by asking why.
+• Thanks and wrap up.
+ 
+Interviewee
+• Answers questions.
+Screening in-person 
+The offline version of this is very similar, 
+although you’d simply ask these questions 
+in person before diving into the entire inter-
+view. If they don’t qualify, thank them for 
+their time and move on.
+customer interview
+exploration
+
+
+112
+EXPERIMENTS
+discovery
+15-Minute Debrief 
+Immediately after each interview is con-
+cluded, take 15 minutes to debrief with your 
+partner to quickly recap what you learned 
+and if anything needs to be revised.
+Debrief Topics
+• What went well with that interview?
+• What did we learn from body language?
+• Did we bias the candidate in any way?
+• Is there anything we want to quickly revise 
+in the script?
+Synthesizing Feedback 
+In addition to the 15-minute debrief, the 
+team should synthesize their notes and 
+update the Value Proposition Canvas to help 
+inform your strategy. One quick way to sort 
+through a lot of qualitative feedback is a 
+technique called Affinity Sorting.
+Affinity Sorting 
+As a team, set aside 30 – 60 minutes and 
+bring your notes.
+• Make sure there is plenty of wall space  
+if meeting in person.
+• Write one quote per sticky note.
+• Write one insight per sticky note.
+• Place the interviewee name or initials 
+ on the bottom of the sticky note.
+• Place all stickies on the wall.
+• Sort them into similar themes.
+DETAILS
+Label
+Label
+
+
+113
+Ranking Analysis 
+Ranking isn’t a perfect science, but it’ll give 
+you a sense of how close you are to the 
+ranking in your Customer Profile. The draw-
+back of having interviewees rank is that on 
+its own, you don’t know how much they feel 
+the job, pain, or gain, relatively, compared 
+to others. This is why it’s important to ask 
+follow-up questions and pick up on body 
+language. 
+	
+If you’ve interviewed 10 customers that 
+match your Customer Profile, then ideally 
+you want the customer jobs, pains, and 
+gains ranking from your Customer Profile to 
+be at the 80%+ accuracy rate. Which means 
+8 out of 10 ranked job 1 as #1, job 2 as #2, 
+job 3 as #3, and so on.
+Updating Your Canvas 
+After you’ve synthesized the qualitative 
+feedback and analyzed rankings from your 
+first batch of customer interviews, go back 
+to your Value Proposition Canvas and make 
+any edits needed. It’s important that your 
+testing inform your strategy.
+DETAILS
+□
+□Ask for permission before 
+recording.
+□
+□Qualify the candidate so 
+that you don’t waste each 
+other’s time.
+□
+□Adopt a beginner’s mind.
+□
+□Listen more than you talk.
+□
+□Get facts, not opinions.
+□
+□Ask “why” to get real 
+motivations.
+□
+□Ask for permission to follow 
+up.
+□
+□Ask for referrals to 
+interview.
+□
+□Ask if there is anything you 
+should have asked, but 
+didn’t. 
+ 
+–
+– Talk more than you listen.
+–
+– Pitch the solution.
+–
+– Be thinking of the next 
+question to ask, instead 
+of actively listening to the 
+response.
+–
+– Nod your head yes or no 
+while the interviewee is 
+speaking.
+–
+– Ask only closed ended 
+questions.
+–
+– Schedule the interviews 
+back to back, without any 
+time in between to debrief.
+–
+– Forget to update your 
+Value Proposition Canvas 
+with your findings.
+customer interview
+exploration
+
+
+114
+EXPERIMENTS
+discovery
+DISCOVERY / EXPLORATION
+Partner & Supplier  
+Interviews
+Partner & Supplier Interviews are similar to Customer Interviews, but 
+you are focused on whether you can feasibly run the business. You’ll 
+be sourcing and interviewing Key Partners to supplement the Key 
+Activities and Key Resources that you cannot do, or do not want to 
+do, in-house.
+Evidence Strength 
+ 
+# of key partner bids 
+Response rate = number of partner inter-
+views divided by the number of partner bids 
+provided to you. 
+	
+Key Partner bids are strong evidence that 
+Key Partners are interested, although many 
+details need to be agreed upon before it is a 
+binding contract.	
+ 
+Key partner feedback 
+Key Partner quotes and feedback from the 
+interviews. 
+	
+When Key Partners state what they can 
+deliver, it’s relatively strong evidence as long 
+as they check out.
+Variation
+DESIRABILITY · FEASIBILITY · VIABILITY
+COST
+SETUP TIME
+RUN TIME
+
+
+115
+DISCOVERY / EXPLORATION
+Expert Stakeholder 
+Interviews
+Stakeholder Interviews are similar to Customer Interviews, but are 
+focused on getting “buy-in” from key players inside your organization.
+Evidence Strength 
+Expert stakeholder feedback 
+Expert Stakeholder quotes and feedback 
+from the interviews. 
+	
+When stakeholders state what they wish 
+to see strategically out of the initiative, it’s 
+moderately strong evidence. They need to 
+back up their words with actions for it to be 
+stronger.
+Variation
+DESIRABILITY · FEASIBILITY · VIABILITY
+COST
+SETUP TIME
+RUN TIME
+interviews
+exploration
+
+
+116
+EXPERIMENTS
+discovery
+DISCOVERY / EXPLORATION
+A Day in the Life
+A method of qualitative research that uses customer ethnography to 
+better understand customer jobs, pains, and gains.
+COST
+SETUP TIME
+CAPABILITIES  Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+A Day in the Life is relatively cheap. You may need to  
+compensate people for their time if you decide to work  
+alongside or observe them for the entire day.
+
+
+117
+1. Prepare
+□
+□In teams of 2–3, define 
+where and how you plan to 
+observe. Clear your calen-
+dar so that you can commit 
+several hours. Identify how 
+to take notes and set the 
+ground rules for not biasing 
+the participants.
+2. Permission
+□
+□Get consent from those 
+who you’d like to observe. 
+Explain the “why” behind 
+the request.
+3. Observe
+□
+□Using the Day in the Life 
+worksheet, capture the 
+customer time, activity, 
+jobs, pains, gains, and 
+notes on what you think. 
+Do not interview or interact 
+with the participants while 
+observing.
+4. Analyze
+□
+□Once the session is over, 
+meet with your team to sort 
+through the notes. Update 
+your Value Proposition 
+Canvas to reflect the latest 
+findings to help inform 
+future experiments.
+OVERVIEW
+a day in the life
+exploration
+
+
+118
+EXPERIMENTS
+discovery
+Cost 
+A Day in the Life is relatively cheap. You may 
+need to compensate people for their time 
+if you decide to work alongside or observe 
+them for the entire day.
+ 
+Setup Time 
+Setup time for A Day in the Life is relatively 
+short. You’ll need to define and obtain con-
+sent from the participants you observe for 
+the day. 
+ 
+ 
+Run Time 
+Run time for A Day in the Life is a bit longer 
+than other methods, in that you need to 
+spend several hours each day observing 
+customer behavior. This can extend over 
+several days or weeks at a time, depending 
+on the number of participants.
+ 
+Evidence Strength
+ 
+Customer jobs 
+Customer pains 
+Customer gains 
+Notes and activities on observed customer 
+jobs, pains, and gains throughout the day. 
+	
+The grouping and ranking output of A 
+Day in the Life is weak evidence, although 
+it’s stronger than inviting people into a lab 
+setting because it’s observed behavior in  
+the real world.
+ 
+Customer quotes 
+Take note of additional quotes from the 
+customers that are not limited to jobs, pains, 
+and gains. 
+	
+Customer quotes are relatively weak, but 
+helpful for context and qualitative insights 
+for upcoming experiments.
+Capabilities 
+Research 
+Almost anyone can use A Day in the Life. 
+It will help if you have research abilities so 
+that you can collect and document the data 
+properly. It’s recommended that you have  
+a partner when doing so to compare notes.
+Requirements 
+Consent 
+A Day in the Life ideally requires consent  
+from those you are observing. It also 
+requires you to coordinate with manage-
+ment and security at the locations in which 
+you observe. For example, if you are going 
+to hang out at a retail store and observe 
+patterns, then speak to the manager first  
+to get permission. If you wish to observe 
+someone who made a purchase, ask them 
+for permission before doing so. Otherwise 
+this can become creepy and you may be 
+escorted out by security.
+DETAILS
+
+
+119
+Customer Support Analysis 
+ p. 142 
+Use customer support data to 
+inform what to look for in real 
+life use.
+Web Traffic Analysis  
+p. 130  
+Use what you’ve learned from 
+the observations to check 
+against customer behavior on 
+your website.
+Discussion Forums  
+p. 134 
+Search through Discussion 
+Forums to identify unmet 
+customer needs and observe 
+if they occur in real life.
+Social Media Campaign  
+p. 168 
+Use social media to  
+engage with more people to  
+determine if they have similar 
+patterns of behavior.
+Search Trend Analysis  
+p. 126 
+Use what you’ve found people 
+searching for online and 
+observe if this is happening  
+in day-to-day usage.
+Storyboarding  
+p. 186 
+Use the observations to test 
+sequences of solutions using 
+illustrations.
+A Day in the Life
+PAIRINGS
+Before
+After
+a day in the life
+exploration
+
+
+120
+EXPERIMENTS
+discovery
+A DAY IN THE LIFE 
+Closing the Say/Do Gap 
+Intuit’s Follow-Me-Home Program
+CASE STUDY
+Can you give us a brief explanation of  
+the Follow-Me-Home Program at Intuit? 
+The Follow-Me-Home is one technique from 
+Intuit’s “Design for Delight” program, that 
+teaches our employees the skills required to 
+create awesome products for our customers. 
+Design for Delight includes three core prin-
+ciples: Deep Customer Empathy, Go Broad 
+to Go Narrow, and Rapid Experimentation 
+with Customers. The Follow-Me-Home is the 
+most powerful technique from the Design for 
+Delight principle, Deep Customer Empathy. 
+There is nothing more effective than observ-
+ing a customer when and where they are 
+actually experiencing the pain and problems 
+we are trying to solve. 
+	
+We teach the Follow-Me-Home tech-
+nique to each and every employee in the 
+company, and each new person who joins 
+Intuit learns the technique as part of their 
+onboarding process. In fact, each new hire 
+conducts at least two Follow-Me-Homes 
+within the first few weeks of starting their 
+career at Intuit, regardless of their function 
+or level of seniority. From new engineers, 
+to seasoned HR personnel, to product 
+managers, to our most senior leaders, 
+everyone is expected to learn how do to a 
+Follow-Me-Home.
+How did it get started? 
+Intuit’s founder, Scott Cook, was inspired  
+by a similar technique used by Toyota.  
+In the early days of Intuit, Scott suspected 
+he could use this technique to improve 
+I
+ntuit creates financial, accounting, 
+and tax preparation solutions for 
+small businesses, accountants, and 
+individuals, such as TurboTax, Quick-
+Books, and Mint.com. Intuit is located 
+in the heart of Silicon Valley (Moun-
+tain View, California) and is well 
+known for pushing the boundaries of 
+customer-centric problem solving.
+Intuit's products, and so he began testing  
+the Follow-Me-Home approach while 
+building our early products such as Quicken 
+and QuickBooks. In those days software 
+was installed on a physical computer via 
+floppy discs (sounds crazy), so Scott and our 
+product teams asked real customers if they 
+could watch them install the software after 
+it was purchased. 
+	
+Through observation, product teams 
+uncovered new insights, and complete sur-
+prises about how customers actually used 
+our software in the real world. These insights 
+often led to product improvements, so the 
+Follow-Me-Home principles were codified, 
+then shared with our employees. The Follow-
+Me-Home technique continues to evolve 
+with the times, but the spirit remains the 
+same — go observe customers where they 
+are experiencing the pain or problems about 
+which you need to learn.
+What’s your role in the program? 
+My team reports to Diego Rodriguez, Intuit’s 
+Chief Product and Design Officer. Our mis-
+sion is to nurture Intuit’s culture of innova-
+tion, through programs such as Design for 
+Delight, our network of expert Innovation 
+Catalyst Coaches, and high-impact train-
+ing. Our job is to ensure each and every 
+employee has the opportunity to learn and 
+apply the most effective innovations skills to 
+their daily work, such as Follow-Me-Homes, 
+and we continuously improve these skills as 
+the world changes. 
+
+
+121
+	
+We partner with other organizations such 
+as HR, Learning and Development, and 
+functional communities to achieve this goal, 
+but our team’s specialty is ensuring Intuit’s 
+innovation flame always burns bright. I work 
+with an amazing team who are all dedicated 
+to this goal, so my job is to simply continue 
+learning and improving as a team. There are 
+always ways we can get better.
+What do you find most challenging about 
+training employees in this technique? 
+Techniques like Follow-Me-Home can be 
+learned by anyone, but just like any new 
+skill, it takes consistent practice to master. 
+In the early stages of learning people often 
+misunderstand the details of how to execute 
+a Follow-Me-Home, and it takes time for 
+best practice to become second nature. 
+	
+For example, one VERY important aspect 
+of a great Follow-Me-Home is the focus 
+on observation, versus traditional inter-
+viewing — i.e., talking.  We teach people to 
+focus first on what they observe a customer 
+actually doing in a real situation, using their 
+real tools, rather than overly scripting a 
+simulation, or asking questions. Once obser-
+vation is complete, only then should you 
+ask interview-like questions, and when you 
+ask questions focus on the “why” behind the 
+observed behaviors, not speculation or opin-
+ions. When people first learn how to conduct 
+a Follow-Me-Home, they typically ask way 
+too many questions, and do not focus on 
+simply observing the behaviors in question. 
+That’s just one example. 
+	
+We also know that not everyone is 
+comfortable “getting outside the building” 
+to speak with people who are complete 
+strangers. It does take a bit of courage to go 
+try a Follow-Me-Home the first few times, so 
+getting people over their initial reluctance is 
+something we focus on, as well as encour-
+aging them to practice often. The good news 
+is that the vast majority of people tell us 
+Follow-Me-Homes are transformative, and 
+they often begin doing Follow-Me-Homes on 
+their own. They end up loving the technique.  
+How do you see programs like this evolving 
+in the future? 
+We’ve already improved our approach to 
+Follow-Me-Homes over the years, and we’ll 
+continue to do so as the world around us 
+evolves. For example, Intuit has an increas-
+ing number of customers all over the world. 
+We’ve adapted the Follow-Me-Home so we 
+can conduct them remotely, using video 
+camera and screen share technology. We’ve 
+also tweaked the approach to ensure we 
+respect the cultures and traditions of the 
+locations we visit. As the world continues to 
+get flatter, and technology changes, we’ll 
+continue to adapt our approach. However, 
+the spirit remains the same. Go observe for 
+yourself.
+What advice would you give readers who’d 
+like to try this at their organization? 
+The simple answer is to just try it. Start 
+small, trying it yourself on a few projects so 
+you can learn what works and what does 
+not work in the context of your organization. 
+Then you build on what you learned to scale 
+a formal program, or just continue using the 
+technique yourself. You just might become 
+the most effective person in your organiza-
+tion. 
+	
+People who read this book are familiar 
+with innovation best practices, so I simply 
+suggest you apply these best practices 
+to your future Follow-Me-Home program 
+as if it is a “new product.” Remember that 
+Follow-Me-Homes are just one of the many 
+skills required to be an effective innovator, 
+so Follow-Me-Homes won’t make you suc-
+cessful in a vacuum. You will likely need to 
+develop supporting programs, and a culture 
+which embraces these types of techniques. 
+The good news is Follow-Me-Homes and the 
+related skills are extremely fast to execute, 
+flexible, and much cheaper than a failed 
+product launch. Get out there and try it.  
+ 
+— Bennett Blank  
+Innovation Leader, Intuit Inc.
+a day in the life
+exploration
+
+
+122
+EXPERIMENTS
+discovery
+DISCOVERY / EXPLORATION
+Discovery Survey
+An open-ended questionnaire used in the collection of information 
+from a sample of customers.
+COST
+SETUP TIME
+CAPABILITIES  Product / Marketing / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Discovery Survey is ideal for uncovering your value proposition 
+and customer jobs, pains, and gains.
+Discovery Survey is not ideal for determining what people will 
+do, only what they say they’ll do.
+
+
+123
+Prepare
+□
+□Define your goal for  
+the survey and what you 
+are trying to learn.
+□
+□ Identify your target  
+audience for the survey.
+□
+□ Assuming a 10–20% 
+response rate and calculate 
+how many people should 
+receive the survey.
+□
+□ Set a start and stop date 
+for the survey.
+□
+□ Create your survey.
+Execute
+□
+□Send your survey  
+to customers.
+Analyze
+□
+□Use Affinity Sorting to clus-
+ter responses into themes. 
+Don’t label before you sort; 
+allow the labels to emerge 
+from the sorting.
+□
+□Use word clouds or a text 
+analyzer to quickly visualize 
+which words and phrases 
+customers use most 
+frequently.
+□
+□Review the themes and 
+quotes with your team and 
+dot vote on the 1–3 themes 
+you want to explore in 
+more detail in upcoming 
+experiments.
+□
+□Update your Value 
+Proposition Canvas based 
+on your findings.
+OVERVIEW
+Sample Survey Questions
+• When was the last time you have [ insert scenario here ]?
+• Can you explain what happened and how it impacted you?
+• What other options did you explore? Why?
+• If you could wave a magic wand, what would you have liked 
+to have happened?
+• What question do you wish we would have asked you?
+discovery survey
+exploration
+
+
+124
+EXPERIMENTS
+discovery
+Cost 
+Discovery surveys are not very expensive 
+and there are several free and low-cost 
+services that you can use to send them to 
+your customers. Much of the cost comes 
+from reaching the target audience. It gets 
+more expensive if you are targeting profes-
+sionals or are in the B2B space. Your sample 
+size gets smaller; therefore you may end 
+up spending time and money to reach your 
+audience.
+ 
+Setup Time 
+Discovery surveys do not take very long to 
+set up and configure. Many of the questions 
+are open-ended. It should only take a few 
+hours to a day at most. 
+ 
+ 
+Run Time 
+Much of the run time on a discovery survey 
+depends on the size of your customer pool 
+and how easy it is to reach them. It shouldn’t 
+take more than a few days, but could take 
+longer if you aren’t able to get enough 
+results.
+ 
+Evidence Strength
+ 
+# of free text answer responses 
+Insights 
+Look for repeating patterns in the responses 
+to the survey. By the fifth survey response 
+with a similar target customer, you should 
+start seeing the same thing written in differ-
+ent ways.
+ 
+# people willing to be contacted after  
+the survey 
+Valid Emails 
+Ideally you have a small percentage, around 
+10%, who want to be contacted in the future.
+Capabilities 
+Product / Marketing / Research 
+Discovery surveys require the ability to write 
+open-ended survey questions without  
+a negative tone. You’ll also need to be able 
+to identify the audience and interpret the 
+results by Affinity Sorting or using word 
+clouds to find patterns in the feedback.
+Requirements 
+Qualitative Source Material 
+Surveys are generally more impactful when 
+you already have qualitative insights from 
+other methods that don’t scale. Use that 
+material to inform your survey design.
+Access to an Audience 
+Getting in front of the right audience is just 
+as important as your survey design. If you 
+have an existing site with lots of traffic, 
+then you can leverage that to get to your 
+audience. If you do not have this luxury or 
+are going after a new market, then brain-
+storm channels to use before designing your 
+survey.
+DETAILS
+
+
+125
+Customer Interviews 
+ p. 106 
+Use the notes from your  
+interviews to inform your  
+discovery survey design.
+Paper Prototype  
+p. 182  
+Contact the people who are 
+excited about your value 
+proposition and test your low 
+fidelity solution with them.
+Speed Boat  
+p. 218 
+At a smaller scale, find out 
+what’s helping people make 
+progress or what’s in their 
+way to help inform your sur-
+vey design at scale.
+Clickable Prototype  
+p. 236 
+Contact the people who are 
+excited about your value 
+proposition and test a click-
+able prototype with them.
+Social Media Campaign  
+p. 168 
+Use social media to  
+acquire an audience for  
+your discovery survey.
+Search Trend Analysis  
+p. 126 
+Use the jobs, pains, and gains 
+people listed to find out if 
+these are popular search 
+trends online.
+Discovery Survey
+PAIRINGS
+Before
+After
+discovery survey
+exploration
+
+
+126
+EXPERIMENTS
+discovery
+DISCOVERY / DATA ANALYSIS
+Search Trend Analysis
+The use of search data to investigate particular interactions among 
+online searchers, the search engine, or the content during searching 
+episodes.
+COST
+SETUP TIME
+CAPABILITIES  Marketing / Research / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Search Trend Analysis is ideal for performing your own market 
+research, especially on newer trends, instead of relying on 
+third party market research data.
+
+
+127
+Prepare       
+□
+□Identify what tools to use 
+(Google Trends, Google 
+Keyword Planner, etc.)
+□
+□Define a geographical area 
+for your search.
+□
+□List the topics you want  
+to explore such as: 
+• people trying to solve  
+for customer jobs.
+• individuals needing to 
+address a customer pain.
+• people wanting to create  
+a customer gain.
+• customers who are 
+unhappy with an existing 
+solution.
+Execute       
+□
+□Search for phrases related 
+to your topics.
+□
+□Take screenshots and 
+export your results.
+□
+□Write down notes along-
+side your research on what 
+surprised you.
+OVERVIEW
+Analyze       
+□
+□Gather your findings.
+□
+□Consider focusing on 
+problem size over market 
+size. What has the highest 
+search volume on a typical 
+problem? Would that be a 
+meaningful business oppor-
+tunity for you?
+□
+□Select the top 1–3 volume 
+searches you want to 
+explore in more detail in 
+upcoming experiments.
+search trend analysis
+data analysis
+
+
+128
+EXPERIMENTS
+discovery
+Cost 
+The cost of performing your own Search 
+Trend Analysis is relatively cheap, since 
+there are existing free and low-cost tools. 
+Both Google Trends and Google Keyword 
+Planner are currently free to use. 
+ 
+Setup Time 
+Setup Time to perform Search Trend 
+Analysis is relatively short, from a few min-
+utes to a few hours. You’ll need to define the 
+criteria for your search and choose a tool. 
+ 
+ 
+Run Time 
+Run Time to perform Search Trend Analysis 
+is also relatively short, from a few hours to a 
+few days. It largely depends on the number 
+of topics and geographic locations you are 
+exploring. The more you have, the longer it’ll 
+take to do well.
+ 
+Evidence Strength
+ 
+Search Volume 
+# of searches for keyword within a certain 
+period of time 
+Search Volume varies across geographic 
+location, time, and industry. You’ll want to 
+compare your results against the others to 
+get an overall feel for the level of interest. 
+	
+ 
+ 
+Related Queries 
+Queries that users also searched for,  
+in addition to the one you entered 
+If conducted properly, strength of evidence 
+on search volume and related queries can 
+be stronger than other smaller qualitative 
+research methods.
+Capabilities 
+Marketing / Research / Data 
+Search Trend Analysis can be performed 
+by almost anyone who is willing to learn 
+online trend analysis tools. Most of them, 
+such as Google Trends and Google Keyword 
+Planner, will have contextual help to walk 
+you through the process. You’ll still need to 
+be able to interpret the results, so having a 
+marketing, research, and data background 
+will be beneficial.
+Requirements 
+Online Customers 
+Search Trend Analysis can be a powerful 
+way to uncover customer jobs, pains, gains, 
+and even their willingness to pay for a solu-
+tion. However, they must have performed 
+searches online to generate this evidence. 
+If you are targeting a niche, B2B, or mainly 
+offline customer, your searches are not 
+going to return any significant volume.
+DETAILS
+
+
+129
+Customer Interviews 
+ p. 106 
+Use the quotes from your 
+interviews to inform your 
+search criteria.
+Online Ads 
+p. 146  
+Create an online ad using the 
+keywords you’ve uncovered to 
+drive traffic to an experiment.
+Discovery Survey   
+p. 122 
+Use the results from previous 
+discovery surveys to inform 
+your search criteria.
+Simple Landing Page  
+p. 260 
+Create a Simple Landing Page 
+that is tailored to a specific 
+Customer Profile you’ve 
+uncovered.
+Discussion Forums  
+p. 134 
+Use what you’ve learned from 
+browsing discussion forums to 
+better inform your search criteria 
+to determine problem size.
+Social Media Campaign  
+p. 168 
+Use social media to target 
+regions and interests that 
+you’ve analyzed through 
+Search Trend Analysis.
+Search Trend Analysis
+PAIRINGS
+Before
+After
+search trend analysis
+data analysis
+
+
+130
+EXPERIMENTS
+discovery
+DISCOVERY / DATA ANALYSIS
+Web Traffic Analysis
+The use of website data collection, reporting, and analysis to look 
+for customer behavior patterns.
+COST
+SETUP TIME
+CAPABILITIES  Technology / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+The use of website data collection, reporting, and analysis  
+to look for customer behavior patterns.
+
+
+131
+OVERVIEW
+Prepare
+□
+□Create your focus area and 
+what customer event it 
+applies to:
+• 	Increasing signups.
+•  Increasing downloads.
+•  Increasing # of purchases.
+□
+□ Identify the steps leading 
+up to that event.
+□
+□ Select a time frame for 
+your analysis.
+Execute
+□
+□Using your web analytics 
+software, run your analysis 
+on the defined path.
+□
+□Note the drop-off points and 
+percentages of each.
+Analyze
+□
+□What are the biggest drop-
+offs in your flow?
+□
+□What experiments can 
+you run to improve that 
+number?
+web traffic  analysis
+data analysis
+
+
+132
+EXPERIMENTS
+discovery
+Cost 
+The cost of performing web traffic analysis 
+is relatively cheap, especially if you use a 
+free tool like Google Analytics. If you require 
+more in-depth, event-level tracking and 
+want to pay for a tool, they can vary widely 
+in cost. Some start out very cheap, but as 
+your customer traffic scales the cost can 
+increase with it. If you are looking for heat 
+map analysis of how people use the pages, 
+there are low-cost options for that as well.
+ 
+Setup Time 
+Setup time to perform web traffic analysis 
+is relatively short, from a few hours to a few 
+days. You’ll need to integrate the tool into 
+your website and log into the dashboard to 
+view the data. Depending on the tool, it may 
+take a day or more for the data to appear. 
+ 
+ 
+Run Time 
+Run time to perform web traffic analysis is 
+unfortunately rather long, typically from 
+weeks to months. It largely depends on the 
+amount of traffic you have, but essentially 
+you don’t want to make large risky decisions 
+based on a few days’ worth of data.
+ 
+Evidence Strength
+ 
+# of sessions 
+Number of interactions with your website 
+within a given time frame, for a specific user. 
+Usually within a 30-minute period.
+ 
+# of drop-offs 
+Drop-offs occur when a user drops out of the 
+flow you’ve defined. You’ll want to analyze 
+the percent of drop-offs at which step and 
+whether they left the site entirely. 
+	
+How many customers you have on the site 
+and where they are dropping off is relatively 
+strong evidence, as it is measuring what 
+they do. You don’t know why they are doing 
+it until you ask them.
+ 
+Amount of attention 
+Attention can be a number of different user 
+actions, usually including time spent on 
+page and where they clicked. Users don’t 
+always click on buttons and links, so hav-
+ing heat map data can give you amazing 
+insights into how you are gaining or losing 
+attention in your site. 
+	
+Attention is also relatively strong evi-
+dence, and yet, like session and drop-offs, it 
+only tells you the “what” and not the “why.”
+Capabilities 
+Technology / Data 
+The learning curve on web traffic analysis 
+can get steep rather quickly, especially once 
+you go beyond the basics of user behavior. 
+We suggest having the technical capability 
+to integrate the analytics software and the 
+data awareness of being able to analyze 
+the results. For example, the heat map data 
+will show you where people clicked, but 
+you’ll want to slice that data by source to 
+see if people coming from online ads click 
+differently than those who come from an 
+email campaign.
+Requirements 
+Traffic 
+Web traffic analysis requires an existing 
+website with active users, otherwise you 
+won’t be able to collect any evidence. 
+Similar to the simple landing page, we rec-
+ommend driving traffic to your site using:
+• Online ads
+• Social media campaigns
+• Email campaigns
+• Word of mouth
+• Discussion forums 
+DETAILS
+
+
+133
+Simple Landing Page 
+p. 260 
+Create a simple landing page 
+that has daily active usage.
+Split Testing  
+p. 270  
+Try different versions of your 
+flow to incrementally address 
+drop-offs.
+Extreme Programming Spike 
+p. 306 
+Conduct a spike to better 
+understand the limitations of 
+the tools you’d like to imple-
+ment and if they provide the 
+outputs you need to learn.
+Validation Survey  
+p. 278 
+Perform validation surveys for 
+those users who are dropping 
+off to learn why.
+Single Feature MVP  
+p. 240 
+Build a single feature MVP in 
+your website to better under-
+stand onboarding flow and 
+getting customers to use it.
+Customer Support Analysis   
+p. 142 
+Review customer support data 
+to better understand why 
+customers may be behaving 
+this way on your website.
+Web Traffic Analysis
+PAIRINGS
+Before
+After
+web traffic  analysis
+data analysis
+
+
+134
+EXPERIMENTS
+discovery
+DISCOVERY / DATA ANALYSIS
+Discussion Forums
+The use of discussion forums to uncover unmet jobs, pains, and gains 
+in a product or service.
+COST
+SETUP TIME
+CAPABILITIES  Research / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Discussion Forums are ideal for finding unmet needs in your 
+existing product or a competitor’s product.
+
+
+135
+Prepare
+□
+□Identify what discussion 
+forums you want to use for 
+your analysis (internal vs. 
+external).
+□
+□	Define the questions you 
+want to answer such as,  
+is there evidence that:
+• you are not solving for  
+top customer jobs?
+• you are not addressing 
+major customer pains?
+• you are not creating  
+customer gains?
+• customers are creating 
+their own work-around 
+solutions to address your 
+product deficiencies?
+OVERVIEW
+Execute
+□
+□Search for phrases related 
+to your questions on discus-
+sion forums.
+□
+□Take screenshots and 
+export your results.
+□
+□Write down notes about 
+sense of urgency and tone 
+in the forum threads.
+Analyze
+□
+□Update your Value 
+Proposition Canvas based 
+on your findings.
+□
+□Contact the forum posters 
+in direct messages to learn 
+if they’ll speak to you in 
+more detail.
+□
+□If yes, then run experiments 
+with them to help close the 
+gap.
+discussion forums
+data analysis
+
+
+136
+EXPERIMENTS
+discovery
+Cost 
+Cost is relatively cheap, since you are basi-
+cally analyzing online discussion forums to 
+find unmet needs. If it’s your own discussion 
+forum, this should be relatively cost effective 
+and analytics may even be already built  
+into your software. If you are analyzing a 
+competitor’s or other community discussion 
+boards, you’ll likely be web scraping them 
+with low-cost tools or just doing it manually 
+yourself. You’ll save on the cost by manually 
+doing so but it might take much longer.
+ 
+Setup Time 
+Setup time to analyze discussion forums is 
+relatively short. It’ll require you to define the 
+questions you want to answer and identify 
+which discussion forums to analyze. 
+ 
+ 
+Run Time 
+Run time for analyzing discussion forums is 
+also relatively short. It takes a bit longer if 
+you decide not to use a web scraping tool, 
+so we’d recommend automating it if possible 
+to shorten run time. You’ll want to look for 
+patterns of unmet customer jobs, pains, and 
+gains.
+ 
+Evidence Strength
+ 
+Types of work-arounds 
+Look for a pattern of work-arounds or ways 
+to hack the product to get it to do what 
+people need. This can provide insights into 
+improvements. 
+	
+Similar to Steve Blank’s “built a solution 
+to solve the problem,” it’s strong evidence if 
+people are hacking together their own meth-
+ods to solve problems the product doesn’t 
+fully address.
+ 
+Types of feature requests 
+Look for a pattern in the top three features 
+requested on the discussion forums and 
+what pains and underlying jobs they could 
+solve. 
+	
+Feature requests are relatively weak 
+evidence, in that you’ll need to perform more 
+experiments around the underlying job or 
+pain the proposed feature is intended to 
+solve.
+Capabilities 
+Research / Data 
+You’ll need to be able to identify discussion 
+forums, gather data, and analyze it. In doing 
+so, it’ll help to be able to understand how to 
+scrape online websites and what questions 
+you’ll want to answer from looking through 
+the data. It’ll help if you have data and 
+research capabilities when doing so.
+Requirements 
+Discussion Forum Data 
+The most important requirement for analyz-
+ing discussion forum data is having existing 
+discussion forums to analyze the questions 
+you need to answer. If you feel there are 
+unmet needs in a competitor’s product, go to 
+community and support forums where their 
+customers post topics. If you have your own 
+discussion forums, they should also be a 
+great source of data. 
+DETAILS
+
+
+137
+Customer Support Analysis 
+p. 142 
+Review customer support 
+data to get a better idea of 
+what questions to ask when 
+analyzing discussion forums.
+Customer Interviews  
+p. 106  
+Contact people who have 
+posted about unmet needs 
+and ask if they have time to 
+speak to you in an interview.
+Sales Force Feedback  
+p. 138 
+Use what you’ve learned from 
+your sales force to inform 
+what you analyze in discus-
+sion forums.
+Search Trend Analysis  
+p. 126 
+Search the web to see how 
+people are responding to your 
+product or a competitor’s 
+product.
+Web Traffic Analysis  
+p. 130 
+Use what you’ve learned 
+from the discussion forums 
+to check against customer 
+behavior on your website.
+Discussion Forums
+PAIRINGS
+Before
+After
+discussion forums
+data analysis
+
+
+138
+EXPERIMENTS
+discovery
+DISCOVERY / DATA ANALYSIS
+Sales Force Feedback
+The use of sales force feedback to uncover unmet jobs, pains,  
+and gains in your product or service.
+COST
+SETUP TIME
+CAPABILITIES  Sales / Research / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Sales force feedback is ideal for businesses that use a group 
+of people to conduct sales.
+
+
+139
+Prepare
+□
+□Identify the questions you’d 
+like answered from your 
+sales force:
+• Are you are solving for top 
+customer jobs?
+• Are you addressing major 
+customer pains?
+• Are you creating customer 
+gains?
+□
+□If you have a complex B2B 
+business, then segment 
+your questions into the 
+additional roles of:
+• decision makers.
+• economic buyers.
+• recommenders.
+• influencers.
+□
+□Schedule sessions with your 
+sales force to answer the 
+questions.
+Execute
+□
+□Discuss with your sales 
+force their thoughts on 
+these questions.
+□
+□Have them bring up any 
+evidence to support their 
+answers from sales calls, 
+dashboards, emails, and 
+so on.
+□
+□Thank them for their 
+time to help improve the 
+experience.
+Analyze
+□
+□Update your Value 
+Proposition Canvas based 
+on your findings.
+□
+□Use what you’ve learned 
+to identify experiments to 
+improve fit.
+OVERVIEW
+sales force feedback
+data analysis
+
+
+140
+EXPERIMENTS
+discovery
+Cost 
+Cost is relatively cheap, with much of it 
+focused around collecting the data in a 
+usable way from your existing sales force. 
+The analysis of the sale force feedback data 
+can be done without expensive software or 
+consultants.
+ 
+Setup Time 
+Setup time to sort through sales force feed-
+back is relatively short. You’ll need to define 
+the time period you’ll analyze and what you 
+are specifically looking for in the feedback. 
+ 
+ 
+Run Time 
+Run time for analyzing sales force feedback 
+is also relatively short once you set it up. 
+You’ll want to look for patterns of unmet 
+jobs, pains, and gains.
+ 
+Evidence Strength
+ 
+# of near misses 
+Near miss feedback 
+When your sales group has successfully 
+closed, what almost prevented the sale from 
+occurring? You’ll want to log how many sales 
+were almost lost and what customers had 
+to say about what “almost prevented them 
+from purchasing” to better understand fit. 
+	
+Customer feedback on why they almost 
+didn’t purchase, but ultimately did, is a gold 
+mine of relatively strong evidence. It’s stron-
+ger than most feedback because they’ve 
+just converted. 
+ 
+ 
+Types of feature requests 
+Look for a pattern in the top three features 
+requested in the sales process and what 
+pains and underlying jobs they could solve. 
+	
+Feature requests are relatively weak 
+evidence, in that you’ll need to perform more 
+experiments around the underlying job or 
+pain the proposed feature is intended to 
+solve.
+Capabilities 
+Research / Data 
+You’ll need to be able to gather, sort, and 
+analyze sales force feedback. In doing so, 
+it’ll help to be able to understand how sales 
+operate and what questions you’ll want to 
+answer.
+Requirements 
+Sales Force Data 
+The most important requirement for ana-
+lyzing sales force feedback is having an 
+engaged sales force that can either provide 
+feedback to you in verbal form or through 
+the customer relationship management 
+(CRM) software.
+DETAILS
+
+
+141
+Customer Interviews 
+p. 106 
+Use the notes from your inter-
+views to inform the search for 
+unmet jobs, pains, and gains 
+in the sales force feedback.
+Buy a Feature  
+p. 226  
+Invite those people who did 
+not convert to participate in 
+an exercise to better under-
+stand the features they need.
+Validation Survey  
+p. 278 
+Use survey findings to inform 
+the search for unmet jobs, 
+pains, and gains in the sales 
+force feedback.
+Split Test  
+p. 270 
+Run a Split Test in your sales 
+process to test out different 
+versions of your value propo-
+sition to customers.
+Expert Stakeholder 
+Interviews  
+p. 115 
+Use the notes from stake-
+holders to better understand 
+if their needs translate into 
+sales.
+Sales Force Feedback
+PAIRINGS
+Before
+After
+sales force feedback
+data analysis
+
+
+142
+EXPERIMENTS
+discovery
+DISCOVERY / DATA ANALYSIS
+Customer Support Analysis
+The use of customer support data to uncover unmet jobs, pains,  
+and gains in your product or service.
+COST
+SETUP TIME
+CAPABILITIES  Sales / Marketing / Research / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Customer support analysis is ideal for businesses that already 
+have a substantial amount of existing customers.
+
+
+143
+Prepare
+□
+□Identify the questions you’d 
+like answered from your 
+customer support data:
+• Are you are solving for top 
+customer jobs?
+• Are you addressing major 
+customer pains?
+• Are you creating customer 
+gains?
+□
+□Schedule sessions with your 
+customer support team to 
+answer these questions.
+Execute
+□
+□Discuss with your  
+customer support team  
+— their thoughts on these 
+questions.
+□
+□Have them bring up any 
+evidence to support their 
+answers from customer 
+support calls, dashboards, 
+emails, and so on.
+□
+□Thank them for their 
+time to help improve the 
+experience.
+Analyze
+□
+□Update your Value 
+Proposition Canvas based 
+on your findings.
+□
+□Use what you’ve learned 
+to identify experiments to 
+improve fit.
+OVERVIEW
+customer support analysis
+data analysis
+
+
+144
+EXPERIMENTS
+discovery
+Cost 
+Cost is relatively cheap, in that most of the 
+cost is incurred by simply gathering the 
+customer data over time. The analysis of 
+that data can be done without expensive 
+software or consultants.
+ 
+Setup Time 
+Setup time for customer support analysis 
+is relatively short once you have the data. 
+You’ll need to define the time period you’ll 
+analyze and what you are specifically  
+looking for in the data. 
+ 
+ 
+Run Time 
+Run time for customer support analysis is 
+also relatively short once you have the data 
+and have defined what you are looking for in 
+the data. You’ll want to look for patterns of 
+unmet jobs, pains, and gains.
+ 
+Evidence Strength
+ 
+Customer feedback 
+Customer quotes during customer  
+support calls that refer to jobs they are  
+trying to accomplish, pains they feel  
+aren’t addressed, and unmet gains. 
+	
+Customer feedback in customer sup-
+port data is relatively weak evidence on 
+its own, but can be used to inform future 
+experiments.
+ 
+Types of feature requests 
+Look for a pattern in the top three features 
+requested and what pains and underlying 
+jobs they could solve. 
+	
+Feature requests are relatively weak 
+evidence, in that you’ll need to perform more 
+experiments around the underlying job or 
+pain the proposed feature is intended to 
+solve.
+Capabilities 
+Research / Marketing / Sales / Data 
+You’ll need to be able to gather, sort, and 
+analyze customer support data. In doing so, 
+it’ll help to be able to understand how sales 
+operates, how your product is marketed, 
+and what questions you’ll want to answer 
+from looking at the data.
+Requirements 
+Customer Support Data 
+The most important requirement for  
+customer support analysis is already having 
+customer support data to analyze. This can 
+be in many forms, whether it is recorded 
+calls from your support team to emails or 
+bug/feature requests submitted. The data 
+you analyze should consist of more than 
+one-off, anecdotal conversations with a 
+handful of customers.
+DETAILS
+
+
+145
+Customer Interviews 
+ p. 106 
+Use the notes from your inter-
+views to inform the search for 
+unmet jobs, pains, and gains 
+in the support data.
+Web Traffic Analysis  
+p. 130  
+Use what you’ve learned from 
+the support data to check 
+against customer behavior  
+on your website.
+Validation Survey   
+p. 278 
+Use survey findings to inform 
+the search for unmet jobs, 
+pains, and gains in the sup-
+port data.
+Sales Force Feedback  
+p. 138 
+Cross reference what you’ve 
+found in customer support 
+data against feedback from 
+your sales force.
+Expert Stakeholder 
+Interviews  
+p. 115 
+Use the notes from stake-
+holders to better understand 
+if their needs translate to 
+what you are hearing from 
+customers.
+Speed Boat 
+p. 218 
+Rather than have customers 
+simply point out what they 
+feel the product lacks, invite 
+them in for a speed boat 
+exercise to better understand 
+what helps them go faster 
+and what slows them down  
+in regard to the product.
+Customer Support Analysis
+PAIRINGS
+Before
+After
+customer support analysis
+data analysis
+
+
+146
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Online ads are ideal for quickly testing your value proposition 
+at scale with customers online.
+DISCOVERY / INTEREST DISCOVERY
+Online Ad
+An online advertisement that clearly articulates a value proposition 
+for a targeted customer segment with a simple call to action.
+
+
+147
+OVERVIEW
+Finding Target Customers 
+Finding target customers online can be chal-
+lenging, but it is possible with creativity and 
+resilience. You can start thinking about this 
+early, even before your experiment design. 
+	
+For example, when creating your Value 
+Proposition Canvas, take time to brainstorm 
+different places to find your target custom-
+ers online. Then as a team, vote on the ones 
+you’d like to test first.
+What Stage Are Your Customers? 
+After prioritizing places to find your target 
+customers, you’ll want to customize your 
+approach based on the state of the cus-
+tomer. You can use Steve Blank’s model to 
+help inform your strategy for engaging with 
+customers.
+Push
+Pull
+Have the problem
+Aware 
+of the problem
+Seeking 
+a solution
+Adapted from Steve Blank, Earlyvangelists 
+online ad
+interest discovery
+
+
+148
+EXPERIMENTS
+discovery
+SOCIAL MEDIA AD 
+Prepare
+□
+□Define on which social 
+media platforms you’ll run 
+the ad.
+□
+□Create your target audience, 
+ad campaign length, and 
+budget.
+□
+□Choose CPC (cost per click) 
+option.
+□
+□Include your business name 
+and logo.
+□
+□Craft a value statement 
+from your Value Proposition 
+Canvas to properly commu-
+nicate your offering.
+□
+□Create a compelling image 
+that reinforces your value 
+statement.
+□
+□Include the destination URL 
+that directs to a landing.
+Execute
+□
+□Once approved, run your 
+social media ad.
+□
+□Monitor how it performs 
+daily with:
+• ad spend.
+• impressions.
+• click through rate.
+• comments and shares.
+Analyze
+□
+□Analyze your ad perfor-
+mance daily.
+□
+□If you are spending a large 
+amount of money for a 
+very low click through 
+rate, pause the campaign, 
+iterate on your text and 
+images, then run the cam-
+paign again.
+Push-Based Approach 
+With customers who have the problem and are aware 
+of it, you can use a push-based approach to getting 
+them into your experiments. Leverage advertising to 
+create targeted ads for them. With display advertis-
+ing you can segment people into interests and “push” 
+your experiment to them.
+OVERVIEW
+Aware 
+of the problem
+Have the problem
+
+
+149
+SEARCH ONLY AD 
+Prepare
+□
+□Define on which search plat-
+forms you’ll run the ad.
+□
+□Create your target audi-
+ence, ad campaign length, 
+and budget.
+□
+□Choose CPC (cost per click) 
+option.
+□
+□Craft a value statement 
+from your Value Proposition 
+Canvas to properly commu-
+nicate your offering.
+□
+□Include the destination URL 
+that directs to a landing 
+page.
+□
+□Craft a shorter version of 
+your value statement as a 
+value headline.
+□
+□Submit your ad for 
+approval.
+Execute
+□
+□Once approved, run your 
+search only ad.
+□
+□Monitor how it performs 
+daily with:
+• ad spend.
+• impressions.
+• click through rate.
+Analyze
+□
+□Analyze your ad perfor-
+mance daily.
+□
+□If you are spending a large 
+amount of money for a 
+very low click through 
+rate, pause the campaign, 
+iterate on your text and 
+images, then run the cam-
+paign again.
+OVERVIEW
+Pull-Based Approach 
+In contrast to push-based acquisition, you can take a 
+slightly different approach for those already seeking 
+a solution to the problem. You will need to get in front 
+of them when they are seeking it. 
+	
+Pull-based acquisition means ensuring your exper-
+iment is displayed when people go online to search 
+for a solution to their problems. Using online search 
+advertising you can narrow in on the key search terms 
+and “pull” them to your value proposition as they 
+actively seek a solution.
+Seeking 
+a solution
+online ad
+interest discovery
+
+
+150
+EXPERIMENTS
+discovery
+Cost 
+Online ads can vary in cost, depending 
+on whether you are doing display versus 
+search, the keywords, and the average 
+cost per click for your industry. Overall 
+you should stay away from very expensive 
+online ads early on in your journey. You don’t 
+want to get addicted to paid acquisition and 
+have trouble scaling your business later on.
+ 
+Setup Time 
+If your ad is text only, you can create it in 
+a few minutes. If your ad contains imagery, 
+it might take longer to find and create the 
+right image for the ad. 
+ 
+ 
+Run Time 
+Depending on the platform, it may take 
+1 – 3 days for your ad to be approved. Once 
+it’s approved, you’ll usually run your ad 
+for at least a week to see how it performs 
+day-to-day.
+ 
+Evidence Strength 
+# of unique views 
+# of clicks 
+Click through rate = clicks that your ad 
+receives divided by the number of times 
+your ad is shown. CTR varies per industry, so 
+research online to see what a comparable 
+CTR is for your product. 
+	
+Users clicking ads is a relatively weak 
+strength of evidence, but it it necessary 
+to test acquisition channels. It can also 
+be combined with conversions on a simple 
+landing page to make the evidence stronger 
+overall.
+Capabilities 
+Design / Product / Marketing 
+Running online ads is much easier than it 
+used to be, mostly because online ad plat-
+forms give you a step-by-step experience for 
+managing them. You’ll still need to be able 
+to design an ad that conveys your value 
+proposition well, with the right call to action 
+and target audience. This means you’ll need 
+product, marketing, and design skills —  
+otherwise your ads will not convert.
+Requirements 
+Destination 
+You are going to need a destination for the 
+target audience to visit once they click the 
+ad. Most of the time this is some type of 
+landing page. Platforms have become more 
+restrictive over the years, so the page will 
+need to match the overall value proposition 
+of the ad and meet the site’s ad destination 
+requirements. Be sure to review these before 
+running your ads, otherwise they’ll get 
+rejected in the approval process.
+DETAILS
+
+
+151
+Customer Interviews 
+p. 106 
+Use the notes from your inter-
+views to inform your ad copy.
+Social Media Campaign  
+p. 168  
+Use what you’ve learned from 
+online ads to inform your 
+social media campaign.
+Search Trend Analysis  
+p. 126 
+Find keywords and search 
+trends to better target your 
+audience online.
+Product Box  
+p. 214 
+Facilitate a Product Box with 
+people to better understand 
+how to communicate the 
+desired value proposition in 
+your ad.
+Simple Landing Page  
+p. 260 
+Create a simple landing page 
+to act as your destination for 
+your ads.
+Split Testing  
+p. 270 
+Try different versions of your 
+ads to see what resonates 
+best with customers.
+Online Ad
+PAIRINGS
+Before
+After
+online ad
+interest discovery
+
+
+152
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Technology / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Link tracking is ideal for testing customer actions to gather 
+quantitative data.
+DISCOVERY / INTEREST DISCOVERY
+Link Tracking
+A unique, trackable hyperlink to gain more detailed information 
+about your value proposition.
+
+
+153
+OVERVIEW
+Prepare
+□
+□Define where you are going 
+to include the link.
+□
+□Create a clear call to action 
+for the link.
+□
+□Integrate analytics to track 
+the link views and clicks.
+□
+□Create the destination that 
+will load once the customer 
+clicks the link. 
+Execute
+□
+□Make your link live and give 
+it to customers.
+□
+□Run it for several days or 
+weeks to give people time 
+to click.
+Analyze
+□
+□Calculate conversion on the 
+link click rate.
+□
+□Compare it to the behavior 
+on your destination.
+□
+□Use what you’ve learned to 
+refine and split test your 
+link copy.
+link tracking
+interest discovery
+
+
+154
+EXPERIMENTS
+discovery
+Cost 
+Link tracking is relatively cheap. Most online 
+web analytics, online ad, and email software 
+provide the ability to track unique URL links. 
+ 
+Setup Time 
+The setup time for link tracking is relatively 
+short if you use existing software. You’ll need 
+to create the links for your different digital 
+media formats. 
+ 
+ 
+Run Time 
+The run time for link tracking is usually over 
+a few weeks. It’ll take time for people to view 
+it and decide to click, or not.
+ 
+Evidence Strength 
+# of unique views 
+Click rate = percentage of people who 
+viewed your link divided by the number of 
+people who clicked on your link. 
+	
+Click rates vary by industry. Use industry 
+guidelines to determine what the average is 
+for your experiment. 
+	
+Link clicks are an average strength of 
+evidence. You’ll learn what they do, but you 
+won’t know why unless you talk to them.
+Capabilities 
+Technology / Data 
+Link tracking doesn’t require deep expertise, 
+as most software already has it included. 
+You’ll need to be able to create links with 
+tracking and interpret the results.
+Requirements 
+Call to Action 
+Link tracking isn’t going to be very success-
+ful without a clear call to action and value 
+proposition. You’ll want to clearly communi-
+cate this in your content and imagery, while 
+providing a link that brings the customer to 
+a web page.
+DETAILS
+
+
+155
+Customer Interviews 
+p. 106 
+Gather email addresses from 
+your customer interviews to 
+send a follow-up email with 
+link tracking.
+Online Ad  
+p. 146 
+Create an online ad with 
+clickable links to track click 
+through rate (CTR).
+Split Test 
+p. 270 
+Use link tracking analysis  
+to create different version  
+to Split Test.
+Simple Landing Page  
+p. 260 
+Include link tracking in your 
+landing page to understand 
+how customers who clicked 
+online ads converted on your 
+page.
+Email Campaign  
+p. 162 
+Include link tracking to 
+understand how many people 
+clicked the links in your email 
+campaign.
+Link Tracking
+PAIRINGS
+Before
+After
+link tracking
+interest discovery
+
+
+156
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Feature Stub is ideal for rapidly testing the desirability  
+of a new feature of an already existing offering.
+Feature Stub is not ideal for testing mission critical  
+functionality for your product.
+DISCOVERY / INTEREST DISCOVERY
+Feature Stub
+A small test of an upcoming feature that includes the very beginning 
+of the experience, usually in the form of a button.
+
+
+157
+OVERVIEW
+Prepare
+□
+□Decide where you are going 
+to include the Feature Stub: 
+preferably in the part of 
+your product where your 
+customers would need it 
+most in the workflow.
+□
+□	Define the length and 
+schedule for the Feature 
+Stub.
+□
+□Create the Feature Stub, 
+using the same visual 
+styling as the rest of the 
+product.
+□
+□When clicked, launch a 
+popup that states the fea-
+ture isn’t completed yet.
+□
+□Include a “learn more” link 
+to determine if people are 
+interested enough to click 
+again. Optionally, it can 
+display a survey that asks 
+how interested and has an 
+email signup.
+□
+□Integrate analytics to track 
+views and clicks.
+□
+□Implement a feature toggle 
+that allows you to quickly 
+turn it on and off. This is a 
+very important step!
+ 
+Execute
+□
+□Toggle your Feature Stub on.
+□
+□Monitor the activity usage 
+of the link very closely, by 
+the hour.
+□
+□Toggle the Feature Stub off 
+once you’ve reached the 
+end of the schedule.
+ 
+Analyze
+□
+□Calculate conversion rates 
+on your button, learn more, 
+and surveys. Did these 
+reach your success criteria?
+□
+□Review the findings with 
+your team to determine 
+whether the feature is still 
+worth pursuing.
+feature stub
+interest discovery
+
+
+158
+EXPERIMENTS
+discovery
+Cost 
+Feature Stubs are usually very cheap, since 
+you are not building out an entire feature 
+but merely the entry point for it.
+ 
+Setup Time 
+It should only take few hours to set up a 
+Feature Stub in your existing product or 
+service. If it takes longer than that, you may 
+need to rethink your architecture when it 
+comes to implementing experiments. 
+ 
+ 
+Run Time 
+Feature Stubs should never be run for more 
+than 1– 3 days. They are designed as a short 
+experiment  to quickly gather evidence. 	
+	
+Anything longer will frustrate your cus-
+tomers, since they’ll continue to expect it to 
+work.
+Evidence Strength 
+# of unique views 
+# of button clicks 
+Button % Conversion Rates 
+You can calculate the conversion rate by 
+taking the number of unique views divided 
+by button clicks = conversion rate. Aim for  
+a 15% conversion on button click. 
+	
+Button views and clicks are relatively 
+weak evidence, although they do signal 
+interest in the feature.
+ 
+# of “learn more” clicks 
+Learn More % Conversion Rates 
+You can calculate the conversion rate by 
+taking the number of unique “learn more” 
+views divided by link clicks = conversion rate. 
+Aim for a 5% conversion on learn more click. 
+	
+Clicking to learn more is a bit stronger 
+than simply closing the popup. 
+ 
+ 
+# of surveys completed 
+Survey Feedback 
+You can calculate the conversion rate by 
+taking the number of unique learn more 
+clicks divided by completions = conversion 
+rate. Aim for a 3% conversion on survey 
+completion. 
+	
+Filling out the survey from the learn more 
+link is a bit stronger than closing the popup. 
+You can learn valuable insights from people 
+voluntarily clicking on and filling out  
+a survey on a feature they'd love to see in 
+the product.
+Capabilities 
+Design / Product / Technology 
+You’ll need to be able design a button that 
+fits into the existing product. You’ll also 
+need the button to launch a window stating 
+that the feature isn’t ready yet and option-
+ally asks the customer to fill out a survey. 
+Analytics will be important — you’ll need to 
+measure its performance.
+Requirements 
+Existing Product 
+Feature Stubs require a product that 
+already has daily active users. If you don’t 
+already have one with a steady stream of 
+users, it will be difficult to gauge customer 
+interest. They have to see it in the context  
+of the product for the evidence to be 
+believable.
+Integration and Analytics 
+Feature Stubs need to be toggled off and 
+on at a moment’s notice. Make sure you 
+have this capability and that it works before 
+launching one. In addition, you’ll need ana-
+lytics to measure feature interest.
+DETAILS
+
+
+159
+Buy a Feature 
+p. 226 
+Facilitate an exercise with 
+customers to decide if  
+the feature would even be  
+a priority for them.
+Customer Support Analysis  
+p. 142 
+Analyze customer support 
+data to determine if an addi-
+tional feature could solve a 
+customer need.
+Paper Prototype  
+p. 182 
+Test low fidelity versions of 
+how the feature could function 
+with customers.
+Discussion Forums  
+p. 134 
+Search through discussion 
+forums to see if customers are 
+using creative work-arounds 
+to address your product 
+deficiencies.
+Clickable Prototype  
+p. 236 
+Test clickable prototypes of 
+how the feature could work 
+with customers.
+Feature Stub
+PAIRINGS
+Before
+After
+feature stub
+interest discovery
+
+
+160
+EXPERIMENTS
+discovery
+DISCOVERY / INTEREST DISCOVERY
+404 Test
+Another faster, and somewhat riskier, variation of a Feature Stub  
+is the 404 test. It is very similar, except you do not put anything 
+behind the button or link whatsoever. Hence, the 404 test name, as  
+it generates 404 errors each time it is clicked. To learn if a feature  
+is desirable, you simply count the number of 404 errors generated. 
+404
+VARIATION
+This variant has trade-offs 
+since, on one hand, you can 
+test something as quickly  
+as possible at scale with  
+customers. On the other hand, 
+it gives the impression that 
+your product is broken. 
+ 
+When running a 404 test,  
+do not run it for more than  
+a few hours.
+EVIDENCE STRENGTH
+SETUP TIME
+RUN TIME
+COST
+
+
+161
+Endless Meetings 
+Have you ever been in a meeting where 
+team members debated over whether a  
+feature would be a good idea to build for 
+your customers? 
+	
+Without evidence, the conversation goes 
+in circles, using only opinions for decision- 
+making. 
+	
+A Feature Stub will generate data to help 
+you gauge demand. 
+	
+What if the test is a wild success and cus-
+tomers reach out to you asking when they 
+can use the feature? It then helps break the 
+circular meetings of opinion on the feature. 
+	
+What if the test is a dud and no one even 
+clicks on it? Then it also helps move the  
+conversation forward. 
+	
+It’s not so much about being right and 
+able to gloat in the meeting to your peers 
+that your prediction was correct, but instead 
+to use data to help move the conversation 
+forward. Making progress is far more import-
+ant than being correct in these scenarios, 
+and a Feature Stub is a great way to make 
+progress.
+The notion of doing a quick test, 
+solves umpteen meetings’  
+worth of powerful debate and 
+logical argument. 
+— Stephen Kaufer, CEO of TripAdvisor
+VARIATION
+Do you need 
+to go really, 
+really fast?
+404 Test
+Don’t do it.
+Is it a  
+mission  
+critical 
+feature?
+No
+No
+Yes
+Yes
+Feature Stub
+404 test
+interest discovery
+
+
+162
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Email campaigns are ideal for quickly testing your  
+value proposition with a customer segment.
+Email campaigns are not ideal as a replacement  
+for face-to-face customer interaction.
+DISCOVERY / INTEREST DISCOVERY
+Email Campaign
+Email messages that are deployed across a specific period of time 
+to customers.
+
+
+163
+OVERVIEW
+Prepare
+□
+□Define your email  
+campaign goal.
+□
+□Create your series of “drip 
+emails” to incrementally 
+deliver value to the cus-
+tomer over a period of days 
+or weeks.
+□
+□Send test emails internally 
+to review content and 
+images.
+Execute
+□
+□Run your email campaign 
+with customers.
+□
+□Be responsive to customers 
+who reply.
+Analyze
+□
+□Analyze which emails are 
+performing best.
+□
+□What type of content is 
+driving the most opens?
+□
+□What type of content is 
+driving the most clicks?
+□
+□What type of content is driv-
+ing the most reply emails?
+□
+□Recap with your team and 
+decide what revisions you’d 
+like to make for your next 
+campaign.
+email campaign
+interest discovery
+
+
+164
+EXPERIMENTS
+discovery
+Cost 
+Email campaigns are relatively cheap: there 
+are several services that make it cost effec-
+tive to manage the creation, distribution, 
+and analysis of emails across large numbers 
+of subscribers.
+ 
+Setup Time 
+Using today’s email tools, it only takes 
+minutes to a few hours to craft an email 
+campaign. You can create auto-drip emails 
+to send on a schedule over time without 
+manually having to intervene. 
+ 
+ 
+Run Time 
+Depending on the nature of the email cam-
+paign, it can take 1 – 2 days or 3 – 4 weeks. 
+ 
+Evidence Strength 
+Opens 
+Clicks 
+Bounces 
+Unsubscribes 
+Open rate = unique clicks divided by the 
+number of unique opens. 
+ 
+Click rate = percentage of people 
+who clicked on at least one link in 
+your email message. 
+ 
+Open and click rates vary by industry. Use 
+industry guidelines to determine what the 
+average is for your experiment. They can be 
+found in most email service tools as part of 
+the reports package. 
+	
+Email opens and clicks are an average 
+strength of evidence.
+Capabilities 
+Design / Product / Marketing 
+Email campaigns are relatively easy to create 
+and manage now that many dedicated tools 
+and services exist. You’ll still need to be able 
+to write clear, coherent copy with compelling 
+images and a strong call to action. Much 
+of the formatting can be taken care of by 
+online templates.
+Requirements 
+Subscriber List 
+Email campaigns require subscribers before 
+you can effectively use them. You can 
+acquire subscribers from a number of differ-
+ent sources including:
+• Social media campaigns
+• Website signup
+• Blog posts with email signup
+• Word of mouth
+• Discussion forums
+ 
+Campaign Goal 
+Email campaigns need a goal, otherwise you 
+can’t be confident that it’s helping you make 
+progress. Goals can vary from driving traffic  
+to a page for conversions, onboarding new 
+customers, building trust, and learning cus-
+tomers needs to re-engaging existing or lost 
+customers. Create a goal before putting in 
+the effort to create the email campaign.
+DETAILS
+
+
+165
+Simple Landing Page 
+p. 260 
+Use an existing landing page 
+with an email newsletter 
+signup to gain subscribers.
+Link Tracking  
+p. 152  
+Include link tracking to deter-
+mine how many people are 
+opening and referring your 
+emails to their friends.
+Social Media Campaign  
+p. 168 
+Use social media to acquire 
+people for your email 
+newsletter.
+Split Testing  
+p. 270 
+Try testing different copy, 
+prices, and images to see 
+what converts better.
+Explainer Video  
+p. 200 
+Have an email signup at  
+the beginning of your video  
+as currency to watch it.
+Concierge  
+p. 248 
+Manually deliver on your 
+value proposition to those who 
+show interest and respond to 
+your email campaign.
+Email Campaign
+PAIRINGS
+Before
+After
+email campaign
+interest discovery

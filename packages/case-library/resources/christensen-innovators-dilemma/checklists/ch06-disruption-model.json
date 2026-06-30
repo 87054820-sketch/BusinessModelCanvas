@@ -1,0 +1,29 @@
+{
+  "chapter": "ch06-disruption-model",
+  "sourceFiles": { "en": "04-what-goes-up-cant-go-down.txt, 09-performance-provided-market-demand-and-the-product-life-cycl.txt" },
+  "concepts": [
+    { "name": "Three-Part Disruption Test", "definition": "A strict diagnostic: (1) the entrant starts in a foothold market such as low-end overserved customers or nonconsumption; (2) the initial product is inferior on mainstream performance attributes; (3) the entrant's performance trajectory improves until it can satisfy the mainstream." },
+    { "name": "Foothold Market", "definition": "The initial customer context where the entrant's different value proposition is good enough or attractive despite mainstream inferiority." },
+    { "name": "Performance Provided vs. Market Demand", "definition": "Technologies often improve faster than customers' ability to use the added performance, allowing simpler and cheaper alternatives to become good enough." }
+  ],
+  "arguments": [
+    { "claim": "If one of the three conditions is absent, the case is not disruption in Christensen's strict sense.", "evidence": "The theory distinguishes disruption from direct competition, breakthrough invention, or sustaining improvement." },
+    { "claim": "Oversupply of performance creates the opening for disruption.", "evidence": "When mainstream products exceed what customers can use, low-cost entrants with inferior but sufficient performance can compete on convenience, simplicity, price, or access." }
+  ],
+  "cases": [
+    { "name": "HDD / excavator / steel synthesis", "context": "The model generalizes across smaller disk drives, hydraulic excavators, and steel mini-mills.", "illustrates": "All three start outside mainstream demand, improve along a trajectory, and later invade mainstream markets.", "lesson": "Use the model as a diagnostic checklist, not a loose label for any fast-growing competitor." }
+  ],
+  "logicChains": [
+    { "description": "Find foothold → verify initial mainstream inferiority → compare technology-improvement trajectory to customer-demand trajectory → decide whether the entrant can become good enough before incumbents respond.", "sourceHint": "Synthesis across empirical chapters." }
+  ],
+  "terminology": [
+    { "term": "Foothold", "definition": "Initial low-end or new-market base where a disruptive entrant can survive." },
+    { "term": "Nonconsumption", "definition": "A market of people who previously lacked access, skill, money, or convenience to consume the product." },
+    { "term": "Performance oversupply", "definition": "A condition where products improve beyond what many customers can use or pay for." }
+  ],
+  "nuance": [
+    "Disruption is a process, not a moment; early entrants may look irrelevant for years.",
+    "The model is intentionally narrow; not every successful entrant is disruptive."
+  ],
+  "crossReferences": { "relatedCanvasDefIds": ["disruption-diagnosis"], "relatedStrategyFrameworkSlugs": ["disruptive-innovation"], "relatedChapters": ["ch03-hdd", "ch04-excavators", "ch05-steel", "ch09-electric-vehicles"] }
+}

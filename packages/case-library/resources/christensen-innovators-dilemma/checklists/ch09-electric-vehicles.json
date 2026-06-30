@@ -1,0 +1,29 @@
+{
+  "chapter": "ch09-electric-vehicles",
+  "sourceFiles": { "en": "10-managing-disruptive-technological-change-a-case-study.txt" },
+  "concepts": [
+    { "name": "Disruption Lens Applied Prospectively", "definition": "The electric-vehicle case uses the theory to analyze a contemporary technology before the outcome is known, showing disruption as a predictive diagnostic rather than only a historical explanation." },
+    { "name": "EV Foothold Markets", "definition": "Likely early markets are applications that value simplicity, short-range use, low emissions, or fleet routes more than highway range and refueling convenience, such as urban delivery or constrained local use." },
+    { "name": "Entrant Trajectory vs. Incumbent Metrics", "definition": "Electric vehicles may be inferior on range, speed, and refueling according to mainstream car metrics, yet improve along dimensions that could later matter widely." }
+  ],
+  "arguments": [
+    { "claim": "Good theory should help managers act before historical proof is obvious.", "evidence": "The EV chapter applies the same three-part test to a then-uncertain case rather than waiting for a complete retrospective dataset." },
+    { "claim": "EVs should not be forced first into mainstream highway commuting if their early strengths fit other jobs.", "evidence": "Disruptive strategy looks for customers who value the new attributes now, not mainstream customers who compare only with internal combustion vehicles." }
+  ],
+  "cases": [
+    { "name": "Electric Vehicles (1997 prediction)", "context": "Written when EVs were nascent and pre-Tesla, with uncertain batteries, range, and market demand.", "illustrates": "How to use foothold, initial inferiority, and improvement trajectory as a live diagnostic.", "lesson": "Apply disruption theory prospectively to choose market entry, metrics, and organizational home." }
+  ],
+  "logicChains": [
+    { "description": "Define mainstream auto metrics → identify where EVs are inferior → locate customers/jobs that value EV attributes anyway → build in that foothold → improve batteries/cost/performance → reassess mainstream invasion potential.", "sourceHint": "EV case study chapter." }
+  ],
+  "terminology": [
+    { "term": "Prospective diagnosis", "definition": "Using theory to reason about an emerging case before the market outcome is settled." },
+    { "term": "Internal combustion benchmark", "definition": "The mainstream performance frame that makes early EVs appear inferior on range, refueling, and speed." },
+    { "term": "Urban delivery foothold", "definition": "An example early application where short routes and fleet economics can make EV attributes valuable." }
+  ],
+  "nuance": [
+    "The chapter is not a guarantee that any specific EV firm will win; it is a method for asking better strategic questions.",
+    "A disruptive technology can fail if managers choose the wrong first market or force it into mainstream metrics too early."
+  ],
+  "crossReferences": { "relatedCanvasDefIds": ["disruption-diagnosis"], "relatedStrategyFrameworkSlugs": ["disruptive-innovation"], "relatedChapters": ["ch06-disruption-model", "ch08-organizational"] }
+}

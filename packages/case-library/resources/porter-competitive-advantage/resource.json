@@ -1,0 +1,48 @@
+{
+  "slug": "porter-competitive-advantage",
+  "type": "book",
+  "title": {
+    "en": "Competitive Advantage: Creating and Sustaining Superior Performance",
+    "zh": "《竞争优势：创造和维持超级绩效》"
+  },
+  "summary": {
+    "en": "Porter's 1985 follow-up — if *Competitive Strategy* asks 'what position should we take?', *Competitive Advantage* answers 'how do we sustain it?'. Introduces the value chain as a tool for diagnosing advantage at the activity level: every firm is a collection of discrete activities, and competitive advantage comes from performing them more cheaply (cost advantage) or in a uniquely valuable way (differentiation). The book also covers technology strategy, competitor selection ('good competitors'), and substitution analysis.",
+    "zh": "Porter 1985 的续作——如果说《竞争战略》问的是「我们该占据什么位置」，那么《竞争优势》回答的是「我们如何持续守住它」。引入价值链作为在活动层面诊断优势的工具：每一家公司都是一组离散活动的集合，竞争优势来自比对手更便宜地完成这些活动（成本优势）或以独特有价值的方式完成（差异化）。书中还涵盖技术战略、竞争对手选择（「好对手」）和替代分析。"
+  },
+  "recommendation": {
+    "en": "Use the value chain alongside the BMC: the BMC gives you the *what* (the business-model logic), the value chain gives you the *how* (the activity-level execution that makes the model work — or fail). Together they're the most powerful diagnostic pair in strategy. Read this after *Competitive Strategy* and before applying the `porters-value-chain` canvas to any case.",
+    "zh": "把价值链和 BMC 一起用：BMC 告诉你*什么*（商业模式的逻辑），价值链告诉你*怎么做*（让模式成立或失败的活动层面执行）。合在一起是战略领域最强大的诊断组合。建议读完《竞争战略》再读这本，然后用 `porters-value-chain` 画布分析案例。"
+  },
+  "authors": [
+    "Michael E. Porter"
+  ],
+  "publisher": "Free Press",
+  "year": 1985,
+  "tags": ["competitive-advantage", "value-chain", "cost-leadership", "differentiation", "HBS"],
+  "relatedCanvasDefIds": [
+    "porters-value-chain",
+    "business-model-canvas",
+    "business-model-environment"
+  ],
+  "relatedCaseSlugs": [
+    "swiss-private-banking",
+    "cirque-du-soleil",
+    "nucor-mini-mill-disruption"
+  ],
+  "relatedPatternSlugs": [
+    "unbundling-business-models",
+    "multi-sided-platforms"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "porters-value-chain",
+    "porters-five-forces"
+  ],
+  "sources": [
+    {
+      "label": "Michael E. Porter · Competitive Advantage: Creating and Sustaining Superior Performance · Free Press · 1985"
+    },
+    {
+      "label": "迈克尔·波特 ·《竞争优势》· 华夏出版社 / 中信出版社"
+    }
+  ]
+}

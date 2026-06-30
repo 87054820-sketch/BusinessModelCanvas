@@ -1,0 +1,30 @@
+{
+  "chapter": "ch03-hdd",
+  "sourceFiles": { "en": "01-how-can-great-firms-fail-insights-from-the-hard-disk-drive-i.txt" },
+  "concepts": [
+    { "name": "HDD as Empirical Engine", "definition": "Christensen's most complete dataset: repeated architectural transitions in the hard disk drive industry where incumbents led sustaining improvements but entrants won disruptive form-factor transitions." },
+    { "name": "Architectural Generations", "definition": "Transitions such as 14-inch to 8-inch to 5.25-inch to 3.5-inch to 2.5-inch drives changed the value proposition, customer set, and application context." },
+    { "name": "Customer-Driven Resource Allocation", "definition": "Incumbents often had the technical capability to build smaller drives, but their best customers asked for capacity, reliability, and lower cost per megabyte rather than smaller size." }
+  ],
+  "arguments": [
+    { "claim": "The HDD pattern proves disruption is structural and repeatable.", "evidence": "Across multiple generations, incumbents performed well on sustaining innovation but missed smaller form-factor disruptions because the initial markets were unattractive to their customers and margins." },
+    { "claim": "Technical capability is not enough.", "evidence": "Incumbents could prototype new drives, but resource allocation killed or delayed them when existing customers rejected them." }
+  ],
+  "cases": [
+    { "name": "Seagate and 3.5-inch drives", "context": "Seagate engineers built 3.5-inch prototypes while desktop customers wanted more capacity, not smaller drives.", "illustrates": "Customer listening can suppress disruptive projects even when engineering can deliver them.", "lesson": "Do not use mainstream-customer rejection as proof that a disruptive technology has no market." },
+    { "name": "Smaller form-factor entrants", "context": "Entrants served emerging applications such as minicomputers, PCs, laptops, and portable devices.", "illustrates": "A small market can be the right home for an initially inferior technology.", "lesson": "Find the foothold that values the new dimension." }
+  ],
+  "logicChains": [
+    { "description": "New form factor underperforms on capacity → mainstream customers reject it → incumbent shelves it → entrant sells to a smaller application → technology improves → mainstream demand catches up → incumbent is late.", "sourceHint": "HDD industry pattern." }
+  ],
+  "terminology": [
+    { "term": "Form factor", "definition": "Physical drive size and architecture that shaped which applications could use the drive." },
+    { "term": "Performance trajectory", "definition": "The rate at which a technology improves over time." },
+    { "term": "Mainstream demand trajectory", "definition": "The rate at which customers can absorb improved performance." }
+  ],
+  "nuance": [
+    "The same managers that failed at disruption often excelled at sustaining innovation.",
+    "The data matters because it turns disruption from anecdote into a repeated pattern."
+  ],
+  "crossReferences": { "relatedCaseSlugs": ["hdd-industry-disruption"], "relatedStrategyFrameworkSlugs": ["disruptive-innovation"], "relatedChapters": ["ch01-intro", "ch02-value-networks"] }
+}

@@ -1,0 +1,676 @@
+# Chapter 10: Horizontal Strategy
+
+Horizontal strategy can and should exist at the group, sector, and corporate
+level. Few ﬁrms, however, have anything but the most informal horizontal
+strategy, regardless of how thoroughly they formulate strategies for
+individual business units. Yet tangible interrelationships constitute a major
+potential source of competitive advantage. An explicit horizontal strategy
+should be at the core of group, sector, and corporate strategy.
+A new pattern of competition is emerging in many industries, driven by
+the strong trends described earlier. Competition will be among clusters of
+related business units rather than among individual business units.
+Coordinated business unit strategies and related diversiﬁcation into new
+industries will deepen and extend interrelationships. Strategic choices will
+increasingly involve a partnership of the business unit and the ﬁrm as a
+whole. Business unit managers will seek new ways to gain competitive
+advantage from being part of the diversiﬁed ﬁrm other than capital
+availability.
+Horizontal strategy cannot be left implicit or allowed to emerge on a
+bottom-up basis from business units. Firms without an explicit horizontal
+strategy will have difﬁculty resisting the strong pressures that always exist
+to undermine corporate performance by optimizing that of individual
+business units, particularly those ﬁrms with a tradition of decentralized
+decision-making. Moreover, it is a widely held fallacy that business units
+should propose and all agree on the desirability of an interrelationship for it
+to be strategically sound. This attitude is based on theories of business unit
+autonomy that developed in the 1970s. It promotes a hands-off posture by
+corporate and group executives and places the burden of identifying and
+exploiting interrelationships on business unit managers who lack the
+resources and inﬂuence to do so. Bottom-up horizontal strategy rarely ever
+happens.
+The Need for Explicit Horizontal Strategy
+Organizational structure in most ﬁrms works against achieving
+interrelationships. However, organizational impediments alone do not
+explain why related business units, proceeding independently, will rarely
+optimize the competitive position of the ﬁrm as a whole. Without a
+
+
+horizontal strategy, business units may well act in ways that reduce rather
+than enhance their ability to exploit interrelationships:
+Business units will value interrelationships differently and not agree to
+pursue them. Business units will rarely reap equal beneﬁts from an
+interrelationship because of differences in size, strategy, or industry. The
+costs of compromise required to pursue an interrelationship can differ
+among business units, as can the impact of sharing on their cost positions or
+differentiation. Some business units may rightly conclude that the costs of
+coordination and compromise outweigh the value of the interrelationship to
+them, and interrelationships of value to the ﬁrm as a whole will never be
+achieved. Large and currently successful business units often prove the most
+resistant to pursuing interrelationships, as do business units which are asked
+to transfer their know-how to others to gain intangible interrelationships.
+Business 
+unit 
+strategies 
+will 
+evolve 
+in 
+ways 
+that 
+weaken
+interrelationships. Left to formulate strategies independently, business units
+may well proceed in inconsistent directions that can make interrelationships
+more difﬁcult to achieve. For example, when two business units share a
+common buyer or channel, one may pursue a differentiation strategy while
+another evolves toward striving for a low-cost position. Though these
+strategies may well be appropriate for the business units in isolation, the
+potential interrelationships between the two units imply that the inconsistent
+strategies will confuse buyers or channels, blur the overall brand image of
+the ﬁrm in the related industries involved, and diminish opportunities to
+share a brand name and sales force. Another example is the case where two
+business units specify slightly different components even though they could
+use a common one. Independent business unit strategies will always
+undervalue beneﬁts that accrue not to them, but to the ﬁrm as a whole.
+Pricing and investment decisions taken independently may erode ﬁrm
+position. Interrelationships imply that proﬁts should be taken in some
+business units and not other related ones. For example, lowering prices in
+one business unit to boost volume can lead to lower costs in another
+business unit through increasing the overall ﬁrm purchasing power in shared
+components or raw material.1 Yet this sort of action would never be
+
+
+contemplated by business units that develop strategies independently and
+are evaluated solely by their own results. This problem cannot be solved
+through transfer pricing, because it arises even though business units do not
+buy or sell from each other.
+There is also a risk of suboptimal investment decisions if related
+business units proceed independently. For example, one business unit
+sharing a component may have buyers which are extremely price-sensitive
+while the buyers served by other business unit are not. The second business
+unit will attach little value to investments that reduce the cost of the
+common component and will allocate its resources elsewhere. The business
+unit beneﬁting greatly from cost reduction may not be able to justify the
+investment on its own.
+Business units will have a tendency to go outside to form alliances to
+achieve interrelationships available internally. Business units acting
+independently may not fully appreciate the beneﬁts of internal projects in
+areas such as shared marketing, production, technology development, and
+sourcing 
+compared 
+to 
+alliances 
+with 
+outside 
+ﬁrms. 
+Achieving
+interrelationships internally implies that all the beneﬁts accrue to the ﬁrm.
+Interrelationships achieved through coalitions with outside ﬁrms must share
+some of the beneﬁts with coalition partners. Outside alliances can also
+strengthen coalition partners that eventually emerge as competitors, and can
+lead to the diffusion of the ﬁrm’s proprietary technology. These arguments
+imply that in many instances business units should accept greater costs of
+compromise to work with sister units on an interrelationship. However,
+managers rarely see it this way. In fact, they often take the opposite view;
+they undervalue the beneﬁts to the ﬁrm as a whole and prefer to deal with
+independent ﬁrms where they have full control over the relationship. Some
+of the organizational problems that reinforce these tendencies are described
+in Chapter 11.
+Business units may ignore key potential competitors or the true
+signiﬁcance of existing competitors. As described earlier, competitor
+analyses by business units will often fail to uncover potential competitors or
+the interrelationships that are vital to their existing competitors’ relative
+
+
+positions. This narrow perspective of competitors also obscures the way in
+which competitors view an industry within their broader strategies, an
+important determinant of competitor behavior. Business units proceeding
+independently will rarely consider the ways in which their actions might
+trigger competitive response that affects sister business units.
+Transfer of know-how among generically similar business units will not
+occur. The transfer of know-how that underpins intangible interrelationships
+does not occur naturally. Business units will want to develop their own
+strategies, and believe that they know their industries the best. They can
+rarely be expected to seek out know-how elsewhere in the ﬁrm. Business
+units with the know-how will have little incentive to transfer it, particularly
+if it involves the time of some of their best people or involves proprietary
+technology that might leak out.
+Without an explicit horizontal strategy, there will be no systematic
+mechanism to identify, reinforce, and extend interrelationships. Business
+units acting independently simply do not have the same incentives to
+propose and advocate strategies based on interrelationship as do higher level
+managers with a broader perspective.
+Formulating Horizontal Strategy
+Formulating horizontal strategy involves a number of analytical steps
+that ﬂow from the framework described in Chapter 9:
+1.  Identify all tangible interrelationships. The starting point in
+formulating horizontal strategy is to identify systematically all the tangible
+interrelationships that are actually or potentially present among a ﬁrm’s
+business units. The ﬁrst step in doing so is to examine value chains of each
+business unit for actual and possible opportunities for sharing. Initially, all
+interrelationships that seem to be present should be identiﬁed; illusory or
+insigniﬁcant interrelationships can be eliminated through further analysis.
+In searching for interrelationships, the speciﬁc characteristics of value
+activities that would provide a basis for sharing must be identiﬁed. For
+example, meaningful production interrelationships must be based on
+
+
+similarities in speciﬁc production equipment or process steps rather than a
+generalized view that there are similar processes. Similarly, speciﬁc
+technologies 
+and 
+subtechnologies 
+are 
+the 
+basis 
+of 
+technology
+interrelationships, and common decision makers in buyers or channels are
+the basis of key market interrelationships.
+Diagrams like Figure 10–1 provide a simple mechanism to use in
+identifying interrelationships within a ﬁrm.
+
+
+Figure 10–1. Tangible Interrelationships in a Diversiﬁed Firm
+
+
+Each cell of the interrelationship matrix displays the interrelationships
+between a pair of business units, drawing from the types of
+interrelationships expressed in Table 9–1 in the previous chapter. If
+interrelationships are extensive, a separate matrix can be prepared for each
+type of interrelationship. The linkage diagram is another way to display
+interrelationships that may be clearer if there are a manageable number of
+business units. It allows the clustering of business units that have strong
+interrelationships, and can facilitate the visualization of groupings of units
+that could be the basis for groups or sectors. Whatever graphical tool one
+uses, interrelationships should be divided into potential interrelationships
+and those that are actually being achieved.
+There are often many different interrelationships within a diversiﬁed
+ﬁrm. Different groups of business units are frequently related in different
+ways. One group of business units may be related by their markets, while a
+different, but partially overlapping, group of business units is related in
+production. The interrelationship matrix in Figure 10–1 illustrates one such
+pattern, where business units 1, 3, and 4 have a common component and
+common raw material, while business units 1, 2, and 3 have a common
+buyer.
+In a diversiﬁed ﬁrm with many business units, a complex pattern of
+interrelationships often emerges. To simplify the analytical task of
+identifying interrelationships, it may be possible to break up a diversiﬁed
+ﬁrm into a number of clusters of business units that have many
+interrelationships among themselves, but relatively few with other clusters.
+The correspondence of such clusters to the groups or sectors that have been
+established is a subject to which I will return in Chapter 11. Where the
+interrelationships between two business units are pervasive and involve
+many signiﬁcant value activities, the business unit deﬁnitions are probably
+inappropriate. The issues in drawing business unit boundaries have been
+discussed in Chapter 7.
+2. Trace tangible interrelationships outside the boundaries of the ﬁrm. A
+ﬁrm will rarely compete in all the industries that are related to its current
+business units. Thus, it is necessary to identify interrelationships between a
+ﬁrm’s existing business units and other industries not currently in its
+portfolio. This requires that a ﬁrm examine important value activities to
+
+
+look for related industries where sharing or further sharing might be
+feasible. A ﬁrm with an effective sales force serving a particular buyer
+group, for example, should identify other products purchased by the same
+buyer group or products that ﬁt the sales force’s expertise that might be sold
+to other buyer groups. Similarly, each brand name, distribution channel,
+logistical system, technological development activity, and other important
+value activity should be probed for potential opportunities for sharing with
+other industries.
+Identifying paths of interrelationship outside a ﬁrm is a creative task, but
+one that will yield considerable beneﬁts in diversiﬁcation planning and in
+the development of defensive strategies to anticipate and block potential
+entrants. The portfolios of diversiﬁed competitors can often provide
+important clues to industries with important interrelationships to the ﬁrm’s.
+However, detecting new interrelationships not exploited by any competitor
+can be even more valuable.
+3.  Identify possible intangible interrelationships. After identifying
+tangible interrelationships, the next step is to seek out intangible
+interrelationships. This involves the isolation of value activities in which a
+ﬁrm has valuable know-how that might be useable in other business units or
+in new industries. It also requires identifying new industries in which a
+presence would lead to know-how that is valuable in the ﬁrm’s existing
+business units. Signals of potential intangible interrelationships include
+similarities in generic strategy, buyer type, or value chain conﬁguration.
+While identifying intangible interrelationships is subtle, it can be important.
+Many potential intangible interrelationships are usually present, which
+makes screening them to access their importance to competitive advantage
+an essential task.
+4.  Identify competitor interrelationships. A ﬁrm must identify all its
+multipoint competitors, potential multipoint competitors, and competitors
+pursuing different patterns of interrelationships. A diagram such as that in
+Figure 9–4 above can provide a structure for doing so. The existence of
+multipoint competitors often provides clues about the presence of
+interrelationships, and can aid in their identiﬁcation. Conversely,
+interrelationships often are useful predictors of potential new competitors,
+
+
+as described above. After the array of multipoint competitors has been
+identiﬁed from a ﬁrmwide perspective, the interrelationships within each
+important competitor’s portfolio must be charted. Often competitors have
+different interrelationships that involve different sets of businesses.
+5. Assess the importance of interrelationships to competitive advantage.
+The net competitive advantage from a tangible interrelationship is a
+function of the advantage from sharing, the costs of sharing, and the
+difﬁculty of matching the interrelationship. Shared activities must be
+measured against the corresponding activities of competitors on all three
+dimensions. The tangible interrelationships present in a diversiﬁed ﬁrm are
+often numerous. However, experience has shown that the number with
+strategic importance is likely to be relatively small. The challenge is to
+isolate the important ones, including those that involve industries in which a
+ﬁrm has no presence currently. The fact that an interrelationship is not being
+achieved is not a reliable sign that it is not important. The interrelationship
+may have been overlooked, or the costs of compromise associated with it
+may be reduced by making business unit strategies more consistent.
+Intangible interrelationships lead to competitive advantage if the beneﬁts
+of transferring know-how exceed the cost of transferring it. Transferring
+know-how is beneﬁcial if the similarities among value activities are
+signiﬁcant, the activities are important to competitive advantage in the
+industries involved, and the ﬁrm has know-how that can materially enhance
+competitive advantage if it is transferred. Experience suggests that
+skepticism is warranted in assessing intangible interrelationships to avoid
+pursuing intellectually plausible but practically useless similarities among
+businesses.
+6. Develop a coordinated horizontal strategy to achieve and enhance the
+most important interrelationships. Important interrelationships can be
+achieved or enhanced in a variety of ways.
+Share Appropriate Value Activities. Value activities of related business
+units should be shared if the beneﬁts exceed the costs. This may involve
+measures such as combining sales forces, rationalizing manufacturing
+facilities, coordinating procurement, and rebranding product lines. Sharing
+
+
+will always require some adjustments to current practices. Business unit
+strategies may need to be modiﬁed to gain maximum advantage from
+sharing. Similarly, activities may have to be redesigned to reduce the cost of
+compromise.
+Coordinate Strategic Postures of Related Business Units. The strategies
+of related business units should be coordinated to increase the competitive
+advantage of interrelationships and reduce the costs of compromise. This
+can involve everything from minor adjustments of business unit strategies to
+major repositionings, including acquisitions and divestitures. The
+coordination of strategies requires that marketing programs and investment
+spending plans are consistent, and that business units are aware of each
+other’s plans in product development and other important areas.
+Coordination also implies that actions toward competitors are part of an
+integrated group, sector, or corporate battle plan. Market interrelationships
+often create the greatest need for consistent business unit strategies, in order
+to gain the maximum impact with common customers or channels.
+However, a degree of consistency is required for achieving and exploiting
+any form of interrelationship. Coordinating business units can involve
+difﬁcult tradeoffs between enhancing interrelationships and the position of
+individual business units. These tradeoffs are often difﬁcult. However
+without a horizontal strategy they will rarely even be considered regardless
+of the beneﬁts to the ﬁrm.
+Distinguish the Goals of Business Units. The goals of business units
+should be set to reﬂect the role of business units in interrelationships. Some
+business units, for example, might be given more ambitious sales targets but
+lower proﬁt goals because of the contribution of their volume to the position
+of other business units. Asking all business units to meet the same goals
+may seem to be the “fairest” solution, but it also threatens to undermine
+some important sources of competitive advantage.
+Business unit goals that reﬂect interrelationships are broader than those
+prescribed in portfolio planning techniques, commonly involving mandates
+such as build, hold, or harvest. Portfolio models typically ignore
+interrelationships, and set different goals for business units only in the sense
+that some business units are expected to generate cash while other are
+
+
+expected to use it. Interrelationships provide a broader perspective of
+corporate strategy based on competitive advantage, within which cash ﬂow
+considerations are subsumed.
+Coordinate Offensive and Defensive Strategies Against Multipoint
+Competitors and Competitors with Different Interrelationships. There must
+be an overall ﬁrm game plan for dealing with each signiﬁcant multipoint
+competitor and each competitor with a different pattern of interrelationships
+that could be threatening. Ideally, a ﬁrm should seek to promote industry
+evolution in directions that increase the value of its interrelationships and
+compromise the value of competitors. More speciﬁc options for offensive
+and defensive strategy are discussed in Chapters 14 and 15.
+Exploit Important Intangible Interrelationships through Formal
+Programs for Exchanging Know-How. A ﬁrm must actively encourage the
+transfer of know-how among business units with potentially important
+generic similarities. Receiving business units may not be receptive because
+of “not invented here” problems, and business units asked to transfer
+expertise may resent the commitment of time and people involved.
+Achieving intangible interrelationships will require a shared understanding
+of their value, and organizational mechanisms to facilitate the transference
+of know-how.
+Diversify to Strengthen Important Interrelationships or Create New
+Ones. Diversiﬁcation strategy should focus on ﬁnding and entering new
+businesses that reinforce the most important interrelationships or creating
+new interrelationships of high strategic importance. Diversiﬁcation strategy
+will be treated in the next section.
+Sell Business Units That Do Not Have Signiﬁcant Interrelationships with
+Others or That Make the Achievement of Important Interrelationships More
+Difﬁcult. Business units that have no important interrelationships to others
+in a ﬁrm or are not likely bases of further diversiﬁcation are candidates for
+sale in the long term. Even if they are attractive and proﬁtable, such
+business units will be worth as much or even more to other owners, since
+being part of the ﬁrm does not enhance their competitive advantage and
+
+
+being part of another ﬁrm might. A ﬁrm can thus be in a position to recover
+the full value to it or more of such business units by selling them. The
+proceeds can then be invested in business units where interrelationships can
+enhance competitive advantage. Practical considerations mean that such a
+strategy may have to be implemented over the long-term, however. Buyers
+that recognize the value of a business unit may not be easy to ﬁnd, and it
+may be hard to replace a highly proﬁtable, albeit unrelated business unit
+with an equally attractive one, no matter how great the potential
+interrelationships might be.
+The presence of some marginally related business units may make it
+more difﬁcult to achieve other, more important interrelationships. They, too,
+are candidates for sale. A ﬁrm may be less able to build a shared
+distribution channel, for example, if it has another business unit that uses a
+different and competing channel to reach the same buyer group. Similarly, a
+ﬁrm may be less able to exploit opportunities for sharing a sales force and
+marketing to reach a particular buyer group if it has a business unit in the
+buyer group’s industry that competes with it. Interrelationships may create
+conﬂicts with buyers, suppliers, or channels. American Express has
+experienced this as it increasingly competes with banks which are also a
+key outlet for its travelers checks. Unlocking some interrelationships, then,
+may require a ﬁrm to get out of some industries.
+When there are several patterns of interrelationships within a ﬁrm
+involving different groups of business units, taking some of the steps noted
+above may involve tradeoffs. Coordinating strategic postures to facilitate
+one type of interrelationship can reduce the ability to achieve another.
+Distinguishing business unit goals can lead to the same sort of tradeoff.
+Where such tradeoffs exist, the principle must be to reinforce those
+interrelationships that have the greatest impact on competitive advantage,
+even at the expense of others. However, organizational mechanisms
+described in the next chapter can often allow interrelationships among
+different groups of business units to be achieved simultaneously.
+7. 
+Create 
+horizontal 
+organizational 
+mechanisms 
+to 
+assure
+implementation. Firms cannot successfully exploit interrelationships
+
+
+without a horizontal organizational structure that encourages coordination
+and transfers skills across business unit lines. Such tasks as deﬁning the
+right business units, clustering them into the proper groups and sectors, and
+establishing incentives for business unit managers to work together are vital
+to success. The principles of horizontal organization are the subject of
+Chapter 11.
+Interrelationships and Diversiﬁcation Strategy
+Diversiﬁcation based on interrelationships is the form of diversiﬁcation
+with the greatest likelihood of increasing competitive advantage in existing
+industries or leading to sustainable competitive advantage in new industries.
+Both tangible and intangible interrelationships have an important role in
+diversiﬁcation strategy. Tangible interrelationships should be the starting
+point for formulating diversiﬁcation strategy. Intangible interrelationships
+have a less certain effect on competitive advantage and are more difﬁcult to
+achieve in practice than tangible interrelationships.
+Interrelationships can allow a ﬁrm diversifying through internal
+development to overcome entry barriers into a new industry more cheaply
+than other potential entrants that lack them.2 The presence of
+interrelationships also facilitates entry through acquisition because an
+acquisition candidate will have greater value to the ﬁrm than it does to its
+present owners or to other bidders without similar interrelationships. Hence
+proﬁts associated with the acquisition are less likely to be bid away in
+setting the purchase price. The presence of interrelationships also means
+that diversiﬁcation through either an acquisition or internal development
+will beneﬁt existing business units that have interrelationships with the new
+business unit.
+Any diversiﬁcation move must also pass the test of structural
+attractiveness (Chapter 1). Industries that are related to a ﬁrm’s existing
+business units are not more structurally attractive simply because of their
+relatedness. A new business unit must be in an industry that is actually or
+potentially structurally attractive. The presence of interrelationships per se
+is not sufﬁcient justiﬁcation for entering an industry unless they allow a
+ﬁrm to transform an unattractive industry into an attractive one. Thus
+seeking industries with both an attractive structure and interrelationships
+
+
+that will yield the ﬁrm a competitive advantage in competing in those
+industries are the dual guides to diversiﬁcation strategy.
+Diversiﬁcation Based on Tangible Interrelationships
+Diversiﬁcation strategy can seek to extend any of the types of tangible
+interrelationships described in Table 9–1. The most desirable directions for
+diversiﬁcation are those that lead to interrelationships offering the greatest
+impact on competitive advantage, using the criteria described earlier. In
+some cases, diversiﬁcation will strengthen a ﬁrm’s position against key
+competitors, while in others it will be dictated by the need to match
+competitors’ diversiﬁcation defensively. A ﬁrm may also enter industries
+where it can use interrelationships to overwhelm single-business
+competitors or competitors with poorly conceived arrays of business units.
+The beneﬁts of tangible interrelationships can ﬂow in two directions. It is
+just as valuable to pursue interrelationships that enhance the position of
+existing units as it is to use existing unit positions to improve new business
+units.
+Three of the broad types of tangible interrelationships shown in Table 9–
+1—market, 
+production, 
+and 
+technological—represent 
+three 
+broad
+diversiﬁcation avenues. A market-oriented diversiﬁcation strategy aims to
+sell new products to common buyers, channels, or geographic markets in
+order to reap the beneﬁts of market interrelationships. A production-
+oriented diversiﬁcation strategy aims to produce similar products with
+shared production value activities. Procurement interrelationships often
+stem 
+from 
+production 
+interrelationships. 
+A 
+technology-oriented
+diversiﬁcation strategy aims to develop or enter new industries based on
+similar core technologies, that involve products sold to either existing or
+new markets. The successful Japanese typewriter ﬁrm Brother, for example,
+uses its “technology tree” in driving diversiﬁcation. Brother has built on
+technologies developed in one business to enter another. Small motor
+technology from the original sewing machine business led to entering small
+appliances and electric typewriters, while electronics expertise gained in
+typewriters has led to entering electronic printers.
+
+
+These three broad diversiﬁcation paths often lead a ﬁrm in different
+directions. Broadening the range of products sold to common buyers,
+channels or geographic areas often involves different technologies and
+production processes, while broadening the range of products with similar
+technologies or production processes implies getting into new markets. This
+is not always true, however. In consumer electronics, for example, ﬁrms
+such as Sony and Matsushita have diversiﬁed into new products with
+technology shared with their existing products. Opportunities also existed at
+the same time for market and production interrelationships. Sony and
+Matsushita (Panasonic) have each developed shared value activities such as
+brand names, service organizations, plants, and procurement across wide
+product lines. Interrelationships, in fact, are one of their primary sources of
+competitive advantage. Another example is Black and Decker’s entry into
+small appliances, which exploits technological interrelationships and
+production interrelationships involving small electric motors used in its core
+business, power tools.
+Diversiﬁcation will offer the greatest potential for enhancing overall ﬁrm
+position when several important value activities can be shared. The most
+successful diversiﬁers do not view market-, production-, and technology-
+oriented diversiﬁcation as mutually exclusive, but seek ways to combine
+them. In my study of interrelationships in 75 Fortune 500 companies in
+1971 and 1981 described in Chapter 9, high-technology companies showed
+the greatest ability to increase interrelationships in markets, production, and
+technology simultaneously. This ﬁnding is consistent with the role of
+electronics/information processing technology in linking industries together.
+As technology develops, ﬁrms should be able to ﬁnd more avenues for
+diversiﬁcation where multiple forms of interrelationships can be exploited.
+Diversiﬁcation Through Beachheads
+Firms will differ in their ability to achieve important interrelationships
+through diversiﬁcation. The opportunities a ﬁrm has may be limited by a
+number of factors:
+
+
+•  The existing mix of business units in the ﬁrm may enjoy few
+meaningful interrelationships with other industries.
+• The signiﬁcant interrelationships may have already been exploited.
+•  The industries that are related to a ﬁrm’s existing industries may be
+structurally unattractive.
+• No feasible strategy may exist for entering related industries because
+competitors have preempted.
+• Antitrust considerations preclude entry into some related industries.
+When opportunities to diversify along tangible interrelationships are few
+or exhausted, a ﬁrm should consider diversiﬁcation based on intangible
+interrelationships. 
+Since 
+intangible 
+interrelationships 
+involve 
+the
+transference of generic skills and not actual sharing of activities, there will
+usually be more industries with potential intangible interrelationships to
+existing business units than industries with tangible interrelationships.
+Finding opportunities in which intangible interrelationships will lead to
+competitive advantage is a subtle process, though, because it requires that a
+ﬁrm understand a new industry well enough to see how transference of
+skills will really make a difference.
+Generic similarity of a new industry to an existing industry does not
+itself imply that transference of skills will create competitive advantage.
+Competitors in the new industry can have equal or superior skills
+themselves. The relevance of a ﬁrm’s skills in a new industry must also be
+questioned, and superﬁcial analyses of generic similarities can be very
+misleading. Basing diversiﬁcation on imagined or irrelevant generic
+similarities among industries led to the failure of diversiﬁcation strategies in
+the 1960s and 1970s. All these caveats aside, however, careful industry
+analyses can uncover new industries in which intangible interrelationships
+are a sound basis for diversiﬁcation.
+Diversiﬁcation based on intangible interrelationships should be viewed
+not only as a stand-alone opportunity, however, but also as a potential
+beachhead. Once a ﬁrm enters a new industry based on intangible
+interrelationships, it can then use this beachhead to spawn new
+opportunities for diversiﬁcation based on tangible interrelationships. A
+good example is Procter & Gamble’s initial acquisition of Charmin Paper
+Company, a beachhead which allowed Procter & Gamble to build the highly
+
+
+interrelated cluster of paper products business units described earlier. Figure
+10–2 illustrates schematically the process of diversifying through
+beachheads. An intangible interrelationship with the original cluster of
+tangibly related business units becomes the foundation for a new cluster.
+The diversiﬁed ﬁrm emerges as a number of clusters of business units
+related by tangible interrelationships, with the clusters related by intangible
+interrelationships. A key test of diversiﬁcation opportunities based on
+intangible interrelationships, therefore, is their potential as a beachhead.
+Figure 10–2. Interrelationships and the Pattern of Diversiﬁcation
+Diversiﬁcation and Corporate Resources
+The unique corporate assets of a diversiﬁed ﬁrm are the existing and
+potential interrelationships that reside in the value chains of its business
+units. These interrelationships represent the major contribution of a
+diversiﬁed ﬁrm to its business units, and to the new industries it might enter.
+The central role of the diversiﬁed ﬁrm is to nurture and expand these
+interrelationships.
+
+
+Diversiﬁcation is a means to widen a ﬁrm’s stock of assets and skills by
+expanding the perimeter of the value activities in which it participates. Each
+new industry not only may be related to existing ones, but also may bring
+value activities to the ﬁrm that are the sources of new interrelationships. The
+best diversiﬁcation is that which does both—it reinforces the ﬁrm’s existing
+strengths and creates the basis for new ones.
+Pitfalls in Horizontal Strategy
+Although substantial competitive advantages can be gained from
+harnessing interrelationships, pitfalls exist in implementing horizontal
+strategy. The most serious pitfall is to ignore interrelationships altogether.
+Strategic planning solely done by business units is not enough. At the same
+time, however, it can be an equally big mistake to assume that every
+relationship should be pursued.
+Pitfalls in Ignoring Interrelationships
+This chapter and Chapter 9 have raised numerous pitfalls that result from
+ignoring interrelationships. A few notable ones are mentioned here:
+Misreading the Strategic Contributions of Business Units. A ﬁrm that
+fails to understand interrelationships will measure business unit
+performance on a stand-alone basis. It may, in the process, encourage units
+to take actions that will undermine interrelationships and erode overall ﬁrm
+position.
+Misreading Position Vis-à-vis Key Competitors. A ﬁrm that plans only at
+the business unit level will fail to diagnose its position vis-à-vis key
+diversiﬁed competitors. It will also fail to formulate moves against them
+that enhance overall ﬁrm position.
+Portfolio Management. The presence of interrelationships, particularly
+tangible interrelationships, limits the usefulness of portfolio planning
+models as they are usually applied. Portfolio planning models are narrowly
+conceived tools designed to aid a diversiﬁed corporation in achieving a
+
+
+ﬁnancially balanced portfolio. In doing so, they may obscure the most
+essential strategic issue in constructing a ﬁrm’s portfolio of businesses—the
+creation and enhancement of interrelationships. When interrelationships
+exist, decisions to build or harvest business units cannot be made
+independently. The use of portfolio tools is particularly dangerous at the
+group or sector level, because business units within a group or sector tend to
+have tangible interrelationships and need to be managed accordingly.
+Corporate, sector, and group executives must not mistake portfolio
+planning for horizontal strategy. Horizontal strategy is more difﬁcult to
+formulate than portfolio strategy, but is the way a diversiﬁed ﬁrm creates
+true economic beneﬁts for its business units.
+Pitfalls in Pursuing Interrelationships
+It can be equally risky to pursue interrelationships indiscriminately:
+Negative Leverage from Sharing or Transfering Know-how. Tangible
+interrelationships usually involve some compromise in the strategies of the
+business 
+units 
+involved. 
+Because 
+of 
+this, 
+pursuing 
+ill-chosen
+interrelationships can harm all the involved business units for little net
+strategic gain. Transferring know-how also involves costs, and transferring
+know-how that is in fact inappropriate to competition in another business
+unit in the name of supposed intangible interrelationships can also do great
+harm. There must be clear potential net beneﬁts of sharing or transfer of
+know-how for the related business units in order for an interrelationship to
+be strategically desirable.
+Pursuing Interrelationships Involving Value Activities That Are Small,
+Have Few Scale or Learning Economies, or Have Little Effect on
+Differentiation. In their zeal to build a related diversiﬁcation strategy, ﬁrms
+can fall into the trap of making too much of an interrelationship that, while
+indeed present, has little competitive signiﬁcance. The presence of an
+interrelationship does not imply that a horizontal strategy should be built
+around it, even if it is the only one available.
+
+
+Illusory Interrelatedness. Often superﬁcial similarities in technologies,
+logistical systems, fabrication processes, and buyer groups are not, in fact, a
+basis for shared activities. A technology that appears similar in two business
+units may, upon closer scrutiny, be sold to buyers with very different needs
+that compromise the ability to employ a shared R&D organization. Despite
+the apparent similarity to outsiders between offshore drilling for oil and
+onshore drilling, for example, few activities in fact can be shared by drilling
+contractors. Intangible interrelationships can also be illusory. There are
+many generic similarities among business units that are not important for
+competition. Potential interrelationships should be scrutinized carefully
+before being translated into shared activities or altered strategies, to prevent
+discovering the lack of compatibility through a failure.
+
+
+11
+Achieving Interrelationships
+Achieving interrelationships in practice has proven to be extraordinarily
+difﬁcult for many ﬁrms. Part of the reason is that the costs of sharing mean
+that some interrelationships do not enhance competitive advantage and
+should not be implemented. Even for interrelationships that clearly create
+competitive advantage, however, a formidable array of organizational
+impediments work against achieving them in practice, ranging from
+organizational structure to cultural and managerial factors. In fact,
+achieving interrelationships among business units contradicts the
+philosophy prevailing in many diversiﬁed ﬁrms.1
+Most major diversiﬁed ﬁrms have decentralized into business units with
+proﬁt responsibility, embracing the principle of autonomy. Some ﬁrms
+practice decentralization with near-religious devotion. Uncontrolled
+decentralization, however, undermines the pursuit of interrelationships by
+encouraging business unit managers to pursue strategies that maximize unit
+performance and not the corporations. Moreover, portfolio planning
+techniques have reinforced the view of business units as unconnected cash
+generators or users. Many other organizational practices typical of large
+diversiﬁed ﬁrms also work against interrelationships, such as incentive
+plans and transfer pricing policies. The organizational difﬁculties of
+achieving even clearly beneﬁcial interrelationships is perhaps the single
+biggest reason many managers have rejected the concept of synergy.
+Any treatment of strategic interrelationships among business units must
+confront the difﬁculties of actually achieving them or horizontal strategies
+will fail.2 Throughout this chapter, I will make the assumption that a ﬁrm

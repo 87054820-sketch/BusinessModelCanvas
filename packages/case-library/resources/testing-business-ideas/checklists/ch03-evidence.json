@@ -1,0 +1,39 @@
+{
+  "chapter": "ch03-evidence",
+  "sourceFiles": { "en": "02-BlandDavidJOste_2020_Experiment_TestingBusinessIdeas.txt" },
+  "concepts": [
+    { "name": "Evidence", "definition": "Data generated from experiments or collected in the field that supports or refutes a business hypothesis. Evidence may be quotes, behaviors, conversion rates, orders, purchases, or other data, and can range from weak to strong." },
+    { "name": "Strength of Evidence", "definition": "The reliability with which evidence supports or refutes a hypothesis. Stronger evidence is based on facts rather than opinions, what people do rather than say, real-world settings rather than lab settings, and large investments rather than small investments." },
+    { "name": "Insights", "definition": "What the team learns from studying evidence. Insights connect evidence to the validity of a hypothesis, reveal new directions, and become the foundation for informed business decisions and action." },
+    { "name": "Confidence Level", "definition": "How much the team believes evidence is strong enough to support or refute a specific hypothesis. It depends on evidence type/strength, the number of data points per experiment, and the number/type of experiments run for the same hypothesis." },
+    { "name": "Learning Card", "definition": "A structured capture tool that turns test results into learning: We believed..., We observed..., From that we learned..., Therefore we will...." }
+  ],
+  "arguments": [
+    { "claim": "The output of an experiment is not pass/fail; it is evidence that must be analyzed into insight.", "evidence": "The source explicitly says evidence does not speak on its own. Teams must gather evidence from different experiments, distinguish strong from weak signals, and extract insights that support or refute hypotheses." },
+    { "claim": "What people do in the real world is stronger than what they say in an interview or survey.", "evidence": "Evidence strength rises from opinions to facts, say to do, lab setting to real-world setting, and small investment to large investment such as pre-purchasing or putting professional reputation at stake." },
+    { "claim": "Confidence should rise through multiple experiments with increasing evidence strength, not through repeated weak tests alone.", "evidence": "The book contrasts a quote from an interview with a simulated purchase, and recommends moving from interviews to survey to simulated sale for the same hypothesis." }
+  ],
+  "cases": [
+    { "name": "Science-kit customer interviews", "context": "The team interviews 20 millennial parents about science project needs.", "illustrates": "Quotes reveal jobs, pains, gains, and willingness-to-pay language, but remain relatively weak because they are what people say.", "lesson": "Use interview evidence to discover patterns and design later tests, not to claim validated demand." },
+    { "name": "Search trend data", "context": "The team analyzes search volume for phrases like 'science fair ideas' and grade-specific science fair searches.", "illustrates": "Search behavior is more factual than stated interest and can reveal whether demand exists at useful scale.", "lesson": "Behavioral data can correct or sharpen interview insights before higher-cost tests." },
+    { "name": "Concierge science-kit data", "context": "The team manually curates kits for 20 children and measures time, cost, shipping, and satisfaction.", "illustrates": "Concierge evidence moves from opinions toward behavior and operational reality, showing satisfaction as well as creation/shipping economics.", "lesson": "Evidence should reduce both desirability and feasibility/viability uncertainty." }
+  ],
+  "logicChains": [
+    { "description": "Run experiment → collect raw evidence → classify evidence strength → synthesize insights → update confidence level → decide whether to persevere, pivot, kill, or run a stronger experiment.", "sourceHint": "Learn section: Analyze Evidence, Gain Insights, Confidence Level." }
+  ],
+  "terminology": [
+    { "term": "Weak evidence", "definition": "Opinions, stated intentions, lab behavior, or small investments, such as someone saying 'I would buy' or signing up for updates." },
+    { "term": "Strong evidence", "definition": "Facts, observable behavior, real-world action, or large commitments such as pre-purchase, payment, or reputational risk." },
+    { "term": "Very Confident / Somewhat Confident / Not Really Confident / Not Confident at All", "definition": "Four confidence bands: very confident requires several experiments including at least one strong call-to-action; low confidence applies when the team has only one weak experiment like interviews or surveys." }
+  ],
+  "nuance": [
+    "Evidence is not neutral until interpreted; the team must separate looking at data from looking for the learning that matters.",
+    "More data points are not automatically better if the evidence type is weak or the setting is artificial.",
+    "Learning that refutes a hypothesis is success if it prevents building the wrong thing."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["evidence-scorecard", "experiment-canvas"],
+    "relatedExperimentSlugs": ["customer-interview", "online-survey", "search-trend-analysis", "concierge", "smoke-test", "pre-sale"],
+    "relatedChapters": ["ch02-test", "ch04-manage"]
+  }
+}

@@ -1,0 +1,799 @@
+# 10. Strategy: How Platforms Change Competition
+
+Westerners who had not obsessively followed the world of e-commerce had
+never heard of the company. Those who had were mainly familiar with it
+through its connection with the floundering Yahoo, which owned a
+significant stake in Alibaba. Much U.S. coverage of the Alibaba story was
+vaguely dismissive, treating the company’s amazing growth and impressive
+size as fluky results of the sheer vastness and parochialism of the Chinese
+market and the impact of government protectionism.
+A 2010 story in the New York Times was typical. Reporter David
+Barboza acknowledged Alibaba as one of several “fast-growing local firms
+that are making huge profits” through online sales. But in the future,
+Barboza wrote, “China’s Internet market could increasingly resemble a
+lucrative, walled-off bazaar, experts say. Those homegrown successes …
+could have trouble becoming global brands.” Barboza quotes one analyst as
+predicting, “When the Chinese companies go outside of China, they will
+find that they fail to understand their competitors as well as they did when
+they were competing in China.”3
+By the summer of 2014, with Alibaba’s U.S. stock debut just weeks
+away, U.S. business analysts were singing a different tune. In Businessweek,
+Brad Stone warned of “the Alibaba invasion” and explained how the
+Chinese giant was suddenly posing the first ever significant threat to U.S.
+domination of the Internet. Stone recounted how Alibaba had outcompeted
+eBay in China, had become a huge source of Chinese goods for businesses
+around the world, had successfully opened the Chinese consumer market
+for global companies such as Nike and Apple, and was quickly building the
+infrastructure to challenge Amazon and eBay in their own home market—
+the U.S. Stone concluded, “China’s Web entrepreneurs are positioning
+themselves to compete in—and win—the race to build the first truly global
+online marketplace.”4
+In most traditional industries, such a rapid emergence from relative
+obscurity to global leadership would be virtually impossible. Glancing back
+at business history, we see that it took American businesses in industries
+like steel and heavy machinery decades to overtake once-dominant rivals in
+Britain and Germany. After World War Two, Japanese upstarts required
+three decades to seize leadership roles in auto making and electronics from
+industry leaders in the U.S. But Alibaba today has the potential to outstrip
+companies like eBay and Amazon a decade or so after entering the battle for
+platform marketplace dominance.
+
+
+How did it happen?
+As with most big business stories, there are many contributing elements
+in the Alibaba saga, including the strategic insights of CEO Jack Ma, the
+explosive growth of China’s middle class, and, yes, government-imposed
+restrictions on foreign companies operating in China, which gave Alibaba a
+bit of space to grow without being crushed by American competitors. But
+the swiftness of Alibaba’s ascent is largely a function of the new realities of
+platform competition.5
+Explosive network effects and strong economies of scale enabled this
+relatively new company to expand so rapidly on the stage of international
+commerce. Alibaba.com, one of five major businesses operating under the
+corporate umbrella, allows companies around the world to source goods,
+products, and parts from Chinese manufacturers. One California cosmetics
+maker marvels that, through Alibaba.com, “I have access to hundreds of
+suppliers at my fingertips.” Conversely, Tmall, another Alibaba subsidiary,
+sells foreign goods to millions of Chinese consumers, bypassing the
+country’s traditional broker system, which slowed imports and added layers
+of paperwork and cost. One U.S. shoe retailer says Alibaba “has
+compressed the whole middle layer of retail.” The result is near-frictionless
+cross-border trading that connects thousands of merchants with millions of
+customers—a phenomenon scarcely imaginable before the advent of the
+platform.
+Furthermore, Alibaba is shrewdly leveraging another enormous
+competitive strength of platforms—the ability to seamlessly incorporate the
+resources and connections of outside partners into the activities and
+capabilities of the platform. For example, to expand its ability to offer U.S.
+goods to Chinese consumers, Alibaba has now forged a partnership with
+ShopRunner, a U.S.-based logistics company in which Alibaba owns a
+stake. ShopRunner already has arrangements with U.S. brands including
+Neiman Marcus and Toys“R”Us that enable Alibaba to ship American
+products to customers in China in two days.6
+Back in the nineteenth and early twentieth centuries, it took decades and
+vast investments in retailing, warehousing, product testing, management,
+printing, shipping, service, and fulfillment systems for Sears, Roebuck to
+make itself into America’s merchant. Today, a platform business like
+Alibaba can assemble the capabilities of dozens of preexisting entities and
+swiftly become a contender for the title of merchant to the world. And, of
+
+
+course, Alibaba’s chief rivals for the crown are other platform companies
+such as Amazon and eBay. Such is the world of competition that the rise of
+platforms has brought.
+But to fully understand how the rise of the platform is transforming the
+nature of competition, we need to reexamine the traditional concepts of
+competition that have dominated business thinking for decades—and that
+many businesspeople still take for granted.
+STRATEGY IN THE TWENTIETH CENTURY:
+A CAPSULE HISTORY
+For three decades, the five forces model of competition outlined by Michael
+Porter of Harvard Business School has dominated the world of strategic
+thinking.7 As one measure of Porter’s influence, his writings have received
+more than a quarter million citations, exceeding those of any Nobel Prize-
+winning economist.
+Porter’s model identifies five forces that affect the strategic position of a
+particular business: the threat of new entrants to the market, the threat of
+substitute products or services, the bargaining power of customers, the
+bargaining power of suppliers, and the intensity of competitive rivalry in the
+industry. The goal of strategy is to control these five forces in such a way as
+to build a moat around the business and thereby render it unassailable.
+Thus, when a firm can erect barriers to entry, it can keep competitors out,
+and entrants with substitute products cannot storm the castle. When a firm
+can subjugate suppliers, competition among them weakens their bargaining
+power so the firm can keep its costs low. When a firm can subjugate buyers
+by keeping them relatively small, disunited, and powerless, the firm can
+keep its prices high.
+In this model, the firm maximizes profits by avoiding ruinous
+competition for itself but encouraging it for everyone else in the value
+chain. Advantage is found in industry structures that create a protective
+moat—one that enables the firm to segment markets, differentiate products,
+control resources, avoid price wars, and defend its profit margins.
+For decades, companies have studied the five forces model and used it to
+guide their decisions about which markets to enter and exit, what mergers
+
+
+or acquisitions to consider, what sorts of product innovation to pursue, and
+what supply chain strategies to employ. Approaches like horizontal
+integration (in which a firm controls most or all of a specific product or
+service marketplace) and vertical integration (in which a firm controls an
+entire value chain, from raw materials to manufacturing to marketing) have
+been analyzed and implemented based on the strategic implications of the
+five forces model. Under this model, Houghton Mifflin Harcourt competes
+with McGraw-Hill by striving to control the best authors and content and by
+using copyright to construct a moat around its fortress of value. Whirlpool
+competes with GE by engineering differentiated products, squeezing the
+supply chain, and continually improving its manufacturing efficiencies,
+thereby constructing a moat that makes it hard for GE to poach Whirlpool’s
+customers.
+Later thinkers have added nuance and fresh insights to Porter’s approach.
+In 1984, MIT’s Birger Wernerfelt first described in detail what he called the
+resource-based view of the firm, a variation on strategic thinking with roots
+in the work of several earlier scholars.8 The resource-based view highlights
+the fact that a particularly effective barrier to entry is control of an
+indispensable and inimitable resource. A firm with such a resource is safe
+from new entrants who lack and cannot acquire means to produce it. A
+simple example is De Beers, whose control of a worldwide diamond
+marketing cartel enabled it to maintain a near-monopoly over the diamond
+industry for the entire twentieth century. The De Beers cartel broke down
+after 2000 when some diamond producers decided to market their product
+outside the De Beers-controlled system, reducing the cartel’s share of the
+market from 90 percent in the 1980s to about 33 percent in 2013.9 Until
+then, however, De Beers’s control of an irreplaceable resource gave it a
+sustainable advantage that yielded a hundred years’ worth of profits.
+In the twenty-first century, a number of strategy scholars have
+challenged the resource-based view, pointing out that nimble firms are
+using new technologies to ford the moats established by control of scarce
+resources. In separate works, Richard D’Aveni and Rita Gunther McGrath
+have argued that, in an age of “hypercompetition” (D’Aveni’s term),
+sustainable advantage is illusory. Technological advances drive shorter and
+shorter cycle times on everything from “microchips to corn chips, software
+to soft drinks, and packaged goods to package delivery services.”10
+Connecting across the Internet also allows firms to redraw industrial and
+
+
+geographic boundaries so that stable, slow-moving oligopolies fall to
+nimbler competitors attacking with new tools and technologies.
+McGrath describes how the Internet era has created radically new tools
+and techniques with which to attack incumbent firms. Imagine a company
+that wanted to compete with the Union Pacific Railroad in 1915—a firm
+with a five-decade head start thanks to its authorization by Congress in
+1862. The would-be competitor would have needed to make investments in
+locomotives, rolling stock, depots, terminals, warehouses, and the legal
+right-of-way required to build a nationwide rail network. The massive
+investment in these and other fixed costs already spent by Union Pacific
+provided a mile-wide moat that made the railroad incumbent virtually
+impregnable.11
+By contrast, imagine a firm that wants to compete with any of the Global
+500 companies in 2015. Depending on the specific industry, such an upstart
+could buy production resources from manufacturing firms around the
+world, cloud and computing services from a range of suppliers, marketing
+and distribution services from various intermediary companies, and
+professional services from many online networks of freelancers—all at near
+marginal cost. In today’s hypercompetitive environment enabled by
+technology, ownership of infrastructure no longer provides a defensible
+advantage. Instead, flexibility provides the crucial competitive edge,
+competition is perpetual motion, and advantage is evanescent.
+Other analysts have offered additional insights into the evolving nature
+of competition. Author Steve Denning has highlighted the weakness of
+Porter’s assumption that the purpose of strategy is to avoid competition.
+Denning pointed instead to management guru Peter Drucker’s dictum that
+the purpose of business is “to create a customer.” According to Denning, in
+a world where sustainable advantage is an illusion, a company’s
+relationships with customers are its only lasting source of value.12
+It would be an exaggeration to say that events of the last decade have
+demolished the five forces model—but they suggest that the nature of
+competition has become more complicated and dynamic than Porter’s
+model might imply.
+
+
+THREE-DIMENSIONAL CHESS:
+THE NEW COMPLEXITIES OF COMPETITION
+IN THE WORLD OF PLATFORMS
+Enter platforms. Many of the insights embodied in the five forces, resource-
+based, and hypercompetition models remain valid, but two new realities are
+now shaking up the world of strategy.
+First, firms that understand how platforms work can now intentionally
+manipulate network effects to remake markets, not just respond to them.
+The implicit assumption in traditional business strategy that competition is
+a zero-sum game is far less applicable in the world of platforms. Rather
+than re-dividing a pie of more-or-less static size, platform businesses often
+grow the pie (as, for example, Amazon has done by innovating new models,
+such as self-publishing and publishing on demand, within the traditional
+book industry) or create an alternative pie that taps new markets and
+sources of supply (as Airbnb and Uber have done alongside the traditional
+hotel and taxi industries). Actively managing network effects changes the
+shape of markets rather than taking them as fixed.
+Second, platforms turn businesses inside out, moving managerial
+influence from inside to outside the firm’s boundaries. Thus, a firm no
+longer needs to seize every new opportunity on its own; instead, it can
+pursue only the best opportunities while helping ecosystem partners seize
+the others, with all partners sharing the value they jointly create.13
+These two new realities add a dramatic layer of complexity to business
+competition. Platform strategy resembles traditional strategy much the way
+three-dimensional chess resembles the traditional game.14 Within the
+ecosystem, the lead firm negotiates dynamic tradeoffs involving
+competition at three levels: platform against platform, platform against
+partner, and partner against partner.
+At the first level, one platform competes with another, as in the video
+game console battles among Sony (PlayStation), Microsoft (Xbox), and
+Nintendo (Wii). Strategic advantage is based not on the attractiveness of
+particular products or services but rather on the power of entire ecosystems.
+The Sony PlayStation Portable was a stronger gaming device than the
+iPhone, which lacked specialized left and right controls. When Sony
+released the PSP-2000 in fall of 2007, after Apple’s summer release of the
+
+
+iPhone, Sony’s stock rose about 10 percent. But before long, the iPhone
+ecosystem vastly outstripped that of the PSP. As we’ve already noted, Apple
+has subsequently enjoyed far great financial success than Sony, thanks in
+large part to the size and value of its ecosystem.
+At the second level, a platform competes with its partners—for example,
+when Microsoft appropriates such partner innovations as browsers,
+multithreading, streaming media, and instant messaging and incorporates
+them into its operating system, or when Amazon operates as a platform for
+independent merchants while also selling some of the same goods on the
+same platform in competition with those merchants. This is a delicate and
+dangerous move. It can strengthen the platform, but at the expense of
+weakening partners—a short-term gain that can lead to painful long-term
+consequences.
+At the third level, two unrelated platform partners compete for positions
+within the platform ecosystem, as when two game app developers strive to
+attract the same consumers on the same console.15
+Let’s consider some of the specific impacts that these platform-driven
+changes have on traditional views of strategy.
+As we’ve seen, platforms expand the boundaries of the firm. The shifting
+horizons of managerial influence now make competition less significant for
+strategists than collaboration and co-creation—or, as scholars Barry J.
+Nalebuff, Adam M. Brandenburger, and Agus Maulana call it, “co-
+opetition.”16 The shift from protecting value inside the firm to creating
+value outside the firm means that the crucial factor is no longer ownership
+but opportunity, while the chief tool is no longer dictation but persuasion.
+The five forces model depends on the distinct boundaries that
+characterize traditional product markets. Each of the five forces—customer
+power, supplier power, and so on—is a separate entity that must be
+managed independently. By contrast, in platform markets, a winning
+strategy blurs the boundaries among market participants, thereby increasing
+valuable interactions on the platform. A Skillshare student today can
+become a teacher tomorrow; an Etsy customer one day can begin selling her
+own crafts on the site the next. Platform competition requires treating
+buyers and suppliers not as separate threats to be subjugated but as value-
+creating partners to be wooed, celebrated, and encouraged to play multiple
+roles.
+
+
+The resource-based view assumes that a firm must own, or at least
+control, the inimitable resource. In the world of platforms, the nature of the
+inimitable resource shifts from physical assets to access to customer–
+producer networks and the interactions that result. In fact, it can be better
+for the firm not to own physical resources, since eschewing ownership
+enables it to grow more quickly. As the examples of Airbnb and Uber
+remind us, the resource pool that a platform company can access is capable
+of growing much faster than the platform company itself.
+HOW PLATFORMS COMPETE (1):
+PREVENTING MULTIHOMING BY LIMITING
+PLATFORM ACCESS
+In traditional business, Porter’s five forces and the ability to control
+inimitable resources—as modified by the dynamic of technology-driven
+hypercompetition—have largely shaped business strategy. In the world of
+platforms, new competitive factors have moved to the fore. These new
+factors help determine who participates in a platform ecosystem, the value
+they help to create, who controls that value, and ultimately the size of the
+market. These new factors have become the focus of a series of new
+competitive strategies.
+Let’s consider them one by one, beginning with the strategy of limiting
+platform access so as to control and capture a greater share of the value
+created on the platform.
+As we’ve seen, the resource-based view of business value must be
+modified when applied to platform businesses. However, the resource-based
+emphasis on inimitable resources has its parallel in the world of platforms:
+Platforms seek exclusive access to essential assets. They do this, in part, by
+developing rules, practices, and protocols that discourage multihoming.
+Multihoming occurs when users engage in similar types of interactions
+on more than one platform. A freelance professional who presents his
+credentials on two or more service marketing platforms, a music fan who
+downloads, stores, and shares tunes on more than one music site, and a
+driver who solicits rides through both Uber and Lyft all illustrate the
+phenomenon of multihoming. Platform businesses seek to discourage
+
+
+multihoming, since it facilitates switching—when a user abandons one
+platform in favor of another. Limiting multihoming is a cardinal
+competitive tactic for platforms.
+Here’s an example of how the effort to limit multihoming plays out in
+the new world of strategy. Adobe Flash Player is a browser app that delivers
+Internet content to users, including audio/video playback and real-time
+game play. Flash could have been used by app developers on Apple’s
+iPhone operating system—but Apple prevented this by making its iOS
+incompatible with Flash and insisting that developers use similar tools
+created by Apple itself.
+Developers and users responded with dismay, and some observers called
+the policy an anti-competitive gambit that might be subject to governmental
+sanction under antitrust regulations. The furor grew so heated that, in 2010,
+Apple’s Steve Jobs felt compelled to defend the policy in an open letter—a
+highly unusual step for a CEO to take. In his “Thoughts on Flash,” Jobs
+argued that Flash was a closed system and technically inferior to other
+options, consuming excessive energy and otherwise delivering poor
+performance on mobile devices. Keeping Flash off the iPhone, Jobs
+claimed, would preserve the quality of the Apple user experience.17
+The real reasons were much deeper and more strategic. Adobe had
+designed Flash developer tools to allow content and program porting from
+Apple iOS to Google Android and to web pages more generally. Apps
+developed in Flash could multihome, reducing the iPhone’s distinctiveness.
+Adobe also released extensions that allowed in-app purchases. By allowing
+developers to take interactions off the iTunes platform, Flash would cause
+Apple to lose its 30 percent cut of every interaction as well as control over
+the associated usage data—information that provides valuable clues
+concerning trends in the marketplace.
+If Apple had supported Flash, it would have granted users access to
+enormous amounts of Flash content already on the web while giving
+developers more ways to monetize their investments by multihoming across
+platforms.18 But it would have been a big loss for Apple. So they used
+licensing rules and technology to keep interactions from going off platform.
+Another example of how the strategic battle for control of access to the
+customer can play out is the story of Alibaba.
+Ming Zeng is chief strategy officer of Alibaba. At the MIT Platform
+Strategy Summit hosted by the authors in 2014, Zeng explained how
+
+
+denying a powerful competitor access to Alibaba helped change the shape
+of the market and enabled at least a portion of Alibaba’s remarkable
+growth.19
+Early in the evolution of Alibaba, the company was scrambling for ways
+to attract users and generate significant network effects. The company’s
+“great explosion” in network effects didn’t occur until it devised a policy
+requiring every employee to find and list 20,000 items for sale by some
+person or merchant. The resulting increase in product listings generated
+two-sided demand. Alibaba and its companion consumer site Taobao
+quickly became the fastest-growing site for online purchases, attracting any
+Chinese consumer looking to purchase almost any imaginable product.
+Prior to that great explosion, when Alibaba was struggling to attract
+traffic, CEO Jack Ma and his team had made a counterintuitive decision:
+they created technological barriers that prevented Baidu from searching
+their website. Baidu is China’s biggest Internet search engine—the Google
+of China. Blocking Baidu’s bots from searching Alibaba for products being
+sought by Baidu users cut off a vast supply of potential customers. Doing
+this at a time when Alibaba was desperate for shoppers must have seemed a
+bit crazy.
+But Alibaba’s leaders were playing a long-term strategic game. They had
+their eye not just on the shopping interactions that would take place on their
+platform but on the potential to monetize the platform by selling
+advertising. They were determined to retain control of the community of
+would-be shoppers that they were gradually building on Alibaba—so that
+Alibaba alone would be able to sell ads aimed at those shoppers. Barring
+Baidu’s bots from Alibaba’s listings was a way of preventing Baidu from
+hosting the consumer-oriented ads that companies would ultimately want to
+direct to the growing numbers of Chinese online shoppers—and making
+sure that those ads would appear on Alibaba’s platform instead.
+The strategy worked. As Alibaba’s user base expanded, it gradually
+displaced Baidu as the most valuable online advertising platform in China.
+It’s as if eBay or Amazon had found a way to capture the targeted
+advertising revenues now enjoyed by Google. The income generated helps
+to explain why Alibaba earned more profits in 2014 than Amazon has
+earned in its entire history.
+
+
+HOW PLATFORMS COMPETE (2):
+FOSTERING INNOVATION,
+THEN CAPTURING ITS VALUE
+The open-ended nature of platforms creates enormous opportunities for
+users to create new value. Platform managers can build their businesses by,
+first, giving partners frictionless opportunities to innovate, then capturing
+some or all of the value created by acquisition or duplication. As we saw in
+chapter 8, SAP encourages innovation by partners on its business services
+platform by periodically publishing a road map of the platform real estate it
+plans to open to developers over the next 18–24 months. This tells
+developers where they can build, giving them up to two years of lead time
+before they face competition from SAP itself, and prevents developers from
+wasting time and resources developing a site for SAP users only to find its
+work undermined by the arrival of SAP’s own bulldozers.
+Over the long haul, it is in the interest of platform managers to take
+control of the major sources of value created by and for users in their
+ecosystem. This leads to what we might call the platform-world variant of
+the resource-based theory of value: A platform business need not own all
+the inimitable resources in its ecosystem, but it should seek to own the
+resources whose value is greatest. This is why Alibaba (rather than Baidu)
+owns search on its platform, why Facebook (rather than Google) owns
+search on its platform, and why Microsoft (rather than some outside
+software developer) owns Word, PowerPoint, and Excel on its platform.
+These are all crucial resources that create value for the majority of the
+platforms’ users—that’s why it is critical for the platform owners to control
+them. Less valuable, or more niche, resources can be ceded to ecosystem
+partners without significantly weakening the competitive position of the
+platform itself.
+This principle explains why platform managers need to keep a careful
+watch on new features or apps that appear on the platform. These will
+usually make their first appearance far down the “long tail” of adoption,
+with relatively few platform participants using them to co-create value.
+Most will stay there, but a few will show the ability to jump rank, climbing
+rapidly toward the head of the distribution curve. A few will even show
+signs of attracting their own interactive communities, which means they
+
+
+have the potential to become platforms themselves. Recall that social
+gaming company Zynga and the photo-sharing services Instagram and
+Snapchat all started off as mere blips on the Facebook platform. But their
+social sharing and network effects enabled them to grow fast.
+Growth of this kind often launches a strategic tug-of-war. The platform
+may seek to absorb the function of the innovative partner and the value it
+creates by acquisition. As we’ve noted, Facebook succeeded in acquiring
+Instagram, purchasing the company for $1 billion in 2012; it has (so far)
+failed to acquire Snapchat, having made a $3 billion offer that company
+cofounder Evan Spiegel rejected in December 2013.
+The platform may also seek to weaken the startup by promoting
+competitors, as Facebook has done with Zynga. As of 2011, there were
+more than three thousand games on Facebook, collectively weakening
+Zynga’s individual bargaining power.20 The startup’s response may be to
+sell, to fight back through multihoming, or to expand into other business
+arenas. Zynga, for example, now multihomes on Tencent’s QQ social
+network and on the Apple and Google mobile platforms, as well as offering
+its own cloud service.
+HOW PLATFORMS COMPETE (3):
+LEVERAGING THE VALUE OF DATA
+One of the clichés of the Internet economy is the saying “Data is the new
+oil”—and like most clichés, it contains a lot of truth. Data can be a source
+of enormous value to platform businesses, and well-run firms are using data
+to shore up their competitive positions in a wide variety of ways.
+Platform businesses can use data to improve their competitive
+performance in two general ways—tactically and strategically. An example
+of tactical data use is in the performance of A/B testing, to optimize
+particular tools or features of the platform. If Amazon wants to determine
+whether placing the buy-it-now button at the top right or the bottom left on
+a web page will generate more sales, it can run an experiment by randomly
+alternating the button placement and tallying the results, possibly cross-
+tabulated against various customer characteristics. Tactical data analysis is
+quite effective—and it’s the reason why Amazon now places the buy-it-now
+button at the top right of a web page.
+
+
+Strategic data analysis is broader in its scope. It seeks to aid ecosystem
+optimization by tracking who else is creating, controlling, and siphoning
+value both on and off the platform and studying the nature of their
+activities. When Facebook uses data about member activity to observe
+Zynga doing something unexpected or to spot Instagram diverting traffic in
+novel ways, that is strategic data analysis.
+Some notable platform strategy battles have been won by companies that
+took advantage of data supremacy to outcompete their rivals.
+By most measures, Monster should have won the battle for supremacy
+among job placement platforms. As one of the earliest entrants into the
+market, it had a first mover advantage, and it quickly generated strong
+network effects in the two-sided market of employers and employees
+seeking one another. However, there were built-in limitations to the data
+Monster gathered. Because Monster targeted only active job seekers, it
+captured no information concerning users’ broader social networks. And
+once a particular job search interaction was completed, both employer and
+employee would leave the platform, halting the flow of data altogether.
+By contrast, LinkedIn targeted the social networks of all professionals,
+not just active job seekers. This led to a higher degree of ongoing
+engagement and captured data from those who were happily employed but
+willing to consider new job opportunities—a vastly expanded user base.
+LinkedIn also captured data from interactions among professionals
+interacting with one another as well as with recruiters, providing two
+separate feedback loops on the same platform. Later, LinkedIn began
+emphasizing content creation and sharing by its users to foster additional
+reasons for them to spend time on the platform. LinkedIn’s big edge in the
+scope, depth, and volume of marketplace data has given it a huge advantage
+in competing against Monster.
+Platform design can be optimized in various ways to generate better user
+data. Guided by a two-sided network analysis, the authors developed a set
+of recommendations for the design of data analysis tools to provide
+improved ecosystem leverage for SAP.
+We emphasized the value of search tools that help clients find solution
+providers among SAP ecosystem partners. Better matches facilitated by
+enhanced data make both sides happier. We also noted that solution
+providers can find clients by identifying unsuccessful user searches,
+reflecting the existence of potential clients in need of business solutions. In
+
+
+addition, we noted the need for tools that help clients benchmark their
+capabilities against other, similar companies on the platform, as well as
+tools to help developers benchmark their capabilities against other
+developers on the platform. Such tools can help SAP users compete more
+effectively with rivals who are not on the platform.
+A final set recommendation that we developed with SAP is to look for
+new business service capabilities that cut across industry verticals and new
+features that are rapidly climbing the long tail, meaning that they are
+growing in popularity among business users. These represent new sources
+of value that platforms like SAP can absorb into its platform for the benefit
+of ecosystem partners who have yet to discover them.
+Data analytics can thus significantly augment the capabilities of both the
+platform company and its ecosystem partners, making the platform more
+successful and greatly increasing its ability to generate value for users.
+Analytics can guide investments in product design and in customer and
+partner success, reinforcing the platform’s network effects. Collectively,
+these new data tools create a formidable barrier to entry—a platform
+version of Porter’s competitive moat. If competitors don’t have the data,
+they can’t create the value—which means they can’t create the interactions,
+which further limits their access to the data.
+HOW PLATFORMS COMPETE (4):
+REDEFINING MERGERS AND ACQUISITIONS
+Classic merger and acquisition (M & A) strategy suggests that business
+leaders should pursue targets that either add complementary products or
+market access or subtract supply chain costs. In a world dominated by five
+forces competition, the key question driving M & A evaluation is whether
+or not the target company has a moat protecting a sizeable fortress of value.
+Platform managers need to adjust this strategy. For them, the key
+question is whether the target company creates value for a user base that
+significantly overlaps with the one they are currently serving.
+If the answer is yes, then a tentative conclusion that the target may be
+worth acquiring can be reached. However, there are additional hurdles to be
+surmounted before making the commitment to buy, such as the profitability
+
+
+of the target company and its ability to elicit a continuing stream of repeat
+interactions from platform participants. Fortunately, a platform business is
+in an unusually privileged position when it comes to measuring the value of
+a potential acquisition. Unlike a traditional pipeline company, a platform
+owner can delay an acquisition until it has observed how a partner transacts
+on the platform.
+This solves the traditional challenge of information asymmetry in M & A
+evaluation. Instead of basing a buy decision on someone else’s audited
+financial data, the purchaser can rely on firsthand observation of transaction
+data and even run real-world experiments to test various strategic scenarios.
+Managing a platform lets you take the partnership for a test drive before
+signing a purchase agreement.
+Furthermore, based on the fact that platform businesses don’t need to
+own all the critical assets as long as they have access to them in their
+ecosystems, platform companies can pursue fewer M & A deals than many
+traditional firms feel compelled to do. In the process, they enjoy at least two
+significant benefits.
+First, claiming a portion of the value created by a platform partner is far
+less risky than buying that partner. Recall that, in 2011, Farmville and
+Mafia Wars were the biggest hits in gaming, driving the stock market value
+of game developer Zynga through the roof. It’s easy to imagine that the
+leaders of Facebook must have been tempted to buy Zynga, which would
+have not only provided them with the full value of Zynga’s game portfolio
+but also denied access to this key asset to rival platforms like Myspace.
+But Facebook resisted the temptation—and wisely so. Game
+development is notoriously unpredictable; even the most successful games
+flame out after a few years, and there’s no guarantee that another hit will
+follow. Rather than buying Zynga and shouldering the responsibility for
+creating the next big sensation, it was far better for Facebook to let
+hundreds of game companies compete to produce the next hit and then
+capture a fraction of the upside.
+Second, keeping a partnership at arm’s length reduces the platform’s
+technological complexity. As the very term vertical integration implies, any
+new business a platform purchases must be integrated with the platform,
+which creates both technical and strategic challenges. A platform built from
+a dozen independently developed technologies will break sooner, cost more,
+and deliver a worse customer experience than one built on a lean
+
+
+architecture that conducts all its business activity through clean interfaces.
+Recall our discussion of the benefits of modular design in chapter 3: in a
+modular system, when a part or partner fails, a new one can be swapped in
+relatively easily. But when a part or partner fails in an integrated system, the
+whole system can grind to a halt.
+For these reasons, managers of platform businesses can afford to
+approach the challenge of M & A strategy in a more thoughtful, deliberate
+fashion than leaders of traditional companies, who often feel compelled to
+snap up the next hot startup before someone else does.
+HOW PLATFORMS COMPETE (5):
+PLATFORM ENVELOPMENT
+Platform managers need to continually scan the horizon, observing the
+activities of other platforms—particularly platforms that serve similar or
+overlapping user bases. We call these adjacent platforms. When a new
+feature appears on an adjacent platform, it may represent a competitive
+threat, since there’s a possibility that users of your platform may find the
+new feature attractive enough to begin multihoming or even to abandon
+your platform altogether.
+To respond, the platform manager can choose either to provide a similar
+feature directly or to offer it indirectly via an ecosystem partner. When used
+most successfully, this strategy leads to the phenomenon we call platform
+envelopment. This occurs when one platform effectively absorbs the
+functions—and the user base—of an adjacent platform.
+For example, back in the 1990s, RealNetworks invented streaming audio
+in the form of its 1995 product, Real Audio. It soon owned 100 percent of
+the market. But once Microsoft decided to capture this market, the
+enormous scope of its existing platform gave it an almost unstoppable
+advantage. Since MS Windows had a market share of over 90 percent in
+operating systems, almost everyone who was interested in media streaming
+already had an operating system from Microsoft. All Microsoft had to do
+was develop a software product similar to Real Audio and offer it as part of
+a bundle with its Windows operating system. The Windows streaming audio
+platform soon enveloped the much smaller platform created by Real Audio
+—despite the older software’s superior performance.
+
+
+The envelopment strategy is a common one that we can see in operation
+in many platform arenas. Apple is now endeavoring to use its iPhone
+platform to envelop the markets for mobile payment systems and wearable
+technology. Similarly, China’s Haier Group is expanding its appliance
+platform in an effort to envelop the market for connected home
+applications.
+Of course, the opportunities and threats run both ways. If Platform A is
+trying to envelop adjacent Platform B by developing a feature that competes
+with Platform B’s most attractive offering, Platform B may try to envelop
+Platform A by mounting the same kind of attack in reverse. In this kind of
+envelopment battle, the larger platform, with its more numerous initial user
+base and more powerful network effects, is generally triumphant. But as the
+story of Monster versus LinkedIn demonstrated, a platform that offers
+superior value to users can win a competitive battle despite an initial size
+disadvantage.
+By comparison with traditional pipeline businesses, platform companies
+are able to move very rapidly to respond to competitive moves—and to
+mount competitive assaults of their own. The winners will usually be those
+platforms that are able to consistently create the greatest value for users.
+But in today’s business, no victory is permanent, which means that platform
+companies must be at least as vigilant in guarding against complacency as
+traditional firms.
+HOW PLATFORMS COMPETE (6):
+ENHANCED PLATFORM DESIGN
+In the world of traditional business, companies compete by attempting to
+create higher-quality products and services. In an analogous fashion,
+platforms compete by trying to improve the quality of the tools they provide
+to pull in users, facilitate interactions, and match producers with consumers
+(the basic elements of platform design we described in chapter 3).
+We saw a simple example of how this works in chapter 5, when we
+explained how video hosting platform Vimeo managed to coexist with
+YouTube despite serving an overlapping market, differentiating itself
+through better hosting services, greater bandwidth availability, more
+valuable viewer feedback, no obtrusive pre-roll advertisements, and other
+
+
+features that attract more selective video producers despite YouTube’s much
+larger viewer base. Vimeo’s competitive stance in relation to YouTube
+resembles that of many traditional businesses that coexist with a market-
+dominating rival by identifying a specialized niche and creating a higher-
+end product designed to cater to that audience.
+In some cases, superior platform design enables a platform to
+dramatically outcompete a preexisting rival. Airbnb initially had far fewer
+users than the much older Craigslist, which also provides listings of rooms
+and apartments for short-term rent. However, Airbnb did a much better job
+at the key platform functions of facilitation and matching. On Craigslist, a
+person seeking a room for rent had to drill down through an unmanaged list
+of options clustered by city and organized by time of posting. By contrast,
+Airbnb allowed a person to search through options organized not only
+according to these characteristics but also by quality, number of rooms,
+price, and mapped geolocation. Furthermore, users could also strike deals
+directly through Airbnb, whereas Craigslist users had to go off platform to
+make a rental agreement. This made Airbnb far easier to use and enabled
+the platform to rapidly outgrow the erstwhile category leader.
+WHEN ADVANTAGE IS SUSTAINABLE:
+WINNER-TAKE-ALL MARKETS
+In business, no victory is permanent—but on occasion, a particular firm is
+capable of enjoying a dominant position within its industry for a decade or
+longer. When this happens, we can say that the company has maintained a
+sustained advantage. This happens most often in a winner-take-all market.
+This is a market in which specific forces conspire to encourage users to
+gravitate toward one platform and to abandon others. The four forces that
+most often characterize winner-take-all markets are supply economies of
+scale, strong network effects, high multihoming or switching costs, and lack
+of niche specialization.
+As we explained in chapter 2, supply economies of scale are an
+industrial-era source of market power driven by the massive fixed costs of
+production in such industries as railroads, oil and gas exploration, mining,
+pharmaceutical development, and auto and aircraft manufacture. In
+industries like these, volume matters, since amortizing costs over more
+
+
+buyers means that margins improve with scale. It might cost Intel $1 billion
+to develop a semiconductor fabrication plant, but once the plant is built, the
+incremental costs of making a million chips—or a billion—are negligible.
+The greater the supply economies of scale, the greater the tendency toward
+market concentration. In the U.S., despite competitive markets and the
+regulatory pressure created by antitrust legislation, a handful of firms
+dominate industries in which supply economies of scale play a large role—
+for example, the auto industry.
+As we also saw in chapter 2, network effects are the Internet-era source
+of market power. Thanks to positive network effects, the value created and
+the profit margins enjoyed by the company both increase as more users join
+the ecosystem.21 This is why firms with network effects can enjoy a 10x
+multiple in value relative to other firms that have comparable revenues but
+lack network effects.22 With their current product focus and business
+models, Houghton Mifflin Harcourt, NBC, Lexis, and Whirlpool do not
+have strong network effects. Amazon, Netflix, LegalZoom, and Nest do.
+Because positive network effects attract more users to whichever platform
+is larger, they are a second force that is likely to strengthen a market’s
+winner-take-all tendency.
+A third factor driving the winner-take-all effect is high multihoming and
+switching costs. As we discussed earlier in this chapter, multihoming takes
+place when users participate on more than one platform. Of course,
+multihoming enables users to take advantage of the benefits provided by
+multiple platforms—but it always comes with a cost, monetary (such as
+multiple subscription fees) or otherwise (such as the inconvenience of
+having to upload data to more than one platform website).
+Somewhat comparable to multihoming costs are switching costs—the
+costs associated with leaving one platform and moving to another. Again,
+these costs may be monetary (such as the penalty assessed when a cell
+phone user switches service providers in mid-contract) or non-monetary
+(such as the inconvenience of moving all your family photos from one web
+hosting service to another).
+Both higher multihoming costs and higher switching costs tend to push a
+market toward higher concentration, dominated by fewer, larger companies.
+For example, because most people cannot afford to carry both an Android
+phone and an Apple phone, they tend to choose one of these two
+alternatives and stay with it for at least a few years. By contrast, lower costs
+
+
+encourage people to participate in two or more platforms at once. Because
+most credit cards carry a low annual fee or none at all, many people carry
+Visa, MasterCard, and American Express cards in their wallets, perhaps
+accompanied by a couple of department store cards, choosing among them
+in various circumstances based on convenience and other factors.
+In markets where multihoming and switching costs are low, late entrants
+can gain market share more easily, leading to markets that are more open
+and fluid. For example, because most social networks offer free basic
+service, multihoming on two platforms is virtually costless—which is one
+reason Facebook and LinkedIn were able to compete successfully with their
+forerunners, Myspace and Monster. By contrast, high multihoming costs are
+one reason Microsoft has had such difficulty entering the mobile market
+behind Apple and Google, despite its advantage in desktop operating
+systems and the market share it gained when it acquired mobile phone
+maker Nokia.
+The fourth and final factor affecting demand-side scale is users’ taste for
+niche specialization. When a particular set of users has distinctive needs or
+tastes, they can support a separate network, thereby weakening the winner-
+take-all effect. In the 1990s, when Windows enjoyed strong advantages in
+the world of desktop operating systems due to its strong network effects and
+the high multihoming costs in the market, Apple survived thanks to niche
+specialization—it was inordinately popular among graphic artists and
+musicians. Similarly, LinkedIn was able to establish a foothold among
+social networks against the overwhelming network effects of Facebook
+because it served the distinctive needs of business professionals.
+A market with little or no niche specialization is particularly susceptible
+to the winner-take-all effect. And the greater the winner-take-all forces, the
+more vicious the platform competition. In the market for ride-sharing
+transportation services, the absence of distinct user needs and the presence
+of strong network effects explains the fierce rivalry between Uber and Lyft.
+Each side has ruthlessly poached the other’s drivers by offering referral
+bounties and cash incentives. Some of the alleged tactics border on the
+unethical. For example, Lyft has accused Uber of ordering, then cancelling,
+more than 5,000 rides in order to clog the Lyft service. Uber denied the
+specific charge. But there’s no doubt that both companies are convinced that
+only one is likely to survive their rivalry, and that each is determined to do
+whatever it takes to be the one left standing.23
+
+
+As we’ve seen, the nature of competition in the world of platforms is very
+different from that in the world of traditional pipeline businesses. It’s a
+natural next step to wonder whether and how these differences are
+impacting the nature of business regulation. Do definitions of fundamental
+concepts like monopoly, fair trade, price fixing, anticompetitive practices,
+and restraint of trade need to be reconsidered in their application to
+platform companies? Are existing rules designed to protect the interests of
+consumers, workers, suppliers, competitors, and entire communities
+effective and reasonable in the world of platforms? These are some of the
+questions we’ll examine in the next chapter.
+TAKEAWAYS FROM CHAPTER TEN
+    Platform competition is like 3D chess, involving competition at three levels: platform
+against platform, platform against partner, and partner against partner.
+    In the world of platforms, competition becomes less important that cooperation and co-
+creation. Control of relationships becomes more important than control of resources.
+    Among the methods that platforms use to compete with one another are preventing
+multihoming by limiting platform access; fostering innovation, then capturing its value;
+leveraging the value of information; nurturing partnerships rather than pursuing mergers
+and acquisitions; platform envelopment; and enhanced platform design.
+    Winner-take-all markets exist in certain platform markets. They are driven by four main
+factors: supply economies of scale, network effects, multihoming and switching costs, and
+the lack of niche specialization. In winner-take-all markets, competition is apt to be
+particularly fierce.
+OceanofPDF.com
+
+
+11
+POLICY
+How Platforms Should
+(and Should Not) Be Regulated
+In the fall of 2014, the New York City subways were suddenly filled with
+ads for a business many city residents were just beginning to learn about—
+Airbnb. These were not ordinary ads aimed at convincing potential
+customers to try out the room rental services provided by Airbnb. They
+were what advertising people call corporate image ads, designed to burnish
+the reputation of the company itself. “Airbnb is great for New York City,”
+read the slogan on every ad.
+But not all subway riders agreed. Within days, many of the ads had been
+“edited” by marker-wielding graffiti writers with their own thoughts about
+Airbnb. Journalist Jessica Pressler recorded some of the choicest comments
+in New York magazine. One poster had been supplemented with the
+observation, “Airbnb accepts NO Liability.” Another had been marked with
+the scrawl, “The dumbest person in your building is passing out a set of
+keys to your front door!” And on several posters, the phrase “for New York
+City” had been replaced with a different handwritten conclusion: “Airbnb is
+great for Airbnb.”
+The war of the posters reflected a bigger conflict already being waged in
+New York City and in other cities around the world where Airbnb was
+expanding its foothold. Airbnb’s corporate image advertising campaign was
+part of an expensive lobbying and public relations program designed to
+counter what the company viewed as an unfair assault by regulators,
+business rivals, and misinformed members of the media and the general

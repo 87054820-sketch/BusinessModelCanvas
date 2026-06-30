@@ -1,0 +1,948 @@
+# 12. Tomorrow: The Future of the Platform Revolution
+
+In our research into the disruption of industries by platforms, we’ve noted
+characteristics that make a particular industry especially susceptible. Here
+are some of the types of businesses that are most likely to join the platform
+revolution in the years to come:
+•        Information-intensive industries. In most industries today, information is an important
+source of value—but the more crucial information is as a value source, the closer the industry
+is to being transformed by platforms. This explains why media and telecom are two of the
+industries that have already been disrupted so thoroughly by platforms. New entrants have
+created ecosystems that can create and disrupt content and software more quickly and easily
+than large firms with thousands of employees once did. 
+•    Industries with non-scalable gatekeepers. Retailing and publishing are two examples of
+industries that traditionally have employed expensive, non-scalable human gatekeepers—
+buyers and inventory managers in the case of retail, editors in the case of publishing. Both are
+already undergoing disruption thanks to the rise of digital platforms, with millions of
+producers (artisans, craftspeople, writers) creating and marketing their own goods through
+platforms like Etsy, eBay, and Amazon. 
+•    Highly fragmented industries. Market aggregation through a platform increases efficiencies
+and reduces search costs for businesses and individuals looking for goods and services created
+by far-flung local producers. Platforms ranging from Yelp and OpenTable to Etsy, Uber, and
+Airbnb have made it easy for customers to visit a single source to gain access to thousands of
+small suppliers. 
+•    Industries characterized by extreme information asymmetries. Economic theory suggests
+that fair, efficient markets require that all participants have equal access to information about
+goods, services, prices, and other crucial variables. But in many traditional markets, one set of
+participants has far better access than others. Used car dealers, for example, knew much more
+about the condition and history of the cars they sold, as well as about supply and demand
+variables, than their customers—hence the distrust in which they were held. Data aggregating
+and sharing platforms such as Carfax are now leveling the field, making detailed information
+about used car values available to anyone willing to pay a small fee. Other markets where
+information asymmetries have made fair dealing difficult, from health insurance to home
+mortgages, are ripe for similar changes.
+Based on the factors above, one may question why banking, health care,
+and education continue to be so resistant to transformation. All three
+industries are information-intensive. (Health care may seem like a service-
+intensive industry, but all of its efficiencies are powered by information.)
+However, industries that might seem to be susceptible to platform
+approaches, yet are likely to be resistant to such disruption, have certain
+other characteristics. These include the following:
+•    Industries with high regulatory control. Banking, health care, and education are all highly
+regulated. Regulations favor incumbents and work against the interests of startups trying to
+unlock new sources of value. Emerging platforms are starting to attack this problem in an
+effort to create new sources of value, but regulatory control is holding them back.
+
+
+•    Industries with high failure costs. The costs of a defaulted loan or matching a patient with
+the wrong doctor are much higher than the cost of showing inappropriate content on a media
+platform. Consumers are reluctant to participate on platforms when the perceived costs of
+failure are high.
+•        Resource-intensive industries. Resource-intensive industries have typically not been
+dramatically affected by the Internet. Winning participants in these markets still depend on
+their access to resources and their ability to manage efficient, large-scale processes such as
+mining, oil and gas exploration, and agriculture, in which information has a limited role to
+play.
+The impact of these factors will change over time. As more and more
+processes and tools get connected to the Internet, every industry has the
+potential to become an information-intensive industry. For example,
+resource-intensive industries like mining and energy will increasingly need
+to leverage the power of platforms, creating efficiency gains and faster
+learning by connecting their resources—material, labor, and machines—
+over a central network to coordinate workflows. Over the next few years,
+we will see the start of transformation in large resource-intensive companies
+as they leverage platforms toward greater efficiency gains.
+Even as we consider the relative likelihood that various industries will be
+susceptible to platform transformation in the near future, let’s bear in mind
+that industry boundaries are becoming increasingly porous due to the
+impact of platforms. Think about the advertising industry, for example. In a
+world of pipelines, businesses’ access to consumers was limited to media
+and retail channels: television networks, newspapers and magazines,
+department stores. Very few businesses could afford to own their own
+direct-to-consumer channels for promoting their goods and services. By
+contrast, in today’s world of Internet-powered platforms, any business can
+engage with consumers directly, capturing data about their preferences,
+connecting them with external producers, and offering personalized services
+that provide individual customers with unique value.
+In effect, every company can now be an advertising company. Uber, for
+example, has the potential to be the world’s largest hyperlocal advertising
+business. Through its rider data, Uber can gain unique insight into where
+users live, where they work, when and how often they commute, and many
+other such aspects of behavior. The company could use such data to connect
+users with local merchants. Many other kinds of companies with vibrant
+platforms, from banks to retailers, could employ a similar strategy.
+
+
+The power of the platform is modifying—even erasing—many other,
+similar barriers that once separated industries from one another. Thus, one
+of the most dramatic effects of the rise of the platform has been the
+emergence of unexpected new competitors from seemingly unrelated
+industry sectors. Bear this in mind as you consider the possible future
+impact of the platform model on your own industry, whatever it may be.
+With these insights in mind, let’s consider some of the most plausible
+and intriguing future scenarios for the expansion and evolution of platforms
+in specific sectors of the economy.
+EDUCATION:
+THE PLATFORM AS GLOBAL CLASSROOM
+Education is perhaps the prime example of a major industry that is ripe for
+platform disruption. Information-intensive? Check. In fact, the fundamental
+product being sold by schools, colleges, and universities is information of
+various kinds. Non-scalable gatekeepers? Check. Ask any parent whose
+child has recently had to navigate the slow, complex, inherently arbitrary
+process by which a lucky handful of students are admitted to the most
+prestigious and selective colleges, and you’ll hear plenty about the
+shortcomings of some of the world’s most powerful gatekeepers. Highly
+fragmented? Check. Within the United States, there are over 13,000 public
+school districts, as well as thousands of private school systems, colleges,
+universities, and proprietary schools, each fiercely independent and proud
+of its unique programs and standards. Information asymmetry? Check. Only
+a small percentage of parents feel competent to judge the qualifications and
+reputations of schools and colleges—hence the proliferating, competing,
+and confusing array of rating systems and the ever-increasing pressure on
+students to earn entry to the handful of institutions that are universally
+admired—the Harvards and Yales of the world.
+With millions of families forced to negotiate this non-system system
+every year, it’s no wonder that most emerge frustrated and uncertain as to
+whether or not they’ve found the right school for their child. Then factor in
+the unsustainable cost inflation that education has experienced in the U.S.:
+having grown by twenty-five times over the past fifty years, higher
+education spending has skyrocketed even faster than health care spending.
+
+
+The overall picture is of an industry under tremendous pressure to change
+so as to deliver better value for the dollars being invested.
+The drive to build education platforms is well under way, as businesses
+like Skillshare, Udemy, Coursera, edX, Khan Academy, and others suggest.
+Eager to avoid being rendered irrelevant or obsolete by upstart platform
+companies, a number of the world’s greatest universities are moving to
+position themselves as leaders in this educational revolution. Institutions
+including Harvard, Princeton, Stanford, the University of Pennsylvania, and
+many others are offering online versions of some of their most popular
+classes in the form of “massive open online courses” (MOOCs)—many in
+partnership with companies like Coursera.
+In the years to come, the spread and increasing popularity of teaching
+and learning ecosystems will have an enormous impact on public school
+systems, private schools, and traditional universities. Barriers to entry that
+have long made a first-class education an exclusive, expensive, and highly
+prestigious luxury good are already beginning to fall. Platform technologies
+are making it possible for hundreds of thousands of students to
+simultaneously attend lectures by the world’s most skilled instructors, at
+minimal cost, and available anywhere in the world that the Internet is
+accessible. It seems to be only a matter of time before the equivalent of a
+degree from MIT in chemical engineering will be available at minimal cost
+in a village in sub-Saharan Africa.
+The migration of teaching to the world of platforms is likely to change
+education in ways that go beyond expanded access—important and
+powerful as that is. One change that is already beginning to happen is the
+separation of various goods and services formerly sold as a unit by colleges
+and universities. Millions of potential students have no interest in or need
+for the traditional college campus complete with an impressive library, a
+gleaming science lab, raucous fraternity houses, and a football stadium.
+The traditional university makes education available to a select few:
+professors with specific, laboriously obtained academic credentials and
+highly qualified students with the time and money to invest in campus life.
+For this relative handful of people, the old model of education may work
+well. But education platforms like Skillshare make high-level teaching and
+learning available to thousands who can’t or won’t fit the traditional mold.
+Suddenly, brilliant instructors and eager learners can find one another
+
+
+anywhere, anytime. It’s a priceless opportunity that the online platform
+makes available at a tiny fraction of the traditional cost.
+Education platforms are also beginning to unbundle the process of
+learning from the paper credentials traditionally associated with it. As of
+2014, statistics show that only about 5 percent of students who enroll in
+MOOCs receive certificates of completion—a data point that has led many
+to conclude that online teaching is ineffective. But a study of more than 1.8
+million MOOC enrollees at the University of Pennsylvania found that 60
+percent of students become actively engaged with the course content,
+watching class videos, connecting with their peers, and completing one or
+more assignments. The researchers concluded that “students treat MOOCs
+like a buffet, sampling the material according to their interests and goals.”1
+As students gravitate to MOOCs—especially those that teach specific work
+skills, like the many online courses in fields such as software engineering,
+design, marketing, and film editing—they appear to be more interested in
+the real-world abilities they are honing than in such traditional symbols of
+achievement as a class transcript or a diploma. A high ranking on TopCoder,
+a platform that hosts programming contests, will earn a developer a job at
+Facebook or Google just as fast as a computer science degree from
+Carnegie Mellon, Caltech, or MIT. Platform-based students for whom a
+conventional credential is important can often make special arrangements to
+receive one—for example, at Coursera, college credit is a “premium
+service” you pay extra for.
+The platform-based unbundling of educational activities is separating the
+teaching of specific skills from reliance on vast, multipurpose institutions
+like traditional universities. Duolingo uses a crowdsourcing platform to
+teach foreign languages. Its founder, Luis von Ahn, is a computer scientist
+who never studied language instruction. After reading the most respected
+books on the topic, he performed comparative tests of the leading theories
+using the crowds that visited his website and an evolving set of testing tools
+to measure the results. Today, more people are using Duolingo to learn a
+language than all the students in high school in the U.S. combined.2
+Duolingo separates language teaching from traditional educational
+institutions. The same thing is happening with the teaching of programming
+on TopCoder, marketing on Salesforce, or guitar on Microsoft Xbox.
+Learning platforms are facilitating many other experiments with the
+form, structure, and substance of traditional education. For example, the
+
+
+Minerva Project, launched in September 2014, with an initial class of thirty-
+three students, aims to replace the traditional liberal arts college with an
+online platform that allows students to attend interactive seminars with
+professors located anywhere in the world. The students themselves will live
+for a year at a time in dorms in various cities—San Francisco, Berlin,
+Buenos Aires—where local cultural, professional, and recreation facilities
+will be incorporated into the curriculum. Minerva hopes to grow to admit
+some 2,500 students per year, each paying a total fee of around $28,000
+(including room and board)—about half the cost of attending a selective
+college or university.
+“The Minerva boast,” journalist Graeme Wood observes, “is that it will
+strip the university experience down to the aspects that are shown to
+contribute directly to student learning.”3 Will Minerva succeed? Only time
+will tell. But whether it does or not, many other educational experiments are
+sure to follow. The flexibility and power of the platform to facilitate
+connections between teachers and students makes this virtually inevitable.
+The long-term implications of the coming explosion in educational
+experimentation are difficult to predict with certainty. But it wouldn’t be
+surprising if many of the 3,000 colleges and universities that currently
+dominate the U.S. higher education market were to fail, their economic
+rationale fatally undercut by the vastly better economics of platforms.
+HEALTH CARE: CONNECTING
+THE PARTS OF AN UNWIELDY SYSTEM
+Like education, health care is an information-intensive industry that
+features non-scalable gatekeepers (in the form of insurance company
+networks and much-in-demand physicians whose referrals are needed
+before any consultation can occur), a high degree of fragmentation (among
+hospitals, clinics, labs, pharmacies, and millions of individual practitioners),
+and enormous information asymmetries (thanks in part to professionals who
+sometimes encourage an attitude of “doctor knows best” among patients
+who are often overwhelmed by the complexities of modern medicine). And
+like education, health care is an industry widely felt to be in crisis,
+particularly in the United States. The fragmented U.S. health care delivery
+
+
+system imposes huge costs in missed diagnoses, garbled data, wasted time,
+and squandered resources.
+In its simplest form, the platform model can make accessing health care
+faster and more convenient by providing an Uber-like interface that permits
+people to summon medical help wherever they are. Such a system has
+already been launched in several cities, including Miami, Los Angeles, and
+San Diego, by a company called Medicast. Click the Medicast app, describe
+your symptoms, and a physician is guaranteed to arrive within two hours.
+The service is popular among doctors who want to earn a few extra dollars
+during their off-hours.4
+But the potential impact of the platform model on medicine goes far
+deeper than such basic one-off interactions. In fact, the platform revolution
+offers huge opportunities to remedy many of the problems that plague
+American health care. Connecting all suppliers—as well as health care
+consumers themselves—in a hyperefficient platform has the potential to
+revolutionize the system.
+One of the early harbingers of the kind of change we can expect in the
+decades to come is the enormous popularity of mobile health care apps and
+wearable fitness devices linked to networks that provide analysis and
+information based on the personal data generated. Millions of Americans
+are already demonstrating that they are comfortable having electronic tools
+measuring their pulse, blood pressure, activity levels, sleeping patterns, and
+other health indicators, as well as sharing this information with a software
+package that can offer diagnostic readings and customized advice.
+Expanding and enhancing this approach can help shift the emphasis of the
+health care system from curing or managing illnesses—often diagnosed late
+and treated at very high cost—to preventing them.
+It’s also easy to envision a platform that could help individuals manage
+such chronic—and costly—health care problems as diabetes, hypertension,
+heart disease, asthma, allergies, and obesity. For example, a wearable
+device could track a diabetic’s nutrition intake, exercise regimen, and blood
+glucose levels; use the data to describe and explain recommended
+treatments based on past medical experience and history; and alert a
+clinician when warning signs of an impending medical crisis arise. One
+analyst estimates that such a platform could reduce the national investment
+in diabetes management by at least $100 billion per year.5 Extend the same
+logic to the other chronic illnesses that affect tens of millions of Americans
+
+
+—and which our current pay-for-service health care system manages poorly
+—and the potential cost savings could skyrocket … to say nothing of the
+thousands of lives that would be extended and improved.
+Even greater benefits will be realized when one or more platforms
+emerge that are capable of integrating a wide range of health care data from
+multiple sources—not just wearable sensors but also patient input and
+electronic health records generated and maintained by service providers.
+Developing a platform that is accessible both to patients and to an array of
+professionals—physicians, nurses, technicians, therapists, pharmacists,
+insurance carriers, and others—while still protecting patient confidentiality
+will represent a crucial challenge. As health care consultant Vince Kuraitis
+notes:
+Many healthcare value propositions will be dependent on broad networks and platforms. If you
+had high blood pressure and needed to manage your own care with support from your physician,
+what good would it be if your lab values were on one platform and your medications were listed
+on another, non-interoperable platform? If you were traveling and went to a hospital emergency
+room, what good would it do you if your health data was stored on a network not accessible by
+the hospital?6
+Many of today’s leading technology companies are already beginning to
+position themselves for the coming battle to dominate the health care
+platform business. Microsoft, Amazon, Sony, Intel, Facebook, Google, and
+Samsung have all launched platforms designed to stake out at least one
+corner of the rapidly growing fitness–health care space.
+One intriguing entrant is Apple’s HealthKit app, announced in mid-2014,
+which allows a range of health and fitness apps—including those from
+outside providers like Nike—to share data with one another. Apple
+announced plans to work with the famous Mayo Clinic and other health
+care companies to develop systems that would allow data from HealthKit to
+be shared with physicians and other caregivers (with appropriate privacy
+safeguards). And in early 2015, Apple unveiled its new Apple Watch, which
+boasts an array of health and fitness tracking, measurement, and
+communication tools.
+Under the circumstances, it’s not surprising that, according to consultant
+Kuraitis, Apple has been hiring a large number of professionals to staff up
+its health platform business—including many with MD and PhD degrees. It
+seems clear that, within the next decade or two, at least one giant platform
+
+
+business will become a major player in the U.S. health industry. Apple is
+one of the companies with its eyes fixed on that goal.
+The transition from today’s fragmented health care system to an efficient
+platform-based system will not be easy. The barriers to health care platform
+development include economic and managerial forces that discourage the
+sharing of patient data and services. These forces help to explain, for
+example, why the implementation of electronic medical records mandated
+by the Affordable Care Act (2010) has been poorly managed, with record
+systems so customized by institution that two hospitals in the same
+community are often unable to share data regarding the same patient. The
+problem is exacerbated by the financial incentives for health care
+organizations to keep each patient within a single medical “home.” Many
+patients are mandated by their insurance carriers to seek services within one
+health care system, usually defined by geography—an approach that is
+untenable for patients who are highly mobile or transient, like many young
+adults.
+Furthermore, there is huge variability in how clinicians interact with the
+health care system. Some are employed by hospitals or other large
+institutions, which means they usually enjoy relatively easy access to
+platform data. Others are employed by the government, which means that
+the platform data they generate are accessible to the government but not to
+others. Still others are privately employed, which means that the platform
+data they produce are extremely fragmented.
+Until financial incentives are aligned to encourage universal sharing of
+patient services and data, the growth of platforms within health care may be
+slow. Helping to bring about this alignment should be a key focus of
+regulators and industry leaders.
+ENERGY: FROM SMART GRID TO
+MULTIDIRECTIONAL PLATFORM
+In a world driven by vast amounts of energy—and in which the supply and
+usage of energy are intimately linked to such crucial factors as global
+climate change and international geopolitical conflict—we can’t afford to
+squander the energy supplies we have or use them in ways that harm the
+natural environment. That’s where platform technologies can make a big
+
+
+difference. The electrical energy grid, fueled by sources that include coal,
+gas, oil, water, wind, solar, and nuclear power, has long been a giant
+interconnected network of complex technologies. However, it’s a network
+plagued by numerous costly inefficiencies, such as the mismatch between
+supply and demand caused by variability of energy use over the course of a
+day and across seasons of the year. The more fully we can convert this
+network into an intelligent, interactive ecosystem of participants who can
+produce, share, conserve, store, and manage energy wisely together, the
+greater the value we can extract from our energy resources—and the
+healthier the world we’ll pass on to future generations.
+Today, energy companies and government authorities around the world
+are working with scientists and engineers to implement “smart grid”
+technologies that are improving the use and control of energy through
+digital systems for measuring, communicating, analyzing, and responding
+to vast amounts of data. Enhanced electrical metering tools are making it
+easier to implement variable pricing systems that improve the
+responsiveness of the system to variations in demand, encourage
+conservation, and smooth out fluctuations in energy availability and use.
+Decentralization is reducing the grid’s reliance on a few vast production
+facilities, increasing reliability, decreasing vulnerability to sabotage or
+disaster, and making it easier to distribute energy produced by consumers
+using wind turbines, photovoltaic panels, and other small-scale systems.
+These changes prefigure the interactive network that is likely to shape
+tomorrow’s global energy marketplace. In effect, we’re migrating from the
+one-way pipeline model of energy production and distribution to a platform
+model, in which millions of individuals and organizations are
+interconnected and able to play varying roles as circumstances change—
+consuming energy one moment, producing and selling it the next.
+Centralized production and control of energy by a few massive utilities will
+in time give way to millions of small producer–consumers, many as modest
+as a single solar panel on a family’s rooftop.
+Continued technological breakthroughs will drive this transformation.
+Battery technology, for example, will play a crucial role. The leading
+sources of renewable energy, wind and solar, are both intermittent, which
+leads to mismatches between supply and demand. More efficient
+rechargeable electrical storage batteries could provide an answer. Tesla,
+most famous for its electric vehicles, is currently building a so-called
+
+
+gigafactory in Nevada that is expected to manufacture a new generation of
+powerful batteries that are capable of supplying energy to a home for up to
+two days. Sister company SolarCity—run by a cousin of Tesla chairman
+Elon Musk—which already controls 39 percent of the residential solar
+market, has announced that, within a decade, all of its power units will
+come complete with battery storage.
+The disruptive potential of this technology for the traditional utility
+industry is enormous; in fact, a 2013 report by the Edison Electric Institute
+warned, “One can imagine a day when battery storage technology or micro
+turbines could allow customers to be electric grid independent.” Energy
+analyst Ravi Manghani foresees a day when today’s energy utilities become
+“something closer to service providers and minders of an increasingly
+distributed grid rather than the centralized power producers they are
+today.”7
+It’s a pattern we’ve seen being played out in every corner of the world of
+platforms: power, which once flowed in a single direction from a central
+source, is increasingly shared and controlled by millions of market
+participants. The shift applies to the literal power that flows through
+electrical lines as well as to the metaphorical kinds of power traditionally
+wielded by corporate chieftains.
+The missing link in the transformation of the energy industry has been a
+platform that permits large-scale energy transactions. That is beginning to
+change. The state of California now allows bundlers of distributed energy
+resources to offer those resources on the wholesale market, and, as we
+discussed in chapter 4, the state of New York is considering the
+development of a platform dedicated to the management of distributed
+energy resources. By mobilizing existing distributed resources, systems like
+these should facilitate the integration of clean renewable power to
+accommodate the inherent variability in energy demand.
+What is unclear is whether current stakeholders in the energy industry
+will embrace the emergence of energy platforms or engage in drawn-out
+regulatory battles in an effort to preserve their current advantages. The
+challenge for regulators will be to design a system that benefits as many
+stakeholders as possible—including the future generations that are counting
+on us to leave them with both adequate supplies of energy and a clean,
+healthy environment.
+
+
+FINANCE: MONEY GOES DIGITAL
+In a sense, the earliest forms of money—historically documented at least as
+far back as the Babylonian Code of Hammurabi in the second millennium
+BCE—represented the first platform businesses. Money is a form of value
+accepted by all the participants in a particular economic system, who
+thereby constitute an interactive network able to engage in transactions with
+one another for mutual benefit. So the world of finance—payment,
+currency, credit, investment, and the myriad transactions these generate—
+has always involved platform-like behavior.
+Today, online financial platforms like PayPal and Square have created
+new ways of conducting payment transactions (online in the case of PayPal,
+mobile and app-based in the case of Square), which in turn open doors to
+the creation of new categories of merchants. Just as the invention of money
+some four thousand years ago facilitated astonishing new flexibility and
+economic growth, the new digital platforms for financial transactions are
+encouraging thousands of participants to become producers and sellers as
+well as consumers.
+Financial platform companies are also working on unlocking new forms
+of value hidden within transaction data itself—something that only the new
+digital tools for gathering and analyzing that data make possible. Knowing
+who has transacted with whom can help companies discover consumer
+tastes and spending habits, information they can leverage to generate still
+more economic activity. For example, MasterCard is a venerable platform
+business that today operates a financial ecosystem linking two billion
+cardholders to 25,000 banks and more than 40 million merchants around the
+world. Now its technology R & D division, known as MasterCard Labs, is
+experimenting with payment mechanisms that are focused on creating new
+opportunities to expand the platform’s usefulness. Leveraging contextual
+data captured on the platform, these new tools encourage users to transact
+by determining the next possible payment opportunity, prompting the user
+toward it, and facilitating the interaction. ShopThis!, for instance, is a
+MasterCard Labs innovation that lets magazine readers click on an
+embedded app to instantly purchase an item they’ve read about from an
+affiliated retailer, such as Saks Fifth Avenue.8
+Other familiar financial platforms—many of them traditionally quite
+conservative in their business culture as well as significantly constrained by
+
+
+regulation—will be pushed to develop innovations based on the latest
+platform technologies. Commercial bankers, for instance, have been closely
+monitoring the rise of online peer-to-peer lending communities like Zopa
+and Lending Club, which are facilitating billions of dollars’ worth of
+financial transactions and providing credit while bypassing traditional
+gatekeepers. Peer-to-peer lending platforms have the potential to be
+particularly disruptive because of their ability to identify patterns in lending
+and borrowing from the troves of digital data they collect. Using these
+patterns, these platforms may be able to do a better job of identifying
+behaviors that predict defaults and fraud than traditional banks that rely on
+a static set of data markers. Partly for this reason, Lending Club is able to
+offer most borrowers a lower interest rate on their loans than that available
+from a traditional bank—while lenders earn a higher return than they would
+get from most conventional investments.9 Over time, commercial banks will
+be driven to adapt the same big-data tools that peer-to-peer lending
+platforms are using to measure and control risk.
+Alternative sources of funding for businesses are also creating new
+competition for banks. Platforms such as AngelList allow investors to join
+syndicates that offer funding to early-stage startups in exchange for equity
+participation. While these applications are themselves still at an early stage
+of development, they suggest the kinds of new investment models that
+platforms are making possible.
+Platform-based data analysis tools can also be used to enhance the
+marketing of financial products. Personal finance platforms such as Mint
+have begun gathering and analyzing data about users’ financial status,
+challenges, and goals that can enable financial institutions to target them
+with products designed to cater to their specific needs. Well-designed
+financial platforms can do a better job of consummating mutually beneficial
+matches between financial services and the consumers who need them than
+traditional sales and marketing channels have done. 
+Even more important, traditional financial institutions are beginning to
+use platform models to expand the reach of their services to segments of the
+economy that they formerly could not touch. For example, banks are
+leveraging platforms to tap the cash economy, which they see as a huge
+future source of growth, particularly in Asia. To gain a foothold in this
+arena, banks are building invoicing and payment platforms that enable
+small businesses in the cash economy to better conduct business with one
+
+
+another while capturing data about their interactions in the process. The
+analytics derived from this data will help banks target small businesses with
+financial products for the first time in a highly relevant manner. Likewise,
+some banks are offering digital services to assist consumers with real estate
+searches in the hope of gathering data that could indicate lending
+opportunities.
+Insurance is another space that is set to be rapidly transformed in the age
+of data platforms. Connected cars are now gathering real-time data about
+driving behavior, and insurance companies are leveraging such data to offer
+customized premium pricing based on user-specific driving habits. The
+growing popularity of wearable devices for tracking health and wellness
+indicators will create opportunities for health insurance companies to offer
+similarly customized insurance packages.
+Still another potential source of future growth is the hundreds of millions
+of “unbanked” people, both in the developing world and in less affluent
+neighborhoods in the U.S. and other developed countries, who currently
+have no access to tools that can help them pay their bills, borrow money,
+save, and make investments. Because they live in areas without bank
+branches and lack the capital needed to qualify for a traditional bank
+account or line of credit, the unbanked are forced to rely on costly,
+inconvenient, and sometimes fraudulent alternatives like check-cashing
+services, money order businesses, payday loan companies, and illegal loan
+sharks. These substandard financial operators represent another barrier to
+self-sufficiency that makes it harder for the poor to escape poverty.
+Now that millions of these less affluent consumers have access to mobile
+technology in the form of cell phones, the possibility of creating affordable
+online financial platforms customized to their needs has become a reality.
+Naturally, each of these poor or near-poor customers will generate less
+value for a bank or financial platform operator than a wealthy customer
+might—but their numbers are so vast that this market represents a huge
+business opportunity. In sub-Saharan Africa and other developing regions,
+telecom and technology companies such as Vodafone (through its
+Safaricom subsidiary) are sparring with traditional financial institutions
+such as Kenya’s Equity Bank to determine who will control the leading
+financial platform and its hundreds of millions of potential customers.10
+In this area, as in many others, the bankers have heard the message that
+is spreading through one industry after another—disrupt or be disrupted.
+
+
+Increasingly, they are looking to the platform model as the chief disruptive
+mechanism.
+LOGISTICS AND TRANSPORTATION
+Logistics and transportation—the business functions by which people and
+things are moved efficiently from place to place—are resource-intensive
+industries that were once largely unaffected by the emergence of digital
+business models. Logistics companies such as FedEx have enjoyed
+significant competitive advantages because of the huge fixed costs of
+owning a fleet of cars, trucks, and planes, which create enormous barriers to
+entry for competitors. But a platform approach doesn’t require fleet
+ownership. Platforms that can aggregate real-time market information on
+the movement of physical goods and carriers can orchestrate an ecosystem
+of third-party delivery agents to manage an efficient logistics and delivery
+system while requiring minimal capital investment.
+Specific industries that rely on complex logistical processing are already
+being transformed by the superior ability of platforms to coordinate the
+movement of vehicles and resources using highly efficient algorithms to
+match demand and supply. For example, San Francisco-based Munchery is
+one of several rapidly growing new food delivery platforms. By aggregating
+citywide demand according to specific time slots, Munchery’s algorithms
+determine the best truck routes to maximize density of delivery points,
+thereby minimizing the marginal costs of delivery. In Indonesia, a platform
+business named Go-Jek allows motorbike drivers to offer rides in a manner
+similar to Uber. Go-Jek also offers free food delivery throughout the
+Indonesian capital of Jakarta by leveraging the connected motorbikes and
+using cleverly designed algorithms to determine the most efficient delivery
+routes.
+LABOR AND PROFESSIONAL SERVICES: PLATFORMS
+REDEFINE THE NATURE OF WORK
+As we’ve discussed, some of the most dramatic examples of platform
+advances have involved labor markets. Every indication is that the
+
+
+transformation of work by the world of platforms is likely to continue in the
+decades to come, with some implications that are easy to foresee—and
+others that may take the world by surprise.
+One assumption that is already being shattered is the idea that only
+routine, semi-skilled jobs like taxi driving, food delivery, or household
+chores are susceptible. Even traditional professions like medicine and law
+are proving to be susceptible to platform models. We’ve already mentioned
+Medicast, which applies an Uber-like model to finding a doctor. Several
+platform companies are providing online venues where legal services are
+available with comparable ease, speed, and convenience. Axiom Law has
+built a $200 million platform business by using a combination of data-
+mining software and freelance law talent to provide legal guidance and
+services to business clients; InCloudCounsel claims it can process basic
+legal documents such as licensing forms and nondisclosure agreements at a
+savings of up to 80 percent compared with a traditional law firm.11
+In the decades to come, it seems likely that the platform model will be
+applied—or at least tested—in virtually every market for labor and
+professional services. How will this trend impact the service industries—
+not to mention the working lives of hundreds of millions of people?
+One likely result will be an even greater stratification of wealth, power,
+and prestige among service providers. Routine and standardized tasks will
+move to online platforms, where an army of relatively low-paid, self-
+employed professionals will be available to handle them. Meanwhile, the
+world’s great law firms, medical centers, consulting partnerships, and
+accounting practices will not vanish, but their relative size and importance
+will shrink as much of the work they used to do migrates to platforms that
+can provide comparable services at a fraction of the cost and with far
+greater convenience. A surviving handful of world-class experts will
+increasingly focus on a tiny subset of the most highly specialized and
+challenging assignments, which they can tackle from anywhere in the world
+using online tools. Thus, at the very highest level of professional expertise,
+winner-take-all markets are likely to emerge, with (say) two dozen
+internationally renowned attorneys competing for the splashiest and most
+lucrative cases anywhere on the globe.
+The platform transformation of labor will further accelerate trends that
+have already made huge inroads into the organization of work. The division
+of labor into smaller and smaller units of work, which Adam Smith
+
+
+recognized as a key to the productive capability of organizations almost
+three centuries ago, is likely to continue, powered by increasingly smart
+algorithms that are capable of breaking down a complex job into tiny,
+simple tasks to be handled by hundreds of workers, then reassembling the
+results into a unified whole. Amazon’s Mechanical Turk already applies this
+logic to many assignments.
+The trend toward freelance work, self-employment, contract labor, and
+nontraditional career paths will also continue to accelerate. The Freelancers
+Union estimates that one in three American workers already does some
+freelance work; that percentage is likely to increase in the years to come. Of
+course, this will be a mixed blessing. Many people who want flexibility and
+freedom to set their own working hours and conditions—artists, students,
+travelers, working moms, the semi-retired—will thrive in this new
+environment. Those who prefer stability and predictability in their work—
+or who are accustomed to relying on an employer for vital benefits such as
+health insurance and a retirement plan—will find the transition challenging,
+even painful. Traditional labor unions, which organized and defended the
+rights of the vast armies of workers that big corporations once employed,
+will continue to decline, leaving individuals to scramble for security on
+their own.
+As we noted when discussing the regulation of platforms in chapter 11,
+the growing dominance of the world of platforms will create genuine
+challenges for society. Traditional corporate employment once provided a
+safety net for millions of workers and their families. As the platform
+revolution shreds the final vestiges of that safety net, it seems clear that
+government—or some other new social institution, as yet unenvisioned—
+will have to find a way to fill the gap.
+GOVERNMENT AS PLATFORM
+Government, of course, is not an industry in the conventional sense. But it’s
+a major sector of the economy with a huge impact on the life of every
+citizen. And it certainly has the characteristics of being information-
+intensive, surrounded by gatekeepers (as anyone who has struggled with an
+unresponsive government bureaucracy will attest), fragmented (into dozens
+or hundreds of agencies with overlapping, often mutually contradictory
+
+
+mandates), and marked by information asymmetries (exacerbated by the
+legal mumbo-jumbo in which laws and regulations are usually written).
+So it’s understandable that ordinary citizens, along with well-intentioned
+legislators, elected officials, and civil servants, might be eager to apply the
+platform model to governments at all levels. Making government processes
+as transparent, responsive, flexible, user-friendly, and innovative as a well-
+designed and well-managed platform would be an enormous blessing to the
+country and could go a long way toward alleviating the cynicism and
+negativity with which many citizens currently view government.
+Of course, transforming government is easier said than done.
+Constitutional and legal restrictions, conflicting pressures from interest
+groups and lobbyists, partisan hostilities, budgetary constraints, the
+complex challenges inherent in developing services suitable for all citizens
+rather than just a self-selected subset, and the sheer inertia built into any
+organization that has grown through accretion over more than two centuries
+—all of these factors pose huge challenges to leaders who want to apply
+principles from the for-profit sector to streamlining government along
+platform lines.
+Yet despite these difficulties, local, regional, and national governments
+around the world are beginning to incorporate some of the benefits of the
+platform model into their daily operations. Perhaps not surprisingly, one of
+the leading examples is the city of San Francisco, perched at the northern
+end of Silicon Valley. The city’s Open Data policy, originally launched in
+2009 for implementation through the Mayor’s Office of Civic Innovation, is
+designed to promote the sharing of city data through an open-access portal,
+the creation of public–private partnerships to facilitate the development of
+value-creating tools that citizens and companies can use, and the promotion
+of data-based initiatives intended to improve the quality of life for everyone
+living in and around the San Francisco Bay area.
+The city’s data platform, dubbed DataSF, contains a vast array of
+information about the city, gleaned from both public and private sources, as
+well as an application programming interface and tips for outside
+developers who want to use the data to create apps. To encourage creative
+use of the platform, the city government has sponsored a series of Data
+Jams, Hackathons, and app competitions centered on specific civic
+challenges, from transportation to sustainable development. For example, in
+June 2013, San Francisco’s City Hall was the site of a Housing Data Jam in
+
+
+which fifty local entrepreneurs took a deep dive into issues related to local
+housing—homelessness, affordable home finance, building safety, energy
+efficiency, and more. By October, ten privately created apps had been
+launched using information from DataSF to create tools for improving
+housing conditions in the city. They included Neighborhood Score, a mobile
+app that provides a block-by-block health and sustainability score for every
+area of the city; Buildingeye, a map-based app that makes building and
+planning information easily accessible; Project Homeless Connect, which
+uses mobile technology to help people without shelter find the resources
+they need to get off the streets and into decent housing; and House Fax, a
+“Carfax for houses,” that allows homeowners and residents to access the
+maintenance history of a particular building.12
+Ongoing efforts to apply platform thinking to San Francisco city
+government include a number of other initiatives, including the creation of
+a single central portal where local businesses can manage all the licensing,
+regulation, and reporting requirements associated with operating in the city;
+the Universal City Services Card, which provides a one-stop location for
+accessing San Francisco services ranging from marriage licenses to golf
+course discounts; and a partnership with Yelp, the restaurant-rating
+platform, that will incorporate city health department scores for local
+eateries into their online Yelp profiles.
+While San Francisco has advanced the concept of “government as
+platform” further than most jurisdictions, similar efforts are underway in
+cities, states, and regions around the U.S. and the world. The federal
+government is beginning to travel the same path. Data.gov, launched in
+2009, has gradually been expanded, updated, simplified, and enhanced to
+make large amounts of once inaccessible government data easy to reach for
+every citizen, as well as providing tools to enable the building of apps using
+the data.
+The burgeoning government platforms that are springing up around the
+world will only be as open, democratic, and empowering as the sponsoring
+agencies and our political leaders will allow them to be. (It’s not surprising
+that the National Security Agency and other intelligence organizations are
+not among the federal offices participating in Data.gov.) Will the
+platforming of government usher in a new age of universal responsiveness,
+efficiency, and freedom … or will it further advantage the prosperous and
+the well connected at the expense of the poor and the powerless?
+
+
+THE INTERNET OF THINGS:
+A WORLDWIDE PLATFORM OF PLATFORMS
+At its core, the platform revolution is about using technology to connect
+people and provide them with tools they can use to create value together. As
+digital technology continues to advance—in particular, as chips, sensors,
+and communication devices continue to grow smaller and more efficient—
+the number and ubiquity of these connections continue to grow. Many are
+now being located not in computing devices such as laptops and cell phones
+but in ordinary machines and appliances—including everything from home
+thermostats and garage door openers to industrial security systems. With
+designers and engineers finding more and more ways to usefully link the
+machines, gadgets, and other devices people interact with daily, a vast new
+layer of data infrastructure is emerging that has been dubbed the Internet of
+things. This new universe of networks will have a profound impact on the
+power of tomorrow’s platforms.
+A wide range of companies is deeply engaged in the effort to build the
+Internet of things—and, if possible, to control both the new infrastructure
+and the ultra-valuable data it will provide. As we’ve mentioned, industrial
+firms like GE, Siemens, and Westinghouse are moving to create information
+links among the turbines, engines, motors, heating and cooling systems, and
+manufacturing plants they build and operate, hoping to enable tremendous
+new efficiencies and cost savings. Digital technology firms like IBM, Intel,
+and Cisco are racing to design the tools and connections that will make the
+vast new networks possible. And Internet-centered companies like Google
+and Apple are designing interfaces and operating systems that will enable
+both technology experts and ordinary people to have easy access to the
+Internet of things and use it in countless ways we’re only beginning to
+imagine and explore.
+What’s more, the potential power of the Internet of things will only
+continue to grow as the varieties of devices available to us and their
+capabilities continue to expand. To mention just a few examples, consider
+the transformative power of such just-around-the-corner technologies as
+driverless cars, cheap and powerful electrical storage batteries for the home,
+and easy-to-use 3D printers for quickly replicating useful objects. As these
+and other new tools become widely available, they’ll also quickly be linked
+
+
+to the Internet of things, making even more powerful value-creating
+platforms possible.
+Applied to the Internet of things, platform economics will dramatically
+alter the business models associated with countless familiar goods and
+services. Take, for example, the familiar lightbulb. Originally patented by
+Thomas Edison in 1878, the basic engineering of the incandescent bulb has
+scarcely changed since then, which is why the typical bulb retails for just 40
+cents and provides its maker with virtually no profit margin. It’s also highly
+inefficient, wasting more than 95 percent of the energy it uses in the form of
+heat.
+Improved products such as the compact fluorescent bulb and the light
+emitting diode (LED) have made lighting technology much more efficient
+as well as more profitable. But when home lighting systems are connected
+to the Internet of things, the very purpose of the lightbulb is transformed.
+Lights can be programmed for intruder alerts; they can flash to warn parents
+when a toddler is wandering near the stairs or the stove; they can blink to
+remind grandma to take her medication. Lights with wireless connectivity
+can track the energy consumption of other appliances, enabling lightbulb
+vendors to offer energy management services to homeowners and utility
+companies. Suddenly, the lightbulb maker can afford to give away a $40
+LED in exchange for a share of the ongoing revenues provided by
+networked services.
+Platform-based connections among household and personal devices have
+attracted much of the publicity surrounding the Internet of things. But the
+potential for transformation in the B2B world is, if anything, even greater.
+David Mount, a partner at the high-tech investment firm of Kleiner Perkins
+Caufield and Byers, refers to the coming wave of innovation as the
+Industrial Awakening. He lists eight markets with the potential to generate
+new multi-billion-dollar industries based on smart connections among
+industrial devices:
+•    Security: using platform-based networks to protect industrial assets from attacks
+•    Network: designing, building, and servicing the networks that will link and control industrial
+tools
+•    Connected services: developing software and systems to manage the new networks
+•    Product as a service: transitioning industrial companies from selling machines and tools to
+selling services facilitated by platform connections
+•    Payments: implementing new ways to create and capture value from industrial equipment
+
+
+•    Retrofits: equipping the $6.8 trillion worth of existing industrial machinery in the U.S. to
+participate in the new industrial Internet
+•        Translation: teaching a wide array of devices and software systems to share data and
+communicate with one another
+•    Vertical applications: finding ways to connect industrial tools at various places in the value
+chain to solve specific problems
+In total, Mount concludes (drawing on data from a World Economic
+Forum report) that the Industrial Awakening will generate $14.2 trillion of
+global output by 2030.13
+Economist Jeremy Rifkin has deftly summarized this development, as
+well as some of its broader implications:
+There are now 11 billion sensors connecting devices to the internet of things. By 2030, 100 trillion
+sensors will be [in place] … continually sending big data to the communications, energy and
+logistics internets. Anyone will be able to access the internet of things and use big data and
+analytics to develop predictive algorithms that can speed efficiency, dramatically increase
+productivity and lower the marginal cost of producing and distributing physical things, including
+energy, products and services, to near zero, just as we now do with information goods.14
+We may not be on the verge of seeing the majority of physical goods
+priced at or even near to zero—not yet. But it seems safe to say that we’ve
+barely begun to imagine the transformative potential of the platform model.
+A CHALLENGING FUTURE
+Having read this far, you’ve undoubtedly recognized that the authors of this
+book are, in many ways, enthusiastic about the economic and social
+changes being wrought by the rise of the platform. The remarkable
+efficiency improvements, innovative capabilities, and enhanced consumer
+options that platforms make possible have already begun to create amazing
+new forms of value for millions of people in many walks of life.
+But every revolutionary change has its dangers, and every major social
+and economic disruption creates both winners and losers. The platform
+revolution is no exception. We’ve already seen the problems some long-
+established industries are suffering as their familiar business models are
+upended by the advent of platforms. From newspaper publishers to record
+producers, taxi companies to hotel chains, travel agents to department
+stores, numerous businesses have seen their market shares, revenues, and
+
+
+profitability plummet in the face of platform competition. The fallout
+inevitably includes uncertainty, loss, and suffering on the part of countless
+individuals and even some entire communities.
+It’s easy for pundits and consultants to call for business leaders to “adapt
+and adjust” to a transformed business environment. But the process of
+adaptation is often lengthy, confusing, and painful, and some companies
+and workers will never find their way in the emerging platform-dominated
+world. It’s an unfortunate reality that society must recognize and deal with.
+Society must also respond to the structural changes that the platform
+revolution is creating. We examined some of these in chapter 11, including
+the unprecedented access to personal and business information enjoyed by
+the largest platform businesses; the massive shift from traditional forms of
+employment to more flexible yet uncertain modes of contingent, freelance
+work; the unpredictable external impacts, positive and negative, that
+platforms have on the communities in which they operate; and the potential
+for manipulation of individuals and entire markets by powerful platforms.
+Traditional forms of government regulation developed for pipeline
+businesses are inadequate to addressing the social challenges these
+platform-based upheavals will bring. But it will take time for policy-makers
+to fully understand the nature of the changes and to develop regulatory
+responses that protect citizens from the most serious dangers posed by the
+platform revolution without unduly stifling beneficial innovations. It will
+take even longer for ordinary people and the civil society organizations they
+support and rely upon to absorb the nature of the platform revolution and
+create appropriate institutional responses.
+History shows that it took generations for Western societies to develop
+effective responses to the dislocations and abuses associated with the
+Industrial Revolution of the eighteenth and nineteenth centuries—responses
+that included the union movement, the building of a modern skills-based
+educational system to prepare workers for new forms of employment, and
+the funding of a social safety net to care for those who fell through the
+cracks. In the same way, it will take time for contemporary societies to
+figure out what they need to do to respond appropriately to the shifts in
+economic, social, and political power being generated by the platform
+revolution—which is why we need to begin thinking about these issues
+now, as the contours of the revolution are beginning to emerge.
+
+
+One inevitable by-product of dramatic technological change seems to be
+hyperbole. From the popularizing of the term automation in the 1930s
+(when predictions about the obsolescence of work were common) to the
+dot-com and Internet booms of the 1990s and 2000s, there’s been no
+shortage of enthusiasts and hucksters breathlessly describing the latest
+innovations and declaring, “This changes everything!”
+We hope that, in this book, we’ve provided abundant evidence to
+document our belief that the platform revolution is indeed transforming our
+world in a host of significant and exciting ways. But there’s one thing the
+platform revolution will not change—namely, the ultimate goal that
+technology, business, and the entire economic system need to serve. The
+purpose of all these human constructs should be the unlocking of individual
+potential and the building of a society in which everyone has the
+opportunity to live a rich, fulfilling, creative, and abundant life. It’s up to all
+of us—business leaders, professionals, working people, policy-makers,
+educators, and ordinary citizens—to play our part in making sure that the
+platform revolution brings us closer to that objective.
+TAKEAWAYS FROM CHAPTER TWELVE
+    Industries that are most prone to platform transformation in the near future include those
+that are information-intensive, those with unscalable gatekeepers, those that are highly
+fragmented, and those characterized by extreme information asymmetries.
+    Industries that are less likely to be transformed by platforms in the short run include those
+with high regulatory control and high failure costs as well as those that are resource-
+intensive.
+    It’s possible to foresee some of the specific changes that are likely to impact selected
+industries in the decades ahead, including education, health care, energy, and finance.
+    The platform model will continue to shape transformations in the markets for labor and
+professional services as well as the operations of government.
+    The burgeoning Internet of things will add a new layer of connectivity and power to the
+platforms of the future, linking people and devices to one another in new value-creating
+ways.
+    The platform revolution will ultimately transform our world in unpredictable ways, calling
+for society as a whole to develop creative, humane responses to the challenges this change
+will produce.
+
+
+OceanofPDF.com
+
+
+ACKNOWLEDGMENTS
+The creation of a book is a team effort to which many people contribute. A few members of our
+publishing team have been particularly important to all three coauthors of Platform Revolution.
+We want to thank our editorial advisor, Karl Weber, for his tremendous skill in unifying the voices
+of three authors. Karl, your patience, wisdom, and experience have been essential.
+We want to thank our agent, Carol Franco, for her wise counsel at every stage of this project. And
+we are grateful to our editor at W. W. Norton, Brendan Curry, and to the rest of the Norton team for
+their enthusiasm and belief in this book.
+We would like to thank the many companies and organizations that have provided research
+funding and have made their employees available to us in support of our effort to better understand
+network business models. Geoff Parker and Marshall Van Alystne are grateful to organizations that
+include Accenture, AT&T, British Telecom, the California ISO, Cellular South, Cisco,
+Commonwealth Bank of Australia, Dun & Bradstreet, France Telecom, GE, Goldman Sachs, Haier
+Group, Houghton Mifflin Harcourt, IBM, Intel, the International Post Corporation, Law &
+Economics Consulting Group, Mass Mutual, Microsoft, Mindtree, Mitsubishi Bank, NetApp, PIM
+Interconnection, the State of New York, Pearson, Pfizer, SAP, Telecom Italia, Thomson Reuters, the
+U.S. Postal Service, and the U.S. Office of the Inspector General. This book is richer for the
+generosity of their support.
+Sangeet Choudary would like to thank the various companies he has worked with in advisory
+positions and on commissioned research, including the Centre for Global Enterprise, the INSEAD
+Business School, Intuit, Yahoo, Schibsted Media, Spotify, Commonwealth Bank of Australia,
+500Startups, JFDI Asia, Autodesk, Adobe, Accenture, Dun & Bradstreet, Webb Brazil, BHP Billiton,
+Philips, Shutterstock, SWIFT, the iSpirit foundation, and Telkom Indonesia. All these experiences
+have proven extremely valuable in building up Sangeet’s body of work on platforms.
+In addition, each of the authors has a personal list of friends, colleagues, advisors, and supporters
+they wish to acknowledge.
+GEOFFREY G. PARKER
+I thank my wife, Debra, my father, Don, and my children, Benjamin and Elizabeth, for their
+wonderful support and feedback during the process of writing this book.
+I thank my advisors and mentors at MIT—Arnold Barnett, Steve Connors, Richard DeNeufville,
+Charles Fine, Gordon Hamilton, Richard Lester, Richard Tabors, and Daniel Whitney—for their
+support, guidance, and enthusiasm. They truly opened up a new world to me.
+At MIT, I was fortunate to meet a group of lifelong collaborators: Edward Anderson, Nitin
+Joglekar, and Marshall Van Alstyne. I could not ask for a finer set of colleagues and friends.

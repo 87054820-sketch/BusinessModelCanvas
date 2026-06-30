@@ -1,0 +1,121 @@
+# Acknowledgments
+
+In the process of teaching and learning about platforms, I came to meet Tom Eisenmann, who has
+been a great friend and collaborator. His ideas have contributed significantly to this work.
+I was also fortunate to meet our coauthor Sangeet Choudary, who has worked at and consulted
+with numerous platform firms. His experience has been wonderfully complementary to my own.
+I thank Erik Brynjolfsson, Andy McAfee, Dave Verrill, and the great team at the MIT Initiative on
+the Digital Economy (IDE). The IDE has been instrumental in hosting the MIT Platform Summit and
+providing Marshall and me with the opportunity to work with multiple companies as part of our
+effort to bridge practice and academia.
+Peter Evans has inspired me with his insatiable curiosity and drive to measure the growing
+platform economy. I have also been fortunate to be part of a large community of like-minded scholars
+who are interested in the economics of information systems, and I am grateful for the regular
+interaction.
+I am grateful to my colleagues at Tulane University, who have provided a sounding board for me
+to test and strengthen the ideas presented in this book. I have also been fortunate to teach wonderful
+students at Tulane, who have eagerly helped to refine earlier versions of this material.
+I wish to acknowledge the National Science Foundation, the Department of Energy, and the
+Louisiana Board of Regents for their generous support of my research agenda.
+Finally, I again thank Marshall, who has joined me on a nearly twenty-year odyssey to try to
+understand the rules of the world we are living in and how to navigate its ever-changing waters. I
+look forward to many more years of entertainment and fascination as we continue the journey.
+MARSHALL W. VAN ALSTYNE
+Thank you, Erik and Alexander, for your love, support, and patience while Dad worked on this book.
+Thank you, Joyce, for carrying through on a project that’s finally over. Family will always matter
+most.
+I thank my advisors at MIT: Erik Brynjolfsson, Chris Kemerer, Stuart Madnick, Thomas Malone,
+Wanda Orlikowski, and Lones Smith.  The standards you set were remarkable. I also thank the MIT
+community for letting me be a part of it, for its openness, and for its joy in experimentation. There is
+a reason that Open CourseWare, edX, PET scans, RSA encryption, spreadsheets, and condensed soup
+sprang from people in this environment. It is one of the most grueling and at the same time one of the
+best intentioned and most rewarding places anywhere.
+I join Geoff in thanking the members of the great team at the MIT Initiative on the Digital
+Economy, including Dave Verrill, Erik Brynjolfsson, Andy McAfee, Glenn Urban, Tommy Buzzell,
+and Justin Lockenwitz. Thank you Michael Schrage for good wine and deep thoughts. You all are
+where great ideas gain great influence.
+Our work on platforms draws heavily on that of Tom Eisenmann and Andrei Hagiu at Harvard
+Business School, whose teaching materials are excellent. Tom in particular taught me how much
+theory really does need application, and his contributions as a collaborator have led to many
+successful papers.
+When it comes to understanding startups and social aspects of platforms, few could be better than
+our coauthor Sangeet Choudary, who has worked at and consulted with numerous platform firms. His
+experience is wonderful, and he could not be a better addition to our team.
+Recently, Peter Evans has inspired us with his ability to build a community of platform
+scholarship and deliver new data analytic insights into the behaviors of the network economy.
+At Boston University, I thank the research rebels—Erol Pekoz, Stine Grodal, and Chris Dellarocas
+—who meet regularly over lunch to discuss research, swap stories, and poke fun at each other’s
+ideas. As head of the digital learning initiative, Chris practices what we discuss here. Paul Carlile, the
+
+
+whole school and I owe you thanks for helping to create such a supportive and collaborative
+academic culture. Maria Anderson and Brett Marks, thank you for making everything work.
+In teaching, I owe much to my many students, especially those in IS710, IS827, and IS912, who
+helped me fully cook my half-baked ideas. It’s wonderful to see so many of you start companies and
+take leadership roles—please keep in touch with me as your careers blossom. Sinan Aral, a
+remarkable MIT student turned faculty member, helped sharpen some of my key ideas on networks.
+Students like Tushar Shanker, now at Airbnb, are the best reason to teach.
+The National Science Foundation deserves special credit for helping to launch my academic career
+with a CAREER Award, as well as providing numerous grants along the way via the IOC, SGER,
+iCORPS, and SBIR programs.
+Geoff Parker, it’s hard to imagine any of this without you. You’ve been a friend, collaborator,
+drinking buddy, and sparring partner—contributing to my growth in all the ways that mattered. It’s
+been almost two decades of output, but we’re just getting started. My best work has been possible
+because of you. Thank you.
+SANGEET PAUL CHOUDARY
+First and foremost, I thank my wife, Devika, and my parents, Varu and Effie, for supporting every
+decision I’ve ever taken, including the decision to quit a traditional career and devote my life’s work
+to understanding how connected systems transform the world. Out of this curiosity emerged the focus
+on researching platforms. 
+I also thank my parents-in-law, Payal and Arun Sikka, for their enthusiasm and support at every
+step of this journey. I thank my friends Yow Kin Cheong, David Dayalan, L. T. Jeyachandran, and
+many others who have enthusiastically partnered on this journey with me. 
+I want to especially thank my coauthors, Geoffrey Parker and Marshall Van Alstyne, for being the
+best allies and partners I could ever have asked for on this journey to understanding the impact of
+technology and connectivity on today’s economy. It’s been a privilege to have partnered with them in
+further building the body of work that explains this field.
+Finally, I am grateful to everyone who has followed my work on platforms on the Internet and
+across different research and media channels, embracing the principle of connected business models
+and my work on this topic as they work to transform their businesses. It is that large-scale proof of
+concept—multiple businesses globally applying this work and achieving important results—that
+drives me daily to build our understanding of this field further.
+OceanofPDF.com
+
+
+GLOSSARY
+Adjacent platforms. Platforms that serve similar or overlapping user bases.
+Application programming interface (API). A standardized set of routines, protocols, and tools for
+building software applications that makes it easy for an outside programmer to write code that will
+connect seamlessly with the platform infrastructure.
+Brand effects. The power of a highly positive brand image to attract consumers and lead to rapid
+growth of a business. Not to be confused with network effects.
+Convex growth. See Metcalfe’s law.
+Core developers. Programmers and designers who create the core platform functions that provide
+value to platform participants. These developers are generally employed by the platform managers
+—the brand names that are familiar to users, such as Apple, Samsung, Airbnb, Uber, and many
+others. Their main job is to get the platform into user hands and to deliver value through tools and
+rules that make the core interaction easy and mutually satisfying.
+Core interaction. The single most important form of activity that takes place on a platform—the
+exchange of value that attracts most users to the platform in the first place. Therefore, platform
+design generally starts with the design of the core interaction. The core interaction involves three
+key components: the participants, the value unit, and the filter. All three must be clearly identified
+and carefully designed to make the core interaction as easy, attractive, and valuable to users as
+possible.
+Cross-side effects. In a two-sided market, network effects created by the impact of user from one
+side of the market on users from the other side of the market—for example, the effects that
+consumers have on producers and the effects that producers have on consumers. Cross-side effects
+can be positive or negative, depending on the design of the system and the rules put in place.
+Curation. The process by which a platform filters, controls, and limits the access of users to the
+platform, the activities they participate in, and the connections they form with other users. When
+the quality of a platform is effectively curated, users find it easy to make matches that produce
+significant value for them; when curation is nonexistent or poorly handled, users find it difficult to
+identify potentially valuable matches amid a flood of worthless matches.
+Curation of participants. See Trust.
+Data aggregators. Outside developers that enhance the matching function of the platform by adding
+data from multiple sources. Under license from the platform management, they “vacuum up” data
+about platform users and the interactions they engage in, which they generally resell to other
+companies for purposes such as advertising placement. The platform that is the source of the data
+shares a portion of the profits generated.
+Enhanced access. The provision of tools that enable a producer to stand out above the crowd and be
+noticed on a two-sided platform, despite an abundance of rival producers and the resulting intense
+competition to attract consumer attention. Platforms that charge producers fees for better-targeted

@@ -47,6 +47,7 @@ function memoryContextFromAttachedRef(ref: AttachedRef | null): { projectId?: st
   if (!ref) return { contextLabel: 'Strategy library / new project' };
   if (ref.type === 'case') return { contextLabel: `Case: ${ref.companyName}` };
   if (ref.type === 'pattern') return { contextLabel: `Pattern: ${ref.name}` };
+  if (ref.type === 'resource') return { contextLabel: `Resource: ${ref.title}` };
   if (ref.projectSource === 'library') return { contextLabel: `Read-only library project: ${ref.projectName}` };
   return { projectId: ref.projectId, contextLabel: ref.projectName };
 }

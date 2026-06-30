@@ -1,0 +1,1828 @@
+# 7 Phase 3—Scenario Development: Digging Deeper
+
+128 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+about the baby boom generation, because the aging of that generation can 
+be predicted with precision. Likewise, we will know how many teenagers 
+there will be in 2010–2020 because they have already been born. The U.S. 
+dependence on foreign oil is a constrained situation, meaning that it is likely 
+that the dependence will continue until alternate fuel sources are developed. 
+However, given the technological and infrastructural implications of the 
+United States (or almost any other nation), switching to a non-petroleum-
+based fuel is unlikely in the near term. “In the pipeline” refers to things 
+that have happened, but the consequences have yet to unfold. For example, 
+Apple’s dominance of online media is unexpected to some, and how far that 
+company will take it is not yet certain, but its presence is undeniable. The 
+U.S. deﬁcit is an example of an inevitable conclusion, meaning that the 
+debt has a direct inﬂuence on other obvious decisions such as raising taxes 
+(Schwartz, 1991). If an element seems certain, no matter what scenario 
+comes to pass, then it is probably a predetermined element.
+CRITICAL UNCERTAINTIES
+“Critical uncertainties are intimately related to pre-determined elements. 
+You ﬁnd them by questioning your assumptions about pre-determined ele-
+ments” (Schwartz, 1991, p. 115). Thus, what might happen to change the 
+U.S. dependence on foreign oil? While the U.S. deﬁcit is often a predeter-
+mined element, what are the forces that could change the U.S. debt. Ulti-
+mately, decision makers will identify the critical uncertainties in a workshop 
+designed for a group to identify forces with the highest potential impact on 
+the organization and that are the most uncertain. What is uncertain, how-
+ever, is intimately related to what is predetermined. So, playing with these 
+forces in different conﬁgurations is where insight can be found. 
+Great care is needed in sorting out the predetermined elements (Burt, 
+2006). This is because “a poorly observed fact is more treacherous than a 
+faulty train of reasoning” (Wack, 1985a, p. 18). Many of the errors in judg-
+ment observed at Shell were cases in which predetermined elements and 
+critical uncertainties became mixed up. Thus, a hallmark of scenario plan-
+ning is in separating what is predictable (predetermined) from what is truly 
+open to change (uncertain). 
+Understanding these forces is the basis of the scenario development phase 
+and will shape the structure of the entire scenario planning project. Ini-
+tial scenario construction occurs through a series of workshops in which 
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+129
+participants dialogue about important issues affecting the organization. 
+The task is to separate out the forces that have both the highest relative po-
+tential impact on the organization and the highest relative uncertainty. This 
+is a subjective task, accomplished by intense dialogue and debate. Exchang-
+ing ideas allows participants to understand each other’s perspectives, open 
+up their mental models, and create the basis for a shared mental model of 
+the organization and the situations it may face. 
+INDUCTIVE VERSUS DEDUCTIVE SCENARIO CONSTRUCTION
+Induction is usually described as moving from speciﬁc ideas or factors to 
+general laws, whereas deduction begins with general overarching concepts 
+and clariﬁes toward the speciﬁc. Arguments based on personal experiences 
+are best expressed inductively, while arguments based on laws or widely ac-
+cepted principles are best expressed deductively. Either approach can be ap-
+plied to scenario projects, and both have beneﬁts and drawbacks. It is always 
+wise to adopt the technique best suited to the culture of the organization. 
+For example, engineers and academics will probably be more comfortable 
+with the deductive method, while designers will love the freedom of the 
+inductive method (Wright, Cairns, & Goodwin, 2009).
+The simplest approach to scenario planning is through inductive sce-
+nario construction. This method has two different strategies: (1) a simple 
+brainstorming approach and (2) using the “ofﬁcial future.” 
+The ﬁrst method is to brainstorm a variety of different scenarios. Effec-
+tively using this method requires that users be highly “tuned in” to their in-
+dustry and organization. Few rules apply in this method, and the only goal 
+is to develop different stories that are based on major events or innovations 
+that have dramatic implications. For example, how can cell-phone compa-
+nies think beyond Apple’s iPhone, instead of simply copying it? What could 
+be the next surprising evolution in mobile information technology?
+The second method within the inductive approach is to consider the 
+ofﬁcial future, which is usually a forecast, and then ask, “Where might our 
+forecast be wrong?” The ofﬁcial future is a surprise-free, status quo, growth-
+as-usual scenario. It carries its own set of driving forces, and if they can be 
+understood, varying them will introduce some thought-provoking alterna-
+tives. The elements of the ofﬁcial future are usually found in the interviews. 
+Therefore, the interviews are the critical method of information gathering 
+in the inductive approach to scenario development.
+
+
+130 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+The unstructured nature of the inductive scenario approach lends itself 
+to small organizations or situations in which participants have considerable 
+prior experience with scenarios. Early scenario work was inductive, and the 
+use of the ofﬁcial future was a “bridge” into the world of scenario thinking 
+for managers who were initially resistant. The inductive approach may not 
+be suitable for cultures unfamiliar with scenario planning or those lacking 
+patience and comfort with debate (Ogilvy & Schwartz, 1998). Because the 
+inductive approach is informal and unstructured, it does not necessarily re-
+quire the clearly deﬁned question, scenario project proposal, or external and 
+internal analyses that have been presented thus far. The inductive approach 
+is best suited to experienced users of scenarios and organizations in which 
+scenario thinking has become “a way of planning.” The inductive method is 
+most useful in situations in which speciﬁc people are dedicated to thinking 
+about strategy as their core function for the organization. 
+Inductive scenario construction is also the result of resident geniuses, 
+or great men and women who parlayed their thinking skills and established 
+track records of helping companies avoid major discontinuities. Thinking in 
+alternative futures is a natural human ability, but most have lost those skills. 
+We need to be reminded, and the ﬁrst step is a structured way to think 
+about the future. This book provides that structure, which begins with the 
+deductive approach. Working through the scenario system presented in this 
+book is a reminder of how we naturally approach dilemmas—we think in 
+alternatives.
+The deductive approach to scenario planning is structured; thus, it is 
+common. The deductive approach typically features the workshops, rank-
+ing exercises, and a 2 × 2 matrix that have become a hallmark of scenario 
+planning. The workshops in the deductive approach create time and space 
+for participants to think and talk about strategic issues. Bringing a cross 
+section of organizational decision makers together to work on strategic is-
+sues is believed to draw on the collective thinking within the organization 
+to tackle difﬁcult problems and dilemmas. The fact is, few organizations 
+create ways for colleagues to jointly reﬂect on strategic issues. Using the de-
+ductive approach, by its nature requiring involvement, contributes to com-
+munity building in the organization. The deductive approach is a modern 
+version of sharing stories and having conversations about difﬁcult issues 
+around a campﬁre.
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+131
+EIGHT COMPONENTS OF SCENARIO 
+DEVELOPMENT
+Having established these important terms and approaches to scenario devel-
+opment, we can now turn to the details of the scenario development phase. 
+There are eight important and well-known pieces of scenario development:
+1. Brainstorming the issues the organization is facing
+2. Ranking those issues according to their relative impact on the 
+organization
+3. Ranking those issues according to their relative uncertainty
+4. Developing the scenario logics by selecting issues “high” on both 
+rankings to build a scenario matrix
+5. Constructing the research agenda
+6. Deﬁning the scenario plots and titles 
+7. Writing the detailed scenario stories
+8. Creating the scenario communication strategy
+These pieces are the focus of this chapter, with the goal of understand-
+ing the forces that drive the organizational system and its environment. The 
+ﬁrst four of these pieces are best done as workshops. These workshops are 
+described, one for each of the pieces of the scenario development phase (Fig-
+ure 7.1). The ﬁrst three workshops are all aimed at identifying and sepa-
+rating the predetermined elements and critical uncertainties. The fourth 
+workshop describes how to hone the critical uncertainties to build scenarios. 
+Tips are provided for deriving the scenarios and writing the scenario sto-
+ries. Finally, methods for presenting the scenarios to the organization are 
+covered. 
+OVERVIEW OF THE SCENARIO  
+CONSTRUCTION WORKSHOPS
+Once the initial issue is deﬁned, the purpose of the project has been set, and 
+a general understanding of internal and external dynamics is developed, a 
+series of workshops must be designed to build scenarios. The number and 
+length of these workshops will vary according to the number of people in-
+volved, the size of the organization, and the complexity of the issue. This 
+
+
+132 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+chapter presents a series of workshops for constructing scenarios. In some 
+cases these can be combined, particularly if the project is small. The ﬁrst 
+task is brainstorming the issues and concerns of the group, and beginning a 
+general group dialogue. 
+Dialogue is a key component of the scenario-building process. Dialogue 
+is the mechanism for uncovering individual mental models and working 
+toward a shared group mental model of the issue, the organization, and its 
+external environment. Workshops following the brainstorming activity are 
+more speciﬁc and are aimed at separating major forces into predetermined 
+elements and critical uncertainties. The workshops are a way to leverage the 
+collective capital inside the organization, build a collective mental model of 
+the issue, and cull out what is truly uncertain. However, these workshops 
+are not a substitute for deep research and reﬂective, critical thinking on the 
+F I G U R E  7.1  The Performance-Based Scenario System—Scenario Development 
+Phase
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+133
+driving forces of a given industry. The project leader and the scenario plan-
+ning team must continue to identify areas that require further research as 
+the project proceeds.
+BRAINSTORMING THE MAJOR FORCES—WORKSHOP 1
+The brainstorming workshop is simple in concept. The purpose is to cap-
+ture what participants perceive are the major forces the organization is fac-
+ing that relate to the problem or issue deﬁned. This workshop usually takes 
+a half-day to a full day. It is important to get input from all participants 
+and allow enough time to capture everything that is said. An effective way 
+to structure this workshop is in a meeting room with empty wall space, 
+whiteboards, or newsprint taped to the walls. Give each participant a pad of 
+sticky notes (or hexagons), and ask them to write a single issue on each note 
+and stick it to the wall (see Figure 7.2). Because this is a true brainstorming 
+session, everything is included, and order does not matter, nor does the loca-
+tion in which sticky notes are placed. When dominating personalities are 
+present, it can be helpful to establish ground rules, such as no talking dur-
+ing a portion of the activity until the placement of sticky notes is complete. 
+Once participants have exhausted their ideas, it is useful to have an open 
+dialogue. Speciﬁc brainstorming methods can be used, such as the nominal 
+group technique (Delbecq & Van de Ven, 1971), to ensure participation 
+from each member, and to rein in dominant personalities. 
+F I G U R E  7.2  Brainstorming Key Forces
+
+
+134 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+An important point of the brainstorming exercise is to strive for granu-
+larity. That is, each force should be written such that they are all relatively 
+equally big or small forces. It is also important that the forces are written 
+ambiguously so that normative judgment can be added later on. For ex-
+ample, use “technology skills,” not “technology is here to stay.” 
+Brainstorming is usually a lot of fun. The goal is to get the ideas ﬂow-
+ing freely and include everything—no matter how far-fetched things may 
+initially seem. The workshops for Technology Corporation were a lot of fun 
+because the participants were engaged. This could be attributed to leaders 
+who were committed to the project and created an atmosphere in which 
+people felt comfortable contributing their ideas. While a few individuals 
+felt intimidated by the hierarchy, for the most part, participants were set at 
+ease, and the exercises became engaging, fun exchanges among colleagues. 
+A simpliﬁed version of Technology Corporation’s initial brainstorm session 
+is in Figure 7.3.
+Brainstormed items should be grouped when there is overlap. Dupli-
+cations should be combined so that a cleaner, more efﬁcient scattering of 
+major forces is built. Once completed, these are the forces perceived to be 
+driving the environmental system in which the organization is operating.
+The categories used in the scan of the external environment should be 
+kept in mind while brainstorming and distilling these issues. The major fac-
+tors affecting any business are usually found in examining the social, tech-
+nological, environmental, economic, and political environments. These are 
+usually macro issues. For example, many current scenario projects would 
+include the volatility of the U.S. economy and its time line to recovery as 
+major issues in the external environment.
+Before moving on to the ranking workshops, sometimes it is helpful to 
+look at the list of brainstormed forces and simply ask:
+• Which of these are predetermined? (Which are outcomes of things 
+that have already taken place or are currently underway?)
+• Which of these are truly uncertain? (Which forces carry truly 
+uncertain outcomes?)
+RANKING THE FORCES BY RELATIVE IMPACT ON THE 
+ORGANIZATION—WORKSHOP 2
+The next step in understanding the major forces is ranking the issues ac-
+cording to their potential impact on the organization’s strategic agenda. 
+
+
+F I G U R E  7.3  Technology Corporation’s Brainstorm Activity
+Consistency of
+management
+practices
+Employee
+benefits
+Risks
+associated
+with new
+technologies
+Local natural
+disaster
+3 start-ups
+with
+management
+groups of 3
+Developing
+markets
+Focus on 2 or
+3 technologies
+or markets
+Partnerships
+with big
+companies
+Looming
+recession or
+depression
+Global energy
+market
+Collapse of
+credit markets
+Shift in
+organizational
+culture
+Selling
+technology
+Returning to
+old projects
+Intellectual
+property
+development
+and
+management
+SBIR funding
+is decreased
+or out
+Current
+R&D—
+developing it
+and keeping
+it up
+Loss of the
+president of
+the company
+Organizational
+role and
+definition
+Breakthrough
+innovation
+Internal talent
+management
+Government
+regulations
+(e.g., mining,
+water
+treatments)
+Finding the
+right niche
+industry
+New company
+formation
+Time required
+for building
+business
+relationships
+Long
+organization
+time cycles
+
+
+136 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+This ranking occurs horizontally across the working space—preferably a 
+long empty wall in an open meeting room with newsprint taped to it—sim-
+ply ranging from “Low” to “High” (Figure 7.4). The goal is to separate the 
+truly critical factors from the other. This is not to say that the other factors 
+are not important. Rather, the high-impact items are those that have the 
+power to fundamentally reshape the business. If these factors are perceived 
+differently, they can provoke signiﬁcant strategic insights. Figure 7.5 shows 
+the brainstorming activity from Technology Corporation with forces sim-
+pliﬁed, and then ranked horizontally according to impact.
+This ranking exercise can take several hours to a full day, depending on 
+the number of participants involved. Viewpoints will differ, and conversa-
+tions that develop around understanding the varying viewpoints are how 
+mental models continue to be shared. This face-to-face dialogue is critical 
+to scenario planning. The knowledge friction (meaning the resolution of 
+multiple viewpoints into a more complete understanding) is what allows 
+many participants to experience a signiﬁcant shift in insight (Rochlin, 
+1998). This has been referred to as an “aha” moment, and it happens when 
+participants are able see the situation with new eyes. 
+F I G U R E  7.4  Ranking Forces by Relative Impact on the Strategic Agenda
+Low 
+High
+
+
+F I G U R E  7.5  Technology Corporation’s Brainstormed Forces, Simplified and Ranked by Relative Impact on the Strategic Agenda
+Internal talent
+management
+Long
+organization
+time cycles
+Finding the
+right niche
+industry ....
+Consistency of
+management
+practices
+Developing
+markets
+Focus
+on 2 or 3
+technologies
+or markets
+Intellectual
+property
+development
+and
+management
+Organizational
+role and
+definition
+Breakthrough
+innovation
+Government
+regulations
+(e.g., mining,
+water
+treatments)
+Employee
+benefits
+Looming
+recession
+or
+depression
+Global
+energy
+market
+Collapse
+of credit
+markets
+Loss of the
+president of
+the company
+Shift in
+organizational
+culture
+3 start-ups
+with
+management
+groups of 3
+Current
+R&D—
+developing it
+and keeping
+     it up
+SBIR funding
+is decreased
+or out
+Selling
+technology
+New company
+formation
+Partnerships
+with big
+companies
+Low
+High
+Relative Impact on Technology Corporation’s Strategic Agenda
+
+
+138 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+RANKING THE FORCES BY RELATIVE UNCERTAINTY— 
+WORKSHOP 3
+The next exercise is focused on ranking the issues by uncertainty. This 
+ranking is done vertically, again according to “Low” and “High” uncer-
+tainty (see Figure 7.6). 
+Again, signiﬁcant disagreement will arise. Conversation, debate, and 
+dialogue are intended to support the extension of participant perceptions. 
+By listening to a variety of perspectives and describing their own, partici-
+pants build their own mental scaffolding. Once the scaffolding is in place, 
+the group can work toward a shared mental model. Figure 7.7 shows the 
+uncertainty/impact matrix for Technology Corporation. 
+BUILDING THE SCENARIO LOGICS—WORKSHOP 4
+The next workshop is aimed at creating the scenario logics. The scenario log-
+ics are the general frameworks—or the plots of the scenarios. These are also 
+known as proto-scenarios (van der Merwe, 2008). Once the participants have 
+ranked the issues by impact on the strategic agenda and by uncertainty, the 
+ranking space is divided roughly into quadrants (see Figure 7.8). Figure 7.9 
+F I G U R E  7.6 Ranking Forces by Relative Uncertainty
+High
+Uncertainty
+Impact
+Low 
+High
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+139
+F I G U R E  7.7 Uncertainty/Impact Matrix for Technology Corporation
+Low
+High
+Relative Impact on Technology Corporation’s Strategic Agenda
+Low
+High
+Relative Uncertainty
+Local natural
+disaster
+Looming
+recession or
+depression
+Collapse of
+credit markets
+Global energy
+market
+Shift in
+organizational
+culture
+Loss of the
+president of
+the company
+Consistency of
+management
+practices
+Organizational
+role and
+definition
+Employee
+benefits
+Finding the
+right niche
+industry
+Developing
+markets
+Internal talent
+management
+Long
+organization
+time cycles
+3 start-ups
+with
+management
+groups of 3
+Focus on 2 or
+3 technologies
+or markets
+Intellectual
+property
+development
+and
+management
+Breakthrough
+innovation
+Government
+regulations
+(e.g., mining,
+water
+treatments)
+Partnerships
+with big
+companies
+Selling
+technology
+SBIR funding
+is decreased
+or out
+New company
+formation
+Current
+R&D—
+developing it
+and keeping
+it up
+F I G U R E  7.8  Quadrants of the Ranking Space
+High
+Low 
+High
+
+
+140 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+shows the ranking space divided into quadrants for the Technology Cor-
+poration case. 
+The Quadrants of the Ranking Space
+By dividing the ranking space, the issues can be grouped into general areas 
+as follows:
+• High impact–Low uncertainty
+• Low impact–Low uncertainty
+• Low impact–High uncertainty
+• High impact–High uncertainty
+Issues that are ranked high impact–low uncertainty are major issues 
+but are also relatively stable. Major industry shifts that are already under-
+way, such as new government regulations, would characterize this category. 
+Issues that are low impact–low uncertainty are issues that can be readily 
+dealt with. These issues generally do not require a signiﬁcant investment 
+F I G U R E  7.9 Technology Corporation’s Quadrants
+Low
+High
+Relative Impact on Technology Corporation’s Strategic Agenda
+Low
+High
+Relative Uncertainty
+Local natural
+disaster
+Looming
+recession or
+depression
+Collapse of
+credit markets
+Global energy
+market
+Shift in
+organizational
+culture
+Loss of the
+president of
+the company
+Consistency of
+management
+practices
+Organizational
+role and
+definition
+Employee
+benefits
+Finding the
+right niche
+industry
+Developing
+markets
+Internal talent
+management
+Long
+organization
+time cycles
+3 start-ups
+with
+management
+groups of 3
+Focus on 2 or
+3 technologies
+or markets
+Intellectual
+property
+development
+and
+management
+Breakthrough
+innovation
+Government
+regulations
+(e.g., mining,
+water
+treatments)
+Partnerships
+with big
+companies
+Selling
+technology
+SBIR funding
+is decreased
+or out
+New company
+formation
+Current
+R&D—
+developing it
+and keeping
+it up
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+141
+of analysis to better understand. Items in these two categories are also, by 
+deﬁnition, predetermined elements. It is worthwhile going over each of 
+these again to make sure they really belong in this category. Things that 
+are misread and grouped as predetermined elements, but are actually quite 
+uncertain, can lead to signiﬁcant errors in judgment (Wack, 1985a, 1985b).
+Issues ranked low impact–high uncertainty require further research be-
+cause of the high uncertainty ranking. High uncertainty rankings simply 
+mean that the eventual outcomes of these issues are unknown. Even though 
+the group has agreed that their impact is low, it is worth conducting some 
+extra research because of the potential volatility of these issues.
+Finally, issues ranked high impact–high uncertainty are called the criti-
+cal uncertainties (Figure 7.10). These are the issues that have the potential 
+to fundamentally shift the assumptions under the strategic agenda and is-
+sues whose outcomes are highly uncertain. These critical uncertainties are 
+used to construct the scenario logics. 
+The 2 × 2 Scenario Matrix
+Scenario logics are built by choosing two critical uncertainties and plotting 
+them in a 2 × 2 matrix (see Figure 7.11). Remember that the critical uncer-
+tainties are the items ranked high on their potential impact and high on un-
+certainty. The two critical uncertainties chosen for the scenario matrix must 
+F I G U R E  7.10  The Critical Uncertainties
+High
+Low 
+High
+
+
+142 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+be independent variables. Facilitators should steer the group toward “useful” 
+variables, not “right” variables. By combining two critical uncertainties, the 
+themes of the four scenarios become apparent. Normative judgment is now 
+applied to each critical uncertainty, generally adding a high and low value 
+to each. 
+A variety of methods can be used to choose the two critical uncertain-
+ties, such as value voting, poker chips, and the nominal group technique 
+(Delbecq & Van de Ven, 1971). All are variations on the same process. For 
+example, in value voting, each participant is given twenty one-dollar bills 
+(real or not) and asked to allot their dollars among the critical uncertainties. 
+As each participant “spends” his or her money, the critical uncertainties are 
+prioritized, and the top two can be chosen for use in the 2 × 2 matrix. It is 
+worth the time to experiment with a few different 2 × 2 matrices to get a 
+sense of the different scenario logics that can surface from this part of the 
+workshop. The goal of this workshop is to develop four scenario logics.
+In Technology Corporation, the scenario team worked through the ini-
+tial brainstorming exercise, the two ranking exercises, and prioritized the 
+F I G U R E  7.11  Developing the Scenario Matrix
+Low 
+High
+High
+Low
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+143
+critical uncertainties. After several hours of debate and dialogue, the team 
+settled on two critical uncertainties: funding sources and talent management. 
+These items were placed on the X and Y axes of the matrix in Figure 7.12. 
+These scenario logics must be plausible, challenging, and relevant. 
+Strategies for assessing scenarios are presented in detail in Chapter 9. At this 
+point in the project, the scenario logics must meet three criteria as a face 
+validity check. The scenarios must be plausible in that they can potentially 
+draw from data and facts, and present an acceptable view of the future. 
+They must be challenging in that they can assemble events and facts in a 
+way that challenges the current mental models. They must be relevant in 
+that they relate to the key issues that have been expressed during the project 
+and draw on real concerns of managers in the organization.
+If some of the scenarios resulting from the 2 × 2 matrix do not meet 
+these criteria, two more critical uncertainties can be mapped on another 
+matrix until four useful scenarios come together (see Figure 7.13). The is-
+sue with using another set of two critical uncertainties becomes keeping 
+F I G U R E  7.12  Technology Corporation’s Scenario Matrix
+Primarily R&D 
+Contract Based
+Primarily  
+SBIR Based
+Cohesive, Cross-functional, 
+Collaboratively Innovative
+Neglected, Siloed, 
+Individually Innovative
+Talent Management
+Concorde
+Airbus
+Titanic
+Horse and Buggy
+Funding Sources
+
+
+144 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+a coherent “set” of scenarios with a common theme. However, it is a mis-
+take to sacriﬁce the validity of the scenarios (based on their being plausible, 
+challenging, and relevant) to maintain the common theme. The priority is 
+developing scenarios that are plausible, can challenge current thinking, and 
+are relevant to managers’ deepest concerns.
+The Number of Scenarios to Use—Why Four? 
+There is debate about the number of scenarios that should be developed. 
+One approach is never more than four, and some have suggested the opti-
+mal number is one status quo scenario, plus two genuine alternatives (Wack, 
+1984). The status quo scenario is used to get decision makers to take the 
+bait. Then two genuine alternatives can be presented that deliver compel-
+ling stories of fundamentally different futures.
+When two scenarios are used, there is a tendency among novice scenar-
+ists to have a “good” scenario and a “bad” scenario. When using three sce-
+narios, the tendency is to fall into “best case,” “worst case,” and “status quo” 
+thinking. Five scenarios are too many for decision makers to entertain. For 
+years, Royal Dutch/Shell has used two scenarios. The key is to make sure 
+the scenarios are distinctive and memorable. 
+In my experience, I have often found that four scenarios seem to be the 
+optimal number and can help in avoiding some common thinking traps. 
+This number is also a natural outcome of the 2 × 2 matrix approach. There 
+F I G U R E  7.13  Developing the Scenario Matrix Using Additional Critical 
+Uncertainties
+4 relevant, plausible, and 
+challenging scenarios
+or
+Low 
+High
+High
+Low
+1
+3
+2
+4
+Low 
+High
+High
+Low
+1
+2
+Low 
+High
+High
+Low
+3
+4
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+145
+is no clear rule here, and many successful documented projects have used 
+two or three scenarios. No matter how many scenarios are used, attention 
+must be paid to make sure these common mistakes are avoided. The best 
+way to do this is to make sure that the scenarios do more than simply pres-
+ent different quantiﬁcations of obvious variables. They have to present a 
+story line, laying out the “characters” and data to support their actions in 
+the scenarios in a surprising or interesting way.
+Using the “Official Future” 
+It can be useful to include a surprise-free status quo scenario, called the “of-
+ﬁcial future” or the “consensus forecast.” This scenario is an extension of 
+the past into the future, and it holds little that is challenging or useful for 
+decision making. The ofﬁcial future is a common feature of ﬁrst attempts at 
+scenario planning when executives are unable to leave behind their training 
+to seek “the answer” and a reliance on forecasts and predictive approaches to 
+strategy. The ofﬁcial future is a safe option and can be included when man-
+agers are presumed to have a difﬁcult time adjusting to scenario thinking. 
+This way, managers can see their forecasted scenario in the set of scenarios, 
+and entertaining the other options is not quite as uncomfortable. The ofﬁ-
+cial future can be a bridge into the future and into the discipline of scenario 
+thinking for those unfamiliar with it (Wack, 1984). 
+Technology Corporation Scenario Logics
+The Technology Corporation scenarios are based on the deductive approach 
+and feature four scenarios. Technology Corporation is based on a real sce-
+nario project (with some changes to conceal the identity of the organiza-
+tion). The scenario team reviewed all of the critical uncertainties, focusing 
+on two that were particularly relevant. As noted, the team settled on using 
+“talent management” and “funding sources” as their critical uncertainties 
+for building the scenario matrix (see Figure 7.12, earlier).
+An interesting unexpected outcome for Technology Corporation was 
+the emerging awareness of extent to which the organization relied on its 
+CEO. With no clear succession plans, the scenario team had discussed 
+what would happen if the CEO suddenly became ill. Technology Corpo-
+ration’s CEO was in his second career after retirement and was getting to 
+an age at which health problems are somewhat common. The point is that 
+the scenario project provoked conversations that the organization did not 
+
+
+146 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+previously have the capacity to have. Although the issue of the aging CEO 
+was not selected as one of the items for building the scenario matrix, it is an 
+example of a “character” that could appear in any of the scenarios, adding 
+an interesting twist to the story. Figure 7.14 presents each of the four sce-
+narios, capturing its essence with a photo and short description. 
+F I G U R E  7.14  Technology Corporation’s Scenario Matrix
+CONCORDE
+Neglect of talent with significant wins 
+in contract R&D
+We’re getting there, but success depends on 
+the work of a few . . .
+AIRBUS
+Sincere collaboration and cross-
+disciplinary cohesion with significant 
+wins in contract R&D
+We’re getting there and everybody is going 
+with us!
+ HORSE AND BUGGY
+Sincere collaboration, but continued 
+reliance on SBIR funding exclusively
+ 
+ 
+An archaic approach to progress
+TITANIC
+Individual success, silos, and continued 
+reliance on SBIR funding exclusively
+We’re slowly heading precisely where we 
+don’t want to go . . .
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+147
+THE SCENARIO RESEARCH AGENDA
+Before outlining and writing the scenario stories, further research must be 
+conducted for each scenario logic. A practical way to accomplish this is to 
+assign a member from the team to gather more information on the driv-
+ing forces in each scenario. Or, if the team is large, it is effective to have 
+subgroups work on each scenario. The goal is to share the workload and 
+stimulate further inquiry into each set of variables that come together in 
+the scenario. In a few meetings, the scenario planning team can talk about 
+the features of each scenario logic and determine where further research is 
+required. Then, individuals or subgroups can tackle each scenario, gather 
+research on the driving forces, and begin thinking about plots. Groups 
+should develop detailed responses to the following questions for each sce-
+nario (Schwartz, 1991):
+• What are the driving forces?
+• What do you feel is uncertain?
+• What is inevitable?
+The scenario team can be reconvened to discuss answers to these ques-
+tions. Conversations get going and ideas start ﬂowing. When the ideas are 
+ﬂowing naturally, it is good to take a break and let individuals reﬂect. After 
+an overnight break, team members often return with excitement and sce-
+nario plots almost completely conceptualized (Schwartz, 1991).
+PLOTS
+Each scenario must have a plot. The general plot is outlined and deﬁned 
+before the story line is written. It is helpful to use subgroups of the scenario 
+planning team to brainstorm plots and exchange ideas. Three common 
+plots include “winners and losers,” “challenge and response,” and “evolu-
+tion” (Schwartz, 1991).
+• The “winners and losers” plot is based on the familiar story of a pro- 
+tagonist against an antagonist. The story involves a struggle, and only 
+one character can “win.” Therefore, the other character must “lose.” 
+• In the “challenge and response” plot, a situation is presented in which 
+the actions of a group and related consequences become the basis for 
+
+
+148 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+the story—for example, the current economic crisis and how 
+companies can manage through times of layoffs, low growth, and 
+declining stock value. A ﬂu pandemic is another example of a 
+challenge and response plot.
+• “Evolution” plots involve slowly changing phenomena. Technology  
+is the most common example of this kind of plot. Technological 
+innovations start small with early adopters, and at some point, they 
+explode and become mainstream. Being ahead of or behind the 
+explosion can carry dramatic implications.
+Here are ﬁve other plots that can be main plots or subplots within the three 
+just described:
+• Revolution—an unpredictable, dramatic change (e.g., natural disasters 
+and political revolutions)
+• Cycles—Economies often move in cycles of growth and decline. 
+Investors who believe in economic cycles would suggest that the 
+current economic crisis provides tremendous opportunity for those 
+who can see them. Cities can behave similarly. Real estate investors 
+base their careers on being able to anticipate high-growth sections  
+of cities. 
+• Inﬁnite possibility—This story line is based on a perception that a given 
+force will continue to grow and expand, inﬁnitely. Some stories about 
+technology ﬁt this plot—that technology will continue to improve the 
+quality of our lives by making things easier. However, there is usually 
+a counterplot or a dark side to stories based on inﬁnite possibility.
+• Lone ranger—The lone ranger plot features a hero confronting a 
+corrupt system. The “underdog” and “David and Goliath” stories are 
+other names for this plot. Apple Inc. is an example of the lone ranger 
+plot—a small business gaining victories against the IBM corporate 
+conglomerate (Schwartz, 1991).
+• My generation—Some plots can effectively feature major social shifts 
+that show up in the form of signiﬁcant generational differences. For 
+example, the generation known as the “Millennials” has a comfort 
+with technology the world has never seen. In many scenarios, the 
+values of this generation can provide an interesting twist, using 
+technology as the driving force.
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+149
+A quick online search of standard movie plots suggests many others that 
+could be considered for scenario plots. Here is a sampling:
+• Friendships (friendship, followed by separation, followed by 
+reconciliation)
+• Epic (a group or individual travels from A to B having adventures 
+along the way)
+• Heist (something must be stolen from an inaccessible place—the 
+“impossible”)
+• Coming of age (a critical time of life, with some tragedy reshaping 
+personalities)
+• Do the right thing (the main character facing an ethical dilemma)
+DON’T FORGET THE WORK ALREADY DONE
+Plots should involve key factors and trends from the interviews, brainstorm-
+ing, and ranking exercises. If managers can see their thinking and concerns 
+from previous exercises in the stories, they are more likely to entertain the 
+idea of the scenario. Certainly, there were more than two critical uncer-
+tainties than the two chosen for Technology Corporation’s scenario matrix. 
+Other forces in the high impact–high uncertainty category should appear in 
+the scenarios that can provide interesting twists. The challenge is develop-
+ing plot lines that integrate dynamics, present them in an interesting way, 
+and summarize the information effectively. Using standard movie plots, 
+classic stories, and time-tested literary hooks are helpful ways of building a 
+compelling set of scenarios.
+You can begin by considering the newspaper headlines that might ap-
+pear in each scenario (Flowers, 2003). Using newspaper headlines, the team 
+can create a simple time line with three major events occurring every ﬁve 
+years for each scenario. The template provided in Figure 7.15 is designed 
+to help ﬂesh out the major events in each scenario simply by using bullet 
+points for each ﬁve-year block. 
+TITLES
+The scenario titles are critical. Recent brain research suggests that peo-
+ple remember things more easily if there is an associated image so that 
+the idea can somehow be related to a past experience (Dispenza, 2007). 
+
+
+150 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+Quick—what are the four scenario outlines for Technology Corporation? 
+You probably remember the images of airplanes, the Titanic, and a horse 
+and buggy—these are memory cues for the titles and content of each sce-
+nario. Another example is a set of scenarios using the titles of Beatles songs: 
+“A Hard Day’s Night,” “Help,” “Magical Mystery Tour,” and “Imagine” 
+(Ogilvy & Schwartz, 1998). One can easily see how these titles represent 
+four different perspectives (even stories), having read nothing but the titles. 
+One set of scenarios I worked on recently used board games to represent 
+each scenario (Monopoly, Slip N’ Slide, Scrabble, and Go Fish). Be creative 
+and use intuition in generating titles that are recognizable and convey the 
+essence of each scenario. 
+Naming scenarios also has to do with branding and providing names 
+that conjure up the gestalt of the scenarios will make them memorable. The 
+name provides a sort of mental Velcro for the members of the organization. 
+The chosen names provide an easy way to talk about the different worlds 
+that may confront the organization and its decision makers. It is therefore 
+appropriate to have the images drawn from a family of images.
+WRITING THE SCENARIO STORIES
+Once the scenario logics have been constructed and the basic plots of four 
+scenarios have been deﬁned, each subgroup should ask an individual to 
+F I G U R E  7.15  Template for Scenario Plot Construction
+5-Year 
+Block
+Event
+Event
+Event
+Event
+Event
+Event
+5-Year 
+Block
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+151
+write the detailed scenario story. Again, it is extremely important to use 
+the key factors and trends identiﬁed in the previous workshops. Using these 
+forces and trends gives the set of scenarios relevance and ensures that they 
+address the things that are on the minds of managers. 
+Whereas brainstorming the general events of each scenario and plot de-
+velopment is best done in groups, writing the scenario details is best done as 
+an individual activity. Some general strategies for scenario writing include 
+the following:
+• Assign each scenario to an individual.
+• Assign each scenario to a pair of authors—one as the writer, and one 
+as a veteran of the organization.
+• Assign each scenario to an individual with access to an experienced 
+scenario writer/editor.
+• Assign all scenario writing to one individual (usually a talented writer) 
+(Ogilvy & Schwartz, 1998).
+All four are useful strategies, but the one chosen will depend on the situation, 
+how many people are involved, and the knowledge capital within the group.
+As the time line emerges, the major events that correspond to each sce-
+nario become clear, and further details can be ﬁlled in. Creative writing 
+skills are an asset in this part of scenario planning, and many organizations 
+seek writing expertise at this stage. I have found it useful to write two ver-
+sions of the story for each scenario. The ﬁrst is in the third person, laying 
+out the facts of the scenario. This version helps to get the facts straight and 
+reveals any holes or weaknesses in the plot. The second is a narrative, in 
+the ﬁrst person, and describes the scenario from its horizon year, looking 
+back over what has happened throughout the scenario. Inevitably, the ﬁrst-
+person narrative is more memorable, drawing on the reader’s empathy more 
+immediately. 
+Here are ﬁve more tips for writing scenarios:
+• Give each story a beginning, middle, and end.
+• Some elements should remain constant—not everything changes.
+• Use characters in the scenarios. Inﬂation levels may be the villain,  
+and policy options may be the hero. Build tension between the 
+characters as the story unfolds. Present dilemmas, solve dilemmas, or 
+provide twists.
+• Include dramas and conﬂicts in the stories.
+
+
+152 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+• Use present verb tenses—no “might haves” or “could haves” (Wilson 
+& Ralston, 2006).
+Decision makers must be involved in the scenario-writing process. 
+Their involvement indicates the sense of ownership they will have for the 
+scenarios. In other words, if decision makers don’t participate in the sce-
+nario writing, they may be detached from the scenarios that are produced. 
+Scenario planning is a participative process in which the decision makers 
+create scenarios that challenge internal thinking. Thus, making the scenar-
+ios relevant is directly related to involving the people who will use them in 
+their development. 
+TECHNOLOGY CORPORATION’S SCENARIOS
+The following sections describe more fully the four scenarios introduced 
+earlier (see Figure 7.14). 
+Concorde Scenario
+World oil supplies remain sufﬁcient, but prices ﬂuctuate, making sustained 
+investments in alternative solutions risky. During a new U.S. presidential 
+administration, 50 percent of Small Business Innovative Research (SBIR) 
+funding was redirected to national laboratories. Technology Corporation 
+research had successfully won a few grants, all related to energy research.
+Except for its Technology Corporation Water afﬁliate, Technology 
+Corporation has experienced only sporadic and limited success with com-
+mercializing its own intellectual property. However, bolstered by several re-
+cent successful energy-related pilot plant rollouts through its other afﬁliate, 
+Continental Technologies, Technology Corporation successfully recruits 
+two world-renowned energy research scientists to join the organization. 
+World oil prices begin to stabilize at a relatively high level, sparking 
+renewed pressure for alternative energy research. Technology Corporation’s 
+reputation in energy research has grown as its two world-renowned energy 
+research scientists have enabled research partnerships with a national labo-
+ratory and a major research university. These partnerships are lucrative but 
+create an emphasis on research to the detriment of development; as a result, 
+Technology Corporation hires more energy-related scientists while engi-
+neering and other areas suffer due to a lack of funding and little interest by 
+the prestigious scientists.
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+153
+Technology Corporation’s water patents expire, and although it retains 
+a substantial market penetration, proﬁt margins substantially decline due to 
+competition from reverse-engineered products; it is soon sold. Because of 
+the lucrative energy research partnerships, pressure to sustain that portion 
+of the enterprise increases, and Technology Corporation’s energy research 
+emphasis dramatically increases, too. However, its engineering/develop-
+ment capacity has been severely hampered due to the lack of collaboration 
+from the scientists.
+Unable to turn Technology Corporation into the entrepreneurial enter-
+prise originally envisioned, its owner decides to sell; a group of senior sci-
+entists buys. A funneling effect over the past twenty years has transformed 
+Technology Corporation into a contracted, narrowly focused, world-class, 
+energy research laboratory working with national laboratories, universities, 
+and industry. However, the owning coalition of brilliant but egotistical sci-
+entists makes for a dysfunctional siloed organization, with each division 
+operating as functionally separate enterprises. Eventually, the discord leads 
+to a “brain drain” as scientists leave or are recruited to more stable environ-
+ments. Ultimately, an entrepreneurial applied scientist and a like-minded 
+engineer buy Technology Corporation with the intention of reintroducing, 
+and capitalizing on, the “D” side of R&D.
+Airbus Scenario
+Technology Corporation continues working in its SBIR-focused model, but 
+it increases R&D contract funding as the economy recovers from a reces-
+sion. The contracts draw revenue from large and small companies. A focus 
+on green technology emerges from a new presidential administration in-
+ﬂuencing a positive reception from market prospects and new clients. For 
+example, a fundamental shift in the transportation ﬁeld sparks new business 
+contracts. Technology Corporation secures an R&D contract with a major 
+U.S. automotive manufacturer to develop alternative transportation tech-
+nology. Technology Corporation gains a strong reputation in the high-tech 
+research and development industry. A large proprietary foundation takes 
+interest in a partnership with Technology Corporation due to new high-
+proﬁle contracts. 
+The president is reelected, and funding increases for energy innova-
+tion. The organizational vision and goals are aligned to take advantage of 
+the opportunity. Technology Corporation is able to recruit top talent and 
+
+
+154 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+maintain its innovative employees at a 98 percent retention rate. Technol-
+ogy Corporation’s success has enabled the company to expand the Human 
+Resources and Development (HRD) department to effectively manage 
+their talent pool. The HRD department builds a comprehensive program 
+to support a collaborative and innovative culture. The plan includes men-
+toring, offering incentives for innovation, and promoting cross-functional 
+teamwork. Technology Corporation invests in new laboratory equipment 
+and an electronic knowledge management system. The organization is able 
+to reduce its ﬁfteen-year turnaround for innovations to ten years from con-
+ception to market. Because of the looming 2016 election, Technology Cor-
+poration guards against threats of SBIR funding cuts by securing primarily 
+R&D contracts.
+Technology Corporation has shifted its business model to be primarily 
+weighted on R&D contracts. The shift is successful although SBIR funding 
+has been maintained. Technology Corporation steers away from the com-
+petition with revenue from new R&D contracts and bringing intellectual 
+property to market. The company hires a mix of engineers, scientists, and 
+business development employees and executives. The retention rate contin-
+ues to hold stable.
+The demand for clean coal and other green technologies improves, 
+which stimulates new R&D contracts with automotive companies and 
+ﬁrms in two new markets. The diversiﬁcation in new markets pays off.
+The proprietary foundation continues to fund Technology Corpora-
+tion, which impacts the organization twofold: Technology Corporation 
+gains recognition and success, and other R&D contracts spark from the 
+publicity and reputation. 
+The HRD change is integrated into the culture, and the innovation turn-
+around is reduced to ﬁve years from conception to market. Top industry com-
+petitors were not prepared for the cut of SBIR funding and fold or merge. 
+Technology Corporation expands with a signiﬁcant increase in new hires. 
+The Technology Corporation culture embraces a collaborative and innova-
+tive philosophy and practice reﬂecting HRD success. There is continual de-
+mand for clean coal and other green technologies, sparking continual new 
+and returning business. Technology Corporation Water becomes a market 
+leader in water technologies. The company accomplishes a two-year innova-
+tion turnaround. 
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+155
+Horse-and-Buggy Scenario
+It was a turbulent year, with a signiﬁcant stock market falter in October 
+followed closely by the demise of numerous ﬁnancial institutions and the 
+uncertainties of a newly elected Democratic administration. The current 
+administration scrambles to address eight years of initiatives ranging from 
+public school reform to the ongoing wars in Iraq and Afghanistan, all while 
+negotiating a $700 billion bail-out package for the spiraling ﬁnancial in-
+dustry. Throughout national uncertainty, Technology Corporation remains 
+focused on developing and promoting numerous technologies funded pri-
+marily through the SBIR program, which is renewed by the 111th Congress. 
+Not only is the SBIR program renewed, but as part of the president’s job 
+stimulus package, the funding is increased 25 percent over the current rate 
+in an effort to promote new technologies that will aid in the research and 
+development of alternative transportation fuels. 
+The increase spurs a fresh level of interest among the current SBIR com-
+panies and attracts the attention of new entrants into the market. With over 
+twenty-ﬁve years of experience working within the SBIR community, Tech-
+nology Corporation is well positioned to take advantage of the opportuni-
+ties as long as it can maintain the balance between the more risky contract 
+R&D and manufacturing businesses it has developed. Because Technology 
+Corporation’s product is essentially intellectual property, the ﬁrm’s success 
+lies in the development of its human resources, knowledge management, 
+and the alignment of its talent with the appropriate technological demand. 
+By 2013, Technology Corporation has become known as the best R&D 
+organization by developing a network of highly intellectual individuals who 
+operate as a collaborative, cohesive team. It is able to recruit the best talent 
+due to its reputation as the “Google” or “Apple” of high-tech research and 
+development. Technology Corporation’s research and development facilities 
+are outﬁtted with the latest equipment, allowing research scientists and en-
+gineers to take a technology from conception to prototype with amazing ac-
+curacy, speed, and ability to replicate experiments and conﬁrm hypotheses 
+through a network of highly skilled individuals. One of the secrets behind 
+the success lies within the company’s talent management systems known as 
+“E-Knows,” which comprises not only in-house personnel but also contract 
+agreements with other scientists around the country who have been “cata-
+logued” using its extensive proﬁling systems. Prior to or during a project, 
+
+
+156 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+E-Knows can help determine resources that may be able to contribute a 
+solution and be contacted immediately via secure communication. The 
+success of E-Knows lies not only in the extensive knowledge database but 
+also in a culture that knows what it does not know. The ability to manage 
+knowledge while promoting creativity, innovation, entrepreneurialism, and 
+ﬂexibility have become the “Technology Corporation Way.”
+Over the next ﬁve years, the Technology Corporation Way is incul-
+cated throughout the organization, and the ﬁrm’s ability to execute to the 
+highest of standards has become intuitive. The past eight years have been a 
+roller coaster ride for the country as the economic slump followed by slow 
+recovery and an overuse of bail-outs has resulted in numerous bankrupt 
+companies with little to show for the promises of “reorganization” or control 
+through regulation. The national debt has eclipsed $17 trillion, and the 
+pressure to cut government spending is strong. The average American has 
+lowered his or her debt by 30 percent over the past ten years, and savings are 
+on the rise. The general perception among the public is that the government 
+should listen to its own advice: “Quit spending what you don’t have.”
+With most of the baby boomers in retirement, the strain on health 
+care has become the “hot button” for certain generations, while the $6 gal-
+lon of gasoline has remained the “pulse check” for the working class. The 
+Middle East continues to require attention and resources but is more stable 
+than during the past two decades. Technology Corporation has numerous 
+technologies ready for Phase III with potential clients interested in partner-
+ships. It is managing over two thousand projects funded by SBIR and a few 
+contract R&D projects. The staff of 175 scientists and engineers, with an 
+average tenure of ten years, is proud of its accomplishments but also realizes 
+that change is in the air. The success rates of receiving SBIR funding have 
+continued to drop from 50 percent to 15 percent over the past year, and the 
+chatter regarding new avenues for technologies seems to be less.
+While the funding for any new SBIR projects was removed in late 2016 
+from the federal government’s budget, the awarded contracts are still being 
+funded. Anticipating this change, Technology Corporation was able to con-
+tact many of the SBIR companies and acquire their research awards, which re-
+sulted in enough R&D to not only support its 175 scientists and engineers but 
+increased its resources through short-term contract agreements as well. The 
+addition of these new resources grew their E-Knows database 150 percent.
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+157
+The world of research and development has ﬁnally learned how to cross 
+the “valley of death” by enhancing the ability to manage knowledge while 
+promoting creativity, innovation, and entrepreneurialism through continu-
+ous improvement and collaboration. 
+Titanic Scenario
+SBIR continues to be the bread and butter of the company. As a result of 
+the recession, SBIR funding continues to decline, and contract R&D has 
+a limited duration for speciﬁc projects. Although Technology Corporation 
+prefers long-term, multiple-year contracts, companies are wary of commit-
+ment. Few incentives are offered for cross-functional teams’ performance. 
+Consequently, there is a lack of idea sharing and collaboration. 
+The current administration makes changes in public policy and decides 
+to fund a particular type of research. However, Technology Corporation 
+has been misaligned and spread thin with so many other projects; therefore, 
+it is not prepared to act. Technology Corporation continues to invest in 
+clean coal.
+In an attempt to steer away from relying on venture capitalism and due 
+to the inability to identify a select group of business partners, SBIR remains 
+the major funding source. For fear that SBIR might not be reauthorized and 
+that Technology Corporation might not be able to compete for the limited 
+funding, some scientists leave the company. The remaining “brainpower” is 
+content with the knowledge they have. Only one-third of the employees are 
+willing to participate in job rotations and, consequently, do not learn about 
+research strategies for other areas of the ﬁrm.
+Furthermore, the remaining Technology Corporation employees are 
+not prepared to ﬁll the research void from the scientists who left due to the 
+organizational silos and a limited focus on succession planning. As a result, 
+Technology Corporation’s R&D contracts continue to decrease.
+News ﬂash! The EPA standards on clean coal are not as stringent as in 
+the last ﬁve years. There is increased interest in funding R&D related to 
+clean coal technology. Technology Corporation has an opportunity to part-
+ner with another company. In the past, the “old” Technology Corporation 
+did some partnering and licensed technology but got burned by it, so the 
+ﬁrm is cautious. This partner has been successful in getting venture capital. 
+Unfortunately, the partner has an existing lawsuit that has not been settled, 
+
+
+158 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+so this challenge delays the contract. The venture capitalist pulls out. The 
+competition capitalizes on clean coal technology.
+Meanwhile, a ﬁrm in Turkey that specializes in a water treatment tech-
+nology wants to relocate its production facilities to the northeastern United 
+States. Technology Corporation has the equipment, and the company buys 
+Technology Corporation Water. There are increased regulatory require-
+ments, and the electrowinner—one of Technology Corporation’s top proj-
+ects—is a potential source of income, if it is marketed, but the technology 
+is sold prematurely.
+The economy is in slow recovery. SBIR is reinstated; however, there is 
+a decrease in the amount of funding. One measure to alleviate fears about 
+the limited funding is to freeze hiring for a while. There is an increased 
+urgency to ﬁnd funding sources, but the cross-functional teams, once cre-
+ated to help anticipate the needs of the market, are weak. Unfortunately, 
+employee morale is low; the employees work alone and rarely collaborate. 
+Technology Corporation’s reputation is that it has feelers in too many areas 
+to be effective. 
+Technology Corporation has developed two new technologies that help 
+solve pressing environmental issues. However, due to the lack of business 
+development expertise and market timing, Technology Corporation sells 
+the technologies too soon. It loses most nonfederal contracts that helped 
+fund the bottom line and increased its expertise. 
+A market-minded employee, who previously left Technology Corpora-
+tion, misses living in the western United States. The former employee has 
+a proven track record in partnering with large ﬁrms. The president of the 
+company wants to rehire this employee, hoping to ignite some entrepreneur-
+ial spirit. There is talk of bonuses for teams that innovate. The president 
+tries to sell the idea, but Technology Corporation’s staff loudly protests the 
+hire and threatens to leave. The president concedes. 
+Biotechnology R&Ds are being funded. Previous partners with Tech-
+nology Corporation, which were hurt by the recession, are now obtaining 
+venture capital related to biotechnology. They want Technology Corpora-
+tion to contract with them since it has had a great reputation, but there is 
+not time for Technology Corporation to hire needed expertise. Employees 
+take a signiﬁcant pay decrease in order to help Technology Corporation’s 
+cash ﬂow. The president retires and another ﬁrm hires a majority of the re-
+maining scientists and engineers of Technology Corporation. 
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+159
+CRITERIA FOR ASSESSING THE UTILITY  
+OF THE SCENARIOS
+As mentioned earlier, scenarios must be relevant, challenging, and plausible 
+in order to be useful tools for managers (Kahane, 2004; Ringland, 2002; 
+Schwartz, 1991; van der Heijden, 1997, 2005a; van der Merwe, 2007). 
+• Relevant—Scenarios must be relevant to the managers who use them. 
+Three clear strategies for creating relevance are to include interview 
+data in the scenarios, include a variety of forces from the brain- 
+storming and ranking exercises, and involve mangers in the scenario 
+writing process.
+• Challenging—Scenarios must stretch the thinking inside the orga-
+nization (Wack, 1985b). This means they must organize and present 
+variables in surprising ways. Scenarios must challenge the assumptions 
+inside the minds of managers. Challenging scenarios come from well-
+executed external and internal analyses, and a thorough understanding 
+of the forces at play.
+• Plausible—Plausible scenarios are scenarios that might actually happen. 
+If scenarios are too challenging or not well researched, they are in 
+danger of being dismissed on the basis of being implausible. On the 
+other hand, one of the true crafts of scenario planning is to bring things 
+that seem implausible into the realm of the plausible (N. Collyns, 
+personal communication, November 20, 2009). The term plausibility 
+sometimes carries a link to probability, which is the certain death of 
+any scenario project. Using this criterion requires attention to ensuring 
+that the term is interpreted more as “possible,” rather than “probable.” 
+These three criteria are a result of the scenario experiments over approx-
+imately thirty years at Shell and the scenario planning pioneers who spent 
+time there. It is important to ask the scenario planning team to consider the 
+extent to which each of the scenarios satisﬁes these criteria before moving 
+ahead. If the situation is conducive, it can also be beneﬁcial to pilot-test the 
+scenarios with a group of managers. Satisfying these three criteria creates a 
+kind of face validity for the scenarios and increases the likelihood they will 
+be useful in provoking managers’ insights.
+The three criteria are highly interdependent. For example, the more 
+plausible or realistic a scenario is, the more relevant it will usually be for 
+
+
+160 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+managers. Likewise, the more challenging a scenario is, the more it runs the 
+risk of losing plausibility. The key is to strike a balance among these criteria 
+so that they can be used as a quick estimate of the scenario’s potential utility.
+Wack (1985a) wrote that scenarios require a component of rigorous re-
+search that is frequently missed. It is not enough to simply think creatively 
+and produce a fun set of scenarios. Many scenario exercises fail to gather the 
+necessary data to support the options and events they present. Signiﬁcant 
+detailed research is a key characteristic of effective scenarios.
+A MORE COMPREHENSIVE ASSESSMENT
+Six critical skills for the next decade of knowledge workers are described in 
+Daniel Pink’s (2006) book A Whole New Mind: 
+• Design 
+• Story
+• Symphony 
+• Empathy
+• Play
+• Meaning 
+Referred to as “senses,” these skills can be part of a unique approach to as-
+sessing scenarios. 
+Design
+Developed countries are experiencing an age of material abundance. This 
+means that consumers in developed countries are not limited in their 
+choices. Now, more than ever, people can choose goods based on their pref-
+erences. People are attracted to things that are aesthetically pleasing. 
+The design of a set of scenarios is critical. Scenarios must incorporate 
+themes such as songs by the Beatles (Ogilvy & Schwartz, 1998), catchy 
+phrases that are easy to recall, and colorful images to make the set of sce-
+narios visually pleasing. People need to want to read the scenarios, and the 
+document itself is often the ﬁrst contact some will have with the ideas that 
+they carry.
+Increasingly, how scenarios are distributed also matters. Technology (be 
+it video, podcasting, narrated slides with photos, interactive websites, etc.) 
+allows for great creativity in design and should be leveraged when ﬁnishing 
+up a set of scenarios.
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+161
+Story
+People can remember information more easily if it is presented in the form 
+of a story (Manning, 2002). From the studies at Xerox concerning the ex-
+change of expertise through repair stories in small “knowledge manage-
+ment” teams to the shifting of organizational strategy at 3M from bulleted, 
+logic-based lists of action items to stories (Shaw, Brown, & Bromiley, 1998), 
+it is clear that some organizations are harnessing the natural tendency of the 
+human brain to think in story format. 
+Most primitive, preindustrial cultures featured stories as a means for 
+transferring history and critical knowledge. Native American tribes and 
+South African Ubuntu tribes are but two examples. Storytelling is also a 
+growing component of big business. From scriptwriters in Hollywood to 
+descriptions of homes for sale in real estate ads and vineyard lore on wine 
+bottles, story elements are now being used to do what they do best: in-
+ﬂuence and strike an emotional chord. Cutting-edge research at Columbia 
+University Medical School called the “narrative medicine movement” sug-
+gests that the ability to understand patient stories plays an important role 
+in diagnosis, treatment, and a whole-minded approach to healing (Charon, 
+2001). Thus, the contexts in which stories are effective seem almost endless. 
+Obviously, scenarios tell stories. Stories are the foundation of scenarios 
+and scenario planning. Each scenario must contain an interesting plot that 
+captures reader attention and contains tension that is ultimately resolved. 
+The story criterion is the logical location of the three criteria discussed ear-
+lier: relevant, challenging, and plausible. 
+Symphony
+Symphony is simply another word for systems thinking. To illustrate how 
+symphonic thinking will be important for knowledge workers in the future, 
+consider the need for people who can straddle cultures. For example, as 
+more jobs are sent to India, there is an increasing demand for “people who 
+can manage the relationships between the coders in the East and the clients 
+in the West. These whole-minded professionals must be literate in two cul-
+tures, comfortable in the hard science of computing and the soft science of 
+sales and marketing” (Pink, 2006, pp. 135–136). 
+Using the symphony criterion means checking that each scenario con-
+tains a “system” of interacting events, characters, and interactions. Each 
+
+
+162 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+scenario must form a logical whole in which the various elements and their 
+relationships can be seen. Using systems diagrams as part of the scenario 
+construction process is one way to enhance the symphony criterion (Ward 
+& Scheifer, 1998). Scenarios must also integrate numerous variables in their 
+stories and present them in a novel way. Systems thinking is considered a 
+cornerstone of scenario planning. The ability to see interrelated forces and 
+integrate patterns that drive events can lead to compelling presentations in 
+the scenario stories.
+Empathy
+Empathy is the ability to put yourself in someone else’s shoes. As a result, 
+high-value work will be unique, heartfelt, and based in communicating 
+things that are difﬁcult to describe with a removed sense of logic. 
+The ability to provoke empathy is one key to effective scenario plan-
+ning. When scenario planning participants suspend disbelief and seriously 
+consider the options presented in the scenarios, they begin to develop em-
+pathy for each other and for the complexity of the system in which they 
+are operating. Facilitators must also be able to empathize with participants 
+in order to make the scenarios compelling. The ability to empathize with 
+managers and incorporate elements of concern from their initial interviews 
+is one key to making the scenarios useful. 
+Play
+Play is an increasingly fundamental part of important work in all kinds of 
+organizations. A playful attitude is often an indicator of a creative personal-
+ity (Csikszentmihalyi, 1996). The role of a playful attitude has been sug-
+gested as a business skill, leading to high emotional intelligence with many 
+favorable side effects in the coming conceptual age. 
+The set of scenarios, and each scenario individually, must create a world 
+in which managers can “play.” One particularly effective strategy I have 
+used is to create physical spaces or rooms that feature the qualities of each 
+scenario. By putting decision makers into a physical space, the natural in-
+clination to play can be enhanced. Drawing on experiential and construc-
+tionist learning theory, using physical spaces that reﬂect each story makes it 
+easier for managers to suspend disbelief. Awakening the imagination can be 
+a time-consuming process; and while the business world continues to move 
+faster and faster, innovative ideas are often found by slowing down, stepping 
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+163
+away, changing the location, and allowing time to reﬂect (Csikszentmih-
+alyi, 1998). 
+Meaning
+People in developed countries are searching for more satisfying, meaningful 
+work and lives. Pink (2006) cited dissatisfaction with current global politics 
+(Koenig, 2001), research in current corporate environments in which spiri-
+tuality is growing (Karlgaard, 2004), and the rising popularity of activities 
+like meditation as evidence that people seek meaningful, fulﬁlling occupa-
+tions and lives. 
+Scenarios provide a forum for awakening creativity and innovative 
+thinking in the individuals who use them. Cases from companies that have 
+used scenarios (Ringland, 2002) suggest that scenarios, and the scenario 
+planning process itself, encourage organization members to take ownership 
+of ideas and processes. In some ways, creating a feeling of ownership signals 
+a sense of increased meaning (Csikszentmihalyi, 1998). More speciﬁcally, 
+each individual scenario portrays the future in a fundamentally different 
+way, allowing users to interpret the meaning of a given set of variables or 
+issues, and how they play out in the future in a variety of different ways. 
+Scenarios provide a scaffolding for making meaning out of a complex set of 
+forces and how they interact to form a unique future (Chermack & van der 
+Merwe, 2003). 
+THE SCENARIO QUALITY ASSESSMENT CHECKLIST
+Using the senses as criteria for assessing scenarios results in a framework 
+that is easy to apply. Figure 7.16 presents the Scenario Quality Assessment 
+Checklist and illustrates the use of the senses as scenario assessment criteria. 
+Useful questions intended to prompt the judgment of the scenario team for 
+each criterion are provided. 
+Figure 7.17 is an example of using the Scenario Quality Assessment 
+Checklist for the Technology Corporation scenarios. The six senses are ap-
+plied as snapshot indicators of criteria for compelling scenarios. 
+COMMUNICATING THE SCENARIOS
+When the scenario planning team has settled on a set of scenarios believed 
+to be high in quality and utility, they must be communicated throughout 
+
+
+164 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+Scenario  
+A
+Scenario  
+B
+Scenario  
+C
+Scenario  
+D
+Design
+Are the scenario titles clever and easy 
+to remember? Is the presentation of the 
+scenario workbook attractive and 
+aesthetically pleasing?
+Story
+Is each scenario story relevant, 
+challenging, and plausible to the 
+intended audience? Is the story 
+presented in each scenario compelling 
+and interesting?
+Symphony
+Does each scenario present a consistent 
+world in which the various elements 
+relate? Does each scenario describe 
+integrated events that can be presented 
+as a whole?
+Empathy
+Do the scenarios evoke empathy? Are 
+the characters and events in each 
+scenario easy for managers to relate to, 
+and do they draw on real issues?
+Play
+Does each scenario provide the back- 
+ground for managers to experiment 
+with varying ideas? Does each scenario 
+lend itself to creativity in answering 
+the “what if” questions?
+Meaning
+Does each scenario provide a forum  
+in which a management team can 
+derive and create meaning? Do the 
+scenarios incorporate events that are 
+meaningful?
+F I G U R E  7.16 The Scenario Quality Assessment Checklist
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+165
+Airbus
+Concorde
+Horse  
+and Buggy
+Titanic
+Design
+Are the scenario titles clever 
+and easy to remember? Is the  
+presentation of the scenario 
+workbook attractive and 
+aesthetically pleasing?
+Yes
+Yes
+Yes
+Yes
+Story
+Is each scenario story relevant, 
+challenging, and plausible to the 
+intended audience? Is the story 
+presented in each scenario 
+compelling and interesting?
+Yes
+Yes— 
+but  
+story  
+needs  
+more  
+work
+Yes
+Yes
+Symphony
+Does each scenario present a 
+consistent world in which the 
+various elements relate?  
+Does each scenario describe 
+integrated events that can be 
+presented as a whole?
+Yes
+Yes
+Needs more  
+detail, fact,  
+research— 
+internal  
+consistency  
+is lacking
+Yes
+Empathy
+Do the scenarios evoke 
+empathy? Are the characters 
+and events in each scenario 
+easy for managers to relate to, 
+and do they draw on real 
+issues?
+No— 
+revisit
+No—
+revisit
+Yes—good 
+illustration 
+of what 
+happens 
+when few 
+people work 
+hard and 
+lead the 
+organization
+Yes
+Play
+Does each scenario provide the 
+background for managers to  
+experiment with varying ideas? 
+Does each scenario lend itself 
+to creativity in answering the 
+“what if” questions?
+Fairly pre- 
+scriptive as 
+written—not 
+a lot of room 
+for creativity 
+and play; 
+open this  
+one up more
+OK
+OK
+OK
+Meaning
+Does each scenario provide a 
+forum in which a management 
+team can derive and create mean- 
+ing? Do the scenarios incorpor- 
+ate events that are meaningful?
+OK—could 
+be improved
+Good
+OK
+Good
+F I G U R E  7.17  The Scenario Quality Assessment Checklist—Technology 
+Corporation
+
+
+166 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+the organization. Usually, the set of scenarios is captured in a document, 
+but a document is not enough. The work of the scenario planning team is 
+really only beginning. The use of websites, videos, and other technologies 
+to disseminate and communicate scenarios is becoming common. The most 
+successful scenario planners use multiple methods to communicate their 
+ideas. Short but compelling presentations followed by extensive dialogue 
+sessions were the preferred tools used by early scenario planning pioneers. 
+Common techniques for communicating scenarios include these:
+• Videos
+• Websites
+• Documents (workbook)
+• Role-playing activities
+• Audiotapes/podcasts
+• Presentations
+• Workshops
+Disseminating the scenarios has two key components. The ﬁrst is com-
+municating the scenarios throughout the organization. The second is us-
+ing the scenarios in a purposeful way to examine the initial issue, test the 
+business idea, and explore other aspects of the organization in each of the 
+alternative futures. The latter component is covered in detail in Chapter 
+9—the scenario consideration phase. Before moving into the consideration 
+phase, decision makers should consider advantages of communicating the 
+scenarios more generally, throughout the organization. 
+There are different strategies for accomplishing this, and some decision 
+makers may have reason to avoid distributing the scenarios organization-
+wide. For example, scenarios may be built for a strategic business unit and 
+may not be relevant across the organization. Again, the context should be 
+the guide for how widely to communicate the scenarios. At a minimum, 
+decision makers should distribute the scenarios to the people who were in-
+volved in their development, and follow up with an invitation to a forum in 
+which they can ask questions and join the conversation.
+A recent project I worked on featured a unique way of communicating 
+the scenarios. The strategy generated excitement and buy-in. When the de-
+cision makers had ﬁnalized a set of scenarios they deemed high utility, they 
+invited particular individuals to a meeting. These individuals were known 
+
+
+  
+P H A S E 3—S C E N A R I O  D E V E L O P M E N T  
+167
+for their positions as informal leaders and were well liked. They were also 
+individuals known as key social information brokers throughout the orga-
+nization. In the meeting, the scenarios were presented in concept and with 
+just enough detail to whet their appetites. In the days and weeks after the 
+meeting, these individuals could not help but tell their colleagues about 
+the scenarios, and positive rumors spread quickly. Within a few weeks, an 
+excitement and desire to know more about the scenarios had caught on like 
+wildﬁre and spread rapidly throughout the organization. The decision mak-
+ers created a mystique around the scenarios that compelled members of the 
+organization to want to know more. The scenarios were then rolled out 
+organization-wide in a series of meetings in various departments, locations, 
+and branches. While perhaps somewhat manipulative, the effects of this 
+strategy paid off, and the scenarios were well received, popular, embraced, 
+and used.
+However they are distributed, the scenarios must be used purposefully 
+to explore the original question and beyond. If the project simply ends with 
+the dissemination of the scenarios, the project will fail. Activities for us-
+ing scenarios to explore the original question and purpose are presented in 
+Chapter 9 on the scenario consideration phase. It is wise to dedicate sig-
+niﬁcant resources in developing a strategy for implementing and using the 
+scenarios. How scenarios are used is the crux of scenario planning. 
+Constructing and presenting the scenarios should be fun. Most of us 
+are taught to stop being creative around grade 3. It is amazing how fast 
+creativity skills return, and participants should be encouraged to let their 
+creative insights ﬂow. The point is, “If you’re not having fun, you’re not do-
+ing it right” (Ogilvy & Schwartz, 1998, p. 19). 
+CONCLUSION
+This chapter has presented the activities and workshops used to construct 
+scenarios. In addition, this chapter has suggested tools for writing scenarios 
+including additional research, team structure, plots, time lines, titles, and 
+others. A sample set of scenarios for Technology Corporation has also been 
+provided. Finally, this chapter has described a comprehensive set of assess-
+ment criteria for increasing the scenarios’ effectiveness and the likelihood 
+they will shift the thinking inside the organization.
+
+
+168 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+This phase of the scenario system is lengthy and requires a great deal 
+of work. The goal of this phase is to have developed four scenarios that are 
+deemed high quality and high utility. The scenarios can then be dissemi-
+nated as the context suggests and used for the speciﬁc purposes described in 
+the next chapter.
+
+
+ 169
+Phase 4—Scenario 
+Implementation:  
+Putting Scenarios to Use
+Chapter 7 presented the tools and processes for constructing scenarios. 
+This chapter describes how to use the scenarios to accomplish the objectives 
+of the project—the scenario implementation phase (Figure 8.1). In other 
+words, this chapter describes how to use the scenarios once they have been 
+developed. Common general objectives are to provoke strategic insights, ex-
+pand the assumptions of decision makers, and develop the capacity to see 
+major discontinuities before it’s too late. However, the speciﬁc objectives 
+that were deﬁned in the project preparation phase drive the scenario imple-
+mentation phase of the project. This chapter explains how to design a set of 
+workshops for using the scenarios to assess the organization in a variety of 
+alternative futures.
+This phase involves returning to the original question or issue and us-
+ing the scenarios to develop multiple ways of answering the question and 
+addressing the issue. These strategies include using the scenarios to examine 
+the initial question, test the current theory of the business/business idea, 
+analyze current strategies, and develop strategic resilience and robustness. 
+However, the toolbox for using scenarios can be quite extensive. Several 
+methods are available for facilitating change and communicating the con-
+tent of the scenario in participatory and creative ways. The discipline of 
+organization development specializes in a variety of activities and change 
+interventions that can be used in the presentation and consideration of sce-
+narios. A short list of change models that may be useful in the scenario 
+implementation phase is as follows:
+8

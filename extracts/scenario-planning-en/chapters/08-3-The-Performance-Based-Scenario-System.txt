@@ -1,0 +1,480 @@
+# 3 The Performance-Based Scenario System
+
+62 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+SYSTEMS WITHIN SYSTEMS
+Much has been written about systems theory applied in business organiza-
+tions, so there is no need for a lengthy explanation here. But what does require 
+some explanation is viewing strategy itself as a system within the larger or-
+ganization system. 
+Within its environmental context, each organization relies on a perfor-
+mance system. For public companies, the most common measure of this 
+performance system is stock market performance. This overall performance 
+measure over time is thought to include other indicators of performance, 
+such as product innovation, competitor successes and failures, and market 
+share, among others. Any of these indicators can also serve as overall perfor-
+mance indicators. The performance system for any organization is the set 
+of components that decision makers have organized to sell products, goods, 
+and services. 
+Within this performance system is the planning system. Decision mak-
+ers and organizational leaders engage in planning as a means of inﬂuencing 
+organizational performance, and as such, the planning system is a system 
+within the performance system. Planning has always been intended as a 
+means of satisfying the innate human need to think about the future, but 
+in an organizational context, it is also intended as a means for people to 
+consider the results of their potential activities. Most commonly, decision 
+makers engage in planning in hopes of maximizing optimal growth, pro-
+duction, or delivery of services, which are then sold to optimize proﬁt. All 
+of this is happening amid the chaos of the external environmental context 
+(Figure 3.1).
+Figure 3.1 positions the performance system within the organizational 
+and contextual environment, and the planning system within the perfor-
+mance system. Of course, this is a simpliﬁed view, but the key point to stress 
+is that planning is a system within the organization system. However, plan-
+ning is most often viewed as a process—a series of steps to be carried out to 
+“do” the plan without regard for its inputs and outputs.
+PLANNING AS A PROCESS
+Most planning models are process models indicating the required plan-
+ning steps, but a systems approach may provoke new insights related to 
+planning. Such a reconceptualization creates new ways of thinking about plan- 
+ning performance. 
+
+
+  
+T H E  P E R F O R M A N C E-B A S E D S C E N A R I O  S Y S T E M  
+63
+The availability of countless guides to organizational planning and 
+strategy serves as testament to the fact that there are as many different sets 
+of steps for planning as there are consultants to help organizations through 
+them. Much of the research concerning various planning processes is con-
+ﬂicting or ambiguous (Hitt, Hoskisson & Ireland, 1990; Micklethwait & 
+Woolridge, 1996). Unfortunately, planning is mostly thought of as a stand-
+alone process or event in organizations with little concern for the nature of 
+the organizational engagement in strategy or its ultimate outcomes (Mick-
+lethwait & Woolridge, 1996). Thus, a problem is that most approaches to 
+planning are divorced from the inputs to, and outputs from, the strategy 
+system.
+The basic design school model of strategy is based on a process ap-
+proach to planning and summarizes the early approaches to strategy in a 
+delineated, step-by-step model (Mintzberg, 1994). Notably, the basic de-
+sign school model is still the basis of strategy in most organizations today. 
+The design school model uses the strengths, weaknesses, opportunities, and 
+threats (SWOT) analysis as its foundation. 
+This basic design school model has been used to integrate a variety 
+of common approaches to planning in organizations. The foundation of 
+F I G U R E  3.1  The Context of Scenario Planning
+Work Teams
+and
+Individuals
+STEEP Forces
+Competitive Forces,
+Organizational Culture
+and Other Players
+Individual
+Characteristics,
+Interactions and
+Internal Politics
+The Natural and
+Social Worlds
+Planning
+System
+Organizational
+and Contextual
+Environment
+Performance
+System
+
+
+64 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+planning for many organizations, this model is inherently valuable because 
+of its ability to synthesize a great deal of planning literature, research, and 
+experience in a single model. However, the design school model includes 
+an implicit assumption that the environment will stay relatively stable and 
+predictable. It promotes a process approach to planning, giving people the 
+steps to “do” planning, but it does not place any emphasis on the inputs and 
+outputs relevant to the strategy system. There is no clear link to the rest of the 
+organization. In contrast, a clear connection to organizational inputs and out-
+puts deﬁnes the performance-based scenario system presented in this book.
+PLANNING AS A SYSTEM
+Planning is a system. Thus, as a system within the organization—a sys-
+tem within a system—it might be better approached from a more integra-
+tive perspective than current practices promote. While this distinction may 
+seem trite, its implications have a considerable inﬂuence on the nature of 
+planning and strategy in organizations. In addition, viewing planning as 
+a system allows strategists a greater amount of ﬂexibility in their efforts to 
+obtain glimpses of the future.
+The word system is used purposefully in this context. Planning has its 
+own set of inputs, processes, and outputs and can therefore be labeled as a 
+system itself. Conceptually, this system can be divided into two key compo-
+nents, the ﬁrst concerning the exploration of options and the second com-
+posed of making decisions and moving forward. However, this separation is 
+conceptual only: these components are iteratively linked, and scenario plan-
+ning as a particular approach to strategy in the end is an ongoing approach 
+to strategy that is never complete. Viewing strategy as a system means that 
+time is spent analyzing the inputs and outputs; and, therefore, each instance 
+of strategy is a customized, tailor-made effort. 
+THE SCENARIO SYSTEM: SCENARIO BUILDING  
+AND SCENARIO DEPLOYMENT
+The rationale for approaching planning as a system leads to a description of 
+scenario planning as a system within the organization. The scenario system 
+is divided into two parts:
+• Scenario building
+• Scenario deployment
+
+
+  
+T H E  P E R F O R M A N C E-B A S E D S C E N A R I O  S Y S T E M  
+65
+These parts represent the two major components of engaging in scenario 
+planning in organizations. This division is important, as building scenarios 
+is not enough. Equally important is what is done with the scenarios once 
+they are developed. 
+Scenario Building
+Scenario building is the content covered in existing scenario planning 
+books. The focus deals explicitly with the conduct of data gathering, ana-
+lyzing, synthesizing, and eventually the construction of scenarios. In other 
+words, existing writing on scenario planning covers how to create scenarios. 
+Few authors demonstrate what to do with scenarios after they have been 
+developed. Each of the approaches to scenarios covered in Chapter 2 are 
+different ways of creating scenarios—scenario building. Numerous sources 
+detail procedures on how to build scenarios, but this is where most books 
+on the topic end.
+Scenario Deployment
+The second part of the scenario system—scenario deployment—centers on 
+how to use the scenarios in ways that work toward outcomes. This book 
+offers several strategies that have been used effectively, in addition to de-
+tailed descriptions and processes for using the scenarios to explore current 
+organization issues, resources, strategies, and mental models. The key to 
+making scenarios work is in using the scenarios to change the way decisions 
+are made, shifting the thinking of managers, reframing decision-making 
+processes, and examining numerous organizational issues in the context of 
+each scenario. 
+Figure 3.2 illustrates the distinction between scenario building and sce-
+nario deployment Scenario building is represented by the ﬁrst cone, opening 
+up toward the middle of the model. The scenario building process is like-
+wise designed to “open up” the thinking inside the organization, to expand 
+the frame and include a wider range of possibilities, and to “see” things 
+differently (Lynham, Provo, & Ruona, 1998; Provo, Lynham, Ruona, & 
+Miller, 1998; Swanson, Lynham, Ruona, & Provo, 1998). The second cone, 
+tapering down toward the right of the ﬁgure, represents scenario deploy-
+ment. Scenario deployment is the process by which decisions must be made 
+in light of a deeper understanding of possibilities inherent in the environ-
+ment, an expanded set of decision premises, and a wider range of options 
+
+
+66 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+that have been considered. The second cone is not intended to suggest that 
+decision makers should move toward a single desired future state; rather, 
+the most robust path, given an array of potential futures, should be sought. 
+The ﬁrst component—option generation—can be characterized by di-
+vergent and challenging thinking. Conversely, decision formulation is con-
+cerned with convergent thinking and the fact that, ultimately, options must 
+be reduced through decision making. The assumption in this model is that 
+increasing the options that are considered in planning allows decision mak-
+ers a better view of the potential future; thus, they are more prepared to 
+make decisions under uncertain conditions. 
+THE PERFORMANCE-BASED SCENARIO SYSTEM
+In this book, the performance-based scenario system is described in ﬁve 
+phases:
+1. Project preparation
+2. Scenario exploration
+3. Scenario development
+4. Scenario implementation
+5. Project assessment
+F I G U R E  3.2  Conceptual Model of the Scenario System
+Source: Based on Swanson, Lynham, Ruona, & Provo, 1990.
+Environment
+Scenario Building
+Scenario Deployment
+Generating options and
+opening up thinking
+Making decisions and
+creating focus
+
+
+  
+T H E  P E R F O R M A N C E-B A S E D S C E N A R I O  S Y S T E M  
+67
+These ﬁve phases capture the main ideas required to conduct a scenario 
+project and have been used extensively in practice. The ﬁrst three scenario 
+system phases describe the process of scenario building. The last two phases 
+describe what to do with the scenarios once they are developed—scenario 
+deployment. The project preparation phase includes contracting with the 
+client, identifying the purpose of the scenario project, clarifying and de-
+veloping it, and creating an agenda and timeline for the project. The sce-
+nario exploration phase moves into detailed research of the purpose and 
+issue identiﬁed in Phase 1. Internal and external environmental analyses are 
+conducted in this phase. Phase 3, scenario development, covers the work-
+shops used in the creation of multiple scenarios, writing scenario details, 
+and the selection of four challenging and fundamentally different scenarios 
+(using four scenarios helps to avoid some common thinking traps, which are 
+explained in detail in a later chapter). The scenario implementation phase 
+involves the facilitation of conversations to consider the implications of the 
+scenarios that have been developed. Risk management and contingency 
+planning are elements evident in the implications phase. Strategic insights 
+discovered in the scenario implementation phase also require reﬂection, and 
+events that signal the potential unfolding of a given scenario are identiﬁed. 
+The ﬁnal phase, project assessment, involves evaluating the scenario project. 
+Scenario projects are difﬁcult to assess, and their assessment has generally 
+been neglected in the scenario planning literature. This book offers a practi-
+cal approach to scenario planning project assessment.
+Figure 3.3 presents a visual overview of the whole scenario system. The 
+system includes inputs, outputs, and the phases of scenario planning. Part 
+Two of this book focuses on the details of the phases of the scenario system, 
+with speciﬁc tools and workshops for accomplishing the key purpose of each 
+phase. 
+THE SCENARIO-BUILDING COMPONENT
+Once the major inputs to the scenario system are considered, the scenario-
+building activity begins. Scenario building includes the ﬁrst three phases—
+project preparation, scenario exploration, and scenario construction (see 
+Figure 3.4). 
+These three phases build on ideas and use speciﬁc techniques to develop 
+a set of four scenarios. The four scenarios are used to challenge the thinking 
+in the organization and provide a common understanding of the dynamic 
+
+
+68 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+forces at play in the environment. At Shell, Pierre Wack often clariﬁed that 
+the scenario-building activity is actually a method of separating issues into 
+things he called predetermined elements and critical uncertainties—in 
+other words, separating the consequences of events that have already occurred 
+and been perceived from the things that are truly uncertain.
+THE SCENARIO DEPLOYMENT COMPONENT
+When scenarios have been developed, they are used to explore organiza-
+tional strategies, capacity, key decisions, and other important items. This 
+is often called “wind tunneling,” but scenarios can be used in a variety of 
+ways to maximize their collective impact. The Scenario Implementation 
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+F I G U R E  3.3 The Performance-Based Scenario System
+
+
+  
+T H E  P E R F O R M A N C E-B A S E D S C E N A R I O  S Y S T E M  
+69
+and Project Assessment phases are aimed at how scenarios can be used to 
+provoke changes in organizations and help decision makers make sense of 
+strategic insights (see Figure 3.5).
+CONCLUSION
+This chapter on the scenario system has discussed the nature of the external 
+context facing organizations. This environment is highly turbulent, volatile, 
+uncertain, complex, and ambiguous. Because of this context, traditional ap-
+proaches to planning are not adequate because they assume the environ-
+ment is relatively stable and predictable. 
+F I G U R E  3.4  The Performance-Based Scenario System—Scenario Building 
+Component
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+70 
+F OUNDATIO NS O F SCENARIO  P LAN N I N G
+In this chapter, planning has been positioned as a system within the 
+larger organizational system. In this repositioning, the scenario system has 
+its own set of inputs, processes, outputs, and feedback loops. Furthermore, 
+the scenario system has been presented with its ﬁve phases: 
+1. Project preparation
+2. Scenario exploration
+3. Scenario development
+4. Scenario implementation
+5. Project assessment
+F I G U R E  3.5  The Performance-Based Scenario System—Scenario Deployment 
+Component
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+ 71
+Scenario Case Study
+This chapter introduces a scenario case study based on events in a real sce-
+nario project. Later chapters provide clear examples of the outputs for each 
+phase of the scenario system. When all of the examples are put together, we 
+will have a complete scenario case study.
+Scenario projects are a purposeful approach to solving difﬁcult, am-
+biguous, and complex dilemmas. These projects require a high degree of 
+motivation and commitment to continuously learn in a context that does 
+not reveal simple “right” answers. The skills required for facilitating sce-
+nario projects are developed over time. While some organizations provide 
+training workshops and seminars focused on scenario planning skills, there 
+is no substitute for engaging in these complex problems ﬁrsthand. 
+One approach is to seek an experienced scenario planning professional 
+with whom to apprentice. The mentor-apprentice relationship is perhaps 
+the most powerful way to learn the tools, skills, processes, and nuances that 
+make for effective scenarios. Studying the details of the scenario system 
+through this book combined with serious intellectual engagement with the 
+Technology Corporation case and expert tutelage in actual scenario projects 
+forms an ideal approach to building scenario project leadership expertise. 
+The organization that serves as the core scenario case throughout this 
+book is an actual research and development technology ﬁrm located in the 
+northeastern United States. The company name used here will be “Technol-
+ogy Corporation” to disguise the organization. The organization currently 
+employs 185 people. Organizational leaders had never used a formal-
+ized approach to their planning for the future. Their typical process 
+was ad hoc and unstructured. On the surface, there appears to be no 
+cohesive approach to developing strategy or thinking about the future at 
+4

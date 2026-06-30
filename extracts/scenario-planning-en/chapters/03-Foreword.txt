@@ -1,0 +1,133 @@
+# Foreword
+
+xii 
+FO REWO RD
+For the ﬁrst time, the theoretical foundations of scenario planning 
+have been put forth.
+Providing the theoretical foundations for the scenario method for the 
+ﬁrst time through this book is important and essential for advancing prac-
+tices. An example for thinking about scenario use can be illustrated by re-
+calling what happened when you last purchased a car. What did you notice 
+when you drove your car out onto the streets? You probably noticed how 
+many people were driving the same car! It may have appeared as though 
+there were many more cars like yours than you had noticed before, when in 
+fact there is only one more of the same car on the road—yours! Becoming 
+aware of your selective observation (which is a skill that develops when sce-
+nario work is done well) enables you as a decision maker to notice relevant 
+dynamics more quickly than someone who has not explored the what-ifs.
+A rigorous theory base stabilizes scenario practice and lays the founda-
+tions for establishing best practice. Chermack’s work provides an excellent start 
+to articulating this body of theory. Theory can be deﬁned as “a scholarly descrip-
+tion of what works best and why.” This book provides that basis and will 
+guide practitioners and leadership toward best practice. While it provides 
+practical how-to’s, it argues strongly for the theory underpinning this prac-
+tice, as well as useful metrics for measuring the impact of scenario work. 
+Chermack’s writing takes the reader onto the cutting edge of strategy 
+making—namely, strategy making as strategic conversation. Here you will 
+get the big picture of scenario-based strategy in a framework that allows you 
+great freedom to bring in your own experiences as tools. Alternatively, if you 
+are new to scenario planning, a high level of detail is shared. For example, 
+a calibrated instrument for measuring the quality of strategic conversation 
+is provided, as well as recommended tools for measuring other aspects of 
+dynamic organizations. Chermack has contributed an emphasis on perfor-
+mance. It may be assumed that scenarios add value, but it is in the best 
+interests of the art of scenario planning to create a tradition of documenting 
+the actual results.
+The discipline of scenario planning needs to establish a track record of 
+its contributions. Assessing scenario work is overdue, and, like the estab-
+lishment of underlying theory, doing so will stabilize scenario practice and 
+boost quality. Chermack has described an elegant approach to assessment 
+that provides the practitioner with many different tools for pinning down 
+scenario impact. The invitation is for scholar-practitioners to add to this 
+
+
+  
+FO REWO RD 
+xiii
+body of knowledge, through their action research, reﬂection, and inquiry. A 
+comprehensive, theory-based practice that emphasizes assessment will create 
+a professional cadre of competent practitioners for scenario work.
+We have learned from MIT’s Peter Senge and the community of prac-
+titioners building learning organizations that learning faster than competi-
+tors is the ultimate competitive advantage. Scenario-based strategy is in 
+essence a learning and unlearning methodology. Pioneers such as the late 
+Don Michael (1973) in his book Learning to Plan and Planning to Learn and 
+Arie de Geus (1988) in his popular Harvard Business Review article “Plan-
+ning as Learning,” ﬁrst drew attention to the fundamental role of learning 
+in organizations as the basis for competitive advantage.
+While developing the scenario method in Royal/Dutch Shell, Group 
+Planning, Pierre Wack aimed scenario work at shifting the assumptions in 
+the minds of decision makers. This process enabled them to notice emergent 
+dynamics in the environment, before competitors, as they had visited and 
+studied them during the scenario-building process. This capacity of aligned 
+assumptions with the capability to self-correct early provided Royal/Dutch 
+Shell with a signiﬁcant competitive advantage when oil prices were volatile 
+in the 1970s. The assumptions on which they had based their decisions were 
+inﬂuenced by the scenario development process and therefore held a wider 
+view of their world.
+Because scenarios can be powerful tools, they have been used in widely 
+differing application areas. Herman Kahn used them to shift attention 
+onto the impending dangers of a nuclear holocaust, and Royal/Dutch 
+Shell leaders used scenarios for decision-making. In South Africa, sce-
+narios were used to push people toward “the high road” and away from 
+“the low road” of racial conﬂict and economic destruction. Engaging the 
+emerging South African national leadership in a conversation about the 
+future scenarios they might be confronted with resulted in avoiding popu-
+list policies that compromised the future of the economy. The list of ap-
+plication areas grows.
+Initially, scenario practice was learned via an apprenticeship model. 
+If you were fortunate enough to be a member of the Royal/Dutch Shell 
+Group Planning, you could learn from the masters, such as Pierre Wack, 
+Ted Newland, Arie de Geus, Kees van der Heijden, and Peter Schwartz. 
+The ﬁrst public courses for learning the craft of scenario development 
+emerged in the early 1990s. Early teaching was based on simulating a typical 
+
+
+xiv 
+FO REWO RD
+scenario project providing practice and coaching in the essentials of the var-
+ious phases of developing a set of scenarios.
+The recently established Scenario Planning Institute at Colorado State 
+University is destined to provide a home for scholar-practitioners and capac-
+ity building for scenario-based strategy. It promises to become a center for 
+high-quality scenario work, training of skilled scenario practitioners, and 
+the dissemination of performance-based scenario planning. 
+I wish you all the success with the scenarios you develop. May you grow 
+with other practitioners in the ﬁeld and use this book and scenarios to make 
+the world a better place.
+Louis van der Merwe
+Centre for Innovative Leadership 
+June 2010
+
+
+ xv
+Preface 
+THE FUTURE OFTEN ACTS like a drunken monkey stung by a bee—it is 
+confused and disturbing, and its behavior is completely unpredictable. Or-
+ganization leaders are struggling with an uncertain and fast-changing en-
+vironment. Many are frustrated by the promise of tools for managing the 
+future that come up short. A variety of terms has been used to describe the 
+environment, such as whitewater, the rapids, VUCA (volatile, uncertain, com-
+plex, and ambiguous), and turbulent. These terms all emphasize that business 
+decision making is an activity that has reached high levels of frustration and 
+confusion. Signs point to increasing complexity and uncertainty. This means 
+choosing among options will become even more challenging, and carving a 
+path into the future will require more diligent use of better tools.
+Traditional approaches to business planning have had their day. Linear 
+approaches to strategic planning worked in the 1950s and 1960s because 
+the environment was relatively stable. Linear approaches only lead to disap-
+pointment in today’s environment because they cannot account for uncer-
+tainty—they assume that the environment of tomorrow will be the same as 
+today’s. Scenario planning is a revolutionary alternative to traditional stra-
+tegic planning because it recognizes the unpredictable nature of the future. 
+Early scenario planners helped organization leaders see that the future was 
+not going to consist of historic trends, projected forward. Instead, recogniz-
+ing their problematic assumptions of a stable environment, decision makers 
+found a way to think about alternatives in scenario planning. Scenario plan-
+ning makes uncertainty a part of the plan. Many companies have been able 
+to avoid major strategic losses due to the alternative way of thinking found 
+in scenario planning.
+The most valuable advantage of creating and using scenarios is the rec-
+ognition that uncertainty is a basic feature of organizational environments. 
+By accepting the reality of uncertainty—and making it a part of how plan-
+ning happens—decision makers can widen the scope of what is assumed 

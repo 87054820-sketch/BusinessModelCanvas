@@ -9,6 +9,8 @@ import type {
   Lang,
   LibraryResource,
   LibraryResourceDetail,
+  ResourceChapterDetail,
+  ResourceChapterMeta,
   StrategyFramework,
   StrategyFrameworkDetail,
 } from '@pingarden/shared';
@@ -126,6 +128,18 @@ export const libraryApi = {
   getResource(slug: string): Promise<LibraryResourceDetail> {
     return fetchJson<LibraryResourceDetail>(
       `${BASE}/library/resources/${encodeURIComponent(slug)}`,
+    );
+  },
+  /** List chapters for one resource. Returns null-like empty when resource has no chapters. */
+  getResourceChapters(resourceSlug: string): Promise<ResourceChapterMeta[]> {
+    return fetchJson<ResourceChapterMeta[]>(
+      `${BASE}/library/resources/${encodeURIComponent(resourceSlug)}/chapters`,
+    );
+  },
+  /** Get one chapter's bilingual content with hydrated related cases. */
+  getResourceChapter(resourceSlug: string, chapterSlug: string): Promise<ResourceChapterDetail> {
+    return fetchJson<ResourceChapterDetail>(
+      `${BASE}/library/resources/${encodeURIComponent(resourceSlug)}/chapters/${encodeURIComponent(chapterSlug)}`,
     );
   },
 };

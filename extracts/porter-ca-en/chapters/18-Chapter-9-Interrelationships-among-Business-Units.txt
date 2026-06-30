@@ -1,0 +1,1884 @@
+# Chapter 9: Interrelationships among Business Units
+
+practice decentralization with near-religious reverence. Decentralization,
+coupled with disenchantment with synergy, has reinforced the view that
+portfolio management is the essential task of corporate strategy.
+The failure of synergy stemmed from the inability of companies to
+understand and implement it, not because of some basic ﬂaw in the concept.
+Firms often used it to justify actions taken for other reasons. Ill-deﬁned
+notions of what constituted synergy underlay many companies’ acquisition
+strategies. Even in instances where companies possessed a genuine
+opportunity to harness synergy, they often failed because the tools for
+analyzing it were lacking or they could not overcome the substantial
+organization problems of implementation.
+Compelling forces are at work today, however, that mean that ﬁrms must
+reexamine their attitude toward synergy. Economic, technological, and
+competitive developments are increasing the competitive advantage to be
+gained by those ﬁrms that can identify and exploit interrelationships among
+distinct but related businesses. These interrelationships are not the fuzzy
+notions of “ﬁt” which underlay most discussions of synergy, but tangible
+opportunities to reduce costs or enhance differentiation in virtually any
+activity in the value chain. Moreover, the pursuit of interrelationships by
+some competitors is compelling others to follow suit or risk losing their
+competitive position.
+These developments have made horizontal strategy, which cuts across
+divisional boundaries, perhaps the most critical item on the strategic agenda
+facing a diversiﬁed ﬁrm. Horizontal strategy is a coordinated set of goals
+and policies across distinct but interrelated business units. It is required at
+the group, sector, and corporate levels of a diversiﬁed ﬁrm. It does not
+replace or eliminate the need for separate business units and/or business
+unit strategies. Rather, horizontal strategy provides for explicit coordination
+among business units that makes corporate or group strategy more than the
+sum of the individual business unit strategies. It is the mechanism by which
+a diversiﬁed ﬁrm enhances the competitive advantage of its business units.
+Horizontal strategy is a concept of group, sector, and corporate strategy
+based on competitive advantage, not on ﬁnancial considerations or stock
+market perceptions. Corporate strategies built on purely ﬁnancial grounds
+provide an elusive justiﬁcation for the diversiﬁed ﬁrm. Moreover, the
+beneﬁts of even successful ﬁnancial strategies are often temporary. Without
+
+
+a horizontal strategy there is no convincing rationale for the existence of a
+diversiﬁed ﬁrm because it is little more than a mutual fund.2 Horizontal
+strategy—not portfolio management—is thus the essence of corporate
+strategy.
+Strategically important interrelationships have long been present in many
+diversiﬁed ﬁrms. Little attention has been given to identifying and
+exploiting them systematically, however, and many interrelationships have
+remained untapped. Achieving interrelationships involves far more than
+simply recognizing their presence. There are a number of organizational
+barriers to achieving interrelationships in practice, which are difﬁcult to
+surmount even if the strategic beneﬁts are clear. Without organizational
+mechanisms to facilitate interrelationships that work in tandem with a
+decentralized corporate organizational structure, horizontal strategy will
+fail.
+This chapter will provide a framework for analyzing interrelationships
+among business units and how they relate to competitive advantage. First, I
+will describe the reasons for the growing importance of interrelationships,
+and show how they affect many ﬁrms. I will next describe the three broad
+types of interrelationships among business units: tangible interrelationships,
+intangible interrelationships, and competitor interrelationships. Then I will
+discuss how each form of interrelationship leads to competitive advantage,
+and how interrelationships can be identiﬁed.
+Chapter 10 will draw together the principles of interrelationships to
+describe how a ﬁrm can formulate a horizontal strategy for its existing
+business units, and a diversiﬁcation strategy for entry into new industries.
+Chapter 11 goes on to treat the organizational issues involved in achieving
+interrelationships. In achieving interrelationships, strategy and organization
+are inextricably linked. There are strong parallels between interrelationships
+among business units, segment interrelationships (see Chapter 7), and
+geographic interrelationships, or interrelationships among activities located
+in different regions or countries. My focus in this chapter is on
+interrelationships among business units in different industries, but many of
+the principles of strategy can be readily applied to these other forms of
+interrelationships.3
+
+
+The Growing Importance of Horizontal Strategy
+Horizontal strategy is something that few ﬁrms today can afford to
+ignore. Interrelationships among business units and the ability to exploit
+them have been increasing in the last decade, and powerful and
+interconnected forces are likely to accelerate the trend in the 1980s and
+1990s.4
+Diversiﬁcation philosophy is changing. The philosophy guiding many
+ﬁrm’s diversiﬁcation strategies has shifted markedly since the early 1970s.
+Most now emphasize related diversiﬁcation. This has led to more attention
+being paid to “ﬁt,” and widespread pruning of corporate portfolios.
+Unrelated or marginally related business units added during earlier phases
+of diversiﬁcation have been sold off, and many ﬁrms have boosted their
+stock price through this process, including Borden, Scoville, Trans World
+Corporation, and IU International. A signiﬁcant fraction of today’s merger
+activity involves ﬁrms selling divisions to other ﬁrms where the ﬁt is closer.
+Emphasis is shifting from growth to performance. The environment in
+most of the developed world is one of relatively slow growth coupled with
+growing global competition, a dramatic change from the previous decades.
+The emphasis has thus shifted from growth to improving competitive
+advantage. While largely independent business units may have been an
+appropriate vehicle for pursuing growth, a more difﬁcult environment has
+made it increasingly important to coordinate business unit strategies to
+exploit interrelationships. Buyers, themselves under pressure, are often a
+force for coordination. Increasingly sophisticated purchasing by hospitals,
+for example, is compelling ﬁrms such as Johnson & Johnson and American
+Hospital Supply to integrate the sales forces and distribution systems of
+business units serving hospitals in order to maintain competitive advantage.
+Both of these ﬁrms have been among the strongest advocates of
+decentralization.
+Technological change is proliferating interrelationships and making
+them more achievable. Technology is breaking down barriers between
+industries and driving them together, particularly those based on
+
+
+electronics/information technology. Microelectronics, low-cost computers,
+and communications technology are permeating many businesses and
+causing technologies to converge. As these technologies are assimilated into
+many products and production processes, the opportunities for shared
+technology development, procurement, and component fabrication are
+increasing. The rush of many large diversiﬁed ﬁrms such as Gould and
+United Technologies to acquire electronics ﬁrms is a manifestation of this
+trend.
+These same technologies are changing the functions of products and
+making them parts of larger systems, sometimes controlled centrally with a
+common computer. Integrated aircraft cockpits, ofﬁce automation,
+telecommunications, and lighting, heating, airconditioning, security, and
+elevator systems in buildings are just a few examples where historically
+distinct businesses are now becoming strongly related.
+New technology is also making it possible to share activities across
+business unit lines where it was not feasible previously. So-called “ﬂexible
+automation” is one important example, in which a computer-controlled
+machine can produce a variety of similar products with minimal setup time.
+While ﬂexible automation is penetrating slowly and its limits have yet to be
+deﬁned, it is enhancing the possibilities for sharing component fabrication
+and assembly facilities among business units with related products.
+Flexibility that allows sharing also holds promise in other areas such as
+automated testing and computer-aided design.
+The growing sophistication of information systems is also a powerful
+force in opening up possibilities for interrelationships. With the increasing
+capacity to handle complex on-line data, information technology is allowing
+the development of automated order processing systems, automated
+materials handling systems, automated warehouses, and systems to
+automate other value activities outside of manufacturing. These systems can
+often be shared among related businesses.5 Information technology is also
+restructuring distribution channels and the selling process in industries such
+as banking and insurance, in ways that can facilitate sharing.
+At the same time that technology is creating interrelationships, it is also
+reducing costs of exploiting them. The ease of communication has
+increased just as dramatically as its costs have fallen, reducing the costs of
+coordinating the activities of business units. Information processing
+
+
+technology has allowed management information systems to be established
+in areas such as logistics, inventory management, production scheduling,
+and sales force scheduling. Flexibility in activities has become increasingly
+possible. While sharing activities may have involved unmanageable
+complexity and unacceptable costs in the past, this is less often the case
+today.
+Multipoint competition is increasing. A ﬁnal compelling motivation for
+horizontal strategy is a logical outgrowth of the other three. As more and
+more ﬁrms seek out or are forced to pursue interrelationships among
+business units, there is an increasing presence of what I term multipoint
+competitors. Multipoint competitors are ﬁrms that compete with each other
+not only in one business unit but in a number of related business units. For
+example, Procter & Gamble, Kimberly-Clark, Scott Paper, and Johnson &
+Johnson compete with each other in varying combinations of consumer
+paper products industries including disposable diapers, paper towels,
+feminine napkins, toilet tissue, and facial tissue. General Electric,
+Westinghouse, Square D, and Emerson Electric similarly meet each other in
+a number of electrical products industries. Where a ﬁrm has multipoint
+competitors, it must view its competitors more broadly than at the business
+unit level because competitive advantage will be more broadly determined.
+Many important industry sectors are being affected by these forces.
+Financial services are being revolutionized by interrelationships created by
+information technology and unleashed by regulatory changes. Such ﬁrms as
+American Express, Citicorp, Sears, Prudential-Bache, and Merrill Lynch are
+aggressively linking previously separate ﬁnancial services industries
+together. In health care, I have already noted how producers of medical
+equipment and supplies are beginning to pursue interrelationships more
+aggressively. A few health care providers are also just beginning to see the
+possible interrelationships in operating facilities such as hospitals, nursing
+homes, retirement communities, and home care services, though these
+interrelationships are not yet being exploited. Entertainment ﬁrms have
+begun to recognize the possibilities for coordinated strategies in different
+media. Information companies such as McGraw-Hill and Dun and
+Bradstreet are moving to combine many data base products. Computers and
+
+
+telecommunications ﬁrms are combining together and/or invading each
+other’s turf, as evidenced by such recent moves as IBM’s link with Rolm
+and AT&T’s entry into computers. Automation of the factory and the ofﬁce
+is connecting many industries and spawning broadly-based strategies by
+such ﬁrms as GE, Westinghouse, and Xerox. This list of industries being
+connected by interrelationships is by no means exhaustive.
+The forces leading to increasing interrelationships are also illustrated in a
+study I conducted of business units in 75 diversiﬁed Fortune 500 ﬁrms in
+1971 and 1981. These 75 ﬁrms had organized their thousands of business
+units into 300 groups in 1971 and 315 groups in 1981. The nature and
+strength of the interrelationships among business units in each group were
+examined for both time periods. The number and strength of potential
+interrelationships within the groups increased over the ten-year period, as
+portfolios were reconﬁgured. However, the ﬁrms’ success at exploiting the
+potential interrelationships was less clear. From examining how ﬁrms
+changed their organizational structure over the period, it does appear that
+ﬁrms became more prone to group related businesses together.
+Many factors point to the growing importance of horizontal strategy, and
+imply that past experience with synergy is a poor guide for the future. At
+the same time, though, many ﬁrms have not converted potential
+interrelationships into sources of competitive advantage. The same ﬁrms
+that are assembling groups of related business units continue to manage
+them like a portfolio. Thus diversiﬁed ﬁrms must learn how to manage
+interrelationships at the same time as they will increasingly have to identify
+and build upon them.
+Interrelationships among Business Units
+There are three broad types of possible interrelationships among
+business units: tangible interrelationships, intangible interrelationships, and
+competitor interrelationships. All three types can have important, but
+different, impacts on competitive advantage and are not mutually exclusive:
+Tangible Interrelationships. Tangible interrelationships arise from
+opportunities to share activities in the value chain among related business
+
+
+units, due to the presence of common buyers, channels, technologies, and
+other factors. Tangible interrelationships lead to competitive advantage if
+sharing lowers cost or enhances differentiation enough to exceed the costs
+of sharing. Business units that can share a sales force, for example, may be
+able to lower selling cost or provide the salesperson with a unique package
+to offer the buyer. Achieving tangible interrelationships often involves
+jointly performing one value activity while in other cases it involves
+multiple activities. When sister business units cross-sell each other’s
+product, for example, they are sharing both of their sales forces.
+Intangible Interrelationships. Intangible interrelationships involve the
+transference of management know-how among separate value chains.
+Businesses that cannot share activities may nevertheless be similar in
+generic terms, such as in the type of buyer, type of purchase by the buyer,
+type of manufacturing process employed and type of relationship with
+government. For example, beer and cigarettes are both frequently purchased
+recreational products sold on the basis of image as well as taste, while
+trucking and waste treatment both involve the management of multiple
+sites.
+Intangible interrelationships lead to competitive advantage through
+transference of generic skills or know-how about how to manage a
+particular type of activity from one business unit to another. This may lower
+the cost of the activity or make it more unique and outweigh any cost of
+transferring the know-how. For example, Philip Morris applied product
+management, brand positioning, and advertising concepts learned in
+cigarettes to the beer business, substantially changing the nature of
+competition and dramatically enhancing the competitive position of the
+Miller brand. It performed marketing activities for cigarettes and beer
+separately, but used expertise gained in managing activities in one industry
+to manage them more effectively in another.
+Often intangible interrelationships are manifested in a ﬁrm’s use of the
+same generic strategy in a number of business units, reﬂecting
+management’s skills in executing a particular strategy. For example,
+Emerson Electric and H. J. Heinz compete by using cost leadership
+strategies in many of their business units. Emerson and Heinz have learned
+
+
+how to manage many activities to achieve low cost, and transfer this know-
+how to similar but separate value activities in many business units.
+Competitor Interrelationships. The third form of interrelationship,
+competitor interrelationships, stems from the existence of rivals that
+actually or potentially compete with a ﬁrm in more than one industry. These
+multipoint competitors necessarily link industries together because actions
+toward them in one industry may have implications in another. While
+competitor interrelationships occur without tangible or intangible
+interrelationships being present and vice versa, the two often coexist
+because tangible and intangible interrelationships can provide the basis for
+diversiﬁcation. Competitors in one industry, therefore, often expand in the
+same directions.
+Competitor 
+interrelationships 
+make 
+tangible 
+and 
+intangible
+interrelationships all the more important to recognize and exploit. A
+multipoint competitor may compel a ﬁrm to match an interrelationship or
+face a competitive disadvantage. Multipoint competitors can also have an
+overlapping but different set of business units linked by different
+interrelationships than the ﬁrm’s, making the matching of such
+interrelationships difﬁcult.
+The three types of interrelationships can occur together, as has already
+been suggested. Tangible interrelationships involving some value activities
+can be supplemented by intangible interrelationships in others. Activities
+shared between two business units can be improved by know-how gained
+from similar activities in other business units. Both tangible and intangible
+interrelationships are often present when multipoint competitors are present.
+Each type of interrelationship, however, leads to competitive advantage in a
+different way.
+Synergy is not one idea, then, but three fundamentally different ideas.
+Thus it is no surprise that what is meant by synergy has been vague.
+Synergy has most often been described in terms that suggest that what was
+meant was intangible interrelationships—transference of skills or expertise
+in management from one business unit to another. This form of
+interrelationship is perhaps the most ephemeral, however, and its role in
+creating competitive advantage often is uncertain though potentially
+
+
+signiﬁcant. Hence it is not surprising that many ﬁrms have had great
+difﬁculty realizing the fruits of synergy in practice.
+I will discuss all three forms of interrelationships in this chapter.
+Tangible and competitive interrelationships have the most compelling link
+to competitive advantage, and are easier to implement. Intangible
+interrelationships are fraught with pitfalls and are often difﬁcult to
+implement, but can still be a powerful source of competitive advantage in
+some industries. All three types play a role in horizontal strategy, as will be
+discussed in Chapter 10.6
+Tangible Interrelationships
+The value chain provides the starting point for the analysis of tangible
+interrelationships. A business unit can potentially share any value activity
+with another business unit in the ﬁrm, including both primary and
+supporting 
+activities. 
+For 
+example, 
+Procter 
+& 
+Gamble 
+enjoys
+interrelationships between its disposable diaper and paper towel businesses.
+Certain raw materials can be procured and handled jointly, the development
+of technology on products and processes is shared, a joint sales force sells
+both products to supermarket buyers, and both products are shipped to
+buyers via the same physical distribution system. The interrelationships are
+shown schematically in Figure 9–1. As this example illustrates, tangible
+interrelationships between two business units can involve one or many value
+activities. If most value activities are shared between two business units,
+however, they are not strategically distinct business units but in fact one
+business unit.
+Sharing an activity can lead to a sustainable competitive advantage if the
+advantage of sharing outweighs the cost, provided the sharing is difﬁcult for
+competitors to match. Sharing leads to a competitive advantage if it reduces
+cost or enhances differentiation. Sharing always involves some cost,
+however, that ranges from the cost of coordinating among the business units
+involved to the need to modify business unit strategies to facilitate sharing.
+Sharing and Competitive Advantage
+
+
+Sharing a value activity will lead to a signiﬁcant cost advantage if it
+involves an activity that represents a signiﬁcant fraction of operating costs
+or assets (I term this a large value activity), and sharing lowers the cost of
+performing the activity. Sharing will signiﬁcantly enhance differentiation if
+it involves an activity important to differentiation in which sharing either
+increases the uniqueness of the activity or reduces the cost of being unique.
+Thus sharing leads to a competitive advantage if it affects the drivers of cost
+position or differentiation described in Chapters 3 and 4.
+
+
+Figure 9–1. Illustrative Interrelationships Between Value Chains in Paper Products
+
+
+SHARING AND COST
+Sharing will have a material impact on overall cost position only if the
+value activities involved are a signiﬁcant proportion of operating costs or
+assets, or will be in the future. In the Procter & Gamble example, the shared
+value activities add up to more than 50 percent of revenues. Sharing does
+not necessarily lower cost, however, unless it favorably affects the other
+cost drivers of an activity. Sharing has the potential to reduce cost if the cost
+of a value activity is driven by economies of scale, learning, or the pattern
+of capacity utilization.7 Sharing increases the scale of an activity and
+increases the rate of learning if learning is a function of cumulative
+volume.8 Sharing may also improve the pattern of capacity utilization of an
+activity if the involved business units utilize the activity at different times.
+For example, a sales force or logistical system that is utilized heavily during
+only part of the year serving one business unit may be utilized during other
+periods by another. All three beneﬁts of sharing for cost position can
+potentially occur simultaneously.9
+Sharing activities among business units is, then, a potential substitute for
+market share in any one business unit. A ﬁrm that can share scale- or
+learning-sensitive activities among a number of business units may
+neutralize the cost advantage of a high market share ﬁrm competing with
+one business unit. Sharing is not exactly equivalent to increasing market
+share in one business unit, however, because a shared activity often involves
+greater complexity than an equivalent scale activity serving one business
+unit. The complexity of a shared logistical system involving ten product
+varieties may increase geometrically compared to one that must handle only
+ﬁve. The added complexity becomes a cost of sharing.
+If scale, learning, or the pattern of utilization are not important cost
+drivers, sharing is likely to raise costs. Firms often mistakenly pursue
+sharing solely because of excess capacity in an activity. If sharing does not
+lead to scale or learning advantages or improve the long-term pattern of
+utilization, however, the costs of sharing will usually mean that sharing
+creates a disadvantage. The correct solution would have been to reduce
+capacity in the activity rather than share it.
+Figure 9–2 illustrates how these principles can be used to highlight
+activities where sharing is potentially important to cost position.
+
+
+Interrelationships involving value activities in the upper right-hand quadrant
+of the diagram are of potentially greatest signiﬁcance due to their large
+costs and sensitivity to scale, learning, or utilization. Interrelationships
+involving value activities in the upper left-hand quadrant are not currently
+important because sharing will not reduce cost, though the value activities
+represent a large fraction of costs or assets. However, changes in the
+technology 
+for 
+performing 
+such 
+activities 
+can 
+quickly 
+make
+interrelationships crucial if their cost becomes more sensitive to scale,
+learning, or utilization. The change in order processing technology from
+manual systems to on-line computers in many distribution industries, for
+example, has begun to create important advantages from sharing order
+processing across related product lines. Interrelationships involving value
+activities in the lower right-hand quadrant can become important for cost
+position if changes in the cost structure raise the percentage of operating
+costs or assets they represent. The increasing capital cost of a plant and
+supporting infrastructure, for example, will raise the potential advantage of
+sharing facilities.
+Figure 9–2. Shared Value Activities and Cost Position
+SHARING AND DIFFERENTIATION
+
+
+Sharing affects differentiation in two ways. It can enhance differentiation
+by increasing the uniqueness of an activity, or it can lower the cost of
+differentiation. Chapter 4 described how many activities can affect buyer
+value and, thus, differentiation. Sharing will be most important to
+differentiation if it affects value activities that are important to actual value
+or to signaling value. In consumer electronics, for example, sharing product
+development is important to differentiation because differentiation is
+heavily affected by product design. Sharing will also be important to
+differentiation where it reduces the cost of expensive forms of
+differentiation, such as an extensive sales and service network (e.g., IBM in
+ofﬁce products).
+Sharing can make an activity more unique both directly and through its
+impact on other drivers of uniqueness. Sharing enhances uniqueness
+directly if the shared activity is more valuable to buyers because it involves
+more than one business unit. Selling several products through the same
+sales force may increase convenience for the buyer, for example, or allow
+for the differentiation advantages of bundling (see Chapter 12). In
+telecommunications, for example, buyers want system solutions and one-
+vendor accountability. Similarly, joint product development may lead to
+greater compatibility among related products. Sharing may also increase
+uniqueness indirectly, through increasing scale or the rate of learning in an
+activity. As described in Chapter 4, both scale and learning may allow an
+activity to be performed in a unique way.
+Sharing can reduce the cost of differentiation through its impact on the
+cost drivers of differentiating activities. Sharing product development
+among business units can reduce the cost of rapid model changes if product
+development is subject to economies of scale, for example, while shared
+procurement can lower the cost of purchasing premium quality ingredients
+or components. The added complexity of a shared activity is a cost of
+sharing, however, that must be weighed against the beneﬁts to
+differentiation.
+THE ADVANTAGES OF SHARING AND BUSINESS UNIT POSITION
+Sharing an activity will usually not lead to an equal improvement in cost
+or differentiation for each of the business units involved. Differences in the
+
+
+scales of the business units are one important reason. A business unit that
+uses a large volume of a component may not gain much of a cost advantage
+from sharing fabrication of the component with a business unit that uses a
+small volume of it. However, the unit that is the smaller user may enjoy a
+tremendous improvement in cost position through gaining the beneﬁts of
+the larger unit’s scale. The advantages to the unit that is the smaller user
+may allow it to substantially improve its market position. Given such
+asymmetries, it should come as no surprise that larger business units are
+rarely enthusiastic about interrelationships with smaller units.10
+Differences in the structure of the industries in which business units
+compete may also lead to differential beneﬁts from sharing. A small
+improvement in cost position may be very important in a commodity
+industry, for example, but less signiﬁcant in an industry where product
+differentiation is high and ﬁrms compete on quality and service. The
+signiﬁcance of an interrelationship also depends on the strategies of the
+business units involved. An interrelationship may lead to uniqueness that is
+valuable for one business unit but much less valuable to another. It is rare,
+then, that all the business units involved in an interrelationship will perceive
+it as equally advantageous. This point has important implications for
+horizontal strategy and for the ability of senior managers to persuade
+business units to pursue interrelationships.
+The Costs of Sharing
+Interrelationships always involve a cost, because they require business
+units to modify their behavior in some way. The costs of sharing a value
+activity can be divided into three types:
+• cost of coordination
+• cost of compromise
+• cost of inﬂexibility
+The cost of coordination is relatively easy to understand. Business units
+must coordinate in such areas as scheduling, setting priorities, and resolving
+problems in order to share an activity. Coordination involves costs in terms
+of time, personnel, and perhaps money. The cost of coordination will differ
+
+
+widely for different types of sharing. A shared sales force requires continual
+coordination, for example, while joint procurement may require nothing
+more than periodic communication to determine the quantity of a purchased
+input required per period by each business unit. Different business units
+may also see the cost of coordination differently. The costs of coordination
+are often viewed as higher by smaller business units, who see a continual
+battle over priorities and the risk of being dictated to by larger units.
+Business units that do not manage a shared activity or are located at a
+distance from it also tend to fear that their best interests will not be
+protected.11
+The cost of coordination will be inﬂuenced by the potentially greater
+complexity of a shared activity noted earlier. The added complexity
+involved in sharing will vary, depending on the speciﬁc activity. Sharing a
+computerized order entry system among business units will usually add
+little complexity, for example, in contrast to sharing a logistical system
+between two business units with large product lines. The added complexity
+of a shared activity can sometimes offset economies of scale or reduce the
+rate of learning compared to an activity serving one business unit. Thus
+sharing can both increase scale and/or learning at the same time as it alters
+the relationship between scale or learning and cost. This is important
+because changing the scale-or learning-sensitivity of an activity may beneﬁt
+or hurt the ﬁrm’s cost position depending on its circumstances.
+Computerization generally has reduced the cost of handling the complexity
+of sharing. That is one of the reasons why interrelationships are getting
+more important.
+A second, often more important, cost of sharing is the cost of
+compromise. Sharing an activity requires that an activity be performed in a
+consistent way that may not be optimal for either of the business units
+involved. Sharing a sales force, for example, may mean that the salesperson
+gives less attention to both business units’ product and is less
+knowledgeable about either product than a dedicated sales force would be.
+Similarly, sharing component fabrication may mean that the component’s
+design cannot exactly match one business unit’s needs because it must also
+meet another’s. The cost of compromise may include costs not only in the
+shared value activity but also in other linked value activities. Sharing a sales
+force, for example, may reduce the availability of salespeople to perform
+
+
+minor service functions, thereby increasing the number of service
+technicians required. Policy choices required to facilitate sharing, then, can
+adversely affect the cost or differentiation of one or more of the business
+units involved.
+That business units must in some way compromise their needs to share
+an activity is almost a given. The cost of compromise may be minor, or may
+be great enough to nullify the value of sharing. For example, attempting to
+share a logistical system among business units producing products of
+widely differing sizes, weights, delivery frequencies, and sensitivities to
+delivery time may well lead to a logistical system that is so inappropriate to
+any of the business unit’s needs that the cost savings of sharing are
+overwhelmed. However, sharing a brand name or sharing procurement of
+commodities may involve little or no compromise.
+The cost of compromise to share an activity will often differ for each of
+the affected business units. A business unit with a product that is difﬁcult to
+sell may have to compromise the most in employing a shared sales force,
+for example. The cost of compromise may also differ because the particular
+value activity plays a differing role in one business unit compared to
+another because of its strategy. The compromise involved in joint
+procurement of a common grade of milk or butter may be more serious for a
+business unit of a food manufacturer pursuing a premium quality strategy
+than it is for one attempting to be the low-cost producer if the common
+grade is not top quality.
+The cost of compromise required to achieve an interrelationship is much
+less if the strategies of the business units involved are consistent with
+respect to the role of the shared value activity. Achieving such consistency
+often involves little or no sacriﬁce to the affected business units if their
+strategic directions are coordinated over time. A particular component can
+be highly effective in the products of two business units if both units design
+their products with the component in mind, for example. If the design
+groups of the two business units are allowed to proceed independently,
+however, the chances are high that the common component will not meet
+either business unit’s needs. Consistency among business units’ strategies
+that facilitates sharing will rarely happen naturally. An example of both the
+opportunities to shape the cost of compromise and the indirect costs of
+compromise that must be weighed comes from General Foods’ successful
+
+
+new Pudding Pops. Pudding Pops were designed to melt at a higher
+temperature than ice cream so that distribution then could be shared with
+General Foods’ Birds Eye frozen vegetables. While frozen foods are
+transported at zero degrees Fahrenheit, ice cream must be transported at 20
+degrees below zero or it will build up ice crystals. While the beneﬁts in
+shared logistics were clear, however, sharing had some unforseen
+consequences elsewhere in the value chain. Because Pudding Pops had to
+be ordered by supermarket frozen food managers along with vegetables,
+instead of with other freezer case novelty items, Pudding Pops were often
+forgotten. As this example illustrates, the beneﬁts and costs of an
+interrelationship must be examined throughout the value chain and not just
+in the activity shared.
+The cost of compromise is frequently reduced if an activity is designed
+for sharing rather than if previously separate activities are simply combined
+or if an activity designed to serve one business unit simply takes on another
+with no change in procedures or technology. Recent events in ﬁnancial
+services have highlighted this point. Merging computer systems initially
+designed for separate ﬁnancial products has proven difﬁcult, though a
+system designed to process many products would be effective. Similarly,
+attempting to sell insurance and other ﬁnancial products through a
+distribution system designed for selling stocks and bonds has not served any
+of the products very well and has created organizational problems.
+However, a new conception of a brokerage ofﬁce is emerging that combines
+brokers, customer service personnel to handle simple problems and screen
+clients, and specialists to sell other ﬁnancial products together with a new
+shared information system. The cost of compromise in sharing distribution
+is likely to be much less as a result.
+The third cost of sharing is the cost of inﬂexibility. Inﬂexibility takes two
+forms: (1) potential difﬁculty in responding to competitive moves, and (2)
+exit barriers. Sharing can make it more difﬁcult to respond quickly to
+competitors because attempting to counter a threat in one business unit may
+undermine or reduce the value of the interrelationship for sister business
+units. Sharing also can raise exit barriers. Exiting from a business unit with
+no competitive advantage may harm other business units sharing an activity
+with it.12 Unlike other costs of sharing, the cost of inﬂexibility is not an
+ongoing cost but a potential cost should the need for ﬂexibility arise. The
+
+
+cost of inﬂexibility will depend on the likelihood of the need to respond or
+exit.
+Some costs of coordination, compromise, or inﬂexibility are involved in
+achieving any interrelationship. These costs, particularly any required
+compromise to achieve an interrelationship, will be very real concerns
+raised by business units when sharing is discussed. They may appear far
+more obvious than the advantages of the interrelationship, which may
+appear theoretical and speculative. Business units will also tend to view a
+potential interrelationship in the light of their existing strategy, rather than
+weigh its cost if their strategies are modiﬁed to minimize the costs of
+sharing. Finally, the value of interrelationships is often clouded by
+organizational issues involved in sharing, including those of turf and
+autonomy which are addressed in Chapter 11. Thus business units can
+sometimes oppose interrelationships that may result in a clear competitive
+advantage to them.
+The advantages of sharing an activity must be weighed against the costs
+of coordination, compromise, and inﬂexibility to determine the net
+competitive advantage of sharing. The assessment of the competitive
+advantage from an interrelationship must be performed separately for each
+of the involved business units, and the value of an interrelationship to the
+ﬁrm as a whole is the sum of the net advantages to the involved business
+units. The net competitive advantage from sharing an activity will almost
+inevitably vary for each business unit involved. In some cases, the net value
+of an interrelationship may even be negative from the viewpoint of one
+business unit because of the required compromise, but will be more than
+offset by a positive net value for other affected business units. For this
+reason and because of the natural biases in approaching interrelationships
+noted above, then, business units will often not readily agree on pursuing
+interrelationships that will beneﬁt a ﬁrm as a whole. Interrelationships will
+only happen under such circumstances if there is an explicit horizontal
+strategy.
+While there are always costs of sharing, forces are at work to reduce
+them in many industries. The new technologies described earlier in this
+chapter are having the effect of reducing the cost of coordination,
+compromise, and, to a lesser extent, the cost of inﬂexibility. Easier
+communication and better information systems make coordination easier.
+
+
+Low-cost computers and information systems also introduce ﬂexibility into
+value activities, or the technical capability to minimize the cost of
+compromise. Programmable machines and robots can adapt to the different
+needs of business units sharing them. Many ﬁrms are only beginning to
+perceive these possibilities for lowering the cost of sharing, but continue to
+base their assessment of interrelationships on outdated methods.
+Difﬁculty of Matching
+The 
+sustainability 
+of 
+the 
+net 
+competitive 
+advantage 
+of 
+an
+interrelationship will depend on the difﬁculty competitors have in matching
+it. Competitors have two basic options in matching the competitive
+advantage of an interrelationship: (1) duplicating the interrelationship, or
+(2) offsetting it through other means such as gaining share in the affected
+business unit or exploiting a different interrelationship. The ease of
+duplicating an interrelationship will vary depending on whether competitors
+are in the same group of related industries involved. The most valuable
+interrelationships from a strategic point of view are those involving
+industries that competitors are not in and that have high barriers to entry.
+For example, Procter & Gamble’s advantage from the interrelationships
+between its disposable diaper and paper towel business units is quite
+sustainable because its paper towel competitors are blocked from entering
+the diaper business by enormous entry barriers. A competitor may also face
+higher or lower costs of coordination and compromise than the ﬁrm in
+achieving 
+an 
+interrelationship 
+depending 
+on 
+the 
+strategies 
+and
+circumstances of its business units. Other things being equal, then, a ﬁrm
+should pursue most aggressively those interrelationships that its competitors
+will ﬁnd the most difﬁcult to match because of the costs of coordination or
+compromise.
+The ability of competitors to offset an interrelationship is a function of
+whether they can ﬁnd some other way of improving position in the affected
+business unit through changes in its strategy or by pursuit of different
+interrelationships.13 Since nearly any value activity can potentially be
+shared, a competitor may be able to forge an interrelationship among a
+different group of business units or share different value activities among
+
+
+the same group of businesses. If a ﬁrm, through pursuing an
+interrelationship, causes a competitor to respond by pursuing different
+interrelationships, it faces the danger that the ultimate outcome will be an
+erosion in its relative position.
+A ﬁnal consideration in assessing the difﬁculty of matching an
+interrelationship is whether the same beneﬁts can be achieved by a
+competitor through a coalition or long-term contract. Sometimes a ﬁrm can
+gain the beneﬁts of sharing through a joint venture or other form of
+coalition with another ﬁrm, without actually entering another industry.
+While such coalitions may be difﬁcult to forge, they should always be
+considered in assessing the value of an interrelationship and how to achieve
+it.
+Identifying Tangible Interrelationships
+To aid in identifying the tangible interrelationships present in a ﬁrm, a
+useful starting point is to catalog all the forms of sharing that occur in
+practice as well as the alternative ways they can create competitive
+advantage. Figure 9–3 divides forms of sharing into ﬁve categories:
+production, market, procurement, technology, and infrastructure. I have
+included shared human resource management as part of shared
+infrastructure. It is useful to separate these categories of interrelationships
+because they raise different issues in sharing. Interrelationships ultimately
+stem from commonalities of various types among industries, such as
+common buyers, channels, or production processes. These commonalities
+deﬁne potential interrelationships; whether the interrelationships lead to a
+competitive advantage is a function of the beneﬁts and costs described
+earlier. The sources of each category of interrelationship and the possible
+forms of sharing to capture it are shown in Table 9–1.
+MARKET INTERRELATIONSHIPS
+Market interrelationships involve the sharing of primary value activities
+involved in reaching and interacting with the buyer, from outbound logistics
+to service. When business units have only the geographic location of their
+buyers in common, sharing is usually restricted to physical distribution
+
+
+systems, order processing, and to servicing and sales if the products have
+similar sales and servicing needs. Richer opportunities for sharing are
+present when business units also have common buyers, common channels,
+or both. If buyers or channels are the same, sharing of physical distribution
+or order processing systems among business units usually involves less
+complexity and lower costs of sharing. In addition, common buyers or
+channels open up a wide variety of other possible forms of sharing shown in
+Table 9–1.
+The subtleties in identifying potential market interrelationships stem
+from the tendency to view the buyer or channel too broadly. A wide variety
+of products and services are sold to oil companies, for example, including
+drilling equipment, reﬁnery equipment, and transportation equipment such
+as oil tankers and tanker trucks. Thus oil companies might be identiﬁed as a
+common buyer by business units in many industries. The various products
+are sold to different parts of the oil company, however, which often have
+little contact with each other. Even within a product category such as
+drilling equipment, equipment used in exploration is frequently sold to a
+different organizational unit than production equipment. Even in instances
+when the same unit of the oil company makes the purchase, the particular
+individuals making the purchase decision or inﬂuencing the decision maker
+will often differ for different pieces of equipment. Engineers may be
+responsible for choosing some high-technology equipment such as blowout
+preventers, for example, while purchasing agents often choose more
+standard items such as pipe.
+
+
+Figure 9–3. Categories of Tangible Interrelationships
+
+
+TABLE 9–1 Possible Sources of Interrelationships
+Another example of viewing the buyer too broadly is becoming apparent
+from recent experience in ﬁnancial services. The traditional buyer of stocks
+and bonds is a different individual than the average life insurance buyer.
+Both are different individuals than the typical buyer of futures. These
+differences 
+are 
+nullifying 
+simplistic 
+efforts 
+to 
+achieve 
+market
+interrelationships in ﬁnancial services. Meaningful opportunities for
+exploring market interrelationships among business units are usually
+present only where the decision makers for the products are the same or
+have some contact with each other.
+The same issues arise in identifying common channels. Though two
+products might both be sold through department stores, few actual channel
+interrelationships are likely to be present if one is sold through discount
+
+
+department stores and the other through exclusive department stores such as
+Lord & Taylor and Neiman-Marcus. There are also often different buying
+executives responsible for different classes of products in the same channel.
+In most supermarket chains, for example, frozen foods are typically bought
+by a different buyer than meats, even though some frozen foods are meat
+products. Even if the decision makers are different, however, opportunities
+for sharing logistical and order processing systems may exist with both
+common buyers and common channels.
+Whether products sold to a common buyer are substitutes or
+complements can also affect the advantage of sharing market-related
+activities. Shared marketing can yield less of a cost advantage when
+products are substitutes because the buyer will purchase either one product
+or the other but not both. However, offering substitute products to buyers
+can reduce the risk of substitution because losses in one product can be
+compensated in the other (see Chapter 8). Joint marketing of substitutes can
+also enhance a ﬁrm’s differentiation.
+When business units sell complementary products to common buyers,
+the advantage of sharing is often greater than if the products are unrelated
+or substitutes. Complementary products usually have correlated demand
+that facilitates the efﬁcient utilization of shared value activities, and other
+practices such as common branding, joint advertising and bundling. The
+strategic issues raised by complementary products, a subset of market
+interrelationships, are treated separately in Chapter 12.
+The potential competitive advantages of the important forms of market
+interrelationships and the most likely sources of compromise cost are shown
+in Table 9–2. Indirect activities such as market research, sales force
+administration and advertising production (e.g., artwork, layout) can often
+be shared more easily than direct activities because they require lower
+compromise costs.14 The beneﬁts of market interrelationships can often be
+enhanced by changes in the strategies of the involved business units that
+reduce the cost of compromise. Standardizing sales force practices,
+repositioning brands to make their images more compatible, or
+standardizing delivery standards or payment terms may make sharing easier,
+for example.
+
+
+PRODUCTION INTERRELATIONSHIPS
+Interrelationships in production involve the sharing of upstream value
+activities such as inbound logistics, component fabrication, assembly,
+testing, and indirect functions such as maintenance and site infrastructure.
+All these forms of sharing require that activities be located together. Doing
+so can lead to a compromise cost if the suppliers or buyers of the business
+units sharing the activities have greatly different geographic locations since
+inbound or outbound freight costs may be increased. Shared procurement is
+different from production interrelationships because merging facilities is not
+implied. Purchased inputs can be procured centrally but shipped from
+suppliers to dispersed facilities.
+Production interrelationships can be illusory when apparently similar
+value activities are examined closely. For example, though the machines
+themselves are generically the same, a job-shop manufacturing process for
+one product may involve different machine tolerances than another, or lot
+sizes or run lengths can be quite different. As with market
+interrelationships, indirect value activities offer particularly attractive
+opportunities for sharing because the compromise costs are often low. For
+example, such activities as building operations, maintenance, site
+infrastructure, and testing laboratories can be shared despite the fact that the
+actual manufacturing processes are different.
+Table 9–3 shows the potential competitive advantages of important forms
+of production interrelationships, and the likely sources of compromise cost.
+The balance will depend on the strategies of the involved business units. For
+example, two business units with differentiation strategies are more likely to
+have similar needs in terms of component speciﬁcations, manufacturing
+tolerances, and testing standards than if one business unit pursues cost
+leadership while another offers a premium product.
+TABLE 9–2 Determinants of Net Competitive Advantage from Market
+Interrelationships
+FORM OF
+SHARING
+POTENTIAL COMPETITIVE
+ADVANTAGES
+MOST LIKELY SOURCES OF
+COMPROMISE COST
+Shared brand
+Lower advertising costs
+Product images are
+
+
+name
+inconsistent or
+conﬂicting
+ 
+Reinforcing product
+images/reputations
+Buyer is reluctant to
+purchase too much from
+one ﬁrm
+ 
+ 
+Diluted reputation if one
+product is inferior
+Shared
+advertising
+Lower advertising costs
+Appropriate media or
+messages are different
+ 
+Greater leverage in purchasing
+advertising space
+Advertising effectiveness
+reduced by multiple
+products
+Shared
+promotion
+Lower promotion costs
+through shared couponing
+and cross couponing
+Appropriate forms and
+timing of promotion
+differ
+Cross selling of
+products to
+each others’
+buyers
+Lower cost of ﬁnding new
+buyers
+Product images are
+inconsistent or
+conﬂicting
+ 
+Lower cost of selling
+Buyer is reluctant to
+purchase too much from
+one ﬁrm
+Interrelated
+pricing of
+complementary
+products
+See Chapter 12
+See Chapter 12
+Bundled selling See Chapter 12
+See Chapter 12
+Shared
+marketing
+department
+Lower cost of market research Product positionings are
+different or inconsistent
+
+
+ 
+Lower marketing overhead
+Buyer’s purchasing
+behavior is not the same
+Shared channels Enhanced bargaining power
+with the channels leading to
+improvements in service,
+shelf positioning,
+maintenance/repair/support,
+or channel margins
+Channel gains too much
+bargaining power vis-à-
+vis the ﬁrm
+Channel unwilling to
+allow a single ﬁrm to
+account for a major
+portion of its sales
+ 
+One-stop shopping for the
+buyer improves
+differentiation
+Use of shared channel
+will erode support from
+other channels
+ 
+Lower cost of channel support
+infrastructure
+ 
+Shared sales
+force or sales
+ofﬁces
+Lower selling costs or sales
+force infrastructure costs
+Different buyer
+purchasing behavior
+ 
+Better quality salespersons
+Buyer reluctance to
+purchase large amounts
+from a single
+salesperson
+ 
+More products to sell improves
+access to the buyer or
+enhances buyer convenience
+Salesperson is not
+allowed adequate time
+with the buyer to present
+a number of products
+effectively
+ 
+Better sales force utilization if
+the pattern of utilization is
+not the same
+Different type of
+salesperson is most
+effective Certain
+products get more
+attention than others
+
+
+Shared service
+network
+Lower servicing costs
+Differences in equipment
+or knowledge necessary
+to make typical repairs
+ 
+More sophisticated or
+responsive servicing, due to
+improved technology or
+denser service locations
+Differences in the need
+for timeliness in service
+calls
+ 
+Better capacity utilization if
+demand for service is
+inversely correlated
+Differing degrees to
+which the buyer
+performs service in-
+house
+Shared order
+processing
+Lower order processing costs
+Differences in the form
+and composition of
+typical orders
+ 
+Lower cost of employing
+improved technology that
+improves responsiveness or
+billing information
+Differences in ordering
+cycles that lead to
+inconsistent order
+processing needs
+ 
+Better capacity utilization if
+order ﬂows are inversely
+correlated
+ 
+ 
+One-stop shopping for the
+buyer improves
+differentiation
+ 
+TABLE 9–3 Determinants of Net Competitive Advantage from
+Production Interrelationships
+FORM OF SHARING
+POTENTIAL COMPETITIVE
+ADVANTAGES
+MOST LIKELY SOURCES
+OF COMPROMISE COST
+
+
+Shared inbound
+logistical system
+Lower freight and
+material handling costs
+Input sources are located
+in different geographic
+areas
+ 
+Better technology
+enhances delivery
+reliability, reduces
+damage, etc.
+Plants are located in
+differing geographic
+areas
+ 
+Sharing allows more
+frequent, smaller
+deliveries that reduce
+inventory or improve
+plant productivity
+Varying physical
+characteristics of inputs
+imply that a logistical
+system which can
+handle all of them is
+suboptimal
+ 
+ 
+Needs for frequency and
+reliability of inbound
+delivery differ among
+business units
+Shared components
+(identical
+components used in
+different end
+products)
+Lower cost of component
+fabrication
+Needs for component
+design and quality differ
+among business units
+ 
+Better technology for
+component
+manufacturing improves
+quality
+ 
+Shared component
+fabrication facilities
+(similar or related
+components are
+produced using the
+Lower component costs
+High setup costs for
+different component
+varieties
+
+
+same equipment and
+facilities)
+ 
+Better fabrication
+technology improves
+quality
+Needs for component
+quality or tolerances
+differ among business
+units
+ 
+Capacity utilization is
+improved because
+demand for similar
+components is not
+perfectly correlated
+Flexible manufacturing
+equipment has higher
+cost than specialized
+equipment
+ 
+ 
+Larger workforce in one
+location leads to
+potential hiring,
+unionization or
+productivity problems
+Shared assembly
+facilities (similar or
+related end products
+are assembled using
+the same
+equipment/lines)
+Lower assembly costs
+High setup costs for
+different products
+ 
+Better assembly
+technology improves
+quality
+Needs for quality or
+tolerances differ
+ 
+Utilization is improved
+because demand is not
+perfectly correlated
+Flexible assembly
+equipment is higher cost
+ 
+A shared materials
+handling system can
+Larger workforce in one
+location leads to
+potential hiring,
+
+
+feed different assembly
+lines
+unionization or
+productivity problems
+Shared testing/quality
+control
+Lower testing cost
+Testing procedures and
+quality standards differ
+ 
+Better technology
+increases the
+extensiveness of testing
+and improves quality
+control
+Flexible testing facilities
+and equipment are
+higher cost
+Shared indirect
+activities (including
+maintenance, plant
+overhead, personnel
+department,
+cafeteria, etc.)
+Lower indirect activity
+costs
+Differing needs for
+indirect activities among
+business units
+ 
+Improved quality of
+indirect activities
+Larger workforce in one
+location leads to
+potential hiring,
+unionization, or
+productivity problems
+PROCUREMENT INTERRELATIONSHIPS
+Procurement interrelationships involve the shared procurement of
+common purchased inputs. Common inputs are frequently present in
+diversiﬁed ﬁrms, particularly if one looks beyond major raw materials and
+pieces of capital equipment. Suppliers are increasingly willing to make
+deals based on supplying the needs of plants located around the world, and
+negotiate prices reﬂecting total corporate needs. Some ﬁrms go overboard in
+shared procurements, however, because they fail to recognize the potential
+costs of compromise or they establish a rigid procurement process that does
+not allow for opportunism in negotiating attractive opportunities.
+
+
+The potential competitive advantage of shared procurement and the
+likely sources of compromise cost are shown in Table 9–4:
+TABLE 9–4 Determinants of Net Competitive Advantage from
+Procurement Interrelationships
+FORM OF SHARING
+POTENTIAL COMPETITIVE
+ADVANTAGES
+MOST LIKELY SOURCES
+OF COMPROMISE COST
+Joint procurement of
+common inputs
+Lower costs of inputs
+Input needs are different
+in terms of quality or
+speciﬁcations, leading
+to higher costs than
+necessary in business
+units requiring less
+quality
+ 
+Improved input quality
+Technical assistance and
+delivery needs from
+suppliers vary among
+business units
+ 
+Improved service from
+vendors in terms of
+responsiveness, holding
+of inventory, etc.
+Centralization can reduce
+the information ﬂow
+from factory to
+purchasing, and make
+purchasing less
+responsive
+TECHNOLOGICAL INTERRELATIONSHIPS
+Technological interrelationships involve the sharing of technology
+development activities throughout the value chain. They are distinguished
+from production interrelationships because their impact is on the cost or
+uniqueness of technology development, while production interrelationships
+involve sharing activities involved in the actual production of the product on
+an ongoing basis. It is important to recognize, however, that
+
+
+interrelationships in process development often occur together with
+production or market interrelationships. Interrelationships in process
+technology typically grow out of interrelationships in the primary activities.
+As with other forms of interrelationships, apparently promising
+technological interrelationships can be illusory. Scientiﬁc disciplines that
+overlap for two business units may be of minor importance to success
+compared to scientiﬁc disciplines that do not overlap. Harris Corporation,
+for example, thought it could reduce the development expense involved in
+entering word processing through adapting software from its text editing
+system sold to newspapers. Harris discovered that the text editing system
+had so many features that were speciﬁc to the needs of newspapers that
+development of a word processing system had to start from scratch.
+Truly signiﬁcant technological interrelationships are ones involving
+technologies important to the cost or differentiation of the products or
+processes 
+involved, 
+as 
+microelectronics 
+technology 
+is 
+to 
+both
+telecommunications and data processing. Many products have superﬁcial
+technological similarities, making the identiﬁcation of true technological
+interrelationships difﬁcult. As with other types of interrelationships, the net
+competitive advantage of a technological interrelationship will differ
+depending on the industry and strategies of the business units involved. For
+example, the beneﬁts of sharing microelectronics technology will tend to be
+greater for two consumer products business units than for a defense
+business unit and a consumer business unit. Rockwell International learned
+this lesson when it put a team of engineers from its defense business into its
+Admiral TV set division. The sensitivity to cost was so much greater in TV
+sets than in defense equipment that sharing did not succeed. The same thing
+occurred in business aircraft, where a design developed originally for
+military use (the Sabreliner) proved too expensive for the commercial
+market.
+Table 9–5 shows the potential competitive advantages that can stem from
+sharing technology development as well as the most likely sources of
+compromise costs.
+INFRASTRUCTURE INTERRELATIONSHIPS
+
+
+The ﬁnal category of interrelationships involve ﬁrm infrastructure,
+including such activities as ﬁnancing, legal, accounting, and human
+resource management. Some infrastructure activities are almost always
+shared in diversiﬁed ﬁrms, as described in Chapter 2. In most cases, the
+effect of sharing on competitive advantage is not great because
+infrastructure is not a large proportion of cost and sharing has little impact
+on differentiation. It is ironic, therefore, that the vast majority of literature
+on sharing has been on sharing infrastructure—principally ﬁnance and the
+utilization of capital. Interrelationships in ﬁnance, particularly, have been
+seen as a signiﬁcant beneﬁt the diversiﬁed ﬁrm contributes to its business
+units.
+There are two basic sources of ﬁnancial interrelationships: joint raising
+of capital and shared utilization of capital (primarily working capital).
+Economies of scale in raising capital may indeed exist, especially up to a
+certain quantity of capital needed. Efﬁcient utilization of working capital is
+made possible by countercyclical or counterseasonal needs for funds among
+business units, which allows cash freed up by one business unit to be
+deployed in another. Financial interrelationships typically involve relatively
+few compromise costs that must be offset against any savings. Moreover,
+ﬁnancial interrelationships are among the easiest to achieve if they are
+present, perhaps a reason why they are so frequently discussed.
+TABLE 9–5 Determinants of Net Competitive Advantage from
+Technological Interrelationships
+FORM OF SHARING
+POTENTIAL COMPETITIVE
+ADVANTAGES
+MOST LIKELY SOURCES
+OF COMPROMISE COST
+Shared technology
+development (for
+separate products or
+where one product
+is incorporated into
+another)
+Lower product or process
+design costs (including
+shorter design time)
+Technologies are the
+same, but the
+tradeoffs in applying
+the technology are
+different among
+business units
+ 
+Larger critical mass in
+R&D, or the ability to
+attract better people
+ 
+
+
+improves the
+innovativeness of
+product or process
+designs
+ 
+Transference of
+developments among
+product areas enhances
+differentiation or allows
+early entry into new
+technologies
+ 
+Shared interface
+design for products
+with a technological
+interface
+Lower interface design
+costs
+A nonstandard
+interface reduces the
+available market
+ 
+Differentiation through
+superior and proprietary
+interface performance
+Risks of bundling
+(Chapter 12)
+ 
+Bundling opportunities
+created through a
+nonstandard interface
+(see Chapter 12)
+ 
+The major limitation to the competitive advantage of shared ﬁnancing is
+the efﬁciency of capital markets. Scale economies in ﬁnancing appear to be
+moderate for most ﬁrms and lead to a relatively small difference in
+ﬁnancing costs. Firms can also borrow to cover short-term cash needs and
+lend excess cash in the highly efﬁcient markets for commercial paper and
+other instruments, mitigating the value of sharing working capital. Hence
+ﬁnancial interrelationships are rarely the basis for creating a signiﬁcant
+competitive advantage, unless the size and credit rating of competitors
+differ greatly. Other forms of infrastructure interrelationships can be
+important in particular industries. Shared infrastructure for hiring and
+training is important in some service industries, while shared government
+relations can be signiﬁcant in natural resource ﬁrms.
+
+
+Intangible Interrelationships
+Intangible interrelationships lead to competitive advantage through the
+transfer of skills among separate value chains. Through operating one
+business unit, a ﬁrm gains know-how that allows it to improve the way
+another generically similar business unit competes. The transference of
+skills can go in either direction—e.g., from existing business units to a new
+business unit or from a new business unit back to existing business units.
+The transference of generic know-how can occur anywhere in the value
+chain. Philip Morris transferred generic know-how in the marketing of
+consumer packaged goods from its cigarette business to Miller Beer, while
+Emerson Electric transferred plant design and cost reduction skills when it
+acquired the chain saw ﬁrm Beaird-Poulan. In both cases, the transference
+of skills changed the way that the receiving business unit competed and
+enhanced its competitive advantage.
+Intangible interrelationships lead to a competitive advantage if the
+improvement in cost or differentiation in the business unit receiving the
+know-how exceeds the costs of transferring it. Know-how residing in one
+business unit has already been paid for, and hence transferring it may
+involve little cost compared to its cost of development. The actual
+transference of know-how always involves some cost, however, whether it
+be the cost of time of skilled personnel or perhaps the greater risk that
+proprietary information will leak out. Using the know-how that is
+transferred will also typically involve some cost in adapting it to the
+circumstances of the receiving business unit. These costs of transferring
+know-how must be weighed against the potential beneﬁts to determine
+whether an intangible interrelationship will create competitive advantage.
+Intangible interrelationships are important to competitive advantage
+when the transference of know-how or skills allows the receiving business
+unit to lower costs or enhance differentiation. This occurs if the transference
+of skills leads to policy changes that lower cost or enhance differentiation,
+or because the transference of skills gives the receiving business unit better
+insight into its other drivers of cost or uniqueness. The transference of skills
+from Philip Morris to Miller Beer, for example, resulted in policy changes
+in the way beer was positioned and marketed, as well as an escalation of
+
+
+advertising spending that increased scale economies in the industry and
+worked to the advantage of large brands like Miller.
+Identifying Intangible Interrelationships. Intangible interrelationships
+arise from a variety of generic similarities among business units:15
+• same generic strategy
+• same type of buyer (though not the same buyer)
+• similar conﬁguration of the value chain (e.g., many dispersed sites of
+mineral extraction and processing)
+• similar important value activities (e.g., relations with government)
+Although value activities cannot be shared, these similarities among
+business units mean that know-how gained in one business unit is valuable
+and transferable to another.16
+Because of the myriad possible generic similarities among business
+units, it is not possible to be as complete in identifying the important types
+as it was with tangible interrelationships. However, the value chain provides
+a systematic way of searching for intangible interrelationships. A ﬁrm can
+examine the major value activities in its business units to unearth
+similarities in activities or the way the chain is conﬁgured that might
+provide the basis for transference of know-how or highlight generic skills
+that might be applied to new industries.
+Intangible Interrelationships and Competitive Advantage. Intangible
+interrelationships of one type or another are very widespread. It is always
+possible to point to some generic similarity in some value activity between
+almost any two business units. An airline is widely dispersed, has multiple
+sites, and relies heavily on scheduling, characteristics shared by trucking
+companies, international trading companies and industrial gas producers.
+Widespread similarities of some kind make the analysis of intangible
+interrelationships quite subtle.
+The key tests in identifying intangible interrelationships that are
+important to competitive advantage are the following:
+
+
+• How similar are the value activities in the business units?
+• How important are the value activities involved to competition?
+•  How signiﬁcant is the know-how that would be transferred to
+competitive advantage in the relevant activities?
+These questions must be answered together. The similarity of two
+business units is a function of how much know-how can be usefully
+transferred. The importance of the transferred know-how is a function of its
+contribution to improving competitive advantage in the receiving business
+unit. The transference of just one insight can sometimes make an enormous
+difference to competitive advantage, so even business units that are not very
+similar can have important intangible interrelationships. However, truly
+important intangible interrelationships are much less common than an initial
+search for them might imply. It is frequently difﬁcult, moreover, to predict
+whether the transference of know-how will prove to be valuable.
+The most common pitfall in assessing intangible interrelationships is to
+identify generic similarities among business units that are not important to
+competition. Either the know-how that can be transferred does not affect
+value activities that are important to cost or differentiation in the receiving
+business unit, or it does not provide insights that competitors do not already
+have. Philip Morris’s acquisition of the Seven Up soft drink company
+provides a possible example of the latter. While the beer industry had
+historically been populated by family ﬁrms with little marketing ﬂair, the
+soft drink industry has long been characterized by sophisticated marketing
+by the likes of Coke, Pepsi, and Dr Pepper. Philip Morris’s marketing
+expertise appears to have offerred much less of an advantage for Seven Up
+than it did for Miller.
+Many ﬁrms have fallen into the trap of identifying intangible
+interrelationships that are illusory or do not matter for competitive
+advantage. Often, it seems, intangible interrelationships are forced, and
+represent more of an ex poste rationalization of diversiﬁcation moves
+undertaken for other reasons. Intangible interrelationships were prominent
+in discussions of synergy. The difﬁculty of ﬁnding and implementing
+signiﬁcant intangible interrelationships is one of the reasons synergy proved
+such a disappointment to many ﬁrms.
+
+
+The effective exploitation of intangible interrelationships thus requires
+an acute understanding of the business units involved as well as the
+industries 
+they 
+compete 
+in. 
+The 
+importance 
+of 
+an 
+intangible
+interrelationship for competition can only be truly understood by
+identifying speciﬁc ways in which know-how can be transferred so as to
+make a difference. The mere hope that one business unit might learn
+something useful from another is frequently a hope not realized.
+Even intangible interrelationships where the beneﬁts of transferring
+know-how far exceed the cost of transferring it do not lead to competitive
+advantage unless the transference of know-how actually takes place. Know-
+how is transferred through interchange between managers or other
+personnel in the affected business units. This process does not occur
+without active efforts on the part of senior management. Personnel in the
+receiving business unit may be wary or unsure of the value of know-how
+from a “different” industry. They may even openly resist it. Business units
+with know-how may be hesitant to commit the time of important personnel
+and may view the know-how as highly proprietary. Finally, transference of
+know-how is subjective and the beneﬁts of doing so often are hard for
+managers to understand when compared to tangible interrelationships. All
+these factors imply that even important intangible interrelationships can be
+very difﬁcult to achieve. Doing so requires a sustained commitment and the
+existence of formal mechanisms through which the required transference of
+skills will take place. A conducive organizational setting can greatly reduce
+the cost of transferring know-how.
+Competitor Interrelationships
+Competitor interrelationships are present when a ﬁrm actually or
+potentially competes with diversiﬁed rivals in more than one business unit.
+Any action taken against multipoint competitors must consider the entire
+range of jointly contested businesses. In addition, a ﬁrm’s competitive
+advantage vis-à-vis a multipoint competitor depends in part on the
+interrelationships that both have achieved. The competitive position of a
+multipoint competitor is often more a function of its overall position in a
+group of related industries than its market share in any one industry because
+
+
+of interrelationships. While multipoint competitors and interrelationships do
+not necessarily occur together, they often do because both tangible and
+intangible interrelationships lead ﬁrms to follow parallel diversiﬁcation
+paths.17
+Figure 9–4. Corporate Competitor Matrix
+Identifying existing multipoint competitors is relatively easy with a
+diagram such as that shown in Figure 9–4. For the ﬁrm shown in Figure 9–
+4, competitors A, B, C, D, and E are multipoint competitors. The other
+competitors are single point, but represent potential multi-points. Analysis
+of the ﬁgure suggests that business units 2 and 3 are in strongly related
+industries, because four competitors compete in both industries. The
+presence of many competitors in two industries is a relatively strong,
+though not perfect, indication that they are related. The relatedness of
+industries is also a clue to predicting which ﬁrms are the most likely
+potential multipoint competitors. Given the apparent relationship of the
+
+
+industries in which business units 2 and 3 compete, competitor H may be
+the most likely potential multipoint competitor.
+Table 9–6 shows the multipoint competitor matrix for the consumer
+paper products sector in 1983, along with each ﬁrm’s year of entry. It is
+clear that competitor interrelationships are numerous and that they have
+increased signiﬁcantly over time, particularly during the 1960s and 1970s.
+We would observe a similar pattern in many other groups of industries. The
+pattern of competitor interrelationships in the table will be discussed further
+below.
+Closely analagous to the analysis of multipoint competitors is the
+analysis 
+of 
+single-point 
+competitors 
+with 
+different 
+patterns 
+of
+interrelationships from the ﬁrm’s. For example, Xerox, Canon, and
+Matsushita all compete in convenience copiers. However, Xerox draws on
+interrelationships with its high-volume copiers and ofﬁce automation
+equipment. Canon’s interrelationships have historically been strongest with
+its calculator and camera businesses, while Matsushita draws on
+interrelationships involving its broad range of consumer electronic and
+other electronic products. Interestingly, both Canon and Matsushita are
+diversifying into ofﬁce automation to match Xerox’s interrelationships
+there.
+Single-point competitors with different patterns of interrelationships are
+important because they bring differing sources of competitive advantage to
+an industry. These may be difﬁcult for a ﬁrm to match and may shift the
+basis of competition. Moreover, as the copier example illustrates, single-
+point competitors with different patterns of interrelationships are sometimes
+prime candidates to become multipoint competitors.
+Multipoint Competitors in Unrelated Industries
+Where a ﬁrm faces a multipoint competitor in industries that are not
+related, the strategic issues revolve around how actions in one business unit
+can lead to reactions in another and how equilibrium with the competitor
+can be reached in several contested industries. Because a ﬁrm and a
+multipoint competitor meet each other in a number of industries rather than
+one, a greater number of variables enter into determining their relative
+
+
+position. This implies that ﬁrms need more information about each other to
+avoid mistaken interpretations of moves. It also often means that
+destabilizing events in one industry can spread to others. This added
+complexity of the game makes peaceful coexistence potentially difﬁcult.
+TABLE 9–6 Competitor Interrelationships in Consumer Paper
+Products, 1983
+On the other hand, competing in a number of industries also opens up
+greater possibilities for signaling, making threats, establishing blocking
+positions, and taking reciprocal actions. For example, a ﬁrm threatened in
+one industry might retaliate in a different industry, sending a signal of
+displeasure but creating less risk of escalation than if the response were
+direct. The threat that a ﬁrm can retaliate in several industries (and inﬂict a
+higher cost on the competitor) may also tend to deter a competitor from
+making a threatening move in the ﬁrst place.
+Another stabilizing factor in multipoint competition is the fact that focal
+points, or natural equilibrium points for competition, may be more
+prevalent.18 Where only one industry is contested, the number of focal
+points consistent with each competitor’s perception of its relative strength is
+likely to be small. With equally balanced competitors, for example, an equal
+division of market shares may be the only focal point. It may well be an
+unstable one because any temporary shift in market shares is likely to
+trigger a strong response to preserve the balance. With two jointly contested
+industries, there may be a number of additional focal points that are more
+stable, and one of them will tend to be found sooner.
+
+
+Table 9–7 illustrates this. Here focal points 2 and 3 will tend to be more
+stable than focal point 1. In each industry, the high-share competitor will
+tend to have a clear competitive advantage, and hence a small disturbance
+will be less likely to cause either ﬁrm to precipitate a war. Similarly, the
+asymmetry of positions reduces the chances that the high-share competitor
+in one industry will seek an even greater share, since it remains vulnerable
+to retaliation in the industry in which it is weak.
+Multipoint competitors must be viewed in their totality for purposes of
+offensive and defensive strategy. Most competitor analysis is done at the
+business unit level, however, and looks exclusively at competitors’ positions
+in a single industry. Some corporate or group-level analysis of multipoint
+competitors is essential. Minimally, a broader perspective on multipoint
+competitors needs to be applied to test that business unit actions against
+them will not have adverse consequences in other business units. Ideally a
+more comprehensive analysis of existing and potential multipoint
+competitors should be done to uncover opportunities for a coordinated
+offensive or defensive strategy across business units.
+TABLE 9–7 Focal Points and Multipoint Competitors
+ 
+FOCAL POINT 1
+FOCAL POINT 2
+FOCAL POINT 3
+ 
+SHARE OF
+MARKET
+1
+SHARE OF
+MARKET
+2
+SHARE OF
+MARKET
+1
+SHARE OF
+MARKET
+2
+SHARE OF
+MARKET
+1
+SHARE OF
+MARKET
+2
+Competitor
+A
+50
+50
+60
+40
+70
+30
+Competitor
+B
+50
+50
+40
+60
+30
+70
+Some additional considerations in developing strategy vis-à-vis
+multipoint competitors in unrelated businesses are as follows:
+
+
+Forecast possible retaliation in all jointly contested industries. A
+multipoint competitor may retaliate against a move in any or all jointly
+contested industries. It may well choose to respond in the industry where its
+response will be the most cost-effective (see Chapter 14). For example, it
+may respond in an industry in which it has a small share because it can
+inﬂict a large penalty on the ﬁrm at low cost. Each industry is not a separate
+battleﬁeld.
+Beware of a small position by a multipoint in a key industry. A small
+position held by a multipoint in an industry in which the ﬁrm has a large
+share (or high cash ﬂow) can give the multipoint a lever against the ﬁrm.
+Such a position may be an effective blocking position (see Chapter 14).
+Look for opportunities to exploit overall corporate position vis-à-vis a
+multipoint. The overall corporate position vis-à-vis a multipoint may
+provide less costly and less risky means of responding to threats. Similarly,
+coordinated actions in a number of industries may make it difﬁcult and very
+costly for a competitor to respond.
+Establish blocking positions for defensive purposes. A small presence in
+one of a multipoint competitor’s key industries can provide a way to inﬂict
+serious penalties on it at relatively low cost.
+Strategy toward a multipoint competitor is affected by whether or not the
+competitor perceives the connections among industries. Perceiving the
+connection among jointly contested industries cannot be assumed where a
+multipoint competitor is managed via highly autonomous business units. In
+some cases, a competitor’s ignorance of multi-industry linkages may allow
+the ﬁrm to gain in relative position. For example, an attack on one business
+unit may divert competitor attention and resources from defending its
+position in a more important business unit.
+Multipoint Competition in Related Industries
+
+
+When a ﬁrm faces multipoint competitors in related industries, the
+strategic problem increases in complexity. The issues discussed in the
+previous section still apply and are often even more important because
+relatedness increases the likelihood that a competitor will perceive the
+linkages among businesses. The presence of tangible interrelationships
+among industries, however, complicates the assessment of relative position.
+A ﬁrm’s competitive advantage or disadvantage in any business unit that
+faces a multipoint competitor is a function of overall position in value
+activities involving interrelationships. If a ﬁrm and the competitor employ a
+shared sales force or logistical system, for example, the relative cost or
+differentiation of the sales force or logistical system as a whole is what
+matters. The extent to which interrelationships are actually achieved is what
+determines their effect on competitive advantage, not the potential to share.
+In addition, the net competitive advantage from an interrelationship for both
+a ﬁrm and a competitor will be inﬂuenced by their respective strategies. A
+competitor may potentially face higher or lower costs of coordination or
+compromise than the ﬁrm does, making an interrelationship more or less
+valuable to it.
+A competitor’s group of interrelated business units may not exactly
+overlap with the ﬁrm’s. For example, Procter & Gamble competes in
+disposable diapers, paper towels, feminine hygiene products, and bathroom
+tissue, but not in paper napkins and towel wipes. Kimberly Clark, on the
+other hand, is in all these businesses. When the related industries that are
+jointly contested do not overlap exactly, the comparison between a ﬁrm and
+a competitor must center on the ﬁrm’s whole array of interrelationships
+relative to the competitor’s. Each shared activity must be analyzed for the
+competitor as a whole, and compared to the ﬁrm’s cost or differentiation in
+that activity. The volume provided by all ﬁve of Procter & Gamble’s paper-
+related business units compared to that of Kimberly’s eight business units
+will affect their relative position in shared value activities such as the
+logistical system, for example. Relative position in any business unit is built
+up by comparing all shared activities as well as value activities that are not
+shared.
+A weak relative position in one related business unit can be partially or
+completely offset by superior positions in other related business units.
+Procter & Gamble is in fewer paper products industries than Kimberly-
+
+
+Clark, for example, but it is the market leader in diapers, toilet tissue, and
+paper towels. Diapers, particularly, is a very large industry relative to the
+others. Procter & Gamble’s total consumer paper products volume is
+undoubtedly higher than Kimberly’s. Analyzing a ﬁrm’s relative position
+vis-à-vis multipoint competitors thus requires an examination of the
+complete portfolios of the two ﬁrms.
+The most basic strategic implication of multipoint competition in related
+industries is the same as in unrelated industries—competitor analysis must
+encompass the competitor’s entire portfolio of business units instead of
+examining each business unit in isolation. Competitive advantage in one
+business unit can be strongly affected by the extent of potential
+interrelationships with other business units in the competitor’s portfolio and
+by whether they are achieved.
+Balance or superiority in shared value activities relative to a multipoint
+competitor can potentially be achieved in many ways. Investing to gain a
+stronger position in industries where a ﬁrm is already strong can offset the
+advantages a competitor has from being in a broader array of related
+industries. If the competitive advantage from shared activities is signiﬁcant
+and no compensating advantages can be found, a ﬁrm may be forced to
+match a competitor’s portfolio of related business units. Matching can be
+important for defensive reasons as well as offensive ones. It may be
+necessary to match a competitor’s diversiﬁcation even if the ﬁrm has a
+competitive advantage in its existing business units, to prevent the
+competitor from gaining the advantages of interrelationships without
+opposition. Conversely, if a ﬁrm can discover new related industries that
+competitors are not in, it may be able to strengthen position in important
+shared value activities.
+In consumer paper products, for example, there has been a great deal of
+offensive and defensive diversiﬁcation. Table 9–6 shows the dates of entry
+of each competitor into the respective industries. Competitors’ portfolios of
+businesses have broadened since the late 1950s. Procter & Gamble’s actions
+triggered this sequence of moves. P&G began in toilet tissue and then
+moved into facial tissue, disposable diapers, and paper towels defensively.
+Competitors with Different Patterns of Interrelationships
+
+
+Single-point and multipoint competitors may well pursue different types
+of interrelationships, involving different shared activities or activities shared
+in a different way. A good example of this situation is again the consumer
+paper 
+products 
+ﬁeld 
+(Table 
+9–6). 
+Competitors 
+have 
+pursued
+interrelationships in paper products in different ways, reﬂecting their overall
+portfolios of business units and the strategies employed in them. In
+disposable diapers, for example, Procter & Gamble enjoys joint
+procurement of common raw materials, shared technology development, a
+shared sales force, and a shared logistical system among its paper product
+lines. However, Procter & Gamble has separate brand names for each paper
+product line. In contrast, Johnson & Johnson (J&J) competes in disposable
+diapers as well as a wide line of other baby care products, all sold under the
+Johnson & Johnson brand name. Its interrelationships include that shared
+brand name, plus a shared sales force and shared market research in the
+baby care ﬁeld. J&J enjoys little sharing in production, logistics, and
+product or process technology development. Each competitor in Table 9–6
+has a somewhat different pattern of interrelationships.
+A competitor with a different pattern of interrelationships represents both
+an opportunity and a threat. It is a threat because the competitive advantage
+gained through interrelationships cannot be readily replicated, since a ﬁrm
+may not be in the appropriate group of industries, or have the right strategy
+to allow matching the interrelationships. To match J&J’s shared brand
+name, for example, Procter & Gamble would have to change its strategy of
+using a different brand for each product. This would probably fail, however,
+because of the inappropriateness of using the diaper brand name on other
+paper products unrelated to babies. Thus to match this particular advantage
+of J&J’s, Procter & Gamble would probably have to diversify further into
+baby care, where J&J is dominant.
+A smart competitor with different interrelationships will attempt to shift
+the nature of competition in each industry in the direction that makes its
+interrelationships more strategically valuable than the ﬁrm’s. An escalation
+in advertising spending in diapers would work to the advantage of J&J
+because of its shared brand, for example, holding other things constant. A
+competitor with different interrelationships might also attempt to reduce the
+ability of a ﬁrm to achieve its interrelationships. For example, a move by
+J&J to make diapers from textile-based materials would, if feasible, reduce
+
+
+P&G’s ability to share value activities because of its broad presence in
+paper products. Similarly, a competitor might shift its strategy in a way that
+raised the cost of compromise for the ﬁrm to achieve its type of
+interrelationships, thereby forcing the ﬁrm to damage one business unit in
+responding to a threat to another.
+Thus the essence of the competitive game between ﬁrms pursuing
+different forms of interrelatedness is a tug of war to see which ﬁrm can shift
+the basis of competition to compromise the other’s interrelationships, or to
+enhance the value of its own. The disposable diaper industry offers a good
+illustration of how this game can play itself out. Procter & Gamble has
+retained leadership in the diaper industry, while J&J was forced to exit from
+the U.S. market after costly losses. Though J&J’s market interrelationships
+were strong, advertising is a relatively small proportion of total costs in
+disposable diapers. Sales force and logistical costs, where Procter &
+Gamble enjoyed comparable if not superior interrelationships to J&J, are
+each as high or higher than advertising. J&J could not match Procter &
+Gamble’s production, procurement, and technological interrelationships,
+and this proved fatal since total manufacturing costs for diapers are a very
+large percentage of total cost and the pace of technological change in both
+product and process is rapid. Without a markedly superior product,
+therefore, J&J was unable to match the combination of Procter & Gamble’s
+large market share and its interrelationships.
+Forecasting Potential Competitors
+Tangible interrelationships, intangible interrelationships, and competitor
+interrelationships can be used to forecast likely potential competitors.
+Likely potential entrants into an industry will be ﬁrms for which that
+industry is:
+• a logical way to create or extend an important interrelationship
+• a necessary extension to match the interrelationships of competitors
+To forecast potential competitors, all possible interrelationships
+involving an industry are identiﬁed, including competitor interrelationships.
+Each potential interrelationship will typically lead to a number of other
+
+
+industries. The industries in which existing competitors compete besides the
+industry may suggest possible interrelationships of other types. By
+identifying related industries, a ﬁrm can locate potential competitors for
+whom entry into the ﬁrm’s industries would be logical. Analysis must
+assess the probability that these potential competitors will actually choose
+to enter the industry rather than pursue their other investment opportunities.
+
+
+10
+Horizontal Strategy
+There are two fundamental issues in corporate strategy for the diversiﬁed
+ﬁrm. The ﬁrst is the selection of industries in which the diversiﬁed ﬁrm
+should compete. The second issue is how the strategies of the ﬁrm’s
+business units should be coordinated. How both issues are addressed should
+be driven by competitive advantage—how the corporation can contribute to
+the competitive advantage of business units. Business units inevitably incur
+costs as part of a diversiﬁed ﬁrm, both in overhead and potentially through
+constraints imposed by corporate policies. Unless the corporation can make
+a more than offsetting contribution to the competitive advantage of business
+units, diversiﬁcation becomes a liability.
+Of the two fundamental issues in corporate strategy, diversiﬁed ﬁrms
+have devoted much more attention to the ﬁrst issue than to the second.
+While much attention is placed on selecting new industries, however, this
+selection has too often been based on tenuous forms of relatedness. Many
+diversiﬁed ﬁrms have devoted little or no attention to coordinating business
+unit strategies. As the previous chapter demonstrated, however, there is a
+growing need to do so as well as to enter new industries in which
+contributions to competitive advantage within the corporation are clear. The
+presence of multipoint competitors and competitors with different patterns
+of interrelationships also dictates that a ﬁrm must exploit the available
+interrelationships to maintain relative position.
+Horizontal strategy coordinates the goals and strategies of related
+business units. It encompasses both existing business units and the selection
+of new industries to enter based on interrelationships with existing units.

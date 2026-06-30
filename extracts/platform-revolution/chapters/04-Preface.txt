@@ -1,0 +1,158 @@
+# Preface
+
+Our goal in writing this book is to solve a number of puzzles posed by
+the rapid rise of the platform model. These puzzles include:
+•    How have platform businesses such as Uber and Airbnb managed to disrupt and dominate vast
+traditional industries within just a few years of their own launch? (We address this question
+throughout the book, and focus on it especially closely in chapter 4.)
+•    How can platform businesses outcompete traditional companies while employing just a tiny
+fraction of the number of people the incumbents employ? (See chapters 1 and 2.)
+•    How has the rise of the platform transformed the principles governing economic growth and
+business competition? How do platform businesses resemble the industrial giants of the past—
+and how do they differ? (See chapters 2 and 4.)
+•    How and why have specific companies and business leaders soared to the heights of success,
+plummeted to the depths of failure—or both—as a result of their use, or misuse, of platform
+business methods? Why did Blackberry fall from 49 percent market share to 2 percent in just
+four years? How did Steve Jobs fumble his company’s platform-model choices in the 1980s
+… and then get them dramatically right in the 2010s? (See chapters 2 and 7.)
+•    How do some companies solve the challenge of attracting producers and consumers to a new
+platform simultaneously, while others fail miserably? Why is free pricing sometimes a
+brilliant business move, and sometimes a fatal error? (See chapters 5 and 6.)
+•    Why do competitive markets flourish in some platform arenas, while in others winner-take-all
+markets dominated by a single platform swiftly emerge? (See chapter 10.)
+•    As platforms grow, they are subject to abuse: customers shopping on eBay can be defrauded,
+women seeking dates on Match.com can be assaulted, homes rented on Airbnb can be
+ransacked. Who should pay the price? And how should platform users be protected? (See
+chapters 8 and 11.)
+In answering questions like these, we’ve sought to create a practical
+guide to the new economy that is reshaping the world in which we all live,
+work, and play. Platform Revolution is an outgrowth of three careers that
+have been spent immersed in studying and unraveling the mysteries of the
+platform model.
+Two of the authors—Geoff Parker and Marshall Van Alstyne—became
+interested in the emerging network economy during the dot-com boom of
+1997–2000, when both were PhD students at MIT. Those were heady times.
+The NASDAQ stock index spiked by more than 80 percent as venture
+capitalists poured investment money into startups boasting cool new
+technologies and names featuring the prefix e or the suffix com. With
+traditional metrics of business success seemingly rendered obsolete, several
+companies launched hugely successful initial public offerings (IPOs)
+without ever having made a dime in profit. Students and faculty alike were
+dropping out of school to launch fledgling technology businesses.
+Inevitably, the market came crashing down. Beginning in March 2000,
+trillions of dollars’ worth of paper valuations vanished in a matter of
+
+
+months. Yet amid the rubble, certain companies survived. While Webvan
+and Pets.com disappeared, Amazon and eBay survived and thrived. Steve
+Jobs, who had lost Apple to mistakes he made earlier, recovered, returned to
+Apple, and built it into a juggernaut. Eventually, the online world emerged
+from the depths of the 2000 downturn to become stronger than ever.
+Why were some Internet-based businesses successful while others were
+not? Were the differences a matter of random luck, or were deeper design
+principles at work? What are the rules of the new economics of networks?
+Geoff and Marshall set about trying to answer these questions.
+It turned out to be a harder challenge than they expected. They ended up
+having to develop a new economic theory of two-sided networks. Their
+Harvard Business Review article “Strategies for Two-Sided Markets,”
+coauthored with Harvard professor Thomas R. Eisenmann, laid out what
+became one of the most widely taught theories of Internet business, one that
+is still taught in MBA programs around the world. Along with the work of
+other scholars, Geoff’s and Marshall’s insights helped to reshape
+mainstream thinking about business regulation. Later, at the MIT Initiative
+on the Digital Economy, they furthered their work with such firms as
+AT&T, Dun & Bradstreet, Cisco, IBM, Intel, Jawbone, Microsoft,
+Salesforce, SAP, Thomson Reuters, and many others.
+The third author of this book, Sangeet Choudary, was a high school
+student during the dot-com boom of the 1990s, but he was already
+fascinated by the immense power of the Internet—particularly its power to
+create business models capable of rapid, scalable growth. Later, while
+working as the head of innovation and new ventures at Yahoo and Intuit,
+Sangeet started digging deeper into the factors that spell success or failure
+for Internet startups. His research on business model failure, coupled with
+his conversations with venture capitalists and entrepreneurs, helped him
+identify the increasing importance of a new and massively scalable business
+model: the platform.
+In 2012, Sangeet started focusing on platform businesses full-time. His
+premise: as the world becomes increasingly networked, businesses that do a
+better job of harnessing the power of platform networks will win. Sangeet
+has offered guidance on platform strategy to a wide range of companies
+around the world, ranging from startups to Fortune 100 firms, and his
+popular blog (http://platformed.info) has been featured on leading media
+globally.
+
+
+In the spring of 2013, Marshall and Geoff came across Sangeet’s work,
+and we immediately realized the value of a collaboration. Our partnership
+coalesced in the summer of 2013 when we met for three weeks at MIT to
+work together on building a cohesive view of platform dynamics. Since
+then, we’ve cochaired the MIT Platform Strategy Summit, spoken about
+platform models at leading world forums such as the G20 summit, Emerce
+eDay, and TED, taught about platforms at the world’s leading universities,
+and collaborated on implementing platform strategy with business clients
+around the world.
+Now the three of us have written Platform Revolution, representing our
+first attempt to bring together our thinking on platforms in a cohesive,
+comprehensive fashion.
+We’ve been fortunate enough to have access to the ideas and experiences
+of some of the greatest firms in the world, having worked with more than a
+hundred companies in diverse industries on developing and implementing
+their platform strategies. At the MIT Platform Strategy Summit, leaders of
+organizations that are building platforms, managing them, or reacting to
+them, including edX, Samsung, Apigee, Accenture, OkCupid, Alibaba, and
+many others, have shared their stories with one another and with us. We
+have also benefited from working with a group of world-class scholars who
+have dedicated their careers to understanding the digital economy, and who
+participate in the annual Workshop on Information Systems and Economics
+(WISE) and the Boston University Platform Strategy Research Symposium,
+as well as some of the world’s leading thinkers in adjacent fields such as
+behavior design, data science, systems design theory, and agile
+methodologies.
+We have written this book because we believe that digital connectivity
+and the platform model it makes possible are changing the world forever.
+The platform-driven economic transformation is producing enormous
+benefits for society as a whole and for the businesses and other
+organizations that create wealth, generate growth, and serve the needs of
+humankind. At the same time, it is creating sweeping changes in the rules
+that have traditionally governed success and failure. We hope that Platform
+Revolution will help market upstarts, incumbent organizations, regulators
+and policy-makers, and engaged citizens effectively navigate the
+challenging new landscape of a world in which platforms win.
+
+
+GEOFFREY G. PARKER            
+MARSHALL W. VAN ALSTYNE
+SANGEET PAUL CHOUDARY    
+OceanofPDF.com
+
+
+PLATFORM
+REVOLUTION
+OceanofPDF.com
+
+
+1
+TODAY
+Welcome to the
+Platform Revolution
+In October 2007, a tiny item appeared in an online newsletter aimed at
+industrial designers—men and women who shape the appearance of
+everything from coffee makers to jumbo jets. It referred to an unusual
+housing option for professionals who planned to attend the upcoming joint
+convention of two industrial design organizations, the International
+Congress of Societies of Industrial Design (ICSID) and the Industrial
+Designers Society of America (IDSA):
+If you’re heading out to the ICSID/IDSA World Congress/Connecting ’07 event in San Francisco
+next week and have yet to make accommodations, well, consider networking in your jam-jams.
+That’s right. For “an affordable alternative to hotels in the city,” imagine yourself in a fellow
+design industry person’s home, fresh awake from a snooze on the ol’ air mattress, chatting about
+the day’s upcoming events over Pop Tarts and OJ.
+The hosts for this “networking in your jam-jams” opportunity were Brian
+Chesky and Joe Gebbia, budding designers who’d moved to San Francisco
+only to find they couldn’t afford the rent on the loft they shared. Strapped
+for cash, they impulsively decided to make air mattresses and their own
+services as part-time tour guides available to convention attendees. Chesky
+and Gebbia attracted three weekend guests and made a thousand bucks,
+which covered the next month’s rent.
+Their casual space-sharing experience would launch a revolution in one
+of the world’s biggest industries.

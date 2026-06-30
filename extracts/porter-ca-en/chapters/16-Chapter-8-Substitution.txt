@@ -1,0 +1,1382 @@
+# Chapter 8: Substitution
+
+which are important to recognize both in assessing the extent of the threat
+and in forecasting the penetration of a substitute. Finally, I will describe the
+strategic implications of the framework for both offensive and defensive
+strategy towards substitutes. The discussion is framed in terms of
+substitution at the industry level (e.g., carbon ﬁber substituting for titanium
+and aluminum), but the same basic principles apply to the substitution of
+one product form for another.
+Identifying Substitutes
+The ﬁrst step in substitution analysis is to identify the substitutes an
+industry faces. This seemingly straightforward task is often not easy in
+practice. Identifying substitutes requires searching for products or services
+that perform the same generic function or functions as an industry’s
+product, rather than products that have the same form. A truck differs
+greatly from a train, but they both perform the same generic function for the
+buyer—point-to-point freight transportation.1
+The function a product performs depends on its role in the buyer’s value
+chain. A product is used by the buyer in performing some activity or
+activities—a truck or a train is used in inbound or outbound logistics, for
+example, while skis are used as part of a buyer’s recreation in winter. As
+discussed in Chapter 4, a product often affects not only the buyer value
+activity in which it is used but also many other activities. A component used
+in a product passes through inbound logistics, is held in inventory before it
+is used, and must be serviced in the ﬁeld after sale, for example. Similarly,
+baby diapers are not only worn by the baby but also must be put on by the
+parent, laundered if they are reuseable, and purchased and stored. All the
+impacts of a product on the buyer are relevant in deﬁning substitutes and
+their relative performance. Finally, the value activity in which a product is
+used may be connected to other activities through linkages. The precision of
+a part can inﬂuence the need for product adjustment and for after-sale
+servicing, for example. Linkages affecting a product can also inﬂuence
+substitution, because they often create possibilities for discovering new
+ways to combine activities.
+
+
+In the simplest form of substitution, one product substitutes for another
+in performing the same function in the same buyer value activity. This is the
+case of a ceramic engine part substituting for a metal engine part. Though
+the substitution is direct, linkages can still exist. A ceramic part may require
+different handling, for example. Even in simple substitutions, it is also
+important to deﬁne the function of a product in the activity generically
+rather than literally—what the product does rather than how it does it. The
+generic function of a product is often very broad, particularly in consumer
+goods. A manufacturer of metal downhill skis faces substitution not only
+from epoxy or ﬁberglass skis but also from cross-country skis, other winter
+sports equipment, other leisure products that can be used in winter, and
+from the buyer taking more leisure time in the summer rather than winter.
+The generic function of metal skis, most broadly deﬁned, is recreation. The
+more generically the function of an industry’s product is expressed, the
+greater the number of potential substitutes there usually are.
+In the more complex forms of substitution, a substitute performs a
+different range of functions than an industry’s product and/or affects buyer
+activities in a different way. In the case of a truck substituting for a train, for
+example, loading, unloading, packaging, and shipment size may all be
+different though both perform the same transportation function. A substitute
+may also perform a wider or narrower range of functions than an industry’s
+product. For example, a word processor is not only a substitute for the
+functions of a typewriter but also for other functions such as calculating and
+small-quantity copying; a heat pump performs both heating and cooling,
+while a conventional boiler system can be used only for heating; a
+disposable diaper removes the need for laundering. Conversely, a wafﬂe
+maker performs fewer functions than a toaster oven, and a specialty retailer
+sells only one line of goods that are a subset of the product assortment of a
+department store. In identifying substitutes, then, it is necessary to include
+products that can perform functions in addition to those of an industry’s
+product, as well as products that can perform any signiﬁcant function
+among those the industry’s product can perform.
+Because a substitute can perform a wider or narrower range of functions,
+chains of substitution for a product can go in very different directions. For
+example, the functions of a racetrack include both gambling and
+entertainment. Substitutes for the gambling function include casinos, off-
+
+
+track betting, and bookies, while substitutes for the entertainment function
+are even more numerous and include movies, books, sporting events, and so
+on. The more functions a product performs in the buyer’s value chain, the
+greater the number of chains of substitutes.
+While one usually thinks of substitutes only in terms of different
+products, in many industries there are at least four other options that must
+be considered as substitutes in a broad sense. One option is that the buyer
+does not purchase anything at all to perform the function, the most extreme
+form of a substitute with a narrower range of functions. In water meters, for
+example, the primary substitute is not to meter water usage at all. Similarly,
+the leading U.S. salt producer, Morton-Norwich, is being threatened by
+concern over the health effects of sodium that has reduced consumption.
+A second potential substitute is to lower the usage rate of the product
+required to perform the function. In aluminum, for example, new beverage
+cans require thinner walls and hence less aluminum. Similarly, in offshore
+drilling rigs, new directional drilling techniques and down-hole
+measurement of the drilling process promise to reduce the amount of rig
+time required to drill.
+A third substitute that is often overlooked is used, recycled, or
+reconditioned products. In aluminum, for example, perhaps the most
+threatening substitute facing primary aluminum producers is secondary
+(recycled) aluminum. Secondary consumption has grown rapidly in both the
+United States and Japan. Used products are important substitutes for new
+products in many industries producing durable goods, such as automobiles
+and recreational vehicles. Reconditioned products are an important
+substitute in aircraft engine components, where remachined and recoated
+engine parts are a threat to new spare parts.
+A ﬁnal potential substitute is for the buyer to perform the function
+internally, or backward integration. For example, the key substitute for
+many distribution industries is for the buyer to purchase directly from the
+manufacturer and perform the distribution function internally. Or in
+property and casualty insurance, a buyer can self-insure or establish a
+captive insurance subsidiary.
+The relevant substitutes will differ by industry segment (Chapter 7).
+Different buyers use a product in different ways and hence value its
+functions differently. At a racetrack, for example, some buyers will come to
+
+
+enjoy the spectacle and an evening with friends, while others will spend
+most of their time at the betting windows or consulting tip sheets. Thus the
+relevant substitutes will differ by buyer or buyer segment. Similarly,
+different product varieties are used differently and hence may face different
+substitutes. Thus the pattern of substitutes changes by industry segment,
+and a ﬁrm’s most threatening substitutes will be a function of what
+segments it actually serves.
+Several substitutions can occur simultaneously. In the video game
+industry, for example, programmable video games with replaceable
+software cartridges are substituting for dedicated games that cannot be
+changed, at the same time that personal computers (on which game
+programs can be run) are substituting for programmable games. Multiple
+substitutions often involve the broadening or narrowing of product
+functions, as this example illustrates.
+Multiple substitutions interact in shaping the overall substitution rate in
+an industry and may lead to counterintuitive consequences. Aspartame is a
+new artiﬁcial low calorie sweetener, for example, that is substituting for
+saccharin. Both aspartame and saccharin are substituting for sugar. The
+success of aspartame is expected by some observers to increase rather than
+decrease the demand for saccharin for a time, by expanding the overall
+market for artiﬁcial sweeteners faster than it substitutes for saccharin. Here
+the later substitute beneﬁts an earlier substitute. The process can also work
+in reverse. The success or failure of the ﬁrst substitute can make it harder
+(or easier) for the next one.
+Even if an industry faces no direct substitutes, it may still be affected by
+substitution if there is the threat of substitution downstream if the buyer’s
+product faces substitutes. For example, diesel engines and gasoline engines
+are contending substitutes for use in medium-sized trucks, diesel engines
+having long replaced gasoline engines in heavy trucks. If diesel engines win
+out, the demand for gasoline engine parts will fall, even though the parts
+themselves face no substitutes directly. Downstream substitution can also
+occur when the buyer’s product depends on the sale of a complementary
+product that is threatened. If microwave ovens replace conventional ovens,
+for example, not only will the manufacturers of parts for conventional ovens
+be adversely affected but so will the manufacturers of cookware used in
+
+
+conventional ovens. In downstream substitution, the buyer no longer needs
+to perform the function of the ﬁrm’s product.
+Downstream substitution can both lower industry demand, and can alter
+buyer behavior. A threat of downstream substitution will often be
+transmitted to suppliers in the form of greater price sensitivity. It may also
+lead buyers to look for help from their suppliers in meeting the threat
+through innovations in suppliers’ products or other actions that raise the
+buyer’s differentiation or lower the buyer’s cost.
+The number of substitutes for an industry’s product will vary widely
+from industry to industry. Potential substitutes will differ in how they
+replace a product and in the level of threat they represent. It is important in
+substitution analysis to begin with the longest list of potential substitutes,
+because ﬁrms are much more prone to be blindsided by a substitute than to
+take a particular substitute too seriously.
+The Economics of Substitution
+One product substitutes for another if it offers buyers an inducement to
+switch that exceeds the cost or overcomes the resistance to doing so. A
+substitute offers an inducement to switch if the substitute provides the buyer
+with more value relative to its price than the product currently being used.
+There is always some cost of switching to a substitute because of the
+disruption and potential reconﬁguration of buyer activities that must result,
+however. The threat of a substitute will vary depending on the size of the
+inducement relative to the required switching costs.
+In addition to relative value to price and switching cost, the pattern of
+substitution is inﬂuenced by what I term the buyer’s propensity to switch.
+Faced with equivalent economic inducements for substitution, different
+buyers will often evaluate substitution differently.
+The threat of substitution, then, is a function of three factors:
+•  the relative value/price of a substitute compared to an industry’s
+product
+• the cost of switching to the substitute
+• the buyer’s propensity to switch
+
+
+This simple statement of the economics of substitution masks the often
+subtle analysis required to understand it. The inducement a substitute offers
+to switch is properly measured over the entire period the buyer will use it,
+and discounted to the present. The cost of switching to a substitute is
+typically incurred immediately or even before the substitute provides any
+beneﬁts at all. Both relative value/price (RVP) and the costs of switching
+are functions of a wide variety of factors, and are subject to change over
+time. Both can also involve considerable uncertainty. Understanding both
+requires a clear understanding of how a product affects the buyer’s value
+chain, as well as the structure of the industry producing the substitute.
+Understanding the buyer’s propensity to switch requires a further
+knowledge of the buyer’s competitive circumstances, resources, and other
+characteristics that play a part in predicting its behavior towards a
+substitute.
+Relative Value/Price
+The value/price of a substitute is the value it provides to the buyer
+compared to the price the buyer pays for it. Relative value/price is the
+value/price of a substitute relative to the value/price of the product it seeks
+to replace (which I term the product). When there are no switching costs
+and the product is consumed quickly, the relevant RVP is solely a function
+of current conditions. Future circumstances are not important because the
+buyer can rapidly and without cost shift back and forth between the
+substitute and the product depending on the RVP at the time. When there
+are costs of switching or the product is durable, however, the relevant
+measure of the attractiveness of a substitute is the expected RVP of the
+substitute over the planning horizon.
+The current prices of a substitute and a product are relatively easy to
+determine. The expected relative prices over the planning horizon are what
+should enter the RVP calculation, and must reﬂect the price changes
+forecasted over time. The purchase prices of both a substitute and a product
+must be adjusted for any discounts, rebates, or free ancillary products or
+services involved in their purchase. In ofﬁce equipment, for example, free
+service is often part of the deal with a buyer, and must be included in
+
+
+comparing the prices of substitutes such as copiers and offset duplicators.
+Prices must be also adjusted for any tax credits the buyer gains in purchase.
+The relative value of a substitute is based on exactly the same factors that
+determine differentiation, discussed in Chapter 4. A substitute is valuable if
+it lowers buyer cost or improves buyer performance relative to the product.
+This value must be perceived by the buyer, however, and hence a
+substitute’s ability to signal value relative to the product is part of the value
+comparison. As with relative price, it is the expected relative value of the
+substitute over its period of use that enters into RVP, not just its current
+value.
+The role of signaling in substitution is often as or more important than its
+role in differentiation. Substitution frequently involves a new product
+replacing a well established one. The substitute is typically unproven and its
+value may be quite uncertain, while the established product is proven and its
+qualities are well known. The ability of the substitute to signal value may,
+as a result, take on a signiﬁcance that exceeds the role of signaling in
+differentiation.
+The relative value of a substitute depends on its cumulative impact on
+the buyer’s value chain compared to the product’s, including both direct and
+indirect impacts. The principles of the analysis are the same as described in
+Chapter 4, though in practice there tend to be greater complexities in the
+analysis in substitution not usually present when comparing one brand of a
+product to another. A substitute and a product are often not directly
+comparable, and a substitute is more likely to involve a different pattern of
+impacts on the buyer’s value chain than a competing brand. Two brands of
+cloth diapers have essentially the same impact on the household, for
+example, while disposable diapers are used very differently than cloth
+diapers. The differing patterns of use of a substitute and a product typically
+necessitate adjustments in order to determine the relative value of a
+substitute.
+The following adjustments in measuring impact on buyer cost or buyer
+performance are commonly necessary when comparing the value of a
+substitute with the value of a product:
+Usage Rate. The effect of a substitute on a buyer’s cost depends on the
+amount of the substitute necessary to perform the same function. A
+
+
+substitute can lower buyer cost if less usage of it is required for a given
+result. For example, aspartame is much sweeter than saccharin, which
+means that less is necessary to achieve a comparable sweetening effect.
+Aspartame’s much higher price per pound must thus be adjusted
+accordingly. The usage of a substitute required for a given outcome will be
+affected by such factors as its purity, concentration, reject rate, or operating
+speed.
+Delivered and Installed Cost. The effect of a substitute on buyer cost
+depends on the delivered and installed cost of the substitute relative to the
+product. Delivered and installed cost may include such factors as the cost of
+transportation, installation, calibration, expanding or modifying space to
+house the substitute, and many other costs that frequently differ for a
+substitute and the product.
+Financing Cost. The effect of a substitute on buyer cost depends on the
+cost of ﬁnancing the purchase of the substitute relative to the product. In
+comparing mobile homes and conventional houses, for example, it is
+important to recognize that mobile homes are ﬁnanced as vehicles while
+conventional houses are ﬁnanced as real estate. Interest rates and/or terms
+differ for these different types of ﬁnancing, generally in the form of easier
+credit availability but higher rates for ﬁnancing mobile homes. Financing
+costs can be a large fraction of total cost in some industries.
+Relative Variability of Price or Availability. The cost of a substitute to
+the buyer is a function of expected ﬂuctuations in its price or availability (of
+both the product and ancillary items such as parts or service). Price
+ﬂuctuations are often costly for a buyer to deal with, as are periods of tight
+supply. One of the potential beneﬁts of ceramics, for example, is that it uses
+a plentiful and cheap raw material while metal parts are subject to greater
+price ﬂuctuations because of changing metal prices. Both price ﬂuctuations
+and the risk of nonavailability are partly a function of how many credible
+sources there are for a substitute relative to the product.
+The cost of a substitute to the buyer is also affected by whether adequate
+capacity is present to serve key buyers’ needs, particularly in the case of
+important inputs. Buyers are often unwilling to switch until enough capacity
+
+
+and suppliers are available to place the buyer in a tenable bargaining
+position. This creates the need in many substitutions to add capacity ahead
+of demand.
+Direct Costs of Use. The effect of a substitute on buyer cost depends not
+only on its initial cost, but also on the present value of the cost of using the
+substitute over its entire life compared to that product. Direct costs of use
+involve such things as:
+• cost of labor (reﬂecting the quality of labor necessary)
+• consumables such as materials, fuel, or ﬁlters
+• insurance
+• time before replacement
+• frequency and cost of maintenance
+• cost of spare parts
+• breakdown time (valued at its opportunity cost or the cost of reserve
+capacity)
+• costs of maintaining the space required
+• salvage value
+• dismantling cost
+In consumer goods, the cost of labor to use the substitute is the implicit
+cost of the buyer’s time. In frozen entrees, for example, a major beneﬁt to
+the buyer is time savings in preparation compared to most other meal types.
+Valuing a consumer’s time is often difﬁcult because it does not involve a
+money cost, though the techniques described in Chapter 4 provide a place to
+start.
+In many industries, such as elevators and aircraft engines, the costs of
+using a substitute over its life are equal or are greater than the initial
+purchase price, and can be decisive in determining its attractiveness. For
+example, radial truck tires get approximately 25 percent more mileage than
+bias ply tires. Radials also have lower downtime from punctures, and can be
+retreaded twice compared to once for bias ply tires. Radials also improve
+the fuel efﬁciency of a truck on the order of 2 to 6 percent. These
+improvements in cost of use more than offset the 40 to 50 percent price
+premium for radial truck tires.
+
+
+Indirect Costs of Use. The relative cost of use of a substitute must reﬂect
+costs throughout the buyer’s value chain, and not just costs in the value
+activity in which a substitute is directly employed. Such indirect or system
+impacts are often overlooked by both ﬁrms and buyers. An automated
+material handling conveyor, for example, can reduce the number and
+required skill levels of workers on the assembly line, the number of lift
+trucks needed in the factory, and the required strength of shipping
+containers compared to conventional materials handling methods. Similarly,
+disposable diapers eliminate the need for storage and laundering of soiled
+diapers in addition to making diapering the baby easier because of attached
+fastening tapes and a form-ﬁtting shape. Another example is the electronic
+cash register, which can help a retailer to lower required inventory and to
+control operating costs better than a mechanical cash register that cannot
+generate extensive on-line transactions data.
+A substitute may affect the cost of other activities in the buyer’s value
+chain if it:
+• affects productivity in other value activities
+• inﬂuences the need for other raw materials or their required quality
+• requires different ancillary equipment
+• affects the need for inventory
+• affects the frequency and complexity of required quality control checks
+• affects the amount and type of packaging materials needed in shipping
+• affects product weight and hence transport costs
+Buyer Performance. The value of a substitute must reﬂect any
+differences in its impact on the buyer’s performance relative to the product.
+An electronic switching system for telecommunications can be more easily
+adapted to new requirements than an electromechanical switch, for
+example. A color TV provides more realistic pictures than a black and
+white set and therefore greater entertainment. Another example of a
+substitution based heavily on improving buyer performance is disposable
+diapers. Disposable diapers offer greater cleanliness than cloth diapers and
+are softer and less likely to cause diaper rash. As is often true in
+differentiation, the performance of a substitute from the buyer’s perspective
+may involve intangibles such as perceived status and the quality of personal
+
+
+relationships. The effect of a substitute on buyer performance is not always
+easy to measure, though it always can be estimated.
+The substitution of robotics for a conventional manned machine tool
+provides an example of a complex substitution that involves direct cost of
+use effects, indirect cost of use effects, and effects on buyer performance. A
+robot reduces labor cost by increasing capital cost, and may increase the
+output rate of the production step in which it is employed. Robots can also
+save raw material cost and do not take sick leave, though they must be
+maintained. Indirectly, robots can alter the material preparation needed in
+previous production steps as well as material handling needs. Potential
+performance effects of robots include higher reliability, greater ﬂexibility,
+and higher workplace safety.
+Number of Functions. The effect of a substitute on buyer cost and
+performance must be adjusted for the range of functions it can perform
+relative to the product. Wider functionality usually improves the relative
+value of a substitute if buyers value the additional functions. This is not
+always the case, however, since wider functionality may come at the
+expense of the quality of performance of particular key functions. For
+example, personal computers that play video games have many more
+functions than video game machines, but video game machines are still
+easier to use and the games playable on them have better quality graphics.
+Lower functionality usually reduces the value of the substitute but this can
+be offset by the corresponding reduction in price or superior performance of
+the narrower range of functions. Changing functionality can not only affect
+buyer performance but also alter the buyer’s cost of use, as the electronic
+cash register example demonstrated.
+Attaching a value to additional functions (or missing functions) that
+affect performance in RVP calculations is often difﬁcult, just as it is in
+differentiation analysis. The problem is particularly severe in consumer
+goods, because buyer performance often involves satisfying intangible
+needs. The principle of valuing different functionality is to examine how the
+functions involved impact the buyer’s value chain, and calculate the effect
+on buyer cost or performance. One approach to valuing particular functions
+is to look for stand-alone products that perform the functions, and see what
+buyers are willing to pay for them. Valuing differences in functions that
+
+
+affect buyer cost is typically easier than valuing those that affect buyer
+performance.
+Cost and Performance of Complementary Products. The effect of a
+substitute on buyer cost and performance may be a function of the cost and
+performance of complementary products used with it relative to those used
+with the product.2 For example, movie theaters face the threat of
+substitution by home TV and videotape recorders, among other products.
+The cost to the buyer of going to a movie in a theater includes the time and
+cost of transportation to the theater and parking, and the cost of buying
+popcorn. The cost of these complementary purchases that are not necessary
+with home entertainment is one of the reasons movies fell from 8.2 percent
+of U.S. recreational expenditures in 1936 to under 3 percent by the mid-
+1970s.3 Similarly, substitution of recreational vehicles such as motor homes
+depends on such complements as gasoline, roads, and campgrounds.
+Uncertainty. There is usually some uncertainty involved in how a
+substitute will affect the buyer’s cost or performance, and this must be
+reﬂected in the RVP calculation. One major source of uncertainty is the
+possibility that the substitute will be improved in subsequent generations of
+the product. This can substantially delay switching by buyers. Uncertainty
+can be introduced into RVP by lowering the assumed value of a substitute
+by some discount factor.
+Perception of Value. It is the buyer’s perception of the RVP of a
+substitute that will determine the threat of a substitute, not necessarily the
+reality of RVP. Buyer awareness of a substitute is often not as great as that
+of the established product, and knowledge about the beneﬁts and features of
+a substitute is often incomplete. Relative inability to signal value will thus
+effectively reduce the perceived RVP of a substitute. Buyers are least likely
+to perceive the beneﬁts of a substitute when:
+• the advantage of the substitute is in lowering the costs of use over time
+rather than immediately
+• the advantages of the substitute are indirect and involve a number of
+value activities rather than direct advantages in the value activity in
+
+
+which the substitute is employed
+• the advantages of the substitute are in raising performance over time
+rather than immediately
+• gaining the advantages of the substitute requires a signiﬁcant change in
+behavior or use patterns by the buyer
+• the credibility of the substitute’s beneﬁt is hard to assess
+In all these cases, a buyer may not fully understand the impact of a
+substitute on its value chain; hence the need for signaling value through a
+variety of means is great. The substitution of robotics for conventional
+production equipment, described earlier, is a good example of a substitution
+where accurate perception of value has been a barrier to substitution,
+particularly in the United States relative to Japan.
+While it is more common that buyers have difﬁculty recognizing the
+value of a substitute, sometimes the opposite occurs. Sometimes
+substitution occurs for glamour or to appear progressive, with little
+understanding of the actual value of the substitute. In power supplies, for
+example, some buyers are changing to the new switch mode technology
+whose needs are probably better met by the older linear technology. In such
+cases, time may lower the perception of a substitute’s actual value.
+A substitute signals value in the same ways a ﬁrm does generally (see
+Chapter 4), using tools such as advertising, the sales force, demonstrations,
+and placement of units with opinion leaders. The stock of knowledge about
+a substitute as well as the expenditures by the substitute industry on
+signaling will determine how accurately the value of a substitute is
+perceived. Word of mouth and other sources of information not directly
+controlled by a ﬁrm are also vital.
+Switching Costs
+Substitution always involves some costs of switching to the substitute for
+the buyer, which are weighed against RVP. The higher the switching cost
+relatively, the more difﬁcult substitution will be. Switching costs in
+substitution are analogous to those of changing from one supplier to another
+in an industry.4 Switching costs are usually higher in substitution than in
+
+
+switching suppliers, however, because substitution may require switching to
+a new supplier plus switching to a new way of performing a function.
+Switching costs potentially arise from all the impacts a substitute has on
+the buyer’s value chain. Both the value activity in which the substitute is
+employed as well as other value activities it indirectly affects may require
+one-time costs of changeover. Switching costs most common in substitution
+are the following:
+Identifying and Qualifying Sources. Finding sources for the substitute
+and gathering information about them are switching costs. So is the need to
+test a substitute to see if it meets performance standards. The cost of
+qualifying a 64K memory chip to replace a 16K chip has been estimated at
+$50,000, for example, and the process can take as long as a year.
+Cost of Redesign or Reformulation. A buyer’s product or value activities
+must often be redesigned to accept a substitute. Reformulating a consumer
+food product to accept high-fructose corn syrup instead of sugar, for
+example, requires out-of-pocket costs as well as the time and opportunity
+cost involved in testing the reformulated product. Redesign costs can affect
+many value activities. The layout of an entire plant must be changed to get
+the beneﬁts of a new materials handling system, for example. Similarly,
+purchasing synthetically produced gas made from coal gasiﬁcation instead
+of natural gas requires a user to modify gas burning equipment because of
+synthetic gas’s slightly different qualities. The cost of redesign or
+reformulation will be lower if the buyer is changing product generations or
+building a new facility anyway.
+Retraining or Relearning Costs. Switching to a substitute often requires
+learning how to use the substitute or changing use patterns. A typist who
+has been using a manual typewriter must get used to the much lighter touch
+of an electric one, for example, while a cook must learn a new set of
+cooking procedures to use a microwave. Similarly, plant engineers and
+maintenance personnel must go down the learning curve with a new type of
+machine tool.
+
+
+The cost of retraining includes the cost of downtime and higher reject
+rates during the shakedown period and other such costs besides the out-of-
+pocket costs of learning or training themselves. Retraining costs will be
+highest where a substitute is used very differently from the product. Shifting
+from black and white to color TV is easy, for example, while shifting from
+conventional ovens to microwave ovens requires learning about oven
+operation, procedures, cooking times, and how to get the best results with
+different foods.
+Changing Role of the User. Quite apart from the need to learn new
+behavior, substitution frequently involves a change in role for the user that
+can be a positive or negative inﬂuence on the cost of switching. Automating
+a manufacturing process can relegate equipment operators or engineers to
+passive or noncritical roles, for example, which can be reﬂected in subtle or
+open resistance to a substitute. A husband or wife who cooks for the family
+may resist a food product that removes all the opportunity for a personal
+touch that demonstrates caring.
+Risk of Failure. The risk that a substitute will fail to perform is a cost of
+switching. The cost of failure will vary widely from product to product. In
+ﬁber optics, the severe consequences of failure because of the role of ﬁber
+optics as the communications link in larger systems have made buyers
+conservative in switching from copper wire and cable.
+New Ancillary Products. Changing to a substitute may require
+investments in new related equipment or material such as testing gear, spare
+parts, and software. While the cost of use of such ancillary products is
+included in the RVP of a substitute, the one-time cost of reequipping is a
+cost of switching. The need to invest in new ancillary products depends
+primarily on the compatibility of the equipment or parts used with the
+substitute with those used with the product, and the extent to which the
+substitute involves different types of interfaces with related products. Like
+redesign costs, the cost of investing in new ancillary products is lowest
+when the ancillary products would have been replaced anyway.
+
+
+Switching Costs Versus Switching Back Costs. Both the cost of failure of
+a substitute and the risk that its RVP will shift adversely are a function of
+the cost of switching back to the original product. If it is easy and
+inexpensive to switch back, the risk of switching is lower. The cost of
+switching back to the original product is usually less than the cost of
+switching to the substitute, because prior use of the product implies that the
+buyer already knows how to use it and has the required ancillary products.
+However, some switching costs, such as changeover costs and layout
+changes, cannot be avoided in switching back. There may also be some
+unique cost of switching back, such as confusing the buyer.
+The cost of switching back usually rises as a function of the time since
+substitution, though some switching back costs are typically present no
+matter how short the experience with the substitute is. The relationship
+between switching cost and switching back costs has implications for
+substitution strategy that I will discuss below.
+Buyer Propensity to Substitute
+Buyers with different circumstances and in different industries do not all
+have equal propensities to substitute when faced with a comparable
+economic motivation. Differences in their circumstances lead buyers to
+respond to a given RVP and switching cost differently. While such
+differences might be treated as factors that modify RVP or switching costs,
+it is more helpful in practice to isolate them.
+Resources. Substitution often involves up-front investments of capital
+and other resources. Access to such resources will differ from one buyer to
+another.
+Risk Proﬁle. Buyers often have very different risk proﬁles, the result of
+such things as their past history, age and income, ownership structure,
+background and orientation of management, and nature of competition in
+their industry. Buyers prone to risk taking are more likely to substitute than
+buyers that are risk-averse.
+
+
+Technological Orientation. Buyers experienced with technological
+change may be less concerned with some kinds of substitution risks, while
+extremely aware of others that a less technologically sophisticated buyer
+would be oblivious to.
+Previous Substitutions. The second substitution may be easier for a buyer
+than the ﬁrst, unless the ﬁrst substitution has been a failure. The buyer’s
+uncertainties over undertaking a substitution may have diminished if a past
+substitution has been successful, or risen if a past substitution has led to
+difﬁculties. In the soft drink industry, this seems to have worked to the
+beneﬁt of aspartame.
+Intensity of Rivalry. Buyers under intense competitive pressure and
+searching for competitive advantage will tend to substitute more quickly to
+gain a given advantage than those that are not.
+Generic Strategy. The RVP of a substitute will have different signiﬁcance
+depending on the competitive advantage that industrial, commercial, or
+institutional buyers are seeking or the value of time and particular
+performance needs of the household buyer. A substitute that offers a cost
+saving will tend to be of more interest to a cost leader than a differentiator,
+for example.
+Many of these factors that shape the buyer’s propensity to substitute will
+be a function of the particular decision maker who is involved in the
+purchase decision.
+Segmentation and Substitution
+Both the identity of substitutes and the threat of substitution often differ
+by industry segment. This is because the economics of substitution are
+different for different product varieties and buyers, reﬂecting their structural
+and value chain differences. Thus a merging of the analysis in Chapter 7
+and that in this chapter will not only expose differences in the substitution
+threat among segments but also assist in the construction of the industry
+segmentation matrix itself.
+
+
+The threat of substitution will vary by buyer group if RVP, switching
+costs, or the propensity to substitute vary. The RVP of a substitute often
+varies among buyers in an industry because of differences in how they use a
+product, the value they attach to various product attributes, and the other
+impacts of the product on their value chain. In the racetrack case discussed
+earlier, for example, buyers attending primarily for entertainment will have
+different substitutes than buyers attending primarily for gambling.
+Similarly, the advantages of radial truck tires in mileage and retreading
+ability will have more value to a long-haul ﬂeet operator than to a local
+pickup and delivery service. In the same vein, the value of the convenience
+of disposable diapers is probably higher to families with two working
+spouses than to families in which one spouse stays home.
+Switching costs also differ from buyer to buyer within an industry.
+Retraining costs are a function of existing procedures. The need for
+redesign or new ancillary products will relate to the speciﬁcs of how a
+product is used. Buyer propensity to substitute can also vary dramatically
+among buyers, a function of buyer resources, orientation, and so on. In
+many consumer goods, for example, substitution occurs ﬁrst with high-
+income buyers who have the resources to purchase new items while they are
+expensive.
+A good example of how substitution threat varies by buyer segment is in
+the adoption of personal computers by small businesses. Personal
+computers are a substitute for manual methods (e.g., standard ofﬁce
+machines) and computer service bureaus. As Figure 8–1 indicates, the
+degree of penetration of personal computers in small businesses is
+correlated to the size of the business. Personal computers have penetrated
+much further within larger companies because those ﬁrms have more
+complex paperwork needs and thus a greater need for automation, and also
+greater resources to invest in capital purchases.
+The substitution threat can vary not only for buyer segments but also for
+different product varieties, geographic areas, and channels. In each case the
+substitute may perform different functions or be used in different ways and
+hence its RVP or switching costs may differ. Full-size ofﬁce typewriters are
+more vulnerable to substitution from word processors than are portable
+electric typewriters, for example, because the special features and correcting
+
+
+capabilities of word processors are more valuable in ofﬁce uses than for
+intermittent personal typing.
+The penetration of a substitute often follows such segment differences. A
+substitute penetrates by expanding the number of segments it serves,
+penetrating new segments in order of the size of RVP of the substitute and
+the cost of switching in them. Thus the interaction of segmentation and
+substitution is often vital to understanding the path of substitution, a subject
+that I will treat below.
+Figure 8–1. Use of Personal Computers in Small Business, 1981
+Changes in the Substitution Threat
+
+
+The threat of a substitute often changes over time, with a corresponding
+impact on the pattern of substitution. Many of the sources of change in the
+substitution threat are predictable and can often be inﬂuenced through a
+ﬁrm’s offensive or defensive substitution strategy. Changes in the threat of
+substitution occur in ﬁve broadly deﬁned areas that follow directly from the
+economics of substitution:
+• changes in relative price
+• changes in relative value
+• changes in buyer perception of value
+• changes in switching cost
+• changes in propensity to substitute
+Relative price will change if (1) the relative costs of a substitute and the
+product change, and the change is partially or completely passed on to
+buyers, or (2) their relative proﬁt margins change. Relative value will
+change if valuable improvements proceed at different rates for the substitute
+and the product. Buyer perception of value will be a function of information
+dissemination. Switching cost will change if a substitute is redesigned or if
+early substituters bear some of the cost for later switchers. Buyer propensity
+to switch will be a function of evolving buyer attitudes, resources and
+competitive conditions.
+Changes in the threat of substitution over time are determined by
+industry structure and competitor behavior in both the substitute industry
+and the threatened industry, with the substitute industry on the offensive and
+the threatened industry on the defensive. The two industries are engaged in
+a battle to inﬂuence the substitution process. Industry structure will shape
+the nature of competition in both industries and the way ﬁrms behave
+toward the substitution process. Because competitors’ moves will inﬂuence
+the course of the substitution process in one direction or another, where
+competitors place bets is vital. If competitors in the substitute industry are
+better capitalized, for example, they can tip the balance in its favor because
+they will make greater investments to reduce costs, signal value, or set low
+initial prices. Similarly, other competitor strategic moves can impact the
+substitution process, such as RCA’s decision to widely license its color TV
+patents. Determining future changes in the threat of substitution is thus an
+
+
+exercise in forecasting the effects of industry structure and competitor
+behavior on each of the components of the substitution calculation.
+Some important determinants of changes in each of the ﬁve areas that
+determine substitution are as follows:5
+CHANGING RELATIVE PRICE
+Changes in Relative Cost. A substitute and a product are in a
+competition to improve relative cost. A substitute often improves its relative
+cost as substitution proceeds through the operation of economies of scale or
+the learning curve. For example, the price of carbon ﬁbers fell from $100
+per pound in the early 1970s to $20 to $25 in 1982 for these reasons,
+promoting the substitution of carbon ﬁbers for steel and aluminum in
+automotive and aircraft applications. Another factor that often lowers the
+relative cost of a substitute over time is that technological change reduces
+the amount necessary to perform the required function, as illustrated in the
+aluminum and offshore drilling examples earlier in this chapter. Such
+improvements, of course, come at the expense of the volume of the
+substitute sold. A substitute’s cost can just as easily escalate, however, if its
+success forces up the cost of its key raw materials.
+There may be fewer opportunities to reduce cost in the industry being
+threatened by a substitute because of its age and maturity. Moreover,
+penetration of the substitute may reduce the scale and capacity utilization of
+ﬁrms in the threatened industry, raising their costs. However, industries that
+have been sleepy have achieved remarkable cost reductions under the threat
+of a substitute, so one cannot generalize about how relative costs will
+change.
+The relative cost behavior of a substitute over time is analyzed using the
+framework in Chapter 3. The important cost drivers for both the substitute
+and the product should be identiﬁed. Cost behavior over time will be a
+function of the interplay of these cost drivers coupled with the likely
+behavior of competitors. Sometimes the projection of past cost trends for
+the substitute and the product will clearly indicate future relative cost. It is
+dangerous to count on the continuation of past trends, however, because the
+threatened industry may respond and the early pace of cost reduction by the
+substitute may be unsustainable. Predicting relative cost changes thus often
+
+
+requires that the impact of increasing scale, learning, and other factors on
+cost is estimated for a substitute and compared to the ability of the product
+to reduce cost through redesign, relocation, or introduction of new process
+technologies. The sources of cost dynamics described in Chapter 3 will
+suggest other important relative cost changes that might occur, such as
+differential inﬂation.
+Changes in Proﬁt Margins. The prices of a substitute and a product
+contain proﬁt margins.6 The relative proﬁt margins of a substitute and a
+product are a key factor that can shift over time. A common reason for the
+change in relative margins is that the threatened industry lowers its margins
+to ﬁght the substitute. Video game margins are falling rapidly to ﬁght
+personal computers, for example. The extent to which a threatened
+industry’s margins can be reduced before ﬁrms begin to exit is a function of
+how high margins were initially, and whether exit barriers keep ﬁrms in the
+industry despite low returns.
+The margins of a substitute can also change as substitution proceeds,
+depending on industry structure in the substitute industry. If early entrants
+into the substitute industry were skimming and entry barriers are not high,
+the substitute’s margins can fall dramatically as new companies enter. Initial
+success in penetration may also lead ﬁrms selling the substitute to set low
+penetration prices. Rivalry in selling a substitute often increases over time
+as it becomes more standardized and explosive growth slackens, as is
+happening in personal computers. Increasing penetration of the substitute
+may also raise the threat of backward integration by buyers. All these
+factors can squeeze a substitute’s margins. Margins of a substitute and a
+product, then, will be a function of the inﬂuence of their changing industry
+structures over time, partly in response to each other.
+CHANGING RELATIVE VALUE
+The relative value to the buyer of a substitute will often change because
+of changing technology, better service, and a myriad of other causes.
+Producers of a substitute may gain expertise in tailoring their value chains
+to meet buyer needs, though producers of the threatened product will look
+for ways to enhance value as well. While any of the factors that determine
+buyer value described in Chapter 4 may be changing, three important
+
+
+sources of change are the relative pace of technological change in the
+substitute and the product, the development of infrastructure, and
+institutional factors.
+A substitute and the threatened product are engaged in a technological
+race to see which can improve value faster. The likely pace and extent of
+technological change can be analyzed using the concepts in Chapter 5. A
+substitute may have the edge in technological change if it is a new industry,
+but several examples in Chapter 5 have shown how a threatened product or
+process can often achieve signiﬁcant technological improvements. The
+relative pace of technological change is also strongly inﬂuenced by the
+resources and skills of competitors. In the substitution of plastics and
+aluminum for steel, for example, the greater technological orientation of
+plastics and aluminum ﬁrms was one of the factors leading to a faster pace
+of change in those industries.
+RVP often changes in favor of the substitute over time as better
+infrastructure develops to support it. As a substitute becomes established,
+for example, it frequently spawns independent repair shops and is added to
+the product lines of established wholesalers. Availability improves and the
+perceived risk of shortages falls.
+RVP of a substitute can also change as a result of a wide variety of other
+exogenous inﬂuences and institutional factors. The rapid substitution of
+polyvinyl chloride (PVC) for materials such as aluminum in residential
+siding was set back by the revelation that vinyl chloride was a possible
+carcinogen. Similarly, the penetration of solar heating has been buffeted by
+shifts in government policy and a ﬂuctuating energy price outlook, while
+the relative value of food products has been altered by rising concerns about
+cholesterol and sodium. Such exogenous inﬂuences are often as hard to
+predict as they are powerful.
+CHANGING BUYER PERCEPTION OF VALUE
+The perception of value by buyers frequently changes over time in
+substitution because time and marketing activity are working to alter the
+way buyers view a substitute compared to a product. A substitute may gain
+in perceived value position over time as buyers become more and more
+familiar with how to use it. One of the inhibiting factors in the use of carbon
+
+
+ﬁbers in aircraft wings and other applications (as a substitute for steel,
+titanium, or aluminum), for example, has been that most engineers had no
+idea how to design with ﬁbers. Yet the properties of carbon ﬁbers are
+sufﬁciently unique that their beneﬁts can be fully reaped only if the designer
+understands the material. As this has begun to happen, the perceived value
+of ﬁbers is increasing. While time often beneﬁts a substitute, it can also hurt
+it. Many substitutes emerge amid overinﬂated buyer perceptions of their
+value, and time and trial are moderating inﬂuences.
+The perception of a substitute and a product can also be affected by the
+relative intensity and creativity of signaling activities. Campaigns to
+increase the awareness of a substitute are pitted against efforts by the
+threatened industry to improve its perceived value. The U.S. record
+industry, for example, has responded to ﬂattening sales at the expense of
+video entertainment products with its “Gift of Music” campaign. Record
+manufacturers contribute one-half cent per record for advertising, stressing
+the value of records as a gift. The appropriate signaling activities will
+depend on signaling criteria for the product.
+CHANGING SWITCHING COSTS
+The costs of switching to a substitute often change over time, frequently
+in a downward direction. One reason is that early switchers can bear some
+of the costs for later switchers, by developing procedures, designs, or
+standards. An early switcher from steel to aluminum beverage cans, for
+example, might develop product standards and methods of lithographing
+labels on the cans that can easily be copied. Switching costs can also fall
+over time because the substitute is redesigned to be more compatible with
+ancillary equipment, or suppliers develop procedures to minimize the
+buyer’s switching costs. In addition, third parties may spring up to lower the
+cost of switching, such as consultants, installers and training ﬁrms. In ofﬁce
+equipment, for example, consultants and training ﬁrms are proliferating to
+ease the changeover to ofﬁce automation.
+Switching costs are partly determined by a buyer’s technological
+choices, and thus change over time as buyers alter their products and
+processes. In the substitution of aluminum for steel and cast iron, for
+example, new buyer technology has reduced switching costs. Automakers
+
+
+have built more ﬂexible plants that can machine either aluminum or cast
+iron, while can makers’ new lines can accept both aluminum and tinplate
+can stock.
+CHANGING PROPENSITY TO SWITCH
+The propensity to switch to a successful substitute frequently grows over
+time. Early success with a substitute allays buyer risk aversion, at the same
+time as competitive considerations lead buyers to switch so as not to have a
+disadvantage relative to early switchers.
+Substitution and Overall Industry Demand
+In addition to taking share from existing products, a substitute can raise
+or lower overall industry demand. A substitute with a longer useful life than
+the product it is replacing will lower overall demand after the initial period
+when the substitute stimulates faster replacement. This pattern seems to
+have occurred in the substitution of longer-lasting radial tires for bias ply
+tires.
+The penetration of a substitute can also increase overall industry demand
+if the substitute expands the industry or increases the usage or replacement
+rate. Portable cassette players such as Sony’s Walkman, for example, have
+surely expanded the total market for cassette players at the same time as
+they have taken share from conventional cassette players. Similarly, the
+introduction of disposable ballpoint pens, championed by BIC Corporation,
+led to substitution for conventional pens but also stimulated the purchase of
+more ballpoint pens per buyer. Any impact of a substitute on overall
+demand for a product must be combined with a forecast of the path of
+substitution in order to predict the absolute volume of sales of a substitute
+over time.
+Substitution and Industry Structure
+Penetration of a substitute may have second order effects on the resulting
+industry structure. A substitute may shift the buyer’s cost structure, for
+
+
+example, in ways that increase or decrease price sensitivity. A substitute
+may also require new suppliers, and entry barriers may differ from those of
+the product it replaces. Thus the substitute must be analyzed as a new
+industry, not merely as a change in product. The substitute industry can be
+more or less attractive structurally than the industry it replaces, a fact that
+has important implications for strategy towards a substitute.
+The Path of Substitution
+The path of substitution in an industry is a function of how RVP, the
+perception of RVP, switching costs, and the propensity of buyers to switch
+evolve over time. The rate of penetration of substitutes differs widely from
+industry to industry. Some substitutes gain quick acceptance, while others
+penetrate slowly or not at all and are discontinued. In many industries,
+however, the path of substitution for successful substitutes looks like an S-
+curve, when substitution as a percent of total demand is plotted against time
+(see Figure 8–2).
+The S-shaped substitution curve is closely related to the familiar product
+life cycle curve, because products early in their life cycles are frequently
+substituting for some other products. An S-shaped substitution path is not
+characteristic of every successful substitution. However, it is important to
+understand why an S-curve might occur so that the economic factors that
+underlie it are recognized.7 Where the underlying economics of a particular
+substitution suggest an S-curve path, a number of techniques are available
+to help forecast the rate of substitution.
+In an S-curve path such as that shown in Figure 8–2, substitution is
+initially modest and often continues at low levels for a considerable period
+of time in what can be called the “informing and testing phase.” Unless a
+product ﬂaw emerges with the substitute or the threatened industry responds
+to nullify the substitute’s advantages, the penetration of the substitute then
+often climbs rapidly in a “takeoff phase” toward an upper bound that
+represents maximum penetration. This upper bound is determined by the
+number of buyers for whom the substitute is potentially valuable. The upper
+bound of substitution can itself change over time as changes in technology
+or buyer needs bring buyers in or out of the pool.
+
+
+Figure 8–2. A Typical S-Shaped Substitution Path
+The reasons that an S-shaped substitution curve occurs reﬂect a set of
+assumptions about the interplay of actual and perceived RVP, switching
+costs, and the buyer’s propensity to switch over time. Initially, the
+performance of a substitute is likely to be uncertain, and there may be few
+capable ﬁrms to supply it. Many buyers are not even aware of the substitute
+or what its characteristics are. The price of the substitute is likely to be high
+because of its low volume or because suppliers are skim-pricing. Though
+the value of the substitute is often uncertain, however, the cost of switching
+is usually very clear and made particularly high by the unfamiliarity of both
+buyers and suppliers with how the substitute should be used. Moreover, the
+cost of switching must be borne up front, before the beneﬁts of the
+substitute are realized.
+During the informing and testing period, some adventurous buyers or
+buyers who attach a particularly high value to the substitute’s qualities will
+switch to the substitute to experiment with it or will switch permanently
+because the RVP of the substitute to them appears particularly high. During
+this period, either the substitute begins to prove its value or product ﬂaws
+become apparent. The product ﬂaws prove uncorrectable (and penetration
+never increases), or the substitute is improved (sometimes the substitute is
+completely withdrawn from the market and then reintroduced). At the same
+time, marketing activity and word of mouth tend to widen the group of
+
+
+buyers that are aware of the substitute and thus the perception of value
+improves.8
+Assuming that the substitute eventually achieves acceptable performance
+with early buyers, the rate of penetration of the substitute can start to
+increase rapidly along the S-pattern for a number of reasons. First, the
+uncertainty of perceived value and the risk of failure of the substitute both
+fall as early buyers have successful experiences. Second, once a few buyers
+successfully switch, competitive pressures force other buyers to switch to
+maintain their cost position or differentiation (or self-image for consumers).
+Third, the cost of switching may decline for reasons discussed earlier.
+Fourth, rising adoption leads to increasing awareness of the substitute and
+raises its credibility. Fifth, rising penetration of the substitute often reduces
+its cost through economies of scale and learning.9 Sixth, introduction of
+new varieties of the substitute opens up new industry segments. Finally,
+increasing penetration of the substitute prompts its suppliers to become
+more aggressive in pricing, marketing, and R&D, often as a result of entry
+by new competitors into the substitute industry. All of these factors tend to
+be self-reinforcing, and can lead to the extremely rapid penetration of the
+substitute.
+Eventually, the penetration of a substitute begins to approach 100 percent
+of the buyers to which the substitute is attractive. As this happens,
+penetration tends to level off as the penetration of new buyers becomes
+more and more difﬁcult. However, improvements in RVP or new varieties of
+a substitute may widen the pool of potential buyers beyond those initially
+foreseen, fueling new opportunities for growth of the substitute. The upper
+bound in Figure 8–2 can thus expand to contain a larger and larger number
+of buyers.
+At the same time, the buyers’ usage of the substitute may change in ways
+that increase or decrease demand. In TV sets, for example, sales of black
+and white sets were very robust even after color sets began to penetrate
+because buyers bought second, third, and even fourth TV sets. Similarly, in
+the substitution of electric shavers for conventional razors, the recent
+introduction of small, portable electric razors may well be shifting the upper
+bound of penetration of electric shavers by making them more versatile and
+less expensive. Thus the upper bound in Figure 8–2 can include a growing
+volume of units.
+
+
+The length of the informing and testing phase is a function of a number
+of factors. Clearly important is the size of the RVP improvement offered by
+the substitute—the bigger the inducement, the shorter the period will be.
+The length of time necessary to prove the performance of a substitute also
+differs by product, and can greatly inﬂuence the length of the testing period.
+The performance of an automatic drip coffee maker can be proven in weeks
+or months, for example, while a new piece of capital equipment may require
+years of production line testing to assess its true performance. The period
+required for the industry producing the substitute to make necessary
+improvements in performance or cost, and to build adequate capacity to
+serve major buyers, also inﬂuences the length of the testing phase. Finally,
+the intensity of competition of the buyer’s industry and the signiﬁcance of
+the speciﬁc RVP of the substitute to that competition inﬂuence the length of
+the testing phase, by determining the pressures for imitation if one buyer
+switches to a substitute.
+The steepness of the takeoff phase is a function of how compelling in an
+industry are the reasons for rising penetration described above. In selling a
+substitute to an intensely competitive buyer industry, for example, takeoff
+can be very rapid. The steepness of takeoff is also a function of the time
+required to change over to a substitute and the adequacy of capacity. The
+purchasing cycle in the buyer industry is also important, because buyers are
+more likely to switch to a substitute when they would normally reorder or
+replace the product anyway. This reduces the switching costs associated
+with scrapping a product which has years of useful life remaining or where
+the buyer has substantial inventory on hand. For similar reasons, switching
+to a substitute in durable goods tends to occur faster when the buyer
+industry is growing and therefore investing in new facilities and equipment.
+The response of the threatened industry is also clearly important to the
+path of substitution. An aggressive response by the threatened industry can
+sometimes stop the penetration of a substitute altogether or delay it
+considerably. Conversely, entry into the substitute industry by credible
+competitors can accelerate penetration, as IBM’s entry into personal
+computers and Kodak’s entry into instant cameras seem to have done.
+Smooth substitution curves such as the one portrayed in Figure 8–2 are
+most characteristic of industries where there are many buyers of a
+substitute. Where there are few buyers, a decision by a major buyer can
+
+
+dramatically shift the curve overnight. In such cases, substitution analysis is
+best conducted on a buyer-by-buyer basis.
+Segmentation and the Substitution Path
+The substitution path in an industry is often very closely related to
+industry segmentation. Early penetration occurs in industry segments where
+a substitute offers the highest RVP, requires the lowest switching costs,
+and/or encounters the most adventurous or highest value buyers. Early
+segments support the cost reduction or performance improvement necessary
+to penetrate later segments. The high value of the substitute to early
+segments either offsets the high initial cost of the substitute, or allows its
+producers to earn extremely high proﬁts. Margins often will fall over time
+in the substitute industry as additional segments are penetrated where the
+substitute has lower value.
+The substitution of minicomputers provides a good example of how the
+substitution path relates to industry segmentation. The early segments
+penetrated by minicomputers were scientiﬁc and computer center
+applications where computational power was needed but where users could
+do their own programming, adapt machines to their needs, and perform
+some maintenance in-house. Later penetration was in applications such as
+industrial controls, where the buyer was still sophisticated and support
+requirements were moderate. Only after some time did minicomputers
+develop the service and support capabilities to penetrate small business
+applications.
+The same factors that lead to early penetration in some segments also
+mean that the rate of penetration within segments will vary. Since segments
+vary in RVP and switching costs, penetration will proceed much faster in
+some segments than others. Hence the industry substitution curve is actually
+a collection of segment substitution curves.
+Substitution Forecasting Models
+The observation that successful substitution often follows an S-shaped
+penetration curve can be used in forecasting. A variety of models that are
+
+
+based on the assumption of S-shaped penetration have grown out of
+research on diffusion processes. Data from the early years of a substitution
+can be used to forecast the entire substitution curve using such models,
+under the assumption that an S-shaped process will occur. The forecasted
+substitution curve may then become a base case from which an analysis of
+the underlying economics of a substitution can begin. Adjusting the
+standard S-shaped curve to reﬂect the economics of a particular substitution
+allows a prediction of the extent of substitution in future years. The premise
+underlying such a procedure is that the tendency toward an S-shaped
+penetration curve is strong enough so that the plotting of such a curve—
+derived from the early penetration data—is a useful beginning point for
+analysis.
+The most commonly used diffusion model is the so-called “logistic
+function,” a form of exponential function.10 The functional form of the
+relationship as applied to substitution is as follows:
+where F = fraction of the total potential market that has switched to a
+substitute
+K = a constant set equal to the early growth rate of a substitute
+The logistic function makes two important assumptions: (1) if
+substitution has progressed as far as a few percent, it will proceed to
+completion; and (2) the fractional rate of fractional substitution of a
+substitute for the product is proportional to the remaining amount of the
+product left to be substituted for. It is the latter assumption that produces the
+S-curve shape. If F/(1—F) is plotted as a function of time on
+semilogarithmic paper, the logistic function results in a substitution curve
+that is a straight line with the slope K as shown in Figure 8–3.11
+If the logic underlying an S-shaped substitution curve is believed to hold
+in a particular substitution process, as well as the assumption about a
+constant fractional rate of fractional substitution, the logistic function can
+be used to forecast the path of substitution that will occur. To do this, data
+on substitution history are used to determine F/(1 — F) for each year. Then
+
+
+F/(1 — F) is plotted on semilogarithmic paper against time, and a straight
+line is ﬁtted through the early history. Extending this line projects the future
+substitution path under the assumption that it will follow the logistic
+curve.12
+Figure 8–3. A Typical Logistic Curve
+The procedure is shown in Figure 8–4, which plots the early substitution
+history of aluminum for steel in beer cans. The early history ﬁts the logistic
+curve quite closely. Based on this history, we could expect the extent of
+substitution by 1982 to be approximately 91 percent if the assumptions of
+the logistic curve hold. The accuracy of this forecast, however, depends on
+how well the logistic curve reﬂects the economics of substitution in the
+particular industry. One important issue is the size of the potential market,
+and hence the upper bound. In the beverage can case the upper bound is
+fairly clear. Where the upper bound is increasing, the logistic curve will
+have a tendency to overestimate the rate of penetration. Another important
+issue later in the substitution process is whether the intensity of use of the
+substitute required to perform its function will change over time.
+
+
+Figure 8–4. Early Substitution of Steel for Aluminum in Beer Cans
+Perhaps the most important issue in whether substitution will follow the
+logistic curve growing out of the early substitution history is the extent to
+which the RVP that is driving the substitution will change over time. The
+logistic curve assumes a stable motivation for substitution. If RVP falls, the
+penetration of a substitute may actually decrease, something that never
+happens with the logistic curve. If the RVP of a substitute improves, on the
+other hand, the rate of penetration will increase from early history—the
+substitution path may jump to a new curve. Figure 8–5 illustrates how this
+has actually happened in beer cans.
+After 1976, the introduction of two-piece steel can technology helped
+slow the penetration of aluminum cans. Working with steel companies,
+
+
+Crown Cork and Seal introduced a cheaper way of making steel cans that
+reduced the RVP of aluminum cans. In 1978, however, Miller Beer (number
+two in the beer industry) announced a major test of aluminum cans against
+steel. The rate of substitution slowed further pending the outcome. Miller’s
+decision in 1979 was to switch to aluminum. Once Miller’s switch occurred,
+substitution accelerated to a faster pace than before 1976, in part because
+Miller legitimized the substitute. An additional factor in the faster
+penetration of aluminum after 1979 was the growing recycling of aluminum
+cans, which are more recyclable than steel cans. As infrastructure allowed
+for more widespread recycling, the RVP of aluminum became even better
+than before because recycling reduced the cost of metal. By 1982,
+penetration of aluminum was actually about 98 percent instead of the 91
+percent that would have been forecasted using the early history.
+As the beverage can example illustrates, the logistic curve is not a
+substitute for substitution analysis. It is a simple tool that can serve as a
+starting point for more careful analysis of the economics of substitution.13
+The substitution path will vary from industry to industry, and will be
+affected by technological changes and competitive moves. In order for the
+logistic curve to be meaningfully used, the factors that determine RVP,
+switching costs, and propensity to substitute in a particular industry must be
+understood and expected changes in them forecasted. Since the economics
+of a substitute often differ by industry segment, logistic curves should
+usually be plotted at the segment level and not the industry level. Beer
+producers, for example, have different needs in cans than other can users. A
+logistic curve for aluminum’s substitution against steel in cans overall
+would not be as meaningful as one for beer cans alone.
+
+
+Figure 8–5. Substitution of Steel for Aluminum in Beer Cans
+Substitution and Competitive Strategy
+The economics of substitution carry a variety of strategic implications
+for ﬁrms attempting to promote substitution, as well as for ﬁrms attempting
+to defend against it. Defenses against substitution are, by and large, the
+reverse of offensive strategies that promote substitution. I will ﬁrst describe
+some principles of promoting substitution and then turn to defense.
+Promoting Substitution
+
+
+A ﬁrm can trigger or accelerate substitution through strategic moves that
+enhance RVP, lower switching costs, or raise the propensity of buyers to
+switch. While none of these moves are without costs and risks, the
+following concepts for promoting substitution can be considered:
+1.  Target early switchers. As the section “Segmentation and
+Substitution” emphasized, some buyers and buyer segments in an industry
+will be much more likely to adopt a substitute than others because of greater
+RVP from the substitute, lower switching costs, or greater propensity to
+switch. The order of segments that are targeted for penetration is one of the
+most important components of a substitution strategy. A ﬁrm attempting
+substitution should focus its efforts on the most likely early switchers ﬁrst,
+and use the track record it gains with these buyers and their support to
+trigger the self-reinforcing takeoff phase. Early switchers may be buyers
+who are redesigning their products, are replacing equipment, face a pressing
+need for the value the substitute provides, or are adventurous purchasers. To
+reach these buyers, a ﬁrm may have to subsidize trial. For example, Mauna
+Loa macadamia nuts are sold on very favorable terms to some airlines to
+gain trial of target buyers.
+2. Improve the ﬁrm’s offering in areas with the highest RVP impacts. The
+impact of improvements in the product and elsewhere in the value chain on
+substitution will be greater the more RVP is affected. With a sophisticated
+understanding of the bases of RVP, drawn from the framework presented
+earlier, a ﬁrm can determine its R&D and marketing priorities accordingly.
+In color TV, for example, picture quality was much more important to RVP
+initially than features or styling, given the preferences of buyers substituting
+from black and white sets with high picture quality. Similarly, in many
+industries the problem is not actual product performance but the buyer’s
+uncertainty about it. Here, guarantees can be an effective tool to promote
+substitution.
+3. Reduce or subsidize switching costs. Investments to reduce switching
+costs can have a major role in stimulating substitution, presuming a
+substitute has superior RVP. A ﬁrm should direct part of its technical
+development to improvements that lower switching costs, and create
+
+
+mechanisms for information dissemination among buyers that have the
+same effect. This may be as simple as manuals or newsletters.
+A ﬁrm may also ﬁnd it advantageous to subsidize switching costs for
+some buyers. A ﬁrm need not subsidize the switching costs of all buyers,
+but only a core group of buyers whose adoption of a substitute is likely to
+trigger the takeoff phase. These buyers should be opinion leaders who will
+serve as credible signals of value to other buyers. Subsidizing switching
+costs can involve such things as free training, paying for product
+reformulation or testing, supplying or assisting in the design of ancillary
+equipment, providing free assistance in modifying production procedures,
+giving high trade-in allowances, offering money-back guarantees, and
+giving free in-home demonstrations.
+4. Invest in signaling. A major barrier faced by a substitute may be the
+lack of awareness and knowledge by potential buyers. A ﬁrm must identify
+the most important signaling criteria used by buyers to judge the value of a
+substitute, and invest to inﬂuence them. Buyers often misperceive the RVP
+of a substitute, particularly where RVP is not obvious but has the
+characteristics described earlier in this chapter. Hence the importance of
+signaling can frequently be great to successful substitution.
+5. Use tapered forward integration or induce backward integration to
+create pull-through. A strategy practiced successfully by the aluminum
+industry, among others, is to forward integrate selectively into downstream
+products to create pull-through demand for a substitute. A related strategy is
+to induce end users to backward integrate into the intermediate industry to
+get around intermediate producers who are unwilling to substitute. By
+integrating forward and creating demand with end users, a ﬁrm can
+sometimes force recalcitrant intermediate buyers to bear the switching costs
+of substitution. Forward integration can also demonstrate the performance
+of the substitute, and be a means for developing procedures for its use or for
+lowering switching cost.
+Tapered forward integration is most effective where the end user faces
+few, if any, costs of switching to a substitute, while intermediate buyers face
+signiﬁcant switching costs. This was the case in metal cans, where beverage
+
+
+companies could switch to aluminum cans relatively easily but can
+companies faced heavy investment costs in new equipment.
+6. Ensure multiple sources and/or adequate capacity. Often major buyers
+will not incur the costs and risk of substitution when there is only one
+source for a substitute or if there is insufﬁcient capacity for it on stream to
+meet expected future demand. Substitution can be accelerated by remedying
+these concerns, through encouraging entry into the substitute industry or by
+building capacity ahead of demand. This is an example of how good
+competitors can beneﬁt a ﬁrm (Chapter 6).
+7. Promote improvements in complementary products or infrastructure.
+A ﬁrm can often improve RVP or switching costs if it can stimulate
+improvements in the cost or quality of necessary complementary goods or
+infrastructure. This may justify investing in technology for complementary
+products and sharing the results freely with other ﬁrms. It may also suggest
+the formation of joint ventures or other relationships with producers of
+complementary goods, or creating needed infrastructure such as service
+facilities.14 RCA originally trained many of the repair personnel who
+serviced all color TV sets, for example.
+8. Price to balance capturing R VP against creating barriers. The price
+of a substitute must share some of the value created with the buyer in order
+to give the buyer an inducement to switch. How close the price of a
+substitute approaches RVP should depend on industry structure. Where
+there are high entry barriers, a ﬁrm may be better off substituting slowly by
+penetrating high-value segments ﬁrst at high prices and moving prices down
+gradually to capture lower-value segments. Where there are ﬁrst-mover
+advantages (Chapter 5), the ﬁrm instead should sacriﬁce short-term proﬁts
+to penetrate quickly and build barriers that protect long-term proﬁts. With
+low barriers, a ﬁrm must attempt to reap proﬁts quickly before entry erodes
+its position.
+9. Conceive of new functions to widen a substitute’s market. Conceiving
+of new functions a substitute can perform may greatly expand the potential
+market. This not only is important in product design and selecting features,
+
+
+but also in pricing strategy. In fresh ﬂowers, for example, European retailers
+recognized that low prices could open up a whole new function for ﬂowers
+—everyday use in decorating—in addition to the traditional use of fresh
+ﬂowers in weddings and for other special occasions. As a result, the
+European market for ﬂowers is much bigger than the U.S. market, where
+pricing has tended to be higher. Many industries have accepted maturity of
+demand rather than looked for new substitution possibilities.
+10. Harvest if competitive position in the substitute is not sustainable.
+Investments to build share in a substitute are indicated if a ﬁrm can sustain
+its competitive advantage in the substitute industry and if the industry
+structure is attractive. Otherwise, a ﬁrm may be better off skimming proﬁts
+early in the substitution process rather than pricing to deter entry or widen
+the market. A successful substitute is not necessarily a good business.
+Defense Against Substitutes
+The ﬁrst step in defense against substitutes is to identify all of them. This
+is often a difﬁcult task, because it requires a look at the basic functions a
+product performs. Strategies to combat substitutes are the reverse of many
+of the steps described above:
+• improve RVP relative to the substitute by reducing costs, improving the
+product, improving complementary goods, etc.
+• modify the product image
+• raise switching costs
+• block pull-through attempts by aggressive selling efforts directed at the
+buyers’ buyers
+Where switching back costs are high, a ﬁrm must invest aggressively in a
+short-term holding action to deter switching while it seeks more
+fundamental long-term improvements in RVP. With high switching back
+costs, buyers lost to a substitute will be hard to regain.
+In addition to these actions, a number of other possibilities in defending
+against substitutes warrant consideration:
+
+
+1.  Find new uses unaffected by the substitute. Sometimes a product
+facing substitution can be repositioned into entirely new uses. A good
+example is Arm & Hammer baking soda. As a result of a ten-year
+marketing campaign, Arm & Hammer is used in over 50 percent of
+American refrigerators for odor control, a use that has far surpassed the
+original use of baking soda.
+2.  Redeﬁne competition away from the strengths of the substitute. A
+substitute’s RVP advantage generally stems from either low price or certain
+dimensions of value. A good defensive strategy may be to attempt to
+inﬂuence industry competition away from these advantages. Repelling a low
+price substitute might involve such actions as longer warranties, more
+engineering support, or new product features.
+3. Enlist suppliers to help in defense. Suppliers of important purchased
+inputs often have a big stake in ﬁghting substitution too, and can bring
+important resources and technological skills to the defense. Suppliers of
+inputs that are large cost items or that have an important inﬂuence on value
+are the best candidates for alliances.
+4.  Redirect strategy toward segments least vulnerable to substitution.
+Some product or buyer segments will be less vulnerable to substitution than
+others. A ﬁrm under attack from substitutes may be better off focusing its
+defensive investments on such segments. A ﬁrm may also exit from or
+harvest its position in the segments most vulnerable to substitution. Early
+withdrawal from these segments can allow the ﬁrm to generate the most
+cash from harvesting or from liquidating assets, while exiting later will
+generate little or no cash.15
+5. Harvest instead of defend. Depending on the likely future RVP of a
+substitute and the feasibility of defensive strategies, the best strategy for a
+ﬁrm facing substitution may be to harvest its position instead of investing in
+defense at all. Such strategy involves such actions as concentrating attention
+on the segments where substitution will be the slowest, and raising prices.
+
+
+6. Enter the substitute industry. Rather than viewing a substitute as a
+threat, it may be better to view it as an opportunity. Entering the substitute
+industry may allow a ﬁrm to reap competitive advantages from
+interrelationships between a substitute and the product, such as common
+channels and buyers.16
+Industry Versus Firm Substitution Strategy
+A substitution process is partly under the control of a ﬁrm and partly a
+function of the industry as a whole. No matter what it does, the individual
+ﬁrm is affected by such things as the industry’s image and the consistency
+of industrywide product offerings, which inﬂuence buyer attitude and
+confusion about the beneﬁts of a substitute. This implies that industrywide
+actions can usefully supplement individual ﬁrm efforts to promote or defend
+against substitution. For example, New Zealand producers of kiwi fruit have
+greatly stimulated its substitution for other fruits through an industry-
+sponsored R&D program to breed one uniform variety of fruit (down from
+twenty) and adoption of this single variety by all the growers.17 This
+campaign has been reinforced by advertising of the fruit.
+Some industrywide activities that can promote (or prevent) substitution
+include:
+• Image advertising of the product. Total industry advertising can affect
+overall industry demand.
+•  Collective R&D expenditures to develop uses for the product, or
+techniques for integrating the product into buyers’ value chains.
+• Establishment and enforcement of product standards to allay buyers’
+fears of poor quality or inadequate performance.
+•  Gaining the necessary regulatory approvals for the product to lower
+buyers’ switching costs and perceived risks.
+•  Joint actions to improve the quality, availability, and cost of
+complementary products, thereby improving RVP.
+Expenditures made by a ﬁrm to promote or discourage substitution also
+may beneﬁt competitors, who get a free ride. In order to deal with this
+problem, collective industry action through trade associations or other
+
+
+industry groups is a common approach to promoting or defending against
+substitution. For example, the coal industry has recently embarked on a
+television and print advertising campaign in the United States to improve
+the image of coal as an abundant, easy-to-obtain, and “American” fuel.
+Without some collective action, fragmented industries often have difﬁculty
+promoting or ﬁghting substitution because of the free-rider problem.
+Pitfalls in Strategy Against Substitutes
+Substitution is a positive or negative force, to some degree, in every
+industry. Yet ﬁrms often make some common errors in dealing with
+substitutes. A discussion of these will provide a summary of some of the
+important concepts in this chapter:
+Failing to Perceive a Substitute. Firms often fail to recognize substitutes
+at all until the substitution process is well under way, because they view
+their product’s function too narrowly, do not recognize the different
+substitutes faced by different segments, or overlook downstream
+substitution.
+Not Understanding R VP. The determinants of RVP are complex, and
+ﬁrms often have a simplistic view of why a substitute is succeeding or
+failing. For example, they may believe that superior product performance is
+the cause of substitution when the real reason is lower cost of use for the
+buyer because of easier installation. Not knowing why a substitute is
+succeeding or failing can be a ticket to the wrong offensive or defensive
+strategy, or to an unpleasant surprise when a substitute takes off.
+Misreading of Slow Early Penetration. The slow early penetration of a
+substitute can be misread as a sign that it is not a serious threat, rather than
+as a manifestation of the S-shaped nature of the substitution process. While
+many substitutes do indeed fail, slow early penetration is not a reliable sign
+that this will happen. What is necessary is a careful analysis of RVP, and
+early buyer experience with the substitute.
+
+
+A Static View of RVP. Both offensive and defensive strategy towards
+substitution should be driven by the future as well as present RVP of a
+substitute. A ﬁrm can mistakenly direct its product and marketing
+improvements toward the wrong areas, or fail to plan for improvements in
+RVP or reduction in margins by the substitute over time.
+Fighting Versus Joining. Many ﬁrms invest heavily to defend against
+substitutes when long-term RVP is compellingly against them. Similarly,
+their defense against a substitute is across the board, instead of reﬂecting
+differences in vulnerability to the substitute in different segments. Early
+moves to focus on certain segments, harvest, or enter the substitute industry
+are sometimes called for.
+Accepting Maturity. Perhaps the most unfortunate pitfall of all is
+accepting the maturity of one’s product, and not considering substitution as
+a possibility. Firms often look inward, and become preoccupied with
+battling rivals. It may be better to expand the size of the pie through
+substitution. The age of an industry is not a reliable indicator of the
+substitution possibilities. Industry maturity may be just an illusion.
+
+
+III
+Corporate Strategy and Competitive Advantage

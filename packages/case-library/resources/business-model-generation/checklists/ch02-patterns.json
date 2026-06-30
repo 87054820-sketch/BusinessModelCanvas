@@ -1,0 +1,37 @@
+{
+  "chapter": "ch02-patterns",
+  "sourceFiles": { "en": "05-Patterns.txt", "zh": "07-类型.txt" },
+  "concepts": [
+    { "name": "Unbundling Business Models", "definition": "Separating a company into three fundamentally different types of businesses — Customer Relationship management, Product Innovation, and Infrastructure management — because each has different economic, competitive, and cultural imperatives. They conflict within a single corporation." },
+    { "name": "The Long Tail", "definition": "Selling a large number of niche items in relatively small quantities, alongside a small number of popular items in large quantities. Enabled by low inventory costs and strong platforms. Total revenue from a large number of niche products can equal or exceed revenue from hits." },
+    { "name": "Multi-Sided Platforms", "definition": "Bringing together two or more distinct but interdependent groups of customers. The platform creates value by facilitating interactions between the groups. Value grows as the platform attracts more users (network effect). Often subsidizes one side to attract the other." },
+    { "name": "FREE as a Business Model", "definition": "At least one substantial Customer Segment can continuously benefit from a free-of-charge offer, financed by another part of the business model or by another Customer Segment. Three patterns: (1) free offer based on multi-sided platforms (advertising), (2) free basic services with optional premium (freemium), (3) bait and hook (low-priced initial purchase + repeat purchases)." },
+    { "name": "Open Business Models", "definition": "Systematically collaborating with outside partners to create and capture value. Two types: outside-in (exploiting external ideas and technologies internally) and inside-out (providing unused internal ideas/assets to external parties). Based on the insight that in a world of widely distributed knowledge, organizations should access external R&D and license unused internal IP." }
+  ],
+  "arguments": [
+    { "claim": "Patterns help designers avoid reinventing the wheel — they are reusable, configurable templates for business model design", "evidence": "By studying patterns across industries, designers can recognize which pattern might apply to their situation, adapt it, and avoid known pitfalls. Patterns abstract the common structural logic behind superficially different businesses." },
+    { "claim": "Unbundling is inevitable once a company reaches certain scale, because the three business types (customer relationship, product innovation, infrastructure) are in fundamental conflict", "evidence": "Customer Relationship businesses want to serve every customer need (scope), Product Innovation businesses want speed and creativity, Infrastructure businesses want scale and efficiency. These three imperatives pull in different directions and cannot all be optimized simultaneously within one P&L." },
+    { "claim": "Long Tail models are a structural shift enabled by two technological enablers: democratized production tools and democratized distribution", "evidence": "Before the internet, shelf space was expensive and limited (physical stores). Now, platforms like Amazon, Netflix, and Lego Factory can carry far more SKUs because digital/on-demand distribution costs near zero per additional title. The key is low inventory costs + a strong recommendation/filter platform." }
+  ],
+  "cases": [
+    { "name": "Private Banking: Unbundling", "context": "A traditional private bank handles three business types: managing client relationships (trust), developing new financial products (innovation), and running the IT/transaction backbone (infrastructure). These three conflict.", "illustrates": "Why bundling all three into one firm creates tension. Relationship managers want to offer anything clients need (breadth); product developers want to create innovative instruments fast; infrastructure managers want standardized, efficient, low-cost operations. Unbundling recognizes that these need different cultures, metrics, and even different companies.", "lesson": "Look for tensions between departments that seem to be fighting each other rather than competitors. That's often the signal for unbundling." },
+    { "name": "Netflix / Amazon / eBay: Long Tail", "context": "These platforms carry millions of titles/products, far more than any physical store.", "illustrates": "Long Tail is profitable when the platform bears near-zero marginal cost per additional title listed. Netflix's streaming catalog, Amazon's marketplace, and eBay's auction listings all show that the sum of many niche items' revenues competes with blockbuster revenues.", "lesson": "The Long Tail requires both a deep catalog (production side) AND strong filters/recommendations (discovery side). Without filters, the tail is just noise." },
+    { "name": "Google / Facebook / Visa: Multi-Sided Platforms", "context": "Google connects searchers with advertisers; Facebook connects users with advertisers; Visa connects merchants with cardholders.", "illustrates": "In each case, one side is subsidized (free for searchers/users/cardholders), and the other side pays (advertisers/merchants). The platform's value to the paying side increases with every new user on the free side.", "lesson": "Identify which side needs to be subsidized to attract the other. Usually, the more price-sensitive side is subsidized, and the side that most values the other side's presence pays." }
+  ],
+  "terminology": [
+    { "term": "Network effect", "definition": "The phenomenon by which a platform's value to each user increases as the total number of users grows." },
+    { "term": "Freemium", "definition": "A business model where basic services are free and premium features are paid. Usually 5-10% of users pay, subsidizing the rest." },
+    { "term": "Bait and hook", "definition": "A low-margin or loss-leading initial product that locks customers into purchasing high-margin consumables or services. Also called 'razor and blades' or 'lock-in' model." }
+  ],
+  "nuance": [
+    "Patterns are not recipes — applying a pattern still requires validation of customers, supply, network effects, and monetization in YOUR specific context",
+    "Many companies think they are multi-sided platforms when they are actually just serving both buyers and sellers as two separate customer segments on a single-sided model. The distinction: a platform facilitates direct INTERACTION between the sides."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["business-model-canvas"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": ["long-tail", "multi-sided-platforms", "free", "open-business-models", "unbundling-business-models"],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-canvas", "ch03-design"]
+  }
+}

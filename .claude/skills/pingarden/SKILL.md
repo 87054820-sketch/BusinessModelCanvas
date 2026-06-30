@@ -28,8 +28,9 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 3. **For each canvas the user works on**, consult `canvases/<id>.<lang>.md` for filling rules, fill order, examples, and anti-patterns.
 4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library and pattern library are cross-linked both ways.
 5. **For "how do I test this assumption" / "what experiment should I run"** — go to `workflows/experiments.md` and the `experiments/` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
-6. **For install/update/release or skill drift questions** — read `workflows/self-iteration.md` and keep the installed skill, project-local skill, zip, and DMG in sync.
-7. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
+6. **For book/resources reading, chapter-quality, or source-material questions** — go to `workflows/resource-reading.md`. Resources are now chapter-aware: use chapter summaries first, then fetch the full chapter only when needed.
+7. **For install/update/release or skill drift questions** — read `workflows/self-iteration.md` and keep the installed skill, project-local skill, zip, and DMG in sync.
+8. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
 
 ## Index
 
@@ -106,6 +107,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `workflows/snapshot.md` — when to milestone, how to restore
 - `workflows/translate.md` — en ⇄ zh round trip
 - `workflows/case-library.md` — read curated company cases for inspiration, or fork one to start fast
+- `workflows/resource-reading.md` — read curated books/resources with chapter-aware depth, and use the checklist → writing → audit quality gate when authoring resource chapters
 - `workflows/self-iteration.md` — keep installed skills, project-local skills, skill zips, and app releases in sync after updates
 - `workflows/library-evolution.md` — when adding a new canvas, case, pattern, experiment, strategy framework, or resource: decide the content layer, integrate it into cases/stories, validate, then regenerate the skill
 - `workflows/patterns.md` — when the user asks "what pattern is this", "give me other companies in the same pattern", or wants to draft a BMC by applying a pattern
@@ -120,6 +122,7 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - `reference/identity.md` — `X-Display-Name` / `--as` / audit trail
 - `reference/ai-context-shape.md` — shape of the `/ai-context` JSON
 - `reference/case-library.md` — case kinds, slug rules, read-only rules
+- `reference/resource-quality.md` — 12 source-verified resources, chapter quality gates, and audit expectations
 - `reference/patterns.md` — pattern slug index, the `pingarden pattern <list|get>` commands, and the case ↔ pattern cross-link rules
 - `reference/experiments.md` — experiment slug index with theme / risk / cost / strength columns, plus the matching heuristic for a given riskiest assumption
 - `reference/strategy-frameworks.md` — strategy framework slug index and case ↔ framework cross-link rules

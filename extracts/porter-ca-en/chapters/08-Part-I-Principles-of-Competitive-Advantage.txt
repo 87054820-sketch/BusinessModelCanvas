@@ -1,0 +1,28 @@
+# Part I: Principles of Competitive Advantage
+
+2
+The Value Chain and Competitive Advantage
+Competitive advantage cannot be understood by looking at a ﬁrm as a
+whole. It stems from the many discrete activities a ﬁrm performs in
+designing, producing, marketing, delivering, and supporting its product.
+Each of these activities can contribute to a ﬁrm’s relative cost position and
+create a basis for differentiation. A cost advantage, for example, may stem
+from such disparate sources as a low-cost physical distribution system, a
+highly efﬁcient assembly process, or superior sales force utilization.
+Differentiation can stem from similarly diverse factors, including the
+procurement of high quality raw materials, a responsive order entry system,
+or a superior product design.
+A systematic way of examining all the activities a ﬁrm performs and how
+they interact is necessary for analyzing the sources of competitive
+advantage. In this chapter, I introduce the value chain as the basic tool for
+doing so. The value chain disaggregates a ﬁrm into its strategically relevant
+activities in order to understand the behavior of costs and the existing and
+potential sources of differentiation. A ﬁrm gains competitive advantage by
+performing these strategically important activities more cheaply or better
+than its competitors.
+A ﬁrm’s value chain is embedded in a larger stream of activities that I
+term the value system, illustrated in Figure 2–1. Suppliers have value chains
+(upstream value) that create and deliver the purchased inputs used in a
+ﬁrm’s chain. Suppliers not only deliver a product but also can inﬂuence a
+ﬁrm’s performance in many other ways. In addition, many products pass
+through the value chains of channels (channel value) on their way to the

@@ -1,0 +1,589 @@
+# Generic Competitive Strategies
+
+differentiation (differentiation focus) in a narrow segment. The speciﬁc
+actions required to implement each generic strategy vary widely from
+industry to industry, as do the feasible generic strategies in a particular
+industry. While selecting and implementing a generic strategy is far from
+simple, however, they are the logical routes to competitive advantage that
+must be probed in any industry.
+Figure 1–3. Three Generic Strategies
+The notion underlying the concept of generic strategies is that
+competitive advantage is at the heart of any strategy, and achieving
+competitive advantage requires a ﬁrm to make a choice—if a ﬁrm is to
+attain a competitive advantage, it must make a choice about the type of
+competitive advantage it seeks to attain and the scope within which it will
+attain it. Being “all things to all people” is a recipe for strategic mediocrity
+and below-average performance, because it often means that a ﬁrm has no
+competitive advantage at all.
+Cost Leadership
+Cost leadership is perhaps the clearest of the three generic strategies. In
+it, a ﬁrm sets out to become the low-cost producer in its industry. The ﬁrm
+has a broad scope and serves many industry segments, and may even
+operate in related industries—the ﬁrm’s breadth is often important to its
+cost advantage. The sources of cost advantage are varied and depend on the
+
+
+structure of the industry. They may include the pursuit of economies of
+scale, proprietary technology, preferential access to raw materials, and other
+factors I will describe in detail in Chapter 3. In TV sets, for example, cost
+leadership requires efﬁcient size picture tube facilities, a low-cost design,
+automated assembly, and global scale over which to amortize R&D. In
+security guard services, cost advantage requires extremely low overhead, a
+plentiful source of low-cost labor, and efﬁcient training procedures because
+of high turnover. Low-cost producer status involves more than just going
+down the learning curve. A low-cost producer must ﬁnd and exploit all
+sources of cost advantage. Low-cost producers typically sell a standard, or
+no-frills, product and place considerable emphasis on reaping scale or
+absolute cost advantages from all sources.
+If a ﬁrm can achieve and sustain overall cost leadership, then it will be
+an above-average performer in its industry provided it can command prices
+at or near the industry average. At equivalent or lower prices than its rivals,
+a cost leader’s low-cost position translates into higher returns. A cost leader,
+however, cannot ignore the bases of differentiation. If its product is not
+perceived as comparable or acceptable by buyers, a cost leader will be
+forced to discount prices well below competitors’ to gain sales. This may
+nullify the beneﬁts of its favorable cost position. Texas Instruments (in
+watches) and Northwest Airlines (in air transportation) are two low-cost
+ﬁrms that fell into this trap. Texas Instruments could not overcome its
+disadvantage in differentiation and exited the watch industry. Northwest
+Airlines recognized its problem in time, and has instituted efforts to
+improve marketing, passenger service, and service to travel agents to make
+its product more comparable to those of its competitors.
+A cost leader must achieve parity or proximity in the bases of
+differentiation relative to its competitors to be an above-average performer,
+even though it relies on cost leadership for its competitive advantage. Parity
+in the bases of differentiation allows a cost leader to translate its cost
+advantage directly into higher proﬁts than competitors’.6 Proximity in
+differentiation means that the price discount necessary to achieve an
+acceptable market share does not offset a cost leader’s cost advantage and
+hence the cost leader earns above-average returns.
+The strategic logic of cost leadership usually requires that a ﬁrm be the
+cost leader, not one of several ﬁrms vying for this position.7 Many ﬁrms
+
+
+have made serious strategic errors by failing to recognize this. When there
+is more than one aspiring cost leader, rivalry among them is usually ﬁerce
+because every point of market share is viewed as crucial. Unless one ﬁrm
+can gain a cost lead and “persuade” others to abandon their strategies, the
+consequences for proﬁtability (and long-run industry structure) can be
+disastrous, as has been the case in a number of petrochemical industries.
+Thus cost leadership is a strategy particularly dependent on preemption,
+unless major technological change allows a ﬁrm to radically change its cost
+position.
+Differentiation
+The second generic strategy is differentiation. In a differentiation
+strategy, a ﬁrm seeks to be unique in its industry along some dimensions
+that are widely valued by buyers. It selects one or more attributes that many
+buyers in an industry perceive as important, and uniquely positions itself to
+meet those needs. It is rewarded for its uniqueness with a premium price.
+The means for differentiation are peculiar to each industry.
+Differentiation can be based on the product itself, the delivery system by
+which it is sold, the marketing approach, and a broad range of other factors.
+In construction equipment, for example, Caterpillar Tractor’s differentiation
+is based on product durability, service, spare parts availability, and an
+excellent dealer network. In cosmetics, differentiation tends to be based
+more on product image and the positioning of counters in the stores. I will
+describe how a ﬁrm can create sustainable differentiation in Chapter 4.
+A ﬁrm that can achieve and sustain differentiation will be an above-
+average performer in its industry if its price premium exceeds the extra
+costs incurred in being unique. A differentiator, therefore, must always seek
+ways of differentiating that lead to a price premium greater than the cost of
+differentiating. A differentiator cannot ignore its cost position, because its
+premium prices will be nulliﬁed by a markedly inferior cost position. A
+differentiator thus aims at cost parity or proximity relative to its
+competitors, by reducing cost in all areas that do not affect differentiation.
+The logic of the differentiation strategy requires that a ﬁrm choose
+attributes in which to differentiate itself that are different from its rivals’. A
+
+
+ﬁrm must truly be unique at something or be perceived as unique if it is to
+expect a premium price. In contrast to cost leadership, however, there can
+be more than one successful differentiation strategy in an industry if there
+are a number of attributes that are widely valued by buyers.
+Focus
+The third generic strategy is focus. This strategy is quite different from
+the others because it rests on the choice of a narrow competitive scope
+within an industry. The focuser selects a segment or group of segments in
+the industry and tailors its strategy to serving them to the exclusion of
+others. By optimizing its strategy for the target segments, the focuser seeks
+to achieve a competitive advantage in its target segments even though it
+does not possess a competitive advantage overall.
+The focus strategy has two variants. In cost focus a ﬁrm seeks a cost
+advantage in its target segment, while in differentiation focus a ﬁrm seeks
+differentiation in its target segment. Both variants of the focus strategy rest
+on differences between a focuser’s target segments and other segments in
+the industry. The target segments must either have buyers with unusual
+needs or else the production and delivery system that best serves the target
+segment must differ from that of other industry segments. Cost focus
+exploits differences in cost behavior in some segments, while differentiation
+focus exploits the special needs of buyers in certain segments. Such
+differences imply that the segments are poorly served by broadly-targeted
+competitors who serve them at the same time as they serve others. The
+focuser can thus achieve competitive advantage by dedicating itself to the
+segments exclusively. Breadth of target is clearly a matter of degree, but the
+essence of focus is the exploitation of a narrow target’s differences from the
+balance of the industry.8 Narrow focus in and of itself is not sufﬁcient for
+above-average performance.
+A good example of a focuser who has exploited differences in the
+production process that best serves different segments is Hammermill
+Paper. Hammermill has increasingly been moving toward relatively low-
+volume, high-quality specialty papers, where the larger paper companies
+with higher volume machines face a stiff cost penalty for short production
+
+
+runs. Hammermill’s equipment is more suited to shorter runs with frequent
+setups.
+A focuser takes advantage of suboptimization in either direction by
+broadly-targeted competitors. Competitors may be underperforming in
+meeting the needs of a particular segment, which opens the possibility for
+differentiation 
+focus. 
+Broadly-targeted 
+competitors 
+may 
+also 
+be
+overperforming in meeting the needs of a segment, which means that they
+are bearing higher than necessary cost in serving it. An opportunity for cost
+focus may be present in just meeting the needs of such a segment and no
+more.
+If a focuser’s target segment is not different from other segments, then
+the focus strategy will not succeed. In soft drinks, for example, Royal
+Crown has focused on cola drinks, while Coca-Cola and Pepsi have broad
+product lines with many ﬂavored drinks. Royal Crown’s segment, however,
+can be well served by Coke and Pepsi at the same time they are serving
+other segments. Hence Coke and Pepsi enjoy competitive advantages over
+Royal Crown in the cola segment due to the economies of having a broader
+line.9
+If a ﬁrm can achieve sustainable cost leadership (cost focus) or
+differentiation (differentiation focus) in its segment and the segment is
+structurally attractive, then the focuser will be an above-average performer
+in its industry. Segment structural attractiveness is a necessary condition
+because some segments in an industry are much less proﬁtable than others.
+There is often room for several sustainable focus strategies in an industry,
+provided that focusers choose different target segments. Most industries
+have a variety of segments, and each one that involves a different buyer
+need or a different optimal production or delivery system is a candidate for
+a focus strategy. How to deﬁne segments and choose a sustainable focus
+strategy is described in detail in Chapter 7.
+Stuck in the Middle
+A ﬁrm that engages in each generic strategy but fails to achieve any of
+them is “stuck in the middle.” It possesses no competitive advantage. This
+strategic position is usually a recipe for below-average performance. A ﬁrm
+
+
+that is stuck in the middle will compete at a disadvantage because the cost
+leader, differentiators, or focusers will be better positioned to compete in
+any segment. If a ﬁrm that is stuck in the middle is lucky enough to discover
+a proﬁtable product or buyer, competitors with a sustainable competitive
+advantage will quickly eliminate the spoils. In most industries, quite a few
+competitors are stuck in the middle.
+A ﬁrm that is stuck in the middle will earn attractive proﬁts only if the
+structure of its industry is highly favorable, or if the ﬁrm is fortunate
+enough to have competitors that are also stuck in the middle. Usually,
+however, such a ﬁrm will be much less proﬁtable than rivals achieving one
+of the generic strategies. Industry maturity tends to widen the performance
+differences between ﬁrms with a generic strategy and those that are stuck in
+the middle, because it exposes ill-conceived strategies that have been
+carried along by rapid growth.
+Becoming stuck in the middle is often a manifestation of a ﬁrm’s
+unwillingness to make choices about how to compete. It tries for
+competitive advantage through every means and achieves none, because
+achieving different types of competitive advantage usually requires
+inconsistent actions. Becoming stuck in the middle also afﬂicts successful
+ﬁrms, who compromise their generic strategy for the sake of growth or
+prestige. A classic example is Laker Airways, which began with a clear cost
+focus strategy based on no-frills operation in the North Atlantic market,
+aimed at a particular segment of the traveling public that was extremely
+price-sensitive. Over time, however, Laker began adding frills, new
+services, and new routes. It blurred its image, and suboptimized its service
+and delivery system. The consequences were disastrous, and Laker
+eventually went bankrupt.
+The temptation to blur a generic strategy, and therefore become stuck in
+the middle, is particularly great for a focuser once it has dominated its target
+segments. Focus involves deliberately limiting potential sales volume.
+Success can lead a focuser to lose sight of the reasons for its success and
+compromise its focus strategy for growth’s sake. Rather than compromise
+its generic strategy, a ﬁrm is usually better off ﬁnding new industries in
+which to grow where it can use its generic strategy again or exploit
+interrelationships.
+
+
+Pursuit of More Than One Generic Strategy
+Each generic strategy is a fundamentally different approach to creating
+and sustaining a competitive advantage, combining the type of competitive
+advantage a ﬁrm seeks and the scope of its strategic target. Usually a ﬁrm
+must make a choice among them, or it will become stuck in the middle. The
+beneﬁts of optimizing the ﬁrm’s strategy for a particular target segment
+(focus) cannot be gained if a ﬁrm is simultaneously serving a broad range of
+segments (cost leadership or differentiation). Sometimes a ﬁrm may be able
+to create two largely separate business units within the same corporate
+entity, each with a different generic strategy. A good example is the British
+hotel ﬁrm Trusthouse Forte, which operates ﬁve separate hotel chains each
+targeted at a different segment. However, unless a ﬁrm strictly separates the
+units pursuing different generic strategies, it may compromise the ability of
+any of them to achieve its competitive advantage. A suboptimized approach
+to competing, made likely by the spillover among units of corporate policies
+and culture, will lead to becoming stuck in the middle.
+Achieving cost leadership and differentiation are also usually
+inconsistent, because differentiation is usually costly. To be unique and
+command a price premium, a differentiator deliberately elevates costs, as
+Caterpillar has done in construction equipment. Conversely, cost leadership
+often requires a ﬁrm to forego some differentiation by standardizing its
+product, reducing marketing overhead, and the like.
+Reducing cost does not always involve a sacriﬁce in differentiation.
+Many ﬁrms have discovered ways to reduce cost not only without hurting
+their differentiation but while actually raising it, by using practices that are
+both more efﬁcient and effective or employing a different technology.
+Sometimes dramatic cost savings can be achieved with no impact on
+differentiation at all if a ﬁrm has not concentrated on cost reduction
+previously. However, cost reduction is not the same as achieving a cost
+advantage. When faced with capable competitors also striving for cost
+leadership, a ﬁrm will ultimately reach the point where further cost
+reduction requires a sacriﬁce in differentiation. It is at this point that the
+generic strategies become inconsistent and a ﬁrm must make a choice.
+If a ﬁrm can achieve cost leadership and differentiation simultaneously,
+the rewards are great because the beneﬁts are additive—differentiation leads
+
+
+to premium prices at the same time that cost leadership implies lower costs.
+An example of a ﬁrm that has achieved both a cost advantage and
+differentiation in its segments is Crown Cork and Seal in the metal
+container industry. Crown has targeted the so-called “hard to hold” uses of
+cans in the beer, soft drink, and aerosol industries. It manufactures only
+steel cans rather than both steel and aluminum. In its target segments,
+Crown has differentiated itself based on service, technological assistance,
+and offering a full line of steel cans, crowns, and canning machinery.
+Differentiation of this type would be much more difﬁcult to achieve in other
+industry segments which have different needs. At the same time, Crown has
+dedicated its facilities to producing only the types of cans demanded by
+buyers in its chosen segments and has aggressively invested in modern two-
+piece steel canning technology. As a result, Crown has probably also
+achieved low-cost producer status in its segments.
+There are three conditions under which a ﬁrm can simultaneously
+achieve both cost leadership and differentiation:
+Competitors are stuck in the middle. Where competitors are stuck in the
+middle, none is well enough positioned to force a ﬁrm to the point where
+cost and differentiation become inconsistent. This was the case with Crown
+Cork. Its major competitors were not investing in low-cost steel can
+production technology, so Crown achieved cost leadership without having
+to sacriﬁce differentiation in the process. Were its competitors pursuing an
+aggressive cost leadership strategy, however, an attempt by Crown to be
+both low-cost and differentiated might have doomed it to becoming stuck in
+the middle. Cost reduction opportunities that did not sacriﬁce differentiation
+would have already been adopted by Crown’s competitors.
+While stuck-in-the-middle competitors can allow a ﬁrm to achieve both
+differentiation and low cost, this state of affairs is often temporary.
+Eventually a competitor will choose a generic strategy and begin to
+implement it well, exposing the tradeoffs between cost and differentiation.
+Thus a ﬁrm must choose the type of competitive advantage it intends to
+preserve in the long run. The danger in facing weak competitors is that a
+ﬁrm will begin to compromise its cost position or differentiation to achieve
+both and leave itself vulnerable to the emergence of a capable competitor.
+
+
+Cost is strongly affected by share or interrelationships. Cost leadership
+and differentiation may also be achieved simultaneously where cost position
+is heavily determined by market share, rather than by product design, level
+of technology, service provided, or other factors. If one ﬁrm can open up a
+big market share advantage, the cost advantages of share in some activities
+allow the ﬁrm to incur added costs elsewhere and still maintain net cost
+leadership, or share reduces the cost of differentiating relative to
+competitors (see Chapter 4). In a related situation, cost leadership and
+differentiation can be achieved at the same time when there are important
+interrelationships between industries that one competitor can exploit and
+others cannot (see Chapter 9). Unmatched interrelationships can lower the
+cost of differentiation or offset the higher cost of differentiation.
+Nonetheless, simultaneous pursuit of cost leadership and differentiation is
+always vulnerable to capable competitors who make a choice and invest
+aggressively to implement it, matching the share or interrelationship.
+A ﬁrm pioneers a major innovation. Introducing a signiﬁcant
+technological innovation can allow a ﬁrm to lower cost and enhance
+differentiation at the same time, and perhaps achieve both strategies.
+Introducing new automated manufacturing technologies can have this
+effect, as can the introduction of new information system technology to
+manage logistics or design products on the computer. Innovative new
+practices unconnected to technology can also have this effect. Forging
+cooperative relations with suppliers can lower input costs and improve input
+quality, for example, as described in Chapter 3.
+The ability to be both low cost and differentiated is a function of being
+the only ﬁrm with the new innovation, however. Once competitors also
+introduce the innovation, the ﬁrm is again in the position of having to make
+a tradeoff. Will its information system be designed to emphasize cost or
+differentiation, for example, compared to the competitor’s information
+system? The pioneer may be at a disadvantage if, in the pursuit of both low
+cost and differentiation, its innovation has not recognized the possibility of
+imitation. It may then be neither low cost nor differentiated once the
+innovation is matched by competitors who pick one generic strategy.
+A ﬁrm should always aggressively pursue all cost reduction
+opportunities that do not sacriﬁce differentiation. A ﬁrm should also pursue
+
+
+all differentiation opportunities that are not costly. Beyond this point,
+however, a ﬁrm should be prepared to choose what its ultimate competitive
+advantage will be and resolve the tradeoffs accordingly.
+Sustainability
+A generic strategy does not lead to above-average performance unless it
+is sustainable vis-à-vis competitors, though actions that improve industry
+structure may improve industrywide proﬁtability even if they are imitated.
+The sustainability of the three generic strategies demands that a ﬁrm’s
+competitive advantage resists erosion by competitor behavior or industry
+evolution. Each generic strategy involves different risks which are shown in
+Table 1–1.
+The sustainability of a generic strategy requires that a ﬁrm possess some
+barriers that make imitation of the strategy difﬁcult. Since barriers to
+imitation are never insurmountable, however, it is usually necessary for a
+ﬁrm to offer a moving target to its competitors by investing in order to
+continually improve its position. Each generic strategy is also a potential
+threat to the others—as Table 1–1 shows, for example, focusers must worry
+about broadly-targeted competitors and vice versa. The factors that lead to
+sustainability of each of the generic strategies will be discussed extensively
+in Chapters 3, 4, and 7.
+TABLE 1–1 Risks of the Generic Strategies
+RISKS OF COST
+LEADERSHIP
+RISKS OF DIFFERENTIATION
+RISKS OF FOCUS
+Cost leadership is not sustained
+• competitors imitate
+• technology changes
+• other bases for cost
+leadership erode
+Differentiation is not sustained
+• competitors imitate
+• bases for differentiation
+become less important to
+buyers
+The focus strategy is imitated
+The target segment becomes
+structurally unattractive
+• structure erodes
+• demand disappears
+Proximity in differentiation is
+lost
+Cost proximity is lost
+Broadly-targeted competitors
+overwhelm the segment
+• the segment’s differences
+from other segments narrow
+• the advantages of a broad
+line increase
+
+
+Cost focusers achieve even
+lower cost in segments
+Differentiation focusers achieve
+even greater differentiation in
+segments
+New focusers sub-segment the
+industry
+Table 1–1 can be used to analyze how to attack a competitor that
+employs any of the generic strategies. A ﬁrm pursuing overall
+differentiation, for example, can be attacked by ﬁrms who open up a large
+cost gap, narrow the extent of differentiation, shift the differentiation
+desired by buyers to other dimensions, or focus. Each generic strategy is
+vulnerable to different types of attacks, as discussed in more detail in
+Chapter 15.
+In some industries, industry structure or the strategies of competitors
+eliminate the possibility of achieving one or more of the generic strategies.
+Occasionally no feasible way for one ﬁrm to gain a signiﬁcant cost
+advantage exists, for example, because several ﬁrms are equally placed with
+respect to scale economies, access to raw materials, or other cost drivers.
+Similarly, an industry with few segments or only minor differences among
+segments, such as low-density polyethylene, may offer few opportunities
+for focus. Thus the mix of generic strategies will vary from industry to
+industry.
+In many industries, however, the three generic strategies can proﬁtably
+coexist as long as ﬁrms pursue different ones or select different bases for
+differentiation or focus. Industries in which several strong ﬁrms are
+pursuing differentiation strategies based on different sources of buyer value
+are often particulary proﬁtable. This tends to improve industry structure and
+lead to stable industry competition. If two or more ﬁrms choose to pursue
+the same generic strategy on the same basis, however, the result can be a
+protracted and unproﬁtable battle. The worst situation is where several ﬁrms
+are vying for overall cost leadership. The past and present choice of generic
+strategies by competitors, then, has an impact on the choices available to a
+ﬁrm and the cost of changing its position.
+The concept of generic strategies is based on the premise that there are a
+number of ways in which competitive advantage can be achieved,
+depending on industry structure. If all ﬁrms in an industry followed the
+principles of competitive strategy, each would pick different bases for
+competitive advantage. While not all would succeed, the generic strategies
+
+
+provide alternate routes to superior performance. Some strategic planning
+concepts have been narrowly based on only one route to competitive
+advantage, most notably cost. Such concepts not only fail to explain the
+success of many ﬁrms, but they can also lead all ﬁrms in an industry to
+pursue the same type of competitive advantage in the same way—with
+predictably disastrous results.
+Generic Strategies and Industry Evolution
+Changes in industry structure can affect the bases on which generic
+strategies are built and thus alter the balance among them. For example, the
+advent of electronic controls and new image developing systems has greatly
+eroded the importance of service as a basis for differentiation in copiers.
+Structural change creates many of the risks shown in Table 1–1.10
+Structural change can shift the relative balance among the generic
+strategies in an industry, since it can alter the sustainability of a generic
+strategy or the size of the competitive advantage that results from it. The
+automobile industry provides a good example. Early in its history, leading
+automobile ﬁrms followed differentiation strategies in the production of
+expensive touring cars. Technological and market changes created the
+potential for Henry Ford to change the rules of competition by adopting a
+classic overall cost leadership strategy, based on low-cost production of a
+standard model sold at low prices. Ford rapidly dominated the industry
+worldwide. By the late 1920s, however, economic growth, growing
+familiarity with the automobile, and technological change had created the
+potential for General Motors to change the rules once more—it employed a
+differentiation strategy based on a wide line, features, and premium prices.
+Throughout this evolution, focused competitors also continued to succeed.
+Another long-term battle among generic strategies has occurred in
+general merchandising. K Mart and other discounters entered with cost
+leadership strategies against Sears and conventional department stores,
+featuring low overhead and nationally branded merchandise. K Mart,
+however, now faces competition from more differentiated discounters who
+sell fashion-oriented merchandise, such as Wal-Mart. At the same time,
+focused discounters have entered and are selling such products as sporting
+
+
+goods (Herman’s), health and beauty aids (CVS), and books (Barnes and
+Noble). Catalog showrooms have also focused on appliances and jewelry,
+employing low-cost strategies in those segments. Thus the bases for K
+Mart’s competitive advantage have been compromised and it is having
+difﬁculty outperforming the industry average.
+Another more recent example of the jockeying among generic strategies
+has occurred in vodka. Smirnoff has long been the differentiated producer in
+the industry, based on early positioning as a high-class brand and heavy
+supporting advertising. As growth has slowed and the industry has become
+more competitive, however, private label vodkas and low price brands are
+undermining Smirnoff’s position. At the same time, PepsiCo’s Stolichnaya
+vodka has established an even more differentiated position than Smirnoff
+through focus. Smirnoff is caught in a squeeze that is threatening its long-
+standing superior performance. In response, it has introduced several new
+brands, including a premium brand positioned against Stolichnaya.
+Generic Strategies and Organizational Structure
+Each generic strategy implies different skills and requirements for
+success, which commonly translate into differences in organizational
+structure and culture. Cost leadership usually implies tight control systems,
+overhead minimization, pursuit of scale economies, and dedication to the
+learning curve; these could be counterproductive for a ﬁrm attempting to
+differentiate itself through a constant stream of creative new products.11
+The organizational differences commonly implied by each generic
+strategy carry a number of implications. Just as there are often economic
+inconsistencies in achieving more than one generic strategy, a ﬁrm does not
+want its organizational structure to be suboptimal because it combines
+inconsistent practices. It has become fashionable to tie executive selection
+and motivation to the “mission” of a business unit, usually expressed in
+terms of building, holding, or harvesting market share. It is equally—if not
+more—important to match executive selection and motivation to the generic
+strategy being followed.
+The concept of generic strategies also has implications for the role of
+culture in competitive success. Culture, that difﬁcult to deﬁne set of norms
+
+
+and attitudes that help shape an organization, has come to be viewed as an
+important element of a successful ﬁrm. However, different cultures are
+implied by different generic strategies. Differentiation may be facilitated by
+a culture encouraging innovation, individuality, and risk-taking (Hewlett-
+Packard), while cost leadership may be facilitated by frugality, discipline,
+and attention to detail (Emerson Electric). Culture can powerfully reinforce
+the competitive advantage a generic strategy seeks to achieve, if the culture
+is an appropriate one. There is no such thing as a good or bad culture per se.
+Culture is a means of achieving competitive advantage, not an end in itself.
+The link between generic strategy and organization also has implications
+for the diversiﬁed ﬁrm. There is a tendency for diversiﬁed ﬁrms to pursue
+the same generic strategy in many of their business units, because skills and
+conﬁdence are developed for pursuing a particular approach to competitive
+advantage. Moreover, senior management often gains experience in
+overseeing a particular type of strategy. Emerson Electric is well known for
+its pursuit of cost leadership in many of its business units, for example, as is
+H. J. Heinz.
+Competing with the same generic strategy in many business units is one
+way in which a diversiﬁed ﬁrm can add value to those units, a subject I will
+discuss in Chapter 9 when I examine interrelationships among business
+units. However, employing a common generic strategy entails some risks
+that should be highlighted. One obvious risk is that a diversiﬁed ﬁrm will
+impose a particular generic strategy on a business unit whose industry (or
+initial position) will not support it. Another, more subtle risk is that a
+business unit will be misunderstood because of circumstances in its industry
+that are not consistent with the prevailing generic strategy. Worse yet, such
+business units may have their strategies undermined by senior management.
+Since each generic strategy often implies a different pattern of investments
+and different types of executives and cultures, there is a risk that a business
+unit that is “odd man out” will be forced to live with inappropriate
+corporate policies and targets. For example, an across-the-board cost
+reduction goal or ﬁrmwide personnel policies can be disadvantageous to a
+business unit attempting to differentiate itself on quality and service, just as
+policies toward overhead appropriate for differentiation can undermine a
+business unit attempting to be the low-cost producer.
+
+
+Generic Strategies and the Strategic Planning Process
+Given the pivotal role of competitive advantage in superior performance,
+the centerpiece of a ﬁrm’s strategic plan should be its generic strategy. The
+generic strategy speciﬁes the fundamental approach to competitive
+advantage a ﬁrm is pursuing, and provides the context for the actions to be
+taken in each functional area. In practice, however, many strategic plans are
+lists of action steps without a clear articulation of what competitive
+advantage the ﬁrm has or seeks to achieve and how. Such plans are likely to
+have overlooked the fundamental purpose of competitive strategy in the
+process of going through the mechanics of planning. Similarly, many plans
+are built on projections of future prices and costs that are almost invariably
+wrong, rather than on a fundamental understanding of industry structure and
+competitive advantage that will determine proﬁtability no matter what the
+actual prices and costs turn out to be.
+As part of their strategic planning processes, many diversiﬁed ﬁrms
+categorize business units by using a system such as build, hold, or harvest.
+These categorizations are often used to describe or summarize the strategy
+of business units. While such categorizations may be useful in thinking
+about resource allocation in a diversiﬁed ﬁrm, it is very misleading to
+mistake them for strategies. A business unit’s strategy is the route to
+competitive advantage that will determine its performance. Build, hold, and
+harvest are the results of a generic strategy, or recognition of the inability to
+achieve any generic strategy and hence of the need to harvest. Similarly,
+acquisition and vertical integration are not strategies but means of achieving
+them.
+Another common practice in strategic planning is to use market share to
+describe a business unit’s competitive position. Some ﬁrms go so far as to
+set the goal that all their business units should be leaders (number one or
+number two) in their industries. This approach to strategy is as dangerous as
+it is deceptively clear. While market share is certainly relevant to
+competitive position (due to scale economies, for example), industry
+leadership is not a cause but an effect of competitive advantage. Market
+share per se is not important competitively; competitive advantage is. The
+strategic mandate to business units should be to achieve competitive
+advantage. Pursuit of leadership for its own sake may guarantee that a ﬁrm
+
+
+never achieves a competitive advantage or that it loses the one it has. A goal
+of leadership per se also embroils managers in endless debates over how an
+industry should be deﬁned to calculate shares, obscuring once more the
+search for competitive advantage that is the heart of strategy.
+In some industries, market leaders do not enjoy the best performance
+because industry structure does not reward leadership. A recent example is
+Continental Illinois Bank, which adopted the explicit goal of market
+leadership in wholesale lending. It succeeded in achieving this goal, but
+leadership did not translate into competitive advantage. Instead, the drive
+for leadership led to making loans that other banks would not, and to
+escalating costs. Leadership also meant that Continental Illinois had to deal
+with large corporations that are extremely powerful and price-sensitive
+buyers of loans. Continental Illinois will be paying the price of leadership
+for some years. In many other ﬁrms, such as Burlington Industries in fabrics
+and Texas Instruments in electronics, the pursuit of leadership for its own
+sake seems to have sometimes diverted attention from achieving and
+maintaining competitive advantage.
+Overview of This Book
+Competitive Advantage describes the way a ﬁrm can choose and
+implement a generic strategy to achieve and sustain competitive advantage.
+It addresses the interplay between the types of competitive advantage—cost
+and differentiation—and the scope of a ﬁrm’s activities. The basic tool for
+diagnosing competitive advantage and ﬁnding ways to enhance it is the
+value chain, which divides a ﬁrm into the discrete activities it performs in
+designing, producing, marketing, and distributing its product. The scope of
+a ﬁrm’s activities, which I term competitive scope, can have a powerful role
+in competitive advantage through its inﬂuence on the value chain. I describe
+how narrow scope (focus) can create competitive advantage through
+tailoring the value chain, and how broader scope can enhance competitive
+advantage through the exploitation of interrelationships among the value
+chains that serve different segments, industries or geographic areas. While
+this book addresses competitive advantage, it also sharpens the ability of the

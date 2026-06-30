@@ -1,0 +1,615 @@
+# 4. Disruption: How Platforms Conquer and Transform Traditional Industries
+
+year-old company was valued by investors at $40 billion (up from the $17
+billion valuation of just six months earlier), making it more valuable, at
+least on paper, than such venerable commercial giants as Mitsubishi, Target,
+FedEx, General Dynamics, and Sony.1 Uber, which now operates in more
+than 250 cities around the world, has scaled these heights by providing an
+exceedingly simple yet valuable service to both consumers and producers,
+bringing quick and inexpensive rides to passengers while enabling drivers
+to earn better incomes than most taxi drivers—and without having to shell
+out the enormous sums required for a traditional taxi license. At the height
+of the market, in mid-2013, a New York City taxi medallion was valued at
+over $1.2 million.
+So the Uber platform, simply by providing an online location where
+riders and drivers can come together, has brought benefits to both
+consumers and producers while building vast wealth for its investors. It’s a
+winning proposition for everyone—except for the hundreds of thousands of
+taxi drivers, car-service dispatchers, and limousine company employees
+whose jobs are suddenly in jeopardy. No wonder Barry Korengold,
+president of the cab drivers association in San Francisco (the city where
+Uber was launched back in the summer of 2010) describes the leaders of
+Uber as “robber barons”: “They started off by operating illegally, without
+following any of the regulations and unfairly competing. And that’s how
+they became big—they had enough money to ignore all the rules.” The
+president of one San Francisco cab company predicted that the entire taxi
+industry would collapse before the end of 2015—a forecast echoed by taxi
+executives in cities around the world. As a result, the value of a New York
+City taxi medallion fell by almost $300,000 in one year—with no bottom in
+sight.2
+In chapter 11, we’ll return to the question of whether platform businesses
+like Uber are engaging in unfair competition, or whether traditional
+incumbent companies are simply angry about being outcompeted by digital
+interlopers. But for now, just let’s marvel at how swiftly and seemingly
+effortlessly a platform business is revolutionizing a once-secure industry.
+Even more remarkably, the changes that Uber has already brought are
+probably just the opening salvo in a barrage of further disruptions that may
+ultimately transform the entire transportation sector. Combining the
+platform model with another technology that is rapidly moving from the
+drawing board to the showroom—the self-driving car—will improve Uber’s
+
+
+already stellar economic model and could lead to a series of cascading
+impacts that extend beyond the taxi industry. One futurist foresees a time
+when millions of people will eschew car ownership altogether, instead
+relying on an instantly deployable fleet of driverless Uber vehicles to take
+them wherever they want to go at a cost of around fifty cents per mile. Uber
+cofounder and CEO Travis Kalanick comments, “We want to get to the
+point that using Uber is cheaper than owning a car.” The ultimate promise:
+“Transportation that’s as reliable as running water.”3
+The implications are startling. The major automakers would be
+devastated by the shrinkage of their market. So would ancillary businesses
+such as auto insurance, car finance, and parking. On the other hand, the
+sudden decrease in demand for parking places (since driverless cars can be
+in virtually continual use) will free up tens of millions of square feet of real
+estate for development, liberate lanes on practically every city street, and
+drastically reduce the pollution and congestion caused by drivers cruising
+the streets in search of a parking spot. If this vision for the next phase of
+Uber’s growth comes true, the landscape of America may well be rendered
+unrecognizable.4
+And if all that is not enough, consider this observation by Kalanick: “If
+we can get you a car in five minutes, we can get you anything in five
+minutes.”5 Anything at all? One wonders what limits can be set on Uber’s
+disruptive potential. Kalanick seems not to acknowledge any.
+A CAPSULE HISTORY OF DIGITAL DISRUPTION
+“Software is eating the world.” The slogan was originally used by Netscape
+founder Marc Andreessen in the title of a 2011 op-ed article in the Wall
+Street Journal to encapsulate how technology—particularly the Internet—
+has transformed the world of business.6 The story of Internet-enabled
+disruption as we’ve witnessed it so far has occurred in two main stages.
+In stage one, efficient pipelines ate inefficient pipelines. Most Internet
+applications during the 1990s involved the creation of highly efficient
+pipelines—online systems for distributing goods and services that
+outcompeted incumbent industries. Unlike traditional offline pipelines,
+online pipelines benefited from low marginal costs of distribution—
+
+
+sometimes as low as zero. This allowed them to target and serve large
+markets with much smaller investment.
+Traditional media companies were the first to feel the pinch. Newspapers
+were upended by the Internet’s ability to distribute news to a global
+audience without the traditional distribution costs (printing, shipping,
+retailing, delivery). An efficient pipeline had eaten an inefficient one. The
+unbundling of classifieds and other forms of advertising from editorial
+content then stripped the newspaper model of a crucial monetization
+mechanism, as the more efficient online method for delivering targeted
+advertising outcompeted the traditional ink-on-paper method. Again, an
+efficient pipeline ate an inefficient one.
+Retail and mail order shopping soon felt the pain. Amazon’s success in
+the book industry led to the fall of Borders and other bookstores.
+Blockbuster’s bricks-and-mortar system for distributing DVDs failed to
+compete with Netflix’s distribution economics, based initially on the online
+selection of DVDs that were delivered by mail, and later on streaming
+video. Music company revenues plummeted as sales of CDs collapsed,
+replaced by faster and cheaper file downloads, many of them pirated or
+shared illegally. Over time, many of the Internet distributors found ways to
+leverage granular data about consumer choice so as to serve their customers
+better than the traditional pipelines ever did.
+Business revolutions such as these embodied Andreessen’s vision of
+“software eating the world.” Today, having attained the status of a cliché,
+his vision needs an update: “Platforms are eating the world.” We’ve entered
+stage two of the disruption saga, in which platforms eat pipelines.
+HOW PLATFORMS EAT PIPELINES
+The evidence for this new stage of disruption is all around us. As we’ve
+seen, taxi companies—and regulators—have realized that Uber is on the
+march to global domination of local transportation. Once ridiculed by the
+hotel industry, Airbnb has rapidly scaled to become a global provider of
+accommodation, with more rooms booked every night than the largest
+global hotel chains. Upwork is gradually evolving from a marketplace for
+talent into an infrastructure that allows entire organizations to be built in the
+cloud, connecting freelance workers from remote locations without the need
+
+
+for a physical workspace and the costs associated with it. Amazon continues
+to expand its impact on traditional book publishing while making inroads
+into dozens of other retailing arenas. And while traditional pipeline giants
+Nokia and Blackberry have lost 90 percent of their market value in the last
+decade, platform giants Apple and Google have dominated the stock
+market.
+How and why is this happening? Let’s break it down.
+In the world of platforms, the Internet no longer acts merely as a
+distribution channel (a pipeline). It also acts as a creation infrastructure and
+a coordination mechanism. Platforms are leveraging this new capability to
+create entirely new business models. In addition, the physical and the digital
+are rapidly converging, enabling the Internet to connect and coordinate
+objects in the real world—for example, through smartphone apps that allow
+you to control your home appliances at long distance. Simultaneously,
+organizational boundaries are being redefined as platform companies
+leverage external ecosystems to create value in new ways.7
+In this new stage of disruption, platforms enjoy two significant economic
+advantages over pipelines.
+One of these advantages is superior marginal economics of production
+and distribution. As we’ve noted, when hotel chains like Hilton and
+Sheraton want to expand, they build new rooms and employ thousands of
+staff. By contrast, Airbnb expands with near-zero marginal costs, since its
+cost for adding an additional room to its network listings is minimal.
+A platform’s ability to scale rapidly is further enhanced by network
+effects. When positive network effects kick in, higher production leads to
+higher consumption, and vice versa. More freelancers participating on
+Upwork make it more attractive to companies looking to hire, which in turn
+attracts more freelancers; a wider array of merchants on Etsy attracts more
+customers, who in turn attract more merchants. A virtuous feedback loop is
+set in motion, fueling the growth of the platform at minimal cost.
+Leveraging network effects, platforms are able to build open electronic
+ecosystems embracing hundreds, thousands, or millions of remote
+participants. Such ecosystems can be larger than most pipeline-based
+organizations and can have access to more resources than a traditional
+pipeline company can command. As a result, the value created in such an
+ecosystem can be much larger than the value created in a comparable
+traditional organization. Therefore, firms that continue to compete on the
+
+
+basis of resources that are owned internally are increasingly finding it
+difficult to compete with platforms.
+THE IMPACTS OF PLATFORM DISRUPTION ON VALUE
+CREATION, VALUE CONSUMPTION, AND QUALITY
+CONTROL
+Platforms, then, have economic advantages that enable them to grow faster
+than similar pipeline businesses. This phenomenon alone would lead to
+significant disruption of traditional industries, as platform businesses
+displace pipeline businesses at the top of the Fortune 500 rankings. But the
+era of platforms-eat-pipelines is disrupting businesses in many other ways
+as well. In particular, the rise of the world of platforms is reconfiguring the
+familiar business processes of value creation, value consumption, and
+quality control.8
+Reconfiguring value creation to tap new sources of supply. As self-
+serve systems, platforms grow and conquer markets when they minimize
+the barriers to usage for their users. In particular, every time a platform
+removes a hurdle that makes the participation of producers more difficult,
+value creation is reconfigured and new sources of supply are opened up.
+Wikipedia became one of the first platforms to tap a new source of
+supply when it created a system that enabled volunteers to capture and
+organize the world’s knowledge. Soon, YouTube was empowering any
+teenager with a video camera or a smartphone to compete with movie
+studios and television networks.
+Today, we see the phenomenon of reconfigured value creation at work in
+many kinds of platform business. Singapore-based video-
+streaming platform Viki leveraged a global community of enthusiasts
+(rather than hiring employees) to add subtitles to Korean and Japanese
+dramas, which it then marketed in the U.S. After the resulting rapid burst of
+growth, Viki was sold to the Japanese company Rakuten for $200 million.
+Facebook used a similar approach to find translators for its website instead
+of relying on professionals.
+
+
+To fuel the continued explosion of new sources of supply, platform
+businesses are steadily lowering barriers that might discourage producers.
+Twitter attracted millions of content creators with its new standard literary
+format—the message of 140 characters or fewer. By comparison with
+traditional blogging, which required more effort and time, the tweet is a
+quick and easy form of writing, which encouraged many more users to
+become content producers.
+In similar fashion, Airbnb works to lower the hurdles for its member-
+hosts by regularly conducting events and programs designed to illustrate
+and teach its best practices. Uber works to remove economic barriers that
+might discourage would-be drivers by providing financial incentives like
+sign-up bonuses. Platforms like Dribbble, Threadless, and 99designs have
+built large ecosystems of designers, largely owing to the democratization of
+the tools of design and printing over the last several years—yet another case
+of barriers to entry being lowered, in part through the help of platform tools.
+The proliferation of new production technologies further enables the
+emergence of new groups of producers. Just as the smartphone camera
+expanded the volume of content on platforms like Instagram and Vine, the
+spread of 3D printing is likely to lead to a new range of platforms for
+industry design. However, technology often needs the support of innovative
+business design to produce massive reconfiguration of value creation.
+Software for word processing, typography, and graphic design has existed
+for decades, but not until Amazon’s Kindle Publishing platform offered
+quick and easy access to a large readership did a whole new ecosystem of
+authors emerge.
+Reconfiguring value consumption by enabling new forms of
+consumer behavior. The advent of the world of platforms is also disrupting
+traditional consumer behavior, inspiring millions of people to use products
+and services in ways that would have been unimaginable a few years ago.
+As journalist Jason Tanz puts it:
+We are hopping into strangers’ cars (Lyft, Sidecar, Uber), welcoming them into our spare rooms
+(Airbnb), dropping our dogs off at their houses (DogVacay, Rover), and eating food in their dining
+rooms (Feastly). We are letting them rent our cars (RelayRides, Getaround), our boats
+(Boatbound), our houses (HomeAway), and our power tools (Zilok). We are entrusting complete
+strangers with our most valuable possessions, our personal experiences—and our very lives. In the
+process, we are entering a new era of Internet-enabled intimacy.9
+
+
+Not so long ago, activities like these would have been viewed as weird,
+if not downright dangerous. Today, they are familiar to millions, thanks to
+the trust-building mechanisms established by platform businesses. A host of
+upstart platforms that bill themselves as “the Uber of X” are working to
+alter consumer behavior in other arenas.10
+Reconfiguring quality control through community-driven curation.
+When new platforms such as YouTube, Airbnb, and Wikipedia are
+launched, they are often widely criticized, even ridiculed. This is because,
+in their early stages, they fail to offer the quality and reliability provided by
+their traditional competitors. YouTube’s early content often bordered on
+pornography; much of it was pirated. Apartments listed on Airbnb would
+get raided by city inspectors responding to complaints about orgies.
+Wikipedia biographies declared many a living person deceased.
+This is the problem with abundance. When platforms start unlocking
+new sources of supply, quality often nosedives—an example of the negative
+network effects we discussed in chapter 2.
+These early days in the life of a platform can be difficult. However, over
+time, as the curation mechanism starts to work, the platform improves its
+ability to match consumers with relevant and high-quality content, goods,
+and services from producers. Strong curation encourages desirable behavior
+while discouraging and eventually weeding out undesirable behavior. As the
+platform nurtures quality, it develops the reliability needed to attract a wide
+array of customers. Mainstream competitors, often quite suddenly, find
+themselves competing with an unfamiliar upstart—one that is poised to
+grow much faster than they can.
+Once platforms start scaling, they need to ensure that the curation
+mechanism doesn’t break down. Platforms that successfully scale their
+curation efforts gather better data on their users and improve their matching
+algorithms over time. They also ensure that manual curation is gradually
+phased out in favor of automated curation mechanisms based on socially
+driven feedback loops. For example, Quora, the question-and-answer
+platform, started out with in-house editors curating its content. Once a
+critical mass of users started participating, curation was largely turned over
+to algorithms driven by community judgments.
+The rise of the world of platforms, then, doesn’t simply mean the
+emergence of new business entities competing with traditional incumbent
+
+
+firms. It also means the appearance of new forms of business activity, as
+these changes in the modes of value creation, value consumption, and
+quality control suggest.
+STRUCTURAL IMPACTS OF
+PLATFORM DISRUPTION
+The rise of platform businesses is transforming the structure of the business
+landscape in three specific ways that have largely gone unnoticed. We
+describe these three forms of platform-driven disruptions as de-linking
+assets from value, re-intermediation, and market aggregation.
+De-linking assets from value. The most familiar platform examples—
+Airbnb, Uber, Amazon—come from the business-to-consumer (B2C) arena.
+How do you convert a product to a platform in the business-to-
+business (B2B) arena? Many corporations own massive fixed assets like
+power generation plants, magnetic resonance imaging (MRI) machines, or
+tracts of farmland. How do you build platforms around those?
+The answer: you de-link ownership of the physical asset from the value
+it creates. This allows the use of the asset to be independently traded and
+applied to its best use—that is, the use that creates the greatest economic
+value—rather than being restricted to uses specific to the owner. As a result,
+efficiency and value rise dramatically.
+Two of this book’s authors (Geoff Parker and Marshall Van Alstyne)
+used this approach in response to a request from the state of New York to
+help in designing a smart market to integrate the state’s increasing number
+of distributed energy resources. These include solar rooftops, battery
+storage, and household generators, as well as the virtual storage that arises
+from a building’s thermal inertia. Buildings can be preheated or cooled or
+can delay heating and cooling within a couple of degrees without affecting
+occupants’ comfort. Together, these systems constitute resources that can be
+used to help the state’s electric power system accommodate the swings in
+demand and supply that are part the natural daily and seasonal cycle—but
+only if there is a system in place to handle the coordination. Currently, price
+signals arise from the system-wide wholesale market and are aggregated,
+thereby obscuring the clearer signals that localized data would provide.
+
+
+To solve this problem, we recommended a platform that separates the
+physical assets from the value they create—that is, the energy produced.
+Such a platform would allow small sellers to meet the demand by the larger
+buyers of power, who then deliver it to end consumers. To obviate the need
+for users of the platform to constantly check market prices, the system
+should create automated signals so that sellers’ machines can be
+programmed to respond automatically to local relevant price and demand
+information distributed through the platform. 
+If the New York system is implemented, significant savings would be
+realized, since investments in new transmission, distribution, and generation
+capacity could be delayed or avoided entirely. In addition, the system, being
+highly flexible and responsive, could accommodate further deployments of
+renewable energy better than the current system can, as it relies on large
+power plants to respond to variability in supply and demand.
+De-linking assets from value also allows expensive health care
+equipment such as MRI machines (each costing $3–5 million) to be used
+more efficiently. A single hospital may use just 40 to 50 percent of its own
+MRI capacity. Solution: time-slice the usage, and create a market for slices
+among other hospitals and small clinics that cannot afford their own
+machines. Separating the asset from the value it creates can drive the
+utilization rate to 70 or even 90 percent, producing incremental revenue for
+the machine’s owner.
+It’s just one further step to turn a local market into a statewide or
+regional one. In fact, as of mid-2015, a Boston firm called Cohealo is taking
+that step, with the goal of becoming the Airbnb of expensive hospital
+equipment.
+This concept of de-linking assets from value helped  rescue Australian
+farmers from a drought more severe than that faced by California in 2015.
+Like California, Australia suffered from a patchwork system of water rights
+that limits the use of water to whatever an individual owner has in mind.
+The system was reformed beginning in 2003 by separating land ownership
+from water rights. With the help of a private company called Waterfind,
+Australia created a platform for water trading that greatly increased the
+economic efficiency of water use. A farmer with a low-value crop might
+stop farming and sell his water to a farmer with a high-value crop, or to a
+municipal water authority within transport distance. As a result, when
+Australia was hit by drought starting in 2006, its farmers suffered far less
+
+
+than those in California have. Now Waterfind is setting up a subsidiary
+based in Sacramento, hoping to apply the same platform-based solution to
+American agriculture.11
+Re-intermediation. During the first stage of Internet-driven disruption,
+many business commentators predicted that the biggest impact of the new
+information and communication technologies would be widespread
+disintermediation—the elimination of middlemen, or intermediate layers,
+from industries, establishing direct connections between producers and
+consumers. Experts pointed to the decline of traditional businesses like
+travel agents and insurance brokers, as consumers learned to shop for
+airline tickets and insurance policies without intermediaries. The same
+process of disintermediation was expected to sweep many other industries
+over time.
+The reality has proven to be somewhat different. Across numerous
+industries, platforms have repeatedly re-intermediated markets, introducing
+new kinds of middlemen rather than simply eliminating layers of market
+participants. Typically re-intermediation involves replacing non-scalable
+and inefficient agent intermediaries with online, often automated tools and
+systems that offer valuable new goods and services to participants on both
+sides of the platform.
+Networked platforms serve as more efficient intermediaries owing to
+their ability to use market-mediating mechanisms that scale. While
+traditional intermediaries relied on manual efforts, platform intermediaries
+rely on algorithms and social feedback, both of which scale quickly and
+efficiently. Moreover, their ability to gather data over time and use it to
+make the system more intelligent allows platforms to scale their
+intermediation in the market in a manner that was impossible for traditional
+middlemen.
+Intermediation by platform businesses is transforming industries,
+creating new venues where market participants are connected with greater
+power and efficiency than ever before. In the music industry, artist and
+repertoire (A & R) executives, who traditionally associated themselves with
+a large record label in order to attract talent, now operate as independent
+professionals, scouting for talent on platforms such as YouTube and
+SoundCloud. Literary agents search for new authors on content platforms
+such as Quora and Medium. Small businesses run advertising campaigns
+
+
+without using traditional ad agencies or media channels by relying on
+Google’s AdWords platform. This, in turn, has led to the rise of an entire
+new range of intermediary agencies in Asia that manage AdWords
+campaigns for a fraction of the traditional price. Thus, while platforms
+displace large and inefficient intermediaries, they empower small and
+nimble service providers who leverage the platform to provide services to
+end users.
+In another form of re-intermediation, platforms create a new layer of
+reputational information by leveraging social feedback about producers.
+Platforms like Yelp, Angie’s List, and TripAdvisor have created an entirely
+new industry based on certifying the quality of product and service
+providers—in the process driving some traditional industry certifiers (such
+as travel guide and consumer magazine publishers) out of business.
+The re-intermediation produced by platforms is also changing the
+economics of participation for producers and consumers, leading to both
+new winners and new losers. In the traditional book business, publishers
+absorb (and spend) the bulk of book revenues, generally paying author
+royalties that range between 10 and 15 percent. By contrast, authors on
+Amazon’s self-publishing platform generally retain 70 percent of the
+revenues. Of course, Amazon authors must also defray many of the costs
+that a traditional publisher would cover, such as editing, design, publicity,
+and marketing—which makes the designation of “winners” and “losers” in
+this instance more complicated.
+A similar economic shift in favor of app developers was set into motion
+with the emergence of the app ecosystem of the iPhone and Android. These
+new economics for participants are possible because of the superior
+marginal economics enjoyed by platforms.12
+Market aggregation. Platforms are also creating new efficiencies by
+aggregating unorganized markets. Market aggregation is the process
+whereby platforms provide centralized markets to serve widely dispersed
+individuals and organizations. Market aggregation provides information and
+power to platform users who formerly engaged in interactions in a
+haphazard fashion, often without access to reliable or up-to-date market
+data.
+Consider, for example, bus transportation in India. Different bus fleets
+operate on interstate, intrastate, and other routes. Many different types of
+
+
+bus exist, and pricing is extremely variable. Because the industry is so
+fragmented and unorganized, consumer search costs and decision overhead
+are high.13 Now a platform business called redBus is aggregating
+information from all Indian bus operators in a central plug-and-play
+infrastructure. The result is quicker, easier, and cheaper decision-making for
+consumers, and, in the long run, a healthier transportation market for India.
+Many successful platforms perform a similar market aggregation
+function. Amazon Marketplace, Alibaba, and Etsy provide online sites
+where vendors of thousands of kinds of products from around the world can
+offer their wares to consumers. Service platforms like Upwork bring
+thousands of skilled professionals under a single roof, making it easy for
+potential employers to evaluate, compare, and hire them.
+THE INCUMBENTS FIGHT BACK: PIPELINES
+BECOMING PLATFORMS
+Platform businesses, then, are disrupting the traditional business landscape
+in a number of ways—not only by displacing some of the world’s biggest
+incumbent firms, but also by transforming familiar business processes like
+value creation and consumer behavior as well as altering the structure of
+major industries.
+What can incumbents do to respond? Are entrenched companies that
+operate familiar pipeline businesses doomed to capitulate as platforms
+reshape and ultimately take over their industries?
+Not necessarily. But if incumbents hope to fight the forces of platform
+disruption, they’ll need to reevaluate their existing business models. For
+example, they’ll need to scrutinize all their transaction costs—that is, the
+money they spend on processes such as marketing, sales, product delivery,
+and customer service—and imagine how those costs might be reduced or
+eliminated in a more seamlessly connected world. They’ll also need to
+examine the entire universe of individuals and organizations they currently
+interact with and envision new ways of networking them so as to create new
+forms of value.14 They’ll need to ask questions such as:
+•    Which processes that we currently manage in-house can be delegated to outside partners,
+whether suppliers or customers?
+
+
+•    How can we empower outside partners to create products and services that will generate new
+forms of value for our existing customers?
+•    Are there ways we can network with current competitors to produce valuable new services for
+customers?
+•    How can the value of the goods and services we currently provide be enhanced through new
+data streams, interpersonal connections, and curation tools?
+Nike has proven to be one of the most intelligent incumbent companies
+seeking new ways to survive and thrive in the world of platforms. Some of
+the competitive steps they’ve taken may seem obvious. They aren’t.
+Pipeline businesses like Nike have traditionally scaled in one of two
+ways. Some expand by owning and integrating a greater length of the value-
+creation-and-delivery pipeline—for example, by buying upstream suppliers
+or downstream distributors. This is referred to as vertical integration.
+Others expand by widening the pipeline to push more value through it. This
+is horizontal integration. When consumer goods companies grow by
+creating new products and brands, it’s an example of horizontal integration.
+In January 2012, Nike brought out a wearable technology device, the
+FuelBand, to track user fitness activities, including steps walked and
+calories burned. Like many other companies, Nike has also been developing
+apps—in this case, apps related to sports and fitness. On the surface, these
+might seem like traditional product-line extensions aiming at horizontal
+integration. But in reality, Nike is testing an approach that, if successful,
+will lead to a new form of growth—one pioneered by platform businesses
+like Apple.
+Over the last decade, Apple has grown in part by connecting its products
+and services to one another in the cloud. The ability to sync contents and
+data over iTunes and iCloud makes the ownership of multiple Apple
+products particularly valuable, and much more useful than (say) the
+ownership of multiple products from Sony, Toshiba, or another electronics
+manufacturer. Data acts as an integration glue to make all these products
+and services perform in concert.
+This leads to a new form of growth. When multiple products and
+services connect and interact using data, pipelines can start behaving like
+platforms, producing new forms of value and encouraging users to engage
+in more interactions.
+Like a suite of Apple products, Nike’s FuelBand-connected shoes and
+mobile apps are not simply separate products and services connected by a
+
+
+brand name. Instead, they constantly interact, providing users with
+information and advice about their athletic performance, their fitness
+regime, and their health goals. Unlike a traditional sporting goods company,
+Nike is building an ecosystem of users using the data it captures about
+them. Over time, it can leverage this data to create more relevant
+experiences for its users and connect them with one another to enable
+valuable interactions.
+Nike is not the only company taking the first steps in transforming its
+traditional pipeline business into a platform business. Under Armour, a rival
+of Nike in the sports and casual wear market, has been moving quickly to
+build its own fitness ecosystem. In November 2013, it purchased
+MapMyFitness, a leading workout and exercise tracking platform. Then, in
+February 2015, it followed up by buying two more fitness platforms—
+MyFitnessPal, which focuses on nutrition, and Endomondo, a “trainer in
+your pocket” that mainly serves consumers in Europe. The total purchase
+price for the three companies: a hefty $710 million. “What’s really
+astounding,” one analyst commented, “is that none of the companies
+acquired make actual devices. Instead, everything is about platform and
+data. And—more importantly—users.” In combination, the three
+acquisitions boast 130 million platform users.15 Like Nike, Under Armour
+sees that the future of its industry is platform-based, and it is determined to
+be a disruptor.
+Similar competitive moves are occurring in other sectors. Industrial
+giants including GE, Siemens, and Haier are connecting their machines to
+the nascent Internet of things.16 These networked machines constantly
+stream data into a central platform that enables them to interact with and
+learn from one another.17 Access to data from this network of devices helps
+each machine better utilize its resources and provide more reliable service.
+Can any product or service become the basis of a platform business?
+Here’s the test: if the firm can use either information or community to add
+value to what it sells, then there is potential for creating a viable platform.
+This creates huge opportunities for a lot of firms.
+Consider McCormick Foods, a 126-year-old company that sells herbs,
+spices, and condiments. By 2010, the company’s traditional growth
+strategies had run their course. McCormick had already expanded into a full
+range of food seasonings and established a foothold up and down its supply
+chain, including operations in farming and food preparation. The company
+
+
+was running out of growth options. CIO Jerry Wolfe heard about Nike’s
+move into platform-building. Could McCormick do the same?
+Wolfe reached out to Barry Wacksman, a partner at R/GA, a leading
+New York design firm that had helped Nike design its platform. Together,
+they hit on the idea of using recipes and taste profiles to build a food-based
+platform. Wolfe and Wacksman used McCormick’s taste laboratories to
+distill three dozen flavor archetypes—such as minty, citrus, floral, garlicky,
+meaty—that can be used to describe almost any recipe. Based on personal
+preferences, the system can predict new recipes an individual is likely to
+savor. Members of the McCormick platform community can modify recipes
+and upload the new versions, creating ever-expanding flavor options and
+helping to identify new food trends, generating information that’s useful not
+only to the platform’s users but also to managers of grocery stores, food
+manufacturers, and restaurateurs.18
+As these examples demonstrate, the ability to leverage platforms is no
+longer restricted to the Internet upstarts of Silicon Valley. Nor is the
+incumbent’s response to the forces of disruption restricted to merely
+attempting to fight back against the rising tide of platform power—or
+trying, usually in vain, to hurriedly build a copycat platform after their
+industry has been colonized.
+The leaders of incumbent companies who understand the new business
+model can begin building tomorrow’s platforms in a way that not only
+leverages their existing assets but strengthens and reinforces them.
+So platforms are eating the world. The disruption they are driving is
+reaching businesses one industry at a time and is likely to hit practically all
+information-intensive industries at some point. We’ve already seen it play
+out in the media and telecom industries. Retail, city transportation, and
+hospitality are currently under assault. We expect banking, education, and
+health care to start feeling the heat soon. These industries are highly
+information-intensive but have so far resisted platform-driven disruption
+thanks largely to protective regulatory regimes and the consumer
+conservatism driven by greater risk sensitivity. When YouTube shows a user
+a tasteless or pirated video, the damage is less serious than when a poorly
+curated platform connects a borrower to a loan shark, an education platform
+
+
+offers a college student inaccurate math or science information, or a
+medical platform matches a patient with an incompetent physician.
+Nonetheless, Lending Club, Udemy, and Jawbone are chipping away at
+these markets and making early inroads.
+In the end, of course, bringing platform disruption to these and other
+industries is not primarily a technological challenge. The innovators who
+hope to create the great new platforms of the future need to focus on the
+core interactions in the marketplaces they hope to conquer, and analyze the
+barriers that limit them. Overcoming those barriers will enable the building
+of platform-based ecosystems in those markets. We’ll explore this topic in
+greater detail in the final chapter of this book, where we’ll share our vision
+of the future of the world of platforms.
+TAKEAWAYS FROM CHAPTER FOUR
+    Platforms are able to outcompete pipelines because of their superior marginal economics
+and because of the value produced by positive network effects. As a result, platforms are
+growing faster than pipelines and taking leading positions in industries once dominated by
+pipelines.
+    The rise of platforms is also disrupting business in other ways. It is reconfiguring value
+creation to tap new sources of supply; reconfiguring value consumption by enabling new
+forms of consumer behavior; and reconfiguring quality control through community-driven
+curation.
+    The rise of platforms is also causing structural changes in many industries—specifically,
+through the phenomena of re-intermediation, separation of ownership and control, and
+market aggregation.
+    Incumbent companies can fight back against platform-driven disruption by studying their
+own industries through a platform lens and beginning to build their own value-
+creating ecosystems, as Nike and GE are doing.
+OceanofPDF.com
+
+
+5
+LAUNCH
+Chicken or Egg? Eight Ways
+to Launch a Successful Platform
+The fall of 1998 was a heady time in the world of business. Fueled by the
+astonishing growth of the Internet, technology-based businesses were being
+launched by the hundreds, and many were enjoying acclaim and soaring
+valuations out of all proportion to their actual revenues (often minimal) and
+profits (often nonexistent). Inspired by the early experiences of companies
+like AOL and Amazon, high-tech entrepreneurs and their cheerleaders in the
+media decided that the key to long-term success was growth at all costs—
+and many of them burned through millions of dollars in pursuit of that
+growth. Countless ambitious nerds in their twenties and early thirties were
+amassing giant fortunes—on paper, at least.
+In this tumultuous atmosphere, a pair of young entrepreneurs entered the
+exploding Internet arena. Thirty-one-year-old Peter Thiel was born in
+Germany and raised in California, where he became one of the country’s
+highest-ranked young chess players and went on to study philosophy and
+law at Stanford University. An avowed libertarian, Thiel helped found the
+Stanford Review, a conservative newspaper that challenged the university’s
+dominant liberal culture.
+Max Levchin, twenty-three years old, was born in Ukraine and granted
+political asylum when he moved to the U.S. with his family. Levchin grew
+up in Chicago and studied computer science at the University of Illinois at
+Champaign–Urbana, where he developed a passion for cryptography—the
+science of making and breaking codes. By 1998, he was ready to apply his

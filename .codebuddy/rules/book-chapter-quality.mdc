@@ -1,0 +1,12 @@
+---
+description: 书籍章节内容质量红线 — 任何对 case-library 书籍章节内容的增改必须走 book-chapter-quality skill
+globs: packages/case-library/resources/**
+alwaysApply: false
+---
+# 书籍章节质量红线
+
+涉及 `packages/case-library/resources/<book>/` 下 **章节内容**（`chapters/<slug>.{en,zh}.md`、`checklists/<slug>.json`、`audit-report.md`）的创建、扩写、重写或审查，**必须**走 `book-chapter-quality` skill（`.claude/skills/book-chapter-quality/SKILL.md`），按"清单 → 写作 → 审计"三角色互斥流水线执行。
+
+- 单一真相源：质量规范见该 skill 的 `references/quality-spec.md`（v3）。
+- 完成门槛：`audit-report.md` 全部章节逐项 PASS（EN+ZH），且 orphan/thickness/bilingual 脚本报告 clean，否则不算完成。
+- 禁止：以字数充数、臆造源材料没有的概念、引用 `manifest.json` 中不存在的 slug、EN/ZH 覆盖不同内容。

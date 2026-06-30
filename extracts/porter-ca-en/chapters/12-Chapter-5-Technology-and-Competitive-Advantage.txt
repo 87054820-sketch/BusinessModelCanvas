@@ -1,0 +1,1394 @@
+# Chapter 5: Technology and Competitive Advantage
+
+Technology, however, pervades a ﬁrm’s value chain and extends beyond
+those technologies associated directly with the product. There is, in fact, no
+such thing as a low technology industry if one takes this broader view.
+Viewing any industry as technologically mature often leads to strategic
+disaster. Moreover, many important innovations for competitive advantage
+are mundane and involve no scientiﬁc breakthroughs. Innovation can have
+important strategic implications for low tech as well as hi tech companies.
+This chapter will describe some of the important links between
+technological change and competitive advantage as well as industry
+structure. It focuses not on particular technologies or on how to manage
+research and development, but on ways to recognize and exploit the
+competitive signiﬁcance of technological change. I present a rather broad
+view of technology in this chapter because all the technologies embodied in
+a ﬁrm’s value chain have potential competitive impacts.
+The chapter begins by describing the linkage between technology and
+competition. I examine the relationship of technology to competitive
+advantage, growing out of technology’s role in the value chain and the
+resulting ability of a ﬁrm to achieve low cost and/or differentiation through
+its value activities. I then show how technology can shape industry
+structure. With this framework established, the chapter examines methods
+for selecting a technology strategy. Technology strategy must include
+choices about what important technologies to invest in, whether to seek
+technological leadership in them, and when and how to license technology.
+The chapter then describes how a ﬁrm can forecast the path of technological
+change as an industry evolves, crucial to the selection of technology
+strategy. Finally, the steps in formulating technology strategy are
+summarized.
+Technology and Competition
+Any ﬁrm involves a large number of technologies. Everything a ﬁrm
+does involves technology of some sort, despite the fact that one or more
+technologies may appear to dominate the product or the production process.
+The signiﬁcance of a technology for competition is not a function of its
+scientiﬁc merit or its prominence in the physical product. Any of the
+
+
+technologies involved in a ﬁrm can have a signiﬁcant impact on
+competition. A technology is important for competition if it signiﬁcantly
+affects a ﬁrm’s competitive advantage or industry structure.
+Technology and the Value Chain
+The basic tool for understanding the role of technology in competitive
+advantage is the value chain. A ﬁrm, as a collection of activities, is a
+collection of technologies. Technology is embodied in every value activity
+in a ﬁrm, and technological change can affect competition through its
+impact on virtually any activity. Figure 5–1 illustrates the range of
+technologies typically represented in a ﬁrm’s value chain.
+Every value activity uses some technology to combine purchased inputs
+and human resources to produce some output. This technology may be as
+mundane as a simple set of procedures for personnel, and typically involves
+several scientiﬁc disciplines or subtechnologies. The materials handling
+technology used in logistics, for example, may involve such disciplines as
+industrial engineering, electronics, and materials technology. The
+technology of a value activity represents one combination of these
+subtechnologies. Technologies are also embodied in the purchased inputs
+used in each value activity, both in consumable inputs and in capital items.
+The technology inherent in purchased inputs interacts with the other
+subtechnologies to yield the level of performance of the activity.
+Technology is embodied not only in primary activities but in support
+activities as well. Computer-aided design is an example of a technology just
+coming into use in product development that is replacing traditional ways of
+developing new products. Various types of technologies also underlie the
+performance of other support activities, including those not typically
+viewed as technologically based. Procurement embodies procedures as well
+as technologies for placing orders and interacting with suppliers. Recent
+developments in information systems technology offer the possibility of
+revolutionizing procurement by changing ordering procedures and
+facilitating the achievement of supplier linkages. Human resource
+management draws on motivation research and technologies for training.
+
+
+Firm infrastructure involves a wide range of technologies ranging from
+ofﬁce equipment to legal research and strategic planning.
+
+
+Figure 5–1. Representative Technologies in a Firm’s Value Chain
+
+
+Information systems technology is particularly pervasive in the value
+chain, since every value activity creates and uses information. This is
+evident from Figure 5–1, which shows information systems technology in
+every generic category of value activity in the chain. Information systems
+are used in scheduling, controlling, optimizing, measuring, and otherwise
+accomplishing activities. Inbound logistics, for example, uses some kind of
+information system to control material handling, schedule deliveries, and
+manage raw material inventory. Similarly, an information system is involved
+in order processing, managing suppliers, and scheduling the service force.
+Information systems technology also has an important role in linkages
+among activities of all types, because the coordination and optimization of
+linkages (Chapter 2) requires information ﬂow among activities. The recent,
+rapid technological change in information systems is having a profound
+impact on competition and competitive advantages because of the pervasive
+role of information in the value chain.
+Another pervasive technology in the value chain is ofﬁce or
+administrative technology, because clerical and other ofﬁce functions must
+be performed as part of many value activities. While ofﬁce technology can
+be subsumed under information systems technology, I have separated it
+because of the propensity to overlook it. Change in the way ofﬁce functions
+can be performed is one of the most important types of technological trends
+occurring today for many ﬁrms, though few are devoting substantial
+resources to it.
+The technologies in different value activities can be related, and this
+underlies a major source of linkages within the value chain. Product
+technology is linked to the technology for servicing a product, for example,
+while component technologies are related to overall product technology.
+Thus a technology choice in one part of the value chain can have
+implications for other parts of the chain. In extreme cases, changing
+technology in one activity can require a major reconﬁguration of the value
+chain. Moving to ceramic engine parts, for example, eliminates the need for
+machining and other manufacturing steps in addition to having other
+impacts on the value chain. Linkages with suppliers and channels also
+frequently involve interdependence in the technologies used to perform
+activities.
+
+
+A good example of the interdependence of technology in value activities
+is American Airline’s Sabre reservations system. American leases terminals
+to travel agents, which allows automated reservations and ticketing. The
+system has been a source of differentiation for American. At the same time,
+however, the same system is used inside American in ticketing and issuing
+boarding passes as well as in route scheduling. American also sells listings
+on the system to other airlines.
+A ﬁrm’s technologies are also clearly interdependent with its buyers’
+technologies. The points of contact between a ﬁrm’s value chain and its
+buyer’s chain, discussed in the previous chapter, deﬁne the areas of
+potential interdependency of technology. A ﬁrm’s product technology
+inﬂuences the product and process technology of the buyer and vice versa,
+for example, while a ﬁrm’s order processing technology inﬂuences and is
+inﬂuenced by the buyer’s procurement methods.
+Technology, then, is pervasive in a ﬁrm and depends in part on both the
+buyers’ channels and suppliers’ technology. As a result, the development of
+technology encompasses areas well outside the boundaries traditionally
+established for R&D, and inherently involves suppliers and buyers.1 Some
+of the technologies embodied in the value chain are industry-speciﬁc, to
+varying degrees, but many are not. Ofﬁce automation and transportation are
+just two areas where vital technologies, in large part, are not industry-
+speciﬁc. Hence technology development relevant to a ﬁrm often takes place
+in other industries. All these characteristics of technology have implications
+for the role of technology in competitive advantage.
+Technology and Competitive Advantage
+Technology affects competitive advantage if it has a signiﬁcant role in
+determining relative cost position or differentiation. Since technology is
+embodied in every value activity and is involved in achieving linkages
+among activities, it can have a powerful effect on both cost and
+differentiation. Technology will affect cost or differentiation if it inﬂuences
+the cost drivers or drivers of uniqueness of value activities described in
+Chapters 3 and 4. The technology that can be employed in a value activity is
+often the result of other drivers, such as scale, timing, or interrelationships.
+
+
+For example, scale allows high-speed automatic assembly equipment, while
+early timing allowed some electric utilities to harness hydropower while
+sites were available. In these instances technology is not the source of
+competitive advantage, but rather an outcome of other advantages.
+However, the technology employed in a value activity is frequently itself a
+driver when it reﬂects a policy choice made independently of other drivers.
+A ﬁrm that can discover a better technology for performing an activity than
+its competitors thus gains competitive advantage.
+In addition to affecting cost or differentiation in its own right, technology
+affects competitive advantage through changing or inﬂuencing the other
+drivers of cost or uniqueness. Technological development can raise or lower
+scale economies, make interrelationships possible where they were not
+before, create the opportunity for advantages in timing, and inﬂuence nearly
+any of the other drivers of cost or uniqueness. Thus a ﬁrm can use
+technological development to alter drivers in a way that favor it, or to be the
+ﬁrst and perhaps only ﬁrm to exploit a particular driver.
+Two good examples of the role of technology in altering relative cost
+position are underway in the aluminum industry and illustrate these points.
+The dramatic rise in energy costs has made power the largest single cost in
+aluminum smelting, and transformed a number of ﬁrms into high-cost
+producers because of the cost of their power. The great majority of Japanese
+aluminum smelters fall into this category, for example. To deal with the
+problem, Japanese ﬁrms have worked actively on carbothermic reduction, a
+breakthrough technology that dramatically lowers power consumption by
+converting bauxite and related ores directly into aluminum ingot without the
+intermediate alumina step. Here a new technology is itself a policy cost
+driver. Carbothermic reduction by reducing power consumption would also
+diminish the importance of location and institutional factors as cost drivers
+because location and government pricing policies for power strongly
+inﬂuence electricity costs.
+The other example of the role of technology in cost is occurring in
+aluminum semifabrications, where a new process technology called
+continuous casting is emerging as a potential replacement for hot mills. The
+new process does not appear to result in lower cost at efﬁcient scale, but it is
+less scale-sensitive. If the process proves successful, it could nullify the
+scale advantage of large semifabricators and allow plants to be located
+
+
+closer to buyers. This would reduce relatively high transport cost in regions
+previously served by products shipped from distant facilities. Here the new
+technology does not appear to be itself a cost driver, but is affecting other
+drivers (scale and location). It will inﬂuence the cost position of ﬁrms
+asymmetrically depending on their positions vis-à-vis those drivers.
+The role of technology in differentiation is illustrated by Federal
+Express, which reconﬁgured the value chain in small parcel delivery and
+achieved faster and more reliable delivery. The new technologies employed
+in Federal Express’s value chain were policy choices, but also had the effect
+of increasing scale economies and creating a ﬁrst mover advantage. Thus as
+Federal Express has gained a large market share, the cost of matching its
+differentiation has become very high for competitors. This example also
+demonstrates the point that a major technological development need not
+involve scientiﬁc breakthroughs or even technologies that were not widely
+available previously. Mundane changes in the way a ﬁrm performs activities
+or combines available technologies often underlie competitive advantage.
+Since a ﬁrm’s technology is often interdependent with its buyers’
+technology, technological change by the buyer can affect competitive
+advantage just as can technological change within the ﬁrm. This is
+particularly true in differentiation strategies. For example, a distributor that
+once differentiated itself by performing pricing and inventory control
+functions for its retail buyers may lose that differentiation if retailers switch
+to on-line point-of-sale systems. Similarly, changes in suppliers’ technology
+can add to or subtract from a ﬁrm’s competitive advantage if they affect the
+drivers of cost or uniqueness in a ﬁrm’s value chain.
+TESTS OF A DESIRABLE TECHNOLOGICAL CHANGE
+The link between technological change and competitive advantage
+suggests a number of tests for a desirable direction of technological change.
+Technological change by a ﬁrm will lead to sustainable competitive
+advantage under the following circumstances:
+The technological change itself lowers cost or enhances differentiation
+and the ﬁrm’s technological lead is sustainable. A technological change
+enhances competitive advantage if it leads to lower cost or differentiation
+
+
+and can be protected from imitation. The factors that determine the
+sustainability of a technological lead are described below.
+The technological change shifts cost or uniqueness drivers in favor of a
+ﬁrm. Changing the technology of a value activity, or changing the product
+in ways that affect a value activity, can inﬂuence the drivers of cost or
+uniqueness in that activity. Even if the technological change is imitated,
+therefore, it will lead to a competitive advantage for a ﬁrm if it skews
+drivers in the ﬁrm’s favor. For example, a new assembly process that is
+more scale-sensitive than the previous process will beneﬁt a large-share ﬁrm
+that pioneers it even if competitors eventually adopt the technology.
+Pioneering the technological change translates into ﬁrst-mover
+advantages besides those inherent in the technology itself. Even if an
+innovator is imitated, pioneering may lead to a variety of potential ﬁrst-
+mover advantages in cost or differentiation that remain after its
+technological lead is gone. First-mover advantages and disadvantages are
+identiﬁed below.
+The technological change improves overall industry structure. A
+technological change that improves overall industry structure is desirable
+even if it is easily copied.
+Technological change that fails these tests will not improve a ﬁrm’s
+competitive position, though it may represent a substantial technological
+accomplishment. Technological change will destroy competitive advantage
+if it not only fails the tests but has the opposite effect contemplated in the
+tests, such as skewing cost or uniqueness drivers in favor of competitors. A
+ﬁrm may also ﬁnd itself in the situation where a technological change may
+meet one test but worsen a ﬁrm’s position via another.
+Technology and Industry Structure
+Technology is also an important determinant of overall industry structure
+if the technology employed in a value activity becomes widespread.
+Technological change that is diffused can potentially affect each of the ﬁve
+
+
+competitive forces, and improve or erode industry attractiveness. Thus even
+if technology does not yield competitive advantage to any one ﬁrm, it may
+affect the proﬁt potential of all ﬁrms. Conversely, technological change that
+improves a ﬁrm’s competitive advantage may worsen structure as it is
+imitated. The potential effect of technological change on industry structure
+means that a ﬁrm cannot set technology strategy without considering the
+structural impacts.
+TECHNOLOGY AND ENTRY BARRIERS
+Technological change is a powerful determinant of entry barriers. It can
+raise or lower economies of scale in nearly any value activity. For example,
+ﬂexible manufacturing systems often have the effect of reducing scale
+economies. Technological change can also raise economies of scale in the
+technological development function itself, by quickening the pace of new
+production introduction or raising the investment required for a new model.
+Technological change also is the basis of the learning curve. The learning
+curve results from improvements in such things as layout, yields, and
+machine speeds—all of which are types of technological change.
+Technological change can lead to other absolute cost advantages such as
+low-cost product designs. It can also alter the amount of capital required for
+competing in an industry. The shift from batch to continuous process
+technology for producing cornstarch and corn syrup has signiﬁcantly
+increased the capital requirements in corn wet milling, for example.
+Technological change also plays an important role in shaping the pattern
+of product differentiation in an industry. In aerosol packaging, for example,
+technological change has resulted in product standardization and has made
+the product a near commodity, all but eliminating the ability of contract
+packagers to differentiate themselves based on product characteristics.
+Technological change can also raise or lower switching costs. Technological
+choices by competitors determine the need for buyers to retrain personnel or
+to reinvest in ancillary equipment when switching suppliers. Technological
+change can also inﬂuence access to distribution by allowing ﬁrms to
+circumvent existing channels (as telemarketing is doing) or, conversely, by
+increasing industry dependence on channels (if more product demonstration
+and after-sale service is required, for example).
+
+
+TECHNOLOGY AND BUYER POWER
+Technological change can shift the bargaining relationship between an
+industry and its buyers. The role of technological change in differentiation
+and switching costs is instrumental in determining buyer power.
+Technological change can also inﬂuence the ease of backward integration
+by the buyer, a key buyer bargaining lever. In the computer service industry,
+for example, the rapid decline in the cost of computers, driven by
+technological change, is having a major impact on the ability of ﬁrms such
+as ADP to sell timesharing, since many buyers can now afford their own
+machines.
+TECHNOLOGY AND SUPPLIER POWER
+Technological change can shift the bargaining relationship between an
+industry and its suppliers. It can eliminate the need to purchase from a
+powerful supplier group or, conversely, can force an industry to purchase
+from a new, powerful supplier. In commercial rooﬁng, for example, the
+introduction of rubber-based rooﬁng membranes has introduced powerful
+new resin suppliers in place of less powerful asphalt suppliers.
+Technological change can also allow a number of substitute inputs to be
+used in a ﬁrm’s product, creating bargaining leverage against suppliers. For
+example, the can industry has beneﬁted from ﬁerce competition between the
+aluminum and steel companies to supply it, brought on by technological
+change in aluminum cans. Technology investments by ﬁrms can also allow
+the use of multiple suppliers by creating in-house knowledge of supplier
+technologies. This can eliminate dependence on any one supplier.
+TECHNOLOGY AND SUBSTITUTION
+Perhaps the most commonly recognized effect of technology on industry
+structure is its impact on substitution. Substitution is a function of the
+relative value to price of competing products and the switching costs
+associated with changing between them, as will be discussed extensively in
+Chapter 8. Technological change creates entirely new products or product
+uses that substitute for others, such as ﬁberglass for plastic or wood, word
+
+
+processors for typewriters, and microwave ovens for conventional ovens. It
+inﬂuences both the relative value/price and switching costs of substitutes.
+The technological battle over relative value/price between industries
+producing close substitutes is at the heart of the substitution process.
+TECHNOLOGY AND RIVALRY
+Technology can alter the nature and basis of rivalry among existing
+competitors in several ways. It can dramatically alter the cost structure and
+hence affect pricing decisions. For example, the shift to continuous process
+technology in the corn wet milling industry mentioned above has also raised
+ﬁxed cost, and contributed to greater industry rivalry. A similar increase in
+ﬁxed cost as a percentage of total cost has accompanied the increasing
+deadweight tonnage of oil tankers, made possible by improvements in
+shipbuilding technology. The role of technology in product differentiation
+and switching costs also is important to rivalry.
+Another potential impact of technology on rivalry is through its effect on
+exit barriers. In some distribution industries, for example, automation of
+materials handling has raised exit barriers because the materials handling
+equipment is specialized to the particular goods moving through
+warehouses. Hence what were once general-purpose facilities have become
+specialized and capital-intensive facilities.
+TECHNOLOGICAL CHANGE AND INDUSTRY BOUNDARIES
+Technological change plays an important role in altering industry
+boundaries. The boundary of an industry is often imprecise, because
+distinctions between an industry’s product and substitutes, incumbents and
+potential entrants, and incumbents and suppliers or buyers are often
+arbitrary. Nevertheless, it is important to recognize that regardless of where
+one chooses to draw industry boundaries, technological change can broaden
+or shrink them.
+Technological change widens industry boundaries in a number of ways.
+It can reduce transportation or other logistical costs, thereby enlarging the
+geographic scope of the market. This happened in the 1960s and 1970s with
+the advent of large bulk cargo carriers in shipping. Technological change
+
+
+that reduces the cost of responding to national market differences can help
+globalize industries.2 It can also enhance product performance, thereby
+bringing new customers (and competitors) into a market. Finally,
+technological changes can increase the interrelationships among industries.
+In industries such as ﬁnancial services, computers and telecommunications,
+technological change is blurring industry boundaries and folding whole
+industries together. In publishing, automated text processing and printing
+technologies have made shared printing operations more feasible for several
+different types of publications. Interrelationships are discussed in greater
+detail in Chapter 9.
+Technology can also narrow industry boundaries. Technological change
+may allow a ﬁrm to tailor the value chain to a particular segment, as will be
+discussed in Chapter 7. Thus segments can, in effect, become industries.
+Portable cassette players, for example, have become a full-ﬂedged industry
+independent of larger cassette players and cassette players used in dictating
+due to technological advancements that improved their performance and
+widened their usage.
+TECHNOLOGICAL CHANGE AND INDUSTRY ATTRACTIVENESS
+While it is sometimes believed that technological change always
+improves industry structure, the previous discussion should make it clear
+that it is just as likely to worsen industry structure. The effect of
+technological change on industry attractiveness depends on the nature of its
+impact on the ﬁve forces. If it raises entry barriers, eliminates powerful
+suppliers, or insulates an industry from substitutes, then technological
+change can improve industry proﬁtability. However, if it leads to more
+buyer power or lowers entry barriers, it may destroy industry attractiveness.
+The role of technological change in altering industry structure creates a
+potential conundrum for a ﬁrm contemplating innovation. An innovation
+that raises a ﬁrm’s competitive advantage may eventually undermine
+industry structure, if and when the innovation is imitated by other
+competitors. Firms must recognize the dual role of technological change in
+shaping both competitive advantage and industry structure when selecting a
+technology strategy and in making technology investments.
+
+
+Technology Strategy
+Technology strategy is a ﬁrm’s approach to the development and use of
+technology. Although it encompasses the role of formal R&D organizations,
+it must also be broader because of the pervasive impact of technology on
+the value chain. Because of the power of technological change to inﬂuence
+industry structure and competitive advantage, a ﬁrm’s technology strategy
+becomes an essential ingredient in its overall competitive strategy.
+Innovation is one of the principal ways of attacking well-entrenched
+competitors, a subject I will return to in Chapter 15. However, technology
+strategy is only one element of overall competitive strategy, and must be
+consistent with and reinforced by choices in other value activities. A
+technology strategy designed to achieve differentiation in product
+performance will lose much of its impact, for example, if a technically
+trained sales force is not available to explain the performance advantages to
+the buyer and if the manufacturing process does not contain adequate
+provisions for quality control.
+Technology strategy must address three broad issues:
+• what technologies to develop
+• whether to seek technological leadership in those technologies
+• the role of technology licensing
+Choices in each area must be based on how technology strategy can best
+enhance a ﬁrm’s sustainable competitive advantage.
+The Choice of Technologies to Develop
+At the core of a technology strategy is the type of competitive advantage
+a ﬁrm is trying to achieve. The technologies that should be developed are
+those that would most contribute to a ﬁrm’s generic strategy, balanced
+against the probability of success in developing them. Technology strategy
+is a potentially powerful vehicle with which a ﬁrm can pursue each of the
+three generic strategies. Depending on which generic strategy is being
+followed, however, the character of technology strategy will vary a great
+deal, as shown in Table 5–1.
+
+
+In many ﬁrms, R&D programs are driven more by scientiﬁc interests
+than by the competitive advantage sought. It is clear from Table 5–1,
+however, that the primary focus of a ﬁrm’s R&D programs should be
+consonant with the generic strategy that is being pursued. The R&D
+program of a cost leader, for example, should include a heavy dose of
+projects designed to lower cost in all value activities that represent a
+signiﬁcant fraction of cost, as well as projects to reduce the cost of product
+design through value engineering. R&D by a cost leader on product
+performance must be aimed at maintaining parity with competitors rather
+than adding costly new features or the goals of R&D will be inconsistent
+with the ﬁrm’s strategy.
+Another important observation from Table 5–1 is that both product and
+process technological change can have a role in supporting each of the
+generic strategies. Firms often incorrectly assume that process technological
+change is exclusively cost-oriented and product technological change is
+intended solely to enhance differentiation. Chapter 3 has shown how
+product technology can be critical in achieving low cost, while Chapter 4
+has shown how changes in process technology may be the key to
+differentiation (a favorite tactic of Japanese companies).
+TABLE 5–1 Product and Process Technology and the Generic
+Strategies
+ 
+COST
+LEADERSHIP
+DIFFERENTIATION
+COST
+FOCUS
+DIFFERENTIATION
+FOCUS
+ 
+ 
+ILLUSTRATIVE TECHNOLOGICAL
+POLICIES
+ 
+Product
+Technological
+Change
+Product
+development to
+reduce product
+cost by lowering
+material content,
+facilitating ease
+of manufacture,
+simplify
+logistical
+requirements,
+etc.
+Product
+development to
+enhance product
+quality, features,
+deliverability, or
+switching costs
+Product
+development to
+design in only
+enough
+performance for
+the target
+segment’s needs
+Product design to
+meet the needs
+of a particular
+segment better
+than broadly-
+targeted
+competitors
+Process
+Learning curve
+Process
+Process
+Process
+
+
+Technological
+Change
+process
+improvement to
+reduce material
+usage or lower
+labor input
+Process
+development to
+enhance
+economies of
+scale
+development to
+support high
+tolerances,
+greater quality
+control, more
+reliable
+scheduling,
+faster response
+time to orders,
+and other
+dimensions that
+raise buyer value
+development to
+tune the value
+chain to a
+segment’s needs
+in order to lower
+the cost of
+serving the
+segment
+development to
+tune the value
+chain to segment
+needs in order to
+raise buyer value
+It is also important that a ﬁrm’s technology strategy extend beyond
+product and process R&D as they are traditionally deﬁned. Technology
+pervades a ﬁrm’s value chain and relative cost and differentiation are a
+function of the entire chain. Thus a systematic examination of all a ﬁrm’s
+technologies will reveal areas in which to reduce cost or enhance
+differentiation. The information system department may have more impact
+on technological change in some ﬁrms today than the R&D department, for
+example. Other important technologies such as transportation, materials
+handling, communications, and ofﬁce automation also deserve more than ad
+hoc or informal attention. Finally, development in all technological areas
+must be coordinated to ensure consistency and exploit interdependencies
+among them.
+Crown Cork and Seal provides a good example of the link between
+technology strategy and competitive advantage. Crown focuses on select
+customer industries and provides cans together with highly responsive
+service. Crown does little or no basic research and does not pioneer new
+products. Rather, its R&D department is organized to solve speciﬁc
+customer problems on a timely basis, and to imitate successful product
+innovations rapidly. Crown’s R&D approach, then, closely supports its
+focus strategy. Its technological policies are quite different from those of
+American Can or Continental Group, which supply broad lines of
+packaging in addition to cans. American and Continental invest heavily on
+research in basic materials and new products.
+The selection of speciﬁc technologies in the value chain on which to
+concentrate development effort is governed by the link between
+
+
+technological change and competitive advantage. A ﬁrm should concentrate
+on those technologies that have the greatest sustainable impact on cost or
+differentiation, either directly or through meeting the other tests described
+earlier. These tests allow a ranking of technological changes that would
+yield the greatest competitive beneﬁt. The cost of improving the technology
+must be balanced against the beneﬁt, as well as the likelihood that the
+improvement can be achieved.
+Firms often confront a choice between attempting to improve an
+established technology for performing a value activity or investing in a new
+one. In aluminum smelting, for example, a ﬁrm might concentrate on
+improving the Hall-Heroult process now in use, or it might attempt to
+develop carbothermic reduction. Technologies seem to go through a life
+cycle in which early major improvements give way to later incremental
+ones. This argues that the beneﬁt/cost tradeoff in improving mature
+technologies may be less (though perhaps more certain) than that in
+improving newer technologies.
+This can be a dangerous assumption, however, that is self-fulﬁlling. A
+technology can be assumed to be mature only with great caution. Major
+improvements in the efﬁciency of the Hall-Heroult process are occurring
+today, for example, despite the fact that it was developed prior to 1900.
+Similarly, the fuel efﬁciency of low-speed diesel engines has risen
+signiﬁcantly since 1974. Diesel technology is also over 80 years old and
+was widely viewed as mature compared to gas turbines, yet diesels have
+actually increased their lead over turbines. In both these examples, the rapid
+rise in energy prices stimulated active attention to fuel efﬁciency. Greater
+attention to improving the technologies was coupled with improvements in
+materials technology, instrumentation, and electronics that allowed better
+process control, higher temperatures, and other beneﬁts.
+As noted earlier, most products and value activities embody not one
+technology but several technologies or subtechnologies. It is only a
+particular combination of subtechnologies that can be assumed to be
+mature, not individual subtechnologies themselves. Signiﬁcant changes in
+any one of the subtechnologies going into a product or process may create
+new possibilities for combining them that produce dramatic improvements,
+such as those achieved in smelting and low-speed diesel engines. The
+advent of microelectronics, a subtechnology that can be applied to many
+
+
+other technologies, is having a profound effect on many industries through
+unlocking possibilities for new technological combinations.
+Thus in choosing among technologies to invest in, a ﬁrm must base its
+decisions on a thorough understanding of each important technology in its
+value chain and not on simple indicators such as age. Sometimes all that is
+necessary to produce technological progress is effort and investment, as
+both examples illustrate. In other cases, advances in subtechnologies may
+allow improvement in the existing technology. Efforts at improving an older
+technology can sometimes be futile, however. In such instances the best
+course of action is to attempt to leapfrog it. The decision by a ﬁrm to
+discard its own technology may be difﬁcult, particularly if it was developed
+in-house, but such a choice may be essential to maintaining the ﬁrm’s
+competitive position.
+The choice of technologies to develop should not be limited to those few
+where there are opportunities for major breakthroughs. Modest
+improvements in several of the technologies in the value chain, including
+those not related to the product or the production process, can add up to a
+greater 
+beneﬁt 
+for 
+competitive 
+advantage. 
+Moreover, 
+cumulative
+improvements in many activities can be more sustainable than a
+breakthrough that is noticeable to competitors and becomes an easy target
+for imitation. The success of Japanese ﬁrms in technology is rarely due to
+breakthroughs, but to a large number of improvements throughout the value
+chain.
+Technological Leadership or Followership
+The second broad issue a ﬁrm must address in technology strategy is
+whether to seek technological leadership. The notion of technological
+leadership is relatively clear—a ﬁrm seeks to be the ﬁrst to introduce
+technological changes that support its generic strategy. Sometimes all ﬁrms
+that are not leaders are viewed as technological followers, including ﬁrms
+that disregard technological change altogether. Technological followership
+should be a conscious and active strategy in which a ﬁrm explicitly chooses
+not to be ﬁrst on innovations, and that is the sense in which it is examined
+here.
+
+
+While technological leadership is often thought of in terms of product or
+process technology, the issue is much broader. Leadership can be
+established in technologies employed in any value activity. The discussion
+here is directed at the strategic choice between pioneering innovation in any
+value activity and waiting for others to pioneer.
+The decision to become a technological leader or follower can be a way
+of achieving either low cost or differentiation, as illustrated in Table 5–2:
+TABLE 5–2 Technological Leadership and Competitive Advantage
+ 
+TECHNOLOGICAL LEADERSHIP
+TECHNOLOGICAL FOLLOWERSHIP
+Cost Advantage
+Pioneer the lowest-cost product
+design
+Be the ﬁrst ﬁrm down the
+learning curve
+Create low cost ways of
+performing value activities
+Lower the cost of the product or
+value activities by learning
+from the leader’s experience
+Avoid R&D costs through
+imitation
+Differentiation
+Pioneer a unique product that
+increases buyer value
+Innovate in other activities to
+increase buyer value
+Adapt the product or delivery
+system more closely to buyer
+needs by learning from the
+leader’s experience
+Firms tend to view technological leadership primarily as a vehicle for
+achieving differentiation, while acting as a follower is considered the
+approach to achieving low cost. If a technological leader is the ﬁrst to adopt
+a new lower-cost process, however, the leader can become the low-cost
+producer. Or if a follower can learn from the leader’s mistakes and alter
+product technology to meet the needs of buyers better, the follower can
+achieve differentiation. There can also be more than one technological
+leader in an industry because of the many technologies involved and the
+different types of competitive advantage sought.
+The choice of whether to be a technological leader or follower in an
+important technology is based on three factors:3
+• Sustainability of the technological lead. The degree to which a ﬁrm
+can sustain its lead over competitors in a technology.
+
+
+• First-mover advantages. The advantages a ﬁrm reaps from being the
+ﬁrst to adopt a new technology.
+• First-mover disadvantages. The disadvantages a ﬁrm faces by moving
+ﬁrst rather than waiting for others.
+All three factors interact to determine the best choice for a particular
+ﬁrm. Signiﬁcant disadvantages of being a ﬁrst mover may eliminate the
+desirability of taking the leadership role even if a ﬁrm can sustain its
+technological lead. Conversely, ﬁrst-mover advantages may translate an
+initial technological lead into a sustainable competitive advantage elsewhere
+though the technological lead itself disappears. First-mover advantages and
+disadvantages occur most often in the context of technological choices, but
+their signiﬁcance for competitive strategy formulation extends beyond
+technological strategy. They address the wider question of how timing
+translates into competitive advantage or disadvantage and into entry and
+mobility barriers.
+SUSTAINABILITY OF THE TECHNOLOGICAL LEAD
+Technological leadership is favored if the technological lead can be
+sustained because (1) competitors cannot duplicate the technology, or (2)
+the ﬁrm innovates as fast or faster than competitors can catch up. The
+second condition is important because technology often diffuses, requiring a
+technological leader to remain a moving target. Kodak, for example, has
+maintained leadership in amateur photography in large part through a
+succession of camera systems and ﬁlm chemistries, most recently including
+the disc camera, rather than possessing a single technology competitors
+could not match. If a technology lead cannot be sustained, technological
+leadership can only be justiﬁed if the initial lead translates into ﬁrst-mover
+advantages, because of the greater cost of leadership compared to
+followership.
+The sustainability of a technological lead is a function of four factors:
+The Source of Technological Change. The sustainability of a
+technological lead depends heavily on whether technology is being
+developed inside the industry or is coming from outside it. An important
+
+
+proportion of technological change comes from external sources such as
+suppliers, buyers, or completely unrelated industries. In many process
+industries, for example, the key source of technology is construction
+engineering ﬁrms that design production processes and build plants.
+Where important sources of technology are external to an industry,
+sustaining a technological lead is generally more difﬁcult. External
+technology sources decouple a ﬁrm’s access to technology from its
+technological skills and R&D spending rate, because many companies can
+get access to external developments. Hence external technological changes
+act as an equalizer among competitors. Technological leaders in industries
+with key external sources of technology must capture the best of those
+sources through coalitions or exclusive arrangements in order to sustain
+their lead, or have a superior ability to adapt externally developed
+technology to the industry.
+The Presence or Absence of a Sustainable Cost or Differentiation
+Advantage in Technology Development Activity. A technological lead is
+more likely to be sustainable if a ﬁrm has a cost or differentiation advantage
+in performing technology development. The tools in Chapters 3 and 4 can
+be used to analyze a ﬁrm’s relative cost and differentiation in the
+development of technology. For example, scale economies or learning
+effects in technological development give large-share or experienced ﬁrms
+an R&D cost advantage. Where the costs of developing a model are largely
+ﬁxed, a ﬁrm with a large share has proportionally lower R&D costs than a
+smaller-share ﬁrm. It may thus be able to spend more money on R&D in
+order to maintain its technological lead without a cost penalty. This seems
+to have occurred in large turbine generators, where General Electric has
+outspent Westinghouse in absolute terms and maintained a signiﬁcant
+technological lead although its R&D as a percentage of sales is still lower
+than Westinghouse’s. Rising costs of product development in an industry
+also work in favor of large-share ﬁrms. As the cost of bringing out a new
+herbicide has risen to over $30 million, for example, the advantages of the
+industry leaders in agricultural chemicals are widening.
+A ﬁrm’s relative cost or effectiveness in performing technology
+development can also be strongly inﬂuenced by interrelationships among
+related business units within the parent company. Interrelationships can
+
+
+allow the transference of skills or sharing of costs of R&D activity. The
+types of interrelationships involving R&D are described in Chapter 9.
+Technological 
+leaders 
+often 
+aggressively 
+pursue 
+technological
+interrelationships, entering new businesses with related technologies. They
+also create mechanisms for R&D transfer among business units, and tend to
+invest at the corporate level in core technologies with a potential impact on
+many business units.
+Different parts of the innovation cycle—basic research, applied research,
+development—tend to offer differing opportunities for sustainable cost
+advantages in R&D spending. Basic product innovation is often less scale-
+sensitive than the subsequent rapid introduction of new product types and
+the incorporation of new features. This is one of the reasons Japanese ﬁrms
+often overtake innovative U.S. ﬁrms that fail to maintain their lead in
+subsequent product improvements. Many successful technological leaders
+do not reap all of the beneﬁts of scale, learning, or interrelationships in
+R&D in the form of higher proﬁts, but reinvest to maintain their
+technological lead. They also exploit any scale or learning advantages in
+R&D by rapid new model introduction. Honda, for example, has reinforced
+its competitive advantage in motorcycles through a continual stream of new
+models.
+Relative Technological Skills. A ﬁrm with unique technological skills
+vis-à-vis competitors is more likely to sustain its technological lead than a
+ﬁrm with comparable R&D personnel, facilities, and management to
+competitors. Technological skills will inﬂuence the output from a given rate
+of spending on technology, regardless of scale, learning, or interrelationship
+effects. Technological skills are a function of many factors—management,
+company culture, organizational structure and systems, company reputation
+with scientiﬁc personnel, and others. NEC Corporation, for example, is the
+company most highly ranked by engineering graduates in Japan. This
+contributes to its ability to attract the best graduates, reinforcing its strong
+R&D capability. Successful technological leaders pay close attention to
+their stock of R&D skills. They avoid cutting back R&D staff in industry
+downturns or proﬁt squeezes. They also seek out relationships with the
+leading scientiﬁc centers in appropriate ﬁelds, and attempt to develop an
+
+
+image as the best place to work for the types of research personnel that
+support their technology strategy.
+Rate of Technology Diffusion. A ﬁnal important factor in determining the
+sustainability of a technological lead is the rate of diffusion of the leader’s
+technology. Superior technological skills or cost advantages in performing
+R&D are nulliﬁed if competitors can easily copy what a ﬁrm develops.
+Diffusion of technology occurs continually, though at different rates
+depending on the industry. Some of the mechanisms for diffusion of a
+leader’s technology are as follows:
+•  direct observation by competitors of a leader’s products (reverse
+engineering) and methods of operating
+• technology transfer through equipment suppliers or other vendors
+• technology transfer through industry observers such as consultants and
+the trade press
+• technology transfer through buyers who desire another qualiﬁed source
+• personnel losses to competitors or spinoff ﬁrms
+• public statements or papers delivered by a leader’s scientiﬁc personnel
+The diffusion of technology is often greater for the basic product and
+process innovations than it is for later improvements. Product and process
+reﬁnements are more likely to be kept proprietary, particularly when based
+on process improvements. Since Japanese ﬁrms have emphasized constant
+process innovations, they often develop more sustainable advantages than
+U.S. or European ﬁrms that pioneered the process.
+The rate of technological diffusion is partly intrinsic to an industry and
+partly under a ﬁrm’s control. Most of the technology of a mobile home
+producer, for example, is readily observable by examining the product.
+Disposable diaper technology diffuses more slowly because much of it
+hinges on the way the product is manufactured on customized machines.
+Some factors that slow down the rate of diffusion are as follows:
+• patenting of the ﬁrm’s technology and related technologies
+• secrecy
+
+
+• in-house development of prototypes and production equipment
+•  vertical integration into key parts that embody or give clues to the
+technology
+• personnel policies that retain employees
+Successful technological leaders are aggressive in trying to slow down
+diffusion. They patent extensively where patents can be obtained, and
+enforce them by always challenging infringers. They view all contact with
+outsiders, even buyers, as a threat to proprietary know-how. Plant tours are a
+rarity, and even buyers are not told about key innovations. Technological
+leaders are also often vertically integrated, building or modifying equipment
+in-house to protect technology, and are discrete in public disclosures. It is
+striking how many of the ﬁrms known to be secretive are also technological
+leaders. These include DuPont, Kodak, Procter & Gamble, and Michelin.
+FIRST-MOVER ADVANTAGES
+Technological leadership is strategically desirable when ﬁrst-mover
+advantages exist. These allow a leader to translate a technology gap into
+other competitive advantages that persist even if the technology gap closes.
+First-mover advantages rest on the role of timing in improving a ﬁrm’s
+position vis-à-vis sustainable sources of cost advantage or differentiation. In
+general terms, a ﬁrst mover gets the opportunity to deﬁne the competitive
+rules in a variety of areas.
+The most important types of potential ﬁrst-mover advantages include the
+following, and can also accrue to moving ﬁrst into a geographic area or to
+pioneering that does not involve technology per se:4
+Reputation. A ﬁrm that moves ﬁrst may establish a reputation as the
+pioneer or leader, a reputation that emulators will have difﬁculty
+overcoming. Leadership places a ﬁrm, at least temporarily, in the position of
+being unique which can produce long-term image beneﬁts not available to
+others. A ﬁrst mover also may be ﬁrst to serve buyers and thus to establish
+relationships where there may be loyalty. The signiﬁcance of any reputation
+advantage from leadership will depend on the credibility of a ﬁrm and its
+capacity to invest in marketing. A small company may not succeed in
+
+
+enhancing its reputation by moving ﬁrst because it lacks the resources to
+publicize its lead.
+Preempting a Positioning. A ﬁrst mover may preempt an attractive
+product or market positioning, forcing competitors to adopt less desirable
+ones. Stouffer’s preempted the gourmet concept in frozen entrees, for
+example. A ﬁrst mover gets the opportunity to shape the way a product is
+deﬁned or marketed in a way that favors it. A ﬁrst mover can also put
+capacity in place to preempt the ability of competitors to proﬁtably expand.
+Switching Costs. A ﬁrst mover can lock in later sales if switching costs
+are present. In hospital management contracts, for example, the pioneer that
+signed up hospitals ﬁrst gained a signiﬁcant edge in contract renewals
+because of the substantial costs to the hospital of changing management
+ﬁrms. Switching would result in disruption caused by a new administrator, a
+new computer system, and other changes.
+Channel Selection. A ﬁrst mover may gain unique channel access for a
+new product or product generation. It can pick the best brokers, distributors,
+or retailers, while followers must either accept the second best, establish
+new channels, or persuade the ﬁrst mover’s channels to shift or divide their
+loyalties.
+Proprietary Learning Curve. A ﬁrst mover gains a cost or differentiation
+advantage if there is a proprietary learning curve in value activities that are
+affected by the early move. The ﬁrst mover begins down the learning curve
+ﬁrst in the affected activities, and may establish a durable cost or
+differentiation advantage if it can keep its learning proprietary.
+Favorable Access to Facilities, Inputs, or Other Scarce Resources. A ﬁrst
+mover can often enjoy at least a temporary advantage in access to purchased
+inputs or other resources, because it contracts for them before market forces
+reﬂect the full impact of the change it is pioneering. A ﬁrm may get its pick
+of sites for facilities, for example, or favorable deals with raw material
+suppliers eager for new business. A good case in point is the airline
+industry, where the early no-frills carriers have acquired cheap surplus
+
+
+aircraft and/or low-cost terminal space, and hired out-of-work pilots.
+Market forces will eventually bid up the prices of these inputs as the no-
+frills strategy is imitated.
+Other examples come from several extractive industries. New mines and
+processing plants are being constructed in increasingly remote locations,
+raising infrastructure costs. They are also being forced to bear higher
+environmental costs. Early movers, then, have lower costs.
+Deﬁnition of Standards. A ﬁrst mover can deﬁne the standards for
+technology or for other activities, forcing later movers to adopt them. These
+standards, in turn, make the ﬁrm’s position more sustainable. For example,
+RCA deﬁned the standards in color TV which meant that competitors had to
+go down the learning curve RCA had already started down rather than
+create a new one.
+Institutional Barriers. A ﬁrst mover may enjoy institutional barriers
+against imitation. The ﬁrst mover may secure patents, or being ﬁrst into a
+country may give it special status with government. Institutional factors
+often facilitate a ﬁrst mover’s ability to deﬁne standards as well.
+Early Proﬁts. In some industries, a ﬁrst mover may be in a position to
+enjoy temporarily high proﬁts from its position. It may be able to contract
+with buyers at high prices during early scarcity of a new item, for example,
+or sell to buyers who value the new technology very highly.
+Successful technological leaders actively pursue ﬁrst-mover advantages
+rather than rely solely on their technological edge. They take every
+opportunity to use their technological leadership to deﬁne the competitive
+rules in ways that beneﬁt them. They invest in marketing to reinforce the
+reputation beneﬁts of being the leader, and price aggressively to make early
+sales to buyers with the highest switching costs. It is striking how many
+ﬁrms that were ﬁrst movers have remained leaders for decades. In consumer
+goods, for example, such leading brands as Crisco, Ivory, Life Savers,
+Coca-Cola, Campbell’s, Wrigley, Kodak, Lipton, and Goodyear were
+leaders by the 1920s.
+
+
+First-mover advantages can be dissipated through aggressive spending
+by later entrants unless the ﬁrst mover invests to capitalize on them. As
+happened to Bowmar in electric calculators, small pioneers are often
+overwhelmed by later entrants. Their lead is overcome not because ﬁrst-
+mover advantages were not present, but because the resources were not
+present to exploit them. IBM in personal computers is providing a more
+recent example of a late mover succeeding against early movers based on
+resources and interrelationships with other business units.
+Where the ﬁrst mover does not have adequate resources, the ﬁrst early
+mover with resources can often be the ﬁrm to gain the beneﬁts of ﬁrst-
+mover advantages. In minicomputers, for example, Digital Equipment did
+not introduce the ﬁrst machine but gained many ﬁrst-mover advantages
+because it was the ﬁrst to develop the product aggressively. Digital invested
+heavily to exploit its advantages through expanding its product line, going
+down the learning curve, and increasing the size of its sales force. A similar
+situation occurred in video cassette recorders, where Ampex pioneered the
+product but Japanese ﬁrms invested heavily to improve the technology,
+produce units cheaply, and translate their lead into ﬁrst-mover advantages.
+FIRST-MOVER DISADVANTAGES
+First movers often face disadvantages as well as advantages. First-mover
+disadvantages stem from two broad sources, the costs of pioneering and the
+risk that conditions will change.
+Pioneering Costs. A ﬁrst mover often bears substantial pioneering costs,
+including the following:5
+• gaining regulatory approvals
+• achieving code compliance
+• educating buyers
+• developing infrastructure in areas such as service facilities and training
+• developing needed inputs such as raw material sources and new types
+of machinery
+• investing in the development of complementary products (see Chapter
+12)
+
+
+• high costs of early inputs because of scarcity of supply or small scale
+of needs
+Pioneering costs vary widely depending on the type of technological
+innovation and can be reduced by sharing them with good competitors (see
+Chapter 6). However, they are often unavoidable for the ﬁrst mover.
+Demand Uncertainty. A ﬁrst mover bears the risk of uncertainty over
+future demand. It must put capacity in place ﬁrst, while later movers can
+base their decisions on more current information. Though committing
+before competitors has some advantages, it also has some signiﬁcant risks.
+RCA was the ﬁrst mover into color TV, for example, betting on an early
+takeoff of the new technology. Later movers learned from RCA’s experience
+that demand for color sets was some years away and avoided a period of
+losses.
+Changes in Buyer Needs. A ﬁrst mover is vulnerable if buyer needs
+change and its technology is no longer valued. A ﬁrst mover’s reputation
+advantage may also be eliminated if buyers’ needs change and the ﬁrst
+mover is identiﬁed with the old generation of technology. Unless buyer
+needs shift radically, substantially changing the technology required to
+serve them, however, a ﬁrst mover can maintain its lead by modifying
+technology over time.
+Speciﬁcity of Investments to Early Generations or Factor Costs. A ﬁrst
+mover may be at a disadvantage if early investments are speciﬁc to the
+current technology and cannot be easily modiﬁed for later generations. In
+semiconductors, for example, Philco moved early for leadership with a
+large automated plant. It enjoyed a period of success, but the later
+development of a different manufacturing process for semiconductor chips
+made its earlier investment obsolete. Similarly, the early movers will be
+disadvantaged if its product or process reﬂected factor costs or factor
+quality that have changed.
+Technological Discontinuities. Technological discontinuities work
+against the ﬁrst mover by making obsolete its investments in the established
+
+
+technology. Technological discontinuities are major shifts in technology
+that a ﬁrst mover may be ill prepared to respond to given its investment in
+the old technology. Discontinuity favors the fast follower who does not bear
+the high cost of pioneering. Where technology evolves along a relatively
+continuous path, however, a ﬁrst mover’s head start is an advantage. It can
+transfer learning from the old technology to the new and stay ahead on the
+learning curve.
+Low-cost Imitation. A ﬁrst mover exposes itself to followers who may be
+able to imitate the innovation at lower cost than the cost of innovating.
+Followers often have to bear some costs of imitation and adaptation,
+however, which work to the beneﬁt of the ﬁrst mover.
+Licensing of Technology
+The third broad issue in technology strategy is technology licensing, a
+form of coalition with other ﬁrms.6 Firms with a unique technology are
+often asked for licenses, or are forced to license by government regulations.
+Licensing is also a way to gain access to technology. Where technology is
+an important source of competitive advantage, decisions on licensing are
+vital. Yet many ﬁrms have squandered technology-based competitive
+advantages through inappropriate licensing decisions.
+WHEN SHOULD A FIRM LICENSE?
+If technology is a source of competitive advantage, a ﬁrm must treat
+licensing other ﬁrms as a risky step that should be taken only under special
+conditions. Licensing fees are rarely large enough to offset a loss of
+competitive advantage. However, awarding licenses may be strategically
+desirable under a number of circumstances.
+Inability to Exploit the Technology. Awarding licenses is appropriate if a
+ﬁrm cannot exploit the technology itself. This may be because a ﬁrm lacks
+resources or skills to establish a sustainable position, is harvesting the
+business unit involved, or competitors are too entrenched to yield market
+position. The ﬁrst motivation for licensing is at work today in
+
+
+biotechnology and electronics, where creative startup ﬁrms lack the
+capability to commercialize innovations. Even where the ﬁrm has
+substantial resources, it may be unable to gain a substantial share on the
+basis of its new technology because competitors are too committed or
+because of government demands for local ownership. The former seems to
+be one reason why Standard Brands widely licensed its technology for high
+fructose corn syrup, a sugar substitute.
+Where the ﬁrm cannot exploit the market itself, failure to license will
+create the motivation for competitors to invent around its technology.
+Eventually one or more competitors may succeed, and the ﬁrm will be left
+with a small market position. By licensing, however, competitors gain a
+cheaper and less risky alternative to investing in their own technology.
+Thus, instead of being imitated, the ﬁrm licensing its technology may be
+able to set the standard and collect licensing royalties in addition to proﬁts
+from its own market position.
+Tapping Unavailable Markets. Licensing may allow a ﬁrm to gain some
+revenue from markets otherwise unavailable to it. This includes other
+industries where the technology is valuable but where the ﬁrm has little
+possibility of entering, or other geographic markets a ﬁrm cannot or does
+not want to enter.
+Rapidly Standardizing the Technology. Licensing may accelerate the
+process by which the industry standardizes on a ﬁrm’s technology. If several
+ﬁrms are pushing the technology, licensing not only will legitimize it but
+also may accelerate its development. The pioneers of the VHS and Beta
+formats in video cassette recorders licensed them widely to promote
+standardization, for example, because standardization was so critical to
+increasing the availability of software.
+Poor Industry Structure. Licensing can be desirable where industry
+structure is unattractive. In such instances, a ﬁrm may be better off
+collecting royalties than investing in a market position that will not yield
+high returns. The more bargaining power a ﬁrm has in extracting high
+licensing fees, the more attractive it is to license and retain only a modest
+position in the industry for itself.
+
+
+Creating Good Competitors. Licensing may be a vehicle for creating
+good competitors, which in turn can play a variety of important roles such
+as stimulating demand, blocking entry, and sharing the costs of pioneering.
+Magnavox widely licensed its video game patents, for example, reasoning
+correctly that it could expand the market faster through encouraging
+competitors to introduce a wide range of products. Entry barriers were also
+low enough that Magnavox was unlikely to be able to develop a sustainable
+position. Chapter 6 describes the potential beneﬁts of good competitors in
+detail, along with how a good competitor can be identiﬁed.
+Quid Pro Quo. A ﬁrm may award a license in return for a license of
+another ﬁrm’s technology, as ATT and IBM are prone to do. A ﬁrm must
+ensure that the trade is a fair one, however.
+CHOOSING A LICENSEE
+Firms should award licenses only to noncompetitors or to good
+competitors. Since noncompetitors can rapidly become competitors, a ﬁrm
+must minimize the risk of this through the terms of the license or convince
+itself that a noncompetitor will remain so. To ensure that a potential
+licensee is a noncompetitor, a ﬁrm must consider not only the existing
+markets or segments it serves, but also markets it might want to enter in the
+future. Licensing buyers to make some of their needs internally can
+sometimes be desirable to shrink the available market for competitors or
+potential competitors.
+Where a ﬁrm licenses a competitor, it should be a good competitor and
+not just anyone. The same is true when a ﬁrm is compelled to license by
+governments. When licensing noncompetitors, a ﬁrm ideally should license
+noncompetitors that would be good competitors if they later decided to
+enter the industry. Similarly, licenses should contain renewal clauses, when
+possible, in order to avoid a perpetual commitment to turn over technology
+in the event that a licensee becomes a competitor.
+PITFALLS IN LICENSING
+
+
+Firms often hurt rather than help their competitive position by awarding
+licenses. The two most common pitfalls in licensing are to create
+competitors unnecessarily in the process, and to give away a ﬁrm’s
+competitive advantage for a small royalty fee. Licensing often is an easy
+way of increasing short-term proﬁts, but it can result in a long-term erosion
+in proﬁts as a ﬁrm’s competitive advantage dissipates.
+Firms often fail to perceive who their potential competitors are, and thus
+award licenses that come back to haunt them. They may license foreign
+ﬁrms that later enter their home markets. Similarly, many ﬁrms have
+licensed ﬁrms in other industries only to have the licensees ultimately enter
+their own industry. Often the process by which a license agreement sours
+can be quite subtle. A ﬁrm licenses another amid talk of a long-term
+alliance that will strengthen both. Over time, though, the licensee learns
+everything possible, not only about the licensor’s technology but about its
+other value activities. The licensee then decides it can attack the licensor
+successfully and becomes a serious competitor. Asian ﬁrms, which have
+licensed widely, have sometimes used licenses in this way.
+Technological Evolution
+Since technological change has such a powerful role in competition,
+forecasting the path of technological evolution is extremely important to
+allow a ﬁrm to anticipate technological changes and thereby improve its
+position. Most research on how technology evolves in an industry has
+grown out of the product life cycle concept. According to the life cycle
+model, technological change early in the life cycle is focused on product
+innovations, while the manufacturing process remains ﬂexible. As an
+industry matures, product designs begin to change more slowly and mass
+production techniques are introduced. Process innovation takes over from
+product innovation as the primary form of technological activity, with the
+aim of reducing the cost of an increasingly standardized product. Finally, all
+innovation slows down in later maturity and declines as investments in the
+various technologies in the industry reach the point of diminishing returns.
+The product life cycle model has been reﬁned by the work of Abernathy
+and Utterback.7 Initially, in their framework, product design is ﬂuid and
+
+
+substantial product variety is present. Product innovation is the dominant
+mode of innovation, and aims primarily at improving product performance
+instead of lowering cost. Successive product innovations ultimately yield a
+“dominant design” where the optimal product conﬁguration is reached. As
+product design stabilizes, however, increasingly automated production
+methods are employed, and process innovation takes over as the dominant
+innovative mode to lower costs. Ultimately, innovation of both types begins
+to slow down. Recently, the concept of “dematurity” has been added to the
+Abernathy8 framework to recognize the possibility that major technological
+changes can throw an industry back into a ﬂuid state.
+While these hypotheses about the evolution of technology in an industry
+are an accurate portrayal of the process in some industries, the pattern does
+not apply in every industry. In industries with undifferentiated products
+(e.g., minerals, many chemicals), the sequence of product innovations
+culminating in a dominant design does not take place at all or takes place
+very quickly. In other industries (e.g., military and commercial aircraft,
+large turbine generators), automated mass production is never achieved and
+most innovation is product-oriented. Technology evolves differently in
+every industry, just as other industry characteristics do.9 The pattern of
+technological evolution is the result of a number of characteristics of an
+industry, and must be understood in the context of overall industry
+structural evolution. Innovation is both a response to incentives created by
+the overall industry structure and a shaper of that structure.
+Technological evolution in an industry results from the interaction of a
+number of forces:
+• Scale change. As ﬁrm and industry scale increase, new product and
+process technologies may become feasible.
+•  Learning. Firms learn about product design and how to perform
+various value activities over time with resulting changes in the
+technology employed.
+•  Uncertainty reduction and imitation. There are natural pressures for
+standardization as ﬁrms learn more about what buyers want and imitate
+each other.
+
+
+•  Technology diffusion. Technology is diffused through a variety of
+mechanisms described earlier.
+•  Diminishing returns to technological innovation in value activities.
+Technologies may reach limits beyond which further improvement is
+difﬁcult.
+The product life cycle pattern of technological evolution would result if
+these forces interacted in the following way. Through successive product
+innovation and imitation, the uncertainty about appropriate product
+characteristics is reduced and a dominant design emerges. Growing scale
+makes mass production feasible, reinforced by the growing product
+standardization. Technological diffusion eliminates product differences and
+compels process innovation by ﬁrms in order to remain cost competitive.
+Ultimately, diminishing returns to process innovation set in, reducing
+innovative activity altogether.
+Whether the life cycle pattern of technological innovation or some other
+pattern will occur in a particular industry will depend on some particular
+industry characteristics:
+Intrinsic Ability to Physically Differentiate. A product that can be
+physically differentiated, such as an automobile or machine tool, allows
+many possible designs and features. A less differentiable product will
+standardize quickly and other forms of technological activity will be
+dominant.
+Segmentation of Buyer Needs. Where buyer needs differ substantially,
+competitors may introduce more and more specialized designs over time to
+serve different segments.
+Scale and Learning Sensitivity. The extent to which the industry
+technologies are scale- or learning-sensitive relative to industry size will
+inﬂuence the pressure for standardization. High scale economies will create
+pressure over time for standardization despite segmented buyer needs, while
+low scale economies will promote the ﬂowering of product varieties.
+
+
+Technological Linkage Among Value Activities. The technologies in the
+product and in value activities are often linked. Changing one
+subtechnology in the product often requires changing others, for example,
+while changing the production process alters the needs in inbound and
+outbound logistics. Technological linkages among value activities will
+imply that changes in one activity will beget or be affected by technology
+changes in others, affecting the pattern of technological change.
+Substitution Logic. The pressure from substitutes (Chapter 8) is an
+important determinant of the pattern of technological evolution. Whether
+substitutes are threatening based on cost or differentiation will lead to a
+corresponding emphasis in technological change. For example, the initial
+challenge for disposable diapers was to bring their cost into proximity with
+those of cloth diapers and diaper services. A great deal of early innovation
+was in manufacturing methods.
+Technological Limits. Some technologies offer much richer possibilities
+for cost or performance improvement than others. In products like
+commercial aircraft and semiconductors, for example, diminishing returns
+from efforts at product innovation come relatively slowly. The technological
+limits in the various technologies and subtechnologies in the value chain
+will thus affect the path of technological change.
+Sources of Technology. A ﬁnal industry characteristic that shapes the
+pattern of technological change is the source of the technologies employed
+in the industry. The path of technological change is usually more
+predictable when industry-speciﬁc technologies are dominant, and the
+impact of technologies emanating from outside the industry is small.
+Continuous Versus Discontinuous Technological Evolution
+The pattern of technological evolution differs widely among industries
+based on whether technological change is incremental or subject to
+discontinuity. Where there is incremental technological change, the process
+is more likely to be determined by actions of industry participants or
+
+
+spinoffs from these participants. External sources of technology are likely
+to be existing suppliers to an industry.
+Where there is technological discontinuity, the sources of technology are
+much more likely to be outside the industry. Entirely new competitors or
+new suppliers to the industry are more likely to have an important role.
+Technological discontinuity also tends to decouple the pattern of
+technological innovation from the state of industry maturity, because
+outside sources of technology are less responsive to industry circumstances
+than the R&D departments of industry participants.
+Technological discontinuity creates the maximum opportunity for shifts
+in relative competitive position. It tends to nullify many ﬁrst-mover
+advantages and mobility barriers built on the old technology. Discontinuity
+also may require wholesale changes in the value chain rather than changes
+in one activity. Hence a period of technological discontinuity makes market
+positions more ﬂuid, and is a time during which market shares can ﬂuctuate
+greatly.
+Forecasting Technological Evolution
+A ﬁrm can use this framework to forecast the likely path of technological
+evolution in its industry. In commercial aircraft, for example, the product is
+highly differentiable. However, there are large scale economies in product
+design which limit the number of product varieties that are developed. The
+ﬂexibility of production means that the production process is no barrier to
+continuous and long-lasting efforts at product innovation. Thus the aircraft
+industry is one where we would expect continuous product R&D. The
+ﬂexibility of the production process would also allow us to expect a
+continuous search for new materials and components that would be much
+less likely in an industry with heavy automation.
+With some insight into the likely pattern of technological evolution, a
+ﬁrm may be able to anticipate changes and move early to reap competitive
+advantage. However, there will always be uncertainty wherever technology
+is involved. Uncertainty over future technological evolution is a major
+reason why a ﬁrm may want to employ industry scenarios in considering its
+choice of strategies. Industry scenarios are discussed in detail in Chapter 13.
+
+
+Formulating Technological Strategy
+The concepts in this chapter suggest a number of analytical steps in
+formulating technological strategy in order to turn technology into a
+competitive weapon rather than a scientiﬁc curiosity.
+1. Identify all the distinct technologies and subtechnologies in the value
+chain. Every value activity involves one or more technologies. The starting
+point in formulating technological strategy is to identify all the technologies
+and subtechnologies, no matter how mundane, that are employed either by
+the ﬁrm or its competitors. In addition, a ﬁrm must gain a similar if not as
+deep understanding of the technologies in its suppliers’ and buyers’ value
+chains, which often are interdependent with its own. Firms often focus on
+product technology or on technology in the basic manufacturing operation.
+They ignore technologies in other value activities, and pay little attention to
+the technology for developing technology.
+2. Identify potentially relevant technologies in other industries or under
+scientiﬁc development. Often technologies come from outside an industry
+and such technologies can be a source of discontinuous change and
+competitive disruption in an industry. Each value activity must be examined
+to see if outside technologies are present that might be applicable.
+Information systems, new materials, and electronics should always be
+investigated thoroughly. All three are having a revolutionary impact in
+creating new technologies or allowing new technological combinations of
+old technologies.
+3. Determine the likely path of change of key technologies. A ﬁrm must
+assess the likely direction of technological change in each value activity and
+in buyer and supplier value chains, including technologies whose sources
+are unrelated to the industry. No technology should be assumed to be
+mature. Subtechnologies of it may be changing or maturity may be only a
+sign of little effort at technological innovation.
+4.  Determine which technologies and potential technological changes
+are most signiﬁcant for competitive advantage and industry structure. Not
+all the technologies in the value chain will have signiﬁcance for
+competition. The signiﬁcant technological changes are those that meet the
+four tests described in this chapter:
+
+
+• Create a sustainable competitive advantage themselves
+• Shift cost or uniqueness drivers in favor of a ﬁrm
+• Lead to ﬁrst-mover advantages
+• Improve overall industry structure
+A ﬁrm must isolate these technologies, and understand how they will affect
+cost, differentiation, or industry structure. Supplier and buyer technologies
+are often among the most important in this respect. Critical technologies
+will be those with a major effect on cost or differentiation, and where a
+technological lead is sustainable.
+5. Assess a ﬁrm’s relative capabilities in important technologies and the
+cost of making improvements. A ﬁrm must know its relative strengths in key
+technologies, as well as make a realistic assessment of its ability to keep up
+with technological change. Considerations of pride should not obscure such
+an assessment or a ﬁrm will squander resources is an area in which it has
+little hope of contributing to its competitive advantage.
+6. Select a technology strategy, encompassing all important technologies,
+that reinforces the ﬁrm’s overall competitive strategy. Technology strategy
+must reinforce the competitive advantage a ﬁrm is seeking to achieve and
+sustain. The most important technologies for competitive advantage are
+those where a ﬁrm can sustain its lead, where drivers of cost or
+differentiation are skewed in its favor, or where the technology will translate
+into ﬁrst-mover advantages. As described earlier, ﬁrms can do a lot to
+reinforce advantages gained through technology through investments in
+other areas.
+Included in a ﬁrm’s technological strategy should be the following:
+•  A ranking of R&D projects that reﬂects their signiﬁcance for
+competitive advantage. No project should be approved without a
+rationale describing its effect on cost and/or differentiation.
+•  Choices about technological leadership or followership in important
+technologies.
+•  Policies toward licensing that enhance overall competitive position
+rather than reﬂect short-term proﬁt pressures.
+
+
+• Means of obtaining needed technology externally, if necessary, through
+licenses or otherwise.
+7. Reinforce business unit technology strategies at the corporate level.
+While technology is ultimately linked to individual business units, a
+diversiﬁed ﬁrm can play two key roles to strengthen its overall
+technological position. The ﬁrst is to assist in monitoring technologies for
+possible business unit impacts. A corporate group can usefully invest in
+identifying and analyzing all streams of technology that might have wide
+impact, and then feed that information to business units. A corporate role in
+monitoring such technologies as information systems, ofﬁce automation,
+factory automation, materials, and biotechnology is often highly desirable.
+The second key corporate role in technological strategy is in ﬁnding,
+exploiting, and creating technological interrelationships among business
+units. A business unit can gain competitive advantage if it can exploit
+technological interrelationships with others, as Chapter 9 describes in some
+detail.
+The following speciﬁc actions at the corporate, sector, or group level can
+strengthen a ﬁrm’s overall technological position:
+• Identify core technologies for the corporation that impact many units.
+• Ensure that active and coordinated research efforts are underway, and
+that technology migrates among business units.
+• Fund corporate research in important technologies to create a critical
+mass of knowledge and people.
+• Use acquisitions or joint ventures to introduce new technological skills
+to the corporation, or to invigorate existing skills.
+
+
+6
+Competitor Selection
+Competitors are viewed by most ﬁrms as a threat. Attention is centered on
+how a ﬁrm can gain share against them and how their entry can be
+prevented in the ﬁrst place. Competitors, goes this line of thought, are the
+enemy and must be eliminated. More market share is also usually seen as
+being better than less, a viewpoint given reinforcement by adherents of the
+experience curve.
+While competitors can surely be threats, the right competitors can
+strengthen rather than weaken a ﬁrm’s competitive position in many
+industries. “Good” competitors can serve a variety of strategic purposes that
+increase a ﬁrm’s sustainable competitive advantage and improve the
+structure of its industry. Accordingly, it is often desirable for a ﬁrm to have
+one or more “good” competitors, and even to deliberately forgo market
+share rather than to attempt to increase it. More market share can frequently
+be worse than less. At the same time, a ﬁrm should concentrate its efforts on
+attacking “bad” competitors while maintaining relative position vis-à-vis
+good ones. These principles apply to market leaders and followers alike.
+This chapter will describe how a ﬁrm can understand and inﬂuence its
+array of competitors to increase its competitive advantage and improve
+industry structure. It will help a ﬁrm identify which are the right
+competitors to attack, and avoid battling competitors who are beneﬁting its
+own position and industry structure. I begin by identifying the potential
+beneﬁts of having competitors. Next I describe how a ﬁrm can recognize a
+“good” competitor and distinguish it from a bad one. Having laid this
+groundwork, I show how a ﬁrm can inﬂuence whom it competes with, and

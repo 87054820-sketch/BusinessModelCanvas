@@ -1,0 +1,917 @@
+# Notes
+
+10.    Geoffrey Parker and Marshall Van Alstyne, “Information Complements, Substitutes and
+Strategic Product Design,” Proceedings of the Twenty-First International Conference on
+Information Systems (Association for Information Systems, 2000), 13–15; Geoffrey Parker and
+Marshall Van Alstyne, “Internetwork Externalities and Free Information Goods,” Proceedings
+of the Second ACM Conference on Electronic Commerce (Association for Computing
+Machinery, 2000), 107–16; Geoffrey Parker and Marshall Van Alstyne, “Two-Sided Network
+Effects: A Theory of Information Product Design,” Management Science 51, no. 10 (2005):
+1494–1504.
+11.  M. Rysman, “The Economics of Two-Sided Markets,” Journal of Economic Perspectives 23,
+no. 3 (2009): 125–43.
+12.  Paul David, “Clio and the Economics of QWERTY,” American Economic Review 75 (1985):
+332–7.
+13.  UN Data: https://data.un.org/Host.aspx?Content=Tools.
+14.  Christian Rudder, “Your Looks and Your Inbox,” OkCupid, http://blog
+.okcupid.com/index.php/your-looks-and-online-dating/.
+15.    Jiang Yang, Lada A. Adamic, and Mark S. Ackerman, “Crowdsourcing and Knowledge
+Sharing: Strategic User Behavior on taskcn,” Proceedings of the Ninth ACM Conference on
+Electronic Commerce (Association for Computing Machinery, 2008), 246–55; Kevin Kyung
+Nam, Mark S. Ackerman, and Lada A. Adamic, “Questions In, Knowledge In?: A Study of
+Naver’s Question Answering Community,” Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems (Special Interest Group on Computer–Human Interaction,
+2009), 779–88. 
+16.  Barry Libert, Yoram (Jerry) Wind, and Megan Beck Fenley, “What Airbnb, Uber, and Alibaba
+Have 
+in 
+Common,” 
+Harvard 
+Business 
+Review, 
+November 
+20, 
+2014,
+https://hbr.org/2014/11/what-airbnb-uber-and-alibaba-have-in-common.
+17.  Andrei Hagiu and Julian Wright, “Marketplace or Reseller?” Management Science 61, no. 1
+(January 2015): 184–203.
+18.  Clay Shirky, Here Comes Everybody: The Power of Organizing Without Organizations (New
+York: Penguin, 2008).
+19.  Henry Chesbrough, Open Innovation: The New Imperative for Creating and Profiting from
+Technology (Cambridge, MA: Harvard Business School Press, 2003).
+CHAPTER 3: ARCHITECTURE
+1.    Charles B. Stabell and Øystein D. Fjeldstad, “Configuring Value for Competitive Advantage:
+On Chains, Shops, and Networks,” Strategic Management Journal 19, no. 5 (1998): 413–37.
+2.    Rajiv Banker, Sabyasachi Mitra, and Vallabh Sambamurthy, “The Effects of Digital Trading
+Platforms on Commodity Prices in Agricultural Supply Chains,” MIS Quarterly 35, no. 3
+(2011): 599–611.
+3.    “Hop In and Shove Over,” Businessweek, February 2, 2015.
+4.        Mark Scott and Mike Isaac, “Uber Joins the Bidding for Here, Nokia’s Digital Mapping
+Service,” New York Times, May 7, 2015.
+5.    Adam Lashinsky, “Uber Banks on World Domination,” Fortune, October 6, 2014.
+6.    J. H. Saltzer, D. P. Reed, and D. D. Clark, “End-to-End Arguments in System Design,” ACM
+Transactions on Computer Systems 2, no. 4 (1984): 277–88.
+7.        Steve Lohr, “First the Wait for Microsoft Vista; Now the Marketing Barrage,” New York
+Times, January 30, 2007.
+
+
+8.        Denise Dubie, “Microsoft Struggling to Convince about Vista,” Computerworld UK,
+November 19, 2007, http://www.computerworlduk.com/news/it-vendors/microsoft-struggling-
+to-convince-about-vista-6258/.
+9.    Robin Bloor, “10 Reasons Why Vista is a Disaster,” Inside Analysis, December 18, 2007,
+http://insideanalysis.com/2007/12/10-reasons-why-vista-is-a-disaster/2/.
+10. 
+ 
+See 
+https://en.wikipedia.org/wiki/Windows_Vista 
+and
+https://en.wikipedia.org/wiki/Windows_XP.
+11.  Steve Lohr and John Markoff, “Windows Is So Slow, but Why?” New York Times, March 27,
+2006, http://www.nytimes.com/2006/03/27/technology/27soft.html?_r=1.
+12.  Carliss Young Baldwin and Kim B. Clark, Design Rules: The Power of Modularity, vol. 1
+(Cambridge, MA: MIT Press, 2000).
+13.    Robert S. Huckman, Gary P. Pisano, and Liz Kind, “Amazon Web Services,” Harvard
+Business School Case 609-048, 2008.
+14.  Carliss Young Baldwin and Kim B. Clark, “Managing in an Age of Modularity,” Harvard
+Business Review 75, no. 5 (1996): 84–93.
+15.    Carliss Young Baldwin and C. Jason Woodard, “The Architecture of Platforms: A Unified
+View,” 
+Harvard 
+Business 
+School 
+Working 
+Paper 
+09-034,
+http://www.hbs.edu/faculty/Publication%20Files/09-034_149607b7-2b95-4316-b4b6-
+1df66dd34e83.pdf.
+16.    Daniel Jacobson, Greg Brail, and Dan Woods, APIs: A Strategy Guide (Cambridge, MA:
+O’Reilly, 2012).
+17.  Peter C. Evans and Rahul C. Basole, “Decoding the API Economy with Visual Analytics,”
+Center for Global Enterprise, September 2, 2015, http://thecge.net/decoding-the-api-economy-
+with-visual-analytics/.
+18.  Michael G. Jacobides and John Paul MacDuffie, “How to Drive Value Your Way,” Harvard
+Business Review 91, no. 7/8 (2013): 92–100.
+19.    Amrit Tiwana, Platform Ecosystems: Aligning Architecture, Governance, and Strategy
+(Burlington, MA: Morgan Kaufmann, 2013), ch. 5.
+20.  Steven Eppinger and Tyson Browning, Design Structure Matrix Methods and Applications
+(Cambridge, MA: MIT Press, 2012).
+21.    Alan MacCormack and Carliss Young Baldwin, “Exploring the Structure of Complex
+Software Designs: An Empirical Study of Open Source and Proprietary Code,” Management
+Science 52, no. 7 (2006): 1015–30.
+22.  Andy Grove, Only the Paranoid Survive (New York: Doubleday, 1996).
+23.  Michael A. Cusumano and Annabelle Gawer, “The Elements of Platform Leadership,” MIT
+Sloan Management Review 43, no. 3 (2002): 51.
+24.  Edward G. Anderson, Geoffrey G. Parker, and Burcu Tan, “Platform Performance Investment
+in the Presence of Network Externalities,” Information Systems Research 25, no. 1 (2014):
+152–72.
+25.  Interested readers who wish to learn more might begin with the following managerial works:
+Charles H. Fine, Clockspeed: Winning Industry Control in the Age of Temporary Advantage
+(New York: Basic Books, 1998); N. Venkatraman and John C. Henderson, “Real Strategies for
+Virtual Organizing,” MIT Sloan Management Review 40, no. 1 (1998): 33; and Daniel E.
+Whitney, “Manufacturing by Design,” Harvard Business Review 66, no. 4 (1988): 83–91.
+There is also a tremendous volume of academic work on modularity. Readers who wish to
+explore the subject might start with the following academic works: Baldwin and Clark, Design
+Rules; Timothy F. Bresnahan and Shane Greenstein, “Technological Competition and the
+Structure of the Computer Industry,” Journal of Industrial Economics 47, no. 1 (1999): 1–40;
+Viswanathan Krishnan and Karl T. Ulrich, “Product Development Decisions: A Review of the
+
+
+Literature,” Management Science 47, no. 1 (2001): 1–21; Ron Sanchez and Joseph T.
+Mahoney, “Modularity, Flexibility, and Knowledge Management in Product and Organization
+Design,” Strategic Management Journal 17, no. S2 (1996): 63–76; Melissa A. Schilling,
+“Toward a General Modular Systems Theory and Its Application to Interfirm Product
+Modularity,” Academy of Management Review 25, no. 2 (2000): 312–34; Herbert A. Simon,
+The Sciences of the Artificial (Cambridge, MA: MIT Press, 1969); and Karl Ulrich,
+Fundamentals of Product Modularity (Heidelberg, Germany: Springer Netherlands, 1994).
+CHAPTER 4: DISRUPTION
+1.    Chris Gayomali, “The Two Startups that Joined the $40 Billion Club in 2014,” Fast Company,
+December 30, 2014, http://www.fastcompany.com/3040367/the-two-startups-that-joined-the-
+40-billion-club-in-2014.
+2.    Kara Swisher, “Man and Uber Man,” Vanity Fair, December 2014; Jessica Kwong, “Head of
+SF Taxis to Retire,” San Francisco Examiner, May 30, 2014; Alison Griswold, “The Million-
+Dollar New York City Taxi Medallion May Be a Thing of the Past,” Slate, December 1, 2014,
+http://www.slate.com/blogs/moneybox/2014/12/01/new_york_taxi_medallions_did_tlc_transa
+ction_data_inflate_the_price_of_driving.html.
+3.    Swisher, “Man and Uber Man.”
+4.    Zack Kanter, “How Uber’s Autonomous Cars Will Destroy 10 Million Jobs and Reshape the
+Economy by 2025,” CBS SF Bay Area, sanfrancisco.cbslocal.com/2015/01/27/how-ubers-
+autonomous-cars-will-destroy-10-million-jobs-and-reshape-the-economy-by-2025-lyft-google-
+zack-kanter/.
+5.    Swisher, “Man and Uber Man.”
+6.    Marc Andreessen, “Why Software Is Eating the World,” Wall Street Journal, August 20, 2011,
+http://www.wsj.com/articles/SB10001424053111903480904576512250915629460.
+7.        Phil Simon,  The Age of the Platform: How Amazon, Apple, Facebook, and Google Have
+Redefined Business (Henderson, NV: Motion Publishing, 2011).
+8.    Feng Zhu and Marco Iansiti, “Entry into Platform-Based Markets,” Strategic Management
+Journal 33, no. 1 (2012): 88–106.
+9.    Jason Tanz, “How Airbnb and Lyft Finally Got Americans to Trust Each Other,” Wired, April
+23, 2014, http://www.wired.com/2014/04/trust-in-the-share-economy/.
+10.    Arun Sundararajan, “From Zipcar to the Sharing Economy,” Harvard Business Review,
+January 3, 2013, https://hbr.org/2013/01/from-zipcar-to-the-sharing-eco/.
+11.  Dan Charles, “In Search of a Drought Strategy, California Looks Down Under,” The Salt,
+NPR, August 19, 2015, http://www.npr.org/sections/thesalt/2015/08/19/432885101/in-search-
+of-salvation-from-drought-california-looks-down-under.
+12.  Simon, The Age of the Platform.
+13.  Hemant K. Bhargava and Vidyanand Choudhary, “Economics of an Information Intermediary
+with Aggregation Benefits,” Information Systems Research 15, no. 1 (2004): 22–36.
+14.    Marco Ceccagnoli, Chris Forman, Peng Huang, and D. J. Wu, “Cocreation of Value in a
+Platform Ecosystem: The Case of Enterprise Software,” MIS Quarterly 36, no. 1 (2012): 263–
+90.
+15.  DC Rainmaker blog, “Under Armour (owner of MapMyFitness) buys both MyFitnessPal and
+Endomondo,” February 4, 2015, http://www
+.dcrainmaker.com/2015/02/mapmyfitness-myfitnesspal-endomondo
+.html.
+
+
+16.  Peter C. Evans and Marco Annunziata, “Industrial Internet: Pushing the Boundaries of Minds
+and 
+Machines,” 
+General 
+Electric, 
+November 
+26, 
+2012,
+http://www.ge.com/docs/chapters/Industrial_Internet.pdf.
+17. 
+ 
+Accenture 
+Technology, 
+“Vision 
+2015 
+– 
+Trend 
+3: 
+Platform 
+(R)evolution,”
+http://techtrends.accenture.com/us-
+en/downloads/Accenture_Technology_Vision%202015_Platform_Revolution.pdf. 
+Accessed
+October 13, 2015.
+18.  Barry Wacksman and Chris Stutzman, Connected by Design: Seven Principles for Business
+Transformation Through Functional Integration (New York: John Wiley and Sons, 2014).
+CHAPTER 5: LAUNCH
+1.        Eric M. Jackson, “How eBay’s purchase of PayPal changed Silicon Valley,” VentureBeat,
+October 27, 2012, http://venturebeat.com/2012/10/27/how-ebays-purchase-of-paypal-changed-
+silicon-valley/.
+2.    Blake Masters, “Peter Thiel’s CS183: Startup—Class 2 Notes Essay,” Blake Masters blog,
+April 6, 2012, http://blakemasters.com/post/20582845717/peter-thiels-cs183-startup-class-2-
+notes-essay. Copyright 2014 by David O. Sacks. Reprinted by permission.
+3.    Eric M. Jackson, The PayPal Wars: Battles with eBay, the Media, the Mafia, and the Rest of
+Planet Earth (Los Angeles: WND Books, 2012).
+4.        Andrei Hagiu and Thomas Eisenmann, “A Staged Solution to the Catch-22,” Harvard
+Business Review 85, no. 11 (2007): 25–26.
+5.        Annabelle Gawer and Rebecca Henderson, “Platform Owner Entry and Innovation in
+Complementary Markets: Evidence from Intel,” Journal of Economics and Management
+Strategy 16, no. 1 (2007): 1–34.
+6.    Joel West and Michael Mace, “Browsing as the Killer App: Explaining the Rapid Success of
+Apple’s iPhone,” Telecommunications Policy 34, no. 5 (2010): 270–86.
+7.        K. J. Boudreau, “Let a Thousand Flowers Bloom? An Early Look at Large Numbers of
+Software App Developers and Patterns of Innovation,” Organization Science 23, no. 5 (2012):
+1409–27.
+8.    Ciara O’Rourke, “Swiss Postal Service Is Moving Some Mail Online,” New York Times, July
+13, 2009.
+9.    Ellen Wallace, “Swiss Post Set to Become Country’s Largest Apple Seller,” Genevalunch,
+June 28, 2012, http://genevalunch.com/2012/06/28/swiss-post-set-to-become-countrys-largest-
+apple-seller/.
+10.  Mark Suster, “Why Launching Your Startup at SXSW Is a Bad Idea,” Fast Company, February
+13, 2013.
+11.  “Instagram Tips: Using Hashtags,” Instagram blog, http://blog
+.instagram.com/post/17674993957/instagram-tips-using-hashtags.
+CHAPTER 6: MONETIZATION
+1.        Research Network, September 12, 2012, http://papers.ssrn.com/sol3/papers.cfm?
+abstract_id=1676444.
+2.    Parker and Van Alstyne, “Internetwork Externalities and Free Information Goods”; Geoffrey
+G. Parker and Marshall Van Alstyne, “Two-Sided Network Effects: A Theory of Information
+Product Design,” Management Science 51, no. 10 (2005); Eisenmann, Parker, and Van
+Alstyne, “Strategies for Two-Sided Markets.”
+
+
+3.    Jean-Charles Rochet and Jean Tirole, “Platform Competition in Two-Sided Markets,” Journal
+of the European Economic Association 1, no. 4 (2003): 990–1029.
+4. 
+ 
+ 
+ 
+Rob 
+Hof, 
+“Meetup’s 
+Challenge,” 
+Businessweek, 
+April 
+14, 
+2005,
+http://www.businessweek.com/stories/2005-04-13/meetups-challenge.
+5.        Matt Linderman, “Scott Heiferman Looks Back at Meetup’s Bet-the-Company Moment,”
+Signal v. Noise, January 25, 2011, https://signalvnoise.com/posts/2751-scott-heiferman-looks-
+back-at-meetups-bet-the-company-moment-.
+6.    Stuart Dredge, “MySpace—What Went Wrong,” Guardian, March 6, 2015.
+CHAPTER 7: OPENNESS
+1.        Nigel Scott, “Wikipedia: Where Truth Dies Online,” Spiked, April 29, 2014,
+http://www.spiked-online.com/newsite/article/wikipedia-where-truth-dies-
+online/14963#.U7RzHxbuSQ2.
+2.    Thomas R. Eisenmann, Geoffrey G. Parker, and Marshall Van Alstyne, “Opening Platforms:
+How, When and Why?” chapter 6 in Platforms, Markets and Innovation, edited by Annabelle
+Gawer (Cheltenham, UK, and Northampton, MA: Edward Elgar, 2009).
+3.        Kevin Boudreau, “Open Platform Strategies and Innovation: Granting Access Versus
+Devolving Control,” Management Science 56, no. 10 (2010): 1849–72.
+4.        Andrei Hagiu and Robin S. Lee, “Exclusivity and Control,” Journal of Economics and
+Management Strategy 20, no. 3 (Fall 2011): 679–708.
+5.    Joel West, “How Open Is Open Enough? Melding Proprietary and Open Source Platform
+Strategies,” Research Policy 32, no. 7 (2003): 1259–85; Henry William Chesbrough, Open
+Innovation: The New Imperative for Creating and Profiting from Technology (Cambridge,
+MA: Harvard Business School Press, 2006).
+6.    Felix Gillette, “The Rise and Inglorious Fall of Myspace,” Businessweek, June 22, 2011.
+7.    Simon, The Age of the Platform.
+8.        Catherine Rampell, “Widgets Become Coins of the Social Realm,” Washington Post,
+November 3, 2011, D01.
+9.    Peng Huang, Marco Ceccagnoli, Chris Forman, and D. J. Wu, “Appropriability Mechanisms
+and the Platform Partnership Decision: Evidence from Enterprise Software,” Management
+Science 59, no. 1 (2013): 102–21.
+10.    Thomas R. Eisenmann, “Managing Proprietary and Shared Platforms,” California
+Management Review 50, no. 4 (2008): 31–53.
+11.  Eisenmann, Parker, and Van Alstyne, “Opening Platforms.”
+12.  “Android and iOS Squeeze the Competition, Swelling to 96.3% of the Smartphone Operating
+System Market for Both 4Q14 and CY14, According to IDC,” press release, International Data
+Corporation, February 24, 2015, http://www.idc.com/getdoc.jsp?containerId=prUS25450615.
+13.  Matt Rosoff, “Should Google Ditch Android Open Source?” Business Insider, April 10, 2015,
+http://www.businessinsider.com/google-should-ditch-android-open-source-2015-4; 
+Ron
+Amadeo, “Google’s Iron Grip on Android—Controlling Open Source By Any Means
+Necessary,” Arstechnica, October 20, 2013, http://arstechnica.com/gadgets/2013/10/googles-
+iron-grip-on-android-controlling-open-source-by-any-means-necessary/.
+14.    Rahul Basole and Peter Evans, “Decoding the API Economy with Visual Analytics Using
+Programmable 
+Web 
+Data,” 
+Center 
+for 
+Global 
+Enterprise, 
+September 
+2015,
+http://thecge.net/decoding-the-api-economy-with-visual-analytics/.
+15.    Shannon Pettypiece, “Amazon Passes Wal-Mart as Biggest Retailer by Market Cap,”
+BloombergBusiness, 
+July 
+23, 
+2015, 
+http://www.bloomberg.com/news/articles/2015-07-
+
+
+23/amazon-surpasses-wal-mart-as-biggest-retailer-by-market-value.
+16.  Bala Iyer and Mohan Subramaniam, “The Strategic Value of APIs,” Harvard Business Review,
+January 7, 2015, https://hbr.org/2015/01/the-strategic-value-of-apis.
+17.  Charles Duhigg, “How Companies Learn Your Secrets,” New York Times, February 16, 2012,
+http://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=all.
+18.  Wade Roush, “The Story of Siri, from Birth at SRI to Acquisition by Apple—Virtual Personal
+Assistants 
+Go 
+Mobile,” 
+xconomy, 
+June 
+14, 
+2010, 
+http://www.xconomy.com/san-
+francisco/2010/06/14/the-story-of-siri-from-birth-at-sri-to-acquisition-by-apple-virtual-
+personal-assistants-go-mobile/?single_page=true.
+19.  “A letter from Tim Cook on Maps,” Apple, http://www.apple.com/letter-from-tim-cook-on-
+maps/.
+20.  Amadeo, “Google’s Iron Grip on Android.”
+CHAPTER 8: GOVERNANCE
+1.        Josh Dzieza, “Keurig’s Attempt to DRM Its Coffee Cups Totally Backfired,” The Verge,
+February 5, 2015, http://www.theverge
+.com/2015/2/5/7986327/keurigs-attempt-to-drm-its-coffee-cups-totally-backfired.
+2.    Geoffrey G. Parker and Marshall Van Alstyne, “Innovation, Openness and Platform Control,”
+October 3, 2014, available at SSRN at http://ssrn.com/abstract=1079712.
+3.       Tiwana, Platform Ecosystems; Youngin Yoo, Richard J. Boland, Kalle Lyytinen, and Ann
+Majchrzak, “Organizing for Innovation in the Digitized World,” Organization Science 23, no.
+15 (2012): 1398–1408.
+4.        J. R. Raphael, “Facebook Privacy: Secrets Unveiled,” PCWorld, May 16, 2010,
+http://www.pcworld.com/article/196410/Facebook_Privacy_Secrets_Unveiled.html.
+5.    Brad McCarty, “LinkedIn Lockout and the State of CRM,” Full Contact, March 28, 2014,
+https://www.fullcontact.com/blog/linkedin-state-of-crm-2014/.
+6.        Nitasha Tiku and Casey Newton, “Twitter CEO: ‘We Suck at Dealing with Abuse,’” The
+Verge, February 4, 2015, http://www
+.theverge.com/2015/2/4/7982099/twitter-ceo-sent-memo-taking-personal-responsibility-for-
+the.
+7.    Juro Osawa, “How to Understand Alibaba’s Business Model,” MarketWatch, March 15, 2014,
+http://www.marketwatch.com/story/how-to-understand-alibabas-business-model-2014-03-15-
+94855847.
+8.        Brad Burnham, “Web Services as Governments,” Union Square Ventures, June 10, 2010,
+https://www.usv.com/blog/web-services-as-governments.
+9.        Wolfram Knowledgebase, https://www.wolfram.com/knowledgebase/. Accessed May 30,
+2015.
+10.  “Politicians,” Corrupt Practices Investigation Bureau, https://www.cpib
+.gov.sg/cases-interest/cases-involving-public-sector-officers/politicians. Accessed October 13,
+2015.
+11. 
+ 
+“Corrupt 
+Perceptions 
+Index,” 
+Wikipedia,
+http://en.wikipedia.org/wiki/Corruption_Perceptions_Index, accessed October 13, 2015; B.
+Podobnik, J. Shao, D. Njavro, P. C. Ivanov, and H. E. Stanley, “Influence of Corruption on
+Economic Growth Rate and Foreign Investment,” European Physical Journal B-Condensed
+Matter and Complex Systems 63, no. 4:547–50.
+12.  Estimate based on data from Wolfram Knowledgebase. Accessed October 13, 2015.
+
+
+13.    Daron Acemoglu, Simon Johnson, and James A. Robinson, “The Colonial Origins of
+Comparative Development: An Empirical Investigation,” American Economic Review 91, no.
+5 (2001): 1369–1401; D. Acemoglu, S. Johnson, and J. A. Robinson, “Reversal of Fortune:
+Geography and Institutions in the Making of the Modern World Income Distribution,”
+Quarterly Journal of Economics 117, no. 4 (2002): 1231–94; Gavin Clarkson and Marshall
+Van Alstyne, “The Social Efficiency of Fairness,” Gruter Institute Squaw Valley Conference:
+Innovation and Economic Growth, October 2010.
+14.    Roger Protz, “Arctic Ale, 1845,” Beer Pages, March 23, 2011, http://www.beer-
+pages.com/stories/arctic-ale.htm; Jeremy Singer-Vine, “How Long Can You Survive on Beer
+Alone?” 
+Slate, 
+April 
+28, 
+2011,
+http://www.slate.com/articles/news_and_politics/explainer/2011/04/how_long_can_you_survi
+ve_on_beer_alone.html.
+15. 
+ 
+“Allsopp’s 
+Arctic 
+Ale, 
+The 
+$500,000 
+eBay 
+Typo,” 
+New 
+Life 
+Auctions,
+http://www.newlifeauctions.com/allsopp.html, accessed October 13, 2015. In fact, the winning
+bid was $503,300, but it is unclear whether anyone actually paid this amount.
+16.  Hillel Aron, “How eBay, Amazon and Alibaba Fuel the World’s Top Illegal Industry—The
+Counterfeit 
+Products 
+Market,” 
+LA 
+Weekly, 
+December 
+3, 
+2014,
+http://www.laweekly.com/news/how-ebay-amazon-and-alibaba-fuel-the-worlds-top-illegal-
+industry-the-counterfeit-products-market-5261019.
+17.   Andrei Shleifer and Robert W. Vishny, “A Survey of Corporate Governance,”  Journal of
+Finance 52, no. 2 (1997): 737–83, esp. 737.
+18.  Steve Denning, “The Dumbest Idea in the World: Maximizing Shareholder Value,” Forbes,
+November 28, 2011, http://www
+.forbes.com/sites/stevedenning/2011/11/28/maximizing-shareholder-value-the-dumbest-idea-
+in-the-world/.
+19.  Alvin E. Roth, “The Art of Designing Markets,” Harvard Business Review 85, no. 10 (2007):
+118.
+20.  Lawrence Lessig, Code and Other Laws of Cyberspace (New York: Basic Books, 1999).
+21.  Dana Sauchelli and Bruce Golding, “Hookers Turning Airbnb Apartments into Brothels,” New
+York Post, April 14, 2014, http://nypost.com/2014/04/14/hookers-using-airbnb-to-use-
+apartments-for-sex-sessions/; Amber Stegall, “Craigslist Killers: 86 Murders Linked to
+Popular Classifieds Website,” WAFB 9 News, Baton Rouge, LA, April 9, 2015,
+http://www.wafb.com/story/28761189/craigslist-killers-86-murders-linked-to-popular-
+classifieds-website.
+22.    Apple, “iTunes Store—Terms and Conditions,” http://www.apple.com/legal/internet-
+services/itunes/us/terms.html. Accessed May 20, 2015.
+23.  Apple, “iOS Developer Program License Agreement,” https://developer
+.apple.com/programs/terms/ios/standard/ios_program_standard_agreement_20140909.pdf.
+Accessed May 20, 2015.
+24. 
+ 
+Stack 
+Overflow, 
+“Privileges,” 
+Stack 
+Overflow 
+help 
+page,
+http://stackoverflow.com/help/privileges. Accessed May 20, 2015.
+25.    Rebecca Grant and Meghan Stothers, “iStockphoto.Com: Turning Community Into
+Commerce,” Richard Ivey School of Business Case 907E13, 2011.
+26.    Michael Dunlop, “Interview With Bruce Livingstone—Founder and CEO of iStockphoto,”
+Retire at 21, http://www.retireat21.com/interview/interview-with-bruce-livingstone-founder-
+of-istockphoto.
+27.  Grant and Stothers, “iStockphoto.Com,” 3.
+28.  Nir Eyal, Hooked: How to Build Habit-Forming Products (Toronto: Penguin Canada, 2014).
+
+
+29.    Nir Eyal, “Hooks: An Intro on How to Manufacture Desire,” Nir & Far,
+http://www.nirandfar.com/2012/03/how-to-manufacture-desire
+.html. Accessed October 13, 2015.
+30.  Elinor Ostrom, Governing the Commons: The Evolution of Institutions for Collective Action
+(New York: Cambridge University Press, 1990).
+31.  Jeff Jordan, “Managing Tensions In Online Marketplaces,” TechCrunch, February 23, 2015,
+http://techcrunch.com/2015/02/23/managing-tensions-in-online-marketplaces/.
+32.  Ibid.
+33.    Charles Moldow, “A Trillion Dollar Market, By the People, For the People,” Foundation
+Capital,
+https://foundationcapital.com/downloads/FoundationCap_MarketplaceLendingWhitepaper.pdf
+.
+34.    Sangeet Choudhary, “Will Peer Lending Platforms Disrupt Banking?” Platform Thinking,
+http://platformed.info/peer-lending-platforms-disrupt-banking/.
+35.    Michael Lewis,  Flash Boys: A Wall Street Revolt (New York: Norton, 2014); P. Martens,
+“Goldman Sachs Drops a Bombshell on Wall Street,” Wall Street on Parade, April 9, 2014,
+http://wallstreetonparade
+.com/2014/04/goldman-sachs-drops-a-bombshell-on-wall-street/.
+36.  Michael Lewis, “Michael Lewis Reflects on his Book Flash Boys, a Year after It Shook Wall
+Street to its Core,” Vanity Fair, April 2015, http://www.vanityfair.com/news/2015/03/michael-
+lewis-flash-boys-one-year-later.
+37.    William Mougayar, “Understanding the Blockchain,” Radar, January 16, 2015,
+http://radar.oreilly.com/2015/01/understanding-the-blockchain.html.
+38.  Ibid.
+39.    Tamara McCleary, “Got Influence? What’s Social Currency Got To Do With It?” Tamara
+McCleary blog, December 1, 2014, http://tamaramccleary.com/got-influence-social-currency/.
+40.  Grant and Stothers, “iStockphoto.Com,” 3.
+41.  Hind Benbya and Marshall Van Alstyne, “How to Find Answers within Your Company,” MIT
+Sloan Management Review 52, no. 2 (2011): 65–75.
+42.  Peng Huang, Marco Ceccagnoli, Chris Forman, and D. J. Wu, “IT Knowledge Spillovers and
+Productivity: Evidence from Enterprise Software,” Working Paper, University of Maryland
+and Georgia Institute of Technology, April 2, 2013, http://ssrn.com/abstract=2243886.
+43.  Benbya and Van Alstyne, “How to Find Answers within Your Company.”
+44.  Geoffrey G. Parker and Marshall Van Alstyne, “Innovation, Openness, and Platform Control.”
+45.  Arvind Malhotra and Marshall Van Alstyne, “The Dark Side of the Sharing Economy … and
+How to Lighten It,” Communications of the ACM 57, no. 11 (2014): 24–27.
+46.  Julie Bort, “An Airbnb Guest Held a Huge Party in This New York Penthouse and Trashed It,”
+Business Insider, March 19, 2014, http://www.businessinsider.com/how-an-airbnb-guest-
+trashed-a-penthouse-2014-3?op=1#ixzz3dA5DDMZz; M. Matthews, “Uber Passenger Says
+Driver Struck Him with Hammer After He Told Him He Was Going the Wrong Way,” NBC
+Bay Area, October 8, 2014, http://www.nbcbayarea.com/news/local/Passenger-Hit-with-
+Hammer-by-Uber-Driver-278596821.html.
+47.    Airbnb, “Host Protection Insurance,” https://www.airbnb.com/host-protection-insurance,
+accessed June 15, 2015; A. Cecil, “Uber, Lyft, and Other Rideshare Drivers Now Have
+Insurance Options,” Policy Genius, https://www.policygenius.com/blog/uber-lyft-and-other-
+rideshare-drivers-now-have-insurance-options/, accessed June 14, 2015.
+48.  Huckman, Pisano, and Kind, “Amazon Web Services.”
+49.  Jillian D’Onfro, “Here’s a Reminder Just How Massive Amazon’s Web Services Business Is,”
+Business Insider, June 16, 2014, http://www
+
+
+.businessinsider.com/amazon-web-services-market-share-2014-6.
+50.  Annabelle Gawer and Michael A. Cusumano, Platform Leadership: How Intel, Microsoft, and
+Cisco Drive Industry Innovation (Boston: Harvard Business School Press, 2002).
+51.  Adapted from Gawer and Cusumano, Platform Leadership.
+52.  Clarkson and Van Alstyne, “The Social Efficiency of Fairness.”
+53.  Ibid.
+54.  Benbya and Van Alstyne, “How to Find Answers within Your Company.”
+CHAPTER 9: METRICS
+1.        Jonathan P. Roth, The Logistics of the Roman Army at War: 264 BC–AD 235 (Leiden,
+Netherlands: Brill, 1999), 3.
+2.    Josh Costine, “BranchOut Launches Talk.co to Expand from Networking into a WhatsApp for
+the Workplace,” TechCrunch, October 7, 2013, http://techcrunch.com/2013/10/07/talk-co/.
+3.    Teresa Torres, “Why the BranchOut Decline Isn’t Surprising,” Product Talk, June 7, 2012,
+http://www.producttalk.org/2012/06/why-the-branchout-decline-isnt-surpising/.
+4.        John Egan, “Anatomy of a Failed Growth Hack,” John Egan blog, December 6, 2012,
+http://jwegan.com/growth-hacking/autopsy-of-a-failed-growth-hack/.
+5.        Derek Sivers, “The Lean Startup—by Eric Ries,” Derek Sivers blog, October 23, 2011,
+https://sivers.org/book/LeanStartup.
+6.    Alistair Croll and Benjamin Yoskovitz, Lean Analytics: Use Data to Build a Better Startup
+Faster (Sebastopol, CA: O’Reilly Media, 2013).
+7.    Christian Rudder, “The Mathematics of Beauty,” OkTrends: Dating Research from OkCupid,
+January 10, 2011, http://blog.okcupid.com/index.php/the-mathematics-of-beauty/.
+8.        Bianca Bosker, “OkCupid Hides Good-Looking People from Less Attractive Users,”
+Huffington Post, June 16, 2010, http://www.huffingtonpost
+.com/2010/06/16/okcupid-hiding-hotties-fr_n_614149.html.
+9.        Eisenmann, Parker, and Van Alstyne, “Strategies for Two-Sided Markets”; Croll and
+Yoskovitz, Lean Analytics.
+10.    Francis J. Mulhern, “Customer Profitability Analysis: Measurement, Concentration, and
+Research Directions,” Journal of Interactive Marketing 13, no. 1 (1999): 25–40; Nicolas
+Glady, Bart Baesens, and Christophe Croux, “Modeling Churn Using Customer Lifetime
+Value,” European Journal of Operational Research 197, no. 1 (2009): 402–11.
+11.    Minter Dial, “Best of the Web or Death by Aggregation? Why Don’t Brands Curate the
+News?” Myndset, December 16, 2014, http://themyndset.com/2014/12/aggregation-curation/.
+12.    Nidhi Subbaraman, “Airbnb’s Small Army of Photographers Are Making You (and Them)
+Look 
+Good,” 
+Fast 
+Company, 
+October 
+17, 
+2011,
+http://www.fastcompany.com/1786980/airbnbs-small-army-photographers-are-making-you-
+and-them-look-good.
+13.  Ruimin Zhang interview by Geoffrey Parker and Marshall Van Alstyne, December 12, 2014.
+14.  Tiwana, Platform Ecosystems.
+15.  Parker and Van Alstyne. “Innovation, Openness, and Platform Control.”
+16.  Guido Jouret interview by Geoffrey Parker and Marshall Van Alstyne, September 8, 2006.
+17.    Gary Swart, “7 Things I Learned from Startup Failure,” In, September 23, 2013,
+https://www.linkedin.com/pulse/20130923123247-758147-7-things-i-learned-from-startup-
+failure.
+18.    Eric Ries, The Lean Startup: How Today’s Entrepreneurs Use Continuous Innovation to
+Create Radically Successful Businesses (New York: Random House, 2011).
+
+
+CHAPTER 10: STRATEGY
+1.        David J. Teece, “Next Generation Competition: New Concepts for Understanding How
+Innovation Shapes Competition and Policy in the Digital Economy,” Journal of Law
+Economics and Policy 9, no. 1 (2012): 97–118.
+2.    David B. Yoffie and Michael A. Cusumano, Strategy Rules: Five Timeless Lessons from Bill
+Gates, Andy Grove, and Steve Jobs (New York: HarperCollins, 2015); F. F. Suarez and J.
+Kirtley, “Innovation Strategy—Dethroning an Established Platform,” MIT Sloan Management
+Review 53, no. 4 (2012): 35.
+3.    David Barboza, “China’s Internet Giants May Be Stuck There,” New York Times, March 23,
+2010, http://www.nytimes.com/2010/03/24/business/global/24internet.html.
+4.        Brad Stone, “Alibaba’s IPO May Herald the End of U.S. E-Commerce Dominance,”
+Businessweek, August 7, 2014, http://www.bloomberg.com/bw/articles/2014-08-07/alibabas-
+ipo-may-herald-the-end-of-u-dot-s-dot-e-commerce-dominance.
+5.    Sarit Markovich and Johannes Moenius, “Winning While Losing: Competition Dynamics in
+the Presence of Indirect Network Effects,” International Journal of Industrial Organization
+27, no. 3 (2009): 346–57.
+6.    Stone, “Alibaba’s IPO.”
+7.    Michael E. Porter, “How Competitive Forces Shape Strategy,” Harvard Business Review 57,
+no. 2 (1979): 137–45; Michael E. Porter, Competitive Strategy (New York: Free Press, 1980).
+8.    Birger Wernerfelt, “A Resource-Based View of the Firm,” Strategic Management Journal 5
+(1984): 171–80.
+9.    Paul Zimnisky, “A Diamond Market No Longer Controlled By De Beers,” Kitco Commentary,
+June 
+6, 
+2013, 
+http://www.kitco.com/ind/Zimnisky/2013-06-06-A-Diamond-Market-No-
+Longer-Controlled-By-De-Beers.html.
+10.  Richard D’Aveni, Hypercompetition (New York: Free Press, 1994), 4.
+11.  Rita Gunther McGrath, The End of Competition: How to Keep Your Strategy Moving as Fast
+as Your Business (Cambridge, MA: Harvard Business Review Press, 2013).
+12.  Steve Denning, “What Killed Michael Porter’s Monitor Group? The One Force That Really
+Matters,” 
+Forbes, 
+November 
+20, 
+2012,
+http://www.forbes.com/sites/stevedenning/2012/11/20/what-killed-michael-porters-monitor-
+group-the-one-force-that-really-matters/.
+13.  Ming Zeng, “Three Paradoxes of Building Platforms,” Communications of the ACM 58, no. 2
+(2015): 
+27–9, 
+cacm.acm.org/magazines/2015/2/182646-three-paradoxes-of-building-
+platforms/abstract.
+14.  Thomas Eisenmann, Geoffrey G. Parker, and Marshall Van Alstyne, “Platform Envelopment,”
+Strategic Management Journal 32, no. 12 (2011): 1270–85.
+15.    Geoffrey G. Parker and Marshall Van Alstyne, “Platform Strategy,” New Palgrave
+Encyclopedia of Business Strategy (New York: Macmillan, 2014).
+16.    Angel Salazar, “Platform Competition: A Research Framework and Synthesis of Game-
+Theoretic 
+Studies,” 
+Social 
+Science 
+Research 
+Network, 
+February 
+15, 
+2015,
+papers.ssrn.com/sol3/papers.cfm?abstract_id=2565337. Mimeo: Manchester Metropolitan
+University, 2015; Barry J. Nalebuff and Adam M. Brandenburger, Co-opetition (London:
+HarperCollins Business, 1996).
+17.    Steve Jobs, “Thoughts on Flash,” April 2010, http://www.apple.com/hotnews/thoughts-on-
+flash/.
+18.  Vardit Landsman and Stefan Stremersch, “Multihoming in Two-Sided Markets: An Empirical
+Inquiry in the Video Game Console Industry,” Journal of Marketing 75, no. 6 (2011): 39–54.
+
+
+19.  Ming Zeng, “How Will Big Data and Cloud Computing Change Platform Thinking?”, keynote
+address, MIT Platform Strategy Summit, July 25, 2014, http://platforms.mit.edu/2014.
+20.    “Top 20 Apps with MAU Over 10 Million,” Facebook Apps Leaderboard, AppData,
+appdata.com/leaderboard/apps?show_na=1. Accessed October 14, 2015.
+21.  Carl Shapiro and Hal R. Varian, “The Art of Standards Wars,” California Management Review
+41, no. 2 (1999): 8–32.
+22.  Bill Gurley, “All Revenue Is Not Created Equal: Keys to the 10X Revenue Club,” Above the
+Crowd, May 24, 2011, http://abovethecrowd.com/2011/05/24/all-revenue-is-not-created-equal-
+the-keys-to-the-10x-revenue-club/.
+23.    Douglas MacMillan, “The Fiercest Rivalry in Tech: Uber vs. Lyft,” Wall Street Journal,
+August 11, 2014; C. Newton, “This is Uber’s Playbook for Sabotaging Lyft,” The Verge,
+August 26, 2014, http://www.theverge
+.com/2014/8/26/6067663/this-is-ubers-playbook-for-sabotaging-lyft.
+CHAPTER 11: POLICY
+1.        Kevin Boudreau and Andrei Hagiu, Platform Rules: Multi-Sided Platforms as Regulators
+(Cheltenham, UK: Edward Elgar, 2009), 163–89.
+2.    Malhotra and Van Alstyne, “The Dark Side of the Sharing Economy.”
+3.    Felix Gillette and Sheelah Kolhatkar, “Airbnb’s Battle for New York,” Businessweek, June 19,
+2014, http://www.bloomberg
+.com/bw/articles/2014-06-19/airbnb-in-new-york-sharing-startup-fights-for-largest-market.
+4.    Ron Lieber, “A Liability Risk for Airbnb Hosts,” New York Times, December 6, 2014.
+5.    Georgios Zervas, Davide Proserpio, and John W. Byers, “The Rise of the Sharing Economy:
+Estimating the Impact of Airbnb on the Hotel Industry,” Boston University School of
+Management Research Paper 2013-16, http://ssrn.com/abstract=2366898.
+6.        Brad N. Greenwood and Sunil Wattal, “Show Me the Way to Go Home: An Empirical
+Investigation of Ride Sharing and Motor Vehicle Homicide,” Platform Strategy Research
+Symposium, Boston, MA, July 9, 2015, http://ssrn.com/abstract=2557612.
+7.    John Coté, “SF Cracks Down on ‘MonkeyParking’ Mobile App,” SF Gate, June 23, 2014,
+http://blog.sfgate.com/cityinsider/2014/06/23/sf-cracks-down-on-street-parking-cash-apps/.
+8.    Kevin Roose, “Does Silicon Valley Have a Contract-Worker Problem?” New York, September
+18, 
+2014, 
+http://nymag.com/daily/intelligencer/2014/09/silicon-valleys-contract-worker-
+problem.html.
+9.    George J. Stigler, “The Theory of Economic Regulation,” Bell Journal of Economics and
+Management Science 2, no. 1 (Spring 1971): 3–21.
+10.    Jean-Jacques Laffont and Jean Tirole, “The Politics of Government Decision-Making: A
+Theory of Regulatory Capture,” Quarterly Journal of Economics 106, no. 4 (1991): 1089–
+1127.
+11.  Conor Friedersdorf, “Mayors of Atlanta and New Orleans: Uber Will Beat the Taxi Industry,”
+Atlantic, June 29, 2014, http://www.theatlantic
+.com/business/archive/2014/06/mayors-of-atlanta-and-new-orleans-uber-will-beat-the-taxi-
+cab-industry/373660/.
+12. 
+ 
+Don 
+Boudreaux, 
+“Uber 
+vs. 
+Piketty,” 
+Cafe 
+Hayek, 
+August 
+1, 
+2015,
+http://cafehayek.com/2015/08/uber-vs-piketty.html.
+13.   Andrei Shleifer, “Understanding Regulation,” European Financial Management 11, no. 4
+(2005): 439–51.
+
+
+14.  Jean-Jacques Laffont and Jean Tirole, Competition in Telecommunications (Cambridge, MA:
+MIT Press, 2000).
+15.  Ben-Zion Rosenfeld and Joseph Menirav, “Methods of Pricing and Price Regulation in Roman
+Palestine in the Third and Fourth Centuries,” Journal of the American Oriental Society 121,
+no. 3 (2001): 351–69; Geoffrey E. Rickman, “The Grain Trade under the Roman Empire,”
+Memoirs of the American Academy in Rome 36 (1980): 261–75.
+16.  Jad Mouawad and Christopher Drew, “Airline Industry Is at Its Safest Since the Dawn of the
+Jet 
+Age,” 
+New 
+York 
+Times, 
+February 
+11, 
+2013,
+http://www.nytimes.com/2013/02/12/business/2012-was-the-safest-year-for-airlines-globally-
+since-1945.html.
+17.  Simeon Djankov, Edward Glaeser, Rafael La Porta, Florencio Lopez-de-Silanes, and Andrei
+Shleifer, “The New Comparative Economics,” Journal of Comparative Economics 31, no. 4
+(2003): 595–619.
+18.  Shleifer, “Understanding Regulation.”
+19.    KPMG, “China 360: E-Commerce in China, Driving a New Consumer Culture,”
+https://www.kpmg.com/CN/en/IssuesAndInsights/ArticlesPublications/Newsletters/China-
+360/Documents/China-360-Issue15-201401-E-commerce-in-China.pdf.
+20.  S. Shankland, “Sun Brings Antitrust Suit Against Microsoft,” CNET News, July 20, 2002,
+http://www.cnet.com/news/sun-brings-antitrust-suit-against-microsoft-1/.
+21.  Carl Shapiro, “Exclusivity in Network Industries,” George Mason Law Review 7 (1998): 673.
+22.    Neil Gandal, “Compatibility, Standardization, and Network Effects: Some Policy
+Implications,” Oxford Review of Economic Policy 18, no. 1 (2002): 80–91.
+23.  Parker and Van Alstyne, “Innovation, Openness, and Platform Control.”
+24.  Parker and Van Alstyne, “Internetwork Externalities and Free Information Goods”; Parker and
+Van Alstyne, “Two-Sided Network Effects.”
+25.  David S. Evans and Richard Schmalensee, “The Antitrust Analysis of Multi-Sided Platform
+Businesses,” in The Oxford Handbook of International Antitrust Economics, vol. 1, edited by
+Roger D. Blair and D. Daniel Sokol (Oxford: Oxford University Press, 2015).
+26.  Tom Fairless, Rolfe Winkler, and Alistair Barr, “EU Files Formal Antitrust Charges Against
+Google,” Wall Street Journal, April 15, 2015.
+27.  “Statement of the Federal Trade Commission Regarding Google’s Search Practices: In the
+Matter 
+of 
+Google, 
+Inc.,” 
+FTC 
+File 
+Number 
+111-0163, 
+January 
+3, 
+2013,
+https://www.ftc.gov/public-statements/2013/01/statement-federal-trade-commission-regarding-
+googles-search-practices.
+28.    Jeremy Greenfield, “How the Amazon–Hachette Fight Could Shape the Future of Ideas,”
+Atlantic Monthly, May 28, 2014.
+29.    Helen F. Ladd, “Evidence on Discrimination in Mortgage Lending,” Journal of Economic
+Perspectives 12, no. 2 (1998): 41–62.
+30.  Noel Capon, “Credit Scoring Systems: A Critical Analysis,” Journal of Marketing 46, no. 2
+(1982): 82–91.
+31.  Jim Puzzangher, “Obama to Push Cybersecurity, Identity Theft and Online Access Plans,” Los
+Angeles Times, January 10, 2015, http://www
+.latimes.com/nation/politics/politicsnow/la-pn-obama-cybersecurity-20150110-story.html.
+32.  Steve Kroft, “The Data Brokers: Selling Your Personal Information,” CBS News, March 9,
+2014, http://www.cbsnews.com/news/the-data-brokers-selling-your-personal-information/.
+33.  Federal Trade Commission, “Data Brokers: A Call for Transparency and Accountability,” May
+2014, 
+http://www.ftc.gov/system/files/documents/reports/data-brokers-call-transparency-
+accountability-report-federal-trade-commission-may-2014/140527databrokerreport.pdf.
+
+
+34.  Lee Rainie and Janna Anderson, “The Future of Privacy,” Pew Research Center, December 18,
+2014, http://www.pewinternet.org/2014/12/18/future-of-privacy/.
+35.    “Who Owns Your Personal Data? The Incorporated Woman,” Economist, June 27, 2014,
+http://www.economist.com/blogs/schumpeter/2014/06/who-owns-your-personal-data.
+36.  Lee Rainie and Janna Anderson, “The Future of Privacy: Other Resounding Themes,” Pew
+Research 
+Center, 
+December 
+18, 
+2014, 
+http://www.pewinternet.org/2014/12/18/other-
+resounding-themes/.
+37.    Charles Arthur, “Tech Giants May Be Huge, But Nothing Matches Big Data,” Guardian,
+August 23, 2013, http://www.theguardian.com/technology/2013/aug/23/tech-giants-data.
+38.  James Cook, “Sony Hackers Have Over 100 Terabytes Of Documents. Only Released 200
+Gigabytes So Far,” Business Insider, December 16, 2014, http://www.businessinsider.com/the-
+sony-hackers-still-have-a-massive-amount-of-data-that-hasnt-been-leaked-yet-2014-12.
+39.  Lisa Beilfuss, “Target Reaches $19 Million Settlement with MasterCard Over Data Breach,”
+Wall Street Journal, April 15, 2015.
+40.  Andrew Nusca, “Who Should Own Farm Data?” Fortune, December 22, 2014.
+41.  We thank Peter Evans, former head of analytics for GE, for his counsel on this topic.
+42.  Email to Marshall Van Alstyne from Peter Evans, Center for Global Enterprise, using 2015
+Crunchbase data.
+43.    Avi Goldfarb and Catherine E. Tucker, “Privacy Regulation and Online Advertising,”
+Management Science 57, no. 1 (2011): 57–71.
+44.    Robert W. Wood, “Amazon No Longer Tax-Free: 10 Surprising Facts As Giant Loses
+Ground,” 
+Forbes, 
+August 
+22, 
+2013,
+http://www.forbes.com/sites/robertwood/2013/08/22/amazon-no-longer-tax-free-10-surprising-
+facts-as-giant-loses-ground.
+45.  Bob Egelko, “Court Rules FedEx Drivers in State Are Employees, Not Contractors,” SF Gate,
+August 28, 2014, http://www.sfgate.com/bayarea/article/Court-to-FedEx-Your-drivers-are-full-
+time-5717048.php.
+46.  Google search results, “Internet sweatshop,” accessed January 28, 2015.
+47.  Krishnadev Calamur, “Uber’s Troubles Mount Even As Its Value Grows,” The Two-Way, NPR,
+December 10, 2014, http://www
+.npr.org/blogs/thetwo-way/2014/12/10/369922099/ubers-troubles-mount-even-as-its-value-
+grows.
+48.  Jeffrey A. Trachtenberg and Greg Bensinger, “Amazon, Hachette
+End 
+Publishing 
+Dispute,” 
+Wall 
+Street 
+Journal, 
+November 
+13, 
+2014,
+http://www.wsj.com/articles/amazon-hachette-end-publishing
+-dispute-1415898013.
+49.    Robinson Meyer, “Everything We Know About Facebook’s Secret Mood Manipulation
+Experiment,” Atlantic, June 28, 2014, http://www
+.theatlantic.com/technology/archive/2014/06/everything-we
+-know-about-facebooks-secret-mood-manipulation-experiment/
+373648/.
+50.  Robert M. Bond, Christopher J. Fariss, Jason J. Jones, Adam D. I. Kramer, Cameron Marlow,
+Jaime E. Settle, and James H. Fowler, “A 61-Million-Person Experiment in Social Influence
+and Political Mobilization,” Nature 489, no. 7415 (2012): 295–8.
+51.  Dominic Rushe, “Facebook Sorry—Almost—For Secret Psychological Experiment on User,”
+Guardian, October 2, 2012, http://www.theguardian.com/technology/2014/oct/02/facebook-
+sorry-secret-psychological-experiment-users.
+52. 
+ 
+Alex 
+Rosenblat, 
+“Uber’s 
+Phantom 
+Cars,” 
+Motherboard, 
+July 
+27, 
+2015,
+http://motherboard.vice.com/read/ubers-phantom-cabs.
+
+
+53.  Nick Grossman, “Regulation, the Internet Way: A Data-First Model for Establishing Trust,
+Safety, and Security—Regulatory Reform for the 21st Century City,” Harvard Kennedy
+School, ASH Center for Democratic Governance and Innovation, April 8, 2015,
+http://datasmart.ash.harvard.edu/news/article/white-paper-regulation-the-internet-way-660.
+54.  Ibid.
+55.  Tim O’Reilly, Government as a Platform (Cambridge, MA: MIT Press, 2010), 11–40.
+56.    The social impact of mandated transparency rules has been thoroughly analyzed by three
+experts from Harvard’s Kennedy School of Government; see Archon Fung, Mary Graham, and
+David Weil, Full Disclosure: The Perils and Promise of Transparency (New York: Cambridge
+University Press, 2007).
+57.  See, for example, Richard Stallman, “Why Open Source Misses the Point of Free Software,”
+GNU Operating System, Free Software Foundation, http://www.gnu.org/philosophy/open-
+source-misses-the-point
+.en.html.
+58.  Carlota Perez, Technological Revolutions and Financial Capital: The Dynamics of Bubbles
+and Golden Ages (Cheltenham, UK: Edward Elgar, 2003).
+59.  Heli Koski and Tobias Kretschmer, “Entry, Standards and Competition: Firm Strategies and
+the Diffusion of Mobile Telephony,” Review of Industrial Organization 26, no. 1 (2005): 89–
+113.
+60.    David Evans, “Governing Bad Behavior by Users of Multi-Sided Platforms,” Berkeley
+Technology 
+Law 
+Journal 
+27, 
+no. 
+12 
+(Fall 
+2012),
+http://scholarship.law.berkeley.edu/cgi/viewcontent
+.cgi?article=1961&context=btlj.
+61.  Benjamin Edelman, “Digital Business Models Should Have to Follow the Law, Too,” Harvard
+Business Review, January 6, 2015, https://hbr.org/2015/01/digital-business-models-should-
+have-to-follow-the-law-too.
+CHAPTER 12: TOMORROW
+1.        Brandon Alcorn, Gayle Christensen, and Ezekiel J. Emanuel, “The Real Value of Online
+Education,” Atlantic Monthly, September 2014.
+2.        Luis Von Ahn, “Crowdsourcing, Language and Learning,” presentation, MIT Platform
+Strategy Summit, July 10, 2015, available at http://platforms.mit.edu/agenda.
+3.    Graeme Wood, “The Future of College?” Atlantic Monthly, September 2014.
+4.    “There’s an App for That,” Economist, January 3, 2015.
+5.        Hemant Taneja, “Unscaling the Healthcare Economy,” TechCrunch, June 28, 2014,
+http://techcrunch.com/2014/06/28/software-defined-healthcare/.
+6.        Vince Kuraitis, “Patient Digital Health Platforms (PDHPs): An Epicenter of Healthcare
+Transformation?” Healthcare Information and Management Systems Society, June 18, 2014,
+http://blog.himss
+.org/2014/06/18/patient-digital-health-platforms-pdhps-an-epicenter-of-healthcare-
+transformation/.
+7.        Josh Dzieza, “Why Tesla’s Battery for Your Home Should Terrify Utilities,” The Verge,
+February 13, 2015, http://www.theverge
+.com/2015/2/13/8033691/why-teslas-battery-for-your-home-should-terrify-utilities.
+8.    Daniel Roberts, “How MasterCard became a Tech Company,” Fortune, July 24, 2014.
+9.    William D. Cohan, “Bypassing the Bankers,” Atlantic Monthly, September 2014.
+
+
+10.  Matina Stevis and Patrick McGroarty, “Banks Vie for a Piece of Africa’s Mobile Banking
+Market,” Wall Street Journal, August 15, 2014.
+11.    Daniel Fisher, “Legal-Services Firm’s $73 Million Deal Strips the Mystery from
+Derivatives Trading,” Forbes, February 12, 2015; “There’s an App for That,” Economist.
+12.  San Francisco Mayor’s Office of Civic Innovation, “Announcing the First-Ever San Francisco
+Datapalooza,” blog post, October 12, 2013; San Francisco Mayor’s Office of Civic Innovation,
+“Data Jam, 100 Days to Tackle Housing,” blog post, June 7, 2013, http://innovatesf.com.
+13.  David Mount, “The Industrial Awakening: The Internet of Heavier Things,” March 3, 2015,
+http://www.kpcb.com/blog/the-industrial-awakening-the-internet-of-heavier-things.
+14.  Jeremy Rifkin, “Capitalism Is Making Way for the Age of Free,” Guardian, March 31, 2014.
+OceanofPDF.com
+
+
+INDEX
+Page numbers listed correspond to the print edition of this book. You can use your device’s search
+function to locate particular terms in the text.
+Page numbers in italics refer to figures.
+A/B testing, 217–18
+Accenture, xi, 32–33
+access fees, 118–21
+access limitation, 126–56, 213–15, 227–28, 240–41, 253, 254, 256–57, 260, 262–63, 264, 266, 271
+access tiers, 144–45
+accounting, 32, 33, 238–39
+Adobe, 29–30, 92–93, 213–14
+Adobe Flash Player, 213–14
+ADP, 155, 241
+advertising, 3, 23, 31, 49, 50, 63, 72, 84–87, 105, 106–8, 113, 119, 120–21, 125, 131, 133–34, 144,
+145, 165, 166, 198–99, 215, 229–30, 244, 247–48, 252, 264, 275, 296
+advertising campaigns, 72, 88, 148
+Affordable Care Act (2010), 271
+Africa, 4, 247, 277–78
+aggregate feedback, 151–52
+agriculture, 19, 42–44, 60, 70–71, 246, 263
+Airbnb, vii, viii, 1–12, 21–26, 32, 38, 39, 40, 47, 64–71, 101, 103, 111, 116, 135, 142–43, 149, 151–
+52, 165, 175, 192–93, 198, 211, 212, 224, 229–33, 236, 253–54, 262, 295
+aircraft industry, 110, 225
+airline industry, 71, 137, 235, 237
+algorithms, 24–25, 27, 40, 41, 45–46, 47, 68, 71, 146, 152, 170, 191, 278, 280, 286, 296, 297
+Alibaba Group, xi, 2, 3, 73, 111, 124–25, 135, 159, 164, 204–7, 214–15, 216, 240
+Allsopp’s Arctic Ale, 161–62
+Amadeo, Ron, 153
+Amazon, vii, ix, 3, 7, 22, 54–56, 56, 63, 64, 69–73, 79, 89, 125, 137, 140, 145, 157–58, 176–78, 194,
+204–18, 225, 231, 242–43, 248–49, 251, 262, 270–71, 280
+Amazon Web Services (AWS), 54, 177–78
+Amazon Word (AZW), 243
+Andreessen, Marc, 62, 63
+Android, 6–7, 21, 30, 72, 92, 111, 137, 140–41, 153–54, 214, 226, 240

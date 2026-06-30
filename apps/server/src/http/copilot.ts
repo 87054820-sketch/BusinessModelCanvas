@@ -7,8 +7,12 @@ import {
   COPILOT_MAX_IMAGE_ATTACHMENTS,
   COPILOT_MAX_IMAGE_BYTES,
   type CanvasMeta,
+  type CaseLibraryEntry,
   type CopilotImageAttachment,
   type Lang,
+  type LibraryResourceDetail,
+  type ResourceChapterDetail,
+  type ResourceChapterMeta,
 } from '@pingarden/shared';
 import type { FederatedStorage } from '../storage/FederatedStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
@@ -363,7 +367,7 @@ export function registerCopilotRoutes(
     Querystring: { lang?: string; q?: string };
   }>('/copilot/library-context', async (req, reply) => {
     const lang = parseLang(req.query.lang) ?? 'en';
-    const markdown = buildLibraryMarkdown(bundle, defs, lang, req.query.q);
+    const markdown = await buildLibraryMarkdown(bundle, storage, defs, defsById, lang, req.query.q);
     return reply.header('Cache-Control', 'no-store').send({ markdown });
   });
 
@@ -392,6 +396,20 @@ export function registerCopilotRoutes(
 
     const lang = parseLang(req.query.lang) ?? 'en';
     const markdown = buildPatternMarkdown(detail, lang);
+    return reply.header('Cache-Control', 'no-store').send({ markdown });
+  });
+
+  // ── GET /copilot/resource-context/:slug ──────────────────────────────
+
+  app.get<{
+    Params: { slug: string };
+    Querystring: { lang?: string; q?: string };
+  }>('/copilot/resource-context/:slug', async (req, reply) => {
+    const detail = await bundle.getResource(req.params.slug);
+    if (!detail) return reply.code(404).send({ error: 'Resource not found' });
+
+    const lang = parseLang(req.query.lang) ?? 'en';
+    const markdown = await buildResourceMarkdown(bundle, detail, lang, req.query.q);
     return reply.header('Cache-Control', 'no-store').send({ markdown });
   });
 
@@ -562,12 +580,14 @@ function selectRelevant<T>(items: T[], query: LibraryQuery, fields: (item: T) =>
   return scored.slice(0, max).map((entry) => entry.item);
 }
 
-function buildLibraryMarkdown(
+async function buildLibraryMarkdown(
   bundle: FederatedStorage['bundleStorage'],
+  storage: FederatedStorage,
   defs: LoadedCanvasDef[],
+  defsById: Map<string, LoadedCanvasDef>,
   lang: Lang,
   query?: string,
-): string {
+): Promise<string> {
   const lines: string[] = [];
   const q = buildLibraryQuery(query);
   const selectedDefs = q ? selectRelevant(defs, q, (item) => [
@@ -649,6 +669,7 @@ function buildLibraryMarkdown(
     const counts = `${entry.canvasCount} canvases, ${entry.storyCount} stories`;
     lines.push(`- ${name} (slug: ${entry.slug}; kind: ${entry.kind}; ${counts}${tags}${patternsText}${frameworksText}) — ${summary}`);
   }
+  if (q) await appendCaseDetailHints(lines, cases.slice(0, 6), storage, defsById, lang);
   lines.push('');
 
   lines.push('## Business-model patterns');
@@ -681,6 +702,7 @@ function buildLibraryMarkdown(
   lines.push('');
 
   lines.push('## Resources');
+  lines.push('Resource entries are source materials. When a resource has chapters, use the chapter summaries below to ground deeper strategy guidance; recommend opening or reading a specific chapter when useful.');
   for (const resource of resources) {
     const title = localize(resource.title, lang);
     const summary = localize(resource.summary, lang);
@@ -690,10 +712,182 @@ function buildLibraryMarkdown(
     const relatedCanvases = resource.relatedCanvasDefIds?.length
       ? `; related canvases: ${resource.relatedCanvasDefIds.join(', ')}`
       : '';
-    lines.push(`- ${title} (slug: ${resource.slug}; type: ${resource.type}${resource.year ? `; year: ${resource.year}` : ''}${relatedCases}${relatedCanvases}) — ${summary}`);
+    const chapterCount = resource.chapterCount ? `; chapters: ${resource.chapterCount}` : '';
+    lines.push(`- ${title} (slug: ${resource.slug}; type: ${resource.type}${resource.year ? `; year: ${resource.year}` : ''}${chapterCount}${relatedCases}${relatedCanvases}) — ${summary}`);
+    if (resource.chapterCount) {
+      const chapters = await bundle.getResourceChapters(resource.slug);
+      const selectedChapters = q && chapters
+        ? selectRelevant(chapters, q, resourceChapterSearchFields(lang), 4)
+        : chapters?.slice(0, 4);
+      for (const chapter of selectedChapters ?? []) {
+        const chapterTitle = localize(chapter.title, lang);
+        const chapterSummary = localize(chapter.summary, lang);
+        const refs = [
+          ...(chapter.relatedCanvasDefIds ?? []).map((id) => `canvas:${id}`),
+          ...(chapter.relatedPatternSlugs ?? []).map((slug) => `pattern:${slug}`),
+          ...(chapter.relatedCaseSlugs ?? []).map((slug) => `case:${slug}`),
+        ];
+        lines.push(`  - chapter ${chapter.slug}: ${chapterTitle}${refs.length ? ` (${refs.join(', ')})` : ''} — ${chapterSummary}`);
+      }
+    }
   }
 
   return lines.join('\n').trim();
+}
+
+async function appendCaseDetailHints(
+  lines: string[],
+  cases: CaseLibraryEntry[],
+  storage: FederatedStorage,
+  defsById: Map<string, LoadedCanvasDef>,
+  lang: Lang,
+): Promise<void> {
+  if (cases.length === 0) return;
+  lines.push('');
+  lines.push('## Case detail hints');
+  lines.push('Use these snippets to explain cases with one more level of detail: what changed, the operating mechanism, and how the lesson transfers.');
+  for (const entry of cases) {
+    const name = localize(entry.companyName, lang);
+    lines.push(`### ${name} (${entry.slug})`);
+    const stories = await storage.listStories({ projectId: entry.projectId });
+    const langStories = stories.filter((story) => !story.language || story.language === lang);
+    const usedStories = (langStories.length > 0 ? langStories : stories).slice(0, 2);
+    for (const meta of usedStories) {
+      const full = await storage.getStory(meta.id);
+      const excerpt = cleanContextExcerpt(full?.content ?? '', 520);
+      if (excerpt) lines.push(`- Story “${full?.title ?? meta.title}”: ${excerpt}`);
+    }
+
+    const canvases = await storage.listCanvases({ projectId: entry.projectId });
+    const langCanvases = canvases.filter((canvas) => canvas.language === lang);
+    const usedCanvases = (langCanvases.length > 0 ? langCanvases : canvases).slice(0, 2);
+    for (const canvas of usedCanvases) {
+      const block = defsById.get(canvas.defId);
+      if (!block) continue;
+      const zoneText = await hydrateStickiesByZone(canvas, storage);
+      const i18n = block.i18n[lang] ?? block.i18n.en;
+      const zones: string[] = [];
+      for (const zone of block.def.zones) {
+        const stickies = zoneText.get(zone.id);
+        if (!stickies?.length) continue;
+        const zoneTitle = i18n?.blocks[zone.id]?.title ?? zone.id;
+        zones.push(`${zoneTitle}: ${stickies.slice(0, 2).map(stripHtml).join(' / ')}`);
+        if (zones.length >= 3) break;
+      }
+      if (zones.length) {
+        const defName = block.def.name[lang] ?? block.def.name.en;
+        lines.push(`- Canvas “${canvas.title}” (${defName}): ${zones.join('; ')}`);
+      }
+    }
+  }
+}
+
+function cleanContextExcerpt(input: string, maxChars: number): string {
+  return stripHtml(input)
+    .replace(/^::canvas[^\n]*$/gim, '')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .join(' ')
+    .slice(0, maxChars)
+    .trim();
+}
+
+function resourceChapterSearchFields(lang: Lang): (chapter: ResourceChapterMeta) => string[] {
+  return (chapter) => [
+    chapter.slug,
+    localize(chapter.title, lang),
+    localize(chapter.summary, lang),
+    ...(chapter.relatedCanvasDefIds ?? []),
+    ...(chapter.relatedPatternSlugs ?? []),
+    ...(chapter.relatedCaseSlugs ?? []),
+  ];
+}
+
+async function buildResourceMarkdown(
+  bundle: FederatedStorage['bundleStorage'],
+  detail: LibraryResourceDetail,
+  lang: Lang,
+  query?: string,
+): Promise<string> {
+  const lines: string[] = [];
+  const resource = detail.resource;
+  const title = localize(resource.title, lang);
+  const summary = localize(resource.summary, lang);
+  const recommendation = localize(resource.recommendation, lang);
+  const description = detail.description[lang] || detail.description.en || detail.description.zh || '';
+  const q = buildLibraryQuery(query);
+
+  lines.push(`# Resource: ${title}`);
+  lines.push('');
+  lines.push(`- slug: ${resource.slug}`);
+  lines.push(`- type: ${resource.type}`);
+  if (resource.authors.length) lines.push(`- authors: ${resource.authors.join(', ')}`);
+  if (resource.publisher || resource.year) lines.push(`- publication: ${[resource.publisher, resource.year].filter(Boolean).join(' · ')}`);
+  if (resource.tags?.length) lines.push(`- tags: ${resource.tags.join(', ')}`);
+  if (resource.relatedCanvasDefIds?.length) lines.push(`- related canvases: ${resource.relatedCanvasDefIds.join(', ')}`);
+  if (resource.relatedPatternSlugs?.length) lines.push(`- related patterns: ${resource.relatedPatternSlugs.join(', ')}`);
+  if (resource.relatedStrategyFrameworkSlugs?.length) lines.push(`- related strategy frameworks: ${resource.relatedStrategyFrameworkSlugs.join(', ')}`);
+  if (resource.relatedCaseSlugs?.length) lines.push(`- related cases: ${resource.relatedCaseSlugs.join(', ')}`);
+  lines.push('');
+  lines.push('## Summary');
+  lines.push(summary);
+  if (recommendation) {
+    lines.push('');
+    lines.push('## Why this resource matters');
+    lines.push(recommendation);
+  }
+  if (description) {
+    lines.push('');
+    lines.push('## Reading note');
+    lines.push(limitMarkdown(description, 2_600));
+  }
+
+  if (detail.chapters?.length) {
+    lines.push('');
+    lines.push('## Chapter index');
+    for (const chapter of detail.chapters) {
+      const refs = [
+        ...(chapter.relatedCanvasDefIds ?? []).map((id) => `canvas:${id}`),
+        ...(chapter.relatedPatternSlugs ?? []).map((slug) => `pattern:${slug}`),
+        ...(chapter.relatedCaseSlugs ?? []).map((slug) => `case:${slug}`),
+      ];
+      lines.push(`- ${String(chapter.order).padStart(2, '0')} ${chapter.slug}: ${localize(chapter.title, lang)}${refs.length ? ` (${refs.join(', ')})` : ''} — ${localize(chapter.summary, lang)}`);
+    }
+
+    if (q) {
+      const selected = selectRelevant(detail.chapters, q, resourceChapterSearchFields(lang), 2);
+      lines.push('');
+      lines.push(`## Relevant chapter excerpts for: ${q.original}`);
+      for (const chapter of selected) {
+        const chapterDetail = await bundle.getResourceChapter(resource.slug, chapter.slug);
+        if (!chapterDetail) continue;
+        lines.push('');
+        appendResourceChapterExcerpt(lines, chapterDetail, lang);
+      }
+    }
+  }
+
+  return lines.join('\n').trim();
+}
+
+function appendResourceChapterExcerpt(lines: string[], detail: ResourceChapterDetail, lang: Lang): void {
+  lines.push(`### ${detail.chapter.slug}: ${localize(detail.chapter.title, lang)}`);
+  lines.push(localize(detail.chapter.summary, lang));
+  const content = detail.content[lang] || detail.content.en || detail.content.zh || '';
+  if (content) lines.push(limitMarkdown(content, 3_200));
+  if (detail.relatedCases.length) {
+    lines.push(`Related cases: ${detail.relatedCases.map((c) => c.slug).join(', ')}`);
+  }
+}
+
+function limitMarkdown(input: string, maxChars: number): string {
+  const trimmed = input.trim();
+  if (trimmed.length <= maxChars) return trimmed;
+  return `${trimmed.slice(0, maxChars)}\n\n_[Excerpt truncated; ask about a narrower chapter for more detail.]_`;
 }
 
 /**
@@ -1036,11 +1230,15 @@ function buildSystemPrompt(attachedContext?: string, userProfileContext?: string
     'Answer in concise markdown — no tool use, no file ops, no web fetches. Use short sections separated by blank lines; prefer headings and bullets, and avoid wide markdown tables unless the user explicitly asks for a table.',
     'Keep responses grounded in the supplied PinGarden context; cite specific stories, canvases, or canvas blocks when relevant.',
     'Do not infer library availability from the subprocess working directory; use the supplied PinGarden context as the source of truth.',
-    'When recommending a next step, prefer concrete PinGarden actions such as reading a case, opening a canvas, drafting a story, choosing a paired canvas, or testing an assumption.',
-    'Keep library categories distinct: “case” means only concrete entries from the Cases section; books/articles/reports/web pages are Resources or reference reading, never cases. Separate recommended cases, reference reading, canvas templates, strategy frameworks, patterns, and experiments in the answer when more than one category appears. In Chinese answers, prefer localized display names and omit internal slugs/defIds in prose unless the user explicitly asks for IDs; do not expose jargon such as “ad-lib” when a Chinese name exists. In English answers, show the display name first and include slug/id only when useful.',
+    'When recommending a next step, prefer concrete PinGarden actions such as reading a case, reading a specific resource chapter, opening a canvas, drafting a story, choosing a paired canvas, or testing an assumption.',
+    'Keep library categories distinct: “case” means only concrete entries from the Cases section; books/articles/reports/web pages are Resources or reference reading, never cases. When resource chapter context is supplied, use it as source material for deeper guidance and cite the resource title plus chapter title/slug. Separate recommended cases, reference reading, canvas templates, strategy frameworks, patterns, and experiments in the answer when more than one category appears. In Chinese answers, prefer localized display names and omit internal slugs/defIds in prose unless the user explicitly asks for IDs; do not expose jargon such as “ad-lib” when a Chinese name exists. In English answers, show the display name first and include slug/id only when useful.',
     'When the user wants to create a project from text, links, or images, first ask for missing essentials such as project name, target customers, and goal. Once enough information is available, output exactly one fenced JSON project draft with kind "pingarden.projectDraft" so the UI can show a confirmation card. Never claim the project is created until the user presses the confirmation button.',
   ].join(' ');
-  const sections = [base, buildBundledPlaybookPrompt(), buildMemorySuggestionPrompt()];
+  const answerShape = [
+    'Answer shape guidance: when recommending or comparing cases, do not stop at a flat bullet list. Use one deeper markdown level for the top cases: section heading, then per-case heading, then subheadings such as “What changed / Mechanism / How to apply”. Keep each case specific and evidence-backed rather than generic.',
+    'Chinese case answers should prefer this hierarchy: ## 真实案例, ### 案例名, #### 做法拆解, #### 机制启发, #### 可迁移到你的问题. English case answers should use the equivalent H2/H3/H4 hierarchy.',
+  ].join(' ');
+  const sections = [base, answerShape, buildBundledPlaybookPrompt(), buildMemorySuggestionPrompt()];
   if (userProfileContext) sections.push(userProfileContext);
   if (attachedContext) sections.push(`Context for this conversation:\n\n${limitAttachedContext(attachedContext)}`);
   return sections.join('\n\n');

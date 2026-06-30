@@ -1,0 +1,29 @@
+{
+  "chapter": "ch02-value-networks",
+  "sourceFiles": { "en": "02-value-networks-and-the-impetus-to-innovate.txt" },
+  "concepts": [
+    { "name": "Value Network", "definition": "The context within which a firm identifies customers, solves problems, procures inputs, responds to competitors, and seeks profit. It defines which performance attributes matter, which cost structures are acceptable, and which opportunities look valuable." },
+    { "name": "Impetus to Innovate", "definition": "The pressure to invest in innovations that improve performance for the firm's current customers and preserve margins inside its existing value network." },
+    { "name": "Sustaining vs. Disruptive Innovation", "definition": "Sustaining innovations improve products along dimensions current customers value; disruptive innovations initially underperform on those dimensions but offer a different value package attractive to a different or lower-end network." }
+  ],
+  "arguments": [
+    { "claim": "Incumbents prioritize sustaining innovations for structural reasons, not because managers are irrational.", "evidence": "Customers in the value network ask for better performance, margins are higher in established tiers, and resource allocation naturally favors projects that satisfy powerful customers." },
+    { "claim": "A technology's value is network-dependent.", "evidence": "A small drive, hydraulic excavator, or mini-mill output can look unattractive in one network and valuable in another; the same technical artifact is interpreted differently by different customers and cost structures." }
+  ],
+  "cases": [
+    { "name": "Disk-drive form factors", "context": "Smaller drives initially had lower capacity than mainstream customers needed.", "illustrates": "Why incumbents rationally ignored them in their existing network while entrants found new networks that valued size and power advantages.", "lesson": "Ask which network values the new attribute, not whether today's best customers want it." }
+  ],
+  "logicChains": [
+    { "description": "Current customers define valued performance → resource allocation favors sustaining projects → disruptive projects look low-margin or irrelevant → entrants serve another network → performance improves → entrant invades the mainstream.", "sourceHint": "Value network theory section." }
+  ],
+  "terminology": [
+    { "term": "Value network", "definition": "A firm's embedded market, cost, and customer context." },
+    { "term": "Sustaining innovation", "definition": "Improvement along mainstream performance dimensions." },
+    { "term": "Disruptive innovation", "definition": "Initially inferior mainstream performance with a different value proposition in a foothold network." }
+  ],
+  "nuance": [
+    "Listening to customers is good management in sustaining competition and a trap in disruption.",
+    "The theory explains rational failure; it does not blame managers for being foolish."
+  ],
+  "crossReferences": { "relatedCanvasDefIds": ["disruption-diagnosis"], "relatedStrategyFrameworkSlugs": ["disruptive-innovation"], "relatedChapters": ["ch01-intro", "ch03-hdd"] }
+}

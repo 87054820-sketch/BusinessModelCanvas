@@ -1,0 +1,561 @@
+# Creating Scenario Building Blocks
+
+The process of building scenarios starts with the same thing that
+the priests did—looking for driving forces, the forces that influence
+the outcome of events. In this case, one such force was the rain. It
+fell upstream on the Nile’s tributaries, and affected the balance
+between them. That, in turn, influenced the fate of thousands of
+people whom the Pharaoh might conquer that year. There was a
+second driving force, as well—the dependence on Nile flooding to
+grow crops. Had the Egyptians had irrigation canals and fertilizer,
+they could have planted crops further out in the desert. They would
+not have had to worry about the river flow at all.
+Driving Forces: What We Know We Care About
+Every enterprise, personal or commercial, is propelled by
+particular key factors. Some of them are within the enterprise: your
+workforce and goals. Others, such as government regulation, come
+from outside. But many outside factors, in particular, are not
+intuitively obvious. The color of the water’s stream made it easy to
+guess its effect on the floods downstream; if all the rivers were the
+same color, the priests might never have understood. Similarly, the
+impact of government regulation on businesses is obvious, but there
+are many less obvious external factors as well. Identifying and
+assessing these fundamental factors is both the starting point and
+one of the objectives of the scenario method.
+In other words, driving forces are the elements that move the plot
+of a scenario, that determine the story’s outcome. In a mystery
+story, the motive is a driving force; indeed, much fictional detective
+work consists of figuring out a credible driving force for an
+otherwise unexplainable murder. In adventure stories, one driving
+force is the quest that propels the journey. Another is the opposition
+—a villain, force of nature, or opposing tribe that resists the hero’s
+quest. In Romeo and Juliet, the romantic love of the two young
+principals is one driving force. Another is the concept of filial
+
+
+responsibility which binds them. The third is the rivalry between
+the families. Without all three forces, there would be no story.
+Without driving forces, there is no way to begin thinking through
+a scenario. They are a device for honing your initial judgment, for
+helping you decide which factors will be significant and which
+factors will not.
+As a business executive thinking about the future of your
+company, you know that interest rates, energy prices, new
+technology, the behavior of the markets, and your competitors’
+actions all come from the outside to affect your business. But how
+do you find the significant driving forces among them, and the
+forces which underlie them? You start by taking another look at the
+decision you have to make.
+You will quickly see that some driving forces are critical to that
+decision, while others don’t require much attention. Gravity and the
+laws of physics affect everyone’s life. But you will rarely have to
+ponder them for scenarios. Few forces could be more boring, for
+example, than the fact that British Commonwealth countries speak
+English—until you investigate the future of French Canada or
+Pakistan. Trust your instincts; it is part of human nature to be
+interested in factors that affect the decisions we need to make.
+When the founders of Smith & Hawken tools (in Chapter 2) asked:
+Should we open a small business? we looked first at what would affect
+the outcome of our decision. Our answers were all driving forces:
+the demographics of the United States; the availability of tools from
+abroad (which, in turn, was driven by the balance of payments); the
+importance of a home and garden in American values; and the
+American economy. There were other driving forces in the world at
+that time—for instance, the growing enmity among Arab nations—
+which had little to do with our story.
+Often, identifying driving forces reveals the presence of deeper,
+more fundamental forces behind them. I described in Chapter 4 how
+Shell planners asked: “Should we build a giant off-shore gas drilling
+platform?” Among the driving forces we considered were the
+European gas market and the European gas supply. What forces
+influenced the European gas supply? One clear factor was European-
+
+
+U.S.S.R. relations. And what force influenced those relationships?
+One was the totalitarian, seemingly rigid politics of the Soviet
+Union.
+Driving forces often seem obvious to one person and hidden to
+another. That is why I almost always compose scenarios in teams.
+Often, we begin this stage (after we have individually done our
+research) by standing before a large sheet of white paper, and
+brainstorming together. Several years ago, I did this with a group of
+Pacific Gas and Electric executives. They were considering a
+perennial power utility question: Should they invest in building
+more power plants? Or should they instead try to reduce the need
+for more power by promoting energy-efficiency? Both paths would
+cost the same, and result in the same amount of available energy.
+But they needed to know which driving forces existed, to make one
+choice or the other preferable.
+Some factors were obvious. Every executive in the room was
+keenly aware of twenty-year-old environmentalist resistance to
+nuclear power in California. After years of bitter antagonism, the
+PG&E executives were now coming to accept the fact that the
+movement would not go away, and that it would have long-lasting
+political impact.
+Less obvious was the force of immigration—the fact that
+California was becoming a more multicultural society. If the
+company promoted energy-efficiency, it would henceforth depend
+more on the nature of its customers than on the economics of
+nuclear technology. Promoting energy-efficiency would mean
+communicating with millions of Philippine, Vietnamese, and El
+Salvadoran homeowners. That meant the human capital of the
+company had to change. There was not a single Tagalog speaker, for
+example, among PG&E’s executive ranks—so far. If the company
+chose energy-efficiency, it might need to hire some.
+Another driving force was economic volatility. Everyone in the
+room could see signs of distress: the stock market turbulence, the
+U.S. deficits, increasing inflation, As large borrowers of capital, big
+power projects are keenly sensitive to inflation and interest rates.
+
+
+The economic volatility increased the risk of massive investments—
+it made the energy-efficiency side look better.
+Finally, the company’s own growing appreciation of the
+greenhouse effect was another driving force. PG&E had come to
+realize that a large-scale investment in energy-efficiency—in which
+it would help customers make individual investments in, for
+example, insulation—would not only help its public relations, but
+would stabilize California’s energy demands. Whatever happened to
+oil prices or nuclear power, the state would be able to manage.
+Ultimately, PG&E decided that it could handle the necessary cultural
+change. The effects of this decision will increasingly change
+California. In other words, PG&E’s decision will itself become a
+driving force.
+Whenever I look for driving forces I first run through a familiar
+litany of categories:
+•  Society
+•  Technology
+•  Economics
+•  Politics
+•  Environment
+In nearly every situation, I find forces from each of these arenas
+which make a difference in the story.
+For example, consider a decision which many large book
+publishing companies are making. Today, publishers print massive
+overruns of popular “mass-market” paperback books. Bookstores
+order more than they can sell, and place them on shelves for a few
+weeks, knowing that a few books will take off as bestsellers. The rest
+are returned to publishers, which refund their cost to bookstores
+and pulp the books. It’s a wasteful, costly practice which puts
+pressure (some feel unnecessary pressure) on writers, bookstores,
+and publishers.
+
+
+But under what scenarios could that practice be different? To
+answer, we need to analyze the driving forces which exist to keep
+the practice going—and the potential forces which could influence it
+to change:
+•  Social: The continuing wave of population growth is perhaps the
+strongest driving force of our time. It suggests a continuing market
+for books, especially because people tend to read more as they get
+older. Literacy in America, while hard to measure, is generally
+considered to be declining: another growing force. A third force is
+the increasing cultural diversity of America, which continues to
+affect book publishing by opening new markets and changing the
+demographics of old ones.
+•    Technological: The continuous improvement and innovation in
+electronic media may shrink the audience for books. It may also
+have more subtle effects on the distribution of books; on the ability,
+for instance, to build high-speed laser printers in bookshops that
+download books over telephone wires, print them, and bind them
+while people wait. Meanwhile, improvements in paper shredding
+and recycling technologies may make it less expensive to shred
+books.
+•    Economic: The cost of transportation may add to the cost of
+printing and pulping excess books. It, in turn, depends on the cost of
+oil and on inflation. The 1980s brought another economic driving
+force in some companies: the amount of debt added to publishing
+expenses after a leveraged buyout.
+•    Political: Laws affect every endeavor. One important ruling
+affecting U.S. book sales is the Thor Power Tools vs. Internal
+Revenue Service decision of 1981. By allowing the IRS to tax
+publishers on their back inventory in warehouses, it added pressure
+to destroy unsold books, instead of saving them to sell later. Another
+might be restrictions placed by countries (such as Great Britain) on
+importing American books for sale. Internal politics can matter as
+
+
+well. Thus a third political force would be the pressure within any
+corporation 
+to 
+continue 
+existing 
+practices, 
+rather 
+than
+experimenting with new ones. Book publishers have invested
+heavily in developing and promoting these mass-market distribution
+channels.
+•  Environmental: The impact of ecological damage on human affairs,
+and the increasing public perception of ecological harm. In the long
+run the cost of paper and the resulting books will be significantly
+affected by the growing pressure to restrict logging practices.
+Having identified driving forces, I usually step back to sort
+through them. Which are significant and will actually influence
+events? Which are irrelevant? The international restrictions on
+imports, for example, can be ignored for this domestic book
+publishing problem—unless it’s plausible to think that these
+restrictions might change, and books returned from bookstores can
+be shipped profitably to other countries.
+Some forces are clearly significant: the cost of transportation, and
+declining literacy rates. But their effects may be ambiguous.
+Declining literacy rates, for example, could imply a shrinking
+market for paperback books—or a growing market, compared with
+hardback books. To learn which effect it will have, you will
+probably have to return to the hunting and gathering phase,
+researching whether book outlets are expanding in the United
+States. If they are expanding, are mass-market outlets growing more
+quickly or slowly than independent specialty shops?
+You may not immediately see any influence from some forces, but
+don’t rush to discard them. Environmental influences, for example,
+seem remote from book publishing considerations; but conceivably a
+forest shortage would raise the price of paper. Even more
+conceivably, a perceived deforestation crisis could lead to public
+pressure for more efficient publishing. A few farsighted publishers,
+realizing that more efficient practices would save money for them in
+the long run, might find themselves promoting environmentalism
+for the most self-interested reasons.
+
+
+As individuals, or even as companies, we have little control over
+driving forces. Our leverage for dealing with them comes from
+recognizing them, and understanding their effect. Little by little,
+then, as we act within society, our actions contribute to new driving
+forces which in turn will change the world once more.
+Warning: Ambiguity Ahead
+After “identifying and exploring the driving forces,” one must
+uncover 
+the 
+“predetermined 
+elements” 
+and 
+the 
+“critical
+uncertainties.” There is a temptation to assume that these are all
+separate categories, painted in three distinct colors. That, alas, is not
+the case. (I say “alas” because then scenarios would be much easier
+to explain. However, they would also be much less illuminating to
+use.) There are overlaps among them. But you mull over them for
+different purposes, in different ways. Weaving together these
+conceptual building blocks you are deepening your understanding of
+the world by considering the elements of your scenarios. Once your
+understanding of the dynamics and patterns of the situation is
+clearer, then you go on to write the scenarios.
+Some scenario-builders—including Pierre Wack—refuse to give
+definitions for any elements at all. They believe that any definition
+would trivialize the subtleties of the process. Scenario creation is
+not a reductionist process; it is an art, as is story-telling.
+I am willing to try to offer a few definitions. But as I go on to
+describe the other two building blocks—predetermined elements
+and critical uncertainties—I warn you not to focus on the
+definitions. Focus, instead, on how you perceive elements in various
+situations. There is indeed something almost mystical about human
+understanding of events. If you have trouble distinguishing driving
+forces from predetermined elements, and those from uncertainties,
+think of a story important to your life and business. Create an image
+of the elements in that story. They will come to you. For example in
+
+
+my business the spread of sophisticated desktop electronics is a key
+driving force. I can be sure that over the coming decade our
+technological capabilities will continue to accelerate as new
+computing technology becomes ever smaller, faster, and cheaper.
+However, I can’t be sure how rapidly that new technology will
+appear on the desktops of the companies we work with. My strategy
+will be governed by the intersection of the predetermined elements
+of accelerating technology and the critical uncertainty of the pace of
+innovation in the giant multinationals we work with.
+Predetermined Elements:
+What We Know We Know
+Put yourself now in the position of a priest on the river, watching
+the water turn brown and green. To warn the Pharaoh of a
+devastating flood required supreme confidence. Being wrong was
+breaking a religious sacrament and would also, no doubt, have
+meant losing one’s life. They had that confidence, however, because
+the fate of the floods that year was predetermined. Nothing could
+change its impact on the crops, even though the impact would not
+be felt for months later. The priests may or may not have known
+why the color of the water affected the power of the flood. They
+may or may not have been aware of the driving force—the rainfall
+pattern which caused one river, or another, to dominate. But they
+knew the predetermined elements of flooding as well as they knew
+anything.
+The modern era has its predetermined elements as well. General
+Motors and American Telephone and Telegraph both tried to
+reshape their businesses during the 1980s. Both lived out their
+troubles in a public, almost humiliating way. Analysts have
+predicted deeper troubles for both. Yet their situations are very
+different. General Motors could collapse from its current troubles,
+but AT&T could not. It has a guaranteed flow of cash from its long-
+
+
+distance telephone network. It so dominates the long-distance
+market, and that market is so profitable, that any time AT&T’s top
+management need capital they can merely slow down their long-
+distance equipment maintenance. Soon, they have enough cash to
+cover their crisis and speed up their maintenance again. Thus, in
+any scenario we can think of for AT&T during the next few years, its
+survival is assured. In order to imagine AT&T failing, you have to
+imagine something happening to destroy that predetermined flow of
+money. Imagining such a change, in turn, would mean looking more
+closely at the forces that drive the system.
+Predetermined elements do not depend on any particular chain of
+events. If it seems certain, no matter which scenario comes to pass,
+then it is a predetermined element. In 1982 at Shell, we came to
+believe that there would be a substantial United States Government
+budget deficit throughout the 1980s. We reached that conclusion
+after examining the prevailing American political logic of the day.
+The two largest components of the American government budget,
+defense spending and Social Security, were rising uncontrollably.
+The American public supported both increases. Four months after
+Reagan took office, he tried to propose a slight delay in cost-of-
+living increases for Social Security. The proposal was defeated in the
+Senate, one hundred votes to none. The third biggest budget
+component—interest payments on the deficit itself—could not be
+controlled.
+Other governments might have raised taxes, but American anti-
+tax feeling was (and remains) too strong. The origins of this anti-tax
+feeling, incidentally, probably stemmed from another driving force:
+the reality that, for most middle-class Americans, purchasing power
+had hardly changed in ten (now almost twenty) years. The Reagan
+administration cut everything it could: space, education, welfare,
+transportation, non-defense research, infrastructure maintenance.
+The net result of the cuts was insignificant in a 200-billion-dollar
+deficit. America was caught in political gridlock: Americans wanted
+to cut taxes and increase spending. If that continued, interest on the
+deficit would have to become the largest single element of the
+budget. The government would be forced to borrow abroad. As a
+
+
+result of that, the dollar would eventually fall, interest rates would
+rise, and government bonds would be devalued.
+That, ultimately, is exactly what happened. The Japanese bought
+the U.S. bonds, let them be devalued, and have supported the U.S.
+deficit ever since. Once our assumption was in place we could agree
+to assume a big deficit in every scenario we wrote for the 1980s.
+This contradicted every economist we talked to; they all said the
+deficit could not be sustained past 1984.
+Identifying such elements is a tremendous confidence builder—
+not in the U.S. political system, but in your own decisions. You can
+commit to some policies and feel sure about them. There are several
+useful strategies for looking for predetermined elements:
+•    slow-changing phenomena: such things include the growth of
+populations, the building of physical infrastructure, and the
+development of resources.
+•  constrained situations: for example, the Japanese must (and will)
+maintain a positive trade balance because they have 120 million
+people on four islands who do not possess the resources to feed,
+clothe, warm, or transport themselves.
+•  in the pipeline: today, for example, we know almost exactly how
+large the teenage population of the nineties in the United States will
+be. All of them have been born already. They are all in the pipeline
+already. The only uncertainty is immigration and we have a pretty
+good feel for that now … it will be high.
+•  inevitable collisions: in the deficit discussion above the inevitability
+of an enduring federal imbalance was created by the collision of the
+American voting public’s absolute refusal to provide the government
+with higher taxes at the same time that they also refused to forego
+any public benefits. Once the gridlock was created there was no way
+out.
+
+
+The most commonly recognized predetermined element, of
+course, is demographics, a slowly changing phenomenon. As soon as
+the baby boom began, it was obvious that its members would
+eventually age. The effects of this aging are still unclear, and many
+members of the “Don’t trust anyone over thirty” generation denied
+that they too would one day be gray. Deep in their hearts, however,
+the baby boomers knew of the inevitability. “Will you still need
+me,” they asked, “will you still feed me, when I’m sixty-four?”
+I first realized the impact of the aging of the baby boomers in the
+early 1970s, while creating a scenario on new businesses for the
+lumber company Weyerhaeuser. We knew that, no matter what
+happened, there would be a massive opportunity in houseplants.
+Our three scenarios were similar to those we used to inform Smith &
+Hawken (as described in Chapter 2), but the outlook was even
+better for houseplants than for high-quality garden tools. If the
+economy boomed, baby boomers would invest more in their homes;
+along with the paintings and furniture, they’d buy plants as “indoor
+landscaping.” If the economy collapsed into violence and
+incoherence, houseplants would allow frightened nature lovers to
+avoid the risks of going outside. Finally, if a social transformation
+took place, houseplants would be as much a part of it as meditation
+and health food. Reality turned out to be a combination of all three
+scenarios. Weyerhaeuser went into the commercial nursery business
+with considerable success. And I came away with a new
+understanding of how the marketplace of things and ideas in
+America was about to change.
+Demographics also made it clear why perestroika was inevitable.
+The Soviet Union experienced a sharp decline in births during and
+immediately after World War II. During the 1960s and 1970s the
+original “baby bust” was echoed by an even greater decline than we
+saw in the United States. In the mid-eighties therefore it was certain
+that the U.S.S.R. would experience a decline in its labor force as
+fewer and fewer young people came of age. That would begin to
+turn around in the early nineties, but a short-term decline was
+predetermined. Gross national product depends on the size of the
+labor force, and the level of productivity. The Soviet Union’s
+
+
+productivity was declining, and people were trying to get out of, not
+into, the U.S.S.R. When the labor force shrank, it meant the collapse
+of the Soviet economy.
+Pundits kept asking why Gorbachev was having so much trouble
+jump-starting the Soviet economy. Demographics made it clear that
+he wouldn’t succeed until after 1991. At that point, the number of
+twenty-year-olds would begin to rise once again.
+Predetermined elements are fearful sometimes because people
+tend to deny them. The chickens coming home to roost is a
+predetermined element. So is the next payment on our loan, or a
+project deadline that we hoped might never arrive. Gridlock is also
+predetermined. To calculate the amount of gridlock in 2000, look at
+the number of people of driving age. Multiply it by the average
+number of cars per person in America. Then calculate the increase
+in highway mileage, based on construction projects started in the
+last five years. (It takes at least five years, and usually more, to
+build an urban highway.) Even if tomorrow the United States
+embarked on an unprecedented effort to build highways and mass
+transit systems, it would be too late; we can be certain that seven or
+eight large urban areas in the United States will be frozen with
+traffic gridlock. In Chapter 9, we will look at other predetermined
+“challenges,” as the Japanese would say.
+Critical Uncertainties: Dwelling-places of Our Hopes and Fears
+For five thousand years, the waters of the Nile rose and fell
+predictably. The dynasty of the pharaohs declined; other
+governments emerged and they too declined, but the means for
+predicting floods remained basically the same. Then, in the early
+1960s, the Aswan High Dam was built. It was a remarkable feat of
+engineering, five hundred miles downstream from where the fierce
+Atbara joined the Nile. Now if priests had still kept vigil at their
+temple (or government clerks a monitoring station at the same
+
+
+locale upstream), they would have lost their ability to foretell.
+Whether the water was blue, white, or green-brown, the result
+would be the same: the flow would reach the Aswan Dam and stop.
+The fate of the flood plains below is now in human hands.
+One could perhaps, based on a knowledge of Egyptian politics,
+make an educated guess about the flooding level. It would now
+depend on two competing driving forces: the farmers’ same need for
+water, and a new need by Egyptian consumers for electricity from
+the dam. Regulating the dam was a political act, subject to pressure
+from both sides. The flooding, as a result, became an “uncertainty.”
+If you wanted to know how much money the Egyptian Government
+could raise in taxes from farmers this year, you could not simply tell
+from the color of the water. You had to find out what the people in
+the dam’s control tower would do.
+In every plan, critical uncertainties exist. Scenario-planners seek
+them out to prepare for them, an approach that hearkens back to
+old military scenarios: “We know they have to come from the east,
+General, but we don’t know if they’re traveling up the mountain or
+through the forest. Here’s what we’ll do in either case.”
+A critical uncertainty for Smith & Hawken was the degree to
+which the U.S. economy would recover from the shocks of the
+seventies. Although we knew the approximate numbers of our
+potential market, we didn’t know how many of them would be
+prosperous enough to buy imported garden tools. In the Shell
+scenario, we knew the demographic pressures on the Soviet
+Government. We didn’t know how responsive their political system
+could be.
+Critical uncertainties are intimately related to predetermined elements.
+You find them by questioning your assumptions about predetermined
+elements: what might cause the price of oil to rise again? What might
+AT&T do to lose its domination over the long-distance business, and
+its resulting cash cow? Shell’s scenarios, for example, still include
+the U.S. deficit as a predetermined element. But Shell also asks:
+what might happen to change the deficit? It would have to involve
+drastic cuts in defense spending and Social Security. Thus, the
+American debate over military cutbacks and the “peace dividend” is
+
+
+a critical uncertainty when considering scenarios for the late 1990s.
+Another critical uncertainty is real income growth in America. If it
+returned to the levels of the 1960s, people might feel more generous
+about taxes.
+We’ve already seen such “miracles” take place in recent history. In
+the 1970s, futurists said that oil reserves would be exhausted by the
+1990s. They were right about the predetermined elements:
+population growth and an on-going level of energy consumption at
+the current price. There was, however, an uncertainty that few
+futurists considered: would people (and institutions) be willing to
+change their habits if the price of oil rose? People and institutions
+did, and that change made a critical difference.
+If gridlock, for example, becomes too onerous, could a similar
+change of habit occur? Would businesses institute flexible hours en
+masse? Would they allow “telecommuting?” Would real estate prices
+decline enough that people could afford to move closer to work? Or
+would car telephones and fax machines turn the automobile, stuck
+in traffic, into a portable office? We cannot know for sure, and any
+look ahead at gridlock could include two scenarios: one where many
+cities are paralyzed, and one where commuting undergoes a
+transformation.
+I sometimes think of the relationship between predetermined
+elements and critical uncertainties as a choreographed dance. You
+cannot experience the dance just by knowing the sequence of steps
+that must take place. Each dancer will interpret them differently,
+and add his or her unpredictable decisions. Similarly, for example,
+you cannot completely know the nature of a labor force from the
+population demographics. It is uncertain how many people will
+pursue a job. This figure has varied a great deal in recent years,
+especially as more and more women began working. If boom times
+break out and incomes rise quickly again, will more women (or
+men) elect to raise families and drop out of the labor pool?
+Or consider the publishing industry again. The readership
+population is mostly predetermined—it depends on demographics.
+Increasing competition from electronic media is also predetermined.
+Literacy is also a crucial element—but it is far from predetermined.
+
+
+It depends on decisions made about education during the next few
+years. Thus, the quality of education now will influence the print
+media market in the next twenty years. Yet how many book
+publishers have bothered to invest in improving education in any
+significant way?
+We might create two scenarios for the publishing industry,
+depending on the degree of literacy. In Scenario A, a large number
+of literate people spend some of their time reading. Scenario B is the
+opposite; people become more oriented to television and radio
+because reading is unable to hold their attention. There is also a
+third possible scenario—even faster growth for print media, because
+more people spend their time with a variety of media which
+mutually reinforce each other in an increasingly closed and
+mediated world.
+Driving forces, predetermined elements, and critical uncertainties
+give structure to our exploration of the future. Several times in this
+chapter I have referred to the powerful impact of the baby boom on
+my thinking. In the next chapter we explore the evolution of a new
+set of forces that may re-create a similar experience on a global
+level. In the story of the “global teenager” we will see all the
+elements of the scenario building blocks at work.
+OceanofPDF.com
+
+
+ANATOMY OF A NEW DRIVING FORCE: THE GLOBAL
+TEENAGER
+            While walking in Jakarta one day in 1987 I came upon a
+remarkable sight; a vast bazaar of stalls, the nearest of which were
+filled with all manner of electronic goods—from Walkmans to
+computers to microchips to CDs. And every booth was “manned” by
+a boy, hardly any over twenty, and many under ten, all dressed in
+brightly colored polo shirts with insignias from Benetton and Ralph
+Lauren. One sees these new teenagers everywhere. Do these signs
+portend the emergence of a global culture in the coming decades?
+Or are they merely superficial symbols of a global consumer society
+masking a deeper and more enduring cultural diversity. We know
+the numbers, we just don’t know their meaning. This chapter shows
+how we come to develop scenarios by exploring driving forces,
+predetermined elements, and critical uncertainties.
+Most futurists and forecasters would agree, I think: we learned
+about the power of driving forces, in part, by watching the impact
+of the baby boom. The mountain of 40 million teenagers born in the
+post-war decade and a half (the late forties and fifties) was one
+driving force. The unprecedented post-war affluence in the United
+States was another. The two forces combined with the explosion in
+automobiles to create post-war suburbia—a new type of community
+—to house this new mass of middle-class children. Dependent
+minors, for the first time in recorded history, became an influential
+economic force: arguably the most influential, if only because it
+changed existing businesses the most. Smith & Hawken’s tool
+company and Weyerhaeuser’s houseplant division are just two of
+thousands of businesses that would not exist in the same form, or at
+all, if it were not for the baby boom. The impact of these two

@@ -1,0 +1,1953 @@
+# Chapter 3: Cost Advantage
+
+but it ignores many of the important drivers of cost behavior and obscures
+important relationships among them. Cost analyses also tend to rely heavily
+on existing accounting systems. While accounting systems do contain
+useful data for cost analysis, they often get in the way of strategic cost
+analysis. Cost systems categorize costs in line items—such as direct labor,
+indirect labor, and burden—that may obscure the underlying activities a
+ﬁrm performs. This leads to aggregation of the costs of activities with very
+different economics, and to the artiﬁcial separation of labor, material, and
+overhead costs related to the same activity.
+This chapter describes a framework for analyzing the behavior of costs,
+the determinants of relative cost position, and the way ﬁrms can gain a
+sustainable cost advantage or minimize their cost disadvantage. The
+framework can also reveal the cost of differentiation, and the ways a
+differentiated competitor can lower costs in the areas that do not undermine
+its differentiation. The same tools can also be used to analyze supplier and
+buyer cost behavior, important to both cost position and achieving
+differentiation.
+The value chain provides the basic tool for cost analysis. I begin by
+showing how to deﬁne a value chain for cost analysis purposes and how to
+associate costs and assets with value activities. I then describe how to
+analyze the behavior of cost, using the concept of cost drivers. Cost drivers
+are the structural determinants of the cost of an activity, and differ in the
+extent to which a ﬁrm controls them. Cost drivers determine the behavior of
+costs within an activity, reﬂecting any linkages or interrelationships that
+affect it. A ﬁrm’s cost performance in each of its major discrete activities
+cumulates to establish its relative cost position.
+Having presented a framework for analyzing cost behavior, I turn to how
+a ﬁrm can assess the relative cost of competitors and achieve a sustainable
+cost advantage. I then describe some important pitfalls in developing an
+understanding of cost position. The chapter concludes with a discussion of
+the steps in strategic cost analysis. The techniques outlined in this chapter
+do not constitute a substitute for the detailed analysis of cost necessary for
+operations management or pricing, nor do they diminish the need for
+ﬁnancial and cost accounting. Rather, the framework aims to help a ﬁrm
+understand the behavior of cost in a broad, holistic way that will guide the
+
+
+search for a sustainable cost advantage and contribute to the formulation of
+competitive strategy.
+The Value Chain and Cost Analysis
+The behavior of a ﬁrm’s costs and its relative cost position stem from the
+value activities the ﬁrm performs in competing in an industry. A meaningful
+cost analysis, therefore, examines costs within these activities and not the
+costs of the ﬁrm as a whole. Each value activity has its own cost structure
+and the behavior of its cost may be affected by linkages and
+interrelationships with other activities both within and outside the ﬁrm. Cost
+advantage results if the ﬁrm achieves a lower cumulative cost of performing
+value activities than its competitors.
+Deﬁning the Value Chain for Cost Analysis
+The starting point for cost analysis is to deﬁne a ﬁrm’s value chain and to
+assign operating costs and assets to value activities. Each activity in the
+value chain involves both operating costs and assets in the form of ﬁxed and
+working capital. Purchased inputs make up part of the cost of every value
+activity, and can contribute to both operating costs (purchased operating
+inputs) and assets (purchased assets). The need to assign assets to value
+activities reﬂects the fact that the amount of assets in an activity and the
+efﬁciency of asset utilization are frequently important to the activity’s cost.
+For purposes of cost analysis, the disaggregation of the generic value
+chain into individual value activities should reﬂect three principles that are
+not mutually exclusive:
+• the size and growth of the cost represented by the activity
+• the cost behavior of the activity
+• competitor differences in performing the activity
+Activities should be separated for cost analysis if they represent a
+signiﬁcant or rapidly growing percentage of operating costs or assets. While
+most ﬁrms can easily identify the large components of their cost, they
+
+
+frequently overlook smaller but growing value activities that can eventually
+change their cost structure. Activities that represent a small and stagnant
+percentage of costs or assets can be grouped together into broader
+categories.
+Activities must also be separated if they have different cost drivers, to be
+deﬁned in more detail below. Activities with similar cost drivers can be
+safely grouped together. For example, advertising and promotion usually
+belong in separate value activities because advertising cost is sensitive to
+scale while promotional costs are largely variable. Any activity a business
+unit shares with others should also be treated as a separate value activity
+since conditions in other business units will affect its cost behavior. The
+same logic applies to any activity that has important linkages with other
+activities. In practice, one does not always know the drivers of cost behavior
+at the beginning of an analysis; hence the identiﬁcation of value activities
+tends to require several iterations. The initial breakdown of the value chain
+into activities will inevitably represent a best guess of important differences
+in cost behavior. Value activities can then be aggregated or disaggregated as
+further analysis exposes differences or similarities in cost behavior. Usually
+an aggregated value chain is analyzed ﬁrst, and then particular value
+activities that prove to be important are investigated in greater detail.
+A ﬁnal test for separating value activities is the behavior of competitors.
+Signiﬁcant activities should be treated separately when a competitor
+performs them in a different way.1 For example, People Express and other
+no-frills airlines offer very different on-board service than the established
+trunk carriers such as American, Eastern, TWA, and United. Differences
+among competitors raise the possibility that an activity is the source of a
+relative cost advantage or disadvantage.
+Assigning Costs and Assets
+After identifying its value chain, a ﬁrm must assign operating costs and
+assets to value activities. Operating costs should be assigned to the activities
+in which they are incurred. Assets should be assigned to the activities that
+employ, control, or most inﬂuence their use. The assignment of operating
+costs is straightforward in principle, although it can be time-consuming.
+
+
+Accounting records must often be recast to match costs with value activities
+rather than with accounting classiﬁcations, particularly in areas such as
+overhead and purchased inputs.
+Since assets are expensive and their selection and use often involve
+tradeoffs with operating costs, assets must be assigned to value activities in
+some way that will permit an analysis of cost behavior. Assignment of
+assets to activities is more complex than assignment of operating costs.
+Asset accounts must usually be regrouped to correspond to activities, and
+assets must be valued in some consistent way. There are two broad
+approaches to assigning assets. They may be assigned at their book or
+replacement value and compared to operating costs in this form, or book or
+replacement value may be translated into operating costs via capital
+charges. Either valuation approach poses difﬁculties. Book value may be
+meaningless because it is sensitive to the timing of initial purchase and to
+accounting policies. Calculating replacement value is also frequently a
+difﬁcult task. Similarly, depreciation schedules are often arbitrary, as are
+capital charges for both ﬁxed and current assets. The particular method
+chosen to value assets should reﬂect industry characteristics, which in turn
+will determine the most signiﬁcant biases inherent in the data and the
+practical considerations in collecting it. The analyst must recognize the
+biases inherent in whatever method is chosen.2 It may prove illuminating
+for cost analysis to assign assets in several ways.
+The costs and assets of shared value activities should be allocated
+initially to the value chain of the business unit using whatever methodology
+the ﬁrm currently employs, typically based on some allocation formula. The
+cost behavior of a shared value activity reﬂects the activity as a whole and
+not just the part that is attributable to one business unit. The cost of a scale-
+sensitive shared activity will depend on the volume of all involved business
+units, for example. In addition, the allocation formulas covering shared
+activities may not reﬂect their economics but may have been set based on
+convenience or political considerations. As the analysis proceeds, the costs
+of shared activities can be reﬁned using more meaningful allocation
+methods based on the cost behavior of the activities.
+The time period chosen for assigning costs and assets to value activities
+should be representative of a ﬁrm’s performance. It should recognize
+seasonal or cyclical ﬂuctuations and periods of discontinuity that would
+
+
+affect cost. The comparison of costs at different points in time can
+illuminate the effect of strategy changes, as well as help diagnose cost
+behavior itself. Looking at the cost of an activity during successive periods
+can highlight learning effects, for example, while comparing costs during
+periods of widely differing levels of activity may give some indications
+about scale sensitivity and the role of capacity utilization.
+It is important to remember that assigning costs and assets does not
+require the precision needed for ﬁnancial reporting purposes. Estimates are
+often more than sufﬁcient to highlight strategic cost issues, and can be
+employed in assigning costs and assets to value activities where generating
+accurate cost ﬁgures would require great expense. As the analysis proceeds
+and particular value activities prove to be important to cost advantage,
+greater efforts at precision can be made. Finally, a ﬁrm may ﬁnd that
+competitors assign their operating costs and assets differently. The way in
+which competitors measure their costs is important because it will inﬂuence
+their behavior. Part of the task of competitor cost analysis is to attempt to
+diagnose competitor costing practices.
+First Cut Analysis of Costs
+The allocation of costs and assets will produce a value chain that
+illustrates graphically the distribution of a ﬁrm’s costs. It can prove
+revealing to separate the cost of each value activity into three categories:
+purchased operating inputs, human resource costs, and assets by major
+category. The proportions of the value chain can be drawn to reﬂect the
+distribution of costs and assets among activities as shown in Figure 3–1.
+Even the initial allocation of operating costs and assets to the value chain
+may suggest areas for cost improvement. Purchased operating inputs will
+often represent a larger proportion of costs than commonly perceived, for
+example, because all the purchased inputs in the value chain are rarely
+cumulated. Other insights can result from grouping value activities into
+direct, indirect and quality assurance activities as deﬁned in Chapter 2, and
+cumulating costs in each category. Managers often fail to recognize
+burgeoning indirect costs and have a tendency to focus almost exclusively
+on direct costs. In many ﬁrms, indirect costs not only represent a large
+
+
+proportion of total cost but also have grown more rapidly than other cost
+elements. The introduction of sophisticated information systems and
+automated processes is reducing direct costs but boosting indirect costs by
+requiring such things as sophisticated maintenance and computer
+programmers to prepare machine tapes. In valve manufacturing, for
+example, indirect cost represents more than 10 percent of total cost. Firms
+can also ﬁnd that the sum of all quality assurance activities in the value
+chain is strikingly large. In many industries, this has led to the growing
+conclusion that other approaches to quality assurance besides inspection,
+adjusting, and testing can yield large cost savings.
+
+
+Figure 3–1. Distribution of Operating Costs and Assets in Flow Control Valves
+
+
+Cost Behavior
+A ﬁrm’s cost position results from the cost behavior of its value
+activities. Cost behavior depends on a number of structural factors that
+inﬂuence cost, which I term cost drivers. Several cost drivers can combine
+to determine the cost of a given activity. The important cost driver or drivers
+can differ among ﬁrms in the same industry if they employ different value
+chains. A ﬁrm’s relative cost position in a value activity depends on its
+standing vis-à-vis important cost drivers.
+Cost Drivers
+Ten major cost drivers determine the cost behavior of value activities:
+economies of scale, learning, the pattern of capacity utilization, linkages,
+interrelationships, integration, timing, discretionary policies, location, and
+institutional factors. Cost drivers are the structural causes of the cost of an
+activity and can be more or less under a ﬁrm’s control. Drivers often
+interact to determine the cost behavior of a particular activity, and the
+relative impact of cost drivers will differ widely among value activities.
+Thus no one cost driver, such as scale or the learning curve, is ever the sole
+determinant of a ﬁrm’s cost position. Diagnosing the cost drivers of each
+value activity allows a ﬁrm to gain a sophisticated understanding of the
+sources of its relative cost position and how it might be changed.
+ECONOMIES OR DISECONOMIES OF SCALE
+The costs of a value activity are often subject to economies or
+diseconomies of scale. Economies of scale arise from the ability to perform
+activities differently and more efﬁciently at larger volume, or from the
+ability to amortize the cost of intangibles such as advertising and R&D over
+a greater sales volume. Economies of scale can result from efﬁciencies in
+the actual operation of an activity at higher scale as well as from less than
+proportional increases in the infrastructure or overhead needed to support an
+activity as it grows. In a bauxite mine, for example, actual mining costs go
+down less with scale than do infrastructure costs.
+
+
+Economies of scale must be clearly distinguished from capacity
+utilization. Increasing capacity utilization spreads the ﬁxed costs of existing
+facilities and personnel over large volume, while economies of scale imply
+that an activity operating at full capacity is more efﬁcient at larger scale.
+Mistaking capacity utilization for economies of scale can lead a ﬁrm to the
+false conclusion that its costs will continue to fall if it expands capacity
+once its existing capacity is full.
+Increasing complexity and costs of coordination can lead to
+diseconomies of scale in a value activity as scale increases. When the
+number of lines in a metal can plant exceeds about 15, for example, the
+complexity of the plant becomes unwieldy. Increasing scale also sometimes
+dampens employee motivation and may increase wage or purchased input
+costs. For example, a large plant may have a greater likelihood of
+unionization or lead to higher expectations and greater stridency of union
+negotiators. Diseconomies of scale in procurement can also occur if large
+requirements meet an inelastic supply, forcing up input prices.
+Diseconomies of scale appear to be present in many fashion-sensitive
+industries and professional services, which rely heavily on fast response
+times and creative individuals who do not function well in large
+organizations.
+The scale sensitivity of activities varies widely. Value activities such as
+product development, national advertising, and ﬁrm infrastructure are
+typically more scale-sensitive than activities such as procurement and sales
+force operations because their costs are heavily ﬁxed no matter what the
+ﬁrm’s scale is. However, economies (and diseconomies) of scale can be
+found to some extent in virtually every value activity of a ﬁrm.
+Economies of scale reﬂect not only the technology in a value activity but
+also the manner in which a ﬁrm chooses to operate it. Scale economies in a
+plant can be strongly affected by the number of product varieties produced
+and the length of runs chosen. Similarly, the deployment of a sales force can
+inﬂuence economies of scale in sales force operation. In a sales force
+organized geographically, costs tend to fall as regional sales volume grows
+because a salesperson can write larger orders on each sales call and/or
+because travel time between accounts is reduced by greater density. If the
+sales force is organized by product line, however, an increase in volume in
+
+
+one region may create diseconomies by requiring salespersons to travel
+more to that region than to other regions closer to home base.
+Economies of scale are not all equivalent. The relevant measure of scale
+differs among value activities and industries. Firms that overlook this often
+undermine their relative cost positions. For some value activities, global or
+worldwide scale is the relevant cost driver. For other value activities,
+national scale, regional scale, local scale, plant scale, project scale, scale per
+production line, scale per buyer, scale per order, or some other measure of
+scale may underlie the behavior of cost.3
+In product R&D, for example, global or national scale are often the
+relevant measure of scale. Developing a new model requires a ﬁxed
+investment that is amortized over all the units sold. The development cost of
+a standard model sold worldwide is sensitive to global scale, while the
+development cost of a product that must be customized for individual
+countries may be more sensitive to national scale. Economies of scale in
+transportation typically hinge on regional or local scale or on scale per
+buyer, depending on the mode of transportation employed. Local or regional
+scale is a proxy for the density of buyers and hence the distances between
+deliveries to different buyer’s locations. Transportation suppliers also
+frequently offer discounts on containerload, carload, or trainload shipments
+to a given area that contribute to local or regional scale sensitivity. Finally,
+the cost of delivery to a given buyer often remains largely ﬁxed regardless
+of the buyer’s order size, making large buyers less costly to serve.
+Understanding how economies of scale affect cost, therefore, requires an
+identiﬁcation of the speciﬁc mechanisms underpinning them and the
+measure of scale that best captures these mechanisms.
+The appropriate measure of scale is a function of how a ﬁrm manages an
+activity. For example, modifying products by country instead of selling a
+standard product worldwide, a policy choice, changes the appropriate
+measure of scale. Similarly, the authorization cost of a credit card
+processing ﬁrm that authorizes merchant charges electronically rather than
+manually becomes much more sensitive to the overall volume of
+transactions. Thus a ﬁrm can inﬂuence not only the extent of economies of
+scale but also the type of scale that most determines its cost in an activity.
+This suggests that a ﬁrm should manage its activities to maximize their
+sensitivity to the type of scale in which the ﬁrm has the greatest advantage
+
+
+over its competitors. A regional ﬁrm should accentuate the value of its
+regional scale, for example, while a national competitor without leadership
+in any region should manage its activities to maximize the value of its
+national scale.
+LEARNING AND SPILLOVERS
+The cost of a value activity can decline over time due to learning that
+increases its efﬁciency. The mechanisms by which learning can lower cost
+over time are numerous, and include such factors as layout changes,
+improved scheduling, labor efﬁciency improvement, product design
+modiﬁcations that facilitate manufacturing, yield improvements, procedures
+that increase the utilization of assets, and better tailoring of raw materials to
+the process. Learning can also reduce the cost of constructing plants, retail
+outlets, or other facilities. Thus the possibilities for learning in an activity
+are much broader than learning by personnel to perform their functions
+more efﬁciently.4 The rate of learning varies widely among value activities
+because each offers differing possibilities for learning improvements.5
+Learning is often the cumulation of many small improvements rather than
+major breakthroughs. The rate of learning may increase during slack
+periods when attention is focused on reducing costs rather than meeting
+demand. Moreover, learning tends to vary with the amount of management
+attention devoted to capturing it.
+Learning can spill over from one ﬁrm in an industry to another, through
+mechanisms such as suppliers, consultants, ex-employees, and reverse
+engineering of products. Where spillover of learning among ﬁrms is high in
+a value activity, the rate of learning may stem more from total industry
+learning than from the learning of one ﬁrm. Since a sustainable cost
+advantage results only from proprietary learning, the rate of spillover also
+determines whether learning serves to create a cost advantage for a ﬁrm or
+simply lowers cost for the industry.6 Analysis of the rate of spillover plays a
+crucial role in diagnosing the relative cost differences among competitors
+due to differential rates of learning.
+As with scale economies, the appropriate measure of the rate of learning
+is different for different value activities. The appropriate measure of
+
+
+learning reﬂects the speciﬁc mechanisms of learning that account for the
+fall in costs over time in a value activity. This will vary because
+mechanisms for learning are diverse and because of the inﬂuence of
+spillovers. In a value activity where learning affects cost behavior through
+improving worker efﬁciency, for example, the rate of learning may be tied
+to the cumulative volume in that activity. In this case, the rate of learning is
+correlated with scale because high scale makes learning accumulate rapidly.
+Where learning occurs through the introduction of more efﬁcient
+machinery, however, its rate may reﬂect the rate of technological change in
+machinery and have little to do with the ﬁrm’s volume. The rate of learning
+can also be a function of calendar time or the level of investment expended
+in modiﬁcations to an activity. Understanding the speciﬁc mechanisms for
+learning in each value activity and identifying the best measure of its rate
+are necessary if a ﬁrm is to improve its cost position.7 The rate of learning
+is often subject to diminishing returns, and hence it may decline over time
+for some value activities as an industry matures.
+Some alternative measures that may serve as a proxy for the rate of
+learning in an activity and typical value activities in which they apply are
+shown in Table 3–1.
+PATTERN OF CAPACITY UTILIZATION
+Where a value activity has substantial ﬁxed cost associated with it, the
+cost of an activity will be affected by capacity utilization. Fixed costs create
+a penalty for underutilization, and the ratio of ﬁxed to variable cost
+indicates the sensitivity of a value activity to utilization. Different ways of
+conﬁguring a value activity will affect its sensitivity to capacity utilization.
+For example, the use of food brokers to sell to supermarkets usually reduces
+sensitivity to capacity utilization when compared to an in-house sales force.
+Brokers typically receive a commission on sales, while an in-house sales
+force is paid a ﬁxed salary and expenses over and above commissions.
+TABLE 3–1 Typical Measures of Learning
+Cumulative volume in the activity (typical for determining machine speed or reject rates in
+fabrication operations)
+Time in operation (typical for work-ﬂow layout in assembly)
+
+
+Cumulative investment (typical for plant efﬁciency)
+Cumulative industry volume (typical for product design improvements that lower cost where
+spillovers are high)
+Exogenous technical change (typical for basic process improvements)
+Capacity utilization at a given point in time is a function of seasonal,
+cyclical, and other demand or supply ﬂuctuations unrelated to competitive
+position. Thus the pattern of utilization over the entire cycle is the correct
+cost driver instead of utilization at one point in time. Changes in the level of
+capacity utilization will involve costs of expanding or contracting, so that a
+ﬁrm that changes its utilization will have higher costs than one that keeps its
+utilization constant, though they both have the same average utilization. The
+pattern of utilization reﬂects such changes, and is thus the appropriate cost
+driver rather than the average level of utilization. The pattern of capacity
+utilization of an activity is partly determined by environmental conditions
+and competitor behavior (particularly competitor investment behavior) and
+is partly under a ﬁrm’s control through its policy choices in areas such as
+marketing and product selection.
+LINKAGES
+The cost of a value activity is frequently affected by how other activities
+are performed. As described in Chapter 2, two broad types of linkages exist:
+linkages within the value chain and vertical linkages with the value chains
+of suppliers and channels. These linkages mean that the cost behavior of a
+value activity cannot be understood by examining that activity alone.
+Linkages create the opportunity to lower the total cost of the linked
+activities. They provide a potentially powerful source of cost advantage
+because linkages are subtle and require joint optimization or coordination of
+activities across organizational lines. Competitors often fail to recognize
+their presence or are incapable of harnessing them.
+Linkages within the Value Chain
+Linkages among value activities pervade the value chain. Some of the
+most common linkages are those between direct and indirect activities (e.g.,
+
+
+machining and maintenance), quality assurance and other activities (e.g.,
+inspection and after-sale service), activities that must be coordinated (e.g.,
+inbound logistics and operations), and between activities that are alternative
+ways of achieving the result (e.g., advertising and direct sales, or writing
+airline tickets on-board the plane instead of at ticket counters or gates).
+Identifying linkages requires asking the question, “What are all the other
+activities elsewhere in a ﬁrm that have or might have an impact on the cost
+of performing this activity?”
+When activities in the value chain are linked, changing the way one of
+them is performed can reduce the total cost of both. Deliberately raising
+cost in one activity may not only lower the cost of another activity but also
+lower total cost. As described in Chapter 2, linkages lead to opportunities
+for cost reduction through two mechanisms: coordination and optimization.
+Better coordination of linked activities such as procurement and assembly
+can reduce the need for inventory, for example. Inventory is typically a
+manifestation of a linkage between activities, and reducing inventory is
+possible by managing the linkage better. Jointly optimizing activities that
+are linked involves resolving tradeoffs among them. In copier
+manufacturing, for example, the quality of purchased parts is linked to the
+adjustment of copiers after assembly. Canon found it could virtually
+eliminate the need for adjustment in its personal copier line by purchasing
+higher precision parts.
+Vertical Linkages
+Vertical linkages reﬂect interdependencies between a ﬁrm’s activities and
+the value chains of suppliers and channels. The ﬁrm can identify them by
+examining how the behavior of suppliers or channels affects the cost of each
+of its activities and vice versa. Vertical linkages are frequently overlooked,
+because identifying them requires a sophisticated understanding of supplier
+and channel value chains.
+Linkages with suppliers tend to center on the suppliers’ product design
+characteristics, service, quality assurance procedures, packaging, delivery
+procedures, and order processing. Supplier linkages also take the form of a
+supplier performing an activity that the ﬁrm might otherwise undertake. In
+these and other areas, the manner in which a supplier performs activities
+
+
+within its value chain can raise or lower a ﬁrm’s cost. Typical examples of
+supplier linkages important to cost include the linkage between the
+frequency and timeliness of supplier deliveries and a ﬁrm’s raw material
+inventory, the linkage between supplier application engineering and a ﬁrm’s
+technology development cost, and the linkage between a supplier’s
+packaging and a ﬁrm’s material handling cost. As described in Chapter 2,
+for example, delivery of bulk chocolate in liquid form instead of ten pound
+molded bars can reduce a confectioner’s processing costs. Often linkages
+with suppliers provide opportunities for cost reduction on both sides—e.g.,
+delivery of liquid chocolate can reduce the supplier’s cost as well, since it
+eliminates the cost of molding bars and packaging them.
+Managing supplier linkages can lower total cost through coordination or
+joint optimization, as in all linkages. The easiest linkages to exploit are
+those where both a ﬁrm’s and a supplier’s cost fall. Sometimes exploiting a
+linkage requires that a supplier’s cost go up to achieve a more than
+compensating fall in a ﬁrm’s costs, however. A ﬁrm must be prepared to
+raise the price it gives suppliers in such cases to make exploiting the linkage
+worthwhile. The opposite case is also possible, and the ﬁrm must be
+prepared to elevate its own internal cost if the supplier offers a more-than-
+compensating price cut.
+A similar analysis applies to linkages with channels. The typical linkages
+mirror those with suppliers. For example, the location of a channel’s
+warehouses and the channel’s materials handling technology can inﬂuence a
+ﬁrm’s outbound logistical and packaging cost. Similarly, sales or
+promotional activities of channels may reduce a ﬁrm’s sales cost. As with
+supplier linkages, channel linkages may allow both the ﬁrm and its channels
+to lower cost. However, exploiting channel linkages may require the
+channel to raise cost for a more than offsetting reduction in the ﬁrm’s cost.
+It may be desirable, then, to raise margins paid to channels in return for
+changes in the way they operate that will reduce a ﬁrm’s cost. In the United
+States, for example, Seiko paid its jewelers a generous fee for accepting
+Seiko watches for repair and shipping them to Seiko. This minimized
+Seiko’s need for service locations and lowered the cost of processing repairs
+and of informing customers about repair procedures.
+Since vertical linkages involve independent ﬁrms, reaching agreement on
+how to exploit them and how to divide the resulting gains can be difﬁcult.
+
+
+Linkages that require a supplier or channel to raise cost to beneﬁt the ﬁrm
+are quite difﬁcult to achieve unless the ﬁrm has considerable bargaining
+power. Exploiting linkages may also require the creation of switching costs
+as a byproduct, tying one or both sides to the other. This often further
+complicates the task of agreeing on ways to exploit linkages, because
+reaching agreement involves a high level of commitment and trust. The
+payout to exploiting linkages may be great, however, because they are hard
+for competitors to match.
+INTERRELATIONSHIPS
+Interrelationships with other business units within a ﬁrm affect cost, as
+will be discussed in detail in Chapter 9. The most important form of
+interrelationships is when a value activity can be shared with a sister unit.
+American Hospital Supply has found that sharing an order processing and
+distribution organization across many units producing medical supplies has
+yielded a signiﬁcant cost improvement, for example, while shared
+marketing and distribution are beneﬁting such ﬁnancial services ﬁrms as
+Citicorp and Sears. Another form of interrelationship, that I term an
+intangible interrelationship, involves the sharing of know-how between
+separate but similar value activities. Emerson Electric, for example, uses
+cost reduction expertise gained in one division to help lower cost in others.
+Sharing a value activity raises throughput in the activity. It reduces unit
+costs if cost in the activity is sensitive to economies of scale or learning, or
+if sharing improves the pattern of capacity utilization because different
+business units place demands on the value activity at different times.
+Sharing is potentially a way to achieve scale, go down the learning curve
+faster, or load capacity outside of the boundaries of a single industry.
+Sharing is thus a potential substitute for position in a particular industry.
+Sharing a value activity always involves costs, however, that must be
+weighed against any beneﬁts from sharing. The other form of
+interrelationship, sharing know-how between separate activities, lowers cost
+if the activities are similar and if the know-how is signiﬁcant to improving
+the efﬁciency of the activity. In effect, sharing know-how is transfering the
+fruits of learning from one activity to another.
+
+
+INTEGRATION
+The level of vertical integration in a value activity may inﬂuence its cost.
+The cost of an order processing system can be lower if the ﬁrm owns its
+own computer and software instead of contracting with a computer service
+bureau, for example, while the cost of an outbound logistics activity may
+vary depending on whether or not a ﬁrm owns its own ﬂeet of trucks. Every
+value activity employs or could employ purchased inputs, and thus involves
+explicit or implicit integration choices.
+Integration can reduce cost in a number of ways. It avoids the costs of
+using the market, such as procurement and transportation costs. It can allow
+the ﬁrm to avoid suppliers or buyers with considerable bargaining power.
+Integration can also lead to economies of joint operation, as where steel
+does not have to be reheated if it moves directly from the steelmaking to the
+fabrication process. However, integration can raise cost by creating
+inﬂexibility, bringing activities in-house that suppliers can perform more
+cheaply, undermining incentives for efﬁciency because the relationship with
+the supplying unit becomes captive, or raising exit barriers.8 Whether
+integration raises, lowers, or has no effect on cost thus depends on the
+particular value activity and purchased input involved. Sometimes de-
+integration is indicated.
+A ﬁrm must assess the potential beneﬁts of integration for each
+important purchased input in a value activity. Conversely, it must examine
+those functions currently performed internally to determine whether de-
+integration would lower the cost of the activity without undermining the
+ﬁrm’s strategy. Firms often ignore the de-integration option in their cost
+analyses. Integration and de-integration analysis must not limit itself to
+major inputs but should also examine ancillary services and other
+supporting functions. A product might be purchased without service, for
+example, though the two are often bundled.9 Firms can often lower cost by
+integrating into some ancillary services while continuing to buy the basic
+product.
+TIMING
+
+
+The cost of a value activity often reﬂects timing. Sometimes a ﬁrm may
+gain ﬁrst-mover advantages from being among the ﬁrst to take a particular
+action. The ﬁrst major brand in the market may have lower costs of
+establishing and maintaining a brand name, for example. Gerber exploited
+this advantage in baby food. Learning is also inextricably linked to timing,
+because the timing of moves determines when learning begins.
+Disadvantages may also accrue to ﬁrst movers. Late movers can enjoy
+beneﬁts such as purchasing the latest equipment (an advantage today in
+computers and steel) or avoiding high product or market development costs
+borne by early movers. A late mover may also be able to tailor the value
+chain to prevailing factor costs. Another late-mover advantage may be a less
+senior, and therefore less costly, workforce. Newly established airlines such
+as People Express have much less senior workforces than established
+carriers such as PanAm. Furthermore, workforces assembled during
+difﬁcult economic conditions may prove less interested in unionization.
+First-mover and late-mover advantages are discussed extensively in Chapter
+5.
+Timing’s role in cost position may depend more on timing with respect
+to the business cycle or market conditions than on timing in absolute terms.
+For example, the timing of purchase of an offshore drilling rig in the
+industry’s cycle strongly inﬂuences not only the interest cost but the
+purchase price of the rig. ODECO has purchased rigs during downturns
+when prices are depressed as an integral part of its cost leadership strategy.
+Depending on the value activity, then, timing can either raise or lower costs
+relative to competitors. Timing can lead to either sustainable cost advantage
+or a short-term cost advantage. A ﬁrm that has low cost assets because of
+fortuitous timing, for example, may ﬁnd that the eventual need to replace
+those assets dramatically raises its relative cost position.
+DISCRETIONARY POLICIES INDEPENDENT OF OTHER DRIVERS
+The cost of a value activity is always affected by policy choices a ﬁrm
+makes, quite independently of other cost drivers. Discretionary policy
+choices reﬂect a ﬁrm’s strategy and often involve deliberate tradeoffs
+between cost and differentiation. For example, an airline’s cost position is
+determined by such policy choices as the quality of meals, which airports
+
+
+are used, the level of amenities in terminals, the baggage allowance offered,
+and whether the airline sells tickets on-board or has in-terminal ticketing
+and downtown ticket ofﬁces. A “no-frills” airline reduces cost by having no
+meals or charging for them, using secondary airports with spartan terminals,
+having no free baggage allowance, and ticketing on board.
+Some of the policy choices that tend to have the greatest impact on cost
+include:
+• product conﬁguration, performance, and features
+• mix and variety of products offered
+• level of service provided
+• spending rate on marketing and technology development activities
+• delivery time
+• buyers served (e.g., small versus large)
+•  channels employed (e.g., fewer, more efﬁcient dealers versus many
+small ones)
+• process technology chosen, independent or scale, timing, or other cost
+drivers
+• the speciﬁcations of raw materials or other purchased inputs used (e.g.,
+raw material quality affects processing yield in semiconductors)
+• wages paid and amenities provided to employees, relative to prevailing
+norms
+• other human resource policies including hiring, training, and employee
+motivation
+• procedures for scheduling production, maintenance, the sales force and
+other activities
+Though policy choices always play an independent role in determining
+the cost of value activities, they also frequently affect or are affected by
+other cost drivers. Process technology is often dictated partly by scale and
+partly by what product characteristics are desired, for example. Moreover,
+other cost drivers inevitably affect the cost of policies. For example, an
+automated ticketing and seat selection system may well be subject to
+
+
+economies of scale that make such a system very costly for a small airline
+to adopt.
+Policies typically play a particularly essential role in differentiation
+strategies. Differentiation often rests on policy choices that make a ﬁrm
+unique in performing one or more value activities, deliberately raising cost
+in the process (see Chapter 4). A differentiator must understand the costs
+associated with its differentiation and compare them to the price premium
+that results. This can be done only by isolating the effects of policies on
+cost. Frequently, ﬁrms choose seemingly benign policies to differentiate
+themselves that prove enormously costly once their role in cost behavior
+becomes clear. In other cases, ﬁrms forego policies that can enhance
+differentiation with little impact on cost—or that are less expensive for
+them to implement than for their competitors. A market leader such as
+Owens-Corning Fiberglas, for example, can potentially differentiate itself at
+lower cost than other ﬁberglass competitors through a high spending rate on
+advertising. The resulting brand awareness is cheaper for Owens-Corning to
+achieve than competitors because of scale economies in advertising that are
+driven by national share.
+Policies play a vital role in determining cost, and cost analysis must
+uncover their impact. Yet many ﬁrms do not recognize the extent to which
+the explicit and implicit policy choices they make determine cost. A ﬁrm
+must scrutinize each value activity to identify the explicit and implicit
+policy choices embodied in it. Sometimes policy choices are nearly
+invisible, because they are inherited or represent conventional wisdom that
+is unchallenged. An examination of competitors’ policies in each activity
+often yields insight into the ﬁrm’s explicit or implicit policy choices and
+suggests ways they might be modiﬁed or improved to lower costs. Policy
+choices can often be changed rapidly, yielding immediate cost reduction.
+LOCATION
+The geographic location of a value activity can affect its cost, as can its
+location relative to other value activities. While location frequently reﬂects
+a policy choice, it can also stem from history, the location of inputs, and
+other factors. Hence, location should be treated as a separate cost driver.
+
+
+The location of a value activity affects cost in a number of ways.
+Locations differ in the prevailing costs of labor, management, scientiﬁc
+personnel, raw materials, energy, and other factors. Prevailing wage levels
+and tax rates vary markedly by country, region within a country, and city,
+for example. Eaton Corporation has capitalized on this in automotive
+components, employing plants in Spain and Italy to achieve a low-cost
+position in Europe. Location can also affect the cost of a ﬁrm’s
+infrastructure because of differences in available local infrastructure.
+Climate, cultural norms, and tastes also differ by location. These affect not
+only product needs but also the way in which a ﬁrm can perform value
+activities. The amenities required in a plant, for example, are partly a
+function of local norms. Finally, logistical costs often hinge on location.
+Location relative to suppliers is an important factor in inbound logistical
+cost, while location relative to buyers affects outbound logistical cost.
+Location of facilities relative to each other affects the costs of transshipping,
+inventory, transportation, and coordination. Location also shapes the
+transportation modes and communication systems available to a ﬁrm, which
+can affect cost.
+Location has some inﬂuence, then, on the cost of almost every value
+activity. Firms do not always understand the impact of location beyond
+obvious differences such as wage rates and taxes, however. Opportunities
+often exist for reducing cost through relocating value activities or by
+establishing new patterns of location of facilities relative to each other.
+Changing location often involves tradeoffs—it lowers some costs while
+raising others. Locating to minimize transportation or other costs also
+frequently trades off against scale economies. Technological change that
+alters scale economies may alter historical tradeoffs, however, as may shifts
+in relative wages and other costs. Thus ﬁrms may be able to create a cost
+advantage through recognizing opportunities for changing location ﬁrst.
+INSTITUTIONAL FACTORS
+Institutional factors, including government regulation, tax holidays and
+other ﬁnancial incentives, unionization, tariffs and levies, and local content
+rules, constitute the ﬁnal major cost driver. Institutional factors represent
+perhaps the single most important cost driver in the trucking industry in the
+
+
+United States in the 1980s, for example. Regulatory approval for the use of
+double trailers could have as much as a 10 percent impact on cost. At the
+same time, unionized carriers have much higher wage costs relative to
+nonunion carriers. These two factors outweigh all the other major cost
+drivers by a considerable margin in determining the relative cost position of
+trucking ﬁrms. Another example of the role of institutional factors as a cost
+driver is in power costs, the single largest determinant of cost position in
+aluminum smelting. Power costs depend on the rates charged by power
+companies, a highly political issue in areas where governments own power
+companies. Rapid escalation of power rates in some countries has made
+them uncompetitive smelting locations. Favorable institutional factors can
+lower costs just as unfavorable ones can raise them. While institutional
+factors often remain outside a ﬁrm’s control, means may exist to inﬂuence
+them or minimize their impact.
+DIAGNOSING COST DRIVERS
+The same cost drivers determine asset utilization as well as operating
+costs in an activity. Finished good inventory turnover, for example, is often
+determined by the scale of the order processing activity and policies
+regarding delivery time. Tradeoffs can often be made between asset
+utilization and operating costs. A large-scale plant may have low operating
+costs but less asset turnover than a small-scale one, for example. Such
+tradeoffs must be identiﬁed in order to optimize the combination of assets
+and operating cost to lower total cost. Some illustrative drivers of asset
+utilization are shown in Table 3–2.
+The cost behavior of a value activity can be a function of more than one
+cost driver. While one driver may exert the strongest inﬂuence on the cost of
+a value activity, several drivers often interact to determine cost. For
+example, the cost of gate operations for an airline reﬂects policies regarding
+how much service the airline provides, local scale (which inﬂuences the
+efﬁciency with which personnel and facilities are utilized), and the pattern
+of capacity utilization (which is a reﬂection of the ﬂight schedule). Figure
+3–2 illustrates the most important cost drivers in a consumer durable
+manufacturing ﬁrm.
+
+
+A ﬁrm must attempt to quantify the relationship between cost drivers and
+the cost of a value activity whenever possible. This will require estimating
+for each activity the slope of the scale or learning curve, the cost impact of
+each important policy, the cost advantage or penalty of timing, and so on for
+each driver. Though a high degree of precision is not required, some level of
+quantiﬁcation is necessary in order to determine the relative signiﬁcance of
+each cost driver. Quantiﬁcation will also greatly facilitate estimates of
+relative cost position vis-à-vis competitors.
+The technology employed in a value activity is not itself a cost driver,
+but rather an outcome of the interplay of cost drivers. Scale, timing,
+location, and other drivers shape the technology employed in combination
+with policy decisions a ﬁrm makes. The relationship between technology
+and the cost drivers is important in determining the feasibility of technology
+changes, one of the subjects of Chapter 5.
+Interactions Among Drivers. Cost drivers often interact to determine the
+cost of an activity. These interactions take two forms: drivers either
+reinforce or counteract each other. Drivers frequently reinforce or are
+related to each other in affecting cost. The extent of scale economies in an
+activity is partly determined by policy choices about how the activity will
+be performed as well as product mix, for example. The effect of location on
+cost is often related to institutional conditions such as unionization or
+regulation, while securing good locations may require early timing in such
+industries as retailing. Policy choices can also make linkages easier or more
+difﬁcult to achieve, and the cost of policies is often affected by other drivers
+as noted earlier. The advantages of early timing can be reinforced by scale
+economies or learning effects, as will be discussed in Chapter 5. Integration
+also frequently increases scale economies.
+
+
+TABLE 3–2 Illustrative Drivers of Asset Utilization for Selected Value
+Activities
+
+
+Figure 3–2. Cost Drivers in a Consumer Durable Manufacturing Firm
+
+
+Cost drivers can also counteract each other, offsetting each other’s
+effects. This means that improving position vis-à-vis one driver may worsen
+a ﬁrm’s position vis-à-vis another. Large scale and high levels of vertical
+integration frequently increase the penalty of underutilizing capacity, for
+example. Similarly, increased scale can increase the likelihood of
+unionization, while scale economies can be offset because a single location
+raises transportation costs.
+Identifying interactions among cost drivers is a necessary part of
+determining the cost behavior of a value activity. Where drivers are
+reinforcing, a ﬁrm must coordinate its strategy in order to achieve the
+lowest cost. For example, policy choices should enhance the ﬁrm’s ability to
+reap the beneﬁts of scale economies or to achieve linkages. Early timing
+should be exploited by the aggressive pursuit of learning. Eliminating
+inconsistencies and harnessing the reinforcing effects of cost drivers can
+signiﬁcantly improve relative cost position.
+The presence of counteracting cost drivers implies the need for
+optimization. Location must optimize the tradeoff among scale economies,
+transportation costs, and wage costs, for example. The choice of plant scale
+must weigh the cost of underutilization. Policy choices can sometimes alter
+such tradeoffs—for example, the choice of a ﬂexible manufacturing process
+can change the tradeoff between scale and product variety. Resolving such
+tradeoffs is only possible if the effect of each driver on the cost of an
+activity can be quantiﬁed.
+Interactions among cost drivers are often subtle. They are frequently not
+recognized, especially if they are changing. The ability to translate insight
+about the interaction of cost drivers into strategy choices can thus be a
+sustainable source of cost advantage.
+Identifying Cost Drivers. Identifying cost drivers and quantifying their
+effect on cost may not be easy, and a number of methods can be employed.
+Sometimes the cost drivers of a value activity will be intuitively clear from
+examining its basic economics. For example, sales force costs are often
+driven by local share because high local share lowers travel time. A
+reasonably accurate estimate of the shape of the relationship between sales
+force cost and share can be computed by estimating how rising share would
+cut average travel time. It is often illuminating for understanding and
+
+
+quantifying cost behavior to employ alternative measures of the efﬁciency
+of an activity besides total cost. For example, such measures as yield, scrap
+rates, labor hours, and others can be employed to probe the sources of cost
+changes in a value activity and their logic.
+Another method of identifying cost drivers is for a ﬁrm to examine its
+own internal experience, particularly if the ﬁrm’s circumstances have
+changed over time or it operates multiple units. Past cost data may allow a
+ﬁrm to plot its historical learning curve in a value activity, for example, if it
+adjusts for inﬂation and changes in policies, product design, and product
+mix. Cost levels at different scales of output in the past may shed some light
+on scale economies. If a ﬁrm sells in several geographic regions or
+manufactures in several plants, differences among them can illuminate cost
+drivers.
+Cost drivers can also be determined from interviews with experts.
+Individuals who have extensive knowledge of a value activity can be asked
+“what if” questions about the effects of changing various parameters on
+cost. For instance, interviews with production managers might address the
+impact of doubling line speed on such factors as manning levels, energy
+consumption, and yield.
+The ﬁnal method for identifying cost drivers is to compare a ﬁrm’s cost
+in a value activity to its competitors’ or compare competitors’ costs to each
+other. Since competitors will usually be situated differently vis-à-vis the
+cost drivers, such comparisons can expose which cost drivers are most
+important. Analyzing competitor cost behavior will be discussed below.
+The Cost of Purchased Inputs
+Procurement has strategic signiﬁcance in almost every industry, but
+rarely has sufﬁcient stature in ﬁrms. Every value activity employs purchased
+inputs of some kind, ranging from raw materials used in component
+fabrication to professional services, ofﬁce space, and capital goods.
+Purchased inputs divide into purchased operating inputs and purchased
+assets. The total cost of purchased inputs as a percentage of ﬁrm value
+provides an important indicator of the strategic signiﬁcance of procurement.
+In many industries, the total cost of purchased inputs is a very large
+
+
+percentage of value, yet it receives much less attention than reducing labor
+costs.
+The cost of purchased inputs is an integral part of the cost of a value
+activity, and the cost drivers described above determine the behavior of
+input costs. However, isolating purchased inputs for separate analysis will
+often yield additional insights into cost behavior. The cost of purchased
+inputs in an activity is a function of three factors: their unit cost, their rate
+of utilization in an activity, and their indirect effects on other activities
+through linkages. While utilization of inputs in an activity and linkages with
+other activities are best analyzed as part of the overall cost behavior of an
+activity, the unit cost of purchased inputs often has similar drivers across
+activities. Firmwide procurement practices also affect the unit cost of many
+inputs. Thus a ﬁrm can gain insight into how to lower unit cost by analyzing
+the unit cost of purchased inputs as a group.
+In separating the unit cost of purchased inputs for analysis, however, a
+ﬁrm must recognize all three factors noted above. Better quality steel may
+improve the yield of a forging operation, as well as simplify machining. In
+some instances, then, a ﬁrm may lower total cost by spending more on
+purchased inputs. Minimizing the unit cost of purchased inputs is not
+necessarily appropriate. However, it is still clearly desirable to seek the best
+possible unit cost for purchased inputs after choosing the appropriate type
+and quality of inputs.
+Firms’ analyses of purchasing typically focus on the most visible items,
+especially raw materials and components. However, purchased inputs other
+than raw materials and components, when aggregated, often constitute an
+even greater percentage of cost. Standard cost systems often distribute the
+costs of such inputs among many cost categories rather than highlighting
+their importance. Purchased services such as maintenance or professional
+services are often overlooked in purchasing analyses, while purchases from
+sister units seldom receive the level of examination that is applied to outside
+purchases. Finally, purchased assets are frequently bought outside the
+normal procurement system and without the associated expertise. A
+comprehensive analysis of the unit cost of purchased inputs can be an
+important tool in gaining cost advantage.
+PURCHASING INFORMATION
+
+
+The starting point in analyzing the unit cost of purchased inputs is to
+develop purchasing information. A ﬁrm should begin by identifying all
+signiﬁcant purchased inputs and determining its yearly or quarterly
+expenditures on them. The list should include inputs purchased from sister
+business units. For purchased operating inputs, usage per period represents
+a relatively easy means of calculating cost. This analysis, however, must
+account for prepayments, discounts, and inventory changes. For purchased
+assets, total purchase price can be used as a measure of cost, adjusted for
+supplier concessions such as free service, free spare parts, or low-cost
+ﬁnancing.
+All signiﬁcant purchased inputs should be identiﬁed, and listed in the
+order of importance to total cost. They should then be divided into
+purchased operating inputs and purchased assets and, within these
+categories, into items purchased regularly such as raw materials and ofﬁce
+space, and irregularly purchased items such as equipment and consulting.
+Categorizing purchased inputs in this way can direct attention to areas
+where opportunities for cost reduction are frequently present. Small
+purchased inputs often provide fruitful opportunities for cost reduction.
+Managers tend to focus their attention on those few purchases that represent
+a signiﬁcant percentage of costs. As a result, suppliers frequently generate
+their highest margins on purchases that represent a small cost item to the
+buyer. Irregularly purchased inputs frequently receive inadequate attention
+as well, while regular purchases are monitored and most ﬁrms have
+procedures to govern them. A ﬁrm should also compute the change in the
+inﬂation-adjusted cost of each input over time. Such a calculation further
+highlights those inputs that should be scrutinized. An increase in the real
+unit cost of an input may indicate that a ﬁrm has either paid inadequate
+attention to controlling cost or that supplier bargaining power has grown.
+After sorting purchased inputs by size, regularity of purchase and real
+cost change, a ﬁrm should then identify where it makes the purchasing
+decision. Authority for many purchases rests outside the purchasing
+department. Yet the purchasing department is the place where procedures,
+procurement expertise, systems for tracking the costs of purchases, and the
+mandate to manage cost reside. Although the de facto delegation of
+procurement authority to other parts of a ﬁrm is often a practical necessity,
+it tends to obscure the cost of many purchased inputs and can lead to less
+
+
+efﬁcient procurement unless the ﬁrm applies the same care as it does in the
+purchasing department.
+A ﬁnal step in developing information about purchased inputs is to
+record the suppliers for each item and the proportion of purchases awarded
+to each supplier over an ordering cycle. The number and mix of suppliers
+will play an important role in determining the cost of purchased inputs. A
+ﬁrm must also systematically track potential suppliers that it does not
+currently purchase from. This will ensure that alternative suppliers are
+regularly considered and that a ﬁrm can gain perspective on the
+performance of its own suppliers. Often a simple list of suppliers for each
+input will lead to some interesting conclusions. For example, single-sourced
+items may represent a signiﬁcant fraction of total purchases. Unless special
+circumstances are present, single sourcing is an indication that suppliers
+have created switching costs and that unit costs of inputs may be
+unnecessarily high.
+DRIVERS OF PURCHASED INPUT COSTS
+The same cost drivers identiﬁed above shape the cost behavior of
+purchased inputs, in combination with the bargaining relationship between
+the ﬁrm and suppliers that grows out of industry structure.10 The structural
+bargaining relationship reﬂects the broader industry determinants of
+supplier margin, while the cost drivers address how a ﬁrm’s speciﬁc
+circumstances can inﬂuence it. While a ﬁrm must expect to pay suppliers
+higher margins on some inputs for these structural reasons, the cost of all
+inputs can be reduced by controlling the drivers. Some drivers have similar
+effects on the cost of many purchased inputs, and Table 3–3 summarizes
+some of the most important ones. For each purchased input, position vis-à-
+vis the drivers will determine the unit cost of purchased inputs of a given
+quality.
+As discussed in Chapter 2, a ﬁrm should seek to coordinate or jointly
+optimize supplier linkages to lower overall costs in addition to create
+bargaining power with its suppliers. Effective communication with suppliers
+is necessary to achieve linkages. Ideally, a ﬁrm can exploit the available
+linkages and capture its share of their beneﬁts by exercising its bargaining
+
+
+power. Procurement policies have an important role in both harnessing
+supplier linkages and improving a ﬁrm’s bargaining power.
+SUPPLIER COST BEHAVIOR AND THE COST OF INPUTS
+The cost behavior of suppliers will have an important inﬂuence on both
+the cost of inputs and the ability of a ﬁrm to exploit supplier linkages.
+Suppliers of a given purchased input will often vary in relative cost position,
+and identifying the lowest cost source may lead to lower unit purchasing
+costs in the long term if the ﬁrm can exercise its bargaining power. Supplier
+cost behavior will determine whether placing larger orders will lower
+suppliers’ cost. Supplier cost behavior will also determine the impact on
+suppliers’ cost of other practices a ﬁrm adopts or asks its suppliers to adopt.
+Supplier cost behavior is analyzed in the same way as a ﬁrm’s cost
+behavior. Understanding the cost behavior of key suppliers will thus allow a
+ﬁrm to establish better purchasing policies as well as to recognize and
+exploit linkages.
+TABLE 3–3 Drivers of the Unit Cost of Purchased Inputs
+COST
+DRIVER
+COST DRIVER
+APPLIED TO
+PROCUREMENT
+DESCRIPTION
+Economies of
+Scale
+Purchasing scale
+The volume of purchasing with a given supplier affects
+bargaining power
+Linkages
+Linkages with suppliers Coordinating with suppliers on speciﬁcations, delivery,
+and other activities can lower total costs
+Interrelationships Shared purchasing with
+other business units
+Combining purchases with sister business units can
+improve bargaining power with suppliers
+Integration
+Make versus buy
+Integration may raise or lower the cost of an input
+Timing
+History of supplier
+relationships
+Historical loyalty to or problems with suppliers may
+affect input costs, access to inputs during tight
+periods, and services provided by suppliers
+Policies
+Purchasing practices*
+Purchasing practices can signiﬁcantly improve
+bargaining power with suppliers and the willingness
+of suppliers to perform extra services, for example:
+• Selection of the number and mix of suppliers
+• Hedging procedures
+
+
+• Investment in information on supplier costs and
+availability
+• Annual contracts versus individual purchases
+• Utilization of by-products
+Location
+Supplier location
+Location of suppliers can affect the cost of inputs
+through the cost of transportation and the ease of
+communication
+Institutional
+Factors
+Government and union
+restrictions
+Government policy can restrict access to inputs or affect
+their cost through tariffs, taxes, and other means.
+Unions may affect the ability to out-source or
+whether nonunion suppliers can be used
+* Purchasing practices that can lower input costs will be treated more completely below.
+Segment Cost Behavior
+Thus far I have described how to analyze the cost behavior of a business
+unit as a whole. In practice, however, a business unit usually produces a
+number of different product varieties and sells them to a number of different
+buyers. It may also employ a number of different distribution channels. For
+example, a shipbuilder constructs both liquid natural gas tankers and
+containerships while a bank lends to sophisticated high net-worth
+individuals as well as to middle income customers. Any of these differences
+may give rise to segments in which the behavior of costs in the value chain
+may be different. Unless the ﬁrm recognizes differences in cost behavior
+among segments, there is a signiﬁcant danger that incorrect or average-cost
+pricing will provide openings for competitors. Thus cost analysis at the
+segment level must often supplement analysis at the business unit level.
+Chapter 7 discusses the identiﬁcation and analysis of segments in more
+detail. Differences in cost behavior among products, buyers, channels, or
+geographic areas is one of the key bases for the existence of segments, and
+hence cost analysis is an essential input to segmentation. The value chain
+for segments generally parallels that of the whole business unit. However,
+segment value chains may differ in some respects that affect cost. For
+example, the large sizes of a product line may be produced on different
+machines than small sizes and require different handling, inspection, and
+shipping procedures. Similarly, they may require different purchased inputs.
+
+
+Identifying important differences in the value activities for different
+segments is a starting point in segment cost analysis.
+A ﬁrm should analyze the costs of those product lines, buyer types, or
+other portions of its activities that
+• have signiﬁcantly different value chains
+• appear to have different cost drivers
+• employ questionable procedures for allocating costs
+In practice, a ﬁrm may want to select representative product varieties or
+buyers to illuminate differences among segments, rather than analyze every
+product variety or buyer in complete detail.
+The process used to analyze cost behavior for segments is the same as
+that used for business units. The value chain for the segment is identiﬁed
+and costs and assets are assigned to it. Then the cost drivers of each activity
+are determined and quantiﬁed if possible. While the process remains the
+same, however, some complications often arise in practice. The prevalence
+of shared value activities among segments (see Chapter 7) requires the
+allocation of costs among segments. Standard cost systems often employ
+arbitrary measures as the basis for allocating cost to segments, such as sales
+volume or other readily measurable variables. While these measures have
+the beneﬁt of simplicity, they often have little to do with the true
+contribution of the segment to overall costs. For example, allocating the
+costs of a value activity to domestic and international buyers by volume of
+sales will usually seriously understate the true cost of international sales,
+because international sales often make disproportionate demands in terms
+of time and attention. The costs of support activities and the costs of
+indirect primary activities appear to be most susceptible to misallocation.
+Such misallocations result in incorrect costs and inappropriate prices for
+product or buyer segments.
+The costs of value activities shared among segments should be allocated
+based on each segment’s actual impact on the effort or capacity of the value
+activity. Such measures will capture the opportunity cost of using a shared
+value activity in one segment instead of another. In technology
+development, for example, allocation should probably be based on the
+
+
+estimated time spent by engineers and scientists on particular product lines
+rather than on the products’ respective sales volumes.
+It is not always feasible or necessary to allocate the costs of shared
+activities to segments on an ongoing basis. The required analysis for
+strategic purposes does not require a high degree of precision, and periodic
+studies can sufﬁce. To allocate R&D costs, for example, engineers can be
+interviewed to determine the percentage of their time spent on various
+products and buyers over a period of time long enough to eliminate
+distortions. Some ﬁrms may also be in a position to compute time allocation
+by sampling engineering change orders or requests for product
+modiﬁcations ﬂowing to the engineering group from the sales force. Similar
+methods of approximation can provide the basis for allocating effort to
+segments in almost any shared activity.
+Cost Dynamics
+In addition to analyzing cost behavior at a point in time, a ﬁrm must
+consider how the absolute and relative cost of value activities will change
+over time independent of its strategy. I term this cost dynamics. An analysis
+of cost dynamics enables a ﬁrm to forecast how the cost drivers of value
+activities may change and which value activities will increase or decrease in
+absolute or relative cost importance. A ﬁrm with insight into cost dynamics
+may be able to position itself to gain a cost advantage by anticipating these
+changes and moving quickly to respond to them.
+Cost dynamics occur because of the interplay of cost drivers over time,
+as a ﬁrm grows or as industry conditions change. The most common
+sources of cost dynamics include:
+Industry Real Growth. Growth of an industry as a whole often has a
+number of effects on costs. Growth can ﬂow through to purchased inputs,
+affecting the scale of supplier industries and thereby the cost of inputs. In
+some industries, industry growth forces up the cost of purchased inputs by
+worsening the supply/demand balance, while in others it lowers the cost of
+inputs by making suppliers more efﬁcient. Industry growth can also open up
+
+
+possibilities for scale economies by making the introduction of new
+technologies feasible in value activities.
+Differential Scale Sensitivity. Real growth (or decline) in the sales of
+ﬁrms can dramatically change the absolute and relative costs of value
+activities if activities have differing scale sensitivity. For example, software
+cost has become increasingly high relative to hardware cost in many
+electronics-related industries such as computers, video games, and
+telecommunication equipment, as hardware cost has proven more scale- and
+learning-sensitive than software cost. The same process can shift the
+relative cost position of ﬁrms that have value chains with differing degrees
+of scale sensitivity. For example, Eli Lilly’s DNA-based technology for
+manufacturing insulin is believed to be more scale-sensitive than Novo
+Industries’ process. If this proves to be true, Lilly’s relative cost position
+will improve as volume grows.
+Different Learning Rates. The relative cost of different value activities
+will change if learning occurs in them at different rates. Learning reduces
+the relative costs of those value activities in which it proceeds most rapidly.
+For example, rapid learning has dramatically reduced assembly costs as a
+percentage of sales for many electronics ﬁrms. As a result, differences
+among regions and countries in labor rates for assembly workers have
+diminished in importance in determining relative cost position.
+Differential Technological Change. Technological changes that proceed
+at different rates can clearly affect the relative cost of different value
+activities and their cost drivers. For example, the availability of low-cost
+computers and the development of airfreight have fundamentally shifted the
+economics of many distribution industries. These changes have caused
+dramatic reductions in order processing costs as a percentage of total costs,
+and have allowed the restructuring of distributors in the direction of fewer
+and more centralized warehouses.
+Relative Inﬂation of Costs. The rate of inﬂation in key cost elements in
+value activities often differs and this can signiﬁcantly shift their relative
+cost. Differential inﬂation rates can quickly turn an insigniﬁcant value
+
+
+activity into one of critical strategic importance, or can convert a modest
+cost item within an activity into the dominant one. For example, because of
+the rapid inﬂation in oil prices relative to salaries and equipment, fuel costs
+now constitute almost 50 percent of airline operating costs. As a result, the
+fuel efﬁciency of the ﬂeet, the inherent efﬁciency of the route system, and
+operating procedures have taken on critical strategic importance.
+Aging. An aging capital base or workforce can shift the relative cost of
+value activities. Older offshore drilling rigs require more maintenance and
+insurance, for example, and an older workforce typically has higher salary
+and beneﬁt costs.
+Market Adjustment. The operation of market forces often works to
+counteract high or low purchased input costs and to eliminate or reduce cost
+differentials based on favorable purchasing by individual ﬁrms. People
+Express and other new airlines have enjoyed extremely low aircraft costs by
+purchasing used planes during the recent glut. Imitators of their strategy
+will eventually eliminate the stock of used planes, and People Express will
+compete with other airlines on a more equal basis.
+Cost dynamics can lead to signiﬁcant changes in industry structure and
+relative cost position. In steelmaking, for example, technological change
+and changing material costs have shifted the stage at which the minimum
+efﬁcient scale of a steelmaking complex is determined. The primary rolling
+mill historically set minimum scale, but now the blast furnace stage does.
+Continuous casting has emerged as a lower-cost process than primary
+rolling for producing semiﬁnished steel slabs. It is also less scale-sensitive
+than primary rolling. These shifts have major implications for the relative
+cost positions of competitors, depending on their process conﬁgurations.
+They have led to the success of mini-mills such as Nucor and Lone Star that
+use continuous casting technology and also have lower-cost labor than
+established competitors. Early identiﬁcation of cost dynamics can yield a
+signiﬁcant cost advantage by directing a ﬁrm toward those value activities
+that will have the greatest leverage for future relative cost position but may
+not now be receiving attention.
+
+
+Cost Advantage
+A ﬁrm has a cost advantage if its cumulative cost of performing all value
+activities is lower than competitors’ costs.11 The strategic value of cost
+advantage hinges on its sustainability. Sustainability will be present if the
+sources of a ﬁrm’s cost advantage are difﬁcult for competitors to replicate
+or imitate. Cost advantage leads to superior performance if the ﬁrm
+provides an acceptable level of value to the buyer so that its cost advantage
+is not nulliﬁed by the need to charge a lower price than competitors.
+A ﬁrm’s relative cost position is a function of
+• the composition of its value chain versus competitors’
+• its relative position vis-à-vis the cost drivers of each activity
+Competitors have value chains that may be similar to or different from
+the ﬁrm’s. In airlines, for example, TWA and United employ similar value
+chains that differ from that of People Express. If competitors’ value chains
+are different from that of the ﬁrm, the inherent efﬁciency of the two chains
+will determine relative cost position. Differences in value chains usually
+encompass only a subset of value activities and thus a ﬁrm can isolate the
+effect of different chains on relative cost position by comparing the cost of
+these differing activities.
+A ﬁrm’s relative cost position in value activities that are the same as
+competitors’ depends on the ﬁrm’s position vis-à-vis the cost drivers of
+those activities relative to competitors. If regional scale drives the cost of
+the sales force, for example, relative sales force cost will reﬂect the regional
+shares of competitors and the steepness of the scale curve. A ﬁrm should
+assess the relative cost position of common value activities one by one, and
+then accumulate them together with the relative cost of different activities to
+determine overall cost position.
+Determining the Relative Cost of Competitors
+The value chain is the basic tool for determining competitor costs. The
+ﬁrst step in determining competitor costs is to identify competitor value
+chains and how activities are performed by them. The process is the same as
+
+
+that employed by a ﬁrm to analyze its own value chain. In practice it is
+often extremely difﬁcult to assess competitors’ costs because the ﬁrm does
+not have direct information. It is usually possible to estimate directly the
+cost of some of a competitor’s value activities from commonly available
+public data as well as from interviews with buyers, suppliers and others. For
+example, a ﬁrm can often learn the number of salespersons a competitor
+employs as well as their approximate compensation and expense account
+allowances. In this way, the costs of some of the competitor’s value
+activities can be built up to yield an accurate but partial picture of the
+competitor’s costs.
+For value activities where a competitor’s costs cannot be estimated
+directly, the ﬁrm should employ comparisons between itself and the
+competitor. This requires that the relative position of the competitor with
+respect to the cost drivers of the value activities in question be determined.
+A ﬁrm then uses its knowledge of cost behavior to estimate differences in
+the competitor’s costs. For example, if local share drives logistical costs and
+the competitor has a higher local share, the competitor probably possesses a
+cost advantage in that value activity. If the ﬁrm can estimate the scale curve
+for logistical costs, the share difference provides a way of estimating the
+extent of the ﬁrm’s disadvantage.
+Given the extent to which determining a competitor’s costs involves
+estimates and deduction, it is sometimes only feasible to estimate the
+direction, and not the absolute magnitude, of the relative cost difference
+with a competitor in a value activity. However, this can still prove extremely
+useful, since the ﬁrm can combine the direction of difference with
+knowledge of the proportional size of each value activity to develop a
+general picture of a competitor’s relative cost position.
+A ﬁrm can typically improve the accuracy of estimates of competitors’
+costs by examining several competitors simultaneously. Information
+disclosed by one competitor can be cross-checked against the disclosures of
+other competitors and used to test the consistency of scale curves or other
+cost models for a particular value activity. In fact, analyzing a ﬁrm’s cost
+behavior and determining the relative costs of competitors is often an
+iterative process.
+
+
+Gaining Cost Advantage
+There are two major ways that a ﬁrm can gain a cost advantage:
+• Control cost drivers. A ﬁrm can gain an advantage with respect to the
+cost drivers of value activities representing a signiﬁcant proportion of
+total costs.
+• Reconﬁgure the value chain. A ﬁrm can adopt a different and more
+efﬁcient way to design, produce, distribute, or market the product.
+The two sources of cost advantage are not mutually exclusive. Even a ﬁrm
+with a very different value chain from its competitors will have some
+common activities, and its relative cost position in them can enhance or
+detract from overall cost position.
+Successful cost leaders usually derive their cost advantage from multiple
+sources within the value chain. Sustainable cost advantage stems not from
+one activity but from many, and reconﬁguring the chain frequently plays a
+role in creating cost advantage. Cost leadership requires an examination of
+every activity in a ﬁrm for opportunities to reduce cost, and the consistent
+pursuit of all of them. More often than not, cost leaders have a culture
+emanating from senior management that reinforces such behavior. It often
+includes symbolic practices such as spartan facilities and limited executive
+perquisites.
+Cost reduction may or may not erode differentiation. Every ﬁrm should
+aggressively pursue cost reduction in activities that do not inﬂuence
+differentiation (see Chapter 4). In activities that contribute to differentiation,
+a conscious choice may still be made to sacriﬁce all or part of
+differentiation in favor of improving relative cost position.
+CONTROLLING COST DRIVERS
+Once a ﬁrm has identiﬁed its value chain and diagnosed the cost drivers
+of signiﬁcant value activities, cost advantage grows out of controlling those
+drivers better than competitors. A ﬁrm can potentially achieve superior
+position vis-à-vis the cost drivers of any activity in the value chain.
+Activities that represent a signiﬁcant or growing proportion of cost will
+
+
+offer the greatest potential for improving relative cost position. While the
+appropriate cost drivers will vary for each activity, some generalizations
+about how controlling each of the ten cost drivers can lead to cost advantage
+in an activity are as follows:
+CONTROLLING SCALE
+Gain the Appropriate Type of Scale. Increasing scale through
+acquisitions, product line extensions, market expansion, or marketing
+activity can lower cost. However, the type of scale that drives cost differs by
+activity. Boosting local or regional scale in an existing region will usually
+lower sales force or physical distribution costs, while raising national scale
+by entering a new region may actually raise these costs. By looking
+throughout the value chain for the types of scale that drive cost, the value of
+scale (and hence market share) of different types can be assessed. Pursuit of
+scale should be selectively tuned to the type of scale that drives the cost of
+important activities in the particular industry. Scale increases in different
+activities must be balanced, moreover, so that pursuing scale in one activity
+does not create diseconomies in another.
+Set Policies to Reinforce Scale Economies in Scale-Sensitive Activities.
+Scale economies are partly a function of how activities are managed. Eaton
+has maximized its scale economies in engine valves, for example, by
+simplifying its product line.
+Exploit the Types of Scale Economies Where the Firm Is Favored. A ﬁrm
+should manage activities in ways that bring out the types of scale economies
+that most favor it. A ﬁrm with high global share should manage product
+development to emphasize global scale, for example, by stressing world
+products rather than country-tailored ones.
+Emphasize Value Activities Driven by Types of Scale Where the Firm Has
+an Advantage. Since different types of scale drive the cost of different value
+activities, a ﬁrm should set its strategy to emphasize as much as possible the
+activities in which it has superior scale of the appropriate type. For a
+regional producer competing with national ﬁrms, for example, this may
+
+
+imply that sales force assistance and service should be emphasized, rather
+than rapid new product introduction whose cost is driven by national or
+global scale.
+CONTROLLING LEARNING
+Manage with the Learning Curve. Learning does not occur automatically
+but results from the effort and attention of management and employees.
+Attention to learning should not be conﬁned to labor costs but also to the
+cost of constructing facilities, the cost of scrap, and other signiﬁcant value
+activities. Every premise and every practice must be examined for possible
+revision. Management must demand learning improvements and establish
+targets for them, rather than simply hope that learning will occur. When
+setting targets, the rate of learning should be compared across facilities and
+regions, as well as to industry standards. A ﬁrm must also establish
+mechanisms to facilitate the sharing of learning across facilities and
+business units. The sharing of learning is often impeded by geographic
+distance and internal rivalry.
+Keep Learning Proprietary. Learning can lower a ﬁrm’s relative cost
+position if the ﬁrm minimizes the spillover rate to competitors. Keeping
+learning proprietary can become an important means of achieving cost
+advantage in learning-sensitive value activities. Means for accomplishing
+this include:
+•  backward integration to protect know-how, such as by building or
+modifying production equipment in-house
+•  controlling employee publications or other forms of information
+dissemination
+• retaining key employees
+• strict non-disclosure provisions in employment contracts
+Learn from Competitors. Pride should not interfere with exploiting the
+learning of competitors. Analysis of competitor value chains allows a ﬁrm
+to uncover good ideas that can be applied in-house. There are many ways to
+acquire competitor learning, including reverse engineering of competitor
+
+
+products, studying published material including patent ﬁlings and articles
+about competitors, and maintaining relationships with competitors’
+suppliers to gain access to knowhow and to the latest purchased inputs.
+CONTROLLING THE EFFECT OF CAPACITY UTILIZATION
+Level Throughput. A ﬁrm can often increase average capacity utilization
+by ﬁnding ways to level the ﬂuctuations of volume through its value chain.
+For example, Sun-Diamond, the agricultural cooperative that produces Sun
+Maid raisins, Diamond walnuts, and other products, has reduced the cost of
+underutilization by promoting year-round baking uses for its products.
+These have reduced demand differences between the Christmas season and
+the rest of the year. Similarly, credit card processors can level throughput by
+serving a mix of accounts that have peak volumes spread throughout the
+year, e.g., beach clubs and ski areas.
+A ﬁrm can level throughput through a variety of means, including:
+• peak load or contribution pricing
+• marketing activity, such as increasing promotion during slack periods
+and ﬁnding off-season uses for the products
+•  line extensions into less cyclical products, or into products that can
+intermittently utilize excess capacity (e.g., private label)
+•  selecting buyers with more stable demand or demands that are
+counterseasonal or countercyclical
+• ceding share in high demand periods and regaining it in low demand
+periods
+• letting competitors serve ﬂuctuating segments12
+• sharing activities with sister business units with a different pattern of
+needs (see Chapter 9).
+Reduce the Penalty of Throughput Fluctuations. In addition to smoothing
+throughput ﬂuctuations, a ﬁrm can sometimes reduce the costs associated
+with ﬂuctuations in the volume of activity. Tapered integration, for example,
+is a means of using suppliers to cover peak needs rather than satisfying
+them in-house. Canadian steel producers, for example, have avoided excess
+
+
+capacity despite ﬂuctuating sales by adding capacity for trendline demand
+growth rather than year-to-year demand. They sell steel produced by
+subcontractors and foreign ﬁrms to cover shortfalls.
+CONTROLLING LINKAGES
+Exploit Cost Linkages Within the Value Chain. A ﬁrm can improve its
+cost position if it recognizes linkages among value activities and exploits
+them. The additional cost of achieving higher precision in machining parts
+may, for example, be offset by a reduction in inspection costs of the ﬁnished
+products. Recent technological advances are making linkages stronger and
+more possible to achieve. Information systems are making coordination
+among activities easier, while computer-aided design and manufacturing is
+just one example of how microelectronics is linking other activities.
+Work with Suppliers and Channels to Exploit Vertical Linkages. Vertical
+linkages imply that relations with suppliers and channels offer possibilities
+for all parties to gain through the coordination and joint optimization of
+their respective value chains. Xerox, for example, provides suppliers with
+its manufacturing schedule through computer terminals, enabling suppliers
+to ship parts precisely when needed. Seeking out and pursuing such
+opportunities will require careful study of supplier and channel value
+chains, as well as the determination to overcome suspicion, greed, and other
+barriers to joint action. A ﬁrm must be prepared to share the gains of
+linkages with suppliers and channels in order to ensure that they can be
+achieved.
+CONTROLLING INTERRELATIONSHIPS
+Share Appropriate Activities. A ﬁrm can often reduce its relative costs
+signiﬁcantly by sharing value activities with sister business units, or by
+entering new businesses in which opportunities for sharing exist. Chapter 9
+describes in detail how to identify opportunities for sharing that lower cost.
+Transfer Know-how in Managing Similar Activities. A diversiﬁed ﬁrm
+may also be able to transfer know-how gained in managing a value activity
+
+
+to other business units with generically similar activities. The issues
+involved in doing so are also discussed in Chapter 9.
+CONTROLLING INTEGRATION
+Examine Systematically Possibilities for Integration and De-integration.
+Both integration and de-integration offer the potential of lowering costs. As
+changes in management attitudes and new information system technology
+are making supplier linkages easier to achieve, de-integration is becoming
+more and more attractive in many industries.
+CONTROLLING TIMING
+Exploit First-mover or Late-mover Advantages. The ﬁrst mover in an
+industry often reaps a long-lasting cost advantage by tying up the best
+locations, preempting the best personnel, gaining access to preferred
+suppliers, or securing patents. In some industries, in fact, only the ﬁrst
+mover can gain a signiﬁcant cost advantage. In other industries, late-movers
+may gain cost advantages because technology is changing rapidly or they
+can observe and cheaply imitate the actions of the pioneer. First-mover and
+late-mover advantages are discussed in Chapter 5.
+Time Purchases in the Business Cycle. Purchasing assets during periods
+of soft demand can yield a major cost savings. This is the case for many
+capital goods such as machinery, ships, and even complete plants.
+CONTROLLING DISCRETIONARY POLICIES
+Modify Expensive Policies That Do Not Contribute to Differentiation.
+Many policies that govern a ﬁrm’s activities raise cost. Sometimes a ﬁrm
+consciously does so in the hope of creating differentiation. Often, however,
+ﬁrms fail to recognize the cost of a policy. Cost analysis will often highlight
+the need to modify such policies, and careful scrutiny may also reveal that a
+policy does not contribute meaningfully to differentiation because its costs
+outweigh the price premium it generates. Both situations offer opportunities
+for cost reduction. Chapter 4 will describe how to evaluate the role of value
+activities in differentiation.
+
+
+Invest in Technology to Skew Cost Drivers in the Firm’s Favor. New
+technology often underlies cost advantage. Technology can also allow a
+ﬁrm to make its competitor’s advantages vis-à-vis cost drivers obsolete. The
+level of technology investment is a policy choice and most cost leaders
+invest aggressively. Iowa Beef, for example, spends $20 million or more on
+plant renovations annually. Some of the important ways in which
+technology investment lowers costs include:13
+• Developing low-cost processes. For example, Union Carbide’s Unipol
+process for making low-density polyethylene.
+•  Facilitating automation. For example, Iowa Beef’s massive beef
+processing plants and K Mart’s automated distribution centers.
+• Low-cost product designs. For example, Canon’s NP200 copier with
+fewer parts.
+In some cases, the ability to apply new low-cost technology depends on
+scale. In soft contact lenses, for example, Bausch and Lomb’s dramatically
+lower-cost spin casting technology for manufacturing lenses is much more
+scale-sensitive than lathe technology. However, the choice of technology
+can also be related to other cost drivers such as timing, location, or
+integration. A ﬁrm should invest in technology development in areas that
+will skew cost drivers the most in its favor.
+Avoid Frills. Most cost leaders control discretionary expenses throughout
+their value chains. National Semiconductor executives work in spartan
+surroundings with few private ofﬁces, and similar characteristics apply to
+other cost leaders including Lincoln Electric, People Express, and Crown
+Cork and Seal. Such policy choices not only reduce costs in their own right
+but also seem to have important symbolic value.
+CONTROLLING LOCATION
+Optimize Location. The location of activities in relation to each other as
+well as to buyers and suppliers often contributes signiﬁcantly to such things
+as labor rates, logistical efﬁciency, and supplier access. The ﬁrm that locates
+its facilities well will often gain a signiﬁcant cost advantage. The optimal
+
+
+location of activities changes over time, as is happening today in the steel
+industry with the emergence of mini-mills.
+CONTROLLING INSTITUTIONAL FACTORS
+Do Not Take Institutional Factors as a Given. Firms can inﬂuence
+institutional factors such as government policies and unionization, despite a
+tendency to view institutional factors as beyond their control. For example,
+many 
+unionized 
+trucking 
+companies 
+have 
+established 
+nonunion
+subsidiaries. Firms can also frequently inﬂuence regulation through
+lobbying, as Japanese ﬁrms are actively seeking to do in states that have
+begun taxing foreign proﬁts. A number of states are already committed to
+repealing their laws to avoid scaring away foreign investors.
+PROCUREMENT AND COST ADVANTAGE
+Procurement practices have a potentially major impact on cost position
+that cuts across activities. A number of possible changes in procurement can
+reduce costs:
+Tune Speciﬁcations of Purchased Inputs to Meet Needs More Precisely.
+A ﬁrm can improve its cost position by ensuring that the quality of
+purchased inputs meets, but does not exceed, the ﬁrm’s requirements. Clark
+Equipment, for example, has begun to move toward automotive grade
+components for some lift truck models, rather than more expensive and
+unnecessarily high-quality truck grade components.
+Enhance Bargaining Leverage Through Purchasing Policies. Firms
+rarely view purchasing strategically or as a bargaining problem, though
+purchasing practices can signiﬁcantly affect cost. Firms can take a number
+of speciﬁc actions to enhance their bargaining power with suppliers:
+•  Increase bargaining power in purchasing by keeping the number of
+sources sufﬁcient to ensure competition, but small enough to be an
+important buyer to each source.
+• Select suppliers who are especially competitive with each other, and
+divide purchases among them.
+
+
+•  Vary the proportion of business awarded to suppliers over time to
+ensure that they do not view it as an entitlement.
+• Solicit occasional proposals from new suppliers, both to test market
+prices and gather technological intelligence.
+• Enhance the leverage of purchasing scale through contracting based on
+annual volume with phased deliveries, instead of making frequent
+smaller purchases.
+• Seek out opportunities to combine purchases with sister business units.
+•  Appoint high-quality purchasing executives to allow more
+sophisticated buying practices.
+•  Invest in information to understand suppliers’ costs and market
+conditions better.
+•  Pursue technology development to eliminate or reduce the need for
+expensive inputs where unit costs cannot be reduced.
+Select Appropriate Suppliers and Manage Their Costs. A ﬁrm should
+select those suppliers which are most efﬁcient or those that offer the least
+costly product to use given the ﬁrm’s value chain. Purchasing practices
+should also include promoting supplier cost reduction, aiding suppliers
+where necessary with technology development, and encouraging supplier
+practices that lower the ﬁrm’s cost through linkages. Marks and Spencer, for
+example, has achieved a low cost position in retailing in the United
+Kingdom through active efforts to help suppliers adopt the most modern
+technology. Managing the efﬁciency or effectiveness of the supplier base,
+using an analysis of supplier value chains essentially the same as the
+analysis of its own chain, can be equally as important to cost position as
+enhancing bargaining power over suppliers.
+RECONFIGURING THE VALUE CHAIN
+Dramatic shifts in relative cost position most often arise from a ﬁrm
+adopting a value chain that is signiﬁcantly different from its competitors’.
+Reconﬁgured value chains stem from a number of sources, including:
+• a different production process
+
+
+• differences in automation
+• direct sales instead of indirect sales
+• a new distribution channel
+• a new raw material
+• major differences in forward or backward vertical integration
+• shifting the location of facilities relative to suppliers and customers
+• new advertising media
+No-frills airlines such as People Express and Southwest Airlines provide
+a striking example of strategies based on reconﬁguring the value chain.
+They have adopted chains that differ markedly from trunk carriers, as
+shown in Table 3–4.
+TABLE 3–4 Alternative Value Chains in Airlines
+Trunk Airlines
+TICKET COUNTER OPERATIONS
+Full service
+GATE OPERATIONS
+Full service
+AIRCRAFT OPERATIONS
+Purchase new aircraft
+Union pilots
+ON-BOARD SERVICE
+Full service
+BAGGAGE HANDLING
+Free baggage checking
+TICKET OFFICES
+Ticket ofﬁces in downtown locations
+
+
+No-Frills Carriers
+TICKET COUNTER OPERATIONS
+Secondary airports and terminals
+No ticket counter (or check-in only)
+Purchase tickets on board the aircraft or from machines
+No interline tickets
+Few fare options
+GATE OPERATIONS
+Secondary airports and terminals
+First come, ﬁrst served seating
+No ticketing at gates
+AIRCRAFT OPERATIONS
+Used aircraft
+High-density seating
+Nonunion pilots
+Smaller crews and more ﬂying hours per day
+ON-BOARD SERVICE
+Nonunion ﬂight attendants
+Snack only or no meals
+Charge for food and drink served
+BAGGAGE HANDLING
+Provide carry-on space
+Charge for checked baggage
+No interline baggage
+TICKET OFFICES
+None
+Two other examples from different industries illustrate the signiﬁcant
+cost advantage to be gained through reconﬁguration of the value chain. In
+beef packing, the traditional value chain involved raising cattle on isolated
+farms and shipping them live to labor-intensive abattoirs in major rail
+centers like Chicago. After the animal was slaughtered and broken, whole
+
+
+sides of beef were shipped to markets where they were cut into smaller
+pieces by retailers. Pursuing an innovative strategy, Iowa Beef Packers built
+large automated plants near the cattle supply and processed the meat there
+into smaller “boxed” cuts. This signiﬁcantly reduced transportation
+expense, a major cost, as well as raised yield by avoiding the weight loss
+that occurred when live animals were shipped. Iowa Beef also reduced costs
+in the operations activities in the value chain by using cheaper nonunion
+labor, readily available in rural areas where its new plants were located.14
+Federal Express similarly redeﬁned the value chain for air delivery of
+small parcels. Traditional competitors such as Emery and Airborne
+collected freight of varying sizes, shipped it via the airlines, and then
+delivered it to the addressee. Federal Express limited itself to small
+packages and ﬂew them on company-owned planes to its central hub in
+Memphis where the parcels were sorted. It then ﬂew the parcels to their
+destinations on the same planes and delivered them in company-owned
+trucks. Other dramatic reconﬁgurations of the value chain include the early
+discount retailers, discount stockbrokers, and new long distance telephone
+companies such as MCI and Sprint.
+Reconﬁguring the value chain can lead to cost advantage for two
+reasons. First, reconﬁguration frequently presents the opportunity to
+fundamentally restructure a ﬁrm’s cost, compared to settling for incremental
+improvements. The new value chain may prove inherently more efﬁcient
+than the old one. The success of the no-frills airlines vividly illustrates how
+adopting a different value chain that is inherently cheaper can allow a ﬁrm
+to establish a new cost standard for an industry. On some routes, no-frills
+airlines have achieved costs that are as much as 50 percent lower than those
+of trunk carriers. Not only are activities performed more cheaply in the new
+value chain, but linkages are exploited. By ticketing on-board, for example,
+People Express signiﬁcantly reduces cost in other value activities such as
+gate operations and ticket counter operations.
+The second way an alternate value chain can lead to cost advantage is by
+altering the basis of competition in a way that favors a ﬁrm’s strengths.
+Reconﬁguration of the chain may change the important cost drivers in a
+way that favors a ﬁrm. Performing an activity differently can change its
+susceptibility to scale economies, interrelationships, locational effects, and
+virtually every other cost driver. In aluminum, for example, Japanese ﬁrms
+
+
+are investing in the new carbothermic reduction process that converts
+bauxite and related ore directly into metal, skipping the intermediate
+alumina stage. This would nullify the Japanese ﬁrms’ serious disadvantage
+in power costs. In the beef processing case, Iowa Beef redeﬁned the role of
+location as a cost driver and increased scale sensitivity. A ﬁrm with a large
+market share, like Iowa Beef, often beneﬁts from shifting to a more scale-
+sensitive value chain. In the case of the no-frills airlines, the new value
+chain is less scale-sensitive than the old one because of the reduction in
+indirect activities. This has been important to the success of the newly
+established no-frills carriers.
+Coalitions and other interﬁrm agreements sometimes provide ﬁrms with
+a way to reconﬁgure the value chain even if they cannot do so
+independently. A number of multiple system operators of cable television
+franchises have traded franchises to increase marketing and operating
+efﬁciency, for example. Similarly, Allied Chemical and Church & Dwight
+have worked out a deal to swap identical raw materials produced in
+different locations to save transportation costs.
+To identify a new value chain, a ﬁrm must examine everything it does, as
+well as its competitors’ value chains, in search of creative options to do
+things differently. A ﬁrm should ask questions such as the following for
+every activity:
+• How can the activity be performed differently or even eliminated?
+• How can a group of linked value activities be reordered or regrouped?
+• How might coalitions with other ﬁrms lower or eliminate costs?
+RECONFIGURING DOWNSTREAM
+Where channel costs or other downstream costs represent a signiﬁcant
+fraction of cost to the buyer, reconﬁguration of downstream activities can
+reduce cost substantially. Gallo’s heavy use of the supermarket channel for
+wine provides an example. A supermarket’s costs of distribution are less
+than that of the liquor store channel which involves distributors. By
+emphasizing supermarkets, Gallo has lowered the cost of getting wine to
+buyers. Gallo’s high sales volume and faster turnover also reduce its relative
+
+
+cost to the supermarket. This has made supermarkets willing to accept
+lower margins from Gallo than from its competitors.
+The efﬁciency of downstream channels reﬂects their strategies and
+degree of fragmentation. Chain stores are often more efﬁcient than single
+outlets, for example, and large ofﬁce equipment or automobile dealers are
+often more efﬁcient than smaller ones. A ﬁrm can not only choose more
+efﬁcient downstream routes to the end user, but also take actions to promote
+consolidation or otherwise improve the efﬁciency of downstream entities. In
+extreme cases, a ﬁrm may have to integrate forward to achieve downstream
+efﬁciency.
+The relative bargaining power of a ﬁrm and its downstream channels has
+an important inﬂuence on whether the ﬁrm will reduce its relative cost
+position through downstream reconﬁguration. In Gallo’s case, supermarkets
+would reap the beneﬁts of their greater efﬁciency if they priced wines the
+same as liquor stores. However, Gallo’s “pull-through” effect and intense
+competition among supermarkets have led to low prices and allowed Gallo
+to reap most of the beneﬁts.
+COST ADVANTAGE THROUGH FOCUS
+A focus strategy may also provide a means for achieving a cost
+advantage that rests on using focus to control cost drivers, reconﬁguring the
+value chain, or both. Since the cost of value activities as well as the most
+efﬁcient value chain may differ for different segments, a ﬁrm that dedicates
+its efforts to a well-chosen segment of an industry can often lower its costs
+signiﬁcantly. Federal Express based its reconﬁguration of the air parcel
+delivery value chain on small packages requiring rapid delivery. People
+Express has focused on price-sensitive buyers, allowing it to eliminate many
+costs. In the hotel/motel industry, La Quinta offers only guest rooms, and
+has lowered its investment and operating costs per room by eliminating
+costly restaurants, conference facilities, and other services not desired by its
+target buyer—the middle-level manager who travels frequently to the same
+area.
+The most dramatic improvements in relative cost position through focus
+usually stem from employing a different and tailored value chain to serve
+the target segment. The Federal Express, People Express, and La Quinta
+
+
+examples all share this characteristic. Focus can also lower costs if the
+target segment is associated with a key cost driver. If regional market share
+is a key cost driver, for example, a regional focus strategy can yield a cost
+advantage over larger national competitors with small shares in the
+particular region.
+Successful 
+focus 
+strategies 
+frequently 
+stem 
+from 
+innovative
+segmentation of an industry. Chapter 7 will describe how to segment
+industries and how to choose appropriate focus strategies. Industry
+segments grow, in part, out of product varieties, buyer groups, or
+geographic areas that require a different value chain or in which cost drivers
+differ.
+Sustainability of Cost Advantage
+Cost advantage will result in above-average performance only if the ﬁrm
+can sustain it. Improving relative cost position in unsustainable ways may
+allow a ﬁrm to maintain cost parity or proximity, but a ﬁrm attempting to
+achieve cost leadership strategy must also develop sustainable sources of
+cost advantage.
+Cost advantage is sustainable if there are entry or mobility barriers that
+prevent competitors from imitating its sources. Sustainability varies for
+different cost drivers and from one industry to another. Some drivers,
+however, tend to be more sustainable than others:
+• Scale. Scale is a key entry/mobility barrier, and the cost of replicating
+scale is often high because competitors must buy share.
+•  Interrelationships. Interrelationships with sister business units can
+force a competitor to diversify in order to match a cost advantage. If
+there are entry barriers into the related industries, sustainability can be
+high.
+• Linkages. Linkages are often difﬁcult for a ﬁrm to detect and require
+coordination across organizational lines or with independent suppliers
+and channels.
+• Proprietary learning. Learning is difﬁcult to achieve in practice; it can
+also be hard for competitors to catch up if learning can be kept
+
+
+proprietary.
+•  Policy choices to create proprietary product or process technology.
+Replicating product innovations or new production processes often
+poses great difﬁculties for competitors if innovations are protected by
+patents or secrecy. Process innovations are often more sustainable than
+product innovations because secrecy is easier to maintain.
+Timing and integration can also be sources of sustainable cost advantage
+because they are often hard to replicate. However, their sustainability will
+be greatest in instances where they also translate into scale or learning
+advantages. Location, the pattern of capacity utilization, institutional
+factors, and policy choices can be sources of sustainable cost advantage in
+some industries, although they tend to create less sustainable cost advantage
+on average than other drivers. Even sources of cost advantage that are less
+sustainable, however, can provide formidable barriers if they interact with
+more sustainable drivers or with each other. Policy choices that elevate scale
+economies can be difﬁcult to imitate, for example.
+Sustainability stems not only from the sources of the cost advantage, but
+also from their number. Cost advantage derived from one or two value
+activities provides an alluring target for imitation by competitors. Cost
+leaders usually accumulate cost advantages gained from numerous sources
+in the value chain that interact and reinforce each other. This makes it
+difﬁcult and expensive for competitors to replicate their cost position.
+Gallo provides a good example of a sustainable cost leadership strategy
+based on these principles. Gallo’s value chain, shown in simpliﬁed form in
+Figure 3–3, contains numerous sources of cost advantage in many value
+activities. The Gallo cost advantage draws heavily on scale and proprietary
+technology, two of the most sustainable cost drivers. Gallo has consistently
+achieved a 15 percent or greater cost advantage over its major rivals. Gallo’s
+strength encouraged Coca-Cola’s exit from the wine industry, because
+Gallo’s cost advantage dampened Coke’s proﬁtability.
+The creation of a new or reconﬁgured value chain is a ﬁnal source of
+sustainability in cost advantage. Competitors almost inevitably face a high
+cost of matching a reconﬁgured chain. This is particularly true for well-
+established competitors, who face signiﬁcant mobility barriers in moving
+away from the industry’s traditional value chain. Iowa Beef and Federal
+
+
+Express, for example, have both enjoyed enduring advantages while
+competitors struggled to respond. Japanese aluminum producers would gain
+a similarly durable cost advantage in aluminum smelting if carbothermic
+reduction proves a success.
+Implementation and Cost Advantage
+This chapter has focused on how to achieve a cost advantage through
+changes in strategy and the way activities are performed. However, the
+success of cost leadership hinges on a ﬁrm’s skills in actually implementing
+it on a day to day basis. Costs do not go down automatically or by accident
+but rather as a result of hard work and constant attention. Firms differ in
+their abilities to lower costs, even when they have similar scale or
+cumulative volumes or when guided by similar policies. Improving relative
+cost position may not require a major shift in strategy so much as greater
+management attention. A ﬁrm should never assume its costs are low
+enough.
+
+
+Figure 3–3. Gallo’s Source of Cost Advantage in Wine
+
+
+No cost driver works automatically. Scale economies are not achieved in
+an activity unless a ﬁrm’s other activities are coordinated to provide the
+inputs necessary to operate smoothly at large scale. Policy choices must not
+dissipate the advantages of scale through product proliferation.
+Interrelationships will not lower cost unless affected business units actually
+coordinate their behavior. Learning curve advantages do not occur unless a
+ﬁrm’s management strives to capture them.
+A number of factors, including the training and motivation of employees,
+the ﬁrm’s culture, the adoption of formal cost reduction programs, a
+constant pursuit of automation, and a strong belief in the learning curve
+contribute to a ﬁrm’s ability to achieve cost leadership. Everyone in a ﬁrm
+has the potential to affect cost. Cost leaders have cost control programs in
+every value activity, not only in manufacturing. They compare activities
+against themselves over time, and among business units and competitors.
+The importance of symbolic factors in creating the climate for cost
+reduction also cannot be overstated. Successful cost leaders usually pay a
+great deal of attention to discretionary costs, in addition to tuning their
+strategy to achieve minimum operating costs.
+Pitfalls in Cost Leadership Strategies
+Many ﬁrms do not fully understand the behavior of their costs from a
+strategic perspective and fail to exploit opportunities to improve their
+relative cost position. Some of the most common errors made by ﬁrms in
+assessing and acting upon cost position include:
+Exclusive Focus on the Cost of Manufacturing Activities. When one
+mentions “cost,” most managers instinctively think of manufacturing.
+However, a signiﬁcant, if not overwhelming, share of total cost is generated
+in activities such as marketing, sales, service, technology development, and
+infrastructure. These often receive too little attention in cost analysis. An
+examination of the entire value chain often results in relatively simple steps
+that can signiﬁcantly reduce cost position. For example, recent advances in
+computers and computer-aided design are having dramatic impacts on the
+cost of performing research.
+
+
+Ignoring Procurement. Many ﬁrms work diligently to reduce labor costs
+but pay scant attention to purchased inputs. They tend to view purchasing as
+a secondary staff function and devote few management resources to it.
+Analysis within the purchasing department too often centers solely on the
+purchase price of key raw materials. Firms often allow many items to be
+purchased by individuals with little expertise or motivation to reduce cost.
+Linkages between purchased inputs and the costs of other value activities go
+unrecognized. Modest changes in purchasing practices could yield major
+cost beneﬁts for many ﬁrms.
+Overlooking Indirect or Small Activities. Cost reduction programs
+usually concentrate on large cost activities and/or direct activities such as
+component fabrication and assembly. Activities that represent a small
+fraction of total cost seldom receive sufﬁcient scrutiny. Indirect activities,
+such as maintenance and regulatory costs, often escape attention altogether.
+False Perception of Cost Drivers. Firms often misdiagnose their cost
+drivers. For example, a ﬁrm with the largest national market share and the
+lowest costs may incorrectly assume that national market share drives cost.
+However, cost leadership may actually stem from the ﬁrm’s large regional
+share in the regions in which it operates. Failing to understand the sources
+of its cost advantage may lead the ﬁrm to attempt to lower cost by raising
+national share. As a result it may worsen its cost position by reducing
+regional focus. It may also concentrate its defensive strategies on national
+competitors and ignore the more signiﬁcant threat posed by strong regional
+competitors.15
+Failure to Exploit Linkages. Firms rarely recognize all the linkages that
+affect cost, particularly linkages with suppliers and linkages among
+activities such as quality assurance, inspection, and service. The ability to
+exploit linkages underlies the success of many Japanese ﬁrms. Matsushita
+and Canon, among others, recognize and exploit linkages despite the fact
+that their policies contradict traditional manufacturing and purchasing
+practices. Failure to recognize linkages also leads to such errors as requiring
+each department to cut costs by the same amount, even though raising cost
+in some departments may lower total costs.
+
+
+Contradictory Cost Reduction. Firms often attempt to reduce cost in
+ways that are contradictory. They try to gain market share to reap the
+beneﬁts of scale economies while at the same time dissipating scale
+economies through model proliferation. They locate close to buyers to save
+freight costs but emphasize weight reduction in new product development.
+Cost drivers sometimes work in opposite directions, and a ﬁrm must
+recognize the tradeoffs.
+Unwitting Cross Subsidy. Firms often engage in unwitting cross subsidy
+when they fail to recognize the existence of segments in which costs behave
+differently.16 Conventional accounting systems rarely measure all the cost
+differences among products, buyers, channels, or geographic areas
+described above. Thus, a ﬁrm may charge excessive prices on some items in
+the line or to some buyers while subsidizing prices charged on others. For
+example, white wine requires less costly cooperage than red wine because
+of its lower aging requirements. If a winery sets equal prices for white and
+red wine based on average costs, then the price of lower-cost white wine
+will subsidize the price of red wine. Unwitting cross subsidy often provides
+an opening for competitors that understand costs and use them to undercut a
+ﬁrm’s prices and improve their market position. Cross subsidy also exposes
+the ﬁrm to focused competitors that only compete in the overpriced
+segments.17
+Thinking Incrementally. Cost reduction efforts often strive for
+incremental cost improvements in the existing value chain, rather than
+ﬁnding ways to reconﬁgure the chain. Incremental improvement can reach
+the point of diminishing returns, while reconﬁguring the chain can lead to a
+whole new cost plateau.
+Undermining 
+Differentiation. 
+Cost 
+reduction 
+can 
+undermine
+differentiation if it eliminates a ﬁrm’s sources of uniqueness to the buyer.
+Though doing so may be strategically desirable, it should be the result of a
+conscious choice. Cost reduction efforts should concentrate most on
+activities that do not contribute to a ﬁrm’s differentiation. A cost leader will
+improve performance, moreover, if it differentiates in activities wherever
+differentiation is not costly.
+
+
+Steps in Strategic Cost Analysis
+The techniques described in this chapter can be summarized by outlining
+the steps required in strategic cost analysis:
+1. Identify the appropriate value chain and assign costs and assets to it.
+2. Diagnose the cost drivers of each value activity and how they interact.
+3.  Identify competitor value chains, and determine the relative cost of
+competitors and the sources of cost differences.
+4. Develop a strategy to lower relative cost position through controlling
+cost drivers or reconﬁguring the value chain and/or downstream value.
+5. Ensure that cost reduction efforts do not erode differentiation, or make
+a conscious choice to do so.
+6. Test the cost reduction strategy for sustainability.
+
+
+4
+Differentiation
+A ﬁrm differentiates itself from its competitors if it can be unique at
+something that is valuable to buyers. Differentiation is one of the two types
+of competitive advantage a ﬁrm may possess. The extent to which
+competitors in an industry can differentiate themselves from each other is
+also an important element of industry structure. Despite the importance of
+differentiation, its sources are often not well understood. Firms view the
+potential sources of differentiation too narrowly. They see differentiation in
+terms of the physical product or marketing practices, rather than potentially
+arising anywhere in the value chain. Firms are also often different but not
+differentiated, because they pursue forms of uniqueness that buyers do not
+value. Differentiators also frequently pay insufﬁcient attention to the cost of
+differentiation, or to the sustainability of differentiation once achieved.
+This chapter presents a framework for analyzing differentiation and
+choosing a differentiation strategy. I will ﬁrst describe the sources of
+differentiation, which can arise anywhere in a ﬁrm’s value chain. Successful
+differentiation strategies grow out of the coordinated actions of all parts of a
+ﬁrm, not just the marketing department. Differentiation is usually costly,
+and I will show how to determine the cost of differentiation and how it
+varies by competitor. I will then describe how to diagnose what types of
+differentiation create buyer value, employing the buyer’s value chain as a
+tool for doing so. Next I will show how to translate an analysis of buyer
+value into speciﬁc buyer purchase criteria. Finally, I will use all of these
+concepts to describe how to choose a differentiation strategy, and highlight
+some common pitfalls in pursuing one.

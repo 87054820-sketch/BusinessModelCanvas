@@ -1,0 +1,238 @@
+# Appendix: Steps to Developing Scenarios
+
+Most of all, what is it that keeps me awake at night?
+Step Two: Key Forces in the Local Environment
+If the identification of a focal issue or decision is the first step,
+then listing the key factors influencing the success or failure of that
+decision is the second step—facts about customers, suppliers,
+competitors, etc. What will decision-makers want to know when
+making key choices? What will be seen as success or failure? What
+are the considerations that will shape those outcomes?
+Step Three: Driving Forces
+Once the key factors have been listed, the third step involves
+listing driving forces in the macro-environment that influence the
+key factors identified earlier. In addition to a checklist of social,
+economic, political, environmental, and technological forces,
+another route to the relevant aspects of the macro-environment is
+the question: What are the forces behind the micro-environmental
+forces identified in Step Two? Some of these forces are
+predetermined (e.g., often demographics) and some are highly
+uncertain (e.g., public opinion). It is very useful to know what is
+inevitable and necessary and what is unpredictable and still a
+matter of choice.
+It can be useful to imagine oneself in the future saying, “If only I
+had known that” inflation would fall, or that a new competitor
+would emerge from another country, or that regulations would
+change drastically. It is not too hard to remember such comments in
+the past. What guidance do they provide for the future?
+This is the most research-intensive step in the process. In order to
+adequately define the driving forces research is usually required.
+
+
+Research may cover markets, new technology, political factors,
+economic forces, and so on. One is searching for the major trends
+and the trend breaks. The latter are the most difficult to find;
+novelty is difficult to anticipate.
+Step Four: Rank by Importance and Uncertainty
+Next comes the ranking of key factors and driving forces on the
+basis of two criteria: first, the degree of importance for the success
+of the focal issue or decision identified in step one; second, the
+degree of uncertainty surrounding those factors and trends. The
+point is to identify the two or three factors or trends that are most
+important and most uncertain.
+Scenarios cannot differ over predetermined elements like the
+inevitable aging of the baby boomers, because predetermined
+elements are bound to be the same in all scenarios.
+Step Five: Selecting Scenario Logics
+The results of this ranking exercise are, in effect, the axes along
+which the eventual scenarios will differ. Determining these axes is
+among the most important steps in the entire scenario-generating
+process. The goal is to end up with just a few scenarios whose
+differences make a difference to decision-makers. If the scenarios
+are to function as useful learning tools, the lessons they teach must
+be based on issues basic to the success of the focal decision. And
+those fundamental differences—or “scenario drivers”—must be few
+in number in order to avoid a proliferation of different scenarios
+around every possible uncertainty. Many things can happen, but
+only a few scenarios can be developed in detail, or the process
+dissipates.
+
+
+While in the end one may boil the logic down to the directions of
+a very few variables the process for getting there is not at all simple
+or mechanical. It is more like playing with a set of issues until you
+have reshaped and regrouped them in such a way that a logic
+emerges and a story can be told.
+Once the fundamental axes of crucial uncertainties have been
+identified, it is sometimes useful to present them as a spectrum
+(along one axis), or a matrix (with two axes), or a volume (with
+three axes) in which different scenarios can be identified and their
+details filled in.
+The logic of a given scenario will be characterized by its location
+in the matrix of most significant scenario drivers. For example, if an
+automobile company determines that fuel prices and protectionism
+are two of the most important scenario drivers, there will be four
+basic scenario logics: (1) high fuel prices in a protectionist
+environment—where domestic suppliers of small cars will have an
+advantage; (2) high fuel prices in a global economy—where fuel-
+efficient imports may capture the low end of the market; (3) low
+fuel prices in a protectionist environment—where American gas
+guzzlers will have a good market at home but not abroad; (4) low
+fuel prices in a global economy—where there will be intense global
+competition for fuel-efficient models, but larger cars may enjoy
+strong foreign markets.
+The scenario will usually want to be extended beyond such simple
+logics to encompass, for example, more subtle issues like the
+evolution of consumer markets or automotive regulation. Thus the
+resulting scenarios may find their core of logic less in the variations
+of the cells in a matrix and more in the themes and plots of a story.
+In Chapter Eight we discussed the various types of plots that can
+organize a scenario. The challenge here is identifying the plot that
+(1) best captures the dynamics of the situation and (2)
+communicates the point effectively. For example, one of the auto
+scenarios above for a U.S. automaker might be built around the
+logic of challenge and response: the challenge of foreign
+competition and high gas prices.
+
+
+Step Six: Fleshing Out the Scenarios
+While the most important forces determine the logics that
+distinguish the scenarios, fleshing out the skeletal scenarios can be
+accomplished by returning to the lists of key factors and trends
+identified in steps two and three.
+Each key factor and trend should be given some attention in each
+scenario. Sometimes it is immediately apparent which side of an
+uncertainty should be located in which scenario, sometimes not. If
+two scenarios differ over protectionist or nonprotectionist policies,
+then it probably makes sense to put a higher inflation rate in the
+protectionist 
+scenario 
+and 
+a 
+lower 
+inflation 
+rate 
+in 
+the
+nonprotectionist scenario. It is just such connections and mutual
+implications that scenarios should be designed to reveal.
+Then weave the pieces together in the form of a narrative. How
+would the world get from here to there? What events might be
+necessary to make the end point of the scenario plausible? Are there
+known individuals whose ascendency in the public eye might
+facilitate or help to characterize a given scenario, such as Russian
+Premier Boris Yeltsin or U.S. Senator William Bradley?
+Step Seven: Implications
+Once the scenarios have been developed in some detail, then it is
+time to return to the focal issue or decision identified in step one to
+rehearse the future. How does the decision look in each scenario?
+What vulnerabilities have been revealed? Is the decision or strategy
+robust across all scenarios, or does it look good in only one or two
+of the scenarios? If a decision looks good in only one of several
+scenarios, then it qualifies as a high-risk gamble—a bet-the-
+company strategy—especially if the company has little control over
+
+
+the likelihood of the required scenario coming to pass. How could
+that strategy be adapted to make it more robust if the desired
+scenario shows signs of not happening?
+Step Eight: Selection of Leading Indicators and Signposts
+It is important to know as soon as possible which of several
+scenarios is closest to the course of history as it actually unfolds.
+Sometimes the direction of history is obvious, especially with regard
+to factors like the health of the overall economy, but sometimes the
+leading indicators for a given scenario can be subtle. How, for
+example, should one calibrate the speed of economic restructuring
+from a smokestack economy toward an information-intensive
+economy?—by help-wanted advertising according to different SIC
+codes?—by union memberships?—by subscriptions to indicative
+periodicals?
+Once the different scenarios have been fleshed out and their
+implications for the focal issue determined, then it’s worth spending
+time and imagination on identifying a few indicators to monitor in
+an ongoing way. If those indicators are selected carefully and
+imaginatively, the company will gain a jump on its competition in
+knowing what the future holds for a given industry and how that
+future is likely to affect strategies and decisions in the industry.
+If the scenarios have been built according to the previous steps,
+then the scenarios will be able to translate movements of a few key
+indicators into an orderly set of industry-specific implications. The
+logical coherence that was built into the scenarios will allow logical
+implications of leading indicators to be drawn out of the scenarios.
+Additional Considerations for Creating Scenarios
+
+
+Some rules of thumb have been gained from long years and much
+experience with scenario development in many companies and
+settings:
+1. Beware of ending up with three scenarios, though in practice
+we often do. People not familiar with scenarios or their use will be
+tempted to identify one of the three as the “middle” or “most likely”
+scenario and then will treat it as a single-point forecast, and all the
+advantages of multiple-scenario methodology will be lost. But also
+avoid having too many scenarios. When one is working with more
+than four scenarios, they begin to blur and lose their meaningful
+distinctions as decision tools.
+2. In general, avoid assigning probabilities to different scenarios,
+because of the temptation to consider seriously only the scenario
+with the highest probability. It may make sense to develop a pair of
+equally highly probable scenarios, and a pair of potentially high-
+impact but relatively low-probability “wild card” scenarios. In no
+case does it make good sense to compare the probability of an event
+in one scenario against the probability of another event in another
+scenario, because the two events are assumed to take place in
+radically different environments, and the assignment of probabilities
+depends on very different assumptions about the future.
+3. Pay a great deal of attention to naming your scenarios. Names
+should succeed in telegraphing the scenario logics. If the names are
+vivid and memorable, the scenarios will have a much better chance
+of making their way into the decision-making and decision-
+implementing process across the company. Because the name
+evoked such a powerful and evocative concept, Shell’s “World of
+Internal Contradictions” (WIC) scenario survived for more than a
+decade as a useful tool even as the world changed.
+4. Selection of the scenario development team should be guided
+by three major considerations. First, support and participation from
+the highest levels of management is essential. Those who make and
+implement decisions should be involved in the creation of these
+tools for decision-making. Second, a broad range of functions and
+divisions should be represented on the scenario development team.
+
+
+Third, look for imaginative people with open minds who can work
+well together as a team.
+5. You can tell you have good scenarios when they are both
+plausible and surprising; when they have the power to break old
+stereotypes; and when the makers assume ownership of them and
+put them to work. Scenario making is intensely participatory, or it
+fails.
+OceanofPDF.com
+
+
+ENDNOTES
+THE PATHFINDER’S TALE
+The planner and the executive are partners in taking a long view.
+1 Pierre Wack, “The Gentle Art of Reperceiving” (two-part article),
+Harvard Business Review: “Scenarios: Uncharted Waters Ahead”
+(September-October, 1985), pp. 73–89; “Scenarios: Shooting the
+Rapids” (November-December, 1985), pp. 139–150.
+“Unpredictability in every field is the result of the conquest of the whole
+of the present world by scientific power.”
+2 Paul Valéry, The Outlook for Intelligence. Translated by Denise
+Folliot and Jackson Mathews. Edited by Jackson Mathews.
+(Princeton, N.J.: Bollingen Foundation/Princeton University Press,
+1962; New York: Harper & Row, 1963; paperback, 1989).
+THE SMITH & HAWKEN STORY: THE PROCESS OF SCENARIO-
+BUILDING
+Paul had a varied background: he had founded the Erewhon natural
+foods distribution company …
+3 Paul Hawken, The Magic of Findhorn (New York: Harper & Row,
+1975).
+This phenomenon resonated with a trend we had been tracking, and
+which Paul would later describe in his book …
+4 Paul Hawken, The Next Economy (New York: Holt, Reinhart, and
+Wilson, 1983).
+There is a wonderful book by novelist John Gardner …
+5 John Gardner, The Art of Fiction: Notes on Craft for Young Writers
+(New York: Knopf: Distributed by Random House, 1983).
+THE SCENARIO-BUILDING ANIMAL

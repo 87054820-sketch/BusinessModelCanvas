@@ -1,0 +1,29 @@
+{
+  "chapter": "ch07-sustaining",
+  "sourceFiles": { "en": "09-performance-provided-market-demand-and-the-product-life-cycl.txt, 11-the-dilemmas-of-innovation-a-summary.txt" },
+  "concepts": [
+    { "name": "Sustaining Innovation", "definition": "An innovation that improves an established product along dimensions mainstream customers already value. It can be incremental or radical; the defining feature is customer-valued performance improvement in the existing value network." },
+    { "name": "Disruptive Innovation", "definition": "An innovation that initially underperforms on mainstream dimensions but offers a different package of attributes to a foothold market, then improves into mainstream viability." },
+    { "name": "Strategic Misclassification", "definition": "The error of treating a sustaining battle as disruption or a disruptive threat as a sustaining improvement." }
+  ],
+  "arguments": [
+    { "claim": "Incumbents usually win sustaining innovation battles.", "evidence": "Their resources, customer relationships, and processes are tuned to improve products for mainstream customers." },
+    { "claim": "Incumbents usually lose disruptive battles if they manage them inside the mainstream organization.", "evidence": "The disruptive opportunity looks smaller, lower-margin, and inferior by the metrics that guide the existing business." }
+  ],
+  "cases": [
+    { "name": "Mainstream product improvement vs. disruptive entry", "context": "Disk-drive capacity improvements and cable-excavator enhancements were sustaining, while smaller form factors and hydraulics were disruptive.", "illustrates": "The same industry can contain both kinds of innovation at once.", "lesson": "Diagnose the type before choosing the response." }
+  ],
+  "logicChains": [
+    { "description": "Classify innovation → if sustaining, use mainstream resources and customers → if disruptive, isolate it in a context whose customers need it → measure progress by the foothold market rather than mainstream margins.", "sourceHint": "Sustaining/disruptive distinction and management prescriptions." }
+  ],
+  "terminology": [
+    { "term": "Sustaining", "definition": "Improving what current good customers already value." },
+    { "term": "Disruptive", "definition": "Different value proposition starting outside mainstream acceptance." },
+    { "term": "Direct competition", "definition": "A rival attacking the same customers with a better or cheaper version of what they already buy; not necessarily disruption." }
+  ],
+  "nuance": [
+    "Sustaining innovation can be radical; radical technology is not automatically disruptive.",
+    "Overusing the word disruption makes the theory useless for action."
+  ],
+  "crossReferences": { "relatedCanvasDefIds": ["disruption-diagnosis"], "relatedStrategyFrameworkSlugs": ["disruptive-innovation"], "relatedChapters": ["ch06-disruption-model", "ch08-organizational"] }
+}

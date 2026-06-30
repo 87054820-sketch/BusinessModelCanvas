@@ -22,6 +22,7 @@
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",
     "smoke:cloud": "node scripts/cloud-smoke-test.mjs",
+    "check:cloud-release": "node scripts/cloud-release-check.mjs",
     "benchmark:copilot": "node scripts/copilot-latency-benchmark.mjs",
     "smoke:mobile": "node scripts/mobile-ui-smoke.mjs",
     "lint": "pnpm -r run lint"

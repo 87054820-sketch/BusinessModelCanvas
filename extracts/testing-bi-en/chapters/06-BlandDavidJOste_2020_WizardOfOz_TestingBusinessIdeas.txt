@@ -1,0 +1,3165 @@
+# BlandDavidJOste_2020_WizardOfOz_TestingBusinessIdeas
+
+286
+EXPERIMENTS
+validation
+Cost 
+As long as you keep the Wizard of Oz exper-
+iments small and simple, they are cheap to 
+run, mostly because you are doing all of the 
+work manually with little to no technology 
+involved. If you try to scale the experiment or 
+make it overly complex, it’ll increase the cost.
+ 
+Setup Time 
+Setting up a Wizard of Oz experiment takes 
+a bit longer than other rapid prototyping 
+techniques, because you have to manually 
+plan out all of the steps and acquire cus-
+tomers for it.
+ 
+Run Time 
+Running a Wizard of Oz experiment can take 
+days to weeks, depending on how complex 
+the process is and how many customers 
+you involve in the experiment. It generally 
+takes longer than other rapid prototyping 
+techniques.
+ 
+Evidence  
+ 
+ 
+Customer satisfaction 
+Customer quotes and feedback on how  
+satisfied they were after receiving the output  
+from your experiment. 
+	
+Customer satisfaction evidence is strong  
+in this case because you are asking for feed-
+back after the value was delivered to the 
+customer, instead of a hypothetical situation. 
+ 
+ 
+# of purchases 
+Customer purchases from the Wizard of Oz 
+experiment. What are they willing to pay for 
+a manual experience? 
+	
+Payments are strong evidence, even if  
+you are manually delivering value.
+ 
+Time it takes to complete the process 
+Lead time is the total time measured from 
+customer request to when the order was 
+delivered. 
+	
+Cycle time is the amount of time spent 
+working on the request. It does not include 
+the time the request sits idle before action  
+is taken on it. 
+	
+The time it takes for you to complete the 
+Wizard of Oz experiment is very strong — it 
+gives you firsthand knowledge of the steps 
+needed to receive a request and deliver 
+value to a customer.
+Capabilities 
+Design / Product / Tech / Legal / Marketing 
+You’ll need all of the capabilities to man-
+ually create and deliver the product to 
+the customer. This is very context specific, 
+depending on whether you are delivering  
+a physical or digital product or service to  
+the end customer.
+Requirements 
+Time 
+The biggest requirement for a Wizard of 
+Oz experiment is time, closely followed by 
+a digital curtain. Like the Concierge exper-
+iment, you’ll need quite a bit of time to 
+perform the testing but in addition to this, 
+you’ll need a curtain to hide the people per-
+forming the tasks from the customer. This 
+can take many forms, but the most common 
+is a simple landing page or digital interface 
+where the customer requests and receives 
+the value.
+DETAILS
+
+
+287
+Feature Stub  
+p. 156 
+Create a Feature Stub within 
+your existing product to use 
+as a funnel for your Wizard of 
+Oz experiment.
+Mash-Up  
+p. 244  
+Automate manual steps from 
+your Wizard of Oz experiment 
+with existing technology.
+Brochure  
+p. 194 
+Hand out brochures with a call 
+to action as a funnel for your 
+Wizard of Oz experiment.
+Referral Program 
+p. 172 
+Create a referral program to 
+determine if those satisfied 
+with the outcome would refer 
+other customers.
+Simple Landing Page 
+p. 260 
+Create a simple landing page 
+to collect interest in your 
+Wizard of Oz experiment.
+Crowdfunding  
+p. 266 
+Create a crowdfunding cam-
+paign to fund what it would 
+take to automate all of the 
+steps as a scalable product.
+Wizard of Oz
+PAIRINGS
+Before
+After
+wizard of oz
+simulation
+
+
+288
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Sales / Finance
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Mock sale is ideal for determining different price points  
+for your product.
+VALIDATION / SIMULATION
+Mock Sale
+Presenting a sale for your product without processing  
+any payment information.
+
+
+289
+OVERVIEW
+OFfLINE RETAIL 
+Prepare
+□
+□Create a high fidelity 
+physical prototype of your 
+product.
+□
+□Communicate the length 
+and nature of the experi-
+ment with store managers 
+and personnel so that 
+employees involved under-
+stand what’s going on.
+ONLINE WITH EMAIL SIGNUP 
+Prepare
+□
+□Create a simple landing 
+page.
+□
+□Insert your price options.
+□
+□On price option click, show 
+a “we’re not ready yet” 
+pop-up with email signup 
+form.
+□
+□Integrate and verify web 
+analytics are working 
+correctly.
+Execute
+□
+□Make your page live to the 
+public.
+□
+□Drive traffic to your page.
+Analyze
+□
+□Review your analytics on 
+how many people:
+• viewed your price options.
+• clicked on a price option.
+• signed up with their email 
+address.
+• dropped out of the flow 
+(i.e., web analytics funnel).
+• converted on your page, 
+based on traffic source.
+□
+□Use these findings to gauge 
+viability and refine your 
+Value Proposition and price 
+options.
+Connections
+• Price options come from 
+your revenue stream in your 
+Business Model Canvas.
+Execute
+□
+□Strategically place the  
+prototype on the desired 
+shelf in the store.
+□
+□Observe and document who 
+views the product, picks 
+it up, and places it in the 
+basket.
+□
+□Before or at time of cus-
+tomer purchase, intercept 
+and explain that the prod-
+uct is not yet available. 
+□
+□Get feedback from the 
+customer on whether they 
+want to be contacted when 
+it’s available and why 
+they picked it up for pur-
+chase compared to other 
+products.
+□
+□Compensate customer 
+with a gift card for the 
+inconvenience.
+Analyze
+□
+□Review your customer  
+feedback notes.
+□
+□Review your activity log  
+of how many:
+• viewed the product.
+• put it in the basket.
+• wanted to purchase.
+• provided contact informa-
+tion for when the product 
+launches.
+□
+□Use your findings to improve 
+the Value Proposition and 
+product design.
+mock sale
+simulation
+
+
+290
+EXPERIMENTS
+validation
+Cost 
+Mock sale is relatively cheap: you are price 
+testing your product without building all of 
+it. You’ll need a believable level of fidelity 
+for your target audience, so there is some 
+cost in presenting your solution digitally or 
+physically.
+ 
+Setup Time 
+Setup time for a mock sale is relatively 
+short, meaning you can create a believable 
+platform for your Value Proposition in a few 
+hours or a few days.
+ 
+Run Time 
+Run time for a mock sale is a few days 
+or weeks. You’ll want to target a specific 
+audience with your solution and give them 
+enough time to consider a purchase.
+ 
+Evidence  
+ 
+ 
+# of unique views 
+# of purchase clicks 
+You can calculate the purchase conversion 
+rate by taking the number of people  
+who view the price divided by the number  
+of purchase clicks. 
+	
+Purchase clicks are relatively strong, 
+although not as strong as subsequent email 
+and payment submissions. 
+ 
+ 
+# of purchase email signups 
+You can calculate the purchase email con-
+version rate by taking the number of people 
+who view the price divided by the number  
+of email signups. 
+	
+Email signups after purchase clicks are 
+relatively strong, although not as strong as 
+payment submissions.
+ 
+# of purchase payment  
+Information submitted 
+You can calculate the purchase payment 
+conversion rate by taking the number of 
+people who view the price divided by the 
+number who filled out payment information. 
+	
+Payment info submissions are very  
+strong evidence.
+Capabilities 
+Design / Sales / Finance 
+Conducting a mock sale will require financial 
+modeling skills to inform the price options. 
+You’ll also need to design the sale in such a 
+way that it is the right fidelity for your target 
+audience. Finally, you’ll need sales capabil-
+ity, especially if you are conducting these in 
+person in the physical world.
+Requirements 
+Pricing Strategy 
+Mock sale does require some thought and 
+number crunching before you conduct the 
+experiment. This isn’t a scenario where you 
+simply ask people how much they’ll pay. 
+Customers are notoriously bad at answering 
+that question. Instead, you’ll need to be able 
+to present a sale price or multiple prices to 
+have them respond. If you test a ridiculously 
+low price, then you’ll receive false positives 
+on something you won’t be able to deliver. 
+Therefore, spend time thinking through the 
+cost structure to make the mock sale  
+evidence worthwhile.
+DETAILS
+
+
+291
+Online Ad  
+p. 146 
+Create demand for your mock 
+sale by running targeted 
+online ads with your Value 
+Proposition.
+Customer Interviews 
+p. 106  
+Contact the people who 
+showed interest in purchasing 
+the product to better under-
+stand their needs.
+Simple Landing Page  
+p. 260 
+Create a simple landing page 
+as a vehicle to conduct the 
+mock sale.
+Single Feature MVP  
+p. 240 
+Create a single feature  
+minimum viable product to 
+test with customers.
+Brochure 
+p. 194 
+Use a brochure with pricing as 
+material for your mock sale.
+Email Campaign  
+p. 162 
+Keep those who were inter-
+ested in the loop when you 
+launch the product.
+Mock Sale
+PAIRINGS
+Before
+After
+mock sale
+simulation
+
+
+292
+EXPERIMENTS
+validation
+MOCK SALE 
+They will come, when you build it. 
+Buffer
+W
+hen Joel Gascoigne, cofounder of 
+Buffer, started the company from his 
+bedroom nine years ago, he wasn’t certain if 
+people would even pay for his social media 
+scheduling service. 
+	
+At the time, social media managers were 
+still manually logging into multiple social 
+media platforms and posting their content. 
+They used calendars and reminders to tell 
+them the perfect moment to log in and post 
+across time zones. This wasn’t ideal, especially 
+when it occurred in the middle of the night.
+CASE STUDY
+
+
+293
+an option, an email signup form appeared 
+stating Buffer wasn’t quite yet ready for 
+launch. Each option in the page had ana-
+lytics integrated, so Joel could analyze who 
+was signing up based on the selected price.
+ 
+Evidence 
+A $5/month signal. 
+The evidence showed that the $5/month 
+plan was the clear winner in this initial test. 
+This option generated the most email  
+signups when he compared it to the $0 and 
+$20 options.
+ 
+Insights 
+People were interested in paying. 
+With the data showing the $5/month plan 
+being the most popular, it started to become 
+clear how people valued Buffer. They didn't 
+need to only schedule one tweet a day, 
+because they could simply log in and do 
+that. On the other hand, they didn't need 
+unlimited tweets because social media man-
+agers don't want to overwhelm their audi-
+ence and be perceived as spam. The sweet 
+spot seemed to be 5 tweets per day, where 
+it was enough of a hassle that people would 
+pay a $5/month fee to address.
+ 
+The Buffer application would solve that 
+problem, beginning with a scheduling service 
+for Twitter, before expanding to additional 
+social media platforms. Joel decided to 
+lightly test the desirability of the Buffer app 
+by adding a “Plans and Pricing” button to 
+his simple landing page. When clicked, it 
+displayed a message about not being ready 
+yet with an email signup to be notified. 
+	
+After a few people submitted their email, 
+Joel determined there was initial interest but 
+wanted to collect more evidence.
+ 
+Hypothesis 
+Joel believed that people would pay a 
+monthly fee to schedule their social media 
+posts on Twitter.  
+It wasn’t enough that people would enter 
+their email without any pricing information. 
+Joel needed to know if it was viable.
+ 
+Experiment 
+Price testing different monthly fees to 
+gauge viability. 
+Joel decided to test viability by adding three 
+different payment tier options to the landing 
+page. Free = $0/month for 1 tweet a day and 
+5 tweets in your buffer queue. Standard = 
+$5/month for 10 tweets a day and 50 tweets 
+in your buffer queue. Max = $20/month 
+for unlimited tweets a day and unlimited 
+tweets in your buffer queue. These options 
+appeared once people clicked the “Plans 
+and Pricing” button. Once people clicked  
+ 
+Actions 
+Evidence that Buffer should be built. 
+After generating evidence and insights into 
+the demand of Buffer, Joel decided to build 
+the application. He used this learning to 
+help shape his price points for launch. Joel 
+also kept it lean and manually processed 
+the payments for each customer early on. 
+Today Buffer is used by hundreds of thou-
+sands of customers around the world and 
+has a monthly recurring revenue of $1.54 
+million.
+mock sale
+simulation
+
+
+294
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Product / Technology / Legal / Finance
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Letter of intent is ideal for evaluating key partners and  
+B2B customer segments. 
+Letter of intent is not ideal for B2C customer segments.
+VALIDATION / SIMULATION
+Letter of Intent
+Short, written contract that is simple to read and not legally binding.
+
+
+295
+OVERVIEW
+Basic LOI Sample
+[Your Name]
+[Title]
+[Business Name]
+[Business Address]
+[Date]
+[To Name]
+[Title]
+[Business Name]
+[Business Address]
+Dear [Name]
+We hereby submit a non- 
+binding letter of intent to 
+[insert terms of partnership 
+here].
+Sincerely,
+[Your Name]
+Prepare
+□
+□Define your the letter of 
+intent target audience, pref-
+erably one that already has 
+knowledge of your business.
+□
+□Research what legal Letter 
+of Intent format best suits 
+your business. (i.e., B2B cus-
+tomer vs. B2B key partner).
+□
+□Create your letter of intent 
+template.
+Execute
+□
+□Show the letter of intent to 
+your target audience.
+□
+□One person on the team 
+conducts the interview.
+□
+□Another person on the team 
+takes notes on customer 
+quotes, jobs, pains, gains, 
+and body language.
+Analyze
+□
+□Review your notes with  
+the team.
+□
+□How many were sent, 
+viewed, and signed?
+□
+□Follow up with those who 
+signed to continue the 
+conversation and push your 
+business idea forward.
+letter of intent
+simulation
+
+
+296
+EXPERIMENTS
+validation
+Cost 
+Letter of intent contracts are relatively 
+cheap to produce as they are usually 1 or 2 
+pages long. You can find free LOI templates 
+online or spend a little money to have a  
+lawyer help you properly craft one.
+ 
+Setup Time 
+Setup time for a letter of intent is only a 
+few hours or potentially 1 day if you involve 
+legal help.
+ 
+Run Time 
+Run time for a letter of intent is short in that 
+your recipients either accept it or not.
+ 
+Evidence  
+ 
+ 
+# of LOIs sent 
+# of LOI views 
+# of LOI signatures 
+LOI ccceptance rate = # of LOIs sent divided 
+by the # of LOIs signed. 
+	
+Letter of Intent signatures are not legally 
+binding, but stronger than people merely 
+saying they’ll partner or buy. 
+ 
+ 
+Customer feedback 
+Partner feedback 
+Customer and Partner Quotes 
+Feedback is weak but generally good  
+for qualitative insights.
+Capabilities 
+Product / Technology / Legal / Finance 
+To create a letter of intent it helps to have 
+basic legal understanding, even though it’s a 
+non-legal document. If using it with partners, 
+you’ll need to be able to articulate the key 
+activity or key resource needed in detail. 
+For B2B customers, you’ll need to be able to 
+speak clearly about your value proposition 
+and pricing structure.
+Requirements 
+Warm Leads 
+Unless you have warm leads, meaning there 
+is a basic understanding of your perceived 
+Value Proposition and business, then we 
+don’t recommend using a letter of intent. It 
+would be poor form to cold email your LOIs 
+to people, resulting in a dismal conversion 
+rate. Instead, have the LOI ready for sched-
+uled conversations so that you can present 
+it during or shortly after the meeting.
+DETAILS
+
+
+297
+Partner & Supplier 
+Interviews  
+p. 114 
+Interview partners and suppli-
+ers to better understand their 
+capabilities before creating 
+the LOI.
+Single Feature MVP  
+p. 240  
+Create a Single Feature MVP 
+with your LOI partners or 
+customers.
+Customer Interviews  
+p. 106 
+Use the notes from your inter-
+views to inform the shape of 
+your LOI.
+Presales  
+p. 274 
+Conduct a presale of the  
+solution to your customers 
+before it is made available  
+to the public.
+Life-sized Prototype  
+p. 254 
+Create a life-sized prototype 
+to test with your customer 
+segment.
+Letter of Intent
+PAIRINGS
+Before
+After
+letter of intent
+simulation
+
+
+298
+EXPERIMENTS
+validation
+LETTER OF INTENT 
+Using LOIs with Landscapers 
+Thrive Smart Systems
+T
+hrive Smart Systems is a company set 
+on empowering people with the latest 
+in irrigation technology. Their wireless sys-
+tem saves you time and money, providing 
+smarter irrigation.
+CASE STUDY
+
+
+299
+ 
+Actions 
+Iterating on the LOI approach. 
+From the LOI experiments, Seth and Grant 
+refined their LOIs to two different flavors. 
+One being a “pledge of purchase” for those 
+who want to buy the end product. The other 
+flavor being a “testing agreement” for those 
+who want to participate in the beta test.
+ 
+Experiment 
+Asking customers to write an LOI. 
+They began to test this hypothesis by ask-
+ing interested customers to write a Letter of 
+Intent for how many units they were willing 
+to purchase.  
+	
+After receiving a few, they created a LOI 
+template to pass out to each person that 
+expresses interest in buying the product. 
+ 
+Evidence 
+Generating over $50k in purchases. 
+The Thrive team found that with no advertis-
+ing and by just asking potential customers 
+to fill out a form, they could generate over 
+$50,000 in projected revenue.
+ 
+Insights 
+Expectations versus reality. 
+They also learned that the number of units 
+people say they will purchase is much more 
+than they are willing to put into writing. 
+	
+Those who said they would buy 1000 units 
+only wrote down that they will buy 300 units. 
+A few who said they would buy 100 only 
+wrote down that they will buy 15–20. From 
+this, Seth and Grant gained insights into how 
+to formalize their purchasing process. Even 
+though the LOI is non-binding, when a poten-
+tial customer puts pen to paper they have 
+more skin in the game. 
+The cofounders, Seth Bangerter and Grant 
+Rowberry, wanted to know if people would 
+buy their product before they completed 
+product development. Many people, land-
+scapers in particular, expressed so much 
+interest that when they asked them how 
+many they would buy they would respond 
+with “a ton” or “as many as you can give 
+me.” While this was exciting to hear, Seth 
+and Grant wanted to get a firm number on 
+how many these customers were willing to 
+purchase. 
+	
+The Thrive team chose to have interested  
+customers write a letter of intent to purchase. 
+The idea was to allow people to write down, 
+in numbers,  precisely what they wanted. 
+Seth and Grant decided to make a template  
+to include vital elements that a letter 
+of intent should have. When a potential 
+customer stated they are willing to buy x 
+amount of Thrive’s product, then x amount 
+was to be placed on the letter of intent. 
+	
+Thrive called this template their letter  
+of intent form.  
+ 
+ 
+Hypothesis 
+Seth and Grant believed that they could 
+generate $25,000 during the test phase 
+through 20 LOIs. 
+letter of intent
+simulation
+
+
+300
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Legal / Sales / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+A pop-up store is ideal for testing face-to-face interactions 
+with customers to see if they’ll really make a purchase.
+A pop-up store is not ideal for B2B businesses: consider  
+a booth at a conference instead.
+VALIDATION / SIMULATION
+Pop-Up Store
+A retail store that is opened temporarily to sell goods,  
+usually a trendy or seasonal product.
+
+
+301
+OVERVIEW
+Prepare
+□
+□Find a location.
+□
+□Get the required lease, 
+license, permits, and 
+insurance.
+□
+□Design the experience.
+□
+□Plan the logistics of how  
+it will operate.
+□
+□Promote the dates it’ll be 
+open to customers.
+Execute
+□
+□Open your pop-up store.
+□
+□Gather evidence you need 
+from customers.
+□
+□Close your pop-up store.
+Analyze
+□
+□Review your notes with  
+the team:
+• What did people get 
+excited about?
+• What made them 
+skeptical?
+□
+□Review how many meaning-
+ful interactions took place:
+• Did you collect any emails 
+from customers?
+• Did you perform any 
+successful mock sales, 
+presales, or actual sales?
+□
+□Use what you’ve learned  
+to iterate on the experience 
+before running another 
+pop-up store.
+pop-up store
+simulation
+
+
+302
+EXPERIMENTS
+validation
+Cost 
+Pop-up stores are generally small, but 
+will still cost more money than low fidelity 
+experiments. Much of the cost is leasing 
+the space and advertising, which can vary 
+depending on the location and access to 
+the store. You can bring costs down if you 
+can find an owner to give you extra space 
+in their existing store for the experiment. 
+Additional costs may include licenses,  
+permits, and insurance required in order  
+to conduct business transactions.
+ 
+Setup Time 
+Setup time for a pop-up store can take days 
+or weeks, depending on what locations  
+are available. It’ll need to look professional, 
+which requires having the right people and 
+appearance for the store. You’ll also need to 
+create demand using ads, unless it is a very 
+high traffic area with your target customers.
+ 
+Run Time 
+Run time for a pop-up store is generally 
+short, from a few hours to a few days.  
+The intent here is to learn quickly, synthesize 
+the results, and move on.
+ 
+Evidence  
+ 
+ 
+# of customer visits 
+# of email signups 
+Conversion rate on people who visited and 
+provided their email addresses.
+Customer Feedback 
+Customer quotes provided in the feedback 
+to you. 
+	
+Customer visits, emails, and feedback are 
+rather weak evidence, but good for qualita-
+tive insights. 
+ 
+ 
+# of presales 
+# of mock sales 
+# of sales 
+Conversion rate on people who are willing  
+to pay or paid for the product. 
+	
+Sales are strong evidence that customers 
+want your product.
+Capabilities 
+Design / Product / Legal / Sales / Marketing 
+To set up and run a pop-up store, you’ll need 
+legal expertise to determine licensing, per-
+mits, lease, and insurance contracts. You’ll 
+need online marketing skills to promote the 
+store and sales experience to staff it for 
+customer interaction.
+Requirements 
+Traffic 
+Pop-up stores thrive on the idea of a niche, 
+limited-time offer for customers. In order to 
+create that demand, you’ll need to advertise 
+and create buzz for your shop via:
+• online ads.
+• social media campaigns.
+• email campaigns.
+• word of mouth.
+DETAILS
+
+
+303
+Online Ads 
+p. 146 
+Create Ads for your Pop-Up 
+Store to drive geographically 
+targeted customers.
+Presales  
+p. 274  
+Collect payment information 
+for purchases but do not 
+charge until the product is 
+shipping.
+Customer Interviews  
+p. 106 
+Interview potential customers 
+on the street and if they are 
+a good fit, direct them to the 
+Pop-Up Store.
+Mock Sales  
+p. 288 
+Perform mock sales with  
+customers to gauge their 
+interest, but do not collect 
+payment information and 
+thank them for their time  
+with a gift card.
+Social Media Campaign  
+p. 168 
+Use social media to drive  
+people to your Pop-Up Store.
+Concierge  
+p. 248 
+Manually walk customers 
+through the process, collect 
+payment, and deliver the 
+product to them.
+Pop-Up Store
+PAIRINGS
+Before
+After
+pop-up store
+simulation
+
+
+304
+EXPERIMENTS
+validation
+POP-UP STORE 
+Learning Through Temporary Retail 
+Topology Eyewear
+T
+opology Eyewear aims to solve the  
+problem of poorly fitting glasses, by 
+making custom-tailored glasses that are 
+sized and styled via an augmented reality 
+app. Customers can take a selfie, see how 
+different glasses look on their faces, and 
+then purchase custom glasses that are spe-
+cifically sculpted to fit their unique dimen-
+sions. As with any new innovation, there are 
+risky hypotheses that need to be tested.
+CASE STUDY
+
+
+305
+ 
+Actions 
+Using the voice of the customer. 
+The customer quotes inspired the company 
+purpose and vision, becoming central to the 
+branding. 
+	
+The team used what they learned to 
+run more pop-up stores to test the Value 
+Proposition, positioning, and marketing, 
+eventually talking to over a thousand  
+customers face to face.
+try it for themselves. When loaded, they 
+would guide them how to scan themselves 
+and noted and answered their questions. On 
+selecting a chosen design, they would ask 
+if we could get their email address so we 
+could save the design and send it to them.
+ 
+Evidence 
+Finding early adopters off of the street. 
+Despite humble expectations, after 2 hours, 
+they sold 4 pairs of glasses at an average 
+price of about $400.  
+	
+The conversion rates on email signups 
+were too small to be meaningful in the 
+absolute sense, but they were helpful to see 
+where the biggest drop-off occurred in the 
+the process.
+ 
+Insights 
+People knew their glasses didn’t fit,  
+but weren’t sure why. 
+Even though the team sold 4 pairs of 
+glasses, it was the qualitative insights that 
+were the most valuable.  
+	
+The team noticed noticed that people 
+seemed to be “symptom aware” but not 
+“problem aware.” That is, when asked if they 
+had a problem with fit, most people would say 
+no. But when asked if their glasses slid down 
+their nose, pinched, created red marks etc, 
+most people would say yes. They understood 
+the symptoms of bad fit, but nobody thought 
+of it as being due to bad fit. This directed 
+marketing messages for years afterwards. 
+Even though the technology worked,  
+the team needed to test for any barriers  
+to adoption with customers. 
+ 
+ 
+Hypothesis 
+The Topology team believed that many 
+people would identify with the problem of 
+poor glasses fit, and would welcome the 
+high-tech approach as a potential solution.
+ 
+Experiment 
+Getting out of the building with a  
+pop-up store. 
+The team rented a partially empty store-
+front on San Francisco’s Union Street for  
+a Friday and created a temporary company 
+name — Alchemy Eyewear — and commis-
+sioned posters and flyers to make it feel 
+exclusive and exciting. Chris Guest, the 
+marketing lead, went out onto the street to 
+cold approach strangers, ask about their 
+eyewear, summarize the pitch, and encour-
+age them to visit the pop-up store. When 
+customers entered the store, Topology staff 
+would first ask them about the problems 
+they experience with their eyewear, taking 
+note of how they describe the problem in 
+their own words. Then they would introduce 
+our solution and note their response and 
+what questions they asked about it. They 
+would then demo the app using a default 
+face model and note their responses and 
+questions. They would then seek their per-
+mission to take a face scan so they could 
+pop-up store
+simulation
+
+
+306
+EXPERIMENTS
+validation
+COST
+SETUP TIME
+CAPABILITIES  Product / Technology / Data
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+The Extreme Programming Spike is ideal for quickly evaluating 
+whether or not your solution is feasible, usually with software. 
+The Extreme Programming Spike is not ideal for scaling 
+the solution, as it is typically thrown away and re-created 
+afterwards.
+VALIDATION / SIMULATION
+Extreme Programming 
+Spike
+A simple program to explore potential technical or design solutions. 
+The term spike is derived from rock climbing and railroads.  
+It’s a necessary task to stop and perform so that you can feasibly 
+continue to make progress.
+
+
+307
+OVERVIEW
+Prepare
+□
+□Define your acceptance 
+criteria.
+□
+□Define your time box for  
+the spike.
+□
+□Plan your start and end 
+date.
+Execute
+□
+□Write the code to achieve 
+the acceptance criteria.
+□
+□Strongly consider pairing 
+programming with another 
+person to help navigate 
+the code and create any 
+needed tests.
+Analyze
+□
+□Share what you’ve found 
+with regards to:
+• performance.
+• level of complexity.
+• outputs.
+□
+□Determine if the acceptance 
+criteria were successfully 
+met.
+□
+□Use what you’ve learned 
+to build, borrow, or buy the 
+necessary solution.
+extreme programming spike
+simulation
+
+
+308
+EXPERIMENTS
+validation
+Cost 
+Cost is relatively cheap and much more 
+inexpensive than building the entire solu-
+tion — only to find out at the end if it  
+is feasible.
+ 
+Setup Time 
+Setup time for an Extreme Programming 
+Spike is usually about one day. This is the  
+time needed to research what methods are 
+available and usually done by someone  
+that already has technical expertise.
+ 
+Run Time 
+Run time for an Extreme Programming  
+Spike is typically from 1 day to 2 weeks.  
+It is aggressively time boxed for a reason —  
+you are laser focused on testing feasibility 
+for a specific solution.
+ 
+Evidence  
+ 
+ 
+Acceptance criteria 
+The acceptance criteria defined for the spike 
+was sufficiently met. Did the code perform 
+the task and generate the output required? 
+ 
+ 
+Recommendation 
+The people working on the spike provide 
+their recommendation on how steep of a 
+learning curve it is to use the software and 
+if it is fit for your purpose in creating the 
+solution. 
+	
+Spikes generate strong evidence: you are 
+working with code that is representative of 
+the bigger solution.
+Capabilities 
+Product / Technology / Data 
+You’ll need product capabilities to clearly 
+communicate how the solution creates the 
+Value Proposition. This includes answering 
+any questions from the team and customer 
+expectations with regard to speed and  
+quality. Data capabilities are also helpful if 
+there is any visualization or analytics aspect 
+to the spike. The most important capability 
+you’ll need is technology and software, 
+since the spike is usually working with code 
+to produce a signal on the next course of 
+action.
+Requirements 
+Acceptance Criteria 
+Before performing a spike, clearly define the 
+acceptance criteria and time box so that 
+everyone is clear on the goal before getting 
+started. These can turn into never-ending 
+research projects if left unchecked.
+DETAILS
+
+
+309
+Partner & Supplier 
+Interviews  
+p. 114 
+Interview partners and suppli-
+ers to better understand their 
+capabilities before building it 
+yourself.
+Single Feature MVP  
+p. 240  
+Create a single feature  
+minimum viable product to 
+test with customers.
+Boomerang  
+p. 204 
+Use competitor solutions and 
+research how they perform 
+and what technology stack 
+they are using.
+Data Sheet  
+p. 190 
+Create a data sheet on what 
+specifications the solution 
+should contain.
+Extreme  
+Programming Spike
+PAIRINGS
+Before
+After
+extreme programming spike
+simulation
+
+
+310
+EXPERIMENTS
+discovery
+Mind
+
+
+311
+dset
+
+
+312
+EXPERIMENTS
+discovery
+"The more success you’ve had in 
+the past, the less critically you 
+examine your own assumptions.” 
+Vinod Khosla  
+Venture capitalist
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+4 
+—
+ 
+M
+I
+N
+D
+S
+E
+T
+4
+.
+1
+ 
+—
+ 
+A
+V
+O
+I
+D
+ 
+E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+ 
+P
+I
+T
+F
+A
+L
+L
+S
+
+
+314
+MINDSET
+Synopsis
+Experiment  
+Pitfalls
+ 
+The best plans for experimentation don’t 
+always come through. We’ve learned this 
+in working with teams to design, run, and 
+analyze experiments over the years. Part 
+of learning this process is becoming more 
+proficient at quickly running experiments. 
+We have found common pitfalls that you 
+can identify early on and benefit from our 
+mistakes.
+Time Trap 
+Not dedicating  
+enough time. 
+ 
+ 
+	
+–
+– You get what you invest. 
+Teams that don’t put in 
+enough time to test busi-
+ness ideas won’t get great 
+results. Too often, teams 
+underestimate what it takes 
+to conduct multiple experi-
+ments and test ideas well. 
+	
+□
+□Carve out dedicated time 
+every week to test, learn, 
+and adapt.
+□
+□Set weekly goals in regard 
+to what you’d like to learn 
+about your hypotheses.
+□
+□Visualize your work so  
+that it becomes clear  
+when tasks are stalled  
+or blocked.
+Analysis Paralysis 
+Overthinking things  
+that you should just 
+test and adapt. 
+ 
+	
+–
+– Good ideas and concepts 
+are important, but too 
+many teams overthink and 
+waste time, rather than get-
+ting out of the building to 
+test and adapt their ideas.
+	
+□
+□Time box your analysis 
+work.
+□
+□Differentiate between 
+reversible and irreversible 
+decisions. Act fast on the 
+former. Take more time for 
+the latter.
+□
+□Avoid debates of opinion. 
+Conduct evidence-driven 
+debates followed by 
+decisions.
+Incomparable  
+Data/Evidence 
+Messy data that are  
+not comparable. 
+ 
+	
+–
+– Too many teams are sloppy 
+in defining their exact 
+hypothesis, experiment, and 
+metrics. That leads to data 
+that are not comparable 
+(e.g., not testing with the 
+exact same customer seg-
+ment or in wildly different 
+contexts).
+	
+□
+□Use the Test Card.
+□
+□Make test subject, experi-
+ment context, and precise 
+metrics explicit.
+□
+□Make sure everybody 
+involved in running the 
+experiment is part of the 
+design.
+
+
+315
+AVOID PITFALLS
+Weak Data/Evidence 
+Only measure what 
+people say, not what 
+they do. 
+ 
+	
+–
+– Often teams are happy 
+with running surveys and 
+interviews and they fail to 
+go deeper into how people 
+act in real life situations.
+	
+□
+□Don’t just believe what 
+people say.
+□
+□Run call-to-action 
+experiments.
+□
+□Generate evidence that gets 
+as close as possible to the 
+real world situation you are 
+trying to test.
+Confirmation Bias 
+Only believing evidence 
+that agrees with your 
+hypothesis. 
+ 
+	
+–
+– Sometimes teams discard 
+or underplay evidence that 
+conflicts with their hypoth-
+esis. They prefer the illusion 
+of being correct in their 
+prediction.
+	
+□
+□Involve others in the data 
+synthesis process to bring 
+in different perspectives.
+□
+□Create competing hypoth-
+eses to challenge your 
+beliefs.
+□
+□Conduct multiple experi-
+ments for each hypothesis.
+Too Few Experiments 
+Conduct only one exper-
+iment for your most 
+important hypothesis. 
+ 
+	
+–
+– Few teams realize how 
+many experiments they 
+should conduct to validate 
+a hypothesis. They make 
+decisions on important 
+hypotheses based on one 
+experiment with weak 
+evidence.
+	
+□
+□Conduct multiple exper-
+imentsfor important 
+hypotheses.
+□
+□Differentiate between weak 
+and strong evidence.
+□
+□Increase the strength of 
+evidence with decreasing 
+uncertainty.
+Failure to Learn  
+and Adapt 
+When you don’t take 
+time to analyze the 
+evidence to generate 
+insights and action.
+	
+–
+– Some teams get so deep 
+into testing that they forget 
+to keep their eyes on the 
+prize. The goal is not to test 
+and learn. The goal is to 
+decide, based on evidence 
+and insights, to progress 
+from idea to business.
+	
+□
+□Set aside time to synthe-
+size your results, generate 
+insights, and adapt your 
+idea.
+□
+□Always navigate between 
+detailed testing process 
+and big picture idea: which 
+patterns that matter are 
+you observing? 
+□
+□Create rituals to keep your 
+eyes on the prize: ask if 
+you’re making progress 
+from idea to business.
+Outsource Testing 
+When you outsource 
+what you should be 
+doing and learning  
+yourself.  
+	
+–
+– Outsourcing testing is 
+rarely a wise idea. Testing 
+is about rapid iterations 
+between testing, learning, 
+and adapting an idea. An 
+agency can’t make those 
+rapid decisions for you and 
+you risk wasting time and 
+energy by outsourcing.
+	
+□
+□Shift resources you reserved 
+for an agency to internal 
+team members.
+□
+□Build up a team of profes-
+sional testers.
+
+
+316
+EXPERIMENTS
+discovery
+“It takes humility to realize  
+we don’t know everything,  
+not to rest on our laurels,  
+and to know that we must keep 
+learning and observing.  
+If we don’t, we can be sure  
+some startup will be there  
+to take our place.” 
+ 
+Cher Wang 
+Cofounder HTC
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+4 
+—
+ 
+M
+I
+N
+D
+S
+E
+T
+4
+.
+2
+ 
+—
+ L
+E
+A
+D
+ 
+T
+H
+R
+O
+U
+G
+H
+ 
+E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+A
+T
+I
+O
+N
+
+
+318
+MINDSET
+Language
+Leaders who are improving existing business 
+models need to be aware of their language 
+and tone. Chances are you have evolved 
+into a leader over time because you are an 
+expert with knowledge and experience.  
+	
+As you lead teams through experiment-
+ing on a known business model, be mindful 
+of the fact that overuse of your words can 
+unintentionally disempower the teams. They 
+may feel as though their decision-making 
+authority is taken away, even if you are 
+merely giving your opinion. They’ll simply 
+wait for you to assign them experiments, 
+which is not ideal. 
+ 
+ 
+Accountability
+Accountability often has a negative con-
+notation in today’s organizations, but it 
+doesn’t need to. Teams do not always need 
+to be “held accountable” to hitting dates 
+and releasing features. While features are 
+important, they are outputs, not outcomes. 
+Remember to focus on business outcomes, 
+not just the features and dates. 
+	
+Your teams need the opportunity to give 
+an account on how they are experimenting 
+and making progress toward business out-
+comes. As a leader, it’s your job to create an 
+environment for these opportunities to occur. 
+Synopsis
+Improving 
+Business 
+Models
+Facilitation
+How you interact with teams while improving 
+business models is also important. As you 
+grow into a leader at higher levels of the 
+organization, you’ll realize that facilitation 
+skills are imperative. 
+	
+We recommend taking courses on facil-
+itation to level up your leadership game. 
+There might be many different options to 
+improve the business and instead of choos-
+ing one, use facilitation to select multiple 
+experiments. Have the evidence shape what 
+approach works best for your business.
+□
+□“We, Us, Our”
+□
+□“How would you achieve this business outcome?”
+□
+□“Can you think of 2 – 3 additional experiments?” 
+ 
+–
+– “I, Me, Mine”
+–
+– “Deliver this feature by release date.”
+–
+– “This is the only experiment we should run.”
+
+
+319
+LEAD THROUGH EXPERIMENTATION
+Strong Opinions, Weakly Held
+Inventing new business models requires 
+experimentation and openness to the idea 
+of being wrong. One way to think about this 
+is from Paul Saffo’s “strong opinions, weakly 
+held” approach. It means you start out with 
+a hypothesis, but be open for it to be proven 
+wrong. If you are merely trying to prove that 
+you are right, then you become susceptible 
+to your cognitive biases. 
+	
+For example, when attending a stake-
+holder review, teams will be sharing what 
+they tested and where they want to go. If 
+you lead with answers and ignore all of the 
+data that contradict your opinion, it’ll be 
+a very frustrating meeting for everyone. 
+It’ll essentially unravel the experimentation 
+culture you are trying to build.
+Synopsis
+Inventing 
+Business 
+Models
+ 
+Allow your intuition to guide  
+you to a conclusion, no matter 
+how imperfect — this is the  
+“strong opinion” part. Then —  
+and this is the “weakly held” 
+part — prove yourself wrong.  
+— Paul Saffo
+□
+□“What is your learning goal?”
+□
+□“What obstacles can I remove to help you  
+make progress?”
+□
+□“How else might we approach this problem?”
+□
+□“What learning has surprised you so far?” 
+ 
+–
+– “I don’t trust the data.”
+–
+– “I still think it’s a good idea and we should  
+build it anyway.”
+–
+– “You need to talk to 1,000 customers before  
+it means anything.”
+–
+– “This has to be a $15 million dollar business  
+by the end of next year.”
+
+
+320
+MINDSET
+Create an Enabling Environment: 
+Processes, Metrics, and Culture
+Leadership’s key role in helping test 
+business ideas is to create the right envi-
+ronment. Give people enough time and 
+resources to test ideas iteratively. Leaders 
+need to abolish business plans and estab-
+lish appropriate testing processes and 
+metrics that differ from execution processes 
+and metrics. They need to give teams the 
+autonomy to make decisions, move fast, and 
+then get out of the way. 
+Remove Obstacles and Open Doors: 
+Access to Customers, Brand, IP, and  
+Other Resources
+Leaders can remove obstacles when teams 
+that are testing business ideas encounter 
+internal roadblocks, like lack of access to 
+internal expertise or specialized resources. 
+Leaders can open doors to customers when 
+required. It’s surprising how few corporate 
+innovation and growth teams have easy 
+access to customers to test new ideas. 
+Make Sure Evidence Trumps Opinion: 
+Change Decision-Making
+Leaders are used to deciding based on their 
+often deep experience and extensive track 
+record. Yet, in innovation and entrepreneur-
+ship, past experience might actually prevent 
+an individual from seeing and adapting 
+to the future. Here evidence from testing 
+trumps opinion. The leader’s role is to push 
+a team to make a compelling case for an 
+idea based on evidence, not based on the 
+leader’s preferences. 
+Ask Questions Rather Than Provide 
+Answers: Help Teams Grow and Adapt 
+Their Ideas
+Leaders need to up their questioning skills 
+to push teams to develop better value 
+propositions and business models that 
+can succeed in the real world. They need 
+to relentlessly inquire about experiments, 
+evidence, insights, and patterns on which 
+teams build Value Propositions and business 
+model ideas.
+Synopsis
+Steps  
+Leaders  
+Can Take
+
+
+321
+LEAD THROUGH EXPERIMENTATION
+Meet Your Teams One-Half Step Ahead
+Leaders need to bring their teams along for 
+the journey, instead of inadvertently leaving 
+them behind. Think of where you eventually 
+want team members to be, then look back-
+ward. How will they get here? What steps 
+will they have to take? It’s a small cognitive 
+trick but it works. Leaders need a sense of 
+where their teams are today and how to 
+nudge them down that path. Find opportu-
+nities to guide them to take that first step, 
+whether it be in scheduled one-on-ones, 
+retrospectives, or in hallway conversations.
+Understand Context Before Giving Advice
+Leaders need to actively listen and under-
+stand the context before giving advice 
+to team members. Practice letting team 
+members speak until they are finished. Once 
+there is a pause in the conversation, ask 
+clarifying questions to make sure you under-
+stand the context before giving advice. Don't 
+get too excited and interrupt team members 
+while they are speaking because you’ve 
+already thought of an answer. You may pre-
+maturely provide advice and connected dots 
+where none exist.
+Say “I Don’t Know.”
+These three simple words can strike fear 
+into the heart of leaders. “I don’t know.” We 
+often ask leaders when was the last time 
+they uttered these three words in front of 
+their employees. The answers range from 
+“Why, just yesterday!” to “Never!” It’s the 
+latter answer that is concerning. Imagine 
+feeling the pressure of leading an organiza-
+tion and always having the answers. There’s 
+a good chance that you don’t have them. 
+When building a culture of innovation and 
+entrepreneurship, acting like you have all 
+the answers can be disastrous. Teams will 
+quickly see through the veil once they learn 
+how to run experiments and generate their 
+own evidence. Worse yet, you’ll feel like you 
+have undermined your position of leadership 
+by being proven wrong. Instead, we strongly 
+recommend that you practice saying these 
+three words, “I don’t know,” when you are 
+in a situation where you don’t know. It 
+will help your teams begin to understand 
+that you don’t have all of the answers, nor 
+should you. Follow it up with “How would you 
+approach this?” or “What do you think we 
+should do?” Saying “I don’t know” will help 
+you model the behavior the leaders you 
+create will embrace.
+Synopsis
+Create 
+More 
+Leaders
+
+
+322
+EXPERIMENTS
+discovery
+“A bad system will beat  
+a good person every time.” 
+W. Edwards Deming 
+Professor and author
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+4 
+—
+ 
+M
+I
+N
+D
+S
+E
+T
+4
+.
+3
+ 
+—
+ 
+O
+R
+G
+A
+N
+I
+Z
+E
+ 
+F
+O
+R
+ 
+E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+S
+
+
+324
+MINDSET
+Silos vs. Cross- 
+Functional 
+Teams
+ 
+Much of how we’ve structured organizations today 
+is based on the Industrial Era. Back then, you would 
+create a factory to assemble a product, such as an 
+automobile. You’d break the creation of an automo-
+bile into tasks, create an assembly line, and have 
+workers complete the same task over and over. This 
+works if you know the solution, since you can analyze 
+your way to efficiently create the solution. Today’s 
+corporations are, not coincidentally, modeled the 
+same way. We create projects, break them down into 
+tasks, and assign them across functions. Organizing 
+by function can work if you truly know the problem 
+and the solution — and nothing changes. 
+	
+We’ve learned over the last few decades of work 
+that rarely do we know the solution, especially in 
+software. Things change fast. Really fast. So the idea 
+that the solution is known and nothing changes is 
+becoming less and less common in today’s market. 
+This is why there has been a shift from traditional, 
+functionally siloed organization models to more agile, 
+cross-functional team approaches. When testing out 
+new business ideas, speed and agility are imperative. 
+cross-functional teams can adapt more quickly than 
+functionally siloed teams. In many organizations, 
+small, dedicated, cross-functional teams can outper-
+form large, siloed project teams.
+Functional Silos
+Cross-Functional Teams
+Engineering
+Engineering
+Design
+Design
+Product
+Product
+
+
+325
+organize for EXPERIMENTs
+Thinking Like  
+a Venture Capitalist
+ 
+Another outdated model we observe in organizations pertains to 
+funding. Many organizations still adhere to the big bang, annual 
+funding style of the past. This severely limits the agility of the  
+organization and incentivizes bad behavior. For example, if your 
+department doesn’t spend all of its budget, then it is likely your 
+budget for the upcoming fiscal year will be decreased. Therefore, 
+budget is spent not on the most impactful activities, but those 
+that will ensure there will be no money left at the end of the cycle. 
+Annual funding also limits your at-bats, in that instead of taking one 
+big home run swing, you’re much better off taking several base hit 
+level swings. This is where organizations can learn from the Venture 
+Capital community. Unfortunately, the level of patience and willing-
+ness to give teams space is somewhat limited in organizations,  
+as we illustrate below.
+Venture Capital  
+Funding 
+8 –12 years 
+20 – 30 startups 
+Hands-Off
+Innovation Funding 
+1 – 3 years 
+5 –10 internal startups 
+Hands-On
+
+
+326
+MINDSET
+Innovation 
+Portfolio
+ 
+In contrast to the annual budgeting, orga-
+nizations are adopting a more venture 
+capitalist-style approach. This helps leaders 
+invest incrementally in a series of business 
+ideas and double down on the ones that are 
+successful. It greatly increases your at-bats 
+and your chance at finding a unicorn, 
+instead of placing 1–2 large bets.
+Seed
+High
+Medium
+Low
+Launch
+Growth
+Less than $50,000
+$50,000 – $500,000
+ $500,000+
+1– 3
+2 –  5
+5+
+20 –  40%
+40 –  80%
+100%
+Funding
+Uncertainty & Risk
+PROGRESS
+Team Size
+Time per 
+Team Member
+Number of 
+Projects
+Funding
+Customer understanding,  
+context, and willingness to pay
+ Desirability
+ Feasibility 
+ Viability
+Proven interest and  
+indications of profitability 
+Proven model  
+at limited scale
+• Market size
+• Customer evidence
+• Problem/solution fit
+• Opportunity size
+• Value Proposition evidence
+• Financial evidence
+• Feasibility evidence
+• Product/market fit
+• Acquisition and retention 
+evidence
+• Business model fit
+KPIs
+Objectives
+Experiment 
+Themes
+50 – 80%
+30 – 50% 
+10 –30%
+0–10%
+10 – 40%
+40 –50%
+10 –30%
+20 – 50%
+20 –50% 
+ 
+
+
+327
+organize for EXPERIMENTs
+Investment Committees
+Another important aspect of funding in a venture capitalist-style method is having a small 
+investment committee that consists of leadership to usher the process along. These leaders  
+in the organization need to have decision-making authority when it comes to budget, 
+because they’ll be helping the teams navigate from seed, launch, and growth stages. 
+These funding decisions typically take place in the Stakeholder Review Ceremony (see 
+page 80). While we recommend stakeholder reviews to occur every month, the investment 
+decisions usually take place at 3 – 6 month intervals, depending on your business venture. 
+Here are some guidelines when it comes to creating your investment committee. 
+Designing the Committee
+• 3 – 5 members: Keep the committee rela-
+tively small in size so that you can make 
+decisions and run fast. 
+• External member: Consider adding an 
+external member or entrepreneur in 
+residence (EIR) who can help bring a fresh 
+perspective to the portfolio. 
+• Decision-making authority: Include mem-
+bers who can make decisions with regard 
+to approval and budget. 
+• Entrepreneurial: While members do not 
+necessarily have to have a history of 
+entrepreneurship, they need to be willing 
+to challenge the status quo. Too many 
+conservative members will prematurely 
+stunt the growth of new innovations.
+Create a Working Agreement 
+ 
+Once assembled, create a working agree-
+ment for the committee before inviting teams 
+to present their recommendations. As a team, 
+write down and agree upon rules such as:
+• Be on time: Members have busy sched-
+ules, but they have to prioritize the 
+stakeholder review ceremonies, otherwise 
+teams will be left wondering if their initia-
+tives are important. 
+• Make decisions in the meeting: Teams 
+should not leave the review wondering if 
+they can move forward. Decide with the 
+teams present before adjourning. 
+• Leave ego at the door: Have an opinion in 
+the review but be willing to be swayed by 
+evidence. The teams will be bringing what 
+experiments they ran and how to move 
+forward. It is your job to listen, not talk 
+over them.
+Foster an Environment 
+ 
+This committee is in part responsible for fos-
+tering the team environment we introduced 
+on page 10.
+Without your help, the teams will not be 
+able to sustain over time even if they 
+are cross-functional and exhibit the right 
+behaviors.
+As a committee, have a plan to revisit how 
+you are helping the team with obstacles 
+centered on:
+• Time.
+• Multitasking.
+• Funding.
+• Support.
+• Access.
+• Direction.
+
+
+328
+EXPERIMENTS
+discovery
+After
+
+
+329
+rword
+
+
+330
+Glossary
+Action 
+Next step to progress with testing and 
+de-risking a business idea; informed deci-
+sion to abandon, pivot, iterate, or continue 
+testing.
+Affinity sorting 
+An exercise used to organize ideas and data 
+in which ideas are sorted into groups or 
+themes based on their relationships. 
+Assumption 
+A statement or fact that we believe to be 
+true; a statement in which we take some-
+thing for granted without any evidence to 
+support it.
+Assumptions mapping 
+A team exercise where desirability, viability, 
+and feasibility assumptions are explicitly 
+written down and then decided upon.
+Business Model  
+Rationale of how an organization creates, 
+delivers, and captures value.
+B2B 
+Business to business; exchange of products 
+or services between businesses.
+B2C 
+Business to consumer; exchange of prod-
+ucts or services between businesses and 
+consumers.
+Business Model Canvas 
+Strategic management tool to design, test, 
+build, and manage (profitable and scalable) 
+business models.
+Call to action (CTA) 
+Prompts a subject to perform an action; 
+used in an experiment in order to test one or 
+more hypotheses.
+Conversion 
+When a customer interacts with your ad and 
+then takes an action that is valuable to your 
+business.
+CSAT 
+Short for customer satisfaction. 
+Customer development 
+Four-step process invented by Steve Blank 
+to reduce risk and uncertainty in entrepre-
+neurship by continuously testing the hypoth-
+eses underlying a business model with 
+customers and stakeholders.
+Customer gains 
+Outcomes and benefits customers must 
+have, expect, desire, or dream to achieve.
+Customer insight 
+Minor or major breakthrough in your customer 
+understanding helping you design better 
+value propositions and business models.
+ 
+
+
+331
+Customer pains 
+Bad outcomes, risks, and obstacles that 
+customers want to avoid, notably because 
+they prevent them from getting a job done 
+(well).
+Customer Profile 
+Business tool that constitutes the right-
+hand side of the Value Proposition Canvas. 
+Visualizes the jobs, pains, and gains of a 
+customer segment (or stakeholder) for whom 
+you intend to create value.
+Daily Standup 
+A short, daily organizational meeting meant 
+to make the team aware of the project sta-
+tus; derived from the Agile Method.
+Desirability 
+Do your customers want your product or 
+service? Having evidence that customers 
+desire a solution to the problem your value 
+proposition is targeting.
+Distributed team 
+A team that is spread across geographical 
+locations; remote.
+Dot voting 
+Participants vote by placing a “dot” or a 
+sticker next to the options they prefer, using 
+a limited number of stickers (dotmocracy or 
+multi-voting).
+Environment map 
+Strategic foresight tool to map the context 
+in which you design and manage value prop-
+ositions and business models.
+Ethnography 
+The study of people in everyday life and 
+practice.
+Evidence 
+Data generated from an experiment or 
+collected in the field. Proves or disproves a 
+(business) hypothesis, customer insight, or 
+belief about a value proposition, business 
+model, or the environment.
+Experiment 
+A procedure to validate or invalidate a value 
+proposition or business model hypothesis that 
+produces evidence. A procedure to reduce 
+risk and the uncertainty of a business idea.
+Feasibility 
+Can you build your product or service? 
+Having the resources and infrastructure to 
+build your product or service.
+ 
+Fidelity 
+The degree to which the prototype accu-
+rately reproduces the product or service.  
+Level of detail and functionality within the 
+prototype. 
+Fit 
+When the elements of your Value Map meet 
+relevant jobs, pains, and gains of your  
+customer segment and a substantial number  
+of customers “hire” your value proposition to 
+satisfy those jobs, pains, and gains.
+Gain creators 
+Describes how products and services create  
+gains and help customers achieve the 
+outcomes and benefits they require, expect, 
+desire, or dream of by getting a job done 
+(well).
+Hypothesis 
+A belief drawn from a strategy, business 
+model, or value proposition that needs to be 
+true for your idea to work partially or fully 
+but that hasn't been validated yet.
+Iterative approach 
+The process of repeating a cycle in order to 
+bring a result closer to discovery with every 
+repetition. 
+Ideation 
+The process of generating and communicat-
+ing ideas in a group session.
+Jobs to be done 
+What customers need, want, or desire to get 
+done in their work and in their lives.
+
+
+332
+KPIs (Key Performance Indicators)  
+Measurable value that demonstrates how 
+effectively you are achieving your targets 
+for success.
+Lean Startup 
+Approach by Eric Ries based on the 
+Customer Development process to eliminate 
+waste and uncertainty from product devel-
+opment by continuously building, testing, 
+and learning in an iterative fashion.
+Learning Card 
+Strategic learning tool to capture insights 
+from research and experiments.
+Metrics 
+A quantifiable measurement used to track 
+and assess.
+Minimum Viable Product (MVP) 
+A model of a value proposition designed 
+specifically to validate or invalidate one or 
+more hypotheses.
+Pain Relievers 
+Describes how products and services 
+alleviate customer pains by eliminating or 
+reducing bad outcomes, risks, and obstacles 
+that prevent customers from getting a job 
+done (well).
+Products and Services 
+The items that your value proposition is 
+based on that your customers can see in your 
+shop window — metaphorically speaking.
+Progress Board 
+Strategic management tool to manage and 
+monitor the business model and value prop-
+osition design process and track progress 
+towards a successful value proposition and 
+business model.
+Prototyping (low/high fidelity) 
+The practice of building quick, inexpensive, 
+and rough study models to learn about 
+the desirability, feasibility, and viability of 
+alternative value propositions and business 
+models.
+Solopreneur 
+Abbreviation for Solo Entrepreneur (building 
+a business on your own.
+Stakeholder 
+Someone with a legitimate interest, can 
+affect or be affected by your business.  
+Team Map 
+A visual tool created by Stefano 
+Mastrogiacomo to boost alignment among 
+team members for more effective meetings 
+and conversations.
+Test Card 
+Strategic testing tool to design and struc-
+ture your research and experiments.
+Time Box  
+A set period of time in which a task must be 
+completed, derived from the Agile Method.
+Validate 
+To confirm that a hypothesis is legitimate,  
+well-grounded, or justifiable.
+Value Map 
+Business tool that constitutes the left-hand 
+side of the Value Proposition Canvas. Makes 
+explicit how your products and services create 
+value by alleviating pains and creating gains.
+Value Proposition 
+Describes the benefits customers can expect 
+from your products and services.
+Value Proposition Canvas 
+Strategic management tool to design, test, 
+build, and manage products and services. 
+Fully integrates with the Business Model 
+Canvas.
+Value Proposition Design 
+The process of designing, testing, building, 
+and managing value propositions over their 
+entire lifecycle.
+Viability 
+Can we make a profit from our product 
+or service? Having evidence that you can 
+generate more revenue than costs from your 
+product or service.
+
+
+333
+
+
+334
+Acknowledgments
+This book would have been impossible to 
+create without the love and support of my 
+wife, Elizabeth. She’s been my rock through-
+out the years and continues to provide 
+encouragement for me on this journey. Our 
+kids have been amazing during this writing 
+process, providing me with love and time to 
+focus. So to Catherine, Isabella, and James:  
+I thank you for cheering me on. I’m lucky to 
+be a father to such amazing kids. 
+	
+I want to thank my coauthor Alex 
+Osterwalder. He provided excellent guidance 
+and insights throughout the entire book.  
+It has been my pleasure and honor to have 
+him be a part of this ambitious endeavor. I’d 
+also like to thank Alan Smith and the entire 
+Strategyzer team for putting in long hours 
+and weekends creating such a beautifully 
+designed book. 
+	
+Testing Business Ideas is written from 
+the viewpoint that we are standing on the 
+shoulders of giants. To all of those who have 
+influenced my thinking over the years, in 
+small ways and in large, it is only because 
+of you that this book exists. You were brave 
+enough to put your thoughts out there for 
+others to see.  
+	
+I want to thank all of you who continue to 
+push these ideas forward in practice: Eric 
+Ries, Steve Blank, Jeff Gothelf, Josh Seiden, 
+Giff Constable, Janice Fraser, Jason Fraser, 
+Ash Maurya, Laura Klein, Christina Wodtke, 
+Brant Cooper, Patrick Vlaskovits, Kate 
+Rutter, Tendayi Viki, Barry O’Reilly, Melissa 
+Perri, Jeff Patton, Sam McAfee, Teresa 
+Torres, Marty Cagan, Sean Ellis, Tristan 
+Kromer, Tom Looy, and Kent Beck. 
+	
+A book can feel like a very large batch 
+waterfall process. We did our best to test 
+our content as we iterated along the way.  
+I want to thank everyone who helped  
+proofread and provided feedback early on. 
+Your insights helped shape the book into 
+what it is today. 
+ 
+— David J. Bland 2019
+
+
+335
+
+
+336
+David J. Bland is an advisor, author and 
+founder who lives in the San Francisco Bay 
+Area. In 2015, he created Precoil to help 
+companies find product market fit using lean 
+startup, design thinking and business model 
+innovation. He has helped validate new prod-
+ucts and services at companies all around 
+the world. Prior to advising, David spent over 
+10 years of his career scaling technology 
+startups. He continues to give back to the 
+startup community by teaching at several 
+startup accelerators in Silicon Valley.
+@davidjbland  
+precoil.com
+In 2015 Alex won the strategy award by  
+Thinkers50, called the “Oscars of Manage-
+ment Thinking” by the FT, and currently 
+ranks #7 among the leading business thinkers 
+of the world. 
+	
+He is a frequent keynote speaker at 
+Fortune 500 companies and has held 
+guest lectures in top universities around 
+the world, including Wharton, Stanford, 
+Berkeley, IESE, MIT, KAUST, and IMD. Alex 
+works regularly with senior executives from 
+leading companies such as Bayer, Bosch, WL 
+Gore, and Fortune 500 companies such as 
+Mastercard on projects related to strategy 
+and innovation.
+@AlexOsterwalder 
+strategyzer.com/blog
+Alan uses his curiousity and creativity to ask 
+questions and turn the answers into simple, 
+visual, practical tools. He believes that the 
+right tools give people confidence to aim high 
+and build big meaningful things. 
+	
+He cofounded Strategyzer with Alex 
+Osterwalder, where he works with an 
+inspired team on product. Strategyzer’s 
+books, tools, and services are used by  
+leading companies around the world.
+strategyzer.com
+AUTHOR 
+David J. Bland 
+Founder, Advisor, Speaker
+COAUTHOR 
+Alex Osterwalder 
+Founder, Speaker, Business Thinker
+DESIGN LEAD 
+Alan Smith 
+Founder, Explorer, Designer
+
+
+337
+ADDITIONAL DESIGN 
+Chris White 
+Editorial Designer
+Alan and Trish would like to 
+thank Chris for hopping on 
+and providing significant extra 
+muscle near the finish line 
+to help make this project a 
+success. 
+ 
+ILLUSTRATION 
+Owen Pomery 
+Narrative illustration
+Deep thanks to Owen for his 
+patience and willingness to 
+iterate to communicate the 
+right ideas. 
+ 
+owenpomery.com 
+ 
+ICON DESIGN 
+b Farias 
+Contributor
+ 
+Icons: team, light bulb, report 
+abuse, flask, visible, gear, 
+telescope, checkbox, cross 
+bones, destination, paper 
+note, dashboard, like, clip-
+board, charty pie, chemistry 
+book, map pin, trophy, and 
+graduate hat by b farias from 
+the Noun Project. 
+ 
+thenounproject.com/bfarias
+Trish holds a Masters in Design from  
+Central St. Martins in London and a Bachelor 
+of Design from the York Sheridan Joint 
+Program in Toronto.  
+	
+She has taught design at her alma 
+mater, worked with award-winning agen-
+cies, launched several businesses, and is 
+collaborating for the fourth time with the 
+Strategyzer team.
+@trishpapadakos
+DESIGN LEAD 
+Trish Papadakos 
+Designer, Photographer, Creator
+
+
+338
+Strategyzer uses the best of  
+technology and coaching to  
+support your transformation  
+and growth challenges.
+ 
+Discover what we can do  
+for you at Strategyzer.com
+
+
+339
+TRANSFORMATION 
+Create Change 
+Skill building at the Strategyzer 
+Cloud Academy course library.
+Build value for customers, value for 
+your business, testing your ideas, 
+and an in-depth experiment library.
+GROWTH 
+Create Growth 
+Systematize and scale your  
+growth efforts. 
+ 
+Growth strategy, innovation  
+readyness assessment, innovation 
+funnel design, sprints, and metrics.
+
+
+340
+Index
+A
+Abandonment rate, 276
+Access to customers, for teams, 11
+Accountability, 318
+Action(s). See also Behaviors
+attention as, 132
+of customers, testing, 152
+defined, 62
+turning insights into, 62–63
+Advisors, for solopreneurs, 81
+Advocates, 174
+Advocate share rate, 174
+Affinity Sorting, 112
+Alchemy Eyewear, 305
+Alignment, on teams, 12–13
+American Family Insurance, 198–199
+Analysis paralysis, 314
+Anchors, 220
+AngelList, 167
+Angry Birds, 7
+Assessment, in design loop, 19
+Assumptions, questioning, 8
+Assumptions Mapping, 36–39
+Attention, 132
+Autonomous teams, 10
+Avoiding experiment pitfalls, 313–315
+B
+Bangerter, Seth, 299
+Behaviors. See also Action(s)
+of customers, 130
+of teams, 8–9
+Bezos, Jeff, 230
+Bi-weekly retrospective meetings, 68–69, 78–79
+Blank, Bennett, 121
+Blank, Steve, 136, 147
+Blocker experiments, 85
+Boomerang, 204–207
+details of, 206
+function of, 204
+overview of, 205
+pairings for, 207
+Branding, landing pages and, 265
+Brochures, 194–199
+American Family Insurance case study, 
+198–199
+details of, 196
+function of, 194
+overview of, 195
+pairings for, 197
+B2B companies:
+Customer Interviews with, 110
+hardware companies, 98
+letters of intent for, 294
+sequence of experiments for, 98
+services companies, 98
+software companies, 98
+B2B with B2C experimentation sequence, 99
+B2C companies:
+Customer Interviews with, 110
+sequence of experiments for, 99
+services companies, 99
+software companies, 99
+Buffer, 292–293
+Business concept design, x
+Business design, 18–19
+Business experiments, 44. See also Experiment(s)
+Business hypotheses, 30. See also Hypotheses
+Business ideas, see Ideas
+Business Model Canvas, 20–21
+financial risk in, 35
+infrastructure risk in, 35
+market risk in, 34
+Business Model Generation, 19, 20
+Business models:
+improving, 318
+inventing, 319
+Business prototype, in design loop, 19
+Button views, 158
+Buy a Feature, 226–229
+details of, 228
+function of, 226
+overview of, 227
+pairings for, 229
+C
+Call to action experiments, 234–235, 260–277
+brochures, 196
+crowdfunding, 266–269
+function of, 45
+presale, 274–277
+simple landing page, 260–265
+Split Test, 270–273
+Card sorting, 222–225
+details of, 224
+function of, 222
+
+
+341
+overview of, 223
+pairings for, 225
+Ceremonies, 68–69. See also Experiment 
+ceremonies
+Clickable prototypes, 236–239
+details of, 238
+function of, 236
+overview of, 237
+pairings for, 239
+Click rates, 154, 164
+Click through rate (CTR), 150, 170, 202
+Coaching, for teams, 11
+Cognitive biases, 319
+Co-Located Teams, experiment ceremonies  
+for, 70
+Communication, 87. See also experiment 
+ceremonies
+active listening, 321
+of experiment purpose and details, 87
+impact of language and tone, 318
+saying “I don’t know,” 321
+Concierge, 248–253
+details of, 250
+evidence from, 53
+function of, 248
+learning from, 55
+overview of, 249
+pairings for, 251
+realtor.com case study, 252–253
+Confidence levels, 56–57
+Confirmation bias, 315
+Constraints, for teams, 11
+Continuous experimentation, 82, 85
+Conversion rates:
+brochures, 196
+Feature Stubs, 158
+landing pages, 262
+life-sized prototypes, 256
+pop-up stores, 302
+social media campaigns, 170
+Split Tests, 272
+Cook, Scott, 120
+Core teams, 36
+bi-weekly retrospectives for, 78–79
+daily standups for, 74–75
+monthly stakeholder reviews for, 80–81
+weekly learning meetings for, 76–77
+weekly planning meetings for, 72–73
+Corporate Team:
+bi-weekly retrospectives for, 79
+daily standups for, 75
+monthly stakeholder reviews for, 81
+weekly learning meetings for, 77
+weekly planning meetings for, 73
+Cost:
+discovery experiments, 105
+validation experiments, 235
+Craigslist, 111
+Creating more leaders, 321
+Cross-functional teams:
+silos vs., 324
+skillsets on, 6
+Crowdfunding, 266–269
+details of, 268
+function of, 266
+overview of, 267
+pairings for, 269
+Cryptology, 180–181
+CTR, see Click through rate
+CubeSats, 180–181
+Customers:
+stage of, 147
+target, 147
+teams’ access to, 11
+Customer-centric behaviors, 8
+Customer Interviews, 106–113
+details of, 108, 110–113
+evidence from, 53
+function of, 106
+learning from, 55
+overview of, 107
+pairings for, 109
+Customer Profile, 22
+Customer support analysis, 142–145
+details of, 144
+function of, 142
+overview of, 143
+pairings for, 145
+Cycle time, 250, 286
+D
+Daily standup meetings, 68–69, 74–75
+Data:
+and confidence level, 57
+incomparable, 314
+weak, 315
+Data analysis experiments, 104–105, 126–145
+customer support analysis, 142–145
+Discussion Forums, 134–137
+sales force feedback, 138–141
+Search Trend Analysis, 126–129
+web traffic analysis, 130–133
+
+
+342
+Data-influenced behaviors, 8
+Data points, number of, 57
+Data sheets, 190–193
+details of, 192
+function of, 190
+overview of, 191
+pairings for, 193
+A Day in the Life, 116–121
+details of, 118
+Intuit case study, 120–121
+overview of, 117
+pairings for, 119
+De Botton, Alain, 48
+Decision making, 59–63
+evidence vs. opinion in, 320
+by investment committees, 327
+monthly stakeholder reviews, 68–69, 80–81
+teams’ authority in, 318
+for turning insights into action, 62–63
+types of decisions, 61
+Dedicated teams, 10
+Deming, W. Edwards, 322
+Design:
+business concept, x
+of experiments, 43
+shaping ideas, 15–23
+of teams, 3–13
+Design for Delight program (Intuit), 120
+Design loop, 18–19
+Desirability hypotheses, 32–34, 39
+Desirability risk, xi
+Direction, for teams, 11
+Discovery experiments, 94–95, 101–229
+Boomerang, 204–207
+brochures, 194–199
+Buy a Feature, 226–229
+card sorting, 222–225
+Customer Interviews, 106–113
+customer support analysis, 142–145
+data analysis, 104–105, 126–145
+data sheets, 190–193
+A Day in the Life, 116–121
+Discovery Survey, 122–125
+Discussion Forums, 134–137
+discussion prototypes, 104–105, 162–213
+email campaigns, 162–167
+Expert Stakeholder Interviews, 115
+Explainer Videos, 200–203
+exploration, 104–125
+Feature Stub, 156–159
+404 test, 160–161
+interest discovery, 104–105, 146–175
+link tracking, 152–155
+online ads, 146–151
+paper prototypes, 182–185
+Partner & Supplier Interviews, 114
+preference and prioritization, 104–105, 
+218–229
+Pretend to Own, 208–213
+Product Box, 214–217
+referral programs, 172–175
+sales force feedback, 138–141
+Search Trend Analysis, 126–129
+selecting, 94–95
+social media campaigns, 168–171
+Speed Boat, 218–221
+storyboards, 186–189
+3D print, 176–181
+types of, 94–95, 104–105
+web traffic analysis, 130–133
+Discovery Survey, 122–125
+details of, 124
+function of, 122
+overview of, 123
+pairings for, 125
+Discrete hypotheses, 31
+Discussion Forums, 134–137
+details of, 136
+function of, 134
+overview of, 135
+pairings for, 137
+Discussion prototypes, 104–105,  
+162–213
+Boomerang, 204–207
+brochures, 194–199
+data sheets, 190–193
+Explainer Videos, 200–203
+paper prototypes, 182–185
+Pretend to Own, 208–213
+storyboards, 186–189
+3D print, 176–181
+Distributed Teams, experiment ceremonies  
+for, 70
+Diversity, on teams, 7
+E
+Ellis, Sean, 280–281
+Email campaigns, 162–167
+details of, 164
+function of, 162
+overview of, 163
+pairings for, 165
+Product Hunt case study, 166–167
+Engagement, 170, 210
+Entrepreneurs, 7. See also Solopreneurs
+Entrepreneurial iterative approach, 8
+Entrepreneurship, of investment committee 
+members, 327
+
+
+343
+Environment:
+creating, 320
+investment committee impact on, 327
+of teams, 10–11
+Ethics, 86
+Ethnography, 116
+Evidence:
+analyzing, 51
+on Assumptions Map, 38
+confidence level in, 56–57
+defined, 52
+from different experiments, 53
+incomparable, 314
+insights from, 51, 54–55
+opinion vs., 320
+quality of, 57
+sales force feedback, 140
+social media campaigns, 170
+strength of, See Evidence strength
+3D print, 178
+type of, 57
+weak, 315
+Evidence strength, 52–53, 57
+and confidence level, 57
+discovery experiments, 105
+and selection of experiments, 93
+validation experiments, 235
+Execution of business ideas, premature, viii
+Experiment(s), 41–47
+avoiding pitfalls in, 313–315
+blocker, 85
+components of, 45
+confidence level and number of, 57
+designing, 43
+discovery, 94–95. See also Discovery 
+experiments
+ethics in, 86
+guidelines for, 87
+leading through, 317–321
+organizing for, 323–327
+principles of experiment flow, 82–85
+to reduce risk of uncertainty, 47
+running, 43
+selecting, 91–93
+sequences of, 98–99
+splitting-columns, 85
+Test Cards for, 45, 46
+too few, 315
+validation, 96–97. See also Validation 
+experiments
+Experiment boards, 83–85
+Experiment ceremonies, 67–81
+bi-weekly retrospective, 78–79
+for Co-Located Teams, 70
+daily standups, 74–75
+for Distributed Teams, 70
+monthly stakeholder reviews, 80–81
+time commitment for, 71
+weekly learning, 76–77
+weekly planning, 72–73
+Experiment-driven behaviors, 8
+Experiment flow principles, 82–85
+continuous experimentation, 82, 85
+limit experiments in progress,  
+82, 84
+visualize experiments, 82, 83
+Experiment pitfalls, 313–315
+Experiment sequences, 98–99
+Expert Stakeholder Interviews, 115
+Explainer Videos, 200–203
+details of, 202
+function of, 200
+overview of, 201
+pairings for, 203
+Exploration experiments, 104–125
+Customer Interviews, 106–113
+A Day in the Life, 116–121
+Discovery Survey, 122–125
+Expert Stakeholder Interviews, 115
+Partner & Supplier Interviews, 114
+Extended team:
+monthly stakeholder reviews for, 80–81
+weekly learning meetings for, 76–77
+Extreme Programming Spike, 306–309
+details of, 308
+function of, 306
+overview of, 307
+pairings for, 309
+F
+Facilitation, 318
+Facilitative leadership style, 11
+Failure to learn and adapt, 315
+Fake news, 86
+Farm and ranch insurance, 198–199
+Feasibility hypotheses, 32, 33, 39
+Feasibility risk, xi
+Feature Stub, 156–159
+details of, 158
+function of, 156
+overview of, 157
+pairings for, 159
+Feynman, Richard, 40
+Financial risk, 35
+Follow-Me-Home program (Intuit), 120–121
+404 test, 160–161
+Friends, 174
+Friend click through rate, 174
+
+
+344
+online ads, 146–151
+referral programs, 172–175
+social media campaigns, 168–171
+Interviews:
+Customer Interviews, 106–113
+Expert Stakeholder Interviews, 115
+Partner & Supplier Interviews, 114
+Intuit, 120–121
+Investment committees, 327
+Iterative process, x
+J
+Jackson, Phil, 2
+K
+Kaufer, Stephen, 161
+Key Partners, 114
+Key performance indicators (KPIs), 11
+Khosla, Vinod, 312
+Kill, decision to, 61, 80
+KPIs (key performance indicators), 11
+Krawcheck, Sallie, 100
+L
+Landing page, see Simple landing page
+Language, impact of, 318
+Leaders:
+creating, 321
+role in working with teams, 318–321
+I
+Ideas:
+commonly required skills for testing, 6
+identifying, 29
+premature execution of, viii
+shaping, 15–23
+Idea Maze, 81
+Ideation, in design loop, 19
+Importance:
+on Assumptions Map, 38
+ranking, 279
+Imposter Judo, 205. See also Boomerang
+Incomparable data/evidence, 314
+Infrastructure risk, 35
+Innovation Corps (I-Corps), 181
+Innovation funding, 325
+Innovation Games (Hohmann), 215, 219, 227
+Innovation portfolio, 326
+Insights:
+defined, 51
+from evidence, 51, 54–55
+generating, 44
+turned into action, 62–63
+Interaction prototypes, 234–259, 278–283
+clickable prototypes, 236–239
+Concierge, 248–253
+life-sized prototypes, 254–259
+Mash-Up, 244–247
+Single Feature MVP, 240–243
+validation surveys, 278–283
+Interest discovery experiments, 104–105, 
+146–175
+email campaigns, 162–167
+Feature Stub, 156–159
+404 test, 160–161
+link tracking, 152–155
+Friend conversion rate, 174
+Functional silos, 324
+Funding:
+crowdfunding, 266–269
+innovation approach to, 325
+in selecting experiments, 92
+for teams, 10
+venture capital approach to, 325–327
+G
+Gandhi, Indira, 58
+Gascoigne, Joel, 292–293
+Generation, in design loop, 18
+Guest, Chris, 305
+H
+Hancock, Herbie, 90
+Hawkins, Jeff, 212–213
+Highly regulated companies, experiment 
+sequence for, 99
+Hohmann, Luke, 215, 219, 227
+Hoover, Ryan, 166–167
+Hypotheses, 27–39
+Assumptions Mapping, 36–39
+characteristics of, 31
+confidence level for, 56–57
+creating, 30
+creating multiple experiments for, 46
+identifying, 29, 37, 39
+prioritizing, 29, 38, 39
+in selecting experiments, 92
+types of, 32–35
+
+
+345
+N
+National Security Agency (NSA), 180–181
+Net promoter score (NPS), 281
+O
+Online ads, 146–151
+details of, 150
+function of, 146
+overview of, 147–149
+pairings for, 151
+Open rates, 164
+Organizing for experiments, 323–327
+innovation portfolio, 326
+investment committees, 327
+silos vs. cross-functional teams, 324
+thinking like a venture capitalist, 325
+Outsourcing of testing, 315
+P
+Palm Pilot, wooden, 212–213
+Paper prototypes, 182–185
+details of, 184
+function of, 182
+overview of, 183
+pairings for, 185
+Partner & Supplier Interviews, 114
+Persevere, decision to, 61, 80
+Pinocchio experiment, see Pretend to Own
+Pivot, decision to, 61, 80
+M
+McGrath, Rita, 14
+Makeshift, 167
+Managing, 65–87
+ethics in experimentation, 86
+experiment ceremonies, 67–81
+guidelines for experiments, 87
+principles of experiment flow,  
+82–85
+Market research, 126
+Market risk, 34
+Mash-Up, 244–247
+details of, 246
+function of, 244
+overview of, 245
+pairings for, 247
+Masters, Dave, 253
+Mastrogiacomo, Stefano, 12
+Meetings, 161. See also Experiment  
+ceremonies
+Mindset:
+avoid experiment pitfalls, 313–315
+lead through experimentation,  
+317–321
+organize for experiments, 323–327
+Mock sale, 288–293
+Buffer case study, 292–293
+details of, 290
+function of, 288
+overview of, 289
+pairings for, 291
+Monthly stakeholder reviews, 68–69,  
+80–81
+Move, Inc., 252
+Multi-tasking, 84
+team environment design by, 10
+venture capitalist approach by,  
+325–327
+Leading through experimentation,  
+317–321
+creating more leaders, 321
+improving business models, 318
+inventing business models, 319
+steps to take in, 320
+Lead time, 250, 286
+Learning, 49–57
+and confidence level, 56–57
+from evidence, 52–53
+failure to learn, 315
+gleaning insights from evidence, 54–55
+Learning Cards, 54–55, 62
+Learning meetings, weekly, 68–69, 76–77
+Letters of intent (LOIs), 294–299
+details of, 296
+function of, 294
+overview of, 295
+pairings for, 297
+Thrive Smart Systems case study, 298–299
+Life-sized prototypes, 254–259
+details of, 256
+function of, 254
+overview of, 255
+pairings for, 257
+Zoku case study, 258–259
+Limiting experiments in progress, 82, 84
+Link tracking, 152–155
+details of, 154
+function of, 152
+overview of, 153
+pairings for, 155
+LOIs, see Letters of intent
+Lynkydink, 167

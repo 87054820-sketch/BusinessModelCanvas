@@ -54,6 +54,13 @@ import {
   StrategyFrameworkListCommand,
 } from './commands/strategyFramework.js';
 
+import {
+  ResourceChapterReadCommand,
+  ResourceChaptersCommand,
+  ResourceGetCommand,
+  ResourceListCommand,
+} from './commands/resource.js';
+
 const [, , ...args] = process.argv;
 
 const cli = new Cli({
@@ -125,6 +132,12 @@ cli.register(PatternGetCommand);
 // Strategy frameworks (read-only analysis methods — no fork / no edit)
 cli.register(StrategyFrameworkListCommand);
 cli.register(StrategyFrameworkGetCommand);
+
+// Resources (source-material layer: books, articles, papers, reports, web)
+cli.register(ResourceListCommand);
+cli.register(ResourceGetCommand);
+cli.register(ResourceChaptersCommand);
+cli.register(ResourceChapterReadCommand);
 
 // Skill
 cli.register(SkillBuildCommand);

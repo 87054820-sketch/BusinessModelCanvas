@@ -1,0 +1,32 @@
+{
+  "chapter": "ch04-patterns",
+  "sourceFiles": { "en": "14-Chapter-3-Invent-Pattern-Library.txt, 15-26 pattern files, 28-Chapter-5-Culture.txt" },
+  "concepts": [
+    { "name": "Frontstage Disruption", "definition": "Disruption to customer-facing building blocks: Value Propositions, Channels, and Customer Relationships. The visible part of the business model that customers experience directly. Changing these shifts how customers perceive and interact with the company." },
+    { "name": "Backstage Disruption", "definition": "Disruption to operational building blocks: Key Resources, Key Activities, Key Partnerships. The invisible infrastructure that enables customer-facing innovation. Often creates competitive advantage that is hard for competitors to see or copy." },
+    { "name": "Profit Formula Disruption", "definition": "Disruption to financial building blocks: Revenue Streams and Cost Structure. Changing how money is made and spent. Often the most powerful form of business model innovation because it directly changes the economics." },
+    { "name": "Business Model Shift Patterns", "definition": "A library of repeatable patterns for improving or transforming business models, organized by which building block changes. Examples: Resource-Driven Shift, Activity-Driven Shift, Partnership-Driven Shift, Channel-Driven Shift, Customer Relationship-Driven Shift, Revenue Model Shift, Cost Structure Shift. Each pattern describes the trigger, mechanism, and examples." },
+    { "name": "Innovation Culture Design", "definition": "Deliberately designing the organizational culture to support exploration. Key elements: psychological safety (safe to fail), tolerance for productive failure, fast iteration cycles, customer obsession, resource autonomy for Explore teams, different recognition/reward systems than Exploit roles. Culture emerges from management systems — change the system to change the culture." }
+  ],
+  "arguments": [
+    { "claim": "Most business model shifts follow identifiable patterns — systematic innovation is teachable, not just an art", "evidence": "The pattern library catalogs recurring shift types across industries and time. Just as the BMC patterns chapter showed recurring business model archetypes (Long Tail, Multi-Sided Platform, etc.), the shift library shows recurring ways models evolve. This makes business model innovation a discipline that can be learned." },
+    { "claim": "Culture eats strategy for breakfast on Explore AND Exploit — but they require different cultures", "evidence": "Explore requires a culture rewarding experimentation, tolerating productive failure, valuing learning velocity over execution precision. Exploit requires consistency, efficiency, and reliability. One organization cannot optimize for both — it must deliberately build two cultural environments connected by strategic intent." }
+  ],
+  "terminology": [
+    { "term": "Shift pattern", "definition": "A repeatable logic for changing one or more building blocks of a business model, documented with conditions for use and industry examples." },
+    { "term": "Frontstage", "definition": "Customer-facing side: Value Propositions + Channels + Customer Relationships + Revenue Streams — what customers see and experience." },
+    { "term": "Backstage", "definition": "Operational side: Key Resources + Key Activities + Key Partnerships + Cost Structure — the invisible engine." },
+    { "term": "Psychological safety", "definition": "The shared belief that the team is safe for interpersonal risk-taking. Critical for Explore because innovation requires surfacing and testing uncertain ideas." }
+  ],
+  "nuance": [
+    "Shift patterns are inspiration and starting points, not blueprints. Every pattern must be adapted to the specific industry, customer context, and competitive situation.",
+    "Culture cannot be 'transformed' by a CEO vision speech — it emerges from the management system (what gets measured, rewarded, and discussed). Change the metrics and resource allocation, and culture follows."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["portfolio-map", "business-model-canvas"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-explore", "ch03-manage"]
+  }
+}

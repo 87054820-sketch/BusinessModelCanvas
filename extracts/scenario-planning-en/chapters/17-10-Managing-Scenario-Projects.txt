@@ -1,0 +1,670 @@
+# 10 Managing Scenario Projects
+
+218 
+LEADING SCENARIO  P RO JE C T S
+These activities are suggested as important pieces of the scenario system, 
+and when paid attention to, they can help your scenario project stay on 
+track and deliver results. Each is described in detail. 
+SPENDING TIME ON THE PROBLEM, QUESTION, OR ISSUE
+How the scenario project is framed inﬂuences everything. The initial prob-
+lem, question, or issue must be referenced repeatedly throughout the proj-
+ect. The more speciﬁc you can be about the issue at the outset, the easier it 
+is to consistently address that issue throughout. However, it is useful to keep 
+in mind that initial scenarios are usually general “learning” scenarios that 
+explore the external environment. So, if your organization is new to scenario 
+planning, it is very useful to design a ﬁrst set of scenarios focused on a gen-
+eral understanding of the external environment. Using these scenarios as 
+context, you can then move into a second set of scenarios focused on a spe-
+ciﬁc issue. This approach will allow thinking to sharpen on a speciﬁc issue 
+and design a set of scenarios speciﬁcally to illuminate the problem. Because 
+this second set of scenarios is highly focused, the project will be easier to as-
+sess and likely to have a more lasting impact on decision making.
+If an organization is already using general-level scenarios, a project 
+team can jump directly into the “decision” scenarios, moving straight to the 
+problem, question, or issue and working directly on it. 
+The importance of spending time on the problem, question, or issue 
+cannot be overstated. Having a speciﬁc issue creates boundaries for the 
+project. Given the volatility, uncertainty, complexity, and ambiguity of the 
+business environment, there will be difﬁculties enough in steering a project 
+designed to “promote organizational learning.” Such a general focus is not 
+easily assessed. The more speciﬁc the focus of the scenario project can be, 
+the more easily it can be assessed. In addition, the pressure for speciﬁc as-
+sessment data can vary across organizations.
+The importance of specifying a problem, question, or issue is intimately 
+related to how decision makers view the utility of the project. Organizations 
+using scenario planning as a one-time effort usually result in project failures. 
+These failures are due to the generation of contextual learning scenarios that 
+do not offer enough speciﬁcs for managers to exercise their judgment.
+RECOGNIZING THE IMPORTANCE OF THE TEAM
+The right team is critical to the success of any scenario project. Team mem-
+bers can provide valuable information about the history, context, issues, 
+
+
+  
+M A N A G I N G S C E N A R I O  P R O J E C T S 
+219
+personalities, and politics. Therefore, teams must include members inter-
+nal to the organization. Critical functions of the team include overseeing 
+the administrative management of the project; keeping the initial problem, 
+question, or issue central to the work done in the project; gathering relevant 
+information; conducting research; and facilitating workshops. The team 
+should also be multilevel and cross-functional.
+My own failure to recognize the importance of the team in an early sce-
+nario project is an example. I did not assign anyone as the project coordina-
+tor. As a result, workshops and meetings were poorly attended because there 
+was nobody internal to the organization coordinating the various events 
+and communicating the details of the projects among team members. 
+Another example from my own projects involved having someone as-
+signed to the team who turned out to be looking for ways to sabotage the 
+project. Although such malintent does not happen often, organization poli-
+tics can come into play. Team membership should be negotiated. The more 
+committed, excited, and motivated the team members are, the more likely 
+the outcomes will meet and even exceed the expectations of decision makers.
+SPENDING TIME ON ANALYSIS
+Chapter 6 was dedicated to analysis activity. The activities described allow 
+the team to understand the problem, question, or issue in its context. Analy-
+sis activities should not be cut short or otherwise reduced to save project 
+costs. This is a critical phase in the scenario system as it establishes what is 
+known about the issue. Forecasts and trend reports can often be used as a 
+substitute for thinking on the part of the user; therefore, the goal of analysis 
+and the scenario exploration phase is to generate the team’s own under-
+standing and thinking about the problem, question, or issue.
+Projects that reduce time and commitment to the exploration phase 
+have little impact. This is because the workshops and subsequent phases are 
+tailored to what is learned during analysis and scenario exploration. As is 
+the case with any organizational improvement activity, everything rests on 
+this foundational work. I have seen projects in which little time is given to 
+understanding the issue, and these projects have generally lacked the mo-
+mentum for signiﬁcant impact. 
+DEFINING IMPORTANT OUTCOMES
+One key to making scenarios work is having an idea of what the expecta-
+tions are. While these expectations can become a moving target, the more 
+
+
+220 
+LEADING SCENARIO  P RO JE C T S
+that is known about what decision makers hope to get out of the project, the 
+more the project can be tailored to address those expectations. Some man-
+agers and executives are comfortable with ambiguity and vague outcomes 
+like “continuous learning about the industry,” but the vast majority will 
+have speciﬁc desired outcomes in mind. Ask for them.
+My own experience has told me that the type of organization matters 
+as well. For example, scenario projects I have worked on with engineer-
+ing ﬁrms have had speciﬁc, targeted outcomes. These projects have also re-
+quired more effort to stimulate strategic thinking than working with design 
+teams in technology-driven industries. In other words, organizational cul-
+ture and personality can drive an orientation toward more speciﬁc (or more 
+ambiguous) outcomes.
+PUTTING YOUR SCENARIOS TO USE
+Perhaps the most common reason for disappointment in scenario projects is 
+a lack of use. So many consulting companies now provide scenario planning 
+interventions, yet few boast anything beyond developing scenarios for their 
+client organizations. The development of scenarios can be highly creative 
+and fun, but using them should be the most rewarding phase. The amount 
+of time and effort spent on scenario development should be mirrored in 
+scenario implementation.
+This book provides a framework for using scenarios. Speciﬁc workshops 
+have been described with guidance for making them work. Communicating 
+and using the scenarios is the opportunity to begin an organization-wide 
+strategic conversation. This conversation can be the catalyst for real change 
+inside the organization. Do not let the delivery of three or four scenarios be 
+the end of your project. You must use them to challenge thinking within 
+and across the organization. 
+ASSESSING YOUR IMPACT
+Most scenario projects lack assessment or evaluation. How do decision 
+makers know they are getting anything for their investment? Some claim 
+to simply “know.” Particularly in lean economic times (although equally 
+important anytime), organizational change interventions must have docu-
+mentation of their delivered outcomes. Chapter 9 of this book has laid out 
+a comprehensive approach to scenario project assessment. The proposed 
+
+
+  
+M A N A G I N G S C E N A R I O  P R O J E C T S 
+221
+activities take time and resources. However, if carried out, these assessment 
+techniques will make the case that scenario planning is easily worth every 
+penny invested.
+If you have experience with other assessment tools, use them. The pur-
+pose is to begin establishing evidence that scenario planning works. 
+Scenario planning literature is full of claims about decision making, 
+learning, and navigating the future, but little evidence is provided to 
+support these claims. Most scenario planners could tell you stories of 
+their successes or failures, which may constitute a form of evidence, but 
+few people document these stories. Though helpful, these stories also are 
+not always compelling to ﬁnancially driven executives. Scenario proj-
+ects should include a cost/beneﬁt analysis. Even if the ﬁgures it contains 
+are estimates or forecasts, they should be included. The scenario system 
+presented in this book demands that you assess the projected ﬁnancial 
+beneﬁts of the project at the outset. Following up at the conclusion of 
+the project and beyond should be a simple exercise in collecting a few 
+pieces of relevant data. 
+RECOGNIZING AN EVOLVING CONTEXT
+A very exciting aspect of scenario planning is the increasing variety of con-
+texts in which it is being used. The Mont Fleur Scenarios (Kahane, 1992) 
+were the ﬁrst example of using the scenario planning technique in a noncor-
+porate context. The Mont Fleur Scenarios brought together a diverse group 
+of business leaders, politicians, civil rights activists, artists, and others con-
+cerned with the future of South Africa. Their scenario efforts were aimed 
+at building a community sharing a vision for a better South Africa. Adam 
+Kahane, the primary facilitator, was previously a member of Shell’s scenario 
+team. Kahane has since focused his efforts more carefully in this area, mov-
+ing on to scenarios for Colombia. 
+These projects (and particularly the Mont Fleur Scenarios) were a clear 
+signal that scenarios could be useful beyond corporate planning. Part group 
+decision-making process, part team building, part envisioning, part analy-
+sis, among others, it is easy to see that the scenario system can apply in a va-
+riety of contexts. The world in general features the same characteristics (e.g., 
+volatility, uncertainty, complexity, and ambiguity) as the business environ-
+ment, and tools for thinking differently about the future can be applied to 
+
+
+222 
+LEADING SCENARIO  P RO JE C T S
+problems related to global climate change, health care, water supply, ecol-
+ogy, and other natural resources.
+ADDITIONAL PITFALLS AND  
+ACCOMPANYING SOLUTIONS
+Schoemaker (2005) has described twenty common pitfalls in scenario 
+planning. These pitfalls are divided into ten process pitfalls and ten con-
+tent pitfalls. Although there is some overlap with the strategies for man-
+aging scenario projects described earlier in this chapter, they will all be 
+presented—along with proposed solutions—to keep the integrity of Schoe-
+maker’s list.
+TEN PROCESS PITFALLS
+The ﬁrst ten pitfalls are speciﬁcally related to managing the scenario proj-
+ect process (Schoemaker, 2005). These pitfalls are results of an inability 
+to understand the nuances related to facilitating scenario projects and the 
+administrative side of directing and steering scenario projects.
+• Failure to ensure top leadership support. Any organizational change 
+intervention must have leadership support in order to be successful. 
+Scenario planning is an executive-level activity, so if the executives are 
+not involved, forget it!
+• Not enough contribution from outside. The dangers of groupthink (too 
+much homogeneity in the thinking) are ever present with scenario 
+planning. Using outside sources—“remarkable people” or experts in a 
+variety of disciplines—pays signiﬁcant dividends (Wack, 1984). In  
+my experience, each project should use a minimum of two external 
+experts. The more participants involved in the project, the more 
+external experts should be sought.
+• Lack of balance between line and staff people. A basic feature of scenario 
+planning is that it must involve a cross section of the organization. 
+That includes levels and functions. If it doesn’t, it’s not scenario plan- 
+ning. Make sure each function in the organization is represented in  
+the conversation. 
+
+
+  
+M A N A G I N G S C E N A R I O  P R O J E C T S 
+223
+• Unrealistic expectations. This pitfall is avoided by clarifying expec-
+tations and documenting them in the scenario project proposal. 
+Expectations should be clariﬁed before any exploration or development 
+work is begun. 
+• Poorly deﬁned roles. The scenario project proposal also demands the 
+identiﬁcation of team members and clariﬁcation of roles. The impor- 
+tance of this issue has been discussed thoroughly but cannot be 
+overstated.
+• Failure to keep on track. Again, the scenario project proposal demands 
+the articulation of a strategic problem, issue, or question. Clearly 
+deﬁning this issue and consistently coming back to it are critical to 
+success. 
+• Too many scenarios. Do not use more than four scenarios. The system 
+presented in this book is designed to produce four useful scenarios. 
+Having more than four scenarios is overwhelming for decision makers 
+and complicates the project.
+• Not enough time allowed. The scenario project proposal calls for an 
+agreed-on time line. If decision makers expect to complete a scenario 
+project with two workshops in two weeks, explain the consequences 
+and conditions required for thinking strategically. If they insist, an 
+alternative is to suggest a different facilitator. It is important to be 
+ready to remove yourself from projects that are set up to fail. Short- 
+cutting with an unrealistic time frame is a sure path to disappointing 
+and low-utility outcomes. 
+• Failure to link to existing processes. The scenario system presented in 
+this book connects scenario development to the organization through 
+several workshops. Those workshops are speciﬁcally designed to link 
+the scenario project to various existing processes inside the organi- 
+zation, including organization culture, structure, current strategies, 
+human resources, design, and others. 
+• Failure to link to our everyday world. Scenarios have to be relevant for 
+the managers who will use them. Projects that fail to capture the 
+things that managers are concerned with in their everyday decision 
+making will have little impact. An effective way to overcome this 
+pitfall is to use information gathered in the interviews and make 
+sure it appears in the scenarios. The interview questions described 
+
+
+224 
+LEADING SCENARIO  P RO JE C T S
+in the scenario exploration phase are designed to draw out the 
+things managers worry about in their roles as organizational 
+leaders. If these items appear in the scenarios, relevance is increased 
+that will catch the users’ attention. 
+TEN CONTENT PITFALLS
+The following ten pitfalls are related to the content in the scenarios them-
+selves (Schoemaker, 2005). Again, solutions are suggested based on the sys-
+tem provided in this book.
+• Failure to take the long view. Scenario projects should look ahead ﬁve, 
+ten, or twenty years to stimulate creative thinking. The goal is to get 
+participants into a space that is truly unknown to them. Targeting 
+scenarios within a year or two is often too close to managers’ mind-
+sets, and their scenarios will often be extrapolations of their current 
+thinking and their own understanding of trends.
+• Failure to take the wide view. Scenarios have to expand beyond your 
+own industry. Given the complexity of today’s business environment, it 
+is difﬁcult to see how an honest look at any issue would fail to link it 
+to numerous other issues in a variety of industries. Thus, the scenario 
+exploration phase provides the tools for analyzing issues in their 
+context, revealing their interdependencies.
+• Too much attention to trends. Trends are often used as a substitute for 
+real thinking. Trends are not a viable shortcut to deep analysis and the 
+development of real knowledge. Trends are a part of the scenario 
+exploration phase and should be considered. If allowed to dominate, 
+however, trends can derail the development of understanding. 
+• Too homogeneous a range of views. Again, using “remarkable people,” or 
+experts outside the organization, from different industries can prevent 
+this pitfall. Diversity of thinking is important, and one signal that 
+views are too homogeneous is when meetings and workshops are 
+completed quickly, with minimal dialogue or challenge. This can be 
+an indicator of a very efﬁcient team of people who work well together, 
+but as the project leader, it may be a signal for you to bring in a 
+different perspective. 
+• Lack of internal logic. Scenarios are not compelling when they are not 
+based on facts and research. This is why “scenario light” projects, 
+
+
+  
+M A N A G I N G S C E N A R I O  P R O J E C T S 
+225
+based on concepts and ideas, without deep analysis, are so often 
+useless. 
+• Failure to look at deeper-level causes, failure to challenge mind-sets, and 
+failure to make the scenarios dynamic. These three scenario pitfalls are 
+attributable to the fact that there are no methods or systems available 
+for checking the utility of any given set of scenarios. This book pre- 
+sents a scenario quality checklist designed to promote deep analysis, 
+optimize the likelihood of changing mind-sets, and ensure dynamic, 
+compelling scenario stories. Using a checklist like this, or developing 
+your own, and asking the input of the team to make sure these items 
+are addressed will help you avoid these issues.
+• Irrelevance. Again, using information from interviews with managers 
+will immediately bring the scenarios to their doorstep. Obviously, 
+having people for whom the scenarios must be relevant involved in the 
+process is critical.
+• Failure to create a real breakthrough. This pitfall signals an overarching 
+problem with most scenario planning methods. What is a breakthrough? 
+Existing methods don’t push for a deﬁned purpose, goals, or expected 
+outcomes of the scenario project. So a breakthrough is a nebulous, 
+undeﬁned, and in most cases random event. True, there must be room 
+in the scenario project for things unplanned to emerge (Mintzberg, 
+Ahlstrand & Lampel, 2005). However, breakthroughs can also be 
+outcomes of deep, disciplined thinking about and critical analysis of 
+strategic issues. The system presented in this book is designed to 
+optimize scenario projects toward articulated purposes, expected 
+outcomes, and deep thinking.
+CONCLUSION
+Most of the pitfalls in scenario planning projects can be avoided by using the 
+scenario system presented in this book. The scenario project management 
+worksheet (Figure 10.1) is designed to make the scenario system immedi-
+ately applicable and to help translate the concepts presented in this book to 
+any organization. It will help plan, structure, and manage the phases of per-
+formance-based scenario planning, and it can be used as a guide throughout 
+the project for avoiding the common problems in scenario projects that have 
+been discussed. 
+
+
+226 
+LEADING SCENARIO  P RO JE C T S
+This chapter has presented key issues in managing scenario projects, 
+including the following: 
+• Spending time on the problem, issue, or question 
+• Recognizing the importance of the team
+• Spending time on analysis
+• Deﬁning important outcomes 
+• Putting your scenarios to use
+• Assessing your impact
+• Recognizing an evolving context
+The guidance provided to address these issues is largely a result of my own 
+experience in designing, managing, and facilitating scenario projects.
+This chapter has also presented the common pitfalls in scenario projects 
+according to Schoemaker (2005). These descriptions and accompanying so-
+lutions are intended to help you manage and facilitate your own scenario 
+projects and avoid some of the more common issues that come up. Tips 
+for optimizing scenario projects will help project facilitators avoid common 
+traps and barriers to generating successful, strategically insightful scenario 
+projects. Finally, this chapter has shared the scenario project management 
+worksheet, which will help you plan, structure, and facilitate a scenario 
+project. This worksheet makes the concepts from this book immediately 
+applicable in any organization.
+
+
+  
+M A N A G I N G S C E N A R I O  P R O J E C T S 
+227
+F I G U R E  10.1  The Scenario Project Worksheet
+SCENARIO PROJECT WORKSHEET
+This sheet is a general guide for planning and managing scenario projects and can 
+be used as an organizational guide and project management checklist. There is a 
+total of five phases to the Performance-Based Scenario System.
+Phase 1: Project Preparation
+Defined Problem, Question, or Issue:  __________________________________
+Stated Purpose of the Project:  ________________________________________
+Project Scope and Time Line:  ________________________________________
+Roles and People Assigned:  __________________________________________
+ Project Leader:  ___________________  Coordinator:  _________________
+ Remarkable People: ______________________________________________
+ Team Members:  ________________________________________________
+ Other:  ________________________________________________________
+Expected Outcomes of the Project:  ____________________________________
+Measurement Tools:  _______________________________________________
+Phase 1: Project Preparation Phase Pitfall Management 
+Yes 
+No
+ Is top leadership participating in the project? 
+ ____ ____
+ Are remarkable people recruited to participate in the project? 
+ ____ ____
+ Is there a balance between line and staff participants? 
+ ____ ____
+ Is the time line realistic given the expectations? 
+ ____ ____
+ Does the project link to existing processes? 
+ ____ ____
+ Will the project address fundamental issues in organization  
+  management? 
+ ____ ____
+Phase 2: Scenario Exploration
+A.  External Analysis: 
+ STEEP forces  
+(check those that 
+ Thinking hats  
+apply) 
+ Trends and forecasts 
+ 
+ Other: ____________________
+B. Internal Analysis: 
+ Interviews (list interview participants):
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ Analyze the business idea  
+ 
+ Analyze the theory of the business
+(continued)
+
+
+228 
+LEADING SCENARIO  P RO JE C T S
+F I G U R E  10.1  The Scenario Project Worksheet (continued)
+C. Analysis and Synthesis Tools Used: 
+ 
+ Questionnaires  
+ 
+ Observations 
+ 
+ Existing data: __________________
+ 
+ Swanson’s Performance Diagnosis Matrix
+ 
+ Rummler and Brache’s Nine Performance Variables
+ 
+ Other analysis and synthesis tools: 
+ 
+ _____________________________
+ 
+ _____________________________
+D.  Analysis is thorough and demonstrates our own          Yes  No 
+understanding of the problem or issue. 
+ ____  ____
+Phase 2: Scenario Exploration Phase Pitfall Management 
+Yes 
+No
+  Scenarios extend 5, 10, 15, or 20 years into the future? 
+ ____ ____
+  Other industries included in the analysis and scenarios? 
+ ____ ____
+  Trends are included but do not dominate? 
+ ____ ____
+Phase 3: Scenario Development
+A. Workshop Planning (Dates): 
+  Brainstorming  ________ 
+  Ranking by impact  _______ 
+  Ranking by relative uncertainty  _________
+B. Two Critical Uncertainties (High Impact + High Uncertainty) for the Scenario 
+Matrix:
+  1.  __________________________ 
+2.  ___________________________
+C. Draft Scenario Matrix:
+(continued)
+
+
+  
+M A N A G I N G S C E N A R I O  P R O J E C T S 
+229
+F I G U R E  10.1  The Scenario Project Worksheet (continued)
+D. Research Agenda (elements that require more data gathering and 
+investigation):
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+E. Draft Scenario Titles/Themes/Possibilities:
+ 
+ __________________  
+___________________ 
+ __________________
+ 
+ __________________  
+___________________ 
+ __________________
+ 
+ __________________  
+___________________ 
+ __________________
+F.  Plots: 
+Suggestions:   ____ Revolution  ____ Cycles       ____ Infinite Possibility  
+____ Lone Ranger  ____ My Generation
+ 
+Other:
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+G. Story Writing (name[s] of individual[s] to write each scenario):
+  1.  __________________________ 
+2.  ___________________________
+  3.  __________________________ 
+4. ____________________________
+H. Communication Strategy:
+ 
+ Workbook  
+ Podcasts
+ 
+ Website  
+ Presentations
+ 
+ Video  
+ Workshops
+ 
+ Activities: ______________________________________
+ 
+ Other: _________________________________________
+Phase 3: Scenario Development Phase Pitfall Management 
+Yes 
+No
+  Four scenarios (if other, check for novelty; avoid best/worst)? 
+ ____ ____
+  Scenarios have input from external experts? 
+ ____ ____
+  Scenarios are logical and well researched? 
+ ____ ____
+  Scenarios include deep analysis and are data driven? 
+ ____ ____
+Phase 4: Scenario Implementation
+A. Workshop Planning for Using the Scenarios (dates):  
+  Revisit the initial problem/question _________
+  Theory of the business _________
+  Business idea _________ 
+  Analyze current strategies _________
+  Developing signals _________ 
+  Experiential exercise _________
+(continued)
+
+
+230 
+LEADING SCENARIO  P RO JE C T S
+F I G U R E  10.1  The Scenario Project Worksheet (continued)
+B. Outcomes
+  • Key Strategies Useful in All Scenarios:
+  1.  __________________________ 
+2.  ___________________________
+  3.  __________________________ 
+4. ____________________________
+  • Signals:
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+ 
+ _____________________________  
+ _____________________________
+Phase 4: Scenario Implementation Phase Pitfall Management 
+Yes 
+No
+  Scenarios are interesting and relevant for managers? 
+ ____ ____
+  Scenario can create a real breakthrough? 
+ ____ ____
+Phase 5: Project Assessment Phase
+Quantitative
+Qualitative
+Satisfaction Results
+Participant
+Survey (10 items, strongly 
+agree to strongly disagree) 
+ 
+ 
+Interview questions: 
+Stakeholder
+Survey (10 items, strongly 
+agree to strongly disagree) 
+ 
+ 
+Interview questions: 
+Learning Results
+Knowledge
+Surveys: 
+1. _______________
+2. _______________
+3. _______________
+4. _______________
+5. _______________
+6. _______________
+Interview questions: 
+(continued)
+
+
+  
+M A N A G I N G S C E N A R I O  P R O J E C T S 
+231
+F I G U R E  10.1  The Scenario Project Worksheet (continued)
+Quantitative
+Qualitative
+Learning Results (continued)
+Expertise
+Observations of behaviors 
+where appropriate using 
+the Scenario Expertise 
+Audit (who will be 
+observed?)
+1. _______________
+2. _______________
+3. _______________
+4. _______________
+5. _______________
+6. _______________
+Interview questions: 
+Performance Results
+System
+Estimates of system 
+results based on the initial 
+purpose of the project 
+ 
+Interview questions: 
+Financial
+Performance Value 
+Performance Value – Cost 
+= Benefit
+Estimates of 
+discontinuities avoided
+Estimates of profits due to 
+strategic insights
+Interview questions: 
+
+
+This page intentionally left blank 
+
+
+ 233
+Human Perceptions  
+in the Scenario System
+Scenario planning is a social activity. It integrates learning, social interac-
+tion, dialogue, and human perceptions. These things come together in the 
+form of a recalibrated view of the organization and its situation if the project 
+has been successful. 
+Three critical barriers to optimal innovation and human creativity are 
+(1) perception, (2) a natural fear response, and (3) social intelligence (Berns, 
+2008). Decision makers are limited by a brain that requires approximately 
+forty watts—the amount needed to power a lightbulb (Berns, 2008). To 
+perform its many complex functions, the brain must be efﬁcient, and there-
+fore it draws on past experiences and any other easily accessible information 
+sources to make sense of its situation. Decision makers are limited by fear of 
+uncertainty and the public consequences of decisions with unfavorable re-
+sults. Many people become easily paralyzed by the prospect of being wrong. 
+Finally, optimal human innovation requires the ability to convince other 
+people that an idea has merit, and this requires social intelligence (Berns 
+2008). An analysis of highly innovative, creative thinkers revealed that 
+these people found ways to overcome such barriers. The results are pub-
+lished in Berns’s 2008 book Iconoclast. 
+This chapter examines these core barriers to optimal human innovation 
+and potential. More speciﬁcally, it explores the role of scenario projects in 
+overcoming these barriers. The barriers identiﬁed by Berns are intricately 
+linked to strategic decision making—for which scenario planning has been 
+positioned as a critical aid. This chapter uses examples from neurology re-
+search to make the case that scenario planning can address these barriers to 
+11

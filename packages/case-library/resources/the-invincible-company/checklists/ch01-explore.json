@@ -1,0 +1,32 @@
+{
+  "chapter": "ch01-explore",
+  "sourceFiles": { "en": "07-Explore.txt, 09-Explore-and-Exploit.txt, 06-Business-Model-Portfolio.txt" },
+  "concepts": [
+    { "name": "Portfolio Map", "definition": "A strategic tool to visualize and manage today's business models (Exploit) alongside future business models (Explore). Two halves: Explore Portfolio (Expected Return vs. Innovation Risk) and Exploit Portfolio (Return vs. Death & Disruption Risk). Invincible companies manage both simultaneously." },
+    { "name": "Explore Portfolio", "definition": "The collection of innovation projects that search for new business models, value propositions, and growth engines. Mapped on Expected Return vs. Innovation Risk. Purpose: search — turning ideas into validated, scalable business models." },
+    { "name": "Four Innovation Risks", "definition": "Desirability Risk (customers aren't interested), Viability Risk (can't make money), Feasibility Risk (can't build/deliver), Adaptability Risk (external factors unfavorable). Any one can kill a business idea. Testing reduces each risk with evidence." },
+    { "name": "Design-Test Loop", "definition": "Two iterative loops: Business Design (shaping ideas into business models with best-expected-return) and Testing (testing hypotheses to reduce risk). They feed each other: design a business model → test its riskiest assumptions → use learnings to redesign." },
+    { "name": "Search and Pivot Journey", "definition": "The path through the Explore portfolio: Discovery (understand customers/context) → Validation (prove interest and profit indications) → Acceleration (proven model at limited scale). Includes Reality Check (initial trajectory fails) and Change of Direction (new direction after pivot)." },
+    { "name": "Five Innovation Journey Myths", "definition": "(1) Finding the perfect idea is most important — reality: constant testing and adaptation matters more. (2) Evidence shows a clear path forward — reality: evidence is messy and contradictory. (3) Business cases predict success — reality: they can't in high uncertainty. (4) More resources = better results — reality: premature scaling kills innovation. (5) Innovation is a linear process — reality: it's iterative loops." }
+  ],
+  "arguments": [
+    { "claim": "Invincible companies don't choose between exploring and exploiting — they do both simultaneously, with different management systems for each", "evidence": "The Portfolio Map makes this visible: the Explore side requires a management system optimized for learning and iteration (high tolerance for failure, small investments, speed). The Exploit side requires a management system optimized for efficiency and execution (KPIs, scale, risk management). Mixing the two management systems destroys both." },
+    { "claim": "Most innovation efforts fail not because of bad ideas but because they are managed with Exploit metrics and processes", "evidence": "When an Explore project is measured by ROI, payback period, and quarterly milestones, it's being judged by standards that assume low uncertainty. High-uncertainty projects need different metrics: evidence gained per dollar spent, learning velocity, number of validated/invalidated hypotheses." }
+  ],
+  "terminology": [
+    { "term": "Expected Return", "definition": "How lucrative a business idea could be if successful. Measured by profitability, revenue potential, growth potential, margins — or social/environmental return for mission-driven organizations." },
+    { "term": "Innovation Risk", "definition": "The chance a business idea will fail. High when there's little evidence (just slides); decreases as evidence about desirability/feasibility/viability accumulates." },
+    { "term": "Explore-Exploit Continuum", "definition": "A spectrum from high-uncertainty exploration (search) to low-uncertainty exploitation (grow/optimize). Business models move from left to right as evidence accumulates and risk decreases." }
+  ],
+  "nuance": [
+    "The Explore portfolio is NOT R&D — R&D is about technology. Explore is about business model search. Many large companies have great R&D labs but terrible Explore portfolios.",
+    "Not every Explore project should survive. The goal of the Explore portfolio is to kill bad ideas cheap and fast, freeing resources for the ones with evidence."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["portfolio-map"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch02-exploit", "ch03-manage"]
+  }
+}

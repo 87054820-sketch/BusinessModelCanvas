@@ -1,0 +1,234 @@
+# 12 Initiating Your First Scenario Project
+
+242 
+LEADING SCENARIO  P RO JEC T S
+Essentially, the activities in the preparation and assessment phases are 
+aimed at connecting the scenario project to performance improvement. 
+Given a tendency to dismiss strategic initiatives as “too difﬁcult” or “impos-
+sible” to evaluate, responsible facilitators of scenario projects will ﬁnd a way 
+to show the value of what they do. The phases in this book provide a clear 
+approach to all the elements required for successful scenario planning.
+Frustration with planning methods that simply do not work are what 
+usually initiates a ﬁrst scenario project. Perhaps your organization is stuck 
+in the once-a-year planning retreat, or maybe your current approach to 
+planning takes last year’s ﬁnancial data, adds a percentage, and rolls out 
+new goals and growth targets, and that’s called strategy. Whatever the case, 
+the premise of this book is that the majority of planning methods cannot 
+account for uncertainty, and they are generally unsuitable for dealing with 
+the nature of today’s strategic dilemmas. So, if you have read this book, you 
+are probably ready to try something else.
+HOW TO GET STARTED
+Users of this book are likely to fall into one of two categories: (1) those 
+wanting to carry out a scenario project for the ﬁrst time or (2) those who 
+have tried scenarios before but were disappointed with the outcome. No 
+matter which category you are in, initiating your scenario project rests on 
+two key items: (1) ﬁnding out whether decision makers understand what 
+scenario planning is really about and (2) developing commitment and sup-
+port for the project. These two items lay the foundation for beginning the 
+scenario project proposal. 
+If decision makers are not familiar with scenario planning, there is 
+some educating to do. A short presentation can easily cover the beneﬁts of 
+scenario planning and what differentiates it from other approaches to plan-
+ning. The ﬁrst two chapters of this book provide the relevant material and 
+explain the beneﬁts and general process of scenario planning. Part of any 
+brieﬁng on scenario planning should emphasize involvement as critical to 
+the success of the project and that support on its own is not enough. 
+The second task is to develop support and commitment. It should be 
+clear that scenario projects are not individual-driven projects. They require 
+support and involvement from senior decision makers, colleagues, manag-
+ers, line workers, and outside experts. They require a substantial amount 
+
+
+  
+I N I T I A T I N G  Y O U R F I R S T S C E N A R I O  P R O J E C T  
+243
+of coordination and resources—the most important of which are people 
+who are ready to think deeply and critically about the organization and its 
+environment. 
+Sometimes the excitement about scenario projects can catch on like 
+wildﬁre. The prospect of time to reﬂect and think is appealing to many de-
+cision makers, and some will jump at the chance. Scenario projects are also 
+appealing because they blend creativity, analysis, thinking, and action. The 
+biggest struggle can involve economic conditions and time commitments. 
+These challenges can be overcome by presenting the potential beneﬁts of a 
+single strategic insight. Scenario projects may appear expensive when costs 
+are viewed alone, but once the ﬁnancial implications of ideas that lead to in-
+novative products or save the organization from a serious shift are realized, 
+these costs seem to shrink in the larger perspective. 
+Once you have developed an understanding of the scenario planning 
+system and support for the project has been cultivated, you can consider the 
+logistics of the project preparation phase. Starting with the steps described 
+in the project preparation phase will lead you through the critical elements 
+that go into the project proposal. The following phases (and their corre-
+sponding chapters in this book) lead you through the rest. 
+Again, the scenario project management worksheet (Figure 10.1) should 
+not be missed by anyone planning to take this book and its concepts into 
+action. The worksheet synthesizes the phases of the performance-based sce-
+nario system and translates the content of this book into clear activities.
+THE PERFORMANCE-BASED SCENARIO  
+SYSTEM IN REVIEW
+The performance-based scenario system is presented again in Figure 12.1, 
+complete with each of its phases and their major components.
+Following the systematic framework provided here will lead to successful 
+and innovative scenario project results. The scenario system was designed to 
+avoid the major pitfalls in the scenario literature and is a practical system. 
+Experts in planning will tell you that using a systematic approach will 
+relieve some of the headaches associated with vague, uncertain, complex 
+and ambiguous problems. Working through the preparation, exploration, 
+construction, implementation, and assessment phases connects the sce-
+nario project to organizational inputs and outputs. In particular, the project 
+
+
+244 
+LEADING SCENARIO  P RO JEC T S
+preparation and project assessment phases work directly with measures of 
+performance. 
+The preparation and exploration phases form the foundation of the 
+problem and its nuances. As a result, these phases provide the outputs on 
+which the rest of the scenario project is based. Therefore, shortcut or sloppy 
+work in the preparation and exploration phases can easily lead to scenarios 
+that have no utility. Examples of such projects are those that simply quan-
+tify different outcomes of obvious variables. For example, scenarios inside 
+Shell that simply showed oil prices going up, down, or remaining the same 
+were hardly insightful or innovative. That is because they are based on such 
+F I G U R E  12.1  The Performance-Based Scenario System
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+  
+I N I T I A T I N G  Y O U R F I R S T S C E N A R I O  P R O J E C T  
+245
+obvious information. Deep analysis reveals critical variables hiding under-
+neath the system, and it takes hard thinking and a lot of time to ﬁnd them. But 
+the rewards are seen in compelling scenarios that provoke strategic insights. 
+The scenario development phase presents materials found in other sce-
+nario publications. However, this book presents a case to illustrate each 
+phase and each step of the scenario system. Thus, examples and relevant 
+materials are provided along the way. The result is a clearer explanation 
+of the workshops and suggested activities that can be abstract and hard to 
+grasp otherwise. 
+The scenario implementation and project assessment phases are two 
+of the book’s unique contributions. Few sources on scenario planning sug-
+gest methods for using the scenarios to provoke strategic insights, and even 
+fewer provide examples. Scenarios fail to live up to expectations unless they 
+are used to examine and further analyze parts of the organization and, ul-
+timately, to take action. This book shows a clear path for putting scenarios 
+to use. In addition, it provides an assessment strategy that, when used, will 
+produce a complete picture of the scenario project’s impact. While not easy 
+work, these phases bring the scenario project out of the abstract and concep-
+tual realm, and put them into practice.
+CONCLUSION
+The goal of scenario planning in organizations is to avoid the crises asso-
+ciated with fundamental shifts in the organizational environment and to 
+take advantage of opportunities that may not be obvious. It means being 
+prepared for an uncertain future. Therefore, scenario planning is a system 
+designed to heighten the overall awareness of decision makers. The pro-
+cesses within the scenario system are designed to put decision makers in 
+touch with the realities of their industries and organizations. Following the 
+scenario system in this book gives them the “pulse” of the organization. In 
+the end, the purpose of scenarios is to help individuals and teams contribute 
+to the organization’s ability to outperform a volatile, uncertain, complex, 
+and ambiguous environment. This book demonstrates the utility of using 
+scenarios in organizations.
+Scenario work is challenging and should be very stimulating. Strate-
+gic problems or dilemmas are complex and ambiguous, with unknown 
+
+
+246 
+LEADING SCENARIO  P RO JEC T S
+solutions. These issues can become frustrating to work on without a sound 
+set of tools for analyzing and understanding them. This book provides a 
+system for tackling these difﬁcult issues and working through the phases in 
+an orderly manner so as to produce results.
+
+
+ 247
+References
+Ackoff, R. L. (1970). A concept of corporate planning. New York: Wiley.
+Ackoff, R. L. (1978). Creating the corporate future. New York: Wiley.
+Ackoff, R. L. (1981). The art of problem solving. New York: Wiley.
+Alexander, W., & Serfass, R. (1998). Creating and analyzing your organization’s 
+quality future. Quality Progress, 31(7), 31–36.
+Allee, V. (1997). The knowledge evolution: Expanding organizational intelligence. 
+Newton, MA: Focal Press.
+Amara, R., & Lipinski, A. J. (1983). Business planning for an uncertain future: Sce-
+narios and strategies. New York: Pergamon. 
+Argyris, C., & Schon, D. A. (1996). Organizational learning II. Theory, method, 
+and practice. 
+Bauden, R. (1998, March). The Leadership Revolution. Keynote address to AUSTAFE 
+Regional Conference, Ballarat, Victoria. 
+Bechtel, W. (1998). Representations and cognitive explanations: Assessing the dy-
+namicist’s challenge in cognitive science. Cognitive Science, 22(3), pp. 295–318.
+Berger, P. L., & Luckmann T. (1966). The social construction of reality: A treatise in 
+the sociology of knowledge. New York: Doubleday.
+Berns, G. (2008). Iconoclast: A neuroscientist reveals how to think differently. Cam-
+bridge, MA: Harvard Business School Press. 
+Bloom, M., & Menefee M. L. (1994). Scenario Planning and Contingency Plan-
+ning. Public Productivity & Management Review, 17(3), 223–230.
+Bohm, D. (1989). Quantum theory. London: Dover.
+Bohm, D. (2002). Wholeness and the implicate order. London: Routledge.
+Bohm, D. (2004). On dialogue. London: Routledge.
+Brauers, J. L., & Weber, M. (1988). A new method of scenario analysis for strategic 
+planning. Journal of Forecasting, 7(1), 31–47.
+Brehmer, B. (1990). Strategies in real-time, dynamic decision making. In R. Hog-
+arth (Ed.), Insights in decision making (pp. 262–291). Chicago: University of 
+Chicago Press.
+Brehmer, B. (1992). Dynamic decision making: Human control of complex sys-
+tems. Acta Psychological, 81, 211–241.
+Burt, G. (2006). Pre-determined elements in the business environment: Reﬂecting 
+on the legacy of Pierre Wack. Futures, 38(7), 830–840. 

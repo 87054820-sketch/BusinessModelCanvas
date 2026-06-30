@@ -1,0 +1,205 @@
+# The Structural Analysis of Industries
+
+Figure 1–1. The Five Competitive Forces that Determine Industry Proﬁtability
+The ﬁve forces determine industry proﬁtability because they inﬂuence
+the prices, costs, and required investment of ﬁrms in an industry—the
+elements of return on investment. Buyer power inﬂuences the prices that
+ﬁrms can charge, for example, as does the threat of substitution. The power
+of buyers can also inﬂuence cost and investment, because powerful buyers
+demand costly service. The bargaining power of suppliers determines the
+costs of raw materials and other inputs. The intensity of rivalry inﬂuences
+prices as well as the costs of competing in areas such as plant, product
+development, advertising, and sales force. The threat of entry places a limit
+on prices, and shapes the investment required to deter entrants.
+The strength of each of the ﬁve competitive forces is a function of
+industry structure, or the underlying economic and technical characteristics
+of an industry. Its important elements are shown in Figure 1–2.3 Industry
+structure is relatively stable, but can change over time as an industry
+evolves. Structural change shifts the overall and relative strength of the
+competitive forces, and can thus positively or negatively inﬂuence industry
+proﬁtability. The industry trends that are the most important for strategy are
+those that affect industry structure.
+
+
+Figure 1–2. Elements of Industry Structure
+
+
+If the ﬁve competitive forces and their structural determinants were
+solely a function of intrinsic industry characteristics, then competitive
+strategy would rest heavily on picking the right industry and understanding
+the ﬁve forces better than competitors. But while these are surely important
+tasks for any ﬁrm, and are the essence of competitive strategy in some
+industries, a ﬁrm is usually not a prisoner of its industry’s structure. Firms,
+through their strategies, can inﬂuence the ﬁve forces. If a ﬁrm can shape
+structure, it can fundamentally change an industry’s attractiveness for better
+or for worse. Many successful strategies have shifted the rules of
+competition in this way.
+Figure 1–2 highlights all the elements of industry structure that may
+drive competition in an industry. In any particular industry, not all of the
+ﬁve forces will be equally important and the particular structural factors that
+are important will differ. Every industry is unique and has its own unique
+structure. The ﬁve-forces framework allows a ﬁrm to see through the
+complexity and pinpoint those factors that are critical to competition in its
+industry, as well as to identify those strategic innovations that would most
+improve the industry’s—and its own—proﬁtability. The ﬁve-forces
+framework does not eliminate the need for creativity in ﬁnding new ways of
+competing in an industry. Instead, it directs managers’ creative energies
+toward those aspects of industry structure that are most important to long-
+run proﬁtability. The framework aims, in the process, to raise the odds of
+discovering a desirable strategic innovation.
+Strategies that change industry structure can be a double-edged sword,
+because a ﬁrm can destroy industry structure and proﬁtability as readily as
+it can improve it. A new product design that undercuts entry barriers or
+increases the volatility of rivalry, for example, may undermine the long-run
+proﬁtability of an industry, though the initiator may enjoy higher proﬁts
+temporarily. Or a sustained period of price cutting can undermine
+differentiation. In the tobacco industry, for example, generic cigarettes are a
+potentially serious threat to industry structure. Generics may enhance the
+price sensitivity of buyers, trigger price competition, and erode the high
+advertising barriers that have kept out new entrants.4 Joint ventures entered
+into by major aluminum producers to spread risk and lower capital cost may
+have similarly undermined industry structure. The majors invited a number
+of potentially dangerous new competitors into the industry and helped them
+
+
+overcome the signiﬁcant entry barriers to doing so. Joint ventures also can
+raise exit barriers because all the participants in a plant must agree before it
+can be closed down.
+Often ﬁrms make strategic choices without considering the long-term
+consequences for industry structure. They see a gain in their competitive
+position if a move is successful, but they fail to anticipate the consequences
+of competitive reaction. If imitation of a move by major competitors has the
+effect of wrecking industry structure, then everyone is worse off. Such
+industry “destroyers” are usually second-tier ﬁrms that are searching for
+ways to overcome major competitive disadvantages, ﬁrms that have
+encountered serious problems and are desperately seeking solutions, or
+“dumb” competitors that do not know their costs or have unrealistic
+assumptions about the future. In the tobacco industry, for example, the
+Liggett Group (a distant follower) has encouraged the trend toward
+generics.
+The ability of ﬁrms to shape industry structure places a particular burden
+on industry leaders. Leaders’ actions can have a disproportionate impact on
+structure, because of their size and inﬂuence over buyers, suppliers, and
+other competitors. At the same time, leaders’ large market shares guarantee
+that anything that changes overall industry structure will affect them as
+well. A leader, then, must constantly balance its own competitive position
+against the health of the industry as a whole. Often leaders are better off
+taking actions to improve or protect industry structure rather than seeking
+greater competitive advantage for themselves. Such industry leaders as
+Coca-Cola and Campbell’s Soup appear to have followed this principle.
+Industry Structure and Buyer Needs
+It has often been said that satisfying buyer needs is at the core of success
+in business endeavor. How does this relate to the concept of industry
+structural analysis? Satisfying buyer needs is indeed a prerequisite to the
+viability of an industry and the ﬁrms within it. Buyers must be willing to
+pay a price for a product that exceeds its cost of production, or an industry
+will not survive in the long run. Chapter 4 will describe in detail how a ﬁrm
+can differentiate itself by satisfying buyer needs better than its competitors.
+
+
+Satisfying buyer needs may be a prerequisite for industry proﬁtability,
+but in itself is not sufﬁcient. The crucial question in determining
+proﬁtability is whether ﬁrms can capture the value they create for buyers, or
+whether this value is competed away to others. Industry structure
+determines who captures the value. The threat of entry determines the
+likelihood that new ﬁrms will enter an industry and compete away the
+value, either passing it on to buyers in the form of lower prices or
+dissipating it by raising the costs of competing. The power of buyers
+determines the extent to which they retain most of the value created for
+themselves, leaving ﬁrms in an industry only modest returns. The threat of
+substitutes determines the extent to which some other product can meet the
+same buyer needs, and thus places a ceiling on the amount a buyer is
+willing to pay for an industry’s product. The power of suppliers determines
+the extent to which value created for buyers will be appropriated by
+suppliers rather than by ﬁrms in an industry. Finally, the intensity of rivalry
+acts similarly to the threat of entry. It determines the extent to which ﬁrms
+already in an industry will compete away the value they create for buyers
+among themselves, passing it on to buyers in lower prices or dissipating it
+in higher costs of competing.
+Industry structure, then, determines who keeps what proportion of the
+value a product creates for buyers. If an industry’s product does not create
+much value for its buyers, there is little value to be captured by ﬁrms
+regardless of the other elements of structure. If the product creates a lot of
+value, structure becomes crucial. In some industries such as automobiles
+and heavy trucks, ﬁrms create enormous value for their buyers but, on
+average, capture very little of it for themselves through proﬁts. In other
+industries such as bond rating services, medical equipment, and oil ﬁeld
+services and equipment, ﬁrms also create high value for their buyers but
+have historically captured a good proportion of it. In oil ﬁeld services and
+equipment, for example, many products can signiﬁcantly reduce the cost of
+drilling. Because industry structure has been favorable, many ﬁrms in the
+oil ﬁeld service and equipment sector have been able to retain a share of
+these savings in the form of high returns. Recently, however, the structural
+attractiveness of many industries in the oil ﬁeld services and equipment
+sector has eroded as a result of falling demand, new entrants, eroding
+product differentiation, and greater buyer price sensitivity. Despite the fact
+
+
+that products offered still create enormous value for the buyer, both ﬁrm and
+industry proﬁts have fallen signiﬁcantly.
+Industry Structure and the Supply/Demand Balance
+Another commonly held view about industry proﬁtability is that proﬁts
+are a function of the balance between supply and demand. If demand is
+greater than supply, this leads to high proﬁtability. Yet, the long-term
+supply/demand balance is strongly inﬂuenced by industry structure, as are
+the consequences of a supply/demand imbalance for proﬁtability. Hence,
+even though short-term ﬂuctuations in supply and demand can affect short-
+term proﬁtability, industry structure underlies long-term proﬁtability.
+Supply and demand change constantly, adjusting to each other. Industry
+structure determines how rapidly competitors add new supply. The height of
+entry barriers underpins the likelihood that new entrants will enter an
+industry and bid down prices. The intensity of rivalry plays a major role in
+determining whether existing ﬁrms will expand capacity aggressively or
+choose to maintain proﬁtability. Industry structure also determines how
+rapidly competitors will retire excess supply. Exit barriers keep ﬁrms from
+leaving an industry when there is too much capacity, and prolong periods of
+excess capacity. In oil tanker shipping, for example, the exit barriers are
+very high because of the specialization of assets. This has translated into
+short peaks and long troughs of prices. Thus industry structure shapes the
+supply/demand balance and the duration of imbalances.
+The consequences of an imbalance between supply and demand for
+industry proﬁtability also differs widely depending on industry structure. In
+some industries, a small amount of excess capacity triggers price wars and
+low proﬁtability. These are industries where there are structural pressures
+for intense rivalry or powerful buyers. In other industries, periods of excess
+capacity have relatively little impact on proﬁtability because of favorable
+structure. In oil tools, ball valves, and many other oil ﬁeld equipment
+products, for example, there has been intense price cutting during the recent
+sharp downturn. In drill bits, however, there has been relatively little
+discounting. Hughes Tool, Smith International, and Baker International are
+good competitors (see Chapter 6) operating in a favorable industry
+
+
+structure. Industry structure also determines the proﬁtability of excess
+demand. In a boom, for example, favorable structure allows ﬁrms to reap
+extraordinary proﬁts, while a poor structure restricts the ability to capitalize
+on it. The presence of powerful suppliers or the presence of substitutes, for
+example, can mean that the fruits of a boom pass to others. Thus industry
+structure is fundamental to both the speed of adjustment of supply to
+demand and the relationship between capacity utilization and proﬁtability.
+Generic Competitive Strategies
+The second central question in competitive strategy is a ﬁrm’s relative
+position within its industry. Positioning determines whether a ﬁrm’s
+proﬁtability is above or below the industry average. A ﬁrm that can position
+itself well may earn high rates of return even though industry structure is
+unfavorable and the average proﬁtability of the industry is therefore modest.
+The fundamental basis of above-average performance in the long run is
+sustainable competitive advantage.5 Though a ﬁrm can have a myriad of
+strengths and weaknesses vis-à-vis its competitors, there are two basic types
+of competitive advantage a ﬁrm can possess: low cost or differentiation. The
+signiﬁcance of any strength or weakness a ﬁrm possesses is ultimately a
+function of its impact on relative cost or differentiation. Cost advantage and
+differentiation in turn stem from industry structure. They result from a
+ﬁrm’s ability to cope with the ﬁve forces better than its rivals.
+The two basic types of competitive advantage combined with the scope
+of activities for which a ﬁrm seeks to achieve them lead to three generic
+strategies for achieving above-average performance in an industry: cost
+leadership, differentiation, and focus. The focus strategy has two variants,
+cost focus and differentiation focus. The generic strategies are shown in
+Figure 1–3.
+Each of the generic strategies involves a fundamentally different route to
+competitive advantage, combining a choice about the type of competitive
+advantage sought with the scope of the strategic target in which competitive
+advantage is to be achieved. The cost leadership and differentiation
+strategies seek competitive advantage in a broad range of industry
+segments, while focus strategies aim at cost advantage (cost focus) or

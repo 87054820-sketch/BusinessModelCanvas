@@ -1,0 +1,52 @@
+{
+  "chapter": "ch01-canvas",
+  "sourceFiles": { "en": "04-Canvas.txt", "zh": "06-画布.txt" },
+  "concepts": [
+    { "name": "Business Model Definition", "definition": "A business model describes the rationale of how an organization creates, delivers, and captures value." },
+    { "name": "Customer Segments (CS)", "definition": "Different groups of people or organizations an enterprise aims to reach and serve. Without profitable customers, no company can survive. Groups are segmented when they require distinct offers, are reached through different channels, require different relationships, have substantially different profitability, or are willing to pay for different aspects." },
+    { "name": "Value Propositions (VP)", "definition": "The bundle of products and services that create value for a specific Customer Segment. Solves a problem or satisfies a need. Elements: newness, performance, customization, getting the job done, design, brand/status, price, cost reduction, risk reduction, accessibility, convenience/usability." },
+    { "name": "Channels (CH)", "definition": "How a company communicates with and reaches its Customer Segments to deliver a Value Proposition. Five channel phases: awareness, evaluation, purchase, delivery, after-sales. Channels can be direct or indirect, owned or partner." },
+    { "name": "Customer Relationships (CR)", "definition": "Types of relationships a company establishes with specific Customer Segments. Categories: personal assistance, dedicated personal assistance, self-service, automated services, communities, co-creation. Driven by acquisition, retention, and upselling." },
+    { "name": "Revenue Streams (R$)", "definition": "Cash a company generates from each Customer Segment. Types: transaction revenues (one-time) and recurring revenues. Mechanisms: asset sale, usage fee, subscription fee, lending/renting/leasing, licensing, brokerage fee, advertising. Pricing: fixed (list price, product-feature dependent, customer-segment dependent, volume dependent) vs dynamic (negotiation, yield management, real-time market, auction)." },
+    { "name": "Key Resources (KR)", "definition": "Most important assets required to make a business model work. Categories: physical, intellectual (brands, patents, copyrights, data), human, financial." },
+    { "name": "Key Activities (KA)", "definition": "Most important things a company must do to operate successfully. Categories: production, problem solving, platform/network." },
+    { "name": "Key Partnerships (KP)", "definition": "Network of suppliers and partners. Four types: strategic alliances between non-competitors, coopetition (strategic partnerships between competitors), joint ventures, buyer-supplier relationships. Three motivations: optimization and economy of scale, reduction of risk and uncertainty, acquisition of particular resources and activities." },
+    { "name": "Cost Structure (C$)", "definition": "All costs incurred to operate a business model. Classes: cost-driven vs value-driven. Characteristics: fixed costs, variable costs, economies of scale, economies of scope." },
+    { "name": "Business Model Canvas as a Tool", "definition": "A shared language for describing, visualizing, assessing, and changing business models. The poster-sized canvas enables group understanding, discussion, creativity, and analysis. It's a practical tool, not a spreadsheet exercise." }
+  ],
+  "arguments": [
+    { "claim": "A shared visual language is necessary for business model innovation", "evidence": "Without a shared language, teams talk past each other using different definitions of 'business model.' The canvas creates a common framework where the nine blocks become the vocabulary. This shared understanding is the precondition for systematically challenging assumptions." },
+    { "claim": "The nine building blocks form an interconnected system, not nine isolated boxes", "evidence": "Each building block influences and constrains the others. Revenue Streams depend on Value Propositions delivered to specific Customer Segments through Channels, supported by Key Resources, Activities, and Partnerships, all of which drive the Cost Structure. Choices in one block cascade through the entire model." },
+    { "claim": "The Canvas enables visual thinking that reveals patterns invisible in spreadsheets", "evidence": "Post-it notes on a large wall canvas allow simultaneous viewing of the entire business model logic. This spatial arrangement reveals gaps, imbalances, and hidden dependencies between blocks that would be invisible in a linear document or spreadsheet." }
+  ],
+  "cases": [
+    { "name": "Apple iPod/iTunes", "context": "Apple didn't invent the MP3 player. It reinvented the business model around it.", "illustrates": "How all nine building blocks interact to create a system-level innovation, not just a product innovation. Apple combined hardware (iPod), software (iTunes), and a new Revenue Stream (99¢ songs) that solved a legal pain point for the music industry.", "lesson": "Business model innovation often matters more than product innovation. Apple's model was hard to copy because the blocks reinforced each other." },
+    { "name": "Skype", "context": "Free internet calling with a freemium model.", "illustrates": "How Key Resources (software, not telecom infrastructure), Key Activities (software development), and Cost Structure (near-zero marginal cost per call) enable disruptive Revenue Streams (freemium: most customers free, fraction pay for SkypeOut).", "lesson": "A radically different cost structure, enabled by a different key resource mix, can disrupt established industries." },
+    { "name": "Gillette", "context": "Razor-and-blades business model from the early 1900s.", "illustrates": "A Revenue Stream pattern (low-margin razor + high-margin recurring blade purchases) that is one of the earliest and best-known examples of a multi-stream business model. The free/cheap initial product locks in the Customer Relationship (habitual repurchase).", "lesson": "Recurring Revenue Streams built around consumables or ongoing contracts create the most valuable businesses. The locked-in Customer Relationship is the moat." }
+  ],
+  "logicChains": [
+    { "description": "Customer need → Value Proposition creation → Channel selection for delivery → Customer Relationship model → Revenue Stream design → Key Resources required → Key Activities to perform → Key Partnerships to leverage → Cost Structure incurred. This is the design logic, not the fill-in order.", "sourceHint": "The book emphasizes that the canvas works from right to left (customer-side first) for value-driven businesses, or left to right for cost-driven businesses. The real logic is iterative: start from Customer Segments, define Value Propositions, then work through the remaining blocks in any order that makes sense for the specific case." }
+  ],
+  "terminology": [
+    { "term": "Mass market", "definition": "No distinction between different Customer Segments. Value Proposition, Channels, and Relationships focus on one large group with similar needs." },
+    { "term": "Niche market", "definition": "Caters to specific, specialized Customer Segments. All blocks tailored to specific requirements." },
+    { "term": "Segmented", "definition": "Slightly different needs within a market. E.g., a bank's retail banking for private clients vs high-net-worth." },
+    { "term": "Diversified", "definition": "Serves two unrelated Customer Segments with very different needs. E.g., Amazon's retail and AWS cloud services." },
+    { "term": "Multi-sided platform", "definition": "Serves two or more interdependent Customer Segments. The platform's value depends on attracting all sides." },
+    { "term": "Economies of scale", "definition": "Cost advantages as output expands. Larger companies benefit from lower bulk purchase rates." },
+    { "term": "Economies of scope", "definition": "Cost advantages due to larger scope of operations. Same marketing or distribution activities may support multiple products." }
+  ],
+  "nuance": [
+    "The Canvas is not a shorter business plan — it's a shared hypothesis map that should change as evidence changes",
+    "Filling nine boxes is not enough — the important question is whether choices reinforce each other as a system",
+    "The Canvas works both as a descriptive tool (snapshot of today) and a design tool (what could be tomorrow)",
+    "The nine blocks are a useful abstraction, not an exhaustive theory of every business — some businesses may have additional relevant blocks"
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["business-model-canvas"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch02-patterns"]
+  }
+}

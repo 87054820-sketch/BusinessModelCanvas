@@ -1,0 +1,48 @@
+{
+  "slug": "porter-competitive-strategy",
+  "type": "book",
+  "title": {
+    "en": "Competitive Strategy: Techniques for Analyzing Industries and Competitors",
+    "zh": "《竞争战略：分析产业和竞争对手的技法》"
+  },
+  "summary": {
+    "en": "Michael Porter's 1980 landmark — the book that turned strategy from generalship into structural analysis. Introduces the Five Forces framework, three generic strategies (cost leadership, differentiation, focus), competitor analysis, and strategic groups. The core insight: industry structure determines profitability; a firm's position within that structure determines its relative performance.",
+    "zh": "Michael Porter 1980年的奠基之作——把战略从统兵之道变成结构化分析。提出五力模型、三种通用战略（成本领先、差异化、聚焦）、竞争对手分析和战略群组。核心洞见：产业结构决定盈利能力，企业在该结构中的位置决定其相对绩效。"
+  },
+  "recommendation": {
+    "en": "Every canvas and pattern in PinGarden ultimately connects to the competitive context. Porter's Five Forces gives you the structural lens to see *why* a business model works (or doesn't) before you model it. Read this alongside the `business-model-environment` canvas and the `porters-five-forces` framework — then layer on Christensen's disruption theory and Kim & Mauborgne's Blue Ocean to complete the strategy toolset.",
+    "zh": "PinGarden 里的每一张画布、每一种模式最终都要连接到竞争语境。五力分析给了你一个结构性透镜，让你在建模之前就能看清一个商业模式为什么行（或不行）。结合 `business-model-environment` 画布和 `porters-five-forces` 战略框架一起读——再叠上 Christensen 的颠覆理论和金伟灿的蓝海战略，战略工具链才完整。"
+  },
+  "authors": [
+    "Michael E. Porter"
+  ],
+  "publisher": "Free Press",
+  "year": 1980,
+  "tags": ["competitive-strategy", "five-forces", "industry-structure", "generic-strategies", "HBS"],
+  "relatedCanvasDefIds": [
+    "business-model-environment",
+    "business-model-canvas",
+    "porters-value-chain"
+  ],
+  "relatedCaseSlugs": [
+    "nucor-mini-mill-disruption",
+    "hdd-industry-disruption",
+    "swiss-private-banking"
+  ],
+  "relatedPatternSlugs": [
+    "multi-sided-platforms"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "porters-five-forces",
+    "porters-value-chain",
+    "pestel-analysis"
+  ],
+  "sources": [
+    {
+      "label": "Michael E. Porter · Competitive Strategy: Techniques for Analyzing Industries and Competitors · Free Press · 1980"
+    },
+    {
+      "label": "迈克尔·波特 ·《竞争战略》· 华夏出版社 / 中信出版社"
+    }
+  ]
+}

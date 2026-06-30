@@ -1,0 +1,1341 @@
+# Chapter 7: Industry Segmentation and Competitive Advantage
+
+Industry segmentation is necessary to address the central question of
+competitive scope within an industry, or what segments of an industry a
+ﬁrm should serve and how it should serve them. It is also the basis for the
+choice of focus strategies,1 since it exposes segments that are poorly served
+by broadly-targeted competitors in which focus can be both sustainable and
+proﬁtable. Broadly-targeted competitors must also understand industry
+segmentation, because it reveals areas where they are vulnerable to focusers
+and may suggest unattractive segments that are best left to competitors.
+Attention to segmentation from a strategic perspective is increasingly
+important because new developments in technology are altering some of the
+old rules of segmentation, with implications for both focusers and broadly-
+targeted ﬁrms.
+This chapter describes the way an industry can be segmented for
+strategic purposes, as well as some of the implications for creating and
+sustaining competitive advantage. I begin by describing the underlying
+factors that create industry segments and the observable indicators that can
+be used to deﬁne them in practice. These principles provide the basis for
+constructing and interpreting an industry segmentation matrix and for
+evaluating alternative ways of segmenting an industry. Having deﬁned how
+to segment an industry, I develop some important strategic implications that
+arise from segmentation. The conditions that make a segment structurally
+attractive are identiﬁed, as are the factors that lead to strategic
+interrelationships between segments. I then describe how a ﬁrm can choose
+the segments on which to base a focus strategy, and test its sustainability
+against competitors. The chapter concludes by showing how industry
+segmentation relates to industry deﬁnition.
+Bases for Industry Segmentation
+An industry is a market in which similar or closely related products are
+sold to buyers, as shown schematically in Figure 7–1.2 In some industries a
+single product variety is sold to all buyers. More typically, however, there
+are many existing or potential items in an industry’s product line,
+distinguished by such characteristics as size, performance, and functions.
+Ancillary services (repair, installation, applications engineering) are also in
+
+
+fact distinct products that can be and often are provided separately from
+physical products.3
+In some industries there is a single buyer (e.g., in some defense and
+space industries). More typically, though, there are many existing or
+potential buyers. These buyers are usually not all alike, but vary according
+to demographics, the characteristics of the industry in which they compete,
+location, and in other ways. Firms provide the link between products and
+buyers. Firms produce, sell, and deliver products through value chains
+(Chapters 2–4) in competition with each other. In some industries, there are
+independent distribution channels between ﬁrms and buyers involved in all
+or part of industry sales.
+The boundaries of an industry are frequently in ﬂux. Product lines are
+rarely static. Firms can create new product varieties that perform new
+functions, combine functions in new ways, or split off particular functions
+into separate products. Similarly, new buyers can become part of an
+industry, existing buyers can drop out, or buyers may alter their purchasing
+behavior. The current array of products and buyers reﬂects the products that
+ﬁrms have chosen to introduce and the buyers that have chosen to buy them,
+and not the products and buyers that an industry could potentially
+encompass.
+Figure 7–1. An Industry as an Array of Products and Buyers
+Structural Bases for Segmentation
+The reason that industries must be segmented for competitive strategy
+formulation is that the products, buyers, or both within an industry are
+dissimilar in ways that affect their intrinsic attractiveness or the way in
+
+
+which a ﬁrm gains competitive advantage in supplying them. Differences in
+structural attractiveness and in requirements for competitive advantage
+among an industry’s products and buyers create industry segments.4
+Segments grow out of both differences in buyer behavior as well as
+differences in the economics of supplying different products or buyers.
+Product and buyer differences that do not affect structure or competitive
+advantage (e.g., differences in the color of an otherwise identical product
+variety) may be important for production or marketing, but responding to
+them is not essential to competitive strategy.
+Structural Differences and Segmentation. Differences in products or
+buyers create industry segments if they alter one or more of the ﬁve
+competitive forces. Chapter 1 showed how the ﬁve competitive forces
+determine overall industry attractiveness. Structural analysis can also be
+applied to industry segments; the same ﬁve forces are at work. Economies
+of scale or supplier power, for example, can vary among product varieties
+even if they are sold to the same buyer. A given buyer may also possess
+differing propensities to substitute for different product varieties. Similarly,
+the power of buyers or the threat of substitution for the same product variety
+can differ from buyer to buyer. Figure 7–2 represents schematically how the
+ﬁve forces can vary by segment.5
+Figure 7–2. Differences in the Five Forces Among Segments
+The television set industry provides an example of how the ﬁve forces
+can differ by product variety independently of who the buyer is. TV sets can
+
+
+be segmented by conﬁguration (portables, table models, consoles and
+combination units). Small screen portables have become largely a
+commodity, while console TVs offer more opportunities for differentiation
+through styling, furniture, ﬁnish, and features. Moreover, console set
+production employs a different production process and different suppliers
+than the production of portables, and is less sensitive to economies of scale.
+These differences affect mobility barriers, supplier power, buyer power, and
+rivalry pressures. Similar differences which affect the ﬁve forces exist for
+other TV product varieties.
+Large turbine generators illustrate how differences among buyers may
+also often have structural implications, independent of the product variety
+they purchase. Investor-owned electric utilities can be distinguished from
+municipally-owned utilities from a structural viewpoint. Investor-owned
+utilities tend to be more technologically sophisticated and purchase through
+a negotiation process, while municipal utilities are less sophisticated and
+purchase through public bidding. This creates differences in price
+sensitivity and in the ability of a ﬁrm to create mobility barriers in selling to
+the two types of utilities such as brand identity, switching costs, and
+proprietary product differences.
+Both product varieties and buyers in an industry can potentially differ in
+all ﬁve of the competitive forces. In TV sets, for example, the distinction
+between console and portable sets has implications for mobility barriers,
+supplier power, and rivalry. In the turbine generator industry, investor-
+owned utilities and municipal utilities differ in their bargaining power, the
+rivalry among ﬁrms in serving them, and the opportunity to erect mobility
+barriers. Even supplier power can vary for the same product variety
+depending on the end buyer’s identity. In bicycles, for example, a bicycle
+enthusiast is much more aware of the brand name of key components such
+as hubs and derailleurs. This gives parts suppliers greater bargaining power
+in selling to ﬁrms targeting enthusiasts. They have far less power in selling
+to ﬁrms that sell bicycles to casual bicycle purchasers.
+Value Chain Differences and Segmentation. Differences in products and
+buyers also create segments if they affect the requirements for competitive
+advantage. The value chain can be used to diagnose this. Differences in
+product varieties or buyers lead to segments if:
+
+
+• they affect the drivers of cost or uniqueness in the ﬁrm’s value chain
+• they change the required conﬁguration of the ﬁrm’s value chain
+• they imply differences in the buyer’s value chain
+An example of a product difference that affects the value chain is the
+difference between standard and premium bicycles. Standard bikes are built
+with an automated manufacturing process, while premium bikes are
+frequently handcrafted. Many other value activities differ for the two as
+well, and the drivers of cost and uniqueness of value activities differ
+accordingly. Thus the sources of competitive advantage for standard and
+premium bikes are quite different, making them different segments. Another
+good example of how different product varieties can affect the value chain
+is draft beer compared to canned beer. While the beer is the same, many
+other value activities are not.
+An example of how differences in buyers can affect the ﬁrm’s value
+chain is building insulation. Since many costs in the insulation industry are
+driven by regional scale and by the location of buyers in relation to plants,
+buyers located in different geographic regions constitute important
+segments. This example shows not only how buyers can differ in purchasing
+behavior, but also how the behavior of cost in serving buyers can be quite
+different, even with the identical product.
+Value chains also differ among buyers. The way a hotel chain uses a TV
+set is different from how a household uses it, with strong implications for
+use criteria and signals of value (Chapter 4). Differences in use criteria and
+signals of value among buyers deﬁne segments, because they affect the
+requirement for competitive advantage. It is also important to recognize that
+the way different product varieties ﬁt into the same buyer’s value chain can
+differ—for example, a new part versus a replacement part. Product
+differences that affect the buyer’s use and signaling criteria deﬁne segments.
+The Array of Industry Segments. In theory, every individual buyer or
+product variety in an industry could be a segment, because the ﬁve forces or
+the value chain were somehow different for each. In TV sets, for example,
+every screen size or feature might potentially constitute a different segment.
+Similarly, in turbine generators, every utility has a somewhat different value
+chain. In practice, however, product varieties and buyers should be grouped
+
+
+into categories that reﬂect their important differences. Deciding how to
+group products and buyers to capture the most important differences is a
+key to good segmentation and a subject to which I will return later.
+An industry segment is always a combination of a product variety (or
+varieties) and some group of buyers who purchase it. In some cases, buyers
+do not have important structural differences and segments are deﬁned by
+product varieties, and vice versa. Usually, however, structural differences in
+both product varieties and buyers are present in industries, leading to
+segments consisting of a subset of products sold to a subset of buyers. Note
+that product varieties are often associated with particular types of buyers
+that purchase them, as was true in both the TV set and turbine generator
+industries.
+Industry segments must also be deﬁned independently of the scope of
+activities chosen by existing competitors. Segments stem from structural
+differences within an industry that competitors may or may not have
+perceived. A segment may be important even though no competitor is yet
+focusing on it. Industry segmentation should include potential product
+varieties and buyer groups as well as those that already exist. The tendency
+in segmentation is to focus on observed differences in product varieties and
+buyers. Yet there are typically product varieties that are feasible but not yet
+produced, and potential buyer groups that are not currently being served.
+Unobserved or potential segments can be the most important to identify
+because they offer opportunities for preemptive moves that create
+competitive advantage.
+Segmentation Variables
+To segment an industry, each discrete product variety (and potential
+variety) in an industry should be identiﬁed and examined for structural or
+value chain differences from others. Product varieties can be used directly
+as segmentation variables. Buyer segments can be identiﬁed in a similar
+fashion, by examining all the buyers in the industry and probing for
+structural or value chain differences among them. Since buyers vary in a
+multiplicity of ways, experience has shown that a good starting point in
+identifying buyer segments is to look for buyer differences along three
+
+
+broad and observable dimensions: buyer type, buyer geographic location,
+and distribution channel employed. Buyer type encompasses such things as
+the buyer’s size, industry, strategy, or demographics.
+While these three dimensions of buyers are often related, each has an
+independent effect. Location can signiﬁcantly affect purchasing behavior
+and the value chain required to serve a buyer even if all other buyer
+characteristics are equal. Similarly, in many industries the same buyer is
+reached through different channels, though the channel employed is often
+related to buyer type (and also to product variety). For example, buyers of
+electronic components purchase small, rush orders of chips from
+distributors and purchase larger orders directly from manufacturers.
+To segment an industry, then, four observable classes of segmentation
+variables are used either individually or in combination to capture
+differences among producers and buyers. In any given industry, any or all of
+these variables can deﬁne strategically relevant segments:
+•  Product variety. The discrete product varieties that are, or could be,
+produced.
+• Buyer type. The types of end buyers that purchase, or could purchase,
+the industry’s products.
+•  Channel (immediate buyer). The alternative distribution channels
+employed or potentially employed to reach end buyers.
+• Geographic buyer location. The geographic location of buyers, deﬁned
+by locality, region, country, or group of countries.6
+Identifying segmentation variables is perhaps the most creative part of
+segmenting an industry, because it involves conceiving of dimensions along
+which products and buyers differ that carry important structural or value
+chain implications. This requires a clear understanding of industry structure
+as well as the ﬁrm’s and the buyer’s value chain.
+PRODUCT SEGMENTS
+To identify product segments, all the physically distinct product types
+produced or potentially produced by an industry should be isolated,
+including ancillary services that could feasibly be offered separately from
+the product. Replacement parts are also a distinct product variety. Groups or
+
+
+bundles of products that can be sold together as a single package should
+also be identiﬁed as a product variety, in addition to the items currently sold
+separately.7 In the hospital management industry, for example, some ﬁrms
+sell a complete management package at a single price, while others sell
+individual services such as physician recruiting. The package should be
+viewed as a separate product variety for purposes of segmentation.
+Similarly, in industries where the product requires service, there are often
+three product varieties—the product sold separately, service sold separately,
+and the product and service sold together. In many industries, the list of
+product varieties that results from going through such a process is quite
+long.
+Product varieties in an industry can differ in many ways that translate
+into structural or value chain differences and hence segments. Some of the
+most typical product differences that are good proxies for structural or value
+chain differences that deﬁne segments are as follows, along with some
+illustrative examples of why they reﬂect segments:
+Physical size. Size is often a proxy for technological complexity or how
+a product is used, both of which affect the possibilities for differentiation.
+For example, different sized forklifts are typically used for different
+applications. Size may also imply differences in the value chain required to
+produce different varieties. Different sized varieties must often be
+manufactured on different machines, and require different components. For
+example, a miniature camera requires a different manufacturing process and
+higher precision components than a standard camera.
+Price level. The price level of product varieties is often associated with
+buyer price sensitivity. Price also serves as a good proxy in some industries
+for the design and nature of manufacturing or selling value activities.
+Features. Product varieties with different features may be associated with
+different levels of technological sophistication, different production
+processes, and different suppliers.
+Technology or design. Differences in technology (e.g., analog versus
+digital watches) or design (front opening versus side opening valves) among
+
+
+product varieties can involve different levels of technological complexity,
+different production processes, and other factors.
+Inputs employed. Sometimes product varieties differ signiﬁcantly in their
+use of raw materials or other inputs (e.g., plastic versus metal parts). Such
+differences often have implications for the manufacturing process or
+supplier bargaining power.
+Packaging. Varieties may differ in the way they are packaged and
+subsequently delivered, such as in bulk versus bagged sugar or draft versus
+canned beer. This translates into value chain differences in both the ﬁrm and
+buyers.
+Performance. Performance differences such as pressure rating, fuel
+economy, and accuracy are related to the technology and design of product
+varieties, 
+and 
+often 
+reﬂect 
+differences 
+in 
+R&D, 
+manufacturing
+sophistication, and testing.
+New versus aftermarket or replacement. Replacement products often go
+through entirely different downstream value chains than identical new
+products, and may be different in other ways such as buyer price sensitivity,
+switching costs, and required delivery time.
+Product versus ancillary services or equipment. The distinction between
+a product and ancillary products or services is often a key indicator of price
+sensitivity, differentiability, switching costs, and the value chain required to
+provide them.
+Bundled versus unbundled. Selling various products as a package
+(bundle) versus selling individual items (unbundle) can have implications
+for mobility barriers, the ability to differentiate, and the value chain
+required (see Chapter 12).
+The product differences that are most meaningful for industry
+segmentation are those that reﬂect the most important structural differences.
+There are often a number of different product descriptors that are related.
+Price level, technology, and performance may all be correlated, for
+
+
+example, and reﬂect the same basic differences among products. If each
+descriptor is measuring the same difference, the measure that most closely
+measures or proxies the structural or value chain differences should be
+chosen.
+More than one product dimension may deﬁne relevant segments, and all
+product differences that affect structure should be identiﬁed. The best
+method for segmenting an industry in which there are multiple
+segmentation variables will be discussed below. It is also important in
+product segmentation to include product varieties that are feasible though
+not currently being produced, such as service sold independently of the
+product or a product variety with a new mix of features. Good examples are
+cordless telephones and the “no name” food items now sold in grocery
+stores.
+BUYER SEGMENTS
+To identify buyer segments, all the different types of end buyers to which
+an industry sells must be examined for important structural or value chain
+differences. In most industries, there are several ways in which buyers can
+be classiﬁed. In consumer goods, for example, some key factors include
+age, income, household size, and decision maker. In industrial, commercial,
+or institutional products, buyer size, technological sophistication, and nature
+of use for the product are among the factors that distinguish buyers.
+There is an active debate among marketers about the best means of
+segmenting buyers.8 In fact, no one variable can ever capture all the buyer
+differences that might determine segments, particularly since differences
+that affect the cost of serving buyers (and the value chain for doing so) are
+often just as important for segmentation as differences in their purchasing
+behavior. Buyer segmentation should reﬂect the underlying structural and
+value chain differences among buyers rather than any single classiﬁcation
+scheme, because the goal of segmentation is to expose all these differences.
+Industrial and Commercial Buyers
+Common factors which serve as proxies for structural or value chain
+differences that distinguish buyer segments among industrial and
+
+
+commercial buyers are as follows, along with some illustrative examples of
+how they reﬂect segments:
+BUYER INDUSTRY. The buyer’s industry is often a proxy for how a product
+is used in the buyer’s value chain and what fraction of total purchases it
+represents. For example, candy bar manufacturers buy and use chocolate
+much differently than dairy product ﬁrms, who use less chocolate and have
+less need for product quality. Differences such as these can affect factors
+such as buyer price sensitivity, susceptibility to substitution, and the cost of
+supplying the buyer.
+BUYER’S STRATEGY (E.G., DIFFERENTIATION VERSUS COST LEADERSHIP). A
+buyer’s competitive strategy is often an important indicator of how a
+product is used and of price sensitivity, among other things. Strategy shapes
+the buyer’s value chain and the role a product plays in it. For example, a
+differentiated high-margin food processor is more concerned with
+ingredient quality and consistency than a private label food manufacturer
+that competes on cost.
+TECHNOLOGICAL SOPHISTICATION. A buyer’s technological sophistication
+can be an important indicator of its susceptibility to differentiation and
+resulting price sensitivity. Major oil companies tend to be more
+sophisticated buyers of oil ﬁeld services and equipment than independents,
+for example.
+OEM VERSUS USER. Original equipment manufacturers (OEMs) that
+incorporate a product into their product and sell it to other ﬁrms often have
+differing levels of price sensitivity and sophistication than ﬁrms that use the
+product themselves.
+VERTICAL INTEGRATION. Whether a buyer is partially integrated into the
+product or into ancillary or related products (e.g., in-house service) can
+greatly affect the buyer’s bargaining power and a ﬁrm’s ability to
+differentiate itself.
+DECISION-MAKING UNIT OR PURCHASING PROCESS. The particular individuals
+involved in the decision-making process can have a major impact on the
+
+
+sophistication of the purchase decision, the desired product attributes, and
+price sensitivity. Many industrial products are purchased in complex
+processes involving many individuals (see Chapter 4), and the procedures
+often vary markedly even among buyers in the same industry. Some users of
+electronic components purchase through trained and dedicated purchasing
+agents, for example, and are much more price-sensitive than other
+component buyers that employ engineers in purchasing or use purchasing
+agents also responsible for purchasing other items.
+SIZE. A buyer’s size can indicate its bargaining power, how it uses a
+product, the purchasing procedures employed, and the value chain with
+which it is best supplied. Sometimes order size is the relevant measure of
+size, while in other industries it may be total annual purchases. In still other
+cases company size may be the best determinant of bargaining power and
+purchasing procedures.
+OWNERSHIP. The ownership structure of a buyer ﬁrm may have a major
+impact on its motivations. Private companies may value different product
+characteristics than public companies, for example, while a division of a
+diversiﬁed ﬁrm may be guided by purchasing practices determined by the
+parent.
+FINANCIAL STRENGTH. A buyer’s proﬁtability and ﬁnancial resources can
+determine such things as its price sensitivity, need for credit, and frequency
+of purchase.
+ORDER PATTERN. Buyers can differ in their ordering pattern in ways that
+affect buyer bargaining power or the value chain required to supply them.
+Buyers that place regular and predictable orders, for example, may be much
+less costly to serve than those whose orders come at erratic intervals. Some
+buyers also typically have more seasonal or cyclical purchasing patterns
+than others, affecting a ﬁrm’s pattern of capacity utilization.
+Consumer Goods Buyers
+Typical proxies of buyer differences that deﬁne segments among
+consumer goods buyers are as follows, along with illustrative examples of
+
+
+how they reﬂect segments:
+DEMOGRAPHICS. Buyer demographics can be a proxy for the desired
+product attributes, price sensitivity, and other use and signaling criteria. For
+example, single persons have different needs and purchasing patterns for
+frozen entrees than families with children. Many aspects of demographics
+can be important, including family size, income, health, religion, sex,
+nationality, occupation, age, presence of working females, social class, etc.
+In banking, for example, wealth, annual income, and the education level of
+household members all determine what banking services are purchased and
+how price sensitive the buyer is.
+PSYCHOGRAPHICS OR LIFESTYLE. Hard-to-measure factors such as lifestyle
+or self-image can be important discriminators of purchasing behavior
+among consumers. Jetsetters may value a product differently than equally
+wealthy conservatives, for example.9
+LANGUAGE. Language also may deﬁne segments. In the record industry,
+for example, the Spanish speaking market worldwide is a relevant segment.
+DECISION-MAKING UNIT OR PURCHASING PROCESS. The decision-making
+process within the household can be important to desired product attributes
+and price sensitivity. One spouse may be more interested in performance
+features of a car, for example, while the other opts for comfort and
+reliability.
+PURCHASE OCCASION. Purchase occasion refers to such things as whether a
+product is purchased as a gift or for the buyer’s own use, and whether the
+product is to be part of a special event or used routinely. A buyer’s use and
+signaling criteria are often very different depending on the occasion, even if
+the buyer is the same person and the product is similar. Purchasers of pens
+for gifts, for example, will favor recognized brands names such as Cross
+that may carry less weight in purchasing for personal use.
+Several buyer dimensions may be important in deﬁning buyer segments.
+In oil ﬁeld equipment, for example, buyer size, technological sophistication,
+and ownership are all relevant variables. In frozen entrees, household size,
+
+
+age of family members, whether both parents are working, and income are
+all relevant variables. Potential buyers of a product not currently purchasing
+may also constitute segments. Buyer segmentation variables may also be
+related and the task is to select the variables that best reﬂect structural and
+value chain differences.
+CHANNEL SEGMENTS
+To identify segments based on channels, all existing and feasible
+channels through which a product can or does reach buyers should be
+identiﬁed. The channel employed usually has implications for how a ﬁrm
+conﬁgures its value chain and the vertical linkages (Chapter 2) that are
+present. The channel can also reﬂect factors which are important cost
+drivers such as order size, shipment size, and lead time. Large orders of
+electronic components are sold direct, for example, while small orders are
+sold through distributors (often to the same buyers). Channels can also
+differ greatly in bargaining power. Mass merchandisers such as Sears and
+K-Mart have a great deal more power than independent department stores.
+Typical differences in channels that deﬁne segments include:
+Direct versus distributors. Selling direct removes the need to gain access
+to channels and may imply a very different value chain than selling through
+distributors.
+Direct mail versus retail (or wholesale). Direct mail eliminates the
+potential bargaining power of the intermediate channel. It also usually
+carries implications for value activities such as the logistical system.
+Distributors versus brokers. Brokers typically do not hold inventory and
+may handle a different product line than distributors.
+Types of distributors or retailers. Products may be sold through retailers
+or distributors of very different types, which carry different assortments and
+have different strategies and purchasing processes.
+Exclusive versus nonexclusive outlets. Exclusivity may affect a channel’s
+bargaining power and also the activities performed by the channel versus
+
+
+those performed by the ﬁrm.
+There are often several types of channels in an industry. In copiers, for
+example, machines are sold direct as well as through copier distributors,
+ofﬁce products distributors, and retailers. Channel segmentation must also
+include any potential channel that might be feasible. For example, L’eggs
+resegmented the hosiery market by discovering a new channel, the direct
+sale of hosiery to supermarkets.
+GEOGRAPHIC SEGMENTS
+Geographic location can affect both buyer needs and the costs of serving
+buyers. Geographic location may be important directly as a cost driver and
+may also affect the value chain required to reach the buyer. Geographic
+location also frequently serves as a proxy for desired product attributes due
+to differences in weather, customs, government regulation, and the like. For
+example, commercial roofs in the southern United States require less
+insulation than in the North, while the rooﬁng membrane is more likely to
+be ballasted with gravel in the North than in the South because a roof
+designed to take a snow load can handle the extra weight.
+Typical geographic segments are based on variables such as the
+following:
+Localities, regions or countries. Geographic areas may have differences
+in such areas as transportation systems and regulations. Geographic buyer
+location also plays a key role in deﬁning scale economies. Depending on
+the geographic scope of scale economies (Chapter 3), different sized
+geographic areas may be the relevant segments. In the residential rooﬁng
+shingle industry, regions are the appropriate segments because high
+logistical costs limit the effective radius of a plant. In food distribution,
+metropolitan areas are the appropriate segments because of dense customer
+location and use of trucks for local delivery.
+Weather zones. Climatic conditions often have a strong impact on
+product needs or on the value chain required to serve an area.
+
+
+Country stage of development or other country groupings. Buyers
+located in developing countries may have very different needs than those in
+developed countries. In addition, packaging, logistical systems, marketing
+systems, and many other aspects of the value chain may differ signiﬁcantly.
+Similarly, other groupings of countries may expose similarities that deﬁne
+segments.
+The relevant measure of geographic location for segmentation purposes
+will differ from industry to industry. In most cases, the relevant location to
+use in segmentation is the location where a product is actually consumed or
+used. However, sometimes the location to which a product is shipped (e.g.,
+the warehouse) is more relevant. In other cases, the location of the buyer’s
+headquarters or primary dwelling emerges as the most important
+geographic segmentation variable, even though the buyer uses the product
+somewhere else.
+There can also be more than one meaningful geographic segmentation.
+For example, regions may be meaningful segments for determining cost
+position in industries where the costs of key value activities are driven by
+regional scale, whereas countries may be meaningful segments for
+determining desired product attributes and the ability to differentiate.
+Finding New Segments
+Some segmentation variables are readily apparent as a result of industry
+convention or competitor behavior. There are often established norms for
+dividing buyers or grouping geographic areas, based on historical data
+collected by trade associations or government agencies. In the oil industry,
+for example, the distinction between majors and independents is an
+accepted segmentation. Traditional categorization schemes for product
+varieties in an industry are also typical. Competitors may also deﬁne
+apparent segments through their choice of focus strategies.
+However, segmentation must go beyond conventional wisdom and
+accepted classiﬁcation schemes. Correct industry segmentation should
+reﬂect important differences for structure or the value chain among
+products, buyers, channels, or geography, whether or not they are
+
+
+recognized and used currently. The greatest opportunity for creating
+competitive advantage often comes from new ways of segmenting, because
+a ﬁrm can meet true buyer needs better than competitors or improve its
+relative cost position.
+In searching for potential new product segments, the following questions
+can be usefully considered:
+•  Are there other technologies or designs to perform the required
+functions in the buyer’s value chain?
+• Could additional functions be performed by an enhanced product?
+•  By reducing the number of functions the product performs (and
+possibly lowering the price), could the needs of some buyers be better
+served?
+• Are there different bundles (either narrower or broader) of products and
+services that could be feasibly sold as a package?
+Off-price retailers are an example of a new segmentation based on
+reducing the number of functions the product performs. Firms such as
+Loehmann’s eliminate costly services such as credit and returns while
+selling through spartan outlets without extensive dressing rooms or sales
+help. This stripped down value chain, without many traditional value
+activities, has created an entirely new segment. A similar process is
+occurring in the hotel/motel industry, where budget chains such as La
+Quinta are selling rooms without other services such as restaurants and
+bars, and other chains are combining services in new ways.
+The possibility of employing new channels also frequently exists. Firms
+can sell direct where the norm has been to use agents or distributors or
+employ new types of distributors or retailers. Timex did this in watches, and
+Avon did it in cosmetics. Any feasible channel is a potential segment.
+In identifying new geographic and buyer segments, creativity is often
+required in two areas. The ﬁrst is ﬁnding important new ways that
+geography or buyers can be divided to reﬂect structural or value chain
+differences. As discussed earlier, Stouffer’s discovered important
+differences in purchase criteria for frozen entrees by isolating single
+households and households with two working parents. The second area for
+creativity in geographic or buyer segmentation is in identifying potential
+
+
+new buyer types or geographic areas not presently being served by the
+industry. Sometimes reaching a new buyer type or geographic area will
+require product modiﬁcations, while in other cases it just requires that a
+ﬁrm gain a better understanding of its buyers’ needs and potential new
+applications for its product. For example, Arm & Hammer baking soda
+found a large market in deodorizing refrigerators, and Johnson & Johnson
+Baby Shampoo proved popular with adults. No product change was
+required for reaching either new buyer group.
+The Industry Segmentation Matrix
+Having identiﬁed the relevant segmentation variables with structural or
+value chain implications, the next task is to combine them into an overall
+segmentation of the industry. The task is usually difﬁcult because there are
+many relevant segmentation variables—in some industries there can be
+dozens. The challenge is to distill these variables into the most meaningful
+segments for developing competitive strategy.
+The ﬁrst step in the distillation process is to apply a signiﬁcance test to
+each segmentation variable. Only those variables with a truly signiﬁcant
+impact on the sources of competitive advantage or industry structure should
+be isolated for strategic analysis. Other less important, though still
+meaningful, segmentation variables that are identiﬁed can be used for ﬁne
+tuning in marketing or operations management.
+The basic tool for translating the remaining variables into a segmentation
+is the industry segmentation matrix. A simple segmentation matrix based on
+two segmentation variables is shown in Figure 7–3, illustrating the oil ﬁeld
+equipment industry in which the size of the buyer oil company and the stage
+of development of the country in which the buyer is headquartered have
+been identiﬁed as the two segmentation variables.
+The ﬁrst practical problem in constructing a segmentation matrix is
+choosing the number of categories of each segmentation variable to select.
+In Figure 7–3 I have chosen three discrete categories of buyer size and two
+categories of a country’s stage of development. In reality, buyer size is a
+continuous variable and country development goes through many stages.
+The way in which each segmentation variable is broken into discrete
+
+
+categories should reﬂect the categories that capture the most signiﬁcant
+structural or value chain differences, balanced against the practical need to
+limit the number of segments to a manageable number. Deciding on the best
+discrete categories for strategic purposes almost always requires judgment
+and is an iterative process.
+The cells in Figure 7–3 are the individual segments in the industry. It
+may well be that some of the cells are presently unoccupied. In addition, if
+there were no small independent oil companies based in developing
+countries and not likely ever to be any, this segment would be a null cell.
+For purposes of illustration, Figure 7–3 shows null cells involving both
+large and small independents. Segments can often be eliminated from
+consideration if they are null cells. However, it is important to remember
+that null cells should be infeasible combinations of the segmentation
+variables and not merely cells in which no ﬁrm is currently operating.
+Feasible cells where no ﬁrm is operating represent a potential opportunity
+and it is important that such segments be highlighted, not eliminated, in
+segmentation.
+Figure 7–3. A Simple Industry Segmentation Matrix for an Oil Field Equipment Industry
+Figure 7–3 portrays a case where there are two relevant segmentation
+variables. In practice, there may be many variables grouped under the four
+broad categories of product, buyer type, channel, and geography. Looked at
+closely, most industries are quite heterogeneous. With many signiﬁcant
+segmentation variables, the number of segmentation matrices that could be
+plotted multiplies rapidly. The problem, then, is to convert the segmentation
+variables into a small number of segmentation matrices that will be most
+illuminating for the strategy formulation process.
+
+
+Relationships Among Segmentation Variables
+To move from a number of segmentation variables to the most
+meaningful segmentation matrices, the ﬁrst step is to probe the relationships
+among the segmentation variables. The number of important segmentation
+variables can be reduced by collapsing segmentation variables together that
+are correlated, or which effectively measure the same thing. For example,
+geographic location may be associated with a particular buyer type (e.g.,
+automobile companies are located in the Midwest), or buyer type may be
+closely related to channel (small rooﬁng contractors are all served through
+distributors). Constructing a segmentation matrix with correlated
+segmentation variables will produce a matrix in which many cells are null.
+Segmentation variables that are highly correlated can be combined,
+because one variable is a surrogate for the effect of the other. In less
+extreme cases, the correlation among segmentation variables is partial, but
+allows a signiﬁcant reduction in the number of possible segments because
+many cells in the matrix are null. It is important to identify all the
+relationships among the segmentation variables and use this to combine
+variables together and identify null cells.
+It is also important to understand why variables are related, because this
+will often have important ramiﬁcations. If one variable is not a good
+surrogate for another but rather a reﬂection of current ﬁrm behavior or
+happenstance, combining variables is a mistake. It will obscure unoccupied
+segments that may represent an unexploited opportunity. For example, if
+small rooﬁng contractors were served through distributors not for economic
+reasons but for historical reasons, then eliminating direct sale to small
+contractors as a segment would be a mistake. Telemarketing or remote order
+entry by salespersons with portable computer terminals might make the
+segment feasible though it had not been previously.
+Combining Segmentation Matrices
+The signiﬁcant and independent segmentation variables that remain after
+the process described above represent the potential axes for industry
+segmentation matrices. Where there are more than two segmentation
+
+
+variables, the industry segmentation matrix will no longer ﬁt on a two-
+dimensional page. One way of proceeding is to construct a number of
+different segmentation matrices for each pair of variables. Each of these
+matrices can then be analyzed for its strategic implications. This approach is
+not fully satisfactory, however, because meaningful segments may be the
+result of combining more than two segmentation variables and may be
+overlooked.
+To deal with more than two segmentation variables, it is usually useful to
+create combined segmentation matrices. The process is illustrated in Figure
+7–4. In oil ﬁeld equipment there are at least two other relevant buyer
+segmentation variables besides buyer type and geographic buyer location:
+the technological sophistication of the oil company and its ownership. In
+Figure 7–4, I have plotted the four variables in pairs and then combined the
+two segmentations together after eliminating null cells.
+The process of combining matrices not only reduces the number of
+segments by eliminating some null cells, but also exposes correlations
+among variables that may have been missed. In Figure 7–4, I have noted the
+null cells representing infeasible combinations. Combining matrices is
+usually best done by combining all segmentation variables within a
+category ﬁrst. In Figure 7–4, for example, I have combined all the buyer
+segmentation variables together.
+After combining segmentation variables of the same broad category, one
+proceeds to combine variables in different categories. In doing so, it is
+usually best to create a segmentation matrix in which one axis reﬂects the
+combined product segmentation variables and the other axis combines all
+the buyer-related variables (buyer type, channel, geography). Where the
+number of segmentation variables is manageable, it is possible using this
+procedure to construct one two-dimensional industry segmentation matrix.
+This matrix may be quite large, but has the advantage of displaying the
+entire industry in a way that facilitates strategic analysis. Figure 7–5 shows
+such a matrix for oil ﬁeld equipment, after adding to the segmentation two
+product segmentation variables—premium versus standard quality products,
+and products with ratings for deep versus shallow drilling.
+
+
+Figure 7–4. Combined Segmentation Matrix for an Oil Field Equipment Industry
+
+
+Figure 7–5. Illustrative Industry Segmentation Matrix for an Oil Field Equipment Industry
+
+
+Sometimes the number of relevant segmentation variables and resulting
+segments is so great as to make a single matrix unwieldy. The presence of a
+very large overall segmentation matrix should prompt the reexamination of
+the segmentation variables and the discrete categories of each to ensure that
+the differences are truly signiﬁcant. Where this is the case, it may be
+desirable to use two or three segmentation matrices in subsequent analysis
+to avoid missing important strategic implications.
+The industry segmentation matrix should contain potential segments and
+not just segments that are currently occupied. Potential segments may imply
+entirely new segmentation variables (e.g., channel is added because there is
+the possibility that some direct sales may be possible in the future instead of
+handling all sales through distributors) or new discrete categories of existing
+variables (e.g., a new performance rating for an alloy).
+A segmentation matrix is an analytical tool, not an end in itself. The
+analyst should start with the longest list of segmentation variables to avoid
+overlooking possibilities. Only over the course of the analysis are variables
+combined or eliminated and the working segmentation matrix reﬁned. The
+whole process usually involves trying a number of different segmentation
+schemes in which the product and buyer differences that are most important
+for industry structure are gradually exposed.
+A segmentation matrix should be tested by examining the strategies of
+competitors. If the scope of competitors’ activities is plotted on the matrix,
+new segments or segmentation variables may be exposed. Conversely,
+competitors’ activities may draw attention to segments that must inevitably
+be served together. I will have more to say about this below when
+interrelationships among segments are discussed. Figure 7–6 summarizes
+the steps required in industry segmentation.
+
+
+Figure 7–6. The Industry Segmentation Process
+Industry Segmentation and Competitive Strategy
+Industry segments differ in their attractiveness and the sources of
+competitive advantage for competing in them. The key strategic questions
+that arise out of segmentation are:
+• where in the industry a ﬁrm should compete (segment scope)
+• how its strategy should reﬂect this segmentation
+
+
+A ﬁrm can adopt a broadly-targeted strategy that addresses many
+segments, or exclusively address a small number of segments in a focus
+strategy. A broadly-targeted ﬁrm must also be aware of the vulnerabilities it
+faces because segments have structural differences, just as a focused ﬁrm
+must recognize and deal with the threat of broadly-targeted ﬁrms competing
+in its segment or segments together with others. Segmentation is also
+dynamic and must change to reﬂect structural changes.
+The Attractiveness of a Segment
+The ﬁrst issue in deciding where to compete in an industry is the
+attractiveness of the various segments. The attractiveness of a segment is a
+function of its structural attractiveness, its size and growth, and the match
+between a ﬁrm’s capabilities and the segment’s needs.
+STRUCTURAL ATTRACTIVENESS
+The structural attractiveness of a segment is a function of the strength of
+the ﬁve competitive forces at the segment level. The analysis of the ﬁve
+forces at the segment level is somewhat different than at the industry level.
+In a segment, potential entrants include ﬁrms serving other segments, as
+well as ﬁrms not presently in the industry. Substitutes for the product
+variety in a segment are often other product varieties in the industry, as well
+as products produced by other industries. Rivalry in a segment involves both
+ﬁrms focusing exclusively on the segment and ﬁrms that serve other
+segments well. Buyer and supplier power tend to be more segment-speciﬁc,
+but may well be inﬂuenced by buyer purchases in other segments or
+supplier sales to other segments. Thus the structural analysis of a segment is
+usually inﬂuenced heavily by conditions in other segments, more so than
+the structural analysis of an industry is affected by other industries.
+The segments in an industry will often differ widely in structural
+attractiveness. In large turbine generators, for example, the segment
+consisting of large-capacity generators sold to large, privately-owned
+utilities is structurally attractive. Large-capacity generators are very
+sophisticated technologically and the scale and learning curve barriers to
+developing and producing them are high. Large units also offer many more
+
+
+opportunities for differentiation than smaller units. Greater thermal
+efﬁciency of large units creates lower costs of use for buyers, reducing
+buyer price sensitivity. Large utilities also tend to be more technologically
+sophisticated buyers and appreciate more features, enhancing competitors’
+ability to differentiate themselves. Large utilities also command the
+ﬁnancial resources to be less price sensitive. Finally, the selling process to
+private utilities involves secret negotiations rather than public bidding in
+which the lowest qualiﬁed bid must be selected.
+Analyzing the attractiveness of each segment is an important ﬁrst step in
+deciding where to compete. As a test of the analysis, it is often quite
+illuminating to compute a ﬁrm’s proﬁtability in the various segments in
+which it competes and to compare this to both the structural analysis and
+any industry proﬁtability data by segment that are available. Focused
+competitors may provide data on the proﬁtability of the segments they
+occupy, for example. Differences in proﬁtability by segment can be truly
+striking. Existing segment proﬁtability is not necessarily an indication of
+potential proﬁtability, however, because a ﬁrm may not be optimizing its
+strategy for each segment or, for that matter, for any segment.
+SEGMENT SIZE AND GROWTH
+Segments will frequently differ in their absolute size and growth rate.
+Size and growth will be important in their own right to the choice of where
+to compete. Size and growth also have an impact on structural
+attractiveness. The expected growth rate of each segment is important to
+rivalry and to the threat of entry, while size may affect the attractiveness of
+a segment to large competitors. Sometimes ﬁrms can sustain a position in
+smaller segments because large ﬁrms are not interested in them.
+Determining the size and expected growth of segments is typically not
+easy. Data are hardly ever collected in ways that exactly match meaningful
+segment boundaries, especially segments determined by demand and cost
+considerations rather than industry convention. Hence a ﬁrm may need to
+invest in special data collection or market research to produce estimates of
+size and growth by segment.
+FIRM POSITION VIS-À-VIS A SEGMENT
+
+
+A ﬁrm’s resources and skills, reﬂected in its value chain, will usually be
+better suited to some segments than others, inﬂuencing the attractiveness of
+a segment for a particular ﬁrm. Each segment will have somewhat different
+requirements for competitive advantage that are highlighted in constructing
+the segmentation matrix. The tools described in Chapters 3 and 4 can be
+used to determine a ﬁrm’s relative position for competing in various
+segments and the possibilities for changing it.
+Segment Interrelationships
+Segments are often related in ways that have an important effect on the
+segments in which a ﬁrm wants to compete. Segments are related where
+activities in the value chain can be shared in competing in them—I call such
+opportunities 
+segment 
+interrelationships. 
+There 
+are 
+often 
+many
+opportunities to share value activities among segments. For example, the
+same sales force can sell to different buyer types, or the same
+manufacturing facilities can produce different product varieties.
+Figures 7–7 and 7–8 illustrate a typical situation where interrelated value
+chains serve two segments. Strongly related segments are those where the
+shared value activities represent a signiﬁcant fraction of total cost or have
+an important impact on differentiation. Segment interrelationships are
+analogous to interrelationships among business units competing in related
+industries. Segment interrelationships are within an industry, however,
+while interrelationships among business units are between industries.10
+Similarly, segment interrelationships are analogous to interrelationships
+involved in competing in different geographic areas.
+The analysis of interrelationships is treated in detail in Chapter 9, where
+I focus on interrelationships among business units. The same concepts
+apply here, and I will summarize them brieﬂy. Interrelationships among
+segments are strategically important where the beneﬁts of sharing value
+activities exceed the cost of sharing. Sharing value activities leads to the
+greatest beneﬁt if the cost of a value activity is subject to signiﬁcant
+economies of scale or learning, or sharing allows a ﬁrm to improve the
+pattern of capacity utilization of the value activity. Economies of scale or
+learning in a value activity imply that sharing across segments may yield a
+
+
+cost advantage relative to single-segment competitors. Sharing activities
+among segments is also beneﬁcial where it increases differentiation in the
+value activity or lowers the cost of differentiation. Sharing a value activity
+is most important to differentiation where the value activity has a signiﬁcant
+impact on differentiation and sharing allows a signiﬁcant improvement in
+uniqueness or a signiﬁcant reduction in the cost of providing it. The ﬁrm
+with a shared service organization across segments, for example, will gain
+an advantage over the single segment competitor if service is vital to
+differentiation and sharing lowers the cost of hiring better service personnel.
+Sharing a brand name across segments is also often a source of
+differentiation.
+
+
+Figure 7–7. Interrelated Value Chains for Different Segments
+The beneﬁts of interrelationships among segments are offset by costs of
+coordination, compromise, and inﬂexibility in jointly serving segments with
+shared activities. Coordination costs simply reﬂect the greater complexity of
+operating in multiple segments with shared value activities. Compromise
+costs occur when the value chain designed to serve one segment is not
+optimal in serving another segment, and serving both undermines a ﬁrm’s
+ability to serve either. For example, the brand name, advertising, and image
+appropriate to a premium product may be inconsistent with the needs of a
+
+
+low-end product variety or vice versa. Here a ﬁrm has to create and
+advertise two separate brand names if it wants to operate in both segments.
+K. Hattori, for example, uses the Seiko name for higher-priced watches, and
+the Pulsar name for medium-priced watches. Even then, retailers often tell
+customers that a Pulsar is really a Seiko.
+
+
+Figure 7–8. Segment Interrelationships Displayed on the Value Chain
+
+
+A less extreme form of compromise cost is where the optimal value
+chain for serving one segment is somewhat different from the optimal value
+chain for serving another, but the same chain will serve both at some
+penalty in cost or differentiation. For example, a sales force selling to two
+buyer segments may not be as effective as a sales force specializing in one,
+or a manufacturing process with the ﬂexibility to produce two product
+varieties may not be as efﬁcient as one that is designed to produce one.
+Segment spillover is a form of compromise that occurs when a ﬁrm tries
+to serve multiple segments. Buyers in one segment may demand the same
+terms as buyers in another. For example, the prices charged in one buyer
+segment may spill over to other segments because buyers demand equal
+treatment, a problem a single segment competitor does not have. Because
+the bases for segmentation include differences in the optimal value chain,
+the need to compromise in jointly serving segments is quite prevalent.
+The need to compromise in jointly serving segments can partially or
+completely nullify the ability of a ﬁrm to gain competitive advantage from
+sharing value activities among segments. The ﬁrm is thus forced to trade the
+cost of creating parallel value activities to serve different segments (e.g., a
+separate production process or a different brand name) against the cost of
+compromise. In extreme cases, the compromise required to serve multiple
+segments goes beyond nullifying the advantages of sharing value activities
+and creates disadvantages. Because of major inconsistencies in such areas
+as brand image or production process, for example, competing in one
+segment can make it very difﬁcult to operate in another segment even with a
+completely separate value chain.
+The ﬁnal cost of sharing activities among segments is the cost of
+inﬂexibility. Sharing value activities limits the ﬂexibility of modifying
+strategies in the different segments, and may create exit barriers in leaving a
+segment. The cost of inﬂexibility, as well as the other costs of sharing, are
+discussed extensively in Chapter 9.
+The net competitive advantage of competing in multiple segments versus
+focusing on one or a few is a function of the balance between the
+advantages of sharing value activities and the costs. In most industries the
+pattern of segment interrelationships is not symmetric. Some pairs of
+segments have stronger interrelationships than others. A ﬁrm may also be
+able to share some value activities across one group of segments and
+
+
+another group of value activities across another, perhaps overlapping, group
+of segments.
+As a result of the pattern of segment interrelationships, ﬁrms often
+cluster in the group of segments they serve. In copiers, for example, Xerox,
+Kodak, and IBM have traditionally competed in high-volume copiers, while
+Ricoh, Savin, Canon, Minolta, and several others have served the low-
+volume convenience copiers. High-volume copiers are characterized by low
+unit manufacturing volumes, direct sales forces, and different technological
+issues than low-volume machines, which are mass-produced and sold
+through distributors. Only through having what amounts to a separate
+company (Fuji Xerox) has Xerox spanned the whole product range, while
+Canon has had to broaden its line upward painstakingly through major
+investments in the new value activities needed to compete in the high end.
+This example illustrates the point that the greater the cost of sharing
+activities among segments, the more the broadly-targeted ﬁrm is required to
+create essentially separate value chains if it is to be successful. Yet separate
+value chains negate the beneﬁts of broad targeting.
+A good way to test a ﬁrm’s understanding of interrelationships among
+segments is to plot competitors on the segmentation matrix (see Figure 7–
+9). If all competitors in one segment also compete in another, chances are
+good that strong interrelationships are present. By looking at the pattern of
+competitors, 
+one 
+can 
+often 
+gain 
+insight 
+into 
+the 
+pattern 
+of
+interrelationships.11 However, competitors may well have failed to
+recognize or exploit all segment interrelationships.
+
+
+Figure 7–9. Competitor Positions on the Segmentation Matrix
+Interrelationships among segments may suggest further collapsing of the
+industry segmentation matrix. Segments with very strong interrelationships
+can be combined if a ﬁrm cannot logically serve one without serving the
+other. Once a ﬁrm has entered one such segment the barriers to entering the
+adjacent segment are low. By examining interrelationships, therefore, an
+industry segmentation matrix may be simpliﬁed for strategic purposes.
+Segment Interrelationships and Broadly-Targeted Strategies
+Interrelationships among segments provide the strategic logic for
+broadly-targeted strategies that encompass multiple segments if they lead to
+a net competitive advantage. Strong interrelationships among segments
+deﬁne the cluster of segments a ﬁrm should serve. Strong interrelationships
+will also deﬁne the logical paths of mobility of ﬁrms in the industry from
+one segment to another. A ﬁrm competing in one segment will be most
+likely to enter other segments where there are strong interrelationships.
+The 
+broadly-targeted 
+competitor 
+bets 
+that 
+the 
+gains 
+from
+interrelationships among segments outweigh the costs of sharing, and
+designs its strategy to strengthen the interrelationships and minimize the
+coordination and compromise costs. Developments in manufacturing
+technology are working today to lower the cost of compromise in serving
+different product segments because of enhanced ﬂexibility to produce
+different varieties in the same facility. These or other developments that
+increase the ﬂexibility of value activities without a cost or differentiation
+penalty will work toward the beneﬁt of broadly-targeted competitors.
+A broadly-targeted competitor should usually not serve all industry
+segments, however, because the beneﬁts of sharing value activities are
+nearly always outweighed in some segments by the cost of compromise.
+Serving all segments is also often not desirable because all segments are not
+structurally attractive. A broadly-targeted ﬁrm may have to serve some
+unattractive segments, however, because they contribute to the overall cost
+or differentiation of shared value activities, or to defending its position in
+structurally attractive segments. As will be discussed further in Chapter 14,
+occupying some unattractive segments may prevent a competitor from
+
+
+establishing beachheads in those segments from which it can build on
+interrelationships into the ﬁrm’s segments. The gap left by U.S. automobile
+ﬁrms in less proﬁtable small cars, for example, seems to have provided the
+Japanese automakers with the opportunity to enter the U.S. market.
+The Choice of Focus
+Focus strategies rest on differences among segments, either differences in
+the ﬁrm’s optimal value chain or differences in the buyer value chain that
+lead to differing purchase criteria. The existence of costs of coordination,
+compromise, or inﬂexibility in serving multiple segments is the strategic
+underpinning of sustainable focus strategies. By optimizing its value chain
+for only one or a few segments, the focuser achieves cost leadership or
+differentiation in its segment or segments compared to more broadly-
+targeted ﬁrms that must compromise. Focus strategies involve the entire
+value chain and not just marketing activities, as in market segmentation.
+Focus strategies can encompass more than one segment and encompass
+several segments with strong interrelationships. However, the ability of a
+ﬁrm to optimize for any segment is generally diminished by broadening the
+target. Note that a ﬁrm can focus within an industry at the same time as it
+achieves interrelationships with business units competing in other industries
+that do not force it to compromise in serving the target segments. The
+choice of competitive scope involves simultaneously understanding
+interrelationships at both levels (see Chapter 15).
+Firms can choose different groups of segments on which to focus, which
+may or may not overlap. Figure 7–10 illustrates a case where a number of
+ﬁrms are supplying information products to ﬁnancial services ﬁrms.
+Company A has adopted a product-based focus strategy of supplying one
+product variety (data bases) to all buyers. Company B, on the other hand,
+has adopted a buyer-based focus strategy in which it sells the full array of
+products to insurance companies. Company C has yet another focus strategy
+which concentrates exclusively on providing consulting advice to ﬁnance
+companies. Its buyers either acquire the data elsewhere or generate it
+themselves. Company C’s focus strategy does not overlap with the segments
+served by companies A and B.12
+
+
+As noted above, focus strategies involving several segments rest on the
+presence of strong interrelationships among the segments that outweigh the
+suboptimization of serving more than one. For example, company A has
+maximized interrelationships based on shared R&D and production of only
+data bases, which offset the fact that each buyer type would ideally prefer a
+somewhat different type of data base and perhaps a different delivery
+system. Company B, on the other hand, has chosen a buyer-based focus
+strategy that gains competitive advantage through optimizing its delivery
+and selling system for insurance companies. Company C has opted for the
+potential differentiation beneﬁts of offering only consulting to ﬁnance
+companies and the internal beneﬁts of product specialization, while
+forgoing potential scale economies of a broader focus. Thus each company
+has built a focus strategy based on different interrelationships and different
+competitive advantages, and each bears different costs of compromise.
+Figure 7–10. Alternative Focus Strategies in a Financial Information Industry
+Interesting competitive issues arise in segments where focus strategies
+with different segment interrelationships overlap. In Figure 7–10 this occurs
+in the upper left-hand segment in the matrix. In that segment, the different
+focus strategies create competitive advantages and disadvantages of
+different types for the two ﬁrms competing in the segment. Company A
+brings extensive low-cost data bases and an acute understanding of data
+
+
+base design, while Company B brings an in-depth understanding of
+insurance companies and cost advantages from offering a full line. Just as
+interrelationships can lead to competitive advantages, they can also make a
+ﬁrm inﬂexible in competing in a segment. For example, company A could
+not easily modify its data base management system to better respond to the
+needs of insurance company buyers because of the effect this would have on
+its activities with banking and ﬁnance companies. The relative position of
+companies A and B in an overlapping segment is a function of net
+competitive advantage of interrelationships with other segments.
+Constraints in responding that arise from interrelationships can lead to a
+competitive interaction in which ﬁrms try to shift competition in a segment
+in the direction that best exploits their own segment interrelationships or
+advantages, while forcing competitors to compromise theirs.
+The Feasibility of New Segments to Focus On
+The feasibility of a focus strategy in a segment depends on the size of a
+segment and whether it will support the cost of a tailored value chain. Even
+if a tailored value chain would be more responsive to the needs of a
+particular new segment, the costs of the tailored chain may not be
+recoupable. Thus many potential segments should not be served with focus
+strategies.
+There are four ways that new segments emerge as viable for focus
+strategies. The ﬁrst is that tailoring gets less costly. Falling economies of
+scale may allow a focus strategy, for example. The second reason focus on a
+new segment becomes viable is that the segment grows enough to overcome
+the ﬁxed cost of serving it. A third reason is that ﬁrms exploit
+interrelationships with other industries to overcome scale thresholds in
+serving the segment. Finally, a segment may become viable if a ﬁrm
+pursues it globally, using volume in many countries to overcome scale
+economies. Here the ﬁrm is pursuing geographic interrelationships.
+Firms can preempt new focus strategies by perceiving new segmentation
+schemes or by identifying opportunities to make new segments viable.
+Recent reductions in scale economies have occurred in some technologies,
+including computerized manufacturing and design. These, coupled with
+
+
+enhanced ability to exploit interrelationships among business units (Chapter
+9) and compete globally, will be continually creating opportunities for new
+focus strategies in the 1980s.
+The Sustainability of a Focus Strategy
+I have discussed how a ﬁrm can choose a segment or small group of
+segments on which to focus, based on the attractiveness of those segments
+and the interrelationships among them. A ﬁnal issue in choosing a focus
+strategy is the sustainability of the focus strategy against competitors. The
+sustainability of a focus strategy is determined by three factors:
+•  Sustainability against broadly-targeted competitors. The size and
+sustainability of the competitive advantage created through focus vis-
+à-vis more broadly-targeted competitors.
+• Sustainability against imitators. The mobility barriers to imitating the
+focus strategy or being outfocused by a competitor with an even
+narrower target.
+• Sustainability against segment substitution. The risk that buyers will be
+drawn away to other segments the focuser does not serve.
+SUSTAINABILITY AGAINST BROADLY-TARGETED COMPETITORS
+Broadly-targeted competitors may either already compete in a focuser’s
+segment or be potential entrants to the segment as an extension of their
+existing base in other segments. The focuser’s competitive advantage over a
+more broadly-targeted competitor is a function of:
+•  the degree of compromise a broadly-targeted competitor faces in
+serving the focuser’s segments and other segments at the same time
+•  the competitive advantage of sharing value activities with other
+segments in which the broadly-targeted competitor operates
+The more different the focuser’s value chain is from the value chain
+required to serve other segments, the more sustainable is the focus strategy.
+In the airconditioning industry in the United States and Europe, for
+
+
+example, the distribution channels that serve the residential and commercial
+market are separate from those that serve the industrial market. In Latin
+America, Asia, and the Middle East, however, the same channels tend to
+stock the whole line. A focus strategy has been much more successful and
+sustainable in the United States and Europe than in other parts of the world,
+because focusers can tailor the value chain to the channel that specializes in
+their target segment. The focus strategy is more sustainable as buyer needs
+in the target segment are more different and unusual vis-à-vis other
+segments.
+The problems of Royal Crown in the soft drink industry illustrate these
+principles. Royal Crown focuses on colas, unlike Coke and Pepsi, which
+supply a broader line of soft drink ﬂavors. Supplying only colas does not
+involve a signiﬁcantly different value chain than supplying a broad line.
+Buyer needs and purchasing behavior are not much different for colas than
+for other ﬂavors except for the ﬂavor preference. Conversely, supplying a
+broad line allows signiﬁcant beneﬁts of sharing activities in production,
+distribution, and marketing. Hence Royal Crown’s focus strategy leads to no
+competitive advantage against its broadly-targeted competitors, only
+disadvantages. On the other hand, Mercedes gains strong advantages
+through focus in automobiles by using a tailored value chain compared to
+its broad-line competitors.
+Mead’s strategic evolution in the paper container industry illustrates how
+the factors underlying the sustainability of a focus strategy can change. In
+response to intense cost competition in high volume containers in the late
+1970’s, Mead chose a focus strategy targeted at low volume, high value-
+added segments. In the early 1980’s, however, new continuous-run paper
+corrugators were developed that operated faster but at the same time
+required much less setup time. This made it increasingly possible for broad
+line competitors to service small orders economically. Mead was forced to
+modify its focus strategy and serve a broader range of segments while
+investing in the new equipment. In this case, the value chain required to
+serve Mead’s target segments became less different from that required to
+efﬁciently serve the high volume segments.
+The sustainability of a focus strategy will erode if a segment’s
+differences from others fall over time, if technological change reduces the
+cost of compromise in serving multiple segments or increases the ability to
+
+
+reap interrelationships (see Chapter 9), or if a tailored value chain for the
+segment becomes too expensive relative to a more standardized chain.
+Hence there is an important dynamic element in choosing the segments on
+which to focus, reﬂecting an ongoing tradeoff between the advantages of
+focus on a particular segment and the gains of sharing through competing in
+multiple segments.
+SUSTAINABILITY AGAINST IMITATORS
+The second type of risk facing a focuser is that another ﬁrm will choose
+to replicate the focus strategy, either a ﬁrm new to the industry or one
+dissatisﬁed with its existing strategy. The sustainability of a focus strategy
+against imitators is based on the sustainability of the competitive advantage
+a focuser possesses, analyzed using the concepts in Chapters 3 and 4. The
+mobility barriers to imitating a focus strategy are the scale economies,
+differentiation, channel loyalty, and/or other barriers unique to the focus
+strategy. The height of the barriers against imitation of a focus strategy thus
+depends on the structure of the particular segment. Imitating Kodak’s high-
+end focus in copiers, for example, requires that a ﬁrm overcome barriers
+due to proprietary technology as well as economies of scale in establishing
+an in-house sales and service network.
+The size of a segment can affect the threat of imitation of a focus
+strategy. In a small segment, even modest scale economies may be
+signiﬁcant relative to segment size if they cannot be offset by
+interrelationships, and competitors may not be interested in entering.
+Conversely, in a growing industry there is the continual possibility not only
+that a focus strategy will be imitated but also that a focuser will be
+“outfocused” as ever-narrower segments become viable. In the rapidly
+growing information industry, for example, outfocusing is pervasive as
+ﬁrms develop ever more specialized data bases for narrower target buyer
+groups.
+SUSTAINABILITY AGAINST SEGMENT SUBSTITUTION
+The ﬁnal determinant of the sustainability of a focus strategy is the risk
+of segment substitution. A focus strategy concentrating on a segment is
+
+
+vulnerable to the disappearance of that segment. This may be the result of
+changes in the environment, technology, or competitor behavior. The risk of
+segment substitution is analyzed in the same way as substitution in general
+(see Chapter 8). Segment substitution can be inﬂuenced by competitors just
+as industry-level substitution can—if anything, even more so. Competitors
+often attempt to shift demand away from a focuser’s segments through
+techniques such as marketing, technological innovation, or even lobbying
+for government standards that worsen conditions in the segment. Where a
+focuser faces competitors serving much larger segments, there is a risk that
+their advertising spending and other marketing may shape buyer attitudes
+and lead buyers away from the focuser’s segment.
+Pitfalls and Opportunities for Focusers and Broadly-Targeted Competitors
+Several important lessons emerge from this analysis both for focusers
+and for broadly-targeted competitors:
+Successful focus strategies must involve compromise costs for
+competitors. Focusing on a segment or group of segments is not sufﬁcient to
+achieve competitive advantage in and of itself. The chosen segments must
+involve buyers with different needs, or require a value chain that differs
+from that which serves other segments. It is differences between the
+focuser’s segment and other segments that lead to suboptimization by
+broadly-targeted competitors, and provide the source of a sustainable
+competitive advantage for the focuser.
+Identifying a new way of segmenting an industry can be a major
+opportunity. A properly constructed industry segmentation matrix will often
+expose segments that are not reﬂected in the behavior of existing
+competitors. By identifying a new way of segmenting the industry, a ﬁrm
+can often design a focus strategy around a product variety, buyer group,
+channel, or geographic subdivision that has not previously been recognized
+as a segment but that has structural or value chain differences. New
+segments can be narrower or broader than segments currently recognized.
+Its differences imply that the new segment needs a distinctive strategy and
+
+
+value chain, and that competitors serving it together with other segments
+will be suboptimizing.
+The ﬁrm that recognizes a meaningful new segmentation ﬁrst can often
+gain a sustainable competitive advantage preemptively. Federal Express, for
+example, saw the small parcel requiring overnight delivery as a segment
+that no ﬁrm had focused on before. Federal Express designed a strategy
+around this segment involving a reconﬁgured value chain, and gained
+enormous advantages over competitors who were serving it as part of
+broader strategies. Similarly, Century 21 was ﬁrst to recognize a broader
+nationwide segment in real estate brokerage.
+Broad targeting does not necessarily lead to competitive advantage
+where there are industry segments. A broadly-targeted competitor must gain
+sustainable competitive advantage from competing in multiple segments if
+it is to enjoy above-average returns. These competitive advantages usually
+come from the interrelationships among segments. A cost leadership
+strategy rests on achieving a low-cost position through the scale and other
+advantages of competing in many segments. A differentiation strategy is
+based on achieving uniqueness in meeting use or signaling criteria that are
+widely valued by many segments. Without some tangible competitive
+advantage from breadth, the structural differences among segments will
+usually guarantee that a broadly-targeted competitor will be “stuck in the
+middle.”
+Broadly-targeted ﬁrms often serve too many segments. A ﬁrm aiming at
+an overly broad strategic target runs the risk of suboptimization, increasing
+its vulnerability to focusers. Reducing the number of segments served may
+decrease vulnerability, as well as increase proﬁtability through eliminating
+unattractive segments. A broadly-targeted ﬁrm should consider dropping
+out of segments where:
+• it gains little advantages from interrelationships with other segments
+• it is forced to modify its entire strategy in order to serve the segment
+• the segment is structurally unattractive
+• sales and growth potential in the segment is limited
+
+
+•  defensive considerations do not require presence in the segment to
+block competitors
+The relevant segments and breadth of target must be continually
+examined. The strategically meaningful segments in an industry will evolve
+over time due to shifts in buyer behavior, the emergence of new buyer
+groups, and technology that alters segment interrelationships. Thus the
+choice competitive scope within an industry must be continually
+reexamined. A ﬁrm cannot automatically accept a historically important
+segmentation as meaningful, despite the fact that old segmentations have a
+tendency to fade slowly from managers’ minds. Viewing the choice of
+segments served as a permanent decision will inevitably bring strategic
+disaster.
+New technology is changing old assumptions about segmentation. New
+technology, particularly microelectronics and information systems, is
+creating opportunities for both new focus and new broadly-targeted
+strategies. Flexibility in manufacturing, logistics, and other value activities
+is making it possible for broadly-targeted ﬁrms to tailor activities to
+segments while maintaining a single value chain. This is reducing
+opportunities for sustainable focus in some industries. At the same time, the
+same technological revolution is making strategies tailored to new segments
+viable. Computer-aided design, for example, is lowering the design cost of
+new product varieties. Firms must pay particular attention to how the new
+technologies might shake up the traditional logic of focus or broad targeting
+in their industries.
+Industry Segmentation and Industry Deﬁnition
+Drawing industry boundaries is always a matter of degree. Structural and
+value chain differences among product varieties and buyers work towards a
+narrower industry deﬁnition. Industry segmentation is thus a tool to probe
+for narrower industry deﬁnitions by exposing structural heterogeneity
+within an industry. Interrelationships among segments and business units
+(Chapter 9) create possibilities for broader industry deﬁnitions.
+
+
+A useful working industry deﬁnition should encompass all segments for
+which segment interrelationships are very strong. Segments where
+interrelationships with other segments are weak may sometimes be separate
+industries from a strategic viewpoint. Related industries linked by strong
+interrelationships may in strategic terms be a single industry.
+Where one actually chooses to draw industry boundaries is not so
+essential as long as both segmentation and strategic interrelationships are
+examined as part of structural analysis. Such an analysis will expose all the
+key determinants of competitive advantage that derive from competitive
+scope.
+
+
+8
+Substitution
+All industries face the threat of substitution. Substitution is the process by
+which one product or service supplants another in performing a particular
+function or functions for a buyer. The analysis of substitution applies
+equally to products and processes, because the same principles govern a
+buyer’s choice to do something in a new way anywhere in its value chain.
+Substitution is one of the ﬁve competitive forces determining the
+proﬁtability of an industry, because the threat of substitution places a
+ceiling on industry prices. At the same time, substitution plays a prominent
+role in determining industry and a ﬁrm’s demand. Penetration against
+substitutes is a major reason why industries and ﬁrms grow, and the
+emergence of substitutes is a major reason why they decline. Substitution is
+also inextricably tied to a ﬁrm’s competitive scope within an industry,
+because it widens or narrows the range of segments in an industry.
+How can a ﬁrm best defend against a substitute? What is the best
+strategy for promoting substitution if the ﬁrm is on the offensive? These are
+important questions in competitive strategy in many industries. This chapter
+will present a framework for analyzing substitution and answering those
+questions. I will ﬁrst consider how to identify substitutes, an essential but
+often subtle step in substitution analysis. Next I will describe the economics
+of substitution, which deﬁne the threat of a substitute and provide the
+underpinnings of any strategic moves intended to inﬂuence it. I will then
+outline how the threat of substitution changes over time. With this as a
+background, the factors that inﬂuence the path of substitution will be
+identiﬁed. Substitution proceeds in some characteristic ways over time,

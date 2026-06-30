@@ -39,6 +39,7 @@ export interface ConversationMessage {
 export type AttachedRef =
   | { type: 'case'; slug: string; companyName: string }
   | { type: 'pattern'; slug: string; name: string }
+  | { type: 'resource'; slug: string; title: string }
   | {
       type: 'project';
       projectId: string;

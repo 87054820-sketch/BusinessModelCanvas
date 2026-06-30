@@ -1,0 +1,77 @@
+{
+  "chapter": "ch05-competitor-selection",
+  "sourceFiles": {
+    "en": "13-Chapter-6-Competitor-Selection.txt"
+  },
+  "concepts": [
+    {
+      "name": "Structural Analysis",
+      "definition": "Porter's discipline of decomposing competition into underlying structural forces, activities, positions, and trade-offs rather than treating performance as personality or luck."
+    },
+    {
+      "name": "Competitive Advantage",
+      "definition": "A durable difference in relative cost, willingness to pay, position, or activity configuration that allows above-average returns."
+    },
+    {
+      "name": "Chapter-Specific Framework",
+      "definition": "Chapter 6. Not all competitors are threats — some improve the firm's competitive position. 'Good competitors' can: absorb demand fluctuations, increase the perceived differentiation of the firm, serve unattractive segments, provide a cost umbrella, improve bargaining position with labour and government, lower antitrust risk, and motivate effort in the firm. 'Bad competitors' destroy industry structure through price wars, overinvestment, or value-destroying acquisitions. The chapter provides a framework for diagnosing competitor quality and a taxonomy of moves to influence which competitors exit, stay, or never enter. The strategist's job is not eliminating competition — it's curating the competitive field."
+    },
+    {
+      "name": "Strategic Fit and Trade-offs",
+      "definition": "The requirement that choices reinforce each other across activities, customers, scope, cost, and differentiation so the strategy is hard to imitate."
+    }
+  ],
+  "arguments": [
+    {
+      "claim": "Strategy must be grounded in structure, not slogans",
+      "evidence": "The chapter provides a diagnostic system for understanding why profitability differs across industries, segments, competitors, activities, buyers, suppliers, or time."
+    },
+    {
+      "claim": "Advantage is built in choices and activities",
+      "evidence": "Porter repeatedly shows that superior performance comes from configuring activities and positions differently, not from generic ambition to be better."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Porter framework application",
+      "context": "A manager uses the chapter framework to diagnose a real competitive situation rather than relying on surface financials.",
+      "illustrates": "How structural variables and activity choices reveal where advantage is created or destroyed.",
+      "lesson": "Use the framework as a map for choices, not as a label."
+    }
+  ],
+  "logicChains": [
+    {
+      "description": "Define the competitive question → decompose structure or activities → diagnose drivers and trade-offs → compare relative position → choose actions that improve defensible advantage.",
+      "sourceHint": "Synthesized from Porter source chapter and index summary."
+    }
+  ],
+  "terminology": [
+    {
+      "term": "Industry structure",
+      "definition": "The underlying economic forces shaping profitability."
+    },
+    {
+      "term": "Activity system",
+      "definition": "The configuration of activities through which a firm creates value and incurs cost."
+    },
+    {
+      "term": "Trade-off",
+      "definition": "A choice that makes some positions incompatible with others and protects strategy from imitation."
+    }
+  ],
+  "nuance": [
+    "Porter frameworks are diagnostic disciplines, not fill-in templates.",
+    "Average industry or firm performance hides the drivers that matter at force, segment, activity, or competitor level."
+  ],
+  "crossReferences": {
+    "relatedStrategyFrameworkSlugs": [
+      "porters-value-chain"
+    ],
+    "relatedCanvasDefIds": [],
+    "relatedCaseSlugs": [],
+    "relatedChapters": [
+      "ch01-value-chain",
+      "ch02-cost-advantage"
+    ]
+  }
+}

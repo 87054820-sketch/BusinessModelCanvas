@@ -1,0 +1,1259 @@
+# Chapter 13: Industry Scenarios and Competitive Strategy under Uncertainty
+
+often fail to consider—or underestimate the probability of—radical or
+discontinuous changes that might be unlikely but would signiﬁcantly alter
+industry structure or a ﬁrm’s competitive advantage.
+A few ﬁrms construct contingency plans as part of the strategic planning
+process, in an attempt to test strategies against major sources of uncertainty.
+Contingency planning is rare in practice, however, and usually tests
+strategies incrementally against only one or two key uncertainties such as
+the inﬂation rate or the price of oil. Contingency plans seldom examine
+alternative future industry structures, or compel managers to consider their
+implications. When facing considerable uncertainty, ﬁrms tend to select
+strategies that preserve ﬂexibility, despite the costs in terms of required
+resources or diminished competitive position.
+Scenarios as a Planning Tool
+As the perceived need to address uncertainty explicitly in planning has
+grown, a few ﬁrms have begun to use scenarios as tools to understand the
+strategic implications of uncertainty more fully. A scenario is an internally
+consistent view of what the future might turn out to be. By constructing
+multiple scenarios, a ﬁrm can systematically explore the possible
+consequences of uncertainty for its choice of strategies. The use of
+scenarios started to become signiﬁcant after the 1973 oil crisis magniﬁed
+certain forms of uncertainty.
+The scenarios traditionally used in strategic planning have emphasized
+macroeconomic and macropolitical factors—I refer to these types of
+scenarios as macroscenarios. Scenario building has concentrated on
+creating alternative views of the national or global economic and political
+environment, including such things as the rate of economic growth,
+inﬂation, protectionism, regulation, energy prices and interest rates. The use
+of macroscenarios reﬂects the fact that oil, natural resources, and aerospace
+companies were the early leaders in employing scenarios for planning, with
+Royal 
+Dutch/Shell 
+widely 
+recognized 
+as 
+a 
+pioneer.1,2 
+Global
+macroeconomic and political events can have a profound effect on the
+success of an international oil or natural resource company. Moreover,
+scenarios have usually been developed at the corporate level in diversiﬁed
+
+
+ﬁrms, hence the attention to variables that broadly impact many business
+units.
+Macroscenarios, despite their relevance, are too general to be sufﬁcient
+for developing strategy in a particular industry. The implications of
+macroscenarios for individual industries are often poorly understood.
+Constructing macroscenarios requires the analysis of a broad and highly
+subjective set of factors. Few aspects of the macroeconomic and political
+environment have important strategic ramiﬁcations for all but the most basic
+industries. Other uncertainties that macroscenarios leave out such as
+technological change and competitor behavior can emerge as dominant
+factors driving industry structural change in particular industries. As a
+result, macroscenarios have encountered skepticism from many operating
+managers, and have not become integral to strategic planning in a
+widespread way.
+Industry Scenarios
+Scenarios are a powerful device for taking acount of uncertainty in
+making strategic choices. They allow a ﬁrm to move away from dangerous,
+single-point forecasts of the future in instances when the future cannot be
+predicted. Scenarios can help encourage managers to make their implicit
+assumptions about the future explicit, and to think beyond the conﬁnes of
+existing conventional wisdom. A ﬁrm can then make well-informed choices
+about how to take the competitive uncertainties it faces into account.
+In competitive strategy, the appropriate unit for analysis of scenarios is
+the industry—I term such scenarios industry scenarios. Industry scenarios
+allow a ﬁrm to translate uncertainty into its strategic implications for a
+particular industry. By focusing on the industry, macroeconomic, political,
+technological, and other uncertainties are not analyzed for their own sake
+but probed for their implications for competition. Industry scenarios also
+explicitly include competitor behavior, a key source of uncertainty in the
+choice of strategies.
+This chapter describes how to construct industry scenarios, and how to
+use them to guide the choice of competitive strategy. I begin by describing
+how to identify the sources of uncertainty facing an industry and how to
+
+
+translate them into the most meaningful industry scenarios. Next, I discuss
+how to analyze scenarios, and how to identify those with the greatest
+implications for industry structure and competitive advantage. I then show
+how a ﬁrm can select the best strategy in light of the uncertainties
+confronting it. The chapter concludes with a discussion of how industry
+scenarios should ﬁt into a ﬁrm’s ongoing strategic planning process.
+Constructing Industry Scenarios
+An industry scenario is an internally consistent view of an industry’s
+future structure. It is based on a set of plausible assumptions about the
+important uncertainties that might inﬂuence industry structure, carried
+through to the implications for creating and sustaining competitive
+advantage. An industry scenario is not a forecast but one possible future
+structure. A set of industry scenarios is carefully chosen to reﬂect the range
+of possible (and credible) future industry structures with important
+implications for competition. The entire set of scenarios, rather than the
+most likely one, is then used to design a competitive strategy. The time
+period used in industry scenarios should reﬂect the time horizon of the most
+important investment decisions.
+An industry typically faces many uncertainties about the future. The
+important uncertainties are those that will inﬂuence industry structure, such
+as technological breakthroughs, entry of new competitors, and interest rate
+ﬂuctuations. External factors such as macroeconomic conditions and
+government policy affect competition through, and not independently of,
+industry structure. Structural change almost always requires adjustments in
+strategy and creates the greatest opportunities for competitors to shift their
+relative positions.
+The ﬁve competitive forces described in Chapter 1 constitute the
+conceptual foundation for constructing industry scenarios. Uncertainties
+that affect any of the ﬁve competitive forces will have implications for
+competition, and therefore must be considered in constructing scenarios.
+Constructing industry scenarios begins by analyzing current industry
+structure and identifying all the uncertainties that may affect it. These
+
+
+uncertainties are then translated into a set of different future industry
+structures. An overview of the process is shown in Figure 13–1.
+The process shown in Figure 13–1 is deceptively simple. Constructing
+industry scenarios requires several iterations and is a judgmental process. It
+can be difﬁcult to determine fully what uncertainties are the most important
+for strategy until a number of preliminary scenarios have been analyzed,
+hence the feedback loops on Figure 13–1.
+The process shown in Figure 13–1 postpones the introduction of
+competitor behavior into each scenario until the industry structure and
+requirements for competitive advantage have been developed, despite the
+fact that competitor behavior can inﬂuence structure and is often a source of
+uncertainty in its own right. However, predicting competitor behavior in a
+scenario poses a nearly impossible task without some understanding of the
+structural environment in which competitors will operate. Expected
+behavior of competitors under a scenario may serve to modify industry
+structure; uncertainty about competitor behavior may lead to additional
+scenarios.
+
+
+Figure 13–1. The Process of Constructing Industry Scenarios
+I will use an extended example drawn from the U.S. chain saw industry
+in describing how to construct industry scenarios. It is necessary to provide
+some background on the U.S. chain saw industry so that the scenarios can
+be better understood. The chain saw industry had enjoyed a stable and
+proﬁtable structure for decades prior to the 1970s. In the early 1970s,
+however, there were indications that the industry might be on the threshold
+of a major structural change. It was believed that sales of small chain saws
+to homeowners and other “casual users” might enter a period of explosive
+growth. If this happened, a major structural change in the industry would be
+triggered which could proceed in several directions.
+In the early 1970s, the great majority of chain saws were sold to
+professional users including loggers, farmers, and others for whom chain
+saws were a primary tool of their trade. Professionals tended to use saws
+heavily and valued durability, comfort and reliability. They purchased saws
+primarily through chain saw dealers that also provided service and spare
+
+
+parts. Dealers tended to carry the product lines of relatively few
+manufacturers. Most chain saws were large, powerful gasoline saws
+assembled by manufacturers from a combination of purchased and
+manufactured parts. Suppliers of parts such as chains, bars, and sprockets
+were high-volume producers that enjoyed scale economies and some
+bargaining power. Electric saws were a potential substitute for gasoline
+saws, but were inadequate for most professional applications.
+The major competitors in the early 1970s were Homelite (a division of
+Textron), McCulloch, and Stihl, followed by Roper, Remington and Beaird-
+Poulan. Industry rivalry was moderate, centering on quality, features, dealer
+network, and brand reputation. Homelite had the largest market share,
+followed by McCulloch. Both pursued differentiation strategies. Stihl
+competed by focusing on the premium-quality segment, and differentiated
+itself on quality, durability, and service.
+By 1973, some major uncertainties loomed. The initial spurt in demand
+for chain saws by casual users had been brought on by the energy crisis, the
+do-it-yourself movement, and other causes. Casual users were much less
+sophisticated than professionals and used their saws less intensively for less
+demanding applications. Casual users also did not necessarily purchase
+saws from servicing dealers, and distribution channels for chain saws were
+broadening to include hardware chains, catalog showrooms and department
+stores, among others. This encouraged new entrants into the market. Black
+& Decker acquired McCulloch, and Beaird-Poulan was acquired by
+Emerson Electric. These acquisitions had created the potential for an
+injection of resources into competitors that had previously been ﬁnancially
+constrained. In the remainder of this chapter, I will construct a set of
+industry scenarios for the chain saw industry while describing the principles
+that underlie scenario building.
+Identifying Industry Uncertainties
+Identifying uncertainties with the most important ramiﬁcations for
+competition lies at the heart of the industry scenario technique. Yet the
+sources of uncertainty can be hard to recognize and managers may ﬁnd it
+difﬁcult to detect discontinuous changes or shed their conventional wisdom.
+
+
+To identify uncertainties each element of industry structure must be
+examined and placed into one of three categories: constant, predetermined,
+and uncertain. Constant elements of industry structure are those aspects of
+structure that are very unlikely to change. Predetermined elements of
+structure are areas where structure will change, but the change is largely
+predictable. Predetermined trends may well proceed faster or slower
+depending on the scenario. Often a variety of structural changes are
+predetermined if a thoughtful industry analysis is done. Uncertain elements
+of structure are those aspects of future structure which depend on
+unresolvable uncertainties. Constant and predetermined structural variables
+are part of each scenario, while uncertain structural variables actually
+determine the different scenarios.
+A way to begin determining which elements of industry structure fall
+into each category is to list all apparent industry trends and any possible
+major industry changes that have been discussed internally or mentioned by
+industry observers. While only those uncertainties that might affect
+structure will be important to scenario-building, it is important initially to
+identify all the uncertainties to avoid omitting important variables.
+Uncertainties with a low probability of occurrance but with a potentially
+large impact on structure must also not be overlooked. Each trend or
+possible change is then analyzed to determine whether it could have a
+signiﬁcant impact on industry structure, and how uncertain or predictable its
+impact is. Such a procedure will tend to produce a list of uncertainties that
+mixes causes and effects.
+By considering only apparent trends, however, important discontinuities
+may be overlooked. Scenarios built only on apparent trends may reﬂect
+conventional wisdom and may not provide insights into future structure not
+available to competitors. One way to guard against overlooking
+discontinuities is to uncover observers of the industry who might foresee
+new possibilities. Soliciting opinions from outsiders new to the industry,
+who can view it objectively, provides another mechanism for overcoming
+conventional wisdom.
+A wide range of environmental factors can lead to both predetermined
+and unpredictable industry changes, including technological trends,
+government policy shifts, social changes, and unstable economic conditions.
+Environmental changes are not important for their own sake, but because of
+
+
+their possible effect on industry structure. A number of underlying
+evolutionary processes, at work in every industry, are shown in Table 13–1.3
+These provide a census of the forces that drive industry structural change.
+Each should be examined to see if and how it might affect the industry.
+Sometimes the evolutionary processes will proceed in predictable ways,
+while in other cases their speed and direction will be uncertain and lead to
+uncertainty about some elements of structure.
+TABLE 13–1 Evolutionary Forces
+Driving Industry Structural Change
+Long-run changes in growth
+Changes in buyer segments served
+Buyer learning
+Reduction of uncertainty
+Diffusion of proprietary knowledge
+Accumulation of experience
+Expansion (or contraction) in scale
+Changes in input and currency costs
+Product innovation
+Marketing innovation
+Process innovation
+Structural change in adjacent industries
+Government policy changes
+Entries and exits
+The possible industry changes that are most difﬁcult to anticipate are
+frequently those that originate outside an industry. For example, many ﬁrms
+in industries that had little or no previous contact with electronics were
+taken by surprise by the development of microcomputers. New entrants also
+have less predictable and often more profound impacts on industry structure
+than do start-up competitors.
+In some industries, therefore, scenarios are best constructed by starting
+inside the industry and looking outward for additional sources of
+uncertainty. In other industries, it is more appropriate to begin with
+macroscenarios and then narrow the focus to the industry. Macroscenarios
+can provide important insights into possible industry changes. They can
+expose possible shifts in macroeconomic, political, or social variables that
+are not foreseen in a more industry-centered view of the external
+environment. Another way of identifying uncertainties is broadly based
+
+
+technological forecasting. A systematic look at how any of the technologies
+in the ﬁrm’s value chain (Chapter 5) might be affected by outside
+developments can sometimes help to reveal changes unforeseen by
+technical personnel inside a ﬁrm.
+In constructing scenarios, it is important to try to identify one or more
+major discontinuities that would have a signiﬁcant impact on structure, such
+as a revolutionary technological change. If major discontinuities have a
+material probability of occurring, they should be treated as one of the
+important uncertainties in developing scenarios. If a major discontinuity
+will have a fundamental impact on structure but is very remote, it is usually
+best treated separately from the normal scenarios.
+To illustrate the application of these ideas, Table 13–2 lists the uncertain
+elements of structure in the chain saw industry in 1973. Signiﬁcant
+uncertainties existed in all of the ﬁve forces except for suppliers. Since each
+uncertain element of structure can serve as the basis for several scenarios
+and the list of uncertainties can be quite long, as it is in the chain saw
+industry, these sources of uncertainty must be distilled into the few
+scenarios that will be truly important to strategy.
+Independent Versus Dependent Uncertainties
+Converting the list of uncertain structural elements into scenarios begins
+by dividing them into independent and dependent uncertainties:
+•  Independent uncertainties. Those elements of structure whose
+uncertainty is independent of other elements of structure. The sources
+of the uncertainty may be inside the industry (e.g., competitor
+behavior) or outside the industry (e.g., oil prices).
+•  Dependent uncertainties. Those elements of structure that will be
+largely or completely determined by the independent uncertainties. In
+chain saws, for example, the future level of advertising on television is
+quite uncertain but will be primarily a function of the size of casual
+user demand. Casual users are receptive to television advertising while
+professional and farm buyers are best reached through specialized
+magazines.
+
+
+TABLE 13–2 Uncertain Elements of Structure in the U.S. Chain Saw
+Industry
+Entry Barriers
+Will there be new proprietary product designs?
+How high will future scale economies in manufacturing be?
+How high will future scale economies in marketing (media mix and spending rates) be?
+How difﬁcult will gaining access to each channel be?
+What safety regulations will be enacted?
+Buyers
+What will casual user demand be?
+What will professional/farm demand be?
+What will be the mix of dealer versus nondealer sales?
+How signiﬁcant will private labeling be outside of the servicing dealer channel?
+Will distribution be direct or through distributors?
+How price sensitive will buyers be?
+Rivalry
+What will be the shape of the casual user penetration curve?
+How will traditional competitors behave?
+How will newly acquired competitors behave?
+Will additional foreign ﬁrms be attracted to the U.S. industry?
+How high will ﬁxed costs be?
+How committed is each competitor to chain saws?
+Substitutes
+How much will electric saws penetrate versus gas saws?
+Suppliers
+Relatively constant.
+Independent uncertainties are the scenario variables on which scenarios
+are based. Only independent uncertainties are an appropriate basis for
+constructing scenarios because they are true sources of uncertainty.
+Dependent uncertainties are resolved once assumptions about the
+independent uncertainties have been made, and thus become part of each
+scenario.
+Independent and dependent uncertainties often differ only in degree,
+because many industry structural characteristics will be determined in part
+by independent uncertainties and partly inﬂuenced by other industry
+characteristics. Industry concentration, for example, is largely based on the
+height of entry barriers and hence dependent, but is also a function of
+independent factors such as an unexpected acquisition or entry by a strong
+competitor. Thus, as in all phases of scenario construction, one must
+
+
+attempt to assess the most signiﬁcant factors inﬂuencing each uncertain
+variable and use them to classify it as either dependent or as a true scenario
+variable. It is often not apparent in the beginning of an analysis which
+uncertainties are dependent. Once scenarios are analyzed, it may be
+necessary to modify the way a particular element of structure is classiﬁed.
+Separating uncertain elements of industry structure into those that are
+scenario variables and those that are dependent requires that the causal
+factors of uncertain elements of structure be identiﬁed. Causal factors
+determine the future state of each uncertain structural element. For example,
+the level of casual user demand in chain saws will be a function of such
+causal factors as energy prices, the rate of household formation, how many
+new houses are built with ﬁreplaces, and so on.
+Practical considerations may dictate not going all the way back to the
+most fundamental causal factors determining an uncertain variable since
+they may be numerous and hard to measure. However, causality must be
+traced back far enough to separate scenario variables from dependent
+variables. Causal factors also are important in determining the appropriate
+range of assumptions that should be made about each scenario variable. If
+the level of casual user demand is strongly inﬂuenced by energy prices, for
+example, then forecasting the range of possible energy prices is necessary to
+understand the range of feasible levels of demand.
+Table 13–3 identiﬁes the scenario variables in the chain saw industry
+from the full list of uncertainties that were shown in Table 13–2 and ranks
+them in terms of their importance to industry structure. The scenario
+variables in the chain saw industry are relatively few, because many of the
+uncertainties in the industry will be resolved once the demand for casual
+user saws and the channels through which they are sold become clear.
+Future safety regulations by government, for example, will probably be
+introduced if casual user demand grows and the number of accidents
+increases with the number of less sophisticated users. Marketing activity
+will also increase sharply and shift toward television advertising if casual
+user sales grow.
+TABLE 13–3 Scenario Variables in Chain Saws
+Most Important Scenario Variables
+Level of casual user demand
+
+
+Shape of casual user penetration curve
+Mix of dealer versus non-dealer sales
+Extent of private label versus branded sales through nondealers
+Less Important Scenario Variables
+Professional and farm demand
+Penetration of electric saws
+Table 13–4 shows the causal factors for the four important scenario
+variables in the chain saw industry. Several causal factors underlie each
+variable, as is typically the case. Causal factors reﬂect forces both within
+and external to the industry. It is also apparent from Table 13–4 that some of
+the causal factors reﬂect other aspects of industry structure or competitor
+behavior. Casual user demand, for example, is partly determined by the
+intensity of marketing activity and pricing behavior of competitors. The
+future mix of channels will in turn be inﬂuenced by the level of casual user
+demand, because casual users prefer different channels than professionals.
+It is not uncommon for scenario variables to have some internal causes
+along with external ones, and the analysis of scenarios must reﬂect such
+interdependencies.
+The uncertainty that surrounds the causal factors of each scenario
+variable leads to scenarios. Assumptions about the scenario variables will
+determine the outcome of dependent uncertainties. Predetermined and
+constant elements of structure are then added to the scenario to complete
+the proﬁle of the future structure of the industry, recognizing that the rate of
+change of predetermined trends may be different under each scenario.
+Figure 13–2 illustrates the process schematically.
+Constructing a useful scenario involves developing a logic for how the
+various elements of industry structure interrelate, separating true scenario
+variables from dependent and predetermined industry changes. A scenario
+must seek to expose second-order effects of structural changes that result
+from one industry change affecting others. Such a logic for how various
+aspects of industry structure interrelate is at the heart of the usefulness of
+the scenario technique because it is usually important to understanding the
+implications of scenarios for strategy.
+TABLE 13–4 Causal Factors Determining the Uncertainties in Chain
+Saws
+
+
+SCENARIO VARIABLE
+CAUSAL FACTORS
+Level of casual user demand
+External
+Social trends
+Energy costs
+Woodburning stove and ﬁreplace installations
+Number of households formed
+Channels selling casual saws
+Internal
+Marketing activity of competitors
+Product changes by competitors
+Shape of the casual user penetration curve*
+External
+Economic conditions
+Pattern of energy price changes
+Pattern of social trends
+Replacement rate for saws
+Channel strategies regarding chain saws
+Internal
+Marketing activity by competitors
+Mix of dealer versus nondealer sales
+External
+Channel product line policies
+Consumer shopping habits for chain saws
+Ability of channels to provide service
+Usage patterns of casual saws (which determine
+replacement behavior, spare parts usage and
+service needs)
+Internal
+Channel policies of competitors
+Extent of private label versus branded sales
+through nondealers
+External
+Channel branding policies
+Channel product policies
+Internal
+Channel policies of competitors
+Branding policies of competitors
+*The penetration curve is the growth in the number of households who own chain saws.
+Identifying a Set of Scenarios
+An industry scenario is based on a set of plausible assumptions about
+each of the scenario variables, derived from the causal factors. The
+consequences of this set of assumptions for industry structure ﬂows from
+
+
+the process diagrammed in Figure 13–2. A scenario emerges as an
+internally consistent view of the future industry structure under one set of
+assumptions. The range of plausible assumptions about the potential
+outcomes of scenario variables determines the appropriate set of scenarios
+for analytical purposes.
+Constructing a set of industry scenarios would be relatively simple once
+the scenario variables had been determined if there was only one scenario
+variable. If the only scenario variable in the chain saw industry was the
+level of casual user demand, for example, then a manageable number of
+scenarios could be constructed by making several plausible assumptions
+about demand. However, the number of relevant scenario variables is
+greater than one in most industries. The number of combinations generated
+by differing assumptions about each scenario variable can multiply rapidly,
+and with it the number of scenarios that might be analyzed. With four
+scenario variables in chain saws, for example, dozens of scenarios could
+easily be constructed.
+
+
+Figure 13–2. Determinants of Future Industry Structure
+There are two ways to limit the proliferation of scenarios—reducing the
+number of scenario variables and reducing the number of assumptions made
+about each one. The ﬁrst step is to ensure that the scenario variables are all
+truly uncertain and independent. This test may lead to the elimination of
+some variables. Another way to reduce the number of scenario variables is
+to concentrate on only those with a signiﬁcant potential impact on structure.
+While many factors will have some impact on future structure, fewer will
+have an impact signiﬁcant enough to inﬂuence competitive strategy.
+Sometimes the impact of a variable on structure only becomes clear once
+the analysis of scenarios has begun. In the chain saw industry, however, all
+four scenario variables are important.
+The next step in determining the set of scenarios to analyze is to specify
+the different assumptions to be made about each scenario variable. The
+appropriate range of assumptions will depend on the extent to which its
+causal factors could differ. Scenario variables can be discrete or continuous.
+When a scenario variable is discrete (e.g., a regulation is either signed into
+law or it is not), the choice of assumptions is relatively clear. When the
+scenario variable is continuous (e.g., the level of casual user demand), a
+question arises as to how to make the appropriate assumptions about its
+value.
+The choice of assumptions should be governed by four factors: the need
+to bound the uncertainty, regularity of the impact on structure, managers’
+beliefs, and practicality. Assumptions about a scenario variable should
+bound the feasible range of values that variable could take, exposing the
+important differences in possible industry structure. Since scenarios are not
+meant to be forecasts, it is important that those with a low probability of
+occurrence not be ignored. The use of extreme values can increase the
+understanding of the directions in which industry structure could evolve.
+Wide differences in the level of casual user demand, for example, will
+strongly inﬂuence the path of evolution in the chain saw industry. However,
+this does not mean that very unlikely values for a variable should be used in
+constructing scenarios unless these very unlikely outcomes would lead to
+industry structures that differ substantially from more likely outcomes. The
+
+
+credibility of scenarios can be damaged if they are based on highly
+implausible assumptions.
+Having bounded the feasible range of uncertainty, the number of
+assumptions in between about each variable must be selected. If changes in
+the value of a scenario variable affect structure in a predictable way
+between its extremes, the number of assumptions can be small. If this is not
+the case, however, the range of assumptions must reﬂect major
+discontinuities. In chain saws, for example, a medium level of casual user
+demand is likely to have an impact on structure that is not simply between
+that of very low and very high demand. A medium level of demand
+provides room for only one or two new efﬁcient-scale manufacturing
+facilities, and thus raises the possibility that several competitors will expand
+simultaneously, leading to overcapacity. An even more striking case of
+irregularity of impact is in the extent of sales through servicing dealers. It is
+possible that the percentage of saws sold through dealers will fall rapidly as
+casual user demand grows, but recover once ﬁrst-time chain saw buyers
+trade up to larger saws and require service. This has quite different
+structural implications from scenarios featuring low or high dealer share.
+A third consideration in choosing what assumptions to make about each
+scenario variable is the beliefs held by senior management. It is important
+to build at least one scenario around assumptions that reﬂect their
+commonly held beliefs. This lends credibility to the scenario building
+process. Scenarios reﬂecting managers’ assumptions can also be useful in
+exposing the differences in the assumptions of various senior managers, as
+well as in testing the overall consistency of assumptions that managers have
+made independently about each scenario variable. If the scenario that results
+from combining these assumptions is implausible, managers’ thinking about
+the future may be changed. All this is also important in demonstrating the
+validity of employing multiple scenarios rather than a single scenario.
+A ﬁnal consideration in choosing the number of assumptions about each
+scenario variable is the practical limit on the number of scenarios that can
+be meaningfully analyzed. A proliferation of scenarios beyond three or four
+may make analysis so onerous that the strategic issues are obscured. Thus
+compromises may well be necessary to reduce the number of assumptions
+examined. Since scenarios can be added, eliminated, or combined later in
+the analysis, it is important not to impose this constraint too strongly.
+
+
+TABLE 13–5 Range of Assumptions in Chain Saw Industry Scenarios
+SCENARIO VARIABLE
+ASSUMPTIONS
+Level of casual unit demand
+Low
+Medium
+High
+Shape of casual user penetration
+curve
+Steady
+increase
+Peaked
+ 
+Mix of dealer versus non-dealer
+sales
+Dealers
+dominate
+High
+nondealer
+share
+Short-term shift to nondealers, with
+return to dealers in the long term
+Extent of private label versus
+branded sales through
+nondealers
+High
+percent
+branded
+High percent
+private
+label
+ 
+Table 13–5 shows the range of assumptions chosen for the scenario
+variables in the chain saw industry. Except for the level of casual user
+demand and mix of dealer versus nondealer sales, two assumptions about
+each variable are sufﬁcient to expose the implications for industry structure.
+The key distinction in the shape of the penetration curve is whether it rises
+smoothly, or rises rapidly and then levels off (peaking). Peaking raises the
+risk of excessive capital investment by competitors. The extent of private
+label sales is important in determining the bargaining power of buyers and
+the relative position of well-known brands such as McCulloch and Homelite
+(manufacturers’ brands are clearly not as important in private label sales).
+Each assumption shown in Table 13–5 can be quantiﬁed.
+Consistency of Assumptions
+A scenario should be an internally consistent view of what future
+industry structure could be. Internal consistency is partly ensured by
+separating the scenario variables from the dependent ones. Another critical
+requirement, however, is the consistency of the assumptions made about
+each scenario variable with each other.
+Often scenario variables affect one another, and thus some combinations
+of assumptions about them are not internally consistent. This can lead to the
+elimination of some scenarios. Figure 13–3 and 13–4 illustrate the process
+
+
+in the chain saw industry. Figure 13–3 compares the level of casual user
+demand and the shape of the casual user penetration curve. It is unlikely
+that the penetration curve will be peaked unless casual user demand is high.
+Hence, two combinations of assumptions (cells in Figure 13–3) are
+inconsistent. Figure 13–4 compares the four consistent combinations of
+assumptions about demand and the shape of the penetration curve against
+the mix of channels. Once again, some combinations of assumptions are not
+mutually consistent and can be eliminated. Servicing dealers will dominate
+only if casual user demand is not high. Nondealers will not gain a high
+share of sales unless casual demand is medium or high. A short-term shift
+to nondealers is likely only if demand for casual users is high and peaked,
+leading to an increase in nondealer share followed by a fall-off in casual
+demand and the migration of the more serious casual users to dealers. The
+fourth scenario variable, the percentage of saws sold under private label
+versus sold branded through nondealers, is not shown on Figure 13–4.
+However, high private label penetration is clearly inconsistent with
+domination by the dealer channel.
+Figure 13–3. Consistency of Casual User Demand and the Penetration Curve in Chain Saws
+
+
+Figure 13–4. Consistency of Demand and Mix of Channels in Chain Saws
+Figure 13–5. Consistent Scenarios for the Chain Saw Industry
+Thus we can reduce the number of consistent scenarios in the chain saw
+industry to the ten shown in Figure 13–5. These ten combinations of
+assumptions about the scenario variables are internally consistent and,
+therefore, are candidates for further analysis. The process of determining
+internally consistent assumptions is vitally important to constructing
+
+
+industry scenarios, because consistency in viewing the future is one of the
+principal beneﬁts of the scenario technique.
+Analyzing Scenarios
+The next step in scenario planning is to analyze the implications of each
+scenario for competition. The analysis of a scenario involves the following:
+• determining future industry structure under the scenario
+•  developing the implications of the scenario for industry structural
+attractiveness
+•  identifying the implications of the scenario for the sources of
+competitive advantage
+To determine the implications of a scenario for future industry structure,
+the process diagrammed in Figure 13–2 is carried out. Assumptions about
+scenario variables determine the dependent elements of structure. These are
+combined with the predetermined and constant elements of structure to
+complete the scenario. Predetermined changes in structure may be speeded
+up or slowed down for different scenarios. Each scenario will provide a
+picture of the ﬁve forces representing the industry’s structure in the event
+that the assumptions about the scenario variables come true.
+This future structure will be more or less attractive in terms of
+proﬁtability. The industry structure under each scenario will determine, and
+possibly shift, the sources of competitive advantage. For example, a
+scenario characterized by low casual user demand will imply very different
+requirements for competitive advantage than a scenario where casual user
+demand is high and the mix of channels shifts away from servicing dealers.
+In the latter scenario, differentiation will be based more on advertising and
+having light, compact saw designs rather than on traditional sources of
+uniqueness such as excellent dealers and durable saws. The analysis of each
+industry scenario must specify the resulting implications for competitive
+advantage in the value chain.
+Scenarios may differ in:
+
+
+• the relative importance of value activities
+• the appropriate conﬁguration of the value chain
+• the drivers of cost or uniqueness
+• the importance of interrelationships
+• the sustainability of different sources of competitive advantage
+• the choice of generic strategies
+Table 13–6 illustrates the analysis of two of the chain saw industry
+scenarios. Scenario 1 results in a structure quite similar to the current
+industry structure, while Scenario 7 results in a very different structure with
+quite different requirements for competitive advantage.
+An important part of analyzing a scenario is determining when it will
+become clear that the particular scenario has come to pass. Sometimes a
+scenario emerges quickly. In chain saws, however, a year passed before the
+uncertainty over the level of casual user demand was reduced. Several more
+years went by before the peaking of casual user demand was known.
+Competitors must choose between committing to a strategy early or waiting
+until better information becomes available. Therefore, a ﬁrm must estimate
+when uncertainties will be resolved in order to predict competitor behavior
+and to set the ﬁrm’s own strategy.
+TABLE 13–6 Analysis of Chain Saw Scenarios
+ 
+SCENARIO 1 “Casual user market never
+materializes”
+SCENARIO 7 “Private label dominates”
+Future Industry
+Structure
+Same as currently
+Entry barriers shift toward scale
+economies and absolute cost
+advantages
+Channels increase in power and price
+sensitivity
+Rivalry pressures increase
+Electric saws become a major product
+line
+Structural
+Attractiveness
+High
+Mediocre on average, though a leader
+can be proﬁtable
+Sources of
+Basically unchanged
+Market share of causal units
+
+
+Competitive
+Advantage
+Low-cost product designs
+Scale economies in advertising
+Automated plants in low labor-cost
+areas
+or
+Extreme strength in professional/farm
+segment to insulate a ﬁrm from the
+battle in the casual user segment
+Introducing Competitor Behavior into Scenarios
+If the ﬁrm has a dominant position in its industry or if competitor
+behavior has little potential effect on structure, the analysis of each scenario
+can stop at the industry level. In most industries, however, competitors can
+affect industry structure and their strategies will inﬂuence a ﬁrm’s options
+and likely success. Thus the analysis of scenarios must include competitors.
+In industries where a few powerful competitors exist, competitor analysis
+can be the most important part of analyzing each scenario.
+The future industry structure under each scenario will usually have
+different consequences for different competitors. Increased casual user
+demand, for example, will greatly beneﬁt ﬁrms with existing casual user
+models and representation in mass distribution channels compared to ﬁrms
+that exclusively serve professionals. Competitors will respond to structural
+change in ways that reﬂect their goals, assumptions, strategies, and
+capabilities. For example, Beaird-Poulan’s response to growing casual user
+demand is likely to be aggressive, conditioned by its parent company’s
+(Emerson Electric) aggressive growth goals. The behavior of competitors
+may, in turn, affect the speed and direction of structural changes in the
+scenario through a feedback loop. In chain saw Scenario 7, for example,
+aggressive investment in new capacity by Beaird-Poulan and McCulloch
+would enhance rivalry compared to the situation where one or both chose a
+conservative stance.
+The full arsenal of competitor analysis tools should be brought to bear in
+predicting how competitors will behave under different scenarios. Strategic
+mapping is often a useful tool for integrating predictions of likely
+competitor’s responses under a scenario.4 The axes of the map are chosen to
+
+
+reﬂect the critical sources of sustainable competitive advantage implied by
+the scenario. Since each scenario implies a different future industry
+structure, the variables that will most inﬂuence the relative position of
+competitors may vary. For example, since industry structure under chain
+saw Scenario 7 will shift toward more price rivalry, manufacturing scale
+will become an important source of competitive advantage though it is not
+as important under Scenario 1.
+Strategic mapping allows the simultaneous display of all competitors’
+expected behavior under a scenario. It also facilitates the analysis of
+interactions among competitors and their responses to each others’ moves.
+If all competitors are forecast to move in one direction under a scenario, for
+example, some may modify their strategies as the scenario unfolds to avoid
+a head-on confrontation.
+Often competitor behavior is difﬁcult to predict. If the behavior of one or
+more important competitors under a scenario is both uncertain and likely to
+have an important impact on competition, this introduces an additional
+scenario variable into the scenario. Scenarios under which there are key
+uncertainties about competitors must then be split into two or more
+additional scenarios based on assumptions about how competitors’ behavior
+will differ. This same approach may be necessary to deal with uncertainty
+about the likelihood of potential new entrants with differing resources and
+skills from existing competitors.
+Figure 13–6 illustrates the most important competitor uncertainties in the
+chain saw industry scenarios analyzed in Table 13–6. Under Scenario 1, the
+major uncertainty is whether McCulloch and Beaird-Poulan will
+aggressively invest in new capacity and advertising even though the casual
+user market never fully materializes. Both have strong proclivities to be
+aggressive given their new parent companies. Moreover, it will not be
+immediately clear to either ﬁrm which scenario is coming to pass. Under
+Scenario 7, Homelite’s strategy poses the key uncertainty because
+McCulloch and Poulan’s actions are quite predictable. Homelite may
+choose to pursue the entire casual user market despite the shift in strategy
+implied, or remain in its traditional segments and earn high proﬁts at the
+expense of share. While Homelite’s parent company may be prone to
+demand high proﬁts, the opportunity for rapid growth could also inﬂuence
+Homelite’s choice.
+
+
+The Number of Scenarios To Analyze
+Since the analysis of a scenario is often complex and time consuming,
+scenarios should be analyzed in a sequence that yields the necessary insight
+for the selection of a strategy without requiring full blown analysis of every
+possible scenario. A good starting point is to analyze the polar, or most
+widely separated, scenarios ﬁrst. The polar scenarios typically lead to the
+most different industry structures and thus will help bound the range of
+strategic options. The stark contrast between polar scenarios is often very
+stimulating to strategic thinking. In the chain saw industry, Scenarios 1 and
+7 were the polar scenarios on Figure 13–5.
+Figure 13–6. Competitor Behavior under Chain Saw Scenarios
+The next scenario analyzed after the polar scenarios should be one where
+the structural outcome is expected to differ signiﬁcantly from the polar
+scenarios. The scenario deemed most likely to occur should also be
+analyzed. This process should continue until the way in which the scenario
+variables determine future structure is understood. In addition, major
+discontinuities with a low probability of occurring should be included as
+special scenarios which are analyzed less extensively but factored into
+strategic choices.
+Figure 13–7 shows the analysis of an intermediate chain saw scenario,
+Scenario 9. This is very different scenario from Scenarios 1 and 7, because
+it assumes that casual user saws are a fad and private label sales will never
+catch on. Thus Scenario 9 creates a dilemma for ﬁrms about how to
+
+
+capitalize on the short-lived casual user boom without alienating dealers or
+sacriﬁcing key competitive strengths. It is clear from Figure 13–7 that the
+determinants of competitive advantage and likely competitor behavior will
+be quite different under Scenario 9 than under the other two scenarios.
+Briefer consideration of other chain saw scenarios suggests that these three
+industry scenarios are representative of the impact of uncertainty on
+competition.
+The purpose of scenarios is to understand the different ways in which
+industry and competitive conditions might change. Forecasts are frequently
+not accurate, and scenarios attempt instead to illustrate the logical outcomes
+of a range of forecasts. The scenarios actually analyzed will be but a few of
+the almost inﬁnite number of possible futures that might occur in an
+industry. However, well-chosen scenarios will illuminate the range of
+futures germane to strategy formulation. Scenarios should be chosen to
+communicate, educate, and stretch managers’ thinking about the future.
+Attaching Probabilities to Scenarios
+Rarely will each scenario be equally likely to occur. Industry scenarios
+are not intended to cover all possible outcomes—they are devices for
+exploring the strategic implications of possible future industry structures.
+However, the strategic implications of scenarios are partly a function of
+their likelihood of occurring. It is important to determine the relative
+probabilities of outcomes that are broadly similar to each scenario. If the
+scenarios analyzed are well chosen, they will represent the range of industry
+outcomes that might occur. In chain saws, outcomes close to Scenario 1 are
+the least likely to occur, while outcomes close to Scenarios 7 and 9 are
+about equally likely.
+
+
+Figure 13–7. Analysis of an Intermediate Chain Saw Industry Scenario
+Attaching probabilities to scenarios is beset with problems of bias and
+conventional wisdom. It is important to ﬁnd unbiased ways to assess the
+probabilities of scenarios, based on the underlying causal factors of each
+scenario variable. Managers’ own implicit probabilities should be identiﬁed
+and confronted if they vary widely or contradict those indicated by industry
+analysis.
+Summary Characteristics of Industry Scenarios
+A number of characteristics distinguish industry scenarios. Each scenario
+is, in effect, a full analysis of industry structure, competitor behavior, and
+the sources of competitive advantage under a particular set of assumptions
+
+
+about the future. The whole range of techniques available for analyzing
+industries and competitive advantage must be brought to bear; the scenario
+tool is merely a framework for identifying the key uncertainties and
+analyzing them, not an end in itself. The process of understanding how
+uncertainty affects future industry structure is as important as the scenarios
+that are actually constructed.
+The successful analysis of industry scenarios hinges on judgment and
+compromise. Constructing scenarios is a process of abstracting those
+elements of uncertainty that will drive strategic choices. Selecting and
+analyzing a few scenarios from the range of future industry structures
+requires picking the most important cases and simplifying them. The
+process is nearly always iterative, because the analyst will better understand
+the relationship between the key uncertainties and industry structure as the
+analysis proceeds.
+Finally, it should be clear that a major purpose of industry scenarios is to
+ensure internal consistency of a ﬁrm’s view of the future. A scenario aims to
+create a view of future industry structure that recognizes the interactions
+among variables and the need for consistency among assumptions about
+different industry characteristics. Scenarios provide a way of linking
+uncertain trends together into a number of alternate but consistent views of
+the future. Thus scenarios emphasize the ways in which industry trends and
+competitor behavior will interact or reinforce each other. Scenarios aim to
+reduce the chances that actions taken to deal with one element of
+uncertainty in an industry will unintentionally worsen a ﬁrm’s position vis-
+à-vis other uncertainties.
+Industry Scenarios and Competitive Strategy
+Having developed and analyzed a set of industry scenarios, the next task
+is to use them to formulate competitive strategy. Scenarios are not an end in
+themselves. Many companies falter in translating scenarios into strategy.
+The bulk of attention is often placed on developing scenarios and not on
+determining their implications. There is also little guidance in the literature
+on scenarios about how to use them to formulate strategy.
+
+
+A ﬁrm’s optimal strategy would usually—though not always—be
+different under each scenario if the ﬁrm knew the scenario would occur.
+Each scenario involves a different industry structure, behaviors of key
+competitors, and requirements for competitive advantage. Figure 13–8
+illustrates this in the chain saw industry, where the strategy for a leading
+ﬁrm is quite different under each scenario.
+A ﬁrm does not know which scenario will occur, so it must choose the
+best way to cope with uncertainty in selecting its strategy, given its
+resources and initial position. The typical prescription for coping with
+uncertainty is to choose a strategy that is “robust,” or viable regardless of
+which scenario occurs.5 However, this is by no means the only option. A
+ﬁrm might decide instead to prepare for one scenario despite the risk that it
+will not occur. Conversely, a ﬁrm with massive resources may sometimes be
+able to pursue the strategies necessary to cope with all scenarios
+simultaneously and wait for events to unfold before focusing its efforts. If
+there is uncertainty over the mix of channels, for example, a strong chain
+saw competitor might develop its position in all likely channels.
+A strategy built around one scenario is risky, while a strategy designed to
+ensure success under all scenarios is expensive. Moreover, the strategies
+implied by the different scenarios are often contradictory. For example,
+developing nondealer channels for chain saws will run a high risk of
+alienating dealers, and it is hard to pursue nondealers and dealers at the
+same time. In such circumstances, positioning for several scenarios may
+leave the ﬁrm “stuck in the middle” with no competitive advantage, a
+blurred brand image, and a suboptimal organizational structure (see Chapter
+1). The inconsistency of implied strategies under different scenarios often
+raises a serious strategic dilemma. In chain saws, preparing for all three
+scenarios would clearly lead to suboptimization, and thus chain saw
+competitors will have to resolve some difﬁcult tradeoffs before selecting
+their strategies. One of the important functions of scenarios is to reveal
+elements of strategy for which a ﬁrm must make such choices.
+Strategic Approaches Under Scenarios
+
+
+There are ﬁve basic approaches to dealing with uncertainty in strategy
+selection when a ﬁrm faces plausible scenarios with differing strategic
+implications. The approaches can sometimes, though not always, be
+employed sequentially or in combination.
+
+
+Figure 13–8. Competitive Strategy Under Alternative Chain Saw Scenarios
+
+
+1. Bet on the most probable scenario. In this approach, the ﬁrm designs
+its strategy around the scenario (or range of scenarios) that is seen to be
+most probable, accepting the risk that it may not occur. In chain saws, a ﬁrm
+would bet on whichever of the three scenarios it believed to be the most
+likely.
+In practice, betting on the most probable scenario is a common approach
+to strategy formulation under uncertainty though it is done implicitly.
+Managers often base their strategies on implicit assumptions about the
+future. Without becoming explicit, however, a scenario may be based on
+ignorance and may fail the test of internal consistency so critical to good
+planning under uncertainty.
+The desirability of consciously designing strategy for the most probable
+scenario depends on how likely it is that the most probable scenario will
+occur, how adverse the consequences are if other scenarios in fact occur,
+and how close the ﬁt is between the resources and initial position of the ﬁrm
+and the strategy for dealing with the most probable scenario. The risk of
+designing strategy around the most probable scenario is that other scenarios
+will occur which make the strategy inappropriate, and it is difﬁcult to
+modify the strategy mid-course.
+2.  Bet on the “best” scenario. In this approach, a ﬁrm designs its
+strategy for the scenario in which the ﬁrm can establish the most sustainable
+long-run competitive advantage given its initial position and resources. This
+approach seeks the highest upside potential by tuning the strategy to the
+possible future industry structure that yields the best outcome for the ﬁrm.
+The risk, of course, is that the best scenario does not occur and the chosen
+strategy is thereby inappropriate.
+3.  Hedge. In this approach, a ﬁrm chooses a strategy that produces
+satisfactory results under all scenarios, or at least under all scenarios that
+are deemed to have an appreciable probability of occurring. This is one
+approach to designing a robust strategy. The idea is similar to the
+“minimax” strategy in game theory, where a player makes the move that
+minimizes his maximum loss. In chain saws, hedging might entail
+developing a very wide model line, or entering nondealer channels with
+
+
+slightly different models sold under a different brand name at the same time
+as the ﬁrm continued to serve dealers.
+Usually hedging will yield a strategy that is not optimal for any scenario.
+The resulting sacriﬁce in strategic position is traded off in favor of a
+reduction in risk. Moreover, hedging usually implies higher costs (or lower
+revenues) than a betting strategy because it must prepare a ﬁrm for several
+different possible competitive circumstances rather than one.
+4.  Preserve ﬂexibility. Another approach to dealing with uncertain
+scenarios is to choose a strategy that preserves ﬂexibility until it becomes
+more apparent which scenario will actually occur. This is another way of
+creating a robust strategy and illustrates that robustness must be carefully
+deﬁned. The ﬁrm postpones resource commitments that lock it into a
+particular strategy. Once the uncertainties begin to resolve themselves, a
+strategy that ﬁts the scenario that appears to be occurring is chosen, taking
+into account the ﬁrm’s resources and skills. In chain saws, ﬂexibility might
+be preserved by maintaining the ﬁrm’s strategy in the professional segment
+and sourcing casual user saws initially from another ﬁrm.
+A ﬁrm preserving ﬂexibility often pays a price in strategic position
+because of ﬁrst-mover advantages gained by ﬁrms that commit early. First-
+mover advantages—e.g., reputation, a proprietary learning curve, and
+ability to tie up the best retail channels—were discussed in detail in Chapter
+5. In chain saws, the ﬁrm that moves into new channels ﬁrst may well get its
+pick of the best ones. Preserving ﬂexibility sacriﬁces ﬁrst-mover advantages
+in return for a reduction in risk. It is different from hedging because it
+involves delaying commitment, rather than embarking on a strategy that
+works reasonably well under all feasible scenarios. If a ﬁrm can recognize
+early which scenario is going to occur, it can minimize the cost of
+preserving ﬂexibility.
+5.  Inﬂuence. In the ﬁnal approach to addressing uncertainty, a ﬁrm
+attempts to use its resources to bring about a scenario that it considers
+desirable. A ﬁrm seeks to raise the odds that a scenario will occur for which
+it has a competitive advantage. Doing so requires that a ﬁrm try to inﬂuence
+the causal factors behind the scenario variables. Since a causal factor in
+casual user demand for chain saws is woodburning stove installations, for
+
+
+example, a ﬁrm might try to inﬂuence stove demand. This might involve
+coalitions with woodburning stove manufacturers, or advertising that
+stressed the value of woodburning stoves at the same time that it advertised
+chain saws. Technological changes, channel policies, government
+regulation, and many other sources of uncertainty can sometimes be
+inﬂuenced. The possibility for inﬂuence and its cost must be weighed
+against the competitive advantage to be gained if a ﬁrm can raise the odds
+that its preferred scenario will occur.
+Combined and Sequenced Strategies
+It is often possible and desirable to employ combined and sequential
+strategies. Betting on the most probable or best scenario can be combined
+with attempting to inﬂuence which scenario occurs. Similarly, the approach
+of preserving ﬂexibility is logically part of a sequential strategy that
+ultimately involves a bet on the most probable scenario. A ﬁrm can also
+choose to hedge initially and then bet on a future industry structure as the
+actual scenario becomes clearer, though this is usually more costly than
+preserving ﬂexibility and then betting.
+A ﬁrm may also be able to set policies in some activities in the value
+chain to bet on a scenario, while hedging or preserving ﬂexibility in others.
+In chain saws, for example, a ﬁrm might bet on high casual demand in its
+manufacturing and technology development activities through building new
+low-cost facilities and designing several inexpensive, lightweight models.
+At the same time, though, it could hedge its bet by minimizing the level of
+vertical integration in manufacturing to reduce capital investment and
+thereby transfer some of the risk to suppliers. It could also hedge its bets by
+spending heavily on marketing and sales activities to maintain dealer
+relations and preserve market position in the professional and farm segment.
+A ﬁrm may also choose to contain risk in another way, by committing
+early to reversible actions (advertising) while postponing commitments on
+irreversible investments (e.g., plants). Any form of avoiding commitments
+or hedging will usually involve some sacriﬁce in competitive advantage,
+though, and may also be confusing to both employees and outside observers
+such as security analysts.
+
+
+The Choice of Strategy Under Industry Scenarios
+Each of the ways of coping with uncertain industry structural change has
+its potential beneﬁts, costs, and risks in terms of competitive advantage. The
+following factors are most important in choosing a ﬁrm’s approach:
+First-mover Advantages. The size of ﬁrst-mover advantages (Chapter 5)
+has a major inﬂuence on the attractiveness of betting versus postponing
+commitments. Where the ﬁrst mover gains a signiﬁcant competitive
+advantage, for example, the option of ﬂexibility may be ruled out. In chain
+saws, gaining access to new channels may well involve signiﬁcant ﬁrst-
+mover advantages, because many mass merchandisers are unlikely to carry
+multiple lines of saws.
+Initial Competitive Position. Scenarios will differ in their potential for a
+ﬁrm given its initial competitive position. Designing a strategy for the
+scenario that ﬁts a ﬁrm’s initial position may produce a signiﬁcantly better
+outcome than designing a strategy around the most probable scenario. This
+difference in performance may compensate for the risk of betting on a less
+probable scenario. Inﬂuencing which scenario occurs is an attempt to shift
+probabilities in the direction of the scenario where a ﬁrm has the most
+advantages.
+Cost or Resources Required. Hedging and inﬂuence tend to require
+greater resources or imply higher costs than does betting on one scenario.
+Preserving ﬂexibility is usually somewhere in between.
+Risk. The risk of each approach is a function of a number of factors:
+TIMING OF RESOURCE COMMITMENT. Early commitment is usually riskier
+than later commitment. Preserving ﬂexibility minimizes risk by postponing
+commitment, while hedging seeks to reduce risk in a different way. How
+long the ﬁrm can delay its commitment depends on ﬁrst-mover advantages
+and the lead time in making moves.
+THE DEGREE OF INCONSISTENCY OF STRATEGIES FOR ALTERNATE SCENARIOS.
+Risk is a function of how poorly a strategy will perform if the “wrong”
+
+
+scenario occurs. Hedging minimizes this risk at the price of higher costs or
+poorer position. The degree of inconsistency among strategies for alternate
+scenarios is a function of how different industry structure and the sources of
+competitive advantage are under each scenario.
+RELATIVE PROBABILITY OF THE SCENARIOS. The choice of approaches
+depends on the relative probability of the scenarios. Hedging is a way to
+deal with risk by reducing the exposure of a ﬁrm to any scenario, while
+inﬂuence seeks to reduce risk by shifting probabilities toward the desired
+scenario. Betting on the most probable scenario is more risky than hedging,
+while betting on the best scenario can be the most risky approach.
+THE COST OF CHANGING STRATEGIES ONCE UNCERTAINTY IS RESOLVED. Risk
+depends on the degree to which a ﬁrm is locked in once it commits to a
+strategy by setting its product line, channels, advertising policies, facilities,
+and so on. This will depend on the degree of irreversibility of the required
+investments, which will differ from industry to industry and strategy to
+strategy. Preserving ﬂexibility seeks to minimize the cost of changing
+strategies.
+Competitors’ Expected Choices. A ﬁrm’s choice of how to deal with
+uncertainty must reﬂect the choices its competitors have made or are
+expected to make. Competitor bets may preempt a ﬁrm from certain
+strategies and open up others. Hedging or preserving ﬂexibility by
+competitors usually raises the payoff to the ﬁrm that makes a bet that proves
+correct.
+The best way to deal with uncertainty is to make a conscious choice to
+follow one or more approaches, rather than a choice based on inertia or an
+implicit scenario. Weighing the factors involved in choosing an approach
+described above requires a logic for each scenario that portrays the
+interdependencies between various aspects of industry structure. The most
+challenging part of dealing with uncertainty is to ﬁnd creative ways to
+minimize the cost of preserving ﬂexibility or hedging, and to maximize the
+advantages of betting correctly. Understanding the way in which each
+
+
+activity in the value chain can contribute to competitive advantage under the
+various scenarios may allow the ﬁrm to do so.
+Scenario Variables and Market Intelligence
+Which scenarios will occur is determined by the scenario variables.
+Scenario variables are thus key indicators of the path of industry structural
+change—they can become clear quickly or the uncertainty may persist for
+long periods. Scenario variables and their causal factors should be the focal
+point for gathering market intelligence. Changes affecting scenario
+variables are warning signals of industry structural change. A ﬁrm
+preserving ﬂexibility, for example, will want to closely monitor the state of
+scenario variables to decide when to commit.
+Early information about the future state of scenario variables has a high
+strategic value. The earlier a ﬁrm can conﬁdently predict the occurrence of a
+particular scenario, the sooner it can commit to a strategy with the
+accompanying gains in position described above. Thus investments in
+information gathering should concentrate on scenario variables rather than
+on indiscriminate tracking of the myriad other changes that accompany
+industry evolution.
+Good information on scenario variables is also extremely valuable at the
+time when industry scenarios are constructed. Since the scenario variables
+are essential to structural change, understanding them may improve the set
+of scenarios investigated or even turn what initially appear to be scenario
+variables into predetermined elements of structure. In chain saws, for
+example, good data about household formation, the number of dwellings
+with ﬁreplaces and other causal factors could reduce the range of
+assumptions that had to be made about casual user demand.
+Scenarios and the Planning Process
+Every plan is based on an industry scenario in one form or another,
+though the process is frequently an implicit one. The use of explicit industry
+scenarios brings the uncertainty in planning out into the open, and bases
+strategy on a conscious and complete understanding of the likely
+
+
+signiﬁcance of uncertainty for competition. The resistance to employing
+scenarios will be greatly mitigated if they are seen in this light—as nothing
+fundamentally new or arcane. Industry scenarios are a useful device for
+getting a management team involved in thinking about the future
+systematically, and modifying unrealistic assumptions in a nonthreatening
+way because scenarios are not intended as forecasts.6
+Industry scenarios are best developed by business unit managers, with
+guidance and input from others in the ﬁrm as well as outsiders. This places
+the task of understanding the effects of uncertainty in the hands of those
+who must actually set competitive strategy, and ensures that scenarios are
+truly relevant to the business unit. Industry scenarios should be constructed
+well into the planning process, once basic industry, competitor, and value
+chain analysis has been done. Industry scenarios will be ineffective without
+a good base of knowledge, and probably should not be introduced into the
+planning systems of ﬁrms without good basic planning skills. Scenarios are
+best used to guide the choice of a strategy, rather than as a means of
+conﬁrming one.
+Scenarios are not needed every year for every business unit. They are
+necessary only when signiﬁcant uncertainties are present in an industry.
+However, constructing industry scenarios irregularly runs the risk that
+managers will overlook key uncertainties in their industries. Scenarios force
+a creative search for possible structural changes. How often scenarios are
+constructed must depend in part on the conﬁdence of top management in
+the objectivity and vision of business unit managers.
+An important organizational issue in using industry scenarios is the
+relationship between recognizing uncertainty and the level commitment of
+management to a direction. Scenarios emphasize the uncertainty present in
+an industry, while successful implementation of strategies is usually more
+effective if there is widespread commitment to the chosen strategy within an
+organization. This suggests that scenarios should be constructed by the
+management team of a business unit, but only the chosen strategy should be
+widely communicated in the organization. Organizations can only cope with
+so much uncertainty and ambiguity.
+Corporate Role in Constructing Industry Scenarios
+
+
+A corporate planning group or other corporate level managers can play a
+role in industry scenarios, even though industry scenarios should be
+constructed at the business unit level.
+Macroscenarios as an Input. A corporate group can provide
+macroscenarios to business units, as a part of the environmental analysis
+needed to construct industry scenarios. Macroscenarios can stretch
+traditional modes of thinking by business unit managers in a way that is
+difﬁcult if scenarios are purely business unit driven.
+Technology Forecasting. A corporate group can conduct or sponsor
+technological forecasting in core technologies areas or in technologies with
+a potentially broad impact on many industries, a suggestion I made in
+Chapter 5. Such research may help expand the horizons of business unit
+managers about possible technological impacts on their industries, a key
+source of uncertainty.
+Training and Challenging. A corporate planning group can play an
+important role in providing training and guidance in the use of the industry
+scenario technique itself. Constructing scenarios is a complicated task that
+gets much easier with experience, and experience can be shared within a
+ﬁrm.
+In addition to training, an outside perspective can often be useful in
+identifying scenario variables, determining the most important ones,
+assigning objective probabilities, probing ways of hedging or preserving
+ﬂexibility at low cost, and devising ways to inﬂuence which scenario will
+occur. Corporate, sector, or group managers can play a useful role through
+participating in these ways in business unit scenario building efforts.
+Corporate Risk Analysis. By analyzing each business unit’s industry
+scenarios, higher-level managers can identify scenario variables that have
+widespread importance for a diversiﬁed ﬁrm. The overall consequences to
+the ﬁrm should a particular scenario variable turn out one way or another
+can thus be assessed. In cases where corporate exposure to a particular
+scenario variable is great, some business unit strategies may have to be
+modiﬁed. At the same time, large investments may be justiﬁed in attempting
+
+
+to inﬂuence a scenario variable if it affects a number of business units. This
+approach to corporate risk analysis is based on well-informed assessments
+of uncertainties by business units. Top-down approaches to corporate risk
+analysis in many ﬁrms tend to be based on aggregate and oversimpliﬁed
+assessments of risks in each business unit by outsiders.
+Industry Scenarios and Creativity
+Most strategic plans are based on single-point estimates about the future,
+usually the best guess of the managers involved. Rarely are managers able
+to perceive fundamental shifts in their competitive environment ahead of
+time, and ﬁnd imaginative ways of dealing with them. Industry scenarios
+are a systematic tool for examining the impact of uncertainty on
+competition by explicitly identifying the key uncertainties—the scenario
+variables. Scenarios aim to stretch thinking about the future and widen the
+range of alternatives considered. Scenarios provide a mechanism for
+improving the chances that views of the future are consistent. Having
+identiﬁed industry scenarios, a ﬁrm can then either mitigate uncertainty
+through its choice of strategy (inﬂuence, hedging, preserve ﬂexibility) or
+make a bet on the future mindful of the risk involved. Industry scenarios
+also illuminate the consequences of mistaken forecasts about the future, and
+the key information to be acquired in forecasting efforts. Thus industry
+scenarios are fundamentally a tool to improve the creativity of strategic
+planning. They cannot insure creativity, but they can signiﬁcantly raise the
+odds.
+The industry scenario tool is not sufﬁcient for strategy formulation in
+and of itself. Rather, scenarios provide a framework for formulating strategy
+under conditions of uncertainty. When combined with substantive
+conceptual tools for understanding industry structure, competitor behavior,
+and competitive advantage, the scenario tool can be an important part of the
+strategist’s arsenal.
+
+
+14
+Defensive Strategy
+Every ﬁrm is vulnerable to attack by competitors. Attacks come from two
+types of competitors—new entrants into the industry and established
+competitors seeking to reposition themselves. I will use the term
+“challenger” to describe either type. A well implemented offensive strategy
+constitutes the single best defense against attack by a challenger. A ﬁrm that
+continuously invests to gain competitive advantage by improving its relative
+cost position and differentiation will be difﬁcult to challenge successfully.
+Even with a vigorous offensive strategy, however, an important role remains
+for defensive strategy. A ﬁrm can make it harder for challengers to attack it
+through the way it chooses to compete.
+Defensive strategy aims to lower the probability of attack, divert attacks
+to less threatening avenues, or lessen their intensity. Instead of increasing
+competitive advantage per se, defensive strategy makes a ﬁrm’s competitive
+advantage more sustainable. Almost all effective defensive strategies
+require investment—a ﬁrm foregoes some short term proﬁtability to
+enhance sustainability. The most successful competitive strategies combine
+offensive and defensive components.
+This chapter describes the principles of defensive strategy. Defensive
+strategy rests on inﬂuencing competitors’ decision-making processes in
+order to make an attack on a ﬁrm’s position less desirable from the
+challenger’s perspective. This is done by reducing the inducement for a
+competitor to challenge the ﬁrm, or raising barriers to entry and mobility to
+make a challenge more difﬁcult. Since an attack by any challenger changes
+character over time, appropriate defensive steps will change at different

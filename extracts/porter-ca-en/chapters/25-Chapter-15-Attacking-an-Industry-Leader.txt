@@ -1,0 +1,796 @@
+# Chapter 15: Attacking an Industry Leader
+
+that attempt to shift the basis of competition to those that exploit a leader’s
+inﬂexibility. I also describe the characteristics of industries and leaders that
+signal a leader’s vulnerability. The chapter concludes with a discussion of
+some common pitfalls in attacking leaders.
+While every chapter in this book has provided suggestions for offensive
+strategy, the difﬁcult task of attacking a leader successfully is a way of
+drawing them together. Though the chapter is framed in terms of attacking
+leaders, the same principles apply in choosing an offensive strategy against
+any competitor. Moreover, industry leaders can employ these same concepts
+to understand their own vulnerabilities and to develop defensive strategies
+more effectively.
+Conditions for Attacking a Leader
+The cardinal rule in offensive strategy is not to attack head-on with an
+imitative strategy, regardless of the challenger’s resources or staying power.
+The built-in advantages inherent in a leader’s position will usually
+overcome such a challenge and the leader will in all likelihood retaliate
+vigorously. The ensuing battle will almost inevitably exhaust the
+challenger’s resources before those of the leader.
+Procter & Gamble (P&G) has violated this rule in the coffee industry in
+challenging General Foods’ Maxwell House brand. In coffee, unlike many
+of its other products, P&G’s Folger’s has little or no product superiority
+over Maxwell House. P&G also produces and markets Folger’s using the
+same value chain as General Foods. Maxwell House has retaliated
+vigorously with a broad array of defensive tactics, beneﬁtting from its large
+market share and favorable cost position. Folger’s has gained some share,
+primarily at the expense of smaller competitors, but has yet to achieve
+acceptable proﬁtability. Maxwell House, conversely, has maintained its
+proﬁtability and continues to resist Folger’s attempt to gain share
+successfully.
+Coca-Cola’s sale of its wine operations, called the Wine Spectrum, to
+Seagrams is still another manifestation of violating the rules for attacking
+leaders. While Coke gained market share against second-tier competitors in
+the wine industry, it faced a substantial cost disadvantage to Gallo (see
+
+
+Chapter 3) and had no innovative approach in product or marketing to
+counteract it, only heavy spending. Gallo’s strong resistance to Coke meant
+that Coke never earned acceptable proﬁts in wine. IBM has faced similar
+difﬁculties in copiers. It has achieved little differentiation or cost advantage
+and faces stiff resistance from Xerox and Kodak in medium-and high-
+volume copiers.
+Successfully attacking a leader requires that a challenger meet three
+basic conditions:
+1.  A sustainable competitive advantage. A challenger must possess a
+clear and sustainable competitive advantage over the leader, in either cost or
+differentiation. If the advantage is low cost, the ﬁrm can cut price to gain
+position against a leader, or earn higher margins at industry average prices
+to allow reinvestment in marketing or technology development. Both will
+allow a challenger to gain share. Alternatively, if the ﬁrm achieves
+differentiation, it will allow premium prices and/or minimize the cost of
+marketing or gaining trial against the leader. Either source of competitive
+advantage the challenger possesses must be sustainable, using the criteria
+for sustainability in Chapters 3 and 4. Sustainability ensures that the
+challenger will have a sufﬁciently long period to close the market share gap
+before the leader can imitate.
+2. Proximity in other activities. A challenger must have some way of
+partly or wholly neutralizing the leader’s other inherent advantages. If the
+challenger employs a differentiation strategy, it must also partially offset the
+leader’s natural cost advantage due to scale, ﬁrst mover advantages, or other
+causes. Unless a challenger maintains cost proximity, the leader will use its
+cost advantage to neutralize (or leapfrog) the challenger’s differentiation.
+Similarly, if the challenger bases its attack on a cost advantage, it must
+create an acceptable amount of value for the buyer. Otherwise, the leader
+will be able to sustain a price premium over the challenger, yielding the
+leader the gross margin needed to retaliate vigorously.
+3. Some impediment to leader retaliation. A challenger must also possess
+some means for blunting the leader’s retaliation. The leader must be
+disinclined or constrained from protracted retaliation against the challenger,
+
+
+either because of the leader’s own circumstances or because of the strategy
+chosen by the challenger. Without some impediment to retaliation, an attack
+will trigger a response by the leader that can overwhelm a challenger
+despite its competitive advantage. A committed leader with resources and
+an entrenched position can, through aggressive retaliation, force a
+challenger to bear unacceptable economic and organizational costs.
+The three conditions for successfully attacking a leader ﬂow directly
+from the principles of competitive advantage described in Chapter 1. The
+odds of success in gaining position increase with the challenger’s ability to
+meet each condition. P&G’s Folger’s coffee, Coca Cola’s Wine Spectrum,
+and IBM copiers did not decisively meet any of the conditions, and this
+explains their disappointing experiences.
+The difﬁculty of meeting the three conditions hinges largely on a leader’s
+strategy and its aggressiveness. If a leader is “stuck in the middle” with no
+competitive advantage, a challenger can often achieve a competitive
+advantage in either cost or differentiation quite easily. In these instances, a
+challenger need only recognize the leader’s vulnerability and implement a
+strategy that exploits it. On the other hand, attacking a leader that is
+aggressively pursuing a cost leadership or differentiation strategy will
+usually require that a challenger conceive of a major strategic innovation,
+such as developing a new value chain, if it is to mount a successful
+challenge.
+An example of an industry in which challengers met all three conditions
+was corn wet milling. Cargill and Archer-Daniels-Midland (ADM)
+successfully entered against CPC International, A. E. Staley, and Standard
+Brands, the traditional industry leaders. Cargill and ADM entered the
+industry with new continuous process plants that embodied recent changes
+in process technology. They also restricted themselves to a narrow product
+line, consisting only of higher-volume items, and reduced overhead through
+streamlined sales forces. These choices allowed Cargill and ADM to gain a
+signiﬁcant cost advantage over traditional producers. At the same time,
+Cargill and ADM achieved parity or proximity in differentiation, despite the
+efforts at differentiation by the industry leaders. The product itself is a
+commodity and many buyers did not value extensive service. In addition,
+several factors impeded retaliation by the traditional industry leaders. They
+
+
+preferred not to retaliate against the challengers for fear of upsetting the
+industry equilibrium, where rivalry in the industry had traditionally been
+characterized as a gentlemen’s club. At the same time, CPC (the number
+one ﬁrm) and Standard Brands had embarked on diversiﬁcation programs,
+diverting attention and resources from corn milling.
+While the corn milling example illustrates a situation where challengers
+met all three conditions, meeting one condition very well can offset a
+challenger’s inability to meet another. The successful entry of “no frills”
+airlines such as People Express and Southwest provides a case where
+challengers met two conditions strongly enough to offset barely meeting the
+third. Chapter 3 has described how the no-frills carriers achieved a
+signiﬁcant cost advantage over the trunks by employing a different value
+chain. At the same time, many passengers perceived the no-frills carriers’
+product as similar to that offered by trunks, since differentiation in airline
+transportation is difﬁcult. However, the no-frills carriers faced a major
+threat of retaliation by the trunks as the trunks sought to defend their market
+share. Though the trunks hesitated to retaliate because of the high cost of
+cutting prices and the fear of eroding their quality images, the threat posed
+by the no-frills carriers was so great that retaliation eventually occurred.
+Though the no-frills carriers enjoyed only a relatively short period free of
+retaliation, their signiﬁcant cost advantage greatly increased the cost of
+retaliation for the trunks. Many trunks never attempted to match the prices
+of the no-frills carriers.
+Federal Express’s successful entry against Emery Air Freight provides
+another illustration of a challenger using a strong advantage in one area to
+offset a leader’s lingering strengths. Federal Express’s unique delivery
+system, utilizing its own planes and a Memphis hub, quickly gave it
+differentiation in overnight delivery of small packages. It achieved higher
+reliability as well as other forms of differentiation, described in Chapter 4.
+While Federal Express would ultimately achieve cost parity or even a cost
+advantage, however, the greater scale sensitivity of its value chain meant
+that its initial cost position was high relative to Emery’s. This cost
+disadvantage and Federal’s heavy debt load made it initially very vulnerable
+to retaliation. Emery, however, did not take Federal Express seriously. It
+chose not to retaliate until Federal Express had gained enough share to
+establish cost proximity. As the Federal Express example illustrates, slow
+
+
+retaliation by the leader buys a challenger time (and resources) to overcome
+disadvantages in cost or differentiation. The principle of responding
+quickly, described in Chapter 14, proves once again important in
+determining a leader’s ability to defend position.
+Avenues for Attacking Leaders
+Successfully attacking a leader always requires some kind of strategic
+insight. A challenger must usually ﬁnd a different strategy in order to
+neutralize the leader’s natural advantages, and recognize or create
+impediments to leader retaliation. While the strategies that have succeeded
+against leaders differ widely from industry to industry, three avenues of
+attack emerge as possible:
+•  Reconﬁguration. A challenger innovates in the way it performs
+activities in the value chain or in the conﬁguration of the entire chain.
+• Redeﬁnition. A challenger redeﬁnes its competitive scope compared to
+the leader.
+•  Pure spending. A challenger buys market position through superior
+resources or greater willingness to invest, out of which competitive
+advantage grows.
+Each of the three avenues changes the rules of competition in an industry
+to offset a leader’s advantages and allow the challenger to gain a cost or
+differentiation advantage of its own. The three avenues are not mutually
+exclusive and have been successfully pursued in tandem. Redeﬁnition of
+scope usually requires parallel reconﬁguration of the value chain, for
+example. Employing more than one of these avenues of attack generally
+raises the odds of success in attacking a leader. The three avenues are
+displayed in Figure 15–1.
+The avenues of attacking a leader differ along two important dimensions
+that are represented in Figure 15–1: the conﬁguration of the challenger’s
+value chain compared to the leader and the competitive scope of the
+challenger compared to the leader’s. A challenger can employ the same
+value chain or one in which it has reconﬁgured individual activities or the
+
+
+entire chain. At the same time, a challenger may compete with the same
+scope of activities as the leader or for a wider or narrower scope. As
+described in Chapter 2, scope encompasses segment scope within the
+industry, degree of integration, geographic scope and industry scope, or the
+range of industries in which the ﬁrm competes with a coordinated strategy.
+Figure 15–1. Avenues for Attacking Leaders
+Pure reconﬁguration involves reconﬁgured activities or ultimately a
+signiﬁcantly different value chain, though with the same scope as the leader.
+Pure redeﬁnition involves a different scope but the same basic value chain
+for competing. Reconﬁguration and redeﬁnition combines both a new chain
+and a different scope. Pure spending neither reconﬁgures the value chain
+nor redeﬁnes scope, but relies on greater investment by the challenger to
+lead to competitive advantage.
+Reconﬁguration
+Reconﬁguration allows a challenger to compete differently though it is
+competing with the same scope of activities as the leader. The challenger
+performs individual value activities differently or reconﬁgures the entire
+chain to either lower cost or enhance differentiation. Reconﬁguration of the
+value chain must be sustainable against imitation if it is to serve as the basis
+
+
+for attacking leaders. Sustainability comes from ﬁrst-mover advantages and
+the other sources described in Chapters 3 and 4.1
+The ways in which reconﬁguration leads to competitive advantage have
+been discussed throughout this book, and can involve any activity in the
+value chain. Chapters 3 and 4 described in detail how reconﬁguring the
+value chain can lead to cost advantage or differentiation. In wine, for
+example, Chapter 3 described how Gallo was able to achieve a signiﬁcant
+cost advantage through reconﬁguring value activities in procurement,
+blending, bottling, logistics and marketing compared to competitors. In
+frozen entrees, similarly, Chapter 4 described how Stouffer’s reconﬁgured
+marketing, technology developments, procurements, and broker relations to
+achieve and sustain differentiation.
+The more value activities that can be reconﬁgured, the greater the
+possibility will usually be that the challenger’s competitive advantage over
+the leader is sustainable. Reconﬁguring the entire chain, as in the no-frills
+airline and Iowa Beef examples described earlier in the book, is usually the
+most potent source of advantage against leaders who are often highly
+committed to the traditional industry value chain.
+Some illustrative examples of reconﬁgurations that have been the basis
+of successful attacks on leaders are the following:
+Product Changes. A challenger can attack a leader through changing the
+product.
+SUPERIOR PRODUCT PERFORMANCE OR FEATURES. Products with attributes
+that are valuable to buyers grow out of an understanding of the buyer’s
+value chain (Chapter 4). P&G’s Charmin bathroom tissue was softer and
+more absorbent than Scott Paper’s product, which allowed P&G to emerge
+as a leader. Similarly, CooperVision’s and Barnes-Hind/Hydrocurve’s (a
+Revlon division) extended-wear soft contact lenses provided the vehicle for
+attacking Bausch and Lomb.
+LOW-COST PRODUCT DESIGN. Chapter 3 describes how product design can
+affect relative cost position. Canon’s NP200 copier, using toner projection
+development technology, required many fewer parts than competitors’
+
+
+machines. This low-cost design allowed Canon to improve position
+signiﬁcantly in small plain paper copiers.
+Outbound Logistics and Service Changes. A challenger can attack a
+leader through changing such things as product support, after-sale service,
+order processing, or physical distribution.
+MORE 
+EFFICIENT 
+LOGISTICAL 
+SYSTEM. Chapter 3 described how
+opportunities to improve relative cost position in the logistical system can
+be analyzed. Relative cost position can sometimes be signiﬁcantly reduced
+by reconﬁguring its value activities as Federal Express did.
+MORE RESPONSIVE AFTER-SALE SUPPORT. Chapter 4 showed how to assess
+the parameters of service that are most valuable to buyers. A challenger can
+create differentiation if it reconﬁgures the value chain to make it more
+responsive in terms of response to buyer inquiries, documentation, etc.
+Vetco, for example, a division of Combustion Engineering that sells
+offshore oil drilling equipment, has gained position signiﬁcantly through
+providing excellent training materials and other after-sale support to help its
+buyers master the complex underwater drilling task.
+ENHANCED ORDER PROCESSING. Chapter 4 described how possible
+enhancements to the delivery system can be identiﬁed and evaluated, and
+create differentiation. Enhancements include such things as performing new
+functions like controlling buyer inventory—this, in effect, takes over
+activities in the buyer’s value chain. Several wholesaling ﬁrms, for example,
+have created differentiation by allowing online ordering to take over
+inventory management for their retail customers. McKesson, for example,
+has substantially improved its position through its 3PM order processing
+system for distributing pharmaceuticals. The system allows pharmacists to
+order directly and provides them other valuable information.
+Marketing Changes. Challengers have employed innovations in
+marketing value activities to launch successful attacks against leaders in
+many industries. Some of the most common innovations include:
+
+
+INCREASED SPENDING IN AN UNDERMARKETED INDUSTRY. Challengers can
+attack a leader by escalating marketing spending. In mustard, frozen
+entrees, and frozen potatoes, for example, Grey Poupon, Stouffer’s, and
+Ore-Ida respectively have succeeded or are now undertaking to raise the
+traditional rates of advertising spending. Higher spending levels allow ﬁrms
+to signal value better, gaining high levels of brand recognition and premium
+prices.
+NEW POSITIONING. A challenger can conceive of a new way to position a
+product in order to attack a leader. Stouffer’s repositioning of frozen entrees
+as a gourmet item was one of the key elements of its ascendancy, as
+discussed in Chapter 4.
+NEW TYPE OF SALES ORGANIZATION. A new type of sales organization,
+perhaps with a different type of salesperson, can sometimes be the basis of a
+successful attack on a leader. Crown Cork and Seal’s technically proﬁcient
+sales force, reorganized to sell the complete line of Crown’s cans, bottle
+caps, and packaging machinery to canners, was one of the reasons for
+Crown’s success against American Can and Continental Can.
+Operations Changes. Changes in operation’s value activities that lower
+costs or enhance differentiation have provided the basis for many successful
+attacks on leaders. As was discussed in Chapter 3, Iowa Beef pioneered an
+entirely new value chain in meat packing. Cargill and ADM employed new
+continuous process plants to enter corn wet milling. A modiﬁed production
+process that enhanced quality also contributed to Ore-Ida’s success in
+frozen potatoes. Sometimes entirely new technologies emerge that change
+the process, or a subtechnology changes that allows an old process
+technology to be reinvigorated (Chapter 5).
+Downstream Reconﬁguration. Employing channels neglected by the
+leader or preemptively concentrating on emerging channels have served as
+avenues of attack against industry leaders. Some examples of downstream
+innovations include:
+
+
+PIONEER A NEW CHANNEL. Timex opened up the drug store and mass
+merchandisers as channels for watches in the 1950s, allowing it to gain a
+leadership position in the industry despite the entrenched position of Bulova
+and the Swiss watchmakers. The traditional leaders had employed the
+jewelry store channel.
+PREEMPT AN EMERGING CHANNEL. Richardson-Vicks pioneered the sale of
+quality skin care products in supermarkets with its Oil of Olay product line.
+Supermarkets were an emerging channel for this type of product, and
+Richardson-Vicks gained substantial ﬁrst-mover advantages that have
+allowed Oil of Olay to remain a leader.
+GO DIRECT. YKK, the Japanese zipper company, took on Talon
+successfully by bypassing wholesalers and selling directly to apparel
+companies.
+The most successful attacks on leaders often involve more than one
+innovation in the value chain. Stouffer’s combined a product change with
+several signiﬁcant marketing innovations. Cargill and ADM combined a
+process change with product line and marketing changes. Timex combined
+a new channel with low-cost manufacturing technology and unprecedented
+TV advertising. Competitive advantage that is sustainable usually stems
+from multiple sources, as Chapters 3 and 4 have illustrated.
+Structural changes often create the opportunity for reconﬁguring of the
+value chain. Timex’s attack on the Swiss exploited the emergence of TV
+and mass distribution channels, in addition to wartime improvements in
+manufacturing technology. At the same time, growth in buyer income and
+shifting attitudes made a watch a product purchased for everyday use. In
+many industries, however, reconﬁguration hinges on rethinking what has
+been done rather than exploiting external changes. Ultimately, however,
+reconﬁguring the value chain is a creative act that is difﬁcult to achieve
+routinely or predictably. Industry analysis, value chain analysis, technology
+analysis, industry scenarios, and other concepts in this book can help
+identify possibilities for reconﬁguration.
+
+
+Redeﬁnition
+The second broad avenue for attacking a leader rests on redeﬁning the
+scope of competition. Broadening scope may allow the achievement of
+interrelationships or the beneﬁts of integration, while narrowing scope can
+allow the tailoring of the value chain to a particular target. As I have
+discussed extensively in earlier chapters, particularly Chapters 2, 7, 9, and
+12, the scope of a ﬁrm’s activities can greatly inﬂuence competitive
+advantage. A challenger can change competitive scope in four ways which
+reﬂect the four types of scope. These four modes of redeﬁnition are not
+mutually exclusive:
+•  Focus within the Industry. Narrowing the basis of competition to a
+segment rather than across the board.
+•  Integration or De-integration. Widening or narrowing the range of
+activities performed in-house.
+• Geographic Redeﬁnition. Broadening the basis of competition from a
+region or country to worldwide, or vice versa.
+• Horizontal Strategy. Broadening the basis of competition from a single
+industry to related industries.
+FOCUS
+Successful focus strategies against leaders have taken all the forms
+described in Chapter 7:
+• Buyer focus. Motel ﬁrms such as La Quinta have focused on middle-
+level business travellers and created a new low-cost value chain to
+meet their particular needs.
+• Product focus. Canon, Ricoh, and Savin focused on small, plain paper
+copiers to challenge Xerox.
+• Channel focus. Stihl focused on serving buyers only through servicing
+dealers to succeed against Homelite and McCulloch in chain saws.
+A focus strategy often has the advantage of being difﬁcult for a leader to
+retaliate against without compromising its own strategy. This delays leader
+
+
+retaliation until the challenger has gained a secure foothold in the industry.
+In addition, focus strategies to attack leaders can serve as part of sequencing
+strategies.2 In a sequencing strategy, the challenger initially attacks a leader
+through focus, and then broadens its scope over time to compete across-the-
+board with the leader. Japanese producers have employed this strategy in
+such industries as TV sets and motorcycles. In each instance, they began at
+the low end of the product range and gradually broadened their lines. NIKE
+also used this approach against ADIDAS in running shoes, beginning with a
+focus on the premium segment and then leveraging the reputation gained
+there to broaden its line downward. Sequencing strategies rest on the
+presence of segment interrelationships (Chapter 7) that allow a ﬁrm in one
+segment to gain competitive advantages in others. Sequencing has the added
+advantage of not provoking the leader to retaliate early in the process.
+INTEGRATION OR DE-INTEGRATION
+A challenger may employ integration or deintegration as a means of
+attacking a leader. Backward or forward integration can sometimes lower
+cost or enhance differentiation.3 In the wine industry, for example, Gallo’s
+integration in bottles is an important part of its cost advantage. Migros, the
+leading Swiss food retailer, owes a part of its dramatic ascendancy in its
+industry to backward integration into products and packaging. Changing
+circumstances may also make deintegration a means of gaining competitive
+advantage against a leader who is integrated.
+GEOGRAPHIC REDEFINITION
+A leader operating in one or a few countries may sometimes be attacked
+successfully with a regional or global strategy.4 The challenger widens the
+geographic boundaries of the market to gain cost or differentiation
+advantages through geographic interrelationships. A global strategy, that
+integrates and coordinates value activities in many countries, may allow
+economies of scale in production or product development, create the ability
+to serve worldwide buyers better, and other advantages I have described
+elsewhere. Globalization of an industry has been an important part of
+successful strategies of challengers in such industries as autos (Toyota and
+
+
+Nissan versus General Motors), motorcycles, lift trucks, TV sets, and
+various types of medical equipment.
+Where an industry is multidomestic, however, local country differences
+imply that a global strategy is counterproductive. Here a leader with a
+global strategy is vulnerable to a challenger who tailors its strategy on a
+country-by-country basis. Castrol has been successful in automotive motor
+oil with such an approach. Even within global industries there may also be
+segments where a country-centered strategy can be sustainable though other
+segments require a global strategy. In both cases, de-globalization can be
+the route to attacking a leader.
+In many industries, ﬁrms have concentrated on a particular city or area of
+a country to succeed against national or even global competitors. Where
+competitors are local, however, competitive advantage may come from
+taking a national approach. Gannett’s USA Today is attempting this in
+newspapers.
+HORIZONTAL STRATEGY
+Challengers may exploit interrelationships among business units as
+another means of broadening the scope of competition. As Chapters 9 and
+10 discussed in detail, interrelationships may lead to a competitive
+advantage for a ﬁrm operating in related industries. A challenger with a
+horizontal strategy encompassing related industries may successfully attack
+a leader operating in a narrower or different range of industries. In personal
+computers, for example, IBM exploited interrelationships with its other
+business units to overwhelm early leaders such as Apple and Tandy.
+Interrelationships also serve as a possible substitute for market share in any
+one industry and neutralize a leader’s competitive advantage.
+A particular form of interrelationship, complementary products, has been
+discussed in Chapter 12. Bundling can create competitive advantage in
+some industries, while unbundling can do so in others. Merrill Lynch’s
+CMA, a bundled product combining previously separate ﬁnancial services,
+allowed Merrill to gain signiﬁcantly vis-à-vis other broad line ﬁnancial
+services ﬁrms.
+MULTIPLE REDEFINITIONS
+
+
+The four modes of redeﬁnition are not mutually exclusive. A challenger
+can globalize its strategy and pursue interrelationships at the same time, as
+Matsushita has done in consumer electronics. Matsushita employs shared
+manufacturing, distribution channels, and other value activities across its
+many consumer electronics products. It also integrates and coordinates its
+strategy worldwide. The strategy has overwhelmed single-product, single-
+country competitors.
+A challenger can also combine narrow scope in one dimension with
+broad scope in another. A challenger can attack a leader by focusing on a
+segment (scope within an industry) at the same time as it competes globally
+(geographic scope). A ﬁrm may also focus within an industry but exploit
+interrelationships with related industries, another example of combining
+broad and narrow scope. Redeﬁning competitive scope simultaneously in
+several ways has proven to be a powerful source of competitive advantage,
+because the competitive advantage from each redeﬁnition cumulates.
+The scope diagrams in Figure 15–2 illustrate several dimensions of
+scope schematically. They suggest how challengers should examine each
+dimension of scope to see if it might be a means of attacking a leader. A
+leader’s scope is plotted, and then alternative redeﬁnitions (narrower or
+broader or both) are probed to see if they might create a signiﬁcant
+competitive advantage for a challenger. The top diagram, for example,
+represents the situation in automobiles in the 1970’s. General Motors (GM)
+competed with a broadly targeted strategy involving a full range of models.
+While GM competed internationally as well as in the U.S., its strategy was
+essentially country-centered and global coordination was minimal. Toyota
+and Nissan chose to focus instead on small cars, and employed coordinated
+global strategies. They gained a substantial competitive advantage over GM
+in the process.
+
+
+Figure 15–2. Alternate Scope of Leader and Challenger Strategies
+Figure 15–3 uses the scope diagram to illustrate the pattern of
+competition in the U.S. newspaper industry. The traditional strategy in the
+industry has been to serve a single city with a broad range of news, even
+though a number of city papers might be part of the same chain. The Wall
+Street Journal and to a lesser extent the New York Times have adopted
+national strategies aimed at segments of the market. The Wall Street Journal
+has recently embarked on a partial global strategy involving European and
+Asian editions. At the same time, USA Today is an attempt to sell a broad-
+based daily newspaper nationwide, appealing to national advertisers. Both
+USA Today and the Wall Street Journal’s strategies have been made possible
+by modern communications and computer typesetting and printing
+
+
+technology. In the newspaper industry, then, redeﬁning scope has been a
+vital element in gaining competitive position.
+Figure 15–3. Alternative Scope in Newspapers
+Many of the examples of redeﬁnition that have been described illustrate
+how redeﬁnition and reconﬁguration usually go together. The Wall Street
+Journal would not have been so successful if it had not adapted its value
+chain to a national and then global strategy. Thus a ﬁrm must view
+redeﬁnition and reconﬁguration as complementary ways to attack an
+industry leader.
+Pure Spending
+The ﬁnal and riskiest way to attack a leader is through pure spending,
+without reconﬁguration or redeﬁnition. Pure spending involves investment
+to buy market share, cumulative volume, or brand identiﬁcation through low
+pricing, heavy advertising, and so on. By making sufﬁcient investment, a
+challenger seeks to gain enough market share, volume, or reputation to take
+the lead in relative cost position or differentiation. The challenger does not
+do anything differently or better than the leader, but simply overwhelms the
+leader with resources or with a greater willingness to invest.
+
+
+This approach to offsetting a leader’s advantage is often costly and
+frequently fails. Leaders typically have sufﬁcient ﬁnancial resources to
+counteract such a strategy, when coupled with their advantages in cost or
+differentiation. Leaders also are usually commited enough to be willing to
+spend heavily to defend position. A particularly vivid example of the risks
+of pure spending is the diversiﬁcation of oil companies into fertilizer and
+chemicals. Despite enormous ﬁnancial resources, their lack of a competitive
+advantage gained through reconﬁguration or redeﬁnition has led to a
+generally dismal track record.
+The success of pure spending rests on superior access to ﬁnancial
+resources by the challenger, or on unwillingness by the leader to invest in
+the industry. Even a well-ﬁnanced leader may be complacent, have a higher
+hurdle rate, have other priorities, or be under corporate pressure to generate
+cash. Pure spending has proven most successful in industries where leaders
+are small and undercapitalized. These leaders may not be able to afford to
+mount sufﬁcient retaliation to discourage the challenger, despite possessing
+a competitive advantage.
+Pure spending, by itself, remains the least preferred approach for
+attacking leaders. However, superior willingness to invest is often an
+important supplement to strategies based on reconﬁguration or redeﬁnition.
+In cans, for example, Crown Cork invested heavily while American and
+Continental were harvesting, accelerating the process by which Crown
+gained a cost advantage through having more modern equipment.
+Alliances To Attack Leaders
+A challenger may need to form an alliance to obtain the necessary
+resources, technology, market access, or other strengths to attack an
+industry leader. Alliances can be a means of achieving reconﬁguration,
+redeﬁnition or pure spending, though in-and-of-themselves they are no
+guarantee of success. Alliances of various types have played important roles
+in many successful attacks against leaders. The two broad forms of alliances
+are the following:
+
+
+• Acquisition. A ﬁrm either acquires another ﬁrm (or ﬁrms) or is itself
+acquired.
+•  Coalitions. A ﬁrm joins forces with another ﬁrm without outright
+merger, through such means as licensing, joint ventures, and supply
+agreements.5
+Acquisitions provide a way to broaden a ﬁrm’s scope through adding
+positions in new segments, positions in new geographic areas, greater
+integration, or a beachhead in a new related industry. IVECO, which
+merged a number of European truck builders, has produced a greatly
+strengthened competitor. Acquisitions can also play a key role in
+reconﬁguration or pure spending strategies. Acquisitions can allow two
+organizations to combine resources and skills in such a way that
+reconﬁguration or pure spending is possible.
+Coalitions also bring together skills and resources of ﬁrms in ways that
+may allow reconﬁguration, redeﬁnition, or pure spending. Japanese TV set
+producers licensed RCA’s color TV technology, providing an important
+starting point for their own product and process innovations, for example.
+Similarly, the coalition that led to Airbus Industries has made a world-class
+competitor out of a group of struggling national ﬁrms. Coalitions are also
+frequently pursued in tandem with a ﬁrm’s own activities to broaden scope.
+In the valve industry, for example, WKM sells only in the U.S. and uses
+licensees elsewhere in the world.
+Coalitions can also play a more subtle role in attacking leaders.
+Challengers sometimes form coalitions with leaders that later provide the
+basis for attacking the leader, as discussed in Chapter 5. Licensing
+technology from a leader, or joint ventures in marketing or manufacturing,
+may allow a challenger to learn a leader’s strengths, making it possible to
+leapfrog. A number of Japanese ﬁrms have licensed foreign technology
+from leaders which they later improved.
+Acquisitions and coalitions are not without their problems, however.
+Acquisitions are difﬁcult to integrate, and coordination among coalition
+partners can prove troublesome. In copiers, for example, Canon has
+beneﬁtted from the problems Xerox has had in coordinating with its joint
+venture partners Rank Xerox and, through Rank Xerox, Fuji Xerox.
+
+
+Canon’s greater global coordination leads to some of its competitive
+advantages.
+Impediments to Leader Retaliation
+A successful challenger must also discover or create impediments to
+leader retaliation. This serves to blunt the natural advantages of the leader
+and reduces the cost of mounting an attack. A variety of factors can inhibit
+a leader’s retaliation to a challenger:6
+Mixed Motives. If a challenger’s strategy creates mixed motives for a
+leader, it will inhibit the leader’s ability to retaliate. A leader that must
+undermine its past strategy to match or respond to the challenger faces
+mixed motives. A leader that has built its competitive advantage on service,
+for example, will invalidate its hard-won reputation by responding to a
+challenger’s strategy that makes service unnecessary. The leader may
+choose instead to maintain its past strategy and suffer a market share loss.
+Another case is provided by the introduction of the low-priced, throw-away
+pen by BIC Corporation, which created mixed motives for Gillette’s
+Papermate division. Papermate had patiently developed a brand image of
+quality. Matching the BIC strategy would undermine this image, and
+Papermate ultimately had to introduce an entirely new brand (Write
+Brothers) to counter BIC.
+Any interrelationships between the leader and other business units in its
+parent company may also serve as the basis for mixed motives, because
+interrelationships can involve a cost of inﬂexibility (Chapter 9).
+Interrelationships can constrain the way a leader can respond without
+hurting its sister business units. Mixed motives can also arise when a leader
+is employing a bundled strategy, as described in Chapter 12. A leader may
+allow a challenger to gain a modest share rather than unbundle and thereby
+cause the entire industry to unbundle.
+High Leader Response Costs. A leader may refrain from retaliation if the
+challenger’s strategy inﬂicts high response costs on the leader. A leader’s
+large market share may inhibit it from costly retaliatory actions such as
+across-the-board price cuts and warranty increases, for example. Response
+
+
+costs can also be high when a leader has inappropriate or outdated facilities,
+equipment, or labor contracts. Chapter 14 has discussed how the cost of
+defensive tactics can be assessed.
+Different Financial Priorities. A leader with different ﬁnancial priorities
+may not respond to a challenger’s attack. A leader emphasizing short-term
+proﬁts, for example, will give up share to a challenger willing to forgo
+them. Similarly, a leader desiring high cash ﬂow may not retaliate if
+retaliation demands heavy reinvestment. Tampax provides an example of a
+leader whose different ﬁnancial priorities invited attack. Maintaining
+extraordinary returns in feminine hygiene products seems to have become a
+preoccupation inside Tampax, and caused it to respond very little to
+repeated attacks until recently. Differences in ﬁnancial priorities also
+underlie the success of many foreign ﬁrms against U.S. leaders.
+Portfolio Constraints. A leader may not retaliate if its commitment or
+attention is directed to other industries. Corporate parents can constrain a
+business unit’s resources or dictate its goals. For example, a leader treated
+as a cash generator by its parent company may not get the resources to fend
+off a challenger’s attack. Similarly, a leader actively pursuing diversiﬁcation
+may be diverted from closely monitoring and defending its core industry.
+Crown Cork and Seal’s success against American Can and Continental Can,
+for example, is partly due to these two leaders’ attempts to diversify into
+other forms of packaging.
+Regulatory Pressure. A leader may not retaliate if it believes itself to be
+constrained from taking actions because of regulatory pressure. Antitrust
+scrutiny, safety standards, pollution regulations, and many other types of
+regulation can constrain leader responses. Some observers believe that
+pressures on the franchise bottler system emanating from Washington
+distracted Coca-Cola from responding to Pepsi’s challenge, and that
+regulatory fears are inhibiting ATT as it faces new competition today.
+Blind Spots. A leader can suffer from faulty assumptions, or blind spots,
+in interpreting industry conditions. If a leader has false perceptions of the
+true needs of buyers or the signiﬁcance of an industry change, for example,
+
+
+a challenger may gain position by moving before the leader does. Moreover,
+the leader may well perceive the actions of the challenger as inappropriate
+and nonthreatening, until the challenger has gained enough market position
+to become established.
+Blind spots have been important to the success of many challengers.
+Harley Davidson misperceived the need for a small motorcycle and watched
+while Honda became established. Xerox seems to have misunderstood the
+importance of small copiers, and Zenith clung to handcrafted TV sets
+despite improvements in design and automated production technology.
+Careful analysis of competitor assumptions can reveal such blind spots.
+Incorrect Pricing. A leader may set prices based on average cost, rather
+than on the cost of delivering a given product to a given buyer. If a
+challenger targets the overpriced products/buyers and offers lower prices,
+the leader may well be slow to recognize its true costs and be unwilling to
+reduce its gross margins. Leaders often respond to such strategies by
+retreating from one segment after another until the challenger emerges as
+the leader.
+Part of a Gentlemen’s Game. A leader may respond slowly if rivalry in
+its industry has been a gentlemen’s game. A leader in such industries often
+feels constrained from retaliating against a challenger for fear of upsetting
+its relationship with other rivals. Coca-Cola’s long history as a statesman in
+the soft drink industry, where ﬁrms followed established rules, seems to
+have contributed to its less-than-vigorous retaliation against Pepsi until
+recently.
+The impediments to leader retaliation result from a variety of different
+underlying causes. Some impediments rest on tangible factors such as
+mixed motives or resource allocation priorities, while others rest on
+perceptual errors by the leader, as in the case of blind spots and incorrect
+pricing. A challenger’s odds of success are greatest when tangible
+impediments to leader retaliation exist. Multiple impediments compound
+the leader’s problem. In responding to Timex, for example, Swiss watch
+ﬁrms had a blind spot about the saleability of Timex’s disposable, everyday
+watch. They also had high response costs in matching Timex’s automated
+
+
+facilities given the labor intensity of Swiss watch factories, as well as mixed
+motives in alienating jewelers if they followed Timex into the drug store
+channel.
+Reconﬁguration 
+and 
+redeﬁnition 
+strategies 
+frequently 
+exploit
+impediments to leader retaliation. They often create mixed motives, high
+response costs, or are incorrectly perceived by leaders. One of the
+difﬁculties with the pure spending strategy, however, is that it is less likely
+to be associated with impediments to leader retaliation than the other two
+avenues of attack. Pure spending works best where a leader has different
+ﬁnancial priorities and is unwilling to match the challenger’s investment.
+Signals of Leader Vulnerability
+The preceding discussion suggests a variety of signals that can indicate
+that a leader is vulnerable. These fall into two groups—industry signals and
+signals based on leader traits.
+Industry Signals
+Structural change provides perhaps the strongest signal that an industry
+leader might be vulnerable. Structural change emanating from outside an
+industry is a particularly strong indication of leader vulnerability, since
+entrenched leaders often misinterpret it.
+Some important industry signals of leader vulnerability include:
+Discontinuous Technological Change. Discontinuous technological
+change raises the possibility that a leader’s competitive advantage can be
+circumvented, as discussed in Chapter 5. In tires, for example, the radial tire
+provided the discontinuity that allowed Michelin to challenge Goodyear and
+Firestone. In typewriters, electronics proved the undoing of Underwood and
+is threatening SCM. It is more likely that the leader will be favorably
+positioned to respond to continuous technological change than the
+challenger, because of its scale economies or cumulative learning.
+
+
+Buyer Changes. Any changes in the buyer’s value chain, for whatever
+reason, may signal new opportunities for differentiation, new channels,
+unbundling, or other opportunities. An increasing number of women in the
+workforce, for example, created opportunities to challenge leaders in many
+industries producing women’s or household products. New buyer segments
+are also a sign of opportunity because the leader may not be well placed to
+serve them.
+Changing Channels. The emergence of new channels provides a
+potential opportunity to attack a leader dominant in existing channels. The
+shift of sales of many consumer goods toward supermarkets, for example,
+has created the conditions for attacking a number of leaders.
+Shifting Input Costs or Quality. Shifts in the quality or cost of signiﬁcant
+inputs may signal an opportunity for a challenger to gain a cost advantage
+through a new production process, locking up new sources of raw materials,
+or reengineering product designs to reduce or alter material content. The
+dramatic rise in power costs, for example, is providing opportunities for
+repositioning in aluminum smelting.
+Gentlemen’s Game. As discussed earlier, an industry with a long history
+of stability may signal that a leader has played the role of statesman and
+may retaliate slowly.
+Leader Signals
+The following traits of industry leaders are signs of possible
+vulnerability:
+Stuck in the Middle. A leader that has become stuck in the middle
+(lacking cost leadership or differentiation vis-à-vis other incumbents)
+provides an inviting target. The challenger may ﬁnd it easy to meet the three
+conditions outlined at the beginning of this chapter.
+Unhappy Buyers. A leader with unhappy buyers is often vulnerable.
+Unhappy buyers suggest that the leader has exercised its bargaining power
+
+
+or that leader personnel have developed an attitude of arrogance based on
+past success. Unhappy buyers may actively encourage and support a
+challenger.
+Pioneer of Current Industry Technology. A leader who pioneered the
+current generation of industry technology may be reluctant to embrace the
+next one and may also be inﬂexible because of its investment in the current
+technology. Ford seems to have suffered from this problem in the early
+years of the auto industry.
+Very High Proﬁtability. A leader making extraordinary proﬁts may
+provide an umbrella for a challenger, if high proﬁts more than offset the
+costs of attack. Very proﬁtable leaders can also be reluctant to diminish
+their proﬁts to retaliate. Moreover, extraordinary returns may also signal
+that a leader might yield share in less proﬁtable parts of the product line,
+providing opportunities for focus by challengers.
+History of Regulatory Problems. A leader with a history of regulatory
+problems, such as antitrust, may be actually constrained from vigorous
+retaliation or believe itself to be.
+Weak Performer in the Parent Company Portfolio. A leader perceived as
+a weak performer by its parent company may well not get the capital to
+keep up with the latest technological change, or have sufﬁcient discretion
+over proﬁtability to retaliate vigorously against challengers.
+Attacking Leaders and Industry Structure
+A ﬁnal test for attacking a leader is to weigh the effect on overall
+industry structure. A challenger’s attack on a leader is unwise if it destroys
+industry structure. Challengers must ﬁnd a new way of competing
+compared to the leader’s to succeed. However, the new way of competing,
+in some cases, may undercut possibilities for differentiation, lower entry
+barriers, or have other adverse structural effects as described in Chapter 1.
+A closely related risk is where a challenger gains market share but does not
+gain a clear advantage over the leader, and the leader and the challenger are
+
+
+thus relatively balanced in competitive position. This may guarantee a long
+period of instability in the industry. The resulting war can be protracted and
+expensive for both sides, creating a situation where no ﬁrm has any
+competitive advantage.
+It is also important to recognize that some leaders are “good” leaders, as
+was discussed in Chapter 6. Attacking a good leader may worsen, not
+improve, a challenger’s proﬁtability if the umbrella provided by the good
+leader is lost in the process. In such cases a challenger should refrain from
+attacking the leader at all. Instead, it should choose another industry as a
+vehicle for growth.
+
+
+About the Author
+MICHAEL E. PORTER, one of the world’s leading authorities on competitive
+strategy and international competitiveness, is the C. Roland Christensen
+Professor of Business Administration at the Harvard Business School. In
+1983, Professor Porter was appointed to President Reagan’s Commission on
+Industrial Competitiveness, the initiative that triggered the competitiveness
+debate in America. He serves as an advisor to heads of state, governors,
+mayors, and CEOs throughout the world. The recipient of the Wells Prize in
+Economics, the Adam Smith Award, three McKinsey Awards, and honorary
+doctorates from the Stockholm School of Economics and six other
+universities, Porter is the author of fourteen books, among them
+Competitive Strategy, The Competitive Advantage of Nations, and Cases in
+Competitive Strategy, all published by The Free Press. He lives in
+Brookline, Massachusetts.

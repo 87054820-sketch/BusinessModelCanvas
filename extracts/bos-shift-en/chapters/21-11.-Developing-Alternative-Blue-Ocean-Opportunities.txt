@@ -1,0 +1,457 @@
+# 11. Developing Alternative Blue Ocean Opportunities
+
+As figure 11-1 illustrates, the four actions framework is built on four key
+questions. The questions help you to challenge an industry’s strategic
+logic and business model to arrive at blue ocean moves that break the
+trade-off between differentiation and low cost. Let’s quickly run through
+them.
+Which factors that the industry takes for granted should be
+eliminated? This question forces you to consider eliminating factors that
+the industry has long competed on, but which your team found to be
+irrelevant through the six paths market exploration in the field. Even
+though these factors no longer add value, or may even decrease it, they
+are rarely questioned because of long-held industry practice. Other times,
+organizations are so focused on benchmarking one another that they do
+not act on, or even perceive fundamental changes in what buyers value.
+Because these factors buttress an organization’s cost structure for little to
+no gain, substantial cost savings can be made by eliminating them.
+Figure 11-1
+The Four Actions Framework
+Which factors should be reduced well below the industry’s
+standard? This question pushes you to determine whether products or
+
+
+services have been overdesigned in the race to match and beat the
+competition. Here organizations over-serve customers, increasing their
+cost structure for no gain. By reducing these factors, your costs can be
+lowered further.
+Which factors should be raised well above the industry’s
+standard? This question pushes you to uncover and eliminate the
+compromises buyers are forced to make. These compromises are usually
+caused by an industry’s failure to see that buyers want more of some
+factors than the standard offering provides. But because the standard is
+the standard, no one thinks to challenge it.
+Which factors that the industry has never offered should be
+created? This last question drives you to offer entirely new kinds of
+value for buyers and to create new demand by converting once
+noncustomers into customers.
+The first two questions of eliminate and reduce give you insight into
+how to drop your cost structure vis-à-vis competitors. By contrast, the
+second two questions of raise and create drive you to create a leap in
+buyer value. Of particular importance here are the actions of eliminating
+and creating because they push the team to go beyond traditional, value-
+maximization exercises, which aim to deliver greater value mainly by
+reducing and raising levels of the existing factors of competition. If
+reducing and raising are all that you focus on, you may produce a higher
+degree of buyer value and might even build an advantage over the
+competition in your existing industry space. But you won’t make the
+existing rules of competition irrelevant, because they don’t change the
+key factors on which everyone else is competing. To open up a new
+value-cost frontier and leave the competition behind, new kinds of buyer
+value need to be offered through the elimination of existing factors and
+the creation of new ones.
+To ensure that blue ocean teams pursue differentiation and low cost
+simultaneously, we created the eliminate-reduce-raise-create (ERRC)
+grid, which complements the four actions framework. Together, these
+two tools allow you to translate team members’ insights and observations
+gleaned from the field into the concrete, strategic actions needed to make
+a blue ocean shift. If the team is focused on only a subset of the four
+actions—not on all four—the grid visually flags the issue and warns the
+team by showing the blank space(s). Let’s walk through this process so
+you can see how it works.
+
+
+How One Company Developed Its Blue Ocean Move
+“If there ever were a red ocean,” observed Michael Levie, co-founder of
+citizenM Hotels, “the hotel industry would be it. It’s redder than red.”
+Four-star hotels offer roughly four-fifths of what five-star hotels offer.
+Three-star hotels offer roughly three-quarters of what four-star hotels
+provide and so on down to one-star hotels that offer roughly half of what
+two-star hotels provide. That is, they all compete on essentially the same
+set of factors, just more or less of them. “In this industry,” noted
+Michael, “people think they’ve innovated if they change the paint color
+on the walls or switch the type of chocolate on the pillow.” Against this
+backdrop, Michael and Rattan Chadha, the CEO, cofounder, and lead
+investor of citizenM, set out in 2007 to open up a new value-cost frontier
+that would capture the growing mass of frequent travelers, mobile
+citizens, whether they were traveling for business, on a weekend
+shopping excursion, or to explore a new locale. As new entrants to the
+hotel industry, these two entrepreneurs wanted to create a blue ocean
+with a new kind of hotel chain.
+When it came to mobile citizens, Rattan, Michael, and their team
+noticed that many were frequenting either three-star or luxury hotels.
+Having sensed that a blue ocean opportunity could exist across these two
+strategic groups (path two), they wanted to understand why frequent
+travelers chose luxury hotels over three-star hotels and vice versa. As
+they did, a host of insights began to emerge.
+Here’s a glimpse.
+“Why do you choose a five-star hotel over a three-star hotel? For the
+price?”
+“Price? No. Who likes paying more?”
+“So, is it because of the bellhops and doormen? They’re usually much
+nicer at five-star hotels.”
+“That may be true. But that’s not why I choose five-star hotels over
+three stars. For me, bellhops tend to take too long to bring your luggage
+up, and then I always feel the need to fork over a tip. Bellhops are
+certainly helpful if you have a lot of luggage. But as a frequent traveler, I
+travel light. For convenience and simplicity, I prefer to carry my own
+bag. Same for doormen. They may be nice to have, but I don’t choose a
+five-star hotel because of them.”
+“So, is the front desk a factor?”
+
+
+“No. Even in a five-star hotel, you usually have to wait. And then,
+when you do check in, you can get the feeling that the person checking
+you in is sort of checking you out, judging you. I hate that.”
+“What about the concierge? Does that influence your decision?”
+“No. With Google maps and restaurant and travel apps, it’s usually
+faster and easier for me to figure things out myself than to ask a
+concierge. Besides, most concierges use these services too nowadays.”
+“Is it because you prefer the restaurants in five-star hotels to those in
+three-stars’?”
+“No. It’s nice that they have them. But I tend to eat out, since five-
+star hotels are in great locations.”
+“So location matters?”
+“Yes, great locations are important in my decision. Five-star hotels
+usually are in prime locations, which is what I’m after.”
+“Room service?”
+“Room service is usually expensive and slow. I only use it when I
+have to.”
+“What about Internet and phone?”
+“That’s a real pet peeve of mine. When you stay in a luxury hotel,
+you’re already paying a lot. And then many of them take you for a ride
+by charging you for Internet and phone services at sky-high rates.”
+“What matters to me isn’t the size of the room. It’s a great bed, great
+sheets, quietness, and a great shower. Water pressure, please!”
+“What’s the biggest turnoff of three-star hotels that makes you decide
+not to stay there?”
+“They’re just not inspiring. They feel so institutional and mediocre.
+That feeling of luxury, of beauty, of quality, is central to why I choose
+five-star hotels.”
+In short, despite all the factors the hotel industry competes and ranks
+itself on, it turned out that only three factors stood out as decisive in
+determining why frequent travelers traded up to five-star hotels over
+those rated three stars: the meta-feeling of luxury and beauty they
+experience there, the more luxurious sleeping environment, and the
+hotels’ prime location.
+Conversely, as the team probed why people choose a three-star hotel
+over a five-star, price jumped out as the most common factor, followed
+by one other: Five-star hotels often felt too formal and pretentious.
+“They feel too uptight. Like you have to dress a certain way and act a
+
+
+certain way to fit in. They feel too rarified, not relaxed enough, for me.”
+To turn these insights into clear actions and a concrete strategy, the
+team challenged itself to translate them into specific factors to eliminate,
+reduce, raise, and create. As they did, they started to realize several
+interesting patterns. For example, the customers of neither five-star nor
+three-star hotels saw the front desk, concierge service, bellhops, or
+doormen as key to their purchase decision. The team realized that the
+front desk does not bring value to customers; it exists for the benefit of
+hotels to register and process people and payments. Similarly, for
+frequent travelers, who almost always travel light, bellhops were also
+seen as unnecessary, and often even as a nuisance. As for the concierge,
+frequent travelers were for the most part tech-savvy and preferred
+finding directions and locating restaurants and sights themselves.
+“We could potentially eliminate these factors,” the team reasoned,
+“and there would be no real impact on value for most frequent travelers
+—whether they are five-star or three-star hotel goers today, while also
+lowering our cost structure.”
+Room size could also be reduced without a real impact on value, as
+people rarely stayed in their rooms much. It didn’t escape the team that
+smaller rooms also meant being able to have more rooms per square foot
+of real estate space, creating greater yield. “Luxury is a great sleeping
+environment not room size,” the team realized. “Given the high cost of
+space, significant cost savings can be realized from building smaller
+rooms. Instead, if we raise the quality of the sleeping environment by
+furnishing rooms with king-size beds, fine linens, good sound insulation,
+big fluffy towels, and amazing showers,” the team reckoned, “we’d
+delight guests while keeping our cost per room much lower than the
+industry average.”
+As team members continued to work through and interpret the market
+insights they’d gathered, they also recognized new kinds of value they
+could create. “If we eliminate the front desk, couldn’t we adapt and use
+self check-in kiosks so guests could check in with no lines? And we
+could complement them by replacing scripted front desk staff with
+multitasking “ambassadors,” who are ready to explain how the kiosks
+work and in what ways they might be of help in a warm and friendly
+way.”
+“If we don’t have a front desk, concierge, or bellhop, why would we
+need a traditional lobby, which is pretty much empty, wasted space?
+
+
+Couldn’t we create a communal living space instead, where guests can
+eat, drink, meet, work, and play freely anytime they want, 24/7, as they
+can at home? If the living space is comfortable and relaxed, but also
+surprisingly beautiful, luxury customers’ need for beauty and inspiration
+would be immediately met on entering the hotel and so would three-star
+customers’ need for less formality and pretension.” Figure 11-2 shows
+the results of the team’s probing.
+Figure 11-2
+The Eliminate-Reduce-Raise-Create (ERRC) Grid: The Case of citizenM
+In 2008, with the launch of its first hotel in Amsterdam’s Schiphol
+Airport, citizenM opened up a new value-cost frontier of affordable
+luxury for frequent travelers. Soon after, citizenM began opening hotels
+in major cities, like London, Paris, and New York. Consider these facts:
+Its hotels earn the highest guest rankings in the hospitality industry,
+placing them in the “fabulous” and “superb” categories, right alongside
+five-star hotels. Yet, they’re priced to be affordable to three-star
+customers. The result is an average occupancy rate of 90 percent across
+its hotels—a whopping 80 percent higher than the industry average. As
+
+
+for costs, its total costs per room are roughly 40 percent lower than the
+average four-star hotel’s, while its cost of staff is a staggering 50 percent
+lower than the industry’s. CitizenM outperforms all traditional players,
+its profitability per square meter being about twice that of comparable
+upscale hotels. Today citizenM hotels are further expanding across the
+major cities of the world. “Stylish, high-tech, and cheap,” “an overnight
+revolution,” and “a form of religion” are among the accolades the media
+has showered on citizenM’s blue ocean move.
+Generating Your Blue Ocean Strategic Options
+The citizenM example illustrates how the insights and observations
+generated from one of the six paths, in this case path two (looking across
+strategic groups), were translated into a clear and concrete set of actions
+that formed the basis of its blue ocean strategic move. As citizenM was a
+start-up, only a small group of people, including the two entrepreneurial
+cofounders, were involved in developing its blue ocean move. For
+organizations that had separate subteams doing the six paths market
+exploration, only the members who did the fieldwork for a given path
+should develop the corresponding move. Because the translation process
+for each of the six paths is the same, we’ll continue using the citizenM
+example to show how the process works for a path. As we lay out the
+action steps involved in the process, for the sake of simplicity, we won’t
+use the phrase the subteam and will just refer to the team. Here is how
+the action steps unfold.
+Extract the key insights revealed by the path
+First, get clear on the key insights revealed by exploring the path. Team
+members should carefully read and review the completed recording
+templates with all the comments they received and observations they
+made during the fieldwork. If the team has not yet grouped like-minded
+comments across the completed recording sheets for a given path, now is
+the time to do so.
+As they work through the comments, the team should pay special
+attention to the most common factors cited—both positive and negative.
+Those will be their key factors. Then team members need to push
+themselves to consider what each factor really means by providing a
+
+
+short, cogent description of the elements that make it up. In the case of
+citizenM, for example, the team could see that, when it came to room
+quality, the factor frequent travelers most commonly cited was the
+sleeping environment. Then when they pushed themselves to identify
+exactly what in the sleeping environment mattered, they were able to
+define sleeping environment concretely as “bed size, quality sheets and
+towels, quietness (or sound insulation), and water pressure in the
+shower.” Reaching agreement on what the salient factors are and exactly
+what they encompass not only puts everyone on the same page when
+they talk about their results, but also forces the team to ground insights in
+specific factors that can later get acted on and are relatively easy to cost.
+One of the reasons the first path you work on to create a blue ocean
+option is typically the hardest is that translating comments into
+practically framed factors calls on people to think in a way few have ever
+been asked to do. As a result, anxiety may build, and team members may
+start to second-guess their ability “to do it correctly.” Reassure them that
+this is natural and that as they work through the path together, and share
+their results and learn from one another, they’ll find that they will do just
+fine.
+Drill down into which factors to eliminate, reduce, raise, and create
+Next, you need to decide if the factors you’ve identified should be
+eliminated, reduced, raised, or created. Use the four actions framework
+and the ERRC grid to help organize your answers. These materials are
+provided 
+for 
+your 
+free 
+download 
+and 
+use 
+at
+www.blueoceanshift.com/ExerciseTemplates.
+To ensure that everyone fully understands how to apply the
+framework and complete the grid, let’s go back to the citizenM example.
+Because their prime location and more luxurious sleeping environment
+were decisive in causing frequent travelers to trade up to five-star hotels,
+the citizenM team deemed it essential to raise these two factors to an
+unexpected height. At the same time, because people choose three-star
+hotels for their lower price, the team saw the need to offer a price point
+that was markedly reduced from that of luxury hotels. Since customers
+of neither strategic group valued the front desk experience, the team
+judged the front desk as eliminate. This, in turn, prompted the team’s
+insight about creating self check-in kiosks, so that guests could access
+their keys and go straight to their rooms with the same kind of time
+
+
+savings an ATM provides over a teller’s line at a bank. This is a glimpse
+into how the process of drilling down works to arrive at a completed
+ERRC grid.
+In completing the ERRC grid for a given path, remember to focus on
+using concrete factors that you can act on and can get a good sense of
+their cost implications. For example, people often list “inconvenience” as
+a key factor to eliminate. However, inconvenience is not a concrete
+factor and it doesn’t indicate how it will be eliminated. So, it’s important
+to push the team to get more specific by asking, “What precise actions
+will be taken or things changed to eliminate buyers’ inconvenience?”
+Likewise, when people list “convenience” as a key factor to create, the
+word says nothing about how that will be done. So here, too, you would
+need to probe for a concrete action that will create convenience for
+buyers. It is critical to understand the difference between concrete factors
+that describe actions and investments as opposed to desired outcomes,
+which are the result of your strategic actions. Concrete factors, not
+outcomes, are what you need to list in the ERRC grid. As you do, also
+start to think about how you might be able to creatively deliver the
+factors you raise and create so the cost of delivering them can be
+lowered. You want to be thinking about lowering cost as you raise value
+all along.
+Occasionally, team members may want to go back to the field and
+reinterview a select group of people they had previously interviewed to
+seek further clarification and to test their ideas about what to eliminate,
+reduce, raise, or create. If a team feels this need, you should let them.
+But be sure to cap the time for doing so to a month to prevent the team
+from falling into analysis paralysis.
+Check that you are pursuing both differentiation and low costs
+The simultaneous pursuit of differentiation and low costs via value
+innovation is key to opening up a new value-cost frontier and hence
+making a blue ocean shift. In practice, however, we’ve often found that
+groups tasked with coming up with something new tend to focus
+predominantly on raising and creating. When they do, they end up
+conceiving of potentially costly offerings that reflect red ocean
+differentiation, not blue ocean strategic moves. To ensure that this does
+not happen, remind people that they need to put as much effort into what
+to eliminate and reduce as well as what to raise and create. In practical
+
+
+terms, that means stressing to team members that for each path they
+should aim to show concrete factors in the eliminate and reduce
+quadrants of the completed ERRC grid, as well as in the raise and create
+ones.
+Sometimes a team will argue that there is nothing they can eliminate
+or reduce. If they do, push back and ask them to think harder about
+factors they may be taking for granted because that’s simply the way
+things have always been done, but that no longer add value or
+significantly over-deliver on what buyers need. To inspire them, point to
+what citizenM eliminated and reduced that had long been sacrosanct in
+the hotel industry or to what Comic Relief eliminated and reduced, like
+advocacy counseling, grant solicitation, and year-round solicitations. To
+spark their thinking, try flipping the question and asking, “What are the
+stupidest things our industry does?” Then ask them to zoom in there.
+That’s when lightbulbs often start to go off.
+People can also fall into the trap of listing factors to “create” that are
+new to their organization’s offering but not to the industry. Remind the
+team that the only factors that qualify here are those that are largely new
+to the industry or market space they are focusing on—factors that are
+beyond the industry’s conventional boundaries. A team at one of the
+largest European gas service station providers, for example, initially put
+having clean bathrooms and the ability to purchase a fun selection of
+food in their “create” quadrant. But while these two factors may have
+been new to the company, which had a terrible reputation in both areas,
+they were hardly new to the industry, which was light-years ahead of the
+company in this regard.
+Draw your blue ocean alternatives
+The team is now ready to draw a “to-be” strategy canvas for the offering,
+based on the completed ERRC grid for the path. The to-be strategy
+canvas allows you to visualize how the blue ocean alternative for a given
+path breaks away from the existing red ocean reality. To accomplish this,
+the team should begin by rating the key factors in the completed ERRC
+grid, just as they did when they drew the industry’s existing strategy
+canvas (see chapter 7). Now, however, all the factors listed as eliminates
+should get a score of 0. For the others, the team should use the same 5-
+point Likert-type scale (or variant thereof) they used earlier. As before,
+when it comes to price, a high price should be rated as “high” and a low
+
+
+price should be rated as “low.”
+Next, plot all the factors along the horizontal axis. So that the
+strategic profile of your proposed new move can be easily appreciated
+and communicated, list price first, followed by all the factors that were
+eliminated, then reduced, then raised, and finally created. That will give
+you an easy-to-read strategic profile. Lastly, overlay the strategic profiles
+of the competition on that of your proposed new move.
+Blue ocean moves seldom involve lots of bells and whistles, nor are
+the ideas usually fancy and shiny. In fact, once they’re completed, they
+often look remarkably simple and clear and have the ring of common
+sense. Be sure to remind the team of this, so that they don’t begin to
+doubt the power of their “simple” idea and start adding extraneous or
+clever factors that merely complicate it and seriously diminish its blue
+ocean potential.
+Figure 11-3
+Strategy Canvas of citizenM at the Time of Its Launch, 2008
+“Affordable Luxury for the People”
+Figure 11-3 shows the strategic profile of citizenM’s blue ocean move
+in contrast to those of the competition. As you can see, citizenM’s
+
+
+strategic profile meets the initial litmus test of a blue ocean offering in
+that it diverges from the competition; it is focused; and it has a
+compelling tagline that is true to the offering, namely, “affordable luxury
+for the people.”
+Now reflect on the strategic profile of your blue ocean option and
+develop a tagline that is both true to its strategic profile and is
+compelling from the buyers’ point of view. One without the other is not
+sufficient. To develop the tagline, really dig into how the proposed
+offering creates a leap in value for customers and how you can best
+communicate that. In developing these taglines, it’s important to avoid
+falling into the trap of creating catchy but meaningless phrases. Should
+that happen, you need to redouble the team’s efforts to communicate the
+essence of the offering in a way that will highlight its compelling benefit
+and immediately speak to the market.
+Outline the offerings’ economic benefits to the organization
+Most industries have a fair idea of how costs generally break down
+across their value chain. The airline industry, for example, has a good
+understanding of the relative costs associated with airport fees, fuel,
+staff, maintenance, food and beverages, marketing, loyalty programs,
+and so on. Likewise, for luxury and three-star hotels, hotel industry
+experts like Michael Levie have a good idea of the relative costs
+associated with land, rooms, staff, full-service restaurants, and so on.
+Based on these relative costs, the citizenM team developed a rough
+idea of how much cost savings would be realized by eliminating and
+reducing the existing features of these hotels. For those features that the
+citizenM team was looking to create, but luxury and three-star hotels
+didn’t offer—like self check-in kiosks or communal living space—the
+team looked outside the hotel industry to get an idea of the magnitude of
+cost additions. By putting cost savings and additions together, the team
+was able to outline how the economics of the offering would work. The
+aim here was to create a win not only for mobile citizens through a leap
+in value but also for the organization through a tidy profit.
+As in the case of citizenM, here teams need to provide preliminary
+indicators of the economic benefits of their proposed offerings and make
+their business cases, however rough they may be. The blue ocean
+offering that ultimately gets selected would then have its economics
+further fleshed out with all needed operational expertise available in the
+
+
+organization to ensure a winning business model.
+The outputs of these action steps are: a to-be strategy canvas with a
+compelling tagline that powerfully conveys its essence, and a completed
+ERRC grid that highlights how costs will be brought down, while
+differentiation will be driven up to create a leap in buyer value. With
+these inputs, rough indicators of the offering’s economic benefits, like
+profit and growth, are developed.
+As this process gets completed for each path, what we typically find
+is that two or three of the paths will yield stronger and more compelling
+insights to create a new value-cost frontier than the others, while the rest
+reveal a compelling factor or two to eliminate or create, but fall short of
+providing enough insights to unlock a new value-cost frontier. If this
+happens, do not be alarmed. It’s normal. That said, you should still go
+through the entire exercise. Why? For one, it generates tremendous
+learning for everyone. Moreover, some of the insights from the “weaker”
+paths can become low-hanging fruit to be acted upon at a later time. So
+don’t short-circuit the process and lose the learning.
+Move to the Final Step
+With viable alternative blue ocean opportunities created, you are now
+ready to move to the final step of the blue ocean shift journey. The final
+step is where you’ll learn how to select your blue ocean move, rapidly
+test it in the market, and tighten and refine it to maximize its market
+potential. The final step ends with formalizing a big-picture business
+model for the chosen move and launching it. This ensures that the move
+you roll out generates not only a leap in value for buyers but,
+importantly, a tidy profit for your organization.
+The team’s energy is high. Team members are proud of what they
+have created, but also understandably nervous, because they are on the
+cusp of hearing objective feedback and the market’s judgment on the
+proposed blue ocean moves they’ve generated from their hands-on
+explorations.
+
+
+Step Five: 
+Make Your Move

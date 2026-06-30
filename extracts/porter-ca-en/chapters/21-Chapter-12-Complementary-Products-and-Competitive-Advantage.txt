@@ -1,0 +1,931 @@
+# Chapter 12: Complementary Products and Competitive Advantage
+
+•  Cross subsidization. Selling one product at terms that deliberately
+promote the sale of complementary products (“we sell one to sell
+another”).
+The ﬁrst strategic choice a ﬁrm must make is whether it should supply
+complementary products itself or allow outside suppliers to provide some of
+them. This is an issue in competitive scope. Having resolved this question, a
+ﬁrm must then decide how to compete in the complementary products. One
+option is to bundle, or sell the complements together as a package. Bundling
+in some form is present in almost every industry, though it is frequently not
+recognized as such. Cross subsidization is a different approach to selling
+complementary products, in which products are not sold together at one
+price but sold separately with prices that reﬂect their complementarity. A
+ﬁrm whose products have important complements must make choices in all
+three areas.
+These three practices are pervasive and affect competitive advantage and
+industry structure in some form or another in many industries. Yet all three
+issues are frequently overlooked, and the pitfalls in dealing with them are
+numerous. Many ﬁrms do not even recognize that they are bundling, for
+example. Or ﬁrms maintain cross subsidization after the conditions
+supporting it have changed, thereby creating an opening for competitors to
+attack them by focusing on the products being used to subsidize.
+In this chapter I will describe in detail the conditions under which
+control over complements, bundling, and cross subsidization can lead to
+competitive advantage, as well as the risks of each practice. I will also
+describe how a ﬁrm’s strategy toward complements should change as its
+industry evolves. Finally, some of the strategic pitfalls that ﬁrms have
+encountered in pursuing each of the three practices will be identiﬁed.
+Control Over Complementary Products
+In nearly every industry, products are used by the buyer in conjunction
+with other complementary products. Computers are used with software
+packages and programmers, for example, and mobile homes are often used
+in mobile home parks—plots of land specially designed as permanent sites
+
+
+for mobile homes, complete with streets, electricity, and sewer hookups.
+Tennis equipment is used with tennis courts, and jet engines are used with
+spare parts.
+The sales of complementary products are necessarily linked, so that their
+fortunes tend to rise and fall together. However, complementary products
+can have a strategic relationship to each other that goes far beyond related
+growth rates. One complementary product often affects another’s market
+image and perceived quality, as well as the cost of using the other from the
+buyer’s viewpoint. Both of these effects are important to differentiation
+(Chapter 4). The relationship among complements can also affect the cost
+of supplying them (Chapter 3).
+Where an industry’s product is used with complements, an important
+strategic issue arises: the extent to which a ﬁrm should offer the full range
+of complements or leave some to be provided by independent suppliers.
+Offering the range of complements provides an important competitive
+advantage in some industries, but represents an unnecessary and even risky
+distraction in others. Control over complements is a distinct issue from
+bundling, though the two issues are related. A ﬁrm that supplies
+complements may or may not choose to bundle, because the beneﬁts of
+controlling complements can often be gained even if they are sold
+separately.
+Competitive Advantages from Controlling Complements
+A ﬁrm can potentially gain competitive advantage from controlling
+complements in one of several ways, depending on the ﬁrm’s strategy and
+industry structure. Broadly, the advantages stem from coordinating the
+value chains of a ﬁrm’s product and complements in order to gain
+interrelationships that are similar in character to those discussed in Chapter
+9:
+Improve Buyer Performance and Thus Differentiate. Complements often
+affect the performance of a product or the ﬁrm’s overall value to the buyer.
+Well-designed software can improve the performance of a personal
+computer, just as toner affects the copy quality of plain paper copiers.
+
+
+Similarly, a food concessionaire can signiﬁcantly affect the buyer’s
+satisfaction with a racetrack. Gaining the performance beneﬁt of controlling
+complements often requires bundling. A ﬁrm that controls a complement
+may thus be able to enhance differentiation.
+A ﬁrm gains a competitive advantage in differentiation from controlling
+complements if competitors do not. Even if control over a complement is
+widespread in an industry, however, it can still be beneﬁcial if it improves
+overall industry structure though no ﬁrm gains a competitive advantage.
+Improve the Perception of Value. Complements frequently affect each
+other’s image or perceived quality. If mobile home parks look shoddy or are
+poorly designed, for example, this can adversely affect how buyers perceive
+mobile homes. Because of their association in the buyer’s mind,
+complements are frequently signaling criteria for each other.1 Controlling a
+complement can yield a competitive advantage in signaling even if a ﬁrm
+does not bundle. For example, Kodak’s strong position in ﬁlm improves its
+perceived differentiation vis-à-vis other camera manufacturers that do not
+sell ﬁlm, even though Kodak sells cameras and ﬁlm separately.
+Controlling complements to signal value may be beneﬁcial to industry
+structure even if no one ﬁrm gains a competitive advantage from doing so.
+In the mobile home industry, for example, the overall image of mobile
+homes could be improved if all mobile home producers also developed
+high-quality mobile home parks. This would increase the demand for
+mobile home versus other forms of housing and beneﬁt the entire industry.
+Control over complements by one ﬁrm may, in fact, have little impact on
+buyer perceptions unless a sufﬁcient number of competitors also control the
+complement. In these cases a ﬁrm should actually work to encourage its
+competitors to enter the complementary industry along with it.
+Optimal Pricing. The buyer’s purchase decision is frequently based on
+the total cost of a product and complements, rather than on the cost of the
+product alone. For example, buyers usually measure the cost of a
+condominium or automobile by the total monthly payment required
+(including principal and ﬁnancing cost), rather than looking solely at the
+price of the condominium or automobile itself. Similarly, buyers may
+
+
+evaluate the cost of going to a movie in terms of the cost of the movie plus
+the cost of parking.2
+Under these circumstances, prices must be set jointly to maximize
+proﬁts, and this is difﬁcult to do without controlling the complement. When
+setting the price of parking at a movie theater, one must recognize that
+lowering the cost of parking may increase the number of movie tickets sold,
+for example. I will discuss when such deliberate cross subsidization is the
+best strategy in the ﬁnal section of this chapter.
+As with differentiation, the beneﬁts of controlling a complement for
+pricing do not require that the ﬁrm sell the product and complements as a
+bundle, or even that the ﬁrm have a market share in the complement that is
+comparable to its share of the base product. Even with a relatively small
+position in the complement, a ﬁrm can inﬂuence pricing in the
+complementary industry by initiating pricing moves that competitors are
+forced (or inclined) to follow. By lowering its own parking prices, for
+example, a movie theater ﬁrm may be able to force down prices at other
+parking garages in the area to some extent. Thus a position in the
+complement gives the ﬁrm a leverage point with which to inﬂuence the
+development of the complement’s industry, and its position in the
+complement need only be big enough to allow exercising such leverage.
+Reduce Marketing and Selling Cost. Control over complements can lead
+to economies in marketing, because the demands for a product and for
+complements are related. Advertising and other marketing investments for
+one complement often boost demand for the other, and complements may
+be susceptible to shared marketing or selling. Similarly, an installed base in
+one product can lower the cost of marketing complements. In video games,
+for example, an installed base of machines helps the ﬁrm sell game
+cartridges. The economies are sometimes large enough so that a ﬁrm not
+controlling complements is unable to reach the threshold spending on
+marketing needed to be effective.
+A ﬁrm gains a cost advantage in marketing if it is one of relatively few
+ﬁrms that controls a complement. Widespread control over complements
+can beneﬁt the industry as a whole, however, if it raises marketing
+expenditures and boosts overall industry demand relative to substitute
+products. Widespread control over complements may also help overcome
+
+
+the “free rider” problem, where ﬁrms selling one complement piggyback on
+the marketing investments of ﬁrms selling others. Even if a ﬁrm’s decision
+to control a complement is quickly imitated by competitors, such a move
+will still be beneﬁcial to the industry as a whole.
+Sharing Other Activities. Controlling a complement may allow a ﬁrm to
+share other activities in the value chain besides marketing and sales. The
+same logistical system may be employed to deliver a product and
+complements, for example, or the same order entry system. Opportunities
+for sharing will often be present because of the fact that complements are
+sold to the same buyers. The circumstances under which sharing value
+activities leads to a competitive advantage are discussed in Chapter 9.
+Raise Mobility Barriers. Where controlling a complement leads to one or
+more of the competitive advantages described above, it may also increase
+overall entry/mobility barriers into the industry if entry barriers into the
+complementary product are signiﬁcant. For example, a real estate developer
+that could own a bank (and get preferential access to ﬁnancing) would
+signiﬁcantly increase the sustainability of its competitive advantage because
+the barriers to entry into banking are signiﬁcant for most real estate
+developers. Today real estate developers are legally prohibited from owning
+banks, though deregulation may change this in the future.
+The beneﬁts of controlling a complement are not mutually exclusive, and
+any or all can be present in an industry. For example, the food concession
+can not only affect the buyer’s satisfaction with the racetrack, but prices
+should be set jointly on concessions and admission. Depending on the
+characteristics of buyers, low admission prices may well raise the number
+of patrons who will buy high priced hot dogs. Control over both the
+racetrack and the food concession can lead at the same time to economies in
+marketing. The sustainability of the competitive advantage from controlling
+a complement depends on the presence of some barriers to entering the
+complementary good. Without them, competitors can readily replicate the
+advantage through entering the complementary industry themselves.
+The beneﬁts of controlling a complement can sometimes be achieved
+through coalitions with other ﬁrms without the need for actual ownership.
+
+
+For example, a ﬁrm and the supplier of a complement can agree to
+coordinate prices, or agree to pool their marketing budgets. The problem
+with such arrangements is the difﬁculty of reaching a stable agreement. As
+long as ﬁrms supplying complements are independent, each will be tempted
+to free-ride on the other, and to set prices and strategies to maximize its
+proﬁts rather than the joint proﬁts of both. Nevertheless, the possibilities of
+using coalitions to achieve the beneﬁts of controlling complements must
+always be explored. If the possibility exists it may be the most cost-effective
+option for a ﬁrm (or for the ﬁrm’s competitors). Sometimes equity
+investments or other forms of quasi-integration between a ﬁrm and the
+supplier of a complementary product can overcome the difﬁculties of
+coordinating behavior.3
+Problems of Controlling Complements
+Against the beneﬁts of controlling complements must be weighed some
+potential problems. The ﬁrst is that the structural attractiveness of a
+complementary industry may be low, and its proﬁtability signiﬁcantly lower
+than in the base industry. Though control of the complement may improve
+proﬁtability in the base industry, this must be weighed against the
+proﬁtability of the complement relative to alternative uses for the funds. The
+tradeoff does not always favor control of the complement.
+A second problem with controlling complements is that the
+complementary 
+industry 
+may 
+involve 
+very 
+different 
+managerial
+requirements for which a ﬁrm is ill-equipped and a ﬁrm may have little
+competitive advantage in the complementary industry. Thus any beneﬁts
+from controlling a complement must be weighed against the risk that the
+ﬁrm will fail or only achieve a weak competitive position. The lack of skills
+in the complementary industry cannot be completely overcome by acquiring
+a complementary product supplier and managing it as a free-standing entity,
+because close coordination between complements is required to achieve
+most of the beneﬁts.
+Control over Complements and Industry Evolution
+
+
+The value of controlling complements may well shift as an industry
+evolves. The need to control complements to improve their quality or image
+may be greatest early in the evolution of the complementary industry,
+because of uneven quality or the presence of ﬂy-by-night ﬁrms.4 In the early
+years of color TV, for example, RCA’s need to have an in-house service
+organization was much greater than later when independent service shops
+had mastered color set repair techniques. As a complementary industry
+matures, it may become desirable to exit or harvest a ﬁrm’s position in the
+complementary industry. Independent suppliers may be able to do an
+adequate job, and the ﬁrm may no longer be able to offer anything unique in
+the complementary industry to bolster its overall differentiation. Staying in
+a complement too long when there are capable outside suppliers can
+actually erode differentiation rather than enhance it.
+The pricing advantages of controlling a complement also may erode as
+the complementary industry matures. In the emerging phase, prices of
+complements are more likely to be higher than would be desirable because
+suppliers are skimming or inefﬁcient. Early fragmentation of the
+complementary industry may also lead to inefﬁciency of complementary
+products suppliers, and to under-investment in marketing.
+While there is a tendency for the need to control complements to decline
+with industry maturity, this is by no means a universal pattern. The
+advantages of controlling complements for marketing costs and other
+shared activities often persist, for example. A resort that owns not only a
+hotel but also the golf course, other sports facilities, and transportation may
+have a compelling advantage over one who only operates the hotel. What is
+necessary is for a ﬁrm to ask itself periodically whether there are beneﬁts to
+controlling each complement. For some complements the beneﬁts will
+persist or even increase, while for others a timely exit may be justiﬁed.
+Identifying Strategically Important Complements
+In view of the potential importance of complements both to a ﬁrm’s
+competitive position and to industry structure, a ﬁrm must be aware of what
+products are complements to its product. The identiﬁcation of complements
+is sometimes subtle, and often complements can be uncovered that are not
+
+
+generally perceived as such. Most industries will have a rather long list of
+products that are complementary to some degree. Table 12–1 gives an
+illustrative (and partial) list of products that are at least somewhat
+complementary to residential home building.
+TABLE 12–1 Partial List of Complements to Houses
+Financing
+Lawn mowers
+Homeowner’s insurance
+Grass seed
+Real estate brokerage
+Swimming pools
+Furniture
+Barbecue grills
+Appliances
+Light bulbs
+Carpets
+Pets
+Nurseries
+Garden hose
+Given the potentially numerous complements in many industries such as
+home building, it is necessary to distinguish those complements that are
+strategically important from those that are not. It is clear that a house
+builder such as U.S. Home will gain little competitive advantage from
+competing in all the industries listed in Table 12–1, though it may well gain
+an advantage from competing in some of them.
+Strategically important complements have two characteristics: (1) they
+are or could be associated with each other by the buyer, and (2) they have a
+signiﬁcant impact on each other’s competitive position. Some association of
+a complement and a ﬁrm’s product by the buyer is implied in most of the
+potential competitive advantages of controlling a complement. The
+association among complements leads the buyer to connect their images,
+measure their performance collectively rather than individually, or measure
+their cost as a group. This association is also what underlies joint marketing
+or sales.
+The strategic relationship among complements is thus in large part a
+function of buyer perceptions. A ﬁrm can rank complements based on how
+strong the association with its product is or could be. Houses and ﬁnancing
+are commonly associated by buyers, for example, while houses and grass
+seed are rarely associated though their demand is undeniably related.
+Similarly, movies and parking costs are commonly associated, while the
+cost of driving to the movie is rarely associated with the cost of the movie.
+
+
+If products are in fact connected but not presently associated by buyers, a
+ﬁrm may be able to gain competitive advantage by educating buyers to
+make the association. A sophisticated knowledge of buyer purchasing
+behavior is necessary to uncover actual or potential buyer associations
+among complements.
+The second test of the strategic signiﬁcance of a complement is the effect
+of controlling it on competitive advantage or industry structure. A
+complement will not be important for a ﬁrm to control unless it has a
+material effect on overall cost or differentiation of the group of related
+products. Light bulbs are complements to lamps, for example, but light
+bulbs do not have a meaningful impact on the differentiation of a lamp or on
+the cost of marketing it. Since widespread control over complements can be
+a signiﬁcant beneﬁt for industry structure, however, some complements are
+important to control even if they cannot be turned into a competitive
+advantage.
+Bundling
+Bundling is selling separable products or services to buyers only as a
+package, or “bundle.” For example, IBM bundled computer hardware,
+software, and service support for many years, while the manufacturers of
+antiknock additives for gasoline have traditionally provided various
+technical services along with their product all at a single price. Bundling in
+some form is pervasive, though not always recognized. Identifying when
+bundling is occurring often requires a rather fundamental look at an
+industry akin to that in segmentation (Chapter 7). All the potentially
+separable products and services that are offered must be isolated, even
+though they may not be seen as separate by industry participants. For
+example, delivery and after-sale service are often included as part of the
+product although they are potentially separable and could be sold
+separately. Similarly, retailers often provide free parking, while airlines
+provide free meals and baggage handling. Because some forms of bundling
+are age-old industry practices, ﬁrms may not even perceive that they are
+bundling.
+
+
+Bundling means that all buyers are provided with the same package of
+products and services, regardless of differences in their needs. Some buyers
+of antiknock compounds, for example, would prefer to sacriﬁce the service
+provided by manufacturers in return for a lower price, but they do not have
+that option. Buyers often differ in their receptiveness to bundling because
+they want different collections of products or services, or because they
+differ in the intensity of their need for the various products or services. In
+either case, bundling is suboptimal for some buyers.
+Bundling will not be desirable unless it has some countervailing beneﬁts
+that overcome the fact that it is suboptimal for some buyers. Bundling can
+create competitive advantage in a number of ways, however, that vary in
+importance from industry to industry and even by industry segment. In
+some industries bundling also has signiﬁcant risks that must be identiﬁed.
+Competitive Advantages of Bundling
+The potential competitive advantages grow broadly out of the ability to
+share activities in the value chains for providing parts of the bundle if the
+entire bundle is supplied together. The advantages of bundling can be
+grouped into a number of categories:
+Economies of Providing the Bundle. A ﬁrm may lower its costs by
+providing only a single package instead of whatever mix of products or
+services a particular buyer desires. These economies arise from
+interrelationships in a ﬁrm’s value chain that can be exploited by supplying
+only the package. Bundling can allow a ﬁrm to better share activities in the
+value chain in supplying the parts of the bundle. If the same bundle of
+products is sold to each buyer by the same salesperson, shipped on the same
+truck, or serviced by the same technician, for example, there may be cost
+savings in providing the bundle together. The price of the bundle could thus
+be lower than the collective price of the individual parts. For example, in
+providing services for offshore drilling for oil, a ﬁrm that provides two
+related services together may need only one person on the rig while
+competitors require a person for each service. Economies from bundling
+can also result from shared cost of gathering information about buyers. A
+
+
+consulting ﬁrm may learn about a client through providing one service, and
+apply this knowledge at low cost in providing other services in the bundle.
+The unbundled competitor must make the full investment in information
+even though it provides only one service.
+Bundling may also reduce costs by promoting manufacturing economies
+of scale or learning. Providing the same package to all buyers guarantees an
+equivalent volume of all items in the bundle, perhaps lowering cost. For
+example, manufacturing a ﬁre engine with standard features would allow a
+manufacturer to achieve greater economies of scale and learning than if
+each engine gets a different collection of bells and whistles, the current U.S.
+industry practice. Providing a common package may also increase the
+productivity of the sales force, by eliminating the need to inform the buyer
+about what parts of the bundle to select. Finally, bundling can signiﬁcantly
+reduce administrative and selling costs. Providing the same package to all
+buyers usually simpliﬁes transaction costs, including paperwork, logistical
+arrangements, and the like. Economies of standardization, scale, or learning
+can in some cases allow a ﬁrm to sell the bundle at a lower price than it
+would have to to charge customers who only wanted part of it.
+Economies from bundling will yield a substantial competitive advantage
+to a bundled ﬁrm only if unbundled competitors cannot duplicate them
+through coalitions or contractual arrangements among themselves.
+However, the difﬁculties of reaching agreement on such coordination with
+independent ﬁrms often preclude a contractual solution.
+Increased Differentiation. Bundling may allow a ﬁrm to differentiate
+itself vis-à-vis competitors selling only parts of the bundle. The role of
+bundling in differentiation arises from linkages among parts of the bundle in
+the buyer’s value chain because they are used or purchased together.
+Without bundling, a ﬁrm may not only forgo differentiation but be forced to
+compete with each specialist competitor in its area of greatest strength.
+Bundling can increase differentiation in the following ways:
+MORE BASES FOR DIFFERENTIATION. A ﬁrm that can bundle has more
+dimensions on which to differentiate itself than a competitor with a more
+limited offering. For example, a bundled ﬁrm may be able to guarantee
+
+
+reliability of the entire bundle or offer a single point for after-sale service.
+Similarly, it may differentiate itself or its service even though its product is
+not unique.
+HIGH-PERFORMING INTERFACE. Bundling may be necessary when the
+interface among complementary products is not standardized. Compatibility
+among items in the bundle is facilitated if the same ﬁrm provides the whole
+package of items needed jointly to meet the buyer’s needs. This presumes
+that interface technology is relatively difﬁcult, and that compatibility cannot
+be achieved.
+OPTIMIZED PACKAGE PERFORMANCE. Even if the interface among products
+in the bundle is standard, the bundled ﬁrm may be able to optimize the
+performance of the whole package (system) by controlling the design,
+manufacture, and service of all the parts. It may have better information
+about the capabilities of each part of the bundle than a specialist competitor
+who must gather information externally about parts of the bundle and
+cannot control their design directly. This advantage of bundling presumes
+that the parts of the bundle are interdependent in determining its overall
+performance.
+ONE-STOP SHOPPING. Bundling simpliﬁes the buyer’s shopping task.
+Offering the bundle may also reassure the buyer that all the items in the
+bundle will work, and reduce the buyer’s perceived risk of purchase. A
+single point of responsibility, a single place where complaints can be
+lodged, and a single service organization may also be valued by buyers.
+Buyer frustration over divided responsibility in the newly deregulated Bell
+System is a good example of how unbundling can lower differentiation
+through this mechanism.
+Enhanced Opportunity for Price Discrimination. Bundling may allow a
+ﬁrm to increase total proﬁts where different buyers have different price
+sensitivities for the individual parts of the bundle. Particularly in a “mixed”
+bundling strategy—where a ﬁrm offers both the full bundle at one price and
+the individual parts of the bundle at prices which sum to greater than the
+
+
+bundle price—bundling may increase total revenue compared to selling the
+parts separately.5
+The mechanism by which this occurs is a function of the cost of the
+bundle versus the cost of the parts of the bundle a buyer would want if they
+could be purchased separately. Bundling can cause some buyers to buy the
+whole bundle even though they would not buy all the parts individually,
+provided the incremental cost of the whole bundle over the cost of the parts
+they desire is low. In addition, a mixed bundling strategy can allow the ﬁrm
+to extract high prices from buyers who strongly desire only one part of the
+bundle, while at the same time selling the whole bundle to other buyers.
+The value of bundling in pricing depends on the distribution of buyer
+needs in the industry. Bundling is most likely to raise proﬁts if buyers have
+widely differing price sensitivities for parts of the bundle. Bundling is a way
+of capturing differing price sensitivities without charging different prices to
+different buyers for the same product.
+Increased Entry/Mobility Barriers. Bundling may lead to higher
+entry/mobility barriers, presuming there are one or more of the other
+competitive advantages of bundling. Bundling raises barriers because a
+competitor must develop capabilities in all parts of the bundle rather than
+being able to specialize.
+Mitigated Rivalry. Rivalry among a group of bundled competitors may
+be more stable than rivalry in an industry containing both bundled and
+unbundled competitors. If all competitors offer the same bundle and the
+only industry price is the bundle price, the ability to recognize mutual
+dependence among ﬁrms is likely to be higher and the incentives for price
+cutting may be less than if competitors offer any part of the bundle
+separately.
+Risks of Bundling
+A bundled strategy involves a number of risks, which vary in importance
+depending on a ﬁrm’s strategy and industry structure. The risks of bundling
+are determined by the potential vulnerability of a bundled ﬁrm to attack by
+an unbundled competitor employing a more focused strategy.6 Sometimes a
+
+
+ﬁrm with a substantial competitive advantage can preserve bundling despite
+signiﬁcant risks, as IBM did for many years in computers.
+Diversity of Buyer Needs. Bundling presumes that a signiﬁcant
+proportion of buyers desire and are willing to pay for the whole bundle. If
+buyer needs vary widely in an industry, a bundled strategy may be
+suboptimal for a segment of buyers and thereby vulnerable to a focused
+competitor who tailors the particular bundle it offers to the needs of the
+segment. For example, if the need for after-sale service varies widely
+among buyers in an industry, a focused competitor may be able to enter by
+selling only the product with no service included, and achieve enough
+market share to be viable. People Express, for example, unbundled the
+airline product by eliminating free meals, free baggage handling, and other
+parts of the traditional airline bundle. This appealed to price-sensitive
+buyers who had little need for the parts of the bundle that were eliminated.
+Similarly, off-price retailers have successfully attacked traditional retailers
+with strategies involving little service, no credit, no alterations, and no
+advertising to appeal to a particular buyer segment.
+Buyer Ability to Assemble the Bundle. In a bundled strategy, the ﬁrm
+assembles the bundle and sells it as a package to the buyer. This strategy is
+vulnerable if buyers have the technological, ﬁnancial, and administrative
+capabilities to assemble the bundle themselves. The buyer may purchase the
+parts of the bundle individually from suppliers and put them together, or
+purchase some parts from suppliers and produce others (e.g., service) in-
+house.
+Specialist Ability to Provide Parts of the Bundle on More Favorable
+Terms. A bundling strategy is vulnerable if specialists that focus on one or a
+few parts of the bundle can achieve low cost or differentiation in producing
+them. A specialist may gain a competitive advantage for the reasons
+described in Chapter 7. It can tailor its value chain to produce and sell just
+one item in the bundle that it views as its primary business. A specialist may
+also avoid costs of coordination or compromise with shared activities
+supplying other parts of the bundle that are borne by a bundled competitor.
+
+
+A specialist that focuses on one part of the bundle can also potentially
+reap advantages from interrelationships with other industries. A specialist
+electronics company may have a cost advantage in producing an electronic
+part for an electromechanical system vis-à-vis a bundled competitor who
+provides the entire system, for example, because the electronics company
+can share value activities (e.g., R&D, test equipment) with other related
+electronics businesses.7
+Bundling Through Coalitions. A bundled competitor is vulnerable if the
+advantages of bundling can be duplicated by focused competitors who form
+coalitions among themselves. Coalitions can take many forms, such as
+technology sharing and joint sales or service organizations.
+Bundled Versus Unbundled Strategies
+The balance between the competitive advantages of bundling and its
+risks determines the appropriateness of the bundled strategy for a ﬁrm. The
+risks of bundling provide the strategic levers with which focused
+competitors attack bundled competitors. Bundling will be the predominant
+strategy in an industry if the competitive advantages of the bundled ﬁrm are
+signiﬁcant and the risks of bundling low. Bundled and unbundled strategies
+are natural adversaries, however, and the balance between them can shift
+quickly in an industry in either direction.
+In many industries, it may be difﬁcult for the bundled and unbundled
+strategies to coexist. If a successful unbundled competitor becomes
+established, this creates pressure on the bundled competitor to unbundle.
+The presence of an unbundled competitor makes buyers more aware that
+their needs are not being exactly met by the bundled ﬁrm, and provides an
+alternative to purchasing the whole bundle.
+In entering an industry against bundled ﬁrms, an unbundled competitor is
+likely to attack those parts of the bundle that by themselves would fully
+satisfy the needs of a signiﬁcant group of buyers, such as a basic product
+without the ancillary services. Another likely avenue of attack is to supply a
+peripheral item such as spare parts or service, where the bundled competitor
+is inefﬁcient or overcharging. Attacking a bundled ﬁrm through unbundling
+
+
+is one of the characteristic ways of gaining market position that are
+discussed in detail in Chapter 15.
+After the ﬁrst entry by an unbundler, the incentive is created for other
+unbundled competitors to enter and offer other parts of the bundle. Over
+time, then, more buyers are able to construct the particular bundle they
+desire. Once a number of unbundled competitors achieve signiﬁcant market
+penetration, some of the motivations for bundling, such as scale economies,
+rivalry reduction, or building barriers, are often eliminated. Thus the
+remaining bundled competitors may be forced to unbundle.
+The bundled and unbundled strategies can coexist in an industry,
+however, if there are wide differences in buyer needs and compelling
+advantages to bundling for some buyer segments that are not a function of
+volume (or of bundling being the dominant strategy). For example,
+optimization of system performance through bundling may be particularly
+critical for some buyers, and thus a bundled strategy will remain sustainable
+for this buyer segment despite the fact that specialist competitors supply
+parts of the bundle to other segments. Bundling may also be particularly
+valued by less sophisticated buyers, even though sophisticated buyers want
+to assemble the bundle themselves. In business aircraft, for example, Cessna
+is offering a bundle including a plane, maintenance, pilots, a hangar, ofﬁce
+space, and landing fees all for a single monthly price. This appeals to
+buyers that want the convenience of one ﬁrm’s taking responsibility for
+everything. A strategy of mixed bundling may also be appropriate
+depending on the particular competitive advantages sought from bundling.
+While offering the buyer an option to purchase either the whole bundle or
+parts of it from the same ﬁrm tends to undermine the ﬁrm’s ability to sell
+the bundle, mixed bundling may be appropriate if the key advantage to
+bundling is differentiation or price discrimination.
+Bundling and Industry Evolution
+The appropriateness of bundling often changes as an industry evolves,
+because industry structural change alters advantages of bundling or the
+risks. There is no valid generalization possible about whether bundling
+becomes more or less attractive as an industry evolves, because many
+
+
+patterns are observed in practice. In the majority of industries, however,
+there seems to be a tendency towards unbundling as an industry evolves. In
+commercial insurance, for example, standardized insurance packages have
+been replaced by the separate sale of services such as loss prevention
+counseling. Buyers are able today to purchase broad coverage or specialized
+services depending on their needs. Another industry where unbundling may
+well occur is video systems. Just as audio systems were once bundled but
+are now often unbundled, video systems are likely to unbundle into
+displays, speakers, controllers, game units, and so on. Unbundling trends
+have also been evident in such other industries as building control systems,
+gasoline retailing, computers, and hospital management services.
+The tendency for unbundling to occur over time is due to some
+characteristic changes in the competitive advantages and risks of bundling
+that accompany industry evolution:8
+Buyer Ability to Assemble the Bundle Increases. Buyer learning over
+time, coupled with diffusion of technology, implies that buyers may become
+more able to assemble the bundle themselves. Buyers can gain the expertise
+to ensure compatibility, and need less reassurance from a single source of
+responsibility. This is reinforced by the tendency of buyers to backward
+integrate as industry volume grows. Buyers become more able to make
+some parts of the bundle themselves, and therefore do not desire the whole
+package.
+Product/Technological Standardization Occurs. Standardization of the
+product as an industry matures often reduces the need to control the entire
+package in order to optimize system performance. It also lowers entry
+barriers into parts of the bundle, and simpliﬁes the buyer’s task of
+assembling the bundle in-house. The problems of interface compatibility
+also tend to be reduced over time as an industry matures and standards are
+established. Qualiﬁed suppliers thus appear for parts of the bundle where
+there were none previously, and trigger the unbundling process described
+above.
+Needs for Various Parts of the Bundle Are Reduced/Changed. Industry
+maturity tends to reduce the need of many buyers for service, applications
+
+
+engineering, and other parts of the bundle. Early in industry development,
+product quality is often erratic, products are unproven, and the perceived
+risk of purchase is often high (see Chapter 8). All of these characteristics
+lead buyers to seek the security of a bundled competitor, and bundling may
+be necessary to get an industry off the ground (the case in ﬁber optics and in
+electronic fuel injection systems for cars). As the industry matures,
+however, service and support either move in-house or are less needed by
+buyers. In addition, new buyers are often attracted to the industry and/or
+competitors segment the industry more ﬁnely, increasing the diversity of
+buyer needs. Different bundles thus become appropriate for different
+buyers, and the stage is set for an unbundled competitor to enter.
+Industry Size Offsets Bundling Scale Economies. As an industry passes
+from emerging to maturing, the increase in industry size may make it
+possible for specialists to viably provide only parts of the bundle. Growth in
+demand for the parts of the bundle overcomes manufacturing scale
+thresholds as well as ﬁxed selling costs. This is a special case of the
+emergence of a new segment as viable for a focus strategy, discussed in
+Chapter 7.
+Increasing Buyer Price Sensitivity Leads to Pressures for Cost Reduction
+through Unbundling. Increasing buyer price sensitivity leads buyers to press
+for cost savings. One avenue is often for a buyer to purchase parts of the
+bundle and assemble it in-house, or to purchase just those parts of the
+bundle that it needs. Buyers often provide the impetus for unbundling even
+if no specialist competitors emerge.
+Specialist Competitors Are Attracted. The success and growth of bundled
+ﬁrms may attract competitors looking for a way to get into the industry.
+Since entering with a bundled strategy usually involves overcoming higher
+entry barriers, new entrants naturally gravitate toward unbundled strategies
+(see Chapter 15). All the other forces described above provide the opening
+for them to succeed.
+The tendency for unbundling to occur over time tends to be accentuated
+where an industry has powerful, capable buyers. Such buyers often have the
+
+
+technological strength to quickly develop in-house capability to assemble
+the bundle themselves, the bargaining leverage to force suppliers to
+unbundle, and the resources to lower the barriers facing specialist
+competitors. For example, the leading automobile ﬁrms purchase entire
+systems such as brake systems or fuel injection systems only very early in
+their development. Later, when the technology becomes developed, these
+ﬁrms break the systems into parts to be sourced from separate suppliers.
+They in the process often help put unbundled suppliers in business.
+Unbundling is also triggered or accelerated during periods of intense
+industry rivalry, such as an economic downturn. Desperate competitors turn
+to unbundling for incremental revenue, setting in motion an often
+irreversible process. This pattern seems to have been at work in commercial
+insurance, where a disastrous downcycle has made ﬁrms anxious to gain
+incremental sales.
+Industry followers or new entrants are often the ﬁrst to break down the
+bundle. Followers tend to lead unbundling because of their desire to
+neutralize their competitive disadvantages in competing with bundled
+competitors. Often the best hope is to change the competitive rules in order
+to lower mobility barriers. New entrants also often break down the bundle
+by identifying latent or emerging segments or situations where there is no
+clear economic motivation for bundling, where bundling creates mixed
+motives in retaliation for bundled ﬁrms, or where buyer needs are changing.
+A prime source of new entrants that unbundle is spinoffs from bundled
+competitors, who recognize that some buyers’ needs are not being served.
+Despite a tendency for unbundling to occur over time, bundling is
+sustainable if the competitive advantages from bundling remain signiﬁcant
+and unattainable any other way. Performance or cost beneﬁts of bundling
+can persist, for example, even after the buyer’s need for reassurance or
+assistance in assembling the bundle disappears. Bundling is also sustainable
+if an industry leader controls a proprietary part of the bundle and buyers are
+forced to purchase the entire bundle to gain access to it. Moreover, a leader
+can sometimes protect the bundle by protecting proprietary interfaces
+among parts of it. By making the problem of interfacing with its products
+difﬁcult, the leader can deter the entry of specialist competitors.9 IBM has
+been accused of such behavior, for example.
+
+
+While the more common direction of change is from bundled to
+unbundled competition, it is important to recognize the opposite possibility.
+Technological changes may lead to product performance or interface
+motivations for bundling. Economies of scale in providing the bundle may
+also sometimes increase over time if the manufacturing process changes.
+Regulatory barriers that prevented economically rational bundling may fall.
+Unbundled strategies may also have developed over time in an industry
+where in fact there are economic motivations for bundling. If many
+specialists initially entered the industry and no ﬁrm had the resources or
+orientation to develop total capability in the whole bundle, buyers may have
+been forced to take the role of assembling the bundle themselves. A
+strategic innovation by one ﬁrm in bundling may transform the industry
+structure.
+Two cases where bundling appears to be supplanting unbundled
+strategies are ﬁnancial services and health care. Services such as Merrill
+Lynch’s Cash Management Account (CMA), which combine stock
+brokerage, a checking account, a credit card, and other ﬁnancial services,
+are bundles of previously separate services. They are a manifestation of
+deregulation as well as developments in information system technology that
+made such accounts feasible. Similarly, health maintenance organizations
+are combining separate services. In the same health care sector, however,
+home care services and specialized emergency room or ﬁrms performing
+minor surgery are a form of unbundling of the product line offered by
+hospitals. This example illustrates how the competitive advantages of
+bundling must be viewed on a segment-by-segment basis.
+Strategic Implications of Bundling
+The analysis of bundling carries important strategic implications for both
+bundled and unbundled competitors. There is usually a constant tension
+between bundled and unbundled strategies that requires that both be
+continually reexamined:
+Bundle Where the Advantages Outweigh the Risks. Bundling can be a
+powerful source of competitive advantage where the beneﬁts described
+
+
+above outweigh the risks. Where producers of products have lost sight of
+the buyer’s ultimate need to integrate them into a system, a bundled
+competitor can sometimes transform the industry in its favor. Sophisticated
+analysis of the buyers value chain and how it varies by segment is a
+prerequisite to effective choices to bundle and unbundle.
+Avoid Unconscious Bundling. Many companies have de facto bundled
+strategies though they do not recognize them as such. Unconscious bundling
+is dangerous because a bundled ﬁrm may be vulnerable to attack by a
+focused competitor but may not perceive the threat. A bundled strategy
+should be the result of a conscious decision in which the advantages of
+bundling are judged to outweigh the risks, and not the result of a failure to
+distinguish among the potentially separable products or services that the
+ﬁrm offers.
+Be Prepared to Unbundle Over Time if Conditions Change. Given the
+tendency for unbundling to occur over time, a bundled competitor must be
+constantly aware of the potential need to unbundle if the balance of
+advantages and risks shifts. A ﬁrm must distinguish between hard economic
+reasons for bundling and reasons based on lack of buyer sophistication that
+may be transient. Many bundled competitors have surrendered market share
+unnecessarily because they have stubbornly clung to bundled strategies.
+Bundled Competitors May Represent Opportunities for Industry
+Restructuring. Bundling can create vulnerabilities that an unbundled
+competitor can exploit, particularly if bundling is unconscious or if the
+industry is evolving structurally. Industries in which bundling is being
+practiced, ideally as a long-standing industry convention, are potential entry
+targets for a ﬁrm.
+Cross Subsidization
+When a ﬁrm offers products that either are complementary in the strict
+sense of being used together or are purchased at the same time, pricing can
+potentially exploit the relatedness among them. The idea is to deliberately
+
+
+sell one product (which I term the base good) at a low proﬁt or even a loss
+in order to sell more proﬁtable items (which I term proﬁtable goods).
+The term “loss leadership” is commonly used to describe the application
+of this concept in retailing. Some products are priced at or below cost in
+order to attract bargain-conscious buyers to the store. The hope is that these
+buyers will purchase other more proﬁtable merchandise during their visit.
+Loss leader pricing is also a way of establishing a low price image for the
+store.
+The same pricing principle is at work in the so-called “razor and blade”
+strategy, which involves complementary products. The razor is sold at or
+near cost in order to promote future sales of proﬁtable replacement blades.
+This same strategy is also common in amateur cameras, aircraft engines,
+and elevators. The complementary good is either a consumable item used
+with the product (e.g., ﬁlm), a nonconsumable product used with the item
+(e.g., software cartridges with video games), replacement parts (e.g., aircraft
+engine parts), or service (e.g., elevator maintenance and repair).
+Another variation of cross-subsidization is a trade-up strategy. Here
+product varieties that are typically ﬁrst purchases are sold at low prices, in
+the hopes that the buyer will later purchase other more proﬁtable items in
+the line as trade-up occurs. This strategy is sometimes employed, for
+example, in light aircraft, motorcycles, copiers, and computers.
+Conditions Favoring Cross Subsidization
+The motivation for cross subsidization is clear—increase total proﬁt by
+selling larger quantities of proﬁtable goods as a result of discounting the
+base good. The logic of this strategy depends on the existence of a number
+of conditions:
+Sufﬁcient Price Sensitivity in the Base Good. Demand for the base good
+must be sufﬁciently sensitive to price that discounting increases volume (or
+foot trafﬁc) enough to result in a more than compensating increase in proﬁt
+through the induced sales of the proﬁtable good. If demand for the base
+good is not sensitive to price, however, the ﬁrm is better off making normal
+proﬁts on both the base good and proﬁtable good.
+
+
+Sufﬁcient Price Insensitivity in the Proﬁtable Good. The proﬁtable good
+must have demand that is not very sensitive to price, so that raising price
+does not greatly lower volume. Unless this is the case, proﬁts lost in
+discounting the base good will not be recouped through proﬁts on proﬁtable
+goods. Insensitivity of demand to price in the proﬁtable good is a function
+of the value it creates for the buyer and the threat of substitution for it.
+Strong Connection between the Proﬁtable and Base Good. The sale of
+proﬁtable goods must also somehow be tied to the sale of the base good, so
+that buyers do not cherry-pick by purchasing only the low-priced base good.
+The connection between the products does not necessarily have to be
+binding, but it should be strong enough so that the proportion of buyers that
+purchase both from a ﬁrm is sufﬁcient to justify discounting the base good.
+The source of the connection between the base good and proﬁtable good
+will vary from industry to industry. In retailing, the connection is created by
+shopping costs, which lead buyers to purchase other goods during the same
+visit to the store. In trade-up, brand loyalty and switching costs are the
+connection between one product and another. In a razor and blade strategy,
+brand loyalty and switching costs also may cause the buyer to purchase the
+blade from the ﬁrm that supplies the razor. In addition, perceived or actual
+compatibility may connect the goods (e.g., in ﬁlm, spare parts), as does the
+belief of the buyer that the manufacturer of the product is best qualiﬁed to
+provide parts, maintenance, or repair (e.g., in elevators). The connection
+between the base and proﬁtable goods also depends on the possibility of
+substituting for the proﬁtable good. If spare parts can be refurbished, for
+example, then there is no longer the same relationship between equipment
+sales and parts sales.
+Barriers to Entry into the Proﬁtable Good. It must be difﬁcult to enter
+the proﬁtable good in order for cross subsidization to succeed, unless the
+base good and proﬁtable good are strongly tied. Barriers to copying spare
+parts or consumables are essential, for example, to the logic of the razor and
+blade approach.
+Risks of Cross Subsidization
+
+
+The risks of cross subsidization tend to arise from failure to meet the
+third condition above. If the connection between the base good and
+proﬁtable good is not sufﬁciently strong, a ﬁrm practicing cross
+subsidization may ﬁnd itself selling only the low-priced base good and not
+the proﬁtable good, which is purchased by the buyer from competitors. This
+can happen in a number of ways:
+Buyer Cherry-picking. The buyer only purchases the base good, and
+either does without the proﬁtable good or purchases it from another supplier
+that is not cross subsidizing.
+Substitutes for the Proﬁtable Good. If the need for the proﬁtable good
+can be eliminated or reduced, cross subsidization is compromised because
+the buyer will not purchase the proﬁtable good. For example, refurbishing
+spare parts instead of buying new ones or increasing the life of consumable
+items would have this effect.
+Buyer Vertical Integration. The buyer purchases the base good but
+integrates to produce the proﬁtable good internally. For example, service is
+performed in-house, or the buyer fabricates or refurbishes its own spare
+parts.
+Specialist (Focused) Competitors. A specialist competitor sells the
+proﬁtable good at lower prices. For example, independent service
+companies are common in a number of industries which specialize in
+servicing a particular brand of equipment, or in copying spare parts. They
+target an industry leader, and perform relatively simple types of service or
+copy the most frequently replaced parts. The equipment manufacturer’s
+margins on parts and service are thus undermined, and it may increasingly
+be left with only exotic repairs or low-volume parts. Sulzer Brothers, for
+example, is the prime target of unlicensed parts suppliers in marine diesel
+engines. The risk of entry by a specialist competitor is a function of the
+tightness of the connection between the base good and proﬁtable good, and
+the barriers to entry into the proﬁtable good.
+Cross Subsidization and Industry Evolution
+
+
+The appropriateness of cross subsidization often changes as an industry
+matures. As in bundling, the tendency is for it to become less appropriate
+over time, though this not always the case. Cross subsidization can become
+less attractive for the following reasons:
+The Strength of the Connection between the Base Good and Proﬁtable
+Goods Falls. As the buyer becomes knowledgeable and more price-
+sensitive, the perceived need to purchase the proﬁtable good from the same
+ﬁrm that sells the base good often diminishes. The tie between the goods
+may also weaken as diffusion of technology reduces switching costs, or
+compatible imitations for the proﬁtable good become available.
+Barriers to Entry into the Proﬁtable Good Fall. More available
+technology and falling differentiation tend to reduce barriers to entry into
+the proﬁtable good. One outcome may be buyer integration into the
+proﬁtable good.
+Substitution Possibilities for the Proﬁtable Good Increase. Substitutes
+are sometimes discovered for the proﬁtable good as the industry matures.
+For example, new technology for parts refurbishing appears (e.g., aircraft
+engine parts), or methods of conserving consumables are discovered (e.g.,
+reuse of dialysers in artiﬁcial kidney machines).
+Strategic Implications of Cross Subsidization
+Cross subsidization can be a way to signiﬁcantly improve performance if
+the necessary conditions hold. Such well-known ﬁrms as Gillette, Kodak,
+and Xerox have practiced the strategy successfully. However, the conditions
+supporting cross subsidization can be ﬂeeting, and require active efforts to
+sustain. Moreover, a ﬁrm must be sure that cross subsidization is intended
+rather than unintended.
+Some important strategic implications ﬂowing from cross subsidization
+are as follows:
+Create Barriers to Entry into the Proﬁtable Good. Sustaining a cross
+subsidization strategy requires that a ﬁrm create or enhance barriers to entry
+
+
+into proﬁtable goods. This implies, for example, that a ﬁrm must protect its
+proprietary servicing procedures, parts fabrication technologies, and designs
+for consumable supplies against imitators. Doing so may require aggressive
+patenting, deliberately creating different consumables for use in different
+models, and active marketing of the need to purchase proﬁtable goods from
+the supplier of the base good. Many ﬁrms have squandered the advantages
+of cross subsidization by not paying attention to such factors.
+An example of a ﬁrm that has worked hard to protect its proﬁtable goods
+is Xerox. Consumables are a major contributor to proﬁtability in copiers,
+and Xerox has maintained specialized toners for different models and
+actively marketed the beneﬁts of purchasing consumables from the
+manufacturer to ensure highest quality.
+Strengthen the Connection between the Base Good and Proﬁtable
+Goods. Anything that tightens the connection between the base good and
+proﬁtable goods will help defend a ﬁrm’s ability to cross-subsidize. Designs
+that increase the competitor’s difﬁculty in achieving a compatible interface
+are one such tactic. Another is Kodak’s tactic of advertising to consumers
+about the desirability of ﬁnishing pictures on Kodak paper, attempting to
+more closely tie the sales of machines and paper to photoﬁnishers.
+Be Prepared to Modify Cross Subsidization as the Industry Evolves. A
+ﬁrm must be prepared to modify cross subsidization if the supporting
+conditions change. The relative margins on the base good and proﬁtable
+goods should often be gradually equalized over time. A ﬁrm may also
+beneﬁt from devising more complex pricing schemes over time that lower
+the price of the proﬁtable good to those buyers most susceptible to
+defection. A ﬁrm must avoid the tendency to provide an umbrella that
+encourages entry by competitors into the proﬁtable good.
+Encourage Entry into the Base Good to Boost Sales of the Proﬁtable
+Good. If the proﬁtable good is proprietary, it may be desirable to encourage
+entry into the base good to boost sales of the proﬁtable good with such
+tactics as licensing.10 Kodak has encouraged entry into cameras that use its
+ﬁlm formats, for example.
+
+
+Avoid Unintended Cross Subsidization. A ﬁrm should cross-subsidize
+only as a deliberate strategy and not because it fails to understand its true
+costs. Failure to understand how costs differ by segment will almost
+guarantee that cross subsidization is occurring. A good system for strategic
+cost analysis, described in Chapter 3, is essential to effective cross
+subsidization. Unintended cross subsidy is an invitation to cherry-picking
+by competitors, as well as a way of attracting new entrants.
+Complements and Competitive Strategy
+Complements are pervasive in industries. A ﬁrm must know what
+complementary products it depends on, and how they affect its competitive
+advantage and the structure of the industry as a whole. A ﬁrm must decide
+which complements it should produce itself, and how to package and price
+them. Bundling and unbundling of complements is one of the ways in
+which fundamental industry restructuring takes place. The challenge is to
+make strategy towards complements an opportunity rather than a source of
+competitive advantage for competitors.
+
+
+IV
+Implications 
+for 
+Offensive 
+and 
+Defensive
+Competitive Strategy

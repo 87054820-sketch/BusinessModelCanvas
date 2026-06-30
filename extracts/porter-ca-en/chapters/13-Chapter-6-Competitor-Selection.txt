@@ -1,0 +1,937 @@
+# Chapter 6: Competitor Selection
+
+how it can avoid the risk of eroding industry structure in the process of
+competing. I then identify the considerations that bear on the choice of an
+optimal conﬁguration of competitors in an industry from a ﬁrm’s viewpoint,
+and how it can take actions that preserve industry stability. Finally, the
+chapter highlights some pitfalls in dealing with competitors that follow
+from the principles of competitor selection.
+Competitors are not only beneﬁcial to competition, but can be more
+beneﬁcial to a ﬁrm than is usually recognized. A ﬁrm can never be
+complacent towards its competitors or stop seeking ways to gain
+competitive advantage. Sustainable competitive advantage is the only
+reliable way to achieve superior performance. At the same time, however, a
+ﬁrm must know which competitors to attack, and how the array of
+competitors it faces will inﬂuence industry structure. Each competitor will
+carry with it different implications for competitive strategy.
+The Strategic Beneﬁts of Competitors
+The presence of the right competitors can yield a variety of strategic
+beneﬁts that fall into four general categories: increasing competitive
+advantage, 
+improving 
+current 
+industry 
+structure, 
+aiding 
+market
+development, and deterring entry. The particular beneﬁts achieved will
+differ by industry and the strategy a ﬁrm is pursuing.
+Increasing Competitive Advantage
+The existence of competitors can allow a ﬁrm to increase its competitive
+advantage. The mechanisms are described below, along with the industry
+characteristics that make them particularly valuable.
+Absorb Demand Fluctuations. Competitors can absorb ﬂuctuations in
+demand brought on by cyclicality, seasonality, or other causes, allowing a
+ﬁrm to utilize its capacity more fully over time. Having competitors is thus
+a way to control the capacity utilization cost driver described in Chapter 3.
+Market shares of industry leaders commonly rise during downturns and fall
+during upturns, for example, a manifestation of this phenomenon.
+Competitors gain share when the leader’s capacity is short during an upturn
+
+
+because the leader cannot or chooses not to meet all the demand. In a
+downturn, the leader gains share because it is the preferred source and now
+has capacity available. Letting competitors absorb the ﬂuctuations is often
+preferable to maintaining the necessary capacity to meet demand over the
+cycle. However, a ﬁrm must ensure enough overall capacity in the industry
+to serve key buyers and not attract entrants, and that it has enough excess
+capacity to control industry prices if the product is a commodity.
+Enhance the Ability to Differentiate. Competitors can enhance a ﬁrm’s
+ability to differentiate itself by serving as a standard of comparison.
+Without a competitor, buyers may have more difﬁculty perceiving the value
+created by a ﬁrm, and may, therefore, be more price- or service-sensitive.
+As a result, buyers may bargain harder on price, service, or product quality.
+A competitor’s product becomes a benchmark for measuring relative
+performance, however, which allows a ﬁrm to demonstrate its superiority
+more persuasively or lower the cost of differentiation. Competitors, then,
+can be signals of value for a ﬁrm’s product (Chapter 4). In consumer
+industries, for example, the existence of generic brands may actually allow
+a branded product to sustain higher margins in some circumstances. The
+beneﬁt of a competitor as a benchmark, however, presupposes that the buyer
+can perceive product and other differences, and that a ﬁrm is really
+differentiated so that the presence of a benchmark does not expose an
+unsustainable price premium.
+A related situation in which having a competitor enhances differentiation
+is where a ﬁrm is too superior to most of its rivals. It may be difﬁcult to
+command a large premium over standard-quality producers without a
+competitor somewhere in between, even if the value created by the ﬁrm
+fully justiﬁes the premium. For example, IBM reportedly had difﬁculty
+securing high prices in its management information system software
+development business until the Big Eight accounting ﬁrms entered the
+industry and charged high prices. The Big Eight had credibility, and their
+prices made it easier for buyers to accept the premiums IBM was asking
+over independent software houses.
+The beneﬁts of a standard of comparison are most important in industries
+where accepted standards for product quality and service are not apparent,
+where a wide range of cost/quality tradeoffs are possible, and where buyers
+
+
+would be prone to price sensitivity in the absence of perceived
+differentiation. In such industries, pressure from buyers to continually
+improve products and services in the absence of a benchmark is likely to
+place downward pressure on a ﬁrm’s proﬁtability.
+Serve Unattractive Segments. A ﬁrm’s competitors can be happy to serve
+industry segments that it ﬁnds unattractive, but that it would otherwise be
+forced to serve in order to get access to desirable segments or for defensive
+reasons. Unattractive segments are those which are costly for the ﬁrm to
+serve, where buyers have bargaining power and price sensitivity, where the
+ﬁrm’s position is not sustainable, or where participation undermines a ﬁrm’s
+position in more attractive segments. The concepts in Chapter 7 can be used
+to identify strategically-relevant industry segments and their attractiveness.
+A common example of the value of competitors is where particular items
+in the product line are difﬁcult for a ﬁrm to differentiate and do not earn
+acceptable returns. If buyers must have them, they will seek a supplier for
+the items that may gain an edge in selling the whole line. A good
+competitor supplying these items is less threatening than the buyer ﬁnding
+an entirely new source. The essential factor that makes a good competitor
+valuable in this situation is that demand for items in the line is linked.
+In a related situation, a particular buyer group may be price-sensitive and
+possess bargaining power. Without a good competitor, however, the ﬁrm
+may have to serve the unattractive buyers for defensive reasons to cut off a
+logical entry avenue for a bad competitor (see Chapter 14). Major mass
+merchandisers such as Sears, for example, are more powerful and price-
+sensitive than smaller chains because they are larger and compete with cost
+rather than differentiation strategies. If a ﬁrm serves the large mass
+merchandisers, it will earn a lower return than it does in serving the smaller
+chains and its overall proﬁtability will be lower unless the incremental
+volume from the unattractive buyers is sufﬁcient to improve its overall cost
+position. However, the large chains provide an inviting target for threatening
+new entrants unless served effectively by a good competitor.
+A typical situation in industries where there is government procurement
+will illustrate how serving one segment can undermine performance in
+others. The sealed bids required in selling to government agencies are
+frequently open to public inspection. Thus the bid prices become known to
+
+
+less price-sensitive industrial buyers, potentially compromising a ﬁrm’s
+ability to charge them premium prices. A ﬁrm may be better off with a good
+competitor serving such a segment. Allowing a competitor to serve a
+segment can also be beneﬁcial in situations where a ﬁrm has a weak product
+offering in the segment that would undermine its credibility in other
+segments.
+A competitor can also be beneﬁcial to a ﬁrm if it competes in segments
+with a buyer group that is particularly costly for a ﬁrm to service. If a ﬁrm
+is unable for legal reasons to price-discriminate1 sufﬁciently among buyers
+to reﬂect differences in servicing cost (e.g., because of the Robinson-
+Patman Act), or if possibilities for reselling among buyers prevent
+differential pricing, then a ﬁrm’s proﬁts are increased if a competitor who
+can serve them more cheaply or has lower proﬁt standards serves the high-
+cost customers.
+A segment must truly be unattractive structurally to justify the beneﬁts of
+a competitor, however. Sometimes seemingly unattractive segments are not
+really unattractive, but rather are being priced or served incorrectly. Rather
+than have competitors, then, a ﬁrm can proﬁt from serving the segments
+itself. The risks of incorrect pricing are discussed in Chapter 3.
+Provide a Cost Umbrella. A high-cost competitor can sometimes provide
+a cost umbrella that boosts the proﬁtability of a low-cost ﬁrm. It is a
+common view that industry leaders provide a price umbrella for industry
+followers, and this is indeed the case in some industries.2 What is less often
+recognized, however, is that market price is often set by the cost position of
+the high-cost competitor in stable and particularly in growing industries. If a
+high-cost competitor prices at or near its costs, the low-cost competitor can
+earn a substantial margin if it matches that price. Without the high-cost
+competitor, however, the price sensitivity of buyers may be greater because
+there is a larger price premium that attracts buyers’ attention to price. The
+cost umbrella from a high-cost competitor is particularly valuable where
+buyers (including retailers) desire a second or third source and will
+therefore give the high-cost competitor a portion of their business.
+The risk of letting a high-cost competitor set the price is that this price
+will attract entry. In order for the strategy to succeed, then, there must be
+some entry barriers. It is also important that the high-cost competitor gain
+
+
+enough business to remain viable or its demise may attract the entry of a
+bad competitor.
+Improve Bargaining Position with Labor or Regulators. Having
+competitors can greatly facilitate bargaining with labor and government
+regulators, where negotiations are partly or wholly industrywide. A leader is
+vulnerable to being pressured for concessions in union negotiations, or into
+meeting stringent standards for product quality, pollution control, and so
+on.3 The presence of a competitor can have a moderating effect on such
+demands if the competitor is less proﬁtable, less well capitalized, or more
+precariously positioned.
+Lower Antitrust Risk. The presence of viable competitors may be
+necessary to reduce the risk of antitrust scrutiny and prosecution, in both
+government and private suits. Eastman-Kodak and IBM are notable
+examples of companies that have faced repeated antitrust prosecution that
+has consumed a great deal of management time and perhaps distracted
+attention from running the business.4 Even if the chances of government
+antitrust prosecution are low, having too large a market share can expose a
+ﬁrm to private litigation every time it takes a signiﬁcant action such as a
+new product introduction, technology license, or price change. The risk of
+litigation often leads high-share ﬁrms to be consciously or unconsciously
+cautious in making moves, to the detriment of their competitive advantage.
+The presence of a viable competitor would improve the situation.
+Increase Motivation. A role of competitors that is hard to overestimate is
+that of motivator. A viable competitor can be an important motivating force
+for reducing cost, improving products, and keeping up with technological
+change. The competitor becomes a common adversary that brings people
+together to achieve a common goal. Having a viable competitor has
+important psychological beneﬁts inside an organization. Xerox, for
+example, is showing signs of beneﬁting from the emergence of serious
+competitors in copiers. Its manufacturing cost position appears to be
+improving after years where cost was unimportant to success, and its pace
+of new product development has quickened. The histories of ﬁrms with
+monopoly or near-monopoly positions, on the other hand, frequently
+
+
+provide examples of situations where a dominant ﬁrm was complacent and
+ultimately blinded to changes to which it failed to respond.
+Improving Current Industry Structure
+Having competitors can also beneﬁt overall industry structure in a
+variety of ways:
+Increase Industry Demand. The presence of competitors can increase
+overall industry demand and, in the process, a ﬁrm’s sales. If primary
+demand for a product is a function of total industry advertising, for
+example, a ﬁrm’s sales can beneﬁt from competitors’ advertising. Followers
+often spend disproportionately on advertising because they are too small to
+reap economies of scale. A regular stream of product introductions by a
+ﬁrm and competitors may also broaden industry appeal and raise awareness
+of the industry, boosting demand. Finally, the entrance of competitors can
+sometimes lend credibility to a product, as the entrance of IBM did with
+personal computers.
+Competitors can also boost industry demand where an industry’s product
+line includes complementary products, as with cameras and ﬁlm, razors and
+blades, and laboratory instruments and consumable supplies. A ﬁrm with a
+proprietary position in one product can beneﬁt if one or more competitors
+sell the complementary product. For example, Kodak has licensed camera
+technology to allow numerous competitors to sell cameras, thereby
+stimulating the sales of proprietary Kodak ﬁlm. This strategy is based on the
+ability of competitors to enhance primary demand for a complementary
+good through their collective marketing efforts. The strategy is also a good
+one where it is difﬁcult to earn an adequate return on the complementary
+product and thus the ﬁrm wants to meet only a portion of the demand
+itself.5
+Provide a Second or Third Source. In many industries, particularly those
+involving important raw materials or other important inputs, buyers want a
+second or third source in order to mitigate the risk of supply disruptions
+and/or to hedge against the bargaining power of suppliers. This sort of
+buyer behavior occurs in turbine generators, metal cans, sugar, and
+
+
+chemicals, for example. The presence of a good competitor as the second or
+third source takes the pressure off a ﬁrm. It can prevent buyers from inviting
+more threatening competitors into such industries as well as delay or reduce
+the risk that buyers will backward integrate themselves.
+Kyocera, the U.S. subsidiary of Kyoto Ceramics, has experienced the
+problem of not having credible competitors in supplying the semiconductor
+industry. Its share of ceramic housings for semiconductor chips is so
+dominant that U.S. semiconductor companies have been actively searching
+for new sources, and have actually invested resources to help new suppliers
+get into the business. With a more credible competitor, Kyocera would have
+been less vulnerable to such destabilizing behavior by its buyers and
+perhaps under less scrutiny from them on pricing.
+While the examples cited above have been drawn from industrial
+products, the same issues apply in consumer goods. Retailers often desire
+more than one brand to provide a counterweight to any one manufacturer’s
+power. Having a good competitor can lower the chances that retailers will
+actively help other competitors enter the industry through favorable shelf
+positioning, heavy promotion, and other support.
+Reinforce Desirable Elements of Industry Structure. A good competitor
+can reinfore desirable aspects of industry structure or promote structural
+change that improves the attractiveness of the industry. For example, a
+competitor that stresses product quality, durability, and service can help
+reduce buyer price sensitivity and mitigate price rivalry in the industry. Or a
+competitor that heavily advertises may hasten the evolution of the industry
+into one with a few strong brands and high entry barriers. Conversely, a bad
+competitor can undermine the structure of an industry in the pursuit of its
+own competitive advantage. In baby foods, for example, Beech-Nut
+historically reinforced positive aspects of the industry through its high
+levels of advertising, frequent product introductions, and stable prices
+before its acquisition by Squibb in the mid-1970s. Heinz, on the other hand,
+has undermined industry structure with a low cost/low price strategy in a
+futile effort to overtake Gerber. Squibb’s acquisition of Beech-Nut turned
+Beech-Nut into a bad competitor as well by altering its goals and strategy.
+Aiding Market Development
+
+
+Competitors can help develop the market in emerging industries or in
+industries where product or process technology is evolving:
+Share the Costs of Market Development. Competitors can share the costs
+of market development for new products or technologies. Market
+development often involves costs of inducing buyer trial, battling substitutes
+(see Chapter 8), legal compliance, and promoting the development of
+infrastructure such as independent repair facilities.6 In addition, R&D
+spending is often necessary to reﬁne the basic technology, to overcome
+switching costs faced by any prospective buyer, and to develop procedures
+for installation and service that are widely useful. Competitors can lower a
+ﬁrm’s cost of market development, particularly if competitors spend
+disproportionately on it relative to their sales and if their market
+development efforts are in areas that represent industrywide problems.
+Reduce Buyers’ Risk. Competitors may be necessary in a new market (or
+a new technology) in order to provide an alternate source for buyers, even if
+buyers would not normally require another source later on. Buyers are often
+reluctant to purchase a new product if only one or two ﬁrms produce it,
+particularly where the cost of switching is high or the buyer would be hurt if
+a supplier failed to provide adequate service or went out of business.
+Help to Standardize or Legitimize a Technology. Having competitors that
+employ the same technology as a ﬁrm can accelerate the process by which
+the technology is legitimized or becomes the standard. Buyers are often
+reluctant to accept a technology as the standard when only one ﬁrm is
+backing it, and may hold back from initial purchases to wait for
+technological change to progress further. When a credible competitor is also
+pushing the technology (and sharing in the cost of marketing it), buyers’
+reluctance to adopt it can be much reduced. The move of the pioneers of
+VHS and Beta format video cassette recorders to license other leading ﬁrms
+to use their technology is a good example. A competitor with the same
+technology may also facilitate the process of gaining approvals by
+government or other standard-setting organizations for the technology.
+
+
+Promote the Image of the Industry. The right competitors can enhance
+the image of an industry. Established companies with reputations in other
+businesses can lend credibility to an industry by signaling that the industry
+is legitimate and that promises by ﬁrms will be met.
+The beneﬁts of having competitors during market development are often
+transient ones, applying most strongly to the emerging or growth phases of
+an industry’s development. Having several competitors may thus be most
+strategically beneﬁcial early in an industry’s development, with the ideal
+number of competitors declining thereafter.
+Deterring Entry
+Competitors play a crucial role in deterring other entrants, or enhancing
+the sustainability of a ﬁrm’s competitive advantage. The right competitors
+can contribute to defensive strategy (Chapter 14) in a variety of ways:
+Increase the Likelihood and Intensity of Retaliation. Competitors can
+increase the likelihood and severity of retaliation perceived by potential
+entrants. Competitors can also act as a ﬁrst line of defense against new
+entrants, battling them with tactics such as price cutting that would be
+prohibitively expensive for a ﬁrm with a large market share because its
+revenues across the board would be reduced. Further, an entrant may be less
+prone to enter if it faces a number of credible competitors than if it sees a
+dominant ﬁrm that is potentially vulnerable to focus strategies. Dominant
+ﬁrms often have mixed motives in serving particular segments that expose
+them to focused entrants.7
+A competitor does not deter other entrants, however, if it is perceived as
+too weak. Instead, a weak competitor provides a new entrant with an
+inviting beachhead in the industry though the entrant would not dare to
+attack the leader directly.
+Symbolize the Difﬁculty of Successful Entry. A competitor can bear
+witness to the difﬁculty of successfully competing against a ﬁrm, and
+demonstrate the unspectacular proﬁtability of a follower position. The
+limited increase in market share and poor proﬁtability of Procter &
+
+
+Gamble’s Folgers, for example, is a good lesson in the costs of gaining
+share in the coffee industry against General Foods’ Maxwell House.
+Without a competitor, a potential entrant may underestimate the height of
+entry barriers and the competitive strength of the leader.
+Block Logical Entry Avenues. Competitors can occupy positions that
+represent logical entry paths into an industry, blocking them from potential
+entrants. In the lift truck industry, for example, small lift trucks sold to
+smaller buyers are a logical entry path. Small lift trucks require less service,
+and smaller buyers face fewer switching costs in changing suppliers
+because they often have only one lift truck and face no issues of ﬂeet
+commonality. Thus the barriers to entry into this segment are lower than
+into other segments. In this example, however, the moderate proﬁtability of
+the segment caused leading U.S. manufacturers to neglect it. Unfortunately
+for U.S. lift truck manufacturers, there was no credible U.S. competitor to
+block entry into the segment, and Japanese manufacturers successfully used
+the segment as a way to enter the U.S. market. Even though an industry
+leader might serve such a segment itself, it may be more proﬁtable for the
+leader to cede the segment to a good competitor if the segment is
+structurally less attractive than the core business (see Chapter 7).
+Competitors can also ﬁll product niches that would themselves be too
+small for the leader, or in relation to which the leader faces mixed motives.
+Having competitors ﬁlling these niches increases the difﬁculty of entry
+because a potential entrant is forced to enter with a “me too” product,
+instead of having a protected niche in which to create a base for expansion.8
+The desire of buyers for a second or third source also opens up logical entry
+avenues for competitors. Having a good competitor to fulﬁll this role can
+deter more threatening entrants.
+Crowd Distribution Channels. Having a competitor gives distributors
+and/or retailers multiple brands, and may make it more difﬁcult for a new
+entrant to gain access to distribution. Where there are only one or two ﬁrms
+in an industry, on the other hand, the channels may welcome new
+competitors to mitigate the bargaining power of the leaders or to supply
+private label merchandise. The presence of competitors can thus force a new
+
+
+entrant to bear much higher costs of gaining channel access because the
+channels already have a full complement of brands.
+It may also be desirable for a leader to supply private label goods as a
+defensive move if no good competitor is present to serve the private label
+market. Despite this, many leaders tend to avoid private label business
+because they see it as undercutting the position of their branded goods, as
+RCA and Zenith reasoned in TV sets. This can be too narrow a viewpoint
+when the risks of future entry are considered; in TV sets, Sears actively
+encouraged Japanese entry into the U.S. color set market because of its
+inability to source a quality private label set from RCA, Zenith, or other
+capable U.S. manufacturers.
+What Makes a “Good” Competitor?
+Competitors are not all equally attractive or unattractive. A good
+competitor is one that can perform the beneﬁcial functions described above
+without representing too severe a long-term threat. A good competitor is
+one that challenges the ﬁrm not to be complacent but is a competitor with
+which the ﬁrm can achieve a stable and proﬁtable industry equilibrium
+without protracted warfare. Bad competitors, by and large, have the
+opposite characteristics.
+No competitor ever meets all of the tests of a good competitor.
+Competitors usually have some characteristics of a good competitor and
+some characteristics of a bad competitor. Some managers, as a result, will
+assert that there is no such thing as a good competitor. This view ignores the
+essential point that some competitors are a lot better than others, and can
+have very different effects on a ﬁrm’s competitive position. In practice, a
+ﬁrm must understand where each of its competitors falls on the spectrum
+from good to bad and behave accordingly.
+Tests of a Good Competitor
+A good competitor has a number of characteristics. Since its goals,
+strategy, and capabilities are not static, however, the assessment of whether
+a competitor is good or bad can change.
+
+
+Credible and Viable. A good competitor has sufﬁcient resources and
+capabilities to be a motivator to the ﬁrm to lower cost or improve
+differentiation, as well as to be credible with and acceptable to buyers. The
+competitor cannot serve as a standard of comparison or aid in market
+development unless it has the required resources to be viable in the long
+term and unless buyers view it as at least a minimally acceptable alternative.
+The credibility and viability of a good competitor are particularly important
+to its ability to deter new entry. A competitor must have resources sufﬁcient
+to make its retaliation a credible threat to new entrants and it must represent
+an acceptable alternative to buyers if they are to forgo looking for new
+sources. Finally, a competitor must be strong enough to keep the ﬁrm from
+becoming complacent.
+Clear, Self-Perceived Weaknesses. Though credible and viable, a good
+competitor has clear weaknesses relative to a ﬁrm which are recognized.
+Ideally, the good competitor believes that its weaknesses will be difﬁcult to
+change. The competitor need not be weaker everywhere, but has some clear
+weaknesses that will lead it to conclude that it is futile to attempt to gain
+relative position against a ﬁrm in the segments the ﬁrm is interested in.
+Understands the Rules. A good competitor understands and plays by the
+rules of competition in an industry, and can recognize and read market
+signals. It aids in market development and promotes the existing technology
+rather than attempting strategies that involve technological or competitive
+discontinuities in order to gain position.
+Realistic Assumptions. A good competitor has realistic assumptions
+about the industry and its own relative position. It does not overestimate
+industry growth potential and therefore overbuild capacity, or underinvest in
+capacity and in so doing provide an opening for newcomers. A good
+competitor also does not overrate its capabilities to the point of triggering a
+battle by attempting to gain share, or shy from retaliating against entrants
+because it underestimates its strengths.
+Knowledge of Costs. A good competitor knows what its costs are, and
+sets prices accordingly. It does not unwittingly cross-subsidize product lines
+
+
+or underestimate overhead. As in the areas described above, a “dumb”
+competitor is not a good competitor in the long run.
+A Strategy that Improves Industry Structure. A good competitor has a
+strategy that preserves and reinforces the desirable elements of industry
+structure. For example, its strategy might elevate entry barriers into the
+industry, emphasize quality and differentiation instead of price cutting, or
+mitigate buyer price sensitivity through the nature of its selling approach.
+An Inherently Limiting Strategic Concept. A good competitor’s strategic
+concept inherently limits it to a portion or segment of the industry that is
+not of interest to the ﬁrm, but that makes strategic sense for the competitor.
+For example, a competitor following a focus strategy based on premium
+quality might be a good competitor if it does not want to expand its share.
+Moderate Exit Barriers. A good competitor has exit barriers that are
+signiﬁcant enough to make its presence in the industry a viable deterrent to
+entrants, but yet not so high as to completely lock it into the industry. High
+exit barriers create the risk that the competitor will disrupt the industry
+rather than exit if it encounters strategic difﬁculty.
+Reconcilable Goals. A good competitor has goals that can be reconciled
+with the ﬁrm’s goals. The good competitor is satisﬁed with a market
+position for itself which allows the ﬁrm to simultaneously earn high returns.
+This often reﬂects one or more of the following characteristics of a good
+competitor:
+HAS MODERATE STRATEGIC STAKES IN THE INDUSTRY. A good competitor
+does not attach high stakes to achieving dominance or unusually high
+growth in the industry. It views the industry as one where continued
+participation is desirable and where acceptable proﬁts can be earned, but not
+one where improving relative position has great strategic or emotional
+importance. A bad competitor, on the other hand, views an industry as
+pivotal to its broader corporate goals. For example, a foreign competitor
+entering what it perceives to be a strategic market is usually a bad
+
+
+competitor. Its stakes are too high, and it may also not understand the rules
+of the game.
+HAS A COMPARABLE RETURN-ON-INVESTMENT TARGET. A good competitor
+seeks to earn an attractive return on investment and does not place greater
+priority on gaining tax beneﬁts, employing family members, providing jobs,
+earning foreign exchange (e.g., some government-owned competitors),
+providing an outlet for upstream products, or other goals that translate into
+unacceptable proﬁts in the industry. A competitor with compatible proﬁt
+objectives is less likely to undercut prices or make heavy investments to
+attack a ﬁrm’s position. Differences in goals make McDonnell-Douglas a
+much better competitor to Boeing in aircraft than the state-owned Airbus
+Industries, for example.
+ACCEPTS ITS CURRENT PROFITABILITY. A good competitor, while seeking to
+earn attractive proﬁts, is typically satisﬁed with its current returns and
+knows that improving them is not feasible. Ideally the competitor is
+satisﬁed with proﬁtability that is somewhat lower than the ﬁrm’s in
+segments that they jointly serve. In such a situation the competitor is not
+prone to upset the industry equilibrium in order to improve its relative
+proﬁtability, and its modest returns may serve to discourage entry by new
+competitors.
+DESIRES CASH GENERATION. A good competitor is interested enough in
+generating cash for its stockholders or corporate parent that it will not upset
+industry equilibrium with major new capacity or a major product line
+overhaul. However, a good competitor does not harvest its position in the
+industry because this will threaten its credibility and viability.
+HAS A SHORT TIME HORIZON. A good competitor does not have so long a
+time horizon that it will ﬁght a protracted battle to attack a ﬁrm’s position.
+IS RISK-AVERSE. A good competitor is concerned about risk and will be
+satisﬁed with its position rather than take large risks to change it.
+Smaller divisions of diversiﬁed ﬁrms can often be good competitors if
+they are not viewed as essential to long-term corporate strategy. They are
+
+
+often given tough proﬁtability targets and expected to generate cash ﬂow.
+Divisions that are slotted for growth may be bad competitors, however.
+Squibb’s acquisition of Beech-Nut’s baby food business was predicated on
+the perception that Beech-Nut had signiﬁcant growth potential. This led
+Beech-Nut to take some actions that proved unsuccessful but that
+undermined the industry.
+Even a competitor with considerable strengths can be a good competitor
+if it has the right goals and strategy. Its goals and strategy create a situation
+where a ﬁrm and the competitor can coexist. A clear and self-perceived
+weakness is thus not a prerequisite for a good competitor. Conversely,
+however, a competitor with a very long time horizon, little short-run need
+for cash ﬂow, or a willingness to take substantial risks is usually a bad
+competitor from the point of view of achieving a stable industry
+equilibrium, whether or not it has any real strengths.
+Sometimes a competitor can be a good competitor to a ﬁrm but the ﬁrm
+is not a good competitor to it. One competitor plays by the rules, but the
+other attacks it anyway. Industries are most stable when ﬁrms are mutually
+good competitors—the segment one competitor focuses on is proﬁtable for
+it but not of interest to the other, for example. Mutually good competitors
+play to their respective strengths and succeed at doing so given their
+respective internal standards.
+“Good” Market Leaders
+These tests of a good competitor also shed light on what makes a good
+market leader from the perspective of followers. If a ﬁrm is not in a position
+to be among the leaders in the industries it serves, its success may well be
+highly dependent on picking industries with good leaders. The single most
+important quality of a good leader from a follower’s perspective is that the
+leader has goals and a strategy that provide an umbrella under which the
+follower can live proﬁtably. For example, a leader with high return-on-
+investment goals, concern for the “health of the industry,” a strategy built
+upon differentiation, and a disinclination to serve certain industry segments
+due to mixed motives will offer opportunities for followers to earn attractive
+returns in a relatively stable industry environment. Conversely, a leader that
+
+
+fails to understand the beneﬁts of viable followers, that is satisﬁed with low
+returns, or whose strategy works in other ways to erode industry structure is
+unlikely to provide an attractive environment for followers. For example, a
+leader pursuing a strategy based on going down the learning curve rapidly
+through low prices in an industry where buyers are powerful and price-
+sensitive will often destroy the industry for followers (and perhaps for
+itself).
+Diagnosing Good Competitors
+Diagnosing whether a rival is a good competitor requires a complete
+competitor analysis. A competitor’s goals, assumptions, strategy, and
+capabilities all play a part in determining whether it is a good or bad
+competitor for a particular ﬁrm.9 Since no competitor ever meets all the
+tests of a good competitor completely, it is necessary to decide whether a
+competitor’s desirable characteristics outweigh those that undermine the
+industry or a ﬁrm’s position.
+A number of examples may serve to illustrate the process of weighing
+and balancing a competitor’s characteristics to reach a net assessment of
+whether it is good, bad, or somewhere in between. In the computer industry,
+Cray Research seems to be a good competitor for IBM, while Fujitsu is a
+bad competitor. Cray is a viable rival that plays by accepted rules in a
+focused segment of the industry, and does not appear to misjudge its ability
+to take on IBM. Fujitsu, on the other hand, has high stakes in succeeding
+against IBM, low standards for proﬁtability in markets it is attempting to
+penetrate, and a strategy that may worsen industry structure by undermining
+differentiation.
+In the copier industry, Kodak is a relatively good competitor for Xerox.
+Kodak is concentrating on the high-volume end of the market and
+emphasizing quality and service. Though it has taken some proﬁtable
+market share away from Xerox, Kodak has high rate-of-return standards and
+is playing by the same rules as Xerox. Thus it has pushed Xerox to improve
+its quality. Moreover, Kodak does not appear to view copiers as a linchpin
+of an ofﬁce automation strategy that would justify accepting low proﬁts, but
+as a proﬁtable business area in its own right.
+
+
+In fertilizer and chemicals, conversely, oil companies have proven to be
+bad competitors. They have had excess cash to invest, and have looked for
+big markets in which they could gain large market shares so as to have a
+noticeable impact on their ﬁnancial statements. Instead of emphasizing
+R&D and customer service, most oil companies have competed on price
+and accelerated the commoditization of the industries they entered. They
+have also had poor forecasting ability, and tended to build huge new plants
+during the peaks of the business cycle rather than acquiring facilities during
+troughs. This has meant that they have created or exacerbated problems of
+excess capacity.
+The competitive situation in CT scanners illustrates a case where a
+follower seems to understand the beneﬁts of a good market leader. The
+Israeli company Elscint has gained a number two or three market position.
+GE is the leader in the industry, and Elscint has publicly disclaimed a desire
+to overtake GE. Elscint views GE as a good market leader because it
+maintains high prices, differentiates based on service and reputation, and
+has invested heavily to educate and develop the market. Another historically
+good market leader is Coca-Cola. Coke avoided price competition and
+vigorous retaliation against followers’ moves, opting for a statesman’s role
+instead. Pepsi Cola, Dr Pepper, and Seven-Up enjoyed many years of stable
+proﬁts as followers. Perhaps as a result of Pepsi’s misjudgment in
+attempting to take too much share from Coke combined with the
+ascendance of new top management, however, Coke is showing signs of
+becoming much more aggressive. Pepsi’s apparent triggering of Coke’s
+change of behavior illustrates a pitfall in dealing with good competitors that
+I will discuss further below.
+If competitors are bad enough, even a ﬁrm with a signiﬁcant competitive
+advantage may ﬁnd it unattractive to compete in an industry. In mushrooms,
+for example, Ralston-Purina had some potential advantages but faced many
+family ﬁrms with low return-on-investment standards as well as imports
+from Taiwan and the People’s Republic of China. Ralston ﬁnally exited the
+industry.
+Inﬂuencing the Pattern of Competitors
+
+
+The beneﬁts of good competitors suggest that it may be desirable for a
+ﬁrm to attack some current competitors and not others, and to encourage the
+entry of new competitors provided they meet the tests of a good competitor.
+Since it is usually desirable to have more competitors early in an industry’s
+development than during maturity, it may also make sense to encourage the
+early entry of competitors that will not be able to succeed in the long run.
+Nothing in these statements implies that a ﬁrm should be complacent
+toward competitors, or that a ﬁrm should not aggressively seek to increase
+competitive advantage. Rather, the principles of competitor selection imply
+that a ﬁrm must adopt a more sophisticated perspective towards its
+competitors than is commonly done.
+Who a ﬁrm competes with is determined by a wide range of factors,
+many of which are largely outside a ﬁrm’s control. Which competitors
+choose to enter an industry is, to a considerable extent, a matter of the luck
+of the draw, as will be discussed in Chapter 14 in more detail. Whether or
+not a particular ﬁrm perceives an industry to be attractive at a particular
+time and has the resources available to enter is partly a matter of chance.
+Once a few competitors have entered, however, others may no longer
+perceive the industry as an opportunity, particularly if the early entrants
+were credible ﬁrms. If a ﬁrm can somehow inﬂuence who enters early, then,
+the entire pattern of entry into the industry may be changed.
+Competitor selection seeks not only to inﬂuence the pattern of entry, but
+to inﬂuence which competitors gain the market share necessary to be viable
+and which segments they compete in.10 The following tactics to select
+competitors are available in many industries:
+Technology Licensing. A ﬁrm can license its technology early to good
+competitors under favorable terms (see Chapter 5). If it picks the right
+competitors, further entry may be effectively deterred. Given the desire of
+buyers for a second or third source in semiconductors, for example,
+licensing is relatively common in that industry and careful choice of
+licenses can have a beneﬁcial effect. In an interesting recent move, Intel has
+licensed IBM and Commodore to make the 8088 microprocessor. Here the
+licenses are having the effect of making buyers competitors in a sense, but
+blocking other more threatening competitors in the process.
+
+
+Selective Retaliation. A ﬁrm can retaliate vigorously against bad
+competitors, leaving good competitors to enter or gain share unopposed.
+The ﬁrm’s choice of products to introduce or geographic markets to enter
+will often impact one competitor more than another, for example.
+Selective Entry Deterrence. A ﬁrm can refrain from investing in creating
+entry barriers to those segments where the presence of a good competitor
+can improve the ﬁrm’s position. The risk is that the wrong competitor
+chooses to occupy the undefended segments, as part of a more ambitious
+sequenced entry strategy.11
+Coalitions to Draw in New Entrants. A ﬁrm can contract with a good
+potential competitor to become a source of supply for some item in the
+product line, to be sold through a ﬁrm’s distribution channels. This
+competitor may then logically expand to serve other segments undesirable
+to the ﬁrm. Other forms of coalitions that can encourage good competitors
+include sourcing agreements for components, and private label
+arrangements where a competitor supplies goods sold under a ﬁrm’s name.
+Both can have the effect of lowering barriers to entry for a good competitor.
+Damaging Good Competitors in Battling Bad Ones
+It is often difﬁcult to battle bad competitors without the battle spilling
+over to harm good competitors. An increase in advertising, new product
+introduction, or change in warranty policy designed to thwart a bad
+competitor, for example, can reduce a good competitor’s market share or
+even threaten its viability. Weakening the good competitor in turn may
+erode the attractiveness of the industry or invite new entry.
+It is important, therefore, to tailor offensive or defensive moves against
+bad competitors to minimize their impact on good competitors. Sometimes
+this is impossible, because of the segments a bad competitor is threatening
+or the seriousness of the threat. However, the challenge is to maintain the
+delicate balance between improving a ﬁrm’s position and vigorously
+responding to threats, on the one hand, and preserving good competitors, on
+the other. It is important that good competitors not perceive that they are the
+target of attacks or they may change their goals in desperation. Also, a ﬁrm
+
+
+must inhibit good competitors from becoming bad ones by continued rivalry
+to keep them from revising their objectives.
+Changing Bad Competitors into Good Ones
+Sometimes bad competitors can be transformed into good ones. Ideally,
+market signaling to correct a competitor’s faulty assumptions is all that is
+necessary. Alcoa has been attempting to inﬂuence overly optimistic demand
+forecasts of its competitors in the aluminum industry, for example. In other
+cases, time will convert a bad competitor into a good one. The futility of the
+competitor’s strategy will become apparent to it, and it will alter its goals or
+strategy in ways that make it a better competitor.
+A ﬁrm must often be prepared to ﬁght battles in order to convert bad
+competitors to good ones, however. A battle may be necessary to
+demonstrate its relative weakness to a competitor, or to convince it that the
+ﬁrm will not tolerate erosion of position. While battles can be expensive,
+they are often cheaper than the cost of a protracted siege. With bad
+competitors, a protracted siege is often a fact of life in an industry.
+Some bad competitors will never become good competitors. With them,
+a ﬁrm must accept the fact that continued challenges to its position will be
+forthcoming. The full range of offensive and defensive tactics described
+throughout this book will be necessary to sustain competitive advantage and
+avoid undermining industry structure.
+The Optimal Market Conﬁguration
+The principles of competitor selection imply that holding a 100 percent
+market share is rarely, if ever, optimal.12 It is sometimes more sensible for
+ﬁrms to yield position and allow good competitors to occupy it than to
+maintain or increase share. While this is contrary to managers’ beliefs in
+some ﬁrms and almost heretical in others, it may be the best way to improve
+competitive advantage and industry structure in the long run. The right
+question a ﬁrm should ask is: What conﬁguration of market shares and
+competitors is optimal? Having described the way in which a ﬁrm can
+identify and inﬂuence good competitors, I will now consider the
+
+
+conﬁguration of competitors that is likely to best serve a ﬁrm’s long-run
+strategic position.
+The determinants of the ideal market share for a ﬁrm in general terms are
+numerous and complex. It is possible, however, to lay down some general
+principles for assessing the share a ﬁrm should hold and the ideal pattern of
+competitors. I ﬁrst describe the factors that determine the ideal
+conﬁguration, and then consider how a ﬁrm should move toward the ideal
+conﬁguration given the existing competitor conﬁguration.
+The Optimal Competitor Conﬁguration
+A ﬁrm’s optimal share of the part of the industry it is targeting should be
+high enough not to tempt a competitor to attack it. A ﬁrm must also have
+sufﬁcient market share superiority (combined with its other competitive
+advantages not related to share) to maintain an equilibrium in the industry.
+The gap between leader and follower shares required to preserve stability
+will vary from industry to industry as I will describe below.
+A number of structural characteristics inﬂuence a leader’s optimal share:
+Factors Implying a High Optimal
+Market Share for Leaders13
+• Signiﬁcant economies of scale14
+• A steep learning curve that is
+proprietary
+• Few industry segments
+• Buyers willing to purchase from a
+single source
+• No distribution channels stocking
+multiple brands
+• Competitors who can share value
+activities with related business
+units, implying that small
+competitor share positions are an
+Factors Suggesting a Lower Optimal
+Share for Leaders
+• Few economies of scale
+• A modest learning curve
+• There are unattractive segments
+• Buyers demand a second or third
+source
+• Channels have bargaining power
+and desire multiple suppliers
+• Competitors are single-business
+ﬁrms who cannot share activities
+• Followers are necessary as credible
+entry deterrents against more
+threatening ﬁrms
+
+
+effective bases from which to
+attack a leader (see Chapter 10)
+• Other high entry barriers
+• A follower needs a meaningful
+share to be viable
+• The industry has a history of
+antitrust problems or vulnerability
+to them.15
+The distribution of market shares among ﬁrms in an industry that leads
+to the greatest industry stability is critically dependent on industry structure
+and whether competitors are good or bad competitors. The most important
+industry structural variables determining the ideal pattern of shares are the
+degree of differentiation or switching costs present in the industry and
+whether or not the industry is segmented. Where there are few segments and
+little differentiation or low switching costs, signiﬁcant market share
+differences are usually necessary for a stable industry. With segmentation or
+high levels of differentiation, conversely, ﬁrms can coexist proﬁtably
+despite similar shares because they are less prone to see the need or
+opportunity to attack each other.
+The nature of competitors is equally important. Where competitors are
+bad competitors, large share differences among ﬁrms are necessary to
+preserve stability because bad competitors tend to take destabilizing actions
+if they perceive any opportunity to succeed. Where competitors are good
+competitors, conversely, little share differential may be necessary to
+discourage attacks.
+These considerations combine to yield the implications shown in Figure
+6–1.16
+The pattern of generic strategies in an industry is also vital. Firms with
+different generic strategies can coexist much more easily than ﬁrms that all
+converge on the same generic strategy. Thus a ﬁrm must look beyond
+market shares alone in assessing the conﬁguration of competitors in its
+industry.
+
+
+Figure 6–1. Competitor Conﬁguration and Industry Stability
+It may be beneﬁcial for the share not controlled by leaders to be split
+among followers rather than held by one. This means that followers will be
+pitted against each other instead of eyeing the position of the leader.
+Followers who are pursuing different focus strategies are even better than
+followers who are competing head on. It is also essential that followers be
+truly viable and offer a credible deterrent to new entrants, or fragmentation
+of the follower group can backﬁre and invite new entry.
+Maintaining Competitor Viability
+A ﬁrm must pay close attention to the health of its good competitors.
+Good competitors cannot play their role unless they are viable, and even a
+good competitor may undermine a ﬁrm’s competitive advantage or industry
+structure if driven to desperation. Desperate competitors have a tendency to
+violate beneﬁcial industry conventions or engage in other practices that
+undermine industry structure and damage industry image. They also have a
+tendency to look for salvation through being acquired, and may in the
+process introduce a threatening new player into the industry. Finally, the
+managements of desperate competitors are frequently changed. A new
+management can convert a good competitor into bad one.
+The market position necessary for a competitor to be viable varies from
+industry to industry depending on entry/mobility barriers; it is less than 5
+percent in soft drinks, but probably more than 10 percent in frozen entrees.
+
+
+A ﬁrm must know the market position necessary to keep its good
+competitors viable, and how this may be changing as a result of structural
+evolution. It must also allow good competitors enough successes to lead
+them to perpetuate their strategies, rather than change them in the face of
+repeated problems.
+Moving Toward the Ideal Competitor Conﬁguration
+The considerations described above suggest how competitors should
+ideally be distributed. To decide whether to move toward the ideal, however,
+a ﬁrm must calculate the cost of gaining position or, conversely, the risk of
+incrementally yielding it. Yielding share can be destabilizing by tempting
+competitors to take even more, or by sending unfortunate signals to
+potential entrants.
+A ﬁrm may need to gain share not only to increase its own sales but also,
+as we have seen, to improve industry structure through a more stable
+competitor conﬁguration. The cost of gaining share will be a function of
+who will lose share in the process. The losing competitors’ goals,
+capabilities, and barriers to shrinkage will be especially critical. A
+competitor’s goals, commitment to the business, and the importance it
+attaches to share are important to assess. Its capabilities will determine the
+cost of wooing away buyers from the competitor.
+Barriers to shrinkage are barriers to reducing position in (though not
+completely exiting) an industry. These are closely analogous to exit barriers,
+and will be high where ﬁxed costs are high because of the high penalty for
+reducing volume in existing facilities. Where competitors have high stakes
+in an industry, goals stressing market share, or high barriers to shrinkage, it
+may well be more costly to gain share than it is worth. In such industries,
+upward movement toward the ideal share should be slow and take
+advantage of opportunities posed by unfolding industry events.
+The risk of yielding share to improve competitive advantage or industry
+structure will be a function of the difference in relative strength between the
+ﬁrm and competitors. If the gap is large, then a loss of share is unlikely to
+tempt competitors (or potential entrants) to upset the industry equilibrium
+by attempting to take even more share. The risk of yielding share is also a
+
+
+function of the inherent credibility of the ﬁrm in retaliating—a ﬁrm with a
+tough image faces less risk than one with a statesman’s image. Finally, the
+risk of yielding share also depends on the ability of a ﬁrm to yield share in a
+way that will appear logical to other ﬁrms (including potential entrants)
+rather than be taken as a sign of weakness.
+Maintaining Industry Stability
+Maintaining the stability of an industry requires continual attention and
+effort by a ﬁrm, even if its competitors are good competitors. This is
+because competitors’ goals or circumstances may change. Having enjoyed
+for some years a relatively proﬁtable number two position, for example, a
+competitor may decide that more would be better. Or a change in its
+corporate parent or a shift in top management may lead a competitor to
+change its goals or assumptions. For example, the acquisition of Beaird-
+Poulan by Emerson Electric dramatically raised the ambitions of this
+regional chain saw manufacturer. Changes in industry structure may also
+create pressures on a competitor to gain share in the short or long run in
+order to remain viable. Driven to the wall, even a good competitor can
+touch off a process that destroys an industry.
+These considerations suggest that a ﬁrm must continually work to
+manage its competitors’ expectations and assumptions. This may require
+periodic competitive moves, aggressive market signaling, and investing in
+mobility barriers. The aim is to make sure competitors do not make faulty
+estimates of their strengths or a ﬁrm’s commitment to the industry. Procter
+& Gamble is a good example of a ﬁrm that manages expectations through
+regular product changes and marketing investment. A ﬁrm that rests on its
+laurels vis-à-vis its competitors is starting a time bomb ticking that may
+transform a stable and proﬁtable industry into one in which there is a costly
+battle for market share.
+Pitfalls in Competitor Selection
+The principles of competitor selection are not always followed. The
+following pitfalls seem to be among the most common:
+
+
+Failure to Distinguish Good and Bad Competitors. Many companies do
+not recognize which of their competitors are good competitors and which
+are not. This leads them to pursue across-the-board moves, or worse yet, to
+attack good competitors while leaving the bad ones alone. In the process,
+industry structure is often severely damaged. Typical is the case of a
+specialty rubber manufacturer that viewed another major specialty rubber
+manufacturer as its mortal enemy and behaved accordingly. The view was
+not surprising, because this competitor’s market share was similar to the
+ﬁrm’s and made it a natural focal point for attention. In fact, this competitor
+was a nearly ideal competitor that was desperately trying to avoid a battle.
+The real enemies of the specialty rubber ﬁrm were the specialty divisions of
+the tire companies, who were using specialty markets as a dumping ground
+for excess capacity. By damaging its good competitor, the specialty rubber
+ﬁrm was helping the tire companies get established in the industry and
+eroding industry attractiveness.
+It is very common for ﬁrms to view the competitor that is closest to them
+in market share or has the most similar strategy as the greatest enemy. This
+is the competitor that is repeatedly attacked, while other competitors are
+ignored. In fact, such a competitor is often a good competitor who offers
+very little threat.
+Driving Competitors to Desperation. Companies often fail to think
+through the consequences of too much success against competitors. Driving
+competitors to desperation runs the risk of serious consequences that I have
+described earlier. In soft contact lenses, for example, Bausch and Lomb may
+have sown the seeds of some of its own problems. It moved very
+aggressively against other soft lens manufacturers in the late 1970s, slashing
+prices and behaving like a true believer in the experience curve. What
+happened was that Bausch and Lomb indeed gained share, but one by one
+its desperate competitors sold out. Their acquirors included Revlon,
+Johnson & Johnson, and Schering-Plough, all much larger than Bausch and
+Lomb and viewing contact lenses as an avenue for growth. With infusions
+of capital to its competitors, Bausch and Lomb now has a serious ﬁght to
+contend with. It may have converted good competitors into bad ones.
+
+
+Having Too Big a Share. Beyond a point, growing invites problems that
+are best avoided by ceding share to good competitors. Moreover, a large
+market share may actually lead to lower rates of return. Often the best
+course of action for a high share ﬁrm is to look for growth elsewhere rather
+than to push for more share in an industry. Similarly, high share ﬁrms may
+be better off ﬁnding ways to increase overall industry size or proﬁtability,
+rather than try to gain share. They will enjoy the biggest piece of an
+expanding pie, and avoid the risks of destabilizing the industry. It is all too
+tempting, however, for a ﬁrm to push for incremental gains in relative
+position in an industry where it feels strongest.
+Attacking a Good Leader. Followers sometimes commit the fatal error of
+attacking a good leader. The leader is then forced to retaliate, and what has
+been a proﬁtable position for the follower turns into a marginal one.
+Western Company launched a market share attack on Halliburton in oil well
+completion and stimulation services, for example, despite the fact that
+Halliburton competed on differentiation and Western had been very
+proﬁtable. Halliburton’s reaction, no doubt a grudging one, has severely
+reduced Western’s proﬁts. Halliburton, if anything, has gotten stronger.
+Entering an Industry with Too Many Bad Competitors. Entering an
+industry with too many bad competitors can doom a ﬁrm to a protracted
+siege, even if the ﬁrm has a competitive advantage. The cost of converting
+many bad competitors into good ones may be very great, and nullify the
+fruits of entry. Faced with an industry with many bad competitors, a ﬁrm
+may be better off ﬁnding another industry.
+Competitors are both a blessing and a curse. Seeing them only as a curse
+runs the risk of eroding not only a ﬁrm’s competitive advantage but also the
+structure of the industry as a whole. A ﬁrm must compete aggressively but
+not indiscriminately.
+
+
+II
+Competitive Scope Within an Industry

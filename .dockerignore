@@ -10,12 +10,15 @@ apps/desktop/build
 apps/desktop/.package
 apps/cli/dist
 apps/cli/assets
-apps/cli/build
+apps/cli/build/*
+!apps/cli/build/skill/
+!apps/cli/build/skill/**
 packages/*/dist
 *.tsbuildinfo
 *.log
 *.dmg
 *.zip
+!apps/cli/build/skill/*.zip
 *.blockmap
 .DS_Store
 extracts

@@ -1,0 +1,29 @@
+{
+  "chapter": "ch01-intro",
+  "sourceFiles": { "en": "01-1-Introduction-to-Performance-Based-Scenario-Planning.txt, 02-2-Theoretical-Foundations-of-Scenario-Planning.txt" },
+  "concepts": [
+    { "name": "Scenario Planning", "definition": "A disciplined process for exploring multiple plausible futures so organizations can test assumptions, expand mental models, and improve strategic decisions under uncertainty." },
+    { "name": "Performance-Based Scenario Planning", "definition": "Chermack's contribution: linking scenario work to measurable organizational performance rather than treating it only as creative foresight or strategy conversation." },
+    { "name": "Mental Models", "definition": "Internal representations that shape how individuals interpret uncertainty and choose action; scenario work changes performance by challenging and expanding these models." }
+  ],
+  "arguments": [
+    { "claim": "Scenario planning improves performance by changing thinking before action.", "evidence": "The book connects scenario projects to cognitive change, organizational decision quality, and system-level agility." },
+    { "claim": "Uncertainty must be handled through multiple plausible futures, not a single forecast.", "evidence": "Scenario planning differs from prediction because it asks organizations to rehearse several coherent futures and implications." }
+  ],
+  "cases": [
+    { "name": "Royal Dutch Shell / Wack tradition", "context": "Shell's scenario practice popularized the use of alternative futures to prepare managers for discontinuity.", "illustrates": "Scenarios are tools for changing executive perception, not just planning documents.", "lesson": "The value lies in better strategic conversation and readiness." }
+  ],
+  "logicChains": [
+    { "description": "Uncertain environment → expose assumptions → construct plausible futures → challenge mental models → improve decisions → improve organizational performance.", "sourceHint": "Introduction and theoretical foundations." }
+  ],
+  "terminology": [
+    { "term": "Plausible future", "definition": "A coherent future that could happen, used for learning rather than prediction." },
+    { "term": "Strategic agility", "definition": "The organization's ability to adapt strategy as external conditions change." },
+    { "term": "Performance", "definition": "Measured outcomes at satisfaction, learning, behavior, system, or financial levels." }
+  ],
+  "nuance": [
+    "Scenarios are not predictions; treating them as forecasts weakens the method.",
+    "The output is not just scenario stories but changed assumptions and better decisions."
+  ],
+  "crossReferences": { "relatedStrategyFrameworkSlugs": ["scenario-planning", "performance-based-scenario-planning"], "relatedChapters": ["ch02-methods", "ch03-performance"] }
+}

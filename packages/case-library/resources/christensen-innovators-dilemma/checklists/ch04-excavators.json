@@ -1,0 +1,29 @@
+{
+  "chapter": "ch04-excavators",
+  "sourceFiles": { "en": "03-disruptive-technological-change-in-the-mechanical-excavator-.txt" },
+  "concepts": [
+    { "name": "Hydraulic Excavation as Disruption", "definition": "Hydraulic technology initially underperformed cable-actuated excavators in large excavation but offered compactness, simplicity, and suitability for small jobs." },
+    { "name": "Sustaining vs. Disruptive Trajectories", "definition": "Cable incumbents improved buckets, reach, and heavy-duty performance for existing customers while hydraulic entrants improved from small jobs toward mainstream excavation." },
+    { "name": "Application Foothold", "definition": "The first market where a disruptive technology's different attributes matter enough despite inferior mainstream performance." }
+  ],
+  "arguments": [
+    { "claim": "Incumbents were not blind to hydraulics; their customers did not initially need the hydraulic value proposition.", "evidence": "Cable shovel makers pioneered or experimented with hydraulics, but heavy excavation customers valued capacity and durability more than compactness." },
+    { "claim": "Disruption repeats outside electronics.", "evidence": "The excavator case shows the same mechanism as HDDs in a different industry: incumbents win sustaining battles but entrants win when a new technology starts in a non-mainstream application." }
+  ],
+  "cases": [
+    { "name": "Cable-actuated vs hydraulic excavators", "context": "Large contractors used cable machines; smaller contractors and different jobs could benefit from hydraulic compactness and flexibility.", "illustrates": "A technology can be inferior for one job and superior for another.", "lesson": "Segment markets by job and performance dimension, not by industry label." }
+  ],
+  "logicChains": [
+    { "description": "Hydraulics underperform in heavy digging → cable incumbents' customers reject them → entrants serve small-bucket applications → hydraulic performance improves → entrants move into mainstream excavation.", "sourceHint": "Mechanical excavator case." }
+  ],
+  "terminology": [
+    { "term": "Cable-actuated excavator", "definition": "Traditional excavator architecture optimized for heavy excavation with cables and mechanical systems." },
+    { "term": "Hydraulic excavator", "definition": "Newer architecture using hydraulic systems, initially stronger in compactness and control than heavy-duty performance." },
+    { "term": "Application foothold", "definition": "Initial use context where different performance attributes matter." }
+  ],
+  "nuance": [
+    "Incumbents may invent or understand the technology yet still fail to commercialize it in the right market.",
+    "The case prevents overfitting the theory to the fast-moving HDD industry."
+  ],
+  "crossReferences": { "relatedStrategyFrameworkSlugs": ["disruptive-innovation"], "relatedChapters": ["ch02-value-networks", "ch03-hdd", "ch06-disruption-model"] }
+}

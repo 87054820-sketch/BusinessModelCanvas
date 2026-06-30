@@ -1,0 +1,29 @@
+{
+  "chapter": "ch04-integration",
+  "sourceFiles": { "en": "14-8-Phase-4—Scenario-Implementation.txt, 16-10-Managing-Scenario-Projects.txt" },
+  "concepts": [
+    { "name": "Scenario Implementation", "definition": "The work of translating scenario insights into strategy, decisions, communication, monitoring, and management routines rather than leaving scenarios as workshop artifacts." },
+    { "name": "Wind Tunneling", "definition": "Testing strategies, plans, or options across scenarios to reveal robustness, vulnerabilities, and contingent actions." },
+    { "name": "Strategic Conversation", "definition": "An ongoing organizational dialogue in which scenarios provide a shared language for uncertainty, assumptions, and possible action." }
+  ],
+  "arguments": [
+    { "claim": "Integration discipline separates scenario planning from scenario shelf-decoration.", "evidence": "Organizations often spend months constructing scenarios and then file them away; value appears only when scenarios affect decisions, monitoring, and capability building." },
+    { "claim": "Scenarios must become governance and cadence, not only stories.", "evidence": "Steering structures, champions, refresh cycles, executive briefings, cascading workshops, and trigger-based updates keep scenario thinking alive." }
+  ],
+  "cases": [
+    { "name": "Wind-tunneling strategic options", "context": "A leadership team tests a proposed strategy against multiple plausible futures.", "illustrates": "A strategy can look strong in one future and fragile in another, revealing hedges, signposts, and contingent moves.", "lesson": "Use scenarios to improve choices, not merely to describe futures." }
+  ],
+  "logicChains": [
+    { "description": "Develop scenarios → test current strategy through wind tunneling → identify robust moves and vulnerabilities → define signposts → assign owners → refresh scenarios as triggers appear.", "sourceHint": "Scenario implementation phase." }
+  ],
+  "terminology": [
+    { "term": "Signposts", "definition": "Indicators that show which scenario or underlying force may be emerging." },
+    { "term": "Scenario champion", "definition": "Internal sponsor or practitioner who keeps scenario thinking connected to ongoing decisions." },
+    { "term": "Cascading workshop", "definition": "A follow-on workshop that spreads scenario thinking beyond the original executive group." }
+  ],
+  "nuance": [
+    "Integration does not mean forcing one scenario to become the plan; it means making strategy robust across uncertainty.",
+    "Scenario refresh cadence should fit the volatility of the environment rather than follow ritual timing alone."
+  ],
+  "crossReferences": { "relatedStrategyFrameworkSlugs": ["scenario-planning", "performance-based-scenario-planning"], "relatedChapters": ["ch03-performance", "ch05-facilitation"] }
+}

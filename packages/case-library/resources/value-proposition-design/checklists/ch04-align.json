@@ -1,0 +1,32 @@
+{
+  "chapter": "ch04-align",
+  "sourceFiles": { "en": "vpc-en/full.txt", "zh": "08-4.-发展.txt" },
+  "concepts": [
+    { "name": "Value Proposition to Business Model Alignment", "definition": "Once Product-Market Fit is achieved, the value proposition must be embedded in a scalable, profitable business model. This chapter bridges the VPC to the BMC by addressing how the validated value proposition translates into a viable business." },
+    { "name": "7 Business Model Questions", "definition": "Questions to assess business model viability: (1) Switching costs — how easy is it for customers to leave? (2) Recurring revenue — do you earn before you spend? (3) Earn vs. spend — what's your cash flow cycle? (4) Game-changing cost structure — is your cost structure structurally better? (5) Others who do the work — do partners/customers do your work for you? (6) Scalability — can you grow without proportional cost increase? (7) Protection from competition — do you have moats?" },
+    { "name": "Improve vs. Invent Spectrum", "definition": "Not all value propositions are brand-new inventions. Many are improvements to existing models. Understanding where your work sits on the 'improve existing model' to 'invent new model' spectrum shapes the organizational approach." },
+    { "name": "Designing in Established Organizations", "definition": "For existing companies, creating new value propositions requires navigating organizational antibodies — existing processes, metrics, and culture that protect the current business model. Techniques include separate units, different success metrics, and senior sponsorship." },
+    { "name": "Workshop Design for Innovation", "definition": "Practical guidance on running workshops that produce real outcomes: frame the challenge clearly, mix internal and external perspectives, use canvases and prototyping, escalate decisions quickly, capture learnings systematically." }
+  ],
+  "arguments": [
+    { "claim": "A validated value proposition without a viable business model is a hobby, not a business", "evidence": "Many startups achieve Product-Market Fit (customers want this) but fail because the underlying business model doesn't work at scale: unit economics are negative, customer acquisition costs exceed lifetime value, or the cost structure doesn't support the price point." },
+    { "claim": "Established organizations face the 'improvement trap' — they optimize what they already do at the expense of inventing what's next", "evidence": "When existing metrics (revenue, margin, customer satisfaction) all reward improvement of the current model, 'invent' initiatives get starved of resources, talent, and attention. The organizational immune system kills new things." }
+  ],
+  "cases": [
+    { "name": "Hilti: Fleet Management Model", "context": "Hilti shifted from selling power tools to providing a tool fleet management service. Instead of construction companies buying tools, they pay a monthly fee and always have the right tools on site.", "illustrates": "A value proposition pivot that required a complete business model change. The value proposition (always have the right tools, never worry about maintenance) required new Key Resources (fleet tracking software), Key Activities (maintenance logistics), Revenue Streams (subscription vs. one-time sale), and Customer Relationships (account manager, not retailer).", "lesson": "When you change the value proposition, you must change the business model. You cannot sell a subscription value proposition through a one-time-sale business model." }
+  ],
+  "logicChains": [
+    { "description": "Achieve Product-Market Fit (from testing) → Evaluate business model viability (7 Questions) → Align value proposition with each BMC building block → Address organizational barriers (for established companies) → Implement iteratively (pilot → measure → scale)", "sourceHint": "VPC Chapter 4 'Evolve' maps this transition from validated concept to operating business" }
+  ],
+  "nuance": [
+    "Not every innovation needs a new business model — some fit within the existing model with minor adjustments. The key is to explicitly evaluate which model elements must change vs. which can stay.",
+    "Established companies often create 'innovation theaters' (labs, garages, outposts) that produce PR but not revenue. Real innovation requires linking new value propositions to real business model decisions, not just creative exercises."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["value-proposition-canvas", "business-model-canvas", "portfolio-map"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-canvas", "ch03-test"]
+  }
+}

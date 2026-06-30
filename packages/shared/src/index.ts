@@ -1338,6 +1338,8 @@ export interface LibraryResource {
   relatedStrategyFrameworkSlugs?: string[];
   /** Bibliographic / web citation rows. */
   sources: CaseSource[];
+  /** Number of chapter-level reading notes when this resource ships chapters. */
+  chapterCount?: number;
 }
 
 export interface LibraryResourceDetail {
@@ -1345,6 +1347,45 @@ export interface LibraryResourceDetail {
   /** Bilingual long-form reading note. */
   description: { en: string; zh: string };
   /** Hydrated cases for `relatedCaseSlugs[]`. */
+  relatedCases: CaseLibraryEntry[];
+  /** Chapter index for this resource — present when the resource bundles a
+   *  `chapters/index.json` on disk. Null / absent when the resource has no
+   *  chapter-level content. */
+  chapters?: ResourceChapterMeta[];
+}
+
+/**
+ * One chapter in a book resource. Lives on disk inside
+ * `packages/case-library/resources/<slug>/chapters/index.json`. The chapter
+ * slug is the filename stem of its bilingual markdown file (e.g. chapter
+ * slug `ch01-intro` ↔ `ch01-intro.en.md` + `ch01-intro.zh.md`).
+ */
+export interface ResourceChapterMeta {
+  /** Stable kebab-case slug within the resource, e.g. `ch01-intro`. */
+  slug: string;
+  /** Display order (1-based). */
+  order: number;
+  /** Bilingual chapter title. */
+  title: LocalizedLabel;
+  /** Bilingual one-paragraph summary of what this chapter covers. */
+  summary: LocalizedLabel;
+  /** Related case-library case slugs that illustrate this chapter's content. */
+  relatedCaseSlugs?: string[];
+  /** Related canvas-def ids that this chapter's methods map onto. */
+  relatedCanvasDefIds?: string[];
+  /** Related pattern slugs that this chapter discusses. */
+  relatedPatternSlugs?: string[];
+}
+
+/**
+ * Hydrated chapter detail — what `GET /library/resources/:resource/chapters/:chapter`
+ * returns. Mirrors `LibraryResourceDetail` but scoped to a single chapter.
+ */
+export interface ResourceChapterDetail {
+  chapter: ResourceChapterMeta;
+  /** Bilingual markdown content for this chapter. */
+  content: { en: string; zh: string };
+  /** Hydrated cases for `chapter.relatedCaseSlugs[]`. */
   relatedCases: CaseLibraryEntry[];
 }
 

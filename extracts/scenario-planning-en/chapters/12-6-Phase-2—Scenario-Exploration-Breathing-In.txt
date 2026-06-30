@@ -1,0 +1,1246 @@
+# 6 Phase 2—Scenario Exploration: Breathing In
+
+102 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+becoming aware of one’s ﬁlter and continually readjusting it to let in more 
+data about the world, but without becoming overwhelmed” (Schwartz, 
+1991, p. 61). Everyone has biases, and they show up in scenario planning. 
+A key skill is the ability to be aware of biases and head off conﬁnement in 
+thinking. Thus, another purpose of the scenario exploration is to expand 
+the assumptions, beliefs, and possibilities evident in the industry or environ-
+ment being studied, thereby expanding one’s ﬁlter.
+There are many ways to approach the data-gathering stage. Three tools 
+for helping to structure information about the external environment include 
+STEEP forces, De Bono’s (1990) thinking hats, and a SWOT analysis (fo-
+cusing on the opportunities and the threats). 
+F I G U R E  6.1  The Performance-Based Scenario System—Scenario Exploration 
+Phase
+Scenario Exploration
+• External analysis
+• Analyze STEEP forces
+• De Bono’s thinking hats
+• Internal analysis
+• SWOT analysis
+• Interviews
+• Analyze the business idea
+• Other synthesis tools
+Scenario Development
+• Brainstorm the major forces
+• Rank forces by impact
+• Rank forces by uncertainty
+• Develop scenario logics
+• Construct the research agenda
+• Define the plots and titles
+• Write the scenario stories
+• Create the scenario communication 
+strategy
+Project Preparation
+• Articulate the purpose
+• Define the estimated scope and time frame
+• Build the scenario team and determine roles
+• Articulate the general expected outcomes
+• Take measures relative to the expected outcomes
+• Construct the project proposal
+Scenario Implementation
+• Wind tunneling
+• Examine the initial question
+• Scenario immersion
+• Test the theory of the business/ 
+business idea
+• Analyze current strategies
+• Develop signals
+• Experiential exercise
+• Build resilience and robustness
+• Other
+Inputs
+• Stakeholder need
+• Problem or issue
+• Organization history and culture
+• Others
+Project Assessment
+• Revisit purpose
+• Take satisfaction measures
+• Take knowledge measures
+• Take expertise measures
+• Take system measures
+• Take financial measures
+Outputs
+• Increased understanding of environmental dynamics
+• Ability to see problems or issues in a new way
+• Shared understanding of the organization and issues
+• Aligned organizational systems
+• Robust strategy
+• Others
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+103
+While each of these approaches is reviewed in further detail, the best 
+solution is to develop a method that works for a particular situation. In other 
+words, there are many tools and processes for exploring the external environ-
+ment, and good scenario planners use tools that ﬁt the organization and the 
+purpose for engaging in a scenario project. The ultimate goal of this phase 
+is to develop a rich understanding of the context in which the organiza-
+tion is operating. Data gathering, analysis, and synthesis are a complicated 
+function to perform in today’s complex organizations, and there are no hard 
+and fast rules. “Don’t worry about your ﬁles; worry about your perceptions” 
+(Schwartz, 1991, p. 62). Stated another way, in this phase, you have to de-
+velop awareness of and expand your perceptions of the external environment.
+The start of a scenario project requires getting up to speed with the 
+general industry. It is helpful to visit and revisit several aspects of a given in-
+dustry looking for trends, key factors, and other forces that have an obvious 
+inﬂuence on the industry. At this point in a scenario project, it is important 
+to create time for rigorous investigation of the industry and reﬂection on the 
+dynamic and relevant forces at play. Pierre Wack referred to this as “breath-
+ing in,” and he was known to go to great lengths to put himself into new 
+unrelated physical environments to think about his projects. For example, 
+he spent signiﬁcant amounts of time in Japan, India, and the Saudi desert 
+thinking about scenario projects he was working on. The primary purpose 
+is to learn as much as possible about the industry—its composition and 
+complexity—and to see it all from a new perspective.
+SOCIAL, TECHNOLOGICAL, ECONOMIC, ENVIRONMENTAL,  
+AND POLITICAL (STEEP) FORCES 
+A tool for structuring thinking and key categories to make sure you do not 
+overlook any is the well-known STEEP analysis. The STEEP analysis is a 
+logical and effective way to begin. In reality, these are simply general catego-
+ries to include in any exploration of the external environment (Burt & van 
+der Heijden, 2002). This section offers examples of each force that might be 
+considered in the general and global context. 
+Social Forces
+Population trends are clear social forces. Usually, population is also clas-
+siﬁed as a predetermined element—something that can be estimated with 
+a high degree of certainty. This means that at any given point in time, we 
+
+
+104 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+have access to data that will indicate population numbers. Estimates with 
+high accuracy can be made of what the population growth will look like 
+over any speciﬁed number of years. Cultural diversity is another social force 
+that will be a signiﬁcant driver over the next half century. Literacy, popula-
+tion migration, and emerging societies can also be considered social forces.
+Technological Forces
+It is difﬁcult to conceive of all the possible technological drivers of our time. 
+Advances such as multimedia, the Internet, various mobile technologies, 
+alternate fuel sources, and music format are just a few. Technology may be 
+the greatest single category of change drivers that we will cope with over 
+the next millennium. Web 2.0 technologies such as Second Life, Facebook, 
+Twitter, and others are popular though their true contributions to organi-
+zational efﬁciency are yet to be determined. Key questions about technol-
+ogy continue to relate to how technology’s role in increasing efﬁciency and 
+supporting collaboration over great distances can be leveraged, and whether 
+they can increase ﬁrm performance or are simply social distractions.
+Economic Forces
+As I write this, the global economy is without doubt, the headlining issue. 
+Fluctuating markets are the high-priority questions on everyone’s minds. 
+The economies of China and India are likely to continue to inﬂuence other 
+economies around the globe. The growth of these countries in terms of the 
+economic development will affect the social forces not only in each of these 
+countries, but throughout the rest of the world as well. Other economic 
+forces include ﬂuctuating currency exchange rates, changing interest rates, 
+taxes, fees, and costs of doing business, to name a few.
+Environmental Forces
+Limited oil reserves are driving nations to consider alternate fuel sources. Global 
+climate change, storm activity in various parts of the world, and the limits of 
+physical and geographic space in some countries are all examples of environ-
+mental forces that will have an impact on business and society in the future.
+Political Forces
+In today’s global economy, political forces have the potential to shape in-
+dustries like never before. Governmental transitions in countries like China 
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+105
+and India have led to outsourcing trends that have altered and will continue to 
+alter the global economy. Policies and plans of national leaders also shape global 
+perceptions. There is no denying the power of political forces in our world.
+These categories should be kept in mind when reading newspapers and 
+magazines, watching the news, surﬁng the Web, and doing any other ac-
+tivities. The best advice in exploring these forces is to read widely and fre-
+quently. Really Simple Syndication (RSS) feeds can help to stay connected 
+to a user-deﬁned set of news feeds from an endless variety of sources and 
+are a very effective way to efﬁciently scan headlines from around the world. 
+FORECASTS
+Scenarios generally ask what happens if forecasts are wrong, and a STEEP 
+analysis will undoubtedly turn up forecasts. During this phase, it is useful 
+to understand what the forecasts are saying; and in the next phase, the proj-
+ect turns toward asking what if they are wrong. These forces and forecasts 
+should be treated with skepticism, but they clearly contain information 
+about the industry. Forecasts are “someone else’s understanding and judg-
+ment crystallized in a ﬁgure which then becomes a substitute for thinking 
+for the person who uses it” (Wack, 1985b, p. 89). The forces and forecasts 
+contained in a STEEP analysis may provide useful information. However, 
+the goal of scenario planning is to think deeply about the future, to learn 
+about it, and to develop one’s own understanding and judgment about how 
+to navigate uncertainty. 
+DE BONO’S THINKING HATS
+Thinking hats (De Bono, 1990) are a technique for thinking about complex 
+issues. The approach is based on an assumption that when people think 
+about complex issues, they are overcrowded with emotions, logic, data, 
+hopefulness, and creativity. These factors are simply too much to make 
+sense of at once. People need help breaking apart their thinking by dealing 
+with each of these particular factors independently before combining them. 
+The thinking hats represent six critical views for thinking about any com-
+plex issue. Each is represented by a different color:
+• The White Hat—Neutral and objective, this hat is concerned with 
+data and an analytical view. Most of us are stuck here.
+• The Red Hat—This hat represents the emotional view.
+
+
+106 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+• The Black Hat—The “devil’s advocate” hat, this is the cautious view.
+• The Yellow Hat—This hat represents the completely positive, 
+optimistic view.
+• The Green Hat—The creative hat, this hat is for new ideas and 
+perspectives.
+• The Blue Hat—The blue hat is an organizing, synthesizing hat, 
+representing overviews, summaries and conclusions.
+The six thinking hats can be used in a variety of ways, and not only for 
+external thinking. These hats can be used at any time during the scenario 
+project, but they are sometimes most helpful when soliciting and capturing 
+initial reactions and comments about the initial issue. Two different strate-
+gies for using the hats are (1) single use and (2) sequential use (De Bono, 
+1990).
+In the course of a conversation, it may be useful to inject a different kind 
+of thinking, in which case any of the hats can be called upon. The different 
+hats can be used to explore a subject and introduce alternate perspectives.
+Sequential use of the hats is also a ﬂexible approach and can be done in 
+a variety of ways. A facilitator can choose one hat and ask the group to think 
+from that perspective. Then another hat is chosen, and so on. Another ap-
+proach is to assign a hat to each individual and ask that individual to think 
+about the issue from that perspective. 
+Two critical factors are important in using the thinking hats: discipline 
+and timing. When individuals are asked to think according to a speciﬁc 
+hat, they must stay with the hat’s perspective and represent that viewpoint 
+for the sake of the group and the intent of the hats. If people are allowed to 
+abandon their assigned hat, the danger is that they revert to their original, 
+comfortable perspective, and the project gets more of the same. The other 
+issue is timing. Because thinking in different ways can be uncomfortable 
+for some people, using a short amount of deﬁned time for thinking in these 
+alternate perspectives is effective because people will concentrate and focus 
+on what they are being asked to do.
+In Technology Corporation, we used the thinking hats with great ef-
+fect. From the start, buy-in was high, thanks to an engaged CEO. This 
+set the tone for experimenting with different modes of thinking, and par-
+ticipants began to enjoy playing the various roles. The activity certainly got 
+them consciously out of their default thinking patterns.
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+107
+Again, the thinking hats can be used in a variety of ways. They can be 
+used in a group workshop to stimulate diverse thinking on the initial sce-
+nario project purpose, to frame obvious issues in the external environment, 
+and as a consulting tool to see the project in different ways, among many 
+others. They can also be aimed at the external or internal environments. 
+SWOT ANALYSIS
+SWOT (strengths, weaknesses, opportunities, and threats) analysis is prob-
+ably the most common tool used in strategic thinking and planning. Al-
+though the O and T especially are externally focused, SWOT analysis is 
+described in detail in the next main section on internal analysis. 
+SUMMARY
+News media can often be more of a representation of what people are think-
+ing than a reﬂection of the facts, so perusing numerous samples from vary-
+ing “ﬁlters” is important when conducting an external analysis. For example, 
+“[r]outinely pick up a dozen magazines from a newsstand and scan them. 
+Include magazines you would not otherwise read” (Schwartz, 1991, p. 81).
+While each scenario project will have particular investigative require-
+ments, the following are subjects worth paying continual attention to 
+(Schwartz, 1991):
+• Science and technology 
+• Perception-shaping events
+• Music
+• Fringes
+Online sources are also valuable in expanding your personal ﬁlter. Rec-
+ommended newsfeeds include Strategy+Business, Fast Company, BBC News, 
+the New York Times, Wired, the New York Times Editorials, the Wall Street 
+Journal, the World Economic Forum, Earth Trends, and the United Nations 
+Development Programme.
+INTERNAL ANALYSIS
+The internal analysis is focused on understanding forces within the organiza-
+tion. The most important tool for accomplishing this is interviews with key 
+stakeholders of the organization. Additional tools include questionnaires, 
+
+
+108 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+observations, and existing organizational data. Other tools for internal anal-
+ysis include the SWOT analysis, the theory of the business (Drucker, 1994), 
+van der Heijden’s (1997, 2005a) business idea, Rummler and Brache’s (1991) 
+levels of performance, and Swanson’s (1994, 2007) performance diagnosis 
+matrix. Expert scenario planners use any tools that can help them understand 
+an organization’s internal dynamics efﬁciently and effectively.
+SWOT ANALYSIS
+Readers may be surprised to see the recommended use of a SWOT analysis 
+here because some people consider it an outdated strategic tool. A SWOT 
+analysis is still a useful way to stimulate strategic thinking and get people 
+into the mind-set to think about their organization. Odds are, most have 
+used this approach before, and so it is a comfortable way to begin engaging. 
+Using a tool that decision makers are familiar with is a helpful bridge into 
+scenario planning.
+Research warns that the biggest problem with SWOT analyses is 
+that the outcomes are never used in any meaningful way (Chermack & 
+Kasshanna, 2007). In a scenario project, the insights from a SWOT analysis 
+are highly useful in understanding the organization and its internal poli-
+tics, and they can increase the relevance of scenarios when inserted into the 
+scenario stories developed later on. For example, if information from inter-
+views with managers is used in the second round of scenario construction, it 
+is likely that the scenarios will be more relevant and provide a better frame-
+work for decision making. The key to a successful SWOT analysis is to 
+use the information, even if it is as simple as feeding the results back to the 
+participating group. Another common oversight with using SWOT is that 
+the strengths and weaknesses relate to the internal environment, and the 
+opportunities and threats relate to the external environment. The SWOT 
+analysis is misused when the internal/external distinction is not made.
+SWOT analysis is useful as long as it is not the sole means of internal 
+environmental analysis. It contributes useful information and can be used 
+in two distinct ways: (1) as a tool to structure data once collected and (2) 
+as a tool to provoke further insights and areas in which to conduct further 
+research. Figure 6.2 depicts the structure of a typical SWOT analysis.
+At its essence, a SWOT analysis is a brainstorming exercise. Using a 
+SWOT analysis at this stage of the planning system is beneﬁcial in that 
+it explores the perceptions of strengths, weaknesses, opportunities, and 
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+109
+threats. However, it is important to keep in mind that the analysis usually 
+contains only the perceptions of managers and executives inside the organi-
+zation. A useful SWOT analysis follows up with considerable investigation 
+and conﬁrmation. 
+It is also important to recognize that an item that falls under the 
+strengths category can often be argued as a weakness as well. Thus, the 
+danger of a SWOT analysis is in its forced dichotomies. Something is forced 
+to be either a strength or a weakness when in reality it could be both, de-
+pending on the contextual circumstances. This dilemma provides an ap-
+propriate opportunity to use De Bono’s thinking hats to consider alternate 
+perspectives.
+SWOT Analysis Workshop
+A SWOT analysis can be conducted in about a half day, with some prepa-
+ration, depending on the number of people involved, and should be struc-
+tured according to the model in Figure 6.2. Begin by communicating the 
+objective to participants, explaining the process, and answering any ques-
+tions. Next, simply ask individuals to list their perceptions of the organiza-
+tion’s strengths, weaknesses, opportunities, and threats. These perceptions 
+can be combined on a wall chart, computer-projected document, or other 
+format. Dialogue is the natural outcome, as there will be varying perspec-
+tives, ideas, and disagreement on the category to which a given force may 
+belong. Keep in mind two critical points at this stage: (1) participants are 
+F I G U R E  6.2  The Basic Process of a SWOT Analysis
+1. Define the
+ 
+objective of
+the SWOT
+analysis.
+2. Explain the
+ 
+SWOT
+procedure.
+6. Develop
+actions for
+ 
+moving
+forward.
+3. Individual
+listing of
+strengths,
+weaknesses,
+opportunities,
+and threats.
+4. Combine
+individual
+responses.
+5. Engage group
+in authentic
+dialogue.
+
+
+110 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+verbalizing their perceptions, and (2) the outcomes of the conversation must 
+be fed back to the participants. The strategic conversation has begun.
+Corporate leaders in Technology Corporation decided to begin with 
+a SWOT analysis because most of them were familiar with the process. It 
+would be a comfortable way to get started. A conversation with leaders sug-
+gested a few important factors for the SWOT analysis, including speciﬁc 
+objectives and actions. Figure 6.3 shows the basic process of a SWOT analy-
+sis for Technology Corporation. 
+Combined and Distilled SWOT Data. Figure 6.4 shows the com-
+bined and synthesized SWOT analysis for Technology Corporation. With 
+redundancies eliminated, and after clariﬁcation and dialogue, the strengths, 
+weaknesses, opportunities, and threats are relatively simpliﬁed. The real util-
+ity was in the conversation about items that are perceived to be strengths, 
+which can often be argued as weaknesses. The sharing of perspective is how 
+participants learn and begin working toward a shared mental model.
+Several individuals had noticeable insights that came simply from tak-
+ing the time to talk about strategic issues. It was clear that little to no time 
+had been previously dedicated to having conversations about important is-
+sues, and having them now was like a breath of fresh air. Once these conver-
+sations began, participants enjoyed the ability to reﬂect, and thinking out 
+loud became contagious.
+F I G U R E  6.3  Technology Corporation’s Basic Process for SWOT Analysis
+1. Objective of
+the SWOT:
+Prepare for
+Scenario
+Planning—
+Launch the
+process,
+get an
+overview of
+perceptions.
+2. Procedure:
+List response,
+combine
+response,
+dialogue.
+6. Actions:
+Use relevant
+information
+in scenario
+planning—
+focus where
+perceptions
+are most
+different.
+3. Individual
+listing of
+strengths,
+weaknesses,
+opportunities,
+and threats.
+4. Combine
+individual
+responses.
+5. Dialogue.
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+111
+INTERVIEWS
+Interviewing individuals or groups of people in an organization is a time-
+consuming and detailed process that requires commitment and skill. Inter-
+views can be considered as much an art as a science, and the only way to 
+develop interviewing skills is through experience.
+In scenario planning, the foundation of internal analysis is the content 
+of interviews. They are a highly critical piece of the scenario planning sys-
+tem as the interviews will reveal opinions, facts, experiences, beliefs, organi-
+zational symbols, history, and more. Most important, interviews reveal what 
+managers and executives are concerned about. Evoking, addressing, and 
+highlighting these concerns is a requirement for scenarios to be effective. 
+Interviews can be (1) structured, (2) unstructured, or (3) a combination 
+of structured and unstructured. Structured interviews follow a predeter-
+mined list of questions and can be scripted so that each interviewee is asked 
+Strengths
+Intellectual capital
+Agile
+Hardworking
+Innovative
+Proposal writing expertise
+Ability to focus
+Leaders at each level
+Weaknesses
+Reliant on funding strategy
+Small—limited capacity
+Tendency for ego-driven projects
+Lack of teamwork/communication
+Marketing strategy needs 
+improvement
+Internal functional silos
+Opportunities
+Leveraging skills to move projects 
+to Phases II and III
+Fewer projects and more focus
+Collaborative effort
+Leveraging 
+brainpower—communication
+Opportunities in manufacturing 
+our own products (phase 
+III–dependent)
+Threats
+Political removal/changes in SBIR  
+funding
+Inability to collaborate more 
+effectively
+Economic impact on funding 
+sources
+Competition—emerging 
+companies doing what we  
+do . . . better?
+F I G U R E  6.4 Technology Corporation’s SWOT Analysis
+
+
+112 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+exactly the same questions. This approach limits responses to the content 
+covered by the questions. Unstructured interviews usually follow a much 
+more casual track and take the shape of a conversation. In this type of inter-
+viewing, the content can extend to cover a much wider range of subjects and 
+questions, and each interviewee can be asked a completely different set of 
+questions. Combination-type interviews contain structured questions and 
+also allow for follow-up and spontaneous questions. 
+Group and telephone interviews and focus groups are other types of 
+interviews, but they are not necessarily recommended for use in scenario 
+planning. People are less likely to share their true opinions if interviewed in 
+a group setting. Workshops tend to take care of group conversation and in-
+teraction, and they can even function as team-building exercises. Telephone 
+interviews do not allow for the face-to-face interaction that is important in 
+scenario planning. Body language, mannerisms and other nonverbal com-
+munication are valuable, as is the establishment of rapport and a relation-
+ship with project participants. In addition, it is unlikely that an individual 
+would share his or her true concerns with a stranger over the phone. 
+Interviews in scenario planning projects should follow the combina-
+tion-type approach. That is, speciﬁc questions should be asked of each par-
+ticipant, but room for other issues and conversation should be allowed. The 
+“seven questions” have gained popularity in scenario planning because they 
+can surface the strategic agenda of decision makers. While there are a few 
+varying interpretations of these seven questions, they generally fall into the 
+following categories:
+1. Clairvoyant
+2. Good Scenario
+3. Bad Scenario
+4. Inheritances from the Past
+5. Important Decisions Ahead and Priorities
+6. Constraints in the System and Changes That Need to Be Made
+7. Epitaph
+Speciﬁc sample questions that pertain to each of these seven categories are 
+as follows:
+1. If you could speak with an [industry] oracle from [year], what three 
+things would you like to know about the [organization]?
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+113
+2. If the [organization, industry] were to collapse by [year] (a “bad” 
+scenario), what might have caused the collapse and why?
+3. If the [organization, industry] were thriving, growing, and moving 
+in a genuinely positive direction (a “good” scenario) by the year 
+[year], what would be true of it?
+4. (a) What has surprised you (pleasantly or unpleasantly, speciﬁcally 
+or generally) about the [organization, industry] in recent years? 
+(b) What have been the memorable “turns” and why?
+5. (a) What are the major challenges to be faced by [organization, in-
+dustry, etc.] professionals in the next ﬁve years? (b) What are the 
+obstacles to be overcome that keep you awake at night?
+6. (a) What would hinder the ﬁeld from moving past these obstacles? 
+(b) What forces could constrain the [e.g., organization and industry]? 
+7. Imagine that your program is in danger of being completely cut. 
+What is your argument for keeping it? 
+Two common additional questions:
+1. What would be some signs that the [organization, industry] is mov-
+ing in a positive direction?
+2. Any other uncertainties in the environment that might impact the 
+future [organization, industry]?
+The purpose of the interview stage is to become familiar with the men-
+tal models (values, beliefs, assumptions, experiences, hopes, and dreams) 
+of a cross section of the organization. The seven questions are the standard 
+tool for accomplishing this, but in order for these questions to be effective, 
+the establishment of a good relationship with each interviewee is critical. 
+Interviewees should be allowed to add anything else they feel is relevant to 
+the project, and they may want to know more about the scenario planning 
+project as well.
+OTHER DATA COLLECTION METHODS
+Three other data collection methods can be useful in understanding the 
+internal dynamics of an organization: questionnaires, observations, and ex-
+isting data. Though these are not often featured or highlighted in published 
+scenario cases or in existing scenario planning texts, they deserve mention 
+because there may be times when their use is appropriate.
+
+
+114 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+Questionnaires
+Questionnaires allow the collection of data from a large number of people, 
+across locations, in a relatively efﬁcient manner. They are useful in getting 
+a snapshot of current perceptions in the organization. For example, cul-
+ture questionnaires might be used before starting the scenario construction 
+workshops if culture comes up in several interviews as a barrier to engage-
+ment in the scenario project. Change-readiness questionnaires can be use-
+ful if there has been a lot of recent consulting activity in the organization, 
+mergers, leadership changes, or reorganizations. Custom questionnaires 
+can also be developed to access targeted information, but they can take 
+some time.
+Observations
+Observations are useful in understanding abstract behaviors such as think-
+ing, planning, and estimating (Swanson, 2007). Some think these behaviors 
+are unaccountable, but observing people perform their work functions on 
+the job can yield a great deal of qualitative and quantitative data. Observa-
+tion requires a high level of skill, patience, and the ability to be unobtrusive 
+and avoid changing how the individual being observed performs his or her 
+work. However, if these assets are used expertly, great insights can be gener-
+ated about the nature of knowledge-based work and how masters of speciﬁc 
+content knowledge perform. 
+Existing Data
+Existing data should be used to the extent possible. Use of this data col-
+lection method usually happens informally as one becomes oriented to the 
+organization and its personalities, issues, industry, and culture. Particu-
+larly relevant in scenario planning are previous uses of scenario planning 
+and the outcomes, other planning tools that have been used, and other 
+recent change initiatives. Financial and performance data, employee sur-
+vey data, and customer data are all other useful data pools to examine. It 
+is useful to know previous successes and failures with planning, and to 
+know what was gained through such processes and where they may have 
+collapsed. It is also useful to review reports from other external consul-
+tants who may have been working with the organization to get a general 
+feel for other recent change activity. 
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+115
+THEORY OF THE BUSINESS/BUSINESS IDEA
+In 1994, Drucker published “The Theory of the Business,” which was an 
+attempt at understanding the primary growth loop of any organization. 
+Drucker wrote:
+These are the assumptions that shape any organization’s behavior, dic-
+tate its decisions about what to do and what not to do, and deﬁne what 
+the organization considers meaningful results. These assumptions are 
+about markets. They are about identifying customers and competitors, 
+their values and behavior. These are about technology and its dynamics, 
+about a company’s strengths and weaknesses. These assumptions are 
+about what a company gets paid for. They are what I call a company’s 
+theory of the business. (p. 96)
+Four critical aspects form the theory of the business:
+• The assumptions about the environment, mission, and core 
+competencies must ﬁt reality.
+• The assumptions in these three areas must ﬁt each other.
+• The theory of the business must be known and understood throughout 
+the organization.
+• The theory of the business must be tested constantly.
+From a diagnostic perspective, it is helpful to know the status of each of 
+these speciﬁcations. Scenario planning will address all of these points, but it 
+is important to know at the start if, for example, the business idea is known, 
+understood, and articulated throughout the organization. 
+Related to the theory of the business is the business idea developed by 
+van der Heijden (1997, 2005b). The business idea is based on system theory 
+and system dynamics concepts. The business idea is simply a visual display 
+of the primary growth loop—it is the business model. The business idea 
+shows how the organization has understood a social need, created a novel 
+idea about how to address that need, developed expertise in addressing that 
+need, and created a viable business based on the perceived value of that need. 
+THEORY OF THE BUSINESS WORKSHOP
+It is very useful to conduct a workshop based on understanding the the-
+ory of the business/business idea. This workshop can be completed in a 
+
+
+116 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+few hours and can alone initiate strategic insights, but it also will generate 
+thinking directly relevant to the work that takes place in the scenario con-
+struction phase (see Chapter 7). Gather the relevant participants in a setting 
+conducive to creative thinking (e.g., a meeting room with large whiteboards 
+or newsprint on the walls so that participants can think and draw out loud). 
+Ask each participant to use a single sheet of paper and brieﬂy describe
+• whether the assumptions about the environment, mission, and core 
+competencies ﬁt reality;
+• whether the assumptions in these three areas ﬁt each other;
+• the extent to which the theory of the business is known and 
+understood throughout the organization; and
+• the extent to which the theory of the business is tested.
+Next, ask each participant to draw or write out the business idea on 
+another sheet of paper. When all participants have completed the exercise, 
+ask them to individually report their responses to the four speciﬁcations of 
+the theory of the business, and then ask them to share their business ideas. 
+The variety in responses to both of these activities indicates how uniﬁed 
+or scattered the thinking is about the core purpose of the organization and 
+how well it is understood. A useful goal is to create one unifying business 
+idea. Participants can present their models and work together to build a 
+business idea and set of assumptions that capture the essence of what the 
+organization is trying to accomplish. This is a simple exercise in eliciting 
+individual mental models and working toward a shared one. As the strategic 
+conversation was started in the SWOT analysis workshop, it continues here 
+as participants share ideas, perspectives, and insights.
+In my own experiences, if I ask twelve participants to draw or write out 
+the business idea, they will draw or write out twelve different things. I have 
+found a tremendous amount of utility in then asking participants to create 
+a single business idea out of what they have individually generated. This 
+simple activity has frequently produced “aha” moments in participants I 
+have worked with, and the resulting theory of the business is a critical item 
+later on in the scenario project.
+Technology Corporation’s Theory of the Business/Business Idea
+Technology Corporation’s scenario team met for a half day with a general 
+purpose of understanding and sharing perceptions of the organization’s 
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+117
+business model. Before presenting the organization’s theory of the business 
+and business idea, some background information on perceived core compe-
+tencies, vision, and other internal thinking will be useful to set the context. 
+Core competencies: Developing innovative products in the chemical, 
+contracting, manufacturing industries, developing human capital (ex-
+pertise and innovation), and listening to customer needs
+Activities: Technology Corporation researches and develops intellectual 
+property to license and sell technologies related to innovations in en-
+ergy, chemicals, and technology.
+Vision: Technology Corporation develops ideas and products that meet 
+the energy, chemical, and technological challenges of the future.
+Model: Three concentric circles for the business model illustrating 
+short-term, midterm, and long-term strategies (Figure 6.5): 
+1. Short-term: Current funding sources including Small Business In-
+novation Research.
+F I G U R E  6.5  Technology Corporation’s Innovation-Development of Intellectual 
+Property
+Short-Term Strategy
+Brain Power and
+Contract R&D
+Long-Term Strategy
+Solve Tomorrow’s Challenges
+and Invest in the Most
+Promising Technology
+Midterm Strategy
+Build Cross-Functional Teams
+and Contract R&D
+Structure
+
+
+118 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+2. Midterm: Lessen dependence of SBIR.
+Contract R&D. Delays in time horizons.
+This midterm strategy is an opportunity to lay the foundation for fu-
+ture success (develop cross-functional teams, build the infrastructure 
+for R&D, and listen to customers to build trust). Midterm activities 
+build Technology Corporation’s reputation.
+Cross-functional teams allow everyone to be involved in the project 
+at all times. If an issue comes up, decisions can be made quickly. 
+Teams are involved early to understand the big picture and help re-
+duce time to market.
+3. Long-term: Innovation—development of intellectual property
+Key questions for Technology Corporation: 
+• When does Technology Corporation stop pouring resources into 
+technologies that have achieved their purpose? In other words, 
+what will Technology Corporation stop doing?
+• Will Technology Corporation consider partnering with other 
+companies to develop technologies?
+• Will Technology Corporation offer incentives to cross-functional 
+teams to innovate?
+• Will Technology Corporation look to outside resources to ﬁll 
+gaps in core competencies needed to execute the innovation?
+Technology Corporation’s Theory of the Business 
+1. Do the assumptions about the environment, mission, and core 
+competencies ﬁt reality?
+Yes. Decision makers in Technology Corporation realize it is risky 
+to be committed to a single funding source, but the purpose of the 
+organization meets a signiﬁcant need in society. The key will be in 
+moving beyond simply idea-based projects and into design and man-
+ufacturing processes to see their products built to suit speciﬁc actual 
+needs. The mismatch is in any assumption that the current stream of 
+SBIR funding will be consistent. Most members of the organization 
+agree that this is the only assumption that may not ﬁt reality.
+2. Do the assumptions in these three areas ﬁt each other?
+Yes. Again, the only potential problem here is if change strategies fail 
+and decision makers fall back into relying on the same sources they 
+have relied on over the past several years.
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+119
+3. Is the theory of the business known and understood throughout 
+the organization?
+It is unclear how well the theory of the business has been communi-
+cated and understood. An additional purpose of the scenario project 
+is to communicate the current theory of the business and create a 
+shared understanding of how and why it needs to change.
+4. Has the theory of the business been tested?
+No. One other key purpose of the scenario project will be to docu-
+ment the current theory of the business, show where it is weak, de-
+velop an alternative, and test it in each scenario.
+Technology Corporation Business Idea
+The business idea in Figure 6.6 is a simple model that captures the essence 
+of Technology Corporation’s current overall strategy. The organization has 
+key expertise in writing proposals that garner funding. Funded proposals 
+account for the majority of Technology Corporation’s operating budget, and 
+currently, few if any products are produced. Under the current model, the 
+corporation uses funding to work on good ideas and enhance its intellectual 
+property. The result of this is increasing brainpower—Technology Corpora-
+tion continues to provide intellectual challenges for its scientists and devel-
+opers, but these ideas are never brought to fruition or taken to market.
+F I G U R E  6.6  Technology Corporation’s Business Idea
+SBIR Phase I
+Intellectual Property
+Brainpower
+Useful Technologies
+for Consumers and
+Other Corporations
+
+
+120 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+The workshop for creating the business idea involved thirteen people 
+from Technology Corporation. Each participant drew a similar model, but 
+signiﬁcant insights were not achieved until each one was able to see what 
+his or her colleagues were drawing. Combining and simplifying these mod-
+els was extremely useful, and all thirteen participants agreed that signiﬁ-
+cant changes would need to be made. First, the reliance on a single funding 
+source was clariﬁed to a couple of individuals who were not totally aware 
+of it, and the implications discussed. Second, all thirteen people saw that 
+signiﬁcant cultural changes would result from changing the business model 
+to include additional funding sources, and moving into Phases II and III of 
+existing funding protocols.
+SYNTHESIS TOOLS
+Two additional analysis/synthesis tools can be used to summarize the infor-
+mation that is collected in the scenario exploration phase. These are Rumm - 
+ler and Brache’s nine performance variables and Swanson’s performance di-
+agnosis matrix. Not all scenario planning projects will use a depth of analy-
+sis that makes these tools relevant, but where appropriate, these tools have 
+the capability to structure and summarize a great deal of information in a 
+relatively simple format. 
+RUMMLER AND BRACHE’S NINE PERFORMANCE VARIABLES
+The individual, process, and organizational levels are the critical divisions 
+of the organization (Rummler & Brache, 1995). The greatest opportunity 
+for performance improvement is in understanding and leveraging the pro-
+cess level. The key strategic perspective is based on ﬁt among the levels of 
+the organization (Rummler & Brache, 1995). The nine performance vari-
+ables are shown in Figure 6.7.
+Job/performer goals must support process goals, which must in turn 
+support organization goals. If the organization goals change (as a result of a 
+planning process), then logically, the process goals and job/performer goals 
+should change. Likewise, job design must support process design, which 
+must support organization design (Rummler & Brache, 1995). The utility 
+of the nine performance variables are in achieving ﬁt or alignment among 
+these nine key variables. For example, simply describing the cells of the 
+matrix will yield useful insights. Asking questions about alignment is the 
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+121
+logical next step and can reveal where there may be signiﬁcant breakdowns 
+in alignment of goals, design, and management. The team/group level has 
+become a common addition to the nine performance variables.
+SWANSON’S PERFORMANCE DIAGNOSIS MATRIX
+Swanson’s performance diagnosis matrix (2007; see Figure 6.8) is another 
+high-utility synthesis tool. The matrix provides a means of synthesizing the 
+vast amount of information that has been collected about the internal func-
+tion of the organization. More speciﬁcally, the matrix includes a number of 
+critical variables to consider in the context of performance problems. While 
+some of these might not be immediately relevant to the scenario exercise, 
+the overall utility of the matrix is in its use as a snapshot of organizational 
+performance. The critical variables in Swanson’s matrix are mission/goal, 
+system design, capacity, motivation, and expertise. These variables can be 
+assessed at the levels of the organization proposed by Rummler and Brache 
+(job/performer, process, and organization). Swanson’s matrix is also fre-
+quently updated to include team/group levels just like the performance im-
+provement matrix by Rummler and Brache.
+A properly used matrix will reveal many issues inside any organization. 
+It is not realistic to assume all of these issues can be solved. The critical is-
+sues must be worked on, particularly those related to the strategic agenda of 
+the organization, if scenario planning is to be used. 
+These two synthesis tools were developed as tools for general organi-
+zational analysis. Their use in scenario planning is not required and, in 
+some cases, may not even be recommended. However, their utility is in 
+F I G U R E  6.7  Rummler and Brache’s (1995) Nine Performance Variables 
+The Three Performance Needs
+Goals
+Design
+Management
+The Three  
+Levels of 
+Performance
+Organization 
+Level
+Organization 
+Goals
+Organization 
+Design
+Organization 
+Management
+Process 
+Level
+Process  
+Goals
+Process 
+Design
+Process 
+Management
+Job/Performer 
+Level
+Job  
+Goals
+Job  
+Design
+Job 
+Management
+
+
+122 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+synthesizing information about the internal state of the organization. These 
+synthesis tools are particularly helpful in cases with a history of ongoing sce-
+nario planning or other change initiatives. In these instances, problems may 
+be hiding in places not often investigated in the commonly used scenario 
+planning tools. Moreover, these tools are intended to assess overall organi-
+zational viability, which ﬁts well with scenario projects aimed at organiza-
+tional learning, or the continuous quality improvement of anticipatory and 
+strategic thinking inside the organization.
+Technology Corporation’s Performance Diagnosis Matrix
+Figure 6.9 shows a snapshot of Swanson’s (2007) performance diagnosis 
+matrix applied to Technology Corporation. The matrix shows where there 
+are issues and indicates leverage points for starting to work on them. 
+F I G U R E  6.8  Swanson’s (2007) Performance Diagnosis Matrix
+Performance Levels
+Performance 
+Variables
+Organizational Level
+Process Level
+Individual Level
+Mission/Goal
+Does the organiza- 
+tional mission/goal fit 
+the reality of the 
+economic, political, 
+and cultural forces?
+Do the process goals 
+enable the organiza- 
+tion to meet organi- 
+zational and individual 
+missions/goals?
+Are the professional 
+and personal missions/ 
+goals of individuals 
+congruent with the 
+organization’s?
+Systems 
+Design
+Does the organiza- 
+tional system provide 
+structure and policies 
+supporting the desired 
+performance?
+Are processes 
+designed in such a 
+way as to work as a 
+system?
+Does the individual 
+design support 
+performance?
+Capacity
+Does the organization 
+have the leadership, 
+capital, and infra- 
+structure to achieve its 
+missions/goals?
+Does the process  
+have the capacity to 
+perform (quantity, 
+quality, and 
+timelines)?
+Does the individual 
+have the mental, 
+physical, and emo- 
+tional capacity to 
+perform?
+Motivation
+Do the policies, 
+culture, and reward 
+systems support the 
+desired performance?
+Does the process 
+provide the informa- 
+tion and human 
+factors required to 
+maintain it?
+Does the individual 
+want to perform no 
+matter what?
+Expertise
+Does the organization 
+establish and maintain 
+selection and training 
+policies and 
+resources?
+Does the process of 
+developing expertise 
+meet the changing 
+demands of changing 
+processes?
+Does the individual 
+have the knowledge, 
+skills, and experience 
+to perform?
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+123
+F I G U R E  6.9 Technology Corporation’s Performance Diagnosis Matrix
+Performance  
+Variables
+Performance Levels
+Organizational  
+Level
+Process Level
+Team Level
+Individual Level
+Mission/ 
+goal
+Does the organi- 
+zation mission/
+goal fit the reality 
+of the economic, 
+political, and 
+cultural forces?
+No, problems 
+here—changing 
+environment, 
+need to reeval- 
+uate goals.
+Do the process 
+goals enable the 
+organization-, 
+team-, and 
+individual-level 
+goals to be met?
+Not sure—if 
+organization 
+goals change, 
+these will 
+change, too.
+Do the team goals 
+enable the organi- 
+zation-, process-, 
+and individual-
+level goals to be 
+met?
+If organization 
+goals change, 
+these will change, 
+too,
+Are individual goals 
+(job descriptions) 
+supporting team, 
+process, and 
+organizational 
+goals?
+If organization 
+goals change, 
+these will change, 
+too,
+Systems  
+design
+Does the organi- 
+zation system 
+provide structure 
+and policies sup- 
+porting the desired 
+performance?
+Yes—but could 
+be altered to 
+reward team 
+performance 
+more completely.
+Are the processes 
+designed in a 
+logical, efficient, 
+and systematic 
+way?
+Yes—but they 
+may need to 
+change.
+Are the teams 
+assembled in a 
+logical, efficient 
+way that also takes 
+advantage of indi- 
+vidual strengths?
+No—collabora- 
+tion is a problem. 
+Possible leverage 
+here to get people 
+working together 
+more.
+Does the job design 
+enable the individ- 
+ual to perform in 
+the team as required 
+by the process?
+Yes
+Capacity
+Does the organi- 
+zation have the 
+leadership, capital, 
+and infrastructure 
+to achieve its 
+mission/goals?
+Yes
+Does the process 
+have the capacity 
+to meet the 
+quantity, quality, 
+and time line 
+requirements?
+Yes
+Do teams demon- 
+strate the capacity 
+to meet the 
+quantity, quality, 
+and time line 
+requirements?
+No—more 
+collaboration and 
+teamwork  
+is needed.
+Do individuals 
+have the mental, 
+physical, and emo- 
+tional capacity to 
+perform as required 
+by the team and 
+the process?
+Yes—absolutely
+(continued)
+
+
+124 
+PH A S E S  OF P ERFO RM ANCE -B ASED SC EN AR I O S Y S T E M
+CONCLUSION
+This chapter has described the scenario exploration phase, covering 
+general tools in assessing the external and internal environments. The pur-
+pose of this phase is to learn about the industry and external environment, 
+as well as the internal dynamics of the organization. Simultaneously, partic-
+ipant viewpoints, ideas, and perspectives can be gathered. Two workshops 
+were recommended (on SWOT analysis and theory of the business/business 
+idea) to stimulate strategic thinking and prepare participants for the sce-
+nario construction that is to follow.
+F I G U R E  6.9  Technology Corporation’s Performance Diagnosis Matrix (continued)
+Performance  
+Variables
+Performance Levels
+Organizational  
+Level
+Process Level
+Team Level
+Individual Level
+Motivation
+Do the policies, 
+culture, and 
+reward systems 
+support the desired 
+performance?
+Generally, yes, 
+but not in the 
+case of team 
+performance
+Does the process 
+provide the required 
+information? Is 
+the process moti- 
+vating for the 
+workforce?
+Yes
+Is the reward sys- 
+tem structured to 
+enable maximum 
+performance from 
+each team 
+member?
+Yes, but needs 
+adjustment to 
+reward 
+collaboration
+Are individuals mo- 
+tivated to perform 
+as required by team 
+and process goals?
+Possibly inter- 
+nally, but they are 
+not formally 
+rewarded for 
+doing so.
+Expertise
+Do the selection 
+and training 
+policies and 
+resources enable 
+the desired 
+performance?
+Yes
+Is the expertise 
+required by the 
+process contin- 
+uously determined 
+and developed?
+Yes
+Are teams devel- 
+oping collective 
+expertise, or are 
+teams continually 
+reconfigured to 
+share expertise?
+Opportunity 
+here—teams  
+are not perform- 
+ing well, but 
+individuals are.
+Do individuals 
+have the knowl- 
+edge, skills, and 
+expertise required 
+by the team and 
+process?
+Yes
+
+
+  
+P H A S E 2—S C E N A R I O  E X P L O R A T I O N  
+125
+The core outcomes of this phase are summaries of the state of the in-
+ternal and external environments. Items that should be included are the 
+following:
+• A listing of STEEP forces, with major issues in each category 
+• A report of the SWOT analysis
+• An executive summary of the internal interviews
+• A summary of information gained through use of other data collection 
+methods
+• A summary report of the theory of the business/business idea 
+workshop
+Optional but useful synthesis tools include these:
+• A completed table summarizing Rummler and Brache’s nine 
+performance variables
+• A completed version of Swanson’s performance diagnosis matrix
+This chapter includes examples of these elements as applied in the scenario 
+case. These reports do not need to be lengthy. In fact, they should be short, 
+providing the core, relevant information for the project. The goal is to pres-
+ent an understanding of the basic internal and external dynamics, recogniz-
+ing that the next phase, scenario construction, delves more deeply into the 
+external environment.
+
+
+This page intentionally left blank 
+
+
+ 127
+Phase 3—Scenario 
+Development:  
+Digging Deeper
+The scenario development phase consists of workshops used to build sce-
+narios. Most scenario planning books cover the materials presented in this 
+chapter. These activities are the signature of scenario planning. The prior 
+phase on scenario exploration included several tools for assessing the exter-
+nal and internal environments. This follow-up phase digs deeper into both of 
+these environments. The key outcome of scenario development is two to four 
+scenarios that are relevant, plausible, and challenging. During the creation 
+of scenarios, participants challenge each other’s viewpoints and set the foun-
+dation for a shared mental model of the organization and its environment.
+KEY TERMS AND APPROACHES
+Before getting into the details of scenario development, it is important to 
+review some key scenario terms and cover some philosophical approaches 
+to scenario development. 
+PREDETERMINED ELEMENTS
+Predetermined elements are predictable elements that do not depend on a 
+particular chain of events (Schwartz, 1991). Predictable elements are divided 
+into four categories: slow-changing phenomena, constrained situations, in 
+the pipeline, and inevitable conclusions. The most obvious example of a pre-
+determined element is demographics. Populations are predictable. Popula-
+tions are also an example of elements in the pipeline. Much has been written 
+7

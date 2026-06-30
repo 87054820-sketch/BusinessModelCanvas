@@ -1,0 +1,575 @@
+# 4 Focus on the Big Picture, Not the Numbers
+
+It’s no wonder that few strategic plans lead to the creation of blue oceans
+or are translated into action. Executives are paralyzed by the muddle. Few
+employees deep down in the company even know what the strategy is. And
+a closer look reveals that most plans don’t contain a strategy at all but rather
+a smorgasbord of tactics that individually make sense but collectively don’t
+add up to a unified, clear direction that sets a company apart—let alone
+makes the competition irrelevant. Does this sound like the strategic plans in
+your company?
+This brings us to the second principle of blue ocean strategy: focus on the
+big picture, not the numbers. This principle is key to mitigating the planning
+risk of investing lots of effort and lots of time but delivering only tactical
+red ocean moves. Here we develop an alternative approach to the existing
+strategic planning process that is based not on preparing a document but on
+drawing a strategy canvas.1 This approach consistently produces strategies
+that unlock the creativity of a wide range of people within an organization,
+open companies’ eyes to blue oceans, and are easy to understand and
+communicate for effective execution.
+OceanofPDF.com
+
+
+Focusing on the Big Picture
+In our research and consulting work, we have found that drawing a strategy
+canvas not only visualizes a company’s current strategic position in its
+marketplace but also helps it chart its future strategy. By building a
+company’s strategic planning process around a strategy canvas, a company
+and its managers focus their main attention on the big picture rather than
+becoming immersed in numbers and jargon and getting caught up in
+operational details.2
+As previous chapters reveal, drawing a strategy canvas does three things.
+First, it shows the strategic profile of an industry by depicting very clearly
+the factors (and the possible future factors) that affect competition among
+industry players. Second, it shows the strategic profile of current and
+potential competitors, identifying which factors they invest in strategically.
+Finally, it shows the company’s strategic profile—or value curve—
+depicting how it invests in the factors of competition and how it might
+invest in them in the future. As discussed in chapter 2, the strategic profile
+with high blue ocean potential has three complementary qualities: focus,
+divergence, and a compelling tagline. If a company’s strategic profile does
+not clearly reveal those qualities, its strategy will likely be muddled,
+undifferentiated, and hard to communicate. It is also likely to be costly to
+execute.
+OceanofPDF.com
+
+
+Drawing Your Strategy Canvas
+Drawing a strategy canvas is never easy. Even identifying the key factors of
+competition is far from straightforward. As you will see, the final list is
+usually very different from the first draft.
+Assessing to what extent your company and its competitors offer the
+various competitive factors is equally challenging. Most managers have a
+strong impression of how they and their competitors fare along one or two
+dimensions within their own scope of responsibility, but very few can see the
+overall dynamics of their industry. The catering manager of an airline, for
+example, will be highly sensitive to how the airline compares in terms of
+refreshments. But that focus makes consistent measurement difficult; what
+seems to be a very big difference to the catering manager may not be
+important to customers, who look at the complete offering. Some managers
+will define the competitive factors according to internal benefits. For
+example, a CIO might prize the company’s IT infrastructure for its data-
+mining capacity, a feature lost on most customers, who are more concerned
+with speed and ease of use.
+Over the past twenty years, we have developed a structured process for
+drawing and discussing a strategy canvas that pushes a company’s strategy
+toward a blue ocean. A financial services group that we’ll call European
+Financial Services (EFS) is one of the companies that adopted this process to
+develop a strategy that breaks away from the competition. The resulting EFS
+strategy yielded a 30 percent revenue boost in its initial year. The process,
+which builds on the six paths of creating blue oceans and involves a lot of
+visual stimulation in order to unlock people’s creativity, has four major steps
+(see figure 4-1).
+FIGURE 4-1
+The four steps of visualizing strategy
+
+
+OceanofPDF.com
+
+
+
+
+Step 1: Visual Awakening
+A common mistake is to discuss changes in strategy before resolving
+differences of opinion about the current state of play. Another problem is that
+executives are often reluctant to accept the need for change; they may have a
+vested interest in the status quo, or they may feel that time will eventually
+vindicate their previous choices. Indeed, when we ask executives what
+prompts them to seek out blue oceans and introduce change, they usually say
+that it takes a highly determined leader or a serious crisis.
+Fortunately, we’ve found that asking executives to draw the value curve of
+their company’s strategy brings home the need for change. It serves as a
+forceful wake-up call for companies to challenge their existing strategies.
+That was the experience at EFS, which had been struggling for a long time
+with an ill-defined and poorly communicated strategy. The company was
+also deeply divided. The top executives of EFS’s regional subsidiaries
+bitterly resented what they saw as the arrogance of the corporate executives,
+whose philosophy, they believed, was essentially “nuts in the field, brains in
+the center.” That conflict made it all the more difficult for EFS to come to
+grips with its strategic problems. Yet before the firm could chart a new
+strategy, it was essential that it reach a common understanding of its current
+position.
+EFS began the strategy process by bringing together more than twenty
+senior managers from subsidiaries in Europe, North America, Asia, and
+Australia and splitting them into two teams. One team was responsible for
+producing a value curve depicting EFS’s current strategic profile in its
+traditional corporate foreign exchange business relative to its competitors.
+The other team was charged with the same task for EFS’s emerging online
+foreign exchange business. They were given ninety minutes, because if EFS
+had a clear strategy, surely it would emerge quickly.
+It was a painful experience. Both teams had heated debates about what
+constituted a competitive factor and what the factors were. Different factors
+were important, it seemed, in different regions and even for different
+customer segments. For example, Europeans argued that in its traditional
+business, EFS had to offer consulting services on risk management, given
+the perceived risk-averse nature of its customers. Americans, however,
+
+
+dismissed that as largely irrelevant. They stressed the value of speed and
+ease of use. Many people had pet ideas of which they were the sole
+champions. One person in the online team argued, for example, that
+customers would be drawn in by the promise of instant confirmations of
+their transactions—a service no one else thought necessary. This was a
+service no player in the industry then offered. In fact, in early 2000, apart
+from a few select companies like Amazon, there were very few companies in
+any industry that offered automatic buyer confirmations.
+Despite these difficulties, the teams completed their assignments and
+presented their pictures in a general meeting of all participants. Their results
+are shown in figures 4-2 and 4-3.
+The pictures clearly revealed defects in the company’s strategy. EFS’s
+traditional and online value curves both demonstrated a serious lack of
+focus; the company was investing in diverse and numerous factors in both
+businesses. What’s more, EFS’s two curves were very similar to those of
+competitors. Not surprisingly, neither team could come up with a memorable
+tagline that was true to the team’s value curve.
+FIGURE 4-2
+The strategy canvas of corporate foreign exchange, offline
+
+
+FIGURE 4-3
+The strategy canvas of corporate foreign exchange, online
+
+
+The pictures also highlighted contradictions. The online business, for
+example, had invested heavily in making the website easy to use—it had
+even won awards for this—but it became apparent that speed had been
+overlooked. EFS had one of the slowest websites in the business, and that
+might explain why such a well-regarded site did a relatively poor job of
+attracting customers and converting them into sales.
+The sharpest shocks, perhaps, came from comparing EFS’s strategy with
+its competitors’. The online group realized that its strongest competitor,
+which we’ve called Clearskies, had a focused, original, and easily
+communicable strategy: “One-click E-Z FX.” Clearskies, which was
+growing rapidly, was swimming away from the red ocean.
+Faced with direct evidence of the company’s shortcomings, EFS’s
+executives could not defend what they had shown to be a weak, unoriginal,
+and poorly communicated strategy. Trying to draw the strategy canvases had
+made a stronger case for change than any argument based on numbers and
+words could have done. This created a strong desire in top management to
+seriously rethink the company’s current strategy.
+
+
+OceanofPDF.com
+
+
+
+
+Step 2: Visual Exploration
+Getting the wake-up call is only the first step. The next step is to send a
+team into the field, putting managers face-to-face with what they must
+make sense of: how people use or don’t use their products or services. This
+step may seem obvious, but we have found that managers often outsource
+this part of the strategy-making process. They rely on reports that other
+people (often at one or two removes from the world they report on) have
+put together.
+A company should never outsource its eyes. There is simply no substitute
+for seeing for yourself. Great artists don’t paint from other people’s
+descriptions or even from photographs; they like to see the subject for
+themselves. The same is true for great strategists. Michael Bloomberg,
+before becoming mayor of New York City, was hailed as a business
+visionary for his realization that the providers of financial information also
+needed to provide online analytics to help users make sense of the data. But
+he would be the first to tell you that the idea should have been obvious to
+anyone who had ever watched traders using Reuters or Dow Jones Telerate
+at the time. Before Bloomberg, traders used paper, pencil, and handheld
+calculators to write down price quotes and figure fair market values before
+making buy and sell decisions, a practice that cost them time and money as
+well as built-in possible errors.
+Great strategic insights like this are less the product of genius than of
+getting into the field and challenging the boundaries of competition.3 In the
+case of Bloomberg, his insight came by switching the focus of the industry
+from IT purchasers to users: the traders and analysts. This allowed him to
+see what was invisible to others.4
+Obviously, the first port of call should be the customers. But you should
+not stop there. You should also go after noncustomers.5 And when the
+customer is not the same as the user, you need to extend your observations
+to the users, as Bloomberg did. You should not only talk to these people but
+also watch them in action. Identifying the array of complementary products
+and services that are consumed alongside your own may give you insight
+into bundling opportunities. Finally, you need to look at how customers
+might find alternative ways of fulfilling the need that your product or
+
+
+service satisfies. For example, driving is an alternative to flying, so you
+should also examine its distinct advantages and characteristics.
+EFS sent its managers into the field for four weeks to explore the six
+paths to creating blue oceans.6 In this process, each was to interview and
+observe ten people involved in corporate foreign exchange, including lost
+customers, new customers, and the customers of EFS’s competitors and
+alternatives. The managers also reached outside the industry’s traditional
+boundaries to companies that did not yet use corporate foreign exchange
+services but that might in the future, such as internet-based companies with
+a global reach like Amazon.com that were just beginning to take off at the
+time. They interviewed the end users of corporate foreign exchange services
+—the accounting and treasury departments of companies. And finally, they
+looked at ancillary products and services that their customers used—in
+particular, treasury management and pricing simulations.
+The field research overturned many of the conclusions managers had
+reached in the first step of the strategy creation process. For example,
+account relationship managers, whom nearly everyone had agreed were a
+key to success and on whom EFS prided itself, turned out to be the
+company’s Achilles’ heel. Customers hated wasting time dealing with
+relationship managers. To buyers, relationship managers were seen as
+relationship savers because EFS failed to deliver on its promises.
+To everyone’s astonishment, the factor customers valued most was
+getting speedy confirmation of transactions, which only one manager had
+previously suggested was important. The EFS managers saw that their
+customers’ accounting department personnel spent a lot of time making
+phone calls to confirm that payments had been made and to check when
+they would be received. Customers received numerous calls on the same
+subject, and the time wasted in handling them was compounded by the
+necessity of making further calls to the foreign exchange provider, namely
+EFS or a competitor.
+EFS’s teams were then sent back to the drawing board. This time, though,
+they had to propose a new strategy. Each team had to draw six new value
+curves using the six path framework explained in chapter 3. Each new value
+curve had to depict a strategy that would make the company stand out in its
+market. By demanding six pictures from each team, we hoped to push
+
+
+managers to create innovative proposals and break the boundaries of their
+conventional thinking.
+For each visual strategy, the teams also had to write a compelling tagline
+that captured the essence of the strategy and spoke directly to buyers.
+Suggestions included “Leave It to Us,” “Make Me Smarter,” and
+“Transactions in Trust.” A strong sense of competition developed between
+the two teams, making the process fun, imbuing it with energy, and driving
+the teams to develop blue ocean strategies.
+OceanofPDF.com
+
+
+
+
+Step 3: Visual Strategy Fair
+After two weeks of drawing and redrawing, the teams presented their
+strategy canvases at what we call a visual strategy fair. Attendees included
+senior corporate executives but consisted mainly of representatives of EFS’s
+external constituencies—the kinds of people the managers had met with
+during their field trips, including noncustomers, customers of competitors,
+and some of the most demanding EFS customers. In two hours, the teams
+presented all twelve curves—six by the online group, and six by the offline
+group. They were given no more than ten minutes to present each curve, on
+the theory that any idea that takes more than ten minutes to communicate is
+probably too complicated to be any good. The pictures were hung on the
+walls so that the audience could easily see them.
+After the twelve strategies were presented, each judge—an invited
+attendee—was given five sticky notes and told to put them next to his or her
+favorites. The judges could put all five on a single strategy if they found it
+that compelling. The transparency and immediacy of this approach freed it
+from the politics that sometimes seem endemic to the strategic planning
+process. Managers had to rely on the originality and clarity of their curves
+and their pitches. One began, for example, with the line, “We’ve got a
+strategy so cunning that you won’t be our customers, you’ll be our fans.”
+After the notes were posted, the judges were asked to explain their picks,
+adding another level of feedback to the strategy-making process. Judges
+were also asked to explain why they did not vote for the other value curves.
+As the teams synthesized the judges’ common likes and dislikes, they
+realized that fully one-third of what they had thought were key competitive
+factors were, in fact, marginal to customers. Another one-third either were
+not well articulated or had been overlooked in the visual awakening phase. It
+was clear that the executives needed to reassess some long-held
+assumptions, such as EFS’s separation of its online and traditional
+businesses.
+They also learned that buyers from all markets had a basic set of needs
+and expected similar services. If you met those common needs, customers
+would happily forgo everything else. Regional differences became
+
+
+significant only when there was a problem with the basics. This was news to
+many people who had claimed that their regions were unique.
+Following the strategy fair, the teams were finally able to complete their
+mission. They were able to draw a value curve that was a truer likeness of
+the existing strategic profile than anything they had produced earlier, in part
+because the new picture ignored the specious distinction that EFS had made
+between its online and offline businesses. More important, the managers
+were now in a position to draw a future strategy that would be distinctive as
+well as speak to a true but hidden need in the marketplace. Figure 4-4
+highlights the stark differences between the company’s current and future
+strategies.
+FIGURE 4-4
+EFS: Before and after
+
+
+As the figure shows, EFS’s future strategy eliminated relationship
+management and reduced investment in account executives, who, from this
+point on, were assigned only to “AAA” accounts. These moves dramatically
+reduced EFS’s costs because relationship managers and account executives
+were the highest-cost element of its business. EFS’s future strategy
+emphasized ease of use, security, accuracy, and speed. These factors would
+be delivered through computerization, which would allow customers to input
+data directly instead of having to send a fax to EFS, which was the industry
+norm at the time.
+This action would also free up corporate dealers’ time, a large portion of
+which had been spent completing paperwork and correcting errors. Dealers
+would now be able to provide richer market commentary, a key success
+factor. And EFS would send automatic electronic confirmations to all
+customers. It would also offer a payment-tracking service, just as FedEx and
+UPS do for parcels. The foreign exchange industry had never offered these
+services before. Figure 4-5 summarizes EFS’s four actions to create value
+innovation, the cornerstone of blue ocean strategy.
+FIGURE 4-5
+Eliminate-reduce-raise-create grid: The case of EFS
+
+
+The new value curve exhibited the criteria of a successful strategy. It
+displayed more focus than the previous strategy; investments that were made
+were given a much stronger commitment than before. It also stood apart
+from the industry’s existing me-too curves and lent itself to a compelling
+tagline: “The FedEx of corporate foreign exchange: easy, reliable, fast, and
+trackable.” By collapsing its online and traditional businesses into one
+compelling offering, EFS substantially cut the operational complexity of its
+business model, making systematic execution far easier.
+OceanofPDF.com
+
+
+
+
+Step 4: Visual Communication
+After the future strategy is set, the last step is to communicate it in a way
+that can be easily understood by any employee. EFS distributed the one-
+page picture showing its new and old strategic profiles so that every
+employee could see where the company stood and where it had to focus its
+efforts to create a compelling future. The senior managers who participated
+in developing the strategy held meetings with their direct reports to walk
+them through the picture, explaining what needed to be eliminated, reduced,
+raised, and created to pursue a blue ocean. Those people passed the message
+on to their direct reports. Employees were so motivated by the clear game
+plan that many pinned up a version of the strategy canvas in their cubicles
+as a reminder of EFS’s new priorities and the gaps that needed to be closed.
+The new picture became a reference point for all investment decisions.
+Only those ideas that would help EFS move from the old to the new value
+curve were given the go-ahead. When, for example, regional offices
+requested that the IT department add links on the website—something that
+in the past would have been agreed to without debate—IT asked them to
+explain how the new links helped move EFS toward its new profile. If the
+regional offices couldn’t provide an explanation, the request was denied,
+thereby promoting clarity and not confusion on the website. Similarly, when
+the IT department pitched a multimillion-dollar back-office system to top
+management, the system’s ability to meet the new value curve’s strategic
+needs was the chief metric by which it was judged.
+OceanofPDF.com
+
+
+Visualizing Strategy at the Corporate Level
+Visualizing strategy can also greatly inform the dialogue among individual
+business units and the corporate center in transforming a company’s
+business portfolio from red to blue. When business units present their
+strategy canvases to one another, they deepen their understanding of the
+other businesses in the corporate portfolio. Moreover, the process also
+fosters the transfer of strategic best practices across units.
+OceanofPDF.com
+
+
+
+
+Using the Strategy Canvas
+To see how this works, consider how Samsung Electronics of Korea used
+strategy canvases. Let’s zoom in on one of its corporate conferences, for
+example, that was attended by more than seventy top managers, including
+the CEO. Here unit heads presented their canvases and implementation
+plans to senior executives and to one another. Discussions were heated, and
+a number of unit heads argued that the freedom of their units to form future
+strategies was constrained by the degree of competition they faced. Poor
+performers felt that they had little choice but to match their competitors’
+offerings. That hypothesis proved to be false when one of the fastest-
+growing units—the mobile phone business—presented its strategy canvas.
+Not only did the unit have a distinctive value curve, but it also faced the
+most intense competition.
+Samsung Electronics institutionalized the use of the strategy canvas in its
+key business creation decisions by establishing the Value Innovation
+Program (VIP) Center all the way back in 1998. Samsung was at a
+crossroads at the time. With the aftermath of the 1997 Asian financial crisis
+still being felt, the company, under the direction of its leader, Jong Yong
+Yun, saw the dire need to break out of commodity-type competition and
+create products and businesses that were both differentiated and lower cost.
+Only that, CEO Yun felt, would propel the company to become a leading
+consumer electronics company of the future. With this aim, the VIP Center
+was established under the influence of our value innovation theory.7 The
+center is a five-story building nestled amid the company’s enormous
+industrial complex in Suwon, South Korea. Here, core cross-functional
+team members of its various business units come together to discuss their
+strategic projects with code names like Rainbow and Habana.8 These
+discussions typically focus on strategy canvases.
+More than two thousand people a year have been known to cycle through
+its VIP Center in Suwon, where designers, engineers, planners, and
+programmers gather for days—or months—to hammer out detailed
+specifications for new products that will launch the company’s products
+toward the blue ocean. The center has a core team of members who work to
+support the projects passing through the center, all focused on driving value
+
+
+innovation into Samsung’s next-generation products. With the value
+innovation knowledge it has developed, the center, equipped with twenty
+project rooms, assists the units in making their product and service offering
+decisions. On average, some ninety strategic projects pass through the
+center each year. Samsung also opened more than ten VIP branches to meet
+business units’ rising demands.
+In this spirit, Samsung Electronics has established an annual Value
+Innovation corporate conference presided over by all of its top executives.
+At this conference, Samsung’s hit Value Innovation projects are shared
+through presentations and exhibitions, and awards are given to the best
+cases. This is one way that Samsung Electronics establishes a common
+language system, instilling a corporate culture and strategic norms that
+drive its corporate business portfolio from red to blue oceans.9
+Samsung Electronics has come a long way since the VIP Center was
+established. Its sales have grown from $16.6 billion in 1998 to $216.7
+billion in 2013 and its brand value has catapulted with it. Samsung
+Electronics is now ranked as one of the top-ten most valuable global
+brands.10 While Samsung’s focus on driving value innovation has
+contributed to its sales, brand value, and market leadership, it will need an
+even stronger value innovation push in the future as new lower-cost rivals
+and untraditional players enter the fast-moving, high-tech consumer
+electronics industry.
+Do your business unit heads lack an understanding of the other
+businesses in your corporate portfolio? Are your strategic best practices
+poorly communicated across your business units? Are your low-performing
+units quick to blame their competitive situations for their results? If the
+answer to any of these questions is yes, try drawing, and then sharing, the
+strategy canvases of your business units.
+OceanofPDF.com
+
+
+
+
+Using the Pioneer-Migrator-Settler (PMS) Map
+Visualizing strategy can also help managers responsible for corporate
+strategy predict and plan the company’s future growth and profit. All the
+companies that created blue oceans in our study have been pioneers in their
+industries, not necessarily in developing new technologies but in pushing
+the value they offer customers to new frontiers. Extending the pioneer
+metaphor can provide a useful way of talking about the growth potential of
+current and future businesses.
+A company’s pioneers are the businesses that offer unprecedented value.
+These are your blue ocean offerings, and they are the most powerful sources
+of profitable growth. These businesses have a mass following of customers.
+Their value curve diverges from the competition on the strategy canvas. At
+the other extreme are settlers—businesses whose value curves conform to
+the basic shape of the industry’s. These are me-too businesses. Settlers will
+not generally contribute much to a company’s future growth. They are stuck
+within the red ocean.
+The potential of migrators lies somewhere in between. Such businesses
+extend the industry’s curve by giving customers more for less, but they
+don’t alter its basic shape. These businesses offer improved value, but not
+innovative value. These are businesses whose strategies fall on the margin
+between red oceans and blue oceans.
+A useful exercise for a corporate management team pursuing profitable
+growth is to plot the company’s current and planned portfolios on a pioneer-
+migrator-settler (PMS) map. For the purpose of the exercise, settlers are
+defined as me-too businesses, migrators are business offerings better than
+most in the marketplace, and pioneers are your value innovation offerings.
+If both the current portfolio and the planned offerings consist mainly of
+settlers, the company has a low growth trajectory, is largely confined to red
+oceans, and needs to push for value innovation. Although the company
+might be profitable today as its settlers are still making money, it may well
+have fallen into the trap of competitive benchmarking, imitation, and intense
+price competition.
+
+
+If current and planned offerings consist of a lot of migrators, reasonable
+growth can be expected. But the company is not exploiting its potential for
+growth, and it risks being marginalized by a company that value-innovates.
+In our experience, the more an industry is populated by settlers, the greater
+is the opportunity to value-innovate and create a blue ocean of new market
+space.
+This exercise is especially valuable for managers who want to see beyond
+today’s performance. Revenue, profitability, market share, and customer
+satisfaction are all measures of a company’s current position. Contrary to
+what conventional strategic thinking suggests, those measures cannot point
+the way to the future; changes in the environment are too rapid. Today’s
+market share is a reflection of how well a business has performed
+historically. Think of the strategic reversal and market share upset that
+occurred when CNN entered the US news market. ABC, CBS, and NBC—
+all with historically strong market shares—were devastated.
+Chief executives should instead use value and innovation as the important
+parameters for managing their portfolio of businesses. They should use
+innovation because, without it, companies are stuck in the trap of
+competitive improvements. They should use value because innovative ideas
+will be profitable only if they are linked to what buyers are willing to pay
+for.
+Clearly, what senior executives should be doing is getting their
+organizations to shift the balance of their future portfolio toward pioneers.
+That is the path to profitable growth. The PMS map shown in figure 4-6
+depicts this trajectory, showing the scatter plot of a company’s portfolio of
+businesses, where the gravity of its current portfolio of twelve businesses,
+expressed as twelve dots, shifts from a preponderance of settlers to a
+stronger balance of migrators and pioneers.
+In pushing their businesses toward pioneers, however, senior executives
+should be well aware that even though settlers have marginal growth
+potential, they are frequently today’s cash generators. How can senior
+executives then balance between cash flow and growth at a given point in
+time to maximize profitable growth at the corporate level? What would be
+their best renewal strategy for their portfolio of businesses over time? How
+would such a renewal strategy work in action? We address these important
+questions on renewal in chapter 10.
+
+
+FIGURE 4-6
+Testing the growth potential of a portfolio of businesses
+OceanofPDF.com
+
+
+Overcoming the Limitations of Strategic Planning
+Managers often express discontent, either explicitly or implicitly, with
+existing strategic planning—the core activity of strategy. To them, strategic
+planning should be more about collective wisdom building than top-down
+or bottom-up planning. They think that it should be more conversational
+than solely documentation-driven, and it should be more about building the
+big picture than about number-crunching exercises. It should have a
+creative component instead of being strictly analysis-driven, and it should
+be more motivational, invoking willing commitment, than bargaining-
+driven, producing negotiated commitment. Despite this appetite for change,
+however, scant work exists on building a viable alternative to existing
+strategic planning, which is the most essential management task in the sense
+that almost every company in the world not only does it but often takes
+several grueling months each year to complete the exercise. Put differently,
+while companies have a clear process to create plans, as of yet there has
+been no theory or process for true strategy creation.
+We believe the four-step process proposed here goes a long way to
+correct this situation. By being built around a picture, it addresses many of
+managers’ discontents with existing strategic planning and yields much
+better results. As Aristotle pointed out, “The soul never thinks without an
+image.”
+Drawing a strategy canvas and a PMS map is not, of course, the only part
+of strategy making. At some stage, numbers and documents must be
+compiled and discussed. But we believe that the details will fall into place
+more easily if managers start with the big picture of how to break away
+from the competition. The methods of visualizing strategy proposed here
+will put strategy back into strategic planning, and they will greatly improve
+your chances of creating a blue ocean.
+How do you maximize the size of the blue ocean you are creating? The
+following chapter addresses that precise question.
+OceanofPDF.com
+
+
+CHAPTER 5
+Reach Beyond Existing Demand
+NO COMPANY WANTS to venture beyond red oceans only to find itself in a
+puddle. The question is, How do you maximize the size of the blue ocean
+you are creating? This brings us to the third principle of blue ocean
+strategy: reach beyond existing demand. This is a key component of
+achieving value innovation. By aggregating the greatest demand for a new
+offering, this approach attenuates the scale risk associated with creating a
+new market.
+To achieve this, companies should challenge two conventional strategy
+practices. One is the focus on existing customers. The other is the drive for
+finer segmentation to accommodate buyer differences. Typically, to grow
+their share of a market, companies strive to retain and expand existing
+customers. This often leads to finer segmentation and greater tailoring of
+offerings to better meet customer preferences. The more intense the
+competition is, the greater, on average, is the resulting customization of
+offerings. As companies compete to embrace customer preferences through
+finer segmentation, they often risk creating too-small target markets.
+To maximize the size of their blue oceans, companies need to take a
+reverse course. Instead of concentrating on customers, they need to look to
+noncustomers. And instead of focusing on customer differences, they need
+to build on powerful commonalities in what buyers value. That allows

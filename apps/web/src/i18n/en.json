@@ -449,7 +449,12 @@
       "relatedCount_other": "{{count}} related items",
       "relatedEmpty": "No related content yet.",
       "descriptionEmpty": "No reading note authored for this resource yet.",
-      "referencesEmpty": "No sources recorded yet."
+      "referencesEmpty": "No sources recorded yet.",
+      "chapters": "Chapters",
+      "chapterCount_one": "{{count}} chapter",
+      "chapterCount_other": "{{count}} chapters",
+      "chapterContentEmpty": "No chapter content yet.",
+      "chapterRelated": "Related content in this chapter"
     },
     "experiments": {
       "intro": {

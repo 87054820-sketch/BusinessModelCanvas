@@ -1,0 +1,34 @@
+{
+  "chapter": "ch03-design",
+  "sourceFiles": { "en": "06-Design.txt", "zh": "08-设计.txt" },
+  "concepts": [
+    { "name": "Customer Insights", "definition": "Building deep understanding of customers to inform business model design. Techniques include empathy maps, customer journey mapping, and ethnographic research. The insight is that customers are the only credible judge of value, so design must start from their perspective." },
+    { "name": "Ideation", "definition": "A creative process for generating a large number of business model ideas and isolating the best ones. Two phases: divergent (generating quantity, deferring judgment) and convergent (synthesizing, selecting). Techniques: brainstorming, what-if questions, customer-insight-driven ideation, using the Canvas as a divergent thinking tool." },
+    { "name": "Visual Thinking", "definition": "Using visual tools (sketches, post-it notes, diagrams, drawings) to make business model concepts tangible and discussable. Visuals make complex ideas comprehensible, reveal relationships, and enable shared understanding in groups." },
+    { "name": "Prototyping", "definition": "Creating low-cost, quick representations of potential business models. Prototypes range from napkin sketches to detailed Canvas layouts to field tests. Each prototype is a hypothesis, not a commitment. The goal is to explore many possibilities before betting on one." },
+    { "name": "Storytelling", "definition": "Using narrative to communicate a business model's logic, engage emotions, and make abstract concepts concrete. Two types: company perspective (how the business creates value) and customer perspective (how the customer experiences the value)." },
+    { "name": "Scenarios", "definition": "Developing detailed, plausible stories about how the future might unfold, to inform business model design. Two types: customer-driven scenarios (placing a business model in specific customer contexts) and future-environment scenarios (imagining different competitive/regulatory/technological futures)." }
+  ],
+  "arguments": [
+    { "claim": "Design is not a linear process — it's iterative, messy, and requires moving back and forth between techniques", "evidence": "The book presents six design techniques but emphasizes they are used together and iteratively. A team might ideate (generate ideas), prototype the most promising ones, use visual thinking to discuss them, gather customer insights to test assumptions, tell stories to communicate, and use scenarios to stress-test. The order is not fixed." },
+    { "claim": "Prototyping replaces the 'single business plan' with an exploration of many possibilities", "evidence": "Traditional business planning bets on one model. The design approach bets on many cheap prototypes, letting evidence and learning narrow the options. This reduces the cost of being wrong and increases the chance of finding a model that actually works." }
+  ],
+  "cases": [
+    { "name": "Nespresso: Prototyping in Practice", "context": "Nestlé's Nespresso system went through many business model iterations before finding the one that worked.", "illustrates": "The power of prototyping. Early prototypes targeted offices (B2B), later pivoted to consumers (B2C) with the club model. Each iteration was a prototype that generated learning before committing massive resources.", "lesson": "Prototype the business model, not just the product. The product (capsule + machine) was the same across iterations; the business model (B2B vs B2C, retail vs club) made the difference." }
+  ],
+  "terminology": [
+    { "term": "Empathy map", "definition": "A tool to develop a deeper understanding of a customer segment, mapping what they see, hear, think, feel, say, and do." },
+    { "term": "Napkin sketch", "definition": "The simplest prototype: a rough drawing of a business model idea on a single sheet. Captures the core logic without detail." }
+  ],
+  "nuance": [
+    "Design techniques work best in multi-disciplinary teams — including people from different functions, backgrounds, and levels",
+    "Customer insights are gathered, not assumed. The most dangerous phrase in business model design is 'I know what customers want' without evidence."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["business-model-canvas", "business-model-environment"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-canvas", "ch04-strategy"]
+  }
+}

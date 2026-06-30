@@ -182,6 +182,14 @@ export const copilotApi = {
     );
   },
 
+  fetchResourceContext(slug: string, lang: Lang, query?: string): Promise<{ markdown: string }> {
+    const qs = new URLSearchParams({ lang });
+    if (query?.trim()) qs.set('q', query.trim());
+    return fetchJson<{ markdown: string }>(
+      `${BASE}/copilot/resource-context/${encodeURIComponent(slug)}?${qs.toString()}`,
+    );
+  },
+
   fetchProjectContext(
     projectId: string,
     lang: Lang,

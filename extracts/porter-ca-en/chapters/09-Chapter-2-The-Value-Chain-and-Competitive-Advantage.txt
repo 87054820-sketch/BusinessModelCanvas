@@ -1,0 +1,870 @@
+# Chapter 2: The Value Chain and Competitive Advantage
+
+buyer. Channels perform additional activities that affect the buyer, as well
+as inﬂuence the ﬁrm’s own activities. A ﬁrm’s product eventually becomes
+part of its buyer’s value chain. The ultimate basis for differentiation is a
+ﬁrm and its product’s role in the buyer’s value chain, which determines
+buyer needs. Gaining and sustaining competitive advantage depends on
+understanding not only a ﬁrm’s value chain but how the ﬁrm ﬁts in the
+overall value system.
+The value chains of ﬁrms in an industry differ, reﬂecting their histories,
+strategies, and success at implementation. One important difference is that a
+ﬁrm’s value chain may differ in competitive scope from that of its
+competitors, representing a potential source of competitive advantage.
+Serving only a particular industry segment may allow a ﬁrm to tailor its
+value chain to that segment and result in lower costs or differentiation in
+serving that segment compared to competitors. Widening or narrowing the
+geographic markets served can also affect competitive advantage. The
+extent of integration into activities plays a key role in competitive
+advantage. Finally, competing in related industries with coordinated value
+chains can lead to competitive advantage through interrelationships. A ﬁrm
+may exploit the beneﬁts of broader scope internally or it may form
+coalitions with other ﬁrms to do so. Coalitions are long-term alliances with
+other ﬁrms that fall short of outright merger, such as joint ventures, licenses,
+and supply agreements. Coalitions involve coordinating or sharing value
+chains with coalition partners that broadens the effective scope of the ﬁrm’s
+chain.
+This chapter describes the fundamental role of the value chain in
+identifying sources of competitive advantage. I begin by describing the
+value chain and its component parts. Every ﬁrm’s value chain is composed
+of nine generic categories of activities which are linked together in
+characteristic ways. The generic chain is used to demonstrate how a value
+chain can be constructed for a particular ﬁrm, reﬂecting the speciﬁc
+activities it performs. I also show how the activities in a ﬁrm’s value chain
+are linked to each other and to the activities of its suppliers, channels, and
+buyers, and how these linkages affect competitive advantage. I then describe
+how scope of a ﬁrm’s activities affects competitive advantage through its
+impact on the value chain. Subsequent chapters will illustrate in detail how
+the value chain can be used as a strategic tool to analyze relative cost
+
+
+position, differentiation, and the role of competitive scope in achieving
+competitive advantage.
+
+
+Figure 2–1. The Value System
+
+
+The Value Chain
+Every ﬁrm is a collection of activities that are performed to design,
+produce, market, deliver, and support its product. All these activities can be
+represented using a value chain, shown in Figure 2–2. A ﬁrm’s value chain
+and the way it performs individual activities are a reﬂection of its history, its
+strategy, its approach to implementing its strategy, and the underlying
+economics of the activities themselves.1
+The relevant level for constructing a value chain is a ﬁrm’s activities in a
+particular industry (the business unit). An industry- or sector-wide value
+chain is too broad, because it may obscure important sources of competitive
+advantage. Though ﬁrms in the same industry may have similar chains the
+value chains of competitors often differ. People Express and United Airlines
+both compete in the airline industry, for example, but they have very
+different value chains embodying signiﬁcant differences in boarding gate
+operations, crew policies, and aircraft operations. Differences among
+competitor value chains are a key source of competitive advantage. A ﬁrm’s
+value chain in an industry may vary somewhat for different items in its
+product line, or different buyers, geographic areas, or distribution channels.
+The value chains for such subsets of a ﬁrm are closely related, however, and
+can only be understood in the context of the business unit chain.2
+
+
+Figure 2–2. The Generic Value Chain
+
+
+In competitive terms, value is the amount buyers are willing to pay for
+what a ﬁrm provides them. Value is measured by total revenue, a reﬂection
+of the price a ﬁrm’s product commands and the units it can sell. A ﬁrm is
+proﬁtable if the value it commands exceeds the costs involved in creating
+the product. Creating value for buyers that exceeds the cost of doing so is
+the goal of any generic strategy. Value, instead of cost, must be used in
+analyzing competitive position since ﬁrms often deliberately raise their cost
+in order to command a premium price via differentiation.
+The value chain displays total value, and consists of value activities and
+margin. Value activities are the physically and technologically distinct
+activities a ﬁrm performs. These are the building blocks by which a ﬁrm
+creates a product valuable to its buyers. Margin is the difference between
+total value and the collective cost of performing the value activities. Margin
+can be measured in a variety of ways. Supplier and channel value chains
+also include a margin that is important to isolate in understanding the
+sources of a ﬁrm’s cost position, since supplier and channel margin are part
+of the total cost borne by the buyer.
+Every value activity employs purchased inputs, human resources (labor
+and management), and some form of technology to perform its function.
+Each value activity also uses and creates information, such as buyer data
+(order entry), performance parameters (testing), and product failure
+statistics. Value activities may also create ﬁnancial assets such as inventory
+and accounts receivable, or liabilities such as accounts payable.
+Value activities can be divided into two broad types, primary activities
+and support activities. Primary activities, listed along the bottom of Figure
+2–2, are the activities involved in the physical creation of the product and its
+sale and transfer to the buyer as well as after-sale assistance. In any ﬁrm,
+primary activities can be divided into the ﬁve generic categories shown in
+Figure 2–2. Support activities support the primary activities and each other
+by providing purchased inputs, technology, human resources, and various
+ﬁrmwide functions. The dotted lines reﬂect the fact that procurement,
+technology development, and human resource management can be
+associated with speciﬁc primary activities as well as support the entire
+chain. Firm intrastructure is not associated with particular primary activities
+but supports the entire chain.
+
+
+Value activities are therefore the discrete building blocks of competitive
+advantage. How each activity is performed combined with its economics
+will determine whether a ﬁrm is high or low cost relative to competitors.
+How each value activity is performed will also determine its contribution to
+buyer needs and hence differentiation. Comparing the value chains of
+competitors exposes differences that determine competitive advantage.3
+An analysis of the value chain rather than value added is the appropriate
+way to examine competitive advantage. Value added (selling price less the
+cost of purchased raw materials) has sometimes been used as the focal point
+for cost analysis because it was viewed as the area in which a ﬁrm can
+control costs. Value added is not a sound basis for cost analysis, however,
+because it incorrectly distinguishes raw materials from the many other
+purchased inputs used in a ﬁrm’s activities. Also, the cost behavior of
+activities cannot be understood without simultaneously examining the costs
+of the inputs used to perform them. Moreover, value added fails to highlight
+the linkages between a ﬁrm and its suppliers that can reduce cost or enhance
+differentiation.
+Identifying Value Activities
+Identifying value activities requires the isolation of activities that are
+technologically and strategically distinct. Value activities and accounting
+classiﬁcations are rarely the same. Accounting classiﬁcations (e.g., burden,
+overhead, direct labor) group together activities with disparate technologies,
+and separate costs that are all part of the same activity.
+PRIMARY ACTIVITIES
+There are ﬁve generic categories of primary activities involved in
+competing in any industry, as shown in Figure 2–2. Each category is
+divisible into a number of distinct activities that depend on the particular
+industry and ﬁrm strategy:
+•  Inbound Logistics. Activities associated with receiving, storing, and
+disseminating inputs to the product, such as material handling,
+
+
+warehousing, inventory control, vehicle scheduling, and returns to
+suppliers.
+•  Operations. Activities associated with transforming inputs into the
+ﬁnal product form, such as machining, packaging, assembly,
+equipment maintenance, testing, printing, and facility operations.
+• Outbound Logistics. Activities associated with collecting, storing, and
+physically distributing the product to buyers, such as ﬁnished goods
+warehousing, material handling, delivery vehicle operation, order
+processing, and scheduling.
+• Marketing and Sales. Activities associated with providing a means by
+which buyers can purchase the product and inducing them to do so,
+such as advertising, promotion, sales force, quoting, channel selection,
+channel relations, and pricing.
+•  Service. Activities associated with providing service to enhance or
+maintain the value of the product, such as installation, repair, training,
+parts supply, and product adjustment.
+Each of the categories may be vital to competitive advantage depending
+on the industry. For a distributor, inbound and outbound logistics are the
+most critical. For a service ﬁrm providing the service on its premises such
+as a restaurant or retailer, outbound logistics may be largely nonexistant and
+operations the vital category. For a bank engaged in corporate lending,
+marketing and sales are a key to competitive advantage through the
+effectiveness of the calling ofﬁcers and the way in which loans are
+packaged and priced. For a high speed copier manufacturer, service
+represents a key source of competitive advantage. In any ﬁrm, however, all
+the categories of primary activities will be present to some degree and play
+some role in competitive advantage.
+SUPPORT ACTIVITIES
+Support value activities involved in competing in any industry can be
+divided into four generic categories, also shown in Figure 2–2. As with
+primary activities, each category of support activities is divisible into a
+number of distinct value activities that are speciﬁc to a given industry. In
+
+
+technology development, for example, discrete activities might include
+component design, feature design, ﬁeld testing, process engineering, and
+technology selection. Similarly, procurement can be divided into activities
+such as qualifying new suppliers, procurement of different groups of
+purchased inputs, and ongoing monitoring of supplier performance.
+Procurement. Procurement refers to the function of purchasing inputs
+used in the ﬁrm’s value chain, not to the purchased inputs themselves.
+Purchased inputs include raw materials, supplies, and other consumable
+items as well as assets such as machinery, laboratory equipment, ofﬁce
+equipment, and buildings. Though purchased inputs are commonly
+associated with primary activities, purchased inputs are present in every
+value activity including support activities. For example, laboratory supplies
+and independent testing services are common purchased inputs in
+technology development, while an accounting ﬁrm is a common purchased
+input in ﬁrm infrastructure. Like all value activities, procurement employs a
+“technology,” such as procedures for dealing with vendors, qualiﬁcation
+rules, and information systems.
+Procurement tends to be spread throughout a ﬁrm. Some items such as
+raw materials are purchased by the traditional purchasing department, while
+other items are purchased by plant managers (e.g., machines), ofﬁce
+managers (e.g., temporary help), salespersons (e.g., meals and lodging), and
+even the chief executive ofﬁcer (e.g., strategic consulting). I use the term
+procurement rather than purchasing because the usual connotation of
+purchasing is too narrow among managers. The dispersion of the
+procurement function often obscures the magnitude of total purchases, and
+means that many purchases receive little scrutiny.
+A given procurement activity can normally be associated with a speciﬁc
+value activity or activities which it supports, though often a purchasing
+department serves many value activities and purchasing policies apply
+ﬁrmwide. The cost of procurement activities themselves usually represents
+a small if not insigniﬁcant portion of total costs, but often has a large impact
+on the ﬁrm’s overall cost and differentiation. Improved purchasing practices
+can strongly affect the cost and quality of purchased inputs, as well as of
+other activities associated with receiving and using the inputs, and
+interacting with suppliers. In chocolate manufacturing and electric utilities,
+
+
+for example, procurement of cocoa beans and fuel respectively is by far the
+most important determinant of cost position.
+Technology Development. Every value activity embodies technology, be
+it know-how, procedures, or technology embodied in process equipment.
+The array of technologies employed in most ﬁrms is very broad, ranging
+from those technologies used in preparing documents and transporting
+goods to those technologies embodied in the product itself. Moreover, most
+value activities use a technology that combines a number of different
+subtechnologies involving different scientiﬁc disciplines. Machining, for
+example, involves metallurgy, electronics, and mechanics.
+Technology development consists of a range of activities that can be
+broadly grouped into efforts to improve the product and the process. I term
+this category of activities technology development instead of research and
+development because R&D has too narrow a connotation to most managers.
+Technology development tends to be associated with the engineering
+department or the development group. Typically, however, it occurs in many
+parts of a ﬁrm, although this is not explicitly recognized. Technology
+development may support any of the numerous technologies embodied in
+value activities, including such areas as telecommunications technology for
+the order entry system, or ofﬁce automation for the accounting department.
+It does not solely apply to technologies directly linked to the end product.
+Technology development also takes many forms, from basic research and
+product design to media research, process equipment design, and servicing
+procedures. Technology development that is related to the product and its
+features supports the entire chain, while other technology development is
+associated with particular primary or support activities.
+Technology development is important to competitive advantage in all
+industries, holding the key in some. In steel, for example, a ﬁrm’s process
+technology is the single greatest factor in competitive advantage. The
+competitive implications of the array of technologies in the value chain are
+treated in Chapter 5.
+Human Resource Management. Human resource management consists of
+activities involved in the recruiting, hiring, training, development, and
+compensation of all types of personnel. Human resource management
+
+
+supports both individual primary and support activities (e.g., hiring of
+engineers) and the entire value chain (e.g., labor negotiations). Human
+resource management activities occur in different parts of a ﬁrm, as do other
+support activities, and the dispersion of these activities can lead to
+inconsistent policies. Moreover, the cumulative costs of human resource
+management are rarely well understood nor are the tradeoffs in different
+human resource management costs, such as salary compared to the cost of
+recruiting and training due to turnover.
+Human resource management affects competitive advantage in any ﬁrm,
+through its role in determining the skills and motivation of employees and
+the cost of hiring and training. In some industries it holds the key to
+competitive advantage. The world’s leading accounting ﬁrm Arthur
+Andersen, for example, draws a signiﬁcant competitive advantage from its
+approach to recruiting and training its tens of thousands of professional
+staff. Arthur Andersen has bought a former college campus near Chicago,
+and has invested heavily in codifying its practice and regularly bringing
+staff from around the world to its college for training in the ﬁrmwide
+methodology. Having a deeply understood methodology throughout the ﬁrm
+not only makes all engagements more effective but also greatly facilitates
+the servicing of national and multinational clients.
+Firm Infrastructure. Firm infrastructure consists of a number of activities
+including general management, planning, ﬁnance, accounting, legal,
+government affairs, and quality management. Infrastructure, unlike other
+support activities, usually supports the entire chain and not individual
+activities. Depending on whether a ﬁrm is diversiﬁed or not, ﬁrm
+infrastructure may be self-contained or divided between a business unit and
+the parent corporation.4 In diversiﬁed ﬁrms, infrastructure activities are
+typically split between the business unit and corporate levels (e.g., ﬁnancing
+is often done at the corporate level while quality management is done at the
+business unit level). Many infrastructure activities occur at both the business
+unit and corporate levels, however.
+Firm infrastructure is sometimes viewed only as “overhead,” but can be a
+powerful source of competitive advantage. In a telephone operating
+company, for example, negotiating and maintaining ongoing relations with
+regulatory bodies can be among the most important activities for
+
+
+competitive advantage. Similarly, proper management information systems
+can contribute signiﬁcantly to cost position, while in some industries top
+management plays a vital role in dealing with the buyer.
+ACTIVITY TYPES
+Within each category of primary and support activities, there are three
+activity types that play a different role in competitive advantage:
+• Direct. Activities directly involved in creating value for the buyer, such
+as assembly, parts machining, sales force operation, advertising,
+product design, recruiting, etc.
+• Indirect. Activities that make it possible to perform direct activities on
+a continuing basis, such as maintenance, scheduling, operation of
+facilities, sales force administration, research administration, vendor
+record keeping, etc.
+• Quality Assurance. Activities that ensure the quality of other activities,
+such as monitoring, inspecting, testing, reviewing, checking, adjusting,
+and reworking. Quality assurance is not synonymous with quality
+management, because many value activities contribute to quality, as
+will be discussed in Chapter 4.
+Every ﬁrm has direct, indirect, and quality assurance value activities. All
+three types are present not only among primary activities but also among
+support activities. In technology development, for example, actual
+laboratory teams are direct activities, while research administration is an
+indirect activity.
+The role of indirect and quality assurance activities is often not well
+understood, making the distinction among the three activity types an
+important one for diagnosing competitive advantage. In many industries,
+indirect activities represent a large and rapidly growing proportion of cost
+and can play a signiﬁcant role in differentiation through their effect on
+direct activities. Despite this, indirect activities are frequently lumped
+together with direct activities when managers think about their ﬁrms,
+though the two often have very different economics. There are often
+tradeoffs between direct and indirect activities—more spending on
+
+
+maintenance lowers machine costs. Indirect activities are also frequently
+grouped together into “overhead” or “burden” accounts, obscuring their cost
+and contribution to differentiation.
+Quality assurance activities are also prevalent in nearly every part of a
+ﬁrm, though they are seldom recognized as such. Testing and inspection are
+associated with many primary activities. Quality assurance activities outside
+of operations are often less apparent though equally prevalent. The
+cumulative cost of quality assurance activities can be very large, as recent
+attention to the cost of quality has demonstrated. Quality assurance
+activities often affect the cost or effectiveness of other activities, and the
+way other activities are performed in turn affects the need for and types of
+quality assurance activities. The possibility of simplifying or eliminating the
+need for quality assurance activities through performing other activities
+better is at the root of the notion that quality can be “free.”
+Deﬁning the Value Chain
+To diagnose competitive advantage, it is necessary to deﬁne a ﬁrm’s
+value chain for competing in a particular industry. Starting with the generic
+chain, individual value activities are identiﬁed in the particular ﬁrm. Each
+generic category can be divided into discrete activities, as illustrated for one
+generic category in Figure 2–3. An example of a complete value chain is
+shown in Figure 2–4, the value chain of a copier manufacturer.
+Deﬁning relevant value activities requires that activities with discrete
+technologies and economics be isolated. Broad functions such as
+manufacturing or marketing must be subdivided into activities. The product
+ﬂow, order ﬂow or paper ﬂow can be useful in doing so. Subdividing
+activities can proceed to the level of increasingly narrow activities that are
+to some degree discrete. Every machine in a factory, for example, could be
+treated as a separate activity. Thus the number of potential activities is often
+quite large.
+The appropriate degree of disaggregation depends on the economics of
+the activities and the purposes for which the value chain is being analyzed.
+Though I will return to this question in later chapters, the basic principle is
+that activities should be isolated and separated that (1) have different
+
+
+economics, (2) have a high potential impact of differentiation, or (3)
+represent a signiﬁcant or growing proportion of cost. In using the value
+chain, successively ﬁner disaggregations of some activities are made as the
+analysis exposes differences important to competitive advantage; other
+activities are combined because they prove to be unimportant to competitive
+advantage or are governed by similar economics.
+Selecting the appropriate category in which to put an activity may
+require judgment and can be illuminating in its own right. Order processing,
+for example, could be classiﬁed as part of outbound logistics or as part of
+marketing. In a distributor, the role of order processing is more a marketing
+function. Similarly, the sales force often performs service functions. Value
+activities should be assigned to categories that best represent their
+contribution to a ﬁrm’s competitive advantage. If order processing is an
+important way in which a ﬁrm interacts with its buyers, for example, it
+should be classiﬁed under marketing. Similarly, if inbound material
+handling and outbound material handling use the same facilities and
+personnel, then both should probably be combined into one value activity
+and classiﬁed wherever the function has the greatest competitive impact.
+Firms have often gained competitive advantage by redeﬁning the roles of
+traditional activities—Vetco, an oil ﬁeld equipment supplier, uses customer
+training as a marketing tool and a way to build switching costs, for example.
+
+
+Figure 2–3. Subdividing a Generic Value Chain
+
+
+Figure 2–4. Value Chain for a Copier Manufacturer
+
+
+Everything a ﬁrm does should be captured in a primary or support
+activity. Value activity labels are arbitrary and should be chosen to provide
+the best insight into the business. Labeling activities in service industries
+often causes confusion because operations, marketing, and after-sale
+support are often closely tied. Ordering of activities should broadly follow
+the process ﬂow, but ordering is judgmental as well. Often ﬁrms perform
+parallel activities, whose order should be chosen to enhance the intuitive
+clarity of the value chain to managers.
+Linkages within the Value Chain
+Although value activities are the building blocks of competitive
+advantage, the value chain is not a collection of independent activities but a
+system of interdependent activities. Value activities are related by linkages
+within the value chain. Linkages are relationships between the way one
+value activity is performed and the cost or performance of another. For
+example, purchasing high-quality, precut steel sheets can simplify
+manufacturing and reduce scrap. In a fast food chain, the timing of
+promotional campaigns can inﬂuence capacity utilization. Competitive
+advantage frequently derives from linkages among activities just as it does
+from the individual activities themselves.
+Linkages can lead to competitive advantage in two ways: optimization
+and coordination. Linkages often reﬂect tradeoffs among activities to
+achieve the same overall result. For example, a more costly product design,
+more stringent materials speciﬁcations, or greater in-process inspection may
+reduce service costs. A ﬁrm must optimize such linkages reﬂecting its
+strategy in order to achieve competitive advantage.
+Linkages may also reﬂect the need to coordinate activities. On-time
+delivery, for example, may require coordination of activities in operations,
+outbound logistics, and service (e.g., installation). The ability to coordinate
+linkages often reduces cost or enhances differentiation. Better coordination,
+for example, can reduce the need for inveninventory throughout the ﬁrm.
+Linkages imply that a ﬁrm’s cost or differentiation is not merely the result
+of efforts to reduce cost or improve performance in each value activity
+individually. Much of the recent change in philosophy towards
+
+
+manufacturing and towards quality—strongly inﬂuenced by Japanese
+practice—is a recognition of the importance of linkages.
+Linkages are numerous, and some are common to many ﬁrms. The most
+obvious linkages are those between support activities and primary activities
+represented by the dotted lines on the generic value chain. Product design
+usually affects the manufacturing cost of a product, for example, while
+procurement practices often affect the quality of purchased inputs and hence
+production costs, inspection costs, and product quality. More subtle
+linkages are those between primary activities. For example, enhanced
+inspection of incoming parts may reduce quality assurance costs later in the
+production process, while better maintenance often reduces the downtime of
+a machine. An interactive order entry system may reduce salesperson time
+required per buyer because salespersons can place orders faster and are
+freed from the need to follow up on inquiries and problems. More thorough
+inspection of ﬁnished goods often improves the reliability of products in the
+ﬁeld, reducing servicing costs. Finally, frequent deliveries to buyers may
+reduce inventory and accounts receivable. Linkages that involve activities in
+different categories or of different types are often the most difﬁcult to
+recognize.
+Linkages among value activities arise from a number of generic causes,
+among them the following:
+• The same function can be performed in different ways. For example,
+conformance to speciﬁcations can be achieved through high quality
+purchased inputs, specifying close tolerances in the manufacturing
+process, or 100 percent inspection of ﬁnished goods.
+•  The cost or performance of direct activities is improved by greater
+efforts in indirect activities. For example, better scheduling (an indirect
+activity) reduces sales force travel time or delivery vehicle time (direct
+activities); or better maintenance improves the tolerances achieved by
+machines.
+•  Activities performed inside a ﬁrm reduce the need to demonstrate,
+explain, or service a product in the ﬁeld. For example, 100 percent
+inspection can substantially reduce service costs in the ﬁeld.
+
+
+• Quality assurance functions can be performed in different ways. For
+example, incoming inspection is a substitute for ﬁnished goods
+inspection.
+Though linkages within the value chain are crucial to competitive
+advantage, they are often subtle and go unrecognized. The importance of
+procurement in affecting manufacturing cost and quality may not be
+obvious, for example. Nor is the link between order processing,
+manufacturing scheduling practices, and sales force utilization. Identifying
+linkages is a process of searching for ways in which each value activity
+affects or is affected by others. The generic causes of linkages discussed
+above provide a starting point. The disaggregation of procurement and
+technology development to relate them to speciﬁc primary activities also
+helps to highlight linkages between support and primary activities.
+Exploiting linkages usually requires information or information ﬂows
+that allow optimization or coordination to take place. Thus, information
+systems are often vital to gaining competitive advantages from linkages.
+Recent developments in information systems technology are creating new
+linkages and increasing the ability to achieve old ones. Exploiting linkages
+also frequently requires optimization or coordination that cuts across
+conventional organizational lines. Higher costs in the manufacturing
+organization, for example, may result in lower costs in the sales or service
+organization. Such tradeoffs may not be measured in a ﬁrm’s information
+and control systems. Managing linkages thus is a more complex
+organizational task than managing value activities themselves. Given the
+difﬁculty of recognizing and managing linkages, the ability to do so often
+yields a sustainable source of competitive advantage. The speciﬁc role of
+linkages in cost and differentiation will be discussed in more detail in
+Chapters 3 and 4.
+Vertical Linkages
+Linkages exist not only within a ﬁrm’s value chain but between a ﬁrm’s
+chain and the value chains of suppliers and channels. These linkages, which
+I term vertical linkages, are similar to the linkages within the value chain—
+
+
+the way supplier or channel activities are performed affects the cost or
+performance of a ﬁrm’s activities (and vice versa). Suppliers produce a
+product or service that a ﬁrm employs in its value chain, and suppliers’
+value chains also inﬂuence the ﬁrm at other contact points. A ﬁrm’s
+procurement and inbound logistics activities interact with a supplier’s order
+entry system, for example, while a supplier’s applications engineering staff
+works with a ﬁrm’s technology development and manufacturing activities.
+A supplier’s product characteristics as well as its other contact points with a
+ﬁrm’s value chain can signiﬁcantly affect a ﬁrm’s cost and differentiation.
+For example, frequent supplier shipments can reduce a ﬁrm’s inventory
+needs, appropriate packaging of supplier products can lower handling cost,
+and supplier inspection can remove the need for incoming inspection by a
+ﬁrm.
+The linkages between suppliers’ value chains and a ﬁrm’s value chain
+provide opportunities for the ﬁrm to enhance its competitive advantage. It is
+often possible to beneﬁt both the ﬁrm and suppliers by inﬂuencing the
+conﬁguration of suppliers’ value chains to jointly optimize the performance
+of activities, or by improving coordination between a ﬁrm’s and suppliers’
+chains. Supplier linkages mean that the relationship with suppliers is not a
+zero sum game in which one gains only at the expense of the other, but a
+relationship in which both can gain. By agreeing to deliver bulk chocolate
+to a confectionery producer in tank cars instead of solid bars, for example,
+an industrial chocolate ﬁrm saves the cost of molding and packaging while
+the confectionery manufacturer lowers the cost of in-bound handling and
+melting. The division of the beneﬁts of coordinating or optimizing linkages
+between a ﬁrm and its suppliers is a function of suppliers’ bargaining power
+and is reﬂected in suppliers’ margins. Supplier bargaining power is partly
+structural and partly a function of a ﬁrm’s purchasing practices.5 Thus both
+coordination with suppliers and hard bargaining to capture the spoils are
+important to competitive advantage. One without the other results in missed
+opportunities.
+Channel linkages are similar to supplier linkages. Channels have value
+chains through which a ﬁrm’s product passes. The channel markup over a
+ﬁrm’s selling price (which I term channel value) often represents a large
+proportion of the selling price to the end user—it represents as much as 50
+percent or more of selling price to the end user in many consumer goods,
+
+
+such as wine. Channels perform such activities as sales, advertising, and
+display that may substitute for or complement the ﬁrm’s activities. There
+are also multiple points of contact between a ﬁrm’s and channels’ value
+chains in activities such as the sales force, order entry, and outbound
+logistics. As with supplier linkages, coordinating and jointly optimizing
+with channels can lower cost or enhance differentiation. The same issues
+that existed with suppliers in dividing the gains of coordination and joint
+optimization also exist with channels.
+Vertical linkages, like linkages within a ﬁrm’s value chain, are frequently
+overlooked. Even if they are recognized, independent ownership of
+suppliers or channels or a history of an adversary relationship can impede
+the coordination and joint optimization required to exploit vertical linkages.
+Sometimes vertical linkages are easier to achieve with coalition partners or
+sister business units than with independent ﬁrms, though even this is not
+assured. As with linkages within the value chain, exploiting vertical
+linkages requires information and modern information systems are creating
+many new possibilities. I will discuss the role of supplier and channel
+linkages in competitive advantage more fully in Chapters 3 and 4.
+The Buyer’s Value Chain
+Buyers also have value chains, and a ﬁrm’s product represents a
+purchased input to the buyer’s chain. Understanding the value chains of
+industrial, commercial, and institutional buyers is intuitively easy because
+of their similarities to that of a ﬁrm. Understanding households’ value
+chains is less intuitive, but nevertheless important. Households (and the
+individual consumers within them) engage in a wide range of activities, and
+products purchased by households are used in conjunction with this stream
+of activities. A car is used for the trip to work and for shopping and leisure,
+while a food product is consumed as part of the process of preparing and
+eating meals. Though it is quite difﬁcult to construct a value chain that
+encompasses everything a household and its occupants do, it is quite
+possible to construct a chain for those activities that are relevant to how a
+particular product is used. Chains need not be constructed for every
+household, but chains for representative households can provide an
+
+
+important tool for use in differentiation analysis, to be discussed in more
+detail in Chapter 4.
+A ﬁrm’s differentiation stems from how its value chain relates to its
+buyer’s chain. This is a function of the way a ﬁrm’s physical product is used
+in the particular buyer activity in which it is consumed (e.g., a machine used
+in the assembly process) as well as all the other points of contact between a
+ﬁrm’s value chain and the buyer’s chain. Many of a ﬁrm’s activities interact
+with some buyer activities. In optoelectronic parts, for example, a ﬁrm’s
+product is assembled into the buyer’s equipment—an obvious point of
+contact—but the ﬁrm also works closely with the buyer in designing the
+part, providing ongoing technical assistance, troubleshooting, order
+processing, and delivery. Each of these contact points is a potential source
+of differentiation. “Quality” is too narrow a view of what makes a ﬁrm
+unique, because it focuses attention on the product rather than the broader
+array of value activities that impact the buyer.
+Differentiation, then, derives fundamentally from creating value for the
+buyer through a ﬁrm’s impact on the buyer’s value chain. Value is created
+when a ﬁrm creates competitive advantage for its buyer—lowers its buyer’s
+cost or raises its buyer’s performance.6 The value created for the buyer must
+be perceived by the buyer if it is to be rewarded with a premium price,
+however, which means that ﬁrms must communicate their value to buyers
+through such means as advertising and the sales force. How this value is
+divided between the ﬁrm (a premium price) and the buyer (higher proﬁts or
+more satisfaction for the money) is reﬂected in a ﬁrm’s margin, and is a
+function of industry structure. The relationship between the buyer’s value
+chain and the ﬁrm’s value chain in creating and sustaining differentiation
+will be described in detail in Chapter 4.7
+Competitive Scope and the Value Chain
+Competitive scope can have a powerful effect on competitive advantage,
+because it shapes the conﬁguration and economics of the value chain. There
+are four dimensions of scope that affect the value chain:8
+• Segment Scope. The product varieties produced and buyers served.
+
+
+• Vertical Scope. The extent to which activities are performed in-house
+instead of by independent ﬁrms.
+•  Geographic Scope. The range of regions, countries, or groups of
+countries in which a ﬁrm competes with a coordinated strategy.
+•  Industry Scope. The range of related industries in which the ﬁrm
+competes with a coordinated strategy.
+Broad scope can allow a ﬁrm to exploit the beneﬁts of performing more
+activities internally. It may also allow the ﬁrm to exploit interrelationships
+between the value chains that serve different segments, geographic areas or
+related industries.9 For example, a shared sales force may sell the products
+of two business units, or a common brand name may be employed
+worldwide. Sharing and integration have costs, however, that may nullify
+their beneﬁts.
+Narrow scope can allow the tailoring of the chain to serve a particular
+target segment, geographic area or industry to achieve lower cost or to serve
+the target in a unique way. Narrow scope in integration may also improve
+competitive advantage through the ﬁrm’s purchasing activities that
+independent ﬁrms perform better or cheaper. The competitive advantage of
+a narrow scope rests on differences among product varieties, buyers, or
+geographic regions within an industry in terms of the value chain best suited
+to serve them, or on differences in resources and skills of independent ﬁrms
+that allow them to perform activities better.
+The breadth or narrowness of scope is clearly relative to competitors. In
+some industries, a broad scope involves only serving the full range of
+product and buyer segments within the industry. In others, it may require
+both vertical integration and competing in related industries. Since there are
+many ways to segment an industry and multiple forms of interrelationships
+and integration, broad and narrow scope can be combined. A ﬁrm may
+create competitive advantage by tuning its value chain to one product
+segment and exploiting geographic interrelationships by serving that
+segment worldwide. It may also exploit interrelationships with business
+units in related industries. I will discuss these possibilities in more detail in
+Chapter 15.
+
+
+Segment Scope
+Differences in the needs or value chains required to serve different
+product or buyer segments can lead to a competitive advantage of focusing.
+For example, the value chain required to serve sophisticated minicomputer
+buyers with in-house servicing capabilities is different from that required to
+serve small business users. They need extensive sales assistance, less
+demanding hardware performance, user-friendly software, and service
+capability.
+Just as differences among segments favor narrow scope, however,
+interrelationships between the value chains serving different segments favor
+broad scope. General Motors’ value chain for large cars is different from
+that for small cars, for example, but many value activities are shared. This
+creates a tension between tailoring the value chain to a segment and sharing
+it among segments. This tension is fundamental to industry segmentation
+and to the choice of focus strategies, the subject of Chapter 7.
+Vertical Scope
+Vertical integration deﬁnes the division of activities between a ﬁrm and
+its suppliers, channels, and buyers. A ﬁrm may purchase components rather
+than fabricate them itself, for example, or contract for service rather than
+maintain a service organization. Similarly, channels may perform many
+distribution, service, and marketing functions instead of a ﬁrm. A ﬁrm and
+its buyers can also divide activities in differing ways. One way a ﬁrm may
+be able to differentiate itself is by assuming a greater number of buyer
+activities. In the extreme case, a ﬁrm completely enters the buyer’s industry.
+When one views the issue of integration from the perspective of the
+value chain, it becomes apparent that opportunities for integration are richer
+than is often recognized. Vertical integration tends to be viewed in terms of
+physical products and replacing whole supplier relationships rather than in
+terms of activities, but it can encompass both. For example, a ﬁrm may rely
+on a supplier’s applications engineering and service capability, or it may
+perform these activities internally. Thus there are many options regarding
+
+
+what value activities a ﬁrm performs internally and what value activities it
+purchases. The same principles apply to channel and buyer integration.
+Whether or not integration (or de-integration) lowers cost or enhances
+differentiation depends on the ﬁrm and the activity involved. I have
+discussed the factors that bear on this question in Competitive Strategy. The
+value chain allows a ﬁrm to identify more clearly the potential beneﬁts of
+integration by highlighting the role of vertical linkages. The exploitation of
+vertical linkages does not require vertical integration, but integration may
+sometimes allow the beneﬁts of vertical linkages to be achieved more easily.
+Geographic Scope
+Geographic scope may allow a ﬁrm to share or coordinate value
+activities used to serve different geographic areas. Canon develops and
+manufactures copiers primarily in Japan, for example, but sells and services
+them separately in many countries. Canon gains a cost advantage from
+sharing technology development and manufacturing instead of performing
+these activities in each country. Interrelationships are also common among
+partially distinct value chains serving geographic regions in a single
+country. For example, food service distributors such as Monarch and SISCO
+have many largely distinct operating units in major metropolitan areas that
+share ﬁrm infrastructure, procurement, and other support value activities.
+Geographic interrelationships can enhance competitive advantage if
+sharing or coordinating value activities lowers cost or enhances
+differentiation. There may be costs of coordination as well as differences
+among regions or countries that reduce the advantage of sharing, however.
+The sources of competitive advantage from a global strategy and the
+impediments to employing one are discussed in Competitive Strategy and
+elsewhere.10 The same principles apply to national or regional coordination
+of value chains.
+Industry Scope
+Potential interrelationships among the value chains required to compete
+in related industries are widespread. They can involve any value activity,
+
+
+including both primary (e.g., a shared service organization) and support
+activities (e.g., joint technology development or shared procurement of
+common inputs). Interrelationships among business units are similar in
+concept to geographic interrelationships among value chains.
+Interrelationships among business units can have a powerful inﬂuence on
+competitive advantage, either by lowering cost or enhancing differentiation.
+A shared logistical system may allow a ﬁrm to reap economies of scale, for
+example, while a shared sales force offering related products can improve
+the salesperson’s effectiveness with the buyer and thereby enhance
+differentiation. All interrelationships do not lead to competitive advantage.
+Not all activities beneﬁt from sharing. There are also always costs of
+sharing activities that must be offset against the beneﬁts, because the needs
+of different business units may not be the same with respect to a value
+activity. I will describe interrelationships among business units and their
+implications for both corporate and business unit strategy in Chapters 9–11.
+Coalitions and Scope
+A ﬁrm can pursue the beneﬁts of a broader scope internally, or enter into
+coalitions with independent ﬁrms to achieve some or all of the same
+beneﬁts. Coalitions are long-term agreements among ﬁrms that go beyond
+normal market transactions but fall short of outright mergers. Examples of
+coalitions include technology licenses, supply agreements, marketing
+agreements, and joint ventures. Coalitions are ways of broadening scope
+without broadening the ﬁrm, by contracting with an independent ﬁrm to
+perform value activities (e.g., a supply agreement) or teaming up with an
+independent ﬁrm to share activities (e.g., a marketing joint venture). Thus
+there are two basic types of coalition—vertical coalitions and horizontal
+coalitions.
+Coalitions can allow sharing of activities without the need to enter new
+industry segments, geographic areas, or related industries. Coalitions are
+also a means of gaining the cost or differentiation advantages of vertical
+linkages without actual integration, but overcoming the difﬁculties of
+coordination among purely independent ﬁrms. Because coalitions involve
+long-term relationships, it should be possible to coordinate more closely
+
+
+with a coalition partner than with an independent ﬁrm, though not without
+some cost. Difﬁculties in reaching coalition agreements and in ongoing
+coordination among partners may block coalitions or nullify their beneﬁts.
+Coalition partners remain independent ﬁrms and there is the question of
+how the beneﬁts of a coalition are to be divided. The relative bargaining
+power of each coalition partner is thus central to how the gains are shared,
+and determines impact of the coalition on a ﬁrm’s competitive advantage. A
+strong coalition partner may appropriate all the gains of a shared marketing
+organization through the terms of the agreement, for example. The role of
+coalitions in competitive advantage is discussed in my book on global
+strategy, because they are particularly prevalent in international
+competition.11
+Competitive Scope and Business Deﬁnition
+The relationship between competitive scope and the value chain provides
+the basis for deﬁning relevant business unit boundaries. Strategically
+distinct business units are isolated by weighing the beneﬁts of integration
+and de-integration and by comparing the strength of interrelationships in
+serving related segments, geographic areas, or industries to the differences
+in the value chains best suited for serving them separately. If differences in
+geographic areas or product and buyer segments require very distinct value
+chains, then segments deﬁne business units. Conversely, strong and
+widespread 
+beneﬁts 
+of 
+integration 
+or 
+geographic 
+or 
+industry
+interrelationships widen the relevant boundaries of business units. Strong
+advantages to vertical integration widen the boundaries of a business unit to
+encompass upstream or downstream activities, while weak advantages to
+integration imply that each stage is a distinct business unit. Similarly, strong
+advantages to worldwide coordination of the value chains imply that the
+relevant business unit is global, while strong country or regional differences
+necessitating largely distinct chains imply narrower geographic business
+unit boundaries. Finally, strong interrelationships between one business unit
+and another may imply that they should merge into one. Appropriate
+business units can be deﬁned, then, by understanding the optimal value
+chain for competing in different arenas and how the chains are related. I
+
+
+will return to this issue after the principles of industry segmentation have
+been discussed in Chapter 7.
+The Value Chain and Industry Structure
+Industry structure both shapes the value chain of a ﬁrm and is a reﬂection
+of the collective value chains of competitors. Structure determines the
+bargaining relationships with buyers and suppliers that is reﬂected in both
+the conﬁguration of a ﬁrm’s value chain and how margins are divided with
+buyers, suppliers, and coalition partners. The threat of substitution to an
+industry inﬂuences the value activities desired by buyers. Entry barriers
+bear on the sustainability of various value chain conﬁgurations.
+The array of competitor value chains is, in turn, the basis for many
+elements of industry structure. Scale economies and proprietary learning,
+for example, stem from the technology employed in competitors’ value
+chains. Capital requirements for competing in an industry are the result of
+the collective capital required in the chain. Similarly, industry product
+differentiation stems from the way ﬁrms’ products are used in buyers’ value
+chains. Thus many elements of industry structure can be diagnosed by
+analyzing the value chains of competitors in an industry.
+The Value Chain and Organizational Structure
+The value chain is a basic tool for diagnosing competitive advantage and
+ﬁnding ways to create and sustain it, the subject that will dominate the
+chapters that follow. However, the value chain can also play a valuable role
+in designing organizational structure. Organizational structure groups
+certain activities together under organizational units such as marketing or
+production. The logic of those groupings is that activities have similarities
+that should be exploited by putting them together in a department; at the
+same time, departments are separated from other groups of activities
+because of their differences. This separation of like activities is what
+organizational 
+theorists 
+call 
+“differentiation.” 
+With 
+separation 
+of
+organizational units comes the need to coordinate them, usually termed
+“integration.” Thus integrating mechanisms must be established in a ﬁrm to
+
+
+ensure that the required coordination takes place. Organizational structure
+balances the beneﬁts of separation and integration.12
+The value chain provides a systematic way to divide a ﬁrm into its
+discrete activities, and thus can be used to examine how the activities in a
+ﬁrm are and could be grouped. Figure 2–5 shows a value chain with a
+typical organizational structure superimposed. Organizational boundaries
+are often not drawn around the groups of activities that are most similar in
+economic terms. Moreover, organizational units such as the purchasing and
+R&D departments frequently contain only a fraction of the similar activities
+being performed in a ﬁrm.
+The need for integration among organizational units is a manifestation of
+linkages. There are often many linkages within the value chain, and
+organizational structure often fails to provide mechanisms to coordinate or
+optimize them. The information necessary for coordinating or optimizing
+linkages is also rarely collected throughout the chain. Managers of support
+activities such as human resource management and technology development
+often do not have a clear view of how they relate to the ﬁrm’s overall
+competitive position, something the value chain highlights. Finally, vertical
+linkages are often not well provided for in organizational structure.
+
+
+Figure 2–5. Organizational Structure and the Value Chain
+
+
+A ﬁrm may be able to draw unit boundaries more in tune with its sources
+of competitive advantage and provide for the appropriate types of
+coordination by relating its organizational structure to the value chain, and
+the linkages within it and with suppliers or channels. An organizational
+structure that corresponds to the value chain will improve a ﬁrm’s ability to
+create and sustain competitive advantage. While this subject cannot be
+treated in detail here, it remains an important issue in the implementation of
+strategy.
+
+
+3
+Cost Advantage
+Cost advantage is one of the two types of competitive advantage a ﬁrm may
+possess. Cost is also of vital importance to differentiation strategies because
+a differentiator must maintain cost proximity to competitors. Unless the
+resulting price premium exceeds the cost of differentiating, a differentiator
+will fail to achieve superior performance. The behavior of cost also exerts a
+strong inﬂuence on overall industry structure.
+Managers recognize the importance of cost, and many strategic plans
+establish “cost leadership” or “cost reduction” as goals. However, the
+behavior of cost is rarely well understood. Wide disagreement often exists
+among managers about a ﬁrm’s relative cost position and the reasons
+underlying it. Cost studies tend to concentrate on manufacturing costs and
+overlook the impact of other activities such as marketing, service, and
+infrastructure on relative cost position. Moreover, the cost of individual
+activities is analyzed sequentially, without recognizing the linkages among
+activities that can affect cost. Finally, ﬁrms have great difﬁculty assessing
+the cost positions of competitors, an essential step in assessing their own
+relative positions. They often resort to simplistic comparisons of labor rates
+and raw material costs.
+This chapter has beneﬁted from joint work with John R. Wells.
+The absence of a systematic framework for cost analysis in most ﬁrms
+underlies these problems. Most cost studies address narrow issues and take
+a short-term viewpoint. Popular tools like the experience curve are often
+misused in cost analysis. The experience curve can serve as a starting point,

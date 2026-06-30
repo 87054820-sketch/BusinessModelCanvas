@@ -1,0 +1,33 @@
+{
+  "chapter": "ch04-strategy",
+  "sourceFiles": { "en": "07-Strategy.txt", "zh": "09-战略.txt" },
+  "concepts": [
+    { "name": "Business Model Environment", "definition": "A framework for mapping the external context in which a business model operates. Four areas: Market Forces (market segments, needs, switching costs, revenue attractiveness), Industry Forces (competitors, new entrants, substitutes, suppliers, stakeholders), Key Trends (technology, regulatory, societal, socioeconomic), and Macroeconomic Forces (global market conditions, capital markets, commodities, economic infrastructure)." },
+    { "name": "Evaluating Business Models", "definition": "A structured assessment combining SWOT analysis of each building block with forward-looking questions. Two perspectives: overall assessment (SWOT of the entire model) and building-block assessment (SWOT of each of the nine blocks). Evaluating threats and opportunities systematically." },
+    { "name": "Blue Ocean Strategy Integration", "definition": "Applying Kim and Mauborgne's Blue Ocean framework to business model design: (1) Value Innovation — creating new value that makes competition irrelevant rather than beating competitors, (2) Four Actions Framework — eliminate/reduce/raise/create, (3) exploring non-customer groups to unlock new demand." },
+    { "name": "Managing Multiple Business Models", "definition": "Operating more than one business model simultaneously within the same organization. Key challenge: conflicts between models (different cost structures, customer segments, cultures). Solutions: separate business units with their own P&L, or phased integration where one model transitions to the next." }
+  ],
+  "arguments": [
+    { "claim": "A great business model in a declining environment may fail; a mediocre model in a rising environment may succeed. Context matters enormously.", "evidence": "The Business Model Environment framework formalizes this by making external forces explicit and mappable. Before committing to a model, map the environment and check for tailwinds and headwinds." },
+    { "claim": "Evaluating business models requires looking beyond financial projections to structural and competitive logic", "evidence": "A good evaluation asks: Are the building blocks mutually reinforcing? Is the model hard to copy? Does it have network effects, switching costs, or other moats? Financial projections are the output of a good model, not the input to evaluating one." }
+  ],
+  "cases": [
+    { "name": "Southwest Airlines: Environment + Blue Ocean", "context": "Southwest created a new business model in the crowded US airline market by eliminating, reducing, raising, and creating elements compared to traditional carriers.", "illustrates": "How the Four Actions Framework maps directly to business model innovation. Southwest ELIMINATED meals, lounges, seat choices; REDUCED ticket prices; RAISED frequency and friendly service; CREATED point-to-point routes and standardized fleet. The result was a structurally different cost structure and value proposition.", "lesson": "Blue Ocean is not 'being different for the sake of different.' It's making deliberate, simultaneous choices on what to eliminate-reduce-raise-create that taken together create a new value curve." }
+  ],
+  "terminology": [
+    { "term": "SWOT", "definition": "Strengths, Weaknesses, Opportunities, Threats — a strategic assessment framework. In BMC, applied to each building block plus the overall model." },
+    { "term": "Value Innovation", "definition": "The simultaneous pursuit of differentiation and low cost, creating a leap in value for both buyers and the company. The cornerstone of Blue Ocean Strategy." },
+    { "term": "Four Actions Framework", "definition": "A tool to reconstruct buyer value elements by asking four questions: Which factors should be eliminated? Reduced? Raised? Created?" }
+  ],
+  "nuance": [
+    "Managing multiple business models is the hardest strategic challenge. Most organizations kill the new model before it can prove itself, because it looks 'small' and 'unprofitable' next to the core business.",
+    "The Environment framework is a thinking tool, not a prediction tool. It surfaces what to monitor, not what will happen."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["business-model-canvas", "business-model-environment", "portfolio-map"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-canvas", "ch05-process"]
+  }
+}

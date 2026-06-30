@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "ch01-intro",
+    "order": 1,
+    "title": { "en": "Welcome to the Platform Revolution", "zh": "欢迎来到平台革命" },
+    "summary": {
+      "en": "Parker, Van Alstyne, and Choudary's 2016 synthesis of platform economics for practitioners. The core thesis: pipelines (linear value chains: make → sell) are being displaced by platforms (networked value creation: connect → exchange). Platforms don't own the means of production — they own the means of connection. Key distinction: platform value comes from community interactions, not from internal resource control. Examples: Uber owns no cars, Airbnb owns no rooms, Alibaba owns no inventory.",
+      "zh": "Parker、Van Alstyne 和 Choudary 2016 年为实践者做的平台经济学整合。核心论点：管道（线性价值链：制造→销售）正在被平台（网络化价值创造：连接→交换）所取代。平台不拥有生产资料——它拥有连接的手段。关键区别：平台价值来自社群互动，而非内部资源控制。例子：Uber 不拥有车、Airbnb 不拥有房、阿里巴巴不拥有库存。"
+    },
+    "relatedPatternSlugs": ["multi-sided-platforms"],
+    "relatedStrategyFrameworkSlugs": ["platform-strategy"],
+    "relatedCanvasDefIds": ["platform-ecosystem-map"]
+  },
+  {
+    "slug": "ch02-network",
+    "order": 2,
+    "title": { "en": "Network Effects: The Engine of Platform Growth", "zh": "网络效应：平台增长的引擎" },
+    "summary": {
+      "en": "Network effects are the new economies of scale. Same-side effects (more users on one side benefit other users on that side — e.g. messaging) vs. cross-side effects (more users on one side attract users on the other side — e.g. more riders attract more drivers on Uber). The four types: direct, indirect, data network effects, and two-sided network effects. The chapter also covers negative network effects (congestion, pollution, curation failure) and the differences between frictionless virality and value-creating network effects.",
+      "zh": "网络效应是新的规模经济。同边效应（一边的用户越多对该边用户越有利——如即时通讯） vs. 跨边效应（一边用户越多吸引另一边用户更多——如 Uber 乘客越多吸引的司机越多）。四种类型：直接、间接、数据网络效应和双边网络效应。本章还涵盖负面网络效应（拥堵、污染、策展失败），以及无摩擦病毒传播与创造价值的网络效应之间的区别。"
+    },
+    "relatedPatternSlugs": ["multi-sided-platforms"],
+    "relatedCanvasDefIds": ["platform-ecosystem-map"]
+  },
+  {
+    "slug": "ch03-architecture",
+    "order": 3,
+    "title": { "en": "Platform Architecture: Designing the Core Interaction", "zh": "平台架构：设计核心交互" },
+    "summary": {
+      "en": "Every platform resolves around one core interaction — the single most important exchange of value on the platform. Three elements of the core interaction: participants (producers + consumers of value), the value unit (what is created and exchanged — a ride, a room, a product listing, a video), and the filter (the mechanism that matches value units to consumers — search, recommendation, curation). The platform's job is to enable this interaction at scale: pull (attract participants), facilitate (make exchange easy), and match (connect the right value units to the right consumers).",
+      "zh": "每个平台都围绕一个核心交互运作——平台上最重要的价值交换。核心交互的三个要素：参与者（价值的创造者+消费者）、价值单元（被创造和交换的是什么——一趟车程、一个房间、一个产品 listing、一个视频）和过滤器（将价值单元匹配给消费者的机制——搜索、推荐、策展）。平台的工作是大规模地赋能这种交互：拉人（吸引参与者）、助力（让交换简单）、匹配（将合适的价值单元连到合适的消费者）。"
+    },
+    "relatedCanvasDefIds": ["platform-ecosystem-map", "value-proposition-canvas"]
+  },
+  {
+    "slug": "ch04-launch",
+    "order": 4,
+    "title": { "en": "Launch and Monetization: Solving the Chicken-and-Egg Problem", "zh": "启动和变现：解决先有鸡还是先有蛋" },
+    "summary": {
+      "en": "The hardest problem in platform strategy: you need producers to attract consumers, but producers won't come without consumers. Launch strategies: follow-the-rabbit (use a non-platform feature to attract one side), piggyback (connect to an existing user base from another platform), seeding (create value units yourself until critical mass), marquee (bring a high-profile 'anchor' participant), single-side (build tools for one side first, then open the second side), micromarket (start in a tiny niche where network effects are immediately visible). Monetization: who pays? The side with lower price sensitivity, higher willingness to pay for access to the other side.",
+      "zh": "平台战略中最难的问题：你需要生产者吸引消费者，但没有消费者生产者不会来。启动策略：跟着兔子走（用非平台功能吸引一边）、搭便车（接入另一平台的已有用户群）、播种（自己创造价值单元直到临界规模）、招牌（引入高知名度的「锚」参与者）、单边（先为一侧打造工具，再开放另一侧）、微市场（从一个网络效应立即可见的小切口起步）。变现：谁付钱？价格敏感度更低、为获取另一侧而愿意付费的那一边。"
+    },
+    "relatedCanvasDefIds": ["platform-ecosystem-map"],
+    "relatedCaseSlugs": ["udemy", "aliexpress", "airbnb"]
+  },
+  {
+    "slug": "ch05-governance",
+    "order": 5,
+    "title": { "en": "Governance: Rules That Shape Platform Behavior", "zh": "治理：塑造平台行为的规则" },
+    "summary": {
+      "en": "Platform governance is the set of rules about who can participate, how they interact, and what happens when things go wrong. Good governance increases the quality of interactions and reduces negative externalities; bad governance (or no governance) leads to market-for-lemons dynamics. Three levers: access (who can join), interaction rules (what behaviors are encouraged or prohibited), and dispute resolution (how conflicts are settled). Curation — actively managing the quality of value units — is the most undervalued governance tool. Examples of governance failure: fake reviews on Amazon, trolling on early Twitter, safety issues on early Craigslist.",
+      "zh": "平台治理是一套关于谁能参与、怎么互动、出问题怎么办的规则。好的治理提高交互质量、减少负外部性；坏的治理（或没治理）导致柠檬市场动态。三个杠杆：准入（谁能加入）、交互规则（鼓励和禁止什么行为）、争议解决（冲突怎么处理）。策展——主动管理价值单元质量——是最被低估的治理工具。治理失败的例子：亚马逊上的虚假评论、早期 Twitter 上的 troll、早期 Craigslist 的安全问题。"
+    },
+    "relatedCanvasDefIds": ["platform-ecosystem-map"]
+  },
+  {
+    "slug": "ch06-metrics",
+    "order": 6,
+    "title": { "en": "Metrics and Strategy: Measuring What Makes Platforms Different", "zh": "指标和战略：衡量平台的独特之处" },
+    "summary": {
+      "en": "Platform metrics differ fundamentally from pipeline metrics. Chapter introduces platform-specific KPIs: liquidity (how quickly and successfully value units are matched), match quality, trust and reputation scores, multi-homing rates, network effect strength (retention by cohort, organic vs. paid acquisition ratio), and platform's take rate. Warning against applying pipeline metrics to platforms: measuring 'efficiency' without measuring 'effectiveness of matches' leads to optimizing the wrong thing.",
+      "zh": "平台指标与管道指标在根本上不同。本章引入平台特有的 KPI：流动性（价值单元被匹配的速度和成功率）、匹配质量、信任和声誉分、多栖率、网络效应强度（按群组的留存、自然 vs. 付费获取比例）以及平台的抽成率。警告不要将管道指标套用在平台上：衡量「效率」而不衡量「匹配有效性」会导向优化错东西。"
+    }
+  },
+  {
+    "slug": "ch07-policy",
+    "order": 7,
+    "title": { "en": "Policy and Regulation: Platforms in Society", "zh": "政策和监管：社会中的平台" },
+    "summary": {
+      "en": "The regulatory challenges unique to platforms: should platform workers be employees or contractors? Who is liable when a platform transaction causes harm? How do antitrust frameworks designed for pipelines apply to platforms? What about data sovereignty, algorithmic transparency, and market power? The chapter argues platforms must proactively design governance that anticipates regulation — the choice is between self-regulation now and heavier external regulation later.",
+      "zh": "平台特有的监管挑战：平台工作者应该是雇员还是合同工？平台交易造成损害谁负责？为管道设计的反垄断框架如何应用于平台？数据主权、算法透明和市场权力呢？本章论证平台必须主动设计能预见监管的治理——选择就是现在自我监管，以后接受更重的外部监管。"
+    }
+  }
+]

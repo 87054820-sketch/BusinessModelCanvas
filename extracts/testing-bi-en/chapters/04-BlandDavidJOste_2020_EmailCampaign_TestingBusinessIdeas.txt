@@ -1,0 +1,2778 @@
+# BlandDavidJOste_2020_EmailCampaign_TestingBusinessIdeas
+
+166
+EXPERIMENTS
+discovery
+EMAIL CAMPAIGN 
+Share, Discover, Discuss New Products 
+Product Hunt
+P
+roduct Hunt is a website that lets users 
+share and discover new products. The 
+website has grown tremendously over the 
+years since it’s inception in 2013. Product Hunt 
+has become the place to launch your new 
+product, but curiously enough it all started off 
+in a Philz Coffee as a 20-minute experiment  
+by Ryan Hoover, mainly using email.
+CASE STUDY
+
+
+167
+ 
+Insights 
+There is a there, there. 
+The response was overwhelmingly posi-
+tive and unlike most email that is opened 
+and clicked (or not), Ryan had an audience 
+openly contributing and sharing links over 
+email. He had built up a network over the 
+years of hungry entrepreneurs and product 
+people. Clearly there was an unmet need of 
+a community for product enthusiasts, based 
+on the sheer volume of activity from his 
+email list.
+ 
+Actions 
+Turning user behavior from email into  
+a platform. 
+Ryan used what he learned from the experi-
+ment to inform the design and technology of 
+Product Hunt as a community platform. 
+	
+Since then, Product Hunt graduated from 
+Y Combinator (YC S14) and was acquired 
+by AngelList for a reported $20 million in 
+2016. It's become the place where makers 
+and startups launch their new product to 
+a global community of founders, journal-
+ists, investors, and enthusiastic people in 
+technology.
+ 
+Hypothesis 
+Ryan believed that product people would 
+join an online community to share, discover,  
+and discuss new and interesting products. 
+ 
+Experiment 
+Creating the first version of Product Hunt 
+as an email campaign. 
+In only 20 minutes, Ryan created a group 
+on Linkydink, a link-sharing tool built by 
+the folks over at Makeshift. At the time, it 
+allowed people to share links with a group 
+and send them out as a daily email. He 
+then invited a few of his startup friends to 
+contribute to the group. To promote it, Ryan 
+announced the experiment on Quibb (a 
+technology focused, online community) and 
+Twitter. 
+ 
+Evidence 
+Opens, clicks and shares. 
+Within two weeks, over 200 people had sub-
+scribed to product discoveries from 30 hand-
+picked contributors, consisting of startup 
+founders, venture capitalists, and prominent 
+bloggers.  
+	
+Ryan also received several unsolicited 
+emails and in-person conversations express-
+ing their love and support of the project.
+ 
+ 
+email campaign
+interest discovery
+
+
+168
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Social media campaigns are ideal for acquiring new customers, 
+increasing brand loyalty, and driving sales.
+DISCOVERY / INTEREST DISCOVERY
+Social Media Campaign
+Social media messages that are deployed across a specific period  
+of time to customers.
+
+
+169
+OVERVIEW
+Prepare
+□
+□Define your social media 
+campaign goal.
+□
+□Identify the platforms to use 
+for your campaign.
+□
+□Create your content calen-
+dar and schedule.
+□
+□Create your social media 
+content.
+Execute
+□
+□Post your content across 
+platforms per your 
+schedule.
+□
+□Monitor, respond, and 
+engage with those who 
+comment.
+Analyze
+□
+□Analyze which posts and 
+platforms are performing 
+best.
+□
+□What type of content is 
+driving the most shares?
+□
+□What type of content is 
+driving the most clicks?
+□
+□What type of content is  
+driving the most comments?
+□
+□What type of content is driv-
+ing the most conversions?
+□
+□Recap with your team and 
+decide what revisions you’d 
+like to make for your next 
+campaign.
+social media campaign
+interest discovery
+
+
+170
+EXPERIMENTS
+discovery
+Cost 
+Social media campaigns are moderately 
+cheap to produce if you are doing the work 
+yourself and not paying for social media 
+ads. However, costs can go up rather quickly 
+($5k to $20k a month), if you are paying  
+people to manage and create content.
+ 
+Setup Time 
+Setup time for a social media campaign 
+can take days or weeks, depending on how 
+much content you need to create. Setup 
+time increases as well if you are running it 
+across multiple platforms. 
+ 
+ 
+Run Time 
+Run Time for a social media campaign is 
+long, usually several weeks or months.  
+You’ll need time to post, read, and respond 
+over social media. You’ll also need to  
+measure the effectiveness it has toward 
+your business goals.
+ 
+Evidence Strength
+ 
+# of views 
+# of shares 
+# of comments 
+Engagement is how customers are viewing, 
+sharing, and commenting on your social 
+media posts. 
+	
+Social media engagement is rather weak 
+evidence. You can learn qualitative insights 
+from the comments to inform your value 
+proposition.
+ 
+# of clicks 
+Click through rate is the number of views 
+your social media post receives divided by 
+the number who clicked. 
+ 
+ 
+# of conversions 
+Conversion rate is the number who clicked 
+on the social media link divided by the  
+number who used it to sign up or make  
+a purchase. 
+	
+Conversions are strong evidence and  
+can help you determine what social media 
+platform works best for driving business.
+Capabilities 
+Design / Marketing 
+Social media campaigns require a great 
+deal of marketing and design: marketing to 
+create, respond, and manage social media 
+across multiple platforms; design to help 
+shape and visualize the content before it is 
+posted.
+Requirements 
+Content 
+Social media campaigns are not simply 
+posting here and there, they are about 
+scheduling content over weeks and months. 
+Without content, your campaign will not be 
+successful. Make sure you have a plan and 
+the resources to create the content before 
+jumping into your campaign.
+DETAILS
+
+
+171
+Explainer Video 
+p. 200 
+Use the social media  
+campaign to drive traffic  
+to your video.
+Simple Landing Page  
+p. 260 
+Use a landing page for as  
+the destination for your social 
+media links.
+Concierge  
+p. 248 
+Deliver value manually to 
+those who converted from  
+the social media campaign.
+Social Media Campaign
+PAIRINGS
+Before
+After
+social media campaign
+interest discovery
+
+
+172
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Referral programs are ideal for testing with customers  
+how to organically scale your business.
+DISCOVERY / INTEREST DISCOVERY
+Referral Program
+A method of promoting products or services to new customers 
+through referrals, by word of mouth, or through digital codes.
+
+
+173
+OVERVIEW
+Prepare
+□
+□Define your referral  
+program conversion goal.
+□
+□Identify the advocates you’ll 
+send the referral codes to.
+□
+□Create the unique codes 
+and integrate analytics.
+Execute
+□
+□Provide your advocates with 
+the referral codes.
+□
+□Run it for several weeks to 
+give friends time to consider 
+and click.
+Analyze
+□
+□Calculate advocate  
+share rate.
+□
+□Calculate friend click 
+through rate.
+□
+□Calculate friend  
+conversion rate.
+□
+□Compare the conversion 
+rate to your previously 
+defined goal.
+□
+□Use what you’ve learned  
+to refine and Split Test  
+the referral program.
+referral program
+interest discovery
+
+
+174
+EXPERIMENTS
+discovery
+Cost 
+Referral programs are moderately cheap. 
+You’ll need to incentivize customers (advo-
+cates) for making referrals, which will incur 
+cost in the way of discounts for both the 
+advocate and the customer (friend) being 
+referred. Low cost software can help you 
+manage referrals, so that you have analyt-
+ics on how the program is performing.
+ 
+Setup Time 
+Setup time for a referral program is short. 
+You’ll need to configure your referral codes 
+and choose which advocates to send them 
+to. 
+ 
+ 
+Run Time 
+Run time for a referral program is long, 
+usually several weeks or months. You’ll need 
+time for advocates to refer and for their 
+friends to decide whether or not to act on 
+the referral.
+ 
+Evidence Strength
+ 
+# of advocates 
+# of advocate shares 
+Advocates are the customers you provide 
+referral codes to for sharing. The number 
+of shares is how many customers actively 
+shared the code with friends. 
+	
+Advocate share rate is the number of 
+advocates who received a code divided 
+by the number who shared it with a friend. 
+Target 15% – 20%. 
+	
+Advocates agreeing to accept and share 
+a code is relatively strong evidence. They 
+are acting to refer friends to your product.
+ 
+# of friends 
+# of friend clicks 
+# of friend conversions 
+Friends are the people who received the 
+code from the advocate.  
+	
+Friend click through rate is the number of 
+friends who received the code divided by the 
+number who clicked on it. Percent varies by 
+channel. Target 50% – 80%. 
+	
+Friend conversion rate is the number who 
+clicked on the code divided by the number 
+who used it to sign up or make a purchase. 
+Target 5% – 15%. 
+	
+Friends accepting the referral code and 
+converting is strong evidence. They are act-
+ing on a referral for an incentive, so it remains 
+to be seen if they will stay over time.
+Capabilities 
+Design / Product / Marketing 
+Referral programs mostly require product 
+and marketing capabilities. You’ll need to 
+clearly communicate why you are offering 
+the discount and how your friends would 
+benefit from it. You’ll need design skills if you 
+have custom emails, social media posts, or 
+landing pages dedicated to the program.
+Requirements 
+Passionate Customers 
+Customers usually do not start out passion-
+ate about your product. It takes time for 
+them to be satisfied and grow into passion-
+ate customers. Therefore, we recommend 
+that you gauge this before randomly send-
+ing out referral codes. You’ll want to give 
+codes to those who you think will actually 
+refer their friends to your product and speak 
+to it in a positive light.
+DETAILS
+
+
+175
+Link Tracking 
+p. 152 
+Have link tracking already in 
+place to determine which cus-
+tomers are the most active.
+Simple Landing Page  
+p. 260 
+Use a landing page for testing 
+the demand of your referral 
+program.
+Split Test  
+p. 270 
+Use analytics to Split Test 
+different discount codes and 
+determine which media  
+converts better with friends.
+Email Campaign 
+p. 162 
+Use email to distribute  
+your referral program  
+to advocates.
+Social Media Campaign  
+p. 168 
+Use social media to distribute 
+your referral program.
+Referral Program
+PAIRINGS
+Before
+After
+referral program
+interest discovery
+
+
+176
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Technology
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+3D print is ideal for rapidly testing iterations of your physical 
+solution with customers.
+DISCOVERY / DISCUSSION PROTOTYPES
+3D Print
+Rapidly prototyping a physical object from a three-dimensional  
+digital model by using a 3D printer.
+
+
+177
+OVERVIEW
+Prepare
+□
+□Gather your previous low 
+fidelity evidence to support 
+the 3D print.
+□
+□Model the print in 3D  
+modeling software.
+□
+□Create a 3D print using  
+a printer.
+□
+□Source customers and 
+schedule the interactive 
+session.
+ 
+Execute
+□
+□Show the 3D print to 
+customers.
+□
+□One person on the team 
+conducts the interview.
+□
+□Another person on the team 
+takes notes on customer 
+quotes, jobs, pains, gains, 
+and body language.
+□
+□Wrap up the interview by 
+asking if it is ok to contact 
+them in the future with 
+higher fidelity solutions.
+Analyze
+□
+□Review your notes with the 
+team.
+□
+□Update your Value 
+Proposition Canvas based 
+on what you’ve learned.
+□
+□Use what you’ve learned to 
+refine and iterate on your 
+3D print for the next round 
+of testing.
+3d print
+discussion prototypes
+
+
+178
+EXPERIMENTS
+discovery
+Cost 
+3D prints are moderately cheap. If you are 
+printing small basic prototypes to test with 
+customers, it can be less expensive. The 
+more complex and larger the 3D print, the 
+more costly it will be.
+ 
+Setup Time 
+The setup time for a 3D print can take days 
+or weeks, depending on your ability to 
+model it out and your access to a printer. 
+ 
+ 
+Run Time 
+Run time for a 3D print is relatively short. 
+You’ll want customers interacting with  
+the prototype to better understand the  
+fit between your value proposition and  
+customer jobs, pains, and gains.
+ 
+Evidence Strength
+ 
+Customer jobs 
+Customer pains 
+Customer gains 
+Customer jobs, pains, and gains and how the 
+prototype could solve for them. 
+	
+The evidence is relatively weak evi-
+dence — they need to suspend belief and 
+imagine using it in real world scenarios.
+ 
+Customer feedback 
+Customer Quotes 
+Take note of additional quotes from the cus-
+tomers that are not limited to customer jobs, 
+pains, and gains. 
+	
+Customer quotes are relatively weak, but 
+helpful for context and qualitative insights 
+for upcoming experiments.
+Capabilities 
+Design / Technology 
+You’ll need to be able to model the 3D print 
+in software, then create it using a 3D printer. 
+Some software is easier to learn that others, 
+but the learning curve can be quite steep 
+if you don’t have a design background. We 
+suggest getting help from a 3D modeling 
+expert. With regards to 3D printers, don’t 
+rush out and purchase one. Maker spaces 
+and workshops usually allow members to 
+rent time for creating 3D prints.
+Requirements 
+Sketches to Model 
+Before planning to create a 3D print, make 
+sure you’ve spent time testing faster, lower 
+fidelity experiments. For example, you 
+should have at least placed paper proto-
+types in front of customers to receive feed-
+back. That feedback should help inform your 
+design and solution. It doesn’t necessarily 
+mean you make all of the changes custom-
+ers requested.
+DETAILS
+
+
+179
+Paper Prototype 
+p. 182 
+Sketch out the solution  
+on paper, test with  
+customers, and use it  
+to inform your 3D print.
+Pretend to Own  
+p. 208 
+A cardboard or wooden  
+version of the solution can 
+help inform your 3D print.
+Life-Sized Prototype  
+p. 254 
+Create a higher  
+fidelity version from  
+what you’ve learned.
+Customer Interviews 
+p. 106 
+Interview your customers 
+while they interact with the 3D 
+print to learn about customer 
+jobs, pains, and gains.
+Partner & Supplier 
+Interviews  
+p. 114 
+Interview your partners and 
+suppliers to get feedback on 
+the feasibility of your solution.
+3D Print
+Storyboard  
+p. 186  
+Sketch out scenarios  
+for the solution, based  
+on customer feedback.
+PAIRINGS
+Before
+After
+3d print
+discussion prototypes
+
+
+180
+EXPERIMENTS
+discovery
+3D PRINT 
+3D Printing with CubeSats 
+The National Security Agency
+T
+he National Security Agency (NSA) is a 
+world leader in cryptology (the art and 
+science of making and breaking codes) 
+that helps protect sensitive national secu-
+rity information, even in space! If you’re like 
+most people, the word “satellite” conjures up 
+images of a bus-sized object weighing sev-
+eral tons and costing hundreds of millions of 
+dollars orbiting the Earth for several years.
+CASE STUDY
+
+
+181
+ 
+Experiment 
+The team set out to devise a way to help 
+these stakeholders quickly and unequivo-
+cally see the need for a new solution. After 
+a few failed attempts, the team and their 
+coach wondered if using a 3D-printer to 
+create a life-sized mockup of the CubeSat 
+might help them see it. They were ready  
+the next day!
+ 
+Evidence 
+The stakeholders immediately saw the need 
+for a new solution after seeing how the 
+currently certified encryption product simply 
+wouldn’t fit in the 3D printed mock-up!
+ 
+Actions 
+The team was resourced, and they confi-
+dently began building their solution that will 
+be tested in orbit in 2019. 
+CubeSats, on the other hand, are a newer 
+type of satellite that measure only 10 cm 
+× 10 cm × 11.35 cm, weigh less than 2 kg, 
+and utilize commercial off-the-shelf compo-
+nents. An Innovation Corps (I-Corps) team 
+from NSA’s Cybersecurity Solutions Group 
+had an idea for creating a new type of 
+cryptographic device to secure uplink and 
+downlink communications from CubeSats. 
+Their solution had dramatically smaller size, 
+weight, power, and price characteristics as 
+compared to existing products designed and 
+certified for use with those expensive bus-
+sized satellites.
+ 
+Hypothesis 
+The NSA team believed that… 
+Resisting the urge to start building an early 
+version of their encryption device, these 
+intrapreneurs “got out of the building” to 
+validate the desirability of their product. 
+Finding broad demand for CubeSat encryp-
+tion by external customers, they sought to 
+determine if they could get the “buy-in” of 
+some key internal stakeholders who unfortu-
+nately didn’t see the need for a new solution. 
+If we can help them see the need, thought 
+the entrepreneurs, then they will authorize 
+and fund our project. 
+ 
+3d print
+discussion prototypes
+
+
+182
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Paper prototypes are ideal for rapidly testing the concept  
+of your product quickly with customers. 
+Paper prototypes are not ideal as a replacement for proper 
+usability with customers.
+DISCOVERY / DISCUSSION PROTOTYPES
+Paper Prototype
+Sketched interface on paper, manipulated by another person  
+to represent the software's reactions to the customer interaction. 
+
+
+183
+OVERVIEW
+Prepare
+□
+□Define the goals of your 
+paper prototype experiment
+□
+□Determine the target audi-
+ence to test with, prefera-
+bly a group that isn’t cold 
+and has context for your 
+offering.
+□
+□Write your script.
+□
+□Create your paper  
+prototype sketches.
+□
+□Test it internally to make 
+sure the flow works.
+□
+□Schedule your Paper 
+Prototype experiments  
+with target customers.
+Execute
+□
+□Explain to the customers 
+that this is an exercise to 
+get their feedback on what 
+you are planning to deliver. 
+Make sure they understand 
+that you value their input.
+□
+□Have one person conduct 
+the interviews and interact 
+with the customer.
+□
+□Have another person write 
+notes and act as a scribe.
+□
+□Wrap up and thank the 
+participants.
+Analyze
+□
+□Place the paper prototypes 
+on the wall and place your 
+notes, observations, and 
+quotes around them.
+□
+□Where did they get stuck  
+or confused?
+□
+□What did they get excited 
+about?
+□
+□Use this feedback to 
+inform your next higher 
+fidelity experiment of the 
+experience.
+paper prototypes
+discussion prototypes
+
+
+184
+EXPERIMENTS
+discovery
+Cost 
+Paper prototypes are very cheap. You are 
+sketching out what the solution could be and 
+simulating the experience with paper. Your 
+paper prototype should not be an expensive 
+endeavor. If you purchase stencils or apps 
+to assist in the process it can add a small 
+amount of cost.
+ 
+Setup Time 
+Setup time for a paper prototype is rela-
+tively short. It should only take a few hours 
+to a few days to create your paper proto-
+type. It’ll most likely take you longer to find 
+customers to test with than to create the 
+paper prototype itself. 
+ 
+ 
+Run Time 
+Run time for a paper prototype is  also a few 
+days to a week. You’ll want to rapidly test 
+the paper prototype with target customers, 
+to get feedback on the value proposition 
+and flow of the solution.
+ 
+Evidence Strength
+ 
+Task completion 
+Task completion percentage 
+Time to complete tasks 
+	
+Manual task completion is not necessarily 
+strong evidence, but it will provide glimpses 
+into where customers could get confused.
+ 
+Customer feedback 
+Customer quotes on the value proposition 
+and usefulness of the imagined solution. 
+	
+Customer quotes on paper prototypes are 
+relatively weak, but can be helpful to inform 
+your higher fidelity experiments.
+Capabilities 
+Design / Research 
+In addition to an imagination, you’ll need 
+some design skills to sketch out the product. 
+You’ll also want to write a coherent script 
+and record the sessions.
+Requirements 
+An Imagined Product 
+Paper prototyping requires a great deal of 
+imagination and creativity. You’ll need to be 
+able to sketch out the flow of the product 
+and manually replicate customer interac-
+tions. This will require you to think through 
+the experience first, before putting it in front 
+of potential customers.
+DETAILS
+
+
+185
+Customer Interviews 
+p. 106 
+Use the notes from your inter-
+views to inform your paper 
+prototype script.
+Clickable Prototype  
+p. 236  
+Use what you learned from 
+the paper prototype testing 
+to inform your clickable proto-
+type design.
+Card Sorting  
+p. 222 
+Use the notes from your card 
+sorting to better understand 
+the customer jobs, pains,  
+and gains that your paper 
+prototype will address.
+Storyboarding  
+p. 186 
+Use what you learned from 
+the paper prototype testing  
+to refine your flow with a  
+storyboarding experiment.
+Boomerang 
+p. 204 
+Use the notes from your 
+Boomerang testing to shape 
+how the paper prototype can 
+address unmet needs.
+Explainer Video  
+p. 200 
+Use the notes from your paper 
+prototype testing to inform 
+your higher fidelity Explainer 
+Video.
+Paper Prototype
+PAIRINGS
+Before
+After
+paper prototypes
+discussion prototypes
+
+
+186
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Storyboards are ideal for brainstorming scenarios of different 
+value propositions and solutions with customers.
+DISCOVERY / DISCUSSION PROTOTYPES
+Storyboard
+Illustrations displayed in sequence for the purpose of visualizing  
+an interactive experience. 
+
+
+187
+OVERVIEW
+Prepare
+□
+□Gather your supplies: paper, 
+poster paper, sharpie, and 
+sticky notes.
+□
+□Book a room with lots  
+of wall and table space.
+□
+□Define the customer  
+segment and overall  
+value proposition.
+□
+□Invite your team members 
+and schedule the interac-
+tive session. 
+Execute
+□
+□Have the team members 
+brainstorm 8–12 alternative 
+value propositions.
+□
+□Sketch out storyboards  
+on poster paper that 
+describe how the customer 
+will experience the value 
+proposition.
+□
+□Take notes on customer 
+quotes, the jobs, pains,  
+and gains mentioned for 
+each scenario.
+□
+□Have an illustrator help 
+visualize the customer 
+experiences as a single 
+illustration for each  
+scenario.
+Analyze
+□
+□Review your notes with  
+the team.
+□
+□Update your Value 
+Proposition Canvas or  
+create new ones based 
+based on what you’ve 
+learned.
+□
+□Use your sketches in  
+customer interviews.
+storyboard
+discussion prototypes
+
+
+188
+EXPERIMENTS
+discovery
+Cost 
+Storyboarding is relatively cheap. If you  
+are facilitating it in person, you’ll need a lot  
+of wall space, markers, and poster paper.  
+If you are facilitating it remotely over 
+video, you’ll need low cost or free, virtual 
+white-boarding software.
+ 
+Setup Time 
+Setup time for storyboarding is relatively 
+short. You’ll need to gather the supplies and 
+recruit customers. 
+ 
+ 
+Run Time 
+Run time for storyboarding is a few hours. 
+You’ll be facilitating it with customers to 
+illustrate value propositions and scenarios.
+ 
+Evidence Strength
+ 
+Customer jobs 
+Customer pains 
+Customer gains 
+Illustrations of customer scenarios as to  
+how they’d experience different value  
+propositions. 
+Top three ranked jobs, pains, and gains. 
+Themes of jobs, pains, and gains. 
+	
+The illustrations are relatively weak 
+evidence, in that it’s a lab environment. 
+However, these can help inform higher fidel-
+ity feature experiments that focus on action.
+ 
+Customer feedback 
+Customer Quotes  
+Take note of additional quotes from the  
+customers that are not limited to jobs,  
+pains, and gains. 
+	
+Customer quotes are relatively weak,  
+but helpful for context and qualitative 
+insights for upcoming experiments.
+Capabilities 
+Design / Research 
+Almost anyone can facilitate storyboarding 
+with some practice. It will help if you have 
+design and research abilities on your team.
+Requirements 
+Customer Segment 
+Storyboarding works best if you already 
+have a specific customer segment in mind. 
+It’s meant to help you visualize various 
+interactive experiences, but they can be too 
+wide if you don’t narrow in on a customer 
+segment first.
+DETAILS
+
+
+189
+Product Box 
+p. 214 
+Use the output of Product 
+Box exercises to shape your 
+storyboarding session.
+Paper Prototype  
+p. 182  
+Use the feedback from  
+the storyboarding  
+session to inform your  
+paper prototype design.
+Boomerang  
+p. 204 
+Use the notes from your 
+Boomerang testing as inputs 
+to your storyboarding session.
+Explainer Video  
+p. 200 
+Animate the illustrations as a 
+higher fidelity Explainer Video 
+to test with customers.
+Social Media Campaign 
+p. 168 
+Use social media to recruit 
+people for your storyboarding 
+session.
+Customer Interviews   
+p. 106 
+Use the sketches from  
+your storyboarding in  
+customer interviews.
+Storyboard
+PAIRINGS
+Before
+After
+storyboard
+discussion prototypes
+
+
+190
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Technology / Marketing
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Data sheets are ideal for distilling down your specifications 
+into a single page for testing with customers and key partners.
+DISCOVERY / DISCUSSION PROTOTYPES
+Data Sheet
+One page physical or digital sheet with specifications  
+of your value proposition.
+
+
+191
+OVERVIEW
+Prepare
+□
+□Define your value  
+proposition and solution 
+specifications.
+□
+□Create your data sheet.
+□
+□Source customers and key 
+partners and schedule the 
+interviews.
+Execute
+□
+□Show the data sheet to 
+customers.
+□
+□One person on the team 
+conducts the interview.
+□
+□Another person on the team 
+takes notes on customer 
+quotes, jobs, pains, gains, 
+and body language.
+□
+□Wrap up the interview by 
+asking if it is okay to con-
+tact them in the future with 
+higher fidelity solutions or 
+the opportunity to buy.
+Analyze
+□
+□Review your notes with the 
+team.
+□
+□Update your Value 
+Proposition Canvas based 
+on what you’ve learned.
+□
+□Use what you’ve learned 
+to refine and inform your 
+higher fidelity experiments.
+Connections
+• Use the value proposition 
+from your Value Map as 
+your title.
+• Include the product/service 
+from your Value Map.
+• Expand on the product/
+service specifications and 
+illustrate details.
+• Include the top three  
+gain creators from your 
+Value Map.
+• Include the top three  
+pain relievers from your 
+Value Map.
+data sheet
+discussion prototypes
+
+
+192
+EXPERIMENTS
+discovery
+Cost 
+A data sheet is very cheap. If it’s physical, 
+you’ll need basic word processor or office 
+software to create the physical one page 
+document and print it. If it’s digital, you’ll 
+need basic web software to include the 
+specifications in your web page or email.
+ 
+Setup Time 
+Setup time for a data sheet is a few hours 
+to a day to set up and create. This includes 
+the time needed to gather your specifica-
+tions and properly format them. You’ll need 
+to recruit customers and key partners if you 
+are planning on showing it in person. 
+ 
+ 
+Run Time 
+Testing your data sheet with customers  
+and key partners is generally quick and  
+only takes about 15 minutes each.
+ 
+Evidence Strength 
+Customer feedback 
+Partner feedback 
+Customer and partner quotes when review-
+ing the data sheet. 
+	
+Feedback is weak but generally good for 
+qualitative insights.
+Capabilities 
+Design / Research 
+Data sheets require basic design skills to 
+effectively convey the information about 
+the value proposition and technical speci-
+fications. You’ll need to include your value 
+proposition and the technical specifications 
+of the solution as well as source customers 
+and/or key partners.
+Requirements 
+A data sheet will require you to have spec-
+ifications and a specific value proposition. 
+You’ll want to think through how it performs 
+technically and what the benefits are, before 
+creating a data sheet. You’ll also need a  
+target customer or key partner to have in 
+mind for testing purposes.
+DETAILS
+
+
+193
+Product Box 
+p. 214 
+Inform your data sheet by 
+facilitating a Product Box 
+exercise with your potential 
+customers.
+Simple Landing Page 
+p. 260 
+Include the data sheet in 
+your landing page to clearly 
+communicate the detailed 
+specifications of your solution.
+3D Print  
+p. 176  
+Create a 3D print of your 
+solution based on what you 
+learned from testing the data 
+sheet.
+Paper Prototype   
+p. 182 
+Use the feedback from a 
+paper prototype to inform 
+your data sheet.
+Presale  
+p. 274 
+Conduct presales with the 
+people who showed interest in 
+the data sheet.
+Customer Interviews 
+p. 106 
+Share your data sheet in 
+customer interviews to get 
+feedback on how it solves for 
+jobs, pains, and gains.
+Partner & Supplier 
+Interviews 
+p. 114 
+Interview your key partners 
+and suppliers to get feedback 
+on the feasibility of your data 
+sheet.
+Data Sheet
+PAIRINGS
+Before
+After
+data sheet
+discussion prototypes
+
+
+194
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Marketing / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Physical brochures are ideal for testing your value proposition 
+in person with customers who are difficult to find online.
+DISCOVERY / DISCUSSION PROTOTYPES
+Brochure
+Mocked up physical brochure of your imagined value proposition.
+
+
+195
+OVERVIEW
+Prepare
+□
+□Design your brochure, using 
+the connections from your 
+Value Proposition Canvas.
+□
+□Create your plan on where 
+to find target customers. 
+Execute
+□
+□Show the brochure to 
+customers.
+□
+□One person on the team 
+conducts the interview.
+□
+□Another person on the team 
+takes notes on customer 
+quotes, jobs, pains, gains, 
+and body language.
+□
+□Count how many viewed the 
+brochure and how many 
+accepted it.
+□
+□Wrap up the interview 
+stating that if they want to 
+learn more or purchase to 
+contact you using the infor-
+mation on the brochure.
+Analyze
+□
+□Review your notes with  
+the team.
+□
+□Update your Value 
+Proposition Canvas based 
+on what you’ve learned.
+□
+□Keep track of how many 
+people contact you from 
+the brochure information.
+□
+□Use what you’ve learned 
+to refine and inform your 
+higher fidelity experiments.
+Connections
+• The value proposition comes 
+from your Value Map.
+• The solution comes from the 
+Value Map product and ser-
+vice. Position this under the 
+value proposition so that 
+customers understand how 
+you are going to deliver.
+• Pains come from your 
+Customer Profile. Take the 
+top three voted pains from 
+the canvas and include 
+them in the inside of the 
+brochure.
+brochure
+discussion prototypes
+
+
+196
+EXPERIMENTS
+discovery
+Cost 
+Physical brochure costs are low if you can 
+use a word processor and have basic design 
+skills. The costs increase if you decide to 
+outsource the creation of the physical bro-
+chure to a professional agency or designer.
+ 
+Setup Time 
+If you have the skills, a brochure should only 
+take 1–2 days to set up and create. This 
+includes the time needed to define the bro-
+chure hypothesis, pull in concepts from your 
+Value Proposition Canvas, write the content, 
+and include the graphics. If you do not have 
+the skills, it can take 1–2 weeks instead. 
+ 
+ 
+Run Time 
+Testing your brochure with customers is 
+generally quick and only takes about 15 
+minutes. Your brochures can be used with 
+interviews wherever your customers are 
+located physically, whether that be on the 
+street, a cafe, or at a conference.
+ 
+Evidence Strength 
+# of brochure views 
+# of brochures taken 
+# of interviews 
+# of people who contact you 
+Email % Conversion Rates 
+Phone % Conversion Rates 
+You can calculate the conversion rate by 
+taking the number people given a brochure 
+divided by number who took action =  
+conversion rate. 
+	
+Brochure conversion rates vary by indus-
+try and segment; however, if you target a 
+very specific segment for your brochure, 
+you should look for a strong signal of 15% or 
+more on the call-to-action conversion. 
+	
+When customers take action to reach out, 
+it’s a good signal that you are on the right 
+path. This is different than a landing page 
+where people are giving up their email. On a 
+brochure with a call to action, it takes more 
+initiative on the customer’s side to take the 
+brochure home, read through it, and then 
+call or email you to find out more about the 
+value proposition you are offering.
+Capabilities 
+Marketing / Research 
+Brochures require design skills to create 
+a compelling visual experience, with high 
+quality images and styling. If you are unable 
+to do so, you may get false negatives in 
+your testing — people won’t believe your 
+value proposition is real. The other import-
+ant aspect of the brochure is the copy and 
+content. You’ll need to be able to write clear, 
+concise sentences that resonate with your 
+customers.
+Requirements 
+Acquisition Plan 
+Brochures are different than online digital 
+experiments — you need to physically inter-
+act with people to distribute them. Have a 
+plan about what you are trying to achieve 
+and where to find your customers before 
+finalizing a brochure. Brainstorm locations to 
+visit, such as:
+• Conferences.
+• Meetups.
+• Events. 
+• Cafes.
+• Stores.
+• Door-to-door.
+DETAILS
+
+
+197
+Customer Interviews 
+p. 106 
+Use the notes from your  
+interviews to inform your 
+value proposition, jobs, pains, 
+and gains on the brochure.
+Presale 
+p. 274 
+Conduct presales with the 
+people who contacted you 
+from the brochure to test 
+viability.
+Concierge  
+p. 248  
+Manually deliver the value 
+proposition to those who con-
+tact you from the brochure.
+Buy a Feature   
+p. 226 
+Learn what are the top fea-
+tures and jobs related to your 
+value proposition to include in 
+the brochure.
+Validation Survey  
+p. 278 
+Perform surveys with those 
+who contacted you from the 
+brochure to further under-
+stand why they reached out.
+Product Box 
+p. 214 
+Inform your brochure’s value 
+proposition by first facilitating 
+a Product Box exercise with 
+your potential customers.
+Brochure
+PAIRINGS
+Before
+After
+brochure
+discussion prototypes
+
+
+198
+EXPERIMENTS
+discovery
+BROCHURE 
+A New Type of Insurance 
+Farm and Ranch Insurance
+A
+merican Family Insurance is a private 
+mutual company that focuses on prop-
+erty, casualty, and auto insurance. As an 
+insurance company, they understand risk 
+very well and do not want to build complex 
+insurance offerings that no one will buy. In 
+this example, the Commercial Farm Ranch 
+division was searching for fit for new market 
+risk protection offerings.
+CASE STUDY
+
+
+199
+ 
+Evidence 
+Conversions using a brochure. 
+15% target farmers who received the  
+brochure called or emailed requesting  
+more info. 
+	
+Qualitative learnings talking to the  
+farmers and getting reaction to the  
+brochure in face-to-face conversations.
+ 
+Insights 
+Segmenting different types of farmers  
+for a stronger value proposition. 
+Cattle farmers’ pain points seemed greater 
+based on metrics and emotion in conversa-
+tions compared to corn farmers. 
+	
+The farmers’ current way to solve the 
+problem was to go to a bank and get 
+another loan/line of credit but that felt risky 
+to them.  
+	
+Several farmer focused banks/credit 
+unions were interested in the the concept. 
+The team could explore this as a channel.
+ 
+Actions 
+Narrowing in on cattle farmers. 
+The team refined the value proposition and 
+marketing to be more cattle-farmer specific. 
+Next they reran the experiment to see if 
+focusing on a more niche customer segment 
+would get a more decisive validation signal.  
+In the past, this team had used Facebook/ 
+Google Ads to drive traffic to a landing 
+page, which is a great combination but it 
+was difficult to target farmers online, and 
+the team wasn’t getting enough qualitative 
+insights. So they decided to go analog and 
+face-to-face at a large farmer convention.
+ 
+Hypothesis 
+The Farm and Ranch team believed that… 
+We believe that farmers desire a new type of 
+financial/insurance risk protection offering. 
+ 
+Experiment 
+Going analog with physical brochures. 
+The team went to a farming trade show 
+in Missouri and handed out professional 
+physical marketing brochures with a clearly 
+articulated value proposition and solution. 
+They had a call to action of getting in touch 
+with the team via a phone call or email for 
+more information.  
+	
+The team screened for small/mid-sized 
+cattle and corn farmers.   
+	
+Their target metric was that 20% of the 
+target farmers (small/mid sized cattle or 
+corn farmers) would take initiative and call 
+or email. 
+brochure
+discussion prototypes
+
+
+200
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+An Explainer Video is ideal for quickly explaining your value 
+proposition at scale with customers.
+DISCOVERY / DISCUSSION PROTOTYPES
+Explainer Video
+A short video that focuses on explaining a business idea in a simple, 
+engaging, and compelling way.
+
+
+201
+OVERVIEW
+Prepare
+□
+□Write a script for your 
+Explainer Video.
+□
+□Use the connections from 
+your Value Proposition 
+Canvas to inform the script 
+and visuals.
+□
+□Create your Explainer Video.
+□
+□Upload it on a social media 
+platform, video platform, 
+email, or landing page.
+□
+□Test that the video analytics 
+and CTA links work.
+Connections
+• Lead with the top pain  
+from your Customer Profile.
+• Introduce your solution  
+to the pain from your  
+Value Map.
+• Illustrate the gain from  
+the Customer Profile  
+you receive from solving 
+the pain.
+• Close with a call-to-action 
+link to gauge desirability.
+Execute
+□
+□Make your video live to the 
+public.
+□
+□Drive traffic to your video.
+□
+□If comments are enabled, 
+engage with the public on 
+questions they have about 
+the solution.
+Analyze
+□
+□How many views and shares 
+does the video receive?
+□
+□What is your click through 
+rate?
+□
+□Are people that land on 
+your destination from the 
+video converting?
+□
+□Use what you’ve learned to 
+tailor the video content. It’s 
+quite common to have dif-
+ferent versions of the video 
+depending on your target 
+customer and platform.
+explainer video
+discussion prototypes
+
+
+202
+EXPERIMENTS
+discovery
+Cost 
+The cost of running an Explainer Video is 
+relatively cheap, but can get expensive 
+quickly depending on the production value. 
+There are many products that’ll enable you 
+to create an Explainer Video that looks good 
+enough, but if you want to stand out, it’ll 
+likely cost you for professional videography. 
+You should also consider how you’ll drive 
+traffic to the Explainer Video as part of the 
+cost.
+ 
+Setup Time 
+Good Explainer Videos take a few days or 
+weeks to set up. You’ll need to think through 
+how to clearly convey your value proposi-
+tion, write a script, and do multiple takes 
+and edits. 
+ 
+ 
+Run Time 
+Run time for Explainer Videos is relatively 
+long, from several weeks to months, unless 
+it goes viral. While viral videos get a lot of 
+buzz, they tend to be the outliers. Many 
+Explainer Videos require a great deal of 
+work to drive traffic to them, both with paid 
+advertising and social media.
+ 
+Evidence Strength
+ 
+# of unique views 
+How many unique views you receive and 
+from what referral source. 
+# of shares 
+How many shares of the video there are  
+and via what platform. 
+	
+Views and shares are relatively weak 
+evidence.
+ 
+# of clicks 
+Click through rate = clicks that your video 
+receives divided by the number of views. 
+	
+Clicks are stronger evidence in that peo-
+ple are clicking to learn more.
+ 
+Comments 
+Viewer comments on the video with regard 
+to availability, price, and how it works. 
+	
+Comments are relatively weak evidence 
+but at times good for qualitative insights.
+Capabilities 
+Design / Product / Technology 
+You’ll need to be able to write a script for 
+a compelling Explainer Video, create the 
+video, edit it, and then share and promote it 
+to your target audience. The Explainer Video 
+will need a clear call to action, usually at 
+the end, to encourage your audience to click 
+and learn more.
+Requirements 
+Traffic 
+Explainer Videos need traffic to generate 
+evidence, regardless whether they exist on 
+a video hosting platform or a landing page. 
+Drive traffic to your Explainer Video using:
+• Online ads.
+• Social media campaigns.
+• Email campaigns.
+• Redirecting existing traffic.
+• Word of mouth.
+• Discussion forums.
+DETAILS
+
+
+203
+Data Sheet 
+p. 190 
+Create a data sheet that 
+explains the performance 
+and specifications of your 
+proposed solution.
+Email Campaign  
+p. 162  
+Contact the people who 
+signed up and interview them 
+to learn why they liked the 
+video.
+Storyboarding  
+p. 186 
+Test out different sequences 
+of events using illustrations to 
+inform your Explainer Video.
+Pretend to Own  
+p. 208 
+Create a nonfunctioning 
+prototype of your solution and 
+see if you have the desire to 
+use it in real world situations.
+Simple Landing Page 
+p. 260 
+Create a simple landing page 
+as a destination for the call-
+to-action link at the end of 
+your Explainer Video.
+Card Sorting  
+p. 222 
+Facilitate a card sorting 
+exercise to better understand 
+different sequences to solve 
+for customer needs.
+Explainer Video
+PAIRINGS
+Before
+After
+explainer video
+discussion prototypes
+
+
+204
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Product / Marketing / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Boomerang is ideal for finding unmet needs with potential 
+customers in an existing market, without building anything. 
+Boomerang is not ideal for stripping away branding and test-
+ing a product as if it’s your own.
+DISCOVERY / DISCUSSION PROTOTYPES
+Boomerang
+Performing a customer test on an existing competitor’s product  
+to gather insights on the value proposition.
+
+
+205
+Prepare
+□
+□Identify a product to test 
+that has unmet needs 
+related to your idea.
+□
+□Create a script for customer 
+testing.
+□
+□Recruit customers who 
+agree to test the product 
+and be recorded.
+□
+□Schedule the Boomerang 
+sessions.
+□
+□Prepare the Boomerang 
+location with a competitor’s 
+product.
+Execute
+□
+□Share the script and explain 
+the goal.
+□
+□Record the session and take 
+notes on what they say, 
+where they get stuck, and 
+how long it takes them to 
+complete tasks.
+□
+□Wrap up and thank the 
+participants.
+Analyze
+□
+□Review your notes with  
+the team.
+• Which tasks were unfin-
+ished? Took the longest?  
+Caused the most 
+frustration?
+□
+□Create a Value Proposition 
+Canvas for the competition 
+indicating where they are 
+misaligned.
+□
+□Use this information to 
+inform your upcoming 
+experiments to learn more.
+Perils of Rebranding 
+Competitor Products as 
+Yours 
+Over time we’ve observed 
+Boomerang tests and vari-
+ants of it, sometimes called 
+Imposter Judo. While, at 
+times, these techniques vary 
+widely in definition, we have 
+come to a consensus that it 
+is too risky to rebrand a com-
+petitor’s product entirely for 
+customer testing purposes. 
+	
+The technique usually 
+involves creating a clone of 
+the competitor’s, stripping 
+away the branding and 
+replacing it with your brand-
+ing, or a fabricated brand.	
+	
+This has legal and ethical 
+implications which we advise 
+against, especially for estab-
+lished corporations or those 
+operating in heavily regulated 
+environments. 
+	
+Interestingly enough, we’ve 
+seen both corporations and 
+startups use Boomerang test-
+ing with branding intact to get 
+an idea of unmet needs.  
+	
+Corporations have pointed 
+their Boomerang testing at a 
+hot up-and-coming startup. 
+	
+Startups have pointed 
+their Boomerang testing 
+at entrenched established 
+corporations.
+OVERVIEW
+boomerang
+discussion prototypes
+
+
+206
+EXPERIMENTS
+discovery
+Cost 
+Boomerang is a low cost experiment involv-
+ing pointing people to your competitor’s 
+product and not building anything. Any 
+incurred costs would be associated with 
+sourcing people to test with and recording 
+the sessions.
+ 
+Setup Time 
+Setup time for a Boomerang is short, in that 
+you only need to find and schedule people 
+to participate in the test. 
+ 
+ 
+Run Time 
+Run time for a Boomerang is short, as the 
+sessions should not last more than 30 
+minutes each. Even if you schedule several 
+of these, it should only take a few days to 
+complete.
+Evidence Strength
+ 
+Task completion 
+Time to complete the task 
+Task completion rate = tasks completed 
+divided by tasks attempted. 
+ 
+Average time to complete a task. 
+ 
+In the evidence you are looking for unmet 
+gaps and needs when it comes to the 
+espoused value proposition versus what it 
+really takes for an average customer.	
+ 
+	
+Evidence for measuring tasks in existing  
+competitors’ products is relatively strong —  
+you are measuring actual behavior in the 
+product.
+ 
+Customer feedback 
+Customer quotes with regards to ease of use 
+and unmet needs. 
+Look for gaps in what the customer wants 
+and expects the product to do versus what it 
+does in reality. 
+	
+Customer feedback is relatively weak evi-
+dence, but it is helpful in determining unmet 
+needs to explore.
+Capabilities 
+Product / Marketing / Research 
+Boomerang capabilities include the ability to 
+select an applicable product, craft a script, 
+recruit an audience to test with, record the 
+sessions, and synthesize the results. Many 
+of these capabilities reside within product 
+and marketing and research. Like interviews, 
+these are best performed in pairs when 
+possible.
+Requirements 
+Existing Product 
+Before you schedule a Boomerang exper-
+iment, you’ll need to identify the existing 
+product to use for the testing. It needs to be 
+a product from which you can extract  
+learning to inform your new idea, otherwise 
+the feedback you’ll collect will not be useful.
+DETAILS
+
+
+207
+Discussion Forums 
+p. 134 
+Browse discussion forums of 
+existing products to better 
+understand where customers 
+are struggling.
+Buy a Feature  
+p. 226  
+Facilitate a Buy a Feature 
+exercise with customers to 
+determine what new features 
+are desired.
+Search Trend Analysis  
+p. 126 
+Search for trends around the 
+usage of an existing product  
+and how it compares to 
+others.
+Paper Prototype  
+p. 182 
+Create a paper prototype to 
+have a conversation about 
+what solving for the unmet 
+needs could look like.
+Customer Interviews  
+p. 106 
+Perform customer interviews 
+on people who are already 
+using the competitor’s 
+product.
+Clickable Prototype  
+p. 236 
+Create a clickable prototype 
+that simulates customers’ 
+expectations.
+Boomerang
+PAIRINGS
+Before
+After
+boomerang
+discussion prototypes
+
+
+208
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Pretend to Own is ideal for generating your own evidence  
+on the potential usefulness of an idea.
+DISCOVERY /  INTERACTION PROTOTYPE
+Pretend to Own
+Creating a nonfunctioning, low fidelity prototype of the solution to 
+determine whether it fits into the day-to-day life of the customer. 
+Sometimes called a Pinocchio experiment.
+
+
+209
+Prepare
+□
+□Sketch out the product idea 
+on a piece of paper.
+□
+□Gather the materials you’d 
+need to make a Pretend 
+to Own experiment of the 
+product.
+□
+□Time box the amount of 
+time to create it so that 
+you do not over-iterate 
+internally.
+□
+□Create your Pretend to Own 
+product.
+□
+□Create an experiment log to 
+track your metrics.
+OVERVIEW
+Execute
+□
+□Run your Pretend to Own 
+experiment, acting as 
+though it was a functioning 
+product.
+□
+□Track your usage in an 
+experiment log.
+Analyze
+□
+□Review your log for events:
+• How many times did you 
+engage with it?
+• Were there certain aspects 
+of it that made it difficult 
+or cumbersome?
+□
+□Use your findings to 
+inform your higher fidelity 
+experiment.
+pretend to own
+discussion prototypes
+
+
+210
+EXPERIMENTS
+discovery
+Cost 
+Cost of Pretend to Own is very cheap, in that 
+you are using readily available material 
+such as wood and paper. Cost can increase 
+with size and complexity.
+ 
+Setup Time 
+Setup time for Pretend to Own is a few min-
+utes to a few hours. You don’t want to iterate 
+on the design internally very much at all, but 
+instead have the bare bones shape and user 
+interface. 
+ 
+ 
+Run Time 
+Run time for Pretend to Own can be several 
+weeks to several months, depending on the 
+nature of your idea. You’ll want to test it 
+over time, in order to forget that it isn’t real 
+(almost).
+ 
+Evidence 
+When do you use it? 
+Engagement Logbook 
+Keep a spreadsheet that tracks the amount 
+of time it was available and the number of 
+occurrences in which you thought it would be 
+of use to you. 
+	
+Document the types of uses and in what 
+scenarios they occurred. Overall engage-
+ment is a relatively weak strength of 
+evidence, but you’ll learn firsthand insights 
+that can help shape the idea and value 
+proposition.
+Capabilities 
+Design / Research 
+Basic design and research skills are helpful 
+when running a Pretend to Own experiment. 
+You’ll need to be able to create a rough 
+replica and then log your activities over 
+time.
+Requirements 
+Pretend to Own doesn’t require a great deal 
+to get started: simply an idea that you want 
+to validate and some creativity on how to 
+create a nonfunctioning replica of it.
+DETAILS
+
+
+211
+LIfe Sized Prototype  
+p. 254  
+Create a higher fidelity,  
+life-sized prototype of  
+the solution.
+Storyboarding  
+p. 186 
+Test out different sequences 
+of events using illustrations to 
+inform your Pretend to Own.
+Customer Interview  
+p. 207 
+Use the notes from your inter-
+views to inform your Pretend 
+to Own design and scenarios.
+Data Sheet  
+p. 190 
+Write up a data sheet on what 
+the specifications should be 
+for the solution.
+Brochure  
+p. 194 
+Create a brochure that  
+conveys the value proposition 
+of the solution to test with 
+customers.
+Pretend to Own
+PAIRINGS
+Before
+After
+pretend to own
+discussion prototypes
+
+
+212
+EXPERIMENTS
+discovery
+PRETEND TO OWN 
+Wooden Palm Pilot 
+Palm
+B
+efore the Palm Pilot was created, Jeff 
+Hawkins wanted to gauge the desirability 
+of the product. He had seen personal digital 
+assistants in the past that were feasible, but 
+not desirable. These ultimately led to large 
+expensive failures. 
+CASE STUDY
+
+
+213
+Jeff Hawkins cut a block of wood to fit the 
+overall size of the envisioned product and 
+printed out a simple user interface, like the 
+one he envisioned. He taped the printout 
+over the wooden block and used a wooden 
+chopstick as the stylus. This was rough 
+enough that it only took hours to create. He 
+then carried it around in his pocket at work 
+for months to determine the desirability of 
+the value proposition in the real world. 
+	
+When someone asked for a meeting or 
+email, he would pull the wood block out of 
+his pocket, tap on it with the chopstick and 
+then put it away. 
+	
+After several instances when he felt it 
+would’ve been useful to have the real prod-
+uct, only then did he decide to go forward 
+with the product development of the Palm 
+Pilot.
+ 
+□
+□Create your nonfunctioning 
+replica as soon as possible 
+in the design process.
+□
+□Be thrifty and use low cost, 
+commonly available craft 
+materials.
+□
+□Use your creative inspira-
+tion to pretend it functions 
+in real life.
+□
+□Keep a logbook of your 
+interactions, whether they 
+be physical or digital. 
+ 
+–
+– Spend a lot of money and 
+time creating the replica.
+–
+– Choose extremely large 
+and expensive products for 
+this technique.
+–
+– Be embarrassed to carry 
+it around in real world 
+scenarios.
+–
+– Forget to have fun in the 
+process.
+ 
+Evidence 
+Palm Pilot Engagement Logbook
+• Carried the device in my pocket  
+95% of the time
+• Pulled it out to use it an average  
+of 12 times
+• For scheduling appointments:  
+55% of the time 
+• To look up phone numbers or addresses: 
+25% of the time 
+• To add to or check a to-do list:  
+15% of the time 
+• To take notes: 5% of the time  
+ 
+Adapted from The Right It by Alberto Savoia
+pretend to own
+discussion prototypes
+
+
+214
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Product Box is ideal for refining your value proposition  
+and narrowing in on key features to your solution.
+DISCOVERY / PREFERENCE & PRIORITIZATION
+Product Box
+A facilitation technique used with customers to visualize  
+value propositions, main features, and key benefits in the  
+physical form of a box.
+
+
+215
+Prepare
+□
+□Recruit 15–20 target 
+customers.
+□
+□Set up the room with boxes 
+and supplies for each table.
+Execute
+□
+□Set the stage by defining 
+the area to explore. 
+□
+□Have each table design a 
+box for a product idea they 
+would buy. 
+□
+□Have them include messag-
+ing, features, and benefits 
+of the imaginary product.
+□
+□Each team has to imagine 
+selling the imaginary prod-
+uct at a trade show. Have 
+them take turns pitching the 
+product to you, a skeptical 
+customer.
+□
+□Take notes during the 
+pitches on key messaging, 
+features, benefits.
+Analyze
+□
+□Debrief with your team. 
+What aspects did the teams 
+emphasize over others?
+□
+□Use what you’ve learned 
+to update your Value 
+Proposition Canvas. This 
+can be the basis of future 
+experiments.
+OVERVIEW
+To learn more about Product  
+Box we highly recommend  
+reading Innovation Games  
+by Luke Hohmann.
+product box
+preference & prioritization
+
+
+216
+EXPERIMENTS
+discovery
+Cost 
+Running a Product Box experiment is rela-
+tively cheap. The materials you need are low 
+cost and widely available at craft stores. 
+You’ll need cardboard boxes and supplies to 
+decorate the box, colored markers, paper, 
+and stickers.
+ 
+Setup Time 
+Setup time for Product Box is relatively 
+short, in that you’ll need to recruit customers 
+to participate. You’ll need to purchase the 
+supplies and set up the room. 
+ 
+ 
+Run Time 
+Run time for Product Box is very short. You 
+can facilitate it in less than 1 hour.
+ 
+Evidence Strength 
+ 
+ 
+Value propositions 
+Customer jobs 
+Customer pains 
+Customer gains 
+Collect and organize the key customer jobs, 
+pains, and gains offered up by the partici-
+pants. Highlight the top three of each. 
+	
+Take note of the messaging of the value 
+propositions from the participants, as these 
+can inform your own messaging. 
+	
+Artifacts produced by Product Box are 
+relatively weak evidence, but they can be 
+used to shape and inform your upcoming 
+experiments.
+ 
+Customer feedback 
+Customer Quotes 
+Take note of additional quotes from the 
+customers that are not limited to jobs, pains, 
+and gains. 
+	
+Customer quotes are relatively weak  
+evidence, but helpful for context and quali-
+tative insights for upcoming experiments.
+Capabilities 
+Design / Product / Research 
+Almost anyone can facilitate a Product Box 
+with some practice. It will help though if you 
+have design, research, and product abilities — 
+ you’ll want to assess the outputs and provide 
+inspiration when needed.
+Requirements 
+Idea and Target Customer 
+Product Box requirements are not expansive, 
+although ideally you’ll want to have an idea 
+and target customer in mind. Without this, 
+the session will likely go very wide and the 
+results will be difficult to interpret.
+DETAILS
+
+
+217
+Customer Interviews 
+p. 106 
+Use the notes from your inter-
+views to help set the context 
+for your Product Box.
+Paper Prototype  
+p. 182  
+Use the output to move 
+beyond a box and into paper 
+solution prototyping as to  
+how it could work.
+Boomerang  
+p. 204 
+Use the notes from your 
+Boomerang as the basis for 
+your Product Box, to address 
+unmet needs in an existing 
+product.
+Search Trend Analysis  
+p. 126 
+Use the output as inputs to 
+larger search-trend analysis 
+to help gauge demand.
+Social Media Campaign  
+p. 168 
+Use social media to recruit 
+people for your Product Box 
+session.
+Storyboarding 
+p. 186 
+Use the output to test 
+sequences of solutions using 
+illustrations.
+Product Box
+PAIRINGS
+Before
+After
+product box
+preference & prioritization
+
+
+218
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Design / Product / Technology
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Speed Boat is ideal for going beyond conversations  
+and having a visual representation of what’s slowing your  
+customers down and learning how it impacts feasibility.
+DISCOVERY / PREFERENCE & PRIORITIZATION
+Speed Boat
+A visual game technique used with customers to identify  
+what’s inhibiting progress.
+
+
+219
+OVERVIEW
+1. Recruit
+□
+□Recruit 15–20 customers 
+who use your existing prod-
+uct for the exercise.
+2. Prepare
+□
+□If it’s in person, you’ll want 
+a picture of a speed boat 
+and cards. If it’s remote, 
+then you’ll need to set up a 
+virtual whiteboard that has 
+a speed boat and virtual 
+cards which customers can 
+write on digitally.
+3. Facilitate
+□
+□Give each customer a few 
+minutes to think before 
+writing down anchors. After 
+they’ve placed them near 
+the speed boat, note their 
+location. Anchors that are in 
+groups, repeating the same 
+thing in different ways, are 
+clustered together. If they 
+are deeper below the speed 
+boat, then it means they 
+are slowing things down 
+more so than others. Be 
+mindful to review each card 
+with the group, but refrain 
+from trying to solve or 
+provide feedback. Doing so 
+will bias the group and the 
+exercise.
+4. Analyze
+□
+□Once Speed Boat has con-
+cluded and the customers 
+have left, assign a severity 
+and urgency to each anchor 
+as a team. Some you may 
+want to address right away 
+while others you may ignore 
+entirely. These results, 
+after you’ve processed  
+the anchors, should be 
+inputs into your upcoming 
+experiments. 
+ 
+To learn more about Speed 
+Boat we highly recommend 
+reading Innovation Games  
+by Luke Hohmann.
+speedb boat
+preference & prioritization
+
+
+220
+EXPERIMENTS
+discovery
+Cost 
+Running a Speed Boat experiment is rela-
+tively cheap. The materials you need are 
+a picture of a speed boat, writing utensils, 
+and note cards. If you choose to run this 
+remotely, then you’ll need to use a virtual 
+product, which could slightly increase cost.
+ 
+Setup Time 
+Setup time for Speed Boat is relatively short, 
+in that you’ll need to recruit customers to 
+participate. You’ll also want to review any 
+existing support data that could help inform 
+what to look for during the experiment. 
+ 
+ 
+Run Time 
+Run time for Speed Boat is very short. It 
+takes 1–2 hours to facilitate with multiple 
+customers involved.
+ 
+Evidence 
+ 
+ 
+# of anchors 
+Severity 
+Urgency 
+# of severe and urgent anchors 
+The higher number of severe and urgent 
+anchors, the bigger gap you have between 
+your Value Map and your Customer Profile. 
+	
+Artifacts produced by Speed Boat are still 
+relatively weak evidence, but it’s stronger 
+than simply talking to customers. You are 
+unpacking what specifically is keeping 
+your product from living up to its value 
+proposition.
+ 
+Customer feedback 
+Customer Quotes 
+In addition to the anchors, you’ll want to  
+collect customer quotes to better under-
+stand their context when struggling with  
+the product. 
+	
+Customer quotes are relatively weak  
+evidence, but helpful for context and quali-
+tative insights on your product.
+Capabilities 
+Design / Product / Technology 
+In addition to facilitation capabilities, which 
+are not necessarily role specific, you’ll 
+need the right people in the room to assign 
+severity and urgency to the anchors. Not all 
+anchors are created equal, and some you’ll 
+want to fix right away while others you may 
+ignore entirely.
+Requirements 
+Facilitation Skills 
+Speed Boat requires some degree of facil-
+itation skills, especially with a group of 
+customers who are about to complain about 
+your product. You’ll need to check your ego 
+at the door and have the skills to extract the 
+specific anchors. If you feel you are unable 
+to do so because you are too close to the 
+product, then we recommend bringing in  
+a neutral third-party facilitator to lead the 
+session.
+DETAILS
+
+
+221
+Discussion Forums  
+p. 134 
+Use what you’ve learned from 
+browsing discussion forums 
+to better inform your areas 
+of focus for the Speed Boat 
+exercise.
+Split Test 
+p. 270  
+Run a Split Test in your 
+product to test out different 
+methods of addressing the 
+anchors.
+Sales Force Feedback  
+p. 138 
+Use sales force feedback to 
+inform areas of improvement 
+for your product.
+Extreme Programming Spike 
+p. 306 
+Conduct a spike to better 
+understand how to address 
+the gaps between your value 
+proposition and solution.
+Search Trend Analysis 
+p. 126 
+Search online for volume of 
+customers who are complain-
+ing about your product.
+Storyboarding  
+p. 186 
+Test out different sequences 
+of solutions using storyboard-
+ing to design solutions to the 
+anchors.
+Speed Boat
+PAIRINGS
+Before
+After
+speedb boat
+preference & prioritization
+
+
+222
+EXPERIMENTS
+discovery
+COST
+SETUP TIME
+CAPABILITIES  Marketing / Research
+EVIDENCE STRENGTH
+RUN TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Card sorting is ideal for getting insights into customer jobs, 
+pains, gains, and value propositions.
+DISCOVERY / DISCUSSION PROTOTYPES
+Card Sorting
+A technique in user experience design in which a person uses cards 
+with customers to generate insights.
+
+
+223
+OVERVIEW
+1. Recruit
+□
+□Recruit 15–20 existing or 
+target customers for the 
+card sorting session.
+2. Prepare
+□
+□If it’s in person, you’ll need 
+cards you’ve created for 
+customer jobs, pains, and 
+gains as well as blank 
+cards for customers to fill 
+out. If it’s remote, then you’ll 
+need to set up a virtual 
+whiteboard that has cards 
+you’ve already created as 
+well as blank ones.
+3. Facilitate
+□
+□Explain the categories of 
+customer jobs, pains, and 
+gains that you’ve witnessed 
+in the market. Have the 
+participants map the exist-
+ing cards to each category 
+and rank them. Encourage 
+them to talk out loud as 
+they do so. Ask if there are 
+any missing and, if so, have 
+the participants write them 
+down and include them in 
+the ranking. Have an addi-
+tional person take notes on 
+your side during the session 
+for qualitative insights.
+4. Analyze
+□
+□Once card sorting is 
+concluded, identify any 
+themes you’ve found and 
+calculate how the partici-
+pants have ranked the top 
+three jobs, pains, and gains. 
+Update or create your 
+Value Proposition Canvas 
+to reflect the latest find-
+ings to help inform future 
+experiments.
+card sorting
+preference & prioritization
+
+
+224
+EXPERIMENTS
+discovery
+Cost 
+Running a card sorting experiment is  
+relatively cheap. If you are facilitating it in 
+person, then the only materials you need 
+are note cards. If you are facilitating it 
+remotely over video, then you’ll need low-
+cost or free virtual white-boarding software.
+ 
+Setup Time 
+Setup time for card sorting is relatively 
+short. You’ll need to define the content of  
+the cards and recruit customers. 
+ 
+ 
+Run Time 
+Run time for card sorting is very short.  
+You can facilitate it in less than 1 hour.
+ 
+Evidence 
+ 
+ 
+Customer jobs 
+Customer pains 
+Customer gains 
+Top three ranked jobs, pains, and gains. 
+Themes of jobs, pains, and gains. 
+	
+The grouping and ranking output of card 
+sorting is relatively weak evidence, in that 
+it’s a lab environment. However it can help 
+inform higher fidelity feature experiments 
+that focus on action.
+ 
+Customer feedback 
+Customer Quotes 
+Take note of additional quotes from the 
+customers that are not limited to jobs, pains, 
+and gains. 
+	
+Customer quotes are relatively weak  
+evidence, but helpful for context and quali-
+tative insights for upcoming experiments.
+Capabilities 
+Marketing / Research 
+Almost anyone can facilitate a card sorting 
+session with some practice. It will help if you 
+have marketing and research abilities, in 
+that you’ll want to recruit the right customers 
+and analyze the categories and rankings 
+created.
+Requirements 
+Target Customer 
+Card sorting works best with existing cus-
+tomers, but it can also be used for learning 
+about a potential niche customer as well. 
+Both will require you to put thought into 
+customer jobs, pains, and gains so that the 
+output can be used to inform your Value 
+Proposition Canvas and future experiments.
+DETAILS
+
+
+225
+Sales Force Feedback 
+p. 138 
+Use sales force feedback to 
+inform what cards to include 
+in card sorting.
+Storyboarding 
+p. 186  
+Create a storyboard to define  
+a solution that address the  
+customer jobs, pains, and gains.
+Customer Support Analysis  
+p. 142 
+Use customer support data to 
+inform what cards to include 
+in card sorting.
+Explainer Video 
+p. 200 
+Create an Explainer Video 
+that tells the story of how 
+your solution addresses cus-
+tomer jobs, pains, and gains.
+Discussion Forums 
+p. 134 
+Search through discussion 
+forums to see what unmet 
+needs customers have to 
+inform your cards.
+Paper Prototype  
+p. 182 
+Create a paper prototype 
+of how the solution could 
+address the customer jobs, 
+pains, and gains.
+Card Sorting
+PAIRINGS
+Before
+After
+card sorting
+preference & prioritization

@@ -1,0 +1,29 @@
+{
+  "chapter": "ch08-organizational",
+  "sourceFiles": { "en": "05-give-responsibility-for-disruptive-technologies-to-organizat.txt, 06-match-the-size-of-the-organization-to-the-size-of-the-market.txt, 08-how-to-appraise-your-organizations-capabilities-and-disabili.txt" },
+  "concepts": [
+    { "name": "RPV Theory (Resources, Processes, Values)", "definition": "Capabilities and disabilities come from Resources (assets and people), Processes (how work gets done), and Values (criteria by which priorities and margins are judged). Processes and values often constrain action more than resources." },
+    { "name": "Separate Organization", "definition": "A disruptive opportunity often needs to be placed in an organization whose customers need it and whose cost structure and values fit the small market." },
+    { "name": "Match Organization Size to Market Size", "definition": "A small emerging market cannot satisfy the growth needs of a huge organization; the unit pursuing it must be small enough that small wins matter." }
+  ],
+  "arguments": [
+    { "claim": "Giving disruptive projects to mainstream units usually kills them.", "evidence": "Mainstream processes and values filter projects by existing customer demand, margins, and growth scale, making disruptive opportunities look unattractive." },
+    { "claim": "Resources are the easiest part to move; processes and values are harder.", "evidence": "A company may have engineers and money, but if its decision processes and success metrics reject small low-margin markets, the project still fails." }
+  ],
+  "cases": [
+    { "name": "Separate unit prescription", "context": "Christensen recommends giving disruptive technologies to organizations whose customers need them rather than forcing them through the parent business.", "illustrates": "The organizational home determines whether a project gets oxygen.", "lesson": "Create a business context where the disruptive project's small market and different economics are attractive." }
+  ],
+  "logicChains": [
+    { "description": "Diagnose whether opportunity conflicts with parent values → if conflict exists, create/separate a unit → give it customers that need the technology → size the unit to the emerging market → use metrics appropriate to the foothold.", "sourceHint": "Chapters on organizational responsibility, market size, and capabilities." }
+  ],
+  "terminology": [
+    { "term": "Resources", "definition": "People, technology, cash, brand, information, relationships, and other assets." },
+    { "term": "Processes", "definition": "Patterns of coordination, development, budgeting, selling, and decision-making." },
+    { "term": "Values", "definition": "Criteria that determine what projects, margins, customers, and markets are attractive." }
+  ],
+  "nuance": [
+    "A separate unit is not magic; it works only if it has the right customers, cost structure, and metrics.",
+    "The parent can supply resources while still protecting the new unit from parent processes and values."
+  ],
+  "crossReferences": { "relatedCanvasDefIds": ["portfolio-map", "three-horizons-map"], "relatedStrategyFrameworkSlugs": ["business-model-portfolio-management", "mckinsey-three-horizons", "disruptive-innovation"], "relatedChapters": ["ch06-disruption-model", "ch09-electric-vehicles"] }
+}

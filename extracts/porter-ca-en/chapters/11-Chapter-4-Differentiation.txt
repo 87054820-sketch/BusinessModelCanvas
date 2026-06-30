@@ -1,0 +1,1534 @@
+# Chapter 4: Differentiation
+
+Sources of Differentiation
+A ﬁrm differentiates itself from its competitors when it provides
+something unique that is valuable to buyers beyond simply offering a low
+price. Differentiation allows the ﬁrm to command a premium price, to sell
+more of its product at a given price, or to gain equivalent beneﬁts such as
+greater buyer loyalty during cyclical or seasonal downturns.1 Differentiation
+leads to superior performance if the price premium achieved exceeds any
+added costs of being unique. A ﬁrm’s differentiation may appeal to a broad
+group of buyers in an industry or only to a subset of buyers with particular
+needs. Brooks Brothers appeals to buyers wanting traditional clothing, for
+example, though many buyers view Brooks Brothers clothing as too
+conservative. Differentiation will be treated in general terms in this chapter,
+and Chapter 7 will describe how differences in buyer needs within an
+industry can lead to opportunities for differentiation through focus.
+Differentiation and the Value Chain
+Differentiation cannot be understood by viewing the ﬁrm in aggregate,
+but stems from the speciﬁc activities a ﬁrm performs and how they affect
+the buyer.2 Differentiation grows out of the ﬁrm’s value chain. Virtually any
+value activity is a potential source of uniqueness. The procurement of raw
+materials and other inputs can affect the performance of the end product and
+hence differentiation. For example, Heineken pays particular attention to the
+quality and purity of the ingredients for its beer and uses a constant strain of
+yeast. Similarly, Steinway uses skilled technicians to choose the ﬁnest
+materials for its pianos, and Michelin is more selective than its competitors
+about the grades of rubber it uses in its tires.
+Other successful differentiators create uniqueness through other primary
+and support activities. Technology development activities can lead to
+product designs that have unique product performance, as Cray Research
+has done in supercomputers. Operations activities can affect such forms of
+uniqueness as product appearance, conformance to speciﬁcations, and
+reliability. Perdue, for example, has bolstered its differentiation of fresh
+chickens by careful control of growing conditions and by feeding chickens
+
+
+marigolds to improve their color. The outbound logistical system can shape
+the speed and consistency of deliveries. For example, Federal Express has
+established an integrated logistical system using its Memphis hub that
+yields a level of delivery reliability unheard of prior to its entry into the
+small-parcel delivery business. Marketing and sales activities also
+frequently have an impact on differentiation. Timken’s sales force, for
+example, assists its buyers to use roller bearings more effectively in their
+manufacturing processes.
+Figure 4–1 illustrates how any activity in the value chain can potentially
+contribute to differentiation. Even if the physical product is a commodity,
+other activities can often lead to substantial differentiation. Similarly,
+indirect activities such as maintenance or scheduling can contribute to
+differentiation just as do direct activities such as assembly or order
+processing. For example, a dust and fume free building can dramatically
+improve defect rates in semiconductor manufacturing.
+Value activities representing only a small percentage of total cost can
+nevertheless have a major impact on differentiation. For example,
+inspection may represent only 1 percent of cost, but shipping even one
+defective package of drugs to a buyer can have major negative repercussions
+for a pharmaceutical ﬁrm’s perceived differentiation. Value chains
+developed for purposes of strategic cost analysis, therefore, may not isolate
+all activities that are important for differentiation. Differentiation analysis
+requires a ﬁner division of some value activities, while others may be
+aggregated if they have little differentiation impact.
+A ﬁrm may also differentiate itself through the breadth of its activities,
+or its competitive scope. Crown Cork and Seal offers crowns (bottle caps)
+and ﬁlling machinery plus cans. It thus offers a full line of packaging
+services to its buyers, and its expertise in packaging machinery gives it
+more credibility and access in selling cans. Citicorp’s breadth of activities in
+ﬁnancial services enhances its reputation as well as allowing its sales
+channels to offer a broader product range. A number of other differentiating
+factors can result from broad competitive scope:
+
+
+Figure 4–1. Representative Sources of Differentiation in the Value Chain
+
+
+• ability to serve buyer needs anywhere
+•  simpliﬁed maintenance for the buyer if spare parts and design
+philosophies are common for a wide line
+• single point at which the buyer can purchase
+• single point for customer service
+• superior compatibility among products
+Most of these beneﬁts require consistency or coordination among activities
+if a ﬁrm is to achieve them.
+Differentiation can also stem from downstream. A ﬁrm’s channels can be
+a potent source of uniqueness, and may enhance its reputation, service,
+customer training, and many other factors. In soft drinks, for example,
+independent bottlers are crucial to differentiation. Coca Cola and Pepsi Cola
+spend a great deal of attention and money attempting to upgrade bottlers
+and improve their effectiveness. Coke, for example, has been arranging the
+sale of less effective bottlers to new, more capable owners. Similarly,
+observers credit Caterpillar Tractor’s dealers with providing an important
+source of differentiation for Caterpillar. Cat’s approximately 250 dealers are
+by far the largest in the industry on average, and their size allows them to
+provide extensive service and buyer ﬁnancing. Selective distribution
+through well-chosen outlets has also proven to be an extremely important
+source of differentiation for such ﬁrms as Estée Lauder and Hathaway.
+Firms can enhance the role of channels in differentiation through actions
+such as the following:
+• channel selection to achieve consistency in facilities, capabilities, or
+image
+• establishing standards and policies for how channels must operate
+• provision of advertising and training materials for use by channels
+• providing funding so that channels can offer credit
+Firms often confuse the concept of quality with that of differentiation.
+While differentiation encompasses quality, it is a much broader concept.
+Quality is typically associated with the physical product. Differentiation
+strategies attempt to create value for the buyer throughout the value chain.
+
+
+Drivers of Uniqueness
+A ﬁrm’s uniqueness in a value activity is determined by a series of basic
+drivers, analogous to the cost drivers described in Chapter 3. Uniqueness
+drivers are the underlying reasons why an activity is unique. Without
+identifying them, a ﬁrm cannot fully develop means of creating new forms
+of differentiation or diagnose how sustainable its existing differentiation is.
+The 
+principal 
+uniqueness 
+drivers 
+are 
+the 
+following, 
+ordered
+approximately in terms of their prominence:
+Policy Choices. Firms make policy choices about what activities to
+perform and how to perform them. Such policy choices are perhaps the
+single most prevalent uniqueness driver. Johns Manville chooses to provide
+extensive customer training in installing its rooﬁng products, for example,
+while Grey Poupon chooses to advertise mustard at a substantially higher
+rate of spending than historical industry practice. Much uniqueness,
+therefore, is discretionary.
+Some typical policy choices that lead to uniqueness include:
+• product features and performance offered
+• services provided (e.g., credit, delivery, or repair)
+• intensity of an activity adopted (e.g., rate of advertising spending)
+•  content of an activity (e.g., the information provided in order
+processing)
+•  technology employed in performing an activity (e.g., precision of
+machine tools, computerization of order processing)
+• quality of inputs procured for an activity
+•  procedures governing the actions of personnel in an activity (e.g.,
+service procedures, nature of sales calls, frequency of inspection or
+sampling)
+•  skill and experience level of personnel employed in an activity, and
+training provided
+•  information employed to control an activity (e.g., number of
+temperature, pressure, and variables used to control a chemical
+reaction)
+
+
+Linkages. Uniqueness often stems from linkages within the value chain
+or with suppliers and channels that a ﬁrm exploits. Linkages can lead to
+uniqueness if the way one activity is performed affects the performance of
+the other:
+LINKAGES WITHIN THE VALUE CHAIN. Meeting buyer needs often involves
+coordinating linked activities. For example, delivery time is frequently
+determined not only by outbound logistics but also by the speed of order
+processing and the frequency of sales calls to take orders. Similarly,
+coordination between the sales force and the service organization can lead
+to more responsive customer service. Uniquely meeting buyer needs may
+also require the optimization of linked activities. In a number of industries
+such as copiers and semiconductors, for example, Japanese competitors
+have achieved dramatic reductions in defect rates by modifying every
+activity that inﬂuences defects instead of relying on a single value activity
+such as inspection. Similarly, higher investment in indirect activities such as
+maintenance can improve the performance of direct activities such as
+ﬁnishing or printing.
+SUPPLIER LINKAGES. Uniqueness in meeting buyer needs may also be the
+result of coordination with suppliers. Close coordination with suppliers can
+shorten new model development time, for example, if suppliers tool up for
+producing new parts at the same time as a ﬁrm is completing the design of
+equipment to manufacture the new model. Similarly, missionary sales
+efforts by suppliers to a ﬁrm’s buyers can sometimes help differentiate a
+ﬁrm’s product.
+CHANNEL LINKAGES. Linkages with channels can also lead to uniqueness
+in a variety of ways. By coordinating with channels or jointly optimizing
+the division of activities between the ﬁrm and the channels, uniqueness can
+frequently result. Some examples of how linkages with channels can lead to
+uniqueness are as follows:
+• training channels in selling and other business practices
+• joint selling efforts with channels
+
+
+•  subsidizing for channel investments in personnel, facilities, and
+performance of additional activities.
+Timing. Uniqueness may result from when a ﬁrm began performing an
+activity. Being the ﬁrst to adopt a product image, for example, may preempt
+others from doing so and make the ﬁrm unique. This is one of Gerber’s
+sources of differentiation in baby food. Early regulatory approval for its soft
+contact lens gave Bausch and Lomb its differentiation. In other industries,
+moving late may allow a ﬁrm to employ the most modern technology and
+thereby differentiate. Chapter 5 discusses ﬁrst-mover and late-mover
+advantages in more detail.
+Location. Uniqueness may stem from location. For example, a retail
+bank may have the most convenient branch and automatic teller machine
+locations.
+Interrelationships. The uniqueness of a value activity may stem from
+sharing it with sister business units. Sharing a sales force for both insurance
+and other ﬁnancial products, as some leading ﬁrms are beginning to do,
+may allow the salesperson to offer the buyer better service. The analysis of
+interrelationships is described in Chapter 9.
+Learning and spillovers. The uniqueness of an activity can be the result
+of learning about how to perform it better. Achieving consistent quality in a
+manufacturing process may be learning-driven, for example. As with cost,
+the spillover of learning to competitors erodes its contribution to
+differentiation. 
+Only 
+proprietary 
+learning 
+leads 
+to 
+sustainable
+differentiation.
+Integration. A ﬁrm’s level of integration may make it unique. Integration
+into new value activities can make a ﬁrm unique because the ﬁrm is better
+able to control the performance of the activities or coordinate them with
+other activities. Integration may also provide more activities to be sources
+of differentiation. Providing service in-house instead of leaving it to third
+party suppliers, for example, may allow a ﬁrm to be the only ﬁrm to also
+offer service or to provide service in a unique way compared to competitors.
+
+
+Integration may encompass not only supplier or channel activities, but it
+may involve performing activities currently performed by the buyer. By
+connecting hospitals to its computer system and allowing on-line ordering,
+for example, American Hospital Supply eliminates the need for some buyer
+activities and differentiates itself. Integration also sometimes makes the
+achievement of linkages with suppliers and channels easier. Reducing
+integration relative to competitors may be a source of differentiation in
+some industries. De-integration may exploit the capabilities of suppliers or
+independent channels, for example.
+Scale. Large scale can allow an activity to be performed in a unique way
+that is not possible at smaller volume. For example, Hertz’s scale in car
+rental underlies some of its differentiation. Hertz’s many locations in all
+areas of the United States provide more convenient pick-up and drop-off of
+cars, and faster ﬁeld service. The relevant type of scale that leads to
+differentiation will vary—with Hertz it is number of rental and service
+locations, while in another industry it might be the scale of plant that allows
+precise tolerances due to high speed equipment. In some cases, however,
+scale can work against the uniqueness of an activity. Scale may, for
+example, reduce the ﬂexibility of fashion-related ﬁrms to buyer needs.
+Institutional factors. Institutional factors sometimes play a role in
+allowing a ﬁrm to be unique. Similarly, a good relationship with its union
+may allow a ﬁrm to establish unique job deﬁnitions for employees.
+The drivers of uniqueness vary for each activity and may vary across
+industries for the same activity. The drivers interact to determine the extent
+to which an activity is unique. A ﬁrm must examine each of its areas of
+uniqueness to see what driver or drivers underlie it. This will be critical to
+the sustainability of differentiation because some uniqueness drivers
+provide more sustainability than others. Policy choices may be easier for
+competitors to imitate than uniqueness stemming from interrelationships or
+exploiting linkages, for example. Understanding what allows it to be unique
+will also ensure that a ﬁrm does not undermine the causes. Finally, the
+drivers of uniqueness may suggest new sources of differentiation.
+
+
+The Cost of Differentiation
+Differentiation is usually costly. A ﬁrm must often incur costs to be
+unique because uniqueness requires that it perform value activities better
+than competitors. Providing superior applications engineering support
+usually requires additional engineers, for example, while a highly skilled
+sales force typically costs more than a less skilled one. Achieving greater
+product durability than competitors may well require more material content
+or more expensive materials—Rockwell’s water meters are more durable
+than competitors’ because they employ more bronze.
+Some forms of differentiation are clearly more costly than others.
+Differentiation that results from superior coordination of linked value
+activities may not add much cost, for example, nor may better product
+performance that results from closer parts tolerances achieved through an
+automated machining center. In diesel locomotives, the higher tolerances
+achieved through automation improve fuel efﬁciency at low additional cost.
+Similarly, differentiating through having more product features is likely to
+be more costly than differentiating through having different but more
+desired features.
+The cost of differentiation reﬂects the cost drivers of the value activities
+on which uniqueness is based. The relationship between uniqueness and
+cost drivers takes two related forms:
+•  what makes an activity unique (uniqueness drivers) can impact cost
+drivers
+• the cost drivers can affect the cost of being unique
+In pursuing differentiation, a ﬁrm often affects the cost drivers of an
+activity adversely and deliberately adds cost. Moving an activity close to the
+buyer, for example, may raise cost because of the effect of the location cost
+driver. Smith International achieved differentiation in drill bits by
+maintaining large and more accessible inventories in the ﬁeld, raising its
+cost.
+At the same time as uniqueness often raises cost by affecting the cost
+drivers, the cost drivers determine how costly differentiation will be. A
+ﬁrm’s position vis-à-vis cost drivers will determine how costly a particular
+
+
+differentiation strategy will be relative to competitors. The cost of providing
+the most sales force coverage, for example, will be affected by whether
+there are economies of scale in the operation of the sales force. If
+economies of scale exist they may reduce the cost of increased coverage
+and make such coverage less costly for a ﬁrm with a large local market
+share.
+Scale, interrelationships, learning, and timing are particularly important
+cost drivers in affecting the cost of differentiation. Though scale can itself
+lead to differentiation, it most often affects the cost of differentiation. Scale
+can determine the cost of a ﬁrm’s policy choice to advertise heavily, for
+example, or the cost of rapid introduction of new models. Sharing also can
+reduce the cost of differentiation. IBM’s highly trained, experienced sales
+force is made less expensive by sharing it among a variety of related ofﬁce
+products, for example. A ﬁrm moving faster down the learning curve in a
+differentiating activity will gain a cost advantage in differentiating, while
+moving early may lower the cost of differentiating in areas such as
+advertising where there is an accumulating stock of goodwill or other
+intangible assets.
+The cost drivers thus play an important role in determining the success
+of differentiation strategies and have important competitive implications. If
+competitors have different relative positions vis-à-vis important cost drivers,
+their cost of achieving uniqueness in the affected activity will differ.
+Similarly, different forms of differentiation are relatively more or less costly
+for a ﬁrm depending on its situation vis-à-vis the cost drivers of the affected
+activities. Manufacturing parts with higher precision through automation
+can be less costly for a ﬁrm that can share the computerized machining
+center via interrelationships than for a ﬁrm that cannot. Similarly, Black &
+Decker has a faster rate of new product introduction than competitors in
+power tools but this rate is proportionally less costly for Black & Decker
+because of its leading worldwide market share. In the extreme, a ﬁrm may
+have such a large cost advantage in differentiating a particular value activity
+that its cost in that activity is actually lower than a ﬁrm not attempting to be
+unique in the activity. This is one reason why a ﬁrm can sometimes be both
+low cost and differentiated simultaneously, as was discussed in Chapter 1.
+Sometimes making an activity unique also simultaneously lowers cost.
+For example, integration may make an activity unique but also lower cost if
+
+
+integration is a cost driver. Where achieving differentiation and reducing
+cost can take place simultaneously, however, this suggests that (1) a ﬁrm
+has not been fully exploiting all the opportunities to lower cost; (2) being
+unique in an activity was formerly judged undesirable; or (3) a signiﬁcant
+innovation has occurred which competitors have not adopted, such as a new
+automated process that both lowers cost and improves quality.
+Firms often fail to exploit opportunities to lower cost through
+coordination of linked activities that also raises differentiation. Better
+coordination of quotations, procurement, and manufacturing scheduling
+may lower inventory cost at the same time as it shortens delivery lead time,
+for example. More extensive inspection by suppliers may lower a ﬁrm’s
+inspection costs at the same time that the reliability of the end product is
+increased. Unexploited opportunities to reduce cost through linkages that
+also affect quality, in fact, are the reason underpinning the popular assertion
+that “quality is free.” The possibility of simultaneously raising
+differentiation and reducing cost through linkages exists, however, because
+the ﬁrm has not been fully exploiting cost reduction opportunities and not
+because differentiation is not costly.
+If a ﬁrm has been aggressively reducing its cost, therefore, attempts to
+achieve uniqueness usually raise cost. Similarly, once competitors imitate a
+major innovation a ﬁrm can remain differentiated only by adding cost. In
+assessing the cost of differentiation, then, a ﬁrm must compare the cost of
+being unique in an activity with the cost of being equal to competitors.
+Buyer Value and Differentiation
+Uniqueness does not lead to differentiation unless it is valuable to the
+buyer. A successful differentiator ﬁnds ways of creating value for buyers
+that yield a price premium in excess of the extra cost. The starting point for
+understanding what is valuable to the buyer is the buyer’s value chain.
+Buyers have value chains consisting of the activities they perform just as a
+ﬁrm does, as discussed in Chapter 2.3 A ﬁrm’s product or service is a
+purchased input to its buyer’s value chain. Steel is a raw material that is
+typically cut, bent, machined, or otherwise converted in its buyer’s
+production process to become part of components and ultimately end
+
+
+products, for example. The buyer’s value chain determines the way in which
+a ﬁrm’s product is actually used as well as the ﬁrm’s other effects on the
+buyer’s activities. These determine the buyer’s needs and are the
+underpinnings of buyer value and differentiation.
+Although buyer value chains are easiest to visualize for industrial,
+commercial, or institutional buyers, individual consumers also have value
+chains. A consumer’s value chain represents the sequence of activities
+performed by a household and its various members in which the product or
+service ﬁts. To understand how a product ﬁts into a household value chain it
+is usually necessary to identify those activities in which a product is directly
+or indirectly involved, typically not all the activities a household performs.
+A television serves as entertainment for various members of a household
+during some periods of the day, and serves as a background noise during
+others. The set is typically switched on and off a number of times each day
+and the channel may be changed frequently. Traveler’s checks are typically
+bought in quantity at a bank and then used occasionally in the course of a
+vacation or business trip. Redeeming any extra checks after the trip involves
+a visit to the bank, which means that many checks are saved for future trips
+instead. A commercial, institutional, or industrial buyer’s value chain
+reﬂects its strategy and approach to implementation, while a household’s
+value chain reﬂects its members’ habits and needs. What is valuable for
+either type of buyer, however, grows out of how a product and the ﬁrm
+supplying it affect the buyer’s chain.
+Buyer Value
+A ﬁrm creates value for a buyer that justiﬁes a premium price (or
+preference at an equal price) through two mechanisms:4
+• by lowering buyer cost5
+• by raising buyer performance
+For industrial, commercial, and institutional buyers, differentiation
+requires that a ﬁrm be uniquely able to create competitive advantage for its
+buyer in ways besides selling to them at a lower price. If a ﬁrm is able to
+
+
+lower its buyer’s cost or enhance its buyer’s performance, the buyer will be
+willing to pay a premium price. If the components supplied by a well
+respected bicycle parts supplier allow a bicycle assembler to improve
+differentiation and thereby charge a higher price, for example, the
+assembler will be willing to pay a premium for the components. Similarly,
+the fact that Kodak’s Ektaprint copier lowers the cost of a ﬁnished set of
+collated documents with a recirculating document feeder and an in-line
+automatic stapler that reduces the buyer’s personnel cost means that the
+buyer is willing to pay a premium for the copier. In both instances, the ﬁrm
+was able to enhance the competitive advantage of its buyer even though not
+selling its product at a cheaper price.
+The principle is the same for households and individual consumers,
+though the measurement of buyer cost and particularly buyer performance
+may be more subtle. For household buyers, the cost of a product includes
+not only ﬁnancial costs but also time or convenience costs. The cost of time
+for a consumer reﬂects the opportunity cost of using it elsewhere, as well as
+the implicit cost of frustration, annoyance, or exertion. Buyer value results
+from lowering any of these costs for the buyer. A refrigerator that uses less
+electricity than other refrigerators can command a premium. A vacuum
+cleaner that saves vacuuming time and reduces exertion is also valuable to
+the household buyer. Offering direct marketing that saves the buyer
+shopping time may not be valuable if the buyer enjoys shopping, however.
+Raising buyer performance for consumers involves raising their level of
+satisfaction or meeting their needs. If a TV set’s better picture quality and
+faster warmup time lead to more satisfaction in watching it relative to
+competitors’ sets, for example, the buyer will be willing to pay a premium.
+Status or prestige are important needs just as are the features of a product or
+its quality. Although it may be difﬁcult to value buyer performance for
+consumers, their value chains will suggest the important dimensions of
+satisfaction.
+Industrial, commercial, and institutional buyers sometimes resemble
+consumers in instances where their objectives are not solely proﬁts or
+revenue growth. Buyers may value a supplier that provides satisfaction or
+prestige for executives or other employees even if it does not contribute to
+the proﬁt of the company. This reﬂects the differences that often exist
+between employee and company goals. Similarly, a hospital values a
+
+
+diagnostic device that yields better treatment even if the hospital does not
+earn higher proﬁt as a result. This reﬂects both the goal of providing quality
+patient care and the fact that a large number of hospitals are nonproﬁt
+institutions. Many organizations have other goals in addition to proﬁtability
+even if they are proﬁt making, which may enter into buyer value.
+The Value Chain and Buyer Value
+A ﬁrm lowers buyer cost or raises buyer performance through the impact
+of its value chain on the buyer’s value chain. A ﬁrm may affect the buyer’s
+chain by simply providing an input to one buyer activity. Frequently,
+however, a ﬁrm’s product will have both direct and indirect impacts on the
+buyer’s chain that go beyond the activity in which the product is actually
+used. For example, weight is important in a typewriter that is moved from
+place to place though it is not relevant if one views the buyer activity simply
+as typing. Moreover, a ﬁrm typically impacts the buyer not only through its
+product but also through such activities as the logistical system, order entry
+system, sales force, and applications engineering group. Even ﬁrm activities
+representing a small fraction of total cost can have a substantial impact on
+differentiation. Sometimes the buyer has individual contact with value
+activities of the ﬁrm (e.g., the sales force) while in other cases the buyer
+only observes the outcome of a group of activities (e.g., the ultimate on-
+time or late delivery). Thus, the value a ﬁrm creates for its buyer is
+determined by the whole array of links between the ﬁrm’s value chain and
+its buyer’s value chain, represented schematically in Figure 4–2.
+Figure 4–2. Representative Linkages Between the Firm and the Buyer’s Value Chain
+
+
+Heavy trucks offer a useful example of multiple links. A heavy truck
+directly inﬂuences its buyer’s logistical costs—a function of the truck’s
+carrying capacity, ease of loading and unloading, fuel costs, and
+maintenance costs. The truck will also have indirect effects on its buyer’s
+other costs. Its capacity will inﬂuence the frequency with which the buyer
+makes deliveries. The truck may contribute product quality through the
+amount of shaking it subjects the cargo to, as well as the temperature and
+humidity conditions in transit. The truck may also affect the buyer’s
+packaging costs, a function of the protection required to avoid damage.
+Finally, the truck may incrementally affect brand identity through its
+appearance and the visibility of the logo painted on the side.
+Not only will the truck itself affect the buyer’s value chain, but several
+other value activities of the truck manufacturer will probably affect the
+buyer as well. Spare parts availability will affect the downtime experienced
+by the buyer. Credit policies will affect the ﬁnancing cost of the truck. The
+quality of the truck manufacturer’s sales force may well determine their
+helpfulness in suggesting new maintenance procedures and truck utilization
+practices. All these links between a truck manufacturer’s value activities
+and the buyer may potentially add to or subtract from buyer cost or
+performance. The principle also holds true for household buyers.
+The links between a ﬁrm and its buyer’s value chain that are relevant to
+buyer value depend on how the ﬁrm’s product is actually used by the buyer,
+not necessarily how it was intended to be used. Even the most carefully
+designed product can yield unsatisfactory performance if a buyer does not
+understand how to install, operate, or maintain it or if it is used for a
+purpose for which it was not intended. For example, a housewife may get
+terrible results from a frozen food product if it is cooked at the wrong
+temperature. Similarly, a machine can malfunction quickly if it is not oiled
+in the right place.
+Every impact of a ﬁrm on its buyer’s value chain, including every link
+between ﬁrm and buyer value activities, represents a possible opportunity
+for differentiation. The more direct and indirect impacts a product has on its
+buyer’s value chain, the richer the possibilities for differentiation tend to be
+and the greater the overall level of achievable differentiation. A truck
+manufacturer with a sophisticated understanding of how it impacts its
+buyer’s value chain, for example, can not only design the truck to provide
+
+
+greater beneﬁts to the buyer, but can perform other value activities such as
+service, spare parts supply, and ﬁnancing to be more valuable to the buyer.
+Differentiation, then, grows out of all the links between a ﬁrm and its
+buyer in which the ﬁrm is unique. The value of being unique in a value
+activity is its direct and indirect impact on the buyer’s cost or performance.
+A ﬁrm’s overall level of differentiation is the cumulative value to the buyer
+of the uniqueness throughout its value chain. This cumulative value can be
+calculated and provides the upper limit of the price premium the ﬁrm can
+command relative to its competitors. Since the ﬁrm must necessarily share
+some of the value it creates with its buyer in order to give the buyer an
+incentive to purchase, the actual price premium will be somewhat less in
+practice.
+Lowering Buyer Cost
+Anything a ﬁrm can do that lowers the buyer’s total cost of using a
+product or other buyer costs represents a potential basis for differentiation.
+Actions that lower the cost of buyer value activities representing a
+signiﬁcant fraction of the buyer’s cost constitute the most signiﬁcant
+opportunities. There are frequently many ways to lower buyer cost if a ﬁrm
+has a sophisticated understanding of how buyers use its product and how its
+various marketing, delivery, and other activities affect buyer costs.
+A ﬁrm can lower its buyer’s cost in a number of ways:6
+• Lower delivery, installation, or ﬁnancing cost
+• Lower the required rate of usage of the product
+•  Lower the direct cost of using the product, such as labor, fuel,
+maintenance, required space
+•  Lower the indirect cost of using the product, or the impact of the
+product on other value activities. For example, a light component may
+reduce the transport costs of the end product
+•  Lower the buyer cost in other value activities unconnected with the
+physical product
+• Lower the risk of product failure and thus the buyer’s expected cost of
+failure.
+
+
+Table 4–1 lists some of the ways in which a ﬁrm’s product itself can
+lower the buyer’s direct cost of use. In addition to lowering buyer cost
+through its product characteristics as illustrated by the examples in Table 4–
+1, a ﬁrm can lower its buyer’s cost of use through many other value
+activities. Reliability of deliveries reduces buyer inventory, and short lead
+times in supplying spare parts reduce downtime. Ordering and billing
+procedures can reduce the buyer’s accounting and procurement costs.
+American Hospital Supply’s on-line ordering system for hospitals, for
+example, allows purchase orders to be placed by less skilled, lower paid
+clerks instead of purchasing agents. A ﬁrm can also provide buyers with
+advice or technical assistance that reduces their costs. Intel, for example,
+has a development system to help buyers design its microprocessors
+cheaply and rapidly into their products. A ﬁrm can also take over buyer
+functions, in effect forward integrating into the buyer’s value chain. In
+wholesaling, for example, Napco stocks shelves, prices goods, and replaces
+slow-moving items for its buyers.7
+TABLE 4–1 Illustrative Product Characteristics that Lower the
+Buyers’ Direct Cost of Use
+DIFFERENTIATING FACTOR
+EXAMPLE
+Reduced usage of the product to achieve an equivalent
+beneﬁt (including scrap percentage)
+Cut-to-size steel sheets
+Faster time to process
+Quick attaching fasteners
+Lower labor costs of use (lower labor inputs, less training,
+or lower skilled labor required)
+Automatic dialers
+Reducing quantity of inputs or ancillary equipment
+required (e.g. fuel, electricity, required shielding from
+interference, etc.)
+Fuel-efﬁcient refrigerator
+Lower required maintenance/spare parts or ease of
+maintenance
+Reliable copiers
+Less downtime or idle time
+Fast-loading cargo ships
+Less required adjustment or monitoring
+Uniform-quality paints
+Lower failure cost or risk
+Blowout preventers for oil wells
+Lower installation costs
+Single-ply rooﬁng material
+
+
+Less incoming inspection required
+Semiconductors
+More rapid setup time
+Programmable machine tools
+Faster processing time
+Tailored aluminum alloys
+Reduced risk of damage of other products
+Filtration equipment
+Higher trade-in value
+Durable cars
+Compatibility with more types of ancillary equipment
+Personal computers
+A number of more extended examples will illustrate how ﬁrms have
+lowered their buyers’ costs and achieved differentiation. Kodak’s copiers,
+described earlier, lower the buyer’s cost of making collated and stapled
+copies. The industry leader Xerox was more concerned with copying speed
+itself, which failed to recognize the buyer’s full cost of using copiers. In the
+moving industry, Bekins has offered guaranteed pickup and delivery dates, a
+ﬁxed price for a move that is quoted in advance, a $100 late payment to the
+buyer if the move does not occur on time, and reimbursement for damaged
+goods based on their replacement costs instead of purchase price. All these
+lower the buyer’s direct and indirect cost of a move (and increase peace of
+mind as well). In fasteners, Velcro uses a system involving many small
+plastic hooks that connect to a ﬁbrous pad. Velcro fasteners are easier to
+install than other forms of fastening devices and eliminate the need for
+skilled labor in the fastening steps on the buyer’s assembly line.
+In seeking opportunities to lower buyer costs, a ﬁrm must chart in detail
+how its product moves through or affects the buyer’s value chain, including
+the 
+buyer’s 
+inventory, 
+handling, 
+technology 
+development, 
+and
+administrative activities. It must also be familiar with all other products or
+inputs its product is used with, and understand how its product interfaces
+with them. The ﬁrm must also identify every other value activity in its value
+chain that affects the buyer’s chain.
+Raising Buyer Performance
+Raising buyer performance will depend on understanding what is
+desirable performance from the buyer’s viewpoint. Raising the performance
+of industrial, commercial, and institutional buyer depends on what creates
+
+
+differentiation with their buyers. Thus the needs of the buyer’s buyer must
+be understood, requiring the same analysis as the analysis of buyer value. A
+truck sold to a buyer who is a consumer goods company that uses it to carry
+goods to retail stores provides an example. If the retail stores desire
+frequent deliveries, the consumer goods company will be very interested in
+a truck with carrying capacity to make frequent deliveries at reasonable
+cost. Similarly, in selling to automobile manufacturers Velcro achieves
+differentiation because its fasteners are more ﬂexible and allow interior
+design options for cars that are appreciated by consumers.
+Raising performance of industrial, commercial, or institutional buyers
+can also be based on helping them meet their noneconomic goals such as
+status, image, or prestige. In heavy trucks, for example, PACCAR has
+achieved a high level of differentiation for its Kenworth “K-Whopper”
+trucks by careful handcrafting and by tailoring them to individual owner
+speciﬁcations. These have little to do with the economic performance of the
+truck. However, many Kenworth buyers are owner-operators who derive
+value from the appearance and brand image of their trucks.
+For products sold to consumers, raising buyer performance will be a
+function of better satisfying needs. American Express traveler’s checks are
+used in a stream of consumer activities in which cash needs are irregular,
+travel plans change, banks are not always available, and a risk of theft or
+loss exists. American Express differentiates itself because its buyers value
+the security of redemption anywhere as well as rapid replacement of lost
+checks. American Express provides easy redemption anywhere via many
+ofﬁces throughout the world that operate long hours.
+Buyer Perception of Value
+Whatever the value a ﬁrm provides its buyers, buyers often have a
+difﬁcult time assessing it in advance. Even careful inspection and test
+driving of a truck, for example, does not allow the buyer to assess
+completely its comfort, durability, fuel usage, and repair frequency. A
+detailed understanding of how the physical product affects a buyer’s cost or
+performance often requires extensive experience in its use. A buyer faces an
+even more difﬁcult challenge in knowing how all the other activities a ﬁrm
+
+
+performs will affect buyer value. Moreover, a buyer cannot always
+completely or accurately gauge the performance of a ﬁrm and its product
+even after the product has been purchased and used.
+Buyers, then, frequently do not fully understand all the ways in which a
+supplier actually or potentially might lower their costs or improve
+performance—that is, buyers often do not know what they should be
+looking for in a supplier. While buyers are more likely to understand the
+direct impacts of a ﬁrm on their value chains, they often fail to recognize
+the indirect impacts or the ways in which other supplier activities besides
+the product affect them. Buyers can sometimes perceive too much value just
+as they can fail to perceive enough. For example, buyers sometimes see
+only the price of a product when measuring its value and do not add up
+other, more hidden, costs such as freight or installation. The buyer’s
+perception of a ﬁrm and its product, therefore, can be as important as the
+reality of what the ﬁrm offers in determining the effective level of
+differentiation achieved. Moreover, buyers’ incomplete knowledge of what
+is valuable to them can become an opportunity for differentiation strategy,
+since a ﬁrm may be able to adopt a new form of differentiation
+preemptively and educate buyers to value it.
+A buyer’s incomplete knowledge implies that the differentiation actually
+achieved may well be based in part on the factors used by the buyer to infer
+or judge whether a ﬁrm will lower its cost or improve its performance
+relative to competitors (or is doing so currently). Buyers use such
+indications as advertising, reputation, packaging, the professionalism,
+appearance, and personality of supplier employees, the attractiveness of
+facilities, and information provided in sales presentations to infer the value
+a ﬁrm will or does create. I term such factors that buyers use to infer the
+value a ﬁrm creates signals of value.
+Some signals of value require ongoing expenditure by a ﬁrm (e.g.,
+packaging, advertising) while others reﬂect the stock of goodwill or
+reputation a ﬁrm has built up over time. Similarly, some signals of value are
+not directly controlled by the ﬁrm at all (e.g., word of mouth). Signaling
+may be as necessary, in some industries, to expose hidden costs of a product
+on which the ﬁrm has an advantage over competitors as it is to expose
+unrecognized beneﬁts. In some, if not many, industries, signals of value are
+as important as the actual value created in determining realized
+
+
+differentiation. This is particularly true where a ﬁrm’s impact on buyer cost
+or performance is subjective, indirect, or hard to quantify, when many
+buyers are ﬁrst-time buyers, buyers are unsophisticated, or repurchase is
+infrequent. Good examples would be legal services, cosmetics, and
+consulting. However, the need to signal value is present in virtually every
+industry.
+Buyers will not pay for value that they do not perceive, no matter how
+real it may be. Thus, the price premium a ﬁrm commands will reﬂect both
+the value actually delivered to its buyer and the extent to which the buyer
+perceives this value. This is illustrated schematically in Figure 4–3. A ﬁrm
+that delivers only modest value but signals it more effectively may actually
+command a higher price than a ﬁrm that delivers higher value but signals it
+poorly.
+In the long run, the upper limit of the price premium a ﬁrm can
+command reﬂects its actual impact on buyer value—impact on buyer cost
+and performance relative to competitors. Through effective signaling of
+value, a ﬁrm may be able to command a price in excess of true value for a
+time. Eventually, however, the failure of a ﬁrm to deliver perceived value to
+match its price tends to become known, partly through the efforts of
+competitors.8 The converse is less true, however. By failing to signal its
+value effectively, a ﬁrm may never realize the price premium its actual value
+deserves.
+
+
+Figure 4–3. Actual Versus Perceived Buyer Value
+Buyer Value and the Real Buyer
+A ﬁrm or household does not purchase a product; individual decision
+makers do. Both actual value and signals of value are assessed and
+interpreted by these decision makers. The identity of the speciﬁc person or
+persons who make the purchase decision will inﬂuence, if not determine,
+the value attached to a product. The decision maker may not necessarily be
+the person who pays for the product (e.g., the doctor, not the patient,
+chooses drugs) and may be different from the user (e.g., the purchasing
+agent chooses a product used in the plant). The channel may also make its
+own decision about whether to stock a ﬁrm’s product and whether the ﬁrm
+is a desirable supplier.
+Different decision makers will value different things about a supplier and
+use different signals to assess them. A purchasing agent may not value
+reliability as highly as a plant manager, for example, because the purchasing
+agent is more detached from the consequences of product failure. The
+purchasing agent may be motivated more to keep the cost of purchase to a
+minimum. There may also be more than one decision maker for a product.
+Both husband and wife typically decide on buying a house, for example,
+and travel agents and tour brokers all can play a role in choosing an airline
+or resort hotel. Similarly, the purchasing department and plant engineer
+often jointly choose pieces of production equipment. A number of
+individuals frequently inﬂuence the decision maker though they may not
+participate in the decision directly. Such individuals may be able to veto a
+supplier, despite the fact that they do not have the power to choose.
+Identifying the value a ﬁrm creates for the buyer and the signals of value
+used by the buyer, then, rests on determining the identity of the real buyer.
+The process of identifying the real buyer often suggests new dimensions of
+performance that are not immediately apparent if the buyer is viewed as the
+ﬁrm or household. These can include such factors as prestige, personal
+relationships with supplier personnel that are valued in their own right, and
+the desire to avoid personal risk in the purchase decision by choosing a
+well-known supplier. IBM has exploited its position as a “safe” choice as a
+supplier, for example, as has Kodak in amateur photography. The expertise
+
+
+and sources of information available to the real buyer will also shape what
+signals of value will be convincing—an engineer might use technical
+publications and advertising in technical journals as signals while an
+accounting clerk might be more swayed by polished salespeople and glossy
+brochures.
+Buyer Purchase Criteria
+Applying these fundamentals of buyer value to a particular industry
+results in the identiﬁcation of buyer purchase criteria—speciﬁc attributes of
+a ﬁrm that create actual or perceived value for the buyer. Buyer purchase
+criteria can be divided into two types:
+•  Use criteria. Purchase criteria that stem from the way in which a
+supplier affects actual buyer value through lowering buyer cost or
+raising buyer performance. Use criteria might include such factors as
+product quality, product features, delivery time, and applications
+engineering support.
+• Signaling criteria. Purchase criteria that stem from signals of value, or
+means used by the buyer to infer or judge what a supplier’s actual
+value is. Signaling criteria might include factors such as advertising,
+the attractiveness of facilities, and reputation.
+Use criteria are speciﬁc measures of what creates buyer value. Signaling
+criteria are measures of how buyers perceive the presence of value. While
+use criteria tend to be more oriented to a supplier’s product, outbound
+logistics and service activities, signaling criteria often stem from marketing
+activities. Nonetheless, every functional department of a ﬁrm (and most
+every value activity) can affect both.
+The price premium a ﬁrm can command will be a function of its
+uniqueness in meeting both use and signaling criteria. Addressing use
+criteria without also meeting signaling criteria, a common error, will
+undermine a buyer’s perception of a ﬁrm’s value. Addressing signaling
+criteria without meeting use criteria will also usually not succeed because
+buyers will eventually realize that their substantive needs have gone unmet.
+
+
+The distinctions among use and signaling criteria are often complex,
+since many of a ﬁrm’s activities contribute to meeting use criteria as well as
+serve as signals of value. A polished sales force, for example, may both
+signal value and be a valuable source of applications knowledge that will
+lower the buyer’s cost. Similarly, brand reputation may be valuable to a
+buyer because it removes any blame if a supplier does not perform (“How
+can you blame me for selecting IBM?”). Despite such situations, however, it
+is vital to separate use and signaling criteria and the ﬁrm’s activities that
+contribute to both, since only use criteria represent true sources of buyer
+value. Buyers do not pay for signals of value per se. A ﬁrm must understand
+how well it meets use criteria and the value created in order to determine an
+appropriate price premium. The value of meeting signaling criteria is
+measured differently. The value of a signaling criterion is how much it
+contributes to the buyer perceiving the value created in meeting use criteria.
+USE CRITERIA
+Use criteria grow out of links between a ﬁrm’s value chain and its
+buyer’s value chain, as described earlier. Because these links are numerous,
+there are often many use criteria that go well beyond characteristics of the
+physical product. Use criteria can encompass the actual product (e.g., Dr
+Pepper’s taste difference from Coca-Cola and Pepsi), or the system by
+which a ﬁrm delivers and supports its product, even if the physical product
+is undifferentiated. While the distinction between a product and other value
+activities may only be a matter of degree, it remains an important one since
+other value activities often provide more dimensions on which to
+differentiate than the physical product. Other value activities besides those
+associated with the product can represent an important source of
+differentiation because many ﬁrms tend to be preoccupied with the physical
+product. Use criteria can also include both the speciﬁcations achieved by a
+ﬁrm’s product (or other value activities) as well as the consistency with
+which it meets those speciﬁcations (conformance). Conformance may be as
+important as or more important than speciﬁcations, although it too is often
+overlooked as a differentiating factor.
+Use criteria can also include intangibles such as style, prestige, perceived
+status, and brand connotation (e.g., designer jeans), particularly in
+
+
+consumer goods. Intangible use criteria often stem from purchase
+motivations that are not economic in the narrow sense. Smirnoff Vodka’s
+ability to achieve a premium price for a product that is essentially a
+commodity stems largely from the social context in which much drinking
+takes place. Buyers want to be seen consuming sophisticated vodka or to
+serve vodka perceived as such by their guests. While intangible use criteria
+are usually associated with consumers, they can be equally important with
+other buyers. Owning a Gulfstream III business jet can lead to considerable
+prestige for executives with their peers, for example. Intangible use criteria
+are most important in industrial, commercial, or institutional products
+where the real buyer is an individual with considerable discretion in
+purchasing.
+Finally, use criteria also may encompass the characteristics of
+distribution channels, or downstream value. Since channels can contribute
+to differentiation, use criteria must reﬂect these in areas such as channel-
+provided service, and credit provided by channels. In addition, channels
+will have their own use criteria that measure sources of value in a ﬁrm’s
+dealings with them. For example, channels will often want credit,
+responsiveness to inquiries, or technical support that the end buyer may not
+notice at all.
+Since the performance of a ﬁrm in meeting use criteria may also be
+affected by how the buyer actually uses a product, part of a ﬁrm’s challenge
+is to ensure that its product is actually used in a way that allows it to
+perform to its capabilities. This can be inﬂuenced by product design,
+packaging, and training. Flow control valves, for example, are often
+designed so they cannot be overtorqued. Factors that improve the chances
+that a product is used as intended often become use criteria in their own
+right. They may be potential bases for differentiation since ﬁrms often
+assume that their products are used as intended.
+SIGNALING CRITERIA
+Signaling criteria reﬂect the signals of value that inﬂuence the buyer’s
+perception of the ﬁrm’s ability to meet its use criteria. Activities a ﬁrm
+performs, as well as other attributes, can be signaling criteria. Signaling
+criteria may help a particular supplier to be considered and/or may play an
+
+
+important role in the buyer’s ﬁnal purchase decision. Typical signaling
+criteria include:
+• reputation or image
+• cumulative advertising
+• weight or outward appearance of the product
+• packaging and labels
+• appearance and size of facilities
+• time in business
+• installed base
+• customer list
+• market share
+• price (where price connotes quality)
+• parent company identity (size, ﬁnancial stability, etc.)
+• visibility to top management of the buying ﬁrm
+Often signaling criteria can be quite subtle. For example, the paint job on
+a medical instrument may have an important impact on the buyer’s
+perception of its quality even though the paint job has little or no impact on
+the instrument’s performance. Similarly, Arm & Hammer’s brand extension
+into detergents has been perceived as differentiated in part because a box of
+it is heavier than competitors’ products even though it yields the same
+number of washes.
+Signaling criteria are the most important when buyers have a difﬁcult
+time measuring a ﬁrm’s performance, they purchase the product
+infrequently, or the product is produced to buyer speciﬁcations and hence
+past history with other buyers is an incomplete indication of the future. In
+professional services, for example, signaling criteria are extremely
+important. Services are typically customized and actually performed only
+after the buyer has purchased them. As a result, successful professional
+service ﬁrms pay very close attention to such things as ofﬁce decor and the
+appearance of employees. Another industry where signaling criteria are
+important is pianos, where many buyers are not sophisticated or secure
+enough to judge quality very accurately. Steinway, the differentiated
+
+
+producer, has recognized the use of pianos by concert pianists as a powerful
+signaling criterion. Steinway maintains a “piano bank” of grand pianos all
+over the United States that approved artists can use for concerts at a
+nominal cost.9 As a result, Steinway has developed excellent artist
+relationships, and a large percentage of concerts are performed on Steinway
+pianos.
+Signaling criteria also grow out of the need to reinforce the buyer’s
+perception of a ﬁrm even after the purchase of the product. Buyers often
+need continued reassurance that they made a good decision in choosing the
+ﬁrm and the product. They may also need education to help them evaluate
+the extent to which a product is meeting their use criteria. This is because
+buyers often remain unable to discern how well a product has met their use
+criteria even after purchase, and may have insufﬁcient data or may not pay
+enough attention to notice product performance. Regular communication
+that describes a ﬁrm’s contribution for its buyers can often have a major
+impact on differentiation.10
+Some signaling criteria are associated with particular use criteria, while
+others are more generalized signals that a supplier will provide value to the
+buyer. Advertising may emphasize product characteristics, for example,
+while a ﬁrm’s reputation may imply to some buyers that many of their
+criteria will be satisﬁed. It is important to attempt to draw the connections
+between signals of value and the particular use criteria they are signaling.
+This will both help in identifying additional signals of value, and help the
+ﬁrm understand exactly those attributes its signaling should convey. If a
+ﬁrm recognizes that its customer list is a signal of service reliability, for
+example, it can present the list in a form that emphasizes this.
+Identifying Purchase Criteria
+Identiﬁcation of purchase criteria begins by identifying the decision
+maker for a ﬁrm’s product and the other individuals that inﬂuence the
+decision maker. The channels may be an intermediate buyer that must be
+analyzed as well. Use criteria should be identiﬁed ﬁrst, because they
+measure the sources of buyer value and also often determine signaling
+criteria. A number of parallel approaches should be employed to identify
+
+
+use criteria. Internal knowledge of the buyer’s needs constitutes an initial
+source of use criteria. However, conventional wisdom may color internal
+perception of use criteria; an internal analysis alone is insufﬁcient. No
+analysis of buyer purchase criteria should ever be accepted unless it
+includes some direct contact with the buyer. However, even talking to
+buyers, as essential as it is, is insufﬁcient because buyers often do not fully
+understand all the ways in which a ﬁrm can affect their cost or performance
+and they may also not tell the truth. In any serious effort to understand
+buyer purchase criteria, then, a ﬁrm must identify the buyer’s value chain
+and perform a systematic analysis of all existing and potential linkages
+between a ﬁrm’s value chain and its buyer’s chain. This sort of analysis can
+not only uncover unrecognized use criteria, but also show how to assess the
+relative weight of well-known use criteria.
+Use criteria must be identiﬁed precisely in order to be meaningful for
+developing differentiation strategy. Many ﬁrms speak of their buyers’ use
+criteria in vague terms such as “high quality” or “delivery.” At this level of
+generality, a ﬁrm cannot begin to calculate the value of meeting a use
+criterion to the buyer, nor can the ﬁrm know how to change its behavior to
+increase buyer value. Quality could mean higher speciﬁcations or better
+conformance, for example. For McDonald’s, consistency of hamburger and
+french fry quality over time and across locations is important as is taste and
+portion size. Improving these two things involves very different actions by a
+ﬁrm. Service can also mean many things, including backing of claims,
+repair capability, response time to service requests, and delivery time.
+Good performance in meeting each use criteria should be quantiﬁed if
+possible. For example, the quality of a food ingredient might be measured
+in terms of the particle count of extraneous material or the percentage of fat
+content.11 Quantiﬁcation not only forces careful thinking to determine what
+precisely the buyer values, but also allows the measurement and tracking of
+ﬁrm performance against a use criterion—this often yields major
+improvements in performance in and of itself. Quantiﬁcation also allows a
+ﬁrm to assess its position against competitors in meeting important criteria.
+The ﬁrm can then study the practices that underlie competitors’
+performance.
+A ﬁrm can calculate the value of meeting each use criterion by
+estimating how it affects the buyer’s cost or performance. Such calculations
+
+
+inevitably involve judgments, but are an indispensable tool in choosing a
+sustainable differentiation strategy.12 Determining the buyer value in
+meeting each use criterion will allow them to be ranked in order of
+importance. For some use criteria a ﬁrm must only meet a threshold value to
+satisfy the buyer’s need, while for others more performance against them is
+always better. If a TV set warms up in two seconds, for example, there is
+little additional beneﬁt if the time is reduced to one second. Nearly all use
+criteria will reach a point of diminishing returns, however, after which
+further improvement is not valuable or will actually reduce buyer value.
+Meeting some use criteria may also involve tradeoffs with others.
+Calculating the buyer value from meeting each use criterion will illuminate
+the relevant thresholds, tradeoffs, and buyer value that accrues to additional
+improvement in meeting it. A ﬁrm can only make its own assessments of
+the balance between the value of differentiation and its cost if it understands
+these things. The ranking of use criteria in terms of the buyer value of
+meeting them will often contradict conventional wisdom.
+Signaling criteria can be identiﬁed by understanding the process the
+buyer uses to form judgments about a ﬁrm’s potential ability to meet use
+criteria, as well as how well it is actually meeting them. Examining each
+use criteria to determine possible signals is a good place to start. If a key
+use criterion is reliability of delivery, for example, past delivery record and
+customer testimonials might be signals of value. Two other analytical steps
+can also provide insight into signals of value. By carefully analyzing the
+process by which the buyer purchases, including the information sources
+consulted, the testing or inspection procedures carried out, and the steps in
+reaching the decision, signals of value may become apparent. This sort of
+analysis will yield indications about what a buyer consults or notices,
+including channels. A related way of identifying signaling criteria is to
+identify signiﬁcant points of contact between a ﬁrm and the buyer both
+before and after purchase, including the channels, trade shows, accounting
+department, and others. Every point of contact represents an opportunity to
+inﬂuence the buyer’s perception of a ﬁrm and thus is a possible signaling
+criterion.
+Like use criteria, signaling criteria should be deﬁned as precisely and
+operationally as possible in order to guide differentiation strategy. In a bank,
+for example, the appearance of facilities can signal value through its order,
+
+
+permanence, and security. For a designer clothing store, other dimensions of
+appearance would be more appropriate. Signaling criteria vary in
+importance, and a ﬁrm must rank them in terms of their impact on buyer
+perception in order to make choices about how much to spend on them.
+Calculating the contribution of signaling criteria to realized price is often
+difﬁcult, but focus groups and interviews may be helpful. As with use
+criteria, meeting signaling criteria can reach the point of diminishing
+returns. Opulent ofﬁces, for example, may disillusion a buyer by making a
+ﬁrm appear wasteful or unprofessional.
+The process of identifying buyer purchase criteria should result in a
+ranking and sorting of purchase criteria such as that in Figure 4–4, which
+illustrates purchase criteria for a chocolate confection product. Price should
+be included in the list corresponding to the ranking the buyer places on it.
+Use and signaling criteria that derive from the end user and the channel
+should be separated, to highlight the different entities involved and to
+clarify the actions required to meet each criterion. Use criteria for both end
+users and channels can be usefully divided into those factors that lower
+buyer cost and those that raise buyer performance. While meeting a use
+criterion can sometimes both lower cost and raise performance, often one or
+the other modes of value creation is predominant—in the chocolate
+confection example taste relates to buyer performance while availability is
+predominantly a measure of buyer shopping cost. Then use criteria can be
+further divided into those that are easy to measure and those that are
+difﬁcult for the buyer to perceive and/or quantify (see Figure 4–5).
+
+
+Figure 4–4. Ranked Buyer Purchase Criteria for a Chocolate Confection
+Figure 4–5. The Relationship Between Use Criteria and Buyer Value
+Recognizing the differences in use criteria represented in Figure 4–5 can
+be important for a number of reasons. Differentiation that lowers buyer cost
+provides a more persuasive justiﬁcation for paying a sustained price
+premium with some buyers than differentiation that raises performance.
+Financial pressures on buyers (such as in a downturn) often mean that
+buyers are willing to pay a premium only to ﬁrms that can demonstrate
+
+
+persuasively that they lower buyers’ cost. Differentiation with a readily
+measurable connection to buyer value is also frequently more translatable
+into a price premium than differentiation that creates value in ways that are
+hard to perceive or measure. Differentiation that is difﬁcult to measure tends
+to translate into a price premium primarily in situations where the buyer
+perceives a great deal to be at stake, such as in top level consulting or where
+the buyer is seeking to meet status needs. Differentiation on the right-hand
+side of Figure 4–5 tends to be expensive to explain, requiring high levels of
+investment in signaling. Increasing buyer sophistication tends to threaten
+difﬁcult-to-measure forms of differentiation that may have been accepted at
+face value in the past.
+Each individual buyer to which an industry sells may have a different set
+of use and signaling criteria or may rank among them differently. Clustering
+of buyers into groups based on similarities in their purchase criteria is one
+basis of buyer segments, to which I will return in Chapter 7.
+Differentiation Strategy
+Differentiation stems from uniquely creating buyer value. It can result
+through meeting use or signaling criteria, though in its most sustainable
+form it comes from both. Sustainable differentiation requires that a ﬁrm
+perform a range of value activities uniquely that impact those purchase
+criteria. Meeting some purchase criteria requires that a ﬁrm perform just
+one value activity well—for example, clever advertising. Other purchase
+criteria are affected by many of a ﬁrm’s activities. Delivery time, for
+example, can be inﬂuenced by operations, outbound logistics, and order
+processing, among others.
+Many value activities typically play a role in meeting some use or
+signaling criterion. Figure 4–6 illustrates how purchase criteria can be
+arrayed against value activities to help a ﬁrm identify the activities
+important to differentiation. The links between the ﬁrm’s value chain and
+the buyer’s value chain, highlighted earlier, underlie an analysis such as that
+shown in Figure 4–6.
+A ﬁrm’s overall level of differentiation is the cumulative value it creates
+for buyers in meeting all purchase criteria. The sources of differentiation in
+
+
+the ﬁrm’s value chain are often multiple, as illustrated by Stouffer’s
+successful differentiation strategy in frozen entrees (Figure 4–7). Stouffer’s
+has differentiated itself in both use and signaling criteria. Heavy spending
+on menu development has led to Stouffer’s having the highest proportion of
+unique dishes, as well as superior sauce technology. Care in ingredient
+selection and preparation has resulted in dishes of attractive, consistent
+appearance. Meals are more sophisticated in their menus and ingredients.
+Stouffer’s attractive packaging serves as a signal of value, reinforcing its
+quality image. Stouffer’s also pioneered high rates of spending on
+advertising in a product category where low spending levels had been the
+norm. It also innovated by advertising its frozen entrees as gourmet meals
+for busy people rather than as quick, ﬁlling meals for the family. Finally,
+Stouffer’s spends a considerable amount on a direct sales force and food
+brokers in order to gain attractive retail shelf displays, rapid restocking, and
+the removal of damaged merchandise. These multiple sources of uniqueness
+in its value chain combine to yield Stouffer’s a signiﬁcant price premium
+over its competitors. Differentiation has also led to a substantial market
+share.
+
+
+Figure 4–6. Relationship of Value Activities to Buyer Purchase Criteria
+
+
+Figure 4–7. Sources of Stouffer’s Differentiation in Frozen Entrees
+
+
+Differentiation will lead to superior performance if the value perceived
+by the buyer exceeds the cost of differentiation. Stouffer’s price premium
+exceeds the extra costs it deliberately incurs in advertising, packaging,
+ingredients, brokers, and research, and estimates suggest that it has been
+signiﬁcantly more proﬁtable than its competitors. Differentiation strategy
+aims to create the largest gap between the buyer value created (and hence
+the resulting price premium) and the cost of uniqueness in a ﬁrm’s value
+chain. The cost of differentiation will vary by value activity, and the ﬁrm
+should choose those activities where the contribution to buyer value is
+greatest relative to the cost. This may imply pursuing low cost sources of
+uniqueness as well as high cost ones that have high buyer value. The cost of
+differentiating in various ways will depend on the ﬁrm’s position vis-à-vis
+cost drivers, which can inﬂuence the ﬁrm’s approach to differentiation and
+its resulting performance. Stouffer’s high share has lowered its cost of
+advertising, product development, and procurement to the beneﬁt of its
+performance.
+The ﬁnal component of differentiation strategy is sustainability.
+Differentiation will not lead to a premium price in the long run unless its
+sources remain valuable to the buyer and cannot be imitated by competitors.
+Thus a ﬁrm must ﬁnd durable sources of uniqueness that are protected by
+barriers to imitation.
+Routes to Differentiation
+A ﬁrm can enhance its differentiation in two basic ways. It may become
+more unique in performing its existing value activities or it may reconﬁgure
+its value chain in some way that enhances its uniqueness. Becoming more
+unique in its value activities requires that a ﬁrm manipulate the drivers of
+uniqueness described earlier. In both cases, a differentiator must
+simultaneously control the cost of differentiation so that it translates into
+superior performance. A number of approaches characterize successful
+differentiators:
+ENHANCE THE SOURCES OF UNIQUENESS
+
+
+Proliferate the sources of differentiation in the value chain. A ﬁrm can
+often increase its overall differentiation by exploiting sources of uniqueness
+in additional value activities. Stouffer’s is a good example of how
+successful differentiation usually stems from cumulating uniqueness in
+many value activities. Other examples include Caterpillar Tractor, which
+combines uniqueness in product durability, parts availability, and its dealer
+network; and Heineken Beer, which combines raw material quality,
+consistency of taste, rapid shipping time to preserve freshness, heavy
+advertising, and wide distribution to differentiate in imported beer. Every
+value activity should be scrutinized for new ways to enhance buyer value.
+Some semiconductor manufacturers, for example, are offering computer-
+aided design facilities to their buyers who take over ﬁnal design steps for
+their chips.
+Make actual product use consistent with intended use. Since the way a
+buyer actually uses a product will determine its performance, differentiation
+can often suffer if a ﬁrm does not take steps to bring actual and intended use
+in line:
+• Invest in understanding how the product is actually used by buyers
+• Modify the product to make it easier to use correctly
+•  Design effective manuals and other instructions for use, rather than
+treating them as an afterthought
+• Provide training and education to buyers to improve actual use, either
+directly or via channels.
+Employ signals of value to reinforce differentiation on use criteria. A
+ﬁrm cannot gain the fruits of differentiation without adequate attention to
+signaling criteria. The activities chosen to inﬂuence signaling criteria must
+be consistent with a ﬁrm’s intended bases for differentiation on use criteria.
+Pall Corporation, for example, showcases its extensive R&D facilities in the
+liquid ﬁltration industry through advertising and buyer visits to reinforce its
+differentiation in product performance. Since the buyer may fail to perceive
+indirect or hidden costs of a product, signaling may be as necessary to show
+the lack of value delivered by competitors as it is to show the value
+delivered by the ﬁrm. In addition, a differentiator must provide reassurance
+
+
+about the correctness of the buyer’s choice after sale. Signaling is only
+necessary to the extent that it helps buyers perceive the ﬁrm’s value,
+however, and no more.
+Employ information bundled with the product to facilitate both use and
+signaling. Information and information systems are becoming increasingly
+important tools in differentiation, and bundling information with a product
+can often enhance differentiation. Effective descriptions of how a product
+works, how to use it, and how to service it can align intended use with
+actual use, as discussed above. Giving the product the capacity to generate
+information as it is used (e.g., a continuous readout of gasoline mileage in a
+car) can improve the product’s use as well as be valuable in its own right.
+Combining a product with information systems can raise buyer value in
+other ways as well. American Greetings, for example, provides retailers
+with an automated inventory management system to help them maintain
+their stock, thereby raising greeting card sales and at the same time
+minimizing inventory requirements. Finally, bundling information with a
+product about how the product was made, how unique it is, or how it
+performs relative to substitutes is often an effective way of signaling its
+value. Partagas ﬁne cigars, for example, includes an insert with every box
+that explains the family history of the owners and how they have brought
+the Partagas brand from Cuba to the United States.
+MAKE THE COST OF DIFFERENTIATION AN ADVANTAGE
+Exploit all sources of differentiation that are not costly. Many activities
+can be made more unique at little extra cost. A good case in point is the use
+of linkages to improve differentiation. A ﬁrm may be able to differentiate
+itself simply by coordinating better internally or with suppliers or channels.
+Similarly, changing the mix of product features may be less costly than
+simply adding features. Other high priority targets for enhancing
+differentiation are activities in which cost is also reduced in the process.
+Reducing product defects may also reduce service cost, for example.
+Minimize the cost of differentiation by controlling cost drivers,
+particularly the cost of signaling. A ﬁrm can minimize the cost of
+
+
+differentiation by recognizing the impact of cost drivers. Firms should
+differentiate as efﬁciently as possible by paying careful attention to
+controlling the cost drivers of activities on which differentiation is based
+using the principles described in Chapter 3. General Motors, for example, is
+attempting to lower the cost of product variety through installing ﬂexible
+manufacturing systems in a number of its auto plants. It is particularly
+important to ﬁnd efﬁcient ways of signaling because signaling does not
+itself create value. Signaling that draws on past investments or reputation
+(e.g., units in place, cumulative advertising) can be less costly than
+signaling that arises only from current expenditures.
+Emphasize forms of differentiation where the ﬁrm has a sustainable cost
+advantage in differentiating. The cost of differentiating in various ways will
+differ among competitors. A ﬁrm should differentiate in those ways where it
+has a cost advantage. A large-share ﬁrm will have a cost advantage in
+differentiating in scale-sensitive activities such as advertising and R&D, for
+example, while a diversiﬁed ﬁrm may have an advantage in differentiating
+itself in ways where the cost of doing so is reduced by interrelationships
+with sister business units.
+Reduce cost in activities that do not affect buyer value. In addition to
+seeking a cost advantage in differentiating, a ﬁrm must also pay attention to
+lowering cost in activities unrelated to the chosen differentiation strategy.
+CHANGE THE RULES TO CREATE UNIQUENESS
+Shift the decision maker to make a ﬁrm’s uniqueness more valuable. The
+identity of the decision maker in part deﬁnes what is valuable to the buyer,
+as well as the appropriate signals of that value. A ﬁrm may be able to
+increase its uniqueness or the perceived value of that uniqueness if it can
+alter the purchasing process in a way that elevates the role of decision
+makers who value more the ﬁrm’s particular forms of uniqueness. A
+product with highly sophisticated features, for example, may be perceived
+as more unique and more valuable by an engineer than by a purchasing
+agent. Shifting the decision maker typically requires modifying a ﬁrm’s
+value chain in ways such as the following:
+
+
+• deploying a new type of salesperson
+• involving technical people in the sale
+• changing advertising media and content
+• changing selling materials
+• educating the buyer about new bases for the decision that requires a
+different decision maker.
+Discover unrecognized purchase criteria. Finding important purchase
+criteria that buyers (and competitors) have not recognized offers a major
+opportunity to achieve differentiation. It can allow a ﬁrm to preempt a new
+basis for differentiation and gain lasting beneﬁts in image and reputation.
+Purchase criteria that are unrecognized are often use criteria, particularly
+those based on the indirect impacts a ﬁrm or its product has on the buyer’s
+value chain. Many great differentiation strategies were not passive
+responses to buyer demands, but were based on new approaches to
+differentiation. Stouffer’s discovered an entirely new way of differentiating
+frozen entrees, for example, just as Procter & Gamble was the ﬁrst to
+advertise hand and body lotion year-round to consumers instead of
+seasonally. It discovered that hand and body lotion was used by buyers in
+ways unrecognized in previous strategies.
+Preemptively respond to changing buyer or channel circumstances.
+Buyers or channels whose purchase criteria are changing provide another
+important opportunity for differentiation strategies. Change creates new
+bases for differentiation and can lead buyers to take a new look at products
+that have been routinely purchased from an established supplier. Increased
+health consciousness by buyers, for example, has led to the rapid
+penetration of caffeine-free soft drinks. Increased competition in a buyer’s
+industry can also enhance the buyer’s need for applications engineering
+assistance, or raise the value of lowering the buyer’s cost. In oil ﬁeld
+equipment, for example, increasing ﬁnancial pressure on buyers has favored
+suppliers who can demonstrate that they lower buyers’ cost. Similarly,
+buyer sophistication in minicomputers may be reducing the ability to
+differentiate on the basis of customer service but may be enhancing
+possibilities for differentiation based on delivery time, cost of use, and other
+
+
+more subtle bases. Differentiation that lowers the buyers cost will often fare
+best during difﬁcult times for the buyer industry or as buyers get more
+sophisticated. Similarly, differentiation based on quantiﬁable performance
+improvements for the buyer may command a more lasting price premium
+than that based on intangible performance advantages.
+RECONFIGURE THE VALUE CHAIN TO BE UNIQUE IN ENTIRELY NEW WAYS
+The discovery of an entirely new value chain can unlock possibilities for
+differentiation. For example, Federal Express differentiated itself by
+reconﬁguring the traditional value chain for small-parcel delivery
+completely. It bought its own trucks and aircraft and pioneered the hub
+concept. It thereby improved timeliness and reliability compared to
+competitors using scheduled airlines and/or long-distance trucks combined
+with many distribution points and sorting centers. Hanes’s L’eggs
+pantyhose, with its innovative packaging, distinctive in-store displays, and
+sales and delivery directly to supermarkets, serves as another example of
+how a new value chain can be the key to a successful differentiation
+strategy. Opportunities to achieve dramatic levels of differentiation often
+result from reconﬁguring the value chain.
+Conceiving of a new value chain is a creative process. Working
+backward from the buyer’s value chain, a ﬁrm should probe for ways it
+might link with the buyer’s chain differently or restructure its own value
+activities to meet purchase criteria better. Common reconﬁgurations involve
+areas such as the following:
+• a new distribution channel or selling approach
+•  forward integration to take over buyer functions or eliminate the
+channels
+• backward integration to control more determinants of product quality
+• adoption of an entirely new process technology
+The Sustainability of Differentiation
+
+
+The sustainability of differentiation depends on two things, its continued
+perceived value to buyers and the lack of imitation by competitors. There is
+an ever-present risk that buyers’ needs or perceptions will change,
+eliminating the value of a particular form of differentiation. Competitors
+may also imitate the ﬁrm’s strategy or leapfrog the bases of differentiation a
+ﬁrm has chosen.
+The sustainability of a ﬁrm’s differentiation vis-à-vis competitors
+depends on its sources. To be sustainable, differentiation must be based on
+sources where there are mobility barriers to competitors replicating them.
+As discussed earlier, the drivers of uniqueness differ in their sustainability
+while the cost of differentiation may also vary among competitors and
+affect sustainability. Differentiation will be more sustainable under the
+following conditions:
+The ﬁrm’s sources of uniqueness involve barriers. Proprietary learning,
+linkages, interrelationships, and ﬁrst-mover advantages tend to be more
+sustainable drivers of uniqueness than simply a policy choice to be unique
+in an activity as was discussed earlier. Signaling activities such as
+advertising can also be sustainable because they involve barriers. However,
+differentiation based too heavily on signaling tends to be vulnerable to
+increasing buyer sophistication.
+The ﬁrm has a cost advantage in differentiating. A ﬁrm with a
+sustainable cost advantage in performing the activities that lead to
+differentiation will enjoy much greater sustainability.
+The sources of differentiation are multiple. The overall difﬁculty of
+imitating a differentiation strategy depends in part on how many sources of
+uniqueness a ﬁrm has. The sustainability of a differentiation strategy is
+usually greatest if differentiation stems from multiple sources, rather than
+resting on a single factor such as product design. A single basis for
+differentiation provides a strong focal point for competitors. Differentiation
+that results from coordinated actions in many value activities will usually be
+more durable, since it requires wholesale changes in competitor behavior to
+imitate.
+
+
+A ﬁrm creates switching costs at the same time it differentiates.
+Switching costs are ﬁxed costs incurred by the buyer when it changes
+suppliers, which allow a ﬁrm to sustain a price premium even if its product
+is equal to that of competitors.13 If differentiation at the same time creates
+switching costs, the sustainability of differentiation is increased. Switching
+costs, like differentiation itself, grow out of the way in which a product is
+used by the buyer. Activities that make a ﬁrm unique can frequently raise
+the cost of switching since the buyer often tailors its activities to exploit the
+ﬁrm’s uniqueness.
+The Stouffer’s example described earlier provides an illustration of how
+the sustainability of a ﬁrm’s sources of differentiation can be assessed (see
+Figure 4–7). Of Stouffer’s sources of differentiation, the most sustainable
+are probably its menu and sauce technology, its product positioning and
+brand image, its relationships with prime food brokers, and its cost
+advantage in advertising because of its leading market share. Heavy
+investment by competitors would likely be necessary to replicate these
+factors if they could be replicated at all. As a result, Stouffer’s
+differentiation has been sustainable over a long period of time. Conversely,
+Hanes’s new packaging of pantyhose and direct distribution to grocery
+stores were policy choices not protected by proprietary learning, substantial
+scale advantages in executing them, or other barriers to imitation. Hanes’s
+differentiation has thus been extensively imitated by competitors and has
+not yielded a signiﬁcant price premium.
+Pitfalls in Differentiation
+This chapter has suggested some common pitfalls that afﬂict ﬁrms
+pursuing differentiation strategies. Most result from an incomplete
+understanding of the underlying bases of differentiation or its cost.
+UNIQUENESS THAT IS NOT VALUABLE
+The fact that a ﬁrm is unique at something does not necessarily mean it
+is differentiated. Uniqueness does not lead to differentiation unless it lowers
+buyer cost or raises buyer performance as perceived by the buyer. The most
+
+
+persuasive differentiation often stems from sources of value the buyer can
+perceive and measure, or from difﬁcult-to-measure sources of value that are
+extensively signaled. A good test of the value of uniqueness is whether a
+ﬁrm can command and sustain a price premium in selling to well-informed
+buyers.
+TOO MUCH DIFFERENTIATION
+If a ﬁrm does not understand the mechanisms by which its activities
+affect buyer value or the perception of value, it may be too differentiated. If
+product quality or service levels are higher than buyers’ need, for example,
+a ﬁrm may be vulnerable to competitors with the correct level of quality and
+a lower price. Unnecessary differentiation is the result of failure to diagnose
+performance thresholds or diminishing returns in buyer purchase criteria.
+This, in turn, stems from a lack of understanding of how a ﬁrm’s activities
+relate to the buyer’s value chain.
+TOO BIG A PRICE PREMIUM
+The price premium from differentiation is a function of value of
+differentiation and its sustainability. A differentiated competitor will be
+abandoned by buyers if the premium gets too high. Unless a ﬁrm shares
+some of the value created with the buyer in the form of a more reasonable
+price, moreover, it may tempt the buyer to backward integrate. The
+appropriate price premium is a function not only of a ﬁrm’s extent of
+differentiation, but also of its overall relative cost position. If a ﬁrm does not
+keep its costs in proximity to competitors’, the price premium may grow
+beyond sustainable levels even if a ﬁrm’s differentiation is maintained.
+IGNORING THE NEED TO SIGNAL VALUE
+Firms sometimes ignore the need to signal value, basing their
+differentiation strategies on use criteria that are seen as the “real” bases for
+differentiation. However, signals of value exist because buyers are not
+willing or able to fully discern differences among suppliers. Ignoring
+signaling criteria can open a ﬁrm to attack from a competitor providing
+
+
+inferior value but having a better understanding of the buyer’s purchasing
+process.
+NOT KNOWING THE COST OF DIFFERENTIATION
+Differentiation does not lead to superior performance unless its
+perceived value to the buyer exceeds its cost. Firms often do not isolate the
+cost of the activities they perform to differentiate themselves, but instead
+assume that differentiation makes economic sense. Thus they either spend
+more on differentiation than they recover in the price premium, or fail to
+exploit ways of reducing the cost of differentiation through understanding
+its cost drivers.
+FOCUS ON THE PRODUCT INSTEAD OF THE WHOLE VALUE CHAIN
+Some ﬁrms see differentiation only in terms of the physical product, and
+fail to exploit opportunities to differentiate in other parts of the value chain.
+As has been discussed, the entire value chain often provides numerous and
+sustainable bases for differentiation, even if the product is a commodity.
+FAILURE TO RECOGNIZE BUYER SEGMENTS
+Buyer purchase criteria and their ranking usually vary among buyers,
+creating buyer segments. If a ﬁrm does not recognize the existence of these
+segments, its strategy may not meet the needs of any buyer very well,
+making it vulnerable to focus strategies. The existence of buyer segments
+does not mean that a ﬁrm must choose a focus strategy, but rather that it
+must base its differentiation on widely valued purchase criteria. The
+strategic issues raised by industry segmentation will be discussed more
+extensively in Chapter 7.
+Steps in Differentiation
+The concepts in this chapter can be summarized by outlining the
+analytical steps necessary for determining the bases for differentiation and
+selecting a differentiation strategy.
+
+
+1.  Determine who the real buyer is. The ﬁrst step in differentiation
+analysis is to identify the real buyer. The ﬁrm, institution, or household is
+not the real buyer, but rather one or more speciﬁc individuals within the
+buying entity who will interpret use criteria as well as deﬁne signaling
+criteria. Channels may also be buyers in addition to the end user.
+2. Identify the buyer’s value chain and the ﬁrm’s impact on it. A ﬁrm’s
+direct and indirect impact on its buyer’s value chain will determine the
+value a ﬁrm creates for its buyer through lowering buyer cost or raising
+buyer performance. A ﬁrm must clearly understand all the ways it does or
+could affect its buyer’s value chain, and how possible changes in the buyer’s
+value chain will impact the equation. Channels may play a role in affecting
+the buyer’s chain as well as through linkages with the ﬁrm’s chain.
+3. Determine ranked buyer purchasing criteria. Analysis of the buyer’s
+value chain provides the foundation for determining buyer purchase criteria.
+Purchase criteria take two forms, use criteria and signaling criteria.
+Uniqueness in meeting use criteria creates buyer value, while uniqueness in
+meeting signaling criteria allows that value to be realized. Sometimes an
+analysis of the buyer’s value will suggest purchase criteria that the buyer
+does not currently perceive. Purchase criteria must be identiﬁed in terms
+that are operational, and their link to buyer value calculated and ranked. The
+analyst must not shrink from ﬁnding ways to attach a speciﬁc value to
+performance and cost savings, even for household buyers. The identiﬁcation
+of purchase criteria grows out of buyer value chain analysis, buyer
+interviews, and in-house expertise. The process is iterative, and the list of
+buyer purchase criteria is reﬁned continuously as an analysis proceeds.
+4. Assess the existing and potential sources of uniqueness in a ﬁrm’s
+value chain. Differentiation can stem from uniqueness throughout a ﬁrm’s
+value chain. A ﬁrm must determine which value activities impact each
+purchase criteria (see Figure 4–6). It must then identify its existing sources
+of uniqueness relative to competitors, as well as potential new sources of
+uniqueness. A ﬁrm must also identify the drivers of uniqueness, because
+they bear on the question of sustainability.
+Since differentiation is inherently relative, a ﬁrm’s value chain must be
+compared to those of competitors. Careful analysis of competitors is also
+invaluable in understanding how value activities impact the buyer, and in
+seeing possibilities for creating new value chains. Another technique for
+
+
+uncovering possible new ways to perform value activities is to study
+analogies—industries producing similar products or selling to the same
+buyer that may do things differently.
+5. Identify the cost of existing and potential sources of differentiation.
+The cost of differentiation is a function of the cost drivers of the activities
+that lead to it. The ﬁrm deliberately spends more in some activities to be
+unique. Some forms of differentiation are not very costly and pursuing them
+may even lower cost in ways that the ﬁrm has overlooked. Normally,
+however, a ﬁrm must deliberately spend more than it would have to
+otherwise to be unique. A ﬁrm’s position vis-à-vis cost drivers will make
+some forms of differentiation more costly than others relative to
+competitors.
+6.  Choose the conﬁguration of value activities that creates the most
+valuable differentiation for the buyer relative to cost of differentiating. A
+subtle understanding of the relationship between the ﬁrm’s and the buyer’s
+value chains will allow a ﬁrm to select a conﬁguration of activities that
+creates the largest gap between buyer value and the cost of differentiation.
+Most successful differentiation strategies cumulate multiple forms of
+differentiation throughout the value chain, and address both use and
+signaling criteria.
+7.  Test 
+the 
+chosen 
+differentiation 
+strategy 
+for 
+sustainability.
+Differentiation will not lead to superior performance unless it is sustainable
+against erosion or imitation. Sustainability grows out of selecting stable
+sources of buyer value, and differentiating in ways that involve barriers to
+imitation or where the ﬁrm has a sustainable cost advantage in
+differentiating.
+8.  Reduce cost in activities that do not affect the chosen forms of
+differentiation. A successful differentiator reduces cost aggressively in
+activities that are unimportant to buyer value. This will not only improve
+proﬁtability, but also reduce the vulnerability of differentiators to attack by
+cost-oriented competitors because the price premium becomes too large.
+
+
+5
+Technology and Competitive Advantage
+Technological change is one of the principal drivers of competition. It plays
+a major role in industry structural change, as well as in creating new
+industries. It is also a great equalizer, eroding the competitive advantage of
+even well-entrenched ﬁrms and propelling others to the forefront. Many of
+today’s great ﬁrms grew out of technological changes that they were able to
+exploit. Of all the things that can change the rules of competition,
+technological change is among the most prominent.
+Despite its importance, however, the relationship between technological
+change and competition is widely misunderstood. Technological change
+tends to be viewed as valuable for its own sake—any technological
+modiﬁcation a ﬁrm can pioneer is believed to be good. Competing in “high
+technology” industries is widely perceived as being a ticket to proﬁtability,
+while other industries that are “low-technology” are viewed with disdain.
+The recent success of foreign competition, much of it based on
+technological innovation, has encouraged companies even more to invest in
+technology, in some cases uncritically.
+Technological change is not important for its own sake, but is important
+if it affects competitive advantage and industry structure. Not all
+technological change is strategically beneﬁcial; it may worsen a ﬁrm’s
+competitive position and industry attractiveness. High technology does not
+guarantee proﬁtability. Indeed, many high-technology industries are much
+less proﬁtable than some “low-technology” industries due to their
+unfavorable structures.

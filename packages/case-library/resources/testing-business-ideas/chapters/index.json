@@ -1,0 +1,43 @@
+[
+  {
+    "slug": "ch01-design",
+    "order": 1,
+    "title": { "en": "Design: From Assumptions to Testable Hypotheses", "zh": "设计：从假设到可验证的假说" },
+    "summary": {
+      "en": "Every business idea rests on untested assumptions. This chapter introduces the experiment design process: identify the riskiest assumptions (those that would kill the idea if false), articulate them as falsifiable hypotheses, choose an experiment type, and define success/failure criteria before running it. A hypothesis you can't falsify isn't an experiment — it's a belief.",
+      "zh": "每个商业想法都建立在未经测试的假设之上。本章引入实验设计流程：识别最冒险的假设（如果为假就会杀死想法的那些），将其表达为可证伪的假说，选择实验类型，并在运行之前定义成功/失败标准。一个你没法证伪的假说不是实验——那是信仰。"
+    },
+    "relatedCanvasDefIds": ["experiment-canvas"],
+    "relatedExperimentSlugs": ["customer-interview"]
+  },
+  {
+    "slug": "ch02-test",
+    "order": 2,
+    "title": { "en": "Test: The Experiment Library", "zh": "测试：实验库" },
+    "summary": {
+      "en": "44 experiment types organized by theme (Discovery vs. Validation), risk tested (Desirability, Feasibility, Viability), cost band, and setup/run time. From cheap discovery tests (customer interviews, search trend analysis) to strong-validation tests (pre-sales, letter-of-intent). Each experiment has a clear 'when to use it' signal, step-by-step recipe, and real-world examples.",
+      "zh": "根据主题（发现 vs. 验证）、验证的风险（需求性、可行性、可营性）、成本带和准备/运行时间组织的 44 种实验类型。从廉价的发现测试（客户访谈、搜索趋势分析）到强验证测试（预售、意向书）。每个实验都有清晰的「何时使用」信号、操作步骤和真实案例。"
+    },
+    "relatedExperimentSlugs": ["smoke-test", "wizard-of-oz", "concierge", "letter-of-intent", "pre-sale", "clickable-prototype"]
+  },
+  {
+    "slug": "ch03-evidence",
+    "order": 3,
+    "title": { "en": "Evidence: Measuring Learning, Not Just Outcomes", "zh": "证据：衡量学习，而不只是结果" },
+    "summary": {
+      "en": "An experiment's output is not just 'pass/fail' — it's evidence strength, learning velocity, and risk reduction. This chapter introduces the Evidence Scorecard: track evidence type (weak/medium/strong), learning per cost unit, remaining risk across D/F/V axes, and portfolio-level decisions (pivot, persevere, or kill). Learning is the currency; evidence is the record.",
+      "zh": "一个实验的输出不只是「过/不过」——而是证据强度、学习速度以及风险降低程度。本章引入证据记分卡：追踪证据类型（弱/中/强）、单位成本的学习、需求性/可行性/可营性三个维度上剩余的风险，以及组合层面的决策（转向、坚持或砍掉）。学习是货币，证据是账本。"
+    },
+    "relatedCanvasDefIds": ["evidence-scorecard", "experiment-canvas"]
+  },
+  {
+    "slug": "ch04-manage",
+    "order": 4,
+    "title": { "en": "Manage: Building a Testing Culture", "zh": "管理：建立测试文化" },
+    "summary": {
+      "en": "Individual experiments are tactics; a systematic testing discipline is strategy. This chapter covers experiment portfolio management (mixing discovery and validation, balancing D/F/V risk coverage), team rituals (weekly experiment review), leadership stance (rewarding learning, not just winning), and organizational design (separating exploration from exploitation).",
+      "zh": "单次实验是战术，体系化的测试纪律是战略。本章涵盖实验组合管理（混合发现与验证、平衡需求性/可行性/可营性风险覆盖）、团队仪式（周实验评审）、领导力姿态（奖励学习而不仅是赢）、组织设计（分离探索与利用）。"
+    },
+    "relatedCanvasDefIds": ["portfolio-map", "three-horizons-map"]
+  }
+]

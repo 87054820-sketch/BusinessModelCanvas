@@ -90,6 +90,10 @@ pingarden case      list [--tag <tag>]                 # browse the case library
                     validate [<slug>]                   # offline: schema + ydoc decode + manifest consistency
 pingarden skill     build [--out <dir>] [--lang en|zh|both]
                     install [--local] [--dry-run]
+pingarden resource  list [--json]                           # browse the resource library (books, articles, papers, reports, web)
+                    get <slug> [--json]                   # resource metadata + reading note + chapters
+                    chapters <slug> [--json]              # list chapter index for a book
+                    chapter <slug> <chapterSlug> [--json] # read one chapter (bilingual markdown)
 ```
 
 Run `pingarden <command> --help` for full flag details.
@@ -170,6 +174,15 @@ pingarden snapshot list <canvasId>
 pingarden snapshot restore <canvasId> <sid> --mode replace
 # or fork to a side branch:
 pingarden snapshot restore <canvasId> <sid> --mode fork
+```
+
+**Browse the resource library, then read a chapter.** PinGarden ships a curated read-only library of books, articles, papers, reports, and web sources. Resource commands let an AI inspect source material without parsing files directly.
+
+```bash
+pingarden resource list --json                              # all resources + type + chapter count
+pingarden resource get business-model-generation --json     # metadata + reading note + 5 chapters
+pingarden resource chapters business-model-generation --json # chapter index
+pingarden resource chapter business-model-generation ch01-canvas --json --lang en # full chapter prose
 ```
 
 **Browse the case library, then fork.** PinGarden ships a curated read-only library of company / industry / pattern / comparison analyses. Read commands let an AI inspect them as inspiration without polluting the user's workspace; `fork` deep-copies one into editable user storage.

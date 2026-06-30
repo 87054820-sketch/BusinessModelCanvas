@@ -70,12 +70,15 @@ Current preview deployment:
 - Environment: `pingarden-d5gyvjbtdc321cc10`
 - CloudRun service: `pingarden`
 - Type: container service
+- Current CloudRun version: `pingarden-019` (`100%` traffic, deployed 2026-06-30)
 - Public URL: https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com/
 - Health check: https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com/health
 - Resources: `CPU=0.5`, `Mem=1GB`, `MinNum=1`, `MaxNum=2`, `Port=3000`
-- Runtime env: `NODE_ENV=production`, `HOST=0.0.0.0`, `PORT=3000`, `SKILL_PACK_DIR=/app/apps/cli/build/skill`, `PINGARDEN_AI_PROVIDER=kimi-http`, `PINGARDEN_KIMI_HTTP_TIMEOUT_MS=120000`
+- Runtime env: `NODE_ENV=production`, `HOST=0.0.0.0`, `PORT=3000`, `SKILL_PACK_DIR=/app/apps/cli/build/skill`, `PINGARDEN_AI_PROVIDER=kimi-http`, `PINGARDEN_KIMI_HTTP_TIMEOUT_MS=120000`, `PINGARDEN_DEPLOY_STAMP=20260630-1614-resource-context`
 - Copilot provider: Kimi HTTP BYOK (`/copilot/health` returns `provider.provider=kimi-http`)
 - AI Strategy Skill Pack: `/copilot/skill-pack/info` and `/copilot/skill-pack` expose the standalone downloadable skill zip for strategy-learning/advisor mode; installing the Mac app + CLI unlocks connected canvas read/write workflows.
+- Resource context: `/copilot/resource-context/:slug` exposes resource reading notes, chapter index, and query-relevant chapter excerpts for Autopilot/Copilot grounding.
+- Release verification: `pnpm check:cloud-release`
 - Release smoke test: `pnpm smoke:cloud -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com`
 - Copilot latency benchmark: `PINGARDEN_SMOKE_KIMI_API_KEY=sk-xxx pnpm benchmark:copilot -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com --runs 5`
 

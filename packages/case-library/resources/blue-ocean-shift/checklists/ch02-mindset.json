@@ -1,0 +1,79 @@
+{
+  "chapter": "ch02-mindset",
+  "sourceFiles": {
+    "en": "08-3.   The-Mind-of-a-Blue-Ocean-Strategist.txt"
+  },
+  "concepts": [
+    {
+      "name": "Market-Creating Logic",
+      "definition": "A way to move away from head-to-head competition by changing what buyers value and what the organization costs to deliver."
+    },
+    {
+      "name": "Value Innovation",
+      "definition": "The simultaneous pursuit of buyer-value increase and cost reduction or cost redirection."
+    },
+    {
+      "name": "Chapter-Specific Framework",
+      "definition": "Three mindset shifts prerequisite to any successful blue ocean move: (1) See opportunities where others see constraints — the humanness principle. (2) Focus on creating, not competing — value innovation as the north star. (3) Build people's confidence through field experience — psychological safety + concrete wins. The author introduces a set of diagnostic tools to assess organizational readiness."
+    },
+    {
+      "name": "Execution Discipline",
+      "definition": "The managerial work that turns blue-ocean analysis into adoption, commitment, testing, and renewal."
+    }
+  ],
+  "arguments": [
+    {
+      "claim": "Blue-ocean work must change the value curve, not merely improve the old one",
+      "evidence": "Competing on accepted factors tends to intensify red-ocean rivalry; the strategic task is to challenge factors, buyers, boundaries, utility, price, cost, and adoption barriers."
+    },
+    {
+      "claim": "Participation and visualization are essential",
+      "evidence": "The book repeatedly uses visual maps, grids, and field inquiry because people commit more readily when assumptions, pain points, and alternatives are visible."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Blue-ocean application case",
+      "context": "The chapter uses blue-ocean examples and tools to move from accepted industry logic to new demand.",
+      "illustrates": "How eliminating, reducing, raising, and creating factors reshapes buyer value.",
+      "lesson": "Copy the disciplined reconstruction pattern, not the surface case."
+    }
+  ],
+  "logicChains": [
+    {
+      "description": "Diagnose current red-ocean assumptions → expose buyer pain or noncustomers → reconstruct value factors → test viability and adoption → embed into execution and renewal.",
+      "sourceHint": "Synthesized from source chapter and index summary."
+    }
+  ],
+  "terminology": [
+    {
+      "term": "Value curve",
+      "definition": "The strategic profile showing how an offering invests across competition factors."
+    },
+    {
+      "term": "ERRC",
+      "definition": "Eliminate, Reduce, Raise, Create — the four actions used to reconstruct value."
+    },
+    {
+      "term": "Noncustomers",
+      "definition": "People outside current demand who may reveal the largest blue-ocean opportunity."
+    }
+  ],
+  "nuance": [
+    "Blue ocean strategy is not mere differentiation; it joins differentiation with cost logic.",
+    "Tools fail when treated as one-off templates rather than decision disciplines."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": [
+      "blue-ocean-strategy-canvas"
+    ],
+    "relatedStrategyFrameworkSlugs": [
+      "blue-ocean-strategy"
+    ],
+    "relatedCaseSlugs": [],
+    "relatedChapters": [
+      "ch01-intro",
+      "ch03-process"
+    ]
+  }
+}

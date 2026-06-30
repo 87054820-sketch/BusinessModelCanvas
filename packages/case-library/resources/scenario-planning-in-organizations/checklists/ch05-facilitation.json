@@ -1,0 +1,29 @@
+{
+  "chapter": "ch05-facilitation",
+  "sourceFiles": { "en": "16-10-Managing-Scenario-Projects.txt, 17-11-Human-Perceptions-in-Scenario-Planning.txt" },
+  "concepts": [
+    { "name": "Scenario Facilitation", "definition": "The design and guidance of conversations that surface assumptions, manage uncertainty, balance voices, and move groups from discomfort to concrete commitments." },
+    { "name": "Human Perception and Fear", "definition": "Scenario work deals with mental models, anxiety, defensive routines, and the way people perceive ambiguity; poor facilitation can trigger avoidance rather than learning." },
+    { "name": "Social Intelligence", "definition": "The facilitator's ability to read group dynamics, power, emotion, and interaction patterns so scenario work remains productive." }
+  ],
+  "arguments": [
+    { "claim": "Scenario planning lives or dies on facilitation quality.", "evidence": "The same method can deepen thinking or become theater depending on how assumptions, power dynamics, dominant voices, and discomfort are handled." },
+    { "claim": "Facilitators must hold productive discomfort without creating paralysis.", "evidence": "Scenarios intentionally challenge certainty; groups need enough tension to rethink assumptions but enough safety to commit to action." }
+  ],
+  "cases": [
+    { "name": "Pre-workshop interviews", "context": "Facilitators interview participants before workshops to surface assumptions, language, concerns, and mental models.", "illustrates": "Process design begins before the room; facilitation is diagnostic as well as conversational.", "lesson": "Design the workshop around the group's real assumptions and power dynamics." }
+  ],
+  "logicChains": [
+    { "description": "Interview stakeholders → surface assumptions and fears → design exercises → manage voices and bias → build scenarios → close with commitments and owners.", "sourceHint": "Managing scenario projects and human perceptions chapters." }
+  ],
+  "terminology": [
+    { "term": "Mental model", "definition": "A person's internal representation of how the world works, which scenario planning seeks to challenge and expand." },
+    { "term": "Dominant voice", "definition": "A participant whose position or style can narrow group thinking if not managed." },
+    { "term": "Commitment", "definition": "A concrete action or ownership decision that closes the workshop with accountability." }
+  ],
+  "nuance": [
+    "Avoiding discomfort produces shallow scenarios; unmanaged discomfort produces anxiety and resistance.",
+    "Facilitation is not neutral logistics; it is central to whether scenario planning changes thinking."
+  ],
+  "crossReferences": { "relatedStrategyFrameworkSlugs": ["scenario-planning"], "relatedChapters": ["ch01-intro", "ch04-integration"] }
+}

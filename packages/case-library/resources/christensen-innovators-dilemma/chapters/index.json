@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "ch01-intro",
+    "order": 1,
+    "title": { "en": "Why Great Companies Fail: The Innovator's Dilemma", "zh": "为什么伟大公司会失败：创新者的窘境" },
+    "summary": {
+      "en": "Christensen's paradox: the very management practices that make companies industry leaders — listening to their best customers, investing aggressively in the highest-margin opportunities, pursuing larger markets — also cause them to miss disruptive technologies. This is not a failure of execution; it's a failure of the resource allocation process itself. 'Good management was the most powerful reason they failed to stay atop.'",
+      "zh": "Christensen 的悖论：那些让公司成为产业龙头的最佳管理实践——倾听最好的客户、大举投资利润率最高的机会、追逐更大的市场——恰恰也导致它们错失颠覆性技术。这不是执行的失败，而是资源配置过程本身的问题。「出色的管理正是它们没能保持在顶端的最有力原因。」"
+    },
+    "relatedStrategyFrameworkSlugs": ["disruptive-innovation"],
+    "relatedCanvasDefIds": ["disruption-diagnosis"]
+  },
+  {
+    "slug": "ch02-value-networks",
+    "order": 2,
+    "title": { "en": "Value Networks and the Impetus to Innovate", "zh": "价值网络和创新动力" },
+    "summary": {
+      "en": "A value network is the context within which a firm identifies and responds to customers' needs — it shapes what the firm sees as valuable, which innovations it pursues, and how it allocates resources. The central mechanism: firms in a value network inevitably prioritize sustaining innovations (improving products for their best customers) over disruptive ones. This is not a choice; it's a structural consequence.",
+      "zh": "价值网络是企业识别和响应客户需求的上下文——它塑造企业认为什么有价值、追求什么创新、如何分配资源。核心机制：价值网络中的企业不可避免地优先投资维持性创新（为好客户改善产品）而非颠覆性创新。这不是选择问题，而是结构性后果。"
+    }
+  },
+  {
+    "slug": "ch03-hdd",
+    "order": 3,
+    "title": { "en": "The Hard Disk Drive Industry: The Empirical Engine", "zh": "硬盘驱动器产业：经验的发动机" },
+    "summary": {
+      "en": "The HDD industry from 1976 to 1995 is the book's empirical engine — the most complete dataset Christensen assembled. Every architectural generation (14-inch → 8-inch → 5.25-inch → 3.5-inch → 2.5-inch → 1.8-inch) saw incumbent leaders fail and new entrants win, despite the incumbents being technologically capable. The pattern: incumbents lead in sustaining innovation; entrants lead in disruptive innovation. No exceptions.",
+      "zh": "1976 至 1995 年的 HDD 产业是本书的经验发动机——Christensen 所收集的最完整的数据库。每当架构代际更替（14英寸 → 8英寸 → 5.25英寸 → 3.5英寸 → 2.5英寸 → 1.8英寸），在位领导者都失败了，新进入者胜利了——尽管在位者在技术上完全有能力。模式是：在位者在维持性创新中领先，进入者在颠覆性创新中领先。没有例外。"
+    },
+    "relatedCaseSlugs": ["hdd-industry-disruption"]
+  },
+  {
+    "slug": "ch04-excavators",
+    "order": 4,
+    "title": { "en": "Mechanical Excavators: Sustaining vs. Disruptive Technologies", "zh": "机械挖掘机：维持性 vs. 颠覆性技术" },
+    "summary": {
+      "en": "The construction equipment industry case deepens the HDD finding. Cable-actuated excavators were displaced by hydraulic excavators — not because incumbents couldn't build hydraulics (they were pioneers in the technology), but because their value network (heavy excavation, existing customers) saw no market in the small-volume applications where hydraulics first took hold. By the time hydraulics were good enough for heavy excavation, the incumbent had lost the capabilities race.",
+      "zh": "建筑设备产业的案例深化了 HDD 的发现。缆线驱动挖掘机被液压挖掘机取代——不是因为在位者造不出液压（它们是这项技术的先驱），而是因为它们的价值网络（重型开挖、现有客户）看不到液压最初生根的小方量作业市场。到液压挖机好到可以做重型开挖时，在位者已经在能力竞赛中落后。"
+    }
+  },
+  {
+    "slug": "ch05-steel",
+    "order": 5,
+    "title": { "en": "Steel Mini-Mills: The Nucor Story", "zh": "钢铁小钢厂：Nucor 的故事" },
+    "summary": {
+      "en": "Mini-mills disrupted integrated steel mills by attacking from the bottom of the market (rebar) and climbing upmarket (bar → structural → sheet). Each move was dismissed by incumbents as 'low quality, low margin, not our market.' The structural reason: integrated mills had higher cost structures and their best customers needed higher-grade steel — so 'rationally' ceding low-margin rebar was the right decision. Until it wasn't.",
+      "zh": "小钢厂通过从市场底层（钢筋）攻击并向上爬升（钢筋→结构钢→薄板）颠覆了综合钢厂。每一次上移都被在位者嗤之以鼻——「低质量、低利润、不是我们的市场」。结构性原因：综合钢厂成本结构更高，其最佳客户需要更高等级的钢——所以「理性地」放弃低利润的钢筋是正确的决策。直到不再是。"
+    },
+    "relatedCaseSlugs": ["nucor-mini-mill-disruption"]
+  },
+  {
+    "slug": "ch06-disruption-model",
+    "order": 6,
+    "title": { "en": "The Disruption Model: Three-Part Test", "zh": "颠覆模型：三段判定" },
+    "summary": {
+      "en": "Christensen distills his empirical findings into a strict three-part test for disruption: (1) It starts in a foothold market — either overshot customers (the low end) or nonconsumption. (2) The entrant's offering is initially inferior on the performance attributes mainstream customers value — that's why incumbents rationally ignore it. (3) The entrant's technology has a trajectory of improvement that eventually reaches what the mainstream needs — at which point it's too late for incumbents to respond. If any of the three is absent, it's not disruption.",
+      "zh": "Christensen 将其实证发现凝结为一个严格的三段判定：(1) 始于立足市场——要么是被过度满足的客户（低端），要么是非消费。 (2) 进入者的产品在主流客户所看重的性能属性上起初是劣等的——这就是在位者理性地忽视它的原因。 (3) 进入者的技术具有一条改进轨迹，最终会达到主流客户所需——到那时在位者再想反应已经来不及了。三个条件缺其一，就不是颠覆。"
+    },
+    "relatedCanvasDefIds": ["disruption-diagnosis"],
+    "relatedStrategyFrameworkSlugs": ["disruptive-innovation"]
+  },
+  {
+    "slug": "ch07-sustaining",
+    "order": 7,
+    "title": { "en": "Sustaining vs. Disruptive: The Crucial Distinction", "zh": "维持性 vs. 颠覆性：关键的区分" },
+    "summary": {
+      "en": "Sustaining innovations make good products better in ways existing customers value — incumbents almost always win these battles. Disruptive innovations introduce a different value proposition that mainstream customers initially reject — incumbents almost always lose. Confusing the two leads to strategic disaster: treating every competitive threat as disruption wastes resources; treating a real disruption as a sustaining improvement allows it to eat your market from below. Most 'disruption' talk in business media is neither of these — it's just direct competition.",
+      "zh": "维持性创新让好产品在现有客户看重的方式上变得更好——在位者几乎总是赢。颠覆性创新引入了一种现有客户起初拒绝的、不同的价值主张——在位者几乎总是输。混淆这两者导致战略灾难：把每次竞争威胁都当颠覆对待浪费资源；把真正的颠覆当作维持性改进则会从底部吃掉你的市场。商业媒体上的大多数「颠覆」讨论两者都不是——那只是直接竞争。"
+    },
+    "relatedCanvasDefIds": ["disruption-diagnosis"]
+  },
+  {
+    "slug": "ch08-organizational",
+    "order": 8,
+    "title": { "en": "Organizational Dimensions: Structure Follows Strategy", "zh": "组织维度：架构跟随战略" },
+    "summary": {
+      "en": "Why can't successful companies just set up a separate unit to handle disruption? The chapter explains RPV theory (Resources, Processes, Values): processes and values define what an organization can and cannot do far more than resources do. A separate business unit works only when the new unit has its own cost structure attuned to the disruptive opportunity's smaller scale and different profit model. The parent's processes and values will otherwise strangle it.",
+      "zh": "为什么成功公司不能直接设立一个独立单元来应对颠覆？本章解释 RPV 理论（资源、流程、价值观）：流程和价值观比资源更能定义一个组织能做什么、不能做什么。只有当新单元拥有与颠覆性机会的小规模和不同利润模式相匹配的独立成本结构时，独立事业单元才有效。否则母公司的流程和价值观会把它勒死。"
+    }
+  },
+  {
+    "slug": "ch09-electric-vehicles",
+    "order": 9,
+    "title": { "en": "Electric Vehicles: The Disruption Lens Applied", "zh": "电动车：颠覆透镜应用" },
+    "summary": {
+      "en": "Christensen's post-script analysis applies the disruption model to the then-nascent electric vehicle industry: where will EVs initially find footholds (short-range urban delivery, not highway commuting)? Are they disruptive relative to internal combustion (initially inferior on range, simpler mechanically, potentially lower long-run cost)? The chapter is a masterclass in using the three-part test on a contemporary case rather than retrofitting history.",
+      "zh": "Christensen 的附笔分析将颠覆模型应用于当时初生的电动车产业：EV 最初会在哪找到立足点（短途城市配送而非公路通勤）？比起内燃机它们是否具有颠覆性（起初续航劣势、机械结构更简单、长期成本可能更低）？本章是一堂大师课：如何对一个当代案例使用三段测试，而不是只做历史回溯。"
+    }
+  }
+]

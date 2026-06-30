@@ -1,0 +1,468 @@
+# The Scenario-Building Animal
+
+lofts a spiraling pass and drops it into the receiver’s arms.
+Essentially, Montana has made a prediction about where he and his
+receiver would be several highly unpredictable seconds later. The
+equivalent problem in military ballistics—designing a machine to
+hurl a long-distance projectile from a moving source to a moving
+target—is so difficult that it took the first real computers to produce
+radar-guided anti-aircraft guns during World War II. With all the
+advances in robotics and computer control systems in the last
+twenty years, no human-designed system can yet duplicate the feats
+of Joe Montana.
+To 
+achieve 
+those 
+feats, 
+Montana’s 
+mind—conscious 
+and
+unconscious—must have an extraordinary ability to look ahead. We
+may not all have his level of skill, but each of us has the same
+neurological connection—between the ballistic-calculating abilities
+of the human brain and such other capabilities as imagination and
+foresight. This is closely tied to (or may, as Calvin suggests, have
+helped bring about) our capacity for self-awareness. We human
+beings can run through a motion in our minds alone, with our
+muscles detached from the circuit, and then run through it again for
+real, with the muscles actually carrying out the commands. We can
+simulate the past and future in our minds, practicing different acts
+and judging which is best. While hiking, for instance, we may hear a
+climber above us. It is part of our nature to imagine an accidental
+rockfall loosed by his or her boots, and therefore to stay out of the
+fall line.
+It takes more effort, perhaps, to string these small intimations into
+scenarios. But we do it. For instance, we don’t merely foresee the
+words we are about to speak. We construct sentences in our head,
+and often practice them inwardly, before uttering them. In dreams,
+Calvin asserts, we spin entire scenes in our sleep—in a sense, a
+dream is our unconscious rehearsal of a possible future. If this book
+seems to present a formal, overly explicit methodology for
+constructing scenarios, please remember that these techniques are
+an extension of a skill which people are extremely well equipped to
+exercise. Once you get used to the idea of scenarios, using them
+comes more easily.
+
+
+Some people are immediately great at building scenarios. Others
+need more practice. But this difference in proficiency has nothing to
+do with peoples’ character. It’s the result of differences in training,
+experience, and intuition. Social scientists often have a hard time;
+they have been trained to stay away from “What if?” questions and
+concentrate on “What was?” Accountants and engineers typically
+have a hard time because their training is deterministic. An
+accountant’s columns and rows must add up to a single answer for
+any accountant who tries it, or the work is “wrong.”
+In contrast, a cultural anthropologist knows clearly that what he
+or she sees in a particular village will be different from what
+another cultural anthropologist sees. The anthropologist is more
+attuned to uncertainty and multiple points of view, and can more
+easily accept the practice of scenarios. The same is true for
+historians. In business, the most attuned practitioners are people
+who have made mistakes—people who have gotten it wrong, and
+want to find other ways of dealing with their problems. Older
+business people are often more sensitive to the process.
+Anyone can create scenarios, however; but it will be much easier
+if you are willing to encourage your own imagination, novelty, and
+even sense of the absurd—as well as your sense of realism.
+Memories of the Future
+The stories we tell ourselves are powerful. David Ingvar, a
+Swedish neurobiologist, has written of scenarios as “memories of the
+future.” Ingvar studied the behavior of alcoholics, trying to
+understand the biochemical and psychophysiological processes
+operating in alcoholism. He concluded, as had William Calvin, that
+the mind constantly tells itself stories of the future. Sometimes these
+are stories about the next few seconds. At other times, they are
+stories about the next hours or weeks, from walking across the room
+to get a cup of coffee to paying the rent. Many of these are
+
+
+subconscious or at the edge of awareness; sometimes they bubble up
+and we remember something we had planned to do. In his earlier
+work with brain-damaged patients he had observed that their
+inability to perceive the flow and interconnection of events was a
+function of their inability to imagine these micro-scenarios of the
+future. They could not understand the meaning of events. They had
+a hard time making choices and, as a result, acting.
+To Ingvar, alcoholics suffer, in part, because their scenario-
+spinning processes break down. Because of a neurophysiological
+reaction to the drink, they lose their connection between
+imagination and action. Since they no longer use their imagination
+as much to look ahead, they lose their sense of the continuity of
+time. They become disoriented. The alcohol then helps them to feel
+comfortable in their disorientation. Thus, we often hear people say
+of an alcoholic, “He [or she] has lost touch with reality.”
+Consider the plight of someone close to an alcoholic (or an addict,
+or anyone who has lost touch in that way). It does no good to plead,
+preach, or nag; the other person may be trusted, but the alcoholic
+has no mental picture of tomorrow. Ingvar argues that alcoholics are
+literally unable to recognize the future as it unfolds in front of them.
+They cannot easily imagine what might happen to them under
+different situations: “What would happen if you could no longer buy
+alcohol? Or if you could no longer perform your job? Or if your
+body began to deteriorate?”
+We all, of course, share that same blindness to reality as well. Arie
+de Geus, a pioneer in thinking about organizational learning, tells
+the story of a tribesman who was transported from a remote
+mountain wilderness (a society that had not yet discovered the
+wheel) to a large city. When he returned, he reported that the most
+significant thing he saw was somebody using a wheelbarrow to
+carry more bananas than he had ever thought possible. He literally
+did not see the significance of automobiles and skyscrapers. He was
+not prepared to see them, any more than an alcoholic is prepared to
+take note of the damage done by the addiction. But the tribesman
+was well prepared to see an unprecedented load of bananas.
+
+
+Historian Barbara Tuchman puts it this way: “Men will not believe
+what does not fit in with their plans or suit their prearrangements.”
+What sorts of things are reasonably healthy Westerners—
+presumably the readers of this book—unprepared to see? It varies
+from individual to individual, but there is no shortage of examples.
+In 1975, I led a team at SRI looking at potential future crises for the
+office of the White House science adviser. Our results were to be
+presented to the President’s Science Advisory Council, a group of
+highly distinguished scientists and businessmen. They were led by
+Dr. William Baker, then head of Bell Labs, and Simon Ramo, the
+founder of TRW; nuclear physicist Edward Teller; Edwin Land of
+Polaroid; Charles Townes, the inventor of the laser; Donald
+Kennedy, later president of Stanford University; and Carl Djerassi,
+an eminent pharmaceutical entrepreneur, inventor of the “pill.” The
+White House did not want America to be taken by surprise again, as
+the country had been by the oil price crisis.
+So our team looked at a number of potential scenarios. Among the
+problems we anticipated, for example, was a much more stressful
+society. All of the scenarios led to much higher stress in the social
+environment—from crime, unemployment, inflation, psychological
+instability, or even the stress that comes from too much success. We
+plotted how these types of stress would probably lead to second-
+level unwanted effects: drug abuse, alcohol abuse, cancer and other
+health problems, homelessness, and social violence. We painted a
+picture, for instance, of street criminals with increasingly high-
+powered weapons, leading to the equivalent of armed forces in our
+cities by the 1980s.
+The study was a miserable failure. The distinguished panel of
+scientists attacked each problem, one by one. “It’s impossible,” they
+said each time. “We won’t let those problems come up.” They meant
+both “we” as a people and “we” as a government. Today, crack
+dealers routinely patrol inner-city neighborhoods with Uzis.
+We also did scenarios for the Department of Transportation,
+which ended in even bigger disaster. What might happen, we asked,
+if they didn’t build enough highways or public transportation? They
+could end up with massive gridlock in urban areas. Our project was
+
+
+singled out by Senator William Proxmire for one of his “Golden
+Fleece” awards because no one would be stupid enough to do that
+he said. He ridiculed the process of considering these “implausible”
+possibilities. 
+I 
+concluded 
+that 
+the 
+federal 
+government 
+in
+Washington, D.C., was systematically unable to think about the
+future. By definition all of their policies must be successful and they
+have foreseen every problem. To think about any other possibility is
+to imply the impossible, that they are less than all-knowing and
+powerful.
+You can see the results of a similar resistance among American
+military leaders. I will show in Chapter 5 that it was possible to
+foresee perestroika and glasnost in the early 1980s, and, indeed,
+American intelligence and military agencies heard the prediction at
+least several times. But their leaders could not accept it. They had
+imagined every conceivable scenario about the Cold War—gradual
+arms buildup, new technologies, a freeze imposed by one or more
+nations, broken arms agreements, even the Armageddon of nuclear
+war. But they never asked themselves: “What if we won?”
+After America did win the Cold War (or, at least, our purported
+enemies lost it) the U.S. military leaders had no idea of what to do.
+They had prepared no strategy for success. Thus, they now find
+themselves foundering, trying desperately to find new enemies.
+Some suggest fighting the drug lords, or turning the troops loose to
+“battle” environmental problems. (Never mind the fact that
+environmental problems can’t be “solved” through military
+methods.) As I write this in August 1990 the military is rapidly
+building a new presence in Saudi Arabia, but is unable to implement
+the President’s goal of driving the Iraqis out of Kuwait. The new
+military to cope with the Saddam Husseins of today and tomorrow
+will be very different from the military needed to contain a hostile
+superpower.
+But the Pentagon brass are not the only group refusing to see
+reality; people who talk about the “peace dividend” have not
+considered whether bringing thousands of newly unemployed
+soldiers back to the United States would create any social problems.
+It’s not clear whether there will be social problems as a result. One
+
+
+plausible scenario suggests a severe skilled labor shortage in the
+United States during the 1990s, which many returning servicemen
+could help fill if other conditions are right. What’s important is that
+people are refusing to think about the possibilities.
+Chains of Perception
+Scenarios are not about predicting the future, rather they are
+about perceiving futures in the present. In contemporary psychology
+one finds different theories describing how and why people deceive
+themselves about reality. Denial, for example, is the first of the
+psychological stages that we undergo to protect ourselves from bad
+news, such as the death of someone close to us. To Elisabeth Kübler-
+Ross, author of On Death and Dying, denial was the first stage of
+reaction, followed by anger, bargaining, despair, and ultimately
+acceptance.
+When decision-makers begin to look at the future, denial acts as
+an automatic shut-off valve: “I can’t consider that.” With his book
+On Thermonuclear War: Thinking About the Unthinkable, Herman
+Kahn made his early reputation as a futurist through his public
+willingness to consider what most people were denying in the early
+1960s: that nuclear war might actually take place between the
+United States and the Soviets. By raising the possibility publicly, he
+helped people see realistically what they had at stake, and arguably
+inspired many of the most successful disarmament initiatives.
+William Proxmire’s ridicule was another example of denial. Too
+often, he fought not to cut unnecessary spending, but to deny
+unconventional thinking.
+Stories can be a powerful way of avoiding the dangers of denial.
+In theater, the “willing suspension of disbelief” is what the play
+prompts from an audience. Everyone in the theater knows that he is
+seeing actors before a painted backdrop, but—for the purposes of
+emotion and understanding—the viewers react as if they are seeing
+
+
+the real world. A good scenario, similarly, asks people to suspend
+their disbelief in its stories long enough to appreciate their impact.
+You know that a scenario is effective when someone, pondering an
+issue that has been taboo or unthinkable before, says, “Yes. I can see
+how that might happen. And what I might do as a result.”
+“Scenarios deal with two worlds,” wrote Pierre Wack. “The world
+of facts and the world of perceptions. They explore for facts but they
+aim at perceptions inside the heads of decision-makers. Their
+purpose is to gather and transform information of strategic
+significance into fresh perceptions. This transformation process is
+not trivial—more often than not it does not happen. When it works,
+it is a creative experience that generates a heartfelt ‘Aha!’ from your
+managers and leads to strategic insights beyond the mind’s previous
+reach.”
+Tell Me a Story; the Power of Narrative
+Anthropologist Mary Catherine Bateson offers the story of her
+father, philosopher Gregory Bateson, who used to tell a joke about a
+man who asked a computer, “Do you compute that you will ever
+think like a human being?” After assorted bleeps and blinks, the
+answer appeared: “That reminds me of a story.”
+It is a common belief that serious information should appear in
+tables, graphs, numbers, or at least sober scholarly language. But
+important questions about the future are usually too complex or
+imprecise for the conventional languages of business and science.
+Instead, we use the language of stories and myths. Stories have a
+psychological impact that graphs and equations lack. Stories are
+about meaning; they help explain why things could happen in a
+certain way. They give order and meaning to events—a crucial
+aspect of understanding future possibilities.
+Stories are an old way of organizing knowledge, but their place in
+the world has been less visible since the rise of scientific philosophy
+
+
+during the Enlightenment. Theories about, for example, the way
+gases respond to heat and pressure were provable, always correct,
+and often simple. Even outside the sciences, the paradigm for truth
+was that it should be law-like, preferably reduced to the form of a
+solvable equation. However, since complexity has emerged as a
+driving force in the way the world works, the dominant belief in a
+deterministic and reliably quantifiable truth has begun to yield.
+There are now many ways of knowing. Our need for realism and
+proof is as strong, but we can find and express that in this different
+way. If the planners of Three Mile Island had written a story about
+how things could go wrong, instead of a numeric analysis of
+possible fault sequences, they would have been better prepared for
+the surprise they actually encountered when their complex machine
+went astray.
+Stories have many advantages. They open people to multiple
+perspectives, because they allow them to describe how different
+characters see in events the meaning of those events. Moreover,
+stories help people cope with complexity. In a famous essay called
+The Hedgehog and the Fox, historical philosopher Isaiah Berlin
+compared Tolstoy’s War and Peace with conventional “scientific”
+histories of the Napoleonic invasion of Russia. Those histories
+presented only a succession of events. Tolstoy, by contrast, wrote
+history as a novel, using story-telling to arrange the facts in a way
+which gave them meaning.
+Scenarios are stories that give meaning to events. This does not
+mean that they contain fictional characters, although sometimes we
+write scenarios with fictional characters to experiment with the
+ambience of the settings we are trying to imagine. “Isao Okimura
+was just about to board the new hypersonic Orient Express on his
+way from Tokyo to San Francisco,” began one such scenario I wrote,
+about the possibilities of future widespread mergers between
+Japanese and American corporations. But inventing characters is
+neither necessary nor, in many cases, helpful: the point is to imagine
+attitudes of key players who will affect future events.
+
+
+Scenarios Are Myths of the Future
+Often, these key players are large collections of individuals in the
+form of institutions. The attitudes they embody are themselves
+stories—or, more precisely, myths. Indeed, histories with meaning
+that are shared very widely are often expressed as myths. The
+phrase “American Dream,” for example, is a myth of our time. It
+embodies a mesh of feelings and beliefs, some of them
+contradictory, well known to Americans and to everyone else in the
+world. This myth influences goals in business and daily life (for
+instance, a decision to emigrate to the United States), and values
+passed on to our children. The “Myth of the Melting Pot” is one part
+of the American Dream, symbolized by the Statue of Liberty.
+Capitalism and democracy are other aspects, embodied in Horatio
+Alger and the Constitution. Values such as individualism and
+materialism are woven into the fabric of the mythos. What is the
+U.S. Constitution but the formal story of the political utopia the
+founding fathers designed?
+The Japanese also have a national myth—based on resilience and
+self-reliance. Few Americans have paid enough attention to Japan to
+see it. In American business and government circles, the Japanese
+Ministry of International Trade and Industry (MITI) is seen as a
+masterful organizing force that mobilizes Japanese scientific and
+engineering enterprise in a way unmatched by other countries. It is
+a conspiratorial kind of mythology—unseen forces moving beneath
+the surface of events.
+That’s wrong. MITI is more of an expression of the underlying
+myth of Japan, a story that includes its history of rebounding back
+after repeated crises have struck its islands. The “four devils” that
+the nation has faced are earthquakes, great fires, hurricanes, and
+unwise leaders—cataclysms outside the population’s control that
+often flattened them temporarily. A history of doing what is
+necessary to survive, even after extensive damage, is deep in the
+Japanese culture. People in Japan save money not because they are
+
+
+trying to take over the world, but because they know they might
+have to rebuild after disasters. They value education as a form of
+cultural continuity and defense against future threats. All these
+cultural norms emerged over Japan’s long history; they can be
+understood only as part of a story about Japan, just as the American
+Dream is part of a story about the United States.
+How do these two national myths affect behavior? Consider the
+oil price crisis of 1973, in which a sudden jump in oil prices affected
+both nations dramatically. The Japanese reacted with their myth of
+resilience. Realizing that they were no longer living in a world of
+cheap energy, their leaders (with the support of their people)
+quickly understood that they would always depend on others for
+their energy lifeline. So the Japanese made themselves the most
+energy-efficient industrial economy on the planet in less than three
+years. That meant a severe recession in the Japanese economy while
+they rebuilt the capital structure. By 1976, their energy-efficiency
+had improved enormously.
+The United States reacted differently. Politically, American
+leaders fought to preserve the country’s “manifest destiny.”
+Corporate leaders refused to believe that this would be any more
+than a temporary setback in the “Land of Opportunity.” Individuals
+reacted, at first, with anger (at gas lines, at the Arabs, at the oil
+companies). Then, each according to his or her means and
+inclinations, we separately set about making our lives more energy-
+efficient—or not. The United States remains more vulnerable to oil
+crises than Japan despite the fact that Japan imports all of the oil it
+needs. The American myth was not “worse” than the Japanese;
+arguably, our attitudes about melting pots and individual fulfillment
+will serve us well in the years to come. But in this instance, the
+Japanese myth led to more economic success. The trick, in a
+situation like that, is to recognize the various myths in play.
+Myths are a particular type of story. James Robertson, author of
+American Myth, American Reality, offers the best definition I’ve seen:
+Myths are “the way things are” as people in a particular society
+believe them to be; and they are the models people refer to when
+
+
+they try to understand their world and its behavior. Myths are the
+patterns—of behavior, of belief, and of perception—which people
+have in common. Myths are not deliberately, or necessarily
+consciously, fictitious.
+The sources of myths are not easy to recognize in their own times.
+Indeed, the notion of studying myths through analytical means is a
+product of the modern era. The ancient Greeks probably did not
+think of their stories of Zeus and Hermes as myths. No one in 400
+B.C. Athens would have said, “That’s a very nice way to explain the
+prevalence of thunderstorms.” Few probably realized that the stories
+of Zeus’s many wives originated as cultural “glue”; when the horse-
+riding, war-making, worshipers of the patriarchal thunder god, Zeus,
+invaded the Peloponnesian peninsula, they conquered countless
+isolated valleys, home to matriarchal, agricultural worshipers of
+various earth goddesses. So Zeus simply married the local goddesses
+via mythical tales, and the conquered cultures joined the cultural
+family.
+As James Robertson points out, American myths have similar
+roots. The story of George Washington and the cherry tree, for
+instance, solves a contradiction deep in the American character: the
+conflict between rebellion and innocence. A culture based on
+revolution must condone certain acts of violence. Yet America is
+also the land of the new, the young, and the innocent. The cherry
+tree story—violence against the father’s possession followed by
+honest admission and the father’s praise—fulfills the wish of every
+rebellious child that rebellion and independence will be met with
+approval and will result in being once again enfolded in the arms of
+the father. The literal truth of any of these stories—whether, for
+instance, George Washington really chopped down that tree—is far
+less important than its insight into the way Americans see their role
+in a moral universe. Years later, American movies such as The Wild
+One, Rebel Without a Cause, The Graduate, Beverly Hills Cop, and even
+the Star Wars trilogy played out the same theme, as did American
+behavior in the energy crisis.
+
+
+Organizations have myths too—universally believed stories about
+their past and future. AT&T’s view of “universal service” is an
+example. Beginning with that great servant to humanity Theodore
+Vail (goes the story), AT&T developed an overriding vision to reach
+out and touch everyone—to provide the same telephone service to all
+Americans even in the most remote locations. This gave AT&T a
+kind of organizing myth similar to the American folktale of Johnny
+Appleseed; telephone people were not just operators or technicians,
+but people working to plant the seeds of communication. When you
+look at AT&T’s challenges today, it becomes clear that they are
+losing their old myth. The old goal of universal service clashes with
+the world after the breakup of AT&T and the need to become a
+competitive, high-technology company. Now people at AT&T find
+they don’t all share a clear myth for the future. They are in the
+process of trying to rediscover their vision. Any scenario about the
+future of AT&T should help people understand the likely results of
+this clash of mythologies.
+Thus, in writing scenarios, we spin myths—old and new—that
+will be important in the future. The “global teenager” of Chapter 7,
+for instance, is a mythic figure, representing no individual teenager
+in the world today, but symbolizing almost 2 billion of them. These
+myths in scenarios help us come to grips with forces and feelings
+that would not otherwise exist in concrete form. They help us
+describe them, envision them, bring them to life—in a way that
+helps us make use of them. Story-telling in the form of myths can
+reveal something about what we feel, hope, expect, fear for the
+future.
+OceanofPDF.com
+
+
+UNCOVERING THE DECISION
+            In 1983 I proposed to my superiors at Shell that we
+undertake a study of the future of the Soviet Union. They questioned
+its relevance. “The Soviets are a minor factor in our business,” they
+said. “They export a little oil and gas, but we need to pay attention
+to much bigger competitors. They’re not on the agenda.”
+“They will be on the agenda,” I insisted. “Their oil and gas
+reserves are among the largest in the world, rivaled only by Saudi
+Arabia. With the international oil industry facing fewer and fewer
+opportunities for large profitable oil and gas finds outside the
+Middle East, the possibility that the Soviet Union might invite
+foreign firms to participate in their oil industry could [and did]
+become a significant possibility. Furthermore, in a few years, you
+are going to have to make a big decision about whether to go ahead
+with the Troll gas field.” The Troll gas field was a deposit of natural
+gas under water one thousand feet deep, in the North Sea off the
+coast of Norway, which Shell had found and was trying to decide
+how to develop.
+“It is going to take a platform fifteen hundred feet high to get that
+gas out,” I said, reminding them of what they already knew but,
+perhaps, had never heard put quite this way before. “That platform
+and its satellite wells are going to cost 6 billion dollars. It will be the
+biggest moving object ever built, the single most expensive machine
+ever built. The field will furnish natural gas to sell to Europe. The
+other supplier of natural gas to Europe is the Soviet Union. And the
+Soviet gas is much cheaper than any gas we can provide from Troll.
+However, for obvious political reasons, the Europeans have made an
+informal agreement that no more than 35 percent of their markets
+will be available to the Soviet Union.”

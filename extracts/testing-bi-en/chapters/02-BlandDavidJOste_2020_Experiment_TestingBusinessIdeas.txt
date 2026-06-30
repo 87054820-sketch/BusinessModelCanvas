@@ -1,0 +1,2248 @@
+# BlandDavidJOste_2020_Experiment_TestingBusinessIdeas
+
+46
+TEST
+Create multiple experiments  
+for your hypothesis
+ 
+We’ve yet to work with a team who created 
+just one experiment, had a major break-
+through, and then went on to create a 
+multibillion dollar business from it. In reality, 
+it takes a series of experiments to generate 
+the possibility of a successful business. Use 
+the Test Cards and the experiment library to 
+create well-formed experiments to test your 
+business hypotheses.
+Customer Interviews
+	
+	 	
+                   millennial parents prefer 
+curated science projects that fit their kids’ 
+education level.
+	
+	 	
+                         interview  
+20 millennial parents about their kids’  
+science project needs.
+	
+	 	
+        the top customer jobs,  
+pains, and gains that are not being met  
+with existing solutions.
+	
+	 	
+        we are 80% accurate in our 
+ top jobs, pains, and gains ranking.
+Grace Grant
+Search Trend Analysis
+	
+	 	
+                               perform trend analyses 
+on millennial parents searching online for kids’ 
+science project solutions.
+	
+	 	
+        domestic search volume.
+	
+	 	
+        search volume exceeds 10,000 
+searches a month domestically.
+Bob Gail
+	
+	 	
+                   millennial parents prefer 
+curated science projects that fit their kids’ 
+education level.
+Concierge
+	
+	 	
+                         manually curate  
+science project kits for 20 children  
+of millennial parents.
+	
+	 	
+        time to create, cost to create, 
+cost to ship, and customer satisfaction.
+	
+	 	
+        the customer satisfaction  
+score is “partially satisfied” to “very  
+satisfied” for 16 of the 20 parents.
+Claire McCain
+	
+	 	
+                   millennial parents prefer 
+curated science projects that fit their kids’ 
+education level.
+
+
+47
+EXPERIMENT
+Experiments Reduce the Risk  
+of Uncertainty
+ 
+As you read through Testing Business Ideas, 
+you’ll begin to understand how experiments 
+can help you rapidly reduce the risk of 
+uncertainty. Instead of building internally for 
+long periods in a customer-free zone, you’ll 
+learn how to incrementally reduce your risk 
+over time. This allows you to build at the 
+right time and at the right fidelity.
+Experiment fidelity
+Uncertainty & Risk
+PROGRESS
+
+
+48
+EXPERIMENTS
+discovery
+“Anyone who isn’t embarrassed  
+by who they were last year  
+probably isn’t learning enough.” 
+Alain de Botton  
+Philosopher
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+2 
+—
+ T
+E
+S
+T
+2
+.
+3 
+—
+ L
+E
+A
+R
+N
+
+
+50
+EXPERIMENTS
+discovery
+TEST
+Learn
+BUSINESS 
+DESIGN
+
+
+51
+Test Card
+Copyright Strategyzer
+Learning Card
+Copyright Strategyzer
+1.	 Analyze the Evidence
+Evidence does not speak on 
+its own. Gather the evidence 
+you have from different 
+experiments for a specific 
+hypothesis and analyze it. 
+Make sure you distinguish 
+between strong and weak 
+evidence.
+2.	 Gain Insights
+Insights are key learnings 
+you get from analyzing 
+the data. They allow you 
+to support or refute the 
+hypotheses you’ve been 
+testing. Your insights help 
+you understand how likely 
+your idea is to work.
+
+
+52
+TEST
+DEFINITION
+Evidence
+ 
+What is Evidence? 
+Evidence is what you use to support or 
+refute the hypotheses underlying your  
+business idea. It is data that you get  
+from research or generate from business 
+experiments. Evidence can come in many 
+different forms, ranging from weak to  
+strong evidence. 
+	
+For the purposes of Testing Business 
+Ideas, we focus on your business  
+experiment evidence which we define as:
+• data generated from an experiment  
+or collected in the field.
+• facts that support or refute  
+a hypothesis.
+• possibly of different nature (e.g., quotes, 
+behaviors, conversion rates, orders,  
+purchases…); can be weak/strong.
+Strength of Evidence
+The strength of a piece of evidence  
+determines how reliably the evidence helps  
+support or refute a hypothesis. You can  
+evaluate the strength of evidence by check-
+ing four areas. Is the evidence based on...
+Strong(er) Evidence
+1.
+2.
+3.
+4.
+Weak Evidence
+Opinions (beliefs)  
+When people say things like  
+“I would…,” “I think _____ is  
+important,” “I believe…,” or “I like…”
+What people say  
+What people say in an interview or 
+survey is not necessarily what they 
+do in real life or will do in the future.
+Lab settings  
+When people are aware that you 
+are testing something, they may 
+behave differently than in a real 
+world setting. 
+Small investments  
+Signing up by email to be  
+informed about an upcoming  
+product release is a small  
+investment and relatively weak 
+evidence of interest. 
+Facts (events)  
+When people say things like  
+“Last week I _____ ,” “In that  
+situation I usually _____ ,”  
+or  “I spent _____ on.” 
+What people do  
+Observable behavior is generally  
+a good predictor of how people  
+act and what people might do in 
+the future. 
+Real world settings  
+The most reliable predictor of 
+future behavior is what you 
+observe people doing when they 
+are not aware they are being tested.
+Large investments 
+Pre-purchasing a product or  
+putting one’s professional  
+reputation on the line is an  
+important investment and  
+strong evidence of real interest.
+
+
+53
+LEARN
+Customer Interviews
+	
+	 	
+             millennial parents prefer 
+curated science projects that fit their kids’ 
+education level.
+	
+	 	
+                    interview  
+20 millennial parents about their kids’  
+science project needs.
+	
+	 	
+ the top customer jobs,  
+pains, and gains that are not being met  
+with existing solutions.
+	
+	 	
+  we are 80% accurate in our 
+ top jobs, pains, and gains ranking.
+Grace Grant
+Search Trend Analysis
+	
+	 	
+                             perform trend anal-
+yses on millennial parents searching online for 
+kids’ science project solutions.
+	
+	 	
+   domestic search volume.
+	
+	 	
+   search volume exceeds 10,000 
+searches a month domestically.
+Bob Gail
+	
+	 	
+              millennial parents prefer 
+curated science projects that fit their kids’ 
+education level.
+Concierge
+	
+	 	
+                     manually curate  
+science project kits for 20 children  
+of millennial parents.
+	
+	 	
+    time to create, cost to create, 
+cost to ship, and customer satisfaction.
+	
+	 	
+   the customer satisfaction  
+score is “partially satisfied” to “very  
+satisfied” for 16 of the 20 parents.
+Claire McCain
+	
+	 	
+             millennial parents prefer 
+curated science projects that fit their kids’ 
+education level.
+Customer Interviews
+Transcripts & Quotes
+EVIDENCE STRENGTH
+“We want our child to have a unique  
+science fair project that stands out, not  
+the same one as every other kid.”
+“It has to be appropriate for her grade 
+level. The one we tried stated 2nd grade 
+but was way too difficult.”
+“Many of the kits we find for free online 
+have missing or confusing instructions.”
+“I’d pay to have a science project kit with 
+everything we need all in a box.”
+Search Volume Data
+EVIDENCE STRENGTH
+Month of February:
+“science fair ideas” had 5k–10k searches.
+“kindergarten science fair ideas”  
+had 10k–15k searches.
+“first grade science fair ideas” had  
+1k–5k searches.
+“second grade science fair ideas”  
+had less than 1k searches.
+“third grade science fair ideas”  
+had less than 1k searches.
+Concierge Data
+EVIDENCE STRENGTH
+Time to Create = 2 hours for each kit
+Cost to Create = $10–$15
+Cost to Ship = $5–$8
+Parent Customer Satisfaction Score  
+= Partially Satisfied
+Search Trend Analysis
+Concierge
+Different experiments create different evidence
+
+
+54
+TEST
+DEFINITION
+Insights
+ 
+What are insights? 
+There is a difference between looking at 
+something and looking for something. 
+Evidence on its own will not help you reduce 
+risk in your business idea; therefore, we  
+recommend gleaning insights from the  
+evidence your experiments generate. 
+	
+For the purposes of Testing Business 
+Ideas, business insights are defined as:
+• what you learn from studying the evidence.
+• learning related to the validity of a 
+hypothesis and potential discovery of  
+new directions.
+• the foundation to make informed business 
+decisions and take action.
+
+
+55
+LEARN
+Transcripts  
+& Quotes
+Customer Interviews
+Search Trend Analysis
+Concierge
+Search 
+Volume 
+Data
+Concierge 
+Data
+
+
+56
+TEST
+Number of  
+Data Points
+Resulting  
+Evidence  
+Quality
+Strength  
+of Evidence
+Type  
+of Test
+DEFINITION
+Confidence 
+Level
+Your confidence level indicates how 
+much you believe that your evidence 
+is strong enough to support or refute 
+a specific hypothesis.
+Not all evidence and insights are equal. 
+You should be more confident about your 
+insights when you’ve run several experi-
+ments with increasingly strong evidence 
+for a specific hypothesis. For example, you 
+might start with interviews to gain some first 
+insights into your customers’ jobs, pains, and 
+gains. Then you might run a survey to test 
+your insights on a larger scale with more 
+customers. Finally, you might continue with 
+a simulated sale to generate the strongest 
+type of evidence for customer interest.
+1.	Type and strength of evidence 
+Different types of evidence have 
+different strengths. A quote from 
+an interview is a relatively weak 
+indicator of future behavior. A pur-
+chase in a simulated sale is a very 
+strong indicator of future behav-
+ior. The type of evidence you’ve 
+collected for a specific hypothesis 
+will influence how confident you 
+can be about the reliability of your 
+insights.  
+  
+2.	Number of data points  
+per experiment 
+The more data points you have, the 
+better. Five quotes from personal 
+customer interviews is obviously 
+weaker than 100 quotes. However, 
+those same quotes are likely to 
+be more accurate than 100 data 
+points in an anonymous customer 
+survey.  
+There are three dimensions  
+to help you determine your 
+confidence level:
+
+
+57
+LEARN
+3.	Number and type of  
+experiments conducted  
+for the same hypothesis 
+Your confidence level should rise 
+with the number of experiments you 
+conduct to test the same hypothe-
+sis. Three interview series are bet-
+ter than one. Conducting interviews, 
+surveys, and simulated sales to 
+test the same hypothesis is even 
+better. You achieve the best results 
+when you conduct experiments with 
+increasing strength of evidence, 
+and the more you learn. 
+Hypothesis Confidence Level
+How confident are you that you can support 
+or refute a specific hypothesis based on 
+experiments, evidence, and insights?
+Very Confident 
+You can be very confident if you’ve 
+run several experiments of which 
+at least one is a call-to-action test 
+that produced very strong evidence.
+Somewhat Confident 
+You can be somewhat confident 
+if you’ve run several experiments 
+that produce strong evidence or a 
+particularly strong call-to-action 
+experiment.
+Not Really Confident 
+You need to run more and stronger 
+experiments if you’ve only done 
+interviews or surveys in which 
+people say what they will do. They 
+might behave differently in reality.
+Not Confident at All 
+You need to experiment more if 
+you’ve only run one experiment that 
+produces weak evidence, such as an 
+interview or survey.
+
+
+58
+EXPERIMENTS
+discovery
+“Have a bias toward action —  
+let’s see something happen now. 
+You can break that big plan into 
+small steps and take the first step 
+right away.” 
+Indira Gandhi 
+Former Prime Minister of India
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+2 
+—
+ T
+E
+S
+T
+2
+.
+4
+ 
+—
+ 
+D
+E
+C
+I
+D
+E
+
+
+60
+EXPERIMENTS
+discovery
+TEST
+Decide
+BUSINESS 
+DESIGN
+
+
+61
+TEST
+BUSINESS 
+DESIGN
+1.	 Perservere
+The decision to continue 
+testing an idea based on 
+evidence and insights. You 
+persevere by further testing 
+the same hypothesis with 
+a stronger experiment, or 
+by moving on to your next 
+important hypothesis.
+2.	 Pivot
+The decision to make a 
+significant change to one 
+or more elements of your 
+ideas, value proposition, 
+or business model. A pivot 
+often means that some 
+of your earlier evidence 
+may be irrelevant to your 
+new trajectory. It usually 
+requires retesting elements 
+of your business model that 
+you've already tested.
+3.	 Kill
+The decision to kill an idea 
+based on evidence and 
+insights. The evidence 
+might show that an idea 
+won't work in reality or 
+that the profit potential is 
+insufficient. 
+2
+3
+1
+
+
+62
+TEST
+DEFINITION
+Decide
+ 
+Turning insights into action 
+Learning faster than everyone else is no 
+longer enough. You need to put that learning 
+into action, because what you’ve learned 
+has an expiration date. If you feel like this is 
+happening faster than any time in recorded 
+history, you may be correct. People today 
+are exposed to more information in a year 
+than those in the early 1900s experienced 
+in a lifetime. Both markets and technology 
+move so quickly that the insights you’ve 
+gained can expire within months, weeks,  
+or even days. 
+	
+For the purposes of Testing Business 
+Ideas, we define action as:
+• next steps to make progress with testing 
+and de-risking a business idea.
+• informed decisions based on collected 
+insights.
+• decisions to abandon, change, and/or 
+continue testing a business idea.
+hypothesis
+evidence
+insights
+action
+
+
+63
+DECIDE
+TEST
+Ideate
+Business 
+Prototype
+Assess
+Learn
+Decide
+Hypothesize
+Experiment
+Evidence Supports Hypothesis
+• Test next critical hypothesis
+• Same hypothesis, next experiment, higher fidelity
+Unclear Insight
+• Continue testing
+Evidence Refutes Hypothesis
+• Kill
+• Pivot
+?
+?
+?
+New Insight
+• Kill
+• Pivot
+• Persevere
+BUSINESS 
+DESIGN
+
+
+64
+EXPERIMENTS
+discovery
+“The single biggest problem  
+in communication is the illusion 
+that it has taken place.” 
+George Bernard Shaw  
+Irish playwright and political activist
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+2 
+—
+ T
+E
+S
+T
+2
+.
+5
+ 
+—
+ 
+M
+A
+N
+A
+G
+E
+
+
+66
+EXPERIMENTS
+discovery
+TEST
+Manage
+BUSINESS 
+DESIGN
+
+
+67
+One month of 
+Experiment 
+Ceremonies
+4x 
+Weekly 
+Planning
+20x 
+Daily  
+Standup
+1x  
+Monthly 
+Strategic
+M
+T 
+F
+F
+T
+W
+T
+T
+W
+T
+W
+W
+T
+F
+T
+T
+F
+M
+4x 
+Weekly 
+Learning
+
+
+68
+TEST
+Experiment  
+Ceremonies
+Agenda
+Attendees
+Time
+Meeting Type
+Ceremonies help us collaborate and 
+it is no different for experimentation. 
+If your goal is to create a successful 
+new business, you’ll need more than 
+one experiment to find your way. 
+This is why we recommend a series 
+of ceremonies to create a repeatable 
+process. Each ceremony informs its 
+connecting ceremony, creating a 
+system.
+ 
+This series of experiment ceremonies is a 
+result of years of experience working with 
+teams who’ve made business experimenta-
+tion a repeatable process. We draw inspi-
+ration from agile design thinking and lean 
+methodologies. 
+Planning
+60 minutes
+Weekly
+  Core Team
+• Learning goal
+• Prioritization
+• Tasking
+Standup
+15 minutes
+Daily
+  Core Team
+• Learning goal
+• Blockers
+• Help
+Learning
+60 minutes
+Weekly
+  Extended Team
+  Core Team
+• Synthesize evidence
+• Insights
+• Actions
+Retros
+30 minutes
+Biweekly
+  Core Team
+• Went well
+• To fix  
+• To try
+Deciding
+60 minutes
+Monthly
+  Stakeholders
+  Extended Team
+  Core Team
+• Learnings
+• Blockers
+• Decisions
+
+
+69
+MANAGE
+M
+M
+M
+M
+T
+T
+T
+T
+W
+W
+W
+W
+T
+T
+T
+T
+F
+F
+F
+F
+
+
+70
+TEST
+Co-Located or Distributed? 
+In this rapidly evolving technical world of work, it’s no longer a 
+prerequisite that teams need to sit in the same room to be highly 
+effective. Whether you are co-located or distributed, we’ve  
+witnessed teams adopt these Experiment Ceremonies to help  
+propel their new business ideas.
+Co-Located Teams 
+For Co-Located Teams, we recommend 
+having a space that is semiprivate. It can 
+be difficult to secure a conference room for 
+all of these ceremonies, and it would mean 
+bringing your artifacts in every time if they 
+are physically printed out. 
+	
+Many teams we’ve coached pick a wall or 
+have a pod setup that allows them to quickly 
+collaborate and then get back to work.
+Distributed Teams 
+For Distributed Teams, we strongly recom-
+mend video chat whenever possible. It’s 
+important to make a connection to your 
+team members and be able to see their 
+body language. Luckily for you there are 
+ample options to choose from in video chat. 
+	
+When reviewing artifacts or conducting 
+exercises, try to use software that shows 
+people editing and moving things in real 
+time. This will prevent confusion and dupli-
+cation from attendees.
+
+
+71
+MANAGE
+Time Commitment 
+Based on a 40-hour week, the volume of cermonies 
+can seem overwhelming for your team. In reality, the 
+commitment outside of actually running the experi-
+ments is quite modest, and appropriately shouldered 
+by the core team.
+Core Team 15.25 hours 9% of working time
+Extended Team 5 hours 3% of working time
+Stakeholders 1 hour 0.6% of working time
+
+
+72
+TEST
+Agenda 
+1. Hypotheses to Test 
+Identify and revisit the hypotheses you are testing. 
+Choose at least one of your important hypotheses to 
+test for the upcoming week.
+2. Experiment Prioritization 
+Once you’ve defined your hypotheses, prioritize the 
+experiments you’ll need to run in order to learn about 
+the hypotheses. Use our experiment library to identify 
+which experiment is best suited for testing desirabil-
+ity, viability, and feasibility.
+3. Experiment Tasking 
+After the experiments have been prioritized, task out 
+the top experiments you’ve selected to run for the 
+upcoming week. Remember that complex experiments 
+take longer and often require sequential tasks.
+Time 
+30 – 60 minutes 
+Once a week 
+After Weekly Learning
+Attendees 
+Core Team
+Weekly Planning 
+Plan and task out the experiments for 
+the upcoming week. While the plan 
+may change, the planning that goes 
+into it is still a valuable exercise.
+
+
+73
+MANAGE
+Corporate Team 
+Core members of the Corporate Team. 
+Extended Team members are optional, unless you 
+anticipate that their expertise will be needed for the 
+upcoming week. Then they are recommended.
+Startup Team 
+Core members of the Startup Team. 
+Even if it’s only two of you, get into a habit of explain-
+ing what’s bouncing around your head, so that you 
+can prioritize the most important work. 
+	
+External contractors are optional, unless you 
+anticipate that their expertise will be needed for the 
+upcoming week. Then they are recommended.
+Solopreneur 
+Solopreneurs benefit from Weekly Planning, even  
+if you are not coordinating with external contractors. 
+	
+The ritual of planning your work every week will 
+help you keep a cadence and establish a sense of 
+accomplishment. 
+	
+If you are using external contractors then their 
+attendance is optional, unless you anticipate that 
+their expertise will be needed for the upcoming week’s 
+experiments. Then it is recommended.
+
+
+74
+TEST
+Daily Standups  
+Stay aligned and focus on your daily 
+work. Many experiments require  
+a series of tasks to complete, and  
+Daily Standups help coordinate your 
+day-to-day work. 
+Agenda 
+1. What’s the Daily Goal? 
+Create a daily goal. If your goal is to get an experi-
+ment out the door, then it’s important to align your 
+tasks to achieve that goal. Remember that daily 
+goals feed into your larger, more ambitious goals for 
+the overall business.
+2. How to Achieve That Goal? 
+Identify the tasks needed to achieve the daily goal 
+and plan your day.
+3. What’s in the Way? 
+Identify any blockers that would prevent you from 
+completing experiment tasks for the day or achiev-
+ing the goal. Some of these can be addressed within 
+the standup if it is quick, otherwise meet after the 
+standup to work through it.
+Time 
+15 minutes 
+Every weekday 
+Morning, same time
+Attendees 
+Core Team
+
+
+75
+MANAGE
+Corporate Team 
+Core members of the Corporate Team. 
+Have the Daily Standup in a location where others 
+can see you planning your day. It’s a great way to 
+socialize your process to the rest of the organization.
+Startup Team 
+Core members of the Startup Team. 
+You’ll still benefit from Daily Standups. Startups move 
+fast and you can get out of sync rather quickly. This 
+will help you stay aligned and focused on your goals 
+over time.
+Solopreneur 
+Yes, even Solopreneurs need to plan out your day. 
+Daily Standups help you stay organized and aligned 
+with your bigger goals, even if you are not coordinat-
+ing with external contractors. 
+
+
+76
+TEST
+Time 
+30 – 60 minutes 
+Once a week 
+Before Weekly planning
+Attendees 
+Extended Team 
+Core Team
+Weekly Learning  
+Have a conversation to interpret  
+the evidence and turn it into  
+action. Remember that what you’ve 
+learned from experiments should 
+inform your overall strategy.
+Agenda 
+1. Gather Evidence 
+Gather up the evidence your experiments have gener-
+ated. This includes both qualitative and quantitative 
+types of evidence.
+2. Generate Insights 
+Look for patterns and insights from your evidence. 
+Even qualitative evidence can be quickly themed 
+using techniques such as affinity sorting. Try to keep 
+an open mind. You may find unexpected insights that 
+lead you to new paths to revenue.
+3. Revisit Your Strategy 
+Take the new insights you have and revisit your 
+Business Model Canvas, Value Proposition Canvas, 
+and Assumptions Map. Make any updates needed  
+so that they reflect your current state of learning.  
+This is a crucial step in using what you’ve learned to 
+inform your strategy. If it feels awkward, don’t worry, 
+it’s a normal part of being an entrepreneur.
+
+
+77
+MANAGE
+Corporate Team 
+Core members of the Corporate Team. 
+Extended Team members are optional, unless you 
+anticipate that their expertise will be needed for syn-
+thesizing the learning. Then they are recommended.
+Startup Team 
+Core members of the Startup Team. 
+External contractors are optional, unless you antici-
+pate that their expertise will be needed for synthesiz-
+ing the learning. Then they are recommended.
+Solopreneur 
+If you are using external contractors, they are optional  
+to attend, unless you anticipate that their expertise 
+will be needed for synthesizing the learning. Then 
+they are recommended.
+
+
+78
+TEST
+Agenda 
+1. What’s Going Well 
+Take five minutes to silently write down what’s going 
+well. This gets the retrospective off to a good start as 
+people have space to speak positively about team 
+members and how they are working together.
+2. What Needs Improvement 
+Take five minutes to silently write down what needs 
+improvement. These are things that aren’t going well 
+or could be doing better. It’s important to frame these 
+items as an opportunity to improve, rather than as a 
+personal attack against a team member.
+3. What to Try Next 
+Come up with three things you’d like to try. It can be 
+one of the items you’ve previously discussed, or some-
+thing completely new. This gives you a chance to try 
+out a new way of working that isn’t simply rooted in 
+what needs improvement.
+Time 
+30 – 60 minutes 
+Biweekly 
+After Weekly 
+Learning / Before 
+Weekly Planning
+Attendees 
+Core Team
+Biweekly Retrospective  
+Take a step back, breathe, and talk 
+about how you can improve the way 
+you work. In our opinion, this is the 
+most important ceremony. When you 
+stop reflecting, you stop learning and 
+improving.
+Tip 
+There are plenty of  
+additional retrospective 
+options, such as Speed Boat, 
+Start — Stop — Keep, and 
+Keep — Drop — Add.  
+	
+We recommend trying out  
+a few different formats to  
+see what works best for you.
+
+
+79
+MANAGE
+Corporate Team 
+Core members of the Corporate Team. 
+For Corporate Teams, it’s important to detail what 
+you can control inside the team and what may be 
+outside your sphere of influence in the organization. 
+	
+After the retrospective is completed, have a des-
+ignated team member communicate any external 
+issues upstream to get help.  
+	
+If you cannot get them resolved, try to find creative 
+ways to mitigate their impact on the team.
+Startup Team 
+Core members of the Startup Team. 
+For Startup Teams, keep in mind that as you incorpo-
+rate improvements into the way you work, it can help 
+build the culture you want to create in your startup. 
+	
+Cofounders who exhibit the willingness to inspect 
+and adapt how they work will eventually attract 
+employees who want to work that way.
+Solopreneur 
+For Solopreneurs, it can sometimes feel like an isolat-
+ing experience. Take the time to reflect on how you 
+are working, even if it’s only you during the ceremony.  
+	
+If you are unable to achieve the results you are 
+aiming for, then it’s a good idea to try new ways of 
+working to break through. 
+	
+If you are using external contractors then they are 
+optional to attend, unless you want to check in with 
+them and improve how you are collaborating.
+
+
+80
+TEST
+Agenda 
+1. What You’ve Learned 
+Provide an executive summary of what you’ve learned 
+over the past month. This includes each Weekly 
+Learning Goal and any additional insights generated 
+from experiments. It’s important not to overwhelm  
+the attendees with detailed breakdowns of every 
+experiment. Have the information in the appendix to 
+dive deeper if needed.
+2. What’s Blocking Progress 
+This is the time to review any impediments that 
+Stakeholders can assist in removing. This includes 
+items from previous Retrospectives that fall outside 
+your influence or control. These should be clearly 
+communicated as requests for assistance.
+3. Pivot / Persevere / Kill Decision 
+Make your recommendation to Stakeholders on 
+whether you should pivot, persevere, or kill the new 
+business idea. This should be based not only on what 
+you’ve learned, but also what you see as a path  
+forward in your strategy.
+Time 
+60 – 90 minutes 
+Once a month
+Attendees 
+Stakeholders 
+Extended Team 
+Core Team
+Monthly Stakeholder Reviews 
+Keep stakeholders in the loop on  
+how you are pivoting, persevering,  
+or killing the idea.
+Tip 
+The three major types of 
+pivots we witness are based 
+on the customer, problem, and 
+solution. You can stick with 
+the customer, pivot on the 
+problem. You can stick with 
+the problem and pivot  
+on customer. You can stick 
+with customer and problem, 
+and pivot on the solution.
+
+
+81
+MANAGE
+Corporate Team 
+Core members of the Corporate Team and 
+Stakeholders. 
+For Corporate Teams, continue to communicate the 
+progress on what you’ve learned to Stakeholders. 
+Walk a balance between showing how you are work-
+ing differently and making progress. 
+	
+If the Stakeholders take the form of a funding com-
+mittee, then decisions will be made during the session 
+on whether to fund the effort going forward.
+Startup Team 
+Core members of the Startup Team and 
+Stakeholders. 
+For Startup Teams, you want to keep investors in the 
+loop on how you are making progress, even if that 
+means sharing your struggles. Great investors realize 
+it’s not a linear path to a success.  Balaji Srinivasan 
+affectionally calls this the “Idea Maze.” 
+	
+You can choose to communicate this via an email 
+or video update, if your Investors are not physically 
+nearby.
+Solopreneur 
+Solopreneur and an Advisor.  
+Get on a video call or have coffee with your advisor  
+and share what you’ve learned and what you’re  
+recommending. Although your advisor is not likely  
+an investor, it’s still helpful to get an outside opinion 
+on your strategy.
+To learn more about the “Idea Maze” visit 
+spark-public.s3.amazonaws.com/startup/lecture_slides/
+lecture5-market-wireframing-design.pdf.
+
+
+82
+TEST
+Principles of  
+Experiment 
+Flow
+ 
+Running one experiment is great, but the goal 
+is to reduce the uncertainty in your business. 
+This means running several experiments 
+over time. You want your experiment process 
+to flow, generating the evidence needed to 
+make informed investment decisions.
+ 
+1
+2
+3
+ 
+Visualize  
+your  
+experiments
+Achieving  
+Experiment  
+Flow
+Continuous  
+experimentation
+Limit  
+experiments  
+in progress
+
+
+83
+MANAGE
+We’ve found inspiration from the lean and 
+kanban movements, particularly on this 
+principle. If you keep all this work in your 
+head, you’ll never be able to achieve flow. 
+Not only are your teammates unable to read 
+your mind, but much of flow requires you to 
+visualize your work.
+1.	Write down your experiments 
+We recommend only one experiment  
+per sticky, to keep things organized.  
+You don’t have to write down hundreds 
+of experiments — only the ones you feel 
+you’ll be running over the upcoming 
+weeks.
+2.	Draw a simple experiment board 
+This is one of the simplest forms of  
+an experiment board you can create.  
+We’ve been playing with this format for 
+quite some time and used to like the 
+“Validate” column, which we got orig-
+inally from Eric Ries. Over time, we’ve 
+started to back off a bit on that language 
+because teams will set the bar so low on 
+their hypotheses that they’ll artificially 
+validate them and move on too quickly. 
+We prefer “Learn” over “Validate.”
+3.	Add your experiments to the  
+Backlog column 
+Rank your experiments from top to 
+bottom, where the top is the one you are 
+going to do next. Pull them across as 
+you begin to work on each, moving from 
+Setup, to Run, to Learn.
+PRINCIPLE #1 
+Visualize Your Experiments 
+Make your work visible  
+to yourself and others. 
+Customer 
+Interviews
+Online  
+Ads
+Survey
+Landing  
+Page
+  Backlog
+Setup
+Run
+Learn
+Customer 
+Interviews
+Online  
+Ads
+Survey
+Landing  
+Page
+  Backlog
+Setup
+Run
+Learn
+
+
+84
+TEST
+  Backlog
+Setup
+Run
+Learn
+Teams inherently underestimate how much 
+work it is to run experiments, especially if 
+they’ve never run them before. So it should 
+come as no surprise that they often pull all 
+the experiments over at once and try to do 
+them all in parallel. This results in slowing 
+the entire process down. It’s also difficult to 
+extract insights from a previous experiment 
+to inform your next one.
+Define work in progress limits for  
+your experiments. 
+For example, start with a limit of 1 for Setup, 
+Run, and Learn columns. This will prevent 
+the team from pulling a second experiment 
+over until the first is moved to the next col-
+umn and finally archived. 
+	
+In this example, the team runs the cus-
+tomer interviews before the survey, instead 
+of trying to do both at once (and slowing 
+everything down). The experiments flow, 
+using what you’ve learned to inform your 
+next experiment.
+PRINCIPLE #2 
+Limit Experiments in Progress 
+Multitasking too many experiments 
+can often lead to trouble.
+  Backlog
+Setup
+Run
+Learn
+Online  
+Ads
+Customer 
+Interviews
+Survey
+Landing  
+Page
+Online  
+Ads
+Customer 
+Interviews
+Survey
+Landing  
+Page
+
+
+85
+MANAGE
+  Backlog
+Setup
+Run
+Learn
+The last principle, which also finds its roots 
+in lean and kanban, is the idea of continuous 
+experimentation. A team that starts with the 
+previous board to achieve flow will eventu-
+ally outgrow it. You don’t want the board to 
+artificially constrain the team from growing 
+and maturing over time. As we recommend 
+in the section on ceremonies (see page 80 
+and following), have a retrospective every 
+two weeks. This applies to your experiment 
+flow, which can yield interesting artifacts for 
+improvement.
+Blocker Experiment 
+As an example, is that the team is trying to 
+line up customer interviews, but the research 
+department won’t let them. They state that 
+it’s against company policy to talk to custom-
+ers. That is a “blocker” that’s preventing you 
+from making progress on that experiment. 
+	
+It’s a good idea to identify and visualize 
+these, which will help you communicate 
+progress to stakeholders as to why things 
+are slowing down. It’s hard to achieve flow 
+when you are blocked.
+Splitting Columns Experiment 
+Another example is that the team has 
+outgrown the initial board and is frustrated 
+that the Setup column doesn’t capture the 
+nuances of experimentation. 
+	
+There is work setting up an experiment, 
+but then you have to run it, and if the team 
+is at capacity the experiment may sit 
+around for a long time waiting to be run. 
+When we talk about the board, it would be 
+great to see which ones are ready to be run 
+and which experiments are still being set up.
+PRINCIPLE #3 
+Continuous Experimentation 
+Continue to experiment over time.
+= Blocked
+Online  
+Ads
+Customer 
+Interviews
+Survey
+Landing  
+Page
+Backlog
+  Setup
+    Run
+   Learn
+In Progress
+Waiting
+Customer 
+Interviews
+Online  
+Ads
+Survey
+Landing  
+Page
+
+
+86
+TEST
+Ethics in  
+Experimentation
+Are you experimenting with your customers or on them?  
+This book is about helping you determine if your business idea is 
+desirable, viable, and feasible. What it is not is a reason to scam peo-
+ple out of their money. Vaporware was a term that became popular 
+during the late 1980s and much of the 1990s. It described products 
+that never launched, but never really canceled either. Vaporware 
+products managed to get people hyped up, often promising unreal-
+istic expectations. In more severe cases, people even used the lure of 
+vaporware to scam people out of real money. Our goal isn’t to recre-
+ate the vaporware environment of the 1990s. This is especially import-
+ant in the era of fake news, when techniques can be weaponized as 
+propaganda to influence entire nations. Context is important when 
+using experiments to de-risk your business. In short, don’t be evil.
+
+
+87
+MANAGE
+Experiment 
+Guidelines
+Poor communication can destroy any exper-
+iment cadence you try to create. You can 
+address this by clearly communicating the 
+details and “the why” behind the experimen-
+tation. Teams who’ve done this repeatedly, 
+over time, find that they are repeating them-
+selves quite a bit. To make things a bit more 
+efficient, they’ve crafted experiment guide-
+lines to help communicate with those outside 
+of the team. This is particularly effective when 
+working with legal, safety, and compliance 
+departments.
+Experiment Guidelines Sample
+1.	 Our customer segment is ________.
+2.	 The total number of customers involved in our experiment is 
+estimated to be ________.
+3.	 Our experiment will run from ________ to ________.
+4.	 The information currency we are collecting is ________.
+5.	 The branding we’ll use for the experiment is ________.
+6.	 The financial exposure of the experiment is ________.
+7.	 We can turn off the experiment by using ________.
+
+
+88
+EXPERIMENTS
+discovery
+Experi
+
+
+89
+ments
+
+
+90
+EXPERIMENTS
+discovery
+“The problem happens when you 
+don’t put that first note down.  
+Just start!” 
+Herbie Hancock  
+Jazz musician, composer, and actor
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+3 
+—
+ 
+E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+S
+3
+.
+1
+ 
+—
+ 
+S
+E
+L
+E
+C
+T
+ 
+A
+N
+ 
+E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+
+
+92
+EXPERIMENTS
+Experiment 
+Selection
+3.	Urgency: How much time do you have 
+until the next major decision point or 
+until you run out of money? 
+The selection of the right experiment may 
+depend on the time and money you have 
+available. If you have a major meeting 
+with decision makers or investors com-
+ing up, you might need to use quick and 
+cheap experiments to quickly generate 
+evidence on multiple aspects of your idea. 
+When you are running out of money, you 
+need to pick the right experiments to  
+convince decision-makers and investors  
+to extend funding. 
+Pick the right experiment by asking these 
+three questions:
+1.	Type of hypothesis: What type of 
+hypothesis are you testing? 
+Pick experiments based on your major 
+learning objective. Some experiments 
+produce better evidence for desirability, 
+some work better for feasibility, and some 
+are more appropriate for viability.   
+2.	Level of uncertainty: How much  
+evidence do you already have (for  
+a specific hypothesis)? 
+The less you know, the less you should 
+waste time, energy, and money. When 
+you know little, your only goal is to 
+produce evidence that points you in the 
+right direction. Quick and cheap experi-
+ments are most appropriate for that goal, 
+despite the generally weak evidence. The 
+more you know, the stronger the evidence 
+should become, which is usually achieved 
+by more costly and lengthier experiments. 
+EXPERIMENT NAME / OVERVIEW
+Experiment Name
+Experiment description
+COST
+SETUP TIME
+CAPABILITIES  Design, Product, Tech, Legal, Data, Sales,  
+Marketing, Research, Finance
+EVIDENCE STRENGTH
+RUN TIME
+COST
+under $500
+$500 – $1,000
+$1,000 – $10,000
+$10,000 – $20,000
+$20,000+
+1 – 3 hours
+1 – 3 days
+1 – 3 weeks
+1 – 3 months
+3+ months
+SETUP / Run TIME
+DESIRABILITY · FEASIBILITY · VIABILITY
+Experiment is ideal for  
+— what it’s ideal for
+Experiment is not ideal for  
+— what it’s not ideal for
+
+
+93
+SELECT AN EXPERIMENT
+Rules of thumb 
+1.	Go cheap and fast at the beginning. 
+Early on, you generally know little. Stick to 
+cheap and quick experiments to pinpoint 
+the right direction. You can afford starting 
+out with weaker evidence, because you 
+will test more later. Ideally, you select an 
+experiment that is cheap, fast, and still 
+produces strong evidence.    
+2.	Increase the strength of evidence  
+with multiple experiments for the 
+same hypothesis. 
+Run several experiments to support or 
+refute a hypothesis. Try to learn about a 
+hypothesis as fast as possible, then run 
+more experiments to produce stronger 
+evidence for confirmation. Don’t make 
+important decisions based on one experi-
+ment or weak evidence. 
+ 
+3.	Always pick the experiment that pro-
+duces the strongest evidence given 
+your constraints.  
+Always select and design the strongest 
+experiment you can, while respecting 
+the context. When uncertainty is high 
+you should go fast and cheap, but that 
+doesn’t necessarily mean you can’t pro-
+duce strong evidence.  
+4.	Reduce uncertainty as much as you 
+can before you build anything. 
+People often think they need to build 
+something to start testing an idea. Quite 
+the contrary. The higher the costs to build 
+something, the more you need to run mul-
+tiple experiments to show that customers 
+actually have the jobs, pains, and gains 
+you think they have.
+Discovery 
+Weak evidence is sufficient 
+to discover if your general 
+direction is right. You get 
+first insights into your most 
+important hypotheses.
+Validation 
+Strong evidence is required to 
+validate the direction you’ve 
+taken. You aim to confirm the 
+insights you’ve gotten for your 
+most important hypotheses.
+Search & Testing
+Execution
+Uncertainty & Risk
+PROGRESS
+Spending  
+Levels
+
+
+94
+EXPERIMENTS
+2
+2.5
+3
+3.5
+4
+4.5
+5
+EVIDENCE STRENGTH
+Discovery 
+Experiments
+1.5
+2
+2.5
+Storyboard  
+p. 186  D · F · V  
+Card Sorting 
+p. 222  D · F · V 
+Buy a Feature  
+p. 226  D · F · V 
+Boomerang 
+p. 204  D · F · V 
+Online Ad 
+p. 146  D · F · V 
+Paper Prototype 
+p. 182  D · F · V 
+Brochure 
+p. 194  D · F · V 
+Email Campaign 
+p. 162  D · F · V 
+Discussion Forums 
+p. 134  D · F · V 
+Data Sheet  
+p. 190  D · F · V 
+Link Tracking 
+p. 152  D · F · V 
+Search Trend Analysis 
+p. 126  D · F · V 
+Customer Interviews 
+p. 106  D · F · V 
+A Day in the Life  
+p. 116  D · F · V 
+Product Box 
+p. 214  D · F · V 
+Speed Boat  
+p. 218  D · F · V 
+AVG. TIME
+Partner & Supplier  
+Interviews  
+p. 114  D · F · V 
+Expert Stakeholder  
+Interviews  
+p. 115  D · F · V 
+ 
+ 
+Feature Stub  
+p. 156  D · F · V 
+Discovery Survey 
+p. 122  D · F · V
+Customer Support Analysis 
+p. 142  D · F · V
+Sales Force Feedback 
+p. 138  D · F · V
+Ask these three questions
+1.	 What type of hypothesis are you testing?
+2.	 How much evidence do you already have  
+(for a specific hypothesis)?
+3.	 How much time do you have until the next major 
+decision point or until you run out of money?
+
+
+95
+SELECT AN EXPERIMENT
+3
+3.5
+4
+3D Print 
+p. 176  D · F · V 
+Explainer Video 
+p. 200  D · F · V 
+Referral Program 
+p. 172  D · F · V 
+Pretend to Own 
+p. 208  D · F · V 
+Web Traffic Analysis 
+p. 130  D · F · V 
+Social Media Campaign 
+p. 168  D · F · V 
+COST
+Rules of thumb
+1.	 Go cheap and fast early on in your journey.
+2.	 Increase the strength of evidence  
+with multiple experiments for the same 
+hypothesis.
+3.	 Always pick the experiment that produces the 
+strongest evidence, given your constraints.
+4.	 Reduce uncertainty as much as you can before 
+you build anything. 
+
+
+96
+EXPERIMENTS
+Validation 
+Experiments
+2
+2.5
+3
+3.5
+4
+4.5
+5
+Extreme Programming Spike 
+p. 306  D · F · V 
+Simple Landing Page  
+p. 260  D · F · V   
+Clickable Prototype  
+p. 236  D · F · V  
+Split Test  
+p. 270  D · F · V  
+Pop-Up Store 
+p. 300  D · F · V 
+Letter of Intent 
+p. 294  D · F · V 
+Validation Survey 
+p. 278  D · F · V 
+Mock Sale  
+p. 288  D · F · V 
+Concierge 
+p. 248  D · F · V 
+AVG. TIME
+EVIDENCE STRENGTH
+1.5
+2
+2.5
+Presale 
+p. 274  D · F · V  
+Ask these three questions
+1.	 What type of hypothesis are you testing?
+2.	 How much evidence do you already have  
+(for a specific hypothesis)?
+3.	 How much time do you have until the next major 
+decision point or until you run out of money?
+
+
+97
+SELECT AN EXPERIMENT
+3
+3.5
+4
+Crowdfunding 
+p. 266  D · F · V 
+Life-Sized  Prototype 
+p. 254  D · F · V 
+Single Feature MVP 
+p. 240  D · F · V 
+Mash-Up 
+p. 244  D · F · V 
+Wizard of Oz 
+p. 284  D · F · V 
+Rules of thumb
+1.	 Go cheap and fast early on in your journey.
+2.	 Increase the strength of evidence  
+with multiple experiments for the same 
+hypothesis.
+3.	 Always pick the experiment that produces the 
+strongest evidence, given your constraints.
+4.	 Reduce uncertainty as much as you can before 
+you build anything.
+COST
+
+
+98
+EXPERIMENTS
+B2B Software Sequence
+B2B software companies 
+look for opportunities where 
+employees are mandated to 
+use subpar software. Many 
+have disrupted incumbents 
+simply by observing where 
+their deficiencies exist and 
+then designing a better 
+experience that solves for a 
+high value customer job, using 
+modern technology.
+B2B Services Sequence
+B2B services companies often 
+interview stakeholders to 
+research the cost of poorly 
+designed processes and ser-
+vices. They analyze customer 
+support data to see if this is 
+reflected in other areas within 
+the company. Afterward, they 
+create a brochure to commu-
+nicate the improvement and 
+then deliver the service manu-
+ally to a handful of customers 
+before scaling.
+Crowdfunding  
+p. 266
+Single Feature 
+MVP p. 240
+Concierge  
+p. 248
+DEFINITION
+Experiment 
+Sequences 
+ 
+Go beyond pairing with  
+experimentation sequences.
+Once you’ve turned your insights into 
+action, it’s time to move on and throw the 
+experiment away, correct? Well, not neces-
+sarily. As illustrated in the pairings for each 
+experiment, there are experiments you 
+can run before, during, and after. But what 
+about a sequence of experiments?  Great 
+teams are able to gain momentum and 
+build up stronger evidence over time with  
+a series of experiments.
+B2B Hardware Sequence
+B2B hardware companies 
+search for evidence of 
+customers already hacking 
+together their own solutions 
+to a problem. They use this to 
+inform their design to do the 
+job even better. Then they test 
+it out quickly by integrating 
+standard components with 
+potential customers and 
+crowdfunding it if the signal 
+is strong.
+Expert 
+Stakeholder 
+Interviews 
+p. 115
+Customer Support 
+Analysis  
+p. 142
+Brochure  
+p. 194
+Presale  
+p. 274
+Discussion 
+Forums  
+p. 134
+Boomerang 
+p. 204
+Clickable 
+Prototype  
+p. 236
+Presale  
+p. 274
+Paper Prototype 
+p. 182
+3D Print  
+p. 176
+Data Sheet 
+p. 190
+Mash Up 
+MVP  
+p. 244
+Letter of Intent 
+p. 294
+Customer 
+Interview  
+p. 106
+Customer 
+Interview 
+p. 106
+
+
+99
+SELECT AN EXPERIMENT
+Pop-Up Store 
+p. 300
+B2C Hardware Sequence
+Consumer hardware compa-
+nies have more options now 
+than ever before. They can 
+create Explainer Videos on 
+how their new product will 
+solve an existing problem, 
+then rapidly build using stan-
+dard hardware components. 
+They can eventually crowd-
+fund the build and distribute 
+to the customer through retail 
+or direct.
+B2C Software Sequence
+The rise of the Internet, open 
+source software, and tools 
+have catapulted new soft-
+ware companies into global 
+markets. Smart B2C compa-
+nies use the words of their 
+customers in their content to 
+increase conversions. They 
+rapidly prototype experiences 
+and even deliver the value 
+manually before building the 
+product.
+B2B2C with B2C 
+Experimentation Sequence
+B2B2C companies are in a 
+unique position to use exper-
+imentation to inform the sup-
+ply chain. Many companies 
+we work with go directly to 
+the consumer with their exper-
+iments, generate evidence, 
+and then use it in negotiations 
+with their B2B partners. The 
+presence of evidence helps 
+provide leverage, instead of 
+circular conversations based 
+only on opinion.
+Highly Regulated Sequence
+Contrary to popular belief, 
+highly regulated companies 
+can also use experimentation. 
+They need to do so within 
+the constraints of the system 
+and be mindful that not all 
+testing activities involve a 
+catastrophic degree of risk. 
+Companies carve out the 
+extremely high risk areas they 
+are not willing to experi-
+ment on and then go after 
+the places in which they can 
+experiment.
+B2C Services Sequence
+B2C services companies 
+start in a specific region by 
+interviewing customers and 
+looking for search volume to 
+determine interest. They can 
+quickly launch ads that drive 
+regional customers to their 
+landing page, then follow it  
+up with an email campaign. 
+Once they’ve conducted a few  
+presales, B2C services can 
+deliver the value manually to 
+refine it before scaling.
+Search Trend  
+Analysis  
+p. 126
+Search Trend  
+Analysis  
+p. 126
+Online Ad  
+p. 146
+Simple Landing  
+Page  
+p. 260
+Email Campaign  
+p. 162
+Presale  
+p. 274
+Mock Sale  
+p. 288
+Clickable 
+Prototype  
+p. 236
+Email 
+Campaign  
+p. 162
+Simple Landing 
+Page  
+p. 260
+Online Ad  
+p. 146
+Wizard of Oz  
+p. 284
+Concierge  
+p. 248
+Paper 
+Prototype 
+p. 182
+3D Print  
+p. 176
+Explainer 
+Video p. 200 
+Crowdfunding 
+p. 266 
+Pop-Up Store 
+p. 300
+Customer 
+Interview p. 106
+Customer 
+Interview 
+p. 106
+Online Ad  
+p. 146
+Simple Landing 
+Page p. 260
+Explainer 
+Video p. 200
+Presale  
+p. 274
+Concierge  
+p. 248
+Buy a Feature  
+p. 226
+Data Sheet  
+p. 190
+Partner & Supplier 
+Interview p. 114
+Letter of Intent 
+p. 294
+A Day in the Life 
+p. 116
+Validation 
+Survey p. 278
+Customer 
+Support Analysis 
+p. 142
+Sales Force 
+Feedback p. 138
+Storyboard  
+p. 186
+Explainer Video 
+p. 200
+Brochure  
+p. 194
+Partner & Supplier 
+Interview p. 114
+Data Sheet  
+p. 190
+Presale  
+p. 274
+Customer 
+Interview 
+p. 106
+Customer 
+Interview 
+p. 106
+
+
+100
+EXPERIMENTS
+discovery
+“Knowing your customer  
+inside and out is mission-critical, 
+and it takes time.” 
+Sallie Krawcheck  
+Founder, Ellevest
+
+
+S
+E
+C
+T
+I
+O
+N
+ 
+3 
+—
+ 
+E
+X
+P
+E
+R
+I
+M
+E
+N
+T
+S
+3
+.
+2 
+—
+ 
+D
+I
+S
+C
+O
+V
+E
+R
+Y
+
+
+102
+EXPERIMENTS
+discovery
+102
+TEST
+BUSINESS  
+DESIGN
+Experiment
+
+
+103
+103
+Discovery 
+Discover if your general 
+direction is right. Test basic 
+hypotheses. Get first insights 
+to course-correct rapidly. 
+Validation 
+Validate the direction you’ve 
+taken. Confirm with strong 
+evidence that your business 
+idea is very likely to work. 
+Idea
+Business
+Search & Testing
+Execution
+
+
+104
+EXPERIMENTS
+discovery
+Discovery  
+Experiments
+EXPERIMENT
+TYPE
+Exploration
+Customer Interview  p. 106 
+Expert Stakeholder Interviews  p. 115 
+Partner & Supplier Interviews  p. 114 
+A Day in the Life  p. 116 
+Discovery Survey  p. 122
+Data Analysis
+Search Trend Analysis  p. 126 
+Web Traffic Analysis  p. 130 
+Discussion Forums  p. 134 
+Sales Force Feedback  p. 138 
+Customer Support Analysis  p. 142
+Interest Discovery
+Online Ad  p. 146 
+Link Tracking  p. 152 
+404 Test  p. 160 
+Feature Stub  p. 156 
+Email Campaign  p. 162 
+Social Media Campaign  p. 168 
+Referral Program  p. 172
+Discussion Prototypes
+3D Print  p. 176 
+Paper Prototype  p. 182 
+Storyboard  p. 186 
+Data Sheet  p. 190 
+Brochure  p. 194 
+Explainer Video  p. 200 
+Boomerang  p. 204 
+Pretend to Own  p. 208
+Preference &  
+Prioritization Discovery
+Product Box  p. 214 
+Speed Boat  p. 218 
+Card Sorting  p. 222 
+Buy a Feature  p. 226
+
+
+105
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY 
+DESIRABILITY · FEASIBILITY · VIABILITY
+COST
+SETUP TIME
+EVIDENCE STRENGTH
+THEME
+RUN TIME

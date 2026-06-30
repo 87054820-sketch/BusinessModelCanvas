@@ -834,6 +834,8 @@ function attachedRefKey(ref: AttachedRef): string {
       return `case:${ref.slug}`;
     case 'pattern':
       return `pattern:${ref.slug}`;
+    case 'resource':
+      return `resource:${ref.slug}`;
     case 'project':
       return `project:${ref.projectId}:${ref.activeCanvasId ?? ''}:${ref.activeStoryId ?? ''}`;
     case 'canvas':
@@ -849,6 +851,8 @@ function attachedRefLabel(ref: AttachedRef): string {
       return ref.companyName;
     case 'pattern':
       return ref.name;
+    case 'resource':
+      return ref.title;
     case 'project':
     case 'canvas':
     case 'story':
@@ -857,18 +861,18 @@ function attachedRefLabel(ref: AttachedRef): string {
 }
 
 function projectIdFromAttachedRef(ref: AttachedRef | null): string | undefined {
-  if (!ref || ref.type === 'case' || ref.type === 'pattern') return undefined;
+  if (!ref || ref.type === 'case' || ref.type === 'pattern' || ref.type === 'resource') return undefined;
   if (ref.projectSource === 'library') return undefined;
   return ref.projectId;
 }
 
 function allowProjectDraftCards(ref: AttachedRef | null): boolean {
-  return ref === null || ref.type === 'case' || ref.type === 'pattern' || isLibraryProjectRef(ref);
+  return ref === null || ref.type === 'case' || ref.type === 'pattern' || ref.type === 'resource' || isLibraryProjectRef(ref);
 }
 
 function deriveCopilotMode(ref: AttachedRef | null): CopilotMode {
   if (ref === null) return 'createProject';
-  if (ref.type === 'case' || ref.type === 'pattern') return 'libraryReference';
+  if (ref.type === 'case' || ref.type === 'pattern' || ref.type === 'resource') return 'libraryReference';
   if (isLibraryProjectRef(ref)) return 'libraryReference';
   return 'projectWork';
 }
@@ -909,7 +913,7 @@ function buildComposerQuickActions(ref: AttachedRef | null, mode: CopilotMode): 
 }
 
 function isLibraryProjectRef(ref: AttachedRef | null): boolean {
-  return Boolean(ref && ref.type !== 'case' && ref.type !== 'pattern' && ref.projectSource === 'library');
+  return Boolean(ref && ref.type !== 'case' && ref.type !== 'pattern' && ref.type !== 'resource' && ref.projectSource === 'library');
 }
 
 function providerLabel(provider: CopilotProviderHealth | null): string {
@@ -949,6 +953,8 @@ function fetchAttachedContext(ref: AttachedRef | null, lang: Lang, query?: strin
       return copilotApi.fetchCaseContext(ref.slug, lang);
     case 'pattern':
       return copilotApi.fetchPatternContext(ref.slug, lang);
+    case 'resource':
+      return copilotApi.fetchResourceContext(ref.slug, lang, query);
     case 'project':
       return copilotApi.fetchProjectContext(ref.projectId, lang, {
         activeCanvasId: ref.activeCanvasId,
@@ -2204,7 +2210,11 @@ function MessageBubble({
               streaming ? <CopilotStreamingText content={contentForRender} /> : <CopilotMarkdown content={contentForRender} />
             )}
             <CopilotCaseReferenceBoard refs={caseRefs} onNavigateToCanvas={onNavigateToCanvas} />
-            <CopilotResourceReferenceBoard refs={resourceRefs} />
+            <CopilotResourceReferenceBoard
+              refs={resourceRefs}
+              displayName={displayName}
+              onNavigateToCanvas={onNavigateToCanvas}
+            />
             <CopilotCanvasReferenceBoard
               refs={canvasRefs}
               lang={lang}
@@ -2343,6 +2353,11 @@ function CopilotMarkdown({ content }: { content: string }) {
             <h5 className="mt-3 mb-1.5 text-[13px] font-semibold text-gray-950 first:mt-0">
               {children}
             </h5>
+          ),
+          h4: ({ children }) => (
+            <h6 className="mt-2.5 mb-1 text-[12px] font-semibold text-gray-800 first:mt-0">
+              {children}
+            </h6>
           ),
           p: ({ children }) => <p className="my-1.5 break-words leading-relaxed">{children}</p>,
           a: ({ href, children }) => (

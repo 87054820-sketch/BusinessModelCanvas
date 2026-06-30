@@ -1,0 +1,80 @@
+{
+  "chapter": "ch03-architecture",
+  "sourceFiles": {
+    "en": "07-3.-Architecture-Principles-for-Designing-a-Successful-Platform.txt"
+  },
+  "concepts": [
+    {
+      "name": "Platforms as networked value creation",
+      "definition": "The book's core discipline for platform strategy: a way to structure attention, choices, and action around the central mechanism described in this chapter."
+    },
+    {
+      "name": "Chapter-Specific Framework",
+      "definition": "Every platform resolves around one core interaction — the single most important exchange of value on the platform. Three elements of the core interaction: participants (producers + consumers of value), the value unit (what is created and exchanged — a ride, a room, a product listing, a video), and the filter (the mechanism that matches value units to consumers — search, recommendation, curation). The platform's job is to enable this interaction at scale: pull (attract participants), facilitate (make exchange easy), and match (connect the right value units to the right consumers)."
+    },
+    {
+      "name": "Decision Discipline",
+      "definition": "A practical logic for turning analysis into choices, signals, tests, governance, or commitments rather than leaving insight as narrative."
+    },
+    {
+      "name": "System Effects",
+      "definition": "The recognition that outcomes emerge from interacting forces, participants, incentives, feedback loops, or external changes rather than from one isolated variable."
+    }
+  ],
+  "arguments": [
+    {
+      "claim": "The framework changes how managers see the system",
+      "evidence": "The chapter gives managers a vocabulary and sequence for seeing hidden structure: forces and signals in scenario work, or participants and interactions in platform work."
+    },
+    {
+      "claim": "The value appears only when insight changes action",
+      "evidence": "The chapter repeatedly links diagnosis to decisions, indicators, governance, metrics, launch choices, or strategic commitments."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Framework application case",
+      "context": "The chapter applies platform strategy to a concrete managerial problem.",
+      "illustrates": "How the framework reveals hidden structure, trade-offs, and action points.",
+      "lesson": "Use the method to change decisions, not merely to label a situation."
+    }
+  ],
+  "logicChains": [
+    {
+      "description": "Define the central decision → map forces/participants and uncertainties → identify the key mechanism → test implications or interactions → monitor signals and adapt action.",
+      "sourceHint": "Synthesized from source chapter and index summary."
+    }
+  ],
+  "terminology": [
+    {
+      "term": "Platforms as networked value creation",
+      "definition": "Core idea of this platform strategy chapter."
+    },
+    {
+      "term": "Signal",
+      "definition": "An observable indicator that a future, network state, or strategic condition is emerging."
+    },
+    {
+      "term": "Feedback loop",
+      "definition": "A reinforcing or balancing mechanism that changes outcomes over time."
+    }
+  ],
+  "nuance": [
+    "The method is not prediction; it is structured preparation and action under uncertainty.",
+    "The framework must be revisited as signals, participants, and conditions change."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": [
+      "platform-ecosystem-map"
+    ],
+    "relatedStrategyFrameworkSlugs": [
+      "platform-strategy"
+    ],
+    "relatedPatternSlugs": [],
+    "relatedCaseSlugs": [],
+    "relatedChapters": [
+      "ch01-intro",
+      "ch02-network"
+    ]
+  }
+}

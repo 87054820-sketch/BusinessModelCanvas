@@ -1,0 +1,41 @@
+{
+  "chapter": "ch02-test",
+  "sourceFiles": { "en": "01-ebscohost-(3).txt, 02-BlandDavidJOste_2020_Experiment_TestingBusinessIdeas.txt, 03-BlandDavidJOste_2020_DiscoveryExperiments_TestingBusinessIdeas.txt" },
+  "concepts": [
+    { "name": "Experiment Library", "definition": "A field guide of 44 experiment types used to reduce the uncertainty and risk of a business idea. Experiments are organized by Discovery vs Validation, risk tested (desirability, feasibility, viability), cost, setup time, run time, capabilities required, and evidence strength." },
+    { "name": "Discovery Experiments", "definition": "Low-cost, fast experiments used when uncertainty is high. They explore whether the general direction is right, test basic assumptions, and generate first insights for course correction. Examples include customer interviews, discussion forums, search trend analysis, online surveys, paper prototypes, storyboards, data sheets, brochures, explainer videos, and product boxes." },
+    { "name": "Validation Experiments", "definition": "Stronger experiments used after a direction has emerged. They confirm that a business idea is very likely to work, often by asking customers for meaningful behavior or commitment. Examples include clickable prototypes, smoke tests, Wizard of Oz, concierge, letter of intent, pre-sale, crowdfunding, mock sales, pop-up stores, and split tests." },
+    { "name": "Experiment Selection Criteria", "definition": "Choose an experiment by asking what hypothesis type is being tested, how much uncertainty remains, and how urgently a decision is needed. Early/high-uncertainty hypotheses call for cheap discovery; later/high-stakes decisions require stronger validation evidence." },
+    { "name": "Experiment Card Anatomy", "definition": "Every experiment type is described with cost, setup time, run time, capabilities, risk type, and evidence strength so teams can compare tests before spending effort." },
+    { "name": "Experiment Sequences", "definition": "Successful testing normally requires a series of experiments with increasing fidelity and evidence strength. A team rarely runs one experiment, gets a breakthrough, and builds a multibillion-dollar business; instead, each test reduces risk enough to choose the next one." }
+  ],
+  "arguments": [
+    { "claim": "Match the experiment to the uncertainty stage, not to the biggest budget or most impressive artifact.", "evidence": "Customer interviews are excellent for qualitative insight but weak as evidence of future behavior; pre-sales or letters of intent are stronger, but using them before understanding the problem wastes time and brand equity." },
+    { "claim": "Start cheap and fast, then increase fidelity as evidence accumulates.", "evidence": "The book shows a progression from interviews and search trend analysis to concierge or simulated sale experiments for the science-kit example. Each experiment answers a different question and earns the right to run the next, stronger one." },
+    { "claim": "Different experiments create different evidence, so no single test proves a business model.", "evidence": "The same science-kit hypothesis can be tested with interviews (quotes about jobs/pains/gains), search trend analysis (search volume), and concierge (cost, time, satisfaction). Each evidence type is useful but incomplete." }
+  ],
+  "cases": [
+    { "name": "Science-kit experiment sequence", "context": "The running idea is a monthly subscription of curated science projects for millennial parents.", "illustrates": "A sequence: customer interviews explore jobs/pains/gains; search trend analysis tests online demand; concierge manually curates kits for 20 children and measures creation cost, shipping cost, and satisfaction.", "lesson": "Use multiple tests with increasing strength rather than pretending the first signal is enough." },
+    { "name": "Customer Interview", "context": "A discovery experiment focused on jobs, pains, gains, and willingness to pay.", "illustrates": "Useful for qualitative insight and value proposition design, but weak as a substitute for future behavior because people say things they may not do.", "lesson": "Use interviews to shape hypotheses and scripts for later experiments, not as final purchase proof." },
+    { "name": "Wizard of Oz and Concierge", "context": "Validation-style experiments where the customer experience is delivered manually behind the scenes.", "illustrates": "A team can test willingness to use or pay before investing in automation or infrastructure.", "lesson": "Manual delivery is not cheating; it is a learning shortcut when the question is demand and service fit, not operational scale yet." }
+  ],
+  "logicChains": [
+    { "description": "Pick top-risk hypothesis from Assumptions Map → choose a cheap discovery test if uncertainty is high → collect weak but fast evidence → synthesize into insights → run a stronger validation test when direction is clearer → move toward behavior/commitment evidence before major execution.", "sourceHint": "Experiment and Discovery sections; science-kit sequence across interview/search/concierge examples." }
+  ],
+  "terminology": [
+    { "term": "Wizard of Oz", "definition": "A front-end experience appears automated while the back-end is manual, testing whether customers value the experience before the team builds automation." },
+    { "term": "Concierge", "definition": "A team manually delivers the service to a small number of customers to learn what they need and whether the value proposition works before scaling." },
+    { "term": "Smoke Test", "definition": "A lightweight test that simulates availability or asks for action (such as sign-up or purchase intent) to measure demand before building the product." },
+    { "term": "Experiment fidelity", "definition": "How close an experiment is to the real solution or market behavior. Fidelity should increase as uncertainty decreases and evidence accumulates." }
+  ],
+  "nuance": [
+    "Discovery experiments are valuable even though evidence is weak, because early uncertainty is too high for expensive validation.",
+    "Validation experiments can damage trust or brand if run carelessly; choose them only when the team can handle the customer-facing implications.",
+    "Experiment selection is a portfolio choice: run enough tests to reduce risk without confusing activity with learning."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["experiment-canvas", "value-proposition-canvas"],
+    "relatedExperimentSlugs": ["customer-interview", "online-survey", "discussion-forums", "search-trend-analysis", "storyboard", "clickable-prototype", "smoke-test", "wizard-of-oz", "concierge", "letter-of-intent", "pre-sale"],
+    "relatedChapters": ["ch01-design", "ch03-evidence"]
+  }
+}

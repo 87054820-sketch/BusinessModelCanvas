@@ -111,6 +111,24 @@ export function registerLibraryRoutes(
       return detail;
     },
   );
+
+  app.get<{ Params: { slug: string } }>(
+    '/library/resources/:slug/chapters',
+    async (req, reply) => {
+      const chapters = await bundle.getResourceChapters(req.params.slug);
+      if (!chapters) return reply.code(404).send({ error: 'Resource has no chapters' });
+      return chapters;
+    },
+  );
+
+  app.get<{ Params: { slug: string; chapterSlug: string } }>(
+    '/library/resources/:slug/chapters/:chapterSlug',
+    async (req, reply) => {
+      const detail = await bundle.getResourceChapter(req.params.slug, req.params.chapterSlug);
+      if (!detail) return reply.code(404).send({ error: 'Chapter not found' });
+      return detail;
+    },
+  );
 }
 
 /**

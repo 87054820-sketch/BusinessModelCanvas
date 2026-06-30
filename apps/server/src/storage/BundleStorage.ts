@@ -11,6 +11,8 @@ import type {
   LibraryResource,
   LibraryResourceDetail,
   Project,
+  ResourceChapterDetail,
+  ResourceChapterMeta,
   Snapshot,
   SnapshotKind,
   SnapshotMeta,
@@ -309,7 +311,48 @@ export class BundleStorage implements CanvasStorage {
       const c = this.bySlug.get(caseSlug)?.caseJson;
       if (c) relatedCases.push(c);
     }
-    return { resource: rec.resource, description, relatedCases };
+    const chapters = await loadChapterIndex(rec.resourceDir);
+    return { resource: rec.resource, description, relatedCases, ...(chapters ? { chapters } : {}) };
+  }
+
+  /**
+   * Load the chapter index for a resource. Returns null when the resource
+   * has no `chapters/index.json` on disk — the caller treats absence as
+   * "no chapter content".
+   */
+  async getResourceChapters(slug: string): Promise<ResourceChapterMeta[] | null> {
+    const rec = this.resourcesBySlug.get(slug);
+    if (!rec) return null;
+    return loadChapterIndex(rec.resourceDir);
+  }
+
+  /**
+   * Load one chapter's content + hydrated related cases. Returns null when
+   * the resource or chapter is missing.
+   */
+  async getResourceChapter(
+    resourceSlug: string,
+    chapterSlug: string,
+  ): Promise<ResourceChapterDetail | null> {
+    const rec = this.resourcesBySlug.get(resourceSlug);
+    if (!rec) return null;
+    const chapters = await loadChapterIndex(rec.resourceDir);
+    if (!chapters) return null;
+    const chapter = chapters.find((ch) => ch.slug === chapterSlug);
+    if (!chapter) return null;
+
+    const chaptersDir = join(rec.resourceDir, 'chapters');
+    const content = {
+      en: await readChapterMd(chaptersDir, chapterSlug, 'en'),
+      zh: await readChapterMd(chaptersDir, chapterSlug, 'zh'),
+    };
+
+    const relatedCases: CaseLibraryEntry[] = [];
+    for (const caseSlug of chapter.relatedCaseSlugs ?? []) {
+      const c = this.bySlug.get(caseSlug)?.caseJson;
+      if (c) relatedCases.push(c);
+    }
+    return { chapter, content, relatedCases };
   }
 
   hasResource(slug: string): boolean {
@@ -558,6 +601,8 @@ export class BundleStorage implements CanvasStorage {
     const resourceDir = join(this.bundleDir, 'resources', slug);
     const resourceJsonRaw = await fs.readFile(join(resourceDir, 'resource.json'), 'utf8');
     const resource = JSON.parse(resourceJsonRaw) as LibraryResource;
+    const chapters = await loadChapterIndex(resourceDir);
+    if (chapters?.length) resource.chapterCount = chapters.length;
     return { slug: resource.slug, resourceDir, index: orderIndex, featured, resource };
   }
 
@@ -790,6 +835,41 @@ async function readDescriptionMd(dir: string, lang: Lang): Promise<string> {
     return await fs.readFile(join(dir, `description.${lang}.md`), 'utf8');
   } catch (err) {
     if ((err as NodeJS.ErrnoException).code === 'ENOENT') return '';
+    throw err;
+  }
+}
+
+/**
+ * Read a single chapter's bilingual markdown file:
+ * `chapters/<chapterSlug>.<lang>.md`. Returns '' when missing.
+ */
+async function readChapterMd(
+  chaptersDir: string,
+  chapterSlug: string,
+  lang: Lang,
+): Promise<string> {
+  try {
+    return await fs.readFile(join(chaptersDir, `${chapterSlug}.${lang}.md`), 'utf8');
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === 'ENOENT') return '';
+    throw err;
+  }
+}
+
+/**
+ * Load `chapters/index.json` for a resource directory. Returns null when
+ * the file is absent (most resources don't bundle chapters). The returned
+ * array is sorted by display `order`.
+ */
+async function loadChapterIndex(resourceDir: string): Promise<ResourceChapterMeta[] | null> {
+  try {
+    const raw = await fs.readFile(join(resourceDir, 'chapters', 'index.json'), 'utf8');
+    const chapters = JSON.parse(raw) as ResourceChapterMeta[];
+    if (!Array.isArray(chapters)) return null;
+    chapters.sort((a, b) => a.order - b.order);
+    return chapters;
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === 'ENOENT') return null;
     throw err;
   }
 }

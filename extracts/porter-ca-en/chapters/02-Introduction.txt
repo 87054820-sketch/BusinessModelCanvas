@@ -1,0 +1,191 @@
+# Introduction
+
+diversiﬁcation. The ability to add value through competing in multiple
+businesses can be understood in terms of sharing activities or transferring
+proprietary skills across activities. This allows the elusive notion of synergy
+to be made concrete and rigorous. Competitive Advantage explores these
+questions as well as the organizational challenges of cross-business
+collaboration.3 These questions are front and center again as a new wave of
+mergers with questionable competitive value is occurring.
+Finally, the activity-based view of the ﬁrm offers a powerful framework
+for examining international strategy, or, more generally, competing across
+locations. In competing internationally, a ﬁrm can spread activities to
+different and multiple locations (I term this conﬁguration), while also
+gaining potential competitive advantages by coordinating activities across
+locations in a global network. I developed the international issues in a
+separate book because of Competitive Advantage’s already formidable
+length and complexity.4 This line of thinking led naturally to an interest in
+the role of location itself in competitive advantage. The third book in this
+trilogy, The Competitive Advantage of Nations, explores this question.5
+Reﬂecting on Competitive Advantage 13 years after its publication, I am
+ﬁrst and foremost heartened by the widespread acceptance of its essential
+concepts. The phrases competitive advantage and sustainable competitive
+advantage have become commonplace. The concept of activities has not
+only been prominent in treatments of competition and strategy but also in
+exploring more functional issues such as service management and the role
+of information technology in competition. Activity-based costing is
+becoming a new standard in management accounting, even though it has yet
+to achieve its potential as a tool for strategy.
+Looking back, Competitive Advantage is also a source of particular
+satisfaction to me as a scholar. While Competitive Strategy drew on a rich
+tradition in industrial economics, Competitive Advantage had no clear
+antecedents in the literature on management or economics. Instead, it
+emerged more from my attempt to solve a puzzle. How could we ﬁnd a
+systematic way to examine the roots of competitive advantage that tied
+directly to cost and differentiation and revealed the essential differences
+between ﬁrms without intractable complexity? I am more persuaded now
+than ever that activities provide the essential tool. As my work has
+progressed, the concept has proven even more powerful than I anticipated.
+
+
+Why? Competitive Advantage offers a way to go beyond broad or
+unidimensional characterizations of competitive advantage. Much early
+work in the ﬁeld ascribed advantage to overall size or market share. This
+was clearly too simple for several reasons. First, size and share are far more
+important to cost or differentiation in some parts of the business than others.
+Moreover, small- and medium-sized ﬁrms outperform larger ﬁrms in many
+industries. Finally, even where size and share are associated with superior
+performance, they are often outcomes of other competitive advantages, not
+the causes.
+Other attempts to explain competitive advantage—e.g., strengths and
+weaknesses, key success factors, or distinctive competencies—all rightly
+recognize that a ﬁrm is multidimensional, but offer no way to explore the
+sources of advantage systematically or rigorously, much less link them to
+proﬁtability. Competitive Advantage starts with the premise that competitive
+advantage can arise from many sources, and shows how all advantage can
+be connected to speciﬁc activities and the way that activities relate to each
+other, to supplier activities, and to customer activities. The book also
+addresses the underlying causes of advantage in an activity: why ﬁrms
+achieve lower cost and how activities create tangible buyer value. It
+highlights the fact that the most robust competitive positions often cumulate
+from many activities. Advantage resting on a few activities is easier to
+diagnose and often easier to imitate. Finally, activities and the value chain
+provide a view of the ﬁrm as an interdependent system in which individual
+parts must be internally consistent.
+More broadly, Competitive Advantage has helped make strategy more
+concrete and actionable. Activities, because they are what ﬁrms do, are
+observable, tangible, and can be managed. Strategy is no longer just a broad
+vision, but the particular conﬁguration of activities a ﬁrm adopts compared
+to its rivals. A lowest-cost strategy involves one set of activity choices,
+differentiation another.
+Activities provide the bridge between strategy and implementation.
+When strategy was deﬁned in terms of broad positioning concepts, a clear
+separation between strategy and structure was meaningful and useful.
+“What” and “how” were comparatively distinct. Armed with the recognition
+that a ﬁrm is a collection of discrete activities, however, previously common
+distinctions between strategy, tactics, and organization blur. Strategy
+
+
+becomes the particular array of activities aligned to deliver a particular mix
+of value to a chosen array of customers. The conﬁguration of each activity
+embodies the way that activity is performed, including the types of human
+and physical assets employed and the associated organizational
+arrangements. Competencies, then, become part of speciﬁc activities rather
+than abstract and disconnected from cost and buyer value.
+Functions that are normally thought of as organizational, such as
+compensation systems, training, and even overall decisionmaking
+architecture, are also activities—I call them support activities to distinguish
+them from activities directly involved in producing, delivering, marketing,
+or servicing a ﬁrm’s product. Support activities can be sources of
+competitive advantage in their own right. The conﬁguration of activities for
+competing in a particular way also shapes the appropriate contractual
+relations with employees and other ﬁrms. Activities also provide a
+framework for drawing appropriate organizational boundaries.
+Activities, then, make strategy operational. Said differently, seeing the
+ﬁrm as a collection of activities makes it clear that everyone in a ﬁrm is part
+of strategy. It also makes clear why many employees must understand the
+strategy, so that the rationale behind the conﬁguration of their activity and
+how it relates to others is evident.
+The ideas in Competitive Advantage are perhaps more challenging to
+implement than those in Competitive Strategy, because they demand a deep
+and textured look at all that the ﬁrm does. In a world where managers are
+prone to look for simple prescriptions, detailed activity analysis was and is
+challenging. Finding examples to illustrate the value chain at work
+confronts practical limits. The complexity of a ﬁrm deﬁes capture in brief
+examples. Yet in-depth case studies are hard to obtain, because of the
+extraordinary disclosure required of participating companies. Most
+successful companies view the detailed conﬁguration of their activities as
+proprietary. Indeed, the difﬁculty of understanding activity conﬁgurations
+from the outside is one important reason why competitive advantages are
+sustainable.
+Today, more than a decade after Competitive Advantage was published,
+the ideas in the book are still percolating. In the competition and strategy
+ﬁeld, where there has been a strong tendency to dichotomize external
+factors (industry structure and positioning) and internal ones (core
+
+
+competencies, critical resources), some argue that the internal factors are
+more 
+important. 
+Contrasting 
+Competitive 
+Strategy 
+and 
+core
+competencies/critical resources misses the mark, and sets up a false
+dichotomy.
+It is simplistic to think that positions (product market competition) and
+supposedly more enduring internal skills, reputation, and organizational
+competencies can be disconnected. In fact, activities connect the two. Is a
+ﬁrm a collection of activities or a set of resources and capabilities? Clearly,
+a ﬁrm is both. But activities are what ﬁrms do, and they deﬁne the resources
+and capabilities that are relevant. Activities provide the connections
+between factor markets and product market positions. Activities are
+observable, operational, and directly connected to cost and differentiation. It
+is a particular strategy that makes most resources and capabilities valuable,
+and their value is diminished by a different strategy. If resources or
+capabilities are isolated from activities, strategy, and industry, companies
+become inward-looking. There is much to learn from thinking about a
+ﬁrm’s stock of assets, but not in isolation.
+Competitive Advantage provides the architecture for describing and
+assessing strategy, linking it to company behavior, and understanding the
+sources of competitive advantage. It provides the foundation needed to go
+deeper. Looking back, it is clear that Competitive Advantage has led me to
+the next level of questions that are the subject of my current research: Why
+do activity differences leading to distinct competitive positions arise? When
+do tradeoffs occur between positions? What makes activities hard to
+imitate? How do activities ﬁt together? How are unique positions developed
+over time?6
+One thing is certain. There is still more to learn about why ﬁrms
+outperform one another. There is even more to be learned about the
+processes by which ﬁrms discover unique strategies, put them in place, and
+modify them when conditions change. The answers will be complex, and
+good answers will involve integrative thinking.
+Michael E. Porter
+Brookline, Massachusetts
+January 1998
+
+
+Preface
+Competitive advantage is at the heart of a ﬁrm’s performance in competitive
+markets. After several decades of vigorous expansion and prosperity,
+however, many ﬁrms lost sight of competitive advantage in their scramble
+for growth and pursuit of diversiﬁcation. Today the importance of
+competitive advantage could hardly be greater. Firms throughout the world
+face slower growth as well as domestic and global competitors that are no
+longer acting as if the expanding pie were big enough for all.
+This book is about how a ﬁrm can create and sustain a competitive
+advantage. It grows out of my research and practice in competitive strategy
+over the past decade. The book reﬂects my deepening belief that the failure
+of many ﬁrms’ strategies stems from an inability to translate a broad
+competitive strategy into the speciﬁc action steps required to gain
+competitive advantage. The concepts in this book aim to build a bridge
+between strategy formulation and implementation, rather than treating the
+two subjects separately as has been characteristic of much of the writing in
+the ﬁeld.
+My earlier book, Competitive Strategy, set forth a framework for
+analyzing industries and competitors. It also described three generic
+strategies 
+for 
+achieving 
+competitive 
+advantage: 
+cost 
+leadership,
+differentiation, and focus. Competitive Advantage is about how a ﬁrm
+actually puts the generic strategies into practice. How does a ﬁrm gain a
+sustainable cost advantage? How can it differentiate itself from
+competitors? How does a ﬁrm choose a segment so that competitive
+advantage grows out of a focus strategy? When and how can a ﬁrm gain
+competitive advantage from competing with a coordinated strategy in
+related industries? How is uncertainty introduced into the pursuit of

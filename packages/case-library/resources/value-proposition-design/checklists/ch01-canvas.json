@@ -1,0 +1,42 @@
+{
+  "chapter": "ch01-canvas",
+  "sourceFiles": { "en": "vpc-en/full.txt", "zh": "05-1.-画布.txt" },
+  "concepts": [
+    { "name": "Value Proposition Canvas", "definition": "A tool that zooms into two building blocks of the BMC: Value Propositions and Customer Segments. It has two sides — Customer Profile (what you observe about customers) and Value Map (what you design for them). The goal is FIT between the two." },
+    { "name": "Customer Profile", "definition": "The right side of the VPC, describing a specific customer segment in a structured way. Three components: Jobs (what customers are trying to get done), Pains (bad outcomes, risks, obstacles related to jobs), Gains (outcomes customers want or would be surprised by)." },
+    { "name": "Jobs-to-be-done", "definition": "What customers are trying to accomplish in their work or life. Types: functional jobs (a specific task), social jobs (how they want to be perceived), personal/emotional jobs (how they want to feel), supporting jobs (related to the core job, e.g., comparing offers). Context matters: a haircut is a different job before a wedding than before a regular workday." },
+    { "name": "Pains", "definition": "Anything that annoys customers before, during, or after trying to get a job done. Categories: undesired outcomes/problems/characteristics, obstacles (things that prevent starting or slow down a job), risks (undesired potential outcomes). Pain severity: moderate vs. extreme." },
+    { "name": "Gains", "definition": "Outcomes and benefits customers want. Categories: required gains (baseline expectations), expected gains (basic expectations beyond required), desired gains (go beyond expectations in a specific way), unexpected gains (go beyond expectations in ways customers wouldn't have imagined). Gain relevance: nice to have vs. essential." },
+    { "name": "Value Map", "definition": "The left side of the VPC, describing what you offer. Three components: Products & Services (what you sell), Pain Relievers (how you address specific pains), Gain Creators (how you create specific gains). A Value Map only makes sense in the context of a specific Customer Profile." },
+    { "name": "Fit", "definition": "The point where the Value Map meets the Customer Profile — when your Pain Relievers address relevant pains and your Gain Creators address relevant gains. Three types: Problem-Solution Fit (on paper, evidence you're addressing jobs/pains/gains), Product-Market Fit (in the market, evidence customers want your solution), Business Model Fit (in the bank, evidence the model is scalable and profitable)." },
+    { "name": "B2B Stakeholder Mapping", "definition": "For B2B, a single customer segment may include multiple stakeholders: influencers, recommenders, economic buyers, decision-makers, end users, and saboteurs. Each may have different jobs, pains, and gains." }
+  ],
+  "arguments": [
+    { "claim": "Great value propositions are designed around what matters to customers, not what you think matters", "evidence": "The Customer Profile section forces the designer to work outward from the customer rather than inward from the product. Pain Relievers and Gain Creators only have meaning relative to specific customer jobs, pains, and gains. A feature that doesn't relieve a real pain or create a real gain is irrelevant." },
+    { "claim": "Fit is not binary — it evolves through three distinct stages with different evidence standards", "evidence": "Problem-Solution Fit requires evidence that jobs, pains, and gains exist and are significant. Product-Market Fit requires evidence that customers engage with and value your solution. Business Model Fit requires evidence of a scalable, profitable go-to-market. Each stage requires different kinds of evidence and testing." }
+  ],
+  "cases": [
+    { "name": "Movie Theater example: Job context changes everything", "context": "The same person buying a movie ticket has different jobs/pains/gains depending on context: date night vs. kids' afternoon vs. alone on a Tuesday.", "illustrates": "Customer jobs are context-dependent. You cannot design a value proposition for 'the moviegoer' — you must design for specific customer segments in specific contexts.", "lesson": "Before building a Customer Profile, define the context. The same person has different jobs in different situations." }
+  ],
+  "logicChains": [
+    { "description": "Define Customer Segment → Map Customer Profile (Jobs → Pains → Gains) → Rank by importance (which jobs are crucial? which pains severe? which gains essential?) → Design Value Map (Products → Pain Relievers → Gain Creators) → Check Fit (do Pain Relievers match Pains? do Gain Creators match Gains?) → Iterate (Design → Test → Repeat)", "sourceHint": "VPC Chapter 1 lays out this logic as the fundamental design loop" }
+  ],
+  "terminology": [
+    { "term": "Pain relievers", "definition": "Products and services that explicitly address specific customer pains by reducing or eliminating them." },
+    { "term": "Gain creators", "definition": "Products and services that explicitly create specific customer gains." },
+    { "term": "Problem-Solution Fit", "definition": "Evidence that you have identified a real customer problem (jobs, pains, gains) and your solution (pain relievers, gain creators) logically addresses it. The 'on paper' stage." },
+    { "term": "Product-Market Fit", "definition": "Evidence that customers actually want your solution — traction, adoption, positive feedback. The 'in the market' stage." },
+    { "term": "Business Model Fit", "definition": "Evidence that the solution can be delivered profitably and scalably. The 'in the bank' stage." }
+  ],
+  "nuance": [
+    "Common mistake: listing everything as 'important' or 'extreme'. Not all jobs are crucial, not all pains are severe, not all gains are essential. Ranking/prioritization is the hardest and most important step.",
+    "Pain relievers and gain creators should be as SPECIFIC as possible. 'Better user experience' is not a pain reliever. 'Reduces setup time from 3 hours to 5 minutes' is."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["value-proposition-canvas", "business-model-canvas"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch02-design"]
+  }
+}

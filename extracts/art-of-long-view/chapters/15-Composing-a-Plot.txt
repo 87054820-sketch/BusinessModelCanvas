@@ -1,0 +1,860 @@
+# Composing a Plot
+
+corporation apparently believes this plot will lead them to success.
+Under another logic, every move toward elephantine growth
+provokes equally fierce resistance; corporations such as Time-
+Warner might lose touch with readers, and end up less prosperous
+than when the two companies were separate entities.
+To find plausible plots you use the uncertainties that have seemed
+so important. What factors might lead to success or failure for Time-
+Warner? How well does media integration work?—Does it make
+sense to license the movie of the book of the record of the magazine
+of the poster—? How well has it worked when one company has
+controlled all the media? How have most such conglomerates
+handled the integration? Eventually, you would sketch out both
+plausible plots, in a way that helped you foresee a good strategy for
+either eventuality.
+What is finding a plot line really like? Here is how it works in
+nearly every scenario situation in which I have taken part. We
+gather a team together that is aware of the decision that we are
+considering. Each member has done his or her research. We sit
+around talking for a day, developing ideas in response to these
+questions:
+•  What are the driving forces?
+•  What do you feel is uncertain?
+•  What is inevitable?
+•  How about this or that scenario?
+We get to a point where ideas are churning, and we break off for
+the night. People go home. The next morning, someone walks in and
+says, “You know, as I was lying there last night in the bathtub, I had
+an idea for a scenario.” And he or she lays it out, nearly complete.
+Someone else across the table says, “And here is the complement.”
+This happens so often that many scenario-planners have learned to
+include an overnight stay in their workshops.
+
+
+I often compare this part of the scenario process to writing a
+movie script. Scriptwriters frequently begin with an idea: “I’d like to
+make a film about car racing.” They develop characters: “One will
+be a hot racer. I want him to race his childhood friend. Other
+characters will include his girlfriend, and a crusty old mechanic.”
+The characters are like the building blocks of scenarios. Having
+decided upon them, they create a plausible setting for them: all four
+characters have gathered at the Indianapolis Speedway. What will
+happen next?
+Now the scriptwriters consider several possible plots. Maybe the
+story will be based on rivalry over the championship and the girl. If
+so, conflict and competition will be its gist. But what if the real
+thrust is the old man’s education of two young drivers? Then it’s a
+plot about the challenges these young people deliberately face, and
+how they learn to develop prowess. A more interesting movie might
+combine both plots, or throw in a sudden and unexpected (but
+possible) event: halfway through the movie, one of the car racers is
+abruptly crippled.
+Now imagine that you are one of the characters in such a movie,
+at its start, standing at the gate to the raceway. You cannot know
+which plot will unfold. Reality could go several ways. But if you
+have the imagination of a scriptwriter, you can envision the
+possibilities. That is what it feels like to be a scenario writer.
+The Nature of Plots
+We’ve all been to movies that are based on the story of a man
+meeting a woman. It’s one of the oldest plots in the world. It can
+either be handled sentimentally, in a manner full of clichés (as in
+the movie Love Story), or in a wonderfully original and moving
+fashion (as in A Man and a Woman). Either way, it’s the same story
+—but what a difference! Scenarios, too, can be formulaic or moving,
+depending on how you think about the plots.
+
+
+There are only a few plots relevant in scenarios. Most are derived
+from the behavior of real-life economies, political systems,
+technologies, and social perceptions. In most good scenarios, several
+plot lines intersect, just as a good film often includes several
+subplots. The scenario-planner looks at converging forces and tries
+to understand how and why they might intersect—then extends that
+imagination into coherent pictures of alternative futures. That’s
+what gives texture to scenarios.
+In this chapter, I’ll describe the plots which are most fruitful in
+scenario-planning. One can apply each of them to a wide variety of
+situations. Very often, the obvious logic for a specific scenario jumps
+out. But sometimes, this first impression is wrong. At times, the
+logics must be teased out of the environment. Recognizing them is
+not a cut and dried matter. As I do with driving forces, I review the
+list of plots when thinking through the action of any scenarios.
+“Technology is clearly a driving force here,” I say to myself. “Will
+that take effect with its usual evolutionary pattern, or could there be
+an abrupt discontinuity?”
+We have already said that one of the purposes of scenarios is to
+help you (or your managers) suspend disbelief in possible futures.
+To that end, you construct your plots as carefully as if you were in
+the theater. The trick is deciding where, in the story, to start the
+diverging alternative futures. In scenarios for a company, you
+should design at least one alternative that frightens the management
+enough to think—but not so much that they shut down. Ask them to
+consider a future of shrinking markets, or even a hostile takeover
+with which they might have to deal; but not a sudden nuclear war
+that would destroy the city. On an individual level, you might create
+a scenario for a member of the family becoming ill (“What will we
+do if we have sudden medical expenses?”) but not for the entire
+family being wiped out in a bus crash. Your goal is to select plot
+lines that lead to different choices for the original decision. What
+plots might make you do something different?
+Note that the characters in scenarios tend to be either driving
+forces or else institutions: nations, companies, regional bodies.
+Individuals rarely shape the cultural shifts, political alliances, and
+
+
+technological evolution which scenarios care about. A planner might
+ask, “What if the Soviet Union fell under the control of a new Stalin-
+like figure?” If that happened, the new Stalin’s self-image and
+relationship with his mother would be grist for future psychological
+historians. But there would be no need to speculate on it before the
+fact—or on Gorbachev’s psychology, or Bush’s relationship with his
+dogs. Usually leaders are an expression of the forces at work in their
+own societies. By understanding those forces one can anticipate the
+possible pattern of future leadership. For example, those of us, in
+1977, thinking about scenarios of the future of Iran with an
+understanding of Iran’s various cultural roots, could foresee a
+possible scenario where rising fundamentalist resistance to
+westernization might bring to power a man such as Ayatollah
+Khomeini.
+Similarly, you wouldn’t build the scenario for a corporation
+around the personality of its CEO, even in this age of “leadership.”
+In most companies, the role and power of the leader are exaggerated
+enormously. As in society at large, business leaders reflect wider
+forces within the company itself, forces which choose and influence
+them. John Reed, the bank’s CEO, reflects Citicorp more than
+Citicorp reflects John Reed. Thus, the scenario writer’s task is to
+define the forces inside and outside the company, and analyze
+which plots they fit.
+Some plots will fit your elements and some won’t. Looking at your
+predetermined elements, you might make a judgment: “These will
+never fit together in a framework shaped by challenge and
+response.” Having gathered the variations that are possible, you
+would tease out five or six variations that fit the case. Eventually
+you narrow and combine those into two or three fully detailed
+descriptions of what might happen.
+Why two or three plots or logics? Because people’s minds can
+cope with only two or three possibilities. Two may not capture
+reality, so you often use three. On rare occasions you might consider
+four. Any more choices will produce a hopeless muddle. Scenario-
+planners did not always know this. At SRI, in the early 1970s, we
+generated thousands of possible futures. We had to use a computer
+
+
+to sort through them. It was silly. In 1974, our seminal scenario
+project for the Environmental Protection Administration offered a
+mere ten scenarios. Jay Ogilvy, Paul Hawken, and I narrowed those
+further into a book called Seven Tomorrows. Upon reflection, those
+seven were still too many; in essence, we had three possible futures
+in mind, with a lot of sub-variations. The EPA would have learned
+more if we had just given them three.
+There is a common trap with three scenarios: it is easy to offer a
+bland assortment in which one represents the high road, one the low
+road, and one the average of the two. That is why, in figuring out
+plots, I usually return to contemplate the decision that must be
+made. “If the United States suddenly loosens up all immigration
+restrictions, it would really change my decisions about labor
+recruiting. I had better make sure one of the scenarios includes that
+possibility. Can I design a plausible set of plots which lead to that?”
+I try to make the third path a little bit off-the-wall, to avoid a
+business-as-usual path. For example, could a labor shortage driven
+by an economic boom force the United States to open wide its
+gates?
+There are three main plots that show up constantly in modern
+times. They should be considered for every set of scenarios.
+Winners and Losers
+Most plots start with a perception: a motive that propels the
+characters. This plot starts with the perception that the world is
+essentially limited, that resources are scarce, and that if one side
+gets richer, the other side must get poorer. Economist Lester Thurow
+called this the “zero sum game.” As a plot, it shows up often in
+politics (and in business in very mature industries). Only one
+candidate can win the election; therefore, others must lose. Only
+one country can dominate the economy; therefore, others must be
+subservient. Only one executive can become CEO; therefore, the
+
+
+rivals must leave the company. Only one corporation can dominate
+the market; there can be only one IBM in computers, or only one
+Hertz in rental cars.
+In a winners and losers situation, conflict is inevitable. Often, the
+sides compromise in a balance of power. This typically leads to a
+gradual buildup of tension, suspicion, and uneasy alliances. It’s the
+winner’s game, typically; as long as other computer companies play
+against IBM, or other rental car companies play against Hertz, the
+game will tend to keep both companies on top. Apple fought the
+system by turning the computer industry to another game (which I’ll
+describe under the “Lone Ranger” plot).
+South African scenarios always include a “winners and losers”
+plot where different groups battle for control of the country: white
+supremacists, the various black organizations, and (increasingly)
+white liberals. Only one group can win and dominate the country’s
+politics—at least as long as the country’s people conceive of their
+politics that way. If the game continues, incidentally, the identity of
+the winner will depend upon technology. The fate which white
+South Africans fear most—blacks taking over the country and
+confiscating white property—does not appear in any realistic
+scenario for South Africa. The reason: the supposedly “violent”
+black groups such as the ANC have very few weapons, and little
+money or support with which to get them. The white militia, by
+contrast, is well armed and prepared for violence. They, on the
+other hand, lack the economic support which they need to build a
+prosperous country.
+Winners and losers plots lead to covert alliances. In a bizarre
+sense, this is a pragmatic stance: “who” you’re involved with is
+more important than “what” you hope to achieve politically. Stalin’s
+1941 nonaggression pact with Hitler is one example. In the Middle
+East, this logic becomes a political ethic in which “the enemy of my
+enemy is my friend,” transcending even the fiercest animosity.
+Consider the weird cooperation between Israel and Iran, involving
+sharing of military intelligence and matériel during the Iran/Iraq
+war.
+
+
+To explain such peculiarities, people with a “winners and losers”
+view of the world rely on conspiracy theories. At the height of the
+1973 oil price crisis, a Japanese businessman once asked me why
+the United States and OPEC had conspired to attack Japan by
+raising oil prices. Were not Saudi Arabia and Iran close allies of the
+United States? Did they not need American support to quadruple
+their oil prices? Meanwhile, angry Americans at gas lines were
+blaming American oil companies for colluding with the Arabs. And
+Arabs were blaming the U.S. relationship with Israel, and oil
+company insensitivities, for provoking them.
+In the past, this logic has led to war. Historian Barbara Tuchman
+describes a winners and losers standoff in The Guns of August.
+Individuals acted in what they saw as self-interest (they were
+following another plot, the “Lone Ranger” logic in which the
+individual entity stands against the rest of the world). To “protect”
+themselves, they formed alliances. No one wanted the war which
+followed; it came in an uncontrolled fashion, incoherently, with no
+easy resolution. Thirty years later, the “Losers” of World War I were
+still playing the same game. Any scenario with winners and losers
+had better consider the possibility of perpetuation of persistent
+conflict.
+If you were a U.S. auto worker or executive thinking about your
+future in 1980 you should have considered a scenario based on a
+logic of winners and losers. The growth in the U.S. auto market had
+stopped for both demographic and economic reasons. The baby
+boom was tailing off and income growth slowed. The economic
+winners bought fancy European cars (later fancy Japanese cars),
+while the fading middle class could no longer afford to keep up. The
+losers would be the American car makers. GM saw its share of the
+market fall from over 50 percent to less than 35 percent. Thousands
+of jobs and careers went with that fall. By the end of the eighties the
+leading selling car in America was a Honda. Would you have been
+better off going to work in the successful nonunionized Honda plant
+in Marysville, Ohio, or in the “protected” unionized factories of GM
+in Detroit? Where would your prospects have been better? If you
+were plotting steel company strategy, would you rather have
+
+
+targeted the fading markets of Detroit or the new markets of the
+Japanese companies rapidly expanding their manufacturing capacity
+in the U.S.?
+Challenge and Response
+In the summer of 1987, I looked at the future of global finances
+for the London Stock Exchange—with particular emphasis on
+looming problems such as the U.S. deficit and the Latin American
+debt crisis. At the time, conventional economic thinking admitted
+only two scenarios. Either the economic system would crash into a
+prolonged depression, or we would “magically” defeat the problems
+created 
+by 
+these 
+huge 
+international 
+financial 
+imbalances
+permanently and break forth into stable prosperity. These scenarios
+in their naive extremes did not seem to make sense. I visited
+Ariyoshi Okimura, the chief financial economist and director of the
+Industrial Bank of Japan, a quiet, soft-spoken man in his fifties, and
+a brilliant economist. “I don’t think the imbalances are going to go
+away,” he said casually. “And I don’t think they are going to destroy
+the system. I think we will have ‘managed imbalances.’ The question
+will not be how to eliminate them, but how to live with them.”
+Okimura was correct. The economy has been volatile, with many
+crashes and rises, many individual winners and losers; but it has
+also been resilient. As new problems come up, investors and
+countries learn to adapt. We may see events that bring us to the
+brink, but the system itself won’t fail. Instead, it will evolve further
+with each new challenge and response.
+The term “challenge and response” comes from script writing as
+well as from historian Arnold Toynbee. There, it refers to adventure
+stories, in which an individual faces one unexpected test after
+another. Each time, as a result, the tested person emerges different
+from the way he was before. Overcoming the test, passing the test,
+
+
+is important—not for its credential, but for its effect on the hero’s
+character.
+I described in Chapter 5 how one Japanese definition for
+“optimism” means “having enough challenges to give life meaning.”
+That mentality is arguably Japan’s greatest asset in the modern
+world. In 1973, the United States and Japan were hit with the same
+challenge: a quadrupling of oil prices. The United States responded
+with a winners and losers scenario in which it was, it felt, the
+winner. “This is temporary, we will surely win,” said American
+policymakers. “We don’t need to worry about it.” Within a year, the
+United States was importing half its oil. Japan responded instead by
+completely rebuilding its capital structure to become the most
+energy-efficient economy in the world. Today, the average Japanese
+automobile gets thirty-five miles per gallon. Their most efficient cars
+go much higher. If the entire U.S. car fleet averaged thirty-five miles
+per gallon America would need to import no oil.
+Ironically, America’s history had been a continual succession of
+challenge and response stories. Mark Twain’s Huckleberry Finn is one
+of the great novels of challenge and response; by the end of the
+book, having met every challenge, Huck is a very different person
+from when the book began. Each push westward on the frontier was
+a new challenge; so was every moment in an immigrant’s life. The
+American myth is built on stories of step-by-step success, in which
+the hero rises to each challenge and improves along the way. The
+United States could have reacted against World War II with
+isolationism; it intervened instead, and became, as a result, a
+successful capitalist global empire. Today, scenarios for America’s
+future must include one key challenge and response plot: can it pass
+the test of its deficit?
+Environmentalism offers another test. For many years, the most
+widely 
+perceived 
+relationship 
+between 
+economics 
+and 
+the
+environment was a zero sum winners and losers logic. You could
+either have growth or environmental safety, but not both. If you
+wanted a cleaner environment, you had to waste money on
+paperwork, catalytic converters, and coal plant scrubbers. If you
+
+
+were pro-growth, it meant you opposed environmentalism. People
+were locked into polarized positions by the logic of the debate.
+Today, the logic of “sustainable development” suggests that both
+economic growth and environmental quality are possible—if people
+tackle the challenge of satisfying both criteria. That means
+developing new technologies which cut waste and save energy.
+When we designed scenarios for PG&E, for example, we deliberately
+set them up as challenge and response plots. We said that they had
+consistently seen their world as winners and losers, in which they
+were limited by politics and the supply of energy. That meant
+fighting to build power plants and transmission lines. In a challenge
+and response mind-set, they look at each difficulty as an opportunity
+to learn. As a result, their perceptions are now influenced by
+community feelings and their sense that the public will work with
+them to solve problems. If they don’t meet the public halfway, the
+problems won’t get solved. Indeed, it was the challenge of the
+October 1989 San Francisco earthquake and the very effective
+response of PG&E and the community it serves that helped create
+the sense of shared fate that now shapes corporate strategy.
+Evolution
+The window by my computer, up in the Berkeley hills, surveys the
+sweep of the heart of the San Francisco Bay. Three spines of land,
+from the south, the north, and the east, descend to the waters of the
+bay. One can imagine Miwok Indians walking down to the water’s
+edge. Today, I see the Golden Gate Bridge in the distance, the Bay
+Bridge a little closer, and a web of streets and arterial highways
+between them. The bay is dotted with sailboats and windsurfers;
+rows of houses encroach upon the summertime-tawny hills of Marin
+County. In the north, I see a cluster of oil refineries. A steady stream
+of tankers churn in and out of the Golden Gate to reach them.
+
+
+When I moved into this house, I obtained photographs of the
+region, taken from the same place as my window, dating back to
+1926. There was no Golden Gate Bridge; there were no freeways
+and few roads. There weren’t any other houses on this now-
+populated hillside. And, surprisingly, there weren’t any trees. The
+trees had all been cut down to build San Francisco, with the
+remainder destroyed by a great forest fire in the early twenties.
+Nearly everything I see has grown gradually over the past sixty
+years; a time-lapse film of the intervening time (with, say, one frame
+per week) would show people flowing into view, roads and
+buildings sprouting like plants, industry’s roots burrowing into the
+soil like botanical roots.
+These evolutionary changes are always biological in nature. They
+always involve slow change in one direction—usually either growth
+or decline. Evolutionary changes are hard to spot if you’re not
+attuned to them, because they take place so slowly. Once spotted,
+however, they are easy to manage, precisely because they don’t
+suddenly leap upon you.
+The most common evolutionary plot in the world today is
+technology. New innovations grow in a biological fashion—
+sprouting slowly from earlier technologies, gradually ripening, and
+then bursting upon the world. In the early 1980s, new types of
+microchips, sensors, and control devices made robotic machines
+with astounding new capabilities possible. Promoters expected to
+sell 2 billion robots in a few years. Instead, they sold 200 million
+and lost tons of money. Before the new machine could catch on,
+learning had to take place. Customers had to discover how to use
+robots; and in the process, they learned that robots could not
+perform as well as they hoped. That in turn sent robot designers
+back to the labs. When the next round of robots is introduced, once
+again people will have to learn to value and use them. Technology
+entrepreneurs often fail to predict their own growth because they
+don’t take that learning time into account; they don’t see
+technological growth as a process of evolution—the development of
+new niches.
+
+
+Technology is also evolutionary because new tools fit within an
+existing system. The aviation industry created wealth, but only after
+many smaller forces coalesced—including jet engine research, air
+traffic control development, and government support of airports.
+Automobiles could not travel without asphalt paving, oil pipelines,
+tire manufacturing, rubber plants, engine design, assembly lines,
+and the vast network of highways and streets. If anyone wishes to
+make major changes in automobiles (such as designing an electric
+car, or a “people-mover” style car that runs on rails), he cannot
+merely design a machine. He must think about changing the web of
+systems that support the car.
+Similarly, any scenario for technologies must include an
+understanding of the political and social systems around it. The Wall
+Street 
+Journal 
+has 
+extolled 
+the 
+future 
+of 
+fiber 
+optic
+telecommunications, linking everyone in the United States in a
+wonderfully versatile digital telephone network. Individuals would
+all get access to far more information, control over incoming calls,
+and an electronic mail system for sending videos, music, and
+computer programs as well as text. Technically, most of the
+mechanisms exist. But we can’t get there from here in the United
+States, given the current American regulatory framework for
+telecommunications. Large businesses can expect hookups to fiber
+optic channels, but most small businesses and individuals in the
+United States will not get them soon. The initial cost is too great;
+well-meaning consumer groups, trying to keep phone bills from
+rising, have stymied the movement. Meanwhile, Europe and Japan,
+with different regulatory frameworks, are moving aggressively. By
+the next century, the rest of the industrialized world will have a
+superpowered telephone system; compared with them, the American
+system will feel as antiquated as the telegraph is today.
+Economic control tends to move to the places where technology
+evolves the fastest. While the Japanese have deliberately moved
+since 1981 toward a hyper-industrial society of sophisticated
+manufacturing, the Americans saw the future as a post-industrial
+service society, in which heavy industry was done elsewhere. The
+Japanese model is turning out to be correct even in the United
+
+
+States, except that the hyper-sophisticated plants are no longer
+owned by Chrysler, but by Toyota. Solar power in this country is
+dominated by Germans, not by Americans. The ownership structure
+rather than the nature of the industry is turning out to be different.
+As a result, Americans will be much less in control of the American
+economy.
+The competitive dynamics of business tend to obey rules very
+much like the competition of nature. Mergers, acquisitions,
+diversification all have their counterparts in nature. Capitalism, by
+its nature, follows an evolutionary plot. For quite a long time the
+old order—especially if it is embedded in government bureaucracies
+and giant companies—resists sudden change and challenge. While
+the directors of the London Stock Exchange adapted a challenge and
+response plot, the other major financial players continued to accept
+slow evolution. It makes the old order more vulnerable to sudden
+sharp discontinuities as the pressure for change builds up.
+Common kinds of business decisions often lead to structurally
+similar scenarios. Decisions to build a new business around a new
+technology often lead to evolutionary scenarios addressing the
+ability of new technology to find a successful niche in a competitive
+ecosystem. The continuing success of SUN Microsystems, for
+example, relies on its ability to anticipate the possible pattern of
+evolution of today’s scientific and technical networks and adapt
+accordingly. Industries anticipating the possibility of restructuring—
+say AT&T, before the breakup of the Bell System in 1983–84—might
+think about scenarios of challenge and response; how to respond to
+the challenge of a newly competitive environment? If your company
+is thinking about investing overseas, in an increasingly protectionist
+environment, perhaps the logic of winners and losers will help
+identify the regions of greatest likelihood of success. In other words,
+similar decisions often lead to similar classes of scenarios. But each
+would be unique to its particular circumstances. AT&T and
+BellSouth faced similar challenges, but in very different situations.
+Their scenarios of challenge and response would be very different.
+
+
+Other Common Plots
+The three plots just described are the most common in scenarios,
+but they do not cover all situations. Other, spicier plots need to be
+stirred in. These plots are ones which I have personally found
+illuminating:
+•    Revolution: Every now and then there’s a sudden dramatic
+change, usually unpredictable in nature. Peter Drucker called such
+changes “discontinuities” and gave as examples an earthquake, a
+volcanic eruption, a political revolution, the toppling of a
+presidency (as in Watergate), and the sudden emergence of an OPEC
+as a political power. Revolutions are rare, but they must always be
+considered if they are plausible. The most frequent question asked
+of scenario-planners by business people is: “Where are the big
+discontinuities likely to be?”
+It’s fun and a little scary to think of possible discontinuities. They
+can include human-made natural disasters: pollution-precipitated
+sudden climate change. Or plain natural disasters: a large meteorite
+striking the earth, or a series of earthquakes. They can include
+surprising changes of public attitude. People might suddenly decide
+that space is a bore; there isn’t much worth doing out there. As a
+result, space technology would lose a great financial and
+inspirational impetus. New religious and cultural wars could erupt
+as fundamentalists clash with the world’s growing secular tolerance.
+Or new types of plagues might strike, more virulent than AIDS,
+spread not through direct blood contact but simply through normal
+contagion, exacerbated by the expanding global transport system
+and by more crowded cities. Less likely, but still possible, is a
+sudden world government, responding to the increasing perception
+that independent governments are not fit to manage their nations.
+There is no guarantee that a world government would be benevolent
+or democratic.
+
+
+Revolutions are important for their aftermath. People perceive
+possibilities differently. Consider what the 1929 crash did to a
+generation’s optimism. After Chernobyl, people suddenly realized
+that nuclear accidents were not a local problem, they were a global
+problem. After Proposition 13 in California, American politicians
+realized that their constituents no longer trusted government
+enough to support higher taxes. After the fall of the Berlin Wall, no
+one could see Germany or the U.S.S.R. the same way.
+In San Francisco, on the morning of October 17, 1989, the
+possibility of an earthquake felt far away. Thus, few people were
+prepared. When the earthquake struck, hardware stores sold out of
+gas wrenches; bottled water and batteries went fast. Traveling
+outside the Bay Area that day, I found it almost impossible to get
+news of my family. Today, we have bottled water and gas wrenches
+in our house. We also have a plan for what to do if we’re trapped
+away from the city when a quake occurs; a scenario, in effect, for
+how our neighbors and friends could get news to each other.
+•  Cycles: In the 1920s, the small city of Emeryville (just outside San
+Francisco) was a sparsely populated industrial area next to the salt
+marshes. After World War II, Emeryville grew into a major
+industrial center, a healthy blue-collar home to steel mills, chemical
+plants, and research laboratories. With the decline of heavy industry
+in the United States over the past two decades, Emeryville became
+sparsely populated again; stagnant, with empty factories, empty
+streets, a few active warehouses, and a small residential population.
+But in the late 1980s, Emeryville revived. The old International
+Harvester factory was converted to airy, sunny, fully electronically
+wired, loft-like office spaces. Software design and biotechnology
+businesses occupy buildings where bridges were fabricated and
+tractors manufactured. Cetus, the biotechnology company, occupies
+the old Shell research lab. Rents and property values are rising.
+Emeryville is playing out a cyclical plot of decay and rejuvenation.
+Many cities go through these cycles; the next up-and-coming area of
+New York, for example, may well be the South Bronx. It is where
+
+
+the cheap close-in real estate will lie as gridlock diminishes the
+capacity for commuting.
+Economic matters often occur in cycles; for that reason, it is good
+for a scenario-builder to be familiar with some economic theory. If
+the Federal Reserve increases the money supply, you can count on
+interest rates going down. That in turn means that people (and
+industries) will borrow and spend more. That, in turn, often
+encourages inflation, which then influences a restriction on the
+money supply.
+But the cyclical logic of market economics appears in other areas
+as well. Ronald Reagan’s drug policies, for example, unintentionally
+created crack. When the Drug Enforcement Administration began to
+put pressure on cocaine dealers, the price went up. When the price
+goes up on a commodity, it becomes a more valuable line of
+business. In classic market economic terms, when the price went up,
+the volume went up. Many more dealers entered the business in the
+United States. They, in turn, flooded the market, which (up until
+that time) had been a fairly upscale market; cocaine was expensive.
+So they added a new low-cost product: crack.
+Today, every time another drug war is announced, and law
+enforcement gets tougher, the same plot line takes effect. Cocaine
+gets more expensive, and thus more enticing as a business, and the
+volume goes up. But the volume does not stay high, because (as
+classic market economics suggest) there is only a limited demand for
+the drug. When the market gets glutted, the price falls. Business
+shrinks, and the supply goes down—until the next crackdown on
+drugs raises prices again. Clearly the main role of the Drug
+Enforcement Agency is to assure the profitability of the drug barons’
+business. Imagine how they would feel if the DEA stopped enforcing
+the law and anyone could sell cocaine?
+The timing of cycles is important, and unpredictable unless you
+look for clues. To know where a neighborhood is located in a real
+estate cycle of rise or fall, you might have to actually go and visit it.
+Savvy real estate investors often do exactly that, using their insight
+to buy real estate as a long-term investment. An individual’s only
+weapon with cycles is awareness; they swing independently of
+
+
+anyone’s attempts to control them. Because of their lag time, cycles
+can be emotionally misleading. When things look like easy street,
+quite often there is danger at the door—and vice versa. As a result, a
+cyclical plot often leads to an impression of scarcity, and therefore a
+winners and losers plot.
+•    Infinite possibility: At the end of every decade, The Economist
+produces a special issue looking ahead for the next ten years. In
+1950, its tone was cautious, reserved, and a bit shell-shocked: “We
+hope the world never again experiences what it did in the last ten
+years.” The magazine hoped, not for affluence or growth, but merely
+for a peaceful, tolerable world. By 1960, its attitude had completely
+changed. Growth was inevitable: abundance and unparalleled
+growth. The only question was how high it could go, how much
+could be expected? The Economist, like the rest of the Anglo-
+American world, had entered the plot of infinite possibility.
+Infinite possibility starts with public perception: the world will
+expand and improve, infinitely. It is a seductive perception; under
+its influence, many things happen that would not otherwise take
+place. Money gets poured into research; people spend instead of
+saving for the future (as they would under challenge and response);
+excess thrives in many forms. Under Johnson, infinite possibilities
+produced the War on Poverty. Under Reagan, it produced the
+Housing and Urban Development Department scandals. Tom Wolfe’s
+novel The Bonfire of the Vanities is about the shattering of the feeling
+of infinite possibility. It’s no accident that his hero, bond broker
+Sherman McCoy, thinks of himself as a potential “Master of the
+Universe.”
+Infinite possibility may be a seduction story, but it is not always
+seduction with bad result. The computer industry in 1975 was
+fueled by infinite possibility. Many people and companies
+prospered; eventually, many failed, but on the whole personal
+computers were an unequivocal economic boom. Xerox did not see
+it: their executives said, in effect, “We don’t think there are many
+possibilities here. No one will want these on their desktops.” They,
+
+
+instead, were following the plot of evolution: seeing computers as
+natural extensions of a mainframe world.
+Infinite possibility is powerful. In 1950, most Americans did not
+envision that, by 1960, they would live in a society of two-car
+families and three-car garages, in which any American, it was said,
+could have his own mini-estate with a plot of grass around it. The
+pursuit of infinite possibility made that change possible.
+•    The Lone Ranger: In 1982, when Margaret Thatcher began
+tackling the stagnant British economy, she had in mind a scenario
+built around the individual versus a system. She saw herself battling
+the dominance of self-serving labor and the excesses of the post-war
+“Yes, Minister”-style social welfare state. Her strategy was to
+dismantle the existing system, provide the right incentives, and let
+entrepreneurial spirits blossom. Her “Lone Ranger” plot has been
+proven mainly right.
+The Lone Ranger plot is mainly a social logic, driven by a street
+sensibility that emerges in an incoherent fashion. It says that the
+ordering principles of politics, trade, and technology cannot reach
+the basic individuality in our souls. David facing Goliath is a “Lone
+Ranger” hero; so was James Dean in Rebel Without a Cause, as well
+as the Lone Ranger himself, riding alone into town to confront a
+corrupt system and win. Apple Computer was an archetypal
+corporate Lone Ranger, confronting the faceless minions of the IBM
+“ranch.”
+Despite the romantic image of Lone Ranger-style heroes, the
+effects of the attitude are often troublesome. When two or more
+Lone Rangers butt heads, it creates a particularly virulent winners
+and losers conflict. Both sides see themselves as the independent
+heroes, each convinced of his own virtue and the inevitability of
+victory.
+•  “My Generation”: In 1963, planner/futurist Don Michael foresaw
+that the world would forever be different when he looked carefully
+at the demographics of the early 1960s. His resulting book was
+called The Next Generation: The Prospects Ahead for the Youth of
+
+
+Today and Tomorrow. He noted that the youth of the post-war era
+were not only large in number, but were growing up with
+experiences different from those that any generation had
+encountered before: affluence, peace, and freedom. With their needs
+for food, shelter, work, and companionship satisfied, they could
+think about self-expression, status, and the meaning of life. Seeing
+this, Michael could anticipate the youth rebellion and widespread
+social experimentation that, soon thereafter, burst upon the scene.
+He also saw that women, as well as youth, would have enough
+freedom and increased affluence to question their traditional roles.
+Scenarios should always include the influence that the culture has
+on people’s values—particularly the culture of large generations of
+people. There used to be four ways to live in America—poverty,
+working class, middle class, or upper class. But now, the common
+experiences of the baby boomers have been transformed, through
+their own experimentation, into an amazing diversity of lifestyles.
+Steve Barnett, in a GBN meeting, described people who are “bankers
+by 
+day, 
+punkers 
+by 
+night”—comfortably 
+moving 
+between
+discontinuous lifestyles. Advertisers and employers can no longer
+look at their markets and workforce as simple and consistent.
+Our global teenager scenario (Chapter 7), of course, is another
+example of the “My Generation” plot at work. It relies, for its power,
+on enough demographic force to make a generation of people feel as
+if their culture will influence the world.
+How Plots Interact
+Scenario designers rarely consider plots individually. They
+consider the ways in which different plots might handle the same
+forces. Global environmental policy, for example, could follow
+either an evolutionary plot or a challenge and response plot.
+Evolution could lead to ecodisaster simply by producing more of the
+same. Waste dumps would proliferate; refinery explosions and
+
+
+chemical 
+accidents 
+would 
+continue. 
+The 
+transportation 
+of
+biologically hazardous wastes would increase, creating the
+opportunity for dangerous accidents, such as those of oil tankers
+before them. Most often nothing would happen; or outbreaks of
+polio and typhoid would occur, not linked to the accident until
+much later. Fear of such epidemics would most likely trigger an
+eventual overreaction against technology; that, combined with the
+reduced productivity of poisoned land, would drive the economy
+downward—slowly.
+Alternatively, if policy followed the challenge and response plot,
+we might experience an ecoboom. This late in the game, the
+urgency of building a “sustainable growth” society would inspire
+unusual innovation and change. Somewhere out there, the Aristotle
+Onassis of the 2000–2010 era is growing up. Spurred by the
+challenges of these years, he or she will figure out a way to
+entrepreneur intelligently managed transportation, for example. At
+first he would fill only a niche that exists because of the
+environmental threat, a niche that gradually expands to the full
+system.
+Often, people think they’re in one plot, while the system follows
+another plot—with miserable results. Many of Ronald Reagan’s
+policies ostensibly followed a scenario logic of individual against the
+system. No energy policy was a good policy as far as Reagan was
+concerned. Unfortunately, the real logic behind the energy
+environment of the eighties was challenge and response. The
+Reagan government, for example, reduced mileage standards and
+failed to increase gasoline taxes. Thus, America, with low oil prices
+and low income from a gas tax, did not invest as much as other
+nations in energy-efficiency. Instead, the U.S. addicted itself to low-
+price gasoline. Now, there is good reason to expect an increase in oil
+prices. While other nations merely adjust their taxes down, the U.S.
+will end up paying the money to the “tax collectors” in the Middle
+East, instead of having used it to invest in its own energy-saving
+infrastructure while it could. The U.S. failed the challenge of
+efficiency and did not even recognize it as a nation. Americans had
+the wrong image of the future and did the wrong thing, coming to
+
+
+regret it only when Saddam Hussein marched into his neighbor
+Kuwait in the summer of 1990.
+The Unbroken Line
+One cautionary note in developing plot lines. When things get
+worse, people often expect them to get much worse, until they
+produce devastation—war, economic collapse, apocalypse. Thus,
+watch out for the unbroken line—conditions that change, but do not
+engender any response. If there is dramatic continued growth, look
+for the undertow of resistance which will slow down the growth.
+The threat of war breeds resistance to war. Environmental threat
+breeds ecological activism. Japan’s prosperity has provoked forces
+in competing countries (Korea, Taiwan, France) and in Japan itself
+(its severe labor shortage). It is the prophecy itself that leads to
+change and the prophecy’s negation.
+Royal Dutch/Shell planners saw the undertow in oil prices in the
+mid-1970s. After prices jumped, most forecasters assumed that they
+would continue rising. But the price jump provoked a wave of
+energy-efficiency innovation and new oil development, which then
+helped bring the price back down.
+A similar case is going on today in oil exploration. Most of the
+large oil companies are spending billions in exploration, expecting a
+return from the oil. Their projections assume that the price of oil
+will stay the same. However, if every company that is exploring for
+oil succeeds, that will produce a glut, and the price of oil will drop
+—perhaps to ten dollars per barrel. That price is too low to develop
+most of the new oil, which is expensive because it is difficult to
+retrieve. The companies’ projections all tacitly pretend that others
+will not see the world as they do and act accordingly. The result will
+be either lower oil prices, if they succeed, or fewer oil companies, if
+they don’t.
+
+
+Training Yourself to Recognize Plots
+As a student inspired in the early 1960s, during the aftermath of
+Sputnik, I resolved to pursue a career in aeronautical engineering. I
+knew that the space race would guarantee me employment and
+excitement for years. However, I was not prepared for the response
+to the success of the moon walk in 1969. After having met the
+challenge of the competition with the Soviet Union, America lost
+interest and support for the space program diminished. When the
+aerospace industry became depressed after the completion of the
+Apollo program, the bright future I had trained for disappeared. I
+realized that I had never thought about such a situation. What could
+I have foreseen if I had been paying attention? What might I have
+done differently as a result?
+If I had really thought about it I would have had to say, “This is a
+short-lived effort. If we get to the moon first, we are out. If the
+Russians beat us, we are out. It is predetermined that the space
+program will wind down.” Moreover, I might have recognized a
+winners and losers plot which suggested that rivalry was the deep
+motivation. I had been interested in my own growth, and assumed
+that the space race followed a challenge and response logic. I could
+have learned differently by paying more attention to what
+Washington bureaucrats were saying at the time.
+Hindsight is useful for sharpening your foresight. That’s why I
+recommend that you practice such a “retrodictive” scenario
+yourself. Imagine that you had been trying to write the scenario for
+your company, or yourself, or your country, ten years ago. What
+would have been the right scenario, what would have been the plot,
+what were the driving forces, what were the critical elements, what
+could you have seen then that you didn’t? I have actually done this
+as a formal exercise with, for example, executives from a major U.S.
+steel company. We went back in time and said, “What might you
+have seen about the near demise of the U.S. steel industry, if you
+had been doing scenarios?”
+
+
+The answer was that they could have foreseen the collapse of
+American steel, but they probably could not have prevented it. They
+would have seen slow growth in their markets, if they had stopped
+to consider it; and the growth of foreign competition as a driving
+force. They might have reacted much sooner and given themselves
+much more maneuvering room. Some players didn’t make it at all,
+while most were forced to change dramatically and painfully.
+U.S. steelmakers did not consider a plot in which high inflation
+and interest rates continued. They did not foresee their inability to
+invest in steel manufacturing, or their customers’ inability to invest
+in new facilities for using steel. Finally, like the U.S. auto industry,
+they did not notice the Japanese attitude toward challenge and
+response: they believed Ford, and ignored Toyota; they saw
+promises of rising American markets, and ignored new Japanese
+steel competitors. Everything was there to be seen. It was missed,
+not for lack of information but for denial and lack of methodology.
+They didn’t want to see it, and didn’t have the mechanism to force
+them to see it. A well-constructed scenario plot is exactly that sort of
+mechanism.
+OceanofPDF.com
+
+
+THE WORLD IN 2005:
+THREE SCENARIOS
+            The fundamental uncertainties of our time will shape the
+context for many of our business and personal decisions. Will there
+be war or peace? Prosperity or depression? An atmosphere of
+freedom or one of restraint? As a group, Global Business Network
+produced our first set of global scenarios in 1990. We followed the
+same practice discussed in this book—isolating predetermined
+elements and critical uncertainties, and then considering the
+possible scenario plot lines. And we emerged with three scenarios of
+the future which we still feel are plausible. Any of them may come
+true; the future will probably be a combination of all of them.
+Large-scale scenarios such as these serve as a sort of template; you
+can use them as a basis for more specific scenarios. We use them to
+keep ourselves from reinventing the wheel each time we consider a
+new decision, and it helps us continue to educate ourselves as well.
+As we learn more about the fate of any individual organizations or
+people, we learn more about the quality of our wider-scale long
+view, and more about the global economy.
+You might use these scenarios (or parts of them) as components in
+your own planning. Alternatively, they may just spark your own
+thinking. I offer them in the spirit with which scenarios are always
+offered: as a vehicle for envisioning where the world could go so
+that we can learn in time to do something different.
+Driving Forces of the Next Two Decades

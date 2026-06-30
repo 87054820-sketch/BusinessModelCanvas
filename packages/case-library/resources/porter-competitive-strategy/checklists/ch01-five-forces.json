@@ -1,0 +1,79 @@
+{
+  "chapter": "ch01-five-forces",
+  "sourceFiles": {
+    "en": "full.txt"
+  },
+  "concepts": [
+    {
+      "name": "Structural Analysis",
+      "definition": "Porter's discipline of decomposing competition into underlying structural forces, activities, positions, and trade-offs rather than treating performance as personality or luck."
+    },
+    {
+      "name": "Competitive Advantage",
+      "definition": "A durable difference in relative cost, willingness to pay, position, or activity configuration that allows above-average returns."
+    },
+    {
+      "name": "Chapter-Specific Framework",
+      "definition": "Part I, Chapter 1 of *Competitive Strategy* — Porter's most famous framework. Detailed structural analysis of each force: (1) Threat of new entrants (barriers to entry — economies of scale, product differentiation, capital requirements, switching costs, access to distribution channels, cost disadvantages independent of scale, government policy). (2) Intensity of rivalry among existing firms (numerous or equally balanced competitors, slow industry growth, high fixed costs, lack of differentiation, high exit barriers, diverse competitors). (3) Pressure from substitute products (relative price/performance, switching costs, buyer propensity to substitute). (4) Bargaining power of buyers (purchase volume, product standardization, low switching costs, threat of backward integration, price sensitivity). (5) Bargaining power of suppliers (supplier concentration, few substitutes, importance of industry as customer for the supplier, importance of supplier's product to the industry, threat of forward integration). The chapter includes thorough diagnosis questions for each force."
+    },
+    {
+      "name": "Strategic Fit and Trade-offs",
+      "definition": "The requirement that choices reinforce each other across activities, customers, scope, cost, and differentiation so the strategy is hard to imitate."
+    }
+  ],
+  "arguments": [
+    {
+      "claim": "Strategy must be grounded in structure, not slogans",
+      "evidence": "The chapter provides a diagnostic system for understanding why profitability differs across industries, segments, competitors, activities, buyers, suppliers, or time."
+    },
+    {
+      "claim": "Advantage is built in choices and activities",
+      "evidence": "Porter repeatedly shows that superior performance comes from configuring activities and positions differently, not from generic ambition to be better."
+    }
+  ],
+  "cases": [
+    {
+      "name": "Porter framework application",
+      "context": "A manager uses the chapter framework to diagnose a real competitive situation rather than relying on surface financials.",
+      "illustrates": "How structural variables and activity choices reveal where advantage is created or destroyed.",
+      "lesson": "Use the framework as a map for choices, not as a label."
+    }
+  ],
+  "logicChains": [
+    {
+      "description": "Define the competitive question → decompose structure or activities → diagnose drivers and trade-offs → compare relative position → choose actions that improve defensible advantage.",
+      "sourceHint": "Synthesized from Porter source chapter and index summary."
+    }
+  ],
+  "terminology": [
+    {
+      "term": "Industry structure",
+      "definition": "The underlying economic forces shaping profitability."
+    },
+    {
+      "term": "Activity system",
+      "definition": "The configuration of activities through which a firm creates value and incurs cost."
+    },
+    {
+      "term": "Trade-off",
+      "definition": "A choice that makes some positions incompatible with others and protects strategy from imitation."
+    }
+  ],
+  "nuance": [
+    "Porter frameworks are diagnostic disciplines, not fill-in templates.",
+    "Average industry or firm performance hides the drivers that matter at force, segment, activity, or competitor level."
+  ],
+  "crossReferences": {
+    "relatedStrategyFrameworkSlugs": [
+      "porters-five-forces"
+    ],
+    "relatedCanvasDefIds": [
+      "business-model-environment"
+    ],
+    "relatedCaseSlugs": [],
+    "relatedChapters": [
+      "ch02-generic-strategies",
+      "ch03-competitor-analysis"
+    ]
+  }
+}

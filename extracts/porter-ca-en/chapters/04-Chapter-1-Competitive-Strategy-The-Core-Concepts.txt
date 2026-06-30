@@ -1,0 +1,110 @@
+# Chapter 1: Competitive Strategy: The Core Concepts
+
+competitors. Even long periods of stability can be abruptly ended by
+competitive moves.
+Both industry attractiveness and competitive position can be shaped by a
+ﬁrm, and this is what makes the choice of competitive strategy both
+challenging and exciting. While industry attractiveness is partly a reﬂection
+of factors over which a ﬁrm has little inﬂuence, competitive strategy has
+considerable power to make an industry more or less attractive. At the same
+time, a ﬁrm can clearly improve or erode its position within an industry
+through its choice of strategy. Competitive strategy, then, not only responds
+to the environment but also attempts to shape that environment in a ﬁrm’s
+favor.
+These two central questions in competitive strategy have been at the core
+of my research. My book Competitive Strategy: Techniques for Analyzing
+Industries and Competitors presents an analytical framework for
+understanding industries and competitors, and formulating an overall
+competitive strategy. It describes the ﬁve competitive forces that determine
+the attractiveness of an industry and their underlying causes, as well as how
+these forces change over time and can be inﬂuenced through strategy. It
+identiﬁes three broad generic strategies for achieving competitive
+advantage. It also shows how to analyze competitors and to predict and
+inﬂuence their behavior, and how to map competitors into strategic groups
+and assess the most attractive positions in an industry. It then goes on to
+apply the framework to a range of important types of industry environments
+that I term structural settings, including fragmented industries, emerging
+industries, industries undergoing a transition to maturity, declining
+industries, and global industries. Finally, the book examines the important
+strategic decisions that occur in the context of an industry, including vertical
+integration, capacity expansion, and entry.
+This book takes the framework in Competitive Strategy as a starting
+point. The central theme of this book is how a ﬁrm can actually create and
+sustain a competitive advantage in its industry—how it can implement the
+broad generic strategies. My aim is to build a bridge between strategy and
+implementation, rather than treat these two subjects independently or
+consider implementation scarcely at all as has been characteristic of much
+previous research in the ﬁeld.
+
+
+Competitive advantage grows fundamentally out of value a ﬁrm is able
+to create for its buyers that exceeds the ﬁrm’s cost of creating it. Value is
+what buyers are willing to pay, and superior value stems from offering
+lower prices than competitors for equivalent beneﬁts or providing unique
+beneﬁts that more than offset a higher price. There are two basic types of
+competitive advantage: cost leadership and differentiation. This book
+describes how a ﬁrm can gain a cost advantage or how it can differentiate
+itself. It describes how the choice of competitive scope, or the range of a
+ﬁrm’s activities, can play a powerful role in determining competitive
+advantage. Finally, it translates these concepts, combined with those in my
+earlier book, into overall implications for offensive and defensive
+competitive strategy, including the role of uncertainty in inﬂuencing
+strategic choices. This book considers not only competitive strategy in an
+individual industry but also corporate strategy for the diversiﬁed ﬁrm.
+Competitive advantage in one industry can be strongly enhanced by
+interrelationships with business units competing in related industries, if
+these interrelationships can actually be achieved. Interrelationships among
+business units are the principal means by which a diversiﬁed ﬁrm creates
+value, and thus provide the underpinnings for corporate strategy. I will
+describe how interrelationships among business units can be identiﬁed and
+translated into a corporate strategy, as well as how interrelationships can be
+achieved in practice despite the organizational impediments to doing so that
+are present in many diversiﬁed ﬁrms.
+Though the emphases of this book and my earlier book are different,
+they are strongly complementary. The emphasis of Competitive Strategy is
+on industry structure and competitor analysis in a variety of industry
+environments, though it contains many implications for competitive
+advantage. This book begins by assuming an understanding of industry
+structure and competitor behavior, and is preoccupied with how to translate
+that understanding into a competitive advantage. Actions to create
+competitive advantage often have important consequences for industry
+structure and competitive reaction, however, and thus I will return to these
+subjects frequently.
+This book can be read independently of Competitive Strategy, but its
+power to aid practitioners in formulating strategy is diminished if the reader
+is not familiar with the core concepts presented in the earlier book. In this
+
+
+chapter, I will describe and elaborate on some of those concepts. The
+discussion of the core concepts will also provide a good means of
+introducing the concepts and techniques in this book. In the process, I will
+address some of the most important questions that arise in applying the core
+concepts in practice. Thus even readers familiar with my earlier book may
+ﬁnd the review of interest.
+The Structural Analysis of Industries
+The ﬁrst fundamental determinant of a ﬁrm’s proﬁtability is industry
+attractiveness. Competitive strategy must grow out of a sophisticated
+understanding of the rules of competition that determine an industry’s
+attractiveness. The ultimate aim of competitive strategy is to cope with and,
+ideally, to change those rules in the ﬁrm’s favor. In any industry, whether it
+is domestic or international or produces a product or a service,2 the rules of
+competition are embodied in ﬁve competitive forces: the entry of new
+competitors, the threat of substitutes, the bargaining power of buyers, the
+bargaining power of suppliers, and the rivalry among the existing
+competitors (see Figure 1–1).
+The collective strength of these ﬁve competitive forces determines the
+ability of ﬁrms in an industry to earn, on average, rates of return on
+investment in excess of the cost of capital. The strength of the ﬁve forces
+varies from industry to industry, and can change as an industry evolves. The
+result is that all industries are not alike from the standpoint of inherent
+proﬁtability. In industries where the ﬁve forces are favorable, such as
+pharmaceuticals, soft drinks, and data base publishing, many competitors
+earn attractive returns. But in industries where pressure from one or more of
+the forces is intense, such as rubber, steel, and video games, few ﬁrms
+command attractive returns despite the best efforts of management. Industry
+proﬁtability is not a function of what the product looks like or whether it
+embodies high or low technology, but of industry structure. Some very
+mundane industries such as postage meters and grain trading are extremely
+proﬁtable, while some more glamorous, high-technology industries such as
+personal computers and cable television are not proﬁtable for many
+participants.

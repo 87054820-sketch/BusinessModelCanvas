@@ -1,0 +1,883 @@
+# 5. Launch: Chicken or Egg? Eight Ways to Launch a Successful Platform
+
+genius for crafting secure forms of computerized communications to the
+world of business.
+Thiel and Levchin (along with a third partner, John Bernard Powers, who
+soon departed) launched Confinity, a startup aimed at enabling money
+transfers on Palm Pilots and other personal digital assistants (PDAs)
+equipped with infrared ports. At the time, the Palm Pilot was an
+exceptionally popular mobile device whose adoption rate was expected to
+grow, and launching a payment system on a mobile device that people
+carried with them everywhere made sense. The business logic behind
+Confinity seemed indisputable. The notion of a payment mechanism that
+could potentially liberate millions of people from reliance on government-
+sponsored currency also appealed to the idealistic Thiel’s libertarian streak,
+much as another ambitious online payment platform—Bitcoin—would fire
+the imagination of libertarians a decade later.
+Nonetheless, Confinity attracted few users. After two years, having
+gained only 10,000 signups, Levchin and Thiel shut Confinity down.
+Along the way, however, they unlocked a much more promising business
+prospect. Back in October 1999, a Confinity engineer had cobbled together
+an online demo to accept payments via email. This side project represented
+a significant potential improvement in payments processing; unlike
+previous systems for online payments, it allowed anyone in the world to
+receive an online payment from anyone else without needing to use the
+unwieldy system for transferring funds from one bank account to another.
+Levchin and Thiel recognized that it might be possible to turn this new form
+of online payment into a significant business on its own—one that could
+serve millions of consumers and the online businesses they patronized.
+They came up with a name for the service—PayPal—and set out to build
+a company around it. It was, at that point, an inauspicious moment in the
+business cycle to launch such a service; the possibility of a collapse of the
+so-called Internet bubble was looming over the high-tech industry, and
+within a few months a precipitous decline in the NASDAQ index would
+make the dot-com bust official. Adding to the pressure was the fact that
+Thiel and Levchin knew they would have to make PayPal successful fast—
+they were spending some $10 million per month on the business, a large
+amount in the platform world, where huge capital expenditures are normally
+not required.1
+
+
+They also realized they would have to overcome one of the toughest
+challenges associated with creating a business designed to serve two sides
+of a market—the chicken-or-egg problem. When trying to build a two-sided
+market in which both sides are equally essential, which comes first? And
+how do you attract one without the other?
+In the case of a new payments mechanism, the chicken-or-egg problem
+is particularly obvious and acute. Without sellers who are willing to accept
+the new form of payment, buyers won’t adopt it. But if buyers don’t adopt
+the new form of payment, sellers won’t invest time, effort, and money in
+accepting it. So how do you launch a new payments platform from a base of
+zero, starting with neither sellers nor buyers—when neither group has a
+reason to join until the other side joins first?
+In terms of simple logic, the chicken-or-egg problem might seem
+insoluble. PayPal solved the problem through a series of ingenious
+strategies.
+To start with, PayPal reduced the friction involved in accepting online
+payments. All a user needed was an email address and a credit card. This
+simplicity was in stark contrast to previous online payment mechanisms,
+which demanded multiple rounds of verification before an account could be
+set up, thereby discouraging early users. PayPal’s user-friendly, almost
+frictionless system attracted a significant initial base of consumers—though
+not enough, in itself, to make the platform attractive to the universe of
+online sellers.
+In a lecture he later gave at Stanford, Peter Thiel explained what
+happened next:
+PayPal’s big challenge was to get new customers. They tried advertising. It was too expensive.
+They tried BD [business development] deals with big banks. Bureaucratic hilarity ensued. … the
+PayPal team reached an important conclusion: BD didn’t work. They needed organic, viral
+growth. They needed to give people money.
+So that’s what they did. New customers got $10 for signing up, and existing ones got $10 for
+referrals. Growth went exponential, and PayPal wound up paying $20 for each new customer. It
+felt like things were working and not working at the same time; 7 to 10 percent daily growth and
+100 million users was good. No revenues and an exponentially growing cost structure were not.
+Things felt a little unstable. PayPal needed buzz so it could raise more capital and continue on.
+(Ultimately, this worked out. That does not mean it’s the best way to run a company. Indeed, it
+probably isn’t.)2
+Thiel’s account captures both the desperation of those early days and the
+almost random experimentation the company resorted to in an effort to get
+
+
+PayPal off the ground. But in the end, the strategy worked. PayPal
+dramatically increased its base of consumers by incentivizing new sign-ups.
+Most important, the PayPal team realized that getting users to sign up
+wasn’t enough; they needed them to try the payment service, recognize its
+value to them, and become regular users. In other words, user commitment
+was more important than user acquisition. So PayPal designed the
+incentives to tip new customers into the ranks of active users. Not only did
+the incentive payments make joining PayPal feel riskless and attractive,
+they also virtually guaranteed that new users would start participating in
+transactions—if only to spend the $10 they’d been gifted in their accounts.
+PayPal’s explosive growth triggered a number of positive feedback
+loops. Once users experienced the convenience of PayPal, they often
+insisted on paying by this method when shopping online, thereby
+encouraging sellers to sign up. New users spread the word further,
+recommending PayPal to their friends. Sellers, in turn, began displaying
+PayPal logos on their product pages to inform buyers that they were
+prepared to honor this method of online payment. The sight of those logos
+informed more buyers of PayPal’s existence and encouraged them to sign
+up. PayPal also introduced a referral fee for sellers, incentivizing them to
+bring in still more sellers and buyers. Through these feedback loops, the
+PayPal network went to work on its own behalf—it served the needs of
+users (buyers and sellers) while spurring its own growth.
+However, the company leaders didn’t sit back and rely on the positive
+feedback loops to do all the growth work on their own. They looked for
+opportunities to jack up the growth rate still further.
+In early 2000, they noted the growing popularity of PayPal on eBay, the
+most popular online auction site. It was a natural place for PayPal, since
+most of the sellers on eBay aren’t full-time merchants but ordinary people
+without facilities for accepting credit cards or other forms of online
+payment.
+PayPal’s marketing team opportunistically refocused its efforts toward
+enabling payments on eBay. Among other techniques, they simulated
+consumer demand on eBay by creating a bot (an automated software tool)
+that bought goods on the site and then insisted on paying for these
+transactions using PayPal. Noting this apparent growth in demand, many
+eBay sellers signed up for the PayPal service—which in turn made PayPal
+even more visible and attractive to consumers. The sellers began posting
+
+
+PayPal icons on their sites, enabling buyers to access the payment system
+with just a single click of the mouse, reducing friction still further.3
+Within three months, PayPal’s user base grew from 100,000 to one
+million.
+The leaders of eBay noticed how PayPal had built its own platform
+business partly on eBay’s back. Concerned about the potential competitive
+threat posed by a company that was building an independent connection
+with eBay customers (and siphoning off a fraction of the revenues from
+eBay transactions to boot), eBay tried to fight back. It launched its own
+payment system, Billpoint, in partnership with Wells Fargo Bank. It
+promoted Billpoint aggressively, at one point requiring eBay merchants
+who accepted both Billpoint and PayPal to post larger icons for Billpoint on
+their sale pages. Despite these efforts, Billpoint failed to get traction among
+eBay users, partly because of its belated launch, partly because of ill-
+advised business moves by eBay—for example, the decision to squelch
+deals that would have promoted Billpoint’s use by non-eBay merchants.
+PayPal continued to grow. By the time Confinity shut down its Palm
+Pilot business in late 2000, its offspring PayPal had already garnered three
+million accounts—three hundred times the number achieved by its parent
+company. Not since the launch of the first credit card, Diners Club, has the
+world seen such rapid global adoption of a new payment instrument. In
+February 2002, PayPal went public.
+In October 2002, eBay finally gave up on Billpoint and acquired PayPal
+in exchange for $1.4 billion in stock—a modest sum by today’s standards
+but a significant one at the time. At the time of the sale, 70 percent of all
+eBay auctions accepted PayPal, and roughly 25 percent of closed auction
+purchases were transacted using the payment service. Today, PayPal
+produces a major portion of eBay’s revenues and profits while enabling
+hundreds of thousands of small merchants to conduct business online more
+easily, efficiently, and profitably than ever before.
+THE HEART OF PLATFORM MARKETING: DESIGNING
+FOR VIRAL GROWTH
+
+
+As the PayPal story suggests, building a platform business differs from
+traditional product or pipeline marketing in a number of ways. For starters,
+in the world of platform marketing, pull strategies rather than push
+strategies are most effective and important.
+The industrial world of pipelines relies heavily on push. Consumers are
+accessed through specific marketing and communication channels that the
+business owns or pays for. In a world of scarcity, options were limited, and
+getting heard often sufficed to get marketers and their messages in front of
+consumers. In this environment, the traditional advertising and public
+relations industries focused almost solely on awareness creation—the
+classic technique for “pushing” a product or service into the consciousness
+of a potential customer.
+This model of marketing breaks down in the networked world, where
+access to marketing and communication channels is democratized—as
+illustrated, for example, by the viral global popularity of YouTube videos
+such as PSY’s “Gangnam Style” and Rebecca Black’s “Friday.” In this
+world of abundance—where both products and the messages about them are
+virtually unlimited—people are more distracted, as an endless array of
+competing options is only a click or a swipe away. Thus, creating awareness
+alone doesn’t drive adoption and usage, and pushing goods and services
+toward customers is no longer the key to success. Instead, those goods and
+services must be designed to be so attractive that they naturally pull
+customers into their orbit.
+Furthermore, for a platform business, user commitment and active usage,
+not sign-ups or acquisitions, are the true indicators of customer adoption.
+That’s why platforms must attract users by structuring incentives for
+participation—preferably incentives that are organically connected to the
+interactions made possible by the platform. Traditionally, the marketing
+function was divorced from the product. In network businesses, marketing
+needs to be baked into the platform.
+This new way of thinking about marketing is reflected in the strategies
+that the leaders of PayPal used to make their platform successful. Rather
+than pushing PayPal into the consciousness of users through, for example,
+television commercials, print advertisements, or email blasts, they created
+incentives that gave the platform itself a pull appeal—including both the
+ultra-simplicity of PayPal’s service and the payments that rewarded those
+who delivered new sign-ups. They pulled sellers onto the platform by both
+
+
+creating demand for PayPal’s service among buyers and simulating demand
+through the eBay shopping bot. As more users signed up, PayPal’s
+attractiveness continued to intensify. In the end, competing payment
+services were swept away—testament to the power of pull.
+Traditional push strategies continue to be relevant in the world of
+platforms. For example, Instagram received tens of thousands of downloads
+on the day of its launch when it was featured as the number one app on
+Apple’s iTunes store—the kind of push strategy that pipeline companies
+have used for decades. And, as we’ll discuss later, Twitter achieved liftoff
+largely because of a massively successful public relations event—another
+push type of strategy.
+But in the world of platforms, rapid, scalable, and sustainable user
+growth is most often achieved through pull processes.
+THE INCUMBENTS’ ADVANTAGE:
+REALITY OR ILLUSION?
+The chicken-or-egg problem and the difficulties of attracting a large user
+base may cause you to wonder: why shouldn’t incumbent companies with
+huge existing customer bases take over the world of platforms? Perhaps it’s
+just a matter of time before companies like Walmart, Samsung, and GE
+leverage their head starts to crush the competition.
+Large enterprises do have some advantages when launching platform
+businesses. They have existing value chains, powerful alliances and
+partnerships with other companies, pools of talent to draw upon, and vast
+arsenals of resources—including loyal customer bases.
+However, these advantages can create complacency. In the traditional
+business world dominated by products and pipelines, there is usually time
+to observe the rise of outside competition and to make adjustments. Most
+big companies have evolved metabolisms that reflect this relatively slow
+pace of change: their processes for strategic planning, goal-setting, self-
+evaluation, and course correction operate on leisurely schedules with annual
+or, at best, quarterly checkpoints. However, in the world of platforms,
+dominated by networks that interact rapidly and unpredictably, the market
+
+
+can change quickly and customer expectations can change even faster.
+Management systems need to change accordingly.
+As incumbent companies reinvent themselves for the world of platforms,
+they will find themselves on the same playing field as lithe, fast-moving
+startup companies. In a world of democratized network access and pull
+marketing, the advantages once produced by size, experience, and resources
+have become less important.
+So if you’re an entrepreneur or a would-be entrepreneur, or if you help to
+run a small or midsized company that has its eye on a platform business
+opportunity, don’t be intimidated by the prospect of a giant competitor
+encroaching on your space. The rules of the growth game have changed,
+and if you understand and master the new rules, you have as good a chance
+of surviving and thriving as anyone.
+THERE ARE MANY WAYS
+TO LAUNCH A PLATFORM
+It’s tempting to assume that the launch strategy that works for Platform A
+will work for Platform B. But history shows it isn’t so. In fact, even
+platforms that are direct competitors may need to adopt different launch
+strategies in order to carve out powerful and unique positions in the
+marketplace. The stories of three competing online video platforms—
+YouTube, Megaupload, and Vimeo—illustrate this point vividly.
+YouTube was the first democratic (anyone can upload) video hosting
+platform to gain mainstream traction. It did this by focusing entirely on
+content creators. During its initial days, YouTube conducted contests
+incentivizing content creators to upload videos. Additionally, it allowed
+content creators to embed their videos off-platform, which rapidly spread
+the word about YouTube. Certain potential users found the new venue
+highly attractive. For example, much of the engagement on the then-popular
+social network Myspace was built around indie bands. YouTube improved
+on Myspace by creating the Flash-based, one-click video experience,
+making it easy for bands to upload videos of their music. This created an
+initial corpus of content for YouTube and simultaneously leveraged
+producers to bring in consumers, some of whom eventually converted to
+producers as well. Strengthening its focus on producers, YouTube even
+
+
+elevated top content creators to a partner status that entitled them to a share
+of ad revenue.
+YouTube’s unrelenting focus on producers helped in four ways. First, it
+seeded the platform with content. Second, it created a curation dynamic on
+the platform to identify quality content by letting viewers vote up or down
+on the videos they watched. Third, it leveraged producers to bring in
+consumers. Fourth, and most important, it created a set of content creators
+who had an investment in the platform, had a user following, and would not
+be easily incentivized to invest in another one.
+Megaupload was faced with the late-mover problem. By 2005, when
+Megaupload launched, most content creators were already active on
+YouTube, and there was no incentive for them to participate in a new
+platform with a smaller market of viewers. As the second mover,
+Megaupload couldn’t compete head-on following the same user acquisition
+strategy as the market pioneer. So it employed an alternative launch
+strategy. It focused exclusively on consumers (viewers) by seeding the
+platform with content internally, specifically creating content in categories
+that were increasingly being policed on YouTube, including pirated videos
+and pornography. Megaupload gained significant traction by addressing
+these seemingly underserved needs. However, in the process it exposed
+itself to lawsuits and negative publicity.
+Our third player, Vimeo, was another late entrant (it was launched in
+November 2004)—but it succeeded with a producer-first strategy that
+competed directly with YouTube. The key was creating a set of higher-
+quality tools that appealed to a particular set of users who felt neglected by
+YouTube.
+In its initial days, YouTube’s hosting and bandwidth infrastructure,
+coupled with its embeddable player, constituted a compelling value
+proposition to producers. However, as YouTube gained traction among
+producers, the focus of the platform moved from improving video hosting
+infrastructure (as a value proposition to producers) to improving
+matchmaking of videos with consumers (focusing on video search, and a
+video feed).
+Vimeo responded to YouTube’s shift by focusing its platform on the
+producers and providing them with superior infrastructure, including built-
+in support for high-definition video playback and a better embeddable
+player for installation on blogs. This enabled it to compete successfully with
+
+
+YouTube in pursuit of producers who would create a sustainable flow of
+videos.
+As these varying examples illustrate, if you’re launching a platform,
+knowing the value propositions offered by your competitors can help you
+structure your own, allowing you to claim a relatively untouched market
+niche—even if your basic value unit may appear similar on the surface.
+EIGHT STRATEGIES FOR BEATING THE CHICKEN-OR-
+EGG DILEMMA
+Understanding the importance of pull strategies in a platform market, as
+well as the need to analyze and respond to your rivals’ business designs, are
+significant elements of launch strategy. But the dilemma we call the
+chicken-or-egg problem still looms for virtually all platform founders. How
+to begin building a user base for a two-sided market when each side of the
+market depends on the prior existence of the other side?
+One way to address this conundrum is to avoid the chicken-or-egg
+problem altogether by building a platform business on the foundation of an
+existing pipeline or product business. This approach is known as:
+1.  The follow-the-rabbit strategy. Use a non-platform demonstration
+project to model success, thereby attracting both users and producers to a
+new platform erected on your project’s proven infrastructure.
+Consider Amazon. It never faced the chicken-or-egg problem because, as
+a successful online retailer, it operated an effective pipeline business that
+used online product listings to attract consumers. With a thriving consumer
+base, Amazon converted itself into a platform business simply by opening
+its system to external producers. The result is Amazon Marketplace, which
+enables thousands of merchants to sell their products to millions of
+consumers—with Amazon enjoying a small slice of revenue from every
+transaction.
+In the B2B space, Intel faced the same challenge in demonstrating the
+value of wireless technology. No one wants a wireless laptop if no hosts
+provide wireless service; no hosts will spend on wireless routers if no users
+demand them. Intel partnered with the Japanese telecom company NTT to
+
+
+demonstrate that a market existed. Once NTT showed that money could be
+made by catering to this market, dozens of other firms followed suit. Intel,
+in fact, originated the term “follow the rabbit” to define this strategy.
+It’s not always possible to use the follow-the-rabbit strategy. Sometimes
+you have to start your platform from scratch, which means that finding a
+way to attract a base of users on both sides of your market is an unavoidable
+challenge.4 There are a number of specific, effective strategies that have
+been developed and demonstrated for overcoming the chicken-or-egg
+problem. In general, these strategies involve three techniques:
+1.  Staging value creation. The platform managers arrange for the creation of value units that
+will attract one or more sets of users and demonstrate the potential benefits of participating in
+the platform.5 Those initial users create more value units, attract still other users, and set up a
+positive feedback loop that leads to continuing growth.6 The Huffington Post followed this
+strategy by hiring writers to create an initial array of high-quality blog posts for the site,
+thereby attracting readers. Some of these readers began contributing blog posts of their own,
+leading to the gradual development of a wider network of content creators and attracting even
+more readers.
+2.    Designing the platform to attract one set of users. The platform is designed to provide
+tools, products, services, or other benefits that will attract one set of users—either consumers
+or producers. The existence of a critical mass of users on one side of a marketplace attracts
+users on the other side, leading to a positive feedback loop. As we’ll detail below, the
+restaurant reservation platform OpenTable used this strategy by creating useful electronic tools
+for restaurateurs. Once a large number of restaurants were on board, consumers began to
+discover the site and started using it to make their dining plans.
+3.  Simultaneous on-boarding. To start, the platform creates conditions such that value units can
+be created that are relevant to users even when the overall size of the network is small. It then
+strives to stimulate a burst of activity that will simultaneously attract consumers and producers
+in sufficient numbers to create larger numbers of value units and value-producing interactions,
+so that network effects can begin to kick in. Later in this chapter, we’ll show how Facebook
+employed this strategy to make its fledgling social network attractive to users even when the
+universe of potential members was very small—limited, in fact, to students at a single
+university.
+These three techniques can be used individually or together, and a
+variety of combinations can work effectively under the right circumstances.
+What follows are some of the specific variations that we’ve identified. If
+you’re in the process of developing a new platform or hoping to launch one,
+you may find one of these an inspiring model for your own chicken-or-egg
+strategy.
+2.  The piggyback strategy. Connect with an existing user base from a
+different platform and stage the creation of value units in order to recruit
+
+
+those users to participate in your platform.
+This is a classic strategy used in many successful platform launches. As
+we’ve seen, PayPal used this strategy when it piggybacked on eBay’s online
+auction platform.
+Justdial is India’s largest local commerce marketplace, facilitating
+consumer transactions with more than four million small businesses. It
+seeded the initial database by borrowing listings from existing yellow pages
+as well as by employing feet-on-street soldiers who went door to door
+collecting business information. Using this data, Justdial was launched as a
+phone directory service. A consumer would call in looking for service
+providers—for example, caterers for a wedding banquet. Justdial would
+pass on the lead to the producers—in this case, appropriate caterers in the
+town where the consumer was located. Grateful for the lead, some of these
+service providers would become subscribers to Justdial. To encourage more
+active participation by local merchants, many of whom weren’t previously
+listed anywhere online, Justdial made it easy for them to join the platform
+through human interfaces, telephone connections, and text messaging.
+After a successful IPO in May 2013, Justdial continues to be the
+dominant platform in the local commerce space in India. Its humble origin
+was in a collection of business listings “borrowed” from an existing
+platform, the local telephone directory.
+In the U.S., startups have used a similar strategy by piggybacking on
+Craigslist. The new platform starts by “scraping” Craigslist, using
+automated data-gathering software tools to obtain information about
+merchants and service providers. It then posts this information on its
+platform, giving consumers the impression that these merchants are actually
+participating on the platform. When a consumer requests a certain service
+provider, the platform passes on the lead while inviting the merchant to join
+the platform.
+As described earlier in this chapter, another compelling example of the
+piggyback strategy is the way YouTube rode the Myspace growth wave by
+offering its powerful video tools to attract indie bands that were members of
+the social network. Once YouTube was exposed to millions of Myspace
+members, its adoption rate grew virally. By 2006, YouTube’s reach outgrew
+Myspace’s, and the adoption graphs have only diverged further since then.
+
+
+3.  The seeding strategy. Create value units that will be relevant to at
+least one set of potential users. When these users are attracted to the
+platform, other sets of users who want to engage in interactions with them
+will follow.
+In many cases, the platform company takes the task of value creation
+upon itself by acting as the first producer. In addition to kickstarting the
+platform, this strategy allows the platform owner to define the kind and
+quality of value units they want to see on the platform, thereby encouraging
+a culture of high-quality contributions among subsequent producers.7
+When Google launched its Android smartphone operating system to
+compete with Apple’s, it seeded the market by offering $5 million in prizes
+to developers who came up with the best apps in each of ten categories,
+including gaming, productivity, social networking, and entertainment.
+Winners not only got the prize money but became market leaders in their
+categories, attracting large numbers of customers as a result.
+In other cases, the value units may be “borrowed” from another source
+rather than created by the platform developer from scratch. Adobe launched
+its now-ubiquitous PDF document-reading tool in part by arranging to make
+all federal government tax forms available online. The size of this instant
+market was huge, encompassing any individual or business that might need
+to pay U.S. taxes. Adobe induced the IRS to cooperate by suggesting that
+millions of dollars in printing and postage costs could be saved. Taxpayers,
+in turn, got fast, convenient access to documents that everyone needs, at
+least once a year. Impressed by the value provided, many adopted Adobe as
+their document platform of choice.
+In still other cases, seeding is done through simulated (“fake”) value
+units. As we’ve seen, PayPal employed this strategy when it created bots
+that made purchases on eBay, thereby attracting sellers to the PayPal
+platform. This was especially clever, since a bot could then turn around and
+list for sale the item it had just bought, thereby covering both sides of the
+two-sided market—and precluding PayPal from ever having to warehouse
+and ship the item itself.
+Dating services often simulate initial traction by creating fake profiles
+and conversations. Many skew their profiles to showcase attractive women,
+in a bid to attract men to the platform. Users who visit the site see the
+activity and are enticed to stay on.
+
+
+Reddit is a highly popular link-sharing community that circulates vast
+amounts of Internet content. When it first launched, the site was seeded
+with fake profiles posting links to the kind of content the founders wanted
+to see on the site over time. It worked. The initial content attracted people
+who were interested in similar content and created a culture of high-quality
+contributions to the community. Over time, its members have learned to
+rely on one another for guidance as to what’s worth scrutinizing and what is
+not. (The success of Reddit’s launch and expansion have not shielded it
+from controversy, of course, as the 2015 battles over allegedly racist and
+bigoted content on the site made clear.)
+Similarly, when Quora first started, the editors would ask questions and
+then answer the questions themselves, to simulate activity on the platform.
+Once users started asking questions, editors continued to answer them,
+thereby demonstrating how the platform was intended to work. Eventually,
+users themselves took over the process, and the “pump-priming” by Quora
+personnel could cease.
+4.  The marquee strategy. Provide incentives to attract members of a
+key user set onto your platform.
+In many cases, there’s a single group of users who are so important that
+their participation can make or break the success of the platform. It may,
+therefore, make sense for the platform manager to incentivize their
+participation, either through a cash payment or through other special
+benefits.
+In the world of electronic gaming, companies like Microsoft (Xbox),
+Sony (PlayStation), and Nintendo (Wii) create devices that serve as
+platforms that connect consumers with content produced by game
+developers. The dominant sports game developer is Electronic Arts (EA),
+whose licensed games that simulate NFL football, NBA basketball, NHL
+hockey, and other sports (such as its Tiger Woods pro golf tour game) are
+annually updated and outsell all competitors. No producer of a gaming
+device can hope to survive without having an attractive array of games from
+EA available for its platform. Thus, Microsoft, Sony, and Nintendo have all
+been willing to provide especially sweet partnership deals to entice EA to
+develop or adapt games so as to be ready for release at the moment their
+new platforms are released.
+
+
+In a variation on this strategy, a platform company may choose to
+purchase a marquee participant in order to obtain exclusive access to the
+seeds it produces. For a number of years, software producer Bungie
+specialized in games, like the popular Marathon, for use on Apple
+computers. In 2000, with the Xbox nearing launch, Microsoft bought out
+Bungie and repurposed a game then in development under the title Halo:
+Combat Evolved as an Xbox exclusive. Halo became the marquee app that
+sold hundreds of thousands of Xbox devices, as well as a billion-dollar
+franchise in its own right.
+Sometimes, the marquee players whose participation is vital to platform
+success are consumers rather than producers. That was the case with
+PayPal, which is why the company gave cash incentives to entice shoppers
+to adopt their online payment mechanism.
+In 2009, the Swiss postal service made the decision to transform itself
+into a digital message-delivery platform using scanning-and-archiving
+technology provided by Seattle-based Earth Class Mail.8 Swiss Post soon
+recognized the importance of capturing and converting thousands of
+customers who were more comfortable with traditional mail delivery. To
+attract those holdouts, Swiss Post gave away thousands of iPads to
+households in remote neighborhoods. In the process, it encouraged these
+rural Swiss families to switch from physical mail to electronic messaging,
+thus greatly reducing the resources it had to dedicate to hand-delivering the
+mail. It also, not so incidentally, positioned Swiss Post to become the
+country’s largest retailer of Apple products—a significant secondary benefit
+for the company.9
+5.    The single-side strategy. Create a business around products or
+services that benefit a single set of users; later, convert the business into a
+platform business by attracting a second set of users who want to engage in
+interactions with the first set.
+Launching a service booking platform like  OpenTable, the restaurant
+reservation system, poses a classic chicken-or-egg problem. Without a large
+base of participating restaurants, why would patrons visit the OpenTable
+site? But without a large base of patrons, why would restaurants choose to
+participate? OpenTable solved the problem by first distributing booking
+management software that restaurants could use to manage their seating
+inventory. Once OpenTable had enough restaurants on board, they built out
+
+
+the consumer side, which allowed them to start booking tables and
+collecting a lead generation fee from the restaurants.
+The Indian bus reservation platform redBus gained traction in a similar
+manner. It provided bus operators with a seating inventory management
+system, then opened the platform to consumers once bus operators had
+started using the software.
+Delicious is a social networking site that allows users to share lists of
+web bookmarks—links to Internet content that individuals love and that
+they want to revisit again and again. Delicious gained initial traction by
+allowing early users to produce valuable content in stand-alone mode, using
+Delicious to store browser bookmark lists in the cloud for their personal
+consumption. Once the user base hit critical mass, the social bookmarking
+features started getting used, and the value of the network expanded rapidly
+as the number of users increased. Now Delicious has become a popular tool
+for spreading Internet memes and trends as people share their bookmark
+lists.
+6.  The producer evangelism strategy: Design your platform to attract
+producers, who can induce their customers to become users of the platform.
+Platforms that provide businesses with tools for customer relationship
+management (CRM) can often solve the chicken-or-egg problem simply by
+attracting one set of users—producers—who then take on the task of
+bringing along the other set—consumers—from their own customer base.
+The platform helps the producers cater to their existing set of consumers,
+and over time, the producers benefit from data-driven cross-pollination as
+other consumers on the network become interested in their products and
+services.
+Crowdfunding platforms such as Indiegogo and Kickstarter thrive by
+targeting creators who need funding and providing them with the
+infrastructure to host and manage the funding campaign, making it easier
+for them to connect effectively with their customer base. Education
+platforms such as Skillshare and Udemy also grow through producer
+evangelism. They sign up influential teachers, allowing them to easily host
+online courses and prompting them to get their students on board.
+In a similar fashion, expert marketplaces can build their consumer base
+by starting with customer lists provided by their producer members. For
+example, Clarity, which bills itself as an online marketplace that provides
+
+
+expert advice for entrepreneurs, enables bloggers and other experts to
+monetize their following through a Clarity widget that lets readers book
+paid calls with them. With every call, the producer helps Clarity sign up a
+new consumer who can then be directed to other producers.
+Mercateo, a German B2B platform for business and industrial supplies,
+employs a producer evangelism strategy with a novel twist. It shrewdly
+offers producers this invitation: “Bring us your customers, and you will
+have the last word in any bidding competition … but only for the customers
+you bring.” Thus, suppliers are incentivized to invite their customers to join
+Mercateo, and to do so promptly, before a competing company can claim
+them and enjoy the advantage of final-offer bidding.
+7.  The big-bang adoption strategy. Use one or more traditional push
+marketing strategies to attract a high volume of interest and attention to
+your platform. This triggers a simultaneous on-boarding effect, creating an
+almost fully-developed network virtually instantaneously.
+As we’ve noted, in today’s crowded, networked, and ultra-competitive
+arena, push strategies have become increasingly ineffective at enabling
+companies to achieve rapid, large-scale growth. But there are occasional
+exceptions. Twitter’s breakout moment occurred at the 2007 South by
+Southwest (SXSW) Interactive film, music, and tech festival. Twitter had
+launched nine months earlier, but wasn’t getting heavy adoption. Jack
+Dorsey and Twitter’s other founders needed a way to get a critical mass of
+users on the platform. Given the real-time nature of activity on Twitter, they
+realized they needed to build concentration in time as well as in space.
+Twitter invested $11,000 to install a pair of giant flat-panel screens in the
+main hallways at SXSW. A user could text “Join sxsw” to Twitter’s SMS
+shortcode number (40404) and find his or her tweets instantly appearing on
+the screens. Seeing the feedback on large screens in real time and watching
+as thousands of new users jumped into the fray created enormous
+excitement around Twitter and helped make it the hottest networking site in
+cyberspace. Twitter received the festival’s Web Award for the year’s best
+online innovation, and by the end of SXSW, Twitter usage had tripled, from
+20,000 tweets per day to 60,000.
+Other networks have modeled their breakout strategies on Twitter’s. Two
+years later, blogging platform Foursquare achieved a comparable
+breakthrough at the 2009 SXSW festival. In 2012, Tinder, a location-based
+
+
+dating app, achieved its breakout by launching during a frat party at the
+University of Southern California—a hotbed of young men and women
+who were already looking for ways to hook up. Tinder made the task easier
+and, in the process, achieved critical mass during a live party in a small,
+contained location.
+Not every platform can take advantage of the big bang strategy, as
+Twitter, Foursquare, and Tinder did. As South by Southwest has grown, the
+number of companies trying to use it as a platform launch vehicle has
+reached a point where there’s virtually no way to be heard above the roar of
+the crowd.10 And there isn’t always a relevant opportunity for an explosion
+of real-time publicity interest that is capable of attracting thousands of
+potential users.
+Nonetheless, when such an opportunity exists—as it did for Tinder—the
+smart platform manager will grab it.
+8.    The micromarket strategy. Start by targeting a tiny market that
+comprises members who are already engaging in interactions. This enables
+the platform to provide the effective matchmaking characteristic of a large
+market even in the earliest stages of growth.
+The odds were heavily stacked against Facebook. Friendster had
+gathered more than three million users within a few months of its 2002
+launch, and Myspace was growing fast. Of all platform businesses, social
+networks are probably the least forgiving of late market entrants. Users
+won’t readily move to a new social network unless it offers something
+remarkably different. That’s the power of the network effect.
+What’s more, because the value of a social network is so heavily based
+on network effects, achieving critical mass is especially important. If
+Facebook had launched worldwide and quickly achieved a few hundred
+signups—or even a few thousand—it wouldn’t have taken off, since those
+widely dispersed, random users coming in wouldn’t have interacted.
+So Facebook’s decision to launch in the closed community of Harvard
+University wasn’t simply a matter of convenience. It was a masterstroke
+that enabled Facebook to solve the chicken-or-egg problem. Attracting an
+initial five hundred users in the geographically and socially concentrated
+community of Harvard University ensured the creation of an active
+community at launch. Facebook leveraged Harvard as an existing
+micromarket and gained traction by improving the quality of interactions
+
+
+among its members. Focusing on a micromarket reduces the critical mass
+required to start interactions and makes matchmaking much easier.
+When it expanded beyond Harvard, Facebook had to build a user base in
+every new campus it opened up to, often competing with existing intra-
+campus networks. Initially, these campuses were unconnected nodes on the
+Facebook network. Growth took off when Facebook started allowing cross-
+campus friend connections. This eliminated the need to solve the chicken-
+or-egg problem afresh in every new campus. Users coming onto the
+network at a new campus had an existing list of connections across other
+campuses to keep them engaged while they waited for others from their
+own campus to join.
+Geographic focus isn’t the only way to define a micromarket. Stack
+Overflow 
+started 
+out 
+as 
+a 
+question-and-answer 
+community 
+for
+programming topics (category focus). Later it expanded into a second
+category that users requested—cooking. Now Stack Overflow has a voting
+mechanism that allows the community to choose topics they are interested
+in. 
+VIRAL GROWTH:
+THE USER-TO-USER LAUNCH MECHANISM
+One of the most powerful ways to accelerate the growth of a platform is by
+achieving viral growth. The viral growth strategy complements any of the
+launch strategies we’ve discussed in this chapter.
+Viral growth is a pull-based process based on encouraging users to
+spread the word about the platform to other potential users. When users
+themselves encourage others to join the network, the network becomes the
+driver of its own growth.
+The term “viral growth,” of course, contains a built-in metaphor: it
+analogizes the growth of the platform to the spread of an infectious disease.
+In nature, a disease spreads when four elements interact: a host, germs, a
+medium, and a recipient. An infected host sneezes or otherwise spreads
+germs that carry infection out into the environment. These germs are then
+spread through a medium, such as the atmosphere. Then, a recipient inhales,
+ingests, or otherwise absorbs the germs and becomes infected in turn. Now
+
+
+the recipient becomes the host, and the cycle repeats. If it happens often
+enough, an epidemic results.
+Similarly, four key elements are necessary to begin the process of viral
+growth for a platform business—the sender, the value unit, the external
+network, and the recipient. Let’s consider the viral growth of Instagram:
+•    The sender. A user on Instagram shares a picture that he has just created. This launches the
+cycle that will eventually bring in a new user.
+•    The value unit. On Instagram, the value unit is the picture that the user shares with friends.
+•    The external network. For Instagram, Facebook serves as a very effective external network,
+allowing value units (photos) to spread and be exposed to potential users.
+•        The recipient. Finally, a user from Facebook gets intrigued by the picture and visits
+Instagram. This user may create her own photo and start the cycle all over again. Now the
+recipient is acting as the sender.
+Everyone has heard of Instagram’s rapid growth—over 100 million
+active users in less than two years—which led to its billion-dollar
+acquisition in April 2012 by Facebook. What is less well known is that
+Instagram achieved this rapid growth without employing a single traditional
+marketing manager. It happened because the company’s platform was
+carefully designed to make viral growth organic and practically inevitable.
+Unlike its competitor Hipstamatic, Instagram didn’t simply allow users
+to save, organize, and filter pictures. It encouraged them to share their
+photos on external networks like Facebook, converting a single-user
+activity into a social, multi-user activity. Every time users engaged the app,
+they shared their creations. Every point of app usage became an instance of
+app marketing. In essence, Instagram converted all its users into marketers.
+The same cycle of viral growth—a form of growth impossible in the
+industrial economy of pipelines and products—helps to explain the success
+of many other platform startups. Airbnb encouraged users with rooms to
+rent (hosts) to list their offerings (value units) on Craigslist (external
+network). Those who saw the room listings (recipients) and were motivated
+to rent those rooms became Airbnb users—and many subsequently began
+renting out rooms of their own, fueling the growth of the platform.
+OpenTable similarly encourages diners (hosts) to share their dinner
+reservations (value units) over email or Facebook (external networks) with
+their friends and colleagues (recipients) who are joining them for dinner.
+If you’re a platform manager hoping to achieve the same kind of viral
+growth as Instagram, Airbnb, and OpenTable, you need to design rules and
+
+
+tools that will jumpstart the cycle. Your goal is to design an ecosystem
+where senders want to transfer value units through an external network to a
+large number of recipients, ultimately leading many of those recipients to
+become users of your platform.
+Let’s look at these four design elements in greater detail.
+The sender. Getting senders to spread value units is not the same as
+word of mouth, which is a familiar tactic in traditional marketing. Word of
+mouth happens when users like your platform so much, they can’t stop
+talking about it. When users become senders and spread value units, they
+aren’t talking about your platform—they are spreading their own creations,
+and indirectly generating awareness of and interest in your platform.
+In general, users spread self-created value units to get social feedback,
+which in turn may bring them fun, fame, fulfillment, or fortune—or some
+combination of these rewards. Channel owners on YouTube spread the word
+about their videos on multiple external networks in order to gain an
+audience; survey developers on SurveyMonkey spread their surveys via
+email, blogs, and social networks to get responses, which provide insight
+into the question the survey developers are trying to answer; creators
+seeking funding on Kickstarter spread their project page on their social
+networks in order to attract the money they need to complete their works as
+well as the audience they hope will appreciate the finished product.
+These examples illustrate how well-designed platforms create natural
+incentives for users to share. As a rule, platform designers must avoid
+discouraging the spread of value units. The act of sending these units onto
+an external network like Facebook should not distract a creator from using
+the platform; instead, it should fit integrally into the workflow of the
+platform. The more closely this is aligned to the main use of the platform,
+the more likely the platform is to go viral.
+A platform may also provide inorganic (artificial) incentives to
+encourage value-spreading behavior, but these need to be carefully
+structured. A monetary incentive, for example, can become a cash drain if
+the platform achieves viral growth. Dropbox, the popular cloud-based
+service for storing and sharing data files, does a good job of structuring
+inorganic incentives; it offers free storage space to the sender as well as the
+recipient when the recipient signs up to become a Dropbox user. Thus, the
+perk for spreading the word about Dropbox is not a cash payment that
+
+
+would only serve to empty the company’s coffers, but rather an opportunity
+to use Dropbox’s service even more, thereby stimulating further growth and
+encouraging users to make ever greater use of the Dropbox platform.
+The value unit. This is the fundamental unit of virality—an embodiment
+of platform usage that can spread on an external network and demonstrate
+the platform’s value. But not every value unit that exists on a platform is
+spreadable. For example, the users of a business platform designed to
+enable the exchange of proprietary documents among company partners
+will not want to spread their confidential information the way Instagram
+users share their snapshots. So designing spreadable value units is a crucial
+step toward virality.
+A spreadable value unit may be one that helps to start an interaction on
+an external network, the way Instagram photos create conversations on
+Facebook among users intrigued by the images they’ve seen. Or it may
+create the opportunity to complete an incomplete interaction, the way an
+unanswered question on Quora demands social feedback in the form of an
+answer, or a fresh survey on Survey-Monkey invites responses. Making it
+easy for users to create and disseminate spreadable value units helps you
+build a platform that has high growth as well as high engagement.
+Of course, as the example of a business platform for exchanging
+confidential documents indicates, not every value unit is spreadable.
+Platforms that don’t lend themselves to the creation of spreadable value
+units are unlikely to go viral. Managers of such platforms will have to use
+other approaches to achieve growth.
+The external network. Many platforms grow on top of other networks.
+Instagram, Twitter, Zynga, Slide, and other platforms have achieved viral
+growth by leveraging Facebook as an underlying network. Airbnb spread on
+Craigslist; OpenTable spreads on email.
+However, leveraging an external network is not as simple as introducing
+a “Share on Facebook” button and waiting for users by the million to show
+up. External networks often introduce restrictions when more and more
+applications use them for growth—for example, Facebook has enforced
+limitations on the gaming apps that outside companies offer its users. In
+other cases, users overwhelmed by a constant flow of invitations sent by
+outside producers urging them to sample their goods or services become
+
+
+jaded over time and stop responding. To avoid this result, the managers of
+startup platforms need to be strategic about identifying the external
+networks they can use to build their growth and finding creative, value-
+adding ways to connect with their users.
+When LinkedIn was launched in 2003, most social networks gained
+traction by integrating with a new user’s Hotmail or Yahoo contact list and
+prompting him or her to send invites to the platform over email. Originally
+devised by Michael Birch (best known as cofounder of the short-lived
+social network Bebo), this simple hack helped generate growth for many
+early social networks. LinkedIn chose instead to engineer a more
+technologically challenging integration with Microsoft Outlook, the
+software that housed most of the business connections that LinkedIn wanted
+to access. The integration was time- and cost-intensive, but it helped
+LinkedIn establish itself as the premier social network for business.
+The recipient. When the user of a platform sends a value unit to a friend
+or acquaintance, the recipient will respond if he or she finds the value unit
+relevant, interesting, useful, entertaining, or otherwise valuable. When the
+value units are intriguing enough, the recipients spread them further,
+sometimes giving rise to new interactions on another network. Media
+companies like Upworthy and BuzzFeed have grown almost entirely on the
+strength of consumer-initiated viral spread.
+Unfortunately, since value units are created by users, managers of
+platforms have limited control over them. Instagram doesn’t select photos
+or retouch them to make them more attractive, YouTube doesn’t direct or
+edit user videos, and Facebook doesn’t curate member posts to eliminate
+boring ones. However, sometimes a platform can nudge users in directions
+that will make seeds more attractive to recipients. For example, Instagram
+provides photo editing tools to help users enhance the attractiveness of the
+images they post, and it encourages users to label their photos with hashtags
+that are specific and relevant—#vwbus for a photo of a Volkswagen van
+rather than the more generic #van or (worse yet) the self-explanatory
+#photo.11
+In addition, platform managers can connect the value unit to a call to
+action—a message that ensures the recipient recognizes the platform from
+which the value unit has been delivered and understands the opportunity to
+join. When the communications platform Hotmail first went viral, it affixed
+
+
+to the bottom of every email the message, “P.S. I love you. Get your FREE
+email at Hotmail.” Free email for consumers was a new and compelling
+offer at the time, and this simple message attracted thousands of user
+adoptions.
+Not every budding platform has an opportunity to achieve viral growth.
+But if it does, it can help turn slow but steady expansion into the kind of
+skyrocket growth that makes a platform into a national or global
+phenomenon with the potential to dominate its market for years to come.
+TAKEAWAYS FROM CHAPTER FIVE
+    One difference between platform businesses and traditional pipeline businesses is that, in
+the world of platforms, pull strategies designed to encourage virality are more important
+than the push strategies (such as advertising and public relations) used in conventional
+marketing.
+    Successful platforms use one of eight proven strategies for solving the chicken-or-egg
+problem: the follow-the-rabbit strategy; the piggyback strategy; the seeding strategy; the
+marquee strategy; the single-side strategy; the producer evangelism strategy; the big bang
+adoption strategy; and the micromarket strategy.
+    The speed of a platform’s expansion can be accelerated through viral growth. This depends
+on four key elements: the sender, the value unit, the external network, and the recipient.
+OceanofPDF.com
+
+
+6
+MONETIZATION
+Capturing the Value
+Created by Network Effects
+Not long ago, one of the authors of this book—Marshall Van Alstyne—
+was approached by a pair of company founders on their way to a meeting
+with a group of venture capitalists. They’d created a new platform business
+that, for the purposes of this story, we’ll give the fictitious name of Ad
+World. They were hoping to impress the assembled VCs with an astute
+business plan and thereby win a significant offer for funding.
+“Here’s the idea,” one of the founders explained to Marshall. “Our new
+platform Ad World will provide a listing service for firms to find ad
+agencies. We’ll make it easy for companies that are ready to begin new
+advertising campaigns to post requests for bids, and for ad agencies to post
+proposals and offers that companies can look at and respond to. It’s just like
+99designs, which lets graphic artists link up with consumers who want help
+with artistic projects, only in the B2B space instead of the B2C space.”
+“Okay,” Marshall said. “I get the idea. What’s your question?”
+“Here’s what we want to know,” the founder replied. “We’re pretty sure
+Ad World is going to provide value to our users and attract a fair amount of
+interest. But we’re wondering how to generate revenues from it. Should we
+charge the ad agencies to join the platform and put up their profiles? Should
+we charge the firms that are seeking services? Or should we charge for
+individual project listings? Or maybe for all three?”
+“And we need an answer fast,” interjected his partner. “We need to
+figure out our strategy so we can run the numbers and make our business

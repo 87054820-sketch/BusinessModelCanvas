@@ -1,0 +1,34 @@
+{
+  "chapter": "ch02-design",
+  "sourceFiles": { "en": "vpc-en/full.txt (search for design sections)", "zh": "06-2.-设计.txt" },
+  "concepts": [
+    { "name": "10 Prototyping Principles", "definition": "(1) Make it visual and tangible, (2) Embrace a beginner's mind, (3) Don't fall in love with first ideas — create alternatives, (4) Feel comfortable in a 'liquid state' of uncertainty, (5) Start with low fidelity, iterate to higher fidelity, (6) Expose early to criticism, not just praise, (7) Fail fast, forward — learn and improve quickly, (8) Use techniques from other creative disciplines, (9) Shape ideas with business model thinking, (10) Everything is a prototype — mindset shift." },
+    { "name": "Prototyping Levels", "definition": "Scale from low to high fidelity: (1) Napkin sketch — 1 min, one person; (2) Ad-lib — 10 min, formula-filling; (3) Value Proposition Canvas — 30 min, structured; (4) Representation — 1 hr, detailed visual; (5) MVP — weeks, testable." },
+    { "name": "Push vs Pull Innovation", "definition": "Push: technology or capability pushes a new solution into the market (invention-driven). Pull: customer need pulls a solution into existence (market-driven). Most successful innovations combine both — a capability looking for a real customer need, or a customer need that finds an enabling capability." },
+    { "name": "10 Characteristics of Successful Value Propositions", "definition": "(1) Embedded in great business models, (2) Focus on jobs, pains, and gains customers care about most, (3) Focus on unsatisfied jobs, unresolved pains, unrealized gains, (4) Target few jobs, pains, gains but do so extremely well, (5) Go beyond functional jobs to emotional and social jobs, (6) Align with how customers measure success, (7) Focus on jobs, pains, gains that a lot of people have or some will pay a lot for, (8) Differentiate from competition on jobs, pains, gains customers care about, (9) Outperform competition on at least one dimension, (10) Are difficult to copy." },
+    { "name": "6 Customer Understanding Techniques", "definition": "(1) Data Detective — existing data analysis, (2) Journalist — interviews with customers, (3) Anthropologist — observation in context, (4) Actor — role-playing as customer, (5) Co-creator — involving customers in design, (6) Scientist — experiments with customers." },
+    { "name": "Ad-lib Value Proposition", "definition": "A fill-in-the-blanks formula: 'Our (products/services) help (customer segment) who want to (jobs) by (pain reliever statements) and (gain creator statements), unlike (competitor alternative).'" }
+  ],
+  "arguments": [
+    { "claim": "Designing value propositions is a skill that improves with deliberate practice, not a talent you're born with", "evidence": "The book provides structured techniques (Ad-lib, prototyping levels, customer understanding methods) that anyone can learn. The techniques create a repeatable design process that replaces 'creative genius intuition' with systematic exploration." },
+    { "claim": "The fast feedback loop is more important than the initial quality of the idea", "evidence": "Low-fidelity prototypes (napkin sketches, ad-libs) are designed to seek criticism early, not praise. The goal is to find why an idea WON'T work as fast as possible, so you can pivot to one that will, rather than investing months in a single unvalidated concept." }
+  ],
+  "cases": [
+    { "name": "Azuri/Eight19: Solar for Rural Africa", "context": "Eight19 developed low-cost solar technology, but the business model was the innovation. Pay-as-you-go solar electricity for rural African households without grid access.", "illustrates": "How the Value Proposition Canvas was used in practice. The job was 'light my home at night,' the pain was 'spending money on kerosene that pollutes,' the gain was 'safe, clean, affordable light.' The business model (pay-as-you-go via mobile payments, not selling the panel outright) made the value proposition work.", "lesson": "Technology is often the easier part; finding a viable business model that makes the technology accessible to the target customer is the real challenge." }
+  ],
+  "terminology": [
+    { "term": "Earlyvangelist", "definition": "A Steve Blank term for customers who feel the problem acutely and are willing to buy an early, imperfect solution. Critical for early-stage validation." },
+    { "term": "Six Thinking Hats", "definition": "Edward de Bono's parallel thinking technique adapted for evaluating value propositions: White (facts), Red (emotions), Black (risks), Yellow (benefits), Green (creativity), Blue (process)." }
+  ],
+  "nuance": [
+    "Customer observation (Anthropologist technique) often reveals different behavior than what customers SAY in interviews (Journalist technique). Use both and cross-validate.",
+    "Avoid the 'I know what customers want' trap — every customer insight technique is designed to REPLACE assumptions with evidence."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["value-proposition-canvas", "business-model-canvas"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-canvas", "ch03-test"]
+  }
+}

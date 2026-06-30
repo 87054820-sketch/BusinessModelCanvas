@@ -1,0 +1,41 @@
+{
+  "chapter": "ch04-manage",
+  "sourceFiles": { "en": "02-BlandDavidJOste_2020_Experiment_TestingBusinessIdeas.txt" },
+  "concepts": [
+    { "name": "Decide: Persevere, Pivot, Kill", "definition": "After learning, the team must turn insights into action. Persevere means continue testing the same idea by testing the next critical hypothesis or a stronger version of the same one. Pivot means make a significant change to the idea, value proposition, or business model. Kill means abandon the idea because evidence shows it won't work or lacks profit potential." },
+    { "name": "Evidence-to-Action Decision Logic", "definition": "If evidence supports the hypothesis, test the next critical hypothesis or use a higher-fidelity experiment. If insight is unclear, continue testing. If evidence refutes the hypothesis, kill or pivot. If a new insight appears, choose among kill, pivot, or persevere based on what it implies." },
+    { "name": "Experiment Ceremonies", "definition": "A repeatable monthly operating rhythm for experimentation: weekly planning, daily standup, weekly learning, biweekly retrospective, and monthly deciding/stakeholder review. Each ceremony feeds the next, making experimentation a system rather than an event." },
+    { "name": "Experiment Flow", "definition": "Testing must be managed as flow: teams make hypotheses visible, limit work in progress, move experiments through design/run/learn/decide states, and prevent activity from masquerading as learning." },
+    { "name": "Testing Culture and Leadership", "definition": "A culture where evidence beats opinion, learning is rewarded, and leaders protect time, budgets, and customer access. Leaders must ask questions, avoid punishing invalidated ideas, and use stakeholder reviews for informed investment decisions." },
+    { "name": "Ethics and Experiment Pitfalls", "definition": "Experiments can become deceptive or harmful if teams overpromise, fake unavailable products, or manipulate customers without safeguards. Teams must avoid brand damage and follow the spirit of 'don't be evil' when running tests like smoke tests or vaporware." }
+  ],
+  "arguments": [
+    { "claim": "Learning faster is not enough; learning has an expiration date and must be turned into action.", "evidence": "The source defines action as next steps to make progress with testing, informed decisions based on insights, and decisions to abandon, change, or continue the business idea. Markets and technology move so fast that insights can expire within months, weeks, or days." },
+    { "claim": "Experimentation becomes reliable only when embedded into operating ceremonies.", "evidence": "The book recommends a monthly system of 4 weekly planning meetings, 20 daily standups, 4 weekly learning meetings, biweekly retros, and one monthly deciding meeting. Each has attendees, agenda, and time box." },
+    { "claim": "A testing culture is built by what leaders reward, not by saying the word experimentation.", "evidence": "If leaders punish negative evidence, teams will hide it or design tests that confirm their beliefs. If leaders fund learning and ask for evidence, experimentation becomes normal work." }
+  ],
+  "cases": [
+    { "name": "Monthly experiment ceremony system", "context": "A team runs several experiments over a month rather than one-off tests.", "illustrates": "Weekly planning sets learning goals and priorities, daily standups surface blockers, weekly learning synthesizes evidence, retros improve the process, and monthly deciding aligns stakeholders on investment choices.", "lesson": "Cadence converts experimentation from heroic effort into organizational capability." },
+    { "name": "Science-kit decision cycle", "context": "The team combines interview, search trend, and concierge evidence around the curated science-kit idea.", "illustrates": "Evidence may support continuing, reveal unclear gaps, refute assumptions, or generate new insights; each condition implies a different action.", "lesson": "Do not treat all learning as 'keep going' — the right action may be stronger testing, a pivot, or killing the idea." }
+  ],
+  "logicChains": [
+    { "description": "Evidence supports → test next critical hypothesis or same hypothesis with higher fidelity; unclear insight → continue testing; evidence refutes → pivot or kill; new insight → decide whether it opens a better path, requires retesting, or invalidates the opportunity.", "sourceHint": "Decide section, evidence/insight/action flow chart." },
+    { "description": "Weekly planning → daily standups → weekly learning → biweekly retros → monthly deciding. The ceremonies form a system where planning generates experiments, standups unblock, learning creates insights, retros improve execution, and deciding allocates support.", "sourceHint": "Experiment Ceremonies agenda table." }
+  ],
+  "terminology": [
+    { "term": "Persevere", "definition": "Continue testing an idea based on evidence and insights, either by moving to the next important hypothesis or by testing the same hypothesis with stronger evidence." },
+    { "term": "Pivot", "definition": "Make a significant change to one or more elements of the idea, value proposition, or business model; because the trajectory changes, previously collected evidence may become irrelevant and must be retested." },
+    { "term": "Kill", "definition": "Stop pursuing an idea based on evidence and insights showing that it will not work in reality or that profit potential is insufficient." },
+    { "term": "Experiment ceremonies", "definition": "Time-boxed meetings for planning, standup, learning, retrospective, and deciding that keep experiments moving and decisions evidence-based." }
+  ],
+  "nuance": [
+    "A pivot is not a small edit; it is a significant trajectory change and often invalidates earlier evidence.",
+    "If an insight is unclear, the correct decision is often more or stronger testing, not a forced yes/no decision.",
+    "Testing trivial assumptions while ignoring the risky ones creates the appearance of rigor without reducing meaningful risk."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["portfolio-map", "three-horizons-map"],
+    "relatedStrategyFrameworkSlugs": ["business-model-portfolio-management", "mckinsey-three-horizons"],
+    "relatedChapters": ["ch01-design", "ch03-evidence"]
+  }
+}

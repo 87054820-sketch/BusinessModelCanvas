@@ -1,0 +1,30 @@
+{
+  "chapter": "ch05-process",
+  "sourceFiles": { "en": "08-Process.txt", "zh": "10-流程.txt" },
+  "concepts": [
+    { "name": "Five-Phase Business Model Design Process", "definition": "A structured, iterative framework for business model innovation: (1) Mobilize — prepare for a successful project; (2) Understand — research and analyze the elements needed for the effort; (3) Design — generate and test viable options, select the best; (4) Implement — execute the model in the real world; (5) Manage — adapt and adjust the model in response to market evolution." },
+    { "name": "Mobilize", "definition": "Phase 1: Assemble all the elements for a successful business model design project. Activities: frame project objectives, test initial ideas, plan, assemble team. Key success factors: right people, experience, and knowledge. Danger: overestimating the value of the initial idea." },
+    { "name": "Understand", "definition": "Phase 2: Research and analyze the elements needed for the business model design effort. Activities: scan environment, study potential customers, interview experts, study previous attempts, collect ideas and opinions. Key success factor: deep understanding beyond superficial data. Danger: over-researching and never starting to design." },
+    { "name": "Design", "definition": "Phase 3: Adapt and modify the business model in response to an ongoing market evolution. Activities: generate many model concepts (brainstorming), prototype, test, select. Key success factor: avoiding premature commitment to one idea. Danger: watering down bold ideas." },
+    { "name": "Implement", "definition": "Phase 4: Execute the business model design in the real world. Activities: communicate and involve, execute. Key success factor: generating buy-in from the organization. Danger: letting momentum fade." },
+    { "name": "Manage", "definition": "Phase 5: Set up the management structures to continuously monitor, evaluate, and adapt or transform the business model. Activities: scan environment, assess business model continuously, rejuvenate or rethink. Key success factor: long-term perspective. Danger: becoming a victim of your own success." }
+  ],
+  "arguments": [
+    { "claim": "Business model innovation is a continuous cycle, not a one-time project", "evidence": "The five-phase process is deliberately circular. After the Manage phase, new understanding from the market feeds back to new design iterations. Companies that treat the Canvas as a one-time exercise (fill it once, frame it) miss the point — it's a living map that should evolve as the business and market evolve." },
+    { "claim": "Each phase has a distinct primary danger, and knowing the danger is half the prevention", "evidence": "Mobilize: overvaluing the initial idea. Understand: analysis paralysis. Design: watering down bold ideas to make them 'acceptable.' Implement: momentum fading after the initial excitement. Manage: becoming a victim of your own success by not adapting." }
+  ],
+  "logicChains": [
+    { "description": "Mobilize (assemble team + frame objective) → Understand (research customers + environment + prior attempts) → Design (brainstorm → prototype → test → select) → Implement (communicate → execute → measure) → Manage (monitor → evaluate → adapt → back to Design when needed)", "sourceHint": "Chapter 5 of the book lays this out as a distinct process framework with detailed activities per phase" }
+  ],
+  "nuance": [
+    "The process is not linear in practice. You may go back to Understand from Design, or from Implement back to Design. The phases are mindsets, not rigid stage gates.",
+    "Good process doesn't guarantee good outcomes — but bad process (skipping customer understanding, not prototyping, committing to the first idea) almost guarantees mediocre outcomes."
+  ],
+  "crossReferences": {
+    "relatedCanvasDefIds": ["business-model-canvas"],
+    "relatedCaseSlugs": [],
+    "relatedPatternSlugs": [],
+    "relatedStrategyFrameworkSlugs": [],
+    "relatedChapters": ["ch01-canvas", "ch03-design"]
+  }
+}
