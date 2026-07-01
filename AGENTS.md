@@ -11,6 +11,13 @@
 
 `start.sh` is idempotent — safe to re-run. It kills anything on :4000 / :5173 first.
 
+**Dev service restart notes:**
+- Prefer `./start.sh` for a full local restart and `./stop.sh` for shutdown.
+- If only the API needs a manual restart, first stop the process on `:4000`, then run the server package script or its exact entry: `pnpm --filter @pingarden/server run dev` / `tsx watch src/server.ts`.
+- The server entry is `apps/server/src/server.ts`; there is no `src/index.ts`.
+- If only the web UI needs a manual restart, use `pnpm --filter @pingarden/web run dev`.
+- After manual restarts, verify `http://localhost:4000/health` and `http://localhost:5173` instead of assuming the process came up.
+
 **URLs once started:**
 - Web SPA: http://localhost:5173
 - API: http://localhost:4000

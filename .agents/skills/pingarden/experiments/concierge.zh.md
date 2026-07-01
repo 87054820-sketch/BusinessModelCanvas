@@ -1,0 +1,52 @@
+# 贴身管家 (Concierge)
+
+> 对一小群客户完全手工交付价值。学习最多、基础设施最少。在产品都还不存在的时候,验证需求性 + 可营性 + 价值单元。
+
+## Slug
+
+`concierge` — referenced by AI agents matching a riskiest assumption to a candidate experiment. Cross-reference into canvases is via `experiment.appliesToCanvases[]`.
+
+## 速览
+
+| | |
+| --- | --- |
+| **阶段** | 验证 (Validation) |
+| **风险类别** | 需求性 (Desirability) · 可营性 (Viability) |
+| **证据强度** | 强 (strong) |
+| **成本** | 中等 (medium) |
+| **准备时间** | 天级 |
+| **执行时间** | 周级 |
+| **能力要求** | `domain-expertise` · `customer-success` · `manual-operations` |
+| **关联画布** | `value-proposition-canvas` · `business-model-canvas` · `customer-journey` |
+
+# 贴身管家 — AI Agent 速查
+
+**什么时候推荐。** 最大的未知是 *结果* 值不值得付费、独立于技术。或 Smoke Test 通过但怀疑留存跟不上。或领域专长在用户脑里、问题是 "能不能产品化"。
+
+**证据强度。** 强(相对其他便宜实验)。同时验证需求性 + 可营性 + 结果可行性。
+
+**样本。** 3-7 个 **付费** 客户(免费失效可营性),跑 4-8 周。
+
+**准备 / 执行。** 天(offer + ops 手册)/ 周。
+
+**能力。** `domain-expertise`、`customer-success`、`manual-operations`。
+
+**决策树。**
+
+- 产品依赖人类做不到的自动化? → 不推荐。垂直切片。
+- 免费试用? → 顶回去;收一点象征费用。
+- 团队没有领域深度? → Concierge 会失败 —— 改 Wizard of Oz(对领域依赖低)。
+- 想扩到 20+ 客户? → 顶回去;那是早期运营测试,不是 Concierge。
+
+**反模式。**
+
+- 免费 Concierge ≠ 可营性数据。
+- 扩到 7+ —— 运营崩、学习被淹。
+- 跳过"自动化之后"的单位经济学。
+
+**跨画布。** 验证 `value-proposition-canvas`(交付价值、付费意愿)、`business-model-canvas`(自动化后的收入流 + 成本结构)、`customer-journey`(完整交付周期含转介绍)。
+
+## 出处
+
+- Bland & Osterwalder · Testing Business Ideas · Wiley · 2019 · Validation / 4-10 Concierge
+- Eric Ries · The Lean Startup · Crown Business · 2011
