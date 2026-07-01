@@ -74,18 +74,18 @@ export const api = {
   },
 
   // canvases
-  listCanvases(displayName: string, opts?: { projectId?: string }): Promise<CanvasMeta[]> {
+  listCanvases(displayName?: string, opts?: { projectId?: string }): Promise<CanvasMeta[]> {
     const qs = opts?.projectId ? `?projectId=${encodeURIComponent(opts.projectId)}` : '';
     return fetchJson<CanvasMeta[]>(`${BASE}/canvases${qs}`, {
       headers: authHeaders(displayName),
     });
   },
-  getCanvas(id: string, displayName: string): Promise<CanvasMeta> {
+  getCanvas(id: string, displayName?: string): Promise<CanvasMeta> {
     return fetchJson<CanvasMeta>(`${BASE}/canvases/${id}`, {
       headers: authHeaders(displayName),
     });
   },
-  createCanvas(input: CreateCanvasInput, displayName: string): Promise<CanvasMeta> {
+  createCanvas(input: CreateCanvasInput, displayName?: string): Promise<CanvasMeta> {
     return fetchJson<CanvasMeta>(`${BASE}/canvases`, {
       method: 'POST',
       headers: authHeadersJson(displayName),
@@ -95,7 +95,7 @@ export const api = {
   updateCanvas(
     id: string,
     patch: UpdateCanvasInput,
-    displayName: string,
+    displayName?: string,
   ): Promise<CanvasMeta> {
     return fetchJson<CanvasMeta>(`${BASE}/canvases/${id}`, {
       method: 'PATCH',
@@ -103,7 +103,7 @@ export const api = {
       body: JSON.stringify(patch),
     });
   },
-  deleteCanvas(id: string, displayName: string): Promise<void> {
+  deleteCanvas(id: string, displayName?: string): Promise<void> {
     return fetchVoid(`${BASE}/canvases/${id}`, {
       method: 'DELETE',
       headers: authHeaders(displayName),
@@ -127,7 +127,7 @@ export const api = {
       height?: number;
       authorName?: string;
     }>,
-    displayName: string,
+    displayName?: string,
   ): Promise<{ replaced: number; ids: string[] }> {
     return fetchJson<{ replaced: number; ids: string[] }>(
       `${BASE}/canvases/${canvasId}/stickies/bulk`,

@@ -14,7 +14,7 @@ import { storiesApi } from '../api/stories';
 import { getSourceCoverageIssues } from '../copilot/projectDraft';
 import { rewriteStoryCanvasDirectivesToCanvasIds, type CopilotCanvasReference } from '../copilot/storyCanvasReferences';
 import type { CopilotUpdateBaseline } from '../copilot/useConversation';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
 
 type ApplyState = 'idle' | 'applying' | 'applied' | 'error';
 type ApplyReportItem = { index: number; label: string; status: 'success' | 'error'; message?: string };
@@ -34,7 +34,8 @@ export function CopilotProjectUpdateDraftCard({
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { identity } = useIdentity();
+  const { identity, user, authenticated } = useAuthSession();
+  const displayName = identity?.displayName ?? user?.displayName ?? '';
   const [state, setState] = useState<ApplyState>('idle');
   const [error, setError] = useState<string | null>(null);
   const [applyReport, setApplyReport] = useState<ApplyReportItem[]>([]);
@@ -59,7 +60,7 @@ export function CopilotProjectUpdateDraftCard({
   const stickyCount = canvasOps.reduce((sum, op) => sum + ('stickies' in op ? op.stickies.length : 0), 0);
 
   async function applyDraft() {
-    if (!identity || !ready || state === 'applying') return;
+    if (!authenticated || !ready || state === 'applying') return;
     setState('applying');
     setError(null);
     setApplyReport([]);
@@ -76,14 +77,14 @@ export function CopilotProjectUpdateDraftCard({
     }
     const report: ApplyReportItem[] = [];
     try {
-      const canvasRefs = await getProjectCanvasReferences(targetProjectId, identity.displayName);
+      const canvasRefs = await getProjectCanvasReferences(targetProjectId, displayName);
       for (const [index, operation] of draft.operations.entries()) {
         try {
           const label = await applyOperation(
             operation,
             targetProjectId,
             lang,
-            identity.displayName,
+            displayName,
             canvasRefs,
             updateBaseline,
           );
@@ -187,7 +188,7 @@ export function CopilotProjectUpdateDraftCard({
 
         <button
           type="button"
-          disabled={!ready || !identity || state === 'applying' || state === 'applied'}
+          disabled={!ready || !authenticated || state === 'applying' || state === 'applied'}
           onClick={applyDraft}
           className="w-full rounded-xl bg-gray-950 px-3 py-2 text-[12px] font-medium text-white shadow-sm transition hover:bg-black disabled:cursor-not-allowed disabled:opacity-50"
         >

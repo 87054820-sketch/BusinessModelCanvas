@@ -1,26 +1,24 @@
 /**
- * Shared header builders for the X-Display-Name audit trail seam.
- *
- * Why encodeURIComponent? HTTP header values must be ISO-8859-1
- * (Latin-1). Chromium's fetch throws TypeError when a value contains
- * bytes outside that range, which silently broke every API call
- * once a user typed a non-ASCII display name (e.g. "张三").
- *
- * Encoding here + matching decode in the server's identity helper
- * (apps/server/src/http/identity.ts) keeps the wire format
- * Latin-1-safe while preserving the original Unicode string.
+ * Shared header builders for the WeChat session seam.
  *
  * Bodyless GET/DELETE must NOT set Content-Type — Fastify's JSON
  * parser rejects empty bodies with FST_ERR_CTP_EMPTY_JSON_BODY when
  * the header is present.
  */
-export function authHeaders(displayName: string): HeadersInit {
-  return { 'X-Display-Name': encodeURIComponent(displayName) };
+import { getStoredAuthSession } from '../identity/useIdentity';
+
+export function authHeaders(_displayName?: string): Record<string, string> {
+  const headers: Record<string, string> = {};
+  const session = getStoredAuthSession();
+  if (session?.accessToken) {
+    headers.Authorization = `Bearer ${session.accessToken}`;
+  }
+  return headers;
 }
 
-export function authHeadersJson(displayName: string): HeadersInit {
+export function authHeadersJson(displayName?: string): Record<string, string> {
   return {
-    'X-Display-Name': encodeURIComponent(displayName),
+    ...authHeaders(displayName),
     'Content-Type': 'application/json',
   };
 }

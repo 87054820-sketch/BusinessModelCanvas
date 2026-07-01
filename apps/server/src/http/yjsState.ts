@@ -2,7 +2,7 @@ import type { FastifyInstance } from 'fastify';
 import * as Y from 'yjs';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
-import { getIdentity } from './identity.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
 import {
   getXAxisItemsRoot,
   makeXAxisItemYMap,
@@ -26,14 +26,16 @@ export function registerYjsStateRoutes(
   app: FastifyInstance,
   storage: CanvasStorage,
   defs: LoadedCanvasDef[],
+  access: ProjectAccessService,
 ) {
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
 
   app.get<{ Params: { id: string } }>(
     '/canvases/:id/state',
     async (req, reply) => {
-      const meta = await storage.getCanvas(req.params.id);
-      if (!meta) return reply.code(404).send({ error: 'Canvas not found' });
+      const result = await access.ensureCanvas(req, reply, req.params.id, 'view');
+      if (!result) return;
+      const meta = result.canvas;
 
       const bundle = defsById.get(meta.defId);
       const factorsDefault = bundle?.def.chart?.factorsDefault ?? [];
@@ -45,7 +47,7 @@ export function registerYjsStateRoutes(
       //   - the persisted state is empty OR doesn't have any xAxisItems.
       // Seeding is idempotent — once any item exists we leave the array
       // alone so user edits aren't overwritten.
-      if (factorsDefault.length > 0) {
+      if (factorsDefault.length > 0 && result.capabilities.canEdit) {
         const seeded = await seedFactorsIfEmpty(state, factorsDefault);
         if (seeded) {
           await storage.saveYDocState(req.params.id, seeded);
@@ -66,16 +68,17 @@ export function registerYjsStateRoutes(
   app.put<{ Params: { id: string }; Body: Buffer }>(
     '/canvases/:id/state',
     async (req, reply) => {
-      const meta = await storage.getCanvas(req.params.id);
-      if (!meta) return reply.code(404).send({ error: 'Canvas not found' });
+      const result = await access.ensureCanvas(req, reply, req.params.id, 'edit');
+      if (!result?.identity) return;
       const body = req.body;
       if (!Buffer.isBuffer(body) || body.byteLength === 0) {
         return reply.code(400).send({ error: 'Empty body' });
       }
-      const identity = getIdentity(req);
+      const identity = result.identity;
       await storage.saveYDocState(req.params.id, new Uint8Array(body));
       await storage.updateCanvasMeta(req.params.id, {
         updatedBy: identity.displayName,
+        updatedByUserId: identity.userId,
       });
       return reply.code(204).send();
     },

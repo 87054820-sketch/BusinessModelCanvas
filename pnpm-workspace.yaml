@@ -2,3 +2,6 @@ packages:
   - 'apps/*'
   - 'packages/*'
   - '!apps/desktop/build'
+allowBuilds:
+  electron: set this to true or false
+  esbuild: set this to true or false

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useSyncExternalStore } from 'react';
+import type { CopilotModelId, CopilotProviderId } from '../api/copilot';
 
 export interface ConversationImageAttachment {
   id: string;
@@ -20,10 +21,10 @@ export interface ConversationMessage {
   role: 'user' | 'assistant';
   content: string;
   ts: string;
-  /** Identifier of the AI that produced this message. After R2.6 there
-   *  is only one (`'kimi'`), but we keep the field so future modes
-   *  (Claude Code fallback, etc.) can mark provenance per turn. */
-  providerId?: 'kimi';
+  /** User-facing model profile that produced this message. */
+  modelId?: CopilotModelId;
+  /** Identifier of the AI provider that produced this message. */
+  providerId?: CopilotProviderId;
   model?: string;
   /**
    * The attached case/pattern (if any) the message was sent with. Each

@@ -9,7 +9,8 @@ import type {
   Story,
 } from '@pingarden/shared';
 import type { FederatedStorage } from '../storage/FederatedStorage.js';
-import { getIdentity } from './identity.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
+import { requireIdentity, type RequestIdentity } from './identity.js';
 
 /**
  * Routes for the read-only case library. Backed by `BundleStorage` for
@@ -37,6 +38,7 @@ import { getIdentity } from './identity.js';
 export function registerLibraryRoutes(
   app: FastifyInstance,
   storage: FederatedStorage,
+  access: ProjectAccessService,
 ) {
   const bundle = storage.bundleStorage;
 
@@ -54,6 +56,7 @@ export function registerLibraryRoutes(
   app.post<{
     Params: { slug: string };
     Querystring: { lang?: string };
+    Body: { teamId?: string } | undefined;
   }>(
     '/library/cases/:slug/fork',
     async (req, reply) => {
@@ -61,9 +64,21 @@ export function registerLibraryRoutes(
       const caseEntry = bundle.getCaseBySlug(slug);
       if (!caseEntry) return reply.code(404).send({ error: 'Case not found' });
 
-      const identity = getIdentity(req);
+      const identity = requireIdentity(req, reply);
+      if (!identity) return;
       const lang = parseLang(req.query.lang);
-      const result = await forkCase(slug, identity.displayName, storage, lang);
+      const teamId = typeof req.body?.teamId === 'string' ? req.body.teamId : undefined;
+      if (teamId) {
+        const teams = await access.store.listTeamsForUser(identity.userId);
+        if (!teams.some((team) => team.id === teamId)) {
+          return reply.code(403).send({
+            error: 'Forbidden',
+            code: 'TEAM_ACCESS_DENIED',
+            message: 'You do not have access to this team.',
+          });
+        }
+      }
+      const result = await forkCase(slug, identity, storage, access, lang, teamId);
       return reply.code(201).send(result);
     },
   );
@@ -177,9 +192,11 @@ async function loadCaseDetail(
  */
 async function forkCase(
   slug: string,
-  displayName: string,
+  identity: RequestIdentity,
   storage: FederatedStorage,
+  access: ProjectAccessService,
   lang: Lang | undefined,
+  teamId: string | undefined,
 ): Promise<CaseForkResult> {
   const bundle = storage.bundleStorage;
   const caseEntry = bundle.getCaseBySlug(slug);
@@ -199,12 +216,18 @@ async function forkCase(
     id: newProjectId,
     name: forkedName,
     ...(srcProject.description ? { description: srcProject.description } : {}),
+    projectType: teamId ? 'team' : 'personal',
+    ...(teamId ? { teamId } : { ownerUserId: identity.userId }),
+    originCaseSlug: slug,
     createdAt: now,
-    createdBy: displayName,
+    createdBy: identity.displayName,
+    createdByUserId: identity.userId,
     updatedAt: now,
-    updatedBy: displayName,
+    updatedBy: identity.displayName,
+    updatedByUserId: identity.userId,
   };
   await storage.createProject(newProject);
+  await access.seedOwner(newProject, identity);
 
   // 2. Canvases — copy meta + binary Yjs state. Sort by id so the
   //    response's `canvasIds[]` index is deterministic per fork run.
@@ -232,9 +255,11 @@ async function forkCase(
       id: newCanvasId,
       projectId: newProjectId,
       createdAt: now,
-      createdBy: displayName,
+      createdBy: identity.displayName,
+      createdByUserId: identity.userId,
       updatedAt: now,
-      updatedBy: displayName,
+      updatedBy: identity.displayName,
+      updatedByUserId: identity.userId,
       // `variant` (if any) carries through unchanged — it's case-content
       // semantics ("Maerki Baumann variant"), not user-editable identity.
     };
@@ -274,9 +299,11 @@ async function forkCase(
       projectId: newProjectId,
       content: rewrittenContent,
       createdAt: now,
-      createdBy: displayName,
+      createdBy: identity.displayName,
+      createdByUserId: identity.userId,
       updatedAt: now,
-      updatedBy: displayName,
+      updatedBy: identity.displayName,
+      updatedByUserId: identity.userId,
     };
     await storage.createStory(newStory);
     newStoryIds.push(newStoryId);

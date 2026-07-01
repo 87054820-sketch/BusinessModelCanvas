@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import type { CanvasMeta, Lang } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { projectsApi } from '../api/projects';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
 import { CanvasThumb } from '../canvas/CanvasThumb';
 import { TemplatePreviewModal } from '../components/TemplatePreviewModal';
 import type { ProjectWithCanvases } from '../components/ProjectPicker';
@@ -16,13 +16,12 @@ import { stateWithFrom } from '../navigation/useSmartBack';
  *   2. Templates (full-bleed horizontal scroll strip)
  *   3. Footer
  *
- * The primary CTAs route to strategy-project creation, the Strategy Library,
- * and the user's existing projects. Template browsing stays in the visible
- * strip below instead of duplicating a scroll button in the hero.
+ * The home CTAs stay intentionally narrow: create a new project or browse
+ * the official library. Personal/team project navigation lives in the header.
  */
 export function ProjectListPage() {
   const { t, i18n } = useTranslation();
-  const { identity } = useIdentity();
+  const { identity, authenticated } = useAuthSession();
   const navigate = useNavigate();
   const location = useLocation();
   const [items, setItems] = useState<ProjectWithCanvases[] | null>(null);
@@ -31,33 +30,47 @@ export function ProjectListPage() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   async function load() {
-    if (!identity) return;
-    const [projects, all, allDefs] = await Promise.all([
-      projectsApi.list(identity.displayName),
-      api.listCanvases(identity.displayName),
-      api.listDefs(),
-    ]);
-    const byProject = new Map<string, CanvasMeta[]>();
-    for (const c of all) {
-      const arr = byProject.get(c.projectId) ?? [];
-      arr.push(c);
-      byProject.set(c.projectId, arr);
+    let allDefs: CanvasDefSummary[] = [];
+    try {
+      allDefs = await api.listDefs();
+    } catch (err) {
+      // Keep the home page usable even when the API is still starting.
+      console.warn('Failed to load canvas definitions for home page:', err);
     }
-    for (const arr of byProject.values()) {
-      arr.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
-    }
-    setItems(
-      projects.map((p) => ({ ...p, canvases: byProject.get(p.id) ?? [] })),
-    );
     setDefs(allDefs);
+    if (!authenticated) {
+      setItems([]);
+      return;
+    }
+    try {
+      const [projects, all] = await Promise.all([
+        projectsApi.list(),
+        api.listCanvases(),
+      ]);
+      const byProject = new Map<string, CanvasMeta[]>();
+      for (const c of all) {
+        const arr = byProject.get(c.projectId) ?? [];
+        arr.push(c);
+        byProject.set(c.projectId, arr);
+      }
+      for (const arr of byProject.values()) {
+        arr.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+      }
+      setItems(
+        projects.map((p) => ({ ...p, canvases: byProject.get(p.id) ?? [] })),
+      );
+    } catch (err) {
+      // A bad/expired session should not blank the public home page.
+      console.warn('Failed to load signed-in home page projects:', err);
+      setItems([]);
+    }
   }
 
   useEffect(() => {
     load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [identity]);
+  }, [authenticated, identity?.displayName]);
 
-  if (!identity) return null;
   const lang = (i18n.language as Lang) ?? 'en';
 
   function scrollTemplates(dir: 'left' | 'right') {
@@ -188,6 +201,7 @@ function CenterState({
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const subtitle = t('home.welcomeSubtitle');
   const poemLines = splitByPunctuation(subtitle);
   // `items` is no longer used here — both opening an existing project and
@@ -257,23 +271,16 @@ function CenterState({
         <button
           type="button"
           onClick={() => navigate('/p/new', { state: stateWithFrom(location) })}
-          className="brand-primary-button rounded-xl px-7 py-3.5 text-base font-semibold transition-all active:scale-[0.98]"
+          className="min-w-36 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50 active:scale-[0.98]"
         >
           {t('home.createBlankInstead')}
         </button>
         <button
           type="button"
-          onClick={() => navigate('/library')}
-          className="rounded-xl border border-gray-200 bg-white px-7 py-3.5 text-base font-semibold text-gray-900 transition-all hover:border-gray-300 hover:bg-gray-50 active:scale-[0.98]"
+          onClick={() => navigate('/library', { state: stateWithFrom(location) })}
+          className="min-w-36 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-semibold text-gray-900 transition hover:border-gray-300 hover:bg-gray-50 active:scale-[0.98]"
         >
           {t('home.browseLibrary')}
-        </button>
-        <button
-          type="button"
-          onClick={() => navigate('/projects', { state: stateWithFrom(location) })}
-          className="rounded-xl border border-gray-200 bg-white px-7 py-3.5 text-base font-semibold text-gray-900 transition-all hover:border-gray-300 hover:bg-gray-50 active:scale-[0.98]"
-        >
-          {t('home.myProjects')}
         </button>
       </div>
     </div>

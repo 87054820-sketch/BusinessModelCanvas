@@ -1,6 +1,6 @@
 import { streamKimiChat } from './kimiCliAdapter.js';
 import { resolveKimiBinary, readKimiVersion, KimiBinaryNotFoundError } from './kimiBinaryResolver.js';
-import { writeConfig as writeKimiConfig, clearConfig as clearKimiConfig } from './kimiConfig.js';
+import { clearConfig as clearKimiConfig } from './kimiConfig.js';
 import type { CopilotAiProvider, CopilotAiProviderHealth, CopilotAiStreamInput } from './aiProvider.js';
 
 const MODEL = 'kimi-for-coding';
@@ -12,6 +12,7 @@ export class KimiCliProvider implements CopilotAiProvider {
       const version = readKimiVersion(bin);
       return {
         provider: 'kimi-cli',
+        modelId: 'kimi',
         available: true,
         ...(version ? { version } : {}),
         model: MODEL,
@@ -21,6 +22,7 @@ export class KimiCliProvider implements CopilotAiProvider {
     } catch {
       return {
         provider: 'kimi-cli',
+        modelId: 'kimi',
         available: false,
         model: MODEL,
         requiresApiKey: true,
@@ -31,16 +33,8 @@ export class KimiCliProvider implements CopilotAiProvider {
   }
 
   async testKey(apiKey: string): Promise<{ ok: boolean; message?: string }> {
-    try {
-      await writeKimiConfig(apiKey);
-    } catch (err) {
-      return {
-        ok: false,
-        message: err instanceof Error ? err.message : 'Failed to write Kimi config',
-      };
-    }
-
     const probe = streamKimiChat({
+      apiKey,
       systemPromptText: 'Reply with exactly the word "pong".',
       conversation: [],
       latestUserMsg: 'ping',
@@ -77,14 +71,6 @@ export class KimiCliProvider implements CopilotAiProvider {
     });
 
     try {
-      await writeKimiConfig(input.apiKey);
-      input.metrics?.({ name: 'cliConfigWritten', atMs: Date.now() });
-    } catch (err) {
-      yield { error: err instanceof Error ? err.message : 'Failed to write Kimi config' };
-      return;
-    }
-
-    try {
       resolveKimiBinary();
       input.metrics?.({ name: 'cliBinaryResolved', atMs: Date.now() });
     } catch (err) {
@@ -96,6 +82,7 @@ export class KimiCliProvider implements CopilotAiProvider {
     }
 
     yield* streamKimiChat({
+      apiKey: input.apiKey,
       systemPromptText: input.systemPromptText,
       conversation: input.conversation,
       latestUserMsg: input.latestUserMsg,

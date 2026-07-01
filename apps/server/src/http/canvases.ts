@@ -5,7 +5,8 @@ import type { CanvasMeta, Lang } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
 import { BundleReadOnlyError } from '../storage/errors.js';
-import { getIdentity } from './identity.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
+import { getOptionalIdentity } from './identity.js';
 
 const ContentDatePrecision = z.enum(['year', 'month', 'day']);
 const contentDate = z.string().regex(/^\d{4}(-\d{2}){0,2}$/).optional();
@@ -32,22 +33,29 @@ export function registerCanvasRoutes(
   app: FastifyInstance,
   storage: CanvasStorage,
   defs: LoadedCanvasDef[],
+  access: ProjectAccessService,
 ) {
   const knownDefIds = new Set(defs.map((d) => d.def.id));
 
   // List canvases, optionally filtered by ?projectId=…
   app.get<{ Querystring: { projectId?: string } }>(
     '/canvases',
-    async (req) =>
-      storage.listCanvases(
-        req.query.projectId ? { projectId: req.query.projectId } : undefined,
-      ),
+    async (req, reply) => {
+      if (req.query.projectId) {
+        const result = await access.ensureProject(req, reply, req.query.projectId, 'view');
+        if (!result) return;
+        return storage.listCanvases({ projectId: req.query.projectId });
+      }
+      const projects = await access.listAccessibleProjects(getOptionalIdentity(req));
+      const lists = await Promise.all(projects.map((p) => storage.listCanvases({ projectId: p.id })));
+      return lists.flat();
+    },
   );
 
   app.get<{ Params: { id: string } }>('/canvases/:id', async (req, reply) => {
-    const canvas = await storage.getCanvas(req.params.id);
-    if (!canvas) return reply.code(404).send({ error: 'Canvas not found' });
-    return canvas;
+    const result = await access.ensureCanvas(req, reply, req.params.id, 'view');
+    if (!result) return;
+    return result.canvas;
   });
 
   app.post('/canvases', async (req, reply) => {
@@ -55,13 +63,11 @@ export function registerCanvasRoutes(
     if (!knownDefIds.has(input.defId)) {
       return reply.code(400).send({ error: `Unknown canvas def: ${input.defId}` });
     }
-    const project = await storage.getProject(input.projectId);
-    if (!project) {
-      return reply.code(400).send({ error: `Unknown project: ${input.projectId}` });
-    }
+    const projectAccess = await access.ensureProject(req, reply, input.projectId, 'edit');
+    if (!projectAccess?.identity) return;
     const id = randomUUID();
     const now = new Date().toISOString();
-    const identity = getIdentity(req);
+    const identity = projectAccess.identity;
     const meta: CanvasMeta = {
       id,
       projectId: input.projectId,
@@ -73,24 +79,30 @@ export function registerCanvasRoutes(
       ...(input.contentDateLabel ? { contentDateLabel: input.contentDateLabel } : {}),
       createdAt: now,
       createdBy: identity.displayName,
+      createdByUserId: identity.userId,
       updatedAt: now,
       updatedBy: identity.displayName,
+      updatedByUserId: identity.userId,
     };
     await storage.createCanvas(meta);
     // Touch the project so it sorts to the top of recent.
     await storage.updateProject(input.projectId, {
       updatedBy: identity.displayName,
+      updatedByUserId: identity.userId,
     });
     return reply.code(201).send(meta);
   });
 
   app.patch<{ Params: { id: string } }>('/canvases/:id', async (req, reply) => {
     const patch = UpdateInput.parse(req.body);
-    const identity = getIdentity(req);
+    const result = await access.ensureCanvas(req, reply, req.params.id, 'edit');
+    if (!result?.identity) return;
+    const identity = result.identity;
     try {
       const updated = await storage.updateCanvasMeta(req.params.id, {
         ...patch,
         updatedBy: identity.displayName,
+        updatedByUserId: identity.userId,
       });
       return updated;
     } catch (err) {
@@ -102,6 +114,8 @@ export function registerCanvasRoutes(
   });
 
   app.delete<{ Params: { id: string } }>('/canvases/:id', async (req, reply) => {
+    const result = await access.ensureCanvas(req, reply, req.params.id, 'edit');
+    if (!result) return;
     await storage.deleteCanvas(req.params.id);
     return reply.code(204).send();
   });

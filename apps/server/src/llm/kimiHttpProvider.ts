@@ -2,6 +2,8 @@ import type {
   CopilotAiChatMessage,
   CopilotAiProvider,
   CopilotAiProviderHealth,
+  CopilotAiProviderKind,
+  CopilotModelId,
   CopilotAiStreamInput,
   CopilotAiStreamChunk,
   CopilotAiMetricCallback,
@@ -12,24 +14,35 @@ const DEFAULT_MODEL = 'kimi-for-coding';
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
 
 interface KimiHttpProviderOptions {
+  provider?: CopilotAiProviderKind;
+  modelId?: CopilotModelId;
+  apiLabel?: string;
   baseUrl?: string;
   model?: string;
+  requestTimeoutMs?: number;
 }
 
 export class KimiHttpProvider implements CopilotAiProvider {
+  private readonly provider: CopilotAiProviderKind;
+  private readonly modelId: CopilotModelId;
+  private readonly apiLabel: string;
   private readonly baseUrl: string;
   private readonly model: string;
   private readonly requestTimeoutMs: number;
 
   constructor(options: KimiHttpProviderOptions = {}) {
+    this.provider = options.provider ?? 'kimi-http';
+    this.modelId = options.modelId ?? 'kimi';
+    this.apiLabel = options.apiLabel ?? 'Kimi API';
     this.baseUrl = trimTrailingSlash(options.baseUrl ?? process.env.PINGARDEN_KIMI_HTTP_BASE_URL ?? DEFAULT_BASE_URL);
     this.model = options.model ?? process.env.PINGARDEN_KIMI_HTTP_MODEL ?? DEFAULT_MODEL;
-    this.requestTimeoutMs = parsePositiveInt(process.env.PINGARDEN_KIMI_HTTP_TIMEOUT_MS, DEFAULT_REQUEST_TIMEOUT_MS);
+    this.requestTimeoutMs = options.requestTimeoutMs ?? parsePositiveInt(process.env.PINGARDEN_KIMI_HTTP_TIMEOUT_MS, DEFAULT_REQUEST_TIMEOUT_MS);
   }
 
   async health(): Promise<CopilotAiProviderHealth> {
     return {
-      provider: 'kimi-http',
+      provider: this.provider,
+      modelId: this.modelId,
       available: true,
       model: this.model,
       requiresApiKey: true,
@@ -51,7 +64,7 @@ export class KimiHttpProvider implements CopilotAiProvider {
         if ('error' in chunk) return { ok: false, message: chunk.error };
         if (chunk.delta) return { ok: true };
       }
-      return { ok: false, message: 'Empty response from Kimi API' };
+      return { ok: false, message: `Empty response from ${this.apiLabel}` };
     } finally {
       clearTimeout(timer);
     }
@@ -73,7 +86,7 @@ export class KimiHttpProvider implements CopilotAiProvider {
       name: 'upstreamRequestStart',
       atMs: Date.now(),
       details: {
-        provider: 'kimi-http',
+        provider: this.provider,
         model: this.model,
         messageCount: messages.length,
         systemPromptChars: input.systemPromptText.length,
@@ -112,7 +125,7 @@ export class KimiHttpProvider implements CopilotAiProvider {
       }
 
       if (!contentType.includes('text/event-stream')) {
-        yield* parseNonStreamingResponse(res, input.apiKey, input.metrics);
+        yield* parseNonStreamingResponse(res, input.apiKey, this.apiLabel, input.metrics);
         return;
       }
 
@@ -217,6 +230,7 @@ function parseSseFrame(frame: string, apiKey: string): CopilotAiStreamChunk | { 
 async function* parseNonStreamingResponse(
   res: Response,
   apiKey: string,
+  apiLabel: string,
   metrics?: CopilotAiMetricCallback,
 ): AsyncGenerator<CopilotAiStreamChunk, void, void> {
   try {
@@ -233,7 +247,7 @@ async function* parseNonStreamingResponse(
       yield { delta: text };
       metrics?.({ name: 'upstreamDone', atMs: Date.now(), details: { deltaChunks: 1, deltaChars: text.length } });
     } else {
-      yield { error: 'Empty response from Kimi API' };
+      yield { error: `Empty response from ${apiLabel}` };
     }
   } catch (err) {
     yield { error: normalizeHttpError(err, apiKey) };
@@ -278,13 +292,13 @@ async function responseError(res: Response, apiKey: string): Promise<string> {
   } catch {
     body = '';
   }
-  const message = body || `Kimi API request failed with HTTP ${res.status}`;
+  const message = body || `AI provider request failed with HTTP ${res.status}`;
   return redact(message, apiKey);
 }
 
 function normalizeHttpError(err: unknown, apiKey: string): string {
   if (err instanceof DOMException && err.name === 'AbortError') {
-    return 'Kimi API request timed out. Please retry or reduce the attached context.';
+    return 'AI provider request timed out. Please retry or reduce the attached context.';
   }
   if (err instanceof Error) return redact(err.message, apiKey);
   return redact(String(err), apiKey);

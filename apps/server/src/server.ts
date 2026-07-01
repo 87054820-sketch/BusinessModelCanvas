@@ -4,11 +4,14 @@ import staticPlugin from '@fastify/static';
 import { resolve } from 'node:path';
 import { COPILOT_MAX_IMAGE_ATTACHMENTS, COPILOT_MAX_IMAGE_BYTES } from '@pingarden/shared';
 import { config } from './config.js';
-import { FileSystemStorage } from './storage/FileSystemStorage.js';
 import { BundleStorage } from './storage/BundleStorage.js';
 import { FederatedStorage } from './storage/FederatedStorage.js';
+import { createWritableStorage } from './storage/createStorage.js';
 import { BundleReadOnlyError } from './storage/errors.js';
+import { FileSystemAccessStore } from './auth/AccessStore.js';
+import { ProjectAccessService } from './auth/ProjectAccessService.js';
 import { loadCanvasDefs } from './canvasDefs/loader.js';
+import { registerAuthRoutes } from './http/auth.js';
 import { registerCanvasDefRoutes } from './http/canvasDefs.js';
 import { registerCanvasRoutes } from './http/canvases.js';
 import { registerProjectRoutes } from './http/projects.js';
@@ -51,30 +54,35 @@ async function main() {
     `Loaded ${defs.length} canvas definitions`,
   );
 
-  const userStorage = new FileSystemStorage(config.dataDir);
+  const userStorage = createWritableStorage(config.storageMode, config.dataDir);
   const bundleStorage = await BundleStorage.load(config.caseLibraryDir);
   const storage = new FederatedStorage(userStorage, bundleStorage);
+  const accessStore = new FileSystemAccessStore(config.dataDir);
+  const access = new ProjectAccessService(storage, accessStore);
   app.log.info(
     {
       dataDir: config.dataDir,
+      authMode: config.authMode,
+      storageMode: config.storageMode,
       caseLibraryDir: config.caseLibraryDir,
       libraryCases: bundleStorage.size,
       libraryResources: bundleStorage.listResources().length,
     },
-    'Using FederatedStorage (user FileSystemStorage + read-only BundleStorage)',
+    'Using FederatedStorage (writable user storage + read-only BundleStorage)',
   );
 
+  registerAuthRoutes(app);
   registerCanvasDefRoutes(app, defs);
-  registerProjectRoutes(app, storage);
-  registerCanvasRoutes(app, storage, defs);
-  registerYjsStateRoutes(app, storage, defs);
-  registerSnapshotRoutes(app, storage);
-  registerAiContextRoutes(app, storage, defs);
-  registerStickyImportRoutes(app, storage, defs);
-  registerObjectsImportRoutes(app, storage, defs);
-  registerStoryRoutes(app, storage);
-  registerLibraryRoutes(app, storage);
-  registerCopilotRoutes(app, storage, defs);
+  registerProjectRoutes(app, storage, access);
+  registerCanvasRoutes(app, storage, defs, access);
+  registerYjsStateRoutes(app, storage, defs, access);
+  registerSnapshotRoutes(app, storage, access);
+  registerAiContextRoutes(app, storage, defs, access);
+  registerStickyImportRoutes(app, storage, defs, access);
+  registerObjectsImportRoutes(app, storage, defs, access);
+  registerStoryRoutes(app, storage, access);
+  registerLibraryRoutes(app, storage, access);
+  registerCopilotRoutes(app, storage, defs, access);
   registerCopilotMemoryRoutes(app, config.dataDir);
   registerSkillPackRoutes(app);
 
@@ -139,9 +147,13 @@ async function main() {
       }
       const apiPrefix =
         req.url.startsWith('/health') ||
+        req.url.startsWith('/me') ||
+        req.url.startsWith('/auth') ||
         req.url.startsWith('/canvas-defs') ||
         req.url.startsWith('/canvases') ||
         req.url.startsWith('/projects') ||
+        req.url.startsWith('/teams') ||
+        req.url.startsWith('/project-invites') ||
         req.url.startsWith('/stories') ||
         req.url.startsWith('/snapshots') ||
         req.url.startsWith('/library') ||

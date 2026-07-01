@@ -9,13 +9,17 @@ import type {
 import type { CopilotClientTimingEvent, CopilotLatencySnapshot } from '../copilot/performance';
 import { nowMs, roundMs } from '../copilot/performance';
 import { ensureOk } from './errors';
+import { authHeaders, authHeadersJson } from './authHeaders';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 
-export type CopilotAiProviderKind = 'kimi-cli' | 'kimi-http';
+export type CopilotModelId = 'kimi' | 'deepseek';
+export type CopilotProviderId = 'kimi-cli' | 'kimi-http' | 'deepseek-http';
+export type CopilotAiProviderKind = CopilotProviderId;
 
 export interface CopilotProviderHealth {
-  provider: CopilotAiProviderKind;
+  provider: CopilotProviderId;
+  modelId: CopilotModelId;
   available: boolean;
   version?: string;
   model?: string;
@@ -24,8 +28,22 @@ export interface CopilotProviderHealth {
   message?: string;
 }
 
-export interface CopilotHealth {
+export interface CopilotModelHealth {
+  model: CopilotModelId;
   provider: CopilotProviderHealth;
+  providers: CopilotProviderHealth[];
+  defaultProvider: CopilotProviderId;
+  available: boolean;
+  requiresApiKey: boolean;
+  message?: string;
+}
+
+export interface CopilotHealth {
+  defaultModel: CopilotModelId;
+  defaultProvider: CopilotProviderId;
+  models: CopilotModelHealth[];
+  provider: CopilotProviderHealth;
+  providers: CopilotProviderHealth[];
   kimi: {
     available: boolean;
     version?: string;
@@ -53,8 +71,12 @@ export interface CopilotChatMessage {
 export type CopilotIntent = 'project-draft' | 'project-update' | 'discussion-insight' | 'apply-learning-to-project';
 
 export interface CopilotStreamRequest {
-  /** Plaintext Kimi API key resolved by the renderer just before sending; the server must not persist it. */
+  /** Plaintext provider API key resolved by the renderer just before sending; the server must not persist it. */
   apiKey: string;
+  /** Optional model profile selected by the UI. */
+  model?: CopilotModelId;
+  /** Optional provider override for this turn; omitted means server default. */
+  provider?: CopilotProviderId;
   /** Conversation history including the latest user turn. */
   messages: CopilotChatMessage[];
   /** Display name used only for local user-profile isolation. */
@@ -69,6 +91,8 @@ export interface CopilotStreamRequest {
 
 export interface CopilotStreamDonePayload {
   requestId?: string;
+  model?: CopilotModelId;
+  provider?: CopilotProviderId;
   timings?: Record<string, number>;
   providerTimings?: Record<string, number>;
 }
@@ -80,6 +104,11 @@ export interface CopilotStreamCallbacks {
   onRequestId?(requestId: string): void;
   onTiming?(event: CopilotClientTimingEvent): void;
   onSnapshot?(snapshot: CopilotLatencySnapshot): void;
+}
+
+export interface CopilotProviderSelection {
+  model?: CopilotModelId;
+  provider?: CopilotProviderId;
 }
 
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
@@ -144,24 +173,28 @@ export const copilotApi = {
   },
 
   /**
-   * Probe whether the candidate API key works for the active provider.
-   * CLI mode may render a local Kimi config; HTTP BYOK mode only uses
-   * the key for this request and never stores it server-side.
+   * Probe whether the candidate API key works for the selected provider.
+   * CLI mode may render a local Kimi config; HTTP BYOK modes only use
+   * the key for this request and never store it server-side.
    */
-  testKey(apiKey: string): Promise<{ ok: boolean; message?: string }> {
+  testKey(apiKey: string, selection?: CopilotProviderSelection): Promise<{ ok: boolean; message?: string }> {
     return fetchJson<{ ok: boolean; message?: string }>(
       `${BASE}/copilot/test-key`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ apiKey }),
+        body: JSON.stringify({ apiKey, ...selection }),
       },
     );
   },
 
-  /** Wipe ~/.kimi-code/config.toml back to its empty stub. */
-  clearKey(): Promise<{ ok: boolean }> {
-    return fetchJson<{ ok: boolean }>(`${BASE}/copilot/clear-key`, { method: 'POST' });
+  /** Clear any server-side provider runtime key material, where applicable. */
+  clearKey(selection?: CopilotProviderSelection): Promise<{ ok: boolean }> {
+    return fetchJson<{ ok: boolean }>(`${BASE}/copilot/clear-key`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(selection ?? {}),
+    });
   },
 
   fetchLibraryContext(lang: Lang, query?: string): Promise<{ markdown: string }> {
@@ -200,18 +233,21 @@ export const copilotApi = {
     if (opts?.activeStoryId) qs.set('activeStoryId', opts.activeStoryId);
     return fetchJson<{ markdown: string }>(
       `${BASE}/copilot/project-context/${encodeURIComponent(projectId)}?${qs.toString()}`,
+      { headers: authHeaders() },
     );
   },
 
   fetchCanvasContext(canvasId: string, lang: Lang): Promise<{ markdown: string }> {
     return fetchJson<{ markdown: string }>(
       `${BASE}/copilot/canvas-context/${encodeURIComponent(canvasId)}?lang=${lang}`,
+      { headers: authHeaders() },
     );
   },
 
   fetchStoryContext(storyId: string, lang: Lang): Promise<{ markdown: string }> {
     return fetchJson<{ markdown: string }>(
       `${BASE}/copilot/story-context/${encodeURIComponent(storyId)}?lang=${lang}`,
+      { headers: authHeaders() },
     );
   },
 
@@ -228,7 +264,7 @@ export const copilotApi = {
 
   getMemoryState(displayName: string): Promise<CopilotMemoryState> {
     return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory`, {
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
@@ -242,10 +278,7 @@ export const copilotApi = {
   ): Promise<CopilotMemoryState> {
     return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/consolidate`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Display-Name': encodeURIComponent(displayName),
-      },
+      headers: authHeadersJson(displayName),
       body: JSON.stringify(input),
     });
   },
@@ -253,48 +286,48 @@ export const copilotApi = {
   archiveMemoryItem(id: string, displayName: string): Promise<CopilotMemoryState> {
     return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/items/${encodeURIComponent(id)}/archive`, {
       method: 'POST',
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
   deleteMemoryItem(id: string, displayName: string): Promise<CopilotMemoryState> {
     return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/items/${encodeURIComponent(id)}`, {
       method: 'DELETE',
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
   revertLatestMemoryChange(displayName: string): Promise<CopilotMemoryState> {
     return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/revert-latest`, {
       method: 'POST',
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
   acceptMemorySuggestion(id: string, displayName: string): Promise<CopilotUserProfile> {
     return fetchJson<CopilotUserProfile>(`${BASE}/copilot/memory/suggestions/${encodeURIComponent(id)}/accept`, {
       method: 'POST',
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
   ignoreMemorySuggestion(id: string, displayName: string): Promise<CopilotMemorySuggestion> {
     return fetchJson<CopilotMemorySuggestion>(`${BASE}/copilot/memory/suggestions/${encodeURIComponent(id)}/ignore`, {
       method: 'POST',
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
   deleteUserPreference(id: string, displayName: string): Promise<{ ok: true }> {
     return fetchJson<{ ok: true }>(`${BASE}/copilot/memory/preferences/${encodeURIComponent(id)}`, {
       method: 'DELETE',
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
   exportMemory(displayName: string): Promise<CopilotMemoryState> {
     return fetchJson<CopilotMemoryState>(`${BASE}/copilot/memory/export`, {
-      headers: { 'X-Display-Name': encodeURIComponent(displayName) },
+      headers: authHeaders(displayName),
     });
   },
 
@@ -307,8 +340,7 @@ export const copilotApi = {
    * `data: {"delta":"..."}\n\n` then `data: {"done":true}\n\n`, error
    * frames look like `data: {"error":"..."}\n\n`. Returns an abort
    * function the caller invokes to cut the stream short; the server
-   * propagates the disconnect to the bundled kimi subprocess via
-   * SIGTERM.
+   * propagates the disconnect to the selected upstream provider.
    */
   streamChat(req: CopilotStreamRequest, cb: CopilotStreamCallbacks): () => void {
     const abort = new AbortController();
@@ -331,10 +363,7 @@ export const copilotApi = {
       try {
         const res = await fetch(`${BASE}/copilot/chat`, {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            ...(req.displayName ? { 'X-Display-Name': encodeURIComponent(req.displayName) } : {}),
-          },
+          headers: authHeadersJson(req.displayName),
           body: JSON.stringify(req),
           signal: abort.signal,
         });
@@ -407,7 +436,7 @@ export const copilotApi = {
           mark('networkDone');
           cb.onSnapshot?.({ requestId, client: { ...clientTimings } });
           cb.onDone({ requestId });
-        } else cb.onError('Empty response from kimi', requestId);
+        } else cb.onError('Empty response from AI provider', requestId);
       } catch (err) {
         if (err instanceof DOMException && err.name === 'AbortError') return;
         cb.onError(normalizeCopilotFetchError(err), requestId);

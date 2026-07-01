@@ -5,7 +5,10 @@
   },
   "nav": {
     "back": "Back",
-    "history": "History"
+    "history": "History",
+    "library": "Official cases",
+    "personalProjects": "Personal",
+    "teamProjects": "Team"
   },
   "language": {
     "label": "Language",
@@ -42,8 +45,10 @@
     "relatedCanvases": "Pairs with",
     "browseLibraryLink": "Browse strategy library & all projects",
     "browseLibraryAndProjects": "Browse strategy library & projects",
-    "browseLibrary": "Browse strategy library",
-    "myProjects": "My projects"
+    "browseLibrary": "Official cases",
+    "myProjects": "My projects",
+    "personalProjects": "Personal projects",
+    "teamProjects": "Team projects"
   },
   "newProject": {
     "title": "Create project",
@@ -244,12 +249,35 @@
     "delete": "Delete pin"
   },
   "identity": {
-    "title": "Welcome",
-    "prompt": "Pick a display name so your teammates can see who's drawing what. You can change this any time.",
-    "placeholder": "Your display name",
+    "title": "Sign in to PinGarden",
+    "pageTitle": "Start in local mode, then sync after WeChat opens",
+    "pageIntro": "While approval is pending, local mode lets you create and edit personal projects. Team collaboration, cross-device sync, and account migration will use stable WeChat identity once enabled.",
+    "prompt": "Choose local mode to create and edit personal projects now. Team collaboration and cross-device sync unlock after WeChat sign-in opens.",
+    "placeholder": "",
     "submit": "Continue",
-    "editTitle": "Change display name",
-    "editPrompt": "This name appears on every sticky and audit entry you create.",
+    "signIn": "Sign in",
+    "localPanelTitle": "Local mode",
+    "localPanelBody": "Stored for this device only. You can create and edit personal projects.",
+    "localSignIn": "Enter local mode",
+    "localReadyHint": "Clearing browser data will remove this local identity.",
+    "localSignInError": "Local mode could not start. Please try again.",
+    "localModeBadge": "Local mode",
+    "localOnlyBadge": "Local only",
+    "wechatSignIn": "Sign in with WeChat",
+    "wechatPanelTitle": "WeChat sign-in",
+    "wechatPanelBody": "When available, this opens WeChat authorization and returns to PinGarden automatically.",
+    "wechatReadyHint": "WeChat sign-in is connected for this environment.",
+    "pendingBadge": "Pending",
+    "wechatConfigMissingTitle": "WeChat sign-in is not configured",
+    "wechatConfigMissingBody": "WeChat Open Platform approval or environment setup is not complete yet.",
+    "wechatConfigMissingHelp": "After approval, set WECHAT_APP_ID, WECHAT_APP_SECRET, and WECHAT_REDIRECT_URI.",
+    "wechatStatusError": "We cannot confirm WeChat sign-in status right now. Please try again later.",
+    "alreadySignedIn": "You are signed in as {{name}}.",
+    "returnHome": "Return home",
+    "signOut": "Sign out",
+    "signedInAs": "Signed in as {{name}}",
+    "editTitle": "Account",
+    "editPrompt": "Your display name comes from WeChat and is used only for display and audit history.",
     "save": "Save",
     "cancel": "Cancel"
   },
@@ -321,7 +349,8 @@
   },
   "myProjects": {
     "pageSubtitle": "Your own projects — created from a blank canvas or forked from the case library.",
-    "empty": "No projects yet — create a blank one above, or fork a case from the library."
+    "empty": "No projects yet — create a blank one above, or fork a case from the library.",
+    "teamRequiresWechat": "Team projects unlock after WeChat sign-in opens. Local mode can create and edit personal projects only."
   },
   "library": {
     "pageTitle": "Strategy Library",
@@ -526,9 +555,9 @@
       "expand": "Full screen",
       "restore": "Side panel",
       "resizeHint": "Drag the edge to switch full screen / side panel; double-click also toggles",
-      "emptyState": "Pick a suggested action or ask directly — study cases, review projects, recommend canvases, improve stories, or find the next experiment.",
-      "emptyStateCompact": "Pick a suggested action above, or type below.",
-      "emptyStateNoKey": "No Kimi API key configured yet. Paste one to start chatting.",
+      "emptyState": "Pick a quick panel or ask directly — study cases, review projects, recommend canvases, improve stories, or find the next experiment.",
+      "emptyStateCompact": "Pick a quick panel above, or type below.",
+      "emptyStateNoKey": "No AI provider key configured yet. Paste one to start chatting.",
       "encryptionWarning": "Your OS keychain is not available. If you remember this browser, keys are stored in browser localStorage as plaintext.",
       "encryptionEnabled": "Keys are encrypted via your OS keychain (safeStorage).",
       "sessionOnlyNotice": "Default: stored only in this browser session (sessionStorage). It is sent to PinGarden only for each request and is never saved in the cloud.",
@@ -537,14 +566,14 @@
       "rememberThisBrowserHint": "Leave unchecked to keep it for this session only; closing the tab/browser means you'll enter it again.",
       "apiKey": "API key",
       "apiKeyPlaceholder": "sk-...",
-      "getKey": "Get a Kimi API key →",
+      "getKey": "Get an API key →",
       "testConnection": "Test connection",
       "testing": "Testing…",
       "testOk": "Connection OK",
       "save": "Save",
       "saved": "Saved",
       "remove": "Remove",
-      "removeConfirm": "Remove the saved Kimi API key?",
+      "removeConfirm": "Remove the saved API key for {{provider}}?",
       "composerPlaceholder": "Ask PinGarden Copilot…",
       "attachImage": "+ Image",
       "attachImageHint": "Up to 9 images. Drag, paste, or upload screenshots",
@@ -759,7 +788,7 @@
       "stop": "Stop",
       "thinking": "Thinking…",
       "progress": {
-        "0": "Connecting to Kimi…",
+        "0": "Connecting to the AI provider…",
         "1": "Analyzing your question and context…",
         "2": "Structuring the response…",
         "3": "Generating content; it will appear by paragraphs when ready…"
@@ -785,10 +814,10 @@
           "slow1": "The cloud connection is taking a little longer than usual."
         },
         "waitingModel": {
-          "title": "Waiting for Kimi to analyze",
+          "title": "Waiting for the model to analyze",
           "description": "Cloud Copilot is connected and waiting for the model’s first output.",
-          "slow1": "Kimi is analyzing the material; the first response can take a few seconds.",
-          "slow2": "The question or context is complex, so Kimi is still doing deeper analysis. You can wait, or stop and narrow the scope."
+          "slow1": "The model is analyzing the material; the first response can take a few seconds.",
+          "slow2": "The question or context is complex, so the model is still doing deeper analysis. You can wait, or stop and narrow the scope."
         },
         "generating": {
           "title": "Generating the reply",
@@ -820,20 +849,23 @@
         "requestId": "Req {{requestId}}"
       },
       "errorPrefix": "Error",
-      "noKeyConfigured": "No Kimi API key configured. Open settings to paste one.",
+      "noKeyConfigured": "No {{provider}} API key configured. Open settings to paste one.",
       "clearChat": "Clear chat",
       "clearChatConfirm": "Clear the entire conversation?",
       "attached": "Attached",
-      "contextSource": "Based on current project",
-      "contextProjectSource": "Based on current project",
-      "contextReferenceSource": "Based on current material",
-      "contextCreateSource": "Creation entry",
       "strategyLibraryContext": "Strategy Library",
       "attachClear": "Remove attached context",
+      "quickPanels": {
+        "title": "Quick panels",
+        "linkedPageTitle": "Linked page: {{page}}",
+        "expand": "Expand quick panels",
+        "collapse": "Collapse quick panels"
+      },
       "suggestions": {
-        "title": "Suggested actions",
+        "title": "Quick panels",
         "expand": "Expand",
-        "collapse": "Collapse"
+        "collapse": "Collapse",
+        "needsKey": "Save an API key for the current model in settings, then you can start these quick panels."
       },
       "contextLoading": "Loading context…",
       "contextFailed": "Couldn't load context — sending without it.",
@@ -841,9 +873,28 @@
       "providerUnavailable": "The current AI provider is unavailable.",
       "cliMissing": "Kimi CLI isn't installed on this machine.",
       "cliInstallHint": "Run `npm install -g @moonshot-ai/kimi-code` then reload the app.",
+      "modelProvider": "Model provider",
+      "providerOptions": {
+        "kimi": "Kimi",
+        "deepseek": "DeepSeek"
+      },
+      "providers": {
+        "kimi": {
+          "cliTitle": "Connect Kimi Code",
+          "cliIntro": "Paste your Kimi Code API key. We'll encrypt it locally and provide it to Kimi CLI only for each request — no terminal required.",
+          "httpTitle": "Connect Kimi API",
+          "httpIntro": "Paste your Kimi API key. PinGarden uses it only for this request and never saves it to CloudBase or the PinGarden server.",
+          "getKey": "Get a Kimi API key →"
+        },
+        "deepseek": {
+          "title": "Connect DeepSeek API",
+          "intro": "Paste your DeepSeek API key. PinGarden uses it only for this request and never saves it to CloudBase or the PinGarden server.",
+          "getKey": "Get a DeepSeek API key →"
+        }
+      },
       "kimi": {
         "title": "Connect Kimi Code",
-        "intro": "Paste your Kimi Code API key. We'll encrypt it locally and wire Kimi CLI's config for you — no terminal required.",
+        "intro": "Paste your Kimi Code API key. We'll encrypt it locally and provide it to Kimi CLI only for each request — no terminal required.",
         "httpTitle": "Connect Kimi API",
         "httpIntro": "Paste your Kimi API key. PinGarden Cloud uses it only for this request and never saves it to CloudBase or the PinGarden server.",
         "console": "Get a key from kimi.com/code/console"

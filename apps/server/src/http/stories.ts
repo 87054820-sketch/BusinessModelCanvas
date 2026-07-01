@@ -4,7 +4,8 @@ import { z } from 'zod';
 import type { Story } from '@pingarden/shared';
 import { parseStoryCanvasDirectives } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
-import { getIdentity } from './identity.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
+import { getOptionalIdentity } from './identity.js';
 
 const ContentDatePrecision = z.enum(['year', 'month', 'day']);
 const StoryStatus = z.enum(['draft', 'published']);
@@ -29,32 +30,43 @@ const UpdateInput = z.object({
   contentDateLabel: z.string().max(80).optional(),
 });
 
-export function registerStoryRoutes(app: FastifyInstance, storage: CanvasStorage) {
-  app.get<{ Querystring: { projectId?: string } }>('/stories', async (req) =>
-    storage.listStories(req.query.projectId ? { projectId: req.query.projectId } : undefined),
-  );
+export function registerStoryRoutes(
+  app: FastifyInstance,
+  storage: CanvasStorage,
+  access: ProjectAccessService,
+) {
+  app.get<{ Querystring: { projectId?: string } }>('/stories', async (req, reply) => {
+    if (req.query.projectId) {
+      const result = await access.ensureProject(req, reply, req.query.projectId, 'view');
+      if (!result) return;
+      return storage.listStories({ projectId: req.query.projectId });
+    }
+    const projects = await access.listAccessibleProjects(getOptionalIdentity(req));
+    const lists = await Promise.all(projects.map((p) => storage.listStories({ projectId: p.id })));
+    return lists.flat();
+  });
 
   app.get<{ Params: { id: string } }>('/projects/:id/stories', async (req, reply) => {
-    const project = await storage.getProject(req.params.id);
-    if (!project) return reply.code(404).send({ error: 'Project not found' });
+    const result = await access.ensureProject(req, reply, req.params.id, 'view');
+    if (!result) return;
     return storage.listStories({ projectId: req.params.id });
   });
 
   app.get<{ Params: { id: string } }>('/stories/:id', async (req, reply) => {
-    const story = await storage.getStory(req.params.id);
-    if (!story) return reply.code(404).send({ error: 'Story not found' });
-    return story;
+    const result = await access.ensureStory(req, reply, req.params.id, 'view');
+    if (!result) return;
+    return result.story;
   });
 
   app.post('/stories', async (req, reply) => {
     const input = CreateInput.parse(req.body);
-    const project = await storage.getProject(input.projectId);
-    if (!project) return reply.code(400).send({ error: `Unknown project: ${input.projectId}` });
+    const projectAccess = await access.ensureProject(req, reply, input.projectId, 'edit');
+    if (!projectAccess?.identity) return;
 
     const canvasError = await validateEmbeddedCanvases(storage, input.projectId, input.content ?? '');
     if (canvasError) return reply.code(400).send(canvasError);
 
-    const identity = getIdentity(req);
+    const identity = projectAccess.identity;
     const now = new Date().toISOString();
     const story: Story = {
       id: randomUUID(),
@@ -67,33 +79,42 @@ export function registerStoryRoutes(app: FastifyInstance, storage: CanvasStorage
       ...(input.contentDateLabel ? { contentDateLabel: input.contentDateLabel } : {}),
       createdAt: now,
       createdBy: identity.displayName,
+      createdByUserId: identity.userId,
       updatedAt: now,
       updatedBy: identity.displayName,
+      updatedByUserId: identity.userId,
     };
     await storage.createStory(story);
-    await storage.updateProject(input.projectId, { updatedBy: identity.displayName });
+    await storage.updateProject(input.projectId, {
+      updatedBy: identity.displayName,
+      updatedByUserId: identity.userId,
+    });
     return reply.code(201).send(story);
   });
 
   app.patch<{ Params: { id: string } }>('/stories/:id', async (req, reply) => {
     const patch = UpdateInput.parse(req.body);
-    const current = await storage.getStory(req.params.id);
-    if (!current) return reply.code(404).send({ error: 'Story not found' });
+    const result = await access.ensureStory(req, reply, req.params.id, 'edit');
+    if (!result?.identity) return;
+    const current = result.story;
 
     if (patch.content !== undefined) {
       const canvasError = await validateEmbeddedCanvases(storage, current.projectId, patch.content);
       if (canvasError) return reply.code(400).send(canvasError);
     }
 
-    const identity = getIdentity(req);
+    const identity = result.identity;
     const updated = await storage.updateStory(req.params.id, {
       ...patch,
       updatedBy: identity.displayName,
+      updatedByUserId: identity.userId,
     });
     return updated;
   });
 
   app.delete<{ Params: { id: string } }>('/stories/:id', async (req, reply) => {
+    const result = await access.ensureStory(req, reply, req.params.id, 'edit');
+    if (!result) return;
     await storage.deleteStory(req.params.id);
     return reply.code(204).send();
   });

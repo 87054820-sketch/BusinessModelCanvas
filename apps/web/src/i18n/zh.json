@@ -5,7 +5,10 @@
   },
   "nav": {
     "back": "返回",
-    "history": "历史版本"
+    "history": "历史版本",
+    "library": "官方案例库",
+    "personalProjects": "个人项目",
+    "teamProjects": "团队项目"
   },
   "language": {
     "label": "语言",
@@ -42,8 +45,10 @@
     "relatedCanvases": "配套画布",
     "browseLibraryLink": "浏览策略库和我的项目",
     "browseLibraryAndProjects": "浏览策略库与项目",
-    "browseLibrary": "浏览策略库",
-    "myProjects": "我的项目"
+    "browseLibrary": "官方案例库",
+    "myProjects": "我的项目",
+    "personalProjects": "个人项目",
+    "teamProjects": "团队项目"
   },
   "newProject": {
     "title": "创建项目",
@@ -244,12 +249,35 @@
     "delete": "删除图钉"
   },
   "identity": {
-    "title": "欢迎",
-    "prompt": "选一个显示名,方便团队成员知道是谁在编辑。随时可以修改。",
-    "placeholder": "你的显示名",
+    "title": "登录 PinGarden",
+    "pageTitle": "先用本机模式开始，微信登录开放后再同步",
+    "pageIntro": "审批期间可用本机模式创建和编辑个人项目。微信登录开放后,团队协作、跨设备同步和账号迁移会再接入稳定微信身份。",
+    "prompt": "选择本机模式即可创建和编辑个人项目；团队协作和跨设备同步会在微信登录开放后启用。",
+    "placeholder": "",
     "submit": "继续",
-    "editTitle": "修改显示名",
-    "editPrompt": "这个名字会出现在你创建的每张便签和每条审计记录上。",
+    "signIn": "登录",
+    "localPanelTitle": "本机模式",
+    "localPanelBody": "仅保存在这台设备，可创建和编辑个人项目。",
+    "localSignIn": "进入本机模式",
+    "localReadyHint": "清空浏览器数据会失去这个本机身份。",
+    "localSignInError": "本机模式启动失败，请稍后重试。",
+    "localModeBadge": "本机模式",
+    "localOnlyBadge": "仅本机",
+    "wechatSignIn": "微信登录",
+    "wechatPanelTitle": "微信扫码登录",
+    "wechatPanelBody": "开放后会打开微信授权页面，授权完成后自动回到 PinGarden。",
+    "wechatReadyHint": "当前环境已连接微信登录。",
+    "pendingBadge": "待开放",
+    "wechatConfigMissingTitle": "微信登录尚未配置",
+    "wechatConfigMissingBody": "微信开放平台审批或环境配置尚未完成。",
+    "wechatConfigMissingHelp": "审批完成后配置 WECHAT_APP_ID、WECHAT_APP_SECRET 和 WECHAT_REDIRECT_URI。",
+    "wechatStatusError": "暂时无法确认微信登录配置,请稍后重试。",
+    "alreadySignedIn": "你已作为 {{name}} 登录。",
+    "returnHome": "返回首页",
+    "signOut": "退出登录",
+    "signedInAs": "已登录: {{name}}",
+    "editTitle": "账号资料",
+    "editPrompt": "昵称来自微信账号,仅用于显示和审计。",
     "save": "保存",
     "cancel": "取消"
   },
@@ -321,7 +349,8 @@
   },
   "myProjects": {
     "pageSubtitle": "你创建或 fork 的项目 —— 从空白模板新建或从案例库复制一份。",
-    "empty": "还没有项目 —— 在上方新建一个空白项目,或者从案例库 fork 一份。"
+    "empty": "还没有项目 —— 在上方新建一个空白项目,或者从案例库 fork 一份。",
+    "teamRequiresWechat": "团队项目会在微信登录开放后启用。本机模式当前只能创建和编辑个人项目。"
   },
   "library": {
     "pageTitle": "策略库",
@@ -519,9 +548,9 @@
       "expand": "全屏",
       "restore": "收回侧栏",
       "resizeHint": "拖拽边界切换全屏/侧栏，双击也可切换",
-      "emptyState": "选择一个建议操作，或直接提问 —— 可以研究案例、检查项目、推荐画布、优化 story 或寻找下一步实验。",
-      "emptyStateCompact": "选择上方建议操作，或直接在下方输入。",
-      "emptyStateNoKey": "尚未配置 Kimi API Key,粘贴后即可开始对话。",
+      "emptyState": "选择一个快捷面板，或直接提问 —— 可以研究案例、检查项目、推荐画布、优化 story 或寻找下一步实验。",
+      "emptyStateCompact": "选择上方快捷面板，或直接在下方输入。",
+      "emptyStateNoKey": "尚未配置 AI Provider API Key,粘贴后即可开始对话。",
       "encryptionWarning": "未检测到系统钥匙串,如果选择记住浏览器,密钥会以明文形式保存在浏览器 localStorage。",
       "encryptionEnabled": "密钥已通过系统钥匙串(safeStorage)加密保存。",
       "sessionOnlyNotice": "默认仅保存在当前浏览器会话(sessionStorage),请求时临时发送给 PinGarden 服务,不会保存到云端。",
@@ -530,14 +559,14 @@
       "rememberThisBrowserHint": "不勾选时只保存在当前会话；关闭标签页或浏览器后需要重新输入。",
       "apiKey": "API Key",
       "apiKeyPlaceholder": "sk-...",
-      "getKey": "获取 Kimi API Key →",
+      "getKey": "获取 API Key →",
       "testConnection": "测试连接",
       "testing": "测试中…",
       "testOk": "连接成功",
       "save": "保存",
       "saved": "已保存",
       "remove": "删除",
-      "removeConfirm": "确认删除已保存的 Kimi API Key?",
+      "removeConfirm": "确认删除已保存的 {{provider}} API Key?",
       "composerPlaceholder": "向 PinGarden Copilot 提问…",
       "attachImage": "+ 图片",
       "attachImageHint": "最多 9 张，支持拖拽或粘贴截图",
@@ -752,7 +781,7 @@
       "stop": "停止",
       "thinking": "思考中…",
       "progress": {
-        "0": "正在连接 Kimi…",
+        "0": "正在连接 AI Provider…",
         "1": "正在分析你的问题和当前资料…",
         "2": "正在组织回答结构…",
         "3": "内容生成中，完成后会按段落显示…"
@@ -778,10 +807,10 @@
           "slow1": "云端连接时间略长，正在继续等待响应。"
         },
         "waitingModel": {
-          "title": "正在等待 Kimi 分析",
+          "title": "正在等待模型分析",
           "description": "云端已连接，正在等待模型返回第一段内容。",
           "slow1": "模型正在分析资料，首段输出可能需要几秒钟。",
-          "slow2": "资料或问题较复杂，Kimi 仍在深度分析；你可以继续等待或点击停止后缩小范围。"
+          "slow2": "资料或问题较复杂，模型仍在深度分析；你可以继续等待或点击停止后缩小范围。"
         },
         "generating": {
           "title": "正在生成回复",
@@ -813,20 +842,23 @@
         "requestId": "请求 {{requestId}}"
       },
       "errorPrefix": "出错了",
-      "noKeyConfigured": "尚未配置 Kimi API Key,在设置中粘贴一个。",
+      "noKeyConfigured": "尚未配置 {{provider}} API Key,在设置中粘贴一个。",
       "clearChat": "清空对话",
       "clearChatConfirm": "确认清空整段对话?",
       "attached": "已附带",
-      "contextSource": "基于当前项目",
-      "contextProjectSource": "基于当前项目",
-      "contextReferenceSource": "基于当前资料",
-      "contextCreateSource": "创建入口",
       "strategyLibraryContext": "策略库",
       "attachClear": "移除附带上下文",
+      "quickPanels": {
+        "title": "快捷面板",
+        "linkedPageTitle": "关联页面：{{page}}",
+        "expand": "展开快捷面板",
+        "collapse": "收起快捷面板"
+      },
       "suggestions": {
-        "title": "建议操作",
+        "title": "快捷面板",
         "expand": "展开",
-        "collapse": "收起"
+        "collapse": "收起",
+        "needsKey": "先在设置里保存当前模型的 API Key,就可以直接启动这些快捷面板。"
       },
       "contextLoading": "加载上下文中…",
       "contextFailed": "上下文加载失败,将不带上下文继续。",
@@ -834,9 +866,28 @@
       "providerUnavailable": "当前 AI Provider 暂不可用。",
       "cliMissing": "本机未安装 Kimi CLI。",
       "cliInstallHint": "运行 `npm install -g @moonshot-ai/kimi-code` 后重新打开应用。",
+      "modelProvider": "模型 Provider",
+      "providerOptions": {
+        "kimi": "Kimi",
+        "deepseek": "DeepSeek"
+      },
+      "providers": {
+        "kimi": {
+          "cliTitle": "连接 Kimi Code",
+          "cliIntro": "粘贴你的 Kimi Code API Key。我们会在本机加密保存,并在每次请求时临时提供给 Kimi CLI —— 不需要打开终端。",
+          "httpTitle": "连接 Kimi API",
+          "httpIntro": "粘贴你的 Kimi API Key。PinGarden 只会在本次请求中临时转发调用,不会保存到 CloudBase 或 PinGarden 服务器。",
+          "getKey": "获取 Kimi API Key →"
+        },
+        "deepseek": {
+          "title": "连接 DeepSeek API",
+          "intro": "粘贴你的 DeepSeek API Key。PinGarden 只会在本次请求中临时转发调用,不会保存到 CloudBase 或 PinGarden 服务器。",
+          "getKey": "获取 DeepSeek API Key →"
+        }
+      },
       "kimi": {
         "title": "连接 Kimi Code",
-        "intro": "粘贴你的 Kimi Code API Key。我们会在本机加密保存,并自动写入 Kimi CLI 的配置 —— 不需要打开终端。",
+        "intro": "粘贴你的 Kimi Code API Key。我们会在本机加密保存,并在每次请求时临时提供给 Kimi CLI —— 不需要打开终端。",
         "httpTitle": "连接 Kimi API",
         "httpIntro": "粘贴你的 Kimi API Key。PinGarden 云端只会在本次请求中临时转发调用,不会保存到 CloudBase 或 PinGarden 服务器。",
         "console": "前往 kimi.com/code/console 获取 Key"

@@ -3,10 +3,23 @@ import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 
-export type CopilotAiProviderMode = 'kimi-cli' | 'kimi-http';
+export type CopilotAiProviderMode = 'kimi-cli' | 'kimi-http' | 'deepseek-http';
+export type AuthMode = 'wechat';
+export type StorageMode = 'filesystem' | 'cloudbase-sql';
 
 function parseAiProvider(raw: string | undefined): CopilotAiProviderMode {
-  return raw === 'kimi-http' ? 'kimi-http' : 'kimi-cli';
+  if (raw === 'kimi-http' || raw === 'deepseek-http') return raw;
+  return 'kimi-cli';
+}
+
+function parseAuthMode(raw: string | undefined): AuthMode {
+  // Product auth is WeChat-only. The env var is retained so older
+  // deployment configs do not crash, but every value resolves here.
+  return raw === 'wechat' ? 'wechat' : 'wechat';
+}
+
+function parseStorageMode(raw: string | undefined): StorageMode {
+  return raw === 'cloudbase-sql' ? 'cloudbase-sql' : 'filesystem';
 }
 
 /**
@@ -19,6 +32,23 @@ export const config = {
   desktopInstanceId: process.env.PINGARDEN_DESKTOP_INSTANCE_ID,
   /** Copilot provider: local/desktop defaults to Kimi CLI; CloudRun sets kimi-http. */
   aiProvider: parseAiProvider(process.env.PINGARDEN_AI_PROVIDER),
+  /** Product auth mode. Login is WeChat-only; display-name headers are not accepted. */
+  authMode: parseAuthMode(process.env.PINGARDEN_AUTH),
+  /** HMAC secret for PinGarden's short-lived server-issued sessions. Required in production. */
+  sessionSecret: process.env.PINGARDEN_SESSION_SECRET,
+  /** WeChat Open Platform OAuth credentials. */
+  wechatAppId: process.env.WECHAT_APP_ID,
+  wechatAppSecret: process.env.WECHAT_APP_SECRET,
+  /** Public callback URL registered in WeChat Open Platform. */
+  wechatRedirectUri: process.env.WECHAT_REDIRECT_URI,
+  /** Frontend origin that receives the finished session token after OAuth callback. */
+  webOrigin: process.env.PINGARDEN_WEB_ORIGIN ?? 'http://localhost:5173',
+  /** Hidden automation-only login. Never exposed in the product UI. */
+  testAuthEnabled:
+    process.env.NODE_ENV === 'test' || process.env.PINGARDEN_TEST_AUTH === '1',
+  /** Storage mode: cloudbase-sql selects the database storage adapter seam. */
+  storageMode: parseStorageMode(process.env.PINGARDEN_STORAGE),
+  cloudbaseEnvId: process.env.CLOUDBASE_ENV_ID,
   /** Where canvas instance data + Yjs docs + snapshots live. */
   dataDir: resolve(process.env.DATA_DIR ?? resolve(here, '../data')),
   /** Where canvas-def asset bundles live. */

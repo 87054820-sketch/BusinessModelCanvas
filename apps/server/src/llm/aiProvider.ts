@@ -1,12 +1,24 @@
-export type CopilotAiProviderKind = 'kimi-cli' | 'kimi-http';
+export type CopilotModelId = 'kimi' | 'deepseek';
+export type CopilotAiProviderKind = 'kimi-cli' | 'kimi-http' | 'deepseek-http';
 
 export interface CopilotAiProviderHealth {
   provider: CopilotAiProviderKind;
+  modelId: CopilotModelId;
   available: boolean;
   version?: string;
   model?: string;
   requiresApiKey: boolean;
   storesKeyServerSide: false;
+  message?: string;
+}
+
+export interface CopilotAiModelHealth {
+  model: CopilotModelId;
+  provider: CopilotAiProviderHealth;
+  providers: CopilotAiProviderHealth[];
+  defaultProvider: CopilotAiProviderKind;
+  available: boolean;
+  requiresApiKey: boolean;
   message?: string;
 }
 

@@ -35,7 +35,7 @@ export function CopilotApplyLearningDialog({
     projectsApi
       .list(displayName)
       .then((next) => {
-        const writableProjects = next.filter((project) => project.source !== 'library');
+        const writableProjects = next.filter((project) => project.capabilities?.canEdit ?? project.source !== 'library');
         if (!cancelled) {
           setProjects(writableProjects);
           setSelected((value) => (value === 'new' || writableProjects.some((project) => project.id === value) ? value : 'new'));

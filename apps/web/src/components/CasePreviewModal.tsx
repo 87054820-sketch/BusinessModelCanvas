@@ -8,7 +8,6 @@ import type {
   StrategyFramework,
 } from '@pingarden/shared';
 import { libraryApi } from '../api/library';
-import { useIdentity } from '../identity/useIdentity';
 
 interface Props {
   entry: CaseLibraryEntry | null;
@@ -60,23 +59,22 @@ export function CasePreviewModal({
   onStrategyFrameworkClick,
 }: Props) {
   const { t } = useTranslation();
-  const { identity } = useIdentity();
   const [detail, setDetail] = useState<CaseLibraryDetail | null>(null);
   const [loading, setLoading] = useState(false);
   const [forking, setForking] = useState(false);
 
   useEffect(() => {
-    if (!entry || !identity) {
+    if (!entry) {
       setDetail(null);
       return;
     }
     setLoading(true);
     libraryApi
-      .get(entry.slug, identity.displayName)
+      .get(entry.slug)
       .then((d) => setDetail(d))
       .catch(() => setDetail(null))
       .finally(() => setLoading(false));
-  }, [entry, identity]);
+  }, [entry]);
 
   // Body scroll lock + Esc-to-close
   useEffect(() => {

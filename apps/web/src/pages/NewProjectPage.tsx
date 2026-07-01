@@ -5,9 +5,10 @@ import type { Lang, Project } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { libraryApi } from '../api/library';
 import { projectsApi } from '../api/projects';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
 import { buildSeedPayload } from '../lib/seedExperimentStickies';
 import { BackLink } from '../components/BackLink';
+import { LoginDialog } from '../identity/IdentityModal';
 import { preserveNavigationState } from '../navigation/useSmartBack';
 
 type Mode = 'newProject' | 'existingProject';
@@ -16,7 +17,8 @@ export function NewProjectPage() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
-  const { identity } = useIdentity();
+  const { identity, authenticated, signInWithWeChat } = useAuthSession();
+  const displayName = identity?.displayName ?? '';
   const [params] = useSearchParams();
 
   const lang = useMemo<Lang>(() => (i18n.language as Lang) ?? 'en', [i18n.language]);
@@ -70,13 +72,13 @@ export function NewProjectPage() {
   const [userProjects, setUserProjects] = useState<Project[] | null>(null);
   const [selectedProjectId, setSelectedProjectId] = useState<string>('');
   useEffect(() => {
-    if (!canPickExisting || !identity) return;
+    if (!canPickExisting || !authenticated) return;
     let cancelled = false;
     (async () => {
       try {
-        const list = await projectsApi.list(identity.displayName);
+        const list = await projectsApi.list(displayName);
         if (cancelled) return;
-        setUserProjects(list.filter((p) => !p.source || p.source === 'user'));
+        setUserProjects(list.filter((p) => p.capabilities?.canEdit ?? (!p.source || p.source === 'user')));
       } catch (err) {
         if (cancelled) return;
         // eslint-disable-next-line no-console
@@ -87,9 +89,16 @@ export function NewProjectPage() {
     return () => {
       cancelled = true;
     };
-  }, [canPickExisting, identity]);
+  }, [canPickExisting, authenticated, displayName]);
 
-  if (!identity) return null;
+  if (!authenticated) {
+    return (
+      <LoginDialog
+        onSignIn={() => signInWithWeChat()}
+        onCancel={() => navigate('/library', { state: preserveNavigationState(location) })}
+      />
+    );
+  }
 
   // Localised name for the pre-selected canvas. Canvas names are owned by
   // each bundle's manifest so template cards, modals and creation flows stay consistent.
@@ -112,7 +121,7 @@ export function NewProjectPage() {
     try {
       const detail = await libraryApi.getExperiment(seedExperimentSlug);
       const stickies = buildSeedPayload(detail, lang);
-      await api.bulkStickies(canvasId, stickies, identity!.displayName);
+      await api.bulkStickies(canvasId, stickies, displayName);
     } catch (err) {
       // eslint-disable-next-line no-console
       console.warn('Experiment seeding failed:', err);
@@ -122,13 +131,13 @@ export function NewProjectPage() {
   // New-project branch: create project → create canvas (if withCanvas) →
   // seed (if seedExperiment) → navigate.
   async function handleCreateNew() {
-    if (!name.trim() || !identity || busy) return;
+    if (!name.trim() || !authenticated || busy) return;
     setError(null);
     setBusy(true);
     try {
       const p = await projectsApi.create(
         { name: name.trim(), description: description.trim() || undefined },
-        identity.displayName,
+        displayName,
       );
       if (withCanvas && withCanvasName) {
         try {
@@ -139,7 +148,7 @@ export function NewProjectPage() {
               title: withCanvasName,
               language: lang,
             },
-            identity.displayName,
+            displayName,
           );
           await maybeSeedExperiment(newCanvas.id);
         } catch (err) {
@@ -160,7 +169,7 @@ export function NewProjectPage() {
   // Existing-project branch: just create the canvas in the chosen
   // project + seed + navigate. Skip project creation entirely.
   async function handleAddToExisting() {
-    if (!selectedProjectId || !identity || busy || !withCanvas || !withCanvasName) return;
+    if (!selectedProjectId || !authenticated || busy || !withCanvas || !withCanvasName) return;
     setError(null);
     setBusy(true);
     try {
@@ -171,7 +180,7 @@ export function NewProjectPage() {
           title: withCanvasName,
           language: lang,
         },
-        identity.displayName,
+        displayName,
       );
       await maybeSeedExperiment(newCanvas.id);
       navigate(`/p/${selectedProjectId}`, { state: preserveNavigationState(location) });

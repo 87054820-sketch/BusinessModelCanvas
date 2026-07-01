@@ -3,7 +3,7 @@ import { z } from 'zod';
 import { BUNDLED_PLAYBOOKS } from '../copilot/bundledPlaybooks.js';
 import { createPreferenceSuggestion } from '../copilot/memorySummarizer.js';
 import { CopilotUserProfileStore } from '../copilot/userProfileStore.js';
-import { getIdentity } from './identity.js';
+import { requireIdentity } from './identity.js';
 
 const SuggestionInput = z.object({
   title: z.string().min(1).max(160),
@@ -25,61 +25,71 @@ const ConsolidateInput = z.object({
 export function registerCopilotMemoryRoutes(app: FastifyInstance, dataDir: string) {
   const store = new CopilotUserProfileStore(dataDir);
 
-  app.get('/copilot/memory', async (req) => {
-    const identity = getIdentity(req);
-    return store.getState(identity.displayName);
+  app.get('/copilot/memory', async (req, reply) => {
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    return store.getState(identity.userId);
   });
 
   app.get('/copilot/memory/export', async (req, reply) => {
-    const identity = getIdentity(req);
-    return reply.header('Cache-Control', 'no-store').send(await store.getState(identity.displayName));
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    return reply.header('Cache-Control', 'no-store').send(await store.getState(identity.userId));
   });
 
   app.post('/copilot/memory/consolidate', async (req, reply) => {
     const parse = ConsolidateInput.safeParse(req.body);
     if (!parse.success) return reply.code(400).send({ error: 'Invalid request body', details: parse.error.issues });
-    const identity = getIdentity(req);
-    return store.consolidateMemory(identity.displayName, parse.data);
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    return store.consolidateMemory(identity.userId, parse.data);
   });
 
-  app.post<{ Params: { id: string } }>('/copilot/memory/items/:id/archive', async (req) => {
-    const identity = getIdentity(req);
-    return store.archiveLayeredMemoryItem(identity.displayName, req.params.id);
+  app.post<{ Params: { id: string } }>('/copilot/memory/items/:id/archive', async (req, reply) => {
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    return store.archiveLayeredMemoryItem(identity.userId, req.params.id);
   });
 
-  app.delete<{ Params: { id: string } }>('/copilot/memory/items/:id', async (req) => {
-    const identity = getIdentity(req);
-    return store.deleteLayeredMemoryItem(identity.displayName, req.params.id);
+  app.delete<{ Params: { id: string } }>('/copilot/memory/items/:id', async (req, reply) => {
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    return store.deleteLayeredMemoryItem(identity.userId, req.params.id);
   });
 
-  app.post('/copilot/memory/revert-latest', async (req) => {
-    const identity = getIdentity(req);
-    return store.revertLatestMemoryChange(identity.displayName);
+  app.post('/copilot/memory/revert-latest', async (req, reply) => {
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    return store.revertLatestMemoryChange(identity.userId);
   });
 
   app.post('/copilot/memory/suggestions', async (req, reply) => {
     const parse = SuggestionInput.safeParse(req.body);
     if (!parse.success) return reply.code(400).send({ error: 'Invalid request body', details: parse.error.issues });
-    const identity = getIdentity(req);
-    const suggestion = await store.addSuggestion(identity.displayName, createPreferenceSuggestion(parse.data));
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    const suggestion = await store.addSuggestion(identity.userId, createPreferenceSuggestion(parse.data));
     return reply.code(201).send(suggestion);
   });
 
-  app.post<{ Params: { id: string } }>('/copilot/memory/suggestions/:id/accept', async (req) => {
-    const identity = getIdentity(req);
-    return store.acceptSuggestion(identity.displayName, req.params.id);
+  app.post<{ Params: { id: string } }>('/copilot/memory/suggestions/:id/accept', async (req, reply) => {
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    return store.acceptSuggestion(identity.userId, req.params.id);
   });
 
   app.post<{ Params: { id: string } }>('/copilot/memory/suggestions/:id/ignore', async (req, reply) => {
-    const identity = getIdentity(req);
-    const suggestion = await store.ignoreSuggestion(identity.displayName, req.params.id);
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    const suggestion = await store.ignoreSuggestion(identity.userId, req.params.id);
     if (!suggestion) return reply.code(404).send({ error: 'Suggestion not found' });
     return suggestion;
   });
 
-  app.delete<{ Params: { id: string } }>('/copilot/memory/preferences/:id', async (req) => {
-    const identity = getIdentity(req);
-    await store.deletePreference(identity.displayName, req.params.id);
+  app.delete<{ Params: { id: string } }>('/copilot/memory/preferences/:id', async (req, reply) => {
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
+    await store.deletePreference(identity.userId, req.params.id);
     return { ok: true as const };
   });
 

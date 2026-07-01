@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createInterface } from 'node:readline';
 import { resolveKimiBinary, KimiBinaryNotFoundError } from './kimiBinaryResolver.js';
+import { writeConfigToHome } from './kimiConfig.js';
 import type { CopilotAiMetricCallback } from './aiProvider.js';
 
 /**
@@ -31,6 +32,7 @@ export interface KimiChatMessage {
 }
 
 export interface KimiStreamRequest {
+  apiKey?: string;
   systemPromptText: string;
   /** Prior conversation. Folded into the prompt body — kimi has no `--system-prompt` flag. */
   conversation: KimiChatMessage[];
@@ -87,9 +89,17 @@ export async function* streamKimiChat(
   // even if `default_permission_mode = "manual"` somehow falls through
   // and a tool gets approved. Cleaned up in finally.
   const scratchDir = mkdtempSync(join(tmpdir(), 'pingarden-copilot-'));
+  let homeDir: string | null = null;
 
   let child: ReturnType<typeof spawn> | null = null;
   try {
+    let childEnv = process.env;
+    if (req.apiKey) {
+      homeDir = mkdtempSync(join(tmpdir(), 'pingarden-kimi-home-'));
+      await writeConfigToHome(homeDir, req.apiKey);
+      childEnv = { ...process.env, HOME: homeDir };
+      req.metrics?.({ name: 'cliTempConfigWritten', atMs: Date.now() });
+    }
     req.metrics?.({ name: 'cliSpawnStart', atMs: Date.now() });
     child = spawn(
       bin,
@@ -100,7 +110,7 @@ export async function* streamKimiChat(
       ],
       {
         cwd: scratchDir,
-        env: process.env,
+        env: childEnv,
         stdio: ['ignore', 'pipe', 'pipe'],
       },
     );
@@ -185,6 +195,13 @@ export async function* streamKimiChat(
       rmSync(scratchDir, { recursive: true, force: true });
     } catch {
       /* best-effort */
+    }
+    if (homeDir) {
+      try {
+        rmSync(homeDir, { recursive: true, force: true });
+      } catch {
+        /* best-effort */
+      }
     }
   }
 }

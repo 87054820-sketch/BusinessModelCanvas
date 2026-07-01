@@ -25,6 +25,7 @@ import { join } from 'node:path';
 
 const KIMI_CODE_DIR = join(homedir(), '.kimi-code');
 const CONFIG_PATH = join(KIMI_CODE_DIR, 'config.toml');
+const PIN_GARDEN_MARKER = '# Managed by PinGarden Library Copilot';
 
 const EMPTY_STUB = `# ~/.kimi-code/config.toml
 # Runtime settings for Kimi Code.
@@ -38,8 +39,16 @@ export async function writeConfig(apiKey: string): Promise<void> {
   await fs.writeFile(CONFIG_PATH, toml, { encoding: 'utf8', mode: 0o600 });
 }
 
+export async function writeConfigToHome(homeDir: string, apiKey: string): Promise<void> {
+  const configDir = join(homeDir, '.kimi-code');
+  await fs.mkdir(configDir, { recursive: true });
+  await fs.writeFile(join(configDir, 'config.toml'), renderToml(apiKey), { encoding: 'utf8', mode: 0o600 });
+}
+
 export async function clearConfig(): Promise<void> {
   try {
+    const existing = await fs.readFile(CONFIG_PATH, 'utf8');
+    if (!existing.startsWith(PIN_GARDEN_MARKER)) return;
     await fs.writeFile(CONFIG_PATH, EMPTY_STUB, { encoding: 'utf8', mode: 0o600 });
   } catch (err) {
     if ((err as NodeJS.ErrnoException).code === 'ENOENT') return;
@@ -49,7 +58,7 @@ export async function clearConfig(): Promise<void> {
 
 function renderToml(apiKey: string): string {
   const escapedKey = apiKey.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-  return `# Managed by PinGarden Library Copilot — do not edit by hand.
+  return `${PIN_GARDEN_MARKER} — do not edit by hand.
 # This file is regenerated whenever the user updates their key in the
 # Copilot settings. Source-of-truth lives in the PinGarden encrypted
 # blob; this is a derived rendering.

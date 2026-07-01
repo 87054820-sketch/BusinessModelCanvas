@@ -9,6 +9,7 @@ import type {
 } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import { loadKnowledgeForBundle, type LoadedCanvasDef } from '../canvasDefs/loader.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
 import {
   getPinClassesRoot,
   getPinsRoot,
@@ -50,6 +51,7 @@ export function registerAiContextRoutes(
   app: FastifyInstance,
   storage: CanvasStorage,
   defs: LoadedCanvasDef[],
+  access: ProjectAccessService,
 ) {
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
 
@@ -57,8 +59,9 @@ export function registerAiContextRoutes(
     Params: { id: string };
     Querystring: { lang?: string };
   }>('/canvases/:id/ai-context', async (req, reply) => {
-    const meta = await storage.getCanvas(req.params.id);
-    if (!meta) return reply.code(404).send({ error: 'Canvas not found' });
+    const canvasAccess = await access.ensureCanvas(req, reply, req.params.id, 'view');
+    if (!canvasAccess) return;
+    const meta = canvasAccess.canvas;
 
     const bundle = defsById.get(meta.defId);
     if (!bundle) {

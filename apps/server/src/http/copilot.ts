@@ -1,5 +1,5 @@
 import type { ServerResponse } from 'node:http';
-import type { FastifyInstance } from 'fastify';
+import type { FastifyInstance, FastifyReply } from 'fastify';
 import * as Y from 'yjs';
 import { z } from 'zod';
 import {
@@ -16,16 +16,28 @@ import {
 } from '@pingarden/shared';
 import type { FederatedStorage } from '../storage/FederatedStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
-import type { CopilotAiChatMessage, CopilotAiMetricEvent, CopilotAiProvider } from '../llm/aiProvider.js';
-import { KimiCliProvider } from '../llm/kimiCliProvider.js';
-import { KimiHttpProvider } from '../llm/kimiHttpProvider.js';
+import type {
+  CopilotAiChatMessage,
+  CopilotAiMetricEvent,
+  CopilotAiProviderKind,
+  CopilotModelId,
+} from '../llm/aiProvider.js';
+import {
+  COPILOT_MODEL_VALUES,
+  COPILOT_PROVIDER_VALUES,
+  type CopilotAiRouter,
+  type CopilotAiSelection,
+  CopilotAiSelectionError,
+  createCopilotAiRouter,
+} from '../llm/copilotAiRouter.js';
 import { buildBundledPlaybookPrompt } from '../copilot/bundledPlaybooks.js';
 import { buildMemorySuggestionPrompt } from '../copilot/memorySummarizer.js';
 import { buildCopilotProtocol, type CopilotProtocolIntent } from '../copilot/protocols.js';
 import { CopilotUserProfileStore } from '../copilot/userProfileStore.js';
 import { config } from '../config.js';
-import { getIdentity } from './identity.js';
+import { requireIdentity } from './identity.js';
 import { stripEmptyAssistantMessages } from './copilotMessages.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
 
 const STICKIES_KEY = 'stickies';
 const ACCEPTED_IMAGE_TYPES = COPILOT_ACCEPTED_IMAGE_TYPES;
@@ -36,25 +48,25 @@ const COPILOT_SSE_HEARTBEAT_MS = 15_000;
 const MAX_ATTACHED_CONTEXT_CHARS = 12_000;
 
 /**
- * Copilot HTTP surface — Mode A (Kimi CLI chat) routes:
+ * Copilot HTTP surface — AI provider chat routes:
  *
- *   GET  /copilot/health                 → {kimi:{available,version?}}
+ *   GET  /copilot/health                 → active provider + provider list
  *   POST /copilot/test-key               → {ok:bool, message?:string}
- *   POST /copilot/chat                   → SSE stream of {delta} from bundled kimi
+ *   POST /copilot/chat                   → SSE stream of {delta} from selected provider
  *   GET  /copilot/case-context/:slug     → pre-formatted markdown brief
  *   GET  /copilot/pattern-context/:slug  → pre-formatted markdown brief
  *
  * Design choices:
  * - **No server-side key persistence.** The renderer holds the
- *   encrypted Kimi Code key in localStorage (via Electron safeStorage
- *   where available), decrypts it for each chat turn, and includes the
- *   plaintext in the request body. The server uses it for the request
- *   lifetime only — written to `~/.kimi-code/config.toml` just before
- *   spawning `kimi`, never persisted to PinGarden's own dataDir.
- * - **kimi-subprocess transport.** Bundled `kimi -p ...
- *   --output-format stream-json` is the only way to legally reach the
- *   kimi-for-coding model (it's gated to registered coding agents). Output is parsed
- *   line-by-line in `kimiCliAdapter.ts`.
+ *   provider key in browser storage (via Electron safeStorage where
+ *   available), decrypts it for each chat turn, and includes the
+ *   plaintext in the request body. The server uses it only for the
+ *   request lifetime. Kimi CLI mode renders config into a temporary
+ *   HOME for the spawned process; PinGarden never persists keys in its
+ *   dataDir or the user's global Kimi config.
+ * - **Provider transports.** Kimi CLI streams through the bundled binary;
+ *   Kimi HTTP and DeepSeek HTTP share an OpenAI-compatible streaming
+ *   adapter.
  * - **SSE wire shape:** uniform `data: {"delta": "..."}` frames followed
  *   by a final `data: {"done": true}` frame. Errors emit a single
  *   `data: {"error": "..."}` frame before closing. Matches what the
@@ -64,27 +76,23 @@ export function registerCopilotRoutes(
   app: FastifyInstance,
   storage: FederatedStorage,
   defs: LoadedCanvasDef[],
+  access: ProjectAccessService,
 ) {
   const bundle = storage.bundleStorage;
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
   const profileStore = new CopilotUserProfileStore(config.dataDir);
-  const aiProvider = createCopilotAiProvider();
+  const aiRouter = createCopilotAiRouter(config.aiProvider);
 
   // ── GET /copilot/health ──────────────────────────────────────────────
   app.get('/copilot/health', async () => {
-    const provider = await aiProvider.health();
-    return {
-      provider,
-      kimi: {
-        available: provider.provider === 'kimi-cli' ? provider.available : true,
-        ...(provider.version ? { version: provider.version } : {}),
-      },
-    };
+    return aiRouter.health();
   });
 
   // ── POST /copilot/test-key ──────────────────────────────────────────
   const TestKeySchema = z.object({
     apiKey: z.string().min(1),
+    model: z.enum(COPILOT_MODEL_VALUES).optional(),
+    provider: z.enum(COPILOT_PROVIDER_VALUES).optional(),
   });
 
   app.post('/copilot/test-key', async (req, reply) => {
@@ -92,12 +100,23 @@ export function registerCopilotRoutes(
     if (!parse.success) {
       return reply.code(400).send({ ok: false, message: 'Invalid request body' });
     }
-    return reply.send(await aiProvider.testKey(parse.data.apiKey));
+    const selection = resolveAiSelection(reply, aiRouter, parse.data);
+    if (!selection) return;
+    return reply.send(await selection.provider.testKey(parse.data.apiKey));
   });
 
   // ── POST /copilot/clear-key ─────────────────────────────────────────
-  app.post('/copilot/clear-key', async (_req, reply) => {
-    return reply.send(await aiProvider.clearKey());
+  const ClearKeySchema = z.object({
+    model: z.enum(COPILOT_MODEL_VALUES).optional(),
+    provider: z.enum(COPILOT_PROVIDER_VALUES).optional(),
+  }).optional();
+
+  app.post('/copilot/clear-key', async (req, reply) => {
+    const parse = ClearKeySchema.safeParse(req.body);
+    if (!parse.success) return reply.code(400).send({ ok: false, message: 'Invalid request body' });
+    const selection = resolveAiSelection(reply, aiRouter, parse.data);
+    if (!selection) return;
+    return reply.send(await selection.provider.clearKey());
   });
 
   // ── POST /copilot/chat — SSE stream proxy ────────────────────────────
@@ -112,6 +131,8 @@ export function registerCopilotRoutes(
 
   const ChatRequestSchema = z.object({
     apiKey: z.string().min(1),
+    model: z.enum(COPILOT_MODEL_VALUES).optional(),
+    provider: z.enum(COPILOT_PROVIDER_VALUES).optional(),
     intent: z.enum(['project-draft', 'project-update', 'discussion-insight', 'apply-learning-to-project']).optional(),
     messages: z
       .array(
@@ -141,7 +162,8 @@ export function registerCopilotRoutes(
       if (event.details) providerDetails[event.name] = event.details;
     };
 
-    const identity = getIdentity(req);
+    const identity = requireIdentity(req, reply);
+    if (!identity) return;
     mark('identityMs');
     const parse = ChatRequestSchema.safeParse(req.body);
     mark('requestParsedMs');
@@ -161,6 +183,8 @@ export function registerCopilotRoutes(
     }
 
     const body = parse.data;
+    const selection = resolveAiSelection(reply, aiRouter, body);
+    if (!selection) return;
     const sanitizedMessages = stripEmptyAssistantMessages(body.messages);
     const strippedEmptyAssistantCount = body.messages.length - sanitizedMessages.length;
     const attachmentCount = sanitizedMessages.reduce(
@@ -171,7 +195,8 @@ export function registerCopilotRoutes(
     const requestLog = req.log.child({
       route: '/copilot/chat',
       displayName: identity.displayName,
-      provider: config.aiProvider,
+      model: selection.model,
+      provider: selection.providerId,
       intent: body.intent ?? null,
       lang: body.lang ?? null,
       messageCount: body.messages.length,
@@ -251,7 +276,7 @@ export function registerCopilotRoutes(
 
     try {
       const memoryStartedAt = Date.now();
-      const userProfileContext = await profileStore.buildPromptContext(identity.displayName);
+      const userProfileContext = await profileStore.buildPromptContext(identity.userId);
       timings.memoryPromptContextMs = Date.now() - memoryStartedAt;
       mark('memoryPromptContextDoneMs');
 
@@ -264,7 +289,7 @@ export function registerCopilotRoutes(
       timings.priorConversationChars = prior.reduce((total, message) => total + message.content.length, 0);
       mark('preUpstreamDoneMs');
 
-      for await (const chunk of aiProvider.streamChat({
+      for await (const chunk of selection.provider.streamChat({
         apiKey: body.apiKey,
         systemPromptText,
         conversation: prior,
@@ -305,6 +330,8 @@ export function registerCopilotRoutes(
         writeSseData(raw, {
           done: true,
           requestId: req.id,
+          model: selection.model,
+          provider: selection.providerId,
           timings,
           providerTimings,
         });
@@ -419,8 +446,9 @@ export function registerCopilotRoutes(
     Params: { id: string };
     Querystring: { lang?: string; activeCanvasId?: string; activeStoryId?: string };
   }>('/copilot/project-context/:id', async (req, reply) => {
-    const project = await storage.getProject(req.params.id);
-    if (!project) return reply.code(404).send({ error: 'Project not found' });
+    const projectAccess = await access.ensureProject(req, reply, req.params.id, 'view');
+    if (!projectAccess) return;
+    const project = projectAccess.project;
 
     const lang = parseLang(req.query.lang) ?? 'en';
     const markdown = await buildProjectMarkdown(
@@ -440,8 +468,9 @@ export function registerCopilotRoutes(
     Params: { id: string };
     Querystring: { lang?: string };
   }>('/copilot/canvas-context/:id', async (req, reply) => {
-    const canvas = await storage.getCanvas(req.params.id);
-    if (!canvas) return reply.code(404).send({ error: 'Canvas not found' });
+    const canvasAccess = await access.ensureCanvas(req, reply, req.params.id, 'view');
+    if (!canvasAccess) return;
+    const canvas = canvasAccess.canvas;
 
     const lang = parseLang(req.query.lang) ?? canvas.language;
     const markdown = await buildCanvasMarkdown(canvas, storage, defsById, lang);
@@ -454,8 +483,9 @@ export function registerCopilotRoutes(
     Params: { id: string };
     Querystring: { lang?: string };
   }>('/copilot/story-context/:id', async (req, reply) => {
-    const story = await storage.getStory(req.params.id);
-    if (!story) return reply.code(404).send({ error: 'Story not found' });
+    const storyAccess = await access.ensureStory(req, reply, req.params.id, 'view');
+    if (!storyAccess) return;
+    const story = storyAccess.story;
 
     const lang = parseLang(req.query.lang) ?? story.language ?? 'en';
     const markdown = await buildStoryMarkdown(story.id, storage, defsById, lang);
@@ -463,8 +493,20 @@ export function registerCopilotRoutes(
   });
 }
 
-function createCopilotAiProvider(): CopilotAiProvider {
-  return config.aiProvider === 'kimi-http' ? new KimiHttpProvider() : new KimiCliProvider();
+function resolveAiSelection(
+  reply: FastifyReply,
+  aiRouter: CopilotAiRouter,
+  input: { model?: CopilotModelId; provider?: CopilotAiProviderKind } | undefined,
+): CopilotAiSelection | null {
+  try {
+    return aiRouter.resolve(input);
+  } catch (err) {
+    if (err instanceof CopilotAiSelectionError) {
+      reply.code(400).send({ ok: false, message: err.message });
+      return null;
+    }
+    throw err;
+  }
 }
 
 function writeSseComment(raw: ServerResponse, comment: string): void {
@@ -732,7 +774,8 @@ async function buildLibraryMarkdown(
     }
   }
 
-  return lines.join('\n').trim();
+  const markdown = lines.join('\n').trim();
+  return q ? limitMarkdown(markdown, MAX_ATTACHED_CONTEXT_CHARS) : markdown;
 }
 
 async function appendCaseDetailHints(

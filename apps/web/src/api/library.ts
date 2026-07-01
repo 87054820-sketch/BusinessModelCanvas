@@ -28,12 +28,12 @@ async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> 
 const caseDetailCache = new Map<string, Promise<CaseLibraryDetail>>();
 
 export const libraryApi = {
-  list(displayName: string): Promise<CaseLibraryEntry[]> {
+  list(displayName?: string): Promise<CaseLibraryEntry[]> {
     return fetchJson<CaseLibraryEntry[]>(`${BASE}/library/cases`, {
       headers: authHeaders(displayName),
     });
   },
-  get(slug: string, displayName: string): Promise<CaseLibraryDetail> {
+  get(slug: string, displayName?: string): Promise<CaseLibraryDetail> {
     const cached = caseDetailCache.get(slug);
     if (cached) return cached;
     const promise = fetchJson<CaseLibraryDetail>(
@@ -53,13 +53,25 @@ export const libraryApi = {
    * the requested language isn't shipped (single-language cases
    * always produce a fork).
    */
-  fork(slug: string, displayName: string, lang?: Lang): Promise<CaseForkResult> {
+  fork(
+    slug: string,
+    displayName?: string,
+    lang?: Lang,
+    opts?: { teamId?: string },
+  ): Promise<CaseForkResult> {
     const url = lang
       ? `${BASE}/library/cases/${encodeURIComponent(slug)}/fork?lang=${lang}`
       : `${BASE}/library/cases/${encodeURIComponent(slug)}/fork`;
+    const hasBody = !!opts?.teamId;
     return fetchJson<CaseForkResult>(
       url,
-      { method: 'POST', headers: authHeaders(displayName) },
+      {
+        method: 'POST',
+        headers: hasBody
+          ? { ...authHeaders(displayName), 'Content-Type': 'application/json' }
+          : authHeaders(displayName),
+        ...(hasBody ? { body: JSON.stringify({ teamId: opts.teamId }) } : {}),
+      },
     );
   },
   /**

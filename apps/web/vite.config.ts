@@ -62,6 +62,19 @@ export default defineConfig({
       '/library/strategy-frameworks': { target: 'http://localhost:4000', changeOrigin: true },
       '/library/resources': { target: 'http://localhost:4000', changeOrigin: true },
       '/copilot': { target: 'http://localhost:4000', changeOrigin: true },
+      '/auth': {
+        target: 'http://127.0.0.1:4000',
+        changeOrigin: true,
+        bypass: (req) => {
+          if (
+            req.url?.startsWith('/auth/wechat/start') &&
+            req.headers.accept?.includes('text/html')
+          ) {
+            return '/login';
+          }
+        },
+      },
+      '/me': { target: 'http://localhost:4000', changeOrigin: true },
       '/health': { target: 'http://localhost:4000', changeOrigin: true },
     },
   },

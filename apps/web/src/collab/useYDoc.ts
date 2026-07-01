@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import * as Y from 'yjs';
+import { authHeaders } from '../api/authHeaders';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 
@@ -33,7 +34,9 @@ export function useYDoc(
     const ydoc = new Y.Doc();
 
     // 1) hydrate
-    fetch(`${BASE}/canvases/${canvasId}/state`)
+    fetch(`${BASE}/canvases/${canvasId}/state`, {
+      headers: authHeaders(displayName),
+    })
       .then(async (res) => {
         if (cancelled) return;
         if (res.status === 200) {
@@ -66,8 +69,8 @@ export function useYDoc(
         void fetch(`${BASE}/canvases/${canvasId}/state`, {
           method: 'PUT',
           headers: {
+            ...authHeaders(displayName),
             'Content-Type': 'application/octet-stream',
-            'X-Display-Name': encodeURIComponent(displayName),
           },
           body,
         }).then((res) => {
@@ -90,8 +93,8 @@ export function useYDoc(
         void fetch(`${BASE}/canvases/${canvasId}/state`, {
           method: 'PUT',
           headers: {
+            ...authHeaders(displayName),
             'Content-Type': 'application/octet-stream',
-            'X-Display-Name': encodeURIComponent(displayName),
           },
           body: flushBody,
           keepalive: true,

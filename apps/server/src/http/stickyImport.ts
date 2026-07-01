@@ -13,7 +13,7 @@ import {
 } from '@pingarden/shared';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
-import { getIdentity } from './identity.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
 
 /**
  * Bulk-sticky import endpoint.
@@ -68,14 +68,16 @@ export function registerStickyImportRoutes(
   app: FastifyInstance,
   storage: CanvasStorage,
   defs: LoadedCanvasDef[],
+  access: ProjectAccessService,
 ) {
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
 
   app.post<{ Params: { id: string } }>(
     '/canvases/:id/stickies/bulk',
     async (req, reply) => {
-      const meta = await storage.getCanvas(req.params.id);
-      if (!meta) return reply.code(404).send({ error: 'Canvas not found' });
+      const result = await access.ensureCanvas(req, reply, req.params.id, 'edit');
+      if (!result?.identity) return;
+      const meta = result.canvas;
 
       const bundle = defsById.get(meta.defId);
       if (!bundle) {
@@ -105,7 +107,7 @@ export function registerStickyImportRoutes(
         });
       }
 
-      const identity = getIdentity(req);
+      const identity = result.identity;
       const now = new Date().toISOString();
 
       // REPLACE: build a fresh Y.Doc from scratch — pre-existing stickies
@@ -181,6 +183,7 @@ export function registerStickyImportRoutes(
       // Touch canvas meta so the project list reflects the change.
       await storage.updateCanvasMeta(req.params.id, {
         updatedBy: identity.displayName,
+        updatedByUserId: identity.userId,
       });
 
       return reply.code(200).send({ replaced: ids.length, ids });

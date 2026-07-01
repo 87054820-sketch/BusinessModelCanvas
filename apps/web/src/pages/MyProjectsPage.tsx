@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { CanvasMeta } from '@pingarden/shared';
 import { api } from '../api/client';
 import { projectsApi } from '../api/projects';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
+import { LoginDialog } from '../identity/IdentityModal';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { ProjectCard } from '../components/ProjectCard';
 import type { ProjectWithCanvases } from '../components/ProjectPicker';
@@ -28,18 +29,30 @@ import { stateWithFrom } from '../navigation/useSmartBack';
  */
 export function MyProjectsPage() {
   const { t } = useTranslation();
-  const { identity } = useIdentity();
+  const { identity, user, authenticated, signInWithWeChat } = useAuthSession();
   const navigate = useNavigate();
   const location = useLocation();
+  const [searchParams] = useSearchParams();
+  const scope =
+    searchParams.get('scope') === 'team'
+      ? 'team'
+      : searchParams.get('scope') === 'personal'
+      ? 'personal'
+      : null;
 
   const [projects, setProjects] = useState<ProjectWithCanvases[] | null>(null);
   const [pendingDelete, setPendingDelete] = useState<ProjectWithCanvases | null>(null);
 
   async function load() {
-    if (!identity) return;
+    if (!authenticated) return;
+    if (scope === 'team' && user?.canUseTeams === false) {
+      setProjects([]);
+      return;
+    }
+    const displayName = identity?.displayName ?? '';
     const [userProjects, allCanvases] = await Promise.all([
-      projectsApi.list(identity.displayName),
-      api.listCanvases(identity.displayName),
+      projectsApi.list(displayName),
+      api.listCanvases(displayName),
     ]);
     const byProject = new Map<string, CanvasMeta[]>();
     for (const c of allCanvases) {
@@ -60,6 +73,7 @@ export function MyProjectsPage() {
         // forks they made from the library. Library originals belong
         // on /library, not here, so filter them out by source.
         .filter((p) => p.source !== 'library')
+        .filter((p) => (scope ? (p.projectType ?? 'personal') === scope : true))
         .map((p) => ({ ...p, canvases: byProject.get(p.id) ?? [] })),
     );
   }
@@ -67,13 +81,19 @@ export function MyProjectsPage() {
   useEffect(() => {
     void load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [identity]);
+  }, [authenticated, identity?.displayName, scope, user?.canUseTeams]);
 
-  if (!identity) return null;
+  if (!authenticated) {
+    return (
+      <LoginDialog
+        onSignIn={() => signInWithWeChat()}
+        onCancel={() => navigate('/library', { state: stateWithFrom(location) })}
+      />
+    );
+  }
 
   async function handleDelete(p: ProjectWithCanvases) {
-    if (!identity) return;
-    await projectsApi.delete(p.id, identity.displayName);
+    await projectsApi.delete(p.id, identity?.displayName);
     setPendingDelete(null);
     void load();
   }
@@ -95,7 +115,11 @@ export function MyProjectsPage() {
             ← {t('nav.back')}
           </BackLink>
           <h1 className="mt-3 text-2xl font-semibold text-gray-900">
-            {t('home.myProjects')}
+            {scope === 'team'
+              ? t('home.teamProjects')
+              : scope === 'personal'
+              ? t('home.personalProjects')
+              : t('home.myProjects')}
           </h1>
           <p className="mt-1 text-sm text-gray-500">{t('myProjects.pageSubtitle')}</p>
         </div>
@@ -109,7 +133,11 @@ export function MyProjectsPage() {
       </header>
 
       {/* Project grid */}
-      {projects === null ? (
+      {scope === 'team' && user?.canUseTeams === false ? (
+        <p className="rounded-lg border border-dashed border-amber-200 bg-amber-50 py-12 text-center text-sm text-amber-900">
+          {t('myProjects.teamRequiresWechat')}
+        </p>
+      ) : projects === null ? (
         <p className="text-sm text-gray-400">{t('home.loading')}…</p>
       ) : allProjects.length === 0 ? (
         <p className="rounded-lg border border-dashed border-gray-200 bg-white py-12 text-center text-sm text-gray-400">

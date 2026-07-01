@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
+import type { CopilotModelId } from '../api/copilot';
 
 type KeyStorageMode = 'session' | 'local';
 
-const LOCAL_STORAGE_KEY = 'pingarden.copilot.kimi-key';
-const SESSION_STORAGE_KEY = 'pingarden.copilot.kimi-key.session';
+const LEGACY_LOCAL_STORAGE_KEY = 'pingarden.copilot.kimi-key';
+const LEGACY_SESSION_STORAGE_KEY = 'pingarden.copilot.kimi-key.session';
+const STORAGE_PREFIX = 'pingarden.copilot.provider-key';
 const CHANGE_EVENT = 'pingarden:copilot-key-change';
 
 interface KeyRecord {
@@ -35,6 +37,10 @@ function bridge(): ElectronSafeStorageBridge | null {
   return (window as unknown as ElectronApiWindow).electronAPI?.safeStorage ?? null;
 }
 
+function storageKey(model: CopilotModelId, mode: KeyStorageMode): string {
+  return `${STORAGE_PREFIX}.${model}.${mode}`;
+}
+
 function parseRecord(raw: string | null, fallbackMode: KeyStorageMode): LoadedKeyRecord | null {
   if (!raw) return null;
   try {
@@ -53,32 +59,62 @@ function parseRecord(raw: string | null, fallbackMode: KeyStorageMode): LoadedKe
   }
 }
 
-function load(): LoadedKeyRecord | null {
+function migrateLegacyKimiKey() {
   if (typeof sessionStorage !== 'undefined') {
-    const sessionRecord = parseRecord(sessionStorage.getItem(SESSION_STORAGE_KEY), 'session');
+    const legacy = sessionStorage.getItem(LEGACY_SESSION_STORAGE_KEY);
+    const nextKey = storageKey('kimi', 'session');
+    if (legacy && !sessionStorage.getItem(nextKey)) sessionStorage.setItem(nextKey, legacy);
+  }
+  if (typeof localStorage !== 'undefined') {
+    const legacy = localStorage.getItem(LEGACY_LOCAL_STORAGE_KEY);
+    const nextKey = storageKey('kimi', 'local');
+    if (legacy && !localStorage.getItem(nextKey)) localStorage.setItem(nextKey, legacy);
+  }
+}
+
+function load(model: CopilotModelId): LoadedKeyRecord | null {
+  if (model === 'kimi') migrateLegacyKimiKey();
+  if (typeof sessionStorage !== 'undefined') {
+    const sessionRecord = parseRecord(sessionStorage.getItem(storageKey(model, 'session')), 'session');
     if (sessionRecord) return sessionRecord;
   }
   if (typeof localStorage !== 'undefined') {
-    return parseRecord(localStorage.getItem(LOCAL_STORAGE_KEY), 'local');
+    return parseRecord(localStorage.getItem(storageKey(model, 'local')), 'local');
   }
   return null;
 }
 
-function persist(rec: KeyRecord | null, mode: KeyStorageMode) {
-  if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem(SESSION_STORAGE_KEY);
-  if (typeof localStorage !== 'undefined') localStorage.removeItem(LOCAL_STORAGE_KEY);
+function persist(model: CopilotModelId, rec: KeyRecord | null, mode: KeyStorageMode) {
+  if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem(storageKey(model, 'session'));
+  if (typeof localStorage !== 'undefined') localStorage.removeItem(storageKey(model, 'local'));
 
   if (rec !== null) {
     const payload = JSON.stringify({ ...rec, storageMode: mode });
-    if (mode === 'session') sessionStorage.setItem(SESSION_STORAGE_KEY, payload);
-    else localStorage.setItem(LOCAL_STORAGE_KEY, payload);
+    if (mode === 'session' && typeof sessionStorage !== 'undefined') sessionStorage.setItem(storageKey(model, 'session'), payload);
+    if (mode === 'local' && typeof localStorage !== 'undefined') localStorage.setItem(storageKey(model, 'local'), payload);
   }
   window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
-export function useKeyConfig() {
-  const [record, setRecord] = useState<LoadedKeyRecord | null>(load);
+export interface CopilotKeyConfig {
+  hasKey: boolean;
+  savedAt: string | null;
+  storageMode: KeyStorageMode | null;
+  rememberInBrowser: boolean;
+  encryptionAvailable: boolean;
+  encryptedAtRest: boolean;
+  save(plaintextKey: string, opts?: { rememberInBrowser?: boolean }): Promise<void>;
+  remove(): void;
+  resolveKey(): Promise<string | null>;
+}
+
+export function useKeyConfig(model: CopilotModelId = 'kimi'): CopilotKeyConfig {
+  const [record, setRecord] = useState<LoadedKeyRecord | null>(() => load(model));
   const [encryptionAvailable, setEncryptionAvailable] = useState<boolean>(false);
+
+  useEffect(() => {
+    setRecord(load(model));
+  }, [model]);
 
   useEffect(() => {
     let cancelled = false;
@@ -102,10 +138,16 @@ export function useKeyConfig() {
 
   useEffect(() => {
     function refresh() {
-      setRecord(load());
+      setRecord(load(model));
     }
     function onStorage(e: StorageEvent) {
-      if (e.key === LOCAL_STORAGE_KEY || e.key === SESSION_STORAGE_KEY) refresh();
+      if (
+        e.key?.startsWith(STORAGE_PREFIX) ||
+        e.key === LEGACY_LOCAL_STORAGE_KEY ||
+        e.key === LEGACY_SESSION_STORAGE_KEY
+      ) {
+        refresh();
+      }
     }
     window.addEventListener('storage', onStorage);
     window.addEventListener(CHANGE_EVENT, refresh);
@@ -113,7 +155,7 @@ export function useKeyConfig() {
       window.removeEventListener('storage', onStorage);
       window.removeEventListener(CHANGE_EVENT, refresh);
     };
-  }, []);
+  }, [model]);
 
   const save = useCallback(async (plaintextKey: string, opts?: { rememberInBrowser?: boolean }) => {
     const mode: KeyStorageMode = opts?.rememberInBrowser ? 'local' : 'session';
@@ -135,14 +177,14 @@ export function useKeyConfig() {
       savedAt: new Date().toISOString(),
       storageMode: mode,
     };
-    persist(next, mode);
+    persist(model, next, mode);
     setRecord(next);
-  }, []);
+  }, [model]);
 
   const remove = useCallback(() => {
-    persist(null, 'session');
+    persist(model, null, 'session');
     setRecord(null);
-  }, []);
+  }, [model]);
 
   /**
    * Resolve the plaintext key for the next chat turn. In cloud web mode
@@ -151,7 +193,7 @@ export function useKeyConfig() {
    * in the request body for the current test/chat request.
    */
   const resolveKey = useCallback(async (): Promise<string | null> => {
-    const rec = load();
+    const rec = load(model);
     if (!rec) return null;
     if (rec.isPlaintext) return rec.blob;
     const b = bridge();
@@ -161,7 +203,7 @@ export function useKeyConfig() {
     } catch {
       return null;
     }
-  }, []);
+  }, [model]);
 
   return {
     hasKey: record !== null,

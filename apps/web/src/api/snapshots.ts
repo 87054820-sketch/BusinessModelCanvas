@@ -16,7 +16,7 @@ async function fetchVoid(input: RequestInfo, init?: RequestInit): Promise<void> 
 }
 
 export const snapshotsApi = {
-  list(canvasId: string, displayName: string): Promise<SnapshotMeta[]> {
+  list(canvasId: string, displayName?: string): Promise<SnapshotMeta[]> {
     return fetchJson<SnapshotMeta[]>(
       `${BASE}/canvases/${canvasId}/snapshots?kind=milestone`,
       { headers: authHeaders(displayName) },
@@ -25,7 +25,7 @@ export const snapshotsApi = {
   createMilestone(
     canvasId: string,
     body: { name: string; description?: string },
-    displayName: string,
+    displayName?: string,
   ): Promise<SnapshotMeta> {
     return fetchJson<SnapshotMeta>(`${BASE}/canvases/${canvasId}/snapshots`, {
       method: 'POST',
@@ -37,7 +37,7 @@ export const snapshotsApi = {
     canvasId: string,
     snapshotId: string,
     mode: 'replace' | 'fork',
-    displayName: string,
+    displayName?: string,
   ): Promise<{ canvas: CanvasMeta }> {
     return fetchJson<{ canvas: CanvasMeta }>(
       `${BASE}/canvases/${canvasId}/snapshots/${snapshotId}/restore`,
@@ -48,7 +48,7 @@ export const snapshotsApi = {
       },
     );
   },
-  delete(canvasId: string, snapshotId: string, displayName: string): Promise<void> {
+  delete(canvasId: string, snapshotId: string, displayName?: string): Promise<void> {
     return fetchVoid(`${BASE}/canvases/${canvasId}/snapshots/${snapshotId}`, {
       method: 'DELETE',
       headers: authHeaders(displayName),

@@ -7,7 +7,7 @@ import { projectsApi } from '../api/projects';
 import { storiesApi } from '../api/stories';
 import { getSourceCoverageIssues } from '../copilot/projectDraft';
 import { rewriteStoryCanvasDirectivesToCanvasIds, type CopilotCanvasReference } from '../copilot/storyCanvasReferences';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
 import { preserveNavigationState } from '../navigation/useSmartBack';
 
 type CreateState = 'idle' | 'creating' | 'created' | 'error';
@@ -24,7 +24,8 @@ export function CopilotProjectDraftCard({
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
-  const { identity } = useIdentity();
+  const { identity, user, authenticated } = useAuthSession();
+  const displayName = identity?.displayName ?? user?.displayName ?? '';
   const [state, setState] = useState<CreateState>('idle');
   const [error, setError] = useState<string | null>(null);
   const [projectName, setProjectName] = useState(() => normalizeProjectName(draft.project.name));
@@ -55,7 +56,7 @@ export function CopilotProjectDraftCard({
   const ready = !missingName && !missingDescription && emptyCanvasCount === 0 && sourceIssues.length === 0 && hardIssues.length === 0;
 
   async function createProject() {
-    if (!identity || !ready || state === 'creating') return;
+    if (!authenticated || !ready || state === 'creating') return;
     setState('creating');
     setError(null);
     // Final hard-rule gate. `ready` already blocks when hardIssues is
@@ -91,7 +92,7 @@ export function CopilotProjectDraftCard({
           name: projectName.trim(),
           description: projectDescription.trim(),
         },
-        identity.displayName,
+        displayName,
       );
 
       const createdCanvasRefs: CopilotCanvasReference[] = [];
@@ -103,9 +104,9 @@ export function CopilotProjectDraftCard({
             title: canvasDraft.title,
             language: lang,
           },
-          identity.displayName,
+          displayName,
         );
-        await api.bulkStickies(created.id, canvasDraft.stickies, identity.displayName);
+        await api.bulkStickies(created.id, canvasDraft.stickies, displayName);
         createdCanvasRefs.push({
           canvasId: created.id,
           defId: created.defId,
@@ -125,7 +126,7 @@ export function CopilotProjectDraftCard({
             content,
             status: 'draft',
           },
-          identity.displayName,
+          displayName,
         );
       }
 
@@ -264,7 +265,7 @@ export function CopilotProjectDraftCard({
 
         <button
           type="button"
-          disabled={!ready || !identity || state === 'creating' || state === 'created'}
+          disabled={!ready || !authenticated || state === 'creating' || state === 'created'}
           onClick={createProject}
           className="w-full rounded-xl bg-gray-950 px-3 py-2 text-[12px] font-medium text-white shadow-sm transition hover:bg-black disabled:cursor-not-allowed disabled:opacity-50"
         >

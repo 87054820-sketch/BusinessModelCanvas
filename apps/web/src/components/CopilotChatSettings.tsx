@@ -1,18 +1,48 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { copilotApi, normalizeCopilotFetchError, type CopilotProviderHealth } from '../api/copilot';
-import { useKeyConfig } from '../copilot/useKeyConfig';
+import {
+  normalizeCopilotFetchError,
+  type CopilotModelHealth,
+  type CopilotModelId,
+  type CopilotProviderHealth,
+} from '../api/copilot';
+import type { CopilotKeyConfig } from '../copilot/useKeyConfig';
+import {
+  getKeyLinkForModel,
+  introKeyForModelProvider,
+  providerLabel,
+  titleKeyForModelProvider,
+} from '../copilot/useCopilotModelRouter';
 
 export function CopilotChatSettings({
   onClose,
   provider,
+  models,
+  selectedModel,
+  selectedProvider,
+  keyConfig,
+  onModelChange,
+  onTestKey,
+  onClearKey,
 }: {
   onClose?: () => void;
   provider?: CopilotProviderHealth | null;
+  models: CopilotModelHealth[];
+  selectedModel: CopilotModelId;
+  selectedProvider: CopilotProviderHealth['provider'];
+  keyConfig: CopilotKeyConfig;
+  onModelChange(model: CopilotModelId): void;
+  onTestKey(apiKey: string): Promise<{ ok: boolean; message?: string }>;
+  onClearKey(): Promise<void>;
 }) {
   const { t } = useTranslation();
-  const config = useKeyConfig();
-  const isHttpProvider = provider?.provider === 'kimi-http';
+  const config = keyConfig;
+  const isHttpProvider = selectedProvider !== 'kimi-cli';
+  const providerName = providerLabel(provider ?? { provider: selectedProvider });
+  const titleKey = titleKeyForModelProvider(selectedModel, selectedProvider);
+  const introKey = introKeyForModelProvider(selectedModel, selectedProvider);
+  const getKey = getKeyLinkForModel(selectedModel);
+  const availableModels = models.length > 0 ? models : fallbackModelOptions();
 
   const [input, setInput] = useState('');
   const [rememberInBrowser, setRememberInBrowser] = useState(false);
@@ -22,18 +52,23 @@ export function CopilotChatSettings({
 
   useEffect(() => {
     setTestResult(null);
-  }, [input]);
+  }, [input, selectedModel, selectedProvider]);
 
   useEffect(() => {
-    setRememberInBrowser(config.rememberInBrowser || provider?.provider === 'kimi-cli');
-  }, [config.rememberInBrowser, provider?.provider]);
+    setRememberInBrowser(config.rememberInBrowser || selectedProvider === 'kimi-cli');
+  }, [config.rememberInBrowser, selectedProvider]);
+
+  useEffect(() => {
+    setInput('');
+    setSavedFlash(false);
+  }, [selectedModel]);
 
   async function handleTest() {
     if (!input.trim()) return;
     setTesting(true);
     setTestResult(null);
     try {
-      const result = await copilotApi.testKey(input.trim());
+      const result = await onTestKey(input.trim());
       setTestResult(result);
     } catch (err) {
       setTestResult({ ok: false, message: normalizeCopilotFetchError(err) });
@@ -55,9 +90,8 @@ export function CopilotChatSettings({
   }
 
   async function handleRemove() {
-    if (!window.confirm(t('library.copilot.removeConfirm'))) return;
-    config.remove();
-    await copilotApi.clearKey().catch(() => { /* best-effort */ });
+    if (!window.confirm(t('library.copilot.removeConfirm', { provider: providerName }))) return;
+    await onClearKey();
     setInput('');
     setTestResult(null);
   }
@@ -67,10 +101,10 @@ export function CopilotChatSettings({
       <div className="flex items-start justify-between gap-2">
         <div>
           <h3 className="text-sm font-semibold text-gray-900">
-            {t(isHttpProvider ? 'library.copilot.kimi.httpTitle' : 'library.copilot.kimi.title')}
+            {t(titleKey)}
           </h3>
           <p className="mt-1 text-[11px] leading-relaxed text-gray-600">
-            {t(isHttpProvider ? 'library.copilot.kimi.httpIntro' : 'library.copilot.kimi.intro')}
+            {t(introKey)}
           </p>
         </div>
         {onClose && (
@@ -84,6 +118,21 @@ export function CopilotChatSettings({
           </button>
         )}
       </div>
+
+      <label className="mt-3 block text-[11px] text-gray-600">
+        {t('library.copilot.modelProvider')}
+        <select
+          value={selectedModel}
+          onChange={(e) => onModelChange(e.target.value as CopilotModelId)}
+          className="mt-1 block w-full rounded-md border border-gray-300 bg-white px-2 py-1.5 text-sm text-gray-900 focus:border-gray-500 focus:outline-none"
+        >
+          {availableModels.map((item) => (
+            <option key={item.model} value={item.model}>
+              {t(`library.copilot.providerOptions.${item.model}`)}
+            </option>
+          ))}
+        </select>
+      </label>
 
       <div
         className={`mt-2 rounded-md border px-2 py-1.5 text-[11px] ${
@@ -119,12 +168,12 @@ export function CopilotChatSettings({
           />
         </label>
         <a
-          href="https://www.kimi.com/code/console"
+          href={getKey.href}
           target="_blank"
           rel="noreferrer noopener"
           className="mt-1 inline-block text-[11px] font-medium text-blue-600 hover:underline"
         >
-          {t('library.copilot.getKey')}
+          {t(getKey.labelKey)}
         </a>
       </div>
 
@@ -176,4 +225,37 @@ export function CopilotChatSettings({
       </div>
     </div>
   );
+}
+
+function fallbackModelOptions(): CopilotModelHealth[] {
+  return [
+    {
+      model: 'kimi',
+      provider: {
+        provider: 'kimi-cli',
+        modelId: 'kimi',
+        available: true,
+        requiresApiKey: true,
+        storesKeyServerSide: false,
+      },
+      providers: [],
+      defaultProvider: 'kimi-cli',
+      available: true,
+      requiresApiKey: true,
+    },
+    {
+      model: 'deepseek',
+      provider: {
+        provider: 'deepseek-http',
+        modelId: 'deepseek',
+        available: true,
+        requiresApiKey: true,
+        storesKeyServerSide: false,
+      },
+      providers: [],
+      defaultProvider: 'deepseek-http',
+      available: true,
+      requiresApiKey: true,
+    },
+  ];
 }

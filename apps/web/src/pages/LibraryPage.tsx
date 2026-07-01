@@ -12,7 +12,8 @@ import type {
 } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { libraryApi } from '../api/library';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
+import { LoginDialog } from '../identity/IdentityModal';
 import { CaseCard } from '../components/CaseCard';
 import { CasePreviewModal } from '../components/CasePreviewModal';
 import { PatternList } from '../components/PatternList';
@@ -69,7 +70,7 @@ const SHOWCASE_PAGE_SIZE = 6;
  */
 export function LibraryPage() {
   const { t, i18n } = useTranslation();
-  const { identity } = useIdentity();
+  const { identity, signInWithWeChat, authenticated } = useAuthSession();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -99,6 +100,7 @@ export function LibraryPage() {
   // context chip swaps automatically; clicking the chip's × clears it.
   const [copilotOpen, setCopilotOpen] = useState(false);
   const [attachedRef, setAttachedRef] = useState<AttachedRef | null>(null);
+  const [loginPromptOpen, setLoginPromptOpen] = useState(false);
   // Anchor for "scroll the list region into view" on page change.
   // Sits above the tab strip so the user sees the new page's first row
   // without scrolling up after clicking Next.
@@ -109,8 +111,7 @@ export function LibraryPage() {
   );
 
   useEffect(() => {
-    if (!identity) return;
-    void libraryApi.list(identity.displayName).then(setCases).catch(() => setCases([]));
+    void libraryApi.list().then(setCases).catch(() => setCases([]));
     // Patterns are public — no displayName required. Fetched once on
     // mount alongside cases so the Cases tab can render pattern chips
     // immediately (lookup needs the patterns list).
@@ -123,7 +124,7 @@ export function LibraryPage() {
     void libraryApi.listStrategyFrameworks().then(setStrategyFrameworks).catch(() => setStrategyFrameworks([]));
     // Resources — books, reports, articles, and public sources.
     void libraryApi.listResources().then(setResources).catch(() => setResources([]));
-  }, [identity]);
+  }, []);
 
   // Reset pagers whenever the underlying list reloads (defensive: if
   // the count shrinks, a stale page index could land on an empty
@@ -188,7 +189,6 @@ export function LibraryPage() {
     setResourcesPage(1);
   }
 
-  if (!identity) return null;
   const lang = (i18n.language as Lang) ?? 'en';
 
   async function handleOpenReadOnly(
@@ -202,12 +202,15 @@ export function LibraryPage() {
   }
 
   async function handleFork(entry: CaseLibraryEntry) {
-    if (!identity) return;
+    if (!authenticated) {
+      setLoginPromptOpen(true);
+      return;
+    }
     // Honour the user's current UI language — fork only the canvases
     // / story matching it, so the user lands in a clean
     // single-language project. The server falls back to forking the
     // whole case when the requested lang isn't shipped.
-    const result = await libraryApi.fork(entry.slug, identity.displayName, lang);
+    const result = await libraryApi.fork(entry.slug, identity?.displayName, lang);
     setPreviewEntry(null);
     navigate(`/p/${result.project.id}`, { state: stateWithFrom(location) });
   }
@@ -222,9 +225,9 @@ export function LibraryPage() {
   }
 
   // ── Copilot auto-attach helpers ────────────────────────────────────
-  // When the drawer is open and the user clicks a card, auto-set the
+  // When the panel is expanded and the user clicks a card, auto-set the
   // attached ref so the chip swaps to the just-clicked entity. When the
-  // drawer is closed, do nothing — preserves the "open the preview
+  // panel is only a rail, do nothing — preserves the "open the preview
   // modal" affordance for the common browse-without-AI case.
   function handleCaseCardClick(entry: CaseLibraryEntry) {
     if (copilotOpen) {
@@ -335,7 +338,13 @@ export function LibraryPage() {
           </button>
           <button
             type="button"
-            onClick={() => navigate('/p/new', { state: stateWithFrom(location) })}
+            onClick={() => {
+              if (!authenticated) {
+                setLoginPromptOpen(true);
+                return;
+              }
+              navigate('/p/new', { state: stateWithFrom(location) });
+            }}
             className="min-w-0 rounded-xl border border-gray-200 bg-white px-3 py-2 text-sm font-semibold leading-tight text-gray-900 transition hover:border-gray-300 hover:bg-gray-50 sm:px-4"
           >
             <span className="whitespace-nowrap">+ {t('home.createBlankInstead')}</span>
@@ -441,7 +450,13 @@ export function LibraryPage() {
                   canvasDefsPage * SHOWCASE_PAGE_SIZE,
                 )}
                 lang={lang}
-                onStart={(defId) => navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, { state: stateWithFrom(location) })}
+                onStart={(defId) => {
+                  if (!authenticated) {
+                    setLoginPromptOpen(true);
+                    return;
+                  }
+                  navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, { state: stateWithFrom(location) });
+                }}
               />
               <Pagination
                 total={canvasDefs.length}
@@ -621,6 +636,13 @@ export function LibraryPage() {
           libraryCatalog={copilotLibraryCatalog}
         />
       </CopilotErrorBoundary>
+
+      {loginPromptOpen && (
+        <LoginDialog
+          onSignIn={() => signInWithWeChat()}
+          onCancel={() => setLoginPromptOpen(false)}
+        />
+      )}
     </main>
   );
 }

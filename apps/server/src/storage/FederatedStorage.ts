@@ -8,6 +8,7 @@ import type {
   StoryMeta,
 } from '@pingarden/shared';
 import type { CanvasStorage } from './CanvasStorage.js';
+import type { AccountScope, ScopedProjectStorage } from './AccountScopedStorage.js';
 import { BundleStorage } from './BundleStorage.js';
 import { BundleReadOnlyError } from './errors.js';
 
@@ -70,6 +71,13 @@ export class FederatedStorage implements CanvasStorage {
   }
 
   // ─── projects ───────────────────────────────────────────────────────
+
+  async listProjectsForScopes(scopes: AccountScope[]): Promise<Project[]> {
+    if (hasScopedProjectStorage(this.user)) {
+      return this.user.listProjectsForScopes(scopes);
+    }
+    return [];
+  }
 
   async listProjects(): Promise<Project[]> {
     const [u, b] = await Promise.all([this.user.listProjects(), this.bundle.listProjects()]);
@@ -238,4 +246,8 @@ export class FederatedStorage implements CanvasStorage {
   get bundleStorage(): BundleStorage {
     return this.bundle;
   }
+}
+
+function hasScopedProjectStorage(storage: CanvasStorage): storage is CanvasStorage & ScopedProjectStorage {
+  return typeof (storage as Partial<ScopedProjectStorage>).listProjectsForScopes === 'function';
 }

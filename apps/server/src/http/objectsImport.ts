@@ -4,7 +4,7 @@ import type { ObjectsBulkInput } from '@pingarden/shared';
 import { encodeObjectsBulk, EncodeBulkInputError } from '@pingarden/shared/yjs';
 import type { CanvasStorage } from '../storage/CanvasStorage.js';
 import type { LoadedCanvasDef } from '../canvasDefs/loader.js';
-import { getIdentity } from './identity.js';
+import type { ProjectAccessService } from '../auth/ProjectAccessService.js';
 
 /**
  * Generalised bulk-import endpoint.
@@ -85,14 +85,16 @@ export function registerObjectsImportRoutes(
   app: FastifyInstance,
   storage: CanvasStorage,
   defs: LoadedCanvasDef[],
+  access: ProjectAccessService,
 ) {
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
 
   app.post<{ Params: { id: string } }>(
     '/canvases/:id/objects/bulk',
     async (req, reply) => {
-      const meta = await storage.getCanvas(req.params.id);
-      if (!meta) return reply.code(404).send({ error: 'Canvas not found' });
+      const resultAccess = await access.ensureCanvas(req, reply, req.params.id, 'edit');
+      if (!resultAccess?.identity) return;
+      const meta = resultAccess.canvas;
 
       const bundle = defsById.get(meta.defId);
       if (!bundle) {
@@ -109,7 +111,7 @@ export function registerObjectsImportRoutes(
       }
       const input = parsed.data as ObjectsBulkInput;
 
-      const identity = getIdentity(req);
+      const identity = resultAccess.identity;
       const prev = await storage.loadYDocState(req.params.id);
 
       let result;
@@ -156,6 +158,7 @@ export function registerObjectsImportRoutes(
       await storage.saveYDocState(req.params.id, result.state);
       await storage.updateCanvasMeta(req.params.id, {
         updatedBy: identity.displayName,
+        updatedByUserId: identity.userId,
       });
 
       return reply.code(200).send({

@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 import { api, type CanvasDefSummary, type CanvasKnowledge } from '../api/client';
 import { projectsApi } from '../api/projects';
 import { storiesApi } from '../api/stories';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
 import { CanvasRenderer } from '../canvas/CanvasRenderer';
 import { StickyLayer } from '../canvas/StickyLayer';
 import { PinLayer } from '../canvas/PinLayer';
@@ -44,6 +44,7 @@ import { CanvasToolbar } from '../workspace/CanvasToolbar';
 import { Inspector } from '../workspace/Inspector';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { ReadOnlyBanner } from '../components/ReadOnlyBanner';
+import { LoginDialog } from '../identity/IdentityModal';
 import { CopilotDrawer } from '../components/CopilotDrawer';
 import { CopilotErrorBoundary } from '../components/CopilotErrorBoundary';
 import { useUiPrefs } from '../state/uiPrefs';
@@ -122,7 +123,8 @@ export function ProjectWorkspacePage() {
   const navigate = useNavigate();
   const location = useLocation();
   const preloadedCaseDetail = (location.state as { caseDetail?: CaseLibraryDetail } | null)?.caseDetail;
-  const { identity } = useIdentity();
+  const { identity, signInWithWeChat, user, authenticated } = useAuthSession();
+  const displayName = identity?.displayName ?? user?.displayName ?? '';
 
   const [project, setProject] = useState<Project | null>(null);
   const [canvases, setCanvases] = useState<CanvasMeta[]>([]);
@@ -154,6 +156,7 @@ export function ProjectWorkspacePage() {
   const [pendingDeleteStory, setPendingDeleteStory] = useState<StoryMeta | null>(null);
   const [copilotOpen, setCopilotOpen] = useState(false);
   const [attachedRef, setAttachedRef] = useState<AttachedRef | null>(null);
+  const [loginPromptOpen, setLoginPromptOpen] = useState(false);
 
   const clearSelection = useSelection((s) => s.clear);
   const selectProject = useSelection((s) => s.selectProject);
@@ -183,12 +186,10 @@ export function ProjectWorkspacePage() {
     if (rightCollapsed) setRightCollapsed(false);
   }
 
-  // True when the active project is a library case (read-only). Server
-  // already returns 403 on any write to a library canvas; this flag is
-  // the *UI* mirror — disable every editing affordance so the user
-  // doesn't waste effort dragging a sticky that won't save. Source of
-  // truth lives on `project.source` (synthesized by BundleStorage).
-  const readOnly = project?.source === 'library';
+  const isLibraryProject = project?.source === 'library';
+  const canEdit =
+    authenticated && !!project && (project.capabilities?.canEdit ?? !isLibraryProject);
+  const readOnly = !!project && !canEdit;
 
   // ── Library projects: per-language sidebar filter ─────────────────
   // The case library ships canvases with a per-canvas `language` field
@@ -210,18 +211,18 @@ export function ProjectWorkspacePage() {
   // first item.
   const liveLang: Lang = i18n.language === 'zh' ? 'zh' : 'en';
   const filteredCanvases = useMemo(() => {
-    if (!readOnly) return canvases;
+    if (!isLibraryProject) return canvases;
     const matched = canvases.filter((c) => c.language === liveLang);
     return matched.length > 0 ? matched : canvases;
-  }, [canvases, readOnly, liveLang]);
+  }, [canvases, isLibraryProject, liveLang]);
   const filteredStories = useMemo(() => {
-    if (!readOnly) return stories;
+    if (!isLibraryProject) return stories;
     // Older library stories (pre-language-tagging) have no `language`
     // field — when nothing matches the active UI lang, fall back to
     // showing every available story rather than an empty list.
     const matched = stories.filter((s) => s.language === liveLang);
     return matched.length > 0 ? matched : stories;
-  }, [stories, readOnly, liveLang]);
+  }, [stories, isLibraryProject, liveLang]);
 
   // ── Library-case bilingual metadata fetch ─────────────────────────
   // Library projects are synthesised by BundleStorage with
@@ -236,7 +237,7 @@ export function ProjectWorkspacePage() {
   // back to `project.name` (English) — graceful degradation.
   useEffect(() => {
     let cancelled = false;
-    if (!readOnly || !project?.companySlug || !identity) {
+    if (!isLibraryProject || !project?.companySlug) {
       setCaseEntry(null);
       return;
     }
@@ -245,7 +246,7 @@ export function ProjectWorkspacePage() {
       return;
     }
     libraryApi
-      .get(project.companySlug, identity.displayName)
+      .get(project.companySlug)
       .then((detail) => {
         if (!cancelled) setCaseEntry(detail.case);
       })
@@ -255,7 +256,36 @@ export function ProjectWorkspacePage() {
     return () => {
       cancelled = true;
     };
-  }, [readOnly, project?.companySlug, identity, preloadedCaseDetail]);
+  }, [isLibraryProject, project?.companySlug, preloadedCaseDetail]);
+
+  useEffect(() => {
+    if (!project) return;
+    if (attachedRef && attachedRef.type !== 'project') return;
+    const projectName = caseEntry
+      ? caseEntry.companyName[liveLang] || caseEntry.companyName.en || project.name
+      : project.name;
+    const nextRef: AttachedRef = {
+      type: 'project',
+      projectId: project.id,
+      projectName,
+      projectSource: isLibraryProject ? 'library' : 'user',
+      ...(activeCanvas ? { activeCanvasId: activeCanvas.id } : {}),
+      ...(activeStory ? { activeStoryId: activeStory.id } : {}),
+    };
+    setAttachedRef((prev) => {
+      if (
+        prev?.type === 'project' &&
+        prev.projectId === nextRef.projectId &&
+        prev.projectName === nextRef.projectName &&
+        prev.projectSource === nextRef.projectSource &&
+        prev.activeCanvasId === nextRef.activeCanvasId &&
+        prev.activeStoryId === nextRef.activeStoryId
+      ) {
+        return prev;
+      }
+      return nextRef;
+    });
+  }, [activeCanvas, activeStory, attachedRef, caseEntry, liveLang, project, isLibraryProject]);
 
   /**
    * Project shape rendered everywhere: identical to `project` for
@@ -282,10 +312,10 @@ export function ProjectWorkspacePage() {
    * mismatch).
    */
   const langFallbackActive = useMemo(() => {
-    if (!readOnly) return false;
+    if (!isLibraryProject) return false;
     if (canvases.length === 0) return false;
     return !canvases.some((c) => c.language === liveLang);
-  }, [readOnly, canvases, liveLang]);
+  }, [isLibraryProject, canvases, liveLang]);
   /**
    * The single language a fallback case is actually available in
    * (used in the notice copy). Returns the most common foreign
@@ -326,7 +356,7 @@ export function ProjectWorkspacePage() {
 
   // Load project + its canvases.
   useEffect(() => {
-    if (!projectId || !identity) return;
+    if (!projectId) return;
     let cancelled = false;
     if (preloadedCaseDetail?.project.id === projectId) {
       setProject(preloadedCaseDetail.project);
@@ -335,9 +365,9 @@ export function ProjectWorkspacePage() {
       return;
     }
     Promise.all([
-      projectsApi.get(projectId, identity.displayName),
-      projectsApi.listCanvases(projectId, identity.displayName),
-      storiesApi.list(projectId, identity.displayName),
+      projectsApi.get(projectId, displayName),
+      projectsApi.listCanvases(projectId, displayName),
+      storiesApi.list(projectId, displayName),
     ])
       .then(([p, list, storyList]) => {
         if (cancelled) return;
@@ -352,7 +382,7 @@ export function ProjectWorkspacePage() {
     return () => {
       cancelled = true;
     };
-  }, [projectId, identity, navigate, preloadedCaseDetail]);
+  }, [projectId, displayName, navigate, preloadedCaseDetail]);
 
   // Choose the active canvas: explicit param > most recently updated > none.
   // For BARE project URLs (no canvasId, no storyId), prefer to land on
@@ -458,7 +488,7 @@ export function ProjectWorkspacePage() {
     };
   }, [activeCanvas, lang]);
 
-  const { doc, ready } = useYDoc(activeCanvas?.id, identity?.displayName ?? '');
+  const { doc, ready } = useYDoc(activeCanvas?.id, displayName, readOnly);
   const stickies = useStickies(doc ?? null);
   const pinClasses = usePinClasses(doc ?? null);
   const pins = usePins(doc ?? null);
@@ -648,7 +678,7 @@ export function ProjectWorkspacePage() {
             y,
             text: entry.text,
             color: entry.color,
-            authorName: identity!.displayName,
+            authorName: displayName,
           });
           useSelection.getState().selectSticky(newId);
           return;
@@ -725,7 +755,7 @@ export function ProjectWorkspacePage() {
           y: baseY + 24,
           ...(entry.label ? { label: entry.label } : {}),
           ...(entry.body ? { body: entry.body } : {}),
-          authorName: identity!.displayName,
+          authorName: displayName,
         });
         useSelection.getState().selectPin(newId);
         // Keep clipboard for repeat ⌘+V; advance source coords so the
@@ -752,9 +782,9 @@ export function ProjectWorkspacePage() {
 
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [doc, stickies, pins, pinClasses, bundle, identity, clearSelection, readOnly]);
+  }, [doc, stickies, pins, pinClasses, bundle, displayName, clearSelection, readOnly]);
 
-  if (!identity || !projectId) return null;
+  if (!projectId) return null;
   if (!project) {
     return (
       <div className="flex h-full items-center justify-center text-sm text-gray-500">
@@ -783,21 +813,27 @@ export function ProjectWorkspacePage() {
       }
     : project;
 
+  function requireIdentityForWrite(): boolean {
+    if (authenticated) return true;
+    setLoginPromptOpen(true);
+    return false;
+  }
+
   async function handleAddCanvas(defId: string) {
-    if (!project || !identity) return;
+    if (!project || readOnly || !requireIdentityForWrite()) return;
     const def = defSummaries.find((item) => item.id === defId);
     const defaultTitle = def?.name[lang] || def?.name.en || defId;
     const c = await api.createCanvas(
       { projectId: project.id, defId, title: defaultTitle, language: lang },
-      identity.displayName,
+      displayName,
     );
     setCanvases((prev) => [c, ...prev]);
     navigate(`/p/${project.id}/c/${c.id}`, { state: preserveNavigationState(location) });
   }
 
   async function handleDeleteCanvas(c: CanvasMeta) {
-    if (!identity || !project) return;
-    await api.deleteCanvas(c.id, identity.displayName);
+    if (!project || readOnly || !requireIdentityForWrite()) return;
+    await api.deleteCanvas(c.id, displayName);
     setCanvases((prev) => prev.filter((x) => x.id !== c.id));
     if (activeCanvas?.id === c.id) {
       // Pick another canvas in the project, or land on project root.
@@ -818,7 +854,7 @@ export function ProjectWorkspacePage() {
   }
 
   async function handleAddStory() {
-    if (!project || !identity) return;
+    if (!project || readOnly || !requireIdentityForWrite()) return;
     const created = await storiesApi.create(
       {
         projectId: project.id,
@@ -827,7 +863,7 @@ export function ProjectWorkspacePage() {
         status: 'draft',
         contentDatePrecision: 'month',
       },
-      identity.displayName,
+      displayName,
     );
     const { content: _content, ...meta } = created;
     setStories((prev) => [meta, ...prev]);
@@ -835,8 +871,8 @@ export function ProjectWorkspacePage() {
   }
 
   async function handleDeleteStory(s: StoryMeta) {
-    if (!identity || !project) return;
-    await storiesApi.delete(s.id, identity.displayName);
+    if (!project || readOnly || !requireIdentityForWrite()) return;
+    await storiesApi.delete(s.id, displayName);
     setStories((prev) => prev.filter((x) => x.id !== s.id));
     if (activeStory?.id === s.id) {
       const fallback = stories.find((x) => x.id !== s.id);
@@ -869,14 +905,14 @@ export function ProjectWorkspacePage() {
     name?: string;
     description?: string;
   }) {
-    if (!identity || !project) return;
-    const updated = await projectsApi.update(project.id, patch, identity.displayName);
+    if (!project || readOnly || !requireIdentityForWrite()) return;
+    const updated = await projectsApi.update(project.id, patch, displayName);
     setProject(updated);
   }
 
   async function handleProjectDelete() {
-    if (!identity || !project) return;
-    await projectsApi.delete(project.id, identity.displayName);
+    if (!project || readOnly || !requireIdentityForWrite()) return;
+    await projectsApi.delete(project.id, displayName);
     navigate('/projects');
   }
 
@@ -889,8 +925,8 @@ export function ProjectWorkspacePage() {
    * `lang` we pass in below).
    */
   async function handleForkLibraryCase(slug: string, forkLang: Lang) {
-    if (!identity) return;
-    const result = await libraryApi.fork(slug, identity.displayName, forkLang);
+    if (!requireIdentityForWrite()) return;
+    const result = await libraryApi.fork(slug, displayName, forkLang);
     navigate(`/p/${result.project.id}`, { state: preserveNavigationState(location) });
   }
 
@@ -899,7 +935,7 @@ export function ProjectWorkspacePage() {
       type: 'project',
       projectId: displayProject.id,
       projectName: displayProject.name,
-      projectSource: readOnly ? 'library' : 'user',
+      projectSource: isLibraryProject ? 'library' : 'user',
       ...(activeCanvas ? { activeCanvasId: activeCanvas.id } : {}),
       ...(activeStory ? { activeStoryId: activeStory.id } : {}),
     });
@@ -913,7 +949,7 @@ export function ProjectWorkspacePage() {
       canvasTitle: canvas.title,
       projectId: displayProject.id,
       projectName: displayProject.name,
-      projectSource: readOnly ? 'library' : 'user',
+      projectSource: isLibraryProject ? 'library' : 'user',
     });
     setCopilotOpen(true);
   }
@@ -925,7 +961,7 @@ export function ProjectWorkspacePage() {
       storyTitle: story.title,
       projectId: displayProject.id,
       projectName: displayProject.name,
-      projectSource: readOnly ? 'library' : 'user',
+      projectSource: isLibraryProject ? 'library' : 'user',
     });
     setCopilotOpen(true);
   }
@@ -939,7 +975,7 @@ export function ProjectWorkspacePage() {
 
   return (
     <div className="flex h-full flex-col">
-      {readOnly && (
+      {isLibraryProject && (
         <ReadOnlyBanner
           companySlug={project.companySlug}
           lang={lang}
@@ -977,14 +1013,14 @@ export function ProjectWorkspacePage() {
         readOnly={readOnly}
       />
 
-      <main className="flex flex-1 flex-col bg-stone-50">
+      <main className="flex min-w-0 flex-1 flex-col bg-stone-50">
         {activeStory ? (
           <StoryWorkspace
             storyId={activeStory.id}
             projectId={project.id}
             canvases={filteredCanvases}
             lang={lang}
-            displayName={identity.displayName}
+            displayName={displayName}
             onStoryUpdated={handleStoryUpdated}
             onOpenCopilot={() => openStoryCopilot(activeStory)}
             readOnly={readOnly}
@@ -994,14 +1030,15 @@ export function ProjectWorkspacePage() {
             <CanvasToolbar
               canvas={activeCanvas}
               projectId={project.id}
-              displayName={identity.displayName}
+              displayName={displayName}
               readOnly={readOnly}
               onOpenCopilot={() => openCanvasCopilot(activeCanvas)}
               onRename={async (title) => {
+                if (readOnly || !requireIdentityForWrite()) return;
                 const updated = await api.updateCanvas(
                   activeCanvas.id,
                   { title },
-                  identity.displayName,
+                  displayName,
                 );
                 setCanvases((prev) =>
                   prev.map((c) => (c.id === updated.id ? updated : c)),
@@ -1031,7 +1068,7 @@ export function ProjectWorkspacePage() {
                           effectiveObjectTypes(bundle.def).includes('pinClass') && (
                             <LegendPalette
                               doc={doc}
-                              displayName={identity.displayName}
+                              displayName={displayName}
                               lang={lang}
                               readOnly={readOnly}
                             />
@@ -1053,7 +1090,7 @@ export function ProjectWorkspacePage() {
                       defId={activeCanvas.defId}
                       lang={lang}
                       doc={doc}
-                      displayName={identity.displayName}
+                      displayName={displayName}
                       onCanvasClick={
                         // Two paint modes share this slot. Pin paint
                         // wins if both somehow active (the active*
@@ -1104,7 +1141,7 @@ export function ProjectWorkspacePage() {
                                 classId: activeClassId,
                                 x,
                                 y: c.y,
-                                authorName: identity!.displayName,
+                                authorName: displayName,
                               });
                               selectPin(newId);
                               // stay in draw mode for streak placement
@@ -1132,7 +1169,7 @@ export function ProjectWorkspacePage() {
                                 x: p.x,
                                 y: p.y,
                                 color: activeStickyColor,
-                                authorName: identity!.displayName,
+                                authorName: displayName,
                               });
                               useSelection.getState().selectSticky(newId);
                               // stay in paint mode for streak placement —
@@ -1148,7 +1185,7 @@ export function ProjectWorkspacePage() {
                               doc={doc}
                               zones={def.zones}
                               toSvgPoint={toSvgPoint}
-                              displayName={identity.displayName}
+                              displayName={displayName}
                               readonly={readOnly}
                             />
                           )}
@@ -1280,7 +1317,7 @@ export function ProjectWorkspacePage() {
                 def={bundle?.def ?? null}
                 i18n={bundle?.i18n ?? null}
                 knowledge={bundle?.knowledge ?? null}
-                displayName={identity.displayName}
+                displayName={displayName}
                 projectCanvases={filteredCanvases}
                 defNames={Object.fromEntries(defSummaries.map((d) => [d.id, d.name]))}
                 onSwitchCanvas={(id) => navigate(`/p/${project.id}/c/${id}`, { state: preserveNavigationState(location) })}
@@ -1336,6 +1373,12 @@ export function ProjectWorkspacePage() {
         />
       </CopilotErrorBoundary>
 
+      {loginPromptOpen && (
+        <LoginDialog
+          onSignIn={() => signInWithWeChat()}
+          onCancel={() => setLoginPromptOpen(false)}
+        />
+      )}
     </div>
   );
 }

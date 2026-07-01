@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import type { CanvasMeta, SnapshotMeta } from '@pingarden/shared';
 import { api } from '../api/client';
 import { snapshotsApi } from '../api/snapshots';
-import { useIdentity } from '../identity/useIdentity';
+import { useAuthSession } from '../identity/useIdentity';
+import { LoginDialog } from '../identity/IdentityModal';
 import { ConfirmDialog } from '../ui/ConfirmDialog';
 import { preserveNavigationState } from '../navigation/useSmartBack';
 
@@ -13,16 +14,17 @@ export function HistoryPage() {
   const { projectId, canvasId } = useParams<{ projectId: string; canvasId: string }>();
   const navigate = useNavigate();
   const location = useLocation();
-  const { identity } = useIdentity();
+  const { identity, authenticated, signInWithWeChat } = useAuthSession();
+  const displayName = identity?.displayName ?? '';
   const [meta, setMeta] = useState<CanvasMeta | null>(null);
   const [items, setItems] = useState<SnapshotMeta[] | null>(null);
   const [pendingDelete, setPendingDelete] = useState<SnapshotMeta | null>(null);
 
   async function load() {
-    if (!canvasId || !identity) return;
+    if (!canvasId || !authenticated) return;
     const [m, list] = await Promise.all([
-      api.getCanvas(canvasId, identity.displayName),
-      snapshotsApi.list(canvasId, identity.displayName),
+      api.getCanvas(canvasId, displayName),
+      snapshotsApi.list(canvasId, displayName),
     ]);
     setMeta(m);
     setItems(list);
@@ -31,9 +33,17 @@ export function HistoryPage() {
   useEffect(() => {
     void load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [canvasId, identity]);
+  }, [canvasId, authenticated, displayName]);
 
-  if (!identity || !canvasId || !projectId) return null;
+  if (!authenticated) {
+    return (
+      <LoginDialog
+        onSignIn={() => signInWithWeChat()}
+        onCancel={() => navigate('/library', { state: preserveNavigationState(location) })}
+      />
+    );
+  }
+  if (!canvasId || !projectId) return null;
 
   const lang = (i18n.language as 'en' | 'zh') ?? 'en';
   const fmt = new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : 'en-US', {
@@ -45,19 +55,19 @@ export function HistoryPage() {
     if (!canvasId || !projectId) return;
     if (!confirm(lang === 'zh' ? '确认恢复到此版本?当前进度将被覆盖。' : 'Restore this version? Current state will be replaced.'))
       return;
-    await snapshotsApi.restore(canvasId, sid, 'replace', identity!.displayName);
+    await snapshotsApi.restore(canvasId, sid, 'replace', displayName);
     navigate(`/p/${projectId}/c/${canvasId}`, { state: preserveNavigationState(location) });
   }
 
   async function onFork(sid: string) {
     if (!canvasId || !projectId) return;
-    const res = await snapshotsApi.restore(canvasId, sid, 'fork', identity!.displayName);
+    const res = await snapshotsApi.restore(canvasId, sid, 'fork', displayName);
     navigate(`/p/${projectId}/c/${res.canvas.id}`, { state: preserveNavigationState(location) });
   }
 
   async function onDelete(s: SnapshotMeta) {
     if (!canvasId) return;
-    await snapshotsApi.delete(canvasId, s.id, identity!.displayName);
+    await snapshotsApi.delete(canvasId, s.id, displayName);
     setPendingDelete(null);
     void load();
   }

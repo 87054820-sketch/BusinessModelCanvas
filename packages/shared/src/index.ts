@@ -12,10 +12,22 @@ export interface Project {
   id: string;             // uuid
   name: string;
   description?: string;
+  /** Cloud/user-data scope. Omitted legacy projects are treated as personal. */
+  projectType?: ProjectType;
+  /** Stable owner identity for personal projects. Permission checks use this, not display names. */
+  ownerUserId?: string;
+  /** Team scope for collaborative projects. */
+  teamId?: string;
+  /** Case slug this project was copied from, when created via library fork. */
+  originCaseSlug?: string;
   createdAt: string;      // ISO
   createdBy: string;      // display name
+  createdByUserId?: string;
   updatedAt: string;
   updatedBy: string;
+  updatedByUserId?: string;
+  /** Request-scoped permissions for the current viewer. Never persisted by storage backends. */
+  capabilities?: ProjectCapabilities;
   // ── Case-library origin metadata (only set when source==='library') ────
   /** `'user'` (default when omitted) or `'library'`. Library projects are
    *  read-only: the storage backend rejects mutations. Set by BundleStorage
@@ -36,6 +48,74 @@ export interface Project {
 }
 
 export type ProjectSource = 'user' | 'library';
+
+export type ProjectType = 'personal' | 'team';
+
+export type ProjectRole = 'owner' | 'editor' | 'viewer';
+
+export interface ProjectCapabilities {
+  canView: boolean;
+  canEdit: boolean;
+  canManageMembers: boolean;
+  canDelete: boolean;
+  role?: ProjectRole;
+}
+
+export interface Team {
+  id: string;
+  name: string;
+  description?: string;
+  createdAt: string;
+  createdBy: string;
+  createdByUserId: string;
+  updatedAt: string;
+  updatedBy: string;
+  updatedByUserId: string;
+}
+
+export type TeamRole = 'owner' | 'admin' | 'member' | 'viewer';
+
+export interface TeamMember {
+  teamId: string;
+  userId: string;
+  displayName: string;
+  role: TeamRole;
+  createdAt: string;
+}
+
+export interface ProjectMember {
+  projectId: string;
+  userId: string;
+  displayName: string;
+  role: ProjectRole;
+  createdAt: string;
+}
+
+export interface ProjectInvite {
+  id: string;
+  projectId: string;
+  role: ProjectRole;
+  token: string;
+  createdAt: string;
+  createdBy: string;
+  createdByUserId: string;
+  expiresAt: string;
+  acceptedAt?: string;
+  acceptedByUserId?: string;
+  revokedAt?: string;
+}
+
+export interface AuthUser {
+  authenticated: boolean;
+  userId?: string;
+  displayName?: string;
+  avatarUrl?: string;
+  provider?: 'wechat' | 'local';
+  openId?: string;
+  isLocalOnly?: boolean;
+  canSyncToCloud?: boolean;
+  canUseTeams?: boolean;
+}
 
 /**
  * Case-library entry kind. Lets the UI and AI distinguish between three
@@ -134,8 +214,10 @@ export interface CanvasMeta {
   contentDateLabel?: string;
   createdAt: string;      // ISO
   createdBy: string;      // display name
+  createdByUserId?: string;
   updatedAt: string;      // ISO
   updatedBy: string;
+  updatedByUserId?: string;
   /**
    * Library-only. When a single case (project) holds multiple canvases of
    * the SAME defId — e.g. an industry archetype BMC plus one BMC per
@@ -185,8 +267,10 @@ export interface StoryMeta {
   language?: Lang;
   createdAt: string;
   createdBy: string;
+  createdByUserId?: string;
   updatedAt: string;
   updatedBy: string;
+  updatedByUserId?: string;
 }
 
 export interface Story extends StoryMeta {
@@ -597,6 +681,7 @@ export interface SnapshotMeta {
   description?: string;
   createdAt: string;
   createdBy: string;
+  createdByUserId?: string;
   /** Number of stickies at the time of the snapshot, for the timeline diff. */
   stickyCount: number;
 }
@@ -607,12 +692,16 @@ export interface Snapshot extends SnapshotMeta {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
-// Identity (lightweight; localStorage only for v1)
+// Identity (derived from the signed WeChat session; never user-entered)
 // ──────────────────────────────────────────────────────────────────────────
 export interface Identity {
   displayName: string;
   clientId: string;
   color: string; // hex
+  /** Stable account id from the auth layer. */
+  userId?: string;
+  avatarUrl?: string;
+  provider?: AuthUser['provider'];
 }
 
 // ──────────────────────────────────────────────────────────────────────────
@@ -621,6 +710,7 @@ export interface Identity {
 export interface CreateProjectInput {
   name: string;
   description?: string;
+  teamId?: string;
 }
 
 export interface UpdateProjectInput {

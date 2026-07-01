@@ -1,8 +1,7 @@
-import { lazy, Suspense, useEffect, useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useIdentity } from './identity/useIdentity';
-import { IdentityModal } from './identity/IdentityModal';
+import { useAuthSession } from './identity/useIdentity';
 import { LanguageSwitcher } from './i18n/LanguageSwitcher';
 import { CopilotErrorBoundary } from './components/CopilotErrorBoundary';
 import { LightboxRoot } from './components/Lightbox';
@@ -16,6 +15,9 @@ const LibraryPage = lazy(() =>
 const MyProjectsPage = lazy(() =>
   import('./pages/MyProjectsPage').then((module) => ({ default: module.MyProjectsPage })),
 );
+const LoginPage = lazy(() =>
+  import('./pages/LoginPage').then((module) => ({ default: module.LoginPage })),
+);
 const NewProjectPage = lazy(() =>
   import('./pages/NewProjectPage').then((module) => ({ default: module.NewProjectPage })),
 );
@@ -28,9 +30,10 @@ const HistoryPage = lazy(() =>
 
 export default function App() {
   const { t } = useTranslation();
-  const { identity, save } = useIdentity();
-  const [editingIdentity, setEditingIdentity] = useState(false);
+  const location = useLocation();
+  const { identity, user, authenticated, signOut } = useAuthSession();
   const isDesktop = typeof window !== 'undefined' && 'electronAPI' in window;
+  const loginPath = `/login?returnTo=${encodeURIComponent(currentReturnTo(location.pathname, location.search))}`;
 
   useEffect(() => {
     const onPreloadError = (event: Event) => {
@@ -65,20 +68,60 @@ export default function App() {
           logo
         )}
         <div className="ml-auto flex shrink-0 items-center gap-2 sm:gap-6">
+          <div className="hidden items-center gap-1 text-xs font-medium text-gray-600 sm:flex">
+            <Link className="rounded-full px-2 py-1 hover:bg-gray-100 hover:text-gray-900" to="/library">
+              {t('nav.library')}
+            </Link>
+            <Link className="rounded-full px-2 py-1 hover:bg-gray-100 hover:text-gray-900" to="/projects?scope=personal">
+              {t('nav.personalProjects')}
+            </Link>
+            <Link className="rounded-full px-2 py-1 hover:bg-gray-100 hover:text-gray-900" to="/projects?scope=team">
+              {t('nav.teamProjects')}
+            </Link>
+          </div>
           <LanguageSwitcher />
-          {identity && (
-            <button
-              type="button"
-              onClick={() => setEditingIdentity(true)}
-              title={t('identity.editTitle')}
-              className="flex items-center gap-2 rounded-full px-2 py-1 text-xs text-gray-600 transition hover:bg-gray-100"
-            >
+          {authenticated && identity ? (
+            <div className="flex items-center gap-2">
               <span
-                className="inline-block h-2 w-2 rounded-full"
-                style={{ background: identity.color }}
-              />
-              {identity.displayName}
-            </button>
+                title={t('identity.signedInAs', { name: identity.displayName })}
+                className="flex items-center gap-2 rounded-full px-2 py-1 text-xs text-gray-600"
+              >
+                {identity.avatarUrl ? (
+                  <img
+                    src={identity.avatarUrl}
+                    alt=""
+                    className="h-5 w-5 rounded-full object-cover"
+                  />
+                ) : (
+                  <span
+                    className="inline-block h-2 w-2 rounded-full"
+                    style={{ background: identity.color }}
+                  />
+                )}
+                <span className="hidden max-w-24 truncate sm:inline">
+                  {user?.provider === 'local' ? t('identity.localModeBadge') : identity.displayName}
+                </span>
+                {user?.provider === 'local' && (
+                  <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700">
+                    {t('identity.localOnlyBadge')}
+                  </span>
+                )}
+              </span>
+              <button
+                type="button"
+                onClick={() => void signOut()}
+                className="rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-700 transition hover:border-gray-300 hover:bg-gray-50"
+              >
+                {t('identity.signOut')}
+              </button>
+            </div>
+          ) : (
+            <Link
+              to={loginPath}
+              className="rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-700 transition hover:border-gray-300 hover:bg-gray-50"
+            >
+              {t('identity.signIn')}
+            </Link>
           )}
         </div>
       </nav>
@@ -94,6 +137,8 @@ export default function App() {
           >
             <Routes>
               <Route path="/" element={<ProjectListPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/auth/wechat/start" element={<LoginPage />} />
               <Route path="/library" element={<LibraryPage />} />
               <Route path="/projects" element={<MyProjectsPage />} />
               <Route path="/p/new" element={<NewProjectPage />} />
@@ -115,23 +160,12 @@ export default function App() {
         </CopilotErrorBoundary>
       </div>
 
-      {/*
-       * IdentityModal renders in two modes:
-       *  - First-launch (no identity): blocking, no cancel.
-       *  - Edit (badge clicked): pre-filled, dismissible via ✕.
-       */}
-      {!identity && <IdentityModal onSubmit={save} />}
-      {identity && editingIdentity && (
-        <IdentityModal
-          initialName={identity.displayName}
-          onSubmit={(next) => {
-            save(next);
-            setEditingIdentity(false);
-          }}
-          onCancel={() => setEditingIdentity(false)}
-        />
-      )}
       <LightboxRoot />
     </div>
   );
+}
+
+function currentReturnTo(pathname: string, search: string): string {
+  if (pathname.startsWith('/auth/') || pathname.startsWith('/login')) return '/';
+  return `${pathname}${search}`;
 }
