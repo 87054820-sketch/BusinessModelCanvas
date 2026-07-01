@@ -8,6 +8,7 @@ import {
   getIdentity,
   getOptionalIdentity,
   identityPlugin,
+  sanitizeReturnTo,
   verifyOAuthState,
   type RequestIdentity,
 } from './identity';
@@ -79,6 +80,12 @@ describe('WeChat session identity', () => {
       returnTo: '/',
     });
   });
+
+  it('does not allow auth routes as OAuth return targets', () => {
+    expect(sanitizeReturnTo('/auth/wechat/start?returnTo=%2F')).toBe('/');
+    expect(sanitizeReturnTo('/login?returnTo=%2Fprojects')).toBe('/');
+    expect(sanitizeReturnTo('/library')).toBe('/library');
+  });
 });
 
 describe('identityPlugin', () => {
@@ -112,6 +119,24 @@ describe('identityPlugin', () => {
 });
 
 describe('auth routes', () => {
+  it('redirects unconfigured WeChat start to local login without preserving auth loops', async () => {
+    const app = Fastify({ logger: false });
+    registerAuthRoutes(app);
+
+    const res = await app.inject({
+      method: 'GET',
+      url: '/auth/wechat/start?returnTo=%2Fauth%2Fwechat%2Fstart%3FreturnTo%3D%252F',
+      headers: {
+        host: 'pingarden.example.com',
+        'x-forwarded-proto': 'https',
+      },
+    });
+
+    expect(res.statusCode).toBe(302);
+    expect(res.headers.location).toBe('/login?returnTo=%2F');
+    await app.close();
+  });
+
   it('starts a local session and exposes it through /me', async () => {
     const app = Fastify({ logger: false });
     registerAuthRoutes(app);

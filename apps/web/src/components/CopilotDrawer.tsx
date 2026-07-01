@@ -59,6 +59,7 @@ import { useLightbox } from '../state/lightbox';
 import { CopilotChatSettings } from './CopilotChatSettings';
 import {
   CopilotCanvasReferenceBoard,
+  CopilotCanvasTemplateReferenceBoard,
   CopilotCaseReferenceBoard,
   CopilotReferenceResolutionHint,
   CopilotResourceReferenceBoard,
@@ -2206,7 +2207,7 @@ function MessageBubble({
     lang,
     message.attachedRef ?? attachedRef,
   );
-  const { canvasRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels } = recommendationRefs;
+  const { canvasRefs, templateRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels } = recommendationRefs;
   const contentWithoutCanvasIds = canvasRefs.length > 0
     ? stripResolvedCanvasIds(visibleContent, canvasRefs)
     : visibleContent;
@@ -2251,6 +2252,7 @@ function MessageBubble({
               displayName={displayName}
               onNavigateToCanvas={onNavigateToCanvas}
             />
+            <CopilotCanvasTemplateReferenceBoard refs={templateRefs} lang={lang} />
             <CopilotCanvasReferenceBoard
               refs={canvasRefs}
               lang={lang}

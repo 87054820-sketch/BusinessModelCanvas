@@ -23,10 +23,13 @@ import { hasPinClasses } from '../collab/pinClasses';
 import { hasColorLegend } from '../collab/colorLegend';
 import { preserveNavigationState } from '../navigation/useSmartBack';
 import { ResourceDetailModal } from './ResourceDetailModal';
+import { CanvasThumb } from '../canvas/CanvasThumb';
+import { TemplatePreviewModal } from './TemplatePreviewModal';
 
 const UUID_RE = /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/gi;
 const KEBAB_RE = /`?\b[a-z][a-z0-9]+(?:-[a-z0-9]+)+\b`?/g;
 const MAX_CANVAS_REFERENCES = 4;
+const MAX_TEMPLATE_REFERENCES = 8;
 const MAX_CASE_REFERENCES = 8;
 const MAX_RESOURCE_REFERENCES = 8;
 const REFERENCE_GRID_CLASS = 'grid grid-cols-[repeat(auto-fit,minmax(260px,360px))] justify-start gap-2 p-2.5';
@@ -44,6 +47,11 @@ export interface CopilotCanvasReference {
   defName: string;
 }
 
+export interface CopilotCanvasTemplateReference {
+  def: CanvasDefSummary;
+  label: string;
+}
+
 export interface CopilotCaseReference {
   detail: CaseLibraryDetail;
   matchedCanvases: CopilotCanvasReference[];
@@ -55,6 +63,7 @@ export interface CopilotResourceReference {
 
 export interface CopilotRecommendationReferences {
   canvasRefs: CopilotCanvasReference[];
+  templateRefs: CopilotCanvasTemplateReference[];
   caseRefs: CopilotCaseReference[];
   resourceRefs: CopilotResourceReference[];
   unresolvedCaseSlugs: string[];
@@ -63,6 +72,7 @@ export interface CopilotRecommendationReferences {
 
 const EMPTY_RECOMMENDATION_REFS: CopilotRecommendationReferences = {
   canvasRefs: [],
+  templateRefs: [],
   caseRefs: [],
   resourceRefs: [],
   unresolvedCaseSlugs: [],
@@ -136,18 +146,27 @@ export function useCopilotRecommendationReferences(
         ...matchedCaseCanvasRefs,
         ...contextCanvasRefs,
       ]).slice(0, MAX_CANVAS_REFERENCES);
+      const resolvedCanvasDefIds = new Set(canvasRefs.map((ref) => ref.canvas.defId));
+      const templateRefs = canvasCandidates
+        .filter((candidate) => !resolvedCanvasDefIds.has(candidate.defId))
+        .map((candidate) => {
+          const def = defs.find((item) => item.id === candidate.defId);
+          return def ? { def, label: candidate.label } : null;
+        })
+        .filter((item): item is CopilotCanvasTemplateReference => item !== null)
+        .slice(0, MAX_TEMPLATE_REFERENCES);
 
       const caseRefs: CopilotCaseReference[] = resolvedCases.map(({ detail }) => ({
         detail,
         matchedCanvases: matchCanvases(detail.canvases, canvasCandidates, defNameById, lang),
       }));
       const unresolvedCanvasLabels =
-        canvasCandidates.length > 0 && canvasRefs.length === 0
+        canvasCandidates.length > 0 && canvasRefs.length === 0 && templateRefs.length === 0
           ? canvasCandidates.map((item) => item.label)
           : [];
 
       if (!cancelled) {
-        setRefs({ canvasRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels });
+        setRefs({ canvasRefs, templateRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels });
       }
     })();
 
@@ -264,6 +283,68 @@ export function CopilotCanvasReferenceBoard({
           onNavigateToCanvas={onNavigateToCanvas}
         />
       )}
+    </div>
+  );
+}
+
+export function CopilotCanvasTemplateReferenceBoard({
+  refs,
+  lang,
+}: {
+  refs: CopilotCanvasTemplateReference[];
+  lang: Lang;
+}) {
+  const { t } = useTranslation();
+  const [previewDefId, setPreviewDefId] = useState<string | null>(null);
+
+  if (refs.length === 0) return null;
+
+  return (
+    <div className="mt-3 overflow-hidden rounded-2xl border border-cyan-100 bg-white shadow-sm">
+      <div className="border-b border-cyan-100 bg-gradient-to-r from-cyan-50 via-white to-sky-50 px-3 py-2">
+        <div className="text-[12px] font-semibold text-cyan-950">
+          {t('library.copilot.templateRefs.title')}
+        </div>
+        <div className="mt-0.5 text-[11px] leading-relaxed text-cyan-700">
+          {t('library.copilot.templateRefs.subtitle')}
+        </div>
+      </div>
+      <div className={REFERENCE_GRID_CLASS}>
+        {refs.map(({ def, label }) => {
+          const name = def.name[lang] ?? def.name.en ?? label;
+          const tagline = t(`templates.${def.id}.tagline`, '');
+          return (
+            <div
+              key={def.id}
+              className="flex min-h-[118px] items-center gap-2 rounded-xl border border-cyan-100 bg-cyan-50/30 p-2.5 transition hover:border-cyan-200 hover:bg-cyan-50/60"
+            >
+              <div className="flex h-16 w-24 shrink-0 items-center justify-center rounded-lg bg-white ring-1 ring-cyan-100">
+                <CanvasThumb id={def.id} width={82} height={50} />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-1.5">
+                  <span className="rounded-full bg-cyan-100 px-2 py-0.5 text-[10px] font-semibold text-cyan-800">
+                    {t('library.canvasMethod.kind')}
+                  </span>
+                  <span className="truncate font-mono text-[10px] text-gray-400">{def.id}</span>
+                </div>
+                <div className="mt-1.5 line-clamp-1 text-[12px] font-semibold text-gray-950">{name}</div>
+                <p className="mt-1 line-clamp-2 text-[11px] leading-relaxed text-gray-600">
+                  {tagline || t('library.canvasMethod.defaultTagline')}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setPreviewDefId(def.id)}
+                  className="mt-2 rounded-full bg-cyan-700 px-3 py-1.5 text-[11px] font-semibold text-white hover:bg-cyan-800"
+                >
+                  {t('library.copilot.templateRefs.preview')}
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <TemplatePreviewModal defId={previewDefId} lang={lang} onClose={() => setPreviewDefId(null)} />
     </div>
   );
 }
@@ -586,10 +667,22 @@ async function extractCaseSlugs(content: string, displayName: string): Promise<s
     (match) => match[1]!.toLowerCase(),
   );
   const kebabCandidates = extractKebabTokens(content);
-  if (explicit.length === 0 && kebabCandidates.length === 0) return [];
   const entries = await libraryApi.list(displayName).catch(() => []);
+  if (entries.length === 0 && explicit.length === 0 && kebabCandidates.length === 0) return [];
+  const lower = content.toLowerCase();
   const caseSlugs = new Set(entries.map((entry) => entry.slug));
-  return Array.from(new Set([...explicit, ...kebabCandidates.filter((slug) => caseSlugs.has(slug))]));
+  const nameMatches = entries
+    .filter((entry) =>
+      [entry.slug, entry.companyName.en, entry.companyName.zh]
+        .filter(Boolean)
+        .some((name) => lower.includes(name.toLowerCase())),
+    )
+    .map((entry) => entry.slug);
+  return Array.from(new Set([
+    ...explicit,
+    ...kebabCandidates.filter((slug) => caseSlugs.has(slug)),
+    ...nameMatches,
+  ]));
 }
 
 async function extractResourceRefs(content: string, lang: Lang): Promise<CopilotResourceReference[]> {

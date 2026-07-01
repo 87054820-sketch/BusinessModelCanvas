@@ -1,4 +1,4 @@
-import type { FastifyInstance } from 'fastify';
+import type { FastifyInstance, FastifyRequest } from 'fastify';
 import { z } from 'zod';
 import type { AuthUser } from '@pingarden/shared';
 import { config } from '../config.js';
@@ -109,7 +109,7 @@ export function registerAuthRoutes(app: FastifyInstance) {
     try {
       const wechatUser = await exchangeWeChatCode(req.query.code);
       const session = createWeChatSession(wechatUser);
-      const target = buildAuthRedirectUrl(state.returnTo, session.accessToken);
+      const target = buildAuthRedirectUrl(req, state.returnTo, session.accessToken);
       return reply.redirect(target);
     } catch (err) {
       req.log.warn({ err }, 'WeChat OAuth callback failed');
@@ -188,14 +188,33 @@ async function fetchJson<T>(url: string): Promise<T> {
   return body;
 }
 
-function buildAuthRedirectUrl(returnTo: string, accessToken: string): string {
-  const target = new URL(sanitizeReturnTo(returnTo), config.webOrigin);
+function buildAuthRedirectUrl(req: FastifyRequest, returnTo: string, accessToken: string): string {
+  const target = new URL(sanitizeReturnTo(returnTo), resolveWebOrigin(req));
   target.hash = `pingarden_token=${encodeURIComponent(accessToken)}`;
   return target.toString();
 }
 
 function buildLoginRedirectUrl(returnTo: string): string {
-  const target = new URL('/login', config.webOrigin);
-  target.searchParams.set('returnTo', sanitizeReturnTo(returnTo));
-  return target.toString();
+  const params = new URLSearchParams({ returnTo: sanitizeReturnTo(returnTo) });
+  return `/login?${params.toString()}`;
+}
+
+function resolveWebOrigin(req: FastifyRequest): string {
+  if (config.webOrigin) return config.webOrigin;
+  const forwardedProto = firstHeader(req.headers['x-forwarded-proto']);
+  const forwardedHost = firstHeader(req.headers['x-forwarded-host']);
+  const host = forwardedHost ?? firstHeader(req.headers.host) ?? `localhost:${config.port}`;
+  const protocol = forwardedProto ?? inferProtocol(host);
+  return `${protocol}://${host}`;
+}
+
+function inferProtocol(host: string): 'http' | 'https' {
+  return host.startsWith('localhost') || host.startsWith('127.0.0.1') || host.startsWith('[::1]')
+    ? 'http'
+    : 'https';
+}
+
+function firstHeader(value: string | string[] | undefined): string | undefined {
+  if (Array.isArray(value)) return value[0];
+  return value;
 }

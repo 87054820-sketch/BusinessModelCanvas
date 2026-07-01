@@ -42,7 +42,7 @@ export const config = {
   /** Public callback URL registered in WeChat Open Platform. */
   wechatRedirectUri: process.env.WECHAT_REDIRECT_URI,
   /** Frontend origin that receives the finished session token after OAuth callback. */
-  webOrigin: process.env.PINGARDEN_WEB_ORIGIN ?? 'http://localhost:5173',
+  webOrigin: process.env.PINGARDEN_WEB_ORIGIN,
   /** Hidden automation-only login. Never exposed in the product UI. */
   testAuthEnabled:
     process.env.NODE_ENV === 'test' || process.env.PINGARDEN_TEST_AUTH === '1',

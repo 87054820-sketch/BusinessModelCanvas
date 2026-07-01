@@ -749,6 +749,11 @@
         "close": "Close canvas preview",
         "loading": "Loading canvas…"
       },
+      "templateRefs": {
+        "title": "Recommended canvas methods",
+        "subtitle": "These are previewable canvas templates from the strategy library. Review the method first, then start a project from it when useful.",
+        "preview": "Preview"
+      },
       "caseRefs": {
         "title": "Recommended case entries",
         "subtitle": "I converted case slugs in the answer into openable entries. Open the case directly.",

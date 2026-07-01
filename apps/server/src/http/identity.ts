@@ -185,7 +185,9 @@ export function verifyOAuthState(state: string | undefined): OAuthStatePayload |
 export function sanitizeReturnTo(raw: string | undefined): string {
   if (!raw) return '/';
   if (!raw.startsWith('/') || raw.startsWith('//')) return '/';
-  return raw.slice(0, 500);
+  const trimmed = raw.slice(0, 500);
+  if (trimmed.startsWith('/auth/') || trimmed.startsWith('/login')) return '/';
+  return trimmed;
 }
 
 function parseBearer(raw: string | undefined): string | null {
