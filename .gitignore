@@ -30,6 +30,7 @@ apps/server/data/
 
 # Dev logs & PIDs
 .dev/
+.codex/
 *.log
 
 # Local secrets
