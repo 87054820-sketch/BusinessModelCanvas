@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "canvasId": "platform-ecosystem-map",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    {
+      "id": "platform-revolution-ch01",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Platform Revolution, chapter 1: Intro",
+      "resourceSlug": "platform-revolution",
+      "chapterSlug": "ch01-intro"
+    },
+    {
+      "id": "platform-revolution-ch02",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Platform Revolution, chapter 2: Network Effects",
+      "resourceSlug": "platform-revolution",
+      "chapterSlug": "ch02-network"
+    },
+    {
+      "id": "platform-revolution-ch03",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Platform Revolution, chapter 3: Architecture",
+      "resourceSlug": "platform-revolution",
+      "chapterSlug": "ch03-architecture"
+    },
+    {
+      "id": "platform-revolution-ch04",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Platform Revolution, chapter 4: Launch",
+      "resourceSlug": "platform-revolution",
+      "chapterSlug": "ch04-launch"
+    },
+    {
+      "id": "platform-revolution-ch05",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Platform Revolution, chapter 5: Governance",
+      "resourceSlug": "platform-revolution",
+      "chapterSlug": "ch05-governance"
+    },
+    {
+      "id": "hbr-pipelines-platforms",
+      "type": "professionalWeb",
+      "tier": "professional-institution",
+      "label": "Harvard Business Review: Pipelines, Platforms, and the New Rules of Strategy",
+      "url": "https://hbr.org/2016/04/pipelines-platforms-and-the-new-rules-of-strategy"
+    }
+  ],
+  "coverage": {
+    "intro": ["platform-revolution-ch01", "hbr-pipelines-platforms"],
+    "body": ["platform-revolution-ch02", "platform-revolution-ch03", "platform-revolution-ch04", "platform-revolution-ch05", "hbr-pipelines-platforms"],
+    "blocks": {
+      "demand-side": ["platform-revolution-ch01", "platform-revolution-ch03"],
+      "core-interaction": ["platform-revolution-ch03"],
+      "supply-side": ["platform-revolution-ch01", "platform-revolution-ch03"],
+      "network-effects": ["platform-revolution-ch02"],
+      "governance-trust": ["platform-revolution-ch05"],
+      "monetization": ["platform-revolution-ch04", "hbr-pipelines-platforms"],
+      "cold-start-risks": ["platform-revolution-ch04", "platform-revolution-ch05"]
+    }
+  }
+}

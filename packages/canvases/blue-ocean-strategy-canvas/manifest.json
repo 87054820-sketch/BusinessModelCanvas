@@ -56,6 +56,28 @@
   "quality": {
     "softHints": true
   },
+  "defaultColorLegend": [
+    {
+      "hex": "#FCF1A8",
+      "label": { "en": "Insight", "zh": "洞察" },
+      "description": { "en": "Customer-facing factor, noncustomer insight, or industry assumption.", "zh": "客户能感知的因子、非顾客洞察或行业假设。" }
+    },
+    {
+      "hex": "#CFE3F5",
+      "label": { "en": "ERIC move", "zh": "ERIC 动作" },
+      "description": { "en": "Eliminate, Reduce, Raise, or Create rationale tied to a factor.", "zh": "围绕某个因子的剔除、减少、提升或创造理由。" }
+    },
+    {
+      "hex": "#CFEBD3",
+      "label": { "en": "Evidence", "zh": "证据" },
+      "description": { "en": "Observed customer behavior or case evidence supporting the curve.", "zh": "支撑曲线的客户行为或案例证据。" }
+    },
+    {
+      "hex": "#FBD0D9",
+      "label": { "en": "Risk", "zh": "风险" },
+      "description": { "en": "Cost, adoption, or imitation risk created by the new value curve.", "zh": "新价值曲线带来的成本、采用或模仿风险。" }
+    }
+  ],
   "relatedNotes": {
     "business-model-canvas": {
       "en": "Take the differentiated value curve back into BMC's Value Propositions and Customer Segments — the whole model usually shifts.",
@@ -65,5 +87,51 @@
       "en": "ERIC moves (Eliminate / Reduce / Raise / Create) translate directly into VPC's Pain Relievers and Gain Creators.",
       "zh": "ERIC 动作(剔除 / 减少 / 提升 / 创造)直接对应 VPC 的痛点缓解和收益创造。"
     }
+  },
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "See strategy as a value curve, not a slogan",
+      "zh": "把战略看成价值曲线，而不是一句口号"
+    },
+    "whyOpen": {
+      "en": "Use this when competitors all sound similar. Plot what each player over-invests and under-invests in, then look for a different curve.",
+      "zh": "当竞争者听起来都差不多时用它：把每家公司在哪些因子上高投入、低投入画出来，再寻找不同的价值曲线。"
+    },
+    "audience": {
+      "en": "Teams comparing offerings, pricing, channels, experience, or category boundaries.",
+      "zh": "适合比较产品、价格、渠道、体验或品类边界的团队。"
+    },
+    "keyConcepts": [
+      { "en": "Value curve", "zh": "价值曲线" },
+      { "en": "Competitive factors", "zh": "竞争因子" },
+      { "en": "ERIC actions", "zh": "剔除-减少-提升-创造" },
+      { "en": "Noncustomers", "zh": "非顾客" }
+    ],
+    "firstSteps": [
+      { "en": "List factors customers actually compare, not internal feature names.", "zh": "列客户真正会比较的因子，而不是内部功能名称。" },
+      { "en": "Draw current competitors before inventing your own curve.", "zh": "先画出现有竞争者，再设计自己的曲线。" }
+    ],
+    "outcomes": [
+      { "en": "A current-state value curve, one proposed to-be curve, and the ERIC moves that explain the difference.", "zh": "一条当前价值曲线、一条拟议未来曲线，以及解释差异的 ERIC 动作。" }
+    ],
+    "commonMisreads": [
+      { "en": "Blue ocean is not simply being premium or cheap; it is changing which factors matter.", "zh": "蓝海不是单纯做高端或便宜，而是改变哪些竞争因子重要。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which factor could you eliminate because customers only tolerate it as an industry habit?", "zh": "哪一个行业惯例只是客户被迫接受，其实可以被剔除？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "blue-ocean-strategy", "chapterSlug": "ch02-tools" }
+    ],
+    "relatedRefs": [
+      { "type": "case", "slug": "yellow-tail" },
+      { "type": "case", "slug": "cirque-du-soleil" },
+      { "type": "case", "slug": "nintendo-wii" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "value-proposition-canvas" }
+    ]
   }
 }

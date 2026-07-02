@@ -1,8 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { CanvasDef, CanvasI18n, Lang, XAxisItem } from '@pingarden/shared';
 import { api, type CanvasDefDetail } from '../api/client';
+import {
+  getCanvasKnowledgeBlockRows,
+  type CanvasKnowledgeBlockRow,
+} from './CanvasKnowledgeBlocks';
+import { LearningGuide } from './LearningGuide';
 import { Markdown } from './Markdown';
 import { preserveNavigationState } from '../navigation/useSmartBack';
 import {
@@ -16,20 +21,38 @@ interface Props {
   defId: string | null;
   lang: Lang;
   onClose: () => void;
+  onStart?: (defId: string) => void;
 }
 
-export function TemplatePreviewModal({ defId, lang, onClose }: Props) {
+type CanvasPreviewSection =
+  | { id: 'guide'; kind: 'guide'; label: string; eyebrow: string }
+  | { id: 'intro'; kind: 'intro'; label: string; eyebrow: string; content: string }
+  | { id: 'body'; kind: 'body'; label: string; eyebrow: string; content: string }
+  | {
+      id: `module:${string}`;
+      kind: 'module';
+      label: string;
+      eyebrow: string;
+      module: CanvasKnowledgeBlockRow;
+      moduleIndex: number;
+    };
+
+const MOBILE_PREVIEW_SECTION_ID = 'preview';
+
+export function TemplatePreviewModal({ defId, lang, onClose, onStart }: Props) {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const [detail, setDetail] = useState<CanvasDefDetail | null>(null);
   const [loading, setLoading] = useState(false);
+  const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
 
   useEffect(() => {
     if (!defId) {
       setDetail(null);
       return;
     }
+    setActiveSectionId(null);
     setLoading(true);
     api
       .getDef(defId)
@@ -37,6 +60,10 @@ export function TemplatePreviewModal({ defId, lang, onClose }: Props) {
       .catch(() => setDetail(null))
       .finally(() => setLoading(false));
   }, [defId]);
+
+  useEffect(() => {
+    setActiveSectionId(null);
+  }, [lang]);
 
   // Lock body scroll while open
   useEffect(() => {
@@ -61,12 +88,107 @@ export function TemplatePreviewModal({ defId, lang, onClose }: Props) {
     return () => window.removeEventListener('keydown', onKey, { capture: true });
   }, [defId, onClose]);
 
+  const knowledge = detail?.knowledge[lang];
+  const moduleRows = useMemo(
+    () => (detail && knowledge ? getCanvasKnowledgeBlockRows(detail.def, detail.i18n[lang], knowledge) : []),
+    [detail, knowledge, lang],
+  );
+  const sections = useMemo<CanvasPreviewSection[]>(() => {
+    if (!detail) return [];
+    const rows: CanvasPreviewSection[] = [];
+    if (detail.def.learning) {
+      rows.push({
+        id: 'guide',
+        kind: 'guide',
+        label: t('library.learning.guide'),
+        eyebrow: t('library.canvasMethod.kind'),
+      });
+    }
+    if (knowledge?.intro?.trim()) {
+      rows.push({
+        id: 'intro',
+        kind: 'intro',
+        label: t('inspector.canvasKnowledge.usageIntro'),
+        eyebrow: t('inspector.canvasKnowledge.documentation'),
+        content: knowledge.intro,
+      });
+    }
+    if (knowledge?.body?.trim()) {
+      rows.push({
+        id: 'body',
+        kind: 'body',
+        label: t('inspector.canvasKnowledge.knowledgeBody'),
+        eyebrow: t('inspector.canvasKnowledge.documentation'),
+        content: knowledge.body,
+      });
+    }
+    moduleRows.forEach((row, index) => {
+      rows.push({
+        id: `module:${row.id}`,
+        kind: 'module',
+        label: row.title,
+        eyebrow: t('inspector.canvasKnowledge.canvasModules'),
+        module: row,
+        moduleIndex: index,
+      });
+    });
+    return rows;
+  }, [detail, knowledge, moduleRows, t]);
+  const activeSection = sections.find((section) => section.id === activeSectionId) ?? sections[0] ?? null;
+  const selectedSectionId =
+    activeSectionId === MOBILE_PREVIEW_SECTION_ID
+      ? MOBILE_PREVIEW_SECTION_ID
+      : activeSection?.id ?? activeSectionId;
+
+  useEffect(() => {
+    if (sections.length === 0) return;
+    if (activeSectionId === MOBILE_PREVIEW_SECTION_ID && detail) return;
+    if (!activeSectionId || !sections.some((section) => section.id === activeSectionId)) {
+      setActiveSectionId(sections[0]!.id);
+    }
+  }, [activeSectionId, detail, sections]);
+
   if (!defId) return null;
 
   const name = detail?.def.name[lang] ?? detail?.def.id ?? defId;
   const tagline = t(`templates.${defId}.tagline`, '');
-  const knowledge = detail?.knowledge[lang];
   const bgUrl = api.bgUrl(defId, lang);
+  const mobileSections = detail
+    ? [
+        ...sections.map((section) => ({
+          id: section.id,
+          label: mobileSectionLabel(section),
+        })),
+        {
+          id: MOBILE_PREVIEW_SECTION_ID,
+          label: t('inspector.canvasKnowledge.preview'),
+        },
+      ]
+    : sections.map((section) => ({
+        id: section.id,
+        label: mobileSectionLabel(section),
+      }));
+  const showEmptyState = !loading && sections.length === 0;
+
+  const startWithTemplate = () => {
+    onClose();
+    if (onStart) {
+      onStart(defId);
+    } else {
+      navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, {
+        state: preserveNavigationState(location),
+      });
+    }
+  };
+
+  const previewPane = (
+    <CanvasPreviewPane
+      detail={detail}
+      bgUrl={bgUrl}
+      lang={lang}
+      name={name}
+    />
+  );
 
   return (
     <div
@@ -77,106 +199,414 @@ export function TemplatePreviewModal({ defId, lang, onClose }: Props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="flex max-h-[90vh] w-full max-w-6xl overflow-hidden rounded-2xl bg-white shadow-2xl"
+        className="relative flex h-[90vh] w-full max-w-[1500px] overflow-hidden rounded-2xl bg-white shadow-2xl"
       >
-        {/* Left — full canvas preview */}
-        <div className="relative hidden flex-1 items-center justify-center bg-stone-100 md:flex">
-          {detail ? (
-            <TemplateCanvasPreview
-              def={detail.def}
-              i18n={detail.i18n[lang]}
-              bgUrl={bgUrl}
-              lang={lang}
-              name={name}
-            />
-          ) : (
-            <img
-              src={bgUrl}
-              alt={name}
-              className="h-full w-full object-contain p-6"
-            />
-          )}
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full text-xl text-gray-400 hover:bg-white/80 hover:text-gray-700"
+        >
+          ×
+        </button>
+
+        {/* Desktop — directory / text / canvas preview */}
+        <div className="hidden h-full min-h-0 w-full grid-cols-[224px_minmax(0,520px)_minmax(420px,1fr)] md:grid">
+          <CanvasPreviewDirectory
+            name={name}
+            tagline={tagline}
+            sections={sections}
+            activeSectionId={activeSection?.id ?? activeSectionId}
+            onSelect={setActiveSectionId}
+          />
+
+          <div className="flex min-h-0 min-w-0 flex-col border-r border-gray-100 bg-white">
+            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-6 py-5">
+              {loading ? (
+                <p className="text-sm text-gray-400">{t('home.loading')}…</p>
+              ) : showEmptyState ? (
+                <p className="text-sm text-gray-400">{t('inspector.canvasKnowledge.empty')}</p>
+              ) : (
+                <CanvasPreviewSectionContent
+                  section={activeSection}
+                  detail={detail}
+                  lang={lang}
+                  canvasDefId={defId}
+                />
+              )}
+            </div>
+            <CanvasPreviewFooter name={name} onStart={startWithTemplate} />
+          </div>
+
+          <div className="min-h-0 min-w-0 bg-stone-100">
+            {previewPane}
+          </div>
         </div>
 
-        {/* Right — info panel */}
-        <div className="flex w-full flex-col md:w-[480px]">
-          {/* Header */}
-          <div className="flex items-start justify-between border-b border-gray-100 px-6 py-5">
-            <div className="min-w-0">
-              <h2 className="text-lg font-semibold text-gray-900">{name}</h2>
-              {tagline && <p className="mt-0.5 text-sm text-gray-500">{tagline}</p>}
+        {/* Mobile — segmented sections with preview as a peer tab. */}
+        <div className="flex h-full w-full flex-col md:hidden">
+          <div className="border-b border-gray-100 px-5 py-4 pr-12">
+            <h2 className="text-lg font-semibold text-gray-900">{name}</h2>
+            {tagline && <p className="mt-0.5 text-sm text-gray-500">{tagline}</p>}
+          </div>
+          <div className="shrink-0 overflow-x-auto border-b border-gray-100 bg-white px-4 py-3">
+            <div className="flex w-max gap-2">
+              {mobileSections.map((section) => (
+                <MobileSectionButton
+                  key={section.id}
+                  active={selectedSectionId === section.id}
+                  label={section.label}
+                  onClick={() => setActiveSectionId(section.id)}
+                />
+              ))}
             </div>
-            <button
-              type="button"
-              onClick={onClose}
-              aria-label="Close"
-              className="ml-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-xl text-gray-400 hover:bg-gray-100 hover:text-gray-700"
-            >
-              ×
-            </button>
           </div>
-
-          {/* Mobile canvas preview (shown only on small screens) */}
-          <div className="border-b border-gray-100 bg-stone-50 p-4 md:hidden">
-            {detail ? (
-              <TemplateCanvasPreview
-                def={detail.def}
-                i18n={detail.i18n[lang]}
-                bgUrl={bgUrl}
-                lang={lang}
-                name={name}
-                compact
-              />
-            ) : (
-              <img src={bgUrl} alt={name} className="w-full rounded-lg" />
-            )}
-          </div>
-
-          {/* Scrollable content */}
-          <div className="flex-1 overflow-y-auto px-6 py-5">
+          <div className="min-h-0 flex-1 overflow-y-auto px-5 py-5">
             {loading ? (
               <p className="text-sm text-gray-400">{t('home.loading')}…</p>
-            ) : knowledge?.intro || knowledge?.body ? (
-              <div className="space-y-5">
-                {knowledge.intro && (
-                  <div>
-                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                      {t('inspector.canvasKnowledge.usageIntro')}
-                    </h3>
-                    <Markdown content={knowledge.intro} canvasDefId={defId} />
-                  </div>
-                )}
-                {knowledge.body && (
-                  <div>
-                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                      {t('inspector.canvasKnowledge.knowledgeBody')}
-                    </h3>
-                    <Markdown content={knowledge.body} canvasDefId={defId} />
-                  </div>
-                )}
-              </div>
-            ) : (
+            ) : activeSectionId === MOBILE_PREVIEW_SECTION_ID ? (
+              <div className="rounded-xl bg-stone-100 p-3">{previewPane}</div>
+            ) : showEmptyState ? (
               <p className="text-sm text-gray-400">{t('inspector.canvasKnowledge.empty')}</p>
+            ) : (
+              <CanvasPreviewSectionContent
+                section={activeSection}
+                detail={detail}
+                lang={lang}
+                canvasDefId={defId}
+              />
             )}
           </div>
-
-          {/* Footer CTA */}
-          <div className="border-t border-gray-100 px-6 py-4">
-            <button
-              type="button"
-              onClick={() => {
-                onClose();
-                navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, {
-                  state: preserveNavigationState(location),
-                });
-              }}
-              className="w-full rounded-lg bg-gray-900 py-2.5 text-sm font-medium text-white hover:bg-black"
-            >
-              {t('home.startWithTemplate', { name })}
-            </button>
-          </div>
+          <CanvasPreviewFooter name={name} onStart={startWithTemplate} />
         </div>
       </div>
+    </div>
+  );
+}
+
+function CanvasPreviewDirectory({
+  name,
+  tagline,
+  sections,
+  activeSectionId,
+  onSelect,
+}: {
+  name: string;
+  tagline: string;
+  sections: CanvasPreviewSection[];
+  activeSectionId: string | null | undefined;
+  onSelect: (id: string) => void;
+}) {
+  const { t } = useTranslation();
+  const documentSections = sections.filter((section) => section.kind !== 'module');
+  const moduleSections = sections.filter((section) => section.kind === 'module');
+
+  return (
+    <aside className="flex min-h-0 min-w-0 flex-col border-r border-gray-100 bg-stone-50">
+      <div className="shrink-0 border-b border-gray-100 px-4 py-4">
+        <div className="text-[11px] font-semibold uppercase tracking-wide text-gray-400">
+          {t('inspector.canvasKnowledge.directory')}
+        </div>
+        <h2 className="mt-2 text-[16px] font-semibold leading-snug text-gray-900">{name}</h2>
+        {tagline && <p className="mt-1 text-[13px] leading-relaxed text-gray-500">{tagline}</p>}
+      </div>
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 py-3">
+        {documentSections.length > 0 && (
+          <DirectoryGroup label={t('inspector.canvasKnowledge.readingGuide')}>
+            {documentSections.map((section) => (
+              <DirectoryButton
+                key={section.id}
+                section={section}
+                active={activeSectionId === section.id}
+                onClick={() => onSelect(section.id)}
+              />
+            ))}
+          </DirectoryGroup>
+        )}
+        {moduleSections.length > 0 && (
+          <DirectoryGroup label={t('inspector.canvasKnowledge.canvasModules')} className={documentSections.length > 0 ? 'mt-4' : ''}>
+            {moduleSections.map((section) => (
+              <DirectoryButton
+                key={section.id}
+                section={section}
+                active={activeSectionId === section.id}
+                onClick={() => onSelect(section.id)}
+              />
+            ))}
+          </DirectoryGroup>
+        )}
+      </div>
+    </aside>
+  );
+}
+
+function DirectoryGroup({
+  label,
+  children,
+  className = '',
+}: {
+  label: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={className}>
+      <div className="mb-1.5 px-2 text-[11px] font-semibold uppercase tracking-wide text-gray-400">
+        {label}
+      </div>
+      <div className="space-y-0.5">{children}</div>
+    </div>
+  );
+}
+
+function DirectoryButton({
+  section,
+  active,
+  onClick,
+}: {
+  section: CanvasPreviewSection;
+  active: boolean;
+  onClick: () => void;
+}) {
+  const moduleIndex = section.kind === 'module' ? String(section.moduleIndex + 1).padStart(2, '0') : null;
+
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left transition ${
+        active
+          ? 'bg-white text-gray-950 shadow-sm'
+          : 'text-gray-600 hover:bg-white/70 hover:text-gray-950'
+      }`}
+    >
+      <span className={`h-5 w-0.5 shrink-0 rounded-full ${active ? 'bg-emerald-500' : 'bg-transparent'}`} />
+      {moduleIndex && (
+        <span className={`w-5 shrink-0 text-[11px] font-semibold tabular-nums ${active ? 'text-emerald-700' : 'text-gray-400'}`}>
+          {moduleIndex}
+        </span>
+      )}
+      <span className="line-clamp-2 block min-w-0 flex-1 text-[13px] font-semibold leading-snug">
+        {section.label}
+      </span>
+    </button>
+  );
+}
+
+function mobileSectionLabel(section: CanvasPreviewSection) {
+  if (section.kind !== 'module') return section.label;
+  return `${String(section.moduleIndex + 1).padStart(2, '0')} ${section.label}`;
+}
+
+function CanvasPreviewSectionContent({
+  section,
+  detail,
+  lang,
+  canvasDefId,
+}: {
+  section: CanvasPreviewSection | null;
+  detail: CanvasDefDetail | null;
+  lang: Lang;
+  canvasDefId: string;
+}) {
+  const { t } = useTranslation();
+  if (!section || !detail) return null;
+
+  if (section.kind === 'guide') {
+    return <LearningGuide learning={detail.def.learning} lang={lang} />;
+  }
+
+  if (section.kind === 'module') {
+    const moduleContent = splitLeadingMarkdownHeading(section.module.content);
+    const fallbackGuidance = !moduleContent.content && section.module.guidance;
+    return (
+      <article>
+        <SectionHeader
+          eyebrow={section.eyebrow}
+          title={section.label}
+          index={section.moduleIndex + 1}
+          subtitle={section.module.prompt}
+        />
+        {moduleContent.content ? (
+          <Markdown
+            content={moduleContent.content}
+            canvasDefId={canvasDefId}
+            variant="modal-reader"
+            className="mt-4 text-[13px] leading-6 text-gray-700"
+          />
+        ) : fallbackGuidance ? (
+          <p className="mt-4 text-[13px] leading-6 text-gray-700">
+            {fallbackGuidance}
+          </p>
+        ) : null}
+        {section.module.examples.length > 0 && (
+          <CompactExampleList
+            label={t('inspector.block.examples')}
+            examples={section.module.examples}
+          />
+        )}
+      </article>
+    );
+  }
+
+  const documentContent = splitLeadingMarkdownHeading(section.content);
+  const documentTitle = documentContent.heading || section.label;
+
+  return (
+    <article>
+      <SectionHeader eyebrow={section.label} title={documentTitle} />
+      {documentContent.content && (
+        <Markdown
+          content={documentContent.content}
+          canvasDefId={canvasDefId}
+          variant="modal-reader"
+          className="mt-4 text-[13px] leading-6 text-gray-700"
+        />
+      )}
+    </article>
+  );
+}
+
+function splitLeadingMarkdownHeading(content: string): { heading: string | null; content: string } {
+  const normalized = content.replace(/\r\n/g, '\n').trimStart();
+  if (!normalized) return { heading: null, content: '' };
+
+  const lines = normalized.split('\n');
+  const firstLine = lines[0]?.trim() ?? '';
+  const match = /^#\s+(.+?)\s*#*$/.exec(firstLine);
+  if (!match) return { heading: null, content: normalized };
+
+  return {
+    heading: match[1]?.trim() || null,
+    content: lines.slice(1).join('\n').trimStart(),
+  };
+}
+
+function SectionHeader({
+  eyebrow,
+  title,
+  index,
+  subtitle,
+}: {
+  eyebrow: string;
+  title: string;
+  index?: number;
+  subtitle?: string;
+}) {
+  const indexLabel = typeof index === 'number' ? String(index).padStart(2, '0') : null;
+  return (
+    <header className="border-b border-gray-100 pb-4">
+      <div className="flex items-center gap-2 text-[11px] font-semibold text-emerald-700">
+        {indexLabel && (
+          <span className="tabular-nums text-emerald-700">
+            {indexLabel}
+          </span>
+        )}
+        {eyebrow}
+      </div>
+      <h3 className="mt-2 text-[18px] font-semibold leading-snug text-gray-950">{title}</h3>
+      {subtitle && (
+        <p className="mt-1.5 text-[13px] leading-5 text-gray-500">
+          {subtitle}
+        </p>
+      )}
+    </header>
+  );
+}
+
+function CompactExampleList({ label, examples }: { label: string; examples: string[] }) {
+  return (
+    <div className="mt-4 border-t border-gray-100 pt-3">
+      <div className="mb-2 text-[11px] font-semibold text-gray-400">
+        {label}
+      </div>
+      <div className="flex flex-wrap gap-1.5">
+        {examples.slice(0, 4).map((example) => (
+          <span
+            key={example}
+            className="rounded-full bg-gray-100 px-2 py-0.5 text-[11px] text-gray-600"
+          >
+            {example}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MobileSectionButton({
+  active,
+  label,
+  onClick,
+}: {
+  active: boolean;
+  label: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
+        active
+          ? 'bg-gray-900 text-white'
+          : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900'
+      }`}
+    >
+      {label}
+    </button>
+  );
+}
+
+function CanvasPreviewFooter({
+  name,
+  onStart,
+}: {
+  name: string;
+  onStart: () => void;
+}) {
+  const { t } = useTranslation();
+  return (
+    <div className="shrink-0 border-t border-gray-100 bg-white px-5 py-4">
+      <button
+        type="button"
+        onClick={onStart}
+        className="w-full rounded-lg bg-gray-900 py-2.5 text-sm font-medium text-white hover:bg-black"
+      >
+        {t('home.startWithTemplate', { name })}
+      </button>
+    </div>
+  );
+}
+
+function CanvasPreviewPane({
+  detail,
+  bgUrl,
+  lang,
+  name,
+}: {
+  detail: CanvasDefDetail | null;
+  bgUrl: string;
+  lang: Lang;
+  name: string;
+}) {
+  return (
+    <div className="flex h-full min-h-[260px] items-center justify-center overflow-hidden px-8 py-12 md:px-10 md:py-14">
+      {detail ? (
+        <TemplateCanvasPreview
+          def={detail.def}
+          i18n={detail.i18n[lang]}
+          bgUrl={bgUrl}
+          lang={lang}
+          name={name}
+        />
+      ) : (
+        <img
+          src={bgUrl}
+          alt={name}
+          className="h-full w-full object-contain object-center p-4"
+        />
+      )}
     </div>
   );
 }
@@ -203,13 +633,13 @@ function TemplateCanvasPreview({
     return <StructuredTemplatePreview def={def} i18n={i18n} bgUrl={bgUrl} lang={lang} name={name} compact={compact} />;
   }
   if (def.plugin !== 'chart-canvas' || !def.chart) {
-    return <img src={bgUrl} alt={name} className={compact ? 'w-full rounded-lg' : 'h-full w-full object-contain p-6'} />;
+    return <img src={bgUrl} alt={name} className={compact ? 'w-full rounded-lg' : 'h-full w-full object-contain object-center p-4'} />;
   }
 
   return (
     <svg
       viewBox={viewBox}
-      className={compact ? 'w-full rounded-lg bg-[#FAFAF7]' : 'h-full w-full p-6'}
+      className={compact ? 'w-full rounded-lg bg-[#FAFAF7]' : 'h-full w-full p-4'}
       preserveAspectRatio="xMidYMid meet"
       role="img"
       aria-label={name}
@@ -242,7 +672,7 @@ function StructuredTemplatePreview({
   const showBlockPrompts = preview?.showBlockPrompts === true;
 
   return (
-    <div className={compact ? 'w-full rounded-lg bg-[#FAFAF7] p-3' : 'flex h-full w-full flex-col justify-center p-8'}>
+    <div className={compact ? 'w-full rounded-lg bg-[#FAFAF7] p-3' : 'flex h-full w-full flex-col justify-center p-4'}>
       {(showTitle || showSubtitle) && (
         <div className={compact ? 'mb-2' : 'mb-4'}>
           {showTitle && (

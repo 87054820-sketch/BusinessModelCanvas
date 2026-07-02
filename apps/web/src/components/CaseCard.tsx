@@ -5,6 +5,7 @@ import type {
   Lang,
   StrategyFramework,
 } from '@pingarden/shared';
+import { localize } from './LearningGuide';
 
 interface Props {
   entry: CaseLibraryEntry;
@@ -52,6 +53,14 @@ export function CaseCard({
   const { t } = useTranslation();
   const name = entry.companyName[lang] ?? entry.companyName.en;
   const summary = entry.summary[lang] ?? entry.summary.en;
+  const learningSummary =
+    localize(entry.learning?.whyOpen, lang) ||
+    localize(entry.learning?.headline, lang) ||
+    summary;
+  const concepts = (entry.learning?.keyConcepts ?? [])
+    .map((item) => localize(item, lang))
+    .filter(Boolean)
+    .slice(0, 3);
 
   // Per-language counts let the card show what the user will actually
   // experience in their UI lang (e.g. Swiss case ships 3 EN + 3 ZH
@@ -108,7 +117,7 @@ export function CaseCard({
         <div className="min-w-0 flex-1">
           <div className="truncate text-sm font-semibold text-gray-900">{name}</div>
           <div className="mt-1 line-clamp-3 text-[12px] leading-relaxed text-gray-500">
-            {summary}
+            {learningSummary}
           </div>
         </div>
         <span
@@ -119,6 +128,19 @@ export function CaseCard({
           {t(`library.kind.${entry.kind}`)}
         </span>
       </div>
+
+      {concepts.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {concepts.map((concept) => (
+            <span
+              key={concept}
+              className="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-medium text-emerald-700"
+            >
+              {concept}
+            </span>
+          ))}
+        </div>
+      )}
 
       {/* Pattern + strategy-framework chips share one compact two-column area. */}
       {(applied.length > 0 || appliedFrameworks.length > 0) && (

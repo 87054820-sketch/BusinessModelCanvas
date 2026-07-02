@@ -26,3 +26,22 @@ them**, not to redesign them.
   what *they* are trying to do.
 - **Trying to cover several segments in one persona.** If the goal
   diverges across segments, duplicate the canvas.
+
+## Good Answer vs Weak Answer
+
+A good persona names one human-like customer, one situation, and one goal. A weak answer is a demographic bundle or a market segment label with no moment of struggle.
+
+## Sticky Examples
+
+- "Maya, head of operations at a 60-person clinic, trying to reduce denied claims before the next cash crunch."
+- "New product manager, first enterprise roadmap review, wants to avoid losing engineering trust."
+
+## Transfer Questions
+
+- What is this person trying to do right now?
+- What situation makes the goal urgent?
+- Would a different segment need a separate map?
+
+## Source Grounding
+
+Business Model Generation and Value Proposition Design both use customer understanding as the entry point for design. The Empathy Map translates that into a concrete person and situation before downstream canvases define jobs, pains, and gains.

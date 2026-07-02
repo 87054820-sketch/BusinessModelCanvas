@@ -11,7 +11,10 @@ pingarden doctor --json
 pingarden project list --json
 pingarden canvas list --json
 pingarden template list --json
+pingarden reference resolve --text "BCG 增长份额矩阵和 Business Model Generation" --lang zh --json
 ```
+
+`reference resolve` is a taxonomy guardrail: it separates cases, resources, resource chapters, canvas templates, existing canvas instances, projects, stories, patterns, strategy frameworks, and experiments. Use it before saying something is missing.
 
 ## Read
 

@@ -147,6 +147,13 @@
     "canvasKnowledge": {
       "usageIntro": "使用介绍",
       "knowledgeBody": "知识体系",
+      "modules": "模块章节",
+      "readingGuide": "阅读导览",
+      "canvasModules": "画布模块介绍",
+      "directory": "目录",
+      "documentation": "文档",
+      "preview": "预览",
+      "switchHint": "可通过左侧目录切换到模块或更深层概念。",
       "empty": "这种画布的知识体系还没有撰写。",
       "emptyHint": "在 packages/canvases/{{id}}/knowledge/ 下补充 intro.{{lang}}.md 和 body.{{lang}}.md。"
     },
@@ -401,6 +408,7 @@
       "experiments": "实验设计",
       "strategyFrameworks": "战略框架",
       "resources": "资料",
+      "guide": "学习导读",
       "description": "详细说明",
       "relatedCases": "相关案例"
     },
@@ -430,8 +438,37 @@
         "body": "分析画布是策略库的**工作工具层**：它们不是资料附件，而是用来拆解商业模式、客户价值、竞争曲线、组合管理、实验证据和未来情景的结构化方法。"
       }
     },
+    "learning": {
+      "guide": "学习导读",
+      "audience": "适合对象：",
+      "keyConcepts": "关键概念",
+      "firstSteps": "先看这里",
+      "outcomes": "读完可产出",
+      "commonMisreads": "常见误读",
+      "practicePrompts": "迁移问题",
+      "sourceRefs": "来源",
+      "relatedRefs": "相关",
+      "nextRefs": "下一步",
+      "levels": {
+        "beginner": "入门",
+        "intermediate": "进阶",
+        "advanced": "高级"
+      },
+      "refTypes": {
+        "canvas": "画布",
+        "canvasBlock": "模块",
+        "case": "案例",
+        "caseStory": "故事",
+        "resource": "资料",
+        "resourceChapter": "章节",
+        "pattern": "模式",
+        "strategyFramework": "框架",
+        "experiment": "实验"
+      }
+    },
     "canvasMethod": {
       "kind": "画布",
+      "details": "查看详情",
       "start": "用这张画布开始",
       "defaultTagline": "用于结构化拆解一个商业或战略问题。"
     },
@@ -472,6 +509,7 @@
       "relatedEmpty": "暂未关联其他内容。",
       "descriptionEmpty": "本资料暂未撰写说明。",
       "referencesEmpty": "暂未登记出处。",
+      "guideEmpty": "本资料暂未配置学习导读。",
       "chapters": "章节",
       "chapterCount_one": "{{count}} 章",
       "chapterCount_other": "{{count}} 章",
@@ -871,10 +909,54 @@
       "providerUnavailable": "当前 AI Provider 暂不可用。",
       "cliMissing": "本机未安装 Kimi CLI。",
       "cliInstallHint": "运行 `npm install -g @moonshot-ai/kimi-code` 后重新打开应用。",
+      "authRequiredNotice": "Copilot 需要一个本机身份来保存会话偏好和记忆。进入本机模式后可以继续使用,不需要微信登录。",
+      "savedKeyUnavailable": "已保存的 Key 无法读取。请删除当前模型的 Key 后重新保存。",
       "modelProvider": "模型 Provider",
+      "providerTitle": "连接 {{provider}}",
+      "providerIntro": "粘贴你的 {{provider}} API Key。PinGarden 只会在本次请求中临时转发调用,不会保存到 CloudBase 或 PinGarden 服务器。",
+      "getProviderKey": "获取 {{provider}} API Key →",
+      "noApiKeyRequired": "{{provider}} 不需要 API Key。",
+      "providerIssue": {
+        "title": {
+          "auth": "{{provider}} Key 未通过认证",
+          "billing": "{{provider}} 额度或余额不足",
+          "plan": "{{provider}} 平台或套餐不匹配",
+          "rate-limit": "{{provider}} 暂时限流",
+          "network": "网络连接异常",
+          "empty-assistant": "上一轮回复未完成"
+        },
+        "body": {
+          "auth": "当前 Key 可能无效、过期、复制不完整,或不属于当前选择的模型平台。",
+          "billing": "平台已识别到账号,但当前余额、Credits、订阅或调用额度不足。",
+          "plan": "Key 可能来自另一个平台、区域或套餐,也可能没有开通当前模型。",
+          "rate-limit": "平台暂时限制了请求频率或 token 额度,稍后重试通常可以恢复。",
+          "network": "请求没有稳定到达模型服务,可能是网络、代理或 WebView 拦截。",
+          "empty-assistant": "上一轮模型输出没有完整结束,清理失败回复后重试通常可以恢复。"
+        },
+        "checksTitle": "建议检查",
+        "checks": {
+          "keyFormat": "只粘贴 Key 本身即可；如果复制了 `Bearer ...` 或完整 Authorization 头,PinGarden 会自动清理。",
+          "providerMatch": "确认 Key 来自当前选择的 {{provider}} 平台,不是其他模型平台。",
+          "removeOldKey": "如果之前保存过旧 Key,先删除当前模型的 Key 再重新保存。",
+          "balance": "到平台控制台确认余额、Credits、订阅或免费额度仍可用。",
+          "quota": "检查是否达到日额度、并发额度、QPS/RPM/TPM 或套餐上限。",
+          "retryAfterBilling": "补充余额或开通订阅后,回到这里重新测试连接。",
+          "wait": "等待一小段时间后重试；如果持续限流,先切换到其他模型。",
+          "switchProvider": "临时切换到 Kimi、DeepSeek 或 MiniMax 中仍可用的模型。",
+          "network": "检查本机网络、代理、公司网络或移动端 WebView 是否拦截请求。",
+          "retry": "稍后重新测试连接。",
+          "clearLastFailed": "清空失败的上一轮回复后再发送。",
+          "modelAccess": "确认账号已经开通当前模型,并且所选模型名没有被平台下线或限制。",
+          "minimaxKeyType": "MiniMax 的 Pay-as-you-go API Key 和 Token Plan Subscription Key 不能混用,请按当前账号套餐复制对应 Key。"
+        },
+        "openConsole": "打开 {{provider}} 控制台",
+        "removeKey": "删除已保存 Key",
+        "rawDetails": "查看平台原始返回"
+      },
       "providerOptions": {
         "kimi": "Kimi",
-        "deepseek": "DeepSeek"
+        "deepseek": "DeepSeek",
+        "minimax": "MiniMax"
       },
       "providers": {
         "kimi": {

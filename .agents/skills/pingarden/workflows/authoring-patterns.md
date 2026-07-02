@@ -93,7 +93,7 @@ pnpm typecheck
 pnpm --filter @pingarden/web build
 pnpm --filter @pingarden/cli run build
 node apps/cli/dist/index.js skill install --local
-git diff .claude/skills/pingarden/   # expect: patterns/<slug>.{en,zh}.md +
+git diff .agents/skills/pingarden/   # expect: patterns/<slug>.{en,zh}.md +
                                      # SKILL.md version + workflows/patterns.md +
                                      # reference/patterns.md
 ```

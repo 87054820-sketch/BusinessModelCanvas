@@ -147,6 +147,13 @@
     "canvasKnowledge": {
       "usageIntro": "How to use",
       "knowledgeBody": "Deep dive",
+      "modules": "Modules",
+      "readingGuide": "Reading guide",
+      "canvasModules": "Canvas modules",
+      "directory": "Contents",
+      "documentation": "Docs",
+      "preview": "Preview",
+      "switchHint": "Use the contents on the left to jump into modules or deeper concepts.",
       "empty": "Knowledge for this canvas hasn't been written yet.",
       "emptyHint": "Add intro.{{lang}}.md and body.{{lang}}.md under packages/canvases/{{id}}/knowledge/."
     },
@@ -405,6 +412,7 @@
       "experiments": "Experiment Design",
       "strategyFrameworks": "Strategy Frameworks",
       "resources": "Resources",
+      "guide": "Learning guide",
       "description": "Description",
       "relatedCases": "Related cases"
     },
@@ -436,8 +444,37 @@
         "body": "Analysis canvases are the **working-tool layer** of the library. They are not attachments; they structure business models, customer value, value curves, portfolios, evidence, and future scenarios into editable workspaces."
       }
     },
+    "learning": {
+      "guide": "Learning guide",
+      "audience": "Best for:",
+      "keyConcepts": "Key concepts",
+      "firstSteps": "Start here",
+      "outcomes": "After reading, you can",
+      "commonMisreads": "Common misreads",
+      "practicePrompts": "Transfer questions",
+      "sourceRefs": "Source",
+      "relatedRefs": "Related",
+      "nextRefs": "Next",
+      "levels": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+      },
+      "refTypes": {
+        "canvas": "Canvas",
+        "canvasBlock": "Block",
+        "case": "Case",
+        "caseStory": "Story",
+        "resource": "Resource",
+        "resourceChapter": "Chapter",
+        "pattern": "Pattern",
+        "strategyFramework": "Framework",
+        "experiment": "Experiment"
+      }
+    },
     "canvasMethod": {
       "kind": "Canvas",
+      "details": "Details",
       "start": "Start with this canvas",
       "defaultTagline": "Use this to structure a business or strategy question."
     },
@@ -479,6 +516,7 @@
       "relatedEmpty": "No related content yet.",
       "descriptionEmpty": "No reading note authored for this resource yet.",
       "referencesEmpty": "No sources recorded yet.",
+      "guideEmpty": "No learning guide configured for this resource yet.",
       "chapters": "Chapters",
       "chapterCount_one": "{{count}} chapter",
       "chapterCount_other": "{{count}} chapters",
@@ -878,10 +916,54 @@
       "providerUnavailable": "The current AI provider is unavailable.",
       "cliMissing": "Kimi CLI isn't installed on this machine.",
       "cliInstallHint": "Run `npm install -g @moonshot-ai/kimi-code` then reload the app.",
+      "authRequiredNotice": "Copilot needs a local identity to save session preferences and memory. Enter local mode to continue; WeChat sign-in is not required.",
+      "savedKeyUnavailable": "The saved key cannot be read. Remove the key for the current model, then save it again.",
       "modelProvider": "Model provider",
+      "providerTitle": "Connect {{provider}}",
+      "providerIntro": "Paste your {{provider}} API key. PinGarden uses it only for the current request and never saves it to CloudBase or the PinGarden server.",
+      "getProviderKey": "Get a {{provider}} API key →",
+      "noApiKeyRequired": "{{provider}} does not require an API key.",
+      "providerIssue": {
+        "title": {
+          "auth": "{{provider}} key was not accepted",
+          "billing": "{{provider}} balance or quota is unavailable",
+          "plan": "{{provider}} platform or plan does not match",
+          "rate-limit": "{{provider}} is rate-limiting requests",
+          "network": "Network connection issue",
+          "empty-assistant": "Previous reply did not finish"
+        },
+        "body": {
+          "auth": "The current key may be invalid, expired, incomplete, or from a different model platform.",
+          "billing": "The platform recognized the account, but balance, credits, subscription, or call quota is not currently available.",
+          "plan": "The key may belong to another platform, region, or plan, or the selected model may not be enabled for this account.",
+          "rate-limit": "The platform is temporarily limiting request frequency or token usage. Retrying later usually recovers.",
+          "network": "The request did not reliably reach the model service. Network, proxy, or WebView blocking can cause this.",
+          "empty-assistant": "The previous model output did not complete. Clearing the failed reply and retrying usually fixes it."
+        },
+        "checksTitle": "Suggested checks",
+        "checks": {
+          "keyFormat": "Paste only the key value. If you copied `Bearer ...` or a full Authorization header, PinGarden will clean it automatically.",
+          "providerMatch": "Confirm the key comes from the selected {{provider}} platform, not another model platform.",
+          "removeOldKey": "If an old key was saved before, remove the current model key and save it again.",
+          "balance": "Open the provider console and confirm balance, credits, subscription, or free quota is available.",
+          "quota": "Check daily quota, concurrency, QPS/RPM/TPM, or plan limits.",
+          "retryAfterBilling": "After adding balance or enabling a subscription, return here and test the connection again.",
+          "wait": "Wait a little and retry. If it keeps happening, switch to another model for now.",
+          "switchProvider": "Temporarily switch to another available model such as Kimi, DeepSeek, or MiniMax.",
+          "network": "Check local network, proxy, corporate network, or mobile WebView request blocking.",
+          "retry": "Test the connection again later.",
+          "clearLastFailed": "Clear the failed previous reply before sending again.",
+          "modelAccess": "Confirm this account has access to the selected model and that the model name is still enabled by the platform.",
+          "minimaxKeyType": "MiniMax Pay-as-you-go API keys and Token Plan subscription keys are not interchangeable. Copy the key type that matches your account plan."
+        },
+        "openConsole": "Open {{provider}} console",
+        "removeKey": "Remove saved key",
+        "rawDetails": "Show provider raw response"
+      },
       "providerOptions": {
         "kimi": "Kimi",
-        "deepseek": "DeepSeek"
+        "deepseek": "DeepSeek",
+        "minimax": "MiniMax"
       },
       "providers": {
         "kimi": {

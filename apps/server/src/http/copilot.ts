@@ -23,8 +23,7 @@ import type {
   CopilotModelId,
 } from '../llm/aiProvider.js';
 import {
-  COPILOT_MODEL_VALUES,
-  COPILOT_PROVIDER_VALUES,
+  COPILOT_ID_PATTERN,
   type CopilotAiRouter,
   type CopilotAiSelection,
   CopilotAiSelectionError,
@@ -46,6 +45,7 @@ const MAX_IMAGE_BYTES = COPILOT_MAX_IMAGE_BYTES;
 const MAX_IMAGE_DATA_URL_LENGTH = Math.ceil(MAX_IMAGE_BYTES * 4 / 3) + 128;
 const COPILOT_SSE_HEARTBEAT_MS = 15_000;
 const MAX_ATTACHED_CONTEXT_CHARS = 12_000;
+const CopilotIdSchema = z.string().min(1).max(80).regex(COPILOT_ID_PATTERN);
 
 /**
  * Copilot HTTP surface — AI provider chat routes:
@@ -81,18 +81,21 @@ export function registerCopilotRoutes(
   const bundle = storage.bundleStorage;
   const defsById = new Map(defs.map((d) => [d.def.id, d]));
   const profileStore = new CopilotUserProfileStore(config.dataDir);
-  const aiRouter = createCopilotAiRouter(config.aiProvider);
+  const aiRouter = createCopilotAiRouter(config.aiProvider, {
+    includeInternalProviders: config.aiInternalProvidersEnabled,
+    enableAgentBridge: config.aiAgentBridgeEnabled,
+  });
 
   // ── GET /copilot/health ──────────────────────────────────────────────
   app.get('/copilot/health', async () => {
-    return aiRouter.health();
+    return aiRouter.health({ includeInternal: config.aiInternalProvidersEnabled });
   });
 
   // ── POST /copilot/test-key ──────────────────────────────────────────
   const TestKeySchema = z.object({
-    apiKey: z.string().min(1),
-    model: z.enum(COPILOT_MODEL_VALUES).optional(),
-    provider: z.enum(COPILOT_PROVIDER_VALUES).optional(),
+    apiKey: z.string().optional().default(''),
+    model: CopilotIdSchema.optional(),
+    provider: CopilotIdSchema.optional(),
   });
 
   app.post('/copilot/test-key', async (req, reply) => {
@@ -102,13 +105,16 @@ export function registerCopilotRoutes(
     }
     const selection = resolveAiSelection(reply, aiRouter, parse.data);
     if (!selection) return;
+    if (selection.descriptor.requiresApiKey && !parse.data.apiKey.trim()) {
+      return reply.code(400).send({ ok: false, message: 'API key is required for this provider.' });
+    }
     return reply.send(await selection.provider.testKey(parse.data.apiKey));
   });
 
   // ── POST /copilot/clear-key ─────────────────────────────────────────
   const ClearKeySchema = z.object({
-    model: z.enum(COPILOT_MODEL_VALUES).optional(),
-    provider: z.enum(COPILOT_PROVIDER_VALUES).optional(),
+    model: CopilotIdSchema.optional(),
+    provider: CopilotIdSchema.optional(),
   }).optional();
 
   app.post('/copilot/clear-key', async (req, reply) => {
@@ -130,9 +136,9 @@ export function registerCopilotRoutes(
   });
 
   const ChatRequestSchema = z.object({
-    apiKey: z.string().min(1),
-    model: z.enum(COPILOT_MODEL_VALUES).optional(),
-    provider: z.enum(COPILOT_PROVIDER_VALUES).optional(),
+    apiKey: z.string().optional().default(''),
+    model: CopilotIdSchema.optional(),
+    provider: CopilotIdSchema.optional(),
     intent: z.enum(['project-draft', 'project-update', 'discussion-insight', 'apply-learning-to-project']).optional(),
     messages: z
       .array(
@@ -185,6 +191,9 @@ export function registerCopilotRoutes(
     const body = parse.data;
     const selection = resolveAiSelection(reply, aiRouter, body);
     if (!selection) return;
+    if (selection.descriptor.requiresApiKey && !body.apiKey.trim()) {
+      return reply.code(400).send({ error: 'API key is required for this provider.' });
+    }
     const sanitizedMessages = stripEmptyAssistantMessages(body.messages);
     const strippedEmptyAssistantCount = body.messages.length - sanitizedMessages.length;
     const attachmentCount = sanitizedMessages.reduce(
@@ -499,7 +508,7 @@ function resolveAiSelection(
   input: { model?: CopilotModelId; provider?: CopilotAiProviderKind } | undefined,
 ): CopilotAiSelection | null {
   try {
-    return aiRouter.resolve(input);
+    return aiRouter.resolve(input, { allowInternal: config.aiInternalProvidersEnabled });
   } catch (err) {
     if (err instanceof CopilotAiSelectionError) {
       reply.code(400).send({ ok: false, message: err.message });
@@ -1275,6 +1284,7 @@ function buildSystemPrompt(attachedContext?: string, userProfileContext?: string
     'Do not infer library availability from the subprocess working directory; use the supplied PinGarden context as the source of truth.',
     'When recommending a next step, prefer concrete PinGarden actions such as reading a case, reading a specific resource chapter, opening a canvas, drafting a story, choosing a paired canvas, or testing an assumption.',
     'Keep library categories distinct: “case” means only concrete entries from the Cases section; books/articles/reports/web pages are Resources or reference reading, never cases. When resource chapter context is supplied, use it as source material for deeper guidance and cite the resource title plus chapter title/slug. Separate recommended cases, reference reading, canvas templates, strategy frameworks, patterns, and experiments in the answer when more than one category appears. In Chinese answers, prefer localized display names and omit internal slugs/defIds in prose unless the user explicitly asks for IDs; do not expose jargon such as “ad-lib” when a Chinese name exists. In English answers, show the display name first and include slug/id only when useful.',
+    'When you include machine-readable references or cards, prefer a fenced JSON block with kind "pingarden.response.v1"; keep the visible answer in answerMarkdown and type each reference as case/resource/resourceChapter/canvasTemplate/canvasInstance/project/story/pattern/strategyFramework/experiment.',
     'When the user wants to create a project from text, links, or images, first ask for missing essentials such as project name, target customers, and goal. Once enough information is available, output exactly one fenced JSON project draft with kind "pingarden.projectDraft" so the UI can show a confirmation card. Never claim the project is created until the user presses the confirmation button.',
   ].join(' ');
   const answerShape = [

@@ -13,14 +13,47 @@
     "en": "Use this when BMC's Customer Segments and Value Proposition are too generic. It gives teams a concrete way to describe customers, design fit, and connect discovery work to experiments.",
     "zh": "当 BMC 里的客户细分和价值主张过于泛泛时，推荐用这本。它能把客户描述、价值设计和实验验证连起来，避免价值主张停留在营销口号。"
   },
-  "authors": ["Alexander Osterwalder", "Yves Pigneur", "Greg Bernarda", "Alan Smith"],
+  "authors": [
+    "Alexander Osterwalder",
+    "Yves Pigneur",
+    "Greg Bernarda",
+    "Alan Smith"
+  ],
   "publisher": "Wiley / Strategyzer",
   "year": 2014,
-  "tags": ["value-proposition", "customer-fit", "discovery", "case-index"],
-  "relatedCanvasDefIds": ["value-proposition-canvas", "business-model-canvas", "empathy-map", "jobs-to-be-done", "customer-journey", "ad-lib-value-proposition"],
-  "relatedCaseSlugs": ["nespresso", "airbnb", "alibaba-group", "drybar", "novo-nordisk-novopen", "stitch-fix", "patagonia"],
-  "relatedExperimentSlugs": ["customer-interview", "online-survey", "clickable-prototype", "smoke-test", "storyboard"],
-  "relatedStrategyFrameworkSlugs": ["innovation-metrics"],
+  "tags": [
+    "value-proposition",
+    "customer-fit",
+    "discovery",
+    "case-index"
+  ],
+  "relatedCanvasDefIds": [
+    "value-proposition-canvas",
+    "business-model-canvas",
+    "empathy-map",
+    "jobs-to-be-done",
+    "customer-journey",
+    "ad-lib-value-proposition"
+  ],
+  "relatedCaseSlugs": [
+    "nespresso",
+    "airbnb",
+    "alibaba-group",
+    "drybar",
+    "novo-nordisk-novopen",
+    "stitch-fix",
+    "patagonia"
+  ],
+  "relatedExperimentSlugs": [
+    "customer-interview",
+    "online-survey",
+    "clickable-prototype",
+    "smoke-test",
+    "storyboard"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "innovation-metrics"
+  ],
   "sources": [
     {
       "label": "Alexander Osterwalder, Yves Pigneur, Greg Bernarda & Alan Smith · Value Proposition Design: How to Create Products and Services Customers Want · Wiley · 2014 · ISBN 978-1118968055 · 320 pages"
@@ -40,5 +73,97 @@
       "label": "Wiley · Value Proposition Design product page",
       "url": "https://www.wiley.com/en-us/shop/general-introductory-business-management/value-proposition-design-how-to-create-products-and-services-customers-want-p-9781118968055"
     }
-  ]
+  ],
+  "learning": {
+    "level": "beginner",
+    "headline": {
+      "en": "Turn customer understanding into a testable value proposition",
+      "zh": "把客户理解转成可验证的价值主张"
+    },
+    "whyOpen": {
+      "en": "Open this when Customer Segments and Value Propositions in BMC are still generic. It gives you the customer profile, value map, and fit logic needed before experiments.",
+      "zh": "当 BMC 里的客户细分和价值主张还很泛时打开它：它提供客户档案、价值地图和匹配逻辑，让实验开始前先有清楚假设。"
+    },
+    "audience": {
+      "en": "Founders, product teams, discovery teams, and anyone translating customer interviews into product decisions.",
+      "zh": "适合创业者、产品团队、客户发现团队，以及需要把访谈转成产品决策的人。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Customer profile",
+        "zh": "客户档案"
+      },
+      {
+        "en": "Value map",
+        "zh": "价值地图"
+      },
+      {
+        "en": "Problem-solution fit",
+        "zh": "问题-解决方案匹配"
+      },
+      {
+        "en": "Evidence before scaling",
+        "zh": "规模化之前先验证证据"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "A value proposition is not a slogan; it is a claim about specific jobs, pains, gains, and evidence of fit.",
+        "zh": "价值主张不是口号；它是关于具体任务、痛点、收益和匹配证据的一组判断。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Read chapter 1 with the Value Proposition Canvas open.",
+        "zh": "打开价值主张画布同步阅读第 1 章。"
+      },
+      {
+        "en": "Use chapter 3 before committing major product or channel investment.",
+        "zh": "在投入重大产品或渠道资源前阅读第 3 章。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can state which customer job matters most and what evidence would prove your solution creates value.",
+        "zh": "你能说明哪个客户任务最重要，以及什么证据能证明你的方案创造了价值。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which customer job, pain, or gain in your current project is still an assumption rather than evidence?",
+        "zh": "你当前项目里，哪一个客户任务、痛点或收益仍然只是猜测而不是证据？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "value-proposition-design",
+        "chapterSlug": "ch01-canvas"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "value-proposition-canvas"
+      },
+      {
+        "type": "canvas",
+        "slug": "jobs-to-be-done"
+      },
+      {
+        "type": "experiment",
+        "slug": "customer-interview"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "testing-business-ideas"
+      },
+      {
+        "type": "resource",
+        "slug": "business-model-generation"
+      }
+    ]
+  }
 }

@@ -47,6 +47,51 @@
       "description": { "en": "Remaining uncertainty or weak evidence.", "zh": "剩余不确定性或弱证据。" }
     }
   ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Turn experiments into investment decisions",
+      "zh": "把实验结果转成是否继续投入的判断"
+    },
+    "whyOpen": {
+      "en": "Open this after interviews, smoke tests, pilots, or sales calls. It separates evidence strength from optimism and forces a next experiment or decision.",
+      "zh": "做完访谈、烟雾测试、试点或销售沟通后打开它：它会把证据强度和乐观判断分开，并逼出下一步实验或决策。"
+    },
+    "audience": {
+      "en": "Teams running discovery or validation work that needs a portfolio decision.",
+      "zh": "适合正在做探索或验证、需要形成组合决策的团队。"
+    },
+    "keyConcepts": [
+      { "en": "Evidence strength", "zh": "证据强度" },
+      { "en": "Learning velocity", "zh": "学习速度" },
+      { "en": "Risk reduction", "zh": "风险下降" },
+      { "en": "Pivot or persevere", "zh": "转向或继续" }
+    ],
+    "firstSteps": [
+      { "en": "Write the critical assumption exactly as it appeared before the test.", "zh": "把测试前的关键假设原样写出来。" },
+      { "en": "Score behavior and payment evidence higher than opinions.", "zh": "行为证据和付费证据要高于态度表达。" }
+    ],
+    "outcomes": [
+      { "en": "A decision-ready evidence summary: validated, invalidated, inconclusive, and the next experiment or portfolio action.", "zh": "一份可决策的证据摘要：已验证、已推翻、不明确，以及下一步实验或组合动作。" }
+    ],
+    "commonMisreads": [
+      { "en": "More data is not always stronger evidence; weakly designed tests can produce a lot of weak signals.", "zh": "数据多不等于证据强；设计弱的测试只会产生很多弱信号。" }
+    ],
+    "practicePrompts": [
+      { "en": "What decision would you make if you were not allowed to run one more test?", "zh": "如果不能再做一次测试，你现在会做什么决策？" }
+    ],
+    "sourceRefs": [
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ],
+    "relatedRefs": [
+      { "type": "experiment", "slug": "customer-interview" },
+      { "type": "experiment", "slug": "smoke-test" },
+      { "type": "experiment", "slug": "pre-sale" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "portfolio-map" }
+    ]
+  },
   "zones": [
     { "id": "critical-assumption", "shape": { "type": "rect", "x": 40, "y": 60, "w": 380, "h": 180 }, "label": { "x": 60, "y": 94, "align": "left", "fontSize": 20 } },
     { "id": "current-evidence", "shape": { "type": "rect", "x": 450, "y": 60, "w": 380, "h": 180 }, "label": { "x": 470, "y": 94, "align": "left", "fontSize": 20 } },

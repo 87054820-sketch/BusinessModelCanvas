@@ -53,5 +53,43 @@
   },
   "appliesStrategyFrameworks": [
     "bain-elements-of-value"
-  ]
+  ],
+  "learning": {
+    "level": "beginner",
+    "headline": {
+      "en": "A modern bait-and-hook system with brand, channel, and lock-in",
+      "zh": "带有品牌、渠道和锁定机制的现代诱饵-钩子系统"
+    },
+    "whyOpen": {
+      "en": "Nespresso helps beginners see that recurring revenue is not a pricing trick; it depends on product architecture, channel control, brand, patents, and replenishment behavior.",
+      "zh": "Nespresso 帮助新手理解：经常性收入不是定价小技巧，而依赖产品架构、渠道控制、品牌、专利和复购行为。"
+    },
+    "audience": {
+      "en": "Readers studying recurring revenue, premium consumer systems, or hardware-plus-consumable models.",
+      "zh": "适合研究经常性收入、高端消费系统或硬件 + 耗材模型的读者。"
+    },
+    "keyConcepts": [
+      { "en": "Bait-and-hook", "zh": "诱饵-钩子" },
+      { "en": "Lock-in", "zh": "锁定" },
+      { "en": "Recurring consumables", "zh": "经常性耗材" },
+      { "en": "Patent expiry", "zh": "专利到期" },
+      { "en": "Premium positioning", "zh": "高端定位" }
+    ],
+    "commonMisreads": [
+      { "en": "Cheap machines alone do not create the model; the capsule system, direct relationship, and brand ritual make the hook durable.", "zh": "便宜机器本身不能形成模型；胶囊系统、直接客户关系和品牌仪式感才让钩子持久。" }
+    ],
+    "practicePrompts": [
+      { "en": "What must be proprietary, convenient, or emotionally valued for your recurring item to survive alternatives?", "zh": "你的复购品需要在哪些方面专属、便利或有情感价值，才能抵抗替代品？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch02-patterns" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "case", "slug": "gillette" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "value-proposition-canvas" }
+    ]
+  }
 }

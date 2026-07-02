@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "canvasId": "design-criteria-canvas",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "bmg-ch03-design", "type": "resourceChapter", "tier": "formal-book", "label": "Business Model Generation, chapter 3: Design", "resourceSlug": "business-model-generation", "chapterSlug": "ch03-design" },
+    { "id": "vpd-ch02-design", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 2: Design", "resourceSlug": "value-proposition-design", "chapterSlug": "ch02-design" },
+    { "id": "blue-ocean-shift-ch03", "type": "resourceChapter", "tier": "formal-book", "label": "Blue Ocean Shift, chapter 3: Process", "resourceSlug": "blue-ocean-shift", "chapterSlug": "ch03-process" }
+  ],
+  "coverage": {
+    "intro": ["bmg-ch03-design", "vpd-ch02-design"],
+    "body": ["bmg-ch03-design", "vpd-ch02-design", "blue-ocean-shift-ch03"],
+    "blocks": {
+      "must-have": ["bmg-ch03-design", "vpd-ch02-design"],
+      "should-have": ["vpd-ch02-design"],
+      "could-have": ["bmg-ch03-design"],
+      "wont-have": ["blue-ocean-shift-ch03", "bmg-ch03-design"]
+    }
+  }
+}

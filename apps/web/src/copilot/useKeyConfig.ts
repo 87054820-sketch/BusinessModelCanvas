@@ -5,8 +5,14 @@ type KeyStorageMode = 'session' | 'local';
 
 const LEGACY_LOCAL_STORAGE_KEY = 'pingarden.copilot.kimi-key';
 const LEGACY_SESSION_STORAGE_KEY = 'pingarden.copilot.kimi-key.session';
-const STORAGE_PREFIX = 'pingarden.copilot.provider-key';
+const STORAGE_PREFIX = 'pingarden.copilot.key';
+const LEGACY_PROVIDER_STORAGE_PREFIX = 'pingarden.copilot.provider-key';
 const CHANGE_EVENT = 'pingarden:copilot-key-change';
+const LEGACY_PROVIDER_KEYS: Record<string, string[]> = {
+  kimi: ['kimi-cli', 'kimi-http'],
+  deepseek: ['deepseek-http'],
+  minimax: ['minimax-http'],
+};
 
 interface KeyRecord {
   /** base64 ciphertext (safeStorage) OR plaintext when encryption is unavailable */
@@ -41,6 +47,14 @@ function storageKey(model: CopilotModelId, mode: KeyStorageMode): string {
   return `${STORAGE_PREFIX}.${model}.${mode}`;
 }
 
+function legacyModelStorageKey(model: CopilotModelId, mode: KeyStorageMode): string {
+  return `${LEGACY_PROVIDER_STORAGE_PREFIX}.${model}.${mode}`;
+}
+
+function legacyProviderStorageKey(provider: string, mode: KeyStorageMode): string {
+  return `${LEGACY_PROVIDER_STORAGE_PREFIX}.${provider}.${mode}`;
+}
+
 function parseRecord(raw: string | null, fallbackMode: KeyStorageMode): LoadedKeyRecord | null {
   if (!raw) return null;
   try {
@@ -59,21 +73,44 @@ function parseRecord(raw: string | null, fallbackMode: KeyStorageMode): LoadedKe
   }
 }
 
-function migrateLegacyKimiKey() {
-  if (typeof sessionStorage !== 'undefined') {
-    const legacy = sessionStorage.getItem(LEGACY_SESSION_STORAGE_KEY);
-    const nextKey = storageKey('kimi', 'session');
-    if (legacy && !sessionStorage.getItem(nextKey)) sessionStorage.setItem(nextKey, legacy);
-  }
-  if (typeof localStorage !== 'undefined') {
-    const legacy = localStorage.getItem(LEGACY_LOCAL_STORAGE_KEY);
-    const nextKey = storageKey('kimi', 'local');
-    if (legacy && !localStorage.getItem(nextKey)) localStorage.setItem(nextKey, legacy);
-  }
+function migrateLegacyKeys(model: CopilotModelId) {
+  migrateLegacyStore(model, 'session', typeof sessionStorage !== 'undefined' ? sessionStorage : null);
+  migrateLegacyStore(model, 'local', typeof localStorage !== 'undefined' ? localStorage : null);
 }
 
+function migrateLegacyStore(
+  model: CopilotModelId,
+  mode: KeyStorageMode,
+  store: Storage | null,
+) {
+  if (!store) return;
+  const nextKey = storageKey(model, mode);
+  const legacyKeys = [
+    legacyModelStorageKey(model, mode),
+    ...(model === 'kimi'
+      ? [mode === 'session' ? LEGACY_SESSION_STORAGE_KEY : LEGACY_LOCAL_STORAGE_KEY]
+      : []),
+    ...(LEGACY_PROVIDER_KEYS[model] ?? []).map((provider) => legacyProviderStorageKey(provider, mode)),
+  ];
+  const current = store.getItem(nextKey);
+  const legacy = legacyKeys.map((key) => [key, store.getItem(key)] as const).find(([, value]) => value);
+  if (!current && legacy?.[1]) store.setItem(nextKey, legacy[1]);
+
+  // Once a legacy slot has been considered, remove it. Otherwise deleting the
+  // new model-scoped key can resurrect an old invalid Kimi key on the next load.
+  for (const key of legacyKeys) store.removeItem(key);
+}
+
+export const __keyConfigTest = {
+  legacyModelStorageKey,
+  legacyProviderStorageKey,
+  migrateLegacyStore,
+  storageKey,
+};
+
 function load(model: CopilotModelId): LoadedKeyRecord | null {
-  if (model === 'kimi') migrateLegacyKimiKey();
+  if (!model) return null;
+  migrateLegacyKeys(model);
   if (typeof sessionStorage !== 'undefined') {
     const sessionRecord = parseRecord(sessionStorage.getItem(storageKey(model, 'session')), 'session');
     if (sessionRecord) return sessionRecord;
@@ -85,6 +122,7 @@ function load(model: CopilotModelId): LoadedKeyRecord | null {
 }
 
 function persist(model: CopilotModelId, rec: KeyRecord | null, mode: KeyStorageMode) {
+  if (!model) return;
   if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem(storageKey(model, 'session'));
   if (typeof localStorage !== 'undefined') localStorage.removeItem(storageKey(model, 'local'));
 
@@ -108,7 +146,7 @@ export interface CopilotKeyConfig {
   resolveKey(): Promise<string | null>;
 }
 
-export function useKeyConfig(model: CopilotModelId = 'kimi'): CopilotKeyConfig {
+export function useKeyConfig(model: CopilotModelId = ''): CopilotKeyConfig {
   const [record, setRecord] = useState<LoadedKeyRecord | null>(() => load(model));
   const [encryptionAvailable, setEncryptionAvailable] = useState<boolean>(false);
 
@@ -143,6 +181,7 @@ export function useKeyConfig(model: CopilotModelId = 'kimi'): CopilotKeyConfig {
     function onStorage(e: StorageEvent) {
       if (
         e.key?.startsWith(STORAGE_PREFIX) ||
+        e.key?.startsWith(LEGACY_PROVIDER_STORAGE_PREFIX) ||
         e.key === LEGACY_LOCAL_STORAGE_KEY ||
         e.key === LEGACY_SESSION_STORAGE_KEY
       ) {

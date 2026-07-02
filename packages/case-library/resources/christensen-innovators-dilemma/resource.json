@@ -18,7 +18,13 @@
   ],
   "publisher": "Harvard Business School Press",
   "year": 1997,
-  "tags": ["disruption", "innovation", "incumbent-failure", "value-network", "HBS"],
+  "tags": [
+    "disruption",
+    "innovation",
+    "incumbent-failure",
+    "value-network",
+    "HBS"
+  ],
   "relatedCanvasDefIds": [
     "disruption-diagnosis",
     "business-model-canvas",
@@ -48,5 +54,97 @@
     {
       "label": "克莱顿·克里斯坦森 ·《创新者的窘境》· 中信出版社"
     }
-  ]
+  ],
+  "learning": {
+    "level": "advanced",
+    "headline": {
+      "en": "Understand why good companies miss disruptive change",
+      "zh": "理解优秀公司为什么错过颠覆式变化"
+    },
+    "whyOpen": {
+      "en": "Use this when incumbents look rational yet still lose to smaller entrants. The book explains value networks, resource allocation, sustaining innovation, and disruption.",
+      "zh": "当在位企业看起来理性却仍输给小进入者时读这本：它解释价值网络、资源配置、持续性创新和颠覆。"
+    },
+    "audience": {
+      "en": "Strategy teams, founders attacking incumbents, corporate innovators, and product leaders evaluating market-entry paths.",
+      "zh": "适合战略团队、挑战在位者的创业者、企业创新者和评估进入路径的产品负责人。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Sustaining innovation",
+        "zh": "持续性创新"
+      },
+      {
+        "en": "Disruptive innovation",
+        "zh": "颠覆式创新"
+      },
+      {
+        "en": "Value networks",
+        "zh": "价值网络"
+      },
+      {
+        "en": "Resource allocation",
+        "zh": "资源配置"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "Disruption does not mean any big technological change; it describes a path through overlooked customers and business-model mismatch.",
+        "zh": "颠覆不是任何重大技术变化；它描述的是从被忽视客户和商业模式错配中切入的路径。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Read the value network chapters before labeling a case disruptive.",
+        "zh": "在给案例贴上颠覆标签前，先读价值网络相关章节。"
+      },
+      {
+        "en": "Compare sustaining and disruptive moves on the Disruption Diagnosis canvas.",
+        "zh": "在颠覆诊断画布上比较持续性动作和颠覆性路径。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can explain whether an entrant is truly disruptive and what incumbent response would be structurally difficult.",
+        "zh": "你能判断一个进入者是否真的具有颠覆性，以及在位者哪些回应在结构上很难做到。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which customers does your market currently overserve or ignore?",
+        "zh": "你的市场当前过度服务了哪些客户，又忽视了哪些客户？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "christensen-innovators-dilemma",
+        "chapterSlug": "ch01-intro"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "disruption-diagnosis"
+      },
+      {
+        "type": "case",
+        "slug": "nucor-mini-mill-disruption"
+      },
+      {
+        "type": "strategyFramework",
+        "slug": "disruptive-innovation"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "porter-competitive-strategy"
+      },
+      {
+        "type": "resource",
+        "slug": "the-invincible-company"
+      }
+    ]
+  }
 }

@@ -18,7 +18,13 @@
   ],
   "publisher": "Free Press",
   "year": 1985,
-  "tags": ["competitive-advantage", "value-chain", "cost-leadership", "differentiation", "HBS"],
+  "tags": [
+    "competitive-advantage",
+    "value-chain",
+    "cost-leadership",
+    "differentiation",
+    "HBS"
+  ],
   "relatedCanvasDefIds": [
     "porters-value-chain",
     "business-model-canvas",
@@ -44,5 +50,97 @@
     {
       "label": "迈克尔·波特 ·《竞争优势》· 华夏出版社 / 中信出版社"
     }
-  ]
+  ],
+  "learning": {
+    "level": "advanced",
+    "headline": {
+      "en": "Trace advantage through activities, cost, and differentiation",
+      "zh": "沿着活动、成本和差异化追踪竞争优势"
+    },
+    "whyOpen": {
+      "en": "Open this when a business model names a position but cannot explain which activities create cost advantage, differentiation, or defensibility.",
+      "zh": "当商业模式说出了定位，却解释不清哪些活动创造成本优势、差异化或防御性时读这本。"
+    },
+    "audience": {
+      "en": "Operators, strategy teams, product leaders, and founders turning positioning into activity choices.",
+      "zh": "适合运营者、战略团队、产品负责人和把定位转成活动选择的创业者。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Value chain",
+        "zh": "价值链"
+      },
+      {
+        "en": "Cost drivers",
+        "zh": "成本驱动因素"
+      },
+      {
+        "en": "Differentiation drivers",
+        "zh": "差异化驱动因素"
+      },
+      {
+        "en": "Interrelationships",
+        "zh": "关联关系"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "A value chain is not an org chart; it is a map of activities that create cost, value, and trade-offs.",
+        "zh": "价值链不是组织架构图；它是活动如何创造成本、价值和取舍的地图。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Map the activity chain before diagnosing cost or differentiation.",
+        "zh": "在诊断成本或差异化前，先映射活动链。"
+      },
+      {
+        "en": "Connect each activity back to the business model blocks it enables.",
+        "zh": "把每个活动连接回它支撑的商业模式模块。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can identify which activities matter most and where advantage could strengthen or break.",
+        "zh": "你能识别哪些活动最重要，以及优势可能在哪里增强或断裂。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which activity in your model is expensive but not yet creating a visible customer advantage?",
+        "zh": "你的模型里，哪项活动成本很高但还没有形成可见的客户优势？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "porter-competitive-advantage",
+        "chapterSlug": "ch01-value-chain"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "porters-value-chain"
+      },
+      {
+        "type": "strategyFramework",
+        "slug": "porters-value-chain"
+      },
+      {
+        "type": "canvas",
+        "slug": "business-model-canvas"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "porter-competitive-strategy"
+      },
+      {
+        "type": "resource",
+        "slug": "business-model-generation"
+      }
+    ]
+  }
 }

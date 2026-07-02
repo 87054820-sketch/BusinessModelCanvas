@@ -33,5 +33,43 @@
   "storyCount": 2,
   "appliesStrategyFrameworks": [
     "blue-ocean-strategy"
-  ]
+  ],
+  "learning": {
+    "level": "beginner",
+    "headline": {
+      "en": "A simple entry point into Blue Ocean Strategy",
+      "zh": "进入蓝海战略的简单入口案例"
+    },
+    "whyOpen": {
+      "en": "Yellow Tail is useful because the value curve is easy to see: reduce wine complexity, raise approachability, and create fun for non-wine drinkers.",
+      "zh": "黄尾袋鼠适合作为入门案例，因为价值曲线很容易看见：降低葡萄酒复杂度，提升易饮性，并为非葡萄酒消费者创造轻松乐趣。"
+    },
+    "audience": {
+      "en": "Beginners learning competitive factors, noncustomers, and ERIC moves.",
+      "zh": "适合学习竞争因子、非顾客和 ERIC 动作的新手。"
+    },
+    "keyConcepts": [
+      { "en": "Noncustomers", "zh": "非顾客" },
+      { "en": "Competitive factors", "zh": "竞争因子" },
+      { "en": "Reduce and create", "zh": "减少与创造" },
+      { "en": "Accessible value", "zh": "易接近价值" }
+    ],
+    "commonMisreads": [
+      { "en": "The case is not about making wine cheap; it is about changing the buying and drinking experience for people outside the category.", "zh": "这个案例不是把酒做便宜，而是改变品类外人群的购买和饮用体验。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which category rituals make your offer intimidating to noncustomers?", "zh": "你所在品类的哪些仪式感让非顾客望而却步？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "blue-ocean-strategy", "chapterSlug": "ch01-intro" },
+      { "type": "resourceChapter", "slug": "blue-ocean-strategy", "chapterSlug": "ch02-tools" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "blue-ocean-strategy-canvas" },
+      { "type": "case", "slug": "cirque-du-soleil" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "value-proposition-canvas" }
+    ]
+  }
 }

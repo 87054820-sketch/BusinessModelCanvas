@@ -3,13 +3,13 @@ import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 
-export type CopilotAiProviderMode = 'kimi-cli' | 'kimi-http' | 'deepseek-http';
+export type CopilotAiProviderMode = 'kimi-cli' | 'kimi-http' | 'deepseek-http' | 'minimax-http';
 export type AuthMode = 'wechat';
 export type StorageMode = 'filesystem' | 'cloudbase-sql';
 
 function parseAiProvider(raw: string | undefined): CopilotAiProviderMode {
-  if (raw === 'kimi-http' || raw === 'deepseek-http') return raw;
-  return 'kimi-cli';
+  if (raw === 'kimi-cli' || raw === 'deepseek-http' || raw === 'minimax-http') return raw;
+  return 'kimi-http';
 }
 
 function parseAuthMode(raw: string | undefined): AuthMode {
@@ -30,8 +30,13 @@ export const config = {
   host: process.env.HOST ?? '0.0.0.0',
   /** Optional desktop instance marker used by Electron to avoid connecting to another local service. */
   desktopInstanceId: process.env.PINGARDEN_DESKTOP_INSTANCE_ID,
-  /** Copilot provider: local/desktop defaults to Kimi CLI; CloudRun sets kimi-http. */
+  /** Copilot provider: defaults to Kimi HTTP highspeed; set kimi-cli explicitly for local CLI debugging. */
   aiProvider: parseAiProvider(process.env.PINGARDEN_AI_PROVIDER),
+  /** Internal deterministic/test-only providers. Hidden unless explicitly enabled or under test. */
+  aiInternalProvidersEnabled:
+    process.env.NODE_ENV === 'test' || process.env.PINGARDEN_EXPOSE_TEST_AI === '1',
+  /** Optional local agent bridge. Requires aiInternalProvidersEnabled as well. */
+  aiAgentBridgeEnabled: process.env.PINGARDEN_AI_AGENT_BRIDGE === '1',
   /** Product auth mode. Login is WeChat-only; display-name headers are not accepted. */
   authMode: parseAuthMode(process.env.PINGARDEN_AUTH),
   /** HMAC secret for PinGarden's short-lived server-issued sessions. Required in production. */

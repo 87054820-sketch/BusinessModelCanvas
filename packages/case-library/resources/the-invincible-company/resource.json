@@ -21,10 +21,28 @@
   ],
   "publisher": "Wiley / Strategyzer",
   "year": 2020,
-  "tags": ["portfolio", "innovation-metrics", "explore-exploit"],
-  "relatedCanvasDefIds": ["portfolio-map", "experiment-canvas", "evidence-scorecard", "innovation-culture-map", "business-model-canvas"],
-  "relatedCaseSlugs": ["ping-an-group", "nestle-portfolio", "bosch-accelerator", "alibaba-group"],
-  "relatedStrategyFrameworkSlugs": ["business-model-portfolio-management", "innovation-metrics"],
+  "tags": [
+    "portfolio",
+    "innovation-metrics",
+    "explore-exploit"
+  ],
+  "relatedCanvasDefIds": [
+    "portfolio-map",
+    "experiment-canvas",
+    "evidence-scorecard",
+    "innovation-culture-map",
+    "business-model-canvas"
+  ],
+  "relatedCaseSlugs": [
+    "ping-an-group",
+    "nestle-portfolio",
+    "bosch-accelerator",
+    "alibaba-group"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "business-model-portfolio-management",
+    "innovation-metrics"
+  ],
   "sources": [
     {
       "label": "Alexander Osterwalder, Yves Pigneur, Fred Etiemble & Alan Smith · The Invincible Company · Wiley · 2020"
@@ -33,5 +51,97 @@
       "label": "Strategyzer · The Invincible Company book page",
       "url": "https://www.strategyzer.com/library/the-invincible-company"
     }
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Manage innovation as a portfolio, not a side project",
+      "zh": "把创新当作组合管理，而不是副业项目"
+    },
+    "whyOpen": {
+      "en": "Use this after teams have individual canvases but lack a system for exploration, exploitation, metrics, and portfolio decisions.",
+      "zh": "当团队已经有单个画布，却缺少探索、开发、指标和组合决策体系时读这本。"
+    },
+    "audience": {
+      "en": "Innovation leaders, product portfolio owners, venture builders, and strategy teams balancing current engines with future bets.",
+      "zh": "适合创新负责人、产品组合负责人、企业孵化团队，以及要平衡现有业务和未来赌注的战略团队。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Explore versus exploit",
+        "zh": "探索与开发"
+      },
+      {
+        "en": "Portfolio map",
+        "zh": "组合地图"
+      },
+      {
+        "en": "Innovation metrics",
+        "zh": "创新指标"
+      },
+      {
+        "en": "Business model patterns",
+        "zh": "商业模式形态"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "A portfolio map is not a status report; it is a decision tool for funding, killing, and scaling bets.",
+        "zh": "组合地图不是状态汇报；它是用于投钱、终止和放大赌注的决策工具。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Map current businesses before adding new innovation bets.",
+        "zh": "在加入新创新赌注前，先把当前业务映射出来。"
+      },
+      {
+        "en": "Pair portfolio decisions with evidence scorecards, not only executive opinions.",
+        "zh": "把组合决策和证据评分卡配对，而不是只依靠高层意见。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can separate execution work from exploration work and choose the next evidence needed for each bet.",
+        "zh": "你能区分执行型工作和探索型工作，并为每个赌注选择下一条需要的证据。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which initiative in your portfolio consumes resources without learning fast enough?",
+        "zh": "你的组合里，哪个项目消耗资源但学习速度不够快？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "the-invincible-company",
+        "chapterSlug": "ch01-explore"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "portfolio-map"
+      },
+      {
+        "type": "canvas",
+        "slug": "evidence-scorecard"
+      },
+      {
+        "type": "strategyFramework",
+        "slug": "innovation-metrics"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "testing-business-ideas"
+      },
+      {
+        "type": "resource",
+        "slug": "business-model-generation"
+      }
+    ]
+  }
 }

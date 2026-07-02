@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "canvasId": "porters-value-chain",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "porter-ca-ch01", "type": "resourceChapter", "tier": "formal-book", "label": "Competitive Advantage, chapter 1: Value Chain", "resourceSlug": "porter-competitive-advantage", "chapterSlug": "ch01-value-chain" },
+    { "id": "porter-ca-ch02", "type": "resourceChapter", "tier": "formal-book", "label": "Competitive Advantage, chapter 2: Cost Advantage", "resourceSlug": "porter-competitive-advantage", "chapterSlug": "ch02-cost-advantage" },
+    { "id": "porter-ca-ch03", "type": "resourceChapter", "tier": "formal-book", "label": "Competitive Advantage, chapter 3: Differentiation", "resourceSlug": "porter-competitive-advantage", "chapterSlug": "ch03-differentiation" },
+    { "id": "porter-ca-ch04", "type": "resourceChapter", "tier": "formal-book", "label": "Competitive Advantage, chapter 4: Technology", "resourceSlug": "porter-competitive-advantage", "chapterSlug": "ch04-technology" }
+  ],
+  "coverage": {
+    "intro": ["porter-ca-ch01", "porter-ca-ch02"],
+    "body": ["porter-ca-ch01", "porter-ca-ch02", "porter-ca-ch03"],
+    "blocks": {
+      "firm-infrastructure": ["porter-ca-ch01"],
+      "human-resource-management": ["porter-ca-ch01"],
+      "technology-development": ["porter-ca-ch01", "porter-ca-ch04"],
+      "procurement": ["porter-ca-ch01", "porter-ca-ch02"],
+      "inbound-logistics": ["porter-ca-ch01", "porter-ca-ch02"],
+      "operations": ["porter-ca-ch01", "porter-ca-ch02"],
+      "outbound-logistics": ["porter-ca-ch01", "porter-ca-ch02"],
+      "marketing-sales": ["porter-ca-ch01", "porter-ca-ch03"],
+      "service": ["porter-ca-ch01", "porter-ca-ch03"],
+      "margin": ["porter-ca-ch01", "porter-ca-ch02", "porter-ca-ch03"]
+    }
+  }
+}

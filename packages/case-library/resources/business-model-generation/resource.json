@@ -13,14 +13,133 @@
     "en": "Read this first when a team is still treating BMC as a blank form. It explains what each block means, how the blocks work as a system, and how patterns such as Long Tail, Multi-Sided Platforms, Free, Open, and Unbundling change the model logic.",
     "zh": "当团队还只是把 BMC 当作空白表格填写时，优先读这本。它讲清九大模块如何构成系统，并解释长尾、多边平台、免费、开放、拆分等模式如何改变商业逻辑。"
   },
-  "authors": ["Alexander Osterwalder", "Yves Pigneur"],
+  "authors": [
+    "Alexander Osterwalder",
+    "Yves Pigneur"
+  ],
   "publisher": "Wiley / Strategyzer",
   "year": 2010,
-  "tags": ["business-model-canvas", "patterns", "strategy-design"],
-  "relatedCanvasDefIds": ["business-model-canvas", "value-proposition-canvas", "business-model-environment", "portfolio-map"],
-  "relatedCaseSlugs": ["swiss-private-banking", "lulu-com", "lego-long-tail", "google-multi-sided", "nintendo-wii", "gillette", "nespresso"],
-  "relatedPatternSlugs": ["unbundling-business-models", "long-tail", "multi-sided-platforms", "free", "open-business-models"],
-  "relatedStrategyFrameworkSlugs": ["business-model-environment-scan"],
+  "tags": [
+    "business-model-canvas",
+    "patterns",
+    "strategy-design"
+  ],
+  "relatedCanvasDefIds": [
+    "business-model-canvas",
+    "value-proposition-canvas",
+    "business-model-environment",
+    "portfolio-map"
+  ],
+  "relatedCaseSlugs": [
+    "swiss-private-banking",
+    "lulu-com",
+    "lego-long-tail",
+    "google-multi-sided",
+    "nintendo-wii",
+    "gillette",
+    "nespresso"
+  ],
+  "relatedPatternSlugs": [
+    "unbundling-business-models",
+    "long-tail",
+    "multi-sided-platforms",
+    "free",
+    "open-business-models"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "business-model-environment-scan"
+  ],
+  "learning": {
+    "level": "beginner",
+    "headline": {
+      "en": "The source book for reading and designing business models",
+      "zh": "读懂和设计商业模式的基础来源"
+    },
+    "whyOpen": {
+      "en": "Open this before treating a canvas as a worksheet. It explains what each block means, how blocks fit, and why recurring patterns change the whole model.",
+      "zh": "在把画布当表格填写之前先读它：它解释每个模块的含义、模块如何互相匹配，以及模式为什么会改变整个模型。"
+    },
+    "audience": {
+      "en": "Beginners, founders, product teams, and strategy readers who need a shared language.",
+      "zh": "适合新手、创业者、产品团队和需要共同语言的战略学习者。"
+    },
+    "keyConcepts": [
+      {
+        "en": "9 building blocks",
+        "zh": "九大模块"
+      },
+      {
+        "en": "Business model patterns",
+        "zh": "商业模式形态"
+      },
+      {
+        "en": "Visual thinking",
+        "zh": "视觉化思考"
+      },
+      {
+        "en": "Model fit",
+        "zh": "模型匹配"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Read chapter 1 with the Business Model Canvas open.",
+        "zh": "打开商业模式画布同步阅读第 1 章。"
+      },
+      {
+        "en": "Use chapter 2 to recognize patterns inside cases instead of memorizing company facts.",
+        "zh": "用第 2 章识别案例里的模式，而不是背公司事实。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can explain a company with BMC and name the assumptions that still need evidence.",
+        "zh": "你能用 BMC 解释一家公司，并指出仍需证据的关键假设。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which block in your own model has the weakest evidence today?",
+        "zh": "你自己的模型里，今天证据最弱的是哪个模块？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "business-model-generation",
+        "chapterSlug": "ch01-canvas"
+      },
+      {
+        "type": "resourceChapter",
+        "slug": "business-model-generation",
+        "chapterSlug": "ch02-patterns"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "business-model-canvas"
+      },
+      {
+        "type": "case",
+        "slug": "nespresso"
+      },
+      {
+        "type": "case",
+        "slug": "gillette"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "platform-revolution"
+      },
+      {
+        "type": "resource",
+        "slug": "blue-ocean-strategy"
+      }
+    ]
+  },
   "sources": [
     {
       "label": "Alexander Osterwalder & Yves Pigneur · Business Model Generation · Wiley · 2010"

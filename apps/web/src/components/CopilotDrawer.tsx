@@ -18,15 +18,19 @@ import {
   COPILOT_ACCEPTED_IMAGE_TYPES,
   COPILOT_MAX_IMAGE_ATTACHMENTS,
   COPILOT_MAX_IMAGE_BYTES,
+  extractCopilotStructuredResponses,
+  sourceReferenceToTyped,
   type BusinessModelPattern,
   type CopilotDiscussionInsight,
   type CopilotImageAttachment,
+  type CopilotSourceReference,
   type CopilotSessionInsightItem,
+  type CopilotTypedReference,
   type Experiment,
   type Lang,
   type StrategyFramework,
 } from '@pingarden/shared';
-import { copilotApi, type CopilotIntent, type CopilotModelHealth, type CopilotModelId, type CopilotProviderHealth, type CopilotProviderId } from '../api/copilot';
+import { COPILOT_AUTH_REQUIRED, copilotApi, type CopilotIntent, type CopilotModelHealth, type CopilotModelId, type CopilotProviderHealth, type CopilotProviderId } from '../api/copilot';
 import type { CopilotLatencySnapshot, CopilotStreamPhase, CopilotStreamStatus } from '../copilot/performance';
 import { elapsedSeconds, nowMs, phaseStepIndex, roundMs, safeTimingDetails, slowWaitLevel } from '../copilot/performance';
 import { api, type CanvasDefSummary } from '../api/client';
@@ -52,6 +56,7 @@ import {
   extractDiscussionInsights,
   extractProjectDrafts,
   extractProjectUpdateDrafts,
+  extractStructuredAnswerMarkdown,
   stripProjectDraftBlocks,
 } from '../copilot/projectDraft';
 import { useSessionInsightBasket } from '../copilot/useSessionInsightBasket';
@@ -173,7 +178,7 @@ export function CopilotDrawer({
   libraryCatalog,
 }: Props) {
   const { t } = useTranslation();
-  const { identity, user, authenticated } = useAuthSession();
+  const { identity, user, authenticated, signInLocal } = useAuthSession();
   const displayName = identity?.displayName ?? user?.displayName ?? '';
   const modelRouter = useCopilotModelRouter(open, t('library.copilot.providerUnavailable'));
   const config = modelRouter.keyConfig;
@@ -194,6 +199,8 @@ export function CopilotDrawer({
   const [streamStatus, setStreamStatus] = useState<CopilotStreamStatus | null>(null);
   const [, setStreamPhaseTick] = useState(0);
   const [error, setError] = useState<string | null>(null);
+  const [authRequired, setAuthRequired] = useState(false);
+  const [authBusy, setAuthBusy] = useState(false);
   const [latestCopilotRequestId, setLatestCopilotRequestId] = useState<string | null>(null);
   const [latestLatencySnapshot, setLatestLatencySnapshot] = useState<CopilotLatencySnapshot | null>(null);
   const [suggestionsCollapsed, setSuggestionsCollapsed] = useState(readStarterActionsCollapsed);
@@ -213,6 +220,10 @@ export function CopilotDrawer({
     if (!open) return;
     if (!config.hasKey && activeTab === 'chat') setSettingsOpen(true);
   }, [open, config.hasKey, activeTab]);
+
+  useEffect(() => {
+    if (authenticated) setAuthRequired(false);
+  }, [authenticated]);
 
   const lastMessageLength = conv.messages[conv.messages.length - 1]?.content.length ?? 0;
 
@@ -445,6 +456,19 @@ export function CopilotDrawer({
     if (rest) conv.updateLast((msg) => ({ ...msg, content: msg.content + rest }));
   }
 
+  async function handleStartLocalMode() {
+    setAuthBusy(true);
+    setError(null);
+    try {
+      await signInLocal();
+      setAuthRequired(false);
+    } catch {
+      setError(t('identity.localSignInError'));
+    } finally {
+      setAuthBusy(false);
+    }
+  }
+
   async function handleSend(overridePrompt?: string, options?: SendOptions) {
     const turnStartedAt = nowMs();
     const prepTimings: Record<string, number> = {};
@@ -459,12 +483,19 @@ export function CopilotDrawer({
     if ((!trimmed && imagesForTurn.length === 0) || streaming) return;
     const messageText = trimmed || t(`library.copilot.modeHints.${copilotMode}.imageOnlyPrompt`);
     setError(null);
+    setAuthRequired(false);
     setLatestCopilotRequestId(null);
     setLatestLatencySnapshot(null);
     markPrep('inputPrepared');
 
+    if (!authenticated) {
+      setAuthRequired(true);
+      setSettingsOpen(false);
+      return;
+    }
+
     if (providerHealth?.available === false) {
-      setError(providerHealth.message ?? t(providerHealth.provider === 'kimi-cli' ? 'library.copilot.cliMissing' : 'library.copilot.providerUnavailable'));
+      setError(providerHealth.message ?? t('library.copilot.providerUnavailable'));
       return;
     }
     const keyStartedAt = nowMs();
@@ -495,7 +526,7 @@ export function CopilotDrawer({
       content: '',
       modelId: chatSelection.model,
       providerId: chatSelection.provider,
-      model: chatSelection.providerHealth?.model ?? providerDefaultModel(chatSelection.provider),
+      model: providerDefaultModel(chatSelection.providerHealth ?? chatSelection.provider),
       ...(attachedRef ? { attachedRef } : {}),
       ...(expectedSourceImageCount ? { expectedSourceImageCount } : {}),
     });
@@ -601,6 +632,13 @@ export function CopilotDrawer({
           flushAssistantReveal();
           finishStreamPhase('error');
           if (!receivedDelta) conv.popLast();
+          if (message === COPILOT_AUTH_REQUIRED) {
+            setAuthRequired(true);
+            setError(null);
+            setStreaming(false);
+            stopRef.current = null;
+            return;
+          }
           setError(message);
           setStreaming(false);
           stopRef.current = null;
@@ -784,6 +822,8 @@ export function CopilotDrawer({
           error={error}
           latestRequestId={latestCopilotRequestId}
           latestLatencySnapshot={latestLatencySnapshot}
+          authRequired={authRequired}
+          authBusy={authBusy}
           input={input}
           pendingImages={pendingImages}
           fileInputRef={fileInputRef}
@@ -796,6 +836,7 @@ export function CopilotDrawer({
           onDrop={handleDrop}
           onStop={handleStop}
           onClear={handleClear}
+          onStartLocalMode={() => void handleStartLocalMode()}
           listEndRef={listEndRef}
           providerHealth={providerHealth}
           models={modelRouter.models}
@@ -1525,6 +1566,8 @@ function ChatPane({
   error,
   latestRequestId,
   latestLatencySnapshot,
+  authRequired,
+  authBusy,
   input,
   pendingImages,
   fileInputRef,
@@ -1537,6 +1580,7 @@ function ChatPane({
   onDrop,
   onStop,
   onClear,
+  onStartLocalMode,
   listEndRef,
   providerHealth,
   models,
@@ -1574,6 +1618,8 @@ function ChatPane({
   error: string | null;
   latestRequestId: string | null;
   latestLatencySnapshot: CopilotLatencySnapshot | null;
+  authRequired: boolean;
+  authBusy: boolean;
   input: string;
   pendingImages: PendingImageAttachment[];
   fileInputRef: MutableRefObject<HTMLInputElement | null>;
@@ -1586,6 +1632,7 @@ function ChatPane({
   onDrop(e: DragEvent<HTMLDivElement>): void;
   onStop(): void;
   onClear(): void;
+  onStartLocalMode(): void;
   listEndRef: MutableRefObject<HTMLDivElement | null>;
   providerHealth: CopilotProviderHealth | null;
   models: CopilotModelHealth[];
@@ -1618,6 +1665,7 @@ function ChatPane({
   const composerActions = buildComposerQuickActions(attachedRef, mode);
   const composerPlaceholder = `${t(`library.copilot.modeHints.${mode}.hint`)}\n${t(`library.copilot.modeHints.${mode}.placeholder`)}`;
   const linkedPageLabel = attachedRef ? attachedRefLabel(attachedRef) : t('library.copilot.strategyLibraryContext');
+  const requiresApiKey = providerHealth?.requiresApiKey !== false;
 
   function handleComposerAction(action: ComposerQuickAction) {
     const actionPrompt = t(`library.copilot.composerPrompts.${action.promptKey}`);
@@ -1651,9 +1699,9 @@ function ChatPane({
         <span className="text-gray-500">
           {providerHealth?.available === false ? (
             <span className="text-amber-700">
-              ⚠ {providerHealth.message ?? t(providerHealth.provider === 'kimi-cli' ? 'library.copilot.cliMissing' : 'library.copilot.providerUnavailable')}
+              ⚠ {providerHealth.message ?? t('library.copilot.providerUnavailable')}
             </span>
-          ) : hasKey ? (
+          ) : hasKey || !requiresApiKey ? (
             <span className="text-emerald-700">✓ {providerLabel(providerHealth ?? { provider: selectedProvider })}</span>
           ) : (
             <span className="text-gray-500">— {t('library.copilot.noKeyConfigured', { provider: providerLabel(providerHealth ?? { provider: selectedProvider }) })}</span>
@@ -1770,6 +1818,22 @@ function ChatPane({
         )}
         <div ref={listEndRef} />
       </div>
+
+      {authRequired && (
+        <div className="border-t border-emerald-100 bg-emerald-50/80 px-3 py-2 text-[11px] text-emerald-800 sm:px-4">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <span className="leading-relaxed">{t('library.copilot.authRequiredNotice')}</span>
+            <button
+              type="button"
+              onClick={onStartLocalMode}
+              disabled={authBusy}
+              className="w-fit rounded-md border border-emerald-200 bg-white px-2.5 py-1 text-[11px] font-medium text-emerald-800 hover:bg-emerald-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {authBusy ? t('home.loading') : t('identity.localSignIn')}
+            </button>
+          </div>
+        </div>
+      )}
 
       {error && (
         <div className="border-t border-red-100 bg-red-50/80 px-3 py-2 text-[11px] text-red-700 sm:px-4">
@@ -2200,12 +2264,15 @@ function MessageBubble({
   const projectUpdateDrafts = isUser ? [] : extractProjectUpdateDrafts(message.content);
   const discussionInsights = isUser ? [] : extractDiscussionInsights(message.content);
   const hasStructuredBlocks = projectDrafts.length > 0 || projectUpdateDrafts.length > 0 || discussionInsights.length > 0;
-  const visibleContent = hasStructuredBlocks ? stripProjectDraftBlocks(message.content) : message.content;
+  const structuredAnswer = isUser ? null : extractStructuredAnswerMarkdown(message.content);
+  const visibleContent = structuredAnswer ?? (hasStructuredBlocks ? stripProjectDraftBlocks(message.content) : message.content);
+  const structuredReferences = isUser ? [] : collectStructuredReferences(message.content, discussionInsights);
   const recommendationRefs = useCopilotRecommendationReferences(
     isUser ? '' : visibleContent,
     displayName,
     lang,
     message.attachedRef ?? attachedRef,
+    structuredReferences,
   );
   const { canvasRefs, templateRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels } = recommendationRefs;
   const contentWithoutCanvasIds = canvasRefs.length > 0
@@ -2298,6 +2365,20 @@ function MessageBubble({
       </div>
     </li>
   );
+}
+
+function collectStructuredReferences(
+  content: string,
+  discussionInsights: CopilotDiscussionInsight[],
+): CopilotTypedReference[] {
+  const responseRefs = extractCopilotStructuredResponses(content).flatMap((response) => [
+    ...(response.references ?? []),
+    ...((response.cards ?? []).flatMap((card) => card.type === 'referenceBoard' ? card.references : [])),
+  ]);
+  const insightRefs = discussionInsights.flatMap((insight) =>
+    (insight.sourceRefs ?? []).map((ref: CopilotSourceReference) => sourceReferenceToTyped(ref)),
+  );
+  return [...responseRefs, ...insightRefs];
 }
 
 function CopilotStreamingProgress({ status }: { status: CopilotStreamStatus | null }) {

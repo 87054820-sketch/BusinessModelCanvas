@@ -42,6 +42,50 @@
       "description": { "en": "Action useful across more than one scenario.", "zh": "在多个情景下都值得做的动作。" }
     }
   ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Explore futures before locking strategy to one forecast",
+      "zh": "在押注单一预测之前，先展开多个未来"
+    },
+    "whyOpen": {
+      "en": "Use this when the question depends on external uncertainty. Two critical uncertainties create four futures, then you identify moves that stay useful across them.",
+      "zh": "当问题高度依赖外部不确定性时用它：用两个关键不确定性生成四个未来，再找跨情景都有效的动作。"
+    },
+    "audience": {
+      "en": "Teams facing regulation, technology shifts, demand shocks, or market-structure uncertainty.",
+      "zh": "适合面对监管、技术变化、需求冲击或市场结构不确定性的团队。"
+    },
+    "keyConcepts": [
+      { "en": "Critical uncertainty", "zh": "关键不确定性" },
+      { "en": "Weak signal", "zh": "弱信号" },
+      { "en": "Scenario implication", "zh": "情景影响" },
+      { "en": "Robust move", "zh": "稳健动作" }
+    ],
+    "firstSteps": [
+      { "en": "Choose uncertainties that are both high-impact and genuinely unresolved.", "zh": "选择影响大、且确实未定的不确定性。" },
+      { "en": "Name each future as a plausible world, not as a best/worst case.", "zh": "把每个未来命名成可信世界，而不是简单的最好/最坏情况。" }
+    ],
+    "outcomes": [
+      { "en": "Four plausible futures, early signals to monitor, robust moves, and bets that only make sense in specific scenarios.", "zh": "四个可信未来、需要监测的早期信号、稳健动作，以及只在特定情景下成立的押注。" }
+    ],
+    "commonMisreads": [
+      { "en": "Scenarios are not predictions; they are rehearsal spaces for strategic choices.", "zh": "情景不是预测，而是战略选择的演练空间。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which move would still make sense in at least three of the four futures?", "zh": "哪一个动作在四个未来中至少三个都仍然值得做？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch03-design" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-environment" },
+      { "type": "canvas", "slug": "portfolio-map" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "design-criteria-canvas" }
+    ]
+  },
   "zones": [
     { "id": "uncertainty-a", "shape": { "type": "rect", "x": 40, "y": 60, "w": 580, "h": 120 }, "label": { "x": 60, "y": 94, "align": "left", "fontSize": 20 } },
     { "id": "uncertainty-b", "shape": { "type": "rect", "x": 660, "y": 60, "w": 580, "h": 120 }, "label": { "x": 680, "y": 94, "align": "left", "fontSize": 20 } },

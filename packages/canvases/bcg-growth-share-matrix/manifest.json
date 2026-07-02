@@ -24,6 +24,44 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "intermediate",
+    "headline": { "en": "Turn market share and growth into portfolio choices", "zh": "把市场份额和增长率转成组合取舍" },
+    "whyOpen": { "en": "Use this when a portfolio debate needs data on market attractiveness and competitive position.", "zh": "当组合讨论需要市场吸引力和竞争地位证据时使用。" },
+    "audience": { "en": "Teams comparing business units, products, brands, or geographies with comparable market data.", "zh": "适合比较业务单元、产品线、品牌或区域，并且有可比市场数据的团队。" },
+    "keyConcepts": [
+      { "en": "Relative market share", "zh": "相对市场份额" },
+      { "en": "Market growth", "zh": "市场增长率" },
+      { "en": "Cash generation", "zh": "现金生成" },
+      { "en": "Selective investment", "zh": "选择性投入" }
+    ],
+    "firstSteps": [
+      { "en": "Define comparable units before placing anything on the matrix.", "zh": "先定义可比较单元，再放入矩阵。" },
+      { "en": "Write the data source next to every placement.", "zh": "每个位置旁边都写清数据来源。" }
+    ],
+    "outcomes": [
+      { "en": "A portfolio action list: invest, select, harvest, reposition, or divest.", "zh": "一份组合动作清单：投入、选择、收割、重新定位或剥离。" }
+    ],
+    "commonMisreads": [
+      { "en": "A quadrant label is not an automatic decision; it is a prompt for evidence, economics, and portfolio action.", "zh": "象限标签不是自动决策，而是引出证据、经济性和组合动作的提示。" },
+      { "en": "Market growth is not the same as profit-pool growth; a fast-growing market can still destroy cash.", "zh": "市场增长不等于利润池增长；高速增长市场也可能持续吞现金。" },
+      { "en": "Relative share only works when the market boundary and reference competitor are comparable.", "zh": "只有市场边界和参考竞争对手可比时，相对份额才有意义。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which quadrant placement would change if you used profit pool instead of revenue growth?", "zh": "如果用利润池而不是收入增长，哪个象限判断会改变？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch04-strategy" },
+      { "type": "resourceChapter", "slug": "the-invincible-company", "chapterSlug": "ch01-explore" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "portfolio-map" },
+      { "type": "canvas", "slug": "business-model-environment" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" }
+    ]
+  },
   "related": ["portfolio-map", "business-model-canvas", "business-model-environment"],
   "relatedNotes": {
     "portfolio-map": {

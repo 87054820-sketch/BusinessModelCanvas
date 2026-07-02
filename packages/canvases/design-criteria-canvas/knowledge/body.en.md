@@ -18,6 +18,18 @@ The Design Criteria Canvas separates a team's decision standards into four categ
 5. Merge duplicates, remove weak items, and rewrite vague criteria into clearer statements.
 6. Turn the most important criteria into SMART standards: specific, measurable, achievable, relevant, and time-bound.
 
+## Inputs and outputs
+
+Useful inputs include customer research, Value Proposition Canvas notes, experiment evidence, brand principles, business constraints, technology constraints, and risks that the team is not allowed to ignore. If those inputs are missing, the canvas tends to become a preference poll.
+
+The output is a short decision standard: the few Must Haves that make the idea viable, the Should Haves that improve quality, the Could Haves that can wait, and the Won't Haves that protect the team from scope creep. A good output can be handed to product, design, engineering, sales, or operations and still be interpreted the same way.
+
+## Quality check and handoff
+
+Before using the criteria, check each module with three questions: is it observable, is it testable, and would it change a real decision? Weak criteria use adjectives such as "simple", "premium", or "innovative" without a threshold. Strong criteria name the evidence or behavior that would prove the standard has been met.
+
+Use the module chapters when a quadrant feels too full or too vague. After the criteria are stable, hand them to the Experiment Canvas or Evidence Scorecard so the most important Must Haves and Should Haves can be tested instead of debated.
+
 ## Common mistakes
 
 - Moving every “nice to have” into Must Haves until nothing is prioritized.

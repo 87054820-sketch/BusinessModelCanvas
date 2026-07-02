@@ -8,6 +8,7 @@ import type {
   StrategyFramework,
 } from '@pingarden/shared';
 import { libraryApi } from '../api/library';
+import { LearningGuide } from './LearningGuide';
 
 interface Props {
   entry: CaseLibraryEntry | null;
@@ -163,6 +164,7 @@ export function CasePreviewModal({
         <div className="flex-1 overflow-y-auto px-6 py-5">
           {/* Summary */}
           <p className="text-sm leading-relaxed text-gray-700">{summary}</p>
+          <LearningGuide learning={entry.learning} lang={lang} className="mt-4" />
 
           {langFallbackActive && fallbackAvailableLang && (
             // Same notice copy used in the workspace banner so the

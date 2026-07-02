@@ -14,6 +14,8 @@ import {
   type CopilotUnmappedSourceItem,
   type Lang,
   type QualityReport,
+  extractCopilotStructuredResponses,
+  stripCopilotStructuredResponseBlocks,
 } from '@pingarden/shared';
 
 const PROJECT_DRAFT_KIND = 'pingarden.projectDraft';
@@ -33,21 +35,42 @@ export function buildProjectIdeaSeed(lang: Lang): string {
 }
 
 export function stripProjectDraftBlocks(content: string): string {
-  return content
+  return stripCopilotStructuredResponseBlocks(content)
     .replace(/```(?:json|pingarden-project-draft|pingarden-project-update-draft|pingarden-discussion-insight)?\s*[\s\S]*?"kind"\s*:\s*"pingarden\.(?:projectDraft|projectUpdateDraft|discussionInsight)"[\s\S]*?```/g, '')
     .trim();
 }
 
 export function extractProjectDrafts(content: string): CopilotProjectDraft[] {
-  return extractJsonDrafts(content, isProjectDraft).map(decorateProjectDraft);
+  return [
+    ...extractJsonDrafts(content, isProjectDraft),
+    ...extractCopilotStructuredResponses(content).flatMap((response) =>
+      (response.cards ?? []).flatMap((card) => card.type === 'projectDraft' ? [card.draft] : []),
+    ),
+  ].map(decorateProjectDraft);
 }
 
 export function extractProjectUpdateDrafts(content: string): CopilotProjectUpdateDraft[] {
-  return extractJsonDrafts(content, isProjectUpdateDraft).map(decorateProjectUpdateDraft);
+  return [
+    ...extractJsonDrafts(content, isProjectUpdateDraft),
+    ...extractCopilotStructuredResponses(content).flatMap((response) =>
+      (response.cards ?? []).flatMap((card) => card.type === 'projectUpdateDraft' ? [card.draft] : []),
+    ),
+  ].map(decorateProjectUpdateDraft);
 }
 
 export function extractDiscussionInsights(content: string): CopilotDiscussionInsight[] {
-  return extractJsonDrafts(content, isDiscussionInsight);
+  return [
+    ...extractJsonDrafts(content, isDiscussionInsight),
+    ...extractCopilotStructuredResponses(content).flatMap((response) =>
+      (response.cards ?? []).flatMap((card) => card.type === 'discussionInsight' ? [card.insight] : []),
+    ),
+  ];
+}
+
+export function extractStructuredAnswerMarkdown(content: string): string | null {
+  const responses = extractCopilotStructuredResponses(content);
+  if (responses.length === 0) return null;
+  return responses.map((response) => response.answerMarkdown).filter(Boolean).join('\n\n').trim();
 }
 
 export const getSourceCoverageIssues = getCopilotSourceCoverageIssues;

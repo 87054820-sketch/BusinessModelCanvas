@@ -125,13 +125,14 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 ## How to use this skill (reading order)
 
 1. **Always read \`reference/cli-cheatsheet.md\` first** — it lists the exact commands and JSON envelope shape you'll consume.
-2. **Before writing to a canvas**, read its description with \`pingarden canvas describe <id> --json\` (existing canvas) or \`pingarden canvas describe-template <defId> --json\` (new canvas). NEVER hardcode \`zoneId\`s — they come from the live def.
-3. **For each canvas the user works on**, consult \`canvases/<id>.<lang>.md\` for filling rules, fill order, examples, and anti-patterns.
-4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library and pattern library are cross-linked both ways.
-5. **For "how do I test this assumption" / "what experiment should I run"** — go to \`workflows/experiments.md\` and the \`experiments/\` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
-6. **For book/resources reading, chapter-quality, or source-material questions** — go to \`workflows/resource-reading.md\`. Resources are now chapter-aware: use chapter summaries first, then fetch the full chapter only when needed.
-7. **For install/update/release or skill drift questions** — read \`workflows/self-iteration.md\` and keep the installed skill, project-local skill, zip, and DMG in sync.
-8. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
+2. **Before saying something is missing**, run \`pingarden reference resolve --text "<your recommendation>" --lang <en|zh> --json\`. Distinguish cases, resources, canvas templates, canvas instances, patterns, strategy frameworks, and experiments.
+3. **Before writing to a canvas**, read its description with \`pingarden canvas describe <id> --json\` (existing canvas) or \`pingarden canvas describe-template <defId> --json\` (new canvas). NEVER hardcode \`zoneId\`s — they come from the live def.
+4. **For each canvas the user works on**, consult \`canvases/<id>.<lang>.md\` for filling rules, fill order, examples, and anti-patterns.
+5. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to \`workflows/case-library.md\` and \`workflows/patterns.md\` first; the case library and pattern library are cross-linked both ways.
+6. **For "how do I test this assumption" / "what experiment should I run"** — go to \`workflows/experiments.md\` and the \`experiments/\` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
+7. **For book/resources reading, chapter-quality, or source-material questions** — go to \`workflows/resource-reading.md\`. Resources are now chapter-aware: use chapter summaries first, then fetch the full chapter only when needed.
+8. **For install/update/release or skill drift questions** — read \`workflows/self-iteration.md\` and keep the installed skill, project-local skill, zip, and DMG in sync.
+9. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in \`workflows/\`.
 
 ## Index
 
@@ -166,6 +167,7 @@ ${canvasList}${patternsBlock}${experimentsBlock}${strategyFrameworksBlock}
 - **\`zoneId\` validation is local-first**: the CLI reads \`/ai-context\` to verify your \`zoneId\`s exist on the canvas before writing. Unknown zone → no snapshot, no write.
 - **Never parse Yjs binary**: use \`canvas read\` (which calls \`/ai-context\`) for state, never \`PUT /canvases/:id/state\` directly.
 - **One sticky = one concept**: don't write paragraphs into a sticky. If a sticky needs more than ~20 words, split it.
+- **Reference taxonomy**: books/articles/reports/web pages are \`resource\`; canvas definitions are \`canvasTemplate\`; existing project/case canvases are \`canvasInstance\`; strategy frameworks, experiments, and patterns are method assets. Do not call a method asset "missing" just because no current-project canvas instance exists.
 `;
 }
 
@@ -379,6 +381,11 @@ pnpm --filter @pingarden/cli build
 node apps/cli/dist/index.js skill install --local
 pnpm package:mac
 \`\`\`
+
+\`skill install --local\` writes the canonical repo-local skill to
+\`.agents/skills/pingarden/\` and refreshes \`.claude/skills/pingarden\`
+as a symlink to that same directory. Keep only one real copy of the
+skill in the repo; agent-specific paths should be discovery aliases.
 
 \`pnpm package:mac\` is the canonical release path: it regenerates the project-local skill, creates the portable \`pingarden-skill-<version>.zip\`, and bundles that zip into the macOS DMG via \`extraResources → skill-pack\`.
 
@@ -808,7 +815,7 @@ pnpm typecheck
 pnpm --filter @pingarden/web build
 pnpm --filter @pingarden/cli run build
 node apps/cli/dist/index.js skill install --local
-git diff .claude/skills/pingarden/   # expect: patterns/<slug>.{en,zh}.md +
+git diff .agents/skills/pingarden/   # expect: patterns/<slug>.{en,zh}.md +
                                      # SKILL.md version + workflows/patterns.md +
                                      # reference/patterns.md
 \`\`\`
@@ -1162,7 +1169,10 @@ pingarden doctor --json
 pingarden project list --json
 pingarden canvas list --json
 pingarden template list --json
+pingarden reference resolve --text "BCG 增长份额矩阵和 Business Model Generation" --lang zh --json
 \`\`\`
+
+\`reference resolve\` is a taxonomy guardrail: it separates cases, resources, resource chapters, canvas templates, existing canvas instances, projects, stories, patterns, strategy frameworks, and experiments. Use it before saying something is missing.
 
 ## Read
 

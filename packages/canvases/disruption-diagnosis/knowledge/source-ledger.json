@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "canvasId": "disruption-diagnosis",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "christensen-ch01", "type": "resourceChapter", "tier": "formal-book", "label": "The Innovator's Dilemma, chapter 1: Intro", "resourceSlug": "christensen-innovators-dilemma", "chapterSlug": "ch01-intro" },
+    { "id": "christensen-ch02", "type": "resourceChapter", "tier": "formal-book", "label": "The Innovator's Dilemma, chapter 2: Value Networks", "resourceSlug": "christensen-innovators-dilemma", "chapterSlug": "ch02-value-networks" },
+    { "id": "christensen-ch06", "type": "resourceChapter", "tier": "formal-book", "label": "The Innovator's Dilemma, chapter 6: Disruption Model", "resourceSlug": "christensen-innovators-dilemma", "chapterSlug": "ch06-disruption-model" },
+    { "id": "hbr-disruptive-innovation", "type": "professionalWeb", "tier": "professional-institution", "label": "Harvard Business Review: What Is Disruptive Innovation?", "url": "https://hbr.org/2015/12/what-is-disruptive-innovation" }
+  ],
+  "coverage": {
+    "intro": ["christensen-ch01", "hbr-disruptive-innovation"],
+    "body": ["christensen-ch02", "christensen-ch06", "hbr-disruptive-innovation"],
+    "blocks": {
+      "foothold-customer": ["christensen-ch06", "hbr-disruptive-innovation"],
+      "worse-on-dimension": ["christensen-ch06"],
+      "acceptable-on-dimension": ["christensen-ch06"],
+      "incumbent-rational-ignore": ["christensen-ch02", "christensen-ch06"],
+      "upmarket-migration-path": ["christensen-ch06"],
+      "riskiest-assumptions": ["christensen-ch06", "hbr-disruptive-innovation"]
+    }
+  }
+}

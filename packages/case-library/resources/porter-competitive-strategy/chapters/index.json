@@ -2,68 +2,536 @@
   {
     "slug": "ch01-five-forces",
     "order": 1,
-    "title": { "en": "The Five Competitive Forces That Shape Strategy", "zh": "塑造战略的五种竞争力" },
+    "title": {
+      "en": "The Five Competitive Forces That Shape Strategy",
+      "zh": "塑造战略的五种竞争力"
+    },
     "summary": {
       "en": "Part I, Chapter 1 of *Competitive Strategy* — Porter's most famous framework. Detailed structural analysis of each force: (1) Threat of new entrants (barriers to entry — economies of scale, product differentiation, capital requirements, switching costs, access to distribution channels, cost disadvantages independent of scale, government policy). (2) Intensity of rivalry among existing firms (numerous or equally balanced competitors, slow industry growth, high fixed costs, lack of differentiation, high exit barriers, diverse competitors). (3) Pressure from substitute products (relative price/performance, switching costs, buyer propensity to substitute). (4) Bargaining power of buyers (purchase volume, product standardization, low switching costs, threat of backward integration, price sensitivity). (5) Bargaining power of suppliers (supplier concentration, few substitutes, importance of industry as customer for the supplier, importance of supplier's product to the industry, threat of forward integration). The chapter includes thorough diagnosis questions for each force.",
       "zh": "《竞争战略》第一部分第1章——Porter 最著名的框架。对每种力量的详细结构分析：(1) 新进入者的威胁 （进入壁垒——规模经济、产品差异化、资本要求、转换成本、分销渠道获取、独立于规模的成本劣势、政府政策）。 (2) 现有企业之间的竞争强度 （众多或相当体量的竞争对手、产业增长缓慢、高固定成本、缺乏差异化、高退出壁垒、多样化的竞争者）。 (3) 替代品的压力 （相对价格/性能、转换成本、买方替代倾向）。 (4) 买方的议价能力 （采购量、产品标准化、低转换成本、后向一体化的威胁、价格敏感度）。 (5) 供应商的议价能力 （供应商集中度、替代品少、该产业对供应商而言是重要客户的程度、供应商产品对该产业的重要性、前向一体化的威胁）。本章包含对每种力量的详尽诊断问题。"
     },
-    "relatedStrategyFrameworkSlugs": ["porters-five-forces"],
-    "relatedCanvasDefIds": ["business-model-environment"]
+    "relatedStrategyFrameworkSlugs": [
+      "porters-five-forces"
+    ],
+    "relatedCanvasDefIds": [
+      "business-model-environment"
+    ],
+    "learning": {
+      "level": "advanced",
+      "headline": {
+        "en": "Read The Five Competitive Forces That Shape Strategy as a practical source chapter",
+        "zh": "把「塑造战略的五种竞争力」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Part I, Chapter 1 of *Competitive Strategy* — Porter's most famous framework. Detailed structural analysis of each force: (1) Threat of new entrants (barriers to entry — economies of scale, product differentiation, capital requirements, switching costs, access to distribution channels, cost disadvantages independent of scale, government policy). (2) Intensi...",
+        "zh": "《竞争战略》第一部分第1章——Porter 最著名的框架。对每种力量的详细结构分析：(1) 新进入者的威胁 （进入壁垒——规模经济、产品差异化、资本要求、转换成本、分销渠道获取、独立于规模的成本劣势、政府政策）。 (2) 现有企业之间的竞争强度 （众多或相当体量的竞争对手、产业增长缓慢、高固定成本、缺乏差异化、高退出壁垒、多样化的竞争者）。 (3) 替代品的压力 （相对价格/性能、转换成本、买方替代倾向）。 (4) 买方的议价能力 （..."
+      },
+      "keyConcepts": [
+        {
+          "en": "The Five Competitive Forces That Shape Strategy",
+          "zh": "塑造战略的五种竞争力"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "porter-competitive-strategy",
+          "chapterSlug": "ch01-five-forces"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ]
+    }
   },
   {
     "slug": "ch02-generic-strategies",
     "order": 2,
-    "title": { "en": "Three Generic Competitive Strategies", "zh": "三种通用竞争战略" },
+    "title": {
+      "en": "Three Generic Competitive Strategies",
+      "zh": "三种通用竞争战略"
+    },
     "summary": {
       "en": "Chapter 2. The structural foundations of cost leadership, differentiation, and focus — and why firms 'stuck in the middle' fail. Each strategy is analyzed for its required skills and resources, organizational requirements, risks, and relationship to the Five Forces. Cost leadership defends against all five forces through low cost relative to competitors. Differentiation builds brand loyalty and lower price sensitivity — also defending against all five forces but through a different mechanism. Focus serves a narrow target better than broadly-targeted competitors. The chapter also covers the relationship between generic strategies and industry structure (fragmented, emerging, mature, declining).",
       "zh": "第2章。成本领先、差异化和聚焦战略的结构性基础——以及为什么「夹在中间」的企业会失败。每种战略被分析其所需的技能和资源、组织要求、风险以及与五力的关系。成本领先通过相对竞争对手的低成本防御所有五种力量。差异化构建品牌忠诚度和更低的价格敏感度——同样防御所有五力，但通过不同机制。聚焦战略比广撒网的对手更好地服务狭窄目标。本章还涵盖通用战略与产业结构（碎片化、新兴、成熟、衰退）之间的关系。"
     },
-    "relatedStrategyFrameworkSlugs": ["porters-five-forces"],
-    "relatedCanvasDefIds": ["porters-value-chain", "business-model-canvas"]
+    "relatedStrategyFrameworkSlugs": [
+      "porters-five-forces"
+    ],
+    "relatedCanvasDefIds": [
+      "porters-value-chain",
+      "business-model-canvas"
+    ],
+    "learning": {
+      "level": "advanced",
+      "headline": {
+        "en": "Read Three Generic Competitive Strategies as a practical source chapter",
+        "zh": "把「三种通用竞争战略」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Chapter 2. The structural foundations of cost leadership, differentiation, and focus — and why firms 'stuck in the middle' fail. Each strategy is analyzed for its required skills and resources, organizational requirements, risks, and relationship to the Five Forces. Cost leadership defends against all five forces through low cost relative to competitors. Di...",
+        "zh": "第2章。成本领先、差异化和聚焦战略的结构性基础——以及为什么「夹在中间」的企业会失败。每种战略被分析其所需的技能和资源、组织要求、风险以及与五力的关系。成本领先通过相对竞争对手的低成本防御所有五种力量。差异化构建品牌忠诚度和更低的价格敏感度——同样防御所有五力，但通过不同机制。聚焦战略比广撒网的对手更好地服务狭窄目标。本章还涵盖通用战略与产业结构（碎片化、新兴、成熟、衰退）之间的关系。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Three Generic Competitive Strategies",
+          "zh": "三种通用竞争战略"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "porter-competitive-strategy",
+          "chapterSlug": "ch02-generic-strategies"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "porters-value-chain"
+        },
+        {
+          "type": "canvas",
+          "slug": "business-model-canvas"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ]
+    }
   },
   {
     "slug": "ch03-competitor-analysis",
     "order": 3,
-    "title": { "en": "A Framework for Competitor Analysis", "zh": "竞争对手分析框架" },
+    "title": {
+      "en": "A Framework for Competitor Analysis",
+      "zh": "竞争对手分析框架"
+    },
     "summary": {
       "en": "Chapter 3. A systematic method for diagnosing competitors: What drives the competitor? (future goals at all management levels) What is the competitor doing and can do? (current strategy and capabilities). Four diagnostic components: Future goals (strategic, managerial, portfolio-level; parent company goals for subsidiary), Assumptions (about itself and the industry), Current strategy (implicit and explicit), Capabilities (strengths and weaknesses across functions). Competitor response profile: Is the competitor satisfied with its current position? What likely moves or strategy shifts will it make? Where is it vulnerable? What will provoke the greatest retaliation?",
       "zh": "第3章。诊断竞争对手的系统化方法：什么驱动着竞争者？（各个管理层级的未来目标）。竞争者在做什么、能做什么？（当前战略和能力）。四个诊断要素：未来目标（战略层、管理层、组合层；母公司对子公司的目标）、假设（关于自身和产业）、当前战略（隐含和明确的）、能力（各职能的强弱点）。竞争者反应档案：竞争者满足于当前地位吗？它可能做出什么动作或战略转变？它在哪里脆弱？什么会引发最强烈的报复？"
+    },
+    "learning": {
+      "level": "advanced",
+      "headline": {
+        "en": "Read A Framework for Competitor Analysis as a practical source chapter",
+        "zh": "把「竞争对手分析框架」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Chapter 3. A systematic method for diagnosing competitors: What drives the competitor? (future goals at all management levels) What is the competitor doing and can do? (current strategy and capabilities). Four diagnostic components: Future goals (strategic, managerial, portfolio-level; parent company goals for subsidiary), Assumptions (about itself and the...",
+        "zh": "第3章。诊断竞争对手的系统化方法：什么驱动着竞争者？（各个管理层级的未来目标）。竞争者在做什么、能做什么？（当前战略和能力）。四个诊断要素：未来目标（战略层、管理层、组合层；母公司对子公司的目标）、假设（关于自身和产业）、当前战略（隐含和明确的）、能力（各职能的强弱点）。竞争者反应档案：竞争者满足于当前地位吗？它可能做出什么动作或战略转变？它在哪里脆弱？什么会引发最强烈的报复？"
+      },
+      "keyConcepts": [
+        {
+          "en": "A Framework for Competitor Analysis",
+          "zh": "竞争对手分析框架"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "porter-competitive-strategy",
+          "chapterSlug": "ch03-competitor-analysis"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "resource",
+          "slug": "porter-competitive-strategy"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ]
     }
   },
   {
     "slug": "ch04-market-signals",
     "order": 4,
-    "title": { "en": "Market Signals and Competitive Moves", "zh": "市场信号和竞争行动" },
+    "title": {
+      "en": "Market Signals and Competitive Moves",
+      "zh": "市场信号和竞争行动"
+    },
     "summary": {
       "en": "Chapters 4-5. How firms communicate and compete. Market signals: any action by a competitor that provides a direct or indirect indication of its intentions, motives, goals, or internal situation. Types of signals: prior announcements of moves, announcements of results or actions after the fact, public discussion of the industry, competitors' discussion and explanation of their own moves, tactics relative to what a competitor could have done, the manner in which strategic change is implemented. Competitive moves: cooperation vs. threats, defensive vs. offensive, commitment. The chapter warns that signals can be bluffs — distinguishing signal from noise is a core strategic skill.",
       "zh": "第4-5章。企业如何沟通和竞争。市场信号：竞争者的任何行动直接或间接指示其意图、动机、目标或内部状况。信号类型：行动的事先公告、行动或结果的事后公告、对产业的公开讨论、竞争者对自己行动的讨论和解释、战术与竞争者本可以做的事情的对比、战略变革实施的方式。竞争动作：合作 vs. 威胁、防御 vs. 进攻、承诺。本章警告信号可能是虚张声势——区分信号与噪音是核心战略能力。"
+    },
+    "learning": {
+      "level": "advanced",
+      "headline": {
+        "en": "Read Market Signals and Competitive Moves as a practical source chapter",
+        "zh": "把「市场信号和竞争行动」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Chapters 4-5. How firms communicate and compete. Market signals: any action by a competitor that provides a direct or indirect indication of its intentions, motives, goals, or internal situation. Types of signals: prior announcements of moves, announcements of results or actions after the fact, public discussion of the industry, competitors' discussion and...",
+        "zh": "第4-5章。企业如何沟通和竞争。市场信号：竞争者的任何行动直接或间接指示其意图、动机、目标或内部状况。信号类型：行动的事先公告、行动或结果的事后公告、对产业的公开讨论、竞争者对自己行动的讨论和解释、战术与竞争者本可以做的事情的对比、战略变革实施的方式。竞争动作：合作 vs. 威胁、防御 vs. 进攻、承诺。本章警告信号可能是虚张声势——区分信号与噪音是核心战略能力。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Market Signals and Competitive Moves",
+          "zh": "市场信号和竞争行动"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "porter-competitive-strategy",
+          "chapterSlug": "ch04-market-signals"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "resource",
+          "slug": "porter-competitive-strategy"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ]
     }
   },
   {
     "slug": "ch05-buyer-supplier",
     "order": 5,
-    "title": { "en": "Strategy Toward Buyers and Suppliers", "zh": "针对买方和供应商的战略" },
+    "title": {
+      "en": "Strategy Toward Buyers and Suppliers",
+      "zh": "针对买方和供应商的战略"
+    },
     "summary": {
       "en": "Chapter 6. Structural analysis applied to vertical relationships. Buyer selection as a strategic variable — you can choose your customers, and the choice has structural consequences. Framework for buyer selection: purchasing needs vs. firm capabilities, growth potential, structural position (intrinsic bargaining power, price sensitivity), cost of serving. Supplier strategy mirrors buyer strategy — selecting and managing suppliers to optimize the firm's structural position. The chapter introduces the idea that firms should actively shape supplier industries rather than passively accepting them.",
       "zh": "第6章。将结构分析应用于垂直关系。买方选择是一个战略变量——你可以挑选客户，而选择具有结构性后果。买方选择框架：采购需求 vs. 公司能力、增长潜力、结构地位（内在议价能力、价格敏感度）、服务成本。供应商战略镜像买方战略——选择和管理供应商以优化公司的结构地位。本章引入了企业应主动塑造供应商产业而非被动接受它的观点。"
+    },
+    "learning": {
+      "level": "advanced",
+      "headline": {
+        "en": "Read Strategy Toward Buyers and Suppliers as a practical source chapter",
+        "zh": "把「针对买方和供应商的战略」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Chapter 6. Structural analysis applied to vertical relationships. Buyer selection as a strategic variable — you can choose your customers, and the choice has structural consequences. Framework for buyer selection: purchasing needs vs. firm capabilities, growth potential, structural position (intrinsic bargaining power, price sensitivity), cost of serving. S...",
+        "zh": "第6章。将结构分析应用于垂直关系。买方选择是一个战略变量——你可以挑选客户，而选择具有结构性后果。买方选择框架：采购需求 vs. 公司能力、增长潜力、结构地位（内在议价能力、价格敏感度）、服务成本。供应商战略镜像买方战略——选择和管理供应商以优化公司的结构地位。本章引入了企业应主动塑造供应商产业而非被动接受它的观点。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Strategy Toward Buyers and Suppliers",
+          "zh": "针对买方和供应商的战略"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "porter-competitive-strategy",
+          "chapterSlug": "ch05-buyer-supplier"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "resource",
+          "slug": "porter-competitive-strategy"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ]
     }
   },
   {
     "slug": "ch06-structural",
     "order": 6,
-    "title": { "en": "Structural Analysis Within Industries", "zh": "产业内部的结构分析" },
+    "title": {
+      "en": "Structural Analysis Within Industries",
+      "zh": "产业内部的结构分析"
+    },
     "summary": {
       "en": "Chapter 7. The Five Forces operate at the industry level, but industries are not homogeneous. Porter introduces strategic groups — clusters of firms within an industry that follow similar strategies along key dimensions (specialization, brand identification, push vs. pull, channel selection, product quality, technological leadership, vertical integration, cost position, service, price policy, leverage, relationship with parent company, relationship to home and host governments). Mobility barriers (entry barriers between strategic groups) explain why some groups persistently outperform others. Strategic group mapping is a powerful complementary tool to Five Forces analysis.",
       "zh": "第7章。五力运作在产业层面，但产业不是同质的。Porter 引入了战略群组概念——产业内一组在关键维度上遵循相似战略的企业集群（专业化程度、品牌识别、推 vs. 拉、渠道选择、产品质量、技术领先、纵向整合、成本地位、服务、价格政策、杠杆、与母公司的关系、与母国和东道国政府的关系）。移动壁垒（战略群组间的进入壁垒）解释了为什么有些群组持续优于其他群组。战略群组地图是五力分析的有力补充工具。"
+    },
+    "learning": {
+      "level": "advanced",
+      "headline": {
+        "en": "Read Structural Analysis Within Industries as a practical source chapter",
+        "zh": "把「产业内部的结构分析」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Chapter 7. The Five Forces operate at the industry level, but industries are not homogeneous. Porter introduces strategic groups — clusters of firms within an industry that follow similar strategies along key dimensions (specialization, brand identification, push vs. pull, channel selection, product quality, technological leadership, vertical integration, c...",
+        "zh": "第7章。五力运作在产业层面，但产业不是同质的。Porter 引入了战略群组概念——产业内一组在关键维度上遵循相似战略的企业集群（专业化程度、品牌识别、推 vs. 拉、渠道选择、产品质量、技术领先、纵向整合、成本地位、服务、价格政策、杠杆、与母公司的关系、与母国和东道国政府的关系）。移动壁垒（战略群组间的进入壁垒）解释了为什么有些群组持续优于其他群组。战略群组地图是五力分析的有力补充工具。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Structural Analysis Within Industries",
+          "zh": "产业内部的结构分析"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "porter-competitive-strategy",
+          "chapterSlug": "ch06-structural"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "resource",
+          "slug": "porter-competitive-strategy"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ]
     }
   },
   {
     "slug": "ch07-industry-evolution",
     "order": 7,
-    "title": { "en": "Industry Evolution and the Product Life Cycle", "zh": "产业演进和产品生命周期" },
+    "title": {
+      "en": "Industry Evolution and the Product Life Cycle",
+      "zh": "产业演进和产品生命周期"
+    },
     "summary": {
       "en": "Chapter 8. Industries evolve through predictable phases — introduction, growth, maturity, decline — but the product life cycle is a result of competitive dynamics, not an independent force. Porter's analytical approach: identify the evolutionary processes driving change (long-run changes in growth, changes in buyer segments served, buyer learning, reduction of uncertainty, diffusion of proprietary knowledge, accumulation of experience, changes in scale, changes in input costs, product/marketing/process innovation, structural change in adjacent industries, government policy shifts, entries and exits). Forecasting industry evolution means understanding which of these processes are active and how they interact.",
       "zh": "第8章。产业通过可预测的阶段演进——导入、增长、成熟、衰退——但产品生命周期是竞争动态的结果，不是独立的力量。Porter 的分析方法：识别驱动变革的演进过程（增长的长程变化、所服务买方细分领域的变化、买方学习、不确定性的降低、专有知识的扩散、经验的积累、规模的变化、投入成本的变化、产品/营销/工序创新、相邻产业结构变化、政府政策转向、进入和退出）。预测产业演进意味着理解哪些演进过程正处于活跃状态，以及它们如何相互作用。"
+    },
+    "learning": {
+      "level": "advanced",
+      "headline": {
+        "en": "Read Industry Evolution and the Product Life Cycle as a practical source chapter",
+        "zh": "把「产业演进和产品生命周期」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Chapter 8. Industries evolve through predictable phases — introduction, growth, maturity, decline — but the product life cycle is a result of competitive dynamics, not an independent force. Porter's analytical approach: identify the evolutionary processes driving change (long-run changes in growth, changes in buyer segments served, buyer learning, reduction...",
+        "zh": "第8章。产业通过可预测的阶段演进——导入、增长、成熟、衰退——但产品生命周期是竞争动态的结果，不是独立的力量。Porter 的分析方法：识别驱动变革的演进过程（增长的长程变化、所服务买方细分领域的变化、买方学习、不确定性的降低、专有知识的扩散、经验的积累、规模的变化、投入成本的变化、产品/营销/工序创新、相邻产业结构变化、政府政策转向、进入和退出）。预测产业演进意味着理解哪些演进过程正处于活跃状态，以及它们如何相互作用。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Industry Evolution and the Product Life Cycle",
+          "zh": "产业演进和产品生命周期"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "porter-competitive-strategy",
+          "chapterSlug": "ch07-industry-evolution"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "resource",
+          "slug": "porter-competitive-strategy"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ]
     }
   }
 ]

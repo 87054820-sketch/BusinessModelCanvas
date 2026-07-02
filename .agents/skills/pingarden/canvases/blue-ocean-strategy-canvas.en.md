@@ -61,9 +61,16 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 **Prompt** — Chart area is for value-curve factors, curve classes, and score points only; put ERRC rationale, notes, and conclusions in the Story.
 
+**Example** — Plot current competitors before drawing the future curve
+
+**Quality bar** — This module is the Strategy Canvas itself: competitive factors on the horizontal axis, offering level on the vertical axis, and one value curve per competitor or strategic option.
+
 ## Colour legend
 
-_Not customised — use the six-colour sticky default palette. Colours carry no semantics unless the canvas defines them._
+- `0` — **Insight**: Customer-facing factor, noncustomer insight, or industry assumption.
+- `1` — **ERIC move**: Eliminate, Reduce, Raise, or Create rationale tied to a factor.
+- `2` — **Evidence**: Observed customer behavior or case evidence supporting the curve.
+- `3` — **Risk**: Cost, adoption, or imitation risk created by the new value curve.
 
 ## Pairs with
 

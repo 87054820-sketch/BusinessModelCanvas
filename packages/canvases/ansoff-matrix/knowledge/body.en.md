@@ -10,6 +10,7 @@
 
 # How to interpret each quadrant
 
+- **Concept definition.** The Ansoff Matrix means growth choices are separated by whether the market is existing/new and whether the product is existing/new. The reason to use it is to make the risk jump visible before the team commits resources.
 - **Market Penetration** — Lowest-risk. Levers: usage frequency, repeat purchase, share-of-wallet, win-back, pricing optimisation, loyalty. Defend with churn reduction and existing-customer engagement.
 - **Market Development** — Medium risk. Product is proven, customer is not. Riskiest assumption: does the new segment / geography / occasion actually need the product, in the form you currently deliver it?
 - **Product Development** — Medium risk. Buyer is proven, product is not. Riskiest assumption: can you actually build the new product without breaking the existing one — does it share the cost base, channels, brand?
@@ -23,6 +24,22 @@
 - The Growth Rationale zone closes the loop with BMC block changes — not "we will figure it out".
 - At least one candidate has been deselected explicitly (or all candidates have a "go / no-go" status).
 - Capacity is acknowledged — multiple parallel quadrants require visible capacity reservation.
+
+# Sticky-ready examples
+
+- **Market penetration**: "Increase current SMB usage from 2 to 4 workflows/month through onboarding nudges; risk: churn reason is missing feature, not habit."
+- **Market development**: "Sell the same compliance product to private clinics through reseller partners; risk: clinics lack budget owner."
+- **Product development**: "Add claims-denial analytics for existing pharmacy customers; risk: data quality is not reliable enough."
+- **Diversification**: "Launch provider-financing offer using existing clinic relationships and payment data; risk: underwriting capability is absent."
+- **Growth rationale**: "Choose product development first because Customer Segment and Channel stay stable; do not pursue Brazil expansion this year due partner capacity."
+
+# Transfer questions
+
+- For your project, write the decision output: pursue, test, defer, or reject each candidate.
+- What stays the same in the BMC if this move succeeds?
+- What must change in channels, partners, cost structure, or capabilities?
+- Which assumption would falsify the candidate fastest?
+- Which quadrant should be explicitly rejected for the next 12 months?
 
 # Common mistakes
 

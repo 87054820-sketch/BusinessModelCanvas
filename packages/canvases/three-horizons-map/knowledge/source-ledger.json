@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "canvasId": "three-horizons-map",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "invincible-ch01-explore", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 1: Explore", "resourceSlug": "the-invincible-company", "chapterSlug": "ch01-explore" },
+    { "id": "invincible-ch02-exploit", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 2: Exploit", "resourceSlug": "the-invincible-company", "chapterSlug": "ch02-exploit" },
+    { "id": "invincible-ch03-manage", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 3: Manage", "resourceSlug": "the-invincible-company", "chapterSlug": "ch03-manage" },
+    { "id": "mckinsey-three-horizons", "type": "professionalWeb", "tier": "professional-institution", "label": "McKinsey: Enduring Ideas - The three horizons of growth", "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-three-horizons-of-growth" }
+  ],
+  "coverage": {
+    "intro": ["mckinsey-three-horizons", "invincible-ch03-manage"],
+    "body": ["invincible-ch01-explore", "invincible-ch02-exploit", "invincible-ch03-manage"],
+    "blocks": {
+      "horizon-1-core": ["invincible-ch02-exploit", "mckinsey-three-horizons"],
+      "horizon-2-emerging": ["invincible-ch01-explore", "mckinsey-three-horizons"],
+      "horizon-3-options": ["invincible-ch01-explore", "mckinsey-three-horizons"],
+      "migration-actions": ["invincible-ch03-manage"],
+      "evidence-risks": ["invincible-ch01-explore", "invincible-ch03-manage"]
+    }
+  }
+}

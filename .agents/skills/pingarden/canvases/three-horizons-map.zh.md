@@ -51,7 +51,7 @@ source: packages/canvases/three-horizons-map/
 
 **Example** — 已有早期牵引力的数字医疗平台
 
-**Quality bar** — H2 放置已有证据和早期牵引力、但尚未成为稳定核心引擎的业务。 用 `evidence-scorecard` 判断应该扩张、转向还是暂停。
+**Quality bar** — H2 放置已有证据和早期牵引力、但尚未成为稳定核心引擎的业务。 用 `evidence-scorecard` 判断应该扩张、转向还是暂停。 好答案会写清牵引力、可重复性缺口、能力需求和下一条证据阈值。
 
 ### `horizon-3-options` — H3 —— 未来选项
 
@@ -59,7 +59,7 @@ source: packages/canvases/three-horizons-map/
 
 **Example** — 自动化服务概念
 
-**Quality bar** — H3 放置不确定性高、学习比立刻扩张更重要的早期选项。 在申请规模化资金前，把 H3 假设转成 `experiment-canvas` 实验。
+**Quality bar** — H3 放置不确定性高、学习比立刻扩张更重要的早期选项。 在申请规模化资金前，把 H3 假设转成 `experiment-canvas` 实验。 好答案会写出未来可能性、不确定性和学习目标。
 
 ### `migration-actions` — 迁移动作
 
@@ -67,7 +67,7 @@ source: packages/canvases/three-horizons-map/
 
 **Example** — 把医疗平台从创新董事会转入运营单元
 
-**Quality bar** — 这个区域把地图变成管理决策。 只有当证据、资金、治理和运营归属准备好时，项目才应该迁移层级。 每个动作都应写清负责人、触发条件、资金决策和下次复盘时间。
+**Quality bar** — 这个区域把地图变成管理决策。 只有当证据、资金、治理和运营归属准备好时，项目才应该迁移层级。 每个动作都应写清负责人、触发条件、资金决策和下次复盘时间。 好答案会写清决策、触发条件、负责人、资源变化和复盘节奏。
 
 ### `evidence-risks` — 证据与风险
 
@@ -75,7 +75,7 @@ source: packages/canvases/three-horizons-map/
 
 **Example** — H2 仍缺少可复用获客渠道
 
-**Quality bar** — 这个区域记录让层级判断变得诚实的假设，避免把愿望当作事实。 弱证据进入 `evidence-scorecard`，下一步验证进入 `experiment-canvas`。
+**Quality bar** — 这个区域记录让层级判断变得诚实的假设，避免把愿望当作事实。 弱证据进入 `evidence-scorecard`，下一步验证进入 `experiment-canvas`。 好答案会区分证据、假设和未知，并写明哪个决策依赖这条证据。
 
 ## Colour legend
 

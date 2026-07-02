@@ -94,6 +94,7 @@ pingarden resource  list [--json]                           # browse the resourc
                     get <slug> [--json]                   # resource metadata + reading note + chapters
                     chapters <slug> [--json]              # list chapter index for a book
                     chapter <slug> <chapterSlug> [--json] # read one chapter (bilingual markdown)
+pingarden reference resolve --text "..." [--lang en|zh] --json # classify Copilot references by taxonomy
 ```
 
 Run `pingarden <command> --help` for full flag details.
@@ -122,11 +123,11 @@ pingarden canvas write <canvasId> --file payload.json
 
 ## Skill — methodology for AI agents
 
-The skill is a markdown tree at `~/.claude/skills/pingarden/` (or `./.claude/skills/pingarden/` with `--local`). It teaches Claude how to fill each canvas correctly: per-block prompts, examples, quality bars, fill order, anti-patterns, cross-canvas chaining.
+The global skill is a markdown tree at `~/.claude/skills/pingarden/`. In this repo, `--local` writes one canonical copy at `./.agents/skills/pingarden/` and links `./.claude/skills/pingarden/` to it, so Codex-style agents and Claude Code read the same files.
 
 ```bash
 pingarden skill install            # writes / refreshes the skill tree (global ~/.claude/skills/pingarden/)
-pingarden skill install --local    # writes to ./.claude/skills/pingarden/ (project-local; Claude Code picks it up there too)
+pingarden skill install --local    # writes ./.agents/skills/pingarden/ and refreshes the ./.claude symlink
 pingarden skill install --dry-run  # report whether install would change anything
 pingarden skill build --out <dir>  # generate without installing (useful for CI / inspection)
 ```
@@ -135,7 +136,7 @@ The generator is fully deterministic — `pingarden skill build --out a && pinga
 
 When you author or edit a canvas's curated `skill.{en,zh}.md` (under `packages/canvases/<id>/`), the next `skill install` will refresh.
 
-**Project-local copy in this repo** — this repo commits a copy of the generated skill at `<repo>/.claude/skills/pingarden/` so it's browsable on GitHub and auto-activates when Claude Code is run inside this repo. Regenerate it after editing any canvas bundle:
+**Project-local copy in this repo** — this repo commits one generated skill at `<repo>/.agents/skills/pingarden/`. Claude Code discovers the same content through the `<repo>/.claude/skills/pingarden/` symlink. Regenerate it after editing any canvas bundle:
 
 ```bash
 pingarden skill install --local
@@ -183,6 +184,12 @@ pingarden resource list --json                              # all resources + ty
 pingarden resource get business-model-generation --json     # metadata + reading note + 5 chapters
 pingarden resource chapters business-model-generation --json # chapter index
 pingarden resource chapter business-model-generation ch01-canvas --json --lang en # full chapter prose
+```
+
+**Resolve recommendation references before calling something missing.** This keeps cases, resources, canvas templates, existing canvas instances, patterns, strategy frameworks, and experiments distinct.
+
+```bash
+pingarden reference resolve --text "BCG 增长份额矩阵和 Business Model Generation" --lang zh --json
 ```
 
 **Browse the case library, then fork.** PinGarden ships a curated read-only library of company / industry / pattern / comparison analyses. Read commands let an AI inspect them as inspiration without polluting the user's workspace; `fork` deep-copies one into editable user storage.
@@ -241,4 +248,4 @@ Each command is split into a `Command` class (clipanion glue) and a pure handler
 
 - **Onboarding UI panel.** The desktop Help menu can repair CLI PATH registration, but there is still no React onboarding panel for it.
 - **`--lang` enforcement on `canvas write`.** The flag exists for fetching ai-context during diff, but the server's `objects/bulk` is language-agnostic. Validating that sticky text language matches the canvas language is a future heuristic.
-- **CI gate for skill drift.** The plan calls for `pingarden skill build && git diff --exit-code <repo>/.claude/skills/pingarden/` to catch un-committed canvas-bundle changes. Wire when GitHub Actions is added.
+- **CI gate for skill drift.** The plan calls for `pingarden skill build && git diff --exit-code <repo>/.agents/skills/pingarden/` to catch un-committed canvas-bundle changes. Wire when GitHub Actions is added.

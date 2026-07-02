@@ -43,5 +43,48 @@
   "storyCount": 2,
   "appliesPatterns": [
     "multi-sided-platforms"
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "A dense platform case: read the mechanism before the growth story",
+      "zh": "一个高密度平台案例：先读机制，再读增长故事"
+    },
+    "whyOpen": {
+      "en": "Uber is useful because it compresses two-sided markets, network effects, cold start, dynamic pricing, subsidies, multi-homing, and cash-flow timing into one case.",
+      "zh": "Uber 值得学，是因为它把双边市场、网络效应、冷启动、动态定价、补贴、多归属和现金流时点压缩在一个案例里。"
+    },
+    "audience": {
+      "en": "Readers learning platform strategy or trying to explain why marketplace growth is not just user acquisition.",
+      "zh": "适合学习平台战略，或想解释为什么市场平台增长不只是获客的读者。"
+    },
+    "keyConcepts": [
+      { "en": "Two-sided platform", "zh": "双边平台" },
+      { "en": "Cross-side network effects", "zh": "跨边网络效应" },
+      { "en": "Cold start", "zh": "冷启动" },
+      { "en": "Dynamic pricing", "zh": "动态定价" },
+      { "en": "Multi-homing", "zh": "多归属" },
+      { "en": "Negative cash conversion cycle", "zh": "负现金转换周期" }
+    ],
+    "commonMisreads": [
+      { "en": "Uber is not simply an app plus drivers; the hard part is balancing liquidity, incentives, trust, regulation, and take rate across two sides.", "zh": "Uber 不是“一个 App 加司机”；难点在于同时平衡流动性、激励、信任、监管和抽成率。" }
+    ],
+    "practicePrompts": [
+      { "en": "If you removed surge pricing, which side would leave first and why?", "zh": "如果去掉动态定价，哪一边会先离开？为什么？" },
+      { "en": "Which side should be subsidized in your own marketplace, and what behavior proves the subsidy is working?", "zh": "你自己的市场平台应该补贴哪一边？什么行为证明补贴有效？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "platform-revolution", "chapterSlug": "ch02-network" },
+      { "type": "resourceChapter", "slug": "platform-revolution", "chapterSlug": "ch04-launch" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "platform-ecosystem-map" },
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "case", "slug": "airbnb" },
+      { "type": "case", "slug": "visa" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ]
+  }
 }

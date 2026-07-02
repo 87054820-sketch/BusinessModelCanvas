@@ -105,7 +105,7 @@ source: packages/canvases/experiment-canvas/
 
 **Example** — 预约转化率 ≥ 8% 视为验证
 
-**Quality bar** — 在运行实验前定义如何判断结果。 这里相当于 Open Practice Library 里的 Results 与 Litmus Test：既要写成功/失败标准，也要写需要收集的数据。
+**Quality bar** — 在运行实验前定义如何判断结果。 这里相当于 Open Practice Library 里的 Results 与 Litmus Test：既要写成功/失败标准，也要写需要收集的数据。 好答案在实验开始前就写清成功、失败和不明确的阈值。
 
 ### `results-conclusion` — 结果与结论
 
@@ -121,7 +121,7 @@ source: packages/canvases/experiment-canvas/
 
 **Example** — 继续：扩大样本到 200 个目标客户
 
-**Quality bar** — 根据结论决定继续、转向或重做实验。 不要只写“继续观察”，要写清楚行动、负责人和时间点。
+**Quality bar** — 根据结论决定继续、转向或重做实验。 不要只写“继续观察”，要写清楚行动、负责人和时间点。 好答案把证据转成有负责人、期限和行为变化的决策。 弱答案只写「继续学习」或「观察结果」，没有改变商业模式、价值主张、渠道或实验设计。
 
 ## Colour legend
 

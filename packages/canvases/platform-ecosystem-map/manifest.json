@@ -47,6 +47,54 @@
       "description": { "en": "Cold start, fraud, regulatory, or monetization risk.", "zh": "冷启动、欺诈、监管或变现风险。" }
     }
   ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Explain why a platform grows, stalls, or becomes hard to govern",
+      "zh": "解释一个平台为什么增长、卡住或变得难以治理"
+    },
+    "whyOpen": {
+      "en": "Use this when BMC is too company-centered. The map separates demand, supply, core interaction, network effects, governance, monetization, and cold-start risks.",
+      "zh": "当 BMC 过于公司中心、看不清平台多边关系时用它：它会拆出需求侧、供给侧、核心交互、网络效应、治理、变现和冷启动风险。"
+    },
+    "audience": {
+      "en": "Teams analyzing marketplaces, developer ecosystems, payment networks, or AI/platform complements.",
+      "zh": "适合分析市场平台、开发者生态、支付网络或 AI / 平台互补生态的团队。"
+    },
+    "keyConcepts": [
+      { "en": "Multi-sided platform", "zh": "多边平台" },
+      { "en": "Network effects", "zh": "网络效应" },
+      { "en": "Cold start", "zh": "冷启动" },
+      { "en": "Multi-homing", "zh": "多归属" },
+      { "en": "Governance", "zh": "平台治理" }
+    ],
+    "firstSteps": [
+      { "en": "Name each side before writing features; a platform has participants, not just users.", "zh": "先命名每一边参与方，再写功能；平台面对的是参与方，不只是用户。" },
+      { "en": "Describe the smallest repeatable core interaction in one sentence.", "zh": "用一句话写清最小、可重复的核心交互。" }
+    ],
+    "outcomes": [
+      { "en": "A platform ecosystem map that names sides, core interaction, value unit, network effects, governance choices, and monetization tension.", "zh": "一张说清参与方、核心互动、价值单元、网络效应、治理选择和变现张力的平台生态地图。" }
+    ],
+    "commonMisreads": [
+      { "en": "A marketplace is not strong just because it has two sides; the loop must make one side more valuable to the other.", "zh": "有两边不等于有平台优势；必须说明一边增加如何让另一边更有价值。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which side is hardest to acquire first, and what non-scalable action could seed it?", "zh": "哪一边最难先启动？你可以用什么不可规模化动作先把它种起来？" }
+    ],
+    "sourceRefs": [
+      { "type": "resource", "slug": "platform-revolution" }
+    ],
+    "relatedRefs": [
+      { "type": "case", "slug": "uber" },
+      { "type": "case", "slug": "airbnb" },
+      { "type": "case", "slug": "visa" },
+      { "type": "case", "slug": "nvidia-cuda" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ]
+  },
   "zones": [
     { "id": "demand-side", "shape": { "type": "rect", "x": 40, "y": 70, "w": 340, "h": 250 }, "label": { "x": 60, "y": 104, "align": "left", "fontSize": 20 } },
     { "id": "core-interaction", "shape": { "type": "rect", "x": 410, "y": 70, "w": 460, "h": 250 }, "label": { "x": 430, "y": 104, "align": "left", "fontSize": 20 } },

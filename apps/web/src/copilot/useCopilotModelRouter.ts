@@ -11,6 +11,7 @@ import { useKeyConfig, type CopilotKeyConfig } from './useKeyConfig';
 
 const SELECTED_MODEL_STORAGE_KEY = 'pingarden.copilot.selectedModel';
 const LEGACY_SELECTED_PROVIDER_STORAGE_KEY = 'pingarden.copilot.selectedProvider';
+const COPILOT_ID_PATTERN = /^[a-z0-9][a-z0-9._-]{0,79}$/i;
 
 export interface CopilotChatSelection {
   apiKey: string;
@@ -35,7 +36,7 @@ export interface CopilotModelRouter {
 }
 
 export function useCopilotModelRouter(enabled: boolean, unavailableMessage: string): CopilotModelRouter {
-  const [selectedModel, setSelectedModelState] = useState<CopilotModelId>(() => readSelectedModel() ?? 'kimi');
+  const [selectedModel, setSelectedModelState] = useState<CopilotModelId>(() => readSelectedModel() ?? '');
   const [health, setHealth] = useState<CopilotHealth | null>(null);
   const [healthFailed, setHealthFailed] = useState(false);
   const keyConfig = useKeyConfig(selectedModel);
@@ -47,11 +48,8 @@ export function useCopilotModelRouter(enabled: boolean, unavailableMessage: stri
       .getHealth()
       .then((nextHealth) => {
         if (cancelled) return;
-        const models = normalizeHealthModels(nextHealth);
-        const preferred = readSelectedModel();
-        const nextModel = preferred && models.some((item) => item.model === preferred)
-          ? preferred
-          : nextHealth.defaultModel ?? modelFromProvider(nextHealth.provider.provider);
+        const nextModels = normalizeHealthModels(nextHealth);
+        const nextModel = chooseSelectedModel(nextModels, nextHealth.defaultModel, readSelectedModel());
         setHealth(nextHealth);
         setHealthFailed(false);
         setSelectedModelState(nextModel);
@@ -68,14 +66,17 @@ export function useCopilotModelRouter(enabled: boolean, unavailableMessage: stri
   }, [enabled]);
 
   const models = useMemo(() => health ? normalizeHealthModels(health) : [], [health]);
-  const providers = useMemo(() => health?.providers ?? [], [health]);
+  const providers = useMemo(
+    () => health?.providers?.filter(isUserVisibleProvider).map(withProviderModelId) ?? [],
+    [health],
+  );
   const selectedModelHealth = useMemo(
     () => models.find((item) => item.model === selectedModel) ?? null,
     [models, selectedModel],
   );
-  const selectedProvider = selectedModelHealth?.provider.provider ?? defaultProviderForModel(selectedModel, health);
+  const selectedProvider = selectedModelHealth?.provider.provider ?? '';
   const providerHealth = selectedModelHealth?.provider
-    ?? (healthFailed ? fallbackProviderHealth(selectedModel, unavailableMessage) : null);
+    ?? (healthFailed ? fallbackProviderHealth(selectedModel || 'unavailable', unavailableMessage) : null);
 
   const setSelectedModel = useCallback((model: CopilotModelId) => {
     saveSelectedModel(model);
@@ -83,7 +84,7 @@ export function useCopilotModelRouter(enabled: boolean, unavailableMessage: stri
   }, []);
 
   const selection = useMemo(
-    () => ({ model: selectedModel, provider: selectedProvider }),
+    () => selectedModel && selectedProvider ? { model: selectedModel, provider: selectedProvider } : {},
     [selectedModel, selectedProvider],
   );
 
@@ -98,10 +99,12 @@ export function useCopilotModelRouter(enabled: boolean, unavailableMessage: stri
   }, [keyConfig, selection]);
 
   const resolveChatSelection = useCallback(async (): Promise<CopilotChatSelection | null> => {
+    if (!selectedModel || !selectedProvider) return null;
+    const requiresApiKey = selectedModelHealth?.requiresApiKey !== false && providerHealth?.requiresApiKey !== false;
     const apiKey = await keyConfig.resolveKey();
-    if (!apiKey) return null;
+    if (requiresApiKey && !apiKey) return null;
     return {
-      apiKey,
+      apiKey: apiKey ?? '',
       model: selectedModel,
       provider: selectedProvider,
       providerHealth,
@@ -124,75 +127,88 @@ export function useCopilotModelRouter(enabled: boolean, unavailableMessage: stri
   };
 }
 
-export function providerLabel(provider: Pick<CopilotProviderHealth, 'provider'> | null): string {
-  if (provider?.provider === 'deepseek-http') return 'DeepSeek API';
-  if (provider?.provider === 'kimi-http') return 'Kimi API';
-  return 'Kimi Code';
+export function providerLabel(provider: Pick<CopilotProviderHealth, 'provider' | 'statusLabel' | 'label'> | null): string {
+  return provider?.statusLabel || provider?.label || humanizeId(provider?.provider ?? 'AI');
 }
 
-export function providerDefaultModel(provider: CopilotProviderId): string {
-  if (provider === 'deepseek-http') return 'deepseek-chat';
-  return 'kimi-for-coding';
+export function providerDefaultModel(provider: CopilotProviderHealth | CopilotProviderId | null): string {
+  if (!provider) return 'ai-model';
+  if (typeof provider === 'string') return humanizeId(provider);
+  return provider.model || provider.defaultModelName || provider.statusLabel || provider.label || humanizeId(provider.provider);
 }
 
-export function titleKeyForModelProvider(model: CopilotModelId, provider: CopilotProviderId): string {
-  if (model === 'deepseek') return 'library.copilot.providers.deepseek.title';
-  if (provider === 'kimi-http') return 'library.copilot.providers.kimi.httpTitle';
-  return 'library.copilot.providers.kimi.cliTitle';
-}
-
-export function introKeyForModelProvider(model: CopilotModelId, provider: CopilotProviderId): string {
-  if (model === 'deepseek') return 'library.copilot.providers.deepseek.intro';
-  if (provider === 'kimi-http') return 'library.copilot.providers.kimi.httpIntro';
-  return 'library.copilot.providers.kimi.cliIntro';
-}
-
-export function getKeyLinkForModel(model: CopilotModelId): { href: string; labelKey: string } {
-  if (model === 'deepseek') {
-    return {
-      href: 'https://platform.deepseek.com/api_keys',
-      labelKey: 'library.copilot.providers.deepseek.getKey',
-    };
-  }
-  return {
-    href: 'https://www.kimi.com/code/console',
-    labelKey: 'library.copilot.providers.kimi.getKey',
-  };
+export function providerDocsUrl(provider: CopilotProviderHealth | null, model: CopilotModelHealth | null): string | null {
+  return provider?.docsUrl ?? model?.providers.find((item) => item.docsUrl)?.docsUrl ?? null;
 }
 
 function normalizeHealthModels(health: CopilotHealth): CopilotModelHealth[] {
-  if (health.models?.length) return health.models;
-  const provider = withProviderModelId(health.provider);
-  return [{
+  const rawModels = health.models?.length
+    ? health.models
+    : [legacyModelFromProvider(withProviderModelId(health.provider), health.providers ?? [])];
+  return rawModels
+    .map<CopilotModelHealth | null>((model) => {
+      const providers = (model.providers?.length ? model.providers : [model.provider])
+        .filter(isUserVisibleProvider)
+        .map(withProviderModelId);
+      const provider = providers.find((item) => item.provider === model.defaultProvider) ?? providers[0];
+      if (!provider) return null;
+      return {
+        ...model,
+        ...((model.label ?? provider.label) ? { label: model.label ?? provider.label } : {}),
+        provider,
+        providers,
+        defaultProvider: provider.provider,
+        available: provider.available,
+        requiresApiKey: provider.requiresApiKey,
+        ...(provider.visibility ? { visibility: provider.visibility } : {}),
+        ...(provider.message ? { message: provider.message } : {}),
+      };
+    })
+    .filter((model): model is CopilotModelHealth => Boolean(model));
+}
+
+function legacyModelFromProvider(provider: CopilotProviderHealth, providers: CopilotProviderHealth[]): CopilotModelHealth {
+  const modelProviders = providers.length ? providers.map(withProviderModelId).filter((item) => item.modelId === provider.modelId) : [provider];
+  return {
     model: provider.modelId,
+    ...(provider.label ? { label: provider.label } : {}),
     provider,
-    providers: health.providers?.length ? health.providers.map(withProviderModelId) : [provider],
+    providers: modelProviders,
     defaultProvider: provider.provider,
     available: provider.available,
     requiresApiKey: provider.requiresApiKey,
+    ...(provider.visibility ? { visibility: provider.visibility } : {}),
     ...(provider.message ? { message: provider.message } : {}),
-  }];
+  };
 }
 
 function withProviderModelId(provider: CopilotProviderHealth): CopilotProviderHealth {
   return {
     ...provider,
-    modelId: provider.modelId ?? modelFromProvider(provider.provider),
+    modelId: provider.modelId || modelFromLegacyProvider(provider.provider) || provider.provider,
   };
 }
 
-function defaultProviderForModel(model: CopilotModelId, health: CopilotHealth | null): CopilotProviderId {
-  const modelHealth = health ? normalizeHealthModels(health).find((item) => item.model === model) : null;
-  if (modelHealth) return modelHealth.provider.provider;
-  if (model === 'deepseek') return 'deepseek-http';
-  return health?.defaultProvider === 'kimi-http' ? 'kimi-http' : 'kimi-cli';
+function isUserVisibleProvider(provider: CopilotProviderHealth): boolean {
+  return provider.visibility !== 'internal-test';
+}
+
+function chooseSelectedModel(
+  models: CopilotModelHealth[],
+  defaultModel: CopilotModelId | undefined,
+  preferred: CopilotModelId | null,
+): CopilotModelId {
+  if (preferred && models.some((item) => item.model === preferred)) return preferred;
+  if (defaultModel && models.some((item) => item.model === defaultModel)) return defaultModel;
+  return models[0]?.model ?? '';
 }
 
 function fallbackProviderHealth(model: CopilotModelId, message: string): CopilotProviderHealth {
-  const provider = model === 'deepseek' ? 'deepseek-http' : 'kimi-cli';
   return {
-    provider,
+    provider: model ? `${model}-unavailable` : 'unavailable',
     modelId: model,
+    label: humanizeId(model || 'AI'),
+    statusLabel: humanizeId(model || 'AI'),
     available: false,
     requiresApiKey: true,
     storesKeyServerSide: false,
@@ -203,27 +219,41 @@ function fallbackProviderHealth(model: CopilotModelId, message: string): Copilot
 function readSelectedModel(): CopilotModelId | null {
   if (typeof sessionStorage === 'undefined') return null;
   const raw = sessionStorage.getItem(SELECTED_MODEL_STORAGE_KEY);
-  if (isCopilotModel(raw)) return raw;
+  if (isCopilotId(raw)) return raw;
   const legacyProvider = sessionStorage.getItem(LEGACY_SELECTED_PROVIDER_STORAGE_KEY);
-  return isCopilotProvider(legacyProvider) ? modelFromProvider(legacyProvider) : null;
+  return legacyProvider ? modelFromLegacyProvider(legacyProvider) : null;
 }
 
 function saveSelectedModel(model: CopilotModelId) {
   try {
-    sessionStorage.setItem(SELECTED_MODEL_STORAGE_KEY, model);
+    if (model) sessionStorage.setItem(SELECTED_MODEL_STORAGE_KEY, model);
   } catch {
     /* best-effort */
   }
 }
 
-function modelFromProvider(provider: CopilotProviderId): CopilotModelId {
-  return provider === 'deepseek-http' ? 'deepseek' : 'kimi';
+function modelFromLegacyProvider(provider: CopilotProviderId): CopilotModelId | null {
+  if (provider === 'deepseek-http') return 'deepseek';
+  if (provider === 'minimax-http') return 'minimax';
+  if (provider === 'kimi-cli' || provider === 'kimi-http') return 'kimi';
+  return null;
 }
 
-function isCopilotModel(input: string | null): input is CopilotModelId {
-  return input === 'kimi' || input === 'deepseek';
+function isCopilotId(input: string | null): input is CopilotModelId {
+  return Boolean(input && COPILOT_ID_PATTERN.test(input));
 }
 
-function isCopilotProvider(input: string | null): input is CopilotProviderId {
-  return input === 'kimi-cli' || input === 'kimi-http' || input === 'deepseek-http';
+function humanizeId(id: string): string {
+  return id
+    .split(/[-_.]+/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ') || 'AI';
 }
+
+export const __modelRouterTest = {
+  chooseSelectedModel,
+  normalizeHealthModels,
+  providerDefaultModel,
+  providerLabel,
+};

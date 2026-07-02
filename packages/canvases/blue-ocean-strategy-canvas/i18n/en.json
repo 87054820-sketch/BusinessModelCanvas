@@ -3,7 +3,12 @@
   "blocks": {
     "chart-area": {
       "title": "Chart area",
-      "prompt": "Chart area is for value-curve factors, curve classes, and score points only; put ERRC rationale, notes, and conclusions in the Story."
+      "prompt": "Chart area is for value-curve factors, curve classes, and score points only; put ERRC rationale, notes, and conclusions in the Story.",
+      "examples": [
+        "Plot current competitors before drawing the future curve",
+        "Use customer-facing factors such as ease of selection or speed",
+        "Pin ERIC notes near a factor, but keep long reasoning in the Story"
+      ]
     }
   }
 }

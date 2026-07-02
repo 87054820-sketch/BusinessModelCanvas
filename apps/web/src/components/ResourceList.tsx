@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import type { Lang, LibraryResource, LibraryResourceType } from '@pingarden/shared';
+import { localize } from './LearningGuide';
 
 interface Props {
   resources: LibraryResource[];
@@ -44,6 +45,14 @@ function ResourceCard({
   const { t } = useTranslation();
   const title = resource.title[lang] ?? resource.title.en;
   const recommendation = resource.recommendation[lang] ?? resource.recommendation.en;
+  const learningSummary =
+    localize(resource.learning?.whyOpen, lang) ||
+    localize(resource.learning?.headline, lang) ||
+    recommendation;
+  const concepts = (resource.learning?.keyConcepts ?? [])
+    .map((item) => localize(item, lang))
+    .filter(Boolean)
+    .slice(0, 3);
   const relatedCount = countRelated(resource);
   const initials = getResourceInitials(title);
   const accent = resourceAccentClass(resource.type);
@@ -79,7 +88,7 @@ function ResourceCard({
 
         <div className="mt-4 rounded-xl border border-amber-100 bg-white/70 px-3 py-2.5">
           <p className="line-clamp-5 text-[12px] leading-relaxed text-stone-600">
-            {recommendation}
+            {learningSummary}
           </p>
         </div>
 
@@ -87,6 +96,11 @@ function ResourceCard({
           {[resource.authors.join(', '), resource.year].filter(Boolean).join(' · ')}
         </div>
         <div className="mt-3 flex flex-wrap items-center gap-1.5">
+          {concepts.map((concept) => (
+            <span key={concept} className="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-medium text-emerald-700 ring-1 ring-emerald-100">
+              {concept}
+            </span>
+          ))}
           {resource.tags?.slice(0, 3).map((tag) => (
             <span key={tag} className="rounded-full bg-white/80 px-2 py-0.5 text-[10px] text-stone-600 ring-1 ring-stone-200">
               {tag}

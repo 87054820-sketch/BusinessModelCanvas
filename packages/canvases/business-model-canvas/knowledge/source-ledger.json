@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "canvasId": "business-model-canvas",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    {
+      "id": "bmg-ch01-canvas",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Business Model Generation, chapter 1: Canvas",
+      "resourceSlug": "business-model-generation",
+      "chapterSlug": "ch01-canvas"
+    },
+    {
+      "id": "bmg-ch05-process",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Business Model Generation, chapter 5: Process",
+      "resourceSlug": "business-model-generation",
+      "chapterSlug": "ch05-process"
+    },
+    {
+      "id": "strategyzer-bmc-tool",
+      "type": "professionalWeb",
+      "tier": "official-method-page",
+      "label": "Strategyzer: The Business Model Canvas",
+      "url": "https://www.strategyzer.com/library/the-business-model-canvas"
+    }
+  ],
+  "coverage": {
+    "intro": ["bmg-ch01-canvas", "strategyzer-bmc-tool"],
+    "body": ["bmg-ch01-canvas", "bmg-ch05-process", "strategyzer-bmc-tool"],
+    "blocks": {
+      "key-partners": ["bmg-ch01-canvas"],
+      "key-activities": ["bmg-ch01-canvas"],
+      "key-resources": ["bmg-ch01-canvas"],
+      "value-propositions": ["bmg-ch01-canvas"],
+      "customer-relationships": ["bmg-ch01-canvas"],
+      "channels": ["bmg-ch01-canvas"],
+      "customer-segments": ["bmg-ch01-canvas"],
+      "cost-structure": ["bmg-ch01-canvas"],
+      "revenue-streams": ["bmg-ch01-canvas"]
+    }
+  }
+}

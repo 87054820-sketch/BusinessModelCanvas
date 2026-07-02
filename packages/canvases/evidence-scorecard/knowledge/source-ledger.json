@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "canvasId": "evidence-scorecard",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    {
+      "id": "tbi-ch01-design",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Testing Business Ideas, chapter 1: Design",
+      "resourceSlug": "testing-business-ideas",
+      "chapterSlug": "ch01-design"
+    },
+    {
+      "id": "tbi-ch02-test",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Testing Business Ideas, chapter 2: Test",
+      "resourceSlug": "testing-business-ideas",
+      "chapterSlug": "ch02-test"
+    },
+    {
+      "id": "tbi-ch03-evidence",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Testing Business Ideas, chapter 3: Evidence",
+      "resourceSlug": "testing-business-ideas",
+      "chapterSlug": "ch03-evidence"
+    },
+    {
+      "id": "tbi-ch04-manage",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Testing Business Ideas, chapter 4: Manage",
+      "resourceSlug": "testing-business-ideas",
+      "chapterSlug": "ch04-manage"
+    },
+    {
+      "id": "invincible-ch01-explore",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "The Invincible Company, chapter 1: Explore",
+      "resourceSlug": "the-invincible-company",
+      "chapterSlug": "ch01-explore"
+    },
+    {
+      "id": "strategyzer-testing-book",
+      "type": "professionalWeb",
+      "tier": "official-method-page",
+      "label": "Strategyzer: Testing Business Ideas book",
+      "url": "https://www.strategyzer.com/library/testing-business-ideas-book"
+    }
+  ],
+  "coverage": {
+    "intro": ["tbi-ch01-design", "tbi-ch03-evidence", "strategyzer-testing-book"],
+    "body": ["tbi-ch02-test", "tbi-ch03-evidence", "tbi-ch04-manage", "invincible-ch01-explore"],
+    "blocks": {
+      "critical-assumption": ["tbi-ch01-design"],
+      "current-evidence": ["tbi-ch02-test", "tbi-ch03-evidence"],
+      "evidence-strength": ["tbi-ch03-evidence", "strategyzer-testing-book"],
+      "learning-velocity": ["tbi-ch03-evidence", "tbi-ch04-manage"],
+      "risk-reduction": ["tbi-ch01-design", "tbi-ch03-evidence"],
+      "portfolio-decision": ["tbi-ch04-manage", "invincible-ch01-explore"],
+      "next-experiment": ["tbi-ch02-test", "tbi-ch03-evidence"]
+    }
+  }
+}

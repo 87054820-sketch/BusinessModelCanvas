@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import type { CanvasDef, CanvasI18n, CanvasMeta, Lang } from '@pingarden/shared';
 import type { CanvasKnowledge } from '../../api/client';
+import { CanvasKnowledgeBlocks } from '../../components/CanvasKnowledgeBlocks';
 import { Markdown } from '../../components/Markdown';
 import { RelatedCanvasesStrip } from './RelatedCanvasesStrip';
 
@@ -41,6 +42,10 @@ export function CanvasKnowledgeInspector({
   const tagline = t(`templates.${def.id}.tagline`, '');
   const hasIntro = !!knowledge.intro?.trim();
   const hasBody = !!knowledge.body?.trim();
+  const hasBlockGuidance = def.zones.some((zone) => {
+    const block = i18n.blocks[zone.id];
+    return knowledge.blocks[zone.id]?.trim() || block?.title || block?.prompt || block?.guidance || block?.examples?.length;
+  });
 
   return (
     <div className="flex h-full flex-col">
@@ -67,7 +72,14 @@ export function CanvasKnowledgeInspector({
           </Section>
         )}
 
-        {!hasIntro && !hasBody && (
+        <CanvasKnowledgeBlocks
+          def={def}
+          i18n={i18n}
+          knowledge={knowledge}
+          className="mt-6"
+        />
+
+        {!hasIntro && !hasBody && !hasBlockGuidance && (
           <div className="mt-6 rounded-lg border border-dashed border-gray-300 bg-gray-50 p-4 text-xs text-gray-600">
             <div className="font-medium text-gray-800">
               {t('inspector.canvasKnowledge.empty')}
@@ -108,4 +120,3 @@ function Section({
     </section>
   );
 }
-

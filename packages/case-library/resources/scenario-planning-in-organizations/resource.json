@@ -13,12 +13,28 @@
     "en": "Read this after learning basic scenario thinking. It explains how to run scenario planning as an organizational project, not just how to draw a scenario matrix.",
     "zh": "在理解基础情景思维后阅读这本。它解释如何把情景规划作为组织项目来运作，而不只是画一张情景矩阵。"
   },
-  "authors": ["Thomas J. Chermack"],
+  "authors": [
+    "Thomas J. Chermack"
+  ],
   "publisher": "Berrett-Koehler Publishers",
   "year": 2011,
-  "tags": ["scenario-planning", "organizational-learning", "project-assessment", "foresight"],
-  "relatedCanvasDefIds": ["business-model-environment", "scenario-matrix", "business-model-canvas", "portfolio-map", "design-criteria-canvas"],
-  "relatedStrategyFrameworkSlugs": ["scenario-planning", "performance-based-scenario-planning"],
+  "tags": [
+    "scenario-planning",
+    "organizational-learning",
+    "project-assessment",
+    "foresight"
+  ],
+  "relatedCanvasDefIds": [
+    "business-model-environment",
+    "scenario-matrix",
+    "business-model-canvas",
+    "portfolio-map",
+    "design-criteria-canvas"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "scenario-planning",
+    "performance-based-scenario-planning"
+  ],
   "sources": [
     {
       "label": "Thomas J. Chermack · Scenario Planning in Organizations: How to Create, Use, and Assess Scenarios · Berrett-Koehler Publishers · 2011 · ISBN 978-1605094137"
@@ -27,5 +43,97 @@
       "label": "Amazon · Scenario Planning in Organizations product page",
       "url": "https://www.amazon.com/Scenario-Planning-Organizations-Create-Scenarios/dp/1605094137"
     }
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Make scenario planning usable inside organizations",
+      "zh": "让情景规划在组织里真正可用"
+    },
+    "whyOpen": {
+      "en": "Use this when scenario work must influence meetings, strategy routines, facilitation, and performance conversations.",
+      "zh": "当情景工作需要影响会议、战略流程、引导和绩效讨论时读这本。"
+    },
+    "audience": {
+      "en": "Strategy facilitators, leadership teams, planners, and teams embedding uncertainty work into routines.",
+      "zh": "适合战略引导师、领导团队、规划人员，以及要把不确定性工作嵌入流程的团队。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Scenario planning methods",
+        "zh": "情景规划方法"
+      },
+      {
+        "en": "Mental models",
+        "zh": "心智模型"
+      },
+      {
+        "en": "Performance use",
+        "zh": "绩效应用"
+      },
+      {
+        "en": "Facilitation",
+        "zh": "引导"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "Scenarios are not forecasts; they are structured alternatives for learning and preparing decisions.",
+        "zh": "情景不是预测；它们是帮助学习和准备决策的结构化替代未来。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Start with the scenario matrix only after clarifying the decision that needs uncertainty thinking.",
+        "zh": "先明确需要不确定性思考的决策，再使用情景矩阵。"
+      },
+      {
+        "en": "Plan how scenarios will change recurring meetings, not only workshop output.",
+        "zh": "规划情景如何改变周期性会议，而不只是产出工作坊文件。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can design a scenario process that changes decisions, signals, and organizational routines.",
+        "zh": "你能设计一个会改变决策、信号和组织流程的情景规划过程。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which strategic decision in your organization would improve if the team held two futures in mind?",
+        "zh": "你的组织里，哪一个战略决策会因为团队同时思考两个未来而变好？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "scenario-planning-in-organizations",
+        "chapterSlug": "ch01-intro"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "scenario-matrix"
+      },
+      {
+        "type": "strategyFramework",
+        "slug": "scenario-planning"
+      },
+      {
+        "type": "canvas",
+        "slug": "business-model-environment"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "the-art-of-the-long-view"
+      },
+      {
+        "type": "resource",
+        "slug": "business-model-generation"
+      }
+    ]
+  }
 }

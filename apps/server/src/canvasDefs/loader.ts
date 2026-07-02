@@ -56,6 +56,42 @@ const ZoneDef = z.object({
 
 const LocalizedLabel = z.object({ en: z.string(), zh: z.string() });
 
+const LearningReferenceSchema = z.object({
+  type: z.enum([
+    'canvas',
+    'canvasBlock',
+    'case',
+    'caseStory',
+    'resource',
+    'resourceChapter',
+    'pattern',
+    'strategyFramework',
+    'experiment',
+  ]),
+  slug: z.string().min(1),
+  chapterSlug: z.string().min(1).optional(),
+  canvasDefId: z.string().min(1).optional(),
+  blockId: z.string().min(1).optional(),
+  storyId: z.string().min(1).optional(),
+  label: LocalizedLabel.optional(),
+  note: LocalizedLabel.optional(),
+});
+
+const LearningIndexSchema = z.object({
+  level: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
+  headline: LocalizedLabel.optional(),
+  whyOpen: LocalizedLabel.optional(),
+  audience: LocalizedLabel.optional(),
+  keyConcepts: z.array(LocalizedLabel).optional(),
+  commonMisreads: z.array(LocalizedLabel).optional(),
+  firstSteps: z.array(LocalizedLabel).optional(),
+  outcomes: z.array(LocalizedLabel).optional(),
+  practicePrompts: z.array(LocalizedLabel).optional(),
+  sourceRefs: z.array(LearningReferenceSchema).optional(),
+  relatedRefs: z.array(LearningReferenceSchema).optional(),
+  nextRefs: z.array(LearningReferenceSchema).optional(),
+});
+
 const DefaultColorLegendSchema = z.object({
   hex: z.enum([
     '#FCF1A8',
@@ -128,6 +164,8 @@ const ManifestSchema = z.object({
   zones: z.array(ZoneDef).min(1),
   plugin: z.enum(['axis-grid', 'chart-canvas']).optional(),
   related: z.array(z.string().min(1)).optional(),
+  relatedNotes: z.record(z.string(), LocalizedLabel).optional(),
+  learning: LearningIndexSchema.optional(),
   display: DisplayConfigSchema.optional(),
   defaultColorLegend: z.array(DefaultColorLegendSchema).optional(),
   /**

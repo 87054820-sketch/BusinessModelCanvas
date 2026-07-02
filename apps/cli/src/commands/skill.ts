@@ -1,7 +1,7 @@
 import { Option } from 'clipanion';
-import { rmSync } from 'node:fs';
+import { existsSync, lstatSync, mkdirSync, rmSync, symlinkSync } from 'node:fs';
 import { homedir } from 'node:os';
-import { join, resolve } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 import pc from 'picocolors';
 import { BaseCommand } from '../lib/baseCommand.js';
 import {
@@ -13,7 +13,9 @@ import {
 import { generateSkill, readInstalledHash, readInstalledVersion } from '../skill/generate.js';
 
 const GLOBAL_INSTALL_DIR = join(homedir(), '.claude', 'skills', 'pingarden');
-const LOCAL_INSTALL_DIR = join('.claude', 'skills', 'pingarden');
+const LOCAL_INSTALL_DIR = join('.agents', 'skills', 'pingarden');
+const LOCAL_CLAUDE_ALIAS_DIR = join('.claude', 'skills', 'pingarden');
+const LOCAL_CLAUDE_ALIAS_TARGET = '../../.agents/skills/pingarden';
 
 // ─── Pure handlers ───────────────────────────────────────────────────────────
 
@@ -62,6 +64,7 @@ export function skillInstallHandler(args: {
   const targetDir = args.local
     ? resolve(LOCAL_INSTALL_DIR)
     : GLOBAL_INSTALL_DIR;
+  const aliasDir = args.local ? resolve(LOCAL_CLAUDE_ALIAS_DIR) : undefined;
   const patternsDir = discoverPatternsDir({
     ...(args.patternsDir !== undefined ? { override: args.patternsDir } : {}),
   });
@@ -96,6 +99,7 @@ export function skillInstallHandler(args: {
     }
     return {
       targetDir,
+      aliasDir,
       wouldChange,
       version: result.version,
       contentHash: result.contentHash,
@@ -120,8 +124,12 @@ export function skillInstallHandler(args: {
     outDir: targetDir,
     ...(args.langs !== undefined ? { langs: args.langs } : {}),
   });
+  if (args.local) {
+    ensureLocalClaudeAlias();
+  }
   return {
     targetDir,
+    aliasDir,
     version: result.version,
     contentHash: result.contentHash,
     previousHash: installedHash,
@@ -139,7 +147,7 @@ export function skillInstallHandler(args: {
 export class SkillBuildCommand extends BaseCommand {
   static override paths = [['skill', 'build']];
   static override usage = BaseCommand.Usage({
-    description: 'Generate the Claude skill markdown tree from canvas bundles',
+    description: 'Generate the PinGarden skill markdown tree from canvas bundles',
     details: `
       Reads packages/canvases/* and emits a deterministic skill tree
       to --out. Re-running with the same inputs produces byte-identical
@@ -181,7 +189,7 @@ export class SkillBuildCommand extends BaseCommand {
 export class SkillInstallCommand extends BaseCommand {
   static override paths = [['skill', 'install']];
   static override usage = BaseCommand.Usage({
-    description: 'Install the skill into ~/.claude/skills/pingarden (or ./.claude/skills/pingarden with --local)',
+    description: 'Install the skill into ~/.claude/skills/pingarden (or ./.agents/skills/pingarden with --local)',
     examples: [
       ['Global install (default)', '$0 skill install'],
       ['Project-local install', '$0 skill install --local'],
@@ -190,7 +198,7 @@ export class SkillInstallCommand extends BaseCommand {
   });
 
   local = Option.Boolean('--local', false, {
-    description: 'Install to ./.claude/skills/pingarden (relative to cwd) instead of ~/.claude/skills/pingarden',
+    description: 'Install to ./.agents/skills/pingarden and link ./.claude/skills/pingarden to it',
   });
   dryRun = Option.Boolean('--dry-run', false, {
     description: 'Build to a sibling preview dir and report whether install would change anything',
@@ -213,10 +221,11 @@ export class SkillInstallCommand extends BaseCommand {
 
     ctx.output.print(result, (r) => {
       if (this.dryRun) {
-        const r2 = r as { targetDir: string; wouldChange: boolean; version: string; previousHash: string | null; previousVersion?: string | null };
+        const r2 = r as { targetDir: string; aliasDir?: string; wouldChange: boolean; version: string; previousHash: string | null; previousVersion?: string | null };
         return [
           pc.bold('Skill install — DRY RUN'),
           `  target        ${r2.targetDir}`,
+          ...(r2.aliasDir ? [`  claude alias  ${r2.aliasDir}`] : []),
           `  version       ${r2.version}`,
           `  previous      ${r2.previousVersion ?? '(none — fresh install)'}`,
           `  previous hash ${r2.previousHash ?? '(none — fresh install)'}`,
@@ -225,10 +234,11 @@ export class SkillInstallCommand extends BaseCommand {
             : pc.green('  status        up to date'),
         ].join('\n');
       }
-      const r2 = r as { targetDir: string; upToDate: boolean; version: string; canvasIds: string[]; patternSlugs: string[]; experimentSlugs: string[] };
+      const r2 = r as { targetDir: string; aliasDir?: string; upToDate: boolean; version: string; canvasIds: string[]; patternSlugs: string[]; experimentSlugs: string[] };
       return [
         pc.green(r2.upToDate ? '✓ skill up to date' : '✓ skill installed'),
         `  target        ${r2.targetDir}`,
+        ...(r2.aliasDir ? [`  claude alias  ${r2.aliasDir}`] : []),
         `  version       ${r2.version}`,
         `  canvases      ${r2.canvasIds.length}`,
         `  patterns      ${r2.patternSlugs.length}${r2.patternSlugs.length > 0 ? ` (${r2.patternSlugs.join(', ')})` : ''}`,
@@ -236,6 +246,18 @@ export class SkillInstallCommand extends BaseCommand {
       ].join('\n');
     });
   }
+}
+
+function ensureLocalClaudeAlias() {
+  const aliasDir = resolve(LOCAL_CLAUDE_ALIAS_DIR);
+  mkdirSync(dirname(aliasDir), { recursive: true });
+
+  if (existsSync(aliasDir)) {
+    const stat = lstatSync(aliasDir);
+    rmSync(aliasDir, { recursive: stat.isDirectory() && !stat.isSymbolicLink(), force: true });
+  }
+
+  symlinkSync(LOCAL_CLAUDE_ALIAS_TARGET, aliasDir, 'dir');
 }
 
 function parseLangsOption(raw: string | undefined): Array<'en' | 'zh'> | undefined {

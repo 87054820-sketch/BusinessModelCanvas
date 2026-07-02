@@ -13,6 +13,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "beginner",
+    "headline": { "en": "Compress customer fit into one sharp value sentence", "zh": "把客户匹配压缩成一句清楚的价值主张" },
+    "whyOpen": { "en": "Use this after VPC or JTBD work when the team needs positioning language that is specific enough to test.", "zh": "在做完 VPC 或 JTBD 后使用，把洞察转成具体到可以测试的定位句。" },
+    "audience": { "en": "Teams turning customer discovery into landing-page, sales, or pitch copy.", "zh": "适合把客户洞察转成落地页、销售话术或路演表达的团队。" },
+    "keyConcepts": [
+      { "en": "Customer segment", "zh": "客户细分" },
+      { "en": "Customer job", "zh": "客户任务" },
+      { "en": "Pain reliever", "zh": "痛点缓解" },
+      { "en": "Gain creator", "zh": "收益创造" }
+    ],
+    "firstSteps": [
+      { "en": "Start from one specific customer segment, not the whole market.", "zh": "先从一个具体客户细分开始，而不是整个市场。" },
+      { "en": "Keep the sentence testable; avoid slogans and internal feature names.", "zh": "让句子可以被测试，避免口号和内部功能名。" }
+    ],
+    "outcomes": [
+      { "en": "One value proposition sentence and the assumptions that still need evidence.", "zh": "一条价值主张句，以及仍需证据的关键假设。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which word in the sentence would a real customer disagree with first?", "zh": "这句话里哪个词最可能被真实客户首先反驳？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch01-canvas" },
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch02-design" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "value-proposition-canvas" },
+      { "type": "canvas", "slug": "jobs-to-be-done" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ]
+  },
   "relatedNotes": {
     "value-proposition-canvas": {
       "en": "Always run VPC first; the Ad-Lib only compresses what's already in VPC into one sentence.",

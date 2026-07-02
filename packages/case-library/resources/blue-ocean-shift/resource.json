@@ -13,14 +13,40 @@
     "en": "Use this when Blue Ocean Strategy has produced a promising new curve but the team still needs a change process: aligning people, exploring noncustomers, choosing moves, and building confidence through evidence.",
     "zh": "当蓝海战略已经画出新价值曲线，但团队还需要推动转型流程时，推荐读这本：它关注人员对齐、非顾客洞察、战略选择和用证据建立信心。"
   },
-  "authors": ["W. Chan Kim", "Renée Mauborgne"],
+  "authors": [
+    "W. Chan Kim",
+    "Renée Mauborgne"
+  ],
   "publisher": "Hachette Books / Macmillan",
   "year": 2017,
-  "tags": ["blue-ocean", "transformation", "market-creation"],
-  "relatedCanvasDefIds": ["blue-ocean-strategy-canvas", "customer-journey", "design-criteria-canvas", "business-model-canvas", "experiment-canvas"],
-  "relatedCaseSlugs": ["cemex", "cirque-du-soleil", "yellow-tail", "qb-house", "citizenm-hotels"],
-  "relatedExperimentSlugs": ["customer-interview", "online-survey", "storyboard", "clickable-prototype"],
-  "relatedStrategyFrameworkSlugs": ["blue-ocean-strategy"],
+  "tags": [
+    "blue-ocean",
+    "transformation",
+    "market-creation"
+  ],
+  "relatedCanvasDefIds": [
+    "blue-ocean-strategy-canvas",
+    "customer-journey",
+    "design-criteria-canvas",
+    "business-model-canvas",
+    "experiment-canvas"
+  ],
+  "relatedCaseSlugs": [
+    "cemex",
+    "cirque-du-soleil",
+    "yellow-tail",
+    "qb-house",
+    "citizenm-hotels"
+  ],
+  "relatedExperimentSlugs": [
+    "customer-interview",
+    "online-survey",
+    "storyboard",
+    "clickable-prototype"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "blue-ocean-strategy"
+  ],
   "sources": [
     {
       "label": "W. Chan Kim & Renée Mauborgne · Blue Ocean Shift · 2017"
@@ -33,5 +59,97 @@
       "label": "Blue Ocean Strategy · Blue Ocean Toolkit",
       "url": "https://www.blueoceanstrategy.com/tools/"
     }
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Move from blue ocean analysis to a repeatable shift process",
+      "zh": "从蓝海分析走向可重复的转型流程"
+    },
+    "whyOpen": {
+      "en": "Open this when a team understands Strategy Canvas but needs a human, step-by-step process for moving people from current competition to new demand.",
+      "zh": "当团队已经理解战略布局图，但需要一个以人为本、循序渐进的流程来从现有竞争走向新需求时读这本。"
+    },
+    "audience": {
+      "en": "Leaders, facilitators, strategy teams, and innovation teams that must bring a group through change, not only create analysis.",
+      "zh": "适合领导者、引导师、战略团队和创新团队，尤其是需要带团队完成变化而不只是做分析的人。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Humanness",
+        "zh": "以人为本"
+      },
+      {
+        "en": "Five-step process",
+        "zh": "五步流程"
+      },
+      {
+        "en": "Buyer utility",
+        "zh": "买方效用"
+      },
+      {
+        "en": "Three tiers of noncustomers",
+        "zh": "三层非顾客"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "Blue ocean shift is not brainstorming a novel idea; it is a disciplined process for changing value, demand, and adoption risk.",
+        "zh": "蓝海转型不是头脑风暴新点子；它是改变价值、需求和采纳风险的系统流程。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Read this after Strategy Canvas if the team needs an implementation path.",
+        "zh": "在读完战略布局图后，如果团队需要实施路径，就读这本。"
+      },
+      {
+        "en": "Use noncustomer questions before deciding which value factors to raise or reduce.",
+        "zh": "在决定提升或减少哪些价值因素前，先问非顾客问题。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can design a shift path that links current competition, noncustomers, utility, and execution confidence.",
+        "zh": "你能设计一条转型路径，把现有竞争、非顾客、效用和执行信心连起来。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which noncustomers have a reason to care if your offering changes the right value factors?",
+        "zh": "如果你改变了正确的价值因素，哪类非顾客会因此在意？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "blue-ocean-shift",
+        "chapterSlug": "ch01-intro"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "blue-ocean-strategy-canvas"
+      },
+      {
+        "type": "case",
+        "slug": "yellow-tail"
+      },
+      {
+        "type": "strategyFramework",
+        "slug": "blue-ocean-strategy"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "blue-ocean-strategy"
+      },
+      {
+        "type": "resource",
+        "slug": "testing-business-ideas"
+      }
+    ]
+  }
 }

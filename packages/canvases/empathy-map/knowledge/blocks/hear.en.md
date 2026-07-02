@@ -23,3 +23,22 @@ When the Hear quadrant is full of conflicting voices ("ship faster"
 from the CEO, "you're already moving too fast" from engineering),
 that conflict often explains the tension you'll later put into Think
 & Feel. Watch for it.
+
+## Good Answer vs Weak Answer
+
+A good Hear sticky names the source, message, and influence on the person's decision. A weak answer writes "market noise" or "social media" without saying whose voice matters.
+
+## Sticky Examples
+
+- "CFO keeps asking for a risk number before approving the pilot."
+- "Peers in her Slack group say implementation services always run over budget."
+
+## Transfer Questions
+
+- Whose opinion changes this person's confidence or behavior?
+- Which voices conflict with each other?
+- What external signal might matter more than your sales message?
+
+## Source Grounding
+
+Empathy mapping treats social influence as part of the customer's context. This matters when the map feeds VPC or Journey work, because perceived value often depends on trusted voices around the customer.

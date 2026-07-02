@@ -10,6 +10,7 @@ import type {
   ResourceChapterMeta,
 } from '@pingarden/shared';
 import { libraryApi } from '../api/library';
+import { LearningGuide } from './LearningGuide';
 import { resourceTypeClass } from './ResourceList';
 
 interface Props {
@@ -20,7 +21,7 @@ interface Props {
   overlayClassName?: string;
 }
 
-type ModalTab = 'description' | 'chapters' | 'related' | 'references';
+type ModalTab = 'guide' | 'description' | 'chapters' | 'related' | 'references';
 
 export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, overlayClassName = 'z-50' }: Props) {
   const { t } = useTranslation();
@@ -60,7 +61,7 @@ export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, over
     }
     setLoading(true);
     setDetail(null);
-    setTab('description');
+    setTab(resource.learning ? 'guide' : 'description');
     setActiveChapterSlug(null);
     setChapterDetail(null);
     let cancelled = false;
@@ -101,11 +102,11 @@ export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, over
   const referenceCount = resource.sources.length;
   const relatedCount = countRelated(resource);
   const chapters = detail?.chapters;
-  const chapterCount = chapters?.length ?? 0;
+  const chapterCount = chapters?.length ?? resource.chapterCount ?? 0;
 
   const handleSelectChapter = (chapterSlug: string) => {
     setActiveChapterSlug(chapterSlug);
-    const cancel = fetchChapter(resource.slug, chapterSlug);
+    fetchChapter(resource.slug, chapterSlug);
   };
 
   return (
@@ -121,8 +122,8 @@ export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, over
         aria-label={title}
         className="flex h-[760px] max-h-[88vh] min-h-[520px] w-full max-w-6xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-stone-900/5"
       >
-        <header className="flex shrink-0 items-start gap-5 border-b border-stone-100 bg-gradient-to-br from-stone-50 via-white to-amber-50/60 px-6 py-5">
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-base font-bold text-amber-800 shadow-inner ring-1 ring-white">
+        <header className="flex shrink-0 items-start gap-4 border-b border-stone-100 bg-gradient-to-br from-stone-50 via-white to-amber-50/60 px-6 py-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-sm font-bold text-amber-800 shadow-inner ring-1 ring-white">
             {title.slice(0, 2).toUpperCase()}
           </div>
           <div className="min-w-0 flex-1">
@@ -136,9 +137,9 @@ export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, over
                 </span>
               )}
             </div>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-stone-950">{title}</h2>
-            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-stone-600">{summary}</p>
-            <div className="mt-2 text-[11px] text-stone-400">
+            <h2 className="mt-1.5 text-xl font-semibold tracking-tight text-stone-950">{title}</h2>
+            <p className="mt-1.5 max-w-4xl text-[13px] leading-relaxed text-stone-600">{summary}</p>
+            <div className="mt-1.5 text-[11px] text-stone-400">
               {[resource.authors.join(', '), resource.publisher, resource.year]
                 .filter(Boolean)
                 .join(' · ')}
@@ -156,16 +157,22 @@ export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, over
           </button>
         </header>
 
-        <div className="shrink-0 border-b border-amber-100 bg-amber-50/60 px-6 py-3">
-          <div className="max-w-4xl border-l-2 border-amber-400 pl-3">
-            <div className="text-[10px] font-semibold uppercase tracking-wider text-amber-700">
-              {t('library.resource.recommendation')}
+        <div className="shrink-0 border-b border-amber-100 bg-amber-50/60 px-6 py-2.5">
+          <div className="flex max-w-5xl items-start gap-2.5">
+            <div className="mt-0.5 h-6 w-0.5 shrink-0 rounded-full bg-amber-400" />
+            <div className="min-w-0">
+              <div className="text-[10px] font-semibold uppercase tracking-wider text-amber-700">
+                {t('library.resource.recommendation')}
+              </div>
+              <p className="mt-0.5 line-clamp-2 text-[12px] leading-relaxed text-stone-700">{recommendation}</p>
             </div>
-            <p className="mt-1 text-[12px] leading-relaxed text-stone-700">{recommendation}</p>
           </div>
         </div>
 
-        <div className="flex shrink-0 items-end gap-1 border-b border-stone-200 px-6" role="tablist">
+        <div className="flex shrink-0 items-end gap-1 overflow-x-auto border-b border-stone-200 px-6" role="tablist">
+          {resource.learning && (
+            <ModalTabButton active={tab === 'guide'} onClick={() => setTab('guide')} label={t('library.tabs.guide')} />
+          )}
           <ModalTabButton active={tab === 'description'} onClick={() => setTab('description')} label={t('library.tabs.description')} />
           {chapterCount > 0 && (
             <ModalTabButton active={tab === 'chapters'} onClick={() => setTab('chapters')} label={t('library.resource.chapters')} count={chapterCount} />
@@ -175,6 +182,9 @@ export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, over
         </div>
 
         <div className="flex-1 overflow-y-auto bg-stone-50/40 px-6 py-6">
+          {tab === 'guide' && (
+            <GuideTab resource={resource} lang={lang} />
+          )}
           {tab === 'description' && <DescriptionTab detail={detail} loading={loading} lang={lang} />}
           {tab === 'chapters' && chapters && (
             <ChaptersTab
@@ -203,6 +213,21 @@ export function ResourceDetailModal({ resource, lang, onClose, onCaseClick, over
   );
 }
 
+function GuideTab({ resource, lang }: { resource: LibraryResource; lang: Lang }) {
+  const { t } = useTranslation();
+  if (!resource.learning) {
+    return <p className="text-sm text-gray-400">{t('library.resource.guideEmpty')}</p>;
+  }
+  return (
+    <LearningGuide
+      learning={resource.learning}
+      lang={lang}
+      maxConcepts={8}
+      className="bg-white"
+    />
+  );
+}
+
 function ModalTabButton({
   active,
   onClick,
@@ -220,7 +245,7 @@ function ModalTabButton({
       role="tab"
       aria-selected={active}
       onClick={onClick}
-      className={`-mb-px border-b-2 px-3 py-2 text-sm font-medium transition ${
+      className={`-mb-px shrink-0 border-b-2 px-3 py-2 text-sm font-medium transition ${
         active
           ? 'border-amber-600 text-amber-700'
           : 'border-transparent text-gray-500 hover:text-gray-800'
@@ -434,6 +459,13 @@ function ChaptersTab({
           <p className="text-sm text-gray-400">{t('home.loading')}…</p>
         ) : chapterDetail ? (
           <div className="space-y-6">
+            <LearningGuide
+              learning={chapterDetail.chapter.learning ?? activeChapter?.learning}
+              lang={lang}
+              compact
+              maxConcepts={4}
+              className="bg-emerald-50/40"
+            />
             <article
               className="prose max-w-none
                          prose-headings:font-semibold prose-headings:text-stone-950

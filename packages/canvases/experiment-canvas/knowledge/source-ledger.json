@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "canvasId": "experiment-canvas",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "tbi-ch01-design", "type": "resourceChapter", "tier": "formal-book", "label": "Testing Business Ideas, chapter 1: Design", "resourceSlug": "testing-business-ideas", "chapterSlug": "ch01-design" },
+    { "id": "tbi-ch02-test", "type": "resourceChapter", "tier": "formal-book", "label": "Testing Business Ideas, chapter 2: Test", "resourceSlug": "testing-business-ideas", "chapterSlug": "ch02-test" },
+    { "id": "tbi-ch03-evidence", "type": "resourceChapter", "tier": "formal-book", "label": "Testing Business Ideas, chapter 3: Evidence", "resourceSlug": "testing-business-ideas", "chapterSlug": "ch03-evidence" },
+    { "id": "strategyzer-testing-book", "type": "professionalWeb", "tier": "official-method-page", "label": "Strategyzer: Testing Business Ideas", "url": "https://www.strategyzer.com/library/testing-business-ideas-book" }
+  ],
+  "coverage": {
+    "intro": ["tbi-ch01-design", "strategyzer-testing-book"],
+    "body": ["tbi-ch01-design", "tbi-ch02-test", "tbi-ch03-evidence"],
+    "blocks": {
+      "riskiest-assumption": ["tbi-ch01-design"],
+      "falsifiable-hypothesis": ["tbi-ch01-design"],
+      "experiment-setup": ["tbi-ch02-test"],
+      "metrics-criteria": ["tbi-ch03-evidence"],
+      "results-conclusion": ["tbi-ch03-evidence"],
+      "next-steps": ["tbi-ch02-test", "tbi-ch03-evidence"]
+    }
+  }
+}

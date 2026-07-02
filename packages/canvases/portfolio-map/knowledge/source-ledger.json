@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "canvasId": "portfolio-map",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "invincible-ch01-explore", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 1: Explore", "resourceSlug": "the-invincible-company", "chapterSlug": "ch01-explore" },
+    { "id": "invincible-ch02-exploit", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 2: Exploit", "resourceSlug": "the-invincible-company", "chapterSlug": "ch02-exploit" },
+    { "id": "invincible-ch03-manage", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 3: Manage", "resourceSlug": "the-invincible-company", "chapterSlug": "ch03-manage" },
+    { "id": "strategyzer-invincible", "type": "professionalWeb", "tier": "official-method-page", "label": "Strategyzer: The Invincible Company", "url": "https://www.strategyzer.com/library/the-invincible-company" }
+  ],
+  "coverage": {
+    "intro": ["invincible-ch01-explore", "invincible-ch02-exploit", "strategyzer-invincible"],
+    "body": ["invincible-ch01-explore", "invincible-ch02-exploit", "invincible-ch03-manage"],
+    "blocks": {
+      "explore": ["invincible-ch01-explore", "invincible-ch03-manage"],
+      "exploit": ["invincible-ch02-exploit", "invincible-ch03-manage"]
+    }
+  }
+}

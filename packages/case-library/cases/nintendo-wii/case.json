@@ -52,5 +52,45 @@
   "appliesStrategyFrameworks": [
     "blue-ocean-strategy",
     "ansoff-matrix"
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "A bridge case between platform economics and blue ocean positioning",
+      "zh": "连接平台经济学和蓝海定位的桥梁案例"
+    },
+    "whyOpen": {
+      "en": "Nintendo Wii is valuable because it combines a two-sided console platform with a Blue Ocean move toward families and casual players.",
+      "zh": "任天堂 Wii 值得学，是因为它同时具备双边主机平台逻辑和面向家庭 / 轻度玩家的蓝海动作。"
+    },
+    "audience": {
+      "en": "Readers comparing platform subsidies, developer incentives, and differentiated value curves.",
+      "zh": "适合比较平台补贴、开发者激励和差异化价值曲线的读者。"
+    },
+    "keyConcepts": [
+      { "en": "Console as platform", "zh": "主机作为平台" },
+      { "en": "Subsidy side", "zh": "补贴侧" },
+      { "en": "Developer royalties", "zh": "开发者版税" },
+      { "en": "Casual noncustomers", "zh": "轻度非顾客" },
+      { "en": "Value curve divergence", "zh": "价值曲线区隔" }
+    ],
+    "commonMisreads": [
+      { "en": "Wii was not only a gimmick controller; the lower-cost hardware, broader audience, and developer economics fit together.", "zh": "Wii 不只是一个新奇手柄；低成本硬件、更广受众和开发者经济共同构成了模型。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which underserved audience would change your product requirements instead of only your marketing message?", "zh": "哪类未被服务的人群会改变你的产品要求，而不只是改变营销话术？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch02-patterns" },
+      { "type": "resourceChapter", "slug": "blue-ocean-strategy", "chapterSlug": "ch02-tools" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "blue-ocean-strategy-canvas" },
+      { "type": "case", "slug": "visa" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "platform-ecosystem-map" }
+    ]
+  }
 }

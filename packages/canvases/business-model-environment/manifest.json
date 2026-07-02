@@ -21,6 +21,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "intermediate",
+    "headline": { "en": "Pressure-test a business model against external forces", "zh": "用外部力量压力测试商业模式" },
+    "whyOpen": { "en": "Use this when a BMC looks coherent internally but may fail because of trends, industry structure, market forces, or macro conditions.", "zh": "当 BMC 内部看似合理，但可能被趋势、产业结构、市场力量或宏观条件击穿时使用。" },
+    "audience": { "en": "Teams evaluating strategy context, market assumptions, and scenario inputs.", "zh": "适合评估战略环境、市场假设和情景输入的团队。" },
+    "keyConcepts": [
+      { "en": "Key trends", "zh": "关键趋势" },
+      { "en": "Industry forces", "zh": "行业力量" },
+      { "en": "Market forces", "zh": "市场力量" },
+      { "en": "Macroeconomic forces", "zh": "宏观经济力量" }
+    ],
+    "firstSteps": [
+      { "en": "Anchor the scan to one specific BMC, not the whole economy.", "zh": "把扫描锚定到一张具体 BMC，而不是整个经济。" },
+      { "en": "Separate evidence, weak signals, and assumptions.", "zh": "区分证据、弱信号和假设。" }
+    ],
+    "outcomes": [
+      { "en": "External opportunities, threats, and assumptions to test or monitor.", "zh": "一组需要测试或监测的外部机会、威胁和假设。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which external force would make your current revenue logic fail first?", "zh": "哪股外部力量会最先击穿当前收入逻辑？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch04-strategy" },
+      { "type": "resourceChapter", "slug": "porter-competitive-strategy", "chapterSlug": "ch01-five-forces" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "scenario-matrix" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ]
+  },
   "related": ["business-model-canvas"],
   "relatedNotes": {
     "business-model-canvas": {

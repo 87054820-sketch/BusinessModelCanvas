@@ -18,7 +18,13 @@
   ],
   "publisher": "Free Press",
   "year": 1980,
-  "tags": ["competitive-strategy", "five-forces", "industry-structure", "generic-strategies", "HBS"],
+  "tags": [
+    "competitive-strategy",
+    "five-forces",
+    "industry-structure",
+    "generic-strategies",
+    "HBS"
+  ],
   "relatedCanvasDefIds": [
     "business-model-environment",
     "business-model-canvas",
@@ -44,5 +50,97 @@
     {
       "label": "迈克尔·波特 ·《竞争战略》· 华夏出版社 / 中信出版社"
     }
-  ]
+  ],
+  "learning": {
+    "level": "advanced",
+    "headline": {
+      "en": "Read industry structure before choosing a competitive move",
+      "zh": "先读懂产业结构，再选择竞争动作"
+    },
+    "whyOpen": {
+      "en": "Use this when a canvas ignores competitors, suppliers, buyers, substitutes, entry barriers, and industry evolution.",
+      "zh": "当画布忽略竞争者、供应商、买方、替代品、进入壁垒和产业演化时读这本。"
+    },
+    "audience": {
+      "en": "Strategy teams, founders entering contested markets, and product leaders making positioning and scope decisions.",
+      "zh": "适合战略团队、进入竞争市场的创业者，以及做定位和业务范围决策的产品负责人。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Five forces",
+        "zh": "五力模型"
+      },
+      {
+        "en": "Generic strategies",
+        "zh": "通用战略"
+      },
+      {
+        "en": "Competitor analysis",
+        "zh": "竞争者分析"
+      },
+      {
+        "en": "Industry evolution",
+        "zh": "产业演化"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "Porter is not a template for listing competitors; it is a way to reason about profit pressure and strategic position.",
+        "zh": "波特不是列竞争者清单的模板；它是推理利润压力和战略位置的方法。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Start with Five Forces before naming a generic strategy.",
+        "zh": "在命名通用战略前，先从五力模型开始。"
+      },
+      {
+        "en": "Use competitor signals to check whether your business model invites retaliation.",
+        "zh": "用竞争者信号检查你的商业模式是否会招致反击。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can explain where profit pressure comes from and what position your model is trying to defend.",
+        "zh": "你能解释利润压力来自哪里，以及你的模型试图防守什么位置。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which force would destroy your margins first if your model began to scale?",
+        "zh": "如果你的模型开始规模化，哪一种力量会最先侵蚀利润率？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "porter-competitive-strategy",
+        "chapterSlug": "ch01-five-forces"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "strategyFramework",
+        "slug": "porters-five-forces"
+      },
+      {
+        "type": "canvas",
+        "slug": "business-model-environment"
+      },
+      {
+        "type": "case",
+        "slug": "nucor-mini-mill-disruption"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "porter-competitive-advantage"
+      },
+      {
+        "type": "resource",
+        "slug": "christensen-innovators-dilemma"
+      }
+    ]
+  }
 }

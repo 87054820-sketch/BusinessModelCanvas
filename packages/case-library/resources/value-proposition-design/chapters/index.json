@@ -2,41 +2,332 @@
   {
     "slug": "ch01-canvas",
     "order": 1,
-    "title": { "en": "Canvas: Value Proposition Canvas", "zh": "画布：价值主张画布" },
+    "title": {
+      "en": "Canvas: Value Proposition Canvas",
+      "zh": "画布：价值主张画布"
+    },
     "summary": {
       "en": "The VPC zooms into two BMC building blocks — Value Propositions and Customer Segments. Two sides: the Customer Profile (jobs, pains, gains) and the Value Map (products & services, pain relievers, gain creators). Fit happens when the map addresses what matters to the profile. This is where BMG's 'customer insights' technique becomes operational.",
       "zh": "VPC 把 BMC 的两块放大了——价值主张和客户细分。两侧：客户档案（任务、痛点、收益）和价值地图（产品和服务、痛点缓解方案、收益创造方案）。当地图对准了档案里重要的东西，就达成了契合。这是 BMG「客户洞察」技术落地的画布。"
     },
-    "relatedCanvasDefIds": ["value-proposition-canvas", "business-model-canvas"]
+    "relatedCanvasDefIds": [
+      "value-proposition-canvas",
+      "business-model-canvas"
+    ],
+    "learning": {
+      "level": "beginner",
+      "headline": {
+        "en": "Read Canvas: Value Proposition Canvas as a practical source chapter",
+        "zh": "把「画布：价值主张画布」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "The VPC zooms into two BMC building blocks — Value Propositions and Customer Segments. Two sides: the Customer Profile (jobs, pains, gains) and the Value Map (products & services, pain relievers, gain creators). Fit happens when the map addresses what matters to the profile. This is where BMG's 'customer insights' technique becomes operational.",
+        "zh": "VPC 把 BMC 的两块放大了——价值主张和客户细分。两侧：客户档案（任务、痛点、收益）和价值地图（产品和服务、痛点缓解方案、收益创造方案）。当地图对准了档案里重要的东西，就达成了契合。这是 BMG「客户洞察」技术落地的画布。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Value Proposition Canvas",
+          "zh": "价值主张画布"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "value-proposition-design",
+          "chapterSlug": "ch01-canvas"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "value-proposition-canvas"
+        },
+        {
+          "type": "canvas",
+          "slug": "business-model-canvas"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "value-proposition-canvas"
+        }
+      ]
+    }
   },
   {
     "slug": "ch02-design",
     "order": 2,
-    "title": { "en": "Design: From Customer Profile to Value Map", "zh": "设计：从客户档案到价值地图" },
+    "title": {
+      "en": "Design: From Customer Profile to Value Map",
+      "zh": "设计：从客户档案到价值地图"
+    },
     "summary": {
       "en": "A structured design process: start with the customer profile (jobs-to-be-done, pains, gains, ranked by importance and intensity), then design the value map to address them. Key insight — don't try to solve all pains and gains; focus on the ones that matter most and where you can be distinctly better.",
       "zh": "一个结构化的设计流程：从客户档案开始（待完成任务、痛点、收益，按重要性和强度排序），然后设计价值地图来应对。关键洞见——不要试图解决所有痛点和收益，聚焦那些最重要、并且你能明显做得比人好的。"
     },
-    "relatedCanvasDefIds": ["value-proposition-canvas", "jobs-to-be-done", "empathy-map"]
+    "relatedCanvasDefIds": [
+      "value-proposition-canvas",
+      "jobs-to-be-done",
+      "empathy-map"
+    ],
+    "learning": {
+      "level": "beginner",
+      "headline": {
+        "en": "Read Design: From Customer Profile to Value Map as a practical source chapter",
+        "zh": "把「设计：从客户档案到价值地图」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "A structured design process: start with the customer profile (jobs-to-be-done, pains, gains, ranked by importance and intensity), then design the value map to address them. Key insight — don't try to solve all pains and gains; focus on the ones that matter most and where you can be distinctly better.",
+        "zh": "一个结构化的设计流程：从客户档案开始（待完成任务、痛点、收益，按重要性和强度排序），然后设计价值地图来应对。关键洞见——不要试图解决所有痛点和收益，聚焦那些最重要、并且你能明显做得比人好的。"
+      },
+      "keyConcepts": [
+        {
+          "en": "From Customer Profile to Value Map",
+          "zh": "从客户档案到价值地图"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "value-proposition-design",
+          "chapterSlug": "ch02-design"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "value-proposition-canvas"
+        },
+        {
+          "type": "canvas",
+          "slug": "jobs-to-be-done"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "value-proposition-canvas"
+        }
+      ]
+    }
   },
   {
     "slug": "ch03-test",
     "order": 3,
-    "title": { "en": "Test: Reducing Uncertainty Through Experiments", "zh": "验证：通过实验减少不确定性" },
+    "title": {
+      "en": "Test: Reducing Uncertainty Through Experiments",
+      "zh": "验证：通过实验减少不确定性"
+    },
     "summary": {
       "en": "Each element of the VPC is a hypothesis until tested. Test customer jobs (do they really have this job?), pains (how severe?), gains (how desirable?), and the value proposition itself (does it actually relieve pains and create gains?). Introduces the experiment library as a structured way to reduce risk before scaling.",
       "zh": "VPC 上的每一个元素在被验证之前都是假设。验证客户任务（他们真有这个任务吗？）、痛点（多严重？）、收益（多渴望？）以及价值主张本身（它真的能缓解痛点、创造收益吗？）。引入实验库作为在规模化之前减少风险的体系化方法。"
     },
-    "relatedExperimentSlugs": ["customer-interview", "online-survey", "clickable-prototype", "smoke-test"]
+    "relatedExperimentSlugs": [
+      "customer-interview",
+      "online-survey",
+      "clickable-prototype",
+      "smoke-test"
+    ],
+    "learning": {
+      "level": "beginner",
+      "headline": {
+        "en": "Read Test: Reducing Uncertainty Through Experiments as a practical source chapter",
+        "zh": "把「验证：通过实验减少不确定性」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Each element of the VPC is a hypothesis until tested. Test customer jobs (do they really have this job?), pains (how severe?), gains (how desirable?), and the value proposition itself (does it actually relieve pains and create gains?). Introduces the experiment library as a structured way to reduce risk before scaling.",
+        "zh": "VPC 上的每一个元素在被验证之前都是假设。验证客户任务（他们真有这个任务吗？）、痛点（多严重？）、收益（多渴望？）以及价值主张本身（它真的能缓解痛点、创造收益吗？）。引入实验库作为在规模化之前减少风险的体系化方法。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Reducing Uncertainty Through Experiments",
+          "zh": "通过实验减少不确定性"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "value-proposition-design",
+          "chapterSlug": "ch03-test"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "experiment",
+          "slug": "customer-interview"
+        },
+        {
+          "type": "experiment",
+          "slug": "online-survey"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "value-proposition-canvas"
+        }
+      ]
+    }
   },
   {
     "slug": "ch04-align",
     "order": 4,
-    "title": { "en": "Align: From Value Proposition to Business Model", "zh": "对齐：从价值主张到商业模式" },
+    "title": {
+      "en": "Align: From Value Proposition to Business Model",
+      "zh": "对齐：从价值主张到商业模式"
+    },
     "summary": {
       "en": "A great value proposition without a sustainable business model is a hobby. This chapter shows how VPC outputs feed back into the BMC — channels, customer relationships, revenue streams, key resources, and cost structure must all align with the validated value proposition. Fit is three-layered: problem-solution fit → product-market fit → business-model fit.",
       "zh": "一个很好的价值主张若没有可持续的商业模式，只是一个爱好。本章展示 VPC 的产出如何回填到 BMC 中——渠道、客户关系、收入来源、核心资源和成本结构都必须与经验证的价值主张对齐。契合是三层结构：问题-解决方案契合 → 产品-市场契合 → 商业模式契合。"
     },
-    "relatedCanvasDefIds": ["business-model-canvas", "business-model-environment"]
+    "relatedCanvasDefIds": [
+      "business-model-canvas",
+      "business-model-environment"
+    ],
+    "learning": {
+      "level": "beginner",
+      "headline": {
+        "en": "Read Align: From Value Proposition to Business Model as a practical source chapter",
+        "zh": "把「对齐：从价值主张到商业模式」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "A great value proposition without a sustainable business model is a hobby. This chapter shows how VPC outputs feed back into the BMC — channels, customer relationships, revenue streams, key resources, and cost structure must all align with the validated value proposition. Fit is three-layered: problem-solution fit → product-market fit → business-model fit.",
+        "zh": "一个很好的价值主张若没有可持续的商业模式，只是一个爱好。本章展示 VPC 的产出如何回填到 BMC 中——渠道、客户关系、收入来源、核心资源和成本结构都必须与经验证的价值主张对齐。契合是三层结构：问题-解决方案契合 → 产品-市场契合 → 商业模式契合。"
+      },
+      "keyConcepts": [
+        {
+          "en": "From Value Proposition to Business Model",
+          "zh": "从价值主张到商业模式"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "value-proposition-design",
+          "chapterSlug": "ch04-align"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "business-model-canvas"
+        },
+        {
+          "type": "canvas",
+          "slug": "business-model-environment"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "value-proposition-canvas"
+        }
+      ]
+    }
   }
 ]

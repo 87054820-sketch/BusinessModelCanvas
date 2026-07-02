@@ -48,7 +48,7 @@ PinGarden 里的 Skill 就是这样一个东西。它不深奥，不教你“商
 - 什么时候该建议对比标准 Pattern；
 - 怎么在修改前自动打快照。
 
-这些内容写在 `.claude/skills/pingarden/` 里，有 `SKILL.md`、有 `workflows/`、有每个画布的 `canvases/<id>.<lang>.md`。
+这些内容写在 `.agents/skills/pingarden/` 这一份唯一的 repo 内 skill 里，有 `SKILL.md`、有 `workflows/`、有每个画布的 `canvases/<id>.<lang>.md`。Claude Code 通过 `.claude/skills/pingarden` symlink 读同一份内容。
 
 所以 PinGarden 不是“一个白板 + 一个 Skill”，而是：
 

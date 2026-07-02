@@ -13,13 +13,33 @@
     "en": "Use this as the operating manual for Experiment Canvas and innovation metrics: it explains how to choose evidence, define pass/fail criteria, and learn fast.",
     "zh": "它是实验画布和创新指标的操作手册：帮助你选择证据、定义通过/失败标准，并让团队更快学习。"
   },
-  "authors": ["David J. Bland", "Alexander Osterwalder"],
+  "authors": [
+    "David J. Bland",
+    "Alexander Osterwalder"
+  ],
   "publisher": "Wiley / Strategyzer",
   "year": 2019,
-  "tags": ["experiments", "evidence", "validation"],
-  "relatedCanvasDefIds": ["experiment-canvas", "evidence-scorecard", "value-proposition-canvas", "business-model-canvas"],
-  "relatedExperimentSlugs": ["customer-interview", "clickable-prototype", "smoke-test", "wizard-of-oz", "pre-sale"],
-  "relatedStrategyFrameworkSlugs": ["innovation-metrics"],
+  "tags": [
+    "experiments",
+    "evidence",
+    "validation"
+  ],
+  "relatedCanvasDefIds": [
+    "experiment-canvas",
+    "evidence-scorecard",
+    "value-proposition-canvas",
+    "business-model-canvas"
+  ],
+  "relatedExperimentSlugs": [
+    "customer-interview",
+    "clickable-prototype",
+    "smoke-test",
+    "wizard-of-oz",
+    "pre-sale"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "innovation-metrics"
+  ],
   "sources": [
     {
       "label": "David J. Bland & Alexander Osterwalder · Testing Business Ideas · Wiley · 2019"
@@ -28,5 +48,97 @@
       "label": "Strategyzer · Testing Business Ideas book page",
       "url": "https://www.strategyzer.com/library/testing-business-ideas-book"
     }
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Choose experiments that turn assumptions into evidence",
+      "zh": "选择实验，把假设转成证据"
+    },
+    "whyOpen": {
+      "en": "Open this when a canvas is full of guesses. It helps you name the riskiest assumptions, choose experiments, and interpret evidence quality.",
+      "zh": "当画布上充满猜测时打开这本：它帮助你识别最高风险假设、选择实验，并判断证据质量。"
+    },
+    "audience": {
+      "en": "Product teams, founders, growth teams, and innovation teams preparing to test before scaling.",
+      "zh": "适合准备在规模化前验证的产品团队、创业者、增长团队和创新团队。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Assumption mapping",
+        "zh": "假设映射"
+      },
+      {
+        "en": "Experiment design",
+        "zh": "实验设计"
+      },
+      {
+        "en": "Evidence strength",
+        "zh": "证据强度"
+      },
+      {
+        "en": "Learning velocity",
+        "zh": "学习速度"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "An experiment is not useful because it is clever; it is useful when it reduces the right risk.",
+        "zh": "实验有价值不是因为设计巧妙，而是因为它降低了正确的风险。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Mark the riskiest canvas assumptions before choosing an experiment.",
+        "zh": "先标出画布上风险最高的假设，再选择实验。"
+      },
+      {
+        "en": "Use evidence strength to avoid treating weak signals as validation.",
+        "zh": "用证据强度避免把弱信号当成验证成功。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can choose a next experiment and define what evidence would make you pivot, persevere, or stop.",
+        "zh": "你能选择下一步实验，并定义什么证据会让你转向、继续或停止。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "What is the cheapest experiment that can disprove your riskiest assumption this week?",
+        "zh": "本周能推翻最高风险假设的最低成本实验是什么？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "testing-business-ideas",
+        "chapterSlug": "ch01-design"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "experiment-canvas"
+      },
+      {
+        "type": "canvas",
+        "slug": "evidence-scorecard"
+      },
+      {
+        "type": "experiment",
+        "slug": "smoke-test"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "the-invincible-company"
+      },
+      {
+        "type": "resource",
+        "slug": "value-proposition-design"
+      }
+    ]
+  }
 }

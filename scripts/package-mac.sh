@@ -128,12 +128,12 @@ pnpm --filter @pingarden/cli run build
 log "Validating case library (packages/case-library/)"
 node apps/cli/dist/index.js case validate
 
-# The repo commits a copy of the generated skill tree at
-# <repo>/.claude/skills/pingarden/ so it's browsable on GitHub and
-# auto-activates when Claude Code is run inside this repo. Regenerating
-# it here makes the committed skill match the canvas bundles shipped in
-# the DMG — no chance of skill drift after a release.
-log "Refreshing project-local Claude skill (.claude/skills/pingarden/)"
+# The repo commits one canonical generated skill tree at
+# <repo>/.agents/skills/pingarden/. Claude Code discovers it via the
+# .claude/skills/pingarden symlink created by skill install --local.
+# Regenerating it here makes the committed skill match the canvas bundles
+# shipped in the DMG — no chance of skill drift after a release.
+log "Refreshing project-local agent skill (.agents/skills/pingarden/ + .claude symlink)"
 node apps/cli/dist/index.js skill install --local
 
 # Build a portable zip of the skill so it can be handed to users who want
@@ -172,8 +172,11 @@ require_file "apps/cli/assets/canvases/business-model-canvas/manifest.json"
 # Project-local skill copy must be in sync with the canvas bundles we
 # just built — committing a stale skill defeats the purpose of keeping a
 # repo-side copy.
-require_file ".claude/skills/pingarden/SKILL.md"
-require_dir ".claude/skills/pingarden/canvases"
+require_file ".agents/skills/pingarden/SKILL.md"
+require_dir ".agents/skills/pingarden/canvases"
+if [ ! -L ".claude/skills/pingarden" ]; then
+  fail ".claude/skills/pingarden must be a symlink to .agents/skills/pingarden."
+fi
 # The skill zip is the portable artifact for non-Claude-Code agents.
 require_file "$SKILL_ZIP"
 require_file "apps/desktop/.package/kimi-cli/bin/kimi"

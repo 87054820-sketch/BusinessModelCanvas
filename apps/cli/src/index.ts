@@ -53,6 +53,7 @@ import {
   StrategyFrameworkGetCommand,
   StrategyFrameworkListCommand,
 } from './commands/strategyFramework.js';
+import { ReferenceResolveCommand } from './commands/reference.js';
 
 import {
   ResourceChapterReadCommand,
@@ -138,6 +139,9 @@ cli.register(ResourceListCommand);
 cli.register(ResourceGetCommand);
 cli.register(ResourceChaptersCommand);
 cli.register(ResourceChapterReadCommand);
+
+// AI/Copilot reference taxonomy helpers
+cli.register(ReferenceResolveCommand);
 
 // Skill
 cli.register(SkillBuildCommand);

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "canvasId": "innovation-culture-map",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "invincible-ch01-explore", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 1: Explore", "resourceSlug": "the-invincible-company", "chapterSlug": "ch01-explore" },
+    { "id": "invincible-ch03-manage", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 3: Manage", "resourceSlug": "the-invincible-company", "chapterSlug": "ch03-manage" },
+    { "id": "tbi-ch04-manage", "type": "resourceChapter", "tier": "formal-book", "label": "Testing Business Ideas, chapter 4: Manage", "resourceSlug": "testing-business-ideas", "chapterSlug": "ch04-manage" }
+  ],
+  "coverage": {
+    "intro": ["invincible-ch03-manage", "tbi-ch04-manage"],
+    "body": ["invincible-ch01-explore", "invincible-ch03-manage", "tbi-ch04-manage"],
+    "blocks": {
+      "current-outcomes": ["invincible-ch03-manage"],
+      "desired-outcomes": ["invincible-ch03-manage"],
+      "current-behaviors": ["tbi-ch04-manage"],
+      "desired-behaviors": ["tbi-ch04-manage"],
+      "current-enablers-blockers": ["invincible-ch03-manage", "tbi-ch04-manage"],
+      "desired-enablers-blockers": ["invincible-ch03-manage", "tbi-ch04-manage"]
+    }
+  }
+}

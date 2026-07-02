@@ -25,6 +25,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "beginner",
+    "headline": { "en": "See when value and friction happen across the customer's path", "zh": "看清客户路径上价值与摩擦发生在何处" },
+    "whyOpen": { "en": "Use this when the team knows the customer but cannot see where needs, pain, and emotion change over time.", "zh": "当团队知道客户是谁，却看不清需求、痛点和情绪如何随阶段变化时使用。" },
+    "audience": { "en": "Teams improving acquisition, onboarding, service, renewal, or any multi-step customer experience.", "zh": "适合改进入门、转化、交付、服务、续约等多步骤体验的团队。" },
+    "keyConcepts": [
+      { "en": "Stages", "zh": "阶段" },
+      { "en": "Needs", "zh": "需求" },
+      { "en": "Key moment", "zh": "关键时刻" },
+      { "en": "Satisfaction curve", "zh": "满意度曲线" }
+    ],
+    "firstSteps": [
+      { "en": "Choose one persona and one job before mapping the path.", "zh": "先选一个画像和一个工作，再画路径。" },
+      { "en": "Mark evidence and assumptions separately at each stage.", "zh": "每个阶段分开标注证据和假设。" }
+    ],
+    "outcomes": [
+      { "en": "A prioritized list of experience gaps, moments of truth, and experiment opportunities.", "zh": "一组排序过的体验缺口、关键时刻和实验机会。" }
+    ],
+    "practicePrompts": [
+      { "en": "At which stage does the promised value become visible to the customer?", "zh": "承诺的价值在哪个阶段才被客户真正看见？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch02-design" },
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch03-design" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "empathy-map" },
+      { "type": "canvas", "slug": "value-proposition-canvas" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ]
+  },
   "related": ["empathy-map", "value-proposition-canvas", "jobs-to-be-done"],
   "relatedNotes": {
     "empathy-map": {

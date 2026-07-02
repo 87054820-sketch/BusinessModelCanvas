@@ -13,13 +13,123 @@
     "en": "Use this when the team is trapped in competitor comparison. It helps turn a BMC or value proposition into a differentiated strategic profile rather than another feature-by-feature race.",
     "zh": "当团队陷入竞品对比和功能竞赛时，推荐用这本。它能把 BMC 或价值主张转换成差异化战略轮廓，而不是继续在同一条赛道上加功能。"
   },
-  "authors": ["W. Chan Kim", "Renée Mauborgne"],
+  "authors": [
+    "W. Chan Kim",
+    "Renée Mauborgne"
+  ],
   "publisher": "Harvard Business Review Press",
   "year": 2015,
-  "tags": ["blue-ocean", "value-innovation", "strategy-canvas"],
-  "relatedCanvasDefIds": ["blue-ocean-strategy-canvas", "business-model-canvas", "value-proposition-canvas", "design-criteria-canvas"],
-  "relatedCaseSlugs": ["cirque-du-soleil", "yellow-tail", "qb-house", "nintendo-wii"],
-  "relatedStrategyFrameworkSlugs": ["blue-ocean-strategy"],
+  "tags": [
+    "blue-ocean",
+    "value-innovation",
+    "strategy-canvas"
+  ],
+  "relatedCanvasDefIds": [
+    "blue-ocean-strategy-canvas",
+    "business-model-canvas",
+    "value-proposition-canvas",
+    "design-criteria-canvas"
+  ],
+  "relatedCaseSlugs": [
+    "cirque-du-soleil",
+    "yellow-tail",
+    "qb-house",
+    "nintendo-wii"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "blue-ocean-strategy"
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "A practical lens for escaping feature-by-feature competition",
+      "zh": "摆脱功能竞赛的实践视角"
+    },
+    "whyOpen": {
+      "en": "Open this when a team can name competitors but cannot name a different value curve. The book connects value innovation, strategy canvas, ERIC moves, and noncustomers.",
+      "zh": "当团队能说出竞品，却说不出不同的价值曲线时读它：这本书把价值创新、战略画布、四步动作和非顾客连接起来。"
+    },
+    "audience": {
+      "en": "Teams redesigning an offering, category, pricing model, or customer experience.",
+      "zh": "适合正在重设计产品、品类、定价模型或客户体验的团队。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Value innovation",
+        "zh": "价值创新"
+      },
+      {
+        "en": "Strategy canvas",
+        "zh": "战略画布"
+      },
+      {
+        "en": "Four actions framework",
+        "zh": "四步动作框架"
+      },
+      {
+        "en": "Noncustomers",
+        "zh": "非顾客"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Read chapters 1-2 with the Strategy Canvas open.",
+        "zh": "打开战略画布同步阅读第 1-2 章。"
+      },
+      {
+        "en": "Plot existing competitors before creating your own curve.",
+        "zh": "先画出现有竞争者，再创造自己的曲线。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can describe the current value curve and propose one eliminate/reduce/raise/create move.",
+        "zh": "你能描述当前价值曲线，并提出一个剔除 / 减少 / 提升 / 创造动作。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which noncustomer group rejects your industry for a reason incumbents consider normal?",
+        "zh": "哪类非顾客因为行业认为“正常”的理由而拒绝你所在行业？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "blue-ocean-strategy",
+        "chapterSlug": "ch01-intro"
+      },
+      {
+        "type": "resourceChapter",
+        "slug": "blue-ocean-strategy",
+        "chapterSlug": "ch02-tools"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "blue-ocean-strategy-canvas"
+      },
+      {
+        "type": "case",
+        "slug": "yellow-tail"
+      },
+      {
+        "type": "case",
+        "slug": "cirque-du-soleil"
+      },
+      {
+        "type": "case",
+        "slug": "nintendo-wii"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "canvas",
+        "slug": "business-model-canvas"
+      }
+    ]
+  },
   "sources": [
     {
       "label": "W. Chan Kim & Renée Mauborgne · Blue Ocean Strategy, Expanded Edition · Harvard Business Review Press · 2015"

@@ -21,6 +21,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "beginner",
+    "headline": { "en": "Describe progress from the customer's situation", "zh": "从客户情境出发描述他们想取得的进展" },
+    "whyOpen": { "en": "Use this when a persona or VPC still sounds like demographics or features instead of the progress a customer is trying to make.", "zh": "当画像或 VPC 仍像人口属性或功能清单，而不是客户想取得的进展时使用。" },
+    "audience": { "en": "Teams clarifying the customer job before writing value propositions, offers, or experiments.", "zh": "适合在写价值主张、产品方案或实验前澄清客户工作的人。" },
+    "keyConcepts": [
+      { "en": "Situation", "zh": "情境" },
+      { "en": "Motivation", "zh": "动机" },
+      { "en": "Ideal outcome", "zh": "理想结果" },
+      { "en": "Functional, emotional, and social jobs", "zh": "功能、情感与社会性工作" }
+    ],
+    "firstSteps": [
+      { "en": "Write the moment that triggers the job before naming the solution.", "zh": "先写触发工作的时刻，再写解决方案。" },
+      { "en": "Use interview evidence to separate real progress from internal feature language.", "zh": "用访谈证据区分真实进展和内部功能语言。" }
+    ],
+    "outcomes": [
+      { "en": "A customer job statement that can drive VPC, Ad-Lib, and experiments.", "zh": "一条可驱动 VPC、Ad-Lib 和实验的客户工作陈述。" }
+    ],
+    "practicePrompts": [
+      { "en": "What happens in the customer's life right before this job becomes urgent?", "zh": "在这个工作变得紧迫之前，客户生活里发生了什么？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch01-canvas" },
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch02-design" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "empathy-map" },
+      { "type": "canvas", "slug": "value-proposition-canvas" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "ad-lib-value-proposition" }
+    ]
+  },
   "defaultColorLegend": [
     {
       "hex": "#FCF1A8",

@@ -21,6 +21,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "beginner",
+    "headline": { "en": "Turn customer observations into a grounded persona", "zh": "把客户观察转成有证据的具体画像" },
+    "whyOpen": { "en": "Use this before VPC or journey mapping when the customer still feels abstract.", "zh": "当客户还很抽象、还不能进入 VPC 或旅程图时使用。" },
+    "audience": { "en": "Teams converting interviews, field notes, and sales conversations into customer understanding.", "zh": "适合把访谈、现场观察和销售沟通转成客户理解的团队。" },
+    "keyConcepts": [
+      { "en": "Persona", "zh": "画像" },
+      { "en": "Think and feel", "zh": "所思所感" },
+      { "en": "Say and do", "zh": "所说所做" },
+      { "en": "Pain and gain", "zh": "痛点与收益" }
+    ],
+    "firstSteps": [
+      { "en": "Anchor the map to one person or segment, not an average user.", "zh": "锚定一个人或细分，而不是平均用户。" },
+      { "en": "Separate observed behavior from team interpretation.", "zh": "把观察到的行为和团队解释分开。" }
+    ],
+    "outcomes": [
+      { "en": "A grounded customer profile that can feed VPC, JTBD, or journey work.", "zh": "一份可进入 VPC、JTBD 或旅程图的客户画像。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which sticky is an observation, and which is only your interpretation?", "zh": "哪张便签是观察，哪张只是你的解释？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch03-design" },
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch02-design" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "value-proposition-canvas" },
+      { "type": "canvas", "slug": "jobs-to-be-done" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "customer-journey" }
+    ]
+  },
   "related": ["value-proposition-canvas", "jobs-to-be-done", "customer-journey"],
   "relatedNotes": {
     "value-proposition-canvas": {

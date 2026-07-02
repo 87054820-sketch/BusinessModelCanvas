@@ -12,6 +12,7 @@ const realKimiKey = process.env.PINGARDEN_SMOKE_KIMI_API_KEY;
 const realKimiQuestion = args.realKimiQuestion ?? process.env.PINGARDEN_SMOKE_KIMI_QUESTION ?? '请用两句话解释蓝海战略，并给出一个 PinGarden 策略库里的真实案例。';
 
 const results = [];
+let smokeAccessToken = '';
 
 async function main() {
   await run('cloud-health', async () => {
@@ -162,7 +163,10 @@ async function fetchText(path, init) {
 async function fetchSseHead(path, jsonBody) {
   const res = await fetchWithTimeout(`${baseUrl}${path}`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${await getSmokeAccessToken()}`,
+    },
     body: JSON.stringify(jsonBody),
   });
   const contentType = res.headers.get('content-type') ?? '';
@@ -175,7 +179,10 @@ async function fetchSseHead(path, jsonBody) {
 async function fetchSseUntilTerminal(path, jsonBody) {
   const res = await fetchWithTimeout(`${baseUrl}${path}`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${await getSmokeAccessToken()}`,
+    },
     body: JSON.stringify(jsonBody),
   });
   const contentType = res.headers.get('content-type') ?? '';
@@ -223,6 +230,18 @@ async function fetchSseUntilTerminal(path, jsonBody) {
   }
 
   return { sawDelta, done, error, text: safeMessage(text) };
+}
+
+async function getSmokeAccessToken() {
+  if (smokeAccessToken) return smokeAccessToken;
+  const json = await fetchJson('/auth/local/start', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ deviceId: 'pingarden-cloud-smoke-device' }),
+  });
+  assert(typeof json.accessToken === 'string' && json.accessToken.length > 20, 'Local smoke login did not return an access token');
+  smokeAccessToken = json.accessToken;
+  return smokeAccessToken;
 }
 
 async function fetchWithTimeout(url, init) {

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "canvasId": "scenario-matrix",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    {
+      "id": "long-view-ch02",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "The Art of the Long View, chapter 2: Scenarios",
+      "resourceSlug": "the-art-of-the-long-view",
+      "chapterSlug": "ch02-scenarios"
+    },
+    {
+      "id": "long-view-ch03",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "The Art of the Long View, chapter 3: Driving Forces",
+      "resourceSlug": "the-art-of-the-long-view",
+      "chapterSlug": "ch03-driving"
+    },
+    {
+      "id": "long-view-ch04",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "The Art of the Long View, chapter 4: Scenario Logics",
+      "resourceSlug": "the-art-of-the-long-view",
+      "chapterSlug": "ch04-logics"
+    },
+    {
+      "id": "long-view-ch06",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "The Art of the Long View, chapter 6: Implications",
+      "resourceSlug": "the-art-of-the-long-view",
+      "chapterSlug": "ch06-implications"
+    },
+    {
+      "id": "scenario-org-ch01",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Scenario Planning in Organizations, chapter 1: Introduction",
+      "resourceSlug": "scenario-planning-in-organizations",
+      "chapterSlug": "ch01-intro"
+    },
+    {
+      "id": "scenario-org-ch03",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Scenario Planning in Organizations, chapter 3: Performance System",
+      "resourceSlug": "scenario-planning-in-organizations",
+      "chapterSlug": "ch03-performance"
+    },
+    {
+      "id": "hbr-strategy-uncertainty",
+      "type": "professionalWeb",
+      "tier": "professional-institution",
+      "label": "Harvard Business Review: Strategy Under Uncertainty",
+      "url": "https://hbr.org/1997/11/strategy-under-uncertainty"
+    }
+  ],
+  "coverage": {
+    "intro": ["long-view-ch02", "scenario-org-ch01", "hbr-strategy-uncertainty"],
+    "body": ["long-view-ch03", "long-view-ch04", "long-view-ch06", "scenario-org-ch03", "hbr-strategy-uncertainty"],
+    "blocks": {
+      "uncertainty-a": ["long-view-ch03", "long-view-ch04"],
+      "uncertainty-b": ["long-view-ch03", "long-view-ch04"],
+      "scenario-1": ["long-view-ch02", "long-view-ch04"],
+      "scenario-2": ["long-view-ch02", "long-view-ch04"],
+      "scenario-3": ["long-view-ch02", "long-view-ch04"],
+      "scenario-4": ["long-view-ch02", "long-view-ch04"],
+      "robust-moves": ["long-view-ch06", "scenario-org-ch03"]
+    }
+  }
+}

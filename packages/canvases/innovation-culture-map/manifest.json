@@ -24,6 +24,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "intermediate",
+    "headline": { "en": "Diagnose whether culture supports repeatable innovation", "zh": "诊断文化是否支持持续创新" },
+    "whyOpen": { "en": "Use this when innovation stalls because incentives, behaviors, or blockers make experimentation hard.", "zh": "当创新因为激励、行为或阻碍因素而难以实验时使用。" },
+    "audience": { "en": "Leaders and venture teams improving the management system around innovation.", "zh": "适合改善创新管理系统的领导者和创新团队。" },
+    "keyConcepts": [
+      { "en": "Current behavior", "zh": "当前行为" },
+      { "en": "Desired behavior", "zh": "期望行为" },
+      { "en": "Enablers and blockers", "zh": "促进因素与阻碍因素" },
+      { "en": "Learning culture", "zh": "学习文化" }
+    ],
+    "firstSteps": [
+      { "en": "Describe observed behaviors before judging values.", "zh": "先描述观察到的行为，再判断价值观。" },
+      { "en": "Name one management system change that would make experimentation easier.", "zh": "写出一个能让实验更容易的管理系统改变。" }
+    ],
+    "outcomes": [
+      { "en": "A behavior-change backlog for making exploration measurable and repeatable.", "zh": "一份让探索可衡量、可重复的行为改变 backlog。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which reward currently makes teams hide uncertainty?", "zh": "哪种奖励机制正在让团队隐藏不确定性？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "the-invincible-company", "chapterSlug": "ch03-manage" },
+      { "type": "resourceChapter", "slug": "testing-business-ideas", "chapterSlug": "ch04-manage" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "portfolio-map" },
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ]
+  },
   "related": ["portfolio-map", "experiment-canvas", "business-model-canvas"],
   "relatedNotes": {
     "portfolio-map": {

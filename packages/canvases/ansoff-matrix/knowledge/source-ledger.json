@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "canvasId": "ansoff-matrix",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "bmg-ch04-strategy", "type": "resourceChapter", "tier": "formal-book", "label": "Business Model Generation, chapter 4: Strategy", "resourceSlug": "business-model-generation", "chapterSlug": "ch04-strategy" },
+    { "id": "porter-cs-ch02", "type": "resourceChapter", "tier": "formal-book", "label": "Competitive Strategy, chapter 2: Generic Strategies", "resourceSlug": "porter-competitive-strategy", "chapterSlug": "ch02-generic-strategies" },
+    { "id": "porter-cs-ch07", "type": "resourceChapter", "tier": "formal-book", "label": "Competitive Strategy, chapter 7: Industry Evolution", "resourceSlug": "porter-competitive-strategy", "chapterSlug": "ch07-industry-evolution" },
+    { "id": "hbr-diversification", "type": "professionalWeb", "tier": "professional-institution", "label": "Harvard Business Review: Diversification strategy reference", "url": "https://hbr.org/1957/09/strategies-for-diversification" }
+  ],
+  "coverage": {
+    "intro": ["bmg-ch04-strategy", "hbr-diversification"],
+    "body": ["bmg-ch04-strategy", "porter-cs-ch02", "porter-cs-ch07"],
+    "blocks": {
+      "market-development": ["porter-cs-ch07", "hbr-diversification"],
+      "diversification": ["hbr-diversification", "bmg-ch04-strategy"],
+      "market-penetration": ["porter-cs-ch02", "bmg-ch04-strategy"],
+      "product-development": ["porter-cs-ch07", "bmg-ch04-strategy"],
+      "growth-rationale": ["bmg-ch04-strategy", "porter-cs-ch02"]
+    }
+  }
+}

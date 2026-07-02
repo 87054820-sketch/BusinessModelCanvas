@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "canvasId": "blue-ocean-strategy-canvas",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    {
+      "id": "bos-ch01-intro",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Blue Ocean Strategy, chapter 1: Value Innovation",
+      "resourceSlug": "blue-ocean-strategy",
+      "chapterSlug": "ch01-intro"
+    },
+    {
+      "id": "bos-ch02-tools",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Blue Ocean Strategy, chapter 2: Analytical Tools and Frameworks",
+      "resourceSlug": "blue-ocean-strategy",
+      "chapterSlug": "ch02-tools"
+    },
+    {
+      "id": "bos-ch05-noncustomers",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Blue Ocean Strategy, chapter 5: Three Tiers of Noncustomers",
+      "resourceSlug": "blue-ocean-strategy",
+      "chapterSlug": "ch05-reach"
+    },
+    {
+      "id": "blue-ocean-shift-ch03",
+      "type": "resourceChapter",
+      "tier": "formal-book",
+      "label": "Blue Ocean Shift, chapter 3: Five-Step Process",
+      "resourceSlug": "blue-ocean-shift",
+      "chapterSlug": "ch03-process"
+    },
+    {
+      "id": "blue-ocean-strategy-canvas-page",
+      "type": "professionalWeb",
+      "tier": "official-method-page",
+      "label": "Blue Ocean Strategy: Strategy Canvas tool page",
+      "url": "https://www.blueoceanstrategy.com/tools/strategy-canvas/"
+    }
+  ],
+  "coverage": {
+    "intro": ["bos-ch01-intro", "bos-ch02-tools", "blue-ocean-strategy-canvas-page"],
+    "body": ["bos-ch02-tools", "bos-ch05-noncustomers", "blue-ocean-shift-ch03", "blue-ocean-strategy-canvas-page"],
+    "blocks": {
+      "chart-area": ["bos-ch02-tools", "bos-ch05-noncustomers", "blue-ocean-shift-ch03", "blue-ocean-strategy-canvas-page"]
+    }
+  }
+}

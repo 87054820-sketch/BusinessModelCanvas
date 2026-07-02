@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "canvasId": "empathy-map",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "bmg-ch03-design", "type": "resourceChapter", "tier": "formal-book", "label": "Business Model Generation, chapter 3: Design", "resourceSlug": "business-model-generation", "chapterSlug": "ch03-design" },
+    { "id": "vpd-ch02-design", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 2: Design", "resourceSlug": "value-proposition-design", "chapterSlug": "ch02-design" }
+  ],
+  "coverage": {
+    "intro": ["bmg-ch03-design", "vpd-ch02-design"],
+    "body": ["bmg-ch03-design", "vpd-ch02-design"],
+    "blocks": {
+      "persona": ["bmg-ch03-design", "vpd-ch02-design"],
+      "think-and-feel": ["bmg-ch03-design"],
+      "see": ["bmg-ch03-design"],
+      "say-and-do": ["bmg-ch03-design"],
+      "hear": ["bmg-ch03-design"],
+      "pain": ["vpd-ch02-design"],
+      "gain": ["vpd-ch02-design"]
+    }
+  }
+}

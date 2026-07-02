@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "canvasId": "jobs-to-be-done",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "vpd-ch01-canvas", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 1: Canvas", "resourceSlug": "value-proposition-design", "chapterSlug": "ch01-canvas" },
+    { "id": "vpd-ch02-design", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 2: Design", "resourceSlug": "value-proposition-design", "chapterSlug": "ch02-design" },
+    { "id": "bmg-ch03-design", "type": "resourceChapter", "tier": "formal-book", "label": "Business Model Generation, chapter 3: Design", "resourceSlug": "business-model-generation", "chapterSlug": "ch03-design" }
+  ],
+  "coverage": {
+    "intro": ["vpd-ch01-canvas", "vpd-ch02-design"],
+    "body": ["vpd-ch01-canvas", "vpd-ch02-design", "bmg-ch03-design"],
+    "blocks": {
+      "situation": ["vpd-ch02-design"],
+      "motivation": ["vpd-ch01-canvas", "vpd-ch02-design"],
+      "ideal-outcome": ["vpd-ch01-canvas", "vpd-ch02-design"],
+      "emotional-social": ["vpd-ch01-canvas", "vpd-ch02-design"]
+    }
+  }
+}

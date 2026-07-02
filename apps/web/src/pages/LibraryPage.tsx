@@ -25,6 +25,7 @@ import { StrategyFrameworkDetailModal } from '../components/StrategyFrameworkDet
 import { ResourceList } from '../components/ResourceList';
 import { ResourceDetailModal } from '../components/ResourceDetailModal';
 import { CanvasMethodList } from '../components/CanvasMethodList';
+import { TemplatePreviewModal } from '../components/TemplatePreviewModal';
 import { Pagination } from '../components/Pagination';
 import { CopilotDrawer } from '../components/CopilotDrawer';
 import { CopilotErrorBoundary } from '../components/CopilotErrorBoundary';
@@ -85,6 +86,7 @@ export function LibraryPage() {
   const [selectedExperiment, setSelectedExperiment] = useState<Experiment | null>(null);
   const [selectedStrategyFramework, setSelectedStrategyFramework] = useState<StrategyFramework | null>(null);
   const [selectedResource, setSelectedResource] = useState<LibraryResource | null>(null);
+  const [selectedCanvasDefId, setSelectedCanvasDefId] = useState<string | null>(null);
   const [tab, setTab] = useState<LibraryTab>('cases');
   // Per-tab page state. Reset to 1 when the underlying list reloads or
   // the user switches tab — so coming back to a tab always lands you
@@ -298,6 +300,14 @@ export function LibraryPage() {
     setSelectedResource(resource);
   }
 
+  function handleCanvasStart(defId: string) {
+    if (!authenticated) {
+      setLoginPromptOpen(true);
+      return;
+    }
+    navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, { state: stateWithFrom(location) });
+  }
+
   /** Resources tab → Cases tab: open the case preview. */
   function handleResourceCaseClick(slug: string) {
     const entry = cases?.find((c) => c.slug === slug);
@@ -450,13 +460,8 @@ export function LibraryPage() {
                   canvasDefsPage * SHOWCASE_PAGE_SIZE,
                 )}
                 lang={lang}
-                onStart={(defId) => {
-                  if (!authenticated) {
-                    setLoginPromptOpen(true);
-                    return;
-                  }
-                  navigate(`/p/new?withCanvas=${encodeURIComponent(defId)}`, { state: stateWithFrom(location) });
-                }}
+                onPreview={setSelectedCanvasDefId}
+                onStart={handleCanvasStart}
               />
               <Pagination
                 total={canvasDefs.length}
@@ -621,6 +626,14 @@ export function LibraryPage() {
         lang={lang}
         onClose={() => setSelectedResource(null)}
         onCaseClick={handleResourceCaseClick}
+      />
+
+      {/* Canvas method detail modal — learn first, then create from the footer CTA. */}
+      <TemplatePreviewModal
+        defId={selectedCanvasDefId}
+        lang={lang}
+        onClose={() => setSelectedCanvasDefId(null)}
+        onStart={handleCanvasStart}
       />
 
       {/* Library Copilot — right slide-over chat panel.

@@ -27,6 +27,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "beginner",
+    "headline": { "en": "Turn risky assumptions into measurable tests", "zh": "把高风险假设转成可衡量实验" },
+    "whyOpen": { "en": "Use this when the team needs evidence before building, funding, or scaling a business-model choice.", "zh": "当团队在开发、投入或规模化前需要证据时使用。" },
+    "audience": { "en": "Teams running discovery, validation, smoke tests, prototypes, pilots, or pre-sales.", "zh": "适合做探索、验证、烟雾测试、原型、试点或预售的团队。" },
+    "keyConcepts": [
+      { "en": "Riskiest assumption", "zh": "最危险假设" },
+      { "en": "Falsifiable hypothesis", "zh": "可证伪假设" },
+      { "en": "Pass/fail criteria", "zh": "通过/失败标准" },
+      { "en": "Evidence strength", "zh": "证据强度" }
+    ],
+    "firstSteps": [
+      { "en": "Pick one assumption that could change the decision.", "zh": "选择一条足以改变决策的假设。" },
+      { "en": "Define the metric and threshold before running the experiment.", "zh": "实验开始前先定义指标和门槛。" }
+    ],
+    "outcomes": [
+      { "en": "A test plan with method, metric, threshold, result, and next decision.", "zh": "一份包含方法、指标、门槛、结果和下一步决策的测试计划。" }
+    ],
+    "practicePrompts": [
+      { "en": "What result would make the team stop or pivot?", "zh": "什么结果会让团队停止或转向？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "testing-business-ideas", "chapterSlug": "ch01-design" },
+      { "type": "resourceChapter", "slug": "testing-business-ideas", "chapterSlug": "ch03-evidence" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "value-proposition-canvas" },
+      { "type": "canvas", "slug": "business-model-canvas" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ]
+  },
   "related": ["design-criteria-canvas", "value-proposition-canvas", "business-model-canvas"],
   "relatedNotes": {
     "design-criteria-canvas": {

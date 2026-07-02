@@ -49,6 +49,42 @@ const CaseSourceSchema = z.object({
   url: z.string().url().optional(),
 });
 
+const LearningReferenceSchema = z.object({
+  type: z.enum([
+    'canvas',
+    'canvasBlock',
+    'case',
+    'caseStory',
+    'resource',
+    'resourceChapter',
+    'pattern',
+    'strategyFramework',
+    'experiment',
+  ]),
+  slug: z.string().min(1),
+  chapterSlug: z.string().min(1).optional(),
+  canvasDefId: z.string().min(1).optional(),
+  blockId: z.string().min(1).optional(),
+  storyId: z.string().min(1).optional(),
+  label: Localized.optional(),
+  note: Localized.optional(),
+});
+
+const LearningIndexSchema = z.object({
+  level: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
+  headline: Localized.optional(),
+  whyOpen: Localized.optional(),
+  audience: Localized.optional(),
+  keyConcepts: z.array(Localized).optional(),
+  commonMisreads: z.array(Localized).optional(),
+  firstSteps: z.array(Localized).optional(),
+  outcomes: z.array(Localized).optional(),
+  practicePrompts: z.array(Localized).optional(),
+  sourceRefs: z.array(LearningReferenceSchema).optional(),
+  relatedRefs: z.array(LearningReferenceSchema).optional(),
+  nextRefs: z.array(LearningReferenceSchema).optional(),
+});
+
 const CaseKindSchema = z.enum(['company', 'industry', 'comparison']);
 
 const CanvasVariantSchema = z.object({
@@ -175,6 +211,7 @@ const CaseAuthorInput = z.object({
   // `subtypes[].id` on the referenced pattern. `case validate` enforces
   // both directions; this command just passes the field through.
   appliesPatternSubtypes: z.record(z.string(), z.string().min(1)).optional(),
+  learning: LearningIndexSchema.optional(),
 
   project: ProjectAuthorInput,
   canvases: z.array(CanvasAuthorInput).min(1),
@@ -407,6 +444,7 @@ export async function caseAuthorHandler(
     ...(input.appliesPatternSubtypes
       ? { appliesPatternSubtypes: input.appliesPatternSubtypes }
       : {}),
+    ...(input.learning ? { learning: input.learning } : {}),
   };
   files.set(join(outDir, 'case.json'), Buffer.from(JSON.stringify(caseJson, null, 2) + '\n'));
 
@@ -558,6 +596,7 @@ const CaseJsonSchema = z.object({
   appliesPatterns: z.array(z.string().min(1)).optional(),
   appliesStrategyFrameworks: z.array(z.string().min(1)).optional(),
   appliesPatternSubtypes: z.record(z.string(), z.string().min(1)).optional(),
+  learning: LearningIndexSchema.optional(),
 });
 
 const LOCALIZED_CONTENT_DEF_IDS = new Set([

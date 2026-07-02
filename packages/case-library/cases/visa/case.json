@@ -44,5 +44,44 @@
   "storyCount": 2,
   "appliesPatterns": [
     "multi-sided-platforms"
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "The non-tech platform that proves multi-sided logic is older than apps",
+      "zh": "证明多边平台并不始于 App 的非科技原型"
+    },
+    "whyOpen": {
+      "en": "Visa is the cleanest way to learn asymmetric platform pricing: cardholders, merchants, issuing banks, and acquiring banks all need different incentives.",
+      "zh": "Visa 是学习不对称平台定价最清晰的案例：持卡人、商户、发卡行和收单行需要不同激励。"
+    },
+    "audience": {
+      "en": "Readers who need a platform example beyond marketplaces and social apps.",
+      "zh": "适合需要跳出市场平台和社交 App、理解平台本质的读者。"
+    },
+    "keyConcepts": [
+      { "en": "Multi-sided network", "zh": "多边网络" },
+      { "en": "Subsidy side", "zh": "补贴侧" },
+      { "en": "Money side", "zh": "付费侧" },
+      { "en": "Interchange", "zh": "交换费" },
+      { "en": "Acceptance network", "zh": "受理网络" }
+    ],
+    "commonMisreads": [
+      { "en": "Visa is not just a card brand; the strategic asset is a governed acceptance network with asymmetric incentives.", "zh": "Visa 不只是银行卡品牌；战略资产是一个有治理、有不对称激励的受理网络。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which side of your network should pay less because its presence creates value for every other side?", "zh": "你的网络中哪一边应该少付费，因为它的存在会为其他边创造价值？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "platform-revolution", "chapterSlug": "ch02-network" },
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch02-patterns" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "platform-ecosystem-map" },
+      { "type": "case", "slug": "uber" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" }
+    ]
+  }
 }

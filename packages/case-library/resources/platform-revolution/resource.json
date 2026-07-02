@@ -13,14 +13,139 @@
     "en": "Use this when a case is not just a BMC but a multi-sided ecosystem. It clarifies what to inspect: sides, value units, matching, governance, trust, and monetization trade-offs.",
     "zh": "当一个案例不是单一 BMC，而是多边生态系统时，推荐用它作为阅读框架：看清平台各边、价值单元、匹配机制、治理、信任和变现取舍。"
   },
-  "authors": ["Geoffrey G. Parker", "Marshall W. Van Alstyne", "Sangeet Paul Choudary"],
+  "authors": [
+    "Geoffrey G. Parker",
+    "Marshall W. Van Alstyne",
+    "Sangeet Paul Choudary"
+  ],
   "publisher": "W. W. Norton & Company",
   "year": 2016,
-  "tags": ["platform-strategy", "network-effects", "governance"],
-  "relatedCanvasDefIds": ["platform-ecosystem-map", "business-model-canvas", "value-proposition-canvas", "customer-journey", "portfolio-map"],
-  "relatedCaseSlugs": ["uber", "airbnb", "google-multi-sided", "visa", "nvidia-cuda", "alibaba-group"],
-  "relatedPatternSlugs": ["multi-sided-platforms", "from-sales-to-platform"],
-  "relatedStrategyFrameworkSlugs": ["platform-strategy"],
+  "tags": [
+    "platform-strategy",
+    "network-effects",
+    "governance"
+  ],
+  "relatedCanvasDefIds": [
+    "platform-ecosystem-map",
+    "business-model-canvas",
+    "value-proposition-canvas",
+    "customer-journey",
+    "portfolio-map"
+  ],
+  "relatedCaseSlugs": [
+    "uber",
+    "airbnb",
+    "google-multi-sided",
+    "visa",
+    "nvidia-cuda",
+    "alibaba-group"
+  ],
+  "relatedPatternSlugs": [
+    "multi-sided-platforms",
+    "from-sales-to-platform"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "platform-strategy"
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "The beginner bridge from company cases to platform mechanics",
+      "zh": "从公司案例走向平台机制的桥梁"
+    },
+    "whyOpen": {
+      "en": "Open this when Uber, Airbnb, Visa, or CUDA feels like more than a normal value chain. It gives names to sides, core interactions, network effects, launch tactics, governance, and monetization.",
+      "zh": "当 Uber、Airbnb、Visa 或 CUDA 不像普通价值链时读它：它会命名平台各边、核心交互、网络效应、启动策略、治理和变现。"
+    },
+    "audience": {
+      "en": "Readers analyzing marketplaces, ecosystems, developer platforms, or payment networks.",
+      "zh": "适合分析市场平台、生态系统、开发者平台或支付网络的读者。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Pipeline vs platform",
+        "zh": "管道 vs 平台"
+      },
+      {
+        "en": "Core interaction",
+        "zh": "核心交互"
+      },
+      {
+        "en": "Network effects",
+        "zh": "网络效应"
+      },
+      {
+        "en": "Cold start",
+        "zh": "冷启动"
+      },
+      {
+        "en": "Governance",
+        "zh": "治理"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Read chapters 1-4 before opening platform cases.",
+        "zh": "先读第 1-4 章，再打开平台案例。"
+      },
+      {
+        "en": "Fill the Platform Ecosystem Map while reading: each chapter maps to a canvas area.",
+        "zh": "边读边填平台生态地图：每章都能落到画布上的一个区域。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can explain why a platform needs more than users: it needs repeatable interactions and governance.",
+        "zh": "你能说明平台不只是需要用户，还需要可重复交互和治理。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which side of your platform would join first without the other side present?",
+        "zh": "如果另一边还不存在，你的平台哪一边会先愿意加入？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "platform-revolution",
+        "chapterSlug": "ch01-intro"
+      },
+      {
+        "type": "resourceChapter",
+        "slug": "platform-revolution",
+        "chapterSlug": "ch04-launch"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "platform-ecosystem-map"
+      },
+      {
+        "type": "case",
+        "slug": "uber"
+      },
+      {
+        "type": "case",
+        "slug": "airbnb"
+      },
+      {
+        "type": "case",
+        "slug": "visa"
+      },
+      {
+        "type": "case",
+        "slug": "nvidia-cuda"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "canvas",
+        "slug": "evidence-scorecard"
+      }
+    ]
+  },
   "sources": [
     {
       "label": "Geoffrey G. Parker, Marshall W. Van Alstyne & Sangeet Paul Choudary · Platform Revolution · W. W. Norton & Company · 2016"

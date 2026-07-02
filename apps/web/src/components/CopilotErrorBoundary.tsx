@@ -11,6 +11,8 @@ interface State {
   info: ErrorInfo | null;
 }
 
+const CHUNK_RELOAD_ATTEMPT_KEY = 'pingarden.chunkReloadAttempt.v1';
+
 /**
  * Catches render-time exceptions in a subtree and surfaces them in-place
  * instead of unmounting the whole React tree (which is what causes the
@@ -21,14 +23,33 @@ interface State {
 export class CopilotErrorBoundary extends Component<Props, State> {
   override state: State = { error: null, info: null };
 
+  private chunkReloadClearTimer: number | null = null;
+
   static getDerivedStateFromError(error: Error): Partial<State> {
     return { error };
+  }
+
+  override componentDidMount(): void {
+    this.chunkReloadClearTimer = window.setTimeout(() => {
+      if (!this.state.error) {
+        window.sessionStorage.removeItem(CHUNK_RELOAD_ATTEMPT_KEY);
+      }
+    }, 3000);
+  }
+
+  override componentWillUnmount(): void {
+    if (this.chunkReloadClearTimer !== null) {
+      window.clearTimeout(this.chunkReloadClearTimer);
+    }
   }
 
   override componentDidCatch(error: Error, info: ErrorInfo): void {
     this.setState({ error, info });
     // eslint-disable-next-line no-console
     console.error('CopilotErrorBoundary caught:', error, info);
+    if (isChunkLoadError(error) && shouldAutoReloadChunkError()) {
+      window.location.reload();
+    }
   }
 
   override render() {
@@ -86,4 +107,22 @@ export class CopilotErrorBoundary extends Component<Props, State> {
 
 function isChunkLoadError(error: Error): boolean {
   return /dynamically imported module|importing a module script failed|failed to fetch dynamically imported module|chunkloaderror/i.test(error.message);
+}
+
+function shouldAutoReloadChunkError(): boolean {
+  try {
+    const href = window.location.href;
+    const rawAttempt = window.sessionStorage.getItem(CHUNK_RELOAD_ATTEMPT_KEY);
+    const previousAttempt = rawAttempt ? JSON.parse(rawAttempt) as { href?: string; at?: number } : null;
+    const now = Date.now();
+    const alreadyTriedThisPage =
+      previousAttempt?.href === href && typeof previousAttempt.at === 'number' && now - previousAttempt.at < 60_000;
+    if (alreadyTriedThisPage) {
+      return false;
+    }
+    window.sessionStorage.setItem(CHUNK_RELOAD_ATTEMPT_KEY, JSON.stringify({ href, at: now }));
+    return true;
+  } catch {
+    return false;
+  }
 }

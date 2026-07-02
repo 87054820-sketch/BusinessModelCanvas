@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "canvasId": "customer-journey",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "vpd-ch02-design", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 2: Design", "resourceSlug": "value-proposition-design", "chapterSlug": "ch02-design" },
+    { "id": "bmg-ch03-design", "type": "resourceChapter", "tier": "formal-book", "label": "Business Model Generation, chapter 3: Design", "resourceSlug": "business-model-generation", "chapterSlug": "ch03-design" },
+    { "id": "blue-ocean-shift-ch05", "type": "resourceChapter", "tier": "formal-book", "label": "Blue Ocean Shift, chapter 5: Buyer Utility Map", "resourceSlug": "blue-ocean-shift", "chapterSlug": "ch05-buyer" }
+  ],
+  "coverage": {
+    "intro": ["vpd-ch02-design", "bmg-ch03-design"],
+    "body": ["vpd-ch02-design", "bmg-ch03-design", "blue-ocean-shift-ch05"],
+    "blocks": {
+      "persona": ["vpd-ch02-design"],
+      "needs": ["vpd-ch02-design", "blue-ocean-shift-ch05"],
+      "key-moment": ["bmg-ch03-design", "blue-ocean-shift-ch05"],
+      "satisfaction": ["vpd-ch02-design", "blue-ocean-shift-ch05"]
+    }
+  }
+}

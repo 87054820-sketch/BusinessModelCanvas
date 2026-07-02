@@ -2,6 +2,10 @@
 
 本文档整理 PinGarden Copilot 当前架构、协议边界、写入链路和后续优化计划。它用于约束后续 Copilot 迭代，避免把“聊天建议”“项目创建”“项目更新”“画布写入”“Story 写入”的职责混在一起。
 
+AI 测试矩阵和每次 AI 迭代的自检清单见 `docs/COPILOT_AI_TESTING.md`。任何 prompt、provider、router、resolver、skill、CLI、结构化卡片改动都必须同步检查测试覆盖和历史 fixture。
+
+模型接入由后端 AI Catalog 驱动：用户可见 provider 通过 `/copilot/health` 下发，当前包括 Kimi、DeepSeek、MiniMax；前端只渲染 `visibility=user` 的模型；`fixture-ai`、`agent-bridge-ai` 等 `internal-test` provider 只服务自动化测试和 fixture 迭代，不能作为用户无 key 时的产品 fallback。
+
 ## 1. 核心原则
 
 1. **LLM 只生成草稿，不直接写数据**

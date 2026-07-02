@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "canvasId": "bcg-growth-share-matrix",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "bmg-ch04-strategy", "type": "resourceChapter", "tier": "formal-book", "label": "Business Model Generation, chapter 4: Strategy", "resourceSlug": "business-model-generation", "chapterSlug": "ch04-strategy" },
+    { "id": "invincible-ch01-explore", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 1: Explore", "resourceSlug": "the-invincible-company", "chapterSlug": "ch01-explore" },
+    { "id": "invincible-ch02-exploit", "type": "resourceChapter", "tier": "formal-book", "label": "The Invincible Company, chapter 2: Exploit", "resourceSlug": "the-invincible-company", "chapterSlug": "ch02-exploit" },
+    { "id": "bcg-growth-share", "type": "professionalWeb", "tier": "official-method-page", "label": "BCG: What Is the Growth Share Matrix?", "url": "https://www.bcg.com/about/overview/our-history/growth-share-matrix" }
+  ],
+  "coverage": {
+    "intro": ["bcg-growth-share", "bmg-ch04-strategy"],
+    "body": ["bcg-growth-share", "invincible-ch01-explore", "invincible-ch02-exploit"],
+    "blocks": {
+      "question-marks": ["bcg-growth-share", "invincible-ch01-explore"],
+      "stars": ["bcg-growth-share", "invincible-ch01-explore"],
+      "dogs": ["bcg-growth-share", "invincible-ch02-exploit"],
+      "cash-cows": ["bcg-growth-share", "invincible-ch02-exploit"],
+      "portfolio-actions": ["bmg-ch04-strategy", "invincible-ch01-explore", "invincible-ch02-exploit"]
+    }
+  }
+}

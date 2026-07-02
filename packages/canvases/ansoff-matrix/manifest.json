@@ -24,6 +24,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "beginner",
+    "headline": { "en": "Choose a growth path before choosing tactics", "zh": "先选择增长路径，再选择增长动作" },
+    "whyOpen": { "en": "Use this when a team says it needs growth but has not separated existing/new products from existing/new markets.", "zh": "当团队只说需要增长，却没有区分现有/新产品和现有/新市场时使用。" },
+    "audience": { "en": "Teams comparing product, market, and diversification options.", "zh": "适合比较产品、市场和多元化选项的团队。" },
+    "keyConcepts": [
+      { "en": "Market penetration", "zh": "市场渗透" },
+      { "en": "Market development", "zh": "市场开发" },
+      { "en": "Product development", "zh": "产品开发" },
+      { "en": "Diversification", "zh": "多元化" }
+    ],
+    "firstSteps": [
+      { "en": "Define what counts as existing market and existing product.", "zh": "先定义什么算现有市场和现有产品。" },
+      { "en": "Score each option by capability gap, evidence, and downside risk.", "zh": "按能力缺口、证据和下行风险评估每个选项。" }
+    ],
+    "outcomes": [
+      { "en": "One preferred growth path and the riskiest assumptions behind it.", "zh": "一条优先增长路径，以及背后最危险的假设。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which option looks attractive only because it hides the largest capability gap?", "zh": "哪个选项只是因为隐藏了最大能力缺口才显得诱人？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch04-strategy" },
+      { "type": "resourceChapter", "slug": "porter-competitive-strategy", "chapterSlug": "ch07-industry-evolution" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "business-model-environment" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ]
+  },
   "related": ["business-model-canvas", "portfolio-map", "design-criteria-canvas", "bcg-growth-share-matrix", "three-horizons-map"],
   "relatedNotes": {
     "business-model-canvas": {

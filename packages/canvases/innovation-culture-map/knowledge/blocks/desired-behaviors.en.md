@@ -11,3 +11,26 @@ Examples:
 - Weak ideas are publicly retired and the learning is recorded.
 
 Desired behaviors must be observable, practicable, and rewardable.
+
+## Good Answer vs Weak Answer
+
+A good answer describes a repeated action that people can practice and leaders can reward. A weak answer says "be more entrepreneurial" or "embrace failure" without naming the meeting habit, decision rule, or experiment behavior.
+
+## Common Pitfalls
+
+Do not design behaviors that conflict with existing incentives unless you also change the enablers/blockers. Desired behaviors fail when the organization asks for exploration but rewards only predictable execution.
+
+## Sticky Examples
+
+- "Every Explore review starts with the riskiest assumption and latest evidence."
+- "Teams ask for the smallest next test before requesting scale funding."
+
+## Transfer Questions
+
+- What would people do differently next week?
+- Which behavior should be rewarded publicly?
+- Which current behavior must stop for this desired behavior to survive?
+
+## Source Grounding
+
+The Culture Map links desired behaviors to desired outcomes and the mechanisms that support them. The Invincible Company's exploration culture also emphasizes evidence, learning velocity, and risk reduction.

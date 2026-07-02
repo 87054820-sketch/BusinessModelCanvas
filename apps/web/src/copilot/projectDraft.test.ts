@@ -66,6 +66,33 @@ describe('copilot project draft helpers', () => {
     expect(insights[0]?.suggestedActions?.[0]?.type).toBe('updateProject');
   });
 
+  it('parses structured response cards and visible answer markdown', () => {
+    const content = `Visible fallback
+\`\`\`json
+{
+  "kind": "pingarden.response.v1",
+  "answerMarkdown": "## 推荐\\n先整理学习路径。",
+  "cards": [
+    {
+      "type": "discussionInsight",
+      "insight": {
+        "kind": "pingarden.discussionInsight",
+        "title": "学习路径",
+        "summary": "把资料、案例和画布分层。",
+        "insights": [{ "id": "i1", "title": "分层引用", "summary": "资源不是案例。" }]
+      }
+    }
+  ],
+  "references": [
+    { "kind": "canvasTemplate", "label": "商业模式画布", "defId": "business-model-canvas" }
+  ]
+}
+\`\`\``;
+
+    expect(extractDiscussionInsights(content)[0]?.title).toBe('学习路径');
+    expect(stripProjectDraftBlocks(content)).toBe('Visible fallback');
+  });
+
   it('reports missing image findings and unmapped source items', () => {
     const issues = getSourceCoverageIssues(
       {

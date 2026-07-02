@@ -13,28 +13,39 @@ import { authHeaders, authHeadersJson } from './authHeaders';
 
 const BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? '';
 
-export type CopilotModelId = 'kimi' | 'deepseek';
-export type CopilotProviderId = 'kimi-cli' | 'kimi-http' | 'deepseek-http';
+export type CopilotModelId = string;
+export type CopilotProviderId = string;
 export type CopilotAiProviderKind = CopilotProviderId;
+export type CopilotProviderVisibility = 'user' | 'internal-test';
+export type CopilotKeyStorageScope = 'model' | 'provider' | 'none';
 
 export interface CopilotProviderHealth {
   provider: CopilotProviderId;
   modelId: CopilotModelId;
+  label?: string;
+  statusLabel?: string;
+  visibility?: CopilotProviderVisibility;
   available: boolean;
   version?: string;
   model?: string;
+  defaultModelName?: string;
   requiresApiKey: boolean;
+  keyStorageScope?: CopilotKeyStorageScope;
+  supportsImages?: boolean;
+  docsUrl?: string;
   storesKeyServerSide: false;
   message?: string;
 }
 
 export interface CopilotModelHealth {
   model: CopilotModelId;
+  label?: string;
   provider: CopilotProviderHealth;
   providers: CopilotProviderHealth[];
   defaultProvider: CopilotProviderId;
   available: boolean;
   requiresApiKey: boolean;
+  visibility?: CopilotProviderVisibility;
   message?: string;
 }
 
@@ -111,6 +122,23 @@ export interface CopilotProviderSelection {
   provider?: CopilotProviderId;
 }
 
+export const COPILOT_AUTH_REQUIRED = 'PINGARDEN_COPILOT_AUTH_REQUIRED';
+
+export type CopilotProviderIssueKind =
+  | 'auth'
+  | 'billing'
+  | 'plan'
+  | 'rate-limit'
+  | 'network'
+  | 'empty-assistant'
+  | 'unknown';
+
+export interface CopilotProviderIssue {
+  kind: CopilotProviderIssueKind;
+  provider?: CopilotProviderId;
+  rawMessage: string;
+}
+
 async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> {
   const res = await fetch(input, init);
   await ensureOk(res);
@@ -118,14 +146,58 @@ async function fetchJson<T>(input: RequestInfo, init?: RequestInit): Promise<T> 
 }
 
 export function normalizeCopilotRuntimeError(input: unknown): string {
-  const message = extractCopilotErrorMessage(input)?.trim() || String(input).trim();
-  if (/load failed|failed to fetch|networkerror|internet connection|network request failed|fetch.*failed/i.test(message)) {
+  const issue = classifyCopilotProviderIssue(input);
+  const message = issue.rawMessage;
+  if (issue.kind === 'plan' && issue.provider === 'minimax') {
+    return 'MiniMax API Key 未通过认证。请确认粘贴的是 MiniMax API Platform 的 API Key，或 Token Plan 的 Subscription Key，并且该账号已有余额、订阅或 Credits；Pay-as-you-go Key 和 Token Plan Key 不能混用。';
+  }
+  if (issue.kind === 'billing') {
+    return '当前模型账号余额、Credits、订阅或额度不足。请到对应平台确认计费状态后重试。';
+  }
+  if (issue.kind === 'plan') {
+    return '当前模型、平台区域或套餐权限不匹配。请确认 API Key 来自当前模型对应的平台，并且该模型已在账号中开通。';
+  }
+  if (issue.kind === 'rate-limit') {
+    return '当前模型请求过于频繁或达到平台限流。请稍后重试，或切换到另一个可用模型。';
+  }
+  if (issue.kind === 'auth') {
+    return '当前模型保存的 API Key 无效或已过期。请在设置里删除当前模型的 Key，再从对应平台重新复制并保存。';
+  }
+  if (issue.kind === 'network') {
     return '移动端网络连接中断或当前 WebView 拦截了请求，请检查网络后重试。';
   }
-  if (/message at position \d+ with role ['"]assistant['"] must not be empty/i.test(message)) {
+  if (issue.kind === 'empty-assistant') {
     return '上一轮 AI 回复没有成功完成，请重试上一条。';
   }
   return message;
+}
+
+export function classifyCopilotProviderIssue(input: unknown, provider?: CopilotProviderId): CopilotProviderIssue {
+  const rawMessage = extractCopilotErrorMessage(input)?.trim() || String(input).trim();
+  const providerFromMessage = provider ?? inferProviderFromMessage(rawMessage);
+  const message = rawMessage.toLowerCase();
+  if (/load failed|failed to fetch|networkerror|internet connection|network request failed|fetch.*failed/.test(message)) {
+    return { kind: 'network', provider: providerFromMessage, rawMessage };
+  }
+  if (/message at position \d+ with role ['"]assistant['"] must not be empty/.test(message)) {
+    return { kind: 'empty-assistant', provider: providerFromMessage, rawMessage };
+  }
+  if (/rate[_ -]?limit|too many requests|request limit|qps|rpm|tpm|429/.test(message)) {
+    return { kind: 'rate-limit', provider: providerFromMessage, rawMessage };
+  }
+  if (/insufficient[_ -]?quota|quota exceeded|balance|credit|credits|billing|payment|prepaid|recharge|arrears|subscription expired|no active subscription|out of quota/.test(message)) {
+    return { kind: 'billing', provider: providerFromMessage, rawMessage };
+  }
+  if (/authorized_error|api secret key.*authorization|authorization.*api secret key|\(1004\)/.test(message)) {
+    return { kind: isProvider(providerFromMessage, 'minimax') ? 'plan' : 'auth', provider: providerFromMessage, rawMessage };
+  }
+  if (/model .*not found|model .*does not exist|model .*not exist|model not supported|permission|not allowed|forbidden|no access|not available|region|token plan|pay-as-you-go|subscription key/.test(message)) {
+    return { kind: 'plan', provider: providerFromMessage, rawMessage };
+  }
+  if (/provider\.auth_error|invalid_authentication_error|api key .*invalid|invalid .*api key|api key .*expired|unauthorized|401/.test(message)) {
+    return { kind: 'auth', provider: providerFromMessage, rawMessage };
+  }
+  return { kind: 'unknown', provider: providerFromMessage, rawMessage };
 }
 
 export function normalizeCopilotFetchError(err: unknown): string {
@@ -135,6 +207,14 @@ export function normalizeCopilotFetchError(err: unknown): string {
 
 function normalizeCopilotStreamError(status: number, body: string): string {
   const text = body.trim();
+  if (status === 401) {
+    try {
+      const parsed = JSON.parse(text) as { code?: string };
+      if (parsed.code === 'AUTH_REQUIRED') return COPILOT_AUTH_REQUIRED;
+    } catch {
+      /* fall through */
+    }
+  }
   if (isHtmlResponse(text)) {
     if (status === 504 || /504\s+Gateway\s+Time-?out/i.test(text)) {
       return '云端 AI 请求超时，请重试或缩小资料范围。';
@@ -163,9 +243,25 @@ function extractCopilotErrorMessage(input: unknown): string | null {
   );
 }
 
+function inferProviderFromMessage(message: string): CopilotProviderId | undefined {
+  if (/minimax/i.test(message) || /\(1004\)/.test(message)) return 'minimax';
+  if (/deepseek/i.test(message)) return 'deepseek';
+  if (/kimi|moonshot/i.test(message)) return 'kimi';
+  return undefined;
+}
+
+function isProvider(provider: CopilotProviderId | undefined, model: string): boolean {
+  return Boolean(provider && provider.toLowerCase().includes(model));
+}
+
 function isHtmlResponse(text: string): boolean {
   return /^<!doctype\s+html/i.test(text) || /^<html[\s>]/i.test(text) || /<body[\s>]/i.test(text);
 }
+
+export const __copilotApiTest = {
+  classifyCopilotProviderIssue,
+  normalizeCopilotStreamError,
+};
 
 export const copilotApi = {
   getHealth(): Promise<CopilotHealth> {

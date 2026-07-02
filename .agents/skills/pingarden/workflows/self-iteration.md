@@ -27,6 +27,11 @@ node apps/cli/dist/index.js skill install --local
 pnpm package:mac
 ```
 
+`skill install --local` writes the canonical repo-local skill to
+`.agents/skills/pingarden/` and refreshes `.claude/skills/pingarden`
+as a symlink to that same directory. Keep only one real copy of the
+skill in the repo; agent-specific paths should be discovery aliases.
+
 `pnpm package:mac` is the canonical release path: it regenerates the project-local skill, creates the portable `pingarden-skill-<version>.zip`, and bundles that zip into the macOS DMG via `extraResources → skill-pack`.
 
 ## Drift rules

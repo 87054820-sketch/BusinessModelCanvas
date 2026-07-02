@@ -38,10 +38,14 @@ interface Props {
    *   so they render unchanged today; if any future canvas adds H3
    *   sections it inherits the same card treatment for free.
    *
+   * - `'modal-reader'` — used inside the canvas preview modal's center
+   *   reading column, where the column is narrower and should read as a
+   *   compact document pane instead of the larger inspector surface.
+   *
    * Omit (default) for plain rendering — used by CanvasKnowledgeInspector
    *   (intro/body) and any general-purpose markdown surface.
    */
-  variant?: 'block-guidance';
+  variant?: 'block-guidance' | 'modal-reader';
 }
 
 /**
@@ -139,6 +143,7 @@ export function Markdown({
 }: Props) {
   const openLightbox = useLightbox((s) => s.open);
   const isBlockGuidance = variant === 'block-guidance';
+  const isModalReader = variant === 'modal-reader';
 
   function resolveImageSrc(src: string | undefined): string {
     if (!src) return '';
@@ -190,12 +195,12 @@ export function Markdown({
           // card itself supplies the visual boundary, so we drop the
           // blue left bar and tighten margins. See SubcategoryContext.
           h1: ({ children }) => (
-            <h3 className="mt-6 mb-3 text-xl font-bold text-gray-900 first:mt-0">
+            <h3 className={`${isModalReader ? 'mt-5 mb-2 text-lg' : 'mt-6 mb-3 text-xl'} font-bold text-gray-900 first:mt-0`}>
               {children}
             </h3>
           ),
           h2: ({ children }) => (
-            <h4 className="mt-6 mb-2 text-lg font-bold text-gray-900 first:mt-0">
+            <h4 className={`${isModalReader ? 'mt-5 mb-2 text-base' : 'mt-6 mb-2 text-lg'} font-bold text-gray-900 first:mt-0`}>
               {children}
             </h4>
           ),
@@ -209,7 +214,7 @@ export function Markdown({
               );
             }
             return (
-              <h5 className="mt-6 mb-2 border-l-[3px] border-blue-500 pl-2.5 text-base font-bold text-gray-900 first:mt-0">
+              <h5 className={`${isModalReader ? 'mt-5 mb-2 text-sm' : 'mt-6 mb-2 text-base'} border-l-[3px] border-blue-500 pl-2.5 font-bold text-gray-900 first:mt-0`}>
                 {children}
               </h5>
             );
@@ -219,15 +224,15 @@ export function Markdown({
             if (inCard) {
               return <p className="mb-2 text-sm leading-relaxed last:mb-0">{children}</p>;
             }
-            return <p className="mb-3 last:mb-0">{children}</p>;
+            return <p className={`${isModalReader ? 'mb-2.5' : 'mb-3'} last:mb-0`}>{children}</p>;
           },
           ul: ({ children }) => (
-            <ul className="mb-3 list-disc space-y-1 pl-5 last:mb-0">{children}</ul>
+            <ul className={`${isModalReader ? 'mb-2.5 space-y-0.5' : 'mb-3 space-y-1'} list-disc pl-5 last:mb-0`}>{children}</ul>
           ),
           ol: ({ children }) => (
-            <ol className="mb-3 list-decimal space-y-1 pl-5 last:mb-0">{children}</ol>
+            <ol className={`${isModalReader ? 'mb-2.5 space-y-0.5' : 'mb-3 space-y-1'} list-decimal pl-5 last:mb-0`}>{children}</ol>
           ),
-          li: ({ children }) => <li className="text-sm text-gray-800">{children}</li>,
+          li: ({ children }) => <li className={`${isModalReader ? 'text-[13px]' : 'text-sm'} text-gray-800`}>{children}</li>,
           code: ({ children }) => (
             <code className="rounded bg-gray-100 px-1 py-0.5 font-mono text-[12px] text-gray-800">
               {children}
@@ -256,7 +261,7 @@ export function Markdown({
               );
             }
             return (
-              <blockquote className="my-3 border-l-2 border-gray-300 pl-3 text-sm italic text-gray-600">
+              <blockquote className={`${isModalReader ? 'my-2.5 text-[13px]' : 'my-3 text-sm'} border-l-2 border-gray-300 pl-3 italic text-gray-600`}>
                 {children}
               </blockquote>
             );

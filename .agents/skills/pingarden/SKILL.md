@@ -1,7 +1,7 @@
 ---
 name: pingarden
 description: Use whenever the user wants to draft, edit, translate, fork, copy, optimise, or narrate a business model — Business Model Canvas, Value Proposition Canvas, Jobs To Be Done, Empathy Map, Portfolio Map, Business Model Environment, Ad-Lib Value Proposition, Customer Journey, Strategy Canvas, Design Criteria Canvas, Experiment Canvas — OR wants to read / fork a curated company case (Spotify, Uber, Airbnb, Nespresso, Gillette, P&G, GSK, Alibaba, Cemex, Patagonia, …) OR identify / apply a business-model pattern (Long Tail, Free, Multi-Sided Platforms, Open Business Models, Unbundling) OR run a test / experiment from the Testing Business Ideas library (Customer Interview, Smoke Test, Wizard of Oz, Concierge, Letter of Intent, Pre-Sale, …). English triggers: "draft a BMC", "fill the value proposition", "story for my project", "snapshot before editing", "fork this case", "what pattern is this", "what business model does X use", "copy and optimise this canvas", "give me other companies in the same pattern", "how do I test this assumption", "what experiment should I run", "is this a desirability / feasibility / viability risk", or any `pingarden` CLI invocation. Chinese triggers (中文触发): "帮我画/起一个商业模式画布", "做一份 BMC/VPC/JTBD", "复制画布优化模型", "fork 一个案例 / 从案例库开始", "Spotify/Uber/Nespresso 用了什么商业模式", "免费模式适合我吗 / 这是什么模式", "对比/翻译这张画布", "保存快照 / 回滚到上一版", "把这家公司的画布拿来改", "怎么验证这个假设 / 推荐一个实验", "我该跑客户访谈还是 smoke test"。On activation, **run `pingarden doctor` first** to confirm the CLI is on PATH and the PinGarden app is running; if `pingarden` returns "command not found", fall back to `"${HOME}/Library/Application Support/PinGarden/bin/pingarden"` and tell the user to open PinGarden once or use Help → Install CLI to PATH.
-version: 0.6.0-420d9c65
+version: 0.6.0-9f4d7f66
 ---
 
 # PinGarden — official skill
@@ -24,13 +24,14 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 ## How to use this skill (reading order)
 
 1. **Always read `reference/cli-cheatsheet.md` first** — it lists the exact commands and JSON envelope shape you'll consume.
-2. **Before writing to a canvas**, read its description with `pingarden canvas describe <id> --json` (existing canvas) or `pingarden canvas describe-template <defId> --json` (new canvas). NEVER hardcode `zoneId`s — they come from the live def.
-3. **For each canvas the user works on**, consult `canvases/<id>.<lang>.md` for filling rules, fill order, examples, and anti-patterns.
-4. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library and pattern library are cross-linked both ways.
-5. **For "how do I test this assumption" / "what experiment should I run"** — go to `workflows/experiments.md` and the `experiments/` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
-6. **For book/resources reading, chapter-quality, or source-material questions** — go to `workflows/resource-reading.md`. Resources are now chapter-aware: use chapter summaries first, then fetch the full chapter only when needed.
-7. **For install/update/release or skill drift questions** — read `workflows/self-iteration.md` and keep the installed skill, project-local skill, zip, and DMG in sync.
-8. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
+2. **Before saying something is missing**, run `pingarden reference resolve --text "<your recommendation>" --lang <en|zh> --json`. Distinguish cases, resources, canvas templates, canvas instances, patterns, strategy frameworks, and experiments.
+3. **Before writing to a canvas**, read its description with `pingarden canvas describe <id> --json` (existing canvas) or `pingarden canvas describe-template <defId> --json` (new canvas). NEVER hardcode `zoneId`s — they come from the live def.
+4. **For each canvas the user works on**, consult `canvases/<id>.<lang>.md` for filling rules, fill order, examples, and anti-patterns.
+5. **For "what pattern is this" / "companies in the same pattern" / "fork a case"** — go to `workflows/case-library.md` and `workflows/patterns.md` first; the case library and pattern library are cross-linked both ways.
+6. **For "how do I test this assumption" / "what experiment should I run"** — go to `workflows/experiments.md` and the `experiments/` library. Classify the assumption as Desirability / Feasibility / Viability, decide Discovery vs Validation, then pick 2–3 candidate experiments and present tradeoffs.
+7. **For book/resources reading, chapter-quality, or source-material questions** — go to `workflows/resource-reading.md`. Resources are now chapter-aware: use chapter summaries first, then fetch the full chapter only when needed.
+8. **For install/update/release or skill drift questions** — read `workflows/self-iteration.md` and keep the installed skill, project-local skill, zip, and DMG in sync.
+9. **For multi-step work** (greenfield from a chat, iterating, cross-canvas, story narration, snapshot/restore, translate), follow the workflow in `workflows/`.
 
 ## Index
 
@@ -134,3 +135,4 @@ Don't wait for the user to ask twice — when this skill loads, do this **immedi
 - **`zoneId` validation is local-first**: the CLI reads `/ai-context` to verify your `zoneId`s exist on the canvas before writing. Unknown zone → no snapshot, no write.
 - **Never parse Yjs binary**: use `canvas read` (which calls `/ai-context`) for state, never `PUT /canvases/:id/state` directly.
 - **One sticky = one concept**: don't write paragraphs into a sticky. If a sticky needs more than ~20 words, split it.
+- **Reference taxonomy**: books/articles/reports/web pages are `resource`; canvas definitions are `canvasTemplate`; existing project/case canvases are `canvasInstance`; strategy frameworks, experiments, and patterns are method assets. Do not call a method asset "missing" just because no current-project canvas instance exists.

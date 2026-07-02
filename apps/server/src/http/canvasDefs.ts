@@ -29,6 +29,7 @@ export function registerCanvasDefRoutes(
       name: def.name,
       plugin: def.plugin,
       related: def.related,
+      learning: def.learning,
     })),
   );
 

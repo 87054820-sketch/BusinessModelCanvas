@@ -24,6 +24,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "intermediate",
+    "headline": { "en": "Diagnose advantage at the activity level", "zh": "在活动层面诊断竞争优势" },
+    "whyOpen": { "en": "Use this when a strategy sounds attractive but you need to prove which activities create cost advantage, differentiation, or margin.", "zh": "当战略听起来不错，但需要证明哪些活动真正创造成本优势、差异化或利润时使用。" },
+    "audience": { "en": "Teams redesigning operations, go-to-market, supply, service, or capability investments.", "zh": "适合重设计运营、渠道、供应、服务或能力投入的团队。" },
+    "keyConcepts": [
+      { "en": "Primary activities", "zh": "基本活动" },
+      { "en": "Support activities", "zh": "支持活动" },
+      { "en": "Linkages", "zh": "活动联动" },
+      { "en": "Margin", "zh": "利润空间" }
+    ],
+    "firstSteps": [
+      { "en": "Name the strategic intent first: cost leadership, differentiation, or focus.", "zh": "先写清战略意图：成本领先、差异化或聚焦。" },
+      { "en": "Mark activity links, not just activity boxes.", "zh": "标出活动之间的联动，而不仅是填写活动格子。" }
+    ],
+    "outcomes": [
+      { "en": "A map of activity-level advantage, leaks, trade-offs, and investment priorities.", "zh": "一张活动级优势、漏点、取舍和投入优先级地图。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which two activities reinforce each other enough that competitors would struggle to copy both?", "zh": "哪两个活动互相加强到竞争对手很难同时复制？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "porter-competitive-advantage", "chapterSlug": "ch01-value-chain" },
+      { "type": "resourceChapter", "slug": "porter-competitive-advantage", "chapterSlug": "ch02-cost-advantage" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "business-model-environment" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "design-criteria-canvas" }
+    ]
+  },
   "related": ["business-model-canvas", "design-criteria-canvas", "platform-ecosystem-map"],
   "relatedNotes": {
     "business-model-canvas": {

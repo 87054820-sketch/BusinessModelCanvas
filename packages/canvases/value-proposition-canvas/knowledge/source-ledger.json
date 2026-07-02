@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "canvasId": "value-proposition-canvas",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "vpd-ch01-canvas", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 1: Canvas", "resourceSlug": "value-proposition-design", "chapterSlug": "ch01-canvas" },
+    { "id": "vpd-ch02-design", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 2: Design", "resourceSlug": "value-proposition-design", "chapterSlug": "ch02-design" },
+    { "id": "vpd-ch03-test", "type": "resourceChapter", "tier": "formal-book", "label": "Value Proposition Design, chapter 3: Test", "resourceSlug": "value-proposition-design", "chapterSlug": "ch03-test" },
+    { "id": "strategyzer-vpd", "type": "professionalWeb", "tier": "official-method-page", "label": "Strategyzer: Value Proposition Design", "url": "https://www.strategyzer.com/library/value-proposition-design-2" }
+  ],
+  "coverage": {
+    "intro": ["vpd-ch01-canvas", "strategyzer-vpd"],
+    "body": ["vpd-ch01-canvas", "vpd-ch02-design", "vpd-ch03-test"],
+    "blocks": {
+      "gain-creators": ["vpd-ch01-canvas", "vpd-ch02-design"],
+      "pain-relievers": ["vpd-ch01-canvas", "vpd-ch02-design"],
+      "products-and-services": ["vpd-ch01-canvas"],
+      "gains": ["vpd-ch01-canvas", "vpd-ch02-design"],
+      "pains": ["vpd-ch01-canvas", "vpd-ch02-design"],
+      "customer-jobs": ["vpd-ch01-canvas", "vpd-ch02-design"]
+    }
+  }
+}

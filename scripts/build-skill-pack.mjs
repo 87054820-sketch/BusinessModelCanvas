@@ -14,7 +14,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const sourceDir = join(root, '.claude', 'skills', 'pingarden');
+const sourceDir = join(root, '.agents', 'skills', 'pingarden');
 const versionPath = join(sourceDir, '.pingarden-skill-version');
 const outDir = join(root, 'apps', 'cli', 'build', 'skill');
 const stageDir = join(root, 'apps', 'cli', 'build', 'skill-staging');
@@ -36,10 +36,10 @@ function removeJunkFiles(dir) {
 }
 
 if (!existsSync(join(sourceDir, 'SKILL.md'))) {
-  fail('Missing .claude/skills/pingarden/SKILL.md. Run `pnpm --filter @pingarden/cli build && node apps/cli/dist/index.js skill install --local` first.');
+  fail('Missing .agents/skills/pingarden/SKILL.md. Run `pnpm --filter @pingarden/cli build && node apps/cli/dist/index.js skill install --local` first.');
 }
 if (!existsSync(versionPath)) {
-  fail('Missing .claude/skills/pingarden/.pingarden-skill-version. Regenerate the project-local skill first.');
+  fail('Missing .agents/skills/pingarden/.pingarden-skill-version. Regenerate the project-local skill first.');
 }
 
 const version = readFileSync(versionPath, 'utf8').trim();

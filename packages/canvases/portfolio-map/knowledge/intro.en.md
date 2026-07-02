@@ -19,6 +19,13 @@ of any single model.
 
 ![The Explore / Exploit Continuum — managing both sides simultaneously. Source: *The Invincible Company* (Osterwalder et al., 2020)](assets/pm-continuum.png)
 
+## First step
+
+Start by listing the comparable business models, products, regions, or
+ventures you want to place on the map. Do not place a bubble until you
+can name what it sells, who it serves, which business model it uses, and
+which evidence you will use for risk and return.
+
 ## Reach for it when
 
 - You're preparing a board / leadership review and need a single page
@@ -40,3 +47,12 @@ of any single model.
   the **Value Proposition Canvas**.
 - You don't yet have multiple business models to compare. With one or
   two bubbles the map is overkill; come back when the portfolio is real.
+
+## Output and next step
+
+The output is not a prettier portfolio chart. It is a small set of
+portfolio decisions: which bubbles need investment, which need evidence,
+which should be defended, which should be reinvented, and which should
+be killed or divested. Drill into any important bubble with the Business
+Model Canvas, then use the Evidence Scorecard or Experiment Canvas to
+reduce the risk behind the next move.

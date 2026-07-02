@@ -4,6 +4,7 @@ import type {
   CanvasMeta,
   CreateCanvasInput,
   Lang,
+  LearningIndex,
   UpdateCanvasInput,
 } from '@pingarden/shared';
 import { ensureOk } from './errors';
@@ -28,6 +29,8 @@ export interface CanvasDefSummary {
   plugin?: string;
   /** Other def ids this canvas conceptually pairs with. Curated per-bundle. */
   related?: string[];
+  /** Lightweight learning guide assembled from the canvas' source docs. */
+  learning?: LearningIndex;
 }
 
 /**

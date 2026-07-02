@@ -39,11 +39,15 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 **Example** — Regulation opens ↔ regulation tightens
 
+**Quality bar** — This module names the first axis of the matrix.
+
 ### `uncertainty-b` — Critical uncertainty B
 
 **Prompt** — Choose a second independent uncertainty. Avoid describing the same force as A.
 
 **Example** — Technology matures fast ↔ technology matures slowly
+
+**Quality bar** — The second axis should be independent from the first.
 
 ### `scenario-1` — Scenario 1
 
@@ -51,11 +55,15 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 **Example** — Name the scenario, key signals, opportunities, threats, and business-model implications
 
+**Quality bar** — Each scenario should be a plausible world, not a label.
+
 ### `scenario-2` — Scenario 2
 
 **Prompt** — Write the second scenario. Focus on how customers, channels, partners, or revenue logic change.
 
 **Example** — Which value propositions strengthen? Which cost structures break?
+
+**Quality bar** — Scenario 2 should not be a mirror image of Scenario 1.
 
 ### `scenario-3` — Scenario 3
 
@@ -63,17 +71,23 @@ The `zoneId` is the stable API identifier — your `pingarden canvas write` payl
 
 **Example** — Who benefits in this future? Who loses? Which options do we hold?
 
+**Quality bar** — Scenario 3 is often where teams discover hidden assumptions. Resist making it simply "bad.
+
 ### `scenario-4` — Scenario 4
 
 **Prompt** — Write the fourth scenario and identify the strategic logic that differs most from the others.
 
 **Example** — Which assumptions should be tested earliest? Which signals should be monitored?
 
+**Quality bar** — Scenario 4 completes the matrix and should force comparison across all futures.
+
 ### `robust-moves` — Robust moves / early signals
 
 **Prompt** — Which moves are useful across multiple scenarios? Which external signals reveal that a scenario is forming?
 
 **Example** — Keep asset-light channel options
+
+**Quality bar** — Robust moves are actions that make sense across several futures.
 
 ## Colour legend
 

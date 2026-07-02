@@ -68,6 +68,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "beginner",
+    "headline": { "en": "Match customer jobs, pains, and gains with an offer", "zh": "把客户任务、痛点和收益与产品匹配起来" },
+    "whyOpen": { "en": "Use this when BMC's customer segment or value proposition is too broad to test.", "zh": "当 BMC 里的客户细分或价值主张过于宽泛、难以测试时使用。" },
+    "audience": { "en": "Teams doing customer discovery, offer design, landing pages, or sales messaging.", "zh": "适合做客户探索、产品设计、落地页或销售话术的团队。" },
+    "keyConcepts": [
+      { "en": "Customer jobs", "zh": "客户任务" },
+      { "en": "Pains", "zh": "痛点" },
+      { "en": "Gains", "zh": "收益" },
+      { "en": "Fit", "zh": "匹配" }
+    ],
+    "firstSteps": [
+      { "en": "Fill one customer segment at a time.", "zh": "一次只填一个客户细分。" },
+      { "en": "Mark which pain relievers and gain creators still need evidence.", "zh": "标出哪些痛点缓解和收益创造仍需证据。" }
+    ],
+    "outcomes": [
+      { "en": "A testable value proposition and the strongest fit assumptions.", "zh": "一套可测试的价值主张，以及最关键的匹配假设。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which pain is expensive enough that the customer would switch behavior?", "zh": "哪个痛点足够昂贵，能让客户改变行为？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch01-canvas" },
+      { "type": "resourceChapter", "slug": "value-proposition-design", "chapterSlug": "ch02-design" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "ad-lib-value-proposition" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ]
+  },
   "related": ["business-model-canvas", "empathy-map", "jobs-to-be-done", "ad-lib-value-proposition", "customer-journey", "design-criteria-canvas", "experiment-canvas"],
   "relatedNotes": {
     "business-model-canvas": {

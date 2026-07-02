@@ -121,13 +121,14 @@ pnpm smoke:mobile -- --url https://pingarden-274959-7-1259605451.sh.run.tcloudba
 1. 本地运行代码门禁。
 2. 构建 CloudRun 部署上下文。
 3. 部署 CloudRun。
-4. 等待版本切换。
-5. 运行 `pnpm smoke:cloud`。
-6. 打开页面人工确认 Copilot 和 `+ 图片` 按钮。
-7. Smoke test 失败时禁止继续宣布上线完成。
+4. 运行 `cloudbase cloudrun list --serviceName pingarden --json`，确认 `UpdateTime` 已从发布前时间变成新时间戳。
+5. `UpdateTime` 变更后停止重复提交部署；CloudRun 后续构建、实例替换和切流可能仍需数分钟。
+6. 运行 `pnpm smoke:cloud` 和 `pnpm check:cloud-release` 观察线上状态；若短时间仍读到旧 zip / 旧资源，先等待 1-3 分钟后复查，不要立刻再次 deploy。
+7. 打开页面人工确认 Copilot、`+ 图片` 按钮和本次 UI 重点改动。
+8. 只有 `UpdateTime` 没变、CloudBase 控制台显示失败、或 smoke 显示真实服务错误时，才重新提交部署。
 
 ## 当前已知缺口
 
 - 浏览器级移动端 UI 测试已提供 `pnpm smoke:mobile`，但依赖本机已安装 `playwright-cli`。
 - 真实 Kimi 测试依赖用户自己的 API Key，默认 smoke test 只能验证链路/SSE/错误处理，不能保证真实模型质量。
-- CloudRun 版本切换是异步的，部署命令返回成功后仍需轮询 `queryCloudRun detail` 或重复 smoke test，直到线上资源更新。
+- CloudRun 版本切换是异步的；以 `cloudrun list` 的 `UpdateTime` 变更作为“部署已被接收”的停止点，后续 smoke / release check 是观察切换结果，不应触发连续重复部署。

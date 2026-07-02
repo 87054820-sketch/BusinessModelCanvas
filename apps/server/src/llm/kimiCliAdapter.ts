@@ -175,8 +175,9 @@ export async function* streamKimiChat(
     // the caller's `for await` will exit cleanly; otherwise surface
     // stderr (or a generic message) so the user sees something.
     if (!sawTextDelta) {
+      const stderr = stderrBuf.trim();
       yield {
-        error: stderrBuf.trim().slice(0, 400) || 'kimi exited without producing output',
+        error: stderr ? normalizeKimiError(stderr) : 'kimi exited without producing output',
       };
     } else {
       req.metrics?.({ name: 'upstreamDone', atMs: Date.now(), details: { deltaChunks, deltaChars, provider: 'kimi-cli' } });
@@ -313,5 +314,8 @@ function normalizeKimiError(message: string): string {
   if (message.includes('compaction.unable')) {
     return 'Kimi 上下文过长，当前原图或对话内容超出可处理范围。请减少图片数量、缩短对话，或换用小于上限的原图后重试。';
   }
-  return message.slice(0, 400);
+  if (/provider\.auth_error|invalid_authentication_error|api key .*invalid|invalid .*api key|api key .*expired/i.test(message)) {
+    return '当前保存的 Kimi Code API Key 无效或已过期。请在 Copilot 设置里删除 Kimi 的 Key，再从 Kimi Code 控制台重新复制并保存。';
+  }
+  return message.replace(/\s*See log:\s*\S+/i, '').slice(0, 400);
 }

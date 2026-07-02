@@ -24,6 +24,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "advanced",
+    "headline": { "en": "Test whether a threat is truly disruptive", "zh": "判断一个威胁是否真的构成颠覆" },
+    "whyOpen": { "en": "Use this before calling every new entrant a disruptor; it separates disruptive trajectories from ordinary competition.", "zh": "在把所有新进入者都叫作颠覆者之前使用，用来区分颠覆轨迹和普通竞争。" },
+    "audience": { "en": "Strategy, product, and innovation teams evaluating entrant threats or internal disruptive bets.", "zh": "适合评估新进入者威胁或内部颠覆押注的战略、产品和创新团队。" },
+    "keyConcepts": [
+      { "en": "Foothold customer", "zh": "立足点客户" },
+      { "en": "Overshot customers", "zh": "被过度满足的客户" },
+      { "en": "Non-consumption", "zh": "不消费市场" },
+      { "en": "Upmarket migration", "zh": "向主流市场迁移" }
+    ],
+    "firstSteps": [
+      { "en": "Describe the incumbent's mainstream performance dimensions before assessing the entrant.", "zh": "先描述在位者服务主流市场的性能维度，再评估新进入者。" },
+      { "en": "Look for foothold evidence, not just cheaper pricing or new technology.", "zh": "寻找立足点证据，而不只是更便宜或新技术。" }
+    ],
+    "outcomes": [
+      { "en": "A strict disruption diagnosis and the riskiest assumptions to monitor or test.", "zh": "一份严格颠覆诊断，以及需要监测或测试的最危险假设。" }
+    ],
+    "practicePrompts": [
+      { "en": "What makes it rational for the incumbent to ignore this entrant at the beginning?", "zh": "什么原因让在位者一开始理性地忽视这个新进入者？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "christensen-innovators-dilemma", "chapterSlug": "ch01-intro" },
+      { "type": "resourceChapter", "slug": "christensen-innovators-dilemma", "chapterSlug": "ch06-disruption-model" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "portfolio-map" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ]
+  },
   "related": ["business-model-canvas", "portfolio-map", "value-proposition-canvas", "three-horizons-map"],
   "relatedNotes": {
     "business-model-canvas": {

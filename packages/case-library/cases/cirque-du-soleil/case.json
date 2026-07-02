@@ -36,5 +36,43 @@
   "storyCount": 2,
   "appliesStrategyFrameworks": [
     "blue-ocean-strategy"
-  ]
+  ],
+  "learning": {
+    "level": "beginner",
+    "headline": {
+      "en": "Blue Ocean Strategy through category reconstruction",
+      "zh": "通过重构品类理解蓝海战略"
+    },
+    "whyOpen": {
+      "en": "Cirque du Soleil shows the four actions clearly: eliminate costly circus conventions, borrow theatre cues, and create a premium adult entertainment category.",
+      "zh": "太阳马戏团清楚展示了四步动作：剔除高成本马戏惯例，借鉴剧场元素，创造高端成人娱乐品类。"
+    },
+    "audience": {
+      "en": "Beginners who need a vivid example of changing the basis of competition.",
+      "zh": "适合需要直观看到“改变竞争基础”的新手。"
+    },
+    "keyConcepts": [
+      { "en": "Eliminate", "zh": "剔除" },
+      { "en": "Raise", "zh": "提升" },
+      { "en": "Create", "zh": "创造" },
+      { "en": "Category reconstruction", "zh": "品类重构" }
+    ],
+    "commonMisreads": [
+      { "en": "The case is not simply premium circus; it removes parts of circus economics while borrowing from theatre and opera.", "zh": "这个案例不是简单的高端马戏；它去掉了部分马戏经济结构，同时借用剧场和歌剧。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which expensive industry convention could you remove without reducing the value your target audience truly seeks?", "zh": "哪一个昂贵行业惯例可以被移除，却不降低目标受众真正追求的价值？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "blue-ocean-strategy", "chapterSlug": "ch02-tools" },
+      { "type": "resourceChapter", "slug": "blue-ocean-strategy", "chapterSlug": "ch03-reconstruct" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "blue-ocean-strategy-canvas" },
+      { "type": "case", "slug": "yellow-tail" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" }
+    ]
+  }
 }

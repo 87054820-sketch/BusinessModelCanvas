@@ -2,7 +2,8 @@
 import { readdir, stat } from 'node:fs/promises';
 import { join } from 'node:path';
 
-const base = (process.argv[2] ?? 'https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com').replace(/\/+$/, '');
+const DEFAULT_URL = 'https://pingarden-274959-7-1259605451.sh.run.tcloudbase.com';
+const base = parseBaseUrl(process.argv.slice(2)).replace(/\/+$/, '');
 
 async function latestZip() {
   const dir = join(process.cwd(), 'apps/cli/build/skill');
@@ -41,3 +42,12 @@ check('skill-pack info', info.ok, `HTTP ${info.status}; ${info.data?.filename ??
 if (local && info.ok) check('skill zip matches local', info.data?.filename === local.filename && info.data?.sizeBytes === local.sizeBytes);
 check('library context has chapter hints', typeof library.data?.markdown === 'string' && /chapter\s+ch|章节|Chapter index/.test(library.data.markdown), `HTTP ${library.status}`);
 check('resource-context route exists', resource.ok, `HTTP ${resource.status}`);
+
+function parseBaseUrl(argv) {
+  const args = argv.filter((arg) => arg !== '--');
+  for (let i = 0; i < args.length; i += 1) {
+    if (args[i] === '--url' && args[i + 1]) return args[i + 1];
+    if (!args[i].startsWith('-')) return args[i];
+  }
+  return DEFAULT_URL;
+}

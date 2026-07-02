@@ -34,5 +34,45 @@
   ],
   "appliesPatterns": [
     "from-sales-to-platform"
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "From hardware sales to a developer ecosystem platform",
+      "zh": "从硬件销售走向开发者生态平台"
+    },
+    "whyOpen": {
+      "en": "CUDA helps explain how a company can turn a product advantage into an ecosystem moat by recruiting developers, tools, libraries, and workloads.",
+      "zh": "CUDA 帮助解释公司如何把产品优势变成生态护城河：开发者、工具、库和工作负载一起形成平台。"
+    },
+    "audience": {
+      "en": "Readers studying developer platforms, complements, AI infrastructure, or platform transitions.",
+      "zh": "适合研究开发者平台、互补品、AI 基础设施或平台转型的读者。"
+    },
+    "keyConcepts": [
+      { "en": "Developer ecosystem", "zh": "开发者生态" },
+      { "en": "Complementors", "zh": "互补方" },
+      { "en": "Switching cost", "zh": "转换成本" },
+      { "en": "Platform transition", "zh": "平台化转型" },
+      { "en": "Value curve shift", "zh": "价值曲线迁移" }
+    ],
+    "commonMisreads": [
+      { "en": "CUDA is not only technical tooling; it changes the business model by making GPU demand depend on ecosystem adoption.", "zh": "CUDA 不只是技术工具；它让 GPU 需求依赖生态采用，从而改变商业模式。" }
+    ],
+    "practicePrompts": [
+      { "en": "What would third parties build on your product if the platform layer were strong enough?", "zh": "如果你的平台层足够强，第三方会在你的产品上构建什么？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "platform-revolution", "chapterSlug": "ch03-architecture" },
+      { "type": "resourceChapter", "slug": "blue-ocean-strategy", "chapterSlug": "ch03-reconstruct" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "platform-ecosystem-map" },
+      { "type": "canvas", "slug": "blue-ocean-strategy-canvas" },
+      { "type": "case", "slug": "visa" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ]
+  }
 }

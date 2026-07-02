@@ -50,6 +50,50 @@
       "zh": "挑出 BMC 上最致命的假设,为每条设计最便宜的实验。"
     }
   },
+  "learning": {
+    "level": "beginner",
+    "headline": {
+      "en": "A first map of how value and money move through a business",
+      "zh": "先看懂一个业务如何创造价值并赚到钱"
+    },
+    "whyOpen": {
+      "en": "Open this when a case feels scattered: the 9 blocks turn product, customer, operations, partners, cost, and revenue into one system you can inspect.",
+      "zh": "当一个案例看起来信息很多、抓不住主线时，先打开这张画布：9 个模块会把产品、客户、运营、伙伴、成本和收入放成一个系统。"
+    },
+    "audience": {
+      "en": "New users who need a structured overview before reading deeper cases or changing their own model.",
+      "zh": "适合还没有商业模式框架的新手，先形成全局结构，再读案例或改自己的项目。"
+    },
+    "keyConcepts": [
+      { "en": "Value creation", "zh": "价值创造" },
+      { "en": "Value delivery", "zh": "价值传递" },
+      { "en": "Value capture", "zh": "价值获取" },
+      { "en": "Fit between blocks", "zh": "模块之间的匹配" }
+    ],
+    "firstSteps": [
+      { "en": "Start from Customer Segments and Value Propositions before filling operations.", "zh": "先填客户细分和价值主张，再进入运营侧模块。" },
+      { "en": "Mark any block that is a guess rather than observed evidence.", "zh": "把只是猜测、还没有证据的模块标出来。" }
+    ],
+    "outcomes": [
+      { "en": "A one-page description of how the business works today or could work next.", "zh": "产出一页纸，说明这个业务当前或下一版如何运转。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which block would break first if your customer acquisition channel became twice as expensive?", "zh": "如果获客渠道成本翻倍，哪一个模块会最先失效？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch01-canvas" }
+    ],
+    "relatedRefs": [
+      { "type": "case", "slug": "nespresso" },
+      { "type": "case", "slug": "gillette" },
+      { "type": "case", "slug": "uber" },
+      { "type": "case", "slug": "airbnb" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "value-proposition-canvas" },
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ]
+  },
   "zones": [
     {
       "id": "key-partners",

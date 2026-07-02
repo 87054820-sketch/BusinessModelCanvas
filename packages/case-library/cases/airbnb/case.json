@@ -49,5 +49,45 @@
   ],
   "appliesStrategyFrameworks": [
     "platform-strategy"
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "A trust-building marketplace, not just spare-room supply",
+      "zh": "一个信任构建型市场平台，而不只是闲置房源供给"
+    },
+    "whyOpen": {
+      "en": "Airbnb shows how a platform turns idle supply into bookable inventory by designing trust, reviews, payments, and host incentives.",
+      "zh": "Airbnb 展示了平台如何通过信任、评论、支付和房东激励，把闲置供给变成可预订库存。"
+    },
+    "audience": {
+      "en": "Readers studying peer-to-peer marketplaces, trust substitutes, and cold-start supply creation.",
+      "zh": "适合研究 P2P 市场平台、信任替代物和冷启动供给创造的读者。"
+    },
+    "keyConcepts": [
+      { "en": "Peer-to-peer marketplace", "zh": "P2P 市场平台" },
+      { "en": "Trust substitute", "zh": "信任替代物" },
+      { "en": "Reviews as asset", "zh": "评论作为资产" },
+      { "en": "Inventory liquidity", "zh": "库存流动性" },
+      { "en": "Host incentives", "zh": "房东激励" }
+    ],
+    "commonMisreads": [
+      { "en": "The story is not just asset-light growth; without governance and trust, asset-light supply can become low-quality noise.", "zh": "这个故事不只是轻资产增长；没有治理和信任，轻资产供给会变成低质量噪音。" }
+    ],
+    "practicePrompts": [
+      { "en": "What would make your supply side feel safe before demand is proven?", "zh": "在需求尚未被证明前，什么会让你的供给侧觉得安全？" },
+      { "en": "Which trust signal compounds over time instead of being recreated for every transaction?", "zh": "哪一种信任信号会随时间复利，而不是每笔交易重新建立？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "platform-revolution", "chapterSlug": "ch03-architecture" },
+      { "type": "resourceChapter", "slug": "platform-revolution", "chapterSlug": "ch05-governance" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "platform-ecosystem-map" },
+      { "type": "case", "slug": "uber" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "customer-journey" }
+    ]
+  }
 }

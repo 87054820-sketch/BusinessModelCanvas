@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import type {
   CopilotAiChatMessage,
   CopilotAiProvider,
@@ -9,9 +10,11 @@ import type {
   CopilotAiMetricCallback,
 } from './aiProvider.js';
 
-const DEFAULT_BASE_URL = 'https://api.kimi.com/coding/v1';
-const DEFAULT_MODEL = 'kimi-for-coding';
+const DEFAULT_BASE_URL = 'https://api.moonshot.cn/v1';
+const DEFAULT_MODEL = 'kimi-k2.7-code-highspeed';
 const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
+const LEGACY_CODE_BASE_URL = 'https://api.kimi.com/coding/v1';
+const LEGACY_CODE_MODEL = 'kimi-for-coding';
 
 interface KimiHttpProviderOptions {
   provider?: CopilotAiProviderKind;
@@ -20,6 +23,34 @@ interface KimiHttpProviderOptions {
   baseUrl?: string;
   model?: string;
   requestTimeoutMs?: number;
+  maxCompletionTokens?: number;
+  promptCache?: boolean;
+  promptCacheKey?: string;
+}
+
+export interface KimiHttpDefaults {
+  baseUrl: string;
+  model: string;
+  requestTimeoutMs: number;
+  maxCompletionTokens?: number;
+  promptCache: boolean;
+}
+
+export function resolveKimiHttpDefaults(env: NodeJS.ProcessEnv = process.env): KimiHttpDefaults {
+  const preset = env.PINGARDEN_KIMI_HTTP_PRESET?.trim().toLowerCase();
+  const isLegacyCodePreset = preset === 'legacy-code' || preset === 'kimi-for-coding';
+  const presetBaseUrl = isLegacyCodePreset ? LEGACY_CODE_BASE_URL : DEFAULT_BASE_URL;
+  const presetModel = isLegacyCodePreset ? LEGACY_CODE_MODEL : DEFAULT_MODEL;
+
+  return {
+    baseUrl: trimTrailingSlash(env.PINGARDEN_KIMI_HTTP_BASE_URL ?? presetBaseUrl),
+    model: env.PINGARDEN_KIMI_HTTP_MODEL ?? presetModel,
+    requestTimeoutMs: parsePositiveInt(env.PINGARDEN_KIMI_HTTP_TIMEOUT_MS, DEFAULT_REQUEST_TIMEOUT_MS),
+    maxCompletionTokens: parseOptionalPositiveInt(
+      env.PINGARDEN_KIMI_HTTP_MAX_COMPLETION_TOKENS ?? env.PINGARDEN_KIMI_HTTP_MAX_TOKENS,
+    ),
+    promptCache: parseBoolean(env.PINGARDEN_KIMI_HTTP_PROMPT_CACHE),
+  };
 }
 
 export class KimiHttpProvider implements CopilotAiProvider {
@@ -29,14 +60,28 @@ export class KimiHttpProvider implements CopilotAiProvider {
   private readonly baseUrl: string;
   private readonly model: string;
   private readonly requestTimeoutMs: number;
+  private readonly maxCompletionTokens?: number;
+  private readonly promptCache: boolean;
+  private readonly promptCacheKey?: string;
 
   constructor(options: KimiHttpProviderOptions = {}) {
     this.provider = options.provider ?? 'kimi-http';
     this.modelId = options.modelId ?? 'kimi';
     this.apiLabel = options.apiLabel ?? 'Kimi API';
-    this.baseUrl = trimTrailingSlash(options.baseUrl ?? process.env.PINGARDEN_KIMI_HTTP_BASE_URL ?? DEFAULT_BASE_URL);
-    this.model = options.model ?? process.env.PINGARDEN_KIMI_HTTP_MODEL ?? DEFAULT_MODEL;
-    this.requestTimeoutMs = options.requestTimeoutMs ?? parsePositiveInt(process.env.PINGARDEN_KIMI_HTTP_TIMEOUT_MS, DEFAULT_REQUEST_TIMEOUT_MS);
+    const kimiDefaults: KimiHttpDefaults = this.provider === 'kimi-http'
+      ? resolveKimiHttpDefaults()
+      : {
+          baseUrl: DEFAULT_BASE_URL,
+          model: DEFAULT_MODEL,
+          requestTimeoutMs: DEFAULT_REQUEST_TIMEOUT_MS,
+          promptCache: false,
+        };
+    this.baseUrl = trimTrailingSlash(options.baseUrl ?? kimiDefaults.baseUrl);
+    this.model = options.model ?? kimiDefaults.model;
+    this.requestTimeoutMs = options.requestTimeoutMs ?? kimiDefaults.requestTimeoutMs;
+    this.maxCompletionTokens = options.maxCompletionTokens ?? kimiDefaults.maxCompletionTokens;
+    this.promptCache = options.promptCache ?? kimiDefaults.promptCache;
+    this.promptCacheKey = options.promptCacheKey;
   }
 
   async health(): Promise<CopilotAiProviderHealth> {
@@ -91,21 +136,30 @@ export class KimiHttpProvider implements CopilotAiProvider {
         messageCount: messages.length,
         systemPromptChars: input.systemPromptText.length,
         latestUserChars: input.latestUserMsg.length,
+        maxCompletionTokens: this.maxCompletionTokens ?? null,
+        promptCache: this.promptCache,
       },
     });
+    const requestBody: Record<string, unknown> = {
+      model: this.model,
+      stream: true,
+      messages,
+    };
+    if (this.maxCompletionTokens) {
+      requestBody.max_completion_tokens = this.maxCompletionTokens;
+    }
+    if (this.promptCache) {
+      requestBody.prompt_cache_key = this.promptCacheKey ?? buildPromptCacheKey(this.provider, this.model, input.systemPromptText);
+    }
 
     try {
       const res = await fetch(`${this.baseUrl}/chat/completions`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${input.apiKey}`,
+          Authorization: authorizationHeader(input.apiKey),
         },
-        body: JSON.stringify({
-          model: this.model,
-          stream: true,
-          messages,
-        }),
+        body: JSON.stringify(requestBody),
         signal: controller.signal,
       });
 
@@ -317,6 +371,34 @@ function parsePositiveInt(raw: string | undefined, fallback: number): number {
   return Number.isFinite(parsed) && parsed > 0 ? Math.floor(parsed) : fallback;
 }
 
+function parseOptionalPositiveInt(raw: string | undefined): number | undefined {
+  const parsed = Number(raw);
+  return Number.isFinite(parsed) && parsed > 0 ? Math.floor(parsed) : undefined;
+}
+
+function parseBoolean(raw: string | undefined): boolean {
+  if (!raw) return false;
+  return ['1', 'true', 'yes', 'on'].includes(raw.trim().toLowerCase());
+}
+
+function authorizationHeader(apiKey: string): string {
+  const trimmed = apiKey.trim();
+  const authorizationLine = trimmed.match(/^Authorization\s*:\s*(.+)$/i)?.[1]?.trim() ?? trimmed;
+  return /^Bearer\s+/i.test(authorizationLine) ? authorizationLine : `Bearer ${authorizationLine}`;
+}
+
 function trimTrailingSlash(input: string): string {
   return input.replace(/\/+$/, '');
+}
+
+function buildPromptCacheKey(provider: CopilotAiProviderKind, model: string, systemPromptText: string): string {
+  const hash = createHash('sha256')
+    .update(provider)
+    .update('\0')
+    .update(model)
+    .update('\0')
+    .update(systemPromptText)
+    .digest('hex')
+    .slice(0, 24);
+  return `pingarden:${provider}:${hash}`;
 }

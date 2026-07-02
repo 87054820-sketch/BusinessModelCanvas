@@ -85,6 +85,20 @@ quarter:
    row? Stuck means under-tested. Either invest, pivot, or kill, but
    don't let it sit.
 
+## Inputs, outputs, and handoff
+
+Good inputs are not opinions about which ideas the team likes. Use
+revenue, margin, growth, disruption signals, experiment evidence,
+investment level, strategic fit, and operating constraints. If the data
+is weak, mark the bubble as a hypothesis and write the evidence gap
+next to it.
+
+The output is a sequence of portfolio actions, not a decorative map:
+invest, test, pivot, kill, transfer, improve, defend, reinvent, or
+divest. Use the module chapters to decide which axis is unclear. Then
+handoff any single bubble to the Business Model Canvas and any uncertain
+Explore bubble to the Experiment Canvas or Evidence Scorecard.
+
 ## Common failure modes
 
 - **All-Exploit, no-Explore.** The classic incumbent mistake. The map

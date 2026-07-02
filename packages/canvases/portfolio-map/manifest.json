@@ -24,6 +24,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "intermediate",
+    "headline": { "en": "Compare explore and exploit bets in one portfolio", "zh": "在一张图里比较探索和利用型业务" },
+    "whyOpen": { "en": "Use this when leaders need to allocate attention and funding across mature businesses and uncertain new bets.", "zh": "当管理层需要在成熟业务和不确定新押注之间分配注意力与资金时使用。" },
+    "audience": { "en": "Teams managing multiple business models, ventures, or innovation initiatives.", "zh": "适合管理多套商业模式、创业项目或创新项目的团队。" },
+    "keyConcepts": [
+      { "en": "Explore", "zh": "探索" },
+      { "en": "Exploit", "zh": "利用" },
+      { "en": "Innovation risk", "zh": "创新风险" },
+      { "en": "Expected return", "zh": "预期收益" }
+    ],
+    "firstSteps": [
+      { "en": "Map each initiative as one pin with evidence, not as a wish list.", "zh": "每个项目作为一个有证据的 pin，而不是愿望清单。" },
+      { "en": "Separate funding decisions from learning decisions.", "zh": "区分资金决策和学习决策。" }
+    ],
+    "outcomes": [
+      { "en": "A portfolio view that identifies invest, test, protect, transfer, and retire actions.", "zh": "一张能识别投入、测试、保护、转入和终止动作的组合图。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which Explore bet deserves learning budget but not scale budget yet?", "zh": "哪个探索项目值得学习预算，但还不值得规模化预算？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "the-invincible-company", "chapterSlug": "ch01-explore" },
+      { "type": "resourceChapter", "slug": "the-invincible-company", "chapterSlug": "ch02-exploit" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "three-horizons-map" }
+    ]
+  },
   "plugin": "axis-grid",
   "related": ["business-model-canvas"],
   "relatedNotes": {

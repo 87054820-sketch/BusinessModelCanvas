@@ -26,3 +26,22 @@ Gains here feed directly into the **Gains** column of the Value
 Proposition Canvas. Each "gain creator" you design later should point
 at one of the stickies in this quadrant. If it doesn't, you're
 producing a benefit nobody wished for.
+
+## Good Answer vs Weak Answer
+
+A good gain is a customer-defined success state that can later become a VPC Gain or Gain Creator. A weak answer is the company's desired business result, such as "increase account expansion."
+
+## Sticky Examples
+
+- "Can show the CFO a clean denial trend before the cash review."
+- "Looks credible to engineering because the roadmap trade-off is evidence-based."
+
+## Transfer Questions
+
+- What would the customer call a win?
+- Is the gain required, expected, desired, or surprising?
+- How could a product, service, or business model create this gain?
+
+## Source Grounding
+
+Value Proposition Design distinguishes required, expected, desired, and unexpected gains. Empathy Map gains should preserve the customer's language so the later VPC does not drift into seller language.

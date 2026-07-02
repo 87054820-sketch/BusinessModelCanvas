@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "canvasId": "business-model-environment",
+  "sourcePolicy": "formal-books-primary-professional-web-secondary",
+  "sources": [
+    { "id": "bmg-ch04-strategy", "type": "resourceChapter", "tier": "formal-book", "label": "Business Model Generation, chapter 4: Strategy", "resourceSlug": "business-model-generation", "chapterSlug": "ch04-strategy" },
+    { "id": "porter-cs-ch01", "type": "resourceChapter", "tier": "formal-book", "label": "Competitive Strategy, chapter 1: Five Forces", "resourceSlug": "porter-competitive-strategy", "chapterSlug": "ch01-five-forces" },
+    { "id": "world-bank-data", "type": "professionalWeb", "tier": "academic-or-industry-report", "label": "World Bank Data Catalog", "url": "https://datacatalog.worldbank.org/" },
+    { "id": "oecd-data", "type": "professionalWeb", "tier": "academic-or-industry-report", "label": "OECD Data Explorer", "url": "https://data-explorer.oecd.org/" }
+  ],
+  "coverage": {
+    "intro": ["bmg-ch04-strategy", "porter-cs-ch01"],
+    "body": ["bmg-ch04-strategy", "porter-cs-ch01", "world-bank-data", "oecd-data"],
+    "blocks": {
+      "key-trends": ["bmg-ch04-strategy", "oecd-data"],
+      "industry-forces": ["porter-cs-ch01", "bmg-ch04-strategy"],
+      "market-forces": ["bmg-ch04-strategy", "world-bank-data"],
+      "macroeconomic-forces": ["world-bank-data", "oecd-data"]
+    }
+  }
+}

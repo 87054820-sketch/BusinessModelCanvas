@@ -29,3 +29,15 @@ A strong Scenario Matrix changes what the team would do. If every scenario leads
 - Choosing uncertainties that describe the same force twice.
 - Ignoring early signals, so scenario planning cannot be updated over time.
 - Treating the workshop output as the end instead of deploying scenarios into decisions.
+
+# Inputs and Outputs
+
+Inputs include the focal decision, environmental signals, trends, potential uncertainties, current BMC assumptions, and the strategic options being considered. Outputs include four named futures, implications for the model, early signals to monitor, and robust moves that remain useful across more than one future.
+
+# Related Learning Path
+
+Read *The Art of the Long View* for scenario logic, driving forces, wind-tunneling, implications, and early indicators. Read *Scenario Planning in Organizations* when scenarios must become an organizational routine rather than a one-off workshop. HBR's strategy-under-uncertainty framing is useful for deciding when scenarios are more appropriate than a single forecast.
+
+# Next Canvas
+
+After this matrix, return to BMC to revise the model under each future, use Portfolio Map to compare options, and use Evidence Scorecard when an early signal or strategic assumption needs active monitoring.

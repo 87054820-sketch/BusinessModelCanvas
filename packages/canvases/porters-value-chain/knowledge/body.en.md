@@ -11,6 +11,7 @@
 
 # How to interpret
 
+- **Concept definition.** A value chain is not a process map. It means the set of activities that create cost, differentiation, and margin. The reason to use it is to explain *why* a strategy is executable at the activity level.
 - **Cost-advantage dominates.** The firm wins through scale, standardisation, or process discipline. Defend it by improving the cost frontier (automation, capacity, supplier consolidation). Beware: a sustained price war erodes margin without strengthening the moat.
 - **Differentiation-advantage dominates.** The firm wins through quality, service, or brand. Defend it by keeping the differentiating activities ahead of competitors and ensuring the customer continues to value the difference enough to pay the premium.
 - **Mixed (both colours on multiple activities).** Possible but rare. Patagonia is an example — responsible sourcing is both cost discipline AND brand differentiator. Most attempts at "stuck in the middle" fail; verify the linkages actually compound.
@@ -25,6 +26,22 @@
 - For platform / service businesses, Inbound and Outbound Logistics may be near-empty — that is correct; Technology Development and Procurement of capacity dominate instead.
 - Every load-bearing activity (yellow or blue) is mapped to a BMC block via a follow-on sticky or note.
 - Margin zone names where money actually comes from — cost discipline, differentiation premium, or both.
+
+# Sticky-ready examples
+
+- **Inbound Logistics**: "Supplier QA data arrives before materials; reduces rework in Operations."
+- **Operations**: "High-mix assembly cell can switch SKUs within 20 minutes; supports premium customization."
+- **Technology Development**: "Routing algorithm lowers failed delivery attempts by 12%; links to Outbound Logistics and Service."
+- **Marketing & Sales**: "Sales scripts sell reliability premium, not lowest price; must be backed by Service response time."
+- **Margin**: "Gross margin comes from fewer rework loops and premium SLA pricing, not just higher list price."
+
+# Transfer questions
+
+- For your project, write one decision output: which activity will you invest in, redesign, partner for, or stop doing?
+- Which activity creates value customers would actually pay for?
+- Which linkage would be hardest for a competitor to copy as a system?
+- Which pink leak would destroy the strategy if left unfixed for one quarter?
+- Which BMC block must change after this analysis: Key Activities, Key Resources, Key Partners, Cost Structure, or Revenue Streams?
 
 # Common mistakes
 

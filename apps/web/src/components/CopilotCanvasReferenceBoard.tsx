@@ -5,10 +5,13 @@ import type {
   CanvasDefaultColorLegendEntry,
   CanvasMeta,
   CaseLibraryDetail,
+  CopilotResolvedReference,
+  CopilotReferenceCatalog,
+  CopilotTypedReference,
   Lang,
   LibraryResource,
 } from '@pingarden/shared';
-import { effectiveObjectTypes } from '@pingarden/shared';
+import { effectiveObjectTypes, resolveCopilotReferences } from '@pingarden/shared';
 import { api, type CanvasDefSummary } from '../api/client';
 import { libraryApi } from '../api/library';
 import { projectsApi } from '../api/projects';
@@ -27,7 +30,6 @@ import { CanvasThumb } from '../canvas/CanvasThumb';
 import { TemplatePreviewModal } from './TemplatePreviewModal';
 
 const UUID_RE = /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/gi;
-const KEBAB_RE = /`?\b[a-z][a-z0-9]+(?:-[a-z0-9]+)+\b`?/g;
 const MAX_CANVAS_REFERENCES = 4;
 const MAX_TEMPLATE_REFERENCES = 8;
 const MAX_CASE_REFERENCES = 8;
@@ -84,9 +86,11 @@ export function useCopilotRecommendationReferences(
   displayName: string,
   lang: Lang,
   attachedRef?: AttachedRef | null,
+  structuredReferences: CopilotTypedReference[] = [],
 ): CopilotRecommendationReferences {
   const ids = useMemo(() => extractCandidateIds(content), [content]);
   const idsKey = ids.join('|');
+  const structuredRefsKey = useMemo(() => JSON.stringify(structuredReferences), [structuredReferences]);
   const contextKey = attachedRef ? attachedRefKey(attachedRef) : '';
   const [refs, setRefs] = useState<CopilotRecommendationReferences>(EMPTY_RECOMMENDATION_REFS);
 
@@ -102,11 +106,23 @@ export function useCopilotRecommendationReferences(
       const defNameById = new Map(
         defs.map((def) => [def.id, def.name[lang] ?? def.name.en ?? def.id]),
       );
-      const canvasCandidates = extractCanvasCandidates(content, defs);
-      const [caseSlugCandidates, resourceRefs] = await Promise.all([
-        extractCaseSlugs(content, displayName),
-        extractResourceRefs(content, lang),
+      const [caseEntries, resources, patterns, strategyFrameworks, experiments] = await Promise.all([
+        libraryApi.list(displayName).catch(() => []),
+        libraryApi.listResources().catch(() => []),
+        libraryApi.listPatterns().catch(() => []),
+        libraryApi.listStrategyFrameworks().catch(() => []),
+        libraryApi.listExperiments().catch(() => []),
       ]);
+      const referenceResolution = resolveCopilotReferences({
+        text: content,
+        references: structuredReferences,
+        lang,
+        catalog: buildReferenceCatalog(defs, caseEntries, resources, patterns, strategyFrameworks, experiments),
+      });
+      const resolvedReferences = referenceResolution.resolved;
+      const canvasCandidates = extractCanvasCandidates(content, defs, resolvedReferences);
+      const caseSlugCandidates = extractCaseSlugsFromResolution(resolvedReferences);
+      const resourceRefs = extractResourceRefsFromResolution(resolvedReferences, resources);
 
       const uuidRefs = (
         await Promise.all(
@@ -160,10 +176,7 @@ export function useCopilotRecommendationReferences(
         detail,
         matchedCanvases: matchCanvases(detail.canvases, canvasCandidates, defNameById, lang),
       }));
-      const unresolvedCanvasLabels =
-        canvasCandidates.length > 0 && canvasRefs.length === 0 && templateRefs.length === 0
-          ? canvasCandidates.map((item) => item.label)
-          : [];
+      const unresolvedCanvasLabels = unresolvedCanvasLabelsFromResolution(referenceResolution.missing);
 
       if (!cancelled) {
         setRefs({ canvasRefs, templateRefs, caseRefs, resourceRefs, unresolvedCaseSlugs, unresolvedCanvasLabels });
@@ -173,7 +186,7 @@ export function useCopilotRecommendationReferences(
     return () => {
       cancelled = true;
     };
-  }, [attachedRef, content, contextKey, displayName, idsKey, lang]);
+  }, [attachedRef, content, contextKey, displayName, idsKey, lang, structuredRefsKey]);
 
   return refs;
 }
@@ -661,62 +674,120 @@ function extractCandidateIds(content: string): string[] {
   return Array.from(new Set(matches.map((item) => item.toLowerCase())));
 }
 
-async function extractCaseSlugs(content: string, displayName: string): Promise<string[]> {
-  const explicit = Array.from(
-    content.matchAll(/(?:case\s*)?slug\s*[:：]\s*`?([a-z][a-z0-9]+(?:-[a-z0-9]+)+)`?/gi),
-    (match) => match[1]!.toLowerCase(),
+function buildReferenceCatalog(
+  defs: CanvasDefSummary[],
+  cases: Array<{ slug: string; companyName: { en: string; zh: string }; summary?: { en: string; zh: string } }>,
+  resources: LibraryResource[],
+  patterns: Array<{ slug: string; name: { en: string; zh: string }; summary?: { en: string; zh: string } }>,
+  strategyFrameworks: Array<{ slug: string; name: { en: string; zh: string }; summary?: { en: string; zh: string }; relatedCanvasDefIds?: string[] }>,
+  experiments: Array<{ slug: string; name: { en: string; zh: string }; summary?: { en: string; zh: string }; appliesToCanvases?: string[] }>,
+): CopilotReferenceCatalog {
+  return {
+    entries: [
+      ...defs.map((def) => ({
+        kind: 'canvasTemplate' as const,
+        id: def.id,
+        defId: def.id,
+        label: def.name.zh || def.name.en || def.id,
+        aliases: [def.name.en, def.name.zh, ...(CANVAS_ALIASES[def.id] ?? [])].filter(Boolean),
+      })),
+      ...cases.map((entry) => ({
+        kind: 'case' as const,
+        id: entry.slug,
+        slug: entry.slug,
+        label: entry.companyName.zh || entry.companyName.en || entry.slug,
+        aliases: [entry.companyName.en, entry.companyName.zh, entry.slug].filter(Boolean),
+        summary: entry.summary?.zh || entry.summary?.en,
+      })),
+      ...resources.map((resource) => ({
+        kind: 'resource' as const,
+        id: resource.slug,
+        slug: resource.slug,
+        resourceSlug: resource.slug,
+        label: resource.title.zh || resource.title.en || resource.slug,
+        aliases: [resource.title.en, resource.title.zh, resource.slug].filter(Boolean),
+        summary: resource.summary.zh || resource.summary.en,
+      })),
+      ...patterns.map((pattern) => ({
+        kind: 'pattern' as const,
+        id: pattern.slug,
+        slug: pattern.slug,
+        label: pattern.name.zh || pattern.name.en || pattern.slug,
+        aliases: [pattern.name.en, pattern.name.zh, pattern.slug].filter(Boolean),
+        summary: pattern.summary?.zh || pattern.summary?.en,
+      })),
+      ...strategyFrameworks.map((framework) => ({
+        kind: 'strategyFramework' as const,
+        id: framework.slug,
+        slug: framework.slug,
+        label: framework.name.zh || framework.name.en || framework.slug,
+        aliases: [framework.name.en, framework.name.zh, framework.slug, ...(framework.relatedCanvasDefIds ?? [])].filter(Boolean),
+        summary: framework.summary?.zh || framework.summary?.en,
+      })),
+      ...experiments.map((experiment) => ({
+        kind: 'experiment' as const,
+        id: experiment.slug,
+        slug: experiment.slug,
+        label: experiment.name.zh || experiment.name.en || experiment.slug,
+        aliases: [experiment.name.en, experiment.name.zh, experiment.slug, ...(experiment.appliesToCanvases ?? [])].filter(Boolean),
+        summary: experiment.summary?.zh || experiment.summary?.en,
+      })),
+    ],
+  };
+}
+
+function extractCaseSlugsFromResolution(resolved: CopilotResolvedReference[]): string[] {
+  return Array.from(new Set(
+    resolved
+      .map((item) => item.reference.kind === 'case' ? item.reference.slug ?? item.target?.slug : null)
+      .filter((slug): slug is string => Boolean(slug)),
+  ));
+}
+
+function extractResourceRefsFromResolution(
+  resolved: CopilotResolvedReference[],
+  resources: LibraryResource[],
+): CopilotResourceReference[] {
+  const slugs = new Set(
+    resolved
+      .map((item) =>
+        item.reference.kind === 'resource' || item.reference.kind === 'resourceChapter'
+          ? item.reference.resourceSlug ?? item.reference.slug ?? item.target?.resourceSlug ?? item.target?.slug
+          : null,
+      )
+      .filter((slug): slug is string => Boolean(slug)),
   );
-  const kebabCandidates = extractKebabTokens(content);
-  const entries = await libraryApi.list(displayName).catch(() => []);
-  if (entries.length === 0 && explicit.length === 0 && kebabCandidates.length === 0) return [];
-  const lower = content.toLowerCase();
-  const caseSlugs = new Set(entries.map((entry) => entry.slug));
-  const nameMatches = entries
-    .filter((entry) =>
-      [entry.slug, entry.companyName.en, entry.companyName.zh]
-        .filter(Boolean)
-        .some((name) => lower.includes(name.toLowerCase())),
-    )
-    .map((entry) => entry.slug);
-  return Array.from(new Set([
-    ...explicit,
-    ...kebabCandidates.filter((slug) => caseSlugs.has(slug)),
-    ...nameMatches,
-  ]));
+  return resources
+    .filter((resource) => slugs.has(resource.slug))
+    .slice(0, MAX_RESOURCE_REFERENCES)
+    .map((resource) => ({ resource }));
 }
 
-async function extractResourceRefs(content: string, lang: Lang): Promise<CopilotResourceReference[]> {
-  const resources = await libraryApi.listResources().catch(() => []);
-  if (resources.length === 0) return [];
-
-  const lower = content.toLowerCase();
-  const kebabCandidates = new Set(extractKebabTokens(content));
-  const matched = resources.filter((resource) => {
-    if (kebabCandidates.has(resource.slug)) return true;
-    const title = resource.title[lang] ?? resource.title.en;
-    const altTitle = lang === 'zh' ? resource.title.en : resource.title.zh;
-    return [title, altTitle]
-      .filter(Boolean)
-      .some((item) => lower.includes(item.toLowerCase()));
-  });
-
-  return matched.slice(0, MAX_RESOURCE_REFERENCES).map((resource) => ({ resource }));
+function unresolvedCanvasLabelsFromResolution(missing: CopilotResolvedReference[]): string[] {
+  return missing
+    .filter((item) => item.reference.kind === 'canvasInstance' && item.reference.intent === 'open')
+    .map((item) => item.reference.label);
 }
 
-function extractCanvasCandidates(content: string, defs: CanvasDefSummary[]): CanvasCandidate[] {
+function extractCanvasCandidates(
+  content: string,
+  defs: CanvasDefSummary[],
+  resolvedReferences: CopilotResolvedReference[] = [],
+): CanvasCandidate[] {
   const lower = content.toLowerCase();
   const found = new Map<string, string>();
+  for (const item of resolvedReferences) {
+    const ref = item.reference;
+    if (ref.kind !== 'canvasTemplate' && ref.kind !== 'canvasInstance') continue;
+    const defId = ref.defId ?? item.target?.defId;
+    if (defId) found.set(defId, ref.label);
+  }
   for (const def of defs) {
     const names = [def.id, def.name.en, def.name.zh, ...(CANVAS_ALIASES[def.id] ?? [])].filter(Boolean);
     const match = names.find((name) => lower.includes(name.toLowerCase()));
     if (match) found.set(def.id, def.name.zh || def.name.en || match);
   }
   return Array.from(found, ([defId, label]) => ({ defId, label }));
-}
-
-function extractKebabTokens(content: string): string[] {
-  const matches = Array.from(content.matchAll(KEBAB_RE), (match) => match[0]!.replace(/`/g, '').toLowerCase());
-  return Array.from(new Set(matches));
 }
 
 async function resolveContextCanvasRefs(

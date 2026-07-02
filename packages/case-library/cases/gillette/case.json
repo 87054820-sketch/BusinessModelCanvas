@@ -48,5 +48,42 @@
   },
   "appliesStrategyFrameworks": [
     "porters-value-chain"
-  ]
+  ],
+  "learning": {
+    "level": "beginner",
+    "headline": {
+      "en": "The original bait-and-hook pattern in its simplest form",
+      "zh": "最原型、最容易看懂的诱饵-钩子模式"
+    },
+    "whyOpen": {
+      "en": "Read Gillette before Nespresso or printer-ink examples. It isolates the basic mechanism: low upfront adoption, protected consumable revenue, and recurring customer lock-in.",
+      "zh": "在读 Nespresso 或打印机墨水之前先读吉列。它把基本机制拆得很清楚：低门槛采用、受保护的耗材收入、持续锁定客户。"
+    },
+    "audience": {
+      "en": "Beginners learning why revenue streams can be separated across time.",
+      "zh": "适合新手理解收入来源如何跨时间拆分。"
+    },
+    "keyConcepts": [
+      { "en": "Intertemporal subsidy", "zh": "跨期补贴" },
+      { "en": "Consumable lock-in", "zh": "耗材锁定" },
+      { "en": "Installed base", "zh": "装机基础" },
+      { "en": "Patent protection", "zh": "专利保护" }
+    ],
+    "commonMisreads": [
+      { "en": "The pattern is not 'sell one thing cheap'; it is a system where the cheap product creates future demand for a controlled complement.", "zh": "这个模式不是“把一个东西卖便宜”；而是便宜产品创造未来对受控互补品的需求。" }
+    ],
+    "practicePrompts": [
+      { "en": "What is the recurring complement in your model, and why would customers keep using yours?", "zh": "你的模型里反复购买的互补品是什么？客户为什么会持续使用你的？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "business-model-generation", "chapterSlug": "ch02-patterns" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "business-model-canvas" },
+      { "type": "case", "slug": "nespresso" }
+    ],
+    "nextRefs": [
+      { "type": "resource", "slug": "business-model-generation" }
+    ]
+  }
 }

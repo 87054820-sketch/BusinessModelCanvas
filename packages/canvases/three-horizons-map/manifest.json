@@ -24,6 +24,39 @@
   "quality": {
     "softHints": true
   },
+  "learning": {
+    "level": "intermediate",
+    "headline": { "en": "Balance today's core with tomorrow's options", "zh": "平衡今天的核心业务和明天的增长选项" },
+    "whyOpen": { "en": "Use this when the portfolio question is about timing, maturity, and migration between core, emerging, and future bets.", "zh": "当组合问题围绕时间、成熟度，以及核心、增长和未来选项之间的迁移时使用。" },
+    "audience": { "en": "Leadership teams managing core performance while building new growth engines.", "zh": "适合既要管理核心绩效、又要建设新增长引擎的管理团队。" },
+    "keyConcepts": [
+      { "en": "Horizon 1 core", "zh": "H1 核心业务" },
+      { "en": "Horizon 2 emerging", "zh": "H2 增长引擎" },
+      { "en": "Horizon 3 options", "zh": "H3 未来选项" },
+      { "en": "Migration evidence", "zh": "迁移证据" }
+    ],
+    "firstSteps": [
+      { "en": "Place bets by evidence and maturity, not by team prestige.", "zh": "按证据和成熟度放置业务，而不是按团队地位。" },
+      { "en": "Write the action that moves a bet from one horizon to another.", "zh": "写清让项目从一个层级迁移到另一个层级的动作。" }
+    ],
+    "outcomes": [
+      { "en": "A timed growth portfolio and the evidence needed for migration decisions.", "zh": "一张按时间组织的增长组合，以及迁移所需证据。" }
+    ],
+    "practicePrompts": [
+      { "en": "Which H3 option deserves a small experiment before it deserves a budget?", "zh": "哪个 H3 选项在获得预算前，应该先做一个小实验？" }
+    ],
+    "sourceRefs": [
+      { "type": "resourceChapter", "slug": "the-invincible-company", "chapterSlug": "ch01-explore" },
+      { "type": "resourceChapter", "slug": "the-invincible-company", "chapterSlug": "ch03-manage" }
+    ],
+    "relatedRefs": [
+      { "type": "canvas", "slug": "portfolio-map" },
+      { "type": "canvas", "slug": "evidence-scorecard" }
+    ],
+    "nextRefs": [
+      { "type": "canvas", "slug": "experiment-canvas" }
+    ]
+  },
   "related": ["portfolio-map", "business-model-canvas", "experiment-canvas", "evidence-scorecard"],
   "relatedNotes": {
     "portfolio-map": {

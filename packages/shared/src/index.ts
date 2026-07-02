@@ -318,6 +318,8 @@ export interface CanvasDef {
    * missing here render as a bare bullet — graceful fallback.
    */
   relatedNotes?: Record<string, LocalizedLabel>;
+  /** Browse/editor learning guidance assembled from existing canvas knowledge. */
+  learning?: LearningIndex;
   /**
    * Declarative list of editable object types this canvas allows. Lets
    * the workspace toolbar / inspector / bulk-import know what the canvas
@@ -422,6 +424,69 @@ export type ObjectType = 'sticky' | 'pin' | 'pinClass' | 'xAxisItem';
 
 /** A short label authored in both supported languages. */
 export type LocalizedLabel = Record<Lang, string>;
+
+// ──────────────────────────────────────────────────────────────────────────
+// Learning layer — short guidance and references reused across cards, modals,
+// and editor surfaces. Long-form prose stays in existing markdown/story files.
+// ──────────────────────────────────────────────────────────────────────────
+
+export type LearningLevel = 'beginner' | 'intermediate' | 'advanced';
+
+export type LearningReferenceType =
+  | 'canvas'
+  | 'canvasBlock'
+  | 'case'
+  | 'caseStory'
+  | 'resource'
+  | 'resourceChapter'
+  | 'pattern'
+  | 'strategyFramework'
+  | 'experiment';
+
+export interface LearningReference {
+  type: LearningReferenceType;
+  /** Primary slug/id for the referenced asset. */
+  slug: string;
+  /** Optional chapter slug when `type === 'resourceChapter'`. */
+  chapterSlug?: string;
+  /** Optional canvas-def id when the reference points at a canvas block. */
+  canvasDefId?: string;
+  /** Optional zone id when the reference points at a canvas block. */
+  blockId?: string;
+  /** Optional story id when a specific case story is the source. */
+  storyId?: string;
+  /** Short display override; when absent clients render slug/chapter/block ids. */
+  label?: LocalizedLabel;
+  /** Why this reference matters in this learning path. */
+  note?: LocalizedLabel;
+}
+
+export interface LearningIndex {
+  /** Intended reader depth for cards and browse filters. */
+  level?: LearningLevel;
+  /** Short card/modal headline. */
+  headline?: LocalizedLabel;
+  /** Why a user should open this item now. */
+  whyOpen?: LocalizedLabel;
+  /** Who this is for or what situation it fits. */
+  audience?: LocalizedLabel;
+  /** Business concepts a beginner may need before the content clicks. */
+  keyConcepts?: LocalizedLabel[];
+  /** Common wrong readings to guard against. */
+  commonMisreads?: LocalizedLabel[];
+  /** First actions or reading steps before opening the full text/editor. */
+  firstSteps?: LocalizedLabel[];
+  /** What the user should be able to produce after using this item. */
+  outcomes?: LocalizedLabel[];
+  /** Questions that transfer the learning back to the user's own project. */
+  practicePrompts?: LocalizedLabel[];
+  /** Existing source-of-truth assets this guidance reuses. */
+  sourceRefs?: LearningReference[];
+  /** Related assets shown as learning navigation, not duplicated prose. */
+  relatedRefs?: LearningReference[];
+  /** Recommended next step in the learning path. */
+  nextRefs?: LearningReference[];
+}
 
 /**
  * Manifest-level chart configuration used by the `chart-canvas` plugin.
@@ -756,6 +821,8 @@ export interface UpdateStoryInput {
 }
 
 export * from './copilot.js';
+export * from './copilotStructured.js';
+export * from './copilotReferenceResolver.js';
 export * from './qualityRules.js';
 
 export function parseStoryCanvasDirectives(content: string): StoryCanvasDirective[] {
@@ -990,6 +1057,8 @@ export interface CaseLibraryEntry {
    *   appliesPatternSubtypes: { free: 'ad-supported' }
    */
   appliesPatternSubtypes?: Record<string, string>;
+  /** Short learning guidance for cards/modals; long-form prose stays in stories. */
+  learning?: LearningIndex;
 }
 
 /**
@@ -1070,6 +1139,8 @@ export interface BusinessModelPattern {
    * the pattern that way.
    */
   subtypes?: PatternSubtype[];
+  /** Optional learning guidance reused by cards, modals, and agents. */
+  learning?: LearningIndex;
 }
 
 /**
@@ -1204,6 +1275,8 @@ export interface StrategyFramework {
   examples: StrategyFrameworkExampleRef[];
   /** Canvas definitions that usually implement this framework. */
   relatedCanvasDefIds?: string[];
+  /** Optional learning guidance reused by cards, modals, and agents. */
+  learning?: LearningIndex;
 }
 
 export interface StrategyFrameworkDetail {
@@ -1303,6 +1376,8 @@ export interface Experiment {
    *  next-steps). Shipped experiments should carry all six zones; when
    *  absent, the seed flow falls back to a single setup-zone sticky. */
   template?: ExperimentTemplate;
+  /** Optional learning guidance reused by cards, modals, and agents. */
+  learning?: LearningIndex;
 }
 
 /**
@@ -1430,6 +1505,8 @@ export interface LibraryResource {
   sources: CaseSource[];
   /** Number of chapter-level reading notes when this resource ships chapters. */
   chapterCount?: number;
+  /** Short learning guidance for resource cards and detail modals. */
+  learning?: LearningIndex;
 }
 
 export interface LibraryResourceDetail {
@@ -1465,6 +1542,8 @@ export interface ResourceChapterMeta {
   relatedCanvasDefIds?: string[];
   /** Related pattern slugs that this chapter discusses. */
   relatedPatternSlugs?: string[];
+  /** Short learning guidance for chapter navigation and pre-reading scaffolding. */
+  learning?: LearningIndex;
 }
 
 /**

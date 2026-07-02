@@ -13,15 +13,122 @@
     "en": "Read this before turning Business Model Environment into scenario planning. It helps teams avoid single-forecast thinking and compare which moves stay robust across futures.",
     "zh": "在把商业模式环境扫描升级为情景规划前，推荐先读它。它能帮助团队避免单一预测，并比较哪些战略动作在多个未来下都稳健。"
   },
-  "authors": ["Peter Schwartz"],
+  "authors": [
+    "Peter Schwartz"
+  ],
   "publisher": "Currency Doubleday",
   "year": 1991,
-  "tags": ["scenario-planning", "uncertainty", "environment"],
-  "relatedCanvasDefIds": ["business-model-environment", "scenario-matrix", "business-model-canvas", "portfolio-map", "design-criteria-canvas"],
-  "relatedStrategyFrameworkSlugs": ["business-model-environment-scan", "scenario-planning"],
+  "tags": [
+    "scenario-planning",
+    "uncertainty",
+    "environment"
+  ],
+  "relatedCanvasDefIds": [
+    "business-model-environment",
+    "scenario-matrix",
+    "business-model-canvas",
+    "portfolio-map",
+    "design-criteria-canvas"
+  ],
+  "relatedStrategyFrameworkSlugs": [
+    "business-model-environment-scan",
+    "scenario-planning"
+  ],
   "sources": [
     {
       "label": "Peter Schwartz · The Art of the Long View · Currency Doubleday · 1991"
     }
-  ]
+  ],
+  "learning": {
+    "level": "intermediate",
+    "headline": {
+      "en": "Use scenarios to think beyond the next forecast",
+      "zh": "用情景思考超越下一份预测"
+    },
+    "whyOpen": {
+      "en": "Open this when uncertainty is high and the team needs stories, driving forces, early signals, and strategic implications instead of one forecast.",
+      "zh": "当不确定性很高，团队需要故事、驱动力、早期信号和战略含义，而不是单一预测时读这本。"
+    },
+    "audience": {
+      "en": "Founders, strategy teams, policy thinkers, and leaders preparing for long-range uncertainty.",
+      "zh": "适合创业者、战略团队、政策思考者，以及准备面对长期不确定性的领导者。"
+    },
+    "keyConcepts": [
+      {
+        "en": "Driving forces",
+        "zh": "驱动力"
+      },
+      {
+        "en": "Scenario logics",
+        "zh": "情景逻辑"
+      },
+      {
+        "en": "Early indicators",
+        "zh": "早期信号"
+      },
+      {
+        "en": "Strategic implications",
+        "zh": "战略含义"
+      }
+    ],
+    "commonMisreads": [
+      {
+        "en": "The goal is not to predict the future; it is to make better decisions across plausible futures.",
+        "zh": "目标不是预测未来，而是在多个可信未来中做出更好的决策。"
+      }
+    ],
+    "firstSteps": [
+      {
+        "en": "Name the focal decision before collecting trends.",
+        "zh": "在收集趋势前，先命名核心决策。"
+      },
+      {
+        "en": "Use scenario stories to test whether current business-model assumptions survive different futures.",
+        "zh": "用情景故事测试当前商业模式假设能否穿越不同未来。"
+      }
+    ],
+    "outcomes": [
+      {
+        "en": "You can build scenario logics and identify signals that would change today's strategy.",
+        "zh": "你能构建情景逻辑，并识别哪些信号会改变今天的战略。"
+      }
+    ],
+    "practicePrompts": [
+      {
+        "en": "Which assumption in your model breaks under one plausible future but survives under another?",
+        "zh": "你模型里的哪条假设在一种可信未来下会断裂，但在另一种未来下仍成立？"
+      }
+    ],
+    "sourceRefs": [
+      {
+        "type": "resourceChapter",
+        "slug": "the-art-of-the-long-view",
+        "chapterSlug": "ch01-intro"
+      }
+    ],
+    "relatedRefs": [
+      {
+        "type": "canvas",
+        "slug": "scenario-matrix"
+      },
+      {
+        "type": "strategyFramework",
+        "slug": "scenario-planning"
+      },
+      {
+        "type": "canvas",
+        "slug": "business-model-environment"
+      }
+    ],
+    "nextRefs": [
+      {
+        "type": "resource",
+        "slug": "scenario-planning-in-organizations"
+      },
+      {
+        "type": "resource",
+        "slug": "porter-competitive-strategy"
+      }
+    ]
+  }
 }

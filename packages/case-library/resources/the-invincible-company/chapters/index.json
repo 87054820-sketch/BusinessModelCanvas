@@ -2,43 +2,340 @@
   {
     "slug": "ch01-explore",
     "order": 1,
-    "title": { "en": "Explore: Searching for New Business Models", "zh": "探索：寻找新的商业模式" },
+    "title": {
+      "en": "Explore: Searching for New Business Models",
+      "zh": "探索：寻找新的商业模式"
+    },
     "summary": {
       "en": "How established companies search for new growth engines — not by luck, but through a structured exploration portfolio. The Explore domain is managed differently from the core business: different metrics (learning vs. revenue), different talent (entrepreneurs vs. operators), different governance. This chapter introduces the Exploration Portfolio Map and the innovation culture assessment.",
       "zh": "成熟公司如何寻找新增长引擎——不靠运气，而是靠结构化的探索组合。探索域的管理方式与核心业务不同：不同的指标（学习 vs. 收入）、不同的人才（创业者 vs. 运营者）、不同的治理方式。本章引入探索组合地图和创新文化评估。"
     },
-    "relatedCanvasDefIds": ["portfolio-map", "innovation-culture-map"],
-    "relatedCaseSlugs": ["bosch-accelerator"]
+    "relatedCanvasDefIds": [
+      "portfolio-map",
+      "innovation-culture-map"
+    ],
+    "relatedCaseSlugs": [
+      "bosch-accelerator"
+    ],
+    "learning": {
+      "level": "intermediate",
+      "headline": {
+        "en": "Read Explore: Searching for New Business Models as a practical source chapter",
+        "zh": "把「探索：寻找新的商业模式」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "How established companies search for new growth engines — not by luck, but through a structured exploration portfolio. The Explore domain is managed differently from the core business: different metrics (learning vs. revenue), different talent (entrepreneurs vs. operators), different governance. This chapter introduces the Exploration Portfolio Map and the...",
+        "zh": "成熟公司如何寻找新增长引擎——不靠运气，而是靠结构化的探索组合。探索域的管理方式与核心业务不同：不同的指标（学习 vs. 收入）、不同的人才（创业者 vs. 运营者）、不同的治理方式。本章引入探索组合地图和创新文化评估。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Searching for New Business Models",
+          "zh": "寻找新的商业模式"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "the-invincible-company",
+          "chapterSlug": "ch01-explore"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "portfolio-map"
+        },
+        {
+          "type": "canvas",
+          "slug": "innovation-culture-map"
+        },
+        {
+          "type": "case",
+          "slug": "bosch-accelerator"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "portfolio-map"
+        }
+      ]
+    }
   },
   {
     "slug": "ch02-exploit",
     "order": 2,
-    "title": { "en": "Exploit: Scaling and Optimizing Existing Models", "zh": "利用：扩展和优化现有模式" },
+    "title": {
+      "en": "Exploit: Scaling and Optimizing Existing Models",
+      "zh": "利用：扩展和优化现有模式"
+    },
     "summary": {
       "en": "Once a new business model is validated, it moves to the Exploit domain — scaling, efficiency, and incremental innovation. This chapter covers the Exploitation Portfolio Map, the transition criteria from Explore to Exploit, and how to avoid the 'innovation theatre' trap (lots of experiments, zero business impact). The key tension: how much resource flows to Explore vs. Exploit at each lifecycle stage.",
       "zh": "一旦新的商业模式被验证，它进入利用域——规模化、效率和渐进式创新。本章涵盖利用组合地图、从探索到利用的转换标准，以及如何避免「创新剧场」陷阱（实验一大堆、业务零影响）。核心张力：在每个生命周期阶段，多少资源流向探索 vs. 利用。"
     },
-    "relatedCanvasDefIds": ["portfolio-map", "three-horizons-map"],
-    "relatedStrategyFrameworkSlugs": ["mckinsey-three-horizons"]
+    "relatedCanvasDefIds": [
+      "portfolio-map",
+      "three-horizons-map"
+    ],
+    "relatedStrategyFrameworkSlugs": [
+      "mckinsey-three-horizons"
+    ],
+    "learning": {
+      "level": "intermediate",
+      "headline": {
+        "en": "Read Exploit: Scaling and Optimizing Existing Models as a practical source chapter",
+        "zh": "把「利用：扩展和优化现有模式」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Once a new business model is validated, it moves to the Exploit domain — scaling, efficiency, and incremental innovation. This chapter covers the Exploitation Portfolio Map, the transition criteria from Explore to Exploit, and how to avoid the 'innovation theatre' trap (lots of experiments, zero business impact). The key tension: how much resource flows to...",
+        "zh": "一旦新的商业模式被验证，它进入利用域——规模化、效率和渐进式创新。本章涵盖利用组合地图、从探索到利用的转换标准，以及如何避免「创新剧场」陷阱（实验一大堆、业务零影响）。核心张力：在每个生命周期阶段，多少资源流向探索 vs. 利用。"
+      },
+      "keyConcepts": [
+        {
+          "en": "Scaling and Optimizing Existing Models",
+          "zh": "扩展和优化现有模式"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "the-invincible-company",
+          "chapterSlug": "ch02-exploit"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "portfolio-map"
+        },
+        {
+          "type": "canvas",
+          "slug": "three-horizons-map"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "portfolio-map"
+        }
+      ]
+    }
   },
   {
     "slug": "ch03-manage",
     "order": 3,
-    "title": { "en": "Manage: The Ambidextrous Organization", "zh": "管理：双元组织" },
+    "title": {
+      "en": "Manage: The Ambidextrous Organization",
+      "zh": "管理：双元组织"
+    },
     "summary": {
       "en": "Explore and Exploit require fundamentally different management approaches, yet they must coexist in one organization. This chapter covers the organizational architecture for ambidexterity: separate units with shared identity, innovation metrics that differ by lifecycle stage, leadership that can hold the tension rather than resolve it, and the cultural shift from 'protect the core' to 'explore the future while exploiting the present.'",
       "zh": "探索和利用需要本质上不同的管理方法，但它们必须共存于一个组织。本章涵盖双元组织的架构：独立单元+共享认同，按生命周期阶段区分创新指标，能承受张力而非解决它的领导力，以及从「保护核心」到「探索未来同时利用当下」的文化转型。"
     },
-    "relatedCanvasDefIds": ["innovation-culture-map", "business-model-canvas"]
+    "relatedCanvasDefIds": [
+      "innovation-culture-map",
+      "business-model-canvas"
+    ],
+    "learning": {
+      "level": "intermediate",
+      "headline": {
+        "en": "Read Manage: The Ambidextrous Organization as a practical source chapter",
+        "zh": "把「管理：双元组织」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "Explore and Exploit require fundamentally different management approaches, yet they must coexist in one organization. This chapter covers the organizational architecture for ambidexterity: separate units with shared identity, innovation metrics that differ by lifecycle stage, leadership that can hold the tension rather than resolve it, and the cultural shif...",
+        "zh": "探索和利用需要本质上不同的管理方法，但它们必须共存于一个组织。本章涵盖双元组织的架构：独立单元+共享认同，按生命周期阶段区分创新指标，能承受张力而非解决它的领导力，以及从「保护核心」到「探索未来同时利用当下」的文化转型。"
+      },
+      "keyConcepts": [
+        {
+          "en": "The Ambidextrous Organization",
+          "zh": "双元组织"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "the-invincible-company",
+          "chapterSlug": "ch03-manage"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "canvas",
+          "slug": "innovation-culture-map"
+        },
+        {
+          "type": "canvas",
+          "slug": "business-model-canvas"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "portfolio-map"
+        }
+      ]
+    }
   },
   {
     "slug": "ch04-patterns",
     "order": 4,
-    "title": { "en": "Patterns: The Invincible Company Pattern Library", "zh": "模式：不败公司模式库" },
+    "title": {
+      "en": "Patterns: The Invincible Company Pattern Library",
+      "zh": "模式：不败公司模式库"
+    },
     "summary": {
       "en": "A curated library of business-model patterns organized by innovation ambition: transfer (applying an existing model to a new context), combine (hybrid models), and leverage (using existing assets in novel ways). Each pattern includes conditions for success, real-world examples, and diagnostic questions. Patterns are not templates — they're recognition tools that help you see structural options.",
       "zh": "按创新雄心组织的商业模式模式库：转移（把已有模型应用于新情境）、组合（混合模式）和杠杆（用新方式利用已有资产）。每个模式包含成功条件、真实案例和诊断问题。模式不是模板——它们是识别工具，帮你看清结构性的选项。"
     },
-    "relatedPatternSlugs": ["from-closed-to-open-innovation", "from-sales-to-platform", "from-transactional-to-recurring-revenue"]
+    "relatedPatternSlugs": [
+      "from-closed-to-open-innovation",
+      "from-sales-to-platform",
+      "from-transactional-to-recurring-revenue"
+    ],
+    "learning": {
+      "level": "intermediate",
+      "headline": {
+        "en": "Read Patterns: The Invincible Company Pattern Library as a practical source chapter",
+        "zh": "把「模式：不败公司模式库」读成可操作的来源章节"
+      },
+      "whyOpen": {
+        "en": "A curated library of business-model patterns organized by innovation ambition: transfer (applying an existing model to a new context), combine (hybrid models), and leverage (using existing assets in novel ways). Each pattern includes conditions for success, real-world examples, and diagnostic questions. Patterns are not templates — they're recognition tools...",
+        "zh": "按创新雄心组织的商业模式模式库：转移（把已有模型应用于新情境）、组合（混合模式）和杠杆（用新方式利用已有资产）。每个模式包含成功条件、真实案例和诊断问题。模式不是模板——它们是识别工具，帮你看清结构性的选项。"
+      },
+      "keyConcepts": [
+        {
+          "en": "The Invincible Company Pattern Library",
+          "zh": "不败公司模式库"
+        },
+        {
+          "en": "Canvas landing point",
+          "zh": "画布落点"
+        },
+        {
+          "en": "Practice transfer",
+          "zh": "实践迁移"
+        }
+      ],
+      "firstSteps": [
+        {
+          "en": "Read the chapter summary first, then open the related canvas or case before reading the full notes.",
+          "zh": "先读章节摘要，再打开相关画布或案例，然后进入完整笔记。"
+        }
+      ],
+      "outcomes": [
+        {
+          "en": "You can explain the chapter's core mechanism and decide where it changes a canvas, case, or experiment.",
+          "zh": "你能解释本章的核心机制，并判断它会改变哪张画布、哪个案例或哪类实验。"
+        }
+      ],
+      "practicePrompts": [
+        {
+          "en": "Which assumption in your own project would this chapter make clearer or riskier?",
+          "zh": "这一章会让你自己项目里的哪条假设更清楚，或显得风险更高？"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "type": "resourceChapter",
+          "slug": "the-invincible-company",
+          "chapterSlug": "ch04-patterns"
+        }
+      ],
+      "relatedRefs": [
+        {
+          "type": "pattern",
+          "slug": "from-closed-to-open-innovation"
+        },
+        {
+          "type": "pattern",
+          "slug": "from-sales-to-platform"
+        }
+      ],
+      "nextRefs": [
+        {
+          "type": "canvas",
+          "slug": "portfolio-map"
+        }
+      ]
+    }
   }
 ]

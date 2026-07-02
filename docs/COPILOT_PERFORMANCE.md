@@ -46,6 +46,42 @@ The benchmark prints per-run request ids plus p50/p95 for:
 - `totalMs`
 - `charsPerSec`
 
+## Kimi Speed Options
+
+Kimi now defaults to the HTTP highspeed path:
+
+- Provider: `kimi-http`
+- Base URL: `https://api.moonshot.cn/v1`
+- Model: `kimi-k2.7-code-highspeed`
+- Request body: `stream: true`, optional `max_completion_tokens`, optional stable `prompt_cache_key`
+
+The legacy local CLI path remains available through `PINGARDEN_AI_PROVIDER=kimi-cli`, but it has two built-in costs:
+
+- Each turn spawns a Kimi CLI subprocess and prepares a temporary HOME/config.
+- Current Kimi CLI `stream-json` output often returns the assistant reply as one full frame, so the UI may not see token-by-token streaming even though the drawer is ready for SSE.
+
+Recommended speed settings:
+
+```bash
+PINGARDEN_AI_PROVIDER=kimi-http
+PINGARDEN_KIMI_HTTP_MAX_COMPLETION_TOKENS=2048
+PINGARDEN_KIMI_HTTP_PROMPT_CACHE=1
+```
+
+Use this with an API key that is valid for the Kimi / Moonshot API platform. If a deployment must use the old Kimi Code endpoint, set:
+
+```bash
+PINGARDEN_AI_PROVIDER=kimi-http
+PINGARDEN_KIMI_HTTP_PRESET=legacy-code
+```
+
+Notes:
+
+- The Kimi API already streams when `stream: true`; PinGarden always sets this for `kimi-http`.
+- `max_completion_tokens` caps output length. It improves tail latency when prompts would otherwise produce long analysis, but setting it too low can truncate useful structured cards.
+- `prompt_cache_key` improves cache hit rate for repeated or similar Copilot contexts. PinGarden generates a stable hashed key from provider/model/system context when `PINGARDEN_KIMI_HTTP_PROMPT_CACHE=1`.
+- Kimi K2.7 Code does not support disabling thinking; do not add `thinking: { "type": "disabled" }` for that model.
+
 ## Initial baseline targets
 
 These are diagnostic targets, not hard production SLOs yet:
